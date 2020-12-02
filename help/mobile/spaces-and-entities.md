@@ -29,17 +29,17 @@ Un espace est un emplacement pratique pour stocker les entités exposées via l�
 >
 >Pour mettre à la disposition de n’importe quel canal de Content Services, il doit se trouver sous un espace.
 
-## Création d’un espace {#creating-a-space}
+## Création d&#39;un espace {#creating-a-space}
 
 Si l’utilisateur souhaite exposer un ensemble de contenu et de ressources à une application mobile, il crée l’espace à l’aide du tableau de bord AEM Mobile.
 
-Pour la première fois, si un utilisateur n’a pas configuré les services de contenu pour qu’ils fonctionnent avec des espaces, le tableau de bord AEM Mobile affiche uniquement les applications après avoir sélectionné **Content Services**.
+Pour la première fois, qui n’a pas configuré les services de contenu pour qu’ils fonctionnent avec des espaces, le tableau de bord AEM Mobile affiche uniquement les applications après avoir sélectionné **Content Services**.
 
 >[!CAUTION]
 >
 >**Conditions préalables à l’ajout d’un espace**
 >
->Cochez la case **Activer AEM Content Services** pour utiliser les espaces et activez-la dans votre tableau de bord d’applications AEM Mobile.
+>Cochez **Activer AEM Content Services** pour utiliser Spaces et l’activer dans votre tableau de bord d’applications AEM Mobile.
 >
 >Voir [Administration de Content Services](/help/mobile/developing-content-services.md) pour plus d’informations.
 
@@ -49,7 +49,7 @@ Une fois que vous avez configuré les espaces dans le tableau de bord, procédez
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-1. Choisissez **Créer** pour créer un espace. Saisissez **Titre**, **Nom** et **Description** pour l’espace.
+1. Sélectionnez **Créer** pour créer un espace. Saisissez **Titre**, **Nom** et **Description** pour l’espace.
 
    Cliquez sur **Créer**.
 
@@ -66,13 +66,13 @@ Vous pouvez vue les propriétés de l’espace, supprimer l’espace ou publier 
 **Affichage et modification des propriétés d&#39;un espace**
 
 1. Sélectionner l&#39;espace dans la liste
-1. Choose **Properties** from the toolbar
-1. Click **Close** when done
+1. Sélectionnez **Propriétés** dans la barre d&#39;outils.
+1. Cliquez sur **Fermer** une fois terminé.
 
-**Publication d&#39;un espace** Lorsqu&#39;un espace est publié, tous les dossiers et entités de cet espace sont également publiés.
+**Publication d&#39;un** espaceLorsqu&#39;un espace est publié, tous les dossiers et entités de cet espace sont également publiés.
 
 1. Sélectionnez l&#39;espace en cliquant sur son icône dans la liste de la console Espace
-1. Choisir **l’arborescence de publication**
+1. Sélectionnez **Publier l’arborescence**
 
 >[!NOTE]
 >
@@ -88,11 +88,11 @@ Les espaces peuvent inclure des dossiers pour mieux organiser le contenu et les 
 
 ### Création d’un dossier {#creating-a-folder}
 
-1. Cliquez sur l’espace de la liste dans la console de l’espace et cliquez sur **Créer un dossier.**
+1. Cliquez sur l’espace de la liste dans la console de l’espace et cliquez sur **Créer un dossier**.
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Saisissez le **titre**, le **nom** et la **description** du dossier.
+1. Saisissez le **Titre**, **Nom,** et **Description** pour le dossier.
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
@@ -104,7 +104,7 @@ Les espaces peuvent inclure des dossiers pour mieux organiser le contenu et les 
 >
 >La copie de langue n’est pas entièrement fonctionnelle dans cette version. Il ne fait que mettre en place la structure.
 
-La fonction Copie **de** langue permet aux auteurs de copier leur copie de langue principale, puis de créer un projet et un flux de travail pour traduire automatiquement le contenu. La copie de langue crée la structure correcte. Une fois que vous avez ajouté un dossier dans un espace, vous pouvez ajouter la copie de langue à votre espace.
+La fonction **Copie de langue** permet aux auteurs de copier leur copie de langue principale, puis de créer un projet et un flux de travail pour traduire automatiquement le contenu. La copie de langue crée la structure correcte. Une fois que vous avez ajouté un dossier dans un espace, vous pouvez ajouter la copie de langue à votre espace.
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ La fonction Copie **de** langue permet aux auteurs de copier leur copie de langu
 
 1. Une fois l&#39;espace créé, cliquez sur cet espace pour créer une copie de langue.
 
-   Cliquez sur **Créer** , puis sélectionnez Copie **** de langue.
+   Cliquez sur **Créer** et choisissez **Copie de langue**.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -122,24 +122,24 @@ La fonction Copie **de** langue permet aux auteurs de copier leur copie de langu
    >
    >Les noeuds de copie de langue ne peuvent exister qu’en tant qu’enfant direct de l’espace.
 
-1. Sélectionnez **Content Package Language&amp;amp ; ast ;** et saisissez **Title&amp;amp ; ast ;** dans la boîte de dialogue **Créer une copie** de langue.
+1. Sélectionnez **Content Package Language&amp;ast;** et saisissez **Title&amp;ast;** dans la boîte de dialogue **Créer une copie de langue**.
 
    Cliquez sur **Créer**.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Une fois que vous avez créé une copie de langue, elle apparaît dans votre espace dans les Principal **** linguistiques.
+1. Une fois que vous avez créé une copie de langue, elle apparaît dans votre espace sous **Principal de langue**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    >[!NOTE]
    >
-   >Sélectionnez Principal **** linguistiques pour vue des dossiers de copie de langue.
+   >Sélectionnez **Principal de langue** pour vue des dossiers de copie de langue.
 
 ### Suppression d&#39;un dossier de l&#39;espace {#removing-a-folder-from-the-space}
 
 1. Sélectionner le dossier à partir de la liste du contenu de l&#39;espace
-1. Click **Delete** from the toolbar
+1. Cliquez sur **Supprimer** dans la barre d’outils.
 
    >[!NOTE]
    >
@@ -165,17 +165,17 @@ Si des enfants d’entité, qui sont d’autres entités, sont rassemblés pour 
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Sélectionnez le modèle de l&#39;entité. Il s&#39;agit du type d&#39;entité que vous souhaitez créer. Cliquez sur Suivant.
+1. Sélectionnez le modèle de l&#39;entité. Il s&#39;agit du type d&#39;entité que vous souhaitez créer. Cliquez sur Next (Suivant).
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
    >[!NOTE]
    >
-   >Vous avez la possibilité de choisir le modèle **** Ressources, le modèle **** Pages ou un modèle de type d’entité que vous avez créé auparavant.
+   >Vous avez la possibilité de choisir **Modèle de ressources**, **Modèle de pages** ou un modèle de type d’entité que vous avez créé auparavant.
    >
-   >Voir [Création d&#39;un modèle](/help/mobile/administer-mobile-apps.md)pour créer votre entité personnalisée.
+   >Voir [Création d&#39;un modèle](/help/mobile/administer-mobile-apps.md) pour créer votre entité personnalisée.
 
-1. Saisissez un **titre**, un **nom**, une **description** et des **balises pour l&#39;entité.** Cliquez sur **Créer**.
+1. Saisissez un **titre**, **nom**, **description** et **balises** pour l&#39;entité. Cliquez sur **Créer**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -195,33 +195,33 @@ Si des enfants d’entité, qui sont d’autres entités, sont rassemblés pour 
    >
    >Selon le modèle que vous choisissez de créer votre entité, l&#39;interface utilisateur sera différente pour les deux, pour la modification et l&#39;affichage des propriétés de votre entité. Pour plus de détails, voir les étapes ci-dessous.
 
-   ***Si vous choisissez le modèle de création de l&#39;entité en tant que modèles*** d&#39;actifs, le fait de cliquer sur **Modifier** vous permet d&#39;ajouter des actifs comme illustré dans la figure ci-dessous :
+   ***Si vous choisissez le modèle de création de l&#39;entité en tant que modèles*** d&#39;actifs, le fait de cliquer sur  **** Modifier vous permet d&#39;ajouter des actifs comme illustré dans la figure ci-dessous :
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-   Vous pouvez également cliquer sur **Prévisualisation** pour vue du lien json.
+   Vous pouvez également cliquer sur **Prévisualisation** pour vue au lien json.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***Si vous choisissez le modèle de création de l&#39;entité en tant que modèles*** de pages, le fait de cliquer sur **Modifier** vous permet d&#39;ajouter des actifs comme illustré dans la figure ci-dessous :
+   ***Si vous choisissez le modèle de création de l&#39;entité en tant que modèles*** de pages, le fait de cliquer sur  **** Modifier vous permet d&#39;ajouter des actifs comme illustré dans la figure ci-dessous :
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-   Cliquez sur l’icône du **chemin** pour ajouter un fichier.
+   Cliquez sur l&#39;icône **Chemin** pour ajouter une ressource.
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
    >[!NOTE]
    >
-   >Une fois que vous avez ajouté une entité, elle doit être enregistrée pour que le lien de la Prévisualisation fonctionne. Pour vue à la prévisualisation, cliquez sur **Enregistrer**. Cliquez sur la **Prévisualisation** pour afficher le fichier json de la ressource ajoutée, comme illustré dans la figure ci-dessous :
+   >Une fois que vous avez ajouté une entité, elle doit être enregistrée pour que le lien de la Prévisualisation fonctionne. Pour vue à la prévisualisation, cliquez sur **Enregistrer**. Le fait de cliquer sur la **Prévisualisation** affiche le json de la ressource ajoutée, comme illustré dans la figure ci-dessous :
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
    >[!NOTE]
    >
-   >Lorsque vous avez terminé d&#39;ajouter des actifs à votre entité, vous pouvez choisir **Enregistrer** pour enregistrer les modifications ou choisir **Enregistrer et fermer** pour enregistrer et rediriger vers la liste de console Space où les entités sont définies.
+   >Lorsque vous avez terminé d&#39;ajouter des actifs à votre entité, vous pouvez choisir **Enregistrer** pour enregistrer les modifications ou **Enregistrer et fermer** pour enregistrer et rediriger vers la liste de console Space où les entités sont définies.
 
-   De plus, sélectionnez une entité dans la liste de la console d&#39;espace et cliquez sur **Propriétés** pour la vue et modifiez les propriétés d&#39;une entité définie.
+   De plus, sélectionnez une entité dans la liste de console d&#39;espace et cliquez sur **Propriétés** pour la vue et modifiez les propriétés d&#39;une entité définie.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -235,11 +235,11 @@ Si des enfants d’entité, qui sont d’autres entités, sont rassemblés pour 
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Cliquez sur **Supprimer** de la barre d&#39;outils pour supprimer l&#39;entité spécifique de l&#39;espace.
+1. Cliquez sur **Supprimer** dans la barre d&#39;outils pour supprimer l&#39;entité spécifique de l&#39;espace.
 
 ### Publication d&#39;une entité {#publishing-an-entity}
 
-Vous avez la possibilité de choisir **Publier l’arborescence** ou Publier **** rapidement pour publier votre entité.
+Vous avez la possibilité de choisir **Publier l’arborescence** ou **Publier rapidement** pour publier votre entité.
 
 1. Sélectionnez une entité dans la liste de la console d&#39;espace et cliquez sur **Publier l&#39;arborescence **pour publier cette entité et ses enfants.
 
@@ -247,4 +247,4 @@ Vous avez la possibilité de choisir **Publier l’arborescence** ou Publier ***
 
    **Ou**,
 
-   Cliquez sur Publication **** rapide pour publier cette entité spécifique.
+   Cliquez sur **Publication rapide** pour publier cette entité spécifique.
