@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Début rapide de l’API Java LiveCycle Process (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-Le Début rapide API Java (SOAP) est disponible pour les processus. Une instance *de* processus est une occurrence d’un processus spécifique qui a été démarré par une méthode d’appel telle que l’API d’appel ou depuis Workspace.
+Le Début rapide API Java (SOAP) est disponible pour les processus. Une *instance de processus* est une occurrence d’un processus spécifique qui a été démarré par une méthode d’appel telle que l’API d’appel ou depuis Workspace.
 
 [Début rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -42,7 +42,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-L’exemple de code Java suivant recherche des instances de processus basées sur le processus *PrêtPrêtPrêtPrêtPrêt* Pré.
+L’exemple de code Java suivant recherche des instances de processus basées sur le processus *PrêtPrêtHypothèque - Préconstruit*.
 
 ```java
  /*
@@ -338,7 +338,7 @@ L&#39;exemple de code Java suivant début une instance de processus suspendue.
  
 ```
 
-## Début rapide (mode SOAP) : Arrêt d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Début rapide (mode SOAP) : Arrêt des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 L’exemple de code Java suivant termine une instance de processus avec la valeur d’identificateur 756c22860a242fb101ec7a5bc0977fd6.
 
@@ -431,7 +431,7 @@ L’exemple de code Java suivant termine une instance de processus avec la valeu
 
 ## Début rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-Le code Java suivant purge les données d’un processus appelé *SecureDocument*. Un filtre permet de purger les données des instances de processus pour lesquelles la variable de processus nommée *inValue* est supérieure à 200.
+Le code Java suivant purge les données d’un processus nommé *SecureDocument*. Un filtre permet de purger les données des instances de processus pour lesquelles la variable de processus *inValue* est supérieure à 200.
 
 ```java
  /*
