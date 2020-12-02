@@ -141,7 +141,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Associé à la propriété short description dans le formulaire adaptatif.</p> </td>
   </tr>
   <tr>
-   <td><p>caption<em> (all Field types)</em></p> </td>
+   <td><p>légende<em> (tous les types de champ)</em></p> </td>
    <td><p>Associé à la propriété Title dans le formulaire adaptatif.</p> </td>
   </tr>
   <tr>
@@ -153,11 +153,11 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Associé à la propriété Value dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (List Box, Check Box)</em></p> </td>
+   <td><p>items<em> (Liste Box, Check Box)</em></p> </td>
    <td><p>Associé à la propriété options dans le formulaire adaptatif. Vous pouvez la remplacer à l’aide de l’expression Options.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (Text Field)</em></p> </td>
+   <td><p>maxChar<em> (champ de texte)</em></p> </td>
    <td><p>Associé à la propriété Maximum characters allowed dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
@@ -173,7 +173,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Associé à la propriété Lead digits dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (List Box)</em></p> </td>
+   <td><p>multiSelect<em> (Liste Box)</em></p> </td>
    <td><p>Associé à la propriété Allows multiple selection dans le formulaire adaptatif.   </p> </td>
   </tr>
  </tbody>
@@ -228,7 +228,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
  </tbody>
 </table>
 
-### Validations {#validations}
+### Validations  {#validations}
 
 Le tableau suivant capture la manière dont les validations XFA sont associées aux validations dans les formulaires adaptatifs.   
 
