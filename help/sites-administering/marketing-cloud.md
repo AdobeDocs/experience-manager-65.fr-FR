@@ -31,11 +31,11 @@ Avec Adobe Experience Manager (AEM), vous pouvez intégrer aisément les produit
 * Adobe Search&amp;Promote permet aux marketeurs de contrôler et d’optimiser les résultats de la recherche sur leurs sites.
 * Adobe Campaign vous permet de gérer le contenu de livraison de courrier électronique directement dans Adobe Experience Manager.
 
-In addition, you can [integrate AEM with Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md) and with [third-party services](/help/sites-administering/third-party-services.md).
+En outre, vous pouvez [intégrer AEM avec Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md) et avec [services tiers](/help/sites-administering/third-party-services.md).
 
 ## Intégration à Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) est la solution de pointe qui fournit aux spécialistes du marketing numérique un emplacement unique pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
+[Adobe ](https://www.omniture.com/en/products/analytics/sitecatalyst) Analytics est la solution de pointe qui fournit aux spécialistes du marketing numérique un emplacement unique pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
 
 Vous pouvez utiliser Adobe Analytics pour analyser les données de vos sites.
 
@@ -72,7 +72,7 @@ Souscrivez à l’intégration avec Analytics et/ou Target afin de permettre l�
 
 Pour plus d’informations, voir [Souscription à Adobe Analytics et Target.](/help/sites-administering/opt-in.md)
 
-## Intégration à Scene7 {#integrating-with-scene}
+## Intégration à Scene7  {#integrating-with-scene}
 
 [Adobe Scene7](https://www.adobe.com/products/scene7.html) est une solution hébergée permettant la publication, la gestion, l’enrichissement et la livraison de ressources marketing dynamiques et le merchandising visuel enrichi sur une multiplicité de canaux : web, terminaux mobiles, courrier électronique, réseaux sociaux, écrans connectés à Internet et impression.
 
@@ -84,10 +84,10 @@ En outre, vous pouvez consulter les ressources AEM publiées dans Scene7 dans di
 * Zoom sur la fenêtre déroulante DHTML
 * Zoom sur la fenêtre déroulante Flash
 * Vidéo
-* Modèle  Template (Modèle)
+* Modèle  Template
 * Modèle d’image
 
-For more information on how AEM integrates with Scene7, see the [Integrating with Scene7 documentation](/help/sites-administering/scene7.md).
+Pour plus d&#39;informations sur la façon dont AEM s&#39;intègre à Scene7, consultez la documentation [Intégration à Scene7](/help/sites-administering/scene7.md).
 
 ## Intégration à Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
@@ -99,7 +99,7 @@ For more information on how AEM integrates with Scene7, see the [Integrating wit
 
 L’intégration à Adobe Audience Manager a été supprimée dans AEM 6.3.
 
-## Intégration à Search&amp;Promote {#integrating-with-search-promote}
+## Intégration à Search&amp;Promote  {#integrating-with-search-promote}
 
 Avec [Adobe Search&amp;Promote](https://www.omniture.com/en/products/conversion/search-and-promote), les marketeurs peuvent optimiser la manière dont les utilisateurs parcourent, recherchent, comparent et sélectionnent des produits et du contenu sur les sites web et mobiles. Les entreprises peuvent facilement faire la promotion des éléments importants en fonction des objectifs de l’entreprise et de l’intention des visiteurs, tout en automatisant les activités de marchandisation et de promotion par l’intermédiaire de déclencheurs et de mesures reposant sur les indicateurs de performances clés.
 
@@ -107,11 +107,11 @@ Adobe Search&amp;Promote est une application hébergée, évolutive et fiable d
 
 Pour plus d’informations sur l’intégration d’AEM et de Search&amp;Promote, voir [Intégration à Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
 
-## Intégration à Adobe Campaign {#integrating-with-adobe-campaign}
+## Intégration à Adobe Campaign  {#integrating-with-adobe-campaign}
 
 [Adobe Campaign](https://www.adobe.com/solutions/campaign-management.html) vous permet de gérer le contenu de livraison de courrier électronique directement dans Adobe Experience Manager.
 
-For information on how AEM integrates with Adobe Campaign, see [Integrating with Adobe Campaign](/help/sites-administering/campaignstandard.md).
+Pour plus d&#39;informations sur la façon dont AEM s&#39;intègre à Adobe Campaign, voir [Intégration à Adobe Campaign](/help/sites-administering/campaignstandard.md).
 
 ## Intégration à Livefyre {#integrating-with-livefyre}
 
