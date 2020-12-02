@@ -22,7 +22,7 @@ ht-degree: 59%
 + [À propos de DAM](assets.md)
 + [Recommandations relatives aux ressources](best-practices-for-assets.md)
 + [Accessibilité dans [!DNL Assets]](accessibility.md)
-+ Utiliser des ressources Experience Manager {#using}
++ Utiliser les ressources Experience Manager {#using}
    + [[!DNL Assets] Expérience page d&#39;accueil](assets-home-page.md)
    + [Recherche de ressources numériques](search-assets.md)
    + [Utilisation des métadonnées de fichier](metadata.md)
@@ -83,17 +83,17 @@ ht-degree: 59%
    + [Invalidation du cache CDN via Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
-+ Étendre les ressources {#extending}
++ Étendre les actifs {#extending}
    + [Personnaliser et étendre [!DNL Assets]](extending-assets.md)
    + [Traiter des fichiers à l’aide de gestionnaires de médias et de workflows](media-handlers.md)
    + [Étendre la fonctionnalité de recherche](searchx.md)
-   + [Installation et [!DNL ImageMagick] configuration avec lesquelles travailler [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Installation et  [!DNL ImageMagick] configuration avec lesquelles travailler [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Intégration de ressources dans le flux d’activités](extending-activity-stream.md)
    + [Étendre l’éditeur de fichiers](asseteditorx.md)
    + API HTTP [[!DNL Assets]  ](mac-api-assets.md)
    + [ [!DNL Assets] Prise en charge des fragments de contenu dans l’API HTTP ](assets-api-content-fragments.md)
    + [[!DNL Assets] développement par proxy](proxy.md)
-+ Administration des ressources {#administer}
++ Administrer les ressources {#administer}
    + [Formats de fichiers pris en charge](assets-formats.md)
    + [Facettes de recherche](search-facets.md)
    + [Comprendre les concepts de métadonnées](metadata-concepts.md)
@@ -141,7 +141,7 @@ ht-degree: 59%
    + [Fragments de contenu – considérations sur la suppression](content-fragments/content-fragments-delete.md)
    + [Fragments de contenu - Markdown](content-fragments/content-fragments-markdown.md)
    + [Création de projets de traduction pour des fragments de contenu](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Gérer les ressources {#managing}
    + [Gestion des ressources numériques](manage-assets.md)
    + [Gestion des collections](manage-collections.md)
    + [Activation de la détection de doublons](duplicate-detection.md)
