@@ -1,6 +1,6 @@
 ---
 title: Configuration du balisage des ressources à l’aide de Smart Content Service
-description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
+description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans  [!DNL Adobe Experience Manager], à l’aide de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
@@ -11,9 +11,9 @@ ht-degree: 60%
 ---
 
 
-# Préparation [!DNL Assets] au balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
+# Préparer [!DNL Assets] pour le balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
 
-Avant de pouvoir début le balisage de vos ressources à l’aide de Smart Content Services, intégrez-les [!DNL Experience ManageR Assets] à Adobe Developer Console afin de tirer parti du service intelligent de [!DNL Adobe Sensei]. Une fois configuré, le service est formé à l’aide de quelques images et d’une balise.
+Avant de pouvoir début le balisage de vos ressources à l’aide de Smart Content Services, intégrez [!DNL Experience ManageR Assets] à Adobe Developer Console pour tirer parti du service intelligent [!DNL Adobe Sensei]. Une fois configuré, le service est formé à l’aide de quelques images et d’une balise.
 
 Avant d’utiliser Smart Content Service, vérifiez les points suivants :
 
@@ -23,11 +23,11 @@ Avant d’utiliser Smart Content Service, vérifiez les points suivants :
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Installez le dernier Service Pack [du](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)Experience Manager.
+* Installez le dernier [Service Pack du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Intégration à Adobe Developer Console {#integrate-adobe-io}
 
-Lorsque vous effectuez une intégration avec Adobe Developer Console, le [!DNL Experience Manager] serveur authentifie vos informations d’identification de service auprès de la passerelle Adobe Developer Console avant de transmettre votre demande à Smart Content Service. Pour intégrer votre entreprise, vous devez disposer d’un compte Adobe ID doté de droits d’administrateur pour l’entreprise et d’une licence Smart Content Service achetée et activée pour celle-ci.
+Lorsque vous effectuez une intégration avec Adobe Developer Console, le serveur [!DNL Experience Manager] authentifie vos informations d’identification de service auprès de la passerelle Adobe Developer Console avant de transmettre votre demande à Smart Content Service. Pour intégrer votre entreprise, vous devez disposer d’un compte Adobe ID doté de droits d’administrateur pour l’entreprise et d’une licence Smart Content Service achetée et activée pour celle-ci.
 
 Pour configurer Smart Content Service, procédez comme suit :
 
@@ -35,19 +35,19 @@ Pour configurer Smart Content Service, procédez comme suit :
 
 1. [Créez une intégration dans Adobe Developer Console](#create-adobe-i-o-integration) et chargez la clé publique générée.
 
-1. [Configurez votre déploiement](#configure-smart-content-service) à l’aide de la clé d’API et d’autres informations d’identification d’Adobe Developer Console.
+1. [Configurez vos ](#configure-smart-content-service) déploiements à l’aide de la clé d’API et d’autres informations d’identification d’Adobe Developer Console.
 
 1. [Testez la configuration](#validate-the-configuration).
 
-1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
+1. [Vous pouvez éventuellement activer le balisage automatique lors du transfert des ressources](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-### Création d’une configuration de Smart Content Service pour obtenir un certificat public {#obtain-public-certificate}
+### Créer une configuration de Smart Content Service pour obtenir un certificat public {#obtain-public-certificate}
 
 Un certificat public permet d’authentifier votre profil sur Adobe Developer Console.
 
-1. Dans l’interface [!DNL Experience Manager] utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > Cloud Services **** hérités.
+1. Dans l&#39;interface utilisateur [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Cloud Services hérités]**.
 
-1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
+1. Dans la page Cloud Services, cliquez sur **[!UICONTROL Configurer maintenant]** sous **[!UICONTROL Actifs Balises dynamiques]**.
 
 1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, spécifiez un titre et un nom pour la configuration de balises intelligentes. Cliquez sur **[!UICONTROL Créer]**.
 
@@ -66,16 +66,16 @@ Un certificat public permet d’authentifier votre profil sur Adobe Developer Co
 
    >[!NOTE]
    >
-   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. La configuration fonctionne correctement avec la même valeur que le paramètre URL  de service. Pour connaître l’état général du service et le calendrier de maintenance, voir [https://status.adobe.com](https://status.adobe.com).
+   >L’URL fournie sous la forme [!UICONTROL URL du service] n’est pas accessible par le biais du navigateur et génère une erreur 404. La configuration fonctionne correctement avec la même valeur que le paramètre [!UICONTROL URL du service]. Pour connaître le statut général du service et le calendrier de maintenance, voir [https://status.adobe.com](https://status.adobe.com).
 
-1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
+1. Cliquez sur **[!UICONTROL Télécharger le certificat public pour l’intégration OAuth]** et téléchargez le fichier de certificat public `AEM-SmartTags.crt`.
 
    ![Représentation des paramètres créés pour le service de balisage intelligent](assets/smart-tags-download-public-cert.png)
 
 
    *Figure : Paramètres du service de balisage intelligent*
 
-#### Reconfigure when a certificate expires {#certrenew}
+#### Reconfigurer à l’expiration d’un certificat {#certrenew}
 
 Une fois qu’un certificat expire, il n’est plus approuvé. Vous ne pouvez pas renouveler un certificat ayant expiré. Pour ajouter un nouveau certificat, procédez comme suit.
 
@@ -94,11 +94,11 @@ Une fois qu’un certificat expire, il n’est plus approuvé. Vous ne pouvez pa
 
 1. Pour télécharger un certificat public, cliquez sur **[!UICONTROL Télécharger le certificat public pour l’intégration Oauth]**.
 
-1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu intelligent existants sur la page **[!UICONTROL Intégrations]**. Téléchargez le nouveau certificat. For more information, see the instructions in [Create Adobe Developer Console integration](#create-adobe-i-o-integration).
+1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu intelligent existants sur la page **[!UICONTROL Intégrations]**. Téléchargez le nouveau certificat. Pour plus d&#39;informations, consultez les instructions de [Création de l&#39;intégration de la Console développeur d&#39;Adobes](#create-adobe-i-o-integration).
 
-### Intégration de la Console développeur de création d’Adobes {#create-adobe-i-o-integration}
+### Créer l&#39;intégration de la Console développeur d&#39;Adobes {#create-adobe-i-o-integration}
 
-Pour utiliser les API de Smart Content Service, créez une intégration dans Adobe Developer Console afin d’obtenir la clé [!UICONTROL d’] API (générée dans le champ ID  CLIENT de l’intégration d’Adobe Developer Console), l’ID [!UICONTROL DE COMPTE][!UICONTROL TECHNIQUE, l’ID D’ORGANISATION et CLIENT SECRET pour les paramètresService de balisage intelligentAssets de la configuration de cloud dans le cloud.][!DNL Experience Manager]
+Pour utiliser les API de Smart Content Service, créez une intégration dans la Console développeur d&#39;Adobes afin d&#39;obtenir la [!UICONTROL clé d&#39;API] (générée dans le champ [!UICONTROL ID CLIENT] de l&#39;intégration de la Console développeur d&#39;Adobes), [!UICONTROL ID de COMPTE TECHNIQUE], [!UICONTROL ID ORGANISATION] et [!UICONTROL  CLIENT SECRET] pour [!UICONTROL Assets Smart Tagging Service Settings] de la configuration du cloud dans [!DNL Experience Manager].
 
 1. Accédez à l’URL [https://console.adobe.io](https://console.adobe.io/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est administrateur système.
 
@@ -114,7 +114,7 @@ Pour utiliser les API de Smart Content Service, créez une intégration dans Ado
 
 1. Dans la page **[!UICONTROL Select product profiles]** (Sélectionner les profils de produits), sélectionnez **[!UICONTROL Smart Content Services]** (Services de contenu dynamique). Cliquez sur **[!UICONTROL Save configured API]** (Enregistrer l’API configurée). 
 
-   Une page affiche davantage d’informations sur la configuration. Conservez cette page ouverte pour copier et ajouter ces valeurs dans les Paramètres [!UICONTROL du service de balisage intelligent] Assets de la configuration du cloud [!DNL Experience Manager] afin de configurer les balises actives.
+   Une page affiche davantage d’informations sur la configuration. Conservez cette page ouverte pour copier et ajouter ces valeurs dans [!UICONTROL Paramètres du service de balisage intelligent ] des ressources de la configuration du cloud dans [!DNL Experience Manager] afin de configurer les balises actives.
 
    ![Dans l’onglet Overview (Aperçu), vous pouvez consulter les informations fournies pour l’intégration.](assets/integration_details.png)
 
@@ -123,15 +123,15 @@ Pour utiliser les API de Smart Content Service, créez une intégration dans Ado
 
 ### Configuration du service de contenu dynamique {#configure-smart-content-service}
 
-Pour configurer l’intégration, utilisez les valeurs des champs ID [!UICONTROL DE COMPTE]TECHNIQUE, ID D’ORGANISATION, SECRET CLIENT et ID [!UICONTROL CLIENT dans l’intégration de la Console développeur d’Adobes. ] Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
+Pour configurer l’intégration, utilisez les valeurs des champs [!UICONTROL ID DE COMPTE TECHNIQUE], [!UICONTROL ID D’ORGANISATION], [!UICONTROL SECRET CLIENT] et [!UICONTROL ID CLIENT] de l’intégration Adobe Developer Console. La création d’une configuration cloud Smart Tags permet l’authentification des demandes d’API à partir du déploiement [!DNL Experience Manager].
 
-1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
+1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Services hérités]** pour ouvrir la console [!UICONTROL Cloud Services].
 
 1. Sous **[!UICONTROL Ressources – Balises intelligentes]**, ouvrez la configuration créée ci-dessus. Sur la page de paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
 
 1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs préremplies pour les champs **[!UICONTROL URL de service]** et **[!UICONTROL Serveur d’autorisation]**.
 
-1. Pour les champs Clé d’API, ID [!UICONTROL de compte]technique, ID [!UICONTROL d’]organisation et Secret du [!UICONTROL client, copiez et utilisez les valeurs suivantes générées dans Intégration de la Console développeur d’Adobes.][](#create-adobe-i-o-integration)
+1. Pour les champs [!UICONTROL Clé d’API], [!UICONTROL ID de compte technique], [!UICONTROL ID d’organisation] et [!UICONTROL Secret client], copiez et utilisez les valeurs suivantes générées dans [l’intégration de la Console développeur d’Adobes](#create-adobe-i-o-integration).
 
    | [!UICONTROL Paramètres du service de balisage intelligent des ressources] | [!DNL Adobe Developer Console] Champs d’intégration |
    |--- |--- |
@@ -144,19 +144,19 @@ Pour configurer l’intégration, utilisez les valeurs des champs ID [!UICONTROL
 
 Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour valider la configuration. Pour procéder à la validation, suivez ces étapes.
 
-1. Accédez à votre [!DNL Experience Manager] serveur à `https://[aem_server]:[port]`.
+1. Accédez à votre serveur [!DNL Experience Manager] à `https://[aem_server]:[port]`.
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** to open the OSGi console. Click **[!UICONTROL Main] > [!UICONTROL JMX]**.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]** pour ouvrir la console OSGi. Cliquez sur **[!UICONTROL Main] > [!UICONTROL JMX]**.
 
-1. Cliquez sur `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
+1. Cliquez sur `com.day.cq.dam.similaritysearch.internal.impl`. Il ouvre **[!UICONTROL SimilaritySearch Tâches diverses]**.
 
-1. Cliquez sur `validateConfigs()`. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
+1. Cliquez sur `validateConfigs()`. Dans la boîte de dialogue **[!UICONTROL Valider les configurations]**, cliquez sur **[!UICONTROL Appeler]**.
 
 Les résultats de la validation s’affichent dans la même boîte de dialogue.
 
-### Enable smart tagging in the [!UICONTROL DAM Update Asset] workflow (Optional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+### Activez le balisage intelligent dans le workflow [!UICONTROL DAM Update Asset] (facultatif) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-1. In [!DNL Experience Manager], go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 
 1. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez le modèle de processus **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**.
 
@@ -237,20 +237,20 @@ Par exemple, pour la balise *chaussure-décontractée*, la seconde image n’est
 
 ### Entraînement périodique {#periodic-training}
 
-Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne périodiquement sur les ressources et les balises associées au sein d’un dossier. Open the [!UICONTROL Properties] page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
+Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne périodiquement sur les ressources et les balises associées au sein d’un dossier. Ouvrez la page [!UICONTROL Propriétés] de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises actives]** sous l&#39;onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Once this option is selected for a folder, [!DNL Experience Manager] runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
+Une fois cette option sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un processus de formation pour former Smart Content Service aux ressources de dossier et à leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
 
-### Entraînement à la demande {#on-demand-training}
+### Entraînement à la demande  {#on-demand-training}
 
 Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est nécessaire à partir de la console Processus.
 
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+1. Dans l&#39;interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
+1. Dans la page **[!UICONTROL Modèles de flux de travail]**, sélectionnez le processus **[!UICONTROL Formation aux balises actives]**, puis cliquez sur **[!UICONTROL Processus de Début]** dans la barre d’outils.
 1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, localisez le dossier de charge utile qui comprend les ressources balisées pour entraîner le service.
-1. Indiquez le titre du workflow et ajoutez un commentaire. Then, click **[!UICONTROL Run]**. Les ressources et les balises sont soumises à l’entraînement.
+1. Indiquez le titre du workflow et ajoutez un commentaire. Cliquez ensuite sur **[!UICONTROL Exécuter]**. Les ressources et les balises sont soumises à l’entraînement.
 
    ![workflow_dialog](assets/workflow_dialog.png)
 
@@ -258,18 +258,18 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 >
 >Une fois que les ressources d’un dossier sont traitées pour la formation, seules les ressources modifiées sont traitées au cours des cycles de formation suivants.
 
-### Rapports de formation vue {#viewing-training-reports}
+### Rapports de formation de vue {#viewing-training-reports}
 
 Pour vérifier que le service de contenu dynamique est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Dans l&#39;interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, cliquez sur **[!UICONTROL Créer]**.
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, cliquez sur **[!UICONTROL Afficher]** dans la barre d’outils.
 1. Passez en revue les détails du rapport.
 
-   Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le processus d’entraînement pour l’entraînement complet du service sur la balise.
+   Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise.
 
    Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
 
@@ -281,9 +281,9 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 
    * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
    * Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
-   * Tagging is supported in the locales that [!DNL Experience Manager] is supported in. Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+   * Le balisage est pris en charge dans les paramètres régionaux dans lesquels [!DNL Experience Manager] est pris en charge. Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
-* To search for assets with smart tags (regular or enhanced), use the [!DNL Assets] Omnisearch (full-text search). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
+* Pour rechercher des ressources avec des balises actives (régulières ou améliorées), utilisez [!DNL Assets] Omnisearch (recherche de texte intégral). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 
 >[!MORELIKETHIS]
 >
