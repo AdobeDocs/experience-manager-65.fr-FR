@@ -17,7 +17,7 @@ ht-degree: 89%
 ---
 
 
-# Configuration des services de stockage pour les brouillons et les envois {#configuring-storage-services-for-drafts-and-submissions}
+# Configuration des services de stockage pour les brouillons et les envois  {#configuring-storage-services-for-drafts-and-submissions}
 
 ## Présentation {#overview}
 
@@ -39,13 +39,13 @@ Outre l’approche par défaut mentionnée ci-dessus, une autre mise en œuvre d
 >
 >Pour plus d’informations, voir [Exemple d’intégration d’un composant de brouillons et d’envois à la base de données](/help/forms/using/integrate-draft-submission-database.md).
 
-## Configuration des services de brouillons et envois Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
+## Configuration des services de brouillons et envois Forms Portal  {#configuring-forms-portal-drafts-and-submissions-services}
 
-In the AEM Web Console Configuration ( `https://[host]:'port'/system/console/configMgr`), click to open **Forms Portal Draft and Submission Configuration** in edit mode.
+Dans la configuration de la console Web AEM ( `https://[host]:'port'/system/console/configMgr`), cliquez pour ouvrir **Configuration des brouillons et des envois du portail Forms** en mode d’édition.
 
 Indiquez les valeurs des propriétés en fonction de vos besoins comme décrit ci-dessous :
 
-### Services de stockage de données sur l’instance de publication prêts à l’emploi {#out-of-the-box-services-to-store-data-on-publish-instance}
+### Services de stockage de données sur l’instance de publication prêts à l’emploi  {#out-of-the-box-services-to-store-data-on-publish-instance}
 
 Les données subissent une réplication inversée sur l’instance d’auteur configurée.
 
@@ -74,7 +74,7 @@ Les données subissent une réplication inversée sur l’instance d’auteur co
  </tbody>
 </table>
 
-### Services de stockage de données sur l’instance de traitement à distance prêts à l’emploi {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
+### Services de stockage de données sur l’instance de traitement à distance prêts à l’emploi  {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
 
 Les données sont publiées directement sur l’instance à distance configurée
 
@@ -105,9 +105,9 @@ Les données sont publiées directement sur l’instance à distance configurée
 
 Outre la configuration spécifiée ci-dessus, fournissez les informations sur l’instance de traitement à distance configurée.
 
-In the AEM Web Console Configuration ( `https://[host]:'port'/system/console/configMgr`), click to open **AEM DS Settings Service** in edit mode. Dans la boîte de dialogue de service des paramètres AEM DS, renseignez les informations sur l’URL du serveur de traitement, y compris le nom d’utilisateur et le mot de passe.
+Dans la configuration de la console Web AEM ( `https://[host]:'port'/system/console/configMgr`), cliquez pour ouvrir **AEM DS Settings Service** en mode d&#39;édition. Dans la boîte de dialogue de service des paramètres AEM DS, renseignez les informations sur l’URL du serveur de traitement, y compris le nom d’utilisateur et le mot de passe.
 
 >[!NOTE]
 >
->Un exemple de mise en œuvre est également fourni pour le stockage des données utilisateur dans une base de données. To understand how to configure data and metadata services to store user data in an external database, see [Sample for integrating drafts &amp; submissions component with database](/help/forms/using/integrate-draft-submission-database.md).
+>Un exemple de mise en œuvre est également fourni pour le stockage des données utilisateur dans une base de données. Pour savoir comment configurer les services de données et de métadonnées pour stocker les données utilisateur dans une base de données externe, voir [Exemple d’intégration du composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md).
 
