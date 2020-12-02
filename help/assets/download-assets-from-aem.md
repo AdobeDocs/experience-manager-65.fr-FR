@@ -1,17 +1,17 @@
 ---
-title: Télécharger des ressources
-description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
+title: Téléchargement de ressources
+description: Découvrez comment télécharger des ressources à partir de  [!DNL Adobe Experience Manager] et activer ou désactiver la fonctionnalité de téléchargement.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 74%
+ht-degree: 77%
 
 ---
 
 
-# Télécharger des ressources depuis [!DNL Adobe Experience Manager]{#download-assets-from-aem}
+# Télécharger des ressources depuis [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
 Vous pouvez télécharger des ressources, dont des rendus statiques et dynamiques. Vous pouvez également envoyer des liens vers des ressources par courrier électronique, directement depuis [!DNL Adobe Experience Manager Assets]. Les ressources téléchargées sont compressées dans un fichier ZIP. La taille maximale du fichier ZIP compressé est de 1 Go pour la tâche d’exportation. Un maximum de 500 ressources par tâche d’exportation est autorisé.
 
@@ -21,13 +21,13 @@ Vous pouvez télécharger des ressources, dont des rendus statiques et dynamique
 
 Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionneuses de supports variés et Visionneuses de carrousel ne peuvent pas être téléchargés.
 
-Pour télécharger des fichiers, procédez comme suit :
+Pour télécharger des ressources, procédez comme suit :
 
 1. Dans le coin supérieur gauche, cliquez sur le logo. Dans le rail de gauche, cliquez sur **[!UICONTROL Navigation]**.
-1. On the [!UICONTROL Navigation] page, click **[!UICONTROL Assets]** > **[!UICONTROL Files.]**
+1. Sur la page [!UICONTROL Navigation], cliquez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers.]**
 1. Accédez à un dossier contenant les ressources à télécharger.
 1. Sélectionnez le dossier ou une ou plusieurs ressources qu’il contient.
-1. On the toolbar, click **[!UICONTROL Download.]**
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Télécharger.]**
 
    ![Options disponibles lors du téléchargement de ressources à partir d’Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
@@ -44,18 +44,18 @@ Pour télécharger des fichiers, procédez comme suit :
    | **[!UICONTROL Recadrages intelligents]** | Sélectionnez cette option pour télécharger tous les rendus de recadrage intelligent de la ressource sélectionnée depuis AEM. Un fichier zip contenant les rendus de recadrage intelligent est créé et téléchargé sur votre ordinateur local. |
    | **[!UICONTROL Rendu(s) dynamique(s)]** | Sélectionnez cette option pour générer une série de rendus alternatifs en temps réel. Lorsque vous sélectionnez cette option, vous sélectionnez également les rendus à créer dynamiquement dans la liste [Paramètre d’image prédéfini](image-presets.md). <br>De plus, vous pouvez sélectionner la taille, l’unité de mesure, le format, l’espace colorimétrique, la résolution, ainsi que les éventuels modificateurs d’image (pour inverser l’image, par exemple). Cette option n’est disponible que si vous avez activé [!DNL Dynamic Media]. |
 
-1. In the dialog box, click **[!UICONTROL Download.]**.
+1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Télécharger.]**.
 
 Lorsque vous sélectionnez un dossier à télécharger, l’ensemble de la hiérarchie des ressources sous ce dossier est téléchargé. Pour inclure chaque ressource que vous téléchargez (dont les ressources dans les dossiers enfants imbriqués sous le dossier parent) dans un dossier individuel, sélectionnez **[!UICONTROL Créer un dossier distinct pour chaque ressource]**.
 
 ## Activation du servlet de téléchargement de ressources {#enable-asset-download-servlet}
 
-The default servlet in [!DNL Experience Manager] allows authenticated users to issue arbitrarily large, concurrent download requests for creating ZIP files of assets visible to them that can overload the server and the network. Pour atténuer les risques d’attaques par déni de service, le composant OSGi `AssetDownloadServlet` est désactivé par défaut pour les instances de publication.
+La servlet par défaut de [!DNL Experience Manager] permet aux utilisateurs authentifiés d’émettre des demandes de téléchargement simultanées et arbitraires pour créer des fichiers ZIP de ressources visibles qui peuvent surcharger le serveur et le réseau. Pour atténuer les risques d’attaques par déni de service, le composant OSGi `AssetDownloadServlet` est désactivé par défaut pour les instances de publication.
 
 Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lorsque vous utilisez un élément comme Asset Share Commons ou une autre implémentation de type portail), activez manuellement le servlet via une configuration OSGi. Adobe recommande de définir la taille de téléchargement autorisée sur la valeur la plus basse possible sans affecter les exigences de téléchargement au quotidien. Une valeur élevée peut avoir une incidence sur les performances.
 
-1. Create a folder with a naming convention that targets the publish runmode (`config.publish`): `/apps/<your-app-name>/config.publish`. Pour définir les propriétés de configuration d’un mode d’exécution, voir Modes d’ [exécution](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
-1. In the configuration folder, create a file of type `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
+1. Créez un dossier avec une convention d’affectation de nom qui cible le mode d’exécution de publication (`config.publish`) : `/apps/<your-app-name>/config.publish`. Pour définir les propriétés de configuration d&#39;un mode d&#39;exécution, voir [Modes d&#39;exécution](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
+1. Dans le dossier de configuration, créez un fichier de type `nt:file` nommé `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Remplissez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` avec les éléments suivants. Définit une taille maximale (en octets) pour le téléchargement en tant que valeur de `asset.download.prezip.maxcontentsize`. L’exemple ci-dessous configure la taille maximale du téléchargement ZIP pour qu’il ne dépasse pas 100 Ko.
 
    ```conf
@@ -65,16 +65,16 @@ Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lo
 
 ## Désactivation du servlet de téléchargement de ressources {#disable-asset-download-servlet}
 
-Le `Asset Download Servlet` peut être désactivé sur une instance  Publish en mettant à jour la configuration du dispatcher afin de bloquer toute demande de téléchargement de ressources. [!DNL Experience Manager] Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
+Le `Asset Download Servlet` peut être désactivé sur les instances de publication [!DNL Experience Manager] en mettant à jour la configuration du Dispatcher afin de bloquer toute demande de téléchargement de ressources. Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
 
-1. To block asset download requests via a dispatcher configuration, edit the `dispatcher.any` configuration and add a rule to the [filter section](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Pour bloquer les demandes de téléchargement de ressources via une configuration de répartiteur, modifiez la configuration `dispatcher.any` et ajoutez une règle à la section [filtre](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-1. Pour désactiver le composant OSGi sur une instance de publication, accédez à la console OSGi à `http://[aem_server]:[port]/system/console/components`. Recherchez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` et cliquez ensuite sur **[!UICONTROL Désactiver]**.
+1. Pour désactiver le composant OSGi sur une instance de publication, accédez à la console OSGi à l’adresse `http://[aem_server]:[port]/system/console/components`. Recherchez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` et cliquez ensuite sur **[!UICONTROL Désactiver]**.
 
 >[!MORELIKETHIS]
 >
 >* [Téléchargement de fichiers à l’aide du portail de marque](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Téléchargement de ressources protégées par DRM](drm.md).
->* [Téléchargez des fichiers à l’aide d’une application de bureau Experience Manager sur un ordinateur de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)Windows ou Mac.
->* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html).
+>* [Téléchargement de ressources à l’aide de l’appli de bureau Experience Manager sur un poste de travail Windows ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
+>* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html).
 
