@@ -56,7 +56,7 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 
 
 
-## Publication d’une page {#publishing-a-page}
+## Publication d’une page  {#publishing-a-page}
 
 Pour activer une page, vous pouvez procéder de deux manières :
 
@@ -122,7 +122,7 @@ Pour désactiver une page :
 Pour planifier l’activation à une heure ultérieure :
 
 1. Dans la console Sites Web, accédez au menu **Activer** et sélectionnez ensuite **Activer plus tard**.
-1. In the dialog that opens you provide the date and time for activation and click **OK**. This creates a version of the page that is activated at the specified time.
+1. Dans la boîte de dialogue qui s’ouvre, indiquez la date et l’heure de l’activation et cliquez sur **OK**. Cette opération crée une version de la page qui est activée à l’heure spécifiée.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -130,13 +130,13 @@ L’activation différée lance un workflow pour activer cette version de la pag
 
 Pour annuler cette activation/désactivation, rendez-vous dans la [console Worfklow](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) pour mettre un terme au workflow correspondant.
 
-### Désactiver plus tard {#deactivate-later}
+### Désactiver plus tard  {#deactivate-later}
 
 Pour planifier la désactivation à une heure ultérieure :
 
-1. In the Website console, go to the **Deactivate** menu, and select **Deactivate later**.
+1. Dans la console Site Web, accédez au menu **Désactiver**, puis sélectionnez **Désactiver plus tard**.
 
-1. In the dialog that opens you provide the date and time for deactivation and click **OK**.
+1. Dans la boîte de dialogue qui s’ouvre, indiquez la date et l’heure de désactivation, puis cliquez sur **OK**.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
@@ -144,7 +144,7 @@ La **désactivation différée** lance un workflow pour désactiver cette versio
 
 Pour annuler cette désactivation, rendez-vous dans la [console Worfklow](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) pour mettre un terme au workflow correspondant.
 
-## Activation/désactivation planifiée (heure d’activation/désactivation) {#scheduled-activation-deactivation-on-off-time}
+## Activation/désactivation planifiée (heure d’activation/désactivation)  {#scheduled-activation-deactivation-on-off-time}
 
 Pour programmer les heures de publication/annulation de publication d’une page, utilisez les options **Heure d’activation** et **Heure de désactivation** dans les [Propriétés de la page](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
@@ -152,21 +152,21 @@ Pour programmer les heures de publication/annulation de publication d’une page
 
 Vous pouvez vérifier l’état dans la [console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). Les couleurs indiquent l’état de publication.
 
-## Activation d’une section (arborescence) complète de votre site web {#activating-a-complete-section-tree-of-your-website}
+## Activation d’une section (arborescence) complète de votre site web  {#activating-a-complete-section-tree-of-your-website}
 
 Vous pouvez activer les différentes pages à partir de l’onglet **Sites web**. Après avoir saisi ou mis à jour un nombre élevé de pages de contenu (toutes résidant sous la même page racine), il peut s’avérer plus simple d’activer toute l’arborescence en une seule opération. Vous pouvez également effectuer une exécution d’essai afin d’émuler une activation et de mettre en surbrillance les pages à activer.
 
-1. Open the **Tools** console by selecting it from the **Welcome** page and then double-click **Replication** to open the console ( `https://localhost:4502/etc/replication.html`).
+1. Ouvrez la console **Outils** en la sélectionnant dans la page **Bienvenue**, puis cliquez sur **Réplication** en doublon pour ouvrir la console ( `https://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. Sur la console **Réplication**, cliquez sur **Activer l’arborescence**.
 
-   The following window ( `https://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
+   La fenêtre suivante ( `https://localhost:4502/etc/replication/treeactivation.html`) s&#39;affiche.
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Enter the **Start Path**. This specifies the path to the root of the section you want to activate (publish). This page and all pages underneath are considered for activation (or used in the emulation if a Dry Run is selected).
+1. Saisissez le **chemin d’accès au Début**. Ceci spécifie le chemin d&#39;accès à la racine de la section que vous souhaitez activer (publier). Cette page et toutes les pages situées en dessous sont prises en compte pour l’activation (ou utilisées dans l’émulation si une exécution à sec est sélectionnée).
 1. Activez les critères de sélection suivant vos besoins :
 
    * **Uniquement Modifié** : active uniquement les pages qui ont été modifiées.
@@ -175,6 +175,6 @@ Vous pouvez activer les différentes pages à partir de l’onglet **Sites web**
 
 1. Sélectionnez l’opération à effectuer :
 
-   1. Select **Dry Run** if you want to check which pages *would* be activated. This is only an emulation, no pages will be activated.
+   1. Sélectionnez **Exécution sèche** si vous souhaitez vérifier quelles pages *seront* activées. Il ne s&#39;agit que d&#39;une émulation, aucune page ne sera activée.
 
-   1. Select **Activate** if you want to activate the pages.
+   1. Sélectionnez **Activer** si vous souhaitez activer les pages.
