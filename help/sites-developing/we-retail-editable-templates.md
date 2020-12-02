@@ -24,14 +24,14 @@ Grâce aux modèles modifiables, les tâches de création et de gestion des mod�
 
 Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles.
 
-## Test {#trying-it-out}
+## Test  {#trying-it-out}
 
 1. Modifiez la page Équipement de la branche principale de langue.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. Notez que le sélecteur de mode ne propose plus de mode Conception. Toutes les pages de We.Retail reposent sur des modèles modifiables. Pour modifier la conception de ces modèles, vous devez recourir à l’éditeur de modèles.
-1. From the **Page information** menu select **Edit Template**.
+1. Dans le menu **Informations sur la page**, sélectionnez **Modifier le modèle**.
 1. Vous modifiez à présent le modèle « Page de modèle ».
 
    Le mode de structure de la page vous permet de modifier la structure du modèle. Cela comprend, par exemple, les composants qui sont autorisés dans le conteneur de mises en page.
@@ -72,9 +72,9 @@ Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet 
 
    Le mode **Disposition** peut être utilisé tel quel sur une page normale pour définir la mise en page du modèle.
 
-## Informations supplémentaires {#more-information}
+## Informations supplémentaires  {#more-information}
 
-For further information please refer to the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete technical details on editable templates.
+Pour plus d&#39;informations, consultez le document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page du document du développeur [Modèles - modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir des détails techniques complets sur les modèles modifiables.
 
-Vous pouvez également vous renseigner sur les [composants principaux](/help/sites-developing/we-retail-core-components.md). See the authoring document [Core Components](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) for an overview of the capabilities of the core components and the developer document [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) for a technical overview.
+Vous pouvez également vous renseigner sur les [composants principaux](/help/sites-developing/we-retail-core-components.md). Voir le document de création [Composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) pour un aperçu des capacités des composants de base et le document de développement [Développement de composants de base](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) pour un aperçu technique.
 
