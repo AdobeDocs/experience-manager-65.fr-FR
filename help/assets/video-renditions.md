@@ -42,6 +42,6 @@ Une fois que vous avez configuré le serveur proxy et créé les profils vidéo,
 
 >[!NOTE]
 >
->La lecture audio ne fonctionne pas pour les fichiers OGG et WAV sur Microsoft Internet Explorer 11. An error `Invalid Source` displays up on the asset details page for assets with extension OGG or WAV.
+>La lecture audio ne fonctionne pas pour les fichiers OGG et WAV sur Microsoft Internet Explorer 11. Une erreur `Invalid Source` s’affiche sur la page des détails de la ressource pour les ressources avec l’extension OGG ou WAV.
 >
 >Sur MS Edge et iPad, les fichiers OGG ne sont pas lus et génèrent une erreur de format non prise en charge.
