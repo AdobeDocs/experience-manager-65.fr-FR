@@ -25,7 +25,7 @@ ht-degree: 2%
 
 AEM Communities fournit une section de notifications qui affiche les événements d’intérêt pour les membres de la communauté connectés.
 
-Les notifications sont semblables aux [activités](/help/communities/essentials-activities.md) et [abonnements](/help/communities/subscriptions.md) qui peuvent découler :
+Les notifications sont semblables aux [activités](/help/communities/essentials-activities.md) et [abonnements](/help/communities/subscriptions.md), car elles peuvent provenir de :
 
 * Membre qui publie du contenu.
 * Le membre qui choisit de suivre un autre membre.
@@ -36,8 +36,8 @@ Ce qui distingue les notifications des activités et abonnements est :
 
 * Un lien vers la section des notifications est toujours présent dans l’en-tête d’un site communautaire :
 
-   * Les Activités exigent que la fonction [de flux d&#39;](/help/communities/functions.md#activity-stream-function) activité soit incluse dans la structure du site communautaire.
-   * Les Abonnements nécessitent [la configuration du courrier électronique](/help/communities/email.md).
+   * Les Activités exigent que la fonction de flux d&#39;activité [](/help/communities/functions.md#activity-stream-function) soit incluse dans la structure du site communautaire.
+   * Les Abonnements nécessitent [la configuration de l&#39;adresse électronique](/help/communities/email.md).
 
 * La mise en oeuvre des notifications s’effectue au moyen de canaux évolutives et enfichables :
 
@@ -46,7 +46,7 @@ Ce qui distingue les notifications des activités et abonnements est :
 
 En ce qui concerne les communautés [FP1](/help/communities/deploy-communities.md#latestfeaturepack), les canaux de notification disponibles sont les suivants :
 
-* Canal Web, accessible à l’aide du `Notifications` lien.
+* Canal Web, accessible à l’aide du lien `Notifications`.
 * Canal de messagerie, disponible lorsque le courrier électronique est correctement configuré.
 
 Les futurs canaux sont mobiles et de bureau.
@@ -61,23 +61,23 @@ Pour obtenir des instructions sur la configuration du courrier électronique, vo
 
 **Activer le suivi**
 
-Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar, filelibrary et les commentaires.](/help/communities/calendar.md)[](/help/communities/file-library.md)[](/help/communities/comments.md)
+Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md) et [commentaires](/help/communities/comments.md).
 
 **Remarque** :
 
-* Les composants utilisés dans les modèles [de](/help/communities/sites.md) site de la communauté et les modèles [de](/help/communities/tools-groups.md) groupe peuvent déjà être configurés pour être suivis.
+* Les composants utilisés dans la communauté [modèles de site](/help/communities/sites.md) et [modèles de groupe](/help/communities/tools-groups.md) peuvent déjà être configurés pour suivre.
 
 * Les profils membres sont déjà configurés pour permettre aux autres membres de suivre.
 
-## Notifications de suivi {#notifications-from-following}
+## Notifications de l&#39;utilisateur suivant {#notifications-from-following}
 
 ![notifications](assets/notifications.png)
 
-Le bouton **[!UICONTROL Suivre]** permet de suivre les entrées comme activités, abonnements et/ou notifications. Chaque fois que le bouton **[!UICONTROL Suivre]** est sélectionné, il est possible d’activer ou de désactiver une sélection. La `Email Subscriptions` sélection n’est présente que lorsqu’elle est configurée.
+Le bouton **[!UICONTROL Suivre]** permet de suivre les entrées comme activités, abonnements et/ou notifications. Chaque fois que le bouton **[!UICONTROL Suivre]** est sélectionné, il est possible d&#39;activer ou de désactiver une sélection. La sélection `Email Subscriptions` n&#39;est présente que lorsqu&#39;elle est configurée.
 
-Si une méthode de suivi est sélectionnée, le texte du bouton devient **[!UICONTROL Suivant]**. Pour plus de commodité, il est possible de choisir `Unfollow All` de désactiver toutes les méthodes.
+Si une méthode de suivi est sélectionnée, le texte du bouton devient **[!UICONTROL Suivant]**. Pour plus de commodité, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
 
-Le bouton **[!UICONTROL Suivre]** s’affiche :
+Le bouton **[!UICONTROL Suivre]** apparaît :
 
 * Lors de l’affichage du profil d’un autre membre.
 * Sur une page de présentation principale, telle que les forums, la QnA et les blogs :
@@ -96,7 +96,7 @@ Le canal Web est toujours activé.
 
 ![notifications14](assets/notifications1.png)
 
-Le canal de messagerie électronique, qui repose sur une [configuration appropriée du courrier électronique](/help/communities/email.md), fournit les mêmes paramètres que pour le canal Web.
+Le canal de courrier électronique, qui repose sur la configuration [correcte de l’adresse électronique](/help/communities/email.md), fournit les mêmes paramètres que pour le canal Web.
 
 Le canal de messagerie est désactivé par défaut.
 
@@ -110,9 +110,9 @@ Il peut être activé par un membre, mais dépend toujours de la configuration d
 
 ### Notifications Web {#web-notifications}
 
-Un [assistant a créé un site](/help/communities/sites-console.md) communautaire et inclut désormais un lien vers la `Notifications` fonction dans la barre d’en-tête du site au-dessus de la bannière. Contrairement aux messages, les notifications sont créées pour chaque site de la communauté, tandis que les messages doivent être activés pendant le processus de création du site.
+Un [assistant a créé un site communautaire](/help/communities/sites-console.md) comprend désormais un lien vers la fonction `Notifications` dans la barre d&#39;en-tête du site au-dessus de la bannière. Contrairement aux messages, les notifications sont créées pour chaque site de la communauté, tandis que les messages doivent être activés pendant le processus de création du site.
 
-Lors de la visite du site publié, la sélection du `Notifications` lien affichera toutes les notifications pour le membre.
+Lors de la visite du site publié, la sélection du lien `Notifications` affiche toutes les notifications pour le membre.
 
 ![notifications4](assets/notifications4.png)
 
@@ -124,9 +124,9 @@ Lorsque le canal de messagerie est activé, le membre reçoit un courrier élect
 
 ## Personnaliser les notifications par courrier électronique {#customize-email-notifications}
 
-Les entreprises peuvent personnaliser les notifications par courrier électronique en [superposant](/help/communities/client-customize.md#overlays) les modèles dans **/libs/settings/community/templates/email/html**.
+Les entreprises peuvent personnaliser les notifications par courrier électronique en [superposant](/help/communities/client-customize.md#overlays) les modèles à **/libs/settings/community/templates/email/html**.
 
-Par exemple, pour modifier les notifications de mentions par courrier électronique (pour un composant de communautés), ajoutez une condition **if** pour la **mention** de verbe dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions** .
+Par exemple, pour modifier les notifications de mentions par courrier électronique (pour un composant de communautés), ajoutez une condition **if** pour verbe **mentions** dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions**.
 
 Pour modifier le modèle de notifications électroniques pour @mentions dans les commentaires de blog, placez le modèle prêt à l&#39;emploi à l&#39;adresse suivante : **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/fr**
 
