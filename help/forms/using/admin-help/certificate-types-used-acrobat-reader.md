@@ -27,7 +27,7 @@ L’afficheur de certificat fournit les informations suivantes sur le certificat
 * Période de validité
 * Droits d’utilisation des extensions d’Acrobat Reader DC
 
-## Nom « convivial » du certificat {#certificate-friendly-name}
+## Nom « convivial » du certificat  {#certificate-friendly-name}
 
 Le nom « convivial » d’un certificat des extensions d’Acrobat Reader DC est une chaîne décrivant les propriétés du certificat, comme dans l’exemple suivant :
 
@@ -35,15 +35,15 @@ ARE Code-barres 2D Complète Production V6.1 P8 0002054
 
 Cette chaîne contient les éléments suivants :
 
-**Type de certificat :** Décrit les modules de formulaires AEM activés par le certificat, ainsi que le niveau d’activation, tel que ARE Code à barres 2D Complet. Pour la liste des types de certificat, reportez-vous à la colonne Type du tableau de la section Profils de certificat.
+**Type de certificat :** décrit les modules de formulaires AEM activés par le certificat, ainsi que le niveau d’activation, tel que ARE Code à barres 2D Complet. Pour la liste des types de certificat, reportez-vous à la colonne Type du tableau de la section Profils de certificat.
 
-**Type de déploiement :** Indique l’utilisation prévue du certificat, telle que Production. Cette valeur peut être Evaluation ou Production. Pour la liste des types de déploiement associés à chaque type de certificat, reportez-vous à la colonne Type de déploiement du tableau de la section Profils de certificat.
+**Type de déploiement :** indique l’utilisation prévue du certificat, telle que Production. Cette valeur peut être Evaluation ou Production. Pour la liste des types de déploiement associés à chaque type de certificat, reportez-vous à la colonne Type de déploiement du tableau de la section Profils de certificat.
 
-**Version des droits d’utilisation :** Décrit la version de l’algorithme des droits d’utilisation pour laquelle le certificat peut être utilisé, par exemple V6.1. Cette version ne signifie pas la version d’Acrobat ou des extensions Acrobat Reader DC.
+**Version des droits d’utilisation :** décrit la version de l’algorithme des droits d’utilisation pour laquelle le certificat peut être utilisé, par exemple V6.1. Cette version ne signifie pas la version des extensions Acrobat ou Acrobat Reader DC.
 
-**Code de profil :** Le code de profil est une description abrégée des propriétés complètes du certificat, par exemple, P8. Pour la liste des codes de profil associés à chaque type de fichier, reportez-vous à la colonne Profil du tableau de la section Profils de certificat.
+**Code de profil :** le code de profil est une description abrégée des propriétés complètes du certificat, par exemple, P8. Pour la liste des codes de profil associés à chaque type de fichier, reportez-vous à la colonne Profil du tableau de la section Profils de certificat.
 
-**Numéro de série :** Un numéro de série est attribué à chaque certificat émis par Adobe, par exemple 0002054. Adobe Enterprise Support ou un représentant du compte Enterprise Adobe peut utiliser ce numéro de série pour tracer le certificat à une commande de produit spécifique ou à une relation OEM.
+**Numéro de série :** un numéro de série est attribué à chaque certificat émis par l’Adobe, par exemple 0002054. Adobe Enterprise Support ou un représentant du compte Enterprise Adobe peut utiliser ce numéro de série pour tracer le certificat à une commande de produit spécifique ou à une relation OEM.
 
 ## Profils du certificat {#certificate-profiles}
 
@@ -146,7 +146,7 @@ Le tableau suivant répertorie les différents profils de certificat que vous po
  </tbody>
 </table>
 
-## Période de validité {#validity-period}
+## Période de validité  {#validity-period}
 
 Les certificats d’évaluation sont fournis aux clients et aux développeurs pour leur permettre d’évaluer et de développer des exemples d’applications pour les produits. La période de validité de ces certificats est comprise entre 60 et 90 jours. Ils expirent à la fin du second mois suivant la date d’émission.
 
@@ -156,7 +156,7 @@ Les certificats du type Usage interne Adobe sont utilisés en interne par Adobe 
 
 Les certificats du type Production sont fournis aux clients qui ont acheté les extensions d’Acrobat Reader DC. Ces certificats sont valables pendant la durée maximale autorisée par la CA (Certificate Authority, Autorité de certification), définie comme « *Max* » dans le tableau Profils de certificat.
 
-## Droits d’utilisation des extensions d’Acrobat Reader DC {#acrobat-reader-dc-extensions-usage-rights}
+## Droits d’utilisation des extensions d’Acrobat Reader DC  {#acrobat-reader-dc-extensions-usage-rights}
 
 Lorsque vous examinez le certificat des extensions d’Acrobat Reader DC dans l’Afficheur de certificat, sélectionnez l’élément Droits d’utilisation dans l’onglet Détails (s’il est configuré) pour afficher la liste des droits d’utilisation Adobe Reader qui peuvent être activés par le certificat. Les droits d’utilisation activés sur un document particulier peuvent être un sous-ensemble de ceux activés par le certificat.
 
