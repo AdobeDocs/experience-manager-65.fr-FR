@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Début rapide de l’API Java du service Forms Barcoded (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+# Début rapide (SOAP) de l’API Java du service Forms Barcoded {#barcoded-forms-service-java-apiquick-start-soap}
 
 Le Début rapide de l’API Java (SOAP) est disponible pour le service Barcoded Forms :
 
@@ -31,7 +31,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-Le code Java suivant décode les données de formulaire qui se trouvent dans un formulaire PDF enregistré sous Loan.pdf. Les données décodées sont enregistrées sous la forme d’un fichier XML appelé extractData.xml. Cet exemple de code convertit un `org.w3c.dom.Document` objet en `com.adobe.idp.Document` objet. (Voir [Décodage des données](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)de formulaire à code à barres.)
+Le code Java suivant décode les données de formulaire qui se trouvent dans un formulaire PDF enregistré sous Loan.pdf. Les données décodées sont enregistrées sous la forme d’un fichier XML appelé extractData.xml. Cet exemple de code convertit un objet `org.w3c.dom.Document` en objet `com.adobe.idp.Document`. (Voir [Décodage des données de formulaire à code à barres](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -220,5 +220,5 @@ Le code Java suivant décode les données de formulaire qui se trouvent dans un 
 
 >[!NOTE]
 >
->Lors de l’utilisation à la fois d’un `org.w3c.dom.Document` objet et d’un `com.adobe.idp.Document` objet dans la même logique d’application, il est recommandé de qualifier complètement les deux objets.
+>Lors de l’utilisation à la fois d’un objet `org.w3c.dom.Document` et d’un objet `com.adobe.idp.Document` dans la même logique d’application, il est recommandé de qualifier complètement les deux objets.
 
