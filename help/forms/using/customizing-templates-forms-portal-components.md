@@ -34,7 +34,7 @@ Forms Portal permet d’utiliser des métadonnées personnalisées dans les list
 
 Pour créer un modèle personnalisé pour divers composants de Forms Portal, suivez la procédure ci-après.
 
-## Création d’un modèle personnalisé {#creating-a-nbsp-custom-template}
+## Création d’un modèle personnalisé  {#creating-a-nbsp-custom-template}
 
 1. Créez un nœud sling:Folder sous /apps
 
@@ -59,7 +59,7 @@ Pour créer un modèle personnalisé pour divers composants de Forms Portal, sui
 1. Créez un fichier template.html dans ce dossier qui servira de modèle personnalisé.
 1. Créez le modèle personnalisé et utilisez des métadonnées personnalisées comme indiqué ci-dessous.
 
-## Exemple fonctionnel {#working-example}
+## Exemple fonctionnel  {#working-example}
 
 Vous trouverez ci-dessous un exemple d’implémentation d’un modèle personnalisé dans lequel Forms Portal acquiert une disposition Geometrixx Gov Card Layout pour le composant Recherche et énumérateur.
 
@@ -81,19 +81,19 @@ Vous trouverez ci-dessous un exemple d’implémentation d’un modèle personna
 </div>
 ```
 
-## Spécifications techniques relatives aux modèles personnalisés {#technical-specifications-for-custom-templates}
+## Spécifications techniques relatives aux modèles personnalisés  {#technical-specifications-for-custom-templates}
 
 Un modèle personnalisé pour tout composant Forms Portal comprend des entrées répétables et non répétables. Les entrées répétables sont les entités de base des listes. Les composants Recherche et énumérateur, Brouillons et envois et Lien sont des exemples d’entrées répétables.
 
 Forms Portal fournit une syntaxe pour que les espaces réservés affichent des métadonnées personnalisées/prêtes à l’emploi. Les espaces réservés sont remplis après l’affichage des résultats des formulaires, des brouillons ou des envois.
 
-To include a repeatable entry, configure the value of the attribute **data-repeatable** to **true**.
+Pour inclure une entrée répétable, configurez la valeur de l’attribut **data-repeatable** sur **true**.
 
-*Dans l’exemple présenté, deux éléments Div se trouvent dans la partie supérieure du modèle personnalisé. Le premier, avec la classe CSS &quot;__FP_boxes-container&quot;, fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS &quot;__FP_boxes&quot;, est un modèle pour les entités de base, à savoir un formulaire dans le cas présent. The **data-repeatable**attribute present in the Div element has the value **true**.*
+*Dans l’exemple présenté, deux éléments Div se trouvent dans la partie supérieure du modèle personnalisé. Le premier, avec la classe CSS &quot;__FP_boxes-container&quot;, fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS &quot;__FP_boxes&quot;, est un modèle pour les entités de base, à savoir un formulaire dans le cas présent. L&#39;attribut **data-repeatable**présent dans l&#39;élément Div a la valeur **true**.*
 
-Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. To display custom metadata at a particular place on the form, add the **${metadata_prop} property** at the place.
+Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement particulier du formulaire, ajoutez la propriété **${metadata_prop}** à l’emplacement.
 
-*Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. For example, it is used in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, and **path**in the prescribed manner.*
+*Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. Par exemple, il est utilisé dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**et &lt;a1. 2/>chemin **de la manière prescrite.***
 
 ## Métadonnées prêtes à l’emploi {#out-of-the-box-metadata}
 
@@ -104,11 +104,11 @@ Les différents composants de Forms Portal fournissent des jeux exclusifs de mé
 * **Title :** titre du formulaire
 * **name** : nom du formulaire (il s’agit généralement du titre)
 * **description** : description du formulaire.
-* **formUrl**: URL permettant de générer le formulaire au format HTML
-* **pdfUrl**: URL permettant de générer le formulaire au format PDF
-* **assetType** : type de la ressource. Valid values include **Form**,**PDF Form**, **Print Form**, and **Adaptive Form**
+* **formUrl** : URL permettant de générer le formulaire au format HTML
+* **pdfUrl** : URL permettant de générer le formulaire au format PDF
+* **assetType** : type de la ressource. Les valeurs valides sont **Form**,**PDF Form**, **Print Form** et **Adaptive Form**.
 
-* **htmlStyle** et **pdfStyle** : style d’affichage des icônes HTML et PDF utilisées pour le rendu. Valid values are “**__FP_display_none**” or blank.
+* **htmlStyle** et **pdfStyle** : style d’affichage des icônes HTML et PDF utilisées pour le rendu. Les valeurs valides sont &quot;**__FP_display_none**&quot; ou vides.
 
 >[!NOTE]
 >
@@ -118,18 +118,18 @@ Les différents composants de Forms Portal fournissent des jeux exclusifs de mé
 
 Prise en charge de la localisation et du tri et utilisation des propriétés de configuration de l’interface utilisateur (Recherche et énumérateur uniquement) :
 
-1. **Prise en charge** des localisations : Pour localiser un texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle n’existe pas déjà.
-   *Dans l’exemple présenté, les attributs `${localize-Apply}` et `${localize-Download}` sont utilisés pour localiser le texte Appliquer et Télécharger.*
+1. **Prise en charge** des localisations : Pour localiser un texte statique, utilisez l’attribut  `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle n’existe pas déjà.
+   *Dans l’exemple présenté, les attributs  `${localize-Apply}` et  `${localize-Download}` sont utilisés pour localiser le texte Appliquer et Télécharger.*
 
 1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en œuvre le tri dans une disposition de tableau, ajoutez l’attribut « data-sortKey » à l’en-tête spécifique du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
 Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur de l&#39;en-tête &quot;data-sortKey&quot; est &quot;title&quot;. Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
 
-1. **Utilisation des propriétés de configuration** : le composant Recherche et énumérateur possède plusieurs configurations que vous pouvez utiliser dans l’interface utilisateur. For example, to display HTML ToolTip text saved through the edit dialog, use the `${config-htmlLinkText}` attribute. **De même, pour le texte d’info-bulle PDF, utilisez l’** attribut `${config-pdfLinkText}` .
+1. **Utilisation des propriétés de configuration** : le composant Recherche et énumérateur possède plusieurs configurations que vous pouvez utiliser dans l’interface utilisateur. Par exemple, pour afficher du texte d’info-bulle HTML enregistré dans la boîte de dialogue de modification, utilisez l’attribut `${config-htmlLinkText}`. **De même, pour le texte d’info-bulle PDF, utilisez** `${config-pdfLinkText}` l’attribut.
 
 ### Composant Link {#link-component}
 
 * **Title :** titre du formulaire
-* **formUrl**: URL permettant de générer le formulaire au format HTML
+* **formUrl** : URL permettant de générer le formulaire au format HTML
 * **target** : attribut cible du lien. Les valeurs valides sont les suivantes : &quot;_blank&quot; » et &quot;_self&quot;.
 * **linkText** : légende du lien.
 
@@ -151,17 +151,17 @@ Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur
 
 *Remarque :*
 
-1. Pour l’option de suppression dans la section Brouillons sous le composant Brouillons et envois, appelez la classe CSS &quot;__FP_deleteDraft&quot;. In addition, include the attribute &quot;draftID&quot; with the value **${draftID}**, which is the draft id of corresponding draft.
+1. Pour l’option de suppression dans la section Brouillons sous le composant Brouillons et envois, appelez la classe CSS &quot;__FP_deleteDraft&quot;. En outre, incluez l’attribut &quot;draftID&quot; avec la valeur **${draftID}**, qui est l’ID de brouillon du brouillon correspondant.
 
-1. While creating links to open drafts and submissions, you can specify **${path}.html** as the value of the **href** attribute for the anchor tag.
+1. Lors de la création de liens pour ouvrir des brouillons et des envois, vous pouvez spécifier **${path}.html** comme valeur de l’attribut **href** pour la balise d’ancrage.
 
 ![Nœud Drafts and Submission](assets/raw-image-with-index.png)
 
 **A**. Elément conteneur
 
-**B.** les métadonnées &quot;path&quot; avec une hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
+**Métadonnées B.**  &quot;path&quot; avec une hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
 
-**C.** Attribut répétable aux données utilisé pour la section de modèle de chaque formulaire
+**C.Attribut** répétable aux données utilisé pour la section de modèle de chaque formulaire
 
 **D.** Pour localiser la chaîne &quot;Apply&quot;
 
@@ -172,9 +172,9 @@ Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur
 ## Conseils, astuces et problèmes connus {#tips-tricks-and-known-issues}
 
 1. N’utilisez pas de guillemet simple (’) dans un modèle personnalisé.
-1. For custom metadata, store this property on the **jcr:content/metadata** node only. Si vous le stockez à un autre emplacement, Forms Portal ne peut pas afficher les métadonnées.
+1. Pour les métadonnées personnalisées, stockez cette propriété sur le noeud **jcr:content/metadata** uniquement. Si vous le stockez à un autre emplacement, Forms Portal ne peut pas afficher les métadonnées.
 1. Vérifiez que le nom d’une métadonnée personnalisée ou existante ne contient pas de signe deux-points ( : ). S’il en contient un, vous ne pouvez pas l’afficher dans l’interface utilisateur.
-1. **data-repeatable** n’a aucune signification pour un composant **Link** . Adobe recommande d’éviter l’utilisation de cette propriété dans le modèle d’un composant Lien.
+1. **data-** repeatablen’a aucune signification pour un composant  **** Linkcomponent. Adobe recommande d’éviter l’utilisation de cette propriété dans le modèle d’un composant Lien.
 
 ## Articles connexes
 
