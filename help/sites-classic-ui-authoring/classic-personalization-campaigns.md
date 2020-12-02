@@ -40,10 +40,12 @@ La gestion de campagnes comprend plusieurs éléments :
 En AEM, les marques sont l’unité de niveau supérieur et forment une collection de 
 **Campagnes**.
 
-* **Campagnes** Une campagne est un ensemble de campagnes individuelles. 
+* ****
+CampagnesUne campagne est un ensemble de 
 **Expériences**.
 
-* **Expériences** Le contenu ciblé forme les différentes expériences, présentées au visiteur à la section 
+* ****
+ExpériencesLe contenu ciblé forme les différentes expériences, présentées au visiteur à la section 
 **Points de contact**. Plusieurs types d’expérience sont disponibles :
 
    * **Teasers**
