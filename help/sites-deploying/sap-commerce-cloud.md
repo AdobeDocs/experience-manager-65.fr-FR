@@ -1,6 +1,6 @@
 ---
 title: SAP Commerce Cloud
-seo-title: SAP Commerce Cloud
+seo-title: COMMERCE CLOUD SAP
 description: Découvrez comment déployer l’eCommerce avec SAP Commerce Cloud.
 seo-description: Découvrez comment déployer l’eCommerce avec SAP Commerce Cloud.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
@@ -19,7 +19,7 @@ ht-degree: 86%
 ---
 
 
-# SAP Commerce Cloud{#sap-commerce-cloud}
+# COMMERCE CLOUD SAP{#sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 86%
 
 Le déploiement des [modules eCommerce nécessaires](#packages-needed-for-ecommerce-with-hybris) met à disposition la fonctionnalité complète de la structure eCommerce avec une implémentation de référence de la fonctionnalité eCommerce fournie avec une implémentation Hybris (dont un catalogue de démonstration).
 
-This is available under the English (US) branch ( `/content/geometrixx-outdoors/en_US`) of the Geometrixx Outdoors site:
+Il est disponible sous la branche Anglais (États-Unis) ( `/content/geometrixx-outdoors/en_US`) du site Geometrixx Outdoors :
 
 * [Informations sur le produit](#productinformationwithcolorvariants) (avec des variantes de couleur, le cas échéant)
 
@@ -44,9 +44,9 @@ This is available under the English (US) branch ( `/content/geometrixx-outdoors/
 
 * [Accès à la console de gestion Hybris](#accesstothehybrismanagementconsole)
 
-### Exigences techniques – Serveur Hybris {#technical-requirements-hybris-server}
+### Exigences techniques – Serveur Hybris  {#technical-requirements-hybris-server}
 
-The hybris extension of the eCommerce Integration Framework has been updated to support Hybris 5 (as default), while maintaining backward compatibility with [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
+L&#39;extension hybris du cadre d&#39;intégration du commerce électronique a été mise à jour pour prendre en charge Hybris 5 (par défaut), tout en maintenant une compatibilité ascendante avec [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ The hybris extension of the eCommerce Integration Framework has been updated to 
 
 
 
-### Modules nécessaires à eCommerce avec Hybris {#packages-needed-for-ecommerce-with-hybris}
+### Modules nécessaires à eCommerce avec Hybris  {#packages-needed-for-ecommerce-with-hybris}
 
 Pour installer la fonctionnalité eCommerce, vous devez disposer des éléments suivants :
 
@@ -76,7 +76,7 @@ Pour installer la fonctionnalité eCommerce, vous devez disposer des éléments 
    * `cq-hybris-content-6.3.2`
    * Implémentation de l’API spécifique à Hybris
    * `cq-geometrixx-hybris-content-6.3.2`
-   * a reference implementation to illustrate use of hybris ( `geometrixx-outdoors/en_US`)
+   * une implémentation de référence pour illustrer l&#39;utilisation de l&#39;hybris ( `geometrixx-outdoors/en_US`)
 
 ### Installation d’eCommerce avec Hybris {#installation-of-ecommerce-with-hybris}
 
@@ -189,7 +189,7 @@ Les étapes de cette procédure consistent à télécharger et à créer le serv
    >
    >En fonction de votre système, cette opération peut prendre plusieurs minutes.
 
-### Configuration du magasin Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
+### Configuration du magasin Geometrixx Outdoors  {#setup-the-geometrixx-outdoors-store}
 
 Cette procédure permet de transférer et de configurer le magasin de démonstration : Geometrixx Online.
 
