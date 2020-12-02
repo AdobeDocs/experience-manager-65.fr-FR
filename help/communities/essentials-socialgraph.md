@@ -18,13 +18,13 @@ ht-degree: 13%
 ---
 
 
-# Principes de base des graphiques sociaux  {#social-graph-essentials}
+# Social Graph Essentials {#social-graph-essentials}
 
-The ability for a Community member to follow [activities](essentials-activities.md) as well as be followed is established through two components:
+La capacité d&#39;un membre de la Communauté de suivre [les activités](essentials-activities.md) et d&#39;être suivi est établie en deux volets :
 
-Le `following` composant doit être associé à une autre ressource, et cette association est déjà établie pour les membres et les fonctionnalités des communautés existantes dans un site [](overview.md#communitiessites)communautaire.
+Le composant `following` doit être associé à une autre ressource, et cette association est déjà établie pour les membres et fonctionnalités des communautés existantes dans un [site communautaire](overview.md#communitiessites).
 
-The `following` component lists the members that are either following the current member or are being followed by the current member. Ce graphique social des relations entre les membres est inclus dans le profil d’utilisateur établi pour un site de communauté.
+Le composant `following` liste les membres qui suivent le membre actuel ou qui sont suivis par le membre actuel. Ce graphique social des relations entre les membres est inclus dans le profil d’utilisateur établi pour un site de communauté.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -54,7 +54,7 @@ The `following` component lists the members that are either following the curren
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="socialgraph.md">Utilisation d’un graphique de réseau social.</a></td>
+   <td>Voir <a href="socialgraph.md">Utilisation du graphique social</a>.</td>
   </tr>
   <tr>
    <td><strong> propriété facultative<br /></strong></td>
@@ -64,10 +64,10 @@ The `following` component lists the members that are either following the curren
      <li>Type : booléen</li>
      <li>Valeur : <br />
       <ul>
-       <li><i>True </i>- Le <code>following</code> composant liste les membres qui ont signé le membre actuellement <code>follows</code></li>
-       <li><i>False </i>- Le <code>following</code> composant liste les membres qui <code>follow </code>le membre actuellement connecté</li>
+       <li><i>True  </i>- Le  <code>following</code> composant liste les membres qui sont actuellement membres connectés <code>follows</code></li>
+       <li><i>False  </i>- Le  <code>following</code> composant liste les membres qui  <code>follow </code>le membre actuellement connecté.</li>
       </ul> </li>
-    </ul> <p>La valeur par défaut est <i>true</i> si la propriété est manquante. Actuellement, il n’est pas possible de définir cette propriété à l’aide de la boîte de dialogue de modification en mode création. La propriété doit être ajoutée à une instance du <code>following </code>noeud à l'aide de <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>La valeur par défaut est <i>true</i> si la propriété est manquante. Actuellement, il n’est pas possible de définir cette propriété à l’aide de la boîte de dialogue de modification en mode création. La propriété doit être ajoutée à une instance du noeud <code>following </code>en utilisant <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
