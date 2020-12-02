@@ -26,15 +26,15 @@ AEM Forms fournit des workflows personnalisés pour appeler les API de service A
 * **invoke** : permet d’appeler des opérations spécifiées dans input DDX sur les entrées fournies.
 * **toPDFA** : permet de convertir un document PDF d’entrée en document PDF/A.
 
-### Flux de travail Invoke DDX {#invoke-ddx-workflow}
+### Flux de travail Invoke DDX  {#invoke-ddx-workflow}
 
-The **Invoke DDX** workflow invokes the `Invoke` Assembler service API, which you can use to assemble or disassemble documents, add watermark to a PDF, and so on.
+Le flux de travaux **Appeler DDX** appelle l&#39;API du service Assembler `Invoke`, que vous pouvez utiliser pour assembler ou désassembler des documents, ajouter un filigrane à un PDF, etc.
 
 1. Faites glisser l’étape de flux de travail **[!UICONTROL Invoke DDX]** sous l’onglet Forms Workflow dans Sidekick.
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
 1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les options d’environnement et les documents de sortie, puis cliquez sur **[!UICONTROL OK]**.
 
-#### Documents d’entrée {#input-documents}
+#### Documents d’entrée  {#input-documents}
 
 Le flux de travail Invoke DDX nécessite les documents d’entrée suivants :
 
@@ -61,12 +61,12 @@ L’onglet Environment Options permet de définir différentes options de traite
 
 Selon input DDX, l’API d’appel peut produire plusieurs documents de sortie. L’onglet Output documents vous permet de sélectionner le document de sortie à enregistrer.
 
-1. *Enregistrer la sortie dans la charge*: Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile si celle-ci est un fichier.
+1. *Enregistrer la sortie dans la charge* : Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile si celle-ci est un fichier.
 1. *Output Document’s Map* : permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Output document peut écraser la charge ou être enregistré dans le dossier de charge. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
 
 1. *Job Log* : indique l’emplacement d’enregistrement du document de journal de tâche, ce qui peut être utile pour le dépannage des échecs.
 
-### Flux de travail de conversion en PDF/A {#convert-to-pdf-a-workflow}
+### Flux de travail de conversion en PDF/A  {#convert-to-pdf-a-workflow}
 
 L’étape de flux de travail Convert to PDF/A (Convertir en PDF/A) appel l’API du service d’Assembler `toPDFA`. Il est utilisé pour convertir des documents PDF en documents conformes au format PDF/A.
 
@@ -75,7 +75,7 @@ L’étape de flux de travail Convert to PDF/A (Convertir en PDF/A) appel l’AP
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
 1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les options de conversion et les documents de sortie, puis cliquez sur **[!UICONTROL OK]**.
 
-#### Documents d’entrée {#input-documents-1}
+#### Documents d’entrée  {#input-documents-1}
 
 Spécifiez la source du document à convertir en fichier conforme au format PDF/A de l’une des manières suivantes.
 
@@ -91,7 +91,7 @@ L’onglet Conversion Options permet de spécifier des options qui affectent le 
 * *Result Level* : indique le niveau de journal à utiliser pour les journaux de conversion PDF/A.
 * *Signatures* : indique la façon dont les signatures du document d’entrée doivent être traitées lors de la conversion.
 * *Color Space* : indique l’espace colorimétrique prédéfini à utiliser pour le document de sortie PDF/A.
-* *Vérifier* la conversion : Indique si le document PDF/A converti doit être vérifié pour la conformité PDF/A après la conversion.
+* ** VerifyConversion : Indique si le document PDF/A converti doit être vérifié pour la conformité PDF/A après la conversion.
 * *Job Log Level* : indique le niveau de journal à utiliser pour les journaux de traitement.
 
 * *Metadata Extension Schema* : indique le chemin du schéma d’extension de métadonnées à utiliser pour les propriétés XMP dans les métadonnées du document PDF.
@@ -113,7 +113,7 @@ Le flux de travail Render PDF Form est une enveloppe de l’API du service Forms
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
 1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les documents de sortie et les paramètres supplémentaires, puis cliquez sur **[!UICONTROL OK]**.
 
-#### Documents d’entrée {#input-documents-2}
+#### Documents d’entrée  {#input-documents-2}
 
 * *Template File* : indique l’emplacement du modèle XDP. Ce champ est obligatoire.
 
@@ -123,7 +123,7 @@ Le flux de travail Render PDF Form est une enveloppe de l’API du service Forms
 
 * *Output Document* : indique le nom du formulaire PDF généré.
 
-#### Paramètres supplémentaires {#additional-parameters}
+#### Paramètres supplémentaires  {#additional-parameters}
 
 * *Content Root* : indique le chemin d’accès au dossier du référentiel dans lequel les fragments et les images utilisés dans le modèle XDP d’entrée sont stockés.
 * *Submit Url* : indique l’URL d’envoi par défaut du formulaire PDF généré.
@@ -142,7 +142,7 @@ Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non i
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
 1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les documents de sortie et les paramètres supplémentaires, puis cliquez sur **[!UICONTROL OK]**.
 
-#### Documents d’entrée {#input-documents-3}
+#### Documents d’entrée  {#input-documents-3}
 
 * *Template File* : indique l’emplacement du modèle XDP. Ce champ est obligatoire.
 
@@ -152,7 +152,7 @@ Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non i
 
 *Output Document* : indique le nom du formulaire PDF généré.
 
-#### Paramètres supplémentaires {#additional-parameters-1}
+#### Paramètres supplémentaires  {#additional-parameters-1}
 
 * *Content Root* : indique le chemin d’accès au dossier du référentiel dans lequel les fragments et les images utilisés dans le modèle XDP d’entrée sont stockés.
 * *Locale* : indique la langue par défaut du formulaire PDF généré.
