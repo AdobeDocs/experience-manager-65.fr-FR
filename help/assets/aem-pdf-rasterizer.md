@@ -1,6 +1,6 @@
 ---
 title: Utiliser le pixelliseur PDF pour générer des rendus
-description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer dans [!DNL Adobe Experience Manager].
+description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer dans  [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
@@ -11,9 +11,9 @@ ht-degree: 43%
 ---
 
 
-# Utilisation de PDF Rasterizer {#using-pdf-rasterizer}
+# Utiliser le pixelliseur PDF {#using-pdf-rasterizer}
 
-When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experience Manager Assets], the default conversion may not generate an accurate output. La bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise que la sortie d’une bibliothèque par défaut. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour les scénarios suivants :
+Lorsque vous téléchargez des fichiers PDF ou AI volumineux et enrichis en contenu vers [!DNL Adobe Experience Manager Assets], la conversion par défaut risque de ne pas générer de sortie précise. La bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise que la sortie d’une bibliothèque par défaut. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour les scénarios suivants :
 
 * Fichiers AI ou PDF lourds et intensifs en contenu.
 * Fichiers AI et fichiers PDF contenant des miniatures qui ne sont pas générés par défaut.
@@ -21,30 +21,30 @@ When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experien
 
 Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d’une plus grande qualité par rapport à la sortie native et fournissent donc une expérience d’affichage homogène sur tous les périphériques. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Elle génère toujours une sortie RVB indépendamment de l’espace colorimétrique du fichier source.
 
-1. Installez le package PDF Rasterizer sur votre [!DNL Adobe Experience Manager] déploiement à partir de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Installez le package PDF Rasterizer sur votre déploiement [!DNL Adobe Experience Manager] à partir de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
    >La bibliothèque PDF Rasterizer est disponible sous Windows et Linux uniquement.
 
-1. Accédez à la console [!DNL Assets] de processus à l’adresse `https://[aem_server]:[port]/workflow`. Open [!UICONTROL DAM Update Asset] workflow.
+1. Accédez à la console de flux de travaux [!DNL Assets] à l&#39;adresse `https://[aem_server]:[port]/workflow`. Ouvrez le flux de travaux [!UICONTROL DAM Update Asset].
 
 1. Pour empêcher la génération de miniatures et de rendus Web pour les fichiers PDF et AI à l’aide des méthodes par défaut, procédez comme suit :
 
-   * Open the **[!UICONTROL Process Thumbnails]** step, and add `application/pdf` or `application/postscript` in the **[!UICONTROL Skip Mime Types]** field under the **[!UICONTROL Thumbnails]** tab as necessary.
+   * Ouvrez l’étape **[!UICONTROL Traiter les miniatures]** et ajoutez `application/pdf` ou `application/postscript` dans le champ **[!UICONTROL Ignorer les types MIME]** sous l’onglet **[!UICONTROL Miniatures]** si nécessaire.
 
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
-   * In the **[!UICONTROL Web Enabled Image]** tab, add `application/pdf` or `application/postscript` under **[!UICONTROL Skip List]** depending upon your requirements.
+   * Dans l&#39;onglet **[!UICONTROL Image activée pour le Web]**, ajoutez `application/pdf` ou `application/postscript` sous **[!UICONTROL Ignorer la Liste]** en fonction de vos besoins.
 
    ![Configuration permettant d’ignorer le traitement des miniatures pour un format d’image](assets/web_enabled_imageskiplist.png)
 
-1. Open the **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** step, and remove the MIME type for which you want to skip the default generation of preview image renditions. For example, remove the MIME type `application/pdf`, `application/postscript`, or `application/illustrator` from the **[!UICONTROL MIME Types]** list.
+1. Ouvrez l’étape **[!UICONTROL pixelliser le rendu de la Prévisualisation d’images PDF/AI]** et supprimez le type MIME pour lequel vous souhaitez ignorer la génération par défaut de rendus d’image de prévisualisation. Par exemple, supprimez le type MIME `application/pdf`, `application/postscript` ou `application/illustrator` de la liste **[!UICONTROL Types MIME]**.
 
    ![process_arguments](assets/process_arguments.png)
 
 1. Faites glisser l’étape **[!UICONTROL Gestionnaire PDF Rasterizer]** à partir du panneau latéral et déposez-le en dessous de l’étape **[!UICONTROL Miniatures des processus]**.
-1. Configure the following arguments for the **[!UICONTROL PDF Rasterizer Handler]** step:
+1. Configurez les arguments suivants pour l’étape **[!UICONTROL Gestionnaire de pixellisation PDF]** :
 
    * Types MIME : `application/pdf` ou `application/postscript`
    * Commandes: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
@@ -67,26 +67,26 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
 
 1. Pour supprimer des rendus intermédiaires, sélectionnez **[!UICONTROL Supprimer le rendu généré]**.
 
-1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
+1. Pour permettre à PDF Rasterizer de générer des rendus Web, sélectionnez **[!UICONTROL Générer un rendu Web]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
-1. Specify the settings in the **[!UICONTROL Web Enabled Image]** tab.
+1. Spécifiez les paramètres dans l&#39;onglet **[!UICONTROL Image activée pour le Web]**.
 
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Enregistrez le workflow.
 
-1. To enable PDF Rasterizer to process PDF pages with PDF libraries, open the **[!UICONTROL DAM Process Subasset]** model from the [!UICONTROL Workflow] console.
+1. Pour permettre à PDF Rasterizer de traiter les pages PDF avec des bibliothèques PDF, ouvrez le modèle **[!UICONTROL DAM Process Subasset]** dans la console [!UICONTROL Workflow].
 
-1. From the side panel, drag the PDF Rasterizer Handler step under the **[!UICONTROL Create Web-Enabled Image Rendition]** step.
+1. Dans le panneau latéral, faites glisser l’étape Gestionnaire de pixellisation PDF sous l’étape **[!UICONTROL Créer un rendu d’image compatible Web]**.
 
-1. Configure the following arguments for the **[!UICONTROL PDF Rasterizer Handler]** step:
+1. Configurez les arguments suivants pour l’étape **[!UICONTROL Gestionnaire de pixellisation PDF]** :
 
    * Types MIME : `application/pdf` ou `application/postscript`
 
    * Commandes: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
-   * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. Ajoutez la configuration personnalisée des miniatures, le cas échéant.
+   * Ajouter les tailles des miniatures : `319:319`, `140:100`, `48:48`. Ajoutez la configuration personnalisée des miniatures, le cas échéant.
 
    Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
 
@@ -104,13 +104,13 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
 
 
 1. Pour supprimer des rendus intermédiaires, sélectionnez **[!UICONTROL Supprimer le rendu généré]**.
-1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
+1. Pour permettre à PDF Rasterizer de générer des rendus Web, sélectionnez **[!UICONTROL Générer un rendu Web]**.
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
-1. Specify the settings in the **[!UICONTROL Web Enabled Image]** tab.
+1. Spécifiez les paramètres dans l&#39;onglet **[!UICONTROL Image activée pour le Web]**.
 
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Enregistrez le workflow.
-1. Upload a PDF or an AI file to [!DNL Experience Manager Assets]. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
+1. Téléchargez un fichier PDF ou AI dans [!DNL Experience Manager Assets]. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
