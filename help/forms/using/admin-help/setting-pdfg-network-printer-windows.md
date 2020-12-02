@@ -32,12 +32,12 @@ Pour configurer une imprimante réseau PDFG Network Printer, procédez comme sui
 1. Assurez-vous que JRE6 32 est installé sur les ordinateurs de vos utilisateurs.
 1. Installez l’imprimante sur les ordinateurs de vos utilisateurs (voir [Installation de l’imprimante réseau PDFG sur l’ordinateur d’un utilisateur](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer)).
 
-## Configuration des paramètres de courrier électronique pour l’imprimante réseau PDFG Network Printer {#configure-email-settings-for-pdfg-network-printer}
+## Configuration des paramètres de courrier électronique pour l’imprimante réseau PDFG Network Printer  {#configure-email-settings-for-pdfg-network-printer}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
 1. Sur la page Gestion des services, cliquez sur provider.email_sendmail_service, spécifiez les paramètres SMTP et cliquez sur Enregistrer.
 
-## Configuration des paramètres de l’imprimante réseau PDFG Network Printer {#configure-the-pdfg-network-printer-settings}
+## Configuration des paramètres de l’imprimante réseau PDFG Network Printer  {#configure-the-pdfg-network-printer-settings}
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > PDFG Network Printer.
 1. Dans les listes Paramètres Adobe PDF et Paramètres de protection, sélectionnez les options à appliquer au PDF généré. Pour plus d’informations sur ces paramètres, voir [Configuration des paramètres Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) et [Configuration des paramètres de protection](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings).
@@ -57,7 +57,7 @@ Pour configurer une imprimante réseau PDFG Network Printer, procédez comme sui
 
 Si vous souhaitez rétablir le message électronique par défaut, cliquez sur Rétablir le contenu du courrier électronique.
 
-## Installation de l’imprimante réseau PDFG sur l’ordinateur d’un utilisateur {#install-pdfg-network-printer-on-a-user-s-computer}
+## Installation de l’imprimante réseau PDFG sur l’ordinateur d’un utilisateur  {#install-pdfg-network-printer-on-a-user-s-computer}
 
 Les utilisateurs qui possèdent le rôle Administrateur de PDFG ou Utilisateur de PDFG peuvent installer une imprimante réseau PDFG. Vous devez disposer d’un JDK 32 bits installé sur l’ordinateur.
 
