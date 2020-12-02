@@ -29,16 +29,16 @@ Lisez la présentation détaillée du cas d&#39;utilisation de l&#39;assurance a
 
 Sarah Rose est déjà cliente chez We.Finance et a acheté une police d’assurance automobile. Elle doit renouveler sa police d’assurance aujourd’hui. Gloria Rios, courtier d’assurance chez We.Finance, envoie un rappel à Sarah concernant le renouvellement de sa police. Sarah suit les instructions figurant dans le courrier électronique et effectue la procédure.
 
-## Présentation de la demande d’assurance automobile {#auto-insurance-application-walkthrough}
+## Présentation de la demande d’assurance automobile  {#auto-insurance-application-walkthrough}
 
 Le scénario de l&#39;application d&#39;assurance auto-assurance We.Finance est une narration visuelle pour l&#39;utilisateur et repose sur deux personnages :
 
 * Sarah Rose, une cliente chez We.Finance
 * Gloria Rios, courtier d’assurance chez We.Finance
 
-### Gloria envoie une notification de renouvellement de police d’assurance à partir de We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
+### Gloria envoie une notification de renouvellement de police d’assurance à partir de We.Finance  {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria logs into AEM instance, clicks **Auto Insurance Renewal,** and then clicks **Open Agent UI.** Le clic préremplit le document d’assurance avec les détails de la police de Sarah Rose. Gloria clicks **Submit** and a message is displayed on the screen “Submission Initiated” and then in few seconds “Submitted Successfully”.
+Gloria se connecte à l’instance AEM, clique sur **Renouvellement de l’assurance automatique,**, puis sur **Ouvrir l’interface utilisateur de l’agent.** Le clic préremplit le document d’assurance avec les détails de la police de Sarah Rose. Gloria clique sur **Envoyer** et un message s’affiche à l’écran &quot;Envoi initié&quot;, puis en quelques secondes &quot;Envoi réussi&quot;.
 
 Sarah reçoit un courrier électronique contenant le sujet &quot;Votre renouvellement d’assurance automatique&quot;.
 
@@ -46,15 +46,15 @@ Sarah reçoit un courrier électronique contenant le sujet &quot;Votre renouvell
 
 #### Démonstration {#see-it-yourself}
 
-Go to **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **We.Finance** > **Auto Insurance**. Select the Auto Insurance Renewal **interactive communication** and click **Open Agent UI**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Entrez une adresse électronique valide pour recevoir le courrier électronique contenant le document de stratégie joint, puis cliquez sur Envoyer.
+Accédez à **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **We.Finance** > **Auto Insurance**. Sélectionnez le renouvellement d&#39;assurance automatique **communication interactive** et cliquez sur **Ouvrir l&#39;interface utilisateur de l&#39;agent**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Entrez une adresse électronique valide pour recevoir le courrier électronique contenant le document de stratégie joint, puis cliquez sur Envoyer.
 
-Vous pouvez accéder à la communication interactive Renouvellement d&#39;assurance et la consulter directement depuis `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
+Vous pouvez accéder à la communication interactive Renouvellement d&#39;assurance et la consulter directement à partir de `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
 ### Sarah reçoit une notification de renouvellement de police d’assurance de We.Finance et décide d’effectuer le renouvellement.{#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
 Sarah reçoit un courrier électronique accompagné d’une pièce jointe de We.Finance qui lui rappelle que sa police d’assurance auto est sur le point d’expirer. La pièce jointe est la version imprimée de sa lettre d&#39;assurance auto.
 
-Sarah clicks **Renew Now** and is directed to the web version of her Auto Insurance letter. En plus de cette lettre, Sarah trouve le nombre de jours restants pour l’expiration de sa stratégie. La page fournit à Sarah un aperçu de base des détails de sa police d’assurance, tels que le numéro de police, le montant dû et d’autres informations, telles que les offres d’escompte et les récompenses de fidélité. Sarah again clicks **Renew Now** at the bottom of the policy.
+Sarah clique sur **Renouveler maintenant** et est redirigée vers la version Web de sa lettre d’assurance automatique. En plus de cette lettre, Sarah trouve le nombre de jours restants pour l’expiration de sa stratégie. La page fournit à Sarah un aperçu de base des détails de sa police d’assurance, tels que le numéro de police, le montant dû et d’autres informations, telles que les offres d’escompte et les récompenses de fidélité. Sarah clique à nouveau sur **Renouveler maintenant** au bas de la stratégie.
 
 ![ref1](assets/ref1.png)
 
@@ -64,15 +64,15 @@ La sortie Web et imprimée de votre lettre d&#39;assurance automatique est cré�
 
 Le bouton Renouveler maintenant dans le courrier électronique est lié à la demande de renouvellement d’assurance automobile qui se présente sous forme de communication interactive sur une instance de publication.
 
-#### Démonstration {#see-it-yourself-1}
+#### Démonstration  {#see-it-yourself-1}
 
-Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d&#39;assurance auto. Click **Renew Now** to reach to the web version of the policy. Check your personal information and policy details and click **Renew Now** which takes you to another Interactive Communication.
+Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PDF est une version imprimée de votre lettre d&#39;assurance auto. Cliquez sur **Renouveler maintenant** pour accéder à la version Web de la stratégie. Vérifiez vos informations personnelles et les détails de votre stratégie et cliquez sur **Renouveler maintenant** pour accéder à une autre communication interactive.
 
-The **Renew Now** button in the email directs Sarah to the web version of the policy. Vous pouvez consulter l’URL suivante :
+Le bouton **Renouveler maintenant** du courrier électronique dirige Sarah vers la version Web de la stratégie. Vous pouvez consulter l’URL suivante :
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 
-You can check the detailed summary of your Auto Insurance Renewal and click **Renew Now** at the bottom of the page.
+Vous pouvez consulter le résumé détaillé de votre renouvellement d&#39;assurance automatique et cliquer sur **Renouveler maintenant** en bas de la page.
 
 ### Sarah accède à la page de paiement {#sarah-reaches-the-payment-page}
 
@@ -84,7 +84,7 @@ Le bouton Renouveler maintenant dirige Sarah vers la page de paiement. La page d
 
 #### Démonstration {#see-it-yourself-2}
 
-Cliquez sur **Renouveler maintenant** pour accéder à la page de paiement. Fill in your Credit Card information, and click **Make Payment**.
+Cliquez sur **Renouveler maintenant** pour accéder à la page de paiement. Renseignez les informations de votre carte de crédit, puis cliquez sur **Effectuer le paiement**.
 
 Vous pouvez accéder à la page de paiement dans l’instance de création à l’adresse
 
@@ -98,7 +98,7 @@ Sarah remplit ses informations de carte de crédit et clique sur **Effectuer un 
 
 Lorsque Sarah remplit les informations de carte de crédit et clique sur le bouton Envoyer, son paiement de carte de crédit est traité et un message de remerciement configuré dans le formulaire adaptatif s’affiche à l’écran.
 
-#### Démonstration {#see-it-yourself-3}
+#### Démonstration  {#see-it-yourself-3}
 
 Vous pouvez vue le message de confirmation après avoir cliqué sur Effectuer le paiement à l’adresse
 
