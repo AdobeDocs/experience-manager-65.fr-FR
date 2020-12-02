@@ -24,11 +24,11 @@ Le gestionnaire des utilisateurs vous permet également d’activer l’authenti
 
 Pour plus d’informations sur l’amélioration des performances de synchronisation de la base de données et de l’annuaire pour DB2, voir [Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
-## Configuration de User Management pour un serveur LDAP compatible SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
+## Configuration de User Management pour un serveur LDAP compatible SSL  {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
 Si vous disposez d’un serveur LDAP compatible SSL, configurez User Management en conséquence (voir [Configuration de User Management pour un serveur LDAP compatible SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)).
 
-## Définition des privilèges d’utilisateur utilisés avec Document Security {#setting-user-privileges-for-use-with-document-security}
+## Définition des privilèges d’utilisateur utilisés avec Document Security  {#setting-user-privileges-for-use-with-document-security}
 
 Créez un utilisateur administrateur disposant des privilèges appropriés pour la création d’utilisateurs et de groupes. Si votre environnement AEM forms inclut Document Security, accordez le privilège de gestion des utilisateurs locaux et invités à un utilisateur qui sera l’administrateur de ces utilisateurs. Affectez-lui également le rôle Utilisateur d’Administration Console de manière à permettre à cet utilisateur d’accéder à Administration Console (voir [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)).
 
@@ -40,7 +40,7 @@ La liste des utilisateurs et des groupes visibles est accessible au coordinateur
 >
 >vous devez commencer par créer les domaines avant de pouvoir créer des stratégies.
 
-### Définition des utilisateurs et groupes visibles {#set-visible-users-and-groups}
+### Définition des utilisateurs et groupes visibles  {#set-visible-users-and-groups}
 
 Après avoir installé et configuré l’environnement AEM forms avec Document Security, définissez tous les domaines appropriés dans Gestion des utilisateurs.
 
@@ -50,7 +50,7 @@ Après avoir installé et configuré l’environnement AEM forms avec Document S
 1. Accédez à Services > Document Security > Configuration > Mes stratégies et cliquez sur l’onglet Utilisateurs et groupes visibles.
 1. Cliquez sur Ajouter des domaines et ajoutez les domaines nécessaires.
 
-## Restrictions de l’utilisateur administrateur {#administrator-user-restrictions}
+## Restrictions de l’utilisateur administrateur  {#administrator-user-restrictions}
 
 Pour des raisons de sécurité, les utilisateurs disposant de certains types de privilèges d’administrateur n’ont pas accès aux pages Web des utilisateurs finaux de Workspace. Comme ces pages Web peuvent se trouver en dehors d’un pare-feu, autoriser des tâches d’administration pourrait présenter un risque de sécurité. Seuls les utilisateurs disposant du privilège d’administrateur de Workspace ou du privilège d’utilisateur de Workspace peuvent accéder aux pages Web des utilisateurs finaux.
 
