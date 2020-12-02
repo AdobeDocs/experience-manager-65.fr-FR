@@ -107,9 +107,9 @@ Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/
 
 La notification indique le workflow exécuté sur la page. Si l’utilisateur prend part à l’étape actuelle du workflow, des options [affectant l’état du workflow](/help/sites-authoring/workflows-participating.md) et permettant d’obtenir plus d’informations sur le workflow sont également disponibles, à savoir :
 
-* **Terminé** - Ouvre la boîte de dialogue **Terminer la tâche** .
+* **Terminé**  - Ouvre la boîte de dialogue  **Terminer** la tâche
 
-* **Délégué** : ouvre la boîte de dialogue **Terminer la tâche** .
+* **Délégué**  : ouvre la boîte de dialogue  **Terminer la** tâche
 
 * **Afficher les détails** : ouvre la fenêtre **Détails** du workflow
 
@@ -166,7 +166,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
 1. Le composant sélectionné est alors ajouté au bas de la page. [Modifiez](#editmovecopypastedelete) le composant selon les besoins.
 
-### Insertion d’un composant à partir de l’Explorateur de ressources    {#inserting-a-component-using-the-assets-browser}
+### Insertion d’un composant à partir de l’Explorateur de ressources     {#inserting-a-component-using-the-assets-browser}
 
 Vous pouvez également ajouter un nouveau composant à la page en faisant glisser un élément depuis l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
@@ -293,7 +293,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
    ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
 
-* **Mise en page**
+* **Disposition**
 
    Cette option vous permet de modifier la [mise en page](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode Mise en page](/help/sites-authoring/author-environment-tools.md#page-modes) de la page entière.
 
@@ -312,7 +312,7 @@ Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les comp
 * Ouvrez la [boîte de dialogue de composant pour l’édition](#component-edit-dialog).
 * [Faites glisser et déposez un élément](#draganddropintocomponent) depuis l’explorateur de ressources pour ajouter directement du contenu.
 
-### Boîte de dialogue d’édition de composant    {#component-edit-dialog}
+### Boîte de dialogue d’édition de composant     {#component-edit-dialog}
 
 Vous pouvez ouvrir un composant pour modifier le contenu à l’aide de l’[icône Modifier (crayon) de la barre d’outils Composant](#edit-configure-copy-cut-delete-paste).
 
@@ -355,7 +355,7 @@ Pour certains types de composants, vous pouvez faire glisser et déposer des él
 | Vidéo | Flash |
 | Fragment de contenu | Fragment de contenu |
 
-## Modifier (contenu) – Mode Plein écran {#edit-content-full-screen-mode}
+## Modifier (contenu) – Mode Plein écran  {#edit-content-full-screen-mode}
 
 Pour tous les composants, vous pouvez accéder au mode Plein écran (ou le quitter) avec :
 
@@ -454,7 +454,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 Si la page est basée sur un [modèle modifiable](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez facilement basculer vers l’[éditeur de modèles](/help/sites-authoring/templates.md#editing-templates-template-authors) en sélectionnant **Éditer le modèle** dans le menu [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information).
 
-If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
+Si la page est basée sur un [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez passer en [mode de conception](/help/sites-authoring/default-components-designmode.md) à l&#39;aide du sélecteur de mode de page [](/help/sites-authoring/author-environment-tools.md#page-modes) de la barre d&#39;outils pour activer/désactiver les composants à utiliser sur la page.
 
 Vous pouvez déterminer facilement le modèle sur lequel la page est basée en sélectionnant cette dernière en mode [Colonnes](/help/sites-authoring/basic-handling.md#column-view) ou [Liste](/help/sites-authoring/basic-handling.md#list-view).
 
@@ -473,7 +473,7 @@ Par exemple :
 
 Les [Annotations](/help/sites-authoring/annotations.md) permettent aux réviseurs et aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages    {#previewing-pages}
+## Aperçu des pages     {#previewing-pages}
 
 Deux options sont disponibles pour prévisualiser une page :
 
@@ -561,9 +561,9 @@ Les icônes suivantes permettent d’annuler ou de rétablir une opération. Cel
 
 >[!NOTE]
 >
->The [keyboard shortcut](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` is also availalbe to undo page edit actions.
+>Le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` permet également d’annuler les actions de modification de page.
 >
->The keyboard shortcut `Ctrl-Y` is also availalbe to redo page edit actions.
+>Le raccourci clavier `Ctrl-Y` permet également de rétablir les actions de modification de page.
 
 >[!NOTE]
 >
