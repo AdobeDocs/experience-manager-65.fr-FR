@@ -81,7 +81,7 @@ L’éditeur plein écran fournit :
 * l’accès à diverses [actions](#actions) ;
 * selon le [format](#formats), des options de mise en forme supplémentaires ([texte enrichi](#rich-text)).
 
-### Actions  {#actions}
+### Actions   {#actions}
 
 Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte sur plusieurs lignes) est ouvert :
 
@@ -292,7 +292,7 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
    >* **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
 
 
-## Gestion des variations  {#managing-variations}
+## Gestion des variations   {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -310,7 +310,7 @@ Pour créer une variation, procédez comme suit :
    >
    >Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
-### Modification d’une variation  {#editing-a-variation}
+### Modification d’une variation   {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après avoir :
 
@@ -335,7 +335,7 @@ Pour renommer une variation existante :
 >
 >Cette opération concerne uniquement le **Titre** de la variation.
 
-### Suppression d’une variation  {#deleting-a-variation}
+### Suppression d’une variation   {#deleting-a-variation}
 
 Pour supprimer une variation existante :
 
