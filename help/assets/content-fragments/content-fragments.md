@@ -58,7 +58,7 @@ Les fragments de contenu vous permettent de :
 
 Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses expériences sur de multiples canaux.
 
-## Fragments de contenu et Content Services    {#content-fragments-and-content-services}
+## Fragments de contenu et Content Services     {#content-fragments-and-content-services}
 
 Les services de contenu AEM sont conçus pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web.
 
@@ -94,7 +94,7 @@ Les fragments d’expérience peuvent être composés de contenu sous la forme d
 
 >[!NOTE]
 >
->AEM prend également en charge la traduction des fragments de contenu. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
+>AEM prend également en charge la traduction des fragments de contenu. Voir [Création de projets de traduction pour les fragments de contenu](/help/assets/creating-translation-projects-for-content-fragments.md) pour plus d’informations.
 
 ## Types de fragments de contenu {#types-of-content-fragment}
 
@@ -287,7 +287,7 @@ Pour créer, modifier et utiliser des fragments de contenu, vous aurez égalemen
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
 
-## Cas d’utilisation    {#example-usage}
+## Cas d’utilisation     {#example-usage}
 
 Un fragment, avec ses éléments et ses variations, peut être utilisé afin de créer du contenu homogène sur plusieurs canaux. Lors de la conception d’un fragment, vous devez prendre en compte où vous utiliserez chacun de ses éléments.
 
