@@ -39,7 +39,7 @@ Les critères de format et de mots-clés s’appliquent tous deux aux ressources
 
 Pour télécharger des ressources à utiliser avec la visionneuse d’images panoramiques, voir [Téléchargement de ressources](/help/assets/manage-assets.md#uploading-assets).
 
-## Configuration de Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
+## Configuration de Dynamic Media Classic (Scene7)  {#configuring-dynamic-media-classic-scene}
 
 Pour que la visionneuse d’images panoramiques fonctionne correctement au sein d’AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec Dynamic Media Classic (Scene7) et les métadonnées spécifiques à Dynamic Media Classic (Scene7) afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour ce faire, configurez Dynamic Media Classic (Scene7) de la manière suivante :
 
@@ -62,7 +62,7 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement au sein 
    * Définissez Mode d’obscurcissement de requête sur **[!UICONTROL Désactivé.]**
    * Définissez Mode de verrouillage de requête sur **[!UICONTROL Désactivé.]**
 
-   These settings are necessary for using the `Panoramic Media` WCM component in AEM.
+   Ces paramètres sont nécessaires pour utiliser le composant WCM `Panoramic Media` dans AEM.
 
 1. Au bas de la page Publication sur hébergeur d’images, sur la gauche, cliquez sur **[!UICONTROL Enregistrer.]**
 
@@ -76,12 +76,12 @@ Si vous avez fait glisser une image dans le composant Média panoramique au sein
 
 * En cas d’erreur « Verrou incorrect » ou « Erreur d’analyse » sur la page, vérifiez que Mode d’obscurcissement de requête de vérification et Mode de verrouillage de requête sont désactivés.
 * Pour une erreur de canevas corrompu, configurez un chemin de fichier de définitions de règles et l’option Invalider sur le réseau de diffusion de contenu pour les demandes précédentes de la ressource d’image.
-* Si la qualité d’image devient très faible après une demande d’image dont la taille dépasse la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs d’encodage JPEG > Qualité]** n’est pas vide. A typical setting for the **[!UICONTROL Quality]** field is `95`. Vous trouverez le paramètre sur la page Publication sur hébergeur d’images. Pour accéder à la page, voir [Configuration de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Si la qualité d’image devient très faible après une demande d’image dont la taille dépasse la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs d’encodage JPEG > Qualité]** n’est pas vide. Un paramètre type du champ **[!UICONTROL Qualité]** est `95`. Vous trouverez le paramètre sur la page Publication sur hébergeur d’images. Pour accéder à la page, voir [Configuration de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Aperçu des images panoramiques {#previewing-panoramic-images}
 
 Voir aussi [Aperçu des ressources](/help/assets/previewing-assets.md).
 
-## Publication des images panoramiques   {#publishing-panoramic-images}
+## Publication des images panoramiques    {#publishing-panoramic-images}
 
 Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
