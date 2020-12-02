@@ -27,7 +27,7 @@ Effectuez les étapes suivantes pour permettre à AEM de rechercher des document
 ## Avant de commencer {#before-you-start}
 
 * Installez et configurez la sécurité documentaire AEM Forms.
-* Add package sun.util.calendar to the allowlist of the **Deserialization Firewall Configuration.** La configuration est répertoriée dans `https://'[server]:[port]'/system/console/configMgr`.
+* Ajoutez le package sun.util.calendar à la liste autorisée de la **configuration du pare-feu de désérialisation.** La configuration est répertoriée dans  `https://'[server]:[port]'/system/console/configMgr`.
 * Vérifiez que tous les bundles AEM sont en cours d’utilisation. Les lots sont répertoriés à `https://'[server]:[port]'/system/console/bundles`. Si tous les lots ne sont pas actifs, patientez, puis vérifiez leur statut après quelques minutes.
 
 ## Établir une connexion sécurisée dans le flux de production AEM Forms (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
@@ -49,7 +49,7 @@ Une connexion sécurisée permet un flux d’informations harmonieux entre AEM F
 
    Cliquez sur **Enregistrer**. AEM est activé pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office.
 
-### Configurer le bundle de SDK client AEM Forms à l’aide de l’authentification mutuelle {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
+### Configurer le bundle de SDK client AEM Forms à l’aide de l’authentification mutuelle  {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
 1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/fr/livecycle/kb/cac-mutual-authentication.html).
 1. Accédez au gestionnaire de configuration et connectez-vous à AEM en tant qu’administrateur. L’URL par défaut est https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
@@ -65,7 +65,7 @@ Une connexion sécurisée permet un flux d’informations harmonieux entre AEM F
 
    Cliquez sur **Enregistrer**. AEM est activé pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office
 
-## Indexer un document PDF ou Microsoft Office protégé par un exemple de stratégie {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
+## Indexer un document PDF ou Microsoft Office protégé par un exemple de stratégie  {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 
 1. Connectez-vous à AEM Assets en tant qu’administrateur.
 1. Créez un dossier dans AEM Digital Asset Manager et téléchargez un document PDF ou Microsoft Office protégé par une stratégie vers le dossier que vous venez de créer. Désormais, vous pouvez rechercher le contenu des documents protégés par une stratégie à l’aide de la recherche AEM. Il doit renvoyer le document contenant le texte recherché.
