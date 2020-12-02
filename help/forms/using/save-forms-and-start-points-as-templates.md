@@ -25,8 +25,8 @@ Parfois, lorsque les utilisateurs remplissent un formulaire, les entrées à cer
 Pour créer un modèle, procédez comme suit :
 
 1. Ouvrez un formulaire et sélectionnez ou remplissez les champs dont les valeurs sont identiques presqu’à chaque fois que vous l’utilisez. Vous pouvez inclure une pièce jointe au modèle que vous ajoutez généralement lorsque vous remplissez le formulaire.
-1. Appuyez sur l’icône **Enregistrer en tant que modèle** ![save_as_](assets/save_as_template.png)templaticon. Une boîte de dialogue pour indiquer le nom du modèle s’affiche.
-1. Specify the name of the template and tap **Save**. Le modèle s’affiche dans le dossier Templates.
+1. Appuyez sur l&#39;icône **Enregistrer en tant que modèle** ![save_as_template](assets/save_as_template.png). Une boîte de dialogue pour indiquer le nom du modèle s’affiche.
+1. Indiquez le nom du modèle et appuyez sur **Enregistrer**. Le modèle s’affiche dans le dossier Templates.
 
    Si un modèle portant le même nom existe, une boîte de dialogue de confirmation de remplacement du modèle existant s’affiche. Pour remplacer le modèle existant par le nouveau modèle, appuyez sur **Continuer** ou pour enregistrer le modèle sous un autre nom, appuyez sur **Annuler**.
 
