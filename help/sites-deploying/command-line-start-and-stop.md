@@ -71,7 +71,7 @@ Ces deux versions prennent en charge une liste de variables d’environnement qu
 >
 >Remarque : Certains modes d’exécution, comme création et publication, doivent être définis avant le premier démarrage d’AEM. Ils ne peuvent pas être modifiés par la suite. Avant de configurer une instance AEM à utiliser en production, consultez la [documentation sur les modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus d’informations.
 
-### Exemple de script start.bat pour la plateforme Windows {#windows-platform-start-bat-script-example}
+### Exemple de script start.bat pour la plateforme Windows  {#windows-platform-start-bat-script-example}
 
 ```shell
 SET CQ_PORT=1234 & ./start.bat
@@ -120,7 +120,7 @@ Si vous souhaitez uniquement préconfigurer le référentiel (sans le déplacer)
 
 * extraire `repository.xml` à l’emplacement requis ;
 
-* update `repository.xml` as required
+* mettre à jour `repository.xml` selon les besoins
 
 * créer `bootstrap.properties` et définir `repository.config`
 
