@@ -34,18 +34,18 @@ Le fichier s’applique à tous les projets de traduction.
 
 >[!NOTE]
 >
->Après une mise à niveau vers la version 6.4, il est recommandé de déplacer le fichier depuis /etc. See [Common Repository Restructuring in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) for more details.
+>Après une mise à niveau vers la version 6.4, il est recommandé de déplacer le fichier depuis /etc. Pour plus d&#39;informations, consultez la section [Restructuration du référentiel commun dans AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules).
 
 Les règles comprennent les informations suivantes :
 
 * Le chemin d’accès au nœud auquel la règle s’applique. La règle s’applique également aux descendants du nœud.
 * Les noms des propriétés de nœud contenant le contenu à traduire. Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource.
 
-Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants Texte de base d’AEM sur vos pages. The rule can identify the `/content` node and the `text` property for the `foundation/components/text` component.
+Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants Texte de base d’AEM sur vos pages. La règle peut identifier le noeud `/content` et la propriété `text` du composant `foundation/components/text`.
 
 Une [console](#translation-rules-ui) a été ajoutée pour configurer les règles de traduction. Les définitions dans l’interface utilisateur renseignent le fichier pour vous.
 
-For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
+Pour une vue d&#39;ensemble des fonctionnalités de traduction de contenu dans AEM, voir [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md).
 
 >[!NOTE]
 >
@@ -64,20 +64,20 @@ Une règle est un élément `node` ayant un ou plusieurs éléments `property` e
 </node>
 ```
 
-Each of these `node` elements has the following characteristics:
+Chacun de ces éléments `node` présente les caractéristiques suivantes :
 
-* The `path` attribute contains the path to the root node of the branch to which the rules apply.
+* L&#39;attribut `path` contient le chemin d&#39;accès au noeud racine de la branche à laquelle s&#39;appliquent les règles.
 * Les éléments `property` enfants identifient les propriétés de nœud à traduire pour tous les types de ressources :
 
    * L’attribut `name` contient le nom de la propriété.
-   * The optional `translate` attribute equals `false` if the property is not translated. Par défaut, la valeur est `true`. Cet attribut est utile lorsque vous remplacez des règles précédentes.
+   * L&#39;attribut facultatif `translate` est égal à `false` si la propriété n&#39;est pas traduite. Par défaut, la valeur est `true`. Cet attribut est utile lorsque vous remplacez des règles précédentes.
 
 * Les éléments `node` enfants identifient les propriétés de nœud à traduire pour certains types de ressources :
 
    * L’attribut `resourceType` contient le chemin d’accès qui correspond au composant implémentant le type de ressource.
-   * Les éléments `property` enfants identifient la propriété node à traduire. Use this node in the same way as the child `property` elements for node rules.
+   * Les éléments `property` enfants identifient la propriété node à traduire. Utilisez ce noeud de la même manière que les éléments enfant `property` pour les règles de noeud.
 
-The following example rule causes the content of all `text` properties to be translated for all pages below the `/content` node. La règle est effective pour tout composant qui stocke le contenu dans une propriété `text` (par exemple, le composant Text de base et le composant Image de base).
+L&#39;exemple de règle suivant fait traduire le contenu de toutes les propriétés `text` pour toutes les pages situées sous le noeud `/content`. La règle est effective pour tout composant qui stocke le contenu dans une propriété `text` (par exemple, le composant Text de base et le composant Image de base).
 
 ```xml
 <node path="/content">
@@ -98,7 +98,7 @@ L’exemple suivant traduit le contenu de toutes les propriétés `text` et trad
 </node>
 ```
 
-## Syntaxe de règle pour extraire des ressources à partir de pages  {#rule-syntax-for-extracting-assets-from-pages}
+## Syntaxe de règle pour extraire des ressources à partir de pages   {#rule-syntax-for-extracting-assets-from-pages}
 
 Utilisez la syntaxe de règle suivante pour inclure les ressources qui sont incorporées dans des composants ou référencées à partir de composants :
 
@@ -108,7 +108,7 @@ Utilisez la syntaxe de règle suivante pour inclure les ressources qui sont inco
 
 Chaque élément `assetNode` présente les caractéristiques suivantes :
 
-* One `resourceType` attribute that equals the path that resolves to the component.
+* Un attribut `resourceType` qui est égal au chemin d&#39;accès qui correspond au composant.
 * Un attribut `assetReferenceAttribute` qui est égal au nom de la propriété stockant le fichier binaire de ressource (pour les ressources incorporées) ou le chemin d’accès à la ressource référencée.
 
 L’exemple suivant extrait les images à partir du composant Image de base :
@@ -117,9 +117,9 @@ L’exemple suivant extrait les images à partir du composant Image de base :
 <assetNode resourceType="foundation/components/image" assetReferenceAttribute="fileReference"/>
 ```
 
-## Règles de remplacement {#overriding-rules}
+## Règles de remplacement  {#overriding-rules}
 
-Le fichier translation_rules.xml est constitué d’un élément `nodelist` ayant plusieurs éléments `node` enfants. AEM lit la liste des nœuds de haut en bas. Lorsque plusieurs règles ciblent le même nœud, la règle inférieure dans le fichier est utilisée. For example, the following rules cause all content in `text` properties to be translated except for the `/content/mysite/en` branch of pages:
+Le fichier translation_rules.xml est constitué d’un élément `nodelist` ayant plusieurs éléments `node` enfants. AEM lit la liste des nœuds de haut en bas. Lorsque plusieurs règles ciblent le même nœud, la règle inférieure dans le fichier est utilisée. Par exemple, les règles suivantes font traduire tout le contenu des propriétés `text`, à l’exception de la branche `/content/mysite/en` des pages :
 
 ```xml
 <nodelist>
@@ -163,21 +163,21 @@ Pour y accéder :
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-From here, you can **Add Context**. Ceci vous permet d’ajouter un chemin d’accès.
+À partir de là, vous pouvez **Ajouter le contexte**. Ceci vous permet d’ajouter un chemin d’accès.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Then you need to select your context and then click **Edit**. Cette action ouvre l’éditeur de règles de traduction.
+Ensuite, vous devez sélectionner votre contexte, puis cliquer sur **Modifier**. Cette action ouvre l’éditeur de règles de traduction.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
-There are 4 attributes that you can change via the UI: `isDeep`, `inherit`, `translate` and `updateDestinationLanguage`.
+Il existe 4 attributs que vous pouvez modifier via l’interface utilisateur : `isDeep`, `inherit`, `translate` et `updateDestinationLanguage`.
 
-**isDeep** Cet attribut est applicable sur les filtres de noeud et est true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
+**** isDeepCet attribut est applicable sur les filtres de noeud et est true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
 
-For example, child nodes are getting added into a translation job even when the parent node is having property `draftOnly` set to true to flag draft content. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
+Par exemple, les noeuds enfants sont ajoutés à une tâche de traduction même si la propriété `draftOnly` du noeud parent est définie sur true pour marquer le contenu de brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
-In the Editor, you can check/uncheck **Is Deep** in the **Filters** tab.
+Dans l’éditeur, vous pouvez vérifier/décocher **Est profond** dans l’onglet **Filtres**.
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
@@ -189,19 +189,19 @@ Voici un exemple du fichier xml obtenu lorsque l’option **isDeep** n’est pas
 </filter>
 ```
 
-**hériter** Ceci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée sur l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement sur ce nœud spécifique.
+**** inheritCeci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée sur l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement sur ce nœud spécifique.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l’onglet **Propriétés**.
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**translate** L&#39;attribut translate est simplement utilisé pour spécifier si une propriété doit être traduite ou non.
+**** translateL’attribut translate est simplement utilisé pour spécifier si une propriété doit être traduite ou non.
 
-In the UI, you can check/uncheck **Translate** in the **Properties** tab.
+Dans l’interface utilisateur, vous pouvez vérifier/décocher **Traduire** dans l’onglet **Propriétés**.
 
-**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais des codes de langue, par exemple jcr:language. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées en traduction.
+**** updateDestinationLanguageCet attribut est utilisé pour les propriétés qui n’ont pas de texte mais des codes de langue, par exemple jcr:language. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées en traduction.
 
-In the UI, you can check/uncheck **Translate** in the **Properties** tab, but for the specific properties that have language codes as value.
+Dans l’interface utilisateur, vous pouvez vérifier/décocher **Traduire** dans l’onglet **Propriétés**, mais pour les propriétés spécifiques dont les codes de langue sont des valeurs.
 
 Pour aider à clarifier la différence entre `updateDestinationLanguage` et `translate`, voici l’exemple simple d’un contexte ne comportant que deux règles :
 
@@ -214,7 +214,7 @@ Le résultat dans le fichier xml ressemble à ce qui suit :
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## Modification manuelle du fichier de règles {#editing-the-rules-file-manually}
+## Modification manuelle du fichier de règles  {#editing-the-rules-file-manually}
 
 Le fichier translation_rules.xml qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles de sorte que le contenu de vos composants personnalisés soit traduit.
 
@@ -224,7 +224,7 @@ Si vous modifiez le fichier translation_rules.xml, conservez une copie de sauveg
 >
 >Après avoir créé le module de contenu, recréez le module chaque fois que vous modifiez le fichier.
 
-## Exemple de fichier de règles de traduction {#example-translation-rules-file}
+## Exemple de fichier de règles de traduction  {#example-translation-rules-file}
 
 ```xml
 <nodelist>
