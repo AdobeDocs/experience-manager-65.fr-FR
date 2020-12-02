@@ -80,7 +80,7 @@ Définit le type d’un nœud de commentaire.
 
 **Description**
 
-Defines the nodetype of a `commentattachment` node
+Définit le type de noeud d’un noeud `commentattachment`.
 
 **Définition**
 
@@ -166,7 +166,7 @@ Définit le nœud par défaut du contenu de la page, avec les propriétés minim
 * `@prop jcr:description` - Description de cette page.
 * `@prop cq:template` - Chemin d&#39;accès au modèle utilisé pour créer la page.
 * `@prop cq:allowedTemplates` - Liste des expressions régulières utilisées pour déterminer le(s) chemin(s) d’accès au modèle autorisé.
-* `@prop pageTitle` - Titre généralement affiché dans la `<title>` balise .
+* `@prop pageTitle` - Titre généralement affiché dans la  `<title>` balise .
 * `@prop navTitle` - Titre généralement utilisé dans la navigation.
 * `@prop hideInNav` - Détermine si la page doit être masquée dans la navigation.
 * `@prop onTime` - Heure à laquelle cette page devient valide.
@@ -238,17 +238,17 @@ Définit un composant CQ.
 * `@node design_dialog` - Boîte de dialogue de conception.
 * `@prop cq:cellName` - Nom de la cellule de conception.
 * `@prop cq:isContainer` - Indique s&#39;il s&#39;agit d&#39;un composant de conteneur. Cela oblige à utiliser les noms de cellule des composants enfants au lieu des noms de chemin d’accès. Par exemple, `parsys` est un composant de conteneur. Si cette valeur n’est pas définie, la vérification est effectuée sur la base de l’existence d’une propriété `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Si la valeur est true, aucune `div` balise décorative n&#39;est tracée lors de l&#39;inclusion de ce composant.
+* `@prop cq:noDecoration` - Si la valeur est true, aucune  `div` balise décorative n&#39;est tracée lors de l&#39;inclusion de ce composant.
 * `@node cq:editConfig` - Configuration qui définit les paramètres de la barre d&#39;édition.
 * `@node cq:childEditConfig` - La configuration de modification héritée par les composants enfants.
-* `@node cq:htmlTag` - Définit des attributs de balise supplémentaires qui sont ajoutés à la balise &quot;environnante&quot; `div` lorsque le composant est inclus.
+* `@node cq:htmlTag` - Définit des attributs de balise supplémentaires qui sont ajoutés à la  `div` balise &quot;environnante&quot; lorsque le composant est inclus.
 * `@node icon.png`- Fichier contenant une icône caractéristique.
 * `@node thumbnail.png` - Fichier contenant une miniature de caractéristique.
 * `@prop allowedParents` - Schémas d’expressions régulières utilisés pour déterminer le(s) chemin(s) d’accès des composants autorisés en tant que composants parents.
 * `@prop allowedChildren` - Modèles d&#39;expression réguliers pour déterminer le ou les chemins des composants autorisés en tant que composants enfants.
 * `@node virtual` - Contient des sous-noeuds qui reflètent les composants virtuels utilisés pour le glisser-déposer des composants.
 * `@prop componentGroup` - Nom du groupe de composants, utilisé pour le glisser-déposer du composant.
-* `@node cq:infoProviders` - Contient des sous-noeuds dont chacun possède une propriété `className` faisant référence à un `PageInfoProvider`.
+* `@node cq:infoProviders` - Contient des sous-noeuds dont chacun possède une propriété  `className` qui fait référence à un  `PageInfoProvider`noeud.
 
 **Définition**
 
@@ -302,7 +302,7 @@ Définit la configuration de la barre d’édition.
 * `@prop cq:actions`- Liste des actions (boutons de la barre d&#39;édition ou éléments de menu).
 * `@node cq:actionConfigs` - Configurations de widgets pour les éléments de barre d&#39;édition ou de menu.
 * `@prop cq:emptyText` - Texte à afficher si aucun contenu visuel n&#39;est présent.
-* `@node cq:dropTargets` - Collection de `{@link cq:DropTargetConfig}` noeuds.
+* `@node cq:dropTargets` - Collection de  `{@link cq:DropTargetConfig}` noeuds.
 
 **Définition**
 
@@ -321,7 +321,7 @@ Définit la configuration de la barre d’édition.
 
 Configure une cible de dépôt d’un composant. Le nom de ce nœud est utilisé comme ID pour l’opération de glisser-déposer.
 
-* `@prop accept` - Liste des types de mime acceptés par la présente cible de largage ; par ex. `["image/*"]`
+* `@prop accept` - Liste des types de mime acceptés par la présente cible de largage ; par ex.  `["image/*"]`
 * `@prop groups` - Liste des groupes de déplacement qui acceptent une source.
 * `@prop propertyName` - Nom de la propriété utilisée pour stocker la référence.
 
@@ -392,7 +392,7 @@ Définit les écouteurs (côté client) à exécuter sur un événement de modif
    * `- afterremove (string)`
    * `- aftermove (string)`
 
-## Gestion des actifs numériques {#dam}
+## Gestion des ressources numériques {#dam}
 
 ### dam:AssetContent {#dam-assetcontent}
 
@@ -468,9 +468,9 @@ Liste des conteneurs.
 
 **Description**
 
-Le type de nœud `cq:contentPage` contient les définitions de propriété et de nœud enfant pour les pages de contenu ContentBus. Only when this mixin type is added to a node of type `cq:page`, a node becomes a ContentBus content page.
+Le type de nœud `cq:contentPage` contient les définitions de propriété et de nœud enfant pour les pages de contenu ContentBus. Ce n&#39;est que lorsque ce type de mixin est ajouté à un noeud de type `cq:page` que le noeud devient une page de contenu ContentBus.
 
-The items in a `cq:Cq4ContentPage` are:
+Les éléments d&#39;un `cq:Cq4ContentPage` sont les suivants :
 
 * `@prop cq:csd` - CSD ContentBus de la page.
 * `@node cq:content` - Contenu de la page. Ce nœud enfant n’existe pas si l’état du nœud de page est défini sur « Existant sans contenu » ou « Supprimé ».
@@ -819,7 +819,7 @@ Tout site web public/utilisateur peut baliser le contenu (style Web2.0), utilis
 
 **Description**
 
-Ajoute un `cq:userContent` sous-noeud qui peut être modifié par les utilisateurs. Chaque utilisateur dispose de son propre `cq:userContent/<userid>` sous-noeud, qui possède généralement le mixin `cq:UserTaggable`.
+Ajoute un sous-noeud `cq:userContent` qui peut être modifié par les utilisateurs. Chaque utilisateur dispose de son propre sous-noeud `cq:userContent/<userid>`, qui possède généralement le mixin `cq:UserTaggable`.
 
 **Définition**
 
@@ -827,7 +827,7 @@ Ajoute un `cq:userContent` sous-noeud qui peut être modifié par les utilisateu
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Extended variant, more explicitly defining the `cq:userContent` tree
+Variante étendue, définissant plus explicitement l&#39;arborescence `cq:userContent`
 
 * `[cq:AllowsUserContent]`
    * `mixin`
@@ -925,7 +925,7 @@ Panneau à onglets
 
 **Définition**
 
-* `[cq:TabPanel] > cq:Panel orderable``
+* `[cq:TabPanel] > cq:Panel orderable&quot;
    * `- activeTab (long)`
 
 ### cq:Field {#cq-field}
