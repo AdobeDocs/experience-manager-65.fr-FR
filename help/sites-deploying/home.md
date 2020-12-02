@@ -47,13 +47,13 @@ Ce guide couvre toutes les tâches de déploiement AEM, telles que l’installat
 * [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/fr/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
-## Copyright, licenses, and disclaimers {#copyright-licenses-and-disclaimers}
+## Droits d&#39;auteur, licences et clauses de non-responsabilité {#copyright-licenses-and-disclaimers}
 
-Pour plus d’informations, voir [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html)
+Pour plus d&#39;informations, voir [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
 
 Avis de licences tierces : [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
