@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Configuration initiale pour l&#39;activation  {#initial-setup-for-enablement}
+# Configuration initiale pour l&#39;activation {#initial-setup-for-enablement}
 
 ## Instances d’auteur et de publication de début {#start-author-and-publish-instances}
 
@@ -46,45 +46,45 @@ Pour AEM Communities,
 
 >[!NOTE]
 >
->If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+>Si l&#39;AEM n&#39;est pas familier, vue la documentation sur la [gestion de base](../../help/sites-authoring/basic-handling.md) et un [guide rapide de création de pages](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Installer la dernière version des communautés {#install-latest-communities-release}
 
-Ce didacticiel crée un site [communautaire d’](overview.md#enablement-community)activation. Pour vous assurer que le dernier Feature Pack est installé, visitez :
+Ce didacticiel crée un [site communautaire d&#39;activation](overview.md#enablement-community). Pour vous assurer que le dernier Feature Pack est installé, visitez :
 
 * [Dernières versions](deploy-communities.md#latest-releases)
 
-Pour consulter un didacticiel qui crée un site [communautaire d’](overview.md#engagement-community)engagement, consultez [Prise en main de AEM Communities](getting-started.md).
+Pour consulter un didacticiel qui crée un [site de la communauté d’engagement](overview.md#engagement-community), visitez [Prise en main de AEM Communities](getting-started.md).
 
-## Configuration des fonctionnalités d’activation {#configure-enablement-features}
+## Configurer les fonctionnalités d&#39;activation {#configure-enablement-features}
 
-Pour suivre ce didacticiel, il est nécessaire d’installer et de [configurer correctement l’activation](enablement.md), qui nécessite des produits tiers, tels que MySQL et FFmpeg.
+Pour suivre ce didacticiel, il est nécessaire d&#39;installer et de [configurer correctement l&#39;activation](enablement.md), ce qui nécessite des produits tiers, tels que MySQL et FFmpeg.
 
 ## Configuration de Analytics {#configure-analytics}
 
-Lorsque [Adobe Analytics est configuré pour le site](analytics.md)communautaire, des informations supplémentaires sont disponibles dans les [rapports](reports.md) générés sur les ressources d’activation et les chemins d’apprentissage attribués aux membres de la communauté (apprenants).
+Lorsque [Adobe Analytics est configuré pour le site communautaire](analytics.md), des informations supplémentaires sont disponibles dans les [rapports](reports.md) générés sur les ressources d’activation et les chemins d’apprentissage attribués aux membres de la communauté (apprenants).
 
 ## Configurer le courrier électronique pour les notifications {#configure-email-for-notifications}
 
-La fonction de notifications, disponible par défaut pour tous les sites créés à l’aide de la `Communities Sites` console, fournit un canal électronique pour les notifications.
+La fonction de notifications, disponible par défaut pour tous les sites créés à l&#39;aide de la console `Communities Sites`, fournit un canal électronique pour les notifications.
 
 Il est nécessaire que le courrier électronique soit correctement configuré pour le site.
 
-See [Configuring Email](email.md).
+Voir [Configuration du courrier électronique](email.md).
 
-## Activation du service de tunnel {#enable-the-tunnel-service}
+## Activer le service de tunnel {#enable-the-tunnel-service}
 
 Lors de la création d’un site communautaire dans l’environnement d’auteur, le service de tunnel permet de créer et de gérer des utilisateurs et des groupes d’utilisateurs enregistrés dans l’environnement de publication (membres), d’attribuer des rôles aux membres de la communauté de confiance et d’affecter du contenu aux apprenants.
 
-For more information see [Managing Users and User Groups](users.md).
+Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
 
-Pour obtenir des instructions simples sur l&#39;activation du service de tunnel, voir Service [de](deploy-communities.md#tunnel-service-on-author)tunnel.
+Pour obtenir des instructions simples pour activer le service de tunnel, voir [Tunnel Service](deploy-communities.md#tunnel-service-on-author).
 
-## Création de balises de didacticiel {#create-tutorial-tags}
+## Créer des balises de didacticiel {#create-tutorial-tags}
 
-Créez des balises à utiliser pour les didacticiels d’interaction et d’activation, à l’aide de l’espace de nommage de balises de `Tutorial`.
+Créez des balises à utiliser pour les didacticiels d’interaction et d’activation, à l’aide de l’espace de nommage de balises `Tutorial`.
 
-Utilisez la console [](../../help/sites-administering/tags.md#tagging-console) Balisage pour créer les balises suivantes :
+Utilisez la [console Balisage](../../help/sites-administering/tags.md#tagging-console) pour créer les balises suivantes :
 
 * `Tutorial: Sports / Baseball`
 * `Tutorial: Sports / Gymnastics`
@@ -106,9 +106,9 @@ Exemple de package de balises créées pour les Tutorials de prise en main AEM C
 
 ## Créer des membres et des groupes d&#39;activation {#create-enablement-members-and-groups}
 
-Pour un site de la communauté d’activation, les visiteurs du site ne doivent pas pouvoir s’ [auto-inscrire ni utiliser de connexion](sites-console.md#user-management)sociale.
+Pour un site de la communauté d&#39;activation, les visiteurs du site ne doivent pas être en mesure de [s&#39;inscrire eux-mêmes ni d&#39;utiliser la connexion sociale](sites-console.md#user-management).
 
-À la place, avec le service [de](#enable-the-tunnel-service) tunnel activé, la console [](members.md) Membres est utilisée pour enregistrer de nouveaux membres dans l’environnement de publication.
+À la place, avec le service [tunnel](#enable-the-tunnel-service) activé, la console [Membres](members.md) est utilisée pour enregistrer de nouveaux membres dans l’environnement de publication.
 
 Dans ce didacticiel, trois membres sont créés dans l’environnement de publication. Deux membres deviennent membres d’un groupe d’utilisateurs affecté à un parcours d’apprentissage, tandis que le troisième membre devient un contact de ressources d’activation.
 
@@ -116,53 +116,53 @@ Un quatrième utilisateur est créé dans l’environnement d’auteur et se voi
 
 >[!NOTE]
 >
->Ces membres sont en cours de création avant la création du site communautaire du didacticiel *d&#39;* activation.
+>Ces membres sont en cours de création avant la création du *site communautaire du didacticiel d’activation*.
 >
->S’ils ont été créés par la suite, ils peuvent être ajoutés en tant que membres du groupe *de membres du didacticiel d’* activation lors de la création du membre.
+>S’ils ont été créés par la suite, ils peuvent être ajoutés en tant que membres du groupe de membres *Didacticiel d’activation* au cours de la création du membre.
 >
->A la place, plus tard, ils seront [affectés au groupe](enablement-create-site.md#assignuserstocommunityenablemembersgroup)de membres.
+>Par la suite, ils seront [affectés au groupe de membres](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
 
 ### Riley Taylor - Enrollee {#riley-taylor-enrollee}
 
-[Créez un membre](members.md#create-new-member) qui sera ajouté à un groupe d&#39;apprenants - le groupe de cours de ski communautaire.
+[Créez un ](members.md#create-new-member) membre qui sera ajouté à un groupe d&#39;apprenants - le groupe de cours de ski communautaire.
 
-* **ID**: riley
-* **Courriel**: riley.taylor@mailinator.com
+* **ID** : riley
+* **Courriel** : riley.taylor@mailinator.com
 * **Mot de passe** : password
-* **Confirmer le mot de passe**: password
-* **Prénom**: Riley
-* **Nom**: Taylor
+* **Confirmer le mot de passe** : password
+* **Prénom** : Riley
+* **Nom** : Taylor
 
 ### Sidney Croft - Enrollee {#sidney-croft-enrollee}
 
-[Créez un second membre](members.md#create-new-member) qui sera ajouté au groupe de la classe de ski communautaire.
+[Créez un second ](members.md#create-new-member) membre qui sera ajouté au groupe de la classe de ski communautaire.
 
-* **ID**: annexe
-* **Courriel**: sidney.croft@mailinator.com
+* **ID** : annexe
+* **Courriel** : sidney.croft@mailinator.com
 * **Mot de passe** : password
-* **Confirmer le mot de passe**: password
-* **Prénom**: Sidney
-* **Nom**: Croisement
+* **Confirmer le mot de passe** : password
+* **Prénom** : Sidney
+* **Nom** : Croisement
 
 ### Quinn Harper - Ressource d&#39;activation Contact et modérateur {#quinn-harper-enablement-resource-contact-and-moderator}
 
-[Créez un membre](members.md#create-new-member) qui sera ajouté au groupe de membres du site communautaire une fois le site créé. Cette adhésion permet au membre d&#39;être affecté en tant que contact [de](resources.md#settings) ressources d&#39;activation lors de la création d&#39;une ressource d&#39;activation pour le site.
+[Créez un ](members.md#create-new-member) membre qui sera ajouté au groupe de membres du site communautaire une fois le site créé. Cette adhésion permet au membre d&#39;être affecté en tant qu&#39;activation [Contact ressource](resources.md#settings) lorsqu&#39;une ressource d&#39;activation est créée pour le site.
 
-* **ID**: quinn
-* **Courriel**: quinn.harper@mailinator.com
+* **ID** : quinn
+* **Courriel** : quinn.harper@mailinator.com
 * **Mot de passe** : password
-* **Confirmer le mot de passe**: password
-* **Prénom**: Quinn
-* **Nom**: Harper
+* **Confirmer le mot de passe** : password
+* **Prénom** : Quinn
+* **Nom** : Harper
 
 ### Ajouter un groupe d&#39;utilisateurs - Classe de ski communautaire {#add-a-user-group-community-ski-class}
 
-[Ajoutez un nouveau groupe](members.md#create-new-group) nommé Community Ski Class.
+[Ajoutez un nouveau ](members.md#create-new-group) groupe nommé Community Ski Class.
 
-* **ID**: community-ski-class
-* **Nom**: Classe de ski communautaire
-* **Description**: un groupe d&#39;exemples pour l&#39;affectation de ressources d&#39;activation
-* **Ajouter les membres au groupe** &quot;ajouter&quot; :
+* **ID** : community-ski-class
+* **Nom** : Classe de ski communautaire
+* **Description** : un groupe d&#39;exemples pour l&#39;affectation de ressources d&#39;activation
+* **Ajouter les membres au groupe**  &quot;ajouter&quot; :
 
    * riley
    * annexe
@@ -183,31 +183,31 @@ Les membres du groupe Administrateurs de la communauté peuvent créer des sites
 
 ### Créer un utilisateur {#create-user}
 
-Créez un utilisateur sur *l’auteur*, auquel est affecté le rôle Administrateur de la communauté :
+Créez un utilisateur sur *author*, auquel est affecté le rôle Administrateur de la communauté :
 
 * Sur l’instance d’auteur
 
-   * For example, [http://localhost:4502/](http://localhost:4503/)
+   * Par exemple, [http://localhost:4502/](http://localhost:4503/)
 
 * Connexion avec droits d’administrateur
 
    * Par exemple, nom d’utilisateur &quot;admin&quot; / mot de passe &quot;admin&quot;
 
-* Dans la console principale, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs.]**
-* Dans le menu **[!UICONTROL Modifier]** , sélectionnez **[!UICONTROL Ajouter l’utilisateur]**.
+* Dans la console principale, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
+* Dans le menu **[!UICONTROL Modifier]**, sélectionnez **[!UICONTROL Ajouter l&#39;utilisateur]**.
 
-* Dans la `Create New User` boîte de dialogue, saisissez :
+* Dans la boîte de dialogue `Create New User`, saisissez :
 
-   * **ID&amp;ast;**: sirius
-   * **Adresse**&#x200B;électronique : sirius.nilson@mailinator.com
-   * **Password&amp;ast;**: password
-   * **Confirmer le mot de passe&amp;ast;**: password
-   * **Prénom**: Sirius
-   * **Nom&amp;ast;**: Nilson
+   * **ID&amp;ast;** : sirius
+   * **Adresse** électronique : sirius.nilson@mailinator.com
+   * **Password&amp;ast;** : password
+   * **Confirmer le mot de passe&amp;ast;** : password
+   * **Prénom** : Sirius
+   * **Nom&amp;ast;** : Nilson
 
-### Affecter le sirius au groupe Administrateurs de la communauté {#assign-sirius-to-community-administrators-group}
+### Affecter Sirius au groupe Administrateurs de la communauté {#assign-sirius-to-community-administrators-group}
 
-Faites défiler la page jusqu&#39;à `Add User to Groups`:
+Faites défiler jusqu&#39;à `Add User to Groups` :
 
 * Entrer &quot;C&quot; pour effectuer la recherche
 
