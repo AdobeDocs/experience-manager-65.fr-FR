@@ -31,7 +31,7 @@ Lorsque vous êtes connecté avec le serveur AEM Forms, votre application est s
 
 **Synchronisation manuelle de l’application**
 
-Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right corner of the home screen.
+Appuyez sur le bouton Synchroniser ![sync-app](assets/sync-app.png) dans l’angle inférieur droit de l’écran d’accueil.
 
 **Modification de la fréquence de synchronisation**
 
@@ -43,7 +43,7 @@ Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right c
 1. Au niveau de l’option Sync Frequency (Fréquence de synchronisation), appuyez sur la valeur à droite de Sync Frequency.
 1. Dans la liste déroulante, sélectionnez la nouvelle fréquence de synchronisation.
 
-### Spécifications techniques {#technical-specifications}
+### Spécifications techniques  {#technical-specifications}
 
 * La logique principale d’envoi des données d’application hors connexion au serveur AEM Forms est incluse dans le fichier runtime/offline/util/offline.js.
 * Dans le fichier .js, l’appel de la fonction processOfflineSubmittedSavedTasks(...) envoie vers le serveur les tâches enregistrées/envoyées. Il gère également les erreurs ou les conflits dans le processus de synchronisation. En cas d’échec de l’envoi de la tâche, la tâche est marquée comme en échec dans l’application. En outre, la tâche reste dans votre Outbox.
