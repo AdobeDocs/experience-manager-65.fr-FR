@@ -33,7 +33,7 @@ Lors de la création d’un formulaire adaptatif, l’auteur doit tenir compte d
 
 ## Condition requise
 
-Vous avez besoin d’un outil d’accessibilité tel que l’Inspecteur des descriptions et des noms **accessibles (ANDI)** et d’un thème de formulaire **adaptatif développé pour résoudre les problèmes** d’accessibilité afin de créer un formulaire adaptatif accessible.
+Pour créer un formulaire adaptatif accessible, vous avez besoin d’un outil d’accessibilité tel que **Inspecteur de nom et de description accessible (ANDI)** et d’un thème de formulaire adaptatif **développé pour résoudre les problèmes d’accessibilité**.
 
 ### Téléchargement et installation de l’outil de test d’accessibilité
 
@@ -44,14 +44,14 @@ L’outil ANDI (Accessible Name and Description Inspecteur) permet d’identifie
 * Détecte les problèmes d’accessibilité du clavier et de contraste de couleur
 * Identifie clairement le contenu du lecteur d’écran en conformité avec les normes.
 
-ANDI fonctionne avec tous les principaux navigateurs Internet. Consultez la documentation [de](https://www.ssa.gov/accessibility/andi/help/install.html) ANDI pour obtenir des instructions détaillées sur la configuration et l&#39;utilisation de l&#39;outil.
+ANDI fonctionne avec tous les principaux navigateurs Internet. Pour obtenir des instructions détaillées sur la configuration et l&#39;utilisation de l&#39;outil, consultez la [documentation ANDI](https://www.ssa.gov/accessibility/andi/help/install.html).
 
 ### Téléchargement et installation du thème Ultramarine accessible
 
 Le thème Ultramarine-Accessible est un thème de référence. Il permet de démontrer comment corriger le contraste de couleur et d’autres problèmes liés à l’accessibilité dans un formulaire adaptatif. L’Adobe recommande de créer un thème personnalisé pour l’environnement de production en fonction des styles approuvés par votre organisation. Effectuez les étapes suivantes pour télécharger le thème sur votre instance AEM :
 
 1. Téléchargez le module thématique.
-1. Accédez à **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms sur votre instance AEM.]**
+1. Accédez à **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** sur votre instance AEM.
 1. Appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL File Upload]** (Téléchargement de fichier). Sélectionnez et téléchargez le fichier x Ultramarine-Accessible-Theme.zip. Il télécharge le thème sur votre instance AEM.
 
 ## Rendre un formulaire adaptatif accessible
@@ -63,8 +63,8 @@ Vous devez vous concentrer sur quatre aspects clés : navigation au clavier, con
 Appliquez le thème accessible en Ultramarine à votre formulaire adaptatif existant. Pour appliquer le thème :
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
-1. Sélectionnez un composant et appuyez sur l’icône parent. Dans le menu contextuel, appuyez sur Conteneur **[!UICONTROL de formulaire]** adaptatif, puis sur l’icône Configurer.
-1. Sélectionnez le thème Ultramarine accessible dans le navigateur de propriétés et appuyez sur l’icône **[!UICONTROL Enregistrer]** .
+1. Sélectionnez un composant et appuyez sur l’icône parent. Dans le menu contextuel, appuyez sur **[!UICONTROL Conteneur de formulaire adaptatif]**, puis sur l’icône Configurer.
+1. Sélectionnez le thème Ultramarine-Accessible dans le navigateur de propriétés et appuyez sur l&#39;icône **[!UICONTROL Enregistrer]**.
 1. Actualisez la fenêtre du navigateur. Le thème est appliqué au formulaire adaptatif.
 
 Après avoir appliqué un thème accessible, effectuez les correctifs supplémentaires répertoriés ci-dessous. Les correctifs s’ajoutent aux correctifs d’accessibilité couverts dans le thème accessible :
@@ -97,7 +97,7 @@ Après avoir appliqué un thème accessible, effectuez les correctifs supplémen
 
 1. Supprimez les champs de signature tactile, le cas échéant, dans le formulaire adaptatif. Configurez le formulaire adaptatif pour qu’il utilise l’Adobe Sign pour une expérience de signature numérique transparente.
 
-### 2. Provide proper labels for form controls {#provide-proper-labels-for-form-controls}
+### 2. Fournir des libellés appropriés pour les contrôles de formulaire {#provide-proper-labels-for-form-controls}
 
 Le libellé ou le titre d’un composant de formulaire identifie ce qu’il représente. Par exemple, le texte « Prénom » indique à l’utilisateur qu’il doit saisir son prénom dans une zone de texte. Pour être accessible sur des lecteurs d’écran, le libellé est associé, par programmation, à un composant de formulaire. La commande de formulaire peut également être assortie d’informations d’accessibilité supplémentaires.
 
@@ -105,22 +105,22 @@ Le libellé perçu par les lecteurs d’écran ne doit pas nécessairement être
 
 Pour utiliser l’option d’accessibilité, procédez comme suit :
 
-1. Select a component and tap ![cmppr](assets/cmppr.png).
+1. Sélectionnez un composant et appuyez sur ![cmppr](assets/cmppr.png).
 1. Cliquez sur **[!UICONTROL Accessibilité]** dans la barre latérale pour sélectionner l’option d’accessibilité de votre choix.
 
 ### Options d’accessibilité dans des composants de formulaire {#accessibility-options-in-form-components}
 
 ![Options d’accessibilité dans des composants de formulaire](assets/accessibility-options.png)
 
-**Les auteurs de formulaires de texte** personnalisé fournissent le contenu dans l’option d’accessibilité Champ de texte personnalisé. La technologie d’assistance, telle que les lecteurs d’écran, utilise ce texte personnalisé. L’utilisation du paramètre Titre constitue la meilleure option dans la majorité des cas. N’envisagez la création d’un texte personnalisé pour lecteur d’écran que lorsque l’utilisation du titre ou d’une brève description s’avère impossible.
+**Les auteurs de** formulaires texte personnalisés fournissent le contenu dans l’option d’accessibilité Champ de texte personnalisé. La technologie d’assistance, telle que les lecteurs d’écran, utilise ce texte personnalisé. L’utilisation du paramètre Titre constitue la meilleure option dans la majorité des cas. N’envisagez la création d’un texte personnalisé pour lecteur d’écran que lorsque l’utilisation du titre ou d’une brève description s’avère impossible.
 
-**Description** courte Pour la majorité des composants, la description courte s’affiche au moment de l’exécution lorsque l’utilisateur place le pointeur de la souris sur le composant. Vous pouvez définir cette option dans le champ approprié, sous l’option du contenu d’aide.
+**Brève** descriptionPour la majorité des composants, la brève description s’affiche au moment de l’exécution lorsque l’utilisateur place le pointeur de la souris sur le composant. Vous pouvez définir cette option dans le champ approprié, sous l’option du contenu d’aide.
 
-**Titre** Utilisez cette option pour permettre à l’AEM Forms d’utiliser le libellé visuel associé au champ de formulaire comme texte de lecteur d’écran.
+**** TitreUtilisez cette option pour permettre à l’AEM Forms d’utiliser le libellé visuel associé au champ de formulaire comme texte de lecteur d’écran.
 
-**Nom** Vous pouvez spécifier une valeur dans le champ Nom de l’onglet Liaison. Le nom ne peut pas contenir d’espaces.
+**** NomVous pouvez spécifier une valeur dans le champ Nom de l’onglet Liaison. Le nom ne peut pas contenir d’espaces.
 
-**Aucun** Si vous sélectionnez Aucun, l’objet de formulaire n’a pas de nom dans le formulaire publié. Aucun n’est pas un paramètre recommandé pour les contrôles de formulaire.
+**** AucunSi vous sélectionnez Aucun, l’objet de formulaire n’a pas de nom dans le formulaire publié. Aucun n’est pas un paramètre recommandé pour les contrôles de formulaire.
 
 >[!NOTE]
 >
@@ -128,17 +128,17 @@ Pour utiliser l’option d’accessibilité, procédez comme suit :
 >* Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont associées au champ Brève description et Légende correspond à Titre. Les autres options fonctionnent normalement.
 
 
-### 3. Provide text equivalents for images {#provide-text-equivalents-for-images}
+### 3. Fournir des équivalents textuels pour les images {#provide-text-equivalents-for-images}
 
 Pour certains utilisateurs, les images permettent une compréhension plus facile. Cependant, lorsqu’un lecteur d’écran est utilisé, les images réduisent l’accessibilité du formulaire. Si vous optez pour l’utilisation d’images, veuillez fournir des descriptions textuelles pour l’ensemble des images.
 
 Assurez-vous que le texte décrit l’objet et son rôle dans le formulaire. Un lecteur d’écran lit ce texte alternatif lorsqu’il rencontre une image. Un texte alternatif doit toujours être spécifié pour une image.
 
-Select an image component and tap ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, indiquez le texte alternatif d’une image.
+Sélectionnez un composant d’image et appuyez sur ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, indiquez le texte alternatif d’une image.
 
 ![Texte alternatif d’une image](assets/image-properties.png)
 
-### 4. Provide sufficient color contrast {#provide-sufficient-color-contrast}
+### 4. Fournir un contraste de couleur suffisant {#provide-sufficient-color-contrast}
 
 Dans le cadre des fonctions d’accessibilité, il convient de tenir compte de quelques points supplémentaires concernant l’utilisation des couleurs. Les auteurs de formulaires peuvent utiliser des couleurs pour améliorer l’apparence des formulaires, en mettant en surbrillance différents composants. Cependant, une utilisation inappropriée des couleurs peut rendre le formulaire difficile à lire, voire totalement illisible, pour des personnes souffrant de certains handicaps.
 
@@ -148,7 +148,7 @@ Il est conseillé d’utiliser la police et les couleurs d’arrière-plan par d
 
 Pour plus d’informations sur la modification du contraste de couleur et du thème des formulaires adaptatifs, reportez-vous à [Création de thèmes personnalisés pour les formulaires adaptatifs](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
-### 5. Ensure that form controls are keyboard accessible {#ensure-that-form-controls-are-keyboard-accessible}
+### 5. Assurez-vous que les commandes de formulaire sont accessibles au clavier {#ensure-that-form-controls-are-keyboard-accessible}
 
 Un formulaire accessible peut être rempli complètement en utilisant uniquement le clavier ou un périphérique de saisie équivalent. Certains utilisateurs ayant une mobilité réduite ou une déficience visuelle sont parfois contraints de n’utiliser que le clavier. De plus, de nombreux utilisateurs préfèrent saisir leurs données au moyen du clavier plutôt que de la souris. En proposant différents modes de saisie des données, vous créez également des formulaires qui répondent aux préférences de l’ensemble des utilisateurs.
 
@@ -168,5 +168,5 @@ Les raccourcis clavier suivants sont disponibles dans AEM Forms.
 L’Inspecteur de nom et de description accessible (ANDI) vous aide à identifier et à corriger les problèmes liés à la conformité à l’accessibilité dans un formulaire adaptatif. Pour rechercher les problèmes d’accessibilité dans un formulaire adaptatif à l’aide de l’outil ANDI :
 
 1. Ouvrez le formulaire adaptatif en mode prévisualisation.
-1. Cliquez sur l&#39;icône de l&#39;outil ANDI en signet. L’outil ANDI analyse le formulaire adaptatif et affiche les problèmes d’accessibilité. Pour plus d&#39;informations sur l&#39;utilisation de l&#39;outil, consultez la documentation [de](https://www.ssa.gov/accessibility/andi/help/howtouse.html)l&#39;ANDI.
+1. Cliquez sur l&#39;icône de l&#39;outil ANDI en signet. L’outil ANDI analyse le formulaire adaptatif et affiche les problèmes d’accessibilité. Pour plus d&#39;informations sur l&#39;utilisation de l&#39;outil, consultez la [documentation de l&#39;ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
 1. Examiner et résoudre les problèmes signalés par l&#39;ANDI.
