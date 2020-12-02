@@ -22,9 +22,9 @@ ht-degree: 15%
 
 AEM Communities aide les marques à créer des expériences cohérentes sur les canaux numériques et en personne en facilitant l’activation entre les employés et les clients grâce à un catalogue de ressources d’activation, de contenu affecté et de recommandations dynamiques, le tout fourni au sein d’une communauté sociale pour favoriser l’engagement.
 
-Vous trouverez ci-dessous un didacticiel sur la mise en place rapide d&#39;une communauté [d&#39;](overview.md#enablement-community) activation à des fins de démonstration ou de développement.
+Vous trouverez ci-dessous un didacticiel sur la mise en place rapide d&#39;une [communauté d&#39;activation](overview.md#enablement-community) à des fins de démonstration ou de développement.
 
-Pour consulter un didacticiel sur la mise en place rapide d’une communauté [d’](overview.md#engagement-community)engagement, consultez [Prise en main de AEM Communities](getting-started.md).
+Pour consulter un didacticiel sur la configuration rapide d&#39;une [communauté d&#39;engagement](overview.md#engagement-community), visitez [Prise en main de AEM Communities](getting-started.md).
 
 >[!NOTE]
 >
