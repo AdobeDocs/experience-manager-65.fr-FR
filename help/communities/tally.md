@@ -24,15 +24,15 @@ Tally est une classe abstraite qui fournit une méthode standard pour recueillir
 
 Un composant tally personnalisé peut être créé en étendant la classe tally abstraite.
 
-[L&#39;amour](essentials-liking.md) est une mise en oeuvre du décompte qui est une forme simple d&#39;exprimer une opinion positive.
+[Le ](essentials-liking.md) Likingis est une mise en oeuvre du décompte qui est une forme simple d&#39;expression d&#39;une opinion positive.
 
-[Le vote](essentials-voting.md) est une mise en oeuvre du décompte qui est une forme simple d&#39;expression d&#39;une opinion positive ou négative.
+[Le ](essentials-voting.md) vote est une mise en oeuvre du décompte qui est une forme simple d&#39;expression d&#39;une opinion positive ou négative.
 
-[La notation](rating-basics.md) est une mise en oeuvre de la mesure qui utilise un système d&#39;étoiles pour exprimer une gamme d&#39;opinions allant du positif au négatif.
+[](rating-basics.md) Ratingis est une mise en oeuvre de tally qui utilise un système star pour exprimer une gamme d&#39;opinions allant du positif au négatif.
 
 À partir de AEM 6.1, le composant Sondage n’est plus disponible.
 
-[Les révisions](reviews-basics.md) sont un composant SCF qui est un hybride de [commentaires](essentials-comments.md) et de [cotation](rating-basics.md).
+[](reviews-basics.md) Révision d&#39;un composant SCF qui est un hybride de  [](essentials-comments.md) commentaires et de  [cotation](rating-basics.md).
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -49,16 +49,16 @@ Un composant tally personnalisé peut être créé en étendant la classe tally 
 ### Accès aux tests publiés (UGC) {#accessing-posted-tallies-ugc}
 
 L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.
-Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
+Voir [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
 
-AEM 6.1 Collectivités, l&#39;utilisation d&#39;un magasin [](working-with-srp.md) commun pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communautés, l&#39;utilisation d&#39;un [magasin commun](working-with-srp.md) pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
 
 **L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources d&#39;Enregistrement - Présentation et présentation de l&#39;utilisation du référentiel.
-* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP.
-* [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md) - Règles de codage.
-* [Refactorisation](socialutils.md) de SocialUtils - Mise en correspondance des méthodes d’utilitaire obsolètes avec les méthodes d’utilitaire SRP actuelles.
+* [Présentation](srp.md)  du fournisseur de ressources d&#39;Enregistrement - Présentation et présentation de l&#39;utilisation du référentiel.
+* [SRP et UGC Essentials](srp-and-ugc.md)  - Exemples et méthodes d&#39;utilitaire SRP.
+* [Accès à l&#39;UGC avec des directives de codage SRP](accessing-ugc-with-srp.md) .
+* [SocialUtils Refactoring](socialutils.md)  - Mise en correspondance des méthodes d’utilitaire obsolètes avec les méthodes d’utilitaire SRP actuelles.
 
