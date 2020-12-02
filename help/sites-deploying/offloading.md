@@ -52,7 +52,7 @@ La structure de déchargement prend en charge les charges utiles de la tâche qu
 
 Après la création d’une tâche, la charge utile n’a l’assurance que d’être située sur l’instance qui crée la tâche. En déchargeant la tâche, les agents de réplication garantissent que la charge est créée sur l’instance qui va consommer la tâche par la suite. Lorsque l’exécution d’une tâche est terminée, la réplication inverse entraîne la copie de la charge utile sur l’instance qui a créé la tâche.
 
-## Administration des topologies {#administering-topologies}
+## Administration des topologies  {#administering-topologies}
 
 Les topologies sont des clusters Experience Manager légèrement interconnectées qui participent au déchargement. Un cluster est composée d’une ou de plusieurs instances de serveur Experience Manager (une instance unique est considérée comme un cluster).
 
@@ -67,7 +67,7 @@ Le service de recherche de tous les membres du point de topologie pointe vers le
 
 Chaque cluster de la topologie contient une instance qui est identifiée en tant que leader. Le leader du cluster interagit avec la topologie au nom des autres membres du cluster. Lorsque le leader quitte le cluster, un nouveau leader du cluster est automatiquement sélectionné.
 
-### Affichage de la topologie {#viewing-the-topology}
+### Affichage de la topologie  {#viewing-the-topology}
 
 Utilisez le navigateur de topologies pour explorer l’état de la topologie à laquelle l’instance d’Experience Manager participe. Le navigateur de topologies présente les clusters et les instances de la topologie.
 
@@ -203,7 +203,7 @@ Les tâches sont réparties entre les instances pour lesquelles la rubrique asso
 
    **Remarque :** Lorsque vous sélectionnez Exclusif pour une rubrique, toutes les autres rubriques sont automatiquement réglées sur Désactivé.
 
-### Consommateurs de tâches installés {#installed-job-consumers}
+### Consommateurs de tâches installés  {#installed-job-consumers}
 
 Plusieurs implémentations de JobConsumer sont installées avec Experience Manager. Les rubriques auxquelles ces JobConsumers sont inscrits sont affichées dans le navigateur de déchargement. Les rubriques supplémentaires qui s’affichent sont celles que les JobConsumers personnalisés ont enregistrées. Le tableau ci-dessous décrit les JobConsumers par défaut.
 
@@ -222,7 +222,7 @@ Le service Apache Sling Job Consumer Manager fournit les propriétés de liste a
 
 **Remarque :** Si l’instance appartient à une topologie, vous pouvez également utiliser le navigateur de déchargement sur tout ordinateur de la topologie pour activer ou désactiver les rubriques.
 
-La logique qui crée la liste des rubriques activées autorise d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. By default, all topics are enabled (the allow list value is `*`) and no topics are disabled (the block list has no value).
+La logique qui crée la liste des rubriques activées autorise d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de la liste autorisée est `*`) et aucune rubrique n’est désactivée (la liste bloquée n’a pas de valeur).
 
 Utilisez le console web ou le nœud `sling:OsgiConfig` pour configurer les propriétés suivantes. Pour les nœuds `sling:OsgiConfig`, le paramètre PID du service Job Consumer Manager est org.apache.sling.event.impl.jobs.JobConsumerManager.
 
@@ -257,17 +257,17 @@ Ce modèle de réplication est similaire à celui utilisé entre les instances d
 
 ### Nommage des agents de réplication pour le déchargement {#naming-the-replication-agents-for-offloading}
 
-Use a specific format for the ***Name*** property of the replication agents so that the offloading framework automatically uses the correct agent for specific worker instances.
+Utilisez un format spécifique pour la propriété ***Name*** des agents de réplication afin que la structure de déchargement utilise automatiquement l&#39;agent approprié pour des instances de travail spécifiques.
 
 **Nommer un agent sortant sur l’instance d’auteur :** 
 
-`offloading_<slingid>`, où `<slingid>` est l’identifiant Sling de l’instance de travail.
+`offloading_<slingid>`, où  `<slingid>` est l’identifiant Sling de l’instance de travail.
 
 Exemple: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nommer l’agent inverse sur l’instance d’auteur :** 
 
-`offloading_reverse_<slingid>`, où `<slingid>` est l’identifiant Sling de l’instance de travail.
+`offloading_reverse_<slingid>`, où  `<slingid>` est l’identifiant Sling de l’instance de travail.
 
 Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -277,7 +277,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent sortant {#creating-the-outgoing-agent}
 
-1. Créez un **agent de réplication** sur l’auteur. (See the [documentation for replication agents](/help/sites-deploying/replication.md)). Specify any **Title**. The **Name** must follow the naming convention.
+1. Créez un **agent de réplication** sur l’auteur. (Voir la [documentation relative aux agents de réplication](/help/sites-deploying/replication.md)). Spécifiez un **titre**. Le **nom** doit respecter la convention d&#39;affectation de nom.
 1. Créez un agent en utilisant les propriétés suivantes :
 
    | Propriétés | Valeur |
@@ -291,7 +291,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent inverse {#creating-the-reverse-agent}
 
-1. Create a **Reverse Replication Agent** on author. (See the [documentation for replication agents](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must follow the naming convention.
+1. Créez un **Agent de réplication inverse** sur l’auteur. (Voir la [documentation relative aux agents de réplication](/help/sites-deploying/replication.md).) Spécifiez un **titre**. Le **nom** doit respecter la convention d&#39;affectation de nom.
 1. Créez un agent en utilisant les propriétés suivantes :
 
    | Propriétés | Valeur |
@@ -304,7 +304,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent de dossier d’envoi {#creating-the-outbox-agent}
 
-1. Create a **Replication Agent** on the worker instance. (See the [documentation for replication agents](/help/sites-deploying/replication.md).) Specify any **Title**. The **Name** must be `offloading_outbox`.
+1. Créez un **agent de réplication** sur l&#39;instance de travail. (Voir la [documentation relative aux agents de réplication](/help/sites-deploying/replication.md).) Spécifiez un **titre**. Le **nom** doit être `offloading_outbox`.
 1. Créez l’agent en utilisant les propriétés suivantes.
 
    | Propriétés | Valeur |
@@ -317,7 +317,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 Obtenez l’identifiant Sling d’une instance Experience Manager en utilisant l’une des méthodes suivantes :
 
-* Open the Web Console and, in the Sling Settings, find the value of the Sling ID property ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
+* Ouvrez la console Web et, dans les paramètres Sling, recherchez la valeur de la propriété Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
 * Utilisez le navigateur de topologies si l’instance fait déjà partie de la topologie.
 
 <!--
@@ -356,4 +356,4 @@ The following procedure assumes the following characteristics for the offloading
 
 En plus des informations présentées sur cette page, vous pouvez également lire ce qui suit :
 
-* For information about using Java APIs to create jobs and job consumers, see [Creating and Consuming Jobs for Offloading](/help/sites-developing/dev-offloading.md).
+* Pour plus d’informations sur l’utilisation des API Java pour créer des emplois et des consommateurs d’emplois, voir [Création et consommation d’emplois pour le déchargement](/help/sites-developing/dev-offloading.md).
