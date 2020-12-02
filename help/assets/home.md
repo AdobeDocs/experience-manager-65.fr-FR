@@ -13,9 +13,9 @@ ht-degree: 16%
 
 # Guide d’Assets
 
-Ce guide couvre toutes les [!DNL Experience Manager Assets] tâches, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
+Ce guide couvre toutes les tâches [!DNL Experience Manager Assets], telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 
-## Principaux [!DNL Experience Manager] articles
+## Articles clés [!DNL Experience Manager]
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -42,7 +42,7 @@ Ce guide couvre toutes les [!DNL Experience Manager Assets] tâches, telles que 
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit comment créer et gérer du contenu pour les applications mobiles. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
 
-## Ressources [!DNL Experience Manager] clés
+## Ressources clés [!DNL Experience Manager]
 
 * [Tutorials vidéo Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
