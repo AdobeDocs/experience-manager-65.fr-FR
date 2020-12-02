@@ -18,13 +18,13 @@ ht-degree: 2%
 ---
 
 
-# Structure d’une application{#structure-an-app}
+# Structure d’une application {#structure-an-app}
 
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Un projet AEM Mobile implique divers types de contenu, notamment des pages, des bibliothèques clientes JavaScript et CSS, des composants AEM réutilisables, des configurations Content Sync et le contenu du shell d&#39;application PhoneGap. Baser votre nouvelle application AEM Mobile sur le kit [de](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) démarrage est un bon moyen d&#39;intégrer tous les types de contenu dans notre structure recommandée afin de faciliter à la fois la portabilité et la maintenance à long terme.
+Un projet AEM Mobile implique divers types de contenu, notamment des pages, des bibliothèques clientes JavaScript et CSS, des composants AEM réutilisables, des configurations Content Sync et le contenu du shell d&#39;application PhoneGap. Baser votre nouvelle application AEM Mobile sur le [Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) est un bon moyen d&#39;intégrer tous les types de contenu dans notre structure recommandée afin de faciliter à la fois la portabilité et la maintenabilité à long terme.
 
 ## Contenu de la page {#page-content}
 
@@ -38,11 +38,11 @@ Par AEM convention, la première page de votre application doit être une redire
 
 Le modèle et le code de composant de votre application doivent se trouver dans /apps/&lt;nom de la marque>/&lt;nom de l’application>. Conformément à la convention, vous devez placer votre modèle et votre code de composant dans /apps/&lt;nom de la marque>/&lt;nom de l’application>. Ce modèle devrait être familier aux développeurs qui ont déjà travaillé avec Site en AEM. Il est généralement suivi car /apps/ est verrouillé par défaut sur l’accès anonyme sur les instances de publication. Par conséquent, votre code JSP brut est protégé des agresseurs potentiels.
 
-Les modèles spécifiques à l’application peuvent être configurés pour être présentés uniquement en utilisant le noeud `allowedPaths` de propriété sur le modèle lui-même et en définissant sa valeur sur &#39;/content/mobileapps(/.&amp;ast;)?&#39; - ou même quelque chose de plus spécifique si le modèle ne doit être utilisable que pour une seule application. Les propriétés `allowedParents` et `allowedChildren` peuvent également être exploitées pour un contrôle affiné très précis sur les modèles qui seront disponibles pour un auteur en fonction de l&#39;endroit où la nouvelle page est créée.
+Les modèles spécifiques à l&#39;application peuvent uniquement être configurés pour être présentés en utilisant le noeud de propriété `allowedPaths` sur le modèle lui-même et en définissant sa valeur sur &#39;/content/mobileapps(/.&amp;ast;)?&#39; - ou même quelque chose de plus spécifique si le modèle ne doit être utilisable que pour une seule application. Les propriétés `allowedParents` et `allowedChildren` peuvent également être exploitées pour un contrôle affiné très précis sur les modèles qui seront disponibles pour un auteur en fonction de l&#39;endroit où la nouvelle page est créée.
 
-Lors de la création d’un composant de page d’application à partir de zéro, il est recommandé de définir sa `sling:resourceSuperType` propriété sur &quot;mobileapps/components/angular/ng-page&quot;. Cette opération permet de configurer la page pour la création et le rendu en tant qu’application d’une seule page et d’incruster les fichiers .jsp que votre composant doit modifier. Comme ng-page n’inclut aucune structure d’interface utilisateur, un développeur finit généralement par superposer (au moins) &quot;template.jsp&quot; (superposé depuis /libs/mobileapps/components/angular/ng-page/template.jsp).
+Lors de la création d’un composant de page d’application à partir de zéro, il est recommandé de définir sa propriété `sling:resourceSuperType` sur &quot;mobileapps/components/angular/ng-page&quot;. Cette opération permet de configurer la page pour la création et le rendu en tant qu’application d’une seule page et d’incruster les fichiers .jsp que votre composant doit modifier. Comme ng-page n’inclut aucune structure d’interface utilisateur, un développeur finit généralement par superposer (au moins) &quot;template.jsp&quot; (superposé depuis /libs/mobileapps/components/angular/ng-page/template.jsp).
 
-Les composants de page autorisés, qui souhaitent exploiter AngularJS, disposent d&#39;un `sling:resourceSuperType` composant équivalent situé dans /libs/mobileapps/components/angular/ng-component qui peut être superposé et personnalisé de la même manière.
+Les composants de page autorisés, qui souhaitent exploiter AngularJS, ont un composant `sling:resourceSuperType` équivalent situé dans /libs/mobileapps/components/angular/ng-component qui peut être superposé et personnalisé de la même manière.
 
 ## Clientlibs JavaScript et CSS {#javascript-and-css-clientlibs}
 
@@ -52,11 +52,11 @@ Si votre code client peut être autonome et ne correspond pas à un composant sp
 
 Si votre code client est étroitement associé à un composant spécifique, placez ce code dans une bibliothèque cliente imbriquée sous l’emplacement du composant dans /apps/ et incorporez-le dans la catégorie clientlib &quot;design&quot; de votre application.
 
-## PhoneGap Configuration {#phonegap-configuration}
+## Configuration PhoneGap {#phonegap-configuration}
 
-Chaque application AEM Mobile contient un répertoire qui héberge les fichiers de configuration utilisés par l&#39;interface [de ligne de](https://github.com/phonegap/phonegap-cli) commande PhoneGap et la compilation [](https://build.phonegap.com/) PhoneGap pour transformer votre contenu Web en une application exécutable. Dans l’exemple de Geometrixx, par exemple, ce répertoire (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) fait partie de l’environnement Shell ; une décision de conception prise en raison du fait qu’elle contient uniquement du contenu qui ne peut pas être mis à jour en direct, comme des modules externes qui traitent des API de périphérique et de la configuration de l’application elle-même.
+Chaque application AEM Mobile contient un répertoire qui héberge les fichiers de configuration utilisés par l&#39;interface de ligne de commande PhoneGap [](https://github.com/phonegap/phonegap-cli) et [PhoneGap build](https://build.phonegap.com/) pour transformer votre contenu Web en une application exécutable. Dans l’exemple de Geometrixx, par exemple, ce répertoire (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) fait partie de l’environnement Shell ; une décision de conception prise en raison du fait qu’elle contient uniquement du contenu qui ne peut pas être mis à jour en direct, comme des modules externes qui traitent des API de périphérique et de la configuration de l’application elle-même.
 
-Dans ce répertoire, vous trouverez également un certain nombre de crochets [](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide) Cordova qui peuvent être utilisés pour installer des modules externes, placer des fichiers de ressources dans leurs emplacements spécifiques à la plate-forme et d&#39;autres actions qui doivent être exécutées dans le cadre de la compilation. Remarque : au lieu de télécharger chaque module externe dans le cadre de la création, vous pouvez suivre le modèle de l’application Kitchen Sink et [inclure le code](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) source du module externe au reste de votre projet d’application.
+Dans ce répertoire, vous trouverez également un certain nombre d&#39;[hameoks Cordova](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide) qui peuvent être utilisés pour installer des modules externes, placer des fichiers de ressources dans leurs emplacements spécifiques à la plate-forme et d&#39;autres actions qui doivent être exécutées dans le cadre de la compilation. Remarque : au lieu de télécharger chaque module externe dans le cadre de la création, vous pouvez suivre le modèle de l’application Kitchen Sink et [inclure le code source du module externe](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) avec le reste de votre projet d’application.
 
 ## Étapes suivantes {#the-next-steps}
 
