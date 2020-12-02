@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Rapports personnalisés dans le Rapports de processus{#custom-reports-in-process-reporting}
+# Rapports personnalisés dans le Rapports de processus {#custom-reports-in-process-reporting}
 
 Vous pouvez utiliser l&#39;interface REST de QueryBuilder ou créer un service OSGi à l&#39;aide de l&#39;API QueryBuilder pour créer un rapport personnalisé.
 
@@ -26,16 +26,16 @@ Vous pouvez utiliser l&#39;interface REST de QueryBuilder ou créer un service O
 
 Avant d&#39;ajouter un rapport personnalisé, effectuez la procédure de modèle suivante :
 
-1. Les données utilisées dans les rapports personnalisés doivent être disponibles dans le Rapports de processus. Pour garantir la disponibilité des données, planifiez une tâche cron ou utilisez l’option **[Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** sur l’interface utilisateur du Rapports de processus.
+1. Les données utilisées dans les rapports personnalisés doivent être disponibles dans le Rapports de processus. Pour garantir la disponibilité des données, planifiez une tâche cron ou utilisez l’option **[Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** dans l’interface utilisateur de Rapports de processus.
 1. La requête d’URL (encapsulant la requête souhaitée) doit renvoyer un objet de résultat de requête approprié. Pour créer une requête, vous pouvez utiliser l’interface REST de [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) pour créer un service OSGi à l’aide de l’API QueryBuilder. Vous pouvez créer des requêtes dynamiques ou statiques.
 
 1. Créez une interface utilisateur personnalisée pour afficher les résultats. Vous pouvez créer une interface utilisateur autonome ou intégrer un résultat à l’interface utilisateur de Rapports de processus existante.
 
-## Utilisation de l’interface REST de QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
+## Utilisation de l&#39;interface REST de QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interface REST de CRX QueryBuilder expose les fonctionnalités du créateur de Requêtes de partage d’actifs par le biais d’une API Java et d’une API REST. Découvrez comment utiliser l’interface [REST de](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder avant d’effectuer les étapes suivantes :
+L’interface REST de CRX QueryBuilder expose les fonctionnalités du créateur de Requêtes de partage d’actifs par le biais d’une API Java et d’une API REST. Découvrez comment utiliser [l’interface REST de CRX QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) avant d’effectuer les étapes suivantes :
 
-1. Accéder à l’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
+1. Accédez à l’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Créez une requête basée sur la structure de noeud et les propriétés de noeud de l’enregistrement de processus.
 
    Vous pouvez spécifier des paramètres facultatifs pour spécifier le décalage, la limite, les accès et les propriétés. Vous pouvez coder en dur les arguments des rapports statiques et récupérer les paramètres de l’interface utilisateur pour les rapports dynamiques.
@@ -50,7 +50,7 @@ L’interface REST de CRX QueryBuilder expose les fonctionnalités du créateur 
 
 ## Création d’un service à l’aide de l’API du créateur de Requêtes  {#creating-a-service-using-query-builder-api-nbsp}
 
-La création d’un service à l’aide de l’API du créateur de Requêtes nécessite la [création et le déploiement d’un lot](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) CQ OSGI et [l’utilisation de l’API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)du créateur de Requêtes.
+La création d’un service à l’aide de l’API du créateur de Requêtes requiert [création et déploiement d’un lot CQ OSGI](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) et [à l’aide de l’API du créateur de Requêtes](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Créez un service OSGi avec les annotations appropriées. Pour accéder à QueryBuilder, utilisez :
 
@@ -66,7 +66,7 @@ La création d’un service à l’aide de l’API du créateur de Requêtes né
     predicateGroup.setAllRequired(true);
    ```
 
-1. Ajoute les prédicats au nouveau predicateGroup. Quelques éléments de prédicat utiles sont [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator et TypePredicateEvaluator.](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html)
+1. Ajoute les prédicats au nouveau predicateGroup. Quelques éléments de prédicat utiles sont [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html), [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
 
    Pour les rapports statiques, codez en dur les prédicats, tandis que pour les rapports dynamiques, récupérez les prédicats à partir de la requête.
 
@@ -137,13 +137,13 @@ La création d’un service à l’aide de l’API du créateur de Requêtes né
                        out.write(row.toString().getBytes());
    ```
 
-1. Utilisez le `org.apache.felix maven-bundle-plugin` pour créer un lot OSGi pour la servlet.
+1. Utilisez `org.apache.felix maven-bundle-plugin` pour créer un lot OSGi pour la servlet.
 
 1. Déployez le lot sur le serveur CRX.
 
 ### Exemple de service {#service-example}
 
-L’exemple de service suivant comptabilise les instances d’un processus qui est en **COURS** et **TERMINÉ** à la fin de chaque mois, trimestre et année.
+L’exemple de service suivant comptabilise les instances d’un processus qui se trouve à l’état **EN COURS** et **COMPLETE** à la fin de chaque mois, trimestre et année.
 
 ```java
 package custom.reporting.service;
@@ -341,7 +341,7 @@ public class PeriodicProcessVolume {
 }
 ```
 
-L’exemple de `pom.xml`fichier à générer au-dessus du service est le suivant :
+L&#39;exemple de fichier `pom.xml`à générer au-dessus du service est :
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
@@ -425,10 +425,10 @@ L’exemple de `pom.xml`fichier à générer au-dessus du service est le suivant
 
 ## Création d’une interface utilisateur distincte  {#creating-a-separate-ui-nbsp}
 
-Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Création d’un noeud](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX et octroi de privilèges [d’](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)accès appropriés.
+Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont les suivantes : [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Création d’un noeud CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) et octroi des privilèges d’accès [appropriés](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
-1. Créez un noeud CRX au `/apps` noeud et accordez les autorisations d’accès appropriées. (PERM_PROCESS_RAPPORTS_USER)
-1. Définissez le rendu au `/content` noeud.
+1. Créez un noeud CRX au niveau du noeud `/apps` et accordez les autorisations d’accès appropriées. (PERM_PROCESS_RAPPORTS_USER)
+1. Définissez le rendu sur le noeud `/content`.
 1. Ajoutez des fichiers JSP ou HTML au noeud créé à l’étape 1. Vous pouvez également ajouter des fichiers CSS.
 
    ![Exemple de noeud avec des fichiers JSP et CSS](assets/nodewith_jsp_css_new.png)
@@ -633,18 +633,18 @@ response.setCharacterEncoding("utf-8");
 
 ## Intégration de l’interface utilisateur des rapports dans l’interface utilisateur de Rapports de processus existante  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Création d’un noeud](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX et octroi de privilèges [d’](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)accès appropriés.
+Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont les suivantes : [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Création d’un noeud CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) et octroi des privilèges d’accès [appropriés](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
 1. Créez une interface utilisateur distincte.
-1. Créez un `nt:unstructured` noeud enfant au niveau du `/content/process-reporting-runtime/custom-reports` noeud pour chaque rapport enfichable.
+1. Créez un noeud enfant `nt:unstructured` au noeud `/content/process-reporting-runtime/custom-reports` pour chaque rapport enfichable.
 
-   * **id**: indique le numéro d&#39;identification unique du rapport.
-   * **name**- Indique le nom du rapport. Le nom s’affiche dans l’interface utilisateur.
-   * **link**- Spécifie le lien relatif vers le rendu de l&#39;interface utilisateur distincte. Le lien est créé à l’étape 1.
-   * **description**- Spécifie la description d&#39;une ligne du rapport. Vous pouvez laisser le champ de description vide.
-   * **icône**- Indique l&#39;image représentant le rapport de manière picturale. Vous pouvez laisser le champ d’icône vide.
+   * **id** : indique le numéro d&#39;identification unique du rapport.
+   * **name** - Indique le nom du rapport. Le nom s’affiche dans l’interface utilisateur.
+   * **link** - Spécifie le lien relatif vers le rendu de l&#39;interface utilisateur distincte. Le lien est créé à l’étape 1.
+   * **description** - Spécifie la description d&#39;une ligne du rapport. Vous pouvez laisser le champ de description vide.
+   * **icône** - Indique l&#39;image représentant le rapport de manière picturale. Vous pouvez laisser le champ d’icône vide.
 
-   ![Propriétés du noeud ](assets/node_properties_new.png)
+   ![Propriétés du noeud  ](assets/node_properties_new.png)
 
    Propriétés du noeud
 
@@ -658,8 +658,8 @@ Les conditions préalables à la création d’une interface utilisateur distinc
 
    Ecran de résultats des rapports personnalisés
 
-## Sample Package {#sample-package}
+## Exemple de package {#sample-package}
 
-Importez le `sample-report-pkg-1.zip` package pour intégrer des rapports personnalisés et l’interface utilisateur décrits dans l’article dans l’interface utilisateur de Process Management.
+Importez le package `sample-report-pkg-1.zip` pour intégrer des rapports personnalisés et l’interface utilisateur décrits dans l’article dans l’interface utilisateur de Process Management.
 
 [Obtenir le fichier](assets/sample-report-pkg-1.zip)
