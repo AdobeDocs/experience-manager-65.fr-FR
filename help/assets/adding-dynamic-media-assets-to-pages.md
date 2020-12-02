@@ -27,19 +27,19 @@ Si vous utilisez AEM comme système de gestion de contenu web, vous pouvez ajout
 >
 >Vous devez publier les ressources avant de les ajouter aux pages d’AEM. Voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
 
-## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
+## Ajout d’un composant Dynamic Media à une page   {#adding-a-dynamic-media-component-to-a-page}
 
 L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média panoramique, Recadrage intelligent de la vidéo ou Média vidéo 360 à une page est identique à l’ajout d’un composant sur n’importe quelle page. Les composants Dynamic Media sont décrits dans les sections suivantes.
 
 1. Dans AEM, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
-1. Dans le panneau situé à gauche de la page (vous devrez peut-être activer/désactiver l’affichage du panneau latéral), cliquez sur l’icône **[!UICONTROL Composants]** .
-1. Sous l’en-tête **[!UICONTROL Composants]** , dans la liste déroulante, sélectionnez **[!UICONTROL Contenu multimédia dynamique.]**
+1. Dans le panneau situé à gauche de la page (vous devrez peut-être activer/désactiver l’affichage du panneau latéral), cliquez sur l’icône **[!UICONTROL Composants]**.
+1. Sous l&#39;en-tête **[!UICONTROL Composants]**, dans la liste déroulante, sélectionnez **[!UICONTROL Contenu multimédia dynamique.]**
 
    Si aucune liste de composants Dynamic Media n’est disponible, vous devrez probablement activer ceux que vous souhaitez utiliser. Voir [Activation des composants Dynamic Media](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](/help/assets/assets/6_5_360video_wcmcomponent.png)
 
-1. Drag a **[!UICONTROL Dynamic Media]** component that you want to use and drop it in the desired location on the page.
+1. Faites glisser un composant **[!UICONTROL Contenu multimédia dynamique]** que vous souhaitez utiliser et déposez-le à l’emplacement de votre choix sur la page.
 
 1. Placez le pointeur de la souris directement sur le composant. Lorsque le composant est entouré d’une zone bleue, appuyez une fois pour afficher la barre d’outils du composant. Appuyez sur l’icône **[!UICONTROL Configuration (clé à molette)]**.
 
@@ -135,13 +135,13 @@ Si vous ajoutez le composant Dynamic Media et si l’option **[!UICONTROL Param
 * Vous avez [activé Dynamic Media](/help/assets/config-dynamic.md). Par défaut, ce module complémentaire est désactivé.
 * L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
 
-#### En cas d’utilisation d’images  {#when-working-with-images}
+#### En cas d’utilisation d’images   {#when-working-with-images}
 
 Le composant Dynamic Media permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
 Vous pouvez également configurer directement dans le composant les paramètres prédéfinis de la visionneuse ou de l’image ou le format de l’image. Pour rendre une image réactive, vous pouvez définir les points d’arrêt ou appliquer un paramètre prédéfini d’image réactive.
 
-You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings.]**
+Vous *devez* modifier les paramètres de média dynamique suivants en appuyant sur l&#39;icône **[!UICONTROL Modifier]** dans le composant, puis sur **[!UICONTROL Paramètres de média dynamique.]**
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -190,7 +190,7 @@ Le composant Dynamic Media permet d’ajouter une vidéo dynamique à vos pages
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+Vous devez modifier les paramètres de médias dynamiques suivants en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ Voir aussi [Profils d’image](/help/assets/image-profiles.md).
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
+Vous devez modifier le paramètre de média dynamique suivant en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
 >[!NOTE]
 >
@@ -336,7 +336,7 @@ Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas v
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
-Voir [Diffusion du contenu sur HTTP/2](/help/assets/http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
+Voir [Diffusion du contenu sur HTTP2](/help/assets/http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
 
 >[!MORELIKETHIS]
 >
