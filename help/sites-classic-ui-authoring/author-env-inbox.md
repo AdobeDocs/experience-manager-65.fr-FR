@@ -26,7 +26,7 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des n
 Ces notifications arrivent dans deux boîtes de réception, en fonction de leur type :
 
 * Une boîte de réception dans laquelle parviennent les notifications liées à des abonnements, décrite à la section suivante.
-* A specialized inbox for workflow items is described in the [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
+* Une boîte de réception spécialisée pour les éléments de processus est décrite dans le document [Participation aux Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
 
 ## Viewing Your Notifications {#viewing-your-notifications}
 
@@ -93,7 +93,7 @@ Lorsqu’une page est supprimée ou déplacée, une action de suppression est au
 1. Définissez les chemins d’accès des pages pour lesquelles vous recevrez une notification :
 
    * Cliquez sur **Ajouter** pour ajouter une nouvelle ligne au tableau.
-   * Click the **Path** table cell and enter the path, e.g. `/content/docs`.
+   * Cliquez sur la cellule de tableau **Chemin** et entrez le chemin, par ex. `/content/docs`.
 
    * Si vous souhaitez être averti pour toutes les pages appartenant à la sous-arborescence, définissez **Exact ?** sur **Non**.
 Si vous souhaitez n’être averti que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** sur **Oui**.
@@ -104,7 +104,7 @@ Si vous souhaitez n’être averti que pour les actions sur la page définie par
 
 1. Cliquez sur **OK** pour enregistrer la configuration.
 
-## Traitement des notifications {#processing-your-notifications}
+## Traitement des notifications  {#processing-your-notifications}
 
 Si vous avez choisi cette option, les notifications seront reçues et stockées dans votre boîte de réception AEM. Vous pouvez [afficher vos notifications](#viewing-your-notifications), puis sélectionner celles qui s’appliquent :
 
