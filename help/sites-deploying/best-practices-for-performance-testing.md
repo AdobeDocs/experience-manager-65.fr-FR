@@ -26,7 +26,7 @@ Les tests de performance constituent une partie importante de tout déploiement 
 
 Cette documentation présente les stratégies et méthodologies globales d’exécution des tests de performance ainsi que certains des outils mis à disposition par Adobe pour faciliter le processus. Enfin, nous analyserons certains des outils disponibles dans AEM 6 pour faciliter le réglage des performances, à la fois du point de vue de l’analyse du code et de la configuration du système.
 
-### Simulation de la réalité {#simulating-reality}
+### Simulation de la réalité  {#simulating-reality}
 
 Le plus important lorsque vous effectuez des tests de performance, c’est de vous assurer que vous simulez un environnement de production le plus fidèlement possible. Même si c’est souvent difficile de le faire, il est impératif de garantir la précision de ces tests. Lorsque vous concevez des tests de performance, il est important de prendre en compte les points suivants :
 
@@ -46,11 +46,11 @@ Les tests n’auront aucun sens sans un environnement qui ressemble le plus poss
 
 De nombreux problèmes de performances ne sont pas visibles tant que le système n’est pas soumis à une charge importante. De bons tests de performance devraient simuler la charge à laquelle les systèmes de production seront soumis à leur maximum.
 
-### Établissement des objectifs {#setting-goals}
+### Établissement des objectifs  {#setting-goals}
 
 Avant de commencer les tests de performance, il est nécessaire de définir des exigences non fonctionnelles afin de spécifier la charge et les temps de réponse. Si vous migrez à partir d’un système existant, assurez-vous que le temps de réponse est similaire à vos valeurs de production actuelles. Pour la charge, il est préférable d’utiliser la charge de pointe actuelle et de la doubler. Cela permet au site web de continuer à être performant à mesure qu’il se développe.
 
-### Outils {#tools}
+### Outils  {#tools}
 
 De nombreux outils de test de performance sont proposés sur le marché. Lors de l’exécution d’un outil de génération de charge, il est important de s’assurer que les ordinateurs qui effectuent les tests disposent d’une bande passante réseau suffisante. À défaut, une fois que la machine de test atteint les limites de sa connexion, aucune charge supplémentaire n’est générée sur l’environnement testé.
 
@@ -59,9 +59,9 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 * L’outil **Tough Day** d’Adobe peut être utilisé pour générer une charge sur des instances AEM et collecter des données de performance. L’équipe AEM d’ingénieurs d’Adobe utilise en fait l’outil pour tester la charge du produit AEM lui-même. Les scripts exécutés dans Tough Day sont configurés via des fichiers de propriétés et des fichiers XML JMX. Pour plus d’informations, voir la [documentation Tough Day](/help/sites-developing/tough-day.md).
 
 * AEM fournit des outils prêts à l’emploi pour identifier rapidement les requêtes, demandes et messages d’erreur problématiques. Pour plus d’informations, voir la section [Outils de diagnostic](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentation Tableau de bord des opérations.
-* Apache propose un produit appelé **JMeter** pouvant être utilisé pour les tests de performance et de charge ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais dont le jeu de fonctionnalités est plus restreint que les produits destinées aux entreprises et dont la courbe d’apprentissage est plus rapide. JMeter can be found on Apache’s website at [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* Apache propose un produit appelé **JMeter** pouvant être utilisé pour les tests de performance et de charge ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais dont le jeu de fonctionnalités est plus restreint que les produits destinées aux entreprises et dont la courbe d’apprentissage est plus rapide. JMeter peut être consulté sur le site Web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner** est un produit de test de charge de niveau entreprise. Une version d&#39;évaluation gratuite est disponible. Pour plus d&#39;informations, voir [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
+* **Load** Runnerest un produit de test de charge de niveau entreprise. Une version d&#39;évaluation gratuite est disponible. Pour plus d’informations, voir [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview).
 
 * Des outils de test de charge dans le cloud comme [Neustar](https://www.neustar.biz/services/web-performance/load-testing) peuvent également être utilisés.
 * Pour tester des sites web mobiles ou réactifs, un jeu d’outils distinct doit être utilisé. Ils fonctionnent en limitant la bande passante réseau et en simulant des connexions mobiles plus lentes telles que 3G ou EDGE. Les outils les plus utilisés sont les suivants : 
@@ -81,7 +81,7 @@ L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’
 
 **Utilisation de rlog.jar pour lire les journaux de demandes**
 
-Pour une analyse plus complète des journaux de demandes d’un système AEM, vous pouvez utiliser `rlog.jar` pour rechercher et trier les fichiers `request.log` générés par AEM. This jar file is included with an AEM installation in the `/crx-quickstart/opt/helpers` folder. Pour plus d’informations sur l’outil rlog et le journal des demandes en général, voir la documentation [Surveillance et gestion](/help/sites-deploying/monitoring-and-maintaining.md).
+Pour une analyse plus complète des journaux de demandes d’un système AEM, vous pouvez utiliser `rlog.jar` pour rechercher et trier les fichiers `request.log` générés par AEM. Ce fichier jar est inclus avec une installation AEM dans le dossier `/crx-quickstart/opt/helpers`. Pour plus d’informations sur l’outil rlog et le journal des demandes en général, voir la documentation [Surveillance et gestion](/help/sites-deploying/monitoring-and-maintaining.md).
 
 **Outil Explain Query**
 
@@ -109,7 +109,7 @@ Sur les systèmes dotés de serveurs principaux MongoDB, AEM fournit plusieurs M
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-For the cache named **Document-Diff**, the hit rate should be over `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
+Pour le cache nommé **Document-Diff**, le taux d’accès doit être supérieur à `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
 
 * Mbean **Oak Repository Statistics**. Vous pouvez y accéder directement en vous rendant à :
 
@@ -131,7 +131,7 @@ Sur un système qui ne nécessite pas un niveau élevé de personnalisation, le 
 
 Dans le cas de tests simples, Apache Bench peut servir à mesurer les temps de réponse du serveur web et à créer une charge pour mesurer des événements comme des fuites de mémoire. Pour plus d’informations, voir l’exemple de la [documentation Surveillance](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
-## Résolution des problèmes liés aux performances {#troubleshooting-performance-issues}
+## Résolution des problèmes liés aux performances  {#troubleshooting-performance-issues}
 
 Après avoir exécuté des tests de performance sur l’instance de création, tous les problèmes doivent être analysés, diagnostiqués et résolus. Vous pouvez avoir recours à plusieurs outils et techniques pour effectuer des analyses et résoudre des problèmes :
 
