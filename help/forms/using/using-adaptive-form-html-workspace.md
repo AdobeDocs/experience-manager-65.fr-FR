@@ -32,11 +32,11 @@ Effectuez les opérations suivantes pour activer l’utilisation des formulaires
 * Dans Assign Task ou dans la feuille de propriétés Workbench du Point de départ, vous pouvez masquer la barre d’outils supérieure/globale d’un formulaire adaptatif.
 * Vous pouvez utiliser les nouveaux profils d’action pour les actions de rendu et d’envoi des formulaires adaptatifs.
 
-### Exportation et importation d’applications LiveCycle {#livecycle-application-export-and-import}
+### Exportation et importation d’applications LiveCycle  {#livecycle-application-export-and-import}
 
 Les formulaires adaptatifs étant situés dans le référentiel AEM, l’exportation d’applications LiveCycle contient uniquement les références des formulaires adaptatifs utilisés. Par conséquent, l&#39;exportation et l&#39;importation de l&#39;application de LiveCycle est un processus en deux étapes. L’application LiveCycle comprend des définitions de processus, etc. Un module distinct contenant les formulaires adaptatifs est exporté au format ZIP à partir d’AEM. Lors de l’importation, l’application LiveCycle est importée par Workbench et les formulaires adaptatifs sont importés par AEM.
 
-## Expérience utilisateur de formulaire adaptatif dans Workspace HTML {#user-experience-of-adaptive-form-in-html-workspace}
+## Expérience utilisateur de formulaire adaptatif dans Workspace HTML  {#user-experience-of-adaptive-form-in-html-workspace}
 
 Workspace HTML fournit quelques fonctions spécifiques aux formulaires adaptatifs en plus des fonctions disponibles pour les formulaires mobiles. L’utilisateur peut ajouter des pièces jointes, enregistrer, signer, envoyer et parcourir les formulaires adaptatifs dans Workspace HTML en ouvrant une tâche ou un point de départ. Voici les caractéristiques :
 
@@ -57,7 +57,7 @@ Workspace HTML fournit quelques fonctions spécifiques aux formulaires adaptatif
 
 1. Ouvrez Adobe Experience Manager Forms Workbench.
 
-1. Go to **File > New > Application** or use the existing application to create an application.
+1. Accédez à **Fichier > Nouveau > Application** ou utilisez l’application existante pour créer une application.
 
    ![Création d’une nouvelle application](assets/create_new_appl.png)
 
@@ -76,7 +76,7 @@ Workspace HTML fournit quelques fonctions spécifiques aux formulaires adaptatif
 
    Utilisation d’un actif CRX
 
-1. Select the adaptive form created through Manage Assets UI, and click **[!UICONTROL OK]**.
+1. Sélectionnez le formulaire adaptatif créé via l’interface utilisateur de gestion des actifs, puis cliquez sur **[!UICONTROL OK]**.
 
    ![Sélection d’un formulaire adaptatif](assets/selecting_form.png)
 
@@ -87,5 +87,5 @@ Workspace HTML fournit quelques fonctions spécifiques aux formulaires adaptatif
    >Pour en savoir plus sur la création d’un formulaire adaptatif, consultez la section [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md).
    >
    >
-   >For details around creating a process, see [Creating and managing processes](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Pour plus d&#39;informations sur la création d&#39;un processus, voir [Création et gestion de processus](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
 
