@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 78%
+ht-degree: 86%
 
 ---
 
@@ -28,22 +28,22 @@ ContextHub est une structure pour stocker, manipuler et présenter des données 
 
 >[!CAUTION]
 >
->The path containing the sample ContextHub configuration that is used by the [We.Retail reference implementation](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) should only be used as a reference for creating your own configuration.
+>Le chemin d’accès contenant l’exemple de configuration ContextHub utilisé par l’implémentation de référence [We.Retail](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) ne doit être utilisé que comme référence pour créer votre propre configuration.
 >
 >Il ne doit pas être utilisé dans un projet comme votre propre configuration ContextHub.
 
 ## Persistance {#persistence}
 
-ContextHub stocke les données de contexte de persistance sur le client. L’API Javascript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages.
+ContextHub stocke les données de contexte de persistance sur le client. L’API JavaScript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages.
 
 Chaque magasin ContextHub est une instance d’un type de magasin prédéfini :
 
 * ContextHub fournit plusieurs [exemples de types de magasin](/help/sites-developing/ch-samplestores.md).
 * Utilisez les consoles AEM pour [créer des magasins](ch-configuring.md#creating-a-contexthub-store).
-* Developers can [create custom store types](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
+* Les développeurs peuvent [créer des types de magasin personnalisés](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Les développeurs peuvent [accéder aux données du magasin](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via Javascript.
 
-## Segmentation {#segmentation}
+## Segmentation   {#segmentation}
 
 ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
 
