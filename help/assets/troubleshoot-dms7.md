@@ -25,14 +25,14 @@ Le document suivant décrit la résolution des problèmes affectant Dynamic Medi
 
 Assurez-vous que Dynamic Media a été correctement configuré en procédant comme suit :
 
-* Start up command contains the `-r dynamicmedia_scene7` runmode argument.
+* La commande début up contient l&#39;argument `-r dynamicmedia_scene7` runmode.
 * Tous les packs de correctifs cumulatifs (CFP) AEM 6.4 ont été installés *avant* tout Feature Pack Dynamic Media disponible.
 * Le Feature Pack 18912 facultatif est installé.
 
    Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic (Scene7).
 
 * Accédez à l’interface utilisateur des services cloud et vérifiez que le compte fourni s’affiche sous **[!UICONTROL Configurations disponibles.]**
-* Ensure that the `Dynamic Media Asset Activation (scene7)` replication agent is enabled.
+* Assurez-vous que l&#39;agent de réplication `Dynamic Media Asset Activation (scene7)` est activé.
 
    Cet agent de réplication est accessible sous Agents dans l’instance d’auteur.
 
@@ -168,7 +168,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td>La vidéo n’est pas codée.</td>
    <td>
     <ul>
-     <li>Check that the runmode is <code>dynamicmedia_scene7</code>.</li>
+     <li>Vérifiez que le mode d’exécution est <code>dynamicmedia_scene7</code>.</li>
      <li>Vérifiez que le service cloud Dynamic Media est configuré.</li>
      <li>Vérifiez qu’un profil vidéo est associé au dossier de transfert.</li>
     </ul> </td>
