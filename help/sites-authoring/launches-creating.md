@@ -85,7 +85,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * **Titre du lancement **: nom du lancement. Ce nom doit être explicite pour les auteurs.
    * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement.
    * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
-   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
+   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Pour ce faire, cette option effectue le lancement d’une [copie dynamique](/help/sites-administering/msm.md).
 
       Par défaut, cette option est sélectionnée.
 
@@ -125,7 +125,7 @@ La sélection de cette option va :
 >
 >Ce mécanisme peut être utilisé pour modifier le modèle d’une [page existante](/help/sites-authoring/managing-pages.md#creating-a-new-page), bien que la perte du contenu doit être envisagée.
 
-### Création d’un lancement imbriqué   {#creating-a-nested-launch}
+### Création d’un lancement imbriqué    {#creating-a-nested-launch}
 
 La création d’un lancement imbriqué (lancement dans un lancement) vous permet de créer un lancement à partir d’un lancement existant pour que les développeurs de contenu exploitent les modifications déjà apportées, au lieu de répercuter ces mêmes modifications à plusieurs reprises pour chaque lancement.
 
