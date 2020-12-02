@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Présentation {#introduction}
 
-Si vous ne connaissez pas le fournisseur de ressources d’enregistrement (SRP) et sa relation avec le contenu généré par l’utilisateur (UGC), consultez la section Présentation [de l’Enregistrement](working-with-srp.md) de contenu [communautaire et du fournisseur de ressources d’](srp.md)Enregistrement.
+Si vous ne connaissez pas bien le fournisseur de ressources d’enregistrement (SRP) et sa relation avec le contenu généré par l’utilisateur, visitez [Enregistrement de contenu communautaire](working-with-srp.md) et [Présentation du fournisseur de ressources d’Enregistrement](srp.md).
 
 Cette section de la documentation contient des renseignements essentiels sur le PRS et le CU.
 
@@ -38,15 +38,15 @@ L&#39;API SRP n&#39;est pas une classe abstraite, c&#39;est une interface. Une m
 
 Les méthodes d’utilisation de l’API SRP sont les utilitaires fournis, tels que ceux qui se trouvent dans le package SocialResourceUtilities.
 
-Lors de la mise à niveau à partir de AEM 6.0 ou d&#39;une version antérieure, il sera nécessaire de migrer UGC pour tous les fichiers SRP, pour lesquels un outil Open Source est disponible. See [Upgrading to AEM Communities 6.3](upgrade.md).
+Lors de la mise à niveau à partir de AEM 6.0 ou d&#39;une version antérieure, il sera nécessaire de migrer UGC pour tous les fichiers SRP, pour lesquels un outil Open Source est disponible. Voir [Mise à niveau vers AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
 >Historiquement, les utilitaires d’accès à l’UGC se trouvaient dans le package SocialUtils, qui n’existe plus.
 >
->Pour les utilitaires de remplacement, voir Refactorisation [de](socialutils.md)SocialUtils.
+>Pour les utilitaires de remplacement, voir [Refactoring SocialUtils](socialutils.md).
 
-## Méthode d&#39;utilitaire d&#39;accès à l&#39;UGC {#utility-method-to-access-ugc}
+## Méthode d&#39;utilitaire pour accéder à l&#39;UGC {#utility-method-to-access-ugc}
 
 Pour accéder à l’UGC, utilisez une méthode issue du package SocialResourceUtilities qui renvoie un chemin d’accès approprié pour accéder à l’UGC à partir de SRP et remplace la méthode déconseillée trouvée dans le package SocialUtils.
 
@@ -65,13 +65,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-Pour d’autres remplacements de SocialUtils, voir [SocialUtils Refactoring](socialutils.md).
+Pour d’autres remplacements de SocialUtils, voir [Refactorisation de SocialUtils](socialutils.md).
 
-Pour obtenir des instructions de codage, consultez [Accès à l’UGC avec SRP](accessing-ugc-with-srp.md).
+Pour obtenir des instructions de codage, consultez [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->La ressource de cheminToUGCStoragePath() renvoyée *ne convient pas* à la vérification [de](srp.md#for-access-control-acls)l&#39;ACL.
+>Le chemin d&#39;accès que renvoie la ressourceToUGCStoragePath() est *non* approprié pour la vérification de [ACL](srp.md#for-access-control-acls).
 
 ## Méthode d&#39;utilitaire pour accéder aux listes ACL {#utility-method-to-access-acls}
 
@@ -98,9 +98,9 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->Le chemin renvoyé par resourceToACLPath() *ne convient pas* pour [accéder à l&#39;UGC](#utility-method-to-access-acls) lui-même.
+>Le chemin renvoyé par resourceToACLPath() est *non* approprié pour [accéder à l&#39;UGC](#utility-method-to-access-acls) lui-même.
 
-## Emplacements d&#39;Enregistrements liés à l&#39;UGC {#ugc-related-storage-locations}
+## Emplacement des Enregistrements liés à l&#39;UGC {#ugc-related-storage-locations}
 
 Les descriptions suivantes de l&#39;emplacement des enregistrements peuvent être utiles pour le développement avec le Programme de recherche en milieu de travail (JSRP) ou peut-être le Programme de recherche en milieu de travail (MSRP). Il n&#39;existe actuellement aucune interface utilisateur pour accéder à l&#39;UGC stocké dans ASRP, comme il en existe pour JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) et MSRP (outils MongoDB).
 
@@ -108,28 +108,28 @@ Les descriptions suivantes de l&#39;emplacement des enregistrements peuvent êtr
 
 Lorsqu’un membre entre à l’UGC dans l’environnement de publication, il interagit avec un composant dans le cadre d’un site AEM.
 
-Un exemple de ce composant est le composant [](http://localhost:4502/content/community-components/en/comments.html) commentaires qui existe dans le site [Community Components Guide](components-guide.md) . Le chemin d’accès au noeud de commentaires dans le référentiel local est :
+Un exemple de ce type de composant est le [composant commentaires](http://localhost:4502/content/community-components/en/comments.html) qui existe dans le site [Community Components Guide](components-guide.md). Le chemin d’accès au noeud de commentaires dans le référentiel local est :
 
-* Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
+* Chemin du composant = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Emplacement du noeud fantôme**
 
-La création de l’UGC crée également un noeud [d’](srp.md#about-shadow-nodes-in-jcr) ombre auquel les ACL nécessaires sont appliquées. Le chemin d’accès au noeud fantôme correspondant dans le référentiel local est le résultat du préattente du chemin d’accès racine du noeud fantôme au chemin d’accès du composant :
+La création de l&#39;UGC crée également un [noeud fantôme](srp.md#about-shadow-nodes-in-jcr) auquel les ACL nécessaires sont appliquées. Le chemin d’accès au noeud fantôme correspondant dans le référentiel local est le résultat du préattente du chemin d’accès racine du noeud fantôme au chemin d’accès du composant :
 
 * Chemin racine = `/content/usergenerated`
 * Commenter le noeud fantôme = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Emplacement UGC**
 
-L’UGC n’est créé dans aucun de ces emplacements et ne doit être accessible qu’à l’aide d’une méthode [d’](#utility-method-to-access-ugc) utilitaire qui appelle l’API SRP.
+L&#39;UGC est créé dans aucun de ces emplacements et ne doit être accessible qu&#39;à l&#39;aide d&#39;une [méthode d&#39;utilitaire](#utility-method-to-access-ugc) qui appelle l&#39;API SRP.
 
 * Chemin racine = `/content/usergenerated/asi/srp-choice`
 * Noeud UGC pour JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Notez* que, pour JSRP, le noeud UGC sera *uniquement* présent sur l’instance AEM (auteur ou publication) sur laquelle il a été saisi. Si elle est saisie sur une instance de publication, la modération ne sera pas possible à partir de la console de modération sur l’auteur.
+*Notez* que, pour JSRP, le noeud UGC n’est  ** présent que sur l’instance AEM (auteur ou publication) sur laquelle il a été saisi. Si elle est saisie sur une instance de publication, la modération ne sera pas possible à partir de la console de modération sur l’auteur.
 
 ## Informations connexes {#related-information}
 
-* [Présentation](srp.md) du fournisseur de ressources d&#39;Enregistrement - Présentation et présentation de l&#39;utilisation du référentiel.
-* [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md) - Règles de codage.
-* [Refactorisation](socialutils.md) de SocialUtils - Mise en correspondance des méthodes d’utilitaire obsolètes avec les méthodes d’utilitaire SRP actuelles.
+* [Présentation](srp.md)  du fournisseur de ressources d&#39;Enregistrement - Présentation et présentation de l&#39;utilisation du référentiel.
+* [Accès à l&#39;UGC avec des directives de codage SRP](accessing-ugc-with-srp.md) .
+* [SocialUtils Refactoring](socialutils.md)  - Mise en correspondance des méthodes d’utilitaire obsolètes avec les méthodes d’utilitaire SRP actuelles.
