@@ -17,16 +17,16 @@ ht-degree: 51%
 ---
 
 
-# Personnalisation des onglets d’une tâche {#customizing-tabs-for-a-task}
+# Personnalisation des onglets d’une tâche  {#customizing-tabs-for-a-task}
 
-Vous pouvez personnaliser les noms d’onglets pour le `Start Process` composant dans la vue `Start Process` Uber et le `Task Details` composant dans la vue `ToDo` Uber.
+Vous pouvez personnaliser les noms de tabulation pour le composant `Start Process` dans la vue Uber `Start Process` et le composant `Task Details` dans la vue Uber `ToDo`.
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Change the value of `tabname`in the `translation.json` file.
+1. Modifiez la valeur de `tabname`dans le fichier `translation.json`.
 
-   For example, change `/apps/ws/locales/en-US/translation.json` for English to the following.
+   Par exemple, remplacez `/apps/ws/locales/en-US/translation.json` par ce qui suit pour l’anglais.
 
-   * For tasks initiated in the start process, use the following snippet from the `"startprocess" : {}` block.
+   * Pour les tâches lancées dans le processus de début, utilisez le fragment de code suivant du bloc `"startprocess" : {}`.
 
    ```json
    "tabname" : {
@@ -37,7 +37,7 @@ Vous pouvez personnaliser les noms d’onglets pour le `Start Process` composant
            }
    ```
 
-   * For tasks in To-do, use the following snippet from the `"todo" : {}` block.
+   * Pour les tâches dans Tâches, utilisez le fragment de code suivant du bloc `"todo" : {}`.
 
    ```json
    "tabname" : {
