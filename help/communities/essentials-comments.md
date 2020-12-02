@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# Commentaires essentiels {#comments-essentials}
+# Commentaires Essentials {#comments-essentials}
 
 Cette page fournit l&#39;essentiel de l&#39;utilisation du système de commentaires (composant de commentaires) et des options de gestion du contenu généré par l&#39;utilisateur (UGC) produit lorsque les membres publient des commentaires ou des réponses.
 
@@ -34,7 +34,7 @@ Le composant Commentaires établit un système de commentaires de sorte que chaq
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td>
-   <td>Oui - les propriétés sont modifiables en <i>mode </i>conception</td>
+   <td>Oui - les propriétés sont modifiables en <i>mode de conception </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -50,7 +50,7 @@ Le composant Commentaires établit un système de commentaires de sorte que chaq
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td> Voir <a href="comments.md">Utilisation de commentaires</a></td>
+   <td> Voir <a href="comments.md">Utilisation des commentaires</a></td>
   </tr>
  </tbody>
 </table>
@@ -89,16 +89,16 @@ Cela s&#39;applique à tout composant qui étend un système de commentaires.
 ### Accès aux commentaires publiés (UGC) {#accessing-posted-comments-ugc}
 
 L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.
-Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
+Voir [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
 
-AEM 6.1 Collectivités, l&#39;utilisation d&#39;un magasin [](working-with-srp.md) commun pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communautés, l&#39;utilisation d&#39;un [magasin commun](working-with-srp.md) pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
 
 **L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources d&#39;Enregistrement - Présentation et présentation de l&#39;utilisation du référentiel.
-* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP.
-* [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md) - Règles de codage.
-* [Refactorisation](socialutils.md) de SocialUtils - Mise en correspondance des méthodes d’utilitaire obsolètes avec les méthodes d’utilitaire SRP actuelles.
+* [Présentation](srp.md)  du fournisseur de ressources d&#39;Enregistrement - Présentation et présentation de l&#39;utilisation du référentiel.
+* [SRP et UGC Essentials](srp-and-ugc.md)  - Exemples et méthodes d&#39;utilitaire SRP.
+* [Accès à l&#39;UGC avec des directives de codage SRP](accessing-ugc-with-srp.md) .
+* [SocialUtils Refactoring](socialutils.md)  - Mise en correspondance des méthodes d’utilitaire obsolètes avec les méthodes d’utilitaire SRP actuelles.
 
