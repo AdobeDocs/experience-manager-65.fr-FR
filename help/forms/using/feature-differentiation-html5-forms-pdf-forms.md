@@ -19,7 +19,7 @@ ht-degree: 87%
 ---
 
 
-# Différences de caractéristiques entre formulaires HTML5 et formulaires PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Différences de caractéristiques entre formulaires HTML5 et formulaires PDF  {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 Le tableau suivant indique les fonctionnalités prises en charge par les formulaires HTML5 et les formulaires PDF :
 
@@ -67,12 +67,12 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>API de script XFA</td>
-   <td>Prend en charge les éléments de script XFA les plus couramment utilisés. For details list of supported constructs, see <a href="/help/forms/using/scripting-support.md">scripting support</a>.</td>
+   <td>Prend en charge les éléments de script XFA les plus couramment utilisés. Pour plus d’informations sur la liste des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
    <td>Prend en charge tous les éléments de script XFA.</td>
   </tr>
   <tr>
    <td>API des scripts Acrobat </td>
-   <td>Les formulaires HTML5 prennent en charge la plupart des API couramment utilisées. For details, see <a href="/help/forms/using/scripting-support.md">scripting support</a>.</td>
+   <td>Les formulaires HTML5 prennent en charge la plupart des API couramment utilisées. Pour plus d’informations, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
    <td>Si le fichier PDF est ouvert dans Acrobat ou Reader, il prend également en charge toutes les API de script fournies par Acrobat.</td>
   </tr>
   <tr>
