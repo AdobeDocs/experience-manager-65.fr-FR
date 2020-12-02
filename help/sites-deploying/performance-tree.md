@@ -186,7 +186,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
    <td>Réglage du référentiel</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html">Conseils de réglage de la performance</a></li>
+     <li><a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">Conseils de réglage de la performance</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configuration des performances</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Réglage de la performance du référentiel</a></li>
     </ul> </td>
@@ -198,7 +198,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
     <ul>
      <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">Traitement de processus simultanés</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow">Configuration de la file d’attente pour un workflow spécifique</a></li>
-     <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">Purge régulière des instances de workflows</a></li>
+     <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">Purge régulière des instances de workflow</a></li>
      <li><a href="/help/sites-developing/workflows.md#transient-workflows">Workflows transitoires</a><br /> </li>
     </ul> <p> </p> </td>
   </tr>
@@ -214,7 +214,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Service de synchronisation des ressources</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Plusieurs instances de gestion des actifs numériques</a></li>
-     <li>Articles contenant des conseils pratiques d’amélioration de la performance <a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html">ici</a> et <a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html">ici</a>.<br />  </li>
+     <li>Articles contenant des conseils pratiques d’amélioration de la performance <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">ici</a> et <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">ici</a>.<br />  </li>
     </ol> </td>
   </tr>
   <tr>
@@ -260,7 +260,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étape 35</strong></td>
    <td>Configuration du dispatcher</td>
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html">Configuration du dispatcher</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configuration du dispatcher</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 36</strong></td>
@@ -289,12 +289,12 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étapes 45<br /> et 47</strong><br /> </td>
    <td>Utilisation de HTTP/2</td>
-   <td>Voir la session des étapes 37,38 et 39. Also, check out <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">this</a> forum post on HTTP/2 support.<br /> </td>
+   <td>Voir la session des étapes 37,38 et 39. Consultez également <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">cette</a> publication du forum sur la prise en charge HTTP/2.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 49</strong></td>
    <td>Réduction de la taille de la charge utile</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html "> réduisez la taille de l’image</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html"> réduisez la taille de l’image</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étapes 42 et 43</strong></td>
@@ -314,7 +314,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
      <li>Concaténez les ressources (images, sprite CSS, JSON, etc.)<br /> </li>
      <li>Incorporation de Clientlibs :
       <ol>
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Création de dossiers</a> de bibliothèque client - voir Utilisation de l’en-tête Intégration pour réduire les requêtes</li>
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Création de dossiers</a>  de bibliothèque client - voir Utilisation de l’en-tête Utilisation de l’incorporation pour réduire les requêtes</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -326,7 +326,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étapes 50 et 51</strong></td>
    <td>Blocage du code JS</td>
-   <td><a href="https://docs.Adobe.com/ddc/fr/gems/aem-web-performance.html">https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html </a></td>
+   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td>
   </tr>
  </tbody>
 </table>
