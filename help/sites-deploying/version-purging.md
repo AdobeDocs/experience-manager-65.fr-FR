@@ -43,7 +43,7 @@ Une fois ce nombre dépassé, la version la plus ancienne est supprimée.
 
    * L’âge maximal des versions conservées dans le référentiel.  Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel. 
 
-* the [Version Purge maintenance task](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
+* la [tâche de maintenance de purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ Une fois ce nombre dépassé, la version la plus ancienne est supprimée.
 
 En plus de la purge explicite via l’outil de purge, le gestionnaire de versions peut être configuré pour purger d’anciennes versions lorsque de nouvelles versions sont créées.
 
-To configure the Version Manager, [create a configuration](/help/sites-deploying/configuring-osgi.md) for:
+Pour configurer Version Manager, [créez une configuration](/help/sites-deploying/configuring-osgi.md) pour :
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
@@ -61,15 +61,15 @@ Les options suivantes sont disponibles :
 
 * `versionmanager.createVersionOnActivation` (Boolean, par défaut : true) Indique s’il faut créer une version lorsque les pages sont activées.
 Une version est créée sauf si l’agent de réplication est configuré pour supprimer la création de versions, qui est honorée par le gestionnaire de versions.
-A version is created only if the activation happens on a path that is contained in `versionmanager.ivPaths` (see below).
+Une version est créée uniquement si l&#39;activation se produit sur un chemin contenu dans `versionmanager.ivPaths` (voir ci-dessous).
 
-* `versionmanager.ivPaths`(Chaîne[], par défaut : `{"/"}`)Indique les chemins d’accès sur lesquels les versions sont implicitement créées sur l’activation si `versionmanager.createVersionOnActivation` la valeur true est affectée.
+* `versionmanager.ivPaths`(Chaîne[], par défaut :  `{"/"}`) Indique les chemins d’accès sur lesquels les versions sont implicitement créées sur l’activation si  `versionmanager.createVersionOnActivation` la valeur true est affectée.
 
 * `versionmanager.purgingEnabled` (Boolean, par défaut : false) Définit si la purge doit être activée ou non lors de la création de nouvelles versions.
 
-* `versionmanager.purgePaths` (Chaîne[], par défaut : {&quot;/content&quot;}) Indique les chemins d’accès pour purger les versions lors de la création de nouvelles versions.
+* `versionmanager.purgePaths` (Chaîne[], par défaut : {&quot;/content&quot;}) Spécifie les chemins d&#39;accès pour purger les versions lors de la création de nouvelles versions.
 
-* `versionmanager.maxAgeDays` (int, par défaut : 30) Lors de la purge de version, toute version antérieure à la valeur configurée est supprimée. Si la valeur est inférieure à 1, la purge n’est pas effectuée en fonction de l’âge de la version.
+* `versionmanager.maxAgeDays` (int, par défaut : 30) Lors de la purge de version, toute version antérieure à la valeur configurée sera supprimée. Si la valeur est inférieure à 1, la purge n’est pas effectuée en fonction de l’âge de la version.
 
 * `versionmanager.maxNumberVersions` (int, par défaut 5) Lors de la purge de version, toute version antérieure à la n-ème version la plus récente sera supprimée. Si la valeur est inférieure à 1, la purge n’est pas effectuée en fonction du nombre de versions.
 
@@ -81,7 +81,7 @@ A version is created only if the activation happens on a path that is contained 
 
 ### Combinaison d’options de conservation {#combining-retention-options}
 
-The options defining how which versions should be retained ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), can be combined depending on your requirements.
+Les options définissant comment les versions doivent être conservées ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) peuvent être combinées en fonction de vos besoins.
 
 Par exemple, en définissant le nombre maximum de versions à conserver ET la version la plus ancienne à conserver :
 
