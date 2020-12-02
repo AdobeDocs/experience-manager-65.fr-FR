@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Présentation des rapports sur les transactions{#transaction-reports-overview}
+# Présentation des rapports de transactions{#transaction-reports-overview}
 
 ## Présentation {#introduction}
 
@@ -27,9 +27,9 @@ Les rapports de transactions à AEM Forms vous permettent de conserver le décom
 * Rendu d&#39;une version imprimée ou Web d&#39;une communication interactive
 * Conversion d’un document d’un format de fichier à un autre
 
-Pour plus d&#39;informations sur ce qui est considéré comme une transaction, consultez API [](../../forms/using/transaction-reports-billable-apis.md)facturables.
+Pour plus d&#39;informations sur ce qui est considéré comme une transaction, voir [API facturables](../../forms/using/transaction-reports-billable-apis.md).
 
-L’enregistrement de transaction est désactivé par défaut. Vous pouvez [activer l&#39;enregistrement](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) des transactions à partir de AEM console Web. Vous pouvez vue des rapports de transactions sur les instances d’auteur, de traitement ou de publication. Vue des rapports de transactions sur les instances d&#39;auteur ou de traitement pour une somme agrégée de toutes les transactions. Les transactions de vue génèrent des rapports sur les instances de publication pour comptabiliser toutes les transactions qui ont lieu uniquement sur cette instance de publication à partir de laquelle l&#39;état est exécuté.
+L’enregistrement de transaction est désactivé par défaut. Vous pouvez [activer l&#39;enregistrement des transactions](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) à partir de AEM Web Console. Vous pouvez vue des rapports de transactions sur les instances d’auteur, de traitement ou de publication. Vue des rapports de transactions sur les instances d&#39;auteur ou de traitement pour une somme agrégée de toutes les transactions. Les transactions de vue génèrent des rapports sur les instances de publication pour comptabiliser toutes les transactions qui ont lieu uniquement sur cette instance de publication à partir de laquelle l&#39;état est exécuté.
 
 Ne créez pas de contenu (créez des formulaires adaptatifs, des communications interactives, des thèmes et d’autres activités de création) et de documents de processus (utilisez des workflows, des services de document et d’autres activités de traitement) sur la même instance AEM. Conservez l’enregistrement de transaction désactivé pour les serveurs AEM Forms utilisés pour créer du contenu. Activez l’enregistrement des transactions pour les serveurs AEM Forms utilisés pour traiter les documents.
 
@@ -41,7 +41,7 @@ Les actions telles que l’envoi d’un formulaire PDF, l’utilisation de l’i
 
 ## Topologie prise en charge {#supported-topology}
 
-Les rapports de transactions sont disponibles uniquement sur AEM Forms sur l’environnement OSGi. Il prend en charge les topologies auteur-publication, auteur-traitement-publication et de traitement uniquement. For example topologies, see [Architecture and deployment topologies for AEM Forms](../../forms/using/transaction-reports-overview.md).
+Les rapports de transactions sont disponibles uniquement sur AEM Forms sur l’environnement OSGi. Il prend en charge les topologies auteur-publication, auteur-traitement-publication et de traitement uniquement. Par exemple, les topologies, voir [Topologies d’architecture et de déploiement pour AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 Le nombre de transactions est répliqué inversement d’instances de publication à des instances d’auteur ou de traitement. Une topologie indicative auteur-publication s’affiche ci-dessous :
 
@@ -51,15 +51,15 @@ Le nombre de transactions est répliqué inversement d’instances de publicatio
 >
 >Les rapports de transactions AEM Forms ne prennent pas en charge les topologies qui contiennent uniquement des instances de publication.
 
-### Instructions relatives à l&#39;utilisation des rapports de transactions {#guidelines-for-using-transaction-reports}
+### Directives pour l&#39;utilisation des rapports de transactions {#guidelines-for-using-transaction-reports}
 
 * Désactiver les rapports de transactions sur toutes les instances d’auteur en tant que rapports sur les instances d’auteur inclut les transactions enregistrées lors de la création d’activités.
-* Activez l’option **Afficher les transactions de publication uniquement** sur l’instance d’auteur pour vue les transactions cumulatives de toutes les instances de publication. Vous pouvez également vue des rapports de transactions sur chaque instance de publication pour les transactions réelles sur cette instance de publication uniquement.
+* Activez l&#39;option **Afficher les transactions de publication uniquement** sur l&#39;instance d&#39;auteur pour vue les transactions cumulatives de toutes les instances de publication. Vous pouvez également vue des rapports de transactions sur chaque instance de publication pour les transactions réelles sur cette instance de publication uniquement.
 * N’utilisez pas les instances d’auteur pour exécuter des workflows et traiter des documents.
 * Avant d’utiliser le rapports de transaction, si vous disposez d’une stratégie avec les serveurs de publication, assurez-vous que la réplication inversée est activée pour toutes les instances de publication.
 * Les données de transaction sont répliquées de manière inversée d’une instance de publication à une instance d’auteur ou de traitement correspondante uniquement. L’auteur ou l’instance de traitement ne peut pas répliquer davantage les données vers une autre instance. Par exemple, si vous disposez de la topologie author-processing-publish, les données de transaction agrégées sont répliquées uniquement sur l’instance de traitement.
 
-## Related Articles {#related-articles}
+## Articles connexes {#related-articles}
 
 * [Affichage et compréhension des rapports sur les transactions](../../forms/using/viewing-and-understanding-transaction-reports.md)
 * [API facturables des rapports de transaction](../../forms/using/transaction-reports-billable-apis.md)
