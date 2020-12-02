@@ -21,7 +21,7 @@ ht-degree: 74%
 
 Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle les utilisateurs seront redirigés après l’envoi du formulaire.
 
-1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) > **Adaptive Form Container**, and then click ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis cliquez sur ![niveau champ](assets/field-level.png) > **Conteneur de formulaire adaptatif**, puis sur ![cmppr](assets/cmppr.png).
 
 1. Dans la barre latérale, cliquez sur **Envoi**. 
 
@@ -32,11 +32,11 @@ Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle le
 
 Configuration de la page de redirection
 
-Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. For all the available submit actions, `status` and `owner` parameters are passed. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
+Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Pour toutes les actions d’envoi disponibles, les paramètres `status` et `owner` sont transmis. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
 
-* **Action** Stocker le contenu (obsolète) : `contentPath`—le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
+* **Action**  Stocker le contenu (obsolète) :  `contentPath`—le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
 
-* **Action** Stocker le PDF (obsolète) : `contentPath`—des données envoyées et du chemin d’accès au noeud qui stocke le fichier PDF dans le référentiel—est transmis.
+* **Action**  Stocker le PDF (obsolète) :  `contentPath`—des données envoyées et du chemin d’accès au noeud qui stocke le fichier PDF dans le référentiel—est transmis.
 
 * **Flux de travail Envoyer aux formulaires** : les paramètres de sortie renvoyés à partir du flux de travail des formulaires sont transmis.
 
