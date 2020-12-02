@@ -32,13 +32,13 @@ Les définitions d’application permettent d’identifier les espaces et les au
 
 ## Création d’une définition d’application {#creating-a-new-app-definition}
 
-1. Choisissez **Mobile** dans AEM Console de navigation.
+1. Sélectionnez **Mobile** dans la Console de navigation AEM.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
 1. Sélectionnez **Applications** dans **Mobile** et cliquez sur **Créer.**
 
-   Choisissez **Application** et entrez des informations pour créer votre nouvelle application.
+   Sélectionnez **Application** et entrez les détails pour créer votre nouvelle application.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
