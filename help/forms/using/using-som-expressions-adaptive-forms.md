@@ -23,7 +23,7 @@ Les formulaires adaptatif sont modélisés comme des pages AEM, représentées 
 
 Vous pouvez utiliser un modèle d’objet de script (SOM) pour référencer des valeurs, des propriétés et des méthodes dans un modèle d’objet de document (DOM) particulier. Un DOM organise les objets et les propriétés de mémoire dans une arborescence. Une expression SOM référence des champs ou des éléments de dessin et des panneaux.
 
-L’image suivante illustre une structure de noeud à laquelle un formulaire adaptatif se traduit lorsque vous ajoutez des composants à un formulaire. Par exemple, vous pouvez ajouter un panneau au panneau racine et un bouton radio au panneau transformé en DOM à l’exécution. The SOM Expression for the radio-button field in adaptive form is specified as `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
+L’image suivante illustre une structure de noeud à laquelle un formulaire adaptatif se traduit lorsque vous ajoutez des composants à un formulaire. Par exemple, vous pouvez ajouter un panneau au panneau racine et un bouton radio au panneau transformé en DOM à l’exécution. L’Expression SOM du champ de bouton radio dans le formulaire adaptatif est spécifiée comme `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 
 ![Arborescence DOM](assets/hierarchy.png)
 
