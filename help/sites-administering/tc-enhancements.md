@@ -49,7 +49,7 @@ Il est possible de configurer plusieurs langues de cible dans un projet de tradu
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Passez dans l’onglet **Avancé**. You can add multiple languages under **Target Language**.
+1. Passez dans l’onglet **Avancé**. Vous pouvez ajouter plusieurs langues sous **Langue de la Cible**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -65,11 +65,11 @@ Il est possible de configurer plusieurs langues de cible dans un projet de tradu
 
 Les modifications manuelles du contenu traduit peuvent être synchronisées à nouveau dans le système de gestion de la traduction (TMS) pour former sa mémoire de traduction.
 
-1. From the Sites console, after updating text content in a translated page, select **Update Translation Memory**.
+1. Dans la console Sites, après avoir mis à jour le contenu textuel dans une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Select which translation updates should be synchronized to Translation Memory, and select **Update Memory**.
+1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction à synchroniser avec la mémoire de traduction, puis sélectionnez **Mettre à jour la mémoire**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
