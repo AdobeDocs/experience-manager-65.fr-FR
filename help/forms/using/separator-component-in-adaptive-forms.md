@@ -22,17 +22,17 @@ ht-degree: 85%
 Vous pouvez utiliser le composant Separator pour isoler visuellement les volets d’un formulaire. Vous pouvez définir l’aspect général et le style d’un composant Separator en spécifiant les propriétés suivantes du composant :
 
 * **Nom d’élément :** spécifie le nom du composant. L’expression SOM intègre au composant la valeur spécifiée dans le champ de nom d’élément.
-* **Epaisseur :** Indique l’épaisseur du composant de séparateur en pixels.
+* **Epaisseur :** indique l’épaisseur du composant de séparateur en pixels.
 
 * **Classe CSS :** spécifie la classe CSS personnalisée pour le composant de séparateur
 
 * **Styles en ligne :** avec AEM Forms, vous pouvez désormais appliquer des styles CSS en ligne à chaque composant de formulaire adaptatif et prévisualiser les modifications en temps réel.
 
-Vous pouvez utiliser le mode Disposition pour définir le nombre de colonnes auxquelles s’étend le composant Separator. Pour plus d’informations, voir [Utilisation du mode Mise en page pour redimensionner des composants](../../forms/using/resize-using-layout-mode.md).
+Vous pouvez utiliser le mode Disposition pour définir le nombre de colonnes auxquelles s’étend le composant Separator. Pour plus d’informations, voir [Utilisation du mode Mise en page pour redimensionner les composants](../../forms/using/resize-using-layout-mode.md).
 
 Pour définir les propriétés d’un composant de séparateur :
 
-1. Select a separator component and tap ![cmppr](assets/cmppr.png). Les propriétés s’ouvrent dans la zone latérale.
+1. Sélectionnez un composant Separator et appuyez sur ![cmppr](assets/cmppr.png). Les propriétés s’ouvrent dans la zone latérale.
 1. Cliquez sur un onglet dans la section Propriétés CSS intégrées pour spécifier les propriétés CSS. Par exemple, dans l’onglet Champ, cliquez sur **Ajouter un élément**. Une ligne avec deux champs est ajoutée.
 1. Dans le premier champ de gauche, spécifiez une propriété CSS3 à appliquer. Par exemple, la **bordure**. Vous pouvez également sélectionner une propriété en cliquant sur le bouton de flèche vers le bas. La liste déroulante n’est pas exhaustive et vous pouvez spécifier n’importe quel nom de propriété CSS3 prise en charge dans ce champ.
 1. Dans le champ adjacent, spécifiez une valeur valide pour la propriété CSS3 spécifiée. Par exemple,**noir 3px**.
