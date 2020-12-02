@@ -27,16 +27,16 @@ L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo 
 * Le composant vidéo Dynamic Media Classic (Scene7) effectue automatiquement la détection de la bande passante et du périphérique pour lire la vidéo au bon format et de la bonne qualité sur les ordinateurs de bureau, les tablettes et les appareils mobiles.
 * Ressources - Vous pouvez inclure des ensembles de vidéos adaptables au lieu de contenus vidéo uniques. Un ensemble de vidéos adaptables est un conteneur de tous les rendus vidéo requis permettant de lire la vidéo sans heurt sur plusieurs écrans. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Vous utilisez un ensemble de vidéos adaptables, accompagné d’un composant vidéo S7, pour la diffusion vidéo en continu adaptative sur plusieurs écrans, notamment des ordinateurs de bureau, des téléphones iOS, Android et Blackberry et des appareils mobiles Windows. Pour plus d’informations, voir [Documentation Scene7 sur les ensembles de vidéos adaptables](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
 
-## A propos de FFMPEG et de Dynamic Media Classic {#about-ffmpeg-and-scene}
+## À propos de FFMPEG et de Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-Le workflow de codage vidéo par défaut est basé sur l’utilisation d’une intégration basée sur FFMPEG aux profils vidéo. Therefore, the out-of-the-box [!UICONTROL DAM Update Asset] workflow contains the following two ffmpeg-based workflow steps:
+Le workflow de codage vidéo par défaut est basé sur l’utilisation d’une intégration basée sur FFMPEG aux profils vidéo. Par conséquent, le workflow prêt à l’emploi [!UICONTROL DAM Update Asset] contient les deux étapes suivantes du workflow basé sur ffmpeg :
 
 * Miniatures FFMPEG
 * Codage FFMPEG
 
-Be aware that enabling and configuring the Dynamic Media Classic integration does not automatically remove or deactivate these two workflow steps from the out-of-the-box [!UICONTROL DAM Update Asset] ingestion workflow. Si vous utilisez déjà le codage vidéo FFMPEG dans AEM, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide de ressources est codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration de Dynamic Media Classic.
+Gardez à l’esprit que l’activation et la configuration de l’intégration de Dynamic Media Classic ne suppriment pas ou ne désactivent pas automatiquement ces deux étapes de flux de travaux du processus d’assimilation de [!UICONTROL DAM Update Asset] prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans AEM, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide de ressources est codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration de Dynamic Media Classic.
 
-If you have the FFMPEG-based video encoding in AEM configured and FFMPEG installed, Adobe recommends that you remove the two FFMPEG workflows from your [!UICONTROL DAM Update Asset] workflows.
+Si le codage vidéo FFMPEG est configuré dans AEM configuré et que FFMPEG est installé, l’Adobe vous recommande de supprimer les deux workflows FFMPEG de votre [!UICONTROL fichier de mise à jour DAM] workflows.
 
 ### Formats pris en charge {#supported-formats}
 
@@ -45,7 +45,7 @@ Les formats suivants sont pris en charge pour le composant vidéo Dynamic Media 
 * F4V H.264
 * MP4 H.264
 
-### Choix de l’emplacement du téléchargement de la vidéo {#deciding-where-to-upload-your-video}
+### Choix de l’emplacement du téléchargement de la vidéo  {#deciding-where-to-upload-your-video}
 
 Le choix de l’emplacement du téléchargement du contenu vidéo dépend des éléments suivants :
 
@@ -54,7 +54,7 @@ Le choix de l’emplacement du téléchargement du contenu vidéo dépend des é
 
 Si la réponse est « oui » à l’une des questions ou aux deux, téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe. Si la réponse est &quot;non&quot; aux deux questions, téléchargez votre vidéo directement dans Dynamic Media Classic. Le worfklow de chaque scénario est décrit dans la section suivante.
 
-#### Si vous téléchargez la vidéo directement dans Adobe Assets {#if-you-are-uploading-your-video-directly-to-adobe-assets}
+#### Si vous téléchargez la vidéo directement dans Adobe Assets  {#if-you-are-uploading-your-video-directly-to-adobe-assets}
 
 Si vous avez besoin d’un worfklow ou d’une création de versions pour les ressources, vous devez tout d’abord les télécharger dans Adobe Assets. Vous trouverez ci-dessous le worfklow recommandé :
 
@@ -62,19 +62,19 @@ Si vous avez besoin d’un worfklow ou d’une création de versions pour les re
 1. Dans AEM, accédez aux contenus vidéo dans la gestion de contenu web, dans l’onglet **[!UICONTROL Films]** de l’outil de recherche de contenu.
 1. Auteur avec vidéo ou composant vidéo de base Dynamic Media Classic.
 
-#### Si vous téléchargez la vidéo vers Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
+#### Si vous téléchargez la vidéo dans Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
 Si vous n’avez pas besoin d’un flux de travail ou d’un contrôle de version pour vos ressources, vous devez télécharger celles-ci vers Dynamic Media Classic. Vous trouverez ci-dessous le worfklow recommandé :
 
-1. Dans Dynamic Media Classic, [configurez un téléchargement et un codage FTP planifiés vers Dynamic Media Classic (système automatisé)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
-1. In AEM, access video assets in WCM in the **[!UICONTROL Dynamic Media Classic]** tab of the Content Finder.
+1. Dans Dynamic Media Classic, [configurez un téléchargement et un codage FTP planifiés dans Dynamic Media Classic (système automatisé)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. Dans AEM, accédez aux ressources vidéo dans WCM dans l’onglet **[!UICONTROL Contenu multimédia dynamique classique]** de l’outil de recherche de contenu.
 1. Auteur avec le composant vidéo Contenu multimédia dynamique classique.
 
 ### Configuration de l’intégration avec la vidéo Dynamic Media Classic {#configuring-integration-with-scene-video}
 
 **Pour configurer des paramètres prédéfinis** universels :
 
-1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit.]**
+1. Dans **[!UICONTROL Cloud Services]**, accédez à votre configuration **[!UICONTROL Contenu multimédia dynamique classique]** et cliquez sur **[!UICONTROL Modifier.]**
 1. Sélectionnez l’onglet **[!UICONTROL Vidéo]**.
 
    >[!NOTE]
@@ -85,7 +85,7 @@ Si vous n’avez pas besoin d’un flux de travail ou d’un contrôle de versio
 
    >[!NOTE]
    >
-   >For more information about what the video presets mean, see the [Dynamic Media Classic documentation](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
+   >Pour plus d’informations sur la signification des paramètres vidéo prédéfinis, voir la [documentation de Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
    >
    >Adobe recommande de sélectionner les deux ensembles de vidéos adaptables lors de la configuration des paramètres prédéfinis ou de sélectionner l’option **[!UICONTROL Codage vidéo adaptative]**.
 
@@ -93,7 +93,7 @@ Si vous n’avez pas besoin d’un flux de travail ou d’un contrôle de versio
 
 ### Mise à jour de la visionneuse et des paramètres prédéfinis de codage {#updating-viewer-and-encoding-presets}
 
-If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Dynamic Media Classic, navigate to the Dynamic Media Classic configuration in the cloud configuration and click **Update the viewer and encoding presets**.
+Si vous devez mettre à jour la visionneuse et les paramètres prédéfinis de codage pour la vidéo dans AEM car les paramètres prédéfinis ont été mis à jour dans Contenu multimédia dynamique classique, accédez à la configuration Contenu multimédia dynamique dans la configuration cloud et cliquez sur **Mettre à jour la visionneuse et les paramètres prédéfinis de codage**.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
@@ -102,13 +102,13 @@ If you need to update the viewer and encoding presets for video in AEM because t
 Pour télécharger votre vidéo source Principale vers Dynamic Media Classic à partir de la gestion des actifs numériques d’Adobe :
 
 1. Accédez au dossier CQ DAM cible dans lequel vous avez configuré votre configuration de cloud à l’aide de profils de codage Dynamic Media Classic.
-1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger la vidéo source Principale. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Dynamic Media Classic]** has a checkmark.
+1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger la vidéo source Principale. Le téléchargement et le codage vidéo sont terminés une fois le flux de travail [!UICONTROL DAM Update Asset] terminé et **[!UICONTROL Publier dans Contenu multimédia dynamique classique]** coché.
 
    >[!NOTE]
    >
    >La génération des miniatures de vidéo peut prendre du temps.
 
-   Dragging the DAM primary source video on to the video component accesses *all* of the Dynamic Media Classic encoded proxy renditions for delivery.
+   Faire glisser la vidéo source Principale DAM vers le composant vidéo permet d’accéder à *all* des rendus proxy codés dans Dynamic Media Classic pour la diffusion.
 
 ### Composant vidéo de base par rapport au composant vidéo de média classique dynamique {#foundation-video-component-versus-scene-video-component}
 
@@ -127,9 +127,9 @@ Le tableau suivant explique les cas d’utilisation de chaque composant :
 
 ## Composant vidéo AEM {#aem-video-component}
 
-Même si l’utilisation du composant vidéo Contenu multimédia dynamique classique est recommandée pour l’affichage de vidéos Contenu multimédia dynamique classique, cette section décrit l’utilisation de vidéos Contenu multimédia dynamique classique avec le composant [!UICONTROL vidéo] Foundation dans AEM, par souci d’exhaustivité.
+Même si l’utilisation du composant vidéo Contenu multimédia dynamique classique est recommandée pour l’affichage de vidéos Contenu multimédia dynamique classique, cette section décrit l’utilisation de vidéos Contenu multimédia dynamique classique avec le [!UICONTROL Composant vidéo de base] en AEM, par souci d’exhaustivité.
 
-### aem Vidéo et vidéo de type Contenu multimédia dynamique classique {#aem-video-and-scene-video-comparison}
+### aem Vidéo et vidéo dynamique classique {#aem-video-and-scene-video-comparison}
 
 Le tableau suivant fournit une comparaison de niveau élevé des fonctions prises en charge par le composant vidéo de base AEM et le composant vidéo Scene7 :
 
@@ -141,7 +141,7 @@ Le tableau suivant fournit une comparaison de niveau élevé des fonctions prise
 | Evolutivité | Oui | Oui (avec le SDK de la visionneuse Dynamic Media Classic) |
 | Vidéo mobile | Oui | Oui |
 
-### Configuration {#setting-up}
+### Configuration  {#setting-up}
 
 #### Création de profils vidéo {#creating-video-profiles}
 
@@ -151,8 +151,8 @@ Les divers codages vidéo sont créés selon les paramètres prédéfinis de cod
 >
 >Les nouveaux profils vidéo et leurs modifications doivent être activés pour la publication.
 
-1. Dans AEM, accédez à **[!UICONTROL Outils]**, puis sélectionnez **[!UICONTROL Console de configuration.]** Dans la console de configuration, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Profils **** vidéo dans l’arborescence de navigation.
-1. Créez un nouveau Profil vidéo Dynamic Media Classic. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer.]**
+1. Dans AEM, accédez à **[!UICONTROL Outils]**, puis sélectionnez **[!UICONTROL Console de configuration.]** Dans la console de configuration, accédez à  **[!UICONTROL Outils]** >  **[!UICONTROL Ressources]** >  **** Profils vidéo dans l’arborescence de navigation.
+1. Créez un nouveau Profil vidéo Dynamic Media Classic. Dans le **[!UICONTROL Nouveau...]**, sélectionnez **[!UICONTROL Créer une page]**, puis sélectionnez le modèle de Profil vidéo dynamique Media Classic. Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer.]**
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
@@ -168,7 +168,7 @@ Les divers codages vidéo sont créés selon les paramètres prédéfinis de cod
 
    Répétez cette étape pour tous les paramètres prédéfinis de codage sélectionnés dans la configuration de cloud que vous voulez utiliser dans le composant vidéo.
 
-#### Conception de la configuration {#configuring-design}
+#### Conception de la configuration  {#configuring-design}
 
 Le composant vidéo de base doit connaître les profils vidéo à utiliser afin de créer la liste des sources vidéo. Vous devez ouvrir la boîte de dialogue de conception des composants vidéo et configurer la conception des composants pour l’utilisation des nouveaux profils vidéo.
 
