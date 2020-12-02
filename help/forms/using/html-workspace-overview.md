@@ -28,25 +28,25 @@ En outre, l’espace de travail AEM Forms est hautement personnalisable à l’a
 
 Pour en savoir plus, voir [Présentation de l’espace de travail AEM Forms](/help/forms/using/introduction-html-workspace.md).
 
-## Se familiariser {#getting-familiar}
+## Se familiariser  {#getting-familiar}
 
 Pour être informé du processus de bout en bout de création d’une application de formulaire afin d’automatiser un processus d’entreprise, suivez la présentation. Vous pouvez créer, gérer et tester une application à l’aide de Workbench, Designer et l’espace de travail AEM Forms après avoir suivi la présentation. Pour plus d’informations sur l’implémentation, voir [Création d’une première application AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
-## Présentation fonctionnelle {#functional-overview}
+## Présentation fonctionnelle  {#functional-overview}
 
 Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches suivantes :
 
-**Début d’un processus d’entreprise :** AEM Forms Workspace catégorie vos processus tels qu’ils ont été conçus et configurés par votre organisation. Vous pouvez ajouter aux favoris les catégories fréquemment utilisées pour pouvoir y accéder rapidement. Lors du démarrage d’un processus, vous remplissez généralement un formulaire pour démarrer un processus d’entreprise contrôlé par le flux de travail des formulaires. Pour plus d’informations, voir [Démarrage des processus](/help/forms/using/starting-processes.md).
+**Début d’un processus d’entreprise : l’espace de travail** AEM Forms catégorie vos processus tel qu’il a été conçu et configuré par votre organisation. Vous pouvez ajouter aux favoris les catégories fréquemment utilisées pour pouvoir y accéder rapidement. Lors du démarrage d’un processus, vous remplissez généralement un formulaire pour démarrer un processus d’entreprise contrôlé par le flux de travail des formulaires. Pour plus d’informations, voir [Démarrage des processus](/help/forms/using/starting-processes.md).
 
-**Vue et action sur tâches :** Lorsque vous vue vos listes de tâches, vous voyez les tâches d’un processus d’entreprise qui vous sont affectées, ou à tout groupe auquel vous appartenez, ou qui sont les tâches partagées d’autres utilisateurs. Vous pouvez ouvrir, modifier et effectuer les tâches selon vos besoins. En règle générale, l’exécution d’une tâche implique de fournir des informations, d’approuver ou de rejeter un formulaire. Pour plus d’informations, voir [Utilisation des listes de tâches](/help/forms/using/todo-lists.md).
+**Vue et action en fonction des tâches :** Lorsque vous vue vos listes de tâches, vous voyez les tâches d’un processus d’entreprise qui vous sont affectées, ou à tout groupe auquel vous appartenez, ou qui sont les tâches partagées d’autres utilisateurs. Vous pouvez ouvrir, modifier et effectuer les tâches selon vos besoins. En règle générale, l’exécution d’une tâche implique de fournir des informations, d’approuver ou de rejeter un formulaire. Pour plus d’informations, voir [Utilisation des listes de tâches](/help/forms/using/todo-lists.md).
 
 **Suivi de tâches** : pour effectuer le suivi des tâches, utilisez l’onglet Suivi dans l’espace de travail AEM Forms. Vous pouvez rechercher les processus actifs ou terminés que vous avez démarrés ou modifiés. Vous pouvez afficher les tâches, les affectations et les formulaires qui faisaient partie du processus. Vous pouvez également démarrer de nouveaux processus à l’aide des données de formulaire provenant d’un processus lancé précédemment. Pour plus d’informations, voir [Suivi des processus](/help/forms/using/tracking-processes.md).
 
-## Nouvelle offre de l’espace de travail AEM Forms {#new-offering-of-aem-forms-workspace}
+## Nouvelle offre de l’espace de travail AEM Forms  {#new-offering-of-aem-forms-workspace}
 
 **Prise en charge de l’approbation en bloc des tâches** :
 
-Vous pouvez approuver plusieurs tâches du même type. Une fois que vous avez sélectionné une tâche pour approbation, seules les tâches avec le même processus, avec les mêmes noms de tâche et les mêmes options d&#39;itinéraire restent activées. See [Working with To-Do lists](/help/forms/using/todo-lists.md) for implementation details.
+Vous pouvez approuver plusieurs tâches du même type. Une fois que vous avez sélectionné une tâche pour approbation, seules les tâches avec le même processus, avec les mêmes noms de tâche et les mêmes options d&#39;itinéraire restent activées. Voir [Utilisation des listes de tâches](/help/forms/using/todo-lists.md) pour plus d’informations sur l’implémentation.
 
 ## Migration de Workspace Flex vers l’espace de travail AEM Forms {#migrating-from-flex-workspace-to-aem-forms-workspace}
 
@@ -109,7 +109,7 @@ Le mappage entre différents types de personnalisations dans les deux espaces de
 
 Les caractéristiques suivantes de l’espace de travail Flex ne sont pas disponibles dans l’espace de travail AEM Forms : messages et notification, page d’accueil, conteneur d’approbation et l’option de gestion des en-têtes de colonne. Pour obtenir une liste complète, voir [Fonctions de l’espace de travail Flex non disponibles dans l’espace de travail AEM Forms](/help/forms/using/features-flex-workspace-available-html.md).
 
-## Développement avec l’espace de travail AEM Forms {#developing-with-aem-forms-workspace}
+## Développement avec l’espace de travail AEM Forms  {#developing-with-aem-forms-workspace}
 
 ### Architecture {#architecture}
 
@@ -125,7 +125,7 @@ L’espace de travail AEM Forms prend en charge un large éventail de personnali
 
 L’article relatif à la [personnalisation](introduction-customizing-html-workspace.md#types-of-customizations) décrit les types de ces personnalisations.
 
-### Configuration de l’environnement de développement {#set-up-the-developer-environment}
+### Configuration de l’environnement de développement  {#set-up-the-developer-environment}
 
 Les éléments livrables de l’espace de travail AEM Forms comprennent un paquet CRX déployé sur CRX, des archives du SDK contenant le code source complet, des bibliothèques JavaScript tierces et des scripts de génération de l’espace de travail AEM Forms. Utilisez-les pour configurer l’environnement de développement pour l’exécution des personnalisations mentionnées ci-dessus. Pour plus de détails, voir [Génération du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
@@ -135,8 +135,8 @@ Vous pouvez personnaliser une grande partie de l’interface et des principales 
 
 Par défaut, pour un nouveau processus, un formulaire XDP est rendu au format PDF sur un bureau d’ordinateur et au format HTML sur une tablette. Il est possible de toujours rendre un formulaire XDP au format HTML. Pour plus d’informations, voir [Nouveaux services de rendu et d’envoi](/help/forms/using/new-render-submit-service.md).
 
-[La fonctionnalité Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) mobile, qui fonctionne avec [des profils](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), permet le rendu HTML des formulaires XDP. Par défaut, « Rendre le nouveau formulaire HTML » utilise le profil `default.html`, qui peut être modifié. Vous pouvez également ajouter des modifications personnalisées qui surviennent avant le rendu d’un formulaire XDP au format HTML.
+[La ](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) fonction Mobile Forms, qui fonctionne avec  [les profils](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), active le rendu HTML des formulaires XDP. Par défaut, « Rendre le nouveau formulaire HTML » utilise le profil `default.html`, qui peut être modifié. Vous pouvez également ajouter des modifications personnalisées qui surviennent avant le rendu d’un formulaire XDP au format HTML.
 
-## Application de l’espace de travail AEM Forms {#aem-forms-workspace-app}
+## Application de l’espace de travail AEM Forms  {#aem-forms-workspace-app}
 
 Pour travailler sur vos processus d’entreprise sur un périphérique mobile, vous pouvez utiliser l’offre de l’application de l’espace de travail AEM Forms qui propose des formulaires AEM. Pour plus d’informations, voir [Présentation de l’application de l’espace de travail AEM Forms](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
