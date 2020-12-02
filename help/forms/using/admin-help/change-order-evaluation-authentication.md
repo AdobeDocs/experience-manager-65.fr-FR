@@ -44,7 +44,7 @@ Si vous avez configuré plusieurs fournisseurs d’authentification, vous pouvez
     </node>
    ```
 
-   In `<entry key="order" value="3" />`, edit the value for each node to set the order of the authentication evaluation.
+   Dans `<entry key="order" value="3" />`, modifiez la valeur de chaque noeud afin de définir l’ordre de l’évaluation de l’authentification.
 
 1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
 1. Cliquez sur Parcourir pour rechercher le fichier, sur Importer, puis sur OK.
