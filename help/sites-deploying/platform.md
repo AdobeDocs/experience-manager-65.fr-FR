@@ -48,7 +48,7 @@ L’objectif du calque de stockage est le suivant :
 * Rendre possible l’alimentation du·stockage
 * Fournir un mécanisme de mise en cluster
 
-### Cœur Oak {#oak-core}
+### Cœur Oak  {#oak-core}
 
 Le cœur Oak ajoute plusieurs niveaux au niveau de stockage :
 
@@ -56,7 +56,7 @@ Le cœur Oak ajoute plusieurs niveaux au niveau de stockage :
 * Recherche et indexation
 * Observation
 
-### Oak JCR {#oak-jcr}
+### Oak JCR  {#oak-jcr}
 
 Le principal objectif de Oak JCR est de transformer la sémantique de JCR en opérations d’arborescence. Il est aussi chargé de :
 
@@ -69,7 +69,7 @@ En outre, les implémentations non Java sont désormais possibles et font partie
 
 Le niveau de stockage Oak fournit un niveau d’abstraction pour le stockage de contenu.
 
-Currently, there are two storage implementations available in AEM6: **Tar Storage** and **MongoDB Storage**.
+Actuellement, il existe deux implémentations d’enregistrement disponibles dans AEM6 : **Enregistrement Tar** et **Enregistrement MongoDB**.
 
 ### Stockage tar {#tar-storage}
 
@@ -91,7 +91,7 @@ Les enregistrements associés comme un noeud et ses enfants immédiats sont habi
 
 Le formatage des enregistrements est optimisé pour la taille de sorte à réduire les coûts E/S et pour accueillir le plus de contenu possible dans les caches.
 
-### Stockage Mongo {#mongo-storage}
+### Stockage Mongo  {#mongo-storage}
 
 Le stockage de MongoDB exploite MongoDB pour la fragmentation et la mise en cluster. L’arborescence du référentiel est conservée dans une base de données MongoDB où chaque nœud est un document distinct.
 
@@ -121,7 +121,7 @@ Une configuration en cluster AEM typique avec un stockage MongoDB :
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-## What is different from Jackrabbit 2? {#what-is-different-from-jackrabbit}
+## Qu&#39;est-ce qui diffère de Jackrabbit 2 ? {#what-is-different-from-jackrabbit}
 
 Étant donné qu’Oak est conçu pour être rétrocompatible avec le standard de JCR 1.0, il n’y a quasiment aucune modification au niveau de l’utilisateur. Toutefois, il existe des différences perceptibles à prendre en compte lors de la configuration d’un Oak basé sur l’installation AEM :
 
