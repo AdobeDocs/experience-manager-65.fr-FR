@@ -40,7 +40,7 @@ Enfin, les administrateurs publient stratégiquement le contenu de l’applicati
 
 ## Mosaïque Gestion de l’application {#the-manage-app-tile}
 
-La mosaïque **Gérer l’application** affiche les informations disponibles sur l’application :
+La mosaïque **Gérer l’application** affiche les informations d’application disponibles :
 
 * Title (Titre)
 * Description
@@ -52,7 +52,7 @@ La mosaïque **Gérer l’application** affiche les informations disponibles sur
 
 ## Mosaïque Gérer la connexion {#the-manage-connection-tile}
 
-Le volet **Gérer la connexion** affiche les informations de connexion AEM Mobile On-demand Services :
+La mosaïque **Gérer la connexion** affiche les informations de connexion AEM Mobile On-demand Services :
 
 * Nom de la configuration de l’outil
 * Nom et ID du projet
@@ -62,7 +62,7 @@ Le volet **Gérer la connexion** affiche les informations de connexion AEM Mobil
 >
 >Cliquez sur l&#39;engrenage en haut à droite pour configurer une configuration Mobile On-Demand Cloud.
 >
->Voir [Configuration des services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) à la demande mobiles pour plus d&#39;informations.
+>Voir [Configuration des services à la demande mobiles](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) pour plus d&#39;informations.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -78,14 +78,14 @@ Chaque mosaïque peut être développée pour fournir une vue de liste plus dét
 
 ### Mosaïque Gérer les bannières {#the-manage-banners-tile}
 
-La mosaïque **Gérer les bannières** vous permet de gérer le contenu d’une bannière. Les informations suivantes s’affichent pour une bannière :
+La mosaïque **Gérer les bannières** vous permet de gérer le contenu d&#39;une bannière. Les informations suivantes s’affichent pour une bannière :
 
 * image
-* **TITRE**: nom de la bannière
-* **MODIFIÉ**: dernière modification dans AEM
-* **TÉLÉCHARGÉ**: dernier téléchargé depuis AEM
-* **PUBLIÉ**: dernier formulaire de demande publié AEM
-* **SOURCE**: source (AEM local ou distant depuis Mobile On Demand)
+* **TITRE** : nom de la bannière
+* **MODIFIÉ** : dernière modification dans AEM
+* **TÉLÉCHARGÉ** : dernier téléchargé depuis AEM
+* **PUBLIÉ** : dernier formulaire de demande publié AEM
+* **SOURCE** : source (AEM local ou distant depuis Mobile On Demand)
 
 L’image suivante présente la mosaïque **Gérer les bannières** dans le Tableau de bord d’application AEM Mobile :
 
@@ -97,33 +97,33 @@ L’image suivante présente la mosaïque **Gérer les bannières** dans le Tabl
 
 ### Mosaïque Gérer les articles {#the-manage-articles-tile}
 
-Le volet **Gérer les articles** vous permet de gérer le contenu d’un article. Les informations suivantes s’affichent pour un article :
+La mosaïque **Gérer les articles** vous permet de gérer le contenu d’un article. Les informations suivantes s’affichent pour un article :
 
 * image
-* **TITRE**: nom de l’article
-* **MODIFIÉ**: dernière modification dans AEM
-* **TÉLÉCHARGÉ**: dernier téléchargé depuis AEM
-* **PUBLIÉ**: dernier formulaire de demande publié AEM
-* **SOURCE**: source (AEM local ou distant depuis Mobile On-Demand)
+* **TITRE** : nom de l’article
+* **MODIFIÉ** : dernière modification dans AEM
+* **TÉLÉCHARGÉ** : dernier téléchargé depuis AEM
+* **PUBLIÉ** : dernier formulaire de demande publié AEM
+* **SOURCE** : source (AEM local ou distant depuis Mobile On-Demand)
 
-L’image suivante présente le volet **Gérer les articles** dans le Tableau de bord d’application AEM Mobile :
+L’image suivante présente la mosaïque **Gérer les articles** dans le Tableau de bord d’application AEM Mobile :
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->Voir [**Gestion des articles**](/help/mobile/mobile-on-demand-managing-articles.md) pour la création, la suppression ou la mise à jour des articles.
+>Voir [**Gestion des articles**](/help/mobile/mobile-on-demand-managing-articles.md) pour créer, supprimer ou mettre à jour les articles.
 
 ### Mosaïque Gérer les collections {#the-manage-collections-tile}
 
-Le volet **Gérer les collections** vous permet de gérer le contenu d’une collection. Les informations suivantes s’affichent pour une collection :
+La mosaïque **Gérer les collections** vous permet de gérer le contenu d’une collection. Les informations suivantes s’affichent pour une collection :
 
 * image
-* **TITRE**: nom de la collection
-* **MODIFIÉ**: dernière modification dans AEM
-* **TÉLÉCHARGÉ**: dernier téléchargé depuis AEM
-* **PUBLIÉ**: dernier formulaire de demande publié AEM
-* **SOURCE**: source (AEM local ou distant depuis Mobile On-Demand)
+* **TITRE** : nom de la collection
+* **MODIFIÉ** : dernière modification dans AEM
+* **TÉLÉCHARGÉ** : dernier téléchargé depuis AEM
+* **PUBLIÉ** : dernier formulaire de demande publié AEM
+* **SOURCE** : source (AEM local ou distant depuis Mobile On-Demand)
 
 L’image suivante présente la mosaïque **Gérer les collections** dans le Tableau de bord d’application AEM Mobile :
 
@@ -131,7 +131,7 @@ L’image suivante présente la mosaïque **Gérer les collections** dans le Tab
 
 >[!NOTE]
 >
->Voir **[Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)** pour la création, la suppression ou la mise à jour des collections.
+>Voir **[Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)** pour créer, supprimer ou mettre à jour les collections.
 
 ### Étapes suivantes {#the-next-steps}
 
