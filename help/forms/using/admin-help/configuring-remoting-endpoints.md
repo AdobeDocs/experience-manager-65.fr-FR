@@ -22,6 +22,6 @@ ht-degree: 67%
 
 Un point de fin Remoting permet à une application créée avec Flex d’appeler le service qui utilise AEM forms Remoting (obsolète pour AEM forms). Un point de fin Remoting est automatiquement créé pour chaque service activé. Une destination Flex portant le même nom que le point de fin est créée, ce qui permet aux clients Flex de créer des objets distants pointant vers cette destination afin d’appeler des opérations sur le service adéquat.
 
-## Paramètres des points de fin Remoting {#remoting-endpoint-settings}
+## Paramètres des points de fin Remoting  {#remoting-endpoint-settings}
 
-**Méthode d&#39;authentification du client Flex :** Détermine le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, que l’opération appelée ne prend pas en charge les appels anonymes et que le client transmet des informations d’identification non valides ou non valides.
+**Méthode d’authentification du client Flex :** détermine le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, l’opération appelée ne prend pas en charge les appels anonymes et le client transmet des informations d’identification non valides ou non valides.
