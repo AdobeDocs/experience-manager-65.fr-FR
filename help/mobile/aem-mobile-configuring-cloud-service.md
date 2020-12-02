@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Configuration de l’Cloud Service Adobe Target {#configuring-adobe-target-cloud-service}
+# Configuration du Cloud Service Adobe Target {#configuring-adobe-target-cloud-service}
 
 >[!NOTE]
 >
@@ -26,15 +26,15 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->This document is part of the [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, a recommended starting point for AEM Mobile reference.
+>Ce document fait partie du [Guide de prise en main de AEM Mobile](/help/mobile/getting-started-aem-mobile.md), point de départ recommandé pour la référence à AEM Mobile.
 
 Plusieurs étapes doivent être réunies pour que les auteurs de contenu puissent début de générer du contenu ciblé pour les applications mobiles : Il existe un jeu d’autorisations approprié pour les utilisateurs et les groupes, la création de services cloud, la configuration de l’application pour l’activité et enfin la génération du contenu.
 
-L’hypothèse suivante est que l’application [de référence hybride](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) AEM Mobile a été déployée avec succès et accessible via le Tableau de bord AEM Mobile.
+L&#39;hypothèse suivante est que l&#39;application de référence hybride [AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) a été déployée avec succès et accessible via le Tableau de bord AEM Mobile.
 
 ## Autorisations {#permissions}
 
-Les utilisateurs qui doivent accéder à la console de personnalisation doivent faire partie du `target-activity-authors` groupe. Il est conseillé, dans le cadre de la configuration des utilisateurs et des groupes, d’ajouter le groupe d’activités-cibles au groupe d’administrateurs d’applications. En ajoutant le groupe cible-activités-auteurs, cela permet aux utilisateurs de voir l’entrée du menu de navigation Personnalisation.
+Les utilisateurs qui doivent accéder à la console de personnalisation doivent faire partie du groupe `target-activity-authors`. Il est conseillé, dans le cadre de la configuration des utilisateurs et des groupes, d’ajouter le groupe d’activités-cibles au groupe d’administrateurs d’applications. En ajoutant le groupe cible-activités-auteurs, cela permet aux utilisateurs de voir l’entrée du menu de navigation Personnalisation.
 
 Si vous oubliez d’ajouter les utilisateurs ou les groupes auxquels vous souhaitez accéder à la console d’administration de la personnalisation au groupe d’auteurs d’activités-cibles, les utilisateurs ne pourront pas voir la console de personnalisation.
 
@@ -66,13 +66,13 @@ Il est également nécessaire de lier un compte Adobe Mobile Services (AMS) à l
 
 ### Code client {#client-code}
 
-Pour vous connecter aux services AMS, rendez-vous sur [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), sélectionnez l’application mobile et cliquez sur les paramètres. Recherchez le champ Options de Cible du SDK, placez le code client dans le champ, puis cliquez sur Enregistrer.
+Pour vous connecter aux services AMS, visitez [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), sélectionnez l’application mobile et cliquez sur les paramètres. Recherchez le champ Options de Cible du SDK, placez le code client dans le champ, puis cliquez sur Enregistrer.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
 Maintenant que le code client a été associé à l’application mobile, lorsque le service cloud AMS est configuré via le Tableau de bord Mobile Adobe, les paramètres des paramètres du service sont diffusés via le fichier ADBMobileConfig.json.
 
-### Service Mobile Adobe {#adobe-mobile-service-could-service}
+### Adobe Mobile Service Pourrait Service {#adobe-mobile-service-could-service}
 
 Maintenant qu’AMS a été configuré, il est temps d’associer l’application mobile au Tableau de bord mobile Adobe. Dans le Tableau de bord AEM Mobile, recherchez l’option Gérer les Cloud Services et cliquez sur le bouton +.
 
@@ -88,11 +88,11 @@ Revenir au Tableau de bord mobile La mosaïque Gérer les Cloud Services contien
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-## Gestionnaires de synchronisation du contenu de la cible {#target-content-sync-handlers}
+## Gestionnaire de synchronisation du contenu de la cible {#target-content-sync-handlers}
 
-Pour diffuser du contenu sur le périphérique de l’utilisateur, le rendu des offres créées par les auteurs de contenu AEM génère le rendu. Pour gérer le rendu des offres d’cible, il existe un nouveau gestionnaire de synchronisation de contenu qui traitera les offres. En utilisant l’application de référence hybride comme exemple, le package de contenu en (anglais) contient ContentSyncConfig avec un gestionnaire [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) . L’étape suivante est cruciale pour le rendu des offres sur le périphérique. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
+Pour diffuser du contenu sur le périphérique de l’utilisateur, le rendu des offres créées par les auteurs de contenu AEM génère le rendu. Pour gérer le rendu des offres d’cible, il existe un nouveau gestionnaire de synchronisation de contenu qui traitera les offres. En utilisant l’application de référence hybride comme exemple, le package de contenu en (anglais) contient ContentSyncConfig avec un gestionnaire [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml). L’étape suivante est cruciale pour le rendu des offres sur le périphérique. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
 
-Par exemple, si une activité se trouve dans */content/campaigns/hybridref* , copiez ce chemin et collez-le en tant que valeur dans la propriété *path* du gestionnaire mobileappoffers.
+Par exemple, si une activité se trouve à l’emplacement */content/campaigns/hybridref*, copiez ce chemin d’accès et collez-le en tant que valeur dans la propriété *path* du gestionnaire d’applications mobiles.
 
 Pour l’application de référence hybride, il y a deux gestionnaires mobileappoffers : un pour le développement et un pour les productions.
 
@@ -100,10 +100,10 @@ Une fois que le chemin d’accès aux activités a été défini dans la propri�
 
 ### Mode de rendu {#render-mode}
 
-Le gestionnaire mobileappoffers est configuré différemment pour les configurations de publication et de développement. Pour les configurations de publication, il existe une propriété appelée *renderMode* avec une valeur de *publication* définie sur le noeud cq:ContentSyncConfig. Le gestionnaire mobileappoffers référence le renderMode et, s’il est défini sur publish, modifie l’identifiant de mbox qui est créé. Par défaut, une valeur —author est ajoutée à l’ID de mbox pour les mbox créées par AEM. Ceci identifie que l’activité n’a pas été publiée et doit utiliser la campagne non publiée pour les résolutions d’offre.
+Le gestionnaire mobileappoffers est configuré différemment pour les configurations de publication et de développement. Pour les configurations de publication, il existe une propriété appelée *renderMode* avec la valeur *publish* définie sur le noeud cq:ContentSyncConfig. Le gestionnaire mobileappoffers référence le renderMode et, s’il est défini sur publish, modifie l’identifiant de mbox qui est créé. Par défaut, une valeur —author est ajoutée à l’ID de mbox pour les mbox créées par AEM. Ceci identifie que l’activité n’a pas été publiée et doit utiliser la campagne non publiée pour les résolutions d’offre.
 
 Lorsque le contenu est mis en scène via le Tableau de bord mobile Adobe, le contenu intermédiaire est considéré comme du contenu prêt à l’emploi et rendu via la configuration de synchronisation du contenu non développée. Le rendu de cette manière entraînera la suppression de l’élément —author de tous les identifiants de mbox et la disponibilité d’une activité publiée sur le serveur de Cible. Avant de tester le contenu intermédiaire, vérifiez que l’activité a été publiée.
 
-## Creating Content {#creating-content}
+## Création de contenu {#creating-content}
 
 Maintenant que les services Cloud ont été créés et que le gestionnaire d’applications mobiles a été configuré, les auteurs de contenu peuvent désormais début générer des expériences ciblées.
