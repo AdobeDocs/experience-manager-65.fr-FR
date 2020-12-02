@@ -124,7 +124,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Dernière modification de la ressource </td>
-   <td>Date de la dernière modification de la ressource.<br /> </td>
+   <td>Date de la dernière modification de l'actif.<br /> </td>
    <td>Prédicat personnalisé, basé sur l’attribut de date.</td>
   </tr>
   <tr>
@@ -253,7 +253,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   <tr>
    <td>Propriété </td>
    <td>Effectuez une recherche sur une propriété spécifiée.</td>
-   <td>none</td>
+   <td>aucune</td>
   </tr>
   <tr>
    <td>État de publication </td>
@@ -288,7 +288,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Évaluation </td>
-   <td>Recherchez des ressources en fonction de leur évaluation.<br /> </td>
+   <td>Rechercher des ressources en fonction de leur évaluation.<br /> </td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -299,7 +299,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Date relative </td>
-   <td>Search assets based on the relative date of their creation<br /> </td>
+   <td>Rechercher des ressources en fonction de la date relative de leur création<br /> </td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -412,7 +412,7 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 * **Nom des propriétés de publication et Live Copy**
 Libellés des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
 
-* The &amp;ast; on the field labels in the **Settings** tab means the fields are required and if left blank an error message will appear
+* &amp;ast; sur les libellés de champ de l&#39;onglet **Paramètres** signifie que les champs sont obligatoires et qu&#39;un message d&#39;erreur s&#39;affiche si rien n&#39;est.
 
 ## Configuration des formulaires de recherche {#configuring-your-search-forms}
 
@@ -469,7 +469,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. **Fermez** l’aperçu pour terminer la configuration.
 
-### Suppression d’un champ de prédicat   {#deleting-a-predicate-field}
+### Suppression d’un champ de prédicat    {#deleting-a-predicate-field}
 
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (dans le coin inférieur gauche).
@@ -496,7 +496,7 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
 1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options   {#adding-options-predicates}
+### Ajout de prédicats d’options    {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
