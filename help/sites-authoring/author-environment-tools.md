@@ -54,7 +54,7 @@ Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
 D’autres [ressources d’aide sont accessibles depuis les consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Explorateur de composants    {#components-browser}
+## Explorateur de composants     {#components-browser}
 
 L’explorateur de composants présente tous les composants que vous pouvez utiliser sur la page active. Faites-les glisser à l’emplacement de votre choix, puis modifiez-les pour ajouter du contenu.
 
@@ -171,7 +171,7 @@ Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeu
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Arborescence de contenu    {#content-tree}
+## Arborescence de contenu     {#content-tree}
 
 L’**arborescence de contenu** présente une vue d’ensemble des composants sur la page sous forme de structure hiérarchique pour que vous puissiez visualiser la composition de la page en un seul coup d’œil.
 
@@ -286,11 +286,11 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 Le cas échéant, le menu **Informations sur la page** propose également les options suivantes :
 
 * [Convertir le lancement](/help/sites-authoring/launches-promoting.md) si la page correspond à un lancement.
-* [Ouvrir dans l’interface utilisateur](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) classique si cette option a été [activée par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
+* [Ouvrir dans l’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface utilisateur classique si cette option a été  [activée par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
-## Modes de page    {#page-modes}
+## Modes de page     {#page-modes}
 
 Lors de la modification d’une page, plusieurs modes permettent d’effectuer différentes actions :
 
