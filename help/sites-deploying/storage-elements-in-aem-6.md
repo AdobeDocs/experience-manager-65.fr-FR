@@ -32,7 +32,7 @@ L’un des principaux changements dans AEM 6 concerne les innovations au niveau
 
 Actuellement, il existe deux implémentations de stockage de nœud disponibles dans AEM 6 : le stockage tar et le stockage MongoDB.
 
-### Stockage tar {#tar-storage}
+### Stockage tar  {#tar-storage}
 
 #### Exécution d’une toute nouvelle instance AEM installée avec un stockage tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
@@ -47,7 +47,7 @@ Par défaut, AEM 6 utilise le stockage tar pour stocker les nœuds et les fichi
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Create a folder named `crx-quickstart\install` in the installation directory.
+1. Créez un dossier nommé `crx-quickstart\install` dans le répertoire d’installation.
 
 1. Créez un fichier nommé `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` dans le dossier nouvellement créé.
 
@@ -70,10 +70,10 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
    `java -jar cq-quickstart-6.jar -unpack`
 
 1. Assurez-vous que MongoDB est installé et qu’une instance de `mongod` est en cours d’exécution. Pour plus d’informations, reportez-vous à la section [Configuration de MongoDB](https://docs.mongodb.org/manual/installation/). 
-1. Create a folder named `crx-quickstart\install` in the installation directory.
+1. Créez un dossier nommé `crx-quickstart\install` dans le répertoire d’installation.
 1. Configurez le stock de nœud en créant un fichier de configuration avec le nom de la configuration que vous souhaitez utiliser dans le répertoire `crx-quickstart\install`.
 
-   The Document Node Store (which is the basis for AEM&#39;s MongoDB storage implementation) uses a file called `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   Le magasin de noeuds de Document (qui est la base de l’implémentation de l’enregistrement MongoDB AEM) utilise un fichier appelé `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Modifiez le fichier, puis définissez les options de configuration. Les options suivantes sont disponibles :
 
@@ -91,14 +91,14 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Where **`-r`** is the backend runmode. Dans cet exemple, il commence par la prise en charge MongoDB. 
+   Où **`-r`** est le mode d&#39;exécution principal. Dans cet exemple, il commence par la prise en charge MongoDB. 
 
-#### Désactiver les pages THP {#disabling-transparent-huge-pages}
+#### Désactiver les pages THP  {#disabling-transparent-huge-pages}
 
 Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transparent Huge Pages (THP). Tandis qu’AEM effectue des lectures et des écritures affinées, THP est optimisé pour des opérations plus volumineuses. Pour cette raison, il est recommandé de désactiver THP sur le stockage Tar et Mongo. Pour désactiver l’algorithme, procédez comme suit :
 
-1. Open the `/etc/grub.conf` file in the text editor of your choice.
-1. Add the following line to the **grub.conf** file:
+1. Ouvrez le fichier `/etc/grub.conf` dans l’éditeur de texte de votre choix.
+1. Ajoutez la ligne suivante au fichier **grub.conf** :
 
    ```
    transparent_hugepage=never
@@ -120,8 +120,8 @@ Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transpar
 >
 >De plus, vous pouvez également consulter les ressources suivantes :
 >
->* For more information regarding Transparent Huge Pages on Red Hat Linux, see this [article](https://access.redhat.com/solutions/46111).
->* For Linux tuning tips, see this [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
+>* Pour plus d&#39;informations sur les pages massives transparentes sur Red Hat Linux, consultez cet [article](https://access.redhat.com/solutions/46111).
+>* Pour obtenir des conseils sur le réglage Linux, reportez-vous à cet [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 
 >
 
