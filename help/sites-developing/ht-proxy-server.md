@@ -75,7 +75,7 @@ Ajoute un horodatage à chaque sortie du journal. L’horodatage est en secondes
 
 **`-i <numIndentions>`**(ajouter une mise en retrait)
 
-Chaque connexion active est mise en retrait pour une plus grande lisibilité. La valeur par défaut est de 16 niveaux. This feature was introduced with `proxy.jar version 1.16`.
+Chaque connexion active est mise en retrait pour une plus grande lisibilité. La valeur par défaut est de 16 niveaux. Cette fonctionnalité a été introduite avec `proxy.jar version 1.16`.
 
 ### Format du journal {#log-format}
 
@@ -115,7 +115,7 @@ avec un fichier image situé dans
 
 `/content/test.jpg`
 
-The content of `test.html` is:
+Le contenu de `test.html` est :
 
 ```xml
 <html>
@@ -129,11 +129,11 @@ The content of `test.html` is:
 </html>
 ```
 
-Assuming the AEM instance is running on `localhost:4502` we start the proxy like this:
+En supposant que l’instance AEM s’exécute sur `localhost:4502`, nous débuts le proxy comme suit :
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-The CQ/CRX instance can now be accessed though the proxy at `localhost:4444` and all communication via this port is logged to `test.log`.
+L’instance CQ/CRX est désormais accessible par le biais du proxy à `localhost:4444` et toutes les communications via ce port sont enregistrées dans `test.log`.
 
 La sortie du proxy montre l’interaction entre le navigateur et l’instance AEM.
 
@@ -148,7 +148,7 @@ Nous ouvrons ensuite un navigateur et nous accédons à la page de test :
 
 `http://localhost:4444/content/test.html`
 
-and we see the browser make a `GET` request for the page:
+et nous voyons le navigateur faire une demande `GET` pour la page :
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
