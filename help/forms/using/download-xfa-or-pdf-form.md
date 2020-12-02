@@ -17,7 +17,7 @@ ht-degree: 85%
 ---
 
 
-# Téléchargement d’un modèle de formulaire XFA ou PDF {#download-an-xfa-or-a-pdf-form-template}
+# Téléchargement d’un modèle de formulaire XFA ou PDF  {#download-an-xfa-or-a-pdf-form-template}
 
 L’opération de téléchargement, comme son nom l’indique, permet d’exporter des formulaires du référentiel vers le système local. Associée à l’opération de transfert, elle vous permet de faire migrer des formulaires d’un référentiel vers un autre.
 
@@ -29,11 +29,11 @@ Dans AEM Forms, l’opération de téléchargement est prise en charge pour les 
 
 AEM Forms prend en charge le téléchargement de ces types de ressource de manière individuelle ou dans un dossier contenant un ou plusieurs formulaires pris en charge.
 
-Aside from these assets, you can download the `Resource` type of asset if it is present in a folder. L’objectif de cette fonctionnalité est de vous permettre de télécharger la ressource à laquelle fait référence un formulaire XFA, ainsi que le formulaire proprement dit.
+Outre ces ressources, vous pouvez télécharger le type de fichier `Resource` s’il est présent dans un dossier. L’objectif de cette fonctionnalité est de vous permettre de télécharger la ressource à laquelle fait référence un formulaire XFA, ainsi que le formulaire proprement dit.
 
 ## Téléchargement d’un ou de plusieurs formulaires {#download-one-or-more-forms}
 
-1. Log in to the AEM Forms user interface at `https://<server>:<port>/aem/forms.html`.
+1. Connectez-vous à l’interface utilisateur AEM Forms à l’adresse `https://<server>:<port>/aem/forms.html`.
 
 1. Accédez à l’emplacement de la ressource que vous souhaitez télécharger.
 
@@ -49,7 +49,7 @@ Aside from these assets, you can download the `Resource` type of asset if it is 
 
    Si vous téléchargez un dossier, les ressources prises en charge dans le dossier sont téléchargées dans la hiérarchie existante.
 
-   The ZIP file is saved to the `Downloads` folder on your system.
+   Le fichier ZIP est enregistré dans le dossier `Downloads` de votre système.
 
 ## Remarques relatives à l’opération de transfert {#related-considerations-for-the-upload-operation}
 
