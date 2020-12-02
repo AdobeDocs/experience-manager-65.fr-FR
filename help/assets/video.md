@@ -17,7 +17,7 @@ ht-degree: 96%
 ---
 
 
-# Video in Dynamic Media {#video}
+# Vidéo dans Contenu multimédia dynamique {#video}
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
@@ -87,10 +87,10 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
       * [Schémas de métadonnées](metadata-schemas.md)
    * Examiner, approuver et annoter des vidéos et conserver le contrôle total des versions
 
-      * [Annotation de vidéos](managing-video-assets.md#annotate-video-assets) ou [annotation de fichiers](manage-assets.md#annotating)
+      * [Annotation de ](managing-video-assets.md#annotate-video-assets) vidéos ou  [annotation de fichiers](manage-assets.md#annotating)
 
       * [Création d’une version](manage-assets.md#asset-versioning)
-      * [Application de workflows à des ressources](assets-workflow.md) ou voir [Démarrage d’un processus sur une ressource](manage-assets.md#starting-a-workflow-on-an-asset)
+      * [Application de workflows à des ](assets-workflow.md) ressources ou voir  [Démarrage d’un processus sur une ressource](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Examiner les ressources des dossiers](bulk-approval.md)
       * [Projets](../sites-authoring/projects.md)
@@ -155,14 +155,14 @@ Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés
 * Lecture de la vidéo à l’aide des paramètres prédéfinis de la visionneuse Dynamic Media Video, tels que :
 
    * des visionneuses de vidéos uniques ;
-   * des visionneuses de supports variés combinant du contenu vidéo et des images.
+   * des visionneuses de médias mixtes combinant du contenu vidéo et des images.
 
 * Configurer des lecteurs vidéo pour répondre à vos besoins de stratégie de marque.
 * Intégrer la vidéo à votre site web, site mobile ou application mobile grâce à une simple URL ou à du code intégré.
 
 Voir l’exemple [Lecture de vidéo dynamique](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
 
-See also [Viewers for AEM Assets and Dynamic Media Classic](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) and [Viewers for AEM assets only](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
+Voir aussi [Visionneuses pour AEM Assets et Dynamic Media Classic](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) et [Visionneuses pour AEM ressources uniquement](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le Guide de référence des visionneuses Adobe Scene7.
 
 ## Bonne pratique : Utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ En ce qui concerne la lecture, la visionneuse, détecte automatiquement les fonc
 
 En combinant dans un lecteur unique la capacité de concevoir les composants de lecture à l’aide de code HTML5 et CSS, d’avoir accès à la lecture incorporée et d’utiliser les flux continus adaptatifs et progressifs selon la capacité du navigateur, vous pouvez étendre la portée de votre contenu multimédia aux utilisateurs d’appareils mobiles et de postes de travail et garantir ainsi une expérience vidéo rationalisée.
 
-Voir aussi [À propos des visionneuses HTML5](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe Scene7.
+Voir aussi [À propos des visionneuses HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe Scene7.
 
 ### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -323,7 +323,7 @@ Ce tableau décrit la façon dont les résultats de la formule se traduisent en 
 
 Par exemple, une vidéo qui a une largeur de 1440 pour une hauteur de 1080 a un format de 1440/1080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour le codage du fichier vidéo.
 
-### Débit binaire     {#bitrate}
+### Débit binaire   {#bitrate}
 
 Le débit correspond à la quantité de données encodées pour produire une seule seconde de lecture vidéo. Le débit de données est mesuré en kilobits par seconde (kbit/s).
 
@@ -377,12 +377,12 @@ Lorsque vous choisissez (ou créez) un paramètre prédéfini de codage vidéo p
 
 | Résolution | Hauteur (pixels) | Taille d’écran |
 |--- |--- |--- |
-| 240 p | 240 | Écran de très petite taille |
-| 300 p | 300 | Petit écran équipant généralement les appareils mobiles |
-| 360 p | 360 | Petit écran |
-| 480 p | 480 | Écran de taille moyenne |
-| 720 p | 720 | Grand écran |
-| 1 080 p | 1080 | Grand écran haute définition |
+| 240p | 240 | Écran de très petite taille |
+| 300p | 300 | Petit écran équipant généralement les appareils mobiles |
+| 360p | 360 | Petit écran |
+| 480p | 480 | Écran de taille moyenne |
+| 720p | 720 | Grand écran |
+| 1 080p | 1080 | Grand écran haute définition |
 
 ### Images par seconde {#fps-frames-per-second}
 
@@ -489,11 +489,11 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
 1. Sur la page **[!UICONTROL Ajouter des informations d’identification à votre projet]**, à l’étape 1, procédez comme suit :
 
-   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]** liste déroulante, sélectionnez **[!UICONTROL YouTube Data API v3.]**
+   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]** liste déroulante, sélectionnez  **[!UICONTROL YouTube Data API v3.]**
 
    * Depuis la liste déroulante **[!UICONTROL Depuis où appellerez-vous l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**
 
-   * Dans la liste déroulante **[!UICONTROL À quelles données aurez-vous accès ?]** liste déroulante, appuyez sur Données **[!UICONTROL utilisateur.]**
+   * Dans la liste déroulante **[!UICONTROL À quelles données aurez-vous accès ?]** liste déroulante, appuyez sur Données  **[!UICONTROL utilisateur.]**
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -579,7 +579,7 @@ Après avoir activé l’agent de réplication de publication YouTube, si vous s
 
    Vous allez maintenant installer YouTube dans AEM.
 
-### Configuration de YouTube dans AEM  {#setting-up-youtube-in-aem}
+### Configuration de YouTube dans AEM   {#setting-up-youtube-in-aem}
 
 À partir d’AEM 6.4, une nouvelle méthode d’interface utilisateur tactile a été ajoutée pour configurer la publication YouTube dans AEM. Selon l’instance installée d’AEM que vous utilisez, effectuez l’une des opérations suivantes :
 
@@ -638,7 +638,7 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte, car vous
 1. Veillez à vous connecter à votre instance Dynamic Media en tant qu’administrateur.
 
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud.]**
-1. Under the Third Party Services heading, under YouTube, tap **[!UICONTROL Configure now.]**
+1. Sous l’en-tête Services tiers, sous YouTube, appuyez sur **[!UICONTROL Configurer maintenant.]**
 1. Dans la boîte de dialogue Créer une configuration, saisissez un titre (obligatoire) et un nom (facultatif) dans les champs correspondants.
 1. Appuyez sur **[!UICONTROL Créer.]**
 1. Dans la boîte de dialogue Paramètres du compte YouTube, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
@@ -868,7 +868,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
-1. Pour les workflows en cours, consultez les instances de workflows disponibles sous **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances.]**
+1. Pour les workflows en cours, consultez les instances de workflow disponibles sous **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances.]**
 
    >[!NOTE]
    >
@@ -880,7 +880,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 
    ![chlimage_1-434](assets/chlimage_1-434.png)
 
-   Depuis la section Instances de workflows, vous pouvez également suspendre, arrêter ou renommer les workflows. Voir [Administration des workflows](/help/sites-administering/workflows-administering.md) pour plus d’informations.
+   Depuis la section instances de workflow, vous pouvez également suspendre, arrêter ou renommer les workflows. Voir [Administration des workflows](/help/sites-administering/workflows-administering.md) pour plus d’informations.
 
 1. Pour les tâches qui ont échoué, consultez la section Échecs des processus disponible sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Échecs.]** L’**[!UICONTROL échec du processus]** répertorie toutes les activités du processus ayant échoué.
 
@@ -914,7 +914,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 
 1. Vous pouvez recevoir des notifications par courrier électronique sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur. Voir [Configuration des notifications par courrier électronique](#configuring-e-mail-notifications).
 
-#### Configuration des notifications par courrier électronique {#configuring-e-mail-notifications}
+#### Configuration des notifications par courrier électronique  {#configuring-e-mail-notifications}
 
 >[!NOTE]
 >
@@ -922,7 +922,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 
 La façon dont vous configurez les notifications varie si vous souhaitez recevoir des notifications pour les tâches de codage ou pour les tâches de publication YouTube :
 
-* For encoding jobs, you can access the configuration page for all AEM workflow email notifications at **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service.]** Voir [Configuration de la notification par courrier électronique dans AEM](/help/sites-administering/notification.md). You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
+* Pour les tâches de codage, vous pouvez accéder à la page de configuration de toutes les notifications électroniques de flux de travail AEM à l’adresse **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]** et en recherchant **[!UICONTROL Service de notification par courrier électronique de flux de travail Day CQ.]** Voir  [Configuration de la notification par courrier électronique dans AEM](/help/sites-administering/notification.md). Vous pouvez cocher ou décocher les cases **[!UICONTROL Notifier sur Abort]** ou **[!UICONTROL Notifier sur Complete]** en conséquence.
 
 * Pour les tâches de publication YouTube, procédez comme suit :
 
@@ -933,7 +933,7 @@ La façon dont vous configurez les notifications varie si vous souhaitez recevoi
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
 
-1. Sur la barre d’outils intégrée, appuyez sur l’icône Configuration (en forme de clé). Click the **[!UICONTROL Arguments]** tab.
+1. Sur la barre d’outils intégrée, appuyez sur l’icône Configuration (en forme de clé). Cliquez sur l&#39;onglet **[!UICONTROL Arguments]**.
 
    ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
 
@@ -994,8 +994,8 @@ Pour afficher un rapport vidéo, procédez comme suit :
    * Près du coin supérieur droit, appuyez sur l’icône **Actualiser le rapport vidéo **icône.
 Vous ne devez utiliser l&#39;option Actualiser que si la date de fin du rapport est le jour en cours. Cela vous permet de voir le suivi vidéo qui s’est produit depuis la dernière exécution du rapport.
 
-   * Near the upper-right corner, tap the **Date Picker **icon.
-Specify the beginning and end date range for which you want video data, and then tap **[!UICONTROL Run Report.]**
+   * Près du coin supérieur droit, appuyez sur l’icône **Sélecteur de date **icône.
+Spécifiez la plage de dates de début et de fin pour laquelle vous souhaitez obtenir des données vidéo, puis appuyez sur **[!UICONTROL Exécuter le rapport.]**
 
    Le groupe Mesures principales identifie diverses mesures agrégées pour toutes les vidéos publiées sur votre site.
 
@@ -1024,7 +1024,7 @@ Pour afficher des rapports vidéo qui reposent sur une visionneuse de vidéos cr
 
    Le paramètre `config2` active le suivi dans les visionneuses HTML5. Il s’agit également d’un paramètre prédéfini spécifique à l’entreprise qui contient des informations de configuration pour les rapports vidéo et pour les configurations Adobe Analytics propres au client.
 
-   La valeur correcte du paramètre config2 se trouve à la fois dans le **code incorporé **et dans la fonction copy **URL **fonction. Dans l’URL de la commande copy **URL **, le paramètre à rechercher est `&config2=<value>` . La valeur est pratiquement toujours `companypreset`, mais dans certains cas elle peut également être `companypreset-1`, `companypreset-2`, etc.
+   La valeur correcte du paramètre config2 se trouve à la fois dans le **code incorporé **et dans la fonction copy **URL **fonction. Dans l’URL de la commande copy **URL **, le paramètre à rechercher est `&config2=<value>`. La valeur est pratiquement toujours `companypreset`, mais dans certains cas elle peut également être `companypreset-1`, `companypreset-2`, etc.
 
 1. Dans le code de la visionneuse de vidéos personnalisée, ajoutez le fichier AppMeasurementBridge.jsp à la page de la visionneuse en procédant comme suit :
 
@@ -1090,7 +1090,7 @@ Pour ajouter des sous-titres à une vidéo:
 
    Pour de meilleurs résultats, utilisez cet outil dans Internet Explorer 9 ou version ultérieure, dans Google Chrome ou Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. Voir [Obtention d’une URL pour une ressource](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) pour obtenir l’URL du fichier vidéo proprement dit, que vous pouvez coller ensuite dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo.]** Internet Explorer, Chrome ou Safari peuvent alors lire la vidéo en mode natif.
+   Dans l’outil, dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**, collez l’URL copiée de votre fichier vidéo, puis cliquez sur **[!UICONTROL Charger]**. Voir [Obtention d’une URL pour une ressource](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) pour obtenir l’URL du fichier vidéo proprement dit, que vous pouvez coller ensuite dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo.]** Internet Explorer, Chrome ou Safari peuvent alors lire la vidéo en mode natif.
 
    À présent, suivez les instructions à l’écran du site pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier .vtt.
 
@@ -1129,7 +1129,7 @@ Vous pouvez faciliter la lecture et le parcours de vos vidéos les plus longues 
 >
 >Le lecteur vidéo utilisé doit prendre en charge l’utilisation des marqueurs de chapitre. Les lecteurs vidéo Dynamic Media prennent en charge les marqueurs de chapitre, mais l’utilisation de lecteurs vidéo tiers ne le permet pas.
 
-Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour obtenir des instructions sur la création de votre propre visionneuse HTML5 avec une navigation par chapitre, dans le Guide du SDK de la visionneuse d’Adobe Scene7, reportez-vous à la section « Personnalisation du comportement à l’aide de modificateurs » sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Le SDK de la visionneuse d’Adobe Scene7 est disponible au téléchargement depuis [Adobe Developer Connection](https://help.adobe.com/fr_FR/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour obtenir des instructions sur la création de votre propre visionneuse HTML5 avec une navigation par chapitre, dans le Guide du SDK de la visionneuse d’Adobe Scene7, reportez-vous à la section « Personnalisation du comportement à l’aide de modificateurs » sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Le SDK de la visionneuse d’Adobe Scene7 est disponible au téléchargement depuis [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
   Vous créez une liste de chapitres pour votre vidéo un peu de la même façon que vous créez des sous-titres. Autrement dit, vous créez un fichier WebVTT. Notez toutefois que ce fichier doit être distinct de tout fichier de sous-titrage WebVTT que vous pourriez également être amené à utiliser ; vous ne pouvez pas combiner les sous-titres et les chapitres dans un fichier WebVTT.
 
@@ -1199,7 +1199,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
      </tbody>
    </table>
 
-## About video thumbnails in Dynamic Media - Scene7 mode {#about-video-thumbnails-in-dynamic-media-scene-mode}
+## A propos des miniatures vidéo dans Contenu multimédia dynamique - Mode Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
 Une miniature vidéo est une version en taille réduite d’une image vidéo ou d’une ressource d’image présentant la vidéo au client. La miniature doit inciter un client à cliquer sur la vidéo.
 
@@ -1213,7 +1213,7 @@ Vous ne pouvez personnaliser une miniature vidéo qu’après avoir appliqué un
 
 Voir aussi [À propos des miniatures vidéo dans le mode Hybride de Dynamic Media](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
 
-### Ajout d’une miniature vidéo personnalisée {#adding-a-custom-video-thumbnail}
+### Ajout d’une miniature vidéo personnalisée  {#adding-a-custom-video-thumbnail}
 
 Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode « Dynamicmedia_Scene7 ».
 
@@ -1259,7 +1259,7 @@ Si vous préférez, vous pouvez charger une miniature personnalisée pour repré
 
 Voir aussi [À propos des miniatures vidéo dans le mode Scene7 de Dynamic Media](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
-### Ajout d’une miniature vidéo {#adding-a-video-thumbnail}
+### Ajout d’une miniature vidéo  {#adding-a-video-thumbnail}
 
 Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode Hybride.
 
@@ -1282,7 +1282,7 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode Hy
 
    Voir [Configuration de l’intervalle par défaut auquel les miniatures de vidéo sont créées](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
-#### Configuration de l’intervalle par défaut auquel les miniatures de vidéo sont créées {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
+#### Configuration de l’intervalle par défaut auquel les miniatures de vidéo sont créées  {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
 Lorsque vous configurez et enregistrez le nouvel intervalle par défaut, votre modification s’applique automatiquement et uniquement aux vidéos que vous chargerez par la suite. Il n’applique pas automatiquement le nouveau paramètre par défaut aux vidéos que vous avez précédemment chargées. Pour les vidéos existantes, vous devez de nouveau générer les miniatures.
 
@@ -1292,7 +1292,7 @@ Voir [Ajout d’une miniature de vidéo](#adding-a-video-thumbnail).
 
 1. Dans AEM, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite.]**
 
-1. In the CRXDE Lite page, in the directory panel on the left, navigate t `o etc/dam/imageserver/configuration/jcr:content/settings.`
+1. Dans la page du CRXDE Lite, dans le panneau d’annuaire de gauche, accédez à `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
    Si le panneau des répertoires n’est pas visible, vous devrez peut-être appuyer sur l’icône >> à gauche de l’onglet Accueil.
 
