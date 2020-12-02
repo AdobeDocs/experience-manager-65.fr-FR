@@ -1,6 +1,6 @@
 ---
-title: Gestion d’identité
-seo-title: Gestion d’identité
+title: Identity Management
+seo-title: Identity Management
 description: Découvrez la gestion de l’identité dans AEM.
 seo-description: Découvrez la gestion de l’identité dans AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
@@ -19,7 +19,7 @@ ht-degree: 79%
 ---
 
 
-# Gestion d’identité{#identity-management}
+# Identity Management{#identity-management}
 
 Les visiteurs individuels de votre site web ne peuvent être identifiés que lorsque vous leur donnez la possibilité de se connecter. Vous pouvez leur permettre de se connecter pour différentes raisons :
 
@@ -28,13 +28,13 @@ Les visiteurs individuels de votre site web ne peuvent être identifiés que lor
 
    Vous devrez peut-être limiter l’accès à votre site Web (ou à certaines sections) à des visiteurs spécifiques.
 
-* [Personnalisation](/help/sites-administering/personalization.md) Permet aux visiteurs de configurer certains aspects de leur accès à votre site Web.
+* [](/help/sites-administering/personalization.md) PersonnalisationPermet aux visiteurs de configurer certains aspects de leur accès à votre site Web.
 
 La fonctionnalité de connexion (et de déconnexion) est mise à disposition par un [compte avec un **profil**](#profiles-and-user-accounts) contenant des informations supplémentaires sur le visiteur (utilisateur) enregistré. Les processus réels pour l’enregistrement et l’autorisation peuvent différer :
 
 * Auto-inscription à partir du site Web
 
-   A [Community Site](/help/communities/sites-console.md) may be configured to allow visitors to self-register or sign-in with their Facebook or Twitter accounts.
+   Un [site communautaire](/help/communities/sites-console.md) peut être configuré pour permettre aux visiteurs de s&#39;inscrire ou de se connecter avec leurs comptes Facebook ou Twitter.
 
 * Demande d&#39;inscription sur le site Web
 
@@ -55,11 +55,11 @@ La fonctionnalité supplémentaire peut être configurée ou développée :
 >
 >Les informations spécifiées dans le profil peuvent également être utilisées pour proposer à l’utilisateur du contenu ciblé par le biais de [segments](/help/sites-administering/campaign-segmentation.md) et de [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-## Formulaires d’enregistrement {#registration-forms}
+## Formulaires d’enregistrement  {#registration-forms}
 
 Un [formulaire](/help/sites-authoring/default-components.md#form-component) peut être utilisé pour collecter des informations d’enregistrement, puis générer le nouveau compte et le nouveau profil.
 
-For example, users can request a new profile, using the Geometrixx page
+Par exemple, les utilisateurs peuvent demander un nouveau profil à l’aide de la page de Geometrixx.
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![enregistré](assets/registerform.png)
@@ -86,7 +86,7 @@ Par exemple, les utilisateurs peuvent se connecter ou créer un compte à l’ai
 
 Tout comme il y a un mécanisme de connexion, un mécanisme de déconnexion est également nécessaire. Il est disponible sous la forme de l’option **Se connecter** dans Geometrixx.
 
-## Affichage et mise à jour d’un profil {#viewing-and-updating-a-profile}
+## Affichage et mise à jour d’un profil  {#viewing-and-updating-a-profile}
 
 En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré des informations sur son profil. Il doit pouvoir les afficher et/ou les mettre à jour ultérieurement. Cela peut se faire sous une forme similaire ; par exemple, en Geometrixx :
 
@@ -94,7 +94,7 @@ En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Pour voir les détails de votre profil, cliquez sur **Mon Profil** dans le coin supérieur droit de n&#39;importe quelle page ; par exemple avec le `admin` compte :
+Pour voir les détails de votre profil, cliquez sur **Mon Profil** dans le coin supérieur droit de n&#39;importe quelle page ; par exemple avec le compte `admin` :
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/sites-administering/client-context.md) (dans l’environnement de création et avec des autorisations suffisantes) :
@@ -117,7 +117,7 @@ Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/s
 
 1. Vous pouvez maintenant utiliser **Modifier le profil** ou **Modifier le mot de passe** pour mettre à jour les informations.
 
-## Ajout de champs à la définition d’un profil {#adding-fields-to-the-profile-definition}
+## Ajout de champs à la définition d’un profil  {#adding-fields-to-the-profile-definition}
 
 Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pour ajouter un champ Couleur préférée au profil Geometrixx :
 
@@ -145,7 +145,7 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
 ## États du profil {#profile-states}
 
-There are a number of use cases that require knowing whether a user (or rather their profile) is in a *specific state* or not.
+Il existe un certain nombre de cas d&#39;utilisation qui nécessitent de savoir si un utilisateur (ou plutôt son profil) est dans un état *spécifique* ou non.
 
 Cela implique de définir, dans le profil utilisateur, une propriété appropriée qui :
 
@@ -185,9 +185,9 @@ Un workflow est nécessaire à la mise en œuvre des actions associées aux éta
 
 ## Profils et comptes utilisateur {#profiles-and-user-accounts}
 
-Profiles are stored in the Content Repository as part of the[user account](/help/sites-administering/user-group-ac-admin.md).
+Les profils sont stockés dans le référentiel de contenu dans le cadre du [compte utilisateur](/help/sites-administering/user-group-ac-admin.md).
 
-The profile can be found under `/home/users/geometrixx`:
+Le profil se trouve sous `/home/users/geometrixx` :
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -204,7 +204,7 @@ Elle autorise :
 
 Si cet accès n’est pas approprié pour votre installation, vous pouvez modifier ces paramètres par défaut.
 
-This can be done using the **[Access Control](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
+Pour ce faire, utilisez l&#39;onglet **[Contrôle d&#39;accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)** :
 
 ![aclmanager](assets/aclmanager.png)
 
@@ -212,7 +212,7 @@ This can be done using the **[Access Control](/help/sites-administering/user-gro
 
 Une plage de composants Profil est également disponible pour définir les exigences de profil de votre site.
 
-### Champ du mot de passe coché {#checked-password-field}
+### Champ du mot de passe coché  {#checked-password-field}
 
 Ce composant fournit deux champs pour :
 
