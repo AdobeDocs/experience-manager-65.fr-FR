@@ -50,37 +50,37 @@ Le code de ce didacticiel repose sur le fait que le nom du dossier principal est
    >   * trait de soulignement devient &#39;_005f&#39;
 
 
-## Configuration du répertoire des applications (/applications) {#setup-the-application-directory-apps}
+## Configuration du répertoire d’applications (/apps) {#setup-the-application-directory-apps}
 
 Le répertoire /apps du référentiel contient le code permettant de mettre en oeuvre le comportement et le rendu des pages diffusées à partir du répertoire /content.
 
 Le répertoire /apps est protégé et n’est pas accessible au public, tout comme les répertoires /content et /etc/designs.
 
-1. Create `/apps/an-scf-sandbox` folder.
+1. Créez le dossier `/apps/an-scf-sandbox`.
 
-   Utilisation du **[!UICONTROL CRXDE Lite]**, dans le volet explorateur
+   Utilisation de **[!UICONTROL CRXDE Lite]** dans le volet d’exploration
 
-   1. Select the `/apps` folder.
-   1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL Créer]**... ou descendez dans le menu **[!UICONTROL Créer...]** .
-   1. Sélectionner **[!UICONTROL Créer un dossier...]**.
-   1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]** , saisissez `an-scf-sandbox`.
+   1. Sélectionnez le dossier `/apps`.
+   1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL Créer]**... ou appuyez sur **[!UICONTROL Créer...]**.
+   1. Sélectionnez **[!UICONTROL Créer un dossier...]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, saisissez `an-scf-sandbox`.
    1. Cliquez sur **[!UICONTROL OK]**.
 
-1. Créez un sous-dossier **[!UICONTROL de composants]** .
+1. Créez le sous-dossier **[!UICONTROL components]**.
 
-   1. Select the `/apps/an-scf-sandbox` folder.
-   1. Click **[!UICONTROL Create > Create Folder]**.
-   1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]** , saisissez **[!UICONTROL des composants]**.
+   1. Sélectionnez le dossier `/apps/an-scf-sandbox`.
+   1. Cliquez sur **[!UICONTROL Créer > Créer un dossier]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, saisissez **[!UICONTROL composants]**.
    1. Cliquez sur **[!UICONTROL OK]**.
 
-1. Créez un sous-dossier de **[!UICONTROL modèles]** .
+1. Créez un sous-dossier **[!UICONTROL templates]**.
 
-   1. Select the `/apps/an-scf-sandbox` folder.
-   1. Click **[!UICONTROL Create > Create Folder]**.
-   1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]** , saisissez **[!UICONTROL des modèles]**.
+   1. Sélectionnez le dossier `/apps/an-scf-sandbox`.
+   1. Cliquez sur **[!UICONTROL Créer > Créer un dossier]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, saisissez **[!UICONTROL templates]**.
    1. Cliquez sur **[!UICONTROL OK]**.
    1. Sélectionnez à nouveau `/apps/an-scf-sandbox`.
-   1. Select **[!UICONTROL Save All]**.
+   1. Sélectionnez **[!UICONTROL Enregistrer tout]**.
 
    Comme pour tout processus de modification, économisez souvent. Si vous rencontrez des problèmes lors de la saisie des données, c’est peut-être parce que votre connexion a expiré ou que vous devez enregistrer les modifications précédentes.
 
@@ -88,7 +88,7 @@ Le répertoire /apps est protégé et n’est pas accessible au public, tout com
 
    ![crxde-template](assets/crxde-template.png)
 
-## Configuration du répertoire de conception (/etc/designs) {#setup-the-design-directory-etc-designs}
+## Configurer le répertoire de conception (/etc/designs) {#setup-the-design-directory-etc-designs}
 
 Le répertoire /etc/designs contient les images, les scripts et les feuilles de style à télécharger avec le contenu de la page.
 
@@ -96,13 +96,13 @@ Le répertoire /etc/designs contient les images, les scripts et les feuilles de 
 
    Remarque : Si vous utilisez CRXDE Lite pour créer un noeud de type `cq:Page`, le Contrôle d&#39;accès et la réplication ne seront pas définis sur les paramètres par défaut pour une page.
 
-1. In the explorer pane, select the **[!UICONTROL Designs]** folder and then click **[!UICONTROL New]** > **[!UICONTROL New Page]**.
+1. Dans le volet explorateur, sélectionnez le dossier **[!UICONTROL Conceptions]**, puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**.
 
    Entrer :
 
    * Titre : **[!UICONTROL Un sandbox SCF]**
    * Nom : **[!UICONTROL an-scf-sandbox]**
-   * Sélectionner un modèle de page de **[!UICONTROL conception]**
+   * Sélectionner **[!UICONTROL Modèle de page de conception]**
 
    Cliquez sur **[!UICONTROL Créer]**.
 
@@ -120,4 +120,4 @@ Le répertoire /etc/designs contient les images, les scripts et les feuilles de 
 
 Le répertoire /content du référentiel est l’emplacement où réside le contenu du site Web. Les chemins sous /content comprennent les chemins d’accès de l’URL pour les requêtes du navigateur.
 
-*Une fois* le modèle [de](initial-app.md#createthepagetemplate) page créé dans le cadre de l’application initiale, le contenu de la page initiale peut être créé en fonction du modèle.... [**⇒**](initial-app.md)
+** Après la création du  [modèle de ](initial-app.md#createthepagetemplate) page dans le cadre de l’application initiale, le contenu de la page initiale peut être créé en fonction du modèle....  [**⇒**](initial-app.md)
