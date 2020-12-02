@@ -22,15 +22,15 @@ ht-degree: 52%
 
 La page Trust Store Management vous permet d’ajouter et de supprimer des informations d’identification d’utilisateur et de mot de passe utilisées par le service Forms lorsqu’il reçoit une demande avec une sécurité de niveau SOAP.
 
-## Ajout d’informations d’identification d’utilisateur et de mot de passe {#add-a-user-name-and-password-credential}
+## Ajout d’informations d’identification d’utilisateur et de mot de passe  {#add-a-user-name-and-password-credential}
 
-1. In administration console, click **[!UICONTROL Settings >Trust Store Management > User and Password Credentials]** and then click **[!UICONTROL Add]**.
-1. In the **[!UICONTROL Profile Name]** box, type a name for the credential.
-1. In the **[!UICONTROL User Name]** box, type a unique user name.
-1. In the **[!UICONTROL Password]** box, type a password for the user and then click **[!UICONTROL OK]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres >Trust Store Management > Informations d’identification d’utilisateur et de mot de passe]**, puis sur **[!UICONTROL Ajouter]**.
+1. Dans la zone **[!UICONTROL Nom du Profil]**, saisissez le nom des informations d’identification.
+1. Dans la zone **[!UICONTROL Nom d’utilisateur]**, saisissez un nom d’utilisateur unique.
+1. Dans la zone **[!UICONTROL Mot de passe]**, saisissez un mot de passe pour l’utilisateur, puis cliquez sur **[!UICONTROL OK]**.
 
 ## Suppression d’informations d’identification d’utilisateur et de mot de passe {#delete-a-user-name-and-password-credential}
 
-1. In administration console, click **[!UICONTROL Settings > Trust Store Management > User and Password Credentials]**.
-1. Select the check boxes for the credentials you want to delete, click **[!UICONTROL Delete]**, and then click **[!UICONTROL OK]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Informations d’identification d’utilisateur et de mot de passe]**.
+1. Cochez les cases correspondant aux informations d’identification à supprimer, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL OK]**.
 
