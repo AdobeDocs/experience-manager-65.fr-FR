@@ -22,7 +22,7 @@ ht-degree: 73%
 
 Les formulaires HTML5 sont rendu utilisant des fonctionnalités HTML5 et le style du formulaire rendu est fait utilisant CSS. L’apparence par défaut des formulaires HTML5 est similaire à son rendu PDF. Les développeurs peuvent utiliser des CSS personnalisés pour modifier l’apparence par défaut des formulaires HTML5.
 
-This article provides step-by-step information to change style of an HTML5 form and [Introduction to Styles](/help/forms/using/css-styles.md) article contains detailed information about various styling aspects of HTML5 forms. Assurez-vous de lire l’article Introduction aux styles avant d’exécuter les étapes mentionnées dans cet article.
+Cet article fournit des informations détaillées sur la modification du style d’un formulaire HTML5 et [Introduction aux styles](/help/forms/using/css-styles.md) l’article contient des informations détaillées sur divers aspects de style des formulaires HTML5. Assurez-vous de lire l’article Introduction aux styles avant d’exécuter les étapes mentionnées dans cet article.
 
 Les deux images qui suivent montrent la différence entre les styles par défaut et les styles personnalisés.
 
@@ -32,13 +32,13 @@ Les deux images qui suivent montrent la différence entre les styles par défaut
 
 1. **Sélectionner un profil auquel ajouter des styles personnalisés**
 
-   Access the CRX DE interface at the URL: **https://&lt;server>:&lt;port>/crx/de** and create a profile or choose an existing profile. To know how to create a profile, see [Creating a new Profile](/help/forms/using/custom-profile.md)
+   Accédez à l’interface CRX DE à l’adresse URL : **https://&lt;serveur>:&lt;port>/crx/de** et créez un profil ou choisissez un profil existant. Pour savoir comment créer un profil, voir [Création d’un nouveau Profil](/help/forms/using/custom-profile.md).
 
 1. **Création d’une feuille de style CSS pour modifier le style des formulaires HTML5**
 
    Naviguez jusqu’au dossier dans lequel vous avez créé le rendu du profil et créez un fichier de feuille de style CSS. Les étapes à suivre sont :
 
-   1. Right click the folder and select **create** > **create File** from the menu
+   1. Cliquez avec le bouton droit sur le dossier et sélectionnez **créer** > **créer un fichier** dans le menu.
 
    1. Dans la boîte de dialogue Création de fichier, entrez le nom de la feuille de style. Assurez -vous d’utiliser l’extension .css (par exemple stylesheet.css)
    1. Dans le volet de navigation, ouvrez le fichier CSS que vous avez créé.
