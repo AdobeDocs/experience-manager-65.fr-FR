@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Début rapide sur l’API Java du client Application Manager (SOAP) {#application-manager-client-javaapi-quick-start-soap}
+# Début rapide (SOAP) API Java client Application Manager {#application-manager-client-javaapi-quick-start-soap}
 
 Le Début rapide de l’API Java suivant (SOAP) est disponible pour le client Application Manager.
 
@@ -142,7 +142,7 @@ public class CreateApplicationVersion_SOAP {
 }
 ```
 
-## Début rapide (mode SOAP) : Exportation d’applications à l’aide de l’API Java {#quick-start-soap-mode-exporting-applications-using-the-java-api}
+## Début rapide (mode SOAP) : Exportation d&#39;applications à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-exporting-applications-using-the-java-api}
 
 L’exemple de code Java suivant exporte une application à l’aide de l’API JAVA.
 
@@ -245,7 +245,7 @@ public class ExportLCA_SOAP {
 }
 ```
 
-## Début rapide (mode SOAP) : Importation d’applications à l’aide de l’API Java {#quick-start-soap-mode-importing-applications-using-the-java-api}
+## Début rapide (mode SOAP) : Importation d&#39;applications à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-importing-applications-using-the-java-api}
 
 L’exemple de code Java suivant importe une application à l’aide de l’API JAVA.
 
@@ -443,7 +443,7 @@ public class GetApplication_SOAP {
 
 L&#39;exemple de code Java suivant récupère les applications à l&#39;aide de l&#39;API Java.
 
-**remarque**: L’obtention de l’API d’application AEM Forms, getApplications(), renvoie uniquement les applications déployées.
+**remarque** : L’obtention de l’API d’application AEM Forms, getApplications(), renvoie uniquement les applications déployées.
 
 ```java
 /*
@@ -538,7 +538,7 @@ public class GetApplications_SOAP {
 }
 ```
 
-## Début rapide (mode SOAP) : Obtention de l’état des applications à l’aide de l’API Java {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
+## Début rapide (mode SOAP) : Obtention de l&#39;état des applications à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
 ```java
 /*
