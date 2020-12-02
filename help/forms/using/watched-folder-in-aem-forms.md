@@ -22,7 +22,7 @@ ht-degree: 95%
 
 Un administrateur peut configurer un dossier réseau, appelé dossier de contrôle (en anglais Watched Folder), de sorte que lorsqu’un utilisateur y place un fichier (par exemple un fichier PDF), un flux de travail, un service ou une opération d’exécution de script démarre pour le traitement du fichier ajouté. Après que le service a effectué l’opération spécifiée, il enregistre le fichier obtenu dans un dossier de sortie spécifié. Pour plus d’informations sur le flux, le service et le script, voir [Diverses méthodes pour traiter les fichiers](#variousmethodsforprocessingfiles).
 
-## Création d’un dossier de contrôle {#create-a-watched-folder}
+## Création d’un dossier de contrôle  {#create-a-watched-folder}
 
 Vous pouvez utiliser l’une des méthodes suivantes pour créer un dossier de contrôle sur le système de fichiers :
 
@@ -36,7 +36,7 @@ Le
 >
 >Dans un environnement de grappes de serveur, le dossier à utiliser comme dossier de contrôle doit être accessible, modifiable et partagé sur le système de fichiers ou le réseau. Dans ce cas, chaque instance du serveur d’applications de la grappe doit avoir accès au même dossier partagé. Sous Windows, créez un lecteur réseau mappé sur tous les serveurs et spécifiez le chemin d’accès du lecteur réseau mappé dans la propriété folderPath (chemin fichier).
 
-## Créez un nœud de configuration du dossier de contrôle {#create-watched-folder-configuration-node}
+## Créez un nœud de configuration du dossier de contrôle  {#create-watched-folder-configuration-node}
 
 Pour configurer un dossier de contrôle, créez un nœud de configuration du dossier de contrôle. Effectuez les étapes suivantes pour créer le noeud de configuration :
 
@@ -57,7 +57,7 @@ Pour configurer un dossier de contrôle, créez un nœud de configuration du dos
 
    Pour obtenir la liste complète des prises en charge, voir [Propriétés du dossier de contrôle](#watchedfolderproperties).
 
-1. Cliquez sur **Enregistrer tout**. Après la création du nœud et l’enregistrement des propriétés. Les `input`dossiers, `result`, `failure``preserve`et `stage`dossiers sont créés à l’emplacement spécifié dans la propriété `folderPath` .
+1. Cliquez sur **Enregistrer tout**. Après la création du nœud et l’enregistrement des propriétés. Les dossiers `input`, `result`, `failure`, `preserve` et `stage`sont créés à l&#39;emplacement spécifié dans la propriété `folderPath`.
 
    La tâche de numérisation démarre l’analyse du dossier de contrôle dans un laps de temps défini.
 
@@ -79,7 +79,7 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
    * publish
 
-   * author, publish
+   * auteur, publish
 
    * publier, auteur
 
@@ -99,13 +99,13 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
 * **pollInterval (Long)** : le laps de temps en secondes pour l’analyse du dossier de contrôle en sortie. A moins que le paramètre Ralentissement ne soit activé, l’attribut Intervalle de répétition doit être supérieur à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur par défaut est 5. Pour plus d’informations, voir la description du paramètre Taille du lot. La valeur de pollinterval doit être supérieure ou égale à un.
 * **excludeFilePattern (chaîne)** : une liste dont les éléments sont séparés par des points-virgules (;) qu’un dossier de contrôle utilise pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Ceci empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. La valeur par défaut est « null ».
-You can use [file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) to exclude:
+Vous pouvez utiliser [modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) pour exclure :
 
    * Fichiers possédant des extensions particulières, par exemple *.dat, *.xml, .pdf, *.*
    * Fichiers portant des noms spécifiques ; par exemple, data* exclurait les fichiers et les dossiers nommés data1, data2, etc.
    * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-      * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+      * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
       * *.[dD][Aa]&#39;port&#39;
       * *.[Xx][Mm][Ll]
 
@@ -118,7 +118,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
 
       * *.[dD][Aa]&#39;port&#39;
       * *.[Xx][Mm][Ll]
@@ -154,7 +154,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 
 * **failureFolderName (chaîne)** : le dossier dans lequel les fichiers d’échec sont enregistrés. Cet emplacement est toujours lié au dossier de contrôle. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. Les fichiers en lecture seule ne sont pas traités ; ils sont enregistrés dans le dossier des échecs. La valeur par défaut est failure/%Y/%M/%D/.
 * **preserveFolderName (chaîne) :** l’emplacement où les fichiers sont stockés après un traitement réussi. Ce chemin d’accès de répertoire peut être absolu, relatif ou null. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
-* **batchSize (Long)** : le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.   
+* **batchSize (Long)** : le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.
 
    Les paramètres Intervalle de répétition et Taille du lot permettent de déterminer le nombre de fichiers sélectionnés par Watched Folder pour chaque analyse. Watched Folder utilise un pool de threads Quartz pour analyser le dossier input. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse défini est court, les threads analysent fréquemment le dossier input. Si des fichiers sont déposés régulièrement dans le dossier de contrôle, il est préférable que l’intervalle d’analyse soit court. Si au contraire, des fichiers y sont déposés peu fréquemment, utilisez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads. 
 
@@ -174,9 +174,9 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 >Les flux de travail sont par essence asynchrones. Même si vous définissez la valeur sur False, les flux sont déclenchés en mode asynchrone.
 
 * **enabled (booléen)** : désactive et active la numérisation d’un dossier de contrôle. Définissez enabled sur True pour commencer à analyser le dossier de contrôle. La valeur par défaut est true.
-* **payloadMapperFilter :** lorsqu’un dossier est configuré comme dossier de contrôle, une structure de dossiers est créée dans le dossier de contrôle. La structure comporte des dossiers pour fournir des entrées, recevoir des sorties (résultats), sauvegarder les données en cas de défaillance, préserver les données pour les processus de longue durée et sauvegarder les données des différentes étapes. La structure de dossiers d’un dossier de contrôle peut servir de charge utile des processus basés sur l’utilisation de Forms. Un mappeur de charge utile vous permet de définir la structure d’une charge utile qui utilise un dossier de contrôle pour l’entrée, la sortie et le traitement. For example, if you use the default mapper, it maps content of Watched Folder with [payload]\input and [payload]\output folder. Deux implémentations de mappeur de charge prêtes à l’emploi sont disponibles. Si vous ne disposez pas d’[une implémentation personnalisée](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilisez l’une des implémentations prêtes à l’emploi :
+* **payloadMapperFilter :** lorsqu’un dossier est configuré comme dossier de contrôle, une structure de dossiers est créée dans le dossier de contrôle. La structure comporte des dossiers pour fournir des entrées, recevoir des sorties (résultats), sauvegarder les données en cas de défaillance, préserver les données pour les processus de longue durée et sauvegarder les données des différentes étapes. La structure de dossiers d’un dossier de contrôle peut servir de charge utile des processus basés sur l’utilisation de Forms. Un mappeur de charge utile vous permet de définir la structure d’une charge utile qui utilise un dossier de contrôle pour l’entrée, la sortie et le traitement. Par exemple, si vous utilisez le mappeur par défaut, il mappe le contenu de Watched Folder avec le dossier [charge utile]\input et [charge utile]\output. Deux implémentations de mappeur de charge prêtes à l’emploi sont disponibles. Si vous ne disposez pas d’[une implémentation personnalisée](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilisez l’une des implémentations prêtes à l’emploi :
 
-   * **Mappeur par défaut :** utilisez le mappeur de charge par défaut pour conserver les contenus d’entrée et de sortie des dossiers de contrôle dans des dossiers d’entrée et de sortie distincts dans la charge utile. Also, in payload path of a workflow, use [payload]/input/ and [payload]/output paths to retrive and save content.
+   * **Mappeur par défaut :** utilisez le mappeur de charge par défaut pour conserver les contenus d’entrée et de sortie des dossiers de contrôle dans des dossiers d’entrée et de sortie distincts dans la charge utile. En outre, dans le chemin de charge utile d’un flux de travail, utilisez les chemins de [charge]/input/ et [charge]/output pour récupérer et enregistrer du contenu.
 
    * **Mappeur de charge basé sur des fichiers simples :** utilisez le mappeur de charge basé sur des fichiers simples pour conserver les contenus d’entrée et de sortie directement dans le dossier de charge utile. Tout comme pour le mappeur par défaut, aucune hiérarchie supplémentaire n’est créée.
 
@@ -197,7 +197,7 @@ Ces propriétés sont transmises sous forme de carte inaltérable de type Map&lt
 
 Un nœud de configuration du dossier de contrôle possédant des propriétés obligatoires, certaines propriétés facultatives, certains paramètres de configuration.
 
-#### Variables mutables pour les flux de travaux {#mutable-variables-for-workflows}
+#### Variables mutables pour les flux de travaux  {#mutable-variables-for-workflows}
 
 Vous pouvez créer des variables mutables pour des méthodes basées sur un flux de traitement des fichiers. Ces variables servent de conteneur aux données de flux entre les étapes d’un flux de travaux. Pour créer ces variables :
 
@@ -221,11 +221,11 @@ Vous pouvez créer des variables mutables pour des méthodes basées sur un flux
 
 Vous pouvez lancer un flux de travail, un service, ou un script pour traiter les emplacements de documents dans un dossier de contrôle.
 
-### Utilisation d’un service pour traiter les fichiers d’un dossier de contrôle   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Utilisation d’un service pour traiter les fichiers d’un dossier de contrôle    {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Un service est une implémentation personnaliséede l’interface `com.adobe.aemfd.watchfolder.service.api.ContentProcessor`. Il est enregistré avec OSGi tout comme certaines propriétés personnalisées. Les propriétés personnalisées de l’implémentation le rendent unique et contribuent à l’identification de l’implémentation.
 
-#### Implémentation personnalisée de l’interface ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
+#### Implémentation personnalisée de l’interface ContentProcessor  {#custom-implementation-of-the-contentprocessor-interface}
 
 L’implémentation personnalisée accepte un contexte de traitement (un objet de type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lit les documents d’entrée et les paramètres de configuration du contexte, traite les entrées et ajoute de nouveau la sortie de contexte. Le ProcessorContext dispose des API suivants :
 
@@ -264,7 +264,7 @@ public class TestContentProcessor1 implements ContentProcessor {
 }
 ```
 
-### Utilisation des scripts pour traiter les fichiers d’un dossier de contrôle {#using-scripts-to-process-files-of-a-watched-folder}
+### Utilisation des scripts pour traiter les fichiers d’un dossier de contrôle  {#using-scripts-to-process-files-of-a-watched-folder}
 
 Les scripts constituent le code personnalisé conforme ECMAScript écrit dans les documents de processus placés dans le dossier de contrôle. Un script est représenté sous forme d’un nœud JCR. Outre les variables ECMAScript standard (journal, chaîne et plus), le script dispose d’une variable processorContext. La variable est de type ProcessorContext. Le ProcessorContext dispose des API suivants :
 
@@ -294,14 +294,14 @@ Par défaut, un dossier conteneur (/etc/fd/watchfolder/scripts) est fourni, dans
 
 Si vous prévoyez de placer vos scripts à un emplacement personnalisé, il est probable que l’utilisateur du service par défaut ne dispose pas d’autorisations de lecture sur l’emplacement personnalisé. Pour ce type de scénario, procédez aux étapes suivantes pour fournir les autorisations nécessaires pour l’emplacement personnalisé :
 
-1. Create a system user programmatically or via the console https://&#39;[server]:[port]&#39;/crx/explorer. Vous pouvez également utiliser un utilisateur système existant. Ici, il est important de travailler avec des utilisateurs système plutôt qu’avec des utilisateurs disposant de licences ordinaires.
+1. Créez un utilisateur système par programmation ou via la console https://&#39;[server]:[port]&#39;/crx/explorer. Vous pouvez également utiliser un utilisateur système existant. Ici, il est important de travailler avec des utilisateurs système plutôt qu’avec des utilisateurs disposant de licences ordinaires.
 1. Fournissez des autorisations de lecture à l’utilisateur système existant ou qui vient d’être créé pour l’emplacement personnalisé dans lequel les scripts sont stockés. Vous pouvez disposer de plusieurs emplacements personnalisés. Fournissez au moins des autorisations de lecture pour tous les emplacements personnalisés.
 1. Dans la console de configuration Felix (/system/console/configMgr), recherchez le mappage de l’utilisateur de service pour les dossiers Watch Folder. Ce mappage ressemble à ce qui suit : ’Mapping: adobe-aemds-core-watch-folder=...’.
 1. Cliquez sur le mappage. Pour l’entrée &quot;adobe-aemds-core-watch-folder:scripts=fd-service&quot;, remplacez fd-service par l’ID de l’utilisateur système personnalisé. Cliquez sur Enregistrer.
 
 Vous pouvez désormais utiliser l’emplacement personnalisé et configuré pour enregistrer les scripts.
 
-### Utilisation d’un flux de travail pour traiter les fichiers d’un dossier de contrôle {#using-a-workflow-to-process-files-of-a-watched-folder}
+### Utilisation d’un flux de travail pour traiter les fichiers d’un dossier de contrôle  {#using-a-workflow-to-process-files-of-a-watched-folder}
 
 Les flux de travaux permettent d’automatiser les activités d’Experience Manager. Les flux de travaux se composent d’une série d’étapes effectuées dans un ordre spécifique. Chaque étape effectue une action distincte telle que l’activation d’une page ou l’envoi d’un message électronique. Les flux de travaux peuvent interagir avec des actifs dans le référentiel, les comptes d’utilisateur, et dans les services d’Experience Manager. Par conséquent, les flux de travaux peuvent coordonner de façon complexe.
 
@@ -394,13 +394,13 @@ wfSvc.execute(impl, graniteWorkItem, graniteWorkflowSession, metaData);
 log.info("Exiting workflow script!")
 ```
 
-### Créer un filtre de mappeur de charge pour mapper la structure d’un dossier de contrôle sur la charge utile d’un processus {#create-payload-mapper-filter-to-map-structure-of-a-watched-folder-to-the-payload-of-a-workflow}
+### Créer un filtre de mappeur de charge pour mapper la structure d’un dossier de contrôle sur la charge utile d’un processus  {#create-payload-mapper-filter-to-map-structure-of-a-watched-folder-to-the-payload-of-a-workflow}
 
 Lorsque vous créez un dossier de contrôle, celui-ci crée une structure de dossiers dans le dossier contrôlé. La structure de dossiers est constituée de dossiers d’étapes, de résultats, de conservations, d’entrées et d’échecs. La structure de dossiers peut servir de charge d’entrée au processus et accepte la sortie d’un processus. Elle peut également répertorier les points d’échec, le cas échéant.
 
 Si la structure d’une charge utile est différente de celle du dossier de contrôle, vous pouvez entrer des scripts personnalisés pour mapper la structure du dossier de contrôle vers la charge utile. Un tel script est appelé le filtre mappeur de charge. AEM Forms fournit un filtre de mappeur de charge prêt à l’emploi permettant d’associer la structure du dossier de contrôle à une charge.
 
-#### Création d’un filtre personnalisé de mappeur de charge {#creating-a-custom-payload-mapper-filter}
+#### Création d’un filtre personnalisé de mappeur de charge  {#creating-a-custom-payload-mapper-filter}
 
 1. Téléchargez le [SDK client d’Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
 1. Configurez le SDK client dans le chemin de génération du projet basé sur Maven. Pour commencer, vous pouvez télécharger et ouvrir le projet basé sur Maven suivant dans l’IDE de votre choix.
@@ -498,7 +498,7 @@ Si le travail contient plusieurs fichiers d’entrée, l’utilisateur doit cré
 >
 >Vérifiez que le serveur d’applications a révoqué l’accès aux fichiers dans le dossier de contrôle. Si AEM Forms ne peut pas supprimer les fichiers du dossier de contrôle après leur analyse, le processus associé s’exécute indéfiniment.
 
-## Informations complémentaires sur les dossiers de contrôle {#additional-information-about-the-watched-folders}
+## Informations complémentaires sur les dossiers de contrôle  {#additional-information-about-the-watched-folders}
 
 ### A propos du ralentissement {#about-throttling}
 
@@ -508,7 +508,7 @@ Lorsque le ralentissement est activé au niveau du point de fin d’un dossier d
 >
 >aucune mise à l’échelle du ralentissement n’est effectuée dans une grappe. Lorsque l’option de ralentissement est activée, la grappe dans son ensemble ne traite pas plus de tâches que le nombre indiqué dans l’attribut Taille du lot. Cette limite est fixée par la grappe et n’est pas spécifique à chacun de ses nœuds. Par exemple, si l’attribut Taille du lot a pour valeur 2, la limite du ralentissement peut être atteinte avec le traitement de deux tâches sur un seul nœud et aucun autre nœud n’interrogera alors le répertoire des entrées tant que l’une des tâches n’est pas terminée.
 
-#### Fonctionnement du ralentissement {#how-throttling-works}
+#### Fonctionnement du ralentissement  {#how-throttling-works}
 
 Watched Folder analyse le dossier d’entrée à chaque intervalle de répétition, sélectionne le nombre de fichiers indiqués dans la Taille du lot, puis appelle le service cible pour chacun de ces fichiers. Par exemple, si l’attribut Taille du lot à pour valeur 4, Watched Folder sélectionnera quatre fichiers, créera quatre demandes d’appel et appellera le service cible. Avant que ces demandes ne soient terminées, si le service Watched Folder est appelé, il démarrera à nouveau quatre tâches, indépendamment du fait que les quatre tâches précédentes soient terminées ou non.
 
@@ -518,7 +518,7 @@ L’option de ralentissement empêche Watched Folder d’appeler de nouvelles t
 * Si le serveur AEM Forms tombe en panne avant que le dossier de contrôle ne puisse appeler les tâches, l’administrateur peut sortir les fichiers du dossier stage. Pour plus d’informations, voir [Points d’échec et récupération](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 * Si le serveur AEM Forms fonctionne mais que le dossier de contrôle ne fonctionne pas lorsque le service Job Manager renouvelle son appel, ce qui arrive lorsque les services ne sont pas exécutés dans la séquence définie, l’administrateur peut sortir les fichiers du dossier stage. Pour plus d’informations, voir [Points d’échec et récupération](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
-### Points d’échec et récupération {#failure-points-and-recoveryfailure-points-and-recovery}
+### Points d’échec et récupération  {#failure-points-and-recoveryfailure-points-and-recovery}
 
 A chaque événement d’interrogation, Watched Folder verrouille le dossier input, déplace dans le dossier stage les fichiers correspondant au modèle de fichiers inclus, puis déverrouille le dossier input. Le verrouillage est nécessaire de sorte que deux threads ne sélectionnent pas le même jeu de fichiers et ne les traitent pas deux fois. La probabilité d’un traitement en double augmente lorsque l’intervalle de répétition est faible et que la taille du lot est importante. Une fois les fichiers déplacés dans le dossier stage, le dossier input est déverrouillé de sorte que d’autres threads puissent analyser le dossier. Cette étape offre un débit élevé du fait que d’autres threads peuvent effectuer une analyse pendant que l’un d’entre eux traite les fichiers.
 
@@ -531,7 +531,7 @@ Une fois les fichiers déplacés dans le dossier stage, les demandes d’appel s
    * **Synchrone** : si Watched Folder est configuré pour appeler le service de manière synchrone, tous les fichiers du dossier stage restent dans ce dossier et ne subissent aucun traitement.
    * **Asynchrone** : dans ce cas, Watched Folder s’appuie sur le service Job Manager. Si le service Job Manager rappelle Watched Folder, les fichiers du dossier stage sont déplacés vers le dossier preserve ou le dossier failure, en fonction des résultats de l’appel. Si le service Job Manager ne rappelle pas Watched Folder, les fichiers restent dans le dossier stage et ne subissent aucun traitement. Cette situation survient lorsque Watched Folder n’est pas exécuté alors que Job Manager rappelle.
 
-#### Récupération des fichiers source non traités dans le dossier Traités {#recover-unprocessed-source-files-in-the-stage-folder}
+#### Récupération des fichiers source non traités dans le dossier Traités  {#recover-unprocessed-source-files-in-the-stage-folder}
 
 Lorsque Watched Folder ne peut pas traiter les fichiers source dans le dossier stage, vous avez la possibilité de récupérer les fichiers n’ayant fait l’objet d’aucun traitement.
 
@@ -568,7 +568,7 @@ Les administrateurs peuvent indiquer le type du fichier servant à appeler un se
 * Fichiers portant des noms spécifiques, par exemple data.*
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * *.[dD][Aa]&#39;port&#39;
    * *.[Xx][Mm][Ll]
 
@@ -603,11 +603,11 @@ Effectuez les étapes suivantes pour configurer un dossier de contrôle avec PDF
 1. [Créer un flux de travaux](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
 1. [Configuration du dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
-### Créer un ECMAScript {#create-an-ecmascript}
+### Créer un ECMAScript  {#create-an-ecmascript}
 
 L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour convertir les fichiers Microsoft Word (.docx) au format PDF. Effectuez les étapes suivantes pour créer le script :
 
-1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. The URL is https://&#39;[server]:[port]&#39;/crx/de.
+1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. L’URL est https://&#39;[server]:[port]&#39;/crx/de.
 
 1. Accédez à /etc/workflow/scripts et créez un dossier nommé PDFG.
 
@@ -641,7 +641,7 @@ L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour conv
 ### Créer un flux de travaux {#create-a-workflow}
 
 1. Ouvrez le flux de travaux AEM UI dans une fenêtre du navigateur.
-https://[servername]:&#39;port&#39;/workflow
+https://[nom_serveur]:&#39;port&#39;/workflow
 
 1. Dans la vue Modèles, cliquez sur **Nouveau**. Dans la boîte de dialogue Nouveau flux de travaux, indiquez le **Titre**, puis cliquez sur **OK**.
 
@@ -655,13 +655,13 @@ https://[servername]:&#39;port&#39;/workflow
 
 1. Cliquez sur l’étape du processus et sélectionnez **Modifier**. La fenêtre Propriétés d’étape s’affiche.
 
-1. Dans l’onglet Traitement, sélectionnez le script ECMAScript. For example, the pdfg-openOffice-sample.ecma script created in [Create an ECMAScript](#p-create-an-ecmascript-p). Activez l’option **Avance du gestionnaire** et cliquez sur **OK**.
+1. Dans l’onglet Traitement, sélectionnez le script ECMAScript. Par exemple, le script pdfg-openOffice-sample.ecma créé dans [Création d’un ECMAScript](#p-create-an-ecmascript-p). Activez l’option **Avance du gestionnaire** et cliquez sur **OK**.
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
 ### Configuration du dossier de contrôle {#configure-the-watched-folder}
 
-1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. https://&#39;[server]:[port]&#39;/crx/de/
+1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. https://&#39;[serveur]:[port]&#39;/crx/de/
 
 1. Accédez au dossier /etc/fd/watchfolder/config/ et créez un noeud de type nt:unstructured.
 
