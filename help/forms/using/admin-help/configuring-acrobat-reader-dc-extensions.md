@@ -26,14 +26,14 @@ Si les utilisateurs de votre installation AEM Forms utilisent la fonctionnalité
 
 La capture des données nécessite d’affecter un rôle utilisateur pour l’accès à SampleReaderExtensionsCredential. Vous pouvez affecter le rôle Trust Administrator standard mais n’oubliez pas que ce rôle confère à des utilisateurs type, non administrateurs, de puissants privilèges d’administrateur capables de contrôler les paramètres d’approbation PKI et de gérer les informations d’identification PKI. Cela peut compromettre la sécurité de votre installation AEM Forms dans un environnement de production. Il est recommandé que l’administrateur système AEM Forms crée un nouveau rôle qui accorde un accès en lecture seule uniquement à Trust Store et affecte ce nouveau rôle à des utilisateurs non administrateurs utilisant la capture des données.
 
-## Création d’un rôle destiné aux utilisateurs qui capturent des données {#create-a-role-for-data-capture-users}
+## Création d’un rôle destiné aux utilisateurs qui capturent des données  {#create-a-role-for-data-capture-users}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des rôles, puis sur Nouveau rôle.
 1. Saisissez le nom du rôle (par exemple Utilisateur capturant des données), ainsi qu’une description dans les champs appropriés, puis cliquez sur Suivant.
 1. Dans l’écran Droits des rôles, cliquez sur Rechercher des droits, puis sélectionnez Lecture des informations d’identification dans la liste des autorisations disponibles.
 1. Cliquez sur OK, puis sur Terminer.
 
-## Affectation du rôle de capture de données {#assign-the-data-capture-role}
+## Affectation du rôle de capture de données  {#assign-the-data-capture-role}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des rôles, puis sur Rechercher.
 1. Cliquez sur le rôle d’utilisateur de la capture des données que vous venez de créer.
