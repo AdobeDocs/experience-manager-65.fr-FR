@@ -29,7 +29,7 @@ L’audio spatial n’est actuellement pas pris en charge ; si l’audio est mi
 
 Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
 
-## Vidéo 360 en action   {#video-in-action}
+## Vidéo 360 en action    {#video-in-action}
 
 Appuyez sur [Station spatiale 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) pour ouvrir une fenêtre de navigateur et visionner une vidéo à 360 degrés. Pendant la lecture vidéo, faites glisser le pointeur de la souris vers un nouvel emplacement pour modifier l’angle de vue.
 
@@ -73,7 +73,7 @@ Les ressources vidéo 360 qui sont chargées dans AEM sont considérées comme 
 
 1. [Téléchargez votre vidéo dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-## Remplacement du rapport d’aspect par défaut des vidéos 360  {#overriding-the-default-aspect-ratio-of-videos}
+## Remplacement du rapport d’aspect par défaut des vidéos 360   {#overriding-the-default-aspect-ratio-of-videos}
 
 Pour qu’une ressource téléchargée soit qualifiée de vidéo 360 à utiliser avec la visionneuse de vidéos 360, la ressource doit avoir un rapport d’aspect de 2.
 
