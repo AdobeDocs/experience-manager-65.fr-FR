@@ -51,7 +51,7 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 
 * **Via la console Felix Inventory :**
 
-1. Go to the AEM Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
+1. Accédez à AEM Web Console en accédant à *https://serveraddress:serverport/system/console/configMgr*.
 1. Sélectionnez **État – Outil de détection des motifs**, comme illustré ci-dessous :
 
    ![capture d&#39;écran-2018-2-5détecteur à motifs](assets/screenshot-2018-2-5pattern-detector.png)
@@ -61,7 +61,7 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 
 Vous trouverez, ci-dessous, une description détaillée de ces deux méthodes :
 
-## Interface réactive {#reactive-interface}
+## Interface réactive  {#reactive-interface}
 
 L’interface réactive permet de traiter le rapport d’infractions dès que l’on suspecte le moindre problème.
 
@@ -70,7 +70,7 @@ Le résultat est actuellement disponible sous 2 URL :
 1. Interface en mode texte brut
 1. Interface JSON
 
-## Gestion de l’interface en mode texte brut {#handling-the-plain-text-interface}
+## Gestion de l’interface en mode texte brut  {#handling-the-plain-text-interface}
 
 Les informations contenues dans la sortie se présentent sous la forme d’une série d’entrées d’événement. Il existe deux canaux : un pour la publication des infractions et un autre pour la publication de la progression.
 
@@ -100,7 +100,7 @@ Ce qui donne le résultat suivant :
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Gestion de l’interface JSON {#handling-the-json-interface}
+## Gestion de l’interface JSON  {#handling-the-json-interface}
 
 De même, JSON pourra être traité à l’aide de l’[outil jq](https://stedolan.github.io/jq/) dès qu’il sera publié.
 
