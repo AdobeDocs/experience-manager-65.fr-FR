@@ -146,7 +146,7 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 >* [Création et organisation des pages](/help/sites-authoring/managing-pages.md)
 >* [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
 >* [Configurez le courrier électronique dans le Experience Manager](/help/sites-administering/notification.md).
->* [Importer des métadonnées](/help/assets/metadata.md#import-metadata)de fichier.
->* [Exportez les métadonnées](/help/assets/metadata.md#export-metadata)de fichier.
+>* [Importer des métadonnées](/help/assets/metadata.md#import-metadata) de fichier.
+>* [Exportez les métadonnées](/help/assets/metadata.md#export-metadata) de fichier.
 >* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
 
