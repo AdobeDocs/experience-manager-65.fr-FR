@@ -1,6 +1,6 @@
 ---
 title: Publication de ressources Dynamic Media
-description: Découvrez comment publier des ressources Dynamic Media.
+description: Découvrez comment publier des ressources Dynamic Media
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 81%
+ht-degree: 88%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 81%
 
 Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide.]** Une fois vos fichiers Contenu multimédia dynamique publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant le code sur la page.
 
-Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. See [Configuring Dynamic Media - Scene7 mode.](config-dms7.md)
-Vous pouvez également publier des fichiers de manière sélective sur Contenu multimédia dynamique ou AEM, mutuellement exclusifs les uns des autres, à l’aide de Publication **** sélective au niveau du dossier. See [Working with Selective Publish in Dynamic Media.](/help/assets/selective-publishing.md)
+Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Voir [Configuration de Contenu multimédia dynamique - Mode Scene7.](config-dms7.md)
+Vous pouvez également publier des ressources de manière sélective sur Dynamic Media exclusivement ou sur AEM exclusivement, à l’aide d’une **[!UICONTROL Publication sélective]** au niveau des dossiers. Voir [Utilisation de la publication sélective dans Dynamic Media.](/help/assets/selective-publishing.md)
 
 En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource et à gauche de la date et de l’heure pour indiquer qu’elle est publiée. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
@@ -33,7 +33,7 @@ Si vous envisagez de publier des ressources vidéo immédiatement après les avo
 
 Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed-code.md)
+Voir aussi [Incorporation de la visionneuse de vidéos ou d’images de contenu multimédia dynamique sur une page Web](embed-code.md)
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 
 Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, reportez-vous à la section [Publication de ressources.](manage-assets.md)
 
-## Diffusion de ressources Dynamic Media via HTTP/2  {#http-delivery-of-dynamic-media-assets}
+## Diffusion de ressources Dynamic Media via HTTP/2   {#http-delivery-of-dynamic-media-assets}
 
 AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
