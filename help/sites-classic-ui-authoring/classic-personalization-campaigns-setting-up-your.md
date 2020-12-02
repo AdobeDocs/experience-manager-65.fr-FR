@@ -65,7 +65,7 @@ Pour créer une marque, procédez comme suit :
 
 1. Cliquez sur **Créer**. Votre nouvelle marque s’affiche alors dans MCM (avec une icône par défaut).
 
-### Définition des propriétés de votre nouvelle marque {#defining-the-properties-for-your-new-brand}
+### Définition des propriétés de votre nouvelle marque  {#defining-the-properties-for-your-new-brand}
 
 1. A partir de **Campagnes**, dans le volet de gauche, sélectionnez l’icône de votre nouvelle marque dans le volet de droite, puis cliquez sur **Propriétés...**
 
@@ -75,7 +75,7 @@ Pour créer une marque, procédez comme suit :
 
 1. Cliquez sur **OK** pour enregistrer. 
 
-### Création d’une campagne {#creating-a-new-campaign}
+### Création d’une campagne  {#creating-a-new-campaign}
 
 Création d’une nouvelle campagne :
 
@@ -89,7 +89,7 @@ Création d’une nouvelle campagne :
 
 1. Cliquez sur **Créer**. Votre campagne sera affichée dans le MCM.
 
-### Définition des propriétés de votre nouvelle campagne {#defining-the-properties-for-your-new-campaign}
+### Définition des propriétés de votre nouvelle campagne  {#defining-the-properties-for-your-new-campaign}
 
 Configurez les propriétés de campagne qui contrôlent le comportement :
 
@@ -108,7 +108,7 @@ Configurez les propriétés de campagne qui contrôlent le comportement :
 
 1. Cliquez sur **OK** pour enregistrer. 
 
-### Création d’une expérience {#creating-a-new-experience}
+### Création d’une expérience  {#creating-a-new-experience}
 
 La procédure à suivre dépend du type d’expérience à créer :
 
@@ -122,7 +122,7 @@ La procédure à suivre dépend du type d’expérience à créer :
 >
 >Désormais, la méthode conseillée consiste à utiliser MCM pour créer des expériences.
 
-### Configuration de votre nouvelle expérience {#configuring-your-new-experience}
+### Configuration de votre nouvelle expérience  {#configuring-your-new-experience}
 
 Après avoir créé le « squelette » de votre expérience, vous devez effectuer les actions suivantes, en fonction de son type :
 
@@ -173,7 +173,7 @@ Dans le tableau de bord, vous avez accès à toutes les pistes en cliquant sur *
 >
 >Pour ajouter ou modifier les avatars des utilisateurs, ouvrez Clickstream Cloud (Ctrl+Alt+c), chargez le profil, puis cliquez sur **Modifier**.
 
-### Création de pistes {#creating-new-leads}
+### Création de pistes  {#creating-new-leads}
 
 Une fois les nouvelles pistes créées, assurez-vous de [les activer](#activating-or-deactivating-leads) pour pouvoir suivre leur activité sur l’instance de publication et personnaliser leur expérience.
 
@@ -239,7 +239,7 @@ Importation de pistes à partir d’une liste de valeurs séparées par des virg
    >La première ligne de la liste CSV contient des étiquettes dont la formulation doit être parfaitement identique à l’exemple ci-dessous :
    >
    >
-   >`email,givenName,familyName` - s&#39;il est écrit comme `givenname`par exemple, le système ne le reconnaîtra pas.
+   >`email,givenName,familyName` - s&#39;il est écrit comme  `givenname`par exemple, le système ne le reconnaîtra pas.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -253,7 +253,7 @@ Importation de pistes à partir d’une liste de valeurs séparées par des virg
 
    La nouvelle piste s’affiche dans le volet Pistes. Lorsque vous cliquez sur l’entrée, toutes les informations saisies s’affichent dans le volet de droite. Une fois une piste créée, vous pouvez l’ajouter à une liste.
 
-### Ajout de pistes à des listes {#adding-leads-to-lists}
+### Ajout de pistes à des listes  {#adding-leads-to-lists}
 
 Ajout de pistes à des listes préexistantes :
 
@@ -269,7 +269,7 @@ Ajout de pistes à des listes préexistantes :
 
 1. Sélectionnez la liste à laquelle vous souhaitez ajouter les pistes, puis cliquez sur **OK**. Les pistes sont ajoutées aux listes appropriées.
 
-### Affichage des informations de piste {#viewing-lead-information}
+### Affichage des informations de piste  {#viewing-lead-information}
 
 Pour afficher les informations de piste, dans le MCM, cochez la case en regard de la piste ; un volet droit s’affiche, indiquant toutes les informations de piste, y compris les affiliations aux listes.
 
@@ -297,7 +297,7 @@ Modification des informations de pistes existantes :
    >
    >Pour modifier l’avatar de piste, accédez au profil des utilisateurs. Vous pouvez charger le profil dans Clickstream Cloud en appuyant sur CTRL+ALT+c, en cliquant sur **Charger**, puis en sélectionnant le profil.
 
-### Suppression de pistes existantes {#deleting-existing-leads}
+### Suppression de pistes existantes  {#deleting-existing-leads}
 
 Pour supprimer une piste existante dans la console MCM, cochez la case en regard de celle-ci, puis cliquez sur **Supprimer**. La piste est supprimée de la liste de pistes et de toutes les listes associées.
 
@@ -305,7 +305,7 @@ Pour supprimer une piste existante dans la console MCM, cochez la case en regard
 >
 >Avant la suppression, AEM confirme que vous souhaitez supprimer la piste existante. Une fois supprimé, il ne peut pas être récupéré.
 
-## Utilisation de listes {#working-with-lists}
+## Utilisation de listes  {#working-with-lists}
 
 >[!NOTE]
 >
@@ -348,7 +348,7 @@ Modification d’une liste existante :
 
 1. Effectuez les modifications selon les besoins, puis cliquez sur **Enregistrer** pour les enregistrer.
 
-### Suppression de listes existantes {#deleting-existing-lists}
+### Suppression de listes existantes  {#deleting-existing-lists}
 
 Pour supprimer des listes existantes, dans le MCM, cochez la case en regard de la liste et cliquez sur **Supprimer**. La liste est supprimée. Les pistes qui étaient affiliées à la liste ne sont pas supprimées : seule l’affiliation à la liste est supprimée.
 
@@ -356,7 +356,7 @@ Pour supprimer des listes existantes, dans le MCM, cochez la case en regard de 
 >
 >Avant la suppression, AEM confirme que vous souhaitez supprimer les listes existantes. Une fois supprimé, il ne peut pas être récupéré.
 
-### Fusion de listes {#merging-lists}
+### Fusion de listes  {#merging-lists}
 
 Vous pouvez fusionner une liste existante avec une autre. La liste que vous fusionnez devient alors membre de l’autre liste. Elle existe toujours en tant qu’entité distincte et ne doit pas être supprimée.
 
@@ -388,7 +388,7 @@ Fusion de listes existantes :
 >
 >La procédure pour supprimer une liste fusionnée de son appartenance est identique à la procédure pour supprimer une piste d’une liste. Ouvrez l’onglet **Listes**, sélectionnez la liste qui inclut la liste fusionnée et supprimez l’appartenance en cliquant sur le cercle rouge en regard de la liste.
 
-### Affichage de pistes dans des listes {#viewing-leads-in-lists}
+### Affichage de pistes dans des listes  {#viewing-leads-in-lists}
 
 A tout moment, vous pouvez afficher les pistes qui appartiennent à une liste spécifique soit en navigant, soit en recherchant les membres.
 
