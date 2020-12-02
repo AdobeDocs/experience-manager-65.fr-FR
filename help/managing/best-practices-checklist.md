@@ -44,12 +44,12 @@ Les feuilles de calcul suivantes sont fournies :
    * Le [glossaire](/help/managing/best-practices-glossary.md) est également disponible dans le cadre de la documentation.
 * **[Définition des personnages](/help/managing/best-practices.md#persona)**
 
-## Utilisation des listes de contrôle {#using-the-checklists}
+## Utilisation des listes de contrôle  {#using-the-checklists}
 
 Pour livrer un projet de grande qualité, vous devez suivre tous les éléments affichés dans les listes de contrôle, de préférence dans l’ordre :
 
-1. The checklists are defined according to the **[Persona](/help/managing/best-practices.md#persona)** (role) involved. Chaque personne devrait utiliser la liste de contrôle correspondant à son rôle dans le projet.
-1. The checklists cover the **[Required Documents](/help/managing/best-practices.md#required-documents)** and **[Deliverables](/help/managing/best-practices.md#deliverables)** for each milestone - the relevant persona must set the status and quality fields appropriate.
+1. Les listes de contrôle sont définies en fonction de la **[personnalité](/help/managing/best-practices.md#persona)** (rôle) impliquée. Chaque personne devrait utiliser la liste de contrôle correspondant à son rôle dans le projet.
+1. Les listes de contrôle couvrent les **[Documents requis](/help/managing/best-practices.md#required-documents)** et **[Produits livrables](/help/managing/best-practices.md#deliverables)** pour chaque jalon - la personne concernée doit définir les champs d&#39;état et de qualité appropriés.
 
    >[!NOTE]
    >
