@@ -22,7 +22,7 @@ Planifier la structure de votre communication interactive
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
+Ce didacticiel est une étape de la série [Créer votre première série de communications interactives](/help/forms/using/create-your-first-interactive-communication.md). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
 La première étape de la planification d’une communication interactive consiste à finaliser le contenu de cette dernière. Des experts spécialisés appartenant entre autres aux services juridique, financier, de support ou marketing peuvent vous aider à finaliser le contenu. Une fois le contenu finalisé, vous devez l’analyser pour identifier les différents types de ressources requis pour créer la communication interactive.
 
@@ -40,7 +40,7 @@ Une communication interactive comprend les éléments suivants :
 * Des **images stockées dans un référentiel**, tels que des logos et des images de signature. Les images comme les logos de l’entreprise sont présentes dans la majorité ou dans toutes les communications interactives.
 * Des **graphiques et tableaux** nécessaires pour simplifier la représentation de données complexes dans une communication interactive
 
-## Structure de la communication interactive {#anatomy-of-the-interactive-communication}
+## Structure de la communication interactive  {#anatomy-of-the-interactive-communication}
 
 Une fois que vous avez finalisé le contenu et les éléments utilisés pour créer votre communication interactive, vous pouvez créer une structure pour la communication interactive. Les informations de la structure doivent être répertoriées dans la section [Observations relatives à la planification](/help/forms/using/planning-interactive-communications.md#planning-considerations). En fonction de notre cas d’utilisation, voici un exemple de structure de facture mensuelle qu’un opérateur de télécommunications envoie à ses clients.
 
@@ -52,7 +52,7 @@ La structure comprend des données avec les modes de saisie suivants :
 * Données conditionnelles
 * Images
 
-Dans chaque section, le texte en gras représente le texte statique. La base de données comprend les tableaux des clients, des factures et des appels. Un modèle de données de formulaire peut recevoir des données de n’importe lequel de ces tableaux. For more information, see [Create form data model](/help/forms/using/create-form-data-model0.md).
+Dans chaque section, le texte en gras représente le texte statique. La base de données comprend les tableaux des clients, des factures et des appels. Un modèle de données de formulaire peut recevoir des données de n’importe lequel de ces tableaux. Pour plus d’informations, voir [Création d’un modèle de données de formulaire](/help/forms/using/create-form-data-model0.md).
 
 Le tableau suivant illustre la source de données de chaque champ de la structure de la communication interactive :
 
@@ -75,7 +75,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>Date de facturation</li>
      <li>Période de facturation</li>
     </ul> <p> </p> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Informations sur le client</td>
@@ -94,12 +94,12 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>Code du pays</li>
      <li>Nombre de connexions</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Récapitulatif de facturation</td>
    <td><p>Solde précédent</p> <p>Paiements</p> <p>Ajustements</p> <p>Facturation de la période en cours</p> <p>Montant dû</p> <p>Échéance</p> </td>
-   <td><p>Value for the <strong>Charges current bill period </strong> field</p> <p>Tableau - factures</p> </td>
+   <td><p>Valeur du champ <strong>Facturer la période de facturation actuelle </strong></p> <p>Tableau - factures</p> </td>
    <td><p>Valeurs des champs suivants :</p>
     <ul>
      <li>Solde précédent</li>
@@ -108,7 +108,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>Montant dû</li>
      <li>Échéance</li>
     </ul> </td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Récapitulatif des frais</td>
@@ -126,7 +126,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>TOTAL PAYABLE (champ de calcul usagecharges)</li>
     </ul> <p>Tableau - factures</p> </td>
    <td>Aucun champ</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Appels détaillés - Sortants</td>
@@ -140,20 +140,20 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
     </ul> </td>
    <td><p>Toutes les valeurs</p> <p>Tableau - appels</p> </td>
    <td>Aucun champ</td>
-   <td>--</td>
+   <td>—</td>
   </tr>
   <tr>
    <td>Payez maintenant</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>Services à valeur ajoutée</td>
-   <td>--</td>
-   <td>--</td>
-   <td>--</td>
+   <td>—</td>
+   <td>—</td>
+   <td>—</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>
