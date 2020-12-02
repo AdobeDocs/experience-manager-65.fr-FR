@@ -32,7 +32,7 @@ Les outils d’administration suivants sont disponibles pour gérer les sites et
 
 * Ces deux fonctions peuvent être combinées pour gérer les sites web qui sont à la fois [internationaux et multilingues](#multinational-and-multilingual-sites).
 
-## Sites internationaux et multilingues {#multinational-and-multilingual-sites}
+## Sites internationaux et multilingues  {#multinational-and-multilingual-sites}
 
 Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues par l’utilisation conjointe de Multi Site Manager et du workflow de traduction. Créez un gabarit de site dans une langue, pour un pays spécifique, puis utilisez ce contenu comme base des autres sites, à l’aide de la traduction si nécessaire :
 
