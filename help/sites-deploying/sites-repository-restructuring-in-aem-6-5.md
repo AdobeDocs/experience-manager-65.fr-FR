@@ -19,7 +19,7 @@ ht-degree: 80%
 
 # Restructuration des référentiels dans AEM 6.5 {#sites-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Sites Solution. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md), les clients qui effectuent la mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer l&#39;effort de travail associé aux modifications du référentiel qui affectent la solution AEM Sites. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
 
 **Avec la mise à niveau vers la version 6.5**
 
@@ -58,16 +58,16 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><strong>Conseil de restructuration</strong></td>
    <td><p>Si des segments ContextHub nouveaux ou modifiés doivent être changés dans le contrôle de source plutôt que dans AEM, ils doivent être migrés vers le nouvel emplacement :</p>
     <ol>
-     <li>Copy any new or modified ContextHub Segments from the previous location to the appropriate new location (/<code>apps</code>, <code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>)</li>
-     <li>Update references to ContextHub Segments in the previous location to the migrated ContextHub Segments in the new locations (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
+     <li>Copiez tous les segments ContextHub nouveaux ou modifiés de l’emplacement précédent vers le nouvel emplacement approprié (/<code>apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</li>
+     <li>Mettez à jour les références aux segments ContextHub de l’emplacement précédent vers les segments ContextHub migrés dans les nouveaux emplacements (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
     </ol> <p>La requête QueryBuilder ci-dessous recherche toutes les références aux segments ContextHub dans les emplacements précédents.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Cette opération peut être exécutée via <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM interface utilisateur</a>du débogueur QueryBuilder. Notez qu’il s’agit d’une requête transversale. Par conséquent, ne l’exécutez pas en production et vérifiez que les limites de traversée sont ajustées en fonction des besoins.</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Cette opération peut être exécutée via  <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM interface utilisateur</a> du débogueur QueryBuilder. Notez qu’il s’agit d’une requête transversale. Par conséquent, ne l’exécutez pas en production et vérifiez que les limites de traversée sont ajustées en fonction des besoins.</p> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
-   <td><p>Les segments ContextHub persistants à l’emplacement précédent s’affichent en lecture seule dans <strong>AEM &gt; Personnalisation &gt; Audiences</strong>.</p> <p>If ContextHub Segments are to be editable in AEM, they must be migrated to the new location (<code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>). Any new ContentHub Segments segments created in AEM are persisted to the new location (<code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>).</p> <p>AEM Sites Page Properties only allow either the Previous Location (<code>/etc</code>) or a single new location (<code>/apps</code>, <code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>) to be selected, thus ContextHub Segments must be migrated accordingly.</p> <p>Tous les segments ContextHub inutilisés des sites de référence AEM peuvent être supprimés et ne pas être migrés vers le nouvel emplacement :</p>
+   <td><strong>Remarques</strong></td>
+   <td><p>Les segments ContextHub persistants à l’emplacement précédent s’affichent en lecture seule dans <strong>AEM &gt; Personnalisation &gt; Audiences</strong>.</p> <p>Si les segments ContextHub doivent être modifiables dans AEM, ils doivent être migrés vers le nouvel emplacement (<code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>). Tout nouveau segment ContentHub créé dans AEM est conservé au nouvel emplacement (<code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</p> <p>Les propriétés de la page AEM Sites permettent uniquement de sélectionner l’emplacement précédent (<code>/etc</code>) ou un nouvel emplacement unique (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>). Les segments ContextHub doivent donc être migrés en conséquence.</p> <p>Tous les segments ContextHub inutilisés des sites de référence AEM peuvent être supprimés et ne pas être migrés vers le nouvel emplacement :</p>
     <ul>
      <li>/etc\/segmentation\/geometrixx/</li>
      <li>/etc\/segmentation\/geometrixx-outdoors</li>
@@ -76,7 +76,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
  </tbody>
 </table>
 
-## Avant la mise à niveau future {#prior-to-upgrade}
+## Avant la mise à niveau ultérieure {#prior-to-upgrade}
 
 ### Bibliothèques clientes Adobe Analytics {#adobe-analytics-client-libraries}
 
@@ -106,7 +106,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories des bibliothèques clientes, accédez à chaque nœud <code>cq:ClientLIbraryFolder</code> via CRXDELite et inspectez la propriété des catégories.</p>
     <ul>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/appmeasurement</code></li>
@@ -139,20 +139,20 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
      <li>Convertissez les ressources statiques, CSS et JavaScript dans la conception en une <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">bibliothèque cliente</a> avec <code>allowProxy = true</code>.</li>
      <li>Mettez à jour les références à l’emplacement précédent dans la propriété cq:designPath.</li>
      <li>Mettez à jour les pages faisant référence à l’emplacement précédent pour utiliser la nouvelle catégorie de bibliothèque cliente (cela nécessite la mise à jour du code d’implémentation de la page).</li>
-     <li>Update AEM Dispatcher rules to allow serving of Client Libraries via the <code>/etc.clientlibs/</code> proxy servlet.</li>
+     <li>Mettez à jour les règles du répartiteur AEM pour autoriser la diffusion des bibliothèques clientes par le biais de la servlet proxy <code>/etc.clientlibs/</code>.</li>
     </ol> <p>Pour les conceptions NON gérées dans SCM et modifiées au moment de l’exécution via les boîtes de dialogue de conception :</p>
     <ul>
      <li>Ne déplacez pas les conceptions activées par l’auteur en dehors de <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td>N/A<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Configurations de l’émulateur d’appareil mobile {#mobile-device-emulator-configurations}
+### Configurations de l’émulateur d’appareil mobile  {#mobile-device-emulator-configurations}
 
 <table>
  <tbody>
@@ -168,26 +168,28 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><strong>Conseil de restructuration</strong></td>
    <td>Toute nouvelle configuration d’émulateur d’appareil mobile doit être migrée vers le nouvel emplacement.
     <ol>
-     <li>Copy any new Mobile Device Emulator Configurations from the Previous Location to the new location (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-     <li>Pour toutes les pages AEM Sites qui dépendent de ces configurations d’émulateur de périphérique mobile, mettez à jour le <span class="code"><code>
+     <li>Copiez toute nouvelle configuration d'émulateur de périphérique mobile de l'emplacement précédent vers le nouvel emplacement (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
+     <li>Pour toutes les pages AEM Sites qui dépendent de ces configurations d'émulateur de périphérique mobile, mettez à jour le <span class="code"> &lt;a0/&gt; de la page.
+       <code>
         jcr
-       </code><code>
+       </code>
+       Noeud <code>
         :content
-       </code></span> noeud de la page : <br /> <span class="code">[cq:Page]/jcr:content@cq:
+       </code></span> : <br /> <span class="code">[cq:Page]/jcr:content@cq:
        <code>
         deviceGroups
        </code> = Chaîne[ mobile/groupes/réactif ]</span></li>
-     <li>For any Editable Templates that depend on these Mobile Device Emulator Configurations, update the Editable Templates, pointing the <span class="code">
+     <li>Pour tous les modèles modifiables qui dépendent de ces configurations d'émulateur de périphériques mobiles, mettez à jour les modèles modifiables en pointant le <span class="code">
        <code>
         cq
-       </code>:
+       </code> :
        <code>
         deviceGroups
-       </code></span> to the New Location.</li>
+       </code></span> au nouvel emplacement.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td><p>La résolution des configurations d’émulateur d’appareil mobile se produit dans l’ordre suivant :</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/mobile</code></li>
@@ -221,13 +223,13 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td><p>Toutes les configurations Blueprint de Multi-site Manager fournies par AEM existent dans le nouvel emplacement de <code>/libs</code>.</p> <p>Le contenu ne fait pas référence aux configurations Blueprint de Multi-site Manager. Par conséquent, il n’y a pas de références de contenu à ajuster.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Configurations du déploiement de Multi-site Manager {#multi-site-manager-rollout-configurations}
+### Configurations du déploiement de Multi-site Manager  {#multi-site-manager-rollout-configurations}
 
 <table>
  <tbody>
@@ -244,17 +246,17 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><p>Toute configuration de déploiement de Multi-site Manager nouvelle ou modifiée doit être migrée vers le nouvel emplacement.</p>
     <ol>
      <li>Copiez les configurations de déploiement de Multi-site Manager nouvelles ou modifiées de l’emplacement précédent vers le nouvel emplacement (<code>/apps</code>).</li>
-     <li>Update any references on AEM Pages to Multi-site Manager Rollout Configurations in the Previous Location, to point to their counterparts in the New Locations (<code>/libs</code> or <code>/apps</code>).</li>
+     <li>Mettez à jour toutes les références sur AEM pages vers les configurations de déploiement multisite Manager à l'emplacement précédent, afin de pointer vers leurs homologues dans les nouveaux emplacements (<code>/libs</code> ou <code>/apps</code>).</li>
     </ol> <p>Supprimez les configurations de déploiement de Multi-site Manager migrées de l’emplacement précédent.</p> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td>Si vous ne supprimez pas les configurations de déploiement de Multi-site Manager migrées de l’emplacement précédent, des options de déploiement en double sont affichées pour les auteurs d’AEM.</td>
   </tr>
  </tbody>
 </table>
 
-### Modèle d’e-mail de notification d’événement de page {#page-event-notification-e-mail-template}
+### Modèle d’e-mail de notification d’événement de page  {#page-event-notification-e-mail-template}
 
 <table>
  <tbody>
@@ -276,8 +278,8 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
-   <td><p>Any new or modified Page Event Notification E-mail Templates must be migrated to the new location under <code>/apps</code>:</p>
+   <td><strong>Remarques</strong></td>
+   <td><p>Tout modèle de courriel de notification de Événement de page nouveau ou modifié doit être migré vers le nouvel emplacement sous <code>/apps</code> :</p>
     <ol>
      <li>Copiez les modèles d’e-mail de notification d’événement de page nouveaux ou modifiés de l’emplacement précédent vers le nouvel emplacement (<code>/apps</code>).</li>
      <li>Supprimez les modèles d’e-mail de notification d’événement de page migrés de l’emplacement précédent.</li>
@@ -299,23 +301,23 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><p><span class="code">/libs/settings/
       <code>
        wcm
-      </code>/template-types/scaffolding/scaffolding</span></p> <p><span class="code">/apps/settings/
+      </code>/template-types/échafaudage/échafaudage</span></p> <p><span class="code">/apps/settings/
       <code>
        wcm
-      </code>/template-types/scaffolding/scaffolding</span></p> </td>
+      </code>/template-types/échafaudage/échafaudage</span></p> </td>
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
    <td>Les structures créées à l’emplacement précédent utilisent l’infrastructure existante et ne peuvent pas être migrées vers le nouvel emplacement. Pour s’aligner sur le nouvel emplacement, toute structure existante doit être re-développée à l’aide de l’infrastructure prise en charge.</td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
-   <td>N/A<br /> </td>
+   <td><strong>Remarques</strong></td>
+   <td>S/O<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Grille réactive LESS {#responsive-grid-less}
+### Grille réactive LESS  {#responsive-grid-less}
 
 <table>
  <tbody>
@@ -335,7 +337,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td>Si vous référencez un fichier <code>grid_base.less</code> qui n’existe pas, le mode Mise en page de l’éditeur de pages et de modèles ne fonctionne pas et la mise en page est perturbée.</td>
   </tr>
  </tbody>
@@ -361,20 +363,20 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
      <li>Convertissez les ressources statiques, CSS et JavaScript dans la conception en une <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">bibliothèque cliente</a> avec <code>allowProxy = true</code>.</li>
      <li>Mettez à jour les références à l’emplacement précédent dans propriétés de <code>cq:designPath</code> via <strong>AEM &gt; Sites &gt; Pages de site personnalisées &gt; Propriétés de page &gt; Onglet avancé &gt; Champ de conception</strong>.</li>
      <li>Mettez à jour les pages faisant référence à l’emplacement précédent pour utiliser la nouvelle catégorie de bibliothèque cliente (cela nécessite la mise à jour du code d’implémentation de la page).</li>
-     <li>Update AEM Dispatcher rules to allow the serving of Client Libraries via the <code>/etc.clientlibs/</code> proxy servlet.</li>
+     <li>Mettez à jour les règles du répartiteur AEM afin d’autoriser la diffusion de bibliothèques clientes via la servlet proxy <code>/etc.clientlibs/</code>.</li>
     </ol> <p>Pour les conceptions NON gérées dans SCM et modifiées au moment de l’exécution via les boîtes de dialogue de conception :</p>
     <ul>
      <li>Ne déplacez pas les conceptions activées par l’auteur en dehors de <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td>L’approche recommandée consiste à créer des sites et des pages AEM Sites à l’aide de modèles modifiables qui utilisent le contenu et les règles de la structure au lieu de conceptions.</td>
   </tr>
  </tbody>
 </table>
 
-### Bibliothèques clientes d’intégration Adobe Search and Promote {#adobe-search-and-promote-integration-client-libraries}
+### Bibliothèques clientes d’intégration Adobe Search and Promote  {#adobe-search-and-promote-integration-client-libraries}
 
 <table>
  <tbody>
@@ -398,7 +400,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories des bibliothèques clientes, accédez à chaque nœud cq:ClientLIbraryFolder via CRXDELite et inspectez la propriété des catégories :</p>
     <ul>
      <li><code>/libs/cq/searchpromote/clientlibs/searchpromote</code></li>
@@ -437,7 +439,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories des bibliothèques clientes, accédez à chaque nœud cq:ClientLIbraryFolder via CRXDELite et inspectez la propriété des catégories :</p>
     <ul>
      <li><code>/libs/cq/testandtarget/clientlibs/testandtarget/testandtarget</code></li>
@@ -478,7 +480,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories des bibliothèques clientes, accédez à chaque nœud <code>cq:ClientLIbraryFolder</code> via CRXDELite et inspectez la propriété des catégories :</p>
     <ul>
      <li><code>/libs/wcm/foundation/clientlibs/accessibility</code></li>
