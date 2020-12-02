@@ -34,7 +34,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Exportation de XMP métadonnées à l’aide de l’API Java {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-L&#39;exemple de code suivant récupère, inspecte et enregistre XMP métadonnées. (voir [Exportation de métadonnées à partir de Documents](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)PDF).
+L&#39;exemple de code suivant récupère, inspecte et enregistre XMP métadonnées. (Voir [Exportation de métadonnées à partir de Documents PDF](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
 ```java
  /*
@@ -137,9 +137,9 @@ L&#39;exemple de code suivant récupère, inspecte et enregistre XMP métadonné
  
 ```
 
-## Début rapide (mode SOAP) : Importation de métadonnées XMP à l’aide de l’API Java {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
+## Début rapide (mode SOAP) : Importation de XMP métadonnées à l’aide de l’API Java {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-L’exemple de code suivant importe XMP métadonnées et enregistre le nouveau fichier PDF sur le disque. Le document PDF est basé sur un fichier PDF nommé Loan.pdf. Le document XML qui contient les métadonnées à importer dans le document PDF est basé sur un fichier XML appelé *LoanMetaData.xml*. Pour plus d’informations sur ce fichier XML, voir [Importation de métadonnées dans des Documents](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents)PDF.
+L’exemple de code suivant importe XMP métadonnées et enregistre le nouveau fichier PDF sur le disque. Le document PDF est basé sur un fichier PDF nommé Loan.pdf. Le document XML qui contient les métadonnées à importer dans le document PDF est basé sur un fichier XML nommé *LoanMetaData.xml*. Pour plus d’informations sur ce fichier XML, voir [Importation de métadonnées dans des Documents PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```java
  /*
