@@ -30,7 +30,7 @@ Les composants sont disponibles lors de la [modification d’une page](/help/sit
 >
 >En fonction de votre instance, vous disposez peut-être de composants personnalisés développés explicitement pour vos besoins. Ces composants peuvent même avoir le même nom que certains composants traités ici.
 
-## Utilisation générale   {#general-usage}
+## Utilisation générale    {#general-usage}
 
 Les composants sont disponibles dans l’onglet **Composants** du panneau latéral de l’éditeur de page lors de la [modification d’une page](/help/sites-authoring/editing-content.md).
 
@@ -54,15 +54,15 @@ Les composants sont regroupés dans diverses catégories appelées groupes de co
 
 La [console des composants](/help/sites-authoring/default-components-console.md) présente une vue d’ensemble des groupes de composants et des composants fournis par votre installation d’AEM. Vous pouvez afficher des informations clés sur des composants spécifiques et leur utilisation.
 
-## Composants – Principaux domaines {#components-major-areas}
+## Composants – Principaux domaines  {#components-major-areas}
 
 Les pages suivantes fournissent des liens vers des informations supplémentaires sur les composants :
 
 * [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - Les composants principaux offrent une fonctionnalité de création souple et complète, qui fournit des types de contenu essentiels à la création de pages.
 
-* [Communautés](/help/communities/author-communities.md) - Ces composants fournissent des fonctionnalités interactives pour un site web, tel que des forums et des commentaires. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
+* [Communautés](/help/communities/author-communities.md) - Ces composants fournissent des fonctionnalités interactives pour un site web, tel que des forums et des commentaires. La plupart de ces composants sont inclus lors de la création d&#39;un [site communautaire](/help/communities/overview.md).
 
-* [eCommerce](/help/sites-administering/ecommerce.md) - La fonctionnalité eCommerce au sein d&#39;AEM comprend également une gamme de composants. L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
+* [eCommerce](/help/sites-administering/ecommerce.md)  - La fonctionnalité eCommerce de l&#39;AEM comprend également une gamme de composants. L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
 
 ### Configuration des composants {#configuring-components}
 
