@@ -127,15 +127,15 @@ La mise en œuvre d’eCommerce permet d’accéder en temps réel à des inform
 
 >[!NOTE]
 >
->Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
+>Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement du commerce électronique](/help/sites-deploying/ecommerce.md).
 >
->For information about extending eCommerce capabilities, see [Developing eCommerce](/help/sites-developing/ecommerce.md).
+>Pour plus d&#39;informations sur l&#39;extension des capacités de commerce électronique, voir [Développement de l&#39;eCommerce](/help/sites-developing/ecommerce.md).
 
 ## Principales fonctionnalités {#main-features}
 
 AEM eCommerce fournit ce qui suit :
 
-* A number of **out-of-the-box AEM components** to illustrate what can be achieved for your project:
+* Un certain nombre de **composants d&#39;AEM prêts à l&#39;emploi** pour illustrer ce qui peut être réalisé pour votre projet :
 
    * Affichage des produits
    * Panier
@@ -159,7 +159,7 @@ AEM eCommerce fournit ce qui suit :
 
    ![](assets/chlimage_1-131.png)
 
-* Uses the AEM ability to **present your content on multiple channels**, be that full browser window or mobile device. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
+* Utilise la capacité AEM **présenter votre contenu sur plusieurs canaux**, que ce soit sur la fenêtre complète du navigateur ou sur un périphérique mobile. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
 
    ![](assets/chlimage_1-132.png)
 
@@ -186,18 +186,18 @@ AEM eCommerce fournit ce qui suit :
    * Historique des commandes exhaustif
    * Mise à jour rapide du catalogue
 
-## Structure {#the-framework}
+## Structure  {#the-framework}
 
 La section [Concepts](/help/sites-administering/concepts.md) couvre la structure plus en détail. Vous trouverez ci-dessous un aperçu de la structure :
 
-### Quoi ? {#what}
+### Quoi ?  {#what}
 
 * La structure d’intégration fournit l’API, une série de composants illustrant les fonctionnalités et différentes extensions pour fournir des exemples de méthodes de connexion.
 * La structure fournit la structure de base nécessaire à la mise en œuvre d’un projet.
 * La structure est extensible.
 * La structure ne fournit pas de site prêt à l’emploi. Un certain travail de développement reste nécessaire pour adapter la structure à vos spécifications.
 
-### Why? {#why}
+### Pourquoi ? {#why}
 
 * Fournir les mécanismes de base nécessaires pour réaliser rapidement un site de commerce électronique personnalisé.
 * Offrir la flexibilité nécessaire pour développer un site de commerce électronique réel.
