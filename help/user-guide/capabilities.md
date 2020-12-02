@@ -12,7 +12,7 @@ ht-degree: 52%
 ---
 
 
-# aem 6.5 Fonctionnalités Guides de l’utilisateur {#aem-65-capabilities-user-guides}
+# aem 6.5 Fonctionnalités Guides de l&#39;utilisateur {#aem-65-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
@@ -26,7 +26,7 @@ ht-degree: 52%
 
 [Découvrez comment administrer AEM](/help/sites-administering/home.md).
 
-## AEM Assets {#aem-assets}
+## AEM Assets {#aem-assets}
 
 [Créez, gérez, diffusez et optimisez des ressources numériques.](/help/assets/home.md)
 
