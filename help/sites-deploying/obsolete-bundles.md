@@ -46,25 +46,25 @@ Lorsque vous effectuez la mise à niveau vers AEM 6.3, les lots suivants sont au
 
 * org.apache.sling.discovery.impl, version 1.1.6, Active
 * com.adobe.granite.installer.patch, version 0.4.0, Active
-* biz.aQute.bndlib, version 1.43.0, Active
+* biz.aQute.bndlib, version 1.43.0, Principal
 * com.day.cq.cq-jobs-core, version 5.4.0, Active
 * com.day.cq.cq-opensocial, version 5.7.2, Active
 * com.day.cq.cq-pinauthhandler, version 1.1.2, Active
-* com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
+* com.day.cq.da.m.commons.nekohtml, version 0.9.5, Principal
 * com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.1.6, Active
 * com.day.cq.wcm.cq-wcm-mobile-phonegap-build-integration, version 5.7.18, Active
 
 **CQ 5.6.1 :**
 
-* biz.aQute.bndlib, version 1.43.0, Active
+* biz.aQute.bndlib, version 1.43.0, Principal
 * com.day.cq.cq-pinauthhandler, version 1.0.0, Active
-* com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
+* com.day.cq.da.m.commons.nekohtml, version 0.9.5, Principal
 * com.day.crx.crxde-support, version 2.3.14, Installé
 * com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.0.2, Active
 
 **CQ 5.6.0 :**
 
-* com.day.cq.cq-pinauthhandler, version 1.0.0, Active
-* com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
+* com.day.cq.cq-pinauthhandler, version 1.0.0, Principal
+* com.day.cq.da.m.commons.nekohtml, version 0.9.5, Principal
 * com.day.crx.crxde-support, version 2.3.14, Installé
 
