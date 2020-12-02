@@ -22,11 +22,11 @@ ht-degree: 74%
 
 Lorsque la fonctionnalité de contrôle est activée, Document Security vous permet de contrôler certains types d’événements. Les événements visibles dépendent de votre rôle :
 
-**Utilisateurs :** Peut vue des événements contrôlés pour leurs documents protégés par une stratégie et pour tout documents protégé qu’ils reçoivent et utilisent.
+**Utilisateurs :** peut vue des événements contrôlés pour leurs documents protégés par une stratégie et pour tout documents protégé qu’ils reçoivent et utilisent.
 
-**Coordinateurs de jeux de stratégies :** Peut vue des événements contrôlés, y compris les événements de document et de stratégie, pour les documents qui sont protégés par des stratégies issues de leurs jeux de stratégies.
+**Coordinateurs de jeux de stratégies :** peut vue des événements contrôlés, y compris les événements de document et de stratégie, pour les documents protégés par des stratégies issues de leurs jeux de stratégies.
 
-**Administrateurs :** Peut vue les événements contrôlés liés à tous les documents et utilisateurs protégés par une stratégie. Les administrateurs peuvent également suivre d’autres types d’événements, tels que les événements d’utilisateur, de document, de stratégie et de système.
+**Administrateurs :** peut vue les événements contrôlés qui sont liés à tous les documents et utilisateurs protégés par une stratégie. Les administrateurs peuvent également suivre d’autres types d’événements, tels que les événements d’utilisateur, de document, de stratégie et de système.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Un événement d’échec est enregistré si un utilisateur non autorisé tente 
 
 Si une stratégie autorise l’accès d’utilisateurs anonymes et si l’administrateur désactive par la suite l’accès anonyme pour Document Security, l’accès anonyme échoue pour les documents protégés par la stratégie et l’événement n’est pas consigné.
 
-## Activation du contrôle des événements {#enable-event-auditing}
+## Activation du contrôle des événements  {#enable-event-auditing}
 
 La configuration requise pour contrôler les événements est la suivante :
 
@@ -52,31 +52,31 @@ La configuration requise pour contrôler les événements est la suivante :
 
 * Le contrôle doit être activé sur la stratégie que vous utilisez pour protéger le document (voir [Création et modification de stratégies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)).
 
-## Recherche d’un événement {#search-for-an-event}
+## Recherche d’un événement  {#search-for-an-event}
 
 Vous pouvez naviguer dans la liste des événements et afficher des descriptions plus détaillées sur des événements. Ces descriptions détaillées incluent des informations comme l’ID de l’événement, sa description, son adresse IP, l’entreprise, l’utilisateur concerné, la date et l’heure de survenue, les activités refusées, ainsi que les événements hors connexion (lorsque des utilisateurs tentent d’utiliser un document sans être connectés à Document Security).
 
 Vous pouvez rechercher des événements dans la page Evénements en combinant des critères de recherche et des dates. Les événements pouvant faire l’objet d’une recherche dépendent de votre rôle :
 
-**Utilisateurs :** Peut vue des événements contrôlés pour leurs documents protégés par une stratégie et pour tout documents protégé qu’ils reçoivent et utilisent. Les options de recherche disponibles sont les suivantes :
+**Utilisateurs :** peut vue des événements contrôlés pour leurs documents protégés par une stratégie et pour tout documents protégé qu’ils reçoivent et utilisent. Les options de recherche disponibles sont les suivantes :
 
-**Événements me concernant :** Les utilisateurs peuvent rechercher des événements pour tout document protégé par une stratégie qu’ils ont créé ou reçu. Par exemple, si un utilisateur ouvre, affiche ou imprime un document qui était protégé par une autre personne, l’utilisateur ne voit que les événements concernant ce document.
+**Événements me concernant :** les utilisateurs peuvent trouver des événements pour tout document protégé par une stratégie qu’ils ont créé ou reçu. Par exemple, si un utilisateur ouvre, affiche ou imprime un document qui était protégé par une autre personne, l’utilisateur ne voit que les événements concernant ce document.
 
-**Événements liés à mes documents :** Les utilisateurs peuvent trouver tous les événements liés à leurs propres documents protégés par une stratégie. Les utilisateurs voient les événements générés par chaque personne ayant manipulé leurs documents.
+**Événements liés à mes documents :** les utilisateurs peuvent trouver tous les événements liés à leurs propres documents protégés par une stratégie. Les utilisateurs voient les événements générés par chaque personne ayant manipulé leurs documents.
 
-**Coordinateurs de jeux de stratégies :** Peut vue des événements contrôlés, y compris les événements de document et de stratégie, pour les documents qui sont protégés par des stratégies issues de leurs jeux de stratégies. Voici les options de disponibles :
+**Coordinateurs de jeux de stratégies :** peut vue des événements contrôlés, y compris les événements de document et de stratégie, pour les documents protégés par des stratégies issues de leurs jeux de stratégies. Voici les options de disponibles :
 
-**Document événements où je suis coordinateur de jeux de stratégies :** Les coordinateurs de jeux de stratégies disposant de l’autorisation de événement de vue peuvent trouver des événements liés aux documents protégés par les stratégies issues de leurs jeux de stratégies.
+**Événements de document où je suis coordinateur de jeux de stratégies : les coordinateurs de jeux de stratégies qui disposent de l’autorisation de événement de vues peuvent trouver des événements liés aux documents protégés par des stratégies issues de leurs jeux de stratégies.** 
 
-**Événements de stratégie pour lesquels je suis coordinateur de jeux de stratégies :** Les coordinateurs de jeux de stratégies disposant de l’autorisation événement de vues peuvent trouver des événements liés aux stratégies issues de leurs jeux de stratégies.
+**Événements de stratégie pour lesquels je suis coordinateur de jeux de stratégies : les coordinateurs de jeux de stratégies qui disposent de l’autorisation vue événements peuvent trouver des événements liés aux stratégies issues de leurs jeux de stratégies.** 
 
-**Administrateurs :** Peut vue les événements contrôlés liés à tous les documents et utilisateurs protégés par une stratégie. Les administrateurs peuvent également assurer le suivi d’autres types. De plus, les administrateurs peuvent subdiviser les recherches d’événements par type d’utilisateur :
+**Administrateurs :** peut vue les événements contrôlés qui sont liés à tous les documents et utilisateurs protégés par une stratégie. Les administrateurs peuvent également assurer le suivi d’autres types. De plus, les administrateurs peuvent subdiviser les recherches d’événements par type d’utilisateur :
 
-**Utilisateurs connus :** Les utilisateurs se trouvent dans les répertoires source ou sont enregistrés en tant qu’utilisateurs externes.
+**Utilisateurs connus :** les utilisateurs se trouvent dans les répertoires source ou sont enregistrés en tant qu’utilisateurs externes.
 
-**Utilisateurs anonymes :** Utilisateurs inconnus qui accèdent à un document protégé par une stratégie autorisant un accès anonyme.
+**Utilisateurs anonymes :** Utilisateurs inconnus qui accèdent à un document protégé par une stratégie autorisant l’accès anonyme.
 
-**Utilisateurs système :** Événements lancés par le serveur, tels qu’une synchronisation d’annuaires.
+**Utilisateurs système : événements lancés par** le serveur, tels qu’une synchronisation d’annuaires.
 
 1. Dans la page Document Security, cliquez sur Événements.
 1. Dans la liste Rechercher, sélectionnez les critères de recherche à utiliser. Selon l’élément sélectionné dans la liste Rechercher, une seconde liste affiche des critères de recherche supplémentaires. Le cas échéant, saisissez votre critère de recherche dans la zone de texte.
@@ -102,7 +102,7 @@ Vous pouvez rechercher des événements dans la page Evénements en combinant de
 
 1. Pour afficher les détails d’un événement, cliquez sur la description de l’événement dans la liste.
 
-## Tri de la liste des événements {#sort-the-event-list}
+## Tri de la liste des événements  {#sort-the-event-list}
 
 Pour faciliter la recherche d’événements, triez la liste par en-tête de colonne. Le triangle situé à côté de l’en-tête de colonne indique la colonne triée. Lorsque le triangle est dirigé vers le haut, l’ordre de tri est croissant et lorsqu’il est dirigé vers le bas, l’ordre de tri est décroissant.
 
