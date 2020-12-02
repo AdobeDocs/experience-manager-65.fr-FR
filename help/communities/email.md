@@ -30,20 +30,20 @@ Par défaut, la fonction de messagerie n’est pas fonctionnelle, car elle requi
 
 >[!CAUTION]
 >
->Le courrier électronique pour les notifications et les abonnements doit être configuré uniquement sur l’éditeur [](deploy-communities.md#primary-publisher)Principal.
+>Le courrier électronique pour les notifications et les abonnements doit être configuré uniquement sur l’[éditeur Principal](deploy-communities.md#primary-publisher).
 
 ## Configuration par défaut du service de messagerie {#default-mail-service-configuration}
 
 Le service de messagerie par défaut est requis pour les notifications et les abonnements.
 
-* Connectez-vous à l’éditeur Principal avec les droits d’administrateur et accédez à la console [](../../help/sites-deploying/configuring-osgi.md)Web :
+* Connectez-vous à l’éditeur Principal avec le droit d’administrateur et accédez à la [console Web](../../help/sites-deploying/configuring-osgi.md) :
 
-   * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Par exemple, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Localisez le `Day CQ Mail Service`.
+* Recherchez `Day CQ Mail Service`.
 * Sélectionnez l’icône Modifier.
 
-Il est basé sur la documentation relative à la [configuration de la notification](../../help/sites-administering/notification.md)par courrier électronique, mais avec une différence dans le fait que le champ `"From" address` n’est ** pas obligatoire et doit rester vide.
+Il est basé sur la documentation de [Configuration de la notification par courriel](../../help/sites-administering/notification.md), mais avec une différence dans le fait que le champ `"From" address` n&#39;est pas *requis et doit rester vide.*
 
 Par exemple (renseigné avec des valeurs à des fins d’illustration uniquement) :
 
@@ -55,7 +55,7 @@ Par exemple (renseigné avec des valeurs à des fins d’illustration uniquement
 
 * **[!UICONTROL Port du serveur SMTP]**
 
-   *(Obligatoire)* Le port du serveur SMTP doit être de 25 ou plus.
+   *(Obligatoire)* Le port du serveur SMTP doit être 25 ou plus.
 
 * **[!UICONTROL Utilisateur SMTP]**
 
@@ -77,39 +77,39 @@ Par exemple (renseigné avec des valeurs à des fins d’illustration uniquement
 
 ## Configuration du courrier électronique AEM Communities {#aem-communities-email-configuration}
 
-Une fois le service [de messagerie](#default-mail-service-configuration) par défaut configuré, les deux instances existantes de la configuration `AEM Communities Email Reply Configuration` OSGi, incluses dans la version, deviennent fonctionnelles.
+Une fois le [service de messagerie par défaut](#default-mail-service-configuration) configuré, les deux instances existantes de la configuration `AEM Communities Email Reply Configuration` OSGi, incluses dans la version, deviennent fonctionnelles.
 
 Seule l’instance pour les abonnements doit être configurée plus avant lors de l’autorisation de la réponse par courrier électronique.
 
-1. [Instance de courriel](#configuration-for-notifications) :
+1. [](#configuration-for-notifications) Instance de courriel :
 
    Pour les notifications, qui ne prennent pas en charge le courrier électronique de réponse, et ne doivent pas être modifiées.
 
-1. [Instance Abonnements-e-mail](#configuration-for-subscriptions) :
+1. [Abonnements-](#configuration-for-subscriptions) emailinstance :
 
    Configuration requise pour activer entièrement la création de publication à partir d’un courrier électronique de réponse.
 
 Pour atteindre les instances de configuration du courrier électronique des Communautés :
 
-* Connectez-vous à l&#39;éditeur Principal avec les droits d&#39;administrateur et accédez à la console [Web.](../../help/sites-deploying/configuring-osgi.md)
+* Connectez-vous à l’éditeur Principal avec le droit d’administrateur et accédez à la [console Web](../../help/sites-deploying/configuring-osgi.md).
 
-   * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Par exemple, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Localisez `AEM Communities Email Reply Configuration`.
+* Recherchez `AEM Communities Email Reply Configuration`.
 
 ![email-response-config](assets/email-reply-config.png)
 
 ### Configuration des notifications {#configuration-for-notifications}
 
-L&#39;instance de configuration `AEM Communities Email Reply Configuration` OSGi avec le message de nom est la fonctionnalité de notifications instantanées. Cette fonctionnalité n’inclut pas les réponses par courrier électronique.
+L&#39;instance de la configuration `AEM Communities Email Reply Configuration` OSGi avec le courrier électronique Name est une fonctionnalité de notifications immédiates. Cette fonctionnalité n’inclut pas les réponses par courrier électronique.
 
 Cette configuration ne doit pas être modifiée.
 
-* Localisez le `AEM Communities Email Reply Configuration`.
+* Recherchez `AEM Communities Email Reply Configuration`.
 * Sélectionnez l’icône Modifier.
-* Vérifiez que le **nom** est `email`.
+* Vérifiez que **Name** est `email`.
 
-* Vérifiez que la fonction **Créer une publication à partir du courrier électronique** de réponse est `unchecked`activée.
+* Vérifiez que **Créer une publication à partir du courrier électronique de réponse** est `unchecked`.
 
 ![configure-email-response](assets/configure-email-reply.png)
 
@@ -117,9 +117,9 @@ Cette configuration ne doit pas être modifiée.
 
 Pour les abonnements des communautés, il est possible d’activer ou de désactiver la possibilité pour un membre de publier du contenu en répondant à un courriel.
 
-* Localisez le `AEM Communities Email Reply Configuration`.
+* Recherchez `AEM Communities Email Reply Configuration`.
 * Sélectionnez l’icône Modifier.
-* Vérifiez que le **nom** est `subscriptions-email`.
+* Vérifiez que **Name** est `subscriptions-email`.
 
    ![configure-email-abonnement](assets/configure-email-subscriptions.png)
 
@@ -154,7 +154,7 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 
    Si l&#39;ID d&#39;outil de suivi est ajouté au corps du message, ce préfixe est utilisé. La valeur par défaut est `Please do not remove this:`.
 
-* **[!UICONTROL Courriel au format HTML]**: Si cette case est cochée, le type de contenu du courrier électronique est défini comme `"text/html;charset=utf-8"`. Cette option est cochée par défaut.
+* **[!UICONTROL Courriel au format HTML]** : Si cette case est cochée, le type de contenu du courrier électronique est défini comme  `"text/html;charset=utf-8"`. Cette option est cochée par défaut.
 
 * **[!UICONTROL Nom d’utilisateur par défaut]**
 
@@ -164,7 +164,7 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 
    Le message électronique est créé en utilisant un modèle stocké à cet emplacement racine. La valeur par défaut est `/etc/community/templates/subscriptions-email`.
 
-## Configuration de l’importateur d’interrogations {#configure-polling-importer}
+## Configurer l&#39;importateur d&#39;interrogation {#configure-polling-importer}
 
 Pour que le courrier électronique soit introduit dans le référentiel, il est nécessaire de configurer un importateur d’interrogation et de configurer ses propriétés manuellement dans le référentiel.
 
@@ -174,25 +174,26 @@ Pour que le courrier électronique soit introduit dans le référentiel, il est 
 
    Par exemple, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
-* Sélectionner l&#39; **[!UICONTROL Ajoute]**
+* Sélectionner **[!UICONTROL Ajouter]**
 
    ![interrogation-importateur](assets/polling-importer.png)
 
 * **[!UICONTROL Type]**
 
-   *(Obligatoire)* Appuyez sur la touche pour sélectionner `POP3 (over SSL)`.
+   *(Obligatoire)* Tirez vers le bas pour sélectionner  `POP3 (over SSL)`.
 
 * **[!UICONTROL URL]**
 
    *(Obligatoire)* Serveur de messagerie sortant. Par exemple, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Importer dans Path]**&amp;amp ; ast;
+* **[!UICONTROL Importer dans Path]**&amp;ast ;
 
-   *(Obligatoire)* Définissez ce paramètre sur `/content/usergenerated/mailFolder/postEmails`en accédant au `postEmails`dossier et en sélectionnant **OK**.
+   *(Obligatoire)* Définissez cette variable sur  `/content/usergenerated/mailFolder/postEmails`
+en accédant au  `postEmails`dossier et en sélectionnant  **OK**.
 
 * **[!UICONTROL Intervalle de mise à jour en secondes]**
 
-   *(Facultatif)* Le serveur de messagerie configuré pour le service de messagerie par défaut peut avoir des exigences concernant la valeur de l’intervalle de mise à jour. Par exemple, Gmail peut nécessiter un intervalle de `300`temps.
+   *(Facultatif)* Le serveur de messagerie configuré pour le service de messagerie par défaut peut avoir des exigences concernant la valeur de l’intervalle de mise à jour. Par exemple, Gmail peut nécessiter un intervalle de `300`.
 
 * **[!UICONTROL Connexion]**
 
@@ -206,19 +207,19 @@ Pour que le courrier électronique soit introduit dans le référentiel, il est 
 
 ### Modifier le protocole pour le nouvel importateur d&#39;interrogation {#adjust-protocol-for-new-polling-importer}
 
-Une fois la nouvelle configuration d&#39;interrogation enregistrée, il est nécessaire de modifier davantage les propriétés de l&#39;importateur de messages électroniques d&#39;abonnement afin de modifier le protocole de `POP3` à `emailreply`.
+Une fois la nouvelle configuration d&#39;interrogation enregistrée, il est nécessaire de modifier davantage les propriétés de l&#39;importateur de messages électroniques de l&#39;abonnement afin de remplacer le protocole `POP3` par `emailreply`.
 
-Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Utilisation de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) :
 
 * Connectez-vous à l’éditeur Principal avec les droits d’administrateur et accédez à [https://&lt;serveur>:&lt;port>/crx/de/index.jsp#/etc/importateurs/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Sélectionnez la nouvelle configuration et modifiez les propriétés suivantes :
 
-   * **feedType**: Remplacer `pop3s` par **`emailreply`**
-   * **source**: Remplacez le protocole de la source `pop3s://` par **`emailreply://`**
+   * **feedType** : Remplacer  `pop3s` par  **`emailreply`**
+   * **source** : Remplacez le protocole de la source  `pop3s://` par  **`emailreply://`**
 
 ![vote-protocole](assets/polling-protocol.png)
 
 Les triangles rouges indiquent les propriétés modifiées. Veillez à enregistrer les modifications :
 
-* Select **[!UICONTROL Save All]**.
+* Sélectionnez **[!UICONTROL Enregistrer tout]**.
 
