@@ -37,7 +37,7 @@ Pour les meilleures pratiques d’administration, de développement ou de créat
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
-## OAK {#oak}
+## OAK  {#oak}
 
 [OAK](/help/sites-deploying/platform.md) est un référentiel de contenu hiérarchique évolutif et performant qui constitue la base d’AEM.
 
@@ -75,9 +75,9 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 AEM Communities simplifie la création et la gestion de communautés sur site. Les bonnes pratiques pour AEM Communities sont décrites ici :
 
-[Communauté Content Store](/help/communities/working-with-srp.md) - Discute de la nouvelle fonctionnalité d’enregistrement partagé pour le contenu généré par l’utilisateur et des considérations à prendre en compte pour choisir la [topologie](/help/communities/topologies.md)sous-jacente.
+[Communauté Content Store](/help/communities/working-with-srp.md)  - Discute de la nouvelle fonctionnalité d’enregistrement partagé pour le contenu généré par l’utilisateur (UGC) et des considérations à prendre en compte lors du choix de la  [topologie](/help/communities/topologies.md) sous-jacente.
 
-[Déploiements recommandés pour les communautés](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Décrit les déploiements recommandés pour les communautés. |
+[Déploiements recommandés pour les communautés](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - Décrit les déploiements recommandés pour les communautés. |
 
 ## Interface utilisateur {#ui}
 
@@ -96,7 +96,7 @@ Les meilleures pratiques relatives à la performance sont répertoriées ici :
   <tr>
    <td>Meilleures pratiques pour l’assurance qualité</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Meilleures pratiques pour l’assurance qualité</a></td>
-   <td>A standardized overview of the issues involved with defining a Test Concept specifically for performance tests on your <em>publish</em> environment. Il intéressera principalement les ingénieurs d’assurance qualité, les chefs de projets et les administrateurs système.</td>
+   <td>Présentation standardisée des problèmes liés à la définition d'un concept de test spécifiquement pour les tests de performances sur votre environnement <em>publish</em>. Il intéressera principalement les ingénieurs d’assurance qualité, les chefs de projets et les administrateurs système.</td>
   </tr>
   <tr>
    <td>Utilisation de Dispatcher avec un CDN </td>
