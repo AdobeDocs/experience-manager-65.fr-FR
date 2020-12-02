@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -28,11 +28,11 @@ L’interface utilisateur tactile d’AEM s’accompagne de plusieurs principes 
 
 L’interface utilisateur convient à la fois aux appareils mobiles et aux ordinateurs de bureau. Cependant, au lieu de créer deux styles distincts, Adobe a décidé d’utiliser un seul style qui fonctionne pour tous les écrans et terminaux.
 
-Tous les modules utilisent la même mise en page de base, AEM ceci peut être considéré comme :
+Tous les modules utilisent la même disposition de base. Dans AEM, cela se traduit visuellement comme suit :
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
-La mise en page respecte un style de conception réactif et s’adapte à la taille du périphérique/de la fenêtre que vous utilisez.
+La disposition adhère au style Responsive Design et s’adapte à la taille de l’appareil ou de la fenêtre que vous utilisez.
 
 Par exemple, si la résolution passe sous 1 024 pixels (comme c’est le cas sur un appareil mobile), l’affichage est adapté en conséquence :
 
@@ -55,7 +55,7 @@ La barre d’en-tête affiche des éléments globaux, parmi lesquels :
 
 Le contenu de cette barre varie en fonction de l’emplacement. Elle affiche des outils permettant de contrôler la vue ou des ressources dans la page ci-dessous. La barre d’outils est propre au produit, mais elle contient des éléments communs.
 
-La barre d’outils affiche les actions actuellement disponibles à n’importe quel emplacement :
+Quel que soit l’emplacement, la barre d’outils affiche les actions actuellement disponibles :
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
@@ -128,9 +128,9 @@ L’onglet Composants vous propose un éventail de composants à sélectionner. 
 
 ### Recouvrements {#overlays}
 
-Ces incrustations recouvrent le cadre de contenu et sont utilisées par les [calques](#layer) pour appliquer le mécanisme d’interaction (de manière complètement transparente) avec les composants et leur contenu.
+Ces recouvrements recouvrent le cadre de contenu et sont utilisés par les [calques](#layer) pour appliquer le mécanisme d’interaction (de manière complètement transparente) avec les composants et leur contenu.
 
-Les incrustations résident dans le cadre d’éditeur (avec tous les autres éléments de création de pages) même si, en fait, elles recouvrent les composants appropriés dans le cadre de contenu.
+Les recouvrements résident dans le cadre d’éditeur (avec tous les autres éléments de création de pages) même si, en fait, ils recouvrent les composants appropriés dans le cadre de contenu.
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -149,7 +149,7 @@ AEM s’accompagne de plusieurs calques qui sont déjà implémentés pour la cr
 >
 >Les calques constituent une puissante solution qui affecte la manière dont l’utilisateur affiche le contenu de la page et interagit avec celui-ci. Lorsque vous développez vos propres calques, vous devez veiller à ce qu’ils soient effacés lorsque vous les quittez.
 
-### Sélecteur de calques {#layer-switcher}
+### Sélecteur de calques   {#layer-switcher}
 
 Le sélecteur de calques vous permet de choisir le calque à utiliser. Lorsqu’il est fermé, il indique le calque en cours d’utilisation.
 
@@ -167,7 +167,7 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations sur les concepts relatifs à l’interface utilisateur tactile, reportez-vous à l’article [Concepts de l’interface utilisateur](/help/sites-developing/touch-ui-concepts.md)tactile AEM.
+Pour plus d&#39;informations sur les concepts relatifs à l&#39;interface utilisateur tactile, consultez l&#39;article [Concepts de l&#39;interface utilisateur tactile AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Pour plus d’informations techniques, voir la documentation [JS définie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page tactile.
+Pour plus d’informations techniques, voir la [documentation JS set](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page tactile.
 
