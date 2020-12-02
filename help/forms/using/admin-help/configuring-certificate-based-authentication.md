@@ -24,11 +24,11 @@ En général, User Management effectue l’authentification à l’aide d’un n
 
 Pour utiliser l’authentification par certificat, importez dans Trust Store un certificat d’une autorité de certification en qui vous avez confiance, puis créez un mappage de certificat.
 
-## Importation du certificat d’une autorité de certification {#import-the-ca-certificate}
+## Importation du certificat d’une autorité de certification  {#import-the-ca-certificate}
 
 Lors de l’importation du certificat, sélectionnez les options Approbation d’authentification de certificat et Approbation d’identité, et d’autres options selon les besoins. Pour plus d’informations sur l’importation de certificats, voir [Gestion de certificats](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
-## Configuration du mappage de certificat {#configuring-certificate-mapping}
+## Configuration du mappage de certificat  {#configuring-certificate-mapping}
 
 Pour activer l’authentification des utilisateurs par certificat, créez un mappage de certificat. Un *mappage de certificats* associe les attributs d’un certificat et ceux des utilisateurs d’un domaine. Vous pouvez mapper plusieurs certificats au même domaine.
 
@@ -51,7 +51,7 @@ Lorsque vous testez un certificat, User Management télécharge les contrôles p
 
    Si le contenu de l’attribut dans le certificat est différent du contenu de l’attribut de l’utilisateur dans la base de données de User Management, vous pouvez utiliser une expression régulière Java (regex) pour faire correspondre les deux attributs. Par exemple, si les noms communs des certificats sont du type *Alex Dupont (Authentification)* et *Alex Dupont (Signature)* et si le nom commun dans la base de données de User Management est *Alex Dupont*, vous pouvez utiliser une expression regex pour extraire la partie requise de l’attribut du certificat (en l’occurrence, *Alex Dupont*). L’expression régulière que vous spécifiez doit être conforme à la spécification regex Java.
 
-   Vous pouvez transformer cette expression en spécifiant l’ordre des groupes dans la zone Ordre personnalisé. The custom order is used with the `java.util.regex.Matcher.replaceAll()` method. Le comportement observé correspond à celui de cette méthode et la chaîne d’entrée (l’ordre personnalisé) doit être spécifiée en conséquence.
+   Vous pouvez transformer cette expression en spécifiant l’ordre des groupes dans la zone Ordre personnalisé. L&#39;ordre personnalisé est utilisé avec la méthode `java.util.regex.Matcher.replaceAll()`. Le comportement observé correspond à celui de cette méthode et la chaîne d’entrée (l’ordre personnalisé) doit être spécifiée en conséquence.
 
    Pour tester l’expression regex, saisissez une valeur dans la zone Paramètre de test, puis cliquez sur Tester.
 
