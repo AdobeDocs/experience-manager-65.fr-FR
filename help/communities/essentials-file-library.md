@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Bibliothèque de fichiers Essentials {#file-library-essentials}
+# Fichier Library Essentials {#file-library-essentials}
 
 Cette page fournit les informations essentielles pour utiliser la fonction de bibliothèque de fichiers.
 
@@ -48,7 +48,7 @@ Cette page fournit les informations essentielles pour utiliser la fonction de bi
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir Fonctionnalité de la bibliothèque de <a href="file-library.md">fichiers</a></td>
+   <td>Voir <a href="file-library.md">Fonction de bibliothèque de fichiers</a></td>
   </tr>
  </tbody>
 </table>
@@ -65,21 +65,21 @@ Cette page fournit les informations essentielles pour utiliser la fonction de bi
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site communautaire qui comprend la fonction [Bibliothèque de](functions.md#file-library-function)fichiers, comprend un `file library` composant configuré.
+Une structure de site communautaire qui comprend la fonction [Bibliothèque de fichiers](functions.md#file-library-function), comprend un composant `file library` configuré.
 
 ### Accès aux commentaires publiés pour les bibliothèques de fichiers (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
 L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.
-Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
+Voir [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
 
-AEM 6.1 Collectivités, l&#39;utilisation d&#39;un magasin [](working-with-srp.md) commun pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communautés, l&#39;utilisation d&#39;un [magasin commun](working-with-srp.md) pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
 
 **L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources d&#39;Enregistrement - présentation et présentation de l&#39;utilisation du référentiel.
-* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP.
-* [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md) - directives de codage.
-* [SocialUtils Refactoring](socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
+* [Aperçu](srp.md)  du fournisseur de ressources d&#39;Enregistrement - présentation et présentation de l&#39;utilisation du référentiel.
+* [SRP et UGC Essentials](srp-and-ugc.md)  - Exemples et méthodes d&#39;utilitaire SRP.
+* [Accès à l&#39;UGC avec des directives de codage SRP](accessing-ugc-with-srp.md) .
+* [SocialUtils Refactoring](socialutils.md)  - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
 
