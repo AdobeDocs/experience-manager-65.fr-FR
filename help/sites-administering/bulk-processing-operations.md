@@ -17,7 +17,7 @@ ht-degree: 3%
 ---
 
 
-# Opérations de traitement en masse {#bulk-processing-operations}
+# Opérations de traitement en bloc {#bulk-processing-operations}
 
 ## Présentation {#introduction}
 
@@ -25,7 +25,7 @@ Avec la dernière version de AEM, le bouton Sélectionner tout a été étendu �
 
 Les actions clés ont été activées pour l&#39;opération en bloc : **Déplacer**, **Supprimer** et **Copier**. Une nouvelle boîte de dialogue informera les clients des actions pour lesquelles le traitement en vrac n&#39;est pas disponible.
 
-## How To Use {#how-to-use}
+## Utilisation de {#how-to-use}
 
 Un nouveau bouton intitulé **Sélectionner tout** a été ajouté aux vues Carte, Liste ou Colonne. Ce bouton peut être utilisé dans n’importe quelle vue pour sélectionner tous les éléments du jeu de données.
 
@@ -58,7 +58,7 @@ Il en va de même pour la Vue des Listes :
 
 ![](assets/patru_modified.png)
 
-### Bulk Selection in List View {#bulk-selection-in-list-view}
+### Sélection en masse dans la Vue de Liste {#bulk-selection-in-list-view}
 
 Dans la Vue de Liste, utilisez le bouton **Sélectionner tout** ou cochez la case à gauche pour la sélection en bloc.
 
@@ -74,12 +74,12 @@ Dans la Vue de Liste, utilisez le bouton **Sélectionner tout** ou cochez la cas
 
 ## Opérations activées en bloc {#bulk-enabled-operations}
 
-Après sélection, l’une des trois actions activées en bloc peut être exécutée : **Déplacer**, **copier** ou **supprimer**.
+Après sélection, l’une des trois actions activées en bloc peut être exécutée : **Déplacer**, **Copier** ou **Supprimer**.
 
-Ici, l’opération **Déplacer** est exécutée sur les ressources sélectionnées ci-dessus. Dans n’importe quelle vue, toutes les ressources sont alors déplacées vers l’emplacement choisi et pas seulement celles qui sont chargées à l’écran.
+Ici, l&#39;opération **Déplacer** est exécutée sur les ressources sélectionnées ci-dessus. Dans n’importe quelle vue, toutes les ressources sont alors déplacées vers l’emplacement choisi et pas seulement celles qui sont chargées à l’écran.
 
 ![](assets/noua.png)
 
-Pour les autres opérations qui ne sont pas activées en bloc, comme **Télécharger,** un avertissement s’affiche indiquant que seuls les éléments chargés dans le navigateur seront inclus dans l’opération.
+Pour les autres opérations qui ne sont pas activées en bloc, comme **Télécharger,** un avertissement s&#39;affiche indiquant que seuls les éléments chargés dans le navigateur seront inclus dans l&#39;opération.
 
 ![](assets/zece.png)
