@@ -1,8 +1,8 @@
 ---
 title: Conventions de dénomination pour le test des ressources
 seo-title: Conventions de dénomination des ressources
-description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination du référentiel Java Content. Toutefois, Adobe Experience Manager impose d’autres conventions pour le nom des nœuds de ressource.
-seo-description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination du référentiel Java Content. Toutefois, Adobe Experience Manager impose d’autres conventions pour le nom des nœuds de ressource.
+description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository. Toutefois, Adobe Experience Manager impose d’autres conventions pour le nom des nœuds de ressource.
+seo-description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository. Toutefois, Adobe Experience Manager impose d’autres conventions pour le nom des nœuds de ressource.
 uuid: 6b622a60-90e8-461e-9b67-42c11c7038f9
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
