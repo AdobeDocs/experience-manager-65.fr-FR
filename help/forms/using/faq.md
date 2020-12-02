@@ -23,7 +23,7 @@ ht-degree: 82%
 
 Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts, et les plages des formulaires HTML5.
 
-## Mise en page {#layout}
+## Disposition {#layout}
 
 1. Pourquoi les codes à barres et le champ de signature ne s’affichent-ils pas dans mon formulaire ?
 
@@ -178,13 +178,13 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Réponse:
 
-   * La prise en charge du script xfa.connectionSet est limitée. Pour connectionSet, seul l’appel côté serveur du service Web est pris en charge. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
+   * La prise en charge du script xfa.connectionSet est limitée. Pour connectionSet, seul l’appel côté serveur du service Web est pris en charge. Pour plus d’informations, voir [Prise en charge des scripts](/help/forms/using/scripting-support.md).
    * Il n’existe aucune prise en charge de $record et $data dans les scripts côté client. Cependant, si les scripts sont écrits dans un bloc formReady ou layoutReady, les scripts fonctionnent toujours car ces événements s’exécutent côté serveur.
    * Les scripts spécifiques des éléments XFA constitués d’illustrations (ou les éléments de texte constitués de légendes quand il s’agit de champs) ne sont pas pris en charge.
 
 1. Existe-t-il des restrictions concernant l’utilisation de formCalc ?
 
-   Réponse : seul un sous-ensemble de scripts formCalc est actuellement implémenté. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
+   Réponse : seul un sous-ensemble de scripts formCalc est actuellement implémenté. Pour plus d’informations, voir [Prise en charge des scripts](/help/forms/using/scripting-support.md).
 
 1. Existe-t-il une convention de dénomination recommandée et des mots-clés réservés à éviter ?
 
@@ -199,8 +199,8 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
    >
    >Le flottement des champs n’est pas activé par défaut. Vous pouvez utiliser Forms Designer pour définir la propriété de flottement des champs.
 
-   1. Open CRXde lite and navigate to the `/content/xfaforms/profiles/default` node.
-   1. Add a property `mfDataDependentFloatingField`of type String and set the value of the property to `true`.
+   1. Ouvrez CRXde Lite et accédez au noeud `/content/xfaforms/profiles/default`.
+   1. Ajoutez une propriété `mfDataDependentFloatingField`de type String et définissez la valeur de la propriété sur `true`.
    1. Cliquez sur **Enregistrer tout**. Désormais, les champs flottants sont activés pour les formulaires HTML à l’aide du profil de rendu mis à jour.
 
       >[!NOTE]
