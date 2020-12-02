@@ -45,7 +45,7 @@ Vous avez besoin d’une clé privée et d’un certificat public pour les insta
 * Les certificats doivent être contenus au format pkcs#12 ou JKS. En outre, le certificat contenu dans le format « CER » peut également être ajouté à Granite Truststore.
 * Les certificats peuvent être auto-signés ou signés par une autorité de certification reconnue.
 
-### Format JKS {#jks-format}
+### Format JKS  {#jks-format}
 
 Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java`keytool` ](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
 
@@ -67,7 +67,7 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publier |
    |---|---|---|
    | -alias | Auteur  | publish |
    | -keystore | author.keystore | publish.keystore |
@@ -78,9 +78,9 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publier |
    |---|---|---|
-   | -alias | Auteur  | publish |
+   | -alias | Auteur  | publier |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -94,7 +94,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publier |
    |---|---|---|
    | -out | author.key | publish.key |
 
@@ -104,7 +104,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publier |
    |---|---|---|
    | -key | author.key | publish.key |
    | -out | author_request.csr | publish_request.csr |
@@ -117,7 +117,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publier |
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -in | author_request.csr | publish_request.csr |
@@ -129,12 +129,12 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Option | Création | Publication |
+   | Option | Création | Publier |
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -in | author.cer | publish.cer |
-   | -name | Auteur  | publish |
+   | -name | Auteur  | publier |
 
 ## Installation de la clé privée et du TrustStore sur l’auteur {#install-the-private-key-and-truststore-on-author}
 
@@ -145,7 +145,7 @@ Installez les éléments suivants sur l’instance d’auteur :
 
 Pour exécuter la procédure ci-après, vous devez être connecté en tant qu’administrateur de l’instance d’auteur.
 
-### Installation de la clé d’auteur privée {#install-the-author-private-key}
+### Installation de la clé d’auteur privée  {#install-the-author-private-key}
 
 1. Ouvrez la page de gestion des utilisateurs pour l’instance d’auteur. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Pour ouvrir les propriétés de votre compte utilisateur, appuyez ou cliquez sur votre nom d’utilisateur.
@@ -188,7 +188,7 @@ Installez les éléments suivants sur l’instance de publication :
 
 Pour exécuter la procédure suivante, vous devez être connecté en tant qu’administrateur de l’intance de publication.
 
-### Installation de la clé de publication privée {#install-the-publish-private-key}
+### Installation de la clé de publication privée  {#install-the-publish-private-key}
 
 1. Ouvrez la page de gestion des utilisateurs pour l’instance de publication. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Pour ouvrir les propriétés de votre compte utilisateur, appuyez ou cliquez sur votre nom d’utilisateur. 
@@ -199,7 +199,7 @@ Pour exécuter la procédure suivante, vous devez être connecté en tant qu’a
 1. Saisissez le nom de l’alias et le mot de passe du magasin de clés. Saisissez le nom de l’alias et le mot de passe de la clé privée, puis cliquez sur Envoyer.
 1. Fermez la boîte de dialogue Gestion du Keystore. 
 
-### Installation du certificat d’auteur {#install-the-author-certificate}
+### Installation du certificat d’auteur  {#install-the-author-certificate}
 
 1. Ouvrez la page de gestion des utilisateurs pour l’instance de publication. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Recherchez le compte utilisateur que vous utilisez pour exécuter les demandes de réplication et cliquez ou appuyez sur le nom de l’utilisateur.
@@ -209,9 +209,9 @@ Pour exécuter la procédure suivante, vous devez être connecté en tant qu’a
 1. Assurez-vous que l’option Associer le certificat à l’utilisateur est sélectionnée. Cliquez sur Sélectionner le fichier de certificat, sélectionnez author.cer sélectionné, puis cliquez sur Ouvrir. 
 1. Cliquez sur Envoyer, puis fermez le boîte de dialogue Gestion de TrustStore. 
 
-## Configuration du service HTTP sur la publication {#configure-the-http-service-on-publish}
+## Configuration du service HTTP sur la publication  {#configure-the-http-service-on-publish}
 
-Configurez les propriétés du service HTTP basé sur Apache Felix Jetty sur l’instance de publication de sorte qu’il utilise HTTPS lors de l’accès à Granite Keystore. The PID of the service is `org.apache.felix.http`.
+Configurez les propriétés du service HTTP basé sur Apache Felix Jetty sur l’instance de publication de sorte qu’il utilise HTTPS lors de l’accès à Granite Keystore. Le PID du service est `org.apache.felix.http`.
 
 Le tableau suivant répertorie les propriétés OSGi que vous devez configurer si vous utilisez la console web. 
 
