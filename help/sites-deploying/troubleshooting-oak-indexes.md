@@ -28,15 +28,15 @@ Il est important de faire la distinction entre la réindexation qui prend beauco
 
 Voir [Meilleures pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md) pour obtenir des informations supplémentaires indiquant quand et comment réindexer le contenu. 
 
-## Détection initiale {#initial-detection}
+## Détection initiale  {#initial-detection}
 
 L’indexation lente de la détection initiale nécessite de parcourir les MBeans `IndexStats` JMX. Sur l’instance AEM affectée, procédez comme suit :
 
-1. Open the Web Console and click the JMX tab or go to https://&lt;host>:&lt;port>/system/console/jmx (for example, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
-1. Navigate to the `IndexStats` Mbeans.
+1. Ouvrez la console Web et cliquez sur l’onglet JMX ou accédez à https://&lt;hôte>:&lt;port>/system/console/jmx (par exemple, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
+1. Accédez aux mbeans `IndexStats`.
 1. Ouvrez les `IndexStats` MBeans pour &quot; `async`&quot; et &quot; `fulltext-async`&quot;.
 
-1. For both MBeans, check if the **Done** timestamp and **LastIndexTime** timestamp are less than 45 mins from the current time.
+1. Pour les deux MBeans, vérifiez si l’horodatage **Done** et **LastIndexTime** sont inférieurs à 45 minutes de l’heure actuelle.
 
 1. Pour un MBean, si la valeur temporelle (**Done** ou **LastIndexedTime**) date de plus de 45 minutes avant l’heure actuelle, alors la tâche d’index est défectueuse ou prend trop de temps. Les index asynchrones sont donc obsolètes.
 
@@ -46,22 +46,22 @@ Une fermeture forcée entraîne l’arrêt de l’indexation asynchrone par AEM 
 
 1. Tout d’abord, déterminez si une instance AEM a été arrêtée de manière forcée (le processus AEM a été interrompu de manière brutale ou une coupure de courant s’est produite), puis redémarrée. 
 
-   * [aem journalisation](/help/sites-deploying/configure-logging.md) peut être examinée à cette fin.
+   * [aem ](/help/sites-deploying/configure-logging.md) connexion peut être examinée à cette fin.
 
 1. Si la fermeture forcée se produit, au redémarrage, AEM suspend automatiquement la réindexation pendant 30 minutes. 
 1. Attendez environ 45 minutes pour qu’AEM reprenne les opérations d’indexation asynchrones normales. 
 
-## Pool de threads surchargé {#thread-pool-overloaded}
+## Pool de threads surchargé  {#thread-pool-overloaded}
 
 >[!NOTE]
 >
->For AEM 6.1, ensure that [AEM 6.1 CFP 11](https://helpx.adobe.com/experience-manager/release-notes-aem-6-1-cumulative-fix-pack.html) is installed.
+>Pour AEM 6.1, assurez-vous que [AEM 6.1 CFP 11](https://helpx.adobe.com/experience-manager/release-notes-aem-6-1-cumulative-fix-pack.html) est installé.
 
 Dans des cas exceptionnels, le pool de threads utilisé pour gérer l’indexation asynchrone risque d’être surchargé. Pour isoler le processus d’indexation, un pool de threads peut être configuré afin d’éviter qu’une autre tâche AEM interfère avec la capacité d’indexation du contenu en temps voulu d’Oak. Pour ce faire, vous devez :
 
 1. Définir un pool de nouveaux threads isolés que le planificateur Apache Sling peut utiliser pour l’indexation asynchrone :
 
-   * On the affected AEM instance, navigate to AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler or go to https://&lt;host>:&lt;port>/system/console/configMgr (for example, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
+   * Sur l’instance AEM affectée, accédez à AEM OSGi Web Console>OSGi>Configuration>Apache Sling Planificateur ou à https://&lt;hôte>:&lt;port>/system/console/configMgr (par exemple, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)).
    * Ajoutez une entrée au champ « Allowed Thread Pools » (Pools de threads autorisés), avec la valeur « oak ».
    * Cliquez sur Enregistrer en bas à droite pour enregistrer les modifications. 
 
@@ -69,7 +69,7 @@ Dans des cas exceptionnels, le pool de threads utilisé pour gérer l’indexati
 
 1. Vérifiez que le nouveau pool de threads du planificateur Apache Sling est enregistré et s’affiche dans la console web d’état du planificateur Apache Sling. 
 
-   * Navigate to the AEM OSGi Web console>Status>Sling Scheduler or go to https://&lt;host>:&lt;port>/system/console/status-slingscheduler (for example, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
+   * Accédez à l’AEM OSGi Web Console>Status>Sling Planificateur ou accédez à https://&lt;hôte>:&lt;port>/system/console/status-slingScheduler (par exemple, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)).
    * Vérifiez que les entrées suivantes du pool existent :
 
       * ApacheSlingoak
@@ -81,18 +81,18 @@ Dans des cas exceptionnels, le pool de threads utilisé pour gérer l’indexati
 
 Si un trop grand nombre de modifications et de validations sont effectuées sur le référentiel en peu de temps, l’indexation peuvent être retardées à cause d’une file d’attente d’osbervation pleine. Tout d’abord, déterminez si la file d’attente est pleine :
 
-1. Go to the Web Console and click the JMX tab or go to https://&lt;host>:&lt;port>/system/console/jmx (for example, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+1. Accédez à la console Web et cliquez sur l’onglet JMX ou accédez à https://&lt;hôte>:&lt;port>/system/console/jmx (par exemple, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
 1. Ouvrez le MBean Statistiques de référentiel Oak et déterminez si une valeur `ObservationQueueMaxLength` est supérieure à 10 000. 
 
-   * In normal operations, this maximum value must always eventually reduce to zero (especially in the `per second` section) so verify that the `ObservationQueueMaxLength`&#39;s seconds metrics are 0.
+   * Dans les opérations normales, cette valeur maximale doit toujours éventuellement être ramenée à zéro (en particulier dans la section `per second`) afin de vérifier que les mesures en secondes de `ObservationQueueMaxLength` sont égales à 0.
    * Si les valeurs sont de 10 000 ou plus et augmentent progressivement, cela signifie qu’au moins une file d’attente (probablement plusieurs) ne peut pas être traitée aussi rapidement pendant que de nouvelles modifications (commits) ont lieu.
    * Chaque file d’attente d’observation est limitée (10 000 par défaut), et si la file d’attente atteint cette limite, son traitement se détériore.
-   * Lorsque vous utilisez MongoMK, comme la longueur des files d’attente augmente beaucoup, la performance du cache Oak interne se détériore. This correlation can be seen in an increased `missRate` for the `DocChildren` cache in the `Consolidated Cache` statistics MBean.
+   * Lorsque vous utilisez MongoMK, comme la longueur des files d’attente augmente beaucoup, la performance du cache Oak interne se détériore. Cette corrélation est visible dans une augmentation de `missRate` pour le cache `DocChildren` dans le MBean des statistiques `Consolidated Cache`.
 
 1. Pour éviter de dépasser les limites acceptables des files d’attente d’observation, il est recommandé de procéder comme suit :
 
    * Diminuer le débit constant des validations. De courts pics de validations sont acceptables, mais le rythme constant doit être réduit. 
-   * Increase the size of the `DiffCache` as described in [Performance tuning tips > Mongo Storage Tuning > Document cache size](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html#main-pars_text_3).
+   * Augmentez la taille de `DiffCache` comme décrit dans la section [Conseils de réglage des performances > Réglage de l’Enregistrement Mongo > Taille du cache de Document](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html#main-pars_text_3).
 
 ## Identification d’un processus de réindexation bloqué et résolution du problème {#identifying-and-remediating-a-stuck-re-indexing-process}
 
@@ -113,48 +113,48 @@ Pour identifier et résoudre un processus de réindexation bloqué, procédez co
 
       * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
       * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
-   * Collect data from the async `IndexStats` MBean:
+   * Collecte de données à partir du `IndexStats` MBean async :
 
       * Accédez à AEM console Web OSGi>Main>JMX>IndexStat>async
 
-         or go to [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-   * Use [oak-run.jar&#39;s console mode](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) to collect the details of what exists under the * `/:async`* node.
-   * Collect a list of repository checkpoints by using the `CheckpointManager` MBean:
+         ou accédez à [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+   * Utilisez le mode console [oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) pour collecter les détails de ce qui existe sous le noeud * `/:async`*.
+   * Collectez une liste de points de contrôle du référentiel à l&#39;aide du `CheckpointManager` MBean :
 
       * aem console Web OSGi>Main>JMX>CheckpointManager>listCheckpoints()
 
-         or go to [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+         ou accédez à [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 
 
 1. Après avoir collecté toutes les informations décrites à l’étape 1, redémarrez AEM.
 
    * Le redémarrage d’AEM peut résoudre le problème dans le cas d’un chargement simultané élevé (un élément de la file d’attente d’observation ou élément similaire). 
-   * If a restart does not solve the problem, open an issue with [Adobe Customer Care](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) and provide all the information collected in Step 1.
+   * Si un redémarrage ne résout pas le problème, ouvrez un problème avec [le service à la clientèle de l’Adobe ](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) et fournissez toutes les informations collectées à l’étape 1.
 
 ## Abandon sécurisé de la réindexation asynchrone {#safely-aborting-asynchronous-re-indexing}
 
-Re-indexing can be safely aborted (stopped before it is completed) via the `async, async-reindex`and f `ulltext-async` indexing lanes ( `IndexStats` Mbean). For more information, also see the Apache Oak documentation on [How to Abort Reindexing](https://jackrabbit.apache.org/oak/docs/query/indexing.html#abort-reindex). En outre, il convient de tenir compte du fait que :
+La réindexation peut être interrompue en toute sécurité (arrêtée avant d&#39;être terminée) par les voies d&#39;indexation `async, async-reindex`et f `ulltext-async` ( `IndexStats` Mbean). Pour plus d’informations, consultez également la documentation d’Apache Oak sur [Comment annuler la réindexation](https://jackrabbit.apache.org/oak/docs/query/indexing.html#abort-reindex). En outre, il convient de tenir compte du fait que :
 
 * La réindexation des index Lucene et Lucene Property peut être abandonnée, car ils sont naturellement asynchrones. 
-* The re-indexing of Oak Property Indexes can only be aborted if re-indexing was intiated via the `PropertyIndexAsyncReindexMBean`.
+* La réindexation des index de propriétés d&#39;Oak ne peut être abandonnée que si la réindexation a été initiée par l&#39;intermédiaire de `PropertyIndexAsyncReindexMBean`.
 
 Pour abandonner la réindexation, procédez comme suit :
 
 1. Identifiez le MBean IndexStats qui contrôle la piste de réindexation qui doit être désactivée. 
 
-   * Navigate to the appropriate IndexStats MBean via the JMX console by going to either AEM OSGi Web Console>Main>JMX or https://&lt;host>:&lt;port>/system/console/jmx (for example, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
-   * Open the IndexStats MBean based on the re-indexing lane that you wish to stop ( `async`, `async-reindex`, or `fulltext-async`)
+   * Accédez au MBean IndexStats approprié via la console JMX en accédant à AEM console Web OSGi>Main>JMX ou à https://&lt;hôte>:&lt;port>/system/console/jmx (par exemple, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
+   * Ouvrez le MBean IndexStats en fonction de la voie de réindexation que vous souhaitez arrêter ( `async`, `async-reindex` ou `fulltext-async`).
 
-      * Pour identifier la voie appropriée et donc l’instance MBean IndexStats, consultez la propriété &quot;async&quot; des index Oak. The &quot;async&quot; property will contain the lane name: `async`, `async-reindex`, or `fulltext-async`.
+      * Pour identifier la voie appropriée et donc l’instance MBean IndexStats, consultez la propriété &quot;async&quot; des index Oak. La propriété &quot;async&quot; contient le nom de la voie : `async`, `async-reindex` ou `fulltext-async`.
       * La piste est également disponible en accédant au gestionnaire d’index d’AEM dans la colonne « Async ». Pour accéder au gestionnaire d’index, rendez-vous sur Opération > Diagnostic > Gestionnaire d’index.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
-1. Invoke the `abortAndPause()` command on the appropriate `IndexStats` MBean.
+1. Appelez la commande `abortAndPause()` sur le `IndexStats` MBean approprié.
 1. Marquez correctement la définition de l&#39;index Oak pour empêcher la reprise de la réindexation lorsque la voie d&#39;indexation reprend.
 
-   * When re-indexing an **existing** index, set the reindex property to false
+   * Lors de la réindexation d’un index **existant**, définissez la propriété reindex sur false.
 
       * `/oak:index/someExistingIndex@reindex=false`
    * Pour un **nouvel** index, vous pouvez également :
@@ -168,7 +168,7 @@ Pour abandonner la réindexation, procédez comme suit :
 
 1. Enfin, reprenez l’indexation asynchrone sur la piste d’indexation abandonnée. 
 
-   * In the `IndexStats` MBean that issued the `abortAndPause()` command in Step 2, invoke the `resume()`command.
+   * Dans le `IndexStats` MBean qui a émis la commande `abortAndPause()` à l&#39;étape 2, appelez la commande `resume()`.
 
 ## Prévention de la réindexation lente {#preventing-slow-re-indexing}
 
