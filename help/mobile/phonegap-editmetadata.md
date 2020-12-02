@@ -24,9 +24,9 @@ ht-degree: 37%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-The **Manage App** tile and &quot;Manage App&quot; page provides a means to view and edit application metadata. Les métadonnées d’application sont nécessaires pour publier une application dans la boutique d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. See the [Manage App Tile](/help/mobile/phonegap-app-details-tile.md) for further details on common and iOS metadata.
+La mosaïque **Gérer l’application** et la page &quot;Gérer l’application&quot; permettent de vue et de modifier les métadonnées de l’application. Les métadonnées d’application sont nécessaires pour publier une application dans la boutique d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. Voir [Gérer la mosaïque d’application](/help/mobile/phonegap-app-details-tile.md) pour plus d’informations sur les métadonnées courantes et iOS.
 
-## Modification des données de l’application {#editing-the-app-data}
+## Modification des données de l&#39;application {#editing-the-app-data}
 
 Pour modifier les métadonnées de l’application :
 
@@ -34,7 +34,7 @@ Pour modifier les métadonnées de l’application :
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Pour vue ou modifier des détails en cliquant sur le bouton &quot;...&quot; dans le coin inférieur droit du volet **Gérer l’application** .
+1. Pour vue ou modifier des détails en cliquant sur le bouton &quot;...&quot; dans le coin inférieur droit de la mosaïque **Gérer l’application**.
 
 1. Saisissez ou vue les détails dans l’un des cinq onglets disponibles, comme illustré dans la figure ci-dessous.
 
@@ -59,7 +59,7 @@ Vous pouvez inclure des captures d’écran d’application au déploiement de m
 
 Pour ajouter une ressource en tant que capture d’écran :
 
-1. While in edit mode of the **Manage App** page, click add (plus icon).
+1. En mode d’édition de la page **Gérer l’application**, cliquez sur Ajouter (icône +).
 1. Sélectionnez le fichier et cliquez sur **Sélectionner** pour l’ajouter.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
