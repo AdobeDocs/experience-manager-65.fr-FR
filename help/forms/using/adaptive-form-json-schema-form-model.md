@@ -26,7 +26,7 @@ La création d’un formulaire adaptatif à l’aide d’un schéma JSON en tant
 * [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md)
 * [Schéma JSON](https://json-schema.org/)
 
-## Utilisation d’un schéma JSON comme modèle de formulaire  {#using-a-json-schema-as-form-model}
+## Utilisation d’un schéma JSON comme modèle de formulaire   {#using-a-json-schema-as-form-model}
 
 AEM Forms prend en charge la création d’un formulaire adaptatif en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation. Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
 
@@ -306,7 +306,7 @@ Vous trouverez ci-dessous un exemple de schéma JSON.
 }
 ```
 
-### Définitions de schéma réutilisables {#reusable-schema-definitions}
+### Définitions de schéma réutilisables  {#reusable-schema-definitions}
 
 Les touches de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Il est semblable à l’identification des types complexes dans XSD. Un exemple de schéma JSON dont la définition est fournie ci-dessous :
 
@@ -337,9 +337,9 @@ Les touches de définition sont utilisées pour identifier les schémas réutili
 
 L’exemple ci-dessus définit un enregistrement de client dans lequel chaque client dispose d’une expédition et d’une adresse de facturation. La structure des deux adresses est la même : les adresses indiquent une rue, la ville et un état. Il est donc préférable de ne pas dupliquer les adresses. Cela simplifie également l’ajout et la suppression de champs simples pour toutes les nouvelles modifications.
 
-## Préconfiguration des champs dans la définition du schéma JSON {#pre-configuring-fields-in-json-schema-definition}
+## Préconfiguration des champs dans la définition du schéma JSON  {#pre-configuring-fields-in-json-schema-definition}
 
-You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom adaptive form component. Un exemple est répertorié ci-dessous :
+Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de Schéma JSON en vue de le mapper à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
 
 ```json
 {
@@ -359,9 +359,9 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 }
 ```
 
-## Configuration de scripts ou d’expressions pour les objets de formulaire  {#configure-scripts-or-expressions-for-form-objects}
+## Configurer des scripts ou des expressions pour les objets de formulaire {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Vous pouvez préconfigurer des objets de formulaire pour [évaluer une expression](../../forms/using/adaptive-form-expressions.md) sur un événement de formulaire.
+JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Vous pouvez préconfigurer les objets de formulaire pour [évaluer une expression](../../forms/using/adaptive-form-expressions.md) sur un événement de formulaire.
 
 Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou scripts de formulaire adaptatif pour les composants de formulaire adaptatif. Par exemple, lorsque le événement d’initialisation est déclenché, le code ci-dessous définit la valeur du champ de téléphone et imprime une valeur dans le journal :
 
@@ -381,7 +381,7 @@ Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou 
 }
 ```
 
-Vous devez être membre du groupe [d’utilisateurs](/help/forms/using/forms-groups-privileges-tasks.md) Forms-power pour configurer des scripts ou des expressions pour l’objet de formulaire. Le tableau ci-dessous liste tous les événements de script pris en charge pour un composant de formulaire adaptatif.
+Vous devez être membre du [groupe d’utilisateurs des formulaires](/help/forms/using/forms-groups-privileges-tasks.md) pour configurer des scripts ou des expressions pour l’objet de formulaire. Le tableau ci-dessous liste tous les événements de script pris en charge pour un composant de formulaire adaptatif.
 
 <table>
  <tbody>
@@ -529,7 +529,7 @@ Vous devez être membre du groupe [d’utilisateurs](/help/forms/using/forms-gro
    <td> </td>
   </tr>
   <tr>
-   <td>Email</td>
+   <td>Courrier électronique</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -586,11 +586,11 @@ Vous devez être membre du groupe [d’utilisateurs](/help/forms/using/forms-gro
  </tbody>
 </table>
 
-Certains exemples d’utilisation de événements dans un JSON masquent un champ sur l’initialisation du événement et la configuration de la valeur d’un autre champ sur le événement de validation de valeur. Pour plus d’informations sur la création d’expressions pour les événements de script, voir Expressions [de formulaires](../../forms/using/adaptive-form-expressions.md)adaptatifs.
+Certains exemples d’utilisation de événements dans un JSON masquent un champ sur l’initialisation du événement et la configuration de la valeur d’un autre champ sur le événement de validation de valeur. Pour plus d’informations sur la création d’expressions pour les événements de script, voir [Expressions de formulaire adaptatif](../../forms/using/adaptive-form-expressions.md).
 
 Voici l’exemple de code JSON pour les exemples susmentionnés.
 
-### Masquage d’un champ sur l’initialisation du événement {#hiding-a-field-on-initialize-event}
+### Masquer un champ sur initialiser le événement {#hiding-a-field-on-initialize-event}
 
 ```json
 "name": {
