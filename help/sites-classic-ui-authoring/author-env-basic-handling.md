@@ -60,7 +60,7 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Les lancements  </strong></td>
-   <td>This helps you manage your <a href="/help/sites-classic-ui-authoring/classic-launches.md">launches</a>; these enable you to develop the content for a future release of one or more activated web pages.<br /> <i>Remarque : Dans l’interface utilisateur tactile, la plupart des mêmes fonctionnalités sont disponibles dans la console Sites, ainsi que dans le rail Références.</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
+   <td>Cela vous permet de gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a>; vous pouvez ainsi développer le contenu pour une prochaine publication d’une ou de plusieurs pages Web activées.<br /> <i>Remarque : Dans l’interface utilisateur tactile, la plupart des mêmes fonctionnalités sont disponibles dans la console Sites, ainsi que dans le rail Références.</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
   </tr>
   <tr>
    <td><strong>Boîte de réception </strong></td>
@@ -83,7 +83,7 @@ Les principales consoles sont les suivantes :
    <td>Les consoles Sites/Sites web permettent <a href="/help/sites-classic-ui-authoring/classic-page-author.md">de créer, d’afficher et de gérer des sites web</a> exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, lancer des processus et activer (publier) des pages. Vous pouvez également ouvrir une page pour la modifier. <br /> </td>
   </tr>
   <tr>
-   <td><strong>Workflows   </strong></td>
+   <td><strong>Workflows</strong></td>
    <td>Un processus est une série d’étapes définies décrivant la procédure à suivre pour accomplir certaines tâches. Dans la plupart des cas, plusieurs personnes sont impliquées dans une tâche et chacune d’elles doit exécuter les étapes qui lui sont attribuées avant de remettre le projet à la personne suivante. La console Worfklow vous permet d’élaborer des modèles de workflows et de gérer l’exécution des instances de worfklow. Reportez-vous à la section <a href="/help/sites-administering/workflows.md">Utilisation des processus</a>.<br /> </td>
   </tr>
  </tbody>
@@ -117,7 +117,7 @@ Sur diverses consoles (Sites web, par exemple), un bouton **Aide** permet d’ou
 
 Lors de la modification d’une page, le [sidekick comporte aussi un bouton d’accès à l’aide](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
-## Navigation à l’aide de la console Sites web {#navigating-with-the-websites-console}
+## Navigation à l’aide de la console Sites web  {#navigating-with-the-websites-console}
 
 La console **Sites web** répertorie vos pages de contenu dans une structure arborescente (volet de gauche). Pour garantir une navigation aisée, les sections de l’arborescence peuvent être développées (+) ou réduites (-) suivant les besoins :
 
@@ -149,7 +149,7 @@ La console **Sites web** répertorie vos pages de contenu dans une structure arb
 >
 >Pour plus d’informations, voir [SiteAdmin dans l’API CQ Widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
 
-## Informations sur la page dans la console Sites web {#page-information-on-the-websites-console}
+## Informations sur la page dans la console Sites web  {#page-information-on-the-websites-console}
 
 Le volet de droite de la console **Sites web** répertorie les informations sur les pages :
 
@@ -196,7 +196,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
    <td>Affiche l’activité d’une page sous la forme d’un nombre d’accès.</td>
   </tr>
   <tr>
-   <td>Template (Modèle)</td>
+   <td>Template</td>
    <td>Indique le modèle sur lequel est basée une page.</td>
   </tr>
   <tr>
