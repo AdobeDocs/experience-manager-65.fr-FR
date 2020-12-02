@@ -45,7 +45,7 @@ Divers rôles peuvent participer aux tests et aux différentes étapes du dével
     <ul>
      <li><p>Fournit au client une expérience du projet en cours de développement.</p> </li>
      <li><p>Fournit des commentaires précoces du client.</p> </li>
-     <li><p>Users often express their requirements in terms of past experience; involving the customers in testing as early as possible increases their experience of the new project in terms of <i>hands-on</i> experience.</p> </li>
+     <li><p>Les utilisateurs expriment souvent leurs besoins en termes d'expérience passée ; impliquer les clients dans les tests le plus tôt possible augmente leur expérience du nouveau projet en termes d'expérience <i>pratique</i>.</p> </li>
     </ul> </td>
    <td><p>Encore une fois, une participation précoce est bonne, bien que toute version utilisée par les clients devrait être stable, avec des fonctionnalités raisonnables.</p> <p>Les premières impressions sont toujours importantes.</p> </td>
   </tr>
