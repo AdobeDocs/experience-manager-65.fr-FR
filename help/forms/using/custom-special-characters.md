@@ -32,8 +32,8 @@ Vous pouvez par exemple insérer les caractères spéciaux suivants :
 
 Vous pouvez insérer des caractères spéciaux sous forme de lettres :
 
-* In the [text editor](/help/forms/using/document-fragments.md#createtext)
-* In an [editable, inline module in a correspondence](../../forms/using/create-correspondence.md#managecontent)
+* Dans l’[éditeur de texte](/help/forms/using/document-fragments.md#createtext)
+* Dans un module [modifiable, intégré dans une correspondance](../../forms/using/create-correspondence.md#managecontent)
 
 ![spécialcaractérissinlinemodule](assets/specialcharactersinlinemodule.png)
 
@@ -43,20 +43,20 @@ L’administrateur peut ajouter la prise en charge de plus de caractères/de car
 
 Procédez comme suit pour ajouter la prise en charge des caractères spéciaux personnalisés :
 
-1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named **[!UICONTROL specialcharacters]** with path/structure similar to the specialcharacters folder (located in the textEditorConfig folder under libs):
+1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
+1. Dans le dossier d’applications, créez un dossier nommé **[!UICONTROL specialcharacters]** avec un chemin/une structure similaires au dossier specialcharacters (situé dans le dossier textEditorConfig sous libs) :
 
-   1. Right-click the **specialcharacters** folder at the following path and select **Overlay Node**:
+   1. Cliquez avec le bouton droit sur le dossier **specialcharacters** à l’emplacement suivant et sélectionnez **Noeud d’incrustation** :
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **Chemin d’accès :** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
-      **Emplacement de l’incrustation :** /apps/
+      **Emplacement de l’incrustation:** /apps/
 
-      **Faire correspondre les types de noeud :** Coché
+      **Faire correspondre les types de noeud:** coché
 
       >[!NOTE]
       >
@@ -82,7 +82,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    | cmConfigurationType | Chaîne | cmTextEditorConfiguration |
    | cssPath | Chaîne | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Right-click the **[!UICONTROL specialcharacters]** folder at the following path and select **Create > Child Node** and then click **Save All**:
+1. Cliquez avec le bouton droit sur le dossier **[!UICONTROL specialcharacters]** à l’emplacement suivant et sélectionnez **Créer > Noeud enfant**, puis cliquez sur **Enregistrer tout** :
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 
