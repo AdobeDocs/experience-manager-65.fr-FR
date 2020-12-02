@@ -17,7 +17,7 @@ La fonction Statistiques sur les ressources vous permet d’effectuer le suivi d
 
 [!DNL Assets] Insights capture les détails de l’activité des utilisateurs, tels que le nombre de fois où une image est notée, sur laquelle les utilisateurs cliquent et les impressions (nombre de fois où une image est chargée sur le site Web). Elle attribue des scores aux images en fonction de ces statistiques. Vous pouvez utiliser les scores et les statistiques de performances pour sélectionner les images populaires à inclure dans les catalogues, les campagnes marketing et ainsi de suite. Vous pouvez même formuler des stratégies de renouvellement de licence et d’archivage en fonction de ces statistiques.
 
-For [!DNL Assets] Insights to capture usage statistics for images from a website, you must include the embed code for the image in the website code.
+Pour [!DNL Assets] statistiques d’utilisation des images d’un site Web, vous devez inclure le code incorporé de l’image dans le code du site Web.
 
 Pour permettre aux statistiques sur les ressources d’afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction afin qu’elle récupère les données de rapports d’Adobe Analytics. Pour plus d’informations, consultez la section [Configuration des statistiques sur les ressources](/help/assets/configure-asset-insights.md).
 
@@ -29,7 +29,7 @@ Pour permettre aux statistiques sur les ressources d’afficher les statistiques
 
 Vous pouvez afficher les scores de statistiques sur les ressources à partir de la page des métadonnées.
 
-1. From the [!DNL Assets] user interface (UI), select the image and then click **[!UICONTROL Properties]** from the toolbar.
+1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez l&#39;image, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d&#39;outils.
 1. Sur la page Propriétés, cliquez sur l’onglet **[!UICONTROL Statistiques]**.
 1. Consultez les détails d’utilisation de la ressource dans l’onglet **[!UICONTROL Statistiques]**. La section **[!UICONTROL Score]** indique les scores totaux d’utilisation et de performances d’une ressource.
 
@@ -58,7 +58,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    >
    >Contrairement à la section Solutions, la section Statistiques de performances affiche les données les plus récentes.
 
-1. To obtain the embed code for the asset that you include in websites to gets performance data, click **[!UICONTROL Get Embed Code]** below the asset thumbnail. For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and embed code in web pages](/help/assets/use-page-tracker.md).
+1. Pour obtenir le code incorporé de la ressource que vous incluez dans les sites Web afin d’obtenir des données de performances, cliquez sur **[!UICONTROL Obtenir le code incorporé]** sous la miniature de la ressource. Pour plus d’informations sur la manière d’inclure votre code incorporé dans des pages Web tierces, voir [Utilisation du suivi de page et du code incorporé dans les pages Web](/help/assets/use-page-tracker.md).
 
    ![chlimage_1-98](assets/chlimage_1-303.png)
 
@@ -66,15 +66,15 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
 Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Statistiques]**.
 
-1. In the [!DNL Assets] user interface, navigate to the folder containing the assets for which you want to view insights.
-1. Click Layout from the toolbar, and then choose **[!UICONTROL Insights View]**.
+1. Dans l&#39;interface utilisateur [!DNL Assets], accédez au dossier contenant les ressources pour lesquelles vous souhaitez vue des informations.
+1. Cliquez sur Disposition dans la barre d’outils, puis sélectionnez **[!UICONTROL Vue d’informations]**.
 1. La page affiche les scores d’utilisation pour les ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
 
 ## Planification d’une tâche en arrière-plan {#scheduling-background-job}
 
 La fonction Statistiques sur les ressources extrait les données d’utilisation des ressources à partir de suites de rapports Adobe Analytics de manière périodique. Par défaut, la fonction Statistiques sur les ressources exécute une tâche en arrière-plan toutes les 24 heures à 2 heures du matin pour récupérer les données. Cependant, vous pouvez modifier la fréquence et l’heure en configurant le service de **[!UICONTROL tâche de synchronisation de rapport de performances de ressource Adobe CQ DAM]** via la console web.
 
-1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
 1. Ouvrez la configuration de service **[!UICONTROL Tâche de synchronisation des rapports sur les performances des ressources de la gestion des actifs numériques Adobe CQ]**.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
