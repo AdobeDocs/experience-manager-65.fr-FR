@@ -311,7 +311,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
 1. Utilisez l’une des méthodes suivantes :
 
    * Répétez les étapes 3 et 4 pour ajouter un autre paramètre à votre profil de codage vidéo.
-   * Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Tout enregistrer.]**
+   * Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Enregistrer tout.]**
 
 1. Dans le coin supérieur gauche de la page CRXDE Lite, appuyez sur l’icône **[!UICONTROL Retour à l’accueil]** pour revenir à AEM.
 
@@ -361,7 +361,7 @@ Appuyez sur l’icône d’information pour obtenir une description de la diffus
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer.]**
 1. Appuyez sur **[!UICONTROL OK.]**
 
-## Application d’un profil vidéo à des dossiers  {#applying-a-video-profile-to-folders}
+## Application d’un profil vidéo à des dossiers   {#applying-a-video-profile-to-folders}
 
 Lorsque vous affectez un profil vidéo à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
 
@@ -407,7 +407,7 @@ Voir aussi [Retraitement des ressources dans un dossier après avoir modifié so
 
 **Pour appliquer un profil vidéo à l’ensemble des ressources :**
 
-* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` et appuyez sur **[!UICONTROL Tout enregistrer.]**
+* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` et appuyez sur **[!UICONTROL Enregistrer tout.]**
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
@@ -422,7 +422,7 @@ Vous pouvez également consulter le fichier `error.log` pour contrôler la progr
 
 Lorsque vous supprimez un profil vidéo d’un dossier, les sous-dossiers héritent automatiquement de la suppression du profil de leur dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
 
-You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings.]** This section describes how to remove video profiles from folders both ways.
+Vous pouvez supprimer un profil vidéo d&#39;un dossier du menu **[!UICONTROL Outils]** ou, si vous vous trouvez dans le dossier, des **[!UICONTROL Paramètres du dossier.]** Cette section décrit comment supprimer des profils vidéo des deux dossiers.
 
 ### Suppression d’un profil vidéo des dossiers à l’aide de l’interface utilisateur Profils {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
