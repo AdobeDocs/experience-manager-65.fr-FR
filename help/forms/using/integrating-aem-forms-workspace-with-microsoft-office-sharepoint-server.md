@@ -22,7 +22,8 @@ ht-degree: 86%
 
 **- Conditions requises**
 
-**Connaissances** préalables Avant de pouvoir ajouter AEM Forms Workspace à SharePoint Server, vous devez avoir accès à SharePoint Server avec les privilèges appropriés et connaître l’URL d’accès à Workspace. Les étapes ci-dessous supposent que vous connaissez SharePoint Server. Pour en savoir plus sur les composants Webpart de SharePoint Server, consultez Composants Webpart sous Windows SharePoint Services.
+**Connaissances préalablesAvant de pouvoir ajouter AEM Forms Workspace à SharePoint Server, vous devez avoir accès à SharePoint Server avec les privilèges appropriés et connaître l’URL d’accès à Workspace.**
+Les étapes ci-dessous supposent que vous connaissez SharePoint Server. Pour en savoir plus sur les composants Webpart de SharePoint Server, consultez Composants Webpart sous Windows SharePoint Services.
 
 **Niveau d’utilisateur** Début
 
@@ -36,7 +37,7 @@ Vous pouvez utiliser AEM Forms Workspace en tant que composant Webpart dans Micr
 
 Effectuez les étapes suivantes pour intégrer AEM Forms Workspace à un composant Webpart :
 
-1. In a web browser, navigate to the SharePoint site such as, `https://[myMOSSserver]:44299/default.aspx` where `[myMOSSserver]` is the name or the IP address of the Sharepoint server.
+1. Dans un navigateur Web, accédez au site SharePoint tel que, `https://[myMOSSserver]:44299/default.aspx` où `[myMOSSserver]` correspond au nom ou à l&#39;adresse IP du serveur SharePoint.
 
    >[!NOTE]
    >
@@ -57,7 +58,7 @@ Effectuez les étapes suivantes pour intégrer AEM Forms Workspace à un composa
 
 1. Sur la page Visionneuse de pages, effectuez les tâches suivantes :
 
-   1. In the Link box, type the URL of AEM Forms Workspace, such as `https://[AEM_forms_Server]:8080/lc/ws` where `[AEM_forms_Server]` represents the IP or Name of AEM forms server.
+   1. Dans la zone Lien, saisissez l’URL de AEM Forms Workspace, par exemple `https://[AEM_forms_Server]:8080/lc/ws` où `[AEM_forms_Server]` représente l’adresse IP ou le nom du serveur d’AEM formulaires.
    1. Cliquez sur **Aspect** et modifiez la hauteur, la largeur et le titre de sorte que vous puissiez voir l’ensemble de l’interface utilisateur de Workspace. Par exemple, vous pouvez définir une hauteur et une largeur de 6 pouces et 11 pouces respectivement.
    1. Cliquez sur **Tester le lien**. Une nouvelle fenêtre de navigateur Web apparaît et Workspace y est affiché.
    1. (Facultatif) Cliquez sur **Disposition** et modifiez la disposition de Workspace dans Composant Webpart.
