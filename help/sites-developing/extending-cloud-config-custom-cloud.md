@@ -26,46 +26,46 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
 >
 >Google Analytics est utilisé comme exemple dans ce guide détaillé de création d’un service cloud. Il se peut que certains éléments ne soient pas applicables à votre scénario d’utilisation.
 
-1. In CRXDE Lite, ceate a new node under `/apps`:
+1. En CRXDE Lite, créez un nouveau noeud sous `/apps` :
 
    * **Nom** : `acs`
    * **Type** : `nt:folder`
 
-1. Create a new node under `/apps/acs`:
+1. Créez un nouveau noeud sous `/apps/acs` :
 
    * **Nom** : `analytics`
    * **Type** : `sling:Folder`
 
-1. Create 2 new nodes under `/apps/acs/analytics`:
+1. Créez 2 nouveaux noeuds sous `/apps/acs/analytics` :
 
-   * **Nom**: composants
+   * **Nom** : composants
    * **Type** : `sling:Folder`
 
    et
 
-   * **Nom**: templates
+   * **Nom** : templates
    * **Type** : `sling:Folder`
 
 
 1. Cliquez avec le bouton droit sur `/apps/acs/analytics/components`. Sélectionnez **Créer**, suivi de **Créer un composant**. La boîte de dialogue qui s’ouvre alors vous permet de spécifier ce qui suit :
 
-   * **Libellé**: `googleanalyticspage`
+   * **Libellé** :  `googleanalyticspage`
    * **Titre**: `Google Analytics Page`
-   * **Super Type**: `cq/cloudserviceconfigs/components/configpage`
-   * **Groupe**: `.hidden`
+   * **Super Type** :  `cq/cloudserviceconfigs/components/configpage`
+   * **Groupe** :  `.hidden`
 
-1. Click **Next** twice and specify:
+1. Cliquez deux fois sur **Suivant** et spécifiez :
 
    * **Parents autorisés:** `acs/analytics/templates/googleanalytics`
 
-   Click **Next** twice and click **OK**.
+   Cliquez deux fois sur **Suivant** et cliquez sur **OK**.
 
-1. Add a property to `googleanalyticspage`:
+1. Ajoutez une propriété à `googleanalyticspage` :
 
-   * **Nom:** `cq:defaultView`
+   * **Nom :**`cq:defaultView`
    * **Valeur:** `html`
 
-1. Create a new file named `content.jsp` under `/apps/acs/analytics/components/googleanalyticspage`, with the following content:
+1. Créez un nouveau fichier nommé `content.jsp` sous `/apps/acs/analytics/components/googleanalyticspage`, avec le contenu suivant :
 
    ```xml
    <%@page contentType="text/html"
@@ -80,7 +80,7 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
    </div>
    ```
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/`:
+1. Créez un nouveau noeud sous `/apps/acs/analytics/components/googleanalyticspage/` :
 
    * **Nom** : `dialog`
    * **Type** : `cq:Dialog`
@@ -93,7 +93,7 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
       * **Type** : `String`
       * **Valeur**: `dialog`
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog`:
+1. Créez un nouveau noeud sous `/apps/acs/analytics/components/googleanalyticspage/dialog` :
 
    * **Nom** : `items`
    * **Type** : `cq:Widget`
@@ -103,12 +103,12 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
       * **Type** : `String`
       * **Valeur**: `tabpanel`
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
+1. Créez un nouveau noeud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items` :
 
    * **Nom** : `items`
    * **Type** : `cq:WidgetCollection`
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
+1. Créez un nouveau noeud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items` :
 
    * **Nom** : tab1
    * **Type** : `cq:Panel`
@@ -118,7 +118,7 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
       * **Type** : `String`
       * **Valeur**: `Config`
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
+1. Créez un nouveau noeud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1` :
 
    * **Nom** : items
    * **Type** : `nt:unstructured`
@@ -142,16 +142,16 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
       * **Type** : `String`
       * **Valeur**: `textfield`
 
-1. Copy `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` to `/apps/acs/analytics/components/googleanalyticspage/body.jsp` and change `libs` to `apps` on line 34 and make the script reference on line 79 a fully qualified path.
-1. Create a new template under `/apps/acs/analytics/templates/`:
+1. Copiez `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` dans `/apps/acs/analytics/components/googleanalyticspage/body.jsp` et remplacez `libs` par `apps` à la ligne 34 et faites de la référence au script à la ligne 79 un chemin d’accès complet.
+1. Créez un modèle sous `/apps/acs/analytics/templates/` :
 
-   * avec le type **de** ressource = `acs/analytics/components/googleanalyticspage`
+   * avec **Type de ressource** = `acs/analytics/components/googleanalyticspage`
    * avec **Étiquette** = `googleanalytics`
-   * avec **Title**= `Google Analytics Configuration`
+   * avec **Titre**= `Google Analytics Configuration`
    * avec **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
    * avec **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * with **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (on template node, not the jcr:content node)
-   * with **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (on jcr:content)
+   * avec **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (sur le noeud de modèle, pas le noeud jcr:content)
+   * avec **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (sur jcr:content)
 
 1. Créer un nouveau composant : `/apps/acs/analytics/components/googleanalytics`.
 
@@ -196,19 +196,19 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
 
    Cela devrait générer le balisage personnalisé sur la base des propriétés de configuration.
 
-1. Navigate to `http://localhost:4502/miscadmin#/etc/cloudservices` and create a new page:
+1. Accédez à `http://localhost:4502/miscadmin#/etc/cloudservices` et créez une page :
 
    * **Titre**: `Google Analytics`
    * **Nom** : `googleanalytics`
 
-   Go back in CRXDE Lite, and under `/etc/cloudservices/googleanalytics`, add the following property to `jcr:content`:
+   Revenez en CRXDE Lite et sous `/etc/cloudservices/googleanalytics`, ajoutez la propriété suivante à `jcr:content` :
 
    * **Nom** : `componentReference`
    * **Type** : `String`
    * **Valeur**: `acs/analytics/components/googleanalytics`
 
 
-1. Navigate to the newly created Service page ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) and click the **+** to create a new config:
+1. Accédez à la page Service nouvellement créée ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) et cliquez sur **+** pour créer une nouvelle configuration :
 
    * **Configuration du parent**: `/etc/cloudservices/googleanalytics`
    * **Titre:**  `My First GA Config`
