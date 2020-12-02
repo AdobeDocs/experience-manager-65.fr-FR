@@ -18,7 +18,7 @@ ht-degree: 94%
 ---
 
 
-# Mise à jour du lien vers la documentation {#updating-the-link-to-the-documentation}
+# Mise à jour du lien vers la documentation  {#updating-the-link-to-the-documentation}
 
 Vous pouvez accéder au contenu de l’aide par défaut pour l’espace de travail AEM Forms en sélectionnant **Aide > Aide de Workspace**. Le chemin pointe vers la documentation en ligne sur le site Web d’Adobe. Cependant, vous pouvez le mettre à jour pour qu’il pointe vers une autre URL.
 
@@ -29,7 +29,7 @@ Tenez compte des cas d’utilisation suivants lorsque vous souhaitez changer l�
 
 Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis les étapes suivantes.
 
-1. Copy the `userinfo.html` file from `/libs/ws/js/runtime/templates` to `/apps/ws/js/runtime/templates`.
+1. Copiez le fichier `userinfo.html` de `/libs/ws/js/runtime/templates` vers `/apps/ws/js/runtime/templates`.
 1. Remplacer :
 
    ```html
@@ -51,4 +51,4 @@ Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure 
 1. Procédez comme suit :
 
    1. Ouvrez /apps/ws/js/registry.js pour le modifier.
-   1. Search and replace `text!/lc/libs/ws/js/runtime/templates/userinfo.html` with `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/userinfo.html` par `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
