@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # Page Créer des commentaires {#create-comments-page}
 
-**[⇐ Incrustation Composant](overlay-comments.md) Commentaires [Créer des noeuds](overlay-create-nodes.md)**
+**[⇐ Incrustation de commentaires ](overlay-comments.md) [ComposantCréer des noeuds](overlay-create-nodes.md)**
 
 ## Page Commentaires {#comments-page}
 
-Le guide [Composants](components-guide.md) de la communauté permet de superposer facilement le composant Commentaires.
+Le [Guide des composants de la communauté](components-guide.md) permet de superposer facilement le composant de commentaires.
 
 Vue de la page sur l’instance d’auteur :
 
@@ -32,4 +32,4 @@ Vue de la page sur l’instance d’auteur :
 
 ![commentaires](assets/comments.png)
 
-**[⇐ Incrustation Composant](overlay-comments.md) Commentaires [Créer des noeuds](overlay-create-nodes.md)**
+**[⇐ Incrustation de commentaires ](overlay-comments.md) [ComposantCréer des noeuds](overlay-create-nodes.md)**
