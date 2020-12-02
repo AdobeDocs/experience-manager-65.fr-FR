@@ -30,7 +30,7 @@ Augmentez autant que possible l’allocation de mémoire minimale. Si la base de
 
 Modifiez les paramètres de processeur et, surtout, cochez la case Forcer la priorité de SQL Server sous Windows, de sorte que le serveur exploite autant de cycles que possible. Le paramètre Utiliser les fibres Windows NT est moins important, mais vous pouvez également le sélectionner.
 
-## Paramètres de base de données {#database-settings}
+## Paramètres de base de données  {#database-settings}
 
 Modifiez les paramètres de base de données. Le paramètre le plus important est Intervalle de récupération, qui spécifie le délai d’attente maximal après un blocage. Le paramètre par défaut est d’une minute. L’augmentation de ce délai (entre 5 et 15 minutes) améliore les performances en donnant plus de temps au serveur pour écrire dans les fichiers de la base de données les changements stockés dans le journal de la base de données.
 
