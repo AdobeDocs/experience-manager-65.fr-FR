@@ -18,7 +18,7 @@ ht-degree: 80%
 ---
 
 
-# Affichage de l’avatar de l’utilisateur {#displaying-the-user-avatar}
+# Affichage de l’avatar de l’utilisateur  {#displaying-the-user-avatar}
 
 L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droit de l’espace de travail AEM Forms. Les avatars de rapports directs dans la hiérarchie de l’entreprise sont affichés également dans la vue du gestionnaire. Vous pouvez configurer l’espace de travail AEM Forms pour sélectionner les images des utilisateurs dans votre base de données, par exemple, le serveur LDAP.
 
@@ -26,7 +26,7 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
 >
 >le rapport d’aspect des images de l’utilisateur est de 1:1.
 
-1. Créez un DSC, à l’aide des détails mentionnés dans l’étape suivante. For more information, see &#39;Developing Components for AEM Forms&#39; topic in [Programming with AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
+1. Créez un DSC, à l’aide des détails mentionnés dans l’étape suivante. Pour plus d’informations, voir la rubrique &quot;Développement de composants pour AEM Forms&quot; dans le guide [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 1. Dans le DSC, définissez une nouvelle SPI qui expose les méthodes getCurrentUserImageUrl et getUserImageUrl afin d’obtenir l’URL d’image d’un utilisateur d’AEM Forms. Voici un exemple de fragment de code Java™ :
 
    ```java
@@ -84,5 +84,5 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
    </component>
    ```
 
-1. Déployez DSC via Workbench. Redémarrez `ProcessManagementClientSessionService` le service.
+1. Déployez DSC via Workbench. Redémarrez le service `ProcessManagementClientSessionService`.
 1. Il se peut que vous ayez à actualiser votre navigateur ou à vous déconnecter/connecter de nouveau avec l’utilisateur.
