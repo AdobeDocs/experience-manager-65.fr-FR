@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# Gestion des articles{#managing-articles}
+# Gestion des articles {#managing-articles}
 
 >[!NOTE]
 >
@@ -49,11 +49,11 @@ La procédure générale de création d’un article est la suivante :
 
 1. Sélectionnez **Mobile** dans le rail latéral.
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les articles** .
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les articles**.
 1. Choisissez un modèle d’article et cliquez sur **Suivant**.
 1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvel article.
 1. Une fois prêt, cliquez sur **Créer**.
-1. Votre nouvel article s’affiche dans le volet **Gérer les articles** .
+1. Votre nouvel article s’affiche dans la mosaïque **Gérer les articles**.
 
 ## Importation d’un nouvel article {#importing-a-new-article}
 
@@ -66,9 +66,9 @@ Le contenu Mobile On-Demand existant peut être téléchargé (importé) de Mobi
 Flux de travail pour importer un nouvel article
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit du volet **Gérer les articles** et sélectionnez Importer des articles.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les articles** et sélectionnez Importer des articles.
 1. Cliquez sur **Importer des articles** dans la boîte de dialogue, puis sur Fermer.
-1. Vos articles Mobile On-Demand apparaissent désormais dans le volet **Gérer les articles** .
+1. Vos articles Mobile On-Demand apparaissent désormais dans la mosaïque **Gérer les articles**.
 
 >[!CAUTION]
 >
@@ -87,7 +87,7 @@ Utilisez l’éditeur de glisser-déplacer d’AEM intégré pour ajouter ou mod
 Flux de travail pour modifier un article :
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez un article d’origine AEM dans le volet **Gérer les articles** .
+1. Sélectionnez un article d’AEM source dans le volet **Gérer les articles**.
 1. Cliquez sur l’article en surbrillance de la vue de liste pour l’ouvrir dans l’éditeur de contenu.
 1. Utilisez l’éditeur de contenu pour faire glisser le contenu de l’article (manuscrits, images, texte, etc.).
 
@@ -98,9 +98,9 @@ Les contenus tels que les articles, les bannières, etc, ont de nombreuses propr
 Processus général de vue/modification d’un article :
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez un article dans le volet **Gérer les articles** .
+1. Sélectionnez un article dans la mosaïque **Gérer les articles**.
 
-1. Select **View Properties** from the action bar.
+1. Sélectionnez **Propriétés de la Vue** dans la barre d&#39;actions.
 1. Vue de toutes les métadonnées disponibles pour cet article.
 1. Modifiez les métadonnées si nécessaire et cliquez sur **Enregistrer** lorsque vous avez terminé.
 1. Si vous le souhaitez, téléchargez immédiatement les modifications sur Mobile On-Demand.
@@ -112,7 +112,7 @@ L&#39;action de téléchargement copie le contenu sélectionné et l&#39;ajoute 
 Processus général de téléchargement d’un article :
 
 1. Dans **Mobile**, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Dans le volet **Gérer les articles** , sélectionnez un article à télécharger sur Mobile On-Demand.
+1. Dans le volet **Gérer les articles**, sélectionnez un article à télécharger sur Mobile On-Demand.
 1. Si nécessaire, Ajoutez d’autres articles à partir de la vue de liste.
 1. Sélectionnez **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
 1. Vos articles sont maintenant chargés sur Mobile On-Demand.
@@ -126,9 +126,9 @@ Cette opération supprime le contenu sélectionné de Mobile On-Demand et évent
 Processus général de suppression d’un article :
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez l’article à supprimer dans le volet **Gérer les articles** .
+1. Sélectionnez l’article à supprimer dans la mosaïque **Gérer les articles**.
 1. Assurez-vous qu’elle est sélectionnée dans la liste (sélectionnez d’autres options à supprimer si nécessaire).
-1. Click **Delete** from the action bar.
+1. Cliquez sur **Supprimer** dans la barre d&#39;actions.
 1. Vérifiez si vous souhaitez supprimer des AEM ainsi que des services Mobile On-Demand.
 1. Cliquez sur **Supprimer**.
 1. Votre article est maintenant supprimé de la liste.
