@@ -24,14 +24,14 @@ La visionneuse 3D interactive est disponible sur la page de détails de la ress
 
 L’aperçu 3D interactif prend en charge les formats de fichier suivants :
 
-| Extension de fichier 3D | Format de fichier | Type MIME | Notes |
+| Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|
 | GLB | Transmission GL binaire | model/gltf-binary |  |
 | GLTF | Format de transmission GL | model/gltf+json | Consultez **la remarque** ci-dessous. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
-| USDZ | Archive zip de description de scène universelle | model/vnd.usdz+zip | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
+| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
 
 **Remarque** : si le rendu des matériaux n’est pas effectué dans la prévisualisation d’un modèle gLTF, assurez-vous qu’ils sont correctement nommés et qu’ils se trouvent dans un dossier `textures` situé dans le même dossier racine que le modèle, comme suit :
 
