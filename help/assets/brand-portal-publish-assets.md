@@ -29,7 +29,7 @@ Une fois la réplication réussie, vous pouvez publier des ressources, des dossi
 >
 >Adobe recommande la publication décalée, de préférence en dehors des heures de pointe, de sorte que l’auteur AEM n’utilise pas une quantité excessive de ressources.
 
-1. From the Assets console, select the assets/folder that you want to publish and click **[!UICONTROL Quick Publish]** option from the toolbar.
+1. Dans la console Ressources, sélectionnez les ressources/le dossier à publier, puis cliquez sur **[!UICONTROL Publication rapide]** dans la barre d’outils.
 
    Vous pouvez également sélectionner les ressources que vous voulez publier sur Brand Portal.
 
@@ -43,13 +43,13 @@ Une fois la réplication réussie, vous pouvez publier des ressources, des dossi
 
 Pour publier les ressources sélectionnées sur Brand Portal, effectuez l’une des opérations suivantes :
 
-* Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+* Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Ensuite, dans le menu, sélectionnez **[!UICONTROL Publier sur le portail de marque]**.
 
 * Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**.
 
-   1. Then from the **[!UICONTROL Action]** select **[!UICONTROL Publish to Brand Portal]**, and from **[!UICONTROL Scheduling]** select **[!UICONTROL Now]**. Cliquez sur **[!UICONTROL Suivant]**.
+   1. Ensuite, à partir de **[!UICONTROL Action]** sélectionnez **[!UICONTROL Publier sur le portail de la marque]**, et dans **[!UICONTROL Planification]** sélectionnez **[!UICONTROL Maintenant]**. Cliquez sur **[!UICONTROL Next]** (Suivant).
 
-   2. Within **[!UICONTROL Scope]**, confirm your selection and click **[!UICONTROL Publish to Brand Portal]**.
+   2. Dans **[!UICONTROL Scope]**, confirmez votre sélection et cliquez sur **[!UICONTROL Publier sur le portail de la marque]**.
 
 Un message indique que les ressources ont été placées en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir les ressources publiées.
 
@@ -57,9 +57,9 @@ Un message indique que les ressources ont été placées en file d’attente pou
 
 Pour planifier la publication des ressources sur Brand Portal à une date ou une heure ultérieure :
 
-1. Once you have selected assets/ folders to publish, select **[!UICONTROL Manage Publication]** from the tool bar at the top.
+1. Une fois que vous avez sélectionné les fichiers/dossiers à publier, sélectionnez **[!UICONTROL Gérer la publication]** dans la barre d’outils située en haut de l’écran.
 
-1. On **[!UICONTROL Manage Publication]** page, select **[!UICONTROL Publish to Brand Portal]** from **[!UICONTROL Action]** and select **[!UICONTROL Later]** from **[!UICONTROL Scheduling]**.
+1. Sur la **[!UICONTROL page Gérer la publication]**, sélectionnez **[!UICONTROL Publier sur le portail de la marque]** dans **[!UICONTROL Action]** et **[!UICONTROL Plus tard]** dans **[!UICONTROL Planification]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
