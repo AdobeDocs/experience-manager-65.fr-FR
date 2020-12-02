@@ -34,12 +34,12 @@ Les données de formulaire peuvent exister dans l’un des formats suivants, sel
 
 Vous pouvez accomplir ces tâches à l’aide du service d’intégration des données de formulaire :
 
-* Importez des données en PDF forms. Pour plus d’informations, voir [Importation de données](importing-exporting-data.md#importing-form-data)de formulaire.
-* Exportez des données à partir de PDF forms. Pour plus d’informations, voir [Exportation de données](importing-exporting-data.md#exporting-form-data)de formulaire.
+* Importez des données en PDF forms. Pour plus d’informations, voir [Importation de données de formulaire](importing-exporting-data.md#importing-form-data).
+* Exportez des données à partir de PDF forms. Pour plus d’informations, voir [Exportation de données de formulaire](importing-exporting-data.md#exporting-form-data).
 
 >[!NOTE]
 >
->For more information about the Form Data Integration service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service d’intégration des données de formulaire, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Importation de données de formulaire {#importing-form-data}
 
@@ -84,7 +84,7 @@ Pour importer des valeurs de données dans ce formulaire, vous devez disposer d�
 
 >[!NOTE]
 >
->For more information about the Form Data Integration service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service d’intégration des données de formulaire, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -109,11 +109,11 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclusion de fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un client de service d’intégration de données de formulaire**
 
-Avant de pouvoir importer des données par programmation dans une API Client de formulaire PDF, vous devez créer un client de service d’intégration de données. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service. Pour plus d’informations, voir [Définition des propriétés](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de connexion.
+Avant de pouvoir importer des données par programmation dans une API Client de formulaire PDF, vous devez créer un client de service d’intégration de données. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service. Pour plus d’informations, voir [Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Référence à un formulaire PDF**
 
@@ -145,7 +145,7 @@ Après avoir importé des données dans un formulaire, vous pouvez enregistrer l
 
 [Exportation des données de formulaire](importing-exporting-data.md#exporting-form-data)
 
-### Importation des données de formulaire à l’aide de l’API Java {#import-form-data-using-the-java-api}
+### Importer des données de formulaire à l’aide de l’API Java {#import-form-data-using-the-java-api}
 
 Importez des données de formulaire à l’aide de l’API d’intégration des données de formulaire (Java) :
 
@@ -161,26 +161,26 @@ Importez des données de formulaire à l’aide de l’API d’intégration des 
 1. Référence à un formulaire PDF.
 
    * Créez un objet `java.io.FileInputStream` en utilisant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du formulaire PDF.
-   * Créez un `com.adobe.idp.Document` objet qui stocke le formulaire PDF à l’aide du `com.adobe.idp.Document` constructeur. Transférez l’objet `java.io.FileInputStream` contenant le formulaire PDF au constructeur.
+   * Créez un objet `com.adobe.idp.Document` qui stocke le formulaire PDF à l’aide du constructeur `com.adobe.idp.Document`. Transmettez l’objet `java.io.FileInputStream` contenant le formulaire PDF au constructeur.
 
 1. Référence à une source de données XML.
 
-   * Créez un `java.io.FileInputStream` objet en utilisant son constructeur et transmettez une valeur de chaîne qui spécifie l’emplacement du fichier XML qui contient les données à importer dans le formulaire.
-   * Créez un `com.adobe.idp.Document` objet qui stocke les données de formulaire à l’aide du `com.adobe.idp.Document` constructeur. Transmettez l’objet `java.io.FileInputStream` contenant des données de formulaire au constructeur.
+   * Créez un objet `java.io.FileInputStream` en utilisant son constructeur et transmettez une valeur de chaîne qui spécifie l’emplacement du fichier XML qui contient les données à importer dans le formulaire.
+   * Créez un objet `com.adobe.idp.Document` qui stocke les données de formulaire à l’aide du constructeur `com.adobe.idp.Document`. Transmettez l’objet `java.io.FileInputStream` contenant des données de formulaire au constructeur.
 
 1. Importez des données dans le formulaire PDF.
 
-   Importez des données dans un formulaire PDF en appelant la `FormDataIntegrationClient` `importData` méthode de l’objet et en transmettant les valeurs suivantes :
+   Importez des données dans un formulaire PDF en appelant la méthode `FormDataIntegrationClient` de l’objet `importData` et en transmettant les valeurs suivantes :
 
    * Objet `com.adobe.idp.Document` qui stocke le formulaire PDF.
    * Objet `com.adobe.idp.Document` qui stocke les données de formulaire.
 
-   La `importData` méthode renvoie un `com.adobe.idp.Document` objet qui stocke un formulaire PDF contenant les données se trouvant dans la source de données XML.
+   La méthode `importData` renvoie un objet `com.adobe.idp.Document` qui stocke un formulaire PDF contenant les données se trouvant dans la source de données XML.
 
 1. Enregistrez le formulaire PDF au format PDF.
 
-   * Create a `java.io.File` object and ensure that the file extension is “.PDF”.
-   * Appelez la `Document` méthode de l’ `copyToFile` objet pour copier le contenu de l’ `Document` objet dans le fichier (veillez à utiliser l’ `Document` objet renvoyé par la `importData` méthode).
+   * Créez un objet `java.io.File` et assurez-vous que l’extension de fichier est &quot;.PDF&quot;.
+   * Appelez la méthode `Document` de l&#39;objet `copyToFile` pour copier le contenu de l&#39;objet `Document` dans le fichier (veillez à utiliser l&#39;objet `Document` renvoyé par la méthode `importData`).
 
 **Voir également**
 
@@ -192,7 +192,7 @@ Importez des données de formulaire à l’aide de l’API d’intégration des 
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Importation de données de formulaire à l’aide de l’API de service Web {#import-form-data-using-the-web-service-api}
+### Importer des données de formulaire à l’aide de l’API de service Web {#import-form-data-using-the-web-service-api}
 
 Importez des données de formulaire à l’aide de l’API d’intégration des données de formulaire (service Web) :
 
@@ -206,48 +206,48 @@ Importez des données de formulaire à l’aide de l’API d’intégration des 
 
 1. Créez un client du service d’intégration des données de formulaire.
 
-   * Create a `FormDataIntegrationClient` object by using its default constructor.
-   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `FormDataIntegrationClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur par défaut.
+   * Créez un objet `FormDataIntegrationClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Cependant, spécifiez `?blob=mtom` pour utiliser MTOM.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `FormDataIntegrationClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Référence à un formulaire PDF.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. Cet `BLOB` objet est utilisé pour stocker le formulaire PDF.
-   * Create a `System.IO.FileStream` object by invoking its constructor. Transmettez une valeur de chaîne qui spécifie l’emplacement du formulaire PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` méthode de l’ `Read` objet. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. Cet objet `BLOB` est utilisé pour stocker le formulaire PDF.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du formulaire PDF et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read`. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Référence à une source de données XML.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. Cet `BLOB` objet est utilisé pour stocker les données importées dans le formulaire.
-   * Create a `System.IO.FileStream` object by invoking its constructor. Transmettez une valeur de chaîne qui spécifie l’emplacement du fichier XML qui contient les données à importer et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` méthode de l’ `Read` objet. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. Cet objet `BLOB` est utilisé pour stocker les données importées dans le formulaire.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du fichier XML qui contient les données à importer et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read`. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Importez des données dans le formulaire PDF.
 
-   Importez des données dans le formulaire PDF en appelant la `FormDataIntegrationClient` `importData` méthode de l’objet et en transmettant les valeurs suivantes :
+   Importez des données dans le formulaire PDF en appelant la méthode `FormDataIntegrationClient` de l’objet `importData` et en transmettant les valeurs suivantes :
 
    * Objet `BLOB` qui stocke le formulaire PDF.
    * Objet `BLOB` qui stocke les données de formulaire.
 
-   La `importData` méthode renvoie un `BLOB` objet qui stocke un formulaire PDF contenant les données se trouvant dans la source de données XML.
+   La méthode `importData` renvoie un objet `BLOB` qui stocke un formulaire PDF contenant les données se trouvant dans la source de données XML.
 
 1. Enregistrez le formulaire PDF au format PDF.
 
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier PDF.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’ `BLOB` objet renvoyé par la `importData` méthode. Renseignez le tableau d’octets en obtenant la valeur du `BLOB` champ de l’ `MTOM` objet.
-   * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `System.IO.BinaryWriter` `Write` de l’objet et en transmettant le tableau d’octets.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier PDF.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `importData`. Renseignez le tableau d’octets en obtenant la valeur du champ `BLOB` de l’objet `MTOM`.
+   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l&#39;objet `System.IO.FileStream`.
+   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `System.IO.BinaryWriter` de l’objet `Write` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -261,7 +261,7 @@ Vous pouvez exporter des données de formulaire à partir d’un formulaire PDF 
 
 >[!NOTE]
 >
->For more information about the Form Data Integration service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service d’intégration des données de formulaire, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -287,7 +287,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 **Création d’un client de service d’intégration de données de formulaire**
 
-Avant de pouvoir importer des données par programmation dans une API FormsClient PDF, vous devez créer un client de service d’intégration de données. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service. Pour plus d’informations, [Définition des propriétés](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de connexion.
+Avant de pouvoir importer des données par programmation dans une API FormsClient PDF, vous devez créer un client de service d’intégration de données. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service. Pour plus d&#39;informations, [Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Référence à un formulaire PDF**
 
@@ -330,17 +330,17 @@ Exportez les données de formulaire à l’aide de l’API d’intégration des 
 
 1. Référence à un formulaire PDF.
 
-   * Créez un `java.io.FileInputStream` objet à l’aide de son constructeur et transmettez une valeur de chaîne qui spécifie l’emplacement du formulaire PDF contenant les données à exporter.
-   * Créez un `com.adobe.idp.Document` objet qui stocke le formulaire PDF à l’aide du `com.adobe.idp.Document` constructeur. Transférez l’objet `java.io.FileInputStream` contenant le formulaire PDF au constructeur.
+   * Créez un objet `java.io.FileInputStream` en utilisant son constructeur et transmettez une valeur de chaîne qui spécifie l’emplacement du formulaire PDF contenant les données à exporter.
+   * Créez un objet `com.adobe.idp.Document` qui stocke le formulaire PDF à l’aide du constructeur `com.adobe.idp.Document`. Transmettez l’objet `java.io.FileInputStream` contenant le formulaire PDF au constructeur.
 
 1. Exportez les données du formulaire PDF.
 
-   Exportez les données de formulaire en appelant la `FormDataIntegrationClient` méthode de l’ `exportData` objet et en transmettant l’ `com.adobe.idp.Document` objet qui stocke le formulaire PDF. Cette méthode renvoie un `com.adobe.idp.Document` objet qui stocke les données de formulaire sous la forme d’un schéma XML.
+   Exportez les données de formulaire en appelant la méthode `FormDataIntegrationClient` de l’objet `exportData` et en transmettant l’objet `com.adobe.idp.Document` qui stocke le formulaire PDF. Cette méthode renvoie un objet `com.adobe.idp.Document` qui stocke les données de formulaire sous la forme d’un schéma XML.
 
 1. Enregistrez le formulaire PDF au format PDF.
 
-   * Create a `java.io.File` object and ensure that the file extension is XML.
-   * Appelez la `Document` méthode de l’ `copyToFile` objet pour copier le contenu de l’ `Document` objet dans le fichier (veillez à utiliser l’ `Document` objet renvoyé par la `exportData` méthode).
+   * Créez un objet `java.io.File` et assurez-vous que l’extension de fichier est XML.
+   * Appelez la méthode `Document` de l&#39;objet `copyToFile` pour copier le contenu de l&#39;objet `Document` dans le fichier (veillez à utiliser l&#39;objet `Document` renvoyé par la méthode `exportData`).
 
 **Voir également**
 
@@ -364,35 +364,35 @@ Exportez les données de formulaire à l’aide de l’API d’intégration des 
 
 1. Créez un client du service d’intégration des données de formulaire.
 
-   * Create a `FormDataIntegrationClient` object by using its default constructor.
-   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `FormDataIntegrationClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur par défaut.
+   * Créez un objet `FormDataIntegrationClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Cependant, spécifiez `?blob=mtom` pour utiliser MTOM.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `FormDataIntegrationClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Référence à un formulaire PDF.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. Cet `BLOB` objet est utilisé pour stocker le formulaire PDF à partir duquel les données sont exportées.
-   * Create a `System.IO.FileStream` object by invoking its constructor. Transmettez une valeur de chaîne qui spécifie l’emplacement du formulaire PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` `Read` méthode de l’objet et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. Cet objet `BLOB` est utilisé pour stocker le formulaire PDF à partir duquel les données sont exportées.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du formulaire PDF et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Exportez les données du formulaire PDF.
 
-   Importez des données dans un formulaire PDF en appelant la `FormDataIntegrationClient` méthode de l’ `exportData` objet et en transmettant l’ `BLOB` objet qui stocke le formulaire PDF. Cette méthode renvoie un `BLOB` objet qui stocke les données de formulaire sous la forme d’un schéma XML.
+   Importez des données dans un formulaire PDF en appelant la méthode `FormDataIntegrationClient` de l’objet `exportData` et en transmettant l’objet `BLOB` qui stocke le formulaire PDF. Cette méthode renvoie un objet `BLOB` qui stocke les données de formulaire sous la forme d’un schéma XML.
 
 1. Enregistrez le formulaire PDF au format PDF.
 
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier XML.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’ `BLOB` objet renvoyé par la `exportData` méthode. Renseignez le tableau d’octets en obtenant la valeur du `BLOB` champ de l’ `MTOM` objet.
-   * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-   * Ecrivez le contenu du tableau d’octets dans un fichier XML en appelant la méthode `System.IO.BinaryWriter` `Write` de l’objet et en transmettant le tableau d’octets.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier XML.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `exportData`. Renseignez le tableau d’octets en obtenant la valeur du champ `BLOB` de l’objet `MTOM`.
+   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l&#39;objet `System.IO.FileStream`.
+   * Ecrivez le contenu du tableau d’octets dans un fichier XML en appelant la méthode `System.IO.BinaryWriter` de l’objet `Write` et en transmettant le tableau d’octets.
 
 **Voir également**
 
