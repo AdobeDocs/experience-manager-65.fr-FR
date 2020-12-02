@@ -20,7 +20,7 @@ ht-degree: 59%
 
 # Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-This page explains how to build a custom page template that uses [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md) components by examining how the Geometrixx-outdoors template ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) is implemented, and points you to important information you may need when creating your own custom template.
+Cette page explique comment créer un modèle de page personnalisé qui utilise les composants [Formulaire d&#39;Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) en examinant comment le modèle de Geometrixx-extérieur ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) est implémenté et vous montre les informations importantes dont vous avez besoin lors de la création de votre propre modèle personnalisé.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
 1. **resourceSuperType correct**
 
-   Make sure the page-component inherits from `mcm/campaign/components/profile`.
+   Assurez-vous que le composant de page hérite de `mcm/campaign/components/profile`.
 
    Ceci est nécessaire pour que les servlets obtiennent et enregistrent des informations.
 
@@ -41,9 +41,9 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
 1. **Paramètres de ClientContext**
 
-   When you look at the clientcontext settings ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) you see the following settings:
+   Lorsque vous examinez les paramètres clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`), vous voyez les paramètres suivants :
 
-   * ClientContext points to `/etc/clientcontext/campaign`
+   * ClientContext pointe vers `/etc/clientcontext/campaign`
    * Il existe également un nœud *config* supplémentaire.
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
@@ -60,7 +60,7 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
 1. **body.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/body.jsp)**
 
-   In **body.jsp**, the cloud services are loaded at the bottom of the page:
+   Dans **body.jsp**, les services cloud sont chargés en bas de la page :
 
    ```
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
@@ -76,7 +76,7 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
 1. **Paramètres de modèle**.
 
-   In the template ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) you see the following default values:
+   Dans le modèle ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`), les valeurs par défaut suivantes s’affichent :
 
    | **acMapping** | mapRecipient (pour Adobe Campaign 6.1), profil (pour Adobe Campaign Standard) |
    |---|---|
