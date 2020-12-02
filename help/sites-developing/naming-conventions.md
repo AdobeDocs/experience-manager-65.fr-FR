@@ -1,8 +1,8 @@
 ---
 title: Conventions de dénomination
 seo-title: Conventions de dénomination
-description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination du référentiel Java Content
-seo-description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination du référentiel Java Content
+description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository
+seo-description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Ces conventions sont mises en place à différents niveaux :
 
 ### Utilitaires JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères contrôlés et les validations suivantes se révèlent particulièrement intéressants dans le cadre de la validation des noms :
+[JcrUtil](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères contrôlés et les validations suivantes se révèlent particulièrement intéressants dans le cadre de la validation des noms :
 
 * `isValidName`
 
