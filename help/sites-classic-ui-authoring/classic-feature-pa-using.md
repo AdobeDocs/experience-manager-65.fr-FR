@@ -33,4 +33,4 @@ Les donnée d’analyse de page s’affichent dans la console Sites. Lorsque les
 
 >[!NOTE]
 >
->L’affichage des données d’analyse du site directement dans la console est disponible uniquement dans l’interface utilisateur optimisée pour les écrans tactiles. See [Seeing Page Analytics Data](/help/sites-authoring/page-analytics-using.md) in the standard authoring documentation for details.
+>L’affichage des données d’analyse du site directement dans la console est disponible uniquement dans l’interface utilisateur optimisée pour les écrans tactiles. Voir [Affichage des données d’analyse de page](/help/sites-authoring/page-analytics-using.md) dans la documentation de création standard pour plus d’informations.
