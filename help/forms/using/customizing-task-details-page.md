@@ -17,7 +17,7 @@ ht-degree: 63%
 ---
 
 
-# Customizing the task details page {#customizing-the-task-details-page}
+# Personnalisation de la page Détails de la tâche {#customizing-the-task-details-page}
 
 La page Détails de la tâche contient des informations relatives à une tâche et à ses processus. Toutefois, vous pouvez personnaliser la page Détails de la tâche pour ajouter ou supprimer des informations.
 
@@ -29,9 +29,9 @@ Vous pouvez ajouter les informations ci-dessous à la page Détails de la tâche
 Pour personnaliser la page Détails de la tâche :
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md) 
-1. To show any additional information, add corresponding key-value pairs to the `translation.json` file at `todo`block > `details`block > `app`block > [ `required`block].
+1. Pour afficher des informations supplémentaires, ajoutez les paires clé-valeur correspondantes au fichier `translation.json` à l&#39;emplacement `todo`bloc > `details`bloc > `app`bloc > [ `required`bloc].
 
-   The [ `required`block] refers to available blocks, such as the task block for task information, process block for process information, and currentpendingtask block for pending tasks information.
+   Le [ `required`bloc] fait référence aux blocs disponibles, tels que le bloc de tâche pour les informations de tâche, le bloc de processus pour les informations de processus et le bloc de tâche en cours pour les informations de tâches en attente.
 
    Par exemple, pour ajouter des informations sur la sélection d’itinéraire requise dans la page Détails de la tâche, vous pouvez ajouter la paire clé-valeur suivante dans le bloc de tâche :
 
@@ -81,10 +81,10 @@ Pour personnaliser la page Détails de la tâche :
 
 1. Ouvrez /apps/ws/js/registry.js pour le modifier.
 
-   Search and replace `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` with `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
+   Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` par `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
 
 >[!NOTE]
 >
->To customize the task details page with tasks created in the **Start Process** tab of AEM Forms workspace, add the new information to `/apps/ws/js/runtime/templates/startprocess.html`.
+>Pour personnaliser la page Détails de la tâche avec les tâches créées dans l&#39;onglet **Processus de Début** de l&#39;espace de travail AEM Forms, ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->To add new styles for the information added in the details page, modify the CSS file by using the *User interface changes* section in [Workspace Customization](changing-locale-user-interface.md).
+>Pour ajouter de nouveaux styles pour les informations ajoutées dans la page de détails, modifiez le fichier CSS à l’aide de la section *Modifications de l’interface utilisateur* de [Personnalisation de l’espace de travail](changing-locale-user-interface.md).
