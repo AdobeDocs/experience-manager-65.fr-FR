@@ -24,15 +24,15 @@ ht-degree: 63%
 
 Connaissance des dispositions qui vous permet de créer et utiliser une disposition personnalisée. Voir [Modification de la disposition du panneau](../../forms/using/layout-capabilities-adaptive-forms.md).
 
-## Composant de disposition de panneau de formulaire adaptatif {#adaptive-form-panel-layout-component}
+## Composant de disposition de panneau de formulaire adaptatif  {#adaptive-form-panel-layout-component}
 
 Le composant Disposition de panneau de formulaire adaptatif contrôle la disposition des composants d’un formulaire adaptatif dans un panneau par rapport à l’interface utilisateur.
 
-## Création d’une disposition de panneau personnalisée {#creating-a-custom-panel-layout}
+## Création d’une disposition de panneau personnalisée  {#creating-a-custom-panel-layout}
 
-1. Navigate to the location `/crx/de`.
-1. Copy a panel layout from the location `/libs/fd/af/layouts/panel` (for example, `tabbedPanelLayout`) to `/apps` (for example, `/apps/af-custom-layout`).
-1. Rename the layout you copied to `customPanelLayout`. Change the properties of the nodes `qtip` and `jcr:description`. Par exemple, remplacez-les par `Custom layout - Toggle tabs`.
+1. Accédez à l&#39;emplacement `/crx/de`.
+1. Copiez une disposition de panneau de l’emplacement `/libs/fd/af/layouts/panel` (par exemple, `tabbedPanelLayout`) vers `/apps` (par exemple, `/apps/af-custom-layout`).
+1. Renommez la mise en page que vous avez copiée dans `customPanelLayout`. Modifiez les propriétés des noeuds `qtip` et `jcr:description`. Par exemple, remplacez-les par `Custom layout - Toggle tabs`.
 
 qtip
 
@@ -40,9 +40,9 @@ qtip
 
 >[!NOTE]
 >
->Setting the property `guideComponentType`to the value `fd/af/layouts/panel` determines that the layout is a panel-layout.
+>La définition de la propriété `guideComponentType`sur la valeur `fd/af/layouts/panel` détermine que la mise en page est une mise en page de panneau.
 
-1. Rename the file `tabbedPanelLayout.jsp` under the new layout to customPanelLayout.jsp.
+1. Renommez le fichier `tabbedPanelLayout.jsp` sous la nouvelle mise en page en customPanelLayout.jsp.
 1. Pour ajouter de nouveaux styles et un nouveau comportement, créez une bibliothèque cliente sous le nœud `etc`. Par exemple, créez à l’emplacement /etc/af-custom-layout-clientlib le nœud client-library. Attribuez au nœud la propriété de catégories af.panel.custom. Elle comporte les fichiers .css et .js suivants :
 
    ```css
@@ -115,9 +115,9 @@ qtip
    });
    ```
 
-1. To enhance the appearance and behavior, you can include a `client library`.
+1. Pour améliorer l’apparence et le comportement, vous pouvez inclure un `client library`.
 
-   Par ailleurs, mettez à jour les chemins d’accès aux scripts inclus dans les fichiers .jsp. For example, update the `customPanelLayout.jsp` file as follows:
+   Par ailleurs, mettez à jour les chemins d’accès aux scripts inclus dans les fichiers .jsp. Par exemple, mettez à jour le fichier `customPanelLayout.jsp` comme suit :
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -146,7 +146,7 @@ qtip
    </div>
    ```
 
-   Le `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` fichier :
+   Le fichier `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` :
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -175,7 +175,7 @@ qtip
    </ul>
    ```
 
-   La mise à jour `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
+   Le `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp` mis à jour :
 
    ```html
    <%-- jsp governing the panel content --%>
@@ -204,7 +204,7 @@ qtip
 
 1. Ouvrez un formulaire adaptative en mode création. La disposition de panneau que vous avez définie est ajoutée à la liste pour la configuration des dispositions de panneau.
 
-   ![La disposition Panneau personnalisé s’affiche dans la liste](assets/auth-layt.png) de disposition du panneau Capture d’ ![écran du formulaire adaptatif, à l’aide de la disposition](assets/s1.png) du panneau personnalisé ![Capture d’écran montrant la fonctionnalité de basculement de la disposition personnalisée](assets/s2.png)
+   ![La disposition Panneau personnalisé s’affiche dans la ](assets/auth-layt.png) ![liste de disposition du panneauCapture d’écran du formulaire adaptatif, à l’aide de la ](assets/s1.png) ![disposition du panneau personnaliséCapture d’écran montrant la fonctionnalité de basculement de la disposition personnalisée](assets/s2.png)
 
 Exemple de ZIP pour une disposition de panneau personnalisée et un formulaire adaptatif l’utilisant.
 
