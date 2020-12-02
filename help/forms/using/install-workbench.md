@@ -13,11 +13,11 @@ ht-degree: 57%
 ---
 
 
-# Installation de Workbench {#install-workbench}
+# Installer Workbench {#install-workbench}
 
 Ce document fournit des instructions sur l’installation et la configuration d’AEM Forms Workbench. Le programme d’installation installe également Forms Designer.
 
-## Who should read this document? {#who-should-read-this-doc}
+## Qui devrait lire ce document ? {#who-should-read-this-doc}
 
 Ce document est destiné aux administrateurs ou développeurs chargés de l’installation, de la configuration, de l’administration ou du déploiement de Workbench. Il contient également les informations nécessaires à la configuration de votre système pour prendre en charge vos processus AEM Forms mis à niveau. Les informations fournies partent du principe que quiconque lit ce document connaît bien le système d&#39;exploitation Microsoft® Windows®.
 
@@ -73,10 +73,10 @@ L’illustration suivante illustre l’installation de Workbench, notamment :
 
 Cette section décrit le configuration matérielle et logicielle requise et les plates-formes prises en charge.
 
-### Configuration matérielle et logicielle minimale {#minimum-hardware-software-requirements}
+### Configuration matérielle et logicielle minimale  {#minimum-hardware-software-requirements}
 
-**Workbench**Les exigences suivantes sont recommandées au minimum :
-Espace disque pour l&#39;installation :
+****
+WorkbenchLes exigences suivantes sont recommandées au minimum : Espace disque pour l&#39;installation :
 * 680 Mo pour Workbench seul.
 * 2.15 Go sur un seul disque pour une installation complète de Workbench , Designer et des exemples.
 * 400 Mo pour les répertoires d&#39;installation temporaires - 200 Mo dans le répertoire utilisateur temporaire et 200 Mo dans le répertoire temporaire Windows.
@@ -98,7 +98,7 @@ Espace disque pour l&#39;installation :
 
 ### Plateformes prises en charge {#supported-platforms}
 
-Reportez-vous à la liste complète des plateformes prises en charge pour Workbench sur les plateformes [prises en charge par](http://adobe.com/go/learn_aemforms_supportedplatforms_65_fr)AEM Forms.
+Consultez la liste complète des plateformes prises en charge pour Workbench à l’adresse [AEM Forms Supported Platforms](http://adobe.com/go/learn_aemforms_supportedplatforms_65_fr).
 
 ## Considérations sur l’installation de Designer {#designer-installation-considerations}
 
@@ -125,11 +125,11 @@ Différentes versions de Designer peuvent coexister sur le même système, par e
  </tbody>
 </table>
 
-### To uninstall Designer (stand-alone) on Windows 10 {#uninstall-designer-standalone-windows10}
+### Pour désinstaller Designer (autonome) sous Windows 10 {#uninstall-designer-standalone-windows10}
 
 1. Accédez à **Panneau de Contrôle > Programmes > Programmes et fonctionnalités**
 1. Dans la liste Programmes actuellement installés, sélectionnez **Adobe Designer**.
-1. Click **Uninstall** and then click **Yes**.
+1. Cliquez sur **Désinstaller**, puis sur **Oui**.
 
 ## Installation de Workbench {#installing-workbench}
 
@@ -137,7 +137,7 @@ Ce chapitre explique comment installer Workbench.
 
 ### Installation et exécution de Workbench {#installing-and-running-workbench}
 
-Before you install Workbench, you must ensure that your environment includes the software and hardware required to run it (See section: **Before You Install**).
+Avant d’installer Workbench, vous devez vous assurer que votre environnement comprend les logiciels et le matériel nécessaires à son exécution (voir la section : **Avant l’installation**).
 
 **Pour installer et exécuter Workbench :**
 
@@ -161,7 +161,7 @@ Before you install Workbench, you must ensure that your environment includes the
    >
    >Vous pouvez continuer à utiliser Designer installé avec Acrobat 10 en laissant cette option désactivée.
 
-1. Acceptez le répertoire par défaut indiqué ou cliquez sur Choisir et accédez au répertoire dans lequel vous allez installer Workbench, puis cliquez sur Suivant.
+1. Acceptez le répertoire par défaut tel que répertorié ou   cliquez sur Choisir, accédez au répertoire dans lequel vous allez installer Workbench, puis cliquez sur Suivant.
 
    >[!NOTE]
    >
@@ -171,9 +171,9 @@ Before you install Workbench, you must ensure that your environment includes the
 1. Vérifiez le récapitulatif de l’installation. Sélectionnez Début AEM Forms Workbench pour lancer Workbench et cliquez sur Suivant.
 1. Passez en revue les notes de mise à jour, puis cliquez sur Terminé.
 1. Les éléments suivants sont désormais installés sur votre ordinateur :
-   * **Workbench**: Pour exécuter Workbench à partir du menu Début, sélectionnez Tous les Programmes > AEM Forms > Workbench, si vous avez choisi d’y stocker le dossier de raccourcis. Pour plus d’informations, voir la documentation <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilisation de Workbench</a> .
-   * **Designer**: Vous pouvez accéder à Designer à partir de Workbench. For information, see Getting Started topic in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer Help</a>.
-   * **SDK** AEM Forms : Pour plus d’informations sur l’utilisation du SDK, voir <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmation avec AEM Forms</a>.
+   * **Workbench** : Pour exécuter Workbench à partir du menu Début, sélectionnez Tous les Programmes > AEM Forms > Workbench, si vous avez choisi d’y stocker le dossier de raccourcis. Pour plus d’informations,   voir la documentation <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilisation de Workbench</a>.
+   * **Designer** : Vous pouvez accéder à Designer à partir de Workbench. Pour plus d’informations, voir la rubrique Prise en main dans <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Aide de Designer</a>.
+   * **SDK** AEM Forms : Pour plus d’informations sur l’utilisation du SDK, voir  <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmation avec AEM Forms</a>.
 
 ## Processus de mise à niveau {#upgrading-processes}
 
@@ -189,15 +189,15 @@ Pour utiliser Workbench, vous devez disposer d’une instance de AEM Forms en co
 
 ### Configuration des paramètres de délai d’expiration {#configuring-timeout-settings}
 
-Par défaut, Workbench arrive à expiration après deux heures, peu importe l’activité ou l’inactivité. To edit the time-out setting, see “Configuring User Management > Configure advanced system attributes” in the <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">administration console Help</a>.
+Par défaut, Workbench arrive à expiration après deux heures, peu importe l’activité ou l’inactivité. Pour modifier le paramètre de délai d’expiration, voir &quot;Configuration de User Management > Configurer des attributs système avancés&quot; dans l’<a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Aide d’Administration Console</a>.
 
 ### Configuration de Workbench pour une connexion via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
-Pour connecter Workbench à un serveur AEM Forms via HTTPS, vous devez vous assurer que l’autorité de certification qui a émis la clé publique sera reconnue comme approuvée par Workbench. If the certificate is not recognized as coming from a trusted source, you must update the cacert file located in the [Workbench_HOME]/workbench/jre/lib/security directory.
+Pour connecter Workbench à un serveur AEM Forms via HTTPS, vous devez vous assurer que l’autorité de certification qui a émis la clé publique sera reconnue comme approuvée par Workbench. Si le certificat n’est pas reconnu comme provenant d’une source approuvée, vous devez mettre à jour le fichier cacert situé dans le répertoire [Workbench_HOME]/workbench/jre/lib/security directory.
 
 >[!NOTE]
 >
->[Workbench_HOME] représente le répertoire dans lequel vous avez installé Workbench. L’emplacement par défaut est C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
+>[Workbench_] HOMEreprésente le répertoire dans lequel vous avez installé Workbench. L’emplacement par défaut est C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
 
 Assurez-vous que vous vous connectez à HTTPS en utilisant le nom spécifié dans le certificat. Ce nom est généralement le nom d’hôte complet.
 
@@ -206,17 +206,17 @@ Assurez-vous que vous vous connectez à HTTPS en utilisant le nom spécifié dan
 
    >[!NOTE]
    >
-   >To export the certificate, open a web browser and log in to administration console, install the certificate in the browser, then export the certificate from the browser to a temporary storage location (or directly to the [Workbench_HOME]/workbench/jre/lib/security directory).
+   >Pour exporter le certificat, ouvrez un navigateur Web et connectez-vous à Administration Console, installez le certificat dans le navigateur, puis exportez le certificat du navigateur vers un emplacement d’enregistrement temporaire (ou directement dans le répertoire [Workbench_HOME]/workbench/jre/lib/security directory).
 
-1. Copy the certificate to the [Workbench_HOME]/workbench/jre/lib/security directory.
+1. Copiez le certificat dans le répertoire [Workbench_HOME]/workbench/jre/lib/security directory.
 
-1. Open a command prompt window, navigate to [Workbench_HOME]/workbench/jre/bin, and then type the following command:
+1. Ouvrez une fenêtre d’invite de commande, accédez à [Workbench_HOME]/workbench/jre/bin, puis saisissez la commande suivante :
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`Où :
    * changeit est le mot de passe par défaut du stockage des clés cacerts.
    * certname est le certificat sélectionné à l’étape 1.
    * example est l’alias que vous avez choisi pour le certificat. Cette valeur peut être changée
 
-1. Une fois invité à approuver le certificat, tapez Oui et appuyez sur la touche Entrée. The keytool proceeds to import the cacerts file in to the [Workbench_HOME]/workbench/jre/lib/security directory.
+1. Une fois invité à approuver le certificat, tapez Oui et appuyez sur la touche Entrée. L’outil keytool procède à l’importation du fichier cacerts dans le répertoire [Workbench_HOME]/workbench/jre/lib/security directory.
 
 1. Fermez et redémarrez Workbench pour appliquer les modifications.
 
@@ -255,18 +255,18 @@ Les meilleures pratiques suivantes garantissent que le cache ne grandit pas sans
    * Éliminez l’identifiant UUID ou transmettez le même identifiant UUID dans tous les modèles générés dynamiquement.
    * Générez le document à partir des octets de modèle ou du même nom de fichier sur disque.
 
-### Désinstallation de Workbench {#uninstalling-workbench}
+### Désinstallation de Workbench  {#uninstalling-workbench}
 
 Utilisez la fonction Ajouter ou supprimer des Programmes du Panneau de Contrôle pour début au programme de désinstallation. Les applications Workbench et Designer ont des programmes de désinstallation distincts.
 
-## Configuring AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor}
+## Configuration de AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor}
 
 Avec XDC Editor, les administrateurs d’imprimantes réseau peuvent créer et modifier des fichiers XML Forms Architecture Device Configuration (XDC). Les fichiers XDC décrivent les fonctionnalités des imprimantes, telles que la langue d’imprimante ou la corrélation entre le format de papier et l’emplacement du bac.
 
 Pour que votre administrateur d’imprimantes réseau utilise XDC Editor, déplacez les fichiers XDC échantillons et reportez-vous à la section Création de profils de périphériques à l’aide de XDC Editor.
 
 **Pour obtenir des exemples de fichiers** XDC :
-1. On the AEM Forms server, locate the XDC folder in [AEM Forms root]\sdk\samples\Output\IVS.
+1. Sur le serveur AEM Forms, recherchez le dossier XDC dans [racine AEM Forms]\sdk\samples\Output\IVS.
 1. Copiez le contenu de ce dossier dans un répertoire accessible à partir du système Workbench ou Eclipse.
 
 **Pour obtenir l’aide** de XDC Editor :
