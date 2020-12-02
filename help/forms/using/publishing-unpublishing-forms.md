@@ -73,17 +73,17 @@ Un élément peut présenter les états suivants :
    1. Déplacez le pointeur sur un fichier et appuyez sur **[!UICONTROL Publier]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
    1. Effectuez l’une des actions suivantes, puis appuyez sur Publier :
 
-      * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. L’élément est sélectionné.
+      * Si vous êtes dans la vue de carte, appuyez sur **[!UICONTROL Entrer la sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis appuyez sur la ressource. L’élément est sélectionné.
       * Si le mode Liste est actif, cochez la case correspondant à un élément. L’élément est sélectionné.
       * Appuyez sur un élément pour en afficher les détails.
-      * Display an asset&#39;s properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
+      * Affichez les propriétés d’une ressource en appuyant sur Propriétés de la Vue ![propriétés de la visionneuse](assets/viewproperties.png).
 
       >[!NOTE]
       >
       >Ne sélectionnez pas plusieurs éléments. La publication simultanée de plusieurs fichiers n’est pas prise en charge.
 
 
-1. Au lancement de la procédure de publication, une boîte de dialogue de confirmation s’ouvre. Elle répertorie l’ensemble des éléments et des ressources connexes. In the dialog box that contains related assets, tap **[!UICONTROL Publish]**. La ressource est publiée et la boîte de dialogue Publication des ressources réussie s’affiche.
+1. Au lancement de la procédure de publication, une boîte de dialogue de confirmation s’ouvre. Elle répertorie l’ensemble des éléments et des ressources connexes. Dans la boîte de dialogue contenant les ressources connexes, appuyez sur **[!UICONTROL Publier]**. La ressource est publiée et la boîte de dialogue Publication des ressources réussie s’affiche.
 
    >[!NOTE]
    >
@@ -101,7 +101,7 @@ Un élément peut présenter les états suivants :
 
    Après la publication d’un élément, vous pouvez utiliser Forms Portal pour afficher l’ensemble des éléments sur une page Web. Pour plus d’informations, consultez la section [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
 
-## Publication de tous les actifs de Correspondence Management {#publish-all-the-correspondence-management-assets}
+## Publication de tous les actifs de Correspondence Management  {#publish-all-the-correspondence-management-assets}
 
 AEM Forms permet de modifier tous les actifs de Correspondence Management sur un serveur en une seule fois. Les éléments publiés comportent tous les actifs de Correspondence Management et dépendances connexes.
 
@@ -109,8 +109,8 @@ Procédez comme suit pour publier tous les actifs de Correspondence Management s
 
 1. Connectez-vous au serveur AEM Forms.
 1. Appuyez sur **Adobe Experience Manager** dans la barre de navigation globale.
-1. Tap ![tools](assets/tools.png), and then tap **Forms**.
-1. Tap **Publish Correspondence Management Assets**.
+1. Appuyez sur ![tools](assets/tools.png), puis sur **Forms**.
+1. Appuyez sur **Publier les actifs de Correspondence Management**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -118,7 +118,7 @@ Procédez comme suit pour publier tous les actifs de Correspondence Management s
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. Tap **Publish** and, in the confirm message, tap **OK**.
+1. Appuyez sur **Publier** et, dans le message de confirmation, appuyez sur **OK**.
 
    A la fin du traitement par lot, vous pouvez afficher les détails de la dernière exécution. Ces informations indiquent la session administrateur et si le traitement du lot a réussi ou échoué.
 
@@ -128,31 +128,31 @@ Procédez comme suit pour publier tous les actifs de Correspondence Management s
 
 ## Automatisation de la publication ou de l’annulation de publication de formulaires et documents {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-AEM Forms permet de planifier la publication et l’annulation de publication des éléments de formulaires et documents. Vous pouvez spécifier la planification dans l’éditeur de métadonnées. For more information about managing form metadata, see [Managing form metadata.](../../forms/using/manage-form-metadata.md)
+AEM Forms permet de planifier la publication et l’annulation de publication des éléments de formulaires et documents. Vous pouvez spécifier la planification dans l’éditeur de métadonnées. Pour plus d’informations sur la gestion des métadonnées de formulaire, voir [Gestion des métadonnées de formulaire.](../../forms/using/manage-form-metadata.md)
 
 Procédez comme suit pour planifier la date et l’heure de publication et d’annulation de publication des éléments de formulaires et documents :
 
-1. Select an asset and tap **[!UICONTROL View Properties]**. La page Propriétés des métadonnées s’ouvre.
+1. Sélectionnez une ressource et appuyez sur **[!UICONTROL Propriétés de la Vue]**. La page Propriétés des métadonnées s’ouvre.
 1. Dans la page Propriétés des métadonnées, appuyez sur **[!UICONTROL Avancé]**, puis sur **[!UICONTROL Modifier]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. Sélectionnez la date et l’heure dans les champs **[!UICONTROL Heure de début de publication]** et **[!UICONTROL Heure de fin de publication]**.\
    Appuyez sur **[!UICONTROL Terminé]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Annulation de la publication d’un élément {#unpublish-an-asset}
 
-1. Select an asset that is published and tap **[!UICONTROL Unpublish]** ![unpublish](assets/unpublish.png).
+1. Sélectionnez un fichier qui est publié et appuyez sur **[!UICONTROL Annuler la publication]** ![annuler la publication](assets/unpublish.png).
 1. Utilisez l’une des actions suivantes pour sélectionner et annuler la publication d’un élément.
 
-   1. Move the pointer over an asset and tap **[!UICONTROL Unpublish]** ![unpublish](assets/unpublish.png).
+   1. Positionnez le pointeur sur une ressource et appuyez sur **[!UICONTROL Annuler la publication]** ![Annuler la publication](assets/unpublish.png).
    1. Effectuez l’une des actions suivantes, puis appuyez sur Annuler la publication :
 
-      * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. L’élément est sélectionné.
+      * Si vous êtes dans la vue de carte, appuyez sur **[!UICONTROL Entrer la sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis appuyez sur la ressource. L’élément est sélectionné.
 
-      * If you are in the list view, hover over an asset and tap ![selectassetcheckmark](assets/selectassetcheckmark.png) . L’élément est sélectionné.
+      * Si vous vous trouvez dans la vue de liste, passez la souris sur une ressource et appuyez sur ![selectassetcheckmark](assets/selectassetcheckmark.png) . L’élément est sélectionné.
 
       * Appuyez sur un élément pour en afficher les détails.
-      * Display an asset&#39;s properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
+      * Affichez les propriétés d’une ressource en appuyant sur Propriétés de la Vue ![propriétés de la visionneuse](assets/viewproperties.png).
 
-1. Au lancement de la procédure d’annulation de publication, une boîte de dialogue de confirmation s’ouvre. Tap **[!UICONTROL Unpublish]**.
+1. Au lancement de la procédure d’annulation de publication, une boîte de dialogue de confirmation s’ouvre. Appuyez sur **[!UICONTROL Annuler la publication]**.
 
    >[!NOTE]
    >
@@ -166,8 +166,8 @@ Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifi
 >
 >Ne rétablissez pas le dernier état de publication d’une lettre si une ressource dépendante utilisée dans cette lettre publiée a été supprimée du système.
 
-1. Select an asset and tap **[!UICONTROL Revert to Previously Published Version]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. Avant que la ressource ne soit rétablie, une boîte de dialogue de confirmation s’affiche. Tap **[!UICONTROL Revert]**.
+1. Sélectionnez un fichier et appuyez sur **[!UICONTROL Revenir à la version précédemment publiée]** ![réverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Avant que la ressource ne soit rétablie, une boîte de dialogue de confirmation s’affiche. Appuyez sur **[!UICONTROL Rétablir]**.
 
    La version précédemment publiée de la ressource ou de la lettre est rétablie.
 
@@ -177,17 +177,17 @@ Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifi
 >
 >La suppression d’une ressource la supprime de l’instance de publication. La suppression d’une ressource supprime également son historique des versions, sauf la version de base.
 
-1. Select an asset and tap **[!UICONTROL Delete]** ![delete](assets/delete.png).
+1. Sélectionnez une ressource et appuyez sur **[!UICONTROL Supprimer]** ![supprimer](assets/delete.png).
 
    >[!NOTE]
    >
-   >The Delete option is also available when you display asset details by tapping an asset or you display an asset&#39;s properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
+   >L’option Supprimer est également disponible lorsque vous affichez les détails d’un fichier en appuyant sur un fichier ou lorsque vous affichez ses propriétés en appuyant sur Propriétés de la Vue ![propriétés](assets/viewproperties.png).
 
 1. Avant que l’élément soit supprimé, une boîte de dialogue de confirmation s’affiche. Appuyez sur **[!UICONTROL Supprimer]**.
 
    >[!NOTE]
    >
-   >Seul l’élément sélectionné est supprimé et les éléments dépendants ne sont pas supprimés. To check references of an asset, tap ![references](assets/references.png) and then select an asset.
+   >Seul l’élément sélectionné est supprimé et les éléments dépendants ne sont pas supprimés. Pour vérifier les références d&#39;un actif, appuyez sur ![références](assets/references.png), puis sélectionnez un actif.
    >
    >
    >Si l’élément que vous essayez de supprimer est un élément enfant d’un autre élément, il n’est pas supprimé. Pour supprimer ce type d’élément, supprimez les références de cet élément des autres éléments et réessayez.
