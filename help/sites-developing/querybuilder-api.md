@@ -26,7 +26,7 @@ La fonctionnalité du [Query Builder Asset Share](/help/assets/assets-finder-edi
 
 Le générateur de requêtes côté serveur ([`QueryBuilder`](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) accepte une description de requête, crée et exécute une requête XPath, filtre éventuellement le jeu de résultats et, si vous le souhaitez, extrait également des facettes.
 
-La description de requête correspond simplement à un ensemble de prédicats ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Par exemple, un prédicat de texte intégral correspond à la `jcr:contains()` fonction de XPath.
+La description de requête correspond simplement à un ensemble de prédicats ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Par exemple, un prédicat de texte intégral correspond à la fonction `jcr:contains()` dans XPath.
 
 Pour chaque type de prédicat, il existe un composant Évaluateur ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) qui sait comment en effectuer la gestion pour XPath, pour le filtrage et pour l’extraction de facettes. Il est très facile de créer des évaluateurs personnalisés, qui sont activés via l’exécutable du composant OSGi.
 
@@ -36,13 +36,13 @@ L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP
 >
 >L’API QueryBuilder est créée à l’aide de l’API JCR. Vous pouvez également interroger le JCR Adobe Experience Manager en utilisant l’API JCR depuis un lot OSGi. Pour plus d’informations, voir [Interrogation des données Adobe Experience Manager à l’aide de l’API JCR](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
-## Session Gem {#gem-session}
+## Session Gem  {#gem-session}
 
 [AEM Gems](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-index.html) est une série de sessions techniques approfondies sur Adobe Experience Manager dispensées par des experts Adobe. Cette session consacrée à Query Builder s’avère très utile pour se familiariser avec l’outil.
 
 >[!NOTE]
 >
->See the AEM Gem session [Search forms made easy with the AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) for a detailed overview of the query builder.
+>Consultez l&#39;AEM session Gem [Formulaires de recherche faciles à utiliser avec AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) pour un aperçu détaillé du créateur de requêtes.
 
 ## Exemples de requêtes {#sample-queries}
 
@@ -62,7 +62,7 @@ Pour le servlet JSON `QueryBuilder`, chaque exemple comprend un lien vers votre 
 >
 >Pour afficher les données JSON renvoyées dans votre navigateur, vous pouvez utiliser un module externe tel que JSONView for Firefox.
 
-### Renvoi de tous les résultats {#returning-all-results}
+### Renvoi de tous les résultats  {#returning-all-results}
 
 La requête suivante **renvoie dix résultats** (ou, pour être précis, un maximum de dix), mais vous informe du **Nombre d’accès** réellement disponibles :
 
@@ -138,13 +138,13 @@ Par défaut, Query Builder fournit également le nombre d’accès. Suivant la 
 
 L’interface utilisateur peut, par exemple, adapter la méthode suivante :
 
-* Get and display the accurate count of the number of total hits ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) or total in the querybuilder.json response) are less than or equal to 100;
+* Obtenez et affichez le nombre exact du nombre total d&#39;accès ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) ou total dans la réponse querybuilder.json) est inférieur ou égal à 100 ;
 * Définissez `guessTotal` sur 100 tout en effectuant l’appel vers Query Builder.
 
 * La réponse peut générer le résultat suivant :
 
-   * `total=43`, `more=false` - Indique que le nombre total d’accès est de 43. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les trois pages suivantes. Vous pouvez également utiliser cette implémentation pour afficher un texte descriptif tel que **« 43 résultats trouvés »**.
-   * `total=100`, `more=true` - Indique que le nombre total d’accès est supérieur à 100 et que le nombre exact n’est pas connu. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les dix pages suivantes. Vous pouvez également utiliser cette implémentation pour afficher un texte tel que **« plus de 100 résultats trouvés »**. Lorsque l’utilisateur accède aux pages suivantes, les appels effectués vers Query Builder augmentent la limite de `guessTotal`, ainsi que celle des paramètres `offset` et `limit`.
+   * `total=43`,  `more=false` - Indique que le nombre total d’accès est de 43. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les trois pages suivantes. Vous pouvez également utiliser cette implémentation pour afficher un texte descriptif tel que **« 43 résultats trouvés »**.
+   * `total=100`,  `more=true` - Indique que le nombre total d’accès est supérieur à 100 et que le nombre exact n’est pas connu. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les dix pages suivantes. Vous pouvez également utiliser cette implémentation pour afficher un texte tel que **« plus de 100 résultats trouvés »**. Lorsque l’utilisateur accède aux pages suivantes, les appels effectués vers Query Builder augmentent la limite de `guessTotal`, ainsi que celle des paramètres `offset` et `limit`.
 
 Il est également conseillé d’utiliser `guessTotal` lorsque l’IU doit appliquer un défilement infini, afin d’empêcher Query Builder de déterminer le nombre exact d’accès.
 
@@ -198,11 +198,11 @@ tagid=marketing:interest/product
 tagid.property=jcr:content/cq:tags
 ```
 
-Use the `tagid` predicate as in the example if you know the explicit tag ID.
+Utilisez le prédicat `tagid` comme dans l&#39;exemple si vous connaissez l&#39;ID de balise explicite.
 
 Utilisez le prédicat `tag` pour le chemin d’accès au titre de la balise (sans espaces).
 
-Because, in the previous example, you are searching for pages ( `cq:Page` nodes), you need to use the relative path from that node for the `tagid.property` predicate, which is `jcr:content/cq:tags`. By default, the `tagid.property` would simply be `cq:tags`.
+Dans l&#39;exemple précédent, vous recherchez des pages ( `cq:Page` noeuds), vous devez utiliser le chemin relatif de ce noeud pour le prédicat `tagid.property`, qui est `jcr:content/cq:tags`. Par défaut, `tagid.property` serait simplement `cq:tags`.
 
 ### Recherche dans plusieurs chemins d’accès (à l’aide de groupes) {#search-under-multiple-paths-using-groups}
 
@@ -219,17 +219,17 @@ Cette requête utilise un *groupe* (appelé « `group` »), qui sert à délim
 
 `"Management" and ("/content/geometrixx/en/company/management" or "/content/geometrixx/en/company/bod")`
 
-Le prédicat `path` est utilisé à plusieurs reprises dans le groupe de l’exemple précédent. To differentiate and order the two instances of the predicate (ordering is required for some predicates), you must prefix the predicates with *N* `_ where`*N* is the ordering index. In the previous example, the resulting predicates are `1_path` and `2_path`.
+Le prédicat `path` est utilisé à plusieurs reprises dans le groupe de l’exemple précédent. Pour différencier et classer les deux instances du prédicat (l&#39;ordre est requis pour certains prédicats), vous devez préfixer les prédicats avec *N* `_ where`*N* comme index d&#39;ordonnancement. Dans l&#39;exemple précédent, les prédicats résultants sont `1_path` et `2_path`.
 
-The `p` in `p.or` is a special delimiter indicating that what follows (in this case an `or`) is a *parameter* of the group, as opposed to a subpredicate of the group, such as `1_path`.
+`p` dans `p.or` est un délimiteur spécial qui indique que ce qui suit (dans ce cas un `or`) est un *paramètre* du groupe, par opposition à un sous-prédicat du groupe, tel que `1_path`.
 
-If no `p.or` is given then all predicates are ANDed together, that is, each result must satisfy all predicates.
+Si aucun `p.or` n&#39;est donné, tous les prédicats sont ETés ensemble, c&#39;est-à-dire que chaque résultat doit satisfaire tous les prédicats.
 
 >[!NOTE]
 >
 >Vous ne pouvez pas utiliser le même préfixe numérique dans une seule requête, même pour des prédicats différents.
 
-### Recherche de propriétés {#search-for-properties}
+### Recherche de propriétés  {#search-for-properties}
 
 Dans ce cas, vous recherchez toutes les pages d’un modèle donné, à l’aide de la propriété `cq:template` :
 
@@ -267,7 +267,7 @@ type=cq:Page
 
 ### Recherche de plusieurs valeurs de propriété {#search-for-multiple-property-values}
 
-To avoid big groups when you want to search for multiple values of a property ( `"A" or "B" or "C"`), you can provide multiple values to the `property` predicate:
+Pour éviter les grands groupes lorsque vous souhaitez rechercher plusieurs valeurs d&#39;une propriété ( `"A" or "B" or "C"`), vous pouvez fournir plusieurs valeurs au prédicat `property` :
 
 `http://localhost:4502/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Products&property.2_value=Square&property.3_value=Events`
 
@@ -278,7 +278,7 @@ property.2_value=Square
 property.3_value=Events
 ```
 
-Pour les propriétés à plusieurs valeurs, vous pouvez également exiger que plusieurs valeurs correspondent à ( `"A" and "B" and "C"`) :
+Pour les propriétés à plusieurs valeurs, vous pouvez également exiger que plusieurs valeurs correspondent ( `"A" and "B" and "C"`) :
 
 `http://localhost:4502/bin/querybuilder.json?property=jcr%3atitle&property.and=true&property.1_value=test&property.2_value=foo&property.3_value=bar`
 
@@ -341,7 +341,7 @@ Vous pouvez également inclure des nœuds enfants dans la réponse de QueryBuild
 p.nodedepth=n
 ```
 
-où `n` est le nombre de niveaux que la requête doit renvoyer. Pour qu’un nœud enfant soit renvoyé, notez qu’il doit être spécifié par le sélecteur de propriétés
+où `n` correspond au nombre de niveaux que la requête doit renvoyer. Pour qu’un nœud enfant soit renvoyé, notez qu’il doit être spécifié par le sélecteur de propriétés
 
 ```
 p.hits=full
@@ -362,13 +362,13 @@ p.nodedepth=5
 
 Pour plus de prédicats, consultez la [page de référence des prédicats de Query Builder](/help/sites-developing/querybuilder-predicate-reference.md).
 
-You can also check the [Javadoc for the `PredicateEvaluator` classes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Ce JavaDoc contient la liste des propriétés que vous pouvez utiliser.
+Vous pouvez également vérifier le code Javadoc [pour les classes `PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Ce JavaDoc contient la liste des propriétés que vous pouvez utiliser.
 
-The prefix of the class name (for example, &quot; `similar`&quot; in [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is the *principal property* of the class. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
+Le préfixe du nom de classe (par exemple, &quot; `similar`&quot; dans [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) est la *propriété principale* de la classe. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
 
-For such principal properties, you can shorten the query and use &quot; `similar=/content/en`&quot; instead of the fully qualified variant &quot; `similar.similar=/content/en`&quot;. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
+Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser &quot; `similar=/content/en`&quot; au lieu de la variante complète &quot; `similar.similar=/content/en`&quot;. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
 
-## Exemple d’utilisation de l’API Query Builder {#example-query-builder-api-usage}
+## Exemple d’utilisation de l’API Query Builder  {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "Geometrixx";
@@ -434,13 +434,13 @@ La même requête exécutée sur HTTP à l’aide du servlet Query Builder (JSON
 
 ## Stockage et chargement de requêtes {#storing-and-loading-queries}
 
-Les requêtes peuvent être stockées dans le référentiel de manière à pouvoir les utiliser ultérieurement. The `QueryBuilder` provides the `` `storeQuery` method with the following signature:
+Les requêtes peuvent être stockées dans le référentiel de manière à pouvoir les utiliser ultérieurement. La méthode `QueryBuilder` fournit la méthode &quot;`storeQuery` avec la signature suivante :
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-When using the [ `QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession) method, the given `Query` is stored into the repository as a file or as a property according to the `createFile` argument value. The following example shows how to save a `Query` to the path `/mypath/getfiles` as a file:
+Lors de l&#39;utilisation de la méthode [ `QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession), le `Query` donné est stocké dans le référentiel sous la forme d&#39;un fichier ou d&#39;une propriété conformément à la valeur de l&#39;argument `createFile`. L&#39;exemple suivant montre comment enregistrer un `Query` dans le chemin d&#39;accès `/mypath/getfiles` en tant que fichier :
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
@@ -452,7 +452,7 @@ Toutes les requêtes stockées précédemment peuvent être chargées à partir 
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
 ```
 
-For example, a `Query` stored to the path `/mypath/getfiles` can be loaded by the following snippet:
+Par exemple, un `Query` stocké dans le chemin `/mypath/getfiles` peut être chargé par le fragment de code suivant :
 
 ```java
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
@@ -468,7 +468,7 @@ Une autre solution consiste à utiliser le servlet JSON Query Builder à l’ad
 
 `http://localhost:4502/bin/querybuilder.json?path=/tmp`
 
-( `path=/tmp` is only an example).
+( `path=/tmp` n&#39;est qu&#39;un exemple).
 
 ### Recommandations générales en matière de débogage {#general-debugging-recommendations}
 
@@ -478,14 +478,14 @@ Expliquez **toutes** les requêtes pendant le cycle de développement par rappor
 
 * Autorisation des journaux DEBUG pour Query Builder afin d’obtenir la requête XPath explicable sous-jacente
 
-   * Accédez à https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Create a new logger for `com.day.cq.search.impl.builder.QueryImpl` at **DEBUG**.
+   * Accédez à https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Créez un nouveau journal pour `com.day.cq.search.impl.builder.QueryImpl` à **DEBUG**.
 
 * Une fois que DEBUG a été activé pour la classe ci-dessus, les journaux affichent la requête XPath générée par Query Builder.
 * Copiez la requête XPath à partir de l’entrée de journal pour la requête Query Builder associée. Par exemple :
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Paste the XPath query into [Explain Query](/help/sites-administering/operations-dashboard.md#explain-query) as XPath to obtrain the query plan
+* Collez la requête XPath dans [Explication de la Requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath pour obtenir le plan de requête
 
 ### Obtention de la requête XPath explicable via le débogueur Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
@@ -497,14 +497,14 @@ Expliquez **toutes** les requêtes pendant le cycle de développement par rappor
 
 * Autorisation des journaux DEBUG pour Query Builder afin d’obtenir la requête XPath explicable sous-jacente
 
-   * Accédez à https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Create a new logger for `com.day.cq.search.impl.builder.QueryImpl` at **DEBUG**.
+   * Accédez à https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Créez un nouveau journal pour `com.day.cq.search.impl.builder.QueryImpl` à **DEBUG**.
 
 * Une fois que DEBUG a été activé pour la classe ci-dessus, les journaux affichent la requête XPath générée par Query Builder.
 * Copiez la requête XPath à partir de l’entrée de journal pour la requête Query Builder associée. Par exemple :
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Paste the XPath query into [Explain Query](/help/sites-administering/operations-dashboard.md#explain-query) as XPath to obtain the query plan
+* Collez la requête XPath dans [Explication de la Requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath pour obtenir le plan de requête
 
 **Obtention de la requête XPath explicable via le débogueur Query Builder**
 
@@ -527,11 +527,11 @@ Pour un aperçu du débogage des requêtes avec Query Builder, visionnez la vid
 >
 >[https://www.youtube.com/watch?v=BnyXjhRKYKc](https://www.youtube.com/watch?v=BnyXjhRKYKc)
 
-## Débogage de requêtes à l’aide de la journalisation {#debugging-queries-with-logging}
+## Débogage de requêtes à l’aide de la journalisation  {#debugging-queries-with-logging}
 
 >[!NOTE]
 >
->The configuration of the loggers is described in the section [Creating Your Own Loggers and Writers](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
+>La configuration des journaux est décrite dans la section [Création de vos propres journaux et écrivains](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
 
 Sortie de journal (niveau INFO) de l’implémentation Query Builder lors de l’exécution de la requête décrite à la section Tests et débogage :
 
@@ -565,7 +565,7 @@ com.day.cq.search.impl.builder.QueryImpl filtering predicates: {nodename=nodenam
 com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 ```
 
-## Liens JavaDoc {#javadoc-links}
+## Liens JavaDoc  {#javadoc-links}
 
 | **Javadoc** | **Description** |
 |---|---|
