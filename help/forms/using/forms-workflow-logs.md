@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Les étapes du processus Forms fournissent des journaux détaillés pour déboguer les problèmes liés au processus. Activez la journalisation du débogage pour les workflows AEM Forms afin de vue des journaux.
 
-By default, all logging information is available in the **error.log** file at the */crx-repository/logs/* directory.
+Par défaut, toutes les informations de journalisation sont disponibles dans le fichier **error.log** situé dans le répertoire */crx-repository/logs/*.
 
 Les journaux de débogage des workflows de formulaires incluent :
 
@@ -77,21 +77,21 @@ Utilisez les journaux pour évaluer ce qui suit :
 
 S’il existe une exception, vous pouvez vue la trace complète de la pile pour évaluer la cause de l’erreur.
 
-## Activation de la journalisation du débogage pour les workflows AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
+## Activer la journalisation du débogage pour les workflows AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
 Effectuez les étapes suivantes pour activer la journalisation du débogage pour les workflows AEM Forms :
 
 1. Accédez à AEM gestionnaire de configuration de la console Web à l’adresse :
 
-   https://&#39;[server]:[port]&#39;/system/console/configMgr
+   https://&#39;[serveur]:[port]&#39;/system/console/configMgr
 
-1. Sélectionnez **[!UICONTROL Sling]** > Prise en charge **[!UICONTROL des]** journaux.
+1. Sélectionnez **[!UICONTROL Sling]** > **[!UICONTROL Prise en charge du journal]**.
 1. Appuyez sur **[!UICONTROL Ajouter un nouveau journal.]**
-1. Sélectionnez **[!UICONTROL Débogage]** comme niveau **[!UICONTROL de]** journal.
+1. Sélectionnez **[!UICONTROL Debug]** comme **[!UICONTROL Niveau de journal]**.
 1. Spécifiez l’emplacement du fichier journal. L’emplacement par défaut du fichier journal est : *logs\error.log*
-1. Indiquez le nom du package **com.adobe.granite.workflow.core** dans la colonne **[!UICONTROL Logger]** .
+1. Indiquez le nom du package **com.adobe.granite.workflow.core** dans la colonne **[!UICONTROL Logger]**.
 
-   L’exécution de ces étapes permet de stocker les journaux de débogage du package **com.adobe.granite.workflow.core** . Appuyez sur **[!UICONTROL +]** et ajoutez les noms de package suivants à la liste :
+   L’exécution de ces étapes permet de stocker les journaux de débogage du package **com.adobe.granite.workflow.core**. Appuyez sur **[!UICONTROL +]** et ajoutez les noms de package suivants à la liste :
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace
