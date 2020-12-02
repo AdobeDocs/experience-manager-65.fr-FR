@@ -18,7 +18,7 @@ ht-degree: 7%
 ---
 
 
-# AEM Mobile à la demande {#aem-mobile-on-demand}
+# AEM Mobile On-Demand {#aem-mobile-on-demand}
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Si vous n’utilisez pas AEM comme source de gestion de contenu, consultez l’aide [](https://helpx.adobe.com/digital-publishing-solution/topics.html)AEM Mobile On-demand Services.
+>Si vous n’utilisez pas AEM en tant que source de gestion de contenu, voir [Aide de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## Administrateur AEM {#aem-administrator}
 
@@ -34,9 +34,9 @@ ht-degree: 7%
 >
 >**Condition préalable requise :**
 >
->Avant de commencer à configurer votre environnement pour AEM Mobile On-demand Services, consultez le Tableau de bord d&#39;application [AEM Mobile ou le Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Avant de commencer à configurer votre environnement pour AEM Mobile On-demand Services, consultez [AEM Mobile Application Tableau de bord ou le Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Un administrateur ***AEM*** est chargé d’ajouter une nouvelle application au catalogue AEM Mobile, soit en créant une nouvelle application à l’aide de l’assistant de création, soit en important une application existante. aem administrateurs qui créent une application à l’aide de l’assistant *de* création AEM Mobile sélectionnent généralement l’un des modèles d’application souhaités, soit à partir des exemples de référence prêts à l’emploi, soit (dans la plupart des cas) à partir d’un modèle d’application personnalisé créé par des développeurs *AEM.*
+Un ***AEM administrateur*** est chargé d&#39;ajouter une nouvelle application au catalogue AEM Mobile, soit en créant une nouvelle application à l&#39;aide de l&#39;assistant de création, soit en important une application existante. Les administrateurs AEM qui créent une nouvelle application à l’aide de l’Assistant de création *AEM Mobile* sélectionnent généralement l’un des modèles d’application souhaités dans nos exemples de référence prêts à l’emploi ou (dans la plupart des cas) un modèle d’application personnalisé créé par les *AEM développeurs.*
 
 >[!NOTE]
 >
