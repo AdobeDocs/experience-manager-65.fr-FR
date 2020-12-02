@@ -18,7 +18,7 @@ ht-degree: 98%
 ---
 
 
-# Prise en charge des scripts pour les formulaires HTML5 {#scripting-support-for-html-forms}
+# Prise en charge des scripts pour les formulaires HTML5  {#scripting-support-for-html-forms}
 
 Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans les formulaires HTML5 se répartissent comme suit :
 
@@ -48,7 +48,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td><code>newtext</code></td>
    <td>Indique le contenu du champ une fois qu’il a été modifié suite aux actions de l’utilisateur.</td>
-   <td><p>The <code>newText</code> property does not work properly for following cases :</p>
+   <td><p>La propriété <code>newText</code> ne fonctionne pas correctement dans les cas suivants :</p>
     <ul>
      <li>Lorsque vous sélectionnez des textes de remplacement</li>
      <li>Lorsque vous supprimez, copiez et collez des textes</li>
@@ -493,7 +493,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 |---|---|
 | target | Adresse URL à laquelle les données sont envoyées. L’omission de cet attribut implique que l’application de traitement XFA obtienne l’URI à l’aide d’une technique spécifique au produit, telle que l’accès aux informations spécifiques au produit dans l’objet config. |
 
-## arborescence {#tree}
+## arborescence  {#tree}
 
 <table>
  <tbody>
@@ -583,7 +583,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody>
 </table>
 
-## fill {#fill}
+## fill  {#fill}
 
 <table>
  <tbody>
@@ -705,7 +705,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody>
 </table>
 
-## draw {#draw}
+## draw  {#draw}
 
 <table>
  <tbody>
@@ -720,7 +720,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>légende</td>
    <td>L’objet caption décrit un libellé descriptif associé à un objet de conception de formulaire.</td>
    <td> </td>
   </tr>
@@ -835,7 +835,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 | **Propriété** | **Description** | **Exception** |
 |---|---|---|
-| bordure | L’objet border décrit la bordure entourant un objet. | none |
+| bordure | L’objet border décrit la bordure entourant un objet. | aucune |
 
 ## objet {#object}
 
@@ -849,7 +849,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>className</td>
    <td>Spécifie le nom de la classe de cet objet.<br /> </td>
-   <td>none</td>
+   <td>aucune</td>
   </tr>
  </tbody>
 </table>
@@ -871,7 +871,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody>
 </table>
 
-## textEdit {#textedit}
+## textEdit  {#textedit}
 
 <table>
  <tbody>
@@ -948,7 +948,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>légende</td>
    <td>L’objet caption décrit un libellé descriptif associé à un objet de conception de formulaire.<br /> </td>
    <td>Aucune</td>
   </tr>
@@ -1115,7 +1115,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 FormCalc est un langage spécifique à XFA pour la création d’une logique relative aux formulaires électroniques et de racines de calcul. FormCalculation fournit un puissant ensemble de fonctions de création.
 
-### Fonctions FormCalc prises en charge {#formcalc-supported-functions}
+### Fonctions FormCalc prises en charge  {#formcalc-supported-functions}
 
 ### Prise en charge des expressions de FormCalc {#formcalc-expression-support}
 
@@ -1158,12 +1158,12 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
   <tr>
    <td>pour</td>
    <td><br type="_moz" /> </td>
-   <td>for i = 100 downto 1 <br /> do s = s + i endfor</td>
+   <td>pour i = 100 downto 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>for each</td>
    <td><br type="_moz" /> </td>
-   <td>for each i in (1, 2, 3) <br /> do s = s + i endfor</td>
+   <td>pour chaque i in (1, 2, 3) <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>déclaration de la fonction</td>
@@ -1173,7 +1173,7 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
  </tbody>
 </table>
 
-### Prise en charge des API Acrobat {#acrobat-api-support}
+### Prise en charge des API Acrobat  {#acrobat-api-support}
 
 1. **Fonctions arithmétiques**
 
@@ -1338,7 +1338,7 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
  </tbody>
 </table>
 
-## Evénements XFA pris en charge {#supported-xfa-events}
+## Evénements XFA pris en charge  {#supported-xfa-events}
 
 Les événements XFA côté client suivants sont pris en charge :
 
