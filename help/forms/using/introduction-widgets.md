@@ -17,7 +17,7 @@ ht-degree: 91%
 ---
 
 
-# Structure de l’apparence des formulaires adaptatifs et HTML5 {#appearance-framework-for-adaptive-and-html-forms}
+# Structure de l’apparence des formulaires adaptatifs et HTML5  {#appearance-framework-for-adaptive-and-html-forms}
 
 Les formulaires (formulaires adaptatifs et HTML5) utilisent [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) et [Underscore.js](https://underscorejs.org/) pour l’apparence et les scripts. Les formulaires utilisent également l’architecture des [jQuery UI](https://jqueryui.com/) **widgets** pour tous les éléments interactifs (comme les champs ou les boutons) qu’ils contiennent. Cette architecture permet aux développeurs de formulaires d’utiliser un riche ensemble de widgets et modules externes jQuery disponibles dans les formulaires. Vous pouvez également implémenter une logique spécifique au formulaire lors de l’acquisition des données des utilisateurs comme les restrictions leadDigits/trailDigits ou l’implémentation de clauses d’image. Les développeurs de formulaires peuvent créer et utiliser des apparences personnalisées pour améliorer l’expérience d’acquisition des données et la rendre plus conviviale.
 
@@ -29,7 +29,7 @@ La structure de l’apparence repose sur différents événements (déclencheurs
 * L’apparence, en tant que partie du contrat, déclenche un ensemble d’événements (par exemple, entrer et quitter).
 * L’apparence est requise pour implémenter un ensemble de fonctions. Certaines fonctions sont courantes, tandis que d’autres sont spécifiques aux fonctions de type champ.
 
-## Options communes {#common-options}
+## Options communes  {#common-options}
 
 Vous trouverez ci-après une définition des options globales. Ces options sont disponibles pour chaque champ.
 
@@ -53,7 +53,7 @@ Vous trouverez ci-après une définition des options globales. Ces options sont 
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Les lecteurs d’écran utilisent cette valeur pour fournir des informations sur le champ. The form provides the value and you can override the value.<br /> </td>
+   <td>Les lecteurs d’écran utilisent cette valeur pour fournir des informations sur le champ. Le formulaire fournit la valeur et vous pouvez remplacer la valeur.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -88,11 +88,11 @@ Vous trouverez ci-après une définition des options globales. Ces options sont 
 
 En dehors de ces options, la structure fournit quelques autres options qui varient selon le type de champ. Les détails des options propres aux champs sont répertoriés ci-dessous.
 
-### Interaction avec la structure de formulaires {#interaction-with-forms-framework}
+### Interaction avec la structure de formulaires  {#interaction-with-forms-framework}
 
 Pour interagir avec la structure de formulaires, un widget déclenche certains événements pour activer l’exécution du script de formulaire. Si le widget n’exécute pas ces événements, certains des scripts écrits sur le formulaire de ce champ ne fonctionnent pas.
 
-#### Événements déclenchés par un widget {#events-triggered-by-widget}
+#### Événements déclenchés par un widget  {#events-triggered-by-widget}
 
 <table>
  <tbody>
@@ -138,7 +138,7 @@ La structure de l’apparence appelle certaines fonctions du widget qui sont imp
    <td>Place l’accent sur le champ et appelle XFA_CLICK_ÉVÉNEMENT.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>representing the error<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: chaîne </em>représentant l'erreur<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td>
    <td>Envoie le message d’erreur et le type d’erreur au widget. Le widget affiche l’erreur.</td>
   </tr>
   <tr>
@@ -148,7 +148,7 @@ La structure de l’apparence appelle certaines fonctions du widget qui sont imp
  </tbody>
 </table>
 
-## Options spécifiques du type de champ {#options-specific-to-type-of-field}
+## Options spécifiques du type de champ  {#options-specific-to-type-of-field}
 
 Tous les widgets personnalisés doivent être conformes aux spécifications ci-dessus. Pour utiliser les fonctions de différents champs, le widget doit être conforme aux directives de ce champ particulier.
 
@@ -175,7 +175,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
  </tbody>
 </table>
 
-### ChoiceList: DropDownList, ListBox {#choicelist-dropdownlist-listbox}
+### ChoiceList: DropDownList, ListBox  {#choicelist-dropdownlist-listbox}
 
 <table>
  <tbody>
@@ -229,7 +229,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
  </tbody>
 </table>
 
-### NumericEdit : champ numérique, champ décimal {#numericedit-numericfield-decimalfield}
+### NumericEdit : champ numérique, champ décimal  {#numericedit-numericfield-decimalfield}
 
 | Options  | Description |
 |---|---|
@@ -239,7 +239,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 | zero | Représentation sous forme de chaîne du zéro dans la langue du champ. |
 | decimal | Représentation sous forme de chaîne des décimales dans la langue du champ. |
 
-### CheckButton: RadioButton, CheckBox {#checkbutton-radiobutton-checkbox}
+### CheckButton: RadioButton, CheckBox  {#checkbutton-radiobutton-checkbox}
 
 <table>
  <tbody>
