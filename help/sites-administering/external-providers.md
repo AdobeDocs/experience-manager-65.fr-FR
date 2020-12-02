@@ -19,7 +19,7 @@ ht-degree: 79%
 ---
 
 
-# Analytics avec des fournisseurs externes {#analytics-with-external-providers}
+# Analytics avec des fournisseurs externes  {#analytics-with-external-providers}
 
 Analytics peut vous apporter des informations importantes et intéressantes sur l’utilisation de votre site web.
 
@@ -57,9 +57,9 @@ Ces fragments de code permettent de collecter des données et de générer des r
 
 >[!CAUTION]
 >
->The Geometrixx-Outdoors demo site is configured so that the attributes provided in the Page Properties are appended to the html source code (just above the `</html>` endtag) in the corresponding `js` script.
+>Le site de démonstration Geometrixx-Outdoors est configuré de sorte que les attributs fournis dans les Propriétés de la page soient ajoutés au code source html (juste au-dessus de la balise de fin `</html>`) dans le script `js` correspondant.
 >
->If your own `/apps` do not inherit from the default page component ( `/libs/foundation/components/page`) you (or your developers) have to make sure that the corresponding `js` scripts are included, for example by either including `cq/cloudserviceconfigs/components/servicescomponents`, or using a similar mechanism.
+>Si votre propre `/apps` n&#39;hérite pas du composant de page par défaut ( `/libs/foundation/components/page`), vous (ou vos développeurs) devez vous assurer que les scripts `js` correspondants sont inclus, par exemple en incluant `cq/cloudserviceconfigs/components/servicescomponents`, ou en utilisant un mécanisme similaire.
 >
 >Autrement, aucun des services (Générique, Analytics, Target, etc.) ne fonctionne.
 
@@ -94,7 +94,7 @@ Après avoir créé la configuration de service, vous devez maintenant configure
    ![](assets/analytics_selectservice.png)
 
 1. Cliquez sur **OK** pour enregistrer.
-1. Vous revenez sur l’onglet **Services cloud**. The **Generic Analytics Snippet** is now listed with the message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique, par exemple, « google-analytics » :
+1. Vous revenez sur l’onglet **Services cloud**. Le **extrait de code Analytics générique** est désormais répertorié avec le message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique, par exemple, « google-analytics » :
 
    ![](assets/analytics_selectspecificservice.png)
 
