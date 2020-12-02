@@ -17,7 +17,7 @@ ht-degree: 9%
 ---
 
 
-# API facturables des rapports de transaction{#transaction-reports-billable-apis}
+# API facturables des rapports de transactions{#transaction-reports-billable-apis}
 
 AEM Forms fournit plusieurs API pour envoyer des formulaires, traiter des documents et générer des documents. Certaines API sont comptabilisées comme des transactions et d&#39;autres sont libres d&#39;utiliser. Ce document fournit une liste de toutes les API qui sont comptabilisées comme des transactions dans un état de transaction. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :
 
@@ -32,9 +32,9 @@ AEM Forms fournit plusieurs API pour envoyer des formulaires, traiter des docume
 
 Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur d’un document ou d’un formulaire, ni du format final du document rendu. Un rapport de transactions divise les transactions en deux catégories : Documents rendus et Forms envoyés.
 
-* **Forms Soumis :** Lorsque des données sont envoyées à partir de n’importe quel type de formulaire créé avec AEM Forms et que les données sont envoyées à n’importe quel référentiel d’enregistrement de données ou base de données est considérée comme un envoi de formulaire. Par exemple, l’envoi d’un formulaire adaptatif, d’un formulaire HTML5, de PDF forms et d’un jeu de formulaires est comptabilisé comme des formulaires envoyés. Chaque formulaire d’un jeu de formulaires est considéré comme un envoi. Par exemple, si un jeu de formulaires comporte 5 formulaires, lorsque le jeu de formulaires est envoyé, le service de rapports de transactions le compte comme 5 envois.
+* **Forms Submitted :** lorsque des données sont envoyées à partir de n’importe quel type de formulaire créé avec AEM Forms et que les données sont envoyées à n’importe quel référentiel ou base de données d’enregistrement de données est considéré comme un envoi de formulaire. Par exemple, l’envoi d’un formulaire adaptatif, d’un formulaire HTML5, de PDF forms et d’un jeu de formulaires est comptabilisé comme des formulaires envoyés. Chaque formulaire d’un jeu de formulaires est considéré comme un envoi. Par exemple, si un jeu de formulaires comporte 5 formulaires, lorsque le jeu de formulaires est envoyé, le service de rapports de transactions le compte comme 5 envois.
 
-* **Documents rendus :** La génération d’un document en combinant un modèle et des données, en signant ou certifiant numériquement un document, en utilisant une API de services de document facturables pour les services de document ou en convertissant un document d’un format à un autre est comptabilisée comme des documents rendus.
+* **Documents générés :** Génération d’un document en combinant un modèle et des données, en signant ou certifiant numériquement un document, en utilisant une API de services de document facturables pour les services de document ou en convertissant un document d’un format à un autre sont comptabilisés comme des documents rendus.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
 
 ## API de services de Document facturables {#billable-document-services-apis}
 
-### Generate PDF Service {#generate-pdf-service}
+### Service Generate PDF {#generate-pdf-service}
 
 <table>
  <tbody>
@@ -109,7 +109,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
  </tbody>
 </table>
 
-### Distiller Service {#distiller-service}
+### Service Distiller {#distiller-service}
 
 <table>
  <tbody>
@@ -134,7 +134,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
  </tbody>
 </table>
 
-### Service document d&#39;enregistrement (service de DE) {#document-of-record-service-dor-service}
+### Service de document d&#39;enregistrement (service de DE) {#document-of-record-service-dor-service}
 
 <table>
  <tbody>
@@ -179,7 +179,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>Fusionne les données et les modèles pour créer un ensemble de documents PDF.</td>
    <td>Documents traités</td>
-   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de rapports de transactions comptabilise chaque enregistrement comme un rendu PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus dans un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement en tant que rendu PDF distinct. </td>
+   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de rapports de transactions comptabilise chaque enregistrement comme un rendu PDF distinct. <br> Vous pouvez utiliser l’indicateur  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> getGenerateManyFilesafin de combiner plusieurs rendus dans un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement en tant que rendu PDF distinct. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
@@ -197,7 +197,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Convertit un ensemble de documents XDP et PDF en un ensemble de formats de fichier PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
    <td>Documents traités</td>
-   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de rapports de transactions comptabilise chaque enregistrement comme un rendu PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus dans un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement en tant que rendu PDF distinct. </td>
+   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de rapports de transactions comptabilise chaque enregistrement comme un rendu PDF distinct. <br> Vous pouvez utiliser l’indicateur  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> getGenerateManyFilesafin de combiner plusieurs rendus dans un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement en tant que rendu PDF distinct. </td>
   </tr>
  </tbody>
 </table>
@@ -227,7 +227,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
  </tbody>
 </table>
 
-### Convert PDF Service {#convert-pdf-service}
+### Service Conversion PDF {#convert-pdf-service}
 
 <table>
  <tbody>
@@ -292,7 +292,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
     </ul> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">appeler</a></td>
    <td>Exécute le document DDX spécifié et renvoie un objet <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> contenant les documents résultants. </td>
    <td>Documents traités</td>
    <td>Tous les formats de fichier d’entrée pris en charge par les services PDF Generator, Forms et Output, le service Assembler prend en charge tous ces formats en tant que formats de fichier de sortie. </td>
@@ -315,7 +315,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
 
 
 
-### Service PDF Utility  {#pdf-utility-service}
+### Service d&#39;utilitaire PDF {#pdf-utility-service}
 
 <table>
  <tbody>
@@ -336,7 +336,7 @@ Les API de facturation ne tiennent pas compte du nombre de pages, de la longueur
 
 ## API de capture de données facturables {#billable-data-capture-apis}
 
-Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du jeu de formulaires sont comptabilisés comme des transactions. Par défaut, l’envoi d’un formulaire PDF n’est pas comptabilisé comme une transaction. Utilisez l&#39;API [d&#39;enregistrement de](record-transaction-custom-implementation.md) transactions fournie pour enregistrer un envoi PDF forms en tant que transaction.
+Tous les événements d’envoi des formulaires adaptatifs, du Forms HTML5 et du jeu de formulaires sont comptabilisés comme des transactions. Par défaut, l’envoi d’un formulaire PDF n’est pas comptabilisé comme une transaction. Utilisez l&#39;[API d&#39;enregistrement de transactions](record-transaction-custom-implementation.md) fournie pour enregistrer un envoi PDF forms en tant que transaction.
 
 ### Formulaires adaptatifs {#adaptive-forms}
 
@@ -428,7 +428,7 @@ Affectez des étapes de tâche et de services de document des Workflows d&#39;AE
  </tbody>
 </table>
 
-### Interactive Communication - Print Channel {#interactive-communication-print-channel}
+### Communication interactive - Canal d&#39;impression {#interactive-communication-print-channel}
 
 <table>
  <tbody>
@@ -439,7 +439,7 @@ Affectez des étapes de tâche et de services de document des Workflows d&#39;AE
    <td>Informations supplémentaires</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convertir en PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convertir au format PDF)</td>
    <td>Génère la version PDF d’une communication interactive.</td>
    <td>Documents rendus</td>
    <td>
@@ -480,9 +480,9 @@ Affectez des étapes de tâche et de services de document des Workflows d&#39;AE
 
 ## Enregistrement des API facturables en tant que transactions pour le code personnalisé {#recording-billable-apis-as-transactions-for-custom-code}
 
-Les actions telles que l’envoi d’un formulaire PDF, l’utilisation de l’interface utilisateur de l’agent pour prévisualisation une communication interactive, l’envoi de formulaires non standard et les implémentations personnalisées ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API pour enregistrer des actions telles que des transactions. Vous pouvez appeler l’API à partir de vos implémentations personnalisées pour [enregistrer une transaction](/help/forms/using/record-transaction-custom-implementation.md).
+Les actions telles que l’envoi d’un formulaire PDF, l’utilisation de l’interface utilisateur de l’agent pour prévisualisation une communication interactive, l’envoi de formulaires non standard et les implémentations personnalisées ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API pour enregistrer des actions telles que des transactions. Vous pouvez appeler l&#39;API depuis vos implémentations personnalisées pour [enregistrer une transaction](/help/forms/using/record-transaction-custom-implementation.md).
 
-## Related Articles {#related-articles}
+## Articles connexes {#related-articles}
 
 * [Présentation des rapports sur les transactions](../../forms/using/transaction-reports-overview.md)
 * [Affichage et compréhension des rapports sur les transactions](../../forms/using/viewing-and-understanding-transaction-reports.md)
