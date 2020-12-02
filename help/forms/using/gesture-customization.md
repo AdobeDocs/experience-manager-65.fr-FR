@@ -28,27 +28,27 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
 1. Ouvrez le projet.
 
-   * For iOS, open `Capture.xcodeproj` in Xcode
+   * Pour iOS, ouvrez `Capture.xcodeproj` dans Xcode.
    * Pour Android, ouvrez le projet Android dans Eclipse.
-   * For Windows, open `MWSWindows.sln` in Visual Studio.
+   * Pour Windows, ouvrez `MWSWindows.sln` dans Visual Studio.
 
-1. Navigate to the views folder and open the `task.js` file for editing.
+1. Accédez au dossier vues et ouvrez le fichier `task.js` pour le modifier.
 
-   * In Xcode, navigate to the **Capture > www > wsmobile > js > runtime > views** folder.
-   * In Eclipse, navigate to the **assets > www > wsmobile > js > runtime > views** folder.
-   * In Visual Studio, navigate to the **MWSWindows > www > wsmobile > js > runtime > views** folder.
+   * Dans Xcode, accédez au dossier **Capture > www > wsmobile > js > runtime > vues**.
+   * Dans Eclipse, accédez au dossier **ressources > www > wsmobile > js > runtime > vues**.
+   * Dans Visual Studio, accédez au dossier **MWSWindows > www > wsmobile > js > runtime > vues**.
 
    >[!NOTE]
    >
    >Le fichier task.js contient la vue Backbone associée à chaque tâche ou point de départ, tel que répertorié dans les listes de tâches ou de points de départ.
 
-1. In the `task.js` file, search for the events property of the view.
+1. Dans le fichier `task.js`, recherchez la propriété événements de la vue.
 
    La propriété événements est un mappage avec chaque entrée au format :
 
    `"EventName Selector": "Function"`
 
-   When you trigger a Javascript event named `EventName`on an HTML element specified by `Selector`, the `Function`is called.
+   Lorsque vous déclenchez un événement JavaScript nommé `EventName`sur un élément HTML spécifié par `Selector`, `Function`est appelé.
 
 1. Rechercher
 
@@ -70,7 +70,7 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
       &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 
-1. Save and close the `task.js` file.
+1. Enregistrez et fermez le fichier `task.js`.
 1. Générez et exécutez l’application AEM Forms. Vous pouvez désormais ouvrir une tâche en faisant glisser votre doigt vers la gauche et la droite.
 
 De même, vous pouvez apporter des modifications dans les autres vues pour différentes combinaisons de mouvements, d’éléments HTML et de fonctions.
