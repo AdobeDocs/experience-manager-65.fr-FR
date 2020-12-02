@@ -21,7 +21,7 @@ ht-degree: 58%
 >
 >Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations relatives à la protection des données et à la protection de la vie privée ; comme le RGPD, l&#39;ACCP, etc.
 
-## AEM Foundation GDPR support {#aem-foundation-gdpr-support}
+## Prise en charge du RGMD par AEM Foundation {#aem-foundation-gdpr-support}
 
 Au niveau AEM Foundation, les données personnelles stockées sont le Profil utilisateur. Par conséquent, les informations fournies dans cet article expliquent principalement comment accéder à ces profils utilisateur et les supprimer pour répondre respectivement aux demandes d’accès et de suppression dans le cadre du RGPD.
 
@@ -29,7 +29,7 @@ Au niveau AEM Foundation, les données personnelles stockées sont le Profil uti
 
 ### Étapes manuelles {#manual-steps}
 
-1. Ouvrez la console d’administration utilisateur en accédant à **[!UICONTROL Paramètres - Sécurité - Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Ouvrez la console d’administration utilisateur en accédant à **[!UICONTROL Paramètres - Sécurité - Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`.
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -93,11 +93,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Suppression des informations d’un profil utilisateur {#delete-user-profile-information}
 
-1. Log in to CRXDE Lite, then search for the `[!UICONTROL userId]`:
+1. Connectez-vous au CRXDE Lite, puis recherchez `[!UICONTROL userId]` :
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Open the user node which is located under `[!UICONTROL /home/users]` by default:
+1. Ouvrez le noeud utilisateur situé sous `[!UICONTROL /home/users]` par défaut :
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
