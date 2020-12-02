@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: be1c0e21216b1014a36f88d13557f6e1d7a87c0a
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 73%
+ht-degree: 93%
 
 ---
 
 
 # Balise décorative{#decoration-tag}
 
-Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Il s&#39;agit principalement de deux objectifs :
+Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Dans ce cas, l’objectif est double :
 
 * Un composant ne peut être modifié que lorsqu’il est enveloppé dans un élément HTML.
 * L’élément d’encapsulage est utilisé pour appliquer des classes HTML qui fournissent :
@@ -37,17 +37,17 @@ Ces quelques recommandations générales vous indiquent à quel moment inclure l
 
 Les propriétés et nœuds suivants peuvent être appliqués aux composants pour contrôler le comportement de leur balise décorative :
 
-* **`cq:noDecoration {boolean}`:** Cette propriété peut être ajoutée à un composant et une valeur vraie force AEM à ne générer aucun élément wrapper sur le composant.
+* **`cq:noDecoration {boolean}` :** cette propriété peut être ajoutée à un composant et une valeur « true » contraint AEM à ne pas générer d’éléments wrapper sur le composant.
 
-* **`cq:htmlTag`Nœud  : :** ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
+* **`cq:htmlTag`Nœud :** ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
 
-   * **`cq:tagName {String}`:** Vous pouvez l’utiliser pour spécifier une balise HTML personnalisée à utiliser pour envelopper les composants au lieu de l’élément DIV par défaut.
-   * **`class {String}`:** This can be used to specify css class names to be added to the wrapper.
+   * **`cq:tagName {String}` :** cette propriété peut être utilisée pour spécifier une balise HTML personnalisée dans le but d’encapsuler les composants au lieu de l’élément DIV par défaut.
+   * **`class {String}` :** cette propriété peut être utilisée pour spécifier des noms de classe CSS à ajouter à l’élément wrapper.
    * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
 
-## Contrôles de script {#script-controls}
+## Contrôles de script  {#script-controls}
 
-The wrapper behavior does differ however depending on if [HTL](/help/sites-developing/decoration-tag.md#htl) or [JSP](/help/sites-developing/decoration-tag.md#jsp) is used to include the element.
+Le comportement de l’enveloppe diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément.
 
 ### HTL {#htl}
 
@@ -59,11 +59,11 @@ En règle générale, le comportement de l’élément wrapper dans HTL peut êt
 Le comportement de l’élément wrapper peut également faire l’objet d’un contrôle total.
 
 * Le script HTL contrôle complètement le comportement de la balise wrapper.
-* Component properties (like `cq:noDecoration` and `cq:tagName`) can also define the wrapper tag.
+* Les propriétés de composant (comme `cq:noDecoration` et `cq:tagName`) peuvent également définir la balise wrapper.
 
 Il est possible de contrôler entièrement le comportement des balises wrapper à partir de scripts HTL et de la logique qui y est associée.
 
-For further information about developing in HTL see the [HTL documentation](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html).
+Pour plus d’informations sur le développement au format HTL, consultez la [documentation HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html).
 
 #### Arborescence de décision {#decision-tree}
 
@@ -95,7 +95,7 @@ La structure de contenu et les composants suivants sont utilisés dans les exemp
       @class = "component-two"
 ```
 
-#### Exemple d’utilisation 1 : Inclure un composant pour la réutilisation du code {#use-case-include-a-component-for-code-reuse}
+#### Cas d’utilisation 1 : Inclure un composant pour la réutilisation du code {#use-case-include-a-component-for-code-reuse}
 
 Le scénario d’utilisation le plus courant se présente lorsqu’un composant en inclut un autre en vue de réutiliser le code. Dans ce cas, on ne souhaite pas que le composant puisse être modifié avec sa propre barre d’outils et sa propre boîte de dialogue. Aucun élément wrapper n’est donc nécessaire et le nœud `cq:htmlTag` du composant est ignoré. Cela peut être considéré comme le comportement par défaut.
 
@@ -103,51 +103,51 @@ Le scénario d’utilisation le plus courant se présente lorsqu’un composant 
 
 `two.html: Hello World!`
 
-Résultat obtenu sur `/content/test.html`:
+Résultat obtenu pour `/content/test.html` :
 
 **`Hello World!`**
 
-Par exemple, un composant qui inclut un composant d&#39;image principal pour afficher une image, généralement en utilisant une ressource synthétique, qui consiste à inclure un composant enfant virtuel en transmettant à la ressource de données un objet Map qui représente toutes les propriétés que le composant aurait.
+Il peut s’agir, par exemple, d’un composant qui inclut un composant image principal pour afficher une image (en utilisant généralement une ressource synthétique). Cela consiste à inclure un composant enfant virtuel en transmettant à data-sly-resource un objet Map qui représente toutes les propriétés que ce composant doit posséder.
 
-#### Exemple d’utilisation 2 : Inclure un composant modifiable {#use-case-include-an-editable-component}
+#### Cas d’utilisation 2 : Inclure un composant modifiable {#use-case-include-an-editable-component}
 
 Un autre cas d’utilisation courant se présente lorsque des composants de conteneur incluent des composants enfants modifiables, comme un conteneur de mises en page. Dans ce cas, chaque enfant inclus a impérativement besoin d’un composant wrapper pour que l’éditeur puisse fonctionner (sauf s’il a été explicitement désactivé avec la propriété `cq:noDecoration`).
 
-Étant donné que, dans ce cas, le composant inclus est indépendant, un élément wrapper est nécessaire pour que l’éditeur fonctionne, et pour définir la mise en page et le style à appliquer. To trigger this behavior, there&#39;s the `decoration=true` option.
+Étant donné que, dans ce cas, le composant inclus est indépendant, un élément wrapper est nécessaire pour que l’éditeur fonctionne, et pour définir la mise en page et le style à appliquer. Pour déclencher ce comportement, l’option `decoration=true` est disponible.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
 `two.html: Hello World!`
 
-Résultat obtenu sur `/content/test.html`:
+Résultat obtenu pour `/content/test.html` :
 
 **`<article class="component-two">Hello World!</article>`**
 
-#### Exemple d’utilisation 3 : Comportement personnalisé {#use-case-custom-behavior}
+#### Cas d’utilisation 3 : Comportement personnalisé {#use-case-custom-behavior}
 
 Il peut y avoir un nombre illimité de cas complexes, que l’on peut obtenir facilement selon que HTL est en mesure de fournir ou non les éléments suivants :
 
-* **`decorationTagName='ELEMENT_NAME'`** Pour définir le nom de l’élément du wrapper.
-* **`cssClassName='CLASS_NAME'`** Pour définir les noms de classe CSS à définir dessus.
+* **`decorationTagName='ELEMENT_NAME'`** Pour définir le nom d’élément du wrapper.
+* **`cssClassName='CLASS_NAME'`** Pour définir les noms de classe CSS à définir.
 
 `one.html: <sly data-sly-resource="${'child' @ decorationTagName='aside', cssClassName='child'}"></sly>`
 
 `two.html: Hello World!`
 
-Résultat obtenu `/content/test.html`:
+Résultat obtenu `/content/test.html` :
 
 **`<aside class="child">Hello World!</aside>`**
 
 ## JSP {#jsp}
 
-When including a component using `cq:includ`e or `sling:include`, the default behavior in AEM is to use a DIV to wrap the element. Toutefois, cet encapsulage peut être personnalisé de deux façons :
+Lors de l’inclusion d’un composant à l’aide de `cq:includ`e ou `sling:include`, le comportement par défaut dans AEM consiste à utiliser une balise DIV pour encapsuler l’élément. Toutefois, cet encapsulage peut être personnalisé de deux façons :
 
 * Indiquer explicitement à AEM de ne pas encapsuler le composant à l’aide de `cq:noDecoration`.
-* Use a custom HTML tag to wrap the component using `cq:htmlTag`/ `cq:tagName` or `decorationTagName`.
+* Utilisez une balise HTML personnalisée pour encapsuler le composant à l’aide de `cq:htmlTag`/ `cq:tagName` ou `decorationTagName`.
 
 ### Arborescence de décision {#decision-tree-1}
 
-The following decision tree illustrates how `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, and `decorationTagName` affect the wrapper behavior.
+L&#39;arborescence de décision suivante illustre comment `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` et `decorationTagName` affectent le comportement de l&#39;enveloppe.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)
 
