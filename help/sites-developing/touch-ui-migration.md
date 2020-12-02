@@ -19,9 +19,9 @@ ht-degree: 12%
 ---
 
 
-# Migration to the Touch UI{#migration-to-the-touch-ui}
+# Migration vers l’interface utilisateur tactile{#migration-to-the-touch-ui}
 
-A partir de la version 6.0, Adobe Experience Manager (AEM) a introduit une nouvelle interface utilisateur appelée IU ** tactile (également appelée interface utilisateur ** tactile). Il est aligné sur le Adobe Marketing Cloud et sur les directives générales de l’interface utilisateur de l’Adobe. Il s’agit désormais de l’interface utilisateur standard en AEM avec l’interface héritée et orientée bureau, appelée IU ** classique.
+Depuis la version 6.0, Adobe Experience Manager (AEM) a introduit une nouvelle interface utilisateur appelée *interface utilisateur tactile* (également appelée simplement *interface utilisateur tactile*). Il est aligné sur le Adobe Marketing Cloud et sur les directives générales de l’interface utilisateur de l’Adobe. Il s’agit désormais de l’interface utilisateur standard en AEM avec l’interface héritée et orientée bureau, appelée *interface utilisateur classique*.
 
 Si vous avez utilisé AEM avec une interface utilisateur classique, vous devez agir pour migrer votre instance. Cette page est destinée à servir de tremplin en fournissant des liens vers des ressources individuelles.
 
@@ -40,7 +40,7 @@ Lors de la migration, vous devez tenir compte des différences (majeures) suivan
    <td>Interface utilisateur optimisée pour les écrans tactiles</td>
   </tr>
   <tr>
-   <td>Est décrit dans le référentiel JCR comme une structure de noeuds. Chaque noeud qui représente un élément de l’interface utilisateur est appelé widget <em></em> ExtJS et rendu côté client par <code>ExtJS</code>.</td>
+   <td>Est décrit dans le référentiel JCR comme une structure de noeuds. Chaque noeud qui représente un élément de l’interface utilisateur est appelé <em>widget ExtJS</em> et rendu côté client par <code>ExtJS</code>.</td>
    <td>Également décrit dans le référentiel JCR comme une structure de noeuds. Cependant, dans ce cas, chaque noeud fait référence à un type de ressource Sling (composant Sling), qui est responsable de son rendu. L’interface utilisateur est donc (essentiellement) rendue côté serveur.</td>
   </tr>
   <tr>
@@ -63,7 +63,7 @@ Lors de la migration, vous devez tenir compte des différences (majeures) suivan
    <td><p>Noeuds de la boîte de dialogue :</p>
     <ul>
      <li>Nom: <code>cq:dialog</code></li>
-     <li>jcr:primaryType: <code>nt:unstructured</code></li>
+     <li>jcr:primaryType : <code>nt:unstructured</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -101,7 +101,7 @@ Lors de la migration, vous devez tenir compte des différences (majeures) suivan
  </tbody>
 </table>
 
-En d’autres termes, la migration d’une section de votre interface utilisateur depuis l’interface utilisateur classique vers l’interface utilisateur tactile signifie la migration d’un widget ** ExtJS vers un composant ** Sling. Pour pallier ce problème, l’interface utilisateur tactile est basée sur la structure de l’interface utilisateur Granite, qui fournit déjà certains composants Sling pour l’interface utilisateur (appelés composants de l’interface utilisateur Granite).
+En d’autres termes, la migration d’une section de l’interface utilisateur classique vers l’interface utilisateur tactile signifie la migration d’un *widget ExtJS* vers un composant *Sling*. Pour pallier ce problème, l’interface utilisateur tactile est basée sur la structure de l’interface utilisateur Granite, qui fournit déjà certains composants Sling pour l’interface utilisateur (appelés composants de l’interface utilisateur Granite).
 
 Avant de début, vérifiez l’état et les recommandations connexes :
 
@@ -117,27 +117,27 @@ Les bases du développement de l’interface utilisateur tactile fourniront une 
 
 Les boîtes de dialogue sont un facteur important de la migration de vos composants :
 
-* [Développement de composants](/help/sites-developing/developing-components.md) AEM (avec l’interface utilisateur tactile)
+* [Développement de composants](/help/sites-developing/developing-components.md)  AEM (avec l’interface utilisateur tactile)
 * [Migration à partir d’un composant classique](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Outil](/help/sites-developing/dialog-conversion.md) de conversion de boîte de dialogue - pour vous aider à convertir les boîtes de dialogue de vos composants classiques de l&#39;interface utilisateur en interface utilisateur tactile
+* [Outil](/help/sites-developing/dialog-conversion.md)  de conversion de boîte de dialogue - pour vous aider à convertir les boîtes de dialogue de vos composants classiques de l&#39;interface utilisateur en interface utilisateur tactile
 
    * Il existe une couche de compatibilité dans l’interface utilisateur tactile pour ouvrir une boîte de dialogue classique dans un &quot;wrapper d’interface tactile&quot;, mais cette fonctionnalité est limitée et n’est pas recommandée à long terme.
 
 * [Personnalisation des champs de la boîte de dialogue dans l’interface utilisateur tactile](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Création d’un composant de champ d’IU Granite](/help/sites-developing/granite-ui-component.md)
-* [Personnalisation de la création](/help/sites-developing/customizing-page-authoring-touch.md) de pages (avec l’interface utilisateur tactile)
+* [Personnalisation de la création](/help/sites-developing/customizing-page-authoring-touch.md)  de pages (avec l’interface utilisateur tactile)
 
 ## Migration des consoles {#migrating-consoles}
 
 Vous pouvez également personnaliser les consoles :
 
-* [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md) (pour l’interface utilisateur tactile)
+* [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md)  (pour l’interface utilisateur tactile)
 
 ## Considérations connexes {#related-considerations}
 
 Bien qu’il ne soit pas directement lié à une migration vers l’interface utilisateur tactile, il existe des problèmes connexes qui méritent d’être examinés en même temps, car ils sont également recommandés :
 
-* [Modèles](/help/sites-developing/templates.md) - Modèles [modifiables](/help/sites-developing/page-templates-editable.md)
+* [Modèles](/help/sites-developing/templates.md)  - Modèles  [modifiables](/help/sites-developing/page-templates-editable.md)
 * [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 
@@ -153,7 +153,7 @@ Pour de plus amples renseignements sur l&#39;AEM en développement, voir la coll
 * [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [aem 6.5 Sites Tutorials et vidéos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
 * [Prise en main du développement d’AEM Sites – Tutoriel WKND](/help/sites-developing/getting-started.md)
-* [aem Gems](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-index.html)
+* [aem Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
