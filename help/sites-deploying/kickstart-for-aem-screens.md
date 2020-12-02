@@ -17,5 +17,5 @@ ht-degree: 18%
 ---
 
 
-# (Redirection) Guide de démarrage rapide{#redirect-kickstart-guide}
+# (Redirection) Kickstart Guide{#redirect-kickstart-guide}
 
