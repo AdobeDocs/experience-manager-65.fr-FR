@@ -24,7 +24,7 @@ Les tâches représentent des éléments de travail à effectuer sur le contenu.
 
 Les tâches sont également utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours, y compris des tâches de worfklow.
 
-## Suivi de la progression du projet   {#tracking-project-progress}
+## Suivi de la progression du projet    {#tracking-project-progress}
 
 Vous pouvez surveiller l’état d’avancement de votre projet en examinant les tâches actives/terminées au sein du projet, représentées par la mosaïque **Tâches**. L’état d’avancement de votre projet peut être déterminé par les éléments suivants :
 
@@ -34,7 +34,7 @@ Vous pouvez surveiller l’état d’avancement de votre projet en examinant les
 
 Ces deux éléments répertorient les tâches de worfklow, ainsi que les tâches que vous créez directement dans la mosaïque **Tâches**.
 
-### Mosaïque Tâches   {#task-tile}
+### Mosaïque Tâches    {#task-tile}
 
 Si un projet contient des tâches associées, une mosaïque Tâches s’affiche au sein du projet. La mosaïque Tâches affiche l’état actuel du projet. Cet état inclut les tâches existantes dans le worfklow et ne contient aucune tâche générée ultérieurement à mesure que se déroule le worfklow. La mosaïque Tâches contient les informations suivantes :
 
@@ -48,7 +48,7 @@ Si un projet contient des tâches associées, une mosaïque Tâches s’affiche 
 
 Outre le suivi de l’avancée du projet, vous pouvez également afficher plus d’informations sur le projet ou le modifier.
 
-#### Liste de tâches   {#task-list}
+#### Liste de tâches    {#task-list}
 
 Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour afficher la liste des tâches liées au projet. Les tâches sont divisées par worfklow parent. Les détails de la tâche s’affichent avec les métadonnées, comme la date d’échéance, le cessionnaire, la priorité et l’état.
 
@@ -79,7 +79,7 @@ Pour ajouter une tâche :
 
 1. Cliquez/appuyez sur **Créer**.
 
-## Utilisation des tâches dans la boîte de réception   {#working-with-tasks-in-the-inbox}
+## Utilisation des tâches dans la boîte de réception    {#working-with-tasks-in-the-inbox}
 
 Un autre moyen d’accéder aux tâches consiste à passer par la boîte de réception. Vous pouvez ouvrir le contenu à partir de la boîte de réception afin d’appliquer les modifications requises. Une fois cette opération effectuée, définissez l’état de la tâche sur « Terminé ». Les tâches s’affichent également dans votre boîte de réception lorsqu’elles sont affectées à un groupe d’utilisateurs auquel vous appartenez. Dans ce cas, tout membre du groupe peut effectuer le travail et accomplir la tâche.
 
