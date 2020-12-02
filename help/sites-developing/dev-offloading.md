@@ -24,7 +24,7 @@ La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet 
 
 Pour plus d’informations sur la création de topologies de déchargement et la configuration de la consommation de rubrique, voir [Tâches de déchargement](/help/sites-deploying/offloading.md).
 
-## Gestion des charges utiles de la tâche {#handling-job-payloads}
+## Gestion des charges utiles de la tâche  {#handling-job-payloads}
 
 La structure de déchargement définit deux propriétés de tâche que vous utilisez pour identifier la charge utile de la tâche. Les agents de réplication de déchargement utilisent ces propriétés pour identifier les ressources à répliquer sur les instances de la topologie :
 
@@ -38,13 +38,13 @@ Utilisez l’énumération `OffloadingJobProperties` pour faire référence aux 
 
 Une charge utile n’est pas obligatoire pour les tâches. Elle est toutefois nécessaire si la tâche requiert la manipulation d’une ressource et si l’ordinateur sur lequel elle est déchargée n’a pas servi à la créer.
 
-## Création de tâches pour le déchargement {#creating-jobs-for-offloading}
+## Création de tâches pour le déchargement  {#creating-jobs-for-offloading}
 
 Créez un client qui appelle la méthode JobManager.addJob afin de créer une tâche exécutée par un service JobConsumer sélectionné automatiquement. Indiquez les informations suivantes pour créer la tâche :
 
 * Rubrique : rubrique de tâche.
 * Nom : (Facultatif).
-* Properties Map: A `Map<String, Object>` object that contains any number of properties, such as the input payload paths and output Payload paths. Cet objet Map est disponible pour l’objet JobConsumer qui exécute la tâche.
+* Carte des propriétés : Objet `Map<String, Object>` contenant un nombre indéfini de propriétés, telles que les chemins de charge utile d’entrée et les chemins de charge utile de sortie. Cet objet Map est disponible pour l’objet JobConsumer qui exécute la tâche.
 
 L’exemple de service suivant crée une tâche pour un chemin de charge utile en entrée et de rubrique donné.
 
@@ -94,7 +94,7 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-The log contains the following message when JobGeneratorImpl.createJob is called for the `com/adobe/example/offloading` topic and the `/content/geometrixx/de/services` payload:
+Le journal contient le message suivant lorsque JobGeneratorImpl.createJob est appelé pour la rubrique `com/adobe/example/offloading` et la charge utile `/content/geometrixx/de/services` :
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
@@ -104,7 +104,7 @@ The log contains the following message when JobGeneratorImpl.createJob is called
 
 Pour exécuter des tâches, développez un service OSGi qui met en œuvre l’interface `org.apache.sling.event.jobs.consumer.JobConsumer`. Effectuez l’identification avec la rubrique à consommer à l’aide de la propriété `JobConsumer.PROPERTY_TOPICS`.
 
-The following example JobConsumer implementation registers with the `com/adobe/example/offloading` topic. Le consommateur définit simplement la propriété Consumed du nœud de contenu de charge utile sur True.
+L’exemple suivant d’implémentation de JobConsumer s’enregistre dans la rubrique `com/adobe/example/offloading`. Le consommateur définit simplement la propriété Consumed du nœud de contenu de charge utile sur True.
 
 ```java
 package com.adobe.example.offloading;
