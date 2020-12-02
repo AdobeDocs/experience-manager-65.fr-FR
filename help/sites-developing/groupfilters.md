@@ -32,11 +32,11 @@ Concevez vos filtres de sorte à pouvoir utiliser des combinaisons pour définir
 
 Après avoir créé un filtre, vous pouvez l’utiliser dans la [configuration du groupe](/help/sites-developing/mobile.md#creating-a-device-group).
 
-## La classe Java de filtre {#the-filter-java-class}
+## La classe Java de filtre  {#the-filter-java-class}
 
 Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Une fois déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupes d’appareils.
 
-La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Therefore, the example Java class uses the `@Component`and `@Service` annotations. La classe comporte la structure suivante :
+La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java utilise les annotations `@Component`et `@Service`. La classe comporte la structure suivante :
 
 ```java
 package com.adobe.example.myapp;
@@ -90,7 +90,7 @@ public String getTitle() {
 
 Le codage en dur du nom et du texte descriptif est suffisant pour les environnements de création unilingues. Pensez à externaliser les chaînes dans le cas d’une utilisation multilingue ou à activer le changement de chaîne sans recompiler le code source.
 
-### Évaluation par rapport aux critères de filtrage {#evaluating-against-filter-criteria}
+### Évaluation par rapport aux critères de filtrage  {#evaluating-against-filter-criteria}
 
 La fonction `matches` renvoie la valeur `true` si les caractéristiques de l’appareil satisfont à tous les critères de filtre. Évaluez les informations fournies dans les arguments de méthode pour déterminer si l’appareil appartient au groupe. Les valeurs suivantes sont fournies en tant qu’arguments : 
 
@@ -107,7 +107,7 @@ boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-The `org.apache.commons.lang.math` package provides the `NumberUtils` class.
+Le package `org.apache.commons.lang.math` fournit la classe `NumberUtils`.
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ The `org.apache.commons.lang.math` package provides the `NumberUtils` class.
 
 L’exemple d’implémentation de DeviceGroupFilter suivant détermine si la taille physique de l’appareil répond aux exigences minimales. Ce filtre est destiné à ajouter un niveau de granularité au groupe d’appareils tactiles. La taille des boutons dans l’interface utilisateur de l’application doit être identique quelle que soit la taille de l’écran physique. La taille des autres éléments, tels que le texte, peut varier. Le filtre permet la sélection dynamique d’un CSS particulier qui contrôle la taille des éléments de l’interface utilisateur.
 
-This filter applies size criteria to the `physical_screen_height` and `physical_screen_width` WURFL™ property names.
+Ce filtre applique des critères de taille aux noms de propriété `physical_screen_height` et `physical_screen_width` WURFL™.
 
 ```java
 package com.adobe.example.myapp;
@@ -192,7 +192,7 @@ Le code POM suivant est utile si vous utilisez Maven pour créer vos application
 
 Les interfaces DeviceGroup et DeviceGroupFilter sont incluses dans le bundle de l’API Day Communique 5 WCM Mobile. Les annotations Felix sont incluses dans le lot Apache Felix Declarative Services. Vous pouvez obtenir ce fichier JAR à partir du référentiel Adobe public.
 
-Au moment de la création, la version 5.5.2 est la version du bundle WCM Mobile API qui figure dans la dernière version d’AEM. Use Adobe Web Console ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) to ensure this is the bundle version that is deployed in your environment.
+Au moment de la création, la version 5.5.2 est la version du bundle WCM Mobile API qui figure dans la dernière version d’AEM. Utilisez Adobe Web Console ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) pour vous assurer qu’il s’agit de la version du lot déployée dans votre environnement.
 
 **POM :**(votre code POM utilisera un autre groupId et une autre version.) 
 
