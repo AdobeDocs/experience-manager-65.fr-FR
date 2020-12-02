@@ -36,7 +36,7 @@ Deux options sont disponibles lorsque vous passez de Dynamic Media-Hybrid à Dyn
 
 N’hésitez pas à recommencer à zéro avec une nouvelle instance de Dynamic Media-Scene7 activée sur Adobe Experience Manager. Outre l’assimilation et le traitement des ressources par l’intermédiaire du Cloud Service Contenu multimédia dynamique, il est vivement recommandé d’effectuer un audit d’Adobe de l’utilisation des ressources, des workflows et des composants. Dans de nombreux cas, les composants et les workflows personnalisés peuvent être remplacés par des fonctions plus récentes et prêtes à l’emploi.
 
-## Option 2 - Migration de votre instance existante de Contenu multimédia dynamique hybride vers Contenu multimédia dynamique - Scene7 {#process-for-migrating}
+## Option 2 - Migration de votre instance existante de Contenu multimédia dynamique hybride vers Contenu multimédia dynamique-Scene7 {#process-for-migrating}
 
 | Étape | Tâche | Considérations |
 |---|---|---|
