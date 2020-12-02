@@ -16,7 +16,7 @@ ht-degree: 75%
 ---
 
 
-# Réutilisation de formulaires adaptatifs {#reusing-adaptive-forms}
+# Réutilisation de formulaires adaptatifs  {#reusing-adaptive-forms}
 
 ## Présentation {#introduction}
 
@@ -30,7 +30,7 @@ Si vous souhaitez utiliser certaines des propriétés d’un formulaire adaptati
 
 Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
-1. Cliquez sur l’icône Copier ![aem6forms_copy](assets/aem6forms_copy.png) depuis Actions rapides.
+1. Cliquez sur l&#39;icône Copier ![aem6forms_copy](assets/aem6forms_copy.png) dans Actions rapides.
 
    >[!NOTE]
    >
@@ -38,7 +38,7 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
 1. Sélectionnez le formulaire adaptatif. Le processus de sélection est différent pour chaque vue.
 
-   If you are in card view, go to selection mode by clicking the selection ![aem6forms_check-circle](assets/aem6forms_check-circle.png) icon and click all the adaptive forms that you want to copy.
+   Si vous êtes en vue de carte, passez en mode de sélection en cliquant sur l’icône ![aem6forms_check-circle](assets/aem6forms_check-circle.png) et cliquez sur tous les formulaires adaptatifs à copier.
 
    Si le mode Liste est actif, cochez les cases à cocher de tous les formulaires adaptatifs pour les sélectionner.
 
@@ -46,15 +46,15 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
    >
    >Tous les éléments sélectionnés doivent être des formulaires adaptatifs, car la fonctionnalité de copier-coller n’est prise en charge que pour ces formulaires, et tous doivent figurer dans le même dossier.
 
-   After selecting the assets, click the copy ![aem6forms_copy](assets/aem6forms_copy.png) icon present in the toolbar to copy the selected adaptive form.
+   Après avoir sélectionné les actifs, cliquez sur l’icône de copie ![aem6forms_copy](assets/aem6forms_copy.png) présente dans la barre d’outils pour copier le formulaire adaptatif sélectionné.
 
 ### Coller un formulaire adaptatif {#paste-an-adaptive-form}
 
-Clicking the copy action automatically exits the selection mode and makes the paste ![aem6forms_paste](assets/aem6forms_paste.png) icon visible. Now go to the desired folder path and click the paste ![aem6forms_paste](assets/aem6forms_paste.png) icon to paste the copied adaptive form.
+Cliquez sur l’action de copie pour quitter automatiquement le mode de sélection et rendre visible l’icône de collage ![aem6forms_coller](assets/aem6forms_paste.png). Accédez maintenant au chemin d’accès du dossier de votre choix et cliquez sur l’icône de collage ![aem6forms_coller](assets/aem6forms_paste.png) pour coller le formulaire adaptatif copié.
 
 Si vous collez le formulaire dans le même dossier ou s’il existe déjà un autre fichier portant le même nom de nœud (avec lequel il est stocké dans le référentiel CRX) dans ce dossier cible, une unité est ajoutée au suffixe (par exemple, myaf devient myaf1 et si myaf1 existe déjà au même emplacement, myaf devient myaf2). Toutes les autres propriétés restent identiques au formulaire adaptatif d’origine.
 
-Après avoir cliqué sur l’icône de collage ![aem6forms_coller](assets/aem6forms_paste.png) , elle est de nouveau masquée. Vous ne pouvez effectuer qu’une seule opération de copie à la fois. Pour créer une autre copie d’un même élément, copiez le à nouveau.
+Après avoir cliqué sur l’icône de collage ![aem6forms_coller](assets/aem6forms_paste.png), il se masquera à nouveau. Vous ne pouvez effectuer qu’une seule opération de copie à la fois. Pour créer une autre copie d’un même élément, copiez le à nouveau.
 
 ### Modification du contenu du nouveau formulaire adaptatif {#change-contents-of-new-adaptive-form}
 
@@ -62,7 +62,7 @@ Le contenu d’un formulaire adaptatif collé peut être modifié en utilisant l
 
 1. **Modification des propriétés de métadonnées :** 
 
-   Vous pouvez modifier les propriétés de métadonnées du formulaire adaptatif ; le titre et la description, par exemple. For more details about metadata properties and how they can be changed, see [Managing Form Metadata](/help/forms/using/manage-form-metadata.md)
+   Vous pouvez modifier les propriétés de métadonnées du formulaire adaptatif ; le titre et la description, par exemple. Pour plus d’informations sur les propriétés de métadonnées et la manière dont elles peuvent être modifiées, voir [Gestion des métadonnées de formulaire](/help/forms/using/manage-form-metadata.md).
 
 1. **Modifiez XFA/XSD pour Forms adaptatif basé sur XFA/XSD :**
 
