@@ -23,31 +23,31 @@ ht-degree: 59%
 
 ## Présentation {#overview}
 
-Interactive communication is the default and recommended approach to create customer communications in AEM Forms 6.5. To continue using letters in AEM Forms 6.5, you need to install the latest [AEMFD Compatibility package](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
+La communication interactive est l’approche recommandée par défaut pour créer des communications client dans AEM Forms 6.5. Pour continuer à utiliser des lettres dans AEM Forms 6.5, vous devez installer le [package de compatibilité AEMFD](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) le plus récent.
 
-The AEMFD Compatibility package also allows you to [use the following assets from AEM Forms 6.4, 6.3 and 6.2 on AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Le package de compatibilité AEMFD vous permet également [d’utiliser les actifs suivants de AEM Forms 6.4, 6.3 et 6.2 sur AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Fragments de document
 * Lettres
 * Dictionnaires de données
 * Modèles et pages des formulaires adaptatifs obsolètes
 
-For more information, see [Assets made compatible with AEM Forms 6.5 by installing the Compatibility package](../../forms/using/compatibility-package.md#assetsmadecompatible).
+Pour plus d’informations, voir [Ressources rendues compatibles avec AEM Forms 6.5 en installant le package de compatibilité](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
-## Add support for AEM Forms 6.4, 6.3 and 6.2 assets in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Prise en charge Ajoutée des actifs AEM Forms 6.4, 6.3 et 6.2 dans AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Après avoir effectué une mise à niveau, exécutez les opérations suivantes pour installer le package de compatibilité AEMFD et rendre vos actifs compatibles avec la version 6.5 :
 
-Ensure that you have [AEM Compatibility package](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) pre-installed.
+Vérifiez que le [package de compatibilité AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) est préinstallé.
 
-1. Install the latest 6.5 [Compatibility package](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
+1. Installez le dernier package de compatibilité 6.5 [compatible](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
    Pour plus d’informations sur le téléchargement et l’installation du package, voir [Utilisation de packages](/help/sites-administering/package-manager.md).
 
 1. Une fois les journaux stabilisés, redémarrez le serveur.
 1. Utilisez l’utilitaire de migration pour rendre vos actifs compatibles avec la version 6.5.
 
-   For more information, see [migration utility](../../forms/using/migration-utility.md).
+   Pour plus d’informations, voir [utilitaire de migration](../../forms/using/migration-utility.md).
 
 ## Actifs devenus compatibles avec AEM Forms 6.5 après l’installation du package de compatibilité {#assetsmadecompatible}
 
