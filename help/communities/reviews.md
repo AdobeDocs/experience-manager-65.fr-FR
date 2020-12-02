@@ -20,9 +20,9 @@ ht-degree: 36%
 
 # Utilisation des révisions et du résumé des révisions (affichage) {#using-reviews-and-reviews-summary-display}
 
-The `Reviews` component is a composite of [Comments](comments.md) and [Rating](rating.md) components ready for use.
+Le composant `Reviews` est un composite des composants [Comments](comments.md) et [Rating](rating.md) prêts à être utilisés.
 
-The `Reviews Summary (Display)` component provides a summary of an active or closed instance of a `Reviews` component for display elsewhere on the site.
+Le composant `Reviews Summary (Display)` fournit un résumé d&#39;une instance principale ou fermée d&#39;un composant `Reviews` à afficher ailleurs sur le site.
 
 >[!NOTE]
 >
@@ -30,21 +30,21 @@ The `Reviews Summary (Display)` component provides a summary of an active or clo
 
 ## Ajout d’une révision à une page {#adding-a-review-to-a-page}
 
-Pour ajouter un `Reviews` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Reviews` et le faire glisser sur une page, par exemple une position relative à la fonction à réviser pour les utilisateurs.
+Pour ajouter un composant `Reviews` à une page en mode création, utilisez l&#39;explorateur de composants pour localiser `Communities / Reviews` et faites-le glisser sur une page, par exemple une position relative à la fonction à réviser pour les utilisateurs.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews` component will appear.
+Lorsque les [bibliothèques client requises](reviews-basics.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Reviews` s&#39;affiche.
 
 ![create-review](assets/create-review.png)
 
 ## Configuration des révisions {#configuring-reviews}
 
-Select the placed `Reviews` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Reviews` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
-Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of ratings to be shown to members. The first rating should be an overall/general rating, as it is the rating which provides the average rating for the `Review Summary (Display)` component. Les deux évaluations suivantes dans la configuration par défaut doivent recevoir un titre différent, autre que &quot;Subrating 1&quot; ou &quot;Subrating 2&quot;.
+Sous l&#39;onglet **[!UICONTROL Qualifications autorisées]**, indiquez la liste complète des évaluations à afficher aux membres. La première note doit être une note globale/générale, car c&#39;est la note qui fournit la note moyenne pour la composante `Review Summary (Display)`. Les deux évaluations suivantes dans la configuration par défaut doivent recevoir un titre différent, autre que &quot;Subrating 1&quot; ou &quot;Subrating 2&quot;.
 
 ![évaluation autorisée](assets/configure-review1.png)
 
@@ -56,7 +56,7 @@ Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of rat
 
    Cliquez sur **[!UICONTROL Ajouter un élément]** pour ajouter un autre choix d’évaluation.
 
-Under the **[!UICONTROL Required Ratings]** tab, re-enter items from the list of **[!UICONTROL Allowed Ratings]** that are required to be rated. Si un élément est spécifié uniquement dans l’onglet Évaluations autorisées, il peut être laissé non signalé lorsqu’il est soumis par le membre.
+Sous l&#39;onglet **[!UICONTROL Classifications requises]**, entrez à nouveau les éléments de la liste de **[!UICONTROL Classifications autorisées]** qui doivent être évalués. Si un élément est spécifié uniquement dans l’onglet Évaluations autorisées, il peut être laissé non signalé lorsqu’il est soumis par le membre.
 
 Sur le site web, les évaluations requises sont signalées d’un astérisque. Si un élément obligatoire n’est pas marqué, un message s’affiche à l’intention du membre, et sa soumission est refusée jusqu’à ce que toutes les évaluations requises soient marquées.
 
@@ -72,9 +72,9 @@ Sur le site web, les évaluations requises sont signalées d’un astérisque. S
 
 >[!NOTE]
 >
->If an item is entered on the **[!UICONTROL Required Ratings]** tab that is not specified on the **[!UICONTROL Allowed Ratings]** tab, then it is not included in the items to rate.
+>Si un élément est saisi dans l&#39;onglet **[!UICONTROL Classifications requises]** qui n&#39;est pas spécifié dans l&#39;onglet **[!UICONTROL Classifications autorisées]**, il n&#39;est pas inclus dans les éléments à évaluer.
 
-Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
+Sous l&#39;onglet **[!UICONTROL Révisions]**, indiquez comment les révisions sont gérées.
 
 ![Révisions](assets/configure-review3.png)
 
@@ -92,7 +92,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **Taille maximale du fichier**
 
-   N’est pertinent que si l’option **[!UICONTROL Autoriser les téléchargements]** de fichiers est cochée. Ce champ limite la taille (en octets) d’un fichier téléchargé. La valeur par défaut est de 10 Mo.
+   Ne s’applique que si **[!UICONTROL Autoriser les téléchargements de fichiers]** est coché. Ce champ limite la taille (en octets) d’un fichier téléchargé. La valeur par défaut est de 10 Mo.
 
 * **[!UICONTROL Longueur de message max.]**
 
@@ -100,7 +100,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **[!UICONTROL Types de fichier autorisés]**
 
-   N’est pertinent que si l’option **[!UICONTROL Autoriser les téléchargements]** de fichiers est cochée. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s’applique que si **[!UICONTROL Autoriser les téléchargements de fichiers]** est coché. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **[!UICONTROL Éditeur de texte enrichi]**
 
@@ -110,7 +110,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
    Si cette case est cochée, incluez la fonction de vote pour une rubrique. Cette option n’est pas cochée par défaut.
 
-Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
+Sous l’onglet **[!UICONTROL Modération utilisateur]**, indiquez comment les révisions publiées sont gérées. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
 
 ![modération utilisateur](assets/configure-review4.png)
 
@@ -152,15 +152,15 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews a
 
 ### Ajout d’un résumé des révisions (affichage) à une page {#adding-a-review-summary-display-to-a-page}
 
-To add a `Reviews Summary (Display)` component to a page in author mode, locate the component
+Pour ajouter un composant `Reviews Summary (Display)` à une page en mode création, recherchez le composant.
 
 * `Communities / Reviews Summary (Display)`
 
 et faites glisser le composant sur la page à l’endroit où le résumé d’une révision active ou fermée doit s’afficher.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews Summary (Display)`component will appear.
+Lorsque les [bibliothèques client requises](reviews-basics.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Reviews Summary (Display)`s&#39;affiche.
 
 ![review-summary](assets/configure-review5.png)
 
@@ -168,9 +168,9 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 >
 >La « moyenne » reflète les votes pour le premier élément visible dans l’onglet Évaluations autorisées de la révision qui fait l’objet d’un résumé.
 
-### Configuration du résumé des révisions (affichage) {#configuring-reviews-summary-display}
+### Configuration du résumé des révisions (affichage)  {#configuring-reviews-summary-display}
 
-Select the placed `Reviews Summary (Display)` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Reviews Summary (Display)` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configurer](assets/configure-new.png)
 
@@ -180,7 +180,7 @@ Sous l’onglet **[!UICONTROL Résumé des critiques]**
 
 * `Review Path`
 
-   entrez ou accédez à l&#39;instance placée du `reviews`composant pour résumer, par exemple, si elle est ajoutée à la page Web du site [Interagir,](getting-started.md) le chemin serait le suivant :
+   entrez ou recherchez l&#39;instance placée du composant `reviews`pour résumer, par exemple, si elle est ajoutée à la page Web du site [Geometrixx Interagir,](getting-started.md), le chemin serait :
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -194,27 +194,27 @@ Le composant Révisions utilise le système de commentaires.
 
 En modifiant le type de ressource de commentaire, le système de commentaires ne génère plus une instance d’un commentaire avec les paramètres par défaut, mais plutôt un commentaire personnalisé (étendu) par les développeurs.
 
-Once the custom resource types is known, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Comments` component to open a dialog with an additional tab.
+Une fois les types de ressources personnalisées connus, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et cliquez sur le doublon sur le composant `Comments` placé pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
 
-Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting` components:
+Sous l&#39;onglet **[!UICONTROL Types de ressources]**, spécifiez le type de ressource personnalisé pour les nouvelles instances des composants `Comments or Voting` :
 
 ![vote de commentaires](assets/configure-review7.png)
 
 * **[!UICONTROL Type de ressource de commentaire]**
 
-   Accédez à resourceType d&#39;un `comment`composant étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`.
+   Accédez à resourceType d&#39;un composant `comment`étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`.
 
    Cette ressource identifie le type de ressource de l&#39;UGC créé lorsqu&#39;un visiteur publie un commentaire.
 
 * **[!UICONTROL Type de ressource de vote]**
 
-   Accédez à resourceType d&#39;un `voting`composant étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`.
+   Accédez au resourceType d&#39;un composant `voting`étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`.
 
    Cette ressource identifie le type de ressource de l&#39;UGC créé lorsqu&#39;un visiteur publie un vote.
 
 * **[!UICONTROL Type de ressource système de commentaires]**
 
-   Accédez à resourceType d&#39;un `comments`composant étendu (système de commentaires) dans /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](handlebars-helpers.md#include).
+   Accédez à resourceType d&#39;un composant `comments`étendu (Comment System) dans /apps. Ne renseignez pas ce champ, sauf si le modèle de page [inclut dynamiquement ](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). Pour en savoir plus, consultez l&#39;aide [{{include}](handlebars-helpers.md#include).
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -222,7 +222,7 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
 Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’activités de modération autorisées par la configuration du composant, peu importe qui a créé la révision.
 
-### Membres {#members}
+### Membres  {#members}
 
 Lorsque le visiteur est connecté, selon la configuration, il peut:
 
@@ -233,14 +233,14 @@ Lorsque le visiteur est connecté, selon la configuration, il peut:
 
 Une seule évaluation est autorisée par membre.  Le membre peut modifier son évaluation à tout moment.
 
-### Anonyme {#anonymous}
+### Anonyme  {#anonymous}
 
 Les visiteurs non connectés peuvent lire les révisions publiées et les traduire lorsque cela est possible. Toutefois, ils ne sont pas autorisés à ajouter une évaluation ou une révision, ni à marquer celles d’autres membres.
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Review Essentials](reviews-basics.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Review Essentials](reviews-basics.md) destinée aux développeurs.
 
-For moderation of posted comments, see [Moderating User Generated Content](moderate-ugc.md).
+Pour la modération des commentaires publiés, voir [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
 
 Pour des informations sur la traduction des commentaires publiés, voir [Traduction de contenu généré par les utilisateurs](translate-ugc.md).
