@@ -81,7 +81,7 @@ Lorsqu’une image est demandée par un consommateur, nous vérifions les caract
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
 
-## Quels sont les formats d’image pris en charge ?  {#what-image-formats-are-supported}
+## Quels sont les formats d’image pris en charge ?   {#what-image-formats-are-supported}
 
 Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique :
 * JPEG
@@ -112,7 +112,7 @@ Voir également [Suis-je autorisé à utiliser l’imagerie dynamique ?](#am-i-
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?  {#does-smart-imaging-working-with-https-how-about-http}
+## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?   {#does-smart-imaging-working-with-https-how-about-http}
 
 L’imagerie dynamique fonctionne avec les images diffusées sur HTTP ou HTTPS. Elle fonctionne également sur HTTP/2.
 
