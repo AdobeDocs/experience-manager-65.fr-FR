@@ -83,14 +83,14 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 | Sélectionner l’élément précédent dans l’arborescence d’objets de formulaire | Flèche vers le haut | Flèche vers le haut |
 
 [1] Remplace les touches Ctrl + Flèche Droite pour Windows et Commande + Flèche Droite pour Mac OS.\
-[2] Remplace les touches Ctrl + Flèche Gauche pour Windows et Commande + Flèche Gauche pour Mac OS.
+[2] Remplace Ctrl + Flèche Gauche pour Windows et Commande + Flèche Gauche pour Mac OS.
 
 ## Correspondence Management {#correspondence-management}
 
 Cette section répertorie les différents raccourcis clavier et raccourcis d’accessibilité que vous pouvez utiliser dans l’éditeur de texte de Correspondence Management. Vous pouvez utiliser ces raccourcis lorsque vous effectuez les actions suivantes :
 
-* Creating or editing a [Text](texts-interactive-communications.md) asset
-* Editing a text module after tapping the relevant Edit icon ( ![edittextmodule](assets/edittextmodule.png)) when [creating a correspondence](/help/forms/using/create-correspondence.md).
+* Création ou modification d’une ressource [Texte](texts-interactive-communications.md)
+* Modification d’un module de texte après avoir appuyé sur l’icône Modifier appropriée ( ![edittextmodule](assets/edittextmodule.png)) lors de la création d’une correspondance [.](/help/forms/using/create-correspondence.md)
 
 ### Sélection de texte et déplacement du curseur {#text-selection-and-moving-the-cursor-around}
 
@@ -215,7 +215,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
 <table> 
  <tbody>
   <tr>
-   <th><p><strong>Operation</strong></p> </th> 
+   <th><p><strong>Opération</strong></p> </th> 
    <th><p><strong>Raccourci sous Windows<br /> </strong></p> </th> 
    <th><strong>Raccourci sous Mac OS</strong></th> 
   </tr>
@@ -242,12 +242,12 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Annuler et rétablir les actions {#undo-and-redo-actions}
+### Annuler et rétablir les actions  {#undo-and-redo-actions}
 
 <table> 
  <tbody>
   <tr>
-   <th><strong>Operation</strong></th> 
+   <th><strong>Opération</strong></th> 
    <th><strong>Raccourci sous Windows </strong></th> 
    <th><strong>Raccourci sous Mac OS</strong><br /> </th> 
   </tr>
@@ -264,12 +264,12 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Modification de la taille de police {#changing-font-size}
+### Modification de la taille de police  {#changing-font-size}
 
 <table> 
  <tbody>
   <tr>
-   <th><p><strong>Operation</strong></p> </th> 
+   <th><p><strong>Opération</strong></p> </th> 
    <th><p><strong>Raccourci sous Windows</strong></p> </th> 
    <th><strong>Raccourci sous Mac OS</strong></th> 
   </tr>
@@ -286,12 +286,12 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Suppression d’un mot {#deleting-a-word}
+### Suppression d’un mot  {#deleting-a-word}
 
 <table> 
  <tbody>
   <tr>
-   <th><strong>Operation</strong></th> 
+   <th><strong>Opération</strong></th> 
    <th><strong>Raccourci sous Windows</strong></th> 
    <th><strong>Raccourci sous Mac OS</strong></th> 
   </tr>
@@ -308,12 +308,12 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Copier et coller {#copy-and-paste}
+### Copier et coller  {#copy-and-paste}
 
 <table> 
  <tbody>
   <tr>
-   <th><strong>Operation</strong></th> 
+   <th><strong>Opération</strong></th> 
    <th><strong>Raccourci sous Windows<br /> </strong></th> 
    <th><strong>Raccourci sous Mac OS</strong></th> 
   </tr>
@@ -340,7 +340,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
 <table> 
  <tbody>
   <tr>
-   <th><strong>Operation</strong></th> 
+   <th><strong>Opération</strong></th> 
    <th><strong>Raccourci sous Windows</strong></th> 
    <th><strong>Raccourci sous Mac OS</strong></th> 
   </tr>
