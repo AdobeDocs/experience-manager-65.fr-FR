@@ -18,17 +18,17 @@ ht-degree: 6%
 ---
 
 
-# Développement d’une application Sandbox  {#develop-sandbox-application}
+# Développer l&#39;application Sandbox {#develop-sandbox-application}
 
-Dans cette section, maintenant que le modèle a été configuré dans la section de l’application [](initial-app.md) initiale et les pages initiales établies dans la section de contenu [](initial-content.md) initiale, l’application peut être développée à l’aide de scripts de base, y compris la possibilité d’activer la création avec les composants Communautés. À la fin de cette section, le site Web sera fonctionnel.
+Dans cette section, maintenant que le modèle a été configuré dans la section [application initiale](initial-app.md) et que les pages initiales ont été établies dans la section [contenu initial](initial-content.md), l&#39;application peut être développée à l&#39;aide de scripts de base, y compris la possibilité d&#39;activer la création avec les composants Communities. À la fin de cette section, le site Web sera fonctionnel.
 
-## Using Foundation Page Scripts {#using-foundation-page-scripts}
+## Utilisation des scripts de page de base {#using-foundation-page-scripts}
 
 Le script par défaut, créé lorsque le composant qui effectue le rendu du modèle de page de lecture a été ajouté, est modifié pour inclure le fichier head.jsp de la page de base et un fichier body.jsp local.
 
-### Type de ressource Super {#super-resource-type}
+### Super Resource Type {#super-resource-type}
 
-La première étape consiste à ajouter une propriété de super-type de ressource au `/apps/an-scf-sandbox/components/playpage` noeud afin qu’il hérite des scripts et des propriétés du super-type.
+La première étape consiste à ajouter une propriété de super-type de ressource au noeud `/apps/an-scf-sandbox/components/playpage` afin qu’il hérite des scripts et des propriétés du super-type.
 
 Utilisation de CRXDE Lite:
 
@@ -41,14 +41,14 @@ Utilisation de CRXDE Lite:
 
    Valeur : `foundation/components/page`
 
-1. Click the green **[!UICONTROL +Add]** button.
+1. Cliquez sur le bouton vert **[!UICONTROL +Ajouter]**.
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
    ![page-script](assets/page-script.png)
 
 ### Scripts de tête et de corps {#head-and-body-scripts}
 
-1. Dans le volet **CRXDE Lite** explorer, accédez à `/apps/an-scf-sandbox/components/playpage` l’explorateur et cliquez sur le fichier en doublon `playpage.jsp` pour l’ouvrir dans le volet d’édition.
+1. Dans le volet de l&#39;explorateur **CRXDE Lite**, accédez à `/apps/an-scf-sandbox/components/playpage` et cliquez en doublon sur le fichier `playpage.jsp` pour l&#39;ouvrir dans le volet de modification.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -67,9 +67,9 @@ Utilisation de CRXDE Lite:
    %>
    ```
 
-1. Connaissant les balises de script open/close, remplacez &quot; // TODO ...&quot; avec des scripts pour les parties head et body de &lt;html>.
+1. Connaissant les balises de script open/close, remplacez &quot; // TODO ...&quot; avec des scripts pour les parties tête et corps de &lt;html>.
 
-   Avec un super type de `foundation/components/page`, tout script non défini dans ce même dossier sera résolu en un script `/apps/foundation/components/page` du dossier (s’il existe), ou en un script du `/libs/foundation/components/page` dossier.
+   Avec un super type `foundation/components/page`, tout script non défini dans ce même dossier sera résolu en un script situé dans le dossier `/apps/foundation/components/page` (s&#39;il existe), ou en un script situé dans le dossier `/libs/foundation/components/page`.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -91,11 +91,11 @@ Utilisation de CRXDE Lite:
 
 1. Le script de base `head.jsp` ne doit pas être superposé, mais le script de base `body.jsp` est vide.
 
-   Pour configurer la création, superposez `body.jsp` un script local et insérez un système de paragraphes (parsys) dans le corps :
+   Pour configurer la création, superposez `body.jsp` avec un script local et insérez un système de paragraphes (parsys) dans le corps :
 
    1. Accéder à `/apps/an-scf-sandbox/components`.
-   1. Select the `playpage` node.
-   1. Right-click and select `Create > Create File...`
+   1. Sélectionnez le noeud `playpage`.
+   1. Cliquez avec le bouton droit de la souris et sélectionnez `Create > Create File...`
 
       * Nom : **body.jsp**
    1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
@@ -124,7 +124,7 @@ Utilisation de CRXDE Lite:
 
 * Interface utilisateur standard : [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
-Vous devriez non seulement voir l’en-tête Lecture **** communautaire, mais aussi l’interface utilisateur pour la modification du contenu de la page.
+Vous devez non seulement voir l’en-tête **Community Play**, mais également l’interface utilisateur pour la modification du contenu de la page.
 
 Le panneau latéral Ressources/Composant s’affiche lorsque les deux panneaux latéraux sont ouverts et que la fenêtre est suffisamment large pour que le contenu latéral et le contenu de la page s’affichent.
 
@@ -142,7 +142,7 @@ Pour activer les composants Communities pour la création, début en suivant les
 
 * [Accès aux composants d’AEM Communities](basics.md#accessing-communities-components)
 
-Pour les besoins de ce sandbox, début avec ces composants **Communautés** (activez-le en cochant la case) :
+Pour les besoins de ce sandbox, début avec ces composants **Communautés** (activez en cochant la case) :
 
 * Commentaires
 * Forum
@@ -151,7 +151,7 @@ Pour les besoins de ce sandbox, début avec ces composants **Communautés** (act
 * Résumé des révisions (affichage)
 * Vote
 
-En outre, sélectionnez des composants **[!UICONTROL généraux]** , tels que
+En outre, sélectionnez les composants **[!UICONTROL Général]**, tels que
 
 * Image
 * Tableau
@@ -160,7 +160,7 @@ En outre, sélectionnez des composants **[!UICONTROL généraux]** , tels que
 
 >[!NOTE]
 >
->Les composants activés pour la page par sont stockés dans le référentiel en tant que valeur de la `components` propriété de la variable
+>Les composants activés pour la page par sont stockés dans le référentiel en tant que valeur de la propriété `components` de la variable
 >
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
@@ -173,10 +173,10 @@ Dans cet exemple simple, la page racine est automatiquement définie pour être 
 Remplacez l’URL du navigateur par la page racine : [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
 
 * Sélectionner l&#39;icône Informations sur la page
-* Sélectionner les propriétés **[!UICONTROL d&#39;ouverture]**
+* Sélectionnez **[!UICONTROL Ouvrir les propriétés]**
 * Sur l’onglet AVANCÉ
 
-   * Pour l’entrée Redirection, accédez à **[!UICONTROL Sites]** Web > Site **[!UICONTROL de sandbox]** SCF > Sandbox **[!UICONTROL SCF]**
+   * Pour l’entrée Redirection, accédez à **[!UICONTROL Sites Web]** > **[!UICONTROL Site de sandbox SCF]** > **[!UICONTROL SCF Sandbox]**
    * Cliquez sur **[!UICONTROL OK]**
 
 * Cliquez sur **[!UICONTROL OK]**
