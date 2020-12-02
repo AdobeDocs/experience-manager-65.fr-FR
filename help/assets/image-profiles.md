@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 1320dd107690ad39f0154d160ec126ad28a1eee0
 workflow-type: tm+mt
 source-wordcount: '2761'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
   </tr>
   <tr>
    <td>Rayon</td>
-   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.    La plage est 0 à 250.</td>
+   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.  La plage est 0 à 250.</td>
   </tr>
   <tr>
    <td>Seuil</td>
@@ -130,7 +130,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 ## Modification ou suppression de profils d’image Dynamic Media {#editing-or-deleting-image-profiles}
 
 1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils d’image.]**
-1. Sélectionnez le profil de l’image que vous souhaitez modifier ou supprimer. Pour le modifier, sélectionnez **[!UICONTROL Modifier le profil de traitement d’image.]** Pour le supprimer, sélectionnez **[!UICONTROL Supprimer le profil de traitement d’image.]**
+1. Sélectionnez le profil de l’image que vous souhaitez modifier ou supprimer. Pour le modifier, sélectionnez **[!UICONTROL Modifier le profil de traitement d’image.]** Pour le supprimer, sélectionnez **[!UICONTROL Supprimer le ou les profils de traitement d’images.]**
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -191,7 +191,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
    * Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`.
 
-      Ajoutez la propriété `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` et appuyez sur **[!UICONTROL Tout enregistrer.]**
+      Ajoutez la propriété `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` et appuyez sur **[!UICONTROL Enregistrer tout.]**
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
@@ -247,7 +247,7 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
       ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
-   * Vous pouvez filtrer la liste des images visibles en fonction des noms de points d’arrêt. Dans l’exemple ci-dessous, les images sont filtrées en fonction du nom de point d’arrêt « Moyen ».
+   * Vous pouvez filtrer la liste des images visibles en fonction des noms de points d’arrêt. Dans l’exemple ci-dessous, les images sont filtrées en fonction du nom de point d’arrêt « Moyenne ».
 
        Près du coin supérieur droit de la page, dans la liste déroulante, sélectionnez un nom de point d’arrêt pour filtrer les images que vous souhaitez voir (voir l’image ci-dessus).
 
@@ -275,7 +275,7 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
 
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save.]** then tap **[!UICONTROL Close]** to return to the folder of assets.
+1. Près du coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer.]**, puis sur **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
 
 ## Suppression d’un profil d’image d’un dossier {#removing-an-image-profile-from-folders}
 
