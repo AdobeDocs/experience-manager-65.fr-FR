@@ -36,21 +36,21 @@ Pour créer un site adapté aux appareils mobiles, procédez comme suit :
 
 1. Créez le composant de page :
 
-   * Set the `sling:resourceSuperType` property to `wcm/mobile/components/page`
-This way the component relies on the mobile page component.
+   * Définissez la propriété `sling:resourceSuperType` sur `wcm/mobile/components/page`
+Ainsi, le composant repose sur le composant de page mobile.
 
    * Créez le `body.jsp` avec la logique spécifique au projet.
 
 1. Créez le modèle de page :
 
-   * Set the `sling:resourceType` property to the newly created page component.
-   * Set the `allowedPaths` property.
+   * Définissez la propriété `sling:resourceType` sur le composant de page nouvellement créé.
+   * Définissez la propriété `allowedPaths`.
 
 1. Créez la page de conception pour le site.
-1. Create the site root page below the `/content` node:
+1. Créez la page racine du site sous le noeud `/content` :
 
-   * Set the `cq:allowedTemplates` property.
-   * Set the `cq:designPath` property.
+   * Définissez la propriété `cq:allowedTemplates`.
+   * Définissez la propriété `cq:designPath`.
 
 1. Dans les propriétés de page de la page racine du site, définissez les groupes d’appareils dans l’onglet **Mobile**.
 1. Créez les pages du site en vous servant du nouveau modèle.
@@ -58,7 +58,7 @@ This way the component relies on the mobile page component.
 Le composant de page mobile ( `/libs/wcm/mobile/components/page`) :
 
 * Ajoute l’onglet **Mobile** à la boîte de dialogue des propriétés de la page.
-* Through its `head.jsp`, it retrieves the current mobile device group from the request and if a device group is found, uses the group&#39;s `drawHead()` method to include the device group&#39;s associated emulator init component (only in author mode) and the device group&#39;s rendering CSS.
+* Par l&#39;intermédiaire de `head.jsp`, il récupère le groupe de périphériques mobiles actuel de la requête et, si un groupe de périphériques est trouvé, utilise la méthode `drawHead()` du groupe pour inclure le composant d&#39;émulateur associé du groupe de périphériques (uniquement en mode création) et le rendu CSS du groupe de périphériques.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Le composant de page mobile ( `/libs/wcm/mobile/components/page`) :
 
 ## Création d’un site mobile avec Multi Site Manager {#creating-a-mobile-site-with-the-multi-site-manager}
 
-Utilisez Multi Site Manager (MSM) pour créer une Live Copy mobile à partir d’un site classique. Celui-ci est automatiquement transformé en site mobile qui possède toutes les fonctionnalités des sites mobiles (par exemple, modification dans un émulateur) et peut être géré en synchronisation avec le site classique. Refer to the section [Creating a Live Copy for different Channels](/help/sites-administering/msm.md) in the Multi Site Manager page.
+Utilisez Multi Site Manager (MSM) pour créer une Live Copy mobile à partir d’un site classique. Celui-ci est automatiquement transformé en site mobile qui possède toutes les fonctionnalités des sites mobiles (par exemple, modification dans un émulateur) et peut être géré en synchronisation avec le site classique. Reportez-vous à la section [Création d’une Live Copy pour différents Canaux](/help/sites-administering/msm.md) dans la page Gestionnaire de sites multiples.
 
 ## API Mobile côté serveur {#server-side-mobile-api}
 
@@ -80,7 +80,7 @@ Les packages Java contenant les classes mobiles sont les suivants :
 
 ### Composants mobiles {#mobile-components}
 
-The **We.Retail Mobile Demo Site** uses the following mobile components which are located below `/libs/foundation/components`:
+Le **site de démonstration mobile We.Retail** utilise les composants mobiles suivants situés sous `/libs/foundation/components` :
 
 <table>
  <tbody>
@@ -97,17 +97,17 @@ The **We.Retail Mobile Demo Site** uses the following mobile components which ar
   <tr>
    <td>Image mobile</td>
    <td>Mobile</td>
-   <td>- en fonction du composant<br /> Image foundation - restitue une image si le périphérique est capable<br /> </td>
+   <td>- basé sur le composant Image foundation<br /> - rend une image si le périphérique est capable<br /> </td>
   </tr>
   <tr>
    <td>Liste mobile</td>
    <td>Mobile</td>
-   <td>- basé sur le composant<br /> de fondation de liste - listitem_teaser.jsp restitue une image si le périphérique est capable<br /> </td>
+   <td>- basé sur le composant liste foundation<br /> - listitem_teaser.jsp restitue une image si le périphérique est capable<br /> </td>
   </tr>
   <tr>
    <td>mobilelogo</td>
-   <td>hidden</td>
-   <td>- basé sur le composant<br /> de fondation du logo - rend une image si le périphérique est compatible<br /> </td>
+   <td>masqué</td>
+   <td>- basé sur le composant de fondation du logo<br /> - rend une image si le périphérique est capable<br /> </td>
   </tr>
   <tr>
    <td>Référence mobile</td>
@@ -117,11 +117,11 @@ The **We.Retail Mobile Demo Site** uses the following mobile components which ar
   <tr>
    <td>mobiletextimage</td>
    <td>Mobile</td>
-   <td>- basé sur le composant<br /> de fondation textimage - rend une image si le périphérique est capable</td>
+   <td>- basé sur le composant textimage foundation<br /> - rend une image si le périphérique est capable</td>
   </tr>
   <tr>
    <td>mobiletopnav</td>
-   <td>hidden</td>
+   <td>masqué</td>
    <td><p>- en fonction du composant topnav foundation</p> <p>- effectue uniquement le rendu du texte</p> </td>
   </tr>
  </tbody>
@@ -159,7 +159,7 @@ OU
 
 >[!NOTE]
 >
->In a jsp, `slingRequest` is available through the `<sling:defineObjects>` tag and `currentPage` through the `<cq:defineObjects>` tag.
+>Dans un fichier jsp, `slingRequest` est disponible via la balise `<sling:defineObjects>` et `currentPage` via la balise `<cq:defineObjects>`.
 
 ### Émulateurs {#emulators}
 
@@ -175,12 +175,12 @@ Pour créer un émulateur, reportez-vous à la section [Création d’un émulat
 
 **Principales caractéristiques des émulateurs mobiles**
 
-* A device group is composed of one of more emulators: the device group configuration page, e.g. /etc/mobile/groups/touch, contains the `emulators` property below the `jcr:content` node.
+* Un groupe de périphériques est composé d’un ou de plusieurs émulateurs : la page de configuration du groupe de périphériques, par ex. /etc/mobile/groups/touch, contient la propriété `emulators` sous le noeud `jcr:content`.
 Remarque : bien que le même émulateur puisse être affecté à plusieurs groupes d’appareils, ce n’est pas très logique.
 
-* Via the device group&#39;s configuration dialog, the `emulators` property is set with the path of the desired emulator(s). Par exemple : `/libs/wcm/mobile/components/emulators/iPhone4`.
+* Dans la boîte de dialogue de configuration du groupe de périphériques, la propriété `emulators` est définie avec le chemin d’accès de l’émulateur ou des émulateurs de votre choix. Par exemple : `/libs/wcm/mobile/components/emulators/iPhone4`.
 
-* Les composants de l&#39;émulateur (p. ex. `/libs/wcm/mobile/components/emulators/iPhone4`) étendez le composant d’émulateur mobile de base ( `/libs/wcm/mobile/components/emulators/base`).
+* Les composants de l&#39;émulateur (p. ex. `/libs/wcm/mobile/components/emulators/iPhone4`) étend le composant d&#39;émulateur mobile de base ( `/libs/wcm/mobile/components/emulators/base`).
 
 * Chaque composant qui étend l’émulateur mobile de base peut être sélectionné lors de la configuration d’un groupe d’appareils. Les émulateurs personnalisés sont ainsi facilement créés ou étendus.
 * Au moment de la requête en mode de modification, l’implémentation de l’émulateur est utilisée pour le rendu de la page.
@@ -190,7 +190,7 @@ Remarque : bien que le même émulateur puisse être affecté à plusieurs grou
 
 Les groupes d’appareils mobiles fournissent une segmentation des appareils mobiles selon les caractéristiques fonctionnelles de chaque appareil. Un groupe d’appareils fournit les informations nécessaires à la création par émulateur sur l’instance de création et au rendu correct sur l’instance de publication : une fois que les auteurs ont ajouté du contenu à la page mobile et l’ont publié, la page peut être demandée sur l’instance de publication. Sur cette instance, au lieu de la vue en mode de modification de l’émulateur, la page de contenu est rendue selon l’un des groupes d’appareils configurés. La sélection du groupe d’appareils se fait en fonction de la [détection des appareils mobiles](#devicedetection). Le groupe d’appareils correspondant fournit alors les informations de style nécessaires.
 
-Device groups are defined as content pages below `/etc/mobile/devices` and use the **Mobile Device Group** template. Celui-ci sert de modèle de configuration pour les définitions de groupe d’appareils sous la forme de pages de contenu. Ses caractéristiques principales sont les suivantes :
+Les groupes de périphériques sont définis comme des pages de contenu sous `/etc/mobile/devices` et utilisent le modèle **Groupe de périphériques mobiles**. Celui-ci sert de modèle de configuration pour les définitions de groupe d’appareils sous la forme de pages de contenu. Ses caractéristiques principales sont les suivantes :
 
 * Emplacement: `/libs/wcm/mobile/templates/devicegroup`
 * Chemin autorisé : `/etc/mobile/groups/*`
@@ -201,11 +201,11 @@ Device groups are defined as content pages below `/etc/mobile/devices` and use t
 Lorsque vous créez un site mobile, vous devez affecter des groupes d’appareils au site. AEM propose trois groupes d’appareils en fonction des capacités de rendu HTML et JavaScript de l’appareil :
 
 * **Téléphones portables** pour les appareils comme le Sony Ericsson W800 avec prise en charge de HTML basique, mais pas des images ni de JavaScript.
-* **Les téléphones intelligents** , pour les appareils comme le Blackberry avec la prise en charge du code HTML et des images de base, mais pas de prise en charge de JavaScript.
+* **Les** Smartphones, pour les appareils tels que le Blackberry, avec prise en charge du code HTML et des images de base, mais pas de prise en charge de JavaScript.
 
 * **Appareils tactiles** pour les tablettes comme l’iPad avec prise en charge complète de HTML, des images, de JavaScript et de la rotation des appareils.
 
-As emulators can be associated with a device group (see the section [Creating a Device Group](#creating-a-device-group)), assigning a device group to a site enables authors to select between the emulators that are associated with the device group to edit the page.
+Comme les émulateurs peuvent être associés à un groupe de périphériques (voir la section [Création d&#39;un groupe de périphériques](#creating-a-device-group)), l&#39;attribution d&#39;un groupe de périphériques à un site permet aux auteurs de sélectionner parmi les émulateurs associés au groupe de périphériques pour modifier la page.
 
 Pour affecter un groupe d’appareils à votre site :
 
@@ -221,7 +221,7 @@ Pour affecter un groupe d’appareils à votre site :
 >
 >Lorsque les groupes d’appareils sont définis pour un site, ils sont hérités par toutes les pages du site.
 
-#### Filtres de groupe d’appareils {#device-group-filters}
+#### Filtres de groupe d’appareils  {#device-group-filters}
 
 Les filtres de groupe d’appareils définissent des critères fonctionnels pour déterminer si un appareil appartient ou non à un groupe. Lorsque vous créez un groupe d’appareils, vous pouvez sélectionner les filtres à utiliser pour évaluer les appareils.
 
@@ -243,22 +243,22 @@ Pour plus d’informations, voir [Création de filtres de groupes d’appareils]
 Créez un groupe d’appareils lorsque les groupes qu’AEM installe ne répondent pas à vos besoins.
 
 1. Dans votre navigateur, accédez à la console **Outils**.
-1. Create a new page below **Tools** > **Mobile** > **Device Groups**. Dans la boîte de dialogue **Créer une page** : 
+1. Créez une nouvelle page ci-dessous **Outils** > **Mobile** > **Groupes de périphériques**. Dans la boîte de dialogue **Créer une page** : 
 
-   * As **Title** enter `Special Phones`.
+   * Comme **Titre**, saisissez `Special Phones`.
 
-   * As **Name** enter `special`.
+   * Comme **Nom**, saisissez `special`.
 
    * Sélectionnez un **Modèle de groupe de périphériques mobiles**.
    * Cliquez sur **Créer**.
 
-1. In CRXDE, add a **static.css** file containing the styles for the device group below the `/etc/mobile/groups/special` node.
+1. Dans CRXDE, ajoutez un fichier **static.css** contenant les styles du groupe de périphériques sous le noeud `/etc/mobile/groups/special`.
 
-1. Open the **Special Phones** page.
+1. Ouvrez la page **Téléphones spéciaux**.
 1. Pour configurer le groupe d’appareils, cliquez sur le bouton **Modifier** à côté de **Paramètres**.
 Dans l’onglet **Général** :
 
-   * **Titre**: nom du groupe de périphériques mobiles.
+   * **Titre** : nom du groupe de périphériques mobiles.
    * **Description** : description du groupe.
    * **User-Agent** : chaîne user-agent avec laquelle les appareils sont mappés. Paramètre facultatif qui peut être une expression régulière. Exemple: `BlackBerryZ10`
    * **Fonctions** : définit si le groupe peut gérer les images, CSS, JavaScript ou la rotation des appareils.
@@ -293,7 +293,7 @@ Comme décrit précédemment, il est possible d’associer un CSS personnalisé 
 
 Utilisez des filtres et une bibliothèque de caractéristiques d’appareil pour déterminer les fonctions de l’appareil qui effectue la requête HTTP.
 
-### Développez les filtres de groupe d’appareils {#develop-device-group-filters}
+### Développez les filtres de groupe d’appareils  {#develop-device-group-filters}
 
 Créez un filtre de groupe d’appareils pour définir un ensemble d’exigences en termes de caractéristiques d’appareil. Créez autant de filtres que nécessaire pour cibler les groupes de caractéristiques d’appareils nécessaires.
 
@@ -303,18 +303,18 @@ Après avoir créé un filtre, vous pouvez l’utiliser dans la configuration du
 
 Pour plus d’informations, accédez à [Création de filtres de groupe d’appareils](/help/sites-developing/groupfilters.md).
 
-### Utilisation de la base de données WURFL™ {#using-the-wurfl-database}
+### Utilisation de la base de données WURFL™  {#using-the-wurfl-database}
 
-AEM uses a truncated version of the [WURFL](https://wurfl.sourceforge.net/)™ database to query device capabilities, such as screen resolution or javascript support, based on the device&#39;s User-Agent.
+aem utilise une version tronquée de la base de données [WURFL](https://wurfl.sourceforge.net/)™ pour requête les fonctionnalités du périphérique, telles que la résolution d’écran ou la prise en charge javascript, en fonction de l’User-Agent du périphérique.
 
-Le code XML de la base de données WURFL™ est représenté sous la forme de noeuds en dessous `/var/mobile/devicespecs` en analysant le `wurfl.xml`fichier à `/libs/wcm/mobile/devicespecs/wurfl.xml.` L&#39;extension aux noeuds se produit la première fois que l&#39; `cq-mobile-core` assemblage est démarré.
+Le code XML de la base de données WURFL™ est représenté sous la forme de noeuds au-dessous de `/var/mobile/devicespecs` en analysant le fichier `wurfl.xml`à `/libs/wcm/mobile/devicespecs/wurfl.xml.` L&#39;extension aux noeuds se produit lors du premier démarrage du lot `cq-mobile-core`.
 
 Les caractéristiques des appareils sont stockées en tant que propriétés de nœud. Les nœuds représentent les modèles d’appareil. Vous pouvez utiliser des requêtes pour récupérer les caractéristiques d’un appareil ou son user-agent.
 
 Puisque la base de données WURFL™ évolue, il faudra peut-être la personnaliser ou la remplacer. Pour mettre à jour la base de données des appareils mobiles, plusieurs options existent :
 
 * Remplacer le fichier par la dernière version, à condition de posséder une licence qui autorise cette utilisation. Voir Installation d’une autre base de données WURFL.
-* Utiliser la version disponible dans AEM et configurer une expression régulière qui correspond à vos chaînes User-Agent et pointe vers un appareil WURFL™ existant. See [Adding a regexp-based User-Agent Matching](#adding-a-regexp-based-user-agent-matching).
+* Utiliser la version disponible dans AEM et configurer une expression régulière qui correspond à vos chaînes User-Agent et pointe vers un appareil WURFL™ existant. Voir [Ajouter une correspondance User-Agent basée sur regexp](#adding-a-regexp-based-user-agent-matching).
 
 #### Test du mappage d’un User-Agent avec les fonctionnalités WURFL™{#testing-the-mapping-of-a-user-agent-to-wurfl-capabilities}
 
@@ -328,25 +328,25 @@ La base de données WURFL™ tronquée installée avec AEM est une version anté
 
 Pour installer une base de données WURFL™ : 
 
-1. In CRXDE Lite, create the following folder: `/apps/wcm/mobile/devicespecs`
+1. Dans CRXDE Lite, créez le dossier suivant : `/apps/wcm/mobile/devicespecs`
 1. Copiez le fichier WURFL™ dans le dossier.
-1. Rename the file as `wurfl.xml`.
+1. Renommez le fichier en `wurfl.xml`.
 
-AEM automatically parses the `wurfl.xml` file and updates the nodes below `/var/mobile/devicespecs`.
+aem analyse automatiquement le fichier `wurfl.xml` et met à jour les noeuds sous `/var/mobile/devicespecs`.
 
 >[!NOTE]
 >
 >Lorsque la base de données WURFL™ complète est activée, l’analyse et l’activation peuvent prendre quelques minutes. Vous pouvez consulter les journaux pour obtenir des informations sur la progression.
 
-#### Ajout d’un mappage User-Agent basé sur une expression régulière {#adding-a-regexp-based-user-agent-matching}
+#### Ajout d’un mappage User-Agent basé sur une expression régulière  {#adding-a-regexp-based-user-agent-matching}
 
 Ajoutez un agent utilisateur comme expression régulière sous /apps/wcm/mobile/devicespecs/wurfl/regexp pour pointer vers un type de périphérique WURFL™ existant.
 
 1. Dans **CRXDE Lite**, créez un nœud sous /apps/wcm/mobile/devicespecs/regexp, par exemple. apple_ipad_ver1.
 1. Ajoutez les propriétés suivantes au nœud  :
 
-   * **regexp**: expression régulière définissant les agents utilisateur, par exemple : .*Mozilla.*iPad.*AppleWebKit.*Safari.*
-   * **deviceId**: l’identifiant de périphérique tel que défini dans le fichier wurfl.xml, par exemple : apple_ipad_ver1
+   * **regexp** : expression régulière définissant les agents utilisateur, par exemple : .*Mozilla.*iPad.*AppleWebKit.*Safari.*
+   * **deviceId** : l’identifiant de périphérique tel que défini dans le fichier wurfl.xml, par exemple : apple_ipad_ver1
 
 La configuration ci-dessus fait que les périphériques pour lesquels User-Agent correspond à l&#39;expression régulière fournie sont mappés à l&#39;identifiant de périphérique apple_ipad_ver1 WURFL™, s&#39;il existe.
 
@@ -354,7 +354,7 @@ La configuration ci-dessus fait que les périphériques pour lesquels User-Agent
 
 Cette section explique comment utiliser la détection côté client d’AEM afin d’optimiser le rendu des pages ou de proposer au client des versions de site web secondaires.
 
-AEM supports device client-side detection based on `BrowserMap`. `BrowserMap` est expédié en AEM en tant que bibliothèque cliente sous `/etc/clientlibs/browsermap`.
+aem prend en charge la détection côté client du périphérique en fonction de `BrowserMap`. `BrowserMap` est expédié en AEM en tant que bibliothèque cliente sous  `/etc/clientlibs/browsermap`.
 
 `BrowserMap` offre trois alternatives pour fournir un site web secondaire à un client. Elles sont appliquées dans l’ordre suivant :
 
@@ -368,11 +368,11 @@ AEM supports device client-side detection based on `BrowserMap`. `BrowserMap` es
 
 ### Liens secondaires {#providing-alternate-links}
 
-The `PageVariantsProvider` OSGi service is capable of generating alternate links for sites belonging to the same family. Pour configurer les sites concernés par le service, un nœud `cq:siteVariant` doit être ajouté au nœud `jcr:content` à la racine du site.
+Le service `PageVariantsProvider` OSGi est capable de générer des liens alternatifs pour les sites appartenant à la même famille. Pour configurer les sites concernés par le service, un nœud `cq:siteVariant` doit être ajouté au nœud `jcr:content` à la racine du site.
 
-The `cq:siteVariant` node needs to have the following properties:
+Le noeud `cq:siteVariant` doit posséder les propriétés suivantes :
 
-* `cq:childNodesMapTo` - détermine à quel attribut de l&#39;élément de lien les noeuds enfants seront mappés ; il est recommandé d’organiser le contenu de votre site Web de telle sorte que les enfants du noeud racine représentent la racine d’une variante de langue de votre site Web global (ex. `/content/mysite/en`, `/content/mysite/de`), auquel cas la valeur de la `cq:childNodesMapTo` variable doit être `hreflang`;
+* `cq:childNodesMapTo` - détermine à quel attribut de l&#39;élément de lien les noeuds enfants seront mappés ; il est recommandé d’organiser le contenu de votre site Web de telle sorte que les enfants du noeud racine représentent la racine d’une variante de langue de votre site Web global (ex.  `/content/mysite/en`,  `/content/mysite/de`), auquel cas la valeur de la  `cq:childNodesMapTo` variable  `hreflang`doit être;
 * `cq:variantDomain` - indique le domaine `Externalizer` qui sera utilisé pour générer les URL absolues de variantes de page. Si cette valeur n’est pas définie, les variantes de page sont générées avec des liens relatifs.
 * `cq:variantFamily` - indique à quelle famille de sites appartient ce site. Plusieurs rendus spécifiques à chaque appareil d’un même site web doivent appartenir à la même famille.
 * `media` - stocke les valeurs de l’attribut media de l’élément link. Il est recommandé d’utiliser le nom du `BrowserMap` enregistré avec `DeviceGroups`, de sorte que la bibliothèque `BrowserMap` puisse automatiquement rediriger les clients vers la bonne variante du site web.
@@ -385,7 +385,7 @@ Lorsque la valeur de la propriété `cq:variantDomain` d’un nœud `cq:siteVari
 >
 >Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
-### Définition d’une URL spécifique à un groupe d’appareils {#defining-a-device-group-specific-url}
+### Définition d’une URL spécifique à un groupe d’appareils  {#defining-a-device-group-specific-url}
 
 Si vous ne souhaitez pas utiliser des liens secondaires, vous pouvez configurer une URL globale pour chaque `DeviceGroup`. Nous vous recommandons de créer votre propre bibliothèque cliente qui intègre la bibliothèque cliente `browsermap.standard`, mais redéfinit les groupes d’appareils.
 
@@ -395,27 +395,27 @@ Si vous ne souhaitez pas utiliser des liens secondaires, vous pouvez configurer 
 >
 >Pour plus de détails, veuillez lire la section [BrowserMap personnalisé](#creatingacustomisedbrowsermap).
 
-### Définition d’URL basées sur un sélecteur {#defining-selector-based-urls}
+### Définition d’URL basées sur un sélecteur  {#defining-selector-based-urls}
 
 Si aucun des mécanismes précédents n’a été utilisé pour indiquer un site secondaire de redirection à `BrowserMap`, les sélecteurs qui utilisent les noms des `DeviceGroups` sont ajoutés aux `URL`, auquel cas vous devez fournir vos propres servlets. Ils géreront les requêtes.
 
-For example a device browsing `www.example.com/index.html` identified as `smartphone` by BrowserMap is forwarded to `www.example.com/index.smartphone.html.`
+Par exemple, la navigation sur un périphérique `www.example.com/index.html` identifié comme `smartphone` par BrowserMap est transférée à `www.example.com/index.smartphone.html.`
 
 ### Utilisation de BrowserMap dans les pages {#using-browsermap-on-your-pages}
 
-In order to use the standard BrowserMap client library in a page, you have to include the `/libs/wcm/core/browsermap/browsermap.jsp` file using a `cq:include`tag in your page&#39;s `head` section.
+Pour utiliser la bibliothèque cliente BrowserMap standard dans une page, vous devez inclure le fichier `/libs/wcm/core/browsermap/browsermap.jsp` à l&#39;aide d&#39;une balise `cq:include`dans la section `head` de votre page.
 
 ```xml
 <cq:include script="/libs/wcm/core/browsermap/browsermap.jsp" />
 ```
 
-Besides adding the `BrowserMap` client library in your `JSP` files, you also have to add a `cq:deviceIdentificationMode` String property set to `client-side` to the `jcr:content` node below the root of your web site.
+Outre l&#39;ajout de la bibliothèque cliente `BrowserMap` dans vos fichiers `JSP`, vous devez également ajouter une propriété de chaîne `cq:deviceIdentificationMode` définie sur `client-side` au noeud `jcr:content` situé sous la racine de votre site Web.
 
 ### Contournement du comportement par défaut de BrowserMap {#overriding-browsermap-s-default-behaviour}
 
 Si vous souhaitez personnaliser `BrowserMap` en remplaçant les `DeviceGroups` ou en ajoutant d’autres sondes, vous devez créer votre propre bibliothèque côté client à laquelle vous incorporez la bibliothèque côté client `browsermap.standard`.
 
-Furthermore, you have to manually call the `BrowserMap.forwardRequest()` method in your `JavaScript` code.
+De plus, vous devez appeler manuellement la méthode `BrowserMap.forwardRequest()` dans votre code `JavaScript`.
 
 >[!NOTE]
 >
@@ -513,7 +513,7 @@ request.setAttribute("browsermap.enabled", false);
 %>
 ```
 
-This will make the `/libs/wcm/core/browsermap/browsermap.jsp` script to add a meta tag to the page that will make `BrowserMap` to not perform any detection:
+Le script `/libs/wcm/core/browsermap/browsermap.jsp` sera alors utilisé pour ajouter une balise meta à la page, ce qui rendra `BrowserMap` impossible d&#39;effectuer une détection :
 
 ```xml
 <meta name="browsermap.enabled" content="false">
@@ -529,7 +529,7 @@ Vous pouvez forcer un type d’appareil, peu importe sa requête, afin de tester
 
 >[!NOTE]
 >
->The `wcmmode` paratemer is set to `disabled` in order to simulate the behavior of a publish instance.
+>Le paramètre `wcmmode` est défini sur `disabled` afin de simuler le comportement d’une instance de publication.
 
 La valeur remplacée est stockée dans un cookie afin que la navigation sur votre site web soit possible sans ajouter le paramètre `device`device à chaque `URL`.
 
@@ -539,14 +539,14 @@ Par conséquent, vous devez appeler la même `URL` avec la valeur `device` défi
 >
 >BrowserMap stocke la valeur device remplacée dans un cookie appelé `BMAP_device`. La suppression de ce cookie garantit que CQ diffuse la version appropriée du site web en fonction de l’appareil (par exemple, la version bureau ou mobile).
 
-## Traitement de requêtes mobiles {#mobile-request-processing}
+## Traitement de requêtes mobiles  {#mobile-request-processing}
 
 AEM traite les requêtes émises par des appareils mobiles appartenant au groupe d’appareils tactiles comme suit : 
 
-1. An iPad sends a request to the AEM publish instance, e.g. `https://localhost:4503/content/geometrixx_mobile/en/products.html`
-1. AEM determines whether the site of the requested page is a mobile site (by checking whether the first level page `/content/geometrixx_mobile` extends the mobile page component). Si oui :
+1. Un iPad envoie une requête à l’instance de publication AEM, par exemple. `https://localhost:4503/content/geometrixx_mobile/en/products.html`
+1. aem détermine si le site de la page demandée est un site mobile (en vérifiant si la page de premier niveau `/content/geometrixx_mobile` étend le composant de page mobile). Si oui :
 1. aem recherche les fonctionnalités du périphérique en fonction de l’User-Agent dans l’en-tête de requête.
-1. AEM maps the device capabilities to the device group and sets `touch` as the device group selector.
+1. aem mappe les capacités du périphérique au groupe de périphériques et définit `touch` comme sélecteur de groupe de périphériques.
 1. aem redirige la requête vers `https://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
 1. aem envoie la réponse à l’iPad :
 
@@ -573,7 +573,7 @@ La page **Statistiques** se présente comme suit :
 
 >[!NOTE]
 >
->The **Statistics** page is created the first time a mobile device accesses AEM and is detected. Avant cela, elle n’est pas disponible.
+>La page **Statistiques** est créée la première fois qu&#39;un périphérique mobile accède à AEM et est détecté. Avant cela, elle n’est pas disponible.
 
 Si vous devez générer une entrée dans les statistiques, vous pouvez procéder comme suit :
 
@@ -585,7 +585,7 @@ La page **Statistiques** est désormais disponible.
 
 ### Prise en charge de la mise en cache de page pour les liens « envoyer un lien à un ami »{#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Mobile pages are generally cachable on Dispatcher, because pages that are rendered for a device group are distinguished in the page URL by the device group selector, for example `/content/mobilepage.touch.html`. Une requête vers une page mobile sans sélecteur n’est jamais mise en cache puisque, dans ce cas, la détection d’appareil fonctionne et redirige au final la page vers le groupe d’appareils correspondant (ou « nomatch » plus précisément). Une page mobile diffusée avec un sélecteur de groupe d’appareils est traitée par réécriture des liens. Tous les liens de la page sont réécrits de manière à contenir le sélecteur de groupe, empêchant ainsi la détection pour chaque clic sur une page déjà traitée.
+Les pages mobiles sont généralement mises en cache sur le répartiteur, car les pages rendues pour un groupe de périphériques sont distinguées dans l’URL de page par le sélecteur de groupe de périphériques, par exemple `/content/mobilepage.touch.html`. Une requête vers une page mobile sans sélecteur n’est jamais mise en cache puisque, dans ce cas, la détection d’appareil fonctionne et redirige au final la page vers le groupe d’appareils correspondant (ou « nomatch » plus précisément). Une page mobile diffusée avec un sélecteur de groupe d’appareils est traitée par réécriture des liens. Tous les liens de la page sont réécrits de manière à contenir le sélecteur de groupe, empêchant ainsi la détection pour chaque clic sur une page déjà traitée.
 
 Par conséquent, le cas de figure suivant est possible.
 
