@@ -14,7 +14,7 @@ ht-degree: 39%
 
 # AEM Community {#the-aem-community}
 
-## What is the AEM Community? {#what-is}
+## Qu&#39;est-ce que la communauté AEM ? {#what-is}
 
 La communauté AEM compte des milliers de membres à travers le monde. depuis les utilisateurs qui font leurs premiers pas sur Experience Manager, jusqu’aux développeurs et administrateurs avertis.  Nous nous tenons à votre disposition pour toute question sur les fonctionnalités d’AEM et sur le développement. Nous organisons des sessions régulières avec des experts internes et externes, et nous vous présentons des exemples, des articles et des didacticiels.
 
@@ -22,11 +22,11 @@ La communauté AEM compte des milliers de membres à travers le monde. depuis le
 
 ## Quels événements y a-t-il pour AEM membres de la communauté ? {#events}
 
-Il y a une foule de événements pour les membres ! Chaque mois, nous organisons des sessions où vous pouvez demander à l&#39;expert sur des sujets AEM spécifiques. We also will let you know about major events, such as [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) or the [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other), or even user group events in your area.
+Il y a une foule de événements pour les membres ! Chaque mois, nous organisons des sessions où vous pouvez demander à l&#39;expert sur des sujets AEM spécifiques. Nous vous informerons également des principaux événements, tels que [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) ou le [Sommet des Adobes](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other), ou même des événements de groupes d&#39;utilisateurs dans votre région.
 
-The best thing to do is [visit the AEM Community today and see what&#39;s going on.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+La meilleure chose à faire est de [visiter la communauté AEM aujourd&#39;hui et voir ce qui se passe.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
-## Can I get code samples to help me? {#code-samples}
+## Puis-je obtenir des échantillons de code pour m&#39;aider ? {#code-samples}
 
 L&#39;équipe de la communauté AEM produit continuellement des guides et des exemples de code &quot;comment&quot; pour aider les développeurs et utilisateurs Experience Manager à trouver la solution. [Voici notre liste complète d&#39;articles pratiques et d&#39;exemples de code.](https://helpx.adobe.com/fr/experience-manager/topics/how-to.html)
 
