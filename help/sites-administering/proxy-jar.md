@@ -37,7 +37,7 @@ Vous pouvez utiliser le serveur proxy pour surveiller toutes les interactions cl
 
 Vous pouvez, par exemple, placer le serveur proxy entre deux applications qui communiquent par un réseau TCP/IP, par exemple, un navigateur web et AEM. Vous pouvez ainsi surveiller ce qui se passe exactement lorsque vous demandez une page AEM.
 
-## Démarrage de l’outil de serveur proxy {#starting-the-proxy-server-tool}
+## Démarrage de l’outil de serveur proxy  {#starting-the-proxy-server-tool}
 
 L&#39;outil se trouve dans le dossier /opt/helpers de votre installation AEM. Pour le lancer, saisissez :
 
@@ -53,7 +53,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 * **logfile &lt;nom_fichier> (écriture dans le fichier journal)** Écrit la conversation client/serveur dans un fichier journal. Ce paramètre fonctionne également en mode silencieux.
 * **i &lt;retraitsNum> i (ajout d’un retrait)** Chaque connexion active figure en retrait pour une meilleure lisibilité. La valeur par défaut est de 16 niveaux. (Nouveauté de proxy.jar version 1.16).
 
-## Utilisations de l’outil de serveur proxy {#uses-of-the-proxy-server-tool}
+## Utilisations de l’outil de serveur proxy  {#uses-of-the-proxy-server-tool}
 
 Les scénarios ci-dessous indiquent une partie des fins auxquelles l’outil de serveur proxy peut être utilisé : 
 
@@ -101,7 +101,7 @@ Si de temps en temps, des demandes sont en suspens :
 1. Attendez ou écrivez le journal des accès dans un fichier, en horodatant chaque entrée.
 1. Lorsque la demande est suspendue, vous pouvez déterminer le nombre de connexions ouvertes et la demande à la source du problème.
 
-## Format des messages du journal {#the-format-of-log-messages}
+## Format des messages du journal  {#the-format-of-log-messages}
 
 Toutes les entrées du journal générées par proxy.jar ont le format suivant :
 
@@ -118,7 +118,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C signifie que cette entrée provient du client (il s’agit d’une demande de page web).
 * 0 correspond au nombre de connexions (le nombre de connexions commence à 0).
 * # 00000 correspond au décalage dans le flux de bits. Comme il s’agit de la première entrée, le décalage est de 0.
-* [GET &lt; ?>] est le contenu de la requête, dans l&#39;exemple, l&#39;un des en-têtes HTTP (url).
+* [GET  &lt;?>] est le contenu de la requête, dans l’exemple, l’un des en-têtes HTTP (url).
 
 Lorsqu’une connexion se ferme, les informations suivantes sont consignées :
 
@@ -129,7 +129,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 Le nombre d’octets transmis entre le client et le serveur sur la 6e connexion est indiqué, ainsi que la vitesse moyenne.
 
-## Exemple de sortie de journal {#an-example-of-log-output}
+## Exemple de sortie de journal  {#an-example-of-log-output}
 
 Nous allons examiner un modèle simple, qui génère le code ci-dessous lorsqu’il est demandé :
 
