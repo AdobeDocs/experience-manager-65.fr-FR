@@ -23,7 +23,7 @@ ht-degree: 81%
 
 Cette page fournit des informations sur la manière de résoudre les problèmes de réplication.
 
-## Problème {#problem}
+## Problème  {#problem}
 
 La réplication (réplication non inversée) échoue pour quelque raison que ce soit.
 
@@ -43,8 +43,8 @@ Vérifiez ce point en accédant à /etc/replication/agents.author.html, puis en 
 
 **Si une ou plusieurs files d’attente sont bloquées :**
 
-1. Does the queue show **blocked** status? Le cas échéant, l’instance de publication n’est-elle pas en cours d’éxécution ou a-t-elle cessé totalement de répondre ? Vérifiez l’instance de publication pour détecter le problème (c’est-à-dire vérifiez les journaux pour voir s’il existe une erreur OutOfMemory ou un autre problème). S’il s’agit d’une lenteur générale, prenez des thread dumps et analysez-les.
-1. Does the queue status show **Queue is active - # pending**? La tâche de réplication peut être simplement bloquée dans une fiche, en attente d’une instance de publication ou du dispatcher pour répondre. Il se peut également que l’instance de publication ou le dispatcher subisse un chargement élevé ou qu’il soit coincé dans un verrouillage. Prenez les thread dumps de l’auteur et de la publication dans ce cas.
+1. La file d’attente affiche-t-elle l’état **bloqué** ? Le cas échéant, l’instance de publication n’est-elle pas en cours d’éxécution ou a-t-elle cessé totalement de répondre ? Vérifiez l’instance de publication pour détecter le problème (c’est-à-dire vérifiez les journaux pour voir s’il existe une erreur OutOfMemory ou un autre problème). S’il s’agit d’une lenteur générale, prenez des thread dumps et analysez-les.
+1. L&#39;état de la file d&#39;attente indique-t-il **La file d&#39;attente est principale - # en attente** ? La tâche de réplication peut être simplement bloquée dans une fiche, en attente d’une instance de publication ou du dispatcher pour répondre. Il se peut également que l’instance de publication ou le dispatcher subisse un chargement élevé ou qu’il soit coincé dans un verrouillage. Prenez les thread dumps de l’auteur et de la publication dans ce cas.
 
    * Ouvrez les thread dumps de l’auteur dans un programme d’analyse de thread dump, vérifiez s’il indique que la tâche sling eventing de l’agent de réplication est boquée dans un socketRead.
    * Ouvrez les thread dumps de la publication dans un programme d’analyse de thread dump, analysez ce qui peut causer le manque de réaction de l’instance de publication. Vous devriez voir un thread avec le POST /bin/receive dans son nom, c&#39;est-à-dire le thread recevant la réplication de l&#39;auteur.
@@ -76,7 +76,7 @@ Vérifiez ce point en accédant à /etc/replication/agents.author.html, puis en 
 Il est parfois très utile de programmer toute la journalisation de la réplication de sorte qu’elle soit ajouté à un fichier journal séparé au niveau de DEBUG. Pour ce faire :
 
 1. Accédez à https://host:port/system/console/configMgr et connectez-vous en tant qu’administrateur.
-1. Find the Apache Sling Logging Logger factory and create an instance by clicking the **+** button on the right of the factory configuration. Cela entraîne la création d’un enregistreur de connexions.
+1. Recherchez l&#39;usine Apache Sling Logging Logger et créez une instance en cliquant sur le bouton **+** à droite de la configuration de l&#39;usine. Cela entraîne la création d’un enregistreur de connexions.
 1. Définissez la configuration comme suit :
 
    * Niveau de journal : DEBUG
@@ -85,32 +85,32 @@ Il est parfois très utile de programmer toute la journalisation de la réplicat
 
 1. Si vous soupçonnez que le problème est lié de quelque manière que ce soit à sling eventing/jobs, vous pouvez également ajouter ce module Java sous categories:org.apache.sling.event.
 
-## Mise en pause de la file d’attentre des agents de réplication  {#pausing-replication-agent-queue}
+## Mise en pause de la file d’attentre des agents de réplication   {#pausing-replication-agent-queue}
 
 Parfois, il vaut mieux mettre la file d’attente de réplication en pause pour réduire le chargement sur le système de création, sans le désactiver. Actuellement, cela est uniquement possible par le biais d’une configuration temporaire d’un port non valide. À partir de la version 5.4, vous pourrez voir un bouton pause dans la file d’attente des agents de réplication, mais avec certaines limites.
 
 1. L’état n’est pas stable, c’est-à-dire que si vous redémarrez un serveur si un lot est réutilisé, il repasse en mode d’exécution.
 1. La pause reste inactive durant une période plus courte (sans travail 1ִ heure après qu’aucune activité avec la réplication par d’autres threads ne soit enregistrée) et pas une minute de plus. Il existe en effet une fonction dans sling qui permet d’éviter les threads inactifs. Vérifiez si un thread de file d’attente des tâches a été inutilisé pour une période plus longue. Le cas échéant, cela déclenche les cycles de nettoyage. En raison du cycle de nettoyage, le thread est arrêté, et le paramètre mis sur pause est perdu. Étant donné que les tâches sont conservées, un nouveau thread est lancé pour traiter la file d’attente qui ne contient pas de détails sur la configuration mise en pause. En conséquence, la file d’attente passe en mode d’exécution.
 
-## Les autorisations de page ne sont pas répliquées lors de l’activation des utilisateurs {#page-permissions-are-not-replicated-on-user-activation}
+## Les autorisations de page ne sont pas répliquées lors de l’activation des utilisateurs  {#page-permissions-are-not-replicated-on-user-activation}
 
 Les autorisations de page ne sont pas répliquées, car elles sont stockées sous les nœuds auxquels l’accès est accordé, pas avec l’utilisateur.
 
 En général, des autorisations de page ne doivent pas être répliquées depuis l’instance d’auteur vers l’instance de publication, et ne sont pas définies par défaut. Cela est dû au fait que les droits d’accès doivent être différents dans ces deux environnements. Par conséquent, il est recommandé de configurer les listes de contrôle d’accès de la publication séparément de l’auteur.
 
-## La file d’attente de réplication est bloquée lors de la réplication des informations sur les espaces de noms depuis l’auteur vers la publication. {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+## La file d’attente de réplication est bloquée lors de la réplication des informations sur les espaces de noms depuis l’auteur vers la publication.  {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-Dans certains cas, la file d’attente de réplication est bloquée lors de la tentative de réplication des informations sur les espaces de noms depuis l’instance d’auteur vers l’instance de publication. This happens because the replication user does not have `jcr:namespaceManagement` privilege. Pour éviter ce problème, vérifiez les points suivants :
+Dans certains cas, la file d’attente de réplication est bloquée lors de la tentative de réplication des informations sur les espaces de noms depuis l’instance d’auteur vers l’instance de publication. Cela se produit car l&#39;utilisateur de réplication n&#39;a pas le privilège `jcr:namespaceManagement`. Pour éviter ce problème, vérifiez les points suivants :
 
-* The replication user (as configured under the [Transport](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>User) also exists on the Publish instance.
+* L’utilisateur de réplication (tel que configuré sous l’onglet [Transport&lt;a1/&quot;Utilisateur) existe également sur l’instance de publication.](/help/sites-deploying/replication.md#replication-agents-configuration-parameters)
 * L’utilisateur dispose des privilèges de lecture et d’écriture sur le chemin où le contenu est installé.
-* The user has `jcr:namespaceManagement` privilege at the repository level. Vous pouvez accorder le privilège comme suit :
+* L&#39;utilisateur dispose du privilège `jcr:namespaceManagement` au niveau du référentiel. Vous pouvez accorder le privilège comme suit :
 
-1. Login to CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) as administrator.
+1. Connectez-vous à CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) en tant qu’administrateur.
 1. Cliquez sur l’onglet **Contrôle d’accès**.
 1. Sélectionnez **Référentiel**.
 1. Cliquez sur **Ajouter une entrée** (icône Plus).
 1. Entrez le nom de l’utilisateur.
-1. Select `jcr:namespaceManagement` from the privileges list.
+1. Sélectionnez `jcr:namespaceManagement` dans la liste de privilèges.
 1. Cliquez sur OK.
 
