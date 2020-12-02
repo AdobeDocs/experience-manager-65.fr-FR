@@ -33,7 +33,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Conversion d’un document en document PDF/A à l’aide de l’API Java {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
-L’exemple de code Java suivant convertit un document PDF nommé *Loan.pdf* en document PDF/A enregistré en tant que fichier PDF appelé *LoanArchive.pdf*. (voir [Conversion de Documents en Documents](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents)PDF/A).
+L’exemple de code Java suivant convertit un document PDF nommé *Loan.pdf* en document PDF/A enregistré en tant que fichier PDF nommé *LoanArchive.pdf*. (Voir [Conversion de Documents en Documents PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
 ```java
  /*
@@ -136,7 +136,7 @@ L’exemple de code Java suivant convertit un document PDF nommé *Loan.pdf* en 
 
 ## Début rapide (mode SOAP) : Détermination de la conformité à la norme PDF/A à l’aide de l’API Java {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-L’exemple de code Java suivant détermine si le document PDF d’entrée est compatible PDF/A. Le document PDF d’entrée transmis au service DocConverter s’appelle *LoanArchive.pdf*. Les résultats de la validation sont écrits dans un fichier XML appelé *ValidationResults.xml*. (Voir Détermination [par programmation de la conformité](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)à la norme PDF/A.)
+L’exemple de code Java suivant détermine si le document PDF d’entrée est compatible PDF/A. Le document PDF d’entrée transmis au service DocConverter est nommé *LoanArchive.pdf*. Les résultats de la validation sont écrits dans un fichier XML nommé *ValidationResults.xml*. (Voir [Détermination par programmation de la conformité à la norme PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 ```java
  /*
