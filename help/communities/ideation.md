@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Idéal Essentials {#ideation-essentials}
+# Ideation Essentials {#ideation-essentials}
 
 Cette page fournit les informations essentielles pour travailler avec la fonction d&#39;idéation, qui est similaire à un forum, mais avec la possibilité d&#39;enregistrer en tant que brouillon et une atmosphère plus collaborative.
 
@@ -48,7 +48,7 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir Fonctionnalité <a href="ideation-feature.md">d’orientation.</a></td>
+   <td>Voir <a href="ideation-feature.md">Fonction d’idéation</a></td>
   </tr>
  </tbody>
 </table>
@@ -57,4 +57,4 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
 
 ### Fonction de conceptualisation {#ideation-function}
 
-Une structure de site communautaire qui comprend la fonction [](functions.md#ideation-function)Idéation, comprend un `ideation` composant configuré.
+Une structure de site communautaire qui comprend la fonction [Idéation](functions.md#ideation-function), comprend un composant `ideation` configuré.
