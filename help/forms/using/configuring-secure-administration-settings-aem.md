@@ -25,7 +25,7 @@ En règle générale, les développeurs n’utilisent pas l’environnement de p
 
 Cet article décrit les méthodes que vous pouvez appliquer pour réduire la surface d’attaque globale en utilisant des options d’administration qu’AEM Forms sur JEE fournit.
 
-## Désactivation des accès distants non indispensables à des services {#disabling-non-essential-remote-access-to-services}
+## Désactivation des accès distants non indispensables à des services  {#disabling-non-essential-remote-access-to-services}
 
 Une fois qu’AEM Forms sur JEE est installé et configuré, de nombreux services sont accessibles par appel distant sur SOAP et Enterprise JavaBeans™ (EJB). Le terme « distant » renvoie ici à tout appelant disposant d’un accès réseau aux ports SOAP, EJB ou Action Message Format (AMF) du serveur d’applications.
 
@@ -66,7 +66,7 @@ Suivez cette procédure en utilisant la page Web Applications et services d’Ad
 
 1. Cliquez sur **Suivant** et répétez les étapes précédentes pour chaque point de fin SOAP qui ne figure pas dans la liste ci-dessus. Assurez-vous que SOAP figure dans la colonne Fournisseur avant de supprimer les points de fin.
 
-## Désactivation des accès anonymes non indispensables à des services {#disabling-non-essential-anonymous-access-to-services}
+## Désactivation des accès anonymes non indispensables à des services  {#disabling-non-essential-anonymous-access-to-services}
 
 Certains services du serveur de formulaires permettent d’appeler sans authentification (de manière anonyme) certaines opérations. Ceci signifie qu’il est possible d’appeler une ou plusieurs opérations exposées par le service en tant qu’utilisateur authentifié ou non.
 
@@ -78,12 +78,12 @@ Certains services du serveur de formulaires permettent d’appeler sans authenti
 
 1. Cliquez sur **Services > Applications et services > Gestion des services**.
 1. Cliquez sur le nom du service à désactiver (par exemple, AuthenticationManagerService).
-1. Click the **Security tab**, deselect **Anonymous Access Allowed**, and click **Save**.
+1. Cliquez sur l&#39;onglet **Sécurité**, désélectionnez **Accès anonyme autorisé**, puis cliquez sur **Enregistrer**.
 1. Effectuez les étapes 3 et 4 pour les services suivants :
 
    * AuthenticationManagerService
    * EJB
-   * Email
+   * Courrier électronique
    * JobManager
    * WatchedFolder
    * UsermanagerUtilService
@@ -111,7 +111,7 @@ Certains services du serveur de formulaires permettent d’appeler sans authenti
 
 Les utilisateurs finaux peuvent s’authentifier auprès d’AEM Forms par le biais de Workbench, d’applications Web AEM Forms ou d’applications personnalisées appelant les services de serveur AEM Forms. Un paramètre de délai d’expiration permet de spécifier la durée pendant laquelle ces utilisateurs peuvent interagir avec AEM Forms (en utilisant une assertion SAML) avant d’être obligés de s’authentifier de nouveau. Par défaut, ce paramètre est défini sur deux heures. Dans un environnement de production, cette durée doit être réduite au nombre minimum de minutes acceptable.
 
-### Réduction au minimum de la durée limite avant réauthentification: {#minimize-reauthentication-time-limit}
+### Réduction au minimum de la durée limite avant réauthentification:  {#minimize-reauthentication-time-limit}
 
 1. Connectez-vous à la console d’administration en saisissant l’URL suivante dans un navigateur Web :
 
