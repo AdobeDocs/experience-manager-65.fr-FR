@@ -19,9 +19,9 @@ ht-degree: 0%
 ---
 
 
-# Incrustations de composants de communautés {#overlay-communities-components}
+# Composants de communautés d’incrustation {#overlay-communities-components}
 
-L’intention de [superposer](/help/communities/client-customize.md#overlays) un composant par défaut est de modifier globalement l’aspect ou le comportement d’un composant, pour toutes les références relatives au composant. Il dépend de la nature de sling à résoudre dans le dossier /apps avant de rechercher dans le dossier /libs. Par conséquent, le chemin d’accès au composant est identique à celui du composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs.
+L&#39;intention de [superposer](/help/communities/client-customize.md#overlays) un composant par défaut est de modifier globalement l&#39;apparence ou le comportement d&#39;un composant, pour toutes les références relatives au composant. Il dépend de la nature de sling à résoudre dans le dossier /apps avant de rechercher dans le dossier /libs. Par conséquent, le chemin d’accès au composant est identique à celui du composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs.
 
 ## Exemple {#example}
 
@@ -37,9 +37,9 @@ Pour superposer des commentaires, vous devez :
 
 **Courriers électroniques de notifications d’incrustation**
 
-Supposons que vous souhaitiez personnaliser le message des notifications par courrier électronique, vous pouvez le faire en [superposant](/help/communities/client-customize.md#overlays) les modèles dans **/libs/settings/community/templates/email/html**.
+Supposons que vous souhaitiez personnaliser le message des notifications par courrier électronique, vous pouvez le faire en [superposant](/help/communities/client-customize.md#overlays) les modèles à l’adresse **/libs/settings/community/templates/email/html**.
 
-Par exemple, pour modifier les notifications de mentions par courriel (pour un composant de communautés spécifique où ugc est créé), ajoutez une condition **if** pour la **mention** de verbe dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions** .
+Par exemple, pour modifier les notifications de mentions par courrier électronique (pour un composant de communautés spécifique où ugc est créé), ajoutez une condition **if** pour verbe **mentions** dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions**.
 
 ```java
 {{#equals this.verb "mention"}}\
