@@ -30,7 +30,7 @@ AEM envoie des notifications aux utilisateurs qui :
 Conditions préalables :
 
 * L’utilisateur doit disposer d’une adresse électronique valide définie dans son profil.
-* The **Day CQ Mail Service** needs to be properly configured.
+* Le **service de messagerie Day CQ** doit être correctement configuré.
 
 Lorsque l’utilisateur est averti, il reçoit un courrier électronique dans la langue définie dans son profil. Chaque langue possède son propre modèle, qui peut être personnalisé. De nouveaux modèles de courrier électronique peuvent être ajoutés pour de nouvelles langues.
 
@@ -38,7 +38,7 @@ Lorsque l’utilisateur est averti, il reçoit un courrier électronique dans la
 >
 >Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
-## Configuration du service de messagerie {#configuring-the-mail-service}
+## Configuration du service de messagerie  {#configuring-the-mail-service}
 
 Pour qu’AEM puisse envoyer des courriers électroniques, le **service de messagerie Day CQ** doit être correctement configuré. Vous pouvez afficher la configuration dans la console Web. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
@@ -46,7 +46,7 @@ Les contraintes suivantes s’appliquent :
 
 * Le **port de serveur SMTP** doit être le port 25 ou supérieur.
 
-* The **SMTP server host name** must not be blank.
+* Le **nom d&#39;hôte du serveur SMTP** ne doit pas être vide.
 * L’**adresse « De »** ne doit pas être vide.
 
 Pour résoudre plus facilement un problème avec le **service de messagerie Day CQ**, vous pouvez examiner les journaux du service :
@@ -66,15 +66,15 @@ Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig
 1. Dans CRXDE Lite, ajoutez un dossier nommé `config` sous votre dossier d’application.
 1. Dans le dossier de configuration, ajoutez un noeud nommé :
 
-   `com.day.cq.wcm.notification.email.impl.EmailChannel` de type `sling:OsgiConfig`
+   `com.day.cq.wcm.notification.email.impl.EmailChannel` de type  `sling:OsgiConfig`
 
-1. Add a `String` property to the node named `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
+1. Ajoutez une propriété `String` au noeud nommé `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
 
 1. Cliquez sur **Enregistrer tout**.
 
 Utilisez la procédure suivante pour définir le nœud dans vos dossiers sources de module de contenu :
 
-1. Dans votre `jcr_root/apps/*app_name*/config folder`application, créez un fichier nommé `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. Dans votre `jcr_root/apps/*app_name*/config folder`, créez un fichier nommé `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`.
 
 1. Ajoutez le fichier XML suivant pour représenter le nœud :
 
@@ -83,7 +83,7 @@ Utilisez la procédure suivante pour définir le nœud dans vos dossiers sources
 
 1. Enregistrez le fichier.
 
-## Configuration du service de notification électronique de workflow {#configuring-the-workflow-email-notification-service}
+## Configuration du service de notification électronique de workflow  {#configuring-the-workflow-email-notification-service}
 
 Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Dans ce cas, il est recommandé de conserver le changement dans le référentiel.
 
@@ -145,7 +145,7 @@ Le modèle doit avoir le format suivant :
 * `${userId}`, l’ID de l’utilisateur ayant déclenché l’événement.
 * `${modifications}`, décrit le type de événement de page et le chemin de page au format :
 
-   &lt;type d&#39;événement de page> => &lt;chemin de page>
+   &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
 
    Par exemple :
 
@@ -194,7 +194,7 @@ Le modèle doit avoir le format suivant :
  footer=<text_4>
 ```
 
-Where `<text_x>` can be a mix of static text and dynamic string variables.
+Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamique.
 
 Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique pour les notifications de forum :
 
@@ -229,7 +229,7 @@ View the overview in your ${host.prefix}/aem/inbox\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Personnalisation des modèles de courrier électronique pour la notification de workflow {#customizing-email-templates-for-workflow-notification}
+#### Personnalisation des modèles de courrier électronique pour la notification de workflow  {#customizing-email-templates-for-workflow-notification}
 
 Pour personnaliser le modèle de courrier électronique en anglais en vue de la notification d’événement de workflow :
 
@@ -251,11 +251,11 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Where `<text_x>` can be a mix of static text and dynamic string variables. Each line of an `<text_x>` item needs to be ended with a backslash ( `\`), except for the last instance, when the absence of the backslash indicates the end of the `<text_x>` string variable.
+>Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamique. Chaque ligne d&#39;un élément `<text_x>` doit se terminer par une barre oblique inverse ( `\`), sauf pour la dernière instance, lorsque l&#39;absence de la barre oblique inverse indique la fin de la variable de chaîne `<text_x>`.
 >
 >Vous trouverez plus d’informations sur le format des modèles dans la méthode [javadocs of the Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-The method `${payload.path.open}` reveals the path to the payload of the workitem. For example, for a page in Sites then then `payload.path.open` would be similar to `/bin/wcmcommand?cmd=open&path=…`.; this is without the server name, which is why the template prepends this with `${host.prefix}`.
+La méthode `${payload.path.open}` révèle le chemin d&#39;accès à la charge utile de l&#39;élément de travail. Par exemple, pour une page des sites, `payload.path.open` est alors similaire à `/bin/wcmcommand?cmd=open&path=…`.; sans le nom du serveur, c&#39;est pourquoi le modèle le préfixe avec `${host.prefix}`.
 
 Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique :
 
@@ -302,7 +302,7 @@ Pour ajouter un modèle pour une nouvelle langue :
 
 >[!NOTE]
 >
->The `<language-code>` used as the filename for the email template needs to be a two-letters lower-case language code that is recognized by AEM. Pour les codes de langue, AEM s’appuie sur la norme ISO-639-1.
+>`<language-code>` utilisé comme nom de fichier pour le modèle de courrier électronique doit être un code de langue en minuscules de deux lettres reconnu par AEM. Pour les codes de langue, AEM s’appuie sur la norme ISO-639-1.
 
 ## Configuration des notifications électroniques d’AEM Assets {#assetsconfig}
 
@@ -310,5 +310,5 @@ Quand les collections dans AEM Assets sont partagées ou non, les utilisateurs 
 
 1. Configurez le service de messagerie, comme décrit ci-dessus dans [Configuration du service de messagerie](/help/sites-administering/notification.md#configuring-the-mail-service).
 1. Connectez-vous à AEM en tant qu’administrateur. Cliquez sur **Outils** > **Opérations** > **Console web** pour ouvrir la configuration de la console web.
-1. Modifiez la **servlet de collection de ressources de la gestion des actifs numériques Day CQ**. Sélectionnez **Envoyer un courrier électronique**. Cliquez sur **Save**.
+1. Modifiez la **servlet de collection de ressources de la gestion des actifs numériques Day CQ**. Sélectionnez **Envoyer un courrier électronique**. Cliquez sur **Enregistrer**.
 
