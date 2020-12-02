@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## Présentation {#overview}
 
-Les fonctions d’activation permettent de créer des communautés [d’](overview.md#enablement-community)activation.
+Les fonctions d&#39;activation permettent de créer des [communautés d&#39;activation](overview.md#enablement-community).
 
 * Cette fonction nécessite une licence supplémentaire pour être utilisée dans un environnement de production.
 
@@ -40,13 +40,13 @@ Installation de :
 
 * **FFmpeg**
 
-   FFmpeg est une solution de conversion et de diffusion audio et vidéo en flux continu et, lorsqu’elle est installée, elle est utilisée pour le transcodage approprié des fichiers [](../../help/sites-authoring/default-components-foundation.md#video)vidéo. Pour les communautés d’activation, elle est utilisée dans l’environnement d’auteur pour obtenir des métadonnées pour les ressources téléchargées et pour générer une miniature à afficher lors de la mise en liste de la ressource.
+   FFmpeg est une solution de conversion et de diffusion audio et vidéo en flux continu et, lorsqu’elle est installée, elle est utilisée pour le transcodage approprié des [ressources vidéo](../../help/sites-authoring/default-components-foundation.md#video). Pour les communautés d’activation, elle est utilisée dans l’environnement d’auteur pour obtenir des métadonnées pour les ressources téléchargées et pour générer une miniature à afficher lors de la mise en liste de la ressource.
 
 Configuration de :
 
 * **Gestionnaires de la communauté**
 
-   Pour les communautés d’activation, seuls les membres du groupe d’ `Community Enablement Managers` utilisateurs peuvent se voir attribuer le rôle de `Community Site Enablement Manager`, dont les autorisations peuvent inclure la création de contenu, les affectations et la gestion des membres dans l’environnement de publication.
+   Pour les communautés d’activation, seuls les membres du groupe d’utilisateurs `Community Enablement Managers` peuvent se voir attribuer le rôle `Community Site Enablement Manager`, dont les autorisations peuvent inclure la création de contenu, les affectations et la gestion des membres dans l’environnement de publication.
 
 Configuration facultative de :
 
@@ -68,7 +68,7 @@ Chaque étape donne un lien vers la documentation qui fournit les détails néce
 
    Utiliser la console Web (lots) : *http://localhost:4502/system/console/bundles*
 
-   Installation *avant* l’installation du package SCORM
+   Installer *avant* l’installation du package SCORM
 
 1. **[Installation du package SCORM](deploy-communities.md#scorm-package)**
 
@@ -105,7 +105,7 @@ Chaque étape donne un lien vers la documentation qui fournit les détails néce
 
 **Sur l’instance d’auteur :**
 
-1. (*Facultatif*) **[Configuration du service Analytics](analytics.md)**
+1. (*Facultatif*) **[Configurer le service Analytics](analytics.md)**
 
    Utiliser Outils, Déploiement, console Cloud Services : *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
@@ -130,4 +130,4 @@ Chaque étape donne un lien vers la documentation qui fournit les détails néce
 
 ## Dispatcher {#dispatcher}
 
-Lorsque le déploiement inclut [AEM Répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), pour que les fonctions d&#39;activation fonctionnent correctement, les `clientheader` sections et `filter` les sections doivent être modifiées. Voir [Configuration du répartiteur pour les communautés](dispatcher.md#enablement).
+Lorsque le déploiement comprend [AEM Répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), pour que les fonctions d&#39;activation fonctionnent correctement, les sections `clientheader` et `filter` doivent être modifiées. Voir [Configuration du répartiteur pour les communautés](dispatcher.md#enablement).
