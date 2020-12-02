@@ -23,7 +23,7 @@ ht-degree: 79%
 
 Vous pouvez modifier la police affichée dans l’espace de travail AEM Forms. Les polices utilisées dans une section spécifique de l’interface utilisateur sont définies dans la section correspondante de la feuille de style. Vous pouvez modifier les polices sur l’interface utilisateur de manière sélective.
 
-Follow the [Generic steps for AEM Forms workspace customization](../../forms/using/generic-steps-html-workspace-customization.md) and depending on your requirements, follow the steps for customizing CSS, HTML, or both.
+Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) et, en fonction de vos besoins, suivez la procédure de personnalisation de CSS, HTML ou des deux.
 
 1. Modifiez ou ajoutez la famille de police dans un style existant.
 1. Modifiez ou ajoutez la famille de police en ligne pour l’élément HTML.
@@ -42,7 +42,7 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
       }
       ```
 
-   1. To add the font-family inline for the HTML element, copy the `/libs/ws/js/runtime/templates/appnavigation.html` file to `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Pour ajouter la famille de polices insérée pour l’élément HTML, copiez le fichier `/libs/ws/js/runtime/templates/appnavigation.html` dans `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Mettez à jour le fichier apps/ws/js/runtime/templates/appnavigation.html comme suit :
 
@@ -53,7 +53,7 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      Open the /apps/ws/js/registry.js file for editing and replace `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` with `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
+      Ouvrez le fichier /apps/ws/js/registry.js pour le modifier et remplacez `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` par `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
    1. Pour ajouter un style qui définit la famille de police, ajoutez la ligne suivante dans le fichier newStyle.css sous /apps/ws/css.
 
