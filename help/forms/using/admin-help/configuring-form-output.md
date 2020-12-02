@@ -27,11 +27,11 @@ ht-degree: 94%
 
    **HTML complet :** pour effectuer le rendu du formulaire avec des balises HTML complètes (page HTML complète). Il s’agit de la valeur par défaut.
 
-   **Corps du formulaire :** Pour effectuer le rendu du formulaire au sein de `<BODY>` balises (page HTML non complète).
+   **Corps du formulaire :** pour effectuer le rendu du formulaire sous  `<BODY>` des balises (page HTML non complète).
 
 1. Cliquez sur Enregistrer.
 
-## Définition de l’emplacement du rendu des contenus au format PDF {#specify-the-location-where-pdf-content-is-rendered}
+## Définition de l’emplacement du rendu des contenus au format PDF  {#specify-the-location-where-pdf-content-is-rendered}
 
 1. Sous Sortie de formulaire, dans la liste Rendu vers, sélectionnez l’une des options suivantes :
 
@@ -43,7 +43,7 @@ ht-degree: 94%
 
 1. Cliquez sur Enregistrer.
 
-## Configuration de l’appel de scripts personnalisés avant l’envoi de formulaire {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Configuration de l’appel de scripts personnalisés avant l’envoi de formulaire  {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Pour activer cette fonction, effectuez les étapes suivantes :
 
