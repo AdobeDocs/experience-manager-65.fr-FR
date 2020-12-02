@@ -40,7 +40,7 @@ Pour configurer ce type de zone dans votre site web :
 >
 >L’impact des groupes d’utilisateurs fermés doit toujours être pris en compte lorsque vous effectuez des tests de performances.
 
-## Création du groupe d’utilisateurs à utiliser {#creating-the-user-group-to-be-used}
+## Création du groupe d’utilisateurs à utiliser  {#creating-the-user-group-to-be-used}
 
 Pour créer un groupe d’utilisateurs fermé :
 
@@ -55,7 +55,7 @@ Pour créer un groupe d’utilisateurs fermé :
    ![capture d&#39;écran_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
 1. Appuyez sur le bouton **Créer** dans le coin supérieur droit pour créer un groupe.
-1. Name your new group; for example, `cug_access`.
+1. Nommez votre nouveau groupe ; par exemple, `cug_access`.
 
    ![capture d&#39;écran_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
@@ -91,7 +91,7 @@ Pour appliquer le groupe d’utilisateurs fermé à une page :
 
 1. Recherchez et ajoutez votre CUG dans la fenêtre suivante - dans ce cas, ajoutez le groupe nommé **cug_access**. Enfin, appuyez sur **Enregistrer**.
 1. Cliquez sur **Activé** pour définir que cette page et les pages enfants appartiennent à un groupe d’utilisateurs fermé.
-1. Spécifiez la page **de** connexionque les membres du groupe utiliseront ; par exemple :
+1. Spécifiez la **page de connexion** que les membres du groupe utiliseront ; par exemple :
 
    `/content/geometrixx/en/toolbar/login.html`
 
@@ -103,13 +103,13 @@ Pour appliquer le groupe d’utilisateurs fermé à une page :
 
 Pour plus d’informations sur les profils dans l’environnement de publication et pour proposer des formulaires de connexion et de déconnexion, voir [Gestion de l’identification](/help/sites-administering/identity-management.md).
 
-## Liaison au domaine {#linking-to-the-realm}
+## Liaison au domaine  {#linking-to-the-realm}
 
 Dans la mesure où la cible des liens vers le domaine Groupe d’utilisateur fermé est invisible pour l’utilisateur anonyme, le vérificateur de lien supprime ces liens.
 
 Pour éviter cette situation, il est recommandé de créer des pages de redirection non protégées, qui pointent vers des pages dans le domaine Groupe d’utilisateurs fermé. Les entrées de navigation sont alors rendues sans causer de problème au niveau du vérificateur de lien. L’utilisateur n’est redirigé à l’intérieur du domaine Groupe d’utilisateur fermé que lorsqu’il accède effectivement à la page de redirection, après avoir fourni des informations d’identification correctes.
 
-## Configuration de Dispatcher pour le groupe d’utilisateurs fermé {#configure-dispatcher-for-cugs}
+## Configuration de Dispatcher pour le groupe d’utilisateurs fermé  {#configure-dispatcher-for-cugs}
 
 Si vous utilisez Dispatcher, vous devez définir une ferme de serveurs Dispatcher avec les propriétés suivantes :
 
@@ -117,9 +117,9 @@ Si vous utilisez Dispatcher, vous devez définir une ferme de serveurs Dispatche
 * \sessionmanagement : voir ci-dessous.
 * [cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache) : répertoire de cache dédié aux fichiers concernés par le groupe d’utilisateurs fermé.
 
-### Configuration de la gestion des sessions Dispatcher pour les groupes d’utilisateurs fermés {#configuring-dispatcher-session-management-for-cugs}
+### Configuration de la gestion des sessions Dispatcher pour les groupes d’utilisateurs fermés  {#configuring-dispatcher-session-management-for-cugs}
 
-Configure [session management in the dispatcher.any file](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) for the CUG. Le gestionnaire d&#39;authentification utilisé lorsque l&#39;accès est demandé pour les pages CUG détermine comment configurer la gestion des sessions.
+Configurez la gestion de session [dans le fichier dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) pour le CUG. Le gestionnaire d&#39;authentification utilisé lorsque l&#39;accès est demandé pour les pages CUG détermine comment configurer la gestion des sessions.
 
 ```xml
 /sessionmanagement
@@ -133,7 +133,7 @@ Configure [session management in the dispatcher.any file](https://helpx.adobe.co
 >Lorsque la gestion des sessions est activée pour une ferme de serveurs de Dispatcher, toutes les pages gérées par la ferme de serveurs ne sont pas mises en cache. Pour mettre en cache les pages qui ne sont pas du CUG, créez une deuxième batterie dans dispatcher.any
 >qui gère les pages non CUG.
 
-1. Configure [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) by defining `/directory`; for example:
+1. Configurer [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) en définissant `/directory`; par exemple :
 
    ```xml
    /sessionmanagement
