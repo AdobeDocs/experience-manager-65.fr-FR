@@ -30,7 +30,7 @@ Le composant Link permet aux créateurs de portails de formulaires de créer un 
 
 Suivez les étapes ci-après pour ajouter un composant Link à la page :
 
-1. Faites glisser le composant **Link** sur la page. Select the component and tap ![cmppr](assets/cmppr.png). La boîte de dialogue Modifier le composant de lien s’ouvre.
+1. Faites glisser le composant **Link** sur la page. Sélectionnez le composant et appuyez sur ![cmppr](assets/cmppr.png). La boîte de dialogue Modifier le composant de lien s’ouvre.
 
    ![edit-link-component](assets/edit-link-component.png)
 
@@ -40,12 +40,12 @@ Suivez les étapes ci-après pour ajouter un composant Link à la page :
    * **Link Tooltip** : info-bulle du lien.
    * **Modèle de mise en page** : modèle pour la mise en page du composant Link.
 
-1. Ouvrez l’onglet **Informations d’actif** et spécifiez le type d’actif. An asset can be a **form**. Selon le type de fichier sélectionné, les options ci-dessous s’affichent : 
+1. Ouvrez l’onglet **Informations d’actif** et spécifiez le type d’actif. Un élément peut être un **formulaire**. Selon le type de fichier sélectionné, les options ci-dessous s’affichent : 
 
    * **Chemin d’accès à l’actif** : chemin d’accès au référentiel de stockage de l’actif.
 
    * **Type de rendu** : le format de rendu : PDF, HTML ou Auto. Le type de rendu Auto détecte l’environnement de l’utilisateur et effectue le rendu du formulaire en conséquence, au format HTML ou PDF. Par exemple, si le formulaire est utilisé sur un périphérique mobile, le type de rendu Auto est effectué au format HTML.
-   * **URL d’envoi :**  URL de la servlet sur laquelle les données du formulaire sont envoyées.
+   * **Envoyer URL:**  URL à la servlet où les données du formulaire sont envoyées.
    * **Profil HTML** : profil de rendu du formulaire au format HTML.
    * **Profil PDF** : profil de rendu du formulaire au format PDF.
 
