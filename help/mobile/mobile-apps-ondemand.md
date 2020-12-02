@@ -1,6 +1,6 @@
 ---
 title: Mobile On-Demand
-seo-title: Mobile On-Demand
+seo-title: Mobile à la demande
 description: Suivez cette page pour en savoir plus sur les rôles et les responsabilités de l'auteur AEM services à la demande pour mobiles.
 seo-description: Suivez cette page pour en savoir plus sur les rôles et les responsabilités de l'auteur AEM services à la demande pour mobiles.
 uuid: dd0184d8-1220-4f6a-96b2-acdb31caae17
@@ -26,28 +26,28 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Si vous n’utilisez pas Adobe Experience Manager (AEM) comme source de gestion de contenu, consultez l’aide [de](https://helpx.adobe.com/digital-publishing-solution/topics.html)AEM Mobile On-demand Services.
+>Si vous n’utilisez pas Adobe Experience Manager (AEM) comme source de gestion de contenu, voir [Aide de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
 >**Condition préalable requise :**
 >
->Avant de travailler avec AEM Mobile On-demand Services et de suivre les étapes de ce guide de prise en main, les utilisateurs doivent connaître l’ [AEM](/help/sites-deploying/deploy.md).
+>Avant de travailler avec AEM Mobile On-demand Services et de suivre les étapes de ce guide de prise en main, les utilisateurs doivent connaître [AEM](/help/sites-deploying/deploy.md).
 
 ## Auteur AEM Mobile {#aem-mobile-author}
 
-Un auteur **** AEM (ou *Marketer*)**utilise des modèles et composants personnalisés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser des composants et ajouter des supports de tous types à partir du module de gestion des actifs numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu). aem éditeur de contenu intégré est ensuite utilisé par les auteurs ** AEM pour créer des expériences riches et pertinentes au sein de l’application, y compris l’intégration au reste du Adobe Marketing Cloud.
+Un ***auteur AEM* (ou *Marketer*)**utilise des modèles et des composants personnalisés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser des composants et ajouter des supports de tous types à partir du module DAM, y compris des images, des vidéos et des fragments de texte (fragments de contenu). aem éditeur de contenu intégré est ensuite utilisé par *les auteurs AEM* pour créer des expériences riches et pertinentes au sein de l’application, y compris l’intégration au reste du Adobe Marketing Cloud.
 
 Un auteur AEM est responsable des tâches suivantes lors de la création d&#39;une application à l&#39;aide de AEM Mobile On Demand Services.
 
-**La création de contenu AEM pour l’application** AEM Mobile On-demand Services implique les actions suivantes :
+**La création de contenu AEM pour les** applications AEM Mobile On-demand Services implique les actions suivantes :
 
 * [tableau de bord d’application AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Actions de création et de configuration d’application](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Configuration du cloud](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Gestion du contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-Pour en savoir plus sur **Content Services**, voir Présentation [de](/help/mobile/develop-content-as-a-service.md) Content Services pour commencer.
+Pour en savoir plus sur **Content Services**, voir [Présentation de Content Services](/help/mobile/develop-content-as-a-service.md) pour commencer.
 
 >[!NOTE]
 >
