@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Cette rubrique décrit comment vous pouvez utiliser l’API de service Preferences Manager (Java) pour gérer par programmation les noeuds Preferences.
 
-Vous pouvez modifier manuellement les paramètres de configuration à partir de l’interface utilisateur de l’administrateur. Pour modifier les options, accédez à `Home>Settings>User Management> Configuration>Manual Configuration`. Importez `config.xml` après avoir apporté les modifications, vous remarquerez que toutes les modifications, à l’exception des modifications apportées au noeud `/Adobe/Adobe Experience Manager Forms/Config/UM persist` sont perdues. La prévisualisation de l’importation et de l’exportation User Management ne prend pas en charge la modification des paramètres de configuration pour les autres composants. Désormais, ces modifications peuvent être effectuées à l’aide `PreferencesManagerServiceClient` d’API.
+Vous pouvez modifier manuellement les paramètres de configuration à partir de l’interface utilisateur de l’administrateur. Pour modifier les options, accédez à `Home>Settings>User Management> Configuration>Manual Configuration`. Importez `config.xml` après avoir apporté les modifications, vous remarquerez que toutes les modifications, à l&#39;exception des modifications apportées au noeud `/Adobe/Adobe Experience Manager Forms/Config/UM persist`, sont perdues. La prévisualisation de l’importation et de l’exportation User Management ne prend pas en charge la modification des paramètres de configuration pour les autres composants. Désormais, ces modifications peuvent être effectuées à l’aide des API `PreferencesManagerServiceClient`.
 
 **Résumé des**&#x200B;étapes Pour gérer par programmation les noeuds de préférences, effectuez les étapes suivantes :
 
