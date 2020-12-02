@@ -37,7 +37,7 @@ Importez et gérez les applications créées avec Workbench dans l’onglet Appl
 * les paramètres de configuration du point de fin ;
 * les paramètres de sécurité.
 
-## Importation d’une application ou d’une archive {#import-an-application-or-archive}
+## Importation d’une application ou d’une archive  {#import-an-application-or-archive}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
 1. Cliquez sur Importer.
@@ -58,7 +58,7 @@ Importez et gérez les applications créées avec Workbench dans l’onglet Appl
 
    La propriété **syncState** indique l’état de synchronisation des données entre le serveur AEM forms et le référentiel CRX. Dès que le processus d’importation commence, cet état est défini sur 0 (zéro). Cet état indique que les données ne sont pas synchronisées actuellement. Lorsque les données sont synchronisées, l’état est défini sur 1.
 
-## Déploiement d’une application {#deploy-an-application}
+## Déploiement d’une application  {#deploy-an-application}
 
 Vous pouvez déployer des applications importées par vous-même, ou des applications que des utilisateurs de Workbench ont importées à partir de Workbench.
 
@@ -66,7 +66,7 @@ Vous pouvez déployer des applications importées par vous-même, ou des applica
 1. Cochez la case correspondant à l’application à déployer puis cliquez sur Déployer.
 1. Cliquez sur OK dans la boîte de dialogue de confirmation.
 
-## Annulation du déploiement d’une application {#undeploy-an-application}
+## Annulation du déploiement d’une application  {#undeploy-an-application}
 
 Vous pouvez annuler le déploiement des applications au moment de l’exécution.
 
@@ -74,7 +74,7 @@ Vous pouvez annuler le déploiement des applications au moment de l’exécution
 1. Cochez la case correspondant à l’application dont vous souhaitez annuler le déploiement puis cliquez sur Annuler le déploiement.
 1. Cliquez sur OK dans la boîte de dialogue de confirmation.
 
-## Suppression d’une application du serveur {#remove-an-application-from-the-server}
+## Suppression d’une application du serveur  {#remove-an-application-from-the-server}
 
 Annulez le déploiement de l’application avant de la supprimer du serveur.
 
@@ -82,7 +82,7 @@ Annulez le déploiement de l’application avant de la supprimer du serveur.
 1. Cochez la case correspondant à l’application à supprimer puis cliquez sur Supprimer.
 1. Cliquez sur OK dans la boîte de dialogue de confirmation.
 
-## Importation de la configuration d’exécution d’une application {#import-an-application-s-runtime-configuration}
+## Importation de la configuration d’exécution d’une application  {#import-an-application-s-runtime-configuration}
 
 Si un administrateur d’applications a exporté la configuration d’exécution pour une application, vous pouvez l’importer dans l’application déployée. Vous pouvez l’importer à l’aide d’Administration Console ou via le déploiement LCA par scripts.
 
@@ -92,7 +92,7 @@ Si un administrateur d’applications a exporté la configuration d’exécution
 1. Cliquez sur Parcourir et sélectionnez le fichier XML qui contient la configuration d’exécution.
 1. Cliquez sur Importer.
 
-## Exportation de la configuration d’exécution d’une application {#export-an-application-s-runtime-configuration}
+## Exportation de la configuration d’exécution d’une application  {#export-an-application-s-runtime-configuration}
 
 Vous pouvez exporter les informations de configuration d’exécution des applications déployées.
 
@@ -100,7 +100,7 @@ Vous pouvez exporter les informations de configuration d’exécution des applic
 1. Cliquez sur le nom de l’application.
 1. Cliquez sur Exporter configuration d’exécution et enregistrez le fichier de configuration (XML) généré.
 
-## Déploiement par scripts d’applications AEM forms {#scripted-deployment-of-aem-forms-applications}
+## Déploiement par scripts d’applications AEM forms  {#scripted-deployment-of-aem-forms-applications}
 
 Vous pouvez également utiliser un outil de déploiement par scripts pour déployer des fichiers d’application, y compris un fichier settings.xml qui spécifie les paramètres suivants :
 
@@ -111,7 +111,7 @@ Vous pouvez également utiliser un outil de déploiement par scripts pour déplo
 
 Le déploiement par script vous évite d’avoir à reconfigurer manuellement les paramètres dans l’environnement de production avant d’exécuter les applications déployées.
 
-1. From a command prompt, navigate to *[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement.
+1. Ouvrez une invite de commande et accédez à *[la racine aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
 1. Pour des instructions plus détaillées, lisez le fichier ReadMe.txt.
 1. Modifiez manuellement les fichiers scriptedDeploy.bat et sample-files/settings.xml, tel qu’indiqué dans le fichier ReadMe.txt.
 1. Exécutez le fichier scriptedDeploy.bat. Cette action déploie le fichier d’archives AEM forms avec les paramètres de remplacement.
