@@ -24,7 +24,7 @@ Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration.
 1. Pour exporter la configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration à un autre emplacement.
-1. In the file, locate the `Domains` > *[Your domain name]* > `DirectoryConfigs` > `LDAPGroupConfig` node. Par exemple :
+1. Dans le fichier, recherchez le noeud `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig`. Par exemple :
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -39,7 +39,7 @@ Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’
 
    Saisissez une valeur pour `bindpassword` et enregistrez vos modifications.
 
-1. In the file, locate the `Domains` > *[Your domain name]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` node. Par exemple :
+1. Dans le fichier, recherchez le noeud `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Par exemple :
 
    ```xml
     <node name="LDAPUserConfig">
