@@ -11,15 +11,15 @@ ht-degree: 87%
 ---
 
 
-# Extend Asset Editor {#extending-asset-editor}
+# Étendre l’éditeur de ressources {#extending-asset-editor}
 
 L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur clique sur une ressource trouvée par le biais du partage de ressources, ce qui lui permet de modifier certains aspects de la ressource, tels que les métadonnées, la miniature, le titre et les balises.
 
 La configuration de l’éditeur à l’aide des composants de modification prédéfinis est traitée dans [Création et configuration d’une page Éditeur de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-In addition to using pre-existing editor components, [!DNL Adobe Experience Manager] developers can also create their own components.
+Outre l&#39;utilisation de composants d&#39;éditeur préexistants, les développeurs [!DNL Adobe Experience Manager] peuvent également créer leurs propres composants.
 
-## Create an Asset Editor template {#creating-an-asset-editor-template}
+## Créer un modèle d’éditeur de ressources {#creating-an-asset-editor-template}
 
 Les exemples de pages suivants sont inclus dans le Geometrixx :
 
@@ -39,25 +39,25 @@ Par rapport au chargement du clientlib par défaut (au cœur d’`init.jsp`), un
 
 Dans la plupart des cas, la copie de l’exemple existant de `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) doit répondre à ces besoins.
 
-### Configuration des actions JS {#configuring-js-actions}
+### Configurer les actions JS {#configuring-js-actions}
 
-Some of the [!DNL Assets] components require JS functions defined in `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
+Certains composants [!DNL Assets] nécessitent des fonctions JS définies dans `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-The sample loads this JavaScript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+L’exemple charge cette source JavaScript dans `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
-### Additional style sheets {#additional-style-sheets}
+### Feuilles de style supplémentaires {#additional-style-sheets}
 
-Certains des [!DNL Assets] composants utilisent la bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
+Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Feuille de style Geometrixx  {#geometrixx-style-sheet}
+### Feuille de style Geometrixx   {#geometrixx-style-sheet}
 
 Les exemples de composants de page nécessitent que tous les sélecteurs commencent par `.asseteditor` dans `static.css` (`/etc/designs/geometrixx/static.css`). Bonne pratique : copiez tous les sélecteurs `.asseteditor` dans votre feuille de style et ajustez les règles en fonction de vos besoins.
 
@@ -120,7 +120,7 @@ Dans la partie HTML, utilisez l’ensemble de titre précédent (titre de la res
 <title><%= title %></title>
 ```
 
-## Create a simple form field component {#creating-a-simple-form-field-component}
+## Créer un composant de champ de formulaire simple {#creating-a-simple-form-field-component}
 
 Cet exemple illustre comment créer un composant qui affiche les métadonnées d’une ressource chargée.
 
@@ -201,7 +201,7 @@ Cet exemple illustre comment créer un composant qui affiche les métadonnées d
 
 1. En mode d’**édition**, le nouveau composant (par exemple, **Exemple de métadonnées**) est désormais disponible dans le sidekick (qui se trouve dans le groupe **Éditeur de ressources**). Insérez le composant. Pour pouvoir stocker les métadonnées, celles-ci doivent être ajoutées au formulaire de métadonnées.
 
-## Modification des options de métadonnées {#modifying-metadata-options}
+## Modifier les options de métadonnées {#modifying-metadata-options}
 
 Vous pouvez modifier les espaces de noms disponibles [sous forme de métadonnées](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
