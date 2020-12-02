@@ -20,9 +20,9 @@ ht-degree: 72%
 
 # Exemples de code{#code-samples}
 
-L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM. Ces exemples sont des fragments de code bien commentés destinés à aider les développeurs AEM à comprendre les principaux éléments constitutifs d’AEM. The samples are available here: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
+L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM. Ces exemples sont des fragments de code bien commentés destinés à aider les développeurs AEM à comprendre les principaux éléments constitutifs d’AEM. Les échantillons sont disponibles ici : [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-A multi-part tutorial designed for developers new to AEM covering fundamental topics like project setup, Core Components, Editable Templates, Client Libraries and component development: [Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+Un didacticiel en plusieurs parties conçu pour les développeurs novices en AEM et qui couvre des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques client et le développement de composants : [Prise en main de l’AEM Sites - Didacticiel WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
 L’équipe Adobe AEM Community crée des articles de procédure à l’intention des développeurs. Ces articles peuvent être consultés [ici](https://helpx.adobe.com/fr/experience-manager/topics/how-to.html).
 
