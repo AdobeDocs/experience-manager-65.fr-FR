@@ -20,7 +20,7 @@ ht-degree: 80%
 
 # Exécution d’AEM en mode Prêt pour la production{#running-aem-in-production-ready-mode}
 
-With AEM 6.1, Adobe introduces the new `"nosamplecontent"` runmode aimed at automating the steps required to prepare an AEM instance for deployment in a production environment.
+Avec AEM 6.1, Adobe introduit le nouveau mode d&#39;exécution `"nosamplecontent"` destiné à automatiser les étapes requises pour préparer une instance AEM pour le déploiement dans un environnement de production.
 
 Le nouveau mode d’exécution configure non seulement automatiquement l’instance pour qu’elle soit conforme aux meilleures pratiques de sécurité décrites dans la liste de contrôle de sécurité, mais en plus supprime tous les exemples d’applications et de configurations geometrixx dans le processus.
 
@@ -32,7 +32,7 @@ Le nouveau mode d’exécution configure non seulement automatiquement l’insta
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-In order to run AEM in production ready mode all you need to do is add the `nosamplecontent` via the `-r` runmode switch to your existing startup arguments:
+Pour exécuter l&#39;AEM en mode prêt à la production, il vous suffit d&#39;ajouter le `nosamplecontent` via le commutateur `-r` runmode à vos arguments de démarrage existants :
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -57,7 +57,7 @@ Plus spécifiquement, les modifications de configuration suivantes seront effect
 
 1. Les options **Contenu mappé** et **Générer les informations de débogage** sont désactivées pour le **gestionnaire de script JSP Apache Sling**.
 
-1. The **Day CQ WCM Filter** is set to `edit` on **author** and `disabled` on **publish** instances.
+1. Le filtre WCM **Day CQ** est défini sur `edit` sur **author** et `disabled` sur les instances **publish**.
 
 1. **Le gestionnaire de bibliothèque Adobe Granite HTML** est configuré avec les paramètres suivants :
 
@@ -68,12 +68,12 @@ Plus spécifiquement, les modifications de configuration suivantes seront effect
 
 1. Le servlet **Apache Sling GET** est configuré pour prendre en charge les configurations sécurisées par défaut, comme suit :
 
-| **Configuration** | **Auteur** | **Publication** |
+| **Configuration** | **Auteur** | **Publier** |
 |---|---|---|
-| Rendu TXT | disabled | disabled |
-| Rendu HTML | disabled | disabled |
+| Rendu TXT | disabled | désactivé |
+| Rendu HTML | désactivé | désactivé |
 | Rendu JSON | enabled | enabled |
-| Rendu XML | disabled | disabled |
+| Rendu XML | désactivé | désactivé |
 | json.maximumresults | 1000 | 100 |
-| Index automatique | disabled | disabled |
+| Index automatique | désactivé | désactivé |
 
