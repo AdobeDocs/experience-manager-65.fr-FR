@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '1194'
-ht-degree: 78%
+ht-degree: 91%
 
 ---
 
 
-# Exemples de types de module d’IU ContextHub {#sample-contexthub-ui-module-types}
+# Exemples de types de module d’IU ContextHub  {#sample-contexthub-ui-module-types}
 
 ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions. Les informations suivantes sont disponibles :
 
@@ -26,47 +26,47 @@ ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser 
 
 Pour plus d’informations sur l’ajout de modules d’IU à ContextHub, voir [Ajout d’un module d’IU](ch-configuring.md#adding-a-ui-module). Pour plus d’informations sur le développement de modules d’IU, voir [Création de types de module d’IU ContextHub](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
-## Type de module d’IU contexthub.base {#contexthub-base-ui-module-type}
+## Type de module d’IU contexthub.base  {#contexthub-base-ui-module-type}
 
-Le type de module d’IU contextthub.base est le type de base pour tous les autres types de module d’IU. En tant que tel, il fournit des fonctionnalités génériques pour le rendu des données de magasin.
+Le type de module d’IU contexthub.base est le type de base pour tous les autres types de module d’IU. En tant que tel, il fournit des fonctionnalités génériques pour le rendu des données de magasin.
 
 Les fonctionnalités suivantes sont disponibles :
 
 * **Titre et icône :** spécifiez un titre pour le module d’IU et une icône. L’icône peut être référencée à l’aide d’une URL ou de la bibliothèque d’icônes de l’IU Coral.
 * **Données de magasin :** identifiez un ou plusieurs magasins à partir desquels récupérer les données.
 * **Contenu :** spécifiez le contenu visible dans le module d’IU tel qu’il apparaît dans la barre d’outils ContextHub.
-* **Contenu de fenêtre contextuelle : ** spécifiez le contenu visible dans la fenêtre contextuelle lorsque vous cliquez ou appuyez sur le module d’IU.
+* **Contenu de fenêtre contextuelle :** spécifiez le contenu visible dans la fenêtre contextuelle lorsque vous cliquez ou appuyez sur le module d’IU.
 * **Mode plein écran :** contrôle si le mode plein écran est autorisé.
 
 Le code source se trouve à l’adresse /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
 
 ### Configuration {#configuration}
 
-Configurez le module d’IU contexthub.base à l’aide d’un objet Javascript au format JSON. Ajoutez l’une des propriétés suivantes pour configurer les fonctionnalités du module d’IU :
+Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript au format JSON. Ajoutez l’une des propriétés suivantes pour configurer les fonctionnalités du module d’IU :
 
-* **image :** URL d’une image à afficher en tant qu’icône.
-* **icône :** Nom d&#39;une classe d&#39;icône [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral UI. Si vous spécifiez une valeur pour les propriétés de l’icône et de l’image, l’image est utilisée.
+* **image :** URL d’une image à afficher en tant qu’icône.
+* **icon :** nom d’une classe d’icône [IU Coral](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Si vous spécifiez une valeur pour les propriétés de l’icône et de l’image, l’image est utilisée.
 
-* **titre :** Titre du module d’interface utilisateur. Le titre apparaît lorsque le pointeur s’arrête sur l’icône du module d’IU.
-* **plein écran :** Valeur booléenne indiquant si le module d’interface utilisateur prend en charge le mode plein écran. Use `true` to support fullscreen and `false` to prevent fullscreen mode.
+* **title :** nom du module d’IU. Le titre apparaît lorsque le pointeur s’arrête sur l’icône du module d’IU.
+* **fullscreen :** valeur booléenne qui indique si le module d’IU prend en charge le mode plein écran. Utilisez `true` pour prendre en charge le mode plein écran et `false` pour ne pas accepter le mode plein écran.
 
-* **template :** modèle [Handlebars](https://handlebarsjs.com/) qui spécifie le contenu à afficher dans la barre d’outils ContextHub. Use at most two `<p>` tags.
+* **template :** modèle [Handlebars](https://handlebarsjs.com/) qui spécifie le contenu à afficher dans la barre d’outils ContextHub. Utilisez au maximum deux balises `<p>`.
 
-* **storeMapping :** mappage de clé/magasin. Utilisez la clé des modèles de barre de main pour accéder aux données de stockage ContextHub associées.
-* **liste :** Tableau d’éléments à afficher en tant que liste dans une fenêtre contextuelle lorsque l’utilisateur clique sur le module IU. Si vous ajoutez cet élément, n’incluez pas popoverTemplate. La valeur est une table d’objets avec les clés suivantes :
+* **storeMapping :** mappage de clé/magasin. Utilisez la clé dans les modèles Handlebar pour accéder aux données de magasin ContextHub associées.
+* **list :** tableau d’éléments à afficher en tant que liste dans une fenêtre contextuelle lorsque l’on clique sur le module d’IU. Si vous ajoutez cet élément, n’incluez pas popoverTemplate. La valeur est une table d’objets avec les clés suivantes :
 
    * title : texte à afficher pour cet élément
    * image : (facultatif) URL d’une image à afficher sur la gauche
    * icon : (facultatif) classe d’icônes CIU à afficher sur la gauche et ignorée si une image est spécifiée
    * selected : (facultatif) valeur booléenne qui spécifie si cet élément doit être affiché comme sélectionné (true=selected). Par défaut, les éléments sélectionnés sont visibles en gras. Utilisez une propriété `listType` pour configurer d’autres aspects (voir ci-dessous).
 
-* **listType :** style à utiliser pour les éléments de la liste déroulante. Utilisez l’une des valeurs suivantes :
+* **listType :** style à utiliser pour les éléments de liste déroulante. Utilisez l’une des valeurs suivantes :
 
    * checkmark
-   * la case 
+   * checkbox
    * radio
 
-* **popoverTemplate:** Modèle Handlebars qui spécifie le contenu à rendre dans la fenêtre contextuelle lorsque l’utilisateur clique sur le module d’interface. Si vous ajoutez cet élément, n’incluez pas l’élément `list`.
+* **popoverTemplate :** modèle Handlebars qui spécifie le contenu à afficher dans une fenêtre contextuelle lorsque l’on clique sur le module d’IU. Si vous ajoutez cet élément, n’incluez pas l’élément `list`.
 
 ### Exemple {#example}
 
@@ -87,7 +87,7 @@ L’exemple suivant configure un module d’IU contextthub.base pour afficher de
 
 ## Type de module d’IU contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
-Le module d’IU contextthub.browserinfo affiche des informations sur le navigateur web du client et son système d’exploitation. Les informations sont obtenues à partir du magasin surferinfo, basé sur le magasin candidat [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate).
+Le module d’IU contextthub.browserinfo affiche des informations sur le navigateur web du client et son système d’exploitation. Les informations sont obtenues à partir du magasin surferinfo, en fonction du magasin candidat [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate).
 
 ![chlimage_1-77](assets/chlimage_1-77a.png)
 
@@ -95,7 +95,7 @@ Le code source du module d’interface utilisateur se trouve dans /libs/granite/
 
 ### Configuration {#configuration-1}
 
-Les instances du module d’IU contextthub.browserinfo ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
+Les instances du module d’IU contexthub.browserinfo ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
 
 ```xml
 {
@@ -106,7 +106,7 @@ Les instances du module d’IU contextthub.browserinfo ne requièrent pas de val
 }
 ```
 
-## Type de module d’IU contexthub.datetime {#contexthub-datetime-ui-module-type}
+## Type de module d’IU contexthub.datetime   {#contexthub-datetime-ui-module-type}
 
 Le module d’IU contextthub.datetime affiche la date et l’heure stockées dans un magasin nommé datetime basé sur le magasin candidat [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate).
 
@@ -118,7 +118,7 @@ La source du module d’interface contexthub.datetime se trouve dans /libs/grani
 
 ### Configuration {#configuration-2}
 
-Les instances du module d’IU contextthub.datetime ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
+Les instances du module d’IU contexthub.datetime ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
 
 ```xml
 {
@@ -141,7 +141,7 @@ La source du module IU se trouve dans /etc/cloudsettings/default/contexthub/geol
 
 ### Configuration {#configuration-4}
 
-Les instances du module d’IU contextthub.geolocation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
+Les instances du module d’IU contexthub.geolocation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module.
 
 ```xml
 {
@@ -174,7 +174,7 @@ Les instances du module d’IU contextthub.geolocation ne requièrent pas de val
 }
 ```
 
-## Type de module d’IU contextthub.screen-orientation {#contexthub-screen-orientation-ui-module-type}
+## Type de module d’IU contexthub.screen-orientation   {#contexthub-screen-orientation-ui-module-type}
 
 Le module d’IU contextthub.screen-orientation affiche l’orientation actuelle de l’écran du client. Bien que désactivé par défaut, le module présente une fenêtre contextuelle qui permet de sélectionner une orientation. Le module obtient des informations à partir d’un magasin ContextHub nommé emulators et basé sur le magasin candidat [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate).
 
@@ -184,7 +184,7 @@ La source du module d&#39;interface se trouve à l&#39;emplacement /libs/granite
 
 ### Configuration {#configuration-5}
 
-Les instances du module d’IU contextthub.screen-orientation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. Note that the `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a popup where you can select the orientation.
+Les instances du module d’IU contextthub.screen-orientation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. Notez que la propriété `clickable` est définie sur `false` par défaut. Si vous remplacez la configuration par défaut pour définir `clickable` sur `true`, un clic sur le module fait apparaître une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
 
 ```xml
 {
@@ -198,7 +198,7 @@ Les instances du module d’IU contextthub.screen-orientation ne requièrent pas
 }
 ```
 
-## Type de module d’IU contexttub.tagcloud {#contexthub-tagcloud-ui-module-type}
+## Type de module d’IU contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
 Le module d’IU contexthub.tagcloud affiche des informations sur les balises. Dans la barre d’outils, le module d’IU affiche le nombre de balises. La fenêtre contextuelle révèle un nuage de balises et une zone de texte pour l’ajout de nouvelles balises. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur le magasin candidat [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store).
 
@@ -222,7 +222,7 @@ Les instances du module d’IU contexthub.tagcloud ne requièrent pas de valeur 
 }
 ```
 
-## Type de module d’IU granite.profile {#granite-profile-ui-module-type}
+## Type de module d’IU granite.profile   {#granite-profile-ui-module-type}
 
 Le module d’IU ContextHub granite.profile affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle révèle l’identifiant de connexion de l’utilisateur et permet de modifier la valeur du nom affiché. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur le magasin candidat [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate).
 
