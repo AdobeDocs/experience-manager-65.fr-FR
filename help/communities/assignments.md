@@ -23,12 +23,12 @@ ht-degree: 27%
 
 Les composants Affectations d’activation et [Catalogue d’activation](/help/communities/catalog.md) figurant dans le groupe Communautés du navigateur de composants sont des composants d’une [communauté d’activation](/help/communities/overview.md#enablement-community).
 
-The Enablement Assignments component allows the currently signed-in community member (learner) to access their assigned [enablement resources](/help/communities/resources.md).
+Le composant Affectations d&#39;activation permet au membre de la communauté actuellement connecté (stagiaire) d&#39;accéder aux [ressources d&#39;activation](/help/communities/resources.md) qui lui sont assignées.
 
-From the [Getting Started with AEM Communities for Enablement](/help/communities/getting-started-enablement.md) tutorial, see a member&#39;s view of assignments and catalogs in the [Experience the Published Site](/help/communities/enablement-published-site.md) section.
+Dans le didacticiel [Prise en main d’AEM Communities pour l’activation](/help/communities/getting-started-enablement.md), consultez la vue des affectations et des catalogues d’un membre dans la section [Expérience du site publié](/help/communities/enablement-published-site.md).
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, voir la page [Assignments Essentials](/help/communities/essentials-assignments.md) pour les développeurs.
+Pour plus d&#39;informations, consultez la page [Assignments Essentials](/help/communities/essentials-assignments.md) destinée aux développeurs.
 
-The [assignments function](/help/communities/functions.md#assignments-function) is available while creating a [community site](/help/communities/sites-console.md).
+La fonction [assignations](/help/communities/functions.md#assignments-function) est disponible lors de la création d&#39;un [site communautaire](/help/communities/sites-console.md).
