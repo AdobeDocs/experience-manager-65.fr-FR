@@ -20,7 +20,7 @@ ht-degree: 6%
 
 # Contenu initial du sandbox {#initial-sandbox-content}
 
-Dans cette section, vous créez les pages suivantes qui utilisent toutes le modèle [de](initial-app.md#createthepagetemplate)page :
+Dans cette section, vous créez les pages suivantes qui utilisent toutes le [modèle de page](initial-app.md#createthepagetemplate) :
 
 * Site SCF Sandbox, qui redirige vers la version anglaise de la page principale.
 
@@ -28,49 +28,49 @@ Dans cette section, vous créez les pages suivantes qui utilisent toutes le mod�
 
    * SCF Play - Enfant de la page principale sur laquelle jouer.
 
-Bien que ce didacticiel ne s&#39;intéresse pas aux copies [de](../../help/sites-administering/tc-prep.md)langue, il est conçu de sorte que la page racine puisse mettre en oeuvre la détection de la langue préférée par l&#39;utilisateur via l&#39;en-tête HTML et rediriger vers la page principale appropriée pour la langue. La convention consiste à utiliser le code de pays à deux lettres pour le nom de noeud de la page, par exemple &quot;en&quot; pour l’anglais, &quot;fr&quot; pour le français, etc.
+Bien que ce didacticiel ne traite pas des [copies de langue](../../help/sites-administering/tc-prep.md), il est conçu de sorte que la page racine puisse implémenter la détection de la langue préférée pour l&#39;utilisateur via l&#39;en-tête HTML et la redirection vers la page principale appropriée pour la langue. La convention consiste à utiliser le code de pays à deux lettres pour le nom de noeud de la page, par exemple &quot;en&quot; pour l’anglais, &quot;fr&quot; pour le français, etc.
 
 ## Créer des premières pages {#create-first-pages}
 
-Maintenant qu&#39;il existe un modèle [de](initial-app.md#createthepagetemplate)page, nous pouvons établir la page racine du site Web dans le répertoire /content.
+Maintenant qu&#39;il existe un [modèle de page](initial-app.md#createthepagetemplate), nous pouvons établir la page racine du site Web dans le répertoire /content.
 
 1. L’interface utilisateur standard fournit actuellement des plans pour la création de sites. Comme ce tutoriel crée un site simple, l&#39;interface utilisateur classique est utile.
 
-   Pour passer à l’interface utilisateur classique, sélectionnez une navigation globale et passez la souris sur le côté droit de l’icône Projets. Sélectionnez l’icône *Basculer vers l’interface utilisateur* classique qui s’affiche :
+   Pour passer à l’interface utilisateur classique, sélectionnez une navigation globale et passez la souris sur le côté droit de l’icône Projets. Sélectionnez l&#39;icône *Passer à l&#39;interface utilisateur classique* qui s&#39;affiche :
 
    ![classic-ui](assets/classic-ui.png)
 
    La possibilité de passer à l’interface utilisateur classique doit être [activée par un administrateur](../../help/sites-administering/enable-classic-ui.md).
 
-1. Dans la page [d’accueil](http://localhost:4502/welcome.html)de l’IU **[!UICONTROL classique, sélectionnez]** Sites Web.
+1. Dans la [page d&#39;accueil classique de l&#39;interface utilisateur](http://localhost:4502/welcome.html), sélectionnez **[!UICONTROL Sites Web]**.
 
    ![site Web classique-ui](assets/classic-ui-website.png)
 
-   Vous pouvez également accéder directement à l’interface utilisateur classique des sites Web en accédant à [/siteadmin.](http://localhost:4502/siteadmin)
+   Vous pouvez également accéder directement à l&#39;interface utilisateur classique des sites Web en accédant à [/siteadmin.](http://localhost:4502/siteadmin)
 
-1. Dans le volet explorateur, sélectionnez **[!UICONTROL Sites Web]** , puis dans la barre d’outils, sélectionnez **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**.
+1. Dans le volet explorateur, sélectionnez **[!UICONTROL Sites Web]**, puis, dans la barre d&#39;outils, sélectionnez **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**.
 
-   In the **[!UICONTROL Create Page]** dialog, enter the following:
+   Dans la boîte de dialogue **[!UICONTROL Créer une page]**, saisissez ce qui suit :
 
    * Titre: `SCF Sandbox Site`
-   * Nom (name) : `an-scf-sandbox`
-   * Sélectionner **[!UICONTROL Un Modèle SCF Sandbox Play]**
+   * Nom : `an-scf-sandbox`
+   * Sélectionner **[!UICONTROL Un modèle de lecture de sandbox SCF]**
    * Cliquez sur **[!UICONTROL Créer]**
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
-1. Dans le volet explorateur, sélectionnez la page que vous venez de créer `/Websites/SCF Sandbox Site`, puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**:
+1. Dans le volet explorateur, sélectionnez la page que vous venez de créer, `/Websites/SCF Sandbox Site`, puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]** :
 
    * Titre: `SCF Sandbox`
-   * Nom (name) : `en`
-   * Sélectionner **[!UICONTROL Un Modèle SCF Sandbox Play]**
+   * Nom : `en`
+   * Sélectionner **[!UICONTROL Un modèle de lecture de sandbox SCF]**
    * Cliquez sur **[!UICONTROL Créer]**
 
-1. Dans le volet explorateur, sélectionnez la page que vous venez de créer `/Websites/SCF Sandbox Site/SCF Sandbox`, puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page.]**
+1. Dans le volet explorateur, sélectionnez la page que vous venez de créer, `/Websites/SCF Sandbox Site/SCF Sandbox`, puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**
 
    * Titre: `SCF Play`
-   * Nom (name) : `play`
-   * Sélectionner **[!UICONTROL Un Modèle SCF Sandbox Play]**
+   * Nom : `play`
+   * Sélectionner **[!UICONTROL Un modèle de lecture de sandbox SCF]**
    * Cliquez sur **[!UICONTROL Créer]**
 
 1. C’est ainsi que le site Web s’affiche désormais dans la console Sites Web. Notez que les pages enfants de l&#39;élément sélectionné dans le volet explorateur s&#39;affichent dans le volet de droite où elles peuvent être gérées.
@@ -83,11 +83,11 @@ Maintenant qu&#39;il existe un modèle [de](initial-app.md#createthepagetemplate
 
 ## Ajouter le chemin de conception {#add-the-design-path}
 
-Lors de la ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` création à l’aide de la section conceptions de la console Outils, la propriété &quot;
+Lorsque ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` a été créé à l&#39;aide de la section conceptions de la console Outils, la propriété &quot;
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-était définie, ce qui permet facultativement de référencer des ressources de conception dans un script utilisant `currentDesign.getPath()`. Par exemple, 
+a été défini, ce qui permet facultativement de référencer des ressources de conception dans un script à l’aide de `currentDesign.getPath()`. Par exemple :
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
@@ -108,4 +108,4 @@ En cas de problème lors de l’enregistrement de la configuration, reconnectez-
 
 >[!NOTE]
 >
->L’utilisation de `cq:designPath` est facultative et n’est pas liée à l’ [utilisation de clientlibs](develop-app.md#includeclientlibsintemplate), qui sont essentiellement requis puisque les composants SCF utilisent [clientlibs](client-customize.md#clientlibs-for-scf) pour gérer leurs fichiers JS et CSS.
+>L&#39;utilisation de `cq:designPath` est facultative et n&#39;est pas liée à l&#39;[utilisation de clientlibs](develop-app.md#includeclientlibsintemplate), qui sont essentiellement requises puisque les composants SCF utilisent [clientlibs](client-customize.md#clientlibs-for-scf) pour gérer leurs fichiers JS et CSS.
