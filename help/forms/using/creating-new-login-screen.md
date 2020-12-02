@@ -24,7 +24,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
 ## Condition requise {#prerequisite}
 
-1. Log in at `/lc/crx/de` with Administrator permissions.
+1. Connectez-vous à `/lc/crx/de` avec les autorisations d’administrateur.
 1. Procédez comme suit :
 
    1. Répliquer la structure hiérarchique : de `/libs/livecycle/core/content` à `/apps/livecycle/core/content`.
@@ -37,30 +37,30 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
       vers: `/apps/livecycle/core`.
 
-   1. Delete the contents of `/apps/livecycle/core` folder.
+   1. Supprimez le contenu du dossier `/apps/livecycle/core`.
 
 1. Procédez comme suit :
 
    1. Répliquer la structure hiérarchique : de `/libs/livecycle/core/components/login` à `/apps/livecycle/core/components/login`. Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
 
-   1. Copy the components folder: from `/libs/livecycle/core` to `/apps/livecycle/core`.
+   1. Copiez le dossier de composants : de `/libs/livecycle/core` à `/apps/livecycle/core`.
 
-   1. Delete the contents of the folder: `/apps/livecycle/core/components/login`.
+   1. Supprimez le contenu du dossier : `/apps/livecycle/core/components/login`.
 
 ### Ajout d’un nouveau paramètre régional {#adding-a-new-locale}
 
-1. Copiez le `i18n` dossier :
+1. Copiez le dossier `i18n` :
 
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
 
-1. Delete all the folders inside `i18n` except one, say `en`.
+1. Supprimez tous les dossiers à l&#39;intérieur de `i18n`, à l&#39;exception d&#39;un, par exemple `en`.
 
 1. Sur le dossier `en`, procédez comme suit :
 
    1. Donnez au dossier le nom du paramètre régional que vous souhaitez prendre en charge. Par exemple, `ar`.
 
-   1. Change the property `jcr:language` value to `ar`(for the `ar` folder).
+   1. Remplacez la valeur de propriété `jcr:language` par `ar` (pour le dossier `ar`).
    >[!NOTE]
    >
    >Si le paramètre régional est une combinaison de code langue-pays, tel que `ar-DZ`, modifiez le nom du dossier et la valeur de la propriété en `ar-DZ`.
@@ -70,7 +70,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
 
-1. Modify the following snippet of code for `/apps/livecycle/core/components/login/login.jsp`:
+1. Modifiez le fragment de code suivant pour `/apps/livecycle/core/components/login/login.jsp` :
 
 ***Le paramètre régional est un code de langue***
 
@@ -154,7 +154,7 @@ String browserLocale = "en";
     }
 ```
 
-To
+À
 
 ```jsp
 String browserLocale = "en";
@@ -196,9 +196,9 @@ String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
 ```
 
-### Ajout de nouveau texte ou modification du texte existant {#adding-new-text-or-modifying-existing-text}
+### Ajout de nouveau texte ou modification du texte existant  {#adding-new-text-or-modifying-existing-text}
 
-1. Copier `i18n` le dossier :
+1. Copier le dossier `i18n` :
 
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
@@ -213,7 +213,7 @@ String browserLocale = "en";
       * de `/libs/livecycle/core/components/login`
 
       * vers `/apps/livecycle/core/components/login`
-   1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added text.
+   1. Modifiez `/apps/livecycle/core/components/login/login.jsp` pour incorporer le texte qui vient d’être ajouté.
 
    ![Ajouter une nouvelle paire clé-valeur](assets/capture_new.png)
 
@@ -226,7 +226,7 @@ String browserLocale = "en";
                        <% if (loginFailed) {%>
    ```
 
-   To
+   À
 
    ```jsp
    div class="loginContent">
@@ -240,12 +240,12 @@ String browserLocale = "en";
 
 ### Ajout d’un nouveau style ou modification d’un style existant {#adding-new-style-or-modifying-existing-style}
 
-1. Copy `login` node:
+1. Copier le noeud `login` :
 
    * de `/libs/livecycle/core/content`
    * vers `/apps/livecycle/core/content`
 
-1. Supprimer des fichiers `login.js` et `jquery-1.8.0.min.js`, du noeud `/apps/livecycle/core/content/login.`
+1. Supprimez les fichiers `login.js` et `jquery-1.8.0.min.js` du noeud `/apps/livecycle/core/content/login.`.
 1. Modifiez les styles définis dans le fichier CSS.
 1. Pour ajouter de nouveaux styles :
 
@@ -255,13 +255,13 @@ String browserLocale = "en";
       * de `/libs/livecycle/core/components/login`
 
       * vers `/apps/livecycle/core/components/login`
-   1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added styles.
+   1. Modifiez `/apps/livecycle/core/components/login/login.jsp` pour incorporer les styles récemment ajoutés.
 
 
 
 Par exemple :
 
-* Add the following to `/apps/livecycle/core/content/login/login.css`.
+* Ajoutez les éléments suivants sur `/apps/livecycle/core/content/login/login.css`.
 
 ```
 css.newLoginContentArea {
@@ -270,14 +270,14 @@ css.newLoginContentArea {
    }
 ```
 
-* Modifiez en suivant dans `/apps/livecycle/core/components/login.jsp`.
+* Modifiez l’élément suivant dans `/apps/livecycle/core/components/login.jsp`.
 
 
    ```jsp
    <div class="loginContentArea">
    ```
 
-   To
+   À
 
    ```jsp
    <div class="newLoginContentArea">
@@ -285,20 +285,20 @@ css.newLoginContentArea {
 
 >[!NOTE]
 >
->If the existing images in `/apps/livecycle/core/content/login` (copied from `/libs/livecycle/core/content/login`) are removed, then remove the corresponding references in CSS.
+>Si les images existantes dans `/apps/livecycle/core/content/login` (copiées depuis `/libs/livecycle/core/content/login`) sont supprimées, supprimez les références correspondantes dans CSS.
 
 ### Ajoutez de nouvelles images {#add-new-images}
 
 1. Suivez les étapes pour Ajouter un nouveau style ou modifier le style existant (décrites ci-dessus).
-1. Add new images in `/apps/livecycle/core/content/login`. Pour ajouter une image :
+1. Ajoutez de nouvelles images dans `/apps/livecycle/core/content/login`. Pour ajouter une image :
 
    1. Installez le client WebDAV.
-   1. Navigate to `/apps/livecycle/core/content/login` folder, using webDAV client. For more information, see: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Accédez au dossier `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, voir : [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    1. Ajoutez de nouvelles images.
 
-1. Ajouter de nouveaux styles `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
-1. Use the new styles in `login.jsp` at `/apps/livecycle/core/components`.
+1. Ajoutez de nouveaux styles dans `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
+1. Utilisez les nouveaux styles dans `login.jsp` à `/apps/livecycle/core/components`.
 
 Par exemple :
 
@@ -320,7 +320,7 @@ Par exemple :
 <div class="loginContainerBkg">
 ```
 
-To
+À
 
 ```jsp
 <div class="newLginContainerBkg">
