@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -26,13 +26,13 @@ Configurez les listes de contrôle d’accès en fonction des comptes utilisateu
 
 Il est possible d’agir sur les workflows dans les cas suivants :
 
-* you are working with the `admin` account
-* the account has been assigned to the default group `workflow-users`:
+* vous travaillez avec le compte `admin`
+* le compte a été affecté au groupe par défaut `workflow-users` :
 
    * Ce groupe contient toutes les autorisations nécessaires pour que les utilisateurs agissent sur les workflows.
    * Lorsque le compte appartient à ce groupe, il n’a accès qu’aux workflows dont il est à l’origine.
 
-* the account has been assigned to the default group `workflow-administrators`:
+* le compte a été affecté au groupe par défaut `workflow-administrators` :
 
    * Ce groupe contient toutes les autorisations nécessaires pour que vos utilisateurs privilégiés surveillent et gèrent les workflows.
    * Lorsque le compte appartient à ce groupe, il a accès à tous les workflows.
@@ -41,7 +41,7 @@ Il est possible d’agir sur les workflows dans les cas suivants :
 >
 >Il s’agit des conditions requises minimales. Pour effectuer des actions spécifiques, votre compte doit également correspondre au participant affecté ou à un membre du groupe affecté pour prendre des mesures spécifiques.
 
-## Configuration de l’accès aux workflows {#configuring-access-to-workflows}
+## Configuration de l’accès aux workflows  {#configuring-access-to-workflows}
 
 Les modèles de workflows héritent d’une liste de contrôle d’accès par défaut pour contrôler les interactions possibles des utilisateurs avec les workflows. Pour personnaliser l’accès utilisateur d’un workflow, modifiez la liste de contrôle d’accès dans le référentiel du dossier contenant le nœud de modèles de workflows :
 
@@ -52,9 +52,9 @@ Les modèles de workflows héritent d’une liste de contrôle d’accès par d�
 >
 >Pour plus d’informations sur l’utilisation de CRXDE Lite pour configurer des listes de contrôle d’accès, voir [Gestion des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-### Appliquez une liste de contrôle d’accès pour le modèle spécifique de workflow sous /var/workflow/models. {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
+### Appliquez une liste de contrôle d’accès pour le modèle spécifique de workflow sous /var/workflow/models.  {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-If the workflow model is stored within `/var/workflow/models` then you can assign a specific ACL, relevant to only that workflow, on the folder:
+Si le modèle de flux de travail est stocké dans `/var/workflow/models`, vous pouvez affecter une liste de contrôle d&#39;accès spécifique, pertinente uniquement pour ce flux de travail, au dossier :
 
 1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Dans l’arborescence des nœuds, sélectionnez le nœud correspondant au dossier des modèles de workflow :
@@ -65,9 +65,9 @@ If the workflow model is stored within `/var/workflow/models` then you can assig
 1. Dans le tableau **Stratégies de contrôle d’accès locales** (**Liste de contrôle d’accès**), cliquez sur l’icône « + » pour **ajouter une entrée**.
 1. Dans la boîte de dialogue **Ajouter une nouvelle entrée**, ajoutez une nouvelle entrée de contrôle d’accès avec les propriétés suivantes :
 
-   * **Principal**: `content-authors`
+   * **Principal** :  `content-authors`
    * **Type** : `Deny`
-   * **Privilèges**: `jcr:read`
+   * **Privilèges** :  `jcr:read`
    * **Rep:glob** : référence au workflow spécifique
 
    ![wf-108](assets/wf-108.png)
@@ -102,9 +102,9 @@ Vous pouvez alors ajouter une liste de contrôle d’accès dans le dossier prop
 1. Dans le tableau **Stratégies de contrôle d’accès locales** (**Liste de contrôle d’accès**), cliquez sur l’icône + pour **ajouter une entrée**.
 1. Dans la boîte de dialogue **Ajouter une nouvelle entrée**, ajoutez une nouvelle entrée de contrôle d’accès avec les propriétés suivantes :
 
-   * **Principal**: `content-authors`
+   * **Principal** :  `content-authors`
    * **Type** : `Deny`
-   * **Privilèges**: `jcr:read`
+   * **Privilèges** :  `jcr:read`
 
    >[!NOTE]
    >
