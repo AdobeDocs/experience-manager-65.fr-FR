@@ -22,7 +22,7 @@ ht-degree: 85%
 
 Vous pouvez télécharger un fichier PDF dans l’application Web des extensions d’Acrobat Reader DC pour voir s’il contient des extensions Reader, si des droits d’utilisation lui ont été appliqués et quelles sont leurs dates d’expiration.
 
-1. Log in to the Acrobat Reader DC extensions web application at `http://[localhost]:[port]/ReaderExtensions` (where *[port]* is your application server’s port number).
+1. Connectez-vous à l’application Web des extensions Acrobat Reader DC à l’adresse `http://[localhost]:[port]/ReaderExtensions` (où *[port]* correspond au numéro de port de votre serveur d’applications).
 1. Cliquez sur Parcourir pour télécharger le fichier PDF, puis sur Info. Les informations s’affichent sous le nom de fichier.
 
    Pour plus de détails sur la modification des droits d’utilisation d’un fichier, consultez l’Aide des extensions d’Acrobat Reader DC.
