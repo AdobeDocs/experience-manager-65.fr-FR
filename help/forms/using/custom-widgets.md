@@ -21,7 +21,7 @@ ht-degree: 66%
 
 # Créer des apparences personnalisées dans les formulaires HTML5{#create-custom-appearances-in-html-forms}
 
-Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériques mobiles. Vous pouvez étendre les widgets jQuery existants ou développer vos propres widgets personnalisés. XFA engine uses various widgets, see [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md) for detailed information.
+Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériques mobiles. Vous pouvez étendre les widgets jQuery existants ou développer vos propres widgets personnalisés. Le moteur XFA utilise divers widgets, voir [Structure d’apparence des formulaires adaptatifs et HTML5](/help/forms/using/introduction-widgets.md) pour plus d’informations.
 
 ![Exemple d’un widget par défaut et d’un widget personnalisé](assets/custom-widgets.jpg)
 
@@ -33,7 +33,7 @@ Exemple d’un widget par défaut et d’un widget personnalisé
 
 Vous pouvez créer un profil ou choisir un profil existant pour ajouter un widget personnalisé. Pour plus d’informations sur la création de profils, voir [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
 
-### Création d’un widget {#create-a-widget}
+### Création d’un widget  {#create-a-widget}
 
 Les formulaires HTML5 fournissent une implémentation de la structure de widgets qui peut être étendue pour créer de nouveaux widgets. L’implémentation est un widget jQuery *abstractWidget* qui peut être étendu afin d’écrire un nouveau widget. Le nouveau widget peut être rendu fonctionnel uniquement par l’extension/le remplacement des fonctions mentionnées ci-dessous.
 
@@ -70,15 +70,15 @@ Les formulaires HTML5 fournissent une implémentation de la structure de widgets
  </tbody>
 </table>
 
-Pour créer votre propre widget, dans le profil créé précédemment, ajoutez les références du fichier Javascript qui contient les fonctions remplacées et les nouvelles fonctions ajoutées. For example, the *sliderNumericFieldWidget* is a widget for numeric Fields. Pour utiliser le widget dans votre profil dans la section d’en-tête, incluez la ligne suivante :
+Pour créer votre propre widget, dans le profil créé précédemment, ajoutez les références du fichier Javascript qui contient les fonctions remplacées et les nouvelles fonctions ajoutées. Par exemple, le *sliderNumericFieldWidget* est un widget pour les champs numériques. Pour utiliser le widget dans votre profil dans la section d’en-tête, incluez la ligne suivante :
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Enregistrement du widget personnalisé avec le moteur de script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Enregistrement du widget personnalisé avec le moteur de script XFA   {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-When the custom widget code is ready, register the widget with the scripting engine by using `registerConfig`API for [Form Bridge](/help/forms/using/form-bridge-apis.md). widgetConfigObject est utilisé comme entrée.
+Lorsque le code de widget personnalisé est prêt, enregistrez le widget avec le moteur de script en utilisant `registerConfig`API pour [Form Bridge](/help/forms/using/form-bridge-apis.md). widgetConfigObject est utilisé comme entrée.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -88,7 +88,7 @@ window.formBridge.registerConfig("widgetConfig",
     );
 ```
 
-#### widgetConfigObject {#widgetconfigobject}
+#### widgetConfigObject  {#widgetconfigobject}
 
 La configuration du widget est fournie sous la forme d’un objet JSON (ensemble de paires clé/valeur) où la clé identifie les champs et la valeur représente le widget à utiliser avec ces champs. Voici un exemple de configuration :
 
