@@ -28,31 +28,31 @@ La fonctionnalité Bibliothèque de fichiers fournit un espace où les visiteurs
 Cette section de la documentation décrit : :
 
 * Ajouter la fonction de bibliothèque de fichiers à un site AEM.
-* Configuration settings for the `File Library` component.
+* Paramètres de configuration du composant `File Library`.
 
 ### Ajout d’une bibliothèque de fichiers à une page {#adding-a-file-library-to-a-page}
 
-To add a `File Library` component to a page in author mode, locate the component:
+Pour ajouter un composant `File Library` à une page en mode création, recherchez le composant :
 
 * `Communities / File Library`
 
 et faites-le glisser sur la page.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-file-library.md#essentials-for-client-side) are included, this is how the `File Library` component will appear:
+Lorsque les [bibliothèques client requises](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `File Library` apparaîtra :
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
 ### Configuration de la bibliothèque de fichiers {#configuring-file-library}
 
-Select the placed `File Library` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `File Library` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-431](assets/chlimage_1-431.png)
 
 ![chlimage_1-432](assets/chlimage_1-432.png)
 
-#### Comments tab {#comments-tab}
+#### Onglet Commentaires {#comments-tab}
 
 Dans l’onglet **Commentaires**, indiquez si et comment les commentaires pour les fichiers transférés apparaissent :
 
@@ -102,7 +102,7 @@ Dans l’onglet **Commentaires**, indiquez si et comment les commentaires pour l
 
 * **Autoriser abonnement**
 
-   Si cette option est cochée, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d&#39;être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, incluez la fonctionnalité suivante pour les articles de blog, ce qui permet aux membres d’être [avertis](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **Activer la mention**
 
@@ -168,7 +168,7 @@ Définir par défaut
 
 ### Informations supplémentaires {#additional-information}
 
-More information may be found on the [File Library Essentials](/help/communities/essentials-file-library.md) page for developers.
+Pour plus d&#39;informations, consultez la page [File Library Essentials](/help/communities/essentials-file-library.md) destinée aux développeurs.
 
 Pour des informations sur la modération des sujets et des commentaires publiés, reportez-vous à la section [Modération du contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
