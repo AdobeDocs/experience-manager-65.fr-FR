@@ -33,15 +33,15 @@ Pour en savoir plus, voir:
 
 >[!NOTE]
 >
->Since the eCommerce framework can be used with any eCommerce solution, see [Developing (generic)](/help/sites-developing/generic.md) for more information about developing possibilities.
+>Comme le cadre eCommerce peut être utilisé avec n&#39;importe quelle solution eCommerce, voir [Développement (générique)](/help/sites-developing/generic.md) pour plus d&#39;informations sur le développement de possibilités.
 
 >[!NOTE]
 >
->Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
+>Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement du commerce électronique](/help/sites-deploying/ecommerce.md).
 >
 >Pour plus d’informations sur les concepts et l’administration des implémentations eCommerce, consultez [Administration d’eCommerce](/help/sites-administering/ecommerce.md).
 
-## Documentation d’API {#api-documentation}
+## Documentation d’API  {#api-documentation}
 
 L’API eCommerce est fournie par les modules :
 
@@ -51,4 +51,4 @@ Pour plus d’informations, voir la [documentation de l’API](https://helpx.ado
 
 >[!NOTE]
 >
->For a complete article detailing all the steps to build an eCommerce provider see [Creating custom Adobe Experience Manager 6.2 eCommerce providers](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
+>Pour un article complet décrivant toutes les étapes de création d&#39;un fournisseur de commerce électronique, voir [Création de fournisseurs de commerce électronique Adobe Experience Manager 6.2 personnalisés](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
