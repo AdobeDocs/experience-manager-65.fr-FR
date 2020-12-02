@@ -131,4 +131,4 @@ Bien que vous puissiez encore rester en production avec les visionneuses DHTML, 
 
 **Qui dois-je contacter pour plus d’informations ?**
 
-Si ce FAQ n&#39;a pas répondu à toutes vos questions, veuillez [utiliser le Admin Console pour créer un dossier](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) d&#39;assistance ou contactez votre gestionnaire de compte d&#39;Adobe.
+Si ce FAQ n&#39;a pas répondu à toutes vos questions, veuillez [utiliser le Admin Console pour créer un dossier d&#39;assistance](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ou contacter votre gestionnaire de compte d&#39;Adobe.
