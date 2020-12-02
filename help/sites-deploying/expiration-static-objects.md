@@ -75,7 +75,7 @@ Tous les fichiers, qui ne sont pas dynamiques et qui ne changent pas au fil du t
    </Location>
    ```
 
-   Cela permet au cache intermédiaire (par exemple le cache du navigateur) de stocker des fichiers CSS, Javascript, PNG et GIF pendant un jour au maximum dans les caches clients. Although this example illustrates global settings for everything below `/content` and `/etc/designs`, you should make it more granular.
+   Cela permet au cache intermédiaire (par exemple le cache du navigateur) de stocker des fichiers CSS, Javascript, PNG et GIF pendant un jour au maximum dans les caches clients. Bien que cet exemple illustre les paramètres globaux pour tout ce qui se trouve en dessous de `/content` et `/etc/designs`, vous devez le rendre plus granulaire.
 
    Selon la fréquence de mise à jour de votre site, vous pouvez également envisager de mettre en cache les pages HTML. Un intervalle de temps raisonnable serait d’une heure :
 
