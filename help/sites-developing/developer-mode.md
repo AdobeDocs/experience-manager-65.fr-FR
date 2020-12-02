@@ -35,7 +35,7 @@ Ils aident les développeurs à :
 
 >[!CAUTION]
 >
->Le mode Développeur :
+>Mode Développeur:
 >
 >* est uniquement disponible dans l’IU compatible avec les écrans tactiles (lors de la modification des pages) ;
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
@@ -43,7 +43,7 @@ Ils aident les développeurs à :
    >
    >   
    * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
->* N’est disponible que pour les utilisateurs membres du `administrators` groupe.
+>* N&#39;est disponible que pour les utilisateurs membres du groupe `administrators`.
 
 
 >[!CAUTION]
@@ -70,7 +70,7 @@ Il doit être désactivé à nouveau après utilisation.
 
 
 
-## Ouverture du mode Développeur {#opening-developer-mode}
+## Ouverture du mode Développeur  {#opening-developer-mode}
 
 Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dans l’éditeur de page. Pour ouvrir le panneau, sélectionnez **Développeur** dans le sélecteur de mode au niveau de la barre d’outils de l’éditeur de page :
 
@@ -78,7 +78,7 @@ Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dan
 
 Le panneau est divisé en deux onglets :
 
-* **[Composants](/help/sites-developing/developer-mode.md#components)** : affiche une arborescence de composants, similaire à l&#39;arborescence [de](/help/sites-authoring/author-environment-tools.md#content-tree) contenu pour les auteurs.
+* **[Composants](/help/sites-developing/developer-mode.md#components)**  : affiche une arborescence de composants, similaire à l&#39;arborescence de  [contenu ](/help/sites-authoring/author-environment-tools.md#content-tree) pour les auteurs.
 
 * **[Erreurs](/help/sites-developing/developer-mode.md#errors)** : lorsque des problèmes se produisent, les détails sont affichés pour chaque composant.
 
@@ -127,7 +127,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
 >[!CAUTION]
 >
->Certains liens pointent sur des scripts sous `/libs`. However, these are for reference only, you **must not** edit anything under `/libs`, as any changes you do make may be lost. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif/Feature Pack. Any changes you require should be made under `/apps`, see [Overlays and Overrides](/help/sites-developing/overlays.md).
+>Certains liens pointent sur des scripts sous `/libs`. Cependant, il s&#39;agit uniquement de référence, vous **ne devez pas** modifier quoi que ce soit sous `/libs`, car toutes les modifications que vous apportez peuvent être perdues. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif/Feature Pack. Toute modification requise doit être effectuée sous `/apps`, voir [Overlays and Overrides](/help/sites-developing/overlays.md).
 
 ### Erreurs {#errors}
 
@@ -144,11 +144,11 @@ Par exemple, dans l’éventualité où une méthode non définie est appelée, 
 
 L’entrée du composant dans l’arborescence de l’onglet Composants sera également marquée à l’aide d’un indicateur lorsqu’une erreur se produit.
 
-### Tests {#tests}
+### Tests  {#tests}
 
 >[!CAUTION]
 >
 >Dans AEM 6.2, les fonctions de test du mode Développeur ont fait l’objet d’une remise en œuvre en tant qu’application Outils autonome.
 >
->For full details see [Testing Your UI](/help/sites-developing/hobbes.md).
+>Pour plus d&#39;informations, voir [Test de votre interface utilisateur](/help/sites-developing/hobbes.md).
 
