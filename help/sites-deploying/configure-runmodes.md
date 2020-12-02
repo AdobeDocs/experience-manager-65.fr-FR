@@ -45,9 +45,9 @@ Les modes d’exécution d’installation sont fournis prêts à l’emploi :
 
 Ce sont deux paires de modes d’exécution mutuellement exclusifs. Par exemple, vous pouvez :
 
-* define either `author` or `publish`, not both at the same time
+* définissez `author` ou `publish`, mais pas les deux en même temps.
 
-* combine `author` with either `samplecontent` or `nosamplecontent` (but not both)
+* combiner `author` avec `samplecontent` ou `nosamplecontent` (mais pas les deux)
 
 >[!CAUTION]
 >
@@ -55,17 +55,17 @@ Ce sont deux paires de modes d’exécution mutuellement exclusifs. Par exemple,
 >
 >Vous *ne pouvez pas* modifier ces modes d’exécution après l’installation.
 
-## Modes d’exécution personnalisés {#customized-run-modes}
+## Modes d’exécution personnalisés  {#customized-run-modes}
 
 Vous pouvez également créer vos propres modes d’exécution personnalisés. Ils peuvent être combinés pour créer différents scénarios, par exemple :
 
 * `author` + `development`
 
-* `publish` + `test`
+* `publish` +  `test`
 
 * `publish` + `test` + `golive`
 
-* `publish` + `intranet`
+* `publish` +  `intranet`
 
 * le cas échéant.
 
@@ -81,7 +81,7 @@ Ces modes permettent de contrôler l’utilisation d’un échantillon de conten
 
 Le mode d’exécution nosamplecontent est conçu pour les installations de production.
 
-## Définition des propriétés de configuration d’un mode d’exécution {#defining-configuration-properties-for-a-run-mode}
+## Définition des propriétés de configuration d’un mode d’exécution  {#defining-configuration-properties-for-a-run-mode}
 
 Une collection de valeurs pour les propriétés de configuration, utilisée pour un mode d’exécution spécifique, peut être enregistrée dans le référentiel.
 
@@ -109,7 +109,7 @@ Pour plus d’informations sur la définition des différents nœuds de configur
 >
 >Pour les [modes d’exécution d’installation](#installation-run-modes) (author, par exemple), le mode d’exécution ne peut pas être modifié après l’installation. Cependant, les modifications apportées aux différentes propriétés de configuration seront appliquées au redémarrage.
 
-## Définition de lots supplémentaires à installer pour un mode d’exécution {#defining-additional-bundles-to-be-installed-for-a-run-mode}
+## Définition de lots supplémentaires à installer pour un mode d’exécution  {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
 Il est également possible de spécifier des lots supplémentaires à installer pour un mode d’exécution en particulier. Pour ces définitions, les dossiers d’installation sont utilisés pour contenir les lots. Là aussi, le mode d’exécution est indiqué par un préfixe :
 
@@ -144,7 +144,7 @@ Vous pouvez utiliser le fichier `sling.properties` pour définir le mode d’ex�
 
 ### Utilisation de l’option -r {#using-the-r-option}
 
-A custom run mode can be activated by using the `-r` option when launching the quickstart. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
+Un mode d&#39;exécution personnalisé peut être activé à l&#39;aide de l&#39;option `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
