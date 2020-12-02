@@ -28,7 +28,7 @@ Vous disposez des options suivantes pour configurer l’intégration :
 
 * Configuration de l’intégration via la tâche
 
-    Cela peut être effectué immédiatement ou ultérieurement ; la tâche reste dans la boîte de réception jusqu’à ce qu’une action soit effectuée. In either case the configuration can be done directly in the UI, or with the use of a pre-defined `.properties` file.
+    Cela peut être effectué immédiatement ou ultérieurement ; la tâche reste dans la boîte de réception jusqu’à ce qu’une action soit effectuée. Dans les deux cas, la configuration peut être effectuée directement dans l&#39;interface utilisateur ou avec l&#39;utilisation d&#39;un fichier `.properties` prédéfini.
 
 * Exclusion de l’intégration
 
@@ -36,7 +36,7 @@ Vous disposez des options suivantes pour configurer l’intégration :
 
 * Définissez la configuration et la mise en service à l’aide d’un script.
 
-## Configuration de l’intégration {#configuring-the-integration}
+## Configuration de l’intégration  {#configuring-the-integration}
 
 Souscrivez à l’intégration avec :
 
@@ -117,7 +117,7 @@ Le fichier de propriétés est un fichier texte appelé marketingcloud.propertie
 
 Les propriétés et les valeurs sont séparées par des signes égal (=). Les propriétés sont dotées du préfixe `analytics`analytics, et les propriétés du préfixe `target`target. Pour configurer un service, fournissez les valeurs de toutes ses propriétés. Si vous ne souhaitez pas configurer un service, n’indiquez aucune valeur pour ce service.
 
-The following example `.properties` file includes the property values for creating a cloud configuration for Analytics:
+L’exemple de fichier `.properties` suivant inclut les valeurs de propriété permettant de créer une configuration de cloud pour Analytics :
 
 ```xml
 analytics.server=https://test.omniture.com/login/
@@ -144,9 +144,9 @@ La procédure suivante explique comment s’exclure de l’intégration à l’a
 
 1. Ajoutez les valeurs de propriétés conformément à vos comptes Analytics et/ou Target.
 1. Démarrez ou redémarrez le serveur, puis connectez-vous à l’aide d’un compte administrateur.
-1. Ouvrez la tâche Configurer Analytics et Targeting comme indiqué dans [Configuration de l’intégration](/help/sites-administering/opt-in.md#configuring-the-integration). Instead of requesting your account information, the wizard uses the values from the `.properties` file.
+1. Ouvrez la tâche Configurer Analytics et Targeting comme indiqué dans [Configuration de l’intégration](/help/sites-administering/opt-in.md#configuring-the-integration). Au lieu de demander des informations sur votre compte, l&#39;Assistant utilise les valeurs du fichier `.properties`.
 
-   Select **Add** for the appropriate service, then continue with the wizard.
+   Sélectionnez **Ajouter** pour le service approprié, puis poursuivez l&#39;Assistant.
 
    ![optin-02](assets/optin-02.png)
 
@@ -154,7 +154,7 @@ La procédure suivante explique comment s’exclure de l’intégration à l’a
 
 Lorsque vous configurez l’intégration à Analytics et Target, AEM crée automatiquement les configurations et les structures cloud requises. Par exemple, la configuration cloud s’appelle Compte Analytics mis en service.
 
-Vous n’avez pas besoin de modifier les configurations cloud. Toutefois, vous pouvez configurer les structures selon vos besoins. (See [Mapping Component Data with Adobe Analytics Properties](/help/sites-administering/adobeanalytics-mapping.md) and [Add a Target Framework](/help/sites-administering/target.md).)
+Vous n’avez pas besoin de modifier les configurations cloud. Toutefois, vous pouvez configurer les structures selon vos besoins. (Voir [Mappage des données des composants avec les propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md) et [Ajouter un cadre de Cible](/help/sites-administering/target.md).)
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ Les paramètres que vous envoyez dépendent de ce qui suit :
 * Si vous souhaitez utiliser le fichier **marketingcloud.properties** contenant toutes les informations d’identification requises, vous devez envoyer les paramètres suivants :
 
    * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
+   * `servicename`=  `analytics|target`
    * `path`=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées
 
    Par exemple, une requête curl qui crée à la fois des configurations Analytics et Target, et les joint à la page we.retail prendrait la forme suivante :
@@ -192,9 +192,9 @@ Les paramètres que vous envoyez dépendent de ce qui suit :
    curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
    ```
 
-* If you do not want to use the **marketingcloud.properties** file then you will have to send the credentials as well as parameters; for example:
+* Si vous ne souhaitez pas utiliser le fichier **marketingcloud.properties**, vous devez envoyer les informations d’identification ainsi que les paramètres ; par exemple :
 
-   * automaticProvisioning= `true`
+   * AutomaticProvisioning= `true`
    * servicename= `analytics|target`
    * path=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées ; plusieurs chemins peuvent être définis
    * analytics.server= `https://servername`
