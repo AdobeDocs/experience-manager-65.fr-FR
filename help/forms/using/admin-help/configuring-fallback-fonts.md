@@ -26,12 +26,12 @@ Cette section explique comment configurer manuellement le fichier FontManagerRes
 >
 >la configuration des polices de remplacement s’applique également au service d’assemblage.
 
-1. Navigate to the adobe-livecycle-*`[appserver]`*.ear file in the *`[aem-forms root]`*/configurationManager/export directory, make a backup copy, and unpackage the original.
+1. Accédez au fichier adobe-livecycle-*`[appserver]`*.ear dans le répertoire *`[aem-forms root]`*/configurationManager/export, effectuez une copie de sauvegarde et décompressez l’original.
 1. Recherchez le fichier adobe-fontmanager.jar et décompressez-le.
 1. Recherchez le fichier FontManagerResources.properties et ouvrez-le dans un éditeur de texte.
 1. Modifiez les emplacements et les noms des polices dans les sections Generic et Fallback de manière appropriée et enregistrez le fichier.
 
-   The font entries in the FontManagerResources.properties file are relative to the *`[aem-forms root]`*/fonts directory. Si vous spécifiez des polices autres que les polices par défaut d&#39;AEM forms, vous devez les installer dans cette arborescence (dans un répertoire existant ou créé à cet effet).
+   Les entrées de police du fichier FontManagerResources.properties sont relatives au répertoire *`[aem-forms root]`*/fonts. Si vous spécifiez des polices autres que les polices par défaut d&#39;AEM forms, vous devez les installer dans cette arborescence (dans un répertoire existant ou créé à cet effet).
 
    >[!NOTE]
    >
@@ -42,9 +42,9 @@ Cette section explique comment configurer manuellement le fichier FontManagerRes
    * police générique, la recherche étant effectuée dans l’ordre de la table de remplacement.
 
 1. Recompressez le fichier adobe-fontmanager.jar.
-1. Repackage the adobe-livecycle-*`[appserver]`*.ear file and then redeploy it either manually or by running Configuration Manager.
+1. Recompressez le fichier adobe-livecycle-*`[appserver]`*.ear, puis redéployez-le manuellement ou en exécutant Configuration Manager.
 
 >[!NOTE]
 >
->Do not use Configuration Manager to repackage the adobe-livecycle-`[appserver]`.ear file because it will overwrite your modifications with the AEM forms default values.
+>N’utilisez pas Configuration Manager pour recompresser le fichier adobe-livecycle-`[appserver]`.ear, car il remplacera vos modifications par les valeurs par défaut des formulaires AEM.
 
