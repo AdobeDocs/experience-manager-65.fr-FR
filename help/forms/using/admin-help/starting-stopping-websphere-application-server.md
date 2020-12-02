@@ -22,27 +22,27 @@ ht-degree: 82%
 
 Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de WebSphere sur laquelle vous souhaitez déployer les produits AEM forms. Si vous ne savez pas si le serveur d’applications a déjà été démarré, vous pouvez commencer par vérifier l’état de WebSphere Application Server.
 
-## Affichage de l’état de WebSphere Application Server {#view-the-status-of-websphere-application-server}
+## Affichage de l’état de WebSphere Application Server  {#view-the-status-of-websphere-application-server}
 
-1. From a command prompt, go to the `[appserver root]/bin` directory.
+1. Ouvrez une invite de commande et accédez au répertoire `[appserver root]/bin`.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
 
-   * (Windows) `serverStatus.bat`*server_name*
-   * (Linux, UNIX) ./ `serverStatus.sh`*server_name*
+   * (Windows) `serverStatus.bat`*nom_serveur*
+   * (Linux, UNIX) ./ `serverStatus.sh`*nom_serveur*
 
 ## Démarrez WebSphere Application Server {#start-websphere-application-server}
 
-1. From a command prompt, go to the `[appserver root]/bin` directory.
+1. Ouvrez une invite de commande et accédez au répertoire `[appserver root]/bin`.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
 
-   * (Windows) `startServer.bat`*server_name*
-   * (Linux, UNIX) ./ `startServer.sh`*server_name*
+   * (Windows) `startServer.bat`*nom_serveur*
+   * (Linux, UNIX) ./ `startServer.sh`*nom_serveur*
 
 ## Arrêt de WebSphere Application Server {#stop-websphere-application-server}
 
-1. From a command prompt, go to the `[appserver root]/bin` directory.
+1. Ouvrez une invite de commande et accédez au répertoire `[appserver root]/bin`.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
 
-   * (Windows) `stopServer.bat`*server_name*
-   * (Linux, UNIX) ./ `stopServer.sh`*server_name*
+   * (Windows) `stopServer.bat`*nom_serveur*
+   * (Linux, UNIX) ./ `stopServer.sh`*nom_serveur*
 
