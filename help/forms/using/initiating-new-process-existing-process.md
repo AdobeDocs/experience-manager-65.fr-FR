@@ -30,7 +30,7 @@ Vous trouverez ci-dessous les étapes à suivre pour lancer un nouveau processus
    * Dans Suivi, sélectionnez un modèle de recherche pour afficher une liste des instances de processus. Sélectionnez l’instance dont vous souhaitez utiliser les données.
    * Dans l’onglet **[!UICONTROL Tâches]**, sélectionnez une tâche. Cliquez sur l’onglet **[!UICONTROL Historique]** et sélectionnez une tâche qui a lancé une instance de processus.
 
-   ![Sélectionner la tâche](assets/start3_new.png) ![Sélectionner la tâche](assets/start1_new.png)
+   ![Sélectionner la ](assets/start3_new.png) ![tâcheSélectionner la tâche](assets/start1_new.png)
 
 1. Dans la barre d’outils de l’action Tâche, cliquez sur **[!UICONTROL Démarrer]**. Un formulaire adaptatif pour la nouvelle instance de processus est affiché avec des données préremplies.
 
