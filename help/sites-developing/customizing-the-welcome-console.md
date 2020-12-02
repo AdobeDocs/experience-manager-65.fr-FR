@@ -35,7 +35,7 @@ Il est possible de configurer les liens qui sont visibles. Cela peut être défi
 * [Consoles principales](#links-in-main-console-left-pane) : liens de la console principale (volet de gauche)
 * [Ressources, documentation et ressources, fonctionnalités](#links-in-sidebar-right-pane) : liens de la barre latérale (volet de droite)
 
-## Liens de la console principale (volet de gauche) {#links-in-main-console-left-pane}
+## Liens de la console principale (volet de gauche)  {#links-in-main-console-left-pane}
 
 Liste des consoles principales d’AEM.
 
@@ -63,13 +63,13 @@ Les autorisations au niveau du nœud déterminent si les liens sont visibles ou 
 
 Par exemple :
 
-* To restrict access to **Tools**, remove read access from
+* Pour limiter l&#39;accès aux **outils**, supprimez l&#39;accès en lecture de
 
    `/libs/wcm/core/content/misc`
 
 Pour plus d’informations sur la définition des autorisations souhaitées, consultez la section [Sécurité](/help/sites-administering/security.md).
 
-### Liens de la barre latérale (volet de droite) {#links-in-sidebar-right-pane}
+### Liens de la barre latérale (volet de droite)  {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
@@ -90,7 +90,7 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td>
   </tr>
   <tr>
-   <td> Workflows   </td>
+   <td> Workflows</td>
    <td><code>/libs/cq/core/content/welcome/resources/workflows</code></td>
   </tr>
   <tr>
@@ -126,7 +126,7 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td><code>/libs/cq/core/content/welcome/docs/dev</code></td>
   </tr>
   <tr>
-   <td><strong>Fonctionnalités</strong></td>
+   <td><strong>Fonctions</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -178,21 +178,21 @@ Il est possible de masquer un lien pour des utilisateurs ou des groupes spécifi
 
 Par exemple :
 
-* To remove the link to **Reports**, remove read access from
+* Pour supprimer le lien vers **Rapports**, supprimez l’accès en lecture de
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* To remove the link to **Packages**, remove read access from
+* Pour supprimer le lien vers **Packages**, supprimez l’accès en lecture de
 
    `/libs/cq/core/content/welcome/features/packages`
 
 Pour plus d’informations sur la définition des autorisations souhaitées, consultez la section [Sécurité](/help/sites-administering/security.md).
 
-### Mécanisme de sélection de liens {#link-selection-mechanism}
+### Mécanisme de sélection de liens  {#link-selection-mechanism}
 
-In `/libs/cq/core/components/welcome/welcome.jsp` use is made of [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), which executes a query on nodes that have the property:
+Dans `/libs/cq/core/components/welcome/welcome.jsp`, l&#39;utilisation est faite de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), qui exécute une requête sur les noeuds qui possèdent la propriété :
 
-* `jcr:mixinTypes` avec la valeur : `cq:Console`
+* `jcr:mixinTypes` avec la valeur :  `cq:Console`
 
 >[!NOTE]
 >
@@ -210,7 +210,7 @@ Si un utilisateur ou un groupe ne possède pas l’autorisation de lecture sur u
 
 Vous pouvez utiliser le [mécanisme de sélection de liens](#link-selection-mechanism) pour ajouter votre propre élément personnalisé à la liste des liens.
 
-Add your custom item to the list by adding the `cq:Console` mixin to your widget or resource. Pour ce faire, vous devez définir la propriété suivante :
+Ajoutez votre élément personnalisé à la liste en ajoutant le mixin `cq:Console` à votre widget ou ressource. Pour ce faire, vous devez définir la propriété suivante :
 
-* `jcr:mixinTypes` avec la valeur : `cq:Console`
+* `jcr:mixinTypes` avec la valeur :  `cq:Console`
 
