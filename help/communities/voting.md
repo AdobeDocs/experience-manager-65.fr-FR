@@ -20,25 +20,25 @@ ht-degree: 25%
 
 # Utilisation du composant Vote {#using-voting}
 
-The `Voting` component is a useful tool that allows community members to rate a particular piece of content, such as an answer within a QnA component. With the `Voting` component, members select up or down arrows to indicate their opinion.
+Le composant `Voting` est un outil utile qui permet aux membres de la communauté d’évaluer un élément de contenu particulier, tel qu’une réponse dans un composant QnA. Avec le composant `Voting`, les membres sélectionnent des flèches vers le haut ou vers le bas pour indiquer leur opinion.
 
 ## Ajout d’un composant Vote à une page {#adding-voting-to-a-page}
 
-Pour ajouter un `Voting` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Voting` et le faire glisser sur une page, par exemple une position relative à la fonction sur laquelle les utilisateurs peuvent voter.
+Pour ajouter un composant `Voting` à une page en mode création, utilisez l&#39;explorateur de composants pour localiser `Communities / Voting` et faites-le glisser sur une page, par exemple une position relative à la fonction sur laquelle les utilisateurs peuvent voter.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-voting.md#essentials-for-client-side) are included, this is how the `Voting` component will appear.
+Lorsque les [bibliothèques client requises](essentials-voting.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Voting` s&#39;affiche.
 
 ![composante de vote](assets/voting-component.png)
 
 ## Configuration du composant Vote {#configuring-voting}
 
-Select the placed `Voting` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Voting` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configurer](assets/configure-new.png)
 
-Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used to record votes.
+Sous l&#39;onglet **[!UICONTROL Textes et étiquettes]**, spécifiez les propriétés utilisées pour enregistrer les votes.
 
 ![libellé de vote](assets/voting-label.png)
 
@@ -52,7 +52,7 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 * **[!UICONTROL Nom Tally]**
 
-   (*Required*) The internal, identifiable property name for this instance of a voting component.
+   (*Obligatoire*) Nom de propriété interne identifiable pour cette instance d&#39;un composant de vote.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -60,10 +60,10 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 Les membres ne peuvent voter qu’une seule fois, mais peuvent changer leur vote à tout moment.
 
-### Anonyme {#anonymous}
+### Anonyme  {#anonymous}
 
 Le vote anonyme n’est pas possible. Les visiteurs du site doivent s’enregistrer (devenir membres) et se connecter pour participer au vote.
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Voting Essentials](essentials-voting.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Voting Essentials](essentials-voting.md) destinée aux développeurs.
