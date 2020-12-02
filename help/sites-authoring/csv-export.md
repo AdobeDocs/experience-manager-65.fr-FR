@@ -38,7 +38,7 @@ L’assistant **Créer une exportation CSV** vous permet de sélectionner les é
       * Nom
       * Modifié
       * Publié
-      * Template (Modèle)
+      * Template
       * Workflow
    * Traduction
       * Traduit
@@ -56,7 +56,7 @@ Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre app
 
 ![etc-01](assets/etc-01.png)
 
-The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
+L’option Créer un rapport **CSV** est disponible lorsque vous parcourez la console **Sites** (dans la vue de Liste) : il s’agit d’une option du menu déroulant **Créer** :
 
 ![etc-02](assets/etc-02.png)
 
