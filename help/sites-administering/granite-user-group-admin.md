@@ -22,7 +22,7 @@ ht-degree: 84%
 
 Au fur et à mesure que Granite intègre l’implémentation du référentiel CRX de la spécification API JCR, il applique sa propre administration des utilisateurs et des groupes.
 
-These accounts are the underlying basis of the [AEM accounts](/help/sites-administering/security.md) and any account changes made with the Granite administration will be reflected if/when the accounts are accessed from the [AEM Users console](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (e.g. `http://localhost:4502/useradmin`). La console AEM Users vous permet également de gérer les autorisations et autres éléments spécifiques à AEM.
+Ces comptes constituent la base sous-jacente des comptes [AEM ](/help/sites-administering/security.md) et toute modification de compte effectuée avec l&#39;administration Granite sera prise en compte si/quand les comptes sont accessibles à partir de la [console Utilisateurs AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par ex. `http://localhost:4502/useradmin`). La console AEM Users vous permet également de gérer les autorisations et autres éléments spécifiques à AEM.
 
 Les consoles d’administration des utilisateurs et des groupes Granite sont disponibles via la console **[Outils](/help/sites-administering/tools-consoles.md)** de l’interface utilisateur optimisée pour les écrans tactiles :
 
@@ -92,13 +92,14 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
    * **À propos d’**
    * **Paramètres du compte**
 
-      * **Statut** Vous pouvez marquer le compte comme 
-**principal** ou **inactif**.
+      * ****
+StatutVous pouvez marquer le compte comme 
+**** actif ou  **inactif**.
    * **Photo**
 
       Vous pouvez ici télécharger une photo à utiliser comme avatar.
 
-      Accepted file types: `.jpg .png .tif .gif`
+      Types de fichiers acceptés : `.jpg .png .tif .gif`
 
       Taille préférée : `240x240px`
 
@@ -221,7 +222,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
 1. Le formulaire **Modifier les paramètres de groupe** s’ouvre.
 
-   The group ID will be the same as the original, but prefixed with `Copy of`. Vous devez le modifier, car l’identifiant ne peut pas contenir d’espaces. Tous les autres détails sont identiques aux détails d’origine.
+   L’ID de groupe est identique à l’ID d’origine, mais précédé de `Copy of`. Vous devez le modifier, car l’identifiant ne peut pas contenir d’espaces. Tous les autres détails sont identiques aux détails d’origine.
 
    Vous pouvez à présent modifier les détails comme indiqué dans la rubrique [Ajout d’un nouveau groupe](#adding-a-new-group).
 
