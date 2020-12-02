@@ -24,7 +24,7 @@ Vous pouvez rechercher vos formulaires ou ressources de formulaire à l’aide d
 
 Lorsque vous sélectionnez un ou plusieurs critères et spécifiez également une chaîne de texte, l’intersection du texte et des critères est renvoyée sous la forme de résultats de la recherche. La qualité des résultats est équivalente à celles des métadonnées de formulaires et de ressources fournies.
 
-Cliquez sur ![aem6forms_search](assets/aem6forms_search.png)pour afficher ou masquer le panneau de recherche.
+Cliquez sur ![aem6forms_search](assets/aem6forms_search.png) pour afficher ou masquer le panneau de recherche.
 
 ## Recherche de base {#basic-search}
 
@@ -38,10 +38,10 @@ Tenez compte des points suivants au sujet de la recherche de base :
 
 * La recherche est effectuée à l’aide des propriétés de métadonnées de formulaire et de ressource.
 * Si vous entrez plusieurs mots, l’opération de recherche correspond à la totalité du texte.
-* La recherche ne respecte pas la casse. For example, when you type `geometrixx`, assets with titles `Geometrixx`, `GEOMETRIXX`, and `GeoMetRixx` are displayed in the search results.
+* La recherche ne respecte pas la casse. Par exemple, lorsque vous tapez `geometrixx`, les ressources dont les titres sont `Geometrixx`, `GEOMETRIXX` et `GeoMetRixx` s’affichent dans les résultats de la recherche.
 
 * Les correspondances partielles d’un mot ne sont pas prises en charge. Pour effectuer une recherche en utilisant des chaînes partielles, utilisez le caractère générique *. Toutefois, si la requête correspond à un mot complet, le formulaire ou la ressource correspondant s’affiche.
-* Les espaces supplémentaires sont respectés et ne sont pas coupés lors de la recherche. Par exemple, `My form` n’est pas la même requête de recherche que `My form`.
+* Les espaces supplémentaires sont respectés et ne sont pas coupés lors de la recherche. Par exemple, `My form` n&#39;est pas la même requête de recherche que `My form`.
 
 * Si les données et les valeurs d’affichage des champs dans les propriétés de métadonnées sont différentes, vous ne pouvez pas utiliser ces valeurs comme paramètres de recherche. Par exemple, vous ne pouvez effectuer une recherche sur la base de l’état, tel que Modifié ou Publié, car ces propriétés sont stockées dans un format différent.
 
