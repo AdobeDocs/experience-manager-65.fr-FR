@@ -37,7 +37,7 @@ La structure de l’émulateur AEM :
 >
 >Cette fonction est uniquement prise en charge dans l’IU classique.
 
-## Caractéristiques des émulateurs {#emulators-characteristics}
+## Caractéristiques des émulateurs  {#emulators-characteristics}
 
 Un émulateur :
 
@@ -46,7 +46,7 @@ Un émulateur :
 * a une apparence définie via CSS ;
 * prend en charge les modules externes (par exemple, le module externe de rotation sur des appareils mobiles) ;
 * est uniquement actif sur l’auteur ;
-* Its base component is at `/libs/wcm/emulator/components/base`.
+* Son composant de base est `/libs/wcm/emulator/components/base`.
 
 ### Transformation du contenu par l’émulateur {#how-the-emulator-transforms-the-content}
 
@@ -104,7 +104,7 @@ De cette manière, l’aspect complet de l’émulateur peut être contrôlé à
 >
 >Il est recommandé que le projet HTML encapsule le contenu du corps dans une seule balise div, comme dans l’exemple ci-dessus. Si le contenu du corps contient plusieurs balises, les résultats peuvent être imprévisibles.
 
-### Émulateurs mobiles {#mobile-emulators}
+### Émulateurs mobiles  {#mobile-emulators}
 
 Les émulateurs mobiles existants :
 
@@ -113,13 +113,13 @@ Les émulateurs mobiles existants :
 
    http://localhost:4502/bin/wcm/mobile/emulators.json
 
-When the page component relies on the mobile page component ( `/libs/wcm/mobile/components/page`), the emulator functionality is automatically integrated in the page through the following mechanism:
+Lorsque le composant de page repose sur le composant de page mobile ( `/libs/wcm/mobile/components/page`), la fonctionnalité d’émulateur est automatiquement intégrée dans la page par le biais du mécanisme suivant :
 
 * Le composant de page mobile `head.jsp` inclut le composant init de l’émulateur associé au groupe de périphériques (uniquement en mode de création) et le CSS de rendu du groupe de périphériques via : .
 
    `deviceGroup.drawHead(pageContext);`
 
-* The method `DeviceGroup.drawHead(pageContext)` includes the emulator&#39;s init component, i.e. calls the `init.html.jsp` of the emulator component. If the emulator component does not have its own `init.html.jsp` and relies on the mobile base emulator ( `wcm/mobile/components/emulators/base)`, the init script of the mobile base emulator is called ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* La méthode `DeviceGroup.drawHead(pageContext)` inclut le composant d&#39;initialisation de l&#39;émulateur, c&#39;est-à-dire appelle la `init.html.jsp` du composant d&#39;émulateur. Si le composant d&#39;émulateur ne possède pas son propre `init.html.jsp` et s&#39;appuie sur l&#39;émulateur de base mobile ( `wcm/mobile/components/emulators/base)`), le script d&#39;initialisation de l&#39;émulateur de base mobile est appelé ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
 * Le script d’initialisation de l’émulateur de base mobile définit via Javascript :
 
@@ -136,11 +136,11 @@ When the page component relies on the mobile page component ( `/libs/wcm/mobile/
 
 Pour créer un émulateur mobile personnalisé :
 
-1. Ci-dessous, `/apps/myapp/components/emulators` créez le composant `myemulator` (type de noeud : `cq:Component`).
+1. Ci-dessous `/apps/myapp/components/emulators` créez le composant `myemulator` (type de noeud : `cq:Component`).
 
 1. Définissez la propriété `sling:resourceSuperType` sur `/libs/wcm/mobile/components/emulators/base`
 
-1. Définissez une bibliothèque cliente CSS avec catégorie `cq.wcm.mobile.emulator` pour l’aspect de l’émulateur : name = `css`, node type = `cq:ClientLibrary`
+1. Définissez une bibliothèque cliente CSS avec la catégorie `cq.wcm.mobile.emulator` pour l’aspect de l’émulateur : name = `css`, node type = `cq:ClientLibrary`
 
    Par exemple, vous pouvez vous référer au noeud `/libs/wcm/mobile/components/emulators/iPhone/css`
 
@@ -150,9 +150,9 @@ Pour créer un émulateur mobile personnalisé :
 
 1. Si l’émulateur prend en charge des fonctionnalités spécifiques définies par des modules externes (comme le défilement tactile), créez un noeud de configuration sous l’émulateur : name = `cq:emulatorConfig`, node type = `nt:unstructured` et ajoutez la propriété qui définit le module externe :
 
-   * Nom = `canRotate`, Type = `Boolean`, Valeur = `true`: pour inclure la fonctionnalité de rotation.
+   * Nom = `canRotate`, Type = `Boolean`, Valeur = `true` : pour inclure la fonctionnalité de rotation.
 
-   * Name = `touchScrolling`, Type = `Boolean`, Value = `true`: to include the touch scrolling functionality.
+   * Nom = `touchScrolling`, Type = `Boolean`, Valeur = `true` : pour inclure la fonctionnalité de défilement tactile.
 
    Plus de fonctionnalités peuvent être ajoutées en définissant vos propres modules externes.
 
