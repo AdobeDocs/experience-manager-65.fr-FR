@@ -1,6 +1,6 @@
 ---
 title: Configurez Asset Insights pour obtenir des analyses.
-description: Configure Asset Insights in [!DNL Adobe Experience Manager Assets].
+description: Configurez Asset Insights dans  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
@@ -13,13 +13,13 @@ ht-degree: 35%
 
 # Configuration des statistiques sur les ressources {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] récupère les données d’utilisation des ressources numériques utilisées par des sites Web tiers à partir de [!DNL Adobe Analytics]. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] récupère les données d’utilisation des ressources numériques utilisées par des sites Web tiers à partir de  [!DNL Adobe Analytics]. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à Adobe Analytics.
 
 >[!NOTE]
 >
 >Les statistiques sont uniquement prises en charge et fournies pour les images.
 
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
 
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
@@ -28,17 +28,17 @@ ht-degree: 35%
 
    ![Configuration d’Adobe Analytics pour Assets Insights dans le Experience Manager](assets/insights_config2.png)
 
-   *Figure : Configurez [!DNL Adobe Analytics] pour Assets Insights dans [!DNL Experience Manager].*
+   *Figure : Configurez  [!DNL Adobe Analytics] pour Assets Insights dans  [!DNL Experience Manager].*
 
 1. Cliquez sur **[!UICONTROL Authentifier]**.
-1. After [!DNL Experience Manager] authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an [!DNL Adobe Analytics] report suite from where you want Asset Insights to fetch data. Cliquez sur **[!UICONTROL Ajouter]**.
-1. After [!DNL Experience Manager] sets up your report suite, click **[!UICONTROL Done]**.
+1. Une fois que [!DNL Experience Manager] a authentifié vos informations d’identification, dans la liste **[!UICONTROL Report Suite]**, choisissez une suite de rapports [!DNL Adobe Analytics] à partir de laquelle vous souhaitez que Asset Insights récupère les données. Cliquez sur **[!UICONTROL Ajouter]**.
+1. Une fois [!DNL Experience Manager] configuré votre suite de rapports, cliquez sur **[!UICONTROL Terminé]**.
 
-## Page tracker {#page-tracker}
+## Suivi de page {#page-tracker}
 
-After you configure your [!DNL Adobe Analytics] account, the Page Tracker code is generated for you. To enable Assets Insights to track [!DNL Experience Manager] assets used in third-party websites, include the page tracker code in the website code. Use the [!UICONTROL Page Tracker] utility in [!DNL Experience Manager Assets] to generate the page tracker code. For more information on how to include your Page Tracker code in third-party web pages, see [Use page tracker and embed code in web pages](/help/assets/use-page-tracker.md).
+Une fois votre compte [!DNL Adobe Analytics] configuré, le code de suivi de page est généré pour vous. Pour permettre à Assets Insights d’effectuer le suivi des [!DNL Experience Manager] fichiers utilisés dans les sites Web tiers, incluez le code de suivi de page dans le code du site Web. Utilisez l&#39;utilitaire [!UICONTROL Suivi de page] dans [!DNL Experience Manager Assets] pour générer le code du suivi de page. Pour plus d&#39;informations sur la manière d&#39;inclure votre code de suivi de page dans des pages Web tierces, voir [Utilisation du suivi de page et du code incorporé dans les pages Web](/help/assets/use-page-tracker.md).
 
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
 
    ![chlimage_1-73](assets/chlimage_1-214.png)
 
