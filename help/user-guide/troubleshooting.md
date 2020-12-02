@@ -18,11 +18,11 @@ ht-degree: 25%
 
 [Consultez ce guide et des conseils pour dépanner l’instance d’auteur AEM.](/help/sites-authoring/troubleshooting.md)
 
-## Résolution des problèmes d’administration {#administering}
+## Résolution des problèmes d&#39;administration {#administering}
 
 [Consultez ce guide et des conseils pour résoudre les problèmes d’administration dans AEM.](/help/sites-administering/troubleshoot.md)
 
-## Dépannage des journaux des AEM {#logs}
+## Dépannage des journaux d&#39;AEM {#logs}
 
 [Consultez ce guide et des conseils pour la résolution des problèmes liés aux journaux d&#39;AEM.](/help/sites-administering/troubleshooting.md)
 
