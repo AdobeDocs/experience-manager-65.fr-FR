@@ -20,4 +20,4 @@ ht-degree: 89%
 
 # Nombre maximal de curseurs ouverts dans une base de données Oracle {#oracle-database-maximum-open-cursors-threshold}
 
-Pour configurer le nombre maximal de curseurs ouverts dans Oracle, il se peut que vous ayez à ajuster la valeur en fonction de votre application. Avec une charge modérée, le nombre moyen de curseurs ouverts était de 2 700. Nous vous conseillons de démarrer avec une limite supérieure de 3 000. For more information, go to [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Pour configurer le nombre maximal de curseurs ouverts dans Oracle, il se peut que vous ayez à ajuster la valeur en fonction de votre application. Avec une charge modérée, le nombre moyen de curseurs ouverts était de 2 700. Nous vous conseillons de démarrer avec une limite supérieure de 3 000. Pour plus d’informations, consultez [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
