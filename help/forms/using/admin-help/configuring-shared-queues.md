@@ -30,7 +30,7 @@ Vous pouvez gérer l’accès à la file d’attente d’utilisateur sélectionn
 
 Vous pouvez gérer les files d’attente partagées affectées à un utilisateur sélectionné à l’aide de cette option.
 
-## Gestion de l’accès à une file d’attente d’utilisateur sélectionnée {#managing-access-to-a-selected-user-queue}
+## Gestion de l’accès à une file d’attente d’utilisateur sélectionnée  {#managing-access-to-a-selected-user-queue}
 
 L’option Gérer l’accès à un utilisateur permet de gérer l’accès à une file d’attente d’utilisateur sélectionnée. Vous pouvez accorder ou révoquer l’accès à une file d’attente d’utilisateur à d’autres utilisateurs au sein de votre société. Par exemple, Kara Bowman est absente du bureau. La fonction Gérer l’accès à un utilisateur permet de partager sa file d’attente avec Akira Tanaka et John Jacobs pour qu’elle puisse être terminée. Une fois que Kara Bowman revient au bureau, vous pouvez alors révoquer à Akira Tanaka et John Jacobs l’accès à sa file d’attente.
 
@@ -40,7 +40,7 @@ Lorsqu’elles sont partagées, ces tâches peuvent être exécutées par l’ut
 >
 >Flex Workspace est obsolète pour la version d’AEM Forms.
 
-### Configuration de l’accès à une file d’attente d’utilisateur sélectionnée {#configuring-access-to-a-selected-user-queue}
+### Configuration de l’accès à une file d’attente d’utilisateur sélectionnée  {#configuring-access-to-a-selected-user-queue}
 
 1. Connectez-vous à Administration Console à l’aide d’un compte administrateur.
 1. Sélectionnez **Services** > **Processus des formulaires** > **File d’attente partagée**.
@@ -49,7 +49,7 @@ Lorsqu’elles sont partagées, ces tâches peuvent être exécutées par l’ut
 1. Recherchez et sélectionnez l’utilisateur dans le volet inférieur gauche. Cliquez sur Partager.
 1. Cliquez sur Enregistrer pour terminer l’opération.
 
-### Révocation de l’accès à une file d’attente d’utilisateur sélectionnée {#revoking-access-to-a-selected-user-queue}
+### Révocation de l’accès à une file d’attente d’utilisateur sélectionnée  {#revoking-access-to-a-selected-user-queue}
 
 1. Connectez-vous à Administration Console à l’aide d’un compte administrateur.
 1. Sélectionnez **Services** > **Processus des formulaires** > **File d’attente partagée**.
@@ -58,7 +58,7 @@ Lorsqu’elles sont partagées, ces tâches peuvent être exécutées par l’ut
 1. Le volet inférieur droit affiche la liste des utilisateurs ayant accès à la file d’attente d’utilisateur sélectionnée. Sélectionnez l’utilisateur et cliquez sur Révoquer.
 1. Cliquez sur Enregistrer pour terminer l’opération.
 
-## Gestion des files d’attente affectées à un utilisateur {#managing-queues-assigned-to-a-user}
+## Gestion des files d’attente affectées à un utilisateur  {#managing-queues-assigned-to-a-user}
 
 La fonction Gérer l’accès par un utilisateur vous permet de gérer les files d’attente affectées à un utilisateur sélectionné. Vous pouvez accorder ou révoquer l’accès aux files d’attente d’utilisateur à un utilisateur sélectionné de manière individuelle. Vous pouvez, par exemple, affecter les files d’attente d’Akira Tanaka et de John Jacobs à Kara Bowman. La fonction Gérer l’accès par un utilisateur vous permet de rechercher Kara Bowman et de lui accorder l’accès aux tâches affectées à Akira Tanaka et John Jacobs. Vous pouvez ensuite révoquer ultérieurement l’accès de Kara Bowman à ces files d’attente d’utilisateur.
 
@@ -68,7 +68,7 @@ Une fois affectées, ces tâches peuvent être exécutées par l’utilisateur �
 >
 >Flex Workspace est obsolète pour la version d’AEM forms.
 
-### Accorder l’accès à une file d’attente d’utilisateur sélectionnée {#granting-access-to-a-selected-user-queue}
+### Accorder l’accès à une file d’attente d’utilisateur sélectionnée  {#granting-access-to-a-selected-user-queue}
 
 1. Connectez-vous à Administration Console à l’aide d’un compte administrateur.
 1. Sélectionnez **Services** > **Processus des formulaires** > **File d’attente partagée**.
@@ -77,7 +77,7 @@ Une fois affectées, ces tâches peuvent être exécutées par l’utilisateur �
 1. Recherchez et sélectionnez dans le volet inférieur gauche les files d’attente d’utilisateur que vous souhaitez partager avec l’utilisateur sélectionné. Cliquez sur Partager.
 1. Cliquez sur Enregistrer pour terminer l’opération.
 
-### Révocation de l’accès à une file d’attente d’utilisateur sélectionnée {#revoking_access_to_a_selected_user_queue-1}
+### Révocation de l’accès à une file d’attente d’utilisateur sélectionnée  {#revoking_access_to_a_selected_user_queue-1}
 
 1. Connectez-vous à Administration Console à l’aide d’un compte administrateur.
 1. Sélectionnez **Services** > **Processus des formulaires** > **File d’attente partagée**.
