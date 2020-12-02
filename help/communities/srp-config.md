@@ -1,6 +1,6 @@
 ---
-title: Configuration du stockage
-seo-title: Configuration du stockage
+title: Stockage   Configuration
+seo-title: Stockage   Configuration
 description: Accès à la console de configuration d'Enregistrement
 seo-description: Accès à la console de configuration d'Enregistrement
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
@@ -35,16 +35,16 @@ Pour consulter les options d’enregistrement et les topologies de déploiement,
 
 Dans l’environnement d’auteur, pour accéder à la console de configuration de l’enregistrement.
 
-* Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > Configuration des **[!UICONTROL Enregistrements.]**
+* Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL Configuration de l&#39;Enregistrement]**
 
 Pour sélectionner une option d’enregistrement autre que le JCR par défaut :
 
 * Sélectionner une option
 * Configurer correctement
 
-   * Voir les détails de la [sélection du MSRP](msrp.md#select-msrp)
-   * Voir les détails de la [sélection de DSRP](dsrp.md#select-dsrp)
-   * Voir les détails de la [sélection d&#39;ASRP](asrp.md#select-asrp)
+   * Voir les détails de [sélection de MSRP](msrp.md#select-msrp)
+   * Voir les détails de [sélection de DSRP](dsrp.md#select-dsrp)
+   * Voir les détails de [sélection de l&#39;ASRP](asrp.md#select-asrp)
 
 * Sélectionnez **[!UICONTROL Envoyer]**.
 
@@ -52,10 +52,10 @@ Pour sélectionner une option d’enregistrement autre que le JCR par défaut :
 
 Sachez que si aucune sélection n’est effectuée, la valeur par défaut est le référentiel AEM, JCR.
 
-JCR *n’est pas* un magasin commun partagé par l’auteur et les environnements de publication. Le contenu de la communauté n’est visible que depuis l’environnement d’auteur ou de publication dans lequel il a été créé.
+JCR est *non* un magasin commun partagé par l’auteur et les environnements de publication. Le contenu de la communauté n’est visible que depuis l’environnement d’auteur ou de publication dans lequel il a été créé.
 
-Consultez le magasin [](jsrp.md) JCR pour plus d’informations.
+Consultez [JCR Store](jsrp.md) pour plus d’informations.
 
 >[!NOTE]
 >
->L’absence du noeud `srpc` sous `/etc/socialconfig` indique le magasin [](jsrp.md)JCR par défaut.
+>L’absence du noeud `srpc` sous `/etc/socialconfig` indique le magasin [JCR par défaut](jsrp.md).
