@@ -35,11 +35,11 @@ Vous trouverez, aux pages suivantes, des liens rapides vers certains des princip
 
 * [Composants pour la création de page](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
+   Les composants utilisés pour créer le contenu de page standard sont principalement contenus dans les groupes **Général**, **Colonnes** et **Forms**.
 
 * [Commerce électronique](/help/sites-administering/ecommerce.md)
 
-   La fonctionnalité eCommerce de AEM comprend également une gamme de composants contenus dans le groupe **Commerce** . L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
+   La fonctionnalité eCommerce de AEM comprend également une gamme de composants contenus dans le groupe **Commerce**. L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
 
 ## Utilisation du mode de conception pour configurer des composants {#using-design-mode-to-configure-components}
 
