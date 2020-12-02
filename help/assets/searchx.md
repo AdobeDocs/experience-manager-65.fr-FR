@@ -1,6 +1,6 @@
 ---
 title: Étendre la fonctionnalité de recherche.
-description: Étendez les fonctionnalités de recherche [!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
+description: Étendez les capacités de recherche de  [!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
@@ -13,29 +13,29 @@ ht-degree: 77%
 
 # Étendre la recherche de ressources{#extending-assets-search}
 
-Vous pouvez étendre les fonctionnalités [!DNL Adobe Experience Manager Assets] de recherche. Out of the box, [!DNL Experience Manager Assets] searches for assets by strings.
+Vous pouvez étendre les fonctionnalités de recherche [!DNL Adobe Experience Manager Assets]. [!DNL Experience Manager Assets] recherche des ressources par chaînes.
 
 La recherche est effectuée par le biais de l’interface QueryBuilder, de sorte qu’elle puisse être personnalisée avec plusieurs prédicats. Vous pouvez remplacer l’ensemble des prédicats par défaut dans le répertoire suivant : `/apps/dam/content/search/searchpanel/facets`.
 
-You can also add additional tabs to the [!DNL Assets] admin panel.
+Vous pouvez également ajouter d’autres onglets au panneau d’administration [!DNL Assets].
 
 >[!CAUTION]
 >
->As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [deprecated and removed features](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommande l’utilisation de l’interface utilisateur tactile. For customization, see [search facets](/help/assets/search-facets.md).
+>A compter de [!DNL Experience Manager] 6.4, l’interface utilisateur classique est obsolète. Pour l’annonce, voir [fonctions obsolètes et supprimées](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommande l’utilisation de l’interface utilisateur tactile. Pour la personnalisation, voir [facettes de recherche](/help/assets/search-facets.md).
 
 ## Incrustation {#overlaying}
 
-To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the `searchpanel` configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Pour superposer les prédicats préconfigurés, copiez le noeud `facets` de `/libs/dam/content/search/searchpanel` vers `/apps/dam/content/search/searchpanel/` ou spécifiez une autre propriété `facetURL` dans la configuration `searchpanel` (la valeur par défaut est `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
->Par défaut, la structure de répertoires sous `/apps` n’existe pas, donc créez-la. Assurez-vous que les types de nœuds correspondent à ceux existant sous `/libs`.
+>Par défaut, la structure d&#39;annuaire sous `/apps` n&#39;existe pas et créez-la. Assurez-vous que les types de nœuds correspondent à ceux existant sous `/libs`.
 
 ## Ajouter des onglets {#adding-tabs}
 
-You can add additional search tabs by configuring them in the [!DNL Assets] admin interface. Pour créer des onglets supplémentaires, procédez comme suit :
+Vous pouvez ajouter d&#39;autres onglets de recherche en les configurant dans l&#39;interface d&#39;administration [!DNL Assets]. Pour créer des onglets supplémentaires, procédez comme suit :
 
 1. Créez la structure de dossiers `/apps/wcm/core/content/damadmin/tabs,`si elle n’existe pas encore, puis copiez le nœud `tabs` dans le répertoire `/libs/wcm/core/content/damadmin` et collez-le.
 1. Créez et configurez le second onglet, le cas échéant.
@@ -46,15 +46,15 @@ You can add additional search tabs by configuring them in the [!DNL Assets] admi
 
 ## Création de prédicats personnalisés {#creating-custom-predicates}
 
-[!DNL Assets] est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Customizing an Asset Share in this way is covered in [create and configure an Asset Share page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Assets] est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. La personnalisation d’un partage de ressources de cette manière est traitée dans [créer et configurer une page de partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-In addition to using pre-existing predicates, [!DNL Experience Manager] developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md).
+Outre l&#39;utilisation de prédicats préexistants, les développeurs [!DNL Experience Manager] peuvent également créer leurs propres prédicats à l&#39;aide de l&#39;[API du créateur de Requêtes](/help/sites-developing/querybuilder-api.md).
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 La pratique recommandée consiste à copier un prédicat existant, puis à le modifier. Des exemples de prédicats sont disponibles dans le répertoire **/libs/cq/search/components/predicates**.
 
-### Exemple : création d’un prédicat de propriété simple   {#example-build-a-simple-property-predicate}
+### Exemple : création d’un prédicat de propriété simple    {#example-build-a-simple-property-predicate}
 
 Pour créer un prédicat de propriété, procédez comme suit :
 
@@ -250,18 +250,18 @@ Pour créer un prédicat de groupe, procédez comme suit :
 
 Les prédicats suivants sont disponibles sous forme de widgets ExtJS préconfigurés.
 
-### FulltextPredicate   {#fulltextpredicate}
+### FulltextPredicate    {#fulltextpredicate}
 
 | Propriétés | Type | Description |
 |---|---|---|
 | predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `fulltext` |
-| searchCallback | Fonction | Callback for triggering search on event `keyup`. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Fonction | Rappel pour le déclenchement de la recherche sur le événement `keyup`. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Propriétés | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `property` |
+| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `property` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:title` |
 | defaultValue | Chaîne | Valeur par défaut préremplie. |
 
@@ -269,7 +269,7 @@ Les prédicats suivants sont disponibles sous forme de widgets ExtJS préconfigu
 
 | Propriétés | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `path` |
+| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `path` |
 | rootPath | Chaîne | Chemin racine du prédicat. La valeur par défaut est `/content/dam` |
 | pathFieldPredicateName | Chaîne | La valeur par défaut est `folder` |
 | showFlatOption | Booléen | Indicateur pour afficher la case à cocher `search in subfolders`. La valeur par défaut est « true ». |
@@ -278,7 +278,7 @@ Les prédicats suivants sont disponibles sous forme de widgets ExtJS préconfigu
 
 | Propriétés | Type | Description |
 |---|---|---|
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
+| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/jcr:lastModified` |
 | defaultValue | Chaîne | Valeur par défaut préremplie |
 
@@ -287,15 +287,15 @@ Les prédicats suivants sont disponibles sous forme de widgets ExtJS préconfigu
 | Propriétés | Type | Description |
 |---|---|---|
 | titre | Chaîne | Ajoute un titre supérieur supplémentaire |
-| predicateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
+| preateName | Chaîne | Nom du prédicat. La valeur par défaut est `daterange` |
 | propertyName | Chaîne | Nom de la propriété JCR. La valeur par défaut est `jcr:content/metadata/cq:tags` |
 | collapse | Chaîne | Réduire par niveau. La valeur par défaut est `level1` |
 | triggerSearch | Booléen | Indicateur de déclenchement de la recherche lors de la vérification. Par défaut : « false » |
 | searchCallback | Fonction | Rappel pour déclencher la recherche. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | Nombre | Délai d’expiration avant le déclenchement de searchCallback. Valeur par défaut : 800 ms |
 
-## Personnalisation des résultats de la recherche {#customizing-search-results}
+## Personnaliser les résultats de la recherche {#customizing-search-results}
 
 La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. [!DNL Experience Manager Assets] est fourni avec un ensemble de loupes prédéfinies qui peuvent être utilisées pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-In addition to using pre-existing lenses, [!DNL Experience Manager] developers can also create their own lenses.
+Outre l&#39;utilisation de lentilles préexistantes, [!DNL Experience Manager] les développeurs peuvent également créer leurs propres lentilles.
