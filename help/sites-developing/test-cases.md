@@ -41,7 +41,7 @@ Les tests devraient définir clairement :
 
 L’idée d’automatiser les cas de test est évidemment intéressante car on peut ainsi éliminer les tâches répétitives.
 
-## Tests manuels ou tests automatisés {#manual-versus-automated-tests}
+## Tests manuels ou tests automatisés  {#manual-versus-automated-tests}
 
 Cependant, l’automatisation des cas de test est un lourd investissement. Il faut donc prendre en compte certains aspects :
 
@@ -56,11 +56,12 @@ Lors des tests AEM quelques détails spécifiques présentent un intérêt parti
 
 **Environnements de création et de publication**
 
-Although, covered in [Environments](/help/sites-developing/the-basics.md#environments) it is worth highlighting a deciding factor of AEM with regard to testing.
+Bien qu&#39;il soit indiqué dans les [Environnements](/help/sites-developing/the-basics.md#environments), il convient de souligner un facteur décisif d&#39;AEM en ce qui concerne les tests.
 
 Vous devez considérer AEM comme deux applications :
 
-* l’environnement *Auteur* Cette instance permet aux auteurs d’entrer et de publier du contenu.
+* l&#39;environnement *Auteur*
+Cette instance permet aux auteurs d’entrer et de publier du contenu.
 Elle comporte un plus petit nombre prévisible d’utilisateurs, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
 
 * l’environnement de *publication*
@@ -89,15 +90,20 @@ La plupart des projets installent le dispatcher pour la mise en cache et l’éq
 
 Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
 
-* **Assurez-vous que le visiteur du site Web voit les mises à jour de contenu avec précision**.
+* **Assurez-vous**
+que le visiteur du site Web voit les mises à jour de contenu.
 
-* **La continuité** permet de s’assurer que le site Web est toujours disponible lorsqu’un serveur est arrêté.
+* ****
+Continuité pour s’assurer que le site Web est toujours disponible lorsqu’un serveur est arrêté.
 
-* **Les grappes** Les grappes servent à :
+* ****
+ClustersLes grappes sont utilisées pour fournir :
 
-   * **Basculement** en panne d’un serveur, les autres serveurs de la grappe prennent le relais du traitement.
+   * ****
+BasculementSi un serveur échoue, d&#39;autres serveurs de la grappe prennent le relais du traitement.
 
-   * **L’équilibrage des performances**de charge avec basculement complet augmente les performances d’une grappe.
+   * **L’équilibrage**
+PerformanceLoad avec basculement complet augmente les performances d’une grappe.
 Lorsqu’il est utilisé pour un projet client, le cluster doit être testé pour confirmer le bon fonctionnement de la configuration.
 
 ## Test de logiciels tiers {#testing-third-party-software}
