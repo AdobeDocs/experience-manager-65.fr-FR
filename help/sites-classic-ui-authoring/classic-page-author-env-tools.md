@@ -19,7 +19,7 @@ ht-degree: 90%
 ---
 
 
-# Création – Environnement et outils {#authoring-the-environment-and-tools}
+# Création – Environnement et outils  {#authoring-the-environment-and-tools}
 
 L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils proposés sont accessibles dans les divers éditeurs de pages et consoles.
 
@@ -152,7 +152,7 @@ Vous pouvez utiliser un nombre indéfini de caractères génériques dans une re
 
 >[!NOTE]
 >
->You can also use [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) search.
+>Vous pouvez également utiliser la recherche [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Affichage de références {#showing-references}
 
@@ -164,7 +164,7 @@ Pour afficher les références de page directes :
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
+1. Sélectionnez **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -177,7 +177,7 @@ Dans certains cas, le sidekick permet d’exécuter d’autres actions, notammen
 
 D’autres [relations entre pages sont visibles dans la console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
-## Journal d’audit {#audit-log}
+## Journal d’audit  {#audit-log}
 
 Le **journal d’audit** est accessible depuis l’onglet **Informations** du sidekick. Il répertorie les actions récentes ayant eu lieu sur la page active ; par exemple :
 
@@ -185,9 +185,9 @@ Le **journal d’audit** est accessible depuis l’onglet **Informations** du si
 
 ## Informations sur la page {#page-information}
 
-The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
+La console de site Web [fournit également des informations sur l&#39;état actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), telles que la publication, la modification, le verrouillage, la livecopy, etc.
 
-## Modes de page    {#page-modes}
+## Modes de page     {#page-modes}
 
 Lors de la modification d’une page dans l’IU classique, plusieurs modes sont accessibles à l’aide des icônes au bas du sidekick :
 
