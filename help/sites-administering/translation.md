@@ -20,7 +20,7 @@ ht-degree: 87%
 ---
 
 
-# Traduction de contenu pour les sites multilingues {#translating-content-for-multilingual-sites}
+# Traduction de contenu pour les sites multilingues  {#translating-content-for-multilingual-sites}
 
 Automatisez la traduction du contenu des pages, des ressources et du contenu créé par les utilisateurs pour créer et tenir à jour des sites web multilingues. Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à AEM et vous créez des projets pour traduire le contenu dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
 
@@ -31,9 +31,9 @@ La traduction du contenu implique les étapes suivantes :
 
 1. [Connectez AEM à votre fournisseur de service de traduction](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) et [créez des configurations de structure d’intégration de traduction](/help/sites-administering/tc-tic.md).
 1. [Associer les pages de votre gabarit de langue](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) au service de traduction et aux configurations de structure.
-1. [Identifiez le type de contenu](/help/sites-administering/tc-rules.md) à traduire.
+1. [Identifiez le type de ](/help/sites-administering/tc-rules.md) contenu à traduire.
 1. [Préparez le contenu à traduire](/help/sites-administering/tc-prep.md) en créant le gabarit de langue et les pages racine des copies de langue.
-1. [Créez des projets](/help/sites-administering/tc-manage.md) de traduction pour rassembler le contenu à traduire et préparer le processus de traduction.
+1. [Créez des ](/help/sites-administering/tc-manage.md) projets de traduction pour rassembler le contenu à traduire et préparer le processus de traduction.
 1. Utiliser les projets de translation pour [gérer le processus de traduction du contenu](/help/sites-administering/tc-manage.md).
 
 Si votre fournisseur de services de traduction ne fournit pas de connecteur pour l’intégration à AEM, AEM prend en charge l’extraction et la réinsertion manuelles du contenu de translation au format XML.
@@ -44,4 +44,4 @@ Si votre fournisseur de services de traduction ne fournit pas de connecteur pour
 
 ## Bonnes pratiques {#best-practices}
 
-The [Translation Best Practices](/help/sites-administering/tc-bp.md) page contains important information regarding your implementation.
+La page [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md) contient des informations importantes concernant votre implémentation.
