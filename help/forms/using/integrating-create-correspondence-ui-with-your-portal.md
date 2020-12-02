@@ -24,7 +24,7 @@ ht-degree: 76%
 
 Cet article décrit la méthode d’intégration de la solution de création de correspondance dans votre environnement.
 
-## Appel basé sur une URL {#url-based-invocation}
+## Appel basé sur une URL  {#url-based-invocation}
 
 Il est possible d’appeler l’application de création de correspondance à partir d’un portail personnalisé en préparant une URL selon les paramètres de demande suivants :
 
@@ -43,11 +43,11 @@ Par exemple, le portail personnalisé prépare l’URL en tant que\
 >
 >Avant d’appeler l’application de création de correspondance, enregistrez et chargez les données d’appel de l’interface utilisateur de création de correspondance au niveau de l’URL de données requise. Cette opération peut être réalisée à partir du portail personnalisé ou à l’aide d’un autre processus différent d’arrière-plan.
 
-## Appel inséré basé sur les données {#inline-data-based-invocation}
+## Appel inséré basé sur les données  {#inline-data-based-invocation}
 
-Another (and a more secure) way to call the Create Correspondence application could be to simply hit the URL at https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, while sending the parameters and data to call the Create Correspondence application as a POST request (hiding them from the end user). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
+Un autre moyen (plus sécurisé) d’appeler l’application de création de correspondance peut être d’accéder à l’URL https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, tout en envoyant les paramètres et les données pour appeler l’application de création de correspondance en tant que demande de POST (en les cachant de l’utilisateur final). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
 
-### Paramètres de définition de lettre {#parameters-for-specifying-letter}
+### Paramètres de définition de lettre  {#parameters-for-specifying-letter}
 
 | **Nom** | **Type** | **Description** |
 |---|---|---|
@@ -56,7 +56,7 @@ Another (and a more secure) way to call the Create Correspondence application co
 
 L’ordre des paramètres du tableau indique la préférence de paramètres utilisés pour le chargement de la lettre.
 
-### Paramètres de définition de la source de données XML {#parameters-for-specifying-the-xml-data-source}
+### Paramètres de définition de la source de données XML  {#parameters-for-specifying-the-xml-data-source}
 
 <table>
  <tbody>
