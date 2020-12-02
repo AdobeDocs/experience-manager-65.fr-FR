@@ -20,7 +20,7 @@ ht-degree: 82%
 ---
 
 
-# Mise à niveau vers AEM 6.5 {#upgrading-to-aem}
+# Mise à niveau vers AEM 6.5  {#upgrading-to-aem}
 
 Dans cette section, nous présentons la mise à niveau d’une installation AEM vers AEM 6.5 :
 
@@ -47,7 +47,7 @@ Pour une référence conviviale aux instances d’AEM incluses dans ces procédu
 >
 >Dans le cadre des efforts pour améliorer la fiabilité des mises à niveau, AEM a subi une restructuration complète des référentiels. Pour plus d’informations sur la façon de les aligner avec la nouvelle structure, voir[ Restructuration des référentiels dans AEM.](/help/sites-deploying/repository-restructuring.md)
 
-## What Has Changed? {#what-has-changed}
+## Qu&#39;est-ce qui a changé ? {#what-has-changed}
 
 Voici quelques changements majeurs mis en œuvre avec les dernières versions d’AEM :
 
@@ -86,11 +86,11 @@ La mise à niveau d’AEM consiste en plusieurs étapes et peut parfois se déro
 
 ## Flux de mise à niveau {#upgrade-overview-1}
 
-Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. The upgrade should start with the Pattern Detector(see [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)) which should let you decide the path you want to take for compatibility with AEM 6.4 based on the patterns in the generated report.
+Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. La mise à niveau doit s’effectuer en début avec le Détecteur de schémas (voir [Évaluation de la complexité de la mise à niveau avec le Détecteur de schémas](/help/sites-deploying/pattern-detector.md)), ce qui vous permet de choisir le chemin que vous souhaitez prendre pour la compatibilité avec AEM 6.4 en fonction des modèles du rapport généré.
 
-There was a big focus in 6.5 to keep all the new features backward compatible, but in cases where you still see some backward compatibility issues, the compatibility mode allows you to temporarily defer development to keep your custom code compliant with 6.5. This approach helps you avoid development effort immediately after the upgrade(see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+La version 6.5 visait principalement à maintenir toutes les nouvelles fonctionnalités rétrocompatibles, mais dans les cas où vous rencontrez encore des problèmes de compatibilité ascendante, le mode de compatibilité vous permet de reporter temporairement le développement pour que votre code personnalisé reste compatible avec la version 6.5. Cette approche vous permet d&#39;éviter les efforts de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
-Finally, in your 6.5 development cycle, features introduced under Sustainable Upgrades(see [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)) help you follow best practices to make future upgrades even more efficient and seamless.
+Enfin, dans le cycle de développement de la version 6.5, les fonctionnalités introduites sous la section Mises à niveau durables (voir [Mises à niveau durables](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les meilleures pratiques pour rendre les mises à niveau futures encore plus efficaces et homogènes.
 
 ![6_4_upgrade_overviewflechart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
 
