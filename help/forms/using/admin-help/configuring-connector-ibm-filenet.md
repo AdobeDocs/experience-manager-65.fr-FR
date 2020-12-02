@@ -26,7 +26,7 @@ Le connecteur pour IBM FileNet permet la communication entre AEM forms et IBM Fi
 >
 >Dans les versions précédentes, il était possible de stocker des actifs dans un référentiel ECM. Dans cette version, les actifs sont stockés dans le référentiel natif d’AEM forms et les services du fournisseur de référentiel sont ignorés. La migration d’actifs d’un référentiel ECM vers le référentiel AEM forms s’effectue lors de la mise à niveau vers AEM forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM forms correspondant à votre serveur d’applications.
 
-## Configuration de la connexion à Content Engine {#configure-the-connection-to-the-content-engine}
+## Configuration de la connexion à Content Engine  {#configure-the-connection-to-the-content-engine}
 
 IBM FileNet P8 Content Engine fournit des services logiciels permettant de gérer le contenu d’entreprise et les objets commerciaux définis par les clients dans les référentiels de contenu FileNet.
 
@@ -55,7 +55,7 @@ IBM FileNet P8 Content Engine fournit des services logiciels permettant de gé
 1. Dans le champ Nom d’utilisateur, saisissez le nom d’un utilisateur possédant les droits d’accès à la banque d’objets par défaut spécifiée à l’étape précédente.
 1. Dans le champ Mot de passe, saisissez le mot de passe de l’utilisateur et cliquez sur Enregistrer.
 
-## Configuration des paramètres de Process Engine {#configure-the-process-engine-settings}
+## Configuration des paramètres de Process Engine  {#configure-the-process-engine-settings}
 
 Connector for IBM FileNet contient le service Process Engine Connector for IBM FileNet, qui permet d’interagir avec IBM FileNet Process Engine. Vous pouvez configurer les paramètres de ce service.
 
@@ -68,24 +68,24 @@ Connector for IBM FileNet contient le service Process Engine Connector for IBM F
 1. Dans le champ Nom d’utilisateur, saisissez le nom d’utilisateur utilisé pour établir la connexion au moteur de processus.
 1. Dans le champ Mot de passe, saisissez le mot de passe utilisé pour établir la connexion au moteur de processus et cliquez sur Enregistrer.
 
-## Validation des paramètres d’un service {#validation-of-service-settings}
+## Validation des paramètres d’un service  {#validation-of-service-settings}
 
 Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect lors de la configuration de la connexion à Content Engine ou des paramètres de Process Engine, vous obtiendrez les résultats suivants selon que les services sont en cours d’exécution ou non :
 
 * Si les services Repository Provider pour IBM FileNet et Content Repository Connector for IBM FileNet sont arrêtés, aucune erreur n’apparaît lorsque vous enregistrez les informations de configuration du service. Toutefois, lors du prochain démarrage du service, une exception sera générée et le service ne démarrera pas.
 * Si ni le service Repository Provider pour IBM FileNet ni le service Content Repository Connector for IBM FileNet ne sont démarrés, le service tente de valider immédiatement les informations d’identification lorsque vous enregistrez les informations de configuration du service. Dans ce cas, une erreur se produit et les informations de configuration ne sont pas enregistrées.
 
-## Modification du fournisseur de services de référentiel {#change-the-repository-service-provider}
+## Modification du fournisseur de services de référentiel  {#change-the-repository-service-provider}
 
 Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec FileNet. Les appels des services de référentiel sont délégués au fournisseur que vous configurez.
 
 Les options suivantes sont disponibles :
 
-**Nom actuel du fournisseur de référentiel :** Nom du prestataire de référentiel actuel
+**Nom du fournisseur de référentiel actuel :** nom du prestataire de référentiel actuel
 
-**Fournisseur de référentiel IBM FileNet :** Fait du fournisseur de référentiel FileNet le fournisseur du référentiel pour le référentiel. Cette option est obsolète.
+**Fournisseur du référentiel IBM FileNet :** fait du fournisseur du référentiel FileNet le fournisseur du référentiel pour le référentiel. Cette option est obsolète.
 
-**fournisseur de référentiel :** Fait du fournisseur de référentiel natif le fournisseur du référentiel
+**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur de référentiel pour le référentiel
 
 >[!NOTE]
 >
