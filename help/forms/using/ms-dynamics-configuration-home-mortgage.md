@@ -24,7 +24,7 @@ Découvrez comment optimiser les services Microsoft® Dynamics 365 via des formu
 
 Microsoft® Dynamics 365 est un logiciel de gestion de la relation client (CRM) et de planification des ressources d&#39;entreprise (ERP) qui fournit des solutions d&#39;entreprise pour la création et la gestion de comptes clients, de contacts, de pistes, d&#39;opportunités et de cas.
 
-AEM Forms provides a cloud service to integrate Dynamics 365 with [Forms Data Integration](/help/forms/using/data-integration.md) module. Avant de pouvoir utiliser la procédure pas à pas de l&#39;application Prêt immobilier avec le scénario Microsoft® Dynamics, vous devez configurer Microsoft® Dynamics 365 pour l&#39;utiliser avec le site de référence We.Finance.
+AEM Forms fournit un service cloud pour intégrer Dynamics 365 avec le module [Intégration des données Forms](/help/forms/using/data-integration.md). Avant de pouvoir utiliser la procédure pas à pas de l&#39;application Prêt immobilier avec le scénario Microsoft® Dynamics, vous devez configurer Microsoft® Dynamics 365 pour l&#39;utiliser avec le site de référence We.Finance.
 
 ## Conditions préalables {#prerequisites}
 
