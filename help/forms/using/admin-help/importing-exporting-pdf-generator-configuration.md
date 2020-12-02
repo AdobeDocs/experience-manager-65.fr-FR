@@ -26,7 +26,7 @@ Le fichier de configuration contient les informations de conversion de PDF Gener
 >
 >vous ne pouvez pas modifier le paramètre de délai d’expiration de PDF Generator en important un fichier native2pdfconfig.xml personnalisé. Le paramètre de délai d’expiration dans ce fichier est donné à titre purement indicatif et affiche le paramètre actuel dans PDF Generator. Pour le modifier, consultez la section Définition des paramètres de performance de PDF Generator dans [Installation et déploiement d’AEM forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
-## Exportation du fichier de configuration {#export-your-current-configuration-file}
+## Exportation du fichier de configuration  {#export-your-current-configuration-file}
 
 1. Dans Administration Console, sélectionnez Services > PDF Generator > Fichiers de configuration > Exporter la configuration.
 1. Pour exporter les paramètres, sélectionnez l’option appropriée :
@@ -38,7 +38,7 @@ Le fichier de configuration contient les informations de conversion de PDF Gener
 
 1. Cliquez sur Télécharger, puis enregistrez le fichier XML à l’emplacement approprié.
 
-## Importation d’un fichier de configuration {#import-a-configuration-file}
+## Importation d’un fichier de configuration  {#import-a-configuration-file}
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Le fichier de configuration contient les informations de conversion de PDF Gener
 1. Sélectionnez Importer un fichier de configuration existant.
 1. Pour définir l’emplacement du fichier, dans le champ Fichier de configuration, cliquez sur Parcourir pour localiser et sélectionner le fichier, puis cliquez sur **Importer**.
 
-## Conversion de tous les calques des fichiers AutoCAD {#convert-all-layers-within-autocad-files}
+## Conversion de tous les calques des fichiers AutoCAD  {#convert-all-layers-within-autocad-files}
 
 Par défaut, PDF Generator ne convertit que le calque par défaut des fichiers AutoCAD au format PDF et non l’ensemble des calques des fichiers. Pour convertir l’ensemble des calques, suivez la procédure ci-dessous.
 
@@ -60,7 +60,7 @@ Par défaut, PDF Generator ne convertit que le calque par défaut des fichiers A
 
    Tous les calques d’un fichier AutoCAD converti à l’aide du fichier de configuration modifié seront traités.
 
-## Rétablissement des paramètres de configuration d’origine installés avec PDF Generator {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
+## Rétablissement des paramètres de configuration d’origine installés avec PDF Generator  {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
 
 1. Dans Administration Console, sélectionnez Services > PDF Generator > Fichiers de configuration > Importer la configuration.
 1. Sélectionnez Réinitialiser la configuration pour rétablir les paramètres par défaut et cliquez sur Importer.
