@@ -97,7 +97,7 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## Utilisation des métadonnées générées par le système dans une notification électronique {#using-system-generated-metadata-in-an-email-notification}
+## Utilisation des métadonnées générées par le système dans une notification électronique  {#using-system-generated-metadata-in-an-email-notification}
 
 Une application AEM Forms fournit plusieurs variables de métadonnées (paires clé-valeur) prêtes à l’emploi. Vous pouvez utiliser ces variables dans un modèle de courrier électronique. La valeur de la variable est basée sur une application de formulaires associés. Le tableau suivant répertorie toutes les variables de métadonnées disponibles prêtes à l’emploi :
 
@@ -158,7 +158,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
 [ECMAScript](htthttps://fr.wikipedia.org/wiki/ECMAScript) est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Procédez comme suit pour utiliser ECMAScript afin d’ajouter des métadonnées personnalisées pour un modèle de courrier électronique :
 
-1. Connectez-vous à CRX DE à l’aide d’un compte administratif. The URL is https://&#39;[server]:[port]&#39;/crx/de/index.jsp
+1. Connectez-vous à CRX DE à l’aide d’un compte administratif. L’URL est https://&#39;[server]:[port]&#39;/crx/de/index.jsp
 
 1. Accédez au site /apps/fd/dashboard/scripts/metadataScripts. Créez un fichier avec l’extension .ecma. Par exemple, usermetadata.ecma
 
@@ -195,7 +195,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
       | Type | Chaîne |
       | Valeur | Indiquez le titre du script. Par exemple, Métadonnées personnalisées pour le titulaire de la police. La valeur spécifiée s’affiche à l’étape Affecter une tâche. |
 
-### Utilisation d’un bundle OSGi et d’une interface Java pour ajouter des métadonnées personnalisées {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### Utilisation d’un bundle OSGi et d’une interface Java pour ajouter des métadonnées personnalisées  {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
 Vous pouvez utiliser l’interface Java WorkitemUserMetadataService pour ajouter des métadonnées personnalisées aux modèles de courrier électronique. Vous pouvez créer un bundle OSGi qui utilise l’interface Java WorkitemUserMetadataService et le déployer sur le serveur AEM Forms. Il rend les métadonnées disponibles pour la sélection à l’étape Affecter une tâche.
 
