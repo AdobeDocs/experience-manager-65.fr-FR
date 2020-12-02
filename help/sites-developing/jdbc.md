@@ -26,7 +26,7 @@ Accédez à une base de données SQL externe, de sorte que vos applications CQ p
 1. [Configurez un fournisseur de pool de sources de données JDBC](#configuring-the-jdbc-connection-pool-service).
 1. [Procurez-vous un objet de source de données et créez la connexion dans votre code](#connecting-to-the-database).
 
-## Regroupement du pilote de base de données JDBC {#bundling-the-jdbc-database-driver}
+## Regroupement du pilote de base de données JDBC  {#bundling-the-jdbc-database-driver}
 
 Certains fournisseurs de base de données proposent des pilotes JDBC dans un lot OSGi ; [MySQL](https://www.mysql.com/downloads/connector/j/), par exemple. Si le pilote JDBC correspondant à votre base de données n’est pas disponible sous la forme d’un lot OSGi, procurez-vous le fichier JAR du pilote et enveloppez-le dans un lot OSGi. Le lot doit exporter les packages nécessaires pour interagir avec le serveur de base de données. Le lot doit également importer les packages auxquels il fait référence.
 
@@ -41,7 +41,7 @@ Le module externe détermine automatiquement les packages à importer et les ré
 
 Une connaissance du code source vous permet de déterminer la solution à utiliser. Vous pouvez également essayer l’une des solutions et réaliser des tests pour la valider.
 
-### POM qui compile le fichier hsqldb.jar {#pom-that-bundles-hsqldb-jar}
+### POM qui compile le fichier hsqldb.jar  {#pom-that-bundles-hsqldb-jar}
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -91,7 +91,7 @@ Les liens suivants ouvrent les pages de téléchargement pour certaines solution
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
-### Configuration du service Pool de connexions JDBC {#configuring-the-jdbc-connection-pool-service}
+### Configuration du service Pool de connexions JDBC  {#configuring-the-jdbc-connection-pool-service}
 
 Ajoutez une configuration pour le service JDBC Connections Pool qui utilise le pilote JDBC pour créer des objets de source de données. Votre code d’application utilise ce service pour obtenir l’objet et se connecter à la base de données.
 
@@ -101,28 +101,28 @@ Lorsque vous utilisez CQ, plusieurs méthodes de gestion des paramètres de conf
 
 Les propriétés suivantes sont disponibles pour configurer un service de connexion mis en pool. Les noms de propriété sont répertoriés à mesure qu’ils sont affichés dans la console web. Le nom correspondant à un nœud`sling:OsgiConfig` apparaît entre parenthèses. Des exemples de valeurs sont affichés pour un serveur HSQLDB et une base de données dont le pseudonyme est`mydb` :
 
-* Classe de pilotes JDBC (`jdbc.driver.class`) : classe Java à utiliser pour implémenter l’interface java.sql.Driver ; `org.hsqldb.jdbc.JDBCDriver`, par exemple. The data type is `String`.
+* Classe de pilotes JDBC (`jdbc.driver.class`) : classe Java à utiliser pour implémenter l’interface java.sql.Driver ; `org.hsqldb.jdbc.JDBCDriver`, par exemple. Le type de données est `String`.
 
-* JDBC Connection URI ( `jdbc.connection.uri`): The URL of the database to use to create the connection, for example `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Le format de l’URL doit être valide pour être utilisé avec la méthode getConnection de la classe java.sql.DriverManager. The data type is `String`.
+* URI de connexion JDBC ( `jdbc.connection.uri`) : URL de la base de données à utiliser pour créer la connexion, par exemple `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Le format de l’URL doit être valide pour être utilisé avec la méthode getConnection de la classe java.sql.DriverManager. Le type de données est `String`.
 
-* Nom d’utilisateur (`jdbc.username`) : nom d’utilisateur à employer pour s’authentifier auprès du serveur de base de données. The data type is `String`.
+* Nom d’utilisateur (`jdbc.username`) : nom d’utilisateur à employer pour s’authentifier auprès du serveur de base de données. Le type de données est `String`.
 
-* Mot de passe (`jdbc.password`) : mot de passe à utiliser pour l’authentification de l’utilisateur. The data type is `String`.
+* Mot de passe (`jdbc.password`) : mot de passe à utiliser pour l’authentification de l’utilisateur. Le type de données est `String`.
 
-* Validation Query ( `jdbc.validation.query`): The SQL statement to use to verify that the connection is successful, for example `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. The data type is `String`.
+* Requête de validation ( `jdbc.validation.query`) : Instruction SQL à utiliser pour vérifier la réussite de la connexion, par exemple `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Le type de données est `String`.
 
-* Lecture seule par défaut (default.readonly) : sélectionnez cette option si vous voulez que la connexion fournisse un accès en lecture seule. The data type is `Boolean`.
-* Validation automatique par défaut (`default.autocommit`) : sélectionnez cette option pour créer des transactions distinctes pour chaque commande SQL envoyée à la base de données ; chaque transaction est alors automatiquement validée. Ne sélectionnez pas cette option lorsque vous validez explicitement des transactions dans votre code. The data type is `Boolean`.
+* Lecture seule par défaut (default.readonly) : sélectionnez cette option si vous voulez que la connexion fournisse un accès en lecture seule. Le type de données est `Boolean`.
+* Validation automatique par défaut (`default.autocommit`) : sélectionnez cette option pour créer des transactions distinctes pour chaque commande SQL envoyée à la base de données ; chaque transaction est alors automatiquement validée. Ne sélectionnez pas cette option lorsque vous validez explicitement des transactions dans votre code. Le type de données est `Boolean`.
 
-* Taille du pool (`pool.size`) : nombre de connexions simultanées qui doivent être disponibles pour la base de données. The data type is `Long`.
+* Taille du pool (`pool.size`) : nombre de connexions simultanées qui doivent être disponibles pour la base de données. Le type de données est `Long`.
 
-* Attente de pool (`pool.max.wait.msec`) : délai avant l’expiration de la requête de connexion. The data type is `Long`.
+* Attente de pool (`pool.max.wait.msec`) : délai avant l’expiration de la requête de connexion. Le type de données est `Long`.
 
-* Nom de la source de données (`datasource.name`) : nom de cette source de données. The data type is `String`.
+* Nom de la source de données (`datasource.name`) : nom de cette source de données. Le type de données est `String`.
 
-* Propriétés de service supplémentaires (`datasource.svc.properties`) : ensemble de paires nom/valeur que vous souhaitez ajouter à l’URL de connexion. The data type is `String[]`.
+* Propriétés de service supplémentaires (`datasource.svc.properties`) : ensemble de paires nom/valeur que vous souhaitez ajouter à l’URL de connexion. Le type de données est `String[]`.
 
-Pool de connexions JDBC est un service de fabrique. Therefore, if you use a `sling:OsgiConfig` node to configure the connection service, the name of the node must include the factory service PID followed by *`-alias`*. Le pseudonyme que vous utilisez doit être unique pour tous les nœuds de configuration de ce PID. An example node name is `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+Pool de connexions JDBC est un service de fabrique. Par conséquent, si vous utilisez un noeud `sling:OsgiConfig` pour configurer le service de connexion, le nom du noeud doit inclure le PID du service en usine suivi de *`-alias`*. Le pseudonyme que vous utilisez doit être unique pour tous les nœuds de configuration de ce PID. Un exemple de nom de noeud est `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
@@ -132,7 +132,7 @@ Dans votre code Java, utilisez le service DataSourcePool pour obtenir un objet `
 
 L’exemple de code JSP suivant obtient une instance de la source de données hsqldbds, exécute une requête SQL simple et affiche le nombre de résultats renvoyés.
 
-#### JSP qui effectue une recherche de base de données {#jsp-that-performs-a-database-lookup}
+#### JSP qui effectue une recherche de base de données  {#jsp-that-performs-a-database-lookup}
 
 ```java
 <%@include file="/libs/foundation/global.jsp"%><%
