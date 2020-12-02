@@ -28,7 +28,7 @@ Le fragment de document de texte dans Interactive Communication prend en charge 
 * **Objets de modèle de données** : les propriétés des données utilisent une source de données d’arrière-plan.
 * **Contenu basé sur des règles** : parties du contenu d’un texte qui apparaissent ou sont masquées en fonction d’une règle. Une règle peut également être basée sur les propriétés et variables du modèle de données de formulaire.
 * **Variables** : dans le fragment de document texte, les variables ne sont pas liées à une source de données d’arrière-plan. L’agent remplit/sélectionne des valeurs dans des variables ou lie les variables aux sources de données lors de la préparation de la communication interactive pour l’envoyer à un post-processus.
-* **Répétez**: Vous pouvez avoir des informations dynamiques dans votre communication interactive, telles que des transactions dans un relevé de carte de crédit, dont le nombre d&#39;occurrences peut continuer à changer avec chaque communication interactive générée. La répétition permet de mettre en forme et structurer ces informations dynamiques. For more information, see [Inline condition and repeat](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Répétez** : Vous pouvez avoir des informations dynamiques dans votre communication interactive, telles que des transactions dans un relevé de carte de crédit, dont le nombre d&#39;occurrences peut continuer à changer avec chaque communication interactive générée. La répétition permet de mettre en forme et structurer ces informations dynamiques. Pour plus d’informations, voir [Condition en ligne et répétition](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Créer du texte {#createtext}
 
@@ -36,11 +36,11 @@ Le fragment de document de texte dans Interactive Communication prend en charge 
 1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Texte]**.
 1. Saisissez les informations suivantes :
 
-   * **[!UICONTROL Titre]**: (Facultatif) Saisissez le titre du fragment de document de texte. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
-   * **[!UICONTROL Nom]**: Nom unique du texte, dans un dossier. Aucun fragment de document (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre fragment de document dans un dossier. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
+   * **[!UICONTROL Titre]** : (Facultatif) Saisissez le titre du fragment de document de texte. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
+   * **[!UICONTROL Nom]** : Nom unique du texte, dans un dossier. Aucun fragment de document (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre fragment de document dans un dossier. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
 
    * **[!UICONTROL Description]** : entrez une description du texte.
-   * **[!UICONTROL Modèle de données de formulaire]** : facultativement, sélectionnez le bouton radio Modèle de données de formulaire pour créer le texte en fonction d’un modèle de données de formulaire. When you select Form Data Model radio button, **[!UICONTROL Form Data Model]** field appears. Recherchez et sélectionnez un modèle de données de formulaire. Lorsque vous créez un texte et une condition pour une communication interactive, veillez à utiliser le même modèle de données que celui que vous avez l’intention d’utiliser dans la communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données](/help/forms/using/data-integration.md).
+   * **[!UICONTROL Modèle de données de formulaire]** : facultativement, sélectionnez le bouton radio Modèle de données de formulaire pour créer le texte en fonction d’un modèle de données de formulaire. Lorsque vous sélectionnez l’option Modèle de données de formulaire, le champ **[!UICONTROL Modèle de données de formulaire]** s’affiche. Recherchez et sélectionnez un modèle de données de formulaire. Lorsque vous créez un texte et une condition pour une communication interactive, veillez à utiliser le même modèle de données que celui que vous avez l’intention d’utiliser dans la communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données](/help/forms/using/data-integration.md).
 
    * **[!UICONTROL Balises]** : éventuellement, pour créer une balise personnalisée, entrez la valeur dans le champ de texte et appuyez sur Entrée. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont créées.
 
@@ -83,17 +83,17 @@ Vous pouvez modifier un fragment de document texte existant en suivant les étap
 
 ## Personnalisation d’un fragment de document texte à l’aide de propriétés de modèle de données de formulaire {#formdatamodel}
 
-Vous pouvez personnaliser les fragments de document texte en insérant les propriétés du modèle de données de formulaire. En insérant des propriétés de modèle de données de formulaire dans du texte, vous pouvez récupérer et renseigner des données spécifiques au destinataire à partir de la source de données associée tout en prévisualisant une communication interactive. For more information on form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
+Vous pouvez personnaliser les fragments de document texte en insérant les propriétés du modèle de données de formulaire. En insérant des propriétés de modèle de données de formulaire dans du texte, vous pouvez récupérer et renseigner des données spécifiques au destinataire à partir de la source de données associée tout en prévisualisant une communication interactive. Pour plus d’informations sur le modèle de données de formulaire, voir [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
 Si vous avez spécifié un modèle de données de formulaire lors de la création d’un texte, les propriétés du modèle de données de formulaire apparaissent dans le volet gauche de l’éditeur de texte. Le modèle de données de formulaire spécifié doit être identique pour le fragment de document de texte ainsi que pour la communication interactive qui l’inclut.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* To insert an form data model property into text, place the cursor where you want to insert the property, then select the **[A]** property in the left pane by tapping on it, and tap **[!UICONTROL [B] Add Selected]**. You can also just double-tap the property to insert it at the **[C]** cursor position. Les propriétés du modèle de données de formulaire sont mises en surbrillance dans une couleur d’arrière-plan brunâtre.
+* Pour insérer une propriété de modèle de données de formulaire dans du texte, placez le curseur à l’endroit où vous souhaitez insérer la propriété, puis sélectionnez la propriété **[A]** dans le volet gauche en appuyant dessus, puis appuyez sur **[!UICONTROL [B] Ajouter sélection]**. Vous pouvez également appuyer sur la propriété pour l’insérer à la position **[C]** du curseur. Les propriétés du modèle de données de formulaire sont mises en surbrillance dans une couleur d’arrière-plan brunâtre.
 
 Vous pouvez également rechercher et ajouter la propriété de modèle de données de formulaire à l’aide du symbole @ dans l’éditeur de texte. Placez le curseur à l’endroit où vous souhaitez insérer la propriété. Tapez @ suivi de la chaîne de recherche. L’opération de recherche est effectuée sur toutes les propriétés et variables du modèle de données de formulaire disponibles dans le fragment de document. Les propriétés ou variables contenant la chaîne de recherche sont récupérées et affichées sous forme de liste déroulante. Parcourez les résultats de la recherche et cliquez sur la propriété à insérer à l’emplacement du curseur. Appuyez sur Echap pour masquer les résultats de la recherche.
 
-* To allow the agents to edit an form data model property&#39;s value in the agent UI while [Prepare and send Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) using the Agent UI, tap the **[D]** lock icon for that property and ensure it is in an unlocked state. L’état par défaut de la propriété est verrouillé et un agent ne peut pas modifier la propriété dans l’interface utilisateur de l’agent.
+* Pour permettre aux agents de modifier la valeur d&#39;une propriété de modèle de données de formulaire dans l&#39;interface utilisateur de l&#39;agent tout en [Préparant et envoyant Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) à l&#39;aide de l&#39;interface utilisateur de l&#39;agent, appuyez sur l&#39;icône **[D]** de verrouillage de cette propriété et assurez-vous qu&#39;elle est à l&#39;état déverrouillé. L’état par défaut de la propriété est verrouillé et un agent ne peut pas modifier la propriété dans l’interface utilisateur de l’agent.
 
 Vous pouvez également utiliser les propriétés du modèle de données de formulaire pour construire des règles d’affichage ou de masquage de parties du contenu. Pour en savoir plus, consultez [Créer des règles dans le texte](#rules).
 
@@ -107,7 +107,7 @@ Vous pouvez utiliser des variables plutôt que des propriétés du modèle de do
 * Le fragment de document texte ne dispose pas de modèle de données de formulaire au moment de sa création. Vous pouvez insérer des variables et les lier ensuite aux propriétés du modèle de données du formulaire au moment de la création de la communication interactive.
 * Vous devez lier et récupérer du texte à partir d’un fragment de document texte. Seuls ces fragments de document texte peuvent être liés à des variables qui ne contiennent aucune variable.
 
-Lors de la création ou de la modification d’un fragment de document texte, vous pouvez créer et insérer des variables. Les variables que vous créez apparaissent dans l’onglet Données de l’interface utilisateur de l’agent. The agent specifies the values for the variables while [Prepare and send Interactive Communication using the Agent UI](/help/forms/using/prepare-send-interactive-communication.md).
+Lors de la création ou de la modification d’un fragment de document texte, vous pouvez créer et insérer des variables. Les variables que vous créez apparaissent dans l’onglet Données de l’interface utilisateur de l’agent. L&#39;agent spécifie les valeurs des variables tandis que [Préparer et envoyer la communication interactive à l&#39;aide de l&#39;interface utilisateur de l&#39;agent](/help/forms/using/prepare-send-interactive-communication.md).
 
 ### Créer des variables {#createvariables}
 
@@ -121,12 +121,12 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
    Le volet Créer des variables apparaît.
 
-1. Enter the following information and tap **[!UICONTROL Create]**:
+1. Saisissez les informations suivantes et appuyez sur **[!UICONTROL Créer]** :
 
-   * **[!UICONTROL Nom]** : Nom de la variable.
+   * **[!UICONTROL Nom]**  : Nom de la variable.
    * **[!UICONTROL Description]** : entrez éventuellement une description de la variable.
-   * **[!UICONTROL Type]** : Sélectionnez un type de variable : Chaîne, Nombre, Valeur booléenne ou Date.
-   * **[!UICONTROL Autoriser les valeurs spécifiques uniquement]** : pour les variables de type Chaîne et Nombre, vous pouvez garantir que l’agent choisisse parmi un ensemble spécifique de valeurs pour un espace réservé dans l’interface utilisateur de l’agent. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values]** field.
+   * **[!UICONTROL Type]**  : Sélectionnez un type de variable : Chaîne, Nombre, Valeur booléenne ou Date.
+   * **[!UICONTROL Autoriser les valeurs spécifiques uniquement]** : pour les variables de type Chaîne et Nombre, vous pouvez garantir que l’agent choisisse parmi un ensemble spécifique de valeurs pour un espace réservé dans l’interface utilisateur de l’agent. Pour spécifier le jeu de valeurs, sélectionnez cette option, puis spécifiez des valeurs séparées par des virgules qui sont autorisées dans le champ **[!UICONTROL Valeurs]**.
 
 1. Appuyez sur **[!UICONTROL Créer]**. 
 
@@ -153,7 +153,7 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 * Propriétés du modèle de données de formulaire associé
 * Toute variable que vous avez potentiellement créée dans le texte
 
-### Créer des règles dans le texte {#create-rules-in-text}
+### Créer des règles dans le texte  {#create-rules-in-text}
 
 1. Lors de la création ou de la modification d’un texte, sélectionnez la chaîne de texte, le paragraphe ou le contenu que vous souhaitez conditionner à l’aide de la règle.
 
@@ -168,7 +168,7 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 
    Sélectionnez l’option pertinente à évaluer.
 
-   ![ruleeditor](assets/ruleeditor.png) ![ruleeditorfdm](assets/ruleeditorfdm.png)
+   ![](assets/ruleeditor.png) ![ruleeditorruleeditorfdm](assets/ruleeditorfdm.png)
 
    >[!NOTE]
    >
@@ -184,7 +184,7 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 
    Règle d’affichage du texte sélectionné si le destinataire se situe aux Etats-Unis selon les données source FDM
 
-   * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. La boîte de dialogue développée, pleine fenêtre, vous permet de glisser-déposer des propriétés de modèle de données de formulaire et des variables pour construire des règles. Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Créer une règle.
+   * Lors de la création ou de la modification d’une règle, vous pouvez également appuyer sur ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle/Modifier la règle. La boîte de dialogue développée, pleine fenêtre, vous permet de glisser-déposer des propriétés de modèle de données de formulaire et des variables pour construire des règles. Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Créer une règle.
    * Vous pouvez également créer plusieurs conditions dans une règle.
    * Vous pouvez également créer des règles qui se chevauchent, dans lesquelles une règle s’applique à une partie d’un contenu auquel s’applique déjà une règle.
 
@@ -216,15 +216,15 @@ Barre d’outils d’alignement
 
 Barre d’outils Liste
 
-### Mettre en surbrillance/en évidence des parties de texte {#highlight}
+### Mettre en surbrillance/en évidence des parties de texte  {#highlight}
 
 Pour mettre en surbrillance\en évidence des parties de texte dans un fragment de document modifiable, sélectionnez le texte et appuyez sur Couleur de surbrillance.
 
 ![textbackgroundcolorused-1](assets/textbackgroundcolorapplied-1.png)
 
-You can either directly tap a basic color `**[A]**` present in the Basic Colors palette or tap **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
+Vous pouvez soit appuyer directement sur une couleur de base `**[A]**` présente dans la palette Couleurs de base, soit appuyer sur **Sélectionner** après avoir utilisé le curseur `**[B]**` pour choisir l’ombrage approprié de la couleur.
 
-Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then tap Select `**[D]**` to apply the color to highlight the text.
+Vous pouvez également accéder à l’onglet Avancé pour sélectionner la teinte, la luminosité et la saturation `**[C]**` appropriée afin de créer la couleur précise, puis appuyer sur Sélectionner `**[D]**` pour appliquer la couleur de mise en surbrillance du texte.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -254,7 +254,7 @@ Si nécessaire, insérez des caractères spéciaux dans le fragment de document.
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 
-L’éditeur de texte offre une prise en charge intégrée de 210 caractères spéciaux. The admin can [add support for more/custom special characters by customization](/help/forms/using/custom-special-characters.md).
+L’éditeur de texte offre une prise en charge intégrée de 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de caractères spéciaux supplémentaires/personnalisés en personnalisant](/help/forms/using/custom-special-characters.md).
 
 ## Recherche et remplacement de texte {#searching}
 
