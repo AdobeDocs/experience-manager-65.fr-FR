@@ -29,8 +29,8 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 * en mode de création
 * Connectez-vous avec des droits d’administrateur.
-* browse to the console
-for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
+* accéder à la console
+par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![](assets/managing_tags_usingthetagasministrationconsole.png)
 
@@ -68,14 +68,14 @@ for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
    * Sélectionnez **Créer**.
 
 
-## Modification de balises {#editing-tags}
+## Modification de balises  {#editing-tags}
 
 1. Dans le volet de droite, sélectionnez la balise à modifier.
 1. Cliquez sur **Modifier**.
 1. Vous pouvez modifier le **Titre** et la **Description**.
 1. Cliquez sur **Enregistrer** pour fermer la boîte de dialogue.
 
-## Suppression de tags {#deleting-tags}
+## Suppression de tags  {#deleting-tags}
 
 1. Dans le volet de droite, sélectionnez la balise à supprimer.
 1. Cliquez sur **Supprimer**.
@@ -88,13 +88,13 @@ for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. Dans le volet de droite, sélectionnez l’espace de noms ou la balise à activer (publication) ou à désactiver (annulation de la publication).
 1. Cliquez sur **Activer** ou **Désactiver**, suivant les besoins.
 
-## Liste : indiquant où les balises sont référencées {#list-showing-where-tags-are-referenced}
+## Liste : indiquant où les balises sont référencées  {#list-showing-where-tags-are-referenced}
 
 L’option **Liste** ouvre une nouvelle fenêtre qui présente les chemins d’accès de toutes les pages utilisant la balise mise en surbrillance :
 
 ![](assets/list_showing_wheretagsarereferenced.png)
 
-## Déplacement des balises {#moving-tags}
+## Déplacement des balises  {#moving-tags}
 
 Pour aider les administrateurs et les développeurs de balises à nettoyer la taxonomie ou à renommer un ID de balise, il est possible de déplacer une balise vers un nouvel emplacement :
 
@@ -113,7 +113,7 @@ La boîte de dialogue **Déplacer le tag** se présente comme suit :
 
 >[!NOTE]
 >
->Les créateurs ne doivent pas déplacer les balises ou renommer l’ID de balise. When necessary, Authors should only [change the tag titles](#editing-tags).
+>Les créateurs ne doivent pas déplacer les balises ou renommer l’ID de balise. Si nécessaire, les auteurs doivent uniquement [modifier les titres des balises](#editing-tags).
 
 ## Fusion des balises {#merging-tags}
 
@@ -129,7 +129,7 @@ Pour fusionner un tag dans un autre :
 
 1. Cliquez sur **Fusionner**.
 
-The **Merge Tag** dialog looks as follows:
+La boîte de dialogue **Fusionner la balise** se présente comme suit :
 
 ![](assets/mergetag.png)
 
@@ -140,16 +140,16 @@ Pour afficher le nombre d’utilisations d’un tag :
 1. Ouvrez la console **Tagging**.
 1. Cliquez sur **Compteur d’utilisations** dans la barre d’outils supérieure : la colonne Décompte affiche le résultat.
 
-## Gestion de tags dans diverses langues {#managing-tags-in-different-languages}
+## Gestion de tags dans diverses langues  {#managing-tags-in-different-languages}
 
-La propriété facultative `title`   d’une balise peut être traduite en plusieurs langues. Tag `titles` can then be displayed according to the user language or to the page language.
+La propriété facultative `title`   d’une balise peut être traduite en plusieurs langues. La balise `titles` peut ensuite être affichée en fonction de la langue de l’utilisateur ou de la langue de la page.
 
 ### Définition de titres de balises dans plusieurs langues {#defining-tag-titles-in-multiple-languages}
 
-The following procedure shows how to translate the `title`of the tag **Animals** into English, German and French:
+La procédure suivante montre comment traduire la balise `title`Animals **en anglais, allemand et français :**
 
-1. Go to the **Tagging** console.
-1. Edit the tag **Animals** below **Tags** > **Stock Photography**.
+1. Accédez à la console **Balisage**.
+1. Modifiez la balise **Animaux** ci-dessous **Balises** > **Images photographiques**.
 1. Ajoutez les traductions dans les langues suivantes :
 
    * **Anglais** : Animals
@@ -168,21 +168,21 @@ Pour ajouter une nouvelle langue à la boîte de dialogue, reportez-vous à la s
 
 ### Affichage des titres des balises dans les propriétés de page dans une langue spécifiée {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-By default the tag `titles`in the page properties are displayed in the page language. The tag dialog in the page properties has a language field that enables the display of tag `titles`in a different language. The following procedure describes how to display the tag `titles`in French:
+Par défaut, la balise `titles`dans les propriétés de la page s’affiche dans la langue de la page. La boîte de dialogue des balises dans les propriétés de la page comporte un champ de langue qui permet l’affichage de la balise `titles`dans une autre langue. La procédure suivante décrit comment afficher la balise `titles`en français :
 
-1. Refer to the previous section to add the French translation to the **Animals** below **Tags** > **Stock Photography**.
+1. Reportez-vous à la section précédente pour ajouter la traduction française aux **Animaux** ci-dessous **Balises** > **Images photographiques**.
 1. Ouvrez les propriétés de la page **Produits** dans la branche English (Anglais) du site **Geometrixx**.
-1. Open the **Tags/Keywords** dialog (by selecting the pull-down menu to the right of the Tags/Keywords display area) and select the **French** language from the pull-down menu in the bottom right corner.
-1. Scroll using the left-right arrows until able to select the **Stock Photography** tab
+1. Ouvrez la boîte de dialogue **Balises/Mots-clés** (en sélectionnant le menu déroulant à droite de la zone d&#39;affichage Balises/Mots-clés) et sélectionnez la langue **française** dans le menu déroulant dans le coin inférieur droit.
+1. Faites défiler la page à l’aide des flèches gauche et droite jusqu’à ce que vous puissiez sélectionner l’onglet **Images photographiques**.
 
-   Select the **Animals** (**Animaux**) tag and select outside the dialog to close it and add the tag to the page properties.
+   Sélectionnez la balise **Animaux** (**Animaux**) et sélectionnez-la en dehors de la boîte de dialogue pour la fermer et ajouter la balise aux propriétés de la page.
 
    ![](assets/french_tag.png)
 
-By default, the Page Properties dialog displays the tag `titles`according to the page language.
+Par défaut, la boîte de dialogue Propriétés de la page affiche la balise `titles`selon la langue de la page.
 
 En général, la langue de la balise est celle de la page si elle est disponible. Si le widget [`tag` est utilisé dans d’autres cas (dans des formulaires ou des boîtes de dialogue, par exemple), la langue du tag dépend du contexte.](/help/sites-developing/building.md#tagging-on-the-client-side)
 
 >[!NOTE]
 >
->The tag cloud and the meta keywords in the standard page component use the localized tag `titles`based on the page language, if available.
+>Le nuage de balises et les mots-clés de métadonnées dans le composant de page standard utilisent la balise localisée `titles`en fonction de la langue de page, le cas échéant.
