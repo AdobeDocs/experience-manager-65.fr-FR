@@ -29,11 +29,11 @@ Pour réactiver l’option **Ouvrir dans l’IU classique** dans le menu **infor
 
    `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
-   Par exemple, 
+   Par exemple :
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
-1. Create an overlay using the **Overlay Node** option; for example:
+1. Créez une incrustation à l’aide de l’option **Noeud d’incrustation** ; par exemple :
 
    * **Chemin**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Emplacement du recouvrement**: `/apps/`
