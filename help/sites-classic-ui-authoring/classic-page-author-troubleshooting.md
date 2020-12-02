@@ -71,18 +71,18 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 * **Problème:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * Lorsque vous utilisez l&#39;option **Rechercher et remplacer**, il se peut que toutes les instances du terme `find` ne soient pas remplacées sur une page.
 
 * **Raison**:
 
-   * The capability of **Find &amp; Replace** depends on how the content is saved, and whether it can be searched upon. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
+   * La fonctionnalité **Rechercher et remplacer** dépend de la manière dont le contenu est enregistré et de la possibilité de le rechercher. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
 
       * `jcr:title`
       * `jcr:description`
       * `jcr:text`
       * `text`
 
-* **Solution**:
+* **Solution** :
 
    * Ces définitions peuvent être modifiées dans la configuration du **servlet Day CQ WCM Find Replace** à l’aide de la **console Web**, par exemple à l’adresse
 
