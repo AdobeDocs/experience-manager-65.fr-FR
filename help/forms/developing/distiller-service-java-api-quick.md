@@ -31,7 +31,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Conversion d’un fichier PostScript en document PDF à l’aide de l’API Java {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
-L’exemple de code suivant convertit un fichier PostScript appelé *Loan.ps* en fichier PDF appelé *Loan.pdf*. (voir [Conversion de documents](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents)PostScript en PDF).
+L’exemple de code suivant convertit un fichier PostScript intitulé *Loan.ps* en fichier PDF intitulé *Loan.pdf*. (Voir [Conversion de documents PostScript en  PDF](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 
 ```java
  /*
