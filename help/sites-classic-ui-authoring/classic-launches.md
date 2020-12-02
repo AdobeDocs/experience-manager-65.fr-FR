@@ -26,12 +26,12 @@ Le lancement vous permet de préparer des modifications en vue d’une publicati
 
 >[!NOTE]
 >
->The theory behind launches is described in detail under [Launches](/help/sites-authoring/launches.md) in the standard authoring documentation.
+>La théorie des lancements est décrite en détail sous [Launches](/help/sites-authoring/launches.md) dans la documentation de création standard.
 >
->Information specific to using launches in the classic UI can be found in the following documentation together with [Creating Launches](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editing Launches](/help/sites-classic-ui-authoring/classic-launches-editing.md), and [Promoting Launches](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>Vous trouverez des informations spécifiques à l’utilisation des lancements dans l’interface utilisateur classique dans la documentation suivante, ainsi que [Création de lancements](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Modification des lancements](/help/sites-classic-ui-authoring/classic-launches-editing.md) et [Promotion de lancements](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Dans l’interface utilisateur classique, il n’est pas possible d’utiliser plusieurs branches sources pour un lancement.
 
-The Launches console can be directly accessed with [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+Vous pouvez accéder directement à la console Lancements à l’aide de [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html).
