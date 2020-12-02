@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# Langues écrites de droite à gauche dans les formulaires HTML5 {#right-to-left-languages-in-html-forms}
+# Langues écrites de droite à gauche dans les formulaires HTML5  {#right-to-left-languages-in-html-forms}
 
 Les formulaires HTML5 prennent en charge les langues écrites de droite à gauche comme l’hébreu. Vous pouvez afficher et remplir des formulaires HTML5 dans des langues écrites de droite à gauche. Vous pouvez utiliser des langues s’écrivant de droite à gauche et de gauche à droite dans un même formulaire. Par exemple, vous pouvez utiliser l’anglais et l’hébreu dans un même champ. Les formulaires mobiles utilisent les paramètres régionaux pour afficher les informations de jour et de date localisées dans un formulaire.
 
