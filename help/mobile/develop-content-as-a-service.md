@@ -29,7 +29,7 @@ Cela inclut l’utilisation de ressources, de contenu du site, de contenu d’ap
 
 >[!NOTE]
 >
->**Le contenu** en direct peut provenir de n’importe lequel des éléments ci-dessus via les gestionnaires ContentSync. Il peut être utilisé pour le traitement par lots des packages et de la diffusion via zips, ainsi que pour la maintenance des mises à jour ou de ces packages.
+>**Le** contenu en vol peut provenir de n’importe lequel des éléments ci-dessus via les gestionnaires ContentSync. Il peut être utilisé pour le traitement par lots des packages et de la diffusion via zips, ainsi que pour la maintenance des mises à jour ou de ces packages.
 
 Content Services fournit trois types de matériel principaux :
 
@@ -65,7 +65,7 @@ Le processus des ressources est le suivant :
    1. Sélectionner un fichier ou une collection de ressources
    1. Personnalisation du rendu JSON
 
-Le diagramme suivant présente le processus **de référence des** ressources :
+Le diagramme suivant présente le **Workflow de référence des ressources** :
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -95,7 +95,7 @@ Mettons de côté les étapes de mise à disposition de la page par le biais de 
 * /content/entités/appImages/icons/panier
 * /content/entités/appImages/icons/home
 
-#### Obtention d&#39;une liste d&#39;entités d&#39;actifs disponibles {#getting-a-list-of-available-asset-entities}
+#### Obtention d&#39;une liste d&#39;entités de ressources disponibles {#getting-a-list-of-available-asset-entities}
 
 Un développeur d’applications peut obtenir une liste des ressources disponibles en récupérant les entités de ressources. Le point de terminaison de l’espace Content Services peut fournir ces informations par le biais du SDK de l’API du service Web.
 
@@ -117,14 +117,14 @@ aem Content Services pourra fournir du contenu HTML à l’application mobile vi
 
 Les options suivantes sont prises en compte :
 
-* **Fichier zip :** Pour avoir la meilleure chance de s’afficher correctement sur le périphérique, tous les éléments référencés de la page - css, JavaScript, ressources, etc. - sera inclus dans un seul fichier compressé avec la réponse. Les références dans la page HTML seront ajustées pour utiliser un chemin relatif vers ces fichiers.
-* **Diffusion en continu :** Obtention d’un manifeste des fichiers requis à partir d’AEM. Ensuite, utilisez ce manifeste pour demander tous les fichiers (HTML, CSS, JS, etc.) avec les requêtes suivantes.
+* **Fichier zip :** pour avoir la meilleure chance de s’afficher correctement sur le périphérique, tous les éléments référencés de la page - css, JavaScript, ressources, etc. - sera inclus dans un seul fichier compressé avec la réponse. Les références dans la page HTML seront ajustées pour utiliser un chemin relatif vers ces fichiers.
+* **Diffusion en continu :** Obtention d’un manifeste des fichiers requis à partir de l’AEM. Ensuite, utilisez ce manifeste pour demander tous les fichiers (HTML, CSS, JS, etc.) avec les requêtes suivantes.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
 ## Contenu indépendant du canal {#channel-independent-content}
 
-Le contenu indépendant du canal est un moyen d&#39;exposer les éléments de contenu AEM (tels que les pages) sans se soucier de la disposition, des composants ou d&#39;autres informations spécifiques au canal.
+Le contenu indépendant du canal est un moyen d’exposer les éléments de contenu AEM (tels que les pages) sans se soucier de la disposition, des composants ou d’autres informations spécifiques au canal.
 
 Ces entités de contenu sont générées à l’aide d’un modèle de contenu pour traduire les structures AEM en un format JSON. Les données JSON résultantes contiennent des informations sur les données du contenu, qui sont découplées du référentiel AEM. Cela inclut le renvoi de métadonnées et de liens de référence AEM aux ressources, ainsi que les relations entre les structures de contenu - y compris la hiérarchie des entités.
 
