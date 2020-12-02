@@ -35,7 +35,7 @@ La page Changer de licence contient des informations relatives à la licence :
 >
 >le changement de licence s’applique à tous les modules déployés. Avant de changer de type de licence, annulez le déploiement de tous les modules ne possédant pas de licence. Ne sélectionnez pas le type de licence Production si la liste des modules déployés contient des modules autres que ceux acquis auprès d’Adobe.
 
-## Mise à jour du type de licence {#update-the-license-type}
+## Mise à jour du type de licence  {#update-the-license-type}
 
 1. Dans Administration Console, cliquez sur Obtention de la licence.
 1. Lisez le contrat de licence de l’utilisateur final d&#39;AEM forms, sélectionnez J’accepte si vous en acceptez les termes, puis cliquez sur Suivant.
