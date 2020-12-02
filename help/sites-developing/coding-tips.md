@@ -35,10 +35,10 @@ Idéalement, un autre programmeur ne devrait pas avoir à ouvrir un module pour 
 Dans la base de code AEM, les conventions suivantes sont utilisées :
 
 
-* A single implementation of an interface is named `<Interface>Impl`, i.e. `ReaderImpl`.
-* Multiple implementations of an interface are named `<Variant><Interface>`, i.e. `JcrReader` and `FileSystemReader`.
+* Une implémentation unique d&#39;une interface est nommée `<Interface>Impl`, c&#39;est-à-dire `ReaderImpl`.
+* Plusieurs implémentations d’une interface sont nommées `<Variant><Interface>`, c’est-à-dire `JcrReader` et `FileSystemReader`.
 * Les classes de base abstraites sont nommées `Abstract<Interface>` ou `Abstract<Variant><Interface>`.
-* Packages are named `com.adobe.product.module`.  Chaque artefact Maven ou bundle OSGi doit avoir son propre module.
+* Les packages sont nommés `com.adobe.product.module`.  Chaque artefact Maven ou bundle OSGi doit avoir son propre module.
 * Les implémentations Java sont placées dans un module impl sous leur API.
 
 
@@ -63,13 +63,13 @@ Idéalement, les noms doivent décrire clairement leur intention. Un test de cod
  </tbody>
 </table>
 
-### Ne pas se répéter  {#don-t-repeat-yourself}
+### Ne pas se répéter   {#don-t-repeat-yourself}
 
 DRY indique que le même ensemble de code ne doit jamais être dupliqué. Cela s’applique également aux éléments de type littéraux de chaîne. La duplication de code ouvre la porte à des erreurs chaque fois que quelque chose doit être modifié. Il faut absolument l’éliminer.
 
 ### Éviter les règles CSS nues {#avoid-naked-css-rules}
 
-Les règles CSS doivent être spécifiques à votre élément cible dans le contexte de votre application. Par exemple, une règle CSS appliquée à *.content .center* serait trop générale et pourrait finir par se répercuter sur de nombreux contenus dans votre système, obligeant les autres à contourner ce style. *.myapp-centertext* serait une règle plus spécifique car elle spécifie le *texte* centré dans le contexte de votre application.
+Les règles CSS doivent être spécifiques à votre élément cible dans le contexte de votre application. Par exemple, une règle CSS appliquée à *.content .center* serait trop générale et pourrait finir par se répercuter sur de nombreux contenus dans votre système, obligeant les autres à contourner ce style. *.myapp-* centertextserait une règle plus spécifique car elle spécifie la  ** texture centrée dans le contexte de votre application.
 
 ### Ne pas utiliser d’API obsolètes {#eliminate-usage-of-deprecated-apis}
 
@@ -99,6 +99,6 @@ Pour le code Java, AEM prend en charge slf4j comme API standard pour la journali
 
 Dans le cas de JavaScript, *console.log* ne doit être utilisé que pendant le développement et toutes les informations du journal doivent être supprimées avant sa diffusion.
 
-### Éviter la programmation bête et méchante {#avoid-cargo-cult-programming}
+### Éviter la programmation bête et méchante  {#avoid-cargo-cult-programming}
 
 Évitez de copier du code sans comprendre sa fonction. En cas de doute, il est toujours préférable de demander à quelqu’un qui a plus d’expérience avec le module ou l’API qui pose un problème.
