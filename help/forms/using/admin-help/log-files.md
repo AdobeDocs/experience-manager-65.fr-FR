@@ -22,19 +22,19 @@ ht-degree: 73%
 
 Les événements, comme les erreurs d’exécution ou de démarrage, sont enregistrés dans les fichiers journaux du serveur d’applications. Ces fichiers peuvent vous aider à diagnostiquer les éventuels problèmes rencontrés lors du déploiement sur le serveur d’applications. Vous pouvez les ouvrir dans un éditeur de texte.
 
-(JBoss) Les fichiers journaux suivants se trouvent dans le `[appserver root]/server/'server'/log` répertoire :
+(JBoss) Les fichiers journaux suivants se trouvent dans le répertoire `[appserver root]/server/'server'/log` :
 
 * boot.log
 * server.log.*[aaaa-mm-jj]*
 * server.log
 
-(WebLogic) Les fichiers journaux de domaine se trouvent dans le `[appserverdomain]` répertoire et les fichiers journaux de serveur se trouvent dans le `[appserverdomain]/servers/[appserver name]/logs` répertoire :
+(WebLogic) Les fichiers journaux de domaine se trouvent dans le répertoire `[appserverdomain]` et les fichiers journaux de serveur se trouvent dans le répertoire `[appserverdomain]/servers/[appserver name]/logs` :
 
 * `access.log`
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) Les fichiers journaux suivants se trouvent dans le `[appserver root]/profiles/default/logs/[appserver name]` répertoire :
+(WebSphere) Les fichiers journaux suivants se trouvent dans le répertoire `[appserver root]/profiles/default/logs/[appserver name]` :
 
 * SystemErr.log
 * SystemOut.log
