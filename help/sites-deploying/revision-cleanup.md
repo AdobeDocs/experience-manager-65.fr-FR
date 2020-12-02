@@ -26,7 +26,7 @@ Chaque mise à jour du référentiel crée une nouvelle révision de contenu. Pa
 
 Une version en ligne de cette fonctionnalité, baptisée Nettoyage des révisions en ligne, a été introduite dans AEM 6.3. Comparé au nettoyage des révisions hors ligne où l’instance AEM doit être arrêtée, le nettoyage des révisions en ligne peut être exécuté en maintenant l’instance AEM en ligne. Le nettoyage des révisions en ligne est activé par défaut, car il s’agit de la méthode recommandée pour effectuer un nettoyage des révisions.
 
-**Remarque**: [Consultez la vidéo](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) pour obtenir une introduction et savoir comment utiliser le nettoyage de la révision en ligne.
+**Remarque** :  [Consultez la ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) Vidéo pour une présentation et comment utiliser le nettoyage de révision en ligne.
 
 Le processus de nettoyage des révisions en ligne s’effectue en trois phases : **l’estimation**, **la compression** et **le nettoyage**. L’estimation permet de déterminer s’il est nécessaire d’exécuter la phase suivante (compressions) selon la quantité de mémoire pouvant être libérée. Pendant la phase de compression, les segments et les fichiers tar sont réécrits en omettant tout contenu inutilisé. La phase de nettoyage permet de supprimer par la suite les anciens segments, y compris toute la mémoire qu’ils peuvent contenir. Généralement, le mode hors ligne permet de récupérer plus d’espace, car le mode en ligne doit prendre en compte le système opérationel d’AEM, ce qui empêche certains segments d’être collectés.
 
@@ -36,9 +36,9 @@ Pour plus de détails sur le processus de nettoyage des révisions, consulter le
 * [FAQ concernant le nettoyage des révisions en ligne](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)
 * [Exécution du nettoyage des révisions hors ligne](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)
 
-Additionally, you can also read the [official Oak documentation.](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html)
+De plus, vous pouvez également lire la [documentation officielle sur les chênes.](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html)
 
-### When to use Online Revision Cleanup as opposed to Offline Revision Cleanup? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
+### Quand utiliser le nettoyage de la révision en ligne plutôt que le nettoyage de la révision hors ligne ? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
 **Il est recommandé de procéder au nettoyage des révisions en ligne.** L’utilisation du nettoyage des révisions hors ligne doit être limitée à des cas exceptionnels, par exemple, avant d’effectuer une migration vers un nouveau format de stockage ou si le service clientèle d’Adobe vous demande de le faire.
 
@@ -46,30 +46,30 @@ Additionally, you can also read the [official Oak documentation.](https://jackra
 
 Le nettoyage des révisions en ligne est programmé par défaut pour s’exécuter automatiquement une fois par jour sur les instances de publication et d’auteur d’AEM. Vous devez simplement définir la fenêtre de maintenance pendant une période où le niveau d’activité de l’utilisateur est aussi bas que possible. La nettoyage des révisions en ligne peut être configuré comme suit :
 
-1. In the main AEM window, go to **Tools - Operations - Dashboard - Maintenance** or point your browser to: `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
+1. Dans la fenêtre principale de l&#39;AEM, accédez à **Outils - Opérations - Tableau de bord - Maintenance** ou pointez votre navigateur vers : `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Hover over **Daily Maintenance Window** and click the **Settings** icon.
+1. Passez la souris sur **Daily Maintenance Window** et cliquez sur l&#39;icône **Settings**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Enter the desired values (recurrence, start time, end time) and click **Save**.
+1. Saisissez les valeurs souhaitées (périodicité, heure de début, heure de fin) et cliquez sur **Enregistrer**.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
 Autrement, si vous desirez effectuer le nettoyage manuellement vous pouvez :
 
-1. Go to **Tools - Operations - Dashboard - Maintenance** or browse directly to `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
-1. Click the **Daily Maintenance Window**.
-1. Hover over the **Revision Cleanup** icon.
+1. Accédez à **Outils - Opérations - Tableau de bord - Maintenance** ou accédez directement à `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`.
+1. Cliquez sur la **fenêtre Maintenance quotidienne**.
+1. Passez la souris sur l’icône **Nettoyage de révision**.
 1. Cliquez sur **Exécuter**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
 ### Exécution du nettoyage des révisions en ligne après le nettoyage des révisions hors ligne {#running-online-revision-cleanup-after-offline-revision-cleanup}
 
-Le processus de nettoyage des révisions récupère les anciennes révisions par génération. Cela signifie qu’une nouvelle génération est créée et conservée sur le disque chaque fois que vous exécutez le nettoyage des révisions. Il existe toutefois une différence entre les deux types de nettoyage des révisions : le nettoyage des révisions hors ligne conserve une génération tandis que le nettoyage des révisions en ligne conserve deux générations. So, when you run online revision cleanup **after** offline revision cleanup the following happens:
+Le processus de nettoyage des révisions récupère les anciennes révisions par génération. Cela signifie qu’une nouvelle génération est créée et conservée sur le disque chaque fois que vous exécutez le nettoyage des révisions. Il existe toutefois une différence entre les deux types de nettoyage des révisions : le nettoyage des révisions hors ligne conserve une génération tandis que le nettoyage des révisions en ligne conserve deux générations. Ainsi, lorsque vous exécutez le nettoyage de la révision en ligne **après la révision hors ligne**, le nettoyage suivant se produit :
 
 1. Une fois la première révision en ligne nettoyée, le référentiel sera de taille doublon. Cela est dû au fait que deux générations sont à présent conservées sur le disque.
 1. Au cours des exécutions suivantes, le référentiel croît temporairement pendant la création de la nouvelle génération, puis se stabilise à nouveau à sa taille après la première exécution, à mesure que le processus de nettoyage de la révision en ligne récupère la génération précédente.
@@ -78,12 +78,12 @@ Gardez également à l’esprit qu’en fonction du type et du nombre de validat
 
 C’est pourquoi il est recommandé d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.
 
-## Modes de compression complète et de compression des révisions les plus récentes  {#full-and-tail-compaction-modes}
+## Modes de compression complète et de compression des révisions les plus récentes   {#full-and-tail-compaction-modes}
 
-**aem 6.5** introduit **deux nouveaux modes** pour la phase de **compaction** du processus de nettoyage de la révision en ligne :
+**aem 6.5** introduit  **deux nouveaux** modèles pour la phase de  **** compactiondu processus de nettoyage de la révision en ligne :
 
-* The **full compaction** mode rewrites all the segments and tar files in the whole repository. La phase de nettoyage suivante peut donc supprimer un maximum d’informations parasites du référentiel. Étant donné qu’une compression complète affecte l’ensemble du référentiel, cette opération nécessite une quantité considérable de ressources systèmes et demande beaucoup de temps. La compression complète correspond à la phase de compression dans AEM 6.3.
-* The **tail compaction** mode rewrites only the most recent segments and tar files in the repository. Il s’agit des segments et fichiers tar qui ont été ajoutés depuis la dernière exécution d’une compression, de quelque type que ce soit. La phase de nettoyage suivante peut donc ne supprimer que les informations parasites contenues dans la partie récente du référentiel. Étant donné que ce mode de compression ne concerne qu’une partie du référentiel, il consomme beaucoup moins de ressources système qu’une compression complète et s’avère bien plus rapide.
+* Le mode **compaction complète** réécrit tous les segments et fichiers tar dans l’ensemble du référentiel. La phase de nettoyage suivante peut donc supprimer un maximum d’informations parasites du référentiel. Étant donné qu’une compression complète affecte l’ensemble du référentiel, cette opération nécessite une quantité considérable de ressources systèmes et demande beaucoup de temps. La compression complète correspond à la phase de compression dans AEM 6.3.
+* Le mode de compaction **tail** réécrit uniquement les segments et fichiers tar les plus récents dans le référentiel. Il s’agit des segments et fichiers tar qui ont été ajoutés depuis la dernière exécution d’une compression, de quelque type que ce soit. La phase de nettoyage suivante peut donc ne supprimer que les informations parasites contenues dans la partie récente du référentiel. Étant donné que ce mode de compression ne concerne qu’une partie du référentiel, il consomme beaucoup moins de ressources système qu’une compression complète et s’avère bien plus rapide.
 
 Ces modes de compression constituent un compromis entre efficacité et consommation des ressources : bien que moins efficace, la compression des révisions les plus récentes a également un impact moindre sur le fonctionnement normal du système. La compression complète, en revanche, s’avère plus efficace, mais a davantage de répercussions sur le fonctionnement normal du système. 
 
@@ -95,22 +95,22 @@ Les deux graphiques ci-dessous présentent les résultats des tests réalisés e
 
 ### Procédure de configuration des modes de compression complète et de compression des révisions les plus récentes {#how-to-configure-full-and-tail-compaction}
 
-La configuration par défaut prévoit l’exécution d’une compression des révisions les plus récentes en semaine et d’une compression complète le dimanche. The default configuration can be changed by using the new configuration value `full.gc.days` of the `RevisionCleanupTask` [maintenance task](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup).
+La configuration par défaut prévoit l’exécution d’une compression des révisions les plus récentes en semaine et d’une compression complète le dimanche. La configuration par défaut peut être modifiée en utilisant la nouvelle valeur de configuration `full.gc.days` de la `RevisionCleanupTask` [tâche de maintenance](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup).
 
-When you configure the `full.gc.days` value be aware that full compaction will run during the day(s) defined in the value and tail compaction will run during the days that are not defined in the value. Par exemple, si vous configurez la compression complète pour qu’elle s’exécute le dimanche, la compression des révisions les plus récentes sera exécutée du lundi au samedi. Si vous planifiez l’exécution d’une compression complète pour tous les jours de la semaine, aucune compression des révisions les plus récentes ne sera effectuée.
+Lorsque vous configurez la valeur `full.gc.days`, gardez à l’esprit que la compaction complète s’exécutera pendant le ou les jours définis dans la valeur et que la compaction de queue s’exécutera pendant les jours qui ne sont pas définis dans la valeur. Par exemple, si vous configurez la compression complète pour qu’elle s’exécute le dimanche, la compression des révisions les plus récentes sera exécutée du lundi au samedi. Si vous planifiez l’exécution d’une compression complète pour tous les jours de la semaine, aucune compression des révisions les plus récentes ne sera effectuée.
 
 Veuillez également tenir compte des points suivants :
 
-* **La compaction** de la queue est moins efficace et a moins d&#39;impact sur les opérations normales du système. Elle est donc destinée à être exécutée pendant les jours ouvrables.
-* **La compaction** complète est plus efficace mais a également un impact plus important sur les opérations normales du système. Il est donc conseillé de l’exécuter en dehors des jours ouvrables.
+* **La** compactionde la queue est moins efficace et a moins d&#39;impact sur les opérations normales du système. Elle est donc destinée à être exécutée pendant les jours ouvrables.
+* **La** compactioncomplète est plus efficace mais a également un impact plus important sur les opérations normales du système. Il est donc conseillé de l’exécuter en dehors des jours ouvrables.
 * L’exécution des deux modes de compression doit être planifiée en dehors des heures de pointe.
 
-### Résolution des incidents {#troubleshooting}
+### Dépannage {#troubleshooting}
 
 Lorsque vous utilisez les nouveaux modes de compression, gardez à l’esprit les points suivants :
 
 * Vous pouvez surveiller les activités d’entrée/sortie (E/S), par exemple : opérations d’E/S, processeur en attente des E/S, taille de la file d’attente de validation… Cela permet de déterminer si le système devient tributaire des entrées-sorties et doit faire l’objet d’une augmentation de capacité.
-* The `RevisionCleanupTaskHealthCheck` indicates the overall health status of the Online Revision Cleanup. Elle fonctionne de la même manière que dans AEM 6.3 et ne fait pas la distinction entre les deux modes de compression.
+* Le `RevisionCleanupTaskHealthCheck` indique l&#39;état d&#39;intégrité global du nettoyage de révision en ligne. Elle fonctionne de la même manière que dans AEM 6.3 et ne fait pas la distinction entre les deux modes de compression.
 * Les messages de journal contiennent des informations importantes concernant les modes de compression. Par exemple, au lancement du nettoyage des révisions en ligne, les messages de journal correspondants indiquent le mode de compression. De plus, dans certains cas limites d’exécution, le système revient au mode de compression complète alors que l’exécution d’une compression des révisions les plus récentes était programmée ; les messages de journal font alors état de cette modification. Les exemples de messages de journal ci-dessous indiquent le mode de compression et le changement de mode opéré :
 
 ```
@@ -118,13 +118,13 @@ TarMK GC: running tail compaction
 TarMK GC: no base state available, running full compaction instead
 ```
 
-### Limites connues {#known-limitations}
+### Limites connues  {#known-limitations}
 
 Dans certains cas, basculer entre les deux modes de compression a pour effet de retarder le processus de nettoyage. Plus exactement, la taille du référentiel augmente après une compression complète (elle est multipliée par deux). L’espace supplémentaire sera récupéré lors de l’opération de compression des révisions les plus récentes suivante, le référentiel retrouvant alors une taille inférieure à celle qu’il avait avant la compression complète. Il est également conseillé d’éviter les exécutions de tâches de maintenance en parallèle.
 
 **Il est recommandé d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.**
 
-## Foire aux questions sur le nettoyage des révisions en ligne {#online-revision-cleanup-frequently-asked-questions}
+## Foire aux questions sur le nettoyage des révisions en ligne  {#online-revision-cleanup-frequently-asked-questions}
 
 ### Remarques concernant la mise à niveau AEM 6.5 {#aem-upgrade-considerations}
 
@@ -182,7 +182,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Que se passe-t-il si j’exécute accidentellement le mauvais format de référentiel ?</strong></td>
-   <td>If you try to run the oak-segment module against an oak-segment-tar repository (or vice versa), startup will fail with an <em>IllegalStateException</em> with the message "Invalid segment format". Il n’y aura aucune corruption de données.</td>
+   <td>Si vous essayez d'exécuter le module de segment de chêne sur un référentiel de segment de chêne-tar (ou vice versa), le démarrage échoue avec une <em>IllegalStateException</em> avec le message "Format de segment non valide". Il n’y aura aucune corruption de données.</td>
    <td> </td>
   </tr>
   <tr>
@@ -197,7 +197,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Comment estimer au mieux la durée de la migration ?</strong></td>
-   <td>Migration performance can be greatly improved if <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">offline revision cleanup</a> is executed prior to the migration. Nous conseillons à tous les clients de l’exécuter en tant que conditions préalables à la mise à niveau. En général, la durée de la migration doit être similaire à la durée de la tâche de nettoyage de la révision hors ligne, en supposant que la tâche de nettoyage de la révision hors ligne a été exécutée avant la migration.</td>
+   <td>Les performances de migration peuvent être considérablement améliorées si <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">le nettoyage de la révision hors ligne</a> est exécuté avant la migration. Nous conseillons à tous les clients de l’exécuter en tant que conditions préalables à la mise à niveau. En général, la durée de la migration doit être similaire à la durée de la tâche de nettoyage de la révision hors ligne, en supposant que la tâche de nettoyage de la révision hors ligne a été exécutée avant la migration.</td>
    <td> </td>
   </tr>
  </tbody>
@@ -219,7 +219,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Comment puis-je configurer l’heure de début de la tâche de maintenance du nettoyage des révisions en ligne ?</strong></td>
-   <td>See the <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">How to run Online Revision Cleanup</a> section. </td>
+   <td>Voir la section <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">Comment exécuter le nettoyage de révision en ligne</a>. </td>
    <td> </td>
   </tr>
   <tr>
@@ -270,7 +270,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Quelles sont les conditions minimales requises en matière d’espace disque et de mémoire de tas lors de l’exécution du nettoyage des révisions en ligne ?</strong></td>
-   <td><p>L’espace disque est surveillé en permanence lors du nettoyage des révisions en ligne. Si l’espace disque passe en dessous d’une certaine valeur, le processus est annulé. La valeur critique par défaut est de 25 % de l’encombrement sur le disque du référentiel, et elle n’est pas configurable.</p> <p><strong>Il est recommandé d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.</strong></p> <p>L’espace de tas libre est surveillé en permanence lors du processus de nettoyage. Si l’espace de tas disponible passe en dessous d’une certaine valeur, le processus est annulé. La valeur critique est configurée via org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. La valeur par défaut est 15%.</p> <p>Les recommandations sur le dimensionnement du tas de compression minimal ne sont pas séparées des recommandations sur le dimensionnement de la mémoire AEM. En règle générale : <strong>si une instance AEM est suffisamment bien dimensionnée pour gérer les cas d’utilisation et la charge utile attendue, le processus de nettoyage obtiendra suffisamment de mémoire.</strong></p> </td>
+   <td><p>L’espace disque est surveillé en permanence lors du nettoyage des révisions en ligne. Si l’espace disque passe en dessous d’une certaine valeur, le processus est annulé. La valeur critique par défaut est de 25 % de l’encombrement sur le disque du référentiel, et elle n’est pas configurable.</p> <p><strong>Il est recommandé d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.</strong></p> <p>L’espace de tas libre est surveillé en permanence lors du processus de nettoyage. Si l’espace de tas disponible passe en dessous d’une certaine valeur, le processus est annulé. La valeur critique est configurée via org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. La valeur par défaut est 15 %.</p> <p>Les recommandations sur le dimensionnement du tas de compression minimal ne sont pas séparées des recommandations sur le dimensionnement de la mémoire AEM. En règle générale : <strong>si une instance AEM est suffisamment bien dimensionnée pour gérer les cas d’utilisation et la charge utile attendue, le processus de nettoyage obtiendra suffisamment de mémoire.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -302,8 +302,8 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
    <td><strong>Pourquoi le nettoyage de la mémoire est-il ignoré ?</strong></td>
    <td><p>Le nettoyage des révisions requiert une phase d’estimation pour décider s’il y a suffisamment de contenu inutilisé à nettoyer. L’estimateur compare la taille actuelle à la taille du référentiel après la dernière compression. Si la taille dépasse le delta configuré, le nettoyage sera effectué. Le delta de taille est défini à 1 Go. Cela signifie que si la taille du référentiel n'a pas augmenté de 1 Go depuis la dernière exécution de nettoyage, la nouvelle itération de nettoyage de révision sera ignorée. </p> <p>Vous trouverez, ci-dessous, des entrées de journaux pertinentes pour la phase d’estimation :</p>
     <ul>
-     <li>Revision GC will run: <em>Size delta is N% or N/N (N/N bytes), so running compaction</em></li>
-     <li>Revision GC will <strong>not</strong> run: <em>Size delta is N% or N/N (N/N bytes), so skipping compaction for now</em></li>
+     <li>Révision Le GC sera exécuté : <em>Le delta de taille est N% ou N/N (octets N/N), donc l'exécution de compaction</em></li>
+     <li>Le GC de révision sera <strong>non</strong> exécuté : <em>Le delta de taille est N% ou N/N (octets N/N), de sorte que la compaction est ignorée pour l'instant</em></li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -334,7 +334,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Que se passe-t-il en cas d'interférence excessive des écritures simultanées dans le référentiel ?</strong></td>
-   <td><p>S’il y a des écritures simultanées sur le système, le nettoyage des révisions en ligne peut nécessiter un accès exclusif à l’écriture pour pouvoir effectuer les changements à la fin d’un cycle de compression. The system will go into <strong>forceCompact mode</strong>, as explained in more detail in the <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank">oak documentation</a>. Pendant la compression forcée, un dispositif exclusif de verrouillage de l’écriture est acquis pour effectuer les modifications sans aucune écriture simultanée perturbatrice. Pour limiter l’impact sur les délais de réponse, une valeur de délai d’expiration peut être définie. Cette valeur est définie sur 1 minute par défaut, ce qui signifie que si la compression en force ne se termine pas dans un délai d’une minute, le processus de compression sera interrompu au profit d’autres commits simultanés.</p> <p>La durée du pacte de force dépend des facteurs suivants :</p>
+   <td><p>S’il y a des écritures simultanées sur le système, le nettoyage des révisions en ligne peut nécessiter un accès exclusif à l’écriture pour pouvoir effectuer les changements à la fin d’un cycle de compression. Le système passe en mode <strong>forceCompact</strong>, comme expliqué plus en détail dans la <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank">documentation sur le chêne</a>. Pendant la compression forcée, un dispositif exclusif de verrouillage de l’écriture est acquis pour effectuer les modifications sans aucune écriture simultanée perturbatrice. Pour limiter l’impact sur les délais de réponse, une valeur de délai d’expiration peut être définie. Cette valeur est définie sur 1 minute par défaut, ce qui signifie que si la compression en force ne se termine pas dans un délai d’une minute, le processus de compression sera interrompu au profit d’autres commits simultanés.</p> <p>La durée du pacte de force dépend des facteurs suivants :</p>
     <ul>
      <li>matériel : spécifiquement IOPS. La durée décroît lorsqu’il y a plus d’IOPS.</li>
      <li>taille de l’entrepôt de segments : la durée augmente en fonction de la taille de l’entrepôt de segments.</li>
@@ -355,7 +355,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
    <td>Observations relatives aux opérations de fichiers mappés par la mémoire</td>
    <td>
     <ul>
-     <li><strong>Sur les environnements</strong>Windows, l’accès régulier aux fichiers est toujours appliqué, de sorte que l’accès mappé à la mémoire n’est pas utilisé. En règle générale, toute la RAM disponible doit être allouée au tas et la taille de segmentCache doit être augmentée. Vous augmentez le segmentCache en ajoutant l’option segmentCache.size à org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config (par exemple, segmentCache.size=20480). N’oubliez pas de laisser de la mémoire vive pour le système d’exploitation et d’autres processus.</li>
+     <li><strong>Sur les environnements</strong> Windows, l’accès régulier aux fichiers est toujours appliqué, de sorte que l’accès mappé à la mémoire n’est pas utilisé. En règle générale, toute la RAM disponible doit être allouée au tas et la taille de segmentCache doit être augmentée. Vous augmentez le segmentCache en ajoutant l’option segmentCache.size à org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config (par exemple, segmentCache.size=20480). N’oubliez pas de laisser de la mémoire vive pour le système d’exploitation et d’autres processus.</li>
      <li><strong>Dans les environnements non Windows</strong>, augmentez la taille de la mémoire physique pour améliorer le mappage de mémoire du référentiel.</li>
     </ul> </td>
    <td>
@@ -382,12 +382,12 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Comment vérifier si le nettoyage de la révision en ligne a réussi ?</strong></td>
-   <td><p>Vous pouvez vérifier si le nettoyage de la révision en ligne s'est terminé correctement en vérifiant les journaux.</p> <p>Par exemple, "<code>TarMK GC #{}: compaction completed in {} ({} ms), after {} cycles</code>" désigne l’étape de compactage terminée avec succès, sauf si elle est précédée du message "<code>TarMK GC #{}: compaction gave up compacting concurrent commits after {} cycles</code>", ce qui signifie qu’il y a eu trop de charges simultanées.</p> <p>En conséquence, il existe un message "<code>TarMK GC #{}: cleanup completed in {} ({} ms</code>" pour que l’étape de nettoyage soit terminée avec succès.</p> </td>
+   <td><p>Vous pouvez vérifier si le nettoyage de la révision en ligne s'est terminé correctement en vérifiant les journaux.</p> <p>Par exemple, "<code>TarMK GC #{}: compaction completed in {} ({} ms), after {} cycles</code>" signifie l’étape de compactage terminée avec succès, sauf si elle est précédée du message "<code>TarMK GC #{}: compaction gave up compacting concurrent commits after {} cycles</code>", ce qui signifie qu’il y a eu trop de charges simultanées.</p> <p>En conséquence, un message "<code>TarMK GC #{}: cleanup completed in {} ({} ms</code>" indique que l’étape de nettoyage a été terminée avec succès.</p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
    <td><strong>Où trouver les statistiques des dernières exécutions de nettoyage de révision en ligne ?</strong></td>
-   <td><p>Le statut, les progrès et les statistiques sont exposés via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Pour plus de détails sur le <code>SegmentRevisionGarbageCollection</code> MBean, lisez le paragraphe <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank"></a>suivant.</p> <p>L’avancement peut être suivi via l’ <code>EstimatedRevisionGCCompletion</code> attribut de la variable <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Vous pouvez obtenir une référence du MBean à l’aide du <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>N’oubliez pas que les statistiques sont dospnibles uniquement avec le dernier démarrage de système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. See <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">the AEM documentation for attaching health checks to Nagios as an example for an external monitoring tool</a>.</p> </td>
+   <td><p>Le statut, les progrès et les statistiques sont exposés via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Pour plus d'informations sur le <code>SegmentRevisionGarbageCollection</code> MBean, consultez le <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">paragraphe suivant</a>.</p> <p>L'avancement peut être suivi via l'attribut <code>EstimatedRevisionGCCompletion</code> de la variable <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Vous pouvez obtenir une référence du MBean à l'aide de <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>N’oubliez pas que les statistiques sont dospnibles uniquement avec le dernier démarrage de système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour l'attachement des contrôles d'intégrité à Nagios comme exemple pour un outil de surveillance externe</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -396,17 +396,17 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
     <ul>
      <li>Le nettoyage de la révision en ligne a démarré / arrêté
       <ul>
-       <li>Le nettoyage de la révision en ligne se compose de trois phases : estimation, compaction et nettoyage. La phase d’estimation peut forcer l’omission des phases de compression et de nettoyager si le référentiel ne contient pas suffisament de résidus. Dans la dernière version de l'AEM, le message "<code>TarMK GC #{}: estimation started</code>" marque le début de l'estimation, "<code>TarMK GC #{}: compaction started, strategy={}</code>" marque le début de compaction et "T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>" le début du nettoyage.</li>
+       <li>Le nettoyage de la révision en ligne se compose de trois phases : estimation, compaction et nettoyage. La phase d’estimation peut forcer l’omission des phases de compression et de nettoyager si le référentiel ne contient pas suffisament de résidus. Dans la dernière version de AEM, le message "<code>TarMK GC #{}: estimation started</code>" marque le début de l'estimation, "<code>TarMK GC #{}: compaction started, strategy={}</code>" marque le début de compaction et "T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>" le début de nettoyage.</li>
       </ul> </li>
      <li>Espace disque gagné par le nettoyage de la révision
       <ul>
-       <li>L'espace n'est récupéré que lorsque la phase de nettoyage est terminée. La fin de la phase de nettoyage est marquée par le message "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". La dimension après nettoyage est {} ({} octets) et l’espace récupéré{} ({} octets). Le poids/la profondeur de la carte de compression est {}/{} ({} octets/{}).”.</li>
+       <li>L'espace n'est récupéré que lorsque la phase de nettoyage est terminée. L'achèvement de la phase de nettoyage est marqué par le message du journal "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". La dimension après nettoyage est {} ({} octets) et l’espace récupéré{} ({} octets). Le poids/la profondeur de la carte de compression est {}/{} ({} octets/{}).”.</li>
       </ul> </li>
      <li>Un problème s'est produit lors du nettoyage de la révision
       <ul>
        <li>Il y a de nombreuses conditions d'échec, toutes sont marquées par des messages de journal WARN ou ERROR commençant par "TarMK GC".</li>
       </ul> </li>
-    </ul> <p>Consultez également la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Résolution des problèmes en fonction des messages</a> d’erreur ci-dessous.</p> </td>
+    </ul> <p>Consultez également la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Résolution des problèmes en fonction des messages d’erreur</a> ci-dessous.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -418,24 +418,24 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
    <td><strong>Comment vérifier l'intégrité du référentiel une fois le nettoyage de la révision en ligne terminé ?</strong></td>
    <td><p>Une vérification de l'intégrité du référentiel n'est pas nécessaire après le nettoyage de la révision en ligne. </p> <p>Cependant, vous pouvez effectuer les actions suivantes pour vérifier l’état du référentiel après le nettoyage :</p>
     <ul>
-     <li>Vérification de la <a href="/help/sites-deploying/consistency-check.md" target="_blank">traversée du référentiel</a></li>
-     <li>Utilisez l'outil d'exécution de chêne une fois le processus de nettoyage terminé pour vérifier les incohérences. Pour plus d'informations sur la façon de procéder, consultez la Documentation <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache.</a> Vous n'avez pas besoin de fermer AEM pour exécuter l'outil.</li>
+     <li>Référentiel <a href="/help/sites-deploying/consistency-check.md" target="_blank">vérification de la traversée</a></li>
+     <li>Utilisez l'outil d'exécution de chêne une fois le processus de nettoyage terminé pour vérifier les incohérences. Pour plus d’informations sur la façon de procéder, consultez la <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentation Apache.</a> Vous n'avez pas besoin de fermer AEM pour exécuter l'outil.</li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Comment détecter si le nettoyage de la révision en ligne a échoué et quelles sont les étapes à restaurer ?</strong></td>
-   <td>Les conditions d'échec sont marquées par les messages du journal WARN ou ERROR commençant par "TarMK GC". Consultez également la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Résolution des problèmes en fonction des messages</a> d’erreur ci-dessous.</td>
+   <td>Les conditions d'échec sont marquées par les messages du journal WARN ou ERROR commençant par "TarMK GC". Consultez également la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Résolution des problèmes en fonction des messages d’erreur</a> ci-dessous.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Quelles sont les informations exposées dans le bilan d'intégrité du nettoyage de révision ? Comment et quand contribue-t-elle aux niveaux d’état codés par des couleurs ?  </strong></td>
-   <td><p>Le bilan de santé du nettoyage de la révision fait partie du Tableau de bord <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">d'</a>exploitation.<br /> </p> <p>The status will be <strong>GREEN</strong> if the last execution of the Online Revision Cleanup maintenance task has completed succesfully.</p> <p>Il sera <strong>JAUNE</strong> si la tâche de maintenance de nettoyage de révision en ligne a été annulée une fois.<br /> </p> <p>It will be <strong>RED</strong> if the Online Revision Cleanup maintenance task was cancelled three times in a row. <strong>Dans ce cas, une interaction manuelle est nécessaire</strong> ou le nettoyage de la révision en ligne est susceptible d'échouer à nouveau. Pour plus d'informations, consultez la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Résolution des problèmes</a> ci-dessous.<br /> </p> <p>Veuillez aussi noter que l’état de la vérification de l’intégrité sera réinitialisé après le redémarrage du système. Par conséquent, une instance fraîchement redémarrée affiche un état vert sur la vérification d’intégrité du nettoyage des révisions. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. See <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">the AEM documentation for attaching health checks to Nagios as an example for an external monitoring tool</a>.</p> </td>
+   <td><p>Le contrôle d'intégrité du nettoyage de la révision fait partie du <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Tableau de bord d'exploitation </a>.<br /> </p> <p>L'état est <strong>VERT</strong> si la dernière exécution de la tâche de maintenance de nettoyage de révision en ligne est terminée.</p> <p>Il sera <strong>JAUNE</strong> si la tâche de maintenance de nettoyage de révision en ligne a été annulée une fois.<br /> </p> <p>Il sera <strong>RED</strong> si la tâche de maintenance de nettoyage de révision en ligne a été annulée trois fois de suite. <strong>Dans ce cas, une interaction manuelle est </strong> nécessaire ou le nettoyage de la révision en ligne est susceptible d'échouer à nouveau. Pour plus d'informations, consultez la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Dépannage</a> ci-dessous.<br /> </p> <p>Veuillez aussi noter que l’état de la vérification de l’intégrité sera réinitialisé après le redémarrage du système. Par conséquent, une instance fraîchement redémarrée affiche un état vert sur la vérification d’intégrité du nettoyage des révisions. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">la documentation AEM pour l'attachement des contrôles d'intégrité à Nagios comme exemple pour un outil de surveillance externe</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><p><strong>Comment surveiller le nettoyage automatique sur une instance Secondaire ?</strong></p> </td>
-   <td><p>Le statut, les progrès et les statistiques sont exposés via JMX en utilisant le <code>SegmentRevisionGarbageCollection</code> MBean. Consultez également la documentation <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">sur les chênes</a>ci-dessous. </p> <p>Vous pouvez obtenir une référence du MBean en utilisant le <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>Notez que les statistiques sont disponibles uniquement à partir du dernier démarrage du système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir également <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour l'attachement des contrôles d'intégrité à Nagios comme exemple d'outil</a>de surveillance externe.</p> <p>Les fichiers de journal peuvent aussi être utilisés pour vérifier l’état, le progrès et les statistiques du nettoyage automatique.</p> </td>
+   <td><p>Le statut, les progrès et les statistiques sont exposés via JMX en utilisant le <code>SegmentRevisionGarbageCollection</code> MBean. Voir aussi la <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">documentation sur les chênes</a> suivante. </p> <p>Vous pouvez obtenir une référence du MBean en utilisant <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>Notez que les statistiques sont disponibles uniquement à partir du dernier démarrage du système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir aussi <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour l'attachement des contrôles d'intégrité à Nagios comme exemple d'outil de surveillance externe</a>.</p> <p>Les fichiers de journal peuvent aussi être utilisés pour vérifier l’état, le progrès et les statistiques du nettoyage automatique.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -472,7 +472,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
      <li>Tout d’abord, vérifiez les entrées du journal.<br /> </li>
      <li>En fonction des informations contenues dans les journaux, prenez une mesure appropriée :
       <ul>
-       <li>If the logs show five missed compact cycles and a timeout on the <code>forceCompact</code> cycle, schedule the maintenance window to a quiet time when the amount of repository writes is low. You can check repository writes in the repositoy metrics monitoring tool located at <em>https://serveraddress:serverport/libs/granite/operations/content/monitoring/page.html</em></li>
+       <li>Si les journaux indiquent cinq cycles compacts manqués et un dépassement de délai sur le cycle <code>forceCompact</code>, programmez la fenêtre de maintenance à un moment calme lorsque la quantité d'écritures du référentiel est faible. Vous pouvez vérifier les écritures du référentiel dans l’outil de surveillance des mesures du référentiel situé à l’adresse <em>https://serveraddress:serverport/libs/granite/operations/content/monitoring/page.html</em>.</li>
        <li>Si le nettoyage est arrêté à la fin de la fenêtre de maintenance, assurez-vous que la configuration de la fenêtre de maintenance dans l’interface utilisateur des tâches de maintenance est suffisamment volumineuse. </li>
        <li>Si la mémoire disponible est insuffisante, assurez-vous que l’instance contienne suffisament de mémoire.</li>
        <li>En cas de délai de réponse, l’entrepôt de segments peut augmenter de façon excessive au point où il devient impossible d’effectuer un nettoyage des révisions en ligne, même avec une fenêtre de maintenance plus longue. Par exemple, si aucun nettoyage des révisions en ligne n’a réussi au cours de la dernière semaine, il est recommandé de planifier une maintenance hors ligne et d’effectuer le nettoyage des révisions hors ligne en vue de convertir la taille de l’entrepôt de segments à une dimension plus gérable.</li>
@@ -491,12 +491,12 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
    <td> </td>
   </tr>
   <tr>
-   <td><strong>What is causing <code>SegmentNotFoundException</code> instances to be logged in the <code>error.log</code> and how can I recover?</strong></td>
-   <td><p>A <code>SegmentNotFoundException</code> is logged by the TarMK when it tries to access a storage unit (a segment) that it can not find. Il existe trois scénarios pouvant causer ce problème :</p>
+   <td><strong>En quoi les instances <code>SegmentNotFoundException</code> sont-elles consignées dans <code>error.log</code> et comment puis-je récupérer ?</strong></td>
+   <td><p>Un <code>SegmentNotFoundException</code> est consigné par le TarMK lorsqu'il tente d'accéder à une unité d'enregistrement (un segment) qu'il ne trouve pas. Il existe trois scénarios pouvant causer ce problème :</p>
     <ol>
      <li>Une application qui contourne les systèmes d’accès recommandés (comme Sling et l’API JCR) et utilise un niveau API/SPI plus bas pour accéder au référentiel, puis dépasse la période de validité d’un segment. En d’autres termes, il conserve une référence à une entité plus longue que la durée de rétention octroyée par le nettoyage des révisions en ligne (24 heures par défaut). Ce cas est transitoire et ne conduit pas à la corruption des données. Pour récupérer, l'outil d'exécution de chêne doit être utilisé pour confirmer la nature transitoire de l'exception (la vérification d'exécution de chêne ne doit pas signaler d'erreurs). Pour ce faire, l’instance doit être mise hors ligne et redémarrée ensuite.</li>
-     <li>Un événement externe a causé la corruption des données sur le disque. Il peut s’agir d’une panne du disque, d’un espace disque saturé ou d’une modification accidentelle des fichiers de données requis. Dans ce cas, une instance doit être déconnectée et réparée avec la vérification exécutée par Oak. For more details on how to perform the oak-run check, read the following <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache documentation</a>.</li>
-     <li>All other occurrences should addressed through the <a href="https://helpx.adobe.com/fr/marketing-cloud/contact-support.html" target="_blank">Adobe Customer Care</a>.</li>
+     <li>Un événement externe a causé la corruption des données sur le disque. Il peut s’agir d’une panne du disque, d’un espace disque saturé ou d’une modification accidentelle des fichiers de données requis. Dans ce cas, une instance doit être déconnectée et réparée avec la vérification exécutée par Oak. Pour plus d'informations sur la façon d'effectuer la vérification de l'exécution du chêne, consultez la <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentation Apache</a> suivante.</li>
+     <li>Toutes les autres occurrences doivent être traitées par le service à la clientèle <a href="https://helpx.adobe.com/fr/marketing-cloud/contact-support.html" target="_blank">Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -514,7 +514,7 @@ Le fichier error.log sera détaillé en cas d&#39;incident au cours du processus
 |  | TarMK GC #2 : estimation interrompue : ${REASON}. Skipping compaction. | La phase d&#39;estimation s&#39;est terminée prématurément. Quelques exemples d’événements qui peuvent interrompre la phase d’estimation : pas suffisamment de mémoire ou d’espace disque sur le système hôte. | Dépend de la raison donnée. |
 | Compaction | TarMK GC #2 : compaction suspendue | Tant que la phase de compaction est interrompue par la configuration, ni la phase d&#39;estimation ni la phase de compaction ne seront exécutées. | Activez le nettoyage des révisions en ligne. |
 |  | TarMK GC #2 : compaction annulée : ${REASON}. | La phase de compaction s&#39;est terminée prématurément. Quelques exemples d’événements qui peuvent interrompre la phase de compression : pas suffisamment de mémoire ou d’espace disque sur le système hôte. De plus, la compression peut être annulée en désactivant le système ou en l’annulant de façon explicite par le biais des interfaces d’administration telles que la fenêtre de maintenance dans le tableau des opérations. | Dépend de la raison donnée. |
-|  | TarMK GC #2 : échec de compaction en 32,902 min (1974140 ms), après 5 cycles | Ce message ne signifie pas qu’il y a eu une erreur irrécupérable, mais seulement que la compaction a été arrêtée après un certain nombre de tentatives. Lisez également le paragraphe [](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes)suivant. | Lisez la documentation [](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes)Oak suivante et la dernière question de la section Nettoyage [de la révision en ligne](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) en cours. |
+|  | TarMK GC #2 : échec de compaction en 32,902 min (1974140 ms), après 5 cycles | Ce message ne signifie pas qu’il y a eu une erreur irrécupérable, mais seulement que la compaction a été arrêtée après un certain nombre de tentatives. Lisez également le [paragraphe suivant](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). | Lisez la [documentation sur les chênes](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes) suivante et la dernière question de la section [Exécution du nettoyage de révision en ligne](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup). |
 | Nettoyage | TarMK GC #2 : nettoyage interrompu | Le nettoyage a été annulé en arrêtant le référentiel. Aucun impact sur la cohérence n’est attendu. En outre, l’espace disque ne sera probablement pas pleinement récupéré. Il sera récupéré lors du prochain cycle de nettoyage des révisions.  | Découvrir pourquoi le référentiel a été arrêté et essayer d’éviter de le désactiver pendant les fenêtres de maintenance. |
 
 ## Exécution du nettoyage des révisions hors ligne {#how-to-run-offline-revision-cleanup}
@@ -523,7 +523,7 @@ Le fichier error.log sera détaillé en cas d&#39;incident au cours du processus
 >
 >Les différentes versions de l’outil exécuté par Oak doivent être utilisées en fonction de la version d’Oak que vous utilisez avec votre installation AEM. Vérifiez les exigences de version énumérés ci-dessous avant d’utiliser l’outil :
 >
->* For Oak versions **1.0.0 through 1.0.11** or **1.1.0 through 1.1.6**, use Oak-run version** 1.0.11**
+>* Pour les versions Oak **1.0.0 à 1.0.11** ou **1.1.0 à 1.1.6**, utilisez la version Oak** 1.0.11**
    >
    >
 * Pour des versions d’Oak **plus récentes que celle ci-dessus**, utilisez la version d’Oak-run qui correspond au système Oak de votre installation AEM. 
@@ -532,13 +532,13 @@ Le fichier error.log sera détaillé en cas d&#39;incident au cours du processus
 
 
 
-Adobe provides a tool called **Oak-run** for performing revision cleanup. Il peut être téléchargé à l’emplacement suivant :
+Adobe fournit un outil appelé **Oak-run** pour effectuer le nettoyage de la révision. Il peut être téléchargé à l’emplacement suivant :
 
 [https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/)
 
 L’outil est un jar exécutable qui peut être exécuté manuellement pour compresser le référentiel. Le processus est appelé nettoyage des révisions hors ligne, car le référentiel doit être desactivé pour pouvoir exécuter correctement l’outil. Veillez à planifier le nettoyage en fonction de la période de maintenance. 
 
-For tips on how to increase the performance of the cleanup process, see [Increasing the Performance of Offline Revision Cleanup](/help/sites-deploying/revision-cleanup.md#increasing-the-performance-of-offline-revision-cleanup).
+Pour obtenir des conseils sur la façon d’améliorer les performances du processus de nettoyage, voir [Augmentation des performances du nettoyage de la révision hors ligne](/help/sites-deploying/revision-cleanup.md#increasing-the-performance-of-offline-revision-cleanup).
 
 >[!NOTE]
 >
@@ -566,7 +566,7 @@ For tips on how to increase the performance of the cleanup process, see [Increas
    java -jar -Dsun.arch.data.model=32 oak-run.jar compact install-folder/crx-quickstart/repository/segmentstore
    ```
 
-### Amélioration de la performance du nettoyage des révisions hors ligne {#increasing-the-performance-of-offline-revision-cleanup}
+### Amélioration de la performance du nettoyage des révisions hors ligne  {#increasing-the-performance-of-offline-revision-cleanup}
 
 L’outil oak-run présente plusieurs fonctionnalités ayant pour but d’améliorer les performances du processus de nettoyage des révisions et de réduire la fenêtre de maintenance autant que possible.
 
@@ -574,19 +574,19 @@ La liste comprend plusieurs paramètres de ligne de commande, comme décrit ci-d
 
 * **-mmap.** Vous pouvez définir cette variable sur true ou false. S’il est défini sur true, l’accès mappé par la mémoire est utilisé. S’il est défini sur false, l’accès aux fichiers est utilisé. S’il n’est pas spécifié, l’accès mappé par la mémoire est utilisé sur les systèmes 64 bits et l’accès aux fichiers est utilisé sur les systèmes 32 bits. Sous Windows, l’accès standard aux fichiers est toujours appliqué et cette option est ignorée. **Ce paramètre a remplacé le paramètre -Dtar.memoryMapped.**
 
-* **-Dupdate.limit**. Définit le seuil de vidage d’une transaction temporaire sur le disque. La valeur par défaut est 10000.   
+* **-Dupdate.limit**. Définit le seuil de vidage d’une transaction temporaire sur le disque. La valeur par défaut est 10000.
 
 * **-Dcompress-interval**. Nombre de saisies du plan de compression à conserver jusqu’à la compression du plan actuel. La valeur par défaut est de 1000000. Vous devez augmenter cette valeur à un nombre plus élevé pour un débit plus rapide, si vous disposez de suffisamment de mémoire. **Ce paramètre a été supprimé dans Oak version 1.6 et est sans effet.**
 
 * **-Dcompaction-progress-log**. Le nombre de nœuds compressés qui seront inscrits dans le journal. La valeur par défaut est 150000, ce qui signifie que les 150000 premiers noeuds compactés seront enregistrés pendant l’opération. Utilisez ce paramètre conjointement avec le paramètre suivant répertoriées ci-dessous.
 
-* **-Dtar.PersistCompactionMap.** Définissez ce paramètre sur true pour utiliser l’espace disque au lieu de la mémoire de tas pour la persistance de la carte de compaction. Requires the oak-run tool **versions 1.4** and higher. Pour plus de détails, reportez-vous à la question 3 dans la section [FAQ sur le nettoyage des révisions hors ligne. ](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions) **Ce paramètre a été supprimé dans Oak version 1.6 et est sans effet.**
+* **-Dtar.PersistCompactionMap.** Définissez ce paramètre sur true pour utiliser l’espace disque au lieu de la mémoire de tas pour la persistance de la carte de compaction. Nécessite l&#39;outil d&#39;exécution en chêne **versions 1.4** et ultérieures. Pour plus de détails, reportez-vous à la question 3 dans la section [FAQ sur le nettoyage des révisions hors ligne. ](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions) **Ce paramètre a été supprimé dans Oak version 1.6 et est sans effet.**
 
 * **--force.** Force la compression et ignore une version d’entrepôt de segments sans correspondance.
 
 >[!CAUTION]
 >
->Using the `--force` parameter will upgrade the segment store to the latest version, which is incompatible with older Oak versions. Veuillez également tenir compte du fait qu’il est impossible de revenir à la version antérieure. En règle générale, l’utilisation de ces paramètres doit être réservée aux utilisateurs qui disposent des connaissances appropriées.
+>L’utilisation du paramètre `--force` permet de mettre à niveau le magasin de segments vers la dernière version, ce qui est incompatible avec les anciennes versions d’Oak. Veuillez également tenir compte du fait qu’il est impossible de revenir à la version antérieure. En règle générale, l’utilisation de ces paramètres doit être réservée aux utilisateurs qui disposent des connaissances appropriées.
 
 Un exemple de paramètre utilisé :
 
@@ -594,13 +594,13 @@ Un exemple de paramètre utilisé :
 java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurationFile=logback.xml -Xmx8g -jar oak-run-*.jar checkpoints <repository>
 ```
 
-### Autres méthodes pour déclencher le nettoyage des révisions {#additional-methods-of-triggering-revision-cleanup}
+### Autres méthodes pour déclencher le nettoyage des révisions  {#additional-methods-of-triggering-revision-cleanup}
 
 Outre celles présentées ci-dessus, vous pouvez également déclencher le mécanisme de nettoyage des révisions à l’aide de la console JMX, comme suit :
 
-1. Open the JMX Console by going to [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
-1. Click the **RevisionGarbageCollection** MBean.
-1. In the next window, click **startRevisionGC()** and then **Invoke** to start the Revision Garbage Collection job.
+1. Ouvrez la console JMX en accédant à [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx).
+1. Cliquez sur **RevisionGarbageCollection** MBean.
+1. Dans la fenêtre suivante, cliquez sur **startRevisionGC()**, puis sur **Invoke** pour début de la tâche Revision Garbage Collection.
 
 ### FAQ sur le nettoyage des révisions hors ligne {#offline-revision-cleanup-frequently-asked-questions}
 
@@ -614,13 +614,13 @@ Outre celles présentées ci-dessus, vous pouvez également déclencher le méca
    <td><strong>Quelle différence y a-t-il entre une révision et une version de page ?</strong></td>
    <td>
     <ul>
-     <li><strong>Révision du chêne :</strong> Oak organise tout le contenu dans une grande arborescence composée de noeuds et de propriétés. Chaque aperçu ou révision de cet ensemble de contenus inaltérables, ainsi que les modifications de l’arborescence sont indiqués sous forme de séquence de nouvelles révisions. En règle générale, chaque modification de contenu déclenche une nouvelle révision. Voir aussi <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> Suivre le lien</a>.</li>
-     <li><strong>Version de la page :</strong> Le contrôle de version crée un "instantané" d’une page à un moment donné. En règle générale, une nouvelle version est créée lorsqu’une page est activée. For more information, see <a href="/help/sites-authoring/working-with-page-versions.md" target="_blank">Working with Page Versions</a>.</li>
+     <li><strong>Révision en chêne : </strong> Oak organise tout le contenu dans une grande arborescence composée de noeuds et de propriétés. Chaque aperçu ou révision de cet ensemble de contenus inaltérables, ainsi que les modifications de l’arborescence sont indiqués sous forme de séquence de nouvelles révisions. En règle générale, chaque modification de contenu déclenche une nouvelle révision. Voir aussi <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> Suivre le lien</a>.</li>
+     <li><strong>Version de la page : </strong> le contrôle de version crée un "instantané" d’une page à un moment donné. En règle générale, une nouvelle version est créée lorsqu’une page est activée. Pour plus d’informations, voir <a href="/help/sites-authoring/working-with-page-versions.md" target="_blank">Utilisation des versions de page</a>.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Comment accélérer la tâche de nettoyage des révisions hors ligne si elle n’est pas terminée au bout de 8 heures ?</strong></td>
-   <td>If the revision task does not complete within 8 hours and the <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank">thread dumps</a> reveal that the main hotspot is <code>InMemoryCompactionMap.findEntry</code>, use the following parameter with the oak-run tool <strong>versions 1.4 </strong>or higher: <code>-Dtar.PersistCompactionMap=true</code>. Be aware that the <code>-Dtar.PersistCompactionMap</code> parameter has been removed in Oak version 1.6.</td>
+   <td>Si la tâche de révision n'est pas terminée dans les 8 heures et que le <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank">thread dumps</a> révèle que la zone réactive principale est <code>InMemoryCompactionMap.findEntry</code>, utilisez le paramètre suivant avec l'outil d'exécution de chêne <strong>versions 1.4 </strong>ou ultérieures : <code>-Dtar.PersistCompactionMap=true</code>. Notez que le paramètre <code>-Dtar.PersistCompactionMap</code> a été supprimé dans Oak version 1.6.</td>
   </tr>
  </tbody>
 </table>
