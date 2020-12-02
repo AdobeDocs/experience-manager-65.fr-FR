@@ -25,7 +25,7 @@ Dans certains cas, les utilisateurs finaux qui remplissent un formulaire ne sont
 
 Cet article décrit comment les auteurs de formulaires peuvent ajouter une aide contextuelle lors de la création de formulaires adaptatifs.
 
-## Ajout d’une aide contextuelle {#add-in-context-help}
+## Ajout d’une aide contextuelle  {#add-in-context-help}
 
 Vous pouvez spécifier une aide contextuelle à l’aide des options suivantes dans la section Contenu de l’aide de l’onglet Propriétés de la barre latérale.
 
@@ -38,7 +38,7 @@ Vous pouvez spécifier une aide contextuelle à l’aide des options suivantes d
 >
 >La description longue remplace la description courte. Si vous avez spécifié les deux, seule la description longue s’affiche.
 
-### Description courte {#short-description}
+### Description courte  {#short-description}
 
 Le champ Description courte permet de fournir des conseils courts et rapides pour le remplissage d’un champ de formulaire. Le texte saisi dans le champ Description courte s’affiche sous forme d’info-bulle lorsque le pointeur de la souris est placé sur le champ.
 
