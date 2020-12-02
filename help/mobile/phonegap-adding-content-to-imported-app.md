@@ -19,7 +19,7 @@ ht-degree: 3%
 ---
 
 
-# Votre application hybride est-elle prête pour l&#39;AEM Mobile ?{#is-your-hybrid-app-ready-for-aem-mobile}
+# Votre application hybride est-elle prête pour l’AEM Mobile ?{#is-your-hybrid-app-ready-for-aem-mobile}
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Pour faciliter le suivi de l&#39;explication, nous utiliserons l&#39;Marketing C
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-Dans cet exemple, nous allons créer la page de bienvenue de l&#39;application. Jetez un oeil à la source [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Nous constatons que le développeur d’applications a défini une page d’accueil et fourni un modèle pour la page rendue par l’application. C’est là que le développeur d’applications et le développeur d’AEM doivent se coordonner. Le chemin d’accès au modèle de page d’accueil dans l’application de référence hybride est défini comme étant &quot;&quot;content/mobileapps/hybrid-reference-app/en/welcome.template.html&quot;. Ce chemin d’accès est extrêmement important car le développeur AEM va créer sa page d’accueil dans le référentiel AEM en utilisant le même chemin d’accès.
+Dans cet exemple, nous allons créer la page de bienvenue de l&#39;application. Examinez la source [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Nous constatons que le développeur d’applications a défini une page d’accueil et fourni un modèle pour la page rendue par l’application. C’est là que le développeur d’applications et le développeur d’AEM doivent se coordonner. Le chemin d’accès au modèle de page d’accueil dans l’application de référence hybride est défini comme étant &quot;&quot;content/mobileapps/hybrid-reference-app/en/welcome.template.html&quot;. Ce chemin d’accès est extrêmement important car le développeur AEM va créer sa page d’accueil dans le référentiel AEM en utilisant le même chemin d’accès.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
