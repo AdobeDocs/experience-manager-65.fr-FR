@@ -11,13 +11,13 @@ ht-degree: 78%
 ---
 
 
-# Use demo package for Asset Insights {#using-demo-package-for-asset-insights}
+# Utiliser le package de démonstration pour Asset Insights {#using-demo-package-for-asset-insights}
 
 À l’aide du module de démonstration, vous pouvez permettre à Adobe Asset Insights de capturer les données d’un exemple de page web et de générer des informations pour cette page.
 
-## [!DNL Use Experience Manager Assets] Informations sur une page Web d’exemple  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Informations sur une page Web d’exemple   {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configure Asset Insights using the instructions in [Configuring Asset Insights](configure-asset-insights.md).
+1. Configurez Asset Insights en suivant les instructions de la section [Configuration de Asset Insights](configure-asset-insights.md).
 1. Téléchargez le module d’exemple  Assets ci-dessous et installez-le à partir du gestionnaire de modules CRXDE.
 
    [Obtenir le fichier](assets/insightsdemo.zip)
@@ -34,4 +34,4 @@ ht-degree: 78%
 
    >[!NOTE]
    >
-   >The external web page can be in [!DNL Experience Manager] itself.
+   >La page Web externe peut se trouver dans [!DNL Experience Manager] elle-même.
