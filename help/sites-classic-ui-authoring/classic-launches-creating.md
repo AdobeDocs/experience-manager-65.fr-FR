@@ -23,7 +23,7 @@ ht-degree: 96%
 
 Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source :
 
-* The title appears in the **Sidekick**, from where authors can access them to work on them.
+* Le titre s’affiche dans le **Sidekick**, d’où les auteurs peuvent y accéder pour y travailler.
 * Les pages enfants de la page source sont incluses, par défaut, dans le lancement. Si vous le souhaitez, vous pouvez n’utiliser que la page source.
 * Par défaut, [Live Copy](/help/sites-administering/msm.md) met automatiquement à jour les pages de lancement à mesure que les pages source changent. Vous pouvez spécifier qu’une copie statique soit créée afin d’empêcher les modifications automatiques.
 
