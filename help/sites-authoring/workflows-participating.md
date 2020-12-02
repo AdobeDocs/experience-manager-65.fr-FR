@@ -30,7 +30,7 @@ Les workflows incluent généralement les étapes qu’une personne doit suivre 
 * [Ouverture d’un élément de workflow pour afficher les détails (et réaliser des actions)](#opening-a-workflow-item-to-view-details-and-take-actions)
 * [Affichage de la charge utile de workflow (plusieurs ressources)](#viewing-the-workflow-payload-multiple-resources)
 
-## Notifications d’actions de workflow disponibles   {#notifications-of-available-workflow-actions}
+## Notifications d’actions de workflow disponibles    {#notifications-of-available-workflow-actions}
 
 Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**), diverses alertes et/ou notifications s’affichent :
 
@@ -117,7 +117,7 @@ Vous pouvez également utiliser la chronologie pour terminer et avancer d’une 
 
 1. Sélectionnez l’option **Avancer** pour confirmer l’action.
 
-### Délégation d’une étape de participant   {#delegating-a-participant-step}
+### Délégation d’une étape de participant    {#delegating-a-participant-step}
 
 Si une étape vous a été affectée, mais que pour une raison quelconque, vous ne pouvez pas vous en charger, vous pouvez la déléguer à un autre utilisateur ou groupe.
 
