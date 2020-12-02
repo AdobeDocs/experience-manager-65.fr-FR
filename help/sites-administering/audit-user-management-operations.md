@@ -33,11 +33,11 @@ Cette amélioration permet de contrôler la création, la lecture, la mise à jo
 
 Par défaut, les entrées sont écrites dans le fichier `error.log`. Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct. Vous trouverez plus d’informations sur la marche à suivre dans le paragraphe ci-dessous.
 
-## Redirection de la sortie vers un fichier journal distinct {#redirecting-the-output-to-a-separate-log-file}
+## Redirection de la sortie vers un fichier journal distinct  {#redirecting-the-output-to-a-separate-log-file}
 
 Pour rediriger la sortie de la journalisation vers un fichier journal distinct, vous devez créer une configuration **Enregistreur de journalisation Apach Sling**. Dans l’exemple ci-dessous, nous utilisons `useraudit.log` comme nom de fichier distinct.
 
-1. Go to the Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
+1. Accédez à la console Web en accédant à *https://serveraddress:serverport/system/console/configMgr*.
 1. Recherchez la **Configuration de l’enregistreur de journalisation Apache Sling**. Ensuite, appuyez sur « + » dans la partie droite de l’entrée afin de créer une configuration d’usine.
 1. Créez la configuration suivante :
 
@@ -82,7 +82,7 @@ Si la configuration est correcte, la sortie doit se présenter comme suit :
 19.05.2017 15:44:10.405 *INFO* [0:0:0:0:0:0:0:1 [1495197850401] POST /home/users/3/35XVpVtLRx4a5J9gKrVG.rw.userprops.html HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction Password for User 'john' was changed
 ```
 
-## IU classique {#classic-ui}
+## IU classique  {#classic-ui}
 
 Dans l’IU classique, les informations sur les opérations de création, lecture, mise à jour et suppression enregistrées dans le journal d’audit concernant l’ajout et la suppression d’utilisateurs sont limitées à l’ID de l’utilisateur affecté et à la date de modification.
 
