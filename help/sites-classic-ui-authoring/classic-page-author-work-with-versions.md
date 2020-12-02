@@ -1,8 +1,8 @@
 ---
 title: Utilisation des versions de page
 seo-title: Utilisation des versions de page
-description: La création de versions permet de créer un « instantané » d’une page à un moment donné.
-seo-description: La création de versions permet de créer un « instantané » d’une page à un moment donné.
+description: Le contrôle de version permet de créer un « instantané » d’une page à un moment donné.
+seo-description: Le contrôle de version permet de créer un « instantané » d’une page à un moment donné.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,13 +21,13 @@ ht-degree: 92%
 
 # Utilisation des versions de page{#working-with-page-versions}
 
-La création de versions permet de créer un « instantané » d’une page à un moment donné. Avec la création de versions, vous pouvez effectuer les opérations suivantes :
+Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 
 * Créer une version d’une page donnée.
 * Restaurer la version précédente d’une page (pour annuler une modification apportée à une page, par exemple).
 * Comparer la version actuelle d’une page avec une version précédente (les différences dans le texte et les images sont mises en évidence).
 
-## Création d’une version   {#creating-a-new-version}
+## Création d’une version    {#creating-a-new-version}
 
 Pour créer une version d’une page :
 
@@ -37,15 +37,15 @@ Pour créer une version d’une page :
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Entrez un commentaire dans la zone **Commenter** (facultatif).
-1. To set a label to the version (optional), click the **More >>** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
-1. Click **Create Version**. Un message grisé s’affiche sur la page ; par exemple :
+1. Pour définir une étiquette sur la version (facultatif), cliquez sur le bouton **Plus &quot;** et définissez **Label** pour nommer la version. Si le libellé n’est pas défini, la version est un nombre incrémenté automatiquement.
+1. Cliquez sur **Créer une version**. Un message grisé s’affiche sur la page ; par exemple :
 Version 1.2 créée pour : Chemises.
 
 >[!NOTE]
 >
 >Une version est automatiquement créée lorsque la page est activée.
 
-## Restauration de la version d’une page à partir du sidekick {#restoring-a-page-version-from-sidekick}
+## Restauration de la version d’une page à partir du sidekick  {#restoring-a-page-version-from-sidekick}
 
 Pour restaurer une version précédente de la page :
 
@@ -71,7 +71,7 @@ Appliquez cette méthode pour restaurer une version de page. Vous pouvez égalem
 
 1. Sélectionnez la version à restaurer et cliquez sur **Restaurer**. AEM restaure la ou les versions (ou arborescences) sélectionnées.
 
-### Restauration d’une arborescence à partir de la console {#restoring-a-tree-from-the-console}
+### Restauration d’une arborescence à partir de la console  {#restoring-a-tree-from-the-console}
 
 Appliquez cette méthode pour restaurer une version de page. Vous pouvez également l’appliquer pour restaurer des pages qui ont été précédemment supprimées :
 
@@ -88,7 +88,7 @@ Appliquez cette méthode pour restaurer une version de page. Vous pouvez égalem
 Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Dans votre navigateur, ouvrez la page pour laquelle vous souhaitez effectuer une comparaison avec une version précédente.
-1. In the Sidekick, select the **Versioning** tab, then the **Restore Versio** n sub tab.
+1. Dans le Sidekick, sélectionnez l&#39;onglet **Versioning**, puis le sous-onglet **Restore Versio** n.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -103,7 +103,7 @@ Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Dans le sidekick, sélectionnez le sous-onglet **Restaurer la version**, puis cliquez sur le bouton **&lt;&lt;Précédent** pour afficher la version actuelle.
 
-## Timewarp   {#timewarp}
+## Distorsion du temps Timewarp   {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état ***publié*** d’une page à des moments spécifiques dans le passé.
 
@@ -120,7 +120,7 @@ Pour ce faire :
 >
 >Si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte. De même, si des éléments (tels que du code, des feuilles css, des images, etc.) destinés au rendu du site web ont été modifiés, la vue sera différente de ce qu’elle était initialement, étant donné que ces éléments ne sont pas versionnés dans le référentiel.
 
-### Utilisation du calendrier Timewarp {#using-the-timewarp-calendar}
+### Utilisation du calendrier Timewarp  {#using-the-timewarp-calendar}
 
 La fonctionnalité Timewarp est disponible à partir du sidekick.
 
