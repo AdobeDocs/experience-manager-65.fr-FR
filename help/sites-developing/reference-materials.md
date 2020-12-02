@@ -15,12 +15,12 @@ translation-type: tm+mt
 source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
 
-# Guides des API {#api-guides}
+# Guides des API  {#api-guides}
 
 Adobe Experience Manager (AEM) fournit plusieurs API pour développer des applications et étendre AEM. La liste suivante répertorie la documentation des API prises en charge par AEM :
 
@@ -30,14 +30,14 @@ Adobe Experience Manager (AEM) fournit plusieurs API pour développer des appl
 * [Guide pour l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 * [Documentation de l’API Widgets (interface utilisateur classique)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
 * [Référence de l’API JavaScript de structure des tests de l’interface utilisateur](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
-* [Référence de l’API JavaScript de base de l’éditeur](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
+* [Référence de l’API JavaScript de base de l’éditeur](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
 Références de l’API JavaScript de structure du SDK de l’éditeur d’application monopage AEM :
 
 * [Mappage de composant](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Gestionnaire de modèle de page](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [Composants modifiables React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Composants modifiables angulaires](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Composants modifiables Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 API de diffusion et de gestion de contenu AEM :
 
