@@ -17,7 +17,7 @@ ht-degree: 87%
 
 # Correspondence Management | Gestion des données utilisateur {#correspondence-management-handling-user-data}
 
-AEM Forms Correspondence Management vous permet de créer, gérer et rationaliser des correspondances client sécurisées et personnalisées. Il fournit une interface utilisateur intuitive pour que les utilisateurs professionnels puissent créer des correspondances à l’aide de blocs de contenu pré-approuvés et d’éléments multimédias. For more information about creating correspondences, see [Create Correspondence](/help/forms/using/create-correspondence.md).
+AEM Forms Correspondence Management vous permet de créer, gérer et rationaliser des correspondances client sécurisées et personnalisées. Il fournit une interface utilisateur intuitive pour que les utilisateurs professionnels puissent créer des correspondances à l’aide de blocs de contenu pré-approuvés et d’éléments multimédias. Pour plus d’informations sur la création de correspondances, voir [Création de correspondance](/help/forms/using/create-correspondence.md).
 
 Lorsqu’un utilisateur professionnel ou un agent enregistre une correspondance en tant que brouillon ou l’envoie, une instance de lettre est enregistrée dans le référentiel AEM. L’instance de lettre comprend des données de correspondance et des métadonnées.
 
@@ -25,7 +25,7 @@ Lorsqu’un utilisateur professionnel ou un agent enregistre une correspondance 
 >
 >Dans AEM 6.5 Forms, la gestion des correspondances n’est pas disponible hors champ. Si vous effectuez une mise à niveau à partir d’une version précédente d’AEM Forms, installez le package de compatibilité et migrez vos actifs Correspondence Management pour continuer à les utiliser dans AEM 6.5 Forms. Pour plus d’informations, reportez-vous à la section [Package de compatibilité](/help/forms/using/compatibility-package.md).
 
-## Données utilisateur et stockage de données {#data}
+## Données utilisateur et stockage de données  {#data}
 
 Correspondence Management stocke les données de brouillon et les lettres envoyées dans le référentiel AEM uniquement si l’instance de publication est configurée pour gérer les instances de lettre. Pour en savoir plus sur les propriétés de configuration, reportez-vous à la section [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
@@ -57,7 +57,7 @@ Selon la persistance du stockage de données configuré pour votre déploiement 
 * `[node-id]` correspond à l’ID attribué au dossier contenant la lettre
 * `[letter-instance-name]` correspond au nom spécifié lors de l’enregistrement ou de l’envoi d’une lettre
 
-Under the [letter-instance-name] node, the following node structure is created and the data for each letter instance is stored in the AEM repository:
+Sous le noeud [letter-instance-name], la structure de noeud suivante est créée et les données de chaque instance de lettre sont stockées dans le référentiel AEM :
 
 | Node | Description |
 |---|---|
@@ -70,13 +70,13 @@ Under the [letter-instance-name] node, the following node structure is created a
 
 Vous pouvez accéder aux données de correspondances sous forme de brouillons et envoyées dans les stockages de données configurés et, si nécessaire, les supprimer.
 
-### Accès aux données utilisateur {#access-user-data}
+### Accès aux données utilisateur  {#access-user-data}
 
-Correspondence Management fournit des API que vous pouvez utiliser pour rechercher et accéder à des instances de lettres envoyées et sous forme de brouillons. Grâce aux API vous pouvez rechercher et ouvrir des instances de lettre à l’aide de l’ID de l’instance de lettre ou de l’utilisateur qui a enregistré ou envoyé la correspondance. For more information, see [APIs to access letter instances](/help/forms/using/cm-apis-to-access-letter-instances.md).
+Correspondence Management fournit des API que vous pouvez utiliser pour rechercher et accéder à des instances de lettres envoyées et sous forme de brouillons. Grâce aux API vous pouvez rechercher et ouvrir des instances de lettre à l’aide de l’ID de l’instance de lettre ou de l’utilisateur qui a enregistré ou envoyé la correspondance. Pour plus d’informations, voir [API pour accéder aux instances de lettre](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
 Vous pouvez également accéder à une instance de lettre dans un référentiel AEM à l’aide de CRX DELite. Reportez-vous à la section [Données utilisateur et stockage de données](/help/forms/using/correspondence-management-handling-user-data.md#data) pour en savoir plus sur les données stockées et l’emplacement du référentiel.
 
-### Suppression de données utilisateur {#delete-user-data}
+### Suppression de données utilisateur  {#delete-user-data}
 
 Pour rechercher une instance de lettre qui contient les données d’un utilisateur spécifique, vous pouvez :
 
