@@ -30,13 +30,13 @@ Vous pouvez exécuter l’outil keytool en saisissant une seule commande qui com
 
 **Création de certificat SSL**
 
-1. In a command prompt, navigate to *`[JAVA HOME]`*/bin and type the following command to create the certificate and keystore:
+1. Dans une invite de commande, accédez à *`[JAVA HOME]`*/bin et tapez la commande suivante pour créer le certificat et le fichier de stockage des clés :
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nom* d’hôte `, OU=`** Groupe Nom `, O=`** Société Nom `,L=`** Ville NomÉtat  Code du pays &quot;LC Cert&quot;  mot de passe_nom_stockage_clés `, S=`**`, C=`**`" -alias`**`-keypass``key`****`-keystore`**`.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Host* `, OU=`*NameGroup* `, O=`*NameCompany* `,L=`*NameCity* `, S=`** `, C=`*NameStateCountry Code* `" -alias`*&quot;LC Cert&quot;* `-keypass` `key`** ** `-keystore`*_passwordkeystorename* `.keystore`
 
    >[!NOTE]
    >
-   >Replace *`[JAVA_HOME]`with the directory where the JDK is installed, and replace the text in italic with values that correspond with your environment.*
+   >Remplacez *`[JAVA_HOME]`par le répertoire dans lequel le JDK est installé et remplacez le texte en italique par les valeurs correspondant à votre environnement.*
 
-1. Type `changeit` as the password. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
+1. Tapez `changeit` comme mot de passe. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
 
