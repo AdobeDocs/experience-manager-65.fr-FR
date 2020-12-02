@@ -28,9 +28,9 @@ Les agents peuvent associer et exécuter les flux de travaux de post-traitement 
 
 Pour associer les post-traitements aux lettres et communications interactives, vous devez commencer par configurer les post-traitements. Deux types de workflows peuvent être exécutés sur les lettres envoyées :
 
-1. **Forms Workflow :** Il s’agit des workflows de gestion des processus AEM Forms on JEE. Instructions for setting up [Forms Workflow](#formsworkflow).
+1. **Forms Workflow :** il s’agit des workflows de gestion des processus de AEM Forms on JEE. Instructions pour configurer [Forms Workflow](#formsworkflow).
 
-1. **Processus AEM :** aem workflows peuvent également être utilisés comme post-traitement pour les lettres envoyées. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
+1. **Processus AEM : les workflows** AEM peuvent également être utilisés comme post-traitements pour les lettres envoyées. Instructions pour configurer [AEM Workflow](../../forms/using/aem-forms-workflow.md).
 
 ## Processus des formulaires {#formsworkflow}
 
@@ -54,17 +54,17 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 
 1. Pour authentifier un processus/service, copiez le nom d’un processus et retournez sur la page Configurations de la console Web Adobe Experience Manager > Configuration du SDK de client Adobe AEM Forms et ajoutez le processus en tant que nouveau service.
 
-   For example, if the drop-down in Properties page of letter displays name of the process as Forms Workflow -> ValidCCPostProcess/SaveXML, add a Service Name as `ValidCCPostProcess/SaveXML`.
+   Par exemple, si la liste déroulante de la page Propriétés de la lettre affiche le nom du processus en tant que Forms Workflow -> ValidCCPostProcess/SaveXML, ajoutez un nom de service en tant que `ValidCCPostProcess/SaveXML`.
 
 1. Pour utiliser les flux de travaux AEM Forms on JEE pour le post-traitement, configurez les paramètres et les sorties nécessaires. Les valeurs par défaut des paramètres sont indiquées ci-dessous.
 
-   Go to the Adobe Experience Manager Web Console Configurations page > **[!UICONTROL Correspondence Management Configurations]** and set up the following parameters:
+   Accédez à la page Configurations de la console Web Adobe Experience Manager > **[!UICONTROL Configurations de Correspondence Management]** et définissez les paramètres suivants :
 
-   1. **inPDFDoc (paramètre de document PDF) :** Document PDF en entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
-   1. **inXMLDoc (paramètre de données XML) :** Document XML en tant qu’entrée. Cette entrée contient des données saisies par l’utilisateur sous la forme XML.
-   1. **inXDPDoc (paramètre de document XDP) :** Document XML en tant qu’entrée. Cette entrée contient une mise en page sous-jacente (XDP).
-   1. **inAttachmentDocs (paramètre de Documents de pièce jointe) :** Paramètre d’entrée de liste. Cette entrée contient toutes les pièces jointes comme entrée.
-   1. **redirectURL (Sortie d’URL de redirection) :** Type de sortie indiquant l’URL vers laquelle effectuer la redirection.
+   1. **inPDFDoc (paramètre de document PDF) : document PDF** en entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
+   1. **inXMLDoc (paramètre de données XML) :** document XML comme entrée. Cette entrée contient des données saisies par l’utilisateur sous la forme XML.
+   1. **inXDPDoc (paramètre de document XDP) :** document XML en entrée. Cette entrée contient une mise en page sous-jacente (XDP).
+   1. **inAttachmentDocs (paramètre de Documents de pièce jointe) : paramètre** d’entrée de liste. Cette entrée contient toutes les pièces jointes comme entrée.
+   1. **redirectURL (Sortie d’URL de redirection) :** type de sortie indiquant l’URL vers laquelle rediriger.
 
    Votre processus des formulaires doit présenter un paramètre de document PDF ou un paramètre de données XML en tant qu’entrée avec un nom identique à celui spécifié dans les **[!UICONTROL configurations de Correspondence Management]**. Ces informations sont requises pour que le processus soit répertorié dans la liste déroulante Post-traitement.
 
@@ -116,7 +116,7 @@ Les instances de lettre enregistrées peuvent faire l’objet d’une manipulati
 
 Dans l’interface utilisateur CCR, effectuez les étapes suivantes pour associer un post-traitement à une lettre :
 
-1. Hover over a letter and tap **View Properties**.
+1. Passez la souris sur une lettre et appuyez sur **Propriétés de la Vue**.
 1. Sélectionnez **Modifier**.
 1. Dans Propriétés de base, sélectionnez le post-traitement à associer à la lettre dans la liste déroulante Post-traitement. Les post-traitements liés aux formulaires et à AEM sont répertoriés dans la liste déroulante.
 1. Appuyez sur **Save** (Enregistrer).
