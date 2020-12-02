@@ -43,11 +43,11 @@ L’intégration standard entre AEM et Campaign est basée sur JSON et JSSP (Jav
 
 Dans cet exemple, nous créons un fichier JSSP personnalisé et l’appelons du côté AEM pour récupérer le résultat. Il peut être utilisé, par exemple, pour extraire des données d’Adobe Campaign ou pour enregistrer des données dans Adobe Campaign.
 
-1. In Adobe Campaign, to create a new JSSP file, click the **New** icon.
+1. En Adobe Campaign, pour créer un fichier JSSP, cliquez sur l’icône **New**.
 
    ![](do-not-localize/chlimage_1-4a.png)
 
-1. Entrez le nom de ce fichier JSSP. In this example, we use **cus:custom.jssp** (meaning it will be in the **cus** namespace).
+1. Entrez le nom de ce fichier JSSP. Dans cet exemple, nous utilisons **cus:custom.jssp** (ce qui signifie qu’il sera dans l’espace de nommage **cus**).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -66,7 +66,7 @@ Dans cet exemple, nous créons un fichier JSSP personnalisé et l’appelons du 
    * Vous avez établi une connexion entre AEM et Campaign
    * Le service cloud de Campaign est configuré sur **/content/geometrixx-outdoors**
 
-   The most important object in this example is the **GenericCampaignConnector**, which allows you to call (get and post) jssp files on the Adobe Campaign side.
+   L’objet le plus important de cet exemple est le **GenericCampaignConnector**, qui vous permet d’appeler (d’obtenir et de publier) des fichiers jssp du côté Adobe Campaign.
 
    Voici un petit extrait de code :
 
@@ -163,7 +163,7 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-## Exemple 2 : Adobe Campaign vers AEM {#example-adobe-campaign-to-aem}
+## Exemple 2 : Adobe Campaign vers AEM  {#example-adobe-campaign-to-aem}
 
 AEM propose des API prêtes à l’emploi pour récupérer les objets disponibles n’importe où dans la vue de l’explorateur siteadmin.
 
@@ -189,7 +189,7 @@ Pour utiliser l’API, nous devons savoir qu’AEM utilise l’authentification 
 
 Une bibliothèque JS nommée **amcIntegration.js** est disponible dans 6.1.1 (build 8624 et supérieur) qui implémente cette logique parmi plusieurs autres.
 
-### Appel API AEM {#aem-api-call}
+### Appel API AEM  {#aem-api-call}
 
 ```java
 loadLibrary("nms:amcIntegration.js");
