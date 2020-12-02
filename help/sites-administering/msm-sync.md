@@ -26,11 +26,11 @@ Procédez comme suit pour contrôler la façon dont les Live Copies sont synchro
 * Déterminez si des configurations de déploiement existantes répondent à vos besoins ou si vous devez en créer d’autres.
 * Spécifiez les configurations du déploiement à utiliser avec les Live Copies.
 
-## Configurations du déploiement installées et personnalisées {#installed-and-custom-rollout-configurations}
+## Configurations du déploiement installées et personnalisées  {#installed-and-custom-rollout-configurations}
 
 Cette section contient des informations sur les configurations du déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la création de configurations personnalisées, si nécessaire.
 
-### Déclencheurs de déploiement {#rollout-triggers}
+### Déclencheurs de déploiement  {#rollout-triggers}
 
 Chaque configuration du déploiement utilise un déclencheur qui entraîne la survenue du déploiement. Il peut s’agir de l’un des déclencheurs suivants :
 
@@ -46,7 +46,7 @@ Chaque configuration du déploiement utilise un déclencheur qui entraîne la su
 >
 >L’utilisation du déclencheur En cas de modification peut nuire aux performances. Pour plus d’informations, voir [Meilleures pratiques MSM](/help/sites-administering/msm-best-practices.md#onmodify).
 
-### Configurations de déploiement installées {#installed-rollout-configurations}
+### Configurations de déploiement installées  {#installed-rollout-configurations}
 
 Le tableau ci-dessous répertorie les configurations de déploiement installées avec AEM. Le tableau contient les actions de déclenchement et de synchronisation de chaque configuration du déploiement. Si les actions de configuration du déploiement installées ne répondent pas à vos exigences, vous pouvez [créer une autre configuration du déploiement](#creating-a-rollout-configuration).
 
@@ -121,9 +121,9 @@ Le tableau ci-dessous répertorie les configurations de déploiement installées
  </tbody>
 </table>
 
-### Actions de synchronisation installées {#installed-synchronization-actions}
+### Actions de synchronisation installées  {#installed-synchronization-actions}
 
-Le tableau ci-dessous répertorie les actions de synchronisation installées avec AEM. If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
+Le tableau ci-dessous répertorie les actions de synchronisation installées avec AEM. Si les actions installées ne répondent pas à vos exigences, vous pouvez [créer une nouvelle action de synchronisation](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
 
 <table>
  <tbody>
@@ -134,25 +134,25 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>contentCopy</td>
-   <td>Si les nœuds de la source n’existent pas sur la Live Copy, ils y sont copiés. <a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service</a> CQ MSM Content Copy Action pour spécifier les types de noeud, les éléments de paragraphe et les propriétés de page à exclure. <br /> </td>
+   <td>Si les nœuds de la source n’existent pas sur la Live Copy, ils y sont copiés. <a href="#excluding-properties-and-node-types-from-synchronization">Configurez le </a> service CQ MSM Content Copy Action pour spécifier les types de noeud, les éléments de paragraphe et les propriétés de page à exclure.  <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentDelete</td>
-   <td><p>Supprime les noeuds de la copie dynamique qui n’existent pas sur la source. <a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service</a> CQ MSM Content Delete Action pour spécifier les types de noeud, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
+   <td><p>Supprime les noeuds de la copie dynamique qui n’existent pas sur la source. <a href="#excluding-properties-and-node-types-from-synchronization">Configurez le </a> service CQ MSM Content Delete Action (Action de suppression de contenu MSM CQ) pour spécifier les types de noeud, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentUpdate</td>
-   <td>Met à jour le contenu de la Live Copy avec les modifications provenant de la source. <a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service</a> CQ MSM Content Update Action pour spécifier les types de noeud, les éléments de paragraphe et les propriétés de page à exclure. <br /> </td>
+   <td>Met à jour le contenu de la Live Copy avec les modifications provenant de la source. <a href="#excluding-properties-and-node-types-from-synchronization">Configurez le </a> service Action de mise à jour de contenu MSM CQ pour spécifier les types de noeud, les éléments de paragraphe et les propriétés de page à exclure.  <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>editProperties</td>
-   <td><p>Modifie les propriétés de la Live Copy. La propriété editMap détermine les propriétés modifiées et leur valeur. La valeur de la propriété editMap doit utiliser le format suivant :</p> <p><code>[property_name_1]#[current_value]#</code>[nouvelle_valeur],<br /> <code>[property_name_2]#[current_value]#</code>[nouvelle_valeur],<br /> ...,<br /> <code>[property_name_n]#[current_value]#</code>[nouvelle_valeur]</p> <p>Les <code>current_value</code> et <code>new_value</code> éléments sont des expressions régulières. <br /> </p> <p>Prenons l’exemple de la valeur suivante pour la propriété editMap :</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Cette valeur modifie les propriétés des nœuds de la Live Copy comme suit :</p>
+   <td><p>Modifie les propriétés de la Live Copy. La propriété editMap détermine les propriétés modifiées et leur valeur. La valeur de la propriété editMap doit utiliser le format suivant :</p> <p><code>[property_name_1]#[current_value]#</code>[nouvelle_valeur],<br /> <code>[property_name_2]#[current_value]#</code>[nouvelle_valeur],<br /> ..., <br /> <code>[property_name_n]#[current_value]#</code>[nouvelle_valeur]</p> <p>Les éléments <code>current_value</code> et <code>new_value</code> sont des expressions régulières. <br /> </p> <p>Prenons l’exemple de la valeur suivante pour la propriété editMap :</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Cette valeur modifie les propriétés des nœuds de la Live Copy comme suit :</p>
     <ul>
-     <li>The <code>sling:resourceType</code> properties that are either set to <code>contentpage</code> or to <code>homepage</code> are set to <code>mobilecontentpage.</code></li>
-     <li>The <code>cq:template</code> properties that are set to <code>contentpage</code> are set to <code>mobilecontentpage.</code></li>
+     <li>Les propriétés <code>sling:resourceType</code> définies sur <code>contentpage</code> ou sur <code>homepage</code> sont définies sur <code>mobilecontentpage.</code></li>
+     <li>Les propriétés <code>cq:template</code> définies sur <code>contentpage</code> sont définies sur <code>mobilecontentpage.</code></li>
     </ul> </td>
    <td><p> </p> <p>editMap : (chaîne) identifie la propriété, la valeur actuelle et la nouvelle valeur. Pour plus d’informations, consultez la description.<br /> </p> </td>
   </tr>
@@ -168,7 +168,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Dans la Live Copy, cette action de synchronisation met à jour les références, comme les liens « J’aime ».<br /> Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service</a> Action de mise à jour des références MSM CQ pour spécifier les types de noeud, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
+   <td><p>Dans la Live Copy, cette action de synchronisation met à jour les références, comme les liens « J’aime ».<br /> Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le </a> service Action de mise à jour des références MSM CQ pour spécifier les types de noeud, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -261,7 +261,7 @@ Vous pouvez [créer une configuration du déploiement](/help/sites-developing/ex
 
 La nouvelle configuration de déploiement est alors disponible lorsque vous définissez des configurations du déploiement dans un plan directeur ou une page Live Copy.
 
-### Exclusion des propriétés et des types de nœuds de la synchronisation {#excluding-properties-and-node-types-from-synchronization}
+### Exclusion des propriétés et des types de nœuds de la synchronisation  {#excluding-properties-and-node-types-from-synchronization}
 
 Vous pouvez configurer différents services OSGi qui prennent en charge les actions de synchronisation correspondantes afin qu’ils n’affectent pas des types de nœuds et des propriétés spécifiques. Par exemple, de nombreuses propriétés et sous-noeuds liés au fonctionnement interne de l’AEM ne doivent pas être inclus dans une copie dynamique. Seul le contenu pertinent pour l’utilisateur de la page doit être copié.
 
@@ -275,7 +275,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles
 | contentDelete | Action de suppression de contenu MSM CQ | com.day.cq.wcm.msm.impl.actions.ContentDeleteActionFactory |
 | contentUpdate | Action de mise à jour du contenu MSM CQ | com.day.cq.wcm.msm.impl.actions.ContentUpdateActionFactory |
 | PageMoveAction | Action de déplacement de page MSM CQ | com.day.cq.wcm.msm.impl.actions.PageMoveActionFactory |
-| referencesUpdate | Action de mise à jour des références MSM CQ | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
+| referenceUpdate | Action de mise à jour des références MSM CQ | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
 
 Le tableau ci-dessous décrit les propriétés que vous pouvez configurer :
 
@@ -346,7 +346,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles
   </tr>
   <tr>
    <td><p>Mettre à jour les pages de référence</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td>
-   <td>Disponible uniquement pour l’action de déplacement de page MSM CQ. Select this option (Web Console) or set this boolean property to <code>true</code> (repository configuration) to update any references to use the original page to instead reference the LiveCopy page.</td>
+   <td>Disponible uniquement pour l’action de déplacement de page MSM CQ. Sélectionnez cette option (console Web) ou définissez cette propriété booléenne sur <code>true</code> (configuration du référentiel) pour mettre à jour toutes les références afin d’utiliser la page d’origine pour référencer la page LiveCopy.</td>
   </tr>
  </tbody>
 </table>
@@ -359,8 +359,8 @@ La liste ci-après des emplacements où vous pouvez spécifier les configuration
 
 * **[Propriétés des pages Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page) :** lorsqu’une page Live Copy est configurée pour utiliser une ou plusieurs configurations de déploiement, MSM utilise ces configurations de déploiement.
 * **[Propriétés des pages de plan directeur](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page) :** lorsqu’une Live Copy est basée sur un plan directeur et que la page Live Copy n’est pas configurée avec une configuration de déploiement, la configuration du déploiement associée à la page source du plan directeur est utilisée.
-* **Propriétés de la page parente de la copie dynamique :** Lorsque ni la page de copie dynamique ni la page source du plan directeur ne sont configurées avec une configuration de déploiement, la configuration de déploiement qui s&#39;applique à la page parente de la page de copie dynamique est utilisée.
-* **[Valeur par défaut](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)du système :** Lorsque la configuration de déploiement de la page parente de la copie dynamique ne peut pas être déterminée, la configuration de déploiement par défaut du système est utilisée.
+* **Propriétés de la page parente de la copie dynamique :** lorsque ni la page de la copie dynamique ni la page source du plan directeur ne sont configurées avec une configuration de déploiement, la configuration de déploiement qui s&#39;applique à la page parente de la page de la copie dynamique est utilisée.
+* **[Valeur par défaut](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration) du système :** lorsque la configuration de déploiement de la page parente de la copie dynamique ne peut pas être déterminée, la configuration de déploiement par défaut du système est utilisée.
 
 Par exemple, un plan directeur utilise le site de référence We.Retail comme contenu source. Un site est créé à partir du plan directeur. Chaque élément de la liste ci-dessous décrit un scénario d’utilisation distinct des configurations de déploiement :
 
@@ -368,7 +368,7 @@ Par exemple, un plan directeur utilise le site de référence We.Retail comme co
 * La page principale du site de référence We.Retail est configurée avec plusieurs configurations de déploiement. MSM utilise ces configurations de déploiement pour toutes les pages Live Copy.
 * La page racine du site de référence We.Retail est configurée avec plusieurs configurations de déploiement et la page racine du site de copie dynamique est configurée avec un ensemble différent de configurations de déploiement. MSM utilise les configurations de déploiement configurées sur la page principale du site Live Copy.
 
-### Définition des configurations de déploiement pour une page Live Copy {#setting-the-rollout-configurations-for-a-live-copy-page}
+### Définition des configurations de déploiement pour une page Live Copy  {#setting-the-rollout-configurations-for-a-live-copy-page}
 
 Configurez une page Live Copy avec des configurations du déploiement à utiliser lorsque la page source est déployée. Les pages enfants héritent de la configuration par défaut. Lorsque vous configurez la configuration du déploiement à utiliser, vous remplacez la configuration qui a été héritée pas la page Live Copy de son parent.
 
@@ -392,13 +392,13 @@ Vous pouvez également configurer les configurations du déploiement d’une pag
 
 1. Cliquez ou appuyez sur **Enregistrer**.
 
-### Définition de la configuration du déploiement pour une page de plan directeur {#setting-the-rollout-configuration-for-a-blueprint-page}
+### Définition de la configuration du déploiement pour une page de plan directeur  {#setting-the-rollout-configuration-for-a-blueprint-page}
 
 Configurez une page de plan directeur avec les configurations de déploiement à utiliser lorsque la page de plan directeur est déployée.
 
 Notez que les pages enfants de la page de plan directeur héritent de la configuration. Lorsque vous configurez la configuration du déploiement à utiliser, il se peut que vous remplaciez la configuration dont la page hérite de son parent.
 
-1. Use the **Sites** console to select the root page of the blueprint.
+1. Utilisez la console **Sites** pour sélectionner la page racine du plan.
 1. Sélectionnez **Propriétés** dans la barre d’outils.
 1. Ouvrez l’onglet **Plan directeur**.
 1. Sélectionnez une ou plusieurs **configurations de déploiement** à l’aide du sélecteur de liste déroulante.
@@ -411,9 +411,9 @@ Spécifiez une configuration du déploiement à utiliser comme valeur système p
 * **Day CQ WCM Live Relationship Manager**  Le PID du service est . 
 `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+Configurez le service à l&#39;aide de la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou d&#39;un [noeud de référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
 * Dans la console web, le nom de la propriété à configurer est « Configuration de déploiement par défaut ».
-* Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
+* A l’aide d’un noeud de référentiel, le nom de la propriété à configurer est `liverelationshipmgr.relationsconfig.default`.
 
-Définissez la valeur de cette propriété sur le chemin d’accès à la configuration de déploiement à utiliser comme valeur système par défaut. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+Définissez la valeur de cette propriété sur le chemin d’accès à la configuration de déploiement à utiliser comme valeur système par défaut. La valeur par défaut est `/libs/msm/wcm/rolloutconfigs/default`, c&#39;est-à-dire **Config de déploiement standard**.
