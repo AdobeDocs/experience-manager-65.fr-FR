@@ -67,7 +67,7 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](/hel
 >
 >Lorsque vous ciblez un composant dans le mode Auteur AEM, il effectue une série d’appels côté serveur vers Adobe Target afin d’enregistrer la campagne, de configurer des offres et de récupérer des segments Adobe Target (si cela est configuré). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
 
-## Sources d’informations sur le contexte  {#background-information-sources}
+## Sources d’informations sur le contexte   {#background-information-sources}
 
 Intégrer AEM à Adobe Target nécessite des connaissances sur Adobe Target, la gestion des activités AEM et la gestion des publics AEM. Vous devez connaître les éléments suivants :
 
