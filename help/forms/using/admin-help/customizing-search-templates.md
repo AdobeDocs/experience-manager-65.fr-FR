@@ -30,14 +30,14 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
 >
 >lorsque vous enregistrez un modèle de recherche, vous devez lui affecter un nom unique. Si vous ne le faites pas, un modèle existant risque d’être remplacé sans message d’avertissement.
 
-## Création d’un modèle de recherche simple {#create-a-simple-search-template}
+## Création d’un modèle de recherche simple  {#create-a-simple-search-template}
 
 1. Dans Administration Console, cliquez sur Services > Workspace > Modèles de recherche.
 1. Dans l’onglet Identification, indiquez l’objectif du modèle dans la zone Description du modèle de recherche.
 1. (Facultatif) Cliquez sur l’onglet Critère et indiquez le critère de recherche du modèle.
 1. Cliquez sur l’onglet Enregistrer, entrez un nom unique pour le modèle, puis cliquez sur Enregistrer.
 
-## Création ou modification d’un modèle de recherche {#create-or-edit-a-search-template}
+## Création ou modification d’un modèle de recherche  {#create-or-edit-a-search-template}
 
 1. Dans Administration Console, cliquez sur Services > Workspace > Modèles de recherche.
 1. (Facultatif) Si vous modifiez un modèle existant ou que vous vous servez d’un modèle existant pour en créer un nouveau, sélectionnez le modèle dans la liste Nom du modèle de recherche.
@@ -47,9 +47,9 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
 
    * Dans la partie supérieure de l’onglet Critère, sélectionnez un élément de processus ou de tâche.
 
-      **Conseil**: *Si vous avez précédemment sélectionné l’élément Nom du processus et que vous avez spécifié un processus, toutes les variables de processus définies dans ce processus peuvent également être sélectionnées.*
+      **Conseil** :  *Si vous avez précédemment sélectionné l’élément Nom du processus et que vous avez spécifié un processus, toutes les variables de processus définies dans ce processus peuvent également être sélectionnées.*
 
-      **Conseil**: *Si vous sélectionnez l’élément Tâche visible, les utilisateurs pourront supprimer les tâches terminées des résultats de la recherche.*
+      **Conseil** :  *Si vous sélectionnez l’élément Tâche visible, les utilisateurs pourront supprimer les tâches terminées des résultats de la recherche.*
 
       Les champs relatifs au critère de recherche de l’élément sélectionné s’affichent au bas de l’onglet Critère.
 
@@ -59,9 +59,9 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
       * (Facultatif) Pour autoriser des utilisateurs à modifier la valeur de l’opérande dans Workspace, sélectionnez Autoriser l’utilisateur à modifier l’opérande.
       * (Facultatif) Pour autoriser des utilisateurs à modifier l’opérateur relationnel, sélectionnez Autoriser l’utilisateur à sélectionner un autre opérateur relationnel. Dans la liste qui apparaît, sélectionnez les opérateurs auxquels les utilisateurs pourront faire appel.
 
-      **Conseil**: *Si vous avez sélectionné Nom du processus en tant qu’élément, vous pouvez cliquer sur l’icône en regard du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours d’exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
+      **Conseil** :  *Si vous avez sélectionné Nom du processus en tant qu’élément, vous pouvez cliquer sur l’icône en regard du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours d’exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
 
-      **Conseil**: *Vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône Supprimer en regard des critères de recherche de l’élément.*
+      **Conseil** :  *Vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône Supprimer en regard des critères de recherche de l’élément.*
 
 
 1. (Facultatif) Pour chaque en-tête de colonne à afficher dans les résultats de recherche, cliquez sur l’onglet Mise en page et procédez comme suit :
@@ -84,7 +84,7 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
 1. (Facultatif) Si vous créez un modèle de recherche, affectez-lui un nom unique. Si vous n’indiquez pas un nom unique, vous risquez de remplacer un modèle existant.
 1. Cliquez sur le bouton Enregistrer.
 
-## Suppression d’un modèle de recherche {#delete-a-search-template}
+## Suppression d’un modèle de recherche  {#delete-a-search-template}
 
 1. Dans l’onglet Identification, sélectionnez un nom dans la liste Nom du modèle de recherche.
 1. Cliquez sur Supprimer ce modèle, puis sur OK.
