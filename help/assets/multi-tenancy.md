@@ -11,17 +11,18 @@ ht-degree: 3%
 ---
 
 
-# Multi-tenancy for Collections, snippets, and snippet templates {#multi-tenancy-for-collections-snippets-and-snippet-templates}
+# Multi-tenanciation pour les collections, les extraits de code et les modèles de fragment de code {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
 La fonction de multipropriété vous permet de séparer le contenu dans CRX en fonction du préfixe et de l’ID d’organisation afin de protéger le contenu contre un accès non autorisé des utilisateurs d’autres organisations.
 
-[!DNL Adobe Experience Manager Assets] stocke les données de chaque organisation dans un chemin différent. Chaque chemin d’accès spécifique à l’organisation est identifié par le préfixe et l’ID d’organisation inclus dans l’emplacement traditionnel où différents types de ressources sont stockés dans CRX.
+[!DNL Adobe Experience Manager Assets] stocke les données de chaque organisation dans un chemin différent. Chaque chemin spécifique à l&#39;organisation est identifié par le préfixe et l&#39;ID d&#39;organisation de l&#39;organisation.
+qui est inclus dans l’emplacement traditionnel où différents types de ressources sont stockés dans CRX.
 
-Par exemple, si vous créez un dossier nommé `Demo`, [!DNL Experience Manager] les ressources stockent généralement le dossier dans `../content/dam/Demo`. Avec l’option multi-tenancy activée, vous pouvez désormais stocker les données à l’adresse `../content/dam/<organization prefix>/<organization id>Demo`
+Par exemple, si vous créez un dossier nommé `Demo`, les ressources [!DNL Experience Manager] stockent généralement le dossier à `../content/dam/Demo`. Avec l’option multi-tenancy activée, vous pouvez désormais stocker les données à `../content/dam/<organization prefix>/<organization id>Demo`
 
-For example, if for [!DNL Adobe Marketing Cloud] users of [!DNL Assets] (on demand) that are assigned to the `aodpremium` organization, you can use the multi-tenancy feature to configure `../content/dam/<mac>/<aodpremium>Demo` path to segregate their content. Dans cet exemple, `mac` est le préfixe d’organisation et `aodpremium` l’ID d’organisation.
+Par exemple, si, pour [!DNL Adobe Marketing Cloud] utilisateurs de [!DNL Assets] (sur demande) affectés à l&#39;organisation `aodpremium`, vous pouvez utiliser la fonction de multilocation pour configurer le chemin `../content/dam/<mac>/<aodpremium>Demo` afin de séparer leur contenu. Dans cet exemple, `mac` est le préfixe d&#39;organisation et `aodpremium` l&#39;ID d&#39;organisation.
 
-Based on the user&#39;s organization and ID, this qualified path is displayed in the [!DNL Assets] interface and various wizards, including the Move and Snippet creation wizards to enforce segregation.
+En fonction de l&#39;organisation et de l&#39;ID de l&#39;utilisateur, ce chemin d&#39;accès qualifié s&#39;affiche dans l&#39;interface [!DNL Assets] et dans divers assistants, y compris les assistants de création de déplacement et d&#39;extrait de code pour appliquer la ségrégation.
 
 La fonction de multilocation vous permet de séparer les types d’actifs et de composants suivants :
 
