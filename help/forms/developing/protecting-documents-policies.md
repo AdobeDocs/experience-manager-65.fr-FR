@@ -39,24 +39,24 @@ Pour plus de clarté, les deux sections suivantes traitent de la façon de trava
 
 Vous pouvez exécuter ces tâches à l’aide du service Document Security :
 
-* Créez des stratégies. Pour plus d’informations, voir [Création de stratégies](protecting-documents-policies.md#creating-policies).
-* permet de modifier des stratégies. Pour plus d’informations, voir [Modification de stratégies](protecting-documents-policies.md#modifying-policies).
-* supprimer des stratégies. Pour plus d’informations, voir [Suppression de stratégies](protecting-documents-policies.md#deleting-policies).
-* Appliquer des stratégies aux documents PDF. Pour plus d’informations, voir [Application de stratégies à des Documents](protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.
-* Supprimez les stratégies des documents PDF. Pour plus d’informations, voir [Suppression de stratégies de Documents](protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF.
-* Documents Inspect protégés par une stratégie. Pour plus d’informations, voir [Inspection des Documents](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protégés par une stratégie.
+* Créez des stratégies. Pour plus d&#39;informations, voir [Création de stratégies](protecting-documents-policies.md#creating-policies).
+* permet de modifier des stratégies. Pour plus d&#39;informations, voir [Modification des stratégies](protecting-documents-policies.md#modifying-policies).
+* supprimer des stratégies. Pour plus d&#39;informations, voir [Suppression de stratégies](protecting-documents-policies.md#deleting-policies).
+* Appliquer des stratégies aux documents PDF. Pour plus d’informations, voir [Application de stratégies aux Documents PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents).
+* Supprimez les stratégies des documents PDF. Pour plus d’informations, voir [Suppression de stratégies des Documents PDF](protecting-documents-policies.md#removing-policies-from-pdf-documents).
+* Documents Inspect protégés par une stratégie. Pour plus d’informations, voir [Inspection des Documents PDF protégés par une stratégie](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
 * Révoquer l’accès aux documents PDF. Pour plus d’informations, voir [Révocation de l’accès aux Documents](protecting-documents-policies.md#revoking-access-to-documents).
-* Rétablit l’accès aux documents révoqués. Pour plus d’informations, voir [Rétablissement de l’accès aux Documents](protecting-documents-policies.md#reinstating-access-to-revoked-documents)révoqués.
+* Rétablit l’accès aux documents révoqués. Pour plus d&#39;informations, voir [Rétablissement de l&#39;accès aux Documents révoqués](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
 * Créez des filigranes. Pour plus d’informations, voir [Création de filigranes](protecting-documents-policies.md#creating-watermarks).
 * Recherchez des événements. Pour plus d’informations, voir [Recherche de Événements](protecting-documents-policies.md#searching-for-events).
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Création de stratégies {#creating-policies}
 
-Vous pouvez créer des stratégies par programmation à l’aide de l’API Java de Document Security ou de l’API de service Web. Une *stratégie* est un ensemble d’informations qui comprend les paramètres de sécurité de l’document, les utilisateurs autorisés et les droits d’utilisation. Vous pouvez créer et enregistrer autant de stratégies que vous le souhaitez à l’aide de paramètres de sécurité adaptés à différentes situations et à différents utilisateurs.
+Vous pouvez créer des stratégies par programmation à l’aide de l’API Java de Document Security ou de l’API de service Web. Une *stratégie* est un ensemble d&#39;informations qui comprend les paramètres de sécurité du document, les utilisateurs autorisés et les droits d&#39;utilisation. Vous pouvez créer et enregistrer autant de stratégies que vous le souhaitez à l’aide de paramètres de sécurité adaptés à différentes situations et à différents utilisateurs.
 
 Les stratégies vous permettent d’effectuer les tâches suivantes :
 
@@ -133,7 +133,7 @@ Lors de la création d’une stratégie à l’aide de l’API de service Web, r
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -164,7 +164,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar
 * jbossall-client.jar (utilisez un fichier JAR différent si AEM Forms n’est pas déployé sur JBoss)
 
-For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclusion de fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un objet API Client de sécurité Document**
 
@@ -187,15 +187,15 @@ Vous pouvez spécifier uniquement une date de début, ce qui signifie que la str
 
 Lors de la définition d’attributs appartenant à une stratégie, vous pouvez également définir des paramètres de chiffrement. Ces paramètres de chiffrement prennent effet lorsque la stratégie est appliquée à un document. Vous pouvez spécifier les valeurs de chiffrement suivantes :
 
-* **AES256**: Représente l’algorithme de chiffrement AES avec une clé de 256 bits.
-* **AES128**: Représente l’algorithme de chiffrement AES avec une clé de 128 bits.
-* **NoEncryption :** Ne représente aucun chiffrement.
+* **AES256** : Représente l’algorithme de chiffrement AES avec une clé de 256 bits.
+* **AES128** : Représente l’algorithme de chiffrement AES avec une clé de 128 bits.
+* **NoEncryption : ne** représente aucun chiffrement.
 
-Lors de la spécification de l’ `NoEncryption` option, vous ne pouvez pas définir l’ `PlaintextMetadata` option sur `false`. Si vous tentez de le faire, une exception est levée.
+Lors de la spécification de l&#39;option `NoEncryption`, vous ne pouvez pas définir l&#39;option `PlaintextMetadata` sur `false`. Si vous tentez de le faire, une exception est levée.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les autres attributs que vous pouvez définir, voir la description de l’ `Policy` interface dans le Guide de référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+>Pour plus d&#39;informations sur les autres attributs que vous pouvez définir, consultez la description de l&#39;interface `Policy` dans la [Référence de l&#39;API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Création d’une entrée de stratégie**
 
@@ -211,7 +211,7 @@ Ces actions ont pour conséquence que les destinataires ne peuvent que vue en li
 
 Une nouvelle stratégie doit être enregistrée avant de pouvoir être utilisée. Après avoir enregistré une stratégie, vous pouvez l’utiliser pour protéger les documents.
 
-### Création d’une stratégie à l’aide de l’API Java {#create-a-policy-using-the-java-api}
+### Créez une stratégie à l’aide de l’API Java {#create-a-policy-using-the-java-api}
 
 Créez une stratégie à l’aide de l’API Document Security (Java) :
 
@@ -226,34 +226,34 @@ Créez une stratégie à l’aide de l’API Document Security (Java) :
 
 1. Définissez les attributs de la stratégie.
 
-   * Créez un `Policy` objet en appelant la méthode `InfomodelObjectFactory` statique de l’ `createPolicy` objet. Cette méthode renvoie un `Policy` objet.
-   * Définissez l’attribut name de la stratégie en appelant la `Policy` `setName` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie le nom de la stratégie.
-   * Définissez la description de la stratégie en appelant la `Policy` `setDescription` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie la description de la stratégie.
-   * Définissez le jeu de stratégies auquel appartient la nouvelle stratégie en appelant la `Policy` `setPolicySetName` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie le nom du jeu de stratégies. (Vous pouvez spécifier `null` pour cette valeur de paramètre afin que la stratégie soit ajoutée au jeu de stratégies *Mes stratégies* .)
-   * Créez la période de validité de la stratégie en appelant la `InfomodelObjectFactory` méthode statique de l’ `createValidityPeriod` objet. Cette méthode renvoie un `ValidityPeriod` objet.
-   * Définissez le nombre de jours pendant lesquels un document protégé par une stratégie est accessible en appelant la `ValidityPeriod` `setRelativeExpirationDays` méthode de l’objet et en transmettant un entier spécifiant le nombre de jours.
-   * Définissez la période de validité de la stratégie en appelant la `Policy` méthode de l’ `setValidityPeriod` objet et en transmettant l’ `ValidityPeriod` objet.
+   * Créez un objet `Policy` en appelant la méthode statique `InfomodelObjectFactory` de l&#39;objet `createPolicy`. Cette méthode renvoie un objet `Policy`.
+   * Définissez l’attribut name de la stratégie en appelant la méthode `Policy` de l’objet `setName` et en transmettant une valeur de chaîne qui spécifie le nom de la stratégie.
+   * Définissez la description de la stratégie en appelant la méthode `Policy` de l&#39;objet `setDescription` et en transmettant une valeur de chaîne qui spécifie la description de la stratégie.
+   * Définissez le jeu de stratégies auquel appartient la nouvelle stratégie en appelant la méthode `Policy` de l&#39;objet `setPolicySetName` et en transmettant une valeur de chaîne qui spécifie le nom du jeu de stratégies. (Vous pouvez spécifier `null` pour cette valeur de paramètre afin que la stratégie soit ajoutée au jeu de stratégies *Mes stratégies*.)
+   * Créez la période de validité de la stratégie en appelant la méthode statique `createValidityPeriod` de l’objet `InfomodelObjectFactory`. Cette méthode renvoie un objet `ValidityPeriod`.
+   * Définissez le nombre de jours pendant lesquels un document protégé par une stratégie est accessible en appelant la méthode `ValidityPeriod` de l’objet `setRelativeExpirationDays` et en transmettant un nombre entier spécifiant le nombre de jours.
+   * Définissez la période de validité de la stratégie en appelant la méthode `Policy` de l&#39;objet `setValidityPeriod` et en transmettant l&#39;objet `ValidityPeriod`.
 
 1. Créez une entrée de stratégie.
 
-   * Créez une entrée de stratégie en appelant la `InfomodelObjectFactory` méthode statique de l’ `createPolicyEntry` objet. Cette méthode renvoie un `PolicyEntry` objet.
-   * Spécifiez les autorisations de la stratégie en appelant la méthode statique de l’ `InfomodelObjectFactory` objet `createPermission` . Transmettez un membre de données statiques qui appartient à l’ `Permission` interface qui représente l’autorisation. Cette méthode renvoie un `Permission` objet. Par exemple, pour ajouter l’autorisation permettant aux utilisateurs de copier des données d’un document PDF protégé par une stratégie, transmettez `Permission.COPY`. (Répétez cette étape pour chaque autorisation d’ajout).
-   * Ajoutez l’autorisation à l’entrée de stratégie en appelant la `PolicyEntry` méthode de l’ `addPermission` objet et en transmettant l’ `Permission` objet. (Répétez cette étape pour chaque `Permission` objet que vous avez créé).
-   * Créez l’entité de sécurité de la stratégie en appelant la `InfomodelObjectFactory` méthode statique de l’ `createSpecialPrincipal` objet. Transmettez un membre de données qui appartient à l’ `InfomodelObjectFactory` objet qui représente l’entité de sécurité. Cette méthode renvoie un `Principal` objet. Par exemple, pour ajouter l’éditeur du document en tant que principal, transmettez `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-   * Ajoutez l’entité de sécurité à l’entrée de stratégie en appelant la `PolicyEntry` méthode de l’ `setPrincipal`objet et en transmettant l’ `Principal` objet.
-   * Ajoutez l’entrée de stratégie à la stratégie en appelant la `Policy` méthode de l’objet et en transmettant l’ `addPolicyEntry` `PolicyEntry` objet.
+   * Créez une entrée de stratégie en appelant la méthode statique `createPolicyEntry` de l&#39;objet `InfomodelObjectFactory`. Cette méthode renvoie un objet `PolicyEntry`.
+   * Spécifiez les autorisations de la stratégie en appelant la méthode `InfomodelObjectFactory` statique `createPermission` de l’objet. Transmettez un membre de données statiques qui appartient à l&#39;interface `Permission` qui représente l&#39;autorisation. Cette méthode renvoie un objet `Permission`. Par exemple, pour ajouter l’autorisation permettant aux utilisateurs de copier des données d’un document PDF protégé par une stratégie, transmettez `Permission.COPY`. (Répétez cette étape pour chaque autorisation d’ajout).
+   * Ajoutez l&#39;autorisation d&#39;accès à l&#39;entrée de stratégie en appelant la méthode `PolicyEntry` de l&#39;objet `addPermission` et en transmettant l&#39;objet `Permission`. (Répétez cette étape pour chaque objet `Permission` que vous avez créé).
+   * Créez le principal de stratégie en appelant la méthode statique `createSpecialPrincipal` de l&#39;objet `InfomodelObjectFactory`. Transmettez un membre de données qui appartient à l&#39;objet `InfomodelObjectFactory` qui représente l&#39;entité de sécurité. Cette méthode renvoie un objet `Principal`. Par exemple, pour ajouter l’éditeur du document en tant que principal, transmettez `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
+   * Ajoutez l&#39;entité de sécurité à l&#39;entrée de stratégie en appelant la méthode `PolicyEntry` de l&#39;objet `setPrincipal`et en transmettant l&#39;objet `Principal`.
+   * Ajoutez l&#39;entrée de stratégie à la stratégie en appelant la méthode `Policy` de l&#39;objet `addPolicyEntry` et en transmettant l&#39;objet `PolicyEntry`.
 
 1. Enregistrez la stratégie.
 
-   * Créez un `PolicyManager` objet en appelant la `DocumentSecurityClient` méthode de l’ `getPolicyManager` objet.
-   * Enregistrez la stratégie en invoquant la `PolicyManager` `registerPolicy` méthode de l’objet et en transmettant les valeurs suivantes :
+   * Créez un objet `PolicyManager` en appelant la méthode `DocumentSecurityClient` de l&#39;objet `getPolicyManager`.
+   * Enregistrez la stratégie en appelant la méthode `registerPolicy` de l&#39;objet `PolicyManager` et en transmettant les valeurs suivantes :
 
       * Objet `Policy` représentant la stratégie à enregistrer.
    * Valeur de chaîne qui représente le jeu de stratégies auquel appartient la stratégie.
 
-   Si vous utilisez un compte d’administrateur AEM forms dans les paramètres de connexion pour créer l’ `DocumentSecurityClient` objet, spécifiez le nom du jeu de stratégies lorsque vous appelez la `registerPolicy` méthode. Si vous transmettez une `null` valeur pour le jeu de stratégies, la stratégie est créée dans le jeu de stratégies *Mes stratégies* des administrateurs.
+   Si vous utilisez un compte d’administrateur AEM forms dans les paramètres de connexion pour créer l’objet `DocumentSecurityClient`, indiquez le nom du jeu de stratégies lorsque vous appelez la méthode `registerPolicy`. Si vous transmettez une valeur `null` pour le jeu de stratégies, la stratégie est créée dans le jeu de stratégies *Mes stratégies* des administrateurs.
 
-   Si vous utilisez un utilisateur Document Security dans les paramètres de connexion, vous pouvez appeler la `registerPolicy` méthode surchargée qui accepte uniquement la stratégie. En d’autres termes, vous n’avez pas besoin de spécifier le nom du jeu de stratégies. Cependant, la stratégie est ajoutée au jeu de stratégies nommé *Mes stratégies*. Si vous ne souhaitez pas ajouter la nouvelle stratégie à ce jeu de stratégies, spécifiez un nom de jeu de stratégies lorsque vous appelez la `registerPolicy` méthode.
+   Si vous utilisez un utilisateur Document Security dans les paramètres de connexion, vous pouvez appeler la méthode `registerPolicy` surchargée qui accepte uniquement la stratégie. En d’autres termes, vous n’avez pas besoin de spécifier le nom du jeu de stratégies. Cependant, la stratégie est ajoutée au jeu de stratégies nommé *Mes stratégies*. Si vous ne souhaitez pas ajouter la nouvelle stratégie à ce jeu de stratégies, spécifiez un nom de jeu de stratégies lorsque vous appelez la méthode `registerPolicy`.
 
    >[!NOTE]
    >
@@ -263,7 +263,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * &quot;Début rapide (mode SOAP) : Création d’une stratégie à l’aide de l’API Java&quot;
 
-### Création d’une stratégie à l’aide de l’API de service Web {#create-a-policy-using-the-web-service-api}
+### Créez une stratégie à l’aide de l’API de service Web {#create-a-policy-using-the-web-service-api}
 
 Créez une stratégie à l’aide de l’API Document Security (service Web) :
 
@@ -277,26 +277,26 @@ Créez une stratégie à l’aide de l’API Document Security (service Web) :
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Définissez les attributs de la stratégie.
 
    * Créez un objet `PolicySpec` en utilisant son constructeur.
-   * Définissez le nom de la stratégie en attribuant une valeur de chaîne au membre `PolicySpec` de données de l’ `name` objet.
-   * Définissez la description de la stratégie en attribuant une valeur de chaîne au membre `PolicySpec` de données de l’ `description` objet.
-   * Définissez le jeu de stratégies auquel la stratégie doit appartenir en attribuant une valeur de chaîne au membre `PolicySpec` de données de l’ `policySetName` objet. Vous devez spécifier un nom de jeu de stratégies existant. (Vous pouvez spécifier `null` pour cette valeur de paramètre afin que la stratégie soit ajoutée à *Mes stratégies*.)
-   * Définissez la période d’ouverture hors connexion de la stratégie en attribuant une valeur entière au membre `PolicySpec` de données de l’ `offlineLeasePeriod` objet.
-   * Définissez le membre `PolicySpec` `policyXml` de données de l’objet avec une valeur de chaîne qui représente les données XML PDRL. Pour effectuer cette tâche, créez un objet .NET `StreamReader` à l&#39;aide de son constructeur. Transmettez l’emplacement d’un fichier XML PDRL représentant la stratégie au `StreamReader` constructeur. Ensuite, appelez la `StreamReader` méthode de l’objet `ReadLine` et affectez la valeur renvoyée à une variable de chaîne. Effectuez une itération sur l’ `StreamReader` objet jusqu’à ce que la `ReadLine` méthode renvoie null. Affectez la variable de chaîne au membre `PolicySpec` de données de l’ `policyXml` objet.
+   * Définissez le nom de la stratégie en attribuant une valeur de chaîne au membre de données `name` de l&#39;objet `PolicySpec`.
+   * Définissez la description de la stratégie en attribuant une valeur de chaîne au membre de données `description` de l&#39;objet `PolicySpec`.
+   * Définissez le jeu de stratégies auquel la stratégie doit appartenir en attribuant une valeur de chaîne au membre de données `policySetName` de l&#39;objet `PolicySpec`. Vous devez spécifier un nom de jeu de stratégies existant. (Vous pouvez spécifier `null` pour cette valeur de paramètre afin que la stratégie soit ajoutée à *Mes stratégies*.)
+   * Définissez la période d’ouverture hors connexion de la stratégie en attribuant une valeur entière au membre de données `offlineLeasePeriod` de l’objet `PolicySpec`.
+   * Définissez le membre de données `policyXml` de l’objet `PolicySpec` avec une valeur de chaîne qui représente les données XML PDRL. Pour exécuter cette tâche, créez un objet .NET `StreamReader` à l&#39;aide de son constructeur. Transférez l&#39;emplacement d&#39;un fichier XML PDRL représentant la stratégie au constructeur `StreamReader`. Ensuite, appelez la méthode `StreamReader` de l’objet `ReadLine` et affectez la valeur renvoyée à une variable de chaîne. Effectuez une itération sur l’objet `StreamReader` jusqu’à ce que la méthode `ReadLine` renvoie null. Affectez la variable string au membre de données `policyXml` de l’objet `PolicySpec`.
 
 1. Créez une entrée de stratégie.
 
@@ -304,14 +304,14 @@ Créez une stratégie à l’aide de l’API Document Security (service Web) :
 
 1. Enregistrez la stratégie.
 
-   Enregistrez la stratégie en invoquant la `DocumentSecurityServiceClient` `registerPolicy` méthode de l’objet et en transmettant les valeurs suivantes :
+   Enregistrez la stratégie en appelant la méthode `registerPolicy` de l&#39;objet `DocumentSecurityServiceClient` et en transmettant les valeurs suivantes :
 
    * Objet `PolicySpec` représentant la stratégie à enregistrer.
-   * Valeur de chaîne qui représente le jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une `null` valeur qui entraîne l’ajout de la stratégie au jeu de stratégies *MyPolices* .
+   * Valeur de chaîne qui représente le jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une valeur `null` qui entraîne l’ajout de la stratégie au jeu de stratégies *MyPolices*.
 
-   Si vous utilisez un compte d’administrateur AEM forms dans les paramètres de connexion pour créer l’ `DocumentSecurityClient` objet, spécifiez le nom du jeu de stratégies lorsque vous appelez la `registerPolicy` méthode.
+   Si vous utilisez un compte d’administrateur AEM forms dans les paramètres de connexion pour créer l’objet `DocumentSecurityClient`, spécifiez le nom du jeu de stratégies lorsque vous appelez la méthode `registerPolicy`.
 
-   Si vous utilisez un utilisateur Document SecurityDocument Security dans les paramètres de connexion, vous pouvez appeler la `registerPolicy` méthode surchargée qui accepte uniquement la stratégie. En d’autres termes, vous n’avez pas besoin de spécifier le nom du jeu de stratégies. Cependant, la stratégie est ajoutée au jeu de stratégies nommé *Mes stratégies*. Si vous ne souhaitez pas ajouter la nouvelle stratégie à ce jeu de stratégies, spécifiez un nom de jeu de stratégies lorsque vous appelez la `registerPolicy` méthode.
+   Si vous utilisez un utilisateur Document SecurityDocument Security dans les paramètres de connexion, vous pouvez appeler la méthode `registerPolicy` surchargée qui accepte uniquement la stratégie. En d’autres termes, vous n’avez pas besoin de spécifier le nom du jeu de stratégies. Cependant, la stratégie est ajoutée au jeu de stratégies nommé *Mes stratégies*. Si vous ne souhaitez pas ajouter la nouvelle stratégie à ce jeu de stratégies, spécifiez un nom de jeu de stratégies lorsque vous appelez la méthode `registerPolicy`.
 
    >[!NOTE]
    >
@@ -328,11 +328,11 @@ Vous pouvez modifier une stratégie existante à l’aide de l’API Java Docume
 
 Vous pouvez modifier une stratégie lorsque les besoins de l’entreprise changent et que la stratégie ne reflète plus ces besoins. Au lieu de créer une nouvelle stratégie, vous pouvez simplement mettre à jour une stratégie existante.
 
-Pour modifier les attributs de stratégie à l’aide d’un service Web (par exemple, à l’aide de classes proxy Java créées avec JAX-WS), vous devez vous assurer que la stratégie est enregistrée auprès du service Document Security. Vous pouvez ensuite référencer la stratégie existante à l’aide de la `PolicySpec.getPolicyXml` méthode et modifier les attributs de la stratégie à l’aide des méthodes applicables. Par exemple, vous pouvez modifier la période d’ouverture hors connexion en appelant la `PolicySpec.setOfflineLeasePeriod` méthode.
+Pour modifier les attributs de stratégie à l’aide d’un service Web (par exemple, à l’aide de classes proxy Java créées avec JAX-WS), vous devez vous assurer que la stratégie est enregistrée auprès du service Document Security. Vous pouvez ensuite référencer la stratégie existante à l’aide de la méthode `PolicySpec.getPolicyXml` et modifier les attributs de la stratégie à l’aide des méthodes applicables. Par exemple, vous pouvez modifier la période d’ouverture hors connexion en appelant la méthode `PolicySpec.setOfflineLeasePeriod`.
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -350,27 +350,27 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API Client de sécurité Document**
 
-Avant de pouvoir exécuter par programmation une opération Document Security, vous devez créer un objet client de service Document Security. Si vous utilisez l’API Java, créez un `RightsManagementClient` objet. Si vous utilisez l’API du service Web Document Security, créez un `RightsManagementServiceService` objet.
+Avant de pouvoir exécuter par programmation une opération Document Security, vous devez créer un objet client de service Document Security. Si vous utilisez l’API Java, créez un objet `RightsManagementClient`. Si vous utilisez l&#39;API du service Web Document Security, créez un objet `RightsManagementServiceService`.
 
 **Récupération d’une stratégie existante**
 
-Vous devez récupérer une stratégie existante pour la modifier. Pour récupérer une stratégie, spécifiez le nom de la stratégie et le jeu de stratégies auquel elle appartient. Si vous spécifiez une `null` valeur pour le nom du jeu de stratégies, la stratégie est récupérée à partir du jeu de stratégies *Mes stratégies* .
+Vous devez récupérer une stratégie existante pour la modifier. Pour récupérer une stratégie, spécifiez le nom de la stratégie et le jeu de stratégies auquel elle appartient. Si vous spécifiez une valeur `null` pour le nom du jeu de stratégies, la stratégie est récupérée à partir du jeu de stratégies *Mes stratégies*.
 
 **Définir les attributs de la stratégie**
 
 Pour modifier une stratégie, vous modifiez la valeur des attributs de stratégie. Le seul attribut de stratégie que vous ne pouvez pas modifier est l’attribut name. Par exemple, pour modifier la période d’ouverture hors connexion de la stratégie, vous pouvez modifier la valeur de l’attribut de période d’ouverture hors connexion de la stratégie.
 
-Lors de la modification de la période d’ouverture hors connexion d’une stratégie à l’aide d’un service Web, le `offlineLeasePeriod` champ de l’ `PolicySpec` interface est ignoré. Pour mettre à jour la période d’ouverture hors connexion, modifiez l’ `OfflineLeasePeriod` élément dans le document XML PDRL. Référencez ensuite le document XML PDRL mis à jour en utilisant le membre `PolicySpec` `policyXML` de données de l’interface.
+Lors de la modification de la période d’ouverture hors connexion d’une stratégie à l’aide d’un service Web, le champ `offlineLeasePeriod` de l’interface `PolicySpec` est ignoré. Pour mettre à jour la période d’ouverture hors connexion, modifiez l’élément `OfflineLeasePeriod` dans le document XML PDRL. Faites ensuite référence au document XML PDRL mis à jour en utilisant le membre de données `policyXML` de l&#39;interface `PolicySpec`.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les autres attributs que vous pouvez définir, voir la description de l’ `Policy` interface dans le Guide de référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+>Pour plus d&#39;informations sur les autres attributs que vous pouvez définir, consultez la description de l&#39;interface `Policy` dans la [Référence de l&#39;API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Mettre à jour la stratégie**
 
 Avant que les modifications apportées à une stratégie ne prennent effet, vous devez mettre à jour la stratégie avec le service Document Security. Les modifications apportées aux stratégies qui protègent les documents sont mises à jour la prochaine fois que le document protégé par une stratégie est synchronisé avec le service Document Security.
 
-### Modification des stratégies existantes à l’aide de l’API Java {#modify-existing-policies-using-the-java-api}
+### Modifier les stratégies existantes à l’aide de l’API Java {#modify-existing-policies-using-the-java-api}
 
 Modifiez une stratégie existante à l’aide de l’API Document Security (Java) :
 
@@ -385,25 +385,25 @@ Modifiez une stratégie existante à l’aide de l’API Document Security (Java
 
 1. Récupérez une stratégie existante.
 
-   * Créez un `PolicyManager` objet en appelant la `RightsManagementClient` méthode de l’ `getPolicyManager` objet.
-   * Créez un `Policy` objet qui représente la stratégie à mettre à jour en appelant la `PolicyManager` méthode de l’ `getPolicy` objet et en transmettant les valeurs suivantes.&quot;
+   * Créez un objet `PolicyManager` en appelant la méthode `RightsManagementClient` de l&#39;objet `getPolicyManager`.
+   * Créez un objet `Policy` qui représente la stratégie à mettre à jour en appelant la méthode `PolicyManager` de l&#39;objet `getPolicy` et en transmettant les valeurs suivantes.&quot;
 
-      * Valeur de chaîne qui représente le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier `null` si le jeu de `MyPolicies` stratégies est utilisé.
+      * Valeur de chaîne qui représente le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier `null` pour que le jeu de stratégies `MyPolicies` soit utilisé.
       * Valeur de chaîne qui représente le nom de la stratégie.
 
 1. Définissez les attributs de la stratégie.
 
-   Modifiez les attributs de la stratégie pour répondre aux besoins de votre entreprise. Par exemple, pour modifier la période d’ouverture hors connexion de la stratégie, appelez la `Policy` `setOfflineLeasePeriod` méthode de l’objet.
+   Modifiez les attributs de la stratégie pour répondre aux besoins de votre entreprise. Par exemple, pour modifier la période d’ouverture hors connexion de la stratégie, appelez la méthode `Policy` de l’objet `setOfflineLeasePeriod`.
 
 1. Mettez à jour la stratégie.
 
-   Mettez à jour la stratégie en appelant la `PolicyManager` `updatePolicy` méthode de l’objet. Transmettez l’ `Policy` objet qui représente la stratégie à mettre à jour.
+   Mettez à jour la stratégie en appelant la méthode `updatePolicy` de l&#39;objet `PolicyManager`. Transmettez l&#39;objet `Policy` qui représente la stratégie à mettre à jour.
 
 **Exemples de code**
 
 Pour obtenir des exemples de code à l’aide du service Document Security, voir le Début rapide (mode SOAP) : Modification d’une stratégie à l’aide de la section API Java.
 
-### Modification de stratégies existantes à l’aide de l’API de service Web {#modify-existing-policies-using-the-web-service-api}
+### Modifier les stratégies existantes à l’aide de l’API de service Web {#modify-existing-policies-using-the-web-service-api}
 
 Modifiez une stratégie existante à l’aide de l’API Document Security (service Web) :
 
@@ -417,23 +417,23 @@ Modifiez une stratégie existante à l’aide de l’API Document Security (serv
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Récupérez une stratégie existante.
 
-   Créez un `PolicySpec` objet représentant la stratégie à modifier en appelant la `RightsManagementServiceClient` méthode de l’ `getPolicy` objet et en transmettant les valeurs suivantes :
+   Créez un objet `PolicySpec` qui représente la stratégie à modifier en appelant la méthode `RightsManagementServiceClient` de l&#39;objet `getPolicy` et en transmettant les valeurs suivantes :
 
-   * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier `null` si le jeu de `MyPolicies` stratégies est utilisé.
+   * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier `null` pour que le jeu de stratégies `MyPolicies` soit utilisé.
    * Valeur de chaîne qui spécifie le nom de la stratégie.
 
 1. Définissez les attributs de la stratégie.
@@ -442,7 +442,7 @@ Modifiez une stratégie existante à l’aide de l’API Document Security (serv
 
 1. Mettez à jour la stratégie.
 
-   Mettez à jour la stratégie en appelant la `RightsManagementServiceClient` méthode de l’ `updatePolicyFromSDK` objet et en transmettant l’ `PolicySpec` objet qui représente la stratégie à mettre à jour.
+   Mettez à jour la stratégie en appelant la méthode `RightsManagementServiceClient` de l&#39;objet `updatePolicyFromSDK` et en transmettant l&#39;objet `PolicySpec` représentant la stratégie à mettre à jour.
 
 **Exemples de code**
 
@@ -457,7 +457,7 @@ Vous pouvez supprimer une stratégie existante à l’aide de l’API Java Docum
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -473,13 +473,13 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API Client de sécurité Document**
 
-Avant de pouvoir exécuter par programmation une opération du service Document Security, vous devez créer un objet client du service Document Security. Si vous utilisez l’API Java, créez un `RightsManagementClient` objet. Si vous utilisez l’API du service Web Document Security, créez un `RightsManagementServiceService` objet.
+Avant de pouvoir exécuter par programmation une opération du service Document Security, vous devez créer un objet client du service Document Security. Si vous utilisez l’API Java, créez un objet `RightsManagementClient`. Si vous utilisez l&#39;API du service Web Document Security, créez un objet `RightsManagementServiceService`.
 
 **Supprimer la stratégie**
 
 Pour supprimer une stratégie, vous spécifiez la stratégie à supprimer et le jeu de stratégies auquel elle appartient. L’utilisateur dont les paramètres sont utilisés pour appeler AEM Forms doit être autorisé à supprimer la stratégie ; dans le cas contraire, une exception se produit. De même, si vous tentez de supprimer une stratégie qui n’existe pas, une exception se produit.
 
-### Suppression de stratégies à l’aide de l’API Java {#delete-policies-using-the-java-api}
+### Supprimer des stratégies à l’aide de l’API Java {#delete-policies-using-the-java-api}
 
 Supprimez une stratégie à l’aide de l’API Document Security (Java) :
 
@@ -494,10 +494,10 @@ Supprimez une stratégie à l’aide de l’API Document Security (Java) :
 
 1. Supprimez la stratégie.
 
-   * Créez un `PolicyManager` objet en appelant la `RightsManagementClient` méthode de l’ `getPolicyManager` objet.
-   * Supprimez la stratégie en appelant la `PolicyManager` `deletePolicy` méthode de l’objet et en transmettant les valeurs suivantes :
+   * Créez un objet `PolicyManager` en appelant la méthode `RightsManagementClient` de l&#39;objet `getPolicyManager`.
+   * Supprimez la stratégie en appelant la méthode `deletePolicy` de l&#39;objet `PolicyManager` et en transmettant les valeurs suivantes :
 
-      * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier `null` si le jeu de `MyPolicies` stratégies est utilisé.
+      * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier `null` pour que le jeu de stratégies `MyPolicies` soit utilisé.
       * Valeur de chaîne qui spécifie le nom de la stratégie à supprimer.
 
 **Exemples de code**
@@ -506,7 +506,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * &quot;Début rapide (mode SOAP) : Suppression d’une stratégie à l’aide de l’API Java&quot;
 
-### Suppression de stratégies à l’aide de l’API de service Web {#delete-policies-using-the-web-service-api}
+### Supprimer des stratégies à l’aide de l’API de service Web {#delete-policies-using-the-web-service-api}
 
 Supprimez une stratégie à l’aide de l’API Document Security (service Web) :
 
@@ -520,23 +520,23 @@ Supprimez une stratégie à l’aide de l’API Document Security (service Web) 
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Supprimez la stratégie.
 
-   Delete a policy by invoking the `RightsManagementServiceClient` object’s `deletePolicy` method and passing the following values:
+   Supprimez une stratégie en appelant la méthode `deletePolicy` de l&#39;objet `RightsManagementServiceClient` et en transmettant les valeurs suivantes :
 
-   * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier `null` si le jeu de `MyPolicies` stratégies est utilisé.
+   * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier `null` pour que le jeu de stratégies `MyPolicies` soit utilisé.
    * Valeur de chaîne qui spécifie le nom de la stratégie à supprimer.
 
 **Exemples de code**
@@ -556,7 +556,7 @@ Vous pouvez contrôler l’utilisation d’un document protégé par une straté
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -574,7 +574,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API Client de sécurité Document**
 
-Avant de pouvoir exécuter par programmation une opération du service Document Security, créez un objet client du service Document Security. Si vous utilisez l’API Java, créez un `DocumentSecurityClient` objet. Si vous utilisez l’API du service Web Document Security, créez un `DocumentSecurityServiceService` objet.
+Avant de pouvoir exécuter par programmation une opération du service Document Security, créez un objet client du service Document Security. Si vous utilisez l’API Java, créez un objet `DocumentSecurityClient`. Si vous utilisez l&#39;API du service Web Document Security, créez un objet `DocumentSecurityServiceService`.
 
 **Récupération d’un document PDF**
 
@@ -596,7 +596,7 @@ Une fois que le service Document Security a appliqué une stratégie à un docum
 
 [Révocation de l’accès aux Documents](protecting-documents-policies.md#revoking-access-to-documents)
 
-### Application d’une stratégie à un document PDF à l’aide de l’API Java {#apply-a-policy-to-a-pdf-document-using-the-java-api}
+### Appliquer une stratégie à un document PDF à l’aide de l’API Java {#apply-a-policy-to-a-pdf-document-using-the-java-api}
 
 Appliquez une stratégie à un document PDF à l’aide de l’API Document Security (Java) :
 
@@ -611,30 +611,30 @@ Appliquez une stratégie à un document PDF à l’aide de l’API Document Secu
 
 1. Récupérez un document PDF.
 
-   * Créez un `java.io.FileInputStream` objet représentant le document PDF à l’aide de son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du document PDF.
+   * Créez un objet `java.io.FileInputStream` qui représente le document PDF à l’aide de son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Appliquez une stratégie existante au document PDF.
 
-   * Créez un `DocumentManager` objet en appelant la `RightsManagementClient` méthode de l’ `getDocumentManager` objet.
-   * Appliquez une stratégie au document PDF en appelant la `DocumentManager` `protectDocument` méthode de l’objet et en transmettant les valeurs suivantes :
+   * Créez un objet `DocumentManager` en appelant la méthode `RightsManagementClient` de l&#39;objet `getDocumentManager`.
+   * Appliquez une stratégie au document PDF en appelant la méthode `DocumentManager` de l’objet `protectDocument` et en transmettant les valeurs suivantes :
 
       * Objet `com.adobe.idp.Document` contenant le document PDF auquel la stratégie est appliquée.
       * Valeur de chaîne qui spécifie le nom du document.
-      * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une `null` valeur qui entraîne l’utilisation du jeu de `MyPolicies` stratégies.
+      * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une valeur `null` qui se traduit par l&#39;utilisation du jeu de stratégies `MyPolicies`.
       * Valeur de chaîne qui spécifie le nom de la stratégie.
       * Valeur de chaîne qui représente le nom du domaine du gestionnaire d’utilisateurs de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être nulle (si ce paramètre est nul, la valeur de paramètre suivante doit être nulle).
       * Valeur de chaîne qui représente le nom canonique de l’utilisateur du gestionnaire d’utilisateurs qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être `null` (si ce paramètre est nul, la valeur de paramètre précédente doit être `null`).
-      * Un paramètre `com.adobe.livecycle.rightsmanagement.Locale` qui représente le paramètre régional utilisé pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et n’est pas utilisée pour les documents PDF. Pour sécuriser un document PDF, spécifiez `null`.
+      * `com.adobe.livecycle.rightsmanagement.Locale` qui représente le paramètre régional utilisé pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et n’est pas utilisée pour les documents PDF. Pour sécuriser un document PDF, spécifiez `null`.
 
-      La `protectDocument` méthode renvoie un `RMSecureDocumentResult` objet contenant le document PDF protégé par une stratégie.
+      La méthode `protectDocument` renvoie un objet `RMSecureDocumentResult` contenant le document PDF protégé par une stratégie.
 
 
 1. Enregistrez le document PDF.
 
-   * Appelez la méthode `RMSecureDocumentResult` de l’objet `getProtectedDoc` pour obtenir le document PDF protégé par une stratégie. Cette méthode renvoie un `com.adobe.idp.Document` objet.
-   * Create a `java.io.File` object and ensure that the file extension is PDF.
-   * Appelez la `com.adobe.idp.Document` méthode de l’ `copyToFile` objet pour copier le contenu de l’ `Document` objet dans le fichier (veillez à utiliser l’ `Document` objet renvoyé par la `getProtectedDoc` méthode).
+   * Appelez la méthode `RMSecureDocumentResult` de l’objet `getProtectedDoc` pour obtenir le document PDF protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document`.
+   * Créez un objet `java.io.File` et assurez-vous que l’extension de fichier est PDF.
+   * Appelez la méthode `com.adobe.idp.Document` de l&#39;objet `copyToFile` pour copier le contenu de l&#39;objet `Document` dans le fichier (veillez à utiliser l&#39;objet `Document` renvoyé par la méthode `getProtectedDoc`).
 
 **Exemples de code**
 
@@ -649,7 +649,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Application d’une stratégie à un document PDF à l’aide de l’API du service Web {#apply-a-policy-to-a-pdf-document-using-the-web-service-api}
+### Appliquer une stratégie à un document PDF à l’aide de l’API de service Web {#apply-a-policy-to-a-pdf-document-using-the-web-service-api}
 
 Appliquez une stratégie à un document PDF à l’aide de l’API Document Security (service Web) :
 
@@ -663,49 +663,49 @@ Appliquez une stratégie à un document PDF à l’aide de l’API Document Secu
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Récupérez un document PDF.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker un document PDF auquel une stratégie est appliquée.
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Déterminez la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` méthode de l’ `Read` objet. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` permet de stocker un document PDF auquel une stratégie est appliquée.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read`. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Appliquez une stratégie existante au document PDF.
 
-   Appliquez une stratégie au document PDF en appelant la `RightsManagementServiceClient` `protectDocument` méthode de l’objet et en transmettant les valeurs suivantes :
+   Appliquez une stratégie au document PDF en appelant la méthode `RightsManagementServiceClient` de l’objet `protectDocument` et en transmettant les valeurs suivantes :
 
    * Objet `BLOB` contenant le document PDF auquel la stratégie est appliquée.
    * Valeur de chaîne qui spécifie le nom du document.
-   * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une `null` valeur qui entraîne l’utilisation du jeu de `MyPolicies` stratégies.
+   * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une valeur `null` qui se traduit par l&#39;utilisation du jeu de stratégies `MyPolicies`.
    * Valeur de chaîne qui spécifie le nom de la stratégie.
    * Valeur de chaîne qui représente le nom du domaine du gestionnaire d’utilisateurs de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être nulle (si ce paramètre est nul, la valeur de paramètre suivante doit être `null`).
    * Valeur de chaîne qui représente le nom canonique de l’utilisateur du gestionnaire d’utilisateurs qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être nulle (si ce paramètre est nul, la valeur de paramètre précédente doit être `null`).
-   * Valeur `RMLocale` spécifiant la valeur du paramètre régional (par exemple, `RMLocale.en`).
+   * Valeur `RMLocale` qui spécifie la valeur du paramètre régional (par exemple, `RMLocale.en`).
    * Paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant de stratégie.
    * Paramètre de sortie de chaîne utilisé pour stocker la valeur d’identificateur protégée par une stratégie.
    * Paramètre de sortie de chaîne utilisé pour stocker le type MIME (par exemple, `application/pdf`).
 
-   La `protectDocument` méthode renvoie un `BLOB` objet contenant le document PDF protégé par une stratégie.
+   La méthode `protectDocument` renvoie un objet `BLOB` contenant le document PDF protégé par une stratégie.
 
 1. Enregistrez le document PDF.
 
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF protégé par une stratégie.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’ `BLOB` objet renvoyé par la `protectDocument` méthode. Renseignez le tableau d’octets en obtenant la valeur du membre `BLOB` de données de l’ `MTOM` objet.
-   * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `System.IO.BinaryWriter` `Write` de l’objet et en transmettant le tableau d’octets.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF protégé par une stratégie.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `protectDocument`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
+   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l&#39;objet `System.IO.FileStream`.
+   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `System.IO.BinaryWriter` de l’objet `Write` et en transmettant le tableau d’octets.
 
 **Exemples de code**
 
@@ -714,13 +714,13 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 * &quot;Début rapide (MTOM) : Application d’une stratégie à un document PDF à l’aide de l’API du service Web&quot;
 * &quot;Quick Début (SwaRef) : Application d’une stratégie à un document PDF à l’aide de l’API du service Web&quot;
 
-## Suppression de stratégies de Documents PDF {#removing-policies-from-pdf-documents}
+## Suppression de stratégies des Documents PDF {#removing-policies-from-pdf-documents}
 
 Vous pouvez supprimer une stratégie d’un document protégé par une stratégie afin de supprimer la sécurité du document. Autrement dit, si vous ne voulez plus que le document soit protégé par une politique. Si vous souhaitez mettre à jour un document protégé par une stratégie à l’aide d’une nouvelle stratégie, il est plus efficace de changer de stratégie au lieu de la supprimer et d’ajouter la stratégie mise à jour.
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -746,7 +746,7 @@ Vous pouvez récupérer un document PDF protégé par une stratégie afin de sup
 
 **Supprimer la stratégie du document PDF**
 
-Vous pouvez supprimer une stratégie d’un document PDF protégé par une stratégie, à condition qu’un administrateur soit spécifié dans les paramètres de connexion. Si ce n’est pas le cas, la stratégie utilisée pour sécuriser un document doit contenir l’ `SWITCH_POLICY` autorisation afin de supprimer une stratégie d’un document PDF. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
+Vous pouvez supprimer une stratégie d’un document PDF protégé par une stratégie, à condition qu’un administrateur soit spécifié dans les paramètres de connexion. Si ce n’est pas le cas, la stratégie utilisée pour sécuriser un document doit contenir l’autorisation `SWITCH_POLICY` afin de supprimer une stratégie d’un document PDF. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
 
 **Enregistrer le document PDF non sécurisé**
 
@@ -760,7 +760,7 @@ Une fois que le service Document Security a supprimé une stratégie d’un docu
 
 [Application de stratégies à des Documents PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
-### Suppression d’une stratégie d’un document PDF à l’aide de l’API Java {#remove-a-policy-from-a-pdf-document-using-the-java-api}
+### Supprimer une stratégie d’un document PDF à l’aide de l’API Java {#remove-a-policy-from-a-pdf-document-using-the-java-api}
 
 Supprimez une stratégie d’un document PDF protégé par une stratégie à l’aide de l’API Document Security (Java) :
 
@@ -775,18 +775,18 @@ Supprimez une stratégie d’un document PDF protégé par une stratégie à l�
 
 1. Récupérez un document PDF protégé par une stratégie.
 
-   * Créez un `java.io.FileInputStream` objet qui représente le document PDF protégé par une stratégie en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
+   * Créez un objet `java.io.FileInputStream` qui représente le document PDF protégé par une stratégie en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Supprimez la stratégie du document PDF.
 
-   * Créez un `DocumentManager` objet en appelant la `DocumentSecurityClient` méthode de l’ `getDocumentManager` objet.
-   * Supprimez une stratégie du document PDF en appelant la `DocumentManager` méthode de l’objet et en transmettant l’ `removeSecurity` `com.adobe.idp.Document` objet contenant le document PDF protégé par une stratégie. Cette méthode renvoie un `com.adobe.idp.Document` objet contenant un document PDF non sécurisé.
+   * Créez un objet `DocumentManager` en appelant la méthode `DocumentSecurityClient` de l&#39;objet `getDocumentManager`.
+   * Supprimez une stratégie du document PDF en appelant la méthode `DocumentManager` de l’objet `removeSecurity` et en transmettant l’objet `com.adobe.idp.Document` contenant le document PDF protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document` contenant un document PDF non sécurisé.
 
 1. Enregistrez le document PDF non sécurisé.
 
-   * Create a `java.io.File` object and ensure that the file extension is PDF.
-   * Appelez la `Document` méthode de l’ `copyToFile` objet pour copier le contenu de l’ `Document` objet dans le fichier (veillez à utiliser l’ `Document` objet renvoyé par la `removeSecurity` méthode).
+   * Créez un objet `java.io.File` et assurez-vous que l’extension de fichier est PDF.
+   * Appelez la méthode `Document` de l&#39;objet `copyToFile` pour copier le contenu de l&#39;objet `Document` dans le fichier (veillez à utiliser l&#39;objet `Document` renvoyé par la méthode `removeSecurity`).
 
 **Exemples de code**
 
@@ -794,7 +794,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * &quot;Début rapide (mode SOAP) : Suppression d’une stratégie d’un document PDF à l’aide de l’API Java&quot;
 
-### Suppression d’une stratégie à l’aide de l’API de service Web {#remove-a-policy-using-the-web-service-api}
+### Supprimer une stratégie à l’aide de l’API de service Web {#remove-a-policy-using-the-web-service-api}
 
 Supprimez une stratégie d’un document PDF protégé par une stratégie à l’aide de l’API Document Security (service Web) :
 
@@ -808,35 +808,35 @@ Supprimez une stratégie d’un document PDF protégé par une stratégie à l�
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Récupérez un document PDF protégé par une stratégie.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker le document PDF protégé par une stratégie à partir duquel la stratégie est supprimée.
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` `Read` méthode de l’objet et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` permet de stocker le document PDF protégé par une stratégie à partir duquel la stratégie est supprimée.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Supprimez la stratégie du document PDF.
 
-   Supprimez la stratégie du document PDF en appelant la `DocumentSecurityServiceClient` méthode de l’objet et en transmettant l’ `removePolicySecurity` `BLOB` objet contenant le document PDF protégé par une stratégie. Cette méthode renvoie un `BLOB` objet contenant un document PDF non sécurisé.
+   Supprimez la stratégie du document PDF en appelant la méthode `DocumentSecurityServiceClient` de l’objet `removePolicySecurity` et en transmettant l’objet `BLOB` contenant le document PDF protégé par une stratégie. Cette méthode renvoie un objet `BLOB` contenant un document PDF non sécurisé.
 
 1. Enregistrez le document PDF non sécurisé.
 
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF non sécurisé.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’ `BLOB` objet renvoyé par la `removePolicySecurity` méthode. Renseignez le tableau d’octets en obtenant la valeur du `BLOB` champ de l’ `MTOM` objet.
-   * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF non sécurisé.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `removePolicySecurity`. Renseignez le tableau d’octets en obtenant la valeur du champ `BLOB` de l’objet `MTOM`.
+   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l&#39;objet `System.IO.FileStream`.
 
 **Exemples de code**
 
@@ -851,7 +851,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 [Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Révocation de l’accès aux Documents {#revoking-access-to-documents}
+## Révocation de l&#39;accès aux Documents {#revoking-access-to-documents}
 
 Vous pouvez révoquer l’accès à un document PDF protégé par une stratégie, de sorte que toutes les copies du document soient inaccessibles aux utilisateurs. Lorsqu’un utilisateur tente d’ouvrir un document PDF révoqué, il est redirigé vers une URL spécifiée où un document modifié peut être affiché. L’URL vers laquelle l’utilisateur est redirigé doit être spécifiée par programmation. Lorsque vous révoquez l’accès à un document, la modification prend effet lorsque l’utilisateur se synchronise avec le service Document Security en ouvrant le document protégé par une stratégie en ligne.
 
@@ -859,7 +859,7 @@ La possibilité de révoquer l’accès à un document offre une sécurité supp
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
@@ -917,19 +917,19 @@ Révoquez l’accès à un document PDF protégé par une stratégie à l’aide
 
 1. Récupération d’un document PDF protégé par une stratégie
 
-   * Créez un `java.io.FileInputStream` objet représentant le document PDF protégé par une stratégie en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
+   * Créez un objet `java.io.FileInputStream` représentant le document PDF protégé par une stratégie en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Révoquer le document protégé par une stratégie
 
-   * Créez un `DocumentManager` objet en appelant la `DocumentSecurityClient` méthode de l’ `getDocumentManager` objet.
-   * Récupérez la valeur d’identifiant de licence du document protégé par une stratégie en appelant la `DocumentManager` méthode de l’ `getLicenseId` objet. Transmettez l’ `com.adobe.idp.Document` objet qui représente le document protégé par une stratégie. Cette méthode renvoie une valeur de chaîne qui représente la valeur de l’identifiant de licence.
-   * Créez un `LicenseManager` objet en appelant la `DocumentSecurityClient` méthode de l’ `getLicenseManager` objet.
-   * Révoquez le document protégé par une stratégie en appelant la `LicenseManager` `revokeLicense` méthode de l’objet et en transmettant les valeurs suivantes :
+   * Créez un objet `DocumentManager` en appelant la méthode `DocumentSecurityClient` de l&#39;objet `getDocumentManager`.
+   * Récupérez la valeur d&#39;identifiant de licence du document protégé par une stratégie en appelant la méthode `DocumentManager` de l&#39;objet `getLicenseId`. Transmettez l&#39;objet `com.adobe.idp.Document` qui représente le document protégé par une stratégie. Cette méthode renvoie une valeur de chaîne qui représente la valeur de l’identifiant de licence.
+   * Créez un objet `LicenseManager` en appelant la méthode `DocumentSecurityClient` de l&#39;objet `getLicenseManager`.
+   * Révoquez le document protégé par une stratégie en appelant la méthode `LicenseManager` de l’objet `revokeLicense` et en transmettant les valeurs suivantes :
 
-      * Valeur de chaîne qui spécifie la valeur d’identifiant de licence du document protégé par une stratégie (indiquez la valeur de retour de la `DocumentManager` méthode de l’ `getLicenseId` objet).
-      * Membre de données statiques de l’ `License` interface qui spécifie le motif de révocation du document. Par exemple, vous pouvez spécifier `License.DOCUMENT_REVISED`.
-      * Valeur `java.net.URL` spécifiant l’emplacement où se trouve un document révisé. Si vous ne souhaitez pas rediriger un utilisateur vers une autre URL, vous pouvez transmettre `null`.
+      * Valeur de chaîne qui spécifie la valeur d’identifiant de licence du document protégé par une stratégie (spécifiez la valeur de retour de la méthode `DocumentManager` de l’objet `getLicenseId`).
+      * Membre de données statiques de l&#39;interface `License` qui spécifie la raison de la révocation du document. Par exemple, vous pouvez spécifier `License.DOCUMENT_REVISED`.
+      * Valeur `java.net.URL` qui spécifie l&#39;emplacement où se trouve un document révisé. Si vous ne souhaitez pas rediriger un utilisateur vers une autre URL, vous pouvez transmettre `null`.
 
 **Exemples de code**
 
@@ -937,7 +937,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * &quot;Début rapide (mode SOAP) : Révocation d’un document à l’aide de l’API Java&quot;
 
-### Révoquer l’accès aux documents à l’aide de l’API du service Web {#revoke-access-to-documents-using-the-web-service-api}
+### Révoquer l’accès aux documents à l’aide de l’API de service Web {#revoke-access-to-documents-using-the-web-service-api}
 
 Révoquez l’accès à un document PDF protégé par une stratégie à l’aide de l’API Document Security (service Web) :
 
@@ -951,34 +951,34 @@ Révoquez l’accès à un document PDF protégé par une stratégie à l’aide
 
 1. Création d’un objet API Client de sécurité Document
 
-   * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Récupération d’un document PDF protégé par une stratégie
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker un document PDF protégé par une stratégie qui est révoqué.
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF protégé par une stratégie à révoquer et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` `Read` méthode de l’objet et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker un document PDF protégé par une stratégie qui est révoqué.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF protégé par une stratégie à révoquer et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Révoquer le document protégé par une stratégie
 
-   * Récupérez la valeur d’identifiant de licence du document protégé par une stratégie en appelant la `DocumentSecurityServiceClient` méthode de l’ `getLicenseID` objet et en transmettant l’ `BLOB` objet qui représente le document protégé par une stratégie. Cette méthode renvoie une valeur de chaîne qui représente l’identifiant de licence.
-   * Révoquez le document protégé par une stratégie en appelant la `DocumentSecurityServiceClient` `revokeLicense` méthode de l’objet et en transmettant les valeurs suivantes :
+   * Récupérez la valeur d&#39;identifiant de licence du document protégé par une stratégie en appelant la méthode `DocumentSecurityServiceClient` de l&#39;objet `getLicenseID` et en transmettant l&#39;objet `BLOB` qui représente le document protégé par une stratégie. Cette méthode renvoie une valeur de chaîne qui représente l’identifiant de licence.
+   * Révoquez le document protégé par une stratégie en appelant la méthode `DocumentSecurityServiceClient` de l’objet `revokeLicense` et en transmettant les valeurs suivantes :
 
-      * Valeur de chaîne qui spécifie la valeur d’identifiant de licence du document protégé par une stratégie (indiquez la valeur de retour de la `DocumentSecurityServiceService` méthode de l’ `getLicenseId` objet).
-      * Membre de données statiques de l’ `Reason` enum qui spécifie la raison de la révocation du document. Par exemple, vous pouvez spécifier `Reason.DOCUMENT_REVISED`.
-      * Valeur `string` spécifiant l’emplacement de l’URL vers lequel se trouve un document révisé. Si vous ne souhaitez pas rediriger un utilisateur vers une autre URL, vous pouvez transmettre `null`.
+      * Valeur de chaîne qui spécifie la valeur d’identifiant de licence du document protégé par une stratégie (spécifiez la valeur de retour de la méthode `DocumentSecurityServiceService` de l’objet `getLicenseId`).
+      * Membre de données statiques de l&#39;énumération `Reason` qui spécifie la raison de la révocation du document. Par exemple, vous pouvez spécifier `Reason.DOCUMENT_REVISED`.
+      * Valeur `string` qui spécifie l’emplacement de l’URL vers lequel se trouve un document révisé. Si vous ne souhaitez pas rediriger un utilisateur vers une autre URL, vous pouvez transmettre `null`.
 
 **Exemples de code**
 
@@ -1001,7 +1001,7 @@ Vous pouvez rétablir l’accès à un document PDF révoqué, de sorte que tout
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-6}
 
@@ -1018,7 +1018,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API Client de sécurité Document**
 
-Avant de pouvoir exécuter par programmation une opération du service Document Security, vous devez créer un objet client du service Document Security. Si vous utilisez l’API Java, créez un `DocumentSecurityClient` objet. Si vous utilisez l’API du service Web Document Security, créez un `DocumentSecurityServiceService` objet.
+Avant de pouvoir exécuter par programmation une opération du service Document Security, vous devez créer un objet client du service Document Security. Si vous utilisez l’API Java, créez un objet `DocumentSecurityClient`. Si vous utilisez l&#39;API du service Web Document Security, créez un objet `DocumentSecurityServiceService`.
 
 **Récupérer l’identifiant de licence du document PDF révoqué**
 
@@ -1053,15 +1053,15 @@ Rétablissement de l’accès à un document révoqué à l’aide de l’API Do
 
 1. Récupérez l’identifiant de licence du document PDF révoqué.
 
-   * Créez un `java.io.FileInputStream` objet représentant le document PDF révoqué en utilisant son constructeur et en transmettant une valeur de chaîne indiquant l’emplacement du document PDF.
+   * Créez un objet `java.io.FileInputStream` qui représente le document PDF révoqué en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
-   * Créez un `DocumentManager` objet en appelant la `DocumentSecurityClient` méthode de l’ `getDocumentManager` objet.
-   * Récupérez la valeur d’identifiant de licence du document révoqué en appelant la `DocumentManager` méthode de l’ `getLicenseId` objet et en transmettant l’ `com.adobe.idp.Document` objet qui représente le document révoqué. Cette méthode renvoie une valeur de chaîne qui représente l’identifiant de licence.
+   * Créez un objet `DocumentManager` en appelant la méthode `DocumentSecurityClient` de l&#39;objet `getDocumentManager`.
+   * Récupérez la valeur d&#39;identifiant de licence du document révoqué en appelant la méthode `DocumentManager` de l&#39;objet `getLicenseId` et en transmettant l&#39;objet `com.adobe.idp.Document` qui représente le document révoqué. Cette méthode renvoie une valeur de chaîne qui représente l’identifiant de licence.
 
 1. Rétablit l’accès au document PDF révoqué.
 
-   * Créez un `LicenseManager` objet en appelant la `DocumentSecurityClient` méthode de l’ `getLicenseManager` objet.
-   * Rétablissez l’accès au document PDF révoqué en appelant la `LicenseManager` `unrevokeLicense` méthode de l’objet et en transmettant la valeur d’identifiant de licence du document révoqué.
+   * Créez un objet `LicenseManager` en appelant la méthode `DocumentSecurityClient` de l&#39;objet `getLicenseManager`.
+   * Rétablissez l’accès au document PDF révoqué en appelant la méthode `LicenseManager` de l’objet `unrevokeLicense` et en transmettant la valeur d’identifiant de licence du document révoqué.
 
 **Exemples de code**
 
@@ -1069,7 +1069,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * &quot;Début rapide (mode SOAP) : Rétablissement de l’accès à un document révoqué à l’aide de l’API du service Web&quot;
 
-### Rétablissement de l’accès aux documents révoqués à l’aide de l’API du service Web {#reinstate-access-to-revoked-documents-using-the-web-service-api}
+### Rétablissement de l’accès aux documents révoqués à l’aide de l’API de service Web {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
 Rétablissement de l’accès à un document révoqué à l’aide de l’API Document Security (service Web) :
 
@@ -1083,30 +1083,30 @@ Rétablissement de l’accès à un document révoqué à l’aide de l’API Do
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Récupérez l’identifiant de licence du document PDF révoqué.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker un document PDF révoqué auquel l’accès est rétabli.
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF révoqué et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` `Read` méthode de l’objet et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker un document PDF révoqué auquel l’accès est rétabli.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF révoqué et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Rétablit l’accès au document PDF révoqué.
 
-   * Récupérez la valeur d’identifiant de licence du document révoqué en appelant la `DocumentSecurityServiceClient` méthode de l’ `getLicenseID` objet et en transmettant l’ `BLOB` objet qui représente le document révoqué. Cette méthode renvoie une valeur de chaîne qui représente l’identifiant de licence.
-   * Rétablissez l’accès au document PDF révoqué en appelant la `DocumentSecurityServiceClient` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie la valeur d’identifiant de licence du document PDF révoqué (transmettez la valeur renvoyée de la `unrevokeLicense` méthode de l’ `DocumentSecurityServiceClient` `getLicenseId` objet).
+   * Récupérez la valeur d&#39;identifiant de licence du document révoqué en appelant la méthode `DocumentSecurityServiceClient` de l&#39;objet `getLicenseID` et en transmettant l&#39;objet `BLOB` qui représente le document révoqué. Cette méthode renvoie une valeur de chaîne qui représente l’identifiant de licence.
+   * Rétablissez l’accès au document PDF révoqué en appelant la méthode `DocumentSecurityServiceClient` de l’objet `unrevokeLicense` et en transmettant une valeur de chaîne qui spécifie la valeur d’identifiant de licence du document PDF révoqué (transmettez la valeur de retour de la méthode `DocumentSecurityServiceClient` de l’objet `getLicenseId`).
 
 **Exemples de code**
 
@@ -1129,7 +1129,7 @@ Vous ne pouvez pas effectuer cette tâche si votre version de LiveCycle est 8.x 
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-7}
 
@@ -1146,7 +1146,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API Client de sécurité Document**
 
-Avant de pouvoir exécuter par programmation une opération du service Document Security, créez un objet client du service Document Security. Si vous utilisez l’API Java, créez un `RightsManagementClient` objet. Si vous utilisez l’API du service Web Document Security, créez un `RightsManagementServiceService` objet.
+Avant de pouvoir exécuter par programmation une opération du service Document Security, créez un objet client du service Document Security. Si vous utilisez l’API Java, créez un objet `RightsManagementClient`. Si vous utilisez l&#39;API du service Web Document Security, créez un objet `RightsManagementServiceService`.
 
 **Récupération d’un document protégé par une stratégie pour l’inspection**
 
@@ -1162,7 +1162,7 @@ Après avoir examiné un document PDF protégé par une stratégie, vous pouvez 
 
 Si vous sécurisez un document avec une stratégie qui appartient à Mes stratégies, puis que vous appelez `RMInspectResult.getPolicysetName` ou `RMInspectResult.getPolicysetId`, la valeur null est renvoyée.
 
-Si le document est sécurisé à l’aide d’une stratégie contenue dans un jeu de stratégies (autre que Mes stratégies), `RMInspectResult.getPolicysetName` puis `RMInspectResult.getPolicysetId` renvoie des chaînes valides.
+Si le document est sécurisé à l’aide d’une stratégie contenue dans un jeu de stratégies (autre que Mes stratégies), `RMInspectResult.getPolicysetName` et `RMInspectResult.getPolicysetId` renvoient des chaînes valides.
 
 **Voir également**
 
@@ -1185,17 +1185,17 @@ Inspect un document PDF protégé par une stratégie à l’aide de l’API Docu
 
 1. Récupérez un document protégé par une stratégie à inspecter.
 
-   * Créez un `java.io.FileInputStream` objet représentant le document PDF protégé par une stratégie à l’aide de son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du document PDF.
+   * Créez un objet `java.io.FileInputStream` qui représente le document PDF protégé par une stratégie en utilisant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Inspect le document.
 
-   * Créez un `DocumentManager` objet en appelant la `RightsManagementClient` méthode de l’ `getDocumentManager` objet.
-   * Inspect le document protégé par une stratégie en appelant la `LicenseManager` méthode de l’ `inspectDocument` objet. Transmettez l’ `com.adobe.idp.Document` objet contenant le document PDF protégé par une stratégie. Cette méthode renvoie un `RMInspectResult` objet contenant des informations sur le document protégé par une stratégie.
+   * Créez un objet `DocumentManager` en appelant la méthode `RightsManagementClient` de l&#39;objet `getDocumentManager`.
+   * Inspect le document protégé par une stratégie en appelant la méthode `LicenseManager` de l’objet `inspectDocument`. Transmettez l’objet `com.adobe.idp.Document` contenant le document PDF protégé par une stratégie. Cette méthode renvoie un objet `RMInspectResult` contenant des informations sur le document protégé par une stratégie.
 
 1. Obtenez des informations sur le document protégé par une stratégie.
 
-   Pour obtenir des informations sur le document protégé par une stratégie, appelez la méthode appropriée qui appartient à `RMInspectResult` l’objet. Par exemple, pour récupérer le nom de la stratégie, appelez la `RMInspectResult` méthode de l’ `getPolicyName` objet.
+   Pour obtenir des informations sur le document protégé par une stratégie, appelez la méthode appropriée qui appartient à l&#39;objet `RMInspectResult`. Par exemple, pour récupérer le nom de la stratégie, appelez la méthode `RMInspectResult` de l’objet `getPolicyName`.
 
 **Exemples de code**
 
@@ -1217,33 +1217,33 @@ Inspect un document PDF protégé par une stratégie à l’aide de l’API Docu
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Récupérez un document protégé par une stratégie à inspecter.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker un document PDF à inspecter.
-   * Create a `System.IO.FileStream` object by invoking its constructor. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` méthode de l’ `Read` objet. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. L&#39;objet `BLOB` est utilisé pour stocker un document PDF à inspecter.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read`. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Inspect le document.
 
-   Inspect le document protégé par une stratégie en appelant la `RightsManagementServiceClient` méthode de l’ `inspectDocument` objet. Transmettez l’ `BLOB` objet contenant le document PDF protégé par une stratégie. Cette méthode renvoie un `RMInspectResult` objet contenant des informations sur le document protégé par une stratégie.
+   Inspect le document protégé par une stratégie en appelant la méthode `RightsManagementServiceClient` de l’objet `inspectDocument`. Transmettez l’objet `BLOB` contenant le document PDF protégé par une stratégie. Cette méthode renvoie un objet `RMInspectResult` contenant des informations sur le document protégé par une stratégie.
 
 1. Obtenez des informations sur le document protégé par une stratégie.
 
-   Pour obtenir des informations sur le document protégé par une stratégie, obtenez la valeur du champ approprié qui appartient à l’ `RMInspectResult` objet. Par exemple, pour récupérer le nom de la stratégie, obtenez la valeur du `RMInspectResult` champ de l’ `policyName` objet.
+   Pour obtenir des informations sur le document protégé par une stratégie, obtenez la valeur du champ approprié qui appartient à l&#39;objet `RMInspectResult`. Par exemple, pour récupérer le nom de la stratégie, obtenez la valeur du champ `RMInspectResult` de l’objet `policyName`.
 
 **Exemples de code**
 
@@ -1268,7 +1268,7 @@ Les filigranes permettent d&#39;assurer la sécurité d&#39;un document en ident
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-8}
 
@@ -1285,7 +1285,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API Client de sécurité Document**
 
-Avant de pouvoir exécuter par programmation une opération du service Document Security, vous devez créer un objet client du service Document Security. Si vous utilisez l’API Java, créez un `RightsManagementClient` objet. Si vous utilisez l’API du service Web Document Security, créez un `RightsManagementServiceService` objet.
+Avant de pouvoir exécuter par programmation une opération du service Document Security, vous devez créer un objet client du service Document Security. Si vous utilisez l’API Java, créez un objet `RightsManagementClient`. Si vous utilisez l&#39;API du service Web Document Security, créez un objet `RightsManagementServiceService`.
 
 **Définition des attributs des filigranes**
 
@@ -1339,7 +1339,7 @@ Le tableau suivant liste les paires clé/valeur requises lors de la création d�
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
-   <td><p>Si cette valeur est spécifiée, elle <code>WaterBackCmd:IS_SIZE_ENABLED</code> doit être présente et la valeur doit être vraie. Si cet attribut n’est pas spécifié, le comportement par défaut est adapté à la page.</p></td>
+   <td><p>Si cette valeur est spécifiée, <code>WaterBackCmd:IS_SIZE_ENABLED</code> doit être présent et la valeur doit être true. Si cet attribut n’est pas spécifié, le comportement par défaut est adapté à la page.</p></td>
    <td><p>Valeur supérieure à 0.0 et inférieure ou égale à 1.0.</p></td>
   </tr>
   <tr>
@@ -1364,7 +1364,7 @@ Le tableau suivant liste les paires clé/valeur requises lors de la création d�
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SRCTEXT</code></p></td>
-   <td><p>Indique le texte personnalisé d’un filigrane. Si cette valeur est présente, elle <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> doit également être présente et définie sur true.</p></td>
+   <td><p>Indique le texte personnalisé d’un filigrane. Si cette valeur est présente, <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> doit également être présent et définie sur true.</p></td>
    <td><p>True ou false</p></td>
   </tr>
  </tbody>
@@ -1397,7 +1397,7 @@ Créez un filigrane à l’aide de l’API Document Security (Java) :
 
 1. Incluez des fichiers de projet.
 
-   Include client JAR files, such as the `adobe-rightsmanagement-client.jar`, in your Java project’s class path.
+   Incluez les fichiers JAR client, tels que `adobe-rightsmanagement-client.jar`, dans le chemin de classe de votre projet Java.
 
 1. Créez un objet API Client de sécurité Document.
 
@@ -1406,16 +1406,16 @@ Créez un filigrane à l’aide de l’API Document Security (Java) :
 
 1. Définition des attributs du filigrane
 
-   * Créez un `Watermark` objet en appelant la méthode `InfomodelObjectFactory` statique de l’ `createWatermark` objet. Cette méthode renvoie un `Watermark` objet.
-   * Définissez l’attribut name du filigrane en appelant la `Watermark` `setName` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie le nom de la stratégie.
-   * Définissez l’attribut d’arrière-plan du filigrane en appelant la `Watermark` méthode de l’objet et en transmettant `setBackground` `true`. En définissant cet attribut, le filigrane apparaît à l’arrière-plan du document.
-   * Définissez l’attribut de texte personnalisé du filigrane en appelant la `Watermark` `setCustomText` méthode de l’objet et en transmettant une valeur de chaîne qui représente le texte du filigrane.
-   * Définissez l’attribut d’opacité du filigrane en appelant la `Watermark` `setOpacity` méthode de l’objet et en transmettant un entier spécifiant le niveau d’opacité. La valeur 100 indique que le filigrane est complètement opaque et la valeur 0 indique que le filigrane est complètement transparent.
+   * Créez un objet `Watermark` en appelant la méthode statique `InfomodelObjectFactory` de l&#39;objet `createWatermark`. Cette méthode renvoie un objet `Watermark`.
+   * Définissez l’attribut name du filigrane en appelant la méthode `Watermark` de l’objet `setName` et en transmettant une valeur de chaîne qui spécifie le nom de la stratégie.
+   * Définissez l’attribut d’arrière-plan du filigrane en appelant la méthode `Watermark` de l’objet `setBackground` et en transmettant `true`. En définissant cet attribut, le filigrane apparaît à l’arrière-plan du document.
+   * Définissez l’attribut de texte personnalisé du filigrane en appelant la méthode `Watermark` de l’objet `setCustomText` et en transmettant une valeur de chaîne qui représente le texte du filigrane.
+   * Définissez l’attribut d’opacité du filigrane en appelant la méthode `Watermark` de l’objet `setOpacity` et en transmettant un entier spécifiant le niveau d’opacité. La valeur 100 indique que le filigrane est complètement opaque et la valeur 0 indique que le filigrane est complètement transparent.
 
 1. Enregistrez le filigrane.
 
-   * Créez un `WatermarkManager` objet en appelant la `RightsManagementClient` méthode de l’ `getWatermarkManager` objet. Cette méthode renvoie un `WatermarkManager` objet.
-   * Enregistrez le filigrane en appelant la `WatermarkManager` méthode de l’ `registerWatermark` objet et en transmettant l’objet `Watermark` qui représente le filigrane à enregistrer. Cette méthode renvoie une valeur de chaîne qui représente la valeur d’identification du filigrane.
+   * Créez un objet `WatermarkManager` en appelant la méthode `RightsManagementClient` de l&#39;objet `getWatermarkManager`. Cette méthode renvoie un objet `WatermarkManager`.
+   * Enregistrez le filigrane en appelant la méthode `WatermarkManager` de l&#39;objet `registerWatermark` et en transmettant l&#39;objet `Watermark` représentant le filigrane à enregistrer. Cette méthode renvoie une valeur de chaîne qui représente la valeur d’identification du filigrane.
 
 **Exemples de code**
 
@@ -1437,32 +1437,32 @@ Créez un filigrane à l’aide de l’API Document Security (service Web) :
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Définissez les attributs du filigrane.
 
-   * Créez un `WatermarkSpec` objet en appelant le `WatermarkSpec` constructeur.
-   * Définissez le nom du filigrane en attribuant une valeur de chaîne au membre `WatermarkSpec` de données de l’ `name` objet.
-   * Définissez l’ `id` attribut du filigrane en attribuant une valeur de chaîne au membre `WatermarkSpec` de données de l’ `id` objet.
-   * Pour chaque propriété de filigrane à définir, créez un `MyMapOf_xsd_string_To_xsd_anyType_Item` objet distinct.
-   * Définissez la valeur de clé en attribuant une valeur au membre `MyMapOf_xsd_string_To_xsd_anyType_Item` de données de l’ `key` objet (par exemple `WaterBackCmd:OPACITY)`).
-   * Définissez la valeur en attribuant une valeur au membre `MyMapOf_xsd_string_To_xsd_anyType_Item` de données de l’ `value` objet (par exemple `.25`).
-   * Create a `MyArrayOf_xsd_anyType` object. Pour chaque `MyMapOf_xsd_string_To_xsd_anyType_Item` objet, appelez la `MyArrayOf_xsd_anyType` méthode de l’ `Add` objet. Pass the `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
-   * Affectez l’ `MyArrayOf_xsd_anyType` objet au membre `WatermarkSpec` de données de l’ `values` objet.
+   * Créez un objet `WatermarkSpec` en appelant le constructeur `WatermarkSpec`.
+   * Définissez le nom du filigrane en attribuant une valeur de chaîne au membre de données `name` de l&#39;objet `WatermarkSpec`.
+   * Définissez l’attribut `id` du filigrane en attribuant une valeur de chaîne au membre de données `WatermarkSpec` de l’objet `id`.
+   * Pour chaque propriété de filigrane à définir, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item` distinct.
+   * Définissez la valeur de clé en attribuant une valeur au membre de données `key` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item` (par exemple, `WaterBackCmd:OPACITY)`.
+   * Définissez la valeur en attribuant une valeur au membre de données `value` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item` (par exemple, `.25`).
+   * Créez un objet `MyArrayOf_xsd_anyType`. Pour chaque objet `MyMapOf_xsd_string_To_xsd_anyType_Item`, appelez la méthode `MyArrayOf_xsd_anyType` de l&#39;objet `Add`. Transmettez l&#39;objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Affectez l&#39;objet `MyArrayOf_xsd_anyType` au membre de données `WatermarkSpec` de l&#39;objet `values`.
 
 1. Enregistrez le filigrane.
 
-   Enregistrez le filigrane en appelant la `RightsManagementServiceClient` méthode de l’ `registerWatermark` objet et en transmettant l’objet `WatermarkSpec` qui représente le filigrane à enregistrer.
+   Enregistrez le filigrane en appelant la méthode `RightsManagementServiceClient` de l&#39;objet `registerWatermark` et en transmettant l&#39;objet `WatermarkSpec` représentant le filigrane à enregistrer.
 
 **Exemples de code**
 
@@ -1489,7 +1489,7 @@ Lorsque vous modifiez un filigrane, la modification a un impact sur les document
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-9}
 
@@ -1507,7 +1507,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API Client de sécurité Document**
 
-Avant de pouvoir exécuter par programmation une opération du service Document Security, vous devez créer un objet client du service Document Security. Si vous utilisez l’API Java, créez un `DocumentSecurityClient` objet. Si vous utilisez l’API du service Web Document Security, créez un `DocumentSecurityServiceService` objet.
+Avant de pouvoir exécuter par programmation une opération du service Document Security, vous devez créer un objet client du service Document Security. Si vous utilisez l’API Java, créez un objet `DocumentSecurityClient`. Si vous utilisez l&#39;API du service Web Document Security, créez un objet `DocumentSecurityServiceService`.
 
 **Récupérer le filigrane à modifier**
 
@@ -1515,7 +1515,7 @@ Pour modifier un filigrane, vous devez récupérer un filigrane existant. Vous p
 
 **Définition des attributs des filigranes**
 
-Pour modifier un filigrane existant, modifiez la valeur d’un ou de plusieurs attributs de filigrane. Lors de la mise à jour programmée d’un filigrane à l’aide d’un service Web, vous devez définir tous les attributs définis à l’origine, même si la valeur ne change pas. Supposons, par exemple, que les attributs de filigrane suivants soient définis : `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`et `WaterBackCmd:SRCTEXT`. Bien que le seul attribut à modifier soit `WaterBackCmd:OPACITY`celui-ci, vous devez définir les autres valeurs qui conviennent.
+Pour modifier un filigrane existant, modifiez la valeur d’un ou de plusieurs attributs de filigrane. Lors de la mise à jour programmée d’un filigrane à l’aide d’un service Web, vous devez définir tous les attributs définis à l’origine, même si la valeur ne change pas. Supposons, par exemple, que les attributs de filigrane suivants soient définis : `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY` et `WaterBackCmd:SRCTEXT`. Bien que le seul attribut à modifier soit `WaterBackCmd:OPACITY`, vous devez définir les autres valeurs.
 
 >[!NOTE]
 >
@@ -1523,7 +1523,7 @@ Pour modifier un filigrane existant, modifiez la valeur d’un ou de plusieurs a
 
 >[!NOTE]
 >
->Pour plus d’informations sur les noms d’attributs de filigrane, voir [Création de filigranes](protecting-documents-policies.md#creating-watermarks).
+>Pour plus d’informations sur les noms d’attributs du filigrane, voir [Création de filigranes](protecting-documents-policies.md#creating-watermarks).
 
 **Mise à jour du filigrane**
 
@@ -1552,11 +1552,11 @@ Modifiez un filigrane à l’aide de l’API Document Security (Java) :
 
 1. Récupérez le filigrane à modifier.
 
-   Créez un `WatermarkManager` objet en appelant la `DocumentSecurityClient` méthode de l’ `getWatermarkManager` objet et en transmettant une valeur de chaîne qui spécifie le nom du filigrane. Cette méthode renvoie un objet `Watermark` qui représente le filigrane à modifier.
+   Créez un objet `WatermarkManager` en appelant la méthode `DocumentSecurityClient` de l&#39;objet `getWatermarkManager` et transmettez une valeur de chaîne qui spécifie le nom du filigrane. Cette méthode renvoie un objet `Watermark` qui représente le filigrane à modifier.
 
 1. Définissez les attributs du filigrane.
 
-   Définissez l’attribut d’opacité du filigrane en appelant la `Watermark` `setOpacity` méthode de l’objet et en transmettant un entier spécifiant le niveau d’opacité. La valeur 100 indique que le filigrane est complètement opaque et la valeur 0 indique que le filigrane est complètement transparent.
+   Définissez l’attribut d’opacité du filigrane en appelant la méthode `Watermark` de l’objet `setOpacity` et en transmettant un entier spécifiant le niveau d’opacité. La valeur 100 indique que le filigrane est complètement opaque et la valeur 0 indique que le filigrane est complètement transparent.
 
    >[!NOTE]
    >
@@ -1564,7 +1564,7 @@ Modifiez un filigrane à l’aide de l’API Document Security (Java) :
 
 1. Mettez à jour le filigrane.
 
-   * Mettez à jour le filigrane en appelant la `WatermarkManager` méthode de l’ `updateWatermark` objet et en transmettant l’ `Watermark` objet dont l’attribut a été modifié.
+   * Mettez à jour le filigrane en appelant la méthode `WatermarkManager` de l&#39;objet `updateWatermark` et en transmettant l&#39;objet `Watermark` dont l&#39;attribut a été modifié.
 
 **Exemples de code**
 
@@ -1584,33 +1584,33 @@ Modifiez un filigrane à l’aide de l’API Document Security (service Web) :
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Récupérez le filigrane à modifier.
 
-   Récupérez le filigrane à modifier en appelant la `DocumentSecurityServiceClient` `getWatermarkByName` méthode de l’objet. Transmettez une valeur de chaîne qui spécifie le nom du filigrane. Cette méthode renvoie un objet `WatermarkSpec` qui représente le filigrane à modifier.
+   Récupérez le filigrane à modifier en appelant la méthode `DocumentSecurityServiceClient` de l’objet `getWatermarkByName`. Transmettez une valeur de chaîne qui spécifie le nom du filigrane. Cette méthode renvoie un objet `WatermarkSpec` qui représente le filigrane à modifier.
 
 1. Définissez les attributs du filigrane.
 
-   * Pour chaque propriété de filigrane à mettre à jour, créez un `MyMapOf_xsd_string_To_xsd_anyType_Item` objet distinct.
-   * Définissez la valeur de clé en attribuant une valeur au membre `MyMapOf_xsd_string_To_xsd_anyType_Item` de données de l’ `key` objet (par exemple `WaterBackCmd:OPACITY)`).
-   * Définissez la valeur en attribuant une valeur au membre `MyMapOf_xsd_string_To_xsd_anyType_Item` de données de l’ `value` objet (par exemple `.50`).
-   * Create a `MyArrayOf_xsd_anyType` object. Pour chaque `MyMapOf_xsd_string_To_xsd_anyType_Item` objet, appelez la `MyArrayOf_xsd_anyType` méthode de l’ `Add` objet. Pass the `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
-   * Affectez l’ `MyArrayOf_xsd_anyType` objet au membre `WatermarkSpec` de données de l’ `values` objet.
+   * Pour chaque propriété de filigrane à mettre à jour, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item` distinct.
+   * Définissez la valeur de clé en attribuant une valeur au membre de données `key` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item` (par exemple, `WaterBackCmd:OPACITY)`.
+   * Définissez la valeur en attribuant une valeur au membre de données `value` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item` (par exemple, `.50`).
+   * Créez un objet `MyArrayOf_xsd_anyType`. Pour chaque objet `MyMapOf_xsd_string_To_xsd_anyType_Item`, appelez la méthode `MyArrayOf_xsd_anyType` de l&#39;objet `Add`. Transmettez l&#39;objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Affectez l&#39;objet `MyArrayOf_xsd_anyType` au membre de données `WatermarkSpec` de l&#39;objet `values`.
 
 1. Mettez à jour le filigrane.
 
-   Mettez à jour le filigrane en appelant la `DocumentSecurityServiceClient` méthode de l’ `updateWatermark` objet et en transmettant l’objet `WatermarkSpec` qui représente le filigrane à modifier.
+   Mettez à jour le filigrane en appelant la méthode `DocumentSecurityServiceClient` de l&#39;objet `updateWatermark` et en transmettant l&#39;objet `WatermarkSpec` représentant le filigrane à modifier.
 
 **Exemples de code**
 
@@ -1633,7 +1633,7 @@ Vous pouvez rechercher des événements spécifiques en utilisant l’API Java R
 
 >[!NOTE]
 >
->For more information about the Rights Management service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service de Rights Management, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-10}
 
@@ -1650,7 +1650,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API Client Rights Management**
 
-Avant de pouvoir exécuter une opération de service de Rights Management par programmation, vous devez créer un objet client de service de Rights Management. Si vous utilisez l’API Java, créez un `DocumentSecurityClient` objet. Si vous utilisez l’API du service Web Rights Management, créez un `DocumentSecurityServiceService` objet.
+Avant de pouvoir exécuter une opération de service de Rights Management par programmation, vous devez créer un objet client de service de Rights Management. Si vous utilisez l’API Java, créez un objet `DocumentSecurityClient`. Si vous utilisez l’API du service Web Rights Management, créez un objet `DocumentSecurityServiceService`.
 
 **Spécifiez les événements à rechercher**
 
@@ -1676,21 +1676,21 @@ Recherchez des événements à l’aide de l’API Rights Management (Java) :
 
 1. Création d’un objet API Client Rights Management
 
-   Créez un `DocumentSecurityClient` objet en utilisant son constructeur et en transmettant un `ServiceClientFactory` objet contenant des propriétés de connexion.
+   Créez un objet `DocumentSecurityClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion.
 
 1. Spécifiez les événements à rechercher
 
-   * Créez un `EventManager` objet en appelant la `DocumentSecurityClient` méthode de l’ `getEventManager` objet. Cette méthode renvoie un `EventManager` objet.
-   * Créez un `EventSearchFilter` objet en appelant son constructeur.
-   * Spécifiez le événement pour lequel effectuer la recherche en appelant la `EventSearchFilter` méthode de l’ `setEventCode` objet et en transmettant un membre de données statique appartenant à la `EventManager` classe qui représente le événement pour lequel effectuer la recherche. Par exemple, pour rechercher le événement de création de stratégie, transmettez `EventManager.POLICY_CREATE_EVENT`.
+   * Créez un objet `EventManager` en appelant la méthode `DocumentSecurityClient` de l&#39;objet `getEventManager`. Cette méthode renvoie un objet `EventManager`.
+   * Créez un objet `EventSearchFilter` en appelant son constructeur.
+   * Spécifiez le événement pour lequel effectuer la recherche en appelant la méthode `EventSearchFilter` de l&#39;objet `setEventCode` et en transmettant un membre de données statique appartenant à la classe `EventManager` qui représente le événement pour lequel effectuer la recherche. Par exemple, pour rechercher le événement de création de stratégie, transmettez `EventManager.POLICY_CREATE_EVENT`.
 
    >[!NOTE]
    >
-   >Vous pouvez définir d&#39;autres critères de recherche en appelant des méthodes `EventSearchFilter` d&#39;objet. Par exemple, appelez la `setUserName` méthode pour spécifier un utilisateur associé au événement.
+   >Vous pouvez définir des critères de recherche supplémentaires en appelant les méthodes d&#39;objet `EventSearchFilter`. Par exemple, appelez la méthode `setUserName` pour spécifier un utilisateur associé au événement.
 
 1. Rechercher le événement
 
-   Recherchez le événement en appelant la `EventManager` méthode de l’ `searchForEvents` objet et en transmettant l’ `EventSearchFilter` objet qui définit les critères de recherche du événement. Cette méthode renvoie un tableau d&#39; `Event` objets.
+   Recherchez le événement en appelant la méthode `EventManager` de l&#39;objet `searchForEvents` et en transmettant l&#39;objet `EventSearchFilter` qui définit les critères de recherche de événement. Cette méthode renvoie un tableau d&#39;objets `Event`.
 
 **Exemples de code**
 
@@ -1698,7 +1698,7 @@ Pour obtenir des exemples de code à l’aide du service Rights Management, repo
 
 * &quot;Début rapide (SOAP) : Recherche de événements à l’aide de l’API Java&quot;
 
-### Rechercher des événements à l’aide de l’API du service Web {#search-for-events-using-the-web-service-api}
+### Rechercher des événements à l’aide de l’API de service Web {#search-for-events-using-the-web-service-api}
 
 Recherchez des événements à l’aide de l’API du Rights Management (service Web) :
 
@@ -1712,26 +1712,26 @@ Recherchez des événements à l’aide de l’API du Rights Management (service
 
 1. Création d’un objet API Client Rights Management
 
-   * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Spécifiez les événements à rechercher
 
-   * Create an `EventSpec` object by using its constructor.
-   * Spécifiez le début de la période au cours de laquelle le événement s’est produit en définissant le membre `EventSpec` de données de l’objet avec `firstTime.date` `DataTime` une instance qui représente le début de la période au cours de laquelle le événement s’est produit.
-   * Affectez la valeur `true` au membre `EventSpec` de données de l’ `firstTime.dateSpecified` objet.
-   * Spécifiez la fin de la période au cours de laquelle le événement s’est produit en définissant le membre `EventSpec` de données de l’objet avec `lastTime.date` `DataTime` une instance représentant la fin de la période au cours de laquelle le événement s’est produit.
-   * Affectez la valeur `true` au membre `EventSpec` de données de l’ `lastTime.dateSpecified` objet.
-   * Définissez le événement à rechercher en attribuant une valeur de chaîne au membre `EventSpec` de données de l’ `eventCode` objet. Le tableau suivant liste les valeurs numériques que vous pouvez affecter à cette propriété :
+   * Créez un objet `EventSpec` en utilisant son constructeur.
+   * Spécifiez le début de la période au cours de laquelle le événement s’est produit en définissant le membre de données `firstTime.date` de l’objet `EventSpec` avec l’instance `DataTime` qui représente le début de la période au moment où le événement s’est produit.
+   * Affectez la valeur `true` au membre de données `firstTime.dateSpecified` de l’objet `EventSpec`.
+   * Spécifiez la fin de la période au cours de laquelle le événement s’est produit en définissant le membre de données `lastTime.date` de l’objet `EventSpec` avec l’instance `DataTime` qui représente la fin de la période au moment où le événement s’est produit.
+   * Affectez la valeur `true` au membre de données `lastTime.dateSpecified` de l’objet `EventSpec`.
+   * Définissez le événement à rechercher en attribuant une valeur de chaîne au membre de données `eventCode` de l&#39;objet `EventSpec`. Le tableau suivant liste les valeurs numériques que vous pouvez affecter à cette propriété :
 
    <table>
     <thead>
@@ -1871,7 +1871,7 @@ Recherchez des événements à l’aide de l’API du Rights Management (service
     </tr>
     <tr>
     <td><p><code>SERVER_CLIENT_SYNC_EVENT </code></p></td>
-    <td><p>4000</p></td>
+    <td><p>4 000</p></td>
     </tr>
     <tr>
     <td><p><code>SERVER_SYNC_DIR_INFO_EVENT </code></p></td>
@@ -1919,7 +1919,7 @@ Recherchez des événements à l’aide de l’API du Rights Management (service
     </tr>
     <tr>
     <td><p><code>CREATED_POLICYSET_EVENT</code></p></td>
-    <td><p>7000</p></td>
+    <td><p>7 000</p></td>
     </tr>
     <tr>
     <td><p><code>DELETED_POLICYSET_EVENT</code></p></td>
@@ -1934,7 +1934,7 @@ Recherchez des événements à l’aide de l’API du Rights Management (service
 
 1. Rechercher le événement
 
-   Recherchez le événement en appelant la `DocumentSecurityServiceClient` méthode de l’ `searchForEvents` objet et en transmettant l’ `EventSpec` objet qui représente le événement pour lequel effectuer la recherche et le nombre maximal de résultats. Cette méthode renvoie une `MyArrayOf_xsd_anyType` collection dans laquelle chaque élément est une `AuditSpec` instance. A l’aide d’une `AuditSpec` instance, vous pouvez obtenir des informations sur le événement, telles que l’heure à laquelle il s’est produit. L&#39; `AuditSpec` instance contient un membre `timestamp` de données qui spécifie ces informations.
+   Recherchez le événement en appelant la méthode `DocumentSecurityServiceClient` de l’objet `searchForEvents` et en transmettant l’objet `EventSpec` qui représente le événement pour lequel effectuer la recherche et le nombre maximal de résultats. Cette méthode renvoie une collection `MyArrayOf_xsd_anyType` où chaque élément est une instance `AuditSpec`. A l&#39;aide d&#39;une instance `AuditSpec`, vous pouvez obtenir des informations sur le événement, telles que l&#39;heure à laquelle il s&#39;est produit. L&#39;instance `AuditSpec` contient un membre de données `timestamp` qui spécifie ces informations.
 
 **Exemples de code**
 
@@ -1949,7 +1949,7 @@ Pour obtenir des exemples de code à l’aide du service Rights Management, repo
 
 [Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Application de stratégies à des Documents Word {#applying-policies-to-word-documents}
+## Application de stratégies aux Documents Word {#applying-policies-to-word-documents}
 
 Outre les documents PDF, le service Rights Management prend en charge d’autres formats de document, tels qu’un document Microsoft Word (DOC) et d’autres formats de fichier Microsoft Office. Par exemple, vous pouvez appliquer une stratégie à un document Word afin de la sécuriser. En appliquant une stratégie à un document Word, vous restreignez l’accès au document. Vous ne pouvez pas appliquer une stratégie à un document si le document est déjà sécurisé avec une stratégie.
 
@@ -1957,7 +1957,7 @@ Vous pouvez contrôler l’utilisation d’un document Word protégé par une st
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-11}
 
@@ -1997,7 +1997,7 @@ Une fois que le service Document Security a appliqué une stratégie à un docum
 
 [Révocation de l’accès aux Documents](protecting-documents-policies.md#revoking-access-to-documents)
 
-### Application d’une stratégie à un document Word à l’aide de l’API Java {#apply-a-policy-to-a-word-document-using-the-java-api}
+### Appliquer une stratégie à un document Word à l’aide de l’API Java {#apply-a-policy-to-a-word-document-using-the-java-api}
 
 Appliquez une stratégie à un document Word à l’aide de l’API Document Security (Java) :
 
@@ -2012,30 +2012,30 @@ Appliquez une stratégie à un document Word à l’aide de l’API Document Sec
 
 1. Récupérez un document Word.
 
-   * Créez un `java.io.FileInputStream` objet qui représente le document Word en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l&#39;emplacement du document Word.
+   * Créez un objet `java.io.FileInputStream` qui représente le document Word en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l&#39;emplacement du document Word.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Appliquez une stratégie existante au document Word.
 
-   * Créez un `DocumentManager` objet en appelant la `DocumentSecurityClient` méthode de l’ `getDocumentManager` objet.
-   * Appliquez une stratégie au document Word en appelant la `DocumentManager` `protectDocument` méthode de l’objet et en transmettant les valeurs suivantes :
+   * Créez un objet `DocumentManager` en appelant la méthode `DocumentSecurityClient` de l&#39;objet `getDocumentManager`.
+   * Appliquez une stratégie au document Word en appelant la méthode `DocumentManager` de l&#39;objet `protectDocument` et en transmettant les valeurs suivantes :
 
       * Objet `com.adobe.idp.Document` contenant le document Word auquel la stratégie est appliquée.
       * Valeur de chaîne qui spécifie le nom du document.
-      * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une `null` valeur qui entraîne l’utilisation du jeu de `MyPolicies` stratégies.
+      * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une valeur `null` qui se traduit par l&#39;utilisation du jeu de stratégies `MyPolicies`.
       * Valeur de chaîne qui spécifie le nom de la stratégie.
       * Valeur de chaîne qui représente le nom du domaine du gestionnaire d’utilisateurs de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être nulle (si ce paramètre est nul, la valeur de paramètre suivante doit être nulle).
       * Valeur de chaîne qui représente le nom canonique de l’utilisateur du gestionnaire d’utilisateurs qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être `null` (si ce paramètre est `null`, la valeur de paramètre précédente doit être `null`).
-      * Un paramètre `com.adobe.livecycle.rightsmanagement.Locale` qui représente le paramètre régional utilisé pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et vous pouvez spécifier `null`.
+      * `com.adobe.livecycle.rightsmanagement.Locale` qui représente le paramètre régional utilisé pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et vous pouvez spécifier `null`.
 
-      La `protectDocument` méthode renvoie un `RMSecureDocumentResult` objet qui contient le document Word protégé par une stratégie.
+      La méthode `protectDocument` renvoie un objet `RMSecureDocumentResult` contenant le document Word protégé par une stratégie.
 
 
 1. Enregistrez le document Word.
 
-   * Appelez la méthode `RMSecureDocumentResult` de l’objet `getProtectedDoc` pour obtenir le document Word protégé par une stratégie. Cette méthode renvoie un `com.adobe.idp.Document` objet.
-   * Create a `java.io.File` object and ensure that the file extension is DOC.
-   * Appelez la `com.adobe.idp.Document` méthode de l’ `copyToFile` objet pour copier le contenu de l’ `Document` objet dans le fichier (veillez à utiliser l’ `Document` objet renvoyé par la `getProtectedDoc` méthode).
+   * Appelez la méthode `RMSecureDocumentResult` de l’objet `getProtectedDoc` pour obtenir le document Word protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document`.
+   * Créez un objet `java.io.File` et assurez-vous que l&#39;extension de fichier est DOC.
+   * Appelez la méthode `com.adobe.idp.Document` de l&#39;objet `copyToFile` pour copier le contenu de l&#39;objet `Document` dans le fichier (veillez à utiliser l&#39;objet `Document` renvoyé par la méthode `getProtectedDoc`).
 
 **Exemples de code**
 
@@ -2043,7 +2043,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * &quot;Début rapide (mode SOAP) : Application d’une stratégie à un document Word à l’aide de l’API Java&quot;
 
-### Application d’une stratégie à un document Word à l’aide de l’API du service Web {#apply-a-policy-to-a-word-document-using-the-web-service-api}
+### Appliquer une stratégie à un document Word à l’aide de l’API du service Web {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
 Appliquez une stratégie à un document Word à l’aide de l’API Document Security (service Web) :
 
@@ -2057,49 +2057,49 @@ Appliquez une stratégie à un document Word à l’aide de l’API Document Sec
 
 1. Créez un objet API Client de sécurité Document.
 
-   * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DocumentSecurityServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Récupérez un document Word.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker un document Word auquel une stratégie est appliquée.
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l&#39;emplacement du fichier du document Word et le mode d&#39;ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Déterminez la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` méthode de l’ `Read` objet. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. L&#39;objet `BLOB` permet de stocker un document Word auquel une stratégie est appliquée.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l&#39;emplacement du fichier du document Word et le mode d&#39;ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read`. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Appliquez une stratégie existante au document Word.
 
-   Appliquez une stratégie au document Word en appelant la `DocumentSecurityServiceClient` `protectDocument` méthode de l’objet et en transmettant les valeurs suivantes :
+   Appliquez une stratégie au document Word en appelant la méthode `DocumentSecurityServiceClient` de l&#39;objet `protectDocument` et en transmettant les valeurs suivantes :
 
    * Objet `BLOB` contenant le document Word auquel la stratégie est appliquée.
    * Valeur de chaîne qui spécifie le nom du document.
-   * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une `null` valeur qui entraîne l’utilisation du jeu de `MyPolicies` stratégies.
+   * Valeur de chaîne qui spécifie le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez spécifier une valeur `null` qui se traduit par l&#39;utilisation du jeu de stratégies `MyPolicies`.
    * Valeur de chaîne qui spécifie le nom de la stratégie.
    * Valeur de chaîne qui représente le nom du domaine du gestionnaire d’utilisateurs de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être nulle (si ce paramètre est nul, la valeur de paramètre suivante doit être `null`).
    * Valeur de chaîne qui représente le nom canonique de l’utilisateur du gestionnaire d’utilisateurs qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être nulle (si ce paramètre est nul, la valeur de paramètre précédente doit être `null`).
-   * Valeur `RMLocale` spécifiant la valeur du paramètre régional (par exemple, `RMLocale.en`).
+   * Valeur `RMLocale` qui spécifie la valeur du paramètre régional (par exemple, `RMLocale.en`).
    * Paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant de stratégie.
    * Paramètre de sortie de chaîne utilisé pour stocker la valeur d’identificateur protégée par une stratégie.
    * Paramètre de sortie de chaîne utilisé pour stocker le type MIME (par exemple, `application/doc`).
 
-   La `protectDocument` méthode renvoie un `BLOB` objet qui contient le document Word protégé par une stratégie.
+   La méthode `protectDocument` renvoie un objet `BLOB` contenant le document Word protégé par une stratégie.
 
 1. Enregistrez le document Word.
 
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document Word protégé par une stratégie.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’ `BLOB` objet renvoyé par la `protectDocument` méthode. Renseignez le tableau d’octets en obtenant la valeur du membre `BLOB` de données de l’ `MTOM` objet.
-   * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-   * Ecrivez le contenu du tableau d’octets dans un fichier Word en appelant la méthode `System.IO.BinaryWriter` `Write` de l’objet et en transmettant le tableau d’octets.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l&#39;emplacement du fichier du document Word protégé par une stratégie.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `protectDocument`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
+   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l&#39;objet `System.IO.FileStream`.
+   * Ecrivez le contenu du tableau d’octets dans un fichier Word en appelant la méthode `System.IO.BinaryWriter` de l’objet `Write` et en transmettant le tableau d’octets.
 
 **Exemples de code**
 
@@ -2113,7 +2113,7 @@ Vous pouvez supprimer une stratégie d’un document Word protégé par une stra
 
 >[!NOTE]
 >
->For more information about the Document Security service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d&#39;informations sur le service Document Security, consultez le [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-12}
 
@@ -2139,7 +2139,7 @@ Pour supprimer une stratégie, vous devez récupérer un document Word protégé
 
 **Supprimer la stratégie du document Word**
 
-Vous pouvez supprimer une stratégie d’un document Word protégé par une stratégie, à condition qu’un administrateur soit spécifié dans les paramètres de connexion. Dans le cas contraire, la stratégie utilisée pour sécuriser un document doit contenir l’ `SWITCH_POLICY` autorisation afin de supprimer une stratégie d’un document Word. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
+Vous pouvez supprimer une stratégie d’un document Word protégé par une stratégie, à condition qu’un administrateur soit spécifié dans les paramètres de connexion. Dans le cas contraire, la stratégie utilisée pour sécuriser un document doit contenir l&#39;autorisation `SWITCH_POLICY` pour supprimer une stratégie d&#39;un document Word. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
 
 **Enregistrer le document Word non sécurisé**
 
@@ -2153,7 +2153,7 @@ Une fois que le service Document Security a supprimé une stratégie d&#39;un do
 
 [Application de stratégies à des Documents Word](protecting-documents-policies.md#applying-policies-to-word-documents)
 
-### Suppression d’une stratégie d’un document Word à l’aide de l’API Java {#remove-a-policy-from-a-word-document-using-the-java-api}
+### Supprimez une stratégie d&#39;un document Word à l&#39;aide de l&#39;API Java {#remove-a-policy-from-a-word-document-using-the-java-api}
 
 Supprimez une stratégie d’un document Word protégé par une stratégie à l’aide de l’API Document Security (Java) :
 
@@ -2168,18 +2168,18 @@ Supprimez une stratégie d’un document Word protégé par une stratégie à l�
 
 1. Récupération d’un document Word protégé par une stratégie
 
-   * Créez un `java.io.FileInputStream` objet qui représente le document Word protégé par une stratégie en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l&#39;emplacement du document Word.
+   * Créez un objet `java.io.FileInputStream` qui représente le document Word protégé par une stratégie en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l&#39;emplacement du document Word.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Supprimer la stratégie du document Word
 
-   * Créez un `DocumentManager` objet en appelant la `RightsManagementClient` méthode de l’ `getDocumentManager` objet.
-   * Supprimez une stratégie du document Word en appelant la `DocumentManager` méthode de l’objet et en transmettant l’ `removeSecurity` `com.adobe.idp.Document` objet contenant le document Word protégé par une stratégie. Cette méthode renvoie un `com.adobe.idp.Document` objet contenant un document Word non sécurisé.
+   * Créez un objet `DocumentManager` en appelant la méthode `RightsManagementClient` de l&#39;objet `getDocumentManager`.
+   * Supprimez une stratégie du document Word en appelant la méthode `DocumentManager` de l&#39;objet `removeSecurity` et en transmettant l&#39;objet `com.adobe.idp.Document` contenant le document Word protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document` contenant un document Word non sécurisé.
 
 1. Enregistrer le document Word non sécurisé
 
-   * Create a `java.io.File` object and ensure that the file extension is DOC.
-   * Appelez la `Document` méthode de l’ `copyToFile` objet pour copier le contenu de l’ `Document` objet dans le fichier (veillez à utiliser l’ `Document` objet renvoyé par la `removeSecurity` méthode).
+   * Créez un objet `java.io.File` et assurez-vous que l&#39;extension de fichier est DOC.
+   * Appelez la méthode `Document` de l&#39;objet `copyToFile` pour copier le contenu de l&#39;objet `Document` dans le fichier (veillez à utiliser l&#39;objet `Document` renvoyé par la méthode `removeSecurity`).
 
 **Exemples de code**
 
@@ -2187,7 +2187,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * &quot;Début rapide (mode SOAP) : Suppression d’une stratégie d’un document Word à l’aide de l’API Java&quot;
 
-### Suppression d’une stratégie d’un document Word à l’aide de l’API du service Web {#remove-a-policy-from-a-word-document-using-the-web-service-api}
+### Supprimez une stratégie d’un document Word à l’aide de l’API de service Web {#remove-a-policy-from-a-word-document-using-the-web-service-api}.
 
 Supprimez une stratégie d’un document Word protégé par une stratégie à l’aide de l’API Document Security (service Web) :
 
@@ -2201,35 +2201,35 @@ Supprimez une stratégie d’un document Word protégé par une stratégie à l�
 
 1. Création d’un objet API Client de sécurité Document
 
-   * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `RightsManagementServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Récupération d’un document Word protégé par une stratégie
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker le document Word protégé par une stratégie à partir duquel la stratégie est supprimée.
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l&#39;emplacement du fichier du document Word et le mode d&#39;ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` `Read` méthode de l’objet et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. L&#39;objet `BLOB` est utilisé pour stocker le document Word protégé par une stratégie à partir duquel la stratégie est supprimée.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l&#39;emplacement du fichier du document Word et le mode d&#39;ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Supprimer la stratégie du document Word
 
-   Supprimez la stratégie du document Word en appelant la `RightsManagementServiceClient` méthode de l’objet et en transmettant l’ `removePolicySecurity` `BLOB` objet contenant le document Word protégé par une stratégie. Cette méthode renvoie un `BLOB` objet contenant un document Word non sécurisé.
+   Supprimez la stratégie du document Word en appelant la méthode `RightsManagementServiceClient` de l&#39;objet `removePolicySecurity` et en transmettant l&#39;objet `BLOB` contenant le document Word protégé par une stratégie. Cette méthode renvoie un objet `BLOB` contenant un document Word non sécurisé.
 
 1. Enregistrer le document Word non sécurisé
 
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l&#39;emplacement du fichier du document Word non sécurisé.
-   * Créez un tableau d’octets qui stocke le contenu des données de l’ `BLOB` objet renvoyé par la `removePolicySecurity` méthode. Renseignez le tableau d’octets en obtenant la valeur du `BLOB` champ de l’ `MTOM` objet.
-   * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l&#39;emplacement du fichier du document Word non sécurisé.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `removePolicySecurity`. Renseignez le tableau d’octets en obtenant la valeur du champ `BLOB` de l’objet `MTOM`.
+   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l&#39;objet `System.IO.FileStream`.
 
 **Exemples de code**
 
