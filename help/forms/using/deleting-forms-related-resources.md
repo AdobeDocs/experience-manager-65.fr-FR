@@ -17,16 +17,16 @@ ht-degree: 94%
 ---
 
 
-# Suppression des formulaires et des ressources associées {#deleting-forms-and-related-resources}
+# Suppression des formulaires et des ressources associées  {#deleting-forms-and-related-resources}
 
 Vous pouvez supprimer des formulaires et des ressources pour supprimer ces dernières du référentiel. L’opération de suppression fonctionne pour tous les types de ressources et les dossiers.
 
 Si vous supprimez une ressource de l’instance Auteur, elle est également supprimée de l’instance Publier. Le serveur AEM Forms se compose des instances Auteur et Publier. L’instance Auteur est destinée à la création et à la gestion des ressources de formulaires. L’instance Publier contient les ressources de formulaire publiées et les ressources associées disponibles pour les utilisateurs finaux.
 
-## Suppression d’un formulaire {#how-to-delete-a-form}
+## Suppression d’un formulaire  {#how-to-delete-a-form}
 
 1. Connectez-vous à l’interface utilisateur AEM Forms en accédant à `https://[hostname]:'port'/aem/forms.html.`
-1. Recherchez et sélectionnez le formulaire que vous souhaitez supprimer. Cliquez sur Supprimer ![aem6forms_delete2](assets/aem6forms_delete2.png) de la barre d’outils et confirmez l’opération de suppression.
+1. Recherchez et sélectionnez le formulaire que vous souhaitez supprimer. Cliquez sur Supprimer ![aem6forms_delete2](assets/aem6forms_delete2.png) dans la barre d’outils et confirmez l’opération de suppression.
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ Si vous supprimez une ressource de l’instance Auteur, elle est également supp
    >
    >Si la ressource sélectionnée correspond à un dossier qui contient une ressource de ce type dans sa hiérarchie, supprimez les autres ressources séparément ou supprimez le dossier entier.
 
-## Impact de la suppression d’un formulaire XFA référencé {#impact-of-deleting-a-referenced-xfa-form}
+## Impact de la suppression d’un formulaire XFA référencé  {#impact-of-deleting-a-referenced-xfa-form}
 
 Dans AEM Forms, un modèle de formulaire XFA peut être référencé par un formulaire adaptatif ou un autre modèle de formulaire XFA. Un modèle peut, en outre, faire référence à une ressource ou à un autre modèle XFA.
 
