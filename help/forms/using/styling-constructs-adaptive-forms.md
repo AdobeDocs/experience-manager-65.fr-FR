@@ -23,7 +23,7 @@ ht-degree: 89%
 
 Connaissances en matière de CSS et structure LESS.
 
-## Eléments personnalisables {#what-can-be-customized}
+## Eléments personnalisables  {#what-can-be-customized}
 
 Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez exploiter ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
 
@@ -36,7 +36,7 @@ Vous pouvez personnaliser les styles des formulaires adaptatifs des manières su
 * Modification du thème
 * Modification du style d’un composant
 
-## Modification du thème {#changing-theme}
+## Modification du thème  {#changing-theme}
 
 Vous pouvez modifier le thème d’un formulaire adaptatif pour vous assurer que son aspect est cohérent avec les pages Web sur lesquelles le formulaire adaptatif est incorporé.
 
@@ -54,7 +54,7 @@ Selon l’amorçage, l’ensemble suivant de propriétés CSS définit le thème
 
 Actuellement, les variables LESS sont définies uniquement pour ces propriétés des différents éléments dans un formulaire adaptatif.
 
-## Modification du style de composant {#changing-component-style}
+## Modification du style de composant  {#changing-component-style}
 
 Vous pouvez modifier l’apparence, la disposition, le positionnement et la visibilité des éléments. Pour obtenir cette tâche, créez ou mettez à jour vos fichiers .css personnalisés afin d’inclure les éléments de style répertoriés dans cet article.
 
@@ -104,7 +104,7 @@ Un conteneur est le composant de niveau supérieur. D’autres panneaux et champ
 
 ## Définition de style du champ {#field-styling}
 
-Les formulaires adaptatifs incluent divers types de champs. Chaque champ a un nom de classe unique, qui est le nom du champ. The field also has a common class name `guideFieldNode`.
+Les formulaires adaptatifs incluent divers types de champs. Chaque champ a un nom de classe unique, qui est le nom du champ. Le champ a également un nom de classe commun `guideFieldNode`.
 
 Les champs incluent des libellés, des widgets, des descriptions d’aide (descriptions longues et courtes), ainsi que des icônes d’aide de champ (point d’interrogation).
 
@@ -140,7 +140,7 @@ Les champs incluent des libellés, des widgets, des descriptions d’aide (descr
 
 ## Définition de style de libellé {#label-styling}
 
-The HTML element **label** used for the field includes the classes **left** or **top** depending on whether the label is at the top or left.
+L’élément HTML **label** utilisé pour le champ comprend les classes **left** ou **top** selon que l’étiquette se trouve en haut ou à gauche.
 
 <table>
  <tbody>
@@ -180,7 +180,7 @@ The HTML element **label** used for the field includes the classes **left** or *
  </tbody>
 </table>
 
-The CSS rules for the label are applied using the **guideFieldLabel** label. Si vous êtes un auteur, remplacez cette règle pour que vos modifications personnalisées soient visibles.
+Les règles CSS de l’étiquette sont appliquées à l’aide de l’étiquette **guideFieldLabel**. Si vous êtes un auteur, remplacez cette règle pour que vos modifications personnalisées soient visibles.
 
 ## Définition de style des widgets {#widgets-styling}
 
@@ -284,13 +284,13 @@ Selon leur type, les widgets contiennent également des classes. En règle gén�
  </tbody>
 </table>
 
-### Restrictions de la définition de style de widget {#limitations-in-widget-styling}
+### Restrictions de la définition de style de widget  {#limitations-in-widget-styling}
 
 La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être assouplie si l’apparence d’un champ change radicalement car elle se trouve dans l’un des états décrits précédemment.
 
 ## Description d’aide {#help-description}
 
-Un auteur peut spécifier le contenu d’aide dans les champs à l’aide de composants de descriptions longue et courte. Both components have a common class `.guideHelpDescription` and another class `.long`/ `.short`, depending on the type of description. Le contenu d’aide est intégré dans un élément de paragraphe pour remplacer la définition de style de la description. La description d’aide (longue et courte) est modifiée à l’aide de variables commençant par widgetshelp, comme indiqué dans le tableau suivant :
+Un auteur peut spécifier le contenu d’aide dans les champs à l’aide de composants de descriptions longue et courte. Les deux composants ont une classe commune `.guideHelpDescription` et une autre classe `.long`/ `.short`, selon le type de description. Le contenu d’aide est intégré dans un élément de paragraphe pour remplacer la définition de style de la description. La description d’aide (longue et courte) est modifiée à l’aide de variables commençant par widgetshelp, comme indiqué dans le tableau suivant :
 
 <table>
  <tbody>
@@ -329,7 +329,7 @@ Un auteur peut spécifier le contenu d’aide dans les champs à l’aide de com
  </tbody>
 </table>
 
-## Termes et conditions {#terms-and-conditions}
+## Termes et conditions  {#terms-and-conditions}
 
 Le widget des termes et conditions (TnC`` ``) vous permet de spécifier les termes et conditions. Vous pouvez personnaliser le widget à l’aide des variables décrites dans le tableau suivant.
 
@@ -354,7 +354,7 @@ Le widget des termes et conditions (TnC`` ``) vous permet de spécifier les term
 
 Les boutons sont également des widgets. Toutefois, leur définition de style est légèrement différente des widgets. Dans les formulaires adaptatifs, n’importe lequel des éléments suivants constitue un bouton :
 
-* [inputtype = text]
+* input[type = text]
 * button
 * élément avec la classe .button
 
@@ -570,7 +570,7 @@ Le widget de pièce jointe des formulaires adaptatifs vous permet de télécharg
  </tbody>
 </table>
 
-## Styles de navigateur {#navigator-styles}
+## Styles de navigateur  {#navigator-styles}
 
 Il existe quatre types d’onglet de navigateur. Il s’agit des onglets sur la gauche, en haut, de l’assistant et en accordéon. Chaque navigateur possède une classe différente.
 
@@ -982,7 +982,7 @@ Ces variables influent sur la barre d’en-tête visible sur un périphérique m
  </tbody>
 </table>
 
-## Indicateur de défilement {#scroll-indicator}
+## Indicateur de défilement  {#scroll-indicator}
 
 Ces variables influent sur l’indicateur de défilement, qui est une flèche orange qui s’affiche sur un périphérique mobile ou équipé d’un petit écran. Un indicateur de défilement indique la présence de contenu au-delà de la partie visible à l’écran. Vous pouvez faire défiler l’écran pour l’afficher. Lorsque vous atteignez la fin du contenu, la flèche disparaît.
 
@@ -1020,7 +1020,7 @@ Ces variables influent sur l’indicateur de défilement, qui est une flèche or
  </tbody>
 </table>
 
-## Variables spécifiques à la disposition de la barre d’outils fixe pour mobile {#mobile-fixed-toolbar-layout-specific-variables}
+## Variables spécifiques à la disposition de la barre d’outils fixe pour mobile  {#mobile-fixed-toolbar-layout-specific-variables}
 
 Ces variables dans le tableau suivant influent sur la disposition de la barre d’outils fixe pour mobile.
 
@@ -1074,9 +1074,9 @@ Ces variables dans le tableau suivant influent sur la disposition de la barre d�
  </tbody>
 </table>
 
-## Variable spécifique au thème {#theme-specific-variable}
+## Variable spécifique au thème  {#theme-specific-variable}
 
-The **Simple enrollment** theme at /etc/clientlibs/fd/af/guidetheme/simpleEnrollment and the category `guide.theme.simpleEnrollment` also introduce a few variables. Si vous souhaitez créer un thème qui améliore l&#39;inscription simple, vous pouvez utiliser les &quot;variables supplémentaires&quot; suivantes :
+Le thème **Inscription simple** sur /etc/clientlibs/fd/af/guidetheme/simpleEnrollment et la catégorie `guide.theme.simpleEnrollment` introduisent également quelques variables. Si vous souhaitez créer un thème qui améliore l&#39;inscription simple, vous pouvez utiliser les &quot;variables supplémentaires&quot; suivantes :
 
 <table>
  <tbody>
