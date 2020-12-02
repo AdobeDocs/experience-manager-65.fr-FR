@@ -56,11 +56,11 @@ Une fois que vous avez analysé la disposition requise pour créer votre communi
 
 >[!NOTE]
 >
->Ajoutez le contenu au canal d’impression de la communication interactive au lieu d’ajouter le contenu au composant de sous-formulaire du modèle XDP. Ajoutez le contenu dans les zones de cible du canal d’impression à l’aide de fragments de [document, de graphiques, d’images](create-interactive-communication.md#step2)et de fragments de mise en page.
+>Ajoutez le contenu au canal d’impression de la communication interactive au lieu d’ajouter le contenu au composant de sous-formulaire du modèle XDP. Ajoutez le contenu dans les zones de cible du canal d’impression à l’aide de [fragments de document, de graphiques, d’images](create-interactive-communication.md#step2) et de fragments de mise en page.
 
 Pour utiliser un sous-formulaire dans un modèle XDP, procédez comme suit :
 
-1. Open the Forms Designer, select **File** > **New** > **Use a blank form**, tap **Next**, and then tap **Finish** to open the form for template creation.
+1. Ouvrez Forms Designer, sélectionnez **Fichier** > **Nouveau** > **Utilisez un formulaire vierge**, appuyez sur **Suivant**, puis appuyez sur **Terminer** pour ouvrir le formulaire en vue de la création du modèle.
 
    Assurez-vous que les options **Bibliothèque d’objets** et **Objet** sont sélectionnées dans le menu **Fenêtre**.
 
@@ -69,22 +69,22 @@ Pour utiliser un sous-formulaire dans un modèle XDP, procédez comme suit :
    ![Concepteur de composants](assets/subform_component_designer_new.png)
 
 1. Sélectionnez le sous-formulaire pour afficher les options correspondantes dans la fenêtre **Objet** dans le volet de droite.
-1. Select the **Subform** tab and select **Flowed** from the **Content** drop-down list. Faites glisser l’extrémité gauche du sous-formulaire pour ajuster la longueur.
+1. Sélectionnez l’onglet **Sous-formulaire** et **Distribué** dans la liste déroulante **Contenu**. Faites glisser l’extrémité gauche du sous-formulaire pour ajuster la longueur.
 
    ![Sous-formulaire avec enchaînement](assets/object_subform_flowed_new.png)
 
-1. In the **Binding** tab:
+1. Dans l&#39;onglet **Liaison** :
 
-   1. Indiquez le nom du sous-formulaire dans le champ **Nom** .
+   1. Indiquez un nom pour le sous-formulaire dans le champ **Nom**.
    1. Sélectionnez **Aucune liaison de données** dans la liste déroulante **Liaison de données**.
 
 1. De même, sélectionnez le sous-formulaire racine dans le volet de gauche.
 
    ![Sous-formulaire racine](assets/root_subform_designer_new.png)
 
-1. Select the **Subform** tab and select **Flowed** from the **Content** drop-down list. Dans l’onglet **Liaisons** :
+1. Sélectionnez l’onglet **Sous-formulaire** et **Distribué** dans la liste déroulante **Contenu**. Dans l’onglet **Liaisons** :
 
-   1. Indiquez le nom du sous-formulaire dans le champ **Nom** .
+   1. Indiquez un nom pour le sous-formulaire dans le champ **Nom**.
    1. Sélectionnez **Aucune liaison de données** dans la liste déroulante **Liaison de données**.
 
    Répétez les étapes 2 à 5 pour ajouter d’autres sous-formulaires au modèle XDP. Ajoutez [du texte, des fragments de document, des images et des graphiques](create-interactive-communication.md#step2) dans les zones de cible uniquement lors de la création de la communication interactive.
@@ -96,21 +96,21 @@ Pour utiliser un sous-formulaire dans un modèle XDP, procédez comme suit :
 
    1. Appuyez sur **Save** (Enregistrer).
 
-### Utilisation du composant Champ d’image dans un modèle XDP {#use-image-field-component-in-an-xdp-template}
+### Utiliser le composant Champ d’image dans un modèle XDP {#use-image-field-component-in-an-xdp-template}
 
 Utilisez le composant Champ d’image ou Sous-formulaire du modèle XDP et ajoutez une image lors de la création de la communication interactive.
 
 >[!NOTE]
 >
->Ajoutez l’image sur le canal d’impression de la communication interactive au lieu d’ajouter l’image au composant Champ d’image ou Sous-formulaire du modèle XDP. Pour plus d’informations, voir [Ajouter du contenu à la communication](../../forms/using/create-interactive-communication.md#step2)interactive.
+>Ajoutez l’image sur le canal d’impression de la communication interactive au lieu d’ajouter l’image au composant Champ d’image ou Sous-formulaire du modèle XDP. Pour plus d’informations, voir [Ajouter du contenu à la communication interactive](../../forms/using/create-interactive-communication.md#step2).
 
 Pour utiliser le composant Champ d’image dans un modèle XDP, procédez comme suit :
 
-1. Drag-and-drop the **Image Field** component from the **Object Library** to the form.
+1. Faites glisser le composant **Champ d’image** de la **Bibliothèque d’objets** vers le formulaire.
 1. Sélectionnez le sous-formulaire pour afficher les options correspondantes dans la fenêtre **Objet** dans le volet de droite.
-1. In the **Binding** tab:
+1. Dans l&#39;onglet **Liaison** :
 
-   1. Indiquez un nom pour le champ d’image dans le champ **Nom** .
+   1. Indiquez un nom pour le champ d’image dans le champ **Nom**.
    1. Sélectionnez **Aucune liaison de données** dans la liste déroulante **Liaison de données**.
 
 ### Créer un modèle XDP pour des fragments de mise en page {#xdplayoutfragments}
@@ -119,26 +119,26 @@ Utilisez le composant Tableau de Forms Designer pour créer des fragments de mis
 
 >[!NOTE]
 >
->Entrez du texte dans les cellules du tableau ou [créez une liaison avec les objets](create-interactive-communication.md#step2) du modèle de données de formulaire uniquement lors de la création de la communication interactive.
+>Entrez du texte dans les cellules du tableau ou [créez une liaison avec les objets de modèle de données de formulaire](create-interactive-communication.md#step2) uniquement lors de la création de la communication interactive.
 
 Suivez les étapes ci-après pour utiliser le composant Tableau dans le modèle XDP à l’aide de Forms Designer :
 
-1. Drag-and-drop the **Table** component from the **Object Library** to the form.
-1. In the **Insert Table** dialog:
+1. Faites glisser le composant **Tableau** de la **Bibliothèque d’objets** vers le formulaire.
+1. Dans la boîte de dialogue **Insérer un tableau** :
 
    1. Spécifiez le nombre de lignes et de colonnes du tableau.
-   1. Cochez la case **Inclure la rangée d’en-tête dans le tableau** pour inclure une rangée dans l’en-tête du tableau.
+   1. Cochez la case **Inclure la rangée d’en-tête dans le tableau** pour inclure une rangée pour l’en-tête du tableau.
    1. Appuyez sur **OK**.
 
 1. Appuyez sur **+** dans le volet de gauche en regard du nom du tableau, cliquez avec le bouton droit sur les noms de cellule inclus dans l’en-tête et les autres lignes, puis sélectionnez **Renommer l’objet** pour renommer les cellules du tableau.
-1. Cliquez sur les champs de texte d’en-tête de tableau de la Vue **de** conception et renommez-les.
-1. Faites glisser le composant Champ **de** texte de la bibliothèque **d’** objets vers chaque cellule de tableau de la Vue **** de conception. Effectuez cette étape pour pouvoir lier des cellules de tableau aux objets de modèle de données de formulaire lors de la création de la communication interactive.
+1. Cliquez sur les champs de texte d’en-tête du tableau dans la **Vue de conception** et renommez-les.
+1. Faites glisser le composant **Champ de texte** de la **Bibliothèque d’objets** vers chaque cellule de tableau de la **Vue de conception**. Effectuez cette étape pour pouvoir lier des cellules de tableau aux objets de modèle de données de formulaire lors de la création de la communication interactive.
 
    ![Champs de texte dans un tableau](assets/text_fields_table_new.png)
 
-1. Select the name of the row from the left pane and select **Object** > **Binding** > **Repeat Row for Each Data Item**. Effectuez cette étape pour vous assurer que si une liaison est créée entre les cellules de tableau de cette ligne avec des objets de modèle de données de formulaire de type collection, la ligne de tableau est automatiquement répétée pour chaque élément de données disponible dans la base de données.
+1. Sélectionnez le nom de la rangée dans le volet de gauche, puis **Objet** > **Liaison** > **Rangée pour chaque élément de données**. Effectuez cette étape pour vous assurer que si une liaison est créée entre les cellules de tableau de cette ligne avec des objets de modèle de données de formulaire de type collection, la ligne de tableau est automatiquement répétée pour chaque élément de données disponible dans la base de données.
 
-   Entrez du texte dans les cellules du tableau ou [créez une liaison avec les objets](create-interactive-communication.md#step2) du modèle de données de formulaire uniquement lors de la création de la communication interactive.
+   Entrez du texte dans les cellules du tableau ou [créez une liaison avec les objets de modèle de données de formulaire](create-interactive-communication.md#step2) uniquement lors de la création de la communication interactive.
 
 1. Sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier sur le système de fichiers local :
 
@@ -147,7 +147,7 @@ Suivez les étapes ci-après pour utiliser le composant Tableau dans le modèle 
 
    1. Appuyez sur **Enregistrer**.
 
-### Télécharger le modèle XDP sur le serveur AEM Forms {#uploadxdptemplate}
+### Télécharger le modèle XDP sur le serveur AEM Forms  {#uploadxdptemplate}
 
 Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous devez le télécharger sur le serveur AEM Forms pour qu’il soit disponible lors de la création de la communication interactive.
 
@@ -162,7 +162,7 @@ Vous pouvez utiliser un schéma dans une mise en page ou dans un fragment de mis
 1. La mise en page et tous les fragments de mise en page utilisés dans une lettre/communication interactive utilisent le même schéma que la lettre/communication interactive.
 1. Tous les champs obligatoires à remplir avec des données sont liés au schéma.
 
-## Création de champs associables {#creating-relatable-fields}
+## Création de champs associables  {#creating-relatable-fields}
 
 Par défaut, tous les champs sont considérés comme pouvant être associés à diverses sources de données. Si votre mise en page contient des champs qui ne sont pas associables à une source de données, nommez ces champs à l’aide d’un suffixe « _int » (interne), par exemple pageCount_int.
 
@@ -186,7 +186,7 @@ Dès lors qu’un champ associable répond aux critères décrits ci-dessus, il 
 
 La configuration de la mise en page des champs est plus flexible que celle des sous-formulaires de zone cible. Mais les champs sont liés à un seul type de valeur. Vous pouvez définir un champ pour qu’il soit grand ou définir le champ avec une hauteur ou une largeur fixes, etc. Le résultat du module ou de la règle est envoyé dans le champ. 
 
-## Quand utiliser des sous-formulaires et des champs de texte {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## Quand utiliser des sous-formulaires et des champs de texte  {#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 Utilisez un sous-formulaire si vous voulez capturer plusieurs contenus de module dans une mise en forme de haut en bas à flux vertical (plusieurs paragraphes ou images). Votre mise en page doit gérer le fait que le sous-formulaire se développe en hauteur afin d’accueillir son contenu. Si vous n’êtes pas sûr que la longueur du contenu associé au sous-formulaire/à la cible ne dépassera jamais l’espace réservé dans la mise en page pour le sous-formulaire, créez ce dernier en tant qu’enfant dans un conteneur de sous-formulaires à mise en page souple. Cette procédure garantit que les objets de mise en page situés en dessous du sous-formulaire se déplaceront vers le bas au fur et à mesure que le sous-formulaire s’agrandira.
 
@@ -225,11 +225,11 @@ Utilisez un champ si vous souhaitez capturer dans votre schéma de mise en page 
  </tbody>
 </table>
 
-## Configuration d’éléments répétitifs {#setting-up-repetitive-elements}
+## Configuration d’éléments répétitifs  {#setting-up-repetitive-elements}
 
 Lorsque des éléments comme le logo et l’adresse de votre organisation figurent sur toutes les pages d’une lettre/communication interactive, créez des champs de formulaire pour ces éléments et placez-les sur la page de gabarit. Utilisez la liaison Nom (Nom du champ) pour ces champs.
 
-## Specify the server render format {#specify-the-server-nbsp-render-format}
+## Spécifiez le format de rendu du serveur {#specify-the-server-nbsp-render-format}
 
 Utilisez le format de rendu du serveur de la mise en page pour le formulaire XML dynamique, faute de quoi aucune lettre/communication interactive basée sur cette mise en page ne s’affichera correctement. Par défaut, le format de rendu du serveur dans LiveCycle Designer est défini comme formulaire XML dynamique. Pour vous assurer que vous utilisez le format correct :
 
