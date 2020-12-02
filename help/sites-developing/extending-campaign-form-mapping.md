@@ -31,7 +31,7 @@ Les éléments suivants doivent être installés :
 * Adobe Experience Manager 
 * Adobe Campaign Classic
 
-See [Integrating AEM with Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) for more information.
+Voir [Intégration de l&#39;AEM à Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) pour plus d&#39;informations.
 
 ## Création de mappages de formulaires personnalisés {#creating-custom-form-mappings-2}
 
@@ -44,7 +44,7 @@ Pour créer des mappages de formulaire personnalisés, vous devez suivre ces ét
 1. Générez, dans AEM, le formulaire qui utilisera la distribution créée.
 1. Envoyez le formulaire pour le tester.
 
-### Création du tableau personnalisé dans Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
+### Création du tableau personnalisé dans Adobe Campaign  {#creating-the-custom-table-in-adobe-campaign}
 
 Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau de événement :
 
@@ -59,13 +59,13 @@ Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exe
 
 Après avoir créé le tableau d’événements, exécutez l’**Assistant Mise à jour de la structure de base de données** pour créer le tableau.
 
-### Extension du tableau Seed {#extending-the-seed-table}
+### Extension du tableau Seed  {#extending-the-seed-table}
 
 Dans Adobe Campaign, appuyez/cliquez sur **Ajouter** pour créer une extension du tableau **Seed addresses (nms)**.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Now, use the fields from the **event** table to extend the **seed** table:
+Désormais, utilisez les champs de la table **événement** pour étendre la table **seed** :
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -78,7 +78,7 @@ Now, use the fields from the **event** table to extend the **seed** table:
 
 Ensuite, exécutez l’**Assistant Mise à jour de la base de données** pour appliquer les modifications.
 
-### Création d’un mappage cible personnalisé {#creating-custom-target-mapping}
+### Création d’un mappage cible personnalisé  {#creating-custom-target-mapping}
 
 Dans **Administration/Gestion de campagnes**, accédez à **Mappings de ciblage** et ajoutez un nouveau **Mapping de ciblage**.
 
@@ -122,7 +122,7 @@ Vous pouvez à présent envoyer le formulaire et vérifier si les valeurs sont e
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-## Résolution des incidents {#troubleshooting}
+## Dépannage {#troubleshooting}
 
 **&quot;Invalid type for value &#39;02/02/2015&#39; from element &#39;@eventdate&#39; (document of type &#39;Event ([adb:event])&#39;)&quot;**
 
