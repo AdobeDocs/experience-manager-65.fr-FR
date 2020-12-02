@@ -17,7 +17,7 @@ ht-degree: 93%
 ---
 
 
-# Connexion d’AEM Forms à Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
+# Connexion d’AEM Forms à Adobe LiveCycle  {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager (AEM) LiveCycle Connector permet d’appeler aisément Adobe LiveCycle ES4 Document Services à partir de processus et d’applications Web. LiveCycle fournit un SDK client enrichi, qui permet aux applications clientes de démarrer les services LiveCycle à l’aide d’API Java. AEM LiveCycle Connector simplifie l’utilisation de ces API dans l’environnement OSGi.
 
@@ -44,7 +44,7 @@ Bien que les propriétés soient explicites, les plus importantes sont les suiva
 * **Mot de passe** : indique le mot de passe.
 * **Nom du service** : indique les services démarrés à l’aide des informations d’identification fournies dans les champs Nom d’utilisateur et Mot de passe. Par défaut, aucune information d’identification n’est transmise lors du démarrage des services LiveCycle.
 
-## Démarrage des Services de document {#starting-document-services}
+## Démarrage des Services de document  {#starting-document-services}
 
 Les applications clientes peuvent démarrer des services LiveCycle par programmation en utilisant une API Java, des services Web, Remoting et REST. Pour les clients Java, l’application peut utiliser le kit SDK LiveCycle. Ce kit SDK fournit une API Java permettant de démarrer ces services à distance. Par exemple, pour convertir un document Microsoft Word au format PDF, le client lance GeneratePDFService. Le flux d’appel se compose des étapes suivantes :
 
@@ -54,11 +54,11 @@ Les applications clientes peuvent démarrer des services LiveCycle par programma
 
 AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client comme des services OSGi accessibles par des méthodes OSGi standard. Le connecteur de LiveCycle offre les fonctionnalités suivantes :
 
-* Client instances as OSGi Service: The clients packaged as OSGI bundles are listed in the [Document Services list](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) section. Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
+* Instances de client en tant que service OSGi : Les clients conditionnés en bundles OSGI sont répertoriés dans la section [Document Services liste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
 * Propagation des informations d’identification : les détails de connexion requis pour la connexion au serveur LiveCycle sont gérés de manière centralisée.
 * Service ServiceClientFactory : pour démarrer les processus, l’application cliente peut accéder à l’instance ServiceClientFactory.
 
-### Démarrage via les références des services depuis le registre des services OSGi {#starting-via-service-references-from-osgi-service-registry}
+### Démarrage via les références des services depuis le registre des services OSGi  {#starting-via-service-references-from-osgi-service-registry}
 
 Pour démarrer un service exposé à partir d’AEM, procédez comme suit :
 
@@ -160,7 +160,7 @@ La plupart des Services de document de LiveCycle nécessitent une authentificati
 
 La configuration du SDK client LiveCycle contient un paramètre sur les noms de service. Il s’agit d’une liste de services pour lesquels la logique d’appel utilise des informations d’identification prêtes à l’emploi. Si vous ajoutez, par exemple, des services DirectoryManager (qui font partie de l’API de gestion d’utilisateur) à cette liste, tout code client peut utiliser directement le service et la couche d’appel transmet automatiquement les informations d’identification configurées dans le cadre de la demande envoyée au serveur LiveCycle.
 
-### RunAsManager {#runasmanager}
+### RunAsManager  {#runasmanager}
 
 Dans le cadre de l’intégration, un nouveau service RunAsManager est fourni. Il permet de contrôler par programmation les informations d’identification à utiliser quand vous émettez un appel au serveur LiveCycle.
 
@@ -192,7 +192,7 @@ List<Component> components = runAsManager.doPrivileged(new PrivilegedAction<List
 },credential);
 ```
 
-### Propriété InvocationRequest {#invocationrequest-property}
+### Propriété InvocationRequest  {#invocationrequest-property}
 
 Si vous appelez un processus ou utilisez directement la classe ServiceClientFactory et créez une InvocationRequest, vous pouvez spécifier une propriété pour indiquer que cette couche d’appel doit utiliser des informations d’identification configurées.
 
