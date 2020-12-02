@@ -38,66 +38,66 @@ Déplacez le curseur pour obtenir les valeurs d’un moment particulier.
 
 Le volet gauche de l’onglet Système affiche des renseignements relatifs au serveur et au nœud :
 
-**Machine virtuelle :** Version de la machine virtuelle Java (JVM) sur le serveur.
+**Machine virtuelle : version de la machine virtuelle** Java (JVM) sur le serveur.
 
-**Fournisseur d&#39;ordinateurs virtuels :** Fabricant de la JVM.
+**Fournisseur d’ordinateurs virtuels :** fabricant de la JVM.
 
-**Version de l&#39;ordinateur virtuel :** Numéro de version de la JVM
+**Version de la machine virtuelle:numéro de version de** la JVM
 
-**Nom de la machine :** Nom d’hôte du serveur sur lequel AEM forms est installé.
+**Nom de l’ordinateur : nom** d’hôte du serveur sur lequel AEM forms est installé.
 
-**Durée de fonctionnement :** Heure, en heures et minutes, pendant laquelle le serveur est en cours d&#39;exécution.
+**Heure d’activation :** heure, en heures et minutes, pendant laquelle le serveur est en cours d’exécution.
 
-**Compilateur juste à temps :** Nom du compilateur utilisé.
+**Compilateur juste à temps :** nom du compilateur utilisé.
 
-**Temps de compilation :** Durée de la compilation.
+**Temps de compilation :** durée de la compilation.
 
-**Nombre de threads dynamiques :** Nombre total de threads actuellement présents dans le système de formulaires AEM.
+**Nombre de threads dynamiques :** nombre total de threads actuellement présents dans le système de formulaires AEM.
 
-**Pic du nombre de threads :** Plus grand nombre de threads dynamiques jamais enregistrés sur le système.
+**Nombre de threads Pic :** plus grand nombre de threads dynamiques jamais enregistrés sur le système.
 
 **Nombre de classes chargées :** Nombre de classes chargées dans la JVM.
 
 **Nombre de classes déchargées :** Nombre de classes déchargées de la JVM.
 
-**Tas minimum :** Quantité minimale de tas utilisée.
+**Tas minimal :** quantité minimale de tas utilisée.
 
-**Tas maximum :** Quantité maximale de tas utilisée.
+**Tas maximum :** quantité maximale de tas utilisée.
 
-**Nom du système d’exploitation :** Nom du système d’exploitation s’exécutant sur le serveur AEM forms.
+**Nom du système d’exploitation : nom** du système d’exploitation s’exécutant sur le serveur d’AEM forms.
 
-**Version du système d’exploitation :** Numéro de version du système d’exploitation s’exécutant sur le serveur AEM forms.
+**Version du système d’exploitation : numéro de** version du système d’exploitation s’exécutant sur le serveur d’AEM forms.
 
-**Arche du système d&#39;exploitation :** Architecture du système d’exploitation sur lequel la JVM s’exécute.
+**Arche du système d’exploitation : architecture** du système d’exploitation sur lequel la JVM s’exécute.
 
-**Nombre de processeurs :** Nombre de processeurs sur le système.
+**Nombre de processeurs :** nombre de processeurs sur le système.
 
-**Arguments de la machine virtuelle :** Argument utilisé par la JVM.
+**Arguments de la machine virtuelle : argument utilisé par** la JVM.
 
-**Chemin de classe :** Chemin de classe utilisé par la JVM.
+**Class Path : chemin** de classe utilisé par la JVM.
 
-**Chemin d’accès à la bibliothèque :** Chemin d’accès à la bibliothèque utilisé par la JVM.
+**Chemin d’accès à** la bibliothèque : chemin d’accès à la bibliothèque utilisé par la JVM.
 
-**Chemin de classe de démarrage :** Chemin de classe de démarrage utilisé par la JVM.
+**Chemin de classe de démarrage : chemin** de classe de démarrage utilisé par la JVM.
 
-**Type de serveur d’applications :** Type de serveur d’applications utilisé pour exécuter AEM formulaires.
+**Type de serveur d’applications :** type de serveur d’applications utilisé pour exécuter AEM formulaires.
 
-**Version du serveur d’applications :** Numéro de version du serveur d’applications utilisé pour exécuter AEM formulaires.
+**Version du serveur d’applications : numéro de** version du serveur d’applications utilisé pour exécuter AEM formulaires.
 
 **Fournisseur du serveur d’applications :** fabricant du serveur d’applications utilisé pour exécuter AEM formulaires.
 
-**Date d&#39;installation :** Date (format aaaa-mm-jj) à laquelle AEM formulaires ont été installés.
+**Date d’installation :** date (au format aaaa-mm-jj) à laquelle AEM forms a été installé.
 
-**Version des formulaires AEM :** Version des formulaires AEM installés.
+**aem forms Version :** version des AEM forms installés.
 
-**Version du correctif :** aem numéro de correctif des formulaires.
+**Version du correctif : numéro de correctif des formulaires** AEM.
 
-**Nom de la base de données :** Type de base de données utilisée par AEM forms.
+**Database Name :** type de base de données utilisé par AEM forms.
 
-**Version de la base de données :** Numéro de version de la base de données utilisée par AEM forms.
+**Version de la base de données : numéro de** version de la base de données utilisée par AEM forms.
 
-**Database Drive Name :** nom du pilote utilisé par la JVM pour se connecter à la base de données.
+**Database Drive Name : nom** du pilote utilisé par la JVM pour se connecter à la base de données.
 
-**Version du pilote de base de données :** Version du pilote utilisé par la JVM pour se connecter à la base de données.
+**Version du pilote de base de données : version** du pilote utilisé par la JVM pour se connecter à la base de données.
 
 Le bouton **Enregistrer** permet d’enregistrer ces informations système dans un fichier de propriétés.
