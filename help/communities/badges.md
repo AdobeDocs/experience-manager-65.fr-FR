@@ -19,9 +19,9 @@ ht-degree: 4%
 ---
 
 
-# Console de badges {#badges-console}
+# Console Badges {#badges-console}
 
-## A propos des badges {#about-badges}
+## À propos des badges {#about-badges}
 
 La console Badges communautaires permet d&#39;ajouter des badges personnalisés qui peuvent être affichés pour un membre lorsqu&#39;il est gagné (attribué) ou lorsqu&#39;il assume un rôle spécifique dans la communauté (attribué).
 
@@ -45,19 +45,19 @@ Cette console affiche les badges actuellement disponibles et à partir desquels 
 
 ## Créer le badge {#create-badge}
 
-Un badge est créé en téléchargeant une image convenablement petite (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’emplacement `/libs/settings/community/badging/images` et automatiquement répliquée dans l’environnement de publication.
+Un badge est créé en téléchargeant une image convenablement petite (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à `/libs/settings/community/badging/images` et automatiquement répliquée dans l’environnement de publication.
 
-Si l’environnement de publication est une batterie d’éditeurs, il est nécessaire de configurer la synchronisation [](/help/communities/sync.md)utilisateur.
+Si l’environnement de publication est une batterie d’éditeurs, il est nécessaire de configurer [la synchronisation utilisateur](/help/communities/sync.md).
 
 ![create-badge](assets/create-badge.png)
 
 * **Télécharger l’image**
 
-   (*Obligatoire*) Image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp au format JPEG ou PNG.
+   (*Obligatoire*) Image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp, au format JPEG ou PNG.
 
 * **Nom**
 
-   (*Obligatoire*) Nom du badge. Il s’agit de la valeur par défaut `Display Name` ainsi que du nom du noeud du référentiel. Si le nom `Name` de noeud de référentiel n&#39;est pas valide, il sera modifié.
+   (*Obligatoire*) Nom du badge. Il s’agit de la valeur par défaut `Display Name` ainsi que du nom du noeud du référentiel. Si `Name` n&#39;est pas un nom de noeud de référentiel valide, il sera modifié.
 
 * **Nom d’affichage**
 
@@ -65,10 +65,10 @@ Si l’environnement de publication est une batterie d’éditeurs, il est néce
 
 * **Description**
 
-   (*Optional*) A description for the badge.
+   (*Facultatif*) Description du badge.
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations sur la configuration des règles d’évaluation et de mise en badge, voir [Scoring and Badges](/help/communities/implementing-scoring.md)(Scores et badges).
+Pour plus d’informations sur la configuration des règles de notation et de badge, voir [Scoring and Badges](/help/communities/implementing-scoring.md).
 
-Pour la gestion des badges pour les membres, voir Console [](/help/communities/members.md)Membres.
+Pour la gestion des badges pour les membres, voir [Console Membres](/help/communities/members.md).
