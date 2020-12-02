@@ -27,13 +27,13 @@ Par exemple, considérons Correspondence Management comme exemple de candidat po
 
 ## Création d’actifs de Correspondence Management {#create-correspondence-management-assets}
 
-Début en créant un exemple de modèle Correspondence Management qui est rendu dans l’espace de travail AEM Forms. For more details, see [Create a letter template](../../forms/using/create-letter.md).
+Début en créant un exemple de modèle Correspondence Management qui est rendu dans l’espace de travail AEM Forms. Pour plus d’informations, voir [Création d’un modèle de lettre](../../forms/using/create-letter.md).
 
-Accédez au modèle Correspondence Management à l’adresse URL correspondante pour vérifier si le modèle Correspondence Management peut être rendu correctement. L’URL a un modèle similaire à celui de la variable `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Accédez au modèle Correspondence Management à l’adresse URL correspondante pour vérifier si le modèle Correspondence Management peut être rendu correctement. L’URL a un modèle similaire à `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 où `encodedLetterId` correspond à l’ID de lettre codé URL. Spécifiez le même identifiant de lettre lors de la définition du processus de rendu pour une tâche d’espace de travail dans Workbench.
 
-## Création d’une tâche pour le rendu et l’envoi d’une lettre dans l’espace de travail AEM {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## Création d’une tâche pour le rendu et l’envoi d’une lettre dans l’espace de travail AEM  {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 Avant d’exécuter ces étapes, assurez-vous d’être membre des groupes suivants :
 
@@ -46,7 +46,7 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
 
 1. Lancez Workbench. Connectez-vous à localhost en tant qu’administrateur.
 1. Cliquez sur Fichier > Nouveau > Application. Dans le champ Nom de l’application, saisissez `CMDemoSample`, puis cliquez sur Terminer.
-1. Sélectionnez `CMDemoSample/1.0` et cliquez avec le bouton droit `NewProcess`. Dans le champ Nom, saisissez `CMRenderer`, puis cliquez sur Terminer.
+1. Sélectionnez `CMDemoSample/1.0` et cliquez avec le bouton droit de la souris `NewProcess`. Dans le champ Nom, saisissez `CMRenderer`, puis cliquez sur Terminer.
 1. Faites glisser le sélecteur d’activité du point de départ et configurez-le :
 
    1. Dans Données de présentation, sélectionnez Utiliser un actif CRX.
@@ -102,12 +102,13 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
    }
    ```
 
-   [Obtenir le fichier](assets/dscsample.zip)Télécharger DSC : Un exemple de DSC est disponible dans le fichier DSCSample.zip joint ci-dessus. Téléchargez et décompressez l’archive ce fichier. Avant d’utiliser le service DSC, vous devez le configurer. Pour plus d’informations, [Configuration du service DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   [Get ](assets/dscsample.zip)
+FileDownload DSC : Un exemple de DSC est disponible dans le fichier DSCSample.zip joint ci-dessus. Téléchargez et décompressez l’archive ce fichier. Avant d’utiliser le service DSC, vous devez le configurer. Pour plus d’informations, [Configuration du service DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Dans la boîte de dialogue Définir l’activité, sélectionnez l’activité appropriée tel que GetLetterInstanceInfo et cliquez sur **OK**.
 
 1. Déployer l’application. Si vous y êtes invité, connectez-vous et enregistrez les actifs.
-1. Log in to the AEM forms workspace at https://&#39;[server]:[port]&#39;/lc/content/ws.
+1. Connectez-vous à l’espace de travail AEM forms à l’adresse https://&#39;[server]:[port]&#39;/lc/content/ws.
 1. Ouvrez la tâche que vous avez ajoutée, CMRenderer. La lettre Correspondence Management s’affiche.
 
    ![cminworkspace](assets/cminworkspace.png)
