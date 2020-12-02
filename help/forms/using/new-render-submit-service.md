@@ -58,11 +58,11 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 Vous trouverez plus d’informations sur les profils Mobile Form dans la section [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
 
-## Nouveaux processus de rendu et d’envoi de formulaire HTML {#new-html-form-render-amp-submit-processes}
+## Nouveaux processus de rendu et d’envoi de formulaire HTML  {#new-html-form-render-amp-submit-processes}
 
 Pour chaque opération « AssignTask », spécifiez un processus de rendu et d’envoi avec le formulaire. Ces processus sont appelés par les API TaskManager `renderForm` et `submitForm`   pour autoriser la gestion personnalisée. Sémantique de ces processus pour un nouveau formulaire HTML :
 
-### Rendre un nouveau formulaire HTML {#render-a-new-html-form}
+### Rendre un nouveau formulaire HTML  {#render-a-new-html-form}
 
 Le nouveau processus de rendu HTML, comme chaque processus de rendu, a les paramètres d’E/S suivants :
 
@@ -88,13 +88,13 @@ Sortie - `runtimeMap`
 
 Sortie - `outputDocument`
 
-The process sets the `outputDocument`to the `inputDocument`retrieved from `taskContext`.
+Le processus définit `outputDocument`sur `inputDocument`récupéré de `taskContext`.
 
 ## Processus de rendu ou d’envoi par défaut, et profils d’action {#default-render-or-submit-processes-and-action-profiles}
 
 Les services de rendu et d’envoi par défaut permettent la prise en charge du rendu de fichiers PDF sur un bureau, et de fichiers HTML sur des périphériques mobiles (iPad).
 
-### Formulaire de rendu par défaut {#default-render-form}
+### Formulaire de rendu par défaut  {#default-render-form}
 
 Ce processus rend un formulaire XDP sur plusieurs plates-formes en toute simplicité. Le processus récupère l’agent utilisateur de `taskContext`, et utilise les données pour appeler le processus pour le rendu HTML ou PDF.
 
@@ -115,7 +115,7 @@ Les navigateurs retirent progressivement la prise en charge des modules externes
 
    La boîte de dialogue Obtenir les applications s’affiche.
 
-1. Select the applications for which you want to change the mobile form rendering and click **OK**.
+1. Sélectionnez les applications pour lesquelles vous souhaitez modifier le rendu des formulaires mobiles, puis cliquez sur **OK**.
 1. Ouvrez le processus pour lequel vous souhaitez modifier le rendu.
 1. Ouvrez le point de départ/la tâche ciblé(e), accédez à la section Présentation et Données, puis cliquez sur **Gérer les profils d’action**.
 
@@ -125,7 +125,7 @@ Les navigateurs retirent progressivement la prise en charge des modules externes
 1. Répétez les étapes afin de changer le rendu pour d’autres processus.
 1. Déployez l’application correspondant aux processus que vous avez changés.
 
-### Profil d’action par défaut {#default-action-profile}
+### Profil d’action par défaut  {#default-action-profile}
 
 Le profil d’action par défaut a rendu le formulaire XDP au format PDF. Ce comportement a maintenant été modifié pour utiliser les processus de formulaire de rendu par défaut et de formulaire d’envoi par défaut.
 
@@ -158,7 +158,7 @@ L’utilisateur doit sélectionner le bouton radio HTML pour le profil par défa
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du profil d&#39;action par défaut ?**
 
-Oui ; étant donné que le rendu précédent et les services d’envoi associés au profil d’action par défaut étaient différents, ils sont gérés en tant que personnalisations des formulaires existants. On clicking **Restore Defaults**, the default render and submit services are set instead.
+Oui ; étant donné que le rendu précédent et les services d’envoi associés au profil d’action par défaut étaient différents, ils sont gérés en tant que personnalisations des formulaires existants. En cliquant sur **Restaurer les valeurs par défaut**, les services de rendu et d’envoi par défaut sont définis à la place.
 
 Si vous aviez modifié les services liés aux formulaires PDF de rendu/d’envoi existants ou aviez créé des services personnalisés (par exemple, custom1) et souhaitez maintenant utiliser la même fonctionnalité pour un rendu HTML : Vous devez répliquer le nouveau service de rendu/d’envoi (par exemple, en tant que custom2) et appliquer des personnalisations identiques. Désormais, modifiez le profil d’action de votre formulaire XDP afin de commencer à utiliser les services custom2, au lieu des services custom1 pour le rendu ou l’envoi.
 
