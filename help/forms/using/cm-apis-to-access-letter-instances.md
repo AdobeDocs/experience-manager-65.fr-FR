@@ -42,9 +42,9 @@ Correspondence Management expose les API pour récupérer des instances de lett
 
 ### Utilisation de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L’API suivante recherche les instances de lettre en fonction de l’objet de la requête (envoyée et brouillon). Si l’objet requête est nul, il renvoie toutes les instances de lettre. This API returns list of [LetterInstanceVO](https://helpx.adobe.com/experience-manager/6-2/forms/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objects, which can be used for extracting additional information of letter instance
+L’API suivante recherche les instances de lettre en fonction de l’objet de la requête (envoyée et brouillon). Si l’objet requête est nul, il renvoie toutes les instances de lettre. Cette API renvoie la liste des objets [LetterInstanceVO](https://helpx.adobe.com/experience-manager/6-2/forms/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) qui peuvent être utilisés pour extraire des informations supplémentaires sur l’instance de lettre.
 
-**Syntaxe**: `List getAllLetterInstances(Query query) throws ICCException;`
+**Syntaxe** :  `List getAllLetterInstances(Query query) throws ICCException;`
 
 <table>
  <tbody>
@@ -59,9 +59,9 @@ L’API suivante recherche les instances de lettre en fonction de l’objet de l
  </tbody>
 </table>
 
-#### Exemple 1 : récupérer toutes les instances de lettre de type ENVOYEE {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Exemple 1 : récupérer toutes les instances de lettre de type ENVOYEE  {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-Le code suivant renvoie la liste des instances de lettre envoyées. To get only drafts, change the `LetterInstanceType.COMPLETE.name()` to `LetterInstanceType.DRAFT.name().`
+Le code suivant renvoie la liste des instances de lettre envoyées. Pour obtenir uniquement des brouillons, remplacez `LetterInstanceType.COMPLETE.name()` par `LetterInstanceType.DRAFT.name().`.
 
 ```java
 @Reference
@@ -122,7 +122,7 @@ LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letter
 
 Vérifier si une instance de lettre existe selon le nom donné
 
-**Syntaxe**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
+**Syntaxe** :  `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
 | **Paramètre** | **Description** |
 |---|---|
@@ -135,7 +135,7 @@ String letterInstanceName = "sampleLetterInstance";
 Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName );
 ```
 
-## Ouverture d’instances de lettre {#opening-letter-instances}
+## Ouverture d’instances de lettre  {#opening-letter-instances}
 
 L’instance de lettre peut être de type Envoyée ou Brouillon. L’ouverture des deux types d’instance de lettre présente deux cas de figure différents :
 
