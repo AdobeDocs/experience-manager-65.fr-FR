@@ -12,7 +12,7 @@ ht-degree: 31%
 ---
 
 
-# Hub du guide d’utilisateur d’AEM 6.5 {#aem-64-user-guide}
+# Hub du Guide de l&#39;utilisateur AEM 6.5 {#aem-64-user-guide}
 
 ## Présentation {#introduction}
 
@@ -20,7 +20,7 @@ ht-degree: 31%
 |:-:|:-:|:-:|
 | Découvrez des didacticiels et des articles pour commencer avec AEM | Une sélection de vidéos présentant les nouvelles fonctionnalités de la version 6.5 | Découvrez les nouveautés de AEM 6.5 |
 
-## Guides de l’utilisateur et ressources {#user-guides-and-resources}
+## Guides de l&#39;utilisateur et ressources {#user-guides-and-resources}
 
 * [aem Fonctionnalités Guides de l’utilisateur](capabilities.md)
 * [Guides de l’utilisateur de la mise en oeuvre AEM](implementation.md)
@@ -39,11 +39,11 @@ ht-degree: 31%
 Les délégués de l&#39;assistance peuvent obtenir de l&#39;aide via :
 
 * Web : Portail d&#39;assistance Experience Manager
-* Téléphone : [Trouvez le numéro de téléphone de votre région.](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
+* Téléphone : [Recherchez le numéro de téléphone de votre région.](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
 
 >[!NOTE]
 >
->Vous n’êtes pas sûr d’être un délégué **** d’assistance ? Découvrez si ce type d&#39; [utilisateur s&#39;applique à vous](https://helpx.adobe.com/experience-cloud/supported-users.html) et découvrez les conditions [d&#39;assistance à l&#39;](https://helpx.adobe.com/support/programs/enterprise-support-terms.html)entreprise.
+>Vous ne savez pas si vous êtes un **délégué du support** ? Découvrez si ce [type d&#39;utilisateur s&#39;applique à vous](https://helpx.adobe.com/experience-cloud/supported-users.html) et découvrez nos [termes de support d&#39;entreprise](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
 ## Communauté {#community}
 
