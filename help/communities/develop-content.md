@@ -18,10 +18,10 @@ ht-degree: 0%
 ---
 
 
-# Développement du contenu du sandbox  {#develop-sandbox-content}
+# Développer le contenu du sandbox {#develop-sandbox-content}
 
 **[Ajouter les bibliothèques clientes](add-clientlibs.md)**
 
-À ce stade, il est possible d&#39;explorer les fonctionnalités de la communauté dans le sandbox tout en utilisant [We-Retail Community](../../help/sites-developing/we-retail.md), le Guide [des composants de la](components-guide.md) communauté et [les éléments essentiels](essentials.md) à titre de référence.
+À ce stade, il est possible d&#39;explorer les fonctionnalités de la communauté dans le sandbox en même temps que d&#39;utiliser [We-Retail Community](../../help/sites-developing/we-retail.md), le [Community Components Guide](components-guide.md) et [feature essentials](essentials.md) à titre de référence.
 
 
