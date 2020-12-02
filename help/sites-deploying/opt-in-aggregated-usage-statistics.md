@@ -31,11 +31,11 @@ Vous pouvez souscrire à la collecte de statistiques d’utilisation à l’aide
 >
 >Il existe divers règlements en matière de protection des données et de protection de la vie privée ; y compris, par exemple, le RGPD et l&#39;ACCP. AEM Sites est prêt à aider les clients à respecter leurs obligations en matière de protection des données et de respect de la vie privée. Cette page guide les clients à travers les procédures de souscription à la collecte de statistiques d’utilisation agrégées (et d’exclusion de celle-ci).
 >
->Pour plus d&#39;informations, consultez également le Centre [de confidentialité des](https://www.adobe.com/privacy.html)Adobes.
+>Pour plus d&#39;informations, consultez également le [Centre de traitement des données personnelles des Adobes](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->You can also opt-out at anytime by either using the [Web Console](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) or by not selecting the opt-in option on the AEM opt-in screen.
+>Vous pouvez également vous désabonner à tout moment en utilisant la [console Web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) ou en ne sélectionnant pas l’option d’inclusion dans l’écran d’inclusion AEM.
 
 ## Souscription à l’aide de l’IU tactile {#opt-in-by-using-the-touch-ui}
 
@@ -55,26 +55,26 @@ La première fois que vous démarrez AEM, vous pouvez souscrire à l’aide de l
 
 1. Cliquez sur **Terminé**.
 
-## Souscription à l’aide de la console web {#opt-in-by-using-the-web-console}
+## Souscription à l’aide de la console web  {#opt-in-by-using-the-web-console}
 
 Vous pouvez souscrire (ou vous exclure) à l’aide de la console web, comme suit :
 
-1. On the AEM Navigation screen, click **Tools** and then **Operations**.
+1. Dans l’écran de navigation de l’AEM, cliquez sur **Outils**, puis sur **Opérations**.
 
    ![usage_statistics_opsdashboard](assets/usage_statisticsopsdashboard.png)
 
-1. On the Operations window, click **Web Console**.
+1. Dans la fenêtre Opérations, cliquez sur **Console Web**.
 
    ![usage_statistics_webconsole](assets/usage_statisticswebconsole.png)
 
 1. Recherchez **Collecte de statistiques d’utilisation agrégées**.
-1. Click the **Edit** icon.
+1. Cliquez sur l&#39;icône **Modifier**.
 
    ![usage_statistics_collectionedit](assets/usage_statisticscollectionedit.png)
 
-1. Select the **Enabled** checkbox. Vous pouvez également désélectionner la case si vous souhaitez vous exclure de la collecte de statistiques d’utilisation.
+1. Cochez la case **Activé**. Vous pouvez également désélectionner la case si vous souhaitez vous exclure de la collecte de statistiques d’utilisation.
 
    ![usage_statistics_select](assets/usage_statisticsselect.png)
 
-1. Cliquez sur **Save**.
+1. Cliquez sur **Enregistrer**.
 
