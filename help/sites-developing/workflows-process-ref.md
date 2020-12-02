@@ -22,18 +22,18 @@ ht-degree: 84%
 
 AEM propose plusieurs étapes de processus qui peuvent être utilisées pour créer des modèles de workflow. Des étapes de processus personnalisées peuvent également être ajoutées pour les tâches qui ne sont pas couvertes par les étapes intégrées (voir [Création de modèles de workflow](/help/sites-developing/workflows-models.md)).
 
-## Caractéristiques du processus {#process-characteristics}
+## Caractéristiques du processus  {#process-characteristics}
 
 Les caractéristiques suivantes sont décrites pour chaque étape du processus.
 
-### Classe Java ou chemin d’accès ECMA {#java-class-or-ecma-path}
+### Classe Java ou chemin d’accès ECMA  {#java-class-or-ecma-path}
 
 Les étapes du processus sont définies soit par une classe Java soit par un ECMAScript.
 
 * Dans le cas des processus de classe Java, un nom de classe complet est fourni.
 * Pour les processus ECMAScript, le chemin d’accès au script est fourni.
 
-### Charge utile {#payload}
+### Charge utile  {#payload}
 
 La charge utile est l’entité sur laquelle opère une instance de workflow. Elle est sélectionnée de manière implicite par le contexte dans lequel une instance de workflow est lancée.
 
@@ -41,7 +41,7 @@ Par exemple, si un workflow est appliqué à une page AEM *P*, *P* passe d’un
 
 Dans le cas le plus courant, la charge utile est un nœud JCR du référentiel (une ressource ou une page AEM, par exemple). Une charge utile Nœud JCR est transmise sous la forme d’une chaîne qui est soit un chemin d’accès JCR, soit un identifiant JCR (UUID). Dans certains cas, la charge utile peut être une propriété JCR (transmise en tant que chemin d’accès JCR), une URL, un objet binaire ou un objet Java générique. Les différentes étapes du processus qui agissent effectivement sur la charge utile attendent généralement une charge utile d’un certain type ou se comportent différemment selon le type de charge. Le type de charge utile attendu, le cas échéant, est décrit pour chaque processus présenté ci-dessous.
 
-### Arguments {#arguments}
+### Arguments  {#arguments}
 
 Certains processus de workflow acceptent les arguments spécifiés par l’administrateur lors de la configuration de l’étape de workflow.
 
@@ -60,7 +60,7 @@ Une fois ce délai d’expiration dépassé, l’étape de workflow n’est plus
 
 ### Autorisations {#permissions}
 
-The session passed to the `WorkflowProcess` is backed by the service user for the workflow process service, which has the following permissions at the root of the repository:
+La session transmise à `WorkflowProcess` est soutenue par l’utilisateur du service pour le service de processus de flux de travail, qui dispose des autorisations suivantes à la racine du référentiel :
 
 * `jcr:read`
 * `rep:write`
@@ -68,7 +68,7 @@ The session passed to the `WorkflowProcess` is backed by the service user for th
 * `jcr:lockManagement`
 * `crx:replicate`
 
-If that set of permissions is not sufficient for your `WorkflowProcess` implementation, then it must use a session with the required permissions.
+Si cet ensemble d&#39;autorisations n&#39;est pas suffisant pour votre implémentation `WorkflowProcess`, il doit alors utiliser une session avec les autorisations requises.
 
 La méthode recommandée consiste à employer un utilisateur de service créé avec le sous-ensemble minimum d’autorisations requises.
 
@@ -82,7 +82,7 @@ La méthode recommandée consiste à employer un utilisateur de service créé a
 >
 >Une solution à court terme est également disponible à des fins de rétrocompatibilité lorsque des modifications de code ne sont pas possibles :
 >
->* Using the Web Console ( `/system/console/configMgr` locate the **Adobe Granite Workflow Configuration Service**
+>* À l&#39;aide de la console Web ( `/system/console/configMgr` localisez le **service de configuration du processus de granite d&#39;Adobe**
    >
    >
 * Activez le **mode hérité du processus de workflow**.
@@ -98,7 +98,7 @@ Les processus suivants n’exécutent aucune action sur le contenu. Ils servent 
 
 Le processus `AbsoluteTimeAutoAdvancer` (Avance automatique temps absolu écoulé) se comporte de la même manière que **AutoAdvancer** (Avance automatique), si ce n’est qu’il arrive à expiration à une date et une heure données, plutôt qu’après une durée définie.
 
-* **Classe** Java : `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Classe** Java :  `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Charge utile** : aucune.
 * **Arguments** : aucun.
 * **Délai d’expiration** : le processus arrive à expiration lorsque la date et l’heure définies sont atteintes.
@@ -107,7 +107,7 @@ Le processus `AbsoluteTimeAutoAdvancer` (Avance automatique temps absolu écoul�
 
 Le processus `AutoAdvancer` fait passer automatiquement le flux de travail à l’étape suivante. Si plusieurs étapes sont possibles (il existe, par exemple, une division OU), la progression du flux de travail continue le long de l’*itinéraire par défaut*, si cela a été défini. Dans le cas contraire, aucune avance n’est effectuée.
 
-* **Classe** Java : `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Classe** Java :  `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
 * **Charge utile** : aucune.
 * **Arguments** : aucun.
@@ -117,7 +117,7 @@ Le processus `AutoAdvancer` fait passer automatiquement le flux de travail à l�
 
 Le processus `ProcessAssembler` exécute plusieurs sous-processus de manière séquentielle au cours d’une seule étape. Pour utiliser le processus `ProcessAssembler`, créez une seule étape de ce type dans votre workflow, et configurez ses arguments de manière à indiquer les noms et arguments des sous-processus que vous souhaitez exécuter.
 
-* **Classe** Java : `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Classe** Java :  `com.day.cq.workflow.impl.process.ProcessAssembler`
 
 * **Charge utile** : ressource DAM, page AEM ou aucune charge utile (cela dépend des exigences des sous-processus).
 * **Arguments** :
@@ -157,13 +157,13 @@ Les processus suivants exécutent des tâches simples ou servent simplement d’
 >
 >Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
+>En effet, le contenu de `/libs` est remplacé lors de la prochaine mise à niveau de votre instance (et peut être remplacé lorsque vous appliquez un correctif logiciel ou un pack de fonctionnalités).
 
 ### Supprimez {#delete}
 
 L’élément situé à l’emplacement indiqué est supprimé.
 
-* **Chemin** ECMAScript : `/libs/workflow/scripts/delete.ecma`
+* **Chemin** ECMAScript :  `/libs/workflow/scripts/delete.ecma`
 
 * **Charge utile** : chemin JCR
 * **Arguments** : aucun
@@ -173,7 +173,7 @@ L’élément situé à l’emplacement indiqué est supprimé.
 
 Il s’agit d’un processus nul. Il n’effectue aucune opération, mais consigne un message de débogage.
 
-* **Chemin** ECMAScript : `/libs/workflow/scripts/noop.ecma`
+* **Chemin** ECMAScript :  `/libs/workflow/scripts/noop.ecma`
 
 * **Charge utile** : aucune
 * **Arguments** : aucun
@@ -181,9 +181,9 @@ Il s’agit d’un processus nul. Il n’effectue aucune opération, mais consig
 
 ### rule-false {#rule-false}
 
-This is a null process that returns `false` on the `check()` method.
+Il s’agit d’un processus nul qui renvoie `false` sur la méthode `check()`.
 
-* **Chemin** ECMAScript : `/libs/workflow/scripts/rule-false.ecma`
+* **Chemin** ECMAScript :  `/libs/workflow/scripts/rule-false.ecma`
 
 * **Charge utile** : aucune
 * **Arguments** : aucun
@@ -193,7 +193,7 @@ This is a null process that returns `false` on the `check()` method.
 
 Il s’agit d’un exemple de processus ECMAScript.
 
-* **Chemin** ECMAScript : `/libs/workflow/scripts/sample.ecma`
+* **Chemin** ECMAScript :  `/libs/workflow/scripts/sample.ecma`
 
 * **Charge utile** : aucune
 * **Arguments** : aucun
@@ -203,7 +203,7 @@ Il s’agit d’un exemple de processus ECMAScript.
 
 Il s’agit d’un processus de workflow simple qui appelle l’URL indiquée. En règle générale, l’URL est une référence à un JSP (ou à un autre servlet équivalent) qui effectue une tâche simple. Ce processus doit uniquement être utilisé pendant les phases de développement et de démonstration, mais pas dans un environnement de production. Les arguments définissent l’URL, le nom de connexion et le mot de passe.
 
-* **Chemin** ECMAScript : `/libs/workflow/scripts/urlcaller.ecma`
+* **Chemin** ECMAScript :  `/libs/workflow/scripts/urlcaller.ecma`
 
 * **Charge utile** : aucune
 * **Arguments** :
@@ -253,7 +253,7 @@ L’étape n’a aucun effet dans les cas suivants :
 
 Le processus suivant effectue une tâche relative à la version.
 
-### CreateVersionProcess {#createversionprocess}
+### CreateVersionProcess  {#createversionprocess}
 
 Crée une version de la charge utile du workflow (page AEM ou ressource DAM).
 
