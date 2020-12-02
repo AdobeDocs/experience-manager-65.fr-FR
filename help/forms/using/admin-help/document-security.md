@@ -61,7 +61,7 @@ Etapes représentées dans le schéma :
 1. Le destinataire du document ouvre le document dans l’application cliente voulue. Le destinataire peut utiliser le document conformément à sa stratégie.
 1. Le propriétaire du document, le coordinateur de jeux de stratégies ou l’administrateur peut suivre les documents et modifier l’accès à ces derniers à l’aide des pages Web.
 
-## À propos des utilisateurs de Document Security {#about-document-security-users}
+## À propos des utilisateurs de Document Security  {#about-document-security-users}
 
 Divers types d’utilisateurs recourent à Document Security pour accomplir différentes tâches :
 
@@ -147,13 +147,13 @@ Les administrateurs de Document Security peuvent créer des rôles personnalisé
 * Affichage des événements du serveur Document Security
 * Modification du propriétaire d’une stratégie Document Security
 
-## Stratégies et documents protégés par une stratégie {#policies-and-policy-protected-documents}
+## Stratégies et documents protégés par une stratégie  {#policies-and-policy-protected-documents}
 
 Une *stratégie* définit un jeu de paramètres de confidentialité et d’utilisateurs habilités à accéder au document auquel la stratégie est appliquée. De plus, une stratégie permet de modifier dynamiquement les autorisations sur un document. Elle permet à la personne qui sécurise le document de modifier les paramètres de confidentialité, de révoquer l’accès au document ou de changer de stratégie.
 
 La protection d’une stratégie peut être appliquée à un document PDF à l’aide d’Acrobat® Pro et d’Acrobat Standard. Elle peut également être appliquée à d’autres types de fichiers, tels que Microsoft Word, Excel et PowerPoint par le biais de l’application cliente, à condition que les extensions d’Acrobat Reader DC appropriées soient installées.
 
-### Fonctionnement des stratégies {#how-policies-work}
+### Fonctionnement des stratégies  {#how-policies-work}
 
 Les stratégies contiennent des informations sur les utilisateurs autorisés et les paramètres de confidentialité à appliquer aux documents. Les utilisateurs peuvent être des membres de votre entreprise, ainsi que des personnes extérieures qui possèdent un compte. Si l’administrateur active la fonction d’invitation d’utilisateur, il est même possible d’ajouter de nouveaux utilisateurs aux stratégies et de déclencher le processus d’envoi par courrier électronique d’une invitation à l’enregistrement.
 
@@ -182,7 +182,7 @@ Lorsque vous appliquez une stratégie à un document, les informations contenues
 
 Si l’utilisation hors connexion est autorisée, les destinataires peuvent également utiliser hors connexion (sans être connectés à Internet ou au réseau) des documents protégés par une stratégie, pendant la période spécifiée dans la stratégie.
 
-### Fonctionnement des documents protégés par une stratégie {#how-policy-protected-documents-work}
+### Fonctionnement des documents protégés par une stratégie  {#how-policy-protected-documents-work}
 
 Pour ouvrir et utiliser des documents protégés par une stratégie, cette dernière doit inclure votre nom en tant que destinataire et vous devez disposer d’un compte Document Security valide. Pour les documents PDF, vous devez disposer d’Acrobat ou d’Adobe Reader®. Pour les autres types de fichiers, vous devez disposer de l’application voulue et des extensions d’Adobe reader DC déjà installées.
 
@@ -207,7 +207,7 @@ Lorsque la période d’ouverture hors connexion arrive à son terme, vous devez
 
 Si vous enregistrez une copie d’un document protégé par une stratégie à l’aide de la commande Enregistrer ou Enregistrer sous, la stratégie est automatiquement appliquée au nouveau document. Les événements tels que les tentatives d’ouverture du nouveau document sont également contrôlés et enregistrés pour le document original.
 
-## Jeux de stratégies {#policy-sets}
+## Jeux de stratégies  {#policy-sets}
 
 Les *jeux de stratégies* regroupent plusieurs stratégies ayant une finalité commune. Ces jeux de stratégies sont ensuite rendus accessibles à un sous-groupe d’utilisateurs du système.
 
