@@ -11,7 +11,7 @@ ht-degree: 87%
 ---
 
 
-# Meilleures pratiques de traduction des ressources {#best-practices-for-translating-assets-efficiently}
+# Meilleures pratiques pour traduire des ressources {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] prend en charge des workflow multilingues permettant de traduire les fichiers binaires, les métadonnées et les balises des ressources numériques en plusieurs paramètres régionaux et de gérer les ressources traduites. Pour plus d’informations, voir [Ressources multilingues](multilingual-assets.md).
 
@@ -44,7 +44,7 @@ Vous pouvez également apporter des modifications de configuration à quelques w
 
 1. Activez le workflow [!UICONTROL Définir la date de dernière modification].
 
-   Le workflow [!UICONTROL Définir la date de dernière modification] configure la date de dernière modification pour une ressource. Because you disable this workflow in step 2, [!DNL Assets] is no longer able to keep the last modified date of assets up-to-date. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
+   Le workflow [!UICONTROL Définir la date de dernière modification] configure la date de dernière modification pour une ressource. Comme vous désactivez ce processus à l’étape 2, [!DNL Assets] ne peut plus tenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
 
-1. [Configurez la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires des ressources. Unselect the **[!UICONTROL Translate Assets]** option under the [!UICONTROL Assets] tab to stop the translation of Asset binaries.
-1. Translate asset metadata/tags using [Multilingual asset workflows](multilingual-assets.md).
+1. [Configurez la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires des ressources. Désélectionnez l’option **[!UICONTROL Traduire les ressources]** sous l’onglet [!UICONTROL Ressources] pour arrêter la traduction des fichiers binaires.
+1. Traduisez les métadonnées/balises de fichier à l’aide de [workflows de ressources multilingues](multilingual-assets.md).
