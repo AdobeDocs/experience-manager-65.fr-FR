@@ -20,7 +20,7 @@ ht-degree: 78%
 
 # Élaboration de rapports{#developing-reports}
 
-AEM provides a selection of [standard reports](/help/sites-administering/reporting.md) most of which are based on a reporting framework.
+aem fournit une sélection de [rapports standard](/help/sites-administering/reporting.md) dont la plupart sont basés sur un cadre de rapports.
 
 Cette structure vous permet soit d’étendre ces rapports standard, soit de développer vos propres rapports en partant de zéro. La structure de création de rapports s’intègre parfaitement dans les concepts et principes CQ5 existants. Les développeurs peuvent ainsi mettre à profit leurs connaissances actuelles de la plate-forme CQ5 pour développer des rapports.
 
@@ -55,19 +55,19 @@ Pour les rapports standard livrés avec AEM :
 * `N:<name> [<nodeType>]`
    >
    >     
-   Décrit un noeud portant le nom `<*name*>` et le type de noeud de `<*nodeType*>`*.*
+   Décrit un noeud portant le nom `<*name*>` et le type de noeud `<*nodeType*>`*.*
    >
    >  
 * `P:<name> [<propertyType]`
    >
    >     
-   Décrit une propriété avec le nom de `<*name*>` et un type de propriété de `<*propertyType*>`.
+   Décrit une propriété portant le nom `<*name*>` et un type de propriété `<*propertyType*>`.
    >
    >  
 * `P:<name> = <value>`
    >
    >     
-   Décrit une propriété `<name>` qui doit être définie sur la valeur de `<value>`.
+   Décrit une propriété `<name>` qui doit être définie sur la valeur `<value>`.
    >
    >
 * La mise en retrait indique les dépendances hiérarchiques entre les nœuds.
@@ -75,14 +75,14 @@ Pour les rapports standard livrés avec AEM :
 
 >
 >  
-Par exemple, `String|String[]` signifie que la propriété peut être Chaîne ou Chaîne[].
+par ex. `String|String[]` signifie que la propriété peut être String ou String[].
 >
->* `[]` représente un tableau ; comme Chaîne[] ou tableau de noeuds comme dans la Définition [de](#query-definition)Requête.
+>* `[]` représente un tableau ; comme [] Stringor ou un tableau de noeuds comme dans la  [définition](#query-definition) de Requête.
 >
 >
 Sauf indication contraire, les types par défaut sont les suivants :
 >
->* Nodes - `nt:unstructured`
+>* Noeuds - `nt:unstructured`
 >* Propriétés - `String`
 
 
@@ -108,7 +108,7 @@ La page de rapport :
 * est une page CQ5 standard ;
 * est basée sur le [modèle CQ5 standard, configuré pour le rapport](#report-template).
 
-### Base de rapport {#report-base}
+### Base de rapport  {#report-base}
 
 Le [composant `reportbase`](#report-base-component) constitue la base de tout rapport, dans la mesure où il :
 
@@ -126,7 +126,7 @@ Chaque colonne est une instance du [composant `columnbase`](#column-base-compone
 * définit le lien vers le [jeu de résultats sous-jacent](#the-query-and-data-retrieval) ; en d’autres termes, il définit les données spécifiques référencées dans ce jeu de résultats, ainsi que la façon dont elles sont traitées ;
 * contient des définitions supplémentaires ; telles que les agrégats et filtres disponibles, ainsi que toute valeur par défaut.
 
-### Requête et récupération de données {#the-query-and-data-retrieval}
+### Requête et récupération de données  {#the-query-and-data-retrieval}
 
 La requête :
 
@@ -179,7 +179,7 @@ Le processus suivant représente la file d’attente de traitement :
 
 Emplacement des étapes détaillées et des éléments :
 
-1. Transforms the results returned by the [initial query (reportbase)](#query-definition) into the basic result set using value extractors.
+1. Transforme les résultats renvoyés par la requête initiale [(base de rapports)](#query-definition) en résultats de base à l’aide d’extracteurs de valeur.
 
    Les extracteurs de valeurs sont sélectionnés automatiquement en fonction du [type de colonne](#column-specific-definitions). Ils sont utilisés pour lire les valeurs extraites de la requête JCR sous-jacente et pour créer un jeu de résultats à partir de celles-ci ; un traitement plus approfondi peut ensuite être appliqué. Pour le type `diff`, par exemple, l’extracteur de valeurs lit deux propriétés et calcule la valeur unique qui est ensuite ajoutée au jeu de résultats. Les extracteurs de valeurs ne peuvent pas être configurés.
 
@@ -213,17 +213,17 @@ Emplacement des étapes détaillées et des éléments :
 Voici ce dont vous avez besoin pour créer et configurer un rapport :
 
 * Un [emplacement pour la définition des composants de votre rapport](#location-of-report-components)
-* un [`reportbase` composant](#report-base-component)
+* a [ `reportbase` composant](#report-base-component)
 * Un ou plusieurs [composants `columnbase`](#column-base-component)
 * Un [composant de page](#page-component)
 * Une [conception de rapports](#report-design)
 * Un [modèle de rapport](#report-template)
 
-### Emplacement des composants de rapport {#location-of-report-components}
+### Emplacement des composants de rapport  {#location-of-report-components}
 
-The default reporting components are held under `/libs/cq/reporting/components`.
+Les composants de rapports par défaut sont conservés sous `/libs/cq/reporting/components`.
 
-However, it is strongly recommended that you do not update these nodes, but create your own component nodes under `/apps/cq/reporting/components` or if more appropriate `/apps/<yourProject>/reports/components`.
+Cependant, il est fortement recommandé de ne pas mettre à jour ces noeuds, mais de créer vos propres noeuds de composants sous `/apps/cq/reporting/components` ou, le cas échéant, `/apps/<yourProject>/reports/components`.
 
 Où (à titre d’exemple) :
 
@@ -248,13 +248,13 @@ N:apps
 
 ### Composant de page {#page-component}
 
-A report page must use the `sling:resourceType` of `/libs/cq/reporting/components/reportpage`.
+Une page de rapport doit utiliser `sling:resourceType` de `/libs/cq/reporting/components/reportpage`.
 
 Un composant de page personnalisé n’est normalement pas nécessaire (dans la plupart des cas).
 
-## Composant de rapport de base {#report-base-component}
+## Composant de rapport de base  {#report-base-component}
 
-Each report type requires a container component derived from `/libs/cq/reporting/components/reportbase`.
+Chaque type de rapport nécessite un composant de conteneur dérivé de `/libs/cq/reporting/components/reportbase`.
 
 Ce composant fait office de conteneur pour le rapport dans son ensemble et fournit des informations pour les éléments suivants :
 
@@ -270,7 +270,7 @@ N:<reportname> [cq:Component]
     N:queryBuilder
 ```
 
-### Définition de la requête {#query-definition}
+### Définition de la requête  {#query-definition}
 
 ```xml
 N:queryBuilder
@@ -303,7 +303,7 @@ N:queryBuilder
     ]
    ```
 
-   Renvoie tous les `textimage` composants qui ont été modifiés pour la dernière fois par l’ `admin` utilisateur.
+   Renvoie tous les composants `textimage` qui ont été modifiés pour la dernière fois par l&#39;utilisateur `admin`.
 
 * `nodeTypes`
 
@@ -344,11 +344,11 @@ N:charting
 
       * `id`
 
-         Identification des principaux graphiques. This must match the id of one of the chart `definitions`.
+         Identification des principaux graphiques. Il doit correspondre à l&#39;id de l&#39;un des graphiques `definitions`.
 
 * `definitions`
 
-   Définit les types de graphique qui peuvent être disponibles pour le rapport. The `definitions` to be used will be specified by the `active` settings.
+   Définit les types de graphique qui peuvent être disponibles pour le rapport. Le `definitions` à utiliser sera spécifié par les paramètres `active`.
 
    Les définitions sont spécifiées à l’aide d’un tableau de nœuds (nommés généralement `0`, `1`.. `x`), chacun ayant les propriétés suivantes :
 
@@ -367,22 +367,22 @@ Diagramme circulaire. Généré uniquement à partir des données actuelles.
 Série de lignes (points reliés représentant les instantanés). Graphique généré uniquement à partir des données historiques.
    * Des propriétés supplémentaires sont disponibles en fonction du type de graphique :
 
-      * for the chart type `pie`:
+      * pour le type de graphique `pie` :
 
          * `maxRadius` (`Double/Long`)
 
-            Rayon maximum autorisé pour le graphique en secteurs et donc la taille maximale autorisée pour le graphique (sans légende). Ignored if `fixedRadius` is defined.
+            Rayon maximum autorisé pour le graphique en secteurs et donc la taille maximale autorisée pour le graphique (sans légende). Ignoré si `fixedRadius` est défini.
 
          * `minRadius` (`Double/Long`)
 
-            Rayon minimal autorisé pour le graphique circulaire. Ignored if `fixedRadius` is defined.
+            Rayon minimal autorisé pour le graphique circulaire. Ignoré si `fixedRadius` est défini.
 
-         * `fixedRadius` ( `Double/Long`)Définit un rayon fixe pour le graphique circulaire.
-      * for the chart type [`lineseries`](/help/sites-administering/reporting.md#display-limits):
+         * `fixedRadius` (  `Double/Long`) Définit un rayon fixe pour le graphique circulaire.
+      * pour le type de graphique [`lineseries`](/help/sites-administering/reporting.md#display-limits) :
 
          * `totals` (`Boolean`)
 
-            True if an additional line showing the **Total** should be shown.
+            True si une ligne supplémentaire indiquant le **Total** doit être affichée.
 default: `false`
 
          * `series` (`Long`)
@@ -473,7 +473,7 @@ Plusieurs composants préconfigurés sont fournis ; ils peuvent être référen
 
 >[!NOTE]
 >
->The referenced components must be included using the `.infinity.json` suffix (see example above).
+>Les composants référencés doivent être inclus à l&#39;aide du suffixe `.infinity.json` (voir l&#39;exemple ci-dessus).
 
 ### Chemin racine {#root-path}
 
@@ -488,9 +488,9 @@ Un chemin d’accès racine peut également être défini pour le rapport :
    * le [modèle de rapport](#report-template) (soit comme valeur fixe, soit comme valeur par défaut pour la boîte de dialogue de configuration),
    * l’utilisateur (à l’aide de ce paramètre).
 
-## Composant de base de colonne {#column-base-component}
+## Composant de base de colonne  {#column-base-component}
 
-Each column type requires a component derived from `/libs/cq/reporting/components/columnbase`.
+Chaque type de colonne requiert un composant dérivé de `/libs/cq/reporting/components/columnbase`.
 
 Un composant de colonne définit une combinaison des éléments suivants :
 
@@ -528,7 +528,7 @@ N:<columnname> [cq:Component]
 
 Voir aussi [Définition de votre nouveau rapport](#defining-your-new-report).
 
-### Requête spécifique à la colonne {#column-specific-query}
+### Requête spécifique à la colonne  {#column-specific-query}
 
 Cette requête définit l’extraction de données spécifiques (à partir du [jeu de résultats de données du rapport](#the-query-and-data-retrieval)) à utiliser dans la colonne individuelle.
 
@@ -545,7 +545,7 @@ N:definitions
 
    Définit la propriété à utiliser pour calculer la valeur réelle de la cellule.
 
-   If property is defined as String[] multiple properties are scanned (in sequence) to find the actual value.
+   Si la propriété est définie comme String[], plusieurs propriétés sont analysées (dans l&#39;ordre) pour trouver la valeur réelle.
 
    Par exemple, dans le cas de :
 
@@ -568,7 +568,7 @@ N:definitions
 
 * `secondarySubPath`
 
-   Similar to subPath, when `secondaryProperty` is used.
+   Similaire à subPath, lorsque `secondaryProperty` est utilisé.
 
 Dans la plupart des cas, seul `property` est utilisé.
 
@@ -603,7 +603,7 @@ function(v) {
 }
 ```
 
-### Programmes de résolution et prétraitement {#resolvers-and-preprocessing}
+### Programmes de résolution et prétraitement  {#resolvers-and-preprocessing}
 
 La [file d’attente de traitement](#processing-queue) définit les différents programmes de résolution et configure le prétraitement :
 
@@ -631,15 +631,15 @@ N:definitions
 
    * `page`
 
-       Résout une valeur de chemin sur le chemin d’accès de la page appropriée ; plus précisément, sur le nœud `jcr:content` correspondant. For example, `/content/.../page/jcr:content/par/xyz` is resolved to `/content/.../page/jcr:content`.
+       Résout une valeur de chemin sur le chemin d’accès de la page appropriée ; plus précisément, sur le nœud `jcr:content` correspondant. Par exemple, `/content/.../page/jcr:content/par/xyz` est résolu en `/content/.../page/jcr:content`.
 
    * `path`
 
-      Résout une valeur de chemin en ajoutant éventuellement un sous-chemin et en extrayant la valeur réelle d’une propriété du nœud (tel que défini par `resolverConfig`) au niveau du chemin résolu. For example, a `path` of `/content/.../page/jcr:content` can be resolved to the content of the `jcr:title` property, this would mean that a page path is resolved to the page title.
+      Résout une valeur de chemin en ajoutant éventuellement un sous-chemin et en extrayant la valeur réelle d’une propriété du nœud (tel que défini par `resolverConfig`) au niveau du chemin résolu. Par exemple, un `path` de `/content/.../page/jcr:content` peut être résolu en fonction du contenu de la propriété `jcr:title`, ce qui signifie qu’un chemin de page est résolu en fonction du titre de la page.
 
    * `pathextension`
 
-      Résout une valeur en ajoutant un chemin d’accès en préfixe et en prenant la valeur réelle d’une propriété du nœud au niveau du chemin résolu. For example, a value `de` might be prepended by a path such as `/libs/wcm/core/resources/languages`, taking the value from the property `language`, to resolve the country code `de` to the language description `German`.
+      Résout une valeur en ajoutant un chemin d’accès en préfixe et en prenant la valeur réelle d’une propriété du nœud au niveau du chemin résolu. Par exemple, une valeur `de` peut être précédée d’un chemin tel que `/libs/wcm/core/resources/languages`, en prenant la valeur de la propriété `language`, afin de résoudre le code de pays `de` dans la description de langue `German`.
 
 * `resolverConfig`
 
@@ -649,7 +649,7 @@ N:definitions
 
       Utilisez des propriétés pour spécifier les constantes en vue de la résolution. Le nom de la propriété définit la constante à résoudre ; la valeur de la propriété définit la valeur résolue.
 
-      For example a property with **Name**= `1` and **Value** `=One` will resolve 1 to One.
+      Par exemple, une propriété avec **Name**= `1` et **Value** `=One` résoudra 1 en 1.
 
    * `default`
 
@@ -675,19 +675,19 @@ N:definitions
 
          Définit le chemin à ajouter en préfixe.
 
-      * `propertyName` (mandatory)
+      * `propertyName` (obligatoire)
 
          Définit la propriété sur le chemin d’accès résolu où se trouve la valeur réelle.
 
       * `i18n` (facultatif) type Boolean)
 
-         Determines whether the resolved value should be *internationalized* (i.e. using [CQ5&#39;s internationalization services](/help/sites-administering/tc-manage.md)).
+         Détermine si la valeur résolue doit être *internationalisée* (c’est-à-dire en utilisant [les services d’internationalisation de CQ5](/help/sites-administering/tc-manage.md)).
 
 
 
 * `preprocessing`
 
-   Preprocessing is optional and can be bound (separately) to the processing phases *apply* or *applyAfter*:
+   Le prétraitement est facultatif et peut être lié (séparément) aux phases de traitement *appliquer* ou *appliquerAprès* :
 
    * `apply`
 
@@ -703,7 +703,7 @@ Les programmes de résolution sont utilisés pour extraire les informations requ
 
 **Const**
 
-The following will resolve a contant value of `VersionCreated` to the string `New version created`.
+Les éléments suivants résolvent une valeur contante de `VersionCreated` en chaîne `New version created`.
 
 Voir `/libs/cq/reporting/components/auditreport/typecol/definitions/data`.
 
@@ -729,7 +729,7 @@ N:data
 
 **Chemin**
 
-The following resolves a path of `/content/.../page` to the content of the `jcr:title` property, this would mean that a page path is resolved to the page title.
+L’exemple suivant résout un chemin d’accès `/content/.../page` au contenu de la propriété `jcr:title`, ce qui signifie qu’un chemin d’accès à la page est résolu en fonction du titre de la page.
 
 Voir `/libs/cq/reporting/components/auditreport/pagecol/definitions/data`.
 
@@ -743,7 +743,7 @@ N:data
 
 **Extension de chemin**
 
-The following prepends a value `de` with the path extension `/libs/wcm/core/resources/languages`, then takes the value from the property `language`, to resolve the country code `de` to the language description `German`.
+L’exemple suivant ajoute une valeur `de` avec l’extension de chemin `/libs/wcm/core/resources/languages`, puis prend la valeur de la propriété `language`, pour résoudre le code de pays `de` dans la description de langue `German`.
 
 Voir `/libs/cq/reporting/components/userreport/languagecol/definitions/data`.
 
@@ -757,17 +757,17 @@ N:data
 
 #### Prétraitement {#preprocessing}
 
-The `preprocessing` definition can be applied to either the:
+La définition de `preprocessing` peut s&#39;appliquer à l&#39;un des éléments suivants :
 
 * valeur d’origine :
 
-   The preprocessing definition for the original value is specified on `apply` and/or `applyAfter` directly.
+   La définition de prétraitement de la valeur d’origine est spécifiée directement sur `apply` et/ou `applyAfter`.
 
 * dans son état agrégé :
 
    Si nécessaire, une définition distincte peut être fournie pour chaque agrégation.
 
-   To specify explicit preprocessing for aggregated values, the preprocessing definitions have to reside on a respective `aggregated` child node ( `apply/aggregated`, `applyAfter/aggregated`). Si un prétraitement explicite est requis pour des agrégats distincts, la définition de prétraitement se trouve sur un nœud enfant ayant le nom de l’agrégat correspondant (par exemple, `apply/aggregated/min/max` ou d’autres agrégats).
+   Pour spécifier un prétraitement explicite pour les valeurs agrégées, les définitions de prétraitement doivent résider sur un noeud enfant `aggregated` respectif ( `apply/aggregated`, `applyAfter/aggregated`). Si un prétraitement explicite est requis pour des agrégats distincts, la définition de prétraitement se trouve sur un nœud enfant ayant le nom de l’agrégat correspondant (par exemple, `apply/aggregated/min/max` ou d’autres agrégats).
 
 Vous pouvez spécifier l’une des options suivantes à utiliser lors du prétraitement :
 
@@ -775,7 +775,7 @@ Vous pouvez spécifier l’une des options suivantes à utiliser lors du prétra
 
 * [Formateurs de types de données](#preprocessing-data-type-formatters)
 
-   Converts a numeric value into a relative string; for example, the value ``representing a time difference of 1 hour would be resolved to a string such as `1:24PM (1 hour ago)`.
+   Convertit une valeur numérique en chaîne relative ; par exemple, la valeur &quot;représentant une différence de temps de 1 heure&quot; serait résolue en une chaîne telle que `1:24PM (1 hour ago)`.
 
 Par exemple :
 
@@ -790,9 +790,9 @@ N:definitions
                 P:format          // data type formatter
 ```
 
-#### Prétraitement : motifs de recherche et de remplacement {#preprocessing-find-and-replace-patterns}
+#### Prétraitement : motifs de recherche et de remplacement  {#preprocessing-find-and-replace-patterns}
 
-For preprocessing you can specify a `pattern` (defined as a [regular expression](https://en.wikipedia.org/wiki/Regular_expression) or regex) that is located and then substituted by the `replace` pattern:
+Pour le prétraitement, vous pouvez spécifier une `pattern` (définie comme une [expression régulière](https://en.wikipedia.org/wiki/Regular_expression) ou un regex) qui est située et remplacée par le modèle `replace` :
 
 * `pattern`
 
@@ -804,10 +804,10 @@ For preprocessing you can specify a `pattern` (defined as a [regular expression]
 
 Un exemple de remplacement peut être décomposé comme suit :
 
-* For the node `definitions/data/preprocessing/apply` with the following two properties:
+* Pour le noeud `definitions/data/preprocessing/apply` avec les deux propriétés suivantes :
 
    * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+   * `replace`:  `$1`
 
 * Une chaîne qui arrive en tant que :
 
@@ -816,11 +816,11 @@ Un exemple de remplacement peut être décomposé comme suit :
 * Sera divisée en quatre sections :
 
    * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+   * `$2` -  `(/jcr:content)` -  `/jcr:content`
+   * `$3` -  `(/|$)` -  `/`
+   * `$4` -  `(.*)` -  `par/text`
 
-* And replaced with the string represented by `$1`:
+* Et remplacé par la chaîne représentée par `$1` :
 
    * `/content/geometrixx/en/services`
 
@@ -828,7 +828,7 @@ Un exemple de remplacement peut être décomposé comme suit :
 
 Ces formateurs convertissent une valeur numérique en chaîne relative.
 
-For example, this can be used for a time column that allows `min`, `avg` and `max` aggregates. As `min`/ `avg`/ `max` aggregates are displayed as a *time difference* (e.g. `10 days ago`), they require a data formatter. For this, a `datedelta` formatter is applied to the `min`/ `avg`/ `max` aggregated values. Si un agrégat `count` est également disponible, aucun formateur n’est nécessaire, pas plus que la valeur d’origine.
+Par exemple, vous pouvez l’utiliser pour une colonne de temps qui autorise les agrégats `min`, `avg` et `max`. Comme les agrégats `min`/ `avg`/ `max` s&#39;affichent sous la forme d&#39;une différence de temps ** (p. ex. `10 days ago`), ils nécessitent un formateur de données. Pour ce faire, un formateur `datedelta` est appliqué aux valeurs agrégées `min`/ `avg`/ `max`. Si un agrégat `count` est également disponible, aucun formateur n’est nécessaire, pas plus que la valeur d’origine.
 
 Actuellement, les formateurs de type de données disponibles sont les suivants :
 
@@ -848,7 +848,7 @@ Actuellement, les formateurs de type de données disponibles sont les suivants 
 
       Il convertit une valeur numérique (interprétée en tant que différence temporelle en jours) en une chaîne de date relative. Par exemple, 1 est formaté comme étant « il y a 1 jour ».
 
-The following example defines `datedelta` formatting for `min` and `max` aggregates:
+L’exemple suivant définit la mise en forme `datedelta` pour les agrégats `min` et `max` :
 
 ```xml
 N:definitions
@@ -901,7 +901,7 @@ N:definitions
    * `sortable`
 
       Utilisé pour des valeurs qui utilisent différentes valeurs (provenant de différentes propriétés) à des fins de tri et d’affichage.
-   En outre, any of the above can be defined as multi value; for example, `string[]` defines an array of strings.
+   En outre, l&#39;une des valeurs ci-dessus peut être définie comme multi-valeurs ; par exemple, `string[]` définit un tableau de chaînes.
 
    L’extracteur de valeurs est sélectionné par le type de colonne. Si l’extracteur de valeurs est disponible pour un type de colonne, il est utilisé. Dans le cas contraire, l’extracteur de valeurs par défaut est utilisé.
 
@@ -910,13 +910,13 @@ N:definitions
    * `timeslot` - Les valeurs sont comparables aux constantes correspondantes de `java.utils.Calendar`.
 
       * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+      * `timeslot:month-of-year` -  `Calendar.MONTH`
+      * `timeslot:week-of-year` -  `Calendar.WEEK_OF_YEAR`
+      * `timeslot:day-of-month` -  `Calendar.DAY_OF_MONTH`
+      * `timeslot:day-of-week` -  `Calendar.DAY_OF_WEEK`
+      * `timeslot:day-of-year` -  `Calendar.DAY_OF_YEAR`
+      * `timeslot:hour-of-day` -  `Calendar.HOUR_OF_DAY`
+      * `timeslot:minute-of-hour` -  `Calendar.MINUTE`
 
 
 * `groupable`
@@ -1010,7 +1010,7 @@ N:defaults
 
 * `aggregate`
 
-   Valid `aggregate` values are the same as for `type` under `aggregates` (see [Column Specific Definitions (definitions - filters / aggregates)](#column-specific-definitions) ).
+   Les valeurs `aggregate` valides sont identiques à celles de `type` sous `aggregates` (voir [Définitions spécifiques à la colonne (définitions - filtres / agrégats)](#column-specific-definitions) ).
 
 ### Événements et actions {#events-and-actions}
 
@@ -1038,11 +1038,11 @@ Les colonnes génériques constituent une extension dans laquelle (la plupart) d
 
 Elles utilisent une boîte de dialogue (standard), que vous personnalisez, pour chaque composant générique. Cette boîte de dialogue permet à l’utilisateur du rapport de définir les propriétés d’une colonne générique sur la page du rapport (à l’aide de l’option de menu **Propriétés de colonne**).
 
-An example is the **Generic** column of the **User Report**; see `/libs/cq/reporting/components/userreport/genericcol`.
+Par exemple, la colonne **Générique** du **rapport utilisateur**; voir `/libs/cq/reporting/components/userreport/genericcol`.
 
 Pour rendre une colonne générique, procédez comme suit :
 
-* Set the `type` property of the column&#39;s `definition` node to `generic`.
+* Définissez la propriété `type` du noeud `definition` de la colonne sur `generic`.
 
    Voir `/libs/cq/reporting/components/userreport/genericcol/definitions`
 
@@ -1070,11 +1070,11 @@ Pour rendre une colonne générique, procédez comme suit :
    * `definitions/aggregates` - agrégats
    * `definitions/filters` - filters
    * `definitions/type` - Type de la colonne (doit être défini dans la boîte de dialogue, soit à l’aide d’un sélecteur/d’une zone de liste modifiable, soit d’un champ masqué)
-   * `definitions/data/resolver` et `definitions/data/resolverConfig` (mais pas `definitions/data/preprocessing` ou `.../clientFilter`) - le résolveur et la configuration
+   * `definitions/data/resolver` et  `definitions/data/resolverConfig` (mais pas  `definitions/data/preprocessing` ou  `.../clientFilter`) - le résolveur et la configuration
    * `definitions/queryBuilder` - la configuration du créateur de requêtes
    * `defaults/aggregate` - l&#39;agrégat par défaut
 
-   In the case of a new instance of the generic column on the **User Report** the properties defined with the dialog are persisted under:
+   Dans le cas d&#39;une nouvelle instance de la colonne générique sur le **rapport utilisateur**, les propriétés définies avec la boîte de dialogue sont conservées sous :
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
 
@@ -1084,13 +1084,13 @@ La conception définit les types de colonne disponibles pour créer un rapport. 
 
 Il est vivement conseillé de créer une conception pour chaque rapport. Cela garantit une parfaite flexibilité. Voir aussi [Définition de votre nouveau rapport](#defining-your-new-report).
 
-The default reporting components are held under `/etc/designs/reports`.
+Les composants de rapports par défaut sont conservés sous `/etc/designs/reports`.
 
 L’emplacement de vos rapports peut varier selon l’endroit où vous avez placé les composants :
 
-* `/etc/designs/reports/<yourReport>` convient si le rapport est situé sous `/apps/cq/reporting`
+* `/etc/designs/reports/<yourReport>` convient si le rapport est situé sous  `/apps/cq/reporting`
 
-* `/etc/designs/<yourProject>/reports/<*yourReport*>` pour les rapports utilisant le modèle `/apps/<yourProject>/reports`
+* `/etc/designs/<yourProject>/reports/<*yourReport*>` pour les rapports utilisant le  `/apps/<yourProject>/reports` modèle
 
 Les propriétés de conception requises sont enregistrées sur `jcr:content/reportpage/report/columns` (par exemple, `/etc/designs/reports/<reportName>/jcr:content/reportpage/report/columns`) :
 
@@ -1100,7 +1100,7 @@ Les propriétés de conception requises sont enregistrées sur `jcr:content/repo
 
 * `sling:resourceType`
 
-   Propriété avec valeur `cq/reporting/components/repparsys`.
+   Propriété avec la valeur `cq/reporting/components/repparsys`.
 
 Voici un exemple de fragment de conception (extrait de la conception du rapport de composants) :
 
@@ -1134,16 +1134,16 @@ Il n’est pas nécessaire de spécifier des conceptions pour chaque colonne. Le
 >
 >Des colonnes par défaut peuvent être créées automatiquement à la création d’un rapport. Elles sont spécifiées dans le modèle.
 
-## Modèle de rapport {#report-template}
+## Modèle de rapport  {#report-template}
 
 Chaque type de rapport doit fournir un modèle. Il s’agit de [Modèles CQ](/help/sites-developing/templates.md) standard qui peuvent être configurés comme tels.
 
 Le modèle doit :
 
-* set the `sling:resourceType` to `cq/reporting/components/reportpage`
+* définissez `sling:resourceType` sur `cq/reporting/components/reportpage`
 
 * indiquer la conception à utiliser ;
-* create a `report` child node that references the container ( `reportbase`) component by means of the `sling:resourceType` property
+* créez un noeud enfant `report` qui référence le composant conteneur ( `reportbase`) au moyen de la propriété `sling:resourceType`
 
 Voici un exemple de fragment de modèle (extrait du modèle de rapport de composants) :
 
@@ -1176,9 +1176,9 @@ Voici un exemple de fragment de modèle qui présente la définition du chemin d
 <!-- .. -->
 ```
 
-The default reporting templates are held under `/libs/cq/reporting/templates`.
+Les modèles de rapports par défaut sont conservés sous `/libs/cq/reporting/templates`.
 
-However, it is strongly recommended that you do not update these nodes, but create your own component nodes under `/apps/cq/reporting/templates` or if more appropriate `/apps/<yourProject>/reports/templates`.
+Cependant, il est fortement recommandé de ne pas mettre à jour ces noeuds, mais de créer vos propres noeuds de composants sous `/apps/cq/reporting/templates` ou, le cas échéant, `/apps/<yourProject>/reports/templates`.
 
 Où, par exemple (voir aussi [Emplacement des composants de rapport](#location-of-report-components)) :
 
@@ -1277,8 +1277,8 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
 
    Cet exemple définit un composant de rapport de base qui :
 
-   * searches for all nodes of type `sling:OsgiConfig`
-   * displays both `pie` and `lineseries` charts
+   * recherche tous les noeuds de type `sling:OsgiConfig`
+   * affiche à la fois les graphiques `pie` et `lineseries`
    * fournit une boîte de dialogue permettant à l’utilisateur de configurer le rapport.
 
 1. Définissez votre premier composant de colonne (columnbase). Par exemple, `bundlecol[cq:Component]` sous `/apps/cq/reporting/components/osgireport`.
@@ -1312,7 +1312,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
    Cet exemple définit un composant de base de colonne qui :
 
    * recherche et renvoie la valeur qu’il reçoit du serveur ; dans ce cas, la propriété `jcr:path` de chaque nœud `sling:OsgiConfig` ;
-   * provides the `count` aggregate
+   * fournit l&#39;agrégat `count`
    * ne peut pas être regroupé ;
    * porte le titre `Bundle` (titre de colonne dans le tableau) ;
    * se trouve dans le groupe sidekick `OSGi Report`
@@ -1320,7 +1320,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
 
    >[!NOTE]
    >
-   >In this example there are no definitions of `N:data` and `P:clientFilter`. Cela est dû au fait que la valeur reçue du serveur est renvoyée sur une base 1:1 ; ce qui est le comportement par défaut.
+   >Dans cet exemple, il n&#39;existe aucune définition de `N:data` et `P:clientFilter`. Cela est dû au fait que la valeur reçue du serveur est renvoyée sur une base 1:1 ; ce qui est le comportement par défaut.
    >
    >Il s’agit de la même définition :
    >
@@ -1377,7 +1377,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
 
    Cet exemple définit un modèle qui :
 
-   * defines the `allowedPaths` for the resulting reports - in the above case anywhere under `/etc/reports`
+   * définit le `allowedPaths` pour les rapports résultants ; dans le cas ci-dessus, sous `/etc/reports`
    * fournit des titres et des descriptions pour le modèle ;
    * fournit une vignette pour l’utiliser dans la liste de modèles (la définition complète de ce nœud n’est pas indiquée ci-dessus ; il est plus facile de copier une instance de thumbnail.png à partir d’un rapport existant).
 
@@ -1394,7 +1394,7 @@ Il est désormais possible de créer une instance de votre nouveau rapport :
 
    >[!NOTE]
    >
-   >Puisque cet exemple ne contient pas de colonnes pouvant être groupées, les graphiques ne sont pas disponibles. To see charts, set `groupable` to `true`:
+   >Puisque cet exemple ne contient pas de colonnes pouvant être groupées, les graphiques ne sont pas disponibles. Pour afficher les graphiques, définissez `groupable` sur `true` :
    >
    >
    ```
@@ -1408,9 +1408,9 @@ Il est désormais possible de créer une instance de votre nouveau rapport :
 
 Cette section décrit les options de configuration avancées pour les services OSGi qui implémentent la structure de rapport.
 
-These can be viewed using the Configuration menu of the web console (available for example at `http://localhost:4502/system/console/configMgr`). Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
+Ils peuvent être affichés à l’aide du menu Configuration de la console Web (disponible par exemple à `http://localhost:4502/system/console/configMgr`). Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
-### Service de base (Configuration des rapports de Day CQ) {#basic-service-day-cq-reporting-configuration}
+### Service de base (Configuration des rapports de Day CQ)  {#basic-service-day-cq-reporting-configuration}
 
 * **Fuseau horaire** définit le fuseau horaire pour lequel les données historiques sont créées. Cela permet d’assurer que le graphique historique affiche les mêmes données pour chaque utilisateur dans le monde entier.
 * **Paramètres régionaux** définit les paramètres régionaux à utiliser avec l’option **Fuseau horaire** pour les données historiques. Les paramètres régionaux sont utilisés pour déterminer certains paramètres du calendrier spécifiques à la région (par exemple, si le premier jour de la semaine est le dimanche ou le lundi).
