@@ -17,7 +17,7 @@ ht-degree: 88%
 ---
 
 
-# Personnalisation de la liste des instances de processus {#customizing-the-listing-of-process-instances}
+# Personnalisation de la liste des instances de processus  {#customizing-the-listing-of-process-instances}
 
 La liste des instances de processus est affichée dans l’onglet Suivi de l’espace de travail AEM Forms.
 
@@ -70,7 +70,7 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
 
 **Exemple:**
 
-To display the `description` property of the process instance in the process instance card, perform the following steps.
+Pour afficher la propriété `description` de l’instance de processus dans la carte de l’instance de processus, effectuez les étapes suivantes.
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Procédez comme suit :
@@ -85,7 +85,7 @@ To display the `description` property of the process instance in the process ins
 1. Procédez comme suit :
 
    1. Ouvrez /apps/ws/js/registry.js pour le modifier.
-   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/processinstance.html`par `text!/lc/`**des applications**/ws/js/runtime/templates/processinstance.html.
+   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/processinstance.html`par `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
 
 1. Les changements ci-dessus peuvent nécessiter une mise à jour du fichier CSS en ajoutant une entrée dans la feuille de style /apps/ws/css/newStyle.css comme suit :
 
