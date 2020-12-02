@@ -49,7 +49,7 @@ Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est 
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+   Selon la configuration de votre instance, l’utilisation de `/content` peut être facultative sur l’environnement de publication.
 
 ```xml
   /content
@@ -71,7 +71,7 @@ Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est 
     /...
 ```
 
-This structure can be viewed from the Websites console, which you can use to [navigate through the tree structure](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Cette structure peut être consultée à partir de la console Sites Web, que vous pouvez utiliser pour [parcourir l&#39;arborescence](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -89,7 +89,7 @@ Lors de la création d’une page, il y a deux champs clés :
    * Il est utilisé pour générer l’URI.
    * L’entrée utilisateur pour ce champ est facultative. Si le nom n’est pas spécifié, il est dérivé du titre.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
+Lors de la création d’une nouvelle page, AEM [validera le nom de la page conformément aux conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
 L’implémentation et la liste des caractères autorisés diffèrent légèrement selon l’interface utilisateur (elle est plus étendue pour l’interface utilisateur tactile), mais le minimum autorisé est :
 
@@ -103,7 +103,7 @@ N’utilisez que ces caractères pour vous assurer qu’ils sont acceptés/utili
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom**[ de la page de cette chaîne et valide le nom en fonction des conventions imposées par AEM et JCR. ](/help/sites-developing/naming-conventions.md) Dans les deux types d’interfaces utilisateur (IU), le champ **Titre** contenant des caractères non valides est accepté, mais le nom est modifié en remplaçant les caractères non valides. Par exemple :
+Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Dans les deux types d’interfaces utilisateur (IU), le champ **Titre** contenant des caractères non valides est accepté, mais le nom est modifié en remplaçant les caractères non valides. Par exemple :
 
 | Titre | Nom dérivé |
 |---|---|
@@ -112,12 +112,12 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 
 #### Nom {#name}
 
-Si vous indiquez un **nom**[ de page lors de la création d’une page, AEM valide le nom en fonction des conventions imposées par AEM et JCR.](/help/sites-developing/naming-conventions.md)
+Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
-In the Classic UI you **cannot enter invalid characters** in the **Name** field.
+Dans l’interface utilisateur classique, vous **ne pouvez pas saisir de caractères non valides** dans le champ **Nom**.
 
 >[!NOTE]
->In the touch-enabled UI you **cannot submit invalid characters** in the **Name** field. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
+>Dans l’interface utilisateur tactile, vous **ne pouvez pas envoyer de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Les composants sont les éléments fournis par AEM afin que vous puissiez ajoute
 * Vidéo
 * etc.
 
-Once you have created and opened a page you can [add content using the components](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), available from the [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l&#39;aide des composants](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponible dans le [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Gestion des pages {#managing-pages}
 
@@ -198,7 +198,7 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 
    >[!NOTE]
    >
-   >Vous pouvez également créer une page lorsque vous modifiez une page existante. Using **Create Child Page **from the **Page** tab of the sidekick, will create a new page directly under the page being edited.
+   >Vous pouvez également créer une page lorsque vous modifiez une page existante. L&#39;utilisation de **Créer une page enfant **à partir de l&#39;onglet **Page** du sidekick créera une nouvelle page directement sous la page en cours de modification.
 
 ### Ouverture d’une page pour la modifier {#opening-a-page-for-editing}
 
