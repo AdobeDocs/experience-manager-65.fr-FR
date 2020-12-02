@@ -36,11 +36,11 @@ Pour plus d’informations, voir [Développement de communautés](/help/communit
 
 >[!NOTE]
 >
->This page is a continuation of the document [AEM Components - The Basics](/help/sites-developing/components-basics.md).
+>Cette page est la suite du document [Composants AEM - Les concepts de base](/help/sites-developing/components-basics.md).
 
 >[!CAUTION]
 >
->Components below `/libs/cq/gui/components/authoring/dialog` are meant to be used only in the Editor (component dialogs in Authoring). S’ils sont utilisés ailleurs (comme dans une boîte de dialogue d’assistant par exemple), ils risquent de ne pas se comporter comme prévu.
+>Les composants ci-dessous `/libs/cq/gui/components/authoring/dialog` sont destinés à être utilisés uniquement dans l’éditeur (boîtes de dialogue de composants dans Création). S’ils sont utilisés ailleurs (comme dans une boîte de dialogue d’assistant par exemple), ils risquent de ne pas se comporter comme prévu.
 
 ## Exemples de code {#code-samples}
 
@@ -56,27 +56,27 @@ En fonction du composant que vous souhaitez implémenter, il est possible d’é
 
 Lors de l’extension ou de la personnalisation d’un composant ou d’une boîte de dialogue, vous pouvez copier ou répliquer la totalité de la structure ou seulement la structure nécessaire pour la boîte de dialogue avant d’apporter vos modifications.
 
-### Extension d’un composant existant {#extending-an-existing-component}
+### Extension d’un composant existant  {#extending-an-existing-component}
 
 L’extension d’un composant existant peut être réalisée grâce à la [hiérarchie des types de ressource](/help/sites-developing/components-basics.md#component-hierarchy-and-inheritance) et aux mécanismes d’héritage associés.
 
 >[!NOTE]
 >
->Les composants peuvent également être redéfinis avec une superposition basée sur la logique du chemin de recherche. However in such case, the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) will not be triggered and `/apps` must define the entire overlay.
+>Les composants peuvent également être redéfinis avec une superposition basée sur la logique du chemin de recherche. Cependant, dans ce cas, la fusion de ressources [Sling](/help/sites-developing/sling-resource-merger.md) ne sera pas déclenchée et `/apps` doit définir l&#39;ensemble de l&#39;incrustation.
 
 >[!NOTE]
 >
 >Le [composant de fragment de contenu](/help/sites-developing/customizing-content-fragments.md) peut également être personnalisé et étendu, bien que la structure complète et les relations avec les actifs doivent être prises en compte.
 
-### Personnalisation d’une boîte de dialogue de composant existante {#customizing-a-existing-component-dialog}
+### Personnalisation d’une boîte de dialogue de composant existante  {#customizing-a-existing-component-dialog}
 
 Il est également possible de remplacer une *boîte de dialogue de composant* en utilisant le [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) et en définissant la propriété `sling:resourceSuperType`.
 
-This means you only need to redefine the required differences, as opposed to redefining the entire dialog (using `sling:resourceSuperType`). Il s’agit désormais de la méthode recommandée pour étendre une boîte de dialogue de composant
+Cela signifie que vous n&#39;avez qu&#39;à redéfinir les différences requises, au lieu de redéfinir la boîte de dialogue entière (à l&#39;aide de `sling:resourceSuperType`). Il s’agit désormais de la méthode recommandée pour étendre une boîte de dialogue de composant
 
 Se reporter au [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) pour plus de détails.
 
-## Définition du balisage {#defining-the-markup}
+## Définition du balisage  {#defining-the-markup}
 
 Votre composant est rendu dans le langage [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir les balises HTML nécessaires pour réaliser le rendu du contenu selon les besoins, dans les environnements de création et de publication.
 
@@ -88,7 +88,7 @@ Le [langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/fr-FR/exp
 >
 >Bien que HTL et JSP puissent être utilisés pour développer des composants, nous abordons ici le développement en HTL, puisque c’est le langage de script recommandé pour AEM.
 
-## Développement de la logique de contenu {#developing-the-content-logic}
+## Développement de la logique de contenu  {#developing-the-content-logic}
 
 Cette logique facultative sélectionne et/ou calcule le contenu dont il faut réaliser le rendu. Elle est appelée à partir d’expressions HTL avec le modèle Use-API approprié.
 
@@ -98,19 +98,19 @@ Le mécanisme permettant de séparer la logique de l’aspect aide à définir c
 
 [L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée.](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) Cela permet d’utiliser le code Java pour implémenter la logique de sélection et de configuration du contenu du composant.
 
-### Utilisation de JavaScript {#using-javascript}
+### Utilisation de JavaScript  {#using-javascript}
 
 [L’Use-API JavaScript HTL permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Cela permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 
-### Utilisation de bibliothèques HTML côté client {#using-client-side-html-libraries}
+### Utilisation de bibliothèques HTML côté client  {#using-client-side-html-libraries}
 
 Les sites web modernes sont très dépendants du traitement côté client effectué par du code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
-To help deal with this issue, AEM provides **Client-side Library Folders**, which allow you to store your client-side code in the repository, organize it into categories and define when and how each category of code is to be served to the client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct.
+Pour résoudre ce problème, AEM fournit **Dossiers de bibliothèque côté client**, qui vous permettent de stocker votre code côté client dans le référentiel, de l&#39;organiser en catégories et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct.
 
 Voir [Utilisation de bibliothèques HTML côté client](/help/sites-developing/clientlibs.md) pour plus d’informations.
 
-## Configuration du comportement de modification {#configuring-the-edit-behavior}
+## Configuration du comportement de modification  {#configuring-the-edit-behavior}
 
 Vous pouvez configurer le comportement de modification d’un composant, notamment ses attributs tels que les actions disponibles pour le composant, les caractéristiques de l’éditeur local et les écouteurs liés aux événements sur le composant. La configuration est commune à l’IU tactile et à l’IU classique, à l’exception de certaines différences.
 
@@ -128,13 +128,13 @@ Pour les composants dont le rendu est sensible au mode WCM, ils doivent être d�
 
 ## Création et configuration d’une boîte de dialogue {#creating-and-configuring-a-dialog}
 
-Les boîtes de dialogue permettent à l’auteur d’interagir avec le composant. Using a dialog allows authors and/or administrators to edit content, configure the component or define design parameters (using a [Design Dialog](#creating-and-configuring-a-design-dialog))
+Les boîtes de dialogue permettent à l’auteur d’interagir avec le composant. L’utilisation d’une boîte de dialogue permet aux auteurs et/ou aux administrateurs de modifier le contenu, de configurer le composant ou de définir des paramètres de conception (à l’aide d’une [boîte de dialogue de conception](#creating-and-configuring-a-design-dialog)).
 
 ### IU Coral et IU Granite {#coral-ui-and-granite-ui}
 
 L’[IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) et l’[IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) définissent l’aspect moderne d’AEM.
 
-[L’IU Granite offre un vaste éventail de composants de base (widgets)](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) nécessaires pour créer une boîte de dialogue dans l’environnement de création. Si nécessaire, vous pouvez étendre cette sélection et [créer votre propre widget](#creatinganewwidget).
+[L’IU Granite offre un vaste éventail de composants de base (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) nécessaires pour créer une boîte de dialogue dans l’environnement de création. Si nécessaire, vous pouvez étendre cette sélection et [créer votre propre widget](#creatinganewwidget).
 
 Pour plus d’informations sur le développement de composants avec des types de ressources Coral et Granite, voir : [Création de composants Experience Manager avec des types de ressources Coral/Granite](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
 
@@ -144,31 +144,31 @@ Pour plus d’informations, voir :
 
    * Fournit une interface utilisateur uniforme dans toutes les solutions cloud
    * [Concepts de l’IU tactile AEM - IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guide de l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Guide de l’IU Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * IU Granite
 
    * Fournit le balisage de l’IU Coral encapsulé dans les composants Sling pour la création de consoles d’interface utilisateur et de boîtes de dialogue
    * [Concepts de l’interface utilisateur tactile AEM - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+   * [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
 >
 >En raison de la nature des composants de l’IU Granite (et des différences par rapport aux widgets ExtJS), il existe certaines différences entre les composants interagissant avec l’IU tactile et l’[IU classique](/help/sites-developing/developing-components-classic.md).
 
-### Création d’une boîte de dialogue {#creating-a-new-dialog}
+### Création d’une boîte de dialogue  {#creating-a-new-dialog}
 
 Les boîtes de dialogue pour l’IU tactile :
 
-* are named `cq:dialog`.
-* are defined as an `nt:unstructured` node with the `sling:resourceType` property set.
+* sont nommés `cq:dialog`.
+* sont définis comme un noeud `nt:unstructured` avec le jeu de propriétés `sling:resourceType`.
 
 * sont situées sous leur nœud `cq:Component` et à côté de leur définition de composant.
 * sont rendues côté serveur (en tant que composants Sling), en fonction de la structure de leur contenu et de la propriété `sling:resourceType`.
 * utilisent le framework de l’IU Granite.
 * contiennent une structure de nœud décrivant les champs dans la boîte de dialogue.
 
-   * these nodes are `nt:unstructured` with the required `sling:resourceType` property.
+   * ces noeuds sont `nt:unstructured` avec la propriété `sling:resourceType` requise.
 
 Un exemple de structure de nœud pourrait être :
 
@@ -216,7 +216,7 @@ Pour créer un widget à utiliser dans une boîte de dialogue de composant pour 
 
 >[!NOTE]
 >
->Pour plus de détails sur l’IU Granite, veuillez consulter la [documentation relative à l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Pour plus de détails sur l’IU Granite, veuillez consulter la [documentation relative à l’IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
 Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. La création d’un champ de formulaire nécessite la création d’un type de ressource. Cela équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
 
@@ -234,7 +234,7 @@ Une fois que vous avez créé votre type de ressource, vous pouvez instancier le
 
 Si vous souhaitez définir le style et le comportement de votre composant, vous pouvez créer une bibliothèque cliente [dédiée](/help/sites-developing/clientlibs.md) qui définit vos CSS/LESS et JS personnalisés.
 
-To have your client library loaded solely for your component dialog (i.e. it will not be loaded for another component) you need to set the property `extraClientlibs`** **of your dialog to the category name of the client library you have just created. Ceci est conseillé si votre bibliothèque cliente est assez volumineuse et/ou si votre champ est spécifique à cette boîte de dialogue et n’est pas nécessaire dans les autres boîtes de dialogue.
+Pour que votre bibliothèque cliente soit chargée uniquement pour votre boîte de dialogue de composant (c.-à-d. qu&#39;elle ne sera pas chargée pour un autre composant), vous devez définir la propriété `extraClientlibs`** **de votre boîte de dialogue sur le nom de catégorie de la bibliothèque cliente que vous venez de créer. Ceci est conseillé si votre bibliothèque cliente est assez volumineuse et/ou si votre champ est spécifique à cette boîte de dialogue et n’est pas nécessaire dans les autres boîtes de dialogue.
 
 Afin que la bibliothèque cliente soit chargée pour toutes les boîtes de dialogue, définissez la propriété category de votre bibliothèque cliente sur `cq.authoring.dialog`. Il s’agit du nom de la catégorie de la bibliothèque cliente qui est incluse par défaut lors du rendu de toutes les boîtes de dialogue. Il convient de procéder de cette façon si votre bibliothèque cliente est peu volumineuse et/ou si le champ est générique et a des chances d’être réutilisé dans d’autres boîtes de dialogue.
 
@@ -244,14 +244,14 @@ Pour consulter un exemple, reportez-vous à la section :
 
    * fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
-#### Extension (héritée de) d’un champ {#extending-inheriting-from-a-field}
+#### Extension (héritée de) d’un champ  {#extending-inheriting-from-a-field}
 
 Selon vos besoins, vous pouvez :
 
 * Étendre un champ de l’IU Granite par héritage de composant ( `sling:resourceSuperType`)
 * Étendre un widget à partir de la bibliothèque de widgets sous-jacente (dans le cas de l’IU Granite, il s’agit de l’IU Coral), en suivant l’API de la bibliothèque de widgets (héritage JS/CSS)
 
-#### Accès aux champs de boîte de dialogue {#access-to-dialog-fields}
+#### Accès aux champs de boîte de dialogue  {#access-to-dialog-fields}
 
 Vous pouvez également utiliser les conditions de rendu (`rendercondition`) pour contrôler qui a accès à des onglets/champs spécifiques dans votre boîte de dialogue. Par exemple :
 
@@ -267,14 +267,14 @@ Vous pouvez également utiliser les conditions de rendu (`rendercondition`) pour
 
 La méthode de gestion des événements dans les champs de boîte de dialogue est désormais appliquée avec les [écouteurs d’une bibliothèque cliente personnalisée](#listeners-in-a-custom-client-library). C’est un changement par rapport à l’ancienne méthode reposant sur des [écouteurs dans la structure de contenu](#listenersinthecontentstructureclassicui).
 
-#### Écouteurs dans une bibliothèque cliente personnalisée {#listeners-in-a-custom-client-library}
+#### Écouteurs dans une bibliothèque cliente personnalisée  {#listeners-in-a-custom-client-library}
 
 Pour injecter une logique dans votre champ, vous devez :
 
 1. Faire marquer votre champ avec une classe CSS donnée (le *hook*).
 1. Définir, dans votre bibliothèque cliente, un écouteur JS associé à ce nom de classe CSS (pour garantir que la logique personnalisée est limitée à ce champ et n’affecte pas les autres champs du même type).
 
-Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. Consultez la [documentation relative à l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) pour identifier l’événement auquel vous voulez réagir. Ceci est très similaire au processus que vous avez dû suivre avec ExtJS dans le passé : identifier la page de documentation d’un widget donné, puis vérifier les détails de son API d’événement.
+Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. Consultez la [documentation relative à l’IU Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) pour identifier l’événement auquel vous voulez réagir. Ceci est très similaire au processus que vous avez dû suivre avec ExtJS dans le passé : identifier la page de documentation d’un widget donné, puis vérifier les détails de son API d’événement.
 
 Pour consulter un exemple, reportez-vous à la section :
 
@@ -282,7 +282,7 @@ Pour consulter un exemple, reportez-vous à la section :
 
    * fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
-#### Écouteurs dans la structure de contenu {#listeners-in-the-content-structure}
+#### Écouteurs dans la structure de contenu  {#listeners-in-the-content-structure}
 
 Dans l’IU classique avec ExtJS, il était habituel de trouver des écouteurs pour un widget donné dans la structure de contenu. C’est différent dans l’IU tactile car le code correspondant aux écouteurs JS (ou n’importe quel type de code d’ailleurs) n’est plus défini dans le contenu.
 
@@ -303,9 +303,9 @@ Pour consulter un exemple, reportez-vous à la section :
 /libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title
 ```
 
-#### Validation de champ (IU Granite) {#field-validation-granite-ui}
+#### Validation de champ (IU Granite)  {#field-validation-granite-ui}
 
-La validation du champ dans l’IU Granite et les composants de l’IU Granite (équivalent aux widgets) est effectuée à l’aide de l’API `foundation-validation`. [Consultez la documentation `foundation-valdiation` Granite pour plus de détails.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+La validation du champ dans l’IU Granite et les composants de l’IU Granite (équivalent aux widgets) est effectuée à l’aide de l’API `foundation-validation`. [Consultez la documentation  `foundation-valdiation` Granite pour plus de détails.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
 Pour consulter des exemples, reportez-vous à :
 
@@ -321,7 +321,7 @@ La boîte de dialogue Conception est utilisée lorsqu’un composant possède de
 
 La définition est très similaire à celle d’une boîte de dialogue[ servant à modifier le contenu ](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
 
-* Node name: `cq:design_dialog`
+* Nom du noeud : `cq:design_dialog`
 * Type : `nt:unstructured`
 
 ## Création et configuration d’un éditeur local {#creating-and-configuring-an-inplace-editor}
@@ -332,13 +332,13 @@ Un éditeur local n’est pas nécessaire/déterminant pour chaque type de compo
 
 Voir [Extension de la création de page - Ajouter un éditeur local](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor) pour plus d’informations.
 
-## Personnalisation de la barre d’outils d’un composant {#customizing-the-component-toolbar}
+## Personnalisation de la barre d’outils d’un composant  {#customizing-the-component-toolbar}
 
 La [barre d’outils de composant](/help/sites-developing/touch-ui-structure.md#component-toolbar) permet à l’utilisateur d’accéder à un ensemble d’actions pour le composant, par exemple, modifier, configurer, copier et supprimer.
 
 Voir [Extension de la création de page - Ajouter une action à une barre d’outils de composant](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) pour plus d’informations.
 
-## Configuration d’un composant pour le rail Références (emprunté/prêté) {#configuring-a-component-for-the-references-rail-borrowed-lent}
+## Configuration d’un composant pour le rail Références (emprunté/prêté)  {#configuring-a-component-for-the-references-rail-borrowed-lent}
 
 Si votre nouveau composant fait référence au contenu d’autres pages, vous pouvez indiquer s’il doit se répercuter sur les sections **Contenu emprunté** et **Contenu prêté** du rail [**Références**](/help/sites-authoring/basic-handling.md#references).
 
@@ -352,7 +352,7 @@ Créez une nouvelle entrée dans la définition, en spécifiant votre composant,
 >
 >Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
-## Activation et ajout d’un composant au système de paragraphe {#enabling-and-adding-your-component-to-the-paragraph-system}
+## Activation et ajout d’un composant au système de paragraphe  {#enabling-and-adding-your-component-to-the-paragraph-system}
 
 Une fois que le composant a été développé, il doit pouvoir être utilisé dans un système de paragraphe approprié, de sorte à être accessible pour les pages demandées.
 
@@ -392,7 +392,7 @@ Ce comportement et la relation actif à composant requise peuvent être configur
    * `assetGroup` :
 
       * Type : `String`
-      * Value: the group that the related asset belongs to; for example, `media`
+      * Valeur : le groupe auquel appartient l&#39;actif lié ; par exemple, `media`
    * `assetMimetype` :
 
       * Type : `String`
@@ -404,7 +404,7 @@ Ce comportement et la relation actif à composant requise peuvent être configur
    * `resourceType` :
 
       * Type : `String`
-      * Value: the related component resource; for example, `foundation/components/image`
+      * Valeur : la ressource relative aux composantes connexes ; par exemple, `foundation/components/image`
    * `type` :
 
       * Type : `String`
@@ -430,7 +430,7 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 >[!NOTE]
 >
->The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) and Editable Templates. See [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
+>La création automatique d’instances de composant peut désormais être facilement configurée dans l’interface utilisateur lors de l’utilisation de [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et de modèles modifiables. Voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) pour plus d&#39;informations sur la définition des composants automatiquement associés à des types de supports donnés.
 
 ## Utilisation de l’extension AEM Brackets {#using-the-aem-brackets-extension}
 
@@ -439,19 +439,19 @@ L’[extension AEM Brackets](/help/sites-developing/aem-brackets.md) fournit un
 L’extension :
 
 * Facilite la synchronisation (aucun Maven ou File Vault requis) pour améliorer le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets.
-* Provides some [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) support, the template language designed to simplify component development and increase security.
+* Prise en charge de [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), langage de modèle conçu pour simplifier le développement des composants et accroître la sécurité.
 
 >[!NOTE]
 >
 >Brackets est le mécanisme recommandé pour créer des composants. Il remplace la fonctionnalité CRXDE Lite - Créer un composant, qui a été conçue pour l’IU classique.
 
-## Migration à partir d’un composant classique {#migrating-from-a-classic-component}
+## Migration à partir d’un composant classique  {#migrating-from-a-classic-component}
 
 Lors de la migration d’un composant de l’IU classique vers un composant pouvant être utilisé avec l’IU tactile (exclusivement ou conjointement), les problèmes suivants doivent être anticipés : 
 
 * HTL
 
-   * L’utilisation d’[HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) n’est pas obligatoire, mais si le composant doit être mis à jour, c’est l’occasion idéale pour envisager une [migration de JSP vers HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * L’utilisation d’[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) n’est pas obligatoire, mais si le composant doit être mis à jour, c’est l’occasion idéale pour envisager une [migration de JSP vers HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Composants
 
@@ -468,7 +468,7 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
    * Migration de vtypes vers la [validation dans l’IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
    * À l’aide d’écouteurs JS. Pour plus d’informations, voir [Gestion des événements de champ](#handling-field-events) et la session AEM Gems sur la [personnalisation des champs de boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
-### Migration du code cq:listener {#migrating-cq-listener-code}
+### Migration du code cq:listener  {#migrating-cq-listener-code}
 
 Si vous migrez un projet conçu pour l’IU classique, le code `cq:listener` (et les bibliothèques clientes associées aux composants) peut utiliser des fonctions spécifiques à l’IU classique (telles que `CQ.wcm.*`). Pour la migration, vous devez mettre à jour ce code en utilisant les objets/fonctions équivalents dans l’IU tactile.
 
@@ -486,7 +486,7 @@ if (Granite.author) {
 }
 ```
 
-## Documentation de votre composant {#documenting-your-component}
+## Documentation de votre composant  {#documenting-your-component}
 
 Pour les développeurs, il est préférable d’accéder facilement à la documentation des composants afin de pouvoir comprendre rapidement :
 
@@ -502,4 +502,4 @@ Il suffit de placer un fichier `README.md` dans la structure du composant. Ce Ma
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
-The supported markdown is the same as that for [content fragments](/help/assets/content-fragments/content-fragments-markdown.md).
+Le balisage pris en charge est identique à celui des fragments de contenu [](/help/assets/content-fragments/content-fragments-markdown.md).
