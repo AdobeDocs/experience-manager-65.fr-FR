@@ -38,13 +38,13 @@ CRXDE Lite est recommandé si vous ne disposez pas d’un accès direct au serve
 >
 >Il est recommandé d’utiliser [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) et [AEM HTL Brackets Extension](/help/sites-developing/aem-brackets.md) pendant le développement du projet.
 
-## Prise en main de CRXDE Lite {#getting-started-with-crxde-lite}
+## Prise en main de CRXDE Lite  {#getting-started-with-crxde-lite}
 
 Pour commencer avec CRXDE Lite, procédez comme suit :
 
 1. Installez AEM.
-1. Dans votre navigateur, entrez `https://<host>:<port>/crx/de`. Par défaut, il est `https://localhost:4502/crx/de`.
-1. Entrez votre **nom d’utilisateur** et votre **mot de passe**. By default it is `admin` and `admin`.
+1. Dans votre navigateur, saisissez `https://<host>:<port>/crx/de`. Par défaut, il est `https://localhost:4502/crx/de`.
+1. Entrez votre **nom d’utilisateur** et votre **mot de passe**. Par défaut, il est `admin` et `admin`.
 
 1. Cliquez sur **OK**.
 
@@ -54,7 +54,7 @@ L’interface utilisateur de CRXDE Lite est la suivante dans votre navigateur 
 
 Vous pouvez désormais utiliser CRXDE Lite pour développer votre application.
 
-## Présentation de l’interface utilisateur {#overview-of-the-user-interface}
+## Présentation de l’interface utilisateur  {#overview-of-the-user-interface}
 
 CRXDE Lite offre les fonctionnalités suivantes :
 
@@ -106,7 +106,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Créer ...<br /> </td>
-   <td><p>Menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :<br /> </p> <p>- <strong>Nœud</strong> : nœud avec un type de nœud arbitraire<br /> </p> <p>- <strong>File</strong>: nt:file node and its nt:resource subnode</p> <p>- <strong>Dossier</strong> : nœud nt:folder</p> <p>- <strong>Modèle</strong> : modèle AEM</p> <p>- <strong>Composant</strong> : composant AEM</p> <p>- <strong>Boîte de dialogue</strong> : boîte de dialogue AEM</p> </td>
+   <td><p>Menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :<br /> </p> <p>- <strong>Nœud</strong> : nœud avec un type de nœud arbitraire<br /> </p> <p>- <strong>Fichier</strong> : nt:file node et son sous-noeud nt:resource</p> <p>- <strong>Dossier</strong> : nœud nt:folder</p> <p>- <strong>Modèle</strong> : modèle AEM</p> <p>- <strong>Composant</strong> : composant AEM</p> <p>- <strong>Boîte de dialogue</strong> : boîte de dialogue AEM</p> </td>
   </tr>
   <tr>
    <td>Supprimer<br /> </td>
@@ -118,7 +118,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Coller<br /> </td>
-   <td>Pastes the copied node under the selected node.<br /> </td>
+   <td>Colle le noeud copié sous le noeud sélectionné.<br /> </td>
   </tr>
   <tr>
    <td>Déplacer ...<br /> </td>
@@ -148,38 +148,38 @@ CRXDE Lite offre les fonctionnalités suivantes :
 Pour créer un dossier avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. In the Navigation pane, right-click the folder under which you want to create the new folder, select **Create ...**, then **Create Folder ...**.
+1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier sous lequel vous souhaitez créer le nouveau dossier, sélectionnez **Créer ...**, puis **Créer un dossier...**.
 
 1. Entrez le **nom** du dossier et cliquez sur **OK**.
 
 1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
 
-## Création d’un modèle {#creating-a-template}
+## Création d’un modèle  {#creating-a-template}
 
 Pour créer un modèle avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier dans lequel vous souhaitez créer le modèle, sélectionnez **Créer ...**, puis **Créer un modèle ...**.
 
-1. Définissez les champs **Libellé**, **Titre**, **Description**, **Type de ressource** et **Classement** du modèle. Cliquez sur **Suivant**.
+1. Définissez les champs **Libellé**, **Titre**, **Description**, **Type de ressource** et **Classement** du modèle. Cliquez sur **Next** (Suivant).
 
 1. Cette étape est facultative : définissez **Chemins autorisés**. Cliquez sur **Suivant**
 
-1. This step is optional: set the **Allowed Parents**. Cliquez sur **Suivant**.
+1. Cette étape est facultative : définissez **Parents autorisés**. Cliquez sur **Next** (Suivant).
 
-1. This step is optional: set the **Allowed Children**. Cliquez sur **OK**.
+1. Cette étape est facultative : définissez **Enfants autorisés**. Cliquez sur **OK**.
 
 1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
 
 Cela crée :
 
-* A node of type `cq:Template` with Template properties
+* Noeud de type `cq:Template` avec propriétés de modèle
 
 * Un nœud enfant de type `cq:PageContent`avec les propriétés de contenu de page
 
 Vous pouvez ajouter des propriétés à votre modèle : reportez-vous à la section [Création d’une propriété](#creating-a-property).
 
-## Création d’un composant {#creating-a-component}
+## Création d’un composant  {#creating-a-component}
 
 La fonctionnalité décrite ici n’est disponible que si CQ5 est installé, c’est-à-dire si le type de nœud `cq:Component` est disponible dans le référentiel.
 
@@ -188,11 +188,11 @@ Pour créer un composant avec CRXDE Lite :
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier dans lequel vous souhaitez créer le composant, sélectionnez **Créer ...**, puis **Créer un composant ...**.
 
-1. Définissez les champs **Libellé**, **Titre**, **Description**, **Super type ressource** et **Groupe** du modèle. Cliquez sur **Suivant**.
+1. Définissez les champs **Libellé**, **Titre**, **Description**, **Super type ressource** et **Groupe** du modèle. Cliquez sur **Next** (Suivant).
 
-1. Cette étape est facultative : définissez les propriétés du composant **Est conteneur**, **Pas de décoration**, **Nom de cellule** et **Chemin de la boîte de dialogue**. Cliquez sur **Suivant**.
+1. Cette étape est facultative : définissez les propriétés du composant **Est conteneur**, **Pas de décoration**, **Nom de cellule** et **Chemin de la boîte de dialogue**. Cliquez sur **Next** (Suivant).
 
-1. Cette étape est facultative : définissez la propriété de composant **Parents autorisés**. Cliquez sur **Suivant**.
+1. Cette étape est facultative : définissez la propriété de composant **Parents autorisés**. Cliquez sur **Next** (Suivant).
 
 1. Cette étape est facultative : définissez la propriété de composant **Enfant autorisé**. Cliquez sur **OK**.
 
@@ -200,16 +200,16 @@ Pour créer un composant avec CRXDE Lite :
 
 Cela crée :
 
-* Noeud de type `cq:Component`
+* Un noeud de type `cq:Component`
 * Les propriétés du composant
 * Un script .jsp de composant
 
-## Création d’une boîte de dialogue {#creating-a-dialog}
+## Création d’une boîte de dialogue  {#creating-a-dialog}
 
 Pour créer une boîte de dialogue avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. In the Navigation pane, right-click the component where you want to create the dialog, select **Create ...**, then **Create Dialog ...**.
+1. Dans le volet de navigation, cliquez avec le bouton droit sur le composant dans lequel vous souhaitez créer la boîte de dialogue, sélectionnez **Créer ...**, puis **Créer une boîte de dialogue...**.
 
 1. Entrez le **Libellé** et le **Titre**. Cliquez sur **OK**.
 
@@ -223,7 +223,7 @@ Vous pouvez désormais adapter la boîte de dialogue à vos besoins en modifiant
 
 Vous pouvez également utiliser l’éditeur de boîte dialogue pour modifier une boîte de dialogue. Un double-clic sur le nœud dialog dans CRXDE Lite fait apparaître l’éditeur. Plus d’informations sur l’éditeur de boîte de dialogue sont disponibles [ici](/help/sites-developing/dialog-editor.md).
 
-## Création d’un nœud {#creating-a-node}
+## Création d’un nœud  {#creating-a-node}
 
 Pour créer un nœud avec CRXDE Lite :
 
@@ -250,7 +250,7 @@ Pour créer une propriété avec CRXDE Lite :
 
 1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
 
-## Création d’un script {#creating-a-script}
+## Création d’un script  {#creating-a-script}
 
 Pour créer un script :
 
@@ -265,7 +265,7 @@ Pour créer un script :
 
 ## Exportation et importation de types de nœuds {#exporting-and-importing-node-types}
 
-With CRXDE Lite you can import and/or export node type definitions in [CND (Compact Namespace and Node Type Definition) notation](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Avec CRXDE Lite, vous pouvez importer et/ou exporter des définitions de type de noeud dans la notation [CND (Compact Espace de nommage and Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Pour exporter une définition de type de nœud :
 
@@ -286,7 +286,7 @@ Pour importer une définition de type de nœud :
 
 ## Journalisation {#logging}
 
-With CRXDE Lite you can display the file `error.log` that is located on the file system at `<crx-install-dir>/crx-quickstart/server/logs` and filter it with the appropriate log level. Procédez comme suit :
+Avec CRXDE Lite, vous pouvez afficher le fichier `error.log` situé sur le système de fichiers à `<crx-install-dir>/crx-quickstart/server/logs` et le filtrer au niveau de journal approprié. Procédez comme suit :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans l’onglet **Console** en bas de la fenêtre, dans le menu déroulant à droite, sélectionnez **Journaux de serveur**.
@@ -295,7 +295,7 @@ With CRXDE Lite you can display the file `error.log` that is located on the file
 
 Vous pouvez :
 
-* Adjust the log parameters in the Felix Console by clicking the **Logging Configurations** icon.
+* Réglez les paramètres de journal dans la console Felix en cliquant sur l&#39;icône **Configurations de journalisation**.
 * Effacer les messages en cliquant sur l’icône **Pinceau**.
 * Épingler le message à la sélection en cours en cliquant sur l’icône **Épingler**.
 * Activer ou désactiver l’affichage des messages en cliquant sur l’icône **Stop**.
