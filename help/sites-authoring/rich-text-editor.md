@@ -45,11 +45,11 @@ Cette barre d’outils propose les options suivantes :
 * **Fermer**
 * **Enregistrer**
 
-## Édition en mode Plein écran {#full-screen-editing}
+## Édition en mode Plein écran  {#full-screen-editing}
 
-For text-based components, tapping the full-screen mode from the toolbar ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
+Pour les composants basés sur du texte, appuyer sur le mode plein écran de la barre d’outils ![](do-not-localize/screen_shot_2018-03-21at163236.png) ouvre l’éditeur de texte enrichi et masque le reste du contenu de la page.
 
-Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
+Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. La disponibilité des options [dépend de la configuration](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
