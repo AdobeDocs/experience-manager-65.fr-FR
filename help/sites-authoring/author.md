@@ -26,7 +26,7 @@ ht-degree: 88%
 AEM vous propose deux environnements :
 
 * Création
-* Publication
+* Publier
 
 Ces environnements interagissent afin que vous puissiez rendre le contenu disponible sur votre site web, pour que vos visiteurs puissent le lire.
 
@@ -69,7 +69,7 @@ Certaines tâches administratives peuvent aussi vous aider à gérer votre conte
 
 #### Environnement de publication {#publish-environment}
 
-When ready, the AEM site&#39;s content is published to the **publish environment**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
+Une fois prêt, le contenu du site AEM est publié sur l&#39;**environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
 Dans le cas d’un site web ordinaire, l’environnement de publication est situé à l’intérieur de la zone DMZ ; en d’autres termes, il est disponible sur Internet, mais il ne bénéficie plus de la protection absolue de votre réseau interne.
 
