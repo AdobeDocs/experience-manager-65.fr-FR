@@ -22,7 +22,7 @@ ht-degree: 95%
 
 Cette section décrit les paramètres facultatifs que vous pouvez configurer pour améliorer les performances du serveur d’applications AEM forms.
 
-## Configuration des sources de données du serveur d’applications {#configuring-application-server-data-sources}
+## Configuration des sources de données du serveur d’applications  {#configuring-application-server-data-sources}
 
 AEM forms utilise le référentiel AEM forms comme source de données. Le référentiel AEM forms stocke les actifs de l’application et, lors de l’exécution, les services peuvent récupérer ces derniers dans le cadre d’un processus métier automatisé.
 
@@ -36,7 +36,7 @@ Utilisez WebLogic Server Administration Console pour contrôler les statistiques
 
 Lorsque l’administrateur du serveur d’applications détermine les paramètres corrects du pool de connexions, il doit communiquer ces informations à l’administrateur de la base de données. Cette information lui est nécessaire car le nombre de connexions à la base de données doit être égal au nombre de connexions définies dans le pool pour la source de données. Ensuite, suivez la procédure ci-dessous pour configurer les paramètres du pool de connexions de votre serveur d’applications et de votre type de source de données.
 
-### Configuration des paramètres du pool de connexions sur WebLogic pour Oracle et MySQL {#configure-connection-pool-settings-for-weblogic-for-oracle-and-mysql}
+### Configuration des paramètres du pool de connexions sur WebLogic pour Oracle et MySQL  {#configure-connection-pool-settings-for-weblogic-for-oracle-and-mysql}
 
 1. Sous Domain Structure, cliquez sur Services > JDBC > Data sources et, dans le volet de droite, cliquez sur IDP_DS.
 1. Dans l’écran suivant, cliquez sur Configuration > Connection Pool (onglet), puis saisissez une valeur dans les champs suivants :
@@ -49,42 +49,42 @@ Lorsque l’administrateur du serveur d’applications détermine les paramètre
 1. Cliquez sur Enregistrer, puis sur Activer les changements.
 1. Redémarrez le serveur géré WebLogic.
 
-### Configuration des paramètres du pool de connexions sur WebLogic pour SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
+### Configuration des paramètres du pool de connexions sur WebLogic pour SQLServer  {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
 
 1. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Services > JDBC > Data sources, puis dans le volet de droite, cliquez sur EDC_DS.
 1. Dans l’écran suivant, cliquez sur Configuration > Connection Pool (onglet), puis saisissez une valeur dans les champs suivants :
 
-   * Initial Capacity
-   * Maximum Capacity
-   * Capacity Increment
+   * Capacité initiale
+   * Capacité maximale
+   * Augmentation de capacité
    * Statement Cache Size
 
 1. Cliquez sur Enregistrer, puis sur Activer les changements.
 1. Redémarrez le serveur géré WebLogic.
 
-### Configuration des paramètres du pool de connexions sur WebLogic pour DB2 {#configure-connection-pool-settings-for-websphere-for-db2}
+### Configuration des paramètres du pool de connexions sur WebLogic pour DB2  {#configure-connection-pool-settings-for-websphere-for-db2}
 
 1. Dans l’arborescence de navigation, cliquez sur Resources > JDBC > JDBC Providers. Dans le volet de droite, cliquez sur la source de données que vous venez de créer, DB2 Universal JDBC Driver Provider ou LiveCycle - db2 - IDP_DS.
 1. Sous Additional Properties, cliquez sur Data sources, puis sélectionnez IDP_DS.
 1. Dans l’écran suivant, sous Additional Properties, cliquez sur Connection Pool Properties, puis saisissez une valeur dans les champs Maximum Connections et Minimum Connections.
 1. Cliquez sur OK ou sur Apply, puis sur Save Directly To Master Configuration.
 
-### Configuration des paramètres du pool de connexions sur WebLogic pour Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
+### Configuration des paramètres du pool de connexions sur WebLogic pour Oracle  {#configure-connection-pool-settings-for-websphere-for-oracle}
 
 1. Dans l’arborescence de navigation, cliquez sur Resources > JDBC > JDBC Providers. Dans le volet de droite, cliquez sur la source de données Oracle JDBC Driver que vous venez de créer.
 1. Sous Additional Properties, cliquez sur Data sources, puis sélectionnez IDP_DS.
 1. Dans l’écran suivant, sous Additional Properties, cliquez sur Connection Pool Properties, puis saisissez une valeur dans les champs Maximum Connections et Minimum Connections.
 1. Cliquez sur OK ou sur Apply, puis sur Save Directly To Master Configuration.
 
-### Configuration des paramètres du pool de connexions sur WebLogic pour SQLServer {#configure-connection-pool-settings-for-websphere-for-sqlserver}
+### Configuration des paramètres du pool de connexions sur WebLogic pour SQLServer  {#configure-connection-pool-settings-for-websphere-for-sqlserver}
 
 1. Dans l’arborescence de navigation, cliquez sur Resources > JDBC > JDBC Providers, puis dans le volet de droite, cliquez sur la source de données User-Defined JDBC Driver que vous avez créée.
 1. Sous Additional Properties, cliquez sur Data sources, puis sélectionnez IDP_DS.
 1. Dans l’écran suivant, sous Additional Properties, cliquez sur Connection Pool Properties, puis saisissez une valeur dans les champs Maximum Connections et Minimum Connections.
 1. Cliquez sur OK ou sur Apply, puis sur Save Directly To Master Configuration.
 
-## Optimisation de documents en ligne d’entrée et impacts sur la mémoire JVM {#optimizing-inline-documents-and-impact-on-jvm-memory}
+## Optimisation de documents en ligne d’entrée et impacts sur la mémoire JVM  {#optimizing-inline-documents-and-impact-on-jvm-memory}
 
 Si vous traitez régulièrement des documents de petite taille, vous pouvez améliorer les performances associées à la vitesse de transfert des documents et à l’espace de stockage. Pour ce faire, implémentez les configurations de produit AEM forms suivantes :
 
@@ -93,7 +93,7 @@ Si vous traitez régulièrement des documents de petite taille, vous pouvez amé
 
 La taille maximale de la ligne d’entrée et les répertoires de stockage (répertoire des fichiers temporaires et répertoire de stockage global d&#39;AEM forms) sont configurés dans Administration Console.
 
-### Taille du document et taille maximale de la ligne d’entrée {#document-size-and-maximum-inline-size}
+### Taille du document et taille maximale de la ligne d’entrée  {#document-size-and-maximum-inline-size}
 
 Lorsque la taille d’un document à traiter avec AEM forms est inférieure ou égale à la taille maximale de la ligne d’entrée du document par défaut, le document est stocké sur le serveur de la ligne d’entrée et sérialisé sous la forme d’un objet Adobe Document. Le stockage de documents de ligne d’entrée peut considérablement accroître les performances. Toutefois, si vous utilisez le processus des formulaires, le contenu peut également être stocké dans la base de données à des fins de suivi. Par conséquent, une augmentation de la taille maximale de la ligne d’entrée peut affecter la taille de la base de données.
 
@@ -122,7 +122,7 @@ Lorsque le contenu du document est en ligne d’entrée (c’est-à-dire qu’il
 >
 >La taille maximale par défaut de la ligne d’entrée équivaut à 65 536 octets.
 
-### Taille de tas maximale de la JVM {#jvm-maximum-heap-size}
+### Taille de tas maximale de la JVM  {#jvm-maximum-heap-size}
 
 L’augmentation de la taille maximale de la ligne d’entrée nécessite plus de mémoire pour le stockage des documents sérialisés. Une augmentation de la taille maximale du tas de la JVM est donc généralement nécessaire.
 
@@ -150,20 +150,20 @@ Par exemple, les précédentes opérations sur le serveur d’applications ont l
 
 Pour éviter une fragmentation du tas, la taille du document de ligne d’entrée ne doit pas dépasser la taille totale du tas de plus de 0,1 %. Par exemple, une taille maximale du tas JVM de 512 Mo peut prendre en charge une taille maximale de ligne d’entrée de 512 Mo x 0,001 = 0,512 Mo, soit 512 Ko.
 
-## Amélioration du fonctionnement du serveur d’applications WebSphere {#websphere-application-server-enhancements}
+## Amélioration du fonctionnement du serveur d’applications WebSphere  {#websphere-application-server-enhancements}
 
 Cette section décrit les paramètres spécifiques à l’environnement du serveur d’applications WebSphere.
 
-### Augmentation de la quantité maximale de mémoire affectée à la JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
+### Augmentation de la quantité maximale de mémoire affectée à la JVM  {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
 Si vous exécutez Configuration Manager ou si vous essayez de générer le code de déploiement EJB (Enterprise JavaBeans) à l’aide de l’utilitaire de ligne de commande *ejbdeploy* et qu’une erreur OutOfMemory survient, augmentez la quantité maximale de mémoire allouée à la JVM.
 
-1. Edit the ejbdeploy script in the *[appserver root]*/deploytool/itp/ directory:
+1. Modifiez le script ejbdeploy dans le répertoire *[racine du serveur d’applications]*/deploytool/itp/ :
 
    * (Windows) `ejbdeploy.bat`
-   * (Linux and UNIX) `ejbdeploy.sh`
+   * (Linux et UNIX) `ejbdeploy.sh`
 
-1. Find the `-Xmx256M` parameter and change it to a higher value, such as `-Xmx1024M`.
+1. Recherchez le paramètre `-Xmx256M` et remplacez-le par une valeur supérieure, telle que `-Xmx1024M`.
 1. Enregistrez le fichier .
 1. Exécutez la commande `ejbdeploy` ou effectuez de nouveau le déploiement à l’aide de Configuration Manager.
 
@@ -173,7 +173,7 @@ Cette section décrit les paramètres propres à un environnement exécutant le 
 
 L’utilisation du pool de connexions sur la connexion de recherche peut réduire le nombre de ports requis de 50 %. Ceci est dû au fait que cette connexion utilise toujours les mêmes informations d’identification pour un domaine donné, et le contexte et les objets liés sont fermés de manière explicite.
 
-### Configuration de Windows Server pour le pool de connexion {#configure-your-windows-server-for-connection-pooling}
+### Configuration de Windows Server pour le pool de connexion  {#configure-your-windows-server-for-connection-pooling}
 
 1. Cliquez sur Démarrer > Exécuter pour lancer l’éditeur de registre, puis dans le champ Ouvrir, tapez `regedit` et cliquez sur OK.
 1. Accéder à la clé de Registre `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
@@ -182,7 +182,7 @@ L’utilisation du pool de connexions sur la connexion de recherche peut réduir
 
    >[!NOTE]
    >
-   >If you do not see a flashing cursor and `New Value #` inside the box, right-click inside the right panel, select Rename and, in the Name box, type `TcpTimedWaitDelay`*.*
+   >Si vous ne voyez pas de curseur clignotant et `New Value #` dans la zone, cliquez avec le bouton droit dans le panneau de droite, sélectionnez Renommer et, dans la zone Nom, tapez `TcpTimedWaitDelay`*.*
 
 1. Répétez l’étape 4 pour les noms de valeur MaxUserPort, MaxHashTableSize et MaxFreeTcbs.
 1. Cliquez deux fois dans le volet de droite pour définir la valeur TcpTimedWaitDelay. Sous Base, sélectionnez Décimale puis entrez `30` dans le champ Valeur.
