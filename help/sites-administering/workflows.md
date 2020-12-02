@@ -39,7 +39,7 @@ Les workflows d’entreprise que votre organisation a établis peuvent être rep
 >
 >Pour plus d’informations, voir :
 >
->* Applying and participating in workflows: [Working with Workflows](/help/sites-authoring/workflows.md).
+>* Application et participation aux workflows : [Utilisation de Workflows](/help/sites-authoring/workflows.md).
 >* Création de modèles de workflows et extension de la fonctionnalité de workflow : [Développement et extension des workflows](/help/sites-developing/workflows.md).
 >* Amélioration des performances des workflows qui utilisent des ressources de serveur significatives : [Traitement de workflows simultanés](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 
@@ -47,7 +47,7 @@ Les workflows d’entreprise que votre organisation a établis peuvent être rep
 
 
 
-## Modèles et instances de workflow {#workflow-models-and-instances}
+## Modèles et instances de workflow  {#workflow-models-and-instances}
 
 Les [modèles de workflows](/help/sites-developing/workflows.md#model) dans AEM sont la représentation et la mise en œuvre de processus d’entreprise :
 
@@ -60,7 +60,7 @@ Lorsqu’un modèle de workflow est démarré (exécuté), une instance de workf
 
 >[!CAUTION]
 >
->Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. See [Developing Workflows](/help/sites-developing/workflows.md#model) for further details.
+>Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Voir [Workflows en développement](/help/sites-developing/workflows.md#model) pour plus de détails.
 
 Les instances de flux de travail progressent tout au long du cycle de vie suivant :
 
@@ -90,7 +90,7 @@ Un utilisateur ou un service exécute les étapes de workflow, selon le type d�
 >
 >Si une erreur se produit, la mise en œuvre du service/de l’étape doit gérer le comportement pour un scénario d’erreur. Le moteur de workflow lui-même relance la tâche, puis consigne une erreur et arrête l’’instance.
 
-## Statut et actions de workflow {#workflow-status-and-actions}
+## Statut et actions de workflow  {#workflow-status-and-actions}
 
 Les workflows peuvent présenter l’un des statuts suivants :
 
@@ -103,11 +103,11 @@ Les workflows peuvent présenter l’un des statuts suivants :
 
 >[!NOTE]
 >
->When the execution of a Process Step results in errors, the step appears in the administrator&#39;s Inbox and the workflow status is **RUNNING**.
+>Lorsque l’exécution d’une étape de processus génère des erreurs, l’étape s’affiche dans la boîte de réception de l’administrateur et l’état du processus est **EN COURS**.
 
 En fonction du statut actuel, vous pouvez effectuer des actions sur les instances de workflows en cours d’exécution lorsque vous devez intervenir dans la progression normale d’une instance de workflow :
 
 * **Suspendre** : arrête provisoirement l’exécution du workflow. Cette suspension est utile dans les cas exceptionnels où vous ne souhaitez pas que le workflow se poursuive (par exemple, pour des raisons de maintenance). Suspendre un workflow redéfinit son statut sur SUSPENDU.
-* **Reprendre**: Redémarre un flux de travaux suspendu au même point d’exécution où il a été suspendu, en utilisant la même configuration.
-* **Arrêter**: Met fin à l’exécution du flux de travail et définit l’état sur **ABORTED**. Une instance de workflow abandonnée ne peut pas être redémarrée.
+* **Reprendre** : Redémarre un flux de travaux suspendu au même point d’exécution où il a été suspendu, en utilisant la même configuration.
+* **Arrêter** : Met fin à l’exécution du flux de travail et définit l’état sur  **ABORTED**. Une instance de workflow abandonnée ne peut pas être redémarrée.
 
