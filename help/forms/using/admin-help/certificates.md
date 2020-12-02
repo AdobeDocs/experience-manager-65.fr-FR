@@ -33,9 +33,9 @@ Les certificats requis pour vérifier des signatures doivent résider au même e
 
 Vous pouvez également importer et supprimer des certificats à l’aide de l’API Trust Manager. Pour plus d’informations, reportez-vous aux sections « Importation des certificats à l’aide de l’API Trust Manager » et « Suppression des certificats à l’aide de l’API Trust Manager » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 
-## Importation d’un certificat {#import-a-certificate}
+## Importation d’un certificat  {#import-a-certificate}
 
-1. In administration console, click **[!UICONTROL Settings > Trust Store Management > Certificates]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Certificats]**.
 1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez l’une des options suivantes :
 
    * **Approbation de connexions SSL :** indique qu’AEM Forms peut utiliser des certificats pour établir une connexion à des systèmes externes via SSL.
@@ -50,25 +50,25 @@ Vous pouvez également importer et supprimer des certificats à l’aide de l’
    >un certificat racine Adobe est implicitement approuvé par le Trust Store pour l’authentification de certificat, la signature, la certification de signature et l’identité.
 
 1. Dans la zone Alias, saisissez l’identificateur du certificat.
-1. Click **[!UICONTROL Browse]** to locate the certificate and then click **[!UICONTROL OK]**.
+1. Cliquez sur **[!UICONTROL Parcourir]** pour localiser le certificat, puis sur **[!UICONTROL OK]**.
 
 ## Exportation d’un certificat {#export-a-certificate}
 
-1. In administration console, click **[!UICONTROL Settings > Trust Store Management > Certificates]**.
-1. Cliquez sur le nom d’alias du certificat à exporter. The **[!UICONTROL Certificate Details]** page is displayed.
-1. Click **[!UICONTROL Export]**, follow the directions to export the certificate, and then click **[!UICONTROL OK]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Certificats]**.
+1. Cliquez sur le nom d’alias du certificat à exporter. La page **[!UICONTROL Détails du certificat]** s&#39;affiche.
+1. Cliquez sur **[!UICONTROL Exporter]**, suivez les instructions pour exporter le certificat, puis cliquez sur **[!UICONTROL OK]**.
 
 ## Modification des paramètres d’approbation et du type de Trust Store d’un certificat {#edit-a-certificate-s-trust-settings-and-trust-store-type}
 
-1. In administration console, click **[!UICONTROL Settings > Trust Store Management > Certificates]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Certificats]**.
 1. Cliquez sur le nom d’alias du certificat à modifier.
-1. Click **[!UICONTROL Update Certificate]**.
+1. Cliquez sur **[!UICONTROL Mettre à jour le certificat]**.
 1. Pour modifier le nom d’alias du certificat, saisissez en un nouveau dans la zone Alias.
 1. Pour mettre à jour le type de Trust Store du certificat, sélectionnez le type de Trust Store approprié.
-1. To update the policy restrictions, in the Certificate Policies box, type the policy information, and then click **[!UICONTROL OK]**.
+1. Pour mettre à jour les restrictions de stratégie, dans la zone Stratégies de certificat, saisissez les informations de stratégie, puis cliquez sur **[!UICONTROL OK]**.
 
 ## Suppression d’un certificat {#delete-a-certificate}
 
-1. In administration console, click **[!UICONTROL Settings > Trust Store Management > Certificates]**.
-1. Select the check boxes for the certificates to delete, click **[!UICONTROL Delete]**, and then click **[!UICONTROL OK]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Certificats]**.
+1. Cochez les cases correspondant aux certificats à supprimer, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL OK]**.
 
