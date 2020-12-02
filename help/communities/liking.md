@@ -18,31 +18,31 @@ ht-degree: 6%
 ---
 
 
-# Utilisation de la fonction J’aime {#using-liking}
+# Utilisation de l’option J’aime {#using-liking}
 
-Le `Liking` composant est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire dans un forum. Avec le `Liking` composant, les membres sélectionnent l&#39;icône du coeur pour indiquer une opinion positive.
+Le composant `Liking` est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire dans un forum. Avec le composant `Liking`, les membres sélectionnent l&#39;icône du coeur pour indiquer une opinion positive.
 
-## Adding Liking to a Page {#adding-liking-to-a-page}
+## Ajouter à une page {#adding-liking-to-a-page}
 
-To add a `Liking` component to a page in author mode, use the component browser to locate
+Pour ajouter un composant `Liking` à une page en mode création, utilisez l’explorateur de composants pour localiser
 
 * `Communities / Liking`
 
 et faites-le glisser sur une page, par exemple une position par rapport à la fonction que les utilisateurs peuvent aimer.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-liking.md#essentials-for-client-side) are included, this is how the `Liking` component will appear.
+Lorsque les [bibliothèques client requises](essentials-liking.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Liking` s&#39;affiche.
 
 ![composant d’aimer](assets/liking-component.png)
 
-## Configuration de la fonction J’aime {#configuring-liking}
+## Configuration de l’option J’aime {#configuring-liking}
 
-Select the placed `Liking` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Liking` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
-Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used to record likes.
+Sous l&#39;onglet **[!UICONTROL Textes et étiquettes]**, spécifiez les propriétés utilisées pour enregistrer les mentions J&#39;aime.
 
 ![configure-like](assets/configure-liking.png)
 
@@ -56,7 +56,7 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 * **[!UICONTROL Nom Tally]**
 
-   (*Required*) The internal, identifiable property name for this instance of a voting component.
+   (*Obligatoire*) Nom de propriété interne identifiable pour cette instance d&#39;un composant de vote.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -70,4 +70,4 @@ Les mentions &quot;J’aime&quot; anonymes ne sont pas prises en charge. Les vis
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Liking Essentials](essentials-liking.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Essentials &quot;J&#39;aime&quot;](essentials-liking.md) destinée aux développeurs.
