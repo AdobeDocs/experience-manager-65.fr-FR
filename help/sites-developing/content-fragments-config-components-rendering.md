@@ -59,7 +59,7 @@ La configuration doit être liée à la **Configuration du composant de fragment
 
 >[!NOTE]
 >
->See [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for further details.
+>Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails.
 
 Par exemple :
 
