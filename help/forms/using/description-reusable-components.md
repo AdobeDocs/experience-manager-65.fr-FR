@@ -18,9 +18,9 @@ ht-degree: 88%
 ---
 
 
-# Description des composants réutilisables {#description-of-reusable-components}
+# Description des composants réutilisables  {#description-of-reusable-components}
 
-AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html-ws-components-web.md) components which are organized in a specific [folder structure](/help/forms/using/folder-structure.md) in CRX™. Chaque composant possède des fichiers de modèle, de vue et de contrôleur à l’emplacement spécifié dans la structure de dossiers, des dépendances JavaScript™ à d’autres fichiers de composant, des événements écoutés par le composant et des objets JavaScript qui peuvent déclencher ces événements dans l’espace de travail AEM Forms. La liste complète des composants réutilisables avec leurs noms de fichier et leurs dépendances figure ici.
+L’espace de travail AEM Forms est composé de composants [réutilisables](/help/forms/using/integrating-html-ws-components-web.md) organisés dans une structure de dossiers [spécifique](/help/forms/using/folder-structure.md) dans CRX™. Chaque composant possède des fichiers de modèle, de vue et de contrôleur à l’emplacement spécifié dans la structure de dossiers, des dépendances JavaScript™ à d’autres fichiers de composant, des événements écoutés par le composant et des objets JavaScript qui peuvent déclencher ces événements dans l’espace de travail AEM Forms. La liste complète des composants réutilisables avec leurs noms de fichier et leurs dépendances figure ici.
 
 ## TaskList {#tasklist}
 
@@ -35,7 +35,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>tasklist.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Template</p></td>
    <td><p>tasklist.html</p></td>
   </tr>
   <tr>
@@ -84,7 +84,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>task.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>task.html</p></td>
   </tr>
   <tr>
@@ -114,7 +114,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >Workspace appelle la fonction fetchTasks du modèle TaskList afin de créer des modèles Task pour ce composant.
 
-## FilterList {#filterlist}
+## FilterList  {#filterlist}
 
 <table>
  <tbody>
@@ -127,7 +127,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>filterlist.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>filterlist.html</p></td>
   </tr>
   <tr>
@@ -161,7 +161,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>filter.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>filter.html</p> </td>
   </tr>
   <tr>
@@ -186,7 +186,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## TeamQueues {#teamqueues}
+## TeamQueues  {#teamqueues}
 
 <table>
  <tbody>
@@ -199,7 +199,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>teamqueues.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>teamqueues.html</p></td>
   </tr>
   <tr>
@@ -223,7 +223,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## TeamFilter {#teamfilter}
+## TeamFilter  {#teamfilter}
 
 <table>
  <tbody>
@@ -236,7 +236,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>teamfilter.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>teamfilter.html</p> </td>
   </tr>
   <tr>
@@ -249,10 +249,10 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
     <ul>
      <li><p>Extends : filter view</p> </li>
      <li><p>Field : queue : {name, qid, isDefault, type }</p> </li>
-     <li><p>Field : query : string</p> </li>
-     <li><p>Field : parentView : filterlist view</p> </li>
-     <li><p>Field : parentModel : tasklist model</p> </li>
-     <li><p>Field : utility</p> </li>
+     <li><p>Champ : requête : string</p> </li>
+     <li><p>Champ : parentView : vue filterlist</p> </li>
+     <li><p>Champ : parentModel : modèle tasklist</p> </li>
+     <li><p>Champ : utilitaire</p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -266,7 +266,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >TeamFilter obtient l’événement indiquant quelle tâche a été sélectionnée du composant TaskList. Bien que ces composants partagent la même classe de modèle, il n’y a pas d’autre dépendance.
 
-## TaskDetails {#taskdetails}
+## TaskDetails  {#taskdetails}
 
 <table>
  <tbody>
@@ -279,7 +279,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>taskdetails.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>taskdetails.html</p> </td>
   </tr>
   <tr>
@@ -324,7 +324,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## CategoryList {#categorylist}
+## CategoryList  {#categorylist}
 
 <table>
  <tbody>
@@ -337,7 +337,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>categorylist.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>startprocess.html (dans le dossier route)</p></td>
   </tr>
   <tr>
@@ -380,7 +380,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>category.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>category.html</p></td>
   </tr>
   <tr>
@@ -407,7 +407,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## StartPointList {#startpointlist}
+## StartPointList  {#startpointlist}
 
 <table>
  <tbody>
@@ -420,7 +420,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>startpointlist.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>startprocess.html (dans le dossier route)</p></td>
   </tr>
   <tr>
@@ -458,7 +458,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >les composants StartPointList et CategoryList partagent la même classe de modèle. Le premier dépend donc du second. CategoryList accède aux informations sur la catégorie dont les points de départ sont affichés. Pour utiliser StartPointList indépendamment, simulez le déclencheur d’événement à partir de CategoryList.
 
-## StartPoint {#startpoint}
+## StartPoint  {#startpoint}
 
 <table>
  <tbody>
@@ -471,7 +471,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>startpoint.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>startpoint.html</p></td>
   </tr>
   <tr>
@@ -489,7 +489,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## StartProcess {#startprocess}
+## StartProcess  {#startprocess}
 
 <table>
  <tbody>
@@ -502,7 +502,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>startprocess.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>startprocess.html</p> </td>
   </tr>
   <tr>
@@ -552,7 +552,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >les composants StartPointList et StartProcess partagent la même classe de modèle. Ce composant devient pertinent lorsqu’un point de départ est sélectionné depuis StartPointList.
 
-## ProcessNameList {#processnamelist}
+## ProcessNameList  {#processnamelist}
 
 <table>
  <tbody>
@@ -565,7 +565,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>processnamelist.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>tracking.html (dans le dossier route)</p></td>
   </tr>
   <tr>
@@ -592,7 +592,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >ProcessNameList ne dépend pas d’autres composants. Toutefois, en interne, il dépend de la classe de modèles ProcessInstanceList qui, elle, dépend d’autres composants. Par conséquent, ProcessNameList utilise de nombreuses classes de modèles telles que ProcessInstanceList, ProcessInstance, TaskList, Teamtask et Task. Hormis ces dépendances, ProcessNameList peut être utilisé indépendamment.
 
-## ProcessName {#processname}
+## ProcessName  {#processname}
 
 <table>
  <tbody>
@@ -605,7 +605,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>processname (dans processnamelist.js)</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>processname.html</p></td>
   </tr>
   <tr>
@@ -623,7 +623,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## ProcessInstanceList {#processinstancelist}
+## ProcessInstanceList  {#processinstancelist}
 
 <table>
  <tbody>
@@ -636,7 +636,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>processinstancelist.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>tracking.html (dans le dossier route)</p></td>
   </tr>
   <tr>
@@ -662,7 +662,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >ProcessInstanceList attend un événement de ProcessNameList indiquant le nom du processus pour récupérer et afficher des instances. Pour utiliser ProcessInstanceList indépendamment, simulez le déclencheur d’événement séparément.
 
-## ProcessInstance {#processinstance}
+## ProcessInstance  {#processinstance}
 
 <table>
  <tbody>
@@ -675,7 +675,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>processname dans processnamelist.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>processinstance.html</p></td>
   </tr>
   <tr>
@@ -693,7 +693,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## ProcessInstanceHistory {#processinstancehistory}
+## ProcessInstanceHistory  {#processinstancehistory}
 
 <table>
  <tbody>
@@ -706,7 +706,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>processinstancehistory.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>processinstancehistory.html</p></td>
   </tr>
   <tr>
@@ -737,7 +737,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >ProcessInstanceHistory attend un événement de ProcessInstanceList concernant l’instance de processus dont l’historique doit être affiché. Hormis cette dépendance, le composant peut être utilisé indépendamment.
 
-## OutofOffice {#outofoffice}
+## OutofOffice  {#outofoffice}
 
 <table>
  <tbody>
@@ -750,7 +750,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>outofoffice.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>outofoffice.html</p> </td>
   </tr>
   <tr>
@@ -778,7 +778,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >OutofOffice peut être utilisé indépendamment.
 
-## ShareQueue {#sharequeue}
+## ShareQueue  {#sharequeue}
 
 <table>
  <tbody>
@@ -791,7 +791,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>sharequeue.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>sharequeue.html</p> </td>
   </tr>
   <tr>
@@ -822,7 +822,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >ShareQueue peut être utilisé indépendamment.
 
-## UISettings {#uisettings}
+## UISettings  {#uisettings}
 
 <table>
  <tbody>
@@ -835,7 +835,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>uisettings.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>uisettings.html</p></td>
   </tr>
   <tr>
@@ -861,7 +861,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >UISettings peut être utilisé indépendamment.
 
-## AppNavigation {#appnavigation}
+## AppNavigation  {#appnavigation}
 
 <table>
  <tbody>
@@ -874,7 +874,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>appnavigation.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>appnavigation.html</p></td>
   </tr>
   <tr>
@@ -896,7 +896,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >AppNavigation peut être utilisé indépendamment.
 
-## UserInfo {#userinfo}
+## UserInfo  {#userinfo}
 
 <table>
  <tbody>
@@ -909,7 +909,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>userinfo.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>userinfo.html</p> </td>
   </tr>
   <tr>
@@ -925,7 +925,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td>
     <ul>
      <li>userImageUrlFetched – modèle userinfo</li>
-     <li>sessionRenewed - modèle userinfo <br /> </li>
+     <li>sessionRenewed - modèle userinfo  <br /> </li>
      <li>sessionExpired - modèle userinfo </li>
     </ul> </td>
   </tr>
@@ -936,7 +936,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
 >
 >UserInfo peut être utilisé indépendamment.
 
-## WSError {#wserror}
+## WSError  {#wserror}
 
 <table>
  <tbody>
@@ -949,7 +949,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>wserror.js</p></td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p></td>
+   <td><p>Modèle</p></td>
    <td><p>wserror.html</p></td>
   </tr>
   <tr>
@@ -967,7 +967,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## UserSearch {#usersearch}
+## UserSearch  {#usersearch}
 
 <table>
  <tbody>
@@ -980,7 +980,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>usersearch.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>usersearch.html</p> </td>
   </tr>
   <tr>
@@ -1002,7 +1002,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## SearchTemplate {#searchtemplate}
+## SearchTemplate  {#searchtemplate}
 
 <table>
  <tbody>
@@ -1015,7 +1015,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>searchtemplate (dans searchtemplatelist.js) </p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>searchtemplate.html</p> </td>
   </tr>
   <tr>
@@ -1033,7 +1033,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## SearchTemplateList {#searchtemplatelist}
+## SearchTemplateList  {#searchtemplatelist}
 
 <table>
  <tbody>
@@ -1046,7 +1046,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>searchtemplatelist.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>tracking.html (dans le dossier route)</p> </td>
   </tr>
   <tr>
@@ -1064,7 +1064,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
  </tbody>
 </table>
 
-## SearchTemplateDetails {#searchtemplatedetails}
+## SearchTemplateDetails  {#searchtemplatedetails}
 
 <table>
  <tbody>
@@ -1077,7 +1077,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>searchtemplatedetails.js</p> </td>
   </tr>
   <tr>
-   <td><p>Template (Modèle)</p> </td>
+   <td><p>Modèle</p> </td>
    <td><p>searchtemplatedetails.html</p> </td>
   </tr>
   <tr>
