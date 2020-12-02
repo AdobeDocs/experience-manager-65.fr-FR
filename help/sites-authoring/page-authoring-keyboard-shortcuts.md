@@ -44,7 +44,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->&amp;ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
+>&amp;ast; Une fois que l’utilisateur a début d’interagir avec la page en mode Prévisualisation, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
 
 Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui utilisent les [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 
