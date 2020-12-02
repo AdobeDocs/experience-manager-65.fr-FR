@@ -53,7 +53,7 @@ Par exemple :
 >
 >Les liens font toujours référence à l’instance de publication. Ils sont destinés à être utilisés par des tiers, de sorte qu’ils soient toujours appelés à partir de l’instance de publication, et non de l’auteur.
 
-![xf-14](assets/xf-14.png)
+![xf-12](assets/xf-14.png)
 
 Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires ; le module [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Cette configuration se trouve dans l’emplacement suivant :
 
@@ -88,7 +88,7 @@ Les composants qui ne respectent pas cette convention ne sont pas pris en compte
 >
 >***Seuls***[ les modèles modifiables sont pris en charge pour les fragments d’expérience.](/help/sites-developing/page-templates-editable.md)
 
-When developing a new template for Experience Fragments you can follow follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+Lors du développement d’un nouveau modèle pour les fragments d’expérience, vous pouvez suivre les pratiques standard d’un [modèle modifiable](/help/sites-developing/page-templates-editable.md).
 
 Pour créer un modèle de fragment d’expérience détecté par l’assistant **Créer un fragment d’expérience**, vous devez suivre l’un des ensembles de règles suivants :
 
@@ -100,7 +100,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
 Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments en tant que 
-`cq:allowedTemplates` de ce dossier contient tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+`cq:allowedTemplates` de ce dossier contient tous les modèles dont le nom commence par  `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 
@@ -117,7 +117,7 @@ Cela permet aux utilisateurs de créer des fragments d’expérience dans /conte
 
 [Le développement de composants à utiliser avec/dans les fragments d’expérience est conforme aux pratiques standard.](/help/sites-developing/components.md)
 
-The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
+La seule configuration supplémentaire consiste à s’assurer que les composants sont [autorisés sur le modèle, ce qui est fait avec la stratégie de contenu](/help/sites-developing/page-templates-editable.md#content-policies).
 
 ## Fournisseur de réécriture de liens de fragments d’expérience - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -130,13 +130,13 @@ De tels groupes sont notamment utilisés pour incorporer du contenu dans des poi
 
 ### Réécriture de liens par défaut {#default-link-rewriting}
 
-Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
+Grâce à la fonction [Exporter vers la Cible](/help/sites-administering/experience-fragments-target.md), vous pouvez :
 
 * de créer un fragment d’expérience ,
 * d’y ajouter des composants ;
 * de l’exporter ensuite en tant qu’offre Adobe Target, au format HTML ou JSON.
 
-This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
+Cette fonction peut être [activée sur une instance d’auteur d’AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
 
 L’externaliseur de liens sert à déterminer les URL appropriées qui sont nécessaires lors de la création de la version HTML de l’offre Target, qui est ensuite envoyée à Adobe Target. Cela s’avère nécessaire dans la mesure où Adobe Target exige que tous les liens de l’offre HTML Target soient accessibles au public ; cela signifie que les ressources auxquelles les liens font référence et le fragment d’expérience proprement dit doivent être publiés avant d’être utilisés.
 
@@ -311,7 +311,7 @@ Dans notre exemple, nous souhaitons supprimer la partie `/etc.clientlibs` de l�
 
 >[!NOTE]
 >
->For more information on how to get a resource resolver through a service user see [Service Users in AEM](/help/sites-administering/security-service-users.md).
+>Pour plus d&#39;informations sur la façon d&#39;obtenir un résolveur de ressources par l&#39;intermédiaire d&#39;un utilisateur de service, voir [Utilisateurs du service dans AEM](/help/sites-administering/security-service-users.md).
 
 ```java
 private ResourceResolver resolver;
