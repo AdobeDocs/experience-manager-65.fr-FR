@@ -22,11 +22,11 @@ ht-degree: 1%
 
 Pour AEM Communities, la modération peut être effectuée par les administrateurs et les membres de la communauté de confiance directement sur la page publiée sur laquelle le contenu de la communauté a été publié.
 
-Lors de l’utilisation d’une console [de](moderation.md)modération, les informations affichées pour le contenu incluent un lien vers la page publiée afin d’autoriser l’accès à d’autres actions de modération disponibles lors de la modération dans le contexte.
+Lors de l’utilisation d’une [console de modération](moderation.md), les informations affichées pour le contenu incluent un lien vers la page publiée afin d’autoriser l’accès à d’autres actions de modération disponibles lors de la modération dans le contexte.
 
 ## Actions de modération {#moderation-actions}
 
-Consultez l’aperçu de la modération pour obtenir une description des actions [de](moderate-ugc.md#moderation-actions)modération.
+Consultez la présentation de la modération pour obtenir la description des [actions de modération](moderate-ugc.md#moderation-actions).
 
 ## Interface utilisateur de modération {#moderation-ui}
 
@@ -40,13 +40,13 @@ L’interface utilisateur présentée au modérateur sur l’instance de publica
 
 ## Exemple {#example}
 
-En utilisant le site [Geometrixx Interagir](http://localhost:4503/content/sites/engage/en.html) créé lors de la [mise en route de AEM Communities](getting-started.md), il est possible de configurer rapidement un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement de publication, comme indiqué ci-dessous.
+En utilisant le site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) créé lorsque [Prise en main de AEM Communities](getting-started.md), il est possible de configurer rapidement un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement de publication, comme indiqué ci-dessous.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) a été identifié comme un membre de confiance de la communauté en l&#39;ajoutant au groupe communautaire-modérateurs-engagés lors de la création du site.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) peut être ajoutée en tant que membre d&#39;un groupe de membres de la communauté à l&#39;aide de la console [](members.md)Membres.
+Rebekah Larsen (rebekah.larsen@trashymail.com) peut être ajoutée en tant que membre du groupe de membres de la communauté en utilisant la [console Membres](members.md).
 
-Pour plus d’informations sur les groupes d’utilisateurs de la communauté, consultez [Gestion des utilisateurs et des groupes](users.md)d’utilisateurs.
+Pour en savoir plus sur les groupes d’utilisateurs de la communauté, consultez [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
 
 ### Création de publications de forum {#create-the-forum-posts}
 
@@ -97,9 +97,9 @@ Un visiteur de site anonyme ne peut que vue au forum, mais peut ne pas publier d
 
 ### Nouveau membre (#4) {#new-member}
 
-Sur l’auteur, connectez-vous en tant qu’administrateur et ajoutez Boyd Larsen (boyd.larsen@dodgit.com) en tant que nouveau membre du groupe de membres de la communauté à l’aide de la console [](members.md)Membres, puis déconnectez-vous.
+Sur l’auteur, connectez-vous en tant qu’administrateur et ajoutez Boyd Larsen (boyd.larsen@dodgit.com) en tant que nouveau membre du groupe de membres de la communauté à l’aide de la [console Membres](members.md), puis déconnectez-vous.
 
-Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au thread en sélectionnant `Forum`, puis `Read more` pour la publication colibri.
+Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au thread en sélectionnant `Forum`, puis `Read more` pour la publication de colibri.
 
 Avis:
 
@@ -113,7 +113,7 @@ Déconnexion
 
 ![communauté-forum-membre](assets/community-forum-member.png)
 
-### Administrator (#3) {#administrator}
+### Administrateur (#3) {#administrator}
 
 Connectez-vous en tant qu’administrateur (administrateur) et accédez au fil en sélectionnant Forum, puis Lisez plus pour une publication.
 
@@ -124,7 +124,7 @@ Avis:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Sélectionnez l’option de menu Administration pour accéder à la console [de](moderation.md) modération à partir de l’environnement de publication.
+Sélectionnez l’option de menu Administration pour accéder à la [console de modération](moderation.md) à partir de l’environnement de publication.
 
 Notez que, pour un administrateur, tout le contenu modérable est visible, et pas seulement le contenu du site de la communauté Geometrixx Engage.
 
@@ -147,7 +147,7 @@ Avis:
 
 ![communauté-forum-modérateur](assets/community-forum-moderator.png)
 
-Sélectionnez l’option de menu Administration pour accéder à la console [de](moderation.md) modération à partir de l’environnement de publication.
+Sélectionnez l’option de menu Administration pour accéder à la [console de modération](moderation.md) à partir de l’environnement de publication.
 
 Notez que, pour un modérateur de communauté, seul le contenu modérable du site de la communauté Geometrixx Engage est visible.
 
@@ -157,7 +157,7 @@ Déconnexion.
 
 ![modérateur-accès](assets/moderator-access.png)
 
-### Content Author (#1) {#content-author}
+### Auteur de contenu (#1) {#content-author}
 
 Connectez-vous en tant que Rebekah Larsen (rebekah.larsen@mailinator.com), membre de la communauté qui a lancé le fil, et accédez au fil en sélectionnant Forum, puis Lisez plus pour le billet de colibri.
 
