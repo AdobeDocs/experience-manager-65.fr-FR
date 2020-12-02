@@ -30,17 +30,17 @@ Après avoir identifié le mode d’utilisation d’AEM Forms, déterminez les f
 
 Adobe Experience Manager (AEM) fait partie intégrante d’AEM forms. Par conséquent, vous devez également sauvegarder AEM en synchronisation avec la sauvegarde AEM Forms, car les services et la solution Correspondence Management, tels que Forms Manager, sont basés sur les données stockées dans la partie AEM d’AEM Forms. Pour éviter toute perte de données, les données propres à AEM Forms doivent être sauvegardées de sorte que le stockage global de documents et AEM (référentiel) soient en corrélation avec les références de la base de données. La base de données, le répertoire de stockage global de documents, le répertoire AEM et le répertoire racine de stockage de contenu doivent être restaurés sur un ordinateur avec le même nom DNS que le nom d’origine.
 
-## Types de sauvegardes {#types-of-backups}
+## Types de sauvegardes  {#types-of-backups}
 
 La stratégie de sauvegarde d’AEM forms implique deux types de sauvegardes :
 
-**Image système :** Sauvegarde complète du système que vous pouvez utiliser pour restaurer le contenu de votre ordinateur si le disque dur ou l&#39;ordinateur entier cesse de fonctionner. Une sauvegarde de l’image système doit être exécutée avant tout déploiement de production d’AEM Forms. Les stratégies internes à l’entreprise définissent ensuite la fréquence d’exécution des sauvegardes de l’image système.
+**Image système :** sauvegarde complète du système que vous pouvez utiliser pour restaurer le contenu de votre ordinateur si votre disque dur ou l’ordinateur entier ne fonctionne plus. Une sauvegarde de l’image système doit être exécutée avant tout déploiement de production d’AEM Forms. Les stratégies internes à l’entreprise définissent ensuite la fréquence d’exécution des sauvegardes de l’image système.
 
-**Données spécifiques aux formulaires AEM :** Les données d’application existent dans la base de données, le répertoire de stockage global de Documents (GDS) et le référentiel AEM, et doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
+**aem données spécifiques aux formulaires : les données** d’application existent dans la base de données, le répertoire de stockage global de Documents (GDS) et le référentiel AEM, et doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
 
 >[!NOTE]
 >
->si Content Services (obsolète) est installé, sauvegardez également le répertoire racine de stockage de contenu See [Content Storage Root directory (Content Services only)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
+>si Content Services (obsolète) est installé, sauvegardez également le répertoire racine de stockage de contenu Voir [Répertoire racine de l’Enregistrement de contenu (Content Services uniquement)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
 La base de données est utilisée pour stocker des artefacts de formulaires, des configurations de services, un état de traitement et des références de base de données dans les fichiers du répertoire de stockage global de documents. Si le stockage de documents dans la base de données est activé, les données et documents persistants du répertoire de stockage global de documents sont également stockés dans la base de données. Les méthodes suivantes permettent de sauvegarder et de récupérer la base de données :
 
@@ -48,7 +48,7 @@ La base de données est utilisée pour stocker des artefacts de formulaires, des
 
    * Utilisez la page Paramètres de sauvegarde Administration Console. Pour entrer en mode instantané, cochez la case Fonctionner en mode de sauvegarde sécurisé. Désélectionnez la case pour quitter ce mode.
    * Utilisez le script LCBackupMode (voir [Sauvegarde de la base de données, du répertoire de stockage global de documents et du répertoire racine de stockage de contenu](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Pour quitter le mode de sauvegarde instantané, définissez le paramètre `continuousCoverage` sur `false` ou utilisez l’option `leaveContinuousCoverage` dans l’argument du script.
-   * Utilisez l’API de sauvegarde/récupération fournie. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+   * Utilisez l&#39;API de sauvegarde/récupération fournie. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * Le mode de **sauvegarde restauration** indique que le système sera toujours en mode de sauvegarde et qu’une nouvelle session du mode de sauvegarde sera initiée à la libération de la session précédente. Aucun délai d’expiration n’est associé au mode de sauvegarde restauration. Lorsque le script LCBackupMode ou les API sont appelés pour quitter le mode de sauvegarde restauration, une nouvelle session du mode de sauvegarde restauration commence. Cela s’avère utile pour prendre en charge des sauvegardes en continu, tout en permettant la suppression des documents anciens et inutiles du répertoire de stockage global de documents. Le mode de sauvegarde restauration n’est pas pris en charge via la page relative à la sauvegarde et à la récupération. Après un scénario de récupération, le mode de sauvegarde restauration reste activé. Vous pouvez quitter le mode de sauvegarde en continu (mode de sauvegarde restauration) en utilisant le script LCBackupMode avec l’option `leaveContinuousCoverage`.
 
@@ -62,7 +62,7 @@ Pour éviter les pertes de données, les données spécifiques d&#39;AEM forms d
 >
 >lorsque le répertoire de stockal global de documents est stocké sur le système de fichiers et non dans la base de données, effectuez la sauvegarde de la base de données avant la sauvegarde du répertoire de stockal global de documents.
 
-## Remarques spécifiques à la sauvegarde et la récupération {#special-considerations-for-backup-and-recovery}
+## Remarques spécifiques à la sauvegarde et la récupération  {#special-considerations-for-backup-and-recovery}
 
 Utilisez les recommandations ci-dessous si vous souhaitez récupérer AEM forms dans un environnement différent suite aux modifications suivantes :
 
@@ -72,18 +72,18 @@ Utilisez les recommandations ci-dessous si vous souhaitez récupérer AEM forms 
 
 En règle générale, de tels scénarios de récupération se produisent suite à une défaillance matérielle du serveur hébergeant le serveur d’applications, le serveur de base de données ou le serveur Forms. En plus des configurations spécifiques d’AEM forms décrites dans cette section, vous devez également effectuer les modifications nécessaires au niveau des autres composants du déploiement d’AEM forms, tels que les services d’équilibrage de charge et les pare-feu, en cas de modification du nom d’hôte ou de l’adresse IP d’un serveur AEM forms.
 
-### Eléments non modifiables {#what-cannot-be-changed}
+### Eléments non modifiables  {#what-cannot-be-changed}
 
 Il est possible de modifier le serveur de base de données et de nombreux autres paramètres ; toutefois, la modification du type de serveur d’applications ou de base de données est impossible lors de la récupération d’AEM Forms à partir d’une sauvegarde. Par exemple, lorsque vous récupérez une sauvegarde AEM forms, vous ne pouvez pas modifier le serveur d’applications et le faire passer de JBoss à WebLogic, ni faire passer une base de données d’Oracle à DB2. De plus, la version d’AEM forms récupérée doit utiliser les mêmes chemins d’accès au système de fichiers, par exemple le répertoire des polices.
 
-### Redémarrage post-récupération {#restarting-after-a-recovery}
+### Redémarrage post-récupération  {#restarting-after-a-recovery}
 
 Avant de redémarrer le serveur Forms après une récupération, procédez comme suit :
 
 1. Démarrez le système en mode de maintenance.
 1. Effectuez les opérations suivantes pour vous assurer que Form Manager est synchronisé avec AEM Forms en mode de maintenance :
 
-   1. Go to https://&lt;*server*>:&lt;*port*>/lc/fm and log in using adminstrator/password credentials.
+   1. Accédez à https://&quot;a0/>server *:&quot;a2/>port&lt;a3/&quot;/lc/fm et connectez-vous à l’aide des informations d’identification d’administrateur/de mot de passe.***
    1. Cliquez sur le nom de l’utilisateur (Super administrateur dans ce cas) dans l’angle supérieur droit.
    1. Cliquez sur **Admin Options** (Options d’administration).
    1. Cliquez sur **Start** (Démarrer) pour synchroniser les actifs du référentiel.
@@ -93,20 +93,20 @@ Avant de redémarrer le serveur Forms après une récupération, procédez comme
 
 Si la base de données principale d’AEM forms est déplacée ou modifiée, consultez les guides d’installation correspondant à votre serveur d’applications pour connaître les détails de mise à jour des informations de connexion des sources de données IDP_DS et EDC_DS pour AEM Forms.
 
-### Modification du nom d’hôte ou de l’adresse IP d’AEM Forms {#changing-the-aem-forms-hostname-or-ip-address}
+### Modification du nom d’hôte ou de l’adresse IP d’AEM Forms  {#changing-the-aem-forms-hostname-or-ip-address}
 
 Dans une grappe, lorsque vous utilisez une mise en cache TCP plutôt qu’UDP, vous devez mettre à jour la configuration du localisateur de mise en cache. Voir Configuration des localisateurs de mise en cache (mise en cache via TCP uniquement), dans le guide de configuration correspondant au serveur d’applications.
 
-### Modification des chemins d’accès au système de fichiers des nœuds AEM forms {#changing-the-aem-forms-node-file-system-paths}
+### Modification des chemins d’accès au système de fichiers des nœuds AEM forms  {#changing-the-aem-forms-node-file-system-paths}
 
 Si vous modifiez les chemins d’accès au système de fichiers d’un nœud autonome, vous devez mettre à jour les références appropriées dans les préférences, dans les autres configurations système, dans les applications personnalisées et dans les applications AEM forms déployées. Lorsqu’il s’agit d’une grappe, tous les nœuds doivent utiliser la même configuration de chemin d’accès au système de fichiers. Vous devez définir le répertoire racine de stockage global de documents et vous assurer qu’il pointe vers une copie du répertoire de stockage global de documents récupéré, lui-même synchronisé avec la base de données récupérée. La définition d’un chemin d’accès au répertoire de stockage global de documents est primordiale car ce dernier peut contenir des données conçues pour persister au fil des redémarrages du serveur d’applications.
 
 Dans un environnement organisé en grappes, la configuration de chemin d’accès au système de fichiers du référentiel doit être la même pour tous les nœuds de grappe avant la sauvegarde et après la récupération.
 
-Use the `LCSetGDS`script in the `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` folder to set the GDS path after you change the file system paths. Voir le fichier `ReadMe.txt` dans le même dossier pour plus d’informations. S’il est impossible d’utiliser l’ancien chemin du répertoire de stockage global de documents, le script `LCSetGDS` doit être utilisé pour définir le nouveau chemin d’accès à ce répertoire avant le démarrage d&#39;AEM forms.
+Utilisez le script `LCSetGDS`du dossier `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` pour définir le chemin d’accès au répertoire de stockage global de documents après avoir modifié les chemins d’accès au système de fichiers. Voir le fichier `ReadMe.txt` dans le même dossier pour plus d’informations. S’il est impossible d’utiliser l’ancien chemin du répertoire de stockage global de documents, le script `LCSetGDS` doit être utilisé pour définir le nouveau chemin d’accès à ce répertoire avant le démarrage d&#39;AEM forms.
 
 >[!NOTE]
 >
->Il s’agit là de la seule circonstance vous permettant d’utiliser ce script pour modifier l’emplacement du répertoire de stockage global de documents. Pour modifier l’emplacement du répertoire de stockage global de documents pendant l’exécution d’AEM forms, utilisez Administration Console (See [Configure general AEM forms settings](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
+>Il s’agit là de la seule circonstance vous permettant d’utiliser ce script pour modifier l’emplacement du répertoire de stockage global de documents. Pour modifier l’emplacement du répertoire de stockage global de documents pendant l’exécution d’AEM forms, utilisez Administration Console (Voir [Configuration des paramètres généraux des formulaires AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
 Après avoir défini le chemin d’accès au répertoire de stockage global de documents, démarrez le serveur Forms en mode de maintenance puis utilisez Administration Console pour mettre à jour les chemins d’accès au système de fichiers restants pour le nouveau nœud. Après avoir vérifié que toutes les configurations nécessaires ont été mises à jour, redémarrez et testez AEM Forms.
