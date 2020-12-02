@@ -27,7 +27,7 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
 1. Ajoutez une nouvelle page enfant représentant la version de langue du site :
 
    1. Sélectionnez Nouveau > Nouvelle page.
-   1. Dans la boîte de dialogue, spécifiez le titre et le nom. The Name needs to be in the format of `<language-code>` or `<language-code>_<country-code>`, for example en, en_US, en_us, en_GB, en_gb.
+   1. Dans la boîte de dialogue, spécifiez le titre et le nom. Le nom doit être au format `<language-code>` ou `<language-code>_<country-code>`, par exemple en, en_US, en_us, en_GB, en_gb.
 
       * Le code langue pris en charge est un code à deux lettres en minuscules, défini par la norme ISO-639-1.
       * Le code pays pris en charge est un code à deux lettres en minuscules ou en majuscules, défini par la norme ISO-3166.
