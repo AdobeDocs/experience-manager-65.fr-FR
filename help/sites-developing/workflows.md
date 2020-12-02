@@ -39,11 +39,11 @@ Les aspects clés sont présentés ci-dessous, tandis que les pages suivantes ab
 >
 >Pour obtenir des informations sur :
 >
->* Participating in workflows, see [Using Workflows](/help/sites-authoring/workflows.md).
+>* Participant aux workflows, voir [Utilisation de Workflows](/help/sites-authoring/workflows.md).
 >* l’administration des processus et des instances de processus, voir [Administration des workflows](/help/sites-administering/workflows.md).
->* For an end-to-end Community Article see [Modifying Digital Assets using Adobe Experience Manager Workflows.](https://helpx.adobe.com/fr/experience-manager/using/modify_asset_workflow.html)
->* See the [Ask the AEM Experts Webinar on Workflows](https://bit.ly/ATACE218).
->* For an end-to-end Community Article see [Creating a custom Adobe Experience Manager 6.3 Dynamic Participant step](https://helpx.adobe.com/fr/experience-manager/using/dynamic-steps-aem63.html).
+>* Pour un article de la communauté de bout en bout, voir [Modification des ressources numériques à l’aide de Workflows Adobe Experience Manager.](https://helpx.adobe.com/fr/experience-manager/using/modify_asset_workflow.html)
+>* Consultez le [Webinaire sur les Workflows ](https://bit.ly/ATACE218) de l&#39;AEM Experts.
+>* Pour consulter un article de la communauté de bout en bout, voir [Création d’une étape de participant dynamique Adobe Experience Manager 6.3 personnalisée](https://helpx.adobe.com/fr/experience-manager/using/dynamic-steps-aem63.html).
 >* les modifications apportées aux emplacements des informations, voir [Restructuration de référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md) et [Meilleures pratiques relatives aux workflows – emplacements](/help/sites-developing/workflows-best-practices.md#locations).
 
 >
@@ -52,7 +52,7 @@ Les aspects clés sont présentés ci-dessous, tandis que les pages suivantes ab
 
 ## Modèle {#model}
 
-Un `WorkflowModel` représente une définition (un modèle) d’un workflow. It is made of `WorkflowNodes` and `WorkflowTransitions`. The transitions connect the nodes and define the *flow*. Le modèle dispose toujours d’un nœud de début et d’un nœud de fin.
+Un `WorkflowModel` représente une définition (un modèle) d’un workflow. Il est composé de `WorkflowNodes` et `WorkflowTransitions`. Les transitions connectent les noeuds et définissent le *flux*. Le modèle dispose toujours d’un nœud de début et d’un nœud de fin.
 
 ### Modèle d’exécution {#runtime-model}
 
@@ -60,7 +60,7 @@ Les modèles de workflow bénéficient du contrôle de versions. Lorsque vous ex
 
 Un modèle d’exécution est [généré lorsque la **synchronisation** est déclenchée dans l’editeur de modèles de workflow](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
 
-Edits to the workflow model that occur, and/or runtime models that are generated, *after* the specific instance was started will not be applied to that instance.
+Les modifications apportées au modèle de flux de travail qui se produisent et/ou aux modèles d’exécution qui sont générés *après* le démarrage de l’instance spécifique ne sont pas appliquées à cette instance.
 
 >[!CAUTION]
 >
@@ -68,7 +68,7 @@ Edits to the workflow model that occur, and/or runtime models that are generated
 >
 >Si le modèle de workflow est modifié après ce stade (sans déclenchement de **synchronisation**), son instance d’exécution ne reflète pas ces modifications. Seuls les modèles de mise en œuvre générés après la mise à jour reflètent les modifications. Les exceptions sont les scripts ECMA sous-jacents, qui ne sont conservés qu’une seule fois, de sorte que les modifications apportées à ces derniers sont sélectionnées.
 
-### Étape {#step}
+### Étape  {#step}
 
 Chaque étape accomplit une tâche discrète. Il existe différents types d’étapes de workflow :
 
@@ -78,23 +78,23 @@ Chaque étape accomplit une tâche discrète. Il existe différents types d’é
 * Division/jonction OU : utilisez la logique pour décider de l’étape suivante à exécuter dans le workflow.
 * Division/jonction ET : autorisez l’exécution simultanée de plusieurs étapes.
 
-All the steps share the following common properties: `Autoadvance` and `Timeout` alerts (scriptable).
+Toutes les étapes partagent les propriétés communes suivantes : Alertes `Autoadvance` et `Timeout` (scriptable).
 
 ### Transition {#transition}
 
-A `WorkflowTransition` represents a transition between two `WorkflowNodes` of a `WorkflowModel`.
+Un `WorkflowTransition` représente une transition entre deux `WorkflowNodes` d&#39;un `WorkflowModel`.
 
 * Il définit le lien entre deux étapes consécutives.
 * Il est possible d’appliquer des règles.
 
-### Élément de travail {#workitem}
+### Élément de travail  {#workitem}
 
-A `WorkItem` is the unit that is passed through an `Workflow` instance of a `WorkflowModel`. It contains the `WorkflowData` that the instance acts on and a reference to the `WorkflowNode` that describes the underlying workflow step.
+Un `WorkItem` est l&#39;unité transmise par une instance `Workflow` d&#39;un `WorkflowModel`. Il contient le `WorkflowData` sur lequel l’instance agit et une référence au `WorkflowNode` qui décrit l’étape sous-jacente du flux de travail.
 
 * Il est utilisé pour identifier la tâche et placé dans la boîte de réception correspondante.
-* A workflow instance can have one or many `WorkItems` at the same time (depending on the workflow model).
-* The `WorkItem` references the workflow instance.
-* In the repository the `WorkItem` is stored below the workflow instance.
+* Une instance de processus peut avoir simultanément `WorkItems` &lt;a0/> (selon le modèle de processus).
+* Le `WorkItem` référence l&#39;instance de processus.
+* Dans le référentiel, `WorkItem` est stocké sous l’instance de flux de travaux.
 
 ### Charge utile {#payload}
 
@@ -102,7 +102,7 @@ Elle référence la ressource qui doit être avancée par un workflow.
 
 La mise en œuvre de charge utile référence une ressource dans le référentiel (par chemin, UUID ou URL) ou par un objet Java sérialisé. Le référencement d’une ressource dans le référentiel est très flexible et productif en conjonction avec Sling ; par exemple, le rendu du nœud référencé peut être effectué sous forme de formulaire.
 
-### Cycle de vie {#lifecycle}
+### Cycle de vie  {#lifecycle}
 
 Il est créé lorsque vous démarrez un nouveau workflow (en choisissant le modèle de workflow respectif et en définissant la charge utile) et se termine lorsque le nœud de fin est traité.
 
@@ -115,11 +115,11 @@ Les actions suivantes sont possibles sur une instance de processus :
 
 Les instances terminées et arrêtées sont archivées.
 
-### Boîte de réception {#inbox}
+### Boîte de réception  {#inbox}
 
-Each user account has its own workflow inbox in which the assigned `WorkItems` are accessible.
+Chaque compte utilisateur dispose de sa propre boîte de réception de flux de travail dans laquelle le `WorkItems` affecté est accessible.
 
-The `WorkItems` are assigned to either the user account directly or to the group to which they belongs.
+Les `WorkItems` sont affectés soit directement au compte utilisateur, soit au groupe auquel ils appartiennent.
 
 ### Types de workflow {#workflow-types}
 
@@ -139,9 +139,9 @@ Il existe différents types de workflow comme indiqué dans la console Modèles 
 
    Workflows créés dans une version antérieure d’AEM. Ils peuvent être conservés lors d’une mise à niveau, ou exportés en tant que module de workflow à partir de la version antérieure, puis importés dans la nouvelle version.
 
-### workflows transitoires {#transient-workflows}
+### workflows transitoires  {#transient-workflows}
 
-Les workflows standard enregistrent les informations (d’historique) d’exécution lors de leur exécution. You can also define a workflow model as **Transient** to avoid such history being persisted. Il est utilisé pour ajuster les performances, car il économise le temps/les ressources utilisés pour rendre les informations persistantes.
+Les workflows standard enregistrent les informations (d’historique) d’exécution lors de leur exécution. Vous pouvez également définir un modèle de flux de travail comme **Transient** pour éviter que cet historique ne soit conservé. Il est utilisé pour ajuster les performances, car il économise le temps/les ressources utilisés pour rendre les informations persistantes.
 
 Les workflows transitoires peuvent être utilisés pour tout workflow qui :
 
@@ -178,9 +178,9 @@ Les workflows transitoires ont été introduits pour charger un grand nombre de 
 >
 >Voir [Meilleures pratiques pour les ressources](/help/assets/performance-tuning-guidelines.md#transient-workflows) pour plus d’informations sur la façon dont les workflows transitoires affectent les performances des ressources.
 
-### Prise en charge multi-ressource {#multi-resource-support}
+### Prise en charge multi-ressource  {#multi-resource-support}
 
-Activating **Multi Resource Support** for your workflow model means that a single workflow instance will be started even when you select multiple resources; these will be attached as a package.
+L&#39;activation de **la prise en charge de ressources multiples** pour votre modèle de processus signifie qu&#39;une instance de processus unique sera lancée même si vous sélectionnez plusieurs ressources ; ces documents seront joints sous forme de paquet.
 
 Si la **prise en charge multi-ressource** n’est pas activée pour votre modèle de workflow, et si plusieurs ressources sont sélectionnées, une instance de workflow individuelle sera démarrée pour chaque ressource.
 
@@ -214,10 +214,10 @@ Par exemple, pour un workflow avec six étapes et quatre phases :
 
 ### workflows et Forms {#workflows-and-forms}
 
-En règle générale, les workflows sont utilisés pour traiter les envois de formulaires dans AEM. This can be with the [core components form components](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) available in a standard AEM instance, or with the [AEM Forms solution](/help/forms/using/aem-forms-workflow.md).
+En règle générale, les workflows sont utilisés pour traiter les envois de formulaires dans AEM. Il peut s’agir des composants de base [composants de formulaire](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) disponibles dans une instance d’AEM standard ou de la solution [AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Lors de la création d’un formulaire, l’envoi de ce formulaire peut facilement être associé à un modèle de workflow ; par exemple pour stocker le contenu dans un emplacement précis du référentiel ou pour notifier un utilisateur de l’envoi du formulaire et de son contenu.
 
-### workflows et traduction {#workflows-and-translation}
+### workflows et traduction  {#workflows-and-translation}
 
-Workflows are also an integral part of the [Translation](/help/sites-administering/translation.md) process.
+Les workflows font également partie intégrante du processus [Traduction](/help/sites-administering/translation.md).
