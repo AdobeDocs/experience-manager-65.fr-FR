@@ -23,17 +23,17 @@ ht-degree: 79%
 
 Dans l’espace de travail AEM Forms, les gestionnaires peuvent désormais accéder à toutes les tâches assignées aux personnes au sein de leur hiérarchie (rapports directs ou indirects) et y effectuer diverses opérations. Les tâches sont accessibles par l’intermédiaire de l’onglet Tâches de l’espace de travail AEM Forms. Les actions prises en charge pour les tâches de rapports directs sont :
 
-**Transférer** une tâche du rapport direct à tout utilisateur.
+**** TransférerTransférer une tâche du rapport direct à tout utilisateur.
 
-**Demander** une tâche d&#39;un rapport direct.
+**** Demander une tâche d&#39;un rapport direct.
 
-**Demander et ouvrir** Demander une tâche d&#39;un rapport direct et l&#39;ouvrir automatiquement dans la liste Tâches du gestionnaire.
+**Demander et** ouvrirDemander une tâche d&#39;un rapport direct et l&#39;ouvrir automatiquement dans la liste Tâches du gestionnaire.
 
-**Rejeter** Rejeter une tâche envoyée à un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
+**** RejeterRejeter une tâche transférée vers un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
 
 AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesquelles cet utilisateur dispose d’un contrôle d’accès (ACL). Ceci permet de garantir que l’utilisateur ne puisse extraire que les tâches pour lesquelles il dispose de droits d’accès. En utilisant des services Web et des implémentations tiers pour définir la hiérarchie, une organisation peut personnaliser la définition des rapports directs et gestionnaires selon ses besoins.
 
-1. Créez un DSC. For more information, see &#39;Developing Components for AEM Forms&#39; topic in [Programming with AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
+1. Créez un DSC. Pour plus d’informations, voir la rubrique &quot;Développement de composants pour AEM Forms&quot; dans le guide [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 1. Dans le DSC, définissez une nouvelle SPI pour la gestion de hiérarchie afin de définir les rapports directs et la hiérarchie des utilisateurs d’AEM Forms. Voici un exemple de fragment de code Java™ :
 
    ```java
@@ -113,7 +113,7 @@ AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesque
    </component>
    ```
 
-1. Déployez DSC via Workbench. Redémarrez `ProcessManagementTeamTasksService` le service.
+1. Déployez DSC via Workbench. Redémarrez le service `ProcessManagementTeamTasksService`.
 1. Il se peut que vous ayez à actualiser votre navigateur ou à vous déconnecter/connecter de nouveau avec l’utilisateur.
 
 L’écran suivant illustre l’accès aux tâches de rapports directs et les actions disponibles.
