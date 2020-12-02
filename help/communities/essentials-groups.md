@@ -18,15 +18,15 @@ ht-degree: 2%
 ---
 
 
-# Groupe communautaire Essentials  {#community-group-essentials}
+# Community Group Essentials {#community-group-essentials}
 
 La fonction des groupes communautaires permet à une sous-communauté d’être créée dynamiquement dans un site communautaire par des utilisateurs autorisés à partir des environnements de publication et d’auteur.
 
-A compter du pack de [fonctionnalités Collectivités 1](deploy-communities.md#latestfeaturepack), il est possible d’imbriquer des groupes dans d’autres groupes.
+A compter de la section Communautés [Feature Pack 1](deploy-communities.md#latestfeaturepack), il est possible d’imbriquer des groupes dans d’autres groupes.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-### Liste membre Groupes communautaires {#community-groups-member-list}
+### Groupes communautaires Liste membre {#community-groups-member-list}
 
 <table>
  <tbody>
@@ -48,7 +48,7 @@ A compter du pack de [fonctionnalités Collectivités 1](deploy-communities.md#l
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>Voir Groupe <a href="creating-groups.md">de communautés</a></td>
+   <td>Voir <a href="creating-groups.md">Groupe de communautés</a></td>
   </tr>
  </tbody>
 </table>
@@ -88,15 +88,15 @@ A compter du pack de [fonctionnalités Collectivités 1](deploy-communities.md#l
 
 ### Fonction Groupes {#groups-function}
 
-Une structure de site communautaire comprenant une fonction [](functions.md#groups-function) Groupes permettra de créer de nouveaux sites `community groups` à partir des environnements de publication et d’auteur. Le groupe communautaire créé comprendra un `community groups member list` composant qui liste les membres du groupe.
+Une structure de site communautaire qui inclut une fonction [Groupes](functions.md#groups-function) va permettre la création de `community groups` à partir des environnements de publication et d&#39;auteur. Le groupe de communauté créé comprendra un composant `community groups member list` qui liste les membres du groupe.
 
-Un ou plusieurs modèles [de groupe de](tools-groups.md)communauté, qui fournissent la conception des pages de groupe de communauté, peuvent être configurés pour la fonction Groupes lorsque la fonction est ajoutée à un modèle [de site de](sites.md) communauté ou imbriquée dans un modèle de groupe de communauté.
+Un ou plusieurs [modèles de groupe de communauté](tools-groups.md), qui fournissent la conception des pages de groupe de communauté, peuvent être configurés pour la fonction Groupes lorsque la fonction est ajoutée à un [modèle de site de communauté](sites.md) ou imbriquée dans un modèle de groupe de communauté.
 
-L&#39;inclusion de plusieurs modèles de groupes communautaires donne lieu à un choix de conception présentée à l&#39;utilisateur autorisé au moment de la création d&#39;un nouveau groupe communautaire pour le site communautaire, comme le montre la section sur les groupes [](creating-groups.md) communautaires pour les auteurs.
+L&#39;inclusion de plusieurs modèles de groupes communautaires donne lieu à un choix de conception présenté à l&#39;utilisateur autorisé au moment de la création d&#39;un nouveau groupe communautaire pour le site communautaire, comme le montre la section [groupes communautaires](creating-groups.md) pour les auteurs.
 
 ### Groupes imbriqués {#nested-groups}
 
-Depuis le [FP1](deploy-communities.md#latestfeaturepack)des Communautés, il est possible d&#39;inclure une fonction Groupes dans un modèle de groupe, ce qui permet d&#39;inclure des groupes imbriqués (sous-communautés).
+En ce qui concerne les communautés [FP1](deploy-communities.md#latestfeaturepack), il est possible qu&#39;une fonction Groupes soit incluse dans un modèle de groupe, ce qui permet d&#39;inclure des groupes imbriqués (sous-communautés).
 
 Lorsqu’un site communautaire ou un modèle de groupe inclut la fonction Groupes, il est possible de :
 
