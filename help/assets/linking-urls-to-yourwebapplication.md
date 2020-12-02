@@ -1,6 +1,6 @@
 ---
 title: Liaison d’URL à une application web
-description: Comment lier des URL à votre application web dans les médias dynamiques
+description: Comment lier des URL à votre application web dans Dynamic Media
 uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -36,7 +36,7 @@ Voir aussi [Diffusion d’images optimisées pour un site réactif.](responsive-
 
 Voir aussi [Téléchargement de ressources.](manage-assets.md#uploading-assets)
 
-## Obtention d’une URL pour une ressource  {#obtaining-a-url-for-an-asset}
+## Obtention d’une URL pour une ressource   {#obtaining-a-url-for-an-asset}
 
 Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’image prédéfini ou un paramètre prédéfini de la visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
@@ -138,7 +138,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Par exemple, si l’ID d’enregistrement est `87654321|MyCompany`, le nom du client est `MyCompany`.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
+1. Près du coin supérieur gauche de la page, appuyez sur **[!UICONTROL Cloud Services]**, puis appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Général > CRXDE Lite.]**
 1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java Content Repository).
 
    Par exemple, le chemin URL du rendu vidéo est similaire au suivant :
@@ -157,7 +157,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Il s’agit de l’URL complète d’un rendu vidéo publié.
 
-## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)   {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Dans AEM, accédez à **[!UICONTROL Outils > Déploiement > Cloud > Cloud Services.]**
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations.]**
@@ -179,7 +179,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    | Protocole de diffusion vidéo que vous utilisez | Sélecteur de protocole à utiliser |
    |---|---|
-   | HTTP <br> If you are using HTTP (non-secure video delivery), be sure you change https to http in the Video Service URL value you copied earlier. | `public/` |
+   | HTTP  <br> Si vous utilisez HTTP (diffusion vidéo non sécurisée), veillez à remplacer https par http dans la valeur URL du service vidéo que vous avez copiée précédemment. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Copiez le chemin complet de la ressource vidéo dans AEM, tel qu’il est traité par Dynamic Media. Vous aurez besoin de ce chemin d’accès à la ressource vidéo copié dans ces étapes.
@@ -204,4 +204,4 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
-Voir [Diffusion du contenu sur HTTP/2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
+Voir [Diffusion du contenu sur HTTP2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
