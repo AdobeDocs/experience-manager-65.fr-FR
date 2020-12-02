@@ -18,7 +18,7 @@ ht-degree: 7%
 ---
 
 
-# Contenu phare Essentials  {#featured-content-essentials}
+# Contenu phare Essentials {#featured-content-essentials}
 
 Cette page fournit les informations essentielles pour manipuler le contenu incitatif.
 
@@ -51,7 +51,7 @@ Contrairement à l&#39;épinglage d&#39;une publication en haut d&#39;un forum, 
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir Contenu <a href="featured.md">proposé</a></td>
+   <td>Voir <a href="featured.md">Contenu phare</a></td>
   </tr>
  </tbody>
 </table>
@@ -60,4 +60,4 @@ Contrairement à l&#39;épinglage d&#39;une publication en haut d&#39;un forum, 
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site communautaire qui comprend la fonction [Contenu](functions.md#featured-content-function)proposé, comprend un `featured content` composant configuré.
+Une structure de site de communauté qui comprend la fonction de contenu phare [](functions.md#featured-content-function), comprend un composant `featured content` configuré.
