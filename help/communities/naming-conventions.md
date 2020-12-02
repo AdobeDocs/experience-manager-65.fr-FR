@@ -26,8 +26,8 @@ Lors de la création d&#39;un emplacement pour une classe Java, n&#39;oubliez pa
 
 Bien que l&#39;utilisation de tirets dans les noms d&#39;éléments du référentiel soit une pratique recommandée dans le développement AEM, les tirets ne sont pas autorisés dans les noms de paquets Java.
 
-La plate-forme CRX sous-jacente doit pouvoir distinguer un trait de soulignement réel `_ `et un trait d’union `-`. Ainsi, dans le JCR, le trait d’union doit être remplacé par sa valeur unicode (u002d) et s’échapper par un trait de soulignement `_`.
+La plate-forme CRX sous-jacente doit pouvoir distinguer entre un trait de soulignement réel `_ `et un trait d’union `-`. Ainsi, dans le JCR, le trait d’union doit être remplacé par sa valeur unicode (u002d) et s’échapper par un trait de soulignement `_`.
 
 Par exemple, si le chemin d’accès au référentiel est **/apps/my-example/component/info/Info.java**, le nom du package doit être `java package apps.my_002dexample.component.info;`
 
-Vous remarquerez qu’un trait de soulignement doit également être échappé, de telle sorte que cela `_` devienne `_005f`.
+Vous remarquerez qu’un trait de soulignement doit de la même façon être échappé, de telle sorte que `_` devienne `_005f`.
