@@ -26,21 +26,21 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 * nombre d’itinéraires d’affichage
 * dégradé de couleur d’arrière-plan
 
-## Étapes {#steps}
+## Étapes  {#steps}
 
 1. Ouvrez le projet.
 
-   * For iOS, open `Capture.xcodeproj` in Xcode
+   * Pour iOS, ouvrez `Capture.xcodeproj` dans Xcode.
    * Pour Android, ouvrez le projet Android dans Eclipse.
-   * For Windows, open `MWSWindows.sln` in Visual Studio.
+   * Pour Windows, ouvrez `MWSWindows.sln` dans Visual Studio.
 
 1. Naviguez jusqu’au dossier des modèles.
 
-   * In Xcode, navigate to the **Capture > www > wsmobile > js > runtime > templates** folder.
-   * In Eclipse, navigate to the **assets > www > wsmobile > js > runtime > templates** folder.
-   * In Visual Studio, navigate to the **MWSWindows > www > wsmobile > js > runtime > templates** folder.
+   * Dans Xcode, accédez au dossier **Capture > www > wsmobile > js > runtime > templates**.
+   * Dans Eclipse, accédez au dossier **assets > www > wsmobile > js > runtime > templates**.
+   * Dans Visual Studio, accédez au dossier **MWSWindows > www > wsmobile > js > runtime > templates**.
 
-1. Open the `template.html` file for editing.
+1. Ouvrez le fichier `template.html` pour le modifier.
 1. Recherchez la chaîne suivante :
 
    ```jsp
@@ -75,13 +75,13 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 
 1. Accédez au dossier css.
 
-   * In Xcode, navigate to **Capture > www > wsmobile > css**.
-   * In Eclipse, navigate to **assets > www > wsmobile > css**.
-   * In Visual Studio, navigate to **MWSWindows > www > wsmobile > css**.
+   * Dans Xcode, accédez à **Capture > www > wsmobile > css**.
+   * Dans Eclipse, accédez à **ressources > www > wsmobile > css**.
+   * Dans Visual Studio, accédez à **MWSWindows > www > wsmobile > css**.
 
-1. Open the `_style.css` file for editing.
-1. For Background image, change `#323232` to `#fff`.
-1. Save the changes and close `_style.css` file.
+1. Ouvrez le fichier `_style.css` pour le modifier.
+1. Pour l’image d’arrière-plan, remplacez `#323232` par `#fff`.
+1. Enregistrez les modifications et fermez le fichier `_style.css`.
 1. Ouvrez l’application AEM Forms.
 
    L’application AEM Forms affiche maintenant les instructions à la place de la description.
