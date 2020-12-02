@@ -33,7 +33,7 @@ Pour tout problème relatif à la plateforme proprement dite, contactez directem
 
 Configuration minimale requise pour installer Adobe Experience Manager :
 
-* Installed Java Platform, Standard Edition JDK, or other supported [Java Virtual Machines](#java-virtual-machines)
+* Installation de la plateforme Java, du JDK Standard Edition ou d’autres [machines virtuelles Java ](#java-virtual-machines) prises en charge
 * Fichier de démarrage rapide Experience Manager (JAR autonome ou WAR de déploiement de l’application web)
 
 ### Configuration minimale requise en matière d’espace disque et de mémoire {#minimum-sizing-requirements}
@@ -134,10 +134,10 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
  </tbody>
 </table>
 
-1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9, Java 10, and Java 12 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java.
+1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9, Java 10 et Java 12 ne sont pas des versions de LTS par Oracle (voir [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java.
 
 1. IBM JRE est pris en charge uniquement avec WebSphere Application Server.
-1. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. See the [Oracle Java support for Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) for more information.
+1. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Pour plus d’informations, voir la [prise en charge Java Oracle pour Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf).
 
 ### Stockage et persistance {#storage-persistence}
 
@@ -153,8 +153,8 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 | MongoDB Enterprise 4.0  | Référentiel | A : Pris en charge `[2, 3]` |
 | MongoDB Enterprise 3.6 | Référentiel | Z : Non pris en charge |
 | MongoDB Enterprise 3.4 | Référentiel | Z : Non pris en charge |
-| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée  `[4]` |
-| Oracle Database 12c (12.1.x) | Base de données de formulaires et de référentiels | R : Prise en charge limitée  |
+| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée   `[4]` |
+| Base de données Oracle 12c (12.1.x) | Base de données de formulaires et de référentiels | R : Prise en charge limitée  |
 | Microsoft SQL Server 2016 | Base de données de formulaires | A : Pris en charge |
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : Pris en charge |
 | Apache Solr | Service de recherche | A : Pris en charge |
@@ -172,7 +172,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 >
 >MongoDB est un logiciel tiers qui n’est pas inclus dans le pack de licences AEM. Pour plus d’informations, consultez la page relative à la stratégie de gestion des licences MongoDB ([MongoDB licensing policy](https://www.mongodb.org/about/licensing/)).
 >
->Pour tirer pleinement parti de votre déploiement AEM avec MongoDB, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle. See [Recommended Deployments](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) for more information.
+>Pour tirer pleinement parti de votre déploiement AEM avec MongoDB, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle. Voir [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) pour plus d&#39;informations.
 >
 >La licence comprend un ensemble de répliques, composé d’une instance principale et de deux instances secondaires qui peuvent être utilisées pour les déploiements de création ou de publication.
 >
@@ -190,7 +190,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 >
 >**La plupart des bases de données relationnelles bénéficient du niveau de prise en charge R sur AEM 6.5. Cette version s’accompagne des critères et d’un programme de prise en charge, comme indiqué dans la description du niveau R ci-dessus.**
 
-### Moteurs de servlet / Serveurs d’applications {#servlet-engines-application-servers}
+### Moteurs de servlet / Serveurs d’applications  {#servlet-engines-application-servers}
 
 Adobe Experience Manager peut s’exécuter comme serveur autonome (fichier JAR de démarrage rapide) ou comme application web avec un serveur d’applications tiers (fichier WAR).
 
@@ -241,7 +241,7 @@ Dans tous les autres cas, lorsqu’AEM est déployé sur Azure ou AWS, ou tout a
 
 Pour des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande vivement de travailler directement avec votre fournisseur cloud ou avec l’un des partenaires Adobe prenant en charge le déploiement d’AEM dans l’environnement de cloud de votre choix. Le partenaire ou fournisseur cloud que vous choisissez est responsable du dimensionnement, de la conception et de l’implémentation de l’architecture, et ce, pour répondre à vos besoins spécifiques en matière de performance, de chargement, d’évolutivité et de sécurité.
 
-### Plateformes Dispatcher (serveurs web) {#dispatcher-platforms-web-servers}
+### Plateformes Dispatcher (serveurs web)  {#dispatcher-platforms-web-servers}
 
 Dispatcher est le composant de mise en cache et d’équilibrage de charge. [Téléchargez la dernière version de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Experience Manager 6.5 nécessite Dispatcher version 4.3.2 ou ultérieure.
 
@@ -332,11 +332,11 @@ L’interface utilisateur d’AEM est optimisée en vue d’une utilisation sur 
 1. Version ESR (Extended Support Release) de Firefox. [Plus d’informations à ce sujet sur mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
 1. Prise en charge pour Apple iPad
 
-### Navigateurs pris en charge pour les sites web {#supported-browsers-for-websites}
+### Navigateurs pris en charge pour les sites web  {#supported-browsers-for-websites}
 
 En règle générale, la prise en charge du navigateur pour les sites web rendus par AEM Sites dépend de la mise en œuvre des modèles de pages AEM, de la conception et de la sortie des composants. Par conséquent, la responsabilité en revient à celui qui met en œuvre ces composants.
 
-### Clients WebDAV {#webdav-clients}
+### Clients WebDAV  {#webdav-clients}
 
 **Microsoft Windows 7+**
 
@@ -350,11 +350,11 @@ Pour se connecter avec Microsoft Windows 7 et versions ultérieures à une inst
 
 Pour améliorer la réactivité du client WebDav sous Windows, consultez l’article [2445570 de la Base de connaissances d’assistance Microsoft](https://support.microsoft.com/kb/2445570).
 
-## Autres remarques relatives aux plates-formes {#additional-platform-notes}
+## Autres remarques relatives aux plates-formes  {#additional-platform-notes}
 
 Vous trouverez dans cette section des remarques et des informations plus détaillées concernant l’exécution d’Adobe Experience Manager et de ses modules complémentaires.
 
-### IPv4 et IPv6 {#ipv-and-ipv}
+### IPv4 et IPv6  {#ipv-and-ipv}
 
 Tous les éléments d’Adobe Experience Manager (Instance, Dispatcher) peuvent être installés sur des réseaux IPv4 et IPv6.
 
@@ -362,20 +362,20 @@ Tout fonctionne sans problème, dans la mesure où aucune configuration particul
 
 Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le choix entre (suivant les besoins) :
 
-* an IPv6 address
-for example `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* une adresse IPv6
+par exemple `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* an IPv4 address
-for example `https://123.1.1.4:4502`
+* une adresse IPv4
+par exemple `https://123.1.1.4:4502`
 
-* a server name
-for example, `https://www.yourserver.com:4502`
+* un nom de serveur ;
+par exemple, `https://www.yourserver.com:4502`
 
 * Le scénario par défaut de `localhost` sera interprété à la fois pour les installations réseau IPv4 et IPv6 Par exemple : `https://localhost:4502`
 
 ### Configuration requise pour le module complémentaire AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
-Par défaut, AEM Dynamic Media est désactivé. See here to [enable Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+Par défaut, AEM Dynamic Media est désactivé. Voir ici [activer Contenu multimédia dynamique](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 Lorsque Dynamic Media est activé, des exigences techniques supplémentaires sont d’application.
 
@@ -421,7 +421,7 @@ Si vous utilisez Dynamic Media sous Linux, les conditions préalables ci-dessou
 
 >[!NOTE]
 >
->**Le nom d’hôte du serveur doit être résolvable :** veillez à ce que le nom de hôte du serveur soit résolvable sur une adresse IP. If that is not possible, add the fully qualified host name and the IP address to **/etc/hosts**:
+>**Le nom d’hôte du serveur doit être résolvable :** veillez à ce que le nom de hôte du serveur soit résolvable sur une adresse IP. Si cela n’est pas possible, ajoutez le nom d’hôte complet et l’adresse IP à **/etc/hosts** :
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -434,22 +434,22 @@ Pour utiliser Dynamic Media sous Windows, les redistribuables Microsoft Visual
 
 Pour Windows x64 :
 
-* Get Microsoft Visual Studio 2010 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/fr-fr/download/details.aspx?id=13523)
-* Get Microsoft Visual Studio 2013 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/fr-fr/download/details.aspx?id=40784)
-* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/fr-fr/download/details.aspx?id=48145)
+* Obtenez la redistribution de Microsoft Visual Studio 2010 à l&#39;adresse [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/fr-fr/download/details.aspx?id=13523)
+* Obtenez la redistribution de Microsoft Visual Studio 2013 à l&#39;adresse [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/fr-fr/download/details.aspx?id=40784)
+* Obtenez la redistribution de Microsoft Visual Studio 2015 à l&#39;adresse [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/fr-fr/download/details.aspx?id=48145)
 
 Pour Windows x86 :
 
-* Get Microsoft Visual Studio 2010 redistributable at [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
-* Get Microsoft Visual Studio 2013 redistributable at [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/fr-fr/download/details.aspx?id=52685)
+* Obtenez la redistribution de Microsoft Visual Studio 2010 à l&#39;adresse [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
+* Obtenez la redistribution de Microsoft Visual Studio 2013 à l&#39;adresse [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
+* Obtenez la redistribution de Microsoft Visual Studio 2015 à l&#39;adresse [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/fr-fr/download/details.aspx?id=52685)
 
 #### Mac OS {#macos}
 
 * Versions 10.9.x et ultérieures
 * Pris en charge uniquement à des fins d’évaluation et de démonstration
 
-### Exigences pour le générateur de PDF AEM Forms {#requirements-for-aem-forms-pdf-generator}
+### Exigences pour le générateur de PDF AEM Forms  {#requirements-for-aem-forms-pdf-generator}
 
 <table>
  <tbody>
@@ -458,7 +458,7 @@ Pour Windows x86 :
    <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> Dernière version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic </a> tracklast version</td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
@@ -494,12 +494,12 @@ Pour Windows x86 :
 >
 >En outre :
 >
->* PDF Generator requires 32-bit version of [Acrobat 2017 classic track version 17.011.30078 or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
+>* PDF Generator requiert la version 32 bits de [Acrobat 2017 classic track version 17.011.30078 ou ultérieure](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
 >* PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion.
 >* PDF Generator ne prend pas en charge Microsoft Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+>* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d&#39;informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([Sur site](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;.
 
    >
    >
@@ -515,13 +515,13 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Systèmes d’exploitation :**
 
-   * Linux (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits). For steps to install 32-bit client libraries, see [How to enable XMP extraction and write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+   * Linux (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits). Pour connaître les étapes d’installation des bibliothèques clientes 32 bits, voir [Comment activer l’extraction XMP et la réécriture sur RedHat Linux 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
    * Windows Server
    * Mac OS X (64 bits)
 
 * **Formats** de fichier : JPEG, PNG, TIFF, PDF, INDD, AI et EPS.
 
-### Configuration requise pour AEM Assets pour le traitement des ressources lourdes en métadonnées sous Linux {#assetsonlinux}
+### Configuration requise pour que AEM Assets traite les ressources lourdes en métadonnées sous Linux {#assetsonlinux}
 
 Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux qui contient GLIBC_2.14, par exemple un noyau Linux version 3.1.x. Il améliore les performances de traitement des fichiers qui contiennent une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
