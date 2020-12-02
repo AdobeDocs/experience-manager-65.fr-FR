@@ -82,11 +82,11 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et plus explicite.
 
-   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+   Par exemple, si l’URL de vanité est définie sur w `elcome`pour la page identifiée par le chemin / `v1.0/startpage`pour le site Web h `ttp://example.com,`, h `ttp://example.com/welcome`serait l’URL de vanité de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
-   >L’URL de redirection :
+   >L’URL Vanity :
    >
    >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
    >* Ne prend pas en charge les modèles d’expression régulière.
@@ -94,7 +94,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
 * **Rediriger l’URL Vanity**
 
-   Indique si vous souhaitez que la page utilise l’URL de redirection.
+   Indique si vous souhaitez que la page utilise l’URL Vanity.
 
 ### Avancé {#advanced}
 
@@ -134,7 +134,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Indiquez une configuration d’exportation.
 
-### Miniature  {#thumbnail}
+### Miniature   {#thumbnail}
 
 * **Miniature de page**
 
@@ -172,13 +172,13 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Définissez les propriétés d’une page Blueprint dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    Définissez les propriétés d’une page Live Copy dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
-### Structure du site  {#site-structure}
+### Structure du site   {#site-structure}
 
 * Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
 
