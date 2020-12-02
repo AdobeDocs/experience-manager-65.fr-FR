@@ -87,11 +87,11 @@ Les conditions requises pour autoriser un utilisateur et/ou un groupe spécifiqu
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` et `jcr:removeChildNodes`, `jcr:removeNode`
 
-These `remove` privileges must be [administered using Access Control Lists, within CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Ces privilèges `remove` doivent être [administrés à l&#39;aide de Listes de Contrôle d&#39;accès, dans CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-The `add` and `modify` privileges can also be administered in CRXDE Lite, or using the User Management console.
+Les privilèges `add` et `modify` peuvent également être administrés en CRXDE Lite ou à l&#39;aide de la console User Management.
 
-For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
+Par exemple, la définition des privilèges `remove` pour un groupe `content-authors-no-delete` :
 
 ![cf-delete-03](assets/cf-delete-03.png)
 
