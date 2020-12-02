@@ -40,22 +40,22 @@ Les segments sont définis dans la section [Configuration de la segmentation](/h
 
 Lors de la discussion de la segmentation, la terminologie suivante est utilisée :
 
-**Visiteur** Un visiteur est une personne qui visite un site Web. La visite de cette personne commence généralement à partir d’une page de référence, puis aboutit à l’affichage d’une ou de plusieurs pages de votre propre site web. Un profil de comportement peut être créé à partir des détails de la visite de cette personne.
+**** VisiteurUn visiteur est une personne qui visite un site Web. La visite de cette personne commence généralement à partir d’une page de référence, puis aboutit à l’affichage d’une ou de plusieurs pages de votre propre site web. Un profil de comportement peut être créé à partir des détails de la visite de cette personne.
 
-**Utilisateur** Un utilisateur est un visiteur qui s’enregistre sur le site Web pour recevoir un profil de compte. Pour générer son profil, il fournit des informations d’identification supplémentaires telles qu’une adresse électronique, son sexe, entre autres. Des informations supplémentaires peuvent également être collectées, y compris l’activité communautaire et les comportements d’achats, entre autres choses encore. En fonction des informations fournies dans le profil, un profil démographique peut être créé.
+**** UtilisateurUn utilisateur est un visiteur qui s&#39;enregistre sur le site Web pour recevoir un profil de compte. Pour générer son profil, il fournit des informations d’identification supplémentaires telles qu’une adresse électronique, son sexe, entre autres. Des informations supplémentaires peuvent également être collectées, y compris l’activité communautaire et les comportements d’achats, entre autres choses encore. En fonction des informations fournies dans le profil, un profil démographique peut être créé.
 
-**Caractéristique** Une caractéristique ou propriété d&#39;un visiteur peut être utilisée pour déterminer l&#39;appartenance à un segment spécifique.
+**** CaractéristiqueUne caractéristique ou propriété d&#39;un visiteur peut être utilisée pour déterminer l&#39;appartenance à un segment spécifique.
 
-**Segment** Un segment est un ensemble de visiteurs qui partagent certaines caractéristiques. Les segments doivent être distincts, avec un minimum de chevauchement avec les autres segments.
+**** SegmentUn segment est un ensemble de visiteurs qui partagent certaines caractéristiques. Les segments doivent être distincts, avec un minimum de chevauchement avec les autres segments.
 
-**Caractéristiques** comportementales Les caractéristiques comportementales sont celles qui se rapportent au comportement d&#39;un visiteur sur le site Web. Celles-ci comprennent :
+**Caractéristiques comportementalesLes caractéristiques comportementales sont celles qui se rapportent au comportement d&#39;un visiteur sur le site Web.** Celles-ci comprennent :
 
 * L’intérêt au sein de votre site web ; notamment les pages visitées et les produits achetés.
 * L’intérêt sur le site web de référence ; notamment les termes de recherche utilisés ou les publicités cliquées.
 * L’intérêt sur d’autres sites, déterminé à l’aide d’outils tels que Spyjax.
 * La fidélité du visiteur ; la durée de la visite, la fréquence des visites.
 
-**Caractéristiques** démographiques Il s&#39;agit de caractéristiques de population sélectionnées, notamment :
+**Caractéristiques démographiquesIl s&#39;agit de caractéristiques de population sélectionnées, notamment :** 
 
 * Âge
 * Revenu
@@ -64,21 +64,21 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
 * Sexe
 * Emplacement
 
-**Caractéristiques** dérivées Certaines caractéristiques démographiques sont difficiles à déterminer sans enregistrement, mais peuvent être dérivées en combinant des caractéristiques comportementales et démographiques.
+**Caractéristiques dérivéesIl est difficile de déterminer certaines caractéristiques démographiques sans enregistrement, mais elles peuvent être dérivées en combinant des caractéristiques comportementales et démographiques.** 
 
 Par exemple, la combinaison de l’URL de référence (en tant que caractéristique comportementale) avec des données démographiques (acquises à partir d’outils tels que [Google Ad Planner](https://www.google.com/adplanner/)) permet aux propriétaires du site d’extraire les caractéristiques comportementales de leurs visiteurs.
 
-**Sous-segment** Un segment peut être subdivisé en plusieurs sous-segments. Ceci s’effectue en définissant des caractéristiques supplémentaires.
+**** Sous-segmentUn segment peut être subdivisé en plusieurs sous-segments. Ceci s’effectue en définissant des caractéristiques supplémentaires.
 
-**Page** du teaser Une page du teaser est dirigée vers une audience spécifique. Elle contient du contenu réutilisable qui peut être utilisé dans le paragraphe de teaser.
+**Page du** teaser TeaserUne page de teaser est dirigée vers une audience spécifique. Elle contient du contenu réutilisable qui peut être utilisé dans le paragraphe de teaser.
 
-**Campaign** A campaign est un ensemble de pages de teaser et de pages de marketing par courriel, telles que des bulletins d’information ou des invitations. Typiquement, une campagne dure pendant une période limitée, puis elle est remplacée par une autre campagne.
+**** CampagneUne campagne est un ensemble de pages de teaser et de pages de marketing par courriel, telles que des bulletins d&#39;information ou des invitations. Typiquement, une campagne dure pendant une période limitée, puis elle est remplacée par une autre campagne.
 
-**Paragraphe** du teaser Il s&#39;agit d&#39;un paragraphe qui extrait le contenu d&#39;une autre page en fonction d&#39;une stratégie de sélection. Cette stratégie de sélection peut tenir compte de segments et de campagnes.
+**** Paragraphe du teaserIl s&#39;agit d&#39;un paragraphe qui extrait le contenu d&#39;une autre page en fonction d&#39;une stratégie de sélection. Cette stratégie de sélection peut tenir compte de segments et de campagnes.
 
-**Liste** Une liste est extraite d’un segment d’utilisateurs inscrits. Par exemple, l’emplacement utilisé pour diriger le contenu du paragraphe de teaser.
+**** ListeUne liste est extraite d’un segment d’utilisateurs enregistrés. Par exemple, l’emplacement utilisé pour diriger le contenu du paragraphe de teaser.
 
 >[!NOTE]
 >
->Please see [Segmentation](/help/sites-administering/campaign-segmentation.md) for further information on segments in AEM.
+>Pour plus d&#39;informations sur les segments dans AEM, consultez [Segmentation](/help/sites-administering/campaign-segmentation.md).
 
