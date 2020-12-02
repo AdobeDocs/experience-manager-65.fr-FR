@@ -29,7 +29,7 @@ La segmentation est un élément clé de la création d’une campagne. Voir [Ge
 
 En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
 
-Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. This content is maintained in the [Personalization](/help/sites-authoring/personalization.md) section of the website. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
+Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site Web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
 AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs. Il vous permet également de vérifier les résultats de vos définitions de segment.
 
@@ -43,21 +43,21 @@ Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navig
 
 ## Éditeur de segment {#segment-editor}
 
-The **Segment Editor** allows you to easily modify a segment. Pour modifier un segment, sélectionnez un segment dans la [liste de segments](/help/sites-administering/segmentation.md#accessing-segments) et cliquez sur le bouton **Modifier**.
+L&#39;**éditeur de segments** vous permet de modifier facilement un segment. Pour modifier un segment, sélectionnez un segment dans la [liste de segments](/help/sites-administering/segmentation.md#accessing-segments) et cliquez sur le bouton **Modifier**.
 
 ![segmenteditor](assets/segmenteditor.png)
 
-Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
+A l’aide de l’explorateur de composants, vous pouvez ajouter des conteneurs **ET** et **OU** pour définir la logique du segment, puis ajouter des composants supplémentaires pour comparer les propriétés et les valeurs ou des scripts de référence et d’autres segments pour définir les critères de sélection (voir [Création d’un segment](#creating-a-new-segment)) pour définir le scénario exact de sélection du segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. Si plusieurs segments sont applicables, le facteur **Amplifier** est également utilisé. See [Creating a New Segment](#creating-a-new-segment) for details on the [boost factor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. Si plusieurs segments sont applicables, le facteur **Amplifier** est également utilisé. Voir [Création d&#39;un nouveau segment](#creating-a-new-segment) pour plus d&#39;informations sur le [facteur de croissance.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
 >L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui à son tour référence le segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
 
-### Conteneurs {#containers}
+### Conteneurs  {#containers}
 
-Les conteneurs suivants sont disponibles clé en main et vous permettent de regrouper des comparaisons et des références en vue de l’évaluation booléenne. Ils peuvent être déplacés de l’explorateur de composants vers l’éditeur. See the following section [Using AND and OR Containers](/help/sites-administering/segmentation.md#using-and-and-or-containers) for more information.
+Les conteneurs suivants sont disponibles clé en main et vous permettent de regrouper des comparaisons et des références en vue de l’évaluation booléenne. Ils peuvent être déplacés de l’explorateur de composants vers l’éditeur. Pour plus d&#39;informations, consultez la section [Utilisation des Conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers).
 
 <table>
  <tbody>
@@ -79,12 +79,12 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
 <table>
  <tbody>
   <tr>
-   <td>Propriété-Valeur<br /> </td>
-   <td>Compare une propriété d’une boutique à une valeur définie<br /> </td>
+   <td>Propriété-Value<br /> </td>
+   <td>Compare une propriété d’un magasin à une valeur définie <br /> </td>
   </tr>
   <tr>
    <td>Propriété-Propriété</td>
-   <td>Compare une propriété d’un magasin à une autre propriété<br /> </td>
+   <td>Compare une propriété d'un magasin à une autre propriété<br /> </td>
   </tr>
   <tr>
    <td>Référence des segments de propriété</td>
@@ -107,9 +107,9 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
 >
 >`null < 30 // will return true`
 >
->Therefore when [creating a segment](/help/sites-administering/segmentation.md#creating-a-new-segment), you should select a **data type** whenever the types of compared values are known. Par exemple :
+>Par conséquent, lorsque [vous créez un segment](/help/sites-administering/segmentation.md#creating-a-new-segment), vous devez sélectionner un **type de données** lorsque les types de valeurs comparées sont connus. Par exemple :
 >
->When comparing the property `profile/age`, you already know that the compared type will be **number**, so even if `profile/age` is not set, a comparison `profile/age` less-than 30 will return **false**, as you would expect.
+>Lors de la comparaison de la propriété `profile/age`, vous savez déjà que le type comparé sera **nombre**. Par conséquent, même si `profile/age` n&#39;est pas défini, une comparaison `profile/age` inférieure à 30 renverra **false**, comme vous vous y attendriez.
 
 ### Références {#references}
 
@@ -123,7 +123,7 @@ Les références suivantes sont disponibles clé en main pour établir un lien d
   </tr>
   <tr>
    <td>Référence de script</td>
-   <td>Evaluez le script référencé. Pour plus d’informations, voir la section <a href="/help/sites-administering/segmentation.md#using-script-references">Utilisation de références</a> de script.</td>
+   <td>Evaluez le script référencé. Voir la section suivante <a href="/help/sites-administering/segmentation.md#using-script-references">Utilisation de références de script</a> pour plus d’informations.</td>
   </tr>
  </tbody>
 </table>
@@ -132,9 +132,9 @@ Les références suivantes sont disponibles clé en main pour établir un lien d
 
 Pour définir votre nouveau segment :
 
-1. Après [avoir accédé aux segments](/help/sites-administering/segmentation.md#accessing-segments), [accédez au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment ou laissez-le à la racine.
+1. Après avoir [accédé aux segments](/help/sites-administering/segmentation.md#accessing-segments), [accédez au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment, ou laissez-le à la racine.
 
-1. cliquez ou appuyez sur le bouton Créer et sélectionnez **Créer un segment** ContextHub.
+1. cliquez ou appuyez sur le bouton Créer et sélectionnez **Créer un segment ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -157,7 +157,7 @@ Pour définir votre nouveau segment :
 1. Cliquez sur **OK** pour enregistrer votre définition :
 1. Ajoutez d’autres composants, en fonction de vos besoins. Vous pouvez formuler des expressions booléennes à l’aide des composants de conteneur pour des comparaisons ET et OU (voir la rubrique [Utilisation des conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers) ci-dessous). Avec l’éditeur de segment, vous pouvez supprimer les composants qui ne sont plus utiles ou les faire glisser vers un nouvel emplacement dans l’instruction.
 
-### Utilisation des conteneurs ET et OU {#using-and-and-or-containers}
+### Utilisation des conteneurs ET et OU  {#using-and-and-or-containers}
 
 Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Cette tâche sera plus facile si vous tenez compte de certains aspects élémentaires :
 
@@ -180,9 +180,9 @@ Commencez par placer un composant de conteneur OU dans le conteneur ET par défa
 
 À l’aide du composant Référence de script, l’évaluation d’une propriété de segment peut être déléguée à un script externe. Une fois le script correctement configuré, il peut être utilisé comme n’importe quel autre composant d’une condition de segment.
 
-#### Définition d’une référence de script {#defining-a-script-to-reference}
+#### Définition d’une référence de script  {#defining-a-script-to-reference}
 
-1. Add file to `contexthub.segment-engine.scripts` clientlib.
+1. Ajoutez le fichier à `contexthub.segment-engine.scripts` clientlib.
 1. Implémentez une fonction qui renvoie une valeur. Par exemple :
 
    ```
@@ -214,9 +214,9 @@ Commencez par placer un composant de conteneur OU dans le conteneur ET par défa
    })();
    ```
 
-1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
+1. Enregistrez le script avec `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Si le script dépend de propriétés supplémentaires, il doit appeler `this.dependOn()`. For example if the script depends on `profile/age`:
+Si le script dépend de propriétés supplémentaires, il doit appeler `this.dependOn()`. Par exemple, si le script dépend de `profile/age` :
 
 ```
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -232,16 +232,16 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer en tant que liste plate. Dans ce cas, il peut s’avérer utile de créer des dossiers pour gérer vos segments.
 
-### Create a New Folder {#create-folder}
+### Créer un nouveau dossier {#create-folder}
 
-1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+1. Après avoir [accédé aux segments](#accessing-segments), cliquez ou appuyez sur le bouton **Créer** et sélectionnez **Dossier**.
 
    ![Dossier Ajouter](assets/contexthub-create-segment.png)
 
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
-   * Le **nom** deviendra le nom du noeud dans le référentiel.
-      * Elle sera générée automatiquement en fonction du titre et ajustée en fonction des conventions de dénomination [AEM.](/help/sites-developing/naming-conventions.md)
+   * **Name** deviendra le nom du noeud dans le référentiel.
+      * Elle sera générée automatiquement en fonction du titre et ajustée selon les [conventions d&#39;appellation AEM.](/help/sites-developing/naming-conventions.md)
       * Il peut être ajusté si nécessaire.
 
    ![Créer un dossier](assets/contexthub-create-folder.png)
@@ -257,13 +257,13 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Modifier les dossiers existants {#modify-folders}
 
-1. Après [avoir accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier que vous souhaitez modifier pour le sélectionner.
+1. Après avoir [accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](assets/contexthub-select-folder.png)
 
 1. Appuyez ou cliquez sur **Renommer** dans la barre d’outils pour renommer le dossier.
 
-1. Saisissez un nouveau titre **de** dossier et appuyez ou cliquez sur **Enregistrer**.
+1. Saisissez un nouveau **Titre du dossier** et appuyez ou cliquez sur **Enregistrer**.
 
    ![Renommer le dossier](assets/contexthub-rename-folder.png)
 
@@ -273,7 +273,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Suppression d’un dossier
 
-1. Après [avoir accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier que vous souhaitez modifier pour le sélectionner.
+1. Après avoir [accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](assets/contexthub-select-folder.png)
 
@@ -283,7 +283,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
    ![Confirmer la suppression](assets/contexthub-confirm-segment-delete.png)
 
-   * Appuyez sur ou sur **Supprimer** pour confirmer.
+   * Appuyez ou cliquez sur **Supprimer** pour confirmer.
    * Appuyez ou cliquez sur **Annuler** pour abandonner.
 
 1. Si l’un des dossiers sélectionnés contient des sous-dossiers ou des segments, leur suppression doit être confirmée.
@@ -336,4 +336,4 @@ Si vous avez configuré une activité et une expérience à l’aide du segment 
 
 ## Utilisation de votre segment {#using-your-segment}
 
-Les segments sont utilisés afin d’orienter le contenu réel affiché pour une audience cible spécifique. See [Managing Audiences](/help/sites-authoring/managing-audiences.md) for more information about audiences and segments and [Authoring Targeted Content](/help/sites-authoring/content-targeting-touch.md) about using audiences and segments to target content.
+Les segments sont utilisés afin d’orienter le contenu réel affiché pour une audience cible spécifique. Voir [Gestion des Audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur les audiences et les segments et [Création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md) sur l’utilisation d’audiences et de segments pour cible du contenu.
