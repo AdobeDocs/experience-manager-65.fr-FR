@@ -22,7 +22,7 @@ ht-degree: 81%
 
 Pour obtenir des informations sur la page, envoyez une requête au servlet PageInfo afin d’obtenir les métadonnées de page au format JSON.
 
-La servlet PageInfo renvoie des informations sur les ressources du référentiel. The servlet is bound to the URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` and uses the `path` parameter to identify the resource. The following example URL returns information about the `/content/we-retail/us/en` node:
+La servlet PageInfo renvoie des informations sur les ressources du référentiel. La servlet est liée à l&#39;URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` et utilise le paramètre `path` pour identifier la ressource. L’exemple d’URL suivant renvoie des informations sur le noeud `/content/we-retail/us/en` :
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -55,9 +55,9 @@ Les composants de page peuvent être associés à un ou plusieurs services `com.
 >
 >À l’instar des PageInfoProviders, utilisez des ListInfoProviders pour mettre à jour des listes d’informations au format JSON (voir [Personnalisation de la console d’administration des sites web](/help/sites-developing/customizing-siteadmin.md)).
 
-## Fournisseurs d’informations de page par défaut {#default-page-information-providers}
+## Fournisseurs d’informations de page par défaut  {#default-page-information-providers}
 
-The `/libs/foundation/components/page` component is associated with the following PageInfoProvider services:
+Le composant `/libs/foundation/components/page` est associé aux services PageInfoProvider suivants :
 
 * **Fournisseur d’état de page par défaut** : informations sur l’état de la page, par exemple si elle est verrouillée, s’il s’agit de la charge utile d’un processus actif ou encore quels sont les processus disponibles pour la page.
 * **Fournisseur d’informations sur la relation en direct** : informations concernant la gestion multisite (MSM, Multi-Site Management) ; par exemple, la page fait-elle partie d’un plan directeur ou s’agit-il d’une Live Copy ?
@@ -67,7 +67,7 @@ The `/libs/foundation/components/page` component is associated with the followin
 * **Fournisseur d’informations sur l’émulateur** : informations sur les émulateurs de terminaux mobiles disponibles pour cette ressource. Si le composant de page n’effectue pas le rendu des terminaux mobiles, aucun émulateur n’est disponible.
 * **Fournisseur d’informations sur les annotations** : informations sur les annotations figurant sur la page.
 
-For example, the PageInfo servlet returns the following JSON response for the `/content/we-retail/us/en` node:
+Par exemple, la servlet PageInfo renvoie la réponse JSON suivante pour le noeud `/content/we-retail/us/en` :
 
 ```
 {
@@ -532,26 +532,26 @@ Pour configurer le service dans la source de votre projet, procédez comme suit�
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Inside the brackets (`[]`) that surround the `workflowpackageinfoprovider.filter` property, type a comma-separated list of filter values similar to the following example:
+1. Dans les crochets (`[]`) entourant la propriété `workflowpackageinfoprovider.filter`, saisissez une liste de valeurs de filtre séparées par des virgules, semblable à l’exemple suivant :
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
 1. Enregistrez le fichier.
 
-## Création d’un fournisseur d’informations sur la page {#creating-a-page-information-provider}
+## Création d’un fournisseur d’informations sur la page  {#creating-a-page-information-provider}
 
 Créez un service Fournisseur d’informations sur la page personnalisée pour ajouter des métadonnées de page que votre application peut facilement obtenir.
 
 1. Mettez en œuvre l’interface `com.day.cq.wcm.api.PageInfoProvider`.
 1. Regroupez et déployez la classe sous la forme d’un service OSGi.
-1. Créez un composant de page dans votre application. Use `foundation/components/page` as the value of the `sling:resourceSuperType` property.
+1. Créez un composant de page dans votre application. Utilisez `foundation/components/page` comme valeur de la propriété `sling:resourceSuperType`.
 
-1. Add a node below the component node named `cq:infoProviders`.
+1. Ajoutez un noeud sous le noeud de composant nommé `cq:infoProviders`.
 1. Sous le nœud `cq:infoProviders`, ajoutez un nœud pour votre service PageInfoProvider. Vous pouvez attribuer au nœud le nom de votre choix.
 1. Ajoutez la propriété suivante à votre nœud PageInfoProvider :
 
    * Nom : className
-   * Type : Chaîne
+   * Type : chaîne
    * Valeur : PID de votre service PageInfoProvider.
 
 Dans le cas des ressources qui utilisent votre composant de page d’application comme `sling:resourceType`, le servlet PageInfo renvoie les métadonnées PageInfoProvider personnalisées en plus des métadonnées PageInfoProvider par défaut.
@@ -609,7 +609,7 @@ L’exemple suivant, dans CRXDE Lite, affiche le composant de page qui est conf
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
-The PageUrlInfoProvider service returns the following data for the `/content/we-retail/us/en` node:
+Le service PageUrlInfoProvider renvoie les données suivantes pour le noeud `/content/we-retail/us/en` :
 
 ```xml
 "URLs": {
