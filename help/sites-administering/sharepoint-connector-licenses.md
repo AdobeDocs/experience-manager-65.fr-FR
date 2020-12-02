@@ -23,7 +23,7 @@ ht-degree: 74%
 
 Cette section répertorie l’ensemble des licences, des notices de copyright et des clauses de non-responsabilité qui doivent être présentées explicitement avec Day JCR Connector for Microsoft SharePoint.
 
-## Présentation des bibliothèques Connector tierces {#overview-of-connector-rd-party-libraries}
+## Présentation des bibliothèques Connector tierces  {#overview-of-connector-rd-party-libraries}
 
 Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les bibliothèques de base SharePoint Connector, ainsi que les licences, les notices de copyright ou les clauses de non-responsabilité qui les prennent en charge :
 
@@ -42,7 +42,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | commons-httpclient | [Apache ](#apache) |
 | commons-io | [Apache ](#apache) |
 | commons-lang | [Apache ](#apache) |
-| simultané | [Concurrent](#concurrent) (domaine public) |
+| simultané | [Concurrent](#concurrent)  (domaine public) |
 | geronimo-activation_1.1_spec | [Apache ](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache ](#apache) |
 | httpcore | [Apache ](#apache) |
@@ -61,7 +61,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | wstx-asl | [Apache ](#apache) |
 | xalan | [Apache ](#apache) |
 | xbean | [Apache ](#apache) |
-| xml-apis | [Apache](#apache) (contient des portions couvertes par les licences de domaine public et de logiciel W3C) |
+| xml-apis | [Apache](#apache)  (contient des portions couvertes par les licences de domaine public et de logiciel W3C) |
 | XmlSchema | [Apache ](#apache) |
 
 ## Présentation des bibliothèques CRX tierces {#overview-of-crx-rd-party-libraries}
