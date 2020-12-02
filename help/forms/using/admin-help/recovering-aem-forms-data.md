@@ -50,7 +50,7 @@ Lorsque vous effectuez une restauration à partir d’une sauvegarde sur un nouv
 
 Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restants de la grappe fonctionnent correctement, effectuez une récupération du nœud unique de la grappe.
 
-## Récupération des données AEM Forms {#recover-the-aem-forms-data}
+## Récupération des données AEM Forms  {#recover-the-aem-forms-data}
 
 1. Arrêtez les services AEM Forms et le serveur d’applications en cours d’exécution.
 1. Au besoin, recréez le système physique à partir d’une image système. Par exemple, cette étape peut ne pas être nécessaire si la raison de la récupération est un serveur de bases de données déficient.
@@ -109,11 +109,11 @@ Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restant
       Pour la restauration dans un environnement organisé en grappes, consultez la section [Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Supprimez tous les fichiers temporaires AEM forms créés dans le répertoire java.io.temp ou dans le répertoire temporaire Adobe.
-1. Début AEM formulaires (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Formulaires d&#39;AEM début (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Modification de l’emplacement du stockage global de documents durant la récupération {#changing-the-gds-location-during-recovery}
 
-Si votre répertoire de stockage global de documents est restauré à un emplacement différent de son emplacement d’origine, exécutez le script LCSetGDS pour définir le répertoire de stockage global de documents sur le nouvel emplacement. Le script se trouve dans le `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline` dossier. The script takes two parameters, `defaultGDS` and `newGDS`. Voir le fichier `ReadMe.txt` dans le même dossier pour obtenir des instructions sur la façon d’exécuter le script.
+Si votre répertoire de stockage global de documents est restauré à un emplacement différent de son emplacement d’origine, exécutez le script LCSetGDS pour définir le répertoire de stockage global de documents sur le nouvel emplacement. Le script se trouve dans le dossier `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Le script utilise deux paramètres, `defaultGDS` et `newGDS`. Voir le fichier `ReadMe.txt` dans le même dossier pour obtenir des instructions sur la façon d’exécuter le script.
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Si votre répertoire de stockage global de documents est restauré à un emplace
 >
 >le déploiement des composants échoue sous Windows si le répertoire de stockage global de documents se situe à la racine du disque (par exemple D:\). Vous devez vous assurer que le répertoire ne se trouve pas en racine, mais bien dans un sous-répertoire du lecteur. Par exemple, il peut s’agir de D:\GDS, au lieu de D:\.
 
-## Récupération du stockage global de documents sur un environnement organisé en grappe {#recovering-the-gds-to-a-clustered-environment}
+## Récupération du stockage global de documents sur un environnement organisé en grappe  {#recovering-the-gds-to-a-clustered-environment}
 
 Pour modifier l’emplacement du stockage global de documents dans un environnement organisé en grappe, fermez l’intégralité de la grappe, puis exécutez le script LCSetGDS sur un seul nœud de la grappe (voir [Modification de l’emplacement du stockage global de documents durant la récupération](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)). Démarrez ce nœud uniquement. Une fois ce nœud entièrement démarré, d’autres nœuds de la grappe peuvent l’être en toute sécurité. Ils pointeront alors correctement vers le nouveau stockage global de documents.
 
