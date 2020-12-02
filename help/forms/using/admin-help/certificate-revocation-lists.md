@@ -22,20 +22,20 @@ ht-degree: 100%
 
 Trust Store Management vous permet d’importer, de modifier et de supprimer des listes de révocation des certificats (CRL). Les listes de révocation des certificats codées Base64 et DER sont prises en charge.
 
-## Importation d’une CRL {#import-a-crl}
+## Importation d’une CRL  {#import-a-crl}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Listes de révocation des certificats, puis sur Importer.
 1. Dans la zone Alias, saisissez un identificateur pour la liste CRL.
 1. Cliquez sur Parcourir pour accéder à la CRL, puis sur OK.
 
-## Exportation d’une CRL {#export-a-crl}
+## Exportation d’une CRL  {#export-a-crl}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Listes de révocation des certificats.
 1. Cliquez sur le nom d’alias de la liste CRL à exporter, puis sur Exporter.
 1. Suivez les instructions pour exporter la liste CRL. Les listes CRL sont exportées en codage à base 64.
 1. Cliquez sur OK.
 
-## Suppression d’une CRL {#delete-a-crl}
+## Suppression d’une CRL  {#delete-a-crl}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Listes de révocation des certificats.
 1. Cochez la case correspondant aux listes CRL à supprimer, cliquez sur Supprimer, puis sur OK.
