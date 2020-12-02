@@ -20,7 +20,7 @@ ht-degree: 74%
 
 # Test d’une mise en page en responsive design dans We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Toutes les pages Web.Retail utilisent le composant Conteneur de mise en page pour implémenter une conception adaptée. Le conteneur offre un système de paragraphe qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. The component is used in conjunction with the **Layout** mode in the page editor, which allows you to create and edit your responsive layout dependent on device.
+Toutes les pages Web.Retail utilisent le composant Conteneur de mise en page pour implémenter une conception adaptée. Le conteneur offre un système de paragraphe qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé conjointement avec le mode **Mise en page** dans l’éditeur de page, ce qui vous permet de créer et de modifier votre mise en page adaptée en fonction du périphérique.
 
 ## Test {#trying-it-out}
 
@@ -48,4 +48,4 @@ Toutes les pages Web.Retail utilisent le composant Conteneur de mise en page pou
 
 ## Informations supplémentaires {#further-information}
 
-For further information, refer to the authoring document [Responsive Layout](/help/sites-authoring/responsive-layout.md) or the administrator document [Configuring Layout Container and Layout Mode](/help/sites-administering/configuring-responsive-layout.md) for complete technical details.
+Pour plus d’informations, consultez le document de création [Mise en page réactive](/help/sites-authoring/responsive-layout.md) ou le document administrateur [Configuration du Conteneur de mise en page et du mode de mise en page](/help/sites-administering/configuring-responsive-layout.md) pour obtenir des informations techniques complètes.
