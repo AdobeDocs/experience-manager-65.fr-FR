@@ -35,7 +35,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >
 >Pour plus d’informations sur l’interface utilisateur Ressources, voir [Gestion des ressources](/help/assets/manage-assets.md).
 
-## Démarrage rapide : Visionneuses d’images  {#quick-start-image-sets}
+## Démarrage rapide : Visionneuses d’images   {#quick-start-image-sets}
 
 Pour démarrer rapidement :
 
@@ -111,7 +111,7 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 >* Une miniature de couleur noire, marron et verte.
 
 
-## Création d’une visionneuse d’images  {#creating-image-sets}
+## Création d’une visionneuse d’images   {#creating-image-sets}
 
 Vous pouvez créer des visionneuses d’images par l’interface utilisateur ou par l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
 
@@ -120,7 +120,7 @@ Vous pouvez créer des visionneuses d’images par l’interface utilisateur ou 
 >Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >**Important :** Les ensembles par lot sont créés par le système IPS (Image Production System) dans le cadre de l’ingestion des ressources et sont disponibles uniquement dans le mode Scene7 de Dynamic Media.
 
-Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement des ressources une fois qu’elles ont été ajoutées.
+Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources après les avoir ajoutées.
 
 >[!NOTE]
 >
@@ -161,22 +161,22 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 1. (En option) Effectuez l’une des actions suivantes :
 
-   * Pour supprimer une image, sélectionnez-la et appuyez sur **[!UICONTROL Supprimer la ressource.]**
+   * Pour supprimer une image, sélectionnez-la et appuyez sur **[!UICONTROL Supprimer l’élément.]**
 
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, appuyez sur **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini à appliquer en une seule fois à toutes les ressources.
    >[!NOTE]
    >
    >Lors de la création de la visionneuse d’images, vous pouvez modifier la miniature de la visionneuse d’images ou autoriser AEM à la sélectionner automatiquement en fonction des fichiers de la visionneuse d’images. Pour sélectionner une miniature, appuyez sur **[!UICONTROL Modifier la miniature]** au-dessus du champ Titre de la page de l’éditeur de visionneuse d’images, puis sélectionnez une image (vous pouvez également accéder à d’autres dossiers pour rechercher des images). Si vous avez sélectionné une miniature, puis souhaitez qu’AEM en génère une depuis la visionneuse d’images, sélectionnez **[!UICONTROL Basculer vers]** **[!UICONTROL les miniatures automatiques.]**
 
-1. Cliquez sur **[!UICONTROL Save.]** La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
+1. Cliquez sur **[!UICONTROL Enregistrer.]** La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Affichage de visionneuses d’images  {#viewing-image-sets}
+## Affichage de visionneuses d’images   {#viewing-image-sets}
 
 Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 >[!IMPORTANT]
 >
->Batch sets are created by the IPS [Image Production System] as part of asset ingestion and are available only in Dynamic Media - Scene7 mode.)
+>Les jeux de lots sont créés par le système IPS [Image Production System] dans le cadre de l’assimilation de ressources et ne sont disponibles qu’en mode Contenu multimédia dynamique - Scene7.)
 
 Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur. Vous pouvez afficher ces visionneuses de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses d’images dans l’interface utilisateur.)
 
@@ -188,7 +188,7 @@ Notez toutefois que les visionneuses créées à l’aide de paramètres prédé
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets.]**
+* À partir de la recherche, vous pouvez sélectionner **[!UICONTROL Filtre]**, développer **[!UICONTROL Dynamic Media]**, puis sélectionner **[!UICONTROL Jeux.]**
 
    La recherche renvoie les visionneuses correspondantes qui ont soit été créées manuellement dans l’interface utilisateur, soit automatiquement au moyen de paramètres prédéfinis d’ensemble par lot. Dans le cas des visionneuses automatisées, la requête de recherche est effectuée à l’aide du critère « Commence par », à la différence de la recherche AEM qui repose sur l’utilisation du critère « Contient ». Définir le filtre sur **[!UICONTROL Visionneuses]** est le seul moyen de rechercher des ensembles automatisés.
 
@@ -198,7 +198,7 @@ Notez toutefois que les visionneuses créées à l’aide de paramètres prédé
 >
 >Vous pouvez afficher les visionneuses par le biais de l’interface utilisateur, comme indiqué dans la section [Modification d’une visionneuse d’images](#editing-image-sets).
 
-## Modification d’une visionneuse d’images  {#editing-image-sets}
+## Modification d’une visionneuse d’images   {#editing-image-sets}
 
 Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’images, comme suit :
 
@@ -225,7 +225,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
       >[!NOTE]
       >
       >Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant par une autre image, la ressource d’origine s’affiche toujours.
-   * Pour supprimer une ressource, sélectionnez-la et appuyez ou cliquez sur **[!UICONTROL Supprimer la ressource.]**
+   * Pour supprimer une ressource, sélectionnez-la et appuyez ou cliquez sur **[!UICONTROL Supprimer l’élément.]**
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, appuyez sur **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini de visionneuse.
    * Pour ajouter ou changer une miniature, sélectionnez l’icône de miniature située à droite de la ressource. Naviguez jusqu’à la nouvelle miniature ou ressource d’échantillon, sélectionnez-la, puis appuyez sur **[!UICONTROL Sélectionner.]**
    * Pour supprimer intégralement une visionneuse d’images, accédez à cette visionneuse, sélectionnez-la, puis sélectionnez **[!UICONTROL Supprimer.]**
@@ -236,10 +236,10 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
-## Aperçu d’une visionneuse d’images  {#previewing-image-sets}
+## Aperçu d’une visionneuse d’images   {#previewing-image-sets}
 
 Voir aussi [Aperçu des ressources](/help/assets/previewing-assets.md).
 
-## Publication de visionneuses d’images  {#publishing-image-sets}
+## Publication de visionneuses d’images   {#publishing-image-sets}
 
 Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
