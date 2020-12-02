@@ -1,6 +1,6 @@
 ---
 title: AEM Developer Tools for Eclipse
-seo-title: AEM Developer Tools for Eclipse
+seo-title: Outils de développement AEM pour Eclipse
 description: 'null'
 seo-description: 'null'
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
@@ -41,15 +41,15 @@ Avant d’utiliser les outils de développement AEM, vous devez :
 * Télécharger et installer [Eclipse IDE pour les développeurs Java EE](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). Les outils de développement AEM prennent actuellement en charge Eclipse Kepler ou version ultérieure
 
 * Peut être utilisé avec AEM version 5.6.1 ou ultérieure
-* Configure your eclipse installation to ensure that you have at least 1 gigabyte of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
+* Configurez votre installation d&#39;éclipse pour vous assurer que vous disposez d&#39;au moins 1 gigaoctet de mémoire de tas en modifiant votre fichier de configuration `eclipse.ini` comme décrit dans la [FAQ sur l&#39;éclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
 >
->On macOS, you need to right-click on **Eclipse.app** and then select **Show Package Contents** in order to find your `eclipse.ini`**.**
+>Sur macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Afficher le contenu du package** pour trouver votre `eclipse.ini`**.**
 
 ## Installation de AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Once you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
+Une fois que vous avez satisfait aux [exigences](#requirements) ci-dessus, vous pouvez installer le module externe comme suit :
 
 1. Parcourez le [**site web AEM** Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
 
@@ -73,7 +73,7 @@ Once you have fulfilled the [requirements](#requirements) above, you can install
 
 >[!NOTE]
 >
->See [How to work with a bundle in Eclipse when it was downloaded from AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
+>Voir [Comment utiliser un lot dans Eclipse lorsqu’il a été téléchargé à partir d’AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
 
 ## AEM Perspective {#the-aem-perspective}
 
@@ -91,7 +91,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
-1. Cliquez sur **Suivant**.
+1. Cliquez sur **Next** (Suivant).
 
    >[!NOTE]
    >
@@ -123,7 +123,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
    >
    >Sur une nouvelle installation (plus précisément : si les dépendances Maven n’ont jamais été téléchargées), vous risquez de créer le projet avec des erreurs. Dans ce cas, veuillez suivre la procédure décrite dans [Résolution d’une définition de projet non valide](#resolving-invalid-project-definition).
 
-## Résolution des incidents {#troubleshooting}
+## Dépannage {#troubleshooting}
 
 ### Résolution d’une définition de projet non valide {#resolving-invalid-project-definition}
 
