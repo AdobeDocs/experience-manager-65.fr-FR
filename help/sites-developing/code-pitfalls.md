@@ -24,10 +24,10 @@ ht-degree: 94%
 
 Les liaisons Sling constituent un moyen inapproprié d’accéder à un service dans 90 % des cas. À la place, il faut utiliser les annotations *@Reference* ou *@Inject*.
 
-## Avoid Thread.interrupt in Java code {#avoid-thread-interrupt-in-java-code}
+## Eviter Thread.interrupt dans le code Java {#avoid-thread-interrupt-in-java-code}
 
 *Thread.interrupt* est dangereux car il peut fermer des fichiers, y compris des fichiers Lucene et des fichiers cache persistants, s’il est appelé au mauvais moment.
 
-## Éviter de mélanger la synchronisation Java avec ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
+## Éviter de mélanger la synchronisation Java avec ReadWriteLocks  {#avoid-mixing-java-synchronization-with-readwritelocks}
 
 Cela peut aboutir à une condition de concurrence dans laquelle le code finit par être bloqué.
