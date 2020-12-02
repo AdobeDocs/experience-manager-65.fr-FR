@@ -40,7 +40,7 @@ Les fonctionnalités AEM Communities qui peuvent être configurées pour autoris
 
 ## Administration des balises {#administering-tags}
 
-Voir [Administration des balises](../../help/sites-administering/tags.md#tagging-console) pour la création et la gestion des espaces de nommage de balises et des taxonomies.
+Voir [Administration des balises](../../help/sites-administering/tags.md#tagging-console) pour créer et gérer des espaces de nommage et des taxonomies de balises.
 
 Voir [Tag Essentials](tag.md) pour en savoir plus sur les développeurs.
 
@@ -52,9 +52,9 @@ Les autorisations par défaut sont définies de manière à ne pas autoriser la 
 
 Les balises étant appliquées à l’UGC dans l’environnement de publication, les autorisations de lecture doivent être activées pour les membres de la communauté afin qu’ils puissent sélectionner les balises à appliquer.
 
-See [Setting Tag Permissions](../../help/sites-administering/tags.md#setting-tag-permissions).
+Voir [Définition des autorisations de balise](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Voici comment il apparaît dans CRXDE lorsqu’un administrateur applique des autorisations de lecture `/etc/tag/discussions` au groupe `Community Engage Members`.
+Voici comment il apparaît dans CRXDE lorsqu’un administrateur applique des autorisations de lecture à `/etc/tag/discussions` pour le groupe `Community Engage Members`.
 
 ![balises-permissions](assets/tag-permissions.png)
 
