@@ -11,7 +11,7 @@ ht-degree: 72%
 ---
 
 
-# Create and configure Asset Editor pages {#creating-and-configuring-asset-editor-pages}
+# Créer et configurer des pages d’Éditeur de ressources {#creating-and-configuring-asset-editor-pages}
 
 Ce document répond aux questions suivantes :
 
@@ -25,15 +25,15 @@ Ce document répond aux questions suivantes :
 >
 >Asset Share est disponible en tant qu’implémentation de référence en source libre. Voir [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/). Il n’est pas officiellement pris en charge.
 
-## Why create and configure Asset Editor pages? {#why-create-and-configure-asset-editor-pages}
+## Pourquoi créer et configurer des pages de l’Éditeur de ressources ? {#why-create-and-configure-asset-editor-pages}
 
-La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. When moving from a small-scale solution for a small user group of professionally trained users - for example photographers or taxonomists - to larger and more diverse user groups - for example business users, WCM authors, journalists, and so on - the powerful user interface of [!DNL Adobe Experience Manager Assets] for professional users can provide too much information and stakeholders start to request specific user interfaces or applications to access the digital assets that are of relevance to them.
+La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. Lorsque vous passez d&#39;une solution à petite échelle pour un petit groupe d&#39;utilisateurs formés par des professionnels - par exemple des photographes ou des taxonomistes - à des groupes d&#39;utilisateurs plus nombreux et plus diversifiés - par exemple des utilisateurs professionnels, des auteurs de WCM, des journalistes, etc. - la puissante interface utilisateur de [!DNL Adobe Experience Manager Assets] pour les utilisateurs professionnels peut fournir trop d&#39;informations et de parties prenantes début pour demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les intéressent.
 
 Ces applications centrées sur les ressources peuvent être de simples galeries de photos dans un intranet où les employés peuvent télécharger des photos à partir de visites de salons commerciaux ou d&#39;un centre de presse sur un site Web public. Les applications axées sur les ressources peuvent également s’étendre à des solutions complètes, y compris les paniers, le passage en caisse et les processus de vérification.
 
-La création d’une application axée sur les ressources devient, dans une large mesure, un processus de configuration ne nécessitant pas de codage, mais uniquement la connaissance des groupes d’utilisateurs et de leurs besoins ainsi que des métadonnées utilisées. Asset-centric applications created with [!DNL Assets] are extensible: with moderate coding effort reusable components for searching, viewing, and modifying assets can be created.
+La création d’une application axée sur les ressources devient, dans une large mesure, un processus de configuration ne nécessitant pas de codage, mais uniquement la connaissance des groupes d’utilisateurs et de leurs besoins ainsi que des métadonnées utilisées. Les applications axées sur les ressources créées avec [!DNL Assets] sont extensibles : avec un effort de codage modéré, des composants réutilisables pour la recherche, l’affichage et la modification des ressources peuvent être créés.
 
-An asset-centric application in [!DNL Experience Manager] consists of an Asset Editor page, which can be used to get a detailed view of a specific asset. Une page Éditeur de ressources permet également de modifier les métadonnées, à condition que l’utilisateur accédant à la ressource dispose des autorisations nécessaires.
+Une application axée sur les ressources dans [!DNL Experience Manager] est constituée d’une page de l’éditeur de ressources, qui peut être utilisée pour obtenir une vue détaillée d’une ressource spécifique. Une page Éditeur de ressources permet également de modifier les métadonnées, à condition que l’utilisateur accédant à la ressource dispose des autorisations nécessaires.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -189,15 +189,15 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
 -->
 
-## Création et configuration d’une page Editeur de ressources {#creating-and-configuring-an-asset-editor-page}
+## Créer et configurer une page d’éditeur de ressources {#creating-and-configuring-an-asset-editor-page}
 
 Personnalisez l’Éditeur de ressources pour déterminer comment les utilisateurs peuvent afficher et modifier les ressources numériques. Pour ce faire, créez une page Éditeur de ressources, puis personnalisez les vues et les actions que les utilisateurs peuvent effectuer sur cette page.
 
 >[!NOTE]
 >
->If you want to add custom fields to the DAM asset editor, add new `cq:Widget` nodes to `/apps/dam/content/asseteditors.`
+>Si vous souhaitez ajouter des champs personnalisés à l&#39;éditeur de ressources DAM, ajoutez de nouveaux noeuds `cq:Widget` à `/apps/dam/content/asseteditors.`.
 
-### Create an Asset Editor page {#creating-the-asset-editor-page}
+### Créer une page d’éditeur de ressources {#creating-the-asset-editor-page}
 
 Lors de la création de la page Éditeur de ressources, il est recommandé de créer la page directement sous la page Partage de ressources.
 
@@ -212,11 +212,11 @@ La page de base créée à l’aide du modèle Éditeur de ressources Geometrixx
 
 ![assetshare5](assets/assetshare5.png)
 
-Pour personnaliser votre page Éditeur de ressources, utilisez les éléments du sidekick. The Asset Editor page that is accessed from the **Geometrixx Press Center** is a customized version of a page based on this template:
+Pour personnaliser votre page Éditeur de ressources, utilisez les éléments du sidekick. La page Editeur de ressources accessible à partir du **Centre de presse de Geometrixx** est une version personnalisée d’une page basée sur ce modèle :
 
 ![assetshare6](assets/assetshare6.png)
 
-#### Définition d’un éditeur de ressources à ouvrir à partir d’une page de partage de ressources {#setting-which-asset-editor-opens-from-an-asset-share-page}
+#### Définir un éditeur de ressources à ouvrir à partir d’une page de partage de ressources {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 Après avoir créé la page Éditeur de ressources personnalisée, vous devez vous assurer que, lorsque vous double-cliquez sur des ressources, le Partage de ressources personnalisé que vous avez créé ouvre les ressources dans la page Éditeur personnalisée.
 
@@ -232,7 +232,7 @@ Pour définir la page Éditeur de ressources :
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Add Asset Editor components {#adding-asset-editor-components}
+#### Ajouter les composants de l’éditeur de ressources {#adding-asset-editor-components}
 
 Vous déterminez les fonctionnalités d’un Éditeur de ressources en ajoutant des composants à la page.
 
@@ -252,7 +252,7 @@ Pour ajouter des composants de l’Éditeur de ressources :
 
 | Composant | Description |
 |---|---|
-| **[!UICONTROL Formulaire] de métadonnées et champ de texte de [!UICONTROL métadonnées]** | Vous permet d’ajouter des métadonnées supplémentaires à un fichier et d’effectuer une action, telle que l’envoi, sur ce fichier. |
+| **[!UICONTROL Formulaire ] de métadonnées et champ de texte  [!UICONTROL de métadonnées]** | Vous permet d’ajouter des métadonnées supplémentaires à un fichier et d’effectuer une action, telle que l’envoi, sur ce fichier. |
 | **[!UICONTROL Sous-ressources]** | Permet de personnaliser des sous-ressources. |
 | **Balises** | Permet aux utilisateurs de sélectionner et d’ajouter des balises à un fichier. |
 | **[!UICONTROL Miniature]** | Affiche une miniature du fichier, son nom de fichier et vous permet d’ajouter un texte de remplacement. Vous pouvez également ajouter des actions de l’Éditeur de ressources dans ce composant. |
@@ -278,7 +278,7 @@ Le Formulaire de métadonnées est un formulaire incluant une action de début e
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-See [Customizing and Extending Assets](/help/assets/extending-assets.md) for information on modifying the namespaces available in the metadata form.
+Voir [Personnalisation et extension des ressources](/help/assets/extending-assets.md) pour plus d’informations sur la modification des espaces de nommage disponibles dans le formulaire de métadonnées.
 
 1. Cliquez sur l’onglet **Contraintes**. Dans cet onglet, vous pouvez choisir si un champ est requis et, si nécessaire, ajouter des contraintes.
 
@@ -316,7 +316,7 @@ Le composant Balises est un composant permettant aux utilisateurs d’affecter d
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Double-cliquez sur le composant Balises pour ouvrir la boîte de dialogue des balises dans laquelle vous pouvez modifier le titre des balises, si vous le souhaitez, et sélectionner les espaces de noms alloués. To make this field editable, clear the **[!UICONTROL Hide Edit]** check box. Par défaut, les balises sont modifiables.
+Double-cliquez sur le composant Balises pour ouvrir la boîte de dialogue des balises dans laquelle vous pouvez modifier le titre des balises, si vous le souhaitez, et sélectionner les espaces de noms alloués. Pour rendre ce champ modifiable, désactivez la case à cocher **[!UICONTROL Masquer Modifier]**. Par défaut, les balises sont modifiables.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -328,7 +328,7 @@ Voici un composant Balises renseigné :
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniature  {#thumbnail}
+#### Miniature   {#thumbnail}
 
 Le composant Miniature est l’emplacement où la ressource affiche la miniature sélectionnée (pour la plupart des formats, la miniature est extraite automatiquement). En outre, le composant affiche le nom de fichier et les [actions que vous pouvez modifier](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -352,7 +352,7 @@ Par défaut, il est en mode lecture seule. Les utilisateurs ne peuvent donc pas 
 
 Si le titre peut être modifié, vous pouvez ajouter un titre et une description en cliquant sur le crayon pour ouvrir la fenêtre **Propriétés de l’élément**. En outre, vous pouvez activer et désactiver la ressource en sélectionnant la date et l’heure.
 
-Lors de la modification du [!UICONTROL titre], les utilisateurs peuvent modifier le **titre**, la **description**, puis saisir **Les et les Heures pour activer et désactiver la ressource.******
+Lors de la modification du [!UICONTROL Titre], les utilisateurs peuvent modifier le **Titre**, **Description**, et saisir **On** et **Off Times** pour activer et désactiver le fichier.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -366,7 +366,7 @@ Vous pouvez déterminer les actions que les utilisateurs peuvent effectuer sur d
 
 Pour ajouter des actions à la page Éditeur de ressources :
 
-1. In the Asset Editor page that you want to customize, click **Asset Editor** in the sidekick.
+1. Dans la page Editeur de ressources que vous souhaitez personnaliser, cliquez sur **Éditeur de ressources** dans le panneau latéral.
 
 ![screen_shot_2012-04-23at35515pm](assets/screen_shot_2012-04-23at35515pm.png)
 
@@ -374,27 +374,27 @@ Les actions suivantes sont disponibles :
 
 | Action | Description |
 |---|---|
-| [!UICONTROL Téléchargement] | Permet aux utilisateurs de télécharger les fichiers sélectionnés sur leur ordinateur. |
-| [!UICONTROL Editeurs] | Permet aux utilisateurs de modifier une image (édition interactive) |
-| [!UICONTROL Lightbox] | Enregistre les fichiers dans une &quot;boîte lumineuse&quot; où vous pouvez effectuer d’autres actions. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
+| [!UICONTROL Téléchargement] | Permet aux utilisateurs de télécharger les éléments sélectionnés   sur leurs ordinateurs. |
+| [!UICONTROL Editeurs] | permet aux utilisateurs de modifier une image.   (édition interactive) |
+| [!UICONTROL Lightbox] | Enregistre les actifs dans une   &quot;lightbox&quot; où vous pouvez exécuter d’autres actions sur ces objets. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
 | [!UICONTROL Verrouillage] | Permet aux utilisateurs de verrouiller un fichier. Cette fonctionnalité n’est pas activée par défaut et doit être activée dans la liste des composants. |
-| [!UICONTROL Références] | Cliquez sur cette option pour afficher sur quelles pages la ressource est utilisée. |
-| [!UICONTROL Contrôle de version] | Permet de créer et de restaurer des versions d’un fichier. |
+| [!UICONTROL Références] | Cliquez pour afficher sur quelles pages   la ressource est utilisée. |
+| [!UICONTROL Contrôle de version] | Permet de créer et de restaurer   versions d’une ressource. |
 
 1. Faites glisser l’action appropriée vers la zone **Actions** de la page. Cette opération crée un bouton utilisé pour effectuer cette action.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
-## Multi-edit assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
+## Modification multiple de fichiers à l’aide de la page Editeur de fichiers {#multi-editing-assets-with-the-asset-editor-page}
 
-With [!DNL Experience Manager Assets] you can make changes to several assets at once. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
+Avec [!DNL Experience Manager Assets], vous pouvez apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
 
 * Balises
 * Métadonnées
 
 Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeur de ressources :
 
-1. Ouvrez la page Centre de **presse** Geometrixx :
+1. Ouvrez la page **Centre de presse** Geometrixx :
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Sélectionnez les ressources :
@@ -402,7 +402,7 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
    * sous Windows : `Ctrl + click` chaque ressource.
    * sur Mac : `Cmd + click` chaque ressource.
 
-   To select a range of assets: click the first asset then `Shift + click` the last asset.
+   Pour sélectionner une plage de ressources : cliquez sur le premier fichier, puis `Shift + click` sur le dernier fichier.
 
 1. Cliquez sur **Éditer les métadonnées** dans le champ **Actions** (partie gauche de la page).
 1. La page **Éditeur de ressources du centre de presse** de Geometrixx s’ouvre dans un nouvel onglet. Les métadonnées des ressources s’affichent de la façon suivante :
@@ -411,16 +411,16 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
    * Une balise qui s’applique à tous les actifs s’affiche avec une police normale.
    * Métadonnées autres que les balises : la valeur du champ ne s’affiche que si elle est identique pour toutes les ressources sélectionnées.
 
-1. Click **Download** to download a ZIP file containing the assets original renditions.
-1. Cliquez sur Modifier l’option de balises située en regard du champ **Balises** .
+1. Cliquez sur **Télécharger** pour télécharger un fichier ZIP contenant les ressources et les rendus d’origine.
+1. Cliquez sur Modifier l’option de balises située en regard du champ **Balises**.
 
    * Les balises qui ne s’appliquent pas à toutes les ressources, mais seulement à quelques-unes, s’affichent avec un arrière-plan grisé.
    * Les balises qui s’appliquent à toutes les ressources s’affichent avec un arrière-plan blanc.
 
    Vous pouvez :
 
-   * Click `x` to remove the tag for all the assets.
-   * Click `+` to add the tag to all the assets.
+   * Cliquez sur `x` pour supprimer la balise de tous les actifs.
+   * Cliquez sur `+` pour ajouter la balise à tous les actifs.
    * cliquer sur la **flèche**, puis sélectionner une balise pour ajouter une nouvelle balise à toutes les ressources.
 
    Cliquez sur **OK** pour enregistrer les modifications apportées au formulaire. La case en regard du champ **Balises** est automatiquement activée.
