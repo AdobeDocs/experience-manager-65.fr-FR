@@ -22,7 +22,7 @@ ht-degree: 100%
 
 PDF Generator permet d’effectuer des conversions multithreads de certains types de fichiers. Ce type de conversion améliore les performances de PDF Generator en lui permettant d’effectuer plusieurs conversions simultanément.
 
-## Activation des conversions multithreads de fichiers OpenOffice, Word et PowerPoint {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
+## Activation des conversions multithreads de fichiers OpenOffice, Word et PowerPoint  {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
 
 Par défaut, PDF Generator ne peut convertir qu’un document OpenOffice, Microsoft Word ou PowerPoint à la fois. Si vous activez les conversions de fichiers multithreads, PDF Generator peut convertir plusieurs documents simultanément. PDF Generator lancera plusieurs instances d’OpenOffice ou PDFMaker (utilisés pour effectuer les conversions Word et PowerPoint).
 
@@ -40,7 +40,7 @@ Dans la page Comptes utilisateur d’Administration Console, vous pouvez spécif
 
 Lors de l’ajout d’utilisateurs pour OpenOffice, Microsoft Word ou Microsoft PowerPoint sous Windows 2003 ou 2008, ou pour OpenOffice sous Linux ou Sun™ Solaris™, fermez les boîtes de dialogue d’activation initiale pour tous les utilisateurs.
 
-### Ajout du droit de remplacer le jeton de niveau processus {#add-the-right-to-replace-the-process-level-token}
+### Ajout du droit de remplacer le jeton de niveau processus  {#add-the-right-to-replace-the-process-level-token}
 
 Sur un système d’exploitation Windows, les comptes utilisateur de l’administrateur utilisés pour la conversion au format PDF (utilisateurs de PDFG) doivent disposer du droit Remplacer le jeton de niveau processus. Vous pouvez ajouter ce droit à l’aide de l’Editeur de stratégies de groupe :
 
@@ -48,7 +48,7 @@ Sur un système d’exploitation Windows, les comptes utilisateur de l’adminis
 1. Cliquez sur Stratégie Ordinateur local > Configuration ordinateur > Paramètres Windows > Paramètres de sécurité > Stratégies Locales > Attribution des droits utilisateur et modifiez la stratégie *Remplacer un jeton de niveau processus* pour y inclure le groupe Administrateurs.
 1. Ajoutez l’utilisateur à l’entrée Remplacer un jeton de niveau processus.
 
-### Configuration supplémentaire requise pour OpenOffice, Microsoft Word et Microsoft PowerPoint sous Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
+### Configuration supplémentaire requise pour OpenOffice, Microsoft Word et Microsoft PowerPoint sous Windows Server 2008  {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
 
 Si vous exécutez OpenOffice, Microsoft Word ou Microsoft PowerPoint sous Windows 2008, désactivez le Contrôle de compte d’utilisateur (UAC) à chaque utilisateur ajouté.
 
@@ -56,7 +56,7 @@ Si vous exécutez OpenOffice, Microsoft Word ou Microsoft PowerPoint sous Window
 1. Désélectionnez la case « Utiliser le contrôle des comptes d’utilisateurs pour vous aider à protéger votre ordinateur » et cliquez sur OK.
 1. Redémarrez l’ordinateur pour que ces paramètres soient pris en compte.
 
-### Configuration supplémentaire requise pour OpenOffice sous Linux ou Solaris {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
+### Configuration supplémentaire requise pour OpenOffice sous Linux ou Solaris  {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
 1. Ajoutez des comptes d’utilisateur (voir [Création d’un compte utilisateur](enabling-multi-threaded-file-conversions.md#add-a-user-account)).
 1. Vous allez maintenant apporter des modifications au fichier /etc/sudoers. L’autorisation par défaut pour ce fichier est 440. Redéfinissez l’autorisation en écriture pour ce fichier.
@@ -105,14 +105,14 @@ Si vous exécutez OpenOffice, Microsoft Word ou Microsoft PowerPoint sous Window
 
 1. Redémarrez le serveur Forms.
 
-### Suppression d’un utilisateur de la liste utilisée pour les conversions de fichier multithreads {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
+### Suppression d’un utilisateur de la liste utilisée pour les conversions de fichier multithreads  {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Comptes utilisateur.
 1. Activez la case à cocher en regard de l’utilisateur à supprimer, puis cliquez sur Supprimer.
 1. Dans la page de confirmation, cliquez sur Supprimer.
 1. Redémarrez le serveur Forms.
 
-### Modification du mot de passe d’un compte {#change-the-password-for-an-account}
+### Modification du mot de passe d’un compte  {#change-the-password-for-an-account}
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Comptes utilisateur.
 1. Cliquez sur le nom d’utilisateur, puis saisissez et confirmez le nouveau mot de passe. Ce mot de passe doit correspondre au mot de passe système de l’utilisateur.
