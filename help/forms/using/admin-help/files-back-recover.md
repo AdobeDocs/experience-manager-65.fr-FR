@@ -28,7 +28,7 @@ Considérez les points suivants concernant la sauvegarde et la récupération :
 * Si vous devez descendre les noeuds dans un environnement organisé en grappes pour la sauvegarde, veillez à ce que les noeuds secondaires soient fermés avant le noeud Principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le noeud Principal doit être rendu actif avant tout noeud secondaire.
 * Pour l’opération de restauration d’une grappe, le serveur d’applications doit être arrêté pour chaque nœud de la grappe.
 
-## Répertoire de stockage global de documents {#global-document-storage-directory}
+## Répertoire de stockage global de documents  {#global-document-storage-directory}
 
 Le répertoire de stockage global de documents est utilisé pour stocker les fichiers de longue durée utilisés dans un processus. La durée de vie de ces fichiers est destinée à couvrir un ou plusieurs lancements d’un système AEM Forms et peut être de plusieurs jours, voire de plusieurs années. Les fichiers de longue durée peuvent être des PDF, des stratégies ou des modèles de formulaires. Les fichiers de longue durée jouent un rôle capital la plupart des déploiements d’AEM. Si certains d’entre eux sont perdus ou corrompus, le serveur Forms peut devenir instable.
 
@@ -36,7 +36,7 @@ Les documents d’entrée pour un appel de travaux asynchrones sont également s
 
 L’emplacement du répertoire de stockage global de documents est défini lors de l’installation d’AEM forms, ou ultérieurement à l’aide d’Administration Console. Outre la possibilité de conserver le répertoire de stockage global de documents à un emplacement de haute disponibilité, vous pouvez également activer le stockage de base de données pour les documents. Voir [Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
-### Emplacement du répertoire de stockage global de documents {#gds-location}
+### Emplacement du répertoire de stockage global de documents  {#gds-location}
 
 Si vous ne définissez pas le paramètre d’emplacement lors de l’installation, l’emplacement par défaut utilisé est un sous-répertoire de l’emplacement d’installation du serveur d’applications. Vous devez sauvegarder le répertoire suivant de votre serveur d’applications :
 
@@ -53,7 +53,7 @@ Dans un environnement organisé en grappe, le répertoire de stockage global de 
 
 L’emplacement du répertoire de stockage global de documents peut être modifié lors d’une récupération, si l’emplacement d’origine n’est plus disponible (voir [Modification de l’emplacement du stockage global de documents durant la récupération](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)).
 
-### Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents {#backup-options-when-database-is-used-for-document-storage}
+### Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents  {#backup-options-when-database-is-used-for-document-storage}
 
 Vous pouvez activer le stockage de documents AEM Forms dans la base de données AEM Forms à l’aide d’Administration Console. Cette option conserve tous les documents persistants dans la base de données ; AEM Forms a tout de même besoin du répertoire de stockage global de documents reposant sur le système de fichiers car il est utilisé pour le stockage des fichiers et ressources permanents et temporaires associés aux sessions et aux appels d’AEM Forms.
 
@@ -69,7 +69,7 @@ La solution Correspondence Management centralise et gère la création, l’asse
 
 Une configuration simple de la solution Correspondence Management comprend une instance d’auteur et une instance de publication sur la même machine ou sur des machines différentes.
 
-### Gestionnaire des formulaires {#forms-manager}
+### Gestionnaire des formulaires  {#forms-manager}
 
 Forms Manager simplifie le processus de mise à jour, de gestion et de retrait de formulaires.
 
@@ -83,7 +83,7 @@ L’espace de travail AEM Forms dispose des mêmes fonctionnalités que le Flex 
 
 Il permet la gestion des tâches sur les clients sans Flash Player et Adobe Reader. Il facilite le rendu de formulaires HTML, en plus des formulaires PDF et Flex.
 
-## Base de données des formulaires AEM {#aem-forms-database}
+## Base de données des formulaires AEM  {#aem-forms-database}
 
 La base de données AEM Forms stocke le contenu (artefacts de formulaire, configurations de service, état de traitement et références de base de données) dans les fichiers du répertoire de stockage global de documents et du répertoire racine de stockage de contenu (pour Content Services). Les sauvegardes de la base de données peuvent être exécutées en temps réel, sans interruption de service. La récupération s’effectue quant à elle à un moment spécifique ou suite à un changement précis. Cette section explique de quelle façon configurer votre base de données pour qu’elle puisse être sauvegardée en temps réel.
 
@@ -122,7 +122,7 @@ Utilisez des sauvegardes de type instantané ou configurez votre base de donnée
 
 [Oracle Database Backup and Recovery Reference :](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) présente des informations complètes sur la syntaxe et la sémantique de toutes les commandes RMAN et décrit les vues de base de données disponibles pour générer des rapports sur les activités de sauvegarde et de récupération.
 
-### SQL Server {#sql-server}
+### SQL Server  {#sql-server}
 
 Utilisez des sauvegardes de type instantané ou configurez votre base de données SQL Server pour qu’elle s’exécute en mode de consignation de transactions.
 
@@ -131,7 +131,7 @@ SQL Server propose également deux outils de sauvegarde et de récupération :
 * SQL Server Management Studio (interface utilisateur graphique)
 * T-SQL (ligne de commande)
 
-Pour plus d’informations, voir [Sauvegarde et restauration](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Pour plus d&#39;informations, voir [Sauvegarde et restauration](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
@@ -139,9 +139,9 @@ Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer vo
 
 >[!NOTE]
 >
->le mode de connexion binaire par défaut pour MySQL est Instruction ; il est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la connexion binaire dans ce mode par défaut fait échouer Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de connexion mixte. Pour activer la connexion mixte, ajoutez l’argument suivant au fichier my.ini : `binlog_format=mixed log-bin=logname`
+>le mode de connexion binaire par défaut pour MySQL est Instruction ; il est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la connexion binaire dans ce mode par défaut fait échouer Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de connexion mixte. Pour activer la connexion mixte, ajoutez l’argument suivant au fichier my.ini :  `binlog_format=mixed log-bin=logname`
 
-Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. To do an incremental backup, ensure that you start the server with the - `log-bin` option as described in the previous section. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. You can force a switch manually with the `FLUSH LOGS SQL` command. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
+Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. Pour effectuer une sauvegarde incrémentielle, veillez à début le serveur avec l&#39;option - `log-bin`, comme décrit dans la section précédente. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. Vous pouvez forcer un commutateur manuellement à l&#39;aide de la commande `FLUSH LOGS SQL`. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
 
 Voir [Résumé de la stratégie de sauvegarde](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
@@ -150,15 +150,15 @@ binlog_format=mixed
 log-bin=logname
 ```
 
-## Répertoire racine de stockage de contenu (Content Services uniquement) {#content-storage-root-directory-content-services-only}
+## Répertoire racine de stockage de contenu (Content Services uniquement)  {#content-storage-root-directory-content-services-only}
 
 Le répertoire racine de stockage de contenu contient le référentiel Content Services (obsolète) dans lequel sont stockés tous les documents, artefacts et index. L’arborescence du répertoire racine de stockage de contenu doit être sauvegardée. Cette section décrit de quelle façon déterminer l’emplacement du répertoire racine de stockage de contenu pour les environnements autonomes et organisés en grappe.
 
-### Emplacement racine de stockage de contenu (environnement autonome) {#content-storage-root-location-stand-alone-environment}
+### Emplacement racine de stockage de contenu (environnement autonome)  {#content-storage-root-location-stand-alone-environment}
 
 Le répertoire racine de stockage de contenu est créé à l’installation de Content Services (obsolète). Le processus d’installation d’AEM Forms détermine l’emplacement du répertoire racine de stockage de contenu.
 
-The default location for the Content Storage Root directory is `[aem-forms root]/lccs_data`.
+L’emplacement par défaut du répertoire racine de l’Enregistrement de contenu est `[aem-forms root]/lccs_data`.
 
 Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
 
@@ -172,7 +172,7 @@ Sauvegardez les répertoires suivants situés dans le répertoire racine de stoc
 
 Si le répertoire /backup-lucene-indexes est absent, sauvegardez le répertoire /lucene-indexes (également situé dans le répertoire racine de stockage de contenu). Si le répertoire /backup-lucene-indexes existe, ne sauvegardez pas le répertoire /lucene-indexes car cela pourrait générer des erreurs.
 
-### Emplacement racine de stockage de contenu (environnement organisé en grappes) {#content-storage-root-location-clustered-environment}
+### Emplacement racine de stockage de contenu (environnement organisé en grappes)  {#content-storage-root-location-clustered-environment}
 
 Lors de l’installation de Content Services (obsolète) dans un environnement organisé en grappe, le répertoire racine de stockage de contenu se divise en deux répertoires distincts :
 
@@ -180,7 +180,7 @@ Lors de l’installation de Content Services (obsolète) dans un environnement o
 
 **Répertoire racine d’index :** répertoire créé sur chaque nœud de la grappe et ayant toujours les mêmes chemin et nom.
 
-The default location for the Content Storage Root directory is `[GDS root]/lccs_data`, where `[GDS root]` is the location described in [GDS location](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
+L’emplacement par défaut du répertoire racine d’Enregistrement de contenu est `[GDS root]/lccs_data`, où `[GDS root]` correspond à l’emplacement décrit dans [Emplacement du répertoire de stockage global de documents](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
 
 /audit.contentstore
 
@@ -192,7 +192,7 @@ The default location for the Content Storage Root directory is `[GDS root]/lccs_
 
 Si le répertoire /backup-lucene-indexes est absent, sauvegardez le répertoire /lucene-indexes (également situé dans le répertoire racine de stockage de contenu). Si le répertoire /backup-lucene-indexes existe, ne sauvegardez pas le répertoire /lucene-indexes car cela pourrait générer des erreurs.
 
-The default location for the Index Root directory is `[aem-forms root]/lucene-indexes` on each node.
+L’emplacement par défaut du répertoire racine d’index est `[aem-forms root]/lucene-indexes` sur chaque noeud.
 
 ## Polices personnalisées {#customer-installed-fonts}
 
@@ -200,6 +200,6 @@ Sauvegardez séparément les polices supplémentaires éventuellement installée
 
 >[!NOTE]
 >
->By default, the Adobe fonts installed with AEM forms are located in the `[aem-forms root]/fonts` directory.
+>Par défaut, les polices d’Adobe installées avec AEM forms se trouvent dans le répertoire `[aem-forms root]/fonts`.
 
 Si vous réinitialisez le système d’exploitation sur l’ordinateur hôte et que vous souhaitez utiliser des polices du précédent système d’exploitation, le contenu du répertoire des polices système doit également être sauvegardé. (Pour plus d’instructions, reportez-vous à la documentation de votre système d’exploitation).
