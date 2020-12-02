@@ -18,7 +18,7 @@ ht-degree: 80%
 ---
 
 
-# Remplissage dynamique des listes déroulantes {#dynamically-populating-drop-down-lists}
+# Remplissage dynamique des listes déroulantes  {#dynamically-populating-drop-down-lists}
 
 ## Conditions préalables {#prerequisites}
 
@@ -27,7 +27,7 @@ ht-degree: 80%
 * [Création de formulaires adaptatifs](../../forms/using/creating-adaptive-form.md)
 * [Création d’un formulaire adaptatif](../../forms/using/introduction-forms-authoring.md)
 
-## Procédure pour remplir de façon dynamique des listes déroulantes {#procedure-to-dynamically-populate-drop-down-lists}
+## Procédure pour remplir de façon dynamique des listes déroulantes  {#procedure-to-dynamically-populate-drop-down-lists}
 
 Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d’une valeur que vous sélectionnez dans la liste déroulante **Pays**. Si vous sélectionnez Australie dans la liste déroulante **Pays**, la liste déroulante **Etat** affiche les états de l’Australie. La procédure ci-dessous décrit la marche à suivre.
 
@@ -147,7 +147,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
    }
    ```
 
-1. Créez un noeud de liste déroulante sous une hiérarchie de dossiers spécifique dans les applications (par exemple, créez un noeud sous /apps/myfolder/demo). Ensure that the `sling:resourceType` parameter for the node is the same as that to which the servlet points (/apps/populatedropdown).
+1. Créez un noeud de liste déroulante sous une hiérarchie de dossiers spécifique dans les applications (par exemple, créez un noeud sous /apps/myfolder/demo). Assurez-vous que le paramètre `sling:resourceType` pour le noeud est identique à celui vers lequel pointe la servlet (/apps/populatedropdown).
 
    ![Création d’un nœud de liste déroulante](assets/dropdown-node.png)
 
@@ -156,7 +156,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
    Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir selon le nom du pays de la liste Pays.
 
-   ![Ajouter les noms](assets/country-dropdown.png) de pays ![Ajouter un script pour renseigner les noms](assets/state-dropdown.png) d’état ![Pays et Etat listes déroulantes pour rassembler](assets/2dropdowns.png)
+   ![Ajouter les ](assets/country-dropdown.png) ![noms de paysAjout d&#39;un script pour renseigner les ](assets/state-dropdown.png) ![noms d&#39;étatlistes déroulantes Pays et Etat pour rassembler](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
