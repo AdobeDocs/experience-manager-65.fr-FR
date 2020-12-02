@@ -18,13 +18,13 @@ ht-degree: 72%
 ---
 
 
-# Débogage des formulaires HTML5 {#debugging-html-forms}
+# Débogage des formulaires HTML5  {#debugging-html-forms}
 
 Ce document comprend plusieurs scénarios de résolution des problèmes. Pour chaque scénario, certaines étapes sont fournies pour résoudre le problème. Procédez comme suit et, si le problème persiste, configurez le journal pour obtenir et parcourir les journaux et rechercher les erreurs/avertissements. Pour plus d’informations sur la journalisation des formulaires HTML5, voir [Génération de journaux pour les formulaires HTML5](/help/forms/using/enable-logs.md).
 
 ## Problème : lorsque vous effectuez le rendu d’un formulaire, la page d’exception org.apache.sling.api.SlingException s&#39;affiche {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
-In the exception details, search for word **caused by**.
+Dans les détails de l’exception, recherchez le mot **provoqué par**.
 
 Cela est probablement dû au fait qu’un ou plusieurs paramètres de l’URL sont incorrects.
 
@@ -81,7 +81,7 @@ Vérifiez les paramètres suivants :
 
 ## Problème : le rendu des formulaires ne prend pas les styles en compte {#problem-form-renders-without-styles}
 
-1. In your browser, open **Developer Tools**. Assurez-vous que profil.css est disponible.
+1. Dans votre navigateur, ouvrez **Outils de développement**. Assurez-vous que profil.css est disponible.
 1. Si le fichier profil.css n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;serveur>:&lt;port>/crx/de.
 1. Dans la hiérarchie de dossiers sur la gauche, accédez à /etc/clientlibs/fd/xfaforms/. Ouvrez les fichiers css.txt répertoriés dans les fichiers.
 
@@ -104,7 +104,7 @@ Vérifiez les paramètres suivants :
 
 1. Si les fichiers mentionnés ne sont pas disponibles, réinstallez le package adobe-lc-forms-runtime-pkg-&lt;version>.zip.
 
-### Problème : erreur inattendue rencontrée {#problem-unexpected-error-encountered}
+### Problème : erreur inattendue rencontrée  {#problem-unexpected-error-encountered}
 
 1. Dans l’URL du formulaire, ajoutez un paramètre de requête debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;serveur>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;chemin d’accès>&amp;template=&lt;nom du fichier xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Dans le navigateur de bureau, comme Chrome, accédez à Outils de développement -> Console.
@@ -119,10 +119,10 @@ Vérifiez les paramètres suivants :
 
 1. Assurez-vous de disposer des droits d’accès au serveur AEM et d’être connecté au serveur.
 1. Vérifiez que le paramètre submitUrl est correct.
-1. Enable the client side logs as mentioned at [Logs for the HTML5 forms](/help/forms/using/enable-logs.md) using debug option as **1-a5-b5-c5**. Puis lancez le rendu du formulaire et cliquez sur envoyer. Ouvrez la console de dépannage du navigateur et vérifiez s’il se produit une erreur.
+1. Activez les journaux côté client comme mentionné à la section [Journaux pour les formulaires HTML5](/help/forms/using/enable-logs.md) en utilisant l’option de débogage comme **1-a5-b5-c5**. Puis lancez le rendu du formulaire et cliquez sur envoyer. Ouvrez la console de dépannage du navigateur et vérifiez s’il se produit une erreur.
 1. Recherchez les journaux du serveur comme expliqué dans la section [Journaux des formulaires HTML5](/help/forms/using/enable-logs.md). Vérifiez si une erreur s’est produite dans les journaux du serveur pendant l’envoi.
 
-## Problème : les messages d’erreur localisés ne s’affichent pas {#problem-localized-error-messages-do-not-display}
+## Problème : les messages d’erreur localisés ne s’affichent pas  {#problem-localized-error-messages-do-not-display}
 
 1. Effectuez le rendu du formulaire avec un paramètre de requête supplémentaire **debugClientLibs=true** dans le navigateur de bureau, puis accédez à Outils de développement -> Ressources et vérifiez le fichier I18N.css.
 1. Si le fichier n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;serveur>:&lt;port>/crx/de.
@@ -146,11 +146,11 @@ Vérifiez les paramètres suivants :
    ../LogMessages.js
    ```
 
-## Problème : l’image ne s’affiche pas {#problem-image-not-showing-up}
+## Problème : l’image ne s’affiche pas  {#problem-image-not-showing-up}
 
 1. Assurez-vous que l’URL de l’image est correcte.
 1. Vérifiez si votre navigateur prend en charge ce type d’image.
-1. In the exception details, search for word **caused by**.
+1. Dans les détails de l’exception, recherchez le mot **provoqué par**.
 
    Cela est probablement dû au fait qu’un ou plusieurs paramètres de l’URL sont incorrects.
 
