@@ -68,7 +68,7 @@ En fonction de votre projet, le conteneur de mises en page peut être utilisé e
 
 >[!NOTE]
 >
->L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Voir [Configuration de la mise en page réactive](/help/sites-administering/configuring-responsive-layout.md) pour plus d’informations.
 
 ## Définitions de mise en page, émulation d’appareil et points d’arrêt {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -244,7 +244,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Afficher les composants** masqués : affiche tous les composants ou des composants individuels. Le nombre indique le nombre de composants masqués actuellement.Le compteur indique le nombre de composants masqués.
+   * **Afficher les composants**  masqués - Afficher tous les composants ou les composants individuels. Le nombre indique le nombre de composants masqués actuellement.Le compteur indique le nombre de composants masqués.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
@@ -264,8 +264,9 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
    >
    >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
 
-   * **Afficher les composants** Sélectionnez les composants parents pour afficher la barre d&#39;outils d&#39;action avec la fonction 
-**Afficher l&#39;option de composants** masqués. Dans cet exemple, deux composants sont masqués.
+   * **Afficher les**
+composantsSélectionnez les composants parents pour afficher la barre d&#39;outils d&#39;action avec la fonction 
+**Afficher l&#39;option** Composants masqués. Dans cet exemple, deux composants sont masqués.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
