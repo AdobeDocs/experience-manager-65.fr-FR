@@ -36,21 +36,21 @@ La fonction de forum QnA (questions et réponses) offre aux membres de la commun
 La documentation décrit :
 
 * Ajouter la fonction de forum QnA à un site AEM.
-* Configuration settings for the `QnA`component.
+* Paramètres de configuration du composant `QnA`.
 
 ## Ajout d’un forum Q&amp;R à une page {#adding-a-q-a-forum-to-a-page}
 
-Pour ajouter un `QnA` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / QnA` et faites-le glisser sur une page sur laquelle le forum QnA doit apparaître.
+Pour ajouter un composant `QnA` à une page en mode création, utilisez l&#39;explorateur de composants pour localiser `Communities / QnA` et faites-le glisser sur une page sur laquelle le forum QnA doit apparaître.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/qna-essentials.md#essentials-for-client-side) are included, this is how the `QnA` component appears:
+Lorsque les [bibliothèques client requises](/help/communities/qna-essentials.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `QnA` apparaît :
 
 ![qna-component](assets/qna-component.png)
 
 ### Configuration de Q&amp;R {#configuring-qna}
 
-Select the placed `QnA` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `QnA` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configurer](assets/configure-new.png)
 
@@ -94,7 +94,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Autoriser le balisage**
 
-   If checked, allow members to add tag labels to their post (see **Tag field** tab). La valeur par défaut est désélectionnée.
+   Si cette option est cochée, autorisez les membres à ajouter des étiquettes de balise à leur publication (voir **onglet Champ de balise**). La valeur par défaut est désélectionnée.
 
 * **Autoriser les transferts de fichiers**
 
@@ -102,7 +102,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Autoriser abonnement**
 
-   Si cette option est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. La valeur par défaut est désélectionnée.
+   Si cette option est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [avertis](/help/communities/notifications.md) des nouvelles publications. La valeur par défaut est désélectionnée.
 
 * **Autoriser l’épinglage**
 
@@ -110,15 +110,15 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](/help/communities/subscriptions.md)). Requiert que l’option Autoriser le suivi soit cochée et que le [courrier électronique soit configuré](/help/communities/email.md). La valeur par défaut est désélectionnée.
+   Si cette option est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](/help/communities/subscriptions.md)). Nécessite que l’option Autoriser le suivi soit cochée et [que le courrier électronique soit configuré](/help/communities/email.md). La valeur par défaut est désélectionnée.
 
 * **Taille maximale du fichier**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier téléchargé. La valeur par défaut est 104857600 (10 Mo).
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier téléchargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Liste d’extensions de fichiers séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés à être téléchargés. Aucune valeur par défaut n&#39;est spécifiée, de sorte que ** **tous les types de fichier soient autorisés.
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Liste d’extensions de fichiers séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés à être téléchargés. Aucune valeur par défaut n&#39;est spécifiée, de sorte que ** **tous les types de fichier soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -149,11 +149,11 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
    Si cochée, la première réponse affichée est une réponse sélectionnée. La valeur par défaut est désélectionnée.
 * **Afficher les badges**
 
-   Si cette option est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. La valeur par défaut est désélectionnée.
+   Si cette case est cochée, afficher les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. La valeur par défaut est désélectionnée.
 
 * **Autoriser le contenu proposé**
 
-   si cette option est cochée, l’idée peut être identifiée comme contenu [](/help/communities/featured.md)phare. La valeur par défaut est désélectionnée.
+   si cette option est cochée, l&#39;idée peut être identifiée comme [contenu incitatif](/help/communities/featured.md). La valeur par défaut est désélectionnée.
 
 * **Activer la mention**
 
@@ -169,7 +169,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
 
-Under the **User Moderation** tab, specify how the posted topics (questions) and answers (user generated content) are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+Sous l’onglet **Modération utilisateur**, spécifiez comment les rubriques publiées (questions) et les réponses (contenu généré par l’utilisateur) sont gérées. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 * **Refuser les réponses**
 
@@ -179,7 +179,8 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
    Si cette option est cochée, les modérateurs membres approuvés peuvent fermer une question (rubrique) pour apporter d&#39;autres modifications et réponses, et également rouvrir une question. La valeur par défaut est désélectionnée.
 
-* **Déplacer des rubriques** Si cette option est cochée, autorisez les modérateurs côté publication à déplacer les questions. La valeur par défaut est désélectionnée.
+* **Déplacer des**
+rubriquesSi cette option est cochée, autorisez les modérateurs côté publication à déplacer les questions. La valeur par défaut est désélectionnée.
 
 * **Marquer les publications**
 
@@ -203,11 +204,11 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
 #### Onglet Champ de balise {#tag-field-tab}
 
-Under the **Tag field** tab, the tags that can be applied, if allowed under the **Settings** tab, are limited according to namespaces chosen.
+Sous l&#39;onglet **Tag field**, les balises qui peuvent être appliquées, si elles sont autorisées sous l&#39;onglet **Settings**, sont limitées en fonction des espaces de nommage choisis.
 
 * **Espaces de noms autorisés**
 
-   Pertinent si `Allow Tagging` est coché sous l’onglet **Paramètres** . Les balises qui peuvent être appliquées sont limitées à celles qui se trouvent dans les catégories d’espace de nommage vérifiées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous l&#39;onglet **Paramètres**. Les balises qui peuvent être appliquées sont limitées à celles qui se trouvent dans les catégories d’espace de nommage vérifiées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
 * **Limite de suggestions**
 
@@ -215,7 +216,7 @@ Under the **Tag field** tab, the tags that can be applied, if allowed under the 
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet Paramètres **de** tri, indiquez comment les commentaires publiés sont triés lorsqu’ils s’affichent.
+Sous l’onglet **Paramètres de tri**, spécifiez le mode de tri des commentaires publiés lorsqu’ils s’affichent.
 
 * **Trier par**
 
@@ -227,17 +228,17 @@ Sous l’onglet Paramètres **de** tri, indiquez comment les commentaires publi�
 
 * **Sélectionner les options de temps pour le tri Analytics**
 
-   Déposez le curseur pour sélectionner l’un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
+   Déposez pour sélectionner l&#39;un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
 ### Identification des réponses {#identifying-answers}
 
-Une réponse peut être marquée comme une réponse correcte ou utile à l&#39;aide du `Select Answer` bouton. Une fois qu&#39;une question est marquée comme Réponse, une autre réponse ne peut pas être sélectionnée tant que la première n&#39;a pas été désélectionnée à l&#39;aide du `Unmark Chosen Answer` bouton.
+Une réponse peut être marquée comme une réponse correcte ou utile à l&#39;aide du bouton `Select Answer`. Une fois qu&#39;une question est marquée comme Réponse, une autre réponse ne peut pas être sélectionnée tant que la première n&#39;a pas été désélectionnée à l&#39;aide du bouton `Unmark Chosen Answer`.
 
-Une fois sélectionnée comme réponse viable, elle peut être désélectionnée à l’aide du `Unmark Chosen Answer` bouton.
+Une fois sélectionnée comme réponse viable, elle peut être désélectionnée à l’aide du bouton `Unmark Chosen Answer`.
 
-Une fois qu&#39;une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered` affichée en regard de la rubrique de la question sur la page principale d&#39;évaluation quantitative.
+Une fois qu&#39;une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered` s&#39;affiche en regard de la rubrique de la question sur la page principale QnA.
 
 #### Modérateurs et administrateurs {#moderators-and-administrators}
 
@@ -260,7 +261,7 @@ Les visiteurs du site qui ne sont pas connectés peuvent seulement lire les ques
 
 ## Informations supplémentaires {#additional-information}
 
-More information can be found on the [QnA Essentials](/help/communities/qna-essentials.md) page for developers.
+Pour plus d&#39;informations, consultez la page [QnA Essentials](/help/communities/qna-essentials.md) destinée aux développeurs.
 
 Pour des informations sur la modération des sujets et des commentaires publiés, reportez-vous à la section [Modération du contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
