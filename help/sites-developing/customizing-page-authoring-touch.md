@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 workflow-type: tm+mt
 source-wordcount: '1375'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -35,11 +35,11 @@ AEM s’accompagne de divers mécanismes pour vous permettre de personnaliser la
 
 * Recouvrements
 
-   Overlays are based on node definitions and allow you to overlay the standard functionality (in `/libs`) with your own customized functionality (in `/apps`). Lors de la création d’une incrustation, aucune copie de l’original au format 1:1 n’est nécessaire, car [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) prend en charge l’héritage.
+   Les incrustations sont basées sur les définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec votre propre fonctionnalité personnalisée (dans `/apps`). Lors de la création d’une incrustation, aucune copie de l’original au format 1:1 n’est nécessaire, car [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) prend en charge l’héritage.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir la [documentation JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
+>Pour plus d’informations, voir la [documentation JS](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
 
 Ils peuvent être utilisés de différentes manières pour étendre la fonctionnalité de création de pages dans votre instance AEM. Plusieurs sont traités ci-après (à un niveau élevé).
 
@@ -64,7 +64,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
 >1. Apportez les modifications désirées dans `/apps`
 
 
@@ -72,11 +72,11 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 
 Lorsque vous modifiez une page, plusieurs [modes](/help/sites-authoring/author-environment-tools.md#page-modes) sont disponibles. Ces modes sont implémentés à l’aide de [calques](/help/sites-developing/touch-ui-structure.md#layer). Ils permettent d’accéder à différents types de fonctionnalités pour le même contenu de page. Les calques standard sont les suivants : édition, aperçu, annotation, développeur et ciblage.
 
-### Exemple de calque : État de Live Copy {#layer-example-live-copy-status}
+### Exemple de calque : État de Live Copy  {#layer-example-live-copy-status}
 
 Une instance AEM standard fournit le calque MSM. Elle accède aux données associées à la [gestion multisite](/help/sites-administering/msm.md) et les met en évidence dans le calque.
 
-To see it in action you may edit any [We.Retail language copy](/help/sites-developing/we-retail-globalized-site-structure.md) page (or any other live copy page) and select the **Live Copy Status** mode.
+Pour l’afficher en action, vous pouvez modifier toute [page de copie de langue We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou toute autre page de copie en direct) et sélectionner le mode **État de la copie en direct**.
 
 Vous trouverez la définition du calque MSM (pour référence) à l’emplacement suivant :
 
@@ -125,11 +125,11 @@ Pour plus d’informations sur la création d’un prédicat personnalisé, cons
 >
 >Consultez cet [article de la base de connaissances](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) pour obtenir un exemple d’implémentation d’un prédicat personnalisé dans l’interface utilisateur classique.
 
-## Ajout d’une nouvelle action à une barre d’outils de composants {#add-new-action-to-a-component-toolbar}
+## Ajout d’une nouvelle action à une barre d’outils de composants  {#add-new-action-to-a-component-toolbar}
 
 Chaque composant (en règle générale) s’accompagne d’une barre d’outils qui permet d’accéder à un éventail d’actions auxquelles il peut être soumis.
 
-### Exemple de code {#code-sample-2}
+### Exemple de code  {#code-sample-2}
 
 `aem-authoring-extension-toolbar-screenshot` est un exemple de package qui montre comment créer une action de barre d’outils personnalisée pour effectuer le rendu de composants.
 
@@ -161,7 +161,7 @@ Dans une installation AEM standard :
 
          * property: `editorType`
 
-            Defines the type of inline editor that will be used when the in-place editing is triggered for that component; e.g. `text`, `textimage`, `image`, `title`.
+            Définit le type d’éditeur intégré qui sera utilisé lorsque la modification en place est déclenchée pour ce composant ; par ex. `text`, `textimage`, `image`, `title`.
 
 1. Les informations de configuration supplémentaires de l’éditeur peuvent être définies à l’aide d’un nœud `config` contenant des configurations, ainsi qu’un nœud `plugin` additionnel pour contenir les informations nécessaires à la configuration du module externe.
 
@@ -211,7 +211,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
 1. Fournissez la connexion entre l’éditeur et chaque type de ressource (comme dans le composant) qui peut l’utiliser.
 
-#### Exemple de code pour créer un éditeur statique {#code-sample-for-creating-a-new-in-place-editor}
+#### Exemple de code pour créer un éditeur statique  {#code-sample-for-creating-a-new-in-place-editor}
 
 `aem-authoring-extension-inplace-editor` est un exemple de package qui montre comment créer un éditeur statique dans AEM.
 
@@ -224,13 +224,13 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 #### Configuration de plusieurs éditeurs statiques {#configuring-multiple-in-place-editors}
 
-Il est possible de configurer un composant afin qu’il comporte plusieurs éditeurs statiques. Lorsque plusieurs éditeurs statiques sont configurés, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat. See the [Configuring Multiple In-Place Editors](/help/sites-developing/multiple-inplace-editors.md) documentation for more information.
+Il est possible de configurer un composant afin qu’il comporte plusieurs éditeurs statiques. Lorsque plusieurs éditeurs statiques sont configurés, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat. Pour plus d&#39;informations, consultez la documentation [Configuration de plusieurs éditeurs en place](/help/sites-developing/multiple-inplace-editors.md).
 
 ## Ajout d’une nouvelle action de page {#add-a-new-page-action}
 
 Vous pouvez ajouter une action de page à la barre d’outils de la page ; **Retour aux sites** (console), par exemple.
 
-### Exemple de code {#code-sample-3}
+### Exemple de code  {#code-sample-3}
 
 `aem-authoring-extension-header-backtosites` est un exemple de package qui montre comment créer une action de barre d’en-tête personnalisée pour revenir à la console Sites.
 
@@ -245,9 +245,9 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 Le workflow prêt à l’emploi **Demander l’activation** se déclenche automatiquement lorsqu’un auteur de contenu ne dispose pas des droits de réplication appropriés.
 
-To have customized behavior upon such activation you can overlay the **Request for Activation** workflow:
+Pour personnaliser le comportement de cette activation, vous pouvez superposer le flux de travaux **Demande d&#39;Activation** :
 
-1. Dans `/apps` l&#39;Assistant **Sites** :
+1. Dans `/apps`, superposez l&#39;assistant **Sites** :
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
@@ -257,6 +257,6 @@ To have customized behavior upon such activation you can overlay the **Request f
    >
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
-1. Update the [workflow model](/help/sites-developing/workflows-models.md) and related configurations/scripts as required.
-1. Remove the right to the [ `replicate` action](/help/sites-administering/security.md#actions) from all appropriate users for all relevant pages; to have this workflow triggered as a default action when any of the users try to publish (or replicate) a page.
+1. Mettez à jour le [modèle de flux de travail](/help/sites-developing/workflows-models.md) et les configurations/scripts associés, le cas échéant.
+1. Supprimer le droit à l&#39;action [ `replicate`](/help/sites-administering/security.md#actions) de tous les utilisateurs appropriés pour toutes les pages pertinentes ; pour déclencher ce processus en tant qu’action par défaut lorsque l’un des utilisateurs tente de publier (ou de répliquer) une page.
 
