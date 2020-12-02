@@ -11,19 +11,19 @@ ht-degree: 49%
 ---
 
 
-# Check-in and check-out files in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
+# Fichiers d&#39;arrivée et de départ dans [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-[!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les ré-archiver après y avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Other users cannot perform any of these operations on the asset until you check the asset back in to [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
+[!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les ré-archiver après y avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent pas effectuer l’une de ces opérations sur la ressource tant que vous n’avez pas réactivé la ressource dans [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
 Vous avez besoin d’un accès en écriture à ces ressources pour être en mesure de les extraire ou de les archiver.
 
 Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser les modifications apportées par un auteur lorsque plusieurs utilisateurs issus de plusieurs équipes collaborent à la modification des workflows.
 
-## Extraire les fichiers {#checking-out-assets}
+## Extraire les ressources {#checking-out-assets}
 
-1. From the [!DNL Assets] user interface, select the asset you want to check out. Vous pouvez également sélectionner plusieurs ressources à extraire.
-1. Dans la barre d&#39;outils, cliquez sur **[!UICONTROL Passage en caisse]**.
-L&#39;option **[!UICONTROL Passage en caisse]** bascule vers **[!UICONTROL Archivage]**.
+1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez la ressource à extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Passage en caisse]**.
+L&#39;option **[!UICONTROL Passage en caisse]** passe à **[!UICONTROL Passage en caisse]**.
 Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous avez extraite, connectez-vous comme un utilisateur différent. Un symbole de verrou s’affiche sur la miniature de la ressource que vous avez récupérée.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -32,9 +32,9 @@ Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   You can click **[!UICONTROL View Properties]** to edit the metadata for the locked asset.
+   Vous pouvez cliquer sur **[!UICONTROL Propriétés de la Vue]** pour modifier les métadonnées du fichier verrouillé.
 
-1. Cliquez sur **[!UICONTROL Modifier]** pour ouvrir le fichier en mode d’édition.
+1. Cliquez sur **[!UICONTROL Modifier]** pour ouvrir la ressource en mode d’édition.
 
    ![chlimage_1-473](assets/chlimage_1-473.png)
 
@@ -44,18 +44,18 @@ Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous
 
    Vous pouvez également choisir d’annoter ou de publier la ressource.
 
-1. Sélectionnez le fichier modifié dans l’ [!DNL Assets] interface, puis cliquez sur **[!UICONTROL Archiver]** dans la barre d’outils. The modified asset is checked in to [!DNL Assets] and is available to other users for editing.
+1. Sélectionnez le fichier modifié dans l&#39;interface [!DNL Assets], puis cliquez sur **[!UICONTROL Archiver]** dans la barre d&#39;outils. L’actif modifié est archivé dans [!DNL Assets] et est disponible pour modification pour d’autres utilisateurs.
 
-## Forced check in {#forced-check-in}
+## Archivage forcé {#forced-check-in}
 
 Les administrateurs peuvent archiver les ressources extraites par d’autres utilisateurs.
 
-1. Log in to [!DNL Assets] as an administrator.
-1. From the [!DNL Assets] user interface select one or more assets that have been checked out by other users.
+1. Connectez-vous à [!DNL Assets] en tant qu’administrateur.
+1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez une ou plusieurs ressources qui ont été extraites par d&#39;autres utilisateurs.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Annuler le verrouillage]**. La ressource est à nouveau archivée et disponible pour modification pour d’autres utilisateurs.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Verrouiller]**. La ressource est à nouveau archivée et disponible pour modification pour d’autres utilisateurs.
 
 ## Bonnes pratiques et restrictions {#tips-limitations}
 
