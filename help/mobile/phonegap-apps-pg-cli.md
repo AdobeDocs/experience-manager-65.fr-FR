@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# Développement d&#39;applications avec l&#39;interface de ligne de commande PhoneGap{#developing-apps-with-phonegap-cli}
+# Développement d’applications avec l’interface de ligne de commande PhoneGap{#developing-apps-with-phonegap-cli}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ A tout moment, en tant que développeur, vous pouvez exécuter votre application
 
 Pour exécuter les exemples suivants, vous aurez besoin d’un système qui exécute OSx (Mac) avec Xcode, ou d’un système Mac/Win/Linux avec le SDK Android installé.
 
-## Bootstrap de votre environnement de développement {#bootstrap-your-development-environment}
+## Bootstrap votre environnement de développement {#bootstrap-your-development-environment}
 
 [Configuration de l’interface de ligne de commande PhoneGap](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
@@ -42,7 +42,7 @@ Pour Android : Pour développer pour iPhone et iPad, vous avez besoin de l&#39;I
 * Téléchargez-le gratuitement [ici](https://developer.android.com/sdk/index.html).
 * [Guide de la plate-forme PhoneGap Android](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
-## Download the Source {#download-the-source}
+## Télécharger la source {#download-the-source}
 
 Une fois votre environnement de développement démarré, téléchargez la source depuis AEM App Build Tile :
 
@@ -70,7 +70,7 @@ PhoneGap CLI peut créer un projet de plateforme, compiler la source et déploye
 
 >[!NOTE]
 >
->Vous pouvez effectuer toutes ces étapes séparément, voir Documentation sur l’interface de ligne de commande [PhoneGap](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>Vous pouvez effectuer toutes ces étapes séparément, voir [Documentation sur l’interface de ligne de commande PhoneGap](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
 
 1. Vérifiez que vous avez installé l’interface de ligne de commande PhoneGap, voir ci-dessus.
 1. Dans une fenêtre de console (ou de terminal), accédez au répertoire racine de la source extraite.
@@ -103,7 +103,7 @@ Ceci vérifiera que vous êtes l&#39;environnement de développement de l&#39;in
 
 Vous pouvez déboguer les scripts JavaScript de votre application à l’aide des outils de développement de Safari, comme vous le feriez avec une application Web.
 
-## Activation des outils de développement Safari {#enable-safari-developer-tools}
+## Activer les outils de développement Safari {#enable-safari-developer-tools}
 
 Pour activer les outils de développement :
 
@@ -119,7 +119,7 @@ Pour activer les outils de développement :
 * Cochez la case Afficher le menu Développer dans la barre de menus.
 * Fermer la fenêtre Préférences
 
-## Connexion de Safari à iOS {#connect-safari-to-ios}
+## Connectez Safari à iOS {#connect-safari-to-ios}
 
 Vous pouvez connecter Safari à un périphérique ou émulateur iOS.
 
@@ -141,7 +141,7 @@ phonegap run <platform> --emulator
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-## Débogage de JavaScript avec l’Inspecteur Web de Safari {#debug-javascript-with-safari-s-web-inspector}
+## Déboguer du code JavaScript avec l’Inspecteur Web de Safari {#debug-javascript-with-safari-s-web-inspector}
 
 Vous pouvez définir des points d’arrêt n’importe où dans votre source. Lorsque vous interagissez avec votre émulateur ou périphérique, l’exécution de votre application s’arrête à ces points d’arrêt. Vous pouvez parcourir l’exécution et inspecter les valeurs des variables.
 
@@ -162,4 +162,4 @@ Vous pouvez définir des points d’arrêt n’importe où dans votre source. Lo
 
 ## Étapes suivantes {#the-next-steps}
 
-Une fois que vous avez appris à propos du développement d&#39;applications avec l&#39;interface de ligne de commande PhoneGap, reportez-vous à la page [Accès aux fonctionnalités](/help/mobile/phonegap-access-device-features.md)des périphériques.
+Une fois que vous avez appris à propos du développement d&#39;applications avec l&#39;interface de ligne de commande PhoneGap, voir [Accès aux fonctionnalités des périphériques](/help/mobile/phonegap-access-device-features.md).
