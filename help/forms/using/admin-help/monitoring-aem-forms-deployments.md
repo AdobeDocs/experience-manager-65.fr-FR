@@ -24,14 +24,14 @@ Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du systè
 
 Pour plus d’informations sur la surveillance des déploiements d’AEM Forms, voir le[ Guide technique pour la surveillance des déploiements d’AEM Forms](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
 
-## Contrôle via les MBeans {#monitoring-using-mbeans}
+## Contrôle via les MBeans  {#monitoring-using-mbeans}
 
 AEM forms propose deux MBeans qui fournissent des informations de navigation et des statistiques. Il s’agit des seuls MBeans pris en charge au niveau de l’intégration et de l’inspection :
 
 * **ServiceStatistic :** ce MBean fournit des informations sur le nom du service et sur sa version.
 * **OperationStatistic :** ce MBean fournit les statistiques de chaque service du serveur Forms. C’est là que les administrateurs peuvent obtenir des informations sur un service donné, par exemple l’heure d’appel, le nombre d’erreurs, etc.
 
-### Interfaces publiques de ServiceStatisticMbean {#servicestatisticmbean-public-interfaces}
+### Interfaces publiques de ServiceStatisticMbean  {#servicestatisticmbean-public-interfaces}
 
 Vous pouvez accéder à ces interfaces publiques du MBean ServiceStatistic à des fins de test :
 
@@ -41,7 +41,7 @@ Vous pouvez accéder à ces interfaces publiques du MBean ServiceStatistic à de
  public int getMinorVersion();
 ```
 
-### Interfaces publiques de OperationStatisticMbean {#operationstatisticmbean-public-interfaces}
+### Interfaces publiques de OperationStatisticMbean  {#operationstatisticmbean-public-interfaces}
 
 Vous pouvez accéder à ces interfaces publiques du MBean OperationStatistic à des fins de test :
 
@@ -69,43 +69,43 @@ Vous pouvez accéder à ces interfaces publiques du MBean OperationStatistic à 
  public void setExceptionMessage(String errorMessage);
 ```
 
-### Arborescence des MBeans et statistiques sur les opérations {#mbean-tree-operation-statistics}
+### Arborescence des MBeans et statistiques sur les opérations  {#mbean-tree-operation-statistics}
 
 Vous pouvez accéder aux statistiques du MBean OperationStatistic depuis une console JMX (JConsole). Ces statistiques sont des attributs de MBean et vous pouvez les parcourir dans l’arborescence suivante :
 
 **Arborescence de MBean**
 
-**Nom de domaine de l&#39;Adobe :** Dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
+**Nom de domaine de l’Adobe :** dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
 
 **ServiceType :** AdobeService est le nom utilisé pour la liste de tous les services.
 
-**AdobeServiceName :** Nom du service ou ID du service.
+**AdobeServiceName:Nom** du service ou ID du service.
 
-**Version :** Version du service.
+**Version :** version du service.
 
 **Statistiques des opérations**
 
-**Heure d&#39;appel :** Temps nécessaire à l&#39;exécution de la méthode. Cette valeur ne comprend pas le temps de sérialisation de la demande, de transfert du client vers le serveur et de désérialisation.
+**Temps d’appel :** Temps nécessaire à l’exécution de la méthode. Cette valeur ne comprend pas le temps de sérialisation de la demande, de transfert du client vers le serveur et de désérialisation.
 
-**Nombre d&#39;appels :** Nombre d’appels du service.
+**Nombre d’appels :** nombre d’appels du service.
 
-**Temps moyen d’appel :** Temps moyen de tous les appels qui ont été exécutés depuis le démarrage du serveur.
+**Temps moyen d’appel : temps** moyen de tous les appels exécutés depuis le démarrage du serveur.
 
-**Max invocation time :** Durée de l’appel le plus long qui a été exécuté depuis le démarrage du serveur.
+**Max invocation time :** durée de l’appel le plus long qui a été exécuté depuis le démarrage du serveur.
 
-**Durée d&#39;appel min. :** Durée de l’appel le plus court qui a été exécuté depuis le démarrage du serveur.
+**Temps d’appel min. :** durée de l’appel le plus court qui a été exécuté depuis le démarrage du serveur.
 
-**Nombre d&#39;exceptions :** Nombre d’appels ayant entraîné des échecs.
+**Nombre d’exceptions :** nombre d’appels ayant entraîné des échecs.
 
-**Message d&#39;exception :** Message d’erreur de la dernière exception survenue.
+**Message d’exception : message** d’erreur de la dernière exception survenue.
 
-**Heure du dernier échantillonnage :** Date du dernier appel.
+**Date du dernier échantillonnage Heure : date** du dernier appel.
 
-**Unité de temps :** La valeur par défaut est de milliseconde.
+**Unité de temps :** la valeur par défaut est de milliseconde.
 
 Pour activer le contrôle JMX, les serveurs d’applications ont généralement besoin d’être configurés. Veuillez consulter la documentation de votre serveur d’applications pour obtenir des informations détaillées.
 
-### Exemples de configuration d’un accès JMX ouvert {#examples-of-how-to-set-up-open-jmx-access}
+### Exemples de configuration d’un accès JMX ouvert  {#examples-of-how-to-set-up-open-jmx-access}
 
 **JBoss 4.0.3/4.2.0 - configuration du démarrage de la JVM**
 
@@ -120,7 +120,7 @@ Pour afficher les MBeans depuis JConsole, vous devez configurer les paramètres 
 
 **WebLogic 9.2 /10 - configuration du démarrage de la JVM**
 
-1. Edit the startWebLogic.bat file that is located under `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
+1. Modifiez le fichier startWebLogic.bat situé sous `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Recherchez la ligne JAVA_OPTS et ajoutez le code suivant :
 
    ```shell
