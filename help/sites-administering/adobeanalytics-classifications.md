@@ -1,6 +1,6 @@
 ---
 title: Adobe Classifications
-seo-title: Adobe Classifications
+seo-title: Classifications d’Adobes
 description: Découvrez Adobe Classifications.
 seo-description: Découvrez Adobe Classifications.
 uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
@@ -20,25 +20,25 @@ ht-degree: 67%
 
 # Classifications Adobe{#adobe-classifications}
 
-Adobe Classifications exports classifications data to [Adobe Analytics](/help/sites-administering/adobeanalytics.md) in a scheduled manner. L’exportateur est une implémentation de **com.adobe.cq.scheduled.exporter.Exporter**.
+Les classifications d&#39;Adobe exportent les données de classification vers [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de manière planifiée. L’exportateur est une implémentation de **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Pour configurer cela :
 
 1. Avec la **Navigation**, sélectionnez **Outils**, **Services cloud**, puis **Services cloud hérités**.
 1. Accédez à **Adobe Analytics** et sélectionnez **Afficher les configurations**.
-1. Click the **[+]** link next to your Adobe Analytics configuration.
+1. Cliquez sur le lien **[+]** en regard de votre configuration Adobe Analytics.
 
 1. Dans la boîte de dialogue **Créer une structure** :
 
    * Spécifiez un **Titre**.
    * Vous pouvez éventuellement spécifier le **Nom**, pour le nœud qui stocke les détails de la structure dans le référentiel.
-   * Select **Adobe Analytics Classifications**
+   * Sélectionnez **Classifications Adobe Analytics**
 
    puis cliquez sur **Créer**.
 
    ![Boîte de dialogue Créer une structure](assets/aa-25.png)
 
-1. La boîte de dialogue Paramètres **des** classifications s’ouvre pour modification.
+1. La boîte de dialogue **Paramètres des classifications** s&#39;ouvre pour modification.
 
    ![Boîte de dialogue Paramètres des classifications](assets/aa-classifications-settings.png)
 
@@ -59,7 +59,7 @@ Pour configurer cela :
 
 1. Cliquez sur **OK** pour enregistrer vos paramètres.
 
-## Modification de la taille des pages {#modifying-page-size}
+## Modification de la taille des pages  {#modifying-page-size}
 
 Les enregistrements sont traités par pages. Par défaut, les classifications d’Adobes créent des pages d’un format de page de 1 000.
 
@@ -67,21 +67,21 @@ Une page peut avoir une taille maximale de 25 000 par définition dans les Class
 
 Pour modifier la taille de page :
 
-1. Navigate to the OSGI console at **https://&lt;host>:&lt;port>/system/console/configMgr** and select **Adobe AEM Classifications Exporter**.
+1. Accédez à la console OSGI à l’adresse **https://&lt;hôte>:&lt;port>/system/console/configMgr** et sélectionnez **Exportateur de classifications d’AEM d’Adobes**.
 
    ![aa-26](assets/aa-26.png)
 
 1. Mettez à jour **Export Page Size** (Exporter la taille de page) selon les besoins, puis cliquez sur **Save** (Enregistrer).
 
-## SAINTDefaultTransformer {#saintdefaulttransformer}
+## SAINTDefaultTransformer  {#saintdefaulttransformer}
 
 >[!NOTE]
 >
 >Auparavant, Adobe Classifications était appelé exportateur SAINT.
 
-Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. For Adobe Classifications, a subinterface `SAINTTransformer<String[]>` implementing the Transformer interface has been provided. This interface is used to restrict the data type to `String[]` which is used by the SAINT API and to have a marker interface to find such services for selection.
+Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. Pour les classifications d&#39;Adobe, une sous-interface `SAINTTransformer<String[]>` implémentant l&#39;interface Transformer a été fournie. Cette interface est utilisée pour limiter le type de données à `String[]` utilisé par l&#39;API de SAINT et pour disposer d&#39;une interface de marqueur pour trouver ces services à des fins de sélection.
 
-Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enfants de la source d’exportation sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Namespaced properties (containing `:`) are disregarded.
+Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enfants de la source d’exportation sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Les propriétés espacées de noms (contenant `:`) ne sont pas prises en compte.
 
 *Structure de nœud :*
 
@@ -99,7 +99,7 @@ Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enf
 
 | **Clé** | **Produit** | **Prix** | **Taille** | **Couleur** | **Couleur^Code** |
 |---|---|---|---|---|---|
-| 1 | Mon nom de produit | 120.90 | M | black | 101 |
+| 1 | Mon nom de produit | 120,90 | M | black | 101 |
 
 Les propriétés sont par exemple les suivantes :
 
@@ -144,6 +144,6 @@ Les propriétés sont par exemple les suivantes :
  </tbody>
 </table>
 
-## Automatisation de l’exportation d’Adobe Classifications {#automating-adobe-classifications-export}
+## Automatisation de l’exportation d’Adobe Classifications  {#automating-adobe-classifications-export}
 
 Vous pouvez créer votre propre workflow, de sorte que toutes les nouvelles importations le lancent afin de créer les données appropriées et structurées dans **/var/export/** pour qu’elles puissent être exportées dans Adobe Classifications.
