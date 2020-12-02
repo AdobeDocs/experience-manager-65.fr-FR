@@ -4,15 +4,15 @@ description: Notes de mise à jour de la plateforme et du référentiel Adobe Ex
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 57%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # aem Foundation et référentiel {#aem-foundation-repository}
 
-## Liste des modifications {#list-of-changes}
+## Liste des modifications  {#list-of-changes}
 
 ### Référentiel {#repository}
 
@@ -27,7 +27,7 @@ ht-degree: 57%
 
 * Nouvelle prise en charge de Java 11, ainsi que de Java 8 déjà pris en charge.
 * Pour des performances optimales, remplacez les valeurs par défaut du CPG par d’autres valeurs. Pour plus d’informations, consultez la section [Installation et mise à jour](/help/sites-deploying/custom-standalone-install.md).
-* Les mises à jour de maintenance Java 11 et Java 8 sont distribuées par Adobe pour l’utilisation par les clients dans les projets liés aux AEM, lorsqu’elles ne sont pas accessibles au public à partir d’Oracle.
+* Les mises à jour de maintenance Java 11 et Java 8 sont distribuées par Adobe pour l’utilisation par les clients dans les projets liés aux AEM, lorsqu’elles ne sont pas accessibles au public à partir de Oracle.
 
 ### OSGI {#osgi}
 
@@ -35,7 +35,7 @@ ht-degree: 57%
 
 ### Projets et workflows {#projects-and-workflows}
 
-* New Workflow Model editor introduced in 6.4 has been improved to include more operations like Copy and Publish, Variable support in Workflow steps and enhanced `OR` and `AND` splits.
+* Le nouvel éditeur de modèle de flux de travail introduit dans la version 6.4 a été amélioré afin d’inclure davantage d’opérations telles que Copier et Publier, la prise en charge des variables dans les étapes du flux de travail et les divisions `OR` et `AND` améliorées.
 
 ### Recherche {#searching}
 
@@ -58,14 +58,14 @@ Diverses améliorations ont été apportées à l’interface utilisateur pour l
 
 >[!CAUTION]
 >
->L’Adobe n’améliorera pas davantage l’interface utilisateur de Classic. Experience Manager 6.5 inclut l’interface utilisateur classique pour une compatibilité ascendante. Classic UI remains fully supported while being deprecated [Read more](/help/sites-deploying/ui-recommendations.md).
+>L’Adobe n’améliorera pas davantage l’interface utilisateur de Classic. Experience Manager 6.5 inclut l’interface utilisateur classique pour une compatibilité ascendante. L’interface utilisateur classique reste entièrement prise en charge tout en étant obsolète [Lire la suite ](/help/sites-deploying/ui-recommendations.md).
 
 ### Mise à niveau {#upgrade}
 
 * La procédure de mise à niveau reste en grande partie la même dans la version 6.5.
 * Nous continuons à prendre en charge la compatibilité ascendante, l’évaluation de la complexité des mises à niveau et les fonctions de continuité mises à niveau ajoutées dans la version 6.4. Des mises à jour spécifiques à la version ont été apportées à ces domaines, le cas échéant.
 * L’assemblage du détecteur de modèle a été simplifié et un seul package évaluera les mises à niveau vers la version 6.5 pour les versions sources disponibles.
-* Pour plus d’informations sur la procédure de mise à niveau, voir la documentation [sur la](/help/sites-deploying/upgrade.md)mise à niveau.
+* Pour plus d&#39;informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
 
 ### Serveur web {#web-server}
 
