@@ -43,7 +43,7 @@ Vous ne pouvez ajouter des points de fin qu’à des services. Un point de fin n
 
 1. Cliquez sur Ajouter.
 
-## Activation ou désactivation d’un point de fin {#enable-or-disable-an-endpoint}
+## Activation ou désactivation d’un point de fin  {#enable-or-disable-an-endpoint}
 
 Par défaut, les nouveaux points de fin sont automatiquement activés. Cependant, si vous en désactivez un, vous devez le réactiver pour qu’il soit opérationnel.
 
@@ -52,7 +52,7 @@ Si vous rencontrez des problèmes avec des services, vous devez désactiver les 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des points de fin.
 1. Dans la page Gestion des points de fin, cochez la case associée au point de fin à activer ou désactiver et cliquez sur Activer ou Désactiver.
 
-## Modification d’un point de fin {#modify-an-endpoint}
+## Modification d’un point de fin  {#modify-an-endpoint}
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Si vous rencontrez des problèmes avec des services, vous devez désactiver les 
 
 Pour exécuter cette tâche, vous pouvez également sélectionner un service dans la page Gestion des services, puis cliquer sur l’onglet Points de fin.
 
-## Suppression d’un point de fin {#remove-an-endpoint}
+## Suppression d’un point de fin  {#remove-an-endpoint}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des points de fin.
 1. Dans la page Gestion des points de fin, cochez la case correspondant au point de fin à supprimer, puis cliquez sur Supprimer. Ce point de fin n’est plus affiché.
