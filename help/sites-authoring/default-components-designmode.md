@@ -22,7 +22,7 @@ ht-degree: 83%
 
 Lors de l’installation standard d’une instance AEM, plusieurs composants sont immédiatement disponibles dans l’explorateur de composants.
 
-In addition to these, various other components are also available. You can use Design mode to [enable/disable such components](#enable-disable-components). When enabled and located on your page you can then use Design mode to [configure aspects of the component design](#configuring-the-design-of-a-component) by editing the attribute parameters.
+En outre, divers autres composants sont également disponibles. Vous pouvez utiliser le mode Création pour [activer/désactiver ces composants](#enable-disable-components). Une fois activé et situé sur votre page, vous pouvez ensuite utiliser le mode Création pour [configurer les aspects de la conception de composant](#configuring-the-design-of-a-component) en modifiant les paramètres d&#39;attribut.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ In addition to these, various other components are also available. You can use D
 >
 >Le mode de conception est uniquement disponible pour les configurations de conception stockées en tant que contenu sous ( `/etc`).
 >
->Starting in AEM 6.4, it is recommended to store designs as configuration data under `/apps` to support continuous deployment scenarios. Designs stored under `/apps` are not editable at runtime and the Design mode will not be available to non-admin users for such templates.
+>À partir de AEM 6.4, il est recommandé de stocker les conceptions en tant que données de configuration sous `/apps` pour prendre en charge les scénarios de déploiement continu. Les conceptions stockées sous `/apps` ne sont pas modifiables au moment de l’exécution et le mode de conception ne sera pas disponible pour les utilisateurs non administrateurs de ces modèles.
 
 Pour ce faire, vous devrez ajouter ou supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Il permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphes. Chaque type de paragraphe est représenté en tant que composant.
 
@@ -69,7 +69,7 @@ Pour activer ou désactiver un composant :
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Click or tap the **Parent** icon.
+1. Cliquez ou appuyez sur l&#39;icône **Parent**.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -92,7 +92,7 @@ Pour activer ou désactiver un composant :
 
    **Composants autorisés**
 
-   On the **Allowed Components** tab, you define which components are available for the parsys.
+   Dans l&#39;onglet **Composants autorisés**, vous définissez les composants disponibles pour le paramètre.
 
    * Les composants sont regroupés en groupes de composants, qui peuvent être développés et réduits.
    * Un groupe entier peut être sélectionné en cochant le nom du groupe, et tous peuvent être désélectionnés en décochant la case.
@@ -133,16 +133,16 @@ Pour activer ou désactiver un composant :
    La boîte de dialogue comporte trois onglets :
 
    * Principal
-   * Fonctionnalités
+   * Fonctions
    * Styles
 
    **Propriétés**
 
    L’onglet **Propriétés** vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant Image, vous pouvez définir la taille maximale et minimale de l’image autorisée.
 
-   **Fonctionnalités**
+   **Fonctions**
 
-   L’onglet **Fonctions** vous permet d’activer ou de désactiver des fonctions supplémentaires pour le composant. Par exemple, pour un composant Image, vous pouvez définir l’orientation de l’image, les options de recadrage disponibles, et si une image peut être téléchargée.
+   L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant. Par exemple, pour un composant Image, vous pouvez définir l’orientation de l’image, les options de recadrage disponibles, et si une image peut être téléchargée.
 
    **Styles**
 
