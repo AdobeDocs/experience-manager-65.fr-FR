@@ -61,7 +61,7 @@ Dans les deux cas, vous aurez besoin d’effectuer les opérations suivantes :
 
 * [Spécifier les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Démarrage d’un workflow à partir de la barre d’outils Sites   {#starting-a-workflow-from-the-sites-toolbar}
+### Démarrage d’un workflow à partir de la barre d’outils Sites    {#starting-a-workflow-from-the-sites-toolbar}
 
 Vous pouvez démarrer un workflow à partir de la barre d’outils de la console **Sites** :
 
@@ -73,7 +73,7 @@ Vous pouvez démarrer un workflow à partir de la barre d’outils de la console
 
 1. L’assistant **Créer un workflow** vous aidera à [spécifier les détails du workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Démarrage d’un workflow à partir de la chronologie   {#starting-a-workflow-from-the-timeline}
+### Démarrage d’un workflow à partir de la chronologie    {#starting-a-workflow-from-the-timeline}
 
 Dans la **Chronologie**, vous pouvez démarrer un workflow à appliquer à la ressource sélectionnée.
 
@@ -84,7 +84,7 @@ Dans la **Chronologie**, vous pouvez démarrer un workflow à appliquer à la re
 
 1. L’assistant **Créer un workflow** vous aidera à [spécifier les détails du workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Spécification des détails du workflow dans l’assistant Créer un workflow   {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Spécification des détails du workflow dans l’assistant Créer un workflow    {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 L’assistant **Créer un workflow** vous permet de sélectionner le workflow et d’en spécifier les détails.
 
@@ -141,7 +141,7 @@ Vous pouvez spécifier les détails du workflow :
 
 1. Utilisez l’option **Créer** pour fermer l’assistant et créer l’instance du workflow. Une notification s’affiche dans la console Sites.
 
-## Démarrage d’un workflow à partir de l’éditeur de page   {#starting-a-workflow-from-the-page-editor}
+## Démarrage d’un workflow à partir de l’éditeur de page    {#starting-a-workflow-from-the-page-editor}
 
 Lors de la modification d’une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
 
