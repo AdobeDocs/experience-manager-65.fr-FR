@@ -19,7 +19,7 @@ ht-degree: 42%
 ---
 
 
-# Meilleures pratiques des modèles de courrier électronique {#best-practices-for-email-templates}
+# Meilleures pratiques des modèles de courrier électronique  {#best-practices-for-email-templates}
 
 >[!CAUTION]
 >
@@ -35,19 +35,19 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
 
 >[!NOTE]
 >
->Tout le contenu de la campagne doit être créé sous une `master` page de type `cq/personalization/components/ambitpage`.
+>Tout le contenu de la campagne doit être créé sous une page `master` de type `cq/personalization/components/ambitpage`.
 >
 >Par exemple, si votre structure de campagne planifiée ressemble à
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
->Vous devez vous assurer qu’il réside sous une `master` page.
+>Vous devez vous assurer qu’il réside sous une page `master`.
 >
 >`/content/campaigns/teasers/master/en/campaign-promotion-global`
 
 >[!NOTE]
 >
->When creating a mail template for Adobe Campaign, you must include the property **acMapping** with the value **mapRecipient** in the **jcr:content** node of the template, or you will not be able to select the Adobe Campaign template in **Page Properties** of AEM (field is disabled).
+>Lors de la création d’un modèle de courrier pour Adobe Campaign, vous devez inclure la propriété **acMapping** avec la valeur **mapRecipient** dans le noeud **jcr:content** du modèle, sinon vous ne pourrez pas sélectionner le modèle Adobe Campaign dans **Propriétés de page** de l’ (champ désactivé).
 
 ## Composant de modèle/page {#template-page-component}
 
@@ -61,7 +61,7 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
   </tr>
   <tr>
    <td><p>Spécifiez le type de document pour assurer un rendu cohérent.</p> <p>Ajouter DOCTYPE au début (HTML ou XHTML)</p> </td>
-   <td><p>Est configurable en modifiant la propriété <i>cq:doctype</i> dans<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>La valeur par défaut est "XHTML" :</p> <p>&lt; ! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitionnel//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Peut être remplacé par "HTML_5" :</p> <p>&lt; ! DOCTYPE HTML&gt;</p> </td>
+   <td><p>Est configurable en modifiant la propriété <i>cq:doctype</i> dans <i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>La valeur par défaut est "XHTML" :</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Peut être remplacé par "HTML_5" :</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
    <td><p>Spécifiez la définition des caractères pour garantir le rendu correct des caractères spéciaux.</p> <p>Ajouter la déclaration CHARSET (par exemple iso-8859-15, UTF-8) à &lt;head&gt;</p> </td>
@@ -69,11 +69,11 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
   </tr>
   <tr>
    <td><p>Codez toute la structure à l’aide de l’élément &lt;table&gt;. Pour des mises en page plus compliquées, vous devez imbriquer les tableaux pour créer des structures complexes.</p> <p>Le courrier électronique devrait être de bonne qualité, même sans css.</p> </td>
-   <td><p>Les tableaux sont utilisés dans tout le modèle pour structurer le contenu. Actuellement, il est possible d’utiliser un maximum de quatre tableaux imbriqués (1 tableau de base + 3 niveaux d’imbrication)</p> <p>Les balises &lt;div&gt; ne sont utilisées qu'en mode création pour assurer la modification correcte des composants.</p> </td>
+   <td><p>Les tableaux sont utilisés dans tout le modèle pour structurer le contenu. Actuellement, il est possible d’utiliser un maximum de quatre tableaux imbriqués (1 tableau de base + 3 niveaux d’imbrication)</p> <p>&lt;div&gt; ne sont utilisées qu’en mode création pour assurer la modification correcte des composants.</p> </td>
   </tr>
   <tr>
    <td>Utilisez les attributs d’élément (tels que le remplissage de la cellule, la valeur et la largeur) pour définir les dimensions du tableau. Ceci force une structure boîte-modèle.</td>
-   <td><p>Tous les tableaux contiennent les attributs nécessaires tels que <i>bordure</i>, <i>remplissage</i>de cellule, espacement <i></i> entre les cellules et <i>largeur.</i></p> <p>To harmonize element positioning inside tables, all table cells have the attribute <i>valign="top"</i> being set.</p> </td>
+   <td><p>Toutes les tables contiennent les attributs nécessaires tels que <i>border</i>, <i>cellpadding</i>, <i>cellspacing</i> et <i>width</i>.</p> <p>Pour harmoniser le positionnement des éléments dans les tableaux, l’attribut <i>valign="top"</i> est défini pour toutes les cellules du tableau.</p> </td>
   </tr>
   <tr>
    <td><p>Si possible, tenez compte de la convivialité des dispositifs portables. Utilisez les requêtes multimédias pour augmenter la taille du texte sur les petits écrans et fournir des zones actives de la taille d’une vignette pour les liens.</p> <p>Rendez un courrier électronique interactif si la conception l’autorise.</p> </td>
@@ -89,7 +89,7 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
   </tr>
   <tr>
    <td>La largeur maximale des courriels doit être comprise entre 600 et 800 pixels. Ils auront ainsi un meilleur comportement dans le panneau d’aperçu de la plupart des clients.</td>
-   <td>The <i>width</i> of content table is limited to 600px in demo design.</td>
+   <td>La <i>largeur</i> du tableau de contenu est limitée à 600 px dans la conception de la démonstration.</td>
   </tr>
  </tbody>
 </table>
@@ -100,10 +100,10 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
 
 | **Bonne pratique** | **Mise en œuvre** |
 |---|---|
-| Ajouter des attributs *alt* aux images | L’attribut *alt* a été défini comme obligatoire pour le composant d’image. |
-| Utiliser *jpg* au lieu du format *png* pour les images | Les images seront toujours diffusées au format JPG par le composant d’image. |
-| Utilisez l’ `<img>` élément au lieu des images d’arrière-plan dans un tableau. | Aucune donnée d’image d’arrière-plan n’est utilisée dans les modèles. |
-| Ajoutez l’attribut style=&quot;bloc d’affichage&quot; sur les images. Permet d’obtenir un affichage correct dans Gmail. | Toutes les images contiennent par défaut l’attribut *style=&quot;bloc d’affichage&quot;* . |
+| Ajouter les attributs *alt* aux images | L&#39;attribut *alt* a été défini comme obligatoire pour le composant d&#39;image. |
+| Utilisez le format *jpg* au lieu de *png* pour les images. | Les images seront toujours diffusées au format JPG par le composant d’image. |
+| Utilisez l’élément `<img>` au lieu des images d’arrière-plan dans un tableau. | Aucune donnée d’image d’arrière-plan n’est utilisée dans les modèles. |
+| Ajoutez l’attribut style=&quot;bloc d’affichage&quot; sur les images. Permet d’obtenir un affichage correct dans Gmail. | Toutes les images contiennent par défaut l’attribut *style=&quot;bloc d’affichage&quot;*. |
 
 ### Texte et liens {#text-and-links}
 
@@ -130,7 +130,7 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
 
 | **Bonne pratique** | **Mise en œuvre** |
 |---|---|
-| Utilisez le validateur W3C pour corriger le code HTML. Assurez-vous que toutes les balises ouvertes sont correctement fermées. | Le code a été validé. For XHTML transitional Doctype only the missing xmlns attribute for the `<html>` element is missing. |
+| Utilisez le validateur W3C pour corriger le code HTML. Assurez-vous que toutes les balises ouvertes sont correctement fermées. | Le code a été validé. Pour la Doctype transitoire XHTML, seul l&#39;attribut xmlns manquant pour l&#39;élément `<html>` est manquant. |
 | Ne vous embêtez pas à JavaScript ou au Flash : ces technologies ne sont généralement pas prises en charge par les clients de messagerie. | Ni JavaScript ni Flash ne sont utilisés dans le modèle de newsletter. |
 | Ajoutez une version en texte brut pour l’envoi en plusieurs parties. | Un nouveau widget a été créé dans les propriétés de la page pour extraire facilement une version en texte brut du contenu de la page. Ceci peut être utilisé comme point de départ pour la version en texte brut finale. |
 
@@ -142,7 +142,7 @@ AEM est fourni avec des modèles et des composants clé en main vous permettant 
 
 Pour offrir une base solide et élargir la variété de possibilités de flux de contenu, trois types de modèle légèrement différents sont disponibles clé en main. Vous pouvez facilement les utiliser pour créer un bulletin d&#39;information personnalisé.
 
-All have a **header**, a **footer** and a **body** section. Below the body section, each template differs in **column design** (1, 2 or 3 columns).
+Tous ont un **en-tête**, un **pied de page** et une section **corps**. Sous la section de corps, chaque modèle diffère dans la conception de colonne **** (1, 2 ou 3 colonnes).
 
 ![](assets/chlimage_1-69.png)
 
