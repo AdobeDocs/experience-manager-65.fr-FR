@@ -26,9 +26,9 @@ ht-degree: 7%
 
 Les actions de gestion de contenu sont les blocs de création qui aident à créer et à gérer du contenu dans une application. Les actions suivantes sont exécutées sur le contenu de l’application.
 
-## Présentation des collections {#collections-overview}
+## Aperçu des collections {#collections-overview}
 
-Les collections représentent un *compartiment* bien défini rempli de contenu tel que des articles ou des bannières qui s’adaptent au thème de la couverture.
+Les collections représentent une *corbeille* bien définie remplie de contenu tel que des articles ou des bannières qui correspondent au thème de la couverture.
 
 >[!NOTE]
 >
@@ -49,10 +49,10 @@ La procédure générale de création d’une collection est la suivante :
 
 1. Sélectionnez **Mobile** dans le rail latéral.
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les collections** .
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les collections**.
 1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvel article.
 1. Une fois prêt, cliquez sur **Créer**.
-1. Votre nouvel article s’affiche dans le volet **Gérer les collections** .
+1. Votre nouvel article s’affiche dans la mosaïque **Gérer les collections**.
 
 ![chlimage_1-1](assets/chlimage_1-1.gif)
 
@@ -68,21 +68,21 @@ Flux de travail pour importer une nouvelle collection
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
 1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les collections** et sélectionnez Importer les collections.
-1. Cliquez sur **Importer des collections** dans la boîte de dialogue, puis sur Fermer.
-1. Vos collections Mobile On-Demand apparaissent désormais dans la mosaïque **Gérer les collections** .
+1. Cliquez sur **Importer les collections** dans la boîte de dialogue, puis sur Fermer.
+1. Vos collections Mobile On-Demand apparaissent désormais dans la mosaïque **Gérer les collections**.
 
 >[!CAUTION]
 >
 >Vous devez d&#39;abord associer une connexion Mobile On-Demand.
 
-## Modification d’une collection {#editing-a-collection}
+## Modification d&#39;une collection {#editing-a-collection}
 
 Utilisez l’éditeur de glisser-déplacer d’AEM intégré pour ajouter ou modifier un article. Des composants tels que du texte et des images peuvent être ajoutés/supprimés. Vous pouvez insérer des images à partir de ressources DAM.
 
 Processus de modification d’une collection :
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez un article d’AEM source dans le volet **Gérer les collections** .
+1. Sélectionnez un article d’AEM source dans la mosaïque **Gérer les collections**.
 1. Cliquez sur la collection mise en surbrillance de la vue de liste pour l’ouvrir dans l’éditeur de contenu.
 1. Utilisez l’éditeur de contenu pour faire glisser le contenu de la collection (manuscrits, images, texte, etc.).
 
@@ -93,21 +93,21 @@ Les collections possèdent de nombreuses propriétés telles que des titres, des
 Processus général de vue/modification d’une collection :
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez une collection dans le volet **Gérer les collections** .
+1. Sélectionnez une collection dans la mosaïque **Gérer les collections**.
 
 1. Sélectionnez **Propriétés** dans la barre d’actions.
 1. Vue de toutes les métadonnées disponibles pour cet article.
 1. Modifiez les métadonnées si nécessaire et cliquez sur **Enregistrer** lorsque vous avez terminé.
 1. Si vous le souhaitez, téléchargez immédiatement les modifications sur Mobile On-Demand.
 
-## Téléchargement d’une collection {#uploading-a-collection}
+## Chargement d&#39;une collection {#uploading-a-collection}
 
 L&#39;action de téléchargement copie le contenu sélectionné et l&#39;ajoute à un projet Mobile On-Demand. Le contenu Mobile On-Demand existant est déjà remplacé par la nouvelle version.
 
 Processus général de téléchargement d’une collection :
 
 1. Dans **Mobile**, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Dans le volet **Gérer les collections** , sélectionnez un article à télécharger sur Mobile On-Demand.
+1. Dans la mosaïque **Gérer les collections**, sélectionnez un article à télécharger sur Mobile On-Demand.
 1. Ajoutez d’autres collections si nécessaire à partir de la vue de liste.
 1. Sélectionnez **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
 1. Votre ou vos collections sont maintenant transférées vers Mobile On-Demand.
@@ -119,9 +119,9 @@ Cette opération supprime la collection sélectionnée de Mobile On-Demand et é
 Processus général de suppression d&#39;une collection :
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez l’article à supprimer dans le volet **Gérer les collections** .
+1. Sélectionnez l’article à supprimer dans la mosaïque **Gérer les collections**.
 1. Assurez-vous qu’elle est sélectionnée dans la liste (sélectionnez d’autres options à supprimer si nécessaire).
-1. Click **Delete** from the action bar.
+1. Cliquez sur **Supprimer** dans la barre d&#39;actions.
 1. Vérifiez si vous souhaitez supprimer des AEM ainsi que des services Mobile On-Demand.
 1. Cliquez sur **Supprimer**.
 1. Votre collection est maintenant supprimée de la liste.
