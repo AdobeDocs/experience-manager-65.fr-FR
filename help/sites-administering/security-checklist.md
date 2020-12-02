@@ -49,9 +49,9 @@ Pour une instance sécurisée, il est obligatoire d’activer la couche de trans
 
 Assurez-vous d’avoir installé les derniers [correctifs de sécurité fournis par Adobe](https://helpx.adobe.com/fr/experience-manager/kb/aem63-available-hotfixes.html).
 
-### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi  {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe strongly recommends that after installation you change the password for the privileged [**AEM** `admin` accounts](#changing-the-aem-admin-password) (on all instances).
+L&#39;Adobe recommande vivement, après l&#39;installation, de modifier le mot de passe des comptes [**AEM** `admin` privilégiés ](#changing-the-aem-admin-password) (sur toutes les instances).
 
 Ces comptes sont les suivants :
 
@@ -59,7 +59,7 @@ Ces comptes sont les suivants :
 
    Une fois que vous avez modifié le mot de passe du compte d’administration AEM, vous devez utiliser le nouveau mot de passe lors de l’accès à CRX.
 
-* Mot de passe de la console Web OSGi `admin`
+* Mot de passe `admin` pour la console Web OSGi
 
    Cette modification sera également appliquée au compte d&#39;administration utilisé pour accéder à la console Web. Vous devrez donc utiliser le même mot de passe pour y accéder.
 
@@ -69,7 +69,7 @@ Ces deux comptes utilisent des informations d’identification distinctes. Il es
 
 Le mot de passe du compte administrateur d’AEM peut être modifié par le biais de la console [Opérations Granite – Users](/help/sites-administering/granite-user-group-admin.md).
 
-Here you can edit the `admin` account and [change the password](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
+Vous pouvez ici modifier le compte `admin` et [modifier le mot de passe](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
 
 >[!NOTE]
 >
@@ -77,30 +77,30 @@ Here you can edit the `admin` account and [change the password](/help/sites-admi
 
 #### Importance la modification du mot de passe de la console web OSGi {#importance-of-changing-the-osgi-web-console-password}
 
-Aside from the AEM `admin` account, failing to change the default password for the OSGi web console password can lead to:
+Outre le compte d&#39;AEM `admin`, le fait de ne pas modifier le mot de passe par défaut du mot de passe de la console Web OSGi peut conduire à :
 
 * l’affichage du serveur avec un mot de passe par défaut au démarrage et à l’arrêt (opération qui peut prendre quelques minutes sur les serveurs importants) ;
 * l’exposition du serveur lorsque le référentiel est en panne/redémarre un lot (et qu’OSGI est en cours d’exécution).
 
 Pour plus d’informations sur la modification du mot de passe de la console web, voir [Modification du mot de passe administrateur de la console web OSGi](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) ci-dessous.
 
-#### Modification du mot de passe administrateur de la console web OSGi {#changing-the-osgi-web-console-admin-password}
+#### Modification du mot de passe administrateur de la console web OSGi  {#changing-the-osgi-web-console-admin-password}
 
-Vous devez également modifier le mot de passe utilisé pour accéder à la console web. This is done by configuring the following properties of the [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md):
+Vous devez également modifier le mot de passe utilisé pour accéder à la console web. Pour ce faire, configurez les propriétés suivantes de la [console de gestion Apache Felix OSGi ](/help/sites-deploying/osgi-configuration-settings.md) :
 
 **Nom d’utilisateur** et **mot de passe**, les informations d’identification pour accéder à la console de gestion web Apache Felix.
 Le mot de passe doit être modifié après l’installation initiale pour garantir la sécurité de votre instance. 
 
 Pour ce faire :
 
-1. Navigate to the web console at `<server>:<port>/system/console/configMgr`.
+1. Accédez à la console Web à l’adresse `<server>:<port>/system/console/configMgr`.
 1. Accédez à la **console de gestion OSGi Apache Felix** et remplacez le **nom d’utilisateur** et le **mot de passe**.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
 1. Cliquez sur **Enregistrer**.
 
-### Mise en œuvre d’un gestionnaire d’erreur personnalisé {#implement-custom-error-handler}
+### Mise en œuvre d’un gestionnaire d’erreur personnalisé  {#implement-custom-error-handler}
 
 Adobe recommande de définir des pages de gestionnaire d’erreur personnalisé, en particulier pour les codes de réponse HTTP 404 et 500, afin d’empêcher la divulgation d’informations.
 
@@ -116,7 +116,7 @@ AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recomma
 >
 >À l’aide de Dispatcher, vous devez désactiver le sélecteur « .form ».
 
-## Étapes de vérification {#verification-steps}
+## Étapes de vérification  {#verification-steps}
 
 ### Configuration des utilisateurs de réplication et de transfert {#configure-replication-and-transport-users}
 
@@ -152,13 +152,13 @@ Ces lots OSGi de développement doivent être désinstallés sur les systèmes d
 * Adobe Granite CRX Explorer (com.adobe.granite.crx-explorer)
 * Adobe Granite CRXDE Lite (com.adobe.granite.crxde-lite)
 
-### Contrôle de la présence des lots de développement Sling {#check-if-the-sling-development-bundle-is-present}
+### Contrôle de la présence des lots de développement Sling  {#check-if-the-sling-development-bundle-is-present}
 
 [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) déploie l’installation de la prise en charge des outils Apache Sling (org.apache.sling.tooling.support.install).
 
 Ce lot OSGi doit être désinstallé sur les systèmes de création et de publication en production avant de les rendre accessibles.
 
-### Protection contre les attaques CSRF {#protect-against-cross-site-request-forgery}
+### Protection contre les attaques CSRF  {#protect-against-cross-site-request-forgery}
 
 #### Le framework de protection CSRF {#the-csrf-protection-framework}
 
@@ -187,7 +187,7 @@ Pour configurer le service de filtrage de référent :
 
    `Apache Sling Referrer Filter`
 
-1. In the `Allow Hosts` field, enter all hosts that are allowed as a referrer. Chaque entrée doit se trouver dans le formulaire
+1. Dans le champ `Allow Hosts`, saisissez tous les hôtes autorisés en tant que parrain. Chaque entrée doit se trouver dans le formulaire
 
    &lt;protocol>://&lt;server>:&lt;port>
 
@@ -197,13 +197,13 @@ Pour configurer le service de filtrage de référent :
    * Si vous souhaitez également autoriser les demandes https, vous devez saisir une seconde ligne.
    * Si vous autorisez tous les ports de ce serveur, vous pouvez utiliser `0` comme numéro de port.
 
-1. Check the `Allow Empty` field, if you want to allow empty/missing referrer headers.
+1. Cochez le champ `Allow Empty` si vous souhaitez autoriser les en-têtes de parrain vides/manquants.
 
    >[!CAUTION]
    >
    >Il est recommandé de fournir un référent lors de l’utilisation des outils de ligne de commande, comme `cURL` au lieu d’autoriser une valeur vide, car cela peut exposer votre système à des attaques CSRF.
 
-1. Edit the methods this filter should use for checks with the `Filter Methods` field.
+1. Modifiez les méthodes que ce filtre doit utiliser pour les vérifications avec le champ `Filter Methods`.
 
 1. Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
@@ -245,7 +245,7 @@ Pour plus d’informations, voir [Paramètres de configuration d’OSGi](/help/s
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
-## Autres ressources à lire {#further-readings}
+## Autres ressources à lire  {#further-readings}
 
 ### Atténuation des attaques par déni de service (DoS){#mitigate-denial-of-service-dos-attacks}
 
@@ -258,7 +258,7 @@ Une attaque par déni de service (DoS) est une tentative de rendre une ressource
 
 * Lors de la demande d’une page de contenu avec un nombre illimité d’adresses URL, l’adresse URL peut inclure un nom en ligne, certains sélecteurs, une extension et un suffixe, qui peuvent tous être modifiés.
 
-   For example, `.../en.html` can also be requested as:
+   Par exemple, `.../en.html` peut également être demandé comme suit :
 
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
@@ -300,9 +300,9 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 
       peut vider l’ensemble du référentiel dans une représentation JSON. Cela entraînerait des problèmes importants au niveau du serveur. Ainsi, Sling définit une limite de nombre maximal de résultats. Pour limiter la profondeur du rendu JSON, vous pouvez définir la valeur pour :
 
-      **Résultats** max JSON ( `json.maximumresults`)
+      **Résultats**  max JSON(  `json.maximumresults`)
 
-      dans la configuration pour le servlet [de GET](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet)Apache Sling. Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
+      dans la configuration du [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
 
    * À titre de mesure préventive, désactivez les autres outils de rendu par défaut (HTML, texte brut, XML). Là encore, en configurant le [servlet Sling GET d’Apache](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
    >[!CAUTION]
@@ -319,16 +319,16 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 >
 >Cette réduction ne doit être effectuée que sur les environnements AEM qui n’utilisent pas Forms.
 
-Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Form selectors can be detected by the presence of the **&amp;ast;.form.&amp;ast;** dans les requêtes.
+Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de **&amp;ast;.form.&amp;ast;** chaîne dans les requêtes.
 
 Pour atténuer ce problème, veuillez procéder comme suit :
 
-1. Go to the Web Console by pointing your browser to *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Accédez à la console Web en pointant votre navigateur vers *https://&lt;adresse du serveur>:&lt;serverport>/system/console/configMgr*.
 
 1. Recherchez **Day CQ WCM Form Chooser Servlet**
 1. Après avoir cliqué sur l’entrée, désactivez la **Recherche avancée requise** dans la fenêtre suivante.
 
-1. Cliquez sur **Save**.
+1. Cliquez sur **Enregistrer**.
 
 **Atténuer les attaques par déni de service (DoS) provoquées par l’utilisation du servlet de téléchargement de ressources**
 
@@ -374,7 +374,7 @@ Aucune configuration ne doit être effectuée pour l’activer, car il s’agit 
 
 Même si cela n’est pas recommandé, vous pouvez la désactiver au cas où vous auriez besoin de l’ancienne mise en œuvre pour des raisons de rétrocompatibilité avec vos applications existantes. À cet effet, vous devez effectuer les opérations suivantes :
 
-1. Go to the Web Console and remove the** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** entry from property **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
+1. Accédez à la console Web et supprimez l’entrée ** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName*** de la propriété **requiredServicePids** dans **Apache Jackrabbit Oak SecurityProvider**.
 
    Vous pouvez également trouver Oak Security Provider en cherchant le PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** dans les configurations OSGi.
 
@@ -400,7 +400,7 @@ Avant d’effectuer cette opération, notez que la réplication des clés est ef
 
 Pour plus d’informations, voir ci-dessous.
 
-#### Réplication des clés pour AEM 6.3 {#replicating-keys-for-aem}
+#### Réplication des clés pour AEM 6.3  {#replicating-keys-for-aem}
 
 Alors que dans les anciennes versions, les clés de réplication étaient stockées dans le référentiel, à compter d’AEM 6.3, elles sont stockées dans le système de fichiers.
 
@@ -436,12 +436,12 @@ Plus spécifiquement, vous devez effectuer les opérations suivantes :
 
 #### Réplication des clés pour AEM 6.2 et versions antérieures {#replicating-keys-for-aem-and-older-versions}
 
-In AEM 6.2 and older versions, the keys are stored in the repository under the `/etc/key` node.
+Dans AEM 6.2 et les versions antérieures, les clés sont stockées dans le référentiel sous le noeud `/etc/key`.
 
 La méthode recommandée pour répliquer en toute sécurité les clés sur toutes les instances est de ne répliquer que ce nœud. Vous pouvez répliquer les nœuds de façon sélective à l’aide de CRXDE Lite :
 
-1. Open CRXDE Lite by going to *https://&lt;serveraddress>:4502/crx/de/index.jsp*
-1. Select the `/etc/key` node.
+1. Ouvrez le CRXDE Lite en accédant à *https://&lt;adresse du serveur>:4502/crx/de/index.jsp*
+1. Sélectionnez le noeud `/etc/key`.
 1. Cliquez sur l’onglet **Réplication**.
 1. Appuyez sur le bouton **Réplication**.
 
