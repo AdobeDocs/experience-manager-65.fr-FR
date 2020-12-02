@@ -28,7 +28,7 @@ Une fois que vous êtes familiarisé avec les actions de gestion de contenu sur 
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception pour les applications AEM Mobile, reportez-vous à la section Considérations relatives à la [conception pour les applications](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) AEM Mobile dans l&#39;aide en ligne.
+>Pour en savoir plus sur les considérations de conception pour les applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
 
 ## Publication/annulation de publication du contenu {#publishing-unpublishing-the-content}
 
