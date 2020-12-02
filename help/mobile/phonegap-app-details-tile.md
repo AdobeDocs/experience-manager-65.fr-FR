@@ -28,13 +28,13 @@ La mosaïque **Gestion de l’application** du tableau de bord des applications 
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## Understanding the Manage App Tile {#understanding-the-manage-app-tile}
+## Présentation de la mosaïque de gestion de l’application {#understanding-the-manage-app-tile}
 
-You can drill into each tile in the **Manage App** tile to view or edit details by clicking the &#39;...&#39; in the bottom right corner.
+Vous pouvez explorer chaque volet de la mosaïque **Gérer l’application** à la vue ou modifier les détails en cliquant sur le bouton &quot;...&quot;. dans le coin inférieur droit.
 
 ### Onglet Simple {#the-basic-tab}
 
-Vous pouvez modifier le **nom**, l’ **auteur**, la description **** courte et la **description de votre application à partir de cet onglet.**
+Vous pouvez modifier le **nom**, **auteur**, **brève description** et la **description** de votre application à partir de cet onglet.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -57,7 +57,7 @@ Chaque boutique d’applications fournisseur, telle qu’Apple App Store ou Goog
 >
 >L’application AEM Vérifier permet d’envoyer des captures d’écran directement aux détails de votre application dans AEM.
 >
->Voir Démarrage rapide [mobile pour AEM vérification](/help/mobile/phonegap-mobile-quickstart.md) pour plus d’informations.
+>Voir [Démarrage rapide mobile pour AEM vérification](/help/mobile/phonegap-mobile-quickstart.md) pour plus d’informations.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -65,7 +65,7 @@ Chaque boutique d’applications fournisseur, telle qu’Apple App Store ou Goog
 
 >[!NOTE]
 >
->Une fois que vous êtes familiarisé avec la mosaïque **Gérer l’application** , reportez-vous à la section [Modification des métadonnées](/help/mobile/phonegap-editmetadata.md) de l’application pour la vue et la modification des métadonnées.
+>Une fois que vous connaissez la mosaïque **Gérer l’application**, voir [Modification des métadonnées de l’application](/help/mobile/phonegap-editmetadata.md) pour la vue et la modification des métadonnées.
 
 #### Métadonnées courantes {#common-metadata}
 
@@ -75,11 +75,11 @@ Il existe une configuration et des métadonnées communes à toutes les platefor
 
 Dans cette section, vous définissez l’URL du serveur de mise à jour de contenu, la page d’entrée de votre application mobile, la version de PhoneGap utilisée pour la compilation, la version, le nom et la description de votre application, etc.
 
-**Version** de l’application est la version opérationnelle de votre application. L’une des pratiques conseillées consiste à utiliser une notation à 3 décimales séparées par un point en commençant en dessous de 1.0.0 avant la première version.
+**App** Versionis est la version opérationnelle de votre application. L’une des pratiques conseillées consiste à utiliser une notation à 3 décimales séparées par un point en commençant en dessous de 1.0.0 avant la première version.
 
-**PhoneGap Version** est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. L’une des pratiques conseillées consiste à toujours la mettre à jour pour bénéficier des dernières fonctionnalités et des correctifs PhoneGap.
+**PhoneGap** Versionis est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. L’une des pratiques conseillées consiste à toujours la mettre à jour pour bénéficier des dernières fonctionnalités et des correctifs PhoneGap.
 
-**L’URL** du serveur de mise à jour de contenu est l’URL que votre application utilisera pour appeler les mises à jour de ContentSync. Elle doit correspondre à l’URL de votre répartiteur. Si vous n’utilisez pas de répartiteur, il doit s’agir de l’une des instances de publication qui sera utilisée pour déployer les mises à jour ContentSync de votre application.
+**L’** URL du serveur de mise à jour de contenu est l’URL que votre application utilisera pour appeler les mises à jour de ContentSync. Elle doit correspondre à l’URL de votre répartiteur. Si vous n’utilisez pas de répartiteur, il doit s’agir de l’une des instances de publication qui sera utilisée pour déployer les mises à jour ContentSync de votre application.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -105,7 +105,7 @@ Dans le cas de plateformes dont le langage n’est pas compris par AEM, un déve
 
 L’Appstore d’Apple nécessite des métadonnées supplémentaires pour la soumission de votre application en vue de sa diffusion. La section Métadonnées iOS tente de collecter les informations nécessaires, qui peuvent être utilisées par l’outil iTMSTransporter d’Apple pour publier les métadonnées sur le compte développeur Apple associé.
 
-To obtain the Apple specific metadata you first need to create your application on [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Lors de la création de votre application, Apple génère les métadonnées requises par la section des métadonnées iOS si vous souhaitez utiliser l’outil Apple iTMSTransporter pour valider et télécharger les métadonnées sur itunesconnect.apple.com. Si vous souhaitez uniquement vous procurer les métadonnées à collecter, vous n’êtes pas obligé de renseigner les métadonnées spécifiques à iOS. Vous pouvez exporter les métadonnées qui fusionneront les métadonnées iOS et les métadonnées courantes et collecteront toutes les captures d’écran dans un fichier zip téléchargeable à tout moment.
+Pour obtenir les métadonnées propres à Apple, vous devez d’abord créer votre application sur [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Lors de la création de votre application, Apple génère les métadonnées requises par la section des métadonnées iOS si vous souhaitez utiliser l’outil Apple iTMSTransporter pour valider et télécharger les métadonnées sur itunesconnect.apple.com. Si vous souhaitez uniquement vous procurer les métadonnées à collecter, vous n’êtes pas obligé de renseigner les métadonnées spécifiques à iOS. Vous pouvez exporter les métadonnées qui fusionneront les métadonnées iOS et les métadonnées courantes et collecteront toutes les captures d’écran dans un fichier zip téléchargeable à tout moment.
 
 Le fichier zip téléchargé contient un fichier itmsp qui peut être contrôlé au niveau du fichier metadata.xml. Le fichier itmsp contient les métadonnées exportées (dans le fichier metadata.xml) et toutes les captures d’écran associées.
 
@@ -135,19 +135,19 @@ La propriété URL du serveur Content Update Server est l’URL qui doit pointer
 
 ### Onglet Plugins {#the-plugins-tab}
 
-L’onglet **Plugins** décrit les plug-ins associés à votre application. Ces informations seront utilisées pour récupérer le module externe approprié pendant une génération.
+L&#39;onglet **Plugins** décrit les modules externes associés à votre application. Ces informations seront utilisées pour récupérer le module externe approprié pendant une génération.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### L&#39;onglet Captures d&#39;écran {#the-screenshots-tab}
 
-L’onglet **Captures d’écran** affiche les résolutions d’écran prises en charge sur différentes plates-formes.
+L&#39;onglet **Captures d&#39;écran** affiche les résolutions d&#39;écran prises en charge sur différentes plates-formes.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 >[!NOTE]
 >
->Pour ajouter et supprimer des captures d’écran, voir [Modification des métadonnées](/help/mobile/phonegap-editmetadata.md)d’une application.
+>Pour ajouter et supprimer des captures d’écran, voir [Modification des métadonnées d’application](/help/mobile/phonegap-editmetadata.md).
 
 ### Onglet Authentification {#the-authentication-tab}
 
