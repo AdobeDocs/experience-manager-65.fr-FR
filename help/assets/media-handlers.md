@@ -11,21 +11,21 @@ ht-degree: 52%
 ---
 
 
-# Process assets using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
+# Traiter les ressources à l’aide de gestionnaires de médias et de workflows {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] est fourni avec un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Un processus définit les tâches à exécuter sur les ressources, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
 
-Un processus peut être configuré pour s’exécuter automatiquement lorsqu’une ressource d’un type MIME particulier est téléchargée. The processing steps are defined in terms of a series of [!DNL Assets] media handlers. [!DNL Experience Manager] fournit certains [gestionnaires intégrés](#default-media-handlers) et des gestionnaires supplémentaires peuvent être [conçus et personnalisés](#creating-a-new-media-handler) ou définis en déléguant le processus à un [outil de ligne de commande](#command-line-based-media-handler).
+Un processus peut être configuré pour s’exécuter automatiquement lorsqu’une ressource d’un type MIME particulier est téléchargée. Les étapes de traitement sont définies en fonction d&#39;une série de gestionnaires de médias [!DNL Assets]. [!DNL Experience Manager] fournit certains [gestionnaires intégrés](#default-media-handlers) et des gestionnaires supplémentaires peuvent être [conçus et personnalisés](#creating-a-new-media-handler) ou définis en déléguant le processus à un [outil de ligne de commande](#command-line-based-media-handler).
 
-Media handlers are services in [!DNL Assets] that perform specific actions on assets. For example, when an MP3 audio file is uploaded into [!DNL Experience Manager], a workflow triggers an MP3 handler that extracts the metadata and generates a thumbnail. Les gestionnaires de médias sont généralement utilisés conjointement avec des workflows. La plupart des types MIME courants sont pris en charge dans [!DNL Experience Manager]. Il est possible d’effectuer des tâches spécifiques sur les ressources en étendant/créant des workflows, en étendant/créant des gestionnaires de médias ou en désactivant/activant des gestionnaires de médias.
+Les gestionnaires de médias sont des services dans [!DNL Assets] qui effectuent des actions spécifiques sur des ressources. Par exemple, lorsqu’un fichier audio MP3 est téléchargé dans [!DNL Experience Manager], un processus déclenche un gestionnaire MP3 qui extrait les métadonnées et génère une miniature. Les gestionnaires de médias sont généralement utilisés conjointement avec des workflows. La plupart des types MIME courants sont pris en charge dans [!DNL Experience Manager]. Il est possible d’effectuer des tâches spécifiques sur les ressources en étendant/créant des workflows, en étendant/créant des gestionnaires de médias ou en désactivant/activant des gestionnaires de médias.
 
 >[!NOTE]
 >
->See the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by [!DNL Assets] as well as features supported for each format.
+>Voir la page [Formats pris en charge par les ressources](assets-formats.md) pour obtenir une description de tous les formats pris en charge par [!DNL Assets] ainsi que des fonctionnalités prises en charge pour chaque format.
 
-## Default media handlers {#default-media-handlers}
+## Gestionnaires de médias par défaut {#default-media-handlers}
 
-The following media handlers are available within [!DNL Assets] and handle the most common MIME types:
+Les gestionnaires de médias suivants sont disponibles dans [!DNL Assets] et traitent les types MIME les plus courants :
 
 <!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
@@ -58,7 +58,7 @@ Pour vue des gestionnaires de médias principaux :
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Use media handlers in workflows to perform tasks on assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Utiliser des gestionnaires de médias dans les workflows pour effectuer des tâches sur des ressources {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Les gestionnaires de médias sont des services généralement utilisés conjointement avec des workflows.
 
@@ -68,7 +68,7 @@ Les workflows existants peuvent être étendus et de nouveaux workflows peuvent 
 
 L’exemple suivant indique comment développer le workflow de **[!UICONTROL synchronisation AEM Assets]**, de sorte que des sous-ressources soient générées pour toutes les ressources, à l’exception des documents PDF.
 
-### Désactivation ou activation d’un gestionnaire de médias {#disabling-enabling-a-media-handler}
+### Désactiver ou activer un gestionnaire de médias {#disabling-enabling-a-media-handler}
 
 Les gestionnaires de médias peuvent être désactivés ou activés par le biais de la console de gestion web Apache Felix. Lorsque le gestionnaire de médias est désactivé, ses tâches ne sont pas réalisées sur les ressources.
 
@@ -79,11 +79,11 @@ Pour activer/désactiver un gestionnaire de médias :
 1. Actualisez la page : une icône s’affiche en regard du gestionnaire de médias pour indiquer qu’il est désactivé.
 1. Pour activer le gestionnaire de médias, cliquez sur le bouton **[!UICONTROL Activer]** en regard de son nom.
 
-### Create a new media handler {#creating-a-new-media-handler}
+### Créer un gestionnaire de médias {#creating-a-new-media-handler}
 
 Pour prendre en charge un nouveau type de médias ou exécuter des tâches spécifiques sur une ressource, il est nécessaire de créer un gestionnaire de médias. Cette section décrit la procédure à suivre.
 
-#### Important classes and interfaces {#important-classes-and-interfaces}
+#### Classes et interfaces importantes {#important-classes-and-interfaces}
 
 La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement par défaut raisonnable : à savoir la classe `com.day.cq.dam.core.AbstractAssetHandler`.
 
@@ -126,42 +126,42 @@ L’interface et les classes sont les suivantes :
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
 
-#### Example: create a specific text handler {#example-create-a-specific-text-handler}
+#### Exemple : créer un gestionnaire de texte spécifique {#example-create-a-specific-text-handler}
 
 Dans cette section, vous allez créer un gestionnaire de texte spécifique qui génère des miniatures avec un filigrane.
 
 Procédez comme suit :
 
-Reportez-vous à Outils [de](../sites-developing/dev-tools.md) développement pour installer et configurer Eclipse avec un [!DNL Maven] module externe et pour configurer les dépendances nécessaires au [!DNL Maven] projet.
+Reportez-vous à [Outils de développement](../sites-developing/dev-tools.md) pour installer et configurer Eclipse avec un module externe [!DNL Maven] et pour configurer les dépendances nécessaires au projet [!DNL Maven].
 
-After you perform the following procedure, when you upload a TXT file into [!DNL Experience Manager], the file&#39;s metadata are extracted and two thumbnails with a watermark are generated.
+Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fichier TXT dans [!DNL Experience Manager], les métadonnées du fichier sont extraites et deux miniatures avec un filigrane sont générées.
 
-1. Dans Eclipse, créez un `myBundle`[!DNL Maven] projet :
+1. Dans Eclipse, créez le projet `myBundle` [!DNL Maven] :
 
-   1. In the Menu bar, click **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Other]**.
-   1. In the dialog, expand the [!DNL Maven] folder, select [!DNL Maven] project and click **[!UICONTROL Next]**.
-   1. Check the Create a simple project box and the Use default Workspace locations box, then click **[!UICONTROL Next]**.
-   1. Définir un [!DNL Maven] projet :
+   1. Dans la barre de menus, cliquez sur **[!UICONTROL Fichier]** > **[!UICONTROL Nouveau]** > **[!UICONTROL Autre]**.
+   1. Dans la boîte de dialogue, développez le dossier [!DNL Maven], sélectionnez le projet [!DNL Maven] et cliquez sur **[!UICONTROL Suivant]**.
+   1. Cochez les cases Créer un projet simple et Utiliser les emplacements d’espace de travail par défaut, puis cliquez sur **[!UICONTROL Suivant]**.
+   1. Définir un projet [!DNL Maven] :
 
-      * Group Id: `com.day.cq5.myhandler`.
+      * ID de groupe : `com.day.cq5.myhandler`.
       * Id d’artefact : myBundle.
-      * Name: My [!DNL Experience Manager] bundle.
-      * Description: This is my [!DNL Experience Manager] bundle.
+      * Nom : Mon lot [!DNL Experience Manager].
+      * Description : Il s&#39;agit de mon lot [!DNL Experience Manager].
    1. Cliquez sur **[!UICONTROL Terminer]**.
 
 
-1. Set the [!DNL Java] compiler to version 1.5:
+1. Définissez le compilateur [!DNL Java] sur la version 1.5 :
 
-   1. Right-click the `myBundle` project, select [!UICONTROL Properties].
-   1. Select [!UICONTROL Java Compiler] and set following properties to 1.5:
+   1. Cliquez avec le bouton droit sur le projet `myBundle`, sélectionnez [!UICONTROL Propriétés].
+   1. Sélectionnez [!UICONTROL Compilateur Java] et définissez les propriétés suivantes sur 1.5 :
 
       * Niveau de conformité du compilateur
       * Compatibilité des fichiers .class générés
       * Compatibilité source
-   1. Cliquez sur **[!UICONTROL OK]**. In the dialog window, click **[!UICONTROL Yes]**.
+   1. Cliquez sur **[!UICONTROL OK]**. Dans la fenêtre de dialogue, cliquez sur **[!UICONTROL Oui]**.
 
 
-1. Replace the code in the `pom.xml` file with the following code:
+1. Remplacez le code du fichier `pom.xml` par le code suivant :
 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
@@ -278,16 +278,16 @@ After you perform the following procedure, when you upload a TXT file into [!DNL
     </dependencies>
    ```
 
-1. Créez le package `com.day.cq5.myhandler` contenant les [!DNL Java] classes sous `myBundle/src/main/java`:
+1. Créez le package `com.day.cq5.myhandler` contenant les classes [!DNL Java] sous `myBundle/src/main/java` :
 
-   1. Under myBundle, right-click `src/main/java`, select New, then Package.
-   1. Name it `com.day.cq5.myhandler` and click Finish.
+   1. Sous myBundle, cliquez avec le bouton droit `src/main/java`, sélectionnez New, puis Package.
+   1. Nommez-le `com.day.cq5.myhandler` et cliquez sur Terminer.
 
-1. Créez la [!DNL Java] classe `MyHandler`:
+1. Créez la classe [!DNL Java] `MyHandler` :
 
-   1. Dans [!DNL Eclipse], sous `myBundle/src/main/java`, cliquez avec le bouton droit sur le `com.day.cq5.myhandler` package. Sélectionnez [!UICONTROL Nouveau], puis [!UICONTROL Classe].
-   1. In the dialog window, name the [!DNL Java] class `MyHandler` and click [!UICONTROL Finish]. [!DNL Eclipse] crée et ouvre le fichier `MyHandler.java`.
-   1. In `MyHandler.java` replace the existing code with the following and then save the changes:
+   1. Dans [!DNL Eclipse], sous `myBundle/src/main/java`, cliquez avec le bouton droit sur le package `com.day.cq5.myhandler`. Sélectionnez [!UICONTROL New], puis [!UICONTROL Class].
+   1. Dans la fenêtre de dialogue, nommez la classe [!DNL Java] `MyHandler` et cliquez sur [!UICONTROL Terminer]. [!DNL Eclipse] crée et ouvre le fichier  `MyHandler.java`.
+   1. Dans `MyHandler.java`, remplacez le code existant par le code suivant, puis enregistrez les modifications :
 
    ```java
    package com.day.cq5.myhandler;
@@ -429,18 +429,18 @@ After you perform the following procedure, when you upload a TXT file into [!DNL
    }
    ```
 
-1. Compile the [!DNL Java] class and create the bundle:
+1. Compilez la classe [!DNL Java] et créez le lot :
 
-   1. Right-click the `myBundle` project, select **[!UICONTROL Run As]**, then **[!UICONTROL Maven Install]**.
-   1. The bundle `myBundle-0.0.1-SNAPSHOT.jar` (containing the compiled class) is created under `myBundle/target`.
+   1. Cliquez avec le bouton droit de la souris sur le projet `myBundle`, sélectionnez **[!UICONTROL Exécuter en tant que]**, puis **[!UICONTROL Installation du maven]**.
+   1. Le lot `myBundle-0.0.1-SNAPSHOT.jar` (contenant la classe compilée) est créé sous `myBundle/target`.
 
-1. In CRX explorer, create a new node under `/apps/myApp`. Name = `install`, Type = `nt:folder`.
-1. Copy the bundle `myBundle-0.0.1-SNAPSHOT.jar` and store it under `/apps/myApp/install` (for example with WebDAV). Le nouveau gestionnaire de texte est à présent actif dans [!DNL Experience Manager].
-1. In your browser, open the [!UICONTROL Apache Felix Web Management Console]. Select the [!UICONTROL Components] tab and disable the default text handler `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. Dans l’explorateur CRX, créez un nouveau noeud sous `/apps/myApp`. Nom = `install`, Type = `nt:folder`.
+1. Copiez le lot `myBundle-0.0.1-SNAPSHOT.jar` et stockez-le sous `/apps/myApp/install` (par exemple avec WebDAV). Le nouveau gestionnaire de texte est à présent actif dans [!DNL Experience Manager].
+1. Dans votre navigateur, ouvrez la [!UICONTROL console de gestion Web Apache Felix]. Sélectionnez l&#39;onglet [!UICONTROL Composants] et désactivez le gestionnaire de texte par défaut `com.day.cq.dam.core.impl.handler.TextHandler`.
 
-## Command Line based media handler {#command-line-based-media-handler}
+## Gestionnaire multimédia basé sur la ligne de commande {#command-line-based-media-handler}
 
-[!DNL Experience Manager] vous permet d’exécuter n’importe quel outil de ligne de commande dans un workflow pour convertir des ressources (comme ) et ajouter le nouveau rendu à la ressource. [!DNL ImageMagick] You only need to install the command-line tool on the disk hosting the [!DNL Experience Manager] server and to add and configure a process step to the workflow. Le processus appelé, `CommandLineProcess`, permet également d’effectuer un filtrage en fonction de types MIME spécifiques et de créer plusieurs miniatures sur la base du nouveau rendu.
+[!DNL Experience Manager] vous permet d’exécuter n’importe quel outil de ligne de commande dans un workflow pour convertir des ressources (comme ) et ajouter le nouveau rendu à la ressource. [!DNL ImageMagick] Il vous suffit d&#39;installer l&#39;outil de ligne de commande sur le disque hébergeant le serveur [!DNL Experience Manager] et d&#39;ajouter et de configurer une étape de processus au processus. Le processus appelé, `CommandLineProcess`, permet également d’effectuer un filtrage en fonction de types MIME spécifiques et de créer plusieurs miniatures sur la base du nouveau rendu.
 
 Les conversions suivantes peuvent être automatiquement exécutées et stockées dans [!DNL Assets]:
 
@@ -456,22 +456,22 @@ Les conversions suivantes peuvent être automatiquement exécutées et stockées
 Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d’apparition dans la liste :
 
 * Filtre le fichier en fonction des types MIME indiqués, le cas échéant.
-* Creates a temporary directory on the disk hosting the [!DNL Experience Manager] server.
+* Crée un répertoire temporaire sur le disque hébergeant le serveur [!DNL Experience Manager].
 * Diffuse le fichier d’origine vers le répertoire temporaire.
 * Exécute la commande définie par les arguments de l’étape. La commande est exécutée dans le répertoire temporaire avec les autorisations de l’utilisateur exécutant [!DNL Experience Manager].
-* Streams the result back into the rendition folder of the [!DNL Experience Manager] server.
+* Rend le résultat en continu dans le dossier de rendu du serveur [!DNL Experience Manager].
 * Supprime le répertoire temporaire.
 * Crée des miniatures basées sur ces rendus, si spécifié. Le nombre et les dimensions des miniatures sont définis par les arguments de l’étape.
 
-### An example using [!DNL ImageMagick] {#an-example-using-imagemagick}
+### Exemple utilisant [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-The following example shows you how to set up the command line process step so that every time an asset with the miMIME e-type GIF or TIFF is added to `/content/dam` on the [!DNL Experience Manager] server, a flipped image of the original is created together with three additional thumbnails (140x100, 48x48, and 10x250).
+L’exemple suivant montre comment configurer l’étape de processus de ligne de commande de sorte que chaque fois qu’un fichier avec le fichier de type e-MIME GIF ou TIFF est ajouté à `/content/dam` sur le serveur [!DNL Experience Manager], une image retournée de l’original est créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x20x0 50).
 
-To do this, use [!DNL ImageMagick]. [!DNL ImageMagick] est un logiciel gratuit de ligne de commande utilisé pour créer, modifier et composer des images bitmap.
+Pour ce faire, utilisez [!DNL ImageMagick]. [!DNL ImageMagick] est un logiciel gratuit de ligne de commande utilisé pour créer, modifier et composer des images bitmap.
 
-Install [!DNL ImageMagick] on the disk hosting the [!DNL Experience Manager] server:
+Installez [!DNL ImageMagick] sur le disque hébergeant le serveur [!DNL Experience Manager] :
 
-1. Install [!DNL ImageMagick]: See [ImageMagick documentation](https://www.imagemagick.org/script/download.php).
+1. Installer [!DNL ImageMagick] : Voir la [documentation d’ImageMagick](https://www.imagemagick.org/script/download.php).
 1. Configurez l’outil afin de pouvoir exécuter convert sur la ligne de commande.
 1. Pour vérifier si cet outil est installé correctement, exécutez la commande `convert -h` sur la ligne de commande.
 
@@ -479,12 +479,12 @@ Install [!DNL ImageMagick] on the disk hosting the [!DNL Experience Manager] ser
 
    >[!NOTE]
    >
-   >In some versions of Windows, the convert command may fail to run because it conflicts with the native convert utility that is part of [!DNL Windows] installation. In this case, mention the complete path for the [!DNL ImageMagick] software used to convert image files to thumbnails. Par exemple, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >Dans certaines versions de Windows, l&#39;exécution de la commande convert peut échouer car elle est en conflit avec l&#39;utilitaire de conversion natif qui fait partie de l&#39;installation de [!DNL Windows]. Dans ce cas, mentionnez le chemin d’accès complet au logiciel [!DNL ImageMagick] utilisé pour convertir les fichiers image en miniatures. Par exemple, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. To see if the tool runs properly, add a JPG image to the working directory and run the command convert `<image-name>.jpg -flip <image-name>-flipped.jpg` on the command line. Une image inversée est ajoutée au répertoire. Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow.
+1. Pour vérifier si l&#39;outil s&#39;exécute correctement, ajoutez une image JPG au répertoire de travail et exécutez la commande convert `<image-name>.jpg -flip <image-name>-flipped.jpg` sur la ligne de commande. Une image inversée est ajoutée au répertoire. Ajoutez ensuite l’étape de processus de ligne de commande au workflow **[!UICONTROL DAM Update Asset]**.
 1. Accédez à la console **[!UICONTROL Workflow]**.
 1. Dans l’onglet **[!UICONTROL Modèles]**, modifiez le modèle **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**.
-1. Modifiez les [!UICONTROL arguments] de l&#39;étape de rendu **** Web en : `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
+1. Modifiez l&#39;étape [!UICONTROL Arguments] du rendu **[!UICONTROL Web activé]** en : `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
 1. Enregistrez le workflow.
 
 Pour tester le workflow modifié, ajoutez une ressource à `/content/dam`.
@@ -493,35 +493,35 @@ Pour tester le workflow modifié, ajoutez une ressource à `/content/dam`.
 1. Accédez à la console **[!UICONTROL CQ5 DAM]**, par exemple `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Ouvrez la ressource **[!UICONTROL myImage.tiff]** et vérifiez que l’image inversée et les trois miniatures ont bien été créées.
 
-#### Configure the CommandLineProcess process step {#configuring-the-commandlineprocess-process-step}
+#### Configuration de l&#39;étape de processus CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
 Cette section décrit la procédure à suivre pour définir les [!UICONTROL Arguments du processus] de [!UICONTROL CommandLineProcess].
 
-Séparez les valeurs des arguments [!UICONTROL de] processus à l’aide de la virgule et ne les débuts pas avec un espace blanc.
+Séparez les valeurs de [!UICONTROL Traiter les arguments] à l’aide de la virgule et ne les débuts pas avec un espace blanc.
 
 | Argument-Format | Description |
 |---|---|
 | mime:&lt;mime-type> | Argument facultatif. Le processus est appliqué si la ressource présente le même type MIME que celui de l’argument. <br>Plusieurs types MIME peuvent être définis. |
 | tn:&lt;width>:&lt;height> | Argument facultatif. Le processus crée une miniature avec les dimensions définies dans l’argument. <br>Plusieurs miniatures peuvent être définies. |
-| cmd: &lt;command> | Définit la commande exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande :<br>`${filename}`: nom du fichier d’entrée, par exemple original.jpg <br> `${file}`: nom de chemin complet du fichier d’entrée, par exemple `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: du fichier d’entrée, par exemple `/tmp/cqdam0816.tmp` <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original <br>`${extension}`: extension du fichier d’entrée, par exemple JPG. |
+| cmd: &lt;command> | Définit la commande exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande :<br>`${filename}` : nom du fichier d’entrée, par exemple original.jpg  <br> `${file}`: nom de chemin complet du fichier d’entrée, par exemple  `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: du fichier d’entrée, par exemple  `/tmp/cqdam0816.tmp` <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original  <br>`${extension}`: extension du fichier d’entrée, par exemple JPG. |
 
-For example, if [!DNL ImageMagick] is installed on the disk hosting the [!DNL Experience Manager] server and if you create a process step using [!UICONTROL CommandLineProcess] as Implementation and the following values as [!UICONTROL Process Arguments]:
+Par exemple, si [!DNL ImageMagick] est installé sur le disque hébergeant le serveur [!DNL Experience Manager] et si vous créez une étape de processus en utilisant [!UICONTROL CommandLineProcess] comme implémentation et les valeurs suivantes comme [!UICONTROL Traiter Arguments] :
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-then, when the workflow runs, the step only applies to assets that have `image/gif` or `mime:image/tiff` as `mime-types`, it creates a flipped image of the original, converts it into JPG and creates three thumbnails that have the dimensions: 140x100, 48x48, and 10x250.
+puis, lorsque le flux de travaux s’exécute, l’étape s’applique uniquement aux ressources dont `image/gif` ou `mime:image/tiff` a la valeur `mime-types`, elle crée une image inversée de l’original, la convertit au format JPG et crée trois miniatures ayant les dimensions suivantes : 140x100, 48x48 et 10x250.
 
-Use the following [!UICONTROL Process Arguments] to create the three standard thumbnails using [!DNL ImageMagick]:
+Utilisez les [!UICONTROL arguments de processus] suivants pour créer les trois miniatures standard à l’aide de [!DNL ImageMagick] :
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-Use the following [!UICONTROL Process Arguments] to create the web-enabled rendition using [!DNL ImageMagick]:
+Utilisez les [!UICONTROL arguments de processus] suivants pour créer le rendu compatible Web à l’aide de [!DNL ImageMagick] :
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
 >[!NOTE]
 >
->The [!UICONTROL CommandLineProcess] step only applies to assets (nodes of type `dam:Asset`) or descendants of an asset.
+>L&#39;étape [!UICONTROL CommandLineProcess] s&#39;applique uniquement aux ressources (noeuds de type `dam:Asset`) ou aux descendants d&#39;une ressource.
 
 >[!MORELIKETHIS]
 >
