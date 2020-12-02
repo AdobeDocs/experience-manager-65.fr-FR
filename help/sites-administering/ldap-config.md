@@ -18,7 +18,7 @@ ht-degree: 67%
 ---
 
 
-# Configuration de LDAP avec AEM 6 {#configuring-ldap-with-aem}
+# Configuration de LDAP avec AEM 6  {#configuring-ldap-with-aem}
 
 LDAP (**L** ightweight **D** irectory **A** ccess **P** rotocol) est un protocole utilisé pour accéder aux services d’annuaire centralisé. Cela permet de réduire l’effort de gestion des comptes utilisateur, car plusieurs applications peuvent accéder à ces comptes. L’un de ces serveurs LDAP est Active Directory. LDAP est souvent utilisé pour appliquer l’authentification unique, qui permet à un utilisateur d’accéder à plusieurs applications après s’être connecté une seule fois.
 
@@ -32,7 +32,7 @@ L’utilisation de tels comptes est transparente pour vos utilisateurs, lesquels
 
 Dans AEM 6, la prise en charge de LDAP est fournie avec une nouvelle implémentation qui requiert un type de configuration différent de celui des versions précédentes.
 
-Toutes les configurations LDAP sont désormais disponibles en tant que configurations OSGi. They can be configured via the Web Management console at:
+Toutes les configurations LDAP sont désormais disponibles en tant que configurations OSGi. Ils peuvent être configurés via la console de gestion Web à l&#39;adresse suivante :
 `https://serveraddress:4502/system/console/configMgr`
 
 Pour que LDAP fonctionne avec AEM, vous devez créer trois configurations OSGi :
@@ -180,7 +180,7 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
   </tr>
   <tr>
    <td><strong>Expiration de l’abonnement utilisateur</strong></td>
-   <td>Heure après laquelle l’adhésion expire.<br /> </td>
+   <td>Heure après laquelle l'adhésion expire.<br /> </td>
   </tr>
   <tr>
    <td><strong>Profondeur d'imbrication de l'appartenance des utilisateurs</strong></td>
@@ -240,13 +240,13 @@ Vous pouvez configurer AEM 6 pour vous authentifier auprès de LDAP via SSL en 
 
 1. Testez la connexion au serveur LDAP.
 
-### Création de certificats SSL {#creating-ssl-certificates}
+### Création de certificats SSL  {#creating-ssl-certificates}
 
 Les certificats auto-signés peuvent être utilisés lors de la configuration d’AEM pour s’authentifier auprès d’AEM via SSL. Voici un exemple de méthode de travail utilisée pour générer des certificats à utiliser avec AEM.
 
 1. Assurez-vous qu’une bibliothèque SSL est installée et fonctionne. Cette procédure utilise OpenSSL comme exemple.
 
-1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Pour ce faire, copiez le fichier de configuration **openssl.cnf **et personnalisez-le. On UNIX systems, it is usually located at `/usr/lib/ssl/openssl.cnf`
+1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Pour ce faire, copiez le fichier de configuration **openssl.cnf **et personnalisez-le. Sur les systèmes UNIX, il se trouve généralement à `/usr/lib/ssl/openssl.cnf`
 
 1. Créez la clé racine CA en exécutant la commande ci-dessous sur un terminal :
 
@@ -271,7 +271,7 @@ Les certificats auto-signés peuvent être utilisés lors de la configuration d�
 
 1. Enfin, ajoutez le certificat au KeyStore Java.
 
-## Activation de la journalisation du débogage {#enabling-debug-logging}
+## Activation de la journalisation du débogage  {#enabling-debug-logging}
 
 Vous pouvez activer la journalisation du débogage pour le fournisseur d’identités LDAP et le module de connexion externe afin de résoudre les problèmes de connexion.
 
