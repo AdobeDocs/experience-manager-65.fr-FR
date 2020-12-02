@@ -34,7 +34,7 @@ Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des
 >The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
 -->
 
-## Niveau d’auteur TarMK {#tarmk-author-tier}
+## Niveau d’auteur TarMK  {#tarmk-author-tier}
 
 ### Démarrage de la topologie {#starting-topology}
 
@@ -54,7 +54,7 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 
 1. Exécutez les [tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
 
-### Exécution de la mise à niveau {#upgrade-execution}
+### Exécution de la mise à niveau  {#upgrade-execution}
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
@@ -145,13 +145,13 @@ La topologie utilisée pour cette section se compose d’un groupe d’auteurs M
 
 1. Nettoyez les instances d’auteur, le nœud Mongo et l’entrepôt de données mis à niveau.
 
-## Ferme de publication TarMK {#tarmk-publish-farm}
+## Ferme de publication TarMK  {#tarmk-publish-farm}
 
 ### Ferme de publication TarMK {#tarmk-publish-farm-1}
 
 La topologie utilisée pour cette section se compose de deux instances de publication TarMK, devancés par des dispatchers, eux-mêmes devancés par un équilibreur de charge. La réplication se produit du serveur de l’auteur à la ferme de publication TarMK.
 
-![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
+![tarmk-pub-agricole v5](assets/tarmk-pub-farmv5.png)
 
 ### Exécution de la mise à niveau {#upgrade-execution-2}
 
