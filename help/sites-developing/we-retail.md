@@ -28,7 +28,7 @@ We.Retail utilise les technologies AEM les plus récentes, telles que HTL, les m
 
 Bien que le site représente le secteur du commerce de détail, la façon dont il est configuré le rend applicable à tous les secteurs. Seuls le catalogue de produits et les fonctionnalités du panier d’achat sont propres au secteur du commerce de détail.
 
-## Fonctionnalités {#features}
+## Fonctions {#features}
 
 En tant qu’implémentation de référence standard d’AEM, We.Retail présente certaines des fonctions les plus puissantes d’AEM.
 
@@ -50,7 +50,7 @@ We.Retail est fourni sous la forme d’un échantillon de contenu d’AEM. Pour 
 
 >[!CAUTION]
 >
->We.Retail ne doit pas être installé sur les instances de production. Production instances should be started in `nosamplecontent` [runmode](/help/sites-deploying/configure-runmodes.md).
+>We.Retail ne doit pas être installé sur les instances de production. Les instances de production doivent être démarrées dans `nosamplecontent` [runmode](/help/sites-deploying/configure-runmodes.md).
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ We.Retail est fourni sous la forme d’un échantillon de contenu d’AEM. Pour 
 
 ### Dernière version {#latest-version}
 
-Bien que We.Retail soit distribué avec la version AEM, il se peut que des mises à jour soient apportées au contenu et à ses fonctionnalités après la publication du produit. Therefore it is possible to [download the latest release from GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) and then [upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) and [install](/help/sites-administering/package-manager.md#installing-packages) it as a package on your AEM instance.
+Bien que We.Retail soit distribué avec la version AEM, il se peut que des mises à jour soient apportées au contenu et à ses fonctionnalités après la publication du produit. Il est donc possible de [télécharger la dernière version de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases), puis de [télécharger](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) et [installer](/help/sites-administering/package-manager.md#installing-packages) sous forme de package sur votre instance AEM.
 
 ### Premiers pas {#first-steps}
 
@@ -73,7 +73,7 @@ Geometrixx et ses nombreuses incarnations ont servi d’exemple de contenu dans 
 
 D’un point de vue technique, We.Retail est plus robuste et exploite la technologie AEM dernier cri pour garantir une souplesse et une évolutivité accrues, tout en offrant les fonctionnalités les plus récentes du produit.
 
-### Comparaison des fonctions {#feature-comparison}
+### Comparaison des fonctions  {#feature-comparison}
 
 Le tableau suivant vous donne un aperçu des principales fonctionnalités qui sont disponibles dans We.Retail par rapport à Geometrixx.
 
@@ -114,7 +114,7 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 La dernière version peut également être [téléchargée directement](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) en tant que module à +installer.
 
-If you encounter problems, please file [GitHub issues](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Si vous rencontrez des problèmes, envoyez [Problèmes GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
 N’hésitez pas à répliquer ou à contribuer avec des [requêtes d’extraction](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 
