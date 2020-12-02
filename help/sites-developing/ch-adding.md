@@ -10,7 +10,7 @@ ht-degree: 67%
 ---
 
 
-# Ajout de ContextHub à des pages et accès à des magasins {#adding-contexthub-to-pages-and-accessing-stores}
+# Ajout de ContextHub à des pages et accès à des magasins  {#adding-contexthub-to-pages-and-accessing-stores}
 
 Ajoutez ContextHub sur vos pages pour activer les fonctionnalités ContextHub et pour créer un lien vers les bibliothèques Javascript ContextHub.
 
@@ -18,7 +18,7 @@ L’API JavaScript ContextHub permet d’accéder aux données contextuelles gé
 
 ## Ajout de ContextHub à un composant de page {#adding-contexthub-to-a-page-component}
 
-To enable the ContextHub features and to link to the ContextHub Javascript libraries, include the `contexthub` component in the `head` section of your page. Le code HTML de votre composant de page doit ressembler à l’exemple suivant :
+Pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques Javascript ContextHub, incluez le composant `contexthub` dans la section `head` de votre page. Le code HTML de votre composant de page doit ressembler à l’exemple suivant :
 
 ```xml
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
@@ -26,7 +26,7 @@ To enable the ContextHub features and to link to the ContextHub Javascript libra
 
 Notez que vous devez également déterminer si la barre d’outils ContextHub apparaît ou non dans le mode Aperçu. Voir [Affichage et masquage de l’IU ContextHub](ch-configuring.md#showing-and-hiding-the-contexthub-ui).
 
-## À propos des magasins ContextHub {#about-contexthub-stores}
+## À propos des magasins ContextHub  {#about-contexthub-stores}
 
 Utilisez des magasins ContextHub pour conserver des données contextuelles. ContextHub fournit les types de magasins suivants, qui constituent la base de tous les types :
 
@@ -37,12 +37,12 @@ Utilisez des magasins ContextHub pour conserver des données contextuelles. Cont
 
 Tous les types de magasins sont des extensions de la classe [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core). Pour plus d’informations sur la création d’un type de magasin, voir [Création de magasins personnalisés](ch-extend.md#creating-custom-store-candidates). Pour plus d’informations sur les exemples de types de magasins, voir [Exemples de candidats au titre de magasins ContextHub](ch-samplestores.md).
 
-### Modes de persistance {#persistence-modes}
+### Modes de persistance  {#persistence-modes}
 
 Les magasins ContextHub utilisent l’un des modes de persistance suivants :
 
 * **Local** : utilise HTML5 localStorage pour conserver les données. L’espace de stockage local est conservé sur le navigateur entre les sessions.
-* **Session :** Utilise le stockage de session HTML5 pour conserver les données. Le stockage de session est conservé pendant toute la durée de la session du navigateur et est disponible dans toutes les fenêtres du navigateur.
+* **Session :** utilise sessionStorage HTML5 pour conserver les données. Le stockage de session est conservé pendant toute la durée de la session du navigateur et est disponible dans toutes les fenêtres du navigateur.
 * **Cookie** : utilise la prise en charge native des cookies du navigateur pour le stockage des données. Les données de cookie sont échangées avec le serveur dans des requêtes HTTP.
 * **Window.name** : utilise la propriété window.name pour conserver les données.
 * **Mémoire** : utilise un objet JavaScript pour conserver les données.
@@ -80,21 +80,21 @@ La structure arborescente du magasin peut être conceptualisée comme suit :
             |- elevation
 ```
 
-La structure arborescente définit les éléments de données du magasin sous la forme de paires clé/valeur. In the above example, the key `/number` corresponds with the value `321`, and the key `/data/country` corresponds with the value `Switzerland`.
+La structure arborescente définit les éléments de données du magasin sous la forme de paires clé/valeur. Dans l&#39;exemple ci-dessus, la clé `/number` correspond à la valeur `321` et la clé `/data/country` à la valeur `Switzerland`.
 
 ### Manipulation d’objets {#manipulating-objects}
 
-ContextHub provides the [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) class for manipulating Javascript objects. Utilisez les fonctions de cette classe pour manipuler des objets JavaScript avant de les ajouter à un magasin ou après les avoir récupérés d’un magasin.
+ContextHub fournit la classe [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) pour manipuler les objets Javascript. Utilisez les fonctions de cette classe pour manipuler des objets JavaScript avant de les ajouter à un magasin ou après les avoir récupérés d’un magasin.
 
-Additionally, the [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) class provides functions for serializing objects to stings, and deserializing strings to objects. Use this class for handling JSON data to support browsers that do not natively include the `JSON.parse` and `JSON.stringify` functions.
+De plus, la classe [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) fournit des fonctions permettant de sérialiser des objets sur des tableaux et de désérialiser des chaînes sur des objets. Utilisez cette classe pour gérer les données JSON afin de prendre en charge les navigateurs qui n’incluent pas de façon native les fonctions `JSON.parse` et `JSON.stringify`.
 
 ## Interaction avec les magasins ContextHub {#interacting-with-contexthub-stores}
 
-Utilisez l’objet JavaScript [`ContextHub`](contexthub-api.md#ui-event-constants) pour obtenir un magasin comme objet JavaScript. Une fois que vous avez obtenu l’objet de magasin, vous pouvez manipuler les données qu’il contient. Use the [`getAllStores`](contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
+Utilisez l’objet JavaScript [`ContextHub`](contexthub-api.md#ui-event-constants) pour obtenir un magasin comme objet JavaScript. Une fois que vous avez obtenu l’objet de magasin, vous pouvez manipuler les données qu’il contient. Utilisez la fonction [`getAllStores`](contexthub-api.md#getallstores) ou [`getStore`](contexthub-api.md#getstore-name) pour obtenir le magasin.
 
 ### Accès aux données du magasin {#accessing-store-data}
 
-The [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) Javascript class defines several functions for interacting with store data. Les fonctions suivantes stockent et récupèrent plusieurs éléments de données contenus dans des objets :
+La classe Javascript [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) définit plusieurs fonctions pour interagir avec les données de stockage. Les fonctions suivantes stockent et récupèrent plusieurs éléments de données contenus dans des objets :
 
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
@@ -110,7 +110,7 @@ Notez que les magasins candidats personnalisés peuvent définir des fonctions s
 >
 >Par défaut, ContextHub ne connaît pas les utilisateurs actuellement connectés sur les serveurs de publication. Il considère ces utilisateurs comme étant anonymes.
 >
->Vous pouvez sensibiliser ContextHub aux utilisateurs connectés en chargeant le magasin de profils. Refer to [sample code on GitHub here](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Vous pouvez sensibiliser ContextHub aux utilisateurs connectés en chargeant le magasin de profils. Reportez-vous à l&#39;[exemple de code sur GitHub ici](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Génération d’événements ContextHub {#contexthub-eventing}
 
@@ -118,25 +118,25 @@ ContextHub comprend une structure d’événements qui vous permet de répondre 
 
 ## Utilisation de ContextHub pour manipuler des cookies {#using-context-hub-to-manipulate-cookies}
 
-L’API JavaScript ContextHub offre une prise en charge de plusieurs navigateurs pour la gestion des cookies de navigateur. The [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace defines several functions for creating, manipulating, and deleting cookies.
+L’API JavaScript ContextHub offre une prise en charge de plusieurs navigateurs pour la gestion des cookies de navigateur. L&#39;espace de nommage [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) définit plusieurs fonctions permettant de créer, manipuler et supprimer des cookies.
 
 ## Identification de segments ContextHub résolus {#determining-resolved-contexthub-segments}
 
-Le moteur de segments ContextHub vous permet de déterminer quels segments enregistrés sont résolus dans le contexte actuel. Utilisez la fonction getResolvedSegments de la classe [`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) pour récupérer les segments résolus. Then, use the `getName` or `getPath` function of the [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) class to test for a segment.
+Le moteur de segments ContextHub vous permet de déterminer quels segments enregistrés sont résolus dans le contexte actuel. Utilisez la fonction getResolvedSegments de la classe [`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) pour récupérer les segments résolus. Ensuite, utilisez la fonction `getName` ou `getPath` de la classe [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) pour tester un segment.
 
 ### Segments ContextHub {#contexthub-segments}
 
-ContextHub segments are installed below the `/conf/<site>/settings/wcm/segments` node.
+Les segments ContextHub sont installés sous le noeud `/conf/<site>/settings/wcm/segments`.
 
-Les segments suivants sont installés avec le site de didacticiel [WKND.](getting-started.md)
+Les segments suivants sont installés avec le [site de didacticiel WKND.](getting-started.md)
 
 * summer
 * winter
 
 Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
-* Tout d’abord, le magasin de [géolocalisation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) est utilisé pour déterminer la latitude de l’utilisateur.
-* Ensuite, l&#39;élément de données du mois du magasin [](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) surferinfo détermine la saison où il se trouve dans cette latitude.
+* Tout d&#39;abord, le magasin [géolocalisation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) est utilisé pour déterminer la latitude de l&#39;utilisateur.
+* Ensuite, l&#39;élément de données du mois du [magasin surferinfo](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) détermine la saison où il se trouve dans cette latitude.
 
 >[!WARNING]
 >
@@ -144,7 +144,7 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
 ## Débogage de ContextHub {#debugging-contexthub}
 
-Il existe un certain nombre d’options pour déboguer ContextHub, y compris la génération de journaux. See [Configuring ContextHub for more information.](ch-configuring.md#logging-debug-messages-for-contexthub)
+Il existe un certain nombre d’options pour déboguer ContextHub, y compris la génération de journaux. Voir [Configuration de ContextHub pour plus d’informations.](ch-configuring.md#logging-debug-messages-for-contexthub)
 
 ## Affichage d’un aperçu de la structure ContextHub {#see-an-overview-of-the-contexthub-framework}
 
