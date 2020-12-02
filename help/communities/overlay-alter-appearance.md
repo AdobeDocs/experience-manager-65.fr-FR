@@ -19,22 +19,22 @@ ht-degree: 0%
 ---
 
 
-# Modification de l’aspect {#alter-the-appearance}
+# Modifier l&#39;apparence {#alter-the-appearance}
 
-## Modification du script {#modify-the-script}
+## Modifier le script {#modify-the-script}
 
 Le script comment.hbs est responsable de la création du code HTML global pour chaque commentaire.
 
 Pour ne pas afficher l’avatar en regard de chaque commentaire publié :
 
-1. Copier `comment.hbs`de `libs`vers `apps`
+1. Copier `comment.hbs`de `libs`dans `apps`
 
    1. Sélectionner `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Sélectionner une **[!UICONTROL copie]**
+   1. Sélectionner **[!UICONTROL Copier]**
    1. Sélectionner `/apps/social/commons/components/hbs/comments/comment`
    1. Sélectionner **[!UICONTROL Coller]**
 
-1. Ouvrir le recouvrement `comment.hbs`
+1. Ouvrez le `comment.hbs` superposé
 
    * Doublon-clic sur le noeud `comment.hbs` dans `/apps/social/commons/components/hbs/comments/comment folder`
 
@@ -45,7 +45,7 @@ Pour ne pas afficher l’avatar en regard de chaque commentaire publié :
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Supprimez les lignes ou entourez-les avec `<!--` et `-->` faites-les passer en commentaire. En outre, les caractères &#39;xxx&#39; sont ajoutés comme indicateur visuel de l&#39;endroit où l&#39;avatar aurait été.
+Supprimez les lignes ou entourez-les de `<!--` et `-->` pour les commenter. En outre, les caractères &#39;xxx&#39; sont ajoutés comme indicateur visuel de l&#39;endroit où l&#39;avatar aurait été.
 
 ```xml
    xxx
@@ -60,11 +60,11 @@ Poussez le composant de commentaires superposés sur l’instance de publication
 
 >[!NOTE]
 >
->Une forme de réplication plus robuste consisterait à créer un package dans Package Manager et à l’ [activer](/help/sites-administering/package-manager.md#replicating-packages) . Un package peut être exporté et archivé.
+>Une forme de réplication plus robuste consisterait à créer un package dans Package Manager et à l&#39;[activer](/help/sites-administering/package-manager.md#replicating-packages). Un package peut être exporté et archivé.
 
-Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** , puis cliquez sur **[!UICONTROL Activer l’arborescence.]**
+Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** et cliquez sur **[!UICONTROL Activer l&#39;arborescence]**.
 
-Pour le chemin d’accès au Début, saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
+Pour le chemin de Début, saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
