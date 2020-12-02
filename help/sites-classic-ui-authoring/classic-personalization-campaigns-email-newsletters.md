@@ -24,7 +24,7 @@ Vous pouvez diffuser des newsletters sur des services de messagerie, tels qu’E
 
 >[!NOTE]
 >
->Vous devez configurer le fournisseur de services avant de créer et de publier un message électronique. See [Configuring ExactTarget](/help/sites-administering/exacttarget.md) and [Configuring Silverpop Engage](/help/sites-administering/silverpop.md) for more information.
+>Vous devez configurer le fournisseur de services avant de créer et de publier un message électronique. Voir [Configuration d’ExactTarget](/help/sites-administering/exacttarget.md) et [Configuration de Silverpop Engage](/help/sites-administering/silverpop.md) pour plus d’informations.
 
 Pour diffuser votre message électronique sur un service de messagerie, vous devez effectuer les étapes suivantes :
 
@@ -36,13 +36,13 @@ Pour diffuser votre message électronique sur un service de messagerie, vous dev
 >
 >Si vous mettez à jour vos fournisseurs de messagerie, que vous effectuez un test envoi ou que vous envoyez une newsletter, ces opérations échouent si la newsletter n’est pas au préalable publiée sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit activée.
 
-## Création d’un message électronique {#creating-an-email}
+## Création d’un message électronique  {#creating-an-email}
 
-An email or newsletter that you want to publish to an e-mail service can be created under a campaign using the **Geometrixx Newsletter** template. You can also use the **Geometrixx Outdoors E-Mail** template. Sample email/newsletter-based on the **Geometrixx Outdoors E-Mail** template are available at `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
+Un courrier électronique ou un bulletin d’information que vous souhaitez publier dans un service de messagerie peut être créé sous une campagne à l’aide du modèle **Geometrixx Newsletter**. Vous pouvez également utiliser le modèle **Geometrixx Outdoors E-Mail**. Vous trouverez un exemple de courrier électronique/bulletin d&#39;information basé sur le modèle **Geometrixx Outdoors E-Mail** à l&#39;adresse `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
 Pour créer un courrier électronique publié sur le service de messagerie configuré :
 
-1. Go to **Websites** and then **Campaigns**. Sélectionnez une campagne.
+1. Accédez à **Sites Web**, puis **Campagnes**. Sélectionnez une campagne.
 1. Cliquez sur **Nouveau** pour ouvrir la fenêtre **Créer une page**.
 1. Indiquez un titre et un nom, puis sélectionnez le modèle **Newsletter Geometrixx** dans la liste des modèles disponibles.
 1. Cliquez sur **Créer**.
@@ -100,7 +100,7 @@ Le composant **Outils de messagerie électronique** pour ExactTarget permet d’
 
 >[!NOTE]
 >
->Des valeurs ne sont renseignées dans le menu déroulant **Options** que si la configuration d’ExactTarget est appliquée au message électronique. See [Applying Email Service Configuration to Email Settings](#applying-e-mail-service-configuration-to-e-mail-settings) for more information.
+>Des valeurs ne sont renseignées dans le menu déroulant **Options** que si la configuration d’ExactTarget est appliquée au message électronique. Voir [Application de la configuration du service de messagerie aux paramètres de messagerie](#applying-e-mail-service-configuration-to-e-mail-settings) pour plus d’informations.
 
 1. Publiez le message électronique sur ExactTarget.
 
@@ -108,7 +108,7 @@ Le composant **Outils de messagerie électronique** pour ExactTarget permet d’
 
 >[!NOTE]
 >
->* The URLs within the email tools are replaced (in the received email) by their actual values only when an email is sent using **Simple Send** or **Guided Send** but not **Test Send**.
+>* Les URL des outils de messagerie sont remplacées (dans le courrier électronique reçu) par leurs valeurs réelles uniquement lorsqu’un courrier électronique est envoyé à l’aide de **Envoi simple** ou **Envoi guidé** mais pas de **Tester l’envoi**.
    >
    >
 * Deux des outils de messagerie électronique sont obligatoires, à savoir : **Adresse postale physique (requise)** et **Centre de profils (requis)**. Lorsque le message électronique est publié sur ExactTarget, ces deux outils de messagerie sont ajoutés, par défaut, au bas de chaque message.
@@ -117,13 +117,13 @@ Le composant **Outils de messagerie électronique** pour ExactTarget permet d’
 
 
 
-### Ajout de l’outil Texte et personnalisation à votre message électronique {#adding-text-and-personalization-tool-to-your-e-mail}
+### Ajout de l’outil Texte et personnalisation à votre message électronique  {#adding-text-and-personalization-tool-to-your-e-mail}
 
 Vous pouvez ajouter des champs personnalisés à un message électronique lorsque vous insérez le composant **Texte et personnalisation** dans la page :
 
 1. Ouvrez le courrier électronique à publier sur votre service de messagerie.
-1. Pour activer le champ de personnalisation de votre service de messagerie, ajoutez la configuration de la structure lors de la configuration du service de messagerie. See [configuring Silverpop Engage](/help/sites-administering/silverpop.md) and [configuring Exact Target](/help/sites-administering/exacttarget.md) for more information.
-1. Add the component **Text &amp; Personalization** from the sidekick. Ce composant fait partie du groupe newsletter. Ouvrez ce composant en mode d’édition.
+1. Pour activer le champ de personnalisation de votre service de messagerie, ajoutez la configuration de la structure lors de la configuration du service de messagerie. Voir [configuration de Silverpop Engage](/help/sites-administering/silverpop.md) et [configuration de Cible exacte](/help/sites-administering/exacttarget.md) pour plus d’informations.
+1. Ajoutez le composant **Texte et personnalisation** à partir du sidekick. Ce composant fait partie du groupe newsletter. Ouvrez ce composant en mode d’édition.
 
    ![chlimage_1-110](assets/chlimage_1-110a.png)
 
@@ -136,7 +136,7 @@ Pour appliquer la configuration du service de messagerie à une newsletter, proc
 
 1. Créez une configuration Service de messagerie électronique.
 1. Ouvrez votre message électronique/newsletter.
-1. Open the email/newsletter settings by either clicking **Settings** or by clicking **Page Properties in** the sidekick.
+1. Ouvrez les paramètres de courrier électronique/newsletter en cliquant sur **Paramètres** ou en cliquant sur **Propriétés de la page dans** le sidekick.
 1. Cliquez sur **Ajouter un service** dans l’onglet **Services Cloud**. La liste des services s’affiche alors. Sélectionnez la configuration requise, **ExactTarget** ou **Silverpop**, dans la liste déroulante.
 
    ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
@@ -157,7 +157,7 @@ Les messages électroniques/newsletters peuvent être publiés sur votre service
 
    Si la publication se déroule correctement, AEM confirme que vous pouvez afficher le message électronique dans ExactTarget ou Engagement Silverpop.
 
-   In the case of ExactTarget the published email can ve viewed by clicking **View Published Email**. This takes you directly to the published newsletter in the ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   Dans le cas d’ExactTarget, le courrier électronique publié peut être affiché en cliquant sur **Vue Publié**. Vous accédez ainsi directement à la newsletter publiée dans ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/)).
 
 >[!NOTE]
 >
@@ -168,14 +168,14 @@ Les messages électroniques/newsletters peuvent être publiés sur votre service
 
 ### Mise à jour d’un message électronique publié {#updating-a-published-e-mail}
 
-The **Update** button on the Publish dialog box lets you update a newsletter already published to an E-mail Service Provider. Si la newsletter n’est pas encore publiée et que vous cliquez sur le bouton **Mise à jour**, un message **Newsletter non publiée** s’affiche.
+Le bouton **Mettre à jour** de la boîte de dialogue Publier vous permet de mettre à jour un bulletin d&#39;information déjà publié dans un Prestataire de messagerie. Si la newsletter n’est pas encore publiée et que vous cliquez sur le bouton **Mise à jour**, un message **Newsletter non publiée** s’affiche.
 
 Pour mettre à jour un courrier électronique publié :
 
 1. Ouvrez le message électronique/la newsletter déjà publié(e) sur un service de messagerie que vous souhaitez republier après l’avoir mis(e) à jour.
-1. Cliquez sur **Publier**. The **Publish Newsletter to Email Service Provider** window displays. Cliquez sur **Mettre à jour**.
+1. Cliquez sur **Publier**. La fenêtre **Publier le bulletin d&#39;information dans le Prestataire électronique** s&#39;affiche. Cliquez sur **Mettre à jour**.
 
-   To check if the email/newsletter has been updated on ExactTarget, click **View Published Email**. Vous accédez alors au message électronique publié dans ExactTarget.
+   Pour vérifier si le courrier électronique/le bulletin d’information a été mis à jour sur ExactTarget, cliquez sur **Vue Publié**. Vous accédez alors au message électronique publié dans ExactTarget.
 
    Pour vérifier si le message électronique/la newsletter a été mis(e) à jour sur le service de messagerie Silverpop, accédez au site d’Engagement Silverpop.
 
