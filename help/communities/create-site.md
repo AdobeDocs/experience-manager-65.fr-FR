@@ -28,11 +28,11 @@ Utilisez l’instance d’auteur pour créer un site communautaire. Sur l’inst
 1. Connectez-vous avec des droits d’administrateur.
 1. Dans la navigation globale, accédez à **[!UICONTROL Communautés]** > **[!UICONTROL Sites]**.
 
-La console Sites des communautés fournit un assistant qui vous guide tout au long des étapes de création d&#39;un site communautaire. Il est possible de passer à l&#39; `Next` étape ou `Back` à l&#39;étape précédente avant de valider le site dans l&#39;étape finale.
+La console Sites des communautés fournit un assistant qui vous guide tout au long des étapes de création d&#39;un site communautaire. Il est possible de passer à l&#39;étape `Next` ou `Back` à l&#39;étape précédente avant de valider le site à l&#39;étape finale.
 
 Pour commencer à créer un site communautaire :
 
-* Sélectionnez le `Create` bouton.
+* Sélectionnez le bouton `Create`.
 
 ![createcommunitsite](assets/createcommunitysite.png)
 
@@ -40,22 +40,22 @@ Pour commencer à créer un site communautaire :
 
 ![modèle pour créer un site](assets/create-site.png)
 
-À l’étape [Modèle de](/help/communities/sites-console.md#step2013asitetemplate)site, saisissez un titre, une description, le nom de l’URL, puis sélectionnez un modèle de site communautaire, par exemple :
+À l&#39;étape [Modèle de site](/help/communities/sites-console.md#step2013asitetemplate), saisissez un titre, une description, le nom de l&#39;URL, puis sélectionnez un modèle de site de la communauté, par exemple :
 
 * **Titre du site de la communauté**: `Getting Started Tutorial`
 * **Description du site de la communauté**: `A site for engaging with the community.`
-* **Racine** du site de la communauté : (laisser vide pour la racine par défaut `/content/sites`)
+* **Racine** du site de la communauté : (laisser vide pour la racine par défaut  `/content/sites`)
 * **Configurations** du cloud : (laissez vide si aucune configuration de cloud n’est spécifiée) fournissez le chemin d’accès aux configurations de cloud spécifiées.
-* **Langue** de base du site de la communauté : (ne pas modifier pour une seule langue : Anglais) utilisez la liste déroulante pour choisir une *ou plusieurs* langues de base parmi les langues disponibles : allemand, italien, français, japonais, espagnol, portugais (Brésil), chinois (traditionnel) et chinois (simplifié). Un site communautaire sera créé pour chaque langue ajoutée et existera dans le même dossier de site selon les meilleures pratiques décrites dans la section [Traduction de contenu pour les sites](/help/sites-administering/translation.md)multilingues. La page racine de chaque site contient une page enfant nommée par le code de langue de l&#39;une des langues sélectionnées, comme &quot;en&quot; pour l&#39;anglais ou &quot;fr&quot; pour le français.
+* **Langue** de base du site de la communauté : (ne pas modifier pour une seule langue : Anglais) utilisez la liste déroulante pour choisir une  *ou* plusieurs langues de base parmi les langues disponibles : allemand, italien, français, japonais, espagnol, portugais (Brésil), chinois (traditionnel) et chinois (simplifié). Un site communautaire sera créé pour chaque langue ajoutée et existera dans le même dossier de site en suivant la bonne pratique décrite dans [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md). La page racine de chaque site contient une page enfant nommée par le code de langue de l&#39;une des langues sélectionnées, comme &quot;en&quot; pour l&#39;anglais ou &quot;fr&quot; pour le français.
 
 * **Nom** du site de la communauté : engager
 
    * Doublon-vérifier le nom car il n&#39;est pas facilement modifié après la création du site
    * L&#39;URL initiale s&#39;affiche sous le nom du site de la communauté.
    * Pour une URL valide, ajoutez un code de langue de base + &quot;.html&quot;
-   * *Par exemple*, https://localhost:4502/content/sites/ `engage/en.html`
+   * *Par exemple*, https://localhost:4502/content/sites/  `engage/en.html`
 
-* **Modèle**: descendre pour choisir `Reference Site`
+* **Modèle** : descendre pour choisir  `Reference Site`
 
 * Sélectionnez **Suivant**.
 
@@ -63,11 +63,11 @@ Pour commencer à créer un site communautaire :
 
 L’étape de conception est présentée en deux sections pour la sélection du thème et de la bannière de marque :
 
-#### COMMUNITY SITE THEME {#community-site-theme}
+#### THÈME DU SITE COMMUNAUTAIRE {#community-site-theme}
 
 Sélectionnez le style à appliquer au modèle. Une fois sélectionné, le thème sera superposé avec une coche.
 
-#### COMMUNITY SITE BRANDING {#community-site-branding}
+#### MARQUE DU SITE COMMUNAUTAIRE {#community-site-branding}
 
 (Facultatif) Téléchargez une image de bannière pour l’afficher sur les pages du site. La bannière est épinglée sur le bord gauche du navigateur, entre l’en-tête du site de la communauté et les liens de navigation. La hauteur de la bannière est rognée à 120 pixels. Il n’existe aucun redimensionnement de la bannière pour s’adapter à la largeur du navigateur et à la hauteur de 120 pixels.
 
@@ -79,13 +79,13 @@ Sélectionnez **Suivant**.
 
 ### Étape 3 : Paramètres {#step-settings}
 
-A l’étape Paramètres, avant de sélectionner `Next`, notez que sept sections donnent accès à des configurations impliquant la gestion des utilisateurs, le balisage, la modération, la gestion de groupe, les analyses, la traduction et l’activation.
+À l’étape Paramètres, avant de sélectionner `Next`, notez que sept sections donnent accès à des configurations comprenant la gestion des utilisateurs, le balisage, la modération, la gestion de groupe, les analyses, la traduction et l’activation.
 
-Consultez le didacticiel [Prise en main d’AEM Communities pour l’activation](/help/communities/getting-started-enablement.md) pour découvrir comment utiliser les fonctionnalités d’activation.
+Consultez le [didacticiel Prise en main d’AEM Communities pour l’activation](/help/communities/getting-started-enablement.md) pour découvrir comment utiliser les fonctionnalités d’activation.
 
 #### Gestion des utilisateurs {#user-management}
 
-Cochez toutes les cases de gestion des [utilisateurs.](/help/communities/sites-console.md#user-management)
+Cochez toutes les cases pour [User Management](/help/communities/sites-console.md#user-management).
 
 * Pour permettre aux visiteurs du site de s&#39;inscrire eux-mêmes
 * Permettre aux visiteurs du site de vue sans se connecter
@@ -95,13 +95,13 @@ Cochez toutes les cases de gestion des [utilisateurs.](/help/communities/sites-c
 
 >[!NOTE]
 >
->Pour un environnement de production, il est nécessaire de créer des applications Facebook et Twitter personnalisées. Voir Connexion [aux réseaux sociaux avec Facebook et Twitter](/help/communities/social-login.md).
+>Pour un environnement de production, il est nécessaire de créer des applications Facebook et Twitter personnalisées. Voir [Connexion aux réseaux sociaux avec Facebook et Twitter](/help/communities/social-login.md).
 
 ![paramètres du site communautaire](assets/site-settings.png)
 
-#### TAGGING {#tagging}
+#### BALISAGE {#tagging}
 
-Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant AEM espaces de nommage précédemment définis dans la console [](/help/sites-administering/tags.md#tagging-console) Balisage (tel que l’espace de nommage [](/help/communities/setup.md#create-tutorial-tags)de didacticiel).
+Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant AEM espaces de nommage précédemment définis dans la [Console de balisage](/help/sites-administering/tags.md#tagging-console) (comme l&#39;[espace de nommage didacticiel](/help/communities/setup.md#create-tutorial-tags)).
 
 La recherche d&#39;espaces de nommage est facile avec la recherche par type. Par exemple :
 
@@ -110,26 +110,26 @@ La recherche d&#39;espaces de nommage est facile avec la recherche par type. Par
 
 ![tagging](assets/tagging.png)
 
-#### ROLES {#roles}
+#### RÔLES {#roles}
 
-[Les rôles](/help/communities/users.md) des membres de la communauté sont attribués via les paramètres de la section Rôles.
+[Les rôles des membres de la communauté ](/help/communities/users.md) sont attribués par le biais des paramètres de la section Rôles.
 
 Pour permettre à un membre de la communauté (ou à un groupe de membres) de découvrir le site en tant que responsable de la communauté, utilisez la recherche par type et sélectionnez le nom du membre ou du groupe dans les options de la liste déroulante.
 
 Par exemple :
 
 * Type `q`
-* Sélectionner [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Sélectionnez [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
->[Le service](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Tunnel permet de sélectionner les membres et les groupes existants uniquement dans l’environnement de publication.
+>[Le ](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) service Tunnel permet de sélectionner les membres et les groupes existants uniquement dans l’environnement de publication.
 
 ![rôles d’utilisateur dans le nouveau site](assets/site-admin-1.png)
 
-#### MODERATION {#moderation}
+#### MODÉRATION {#moderation}
 
-Acceptez les paramètres globaux par défaut pour la [modération](/help/communities/sites-console.md#moderation) du contenu généré par l’utilisateur (UGC).
+Acceptez les paramètres globaux par défaut pour [la modération](/help/communities/sites-console.md#moderation) du contenu généré par l’utilisateur (UGC).
 
 ![modération](assets/moderation1.png)
 
@@ -137,28 +137,28 @@ Acceptez les paramètres globaux par défaut pour la [modération](/help/communi
 
 Si Adobe Analytics est sous licence et qu’un service et une structure de cloud Analytics ont été configurés, il est possible d’activer Analytics et de sélectionner la structure.
 
-Voir Configuration [d’Analytics pour les fonctionnalités](/help/communities/analytics.md)des communautés.
+Voir [Configuration d’Analytics pour les fonctionnalités des communautés](/help/communities/analytics.md).
 
 ![analyses](assets/analytics.png)
 
-#### TRANSLATION {#translation}
+#### TRADUCTION {#translation}
 
-Les paramètres [de](/help/communities/sites-console.md#translation) traduction spécifient la langue de base du site ainsi que si l&#39;UGC peut être traduit ou non et dans quelle langue, le cas échéant.
+Les [paramètres de traduction](/help/communities/sites-console.md#translation) spécifient la langue de base du site ainsi que si l&#39;UGC peut être traduit ou non et dans quelle langue, le cas échéant.
 
-* Vérifier **autoriser la traduction automatique**
+* Cochez **Autoriser la traduction automatique**.
 * Laissez les langues par défaut sélectionnées pour la traduction par le service de traduction automatique par défaut
 * Quitter le fournisseur de traduction par défaut et la configuration
 * Il n&#39;est pas nécessaire d&#39;avoir un magasin global car il n&#39;y a pas de copies de langue
-* Sélectionner **Traduire la page entière**
+* Sélectionnez **Traduire toute la page**
 * Option de persistance par défaut
 
 ![traduction-paramètres](assets/translation-settings.png)
 
-#### ENABLEMENT {#enablement}
+#### ACTIVER {#enablement}
 
 Laissez vide lorsque vous créez une communauté d’engagement.
 
-Pour consulter un didacticiel similaire sur la création rapide d’une communauté [d’](/help/communities/overview.md#enablement-community)activation, voir [Prise en main de AEM Communities pour l’activation](/help/communities/getting-started-enablement.md).
+Pour consulter un didacticiel similaire sur la création rapide d&#39;une [communauté d&#39;activation](/help/communities/overview.md#enablement-community), voir [Prise en main d&#39;AEM Communities pour l&#39;activation](/help/communities/getting-started-enablement.md).
 
 Sélectionnez **Suivant**.
 
@@ -174,7 +174,7 @@ Une fois le processus terminé, le dossier du nouveau site s&#39;affiche dans la
 
 ![communitiessitesconsole](assets/communitiessitesconsole.png)
 
-## Publication du site de la communauté {#publish-the-community-site}
+## Publier le site de la communauté {#publish-the-community-site}
 
 Le site créé doit être géré à partir de la console Communautés - Sites, la même console que celle où de nouveaux sites peuvent être créés.
 
@@ -202,12 +202,12 @@ De gauche à droite, ils sont :
 
 * **Exporter le site**
 
-   Sélectionnez l’icône d’exportation pour créer un package du site de la communauté qui est à la fois stocké dans le gestionnaire de [packages](/help/sites-administering/package-manager.md) et téléchargé.
+   Sélectionnez l’icône d’exportation pour créer un package du site communautaire qui est stocké dans [gestionnaire de packages](/help/sites-administering/package-manager.md) et téléchargé.
 Notez que UGC n&#39;est pas inclus dans le package du site.
 
 * **Supprimer le site**
 
-   Sélectionnez l&#39;icône Supprimer pour supprimer le site de la communauté dans la console **** Communautés > Sites. Cette action supprime tous les éléments associés au site, tels que l’UGC, les groupes d’utilisateurs, les ressources et les enregistrements de base de données.
+   Sélectionnez l&#39;icône Supprimer pour supprimer le site de la communauté dans **[!UICONTROL Communautés > Console Sites]**. Cette action supprime tous les éléments associés au site, tels que l’UGC, les groupes d’utilisateurs, les ressources et les enregistrements de base de données.
 
 ![siteactions](assets/siteactions.png)
 
@@ -217,11 +217,11 @@ Notez que UGC n&#39;est pas inclus dans le package du site.
 >
 >Sur l’instance d’auteur, dans le menu principal :
 >
->1. Accédez au menu **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]** .
->1. Sélectionnez **[!UICONTROL Agents sur l’auteur]**.
->1. Sélectionnez Agent **[!UICONTROL par défaut (publication)]**.
+>1. Accédez au menu **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**.
+>1. Sélectionnez **[!UICONTROL Agents sur author]**.
+>1. Sélectionnez **[!UICONTROL Agent par défaut (publication)]**.
 >1. En regard de **[!UICONTROL Paramètres]**, sélectionnez **[!UICONTROL Modifier]**.
->1. Dans la boîte de dialogue contextuelle Paramètres de l&#39;agent, sélectionnez l&#39;onglet **[!UICONTROL Transport]** .
+>1. Dans la boîte de dialogue contextuelle Paramètres de l&#39;agent, sélectionnez l&#39;onglet **[!UICONTROL Transport]**.
 >1. Dans URI, modifiez le numéro de port, 4503, en numéro de port souhaité. Par exemple, pour utiliser le port 6103 : https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >1. **[!UICONTROL Cliquez sur OK]**.
 >1. (Facultatif) Sélectionnez **[!UICONTROL Effacer]** ou **[!UICONTROL Forcer une nouvelle tentative]** pour réinitialiser la file d&#39;attente de réplication.
@@ -237,9 +237,9 @@ Une fois le site de la communauté publié, un message s’affiche brièvement s
 
 ### Nouveaux groupes d’utilisateurs de la communauté {#new-community-user-groups}
 
-En plus du nouveau site communautaire, de nouveaux groupes d’utilisateurs sont créés et disposent des autorisations appropriées définies pour diverses fonctions administratives. Pour plus d’informations, consultez Groupes d’ [utilisateurs pour les sites](/help/communities/users.md#usergroupsforcommunitysites)de la communauté.
+En plus du nouveau site communautaire, de nouveaux groupes d’utilisateurs sont créés et disposent des autorisations appropriées définies pour diverses fonctions administratives. Pour plus d&#39;informations, consultez [Groupes d&#39;utilisateurs pour les sites communautaires](/help/communities/users.md#usergroupsforcommunitysites).
 
-Pour ce nouveau site communautaire, étant donné le nom du site &quot;s’engager&quot; à l’étape 1, les quatre nouveaux groupes d’utilisateurs peuvent être vus à partir de la console [](/help/communities/members.md) Groupes (navigation globale : Communautés, groupes) :
+Pour ce nouveau site communautaire, étant donné le nom du site &quot;engager&quot; à l’étape 1, les quatre nouveaux groupes d’utilisateurs peuvent être vus à partir de la console [Groupes](/help/communities/members.md) (navigation globale : Communautés, groupes) :
 
 * Collectif Interagir avec les gestionnaires communautaires
 * Administrateurs du groupe d’engagement de la communauté
@@ -260,50 +260,50 @@ Notez que [Aaron McDonald](/help/communities/tutorials.md#demo-users) est membre
 
 ![engager](assets/engage.png)
 
-## Erreur de configuration pour l’authentification {#configure-for-authentication-error}
+## Configurer pour l&#39;erreur d&#39;authentification {#configure-for-authentication-error}
 
-Une fois qu’un site a été configuré et envoyé pour publication, [configurez le mappage](/help/communities/sites-console.md#configure-for-authentication-error) de connexion ( `Adobe Granite Login Selector Authentication Handler`) sur l’instance de publication. L’avantage est que lorsque les informations d’identification de connexion ne sont pas saisies correctement, l’erreur d’authentification affiche à nouveau la page de connexion du site de la communauté avec un message d’erreur.
+Une fois qu’un site a été configuré et envoyé pour publication, [configurez le mappage de connexion](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) sur l’instance de publication. L’avantage est que lorsque les informations d’identification de connexion ne sont pas saisies correctement, l’erreur d’authentification affiche à nouveau la page de connexion du site de la communauté avec un message d’erreur.
 
-Ajouter un `Login Page Mapping` sous
+Ajouter un `Login Page Mapping` comme
 
 * `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 ## Étapes facultatives {#optional-steps}
 
-### Modification de la Page d&#39;accueil par défaut {#change-the-default-home-page}
+### Modifier la Page d&#39;accueil par défaut {#change-the-default-home-page}
 
 Lorsque vous travaillez avec le site de publication à des fins de démonstration, il peut s’avérer utile de modifier la page d&#39;accueil par défaut du nouveau site.
 
-Pour ce faire, il est nécessaire d’utiliser [CRXDE](https://localhost:4503/crx/de) Lite pour modifier la table de mappage [des](/help/sites-deploying/resource-mapping.md) ressources lors de la publication.
+Pour ce faire, il faut utiliser [CRXDE](https://localhost:4503/crx/de) Lite pour modifier la table [resource-mapping](/help/sites-deploying/resource-mapping.md) lors de la publication.
 
 Pour commencer :
 
 1. Sur l’instance de publication, connectez-vous avec des droits d’administrateur.
 1. Accédez à [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 1. Dans le navigateur du projet, développez `/etc/map.`
-1. Sélectionnez le `http` noeud :
+1. Sélectionnez le noeud `http` :
 
    * Sélectionnez **Créer un noeud :**
 
-      * **Nommer** localhost.4503(n&#39;utilisez *pas* &#39;:&#39;)
+      * **** Namelocalhost.4503 (do  ** notuse &#39;:&#39;)
 
-      * **Type** [sling:Mappage](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+      * **** [Type:Mappage](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
-1. Avec le nouveau `localhost.4503` noeud sélectionné :
+1. Avec le nouveau noeud `localhost.4503` sélectionné :
 
    * Ajoute, propriété :
 
    * **Nom** sling:match
-      * **Chaîne de type**
-      * **Valeur** localhost.4503/$(doit se terminer par &#39;$&#39; char)
+      * **** TypeString
+      * **** Valuelocalhost.4503/$ (doit se terminer par &#39;$&#39; char)
    * Ajoute, propriété :
 
       * **Nom** sling:internalRedirect
-      * **Chaîne de type**
-      * **Valeur** /content/sites/engage/en.html
+      * **** TypeString
+      * **Valeur**  /content/sites/engage/en.html
 
 
-1. Select **Save All.**
+1. Sélectionnez **Enregistrer tout.**
 1. (Facultatif) Supprimez l’historique de navigation.
 1. Accédez à https://localhost:4503/.
 
@@ -311,28 +311,28 @@ Pour commencer :
 
 >[!NOTE]
 >
->Pour le désactiver, il vous suffit de préfixer la valeur de la `sling:match` propriété avec un &quot;x&quot; - `xlocalhost.4503/$` - et **Enregistrer tout**.
+>Pour le désactiver, il vous suffit de préfixer la valeur de la propriété `sling:match` par un &#39;x&#39; - `xlocalhost.4503/$` - et **Enregistrer tout**.
 
 ![étapes facultatives](assets/optional-steps.png)
 
 #### Dépannage : Erreur lors de l&#39;enregistrement de la carte {#troubleshooting-error-saving-map}
 
-Si vous ne parvenez pas à enregistrer les modifications, assurez-vous que le nom du noeud est `localhost.4503`, avec un séparateur de points, et non `localhost:4503` avec un séparateur de points, car `localhost`il ne s’agit pas d’un préfixe d’espace de nommage valide.
+Si vous ne parvenez pas à enregistrer les modifications, veillez à ce que le nom du noeud soit `localhost.4503`, avec un séparateur &quot;point&quot; et non `localhost:4503` avec un séparateur &quot;deux points&quot;, car `localhost`n&#39;est pas un préfixe d&#39;espace de nommage valide.
 
 ![message d’erreur](assets/error-message.png)
 
 #### Dépannage : Echec de la redirection {#troubleshooting-fail-to-redirect}
 
-La valeur &quot;**$**&quot; à la fin de la `sling:match`chaîne d’expression normale est cruciale, de sorte que seul le mappage exact `https://localhost:4503/` est effectué, sinon la valeur de redirection est précédée d’un chemin d’accès qui peut exister après le serveur:port dans l’URL. Ainsi, lorsque AEM tente de rediriger vers la page de connexion, elle échoue.
+La valeur &#39;**$**&#39; à la fin de la chaîne `sling:match`d&#39;expression régulière est cruciale, de sorte que seul `https://localhost:4503/` est mappé exactement, sinon la valeur de redirection est préfixe à tout chemin d&#39;accès qui peut exister après le serveur:port dans l&#39;URL. Ainsi, lorsque AEM tente de rediriger vers la page de connexion, elle échoue.
 
 ### Modifier le site {#modify-the-site}
 
-Une fois le site créé, les auteurs peuvent utiliser l&#39;icône [](/help/communities/sites-console.md#authoring-site-content) Ouvrir le site pour effectuer des activités de création AEM standard.
+Une fois le site créé, les auteurs peuvent utiliser l&#39;[icône Ouvrir le site](/help/communities/sites-console.md#authoring-site-content) pour effectuer des activités de création d&#39;AEM standard.
 
-En outre, les administrateurs peuvent utiliser l&#39;icône [](/help/communities/sites-console.md#modifying-site-properties) Modifier le site pour modifier les propriétés du site, comme le titre.
+En outre, les administrateurs peuvent utiliser l&#39;[icône Modifier le site](/help/communities/sites-console.md#modifying-site-properties) pour modifier les propriétés du site, comme le titre.
 
-Après toute modification, n’oubliez pas d’ **enregistrer** et de publier à nouveau **** le site.
+Après toute modification, n’oubliez pas de **Enregistrer** et de re-**publier** le site.
 
 >[!NOTE]
 >
->If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+>Si l&#39;AEM n&#39;est pas familier, vue la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [guide rapide de création de pages](/help/sites-authoring/qg-page-authoring.md).
