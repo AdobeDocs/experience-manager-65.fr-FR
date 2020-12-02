@@ -28,7 +28,7 @@ Vous pouvez en importer et en exporter autant que vous le souhaitez. Si vous sou
 
 Pour obtenir des informations et des instructions concernant les extensions d’Acrobat Reader DC, consultez la section [Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
-## Importation d’informations d’identification {#import-a-credential}
+## Importation d’informations d’identification  {#import-a-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
 1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez l’une des options suivantes :
@@ -49,7 +49,7 @@ Pour obtenir des informations et des instructions concernant les extensions d’
 
    Si le message d’erreur « Echec de l’importation des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect » s’affiche, assurez-vous que le mot de passe est valide.
 
-## Exportation des informations d’identification {#export-a-credential}
+## Exportation des informations d’identification  {#export-a-credential}
 
 Elles sont exportées sous forme de fichiers P12 au format PKCS#12.
 
@@ -58,7 +58,7 @@ Elles sont exportées sous forme de fichiers P12 au format PKCS#12.
 1. Dans le champ Password, saisissez le mot de passe. Ce mot de passe est nouveau et permet de chiffrer les informations d’identification exportées.
 1. Cliquez sur Exporter, suivez les instructions pour exporter les informations d’identification, puis cliquez sur OK.
 
-## Modification de l’alias ou du type de Trust Store des informations d’identification {#edit-a-credential-s-alias-or-trust-store-type}
+## Modification de l’alias ou du type de Trust Store des informations d’identification  {#edit-a-credential-s-alias-or-trust-store-type}
 
 Une fois que des informations d’identification ont été importées, vous pouvez modifier le nom d’alias et le type de Trust Store qui leur sont associés.
 
@@ -67,7 +67,7 @@ Une fois que des informations d’identification ont été importées, vous pouv
 1. Cliquez sur Mettre à jour les informations d’identification.
 1. Modifiez le nom d’alias et le type de Trust Store selon vos besoins, puis cliquez sur OK.
 
-## Suppression d’informations d’identification {#delete-a-credential}
+## Suppression d’informations d’identification  {#delete-a-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
 1. Cochez les cases correspondant aux informations d’identification à supprimer.
