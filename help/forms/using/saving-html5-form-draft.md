@@ -17,15 +17,15 @@ ht-degree: 66%
 ---
 
 
-# Enregistrement d’un formulaire HTML5 en tant que brouillon {#saving-an-html-form-as-a-draft}
+# Enregistrement d’un formulaire HTML5 en tant que brouillon  {#saving-an-html-form-as-a-draft}
 
 Vous pouvez enregistrer un formulaire HTML5 comme brouillon et reprendre le remplissage du formulaire ultérieurement. Le portail des formulaires permet à tout utilisateur d’enregistrer et de restaurer un formulaire HTML5. Pour activer la fonctionnalité Enregistrer en tant que brouillon, ajoutez les configurations suivantes au noeud de profil :
 
 ## Profil personnalisé permettant d&#39;activer la fonctionnalité Enregistrer en tant que brouillon {#custom-profile-to-allow-save-as-draft-feature}
 
-Out of the box, AEM Forms provide a **Save as Draft** profile. Vous pouvez générer un formulaire avec le profil Enregistrer en tant que brouillon pour activer la fonctionnalité de brouillon pour un formulaire HTML5. Vous pouvez spécifier le profil de rendu HTML pour un formulaire dans le [Gestionnaire de formulaires](/help/forms/using/introduction-managing-forms.md).
+AEM Forms fournit un profil **Enregistrer en tant que brouillon** prêt à l’emploi. Vous pouvez générer un formulaire avec le profil Enregistrer en tant que brouillon pour activer la fonctionnalité de brouillon pour un formulaire HTML5. Vous pouvez spécifier le profil de rendu HTML pour un formulaire dans le [Gestionnaire de formulaires](/help/forms/using/introduction-managing-forms.md).
 
-To enable Save as Draft functionality for your existing [custom profile](/help/forms/using/custom-profile.md), add the following properties to your custom profile node:
+Pour activer la fonctionnalité Enregistrer en tant que brouillon pour votre [profil personnalisé](/help/forms/using/custom-profile.md) existant, ajoutez les propriétés suivantes à votre noeud de profil personnalisé :
 
 <table>
  <tbody>
@@ -50,7 +50,7 @@ To enable Save as Draft functionality for your existing [custom profile](/help/f
  </tbody>
 </table>
 
-## Stockage et liste des brouillons {#drafts-storage-and-listing}
+## Stockage et liste des brouillons  {#drafts-storage-and-listing}
 
 Après l’activation de la fonctionnalité Enregistrer en tant que brouillon pour un formulaire, lorsque le formulaire est enregistré, il est répertorié dans le [composant Drafts and Submissions](/help/forms/using/draft-submission-component.md). Vous pouvez extraire le formulaire enregistré et commencer son remplissage depuis le composant Drafts and Submissions.
 
@@ -68,7 +68,7 @@ Pour activer la liste des formulaires pour le composant Drafts and Submission, a
    <td>fp.enablePortalSubmit</td>
    <td>Chaîne</td>
    <td>true</td>
-   <td>To enable drafts and forms to get listed in<br /> Forms Portal Drafts &amp; Submissions component after submission</td>
+   <td>Pour permettre aux brouillons et aux formulaires d’être répertoriés dans <br /> le composant Drafts &amp; Submissions du portail Forms après envoi</td>
   </tr>
  </tbody>
 </table>
