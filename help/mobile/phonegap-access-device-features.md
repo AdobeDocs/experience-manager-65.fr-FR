@@ -18,22 +18,22 @@ ht-degree: 10%
 ---
 
 
-# Accéder aux fonctionnalités du périphérique{#access-device-features}
+# Fonctionnalités du périphérique d&#39;accès{#access-device-features}
 
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-## Création de composants AEM qui accèdent aux fonctionnalités des périphériques {#building-aem-components-that-access-device-features}
+## Création de composants AEM qui accèdent aux fonctionnalités de l&#39;appareil {#building-aem-components-that-access-device-features}
 
-Le référentiel [PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github de PhoneGapAEM fournit aux développeurs une application AEM fonctionnelle qui illustre l&#39;utilisation d&#39;un certain nombre d&#39;API Cordova de base. Lorsqu’elle est exécutée sur iOS ou Android via l’interface de ligne de commande PhoneGap, l’application s’ouvre sur la page suivante, qui comprend un lien vers chaque API de périphérique illustrée ci-dessous :
+Le [AEM référentiel Github PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) fournit aux développeurs une application fonctionnelle AEM qui illustre l&#39;utilisation d&#39;un certain nombre d&#39;API Cordova de base. Lorsqu’elle est exécutée sur iOS ou Android via l’interface de ligne de commande PhoneGap, l’application s’ouvre sur la page suivante, qui comprend un lien vers chaque API de périphérique illustrée ci-dessous :
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Le code source de chacun de ces composants d’API de périphérique est [disponible sur Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
+Le code source de chacun de ces composants d&#39;API de périphérique est [disponible sur Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
-Pour plus d&#39;informations sur l&#39;utilisation de chaque API, je vous recommande de jeter un coup d&#39;oeil à la documentation [du plug-in](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html)Cordova.
+Pour plus d&#39;informations sur l&#39;utilisation de chaque API, je vous recommande de consulter la [documentation du plug-in Cordova](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html).
 
 ## Étapes suivantes {#the-next-steps}
 
-Reportez-vous à la page [Suivi des performances des applications avec Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md).
+Voir [Suivi des performances de l’application avec Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md).
