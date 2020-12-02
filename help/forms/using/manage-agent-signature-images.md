@@ -46,7 +46,7 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       >[!NOTE]
       >
-      >cmUserRoot correspond à l’emplacement par défaut où AEM recherche l’image de la signature de l’agent. You can, however, change it by editing the CM User Root property in the [Correspondence Management configuration properties](/help/forms/using/cm-configuration-properties.md).
+      >cmUserRoot correspond à l’emplacement par défaut où AEM recherche l’image de la signature de l’agent. Vous pouvez toutefois le modifier en modifiant la propriété Racine de l’utilisateur de CM dans les [propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
 1. Dans l’explorateur de contenu, accédez au dossier cmUserRoot et ajoutez-y l’image de la signature de l’agent.
 
@@ -62,17 +62,17 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       **Type :** nt:file
 
-      Under the `cmUserRoot` folder, a new folder called `JohnDoe` (or the name you have given in the previous step) is created.
+      Sous le dossier `cmUserRoot`, un nouveau dossier appelé `JohnDoe` (ou le nom que vous avez donné à l’étape précédente) est créé.
 
    1. Cliquez sur le nouveau dossier que vous avez créé (ici`JohnDoe` ). L’explorateur de contenu affiche le contenu du dossier en grisé.
 
-   1. Double-click the **jcr:content** property, set its type as **nt:resource**, and then click the green check mark to save the entry.
+   1. Cliquez avec le doublon sur la propriété **jcr:content**, définissez son type sur **nt:resource**, puis cliquez sur la coche verte pour enregistrer l’entrée.
 
       Si la propriété n’est pas disponible, vous devez d’abord créer une propriété avec le nom jcr:content.
 
       ![propriété jcr:content](assets/3_jcrcontentntresource.png)
 
-      Parmi les sous-propriétés de jcr:content se trouve jcr:data en grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Click **Choose File** and select the image file you want to use as a logo. Le fichier image n’a pas besoin d’extension.
+      Parmi les sous-propriétés de jcr:content se trouve jcr:data en grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Cliquez sur **Choisir Fichier** et sélectionnez le fichier image à utiliser comme logo. Le fichier image n’a pas besoin d’extension.
 
       ![Données JCR](assets/5_jcrdata.png)
    Cliquez sur **Enregistrer tout**.
