@@ -23,24 +23,24 @@ ht-degree: 22%
 
 ## Présentation {#introduction}
 
-La `Leaderboard` composante permet d&#39;obtenir une idée de la façon dont les membres interagissent au sein de la communauté en classant les membres en fonction des points gagnés (note de base) ou de leur expertise (note avancée).
+Le composant `Leaderboard` permet d&#39;obtenir une idée de la façon dont les membres interagissent au sein de la communauté en classant les membres en fonction des points gagnés (note de base) ou de leur expertise (note avancée).
 
-Avant d’inclure le composant de tableau de bord dans une page, il est nécessaire de configurer le score et les badges [des communautés](/help/communities/implementing-scoring.md).
+Avant d’inclure le composant Leadboard sur une page, il est nécessaire de configurer [le score des communautés et les badges](/help/communities/implementing-scoring.md).
 
 Cette section de la documentation décrit:
 
-* Ajouter le `Leaderboard` composant à un site [](/help/communities/overview.md#community-sites)communautaire.
-* Configuration settings for the `Leaderboard` component.
+* Ajouter le composant `Leaderboard` à un [site communautaire](/help/communities/overview.md#community-sites).
+* Paramètres de configuration du composant `Leaderboard`.
 
-### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
+### Ajouter un tableau de bord à une page {#adding-a-leaderboard-to-a-page}
 
-To add a `Leaderboard` component to a page in author mode, locate the component
+Pour ajouter un composant `Leaderboard` à une page en mode création, recherchez le composant.
 
 * `Communities / Leaderboard`
 
 et faites-le glisser sur la page.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](/help/communities/basics.md).
 
 Placé pour la première fois sur une page d’un site de communauté, voici à quoi ressemble le composant :
 
@@ -48,7 +48,7 @@ Placé pour la première fois sur une page d’un site de communauté, voici à 
 
 ### Configuration de Leaderboard {#configuring-leaderboard}
 
-Select the placed `Leaderboard` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Leaderboard` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -56,7 +56,7 @@ Select the placed `Leaderboard` component to access and select the `Configure` i
 
 #### Onglet Settings {#settings-tab}
 
-Sous l&#39;onglet **[!UICONTROL Paramètres]** , spécifiez les informations relatives au membre qui s&#39;affichent :
+Sous l&#39;onglet **[!UICONTROL Paramètres]**, indiquez les informations relatives au membre qui s&#39;affichent :
 
 * **Nom d’affichage**
 
@@ -80,7 +80,7 @@ Cette option n’est pas cochée par défaut.
 
 #### Onglet Règles {#rules-tab}
 
-Sous l’onglet **Règles** , le site communautaire et ses règles de notation et de badge
+Sous l&#39;onglet **Règles**, le site communautaire et ses règles de notation et de badge
 
 * **Emplacement des règles**
 
@@ -147,6 +147,6 @@ Configuration du composant de tableau de bord :
 
 ### Informations supplémentaires {#additional-information}
 
-More information may be found on the [Leaderboard Essentials](/help/communities/leaderboard.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Leaderboard Essentials](/help/communities/leaderboard.md) destinée aux développeurs.
 
-Les instructions de création de règles sont fournies sur la page Scores et badges [](/help/communities/implementing-scoring.md) des communautés pour les administrateurs.
+Les instructions de création de règles sont fournies sur la page [Scores et badges des communautés](/help/communities/implementing-scoring.md) à l’intention des administrateurs.
