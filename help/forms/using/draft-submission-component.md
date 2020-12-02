@@ -22,18 +22,18 @@ ht-degree: 68%
 
 Le composant Drafts &amp; Submissions dresse la liste de tous les formulaires qui sont à l’état de brouillon et des formulaires déjà envoyés. Le composant dispose de sections distinctes (onglets) pour les brouillons et les formulaires envoyés. Les utilisateurs peuvent afficher leurs brouillons et leurs formulaires envoyés uniquement.
 
-## Configuration du composant {#configuring-the-component}
+## Configuration du composant  {#configuring-the-component}
 
 Le composant Drafts &amp; Submissions comporte deux onglets : Brouillons et envois.
 
-To enable submission of an adaptive form to appear in the submissions tab, set the **Submit action** to **[Forms Portal Submit Action](../../forms/using/configuring-submit-actions.md). Alternatively,** enable the Forms Portal Submit option. Lorsqu’un utilisateur envoie le formulaire, ce formulaire est ajouté à l’onglet des envois.
+Pour autoriser l’envoi d’un formulaire adaptatif à s’afficher dans l’onglet des envois, définissez **Action d’envoi** sur **[Action d’envoi du portail Forms](../../forms/using/configuring-submit-actions.md). Vous pouvez également activer** l’option d’envoi du portail Forms. Lorsqu’un utilisateur envoie le formulaire, ce formulaire est ajouté à l’onglet des envois.
 
 La fonctionnalité de brouillons est activée immédiatement. Lorsqu’un utilisateur clique sur **Enregistrer** sur un formulaire adaptatif, le formulaire est ajouté à l’onglet des brouillons.
 
 Effectuez les étapes suivantes pour ajouter et configurer le composant Drafts &amp; Submissions :
 
 1. Faites glisser le composant **Brouillons et envois** sous la catégorie Document Services dans le navigateur de composants sur votre page.
-1. Tap the component and then tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the component.
+1. Appuyez sur le composant, puis sur ![settings_icon](assets/settings_icon.png) pour ouvrir la boîte de dialogue Modifier du composant.
 
    ![Composant Drafts &amp; Submissions](assets/drafts-submissions-edit.png)
 
@@ -49,12 +49,12 @@ Effectuez les étapes suivantes pour ajouter et configurer le composant Drafts &
   <tr>
    <td>Général</td>
    <td>Résultat total</td>
-   <td>Spécifie le nombre maximal de résultats à afficher. Si le nombre de résultats augmente la limite de résultat total, un lien <strong>Plus</strong> apparaît au bas du composant. Clicking <strong>More </strong>shows all the forms. </td>
+   <td>Spécifie le nombre maximal de résultats à afficher. Si le nombre de résultats augmente la limite de résultat total, un lien <strong>Plus</strong> apparaît au bas du composant. Cliquez sur <strong>Plus </strong>pour afficher tous les formulaires. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Type de style</td>
-   <td>Indique le style du composant. You can specify <strong>No Style</strong>, <strong>Default Style</strong>, or <strong>Custom Style</strong> for listing the forms. Pour l’option Style personnalisé, vous pouvez spécifier le chemin du fichier CSS personnalisé dans le champ <strong>Chemin d’accès au style personnalisé</strong><strong>.</strong></td>
+   <td>Indique le style du composant. Vous pouvez spécifier <strong>Aucun style</strong>, <strong>Style par défaut</strong> ou <strong>Style personnalisé</strong> pour répertorier les formulaires. Pour l’option Style personnalisé, vous pouvez spécifier le chemin du fichier CSS personnalisé dans le champ <strong>Chemin d’accès au style personnalisé</strong><strong>.</strong></td>
   </tr>
   <tr>
    <td> </td>
@@ -100,9 +100,9 @@ Lorsque vous utilisez l’action d’envoi Forms Portal ou activez les données 
 
 Forms Portal vous permet de stocker des données dans un référentiel AEM local, un référentiel AEM distant ou dans une base de données. AEM Forms vous permet de personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez remplacer les méthodes par défaut pour spécifier comment les données de brouillon et d’envoi sont stockées à l’enregistrement de votre choix. Vous pouvez, par exemple, stocker les données dans un entrepôt de données implémenté au sein de votre entreprise.
 
-Forms Portal fournit des services prêts à l’emploi (API) pour stocker des données sur le référentiel crx des instances de publication AEM Forms locales et distantes. Vous pouvez remplacer les implémentations par défaut, décrites dans la section [Configuration des services d’enregistrement pour l’article Drafts and Submissions](/help/forms/using/configuring-draft-submission-storage.md) , par des implémentations personnalisées pour remplacer la fonctionnalité par défaut. Pour plus d’informations sur les méthodes requises dans une implémentation personnalisée pour stocker du contenu à un emplacement sécurisé, voir [Personnalisation des services](/help/forms/using/custom-draft-submission-data-services.md) de données Drafts and Submission et enregistrement [personnalisé pour le composant Drafts and Submission.](/help/forms/using/adding-custom-storage-provider-forms.md)
+Forms Portal fournit des services prêts à l’emploi (API) pour stocker des données sur le référentiel crx des instances de publication AEM Forms locales et distantes. Vous pouvez remplacer les implémentations par défaut, décrites dans [Configuration des services d’enregistrement pour les brouillons et les envois](/help/forms/using/configuring-draft-submission-storage.md), par des implémentations personnalisées pour remplacer la fonctionnalité par défaut. Pour obtenir des informations détaillées sur les méthodes requises dans une implémentation personnalisée pour stocker le contenu à un emplacement sécurisé, voir [Personnalisation des services de données Drafts and Submission](/help/forms/using/custom-draft-submission-data-services.md) et [enregistrement personnalisé pour le composant Drafts and Submission.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-La documentation AEM Forms fournit un [exemple d’intégration du composant brouillons &amp; envois à la base de données](integrate-draft-submission-database.md). Vous pouvez utiliser l’exemple d’implémentation pour développer votre propre implémentation personnalisée.
+La documentation AEM Forms fournit un [exemple pour l’intégration du composant brouillons &amp; envois à la base de données](integrate-draft-submission-database.md). Vous pouvez utiliser l’exemple d’implémentation pour développer votre propre implémentation personnalisée.
 
 ## Articles connexes
 
