@@ -47,7 +47,7 @@ Ce document décrit les notions fondamentales de la création de newsletters dan
 >
 >Si vous mettez à jour vos fournisseurs de messagerie, que vous effectuez un test envoi ou que vous envoyez une newsletter, ces opérations échouent si la newsletter n’est pas au préalable publiée sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit activée.
 
-## Création d’une expérience Newsletter {#creating-a-newsletter-experience}
+## Création d’une expérience Newsletter  {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Personnalisation d’une newsletter et simulation de son aperçu :
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des bulletins d’information, vérifiez la configuration OSGi pour Day CQ Link Externalizer (Externalisateur de liens Day CQ) à l’adresse `https://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -221,7 +221,7 @@ Vous pouvez envoyer une newsletter à partir de la newsletter ou à partir de la
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des bulletins d’information, vérifiez la configuration OSGi pour Day CQ Link Externalizer (Externalisateur de liens Day CQ) à l’adresse `https://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -256,7 +256,7 @@ Envoi d’une newsletter à partir d’une campagne :
    >
    >Assurez-vous que vous êtes l’un des destinataires pour vérifier que la newsletter a bien été reçue.
 
-### Envoi de newsletters à partir d’une liste {#sending-newsletters-from-a-list}
+### Envoi de newsletters à partir d’une liste  {#sending-newsletters-from-a-list}
 
 Envoi d’une newsletter à partir d’une liste :
 
@@ -286,7 +286,7 @@ Envoi d’une newsletter à partir d’une liste :
 
 Cette section décrit comment s’abonner à une newsletter.
 
-### Abonnement à une newsletter {#subscribing-to-a-newsletter-1}
+### Abonnement à une newsletter  {#subscribing-to-a-newsletter-1}
 
 S’abonner à une newsletter (en utilisant le site Web Geometrixx comme exemple) :
 
