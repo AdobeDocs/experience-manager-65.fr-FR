@@ -62,7 +62,7 @@ L’éditeur en bloc permet ce qui suit :
 
 * [d’importer le contenu d’une feuille de calcul de données séparées par des tabulations.](#importing-content)
 
-### Recherche et modification du contenu {#searching-and-editing-content}
+### Recherche et modification du contenu  {#searching-and-editing-content}
 
 Pour utiliser l’éditeur en bloc pour modifier simultanément différents éléments, procédez comme suit :
 
@@ -86,7 +86,7 @@ Pour utiliser l’éditeur en bloc pour modifier simultanément différents él�
   </tr>
   <tr>
    <td>Case à cocher Mode de contenu</td>
-   <td>Activez cette case à cocher pour lire les propriétés dans le <code>jcr:content</code> sous-noeud des résultats de la recherche, le cas échéant. À utiliser uniquement pour des pages. Les noms de propriété sont précédés du préfixe <code>"jcr:content/"</code></td>
+   <td>Activez cette case à cocher pour lire les propriétés dans le sous-noeud <code>jcr:content</code> des résultats de la recherche, le cas échéant. À utiliser uniquement pour des pages. Les noms de propriété sont précédés du préfixe <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Propriétés / Colonnes</td>
@@ -94,7 +94,7 @@ Pour utiliser l’éditeur en bloc pour modifier simultanément différents él�
   </tr>
   <tr>
    <td>Propriétés / Colonnes personnalisées</td>
-   <td>Entrez les autres propriétés qui ne sont pas répertoriées dans le champ <strong>Propriétés/Colonnes</strong> . Ces propriétés personnalisées s’affichent dans le volet de résultats. Vous pouvez ajouter plusieurs propriétés en les séparant par des virgules. <i>Remarque :</i> Si vous ajoutez une propriété personnalisée qui n’existe pas encore, AEM WCM affiche une cellule vide. Lorsque vous modifiez la cellule vide et que vous l’enregistrez, la propriété est ajoutée au nœud. La propriété qui vient d’être créée doit respecter les contraintes de type de nœud et les espaces de noms des propriétés.</td>
+   <td>Entrez toute autre propriété qui n'est pas répertoriée dans le champ <strong>Propriétés/Colonnes</strong>. Ces propriétés personnalisées s’affichent dans le volet de résultats. Vous pouvez ajouter plusieurs propriétés en les séparant par des virgules. <i>Remarque : </i> si vous ajoutez une propriété personnalisée qui n’existe pas encore, AEM WCM affiche une cellule vide. Lorsque vous modifiez la cellule vide et que vous l’enregistrez, la propriété est ajoutée au nœud. La propriété qui vient d’être créée doit respecter les contraintes de type de nœud et les espaces de noms des propriétés.</td>
   </tr>
  </tbody>
 </table>
@@ -120,8 +120,8 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 
 #### Paramètres de requête GQL supplémentaires {#additional-gql-query-parameters}
 
-* **chemin :** recherchez uniquement les noeuds sous ce chemin. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme sera pris en compte.
-* **type :** renvoie uniquement les noeuds des types de noeud donnés. Cela inclut le type principal, ainsi que les types Mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds correspondant à l’un des types spécifiés.
+* **path:** uniquement les noeuds de recherche sous ce chemin. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme sera pris en compte.
+* **type : renvoie** uniquement les noeuds des types de noeud donnés. Cela inclut le type principal, ainsi que les types Mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds correspondant à l’un des types spécifiés.
 * **order :** trier le résultat selon les propriétés données. Vous pouvez spécifier plusieurs noms de propriété séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple : order:-name. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également le paramètre par défaut.
 * **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple : limit:10.20 Veuillez noter que l&#39;intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert : limit:10.. ou limite :..20 Si les points sont omis et qu&#39;une seule valeur est spécifiée, GQL renvoie au maximum ce nombre de résultats. Par exemple, limit:10 (renverra les 10 premiers résultats)
 
@@ -145,9 +145,9 @@ Pour exporter du contenu, procédez comme suit :
 
    ![](assets/exportinexcel.png)
 
-### Importation de contenu {#importing-content}
+### Importation de contenu  {#importing-content}
 
-Par défaut, la fonctionnalité d’importation est masquée lorsque vous ouvrez l’éditeur en bloc. Il suffit d’ajouter le paramètre `hib=false` à l’adresse URL pour afficher le bouton **Importer** dans la page Éditeur en bloc. You can import content from any tab-separated ( `.tsv`) file. Pour que l’importation fonctionne correctement, les titres de colonne (première ligne des cellules) doivent correspondre aux titres de colonne du tableau dans lequel vous importez le contenu.
+Par défaut, la fonctionnalité d’importation est masquée lorsque vous ouvrez l’éditeur en bloc. Il suffit d’ajouter le paramètre `hib=false` à l’adresse URL pour afficher le bouton **Importer** dans la page Éditeur en bloc. Vous pouvez importer du contenu à partir de n’importe quel fichier séparé par des tabulations ( `.tsv`). Pour que l’importation fonctionne correctement, les titres de colonne (première ligne des cellules) doivent correspondre aux titres de colonne du tableau dans lequel vous importez le contenu.
 
 >[!NOTE]
 >
@@ -159,4 +159,4 @@ Pour importer du contenu, procédez comme suit :
 1. Ajouter `?hib=false` à l’URL, par exemple :
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Cliquez sur **Importer**.
-1. Select the `.tsv` file. Les données sont importées dans le référentiel.
+1. Sélectionnez le fichier `.tsv`. Les données sont importées dans le référentiel.
