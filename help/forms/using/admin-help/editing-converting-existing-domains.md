@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Vous pouvez modifier les paramètres des domaines existants à partir de la page Gestion des domaines. Vous avez également la possibilité de convertir un domaine d’entreprise existant en domaine hybride.
 
-## Modification d’un domaine {#edit-an-existing-domain}
+## Modification d’un domaine  {#edit-an-existing-domain}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine à modifier.
@@ -31,7 +31,7 @@ Vous pouvez modifier les paramètres des domaines existants à partir de la page
 1. Pour modifier les informations d’annuaire d’un domaine d’entreprise, cliquez sur le nom de l’annuaire situé au bas de la page. Dans la page Modifier l’annuaire, modifiez les paramètres selon les besoins. Voir [Ajout d’annuaires ou d’interfaces SPI personnalisées](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).
 1. Une fois les modifications effectuées, cliquez sur OK.
 
-## Conversion d’un domaine d’entreprise en domaine hybride {#convert-an-enterprise-domain-to-a-hybrid-domain}
+## Conversion d’un domaine d’entreprise en domaine hybride  {#convert-an-enterprise-domain-to-a-hybrid-domain}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine à convertir.
@@ -43,7 +43,7 @@ Vous pouvez modifier les paramètres des domaines existants à partir de la page
 >
 >si le domaine d’entreprise que vous convertissez ne contient pas de paramètres d’annuaire, les paramètres d’authentification LDAP sont perdus.
 
-## Conversion d’un domaine hybride en domaine d’entreprise {#convert-a-hybrid-domain-to-an-enterprise-domain}
+## Conversion d’un domaine hybride en domaine d’entreprise  {#convert-a-hybrid-domain-to-an-enterprise-domain}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine hybride à convertir.
