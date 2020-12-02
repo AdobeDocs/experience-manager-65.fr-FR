@@ -22,7 +22,7 @@ ht-degree: 65%
 
 Cette section explique comment développer l’outil d’éditeur en masse et comment étendre le composant Liste de produits, lui-même basé sur l’éditeur en masse.
 
-## Paramètres de requête de l’éditeur en masse {#bulk-editor-query-parameters}
+## Paramètres de requête de l’éditeur en masse  {#bulk-editor-query-parameters}
 
 Lorsque vous travaillez avec l’éditeur en masse, plusieurs paramètres de requête peuvent être ajoutés à l’URL pour appeler l’éditeur en masse avec une configuration spécifique. Pour que l’éditeur en masse soit toujours utilisé avec une certaine configuration, par exemple, comme dans le composant Liste de produits, vous devez modifier bulkeditor.jsp (situé dans /libs/wcm/core/components/bulkeditor) ou créer un composant avec la configuration spécifique. Les modifications apportées à l’aide des paramètres de requête ne sont pas permanentes.
 
@@ -78,7 +78,7 @@ Voici une liste des paramètres de requête de l’éditeur en masse :
   <tr>
    <td> initialSearch / is<br /> </td>
    <td> Booléen</td>
-   <td> lorsque la valeur est true, la requête est exécutée au chargement de la page.<br /> </td>
+   <td> lorsque true, la requête est exécutée au chargement de la page<br /> </td>
   </tr>
   <tr>
    <td> colsSelection / cs<br /> </td>
@@ -88,7 +88,7 @@ Voici une liste des paramètres de requête de l’éditeur en masse :
   <tr>
    <td> showGridOnly / sgo<br /> </td>
    <td> Booléen</td>
-   <td> lorsque la valeur est true, affiche uniquement la grille et non le panneau de recherche. <br /> </td>
+   <td> lorsque true, affiche uniquement la grille et non le panneau de recherche <br /> </td>
   </tr>
   <tr>
    <td> searchPanelCollapsed / spc</td>
@@ -267,7 +267,7 @@ Voici une représentation XML des sous-nœuds de la boîte de dialogue :
         </editor>
 ```
 
-### Propriétés de configuration de l’éditeur en masse {#bulk-editor-configuration-properties}
+### Propriétés de configuration de l’éditeur en masse  {#bulk-editor-configuration-properties}
 
 Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivant répertorie toutes les propriétés de configuration pour l’éditeur en masse.
 
@@ -523,9 +523,9 @@ La métadonnée de position forcée forcedPosition vous permet de spécifier l�
 
 Dans le premier exemple, la colonne de sélection est la première colonne configurée avec forcedPosition=&quot;0&quot;.
 
-### Servlet Query {#query-servlet}
+### Servlet Query  {#query-servlet}
 
-By default, the Query servlet can be found at `/libs/wcm/core/components/bulkeditor/json.java`. Vous pouvez configurer un autre chemin pour récupérer les données.
+Par défaut, la servlet de Requête se trouve sur `/libs/wcm/core/components/bulkeditor/json.java`. Vous pouvez configurer un autre chemin pour récupérer les données.
 
 Le servlet Query fonctionne comme suit : il reçoit une requête GQL et les colonnes à renvoyer, calcule les résultats et renvoie les résultats à l’éditeur en masse sous forme de flux JSON.
 
