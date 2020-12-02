@@ -34,7 +34,7 @@ Lorsqu’un document est protégé par une stratégie et que vous révoquez des 
 * Si le document est en ligne, la modification est appliquée immédiatement, sauf si l’utilisateur a ouvert le document. Si tel est le cas, l’utilisateur doit fermer le document pour que la modification soit prise en compte.
 * Si un destinataire utilise le document hors connexion (par exemple, sur un ordinateur portable), la modification prend effet lorsque le destinataire se synchronise avec Document Security en ouvrant un document protégé par une stratégie.
 
-## Affichage des informations sur un document {#view-information-about-a-document}
+## Affichage des informations sur un document  {#view-information-about-a-document}
 
 Pour chacun des documents répertoriés dans la page Documents, vous pouvez voir le nom du document, le nom de l’éditeur, le nom de la stratégie et la date à laquelle le document a été protégé. Si la stratégie qui protégeait un document a été supprimée, son ID apparaît sous le nom de la stratégie.
 
@@ -44,28 +44,28 @@ La page Détails du document permet également d’afficher d’autres informati
 >
 >Vous devez cliquer sur le lien Nom de la stratégie dans la page Détails du document pour accéder aux stratégies qui sont générées automatiquement dans Microsoft Outlook pour les destinataires d’un document joint à un courrier électronique. Ces stratégies n’apparaissent pas dans la page Stratégies.
 
-**Nom du document :** Nom du document sélectionné.
+**Nom du document :** nom du document sélectionné.
 
-**ID document :** Identificateur unique attribué par document Security lorsqu’une stratégie est appliquée au document. Document Security utilise ce numéro pour assurer le suivi du document.
+**ID de document :** identifiant unique attribué par document Security lorsqu’une stratégie est appliquée au document. Document Security utilise ce numéro pour assurer le suivi du document.
 
-**Etat du document :** Statut du document (par exemple, principal ou révoqué).
+**Etat du document :** état du document (principal ou révoqué, par exemple).
 
-**Editeur :** Nom de l’utilisateur qui a associé la stratégie au document.
+**Editeur :** nom de l’utilisateur qui a associé la stratégie au document.
 
-**Nom de la stratégie :** Nom de la stratégie utilisée pour protéger le document. Vous pouvez cliquer sur le nom pour ouvrir la stratégie. Utilisez ce lien pour accéder aux stratégies générées par Acrobat pour les destinataires d’un document joint à un courrier électronique dans Outlook. Ces stratégies n’apparaissent pas dans la page Stratégies.
+**Nom de la stratégie : nom** de la stratégie utilisée pour protéger le document. Vous pouvez cliquer sur le nom pour ouvrir la stratégie. Utilisez ce lien pour accéder aux stratégies générées par Acrobat pour les destinataires d’un document joint à un courrier électronique dans Outlook. Ces stratégies n’apparaissent pas dans la page Stratégies.
 
-**Type de stratégie :** Type de stratégie appliquée au document.
+**Type de stratégie :** type de stratégie appliqué au document.
 
-**Date de publication :** date à laquelle la stratégie a été appliquée au document.
+**Date de publication : date** à laquelle la stratégie a été appliquée au document.
 
-**Itérations connexes :** Si le document comporte des itérations associées, cet élément apparaît également dans la liste. Cliquez sur le lien pour afficher la liste des itérations associées pour le document.
+**Itérations associées :** si le document comporte des itérations associées, cet élément apparaît également dans la liste. Cliquez sur le lien pour afficher la liste des itérations associées pour le document.
 
 Les utilisateurs peuvent afficher les informations relatives à leurs documents protégés. Les administrateurs peuvent afficher des informations sur les documents que les utilisateurs ont protégés avec une stratégie. Les coordinateurs de jeux de stratégies peuvent afficher des informations sur les documents protégés par des stratégies appartenant à leurs jeux.
 
 1. Dans la page Document Security, cliquez sur Documents.
 1. Dans la liste des documents, cliquez sur le document approprié. La page Détails du document qui apparaît affiche des informations détaillées sur le document. Elle fournit également des options permettant de révoquer l’accès au document, de changer de stratégie et d’afficher les événements concernant ce document.
 
-## Affichage des itérations associées pour un document {#view-related-iterations-for-a-document}
+## Affichage des itérations associées pour un document  {#view-related-iterations-for-a-document}
 
 Si le suivi des itérations associées est activé, vous pouvez procéder au suivi des versions d’un document enregistrées par différents utilisateurs. Cette fonction est uniquement prise en charge par certaines applications, telles que PTC Pro/ENGINEER Wildfire.
 
@@ -84,15 +84,15 @@ Si cette fonction est activée, vous pouvez afficher les itérations associées 
 
 1. Pour afficher la page Détails du document de cette itération, cliquez sur le nom de fichier d’une itération.
 
-## Révocation et rétablissement de l’accès aux documents {#revoking-and-reinstating-access-to-documents}
+## Révocation et rétablissement de l’accès aux documents  {#revoking-and-reinstating-access-to-documents}
 
 Vous pouvez révoquer et rétablir l’accès à des documents protégés par une stratégie :
 
-**Utilisateurs :** Peut révoquer ou rétablir l’accès aux documents qu’ils protègent avec leurs propres stratégies personnelles ou avec des stratégies partagées pour lesquelles la fonctionnalité de révocation est activée pour l’utilisateur qui applique la stratégie. les utilisateurs qui ne peuvent pas révoquer l’accès à un document ou changer de stratégie doivent contacter un administrateur.
+**Utilisateurs :** peut révoquer ou rétablir l’accès aux documents qu’ils protègent avec leurs propres stratégies personnelles ou avec des stratégies partagées pour lesquelles la fonctionnalité de révocation est activée pour l’utilisateur qui applique la stratégie. les utilisateurs qui ne peuvent pas révoquer l’accès à un document ou changer de stratégie doivent contacter un administrateur.
 
-**Administrateurs :** Peut révoquer ou rétablir des privilèges d’accès à tout document protégé par une stratégie, y compris ceux protégés par des stratégies personnelles ou partagées. Si un administrateur révoque l’accès à un document protégé par une stratégie partagée, seul un administrateur peut rétablir les privilèges d’accès à ce document.
+**Administrateurs :** peut révoquer ou rétablir des privilèges d’accès à tout document protégé par une stratégie, y compris ceux protégés par des stratégies personnelles ou partagées. Si un administrateur révoque l’accès à un document protégé par une stratégie partagée, seul un administrateur peut rétablir les privilèges d’accès à ce document.
 
-**Coordinateurs de jeux de stratégies :** peuvent révoquer ou rétablir les privilèges d’accès pour les documents protégés par des stratégies issues de leurs jeux de stratégies.
+**Coordinateurs de jeux de stratégies :** peut révoquer ou rétablir des privilèges d’accès pour les documents protégés par des stratégies issues de leurs jeux de stratégies.
 
 Lorsque vous révoquez ou rétablissez des privilèges d’accès à des documents, l’application de la modification varie selon l’état du document :
 
@@ -119,7 +119,7 @@ Lorsque vous révoquez ou rétablissez des privilèges d’accès à des documen
 1. Dans la liste des documents, cliquez sur le document approprié.
 1. Cliquez sur Annuler la révocation et cliquez sur OK.
 
-## Changement de la stratégie appliquée à un document {#switch-a-policy-that-is-applied-to-a-document}
+## Changement de la stratégie appliquée à un document  {#switch-a-policy-that-is-applied-to-a-document}
 
 Les utilisateurs, les coordinateurs de jeux de stratégies et les administrateurs peuvent changer la stratégie appliquée à un document protégé (vous ne pouvez appliquer à un document qu’une seule stratégie à la fois). Les utilisateurs peuvent changer la stratégie appliquée à l’un de leurs documents protégés, s’ils ont créé cette stratégie ou s’il s’agit d’une stratégie partagée autorisant cette opération. Dans le cas contraire, seul l’administrateur ou le coordinateur de jeux de stratégies peut changer la stratégie. Les administrateurs peuvent changer les stratégies de n’importe quel document protégé par un utilisateur. Les coordinateurs de jeux de stratégies peuvent choisir une autre stratégie dans leurs jeux.
 
@@ -140,23 +140,23 @@ Lorsque vous changez une stratégie, la nouvelle est appliquée comme suit :
 1. Sélectionnez une nouvelle stratégie dans la liste.
 1. Cliquez sur Changer de stratégie, puis sur OK pour revenir à la page Documents.
 
-## Recherche d’un document {#search-for-a-document}
+## Recherche d’un document  {#search-for-a-document}
 
 Vous pouvez rechercher des documents dans la page Documents en combinant des plages de dates et des critères de recherche disponibles dans la liste. Ces critères incluent le nom du document, le nom de la stratégie ou tous les documents.
 
 Des options de recherche supplémentaires sont disponibles uniquement pour les administrateurs :
 
-**ID document :** ID unique que document Security attribue au document lorsque la stratégie est appliquée.
+**ID de document : numéro d’ID** unique attribué par document Security au document lorsque la stratégie est appliquée.
 
-**Nom du document :** Nom du document.
+**nom du document :** nom du document.
 
-**Nom de l’éditeur :** Nom de l’utilisateur qui a associé la stratégie au document. Vous pouvez sélectionner l’utilisateur à partir de tous les domaines ou d’un domaine spécifique.
+**Nom de l’éditeur :** nom de l’utilisateur qui a associé la stratégie au document. Vous pouvez sélectionner l’utilisateur à partir de tous les domaines ou d’un domaine spécifique.
 
 **ID de stratégie :** ID de la stratégie associée au document.
 
-**Nom de la stratégie :** Nom de la stratégie associée au document.
+**Nom de la stratégie :** nom de la stratégie associée au document.
 
-**Tous les documents :** Tous les documents sont protégés par les administrateurs et les utilisateurs. L’utilisation de cette option risque de renvoyer une liste de documents particulièrement longue.
+**Tous les documents :** tous les documents protégés par les administrateurs et les utilisateurs. L’utilisation de cette option risque de renvoyer une liste de documents particulièrement longue.
 
 1. Dans la page Document Security, cliquez sur Documents.
 1. Dans la liste Rechercher, sélectionnez les critères de recherche requis.
@@ -174,7 +174,7 @@ Des options de recherche supplémentaires sont disponibles uniquement pour les a
 
 1. Cliquez sur Rechercher.
 
-## Tri de la liste des documents {#sort-the-document-list}
+## Tri de la liste des documents  {#sort-the-document-list}
 
 Vous pouvez trier la liste des documents par en-tête de colonne. Le triangle situé à côté de l’en-tête de colonne indique la colonne triée. Lorsque le triangle est dirigé vers le haut, l’ordre de tri est croissant et lorsqu’il est dirigé vers le bas, l’ordre de tri est décroissant.
 
@@ -182,7 +182,7 @@ Vous pouvez trier la liste des documents par en-tête de colonne. Le triangle si
 1. Cliquez sur l’en-tête de colonne approprié.
 1. Pour modifier l’ordre de tri, cliquez de nouveau sur l’en-tête de colonne.
 
-## Ajout d’une page de garde aux documents protégés par une stratégie {#add-cover-page-to-policy-protected-documents}
+## Ajout d’une page de garde aux documents protégés par une stratégie  {#add-cover-page-to-policy-protected-documents}
 
 Dans la plupart des visionneuses PDF autres qu’Adobe, si vous ouvrez un document protégé par Document Security, la première page est vide ou l’application s’interrompt sans ouvrir le document.
 
@@ -196,10 +196,11 @@ Vous pouvez utiliser la prise en charge Page 0 (Wrapper Document) pour permettr
 
 Utilisez les processus suivants dans Workbench :
 
-**Protéger le document avec la page de couverture :** sécurise un document PDF avec la stratégie spécifiée et ajoute une page de garde au document.
+**Document Protect avec page de couverture :** sécurise un document PDF avec la stratégie spécifiée et ajoute une page de garde au document.
 
-**Extraire le Document protégé :** Extrait le document PDF protégé par une stratégie du document PDF avec la page de garde
+**Extraire le Document protégé :** extrait le document PDF protégé par une stratégie du document PDF avec la page de garde.
 
 Utilisez les API de Document Security suivants :
 
-**protectDocumentWithCoverPage :** sécurise un PDF donné avec la stratégie spécifiée et renvoie un document avec une page de garde et le document protégé en tant que pièce jointe`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument :** Extrait le document protégé qui est une pièce jointe dans le document avec page de garde. Le document avec la page de garde peut être créé à l’aide de la méthode protectDocumentWithCoverPage. `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`
+**protectDocumentWithCoverPage :** sécurise un PDF donné avec la stratégie spécifiée et renvoie un document avec une page de garde et le document protégé en tant que pièce jointe 
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extraieProtectedDocument :** Extrait le document protégé qui est une pièce jointe dans le document avec la page de garde. Le document avec la page de garde peut être créé à l’aide de la méthode protectDocumentWithCoverPage. `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`
