@@ -18,11 +18,11 @@ ht-degree: 89%
 ---
 
 
-# Consultation et compréhension des rapports d’analyse d’AEM Forms {#view-and-understand-aem-forms-analytics-reports}
+# Consultation et compréhension des rapports d’analyse d’AEM Forms  {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms s’intègre à Adobe Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
 
-## Configuration de l’analyse {#setting-up-analytics}
+## Configuration de l’analyse  {#setting-up-analytics}
 
 La fonctionnalité d’analyse des formulaires AEM est disponible dans le module complémentaire des formulaires AEM. Pour plus d’informations sur l’installation du module complémentaire, voir [Installation et configuration d’AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
@@ -30,7 +30,7 @@ Outre le module complémentaire, vous devez disposer d’un compte Adobe Analyti
 
 Une fois que vous disposez du module complémentaire AEM Forms et d’un compte Adobe Analytics, intégrez le compte Adobe Analytics à AEM Forms et activez le suivi sur vos formulaires ou documents comme décrit à la section [Configuration des analyses et des rapports](../../forms/using/configure-analytics-forms-documents.md).
 
-### Enregistrement des informations d’interaction utilisateur {#how-user-interaction-information-is-recorded}
+### Enregistrement des informations d’interaction utilisateur  {#how-user-interaction-information-is-recorded}
 
 Lorsqu’un utilisateur interagit avec le formulaire, les interactions sont enregistrées et envoyées au serveur d’analyse. La liste suivante indique les appels de serveur pour différentes activités utilisateur :
 
@@ -52,20 +52,20 @@ Lorsqu’un utilisateur interagit avec le formulaire, les interactions sont enre
 
 Pour afficher les rapports d’analyse, procédez comme suit :
 
-1. Log in to the AEM portal at `https://[hostname]:'port'`
+1. Connectez-vous au portail AEM à l’adresse `https://[hostname]:'port'`
 1. Cliquez sur **Formulaires > Formulaires &amp; Documents**.
 1. Sélectionnez le formulaire pour lequel vous souhaitez afficher les rapports d’analyse.
 1. Sélectionnez **Plus > Rapports Analytics**.
 
 ![rapport analytique](assets/analyticsreport.png)
 
-**A.** Rapport Analytics, commande
+**Rapport A.** Analytics, commande
 
 AEM Forms affiche des rapports d’analyse pour le formulaire et chaque panneau de celui-ci, comme illustré dans le rapport de synthèse ci-dessous.
 
 ![Rapport de synthèse d’un formulaire adaptatif](assets/analyticsdashboard_callout.png)
 
-**A.** Conversions **B.** Résumé au niveau du formulaire **C.** Résumé au niveau du panneau **D.** Navigateurs de visiteurs - filtrer E. OS de visiteurs - filtrer la langue de visiteur - filtrer la langue de la  - filtrer ********
+**A.** Conversions  **B.** Résumé au niveau du formulaire  **C.** Résumé au niveau du panneau  **D.** Navigateurs de visiteurs - filtrer E.OS de visiteurs - filtrer la langue de visiteur - filtrer la langue de  - filtrer ********
 
 Par défaut, le rapport affiche l’analyse des sept derniers jours. Vous pouvez afficher des récapitulatifs pour les 15 derniers jours, le dernier mois et ainsi de suite, ou bien indiquer une période.
 
