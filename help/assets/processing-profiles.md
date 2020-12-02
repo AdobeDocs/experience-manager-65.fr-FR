@@ -44,7 +44,7 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 
 >[!NOTE]
 >
->S’applique au mode *Scene7 Media* dynamique uniquement dans AEM version 6.4.6.0 ou ultérieure.
+>S’applique à *Contenu multimédia dynamique - Mode Scene7* uniquement dans AEM 6.4.6.0 ou version ultérieure.
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de traitement existant que vous avez modifié ultérieurement.
 
@@ -80,13 +80,13 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
    ![Workflow de retraitement des ressources 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Cliquez sur **[!UICONTROL Démarrer le workflow.]**
-1. Dans la liste déroulante **[!UICONTROL Démarrer le workflow]**, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources.]**
+1. Cliquez sur **[!UICONTROL Démarrer le processus.]**
+1. Dans la liste déroulante **[!UICONTROL Démarrer le processus]**, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources.]**
 1. (Facultatif) Dans la zone de texte **Entrer le titre du processus**, saisissez le nom du workflow. Si nécessaire, vous pouvez utiliser le nom pour faire référence à l’instance de workflow.
 
    ![Retraiter les ressources 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Cliquez sur **[!UICONTROL Démarrer]**, puis sur **[!UICONTROL Confirmer.]**
+1. Cliquez sur **[!UICONTROL Début]**, puis sur **[!UICONTROL Confirmer.]**
 
    Pour surveiller le workflow ou vérifier sa progression, cliquez sur **[!UICONTROL Outils > Workflow dans la page de console principale d’AEM.]** Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, cliquez sur **[!UICONTROL Ouvrir l’historique.]** Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
 
@@ -96,14 +96,14 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
-1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
-1. Sur la page Modèles de workflow, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
+1. En Experience Manager, cliquez sur **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis cliquez sur l&#39;icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Processus > Modèles.]**
+1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
 
-   ![Page Modèles de workflow avec le workflow Scene7 : Retraiter les ressources sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)
+   ![Page Modèles de processus avec le workflow Scene7 : Retraiter les ressources sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Modifier.]** Un nouvel onglet de navigateur ouvre la page du modèle de workflow Scene7 : Retraiter les ressources.
-1. On the Scene7: Reprocess Assets workflow page, near the upper-right corner, click **[!UICONTROL Edit]** to &quot;unlock&quot; the workflow.
-1. In the workflow, select the Scene7 Batch Upload component to open the toolbar, then click **[!UICONTROL Configure]** on the toolbar.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Modifier.]** Un nouvel onglet de navigateur ouvre la page du modèle de processus Scene7 : Retraiter les ressources.
+1. Sur la Scene7 : Retraiter la page de processus des ressources, près du coin supérieur droit, cliquez sur **[!UICONTROL Modifier]** pour &quot;déverrouiller&quot; le processus.
+1. Dans le processus, sélectionnez le composant de transfert par lots Scene7 pour ouvrir la barre d’outils, puis cliquez sur **[!UICONTROL Configurer]** dans la barre d’outils.
 
    ![Composant Transfert par lots Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -117,9 +117,9 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
    ![Boîte de dialogue des propriétés](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialog box, click **[!UICONTROL Done]**.
+1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Télécharger par lots vers Scene7 - Propriétés des étapes]**, cliquez sur **[!UICONTROL Terminé]**.
 
-1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
+1. Dans le coin supérieur droit de la Scene7 : Retraiter la page du modèle de processus des ressources, cliquez sur **[!UICONTROL Sync]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
 
    ![Synchronisation du modèle de workflow](/help/assets/assets-dm/reprocess-assets1.png)
 
