@@ -20,22 +20,22 @@ ht-degree: 73%
 
 Les informations relatives aux utilisateurs et aux groupes sont gérées dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management n’a pas la possibilité d’écrire dans le système de stockage tiers, mais assure la synchronisation de ces informations avec sa propre base de données
 
-## Créer un utilisateur {#create-a-user}
+## Créer un utilisateur  {#create-a-user}
 
 Lorsque vous créez des utilisateurs, vous pouvez les ajouter à des groupes et leur affecter des rôles.
 
-1. In administration console, click **[!UICONTROL Settings > User Management > Users and Groups]**, and click **[!UICONTROL New User]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > User Management > Utilisateurs et groupes]**, puis sur **[!UICONTROL Nouvel utilisateur]**.
 .
-1. Under **[!UICONTROL General Settings]**, provide information as required, and then click **[!UICONTROL Next]**. Pour plus d’informations sur ces paramètres, voir [Paramètres utilisateur](adding-configuring-users.md#user-settings).
-1. (Optional) To add the user to a group, click **[!UICONTROL Find Groups]**, and do these tasks:
+1. Sous **[!UICONTROL Paramètres généraux]**, fournissez les informations requises, puis cliquez sur **[!UICONTROL Suivant]**. Pour plus d’informations sur ces paramètres, voir [Paramètres utilisateur](adding-configuring-users.md#user-settings).
+1. (Facultatif) Pour ajouter l’utilisateur à un groupe, cliquez sur **[!UICONTROL Rechercher des groupes]**, puis effectuez les tâches suivantes :
 
-   * In the **[!UICONTROL Find]** box, type all or part of the group name.
-   * Select the domain to search, select the number of items to display, and click **[!UICONTROL Find]**.
-   * (Optional) To view group details, select the group name, and then click **[!UICONTROL OK]** to return to the search results page.
-   * Select the check box for the group and click **[!UICONTROL OK]**.
-   * Cliquez sur **[!UICONTROL Suivant]**.
+   * Dans la zone **[!UICONTROL Rechercher]**, entrez tout ou partie du nom du groupe.
+   * Sélectionnez le domaine à rechercher, le nombre d’éléments à afficher, puis cliquez sur **[!UICONTROL Rechercher]**.
+   * (Facultatif) Pour vue les détails du groupe, sélectionnez le nom du groupe, puis cliquez sur **[!UICONTROL OK]** pour revenir à la page des résultats de la recherche.
+   * Cochez la case du groupe et cliquez sur **[!UICONTROL OK]**.
+   * Cliquez sur **[!UICONTROL Next]** (Suivant).
 
-1. (Optional) To assign roles to the user, click **[!UICONTROL Find Roles]**, select the check box for the roles to assign, and then click **[!UICONTROL OK]**.
+1. (Facultatif) Pour attribuer des rôles à l’utilisateur, cliquez sur **[!UICONTROL Rechercher des rôles]**, cochez la case correspondant aux rôles à affecter, puis cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Terminer]**.
 
    >[!NOTE]
@@ -48,7 +48,7 @@ Spécifiez les paramètres ci-dessous lorsque vous créez ou modifiez un utilisa
 
 **Nom canonique :**(obligatoire) identificateur unique de l’utilisateur. Tous les utilisateurs et groupes d’un domaine doivent disposer d’un nom canonique unique. Cochez la case Généré par le système pour laisser User Management affecter une valeur unique au paramètre Nom canonique ou désélectionnez la case et saisissez une valeur personnalisée.
 
-Avoid using underscore characters (_) in canonical names, for example, `sample_user`. Lorsque vous recherchez des utilisateurs à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
+Evitez d’utiliser des caractères de soulignement (_) dans les noms canoniques, par exemple `sample_user`. Lorsque vous recherchez des utilisateurs à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
 
 **Prénom :**(obligatoire) prénom de l’utilisateur.
 
@@ -84,7 +84,7 @@ Limitez la longueur du nom à moins de 53 caractères. Un nom court contribue �
 
 **ID utilisateur :**(obligatoire) ID que l’utilisateur utilise pour se connecter. L’ID utilisateur n’est pas sensible à la casse et doit être unique pour tout le domaine.
 
-Dans les domaines d’entreprise, utilisez un attribut non ND comme ID utilisateur, car le ND d’un utilisateur peut changer si l’utilisateur évolue au sein de l’entreprise. Ce paramètre dépend du serveur d’annuaire. The value is `objectGUID` for Active Directory 2003, `nsuniqueID` for Sun™ One, and `guid` for eDirectory.
+Dans les domaines d’entreprise, utilisez un attribut non ND comme ID utilisateur, car le ND d’un utilisateur peut changer si l’utilisateur évolue au sein de l’entreprise. Ce paramètre dépend du serveur d’annuaire. La valeur est `objectGUID` pour Principale Directory 2003, `nsuniqueID` pour Sun™ One et `guid` pour eDirectory.
 
 Assurez-vous que l’ID utilisateur est unique. N’utilisez pas un ID qui était affecté à un utilisateur supprimé.
 
@@ -98,7 +98,7 @@ Evitez de créer des noms d’utilisateur commençant par un dièse (#). Les rec
 
 **Mot de passe et Confirmer le mot de passe :** mot de passe que l’utilisateur utilise pour se connecter. Il doit comporter huit caractères au minimum. Aucun mot de passe n’est exigé si l’utilisateur fait partie d’un domaine hybride.
 
-## Affichage des détails d’un utilisateur {#view-details-about-a-user}
+## Affichage des détails d’un utilisateur  {#view-details-about-a-user}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Indiquez les informations permettant d’affiner la recherche, puis, dans la liste Dans, sélectionnez Utilisateurs et cliquez sur Rechercher. Les résultats de recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur les en-têtes de colonne.
@@ -108,60 +108,60 @@ Evitez de créer des noms d’utilisateur commençant par un dièse (#). Les rec
    * rôles qui lui sont affectés ;
    * groupes dont il est membre.
 
-## Modification du mot de passe d’un utilisateur local {#change-the-password-for-a-local-user}
+## Modification du mot de passe d’un utilisateur local  {#change-the-password-for-a-local-user}
 
-1. In administration console, click **[!UICONTROL Settings > User Management > Users and Groups]**.
-1. Specify information to narrow the search for a particular user and click **[!UICONTROL Find]**. Les résultats de recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur les en-têtes de colonne.
-1. Click the name of the user and then click **[!UICONTROL Change Password]**.
-1. Type and confirm the new password, and then click **[!UICONTROL OK]**. Le mot de passe doit contenir au moins huit caractères.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > User Management > Utilisateurs et groupes]**.
+1. Spécifiez les informations permettant de restreindre la recherche d’un utilisateur particulier et cliquez sur **[!UICONTROL Rechercher]**. Les résultats de recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur les en-têtes de colonne.
+1. Cliquez sur le nom de l’utilisateur, puis sur **[!UICONTROL Changer de mot de passe]**.
+1. Saisissez et confirmez le nouveau mot de passe, puis cliquez sur **[!UICONTROL OK]**. Le mot de passe doit contenir au moins huit caractères.
 
-## Modification des propriétés d’un utilisateur {#edit-a-user-s-properties}
+## Modification des propriétés d’un utilisateur  {#edit-a-user-s-properties}
 
-1. In administration console, click **[!UICONTROL Settings > User Management > Users and Groups]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > User Management > Utilisateurs et groupes]**.
 1. Pour rechercher l’utilisateur à modifier, procédez comme suit :
 
-   * In the **[!UICONTROL Find]** box, type your search criteria.
-   * In the **[!UICONTROL Using]** list, select **[!UICONTROL Name]**, **[!UICONTROL Email]**, or **[!UICONTROL User ID]**.
-   * In the **[!UICONTROL In list]**, select **[!UICONTROL Users]**.
-   * Select the domain, select the number of items to display, and then click **[!UICONTROL Find]**.
+   * Dans la zone **[!UICONTROL Rechercher]**, entrez vos critères de recherche.
+   * Dans la liste **[!UICONTROL Utilisation]**, sélectionnez **[!UICONTROL Nom]**, **[!UICONTROL Courriel]** ou **[!UICONTROL ID utilisateur]**.
+   * Dans la **[!UICONTROL liste]**, sélectionnez **[!UICONTROL Utilisateurs]**.
+   * Sélectionnez le domaine, le nombre d’éléments à afficher, puis cliquez sur **[!UICONTROL Rechercher]**.
 
 1. Cliquez sur l’utilisateur à modifier.
-1. For a user who is part of a local or hybrid domain, on the **[!UICONTROL Detail]** tab, edit the **[!UICONTROL General Settings]** and **[!UICONTROL Login Settings]**, and click **[!UICONTROL Save]**. Pour plus d’informations sur ces paramètres, voir [Paramètres utilisateur](adding-configuring-users.md#user-settings). Vous n’avez pas la possibilité de modifier les paramètres généraux ni les paramètres de connexion d’un utilisateur appartenant à un domaine d’entreprise.
-1. To edit the group settings for the user, click the **[!UICONTROL Group Membership]** tab and do these tasks:
+1. Pour un utilisateur faisant partie d’un domaine local ou hybride, dans l’onglet **[!UICONTROL Détails]**, modifiez les **[!UICONTROL Paramètres généraux]** et **[!UICONTROL Paramètres de connexion]**, puis cliquez sur **[!UICONTROL Enregistrer]**. Pour plus d’informations sur ces paramètres, voir [Paramètres utilisateur](adding-configuring-users.md#user-settings). Vous n’avez pas la possibilité de modifier les paramètres généraux ni les paramètres de connexion d’un utilisateur appartenant à un domaine d’entreprise.
+1. Pour modifier les paramètres de groupe de l’utilisateur, cliquez sur l’onglet **[!UICONTROL Appartenance au groupe]** et procédez comme suit :
 
-   * Click **[!UICONTROL Find Group]** and complete the search information.
-   * To add the user to a new group, select the check box for the group, click **[!UICONTROL OK]**, and then click **[!UICONTROL Save]**.
+   * Cliquez sur **[!UICONTROL Rechercher un groupe]** et complétez les informations de recherche.
+   * Pour ajouter l’utilisateur à un nouveau groupe, cochez la case correspondant au groupe, cliquez sur **[!UICONTROL OK]**, puis sur **[!UICONTROL Enregistrer]**.
 
    >[!NOTE]
    >
    >il n’est pas possible d’ajouter des utilisateurs locaux à des groupes d’annuaires. Néanmoins, il est possible d’ajouter des utilisateurs d’annuaire à des groupes locaux.
 
-   * To remove the user from a group, select the check box for the group, click **[!UICONTROL Delete]**, and then click **[!UICONTROL Save]**.
+   * Pour supprimer l’utilisateur d’un groupe, activez la case à cocher correspondant au groupe, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL Enregistrer]**.
 
 
-1. To edit the user’s roles, click the **[!UICONTROL Role Assignments]** tab and do these tasks:
+1. Pour modifier les rôles de l’utilisateur, cliquez sur l’onglet **[!UICONTROL Affectations de rôles]** et procédez comme suit :
 
-   * To display a list of roles, click **[!UICONTROL Find Roles]**.
-   * To add a role, select the check box for the role, click **[!UICONTROL OK]**, and then click **[!UICONTROL Save]**.
-   * To remove a role, select the check box for the role, click **[!UICONTROL Unassign]**, and then click **[!UICONTROL Save]**.
+   * Pour afficher une liste de rôles, cliquez sur **[!UICONTROL Rechercher des rôles]**.
+   * Pour ajouter un rôle, cochez la case correspondant au rôle, cliquez sur **[!UICONTROL OK]**, puis sur **[!UICONTROL Enregistrer]**.
+   * Pour supprimer un rôle, activez la case à cocher correspondante, cliquez sur **[!UICONTROL Annuler l&#39;affectation]**, puis sur **[!UICONTROL Enregistrer]**.
 
 ## Suppression d’un utilisateur {#delete-a-user}
 
-1. In administration console, click **[!UICONTROL Settings > User Management > Users and Groups]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > User Management > Utilisateurs et groupes]**.
 1. Pour rechercher l’utilisateur à supprimer, procédez comme suit :
 
-   * In the **[!UICONTROL Find]** box, type your search criteria.
-   * In the **[!UICONTROL Using]** list, select **[!UICONTROL Name]**, **[!UICONTROL Email]**, or **[!UICONTROL User ID]**.
-   * In the **[!UICONTROL In list]**, select **[!UICONTROL Users]**.
-   * Select the domain, select the number of items to display, and then click **[!UICONTROL Find]**.
+   * Dans la zone **[!UICONTROL Rechercher]**, entrez vos critères de recherche.
+   * Dans la liste **[!UICONTROL Utilisation]**, sélectionnez **[!UICONTROL Nom]**, **[!UICONTROL Courriel]** ou **[!UICONTROL ID utilisateur]**.
+   * Dans la **[!UICONTROL liste]**, sélectionnez **[!UICONTROL Utilisateurs]**.
+   * Sélectionnez le domaine, le nombre d’éléments à afficher, puis cliquez sur **[!UICONTROL Rechercher]**.
 
-1. Select the check box for the user, click **[!UICONTROL Delete]**, and then click **[!UICONTROL OK]**.
+1. Cochez la case correspondant à l’utilisateur, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL OK]**.
 
 >[!NOTE]
 >
 >AEM Forms sur JEE permet également aux utilisateurs du module complémentaire AEM Forms exécuté dans un environnement OSGi d’être reconnus en tant qu’utilisateurs AEM. Ceci est nécessaire dans les cas où une authentification unique entre AEM Forms sur JEE et le module complémentaire AEM Forms exécuté dans un environnement OSGi est requise (dans le cas de l’espace de travail HTML par exemple). L’opération de suppression mentionnée ci-dessus supprime un utilisateur d’AEM Forms sur JEE uniquement . L’utilisateur n’est pas supprimé du module complémentaire AEM Forms exécuté dans un environnement OSGi. Toutefois, toute tentative de connexion effectuée après la suppression de l’utilisateur (une tentative de connexion au module complémentaire AEM Forms sur un serveur JEE ou au module complémentaire AEM Forms dans un environnement OSGi) est refusée.
 
-## Création d’un gestionnaire d’erreur de connexion personnalisé {#create-custom-login-error-handler}
+## Création d’un gestionnaire d’erreur de connexion personnalisé  {#create-custom-login-error-handler}
 
 Si un utilisateur ne disposant pas des autorisations AEM forms et CQ requises tente de se connecter aux applications AEM forms suivantes intégrées à CQ, il est redirigé vers la page CQ 404, indiquant le suivi de l’erreur :
 
