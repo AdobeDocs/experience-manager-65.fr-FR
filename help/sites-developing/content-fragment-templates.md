@@ -41,7 +41,7 @@ Emplacement pour l’incrustation de modèles prêts à l’emploi ou la fournit
 * `/conf/global/settings/dam/cfm/templates`
 Emplacement des modèles spécifiques au client à l’échelle de l’instance qui doivent être modifiés au moment de l’exécution.
 
-The order of precedence is (in descending order) `/conf`, `/apps`, `/libs`.
+L&#39;ordre de priorité est (dans l&#39;ordre décroissant) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
@@ -51,7 +51,7 @@ The order of precedence is (in descending order) `/conf`, `/apps`, `/libs`.
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
    >
    >
 1. Apportez les modifications désirées dans `/apps`
@@ -104,7 +104,7 @@ La structure spécifique étant :
 
 Plus de détails sur les nœuds et leurs propriétés : 
 
-* **Template (Modèle)**
+* **Template**
 
    <table>
    <tbody>
@@ -121,12 +121,12 @@ Plus de détails sur les nœuds et leurs propriétés :
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>required<br /> </p> </td>
-     <td>Titre du modèle (affiché dans l’assistant <strong>Créer un fragment</strong> ).</td>
+     <td>Titre du modèle (affiché dans l’assistant <strong>Créer un fragment</strong>).</td>
     </tr>
     <tr>
      <td><code>jcr:description</code></td>
      <td><p><code>String</code></p> <p>facultatif</p> </td>
-     <td>Texte décrivant l’objectif du modèle (affiché dans l’assistant <strong>Créer un fragment</strong> ).</td>
+     <td>Texte décrivant l’objectif du modèle (affiché dans l’assistant <strong>Créer un fragment</strong>).</td>
     </tr>
     <tr>
      <td><code>initialAssociatedContent</code></td>
@@ -136,12 +136,12 @@ Plus de détails sur les nœuds et leurs propriétés :
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>requis</p> </td>
-     <td><p><code>true</code>, si les sous-ressources représentant les éléments (à l’exception de l’élément maître) du fragment de contenu doivent être créées lors de la création du fragment de contenu ; <em>false</em> s’ils doivent être créés "à la volée".</p> <p><strong>Remarque</strong>: actuellement, ce paramètre doit être défini sur <code>true</code>.</p> </td>
+     <td><p><code>true</code>, si les sous-ressources représentant les éléments (à l’exception de l’élément maître) du fragment de contenu doivent être créées lors de la création du fragment de contenu ; <em>false</em> s'ils doivent être créés "à la volée".</p> <p><strong>Remarque</strong> : actuellement, ce paramètre doit être défini sur  <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
      <td><p><code>Long</code></p> <p>requis</p> </td>
-     <td><p>version de la structure de contenu ; actuellement pris en charge :</p> <p><strong>Remarque</strong>: actuellement, ce paramètre doit être défini sur <code>2</code>.<br /> </p> </td>
+     <td><p>version de la structure de contenu ; actuellement pris en charge :</p> <p><strong>Remarque</strong> : actuellement, ce paramètre doit être défini sur  <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
   </table>
@@ -158,7 +158,7 @@ Plus de détails sur les nœuds et leurs propriétés :
     <tr>
      <td><code>elements</code> </td>
      <td><p><code>nt:unstructured</code></p> <p>requis</p> </td>
-     <td><p>Noeud contenant la définition des éléments du fragment de contenu. It is mandatory and needs to contain at least one child node for the <strong>Main</strong> element, but can contain [1..n] nœuds enfants.</p> <p>Lorsque le modèle est utilisé, la sous-branche éléments est copiée dans la sous-branche modèle du fragment.</p> <p>The first element (as viewed in CRXDE Lite) is automatically considered to be the <i>main</i> element; the node name is irrelevant and the node itself does not have a special significance, apart from the fact that it is represented by the main asset; the other elements are handled as sub assets.</p> </td>
+     <td><p>Noeud contenant la définition des éléments du fragment de contenu. Elle est obligatoire et doit contenir au moins un noeud enfant pour l’élément <strong>Main</strong>, mais peut contenir [1..n] nœuds enfants.</p> <p>Lorsque le modèle est utilisé, la sous-branche éléments est copiée dans la sous-branche modèle du fragment.</p> <p>Le premier élément (affiché en CRXDE Lite) est automatiquement considéré comme l’élément <i>main</i>; le nom du noeud n'est pas pertinent et le noeud lui-même n'a pas de signification particulière, à part le fait qu'il est représenté par l'actif principal ; les autres éléments sont traités comme des sous-ressources.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -245,7 +245,7 @@ Plus de détails sur les nœuds et leurs propriétés :
     <tr>
      <td><code>jcr:desciption</code></td>
      <td><p><code>String</code></p> <p>facultatif</p> <p>default: ""</p> </td>
-     <td>Texte qui fournit une description de la variation <span>(affichée dans l’onglet <strong>Variation</strong> de l’éditeur de fragments (rail de gauche)).</code></td>
+     <td>Texte qui fournit une description de la variation <span> (affichée dans l’onglet <strong>Variation</strong> de l’éditeur de fragments (rail de gauche)).</code></td>
     </tr>
    </tbody>
   </table>
