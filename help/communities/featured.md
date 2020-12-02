@@ -37,25 +37,25 @@ La fonctionnalité de contenu peut être autorisée ou non par composant.
 Cette section de la documentation décrit:
 
 * Ajouter du contenu incitatif à un site communautaire.
-* Configuration settings for the `Featured Content` component.
+* Paramètres de configuration du composant `Featured Content`.
 
-## Ajouter du contenu proposé sur une page {#adding-featured-content-to-a-page}
+## Ajouter du contenu proposé à une page {#adding-featured-content-to-a-page}
 
-To add a `Featured Content` component to a page in author mode, use the component browser to locate
+Pour ajouter un composant `Featured Content` à une page en mode création, utilisez l’explorateur de composants pour localiser
 
 * `Communities / Featured Content`
 
 et faites-le glisser sur une page où le contenu présenté doit apparaître.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-featured.md#essentials-for-client-side) are included, this is how the `Featured Content` component will appear:
+Lorsque les [bibliothèques client requises](essentials-featured.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Featured Content` apparaîtra :
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
 ## Configuration du contenu proposé {#configuring-featured-content}
 
-Select the placed `Featured Content` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Featured Content` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
@@ -63,11 +63,11 @@ Select the placed `Featured Content` component to access and select the `Configu
 
 ### Onglet Settings {#settings-tab}
 
-Sous l’onglet **[!UICONTROL Paramètres]** , identifiez le contenu à inclure :
+Sous l&#39;onglet **[!UICONTROL Paramètres]**, identifiez le contenu à inclure :
 
 * **[!UICONTROL Nom d’affichage]**
 
-   Titre de la liste du contenu incitatif. For example `Featured Questions` or `Featured Ideas`. La valeur par défaut est `Featured Content` laissée vide.
+   Titre de la liste du contenu incitatif. Par exemple `Featured Questions` ou `Featured Ideas`. La valeur par défaut est `Featured Content` si elle est laissée vide.
 
 * **[!UICONTROL Emplacement du contenu proposé]**
 
@@ -81,13 +81,13 @@ Sous l’onglet **[!UICONTROL Paramètres]** , identifiez le contenu à inclure 
 
 La possibilité de marquer le contenu comme contenu phare nécessite des privilèges de modérateur.
 
-Lorsqu’un modérateur vue du contenu publié, il a accès aux indicateurs de modération contextuels, qui comprennent le nouvel `Feature` indicateur.
+Lorsqu’un modérateur vue du contenu publié, il a accès aux indicateurs de modération contextuels, qui comprennent le nouvel indicateur `Feature`.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-Une fois marquée comme fonction, l’indicateur de modération devient `Unfeature`.
+Une fois marquée comme fonction, l&#39;indicateur de modération devient `Unfeature`.
 
-La page contenant le `Featured Content` composant inclut désormais cette publication.
+La page contenant le composant `Featured Content` inclut désormais cette publication.
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -95,6 +95,6 @@ La page contenant le `Featured Content` composant inclut désormais cette public
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Featured Content](essentials-featured.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Contenu phare](essentials-featured.md) à l&#39;intention des développeurs.
 
-Pour marquer le contenu comme proposé, voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
+Pour marquer le contenu comme présenté, voir [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
