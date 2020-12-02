@@ -37,8 +37,8 @@ Avec l&#39;application Mobile On Demand Preflight, vous pouvez vue tous les proj
 ## Aperçu avec contrôle en amont {#previewing-with-preflight-1}
 
 1. Dans Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur les points de suspension (...) dans le volet **Gérer les articles** (ou Bannières/Collections).
-1. Select **Preflight** from the action bar.
+1. Cliquez sur les points de suspension (...) dans la mosaïque **Gérer les articles** (ou Bannières/Collections).
+1. Sélectionnez **Contrôle en amont** dans la barre d’actions.
 1. Cliquez sur **Activer le contrôle en amont** dans la boîte de dialogue.
 1. Votre application sera désormais prête pour la prévisualisation sur l&#39;application Mobile On-Demand Preflight.
 
@@ -48,9 +48,9 @@ Avec l&#39;application Mobile On Demand Preflight, vous pouvez vue tous les proj
 >
 >L’application AEM Preflight permet de prévisualiser le contenu et les pages de navigation. Pour en savoir plus sur l’application Preflight, cliquez [ici](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
 >
->L’application AEM Preflight est disponible dans l’App Store [](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8)iTunes, le [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)et le [Windows Store](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
+>L’application AEM Preflight est disponible dans [App Store iTunes](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en) et [Windows Store](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
 
-### Pour avancer {#getting-ahead}
+### Aller de l&#39;avant {#getting-ahead}
 
 Si vous avez encore besoin d’informations supplémentaires sur la création de contenu, reportez-vous aux ressources suivantes pour créer et gérer du contenu dans une application AEM Mobile :
 
