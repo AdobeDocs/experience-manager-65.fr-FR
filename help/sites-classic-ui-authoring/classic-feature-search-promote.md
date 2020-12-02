@@ -73,7 +73,7 @@ Les facettes sont configurées sur le serveur Search&amp;Promote, de même que l
  </tbody>
 </table>
 
-## Création de la page de résultats de la recherche {#creating-the-search-results-page}
+## Création de la page de résultats de la recherche  {#creating-the-search-results-page}
 
 Utilisez la console Sites web WCM pour créer une page qui servira à afficher les résultats de recherche. Les résultats d’une recherche de n’importe quel composant de recherche peuvent apparaître dans cette page si elle utilise le même service Search&amp;Promote. 
 
@@ -92,11 +92,11 @@ Vous pouvez configurer les propriétés de composant suivantes en mode d’édit
 * Masquer le précédent/suivant : détermine si les utilisateurs peuvent parcourir les pages de résultats par rapport à la page active. 
 * Masquer/Afficher tout : détermine si l’utilisateur peut regrouper tous les résultats de la recherche dans une seule page. En général, le fait de fournir des données paginées optimise l’utilisation des ressources serveur. Sélectionnez cette option pour empêcher le transfert d’importants jeux de données dans un seul message de réponse.
 
-### Activation du filtrage des résultats par le biais de facettes {#enabling-the-filtering-of-results-by-facets}
+### Activation du filtrage des résultats par le biais de facettes  {#enabling-the-filtering-of-results-by-facets}
 
-Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components enable users to select one or more facets for filtering. Lorsque vous utilisez ces composants, vous devez également inclure le composant **Chemin de navigation**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
+Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. Les composants **Facette de Liste de case à cocher**, **Facette de liste déroulante** et **Facette de Liste de lien** permettent aux utilisateurs de sélectionner une ou plusieurs facettes pour le filtrage. Lorsque vous utilisez ces composants, vous devez également inclure le composant **Chemin de navigation**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
 
-The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components each have the following properties that you configure in **Edit** mode:
+Les composants **Facette de Liste de case à cocher**, **Facette de liste déroulante** et **Facette de Liste de lien** possèdent chacun les propriétés suivantes que vous configurez en mode **Modifier** :
 
 * **Nom de la facette** : nom de la facette utilisée pour les filtres.
 
@@ -129,7 +129,7 @@ En mode d’édition, vous pouvez configurer les propriétés suivantes pour les
 * Délimiteur : définissez le caractère ou la chaîne de caractères qui servira de séparateur entre chaque chemin de navigation. Le champ de délimiteur accepte n’importe quelle chaîne de caractères en entrée. Le paramètre par défaut est : « > » (sans guillemets)
 * Délimiteur de piste : définissez le caractère ou la chaîne de caractères à afficher à la fin des chemins de navigation. Le champ de délimiteur de piste accepte n’importe quelle chaîne de caractères en entrée. La valeur par défaut est *vide* (c’est-à-dire que rien n’est affiché à la fin du chemin de navigation)
 
-### Ajout de zones de recherche {#adding-search-boxes}
+### Ajout de zones de recherche  {#adding-search-boxes}
 
 Le composant de recherche permet aux utilisateurs d’effectuer des recherches par mot-clé. Insérez des composants de recherche dans chaque page où un accès à la recherche est nécessaire. 
 
@@ -150,4 +150,4 @@ Le composant Bannières contient une propriété configurable appelée Zone de b
 
 Ce schéma présente les composants ajoutés à une page pour créer des résultats Search&amp;Promote entièrement fonctionnels dans la page ci-dessous.
 
-![1328213789109](assets/1328213789109.png) ![sandppageexemple](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandppageexample](assets/sandppageexample.png)
