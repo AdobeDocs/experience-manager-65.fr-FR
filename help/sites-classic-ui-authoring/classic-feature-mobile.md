@@ -1,8 +1,8 @@
 ---
 title: 'Création d’une page pour les appareils mobiles '
 seo-title: 'Création d’une page pour les appareils mobiles '
-description: Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule le périphérique mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
-seo-description: Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule le périphérique mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
+description: Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule l’appareil mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
+seo-description: Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule l’appareil mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
 uuid: ca16979d-6e5f-444d-b959-ae92542039b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,15 +20,15 @@ ht-degree: 92%
 
 # Création d’une page pour les appareils mobiles{#authoring-a-page-for-mobile-devices}
 
-Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule le périphérique mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
+Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule l’appareil mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
 
 Les périphériques sont regroupés en fonction des catégories : fonction, intelligent et tactile, selon les fonctionnalités des périphériques pour effectuer le rendu d’une page. Lorsque l’utilisateur final accède à une page mobile, AEM détecte le périphérique et envoie la représentation qui correspond à son groupe de périphériques.
 
 >[!NOTE]
 >
->Pour créer un site mobile en fonction d’un site standard existant, créez une Live Copy du site standard. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
+>Pour créer un site mobile en fonction d’un site standard existant, créez une Live Copy du site standard. (Voir [Création d’une copie dynamique pour différents Canaux](/help/sites-administering/msm-livecopy.md).)
 >
->Les développeurs d’AEM peuvent créer de nouveaux groupes d’appareils. (See [Creating Device Group Filters.](/help/sites-developing/groupfilters.md))
+>Les développeurs d’AEM peuvent créer de nouveaux groupes d’appareils. (Voir [Création de Filtres de groupe de périphériques.](/help/sites-developing/groupfilters.md)).
 
 Utilisez la procédure suivante pour créer une page mobile :
 
