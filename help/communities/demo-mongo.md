@@ -18,17 +18,17 @@ ht-degree: 1%
 ---
 
 
-# Configuration de MongoDB pour la démonstration {#how-to-setup-mongodb-for-demo}
+# Comment configurer MongoDB pour la démonstration {#how-to-setup-mongodb-for-demo}
 
 ## Présentation {#introduction}
 
-Ce didacticiel décrit comment configurer [MSRP](msrp.md) pour *une instance d’auteur* et *une instance de publication* .
+Ce didacticiel décrit comment configurer [MSRP](msrp.md) pour *une instance d&#39;auteur* et *une instance de publication*.
 
 Avec cette configuration, le contenu de la communauté est accessible à partir des environnements d’auteur et de publication sans qu’il faille transférer ou inverser la réplication du contenu généré par l’utilisateur (UGC).
 
-Cette configuration convient aux environnements *non productifs* tels que le développement et/ou la démonstration.
+Cette configuration convient aux environnements *non-production* tels que le développement et/ou la démonstration.
 
-**Un *environnement de production* doit :**
+**Un environnement  ** de production devrait :**
 
 * Exécution de MongoDB avec un jeu de réplicas
 * Utiliser SolrCloud
@@ -38,7 +38,7 @@ Cette configuration convient aux environnements *non productifs* tels que le dé
 
 ### Installer MongoDB {#install-mongodb}
 
-* Téléchargement de MongoDB à partir de [https://www.mongodb.org/](https://www.mongodb.org/)
+* Téléchargez MongoDB depuis [https://www.mongodb.org/](https://www.mongodb.org/)
 
    * Choix du système d’exploitation :
 
@@ -62,9 +62,9 @@ Cette configuration convient aux environnements *non productifs* tels que le dé
 
 * MongoDB peut s&#39;exécuter sur le même hôte que AEM ou à distance.
 
-### MongoDB début {#start-mongodb}
+### Début MongoDB {#start-mongodb}
 
-* &lt;mongo-install>/bin/mongod —dbpath &lt;mongo-dbpath>
+* &lt;mongo-install>/bin/mongod —dbpath  &lt;mongo-dbpath>
 
 Ceci début un serveur MongoDB à l’aide du port par défaut 27017.
 
@@ -74,7 +74,7 @@ Ceci début un serveur MongoDB à l’aide du port par défaut 27017.
 >
 >Si MongoDB est démarré *après* AEM, **redémarrez** toutes les instances **AEM** afin qu’elles se connectent correctement à MongoDB.
 
-### Option de production de démonstration : Configurer un jeu de Secondaires MongoDB {#demo-production-option-setup-mongodb-replica-set}
+### Option de production de démonstration : Configurer le jeu de Secondaires MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
 Les commandes suivantes constituent un exemple de configuration d’un jeu de réplicas avec 3 noeuds sur localhost :
 
@@ -96,7 +96,7 @@ Les commandes suivantes constituent un exemple de configuration d’un jeu de r�
 
 ### Installer Solr {#install-solr}
 
-* Téléchargez Solr depuis [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
+* Téléchargez Solr à partir de [Apache Lucene](https://archive.apache.org/dist/lucene/solr/) :
 
    * Adapté à tous les systèmes d’exploitation.
    * Solr version 7.0.
@@ -112,12 +112,12 @@ Les commandes suivantes constituent un exemple de configuration d’un jeu de r�
 
 Pour configurer une collection Solr pour MSRP pour la démonstration, deux décisions doivent être prises (sélectionnez les liens vers la documentation principale pour plus de détails) :
 
-1. Exécutez Solr en mode [autonome ou](msrp.md#solrcloudmode)SolrCloud.
-1. Installez les MLS ( [Standard](msrp.md#installingstandardmls) or [Advanced](msrp.md#installingadvancedmls) Multilinal Search).
+1. Exécutez Solr en mode autonome ou [SolrCloud ](msrp.md#solrcloudmode).
+1. Installez [standard](msrp.md#installingstandardmls) ou [recherche avancée](msrp.md#installingadvancedmls) multilingue (MLS).
 
-### Solaire autonome {#standalone-solr}
+### Solr autonome {#standalone-solr}
 
-La méthode d&#39;exécution de Solr peut varier en fonction de la version et du mode d&#39;installation. Le guide [de référence](https://archive.apache.org/dist/lucene/solr/ref-guide/) Solr est la documentation faisant autorité.
+La méthode d&#39;exécution de Solr peut varier en fonction de la version et du mode d&#39;installation. Le [guide de référence Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) est la documentation faisant autorité.
 
 Pour simplifier, en utilisant la version 4.10 comme exemple, début Solr en mode autonome :
 
@@ -145,25 +145,25 @@ Lancez les instances d’auteur et de publication AEM, si nécessaire.
 
 Si l&#39;AEM était en cours d&#39;exécution avant le démarrage de MongoDB, les instances AEM devront être redémarrées.
 
-Suivez les instructions de la page de documentation principale : [MSRP - Magasin commun MongoDB](msrp.md)
+Suivez les instructions de la page de documentation principale : [MSRP - MongoDB Common Store](msrp.md)
 
 ## Test {#test}
 
 Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l’instance de publication et vue-le sur l’instance d’auteur, ainsi que la vue de l’UGC dans MongoDB et Solr :
 
-1. Sur l’instance de publication, accédez à la page Guide [des composants](http://localhost:4503/content/community-components/en/comments.html) de la communauté et sélectionnez le composant Commentaires.
+1. Sur l’instance de publication, accédez à la page [Community Components Guide](http://localhost:4503/content/community-components/en/comments.html) et sélectionnez le composant Commentaires.
 1. Connectez-vous pour publier un commentaire :
-1. Saisissez du texte dans la zone de saisie du commentaire, puis cliquez sur **[!UICONTROL Publier.]**
+1. Saisissez du texte dans la zone de saisie du commentaire, puis cliquez sur **[!UICONTROL Publier]**.
 
    ![post-commentaire](assets/post-comment.png)
 
-1. Il vous suffit de vue le commentaire sur l’instance [d’](http://localhost:4502/content/community-components/en/comments.html) auteur (probablement toujours connecté en tant qu’administrateur/administrateur).
+1. Il vous suffit de vue le commentaire sur l’[instance d’auteur](http://localhost:4502/content/community-components/en/comments.html) (probablement encore connecté en tant qu’administrateur / administrateur).
 
    ![vue-commentaire](assets/view-comment.png)
 
-   Remarque : Bien qu’il y ait des noeuds JCR sous le chemin d’accès ** secondaire sur l’auteur, il s’agit de la structure SCF. L’UGC réel n’est pas dans le JCR, mais dans la MongoDB.
+   Remarque : Bien qu’il existe des noeuds JCR sous le *asipath* sur l’auteur, il s’agit de la structure SCF. L’UGC réel n’est pas dans le JCR, mais dans la MongoDB.
 
-1. Vue de l’UGC dans mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
+1. Vue de l’UGC dans mongodb **[!UICONTROL Communautés]** > **[!UICONTROL Collections]** > **[!UICONTROL Contenu]**
 
    ![ugc-content](assets/ugc-content.png)
 
@@ -176,17 +176,17 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
    ![ugc-solr](assets/ugc-solr.png)
 
-## Résolution des incidents {#troubleshooting}
+## Dépannage {#troubleshooting}
 
-### Aucune UGC n’apparaît {#no-ugc-appears}
+### Aucun UGC n&#39;apparaît {#no-ugc-appears}
 
 1. Assurez-vous que MongoDB est installé et s’exécute correctement.
 
 1. Assurez-vous que MSRP a été configuré comme fournisseur par défaut :
 
-   * Sur toutes les instances d’AEM création et de publication, consultez de nouveau la console [Configuration de l’](srp-config.md) Enregistrement ou vérifiez le référentiel AEM :
+   * Sur toutes les instances d’AEM auteur et de publication, consultez de nouveau la [console de configuration d’Enregistrement](srp-config.md) ou vérifiez le référentiel AEM :
 
-   * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , cela signifie que le fournisseur d’enregistrement est JSRP.
-   * Si le noeud srpc existe et contient la configuration [par](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)défaut du noeud, les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut.
+   * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), cela signifie que le fournisseur d’enregistrement est JSRP.
+   * Si le noeud srpc existe et contient le noeud [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut.
 
 1. Assurez-vous que l&#39;AEM a été redémarré après avoir sélectionné MSRP.
