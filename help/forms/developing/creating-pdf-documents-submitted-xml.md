@@ -82,7 +82,7 @@ Utilisez l’API du service Document Management pour stocker un document PDF dan
 
 [Débuts rapides de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-### Création d’un Document PDF avec des données XML envoyées à l’aide de l’API Java {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
+### Créez un Document PDF avec des données XML envoyées à l’aide de l’API Java {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
 
 Créez un document PDF avec les données XML envoyées à l’aide de l’API Forms, Output et Document Management (Java) :
 
@@ -94,57 +94,57 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API Fo
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
-   * Create an `OutputClient` object by using its constructor and passing the `ServiceClientFactory` object.
+   * Créez un objet `OutputClient` en utilisant son constructeur et en transmettant l&#39;objet `ServiceClientFactory`.
    * Créez un objet `DocumentManagementServiceClientImpl` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
 
 1. Récupération des données de formulaire à l’aide du service Forms
 
-   * Appelez la méthode `FormsServiceClient` de l’ `processFormSubmission` objet et transmettez les valeurs suivantes :
+   * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
       * Objet `com.adobe.idp.Document` contenant les données du formulaire.
-      * Valeur de chaîne qui spécifie les variables d’environnement, y compris tous les en-têtes HTTP appropriés. Spécifiez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’ `CONTENT_TYPE` environnement. Par exemple, pour gérer les données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`.
-      * Valeur de chaîne qui spécifie la valeur d’ `HTTP_USER_AGENT` en-tête, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Valeur de chaîne qui spécifie les variables d’environnement, y compris tous les en-têtes HTTP appropriés. Spécifiez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d&#39;environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`.
+      * Valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Objet `RenderOptionsSpec` qui stocke les options d’exécution.
 
-      La `processFormSubmission` méthode renvoie un `FormsResult` objet contenant les résultats de l’envoi du formulaire.
+      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
-   * Déterminez si le service Forms a terminé le traitement des données de formulaire en appelant la `FormsResult` méthode de l’ `getAction` objet. Si cette méthode renvoie la valeur `0`, les données sont prêtes à être traitées.
-   * Récupérez les données du formulaire en créant un `com.adobe.idp.Document` objet en appelant la `FormsResult` méthode de l’ `getOutputContent` objet. (Cet objet contient des données de formulaire qui peuvent être envoyées au service Output.)
-   * Créez un `java.io.InputStream` objet en appelant le `java.io.DataInputStream` constructeur et en transmettant l’ `com.adobe.idp.Document` objet.
-   * Créez un `org.w3c.dom.DocumentBuilderFactory` objet en appelant la `org.w3c.dom.DocumentBuilderFactory` `newInstance` méthode de l’objet statique.
-   * Créez un `org.w3c.dom.DocumentBuilder` objet en appelant la `org.w3c.dom.DocumentBuilderFactory` méthode de l’ `newDocumentBuilder` objet.
-   * Create an `org.w3c.dom.Document` object by invoking the `org.w3c.dom.DocumentBuilder` object’s `parse` method and passing the `java.io.InputStream` object.
-   * Récupérez la valeur de chaque noeud dans le document XML. Pour accomplir cette tâche, vous pouvez créer une méthode personnalisée qui accepte deux paramètres : l’ `org.w3c.dom.Document` objet et le nom du noeud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du noeud. Dans l&#39;exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode s’affiche.
+   * Déterminez si le service Forms a terminé de traiter les données de formulaire en appelant la méthode `FormsResult` de l’objet `getAction`. Si cette méthode renvoie la valeur `0`, les données sont prêtes à être traitées.
+   * Récupérez les données de formulaire en créant un objet `com.adobe.idp.Document` en appelant la méthode `FormsResult` de l&#39;objet `getOutputContent`. (Cet objet contient des données de formulaire qui peuvent être envoyées au service Output.)
+   * Créez un objet `java.io.InputStream` en appelant le constructeur `java.io.DataInputStream` et en transmettant l&#39;objet `com.adobe.idp.Document`.
+   * Créez un objet `org.w3c.dom.DocumentBuilderFactory` en appelant la méthode `org.w3c.dom.DocumentBuilderFactory` statique de l&#39;objet `newInstance`.
+   * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `org.w3c.dom.DocumentBuilderFactory` de l&#39;objet `newDocumentBuilder`.
+   * Créez un objet `org.w3c.dom.Document` en appelant la méthode `org.w3c.dom.DocumentBuilder` de l&#39;objet `parse` et en transmettant l&#39;objet `java.io.InputStream`.
+   * Récupérez la valeur de chaque noeud dans le document XML. Pour accomplir cette tâche, vous pouvez créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du noeud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du noeud. Dans l&#39;exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode s’affiche.
 
 
 1. Créez un document PDF non interactif à l’aide du service Output.
 
-   Create a PDF document by invoking the `OutputClient` object’s `generatePDFOutput` method and passing the following values:
+   Créez un document PDF en appelant la méthode `generatePDFOutput` de l’objet `OutputClient` et en transmettant les valeurs suivantes :
 
-   * Valeur `TransformationFormat` enum. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
+   * Valeur d&#39;énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string spécifiant le nom de la nouvelle conception de formulaire. Assurez-vous que la conception de formulaire est compatible avec les données de formulaire extraites du service Forms.
    * Valeur de chaîne qui spécifie la racine de contenu où se trouve la conception de formulaire.
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
-   * Objet `RenderOptionsSpec` contenant des options d’exécution de rendu.
-   * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire. Assurez-vous que cet objet a été renvoyé par la `FormsResult` méthode de l’ `getOutputContent` objet.
-   * The `generatePDFOutput` method returns an `OutputResult` object that contains the results of the operation.
-   * Récupérez le document PDF non interactif en appelant la `OutputResult` `getGeneratedDoc` méthode de l’objet. Cette méthode renvoie une `com.adobe.idp.Document` instance qui représente le document PDF non interactif.
+   * Objet `RenderOptionsSpec` contenant les options d’exécution de rendu.
+   * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire. Assurez-vous que cet objet a été renvoyé par la méthode `getOutputContent` de l’objet `FormsResult`.
+   * La méthode `generatePDFOutput` renvoie un objet `OutputResult` contenant les résultats de l&#39;opération.
+   * Récupérez le document PDF non interactif en appelant la méthode `OutputResult` de l’objet `getGeneratedDoc`. Cette méthode renvoie une instance `com.adobe.idp.Document` qui représente le document PDF non interactif.
 
 1. Stockage du formulaire PDF dans Content Services (obsolète) à l’aide du service Document Management
 
-   Ajoutez le contenu en appelant la `DocumentManagementServiceClientImpl` méthode de l’ `storeContent` objet et en transmettant les valeurs suivantes :
+   Ajoutez le contenu en appelant la méthode `storeContent` de l’objet `DocumentManagementServiceClientImpl` et en transmettant les valeurs suivantes :
 
-   * Valeur de chaîne qui spécifie la banque où le contenu est ajouté. The default store is `SpacesStore`. Cette valeur est un paramètre obligatoire.
+   * Valeur de chaîne qui spécifie la banque où le contenu est ajouté. Le magasin par défaut est `SpacesStore`. Cette valeur est un paramètre obligatoire.
    * Valeur de chaîne qui spécifie le chemin d’accès complet à l’espace dans lequel le contenu est ajouté (par exemple, `/Company Home/Test Directory`). Cette valeur est un paramètre obligatoire.
    * Nom du noeud qui représente le nouveau contenu (par exemple, `MortgageForm.pdf`). Cette valeur est un paramètre obligatoire.
    * Valeur de chaîne qui spécifie le type de noeud. Pour ajouter un nouveau contenu, tel qu’un fichier PDF, spécifiez `{https://www.alfresco.org/model/content/1.0}content`. Cette valeur est un paramètre obligatoire.
-   * Objet `com.adobe.idp.Document` représentant le contenu. Cette valeur est un paramètre obligatoire.
+   * Un objet `com.adobe.idp.Document` qui représente le contenu. Cette valeur est un paramètre obligatoire.
    * Valeur de chaîne qui spécifie la valeur de codage (par exemple, `UTF-8`). Cette valeur est un paramètre obligatoire.
-   * Valeur de `UpdateVersionType` énumération qui spécifie comment gérer les informations de version (par exemple, `UpdateVersionType.INCREMENT_MAJOR_VERSION` pour incrémenter la version de contenu. ) Cette valeur est un paramètre obligatoire.
-   * Une `java.util.List` instance qui spécifie les aspects liés au contenu. Cette valeur est un paramètre facultatif que vous pouvez spécifier `null`.
-   * Objet `java.util.Map` qui stocke des attributs de contenu.
+   * Valeur de énumération `UpdateVersionType` qui spécifie comment gérer les informations de version (par exemple, `UpdateVersionType.INCREMENT_MAJOR_VERSION` pour incrémenter la version de contenu. ) Cette valeur est un paramètre obligatoire.
+   * Instance `java.util.List` qui spécifie les aspects liés au contenu. Cette valeur est un paramètre facultatif et vous pouvez spécifier `null`.
+   * Objet `java.util.Map` qui stocke les attributs de contenu.
 
-   La `storeContent` méthode renvoie un `CRCResult` objet qui décrit le contenu. A l’aide d’un `CRCResult` objet, vous pouvez, par exemple, obtenir la valeur d’identificateur unique du contenu. Pour effectuer cette tâche, appelez la `CRCResult` `getNodeUuid` méthode de l’objet.
+   La méthode `storeContent` renvoie un objet `CRCResult` qui décrit le contenu. A l’aide d’un objet `CRCResult`, vous pouvez, par exemple, obtenir la valeur d’identificateur unique du contenu. Pour exécuter cette tâche, appelez la méthode `CRCResult` de l’objet `getNodeUuid`.
 
 **Voir également**
 
