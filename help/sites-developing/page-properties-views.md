@@ -39,7 +39,7 @@ Les champs doivent être configurés spécifiquement si une modification est req
    * Nom : `cq:showOnCreate`
    * Type : `Boolean`
 
-* Page property to be available in the edit view (e.g. **View**/**Edit**) **Properties** option):
+* Propriété de page à mettre à disposition dans la vue de modification (ex. **Vue**/**Modifier**) **Propriétés** option) :
 
    * Nom : `cq:hideOnEdit`
    * Type : `Boolean`
@@ -52,7 +52,7 @@ Reportez-vous, par exemple, aux paramètres des champs regroupés sous l’ongle
 
 >[!TIP]
 >
->Consultez le didacticiel [](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) Extension des propriétés de page pour obtenir un guide sur la personnalisation des propriétés de page.
+>Pour obtenir un guide sur la personnalisation des propriétés de page, reportez-vous au didacticiel [Extension des propriétés de page](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html).
 
 ## Configuration de vos propriétés de page {#configuring-your-page-properties}
 
@@ -61,7 +61,7 @@ Vous pouvez également configurer les champs disponibles en configurant la boît
 Par exemple, l’[**assistant Créer une page**](/help/sites-authoring/managing-pages.md#creating-a-new-page) affiche, par défaut, les champs regroupés sous **Autres titres et description**. Pour masquer ces derniers, définissez la configuration suivante :
 
 1. Créez votre composant de page sous `/apps`.
-1. Create an override (using *dialog diff* provided by the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) for the `basic` section of your page component; for example:
+1. Créez un remplacement (à l’aide de *dialog diff* fourni par la [fusion de ressources Sling](/help/sites-developing/sling-resource-merger.md)) pour la section `basic` du composant de page ; par exemple :
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -72,14 +72,14 @@ Par exemple, l’[**assistant Créer une page**](/help/sites-authoring/managing-
    >Comme référence, voir :
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
-   However, you ***must*** not change anything in the `/libs` path.
+   Cependant, vous ***ne devez*** rien changer dans le chemin `/libs`.
    En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
    La méthode recommandée pour la configuration et d’autres modifications est la suivante :
-   1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+   1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
    1. Apportez les modifications désirées dans `/apps`
 
 
-1. Définissez la `path` propriété sur `basic` pour pointer vers le remplacement de l’onglet de base (voir également l’étape suivante). Par exemple :
+1. Définissez la propriété `path` sur `basic` pour pointer vers le remplacement de l&#39;onglet de base (voir également l&#39;étape suivante). Par exemple :
 
    ```xml
    /apps/demos/components/page/tabs/basic
@@ -102,9 +102,9 @@ Par exemple, l’[**assistant Créer une page**](/help/sites-authoring/managing-
 >[!NOTE]
 Lors de la configuration des propriétés de page à utiliser avec des Live Copies, reportez-vous à la section [Configuration de verrouillages MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
 
-## Exemple de configuration des propriétés de page {#sample-configuration-of-page-properties}
+## Exemple de configuration des propriétés de page  {#sample-configuration-of-page-properties}
 
-Cet exemple illustre la technique dialog diff de [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) ; y compris l’utilisation de [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). It also illustrates use of both `cq:showOnCreate` and `cq:hideOnEdit`.
+Cet exemple illustre la technique dialog diff de [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) ; y compris l’utilisation de [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Il illustre également l&#39;utilisation de `cq:showOnCreate` et `cq:hideOnEdit`.
 
 CODE SUR GITHUB
 
