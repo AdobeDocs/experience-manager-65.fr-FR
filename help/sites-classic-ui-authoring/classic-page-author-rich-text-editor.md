@@ -15,7 +15,7 @@ ht-degree: 77%
 ---
 
 
-# Éditeur de texte enrichi {#rich-text-editor}
+# Éditeur de texte enrichi  {#rich-text-editor}
 
 L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants, dont :
 
@@ -55,9 +55,9 @@ Pour l’heure, le mode Modifier statique est activé pour les éléments de pag
 >
 >Le composant [!UICONTROL Titre] a été conçu pour contenir un texte court sans saut de ligne. Lorsque vous modifiez un titre en mode d’édition statique, saisir un saut de ligne entraîne l’ouverture d’un nouveau composant **Texte** sous le titre.
 
-## Fonctions de l’Editeur de texte enrichi {#features-of-the-rich-text-editor}
+## Fonctions de l’Editeur de texte enrichi  {#features-of-the-rich-text-editor}
 
-The Rich Text Editor provides a range of featues, these [depend on the configuration](/help/sites-administering/rich-text-editor.md) of the individual component. The features are available for both the touch-optimized and classic UI.
+L’Editeur de texte enrichi fournit une gamme de fonctionnalités, qui [dépendent de la configuration](/help/sites-administering/rich-text-editor.md) du composant individuel. Les fonctionnalités sont disponibles pour l’interface utilisateur classique et optimisée pour les écrans tactiles.
 
 ### Formats de caractères de base {#basic-character-formats}
 
@@ -75,7 +75,7 @@ Ces options vous permettent d’appliquer une mise en forme aux caractères que 
 
 Toutes ces options fonctionnent selon le principe de bascule, ce qui signifie qu’une nouvelle sélection supprime la mise en forme.
 
-### Styles et formats prédéfinis {#predefined-styles-and-formats}
+### Styles et formats prédéfinis  {#predefined-styles-and-formats}
 
 ![cq55_rte_stylesparagraphe](assets/cq55_rte_stylesparagraph.png)
 
@@ -97,7 +97,7 @@ Un style peut être supprimé ; placez le curseur dans le texte auquel le style
 >
 >Abstenez-vous de resélectionner une partie du texte auquel le style a été appliqué. Cela entraînerait, en effet, la désactivation de l’icône.
 
-### Couper, Copier, Coller {#cut-copy-paste}
+### Couper, Copier, Coller  {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
@@ -105,8 +105,8 @@ Les fonctions **[!UICONTROL Couper]** et **[!UICONTROL Copier]** standard sont d
 
 * Couper (Ctrl-X)
 * Copier (Ctrl-C)
-* Paste
-This is the default paste mechanism (Ctrl-V) for the component; when installed out-of-the-box this is configured to be [!UICONTROL Paste from Word].
+* Coller
+Il s’agit du mécanisme de collage par défaut (Ctrl-V) pour le composant ; lorsqu’il est installé prêt à l’emploi, il est configuré pour être [!UICONTROL Coller à partir de Word].
 
 * Coller comme texte : Supprime tous les styles et la mise en forme pour coller uniquement le texte brut.
 
@@ -170,19 +170,19 @@ Vous pouvez :
 
 * Saisissez directement une URI.
 * Utiliser la carte du site pour sélectionner une page de votre site Web
-* Enter the URI, then append the target anchor; e.g. `www.TargetUri.org#AnchorName`
-* Enter an anchor only (to reference &quot;the current page&quot;); For example, `#anchor`
+* Saisissez l’URI, puis ajoutez l’ancre de cible ; par ex. `www.TargetUri.org#AnchorName`
+* Saisissez une ancre uniquement (pour faire référence à &quot;la page active&quot;); Par exemple, `#anchor`
 * Recherchez une page dans l’outil de recherche de contenu, puis faites glisser et déposez l’icône de page dans la boîte de dialogue Hyperlien.
 
 >[!NOTE]
 >
->Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. In a standard installation these are `https://`, `ftp://`, and `mailto:`. Les protocoles non configurés pour votre installation seront refusés et marqués comme non valides.
+>Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, il s&#39;agit de `https://`, `ftp://` et `mailto:`. Les protocoles non configurés pour votre installation seront refusés et marqués comme non valides.
 
 Pour rompre le lien, placez le curseur dans le texte du lien et cliquez ensuite sur l’icône [!UICONTROL Rompre le lien] : 
 
 ![](do-not-localize/chlimage_1-10.png)
 
-### Ancres {#anchors}
+### Ancres  {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -220,7 +220,7 @@ Vous pouvez faire glisser des images à partir de l’Outil de recherche de cont
 
 >[!NOTE]
 >
->AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; For example the **Image** and **Text Image** components are available.
+>AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; Par exemple, les composants **Image** et **Image de texte** sont disponibles.
 
 ### Vérificateur orthographique {#spelling-checker}
 
@@ -250,7 +250,7 @@ Des tableaux sont disponibles :
 
    >[!NOTE]
    >
-   >Although tables are available in the RTE, it is recommended to use the **Table** component when creating tables.
+   >Bien que les tables soient disponibles dans le RTE, il est recommandé d&#39;utiliser le composant **Table** lors de la création de tableaux.
 
 Dans les composants **Texte** et **Tableau**, la fonctionnalité de tableau est accessible par le biais du menu contextuel (qui s’ouvre généralement à l’aide du bouton droit de la souris) ; par exemple :
 
@@ -280,11 +280,11 @@ Les propriétés de base du tableau peuvent être configurées avant de cliquer 
 
 ![cq55_rte_tableproperties_dialog](assets/cq55_rte_tableproperties_dialog.png)
 
-* **Largeur**: Largeur totale du tableau.
+* **Largeur** : Largeur totale du tableau.
 
-* **Hauteur**: Hauteur totale du tableau.
+* **Hauteur** : Hauteur totale du tableau.
 
-* **Bordure**: Taille de la bordure du tableau.
+* **Bordure** : Taille de la bordure du tableau.
 
 * **Marge intérieure** des cellules : Cela définit l’espace blanc entre le contenu de la cellule et ses bordures.
 
@@ -308,10 +308,10 @@ Les propriétés d’une cellule spécifique ou d’une série de cellules peuve
 
 * **Largeur**
 * **Hauteur**
-* **Alignement** horizontal - Gauche, Centre ou Droite
-* **Alignement** vertical - Haut, Milieu, Bas ou Ligne de base
+* **Alignement**  horizontal - Gauche, Centre ou Droite
+* **Alignement**  vertical - Haut, Moyen, Bas ou Ligne de base
 * **Type** de cellule - Données ou En-tête
-* **Appliquer à :** Cellule unique, rangée entière, colonne Entière
+* **Appliquer à : cellule** unique, rangée entière, colonne entière
 
 #### Ajouter ou supprimer des lignes {#add-or-delete-rows}
 
@@ -321,7 +321,7 @@ Vous pouvez ajouter des lignes au-dessus ou sous la ligne en cours.
 
 La ligne en cours peut également être supprimée.
 
-#### Ajouter ou Supprimer des colonnes {#add-or-delete-columns}
+#### Ajouter ou Supprimer des colonnes  {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -329,7 +329,7 @@ Vous pouvez ajouter des colonnes à gauche ou à droite de la colonne en cours.
 
 La colonne en cours peut également être supprimée.
 
-#### Sélectionner des lignes ou colonnes entières {#selecting-entire-rows-or-columns}
+#### Sélectionner des lignes ou colonnes entières  {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -337,12 +337,12 @@ Cette option sélectionne toute la ligne ou la colonne en cours. Vous pouvez alo
 
 #### Fusionner des cellules {#merge-cells}
 
-![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Si vous avez sélectionné un groupe de cellules, vous pouvez toutes les fusionner en une seule.
 * Si une seule cellule est sélectionnée, vous pouvez la fusionner avec celle située à sa droite ou en dessous.
 
-#### Diviser des cellules {#split-cells}
+#### Diviser des cellules  {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
@@ -351,7 +351,7 @@ Sélectionnez une seule cellule pour la diviser :
 * La division d’une cellule dans le sens horizontal génère une nouvelle cellule à droite de la cellule actuelle, dans la colonne en cours.
 * La division d’une cellule dans le sens vertical génère une nouvelle cellule sous la cellule actuelle, mais dans la ligne en cours.
 
-#### Création de tableaux imbriqués {#creating-nested-tables}
+#### Création de tableaux imbriqués  {#creating-nested-tables}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -369,7 +369,7 @@ La création d’un tableau imbriqué génère un nouveau tableau autonome dans 
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
 
-Utilisez cette option pour supprimer le tableau du composant **[!UICONTROL Texte]** .
+Utilisez l&#39;option pour supprimer le tableau du composant **[!UICONTROL Texte]**.
 
 ### Caractères spéciaux {#special-characters}
 
@@ -381,7 +381,7 @@ Des caractères spéciaux peuvent être mis à la disposition de votre éditeur 
 
 Survolez un caractère à l’aide du pointeur de la souris pour en afficher une version agrandie, puis cliquez pour l’insérer à l’emplacement actuel dans votre texte.
 
-### Mode d’édition de source {#source-editing-mode}
+### Mode d’édition de source  {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 
