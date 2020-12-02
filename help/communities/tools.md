@@ -27,15 +27,15 @@ Pour accéder à la console des outils des communautés, connectez-vous à votre
 
    ![communautés](assets/communities-home.png)
 
-* [Modèles](sites.md) de site - Console pour la création et la gestion de modèles de site.
+* [Modèles](sites.md)  de site - Console pour la création et la gestion de modèles de site.
 
-* [Modèles](tools-groups.md) de groupe - Console pour la création et la gestion de modèles de groupe.
+* [Modèles](tools-groups.md)  de groupe - Console pour la création et la gestion de modèles de groupe.
 
-* [Fonctions](functions.md) communautaires - Console pour la création et la gestion de fonctions communautaires.
+* [Fonctions](functions.md)  communautaires - Console pour la création et la gestion de fonctions communautaires.
 
-* [Configuration](srp-config.md) de l&#39;Enregistrement - Console pour la configuration et la sélection du SRP [](working-with-srp.md)par défaut.
+* [Configuration](srp-config.md)  des Enregistrements - Console pour la configuration et la sélection du SRP [ ](working-with-srp.md)par défaut.
 
-* [Guide](components-guide.md) des composants - Ouvre un site interactif qui permet d&#39;expérimenter comment fonctionnent les composants SCF et comment ils peuvent être configurés ou personnalisés.
+* [Guide](components-guide.md)  des composants - Ouvre un site interactif qui permet d&#39;expérimenter comment fonctionnent les composants SCF et comment ils peuvent être configurés ou personnalisés.
 
-* [Badges](badges.md) - Console à partir de laquelle des badges personnalisés peuvent être ajoutés pour être utilisés dans les règles de [notation et de badge](implementing-scoring.md)
+* [Badges](badges.md)  - Console à partir de laquelle des badges personnalisés peuvent être ajoutés pour être utilisés dans les règles de  [notation et de badge](implementing-scoring.md)
 
