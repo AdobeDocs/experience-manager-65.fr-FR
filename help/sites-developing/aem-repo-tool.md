@@ -20,23 +20,23 @@ ht-degree: 70%
 
 # Outil AEM Repo{#aem-repo-tool}
 
-L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. The AEM Repo Tool is similar to the [Jackrabbit FileVault tool](/help/sites-developing/ht-vlttool.md), but is faster, has minimal dependencies, and is a simple bash script.
+L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L&#39;outil AEM Repo est semblable à l&#39;outil [Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), mais il est plus rapide, avec des dépendances minimales et est un script bash simple.
 
 Cet outil simplifie les transferts de fichiers qu’effectuent le développeur et peut également être intégré à IntelliJ et Eclipse pour optimiser l’activité de développement.
 
 ## Présentation {#overview}
 
-For a given path inside a `jcr_root` filevault structure on the filesystem, AEM Repo Tool creates a package with a single filter for the entire subtree and pushes that to the server (similar to FTP `put`), fetches it from the server ( `get`) or compares the differences ( `status` and `diff`).
+Pour un chemin d&#39;accès donné dans une structure de fichier `jcr_root` sur le système de fichiers, AEM Repo Tool crée un package avec un filtre unique pour l&#39;ensemble de la sous-arborescence et le transmet au serveur (semblable à FTP `put`), le récupère du serveur ( `get`) ou compare les différences ( `status` et `diff`).
 
-The tool does not support multiple filter paths or FileVault&#39;s `filter.xml`.
+L&#39;outil ne prend pas en charge plusieurs chemins de filtre ou l&#39;élément `filter.xml` de FileVault.
 
 >[!CAUTION]
 >
 >Veuillez noter que l’outil Repo AEM écrase toujours le fichier ou le répertoire spécifié dans son intégralité.
 
-## Téléchargement et documentation {#download-and-documentation}
+## Téléchargement et documentation  {#download-and-documentation}
 
-The [AEM Repo Tool is available on GitHub via this link](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) along with detailed installation and usage instructions.
+L&#39;[AEM Repo Tool est disponible sur GitHub via ce lien](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) ainsi que des instructions détaillées d&#39;installation et d&#39;utilisation.
 
 Si vous souhaitez télécharger la source de l’outil Repo AEM, reportez-vous au projet GitHub ci-dessous.
 
