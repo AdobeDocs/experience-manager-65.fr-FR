@@ -111,24 +111,24 @@ Avant de commencer à installer et à configurer la fonctionnalité de capture d
 
 Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des captures de données AEM Forms et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Open [Software Distribution](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Ouvrez [Distribution de logiciels](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
-1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
-1. Open [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
-1. Select the package and click **[!UICONTROL Install]**.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l&#39;option **[!UICONTROL Rechercher les téléchargements]** pour filtrer les résultats.
+1. Appuyez sur le nom du package correspondant à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-   You can also download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) article.
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d&#39;arrêter le serveur AEM Forms, patientez jusqu&#39;à ce que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d&#39;apparaître dans le `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` fichier et que le journal soit stable.
+   Vous pouvez également télécharger le package via le lien direct répertorié dans l&#39;article [AEM Forms versions](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d&#39;arrêter le serveur AEM Forms, patientez jusqu&#39;à ce que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d&#39;apparaître dans le  `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` fichier et que le journal soit stable.
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 
 ### (Windows uniquement) Installation automatique des redistributables Visual Studio {#automatic-installation-visual-studio-redistributables}
 
 Si vous installez une instance AEM en mode élevé, les tables de redistribution Visual Studio manquantes sont installées automatiquement lors de l&#39;installation du module complémentaire AEM Forms.
 
-Pour déterminer si les tables de redistribution Visual Studio sont installées automatiquement, ouvrez le `error.log` fichier disponible dans le `/crx-repository/logs/` répertoire. Les journaux contiennent le message suivant :
+Pour déterminer si les tables de redistribution Visual Studio sont installées automatiquement, ouvrez le fichier `error.log` disponible dans le répertoire `/crx-repository/logs/`. Les journaux contiennent le message suivant :
 
 `Redist <service name> already installed on system, will not attempt re-installation`
 
@@ -153,9 +153,9 @@ AEM Forms comporte quelques configurations obligatoires et facultatives. Les con
 Effectuez les étapes suivantes sur toutes les instances d’auteur et de publication pour démarrer et déléguer les bibliothèques :
 
 1. Arrêtez l’instance AEM sous-jacente.
-1. Open the `[AEM installation directory]\crx-quickstart\conf\sling.properties` file for editing.
+1. Ouvrez le fichier `[AEM installation directory]\crx-quickstart\conf\sling.properties` pour le modifier.
 
-   If you used `[AEM installation directory]\crx-quickstart\bin\start.bat` to start AEM, then edit the sling.properties located at `[AEM_root]\crx-quickstart\`.
+   Si vous avez utilisé `[AEM installation directory]\crx-quickstart\bin\start.bat` pour début AEM, modifiez le fichier sling.properties situé à `[AEM_root]\crx-quickstart\`.
 
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
@@ -172,14 +172,14 @@ Effectuez les étapes suivantes sur toutes les instances d’auteur et de public
 
 1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est `https://'[server]:[port]'/system/console/configMgr`.
 1. Recherchez **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** et ouvrez la configuration.
-1. Add the **sun.util.calendar** package to the **allowlist** field. Cliquez sur **Save**.
+1. Ajoutez le package **sun.util.calendar** dans le champ **liste autorisée**. Cliquez sur **Enregistrer**.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
 
 ### Configurations post-installation facultatives {#optional-post-installation-configurations}
 
 #### La configuration de Dispatcher {#configure-dispatcher}
 
-Le répartiteur est un outil de mise en cache et/ou d’équilibrage de charge Adobe Experience Manager qui peut être utilisé conjointement avec un serveur Web d’entreprise. If you use [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), then perform the following configurations for AEM Forms:
+Le répartiteur est un outil de mise en cache et/ou d’équilibrage de charge Adobe Experience Manager qui peut être utilisé conjointement avec un serveur Web d’entreprise. Si vous utilisez [Répartiteur](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), effectuez les configurations suivantes pour AEM Forms :
 
 1. Configurez l’accès à AEM Forms:
 
@@ -187,23 +187,23 @@ Le répartiteur est un outil de mise en cache et/ou d’équilibrage de charge A
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Enregistrez et fermez le fichier. Pour des informations détaillées sur les filtres, voir la [documentation du répartiteur](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Enregistrez et fermez le fichier. Pour des informations détaillées sur les filtres, voir la [documentation du répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Configurez le service de filtrage des référents :
 
-   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. L’URL par défaut du gestionnaire de configuration est `https://[server]:[port_number]/system/console/configMgr`. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. The format of the entry is `https://[server]:[port]&#39;.
+   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. L’URL par défaut du gestionnaire de configuration est `https://[server]:[port_number]/system/console/configMgr`. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. Le format de l&#39;entrée est `https://[server]:[port]&#39;.
 
 #### Configuration du cache {#configure-cache}
 
 La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès aux données, réduire le temps de réponse et améliorer les vitesses d’entrée/sortie (E/S). Le cache de formulaires adaptatifs stocke uniquement le contenu HTML et la structure JSON d’un formulaire adaptatif sans enregistrer les données pré-renseignées. Cela permet de réduire le temps nécessaire pour effectuer le rendu d’un formulaire adaptatif.
 
-* Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif. 
+* Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif. 
 * Lors du développement des composants personnalisés, sur le serveur utilisé pour le développement, gardez le cache de formulaires adaptatifs désactivé.
 
 Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
-1. Go to AEM web console configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.   Cliquez sur **Save**.
+1. Accédez à AEM gestionnaire de configuration de la console Web à l’adresse https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. Dans la boîte de dialogue Modifier les valeurs de configuration, spécifiez le nombre maximal de formulaires ou de documents qu&#39;une instance du serveur AEM Forms peut mettre en cache dans le champ **Nombre de Forms adaptatif**. La valeur par défaut est 100. Cliquez sur **Enregistrer**.
 
    >[!NOTE]
    >
@@ -223,7 +223,7 @@ Dans un scénario Adobe Sign et de formulaires adaptatifs standard, un utilisate
 
 Pour utiliser Adobe Sign avec AEM Forms, [intégrez Adobe Sign à AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
-#### Configuration d’Adobe Analytics {#configure-adobe-analytics}
+#### Configuration d’Adobe Analytics  {#configure-adobe-analytics}
 
 AEM Forms s’intègre à Adobe Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
 
