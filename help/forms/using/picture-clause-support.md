@@ -18,7 +18,7 @@ ht-degree: 96%
 ---
 
 
-# Prise en charge des clauses d’image pour HTML5 forms {#picture-clause-support-for-html-forms}
+# Prise en charge des clauses d’image pour HTML5 forms  {#picture-clause-support-for-html-forms}
 
 HTML5 forms prend en charge les clauses d’image XFA pour afficher la valeur et la valeur formatée de la date, du texte et des synboles numériques. Les expressions de clause d’image suivantes sont prises en charge :
 
@@ -93,7 +93,7 @@ Expressions prises en charge pour la clause d’image de date :
  </tbody>
 </table>
 
-## Clause d’image numérique {#numeric-picture-clause}
+## Clause d’image numérique  {#numeric-picture-clause}
 
 HTML5 forms prend en charge les symboles d’image numérique. Toutefois, il existe une différence de prise en charge entre les formulaires PDF et les formulaires HTML.
 
@@ -107,7 +107,7 @@ Le nombre **10000** est formaté sous la forme **10 000** dans les formulaires 
 
 Le nombre 1000000 est formaté sous la forme 1 000 000 dans les formulaires PDF. Toutefois, dans les formulaires HTML, ce nombre n’est pas formaté et conserve la forme 1000000.
 
-Supported expressions for Numeric Picture clause in **HTML Forms** are:
+Les expressions prises en charge pour la clause d’image numérique dans **Forms HTML** sont les suivantes :
 
 * num.integer{}
 * num.decimal{}
@@ -200,7 +200,7 @@ Supported expressions for Numeric Picture clause in **HTML Forms** are:
  </tbody>
 </table>
 
-## Clause d’image de texte {#text-picture-clause}
+## Clause d’image de texte  {#text-picture-clause}
 
 HTML5 forms prend en charge les expressions de clause d’image de texte suivantes :
 
