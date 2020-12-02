@@ -1,6 +1,6 @@
 ---
-title: 'Personnalisation  '
-seo-title: 'Personnalisation  '
+title: 'Personnalisation '
+seo-title: 'Personnalisation '
 description: En savoir plus sur la personnalisation dans AEM.
 seo-description: En savoir plus sur la personnalisation dans AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
@@ -18,9 +18,9 @@ ht-degree: 78%
 ---
 
 
-# Personnalisation  {#personalization}
+# Personnalisation {#personalization}
 
-## What is Personalization? {#what-is-personalization}
+## Qu’est-ce que la personnalisation ? {#what-is-personalization}
 
 Le volume de contenu disponible aujourd’hui est en constante augmentation, que ce soit sur des sites Internet, extranet ou intranet.
 
@@ -55,7 +55,7 @@ La personnalisation peut être soit :
 * Filtrage simple : les sélections sont effectuées sur la base de profils prédéfinis au niveau de l’utilisateur et/ou du groupe.
 * Filtrage collaboratif/sur recommandation : le comportement de l’utilisateur est enregistré selon des règles prédéfinies. Ces règles sont basées sur le comportement observé chez des personnes ayant des centres d’intérêt similaires. Les informations collectées sont utilisées pour personnaliser les informations affichées sur l’écran de l’utilisateur, en particulier sous forme de recommandations.
 
-## Comment et quand la personnalisation peut-elle être utilisée ? {#how-and-when-can-personalization-be-used}
+## Comment et quand la personnalisation peut-elle être utilisée ?  {#how-and-when-can-personalization-be-used}
 
 La personnalisation peut être utilisée dans de nombreuses situations, par exemple :
 
@@ -121,7 +121,7 @@ Lors de l’utilisation de la personnalisation, tenez compte des points suivants
 
 * De nombreux utilisateurs sont soucieux de la protection et de la sécurité des données, en particulier en ce qui concerne les données collectées en surveillant leur comportement sur le web.
 
-## Personnalisation et accès {#personalization-and-access}
+## Personnalisation et accès  {#personalization-and-access}
 
 Même si ces deux aspects sont liés, la personnalisation et le contrôle d’accès doivent chacun être pris en compte de manière distincte.
 
@@ -129,7 +129,7 @@ La personnalisation ne crée en elle-même aucune forme de contrôle d’accès.
 
 Toutefois, le contrôle d’accès peut être utilisé pour créer une forme de personnalisation. Si vous autorisez ou refusez à un utilisateur l’accès à un contenu, ceci affecte inévitablement le choix de contenu dont cet utilisateur dispose, et donc la personnalisation de son expérience web.
 
-## Composants disponibles pour la personnalisation {#components-available-for-personalization}
+## Composants disponibles pour la personnalisation  {#components-available-for-personalization}
 
 Divers composants sont fournis avec AEM en vue de la personnalisation. Certains de ces composants permettent aux utilisateurs de se connecter et de modifier leur profil, tandis que d’autres (par exemple, Mes gadgets) leur permettent de configurer une page spécifique :
 
@@ -168,7 +168,7 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 
 Les fonctions de communauté telles que les blogs, les forums et les calendriers entraînent la création de contenu de communauté, généralement appelé contenu créé par l’utilisateur. Lorsque du contenu créé par l’utilisateur est entré dans un environnement de publication consistant en plusieurs instances AEM ([ferme de publication](/help/communities/topologies.md)), un problème majeur est de trouver un moyen de synchroniser ce contenu sur toutes les instances.
 
-With [AEM Communities 6.1](/help/communities/overview.md) extension, this issue is solved by using a [common store for UGC](/help/communities/working-with-srp.md). In regards, to personalization, Communities includes [Social Login](/help/communities/social-login.md) - the ability to provide the option for site visitors to sign in with Facebook and Twitter.
+Avec l&#39;extension [AEM Communities 6.1](/help/communities/overview.md), ce problème est résolu en utilisant une [boutique commune pour UGC](/help/communities/working-with-srp.md). En ce qui concerne la personnalisation, les communautés incluent [Connexion sociale](/help/communities/social-login.md) - la possibilité de fournir aux visiteurs du site la possibilité de se connecter avec Facebook et Twitter.
 
 Sans l’extension Communities, les différentes méthodes à examiner pour résoudre le problème lié à l’homogénéité du contenu créé par l’utilisateur sont les suivantes :
 
