@@ -22,7 +22,7 @@ ht-degree: 82%
 
 Les composants principaux sont des composants souples et modernes offrant une grande facilité d’extensibilité et permettant une intégration aisée dans vos projets. Plusieurs principes de conception majeurs ont présidé à l’élaboration des composants principaux : HTL, composants utillisables immédiatement, configurabilité, contrôle de version, extensibilité… We.Retail repose sur des composants principaux.
 
-## Test {#trying-it-out}
+## Test  {#trying-it-out}
 
 1. Démarrez AEM avec l’échantillon de contenu We.Retail, puis ouvrez la [Console Composants](/help/sites-authoring/default-components-console.md).
 
@@ -40,7 +40,7 @@ Les composants principaux sont des composants souples et modernes offrant une gr
 1. Notez que tous les composants principaux sont nommés **v1** pour indiquer qu’il s’agit de la première version. Des versions seront publiées régulièrement. Elles seront compatibles avec la version d’AEM et permettront une mise à niveau aisée, de sorte que vous puissiez tirer parti des fonctionnalités les plus récentes.
 1. Cliquez sur **Texte (v1)**.
 
-   See that the **Resource Type** of the component is `/apps/core/wcm/components/text/v1/text`. Core components are found under `/apps/core/wcm/components` and are versioned per component.
+   Voir que le **type de ressource** du composant est `/apps/core/wcm/components/text/v1/text`. Les composants principaux se trouvent sous `/apps/core/wcm/components` et sont versionnés par composant.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -49,11 +49,11 @@ Les composants principaux sont des composants souples et modernes offrant une gr
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Revenez à la console de composants. Effectuez un filtrage sur le groupe **We.Retail** et sélectionnez ensuite le composant **Texte**.
-1. See that the **Resource Type** points to a component as expected under `/apps/weretail` but the **Resource Super Type** points back to the core component `/apps/core/wcm/components/text/v1/text`.
+1. Vous pouvez voir que le **Type de ressource** pointe vers un composant comme prévu sous `/apps/weretail`, mais que le **Super type de ressource** renvoie au composant principal `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Click the **Live Usage** tab to see on which pages this component is currently being used. Cliquez sur la première **page de remerciement** pour modifier la page.
+1. Cliquez sur l&#39;onglet **Utilisation en direct** pour savoir sur quelles pages ce composant est actuellement utilisé. Cliquez sur la première **page de remerciement** pour modifier la page.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -90,4 +90,4 @@ Les composants principaux sont des composants souples et modernes offrant une gr
 
 Pour plus d’informations sur les composants principaux, consultez le document de création [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html), afin d’obtenir un aperçu des fonctionnalités des composants principaux, et le document de développement [Développement de composants principaux](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) pour une présentation technique.
 
-Vous pouvez également effectuer des recherches approfondies sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Refer to the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete details on editable templates.
+Vous pouvez également effectuer des recherches approfondies sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Pour plus d&#39;informations sur les modèles modifiables, consultez le document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page du document du développeur [Modèles - modifiables](/help/sites-developing/page-templates-editable.md).
