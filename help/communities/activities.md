@@ -23,7 +23,7 @@ ht-degree: 25%
 
 ## Présentation {#introduction}
 
-The activities of a signed in community member, such as posting to a forum or blog, are collected into a stream which may be filtered and displayed in various ways through configuration of the `Activity Streams` component.
+Les activités d&#39;un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont collectées dans un flux qui peut être filtré et affiché de différentes manières via la configuration du composant `Activity Streams`.
 
 La possibilité de suivi ajoute une autre vue des activités lorsque des membres de la communauté suivent des publications d’intérêt ou suivent les activités d’autres membres de la communauté.
 
@@ -34,21 +34,21 @@ Le document décrit :
 
 ### Ajout de flux d’activités à une page {#adding-activity-streams-to-a-page}
 
-If it is desired to add an `Activity Streams` component to a page in author mode, use the component browser to locate
+Si vous souhaitez ajouter un composant `Activity Streams` à une page en mode création, utilisez l’explorateur de composants pour localiser
 
 * `Communities / Activity Streams`
 
 et faites-le glisser sur la page où des flux d’activités doivent apparaître.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear :
+Lorsque les [bibliothèques client requises](/help/communities/essentials-activities.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Activity Streams` apparaîtra :
 
 ![activité-flux](assets/activity-component.png)
 
 ### Configuration du composant Flux d’activités {#configuring-activity-streams}
 
-Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Activity Streams` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configurer](assets/configure-new.png)
 
@@ -78,15 +78,15 @@ Dans l’onglet **Activités de l’utilisateur**, spécifiez les activités à 
 
 ### Vue suivante {#following-view}
 
-Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar, filelibrary et les commentaires.](/help/communities/calendar.md)[](/help/communities/file-library.md)[](/help/communities/comments.md)
+Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md) et [commentaires](/help/communities/comments.md).
 
 ![vue suivante](assets/following-activities.png)
 
-Le bouton **Suivre** permet de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md)ou [abonnements](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La `Email Subscriptions` sélection n’est présente que lorsqu’elle est configurée.
+Le bouton **Suivre** permet de suivre les entrées en tant qu&#39;activités, [notifications](/help/communities/notifications.md) ou [abonnements](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d&#39;activer ou de désactiver une sélection. La sélection `Email Subscriptions` n&#39;est présente que lorsqu&#39;elle est configurée.
 
-Si une méthode de suivi est sélectionnée, le texte du bouton devient **Suivant**. Pour plus de commodité, il est possible de choisir `Unfollow All` de désactiver toutes les méthodes.
+Si une méthode de suivi est sélectionnée, le texte du bouton devient **Suivant**. Pour plus de commodité, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
 
-Le bouton **Suivre** s’affiche :
+Le bouton **Suivre** apparaît :
 
 * Lors de l’affichage du profil d’un autre membre.
 * Sur une page de présentation principale, telle que les forums, la qualité de vie et les blogs.
