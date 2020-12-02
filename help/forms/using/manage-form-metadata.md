@@ -28,7 +28,7 @@ Par défaut, AEM Forms fournit un ensemble défini de métadonnées pour chaque 
 
 Si vous êtes développeur ou propriétaire d’un site, vous pouvez personnaliser Forms Portal, l’interface utilisateur pour AEM Forms, afin qu’il reflète les métadonnées utilisées dans votre entreprise. Pour plus d’informations sur Forms Portal, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
 
-## Metadata in AEM Forms {#metadata-in-aem-forms}
+## Métadonnées en AEM Forms {#metadata-in-aem-forms}
 
 Dans AEM Forms, la liste des propriétés de métadonnées associées à une ressource dépend du type de cette dernière. En outre, si vous ajoutez une propriété de métadonnées personnalisée, celle-ci est ajoutée pour toutes les ressources du même type.
 
@@ -151,7 +151,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
   </tr> 
   <tr> 
    <td>Références</td> 
-   <td><p>Formulaire adaptatif</p> <p>Modèle de formulaire</p> <p>Resource</p> </td> 
+   <td><p>Formulaire adaptatif</p> <p>Modèle de formulaire</p> <p>Ressource</p> </td> 
    <td><p>Liste des ressources (formulaires ou ressources) auxquelles ce formulaire est associé. Ces ressources peuvent appartenir à deux catégories :</p> 
     <ul> 
      <li>Fait référence : ressources auxquelles le formulaire actuel fait référence.</li> 
@@ -188,15 +188,15 @@ Les ressources possèdent des valeurs de propriété qui peuvent être affichée
       >
       >Les Actions rapides sont les éléments d’action qui s’affichent sur une miniature lorsque vous pointez dessus.
 
-   1. Select the form and click the View Properties ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) icon that appears in the toolbar.
-   1. Accédez à la page des détails du formulaire en cliquant sur la miniature de celui-ci lorsque vous n’êtes pas en mode de sélection. Now, click the ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) eye icon on the upper right, and then click Properties in the list beneath it.
+   1. Sélectionnez le formulaire et cliquez sur l’icône Propriétés de la Vue ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) qui s’affiche dans la barre d’outils.
+   1. Accédez à la page des détails du formulaire en cliquant sur la miniature de celui-ci lorsque vous n’êtes pas en mode de sélection. Cliquez maintenant sur l’icône ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) en haut à droite, puis cliquez sur Propriétés dans la liste en dessous.
 
 1. La page de propriétés qui s’ouvre affiche un schéma contenant uniquement les propriétés de métadonnées comportant des valeurs.
 
    La page de propriétés comporte une barre d’outils dotée de deux icônes d’action :
 
    * Modifier : ![aem6forms_edit](assets/aem6forms_edit.png) Modifier les valeurs des propriétés de métadonnées
-   * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode.
+   * Vue : ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Accédez à la page des détails du formulaire, qui ouvre le formulaire en mode prévisualisation.
 
    La section du contenu est divisée en deux parties :
 
@@ -212,7 +212,7 @@ Vous pouvez modifier les valeurs des propriétés de métadonnées existantes ou
 
 1. Suivez la procédure décrite dans la section précédente pour ouvrir la page de propriétés dans laquelle peuvent être affichées les métadonnées existantes du formulaire sélectionné.
 
-1. From the toolbar, click the edit icon ![aem6forms_edit](assets/aem6forms_edit.png) to change the mode of the page from read-only to read/write.
+1. Dans la barre d’outils, cliquez sur l’icône de modification ![aem6forms_edit](assets/aem6forms_edit.png) pour modifier le mode de la page de lecture seule à lecture/écriture.
 
 1. La page de propriétés qui s’affiche contient un schéma comportant un mélange de champs d’entrée modifiables et de texte statique.
 
@@ -222,8 +222,8 @@ Vous pouvez modifier les valeurs des propriétés de métadonnées existantes ou
 
    Cette page contient une barre d’outils dotée de deux icônes d’action différentes de celles du mode d’affichage :
 
-   * Cancel: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancel any changes made to metadata property values so far
-   * Done: ![aem6forms_check](assets/aem6forms_check.png) Save all the changes made to metadata property values so far
+   * Annuler : ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Annuler les modifications apportées jusqu’à présent aux valeurs des propriétés de métadonnées
+   * Terminé : ![aem6forms_check](assets/aem6forms_check.png) Enregistrer toutes les modifications apportées jusqu’à présent aux valeurs de propriété de métadonnées
 
    Ces deux actions redirigent l’utilisateur dans le mode lecture seule de la page de propriétés contenant les valeurs mises à jour.
 
@@ -248,7 +248,7 @@ Pour les formulaires adaptatifs, les utilisateurs ont également la possibilité
 
 Outre les métadonnées prêtes à l’emploi, AEM Forms prend en charge de nouvelles métadonnées personnalisées.
 
-A tool (Metadata Schema Editor) is provided to define the schema for the metadata layout; that is, the layout of what appears in the **[!UICONTROL Properties]** page of a form. L’éditeur de schéma de métadonnées permet d’ajouter ou de modifier un schéma personnalisé pour vos ressources.
+Un outil (Editeur de Schéma de métadonnées) est fourni pour définir le schéma de la mise en page des métadonnées ; c’est-à-dire la disposition de ce qui apparaît dans la page **[!UICONTROL Propriétés]** d’un formulaire. L’éditeur de schéma de métadonnées permet d’ajouter ou de modifier un schéma personnalisé pour vos ressources.
 
 AEM Forms exposent les schémas de métadonnées des types de formulaires pris en charge dans cet outil. Vous pouvez ainsi accéder à ces schémas et utiliser les fonctionnalités de l’éditeur de schéma de métadonnées pour ajouter des propriétés personnalisées.
 
@@ -266,7 +266,7 @@ AEM Forms exposent les schémas de métadonnées des types de formulaires pris e
 
 1. Lorsque vous cliquez sur n’importe quel type de ressource, une liste contenant l’option `extendedmetadata` s’affiche. Modifiez ce schéma.
 
-1. Select the checkbox beside `extendedmetadata` and then click the edit ![aem6forms_edit](assets/aem6forms_edit.png) icon that appears in the toolbar.
+1. Cochez la case en regard de `extendedmetadata`, puis cliquez sur l’icône de modification ![aem6forms_edit](assets/aem6forms_edit.png) qui apparaît dans la barre d’outils.
 
 1. AEM Forms ouvre l’éditeur de schéma de métadonnées/le créateur de formulaires du type de ressource sélectionné (dans ce cas présent, du formulaire adaptatif).
 
@@ -305,7 +305,7 @@ AEM Forms exposent les schémas de métadonnées des types de formulaires pris e
       >En outre, le nom de propriété doit être unique pour éviter d’écrire des valeurs pour deux propriétés ou davantage au même emplacement dans le référentiel. Il est donc recommandé de modifier la valeur « default ».
 
    1. Remplissez les autres paramètres selon vos besoins. Sélectionnez par exemple l’option Obligatoire si vous souhaitez que le champ soit obligatoire.
-   1. To delete a field you added, select the field and then click the delete ![delete-1](assets/delete-1.png) icon.
+   1. Pour supprimer un champ que vous avez ajouté, sélectionnez-le, puis cliquez sur l’icône Supprimer ![delete-1](assets/delete-1.png).
 
 1. Si nécessaire, suivez les étapes 1 à 3 pour ajouter une autre propriété.
 1. Cliquez sur **Terminé** lorsque vous avez apporté toutes les modifications.
