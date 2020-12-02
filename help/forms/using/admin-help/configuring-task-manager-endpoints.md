@@ -28,22 +28,22 @@ Définissez les paramètres suivants pour configurer un point de fin TaskManager
 
 **Nom :** (obligatoire) identifie le point de terminaison. Le nom est affiché dans l’affichage carte de Workspace. N’incluez pas de caractère « &lt; », car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL en tant que nom de point de fin, assurez-vous que celle-ci est conforme aux normes syntaxiques en la matière précisées dans le document RFC1738.
 
-**Description :** Description du point de terminaison. N’incluez pas de caractère « &lt; », car la description affichée dans Workspace serait tronquée.
+**Description : description** du point de terminaison. N’incluez pas de caractère « &lt; », car la description affichée dans Workspace serait tronquée.
 
-**Instructions de tâche :** Instructions destinées à l’utilisateur qui début ce processus.
+**Instructions de tâche :** instructions destinées à l’utilisateur qui début ce flux de travail.
 
-**Propriétaire du processus :** Nom de la personne responsable du processus.
+**Propriétaire du processus :** nom de la personne responsable du processus.
 
-**L’utilisateur peut transférer la Tâche :** Permet à l’utilisateur de transférer la tâche initiale.
+**L’utilisateur peut transférer la Tâche :** permet à l’utilisateur de transférer la tâche initiale.
 
-**Afficher la fenêtre des pièces jointes :** Permet à l’utilisateur d’afficher la fenêtre des pièces jointes.
+**Afficher la fenêtre de pièce jointe :** permet à l’utilisateur de voir la fenêtre de pièce jointe.
 
-**Autoriser l’Ajoute des pièces jointes :** Permet à l’utilisateur d’ajouter des pièces jointes et des notes.
+**Autoriser l’Ajoute des pièces jointes :** permet à l’utilisateur d’ajouter des pièces jointes et des notes.
 
-**Tâche initialement verrouillée :** Verrouille la tâche initiale.
+**Tâche initialement verrouillée :** verrouille la tâche initiale.
 
-**Ajouter des listes ACL pour les files d&#39;attente partagées :** La tâche initiale est créée avec des listes ACL pour les utilisateurs de files d’attente partagées.
+**Ajouter des listes de contrôle d’accès pour les files d’attente partagées :** la tâche initiale est créée avec des listes de contrôle d’accès pour les utilisateurs des files d’attente partagées.
 
-**Catégorisation :** (obligatoire) catégorie d’affichage du formulaire par l’utilisateur dans Workspace. Sélectionnez une catégorie dans la liste ou sélectionnez Nouvelle catégorie pour ajouter une catégorie.
+**Catégorisation :**  (obligatoire) catégorie dans laquelle l’utilisateur voit le formulaire dans Workspace. Sélectionnez une catégorie dans la liste ou sélectionnez Nouvelle catégorie pour ajouter une catégorie.
 
-**Nom de l&#39;opération :** (obligatoire) liste d’opérations qui peut être affectée au point de terminaison.
+**Nom de l’opération :** (obligatoire) liste d’opérations pouvant être attribuées au point de terminaison.
