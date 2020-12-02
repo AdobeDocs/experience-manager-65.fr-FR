@@ -29,7 +29,7 @@ En général, les différents rapports sont les suivants :
 
 * [Rapport des affectations](#assignments-report)
 
-   Pour une communauté [d’](/help/communities/overview.md#enablement-community)activation, fournit une vue d’ensemble des progrès des apprenants sur leurs tâches, y compris un score associé si la mise en oeuvre de la norme SCORM est mise en oeuvre.
+   Pour une [communauté d&#39;activation](/help/communities/overview.md#enablement-community), fournit un aperçu des progrès des apprenants sur leurs affectations, y compris un score associé si la mise en oeuvre de la norme SCORM est mise en oeuvre.
 
 * [Rapport des vues](#views-report)
 
@@ -65,7 +65,7 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 ![rapports](assets/reports1.png)
 
-### Rapports sur les ressources d’activation et les chemins d’apprentissage {#reports-for-enablement-resources-and-learning-paths}
+### Rapports sur les ressources d&#39;activation et les chemins d&#39;apprentissage {#reports-for-enablement-resources-and-learning-paths}
 
 * A partir de la navigation globale : **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** > **[!UICONTROL Ressources]**
 
@@ -88,7 +88,7 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
       * Nombre de commentaires formulés
       * Évaluation par étoiles donnée
 
-Pour plus d&#39;informations, reportez-vous à la section [](/help/communities/resources.md#report) Rapports de la console Ressources.
+Pour plus d&#39;informations, consultez la section [Rapports](/help/communities/resources.md#report) de la console Ressources.
 
 ## Rapport des affectations {#assignments-report}
 
@@ -176,14 +176,14 @@ Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
 ![generate-report](assets/generate-posts-report.png)
 
-## Résolution des incidents {#troubleshooting}
+## Dépannage {#troubleshooting}
 
-### Aucun site de communauté répertorié {#no-community-sites-listed}
+### Aucun site communautaire n&#39;est répertorié {#no-community-sites-listed}
 
 Si aucun site de la communauté n’est répertorié, vérifiez que l’Adobe Analytics a été activé pour un site. Si vous choisissez des rapports sur les affectations, assurez-vous que la fonction des affectations est dans la structure du site de la communauté.
 
-### Les rapports ne s’affichent pas dans l’instance Auteur AEM {#reports-do-not-show-in-aem-author-instance}
+### Les rapports ne s’affichent pas dans l’instance d’auteur AEM {#reports-do-not-show-in-aem-author-instance}
 
-Si les rapports ne s’affichent pas dans l’instance Auteur AEM, recherchez les personnalisations, telles que le mappage des URL sur l’instance Publication. Si le mappage des URL est effectué uniquement sur l’instance de publication AEM du site des communautés, assurez-vous que la même instance a été configurée dans l’instance d’auteur AEM dans la configuration de l’usine **de composants sociaux du rapport de tendances du** site.
+Si les rapports ne s’affichent pas dans l’instance Auteur AEM, recherchez les personnalisations, telles que le mappage des URL sur l’instance Publication. Si le mappage des URL n’est effectué que sur l’instance de publication AEM du site des communautés, assurez-vous que la même opération a été configurée dans l’instance d’auteur AEM dans la configuration **Composant social Factory** du rapport Tendance du site.
 
 ![Mappage d’URL sur l’auteur AEM](assets/sitetrend.png)
