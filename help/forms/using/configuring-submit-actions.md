@@ -21,7 +21,7 @@ ht-degree: 82%
 
 ## Présentation des actions d’envoi {#introduction-to-submit-actions}
 
-Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez configurer l’action d’envoi sur le formulaire adaptatif. Les formulaires adaptatifs fournissent quelques actions d’envoi prêtes à l’emploi. Vous pouvez copier et étendre les actions d’envoi par défaut afin de créer votre propre action. Cependant, en fonction des exigences, vous pouvez rédiger et enregistrer votre propre action d’envoi afin de traiter les données du formulaire envoyé. L’action d’envoi peut utiliser un envoi [](../../forms/using/asynchronous-submissions-adaptive-forms.md)synchrone ou asynchrone.
+Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez configurer l’action d’envoi sur le formulaire adaptatif. Les formulaires adaptatifs fournissent quelques actions d’envoi prêtes à l’emploi. Vous pouvez copier et étendre les actions d’envoi par défaut afin de créer votre propre action. Cependant, en fonction des exigences, vous pouvez rédiger et enregistrer votre propre action d’envoi afin de traiter les données du formulaire envoyé. L’action d’envoi peut utiliser [envoi synchrone ou asynchrone](../../forms/using/asynchronous-submissions-adaptive-forms.md).
 
 Vous pouvez configurer une action d’envoi dans la section **Envoi** des propriétés du conteneur de formulaire adaptatif, dans la zone latérale.
 
@@ -45,12 +45,12 @@ Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs so
 
 >[!NOTE]
 >
->Ensure that the [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
+>Assurez-vous que [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
 >pas. Le répertoire est nécessaire pour stocker temporairement des pièces jointes. Si le fichier n’existe pas, créez-le.
 
 >[!CAUTION]
 >
->If you [prefill](../../forms/using/prepopulate-adaptive-form-fields.md) a form template, form data model, or schema based adaptive form with XML or JSON data complaint to a schema (XML schema, JSON schema, form template, or form data model) that is data does not contain &lt;afData>, &lt;afBoundData>, and &lt;/afUnboundData> tags, then the data of unbounded fields (Unbounded fields are adaptive form fields without [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) property) of the adaptive form is lost.
+>Si vous [préremplissez](../../forms/using/prepopulate-adaptive-form-fields.md) un modèle de formulaire, un modèle de données de formulaire ou un formulaire adaptatif basé sur un schéma avec plainte de données XML ou JSON à un schéma (schéma XML, schéma JSON, modèle de formulaire ou modèle de données de formulaire) qui est des données ne contient pas de &lt;afData>, &lt;afBoundData> et &lt;/afUnboundData>, alors les données ne sont pas limitées Les champs non liés sont des champs de formulaire adaptatif sans [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) propriété) du formulaire adaptatif perdus.
 
 Vous pouvez entrer une action d’envoi personnalisée pour les formulaires adaptatifs afin de répondre à votre cas d’utilisation. Pour plus d’informations, voir [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](../../forms/using/custom-submit-action-form.md).
 
@@ -81,11 +81,11 @@ Pour transmettre des données à un serveur externe, indiquez une URL. Le format
 
 ![Mappage pour la transmission des valeurs de champs sous forme de paramètres de page de remerciement](assets/post-enabled-actionconfig.png)
 
-Dans l’exemple ci-dessus, les informations saisies par l’utilisateur dans `textbox` sont capturées au moyen du paramètre `param1`. Syntax to post data captured using `param1` is:
+Dans l’exemple ci-dessus, les informations saisies par l’utilisateur dans `textbox` sont capturées au moyen du paramètre `param1`. La syntaxe permettant de publier les données capturées à l&#39;aide de `param1` est la suivante :
 
 `String data=request.getParameter("param1");`
 
-Similarly, paramenters that you use for posting XML data and attachments are `dataXml` and `attachments`.
+De même, les paramètres que vous utilisez pour publier des données XML et des pièces jointes sont `dataXml` et `attachments`.
 
 Par exemple, vous utilisez ces deux paramètres dans votre script pour analyser les données à un point de fin REST. Utilisez la syntaxe suivante pour stocker et analyser les données :
 
@@ -96,12 +96,12 @@ Dans cet exemple, `data` contient les données XML et `att` les données des pi�
 
 ## Envoyer un courrier électronique {#send-email}
 
-The **Send Email** submit action sends an email to one or more recipients on successful submission of the form. Le message généré peut contenir des données de formulaire dans un format prédéfini.
+L’action d’envoi **Envoyer un courrier électronique** envoie un courrier électronique à un ou plusieurs destinataires lors de l’envoi réussi du formulaire. Le message généré peut contenir des données de formulaire dans un format prédéfini.
 
 >[!NOTE]
 Tous les champs de formulaire doivent avoir des noms d’élément différents, même s’ils sont définis sur des panneaux différents, afin d’inclure les données de formulaire dans un message électronique.
 
-## Envoyer un fichier PDF par courrier électronique {#send-pdf-via-email}
+## Envoyer un fichier PDF par courrier électronique  {#send-pdf-via-email}
 
 L’action d’envoi **Envoyer le PDF par courrier électronique** envoie un message électronique avec un fichier PDF contenant des données de formulaire à un ou plusieurs destinataires lors d’un envoi réussi du formulaire.
 
@@ -114,21 +114,21 @@ L’option d’envoi **Processus Envoyer aux formulaires** envoie un fichier XML
 
 Pour plus d’informations sur la configuration de l’action d’envoi Processus Envoyer aux formulaires, voir [Envoi et traitement de vos données de formulaire à l’aide de processus de formulaires](../../forms/using/submit-form-data-livecycle-process.md).
 
-## Envoyer à l’aide du modèle de données de formulaire {#submit-using-form-data-model}
+## Envoyer à l’aide du modèle de données de formulaire  {#submit-using-form-data-model}
 
-The **Submit using Form Data Model** submit action writes submitted adaptive form data for the specified data model object in a form data model to its data source. Lors de la configuration de l’action d’envoi, vous pouvez sélectionner un objet de modèle de données dont vous souhaitez écrire les données envoyées dans sa source de données.
+L&#39;action d&#39;envoi **Envoyer à l&#39;aide du modèle de données de formulaire** écrit les données de formulaire adaptatif envoyées pour l&#39;objet de modèle de données spécifié dans un modèle de données de formulaire à sa source de données. Lors de la configuration de l’action d’envoi, vous pouvez sélectionner un objet de modèle de données dont vous souhaitez écrire les données envoyées dans sa source de données.
 
 En outre, vous pouvez envoyer une pièce jointe de formulaire à l’aide d’un modèle de données de formulaire et d’un document d’enregistrement vers la source de données.
 
 Pour plus d’informations sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
 
-## Action d’envoi du Forms Portal {#forms-portal-submit-action}
+## Action d’envoi du Forms Portal  {#forms-portal-submit-action}
 
 L’option **Action d’envoi du portail Formulaires** rend les données de formulaire disponibles à travers un portail de AEM Forms.
 
 Pour plus d’informations sur le portail de formulaires et l’action d’envoi, voir [Composant Drafts &amp; Submissions](../../forms/using/draft-submission-component.md).
 
-## Appeler un processus AEM {#invoke-an-aem-workflow}
+## Appeler un processus AEM  {#invoke-an-aem-workflow}
 
 L’action d’envoi **Appeler un processus AEM** associe un formulaire adaptatif à un processus AEM. Lorsqu’un formulaire est envoyé, le processus associé commence automatiquement sur le nœud de traitement. De plus, il place le fichier de données, les pièces jointes et le document d’enregistrement, le cas échéant, à l’emplacement de charge utile du processus.
 
@@ -160,7 +160,7 @@ Si l’utilisateur final contourne ces validations et envoie les formulaires, le
 
 ### Prise en charge des fonctions personnalisées dans les expressions de validation {#supporting-custom-functions-in-validation-expressions-br}
 
-Parfois, en cas de **règles de validation complexes**, le script de validation exact réside dans des fonctions personnalisées que l’auteur doit appeler à partir de l’expression du champ de validation. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **Basic** tab of Adaptive Form Container properties as shown below.
+Parfois, en cas de **règles de validation complexes**, le script de validation exact réside dans des fonctions personnalisées que l’auteur doit appeler à partir de l’expression du champ de validation. Pour rendre cette bibliothèque de fonctions personnalisées connue et disponible lors des validations côté serveur, l’auteur de formulaires peut configurer le nom de la bibliothèque cliente d’AEM sous l’onglet **Basic** des propriétés du Conteneur de formulaires adaptatifs comme illustré ci-dessous.
 
 ![Prise en charge des fonctions personnalisées dans les expressions de validation](assets/clientlib-cat.png)
 
@@ -172,4 +172,4 @@ L’auteur peut configurer une bibliothèque personnalisée JavaScript par formu
 
 Dans le cadre de la sécurité AEM et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication.
 
-For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md).
+Pour plus d’informations, voir [Personnalisation des pages affichées par le gestionnaire d’erreurs](/help/sites-developing/customizing-errorhandler-pages.md).
