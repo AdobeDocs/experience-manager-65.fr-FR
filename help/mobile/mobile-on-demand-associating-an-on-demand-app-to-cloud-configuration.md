@@ -34,32 +34,32 @@ De là, la publication, la prévisualisation et la gestion du contenu deviennent
 >
 >Avant de début la configuration de cloud pour votre application à la demande, vous devez connaître les fonctions d’approvisionnement AEM Mobile et de configuration du client AEM Mobile On-demand Services.
 >
->Pour plus d’informations, voir [Configuration de l’AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) dans la section Administration.
+>Pour plus d’informations, voir [Configuration d’AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) dans la section Administration.
 
-Pour configurer les Cloud Services Mobile On-Demand, cliquez sur l’en-tête situé dans le coin supérieur droit du volet **Gérer la connexion** depuis votre tableau de bord d’application.
+Pour configurer les Cloud Services Mobile On-Demand, cliquez sur le coin supérieur droit de la mosaïque **Gérer la connexion** dans le tableau de bord de votre application.
 
-Vous devez connaître le tableau de bord de l’application et les mosaïques disponibles. Pour plus d’informations, voir Tableau de bord [d’application](/help/mobile/mobile-apps-ondemand-application-dashboard.md) AEM Mobile.
+Vous devez connaître le tableau de bord de l’application et les mosaïques disponibles. Voir [Tableau de bord d’application AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
 
-### Configuration d’un lien vers la configuration du cloud {#setting-up-link-to-cloud-configuration}
+### Configuration du lien vers la configuration du cloud {#setting-up-link-to-cloud-configuration}
 
 >[!CAUTION]
 >
 >Vérifiez que vous disposez d&#39;un client à la demande et d&#39;une configuration cloud existants.
 >
->Pour plus d’informations, voir [Configuration de l’AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) dans la section Administration.
+>Pour plus d’informations, voir [Configuration d’AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) dans la section Administration.
 
 La procédure suivante décrit la configuration d’un lien vers la configuration du cloud :
 
-1. Dans **Mobile**, sélectionnez **Applications** , puis votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur l’icône d’engrenage sur la mosaïque **Gérer la connexion** .
+1. Dans **Mobile**, sélectionnez **Applications**, puis votre application Mobile On-Demand dans le catalogue.
+1. Cliquez sur l’icône d’engrenage sur la mosaïque **Gérer la connexion**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Saisissez la configuration existante ou créez-en une nouvelle en saisissant le titre **de la** configuration, l&#39;ID **de** périphérique et le jeton **de** périphérique.
+1. Entrez la configuration existante ou créez-en une nouvelle en entrant **Titre de la configuration**, **Id de périphérique** et **Jeton de périphérique**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Une fois que votre ID **de** périphérique et votre jeton **de** périphérique sont vérifiés, choisissez votre projet à la demande dans la liste.
+1. Une fois que vos **ID de périphérique** et **jeton de périphérique** ont été vérifiés, choisissez votre projet à la demande dans la liste.
 
    Cliquez sur **Envoyer**.
 
