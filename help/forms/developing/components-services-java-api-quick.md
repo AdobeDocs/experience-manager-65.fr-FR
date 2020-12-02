@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Début rapide sur l’API Java des composants et services (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Début rapide de l’API Java Composants and Services (SOAP) {#components-and-services-java-apiquick-start-soap}
 
 Le Début rapide des API Java (SOAP) est disponible pour les composants et les services.
 
@@ -153,7 +153,7 @@ L’exemple Java suivant déploie un composant basé sur un fichier JAR nommé *
 
 ## Début rapide (mode SOAP) : Définition du contexte d’exécution d’un service à l’aide de l’API Java {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-L’exemple de code Java suivant définit le contexte d’exécution de l’Invocateur Run-As sur un exemple de service appelé *EncryptDocument*.
+L’exemple de code Java suivant définit le contexte d’exécution d’Invoker Run-As sur un exemple de service nommé *EncryptDocument*.
 
 ```java
  /* 
@@ -243,7 +243,7 @@ L’exemple de code Java suivant définit le contexte d’exécution de l’Invo
  
 ```
 
-## Début rapide (mode SOAP) : Désactivation de la sécurité du service à l’aide de l’API Java {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Début rapide (mode SOAP) : Désactivation de la sécurité du service à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
 L’exemple de code Java suivant désactive la sécurité de l’exemple de service EncryptDocument et des services appelés à partir de ce service (les services Set Value and Encryption).
 
@@ -358,7 +358,7 @@ L’exemple de code Java suivant désactive la sécurité de l’exemple de serv
 
 ## Début rapide (mode SOAP) : Démarrage d’un service à l’aide de l’API Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-L’exemple de code Java suivant début un service appelé *SendEmailService*.
+L&#39;exemple de code Java suivant début un service nommé *SendEmailService*.
 
 ```java
  package com.adobe.sample.servicemanager; 
@@ -414,7 +414,7 @@ L’exemple de code Java suivant début un service appelé *SendEmailService*.
  
 ```
 
-## Début rapide (mode SOAP) : Modification des valeurs de configuration d’un service à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
+## Début rapide (mode SOAP) : Modification des valeurs de configuration d&#39;un service à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
 
 L’exemple Java suivant modifie les valeurs de configuration qui appartiennent au service SendEmail.
 
