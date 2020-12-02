@@ -18,7 +18,7 @@ ht-degree: 82%
 ---
 
 
-# Prise en main de l’espace de travail AEM Forms {#getting-started-with-aem-forms-workspace}
+# Prise en main de l’espace de travail AEM Forms  {#getting-started-with-aem-forms-workspace}
 
 Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches suivantes :
 
@@ -26,7 +26,7 @@ Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches 
 * afficher et agir sur les tâches qui vous sont affectées ou qui sont affectées à d’autres listes Tâches auxquelles vous avez accès ;
 * effectuer le suivi de tâches qui font partie des processus que vous avez démarrés ou modifiés.
 
-## Navigation dans l’espace de travail AEM Forms {#navigating-html-workspace}
+## Navigation dans l’espace de travail AEM Forms  {#navigating-html-workspace}
 
 Différents éléments de l’interface utilisateur de l’espace de travail AEM Forms s’affichent en fonction du processus et de la tâche sur lesquels vous travaillez. Vous pouvez afficher ou masquer les onglets Résumé, Formulaires, Détails, Historique, Pièces jointes ou Notes, ou l’ensemble des boutons décrits dans cette aide à tout moment.
 
@@ -50,7 +50,7 @@ Pour utiliser l’espace de travail AEM Forms avec un lecteur d’écran, gardez
 * Toute la navigation dans l’espace de travail AEM Forms se fait par le biais de balises d’ancrage, qui peuvent être facilement accessibles via des onglets.
 * Le chargement des formulaires peut prendre quelques secondes. Le lecteur d’écran ne vous informe pas de manière audible que le formulaire est en cours de chargement et que vous devez attendre.
 
-## Navigation dans l’espace de travail AEM Forms à l’aide du clavier {#navigating-html-workspace-using-a-keyboard}
+## Navigation dans l’espace de travail AEM Forms à l’aide du clavier  {#navigating-html-workspace-using-a-keyboard}
 
 Lorsque vous naviguez dans l’espace de travail AEM Forms à l’aide du clavier, la navigation est conforme aux conventions d’accessibilité HTML. Dans certaines situations, l’ordre de tabulation ne suit pas l’ordre conventionnel classique. Les conseils suivants vous aident à naviguer dans l’interface :
 
@@ -70,7 +70,7 @@ Vous pouvez définir les différentes préférences de l’espace de travail AEM
 
 **Paramètres de l’interface :** définit des préférences pour l’interaction avec l’espace de travail AEM Forms. Voir [Définition des préférences d’interface utilisateur](#set-user-interface-preferences).
 
-### Définition des préférences d’interface utilisateur {#set-user-interface-preferences}
+### Définition des préférences d’interface utilisateur  {#set-user-interface-preferences}
 
 Définissez les préférences de l’interface utilisateur dans l’onglet Préférences > Paramètres de l’interface. Les préférences suivantes sont disponibles :
 
