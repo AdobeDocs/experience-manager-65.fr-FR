@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Archives.
 
-## Importation d’une archive {#import-an-archive}
+## Importation d’une archive  {#import-an-archive}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
 1. Cliquez sur Importer.
@@ -50,7 +50,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
    * Pour ajouter un point de fin REST, cliquez sur Ajouter un point de fin REST et spécifiez un nom et une description pour ce dernier. Conservez l’URL d’invocation REST qui s’affiche sur la page Ajouter un point de fin REST.
    * Pour supprimer un point de fin, sélectionnez la case à cocher en regard du point de fin et cliquez sur Supprimer.
 
-1. Cliquez sur Suivant.
+1. Cliquez sur Next (Suivant).
 1. Si un processus ou un service de l’archive LCA possède des paramètres de configuration, une page de configuration des paramètres apparaît. Configurez les paramètres du service et cliquez sur Suivant.
 1. Vous pouvez apporter toutes les modifications voulues dans la page de configuration du profil de sécurité :
 
@@ -94,14 +94,14 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
 1. Cliquez sur Terminé pour achever la configuration.
 
-## Configuration des services AEM forms faisant partie d’un fichier d’archive {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Configuration des services AEM forms faisant partie d’un fichier d’archive  {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
 1. Dans la page Gestion des archives, sélectionnez le fichier d’archives à configurer.
 1. Dans la page Afficher l’archive, sélectionnez la ressource de l’archive mise en surbrillance.
 1. Configurez le fichier d’archives de processus importé.
 
-## Configuration des services AEM forms faisant partie d’un fichier d’archive à l’aide de l’assistant de configuration {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Configuration des services AEM forms faisant partie d’un fichier d’archive à l’aide de l’assistant de configuration  {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
 1. Cliquez sur Configurer en regard du fichier d’archives à configurer.
@@ -117,7 +117,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
    * Pour ajouter un point de fin REST, cliquez sur Ajouter un point de fin REST et spécifiez un nom et une description pour ce dernier. Conservez l’URL d’invocation REST qui s’affiche sur la page Ajouter un point de fin REST.
    * Pour supprimer un point de fin, sélectionnez la case à cocher en regard du point de fin et cliquez sur Supprimer.
 
-1. Cliquez sur Suivant.
+1. Cliquez sur Next (Suivant).
 1. Si un processus ou un service de l’archive LCA possède des paramètres de configuration, une page de configuration des paramètres apparaît. Configurez les paramètres du service et cliquez sur Suivant.
 1. Vous pouvez apporter toutes les modifications voulues dans la page de configuration du profil de sécurité :
 
@@ -159,7 +159,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
       Cliquez sur Terminé pour ajouter l’entité de sécurité au profil de sécurité.
 
-## Suppression d’une archive {#remove-an-archive}
+## Suppression d’une archive  {#remove-an-archive}
 
 >[!NOTE]
 >
