@@ -18,19 +18,19 @@ ht-degree: 85%
 ---
 
 
-# Minimisation des fichiers JavaScript {#minification-of-the-javascript-files}
+# Minimisation des fichiers JavaScript  {#minification-of-the-javascript-files}
 
 La minimisation supprime du code source les caractères redondants, comme les espaces blancs, les nouvelles lignes et les commentaires. Cela améliore les performances en réduisant la taille du code. La minimisation n’a aucun impact sur la fonctionnalité et réduit la lisibilité du code.
 
 Pour générer un code minimisé pour les modifications sémantiques, effectuez les étapes suivantes.
 
-1. Copy `client-html/src/main/webapp/js` from src-package on filesystem.
+1. Copiez `client-html/src/main/webapp/js` du paquet src sur le système de fichiers.
 
    >[!NOTE]
    >
    >Voir [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour plus d’informations sur les paquets.
 
-1. Update paths in `main.js` located under client-html/src/main/webapp/js, for added/updated models/views.
+1. Mettez à jour les chemins dans `main.js` situé sous client-html/src/main/webapp/js, pour les modèles/vues ajoutés/mis à jour.
 
    Par exemple, pour ajouter un nouveau modèle Sharequeue, par exemple mySharequeue, modifiez :
 
@@ -44,7 +44,7 @@ Pour générer un code minimisé pour les modifications sémantiques, effectuez 
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Mettre à jour `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` en cas de modification/ajout d&#39;alias dans `main.js`.
+1. Mettez à jour `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` en cas de modification/ajout d&#39;alias dans `main.js`.
 
    Par exemple, pour ajouter un nouveau modèle Sharequeue, par exemple mySharequeue, modifiez :
 
@@ -55,7 +55,7 @@ Pour générer un code minimisé pour les modifications sémantiques, effectuez 
                service="service"/>
    ```
 
-   To
+   À
 
    ```xml
    <sharequeue
