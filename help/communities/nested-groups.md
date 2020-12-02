@@ -26,13 +26,13 @@ ht-degree: 5%
 Sur l’instance d’auteur AEM, à partir de la navigation globale :
 
 * Sélectionnez **[!UICONTROL Communautés]** > **[!UICONTROL Sites]**.
-* Sélectionnez **[!UICONTROL engager le dossier]** pour l’ouvrir.
-* Sélectionnez la carte du site **[!UICONTROL en anglais du didacticiel]** de prise en main.
+* Sélectionnez **[!UICONTROL engager le dossier]** pour l&#39;ouvrir.
+* Sélectionnez la carte du site en anglais **[!UICONTROL Didacticiel de prise en main]**.
 
    * Sélectionnez l’image de la carte.
-   * Ne *sélectionnez pas* d’icône.
+   * Ne *pas* sélectionnez une icône.
 
-Le résultat est d’atteindre la console [](/help/communities/groups.md)Groupes :
+Le résultat est d&#39;atteindre la console [Groupes](/help/communities/groups.md) :
 
 ![create-group](assets/create-group.png)
 
@@ -40,9 +40,9 @@ La fonction de groupes s&#39;affiche sous la forme d&#39;un dossier dans lequel 
 
 ![create-new-group](assets/create-new-group.png)
 
-## Créer un groupe d&#39;arts principaux {#create-main-arts-group}
+## Créer le groupe des arts principaux {#create-main-arts-group}
 
-Ce groupe peut être créé car la structure du site pour engager inclut une fonction de groupes. La configuration de la fonction dans le site permet `Reference Template` par défaut la sélection de tout modèle de groupe activé. Ainsi, le modèle choisi pour ce nouveau groupe est le `Reference Group`.
+Ce groupe peut être créé car la structure du site pour engager inclut une fonction de groupes. La configuration de la fonction dans `Reference Template` du site autorise par défaut la sélection de tout modèle de groupe activé. Ainsi, le modèle choisi pour ce nouveau groupe est le `Reference Group`.
 
 Ces consoles sont similaires à la console Sites des communautés.
 
@@ -52,17 +52,17 @@ Ces consoles sont similaires à la console Sites des communautés.
 
    * **[!UICONTROL Titre]** du groupe communautaire : Arts.
    * **[!UICONTROL Description]** du groupe de la communauté : Groupe parent pour divers groupes artistiques.
-   * **[!UICONTROL Racine]** du groupe de communautés : *laissez comme valeur par défaut*.
+   * **[!UICONTROL Racine]** du groupe de communautés :  *laissez comme valeur par défaut*.
    * **[!UICONTROL Langue(s)]** de groupe(s) communautaire(s)disponible(s) supplémentaire(s) : utilisez le menu déroulant pour sélectionner la ou les langues des groupes communautaires disponibles. Le menu affiche toutes les langues dans lesquelles le site de la communauté parent est créé. Les utilisateurs peuvent sélectionner l’une de ces langues pour créer des groupes dans plusieurs paramètres régionaux au cours de cette seule étape. Un même groupe est créé dans plusieurs langues spécifiées dans la console Groupes des sites communautaires respectifs.
    * **[!UICONTROL Nom]** du groupe de la communauté : art.
-   * **[!UICONTROL Modèle]**: liste déroulante à sélectionner `Reference Group.`
+   * **[!UICONTROL Modèle]** : liste déroulante à sélectionner  `Reference Group.`
    * Sélectionnez **[!UICONTROL Suivant]**.
 
 ![Groupes de communautés imbriqués](assets/parent-to-nestedgroup.png)
 
 Passez ensuite aux autres panneaux avec les paramètres suivants :
 
-* **[!UICONTROL Concevoir]**
+* **[!UICONTROL Conception]**
 
    * Modifiez la conception ou autorisez la conception du site parent par défaut.
    * Sélectionnez **[!UICONTROL Suivant]**.
@@ -74,7 +74,7 @@ Passez ensuite aux autres panneaux avec les paramètres suivants :
       * Laissez vide (hériter du site parent).
    * **[!UICONTROL Abonnement]**
 
-      * Use default `Optional Membership.`
+      * Utiliser `Optional Membership.` par défaut
 
       * **[!UICONTROL Miniature]**
          * `optional.*`
@@ -86,13 +86,13 @@ Passez ensuite aux autres panneaux avec les paramètres suivants :
 
 ### Groupes imbriqués dans le groupe Arts {#nesting-groups-within-arts-group}
 
-Le `groups` dossier contient désormais deux groupes (actualisez la page).
+Le dossier `groups` contient désormais deux groupes (actualisez la page).
 
 ![Imbrication des groupes](assets/create-community-group.png)
 
 #### Publier le groupe {#publish-group}
 
-Avant de créer des groupes imbriqués dans le `arts` groupe, passez la souris sur la `arts` carte et sélectionnez l’icône de publication pour la publier.
+Avant de créer des groupes imbriqués dans le groupe `arts`, passez la souris sur la carte `arts` et sélectionnez l’icône de publication pour la publier.
 
 ![site de publication](assets/publish-site.png)
 
@@ -100,42 +100,42 @@ Attendez la confirmation de la publication du groupe.
 
 ![groupe-publié](assets/group-published.png)
 
-Le `arts` groupe doit également contenir un `groups` dossier, mais un dossier vide dans lequel de nouveaux groupes peuvent être créés. Accédez au dossier du groupe arts et créez 3 groupes imbriqués, chacun avec un paramètre d’adhésion différent :
+Le groupe `arts` doit également contenir un dossier `groups`, mais un dossier vide dans lequel de nouveaux groupes peuvent être créés. Accédez au dossier du groupe arts et créez 3 groupes imbriqués, chacun avec un paramètre d’adhésion différent :
 
 1. **[!UICONTROL Visuel]**
 
    * Titre: `Visual Arts`
-   * Nom (name) : `visual`
-   * Modèle: `Reference Group`
-   * Adhésion : select `Optional Membership`, groupe public, ouvert à tous les membres.
+   * Nom : `visual`
+   * Template: `Reference Group`
+   * Adhésion : sélectionnez `Optional Membership`, un groupe public, ouvert à tous les membres.
 
 1. **[!UICONTROL Auditoire]**
 
    * Titre: `Auditory Arts`
-   * Nom (name) : `auditory`
-   * Modèle: `Reference Group`
+   * Nom : `auditory`
+   * Modèle : `Reference Group`
    * Adhésion : sélectionnez `Required Membership`, un groupe ouvert, disponible pour les membres à rejoindre.
 
 1. **[!UICONTROL Historique]**
 
    * Titre: `Art History`
-   * Nom (name) : `history`
-   * Modèle: `Reference Group`
-   * Adhésion : select `Restricted Membership`, groupe secret, visible uniquement pour les membres invités. Par exemple, invitez un utilisateur [de](/help/communities/tutorials.md#demo-users) démonstration `emily.andrews@mailinator.com`.
+   * Nom : `history`
+   * Modèle : `Reference Group`
+   * Adhésion : sélectionnez `Restricted Membership`, un groupe secret, visible uniquement pour les membres invités. Par exemple, invitez [demo user](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
 Actualisez la page pour afficher les trois groupes imbriqués (sous-communautés).
 
 Pour accéder aux groupes imbriqués à partir de la console Sites de communautés :
 
-* Sélectionner le dossier **[!UICONTROL d&#39;engagement]**
-* Sélectionner la carte **[!UICONTROL Didacticiel de prise en main]**
+* Sélectionner **[!UICONTROL dossier d&#39;engagement]**
+* Sélectionnez **[!UICONTROL Carte du didacticiel de prise en main]**
 * Sélectionner le dossier **[!UICONTROL Groupes]**
-* Sélectionner la carte **[!UICONTROL arts]**
+* Sélectionner **[!UICONTROL carte arts]**
 * Sélectionner le dossier **[!UICONTROL Groupes]**
 
 ![create-new-group2](assets/create-new-group2.png)
 
-## Publication de groupes {#publishing-groups}
+## Groupes de publication {#publishing-groups}
 
 ![site de publication](assets/publish-site.png)
 
@@ -153,7 +153,7 @@ Après la publication du site communautaire principal :
 
 ## Expérience sur la publication {#experience-on-publish}
 
-Il est possible d’expérimenter les différents groupes lorsqu’ils sont connectés, par exemple avec les utilisateurs [de](/help/communities/tutorials.md#demo-users) démonstration utilisés pour :
+Il est possible d’expérimenter les différents groupes lorsqu’ils sont connectés, par exemple avec les [utilisateurs de démonstration](/help/communities/tutorials.md#demo-users) utilisés pour :
 
 * Membre du groupe Art/Historique : emily.andrews@mailinator.com/password
    * Le groupe restreint (secret), arts/histoire, est visible :
@@ -166,5 +166,5 @@ Il est possible d’expérimenter les différents groupes lorsqu’ils sont conn
    * Peut rejoindre des groupes restreints (ouverts).
    * Impossible d&#39;afficher les groupes restreints (secrets).
 
-Accédez aux consoles [Communautés](/help/communities/members.md) Membres et Groupes sur l&#39;auteur pour ajouter d&#39;autres utilisateurs à divers groupes de membres qui correspondent aux groupes communautaires.
+Accédez aux consoles Communautés [Membres et Groupes](/help/communities/members.md) sur l&#39;auteur pour ajouter d&#39;autres utilisateurs à divers groupes de membres qui correspondent aux groupes communautaires.
 
