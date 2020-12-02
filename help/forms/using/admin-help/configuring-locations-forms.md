@@ -44,13 +44,13 @@ L’exemple suivant pointe vers le même contenu (en utilisant l’URI racine du
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI racine Web FS :** URL de l’application Web Forms. Vous pouvez laisser ce champ vide si l’application Web de Forms et l’application cliente sont déployées sur le même serveur d’applications ; l’URL racine Web de l’API de Forms est utilisée.
+**URI racine Web FS :** URL de l&#39;application Web Forms. Vous pouvez laisser ce champ vide si l’application Web de Forms et l’application cliente sont déployées sur le même serveur d’applications ; l’URL racine Web de l’API de Forms est utilisée.
 
 Si l’application Web de Forms et l’application cliente ne sont pas déployées sur le même serveur d’applications, vous devez indiquer l’URL de l’application Web de Forms dans ce champ, comme indiqué dans l’exemple qui suit :
 
 `https://<host name>:<port>/FormServer`
 
-Where `host name`and `port` are the server name and port number of the server that is hosting the Forms web application.
+Où `host name`et `port` correspondent au nom et au numéro de port du serveur qui héberge l’application Web Forms.
 
 La valeur par défaut est une chaîne vide.
 
@@ -62,11 +62,11 @@ La valeur par défaut est une chaîne vide.
 
 La valeur par défaut est une chaîne vide.
 
-**URI de configuration XCI :** Emplacement relatif ou absolu du fichier XCI utilisé pour le rendu. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM forms.
+**URI de configuration XCI :** emplacement relatif ou absolu dans lequel se trouve le fichier XCI utilisé pour le rendu. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM forms.
 
 La valeur par défaut est `com/adobe/formServer/PA/pa.xci`.
 
-**URI de mappage de polices :** Emplacement relatif ou absolu du fichier de mappage des polices. Si la valeur est relative, il est supposé que ce fichier réside dans le fichier EAR déployable d’AEM forms.
+**URI de mappage des polices :** emplacement relatif ou absolu du fichier de mappage des polices. Si la valeur est relative, il est supposé que ce fichier réside dans le fichier EAR déployable d’AEM forms.
 
 Le fichier de mappage de polices est utilisé pour créer des mappages de polices personnalisés pour les transformations HTML dans Forms, ce qui permet d’indiquer la police qui sera remplacée lorsqu’une police n’est pas disponible sur l’ordinateur du client.
 
@@ -76,19 +76,19 @@ L’exemple suivant présente une entrée dans le fichier de mappage de polices�
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Fichier PDF initial :** Fichier PDF initial utilisé dans une transformation PDFForm pour optimiser la diffusion. Le fichier PDF initial indique un fichier PDF personnalisé (qui ne contient que des ressources de flux XFA, d’image et de police) qui est ajouté à la conception et aux données du formulaire. Le formulaire est rendu par Acrobat (version 7 ou ultérieure) et s’applique à la transformation PDFForm.
+**Fichier PDF initial :** fichier PDF initial utilisé dans une transformation PDFForm pour optimiser la diffusion. Le fichier PDF initial indique un fichier PDF personnalisé (qui ne contient que des ressources de flux XFA, d’image et de police) qui est ajouté à la conception et aux données du formulaire. Le formulaire est rendu par Acrobat (version 7 ou ultérieure) et s’applique à la transformation PDFForm.
 
 La valeur par défaut est une chaîne vide.
 
-**Emplacement du cache :** Indique l’emplacement du cache disque Forms. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
+**Emplacement du cache :** indique l’emplacement du cache disque Forms. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
 
-**Emplacement par défaut :** Il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
+**Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
-* **JBoss :** [Accueil]de JBoss \server\[type d’installation]\svcdata\FormServer\Cache
-* **WebLogic :** [WebLogic Home]\user_projects\domains\[nom de domaine aem-forms]\adobe\[nom du serveur forms]\FormServer\Cache
-* **WebSphere :** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
+* **JBoss:** [JBoss Home]\server\[type d’installation]\svcdata\FormServer\Cache
+* **WebLogic:** [WebLogic Home]\user_projects\domains\[nom de domaine aem-forms]\adobe\[nom du serveur forms]\FormServer\Cache
+* **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**Répertoire temporaire LC :** Le cache est créé dans un sous-répertoire du répertoire temporaire d’AEM forms, qui est spécifié dans Administration Console sous Paramètres > Paramètres de Core System > Configurations > Emplacement du répertoire temporaire. The subdirectory is named adobeform_[servername].
+**Répertoire temporaire LC :** Le cache est créé dans un sous-répertoire du répertoire temporaire d’AEM forms, qui est spécifié dans Administration Console sous Paramètres > Paramètres de Core System > Configurations > Emplacement du répertoire temporaire. Le sous-répertoire est nommé adobeform_[nom_serveur].
 
 >[!NOTE]
 >
