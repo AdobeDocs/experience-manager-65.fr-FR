@@ -18,7 +18,7 @@ ht-degree: 25%
 
 [Découvrez les nouvelles fonctionnalités les plus récentes de AEM 6.5 dans les notes de mise à jour.](/help/release-notes/home.md)
 
-## Vidéos didacticielles sur AEM 6.5 {#aem-64-tutorial-videos}
+## aem 6.5 Vidéos didacticielles {#aem-64-tutorial-videos}
 
 * [Vidéos de formation AEM 6.5](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Tutoriels AEM](https://helpx.adobe.com/experience-manager/tutorials.html)
