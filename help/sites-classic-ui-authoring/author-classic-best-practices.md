@@ -69,10 +69,10 @@ Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Cont
 
 Les meilleures pratiques en termes de création et de gestion du contenu de votre site web sont les suivantes :
 
-Création : [Environnement et outils](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) Auteur - Fournit un aperçu de la manière de créer des pages.
+Création : [environnement et outils d’auteur](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fournit une vue d’ensemble de la création de pages.
 
 ## Formulaires {#forms}
 
-Formulaires adaptatifs : [Meilleures pratiques pour l’utilisation des formulaires](/help/forms/using/adaptive-forms-best-practices.md) adaptatifs : décrit les meilleures pratiques pour la configuration, la création et la personnalisation des formulaires adaptatifs.
+Formulaires adaptatifs : [Meilleures pratiques pour l’utilisation des formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md) : décrit les meilleures pratiques pour la configuration, la création et la personnalisation des formulaires adaptatifs.
 
-HTML5 forms: [Best practices for designing HTML5 forms](/help/forms/using/best-practices-for-html5-forms.md) - Describes best practices for working on layout and design of HTML5 forms.
+Formulaires HTML5 : [Meilleures pratiques pour la conception de formulaires HTML5](/help/forms/using/best-practices-for-html5-forms.md) : décrit les meilleures pratiques pour travailler sur la mise en page et la conception de formulaires HTML5.
