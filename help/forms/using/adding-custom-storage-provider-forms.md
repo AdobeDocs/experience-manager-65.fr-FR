@@ -23,14 +23,14 @@ ht-degree: 70%
 
 AEM Forms vous permet d’enregistrer un formulaire sous forme de brouillon. La fonctionnalité de brouillon vous permet de mettre à jour un formulaire de travail en cours, que vous pouvez remplir et envoyer ultérieurement sur n’importe quel périphérique.
 
-By default, AEM Forms stores the user data associated with the draft and submission of a form in the `/content/forms/fp` node on the Publish instance. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
+Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans le noeud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
 
 ## Conditions préalables  {#prerequisites}
 
-* Activation des composants du portail de [formulaires](/help/forms/using/enabling-forms-portal-components.md)
-* Create a [forms portal page](/help/forms/using/creating-form-portal-page.md)
-* Activation des formulaires [adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
-* Découvrez les détails de [mise en oeuvre de l’enregistrement personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Activer [les composants du portail de formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* Créer une [page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
+* Activer [les formulaires adaptatifs pour Forms Portal](/help/forms/using/draft-submission-component.md)
+* Découvrez [les détails d&#39;implémentation de l&#39;enregistrement personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 
