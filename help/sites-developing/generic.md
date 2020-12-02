@@ -37,7 +37,7 @@ Un certain nombre de composants AEM prêts à l’emploi sont fournis pour utili
 
 Pour la recherche, un hook d’intégration permet d’utiliser la recherche AEM, une recherche tierce (comme Search &amp; Promote) ou une combinaison de ceux-ci.
 
-## Sélection du moteur eCommerce {#ecommerce-engine-selection}
+## Sélection du moteur eCommerce  {#ecommerce-engine-selection}
 
 Le framework eCommerce est compatible avec n’importe quelle solution eCommerce. Le moteur utilisé doit être identifié par AEM, même avec le moteur générique AEM :
 
@@ -45,13 +45,13 @@ Le framework eCommerce est compatible avec n’importe quelle solution eCommerce
 
    * Les moteurs peuvent être distingués par une propriété de service `commerceProvider`.
 
-* aem prend en charge `Resource.adaptTo()` les `CommerceService` et `Product`
+* aem prend en charge `Resource.adaptTo()` pour `CommerceService` et `Product`
 
-   * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
+   * L&#39;implémentation `adaptTo` recherche une propriété `cq:commerceProvider` dans la hiérarchie de la ressource :
 
       * Si elle est trouvée, la valeur est utilisée pour filtrer la recherche de service de commerce.
       * Dans le cas contraire, le service de commerce le mieux classé est utilisé.
-   * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly-typed resources.
+   * Un mixin `cq:Commerce` est utilisé afin que `cq:commerceProvider` puisse être ajouté à des ressources fortement typées.
 
 
 * La propriété `cq:commerceProvider` est également utilisée pour référencer la définition de fabrique de commerce appropriée.
@@ -101,11 +101,11 @@ L’API **CommerceSession** :
 
       `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
-* Owns persistance of the **order** data:
+* Détient la persistance des données **order** :
 
    `CommerceSession.getUserContext()`
 
-* Can retrieve/update delivery details by using `updateOrder(Map<String, Object> delta)`
+* Peut récupérer/mettre à jour les détails de la diffusion en utilisant `updateOrder(Map<String, Object> delta)`
 * Possède également la connexion du traitement des **paiements**
 * Possède également la connexion d’**exécution**
 
@@ -119,11 +119,11 @@ Cependant, toutes les propriétés ne sont pas des axes de variante. Les variant
 
 Chaque produit et/ou variante est représenté par une ressource, et se voit donc mapper selon une relation 1:1 à un nœud du référentiel. Le corollaire est qu’un produit et/ou une variante spécifique peut être identifié par son chemin.
 
-Any product resource can be represented by a `Product API`. Most calls in the product API are variation specific (although variations might inherit shared values from an ancestor), but there are also calls which list the set of variations ( `getVariantAxes()`, `getVariants()`, etc.).
+Toute ressource de produit peut être représentée par un `Product API`. La plupart des appels dans l&#39;API du produit sont spécifiques à des variations (bien que les variations puissent hériter de valeurs partagées d&#39;un ancêtre), mais il existe également des appels qui liste l&#39;ensemble de variations ( `getVariantAxes()`, `getVariants()`, etc.).
 
 >[!NOTE]
 >
->In effect a variant axes is determined by whatever `Product.getVariantAxes()` returns:
+>En effet, un axe variable est déterminé par tout ce que `Product.getVariantAxes()` renvoie :
 >
 >* pour l’implémentation générique, AEM le lit à partir d’une propriété dans les données du produit (`cq:productVariantAxes` )
 >
@@ -135,7 +135,7 @@ Bien que les produits (en général) peuvent présenter plusieurs axes de varian
 
 >
 >   
-This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
+Cette variante supplémentaire est sélectionnée via la propriété `variationAxis` de la référence de produit (généralement `color` pour les Geometrixx Outdoors).
 
 #### Références de produits et données PIM {#product-references-and-pim-data}
 
@@ -143,7 +143,7 @@ En général :
 
 * Les données PIM sont situées sous `/etc`
 
-* Product references under `/content`.
+* Références du produit sous `/content`.
 
 Il doit y avoir un mappage 1:1 entre les variations de produit et les nœuds de données de produit.
 
@@ -250,12 +250,12 @@ public class AxisFilter implements VariantFilter {
 
       * une référence, avec les données de produits stockées ailleurs :
 
-         * Product references contain a `productData` property, which points to the product data (typically under `/etc/commerce/products`).
+         * Les références de produit contiennent une propriété `productData` qui pointe vers les données de produit (généralement sous `/etc/commerce/products`).
          * Les données de produit sont hiérarchiques. Les attributs de produit sont hérités des ancêtres d’un nœud de données de produit.
          * Les références de produit peuvent également contenir des propriétés locales qui remplacent celles spécifiées dans leurs données de produit.
       * un produit lui-même :
 
-         * Without a `productData` property.
+         * Sans propriété `productData`.
          * Un nœud de produit qui contient toutes les propriétés localement (et ne contient pas de propriété productData) hérite des attributs de produit directement de ses propres ancêtres.
 
 
@@ -340,9 +340,9 @@ public class AxisFilter implements VariantFilter {
 **Personnalisation**
 
 * La personnalisation doit toujours être pilotée via [ClientContext](/help/sites-administering/client-context.md).
-* A ClientContext `/version/` of the cart is created in all cases:
+* Un ClientContext `/version/` du panier est créé dans tous les cas :
 
-   * Products should be added by using the `CommerceSession.addCartEntry()` method.
+   * Les produits doivent être ajoutés à l&#39;aide de la méthode `CommerceSession.addCartEntry()`.
 
 * Voici un exemple d’informations de panier dans le panier ClientContext :
 
@@ -393,8 +393,8 @@ public class AxisFilter implements VariantFilter {
 * Ils peuvent être basés sur des éléments et des détails de la commande, tels que le poids et/ou l’adresse d’expédition.
 * `CommerceSession` a accès à toutes les dépendances, afin qu’il puisse être traité de manière similaire au prix du produit :
 
-   * The `CommerceSession` owns shipping pricing.
-   * Use `updateOrder(Map<String, Object> delta)` to retrieve/update delivery details.
+   * `CommerceSession` est propriétaire des tarifs d&#39;expédition.
+   * Utilisez `updateOrder(Map<String, Object> delta)` pour récupérer/mettre à jour les détails de la diffusion.
 
 ### Définition de la recherche {#search-definition}
 
@@ -422,7 +422,7 @@ Plusieurs classes génériques/helper sont fournies par le projet principal :
 
 1. `CommerceQuery`
 
-   Sert à décrire une requête de recherche (il contient des informations sur le texte de requête, la page actuelle, le format de page, le tri et les facettes sélectionnées). Tous les services eCommerce qui mettent en œuvre l’API de recherche recevront des instances de cette classe pour effectuer la recherche. A `CommerceQuery` can be instantiated from a request object ( `HttpServletRequest`).
+   Sert à décrire une requête de recherche (il contient des informations sur le texte de requête, la page actuelle, le format de page, le tri et les facettes sélectionnées). Tous les services eCommerce qui mettent en œuvre l’API de recherche recevront des instances de cette classe pour effectuer la recherche. Un `CommerceQuery` peut être instancié à partir d&#39;un objet de requête ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
@@ -447,8 +447,8 @@ Le point d’entrée de l’API de recherche est la méthode `CommerceService#se
    * Les moteurs de commerce externes peuvent également fournir des bons. Ceux-ci nécessitent au minimum :
 
       * Un code promotionnel
-      * An `isValid()` method
-   * The **Voucher** component ( `/libs/commerce/components/voucher`) provides:
+      * Méthode `isValid()`
+   * Le composant **Voucher** ( `/libs/commerce/components/voucher`) fournit :
 
       * Un moteur de rendu pour l’administration des bons qui affiche tous les bons actuellement dans le panier.
       * Les boîtes de dialogue de modification (formulaire) pour administrer (ajouter/supprimer) les bons.
@@ -469,7 +469,7 @@ Le point d’entrée de l’API de recherche est la méthode `CommerceService#se
    * Vous pouvez associer des promotions à une campagne pour définir leur date/heure d’activation/de désactivation.
    * Vous pouvez associer des promotions à une expérience pour définir leurs segments.
    * Les promotions qui ne sont pas liées à une expérience ne se déclenchent pas d’elles-mêmes, mais peuvent toujours être déclenchées par un bon.
-   * The Promotion component ( `/libs/commerce/components/promotion`) contains:
+   * Le composant Promotion ( `/libs/commerce/components/promotion`) contient :
 
       * des rendus et des boîtes de dialogue pour l’administration des promotions
       * des sous-composants pour le rendu et la modification de paramètres de configuration spécifiques aux gestionnaires de promotion
@@ -477,7 +477,7 @@ Le point d’entrée de l’API de recherche est la méthode `CommerceService#se
 
       * `DiscountPromotionHandler` qui applique une réduction absolue ou en pourcentage à l’ensemble du panier
       * `PerfectPartnerPromotionHandler` qui applique une réduction absolue ou en pourcentage à un produit si un produit partenaire est également présent dans le panier
-   * The ClientContext `SegmentMgr` resolves segments and the ClientContext `CartMgr` resolves promotions. Chaque promotion soumise à au moins un segment résolu est déclenchée.
+   * Le ClientContext `SegmentMgr` résout les segments et le ClientContext `CartMgr` résout les promotions. Chaque promotion soumise à au moins un segment résolu est déclenchée.
 
       * Les promotions déclenchées sont renvoyées au serveur via un appel AJAX pour recalculer le montant du panier.
       * Les promotions déclenchées (et les bons ajoutés) sont également affichées dans le panneau ClientContext.
@@ -520,13 +520,13 @@ De cette façon, `CommerceSession` est chargée de vérifier si un bon existe et
 * Une courte description
 * Le référencement de la promotion associée indiquant le type et la valeur de la réduction
 
-`AbstractJcrCommerceSession` (fourni) peut appliquer des bons. The vouchers returned by the class `getVouchers()` are instances of `cq:Page` containing a jcr:content node with the following properties (amongst others):
+`AbstractJcrCommerceSession` (fourni) peut appliquer des bons. Les vouchers renvoyés par la classe `getVouchers()` sont des instances de `cq:Page` contenant un noeud jcr:content avec les propriétés suivantes (entre autres) :
 
-* `sling:resourceType` (Chaîne) - ceci doit être `commerce/components/voucher`
+* `sling:resourceType` (Chaîne) - ceci doit être  `commerce/components/voucher`
 
 * `jcr:title` (Chaîne) - pour la description du voucher
 * `code`( (Chaîne) - code promotionnel que l’utilisateur doit entrer pour appliquer ce bon
-* `promotion` (chaîne) - promotion à appliquer ; par ex. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (chaîne) - promotion à appliquer ; par ex.  `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Les gestionnaires de promotions sont des services OSGi qui modifient le panier. Le panier prend en charge plusieurs hooks définis dans l’interface `PromotionHandler`.
 
