@@ -46,9 +46,9 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 **Applications/FormsApplication**
 
-La plupart des débuts rapides du service de référentiel AEM Forms interagissent avec une application nommée `Applications/FormsApplication,` , comme illustré ci-dessous.
+La plupart des débuts rapides du service de référentiel AEM Forms interagissent avec une application nommée `Applications/FormsApplication,`, comme le montre l&#39;illustration suivante.
 
-Le dossier FormsFolder est un emplacement du référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (Voir Début [rapide (mode SOAP) : Création d’un dossier à l’aide de l’API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)Java.)
+Le dossier FormsFolder est un emplacement du référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (Voir [Début rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
 Le chemin d&#39;accès à une ressource située dans le référentiel AEM Forms est :
 
@@ -60,7 +60,7 @@ Le chemin d&#39;accès à une ressource située dans le référentiel AEM Forms 
 
 >[!NOTE]
 >
->Applications/FormsApplication n&#39;existe pas par défaut. Pour suivre les débuts rapides, créez cette application à l’aide de Workbench. Pour plus d’informations sur la création d’une application à l’aide de Workbench, voir [Prise en main de la conception](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html)de processus.
+>Applications/FormsApplication n&#39;existe pas par défaut. Pour suivre les débuts rapides, créez cette application à l’aide de Workbench. Pour plus d’informations sur la création d’une application à l’aide de Workbench, voir [Prise en main de la conception de processus](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html).
 
 ## Début rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
@@ -168,9 +168,9 @@ L’exemple de code Java suivant crée un dossier appelé *FormsFolder* à l’e
  }
 ```
 
-## Quick Start (SOAP mode): Writing a resource using the Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
+## Début rapide (mode SOAP) : Écriture d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
-L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans le référentiel. La ressource est ajoutée à l&#39; `/Applications/FormsApplication/1.0/FormsFolder` emplacement. (Voir [Ecriture de ressources](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans le référentiel. La ressource est ajoutée à l&#39;emplacement `/Applications/FormsApplication/1.0/FormsFolder`. (Voir [Writing Resources](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 ```java
  /*
@@ -395,9 +395,9 @@ L&#39;exemple de code Java suivant liste les ressources situées dans `Applicati
  }
 ```
 
-## Quick Start (SOAP mode): Reading a resource using the Java API {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
+## Début rapide (mode SOAP) : Lecture d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
-L&#39;exemple de code Java suivant lit une ressource appelée *Loan.xdp* du référentiel. Le fichier XDP se trouve dans `/Applications/FormsApplication/1.0/FormsFolder/`. (Voir Ressources [](/help/forms/developing/aem-forms-repository.md#reading-resources)de lecture.)
+L&#39;exemple de code Java suivant lit une ressource appelée *Loan.xdp* du référentiel. Le fichier XDP se trouve dans `/Applications/FormsApplication/1.0/FormsFolder/`. (Voir [Reading Resources](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 ```java
  /*
@@ -496,9 +496,9 @@ L&#39;exemple de code Java suivant lit une ressource appelée *Loan.xdp* du réf
  
 ```
 
-## Quick Start (SOAP mode): Updating a resource using the Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
+## Début rapide (mode SOAP) : Mise à jour d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
-L’exemple de code Java suivant est mis à jour `/Applications/FormsApplication/1.0/FormsFolder` en modifiant sa description. (Voir [Mise à jour des ressources](/help/forms/developing/aem-forms-repository.md#updating-resources).)
+L&#39;exemple de code Java suivant est mis à jour `/Applications/FormsApplication/1.0/FormsFolder` en modifiant sa description. (Voir [Mise à jour des ressources](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
 ```java
  /*
@@ -734,7 +734,7 @@ L&#39;exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsAp
 
 ## Début rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
-L’exemple de code Java suivant crée une relation entre deux ressources dans le référentiel AEM Forms. (Voir [Création de relations](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)de ressources.)
+L’exemple de code Java suivant crée une relation entre deux ressources dans le référentiel AEM Forms. (Voir [Création de relations de ressources](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 
 ```java
  /*
@@ -873,7 +873,7 @@ L’exemple de code Java suivant crée une relation entre deux ressources dans l
  }
 ```
 
-## Quick Start (SOAP mode): Locking a resource using the Java API {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
+## Début rapide (mode SOAP) : Verrouillage d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
 
 L’exemple de code Java suivant verrouille /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (Voir [Verrouillage des ressources](/help/forms/developing/aem-forms-repository.md#locking-resources).)
 
@@ -1099,7 +1099,7 @@ L&#39;exemple de code Java suivant lit et crée des listes de contrôle d&#39;ac
  }
 ```
 
-## Quick Start (SOAP mode): Deleting a resource using the Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
+## Début rapide (mode SOAP) : Suppression d&#39;une ressource à l&#39;aide de l&#39;API Java {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
 
 L&#39;exemple de code Java suivant supprime Loan.xdp de `Applications/FormsApplication/1.0/FormsFolder`. Si ce fichier XDP n’est pas situé dans ce dossier, une exception est générée. (Voir [Suppression de ressources](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 
