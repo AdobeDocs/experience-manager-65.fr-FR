@@ -18,7 +18,7 @@ ht-degree: 40%
 ---
 
 
-# Trying out Experience Fragments in We.Retail{#trying-out-experience-fragments-in-we-retail}
+# Test de fragments d’expérience dans We.Retail{#trying-out-experience-fragments-in-we-retail}
 
 Test de fragments d&#39;expérience dans We.Retail
 
@@ -39,13 +39,13 @@ Cela prend en charge la casse d’utilisation du système de Gestion de contenu 
 >
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 
-## Où créer des fragments d’expérience dans We.Retail {#where-to-create-experience-fragments-in-we-retail}
+## Où créer des fragments d&#39;expérience dans We.Retail {#where-to-create-experience-fragments-in-we-retail}
 
-Sélectionnez **Fragments d’expérience** dans la navigation globale. Vous configurez, [créez](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) et [modifiez](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) ici vos fragments d’expérience, ainsi que toutes les [variations](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)associées.
+Sélectionnez **Fragments d’expérience** dans la navigation globale. Vous configurez ici [créez](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) et [modifiez](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) vos fragments d’expérience, ainsi que les [variations ](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation) associées.
 
 ## Où utiliser les fragments d&#39;expérience dans We.Retail {#where-to-use-experience-fragments-in-we-retail}
 
-Vous pouvez utiliser vos fragments [d’](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) expérience (comme tout autre composant) sur [n’importe quelle page](/help/sites-authoring/editing-content.md) sous **Sites** dans la navigation globale.
+Vous pouvez utiliser vos [fragments d’expérience](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (comme tout autre composant) sur [n’importe quelle page](/help/sites-authoring/editing-content.md) sous **Sites** dans la navigation globale.
 
 ## Informations supplémentaires {#further-information}
 
