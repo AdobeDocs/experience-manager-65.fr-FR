@@ -32,11 +32,11 @@ Grâce aux conditions de masquage, les administrateurs, développeurs et super-u
 >
 >Le masquage d’une ressource sur la base d’une expression ne remplace pas les autorisations ACL. Le contenu peut toujours être modifié, mais il n’est pas simplement affiché.
 
-## Détails relatifs à la mise en œuvre et à l’utilisation {#implementation-and-usage-details}
+## Détails relatifs à la mise en œuvre et à l’utilisation  {#implementation-and-usage-details}
 
-`com.adobe.granite.ui.components.FilteringResourceWrapper` est responsable du filtrage des ressources en fonction de l’existence et de la valeur de la `granite:hide` propriété, située sur le champ à filtrer. L’implémentation de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` comprend une instance de `FilteringResourceWrapper.`
+`com.adobe.granite.ui.components.FilteringResourceWrapper` est responsable du filtrage des ressources en fonction de l’existence et de la valeur de la  `granite:hide` propriété, située sur le champ à filtrer. L&#39;implémentation de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` comprend une instance de `FilteringResourceWrapper.`
 
-The implementation makes use of the Granite [ELResolver API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) and adds a `cqDesign` custom variable via the ExpressionCustomizer.
+L’implémentation utilise l’API Granite [ELResolver](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) et ajoute une variable personnalisée `cqDesign` via ExpressionCustomizer.
 
 Voici quelques exemples de conditions de masquage sur un nœud de conception situé sous `etc/design` ou sous la forme d’une stratégie de contenu.
 
@@ -60,7 +60,7 @@ Lors de la définition de votre expression de masquage, veuillez tenir compte de
 
 Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) en particulier. Prenons notamment l’exemple du [composant principal Liste](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
 
-[A l’aide de l’éditeur](/help/sites-authoring/templates.md)de modèles, l’auteur du modèle peut définir dans la boîte de dialogue de conception les options du composant de liste qui sont disponibles pour l’auteur de la page. Il est ainsi possible d’activer ou de désactiver des options permettant de définir une liste comme étant statique, une liste de pages enfants, une liste de pages balisées, etc.
+[A l’aide de l’éditeur](/help/sites-authoring/templates.md) de modèles, l’auteur du modèle peut définir dans la boîte de dialogue de conception les options du composant de liste qui sont disponibles pour l’auteur de la page. Il est ainsi possible d’activer ou de désactiver des options permettant de définir une liste comme étant statique, une liste de pages enfants, une liste de pages balisées, etc.
 
 Si un auteur de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à celle-ci, ce qui empêche le rendu de cette option pour l’auteur de pages.
 
@@ -73,11 +73,11 @@ Si un auteur de modèles choisit de désactiver l’option des pages enfants, un
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
 1. Un noeud de stratégie est créé sous `/conf/we-retail/settings/wcm/policies/weretail/components/content/lis`t avec une propriété `disableChildren` définie sur `true`.
-1. The hide condition is defined as the value of a `granite:hid`e property on the dialog property node `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`
+1. La condition de masquage est définie comme la valeur d&#39;une propriété `granite:hid`e sur le noeud de propriété de boîte de dialogue `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. The value of `disableChildren` is pulled from the design configuration and the expression `${cdDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
+1. La valeur `disableChildren` est extraite de la configuration de la conception et l&#39;expression `${cdDesign.disableChildren}` est évaluée sur `false`, ce qui signifie que l&#39;option ne sera pas rendue dans le composant.
 
    Pour afficher l’expression de masquage en tant que valeur de la propriété `granite:hide` dans GitHub, cliquez [ici](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
