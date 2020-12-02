@@ -54,7 +54,7 @@ Experience Server fournit des services Experience sur lesquels AEM est basé et 
 
 [Apache Jackrabbit](https://jackrabbit.apache.org/) est une implémentation open source entièrement conforme de l’API JCR 2.0.
 
-## Traitement de requête Sling {#sling-request-processing}
+## Traitement de requête Sling  {#sling-request-processing}
 
 ### Introduction à Sling {#introduction-to-sling}
 
@@ -64,7 +64,7 @@ Avec Sling, le type de contenu à diffuser n’est pas la première considérati
 
 Les avantages liés à cette flexibilité sont évidents dans les applications comportant un vaste éventail d’éléments de contenu différents ou dans les cas où des pages facilement personnalisables sont nécessaires. En particulier, lors de la mise en œuvre d’un système de gestion de contenu web comme celui de la solution AEM.
 
-See [Discover Sling in 15 minutes](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) for the first steps for developing with Sling.
+Voir [Discover Sling en 15 minutes](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) pour les premières étapes du développement avec Sling.
 
 Le schéma suivant explique la résolution du script sling : il montre comment passer de la requête HTTP au nœud de contenu, du nœud de contenu au type de ressource, du type de ressource au script, ainsi que les variables de script sont disponibles.
 
@@ -81,7 +81,7 @@ Sling est *centré sur le contenu*. Cela signifie que le traitement est axé sur
 * la première cible est la ressource (nœud JCR) contenant le contenu
 * ensuite, la représentation, ou script, est localisée à partir des propriétés de ressource en combinaison avec certaines parties de la requête (par exemple des sélecteurs et/ou l’extension)
 
-### Sling RESTful {#restful-sling}
+### Sling RESTful  {#restful-sling}
 
 En raison de son approche centrée sur le contenu, Sling implémente un serveur orienté REST et propose ainsi un nouveau concept dans les frameworks d’applications web. Les avantages sont les suivants :
 
@@ -107,17 +107,17 @@ Nous pouvons la décomposer comme suit :
 |---|---|---|---|---|---|---|---|---|
 | https:// | myhost | outils/espion | .printable.a4. | html | / | a/b | ? | x=12 |
 
-**protocole** HTTP
+**** protocolHTTP
 
-**nom d’hôte** du site Web.
+**Nom** d’hôte du site Web.
 
-**chemin d’accès** au contenu spécifiant le contenu à rendre. Est utilisé en combinaison avec l’extension. Dans cet exemple, on obtient tools/spy.html.
+**content** pathPath spécifiant le contenu à rendre. Est utilisé en combinaison avec l’extension. Dans cet exemple, on obtient tools/spy.html.
 
 **sélecteur(s)** utilisé(s) pour d’autres méthodes de rendu du contenu ; dans cet exemple, une version compatible avec les imprimantes au format A4.
 
-**format de contenu de l&#39;extension** ; spécifie également le script à utiliser pour le rendu.
+**format** extensionContent ; spécifie également le script à utiliser pour le rendu.
 
-**suffixe** Peut être utilisé pour spécifier des informations supplémentaires.
+**** suffixPeut être utilisé pour spécifier des informations supplémentaires.
 
 **param(s)** Tout paramètre requis pour le contenu dynamique.
 
@@ -132,30 +132,30 @@ La figure ci-dessous illustre le mécanisme (décrit plus en détail dans les se
 
 ![chlimage_1-86](assets/chlimage_1-86a.png)
 
-With Sling, you specify which script renders a certain entity (by setting the `sling:resourceType` property in the JCR node). Ce mécanisme offre plus de liberté que celui selon lequel le script accède aux entités de données (comme le ferait une instruction SQL dans un script PHP) puisqu’une ressource peut avoir plusieurs rendus.
+Avec Sling, vous spécifiez le script qui effectue le rendu d’une certaine entité (en définissant la propriété `sling:resourceType` dans le noeud JCR). Ce mécanisme offre plus de liberté que celui selon lequel le script accède aux entités de données (comme le ferait une instruction SQL dans un script PHP) puisqu’une ressource peut avoir plusieurs rendus.
 
-#### Mappage des requêtes avec les ressources {#mapping-requests-to-resources}
+#### Mappage des requêtes avec les ressources  {#mapping-requests-to-resources}
 
 La requête est décomposée et les informations nécessaires sont extraites. Une recherche de la ressource demandée (nœud de contenu) est effectuée dans le référentiel :
 
-* first Sling checks whether a node exists at the location specified in the request; e.g. `../content/corporate/jobs/developer.html`
-* if no node is found, the extension is dropped and the search repeated; e.g. `../content/corporate/jobs/developer`
+* first Sling vérifie si un noeud existe à l’emplacement spécifié dans la requête ; par ex. `../content/corporate/jobs/developer.html`
+* si aucun noeud n&#39;est trouvé, l&#39;extension est supprimée et la recherche répétée ; par ex. `../content/corporate/jobs/developer`
 * si aucun nœud n’est trouvé, Sling retourne le code http 404 (Not Found).
 
 Sling permet également à des éléments autres que des nœuds JCR d’être des ressources, mais il s’agit là d’une fonctionnalité avancée.
 
-### Localisation du script {#locating-the-script}
+### Localisation du script  {#locating-the-script}
 
 Lorsque la ressource appropriée (nœud de contenu) est localisée, le **type de ressource sling** est extrait. C’est un chemin qui localise le script à utiliser pour le rendu du contenu.
 
-The path specified by the `sling:resourceType` can be either:
+Le chemin spécifié par `sling:resourceType` peut être :
 
 * absolu
 * relative, à un paramètre de configuration
 
    Les chemins relatifs sont recommandés par l’Adobe lorsqu’ils augmentent la portabilité.
 
-All Sling scripts are stored in subfolders of either `/apps` or `/libs`, which will be searched in this order (see [Customizing Components and Other Elements](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+Tous les scripts Sling sont stockés dans des sous-dossiers de `/apps` ou `/libs`, qui seront recherchés dans cet ordre (voir [Personnalisation des composants et autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 Autres points à noter sont :
 
@@ -167,11 +167,11 @@ Autres points à noter sont :
    * `.java`: Compilateur Java Servlet (exécution côté serveur)
    * `.jst`: Modèles JavaScript (exécution côté client)
 
-The list of script engines supported by the given instance of AEM are listed on the Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
+La liste des moteurs de script pris en charge par l&#39;instance donnée d&#39;AEM est répertoriée dans la console de gestion Felix ( `http://<host>:<port>/system/console/slingscripting`).
 
 En outre, Apache Sling prend en charge l’intégration avec d’autres moteurs de script répandus (par exemple, Groovy, JRuby, Freemarker) et offre un moyen d’intégrer de nouveaux moteurs de script.
 
-Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
+En utilisant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs`, alors pour :
 
 * Requêtes GET/HEAD et URL se terminant par .html (types de requête par défaut, format par défaut)
 
@@ -181,7 +181,7 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
    Le POST sera utilisé dans le nom du script.
 
-   Le script sera `/apps/hr/jobs/jobs.POST.esp`écrit.
+   Le script sera `/apps/hr/jobs/jobs.POST.esp`.
 
 * URL dans d’autres formats, ne se terminant pas par .html
 
@@ -193,7 +193,7 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
    Les sélecteurs peuvent être utilisés pour afficher le même contenu dans un autre format. Par exemple une version imprimable, un flux rss ou un résumé.
 
-   Si nous regardons une version adaptée à l&#39;imprimante dans laquelle le sélecteur peut être *imprimé*; comme dans `../content/corporate/jobs/developer.print.html`
+   Si nous étudions une version adaptée à l’imprimante dans laquelle le sélecteur peut être *imprimé*; comme dans `../content/corporate/jobs/developer.print.html`
 
    Le script sera `/apps/hr/jobs/jobs.print.esp`; le sélecteur est ajouté au nom du script.
 
@@ -201,7 +201,7 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
    * le chemin d’accès au contenu est utilisé pour rechercher un script correspondant (si ResourceTypeProvider basé sur un chemin est actif).
 
-      For example, the script for `../content/corporate/jobs/developer.html` would generate a search in `/apps/content/corporate/jobs/`.
+      Par exemple, le script pour `../content/corporate/jobs/developer.html` génère une recherche dans `/apps/content/corporate/jobs/`.
 
    * le type de nœud principal est utilisé.
 
@@ -215,9 +215,9 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
 Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est spécifique, mieux c’est. En d’autres termes, plus le sélecteur correspond meilleur est le résultat, quelle que soit l’extension de requête ou la correspondance de nom de méthode.
 
-For example, consider a request to access the resource
+Par exemple, envisagez une demande d’accès à la ressource.
 `/content/corporate/jobs/developer.print.a4.html`
-of type
+de type
 `sling:resourceType="hr/jobs"`
 
 En supposant que les scripts suivants sont présents dans l’emplacement correct :
@@ -233,12 +233,12 @@ En supposant que les scripts suivants sont présents dans l’emplacement correc
 
 L’ordre de préférence serait (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).
 
-En plus des types de ressources (principalement définis par la propriété `sling:resourceType`), il existe également le super type de ressource. This is generally indicated by the `sling:resourceSuperType` property. Ces super types sont aussi pris en compte lors de la recherche d’un script. Les super types de ressources présentent l’avantage de former une hiérarchie de ressources où le type de ressource par défaut `sling/servlet/default` (utilisé par les servlets par défaut) est effectivement la racine.
+En plus des types de ressources (principalement définis par la propriété `sling:resourceType`), il existe également le super type de ressource. Ceci est généralement indiqué par la propriété `sling:resourceSuperType`. Ces super types sont aussi pris en compte lors de la recherche d’un script. Les super types de ressources présentent l’avantage de former une hiérarchie de ressources où le type de ressource par défaut `sling/servlet/default` (utilisé par les servlets par défaut) est effectivement la racine.
 
 Le super type de ressource d’une ressource peut être défini de deux manières :
 
-* by the `sling:resourceSuperType` property of the resource.
-* by the `sling:resourceSuperType` property of the node to which the `sling:resourceType` points.
+* par la propriété `sling:resourceSuperType` de la ressource.
+* par la propriété `sling:resourceSuperType` du noeud vers lequel pointe `sling:resourceType`.
 
 Par exemple :
 
@@ -266,10 +266,10 @@ Hiérarchie de types de :
 
 * `/x`
    * sont celles du `[ c, b, a, <default>]`
-* while for `/y`
+* while pour `/y`
    * la hiérarchie est `[ c, a, <default>]`
 
-This is because `/y` has the `sling:resourceSuperType` property whereas `/x` does not and therefore its supertype is taken from its resource type.
+Cela est dû au fait que `/y` possède la propriété `sling:resourceSuperType` alors que `/x` ne le fait pas et que, par conséquent, son supertype est extrait de son type de ressource.
 
 #### Les scrips Sling ne peuvent pas être appelés directement {#sling-scripts-cannot-be-called-directly}
 
@@ -280,11 +280,11 @@ Si vous appelez la représentation (le script) directement, vous masquez la ress
 * le traitement automatique des méthodes http autres que GET, y compris :
 
    * les méthodes POST, PUT, DELETE qui sont gérées avec une implémentation par défaut de Sling
-   * the `POST.jsp` script in your sling:resourceType location
+   * le script `POST.jsp` dans votre emplacement sling:resourceType
 
 * l’architecture du code perd de son intégrité et de sa structure qui sont primordiales dans les développements à grande échelle
 
-### API Sling {#sling-api}
+### API Sling  {#sling-api}
 
 Elle utilise le module API Sling org.apache.sling.Bibliothèques &amp;amp ; ast ; et de balises.
 
@@ -292,7 +292,7 @@ Elle utilise le module API Sling org.apache.sling.Bibliothèques &amp;amp ; ast 
 
 En dernier lieu, il faut considérer la nécessité de référencer les éléments existants dans les scripts.
 
-More complex scripts (aggregating scripts) might need to access multiple resources (for example navigation, sidebar, footer, elements of a list) and do so by including the *resource*.
+Des scripts plus complexes (scripts d’agrégation) peuvent avoir besoin d’accéder à plusieurs ressources (par exemple, navigation, barre latérale, pied de page, éléments d’une liste) et ce, en incluant la *ressource*.
 
 Pour ce faire, vous pouvez utiliser la commande sling:include(&quot;/&lt;chemin>/&lt;ressource>&quot;). Cela inclut effectivement la définition de la ressource référencée, comme dans l’instruction suivante qui fait référence à une définition existante pour le rendu des images :
 
@@ -300,7 +300,7 @@ Pour ce faire, vous pouvez utiliser la commande sling:include(&quot;/&lt;chemin>
 %><sling:include resourceType="geometrixx/components/image/img"/><%
 ```
 
-## OSGI {#osgi}
+## OSGI  {#osgi}
 
 OSGi désigne une architecture permettant de développer et de déployer des applications et des bibliothèques modulaires (également connu sous le nom de Dynamic Module System for Java). Les conteneurs OSGi vous permettent de décomposer votre application en modules distincts (des fichiers jar contenant des méta-informations supplémentaires appelés « bundles » dans le jargon OSGi) et de gérer les interdépendances qui existent entre eux avec :
 
@@ -313,7 +313,7 @@ Le framework OSGi offre ensuite le chargement/déchargement dynamique, la config
 
 >[!NOTE]
 >
->Full information on OSGi technology can be found at the [OSGi website](https://www.osgi.org).
+>Vous trouverez des informations complètes sur la technologie OSGi sur le [site Web OSGi](https://www.osgi.org).
 >
 >En particulier, la page Basic Education (formation de base) contient un ensemble de présentations et de tutoriels.
 
@@ -335,7 +335,7 @@ Pour plus d’informations, reportez-vous à [Console web](/help/sites-deploying
 
 Les éléments suivants présentent un intérêt pour le développement :
 
-**Élément** Un élément est soit un noeud, soit une propriété.
+**** ItemUn élément est soit un noeud, soit une propriété.
 
 Pour plus d’informations sur la manipulation des objets Item, reportez-vous aux [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item.
 
@@ -355,19 +355,19 @@ Avec currentNode comme objet de noeud actif.
 
 Pour plus d’informations sur la manipulation des objets Node, reportez-vous aux [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**Widget** Dans AEM toutes les entrées utilisateur sont gérées par des widgets. Ceux-ci sont souvent utilisés pour contrôler la modification d’un contenu.
+**** WidgetIn AEM toutes les entrées utilisateur sont gérées par des widgets. Ceux-ci sont souvent utilisés pour contrôler la modification d’un contenu.
 
 Les boîtes de dialogue sont construites en combinant des Widgets.
 
 AEM a été développé à partir de la bibliothèque de widgets ExtJS.
 
-**Boîte de dialogue** Une boîte de dialogue est un type spécial de widget.
+**** Boîte de dialogueUne boîte de dialogue est un type spécial de widget.
 
 Pour modifier le contenu, AEM utilise des boîtes de dialogue définies par le développeur de l’application. Celles-ci combinent une série de widgets pour présenter à l’utilisateur tous les champs et toutes les actions nécessaires pour modifier le contenu associé.
 
 Les boîtes de dialogue servent également à modifier les métadonnées et sont utilisées par divers outils d’administration.
 
-**Composant** Un composant logiciel est un élément système offrant un service ou un événement prédéfini et capable de communiquer avec d&#39;autres composants.
+**** ComposantUn composant logiciel est un élément système offrant un service ou un événement prédéfini et capable de communiquer avec d&#39;autres composants.
 
 Dans AEM, un composant est souvent utilisé pour effectuer le rendu du contenu d’une ressource. Lorsque la ressource est une page, le composant chargé de son rendu est appelé « composant de niveau supérieur » ou « composant de page ». Cependant, un composant n’effectue pas nécessairement le rendu de contenu, ni n’est lié à une ressource spécifique. Par exemple, un composant de navigation affiche des informations sur plusieurs ressources.
 
@@ -376,7 +376,7 @@ La définition d’un composant comprend :
 * le code utilisé pour le rendu du contenu
 * une boîte de dialogue pour la saisie utilisateur et la configuration du contenu résultant.
 
-**Modèle** Un modèle est la base d&#39;un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est ensuite créée en copiant ce modèle.
+**Le modèle** TemplateA est la base d&#39;un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est ensuite créée en copiant ce modèle.
 
 Un modèle est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
 
@@ -384,7 +384,7 @@ Il définit le composant de page utilisé pour afficher la page et le contenu pa
 
 **Composant de page (composant de niveau supérieur)** Composant à utiliser pour générer la page.
 
-**Page** A est une &#39;instance&#39; d&#39;un modèle.
+**La page** PageA est une &#39;instance&#39; d&#39;un modèle.
 
 Une page comporte un nœud de hiérarchie de type cq:Page et un nœud de contenu de type cq:PageContent. La propriété sling:resourceType du nœud de contenu pointe vers le composant de page utilisé pour le rendu de la page.
 
@@ -394,7 +394,7 @@ S`tring pageName = currentPage.getName();`
 
 Avec currentPage comme objet de page actif. Pour plus d’informations sur la manipulation des objets Page, reportez-vous aux [Javadocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
 
-**Gestionnaire** de pages Le gestionnaire de pages est une interface qui fournit des méthodes pour les opérations au niveau de la page.
+**** Gestionnaire de pagesLe gestionnaire de pages est une interface qui fournit des méthodes pour les opérations au niveau de la page.
 
 Par exemple, pour obtenir la page de contenu d’une ressource, vous pouvez utiliser le code suivant dans votre script :
 
@@ -414,7 +414,7 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 >[!CAUTION]
 >
->Vous ne devez rien modifier dans le chemin `/libs`. For configuration and other changes copy the item from `/libs` to `/apps` and make any changes within `/apps`.
+>Vous ne devez rien modifier dans le chemin `/libs`. Pour la configuration et d&#39;autres modifications, copiez l&#39;élément de `/libs` vers `/apps` et effectuez les modifications dans `/apps`.
 
 * `/apps`
 
@@ -432,7 +432,7 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 * `/libs`
 
-    Bibliothèques et définitions appartenant au noyau d’AEM. The sub-folders in `/libs` represent the out of the box AEM features as for example search or replication. The content in `/libs` should not be modified as it affects the way AEM works. Features specific to your website should be developed under `/apps` (see [Customizing Components and Other Elements](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+    Bibliothèques et définitions appartenant au noyau d’AEM. Les sous-dossiers de `/libs` représentent les fonctions AEM prêtes à l&#39;emploi, comme par exemple la recherche ou la réplication. Le contenu de `/libs` ne doit pas être modifié car il affecte le fonctionnement de l&#39;AEM. Les fonctionnalités spécifiques à votre site Web doivent être développées sous `/apps` (voir [Personnalisation des composants et autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -440,17 +440,17 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 * `/var`
 
-   / Fichiers qui évoluent et sont mis à jour par le système, tels que les journaux d’audit, les statistiques, la gestion des événements. The sub-folder `/var/classes` contains the java servlets in source and compiled forms that have been generated from the components scripts.
+   / Fichiers qui évoluent et sont mis à jour par le système, tels que les journaux d’audit, les statistiques, la gestion des événements. Le sous-dossier `/var/classes` contient les servlets java dans la source et les formulaires compilés qui ont été générés à partir des scripts de composants.
 
 ## Environnements {#environments}
 
 Avec AEM, un environnement de production se compose souvent de deux types d’instances différents : [une instance de création et une instance de publication](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
-## Le dispatcher {#the-dispatcher}
+## Le dispatcher  {#the-dispatcher}
 
 Le dispatcher est un outil Adobe qui sert à la mise en cache et/ou l’équilibrage de charge. Plus d’informations sont disponibles sous [le dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
-## FileVault (système de révision de code source) {#filevault-source-revision-system}
+## FileVault (système de révision de code source)  {#filevault-source-revision-system}
 
 FileVault fournit à votre référentiel JCR des fonctions de mappage du système de fichiers et de gestion des versions. Il permet de gérer des projets de développement AEM avec une prise en charge complète du stockage et de la gestion du code de projet, du contenu, des configurations, etc. dans des systèmes de gestion de versions standard (par exemple, Subversion).
 
@@ -462,7 +462,7 @@ Votre contenu est souvent soumis à des processus organisationnels, y compris de
 
 Le moteur de workflow sert à gérer l’implémentation de vos workflows et leur application ultérieure sur votre contenu.
 
-## Gestion multisite {#multi-site-management}
+## Gestion multisite  {#multi-site-management}
 
 Multi Site Manager (MSM) permet de gérer facilement plusieurs sites web partageant du contenu commun. MSM vous permet de définir des relations entre les sites afin que les modifications de contenu d’un site soient automatiquement répliquées sur d’autres sites.
 
