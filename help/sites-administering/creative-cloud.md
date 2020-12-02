@@ -19,13 +19,13 @@ ht-degree: 65%
 ---
 
 
-# Partage de dossiers avec Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
+# Partage de dossiers avec Adobe Creative Cloud  {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
->La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) or [AEM desktop app](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html). En savoir plus sur les [meilleures pratiques d’intégration d’AEM et de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. Il est vivement conseillé aux clients d’utiliser des fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou [AEM application de bureau](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html). En savoir plus sur les [meilleures pratiques d’intégration d’AEM et de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
-AEM Assets permet de partager des dossiers de ressources avec les utilisateurs d’Adobe Creative Cloud. For details on how to configure Adobe Marketing Cloud to let you share assets with Adobe Creative Cloud, see [Configuring Assets-Creative Cloud integration](/help/sites-administering/configure-assets-cc-integration.md).
+AEM Assets permet de partager des dossiers de ressources avec les utilisateurs d’Adobe Creative Cloud. Pour plus d’informations sur la configuration de Adobe Marketing Cloud pour vous permettre de partager des ressources avec Adobe Creative Cloud, voir [Configuration de l’intégration Ressources-Creative Cloud](/help/sites-administering/configure-assets-cc-integration.md).
 
 1. Dans la console Assets, sélectionnez un dossier à partager avec Creative Cloud.
 
@@ -35,11 +35,11 @@ AEM Assets permet de partager des dossiers de ressources avec les utilisateurs d
 
    ![](assets/chlimage_1-140.png)
 
-1. From the list, select the **Adobe Creative Cloud** option.
+1. Dans la liste, sélectionnez l’option **Adobe Creative Cloud**.
 
    ![](assets/chlimage_1-141.png)
 
-1. In the **Creative Cloud Sharing** page, add the user to share the folder with and then click **Save**.
+1. Dans la page **Partage des Creative Cloud**, ajoutez l’utilisateur avec lequel partager le dossier, puis cliquez sur **Enregistrer**.
 
    ![](assets/chlimage_1-142.png)
 
