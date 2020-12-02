@@ -28,8 +28,8 @@ Outre la prise en charge d’un large éventail de formats de fichier et de prof
 
 * **Mise à l’échelle avec augmentation de la taille ou de la résolution du fichier** : la mise à l’échelle est principalement réalisée grâce à la fonctionnalité ITL brevetée de redimensionnement des fichiers lors de leur décodage. Cette capacité garantit que l’utilisation de la mémoire d’exécution est toujours optimale et n’est pas une fonction quadratique de l’augmentation de la taille du fichier ou de la résolution de l’image. La bibliothèque ITL peut traiter des fichiers haute résolution plus volumineux et haute résolution (contenant un nombre supérieur de mégapixels). Les outils tiers, tels qu’ImageMagick, ne peuvent pas gérer les fichiers volumineux et les blocages système lors du traitement de ces fichiers.
 * **Algorithmes de compression de la qualité et du redimensionnement Photoshop** : cohérence avec les normes du secteur en terme de qualité de l’échantillonnage descendant (lisse, pointu et bicubique automatique) et de la qualité de compression. Imaging Transcoding Library (Bibliothèque de transcodage d’images) analyse plus avant le facteur de qualité de l’image d’entrée et utilise intelligemment des tables et des paramètres de qualité optimaux pour l’image de sortie. Cela permet de produire des fichiers de taille optimale sans compromettre la qualité visuelle.
-* **Débit élevé :** Le temps de réponse est inférieur et le débit est constamment supérieur à ImageMagick. Par conséquent, la bibliothèque de transcodage d’images doit réduire le temps d’attente des utilisateurs et le coût de l’hébergement.
-* **Optimiser l&#39;évolutivité avec la charge simultanée :** La bibliothèque de transcodage d’images fonctionne de manière optimale dans des conditions de chargement simultanées. La bibliothèque offre un débit élevé avec une performance du processeur et une utilisation de la mémoire optimaux, et un temps de réponse faible, ce qui permet de réduire le coût de l’hébergement.
+* **Débit élevé :** le temps de réponse est inférieur et le débit est constamment supérieur à ImageMagick. Par conséquent, la bibliothèque de transcodage d’images doit réduire le temps d’attente des utilisateurs et le coût de l’hébergement.
+* **Optimisation de l’évolutivité avec le chargement simultané :** Imaging Transcoding Library fonctionne de manière optimale dans des conditions de chargement simultanées. La bibliothèque offre un débit élevé avec une performance du processeur et une utilisation de la mémoire optimaux, et un temps de réponse faible, ce qui permet de réduire le coût de l’hébergement.
 
 ## Plateformes prises en charge {#supported-platforms}
 
@@ -53,10 +53,10 @@ Les arguments de ligne de commande de la bibliothèque ITL peuvent inclure les �
  -resize
 ```
 
-You can configure the following options for the `-resize` parameter:
+Vous pouvez configurer les options suivantes pour le paramètre `-resize` :
 
-* `X`: Fonctionne de la même manière que [!DNL Experience Manager]. Par exemple, -resize 319.
-* `WxH`: Le rapport L/H n’est pas conservé, par exemple `-resize 319x319`.
+* `X`: Fonctionne de la même manière que  [!DNL Experience Manager]. Par exemple, -resize 319.
+* `WxH`: Le rapport L/H n’est pas conservé, par exemple  `-resize 319x319`.
 * `Wx` : définit la largeur et calcule la hauteur en conservant le rapport d’aspect. Par exemple, `-resize 319x`.
 * `xH` : définit la hauteur et calcule la largeur en conservant le rapport d’aspect. Par exemple, `-resize x319`.
 
@@ -74,13 +74,13 @@ Pour configurer le traitement ITL, créez un fichier de configuration et mettez 
 
 Pour configurer la bibliothèque, créez un fichier CONF pour indiquer les bibliothèques à l’aide des étapes suivantes. Vous avez besoin d’autorisations d’administrateur ou de root.
 
-1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Le paquet est compatible avec [!DNL Experience Manager] 6.5.
+1. Téléchargez le [package de la bibliothèque de transcodage d’images à partir de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) et installez-le à l’aide de Package Manager. Le package est compatible avec [!DNL Experience Manager] 6.5.
 
-1. Pour connaître un ID de lot pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console Web et cliquez sur **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Vous pouvez également ouvrir la console des lots en utilisant l’ `https://[aem_server:[port]/system/console/bundles/` URL d’accès. Localisez le `com.day.cq.dam.cq-dam-switchengine` lot et son ID.
+1. Pour connaître un ID de lot pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console Web et cliquez sur **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Vous pouvez également ouvrir la console des lots en accédant à l’URL `https://[aem_server:[port]/system/console/bundles/`. Localisez le lot `com.day.cq.dam.cq-dam-switchengine` et son ID.
 
-1. Assurez-vous que toutes les bibliothèques requises sont extraites en vérifiant le dossier à l’aide de la commande `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, où le nom de dossier est créé à l’aide de l’ID d’assemblage. Par exemple, la commande est `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` si l’ID d’assemblage est `588`défini.
+1. Assurez-vous que toutes les bibliothèques requises sont extraites en vérifiant le dossier à l’aide de la commande `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, où le nom du dossier est créé à l’aide de l’ID d’assemblage. Par exemple, la commande est `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` si l’ID d’assemblage est `588`.
 
-1. Créez un `SWitchEngineLibs.conf` fichier à lier à la bibliothèque.
+1. Créez le fichier `SWitchEngineLibs.conf` à lier à la bibliothèque.
 
    ```shell
    cd `/etc/ld.so.conf.d`
@@ -88,39 +88,39 @@ Pour configurer la bibliothèque, créez un fichier CONF pour indiquer les bibli
    vi SWitchEngineLibs.conf
    ```
 
-1. Ajoutez `/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` le chemin d’accès au fichier conf à l’aide de la `cat SWitchEngineLibs.conf` commande.
+1. Ajoutez `/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` chemin d’accès au fichier conf à l’aide de la commande `cat SWitchEngineLibs.conf`.
 
-1. Exécutez `ldconfig` la commande pour créer les liens et le cache nécessaires.
+1. Exécutez la commande `ldconfig` pour créer les liens et le cache nécessaires.
 
-1. Dans le compte utilisé pour le début [!DNL Experience Manager], modifiez le `.bash_profile` fichier. Ajoutez `LD_LIBRARY_PATH` en ajoutant ce qui suit.
+1. Dans le compte utilisé pour début [!DNL Experience Manager], modifiez le fichier `.bash_profile`. Ajoutez `LD_LIBRARY_PATH` en ajoutant ce qui suit.
 
    ```shell
    LD_LIBRARY_PATH=.
    export LD_LIBRARY_PATH
    ```
 
-1. Pour vous assurer que la valeur du chemin d’accès est définie sur `.`, utilisez `echo $LD_LIBRARY_PATH` la commande. La production ne devrait être que `.`. Si la valeur n&#39;est pas définie sur `.`, redémarrez la session.
+1. Pour vous assurer que la valeur du chemin d’accès est définie sur `.`, utilisez la commande `echo $LD_LIBRARY_PATH`. La sortie doit simplement être `.`. Si la valeur n&#39;est pas définie sur `.`, redémarrez la session.
 
-### Configurer le processus de mise à jour des ressources  DAM {#configure-dam-asset-update-workflow}
+### Configurer [!UICONTROL le flux de travail {#configure-dam-asset-update-workflow} DAM Update Asset]
 
-Mettez à jour le processus de mise à jour des actifs  DAM pour utiliser la bibliothèque pour le traitement des images.
+Mettez à jour le flux de travail [!UICONTROL DAM Update Asset] pour utiliser la bibliothèque pour le traitement des images.
 
-1. Dans l’interface [!DNL Experience Manager] utilisateur, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
+1. Dans l&#39;interface utilisateur [!DNL Experience Manager], sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 
-1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
+1. Dans la page **[!UICONTROL Modèles de flux de travaux]**, ouvrez le modèle de flux de travaux **[!UICONTROL DAM Update Asset]** en mode d’édition.
 
-1. Open the **[!UICONTROL Process Thumbnails]** workflow process step. In the **[!UICONTROL Thumbnails]** tab, add the MIME types for which you want to skip the default thumbnail generation process in the **[!UICONTROL Skip Mime Types]** list.
-For example, if you want to create thumbnails for a TIFF image using Imaging Transcoding Library, specify `image/tiff` in the **[!UICONTROL Skip Mime Types]** field.
+1. Ouvrez l’étape de processus **[!UICONTROL Traiter les miniatures]**. Dans l’onglet **[!UICONTROL Miniatures]**, ajoutez les types MIME pour lesquels vous souhaitez ignorer le processus de génération de miniatures par défaut dans la liste **[!UICONTROL Ignorer les types MIME]**.
+Par exemple, si vous souhaitez créer des miniatures pour une image TIFF à l’aide de la bibliothèque de transcodage d’images, spécifiez `image/tiff` dans le champ **[!UICONTROL Ignorer les types MIME]**.
 
-1. Dans l’onglet **[!UICONTROL Image Web]**, ajoutez les types MIME pour lesquels vous souhaitez ignorer le processus de génération de rendu web par défaut dans **[!UICONTROL Liste à ignorer]**. For example, if you skipped MIME type `image/tiff` in the above step, add `image/tiff` to the skip list.
+1. Dans l’onglet **[!UICONTROL Image Web]**, ajoutez les types MIME pour lesquels vous souhaitez ignorer le processus de génération de rendu web par défaut dans **[!UICONTROL Liste à ignorer]**. Par exemple, si vous avez ignoré le type MIME `image/tiff` à l’étape ci-dessus, ajoutez `image/tiff` à la liste de saut.
 
-1. Open the **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** step, navigate to the **[!UICONTROL Arguments]** tab. In the **[!UICONTROL Mime Types]** list, add the MIME types you want Imaging Transcoding Library to process. For example, if you skipped the MIME type `image/tiff` in the above step, add `image/jpeg` to the **[!UICONTROL Mime Types]** list.
+1. Ouvrez l’étape **[!UICONTROL Miniatures EPS (optimisées par ImageMagick)]**, accédez à l’onglet **[!UICONTROL Arguments]**. Dans la liste **[!UICONTROL Mime Types]**, ajoutez les types MIME que la bibliothèque de transcodage d’images doit traiter. Par exemple, si vous avez ignoré le type MIME `image/tiff` à l’étape ci-dessus, ajoutez `image/jpeg` à la liste **[!UICONTROL Types MIME]**.
 
 1. Supprimez les commandes par défaut, le cas échéant.
 
 1. Active/désactive le panneau latéral et ajoute le **[!UICONTROL gestionnaire SWitchEngine]** à la liste des étapes.
 
-1. Ajoutez les commandes au gestionnaire  SwitchEngine en fonction de vos besoins personnalisés. Réglez les paramètres des commandes que vous spécifiez pour répondre à vos besoins. Par exemple, si vous souhaitez préserver le profil colorimétrique de votre image JPEG, ajoutez les commandes suivantes à la liste **[!UICONTROL Commandes]** :
+1. Ajoutez les commandes au [!UICONTROL Gestionnaire SwitchEngine] en fonction de vos besoins personnalisés. Réglez les paramètres des commandes que vous spécifiez pour répondre à vos besoins. Par exemple, si vous souhaitez préserver le profil colorimétrique de votre image JPEG, ajoutez les commandes suivantes à la liste **[!UICONTROL Commandes]** :
 
    * `SWitchEngine -input ${file} -destMime PNG -resize 48 -output ${directory}cq5dam.thumbnail.48.48.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
@@ -133,11 +133,11 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
 
    ![limage](assets/chlimage_1-200.png)
 
-1. Pour générer des rendus Web, configurez les paramètres dans l’onglet Image **[!UICONTROL compatible]** Web.
+1. Pour générer des rendus Web, configurez les paramètres dans l&#39;onglet **[!UICONTROL Image Web-Enabled]**.
 
-1. Synchronisez le modèle mis à jour du processus de mise à jour des actifs  DAM. Enregistrez le workflow.
+1. Synchronisez le modèle de flux de travaux [!UICONTROL DAM Update Asset] mis à jour. Enregistrez le workflow.
 
-Le programme vérifie la configuration, télécharge une image TIFF et surveille le fichier error.log. Vous remarquerez `INFO` les messages avec des mentions de `SwitchEngineHandlingProcess execute: executing command line`. Les journaux mentionnent les rendus générés. Une fois le processus terminé, vous pouvez vue les nouveaux rendus dans [!DNL Experience Manager].
+Le programme vérifie la configuration, télécharge une image TIFF et surveille le fichier error.log. Vous remarquerez les messages `INFO` avec les mentions de `SwitchEngineHandlingProcess execute: executing command line`. Les journaux mentionnent les rendus générés. Une fois le processus terminé, vous pouvez vue les nouveaux rendus dans [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >
