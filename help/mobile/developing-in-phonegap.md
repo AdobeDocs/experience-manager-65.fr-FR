@@ -27,7 +27,7 @@ AEM s’intègre dans PhoneGap pour vous aider à créer aisément des applicati
 
 >[!NOTE]
 >
->Avant de commencer à utiliser AEM Mobile avec Adobe PhoneGap, assurez-vous de configurer votre environnement et commencez avec le Tableau de bord [de l&#39;application](/help/mobile/phonegap-authoring-apps.md)AEM Mobile.
+>Avant de commencer à utiliser AEM Mobile avec Adobe PhoneGap, assurez-vous de configurer votre environnement et commencez avec le [Tableau de bord d’application AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
 
 Les ressources suivantes vous aideront à commencer à utiliser AEM Mobile à l’aide de Adobe PhoneGap :
 
@@ -37,15 +37,15 @@ Les ressources suivantes vous aideront à commencer à utiliser AEM Mobile à l�
 
 * [AEM Mobile Content Services : Présentation](/help/mobile/develop-content-as-a-service.md)
 
-   * Pour activer Content Services et les modèles de données, voir [Administration de Content Services.](/help/mobile/developing-content-services.md)
-   * Pour en savoir plus sur la création de modèles, voir [Développement de modèles.](/help/mobile/administer-mobile-apps.md)
-   * Pour en savoir plus sur le rendu et la Diffusion, voir [Rendu et Diffusion de Content Services](/help/mobile/rendering-and-delivery.md)
+   * Pour activer Content Services et les modèles de données, voir [Administration de Content Services](/help/mobile/developing-content-services.md).
+   * Pour en savoir plus sur la création de modèles, voir [Développement de modèles](/help/mobile/administer-mobile-apps.md).
+   * Pour en savoir plus sur le rendu et la Diffusion, voir [Rendu et Diffusion de Content Services](/help/mobile/rendering-and-delivery.md).
 
 >[!NOTE]
 >
->Pour exécuter vos applications mobiles AEM sur n’importe quel périphérique mobile iOS ou Android, reportez-vous à la page Démarrage rapide [mobile à l’aide d’AEM Vérifier l’application](/help/mobile/phonegap-mobile-quickstart.md).
+>Pour exécuter vos applications mobiles AEM sur n’importe quel périphérique mobile iOS ou Android, reportez-vous à la section [Démarrage rapide mobile à l’aide d’AEM Verify App](/help/mobile/phonegap-mobile-quickstart.md).
 
-## Pour avancer {#getting-ahead}
+## Aller de l&#39;avant {#getting-ahead}
 
 Pour en savoir plus sur les rôles et les responsabilités d’un administrateur et d’un développeur, consultez les ressources ci-dessous :
 
