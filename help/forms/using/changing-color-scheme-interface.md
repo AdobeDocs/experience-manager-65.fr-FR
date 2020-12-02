@@ -18,9 +18,9 @@ ht-degree: 76%
 ---
 
 
-# Modification des couleurs de l’interface {#changing-the-color-scheme-of-the-interface}
+# Modification des couleurs de l’interface  {#changing-the-color-scheme-of-the-interface}
 
-Vous pouvez modifier les couleurs des différentes parties de l’interface utilisateur de l’espace de travail AEM Forms selon vos besoins. Voici quelques exemples de personnalisation des couleurs. In addition to the steps discussed in this article, see [Generic steps for AEM Forms workspace customization](/help/forms/using/generic-steps-html-workspace-customization.md).
+Vous pouvez modifier les couleurs des différentes parties de l’interface utilisateur de l’espace de travail AEM Forms selon vos besoins. Voici quelques exemples de personnalisation des couleurs. Outre les étapes décrites dans cet article, voir [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Barre de navigation supérieure {#top-navigation-bar}
 
@@ -33,7 +33,7 @@ Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM 
 
    >[!NOTE]
    >
-   >For more information about WebDAV access, see [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Pour plus d’informations sur l’accès WebDAV, voir [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
 1. Référence à la nouvelle image d’arrière-plan dans /apps/ws/css/newStyle.css en ajoutant le style suivant.
 
@@ -43,7 +43,7 @@ Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM 
    }
    ```
 
-### Utilisation de la propriété color dans la feuille de style CSS {#using-color-property-in-css}
+### Utilisation de la propriété color dans la feuille de style CSS  {#using-color-property-in-css}
 
 1. Ajoutez le style suivant dans newStyle.css sous /apps/ws/css.
 
@@ -56,7 +56,7 @@ Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM 
 
 ## Composant de catégories {#category-component}
 
-Le composant de catégories affiche les différentes catégories de tâches dans le volet de gauche. To change its color, define the background color in `.category` element of the CSS file.
+Le composant de catégories affiche les différentes catégories de tâches dans le volet de gauche. Pour modifier sa couleur, définissez la couleur d’arrière-plan dans l’élément `.category` du fichier CSS.
 
 ## Composant de tâches {#task-component}
 
