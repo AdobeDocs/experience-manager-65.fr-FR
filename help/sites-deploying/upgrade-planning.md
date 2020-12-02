@@ -69,7 +69,7 @@ Vous trouverez ci-dessous la liste des domaines qui sont impactés dans un proje
   <tr>
    <td>Composants/contenu AEM</td>
    <td>Impact modéré </td>
-   <td><code>/libs</code> and <code>/apps</code> are easily handled through the upgrade, but <code>/etc</code> usually requires some manual re-application of customizations.</td>
+   <td><code>/libs</code> et <code>/apps</code> sont facilement gérés par la mise à niveau, mais <code>/etc</code> nécessite généralement une réapplication manuelle des personnalisations.</td>
   </tr>
   <tr>
    <td>Services AEM</td>
@@ -91,11 +91,11 @@ Vous trouverez ci-dessous la liste des domaines qui sont impactés dans un proje
 
 Il est important de vous assurer que votre système d’exploitation, Java Runtime, httpd et la version du dispatcher sont pris en charge. Pour plus d’informations, voir la page [Exigences techniques d’AEM 6.5](/help/sites-deploying/technical-requirements.md). La mise à niveau de ces composants doit être ajoutée à votre plan d’action et exécutée avant la mise à niveau d’AEM.
 
-## Phases du projet {#project-phases}
+## Phases du projet  {#project-phases}
 
 La planification et l’exécution d’une mise à niveau AEM requiert un effort important. En vue de clarifier les différents efforts du processus, nous avons divisé les exercices de planification et d’exécution en des phases distinctes. Dans les sections ci-dessous, chaque phase entraîne la création d’un livrable, souvent exploité lors des étapes suivantes du projet.
 
-### Planification pour la formation des auteurs {#planning-for-author-training}
+### Planification pour la formation des auteurs  {#planning-for-author-training}
 
 À chaque nouvelle version, de potentielles modifications de l’IU et des workflows de l’utilisateur peuvent être introduites. En outre, les nouvelles versions introduisent de nouvelles fonctionnalités dont l’entreprise peut tirer parti. Nous vous recommandons de passer en revue les modifications fonctionnelles qui ont été introduites et d’organiser un plan de formation des utilisateurs pour leurs permettre de les utiliser à bon escient. 
 
@@ -103,7 +103,7 @@ La planification et l’exécution d’une mise à niveau AEM requiert un effort
 
 Les nouvelles fonctionnalités d’AEM 6.5 sont présentées dans [la section AEM d’adobe.com](/help/release-notes/release-notes.md). N’oubliez pas de noter toutes les modifications apportées aux interfaces utilisateur ou aux fonctionnalités des produits couramment utilisées dans vore organisation. Étudiez et notez toutes les nouvelles fonctionnalités pouvant être utiles à votre organisation. Après avoir étudié les changements d’AEM 6.5, élaborez un plan de formation pour vos auteurs. Cela peut impliquer l’exploitation de ressources disponibles, telles que les vidéos du site d’aide·ou la formation proposée via [les services d’apprentissage Adobe Digital](https://www.adobe.com/training.html).
 
-### Création d’un plan de tests {#creating-a-test-plan}
+### Création d’un plan de tests  {#creating-a-test-plan}
 
 Chaque client effectue une implémentation d’AEM unique, personnalisée pour répondre aux besoins de son organisation. Par conséquent, il est important de définir toutes les personnalisations apportées au système pour pouvoir les inclure dans un plan de tests. Ce plan de tests va renforcer le processus de contrôle qualité réalisé sur l’instance mise à niveau.
 
@@ -111,7 +111,7 @@ Chaque client effectue une implémentation d’AEM unique, personnalisée pour r
 
 L’environnement de production doit être dupliqué de manière exacte pour y effectuer les tests après la mise à niveau pour s’assurer que toutes les applications et codes personnalisés continuent de fonctionner comme il faut. Vous devez effectuer une regression avec toute vos personnalisations et exécuter des tests de performances, de chargement et de sécurité. Lorsque vous programmez votre plan de tests, veillez à couvrir toutes les personnalisations qui ont été apportées au système en plus des interfaces utilisateurs et des workflows prêts à l’emploi qui sont exploités durant vos activités quotidiennes. Ceux-ci peuvent comprendre des servlets et services OSGI, des intégrations à Adobe Marketing Cloud, des integrations avec des tiers via les connecteurs AEM, des intégrations tierces personnalisées, des modèles et composants personnalisés, des couches d’IU personnalisées dans AEM et des workflows personnalisés. Pour les clients migrant à partir d’une version antérieure à AEM 6, toute demande de personnalisation doit être analysée, car elle peut nécessiter une indexation. Pour les clients exécutants déjà la version 6.x d’AEM, ces requêtes doivent tout de même être testées pour s’assurer que leurs index continuent de fonctionner correctement après la mise à niveau.
 
-### Identification des modifications nécessaires en matière d’architecture et d’infrastructure {#determining-architectural-and-infrastructure-changes-needed}
+### Identification des modifications nécessaires en matière d’architecture et d’infrastructure  {#determining-architectural-and-infrastructure-changes-needed}
 
 Durant la mise à niveau, il est possible que vous ayez aussi besoin de mettre à niveau d’autres composants de votre équipement technique, comme le système d’exploitation ou JVM. De même, il est possible qu’en raison de modifications dans la structure du référentiel, du matériel supplémentaire soit nécessaire. Cela concerne en général uniquement les clients effectuant la migration à partir des instances antérieures à 6.x, mais il est important de prendre ce point en considération. Il se peut enfin que des modifications soient nécessaires à vos pratiques opérationnelles, dont les processus de surveillance, de maintenance et de sauvegarde, et de reprise sur sinistre. 
 
@@ -139,7 +139,7 @@ Passez en revue les exigences techniques pour AEM 6.5 et vérifiez si votre log
 
 #### Observations relatives à la restructuration du contenu {#content-restructuring-considerations}
 
-AEM s’accompagne de modifications au niveau de la structure du référentiel pour rendre les mises à niveau encore plus transparentes. Cela consiste notamment à déplacer le contenu du dossier /etc vers les dossiers /libs, /apps et /content, selon que le contenu appartient à Adobe ou à un client, ce qui limite les risques d’écrasement du contenu au cours des publications. La restructuration du référentiel a été effectuée de telle sorte qu’elle ne nécessite pas de modifications du code au moment de la mise à niveau 6.5, bien qu’il soit recommandé de consulter les détails de la section Restructuration du [référentiel dans AEM](/help/sites-deploying/repository-restructuring.md) lors de la planification d’une mise à niveau.
+AEM s’accompagne de modifications au niveau de la structure du référentiel pour rendre les mises à niveau encore plus transparentes. Cela consiste notamment à déplacer le contenu du dossier /etc vers les dossiers /libs, /apps et /content, selon que le contenu appartient à Adobe ou à un client, ce qui limite les risques d’écrasement du contenu au cours des publications. La restructuration du référentiel a été effectuée de telle sorte qu&#39;elle ne nécessite pas de modifications du code au moment de la mise à niveau 6.5, bien qu&#39;il soit recommandé de consulter les détails à l&#39;adresse [Restructuration du référentiel dans AEM](/help/sites-deploying/repository-restructuring.md) lors de la planification d&#39;une mise à niveau.
 
 ### Évaluation de la complexité de la mise à niveau {#assessing-upgrade-complexity}
 
@@ -151,7 +151,7 @@ Une fois l’évaluation initiale terminée, une procédure plus approfondie con
 
 ![trei_crpped](assets/trei_cropped.png)
 
-L’outil de détection des motifs introduit récemment devrait vous donner une idée assez précise de ce à quoi vous devez vous attendre la plupart du temps au cours d’une mise à niveau. However, for more complex customizations and deployments where you have incompatible changes you can upgrade a development instance to AEM 6.5 according to the instructions in [Performing an In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas d’épuiser l’inventaire exhaustif des scénarios de tests et de développer un inventaire formel des éléments défectueux, mais de donner une estimation approximative de la quantité de travail requise pour mettre à niveau le code pour assurer la compatibilité avec la version 6.5. Lorsque vous combinez l’[outil de détection des motifs](/help/sites-deploying/pattern-detector.md) avec les modifications architecturales identifiées dans la section précédente, une estimation approximative peut être fournie à l’équipe chargée de la direction du projet pour la planification de la mise à niveau.
+L’outil de détection des motifs introduit récemment devrait vous donner une idée assez précise de ce à quoi vous devez vous attendre la plupart du temps au cours d’une mise à niveau. Cependant, pour des personnalisations et déploiements plus complexes où vous avez des modifications incompatibles, vous pouvez mettre à niveau une instance de développement vers AEM 6.5 conformément aux instructions de [Mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Une fois l’opération terminée, effectuez un test de vérification de haut niveau dans cet environnement. L’objectif de cet exercice n’est pas d’épuiser l’inventaire exhaustif des scénarios de tests et de développer un inventaire formel des éléments défectueux, mais de donner une estimation approximative de la quantité de travail requise pour mettre à niveau le code pour assurer la compatibilité avec la version 6.5. Lorsque vous combinez l’[outil de détection des motifs](/help/sites-deploying/pattern-detector.md) avec les modifications architecturales identifiées dans la section précédente, une estimation approximative peut être fournie à l’équipe chargée de la direction du projet pour la planification de la mise à niveau.
 
 ### Développement de la mise à niveau et du runbook de restauration {#building-the-upgrade-and-rollback-runbook}
 
@@ -161,7 +161,7 @@ Même si la documentation du processus de mise à niveau d’une instance AEM es
 
 Nous vous présentons les procédures de restauration et de mise à niveau dans la section [Procédure de mise à niveau ](/help/sites-deploying/upgrade-procedure.md), ainsi que la marche à suivre pour appliquer la mise à niveau lorsque vous effectuez une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Veuillez prendre connaissance de ces instructions en prenant en compte la structure de votre système, vos personnalisations, et votre tolérance vis-à-vis des temps d’arrêt, en établissant les procédures de restauration et de mise en marche que vous exécuterez durant la mise à niveau. Toutes les modifications relatives à la taille du seveur ou de l’architecture doivent être incluses lors de la création de votre runbook personnalisé. It est important de noter que cela doit être traité comme une version préliminaire. Pendant que votre équipe termine le contrôle qualité et les cycles de développement, et déploie la mise à niveau sur l’environnement d’évaluation, il est problable que vous ayez besoin de prendre des mesures supplémentaires. Ce document doit en principe contenir suffisamment d’informations pour permettre à tout membre du personnel d’exploitation d’effectuer une mise à niveau intégrale en s’y référant uniquement. 
 
-### Développement d’un plan du projet {#developing-a-project-plan}
+### Développement d’un plan du projet  {#developing-a-project-plan}
 
 Nous pouvons utiliser les résultats des exercices précédents pour développer un plan du projet qui couvre le calendrier prévu pour nos tests ou les efforts de développement, la formation et l’exécution de la mise à niveau. 
 
@@ -178,15 +178,15 @@ Un plan de projet complet doit comprendre :
 * La certification de l’environnement 
 * Mise en production
 
-### Réalisation du développement et du contrôle qualité {#performing-development-and-qa}
+### Réalisation du développement et du contrôle qualité  {#performing-development-and-qa}
 
-Nous proposons des procédures pour que la[ mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) soit compatible avec AEM 6.5. Pendant l’exécution de ce processus itératif, le runbook doit être modifié selon les besoins. Also see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) on information on how your customizations can stay backward compatible in most cases without requiring development immediately after upgrade.
+Nous proposons des procédures pour que la[ mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) soit compatible avec AEM 6.5. Pendant l’exécution de ce processus itératif, le runbook doit être modifié selon les besoins. Voir aussi [Compatibilité ascendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) pour plus d&#39;informations sur la manière dont vos personnalisations peuvent rester rétrocompatibles dans la plupart des cas sans nécessiter de développement immédiatement après la mise à niveau.
 
 ![patru_crpped](assets/patru_cropped.png)
 
 Le processus de tests et de développement est généralement itératif. En raison des personnalisations, les modifications effectuées durant la mise à niveau peuvent potentiellement rendre toute une section du produit inutilisable. Une fois que les développeurs ont identifié la source du problème et que l’équipe de testeurs a accès à ces fonctionnalités, d’autres problèmes peuvent être découverts. Cela nécessite des modifications du processus de mise à niveau, qui doivent être ajoutées à votre runbook de mise à niveau personnalisé. Après plusieurs itérations de tests et de correctifs, la base du code doit être entièrement validée et prête à être déployée dans l’environnment d’évaluation. 
 
-### Derniers tests {#final-testing}
+### Derniers tests  {#final-testing}
 
 Nous recommandons d’effectuer une dernière série de tests après la certification de la base du code par l’équipe de contrôle qualité de votre organisation. Cette série de test consiste à valider votre runbook dans un environnment d’évaluation, puis à effectuer des tests de validation des utilisateurs, de performance et de sécurité. 
 
@@ -194,7 +194,7 @@ Nous recommandons d’effectuer une dernière série de tests après la certific
 
 Cette étape est cruciale, car c’est la seule fois où vous êtes en mesure de valider les étapes du runbook dans un cadre similaire à un environnement de production. Après la mise à niveau de l’environnement, il est important de donner sufisamment de temps aux utilisateurs finaux pour qu’ils se connectent et passent en revue les activités effectuées en utilisant le système durant leurs activités quotidiennes. Il n’est pas rare que certains utilisateurs exploitent une partie du système qui n’avait jamais été examinée. L’identification et la correction des problèmes pouvant survenir dans ces parties avant le lancement peut aider à prévenir des arrêts de production coûteux. Comme une nouvelle version d’AEM contient d’importantes modifications à la plateforme sous-jacente, il est également important que vous fassiez des tests en matière de performance, de chargement et de sécurité sur le système, comme si vous le lanciez pour la première fois. 
 
-### Exécution de la mise à niveau {#performing-the-upgrade}
+### Exécution de la mise à niveau  {#performing-the-upgrade}
 
 Une fois que l’authorisation finale a été donnée par toutes les parties prenantes, il est temps d’exécuter les procédures définies dans le runbook. Les étapes de mise à niveau et de restauration ont été présentées dans la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md)et les étapes d’installation lors de la réalisation d’une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Cela sert de point de référence.
 
