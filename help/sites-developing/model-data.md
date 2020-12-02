@@ -26,7 +26,7 @@ Les informations suivantes sont des suggestions et des commentaires formulés pa
 
 David Nuescheler est l’un des fondateurs de Day Software AG, principal fournisseur de logiciels d’infrastructure de contenu et de gestion de contenu global, racheté par Adobe en 2010. Il occupait également le poste de directeur de la technologie au sein de cette société. Il est aujourd’hui vice-président de la technologie d’entreprise chez Adobe et dirige le développement de l’interface JSR-170, l’API JCR (Java Content Repository), qui est la technologie standard pour la gestion du contenu.
 
-Further updates can also be seen on [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+D&#39;autres mises à jour sont également disponibles sur [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Introduction de David Nuescheler {#introduction-from-david}
 
@@ -42,7 +42,7 @@ J’aimerais combler cette lacune en exprimant mon opinion personnelle sur la fa
 
 ## Sept règles simples {#seven-simple-rules}
 
-### Règle 1 : Les données d&#39;abord, la structure plus tard. Maybe. {#rule-data-first-structure-later-maybe}
+### Règle 1 : Les données d&#39;abord, la structure plus tard. Peut-être. {#rule-data-first-structure-later-maybe}
 
 #### Explication {#explanation-1}
 
@@ -78,7 +78,7 @@ Personnellement, je préfère, dans la majorité des cas, utiliser les conventio
 >
 >La structure d’un référentiel de contenu peut également se répercuter sur les performances. Pour de meilleures performances, le nombre de nœuds enfants associés à des nœuds individuels dans un référentiel de contenu doit généralement être inférieur à 1 000.
 >
->See [How much data can CRX handle?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) pour plus d’informations.
+>Voir [Combien de données CRX peut-il gérer ?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) pour plus d’informations.
 
 #### Exemple {#example-2}
 
@@ -100,11 +100,11 @@ Au début, le fait que je ne stocke pas les « commentaires » avec l’articl
 
 Grâce au modèle de contenu ci-dessus, je peux facilement autoriser l’utilisateur « anonyme » à « créer » des commentaires, tout en le limitant à un accès en lecture seule sur le reste de l’espace de travail.
 
-### Règle n° 3 : Les espaces de travail sont réservés aux méthodes clone(), merge() et update(). {#rule-workspaces-are-for-clone-merge-and-update}
+### Règle n° 3 : Les espaces de travail sont réservés aux méthodes clone(), merge() et update().  {#rule-workspaces-are-for-clone-merge-and-update}
 
 #### Explication {#explanation-3}
 
-If you don&#39;t use `clone()`, `merge()` or `update()` methods in your application a single workspace is probably the way to go.
+Si vous n&#39;utilisez pas les méthodes `clone()`, `merge()` ou `update()` dans votre application, un seul espace de travail est probablement la solution.
 
 La « correspondance des nœuds » est un concept défini dans la spécification JCR. Il s’agit, en fait, de nœuds qui représentent le même contenu dans ce que l’on désigne comme des espaces de travail différents.
 
@@ -131,7 +131,7 @@ N’utilisez pas d’espaces de travail pour les éléments suivants :
 * Contenu distinct pour différentes audiences cibles, telles que public, privé, local, etc.
 * Boîtes de réception pour différents utilisateurs
 
-### Règle n° 4 : Méfiez-vous des SNS (Same Name Siblings) {#rule-beware-of-same-name-siblings}
+### Règle n° 4 : Méfiez-vous des SNS (Same Name Siblings)  {#rule-beware-of-same-name-siblings}
 
 #### Explication {#explanation-4}
 
@@ -157,7 +157,7 @@ au lieu de
 /content/blog[1]/post[2]
 ```
 
-### Règle n° 5 : Les références sont considérées comme dangereuses. {#rule-references-considered-harmful}
+### Règle n° 5 : Les références sont considérées comme dangereuses.  {#rule-references-considered-harmful}
 
 #### Explication {#explanation-5}
 
@@ -173,17 +173,17 @@ Par conséquent, je vais soit modéliser ces références sous la forme de « r
 
 Je pense qu’il est des situations dans lesquelles il est impossible qu’un système fonctionne si une référence est « pendouillante ». Cependant, il ne me vient, en ce moment, aucun exemple simple qui pourrait illustrer ce type de situation.
 
-### Rule #6: Files are files. {#rule-files-are-files}
+### Règle #6 : Les fichiers sont des fichiers. {#rule-files-are-files}
 
 #### Explication {#explanation-6}
 
-If a content model exposes something that even remotely *smells* like a file or a folder I try to use (or extend from) `nt:file`, `nt:folder` and `nt:resource`.
+Si un modèle de contenu expose quelque chose qui sent *à distance* comme un fichier ou un dossier que j&#39;essaie d&#39;utiliser (ou d&#39;étendre à) `nt:file`, `nt:folder` et `nt:resource`.
 
 Avec l’expérience, j’ai constaté que de nombreuses applications génériques autorisaient implicitement une interaction avec nt:folder et nt:files, et savaient comment traiter et afficher ces événements s’ils étaient enrichis de méta-informations supplémentaires. Par exemple, une interaction directe avec des implémentations de serveurs de fichiers, comme CIFS ou WebDAV au-dessus de JCR, deviennent implicites.
 
-I think as good rule of thumb one could use the following: If you need to store the filename and the mime-type then `nt:file`/ `nt:resource` is a very good match. Si plusieurs « fichiers » sont possibles, nt:folder constitue l’emplacement de stockage idéal.
+Je pense qu&#39;en règle générale, on pourrait utiliser ce qui suit : Si vous devez stocker le nom de fichier et le type mime, `nt:file`/ `nt:resource` correspond très bien. Si plusieurs « fichiers » sont possibles, nt:folder constitue l’emplacement de stockage idéal.
 
-Si vous devez ajouter des méta-informations pour votre ressource (une propriété « description » ou « auteur », par exemple), étendez `nt:resource` et non `nt:file`. I rarely extend nt:file and frequently extend `nt:resource`.
+Si vous devez ajouter des méta-informations pour votre ressource (une propriété « description » ou « auteur », par exemple), étendez `nt:resource` et non `nt:file`. J&#39;étend rarement nt:file et j&#39;étend fréquemment `nt:resource`.
 
 #### Exemple {#example-6}
 
@@ -203,7 +203,7 @@ Bien qu’il existe certainement des scénarios dans lesquels l’utilisation d�
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### Règle n° 7 : Les ID, c’est le mal ! {#rule-ids-are-evil}
+### Règle n° 7 : Les ID, c’est le mal !  {#rule-ids-are-evil}
 
 #### Explication {#explanation-7}
 
@@ -215,7 +215,7 @@ Il est vrai que certains nœuds ont besoin d’une identification stable tout au
 
 Gardez également à l’esprit que les éléments peuvent être identifiés par un chemin d’accès et, autant il est judicieux d’utiliser des « liens symboliques » plutôt que des liens matériels dans un système de fichiers UNIX, autant l’utilisation d’un chemin d’accès semble logique dans la plupart des applications pour faire référence à un nœud cible.
 
-More importantly, it is **mix**:referenceable which means that it can be applied to a node at the point in time when you actually need to reference it.
+Plus important encore, il est **mix**:referenceable, ce qui signifie qu’il peut être appliqué à un noeud au moment où vous devez le référencer.
 
 Dès lors, ce n’est pas parce que vous aimeriez être en mesure de référencer un nœud de type « Document » que votre type de nœud « Document » doit s’étendre de manière statique depuis mix:referenceable, car il peut être ajouté de façon dynamique à n’importe quelle instance du « Document ».
 
