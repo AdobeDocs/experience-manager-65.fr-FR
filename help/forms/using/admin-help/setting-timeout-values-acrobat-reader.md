@@ -26,7 +26,7 @@ Lorsque vous travaillez sur de nombreux fichiers PDF dans les extensions d’Acr
 
 vous pouvez définir cette valeur dans Administration Console. Cliquez sur Paramètres > Paramètres de Core System > Configurations, puis indiquez une valeur dans le champ Délai par défaut avant suppression du document.
 
-**Délai d’AEM des formulaires User Manager :** Cette valeur peut être définie en modifiant le fichier config.xml. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration, puis sur Exporter. Ouvrez le fichier config.xml exporté, puis modifiez les lignes ci-après de la façon suivante :
+**Délai d’AEM des formulaires User Manager :** cette valeur peut être définie en modifiant le fichier config.xml. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration, puis sur Exporter. Ouvrez le fichier config.xml exporté, puis modifiez les lignes ci-après de la façon suivante :
 
 &lt;entry key= &quot;assertionValidityInMinutes&quot; value= &quot;600&quot;/>
 
@@ -34,4 +34,4 @@ vous pouvez définir cette valeur dans Administration Console. Cliquez sur Param
 
 Enregistrez le fichier config.xml, puis réimportez-le dans Administration Console.
 
-**Délai d’expiration de la session du serveur d’applications :** Cette valeur peut être définie sur le serveur d’applications. Pour plus d’informations, consultez la documentation de votre serveur d’applications.
+**Délai d’expiration de session du serveur d’applications :** cette valeur peut être définie sur le serveur d’applications. Pour plus d’informations, consultez la documentation de votre serveur d’applications.
