@@ -24,18 +24,18 @@ ht-degree: 52%
 Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
 1. Connectez-vous au CRXDE Lite en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Create a folder named `ws`at `/apps`, if it does not exist. Cliquez sur **[!UICONTROL Enregistrer tout]**.
-1. Browse to `/apps/ws`, and navigate to the **[!UICONTROL Access Control]** tab.
-1. In the **[!UICONTROL Access Control]** list, click **[!UICONTROL +]** to add a new entry. Cliquez de nouveau sur **[!UICONTROL +]**.
-1. Search and select the **PERM_WORKSPACE_USER** Principal.
+1. Créez un dossier nommé `ws`à `/apps`, s&#39;il n&#39;existe pas. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Accédez à `/apps/ws` et accédez à l&#39;onglet **[!UICONTROL Contrôle d&#39;accès]**.
+1. Dans la liste **[!UICONTROL Contrôle d&#39;accès]**, cliquez sur **[!UICONTROL +]** pour ajouter une nouvelle entrée. Cliquez de nouveau sur **[!UICONTROL +]**.
+1. Recherchez et sélectionnez l&#39;entité de sécurité **PERM_WORKSPACE_USER**.
 
    ![Sélectionnez l’entité de sécurité PERM_WORKSPACE_USER dans le cadre des étapes génériques de personnalisation de Workspace HTML](assets/perm_workspace_user.png)
 
-1. Give `jcr:read` privilege to the Principal.
+1. Attribuez le privilège `jcr:read` à l&#39;entité de sécurité.
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
-1. Copy the `GET.jsp` and `html.jsp`files from the `/libs/ws`folder to the `/apps/ws` folder.
-1. Copiez le `/libs/ws/locales` dossier dans le `/apps/ws` dossier. Cliquez sur **[!UICONTROL Enregistrer tout]**.
-1. Update the references and relative paths in the `GET.jsp` file, as shown below, and click **[!UICONTROL Save all]**.
+1. Copiez les fichiers `GET.jsp` et `html.jsp`du dossier `/libs/ws`dans le dossier `/apps/ws`.
+1. Copiez le dossier `/libs/ws/locales` dans le dossier `/apps/ws`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Mettez à jour les références et les chemins relatifs dans le fichier `GET.jsp`, comme indiqué ci-dessous, puis cliquez sur **[!UICONTROL Enregistrer tout]**.
 
    ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -43,11 +43,11 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
 1. Procédez comme suit pour des personnalisations CSS :
 
-   1. Navigate to the `/apps/ws` folder and create a new folder named `css`.
+   1. Accédez au dossier `/apps/ws` et créez un nouveau dossier nommé `css`.
 
    1. Dans le dossier `css`,  , créez un fichier nommé `newStyle.css`.
 
-   1. Open `/apps/ws/html`.jsp and change from
+   1. Ouvrez `/apps/ws/html`.jsp et changez de
 
    ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
@@ -80,11 +80,11 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
 1. Procédez comme suit :
 
-   1. Create a folder named `js`at `/apps/ws`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+   1. Créez un dossier nommé `js`à `/apps/ws`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-   1. Create a folder named `libs`at `/apps/ws/js`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+   1. Créez un dossier nommé `libs`à `/apps/ws/js`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-   1. Create a folder named `jqueryui`at `/apps/ws/js/libs`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+   1. Créez un dossier nommé `jqueryui`à `/apps/ws/js/libs`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
    1. Copiez `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` dans `/apps/ws/js/libs/jqueryui`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
@@ -96,7 +96,7 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
    1. Copiez `/libs/ws/js/main.js` dans `/apps/ws/js/main.js`.
 
-   1. Copy /libs/ws/js/registry.js to `/apps/ws/js/registry.js`.
+   1. Copiez /libs/ws/js/registry.js dans `/apps/ws/js/registry.js`.
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**, effacez le cache et actualisez l’espace de travail AEM Forms.
 
