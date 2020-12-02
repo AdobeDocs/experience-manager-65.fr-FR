@@ -26,28 +26,28 @@ Dans l’interface utilisateur de création de correspondance, les utilisateurs 
 
 Pour éviter l’utilisation non autorisée de ces données, les entreprises peuvent ajouter un filigrane à l’aperçu PDF. Le filigrane par défaut, « APERÇU », apparaît sur le PDF.
 
-To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://&#39;[server]:[port]&#39;/system/console/configMgr.
+Pour activer le filigrane dans la prévisualisation PDF, sélectionnez l&#39;option **[!UICONTROL Appliquer le filigrane]** Pendant la Prévisualisation dans **[!UICONTROL Configurations de Correspondence Management]** à l&#39;adresse https://&#39;[server]:[port]&#39;/system/console/configMgr.
 
 ![filigrane par défaut](assets/default-watermark.png)
 
 Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’apparence du filigrane :
 
-## Personnalisation du filigrane dans l’aperçu PDF dans l’interface utilisateur de création de correspondance {#customizewatermark-}
+## Personnalisation du filigrane dans l’aperçu PDF dans l’interface utilisateur de création de correspondance  {#customizewatermark-}
 
-1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named **[!UICONTROL previewwatermark]** with path/structure similar to the previewwatermark folder in the libs folder:
+1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
+1. Dans le dossier d’applications, créez un dossier nommé **[!UICONTROL previewwatermark]** avec un chemin/une structure similaires au dossier previewwatermark dans le dossier libs :
 
-   1. Right-click the **previewwatermark** folder at the following path and select **Overlay Node**:
+   1. Cliquez avec le bouton droit sur le dossier **previewwatermark** à l’emplacement suivant et sélectionnez **Noeud d’incrustation** :
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/configFiles/previewwatermark
+      **Chemin:** /libs/fd/cm/configFiles/previewwatermark
 
-      **Emplacement de l’incrustation :** /apps/
+      **Emplacement de l’incrustation:** /apps/
 
-      **Faire correspondre les types de noeud :** Coché
+      **Faire correspondre les types de noeud:** coché
 
       >[!NOTE]
       >
@@ -60,11 +60,11 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
       >    * Configurez un feature pack
 
 
-   1. Cliquez sur **OK**, puis sur **Enregistrer tout**. The **[!UICONTROL previewwatermark]** folder is created in the specified path.
+   1. Cliquez sur **OK**, puis sur **Enregistrer tout**. Le dossier **[!UICONTROL previewwatermark]** est créé dans le chemin d’accès spécifié.
 
 
 
-1. Copy and paste the ddx file from &quot;/libs/fd/cm/configFiles/previewwatermark&quot; folder to &quot;/apps/fd/cm/configFiles/previewwatermark&quot; folder and click **[!UICONTROL Save All]**.
+1. Copiez et collez le fichier ddx du dossier &quot;/libs/fd/cm/configFiles/previewwatermark&quot; dans le dossier &quot;/apps/fd/cm/configFiles/previewwatermark&quot;, puis cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Apportez les modifications souhaitées dans le fichier ddx sous /apps/fd/cm/configFiles/previewwatermark/.
 
    ```xml
@@ -82,7 +82,7 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
    </DDX>
    ```
 
-   For information on customizing the watermark appearance, text, and alignment, see Adding and removing watermarks and backgrounds in the [Assembler Service and DDX Reference](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) document.
+   Pour plus d’informations sur la personnalisation de l’aspect, du texte et de l’alignement du filigrane, voir Ajoute et suppression des filigranes et des arrière-plans dans le document [Service Assembler et référence DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >
