@@ -41,7 +41,7 @@ Pour accéder à cet assistant :
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. The **Next** button brings you to the **Configure** step of the wizard. Ici, vous pouvez ajouter/supprimer des langues et sélectionner une méthode de traduction.
+1. Le bouton **Suivant** vous amène à l&#39;étape **Configurer** de l&#39;Assistant. Ici, vous pouvez ajouter/supprimer des langues et sélectionner une méthode de traduction.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
@@ -49,7 +49,7 @@ Pour accéder à cet assistant :
    >
    >Par défaut, il n’y a qu’un seul paramètre de traduction. Pour pouvoir sélectionner d’autres paramètres, vous devez d’abord configurer les configurations cloud. Voir [Configuration de la structure d’intégration de traduction](/help/sites-administering/tc-tic.md).
 
-1. The **Next** button brings you to the **Translate** step of the wizard. Vous pouvez ici choisir entre créer uniquement la structure, créer un nouveau projet de traduction ou ajouter à un projet de traduction existant.
+1. Le bouton **Suivant** vous amène à l&#39;étape **Traduire** de l&#39;Assistant. Vous pouvez ici choisir entre créer uniquement la structure, créer un nouveau projet de traduction ou ajouter à un projet de traduction existant.
 
    >[!NOTE]
    >
