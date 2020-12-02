@@ -20,7 +20,7 @@ ht-degree: 7%
 
 # Tutoriels {#tutorials}
 
-Ce sont des exemples qui aident à apprendre et à travailler avec AEM 6.1 Cadre de composantes [sociales des communautés (FSC)](scf.md).
+Voici quelques exemples qui vous aideront à apprendre et à travailler avec AEM 6.1 Communautés [cadre de composants sociaux (SCF)](scf.md).
 
 ## Personnalisation côté client {#client-side-customization}
 
@@ -36,7 +36,7 @@ Voir également :
 
 ## Personnalisation côté serveur {#server-side-customization}
 
-Voir aussi Personnalisation [côté serveur](server-customize.md)SCF.
+Voir aussi [personnalisation côté serveur SCF](server-customize.md).
 
 Un exemple de code est disponible dans le référentiel [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) :
 
@@ -62,13 +62,13 @@ Un exemple de code est disponible dans le référentiel [Adobe Marketing Cloud G
 
 ## Utilisateurs de la démonstration {#demo-users}
 
-Le package d’exemples de Geometrixx inclut des utilisateurs de démonstration. Il existe souvent une différence d&#39;expérience entre être un visiteur (non connecté) ou un membre (connecté) et, tant que les exemples de Geometrixx restent installés, vous pouvez utiliser ces utilisateurs pour simuler un état connecté lors de l&#39;exploration avec le guide [Composants de la](components-guide.md)communauté.
+Le package d’exemples de Geometrixx inclut des utilisateurs de démonstration. Il existe souvent une différence d&#39;expérience entre être un visiteur (non connecté) ou un membre (connecté) et, tant que les Geometrixx exemples de paquets restent installés, vous pouvez utiliser ces utilisateurs pour simuler un état connecté lors de l&#39;exploration avec le [guide des composants de la communauté](components-guide.md).
 
-Pour une liste complète des utilisateurs de la démonstration, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Sécurité > Utilisateurs]**&#x200B;à l’aide du rail. Vous pouvez également utiliser la console [de](http://localhost:4502/useradmin) sécurité de l’interface utilisateur classique pour gérer les utilisateurs et les groupes.
+Pour une liste complète des utilisateurs de la démonstration, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Sécurité > Utilisateurs]** à l&#39;aide du rail. Ou utilisez l’interface utilisateur classique [console de sécurité](http://localhost:4502/useradmin) pour gérer les utilisateurs et les groupes.
 
-Si un site [communautaire a été créé](getting-started.md), il est possible d’affecter des utilisateurs de démonstration à ses groupes [d’utilisateurs](users.md)communautaires.
+Si un site de la communauté [a été créé](getting-started.md), il est possible d&#39;affecter des utilisateurs de démonstration à ses [groupes d&#39;utilisateurs de la communauté](users.md).
 
-***ID* utilisateur / *mot de passe***:
+***user id* /  *password*** :
 
 * aaron.mcdonald@mailinator.com / mot de passe
 * emily.andrews@mailinator.com / mot de passe
