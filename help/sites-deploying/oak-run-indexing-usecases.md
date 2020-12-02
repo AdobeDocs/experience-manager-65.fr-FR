@@ -31,7 +31,7 @@ Les principaux avantages de l&#39;utilisation de l&#39;approche de commande de l
 
 Les sections suivantes fournissent des échantillons de commande. La commande d’index oak-run prend en charge toutes les configurations NodeStore et BlobStore. Les exemples fournis ci-dessous concernent les configurations avec FileDataStore et SegmentNodeStore.
 
-## Cas d’utilisation 1 – Contrôle de cohérence de l’index {#usercase1indexconsistencycheck}
+## Cas d’utilisation 1 – Contrôle de cohérence de l’index  {#usercase1indexconsistencycheck}
 
 Il s’agit d’un cas d’utilisation lié à l’altération d’index. Dans certains cas, il s’avérait impossible de déterminer les index qui étaient altérés. C’est pourquoi Adobe a développé des outils qui :
 
@@ -39,13 +39,13 @@ Il s’agit d’un cas d’utilisation lié à l’altération d’index. Dans c
 1. peuvent être utilisés même si AEM n’est pas accessible ;
 1. sont faciles à utiliser.
 
-Checking for corrupt indexes can be performed via `--index-consistency-check` operation:
+La vérification des index corrompus peut être effectuée par l&#39;intermédiaire de l&#39;opération `--index-consistency-check` :
 
 ```shell
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-consistency-check
 ```
 
-This will generate a report in `indexing-result/index-consistency-check-report.txt`. Vous trouverez, ci-dessous, un exemple de rapport :
+Cela générera un rapport dans `indexing-result/index-consistency-check-report.txt`. Vous trouverez, ci-dessous, un exemple de rapport :
 
 ```
 Valid indexes :
@@ -99,7 +99,7 @@ Vous trouverez, ci-dessous, un exemple d’utilisation pratique des commandes :
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-info --index-definitions --index-dump
 ```
 
-The reports would be generated in `indexing-result/index-info.txt` and `indexing-result/index-definitions.json`
+Les rapports seraient générés dans `indexing-result/index-info.txt` et `indexing-result/index-definitions.json`
 
 Les mêmes informations sont, en outre, disponibles via la console web et font partie du fichier zip de vidage de la configuration. Elles sont accessibles à l’emplacement suivant :
 
@@ -111,7 +111,7 @@ Cet outil permet de collecter rapidement toutes les informations requises concer
 
 ## Cas d’utilisation 3 – Réindexation {#usecase3reindexing}
 
-En fonction des [scénarios](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), une réindexation doit être effectuée dans certains cas. Currently the reindexing is done by setting the `reindex` flag to `true` in the index definition node via CRXDE or via the Index Manager user interface. Une fois cet indicateur défini, la réindexation s’opère de façon asynchrone.
+En fonction des [scénarios](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), une réindexation doit être effectuée dans certains cas. Actuellement, la réindexation est effectuée en définissant l&#39;indicateur `reindex` sur `true` dans le noeud de définition d&#39;index via CRXDE ou via l&#39;interface utilisateur d&#39;Index Manager. Une fois cet indicateur défini, la réindexation s’opère de façon asynchrone.
 
 Quelques observations concernant la réindexation :
 
@@ -144,7 +144,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 Cela présente les avantages suivants :
 
 * Incidence minimale sur les instances AEM en cours d’exécution. La plupart des lectures peuvent être effectuées à partir de serveurs secondaires et les activités de traversée requises pour la réindexation n’ont pas de répercussions négatives sur les caches AEM en cours d’exécution.
-* Users can also provide a JSON of a new or updated index via the `--index-definitions-file` option.
+* Les utilisateurs peuvent également fournir un JSON d’un index nouveau ou mis à jour via l’option `--index-definitions-file`.
 
 ### Réindexation – SegmentNodeStore {#reindexsegmentnodestore}
 
@@ -152,7 +152,7 @@ Pour les installations `SegmentNodeStore`, la réindexation peut être effectué
 
 #### Réindexation en ligne – SegmentNodeStore {#onlinereindexsegmentnodestore}
 
-Follow the established way where reindexing is done via setting `reindex` flag.
+Suivez la méthode établie pour réindexer en définissant l&#39;indicateur `reindex`.
 
 #### Réindexation en ligne – SegmentNodeStore – L’instance AEM est en cours d’exécution {#onlinereindexsegmentnodestoretheaeminstanceisrunning}
 
@@ -171,7 +171,7 @@ Ces tâches sont notamment les suivantes :
 
 Dans ce cas, il n’est pas nécessaire d’arrêter le serveur AEM, ni de provisionner une nouvelle instance. Cependant, comme l’indexation implique la traversée de l’ensemble du référentiel, cela augmentera la charge d’E/S sur l’installation, ce qui aura des répercussions négatives sur les performances d’exécution.
 
-#### Réindexation en ligne – SegmentNodeStore – L’instance AEM est arrêtée {#onlinereindexsegmentnodestoreaeminstanceisdown}
+#### Réindexation en ligne – SegmentNodeStore – L’instance AEM est arrêtée  {#onlinereindexsegmentnodestoreaeminstanceisdown}
 
 Pour les installations `SegmentNodeStore`, la réindexation peut être effectuée au moyen d’une seule commande oak-run. Cependant, l’instance AEM doit être arrêtée.
 
@@ -183,12 +183,12 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 À la différence de la méthode décrite ci-dessus, la création du point de contrôle et l’importation de l’index sont, dans ce cas, effectuées automatiquement. L’inconvénient est qu’AEM doit être arrêté pendant le processus.
 
-#### Réindexation hors-bande – SegmentNodeStore {#outofbandreindexsegmentnodestore}
+#### Réindexation hors-bande – SegmentNodeStore  {#outofbandreindexsegmentnodestore}
 
 Dans ce scénario, vous pouvez effectuer la réindexation sur une configuration clonée afin de réduire l’impact sur l’instance AEM en cours d’exécution :
 
-1. Créez le point de contrôle au moyen d’une opération JMX. Pour ce faire, vous pouvez accéder à la [Console JMX](/help/sites-administering/jmx-console.md) et rechercher `CheckpointManager`. Then, click on the **createCheckpoint(long p1)** operation using a high value for expiration in seconds (for example, **2592000**).
-1. Copy the `crx-quickstart` folder to a new machine
+1. Créez le point de contrôle au moyen d’une opération JMX. Pour ce faire, vous pouvez accéder à la [Console JMX](/help/sites-administering/jmx-console.md) et rechercher `CheckpointManager`. Cliquez ensuite sur l’opération **createCheckpoint(long p1)** en utilisant une valeur élevée pour l’expiration en secondes (par exemple, **2592000**).
+1. Copier le dossier `crx-quickstart` sur un nouvel ordinateur
 1. Effectuez la réindexation via la commande d’index oak-run.
 
 1. Copiez les fichiers d’index générés sur le serveur AEM.
@@ -207,7 +207,7 @@ Oak-run permet à présent de fournir des définitions d’index au format JSON 
 
 Le processus dont vous devez tenir compte pour ce scénario d’utilisation est le suivant :
 
-1. A developer would update the index definitions on a local instance and then generate an index definition JSON file via the `--index-definitions` option
+1. Un développeur met à jour les définitions d&#39;index sur une instance locale, puis génère un fichier JSON de définition d&#39;index via l&#39;option `--index-definitions`
 
 1. Le fichier JSON mis à jour est ensuite donné à l’administrateur système.
 1. L’administrateur système suit la méthode hors-bande et prépare l’index sur une autre installation.
