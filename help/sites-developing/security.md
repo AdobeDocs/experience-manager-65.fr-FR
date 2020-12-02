@@ -22,7 +22,7 @@ ht-degree: 76%
 
 La sécurité des applications débute lors de la phase de développement. Adobe recommande d’appliquer les méthodes de sécurité suivantes.
 
-## Utilisation de la session de requête {#use-request-session}
+## Utilisation de la session de requête  {#use-request-session}
 
 Conformément au principe des privilèges allégés, l&#39;Adobe recommande que chaque accès au référentiel soit effectué en utilisant la session liée à la demande de l&#39;utilisateur et au contrôle d&#39;accès approprié.
 
@@ -42,7 +42,7 @@ Il est important que vous adaptiez cette configuration à vos besoins de sécuri
 >
 >Il est vivement conseillé de toujours accéder à l’API de protection XSS en utilisant l’interface [XSSAPI fournie par AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
-Additionally, a web application firewall, such as [mod_security for Apache](https://www.modsecurity.org), can provide reliable, central control over the security of the deployment environment and protect against previously undetected cross-site scripting attacks.
+De plus, un pare-feu d&#39;application Web, tel que [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle central fiable sur la sécurité de l&#39;environnement de déploiement et protéger contre les attaques de script intersite non détectées précédemment.
 
 ## Accès aux informations de service cloud {#access-to-cloud-service-information}
 
@@ -58,9 +58,9 @@ Le module webservicesupport enregistre des statistiques et des informations de c
 
 Avec les autorisations par défaut :
 
-* Environnement de l’auteur : `read` for `contributors`
+* Environnement de l’auteur : `read` pour `contributors`
 
-* Environnement de publication : `read` for `everyone`
+* Environnement de publication : `read` pour `everyone`
 
 ## Protection contre les attaques par falsification de requête intersite {#protect-against-cross-site-request-forgery-attacks}
 
