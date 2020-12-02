@@ -166,7 +166,7 @@ Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie est stocké dans le paramètre <code>category=</code>.</p> <p>En tant que telles, les définitions zone réactive/zone cliquable sont des paires. Autrement dit, une valeur de SKU et une variable supplémentaires appelée « <code>categoryId</code> ». Les paires obtenues sont les suivantes :</p>
+    </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie est stocké dans le paramètre <code>category=</code>.</p> <p>En tant que telles, les définitions zone réactive/zone cliquable sont des paires. Autrement dit, une valeur de SKU et une variable supplémentaire appelée « <code>categoryId</code> ». Les paires obtenues sont les suivantes :</p>
     <ul>
      <li><p>Le SKU est <strong><code>305466</code></strong> et <code>categoryId</code> est <code>1100004</code>.</p> </li>
      <li><p>Le SKU est <strong><code>310181</code></strong> et <code>categoryId</code> est <strong><code>1100004</code></strong>.</p> </li>
@@ -180,9 +180,9 @@ Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de
 
 Si vous avez déjà chargé les images à utiliser, passez à l’étape suivante, [Création d’ensembles de carrousels](#creating-carousel-sets). Notez que les images utilisées dans le carrousel doivent être chargées une fois que Dynamic Media a été activé.
 
-Pour transférer des bannières d’image, reportez-vous à la section [Téléchargement de ressources](/help/assets/manage-assets.md).
+Pour charger des bannières d’image, voir [Chargement de ressources](/help/assets/manage-assets.md).
 
-## Création d’ensembles de carrousels    {#creating-carousel-sets}
+## Création d’ensembles de carrousels   {#creating-carousel-sets}
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ Pour transférer des bannières d’image, reportez-vous à la section [Téléch
 
    Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant ou en cliquant sur **[!UICONTROL Entrée.]** Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en appuyant sur l’icône Affichage et en sélectionnant **[!UICONTROL Mode Colonnes]**, **[!UICONTROL Mode Carte]** ou **[!UICONTROL Mode Liste.]**
 
-   Pour plus d’informations, reportez-vous à la section [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
+   Pour plus d’informations, voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
 1. Continuez à ajouter des diapositives jusqu’à ce que vous ayez ajouté toutes les images à faire pivoter dans l’ensemble de carrousel.
 1. (En option) Effectuez l’une des actions suivantes :
@@ -242,9 +242,9 @@ Voir [Fragment d’expérience](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
->N’oubliez pas que les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience.
+>N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience.
 >
->Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+>Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 À mesure que vous ajoutez des zones réactives ou des zones cliquables à une image, pensez à enregistrer votre travail. Les options Annuler et Rétablir, proches du coin supérieur droit de la page, sont prises en charge au cours de la session de création/modification actuelle.
 
@@ -287,9 +287,9 @@ Voir aussi [Ajout de zones cliquables](/help/assets/image-maps.md).
 
          * Voir [Identification des variables de zone réactive](#identifying-hotspot-and-image-map-variables), car vous souhaitez peut-être définir ces variables.
          * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur de SKU, entrez la SKU, qui est un identifiant unique pour chaque produit ou service que vous proposez. La valeur de SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
-         * (Optional) If there are other variables within the quick view that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable.]** In the text field, specify an additional variable. Par exemple, category=Mens est une variable ajoutée.
+         * (Facultatif) Si d&#39;autres variables de la vue rapide doivent être utilisées pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique.]** Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, category=Mens est une variable ajoutée.
 
-         * Pour plus d’informations, reportez-vous à la section [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
+         * Pour plus d’informations, voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
    * Appuyez sur **[!UICONTROL Lien hypertexte.]**
 
       * Si vous êtes client AEM Sites, appuyez sur l’icône Sélecteur de site (dossier) pour accéder à une URL.
@@ -300,7 +300,7 @@ Voir aussi [Ajout de zones cliquables](/help/assets/image-maps.md).
 
    Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur (paramètre par défaut recommandé) ou dans le même onglet.
 
-   Pour plus d’informations, reportez-vous à la section [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
+   Pour plus d’informations, voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
    * Appuyez sur **[!UICONTROL Fragment d’expérience.]**
 
@@ -310,20 +310,20 @@ Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
       * Indiquez la largeur et la hauteur du fragment d’expérience tel qu’il apparaît dans la bannière.
 
          >[!NOTE]
-         N’oubliez pas que les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience.
-         Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+         N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience.
+         Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    Vous pouvez également afficher un aperçu de l’apparence de la bannière de carrousel. Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
 
-1. Appuyez sur **[!UICONTROL Enregistrer.]**
+1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
 1. Publiez l’ensemble de carrousel. La publication crée le code intégré ou l’URL que vous pouvez utiliser dans votre page web. Si vous êtes un client AEM Sites, vous pouvez ajouter l’ensemble de carrousel directement dans votre page web.
 
    Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
 
    Reportez-vous à la section [Ajout d’un ensemble de carrousel à la page d’entrée de votre site web](#adding-a-carousel-banner-to-your-website-page).
 
-## Modification d’ensembles de carrousels    {#editing-carousel-sets}
+## Modification d’ensembles de carrousels   {#editing-carousel-sets}
 
 >[!NOTE]
 Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **[!UICONTROL dam-users]**.
@@ -399,7 +399,7 @@ De plus, si vous modifiez une image interactive publiée existante que vous util
 
 Voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) pour savoir comment publier des bannières de carrousel.
 
-## Ajout d’une bannière de carrousel à votre page web    {#adding-a-carousel-banner-to-your-website-page}
+## Ajout d’une bannière de carrousel à votre page web   {#adding-a-carousel-banner-to-your-website-page}
 
 Une fois que vous avez chargé les images de la bannière pour créer un carrousel, ajouté des zones réactives et/ou cliquables à la bannière et publié l’ensemble de carrousel, vous êtes prêt à l’ajouter à votre page web existante.
 
@@ -428,7 +428,7 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code frontal.
 1. Le code frontal charge les données ou le contenu de l’aperçu rapide.
 1. Facultativement, le code frontal convertit les données téléchargées de l’aperçu rapide en une représentation HTML.
-1. Le code frontal affiche une boîte de dialogue ou un panneau modal et effectue le rendu du contenu HTML à l’écran pour l’utilisateur final.
+1. Le code en front-end affiche une boîte de dialogue ou un panneau modal et effectue le rendu du contenu HTML à l’écran pour l’utilisateur final.
 
 Ces appels peuvent ne pas représenter des appels d’API publiques indépendants qui peuvent être appelés par la logique de la page web depuis une étape arbitraire. À la place, il s’agit d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
 
