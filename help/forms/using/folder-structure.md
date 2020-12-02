@@ -18,7 +18,7 @@ ht-degree: 66%
 ---
 
 
-# Présentation de la structure de dossiers {#understanding-the-folder-structure}
+# Présentation de la structure de dossiers  {#understanding-the-folder-structure}
 
 Les composants de l’espace de travail AEM Forms reposent sur une architecture MVC (modèle-vue-contrôleur) utilisant le modèle Backbone. Chaque composant possède un fichier pour :
 
@@ -26,16 +26,16 @@ Les composants de l’espace de travail AEM Forms reposent sur une architecture 
 * Un fichier HTML contrôleur contenant des commandes d’interface.
 * Une vue agissant comme une classe Controller sur le contrôleur.
 
-Les actifs de tous les composants sont placés dans la structure de dossiers décrite ci-dessous. To access the assets, log in to CRXDE Lite and browse to `/libs/ws/js/runtime/`.
+Les actifs de tous les composants sont placés dans la structure de dossiers décrite ci-dessous. Pour accéder aux ressources, connectez-vous au CRXDE Lite et accédez à `/libs/ws/js/runtime/`.
 
-**models** contient des modèles Backbone.
+**** modelsContient des modèles Backbone.
 
-**vues** contient des vues Backbone.
+**** viewsContient des vues Backbone.
 
-**templates** Contient uniquement les modèles HTML pour les composants.
+**** templatesContient uniquement les modèles HTML pour les composants.
 
-**routes** Contient des routes universelles. Le dossier Templates figurant dans routes contient le code HTML et les références aux composants.
+**** routesContient des routes universelles. Le dossier Templates figurant dans routes contient le code HTML et les références aux composants.
 
-**services** Contient l’interface de service permettant d’appeler les API du serveur Adobe Experience Manager sur le point de terminaison REST.
+**** servicesContient l’interface de service permettant d’appeler les API du serveur Adobe Experience Manager sur le point de terminaison REST.
 
-**util** Contient des utilitaires génériques utilisables par plusieurs composants.
+**** utilContient des utilitaires génériques utilisables par plusieurs composants.
