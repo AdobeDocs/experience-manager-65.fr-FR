@@ -23,7 +23,7 @@ ht-degree: 66%
 
 Vous avez besoin du matériel, des logiciels et licences ci-dessous pour générer et déployer l’application AEM Forms :
 
-## Pour les périphériques Windows {#for-windows-devices}
+## Pour les périphériques Windows  {#for-windows-devices}
 
 * Microsoft Windows 10
 * Microsoft Visual Studio 2015
@@ -38,11 +38,11 @@ Vous avez besoin du matériel, des logiciels et licences ci-dessous pour génér
 * Certificat d’entreprise pour la distribution d’applications iOS en interne
 * Apple iPad avec iOS 8.4 ou version ultérieure
 
-## Pour périphériques Android {#for-android-devices}
+## Pour périphériques Android  {#for-android-devices}
 
-* Android Development Toolkit (ADT bundle) that can be downloaded from [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
+* Android Development Toolkit (lot ADT) peut être téléchargé à partir de [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * Si l’environnement est configuré sur un système MAC, ADT doit être installé dans le dossier Applications.
-* If the ADT is installed in any other location on MAC, or if the environment is set up on a Windows system, the ADT SDK path needs to be updated in `local.properties` file that is available in `src\android` folder in the extracted the source archive `mobileworkspace-src.zip`. Dans ce fichier, pointez la variable `sdk.dir` vers l’emplacement de ADT SDK sur votre bureau.
+* Si l’outil ADT est installé à un autre emplacement sur MAC ou si l’environnement est configuré sur un système Windows, le chemin d’accès du SDK ADT doit être mis à jour dans le fichier `local.properties` disponible dans le dossier `src\android` de l’archive source extraite `mobileworkspace-src.zip`. Dans ce fichier, pointez la variable `sdk.dir` vers l’emplacement de ADT SDK sur votre bureau.
 
 >[!NOTE]
 >
