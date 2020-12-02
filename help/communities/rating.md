@@ -20,21 +20,21 @@ ht-degree: 31%
 
 # Utilisation des évaluations {#using-ratings}
 
-The `Rating` component is used standalone or in conjunction with other Communities features. Ce composant permet aux membres de la communauté connectés d&#39;exprimer leurs opinions en évaluant le contenu.
+Le composant `Rating` est utilisé de manière autonome ou conjointement avec d&#39;autres fonctionnalités de communautés. Ce composant permet aux membres de la communauté connectés d&#39;exprimer leurs opinions en évaluant le contenu.
 
 ## Ajout d’une évaluation à une page {#adding-a-rating-to-a-page}
 
-Pour ajouter un `Rating` composant à une page en mode création, localisez le composant `Communities / Rating` et faites-le glisser vers son emplacement sur une page, par exemple une position relative à la fonction à évaluer par les membres.
+Pour ajouter un composant `Rating` à une page en mode création, recherchez le composant `Communities / Rating` et faites-le glisser sur sa place sur une page, par exemple une position relative à la fonction à évaluer par les membres.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the [required client-side libraries](rating-basics.md#essentials-for-client-side) are included, this is how the `Rating` component will appear.
+Lorsque les [bibliothèques client requises](rating-basics.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Rating` s&#39;affiche.
 
 ![Évaluation](assets/rating.png)
 
 ## Configuration du composant Évaluation {#configuring-rating}
 
-Select the placed `Rating` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Rating` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -42,18 +42,19 @@ Dans l’onglet **[!UICONTROL Textes et libellés]**, indiquez l’identifiant i
 
 ![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Nom]** du compte (*Obligatoire*) Nom simple du compte `Rating` qui identifie de manière unique cette instance. Il doit s’agir d’un nom de nœud valide pour le référentiel.
+**[!UICONTROL Nom]**
+ du compte (*Obligatoire*) Nom simple du compte  `Rating` qui identifie de manière unique cette instance. Il doit s’agir d’un nom de nœud valide pour le référentiel.
 
-## Expérience des visiteurs {#site-visitor-experience}
+## Expérience des visiteurs  {#site-visitor-experience}
 
 ### Membres {#members}
 
 Une seule évaluation est autorisée par membre.  Le membre peut modifier son évaluation à tout moment.
 
-### Anonyme {#anonymous}
+### Anonyme  {#anonymous}
 
 La publication anonyme d’une évaluation n’est pas possible. Les visiteurs du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer.
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Rating Essentials](rating-basics.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Notation des fondamentaux](rating-basics.md) pour les développeurs.
