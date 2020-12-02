@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Fonctionnement du Rapports de traitement {#how-process-reporting-works}
+# Fonctionnement du Rapports de processus {#how-process-reporting-works}
 
 Le Rapports de processus est le module de rapports du AEM Forms on JEE.
 
@@ -33,7 +33,7 @@ Le Rapports de processus se compose des modules suivants :
 * [servlet requête Data](/help/forms/using/process-reporting/process-reporting-architecture.md#p-querydataservlet-service-br-p)
 * [Interface utilisateur du Rapports de processus](/help/forms/using/process-reporting/process-reporting-architecture.md#p-process-reporting-user-interface-br-p)
 
-## Architecture du Rapports de processus {#process-reporting-architecture-br}
+## Architecture de Rapports de processus {#process-reporting-architecture-br}
 
 ![processreportingarchitecture](assets/processreportingarchitecture.png)
 
@@ -43,13 +43,13 @@ Le Rapports de processus se compose des modules suivants :
 
 Le serveur ProcessDataPublisher s&#39;exécute régulièrement sur la base de données AEM Forms et extrait les données qui ont changé depuis la dernière exécution du service. Il publie ensuite les données dans le service Process Data Enregistrement.
 
-Pour plus d’informations sur la configuration du service, voir [Configuration du service](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)ProcessDataPublisher.
+Pour plus d’informations sur la configuration du service, voir [Configurer le service ProcessDataPublisher](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
 
 ### Service ProcessDataStorageProvider {#processdatastorageprovider-service-br}
 
 Le service ProcessDataStorageProvider reçoit les données de processus du service ProcessDataPublisher et les enregistre dans le référentiel Process Rapports.
 
-Pour plus d’informations sur la configuration du service, voir [Configuration du service](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)ProcessDataStorageProvider.
+Pour plus d’informations sur la configuration du service, voir [Configurer le service ProcessDataStorageProvider](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
 
 ### Service OSGi {#osgi-service-br}
 
@@ -75,4 +75,4 @@ Le service utilise ensuite les services OSGi pour obtenir les données de rappor
 
 Vous pouvez créer vos propres rapports personnalisés et les afficher dans l’onglet Rapports personnalisés de l’interface utilisateur du Rapports de processus.
 
-Pour connaître les étapes de création d&#39;un rapport personnalisé, voir Pour créer un rapport personnalisé dans l&#39;article Rapports [personnalisés dans le Rapports](/help/forms/using/process-reporting/process-reporting-custom-reports.md)de processus.
+Pour connaître les étapes de création d&#39;un rapport personnalisé, voir Pour créer un rapport personnalisé dans l&#39;article [Rapports personnalisés dans le Rapports de processus](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
