@@ -24,9 +24,9 @@ La fonction de recherche fonctionne avec d’autres fonctions, comme les forums,
 
 Lors de l’ajout de la possibilité de rechercher des publications faites par des membres de la communauté (le contenu généré par l’utilisateur), il existe deux composants : [Rechercher](#search) et [Résultats de la recherche](#search-results).
 
-The page that includes the `Search Results` component supports both searching and the display of results.
+La page qui inclut le composant `Search Results` prend en charge la recherche et l&#39;affichage des résultats.
 
-The page that includes the `Search` component provides a place to launch a search with results appearing on the `Search Results` page.
+La page qui inclut le composant `Search` permet de lancer une recherche avec les résultats apparaissant sur la page `Search Results`.
 
 La fonction de recherche peut être utilisée avec n’importe quelle autre fonction permettant aux visiteurs et aux membres du site d’afficher du contenu.
 
@@ -34,21 +34,21 @@ La fonction de recherche peut être utilisée avec n’importe quelle autre fonc
 
 ### Ajout du composant Rechercher à une page {#add-search-to-a-page}
 
-Pour ajouter un `Search` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Search` et le faire glisser vers son emplacement sur une page. L’utilisation de `Search` requiert une deuxième page pour `Search Results.`
+Pour ajouter un composant `Search` à une page en mode création, utilisez l&#39;explorateur de composants pour localiser `Communities / Search` et faites-le glisser sur la place d&#39;une page. L&#39;utilisation de `Search` nécessite une deuxième page pour `Search Results.`
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search` component will appear.
+Lorsque la bibliothèque client requise, `cq.social.hbs.search`, est incluse, c&#39;est ainsi que le composant `Search` apparaîtra.
 
 ![add-search](assets/add-search.png)
 
 ### Configuration du composant Rechercher {#configure-the-added-search}
 
-Select the placed `Search` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Search` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![confiter](assets/configure-new.png)
 
-Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are search when a query is entered by a visitor.
+Sous l&#39;onglet **[!UICONTROL Paramètres de recherche]**, indiquez comment les chemins sont recherchés lorsqu&#39;une requête est saisie par un visiteur.
 
 ![paramètres de recherche](assets/search-settings.png)
 
@@ -56,34 +56,35 @@ Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are s
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Page]** de résultats Les résultats apparaîtront sur une page distincte spécifiée à l’aide du navigateur pour sélectionner une page contenant la variable 
+* **[!UICONTROL Page de résultatsLes résultats s&#39;affichent sur une page distincte spécifiée à l&#39;aide du navigateur pour sélectionner une page contenant la variable]**
+ 
 `Search Results` component.
 
 ## Résultats de la recherche {#search-results}
 
 ### Ajout du composant Résultats de la recherche à une page {#add-search-results-to-a-page}
 
-To add a `Search Results` component to a page in author mode, use the component browser to locate
+Pour ajouter un composant `Search Results` à une page en mode création, utilisez l’explorateur de composants pour localiser
 
 * `Communities / Search Results`
 
 et faites-le glisser sur la page. Contrairement au composant Rechercher, la deuxième page n’est pas nécessaire, car les résultats s’affichent sur la même page.
 
-If using Search elsewhere within the website, this one page with `Search Results` may be configured to be the `Result Page` for any or all instances of `Search`.
+Si vous utilisez Search ailleurs dans le site Web, cette page avec `Search Results` peut être configurée pour être la `Result Page` pour toutes les instances de `Search`.
 
-For necessary information, visit [Communities Components Basics](basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](basics.md).
 
-When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search Result` component will appear:
+Lorsque la bibliothèque côté client requise, `cq.social.hbs.search`, est incluse, c&#39;est ainsi que le composant `Search Result` apparaîtra :
 
 ![résultat de la recherche](assets/search-result1.png)
 
 ### Configuration du composant Résultats de la recherche ajouté {#configure-the-added-search-result}
 
-Select the placed `Search Results` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Search Results` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configurer](assets/configure-new.png)
 
-Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify what paths are included in the search when a query is entered by a visitor.
+Sous l&#39;onglet **[!UICONTROL Paramètres des résultats de recherche]**, il est possible de spécifier les chemins inclus dans la recherche lorsqu&#39;une requête est saisie par un visiteur.
 
 ![search-result-settings](assets/search-result-settings.png)
 
@@ -97,4 +98,4 @@ Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Search Essentials](search-implementation.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Recherche d&#39;éléments essentiels](search-implementation.md) à l&#39;intention des développeurs.
