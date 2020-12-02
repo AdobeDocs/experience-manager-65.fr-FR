@@ -44,7 +44,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Ajouter les utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy Blue à AEM Forms. (Voir [Ajoute des utilisateurs](/help/forms/developing/users.md#adding-users).)
+L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy Blue à AEM Forms. (Voir [Ajouter des utilisateurs](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -258,7 +258,7 @@ L&#39;exemple de code suivant supprime un utilisateur nommé Wendy Blue d&#39;AE
 
 ## Début rapide (mode SOAP) : Gestion des utilisateurs et des groupes à l’aide de l’API Java {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
 
-L&#39;exemple de code suivant recherche un utilisateur local et le groupe local auquel l&#39;utilisateur appartient. (See [Managing Users and Groups](/help/forms/developing/users.md#managing-users-and-groups).)
+L&#39;exemple de code suivant recherche un utilisateur local et le groupe local auquel l&#39;utilisateur appartient. (Voir [Gestion des utilisateurs et des groupes](/help/forms/developing/users.md#managing-users-and-groups).)
 
 ```java
  /*
@@ -382,7 +382,7 @@ L&#39;exemple de code suivant recherche un utilisateur local et le groupe local 
 
 ## Début rapide (mode SOAP) : Gestion des rôles et des autorisations à l’aide de l’API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-L&#39;exemple de code suivant affecte le rôle Utilisateur des services à une entité de sécurité, imprime les rôles de l&#39;entité de sécurité, puis supprime le rôle de l&#39;entité de sécurité. Deux services sont appelés pour ce début rapide : le service DirectoryManager et le service AuthorizationManager.(voir [Gestion des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions)).
+L&#39;exemple de code suivant affecte le rôle Utilisateur des services à une entité de sécurité, imprime les rôles de l&#39;entité de sécurité, puis supprime le rôle de l&#39;entité de sécurité. Deux services sont appelés pour ce début rapide : le service DirectoryManager et le service AuthorizationManager.(Voir [Gestion des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 ```java
  /*
@@ -525,7 +525,7 @@ L&#39;exemple de code suivant affecte le rôle Utilisateur des services à une e
 
 ## Début rapide (mode SOAP) : Synchronisation par programmation des utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
-L’exemple de code Java suivant synchronise les utilisateurs à l’aide des API User Management. (Voir Synchronisation [programmatique des utilisateurs](/help/forms/developing/users.md#programmatically-synchronizing-users).)
+L’exemple de code Java suivant synchronise les utilisateurs à l’aide des API User Management. (Voir [Synchronisation par programmation des utilisateurs](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
 ```java
  /*
@@ -634,7 +634,7 @@ L’exemple de code Java suivant synchronise les utilisateurs à l’aide des AP
 
 ## Début rapide (mode SOAP) : Ajouter les utilisateurs à l’aide de l’API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy Blue à AEM Forms. (Voir [Ajoute des utilisateurs](/help/forms/developing/users.md#adding-users).)
+L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy Blue à AEM Forms. (Voir [Ajouter des utilisateurs](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -904,7 +904,7 @@ L’exemple de code suivant crée un groupe nommé AdobeGroup vers AEM Forms. (V
 
 ## Début rapide (mode SOAP) Gestion des préférences Noeuds {#quick-start-soap-mode-managing-preferences-nodes}
 
-Les modèles de code Java suivants gèrent les noeuds de préférences à l’aide des API User Management. (voir Gestion [par programmation des noeuds](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)de préférences).
+Les modèles de code Java suivants gèrent les noeuds de préférences à l’aide des API User Management. ( Voir [Gestion par programmation des noeuds de préférences](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```java
 /*
@@ -1005,9 +1005,9 @@ public class ManagePreferences {
 }
 ```
 
-## Début rapide (mode SOAP) : Gestion par programmation des noeuds de préférences à l’aide de l’API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
+## Début rapide (mode SOAP) : Gestion par programmation des noeuds Preferences à l’aide de l’API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
-Les modèles de code Java suivants gèrent les noeuds de préférences à l’aide des API User Management (voir Gestion [par programmation des noeuds](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)de préférences).
+Les modèles de code Java suivants gèrent les noeuds de préférences en utilisant les API User Management ( voir [Gestion par programmation des noeuds de préférences](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)).
 
 ```java
 /*
