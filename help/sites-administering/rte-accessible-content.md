@@ -11,15 +11,15 @@ ht-degree: 47%
 ---
 
 
-# Configure RTE to create accessible webpages and sites {#configure-rte-for-accessibility}
+# Configurer RTE pour créer des pages Web et des sites accessibles {#configure-rte-for-accessibility}
 
 Adobe Experience Manager prend en charge de nombreuses fonctions d&#39;accessibilité standard, conformément à diverses normes d&#39;accessibilité. En outre, les développeurs peuvent personnaliser ou étendre les fonctionnalités afin de créer du contenu accessible à l’aide de composants Experience Manager qui utilisent l’éditeur de texte enrichi (RTE).
 
 Lors de la conception de pages Web et de l’ajout de contenu aux pages, les développeurs et les auteurs de contenu peuvent utiliser les fonctionnalités du RTE pour fournir des informations relatives à l’accessibilité. Par exemple, ajoutez des informations structurelles au moyen d’en-têtes et d’éléments de paragraphe.
 
-Pour configurer et personnaliser ces fonctionnalités, [configurez les modules externes](#configure-the-plugin-features) RTE pour le composant. For example, the `paraformat` plugin lets you add additional block level semantic elements, including extending the number of heading levels supported beyond the basic `H1`, `H2`, and `H3` provided by default.
+Pour configurer et personnaliser ces fonctionnalités, [configurez les modules externes RTE](#configure-the-plugin-features) pour le composant. Par exemple, le module externe `paraformat` vous permet d’ajouter des éléments sémantiques de niveau bloc supplémentaires, y compris l’extension du nombre de niveaux d’en-tête pris en charge au-delà des niveaux de base `H1`, `H2` et `H3` fournis par défaut.
 
-Le RTE est disponible dans divers composants pour l’interface utilisateur tactile et l’interface utilisateur classique. Cependant, le composant Principal à utiliser RTE est le composant **Texte** disponible pour les deux interfaces. The following images show the RTE with a range of plugins enabled, including `paraformat`:
+Le RTE est disponible dans divers composants pour l’interface utilisateur tactile et l’interface utilisateur classique. Cependant, le composant Principal à utiliser le RTE est le composant **Texte** disponible pour les deux interfaces. Les images suivantes montrent le RTE avec une gamme de plug-ins activés, y compris `paraformat` :
 
 ![Composant de texte (RTE) en mode plein écran dans l’interface utilisateur tactile.](assets/chlimage_1-206.png)
 
@@ -33,18 +33,18 @@ Pour connaître les différences entre les fonctionnalités RTE disponibles dans
 
 ## Configuration des fonctionnalités de module externe {#configure-the-plugin-features}
 
-For the complete instructions to configure the RTE, see [configure the Rich Text Editor](/help/sites-administering/rich-text-editor.md) page. Ceci couvre tous les problèmes, y compris les étapes principales :
+Pour obtenir des instructions complètes sur la configuration du RTE, voir [configuration de la page Editeur de texte enrichi](/help/sites-administering/rich-text-editor.md). Ceci couvre tous les problèmes, y compris les étapes principales :
 
 * [Modules externes et fonctionnalités](/help/sites-administering/rich-text-editor.md#aboutplugins).
 * [Emplacements de configuration](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
 * [Activation d’un module externe et configuration de la propriété features](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 * [Configuration d’autres fonctionnalités de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 
-By configuring a plugin within the appropriate `rtePlugins` sub-branch in CRXDE Lite, you can activate either all or specific features for that plugin.
+En configurant un module externe dans la sous-branche `rtePlugins` appropriée du CRXDE Lite, vous pouvez activer toutes les fonctionnalités ou certaines fonctionnalités de ce module externe.
 
 ![CRXDE Lite présentant un exemple de rtePlugin.](assets/chlimage_1-208.png)
 
-### Example - specify paragraph formats available in RTE selection field {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### Exemple : spécifiez les formats de paragraphe disponibles dans le champ de sélection RTE {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 De nouveaux formats de bloc sémantique peuvent être rendus disponibles pour la sélection comme suit :
 
@@ -54,37 +54,37 @@ De nouveaux formats de bloc sémantique peuvent être rendus disponibles pour la
 1. Les formats de paragraphe sont ensuite à la disposition de l’auteur du contenu des champs de sélection dans l’éditeur de texte enrichi. Ils sont accessibles :
 
    * Utilisation de l’icône de sélection de paragraphe dans l’interface utilisateur tactile.
-   * Using the **Format** field (pop-up selector) in the Classic UI.
+   * Utilisation du champ **Format** (sélecteur contextuel) dans l’interface utilisateur classique.
 
 Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, empêchant la création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Ceci garantit une mise en forme nette, de meilleures options pour les utilisateurs qui naviguent avec leurs propres feuilles de style et un contenu correctement structuré.
 
-## Use of the source edit feature {#use-of-the-source-edit-feature}
+## Utilisation de la fonction de modification de la source {#use-of-the-source-edit-feature}
 
-Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d’examiner et d’ajuster le code source HTML créé à l’aide de l’éditeur de texte enrichi. Par exemple, un élément de contenu créé dans l’éditeur de texte enrichi peut nécessiter une mise en forme supplémentaire pour être conforme à la norme WCAG 2.0. Ceci peut s’effectuer avec l’option [Modification de la source](/help/sites-administering/rich-text-editor.md#aboutplugins) de l’éditeur de texte enrichi. You can specify the [ `sourceedit` feature on the `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
+Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d’examiner et d’ajuster le code source HTML créé à l’aide de l’éditeur de texte enrichi. Par exemple, un élément de contenu créé dans l’éditeur de texte enrichi peut nécessiter une mise en forme supplémentaire pour être conforme à la norme WCAG 2.0. Ceci peut s’effectuer avec l’option [Modification de la source](/help/sites-administering/rich-text-editor.md#aboutplugins) de l’éditeur de texte enrichi. Vous pouvez spécifier la fonction [ `sourceedit` dans le module `misctools` ](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
 >Utilisez la fonction `sourceedit` avec prudence. Les fautes de frappe et/ou les fonctions non prises en charge peuvent entraîner d’autres problèmes.
 
-## Ajouter la prise en charge d’un plus grand nombre d’éléments et d’attributs HTML {#add-support-for-more-html-elements-and-attributes}
+## Ajouter la prise en charge d&#39;un plus grand nombre d&#39;éléments et d&#39;attributs HTML {#add-support-for-more-html-elements-and-attributes}
 
 Pour étendre davantage les fonctions d’accessibilité d’AEM, vous pouvez étendre les composants existants (par exemple, les composants **Text** et **Table**) en fonction de l’éditeur de texte enrichi avec des éléments et attributs supplémentaires.
 
-The following procedure illustrates how to extend the **Table** component with a **Caption** element that provides information about a data table to assistive technology users:
+La procédure suivante illustre comment étendre le composant **Table** avec un élément **Caption** qui fournit des informations sur un tableau de données aux utilisateurs de technologies d&#39;assistance :
 
-### Example - add the caption to the Table Properties dialog {#example-adding-the-caption-to-the-table-properties-dialog}
+### Exemple : ajoutez la légende à la boîte de dialogue Propriétés du tableau {#example-adding-the-caption-to-the-table-properties-dialog}
 
-Dans le constructeur de l’élément `TablePropertiesDialog`, ajoutez un champ de saisie de texte supplémentaire utilisé pour modifier la légende. Note that `itemId` must be set to `caption` (i.e. the DOM attribute’s name) to automatically handle its content.
+Dans le constructeur de l’élément `TablePropertiesDialog`, ajoutez un champ de saisie de texte supplémentaire utilisé pour modifier la légende. Notez que `itemId` doit être défini sur `caption` (c’est-à-dire le nom de l’attribut DOM) pour gérer automatiquement son contenu.
 
-In **Table**, set explicitly set or remove the attribute to/from the DOM element. La valeur est transmise par la boîte de dialogue dans l’objet `config`. Notez que les attributs DOM doivent être définis/supprimés à l’aide des méthodes `CQ.form.rte.Common` correspondantes (`com` est un raccourci de `CQ.form.rte.Common`) pour éviter les pièges courants des mises en œuvre de navigateur.
+Dans **Table**, définissez explicitement ou supprimez l&#39;attribut de/vers l&#39;élément DOM. La valeur est transmise par la boîte de dialogue dans l’objet `config`. Notez que les attributs DOM doivent être définis/supprimés à l’aide des méthodes `CQ.form.rte.Common` correspondantes (`com` est un raccourci de `CQ.form.rte.Common`) pour éviter les pièges courants des mises en œuvre de navigateur.
 
 >[!NOTE]
 >
 >Cette procédure ne convient qu’à l’interface utilisateur de Classic.
 
-### Exemple : créer du code HTML accessible lors de l’utilisation de l’accent dans le texte {#create-accessible-html-for-text}
+### Exemple : créez du code HTML accessible lors de l’utilisation de l’accent dans le texte {#create-accessible-html-for-text}
 
-RTE peut utiliser `strong` des balises et `em` à la place de `b` et `i`. Ajoutez le noeud suivant en tant que frère aux noeuds `uiSettings` et `rtePlugins` aux noeuds de la boîte de dialogue.
+RTE peut utiliser les balises `strong` et `em` à la place de `b` et `i`. Ajoutez le noeud suivant en tant que frère aux noeuds `uiSettings` et `rtePlugins` dans la boîte de dialogue.
 
 ```HTML
 <htmlRules jcr:primaryType="nt:unstructured">
@@ -148,7 +148,7 @@ RTE peut utiliser `strong` des balises et `em` à la place de `b` et `i`. Ajoute
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
 
-1. Add the following code at the end of the `transferConfigToTable` method:
+1. Ajoutez le code suivant à la fin de la méthode `transferConfigToTable` :
 
    ```
    /**
@@ -183,15 +183,15 @@ RTE peut utiliser `strong` des balises et `em` à la place de `b` et `i`. Ajoute
    }
    ```
 
-1. Save your changes using **Save All…**
+1. Enregistrez vos modifications à l&#39;aide de **Enregistrer tout..**.
 
 >[!NOTE]
 >
->Le champ de texte brut n’est pas le seul type d’entrée autorisé pour la valeur de l’élément de légende. Vous pouvez utiliser n’importe quel widget ExtJS qui fournit la valeur de la légende par le biais de sa `getValue()` méthode.
+>Le champ de texte brut n’est pas le seul type d’entrée autorisé pour la valeur de l’élément de légende. Vous pouvez utiliser n’importe quel widget ExtJS qui fournit la valeur de la légende par le biais de sa méthode `getValue()`.
 >
 >Pour ajouter des fonctionnalités de modification pour d’autres éléments et attributs, assurez-vous à la fois :
 >
->* The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).
+>* La propriété `itemId` de chaque champ correspondant est définie sur le nom de l’attribut DOM approprié (`TablePropertiesDialog`).
 >* Que l’attribut est défini et/ou supprimé sur l’élément DOM de manière explicite (`Table`).
 
 
