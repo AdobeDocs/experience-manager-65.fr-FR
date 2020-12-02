@@ -4,13 +4,13 @@ description: Notes de mise à jour spécifiques à Adobe Experience Manager 6
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 69%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# AEM Communities release notes {#aem-communities-release-notes}
+# AEM Communities notes de mise à jour {#aem-communities-release-notes}
 
 Lisez ce qui suit pour connaître les améliorations d’AEM Communities depuis la version 6.4. Pour en savoir plus sur les nouvelles fonctionnalités, consultez le [Guide de l’utilisateur d’AEM Communities 6.5](https://helpx.adobe.com/fr/experience-manager/6-4/communities/user-guide.html).
 
@@ -20,17 +20,18 @@ Pour obtenir la version la plus récente, consultez la section [Déploiement de 
 
 ### Améliorations de l’engagement communautaire {#enhancements-to-community-engagement}
 
-**@Mentions support** AEM Communities permet maintenant aux utilisateurs enregistrés de marquer (mentionner) d&#39;autres membres enregistrés pour attirer leur attention, dans Contenu généré par l&#39;utilisateur. Les membres balisés (mentionnés) sont ensuite notifiés, avec un lien profond vers le Contenu généré par l’utilisateur correspondant. Les utilisateurs peuvent toutefois choisir d’activer/de désactiver les notifications par e-mail et web.
+**@Mentions**
+supportLes communautés AEM permettent désormais aux utilisateurs enregistrés de baliser (mentionner) d&#39;autres membres enregistrés pour attirer leur attention, dans le contenu généré par l&#39;utilisateur. Les membres balisés (mentionnés) sont ensuite notifiés, avec un lien profond vers le Contenu généré par l’utilisateur correspondant. Les utilisateurs peuvent toutefois choisir d’activer/de désactiver les notifications par e-mail et web.
 
 ![Prise en charge des mentions @](assets/at-mentions.png)
 
 Les utilisateurs de la communauté n’ont pas besoin de rechercher leur prénom, leur nom ou leur nom d’utilisateur pour voir si quelqu’un les a contactés ou requiert leur attention. De plus, les auteurs de CGU peuvent demander une réponse à des utilisateurs enregistrés spécifiques pouvant résoudre le problème et ajouter des entrées.
 
-The community administrators need to **Enable Mention** on community components to allow registered users use the functionality on those components.
+Les administrateurs de la communauté doivent **activer la mention** sur les composants de la communauté pour permettre aux utilisateurs enregistrés d&#39;utiliser la fonctionnalité sur ces composants.
 
 **Messagerie de groupe** 
 
-Les membres de la communauté enregistrés peuvent désormais envoyer des messages directs en masse aux groupes via un seul message e-mail, au lieu de renvoyer le même message à chaque membre du groupe. To allow [group messaging](/help/communities/configure-messaging.md), enable both the instances of [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
+Les membres de la communauté enregistrés peuvent désormais envoyer des messages directs en masse aux groupes via un seul message e-mail, au lieu de renvoyer le même message à chaque membre du groupe. Pour autoriser [la messagerie de groupe](/help/communities/configure-messaging.md), activez les deux instances de [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
 
 ![Message de groupe](assets/group-messaging.png)
 
@@ -38,7 +39,7 @@ Les membres de la communauté enregistrés peuvent désormais envoyer des messag
 
 Filtres personnalisés dans la modération en bloc
 
-[Les filtres](/help/communities/moderation.md#custom-filters) personnalisés peuvent désormais être développés et ajoutés à l’interface de modération en bloc.
+[Les ](/help/communities/moderation.md#custom-filters) filtres personnalisés peuvent maintenant être développés et ajoutés à l’interface de modération en bloc.
 
 Un [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) illustrant le filtrage par balises est disponible dans [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter). Ce projet peut être utilisé comme base pour développer des filtres personnalisés analogues.
 
@@ -60,11 +61,11 @@ Communities, à partir de la version AEM 6.5, permet une administration (et une
 
 Les administrateurs de site peuvent créer un groupe à n’importe quel niveau de la hiérarchie et devenir les administrateurs par défaut. Ces administrateurs peuvent ensuite être supprimés par d’autres administrateurs de groupe. Les administrateurs de groupe peuvent gérer leur groupe G1 et créer un sous-groupe imbriqué sous G1.
 
-### Améliorations de l’activation {#enhancements-to-enablement}
+### Améliorations de l’activation  {#enhancements-to-enablement}
 
 **Prise en charge de SCORM 2017.1** 
 
-The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
+La fonctionnalité d’activation des communautés AEM 6.5 prend en charge le moteur de référence d’objet de contenu partagé [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Prise en charge de la navigation par clavier sur les composants d’activation
 * Les composants d’activation (par exemple, Lecture de catalogue et de cours, Affectations, Bibliothèque de fichiers) dans AEM Communities prennent en charge la navigation clavier pour une meilleure accessibilité.
