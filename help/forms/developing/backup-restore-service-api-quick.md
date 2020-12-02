@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Débuts rapides de l’API du service de sauvegarde et de restauration {#backup-and-restore-service-apiquick-starts}
+# Débuts rapides de l&#39;API du service de sauvegarde et de restauration {#backup-and-restore-service-apiquick-starts}
 
 Le Début rapide de l’API Java (SOAP) est disponible pour l’API du service de sauvegarde et de restauration.
 
@@ -33,7 +33,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Passage en mode de sauvegarde à l’aide de l’API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-L&#39;exemple de code Java suivant passe en mode de sauvegarde avec un libellé unique pendant deux heures. Après l’expiration du délai de sauvegarde ou si le mode de sauvegarde est explicitement quitté, le serveur Forms revient à purger les fichiers de l’Enregistrement de Document global. (Voir [Saisie du mode de sauvegarde sur le serveur](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)Forms).
+L&#39;exemple de code Java suivant passe en mode de sauvegarde avec un libellé unique pendant deux heures. Après l’expiration du délai de sauvegarde ou si le mode de sauvegarde est explicitement quitté, le serveur Forms revient à purger les fichiers de l’Enregistrement de Document global. (Voir [Saisie du mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -148,7 +148,7 @@ L&#39;exemple de code Java suivant passe en mode de sauvegarde avec un libellé 
 
 ## Début rapide (mode SOAP) : Quitter le mode de sauvegarde à l’aide de l’API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-L’exemple de code Java suivant montre comment forcer explicitement un Forms Server à quitter le mode de sauvegarde et à revenir à la purge des fichiers de l’Enregistrement de Document global. (voir [Quitter le mode de sauvegarde sur le serveur](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)Forms).
+L’exemple de code Java suivant montre comment forcer explicitement un Forms Server à quitter le mode de sauvegarde et à revenir à la purge des fichiers de l’Enregistrement de Document global. (Voir [Quitter le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*
