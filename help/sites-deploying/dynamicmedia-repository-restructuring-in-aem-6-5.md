@@ -17,9 +17,9 @@ ht-degree: 62%
 ---
 
 
-# Dynamic Media repository restructuring in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
+# Restructuration du référentiel Contenu multimédia dynamique dans AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the Dynamic Media Solution. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme décrit sur la page parente [Restructuration du référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md), les clients qui effectuent la mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer l’effort associé aux modifications du référentiel qui affectent la solution Contenu multimédia dynamique. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
 
 **Avant la mise à niveau future**
 
@@ -29,9 +29,9 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 * [Dynamic Media - Configuration du service cloud YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Divers](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
-## Avant la mise à niveau future {#prior-to-upgrade}
+## Avant la mise à niveau ultérieure {#prior-to-upgrade}
 
-### Custom Adaptive Video encoding configurations  {#custom-adaptive-video-encoding-configurations}
+### Configurations de codage de vidéo adaptative personnalisées {#custom-adaptive-video-encoding-configurations}
 
 <table>
  <tbody>
@@ -48,13 +48,13 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><p>Vous pouvez exécuter le script de migration suivant pour migrer vers le nouvel emplacement :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur d’AEM. Les modifications seront enregistrées au nouvel emplacement.</p> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td>N/A<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Dynamic Media (DMS7) Cloud configuration {#dynamic-media-dms-cloud-configuration}
+### Configuration du cloud de Contenu de média dynamique (DMS7) {#dynamic-media-dms-cloud-configuration}
 
 <table>
  <tbody>
@@ -75,13 +75,13 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
+   <td><strong>Remarques</strong></td>
    <td>N/A</td>
   </tr>
  </tbody>
 </table>
 
-### Dynamic Media (DM Hybrid) Cloud Service configuration {#cloudserviceconfiguration}
+### Configuration du Cloud Service de média dynamique (hybride DM) {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -98,13 +98,13 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><p>Vous pouvez exécuter le script de migration suivant pour vous aligner sur le modèle le plus récent :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
-   <td>N/A<br /> </td>
+   <td><strong>Remarques</strong></td>
+   <td>S/O<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Dynamic Media - YouTube Cloud Service configuration  {#youtubecloudserviceconfiguration}
+### Contenu multimédia dynamique - Configuration du Cloud Service YouTube {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -118,16 +118,16 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Create the YouTube Configuration using the new TouchUI (from <code>/conf</code>) including copying all the Channels from the old location<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce flux de travaux génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une nouvelle configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées à nouveau si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
+   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle interface utilisateur tactile (à partir de <code>/conf</code>), y compris en copiant tous les Canaux de l’ancien emplacement <br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce flux de travaux génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une nouvelle configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées à nouveau si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
-   <td>N/A<br /> </td>
+   <td><strong>Remarques</strong></td>
+   <td>S/O<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Divers {#misc}
+### Divers  {#misc}
 
 <table>
  <tbody>
@@ -144,8 +144,8 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><p>Le client peut exécuter le script de migration ci-dessous.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur d’AEM. Les modifications seront enregistrées au nouvel emplacement.</p> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
-   <td>N/A</td>
+   <td><strong>Remarques</strong></td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
@@ -165,8 +165,8 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td><p>Le client peut exécuter le script de migration ci-dessous.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td>
   </tr>
   <tr>
-   <td><strong>Notes</strong></td>
-   <td>N/A</td>
+   <td><strong>Remarques</strong></td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
