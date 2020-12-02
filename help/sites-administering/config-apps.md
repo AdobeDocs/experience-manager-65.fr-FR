@@ -22,17 +22,17 @@ ht-degree: 60%
 
 Adobe Experience Manager Apps offre la possibilité de mettre à jour le contenu de votre application par les airs (OTA, Over The Air). Le contenu mis à jour est stocké sur l’instance de publication. Pour permettre à l’application sur votre appareil de se connecter à l’instance de publication et de rechercher les mises à jour, l’instance de publication doit être configurée pour autoriser un en-tête de référent vide.
 
-## Configuration d’un en-tête de référent vide {#configuring-empty-referrer-header}
+## Configuration d’un en-tête de référent vide  {#configuring-empty-referrer-header}
 
 Pour configurer le service de filtrage de référent :
 
 * Ouvrez la console Apache Felix (**Configurations**) à l’adresse :
 * https://&lt;serveur>:&lt;numéro_port>/system/console/configMgr
 * Connectez-vous en tant qu’administrateur.
-* In the **Configurations** menu, select: *Apache Sling Referrer Filter*
+* Dans le menu **Configurations**, sélectionnez : *Filtre de Parrain Apache Sling*
 * Cochez le champ Autoriser les champs vides pour autoriser les en-têtes de parrain vides/manquants.
 * Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-See the [OSGI Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md) and [Security Checklist - Issues with Cross-Site Request Forgery](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) for further details.
+Pour plus d&#39;informations, consultez les sections [Paramètres de configuration OSGI](/help/sites-deploying/osgi-configuration-settings.md) et [Liste de contrôle de sécurité - Problèmes liés à la falsification de requête sur plusieurs sites](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery).
