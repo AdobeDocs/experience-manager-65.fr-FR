@@ -18,11 +18,11 @@ ht-degree: 2%
 ---
 
 
-# Voter les fondamentaux {#voting-essentials}
+# Voter les éléments essentiels {#voting-essentials}
 
-La composante de vote, une sous-classe [de décompte](tally.md) , est un outil utile qui permet aux membres d&#39;évaluer un élément de contenu particulier en sélectionnant simplement des flèches vers le haut ou vers le bas pour indiquer leur opinion.
+Le composant de vote, une sous-classe [tally](tally.md), est un outil utile qui permet aux membres de noter un élément de contenu particulier en sélectionnant simplement des flèches vers le haut ou vers le bas pour indiquer leur opinion.
 
-Le placement de plusieurs instances d&#39;un composant de vote sur la même page est autorisé ; chaque instance doit être configurée avec une `tally name` propriété unique.
+Le placement de plusieurs instances d&#39;un composant de vote sur la même page est autorisé ; chaque instance doit être configurée avec une propriété `tally name` unique.
 
 La publication anonyme d&#39;un vote n&#39;est pas soutenue. Les visiteurs du site ne doivent s&#39;inscrire et se connecter pour participer au vote qu&#39;une seule fois, Le visiteur (membre) signé(e) peut changer son vote à tout moment.
 
@@ -36,7 +36,7 @@ La publication anonyme d&#39;un vote n&#39;est pas soutenue. Les visiteurs du si
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td>
-   <td>Oui - les propriétés sont modifiables en <i>mode </i>conception</td>
+   <td>Oui - les propriétés sont modifiables en <i>mode de conception </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -70,16 +70,16 @@ La publication anonyme d&#39;un vote n&#39;est pas soutenue. Les visiteurs du si
 ### Accès au vote publié (UGC) {#accessing-posted-voting-ugc}
 
 L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.
-Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
+Voir [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
 
-AEM 6.1 Collectivités, l&#39;utilisation d&#39;un magasin [](working-with-srp.md) commun pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communautés, l&#39;utilisation d&#39;un [magasin commun](working-with-srp.md) pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
 
 **L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources d&#39;Enregistrement - présentation et présentation de l&#39;utilisation du référentiel.
-* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP.
-* [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md) - directives de codage.
-* [SocialUtils Refactoring](socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
+* [Aperçu](srp.md)  du fournisseur de ressources d&#39;Enregistrement - présentation et présentation de l&#39;utilisation du référentiel.
+* [SRP et UGC Essentials](srp-and-ugc.md)  - Exemples et méthodes d&#39;utilitaire SRP.
+* [Accès à l&#39;UGC avec des directives de codage SRP](accessing-ugc-with-srp.md) .
+* [SocialUtils Refactoring](socialutils.md)  - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
 
