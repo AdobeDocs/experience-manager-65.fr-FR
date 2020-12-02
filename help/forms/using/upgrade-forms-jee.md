@@ -23,8 +23,8 @@ ht-degree: 71%
 Effectuez la procédure suivante pour mettre à niveau AEM 6.3 Forms on JEE ou AEM 6.4 Forms on JEE vers AEM 6.5 Forms on JEE :
 
 1. Téléchargez le programme d’installation d’AEM 6.5 Forms on JEE à partir du site [Adobe Licensing Website (LWS)](https://licensing.adobe.com/). Pour télécharger le programme d’installation, vous devez disposer d’un contrat de Maintenance &amp; Support.
-1. See [Upgrade checklist and planning](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_65) to learn about the checks to perform to ensure a successful upgrade.
-1. See [Prepare to upgrade to AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65) to learn and perform the tasks that ensure the upgrade runs correctly with minimal server downtime.
+1. Voir [Aide-mémoire et planification de la mise à niveau](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_65) pour en savoir plus sur les vérifications à effectuer pour garantir la réussite de la mise à niveau.
+1. Voir [Préparation à la mise à niveau vers AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65) pour découvrir et exécuter les tâches qui garantissent que la mise à niveau s’exécute correctement avec un temps d’inactivité minimal sur le serveur.
 1. En fonction de votre environnement et de votre serveur d’application, sélectionnez l’un des documents suivants et suivez les instructions.
 
    * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_fr)
