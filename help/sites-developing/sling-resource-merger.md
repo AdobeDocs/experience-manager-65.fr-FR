@@ -63,7 +63,7 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
    >
    >
 1. Apportez les modifications désirées dans `/apps`
@@ -214,7 +214,7 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
 
-      * type: `String[]`
+      * type : `String[]`
       * value : liste des nœuds enfants (tels que définis dans `/libs`) à masquer/ignorer
 
       Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
@@ -231,7 +231,7 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
          Cela spécifie le nœud (comme dans `/libs`) devant lequel le nœud actif doit être positionné :
 
-         * type: `String`
+         * type : `String`
          * value: `<before-SiblingName>`
 
 ### Appel de Sling Resource Merger à partir de votre code {#invoking-the-sling-resource-merger-from-your-code}
