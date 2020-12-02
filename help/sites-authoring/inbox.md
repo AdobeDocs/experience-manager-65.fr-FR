@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
 workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -64,7 +64,7 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 >
 >Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-authoring/basic-handling.md#card-view).
 
-## Tâches administratives prêtes à l’emploi  {#out-of-the-box-administrative-tasks}
+## Tâches administratives prêtes à l’emploi   {#out-of-the-box-administrative-tasks}
 
 AEM est fourni avec quatre tâches prêtes à l’emploi attribuées au groupe d’utilisateurs administrateurs.
 
@@ -73,7 +73,7 @@ AEM est fourni avec quatre tâches prêtes à l’emploi attribuées au groupe d
 * Autoriser la collecte de statistiques d’utilisation agrégées
 * [Configurer HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Ouverture de la boîte de réception   {#opening-the-inbox}
+## Ouverture de la boîte de réception    {#opening-the-inbox}
 
 Pour ouvrir la boîte de réception des notifications AEM :
 
@@ -113,7 +113,7 @@ Vous pouvez :
 
 ![wf-91](assets/wf-91.png)
 
-### Inbox - Settings {#inbox-view-settings}
+### Boîte de réception - Paramètres {#inbox-view-settings}
 
 Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et Calendrier) :
 
@@ -146,24 +146,24 @@ L’option Contrôle d’administration permet aux administrateurs d’effectuer
 
 * Contrôler l&#39;affichage des liens de navigation disponibles dans l&#39;en-tête
 
-L’option Contrôle d’administration n’est visible que pour les membres du `administrators` groupe ou `workflow-administrators` du groupe.
+L’option Contrôle d’administration n’est visible que pour les membres du groupe `administrators` ou `workflow-administrators`.
 
 * **Personnalisation** des colonnes : Personnalisez une boîte de réception AEM pour modifier le titre par défaut d&#39;une colonne, réorganiser la position d&#39;une colonne et afficher des colonnes supplémentaires en fonction des données d&#39;un flux de travail.
-   * **Ajouter la colonne**: Sélectionnez une colonne à ajouter dans AEM boîte de réception.
-   * **Modifier la colonne**: Placez le pointeur de la souris sur le titre de la colonne et appuyez sur l’icône ![Modifier](assets/edit.svg) pour entrer un nom d’affichage de colonne.
-   * **Supprimer la colonne**: Appuyez sur l’icône ![Supprimer](assets/delete_updated.svg) pour supprimer la colonne de AEM boîte de réception.
-   * **Déplacer la colonne**: Faites glisser l’icône ![déplacer](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans AEM boîte de réception.
+   * **Ajouter la colonne** : Sélectionnez une colonne à ajouter dans AEM boîte de réception.
+   * **Modifier la colonne** : Placez le pointeur de la souris sur le titre de la colonne et appuyez sur  ![](assets/edit.svg) Edition pour entrer un nom d’affichage de colonne.
+   * **Supprimer la colonne** : Appuyez sur l’ ![](assets/delete_updated.svg) icône de suppression pour supprimer la colonne de AEM boîte de réception.
+   * **Déplacer la colonne** : Faites glisser l&#39; ![](assets/move_updated.svg) icône de mouvement pour déplacer une colonne vers un nouvel emplacement dans AEM boîte de réception.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personnalisation de l’identité graphique**
 
-   * **Personnaliser le texte de l&#39;en-tête :** Spécifiez le texte à afficher dans l’en-tête pour remplacer le texte **Adobe Experience Manager** par défaut.
+   * **Personnaliser le texte de l’en-tête :** spécifiez le texte à afficher dans l’en-tête pour remplacer le texte par défaut d’ **Adobe Experience** Manager.
 
-   * **Personnaliser le logo :** Spécifiez l’image à afficher dans l’en-tête sous forme de logo. Téléchargez une image dans le module de gestion des actifs numériques (DAM) et référencez-la dans le champ.
+   * **Personnaliser le logo :** indiquez l’image à afficher dans l’en-tête sous forme de logo. Téléchargez une image dans le module de gestion des actifs numériques (DAM) et référencez-la dans le champ.
 
 * **Navigation de l’utilisateur**
-   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte Adobe Experience Manager.
+   * **Masquer les options de navigation :** sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte Adobe Experience Manager.
 * **Enregistrer :** Appuyez/cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
