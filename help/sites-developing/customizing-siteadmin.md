@@ -120,7 +120,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 ### Test du nouveau service {#testing-the-new-service}
 
-Lorsque vous ouvrez la console Administration de sites web et parcourez votre site, le navigateur génère un appel ajax pour obtenir l’objet JSON qui est utilisé pour créer la console. For example, when you browse to the `/content/geometrixx` folder, the following request is sent to the AEM server to build the console:
+Lorsque vous ouvrez la console Administration de sites web et parcourez votre site, le navigateur génère un appel ajax pour obtenir l’objet JSON qui est utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx`, la requête suivante est envoyée au serveur AEM pour créer la console :
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -135,41 +135,41 @@ Pour vous assurer que le nouveau service s’exécute après le déploiement du 
 
 ### Affichage de la nouvelle colonne {#displaying-the-new-column}
 
-The last step consists in adapting the nodes structure of the Websites Administration console to display the new property for all the Geometrixx pages by overlaying `/libs/wcm/core/content/siteadmin`. Procédez comme suit :
+La dernière étape consiste à adapter la structure des noeuds de la console d&#39;administration des sites Web pour afficher la nouvelle propriété pour toutes les pages de Geometrixx en superposant `/libs/wcm/core/content/siteadmin`. Procédez comme suit :
 
-1. In CRXDE Lite, create the nodes structure `/apps/wcm/core/content` with nodes of type `sling:Folder` to reflect the structure `/libs/wcm/core/content`.
+1. En CRXDE Lite, créez la structure des noeuds `/apps/wcm/core/content` avec des noeuds de type `sling:Folder` pour refléter la structure `/libs/wcm/core/content`.
 
-1. Copiez le noeud `/libs/wcm/core/content/siteadmin` et collez-le ci-dessous `/apps/wcm/core/content`.
+1. Copiez le noeud `/libs/wcm/core/content/siteadmin` et collez-le sous `/apps/wcm/core/content`.
 
 1. Copiez le noeud `/apps/wcm/core/content/siteadmin/grid/assets` dans `/apps/wcm/core/content/siteadmin/grid/geometrixx` et modifiez ses propriétés :
 
    * Supprimez **pageText**
 
-   * Set **pathRegex** to `/content/geometrixx(/.*)?`
-This will make the grid configuration active for all geometrixx websites.
+   * Définissez **pathRegex** sur `/content/geometrixx(/.*)?`
+La configuration de la grille sera ainsi principale pour tous les sites Web Geometrixx.
 
-   * Set **storeProxySuffix** to `.pages.json`
+   * Définissez **storeProxySuffix** sur `.pages.json`
 
    * Modifiez la propriété à plusieurs valeurs **storeReaderFields** et ajoutez la valeur `starred`.
 
-   * To activate MSM functionality add the following MSM parameters to the multi-String property **storeReaderFields**:
+   * Pour activer la fonctionnalité MSM, ajoutez les paramètres MSM suivants à la propriété multichaîne **storeReaderFields** :
 
       * **msm:isSource**
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. Add a `starred` node (of type **nt:unstructured**) below `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` with the following properties:
+1. Ajoutez un noeud `starred` (de type **nt:unstructured**) sous `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` avec les propriétés suivantes :
 
-   * **dataIndex**: `starred` de type chaîne
+   * **dataIndex** :  `starred` de type chaîne
 
-   * **en-tête**: `Starred` de type chaîne
+   * **en-tête** :  `Starred` de type chaîne
 
-   * **xtype**: `gridcolumn` de type chaîne
+   * **xtype** :  `gridcolumn` de type chaîne
 
-1. (optional) Drop the columns you do not want to display at `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (Facultatif) Déposez les colonnes que vous ne souhaitez pas afficher à `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
-1. `/siteadmin` est un chemin de vanité qui, par défaut, pointe vers `/libs/wcm/core/content/siteadmin`.
-To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadmin` define the property `sling:vanityOrder` to have a value higher than that defined on `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
+1. `/siteadmin` est un chemin de vanité qui, par défaut, pointe vers  `/libs/wcm/core/content/siteadmin`.
+Pour rediriger ceci vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour qu&#39;elle ait une valeur supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
 
 1. Accédez à la console d’administration des sites Web et accédez au site Geometrixx :
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -182,6 +182,6 @@ To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadm
 >
 >Si plusieurs configurations de grille correspondent au chemin d’accès demandé défini par la propriété **pathRegex**, c’est la première qui est utilisée, et non la plus spécifique. Cela signifie que l’ordre des configurations est important.
 
-### Exemple de module {#sample-package}
+### Exemple de module  {#sample-package}
 
-The outcome of this tutorial is available in the [Customizing the Websites Administration Console](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) package on Package Share.
+Le résultat de ce didacticiel est disponible dans le package [Personnalisation du module Administration Console](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) des sites Web sur le partage de package.
