@@ -20,7 +20,7 @@ ht-degree: 84%
 
 # Création dans l’IU classique{#authoring-in-the-classic-ui}
 
-## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
+## Interface utilisateur classique et interface utilisateur tactile {#classic-ui-and-touch-enabled-ui}
 
 L’interface utilisateur classique est l’interface utilisateur orientée bureau qui était disponible depuis CQ5 (l’interface précédente à AEM). La documentation suivante relative à la création est axée sur cette interface. 
 
