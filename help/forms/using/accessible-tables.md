@@ -34,7 +34,7 @@ Pour utiliser le nouveau format dans les formulaires HTML5, indiquez que le tabl
  </extras>
 ```
 
-The tables which are marked as *complexTable* follow the native HTML rendition, and provide better accessibility support for certain screen readers.  Pour créer une étendue de ligne, sélectionnez les cellules consécutives d’un tableau dans la même colonne, cliquez avec le bouton droit de la souris sur la sélection, puis cliquez sur l’option **[!UICONTROL Fusionner les cellules]**.
+Les tableaux marqués comme *complexeTable* suivent le rendu HTML natif et offrent une meilleure prise en charge de l’accessibilité pour certains lecteurs d’écran.  Pour créer une étendue de ligne, sélectionnez les cellules consécutives d’un tableau dans la même colonne, cliquez avec le bouton droit de la souris sur la sélection, puis cliquez sur l’option **[!UICONTROL Fusionner les cellules]**.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Pour marquer une ligne comme en-tête de ligne, sélectionnez toutes les cellule
 
 Pour marquer une cellule en tant qu’en-tête de colonne, sélectionnez une cellule de la colonne, cliquez avec le bouton droit de la souris sur la sélection, puis cliquez sur **[!UICONTROL Marquer l’en-tête]**.
 
-Limitations in new *AccessibleTable* format:
+Limites dans le nouveau format *AccessibleTable* :
 
 * Absence de prise en charge des champs extensibles si l’étendue de ligne est utilisée dans le tableau
 * Pas de prise en charge des tableaux imbriqués (tableaux dans les cellules d’un tableau)
