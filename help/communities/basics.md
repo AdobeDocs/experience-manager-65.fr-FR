@@ -24,7 +24,7 @@ ht-degree: 57%
 
 La section création de la documentation décrit l’ajout de fonctionnalités AEM Communities à AEM Sites en mode d’édition et décrit les configurations des composants.
 
-Components may be explored using an AEM instance and the interactive [Community Components guide](components-guide.md).
+Les composants peuvent être explorés à l&#39;aide d&#39;une instance AEM et du [guide des composants de la communauté](components-guide.md) interactif.
 
 ## Accès aux composants d’AEM Communities {#accessing-communities-components}
 
@@ -34,15 +34,15 @@ Les composants de communauté disponibles sont répertoriés [ici](author-commun
 
 >[!NOTE]
 >
->For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+>Pour obtenir des informations générales sur la création, vue le [guide rapide de création de pages](../../help/sites-authoring/qg-page-authoring.md).
 >
->If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+>Si l’AEM n’est pas familière, vue la documentation sur la [gestion de base](../../help/sites-authoring/basic-handling.md).
 
 ### Accès au mode de conception {#entering-design-mode}
 
-If a **Communities** component is not found in the components browser (sidekick), it will be necessary to enter `Design Mode` to add other Communities components. [Il peut également être nécessaire d’ajouter des bibliothèques](#required-clientlibs) côté client requises (clientlibs).
+Si un composant **Communautés** est introuvable dans le navigateur de composants (sidekick), il sera nécessaire d&#39;entrer `Design Mode` pour ajouter d&#39;autres composants de communautés. [Il peut également être nécessaire d’ajouter des bibliothèques](#required-clientlibs)  côté client requises (clientlibs).
 
-For details, see [Configuring Components in Design Mode](../../help/sites-authoring/default-components-designmode.md).
+Pour plus d&#39;informations, voir [Configuration des composants en mode de conception](../../help/sites-authoring/default-components-designmode.md).
 
 Vous trouverez ci-dessous des images de la sélection de quelques composants Communities et de leur affichage dans l’explorateur de composants :
 
@@ -50,7 +50,7 @@ Vous trouverez ci-dessous des images de la sélection de quelques composants Com
 
 Les composants sélectionnés sont à présent disponibles dans le navigateur de composants :
 
-![component-design1](assets/component-design1.png)
+![composant-design1](assets/component-design1.png)
 
 ## Clientlibs requises {#required-clientlibs}
 
@@ -58,11 +58,11 @@ Les [bibliothèques côté client](../../help/sites-developing/clientlibs.md) (c
 
 Lorsque vous ajoutez un composant de communauté à une page, s’il en résulte une erreur ou une apparence inattendue, la première chose à essayer consiste à ajouter les clientlibs nécessaires au composant de communauté. Pour plus d’informations, reportez-vous à la section [Clientlibs des composants de communauté](clientlibs.md).
 
-### Example: Initially placed reviews without client libraries... {#example-initially-placed-reviews-without-client-libraries}
+### Exemple : Révisions initialement placées sans bibliothèques clientes... {#example-initially-placed-reviews-without-client-libraries}
 
 ![clientlibs1](assets/clientlibs1.png)
 
-### ... And with client libraries {#and-with-client-libraries}
+### ... Et avec les bibliothèques client {#and-with-client-libraries}
 
 ![clientlibs2](assets/clientlibs2.png)
 
@@ -70,11 +70,11 @@ Lorsque vous ajoutez un composant de communauté à une page, s’il en résulte
 
 De nombreuses fonctionnalités de communauté peuvent être configurées de manière à permettre aux membres de baliser le contenu entré (publié) dans l’environnement de publication.
 
-Si le balisage est autorisé, la configuration du site de communauté peut être définie pour limiter les espaces de noms présentés aux membres dans l’environnement de publication. See the [Community Sites console](sites-console.md#tagging).
+Si le balisage est autorisé, la configuration du site de communauté peut être définie pour limiter les espaces de noms présentés aux membres dans l’environnement de publication. Voir la [console Sites communautaires](sites-console.md#tagging).
 
-Features which allow tagging: [blog](blog-feature.md), [calendar](calendar.md), [file library](file-library.md), [forum](forum.md)
+Fonctionnalités permettant le balisage : [blog](blog-feature.md), [calendrier](calendar.md), [bibliothèque de fichiers](file-library.md), [forum](forum.md)
 
-Features which use tags: [catalog](catalog.md), [search](search.md), [social tag cloud](tagcloud.md)
+Fonctionnalités utilisant des balises : [catalogue](catalog.md), [recherche](search.md), [nuage de balises sociales](tagcloud.md)
 
 Pour les informations de création :
 
@@ -82,8 +82,8 @@ Pour les informations de création :
 
 Pour les informations administratives :
 
-* Creating tag namespaces (taxonomy): [Administering Tags](../../help/sites-administering/tags.md)
-* Community Site configuration: see [TAGGING](sites-console.md#tagging)
+* Création d’espaces de nommage de balises (taxonomie) : [Administration des balises](../../help/sites-administering/tags.md)
+* Configuration du site de la communauté : voir [BALISAGE](sites-console.md#tagging)
 * [Balisage de contenu généré par l’utilisateur](../../help/sites-authoring/tags.md)
 * [Balisage des ressources d’activation](tag-resources.md) 
 
