@@ -34,11 +34,11 @@ Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes 
 >
 >Les administrateurs AEM peuvent commencer des workflows à l’aide de [plusieurs autres méthodes](/help/sites-administering/workflows-starting.md).
 
-## Application de workflows {#applying-workflows}
+## Application de workflows  {#applying-workflows}
 
 Les workflows peuvent être démarrés à partir de la console Sites web ou, lors de la modification d’une page, à partir du sidekick.
 
-The **Status** column in the **Websites** console indicates whether a workflow has been applied to a page:
+La colonne **État** de la console **Sites Web** indique si un processus a été appliqué à une page :
 
 ![workflow status](assets/workflowstatus.png)
 
@@ -49,12 +49,12 @@ The **Status** column in the **Websites** console indicates whether a workflow h
 1. Dans la liste de pages, sélectionnez la page, puis cliquez sur Worfklow.
 1. Dans la boîte de dialogue Démarrer le workflow, sélectionnez le workflow à appliquer. Si vous le souhaitez, entrez un commentaire et un titre. Cliquez ensuite sur Démarrer.
 
-### Démarrage d’un workflow à partir du sidekick {#starting-a-workflow-using-sidekick}
+### Démarrage d’un workflow à partir du sidekick  {#starting-a-workflow-using-sidekick}
 
 1. Ouvrez la console Sites web.
 1. Ouvrez la page requise.
 1. Sélectionnez l’onglet Worfklow dans le sidekick.
-1. Expand the **Workflow** dialog, allowing you to select the **Workflow** and optionally enter **Workflow Title** and **Comment**.
+1. Développez la boîte de dialogue **Workflow**, ce qui vous permet de sélectionner **Workflow** et éventuellement de saisir **Workflow Title** et **Comment**.
 
    ![workflow startsidekick](assets/workflowstartsidekick.png)
 
