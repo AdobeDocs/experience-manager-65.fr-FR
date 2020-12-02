@@ -36,7 +36,7 @@ Les membres du groupe d’auteurs d’applications sont chargés de créer AEM c
 
 1. Créez un groupe d’utilisateurs appelé « app-authors » :
 
-   Navigate to the User Admin Console: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Accédez au Admin Console utilisateur : [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Dans la console des groupes d’utilisateurs, sélectionnez le bouton « + » pour créer un groupe.
 
@@ -61,7 +61,7 @@ Les membres du groupe d’auteurs d’applications sont chargés de créer AEM c
 
 ### Groupe Administrateurs d’application AEM Mobile (groupe app-admins) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Members of the app-admins group can author application content with the same permissions included with app-authors **AND** in addition are also responsible for:
+Les membres du groupe app-admins peuvent également créer du contenu d’application avec les mêmes autorisations que celles fournies aux auteurs d’applications **ET**. Ils sont également responsables des éléments suivants :
 
 * La mise à jour, la publication et la suppression des mises à jour ContentSync OTA d’application
 
@@ -71,7 +71,7 @@ Members of the app-admins group can author application content with the same per
 >
 >Vous remarquerez que certaines options ne sont pas disponibles pour le groupe app-authors, mais le sont pour app-admins.
 
-### Configuration du groupe - app-admins {#group-configuration-app-admins}
+### Configuration du groupe - app-admins  {#group-configuration-app-admins}
 
 1. Créez un groupe appelé app-admins.
 1. Ajoutez les groupes suivants à votre nouveau groupe app-admins :
@@ -85,7 +85,7 @@ Members of the app-admins group can author application content with the same per
    >
    >Des autorisations workflow-users sont nécessaires pour la compilation à distance avec le service PhoneGap Build.
 
-1. Navigate to the [Permissions console](http://localhost:4502/useradmin) and add permissions to administer cloudservices
+1. Accédez à la [console Permissions](http://localhost:4502/useradmin) et ajoutez des autorisations pour administrer les services cloud.
 
    * (lire, modifier, créer, supprimer, répliquer) sur /etc/cloudservices/mobileservices
 
