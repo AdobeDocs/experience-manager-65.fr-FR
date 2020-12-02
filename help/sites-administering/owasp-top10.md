@@ -24,13 +24,13 @@ Le projet [Open Web Application Security Project](https://www.owasp.org) (OWASP)
 
 Ces risques sont répertoriés ci-dessous, avec une explication sur la manière dont ils sont gérés par CRX.
 
-## 1. Injection {#injection}
+## 1. Injection  {#injection}
 
 * SQL -Empêché par défaut : La configuration de référentiel par défaut ne comprend ni ne requiert de base de données traditionnelle et toutes les données sont stockées dans le référentiel de contenu. Tous les accès sont limités aux utilisateurs authentifiés et ne peuvent avoir lieu que via l’API JCR. SQL est pris en charge pour les requêtes de recherche uniquement (SELECT). SQL offre en outre une prise en charge de la valeur de liaison.
 * LDAP : L’injection LDAP est impossible, car le module d’authentification filtre l’entrée et exécute l’importation des utilisateurs à l’aide de la méthode de liaison.
 * OS : Aucune exécution shell n’est effectuée dans l’application.
 
-## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
+## 2. Cross-Site Scripting (XSS)  {#cross-site-scripting-xss}
 
 La solution générale consiste à coder toutes les sorties du contenu créé par l’utilisateur avec une bibliothèque de protection XSS côté serveur basée sur [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) et [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
@@ -44,11 +44,11 @@ AEM utilise des techniques d’authentification performantes et éprouvées, qui
 
 Tous les accès aux objets de données sont arbitrés par le référentiel et donc restreints par le contrôle d’accès basé sur les rôles.
 
-## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
+## 5. Cross-Site Request Forgery (CSRF)  {#cross-site-request-forgery-csrf}
 
 La fonctionnalité CSRF (Cross-Site Request Forgery) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et demandes d’AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
 
-In addition, AEM ships with a referrer-header based filter, which can be configured to *only* allow POST requests from specific hosts (defined in a list).
+En outre, AEM fournit un filtre basé sur les en-têtes de parrain, qui peut être configuré sur *uniquement* pour autoriser les requêtes POST provenant d&#39;hôtes spécifiques (définies dans une liste).
 
 ## 6. Configuration incorrecte de la sécurité {#security-misconfiguration}
 
@@ -62,7 +62,7 @@ Les mots de passe sont stockés en tant que hachages cryptographiques dans le n�
 
 Les données sensibles telles que les identifiants tiers sont stockées dans un formulaire chiffré à l’aide d’une bibliothèque cryptographique certifiée FIPS 140-2.
 
-## 8. Échec de la restriction de l’accès à l’URL {#failure-to-restrict-url-access}
+## 8. Échec de la restriction de l’accès à l’URL  {#failure-to-restrict-url-access}
 
 Le référentiel permet de définir des [autorisations précises (comme spécifié par JCR)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) pour n’importe quel utilisateur ou groupe dans n’importe quel chemin d’accès, via des entrées de contrôle d’accès. Les restrictions d’accès sont appliquées par le référentiel.
 
