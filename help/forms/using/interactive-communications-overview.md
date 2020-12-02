@@ -42,7 +42,7 @@ Voici les fonctionnalités principales des communications interactives :
 
 ### Workflow {#workflow}
 
-To create an Interactive Communication, have the [building blocks](#buildingblocks) for Interactive Communication ready and then complete the following steps:
+Pour créer une communication interactive, préparez les [blocs de création](#buildingblocks) pour la communication interactive, puis procédez comme suit :
 
 1. Choisissez de [créer une communication interactive](/help/forms/using/create-interactive-communication.md).
 
@@ -52,7 +52,7 @@ To create an Interactive Communication, have the [building blocks](#buildingbloc
 1. Configurez les propriétés suivantes des composants insérés :
 
    1. [Images](/help/forms/using/create-interactive-communication.md#step2)
-   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables) (y compris les fragments de mise en page)
+   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables)  (y compris les fragments de mise en page)
    1. [Graphiques](/help/forms/using/chart-component-interactive-communications.md)
    1. [Fragments de document](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
@@ -67,7 +67,7 @@ Les blocs de construction requis pour la création d’une communication interac
 * [Modèles de canaux web et d’impression](/help/forms/using/web-channel-print-channel.md)
 * [Fragments de document](/help/forms/using/document-fragments.md)
 * Images
-* [Thèmes](/help/forms/using/themes.md) pour le canal Web
+* [](/help/forms/using/themes.md) Thèmes du canal Web
 
 ## Comparaison entre les communications interactives et Correspondence Management {#interactive-communications-vs-correspondence-management}
 
