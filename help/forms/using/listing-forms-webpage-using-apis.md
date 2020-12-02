@@ -17,11 +17,11 @@ ht-degree: 84%
 ---
 
 
-# Affichage d’une liste des formulaires sur une page Web à l’aide d’API {#listing-forms-on-a-web-page-using-apis}
+# Affichage d’une liste des formulaires sur une page Web à l’aide d’API  {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points de fin de rendu.
 
-Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande de GET au serveur `https://'[server]:[port]'/libs/fd/fm/content/manage.json` avec les paramètres de requête décrits ci-dessous.
+Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande de GET au serveur à l’adresse `https://'[server]:[port]'/libs/fd/fm/content/manage.json` avec les paramètres de requête décrits ci-dessous.
 
 ## Paramètres de requête {#query-parameters}
 
@@ -116,7 +116,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Indique si le contenu binaire doit être récupéré ou non. The <code>includeXdp</code> attribute is applicable for assets of type <code>FORM</code>, <code>PDFFORM</code>, and <code>PRINTFORM</code>.</td>
+   <td>Indique si le contenu binaire doit être récupéré ou non. L'attribut <code>includeXdp</code> s'applique aux actifs de type <code>FORM</code>, <code>PDFFORM</code> et <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -125,7 +125,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
  </tbody>
 </table>
 
-## Exemple de demande {#sample-request}
+## Exemple de demande  {#sample-request}
 
 ```json
 func : searchForms
