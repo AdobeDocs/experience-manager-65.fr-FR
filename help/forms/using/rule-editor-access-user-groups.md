@@ -29,11 +29,11 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 ## Spécification des groupes d’utilisateurs qui peuvent accéder à l’éditeur de règles {#specify-user-groups-that-can-access-rule-editor}
 
 1. Connectez-vous à AEM Forms en tant qu’administrateur.
-1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![hammer](assets/hammer.png) > Operations > Web Console. La console Web s’ouvre dans une nouvelle fenêtre.
+1. Dans l’instance d’auteur, cliquez sur ![adobeexperience emanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Opérations > Console Web. La console Web s’ouvre dans une nouvelle fenêtre.
 
    ![1-2](assets/1-2.png)
 
-1. In Web Console Window, locate and click **Adaptive Form Configuration Service**. **La boîte de dialogue Service** de configuration de formulaire adaptatif s’affiche. Ne modifiez aucune valeur puis cliquez sur **Enregistrer**.
+1. Dans la fenêtre de la console Web, recherchez et cliquez sur **Service de configuration de formulaire adaptatif**. **La boîte de dialogue Service de configuration de formulaire adaptatif** s’affiche. Ne modifiez aucune valeur puis cliquez sur **Enregistrer**.
 
    Vous créez ainsi un fichier /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config dans le référentiel CRX.
 
@@ -48,7 +48,7 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 
    ![Créer un utilisateur](assets/create_user_new.png)
 
-   Now, when a user that is not a part of the a specified user group (here RuleEditorsUserGroup) taps a field, the Edit Rule icon ( ![edit-rules1](assets/edit-rules1.png)) is not available for her in the components toolbar:
+   Désormais, lorsqu’un utilisateur qui ne fait pas partie d’un groupe d’utilisateurs spécifié (ici RuleEditorsUserGroup) touche un champ, l’icône Modifier la règle ( ![edit-rules1](assets/edit-rules1.png)) n’est pas disponible pour elle dans la barre d’outils des composants :
 
    ![composant stoolbarwithre](assets/componentstoolbarwithre.png)
 
@@ -58,5 +58,5 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 
    Barre d’outils de composants comme visible pour un utilisateur sans accès à l’éditeur de règles
 
-   For instructions on adding users to groups, see [User Administration and Security](/help/sites-administering/security.md).
+   Pour obtenir des instructions sur l’ajout d’utilisateurs à des groupes, voir [Administration utilisateur et sécurité](/help/sites-administering/security.md).
 
