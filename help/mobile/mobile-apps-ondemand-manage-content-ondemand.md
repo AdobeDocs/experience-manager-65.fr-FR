@@ -18,7 +18,7 @@ ht-degree: 11%
 ---
 
 
-# Managing Content{#managing-content}
+# Gestion du contenu{#managing-content}
 
 >[!NOTE]
 >
@@ -30,17 +30,17 @@ Les actions de gestion de contenu sont les blocs de création qui aident à cré
 
 Si vous pensez à un magazine en ligne, le contenu principal comprend des articles, des publicités et des couvertures. Trois principaux types de contenu Mobile On-Demand peuvent être créés dans AEM :
 
-* **Articles**: texte basé sur l&#39;art pour transmettre des informations
-* **Bannières :** liens promotionnels typiquement graphiques
-* **Collections :** représentent un *compartiment* bien défini rempli de contenu tel que des articles ou des bannières qui s’adapte au thème de la couverture.
+* **Articles** : texte basé sur l&#39;art pour transmettre des informations
+* **bannières:liens promotionnels** typiquement graphiques
+* **Collections :** représente un  ** bloc bien défini rempli de contenu tel que des articles ou des bannières qui s’adaptent au thème de la couverture.
 
 * **Ressources partagées :** permet la réutilisation ou le partage de pièces communes entre articles
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception pour les applications AEM Mobile, reportez-vous à la section Considérations relatives à la [conception pour les applications](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) AEM Mobile dans l&#39;aide en ligne.
+>Pour en savoir plus sur les considérations de conception pour les applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
 
-## Creating and Managing Content {#creating-and-managing-content}
+## Création et gestion du contenu {#creating-and-managing-content}
 
 Les rubriques suivantes décrivent la création et la gestion de contenu, à savoir les articles, les bannières et les collections. Une fois que vous avez appris à créer et à gérer le contenu, vous pouvez voir d’autres rubriques, telles que le téléchargement de ressources partagées, la publication ou l’annulation de publication de contenu et la prévisualisation avec Preflight.
 
@@ -52,7 +52,7 @@ Les rubriques suivantes décrivent la création et la gestion de contenu, à sav
 
 >[!NOTE]
 >
->En règle générale, vous devez effectuer un contrôle en amont avant de publier du contenu. Voir [Prévisualisation avec contrôle en amont](/help/mobile/aem-mobile-manage-ondemand-services.md) pour plus d’informations.
+>En règle générale, vous devez effectuer un contrôle en amont avant de publier du contenu. Voir [Prévisualisation avec contrôle en amont](/help/mobile/aem-mobile-manage-ondemand-services.md) pour plus de détails.
 
 ### Ressources supplémentaires {#additional-resources}
 
