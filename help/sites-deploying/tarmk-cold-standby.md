@@ -74,7 +74,7 @@ En outre, vous pouvez spécifier les instances de secours qui sont autorisées �
 >
 >Il est recommandé d’ajouter un équilibreur de charge entre le dispatcher et les serveurs qui font partie de la configuration Coldy Standby. L’équilibreur de charge doit être configuré pour diriger le trafic des utilisateurs uniquement vers l’instance **principale**, pour assurer la régularité et empêcher la copie du contenu sur l’instance de secours par des moyens autres que le mécanisme Cold Standby.
 
-## Création d’une configuration AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
+## Création d’une configuration AEM TarMK Cold Standby  {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
@@ -87,7 +87,7 @@ En outre, vous pouvez spécifier les instances de secours qui sont autorisées �
 >
 Assurez-vous d’effectuer les réglages de configuration nécessaires pour refléter ces modifications.
 
-Pour créer une configuration TarMK Cold Standby, vous devez d’abord créer des instances de secours en effectuant une copie du système de fichiers du dossier d’installation complet de l’instance principale vers un nouvel emplacement. You can then start each instance with a runmode that will specify its role ( `primary` or `standby`).
+Pour créer une configuration TarMK Cold Standby, vous devez d’abord créer des instances de secours en effectuant une copie du système de fichiers du dossier d’installation complet de l’instance principale vers un nouvel emplacement. Vous pouvez ensuite début chaque instance avec un mode d’exécution qui spécifiera son rôle ( `primary` ou `standby`).
 
 Consultez ci-dessous la procédure devant être suivie afin de créer une installation avec un maître et une instance de secours : 
 
@@ -96,14 +96,14 @@ Consultez ci-dessous la procédure devant être suivie afin de créer une instal
 1. Fermez votre instance, puis copiez son dossier d’installation à l’emplacement où l’instance Cold Standby sera exécutée. Même si l’exécution s’effectue à partir de différents ordinateurs, veillez à donner à chaque dossier un nom descriptif (comme *aem-principal* ou *aem-de-secours*) pour différencier les instances.
 1. Accédez au dossier d’installation de l’instance principale puis :
 
-   1. Check and delete any preivous OSGi configurations you might have under `aem-primary/crx-quickstart/install`
+   1. Vérifier et supprimer les configurations OSGi précédentes que vous pouviez avoir sous `aem-primary/crx-quickstart/install`
 
-   1. Create a folder called `install.primary` under `aem-primary/crx-quickstart/install`
+   1. Créez un dossier appelé `install.primary` sous `aem-primary/crx-quickstart/install`
 
-   1. Create the required configurations for the prefered node store and data store under `aem-primary/crx-quickstart/install/install.primary`
+   1. Créez les configurations requises pour la banque de noeuds et la banque de données préférées sous `aem-primary/crx-quickstart/install/install.primary`
    1. Créez un fichier nommé `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` au même emplacement et configurez-le conformément aux exigences. Pour plus d’informations sur les options de configuration, voir [Configuration](/help/sites-deploying/tarmk-cold-standby.md#configuration). 
 
-   1. If you are using an AEM TarMK instance with an external data store, create a folder named `crx3` under `aem-primary/crx-quickstart/install` named `crx3`
+   1. Si vous utilisez une instance AEM TarMK avec un magasin de données externe, créez un dossier nommé `crx3` sous `aem-primary/crx-quickstart/install` nommé `crx3`
 
    1. Placez le fichier de configuration de l’entrepôt de données dans le dossier `crx3`. 
 
@@ -150,16 +150,16 @@ Consultez ci-dessous la procédure devant être suivie afin de créer une instal
 1. Créez la même configuration de journalisation que pour l’instance principale. Ensuite, arrêtez l’instance.
 1. Préparez l’instance de secours. Vous pouvez le faire en suivant le même processus que pour l’instance principale :
 
-   1. Delete any files you might have under `aem-standby/crx-quickstart/install`.
-   1. Create a new folder called `install.standby` under `aem-standby/crx-quickstart/install`
+   1. Supprimez tous les fichiers que vous pouvez avoir sous `aem-standby/crx-quickstart/install`.
+   1. Créez un nouveau dossier intitulé `install.standby` sous `aem-standby/crx-quickstart/install`
 
    1. Créez deux fichiers de configuration nommés :
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
-   1. Create a new folder called `crx3` under `aem-standby/crx-quickstart/install`
+   1. Créez un nouveau dossier intitulé `crx3` sous `aem-standby/crx-quickstart/install`
 
-   1. Create the data store configuration and place it under `aem-standby/crx-quickstart/install/crx3`. Dans cet exemple, le fichier que vous devez créer est : 
+   1. Créez la configuration de stockage de données et placez-la sous `aem-standby/crx-quickstart/install/crx3`. Dans cet exemple, le fichier que vous devez créer est : 
 
       * org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
    1. Modifiez les fichiers et créez les configurations nécessaires.
@@ -204,15 +204,15 @@ Consultez ci-dessous la procédure devant être suivie afin de créer une instal
 
 Le service peut également être configuré par le biais de la console web, comme suit :
 
-1. Going to the Web Console at: *https://serveraddress:serverport/system/console/configMgr*
-1. Looking for a service called **Apache Jackrabbit Oak Segment Tar Cold Standby Service** and double click it to edit the settings.
+1. Accédez à la console Web à l&#39;adresse suivante : *https://serveraddress:serverport/system/console/configMgr*
+1. Vous recherchez un service appelé **Apache Jackrabbit Oak Segment Tar Cold Secondaire Service** et le doublon cliquez dessus pour modifier les paramètres.
 1. Enregistrez les paramètres et redémarrez les instances pour que les nouveaux paramètres puissent prendre effet.
 
 >[!NOTE]
 >
 >Vous pouvez vérifier le rôle d’une instance à tout moment en vérifiant la présence des modes d’exécution **principaux** ou **de secours** dans la console web des paramètres Sling.
 >
->This can be done by going to *https://localhost:4502/system/console/status-slingsettings* and checking the **&quot;Run Modes&quot;** line.
+>Pour ce faire, accédez à *https://localhost:4502/system/console/status-slingsettings* et vérifiez la ligne **&quot;Run Modes&quot;**.
 
 ## Première synchronisation {#first-time-synchronization}
 
@@ -272,18 +272,18 @@ Les paramètres OSGi suivants sont disponibles pour le service Cold Standby :
 
 * **Continuer la configuration :** si ce paramètre est activé, la configuration est stockée dans le référentiel plutôt que les fichiers de configuration OSGi traditionnels. Il est recommandé de garder ce paramètre désactivé sur des systèmes de production afin que la configuration principale ne soit pas effectuée par l’instance de secours.
 
-* **Mode (`mode`) :** cette option permet de choisir le mode d&#39;exécution de l&#39;instance.
+* **Mode (`mode`) :** cette option permet de choisir le mode d’exécution de l’instance.
 
 * **Port (port) :** le port à utiliser pour la communication. La valeur par défaut est de `8023`.
 
-* **Hôte Principal (`primary.host`) :** - l&#39;hôte de l&#39;instance Principale. Ce paramètre s’applique uniquement à l’instance de secours.
-* **Intervalle de synchronisation (`interval`) :** - ce paramètre détermine l&#39;intervalle entre la demande de synchronisation et ne s&#39;applique qu&#39;à l&#39;instance Secondaire.
+* **Hôte Principal (`primary.host`) :**  hôte de l’instance Principale. Ce paramètre s’applique uniquement à l’instance de secours.
+* **Intervalle de synchronisation (`interval`) :**  ce paramètre détermine l’intervalle entre la demande de synchronisation et s’applique uniquement à l’instance Secondaire.
 
-* **Plages IP autorisées (`primary.allowed-client-ip-ranges`) :** - les plages d&#39;adresses IP à partir desquelles la Principale autorisera les connexions.
-* **Sécurisé (`secure`) :** Activez le chiffrement SSL. Pour que ce paramètre fonctionne, il doit être activé sur toutes les instances.
-* **Délai d’expiration de lecture Secondaire (`standby.readtimeout`) :** Délai d’attente pour les requêtes émises par l’instance Secondaire en millisecondes. La valeur recommandée pour le délai d’expiration est 43200000. Il est généralement recommandé de définir le délai d’expiration sur au moins 12 heures.
+* **Plages IP autorisées (`primary.allowed-client-ip-ranges`) :**  les plages IP à partir desquelles la Principale autorise les connexions.
+* **Sécurisé (`secure`) :** activez le chiffrement SSL. Pour que ce paramètre fonctionne, il doit être activé sur toutes les instances.
+* **Délai d’expiration de lecture Secondaire (`standby.readtimeout`) :** Délai d’expiration pour les requêtes émises par l’instance Secondaire en millisecondes. La valeur recommandée pour le délai d’expiration est 43200000. Il est généralement recommandé de définir le délai d’expiration sur au moins 12 heures.
 
-* **Nettoyage automatique Secondaire (`standby.autoclean`) :** Appelez la méthode de nettoyage si la taille de la banque augmente lors d&#39;un cycle de synchronisation.
+* **Nettoyage automatique Secondaire (`standby.autoclean`) :** Appelez la méthode de nettoyage si la taille de la banque augmente au cours d’un cycle de synchronisation.
 
 >[!NOTE]
 >
@@ -291,7 +291,7 @@ Les paramètres OSGi suivants sont disponibles pour le service Cold Standby :
 >
 >La meilleure façon de procéder est de supprimer le fichier *sling.id* sur l’instance de secours, puis de redémarrer l’instance.
 
-## Procédures de basculement {#failover-procedures}
+## Procédures de basculement  {#failover-procedures}
 
 Si l’instance principale échoue, vous pouvez choisir l’une des instances de secours pour la remplacer, en modifiant le mode d’exécution de lancement, tel qu’expliqué ci-après :
 
@@ -304,7 +304,7 @@ Si l’instance principale échoue, vous pouvez choisir l’une des instances de
 1. Si vous avez un équilibreur de charge configuré, vous pouvez supprimer l’instance principale à partir de la configuration de l’équilibreur de charge.
 1. Sauvegardez le dossier `crx-quickstart` depuis le dossier d’installation de secours. Cela peut être utilisé comme point de départ lors de la configuration d’une nouvelle instance de secours. 
 
-1. Restart the instance using the `primary` runmode:
+1. Redémarrez l’instance à l’aide du mode d’exécution `primary` :
 
    ```shell
    java -jar quickstart.jar -r primary,crx3,crx3tar
@@ -319,9 +319,9 @@ La méthode recommandée pour appliquer des correctifs à une configuration Cold
 
 Vous pouvez le faire en suivant les étapes décrites ci-dessous :
 
-1. Arrêtez le processus de synchronisation sur l’instance Secondaire froide en accédant à la console JMX et en utilisant **org.apache.jackrabbit.oak : Statut (&quot;Secondaire&quot;)**bean. For more information on how to do this, see the section on [Monitoring](#monitoring).
+1. Arrêtez le processus de synchronisation sur l’instance Secondaire froide en accédant à la console JMX et en utilisant **org.apache.jackrabbit.oak : Statut (&quot;Secondaire&quot;)**bean. Pour plus d&#39;informations sur la façon de procéder, consultez la section [Surveillance](#monitoring).
 1. Arrêtez l’instance Cold Standby.
-1. Installez le correctif sur l’instance principale. For more details on how to install a hotfix, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+1. Installez le correctif sur l’instance principale. Pour plus d&#39;informations sur l&#39;installation d&#39;un correctif logiciel, voir [Comment utiliser des packages](/help/sites-administering/package-manager.md).
 1. Après l’installation, vérifiez si les problèmes persistent sur l’instance.
 1. Supprimez l’instance Cold Standby en supprimant son dossier d’installation.
 1. Arrêtez l’instance principal et clonez-la en copiant le système de fichiers de son dossier d’installation complet à l’emplacement de Cold Standby.
@@ -330,7 +330,7 @@ Vous pouvez le faire en suivant les étapes décrites ci-dessous :
 
 ## Surveillance {#monitoring}
 
-La fonction affiche les informations à l’aide de JMX ou des MBeans. Cela vous permet d’analyser l’état actuel de l’instance de secours et du maitre à l’aide de la [console JMX](/help/sites-administering/jmx-console.md). The information can be found in an MBean of `type org.apache.jackrabbit.oak:type="Standby"`named `Status`.
+La fonction affiche les informations à l’aide de JMX ou des MBeans. Cela vous permet d’analyser l’état actuel de l’instance de secours et du maitre à l’aide de la [console JMX](/help/sites-administering/jmx-console.md). Les informations se trouvent dans un MBean de `type org.apache.jackrabbit.oak:type="Standby"`nom `Status`.
 
 **Instance de secours**
 
@@ -342,10 +342,10 @@ Ce nœud possède cinq attributs en lecture seule :
 
 * `Mode:` Client : suivi de l’UUID utilisé pour identifier l’instance. Notez que cet UUID change chaque fois que la configuration est mise à jour.
 
-* `Status:` une représentation textuelle de l’état actuel (par exemple `running` ou `stopped`).
+* `Status:` une représentation textuelle de l’état actuel (comme  `running` ou  `stopped`).
 
 * `FailedRequests:`nombre d’erreurs consécutives.
-* `SecondsSinceLastSuccess:` nombre de secondes écoulées depuis la dernière communication réussie avec le serveur. It will display `-1` if no successful communication has been made.
+* `SecondsSinceLastSuccess:` nombre de secondes écoulées depuis la dernière communication réussie avec le serveur. Il affiche `-1` si aucune communication réussie n&#39;a été effectuée.
 
 Il existe également trois méthodes invocables : 
 
@@ -357,7 +357,7 @@ Il existe également trois méthodes invocables :
 
 L’observation de l’instance principale permet d’identifer certaines informations générales via un MBean dont la valeur ID correspond au numéro de port que le service de secours TarMK utilise (8023 par défaut). La plupart des méthodes et des attributs sont les mêmes que pour l’instance de secours, mais certains diffèrent : 
 
-* `Mode:` affichera toujours la valeur `primary`.
+* `Mode:` affichera toujours la valeur  `primary`.
 
 Des informations supplémentaires pour jusqu’à 10 clients (instances de secours) connectés au maître peuvent être récupérées. L’ID du MBean est l’UUID de l’instance. Il n’existe pas de méthode invocable pour ces MBeans, mais certains attributs en lecture seule très utiles :
 
@@ -375,7 +375,7 @@ Des informations supplémentaires pour jusqu’à 10 clients (instances de seco
 
 >[!NOTE]
 >
->Si vous exécutez [Nettoyage des révisions en ligne](/help/sites-deploying/revision-cleanup.md) sur l’instance principale, la procédure manuelle présentée ci-dessous n’est pas nécessaire. Additionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
+>Si vous exécutez [Nettoyage des révisions en ligne](/help/sites-deploying/revision-cleanup.md) sur l’instance principale, la procédure manuelle présentée ci-dessous n’est pas nécessaire. De plus, si vous utilisez le nettoyage de révision en ligne, l&#39;opération `cleanup ()` sur l&#39;instance Secondaire est exécutée automatiquement.
 
 >[!NOTE]
 >
@@ -386,25 +386,25 @@ Adobe recommande d&#39;exécuter régulièrement la maintenance afin d&#39;évit
 1. Arrêtez le processus de secours sur l’instance de secours en accédant à la console JMX et en utilisant le bean **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**. Pour plus d’informations sur cette procédure, reportez-vous à la section [Surveillance](/help/sites-deploying/tarmk-cold-standby.md#monitoring) ci-dessous.
 
 1. Arrêtez l’instance principale AEM. 
-1. Exécutez l’outil de compression Oak sur l’instance principale. For more details, see [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+1. Exécutez l’outil de compression Oak sur l’instance principale. Pour plus de détails, voir [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 1. Démarrez l’instance principale.
 1. Lancez le processus de secours sur l’instance de secours à l’aide du bean JMX décrit dans la première étape.
 1. Observez les journaux et attendez la fin de la synchronisation. Il se peut qu’une augmentation substantielle au niveau du référentiel de secours se produise ce moment là.
-1. Run the `cleanup()` operation on the standby instance, using the same JMX bean as described in the first step.
+1. Exécutez l’opération `cleanup()` sur l’instance Secondaire, en utilisant le même haricot JMX que celui décrit à la première étape.
 
 Il se peut que la synchronisation de l’instance de secours avec l’instance principale prenne plus de temps que prévu, car la compression hors ligne consiste à réécrire l’historique du référentiel, augmentant ainsi substantiellement le temps de calcul des modifications du référentiel. Notez également qu’une fois ce processus terminé, le référentiel sur l’instance de secours aura approximativement la même taille que le référentiel sur l’instance principale.
 
 Comme alternative, le référentiel principal peut être copié manuellement sur l’instance de secours après l’exécution de la compression sur l’instance principale. L’instance de secours est ainsi reconstituée à chaque compression.
 
-### Nettoyage de la mémoire d’entrepôt de données {#data-store-garbage-collection}
+### Nettoyage de la mémoire d’entrepôt de données  {#data-store-garbage-collection}
 
 Il est important d’exécuter de temps en temps le nettoyage de la mémoire sur les instances de l’entrepôt de données des fichiers. Autrement, les fichiers binaires supprimés resteront sur le système de fichiers, ce qui contribue à surcharger le lecteur. Pour exécuter la collecte des déchets, procédez comme suit :
 
-1. Run cold standby repository maintenance as described in the section [above](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
+1. Exécutez la maintenance Secondaire du référentiel à froid comme décrit dans la section [ci-dessus](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
 1. Une fois le processus de maintenance terminé et les instances relancées, procédez comme suit :
 
-   * On the primary, run the data store garbage collection via the relevant JMX bean as described in [this article](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
-   * On the standby, the data store garbage collection is available only via the **BlobGarbageCollection** MBean - `startBlobGC()`. **RepositoryManagement **MBean n&#39;est pas disponible sur le Secondaire.
+   * Sur la Principale, exécutez la collecte des déchets de la banque de données via le bean JMX approprié, comme décrit dans [cet article](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
+   * Sur le Secondaire, la collecte des déchets de la banque de données est disponible uniquement par le biais de **BlobGarbageCollection** MBean - `startBlobGC()`. **RepositoryManagement **MBean n&#39;est pas disponible sur le Secondaire.
 
    >[!NOTE]
    >
