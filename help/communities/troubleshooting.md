@@ -1,6 +1,6 @@
 ---
-title: Résolution des incidents
-seo-title: Résolution des incidents
+title: Dépannage
+seo-title: Dépannage
 description: Dépannage de la communauté, y compris les problèmes connus
 seo-description: Dépannage de la communauté, y compris les problèmes connus
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Résolution des incidents {#troubleshooting}
+# Dépannage {#troubleshooting}
 
 Cette section contient des préoccupations communes et des questions connues.
 
@@ -34,7 +34,8 @@ L’utilisation de Dispatcher 4.1.6 ou version ultérieure permettra de résoudr
 
 Si un forum a été créé sur CQ 5.4 et que des sujets ont été publiés, puis que le site a été mis à niveau vers AEM 5.6.1 ou une version ultérieure, toute tentative de vue des publications existantes peut entraîner une erreur sur la page :
 
-Caractère de modèle non autorisé &quot;a&#39;Impossible d&#39;envoyer la requête à `/content/demoforums/forum-test.html` ce serveur et les journaux contiennent les éléments suivants :
+Caractère de modèle non autorisé &quot;a&quot;
+Impossible d&#39;envoyer la requête à `/content/demoforums/forum-test.html` sur ce serveur et les journaux contiennent les éléments suivants :
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -52,19 +53,19 @@ Ainsi, tout code utilisant l’API RelativeTimeFormat() doit changer :
 
 L’échec est différent sur l’auteur et la publication. Sur l&#39;auteur, il échoue silencieusement et n&#39;affiche simplement pas les sujets du forum. Lors de la publication, l’erreur est générée sur la page.
 
-Pour plus d’informations, voir l’API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API.
+Pour plus d’informations, voir l’API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html).
 
-## Préoccupations communes {#common-concerns}
+## Préoccupations courantes {#common-concerns}
 
 ### Avertissement dans les journaux : Barres de poignées obsolètes {#warning-in-logs-handlebars-deprecated}
 
 Au démarrage (pas au premier - mais tous les jours après), l&#39;avertissement suivant peut être vu dans les journaux :
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` a été remplacé par `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` a été remplacé par  `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Cet avertissement peut être ignoré en toute sécurité, car `jknack.handlebars.Handlebars`il est utilisé par [SCF](scf.md#handlebarsjavascripttemplatinglanguage)et s&#39;accompagne de son propre utilitaire d&#39;assistance i18n. En début, il est remplacé par un aide [](handlebars-helpers.md#i-n)i18n spécifique AEM. Cet avertissement est généré par la bibliothèque tierce pour confirmer le remplacement d’un assistant existant.
+Cet avertissement peut être ignoré en toute sécurité car `jknack.handlebars.Handlebars`, utilisé par [SCF](scf.md#handlebarsjavascripttemplatinglanguage), est fourni avec son propre utilitaire d&#39;assistance i18n. En début, il est remplacé par un AEM spécifique [i18n helper](handlebars-helpers.md#i-n). Cet avertissement est généré par la bibliothèque tierce pour confirmer le remplacement d’un assistant existant.
 
-### Avertissement dans les journaux : OakResourceListener, processusOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
+### Avertissement dans les journaux : OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
 La publication de plusieurs rubriques de forum Communautés de réseaux sociaux peut générer d’énormes quantités de journaux d’avertissement et d’informations provenant d’OakResourceListener processOsgiEventQueue.
 
