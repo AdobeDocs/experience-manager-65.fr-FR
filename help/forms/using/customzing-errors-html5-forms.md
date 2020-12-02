@@ -38,8 +38,8 @@ Après avoir extrait le package, ouvrez le dossier CustomErrorManager-1.0-SNAPSH
 
 Pour personnaliser la position d’un message d’erreur, ajoutez une balise &lt;div> à chaque champ d’erreur et d’avertissement, positionnez la balise &lt;div> à gauche ou à droite, puis appliquez les styles CSS à la balise &lt;div>. Pour obtenir des instructions détaillées, consultez la procédure ci-dessous :
 
-1. Navigate to the `CustomErrorManager-1.0-SNAPSHOT`folder and open the `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` folder.
-1. Open the `customErrorManager.js` file for editing. The `markError` function in the file accepts the following parameters:
+1. Accédez au dossier `CustomErrorManager-1.0-SNAPSHOT`et ouvrez le dossier `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
+1. Ouvrez le fichier `customErrorManager.js` pour le modifier. La fonction `markError` du fichier accepte les paramètres suivants :
 
    |  |  |
    |---|---|
