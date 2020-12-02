@@ -25,7 +25,7 @@ Les rubriques suivantes décrivent comment effectuer certaines tâches de déplo
 * [Comment utiliser la visionneuse de journaux](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 * [Comment purger les workflows et le journal d’audit](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [Conseils de réglage de la performance](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html)
+* [Conseils de réglage de la performance](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 * [Comment supprimer des fonctions de l’écran de bienvenue](/help/sites-developing/customizing-the-welcome-console.md)
 * [Comment désactiver la fonction de suivi de l’emplacement](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
 
