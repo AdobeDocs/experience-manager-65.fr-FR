@@ -22,7 +22,7 @@ ht-degree: 55%
 
 Les entreprises collectent et traitent les données de plusieurs formulaires, systèmes principaux et autres sources de données. Le traitement des données implique des procédures de révision et d&#39;approbation, des tâches répétitives et l&#39;archivage des données. Par exemple, la révision d’un formulaire et sa conversion en document PDF. Une fois cette opération effectuée manuellement, les tâches répétitives peuvent prendre beaucoup de temps et de ressources.
 
-Vous pouvez utiliser le processus [centré sur Forms sur OSGi](../../forms/using/aem-forms-workflow.md) pour créer rapidement des workflows basés sur des formulaires adaptatifs. Ces workflows peuvent vous aider à automatiser les workflows de révision et d’approbation, les workflows de processus d’entreprise et d’autres tâches répétitives. Ces workflows permettent également de traiter des documents (création, assemblage, distribution et archivage de documents PDF, ajout de signatures numériques pour limiter l’accès aux documents, décodage de formulaires à code à barres, etc.) et d’utiliser le processus de signature Adobe Sign avec des formulaires et des documents.
+Vous pouvez utiliser [le flux de travaux centré sur Forms sur OSGi](../../forms/using/aem-forms-workflow.md) pour créer rapidement des workflows basés sur des formulaires adaptatifs. Ces workflows peuvent vous aider à automatiser les workflows de révision et d’approbation, les workflows de processus d’entreprise et d’autres tâches répétitives. Ces workflows permettent également de traiter des documents (création, assemblage, distribution et archivage de documents PDF, ajout de signatures numériques pour limiter l’accès aux documents, décodage de formulaires à code à barres, etc.) et d’utiliser le processus de signature Adobe Sign avec des formulaires et des documents.
 
 Une fois configurés, ces workflows peuvent être déclenchés manuellement pour terminer un processus défini ou s’exécuter par programmation lorsque les utilisateurs envoient un formulaire ou une communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms.
 
@@ -32,11 +32,11 @@ AEM Forms est une plate-forme d’entreprise performante. Le flux de travaux ce
 >
 >Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Consultez une [comparaison](capabilities-osgi-jee-workflows.md) des Workflows d’AEM centrés sur Forms sur OSGi et Process Management on JEE pour découvrir les différences et les similitudes dans les fonctionnalités.
 >
->Après la comparaison, si vous choisissez d’installer la fonctionnalité Process Management sur la pile JEE, voir [Installation ou mise à niveau d’AEM Forms sur JEE](/help/forms/home.md) pour plus d’informations sur l’installation et la configuration de la pile JEE et sur les fonctionnalités Process Management.
+>Après la comparaison, si vous choisissez d’installer la fonctionnalité Process Management sur la pile JEE, voir [Installation ou mise à niveau d’AEM Forms sur JEE](/help/forms/home.md) pour plus d’informations sur l’installation et la configuration de la pile JEE et les fonctionnalités Process Management.
 
 ## Topologie de déploiement {#deployment-topology}
 
-Le package du module complémentaire AEM Forms est une application déployée sur AEM. Pour exécuter le flux de travaux centré sur Forms sur la fonctionnalité OSGi, vous devez disposer d’au moins une instance d’auteur ou de traitement AEM (auteur de production). A processing instance is a [hardened AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. N’effectuez aucune création réelle, telle que la création de workflows ou de formulaires adaptatifs, sur l’auteur de la production.
+Le package du module complémentaire AEM Forms est une application déployée sur AEM. Pour exécuter le flux de travaux centré sur Forms sur la fonctionnalité OSGi, vous devez disposer d’au moins une instance d’auteur ou de traitement AEM (auteur de production). Une instance de traitement est une instance [AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) endurcie. N’effectuez aucune création réelle, telle que la création de workflows ou de formulaires adaptatifs, sur l’auteur de la production.
 
 La topologie suivante est une topologie indicative permettant d’exécuter les communications interactives AEM Forms, la gestion des correspondances, la capture de données AEM Forms et les fonctionnalités du processus basé sur l’utilisation de Forms sur OSGi. Pour plus d’informations sur la topologie, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -48,7 +48,7 @@ Le flux de travaux centré sur AEM Forms sur OSGi exécute AEM interface de cré
 
 >[!NOTE]
 >
->Passez à la section Etapes [](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) suivantes du document si vous avez déjà installé AEM Forms sur OSGi, comme expliqué dans l’article [Installer et configurer les fonctionnalités](../../forms/using/installing-configuring-aem-forms-osgi.md) de capture de données.
+>Passez à la section [Étapes suivantes](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) du document, si vous avez déjà installé AEM Forms sur OSGi, comme expliqué dans l&#39;article [installer et configurer les capacités de capture de données](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 Avant de commencer à installer et à configurer un flux de travaux centré sur Forms sur OSGi, assurez-vous que :
 
@@ -102,18 +102,18 @@ Avant de commencer à installer et à configurer un flux de travaux centré sur 
 
 Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient un flux de travaux centré sur Forms sur OSGi et d&#39;autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Open [Software Distribution](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Ouvrez [Distribution de logiciels](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
-1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
-1. Open [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
-1. Select the package and click **[!UICONTROL Install]**.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l&#39;option **[!UICONTROL Rechercher les téléchargements]** pour filtrer les résultats.
+1. Appuyez sur le nom du package correspondant à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-   You can also download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) article.
+   Vous pouvez également télécharger le package via le lien direct répertorié dans l&#39;article [AEM Forms versions](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
 
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d&#39;arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED ne s&#39;affichent plus dans le fichier [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal est stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d&#39;arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED ne s&#39;affichent plus dans le fichier  [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal est stable.
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 
 ## Configurations post-installation {#post-installation-configurations}
@@ -127,9 +127,9 @@ AEM Forms comporte quelques configurations obligatoires et facultatives. Les con
 Effectuez les étapes suivantes sur toutes les instances d’auteur et de publication pour démarrer et déléguer les bibliothèques :
 
 1. Arrêtez l’instance AEM sous-jacente.
-1. Open the [AEM installation directory]\crx-quickstart\conf\sling.properties file for editing.
+1. Ouvrez le fichier [AEM répertoire d’installation]\crx-quickstart\conf\sling.properties pour le modifier.
 
-   If you used [AEM installation directory]\crx-quickstart\bin\start.bat to start AEM, then edit the sling.properties located at [AEM_root]\crx-quickstart\.
+   Si vous avez utilisé [AEM répertoire d’installation]\crx-quickstart\bin\start.bat pour l’AEM de début, modifiez le fichier sling.properties situé à [racine_]\crx-quickstart\.
 
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
@@ -144,16 +144,16 @@ Effectuez les étapes suivantes sur toutes les instances d’auteur et de public
 
 Effectuez les étapes suivantes sur toutes les instances d’auteur et de publication pour ajouter le package à la liste autorisée :
 
-1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. The default URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez la **configuration du pare-feu de désérialisation**.
-1. Add the **sun.util.calendar** package to the **allowlist** field. Cliquez sur Enregistrer.
+1. Ajoutez le package **sun.util.calendar** dans le champ **liste autorisée**. Cliquez sur Enregistrer.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
 
 ### Configurations post-installation facultatives {#optional-post-installation-configurations}
 
 #### La configuration de Dispatcher {#configure-dispatcher}
 
-Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques.  Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. If you use [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), then perform the following configurations for AEM Forms:
+Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques.  Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. Si vous utilisez [Répartiteur](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), effectuez les configurations suivantes pour AEM Forms :
 
 1. Configurez l’accès à AEM Forms:
 
@@ -161,23 +161,23 @@ Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pou
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Enregistrez et fermez le fichier. Pour des informations détaillées sur les filtres, voir la [documentation du répartiteur](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Enregistrez et fermez le fichier. Pour des informations détaillées sur les filtres, voir la [documentation du répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Configurez le service de filtrage des référents :
 
-   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. The Default URL of the configuration manager is https://&#39;server&#39;:[port_number]/system/console/configMgr. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. The format of the entry is `https://'[server]:[port]'`.
+   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. L’URL par défaut du gestionnaire de configuration est https://&#39;server&#39;:[port_number]/system/console/configMgr. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. Le format de l&#39;entrée est `https://'[server]:[port]'`.
 
 #### Configuration du cache {#configure-cache}
 
 La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès aux données, réduire le temps de réponse et améliorer les vitesses d’entrée/sortie (E/S). Le cache de formulaires adaptatifs stocke uniquement le contenu HTML et la structure JSON d’un formulaire adaptatif sans enregistrer les données pré-renseignées. Cela permet de réduire le temps nécessaire pour effectuer le rendu d’un formulaire adaptatif.
 
-* Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif. 
+* Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif. 
 * Lors du développement des composants personnalisés, sur le serveur utilisé pour le développement, gardez le cache de formulaires adaptatifs désactivé.
 
 Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
-1. Go to AEM web console configuration manager at `https://'[server]:[port]'/system/console/configMgr`.
-1. Click **Adaptive Form Configuration Service** to edit its configuration values. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.   Cliquez sur **Save**.
+1. Accédez à AEM gestionnaire de configuration de la console Web à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
+1. Cliquez sur **Service de configuration de formulaire adaptatif** pour modifier ses valeurs de configuration. Dans la boîte de dialogue Modifier les valeurs de configuration, spécifiez le nombre maximal de formulaires ou de documents qu&#39;une instance du serveur AEM Forms peut mettre en cache dans le champ **Nombre de Forms adaptatif**. La valeur par défaut est 100. Cliquez sur **Enregistrer**.
 
    >[!NOTE]
    >
@@ -187,7 +187,7 @@ Effectuez les étapes suivantes pour configurer le cache de formulaires adaptati
 
 Adobe Sign autorise les processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
 
-In a typical Adobe Sign and Forms-centric workflow on OSGi scenario, a user fills an adaptive form to **apply for a service**. Par exemple, un formulaire de demande de carte de paiement et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, un processus d’approbation/rejet est démarré. Le prestataire examine la demande dans AEM Boîte de réception et utilise Adobe Sign pour la signer électroniquement. Pour activer les processus de signature électronique similaires, vous pouvez intégrer Adobe Sign à AEM Forms.
+Dans un scénario typique de processus Adobe Sign et centré sur Forms sur OSGi, un utilisateur remplit un formulaire adaptatif pour **demander un service**. Par exemple, un formulaire de demande de carte de paiement et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, un processus d’approbation/rejet est démarré. Le prestataire examine la demande dans AEM Boîte de réception et utilise Adobe Sign pour la signer électroniquement. Pour activer les processus de signature électronique similaires, vous pouvez intégrer Adobe Sign à AEM Forms.
 
 Pour utiliser Adobe Sign avec AEM Forms, [intégrez Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
