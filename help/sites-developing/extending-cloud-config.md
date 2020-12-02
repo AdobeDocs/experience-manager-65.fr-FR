@@ -32,8 +32,8 @@ Les principes suivis dans le développement des configurations sont basés sur l
 * Les configurations (par exemple les propriétés/paragraphes) sont héritées du ou des parents.
 * Référencées à partir du(des) nœud(s) analytique(s) par chemin.
 * Facilement extensibles.
-* Has the flexibility to cater for more complex configurations, such as [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Prise en charge des dépendances (par exemple, les modules externes [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) nécessitent une configuration [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Dispose de la flexibilité nécessaire pour répondre à des configurations plus complexes, telles que [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Prise en charge des dépendances (p. ex. [Les modules externes Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ont besoin d&#39;une configuration [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
 
 ## Structure {#structure}
 
@@ -66,7 +66,7 @@ Le fournisseur de services doit également fournir la page de service :
 
 `/etc/cloudservices/<service-name>`
 
-### Template (Modèle){#template}
+### Template {#template}
 
 Votre modèle étendra le modèle de base :
 
@@ -111,7 +111,7 @@ Après avoir configuré votre modèle et votre composant, vous pouvez ajouter vo
 
 ### Modèle de contenu {#content-model}
 
-The content model is stored as `cq:Page` under:
+Le modèle de contenu est stocké sous `cq:Page` sous :
 
 `/etc/cloudservices/<service-name>(/*)`
 
@@ -122,7 +122,7 @@ The content model is stored as `cq:Page` under:
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-The configurations are stored under the subnode `jcr:content`.
+Les configurations sont stockées sous le sous-noeud `jcr:content`.
 
 * Les propriétés fixes, définies dans une boîte de dialogue, doivent être stockées directement sur le `jcr:node`.
 * Les éléments dynamiques (utilisant `parsys` ou `iparsys`) se servent d’un sous-nœud pour stocker les données du composant.
@@ -142,7 +142,7 @@ Pour la documentation de référence sur l’API, voir [com.day.cq.wcm.webservic
 
 ### Intégration d’AEM {#aem-integration}
 
-Available services are listed in the **Cloud Services** tab of the **Page Properties** dialog (of any page that inherits from `foundation/components/page` or `wcm/mobile/components/page`).
+Les services disponibles sont répertoriés dans l&#39;onglet **Cloud Services** de la boîte de dialogue **Propriétés de la page** (de toute page héritant de `foundation/components/page` ou `wcm/mobile/components/page`).
 
 L’onglet contient également :
 
@@ -153,7 +153,7 @@ L’onglet contient également :
 
 Lorsque vous stockez des informations d’identification d’utilisateur pour le service, tous les mots de passe doivent être chiffrés.
 
-Pour cela, il faut ajouter un champ de formulaire masqué. This field should have the annotation `@Encrypted` in the property name; i.e. for the `password` field the name would be written as:
+Pour cela, il faut ajouter un champ de formulaire masqué. Ce champ doit avoir l&#39;annotation `@Encrypted` dans le nom de la propriété ; Par exemple, pour le champ `password`, le nom serait écrit comme suit :
 
 `password@Encrypted`
 
@@ -165,7 +165,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
 
 >[!NOTE]
 >
->By default the `EcryptionPostProcessor` only encrypts `POST` requests made to `/etc/cloudservices`.
+>Par défaut, `EcryptionPostProcessor` ne chiffre que les demandes `POST` envoyées à `/etc/cloudservices`.
 
 #### Propriétés supplémentaires pour les nœuds jcr:content de page de service {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -177,7 +177,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page où<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> est incluse (normalement avant la <code>body</code> balise).<br /> Dans le cas de Google Analytics et Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs.</td>
+   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> où est incluse (normalement avant la  <code>body</code> balise).<br /> Dans le cas de Google Analytics et Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs.</td>
   </tr>
   <tr>
    <td>description</td>
