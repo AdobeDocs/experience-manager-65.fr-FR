@@ -64,23 +64,23 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
  </tbody>
 </table>
 
-## Ajout d’options Java à JBoss {#add-java-options-to-jboss}
+## Ajout d’options Java à JBoss  {#add-java-options-to-jboss}
 
 1. Arrêtez le serveur d’applications JBoss.
-1. Open the *[appserver root]*/bin/run.bat (Windows) or run.sh (Linux or UNIX) in an editor and add any of the Java options as required.
+1. Ouvrez *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez les options Java requises.
 1. Redémarrez le serveur.
 
-## Ajout d’options Java à WebLogic {#add-java-options-to-weblogic}
+## Ajout d’options Java à WebLogic  {#add-java-options-to-weblogic}
 
-1. Start the WebLogic administration console by typing https://[host name]:&#39;port&#39;/console in the URL line of a web browser.
+1. Début de WebLogic Administration Console en saisissant https://[nom d’hôte]:&#39;port&#39;/console dans la ligne d’adresse d’un navigateur Web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
-1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. For example, adding - `Dadobe.healthmonitor.enabled=false` disables Health Monitor.
+1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. Par exemple, l’ajout de - `Dadobe.healthmonitor.enabled=false` désactive Health Monitor.
 1. Cliquez sur Enregistrer, puis sur Activer les changements.
 1. Redémarrez le serveur géré WebLogic.
 
-## Ajout d’options Java à WebSphere {#add-java-options-to-websphere}
+## Ajout d’options Java à WebSphere  {#add-java-options-to-websphere}
 
 1. Dans l’arborescence de navigation de la console d’administration WebSphere, effectuez la procédure suivante pour le serveur d’applications :
 
