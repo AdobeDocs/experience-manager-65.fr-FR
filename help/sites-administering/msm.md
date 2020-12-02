@@ -1,6 +1,6 @@
 ---
-title: '"Réutilisation de contenu : Multi Site Manager et Live Copy"'
-seo-title: '"Réutilisation de contenu : Multi Site Manager et Live Copy"'
+title: '"Réutilisation de contenu : Multi Site Manager et Live Copy"'
+seo-title: '"Réutilisation de contenu : Multi Site Manager et Live Copy"'
 description: Découvrez la réutilisation de contenu avec les Live Copies et Multi Site Manager.
 seo-description: Découvrez la réutilisation de contenu avec les Live Copies et Multi Site Manager.
 uuid: 9f955226-8fc9-4357-b90c-c6896b0dc4b4
@@ -18,7 +18,7 @@ ht-degree: 78%
 ---
 
 
-# Réutilisation de contenu : Multi Site Manager et Live Copy{#reusing-content-multi-site-manager-and-live-copy}
+# Réutilisation de contenu : Multi Site Manager et Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
 Multi Site Manager (MSM) vous permet d’utiliser le même contenu à plusieurs endroits différents. Pour ce faire, MSM utilise sa fonctionnalité Live Copy :
 
@@ -40,7 +40,7 @@ La présente section et les pages suivantes abordent les questions connexes :
 * [Conflits de déploiement dans MSM](/help/sites-administering/msm-rollout-conflicts.md)
 * [Meilleures pratiques MSM](/help/sites-administering/msm-best-practices.md)
 
-## Scénarios possibles {#possible-scenarios}
+## Scénarios possibles  {#possible-scenarios}
 
 Il existe de nombreux cas d’utilisation de MSM et des Live Copies, par exemple :
 
@@ -76,7 +76,7 @@ Il existe de nombreux cas d’utilisation de MSM et des Live Copies, par exemple
    >MSM ne traduit pas le contenu. Il crée la structure requise et déploie le contenu.
    >
    >
-   >See [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) if you want to extend such an example.
+   >Voir [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) si vous souhaitez développer un tel exemple.
 
 * **National - Siège social et filiales régionales**
 
@@ -121,7 +121,7 @@ Il existe de nombreux cas d’utilisation de MSM et des Live Copies, par exemple
    >  * Le nombre de copies individuelles qu’il faudra ajuster.
 
 
-## MSM à partir de l’interface utilisateur {#msm-from-the-ui}
+## MSM à partir de l’interface utilisateur  {#msm-from-the-ui}
 
 MSM est directement accessible dans l’interface utilisateur à l’aide de différentes options de la console appropriée. La section suivante répertorie les principaux emplacements :
 
@@ -137,15 +137,15 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
    * MSM vous permet de [créer une Live Copy ad hoc (unique) d’une page ou d’une sous-branche spécifique d’un site web](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page). Par exemple, vous pouvez dupliquer une sous-branche pour fournir des informations sur la nouvelle version d’un produit.
    * Crée une Live Copy ad hoc (aucune configuration de plan directeur requise).
    * Peut être utilisé pour créer (immédiatement) une Live Copy d’une page/branche.
-   * Requires **Synchronize** (does not provide the **Rollout** button).
+   * Nécessite **Synchroniser** (ne fournit pas le bouton **Déploiement**).
 
 * **Afficher les propriétés** (**Sites**)
 
-   * Where appropriate, this option helps you [monitor your live copy](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy) by providing information on the related **Live Cop** y or **Blueprint**.
+   * Le cas échéant, cette option vous aide [à surveiller votre copie dynamique](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy) en fournissant des informations sur le **Live Cop** y ou **Blueprint** correspondant.
 
 * **Références** (**Sites**)
 
-   * The [References](/help/sites-authoring/basic-handling.md#references) rail provides information about **Live Copies** together with access to appropriate actions.
+   * Le rail [References](/help/sites-authoring/basic-handling.md#references) fournit des informations sur **Live Copies** ainsi que l&#39;accès aux actions appropriées.
 
 * **Aperçu de la Live Copy** (**Sites**)
 
@@ -159,7 +159,7 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 >
 >Les aspects des fonctionnalités MSM sont utilisés dans plusieurs autres fonctionnalités AEM (par exemple, Lancements, Catalogue). Dans ces cas, la Live Copy est gérée par cette fonction.
 
-### Termes utilisés {#terms-used}
+### Termes utilisés  {#terms-used}
 
 En guise d’introduction, le tableau suivant offre un aperçu des principaux termes utilisés avec MSM. Ceux-ci seront traités plus en détail dans les sections et les pages suivantes :
 
@@ -187,7 +187,7 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
   </tr>
   <tr>
    <td><strong>Relations en direct</strong><br /> </td>
-   <td>Définition efficace de l'héritage pour une ressource donnée ; les connexions entre la source et les copies en direct.<br /> </td>
+   <td>Définition efficace de l'héritage pour une ressource donnée ; les connexions entre la source et les copies dynamiques.<br /> </td>
    <td>Assure que les modifications apportées à la source peuvent être synchronisées avec la Live Copy.</td>
   </tr>
   <tr>
@@ -202,7 +202,7 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
   </tr>
   <tr>
    <td><strong>Synchronisation</strong></td>
-   <td>Terme générique pour la synchronisation du contenu entre la source et les copies dynamiques (par <strong>déploiement</strong> et <strong>synchronisation</strong>).</td>
+   <td>Terme générique de synchronisation du contenu entre la source et les copies dynamiques (par <strong>Déploiement</strong> et <strong>Synchronisation</strong>).</td>
    <td> </td>
   </tr>
   <tr>
@@ -259,7 +259,7 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
 
 >[!NOTE]
 >
->See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
+>Voir [Présentation de l’API Java](/help/sites-developing/extending-msm.md#overview-of-the-java-api) pour les noms d’objet.
 
 ## Live Copies {#live-copies}
 
@@ -274,16 +274,16 @@ Une Live Copy MSM est une copie du contenu spécifique d’un site pour laquell
 
 * Les règles de synchronisation, ou configurations de déploiement, déterminent quelles propriétés sont synchronisées et à quel moment se produit la synchronisation.
 
-In the previous example, `/content/we-retail/language-masters/en` is the global master site in English. Pour réutiliser le contenu de ce site, des Live Copies MSM sont créées :
+Dans l’exemple précédent, `/content/we-retail/language-masters/en` est le site maître global en anglais. Pour réutiliser le contenu de ce site, des Live Copies MSM sont créées :
 
-* The content below `/content/we-retail/language-masters/en` is the source.
+* Le contenu ci-dessous `/content/we-retail/language-masters/en` est la source.
 
-* Le contenu ci-dessous `/content/we-retail/language-masters/en` est copié sous les `/content/we-retail/us/en/`noeuds, `/content/we-retail/gb/en`, `/content/we-retail/ca/en`et `/content/we-retail/au/en` . Il s’agit des Live Copies.
+* Le contenu ci-dessous `/content/we-retail/language-masters/en` est copié sous les noeuds `/content/we-retail/us/en/`, `/content/we-retail/gb/en`, `/content/we-retail/ca/en` et `/content/we-retail/au/en`. Il s’agit des Live Copies.
 
-* Authors make changes to pages below `/content/we-retail/language-masters/en`.
+* Les auteurs apportent des modifications aux pages suivantes `/content/we-retail/language-masters/en`.
 * Une fois la synchronisation déclenchée, MSM synchronise ces modifications vers les Live Copies.
 
-### Live Copies - Composition {#live-copies-composition}
+### Live Copies - Composition  {#live-copies-composition}
 
 >[!NOTE]
 >
@@ -303,22 +303,22 @@ La forme de base de la Live Copy comprend :
    * Liez la ressource de Live Copy à son plan directeur/sa source.
    * Sont utilisés lors de la réalisation de l’héritage et du déploiement.
 
-* Changes can be [synchronized](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) according to requirements.
+* Les modifications peuvent être [synchronisées](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) en fonction des besoins.
 
 ![chlimage_1-367](assets/chlimage_1-367.png)
 
 #### Live Copy avec des pages non-Live Copy {#live-copy-with-non-live-copy-pages}
 
-Lorsque vous créez une Live Copy dans AEM, vous pouvez voir et naviguer dans la branche Live Copy, et utiliser les fonctionnalités AEM normales sur la branche Live Copy. This means that you (or a process) can create new resources (pages and/or paragraphs) inside the live copy branch (e.g. `myCanadaOnlyProduct`).
+Lorsque vous créez une Live Copy dans AEM, vous pouvez voir et naviguer dans la branche Live Copy, et utiliser les fonctionnalités AEM normales sur la branche Live Copy. Cela signifie que vous (ou un processus) pouvez créer de nouvelles ressources (pages et/ou paragraphes) dans la branche de la copie dynamique (par ex. `myCanadaOnlyProduct`).
 
 * Ces ressources n’ont aucune relation en direct avec les pages source/de plan directeur et ne sont pas synchronisées.
-* Certains scénarios peuvent se produire, et MSM les traite comme des cas spéciaux. Par exemple, lorsque vous (ou un processus) créez une page ayant la même position et le même nom dans les branches source/de plan directeur et Live Copy. For such situations see [MSM Rollout Conflicts](/help/sites-administering/msm-rollout-conflicts.md) for more information.
+* Certains scénarios peuvent se produire, et MSM les traite comme des cas spéciaux. Par exemple, lorsque vous (ou un processus) créez une page ayant la même position et le même nom dans les branches source/de plan directeur et Live Copy. Pour de telles situations, voir [Conflits de déploiement MSM](/help/sites-administering/msm-rollout-conflicts.md) pour plus d&#39;informations.
 
 ![chlimage_1-368](assets/chlimage_1-368.png)
 
 #### Live Copies imbriquées {#nested-live-copies}
 
-When you (or a process) create a [new page within an existing live copy](#live-copy-with-non-live-copy-pages) this new page can also be set up as a live copy of a different blueprint. Il s’agit d’une copie dynamique imbriquée, où le comportement de la deuxième copie dynamique (interne) est affecté par la première copie dynamique (externe) de la manière suivante :
+Lorsque vous (ou un processus) créez une [nouvelle page dans une copie dynamique ](#live-copy-with-non-live-copy-pages) existante, cette nouvelle page peut également être configurée en tant que copie dynamique d&#39;un autre modèle. Il s’agit d’une copie dynamique imbriquée, où le comportement de la deuxième copie dynamique (interne) est affecté par la première copie dynamique (externe) de la manière suivante :
 
 * Un déploiement profond déclenché pour la Live Copy supérieure peut continuer dans la Live Copy imbriquée (par exemple, si le déclencheur correspond).
 * Tous les liens entre les sources sont réécrits dans les Live Copies.
@@ -331,18 +331,18 @@ When you (or a process) create a [new page within an existing live copy](#live-c
 >
 >Si vous déplacez/renommez une page de la branche Live Copy, cette opération est traitée (en interne) comme une Live Copy imbriquée pour permettre à AEM d’effectuer le suivi des relations.
 
-#### Live Copies empilées {#stacked-live-copies}
+#### Live Copies empilées  {#stacked-live-copies}
 
 Une Live Copy est appelée Live Copy empilée lorsqu’elle est créée en tant qu’enfant d’une Live Copy superficielle. Elle se comporte de la même façon qu’une [Live Copy imbriquée](#nested-live-copies).
 
-### Source, plans directeurs et configurations de plan directeur {#source-blueprints-and-blueprint-configurations}
+### Source, plans directeurs et configurations de plan directeur  {#source-blueprints-and-blueprint-configurations}
 
 N’importe quelle page ou branche de pages peut être utilisée comme source d’une Live Copy.
 
 Toutefois, MSM vous permet également de définir une configuration de plan directeur qui spécifie un chemin d’accès source. L&#39;utilisation d&#39;une configuration de schéma directeur présente les avantages suivants :
 
-* Allow the author to use the **Rollout** option on a blueprint - to (explicitly) push modifications to live copies that inherit from this blueprint.
-* Allow the author to use **Create Site**; this allows the user to easily select languages and configure the structure of the live copy.
+* Permettre à l&#39;auteur d&#39;utiliser l&#39;option **Déploiement** sur un plan directeur pour (explicitement) pousser les modifications à des copies dynamiques qui héritent de ce plan.
+* Autoriser l’auteur à utiliser **Créer un site**; cela permet à l’utilisateur de sélectionner facilement les langues et de configurer la structure de la copie dynamique.
 * définit une configuration de déploiement par défaut pour les Live Copies partageant une relation avec le plan directeur.
 
 La source d’une Live Copy peut comprendre des pages normales ou des pages englobées par une configuration de plan directeur. Ces deux scénarios sont valides.
@@ -394,11 +394,11 @@ Une configuration de déploiement définit quand et comment une Live Copy est sy
 
 Les configurations de déploiement peuvent être réutilisées, de sorte que plusieurs Live Copies puissent utiliser la même configuration de déploiement. L’installation standard comprend plusieurs [configurations de déploiement](/help/sites-administering/msm-sync.md#installed-rollout-configurations).
 
-### Conflits de déploiement {#rollout-conflicts}
+### Conflits de déploiement  {#rollout-conflicts}
 
 Les déploiements peuvent devenir complexes, en particulier lorsque les auteurs publient du contenu à la fois dans la source et la Live Copy. Il est donc utile de savoir comment AEM gère les [conflits susceptibles de se produire pendant le déploiement](/help/sites-administering/msm-rollout-conflicts.md).
 
-### Suspension et annulation de l’héritage et de la synchronisation {#suspending-and-cancelling-inheritance-and-synchronization}
+### Suspension et annulation de l’héritage et de la synchronisation  {#suspending-and-cancelling-inheritance-and-synchronization}
 
 Chaque page et chaque composant dans une Live Copy sont associés à leur page source et leur composant source via des relations en direct. Les relations en direct configurent la synchronisation du contenu Live Copy à partir de la source.
 
@@ -420,31 +420,31 @@ L’action Désolidariser supprime définitivement les relations en direct entre
 >
 >Voir [Désolidarisation d’une Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) pour plus d’informations, y compris pour connaître l’impact associé sur les sous-pages et les pages parentes.
 
-## Étapes standard d’utilisation de MSM {#standard-steps-for-using-msm}
+## Étapes standard d’utilisation de MSM  {#standard-steps-for-using-msm}
 
 Les étapes suivantes décrivent la procédure standard d’utilisation de MSM pour réutiliser le contenu et synchroniser les modifications apportées aux Live Copies.
 
 1. Développez le contenu du site source.
 1. Déterminez la configuration de déploiement à utiliser.
 
-   1. MSM [installs several rollout configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) that can satisfy a number of use cases.
+   1. MSM [installe plusieurs configurations de déploiement](/help/sites-administering/msm-sync.md#installed-rollout-configurations) qui peuvent répondre à un certain nombre de cas d&#39;utilisation.
    1. Vous pouvez également [créer une configuration de déploiement](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) si nécessaire.
 
 1. Déterminez à quel endroit vous devez [spécifier les configurations de déploiement à utiliser](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) et procédez aux configurations en fonction de vos besoins.
-1. If required, [create a blueprint configuration](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration) that identifies the source content of the live copy.
-1. [Créez une copie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy)dynamique.
+1. Si nécessaire, [créez une configuration de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration) qui identifie le contenu source de la copie dynamique.
+1. [Créez une copie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy) dynamique.
 1. Apportez des modifications au contenu source selon vos besoins. Vous devez suivre le processus normal d’examen et d’approbation du contenu établi par votre entreprise.
-1. [Exécutez](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) le plan ou [synchronisez la copie](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) dynamique avec les modifications.
+1. [Exécutez ](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) le plan ou  [synchronisez la ](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) copie dynamique avec les modifications.
 
 ## Personnalisation de MSM {#customizing-msm}
 
 MSM fournit des outils afin que votre implémentation puisse s’adapter aux complexités exceptionnelles pouvant résulter du partage de contenu :
 
 * **Configurations de déploiement personnalisées**
-   [Créez une configuration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) de déploiement lorsque les configurations de déploiement installées ne répondent pas à vos besoins. Vous pouvez utiliser n’importe quel déclencheur de déploiement et action de synchronisation disponibles.
+   [Créez une ](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) configuration de déploiement lorsque les configurations de déploiement installées ne répondent pas à vos besoins. Vous pouvez utiliser n’importe quel déclencheur de déploiement et action de synchronisation disponibles.
 
 * **Actions de synchronisation personnalisée**
-   [Créez une action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) de synchronisation personnalisée lorsque les actions installées ne répondent pas aux exigences spécifiques de votre application. MSM fournit une API Java permettant de créer des actions de synchronisation personnalisées.
+   [Créez une ](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) action de synchronisation personnalisée lorsque les actions installées ne répondent pas aux exigences spécifiques de votre application. MSM fournit une API Java permettant de créer des actions de synchronisation personnalisées.
 
 ## Bonnes pratiques {#best-practices}
 
