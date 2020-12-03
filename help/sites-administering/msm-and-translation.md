@@ -54,20 +54,17 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >* [MSM](/help/sites-administering/msm.md) gère le déploiement du contenu traduit d’un plan directeur (par exemple, un gabarit mondial) des Live Copies (par exemple, les sites locaux), dans les limites d’une langue.
 >* Les fonctionnalités d’intégration de [traduction](/help/sites-administering/translation.md) d’AEM, combinées aux services de gestion de traduction tiers, gèrent les langues et le contenu de traduction dans ces différentes langues.
-
 >
->
-Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
+>Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
 
 >[!NOTE]
 >
 >Dans tous les cas, il est recommandé de lire les meilleures pratiques suivantes :
 >
 >* [Meilleures pratiques MSM](/help/sites-administering/msm-best-practices.md), en particulier :
-   >
-   >   
-   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Meilleures pratiques de traduction](/help/sites-administering/tc-bp.md)
 
