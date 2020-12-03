@@ -3,15 +3,15 @@ title: Rapports sur l’utilisation et le partage des ressources
 description: Rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets] qui vous aident à comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 47%
+source-wordcount: '1131'
+ht-degree: 43%
 
 ---
 
 
-# Rapports de ressources   {#asset-reports}
+# Rapports de ressources {#asset-reports}
 
 Le rapports des ressources vous permet d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. [!DNL Assets] permet de générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
@@ -152,3 +152,11 @@ Pour supprimer les rapports dont vous n’avez plus besoin, configurez le servic
 1. Ouvrez la configuration **[!UICONTROL Service de purge des rapports de la gestion des actifs numériques]**.
 1. Spécifiez la fréquence (intervalle) pour le service de purge dans le champ `scheduler.expression.name`. Vous pouvez également configurer l’âge et le seuil de quantité des rapports.
 1. Enregistrez les modifications.
+
+## Informations, conseils et limites de dépannage {#best-practices-and-limitations}
+
+* Si certains rapports ou nombres des rapports ne sont pas disponibles ou comme prévu, veillez à ce que le service [!UICONTROL Enregistreur de Événement DAM CQ Day ] soit activé.
+
+* Supprimez les rapports qui ne sont plus requis. Utilisez les options de configuration du service de purge de rapports DAM pour configurer les critères de purge des rapports.
+
+* Si le rapport d&#39;utilisation des disques n&#39;est pas généré et que vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont correctement traitées. Pour résoudre ce problème, retraitez les ressources, puis générez de nouveau le rapport.
