@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 730a690bcbf5935ca00ed69c27ce108cb2664c22
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 80%
+source-wordcount: '398'
+ht-degree: 74%
 
 ---
 
@@ -53,13 +53,13 @@ Plus spécifiquement, les modifications de configuration suivantes seront effect
 1. Le lot **Accès WebDAV simple Apache Sling aux référentiels** (`org.apache.sling.jcr.webdav`) ne sera disponible que sur les instances de **création**.
 
 1. Les utilisateurs nouvellement créés devront changer de mot de passe à la première connexion. Ceci ne s’applique pas à l’administrateur.
-1. L’option **Générer les informations de débogage** est désactivée pour le **gestionnaire de script Apache Java**.
+1. **Générez le débogage** infois désactivé pour le gestionnaire **de script JavaScript** Apache Sling.
 
 1. Les options **Contenu mappé** et **Générer les informations de débogage** sont désactivées pour le **gestionnaire de script JSP Apache Sling**.
 
 1. Le filtre WCM **Day CQ** est défini sur `edit` sur **author** et `disabled` sur les instances **publish**.
 
-1. **Le gestionnaire de bibliothèque Adobe Granite HTML** est configuré avec les paramètres suivants :
+1. Le **Gestionnaire de bibliothèques HTML Granite** Adobe est configuré avec les paramètres suivants :
 
    1. **Minifier :** `enabled`
    1. **Déboguer:** `disabled`
