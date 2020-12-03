@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
+source-git-commit: c92efd64662e831c8771a8f35701f4e9ed788645
 workflow-type: tm+mt
-source-wordcount: '3789'
+source-wordcount: '4201'
 ht-degree: 5%
 
 ---
@@ -38,6 +38,16 @@ Les principales fonctionnalités et améliorations introduites dans [!DNL Adobe 
 * Les utilisateurs peuvent trier les fichiers numériques dans les vues Carte et Colonne.
 
 * [!DNL Assets] et  [!DNL Dynamic Media] offrent plusieurs améliorations d’accessibilité. Les améliorations concernent la navigation au clavier, l’utilisation de lecteurs d’écran et l’utilisation d’une technologie d’assistance similaire (AT). Voir [[!DNL Assets] améliorations](#assets-6570) et [[!DNL Dynamic Media] améliorations](#dynamic-media-6570).
+
+* Configuration du client HTTP du modèle de données de formulaire pour optimiser les performances.
+
+* Disponibilité de l’option Réinitialiser pour chaque composant en mode Mise en page
+
+* [!DNL Experience Manager] 6.5 Service Pack 7 Forms améliore les performances pour :
+
+   * Validation des valeurs de champ sur le serveur lors de l’envoi d’un formulaire adaptatif.
+
+   * Conversion d’un formulaire PDF en formulaire adaptatif à l’aide de [!DNL Automated Forms Conversion service].
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.22.5.
 
@@ -299,6 +309,48 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] libère les packages de modules complémentaires une semaine après la date de publication prévue du  [!DNL Experience Manager] Service Pack.
+
+**Formulaires adaptatifs**
+
+* Impossible de modifier un formulaire adaptatif à l’aide de l’interface utilisateur classique après l’application de [!DNL Experience Manager] Service Pack 6 (NPR-35126).
+
+* Lorsque vous convertissez un fichier PDF en formulaire adaptatif, vous ne pouvez pas définir de valeur pour un panneau imbriqué à l’aide d’un modèle de données de formulaire sur la disposition à onglets. En outre, il existe des problèmes lors de la définition dynamique d’une valeur pour les groupes de boutons radio à l’aide d’un tableau statique à l’aide de l’éditeur de code (NPR-35062).
+
+* Lorsque vous saisissez des caractères japonais dans un composant de champ de texte d’un formulaire adaptatif, vous pouvez spécifier plus de caractères que la limite maximale de 35 caractères (NPR-35039).
+
+* Le formulaire adaptatif affiche des paramètres indésirables, tels que `owner` et `status`, sur la page **[!UICONTROL Merci]** affichée après l’envoi du formulaire (NPR-34989).
+
+* La boîte de dialogue [!UICONTROL Sélection de fichier] du composant [!UICONTROL Pièce jointe] affiche également les types de fichier non pris en charge pour la sélection, ce qui entraîne une erreur lors de l’envoi du formulaire adaptatif (NPR-34970).
+
+* Lorsque vous insérez un formulaire adaptatif dans une page [!DNL Experience Manager Sites] contenant du texte avant le formulaire, le curseur se déplace directement vers le formulaire au lieu du texte avant le formulaire (NPR-34947).
+
+* [!UICONTROL La prévisualisation avec l’option ] Données pour préremplir un formulaire adaptatif à l’aide d’un fichier XML de données  [!DNL Experience Manager] 6.2 ne fonctionne pas correctement (NPR-35087).
+
+* Lorsque vous mettez à jour le dictionnaire de données d’un formulaire adaptatif, le formulaire n’est pas traduit car le formulaire adaptatif renvoie des valeurs mises en cache (NPR-34845).
+
+* Le chargement des fragments prend plus de temps dans un formulaire adaptatif en raison de l’invalidation du cache (NPR-34567).
+
+* La navigation par onglets ne fonctionne pas correctement pour les lecteurs d’écran dans un formulaire adaptatif (NPR-34544).
+
+**Correspondence Management**
+
+* Impossible d&#39;enregistrer les valeurs des balises XML avec des données numériques, qui incluent le type flottant, en tant que brouillon (NPR-35050).
+
+* Lorsque vous migrez les ressources à partir d’ES3, elles incluent deux conditions par défaut non modifiables (NPR-34972).
+
+* Lorsque vous modifiez un dictionnaire de données dans une lettre, la section [!UICONTROL Contenu prêté] affiche des rectangles tournants au lieu d&#39;informations utiles (NPR-34853).
+
+**Communication interactive**
+
+* Le nom de configuration de déploiement pour Interactive Communication, disponible après l&#39;installation du module complémentaire [!DNL Forms], duplicata le nom de configuration de déploiement standard (NPR-34976).
+
+**Document Security**
+
+* Lorsque vous enregistrez une nouvelle stratégie de sécurité de document, Experience Manager Forms affiche le message d&#39;erreur `Relative validity period is required` (NPR-34679).
+
+* Lorsque vous enregistrez une nouvelle stratégie de sécurité de document, Experience Manager Forms affiche le message d&#39;erreur `Invalid filed value.Numeric value is required` (NPR-34678).
+
+* Document Security ne peut pas protéger le document PDF 2.0 (CQ-4305851).
 
 Pour plus d’informations sur les mises à jour de sécurité, voir [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
