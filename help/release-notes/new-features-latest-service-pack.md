@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 55ef8af25887a59d9d13275645c1ec20f0c49380
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2807'
 ht-degree: 5%
 
 ---
@@ -40,7 +40,23 @@ Vous pouvez désormais effectuer les déplacements de page et les déploiements 
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] les packages de modules complémentaires sont rendus disponibles une semaine après la publication du  [!DNL Experience Manager] Service Pack planifié. [!DNL Experience Manager] La version 6.5 du Service Pack 7 (6.5.7.0) est prévue pour le 26 novembre 2020.
+>[!DNL Experience Manager Forms] les packages de modules complémentaires sont rendus disponibles une semaine après la publication du  [!DNL Experience Manager] Service Pack planifié.
+
+### Amélioration des performances {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms améliore les performances pour :
+
+* Validation des valeurs de champ sur le serveur lors de l’envoi d’un formulaire adaptatif.
+
+* Conversion d’un formulaire PDF en formulaire adaptatif à l’aide de [!DNL Automated Forms Conversion service].
+
+### Modèle de données de formulaire configuration du client HTTP pour optimiser les performances {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] modèle de données de formulaire lors de l’intégration avec les services Web RESTful en tant que source de données inclut désormais des configurations de client HTTP pour l’optimisation des performances.
+
+### Disponibilité de l&#39;option de réinitialisation pour chaque composant en mode Disposition {#reset-option-layout-mode}
+
+Vous pouvez désormais utiliser l’option reset pour chaque composant en mode Mise en page d’un formulaire adaptatif. Lorsque vous définissez une mise en page à plusieurs colonnes pour un panneau, vous pouvez utiliser cette fonction pour réinitialiser des composants individuels dans le panneau.
 
 ## Fonctions clés des Service Packs [!DNL Experience Manager] 6.5 précédents{#key-features-previous-service-packs}
 
