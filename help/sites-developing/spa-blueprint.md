@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+source-git-commit: c1b5df634eba0628c8d2e0b38b9c220cbee8ec62
 workflow-type: tm+mt
 source-wordcount: '2112'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -76,7 +76,7 @@ Le reste de ce document, supposé être indépendant du framework, décrit les e
 
 La structure de contenu de la page est stockée dans AEM. Le modèle de la page est utilisé pour mapper et instancier les composants de l’application sur une seule page (SPA). Les développeurs d’applications sur une seule page créent des composants SPA qu’ils mappent sur des composants AEM. Ils utilisent pour cela le type de ressource (ou le chemin d’accès au composant AEM) comme clé unique.
 
-Les composants de la SPA doivent être synchronisés avec le modèle de page et mis à jour avec toute modification apportée au contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
+Les composants SPA doivent être synchronisés avec le modèle de page et être mis à jour en fonction des modifications apportées à son contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
 
 ### Champs Meta   {#meta-fields}
 
