@@ -1,11 +1,11 @@
 ---
 title: Utiliser le pixelliseur PDF pour générer des rendus
-description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer dans  [!DNL Adobe Experience Manager].
+description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b68311d593730d1c441b863967b15e6481758267
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '720'
 ht-degree: 43%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 43%
 
 # Utiliser le pixelliseur PDF {#using-pdf-rasterizer}
 
-Lorsque vous téléchargez des fichiers PDF ou AI volumineux et enrichis en contenu vers [!DNL Adobe Experience Manager Assets], la conversion par défaut risque de ne pas générer de sortie précise. La bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise que la sortie d’une bibliothèque par défaut. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour les scénarios suivants :
+Lorsque vous téléchargez des fichiers PDF ou AI volumineux et enrichis en contenu vers [!DNL Adobe Experience Manager Assets], la bibliothèque par défaut risque de ne pas générer de sortie précise. La bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise que la sortie d’une bibliothèque par défaut. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour les scénarios suivants :
+
+Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
 
 * Fichiers AI ou PDF lourds et intensifs en contenu.
 * Fichiers AI et fichiers PDF contenant des miniatures qui ne sont pas générés par défaut.
@@ -47,14 +49,12 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
 1. Configurez les arguments suivants pour l’étape **[!UICONTROL Gestionnaire de pixellisation PDF]** :
 
    * Types MIME : `application/pdf` ou `application/postscript`
-   * Commandes: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
+   * Commandes: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
 
    Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
 
    * `-d`: Indicateur qui permet le rendu lisse du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
-
-   * `-p`: Numéro de page. La valeur par défaut est toutes les pages. Pour représenter toutes les pages, utilisez `*`.
 
    * `-s`: Dimension d’image maximale (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
 
@@ -66,7 +66,6 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
 
 
 1. Pour supprimer des rendus intermédiaires, sélectionnez **[!UICONTROL Supprimer le rendu généré]**.
-
 1. Pour permettre à PDF Rasterizer de générer des rendus Web, sélectionnez **[!UICONTROL Générer un rendu Web]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
@@ -76,23 +75,17 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Enregistrez le workflow.
-
 1. Pour permettre à PDF Rasterizer de traiter les pages PDF avec des bibliothèques PDF, ouvrez le modèle **[!UICONTROL DAM Process Subasset]** dans la console [!UICONTROL Workflow].
-
 1. Dans le panneau latéral, faites glisser l’étape Gestionnaire de pixellisation PDF sous l’étape **[!UICONTROL Créer un rendu d’image compatible Web]**.
-
 1. Configurez les arguments suivants pour l’étape **[!UICONTROL Gestionnaire de pixellisation PDF]** :
 
    * Types MIME : `application/pdf` ou `application/postscript`
-
-   * Commandes: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
+   * Commandes: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * Ajouter les tailles des miniatures : `319:319`, `140:100`, `48:48`. Ajoutez la configuration personnalisée des miniatures, le cas échéant.
 
    Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
 
    * `-d`: Indicateur qui permet le rendu lisse du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
-
-   * `-p`: Numéro de page. La valeur par défaut est toutes les pages. `*` indique toutes les pages.
 
    * `-s`: Dimension d’image maximale (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
 
@@ -113,4 +106,4 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Enregistrez le workflow.
-1. Téléchargez un fichier PDF ou AI dans [!DNL Experience Manager Assets]. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
+1. Téléchargez un fichier PDF ou un fichier AI dans [!DNL Experience Manager Assets]. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
