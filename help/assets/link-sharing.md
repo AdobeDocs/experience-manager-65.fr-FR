@@ -3,10 +3,10 @@ title: Partage de fichiers à l’aide d’un lien
 description: Partagez des fichiers, des dossiers et des collections sous la forme d’une URL.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f6da1c69ea3b3c3f07e8ac10fd8e1e9c7208158
+source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 38%
+source-wordcount: '1056'
+ht-degree: 39%
 
 ---
 
@@ -57,9 +57,9 @@ Pour générer l’URL des fichiers que vous souhaitez partager avec les utilisa
    >
    >Si vous saisissez un ID de courrier électronique d’un utilisateur qui n’est pas membre de votre organisation, les mots [!UICONTROL Utilisateur externe] sont précédés de l’ID de courrier électronique de l’utilisateur.
 
-1. Dans le champ **[!UICONTROL Objet]**, entrez un objet.
+1. Dans le champ **[!UICONTROL Objet]**, indiquez l’objet de la ressource que vous souhaitez partager.
 
-1. Dans le champ **[!UICONTROL Message]**, saisissez un message facultatif.
+1. Dans le champ **[!UICONTROL Message]**, vous pouvez saisir un message si vous le souhaitez.
 
 1. Dans le champ **[!UICONTROL Expiration]**, indiquez la date et l’heure d’expiration du lien pour qu’il cesse de fonctionner. Par défaut, la date d’expiration est définie sur une semaine à compter de la date à laquelle vous partagez le lien.
 
@@ -69,9 +69,9 @@ Pour générer l’URL des fichiers que vous souhaitez partager avec les utilisa
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme que le lien est partagé avec les utilisateurs par courrier électronique.
 
-1. Pour vue de la ressource partagée, cliquez sur le lien dans le courrier électronique envoyé à l’utilisateur. La ressource partagée s’affiche sur la page **[!UICONTROL Adobe Marketing Cloud]**.
+1. Pour vue de la ressource partagée, cliquez sur le lien dans le courrier électronique envoyé à l’utilisateur. La ressource partagée s’affiche sur la page [!UICONTROL Adobe Marketing Cloud].
 
-   ![chlimage_1-260](assets/chlimage_1-545.png)
+   ![Les ressources partagées sont disponibles dans Adobe Marketing Cloud](assets/chlimage_1-545.png)
 
 1. Pour générer une prévisualisation de la ressource, cliquez sur la ressource partagée. Pour fermer la prévisualisation et revenir à la page **[!UICONTROL Marketing Cloud]**, cliquez sur **[!UICONTROL Précédent]** dans la barre d’outils. Si vous avez partagé un dossier, cliquez sur **[!UICONTROL Dossier parent]** pour revenir au dossier parent.
 
@@ -83,7 +83,7 @@ Pour générer l’URL des fichiers que vous souhaitez partager avec les utilisa
 
 1. Pour télécharger la ressource partagée, cliquez sur **[!UICONTROL Sélectionner]** dans la barre d’outils, cliquez sur la ressource, puis sur **[!UICONTROL Télécharger]** dans la barre d’outils.
 
-   ![chlimage_1-262](assets/chlimage_1-547.png)
+   ![Option de barre d’outils pour télécharger la ressource partagée](assets/chlimage_1-547.png)
 
 1. Pour vue des ressources que vous avez partagées en tant que liens, accédez à l&#39;interface utilisateur [!DNL Assets] et cliquez sur le logo [!DNL Experience Manager]. Sélectionnez **[!UICONTROL Navigation]**. Dans le volet Navigation, choisissez **[!UICONTROL Liens partagés]** pour afficher une liste de ressources partagées.
 
