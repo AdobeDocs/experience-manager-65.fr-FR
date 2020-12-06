@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '9565'
+source-wordcount: '9562'
 ht-degree: 62%
 
 ---
@@ -66,7 +66,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est au format [](/help/a
 
    ![Créer une option pour télécharger des fichiers](assets/create-options.png)
 
-   Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl ou Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
+   Pour sélectionner plusieurs fichiers, sélectionnez la clé `Ctrl` ou `Command` et sélectionnez les fichiers dans la boîte de dialogue du sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
 
    Vous pouvez suspendre le transfert des ressources volumineuses (dont la taille est supérieure à 500 Mo) et reprendre ultérieurement à partir de la même page. Cliquez sur **[!UICONTROL Pause]** en regard de la barre de progression qui s’affiche lorsqu’un téléchargement se début.
 
@@ -355,13 +355,13 @@ Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme su
 
 1. Dans l&#39;interface utilisateur [!DNL Assets], accédez à l&#39;élément souhaité à l&#39;aide de `Tab` et des touches fléchées.
 
-1. Appuyez sur la touche `Enter` de la ressource souhaitée pour l’ouvrir. Vous pouvez effectuer un zoom sur les ressources en mode prévisualisation.
+1. Sélectionnez la clé `Enter` sur la ressource souhaitée pour l’ouvrir. Vous pouvez effectuer un zoom sur les ressources en mode prévisualisation.
 
 1. Pour effectuer un zoom avant sur le fichier :
    1. Utilisez la touche `Tab` pour déplacer la cible d’action vers l’option de zoom avant.
    1. Utilisez la touche `Enter` pour effectuer un zoom avant sur l’image.
 
-   Pour effectuer un zoom arrière, utilisez la touche `Tab` pour déplacer la cible d’action vers l’option de zoom arrière et appuyez sur `Enter`.
+   Pour effectuer un zoom arrière, utilisez la touche `Tab` pour déplacer la cible d’action vers l’option de zoom arrière et sélectionnez `Enter`.
 
 1. Utilisez les touches `Shift` + `Tab` pour recentrer la sélection sur l’image.
 
@@ -395,7 +395,7 @@ Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme su
 
 1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web ou via l’API HTTP.[!DNL Assets]
 
-1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur Entrée. La nouvelle balise est enregistrée dans [!DNL Experience Manager]. [!DNL YouTube] requiert des balises pour la publication. Voir [publier des vidéos sur YouTube](video.md#publishing-videos-to-youtube).
+1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez le nom de la balise dans la zone et sélectionnez `Enter`. La nouvelle balise est enregistrée dans [!DNL Experience Manager]. [!DNL YouTube] requiert des balises pour la publication. Voir [publier des vidéos sur YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
