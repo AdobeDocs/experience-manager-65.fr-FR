@@ -7,10 +7,10 @@ user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 59%
+source-wordcount: '590'
+ht-degree: 58%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 59%
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo](s7-video.md)
-   + [Ajouter les fonctionnalités Scene7 à votre page](scene7.md)
+   + [Ajouter les fonctionnalités de Contenu multimédia dynamique à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
