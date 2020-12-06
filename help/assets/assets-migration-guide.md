@@ -3,10 +3,10 @@ title: Migration des actifs en bloc
 description: Décrit comment importer des fichiers dans  [!DNL Adobe Experience Manager], appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 67%
+source-wordcount: '1799'
+ht-degree: 66%
 
 ---
 
@@ -79,7 +79,7 @@ Comme il n’est pas nécessaire que les ressources soient transmises sur un ré
 
 ### Traitement des rendus {#processing-renditions}
 
-Après avoir chargé les ressources dans le système, vous devez les traiter via le processus [!UICONTROL DAM Update Asset] pour extraire les métadonnées et générer des rendus. Avant d&#39;exécuter cette étape, vous devez duplicata et modifier le flux de travaux [!UICONTROL DAM Update Asset] en fonction de vos besoins. Le processus prêt à l’emploi contient de nombreuses étapes qui peuvent ne pas être nécessaires pour vous, telles que la génération Scene7 PTIFF ou l’intégration [!DNL InDesign Server].
+Après avoir chargé les ressources dans le système, vous devez les traiter via le processus [!UICONTROL DAM Update Asset] pour extraire les métadonnées et générer des rendus. Avant d&#39;exécuter cette étape, vous devez duplicata et modifier le flux de travaux [!UICONTROL DAM Update Asset] en fonction de vos besoins. Le processus prêt à l’emploi contient de nombreuses étapes qui peuvent ne pas être nécessaires pour vous, telles que la génération de contenu PTIFF de contenu multimédia dynamique ou l’intégration [!DNL InDesign Server].
 
 Après avoir configuré le workflow en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
