@@ -4,10 +4,10 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2178'
-ht-degree: 63%
+source-wordcount: '2176'
+ht-degree: 62%
 
 ---
 
@@ -80,7 +80,7 @@ Pour créer une collection dynamique, procédez comme suit :
 
 1. Accédez à l&#39;interface utilisateur [!DNL Assets] et cliquez sur Rechercher.
 
-1. Tapez le mot-clé de recherche dans la zone Omnisearch et appuyez sur `Enter`. Ouvrez le panneau Filtres et appliquez un filtre de recherche.
+1. Tapez le mot-clé de recherche dans la zone Omnisearch et sélectionnez `Enter`. Ouvrez le panneau Filtres et appliquez un filtre de recherche.
 
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
 
@@ -120,7 +120,7 @@ Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Dé
 Les collections dynamiques sont créées en enregistrant une recherche afin que vous puissiez modifier leur contenu en changeant les paramètres de recherche de la [recherche enregistrée](#saved-searches).
 
 1. Dans l&#39;interface utilisateur [!DNL Assets], cliquez sur l&#39;option de recherche ![option de recherche](assets/do-not-localize/search_icon.png) dans la barre d&#39;outils.
-1. Placez le curseur dans la zone Omni-recherche et appuyez sur la touche Entrée.
+1. Avec le curseur dans la zone Omnisearch, sélectionnez la clé `Return`.
 1. Dans l&#39;interface [!DNL Experience Manager], ouvrez le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 
@@ -249,7 +249,7 @@ La modification des recherches enregistrées est identique à celle des collecti
 Pour supprimer des recherches enregistrées, procédez comme suit :
 
 1. Dans l&#39;interface utilisateur [!DNL Assets], cliquez sur Rechercher ![option de recherche](assets/do-not-localize/search_icon.png).
-1. Avec le curseur dans le champ Omnisearch, appuyez sur la touche Retour.
+1. Avec le curseur dans le champ Omnisearch, sélectionnez la clé `Return`.
 1. Dans l&#39;interface [!DNL Experience Manager], ouvrez le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, cliquez sur **[!UICONTROL Supprimer]** en regard de la collection dynamique à supprimer.
 
