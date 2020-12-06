@@ -1,6 +1,6 @@
 ---
 title: Résolution des problèmes liés à Dynamic Media - Mode Scene7
-description: Dépannage de Dynamic Media en mode d’exécution Scene7.
+description: Dépannage de Contenu multimédia dynamique lorsqu’il est exécuté en mode Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1285'
 ht-degree: 97%
 
 ---
@@ -29,7 +29,7 @@ Assurez-vous que Dynamic Media a été correctement configuré en procédant com
 * Tous les packs de correctifs cumulatifs (CFP) AEM 6.4 ont été installés *avant* tout Feature Pack Dynamic Media disponible.
 * Le Feature Pack 18912 facultatif est installé.
 
-   Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic (Scene7).
+   Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic.
 
 * Accédez à l’interface utilisateur des services cloud et vérifiez que le compte fourni s’affiche sous **[!UICONTROL Configurations disponibles.]**
 * Assurez-vous que l&#39;agent de réplication `Dynamic Media Asset Activation (scene7)` est activé.
