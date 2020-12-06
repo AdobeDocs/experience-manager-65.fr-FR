@@ -4,9 +4,9 @@ description: Suggestions et conseils sur  [!DNL Experience Manager] la configura
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2744'
 ht-degree: 54%
 
 ---
@@ -164,7 +164,7 @@ Configurer une file d’attente à la moitié des processeurs disponibles est un
 
 ### Configuration des ressources de mise à jour de gestion des ressources numériques {#dam-update-asset-configuration}
 
-Le workflow [!UICONTROL DAM Update Asset] contient une suite complète d&#39;étapes configurées pour les tâches, telles que la génération PTIFF Scene7 et l&#39;intégration [!DNL Adobe InDesign Server]. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe vous recommande de créer une copie personnalisée du modèle de flux de travaux [!UICONTROL DAM Update Asset] et de supprimer toutes les étapes inutiles. Dans ce cas, mettez à jour les lanceurs pour [!UICONTROL DAM Update Asset] afin de pointer vers le nouveau modèle.
+Le workflow [!UICONTROL DAM Update Asset] contient une suite complète d&#39;étapes qui sont configurées pour les tâches, telles que la génération de fichiers PTIFF de Contenu multimédia dynamique et l&#39;intégration de [!DNL Adobe InDesign Server]. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe vous recommande de créer une copie personnalisée du modèle de flux de travaux [!UICONTROL DAM Update Asset] et de supprimer toutes les étapes inutiles. Dans ce cas, mettez à jour les lanceurs pour [!UICONTROL DAM Update Asset] afin de pointer vers le nouveau modèle.
 
 L&#39;exécution intensive du flux de travail [!UICONTROL DAM Update Asset] peut augmenter considérablement la taille de la banque de données de vos fichiers. Les résultats d’un test effectué par Adobe ont montré que la taille de l’entrepôt de données peut augmenter d’environ 400 Go si environ 5 500 workflows sont exécutés pendant une période de 8 heures.
 
@@ -180,7 +180,7 @@ Les clients utilisent des images de tailles et de formats différents sur leur s
 
 De nombreux clients de sites mettent en œuvre un servlet d’image qui redimensionne ou recadre les images lorsque cela est nécessaire, ce qui a pour effet d’appliquer une charge supplémentaire à l’instance de publication. Toutefois, tant que ces images peuvent être mises en cache, le défi peut être plus facilement relevé.
 
-Une autre méthode consiste à utiliser la technologie Scene7 pour transférer entièrement la manipulation de l’image. En outre, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l&#39;infrastructure [!DNL Experience Manager], mais également l&#39;ensemble du niveau de publication.
+Une autre approche consiste à utiliser la technologie Contenu multimédia dynamique pour masquer entièrement la manipulation d’images. En outre, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l&#39;infrastructure [!DNL Experience Manager], mais également l&#39;ensemble du niveau de publication.
 
 #### ImageMagick {#imagemagick}
 
