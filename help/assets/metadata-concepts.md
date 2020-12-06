@@ -3,9 +3,9 @@ title: Comprendre les concepts de métadonnées
 description: Découvrez le besoin et les types de métadonnées qui facilitent la catégorisation et l’organisation des fichiers.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2731'
 ht-degree: 86%
 
 ---
@@ -178,7 +178,7 @@ En plus du SGDCM, d’autres éléments de métadonnées ont été créés par l
 | description | Informations supplémentaires sur la ressource. |
 | format | Format de fichier, support physique ou dimensions de la ressource. [!DNL Experience Manager] utilise `dc:format` pour représenter le type MIME de la ressource. |
 | identifier | Référence unique à la ressource. |
-| language | Langue de la ressource (« en » pour l’anglais, par exemple). |
+| language | Langue de la ressource (par exemple, `en` pour l’anglais). |
 | publisher | Personne ou entreprise chargée de rendre la ressource disponible. |
 | relation | Ressource connexe. |
 | rights | Informations sur la personne qui dispose des droits sur cette ressource. |
