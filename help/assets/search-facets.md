@@ -3,10 +3,10 @@ title: Facettes de recherche pour filtrer les résultats de la recherche
 description: Comment créer, modifier et utiliser les facettes de recherche dans  [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 77%
+source-wordcount: '2424'
+ht-degree: 76%
 
 ---
 
@@ -38,15 +38,15 @@ Pour les recherches de texte intégral, ajoutez le prédicat [!UICONTROL Texte c
    >
    >1. Accédez à `/conf/global/settings/dam/search/facets/assets/jcr:content/items` dans CRXDE.
    >1. Supprimez le noeud **type**.
-   >1. Dans le chemin */libs/settings/dam/search/facets/assets/jcr:content/items*, copiez les nœuds **asset, directory, typeor, excludepaths** et **search type** dans le chemin d’accès mentionné à l’étape 1.
+   >1. À partir du chemin d’accès `/libs/settings/dam/search/facets/assets/jcr:content/items`, copiez les noeuds `asset`, `directory`, `typeor`, `excludepaths` et `searchtype` dans le chemin d’accès mentionné à l’étape 1.
    >1. Enregistrez les modifications.
 
 
 1. Sur la page [!UICONTROL Modifier des formulaires de recherche], faites glisser un prédicat de l’onglet **[!UICONTROL Sélectionner le prédicat]** vers le volet principal. Faites glisser, par exemple, **[!UICONTROL Prédicat de la propriété]**.
 
-   ![Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche](assets/drag_predicate.png)
+   ![Sélectionner et déplacer un prédicat pour personnaliser les filtres de recherche](assets/drag_predicate.png)
 
-   *Figure : Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche.*
+   *Figure : Sélectionnez et déplacez un prédicat pour personnaliser les filtres de recherche.*
 
 1. Sous l’onglet [!UICONTROL Paramètres], saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Le libellé de l&#39;en-tête dans l&#39;onglet [!UICONTROL Paramètres] identifie le type du prédicat sélectionné.
 
