@@ -3,9 +3,9 @@ title: '[!DNL Assets] guide de dimensionnement'
 description: Meilleures pratiques pour déterminer des mesures efficaces afin d’estimer l’infrastructure et les ressources nécessaires au déploiement [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1615'
 ht-degree: 68%
 
 ---
@@ -30,7 +30,7 @@ Compte tenu de ces facteurs, vous avez besoin d’une méthodologie permettant d
 1. Déterminez la taille et le nombre de ressources qui seront chargées dans le système.
 1. Obtenez un échantillon représentatif des ressources à charger dans [!DNL Experience Manager]. Par exemple, si vous prévoyez de charger des fichiers PSD, JPG, AI et PDF dans le système, vous avez besoin de plusieurs échantillons d’images de chaque format de fichier. En outre, ces échantillons doivent être représentatifs des différentes tailles de fichiers et de la complexité des images.
 1. Définissez les rendus à utiliser.
-1. Créez les rendus dans [!DNL Experience Manager] à l&#39;aide des applications [!DNL ImageMagick] ou [!DNL Adobe Creative Cloud]. En plus des rendus que les utilisateurs spécifient, créez des rendus prêts à l’emploi. Pour les utilisateurs qui implémentent Scene7, vous pouvez utiliser le binaire IC pour générer les rendus PTIFF à stocker dans le Experience Manager.
+1. Créez les rendus dans [!DNL Experience Manager] à l&#39;aide des applications [!DNL ImageMagick] ou [!DNL Adobe Creative Cloud]. En plus des rendus que les utilisateurs spécifient, créez des rendus prêts à l’emploi. Pour les utilisateurs qui implémentent Contenu multimédia dynamique, vous pouvez utiliser le binaire IC pour générer les rendus PTIFF à stocker dans le Experience Manager.
 1. Si vous prévoyez d’utiliser des sous-ressources, générez-les pour les types de fichiers appropriés.
 1. Comparez la taille des images, rendus et sous-ressources de sortie avec les images d’origine. Cette comparaison permet de générer un facteur de croissance attendu lorsque le système est chargé. Par exemple, si vous générez des rendus et des sous-ressources d’une taille combinée de 3 Go après le traitement de 1 Go de ressources, le facteur de croissance des rendus est de 3.
 1. Déterminez la durée maximale pendant laquelle les versions des ressources doivent être conservées dans le système.
