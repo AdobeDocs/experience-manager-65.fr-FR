@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f63e13486792f9975c84202b2cd3ddcf618ce0fc
 workflow-type: tm+mt
 source-wordcount: '11812'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -402,7 +402,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 | Type de vidéo | Largeur x hauteur | Rapport de largeur | Rapport de hauteur |
 |--- |--- |--- |--- |
-| Source | 1 920 x 1 080 | 1 | 3 |
+| Source | 1 920 x 1 080 | 1 | 1 |
 | Codée | 960 x 540 | 2 | 2 |
 | Codée | 640 x 360 | 3 | 3 |
 | Codée | 480 x 270 | 4 | 4 |
@@ -991,13 +991,13 @@ Pour afficher un rapport vidéo, procédez comme suit :
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports vidéo.]**
 1. Dans la page Rapport vidéo, effectuez l’une des opérations suivantes :
 
-   * Près du coin supérieur droit, appuyez sur l’icône **Actualiser le rapport vidéo **icône.
-Vous ne devez utiliser l&#39;option Actualiser que si la date de fin du rapport est le jour en cours. Cela vous permet de voir le suivi vidéo qui s’est produit depuis la dernière exécution du rapport.
+   * Dans le coin supérieur droit, appuyez sur l’icône **Actualiser le rapport vidéo**.
+Vous ne devez utiliser la commande d’actualisation que si la date de fin du rapport correspond à la date du jour. Vous affichez ainsi le suivi vidéo qui a eu lieu depuis la dernière exécution du rapport.
 
-   * Près du coin supérieur droit, appuyez sur l’icône **Sélecteur de date **icône.
-Spécifiez la plage de dates de début et de fin pour laquelle vous souhaitez obtenir des données vidéo, puis appuyez sur **[!UICONTROL Exécuter le rapport.]**
+   * Dans le coin supérieur droit, appuyez sur l’icône **Sélecteur de date**.
+Indiquez la période de début et de fin pour laquelle vous souhaitez obtenir les données vidéo, puis appuyez sur **[!UICONTROL Exécuter le rapport.]**
 
-   Le groupe Mesures principales identifie diverses mesures agrégées pour toutes les vidéos publiées sur votre site.
+   Le groupe Mesures principales identifie diverses mesures agrégées pour toutes les vidéos *publiées* sur votre site.
 
 1. Dans le tableau qui répertorie les principales vidéos publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de celle-ci.
 
