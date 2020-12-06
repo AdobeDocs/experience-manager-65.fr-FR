@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '6623'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -227,7 +227,7 @@ La valeur exacte renvoyée par l’élément de données dépend du contexte. Si
    * Utilise l’événement de pression de touche de l’extension Core Adobe Launch comme déclencheur.
    * Envoie la valeur de l’élément de données **[!UICONTROL ZoomScale]** à Adobe Analytics.
 
-Supposons maintenant que l’utilisateur final charge la page web avec les deux visionneuses. Dans la *visionneuse1*, il effectue un zoom avant à une échelle de 50 % ; ensuite, dans la *visionneuse2*, il effectue un zoom avant à une échelle de 25 %. Dans la *visionneuse1*, il effectue un panoramique sur l’image et appuie sur une touche du clavier.
+Supposons maintenant que l’utilisateur final charge la page web avec les deux visionneuses. Dans la *visionneuse1*, il effectue un zoom avant à une échelle de 50 % ; ensuite, dans la *visionneuse2*, il effectue un zoom avant à une échelle de 25 %. Dans *viewer1*, ils effectuent un panoramique d’image et sélectionnent enfin une touche du clavier.
 
 L’activité de l’utilisateur final génère les deux appels de suivi suivants vers Adobe Analytics :
 
