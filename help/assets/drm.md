@@ -3,10 +3,10 @@ title: Digital Rights Management des actifs
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97d3edf155ddeabf3f39139c9079621c3627820b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 80%
+source-wordcount: '1398'
+ht-degree: 78%
 
 ---
 
@@ -50,7 +50,7 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 
 1. Dans la console [!DNL Assets], cliquez sur l’option **[!UICONTROL Rechercher]** de la barre d’outils pour afficher la zone Omni-recherche.
 
-1. Avec le curseur dans la zone Omni-recherche, appuyez sur la touche Entrée pour afficher la page des résultats de la recherche.
+1. Avec le curseur dans la zone Omnisearch, sélectionnez la clé `Enter` pour afficher la page des résultats de la recherche.
 1. Ouvrez le panneau de recherche dans le rail de gauche. Cliquez sur l’option **[!UICONTROL Statut d’expiration]** pour développer l’option.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -110,7 +110,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
 1. Pour rechercher des ressources en fonction de leur état, cliquez sur **[!UICONTROL Rechercher]** ![option de recherche](assets/do-not-localize/search_icon.png) pour afficher la barre Omnisearch.
-1. Appuyez sur Retour et cliquez sur [!DNL Experience Manager] pour afficher le panneau de recherche.
+1. Sélectionnez `Return` et cliquez sur [!DNL Experience Manager] pour afficher le panneau de recherche.
 1. Dans le panneau de recherche, cliquez sur **[!UICONTROL État de publication]** et choisissez **[!UICONTROL Publié]** pour rechercher des ressources publiées dans [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
