@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+source-git-commit: 97c93a95cd7fe63b306d80fe127388a209b727c7
 workflow-type: tm+mt
-source-wordcount: '4989'
+source-wordcount: '4974'
 ht-degree: 69%
 
 ---
@@ -803,10 +803,7 @@ Affiche un message dans la fenêtre QuickStart.
 
 Arguments :
 
-* p1 : Valeur `String` qui représente le message à afficher. L&#39;illustration suivante montre le résultat de l&#39;appel de `log` avec une valeur p1 de `this is a log message`.
-
-![launcheruilog](assets/launcheruilog.png)
-
+* p1 : Valeur `String` qui représente le message à afficher.
 * Valeur renvoyée : aucune
 
 **startupFinished**
@@ -821,14 +818,10 @@ Appelle la méthode startupFinished du lanceur du serveur. La méthode tente d�
 Définit la valeur de fin du processus de démarrage du serveur. La barre de progression dans la fenêtre QuickStart représente la valeur de fin.
 
 * Arguments :
-
    * p1 : valeur flottante représentant la quantité du processus de démarrage terminée, sous forme de fraction. La valeur doit être comprise entre zéro et un. Par exemple, 0,3 indique que le processus est terminé à 30 %.
-
 * Valeur renvoyée : aucune.
 
-![progression du lancement](assets/launcherprogress.png)
-
-## Services tiers {#third-party-services}
+## Services tiers  {#third-party-services}
 
 Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui exposent des attributs et des opérations dans la console JMX. Le tableau ci-dessous répertorie les ressources tierces et contient des liens vers des informations supplémentaires.
 
