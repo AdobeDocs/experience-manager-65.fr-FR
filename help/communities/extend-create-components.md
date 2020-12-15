@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 418e7fad2d990f1a7cb3b69ab4c290ca1b7075ba
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 6%
@@ -72,7 +72,7 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
 1. Sélectionner **[!UICONTROL Supprimer]**
 1. Sélectionner **[!UICONTROL Enregistrer tout]**
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![create-component](assets/create-component.png)
 
 ### Créer le composant Commentaires enfant {#create-the-child-comment-component}
 
@@ -83,13 +83,13 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
 1. Accédez au noeud `/apps/custom/components/comments`
 1. Cliquez avec le bouton droit sur le noeud.
 
-   * Sélectionnez **[!UICONTROL Créer] > **[!UICONTROL Composant...]**
+   * Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Composant...]**
 
       * **Libellé** :  *commentaire*
       * **Titre** :  *Commentaire Alt*
       * **Description** :  *Autre style de commentaire*
       * **Super Type** :  *social/commons/composants/hbs/commentaires/commentaire*
-      * **Groupe** :  `*.hidden*`
+      * **Groupe**: `*.hidden*`
    * Sélectionnez **[!UICONTROL Suivant]**
    * Sélectionnez **[!UICONTROL Suivant]**
    * Sélectionnez **[!UICONTROL Suivant]**
@@ -102,9 +102,9 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
 1. Sélectionner **[!UICONTROL Supprimer]**
 1. Sélectionner **[!UICONTROL Enregistrer tout]**
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![create-child-component](assets/create-child-component.png)
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![create-component-crxde](assets/create-component-crxde.png)
 
 ### Copier et modifier les scripts HBS par défaut {#copy-and-modify-the-default-hbs-scripts}
 
@@ -168,7 +168,7 @@ Utilisation de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-li
 * Saisissez &quot;customcommentsystem.js&quot; comme contenu de `js.txt`
 * Sélectionner **[!UICONTROL Enregistrer tout]**
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![commentaires-clientlibs](assets/comments-clientlibs.png)
 
 ## Enregistrer le modèle et la Vue SCF {#register-the-scf-model-view}
 
@@ -200,9 +200,9 @@ Saisissez le texte suivant comme contenu de `customcommentsystem.js` :
 
 Pour expérimenter le composant étendu dans l’environnement de publication, il est nécessaire de répliquer le composant personnalisé.
 
-Une façon de le faire est
+L&#39;une des façons de le faire est :
 
-* A partir de la navigation globale
+* De la navigation globale,
 
    * Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]**
    * Sélectionnez **[!UICONTROL Activer l&#39;arborescence]**
