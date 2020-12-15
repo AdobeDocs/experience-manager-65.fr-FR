@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
+source-git-commit: 0e1ac02879ff09ab0e78d043450ef7114c868417
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -222,7 +222,7 @@ Par défaut, la configuration `AEM Communities Publisher Configuration` OSGi est
 
 Par conséquent, il est nécessaire de **modifier la configuration sur toutes les instances de publication secondaires** pour décocher la case **`Primary Publisher`**.
 
-![chlimage_1-411](assets/chlimage_1-411.png)
+![éditeur Principal](assets/primary-publisher.png)
 
 Pour toutes les autres instances de publication (secondaires) d’une batterie de publication :
 
@@ -266,11 +266,11 @@ Les images suivantes montrent les résultats du changement de port de 4503 à 61
 
 #### Agent par défaut (publication) {#default-agent-publish}
 
-![chlimage_1-412](assets/chlimage_1-412.png)
+![default-agent-publish](assets/default-agent-publish.png)
 
 #### Agent de réplication inverse (inversion de publication) {#reverse-replication-agent-publish-reverse}
 
-![chlimage_1-413](assets/chlimage_1-413.png)
+![rétro-réplication-agent](assets/reverse-replication-agent.png)
 
 ### Service Tunnel sur l&#39;auteur {#tunnel-service-on-author}
 
@@ -293,7 +293,7 @@ ensuite [configurer l&#39;agent de réplication](#replication-agents-on-author)
 * Cochez la case **activer**.
 * Sélectionnez **Enregistrer**
 
-   ![chlimage_1-414](assets/chlimage_1-414.png)
+   ![service tunnel](assets/tunnel-service.png)
 
 ### Répliquer la clé Crypto {#replicate-the-crypto-key}
 
@@ -353,7 +353,7 @@ Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md
 
 * [Actualiser le lot Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-   ![chlimage_1-415](assets/chlimage_1-415.png)
+   ![réplicare-référentiel](assets/replicare-repository.png)
 
 #### Actualiser l&#39;offre groupée Granite Crypto {#refresh-the-granite-crypto-bundle}
 
@@ -364,7 +364,7 @@ Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md
 * Localisez le lot `Adobe Granite Crypto Support` (com.adobe.granite.crypto).
 * Sélectionner **Actualiser**
 
-   ![chlimage_1-416](assets/chlimage_1-416.png)
+   ![crypto-granite](assets/granite-crypto.png)
 
 * Au bout d’un instant, une boîte de dialogue **Succès** s’affiche :
    `Operation completed successfully.`
