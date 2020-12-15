@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 871c42ee000eb250c1c6159d9a0c752e8ed4d7b8
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 35%
@@ -49,13 +49,13 @@ Pour obtenir les informations nécessaires, consultez [Community Components Basi
 
 Lorsque les [bibliothèques client requises](/help/communities/essentials-forum.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Forum` apparaîtra :
 
-![chlimage_1-60](assets/chlimage_1-60.png)
+![forum-component](assets/forum-component.png)
 
 ### Configuration d’un forum {#configuring-a-forum}
 
 Sélectionnez le composant `Forum` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
-![chlimage_1-61](assets/chlimage_1-61.png)
+![configure-new](assets/configure-new.png)
 
 ![forum-config](assets/forum-config.png)
 
