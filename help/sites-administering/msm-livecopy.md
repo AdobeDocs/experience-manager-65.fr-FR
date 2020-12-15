@@ -2,9 +2,9 @@
 title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies.
 translation-type: tm+mt
-source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
+source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
 workflow-type: tm+mt
-source-wordcount: '4115'
+source-wordcount: '4114'
 ht-degree: 83%
 
 ---
@@ -47,7 +47,7 @@ Pour créer une configuration de plan directeur :
 1. [Accédez](/help/sites-authoring/basic-handling.md#global-navigation) au menu **Outils**, puis sélectionnez le menu **Sites**.
 1. Sélectionnez **Plans directeurs** pour ouvrir la console **Configurations de plans directeurs** :
 
-   ![chlimage_1-209](assets/chlimage_1-209.png)
+   ![chlimage_1-209](assets/blueprint-configurations.png)
 
 1. Sélectionnez **Créer**.
 1. Sélectionnez le modèle de plan directeur, puis **Suivant** pour continuer.
@@ -66,14 +66,12 @@ Vous pouvez modifier ou supprimer une configuration de plan directeur existante�
 1. [Accédez](/help/sites-authoring/basic-handling.md#global-navigation) au menu **Outils**, puis sélectionnez le menu **Sites**.
 1. Sélectionnez **Plans directeurs** pour ouvrir la console **Configurations de plans directeurs** :
 
-   ![chlimage_1-210](assets/chlimage_1-210.png)
+   ![chlimage_1-210](assets/blueprint-configurations.png)
 
 1. Sélectionnez la configuration de plan directeur requise ; les actions appropriées deviennent disponibles dans la barre d’outils :
 
    * **Propriétés** : vous pouvez utiliser cette option pour afficher puis modifier les propriétés de la configuration.
    * **Supprimer**
-
-   ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Création d’une Live Copy {#creating-a-live-copy}
 
@@ -154,7 +152,7 @@ Pour créer une Live Copy d’un site à partir d’une configuration de plan di
 1. Dans la console **Sites**, sélectionnez **Créer**, puis **Site** dans le sélecteur déroulant.
 1. Sélectionnez la configuration de plan directeur à utiliser comme source de la Live Copy et cliquez sur **Suivant** :
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![chlimage_1-216](assets/blueprint-configuration-select.png)
 
 1. Utilisez le sélecteur **Langues initiales** pour spécifier la ou les langues du plan directeur à utiliser pour la Live Copy.
 
