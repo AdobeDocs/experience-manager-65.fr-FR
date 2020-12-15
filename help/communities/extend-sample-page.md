@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: d38395b8f845686492a26329bb732a41f79c85c4
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ Le [Community Components Guide](/help/communities/components-guide.md) identifie
 
 Notez les trois bibliothèques clientes requises pour que les commentaires s’affichent et fonctionnent correctement. Ils devront être inclus là où les commentaires étendus sont référencés, et la [bibliothèque cliente des commentaires étendus](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![commentaires-composant1](assets/comments-component1.png)
 
 ### Ajouter des commentaires personnalisés à une page {#add-custom-comments-to-a-page}
 
@@ -45,17 +45,17 @@ Pour que le commentaire s’affiche et fonctionne correctement, les bibliothèqu
 
 #### Commentaires Clientlibs sur l&#39;exemple de page {#comments-clientlibs-on-sample-page}
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![commentaires-clientlibs-crxde](assets/comments-clientlibs-crxde.png)
 
 #### Auteur : Alt Comment sur l&#39;exemple de page {#author-alt-comment-on-sample-page}
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![alt-comment](assets/alt-comment.png)
 
 #### Auteur : Exemple de noeud de commentaires de page {#author-sample-page-comments-node}
 
 Vous pouvez vérifier le resourceType dans CRXDE en affichant les propriétés du noeud de commentaires pour l’exemple de page à l’adresse `/content/sites/sample/en/jcr:content/content/primary/comments`.
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![verify-comment-crxde](assets/verify-comment-crxde.png)
 
 #### Publier l’exemple de page {#publish-sample-page}
 
@@ -67,8 +67,8 @@ Après avoir publié à la fois l’application personnalisée et l’exemple de
 
 aaron.mcdonald@mailinator.com a posté un commentaire :
 
-![chlimage_1-51](assets/chlimage_1-51.png)
+![publish-alt-comment](assets/publish-alt-comment.png)
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![publish-alt-comment1](assets/publish-alt-comment1.png)
 
 Maintenant qu&#39;il apparaît que le composant étendu fonctionne correctement avec l&#39;apparence par défaut, il est temps de modifier l&#39;apparence.
