@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 22%
+ht-degree: 20%
 
 ---
 
@@ -44,15 +44,15 @@ Pour obtenir les informations nécessaires, consultez [Community Components Basi
 
 Placé pour la première fois sur une page d’un site de communauté, voici à quoi ressemble le composant :
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![tableau de bord](assets/leaderboard.png)
 
 ### Configuration de Leaderboard {#configuring-leaderboard}
 
 Sélectionnez le composant `Leaderboard` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![configure-leaderboard](assets/configure-leaderboard.png)
 
 #### Onglet Settings {#settings-tab}
 
@@ -120,7 +120,7 @@ Configuration du composant de tableau de bord :
    * Règle d’attribution des badges = `/libs/settings/community/badging/rules//reference-badging`
    * Limite d’affichage = `10`
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![participants-leadership](assets/participants-leaderboard.png)
 
 ### Exemple : Tableau de bord des experts {#example-experts-leaderboard}
 
@@ -143,7 +143,7 @@ Configuration du composant de tableau de bord :
    * Règle d’attribution des badges = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite d’affichage = `10`
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![experts-chefs](assets/experts-leaderboard.png)
 
 ### Informations supplémentaires {#additional-information}
 
