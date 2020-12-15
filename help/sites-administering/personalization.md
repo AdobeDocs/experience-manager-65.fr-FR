@@ -10,15 +10,15 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ffded9c4c08c68db59d05b341166bed92e741e1e
 workflow-type: tm+mt
-source-wordcount: '1684'
-ht-degree: 78%
+source-wordcount: '1693'
+ht-degree: 72%
 
 ---
 
 
-# Personnalisation {#personalization}
+# Personnalisation   {#personalization}
 
 ## Qu’est-ce que la personnalisation ? {#what-is-personalization}
 
@@ -28,54 +28,54 @@ La personnalisation vise à proposer à l’utilisateur un environnement sur mes
 
 Trois éléments principaux sont impliqués dans la personnalisation :
 
-**Utilisateurs**
+### Utilisateurs {#users}
 
-* Ils disposent de profils, personnels ou de groupe. Ces profils présentent des caractéristiques (par exemple, description de poste, lieu, intérêts) qui peuvent être utilisées pour personnaliser le contenu que les utilisateurs peuvent afficher.
-* Ils effectuent des actions. Ces actions peuvent être analysées et associées à des règles de comportement dans le but de personnaliser le contenu affiché.
+* Avoir des profils, individuels et collectifs. Ces profils présentent des caractéristiques (par exemple, description de poste, lieu, intérêts) qui peuvent être utilisées pour personnaliser le contenu que les utilisateurs peuvent afficher.
+* Agissez. Ces actions peuvent être analysées et associées à des règles de comportement dans le but de personnaliser le contenu affiché.
 
-**Contenu**
+### Contenu {#content}
 
-* Constitue ce que l’utilisateur souhaite voir. Il s’agit de préférence d’un contenu ciblé et permettant à l’utilisateur d’effectuer ses tâches.
-* Il peut être classé, donc mis à la disposition des utilisateurs selon des règles prédéfinies. Le contenu doit être dynamique, à savoir qu’il doit être
-* doit, d’une certaine manière, dépendre de l’utilisateur. Si chaque utilisateur voit le même contenu, la personnalisation est redondante.
+* Est ce que l’utilisateur souhaite voir. Il s’agit de préférence d’un contenu ciblé et permettant à l’utilisateur d’effectuer ses tâches.
+* Peut être classé et, par conséquent, mis à la disposition des utilisateurs selon des règles prédéfinies.doit être dynamique ; en d’autres termes, le contenu
+* Doit, d’une certaine manière, dépendre de l’utilisateur ; si chaque utilisateur voit le même contenu, la personnalisation est redondante.
 
-Les **règles**
+### Les règles {#rules}
 
-* définir comment la personnalisation se produit réellement - quel contenu l’utilisateur peut voir et quand.
+* Définissez la manière dont la personnalisation se produit réellement - quel contenu l’utilisateur peut voir et quand.
 
 La personnalisation peut être soit :
 
-**Explicite**
+#### Explicite {#explicit}
 
 * La personnalisation amène l’utilisateur à effectuer des sélections parmi différentes sources de contenu.
 
-**Implicite**
+#### Implicite {#implicit}
 
 * Elle repose sur des règles : les responsables de l’entreprise définissent des règles spécifiques pour chaque action en fonction de profils et/ou comportements spécifiques.
 * Filtrage simple : les sélections sont effectuées sur la base de profils prédéfinis au niveau de l’utilisateur et/ou du groupe.
 * Filtrage collaboratif/sur recommandation : le comportement de l’utilisateur est enregistré selon des règles prédéfinies. Ces règles sont basées sur le comportement observé chez des personnes ayant des centres d’intérêt similaires. Les informations collectées sont utilisées pour personnaliser les informations affichées sur l’écran de l’utilisateur, en particulier sous forme de recommandations.
 
-## Comment et quand la personnalisation peut-elle être utilisée ?  {#how-and-when-can-personalization-be-used}
+## Comment et quand la personnalisation peut-elle être utilisée ? {#how-and-when-can-personalization-be-used}
 
 La personnalisation peut être utilisée dans de nombreuses situations, par exemple :
 
-**Pages intranet**
+### Pages intranet {#intranet-pages}
 
 * Le contenu peut être diffusé en fonction de l&#39;emplacement, du département et/ou du rôle d&#39;un utilisateur, déjà défini dans un réseau interne.
 * Selon le choix disponible, l’utilisateur peut effectuer d’autres sélections.
 
-**Groupes d’utilisateurs spécifiques, restreints et ciblés (extranet)**
+### Groupes d&#39;utilisateurs spécifiques, limités et Cibles - Extranets {#extranets}
 
 * Les utilisateurs ont besoin d’une connexion en vue de l’autorisation. Cette connexion est associée à un profil fournissant les informations nécessaires à la personnalisation et, le cas échéant, des détails tels que l’emplacement de l’utilisateur, son utilisation du produit, l’historique de son utilisation, les responsabilités budgétaires, etc.
 * Ces instances peuvent être réparties sur plusieurs sites :
 * Les entreprises qui fournissent des sites web à un segment hautement spécialisé de leur marché (par exemple, une entreprise pharmaceutique fournissant un site web professionnel destiné aux médecins).
 * Les entreprises qui fournissent des sites web permettant au client de visualiser son compte et ses informations de facturation actuels (par exemple, les opérateurs de téléphonie).
 
-**Site web de vente et de distribution**
+### Site Web de vente et de distribution {#sales-site}
 
 * Les sites web de vente et de distribution (par exemple, Amazon) peuvent combiner un profil utilisateur et l’historique des ventes et de la navigation de l’utilisateur pour lui suggérer d’autres choix susceptibles de l’intéresser.
 
-**Sites web de recherche**
+### Sites Web de recherche {#search-site}
 
 * La plupart des grands moteurs de recherche sont des outils analytiques très puissants qui enregistrent le comportement des utilisateurs, les termes qu’ils saisissent et les sites web qu’ils visitent. Il est ensuite utilisé pour personnaliser le contenu fourni, notamment en ce qui concerne l&#39;affichage des publicités.
 
@@ -93,31 +93,35 @@ Voici les raisons pour lesquelles la personnalisation doit être utilisée :
 
 Lors de l’utilisation de la personnalisation, tenez compte des points suivants :
 
-**Performances**
+#### Performances {#performance}
 
 * Naturellement, toute analyse et toute évaluation supplémentaires peuvent avoir un impact sur les performances. Toutefois, les méthodes utilisées sont très sophistiquées et peuvent être optimisées pour minimiser cet impact.
 
-**Autorisation**
+#### Autorisation {#authorization}
 
 * La personnalisation requiert un mécanisme de connexion, car le site web doit pouvoir identifier l’utilisateur.
 
-**Mise en cache**
+#### Mise en cache {#caching}
 
 * La mise en cache est un aspect que l’utilisateur verra en termes de performances et de précision : à quelle vitesse le site Web diffuse-t-il du contenu personnalisé et est-il toujours à jour ?
-* La mise en cache est une considération clé dans la configuration de la personnalisation, et du temps doit être consacré pour garantir que l’implémentation utilisée est adaptée. Cet aspect est décrit en détail plus loin.
+* La mise en cache est une considération clé dans la configuration de la personnalisation, et du temps doit être consacré pour garantir que l’implémentation utilisée est adaptée.
 
-**Précision des règles**
+>[!TIP]
+>
+>L&#39;effet de la personnalisation sur les performances et les rubriques de mise en cache connexes sont décrits plus en détail dans le document [Optimisation des performances.](/help/sites-deploying/configuring-performance.md)
+
+#### Précision des règles {#accuracy}
 
 * La personnalisation qui se base sur la surveillance du comportement de l’utilisateur ou la définition de règles basées sur le profil de l’utilisateur doit être précise et logique.
 * Il n’y a rien de plus frustrant pour un utilisateur que de se voir imposer ou refuser un contenu en raison de la logique inexacte d’une règle.
 * Par conséquent, les règles doivent être bien pensées, les exigences de l&#39;utilisateur étant au premier plan. Cette étape peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimée. En effet, la création des règles est souvent plus exigeante que l’effort technique nécessaire à la mise en œuvre de la personnalisation.
 
-**Quand utiliser la personnalisation**
+#### Quand utiliser {#when-to-use}
 
 * Comme un grand nombre de fonctionnalités sur le web, la personnalisation doit être utilisée avec prudence. Son utilisation bénéficiera-t-elle vraiment à l’utilisateur ? Cette question doit toujours être la première question posée. Mais on peut aussi se demander si l’objectif recherché peut être atteint à moindre effort par une autre méthode. La personnalisation risque d’être une fonction que les utilisateurs configurent une fois (pour voir comment elle fonctionne) et une seule fois, car elle ne leur apporte aucun avantage réel.
 * La personnalisation n’a de sens que lorsque le contenu est dynamique, en fonction de l’utilisateur d’une certaine manière. Si tous les utilisateurs voient le même contenu, la personnalisation est redondante.
 
-**Confidentialité**
+#### Confidentialité {#confidentiality}
 
 * De nombreux utilisateurs sont soucieux de la protection et de la sécurité des données, en particulier en ce qui concerne les données collectées en surveillant leur comportement sur le web.
 
@@ -156,7 +160,7 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Nom d&#39;affichage du profil | Nom à afficher. |
 | Courrier électronique du profil | Saisie d’une adresse de courrier électronique. |
 | Sexe du profil | Permet la saisie du sexe. |
-| Principal numéro de téléphone du profil | Permet la saisie d’un numéro de téléphone. |
+| Numéro de téléphone Principal profil | Permet la saisie d’un numéro de téléphone. |
 | Principale URL du profil | Permet la saisie d’une URL. |
 | Profil Texte général, propriété | Propriétés du profil. |
 | Connexion | Permet d’envoyer un nom d’utilisateur et un mot de passe lors de la connexion. |
@@ -172,7 +176,7 @@ Avec l&#39;extension [AEM Communities 6.1](/help/communities/overview.md), ce pr
 
 Sans l’extension Communities, les différentes méthodes à examiner pour résoudre le problème lié à l’homogénéité du contenu créé par l’utilisateur sont les suivantes :
 
-* Synchroniser les instances de publication multiples si nécessaire
-* Envoyer le contenu créé par l’utilisateur de l’instance de publication à l’environnement de création, à partir duquel il peut être publié de façon similaire à la publication du contenu des pages
+* Synchroniser les multiples instances de publication si nécessaire
+* Envoyez l’UGC de l’instance de publication à l’environnement d’auteur, d’où il peut être publié d’une manière similaire au contenu de la page de publication.
 
 La méthode utilisée pour obtenir l’homogénéité du contenu créé par l’utilisateur dans tout l’environnement de publication consistant en plusieurs instances de publication doit être soigneusement conçue et testée en termes de performances et d’homogénéité.
