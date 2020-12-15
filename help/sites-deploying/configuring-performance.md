@@ -677,7 +677,7 @@ La configuration AEM place le référentiel et la banque de données sur le mêm
 Le tableau suivant illustre la taille des volumes de données utilisés dans les tests de performances de sauvegarde. Le contenu de référence initial est d’abord installé, puis des quantités de données supplémentaires sont ajoutées pour augmenter la taille du contenu sauvegardé. Des sauvegardes sont créées à des incréments spécifiques afin de représenter une augmentation importante du contenu, et du volume qui peut être produit en un jour. La distribution du contenu (pages, images, balises) est en gros basée sur une composition réaliste des ressources de production. Les pages, images et balises sont limitées à un maximum de 800 pages enfants. Chaque page comprend les composants suivants : titre, Flash, texte/image, vidéo, diaporama, formulaire, tableau, cloud et carrousel. Les images sont chargées à partir d’un pool de 400 fichiers uniques dont la taille varie entre 37 Ko et 594 Ko.
 
 |Contenu|Noeuds|Pages|Images|Balises|
-|—|—|—|—|—|||
+|---|---|---|---|---|
 |Installation de base|69 610|562|256|237|
 |Petit contenu pour la sauvegarde incrémentielle||+100|+2|+2|
 |Contenu volumineux pour la sauvegarde complète||+10 000|+100|+100|+100|
