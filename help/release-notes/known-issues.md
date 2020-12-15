@@ -2,10 +2,10 @@
 title: Problèmes connus
 description: Notes de mise à jour spécifiques aux problèmes connus dans Adobe Experience Manager 6.5
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: f72101dadaa8d5d12f2f9a636548b18386b79b0a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '593'
+ht-degree: 48%
 
 ---
 
@@ -80,3 +80,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    La propriété permet aux bibliothèques clientes du dossier d’exécution d’accéder aux mandataires. (CQ-4268679)
 
 * Lorsque AEM Forms est démarré, l&#39;avertissement `SAX Security Manager could not be setup` s&#39;affiche.
+* Lorsque vous ouvrez un fichier PDF protégé par AEM Forms Document Security sur un iOS ou un iPadOS Apple exécutant Adobe Acrobat Reader version 20.10.00.
