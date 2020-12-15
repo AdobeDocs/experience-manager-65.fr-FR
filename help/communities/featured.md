@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -51,15 +51,15 @@ Pour obtenir les informations nécessaires, consultez [Community Components Basi
 
 Lorsque les [bibliothèques client requises](essentials-featured.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Featured Content` apparaîtra :
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![featuredcontent](assets/featuredcontent.png)
 
 ## Configuration du contenu proposé {#configuring-featured-content}
 
 Sélectionnez le composant `Featured Content` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![featuredcontent1](assets/featuredcontent1.png)
 
 ### Onglet Settings {#settings-tab}
 
@@ -83,13 +83,13 @@ La possibilité de marquer le contenu comme contenu phare nécessite des privil�
 
 Lorsqu’un modérateur vue du contenu publié, il a accès aux indicateurs de modération contextuels, qui comprennent le nouvel indicateur `Feature`.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![site-visiteur-expérience](assets/site-visitor-experience.png)
 
 Une fois marquée comme fonction, l&#39;indicateur de modération devient `Unfeature`.
 
 La page contenant le composant `Featured Content` inclut désormais cette publication.
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![site-visiteur-experience1](assets/site-visitor-experience1.png)
 
 `Read More` est un lien vers la publication active.
 
