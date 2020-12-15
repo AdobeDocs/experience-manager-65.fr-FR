@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+source-git-commit: cdbe098ada0b6c50952284f92cc2063435034a38
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 35%
@@ -42,15 +42,15 @@ Pour obtenir les informations nécessaires, consultez [Community Components Basi
 
 Lorsque les [bibliothèques client requises](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `File Library` apparaîtra :
 
-![chlimage_1-430](assets/chlimage_1-430.png)
+![file-library1](assets/file-library1.png)
 
 ### Configuration de la bibliothèque de fichiers {#configuring-file-library}
 
 Sélectionnez le composant `File Library` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
-![chlimage_1-431](assets/chlimage_1-431.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-432](assets/chlimage_1-432.png)
+![file-library2](assets/file-library2.png)
 
 #### Onglet Commentaires {#comments-tab}
 
