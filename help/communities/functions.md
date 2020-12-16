@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3133f712be1380ae98e18e63c9598d760d2e7595
+source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
 workflow-type: tm+mt
 source-wordcount: '2458'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -51,7 +51,7 @@ Lorsqu&#39;une fonction de communauté est ajoutée à un modèle de site de com
 
 #### Détails de la fonction de configuration {#configuration-function-details}
 
-![chlimage_1-380](assets/chlimage_1-380.png)
+![title-url-details](assets/title-url-details.png)
 
 * **Titre**
 
@@ -70,7 +70,7 @@ Ensuite, l’URL de la page est https://localhost:4503/content/sites/engage/en/p
 
 et le lien de menu de la page s’affiche comme suit :
 
-![chlimage_1-381](assets/chlimage_1-381.png)
+![page d’engagement](assets/engage-page.png)
 
 ### Fonction Flux d&#39;activités {#activity-stream-function}
 
@@ -80,7 +80,7 @@ Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouv
 
 #### Détails de la fonction de configuration {#configuration-function-details-1}
 
-![chlimage_1-382](assets/chlimage_1-382.png)
+![function-details](assets/function-details.png)
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
@@ -110,7 +110,7 @@ La fonction de blog est une page avec un [composant de blog](/help/communities/b
 
 Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouvre :
 
-![chlimage_1-383](assets/chlimage_1-383.png)
+![blog-component](assets/blog-component.png)
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
@@ -136,7 +136,7 @@ La fonction de calendrier est une page dont le composant [Calendrier](/help/comm
 
 Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouvre :
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![calendrier-détails](assets/calendar-details.png)
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
@@ -201,7 +201,7 @@ Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouv
 
 #### Détails de la fonction de configuration {#configuration-function-details-2}
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![forum-component1](assets/forum-component1.png)
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
@@ -243,7 +243,7 @@ Lorsqu’un groupe de communauté est créé, un groupe de membres est créé dy
 
 Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouvre :
 
-![chlimage_1-386](assets/chlimage_1-386.png)
+![group-template-config](assets/group-template-config.png)
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
@@ -266,7 +266,7 @@ La fonction d&#39;idéation est une page avec un [composant d&#39;idéation](/he
 
 Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouvre, qui spécifie les noms de titre et d’URL par défaut, ainsi que les paramètres d’affichage par défaut du modèle :
 
-![chlimage_1-387](assets/chlimage_1-387.png)
+![idéation-fonction](assets/ideation-function.png)
 
 * [Paramètres de titre et d’URL](#title-and-url-settings)
 
