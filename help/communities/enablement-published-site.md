@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 4d21a61ed687caea2b1867d5321f75636f5310a3
 workflow-type: tm+mt
 source-wordcount: '1239'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -90,7 +90,7 @@ Si le profil d’utilisateur n’a pas été créé par l’auto-inscription, la
 
 La prochaine fois que le membre se connecte, la page d&#39;accueil, identifiée par le premier élément de menu, s&#39;affiche.
 
-![chlimage_1-434](assets/chlimage_1-434.png)
+![inscrit](assets/enrolled-member.png)
 
 ### Affectations {#assignments}
 
@@ -106,11 +106,11 @@ Chaque affectation fournit des informations de base sur :
 
 Le type d&#39;affectation est indiqué par une icône dans le coin supérieur gauche de la carte. L&#39;image d&#39;une route est celle d&#39;un parcours d&#39;apprentissage avec le nombre de ressources d&#39;activation incluses.
 
-![chlimage_1-435](assets/chlimage_1-435.png)
+![affectation1](assets/assignment1.png)
 
 La sélection de *Leçons de ski* affichera les deux ressources d&#39;activation référencées par le chemin d&#39;apprentissage.
 
-![chlimage_1-436](assets/chlimage_1-436.png)
+![affectation2](assets/assignment2.png)
 
 Si vous sélectionnez *Ski Lesson 1*, la page de détails de la ressource d&#39;activation s&#39;ouvre.
 
@@ -118,7 +118,7 @@ A partir de la page des détails, le membre peut apprendre [rate](rating.md) la 
 
 Les interactions avec la ressource d&#39;activation sont indiquées dans la section Rapport accessible dans l&#39;environnement d&#39;auteur.
 
-![chlimage_1-437](assets/chlimage_1-437.png)
+![affectation3](assets/assignment3.png)
 
 ### Catalogue Ski {#ski-catalog}
 
@@ -126,7 +126,7 @@ La page Catalogue des skis est le catalogue des ressources d’activation balis�
 
 Lorsqu’un membre n’a pas reçu de ressources d’activation, directement ou par le biais d’un parcours d’apprentissage, il est possible d’interagir avec les ressources d’activation situées dans un catalogue et de fournir des commentaires et des évaluations.
 
-![chlimage_1-438](assets/chlimage_1-438.png)
+![catalogue de ski](assets/ski-catalog.png)
 
 ### Discussions {#discussions}
 
@@ -138,7 +138,7 @@ Déconnectez-vous et connectez-vous en tant que Sidney Croft (sidney / password)
 
 Notez qu’en plus de la modération en ligne, il existe des options pour partager la rubrique sur les réseaux sociaux ou pour envoyer la rubrique par courriel.
 
-![chlimage_1-439](assets/chlimage_1-439.png)
+![discussions](assets/discussions.png)
 
 ### Nouveautés {#what-s-new}
 
@@ -146,7 +146,7 @@ L&#39;élément de menu `What's New` est le titre donné à la fonction [activit
 
 Toujours connecté en tant que Sidney, sélectionnez le lien `What's New` pour afficher l’activité.
 
-![chlimage_1-440](assets/chlimage_1-440.png)
+![whats-new-menu](assets/whats-new-menu.png)
 
 ## Membre de la communauté approuvée {#trusted-community-member}
 
@@ -159,7 +159,7 @@ Connexion avec
 
 Une fois connecté, notez qu&#39;il existe un nouvel élément de menu, `Administration`, qui s&#39;affiche car le membre a reçu le rôle de modérateur.
 
-![chlimage_1-441](assets/chlimage_1-441.png)
+![page d&#39;accueil des membres de confiance](assets/trusted-member-homepage.png)
 
 La page d&#39;accueil est identifiée par le premier élément de menu, Affectations. Quinn est le modérateur et le contact de ressources d&#39;activation et n&#39;était inscrit à aucune ressource d&#39;activation ou de chemins d&#39;apprentissage, il n&#39;y a donc rien à afficher.
 
@@ -171,7 +171,7 @@ La sélection de l’icône du panneau latéral permet d’ouvrir les filtres ut
 
 Le survol d’une carte de commentaires affiche les actions de modération.
 
-![chlimage_1-442](assets/chlimage_1-442.png)
+![administration](assets/administration.png)
 
 ## Rapports sur l&#39;auteur {#reports-on-author}
 
@@ -213,7 +213,7 @@ Notez qu’il est probablement trop tôt pour afficher les données en provenanc
 
 #### Rapport de ressources sur les leçons de ski {#ski-lessons-resource-report}
 
-![chlimage_1-443](assets/chlimage_1-443.png)
+![rapport sur les leçons de ski](assets/ski-lessons-report.png)
 
 #### Rapport utilisateur des leçons de ski {#ski-lessons-user-report}
 
@@ -223,7 +223,7 @@ Notez qu’il est probablement trop tôt pour afficher les données en provenanc
 * Ouvrir la carte `Ski Lessons`
 * Sélectionner `Report > User Report`
 
-![chlimage_1-444](assets/chlimage_1-444.png)
+![rapport des leçons-utilisateurs-ski](assets/ski-lessons-user-report.png)
 
 ### Console Rapports{#reports-console} 
 
@@ -245,7 +245,7 @@ Pour les rapports sur les affectations :
 
 * Sélectionnez **[!UICONTROL Générer]**
 
-![chlimage_1-445](assets/chlimage_1-445.png)
+![affectation de rapport](assets/report-assignment.png)
 
 Pour les rapports sur les vues :
 
@@ -259,6 +259,6 @@ Pour les rapports sur les vues :
 
 * Sélectionnez **[!UICONTROL Générer]**.
 
-![chlimage_1-446](assets/chlimage_1-446.png)
+![Report-vues](assets/report-views.png)
 
 **[⇐ Créer et affecter des ressources d’activation](resource.md)**
