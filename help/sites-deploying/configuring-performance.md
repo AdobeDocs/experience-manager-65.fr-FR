@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 7f1ae2d4ab361bc039c1098daa0ef944ec9df639
+source-git-commit: a0673c23588cba263c292680637b16a18ef1431c
 workflow-type: tm+mt
-source-wordcount: '6648'
+source-wordcount: '6658'
 ht-degree: 73%
 
 ---
@@ -400,7 +400,7 @@ En testant une combinaison de composants, vous vous dotez d’une visibilité pl
 | Scénario | Composant | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
 | Moyenne mixte | Page d’accueil | 10 | 1 |  |  |
-|  | Rechercher | 10 | 3 |  |  |
+|  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 10 | 2 |  |  |
 |  | Événements | 10 | 1 |  |  |
 |  | Activations | 10 | 1 |  | Simulation du comportement de l’auteur. |
@@ -433,10 +433,10 @@ Lors de la conception de ces tests, il faut garder à l’esprit que tous les sc
 
 | Scénario d’erreur | Type d’erreur | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge des composants de recherche | Recherche sur un caractère générique global (astérisque) | 10 | 3 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast; sont recherchées. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique global (astérisque) | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast; sont recherchées. |
 |  | Mot d’arrêt | 20 | 2 |  | Recherche d&#39;un mot d&#39;arrêt. |
-|  | Chaîne vide | 10 | 3 |  | Recherche d’une chaîne vide. |
-|  | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
+|  | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
+|  | Caractères spéciaux | 10 | 3 |  | Recherche de caractères spéciaux. |
 
 #### Tests d’endurance {#endurance-tests}
 
@@ -444,8 +444,8 @@ Certains problèmes ne feront surface qu’après une période continue de fonct
 
 | Scénario | Type de test | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Essai d&#39;endurance (72 heures) | Page d’accueil | 10 | 3 |  |  |
-|  | Rechercher | 10 | 3 |  |  |
+| Essai d&#39;endurance (72 heures) | Page d’accueil | 10 | 1 |  |  |
+|  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 20 | 2 |  |  |
 |  | Événements | 10 | 1 |  |  |
 |  | Activations | 1 | 1 |  | Simulation du comportement de l’auteur. |
@@ -676,11 +676,11 @@ La configuration AEM place le référentiel et la banque de données sur le mêm
 
 Le tableau suivant illustre la taille des volumes de données utilisés dans les tests de performances de sauvegarde. Le contenu de référence initial est d’abord installé, puis des quantités de données supplémentaires sont ajoutées pour augmenter la taille du contenu sauvegardé. Des sauvegardes sont créées à des incréments spécifiques afin de représenter une augmentation importante du contenu, et du volume qui peut être produit en un jour. La distribution du contenu (pages, images, balises) est en gros basée sur une composition réaliste des ressources de production. Les pages, images et balises sont limitées à un maximum de 800 pages enfants. Chaque page comprend les composants suivants : titre, Flash, texte/image, vidéo, diaporama, formulaire, tableau, cloud et carrousel. Les images sont chargées à partir d’un pool de 400 fichiers uniques dont la taille varie entre 37 Ko et 594 Ko.
 
-|Contenu|Noeuds|Pages|Images|Balises|
+| Contenu | Noeuds | Pages | Images | Balises |
 |---|---|---|---|---|
-|Installation de base|69 610|562|256|237|
-|Petit contenu pour la sauvegarde incrémentielle||+100|+2|+2|
-|Contenu volumineux pour la sauvegarde complète||+10 000|+100|+100|+100|
+| Installation de base | 69 610 | 562 | 256 | 237 |
+| Petit contenu pour la sauvegarde incrémentielle |  | +100 | +2 | +2 |
+| Contenu volumineux pour une sauvegarde complète |  | +10 000 | +100 | +100 |
 
 L’indicateur de sauvegarde est répété avec les jeux de contenu supplémentaires ajoutés à chaque répétition.
 
