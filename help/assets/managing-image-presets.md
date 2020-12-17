@@ -1,6 +1,6 @@
 ---
-title: Gestion des paramètres d’image prédéfinis de média dynamique
-description: Comprendre les paramètres d’image prédéfinis de Contenu multimédia dynamique et apprendre à créer, modifier et gérer les paramètres d’image prédéfinis
+title: Gestion des paramètres d’image prédéfinis Dynamic Media
+description: Comprendre les paramètres d’image prédéfinis Dynamic Media et apprendre à créer, modifier et gérer les paramètres d’image prédéfinis
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,15 +10,15 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
+source-git-commit: ae3e6b1c2d3dfa63b9ea5763ebedaa57f5c7bc85
 workflow-type: tm+mt
-source-wordcount: '3867'
+source-wordcount: '3866'
 ht-degree: 92%
 
 ---
 
 
-# Gestion des paramètres d’image prédéfinis de média dynamique {#managing-image-presets}
+# Gestion des paramètres d’image prédéfinis Dynamic Media{#managing-image-presets}
 
 Les paramètres d’image prédéfinis permettent à AEM Assets d’afficher des images selon des tailles et des formats différents, ou avec d’autres propriétés d’image générées dynamiquement. Chaque paramètre d’image prédéfini représente un ensemble prédéfini de commandes de dimensionnement et de mise en forme pour l’affichage des images. Lorsque vous créez un paramètre d’image prédéfini, vous choisissez une taille pour la diffusion de l’image. Vous pouvez également choisir des commandes de mise en forme pour optimiser l’aspect de l’image lors de la diffusion de l’image.
 
@@ -32,13 +32,13 @@ Cette section explique comment créer, modifier et gérer des paramètres d’im
 >
 >L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Imagerie numérique](/help/assets/imaging-faq.md) pour plus d’informations.
 
-## Présentation des paramètres d’image prédéfinis de Contenu multimédia dynamique {#understanding-image-presets}
+## Présentation des paramètres d’image prédéfinis Dynamic Media {#understanding-image-presets}
 
 À l’instar d’une macro, un paramètre d’image prédéfini est un ensemble prédéfini de commandes de dimensionnement et de formatage enregistrées sous un nom. Pour comprendre le fonctionnement des paramètres d’image prédéfinis, imaginez que votre site web nécessite l’affichage de chaque image d’un produit dans des tailles, des formats et des taux de compression différents pour la diffusion mobile et de bureau.
 
 >[!NOTE]
 >
->En mode Contenu multimédia dynamique - Scene7, les paramètres d’image prédéfinis sont pris en charge uniquement pour les fichiers d’image.
+>En mode Dynamic Media - Scene7, les paramètres d’image prédéfinis sont pris en charge uniquement pour les fichiers d’image.
 
 Vous pouvez créer deux paramètres d’image prédéfinis : l’un avec 500 x 500 pixels pour la version de bureau et l’autre avec 150 x 150 pixels pour la version mobile. Vous créez deux paramètres d’image prédéfinis, l’un appelé `Enlarge` pour afficher des images à 500 x 500 pixels et l’autre appelé `Thumbnail` pour afficher des images à 150 x 150 pixels. Pour diffuser des images au format `Enlarge` et `Thumbnail`, AEM recherche la définition du paramètre prédéfini d’image agrandie et du paramètre prédéfini d’image miniature. Ensuite, AEM génère de manière dynamique une image dont la taille et le format correspondent à chaque paramètre d’image prédéfini.
 
@@ -46,7 +46,7 @@ Les images de taille réduite, lorsqu’elles sont diffusées dynamiquement, peu
 
 Les administrateurs peuvent créer des paramètres d’image prédéfinis. Vous pouvez créer un paramètre d’image prédéfini ou commencer par un paramètre d’image existant et l’enregistrer sous un nouveau nom.
 
-## Gestion des paramètres d’image prédéfinis de média dynamique {#managing-image-presets-1}
+## Gestion des paramètres d’image prédéfinis Dynamic Media {#managing-image-presets-1}
 
 La gestion des paramètres d’image prédéfinis dans AEM s’effectue en appuyant ou en cliquant sur le logo AEM pour accéder à la console de navigation globale, puis en appuyant ou en cliquant sur l’icône Outils et en accédant à **[!UICONTROL Ressources > Paramètres d’image prédéfinis.]**
 
@@ -70,7 +70,7 @@ La gestion des paramètres d’image prédéfinis dans AEM s’effectue en appuy
 
 >[!NOTE]
 >
->Cette rubrique s’applique uniquement au mode Contenu multimédia dynamique - hybride.
+>Cette rubrique s’applique uniquement au mode Dynamic Media - hybride.
 
 Si vous avez l’intention de prendre en charge l’assimilation de fichiers AI, EPS et PDF de manière à pouvoir générer des rendus dynamiques de ces formats de fichiers, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
@@ -223,11 +223,11 @@ Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications apportées au workflow.
 
-### Augmentation ou diminution du nombre de paramètres d’image prédéfinis de Contenu multimédia dynamique qui affichent {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Augmentation ou diminution du nombre de paramètres d’image prédéfinis Dynamic Media qui affichent {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Les paramètres d’image prédéfinis que vous créez sont disponibles sous la forme de rendus dynamiques lorsque vous prévisualisez des ressources. AEM affiche une grande variété de rendus dynamiques lors de l’affichage de ressources à partir de **[!UICONTROL Affichage des détails > Rendus.]** Vous pouvez augmenter ou diminuer la limite des rendus affichés.
 
-**Pour augmenter ou diminuer le nombre de paramètres d’image prédéfinis de Contenu multimédia dynamique affichés** :
+**Pour augmenter ou diminuer le nombre de paramètres d’image prédéfinis Dynamic Media affichés** :
 
 1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Accédez au nœud de liste des paramètres d’image prédéfinis à l’adresse `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -242,9 +242,9 @@ Les paramètres d’image prédéfinis que vous créez sont disponibles sous la 
 1. Dans la propriété limit, saisissez la valeur de votre choix ; par exemple, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Appuyez sur **[!UICONTROL Enregistrer tout.]**
 
-## Création d’un paramètre d’image prédéfini de média dynamique {#creating-image-presets}
+## Création d’un paramètre d’image prédéfini Dynamic Media {#creating-image-presets}
 
-La création d’un paramètre d’image prédéfini Contenu multimédia dynamique vous permet d’appliquer ces paramètres à toute image lors de la prévisualisation ou de la publication.
+La création d’un paramètre d’image prédéfini Dynamic Media vous permet d’appliquer ces paramètres à toute image lors de la prévisualisation ou de la publication.
 
 >[!NOTE]
 >
@@ -258,9 +258,9 @@ Voir [Format de fichier InDesign (INDD)](#indesign-indd-file-format).
 
 >[!NOTE]
 >
->Pour créer des paramètres d’image prédéfinis de Contenu multimédia dynamique, vous devez disposer de droits d’administrateur en tant qu’administrateur AEM ou administrateur Admin Console.
+>Pour créer des paramètres d’image prédéfinis Dynamic Media, vous devez disposer de droits d’administrateur en tant qu’administrateur AEM ou administrateur Admin Console.
 
-**Pour créer un paramètre** d’image prédéfini Contenu multimédia dynamique :
+**Pour créer un paramètre d’image prédéfini** Dynamic Media :
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale, puis appuyez sur **[!UICONTROL Outils > Ressources > Paramètres d’image prédéfinis.]**
 1. Cliquez sur **[!UICONTROL Créer.]** La fenêtre **[!UICONTROL Modifier le paramètre d’image prédéfini]** s’ouvre.
@@ -400,7 +400,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li>
     </ul>
     <div>
-      L’accentuation est décrite dans <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">Accentuation des images</a>.
+      L’accentuation est décrite dans <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Accentuation des images</a>.
     </div> </td>
   </tr>
   <tr>
@@ -494,13 +494,13 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 1. Sélectionnez un paramètre prédéfini, puis cliquez sur **[!UICONTROL Modifier.]** La fenêtre **[!UICONTROL Modifier le paramètre d’image prédéfini]** s’ouvre.
 1. Apportez des modifications, puis cliquez sur **[!UICONTROL Enregistrer]** pour les enregistrer ou sur **[!UICONTROL Annuler]** pour les annuler.
 
-## Publication des paramètres d’image prédéfinis de média dynamique {#publishing-image-presets}
+## Paramètres prédéfinis d’image Dynamic Media de publication {#publishing-image-presets}
 
 Si vous exécutez le mode hybride de Dynamic Media, vous devez publier manuellement les paramètres d’image prédéfinis.
 
 (Si vous exécutez le mode Scene7 de Dynamic Media, les paramètres d’image prédéfinis sont automatiquement publiés ; vous n’avez pas besoin de réaliser ces étapes.)
 
-**Pour publier des paramètres d’image prédéfinis dans Contenu multimédia dynamique - Mode** hybride :
+**Pour publier des paramètres d’image prédéfinis en mode** hybride Dynamic Media :
 
 1. Dans AEM, appuyez ou cliquez sur le logo AEM pour accéder à la console de navigation globale et appuyez ou cliquez sur l’icône Outils et accédez à **[!UICONTROL Ressources > Paramètres d’image prédéfinis.]**
 1. Sélectionnez un ou plusieurs paramètres d’image prédéfinis dans la liste, puis cliquez ou appuyez sur **[!UICONTROL Publier.]**
@@ -508,7 +508,7 @@ Si vous exécutez le mode hybride de Dynamic Media, vous devez publier manuellem
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
-## Suppression des paramètres d’image prédéfinis de média dynamique {#deleting-image-presets}
+## Suppression des paramètres d’image prédéfinis Dynamic Media {#deleting-image-presets}
 
 1. Dans AEM, appuyez ou cliquez sur le logo AEM pour accéder à la console de navigation globale.
 1. Appuyez sur l&#39;icône **[!UICONTROL Outils]**, puis accédez à **[!UICONTROL Ressources > Paramètres d&#39;image prédéfinis.]**
