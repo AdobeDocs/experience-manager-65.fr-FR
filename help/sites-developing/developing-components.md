@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
 workflow-type: tm+mt
-source-wordcount: '3452'
-ht-degree: 88%
+source-wordcount: '3533'
+ht-degree: 86%
 
 ---
 
@@ -287,6 +287,14 @@ Pour consulter un exemple, reportez-vous à la section :
 Dans l’IU classique avec ExtJS, il était habituel de trouver des écouteurs pour un widget donné dans la structure de contenu. C’est différent dans l’IU tactile car le code correspondant aux écouteurs JS (ou n’importe quel type de code d’ailleurs) n’est plus défini dans le contenu.
 
 La structure du contenu décrit la structure sémantique ; elle ne devrait (doit) pas impliquer la nature du widget sous-jacent. En l’absence de code JS dans la structure du contenu, vous pouvez modifier les détails d’implémentation sans avoir à modifier la structure du contenu. En d’autres termes, vous pouvez modifier la bibliothèque de widgets sans avoir à toucher à la structure du contenu.
+
+#### Détection de la disponibilité de la boîte de dialogue {#dialog-ready}
+
+Si vous disposez d’un script JavaScript personnalisé qui doit être exécuté uniquement lorsque la boîte de dialogue est disponible et prête, vous devez écouter le événement `dialog-ready`.
+
+Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prêt à l’emploi, ce qui signifie chaque fois qu’il y a une modification (création/mise à jour) dans le DOM de la boîte de dialogue.
+
+`dialog-ready` peut être utilisé pour associer du code personnalisé JavaScript qui effectue des personnalisations sur les champs d’une boîte de dialogue ou de tâches similaires.
 
 ### Validation de champ {#field-validation}
 
