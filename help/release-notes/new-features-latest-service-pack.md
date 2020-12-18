@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1c633e87d773f864c65320d3ce658f61271d086d
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
-source-wordcount: '2807'
+source-wordcount: '2818'
 ht-degree: 5%
 
 ---
@@ -52,11 +52,11 @@ Vous pouvez désormais effectuer les déplacements de page et les déploiements 
 
 ### Modèle de données de formulaire configuration du client HTTP pour optimiser les performances {#fdm-http-client-config}
 
-[!DNL Experience Manager Forms] modèle de données de formulaire lors de l’intégration avec les services Web RESTful en tant que source de données inclut désormais des configurations de client HTTP pour l’optimisation des performances.
+[!DNL Experience Manager Forms] modèle de données de formulaire lors de l’intégration avec les services Web RESTful en tant que source de données inclut désormais des configurations de client HTTP pour l’optimisation des performances. Voir [Configurer les sources de données](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
 ### Disponibilité de l&#39;option de réinitialisation pour chaque composant en mode Disposition {#reset-option-layout-mode}
 
-Vous pouvez désormais utiliser l’option reset pour chaque composant en mode Mise en page d’un formulaire adaptatif. Lorsque vous définissez une mise en page à plusieurs colonnes pour un panneau, vous pouvez utiliser cette fonction pour réinitialiser des composants individuels dans le panneau.
+Vous pouvez désormais utiliser l’option reset pour chaque composant en mode Mise en page d’un formulaire adaptatif. Lorsque vous définissez une mise en page à plusieurs colonnes pour un panneau, vous pouvez utiliser cette fonction pour réinitialiser des composants individuels dans le panneau. Voir [Utiliser le mode de mise en page pour redimensionner les composants](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 ## Fonctions clés des Service Packs [!DNL Experience Manager] 6.5 précédents{#key-features-previous-service-packs}
 
@@ -211,11 +211,11 @@ Vous pouvez désormais utiliser l’interface utilisateur [!DNL Dynamic Media] p
 
 Vous pouvez désormais choisir de publier ou d’annuler la publication de fichiers dans [!DNL Experience Manager] ou [!DNL Dynamic Media] à l’aide de l’assistant [!UICONTROL Publication rapide] ou [!UICONTROL Gérer la publication]. Vous pouvez également définir le mode `Publish` ou `Unpublish` au niveau du dossier.
 
-#### Smart Imaging for Dynamic Media {#smart-imaging}
+#### Smart Imaging pour Dynamic Media {#smart-imaging}
 
 L’imagerie intelligente utilise les caractéristiques d’affichage uniques de chaque utilisateur pour fournir automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Smart Imaging](../assets/imaging-faq.md).
 
-#### Recadrage intelligent dans les profils vidéo pour les médias dynamiques (6.5.3.0) {#smart-crop-video}
+#### Recadrage intelligent dans les profils vidéo pour Dynamic Media (6.5.3.0) {#smart-crop-video}
 
 Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les profils vidéo) est un outil qui utilise la puissance de l’intelligence artificielle d’Adobe Sensei pour détecter et rogner automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille. Voir [A propos de l’utilisation du recadrage intelligent dans les profils vidéo](../assets/video-profiles.md).
 
