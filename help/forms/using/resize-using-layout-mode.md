@@ -2,9 +2,9 @@
 title: Utiliser le mode Mise en page pour redimensionner les composants des formulaires adaptatifs
 description: 'Définir la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
 translation-type: tm+mt
-source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
+source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1073'
 ht-degree: 2%
 
 ---
@@ -31,14 +31,16 @@ Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut 
 1. En mode Mise en page, appuyez sur le composant pour le redimensionner. Les points bleus s’affichent en début et à la fin de la grille réactive.
 1. Faites glisser les points bleus pour définir la position du composant dans la grille réactive.
 
-   ![Redimensionnement en mode Mise en page](assets/layout_mode_resize_new_updated.png)
+   ![Redimensionnement en mode Mise en page](assets/layout_mode_resize_new_updated1.png)
 
    La barre d’outils qui s’affiche après avoir appuyé sur des composants comprend les options suivantes :
 
    * **Parent :** sélectionnez le parent d’un composant.
    * **Flottant sur la nouvelle ligne :** déplacez le composant sur la ligne suivante s’il y a plusieurs composants dans la même ligne.
 
-   Vous pouvez annuler toutes les modifications de redimensionnement et appliquer la mise en page par défaut au panneau contenant des composants redimensionnés à l’aide de l’option **[!UICONTROL Rétablir la mise en page du point d’arrêt]** ( ![Rétablir le point d’arrêt](assets/reverttopreviouslypublishedversion.png)). Appuyez sur le parent du composant redimensionné pour vue à l’option.
+   En outre, vous pouvez annuler toutes les modifications de redimensionnement et appliquer la mise en page par défaut au panneau contenant des composants redimensionnés à l’aide de l’option **[!UICONTROL Rétablir la mise en page du point d’arrêt]** ( ![Rétablir le point d’arrêt](assets/reverttopreviouslypublishedversion.png)). Appuyez sur le parent du composant redimensionné pour vue à l’option.
+
+   Vous pouvez appuyer sur le composant et utiliser l&#39;option **[!UICONTROL Rétablir la disposition du point d&#39;arrêt]** pour annuler toutes les modifications de redimensionnement et appliquer la disposition par défaut au niveau du composant.
 
    >[!NOTE]
    >
