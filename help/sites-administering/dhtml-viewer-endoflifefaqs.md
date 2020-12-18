@@ -1,134 +1,134 @@
 ---
-title: FAQ sur la fin de prise en charge de la visionneuse DHTML
-seo-title: FAQ sur la fin de prise en charge de la visionneuse DHTML
-description: À compter du 31 janvier 2014, la plate-forme de la visionneuse DHTML de Scene7 aura officiellement atteint sa fin de vie. Cette notification vous fournit les réponses aux questions fréquentes pour que vous puissiez vous préparer à cette transition vers la nouvelle plate-forme de notre visionneuse HTML5.
-seo-description: À compter du 31 janvier 2014, la plate-forme de la visionneuse DHTML de Scene7 aura officiellement atteint sa fin de vie. Cette notification vous fournit les réponses aux questions fréquentes pour que vous puissiez vous préparer à cette transition vers la nouvelle plate-forme de notre visionneuse HTML5.
-uuid: a78c03b3-6513-42e1-881f-6a9551659769
+title: Fin de vie de la visionneuse DHTML
+description: Depuis le 31 janvier 2014, la plate-forme de la visionneuse DHTML est officiellement en fin de vie.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '1665'
-ht-degree: 98%
+source-wordcount: '42'
+ht-degree: 0%
 
 ---
 
 
-# FAQ sur la fin de prise en charge de la visionneuse DHTML{#dhtml-viewer-end-of-life-faqs}
+# Fin de vie de la visionneuse DHTML {#dhtml-viewer-end-of-life}
 
-À compter du 31 janvier 2014, la plate-forme de la visionneuse DHTML de Scene7 aura officiellement atteint sa fin de vie. Cette notification vous fournit les réponses aux questions fréquentes pour que vous puissiez vous préparer à cette transition vers la nouvelle plate-forme de notre visionneuse HTML5.
+Depuis le 31 janvier 2014, la plate-forme de la visionneuse DHTML est officiellement en fin de vie.
 
-**Quelle est la modification ?**
+Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) pour connaître les dernières visionneuses prises en charge.
 
-À compter du 31 janvier 2014, Scene7 mettra officiellement fin à la prise en charge de la plate-forme de la visionneuse DHTML.
+<!-- OBSOLETE CONTENT **What is the change?**
 
-**Que signifie fin de vie ?**
+Effective January 31, 2014, Scene7 will officially end-of-life support for the DHTML viewer platform.
 
-Fin de vie signifie que (1) Scene7 n’ajoutera plus d’améliorations aux fonctionnalités de la plate-forme de la visionneuse DHTML, (2) Scene7 ne traitera ou ne proposera plus de correctifs de bogues sur la plate-forme de la visionneuse DHTML et (3) l’assistance clientèle n’assurera plus la résolution des incidents ni la prise en charge des problèmes ou questions liés à la visionneuse DHTML.
+**What does end-of-life mean?**
 
-**Pourquoi Scene7 apporte-t-il cette modification ?**
+End-of-life means that Scene7 will (1) no longer add any feature enhancements to the DHTML viewer platform (2) no longer address or release any bug fixes on the DHTML viewer platform and (3) customer care will no longer be troubleshooting or providing support for any DHTML-related viewer issues or questions.
 
-Les normes web évoluent constamment et DHTML est une ancienne technologie de développement web qui est rapidement remplacée par HTML5. La plus grande limitation de la norme DHTML en tant que plate-forme est qu’elle n’est pas capable de proposer une expérience aussi riche que le HTML5, qui peut désormais offrir cette qualité d’expérience de manière homogène et plus facilement d’un navigateur à l’autre. Par exemple, ces restrictions incluent l’absence de prise en charge d’un navigateur à l’autre pour :
+**Why is Scene7 making this change?**
 
-* Les curseurs personnalisés
-* Les angles arrondis
-* Les animations (par exemple, tourner la page, effectuer un zoom)
-* Les effets (par exemple, ombres, rayonnement)
-* La prise en charge complète des polices
-* La lecture vidéo sans module externe
+Web standards are constantly evolving and DHTML is an older web development technology that is rapidly being replaced by HTML5. The biggest limitation to DHTML as a platform is that it is not capable of creating the richness of experience that HTML5 now can consistently and more easily support cross-browser. For example such limitations include lack of cross-browser support for:
 
-Spécifiques à la plate-forme de la visionneuse DHTML Scene7, la solution basée sur JSP et les API JavaScript n’étaient pas optimisées pour que les appareils mobiles tirent parti des fonctionnalités tactiles multipoints et des fonctionnalités de mouvement. Et même si les visionneuses DHTML proposées à partir de 2011/début 2012 étaient optimisées pour les appareils mobiles, elles étaient difficiles à personnaliser et à tenir à jour en raison de l’absence d’un cadre de développement flexible basé sur le composant SDK.
+* Custom cursors
+* Rounded corners
+* Animations (such as page flipping, zoom easing)
+* Effects (such as shadows, glow)
+* Complete font support
+* Plugin-less video playback
 
-Motivé par ces restrictions de DHTML et l’adoption rapide de HTML5 par le secteur en tant que norme émergente sur les ordinateurs de bureau et les appareils mobiles, Scene7 a décidé d’investir dans une plate-forme de visionneuse HTML5. Cet investissement apportera à nos clients une plate-forme robuste sur laquelle ils peuvent concevoir des visionneuses interactives plus riches et plus motivantes, capables de toucher les utilisateurs sur plusieurs écrans, y compris les ordinateurs de bureau et les appareils iOS et Android.
+Specific to the Scene7 DHTML viewer platform, both the JSP-based solution and the Javascript APIs were not optimized for mobile devices to take advantage of multi-touch and gesture capabilities. And even though DHTML viewers which were released in 2011/early 2012 are optimized for mobile, they were difficult to customize and maintain due to the lack of a flexible SDK component-based development framework.
 
-**Comment puis-je savoir si ma visionneuse utilise la plate-forme DHTML ?**
+Driven by these limitations on DHTML and rapid industry traction with HTML5 as an emerging standard across both desktop and mobile, Scene7 has decided to invest in an HTML5-based viewer platform. This investment will offer our customers a robust platform against which they can build richer, more engaging interactive viewers that can reach users on multiple screens including desktop, iOS and Android devices.
 
-Pour déterminer si la visionneuse que votre entreprise utilise fait appel à la plate-forme DHTML et est donc concernée par cette modification, veuillez vérifier si :
+**How do I know if my viewer is using the DHTML platform?**
 
-1. Votre entreprise utilise une visionneuse Scene7 clé en main répertoriée dans ce tableau, où la « technologie de visionneuse » est nommée « DHTML » :
+To determine if the viewer your company is using is DHTML and hence affected by this change, please check if:
 
-   [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
+1. Your company is using an out-of-box Scene7 viewer listed in this table where the "Viewer Technology" is designated as "DHTML":
 
-1. Votre entreprise utilise une visionneuse qui a été créée sous la forme d’un nouveau paramètre prédéfini basé sur une visionneuse Scene7 clé en main dans ce tableau où la « technologie de visionneuse » est désignée comme « DHTML » :
+    [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
-   [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
+1. Your company is using a viewer that was created as a new preset based off an out-of-box Scene7 viewer in this table where the "Viewer Technology" is designated as "DHTML":
 
-1. Votre entreprise utilise une visionneuse personnalisée créée à partir de la solution DHTML JSP :
+    [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference)
+1. Your company is using a custom viewer created from the JSP-based DHTML solution:
 
-1. Votre entreprise utilise une visionneuse personnalisée créée à partir de l’API JavaScript :
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
+1. Your company is using a custom viewer created from the Javascript API:
 
-1. Votre entreprise utilise une visionneuse personnalisée créée avec l’API déroulante multi-écran DHTML :
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer)
+1. Your company is using a custom viewer created with the DHTML multi-screen flyout API:
 
-1. Votre entreprise utilise une visionneuse personnalisée créée avec l’API de fenêtre déroulante DHTML :
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer)
+1. Your company is using a custom viewer created with the DHTML desktop flyout API:
 
-1. Votre entreprise utilise une bibliothèque de détection d’appareil qui fait partie du module de visionneuses DHTML :
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer)
 
-   Recherchez JS figurant dans « sj_deviceDetect.js » dans votre code.
+1. Your company is using a device detection library that is part of the DHTML viewers package:
 
-   Cela a été remplacé par le nouveau code de détection d’appareil JS ici : [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers).
+   Look for JS include of "sj_deviceDetect.js" in your code.
 
-**Qu’est-ce que la plate-forme de visionneuse de remplacement ?**
+   This has been replaced by new JS device detection code here: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers) .
 
-Le remplacement de DHTML est la plate-forme de visionneuse HTML5 Scene7, comportant :
+**What is the replacement viewer platform?**
 
-* Des visionneuses clé en main HTML5 comprenant des interactions optimisées mobiles sur de nombreux types de visionneuses, y compris le zoom de base, le zoom déroulant, les jeux d’images, les jeux d’échantillons, les visionneuses à 360° et les supports variés. Pour obtenir des exemples complets à jour de ces visionneuses, consultez la page : [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
-* Le SDK de la visionneuse HTML5 permet de personnaliser de façon étendue les visionneuses Adobe Scene7 pour les sites et les appareils pris en charge par HTML5 (iOS et Android, par exemple), pour une flexibilité et une créativité inégalées afin d’améliorer l’aspect et l’interactivité de la visionneuse. L’avantage de l’utilisation de composants réutilisables aux performances optimisées est la réduction du coût total du développement de la visionneuse et l’accélération du développement personnalisé.
+The replacement for DHTML is the Scene7 HTML5 viewer platform, consisting of both:
 
-**Quand la plate-forme de la visionneuse HTML5 disposera-t-elle des fonctions dont j’ai besoin pour faire la transition depuis la plate-forme de la visionneuse DHTML ?**
+* HTML5 out-of-box viewers featuring mobile optimized interactions across numerous viewer types including basic zoom, flyout zoom, image sets, swatch sets, multi-dimensional spin and mixed media. For full up-to-date examples of these viewers, please refer to: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
+* HTML5 viewer SDK which enables extensive customization of Adobe Scene7 viewers for HTML5 supported sites and devices (such as iOS and Android), imparting the utmost flexibility and creativity to brand the viewer appearance and interactivity. The benefit of reusable performance-optimized components lower the overall cost of viewer development and accelerate custom development.
 
-Scene7 a diffusé le premier SDK de visionneuse HTML5 à l’automne 2011 avec le lancement de la version 5.5. Depuis, nous avons ajouté de nombreuses fonctions à la plate-forme et étendu la prise en charge pour un nombre croissant de visionneuses. Pour ce qui est des exigences de visionneuse les plus courantes, la plate-forme de la visionneuse HTML5 dispose déjà probablement des fonctions dont vous avez besoin pour migrer maintenant. Et nous continuons à investir activement dans cette plate-forme de visionneuse avec la publication de nouvelles versions tous les trimestres.
+**When will the HTML5 viewer platform have the features I need to transition off the DHTML viewer platform?**
 
-Pour savoir si la plate-forme de la visionneuse HTML5 peut aujourd’hui répondre à vos besoins, consultez la documentation suivante :
+Scene7 released the first HTML5 viewer SDK in Fall 2011 with the launch of version 5.5. Since then, we have added numerous features to the platform and extended support for more and more types of viewers. For most common viewer requirements, the HTML5 viewer platform likely already has the features you need to migrate now. And we continue to aggressively invest in this viewer platform with releases every quarter.
 
-[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (pour les fonctionnalités de visionneuse clé en main et les capacités de personnalisation)
+To determine if your viewer requirements can be met today with the HTML5 viewer platform, please refer to the following documentation:
 
-[https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) (pour accéder à la documentation de l’API de SDK)
+[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (for out of box viewers features and customization capabilities)
 
-Si vous ne savez toujours pas si le kit SDK de visionneuse HTML5 peut répondre à vos besoins, consultez notre équipe de services professionnels.
+[https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) (to access the SDK API documentation)
 
-**Comment faire passer mes visionneuses vers la plate-forme HTML5 ?**
+If you are still unsure about whether or not the HTML5 viewer SDK can meet your requirements, please consult with our professional services team.
 
-Pour faire passer vos visionneuses vers la plate-forme HTML5, Scene7 propose les options suivantes :
+**How do I transition my viewers over to the HTML5 platform?**
 
-1. Utilisez l’une des visionneuses HTML5 clé en main Scene7, dont vous trouverez des exemples ici : [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
-1. Configurez l’une des visionneuses HTML5 clé en main Scene7 dans la configuration d’application SPS. Cela vous permettra de personnaliser un certain comportement, comme la taille de la visionneuse, les transitions, le comportement du zoom, etc. : [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
-1. Personnalisez l’apparence des visionneuses HTML5 clé en main Scene7 en modifiant les feuilles CSS afin de changer la conception visuelle, comme l’illustration des boutons, le placement, la transparence, les couleurs d’arrière-plan, etc. : [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
-1. Créez une visionneuse HTML5 personnalisée de A à Z à l’aide du kit SDK, que vous pouvez télécharger ici : [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). Vous pouvez faire appel à des services professionnels pour créer la visionneuse personnalisée ou en confier la création à votre propre équipe de développement web.
+To transition your viewers to the HTML5 platform, Scene7 offers the following options:
 
-**Qu’en est-il des navigateurs qui ne prennent pas en charge HTML5 ?**
+1. Use one of the Scene7 out-of-box HTML5 viewers, examples of which can be found here: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
+1. Configure one of the Scene7 out-of-box HTML5 viewers under the SPS application setup. This will allow you to customize certain behavior such as viewer size, transitions, zoom behavior, etc: [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
+1. Customize look and feel of the Scene7 out-of-box HTML5 viewers by modifying CSS to change visual design such as button artwork, placement, transparency, background colors, etc: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
+1. Create a custom HTML5 viewer from scratch using the SDK which can be downloaded here: [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). You can engage with professional services to build the custom viewer or have your own web development team build it.
 
-HTML5 est pris en charge sur de nombreux appareils mobiles et navigateurs web et continue à gagner du terrain. Actuellement, même si HTML5 n’est pas pris en charge dans Internet Explorer 8 ou ses versions antérieures, Scene7 a mis à jour la plate-forme de visionneuse HTML5 pour étendre la prise en charge à IE 7 et IE 8. Avec la plate-forme de visionneuse HTML5 Scene7, vous pouvez toucher l’écrasante majorité des utilisateurs d’ordinateurs et d’appareils mobiles avec une seule plate-forme de développement.
+**What about browsers that do not support HTML5?**
 
-La configuration système requise actuelle à partir de la version 2.2.1 du kit SDK HTML5 est la suivante :
+HTML5 is supported across many mobile devices and web browsers, and continues to gain traction. Currently, even though HTML5 is not supported on Internet Explorer 8 or below, Scene7 has innovated our HTML5 viewer platform to extend support even to IE 7 and IE 8. With the Scene7 HTML5 viewer platform , you can reach the overwhelming majority of both desktop and mobile users with a single development platform.
 
-* Microsoft® Windows® XP ou version ultérieure, Macintosh® OS X 10.6 ou version ultérieure
-* Firefox 17, Safari 5.1, Chrome 23, Internet Explorer 7 ou version ultérieure
-* iOS 3.2.2 ou version ultérieure
-* Certifié sur iPhone3 ou version ultérieure et iPad1 ou version ultérieure (navigateurs natifs)
-* Android OS 2.2 ou version ultérieure
+Current system requirements as of the HTML5 SDK version 2.2.1 are:
 
-Pour vérifier si votre navigateur est compatible avec notre plate-forme de visionneuse HTML5, lancez l’exemple de visionneuse suivante :
+* Microsoft® Windows® XP or later, Macintosh® OS X 10.6 or later
+* Firefox 17, Safari 5.1, Chrome 23, Internet Explorer 7 or later
+* iOS 3.2.2 or later
+* Certified on iPhone3 or later and iPad1 or later (native browsers)
+* Android OS 2.2 or later
+
+To check if your browser is compatible with our HTML5 viewer platform, launch the following example viewer:
 
 [https://s7d1.scene7.com/s7viewers/html5/flyout.html?asset=Scene7SharedAssets/Sample%20Image](https://s7d1.scene7.com/s7viewers/html5/flyout.html?asset=Scene7SharedAssets/Sample%20Image)
 
-Si vous voyez l’image agrandie en pointant avec votre souris ou en faisant glisser votre doigt sur l’image principale, il s’agit d’un navigateur ou appareil pris en charge.
+If you see the zoomed-in image by hovering your mouse or dragging your finger over the main image, then it is a supported browser/device.
 
-**Quelles sont les options qui s’offrent à moi si je souhaite continuer à utiliser ma visionneuse DHTML existante en production ?**
+**What options do I have if I want to stay live in production with my existing DHTML viewer?**
 
-Bien que vous puissiez encore rester en production avec les visionneuses DHTML, il est important de noter qu’il n’y aura pas d’améliorations, de correctifs, ni d’assistance client après le 31 janvier 2014. Par conséquent, nous recommandons fortement à tous les clients de migrer vers notre plate-forme de visionneuse HTML5, qui s’avère plus robuste. Toutefois, si la situation de votre entreprise empêche cette migration d’ici la fin de la commercialisation, vous avez la possibilité de souscrire à des services professionnels pour prolonger la période de maintenance prise en charge. Pour plus d’informations, contactez votre responsable de compte.
+Although you can still be live in production with DHTML-based viewers, it is important to note that there will be no enhancements, bug fixes nor customer care after January 31, 2014. Hence, we strongly advise all customers to migrate over to our more robust HTML5 viewer platform. . However, if your business situation prevents such a migration by the EOL date, you have the option to contract with professional services to extend the supported maintenance time period. For more information, please contact your account manager.
 
-**Qui dois-je contacter pour plus d’informations ?**
+**Who do I contact for more information?**
 
-Si ce FAQ n&#39;a pas répondu à toutes vos questions, veuillez [utiliser le Admin Console pour créer un dossier d&#39;assistance](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ou contacter votre gestionnaire de compte d&#39;Adobe.
+If this FAQ did not answer all of your questions, please [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
+ -->
