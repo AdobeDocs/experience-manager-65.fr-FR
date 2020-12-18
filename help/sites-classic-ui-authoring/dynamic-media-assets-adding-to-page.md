@@ -10,17 +10,17 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 61%
+source-wordcount: '1718'
+ht-degree: 60%
 
 ---
 
 
 # Ajout de ressources Dynamic Media aux pages{#adding-dynamic-media-assets-to-pages}
 
-Pour ajouter la fonctionnalité Contenu multimédia dynamique aux fichiers que vous utilisez sur vos sites Web, vous pouvez ajouter le composant **[!UICONTROL Contenu multimédia dynamique]** ou **[!UICONTROL Contenu multimédia interactif]** directement sur la page. Pour ce faire, saisissez le mode [!UICONTROL Conception] et activez les composants de média dynamique. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et Interactive Media sont dynamiques : ils détectent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
+Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites Web, vous pouvez ajouter directement le composant **[!UICONTROL Dynamic Media]** ou **[!UICONTROL Interactive Media]** sur la page. Pour ce faire, saisissez le mode [!UICONTROL Conception] et activez les composants de média dynamique. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et Interactive Media sont dynamiques : ils détectent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
 
 Vous pouvez ajouter directement des fichiers multimédias dynamiques à la page si vous utilisez AEM comme gestion de contenu Web.
 
@@ -28,27 +28,27 @@ Vous pouvez ajouter directement des fichiers multimédias dynamiques à la page 
 >
 >Les zones cliquables sont disponibles et prêtes à l’emploi pour les bannières de carrousel.
 
-## Ajout d’un composant Dynamic Media à une page   {#adding-a-dynamic-media-component-to-a-page}
+## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
 
-Ajouter le composant [!UICONTROL Contenu multimédia dynamique] ou [!UICONTROL Contenu multimédia interactif] à une page revient à ajouter un composant à une page. Les composants [!UICONTROL Contenu multimédia dynamique] et [!UICONTROL Contenu multimédia interactif] sont décrits en détail dans les sections suivantes.
+Ajouter le composant [!UICONTROL Dynamic Media] ou [!UICONTROL Interactive Media] à une page revient à ajouter un composant à une page. Les composants [!UICONTROL Dynamic Media] et [!UICONTROL Interactive Media] sont décrits en détail dans les sections suivantes.
 
 Pour ajouter un composant/une visionneuse Dynamic Media à une page, procédez comme suit :
 
 1. Dans AEM, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
-1. Si aucun composant Contenu multimédia dynamique n’est disponible, cliquez sur la règle dans le Sidekick [!UICONTROL Sidekick] pour passer en mode **[!UICONTROL Conception]**, cliquez sur **[!UICONTROL Modifier]** et sélectionnez **[!UICONTROL Contenu multimédia dynamique]** pour rendre les composants Contenu multimédia dynamique disponibles.
+1. Si aucun composant Dynamic Media n&#39;est disponible, cliquez sur la règle dans le [!UICONTROL Sidekick] pour passer en mode **[!UICONTROL Conception]**, cliquez sur **[!UICONTROL Modifier]** paramètres, puis sélectionnez **[!UICONTROL Dynamic Media]** pour rendre les composants Dynamic Media disponibles.
 
    >[!NOTE]
    >
    >Pour plus d’informations, voir [Configuration des composants en mode Création](/help/sites-authoring/default-components-designmode.md).
 
 1. Revenez au mode **[!UICONTROL Modifier]** en cliquant sur l&#39;icône représentant un crayon dans le Sidekick] [!UICONTROL Sidekick.
-1. Faites glisser le composant **[!UICONTROL Contenu multimédia dynamique]** ou **[!UICONTROL Contenu multimédia interactif]** du groupe **[!UICONTROL Autre]** du panneau latéral sur la page à l’emplacement souhaité.
+1. Faites glisser le composant **[!UICONTROL Dynamic Media]** ou **[!UICONTROL Interactive Media]** du groupe **[!UICONTROL Other]** du panneau latéral sur la page à l’emplacement souhaité.
 1. Cliquez sur l’icône **[!UICONTROL Modifier]** pour ouvrir le composant.
 1. [](#dynamic-media-component)Modifiez le composant comme requis et cliquez sur **[!UICONTROL OK]** pour enregistrer les modifications.
 
 ## Composants Dynamic Media {#dynamic-media-components}
 
-[!UICONTROL Les ] médias dynamiques et les  [!UICONTROL médias ] interactifs sont disponibles dans le   Sidekickunder  **[!UICONTROL Contenu multimédia dynamique.]** Vous utilisez le composant **[!UICONTROL Interactive Media]** pour toutes les ressources interactives telles que du contenu vidéo interactif, des images interactives ou des ensembles de carrousels. Pour tous les autres composants Dynamic Media, utilisez le composant **[!UICONTROL Dynamic Media]**.
+[!UICONTROL Les ] médias dynamiques et les  [!UICONTROL médias ] interactifs sont disponibles dans le   Sidekickunder  **[!UICONTROL Dynamic Media.]** Vous utilisez le composant **[!UICONTROL Interactive Media]** pour toutes les ressources interactives telles que du contenu vidéo interactif, des images interactives ou des ensembles de carrousels. Pour tous les autres composants Dynamic Media, utilisez le composant **[!UICONTROL Dynamic Media]**.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -58,11 +58,11 @@ Pour ajouter un composant/une visionneuse Dynamic Media à une page, procédez c
 
 ### Composant Dynamic Media {#dynamic-media-component}
 
-Le composant Contenu multimédia dynamique est intelligent ; selon que vous ajoutez une image ou une vidéo, vous disposez de différentes options. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, le lecteur est réactif. Autrement dit, la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
+Le composant Dynamic Media est intelligent ; selon que vous ajoutez une image ou une vidéo, vous disposez de différentes options. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, le lecteur est réactif. Autrement dit, la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
 >[!NOTE]
 >
->Lorsque vous ajoutez le composant [!UICONTROL Contenu multimédia dynamique] et que **[!UICONTROL Paramètres de média dynamique]** est vide ou que vous ne pouvez pas ajouter un fichier correctement, vérifiez les éléments suivants :
+>Lorsque vous ajoutez le composant [!UICONTROL Dynamic Media] et que **[!UICONTROL Paramètres de Dynamic Media]** est vide ou que vous ne pouvez pas ajouter correctement un fichier, vérifiez les éléments suivants :
 >
 >* Vous avez [activé Dynamic Media](/help/assets/config-dynamic.md). Par défaut, ce module complémentaire est désactivé.
 >* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
@@ -71,15 +71,15 @@ Le composant Contenu multimédia dynamique est intelligent ; selon que vous ajou
 
 
 
-#### En cas d’utilisation d’images   {#when-working-with-images}
+#### En cas d’utilisation d’images  {#when-working-with-images}
 
-Le composant [!UICONTROL Contenu multimédia dynamique] vous permet d’ajouter des images dynamiques, y compris des visionneuses d’images, des visionneuses à 360° et des visionneuses de supports mixtes. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
+Le composant [!UICONTROL Dynamic Media] permet d’ajouter des images dynamiques, notamment des visionneuses d’images, des visionneuses à 360° et des visionneuses de supports mixtes. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
 Vous pouvez également configurer directement dans le composant les paramètres prédéfinis de la visionneuse ou de l’image ou le format de l’image. Pour rendre une image réactive, vous pouvez définir les points d’arrêt ou appliquer un paramètre prédéfini d’image réactive.
 
 ![chlimage_1-72](assets/chlimage_1-72a.png)
 
-Vous pouvez modifier les paramètres Contenu multimédia dynamique suivants en cliquant sur **[!UICONTROL Modifier]** dans le composant, puis en cliquant sur l&#39;onglet **[!UICONTROL Paramètres Contenu multimédia dynamique]**.
+Vous pouvez modifier les paramètres Dynamic Media suivants en cliquant sur **[!UICONTROL Modifier]** dans le composant, puis en cliquant sur l&#39;onglet **[!UICONTROL Paramètres de Dynamic Media]**.
 
 ![chlimage_1-73](assets/chlimage_1-73a.png)
 
@@ -95,7 +95,7 @@ Il s’agit de la seule option disponible si vous affichez des visionneuses d’
 
 Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
-**[!UICONTROL Modificateurs]**  d&#39;image : vous pouvez modifier les effets d&#39;image en fournissant des commandes d&#39;image supplémentaires. Ils sont décrits dans [Gestion des paramètres d’image prédéfinis](/help/assets/managing-viewer-presets.md) et la [référence de commande](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificateurs]**  d&#39;image : vous pouvez modifier les effets d&#39;image en fournissant des commandes d&#39;image supplémentaires. Ils sont décrits dans [Gestion des paramètres d’image prédéfinis](/help/assets/managing-viewer-presets.md) et la [référence de commande](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
@@ -119,11 +119,11 @@ Cette option n’est pas disponible si vous affichez des visionneuses d’images
 
 #### Utilisation de la vidéo {#when-working-with-video}
 
-Utilisez le composant [!UICONTROL Contenu multimédia dynamique] pour ajouter de la vidéo dynamique à vos pages Web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
+Utilisez le composant [!UICONTROL Dynamic Media] pour ajouter de la vidéo dynamique à vos pages Web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
 
 ![chlimage_1-74](assets/chlimage_1-74a.png)
 
-Vous pouvez modifier les [!UICONTROL paramètres de médias dynamiques] suivants en cliquant sur **[!UICONTROL Modifier]** dans le composant.
+Vous pouvez modifier les [!UICONTROL Paramètres de Dynamic Media] suivants en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Vous pouvez modifier les paramètres [!UICONTROL Avancés] suivants en cliquant 
 
 Dans AEM 6.2, lorsque vous installez [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), vous pouvez contrôler si la vidéo est diffusée via une connexion SSL sécurisée (HTTPS) ou une connexion non sécurisée (HTTP). Par défaut, le protocole de diffusion vidéo est automatiquement hérité du protocole de la page web d’incorporation. Si la page web est chargée via HTTPS, la vidéo est également diffusée via HTTPS. Inversement, si la page web est chargée via HTTP, la vidéo est diffusée via HTTP. Dans la plupart des cas, ce comportement par défaut est correct et aucune modification de configuration n’est nécessaire. Vous pouvez toutefois remplacer ce comportement par défaut en ajoutant `VideoPlayer.ssl=on` à la fin d’un chemin d’URL ou à la liste des autres paramètres de configuration de la visionneuse dans un fragment de code intégré afin de forcer la diffusion sécurisée de la vidéo.
 
-Pour plus d’informations sur la diffusion sécurisée de vidéos et l’utilisation de l’attribut de configuration `VideoPlayer.ssl` dans le chemin d’accès URL, voir [Diffusion sécurisée de vidéos](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) dans le Guide de référence des visionneuses. Outre la visionneuse vidéo, la diffusion sécurisée de vidéos est disponible pour la visionneuse de médias mixtes et la visionneuse de vidéos interactives.
+Pour plus d’informations sur la diffusion sécurisée de vidéos et l’utilisation de l’attribut de configuration `VideoPlayer.ssl` dans le chemin d’accès URL, voir [Diffusion sécurisée de vidéos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) dans le Guide de référence des visionneuses. Outre la visionneuse vidéo, la diffusion sécurisée de vidéos est disponible pour la visionneuse de médias mixtes et la visionneuse de vidéos interactives.
 
 ### Composant Interactive Media {#interactive-media-component}
 
