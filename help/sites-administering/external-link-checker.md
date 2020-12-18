@@ -2,9 +2,9 @@
 title: Vérificateur de lien
 description: Le vérificateur de liens permet de valider les liens internes et externes et de réécrire les liens.
 translation-type: tm+mt
-source-git-commit: 861cd74e1b2fd3d210647d83dee5d9a6fcead22a
+source-git-commit: 8a551cce581056cb274b1d8567f579fc73a95d3c
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '986'
 ht-degree: 1%
 
 ---
@@ -65,11 +65,11 @@ Pour utiliser le vérificateur de liens externes :
 1. Avec la **navigation**, sélectionnez **Outils**, puis **Sites**.
 1. Sélectionnez **Vérificateur de lien externe** et une liste de tous les liens externes s’affiche.
 
-![](assets/external-link-checker.png)
+![La fenêtre Vérificateur de lien externe](assets/external-link-checker.png)
 
 Les informations suivantes s’affichent :
 
-* **État**  : état de validation du lien
+* **Etat**  - Etat de validation du lien qui peut être l&#39;un des suivants :
    * **Valide**  : le lien externe est accessible par le vérificateur de liens.
    * **En attente**  : le lien externe a été ajouté au contenu du site, mais n&#39;a pas encore été validé par le vérificateur de liens.
    * **Non valide**  : le lien externe n&#39;est pas accessible par le vérificateur de liens.
@@ -80,7 +80,7 @@ Les informations suivantes s’affichent :
    * La fréquence de vérification des liens [est configurable.](#configuring)
 * **Dernier état**  - Le dernier code d&#39;état HTML renvoyé lorsque le lien a été vérifié pour la dernière fois a été coché sur le lien externe
 * **Dernier disponible**  : heure depuis la dernière disponibilité du lien pour le vérificateur de liens
-* **Dernier accès**  : heure depuis le dernier accès au lien par le vérificateur de liens
+* **Dernier accès**  : date à laquelle la page contenant le lien externe a été consultée pour la dernière fois dans l’interface de création
 
 Vous pouvez manipuler le contenu de la fenêtre en utilisant les deux boutons situés en haut de la liste des liens :
 
