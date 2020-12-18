@@ -2,10 +2,10 @@
 title: Notes de mise à jour de  [!DNL Adobe Experience Manager Assets] 6.5.
 description: Nouvelles fonctionnalités et améliorations apportées à  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '897'
+ht-degree: 42%
 
 ---
 
@@ -68,7 +68,7 @@ Dans les grandes entreprises, l’infrastructure requise pour créer des sites w
 
 [!DNL Dynamic Media] offre une création et une diffusion de contenu multimédia enrichies  [!DNL Experience Manager Assets] afin de générer des expériences de pointe immersives et personnalisées. En téléchargeant un seul fichier original de haute qualité et en utilisant le rendu avancé du cloud et les visionneuses, vous pouvez fournir toute combinaison de rendus instantanément pour prendre en charge la stratégie multimédia de votre entreprise.
 
-Pour plus d&#39;informations sur les nouvelles fonctionnalités [!DNL Dynamic Media], consultez [les Notes de mise à jour des médias dynamiques](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Pour plus d&#39;informations sur les nouvelles fonctionnalités [!DNL Dynamic Media], consultez les [Notes de mise à jour de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### Prise en charge de la vidéo 360 {#video-support}
 
@@ -80,7 +80,7 @@ Vous pouvez maintenant personnaliser les vignettes de vos ressources vidéo à l
 
 ### Amélioration de l’accessibilité {#accessibility-enhancements}
 
-[!DNL Dynamic Media] les lecteurs d’écran prennent désormais en charge des fonctions d’accessibilité améliorées, telles que la prise en charge Aria, les lecteurs d’écran et Alt-text. Pour plus de détails, consultez les [notes de mise à jour des visionneuses de Dynamic Media](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] les lecteurs d’écran prennent désormais en charge des fonctions d’accessibilité améliorées, telles que la prise en charge Aria, les lecteurs d’écran et Alt-text. Pour plus de détails, consultez les [notes de mise à jour des visionneuses de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ## Amélioration de l’expérience de recherche  {#experience-enhancement-for-searching}
 
