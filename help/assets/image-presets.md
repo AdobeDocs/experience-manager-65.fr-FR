@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 96%
+source-wordcount: '324'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 
 >[!NOTE]
 >
->En mode Contenu multimédia dynamique - Scene7, les paramètres d’image prédéfinis sont pris en charge uniquement pour les fichiers d’image.
+>En mode Dynamic Media - Scene7, les paramètres d’image prédéfinis sont pris en charge uniquement pour les fichiers d’image.
 
 **Pour appliquer les paramètres d’image prédéfinis Dynamic Media**
 
@@ -57,5 +57,5 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
    >
    >Si la ressource *et* le paramètre d’image prédéfini ne sont pas encore publiés, le bouton **[!UICONTROL URL]** (ou les boutons **[!UICONTROL URL]** et **[!UICONTROL RESS]**, le cas échéant) n’est pas disponible.
    >
-   >Notez également que les paramètres prédéfinis de l’image sont automatiquement publiés sur un serveur Dynamic Media S7.
+   >Notez également que les paramètres prédéfinis de l’image sont automatiquement publiés sur un serveur Dynamic Media 
 
