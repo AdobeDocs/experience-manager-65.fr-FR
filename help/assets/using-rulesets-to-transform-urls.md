@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 100%
+source-wordcount: '764'
+ht-degree: 94%
 
 ---
 
@@ -23,11 +23,11 @@ Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transfor
 * Ajout d’un suffixe de type MIME. De nombreux services et sites web ont besoin de suffixes d’image, comme l’ajout de `.jpg` à une URL.
 * Création d’un chemin de dossier vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
 
-   Voir la section [Comment le système de publication Adobe Scene7 prend en charge le SEO](/help/assets/assets/s7_seo.pdf).
+   Voir [Comment Adobe Dynamic Media Classic prend en charge le référencement](/help/assets/assets/s7_seo.pdf).
 
 * Ajout de métadonnées vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
 
-   Voir la section [Comment le système de publication Adobe Scene7 prend en charge le SEO](/help/assets/assets/s7_seo.pdf).
+   Voir [Comment Adobe Dynamic Media Classic prend en charge le référencement](/help/assets/assets/s7_seo.pdf).
 
 * Définition de la mise en page du contenu pour déclencher le téléchargement.
 * Simplifiez le service d’images pour la création de modèles d’URL pour la personnalisation. Par exemple, transformez `rgb{XX,YY,ZZ}` en `\redXX\greenYY\blueZZ` qui est conforme RTF.
@@ -43,7 +43,7 @@ Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pou
 >Utilisez les ensembles de règles avec prudence ; ceux-ci peuvent empêcher l’affichage du contenu Dynamic Media sur votre site.
 
 Il existe des exemples d’ensembles de règles disponibles afin de vous aider à créer votre propre ensemble de règles.
-Voir la section [Référence d’ensemble de règles](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
+Voir la section [Référence d’ensemble de règles](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 À l’instar de la création de tous les ensembles de règles, assurez-vous que votre fichier XML est valide avant de le charger à l’aide d’un programme de validation XML tel que xmlvalid.
 Voir également la section [Résolution des problèmes liés aux ensembles de règles](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
@@ -51,9 +51,11 @@ Voir également la section [Résolution des problèmes liés aux ensembles de r�
 En outre, assurez-vous d’abord de tester votre ensemble de règles dans un environnement intermédiaire qui n’affecte pas votre environnement de production.
 Les environnements de production et les environnements intermédiaires nécessitent en général des identifiants différents.
 
-* **Page de connexion d’** environnement intermédiaire NA :[ https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **Page de connexion d’** environnement intermédiaire EMEA : [ https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **Page de connexion d’** environnement intermédiaire JAPAC : [ https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+Voir l&#39;application de bureau [Adobe Dynamic Media Classic pour obtenir des informations de connexion](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 Consultez également la section [Utilisation de « ressource » au lieu d’une image « is » dans un ensemble de règles](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
