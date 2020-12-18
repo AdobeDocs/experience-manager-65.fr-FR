@@ -4,7 +4,7 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
 source-wordcount: '4243'
 ht-degree: 5%
@@ -39,9 +39,9 @@ Les principales fonctionnalités et améliorations introduites dans [!DNL Adobe 
 
 * [!DNL Assets] et  [!DNL Dynamic Media] offrent plusieurs améliorations d’accessibilité. Les améliorations concernent la navigation au clavier, l’utilisation de lecteurs d’écran et l’utilisation d’une technologie d’assistance similaire (AT). Voir [[!DNL Assets] améliorations](#assets-6570) et [[!DNL Dynamic Media] améliorations](#dynamic-media-6570).
 
-* Configuration du client HTTP du modèle de données de formulaire pour optimiser les performances.
+* [Modèle de données de formulaire ](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration) configuration du client HTTP pour optimiser les performances.
 
-* Disponibilité de l’option Réinitialiser pour chaque composant en mode Mise en page
+* [Disponibilité de l’option de réinitialisation pour chaque ](../../help/forms/using/resize-using-layout-mode.md#resize-components) composant en mode Disposition
 
 * [!DNL Experience Manager] 6.5 Service Pack 7 Forms améliore les performances pour :
 
@@ -226,7 +226,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 
 * Impossible de télécharger les images sur lesquelles SmartCrop est appliqué (CQ-4304558).
 
-* Impossible de publier des dossiers de manière sélective dans Contenu multimédia dynamique (CQ-4304526).
+* Impossible de publier des dossiers de manière sélective sur Dynamic Media (CQ-4304526).
 
 * L’annulation de la publication d’un fichier vidéo à partir de [!DNL Experience Manager] n’annule pas la publication de la visionneuse de vidéos adaptative à partir d’un déploiement Scene7 configuré (CQ-4304405).
 
@@ -507,7 +507,7 @@ Pour récupérer votre copie d’exécution, l’Adobe recommande de synchronise
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.
    * La validation côté serveur du formulaire adaptatif échoue lorsque des fonctions d’agrégat telles que SUM, MAX et MIN sont utilisées. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.
-   * La zone réactive d’une image interactive Contenu multimédia dynamique n’est pas visible lors de la prévisualisation du fichier via la visionneuse de bannières modifiables.
+   * La zone réactive d’une image interactive Dynamic Media n’est pas visible lors de la prévisualisation du fichier via la visionneuse de bannières modifiables.
 
 ## bundles OSGi et packages de contenu inclus {#osgi-bundles-and-content-packages-included}
 
