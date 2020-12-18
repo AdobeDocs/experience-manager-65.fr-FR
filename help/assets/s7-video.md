@@ -1,6 +1,6 @@
 ---
 title: Vidéo
-description: Découvrez l’AEM Assets de gestion centralisée des ressources vidéo dans laquelle vous pouvez télécharger des vidéos pour le codage automatique vers Dynamic Media Classic et accéder directement aux vidéos de Dynamic Media Classic depuis AEM Assets. L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans.
+description: Découvrez l’AEM Assets de gestion centralisée des ressources vidéo où vous pouvez télécharger des vidéos pour le codage automatique vers Dynamic Media Classic et accéder directement aux vidéos Dynamic Media Classic à partir de AEM Assets. L’intégration vidéo Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1582'
 ht-degree: 63%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 63%
 
 # Vidéo {#video}
 
-Les ressources permettent une gestion centralisée des ressources vidéo dans laquelle vous pouvez télécharger directement des vidéos vers les ressources pour un codage automatique dans Contenu multimédia dynamique classique et accéder aux vidéos Contenu multimédia dynamique directement depuis Ressources pour la création de pages.
+Les ressources permettent une gestion centralisée des ressources vidéo dans laquelle vous pouvez télécharger directement des vidéos vers les ressources pour un codage automatique vers Dynamic Media Classic et accéder directement aux vidéos Dynamic Media Classic à partir des ressources pour la création de pages.
 
-L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans (détection automatique de périphériques et de bande passante).
+L’intégration vidéo Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans (détection de périphériques et de bande passante automatique).
 
 * Le composant **[!UICONTROL Scene7 Video]** détecte automatiquement les périphériques et la bande passante afin de lire la vidéo au bon format et de bonne qualité sur les ordinateurs de bureau, tablettes et appareils mobiles.
 * Ressources - Vous pouvez inclure des ensembles de vidéos adaptables au lieu de contenus vidéo uniques. Un ensemble de vidéos adaptables est un conteneur de tous les rendus vidéo requis permettant de lire la vidéo sans heurt sur plusieurs écrans. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Vous utilisez un ensemble de vidéos adaptables, accompagné d’un composant vidéo S7, pour la diffusion vidéo en continu adaptative sur plusieurs écrans, notamment des ordinateurs de bureau, des téléphones iOS, Android et Blackberry et des appareils mobiles Windows.
 
-## À propos de FFMPEG et de Dynamic Media Classic {#about-ffmpeg-and-scene}
+## A propos de FFMPEG et de Dynamic Media Classic {#about-ffmpeg-and-scene}
 
 Le processus de codage vidéo par défaut est basé sur l’utilisation d’une intégration basée sur FFMPEG aux profils vidéo. De ce fait, le processus d’assimilation de la gestion des actifs numériques prêt à l’emploi contient les deux étapes suivantes du processus basé sur FFMPEG :
 
 * Miniatures FFMPEG
 * Codage FFMPEG
 
-Gardez à l’esprit que l’activation et la configuration de l’intégration de Dynamic Media Classic ne suppriment pas ou ne désactivent pas automatiquement ces deux étapes de flux de travaux du processus d’assimilation de DAM prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans AEM, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide de DAM serait codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration de Dynamic Media Classic.
+Gardez à l’esprit que l’activation et la configuration de l’intégration Dynamic Media Classic ne suppriment pas ou ne désactivent pas automatiquement ces deux étapes de flux de travaux du processus d’assimilation de DAM prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans AEM, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide de DAM serait codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration Dynamic Media Classic.
 
 Si le codage vidéo basé sur FFMPEG est configuré dans AEM et que FFMPEG est installé, Adobe recommande de supprimer les deux processus FFMPEG des processus d’assimilation de la gestion des actifs numériques.
 
@@ -50,7 +50,7 @@ Le choix de l’emplacement du téléchargement du contenu vidéo dépend des é
 * Avez-vous besoin d’un worfklow pour le contenu vidéo ?
 * Avez-vous besoin d’un contrôle des versions pour le contenu vidéo ?
 
-Si la réponse est « oui » à l’une des questions ou aux deux, téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe. Si la réponse est &quot;non&quot; aux deux questions, téléchargez votre vidéo directement dans Dynamic Media Classic. Le processus de chaque scénario est décrit dans la section suivante.
+Si la réponse est « oui » à l’une des questions ou aux deux, téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe. Si la réponse est &quot;non&quot; aux deux questions, téléchargez votre vidéo directement sur Dynamic Media Classic. Le processus de chaque scénario est décrit dans la section suivante.
 
 ### Si vous téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe  {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
@@ -60,7 +60,7 @@ Si vous avez besoin d’un processus ou d’une création de versions pour les r
 1. Dans AEM, accédez aux contenus vidéo dans la gestion de contenu web, dans l’onglet **[!UICONTROL Films]** de l’outil de recherche de contenu.
 1. Auteur avec le composant **[!UICONTROL Scene7 Video]** ou **[!UICONTROL Foundation Video]**.
 
-### Si vous téléchargez la vidéo dans Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
+### Si vous téléchargez votre vidéo vers Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
 Si vous n’avez pas besoin d’un worfklow ou d’une création de versions pour les contenus, vous devez télécharger les contenus dans Scene7. Vous trouverez ci-dessous le worfklow recommandé :
 
@@ -85,7 +85,7 @@ Pour configurer les paramètres prédéfinis universaux :
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur la signification des paramètres vidéo prédéfinis, voir la [documentation de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Pour plus d’informations sur la signification des paramètres vidéo prédéfinis, voir la [documentation Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe recommande de sélectionner les deux ensembles de vidéos adaptables lors de la configuration des paramètres prédéfinis ou de sélectionner l’option **[!UICONTROL Codage vidéo adaptative]**.
 
@@ -135,7 +135,7 @@ Le tableau suivant fournit une comparaison de niveau élevé des fonctions prise
 | Approche | Approche HTML5 en premier lieu. Flash n’est utilisé que pour le secours non HTML5. | Flash sur la plupart des ordinateurs de bureau. HTML5 est utilisé pour les mobiles et les tablettes. |
 | Diffusion | Progressive | Adaptative |
 | Suivi | Oui | Oui |
-| Evolutivité | Oui | Oui (avec kit de développement de visionneuses de Scene7) |
+| Evolutivité | Oui | Non |
 | Vidéo mobile | Oui | Oui |
 
 ### Configuration  {#setting-up}
