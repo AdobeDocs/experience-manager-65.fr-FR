@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9f22cb618d487a2b02dc17149d11b81a9e9e27be
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '5895'
+source-wordcount: '5891'
 ht-degree: 81%
 
 ---
@@ -203,13 +203,13 @@ Les actions de modération sont enregistrées ici.
    * `error.log`
 Les messages d’erreur (de différents niveaux de gravité) sont enregistrés ici.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 Ce journal n&#39;est utilisé que si  [!DNL Dynamic Media] est activé. Il fournit des statistiques et des informations analytiques utilisées pour analyser le comportement du processus interne ImageServer.
 
    * `request.log`
 Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 Ce journal n&#39;est utilisé que si  [!DNL Dynamic Media] est activé. Le journal s7access enregistre chaque requête envoyée à [!DNL Dynamic Media] par `/is/image` et `/is/content`.
 
    * `stderr.log`
