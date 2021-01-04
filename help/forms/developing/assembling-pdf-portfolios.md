@@ -1,8 +1,8 @@
 ---
 title: Assemblage de Portfolios PDF
 seo-title: Assemblage de Portfolios PDF
-description: 'null'
-seo-description: 'null'
+description: Assemblez un portfolio PDF pour combiner plusieurs documents de différents types, notamment des fichiers texte, des fichiers image et des documents PDF. Vous pouvez assembler un portfolio PDF à l’aide d’une API Java et d’une API de service Web.
+seo-description: Assemblez un portfolio PDF pour combiner plusieurs documents de différents types, notamment des fichiers texte, des fichiers image et des documents PDF. Vous pouvez assembler un portfolio PDF à l’aide d’une API Java et d’une API de service Web.
 uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1851'
 ht-degree: 3%
 
 ---
