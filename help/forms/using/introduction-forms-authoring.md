@@ -10,7 +10,7 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a69e0354b5599ab555df650858f8f3200e21d2b8
+source-git-commit: f3b5b22c1d5573492867aef60457413ad5cf419f
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 82%
@@ -153,11 +153,11 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
    <td>Ajoute un champ qui répertorie toutes les pièces jointes téléchargées à l’aide du composant Pièce jointe.</td>
   </tr>
   <tr>
-   <td>Pied de page<br /> </td>
+   <td>En-tête<br /> </td>
    <td>Ajoute un en-tête qui contient habituellement le logo d’une société, le titre du formulaire et le résumé.<br />  </td>
   </tr>
   <tr>
-   <td>En-tête</td>
+   <td>Pied de page</td>
    <td>Ajoute le pied de page qui contient généralement des informations de copyright, ainsi que des liens vers d’autres pages. </td>
   </tr>
   <tr>
