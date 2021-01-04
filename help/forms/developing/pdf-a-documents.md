@@ -1,8 +1,8 @@
 ---
 title: Utilisation de Documents PDF/A
 seo-title: Utilisation de Documents PDF/A
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service DocConverter pour déterminer si un document PDF est un document PDF/A et convertir des documents PDF en documents PDF/A.
+seo-description: Utilisez le service DocConverter pour déterminer si un document PDF est un document PDF/A et convertir des documents PDF en documents PDF/A.
 uuid: c258d253-068a-4412-955a-21d8a4792d6f
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2386'
 ht-degree: 7%
 
 ---
