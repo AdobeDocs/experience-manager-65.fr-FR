@@ -1,8 +1,8 @@
 ---
 title: Mise à niveau vers les communautés AEM 6.5
 seo-title: Mise à niveau vers les communautés AEM 6.5
-description: Mise à niveau d’une version antérieure vers AEM 6.4 Communautés
-seo-description: Mise à niveau d’une version antérieure vers AEM 6.4 Communautés
+description: Mise à niveau d’une version antérieure vers AEM 6.5 Communautés
+seo-description: Mise à niveau d’une version antérieure vers AEM 6.5 Communautés
 uuid: 929c3892-1b3b-46a7-8e70-fa6864125911
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 4%
@@ -109,4 +109,4 @@ Conceptuellement, il y a trois générations de composantes communautaires :
 
 **Gen 2** : De AEM 5.6.1 à AEM 6.1, il s&#39;agit d&#39;un mélange de  **** composantes  **** sociales de la collabande. aem 6.0 a introduit le nouveau cadre de composants sociaux [a1/> (SCF) et AEM 6.2 a introduit un [magasin UGC commun](/help/communities/working-with-srp.md) où l&#39;UGC est accessible à l&#39;aide d&#39;un [fournisseur de ressources d&#39;enregistrement](/help/communities/srp.md) (SRP).](/help/communities/scf.md)
 
-**Gen 3** : À partir de AEM 6.2, il n&#39;y a que des composants  **** sociaux, mis en oeuvre dans SCF en tant que composants Handlebars (HBS) nécessitant un choix de SRP pour UGC.
+**Gen 3** : À partir de la version 6.2 de l&#39;AEM, il n&#39;y a que des composants  **** sociaux, mis en oeuvre dans SCF en tant que composants Handlebars (HBS) nécessitant un choix de SRP pour UGC.
