@@ -1,8 +1,8 @@
 ---
 title: PDF Utilities Service Java APIQuick Début(SOAP)
 seo-title: PDF Utilities Service Java APIQuick Début(SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service PDF Utilities pour convertir un document PDF en document XDP, convertir un document XDP en document PDF, récupérer les propriétés du document PDF, définir le style d’enregistrement d’un document PDF et assainir les documents PDF.
+seo-description: Utilisez le service PDF Utilities pour convertir un document PDF en document XDP, convertir un document XDP en document PDF, récupérer les propriétés du document PDF, définir le style d’enregistrement d’un document PDF et assainir les documents PDF.
 uuid: 96bb2bd5-b274-43d4-a664-49cc1c526b3f
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 1%
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
