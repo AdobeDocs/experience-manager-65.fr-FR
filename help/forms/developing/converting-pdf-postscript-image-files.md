@@ -1,8 +1,8 @@
 ---
 title: Conversion de fichiers PDF en fichiers Postscript et Image
 seo-title: Conversion de fichiers PDF en fichiers Postscript et Image
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Convert PDF pour convertir des documents PDF au format PostScript et dans plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF) à l’aide de l’API Java et de l’API de service Web.
+seo-description: Utilisez le service Convert PDF pour convertir des documents PDF au format PostScript et dans plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF) à l’aide de l’API Java et de l’API de service Web.
 uuid: 07da0391-7180-4197-aaa6-ae753d753b84
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 6%
+source-wordcount: '2832'
+ht-degree: 5%
 
 ---
 
