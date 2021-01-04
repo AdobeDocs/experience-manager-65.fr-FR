@@ -1,8 +1,8 @@
 ---
 title: Assemblage de Documents PDF non interactifs
 seo-title: Assemblage de Documents PDF non interactifs
-description: 'null'
-seo-description: 'null'
+description: Utilisez un formulaire PDF non interactif comme entrée pour assembler un document PDF non interactif à l’aide de l’API Java et de l’API de service Web.
+seo-description: Utilisez un formulaire PDF non interactif comme entrée pour assembler un document PDF non interactif à l’aide de l’API Java et de l’API de service Web.
 uuid: 0c7adeb4-9a3a-4ec5-ba33-c3642928d4ea
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 3%
+source-wordcount: '1800'
+ht-degree: 2%
 
 ---
 
