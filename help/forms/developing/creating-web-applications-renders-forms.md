@@ -1,8 +1,8 @@
 ---
 title: Création d’Applications web renvoyant Forms
 seo-title: Création d’Applications web renvoyant Forms
-description: 'null'
-seo-description: 'null'
+description: Créez une application Web qui utilise des servlets Java pour appeler le service Forms et générer des formulaires. La servlet Java sert de lien entre le service Forms qui renvoie un formulaire et un navigateur Web client.
+seo-description: Créez une application Web qui utilise des servlets Java pour appeler le service Forms et générer des formulaires. La servlet Java sert de lien entre le service Forms qui renvoie un formulaire et un navigateur Web client.
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1901'
 ht-degree: 1%
 
 ---
