@@ -1,8 +1,8 @@
 ---
 title: Rendu de Forms HTML à l’aide de fichiers CSS personnalisés
 seo-title: Rendu de Forms HTML à l’aide de fichiers CSS personnalisés
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Forms pour faire référence à des fichiers CSS personnalisés pour générer des formulaires HTML en réponse à une demande HTTP provenant d’un navigateur Web. Vous pouvez générer un formulaire HTML qui utilise un fichier CSS à l’aide de l’API Java et de l’API de service Web.
+seo-description: Utilisez le service Forms pour faire référence à des fichiers CSS personnalisés pour générer des formulaires HTML en réponse à une demande HTTP provenant d’un navigateur Web. Vous pouvez générer un formulaire HTML qui utilise un fichier CSS à l’aide de l’API Java et de l’API de service Web.
 uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: fcbe1d860410e215cb7c438f94579e0b14d262a5
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1724'
 ht-degree: 2%
 
 ---
