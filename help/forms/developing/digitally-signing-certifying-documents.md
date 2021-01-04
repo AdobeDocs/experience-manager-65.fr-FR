@@ -1,8 +1,8 @@
 ---
 title: Signature numérique et certification de Documents
 seo-title: Signature numérique et certification de Documents
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Signature pour ajouter et supprimer des champs de signature numérique à un document PDF, récupérer les noms des champs de signature situés dans un document PDF, modifier les champs de signature, signer numériquement des documents PDF, certifier des documents PDF, valider les signatures numériques situées dans un document PDF, valider toutes les signatures numériques situées dans un document PDF et supprimer une signature numérique d’un champ de signature.
+seo-description: Utilisez le service Signature pour ajouter et supprimer des champs de signature numérique à un document PDF, récupérer les noms des champs de signature situés dans un document PDF, modifier les champs de signature, signer numériquement des documents PDF, certifier des documents PDF, valider les signatures numériques situées dans un document PDF, valider toutes les signatures numériques situées dans un document PDF et supprimer une signature numérique d’un champ de signature.
 uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '16977'
+source-wordcount: '17099'
 ht-degree: 8%
 
 ---
