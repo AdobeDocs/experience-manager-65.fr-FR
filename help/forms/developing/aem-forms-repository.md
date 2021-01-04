@@ -1,8 +1,8 @@
 ---
 title: Utilisation du référentiel AEM Forms
 seo-title: Utilisation du référentiel AEM Forms
-description: 'null'
-seo-description: 'null'
+description: Gérez le référentiel AEM Forms pour créer des dossiers, écrire, liste, lire, mettre à jour et rechercher des ressources à l’aide de l’API Java et de l’API de service Web. En outre, apprenez comment créer des relations de ressources, verrouiller et supprimer des ressources.
+seo-description: Gérez le référentiel AEM Forms pour créer des dossiers, écrire, liste, lire, mettre à jour des ressources et rechercher des ressources à l’aide de l’API Java et de l’API de service Web. En outre, apprenez comment créer des relations de ressources, verrouiller et supprimer des ressources.
 uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '9076'
+source-wordcount: '9143'
 ht-degree: 2%
 
 ---
