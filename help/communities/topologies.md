@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 6%
 
 ---
@@ -110,6 +110,6 @@ Si vous choisissez [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) pour la p
 
    Essentiellement, le contenu du site est stocké dans un magasin de noeuds. Pour les ressources, une banque de données peut être configurée pour stocker des données binaires. Pour les communautés, un magasin commun doit être configuré pour sélectionner le SRP.
 
-* [Éléments de stockage dans AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Eléments Enregistrement](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    Décrit les deux mises en oeuvre d’enregistrement de noeud : Tar et MongoDB.
