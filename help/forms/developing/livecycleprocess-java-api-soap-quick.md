@@ -1,8 +1,8 @@
 ---
 title: Début rapide de l’API Java LiveCycle Process (SOAP)
 seo-title: Début rapide de l’API Java LiveCycle Process (SOAP)
-description: 'null'
-seo-description: 'null'
+description: 'Utilisez le Début rapide de l’API Java LiveCycle Process (SOAP) pour rechercher des instances de processus, suspendre des instances de processus, début des instances de processus suspendues, arrêter des instances de processus, purger des données de processus et récupérer l’état d’une tâche. '
+seo-description: Utilisez le Début rapide de l’API Java LiveCycle Process (SOAP) pour rechercher des instances de processus, suspendre des instances de processus, début des instances de processus suspendues, arrêter des instances de processus, purger des données de processus et récupérer l’état d’une tâche.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
