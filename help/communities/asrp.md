@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
+source-git-commit: 3202866bd38779a9784e44ab470152df61c585f5
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -97,9 +97,9 @@ Pour rendre la configuration identique disponible dans l’environnement de publ
 
 Sur l’instance d’auteur AEM :
 
-* Accédez au menu principal **[!UICONTROL Outils > Opérations > Réplication]**.
+* Accédez au menu principal **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**
 * Sélectionnez **Activer l&#39;arborescence**
-* **Chemin** du début : accéder à  `/etc/socialconfig/srpc/`
+* **Chemin** du début : accéder à  `/conf/global/settings/communities/srpc/`
 * Désélectionnez **Modifié uniquement**.
 * Sélectionnez **Activer**
 
@@ -120,7 +120,7 @@ Pour plus d’informations sur *les utilisateurs*, *les profils utilisateur* et 
 * [Synchronisation des utilisateurs](/help/communities/sync.md)
 * [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md)
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### UGC disparaît après la mise à niveau {#ugc-disappears-after-upgrade}
 
@@ -144,8 +144,8 @@ Assurez-vous que l&#39;ASRP a été configuré pour être le fournisseur par dé
 
 Sur toutes les instances d’AEM création et de publication, consultez à nouveau la console de configuration de l’Enregistrement ou vérifiez le référentiel AEM.
 
-Dans JCR, if [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
+Dans JCR, si [/conf/global/settings/communautés](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) :
 
-* Ne contient pas de noeud [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), cela signifie que le fournisseur d’enregistrement est JSRP.
-* Si le noeud srpc existe et contient le noeud [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), les propriétés de la configuration par défaut définissent ASRP comme fournisseur par défaut.
+* Ne contient pas de noeud [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp), cela signifie que le fournisseur d’enregistrement est JSRP.
+* Si le noeud srpc existe et contient [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) noeud, les propriétés de la configuration par défaut définissent ASRP comme fournisseur par défaut.
 
