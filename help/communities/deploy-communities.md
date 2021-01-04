@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6693baecb1345c30385eb04caeb03960925f46c3
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 4%
@@ -299,7 +299,7 @@ ensuite [configurer l&#39;agent de réplication](#replication-agents-on-author)
 
 Il existe deux fonctionnalités d’AEM Communities qui nécessitent que toutes les instances AEM serveur utilisent les mêmes clés de chiffrement. Il s’agit de [Analytics](/help/communities/analytics.md) et [ASRP](/help/communities/asrp.md).
 
-À partir de l&#39;AEM 6.3, le matériel clé est stocké dans le système de fichiers et ne figure plus dans le référentiel.
+A partir de AEM 6.3, le matériel clé est stocké dans le système de fichiers et ne figure plus dans le référentiel.
 
 Pour copier la documentation clé de l&#39;auteur vers toutes les autres instances, il est nécessaire de :
 
