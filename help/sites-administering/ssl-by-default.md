@@ -11,10 +11,10 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 77%
+source-wordcount: '800'
+ht-degree: 74%
 
 ---
 
@@ -160,7 +160,7 @@ Vous pouvez également automatiser la configuration SSL en chargeant un module c
 
 ### Génération d’une paire clé privée/certificat à utiliser avec l’assistant {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Vous trouverez ci-dessous un exemple de création de certificat autosigné au format DER utilisé par l’assistant SSL.
+Vous trouverez ci-dessous un exemple de création de certificat autosigné au format DER utilisé par l’assistant SSL. Installez OpenSSL en fonction du système d’exploitation, ouvrez l’invite de commande OpenSSL et remplacez le répertoire par le dossier dans lequel vous souhaitez générer la clé privée/le certificat.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ Vous trouverez ci-dessous un exemple de création de certificat autosigné au fo
 1. Ensuite, générez une demande de signature de certificat (CSR) à l’aide d’une clé privée :
 
    ```shell
-   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj '/CN=localhost'
+   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
 1. Générez le certificat SSL et signez-le avec la clé privée. Dans cet exemple, le certificat expire dans un délai d’un an :
