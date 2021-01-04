@@ -1,8 +1,8 @@
 ---
 title: Création d’applications de Flash Builder qui effectuent une authentification SSO à l’aide de jetons HTTP
 seo-title: Création d’applications de Flash Builder qui effectuent une authentification SSO à l’aide de jetons HTTP
-description: 'null'
-seo-description: 'null'
+description: Créez une application cliente à l’aide d’un Flash Builder qui effectue l’authentification unique par authentification unique (SSO) à l’aide de jetons HTTP. Authentifiez un utilisateur pour une opération une seule fois et utilisez cette authentification pour effectuer plusieurs opérations AEM Forms.
+seo-description: Créez une application cliente à l’aide d’un Flash Builder qui effectue l’authentification unique par authentification unique (SSO) à l’aide de jetons HTTP. Authentifiez un utilisateur pour une opération une seule fois et utilisez cette authentification pour effectuer plusieurs opérations AEM Forms.
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 1%
+source-wordcount: '1825'
+ht-degree: 0%
 
 ---
 
