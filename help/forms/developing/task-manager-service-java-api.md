@@ -1,8 +1,8 @@
 ---
 title: API Java du service tâche Manager QuickStart (SOAP)
 seo-title: API Java du service tâche Manager QuickStart (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Tâche Manager pour attribuer des tâches, verrouiller des tâches, récupérer les tâches attribuées aux utilisateurs, récupérer les données de formulaire des tâches, modifier les données de formulaire, récupérer les pièces jointes et récupérer les informations de tâche.
+seo-description: Utilisez le service Tâche Manager pour attribuer des tâches, verrouiller des tâches, récupérer les tâches attribuées aux utilisateurs, récupérer les données de formulaire des tâches, modifier les données de formulaire, récupérer les pièces jointes et récupérer les informations de tâche.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 1%
+source-wordcount: '561'
+ht-degree: 0%
 
 ---
 
