@@ -1,8 +1,8 @@
 ---
 title: Gestion des Forms envoyées
 seo-title: Gestion des Forms envoyées
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Forms pour récupérer les données envoyées saisies dans un formulaire interactif. L’utilisateur peut envoyer les données du formulaire aux formats XML, PDF et URL UTF-16.
+seo-description: Utilisez le service Forms pour récupérer les données envoyées saisies dans un formulaire interactif. L’utilisateur peut envoyer les données du formulaire aux formats XML, PDF et URL UTF-16.
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2921'
 ht-degree: 2%
 
 ---
@@ -88,7 +88,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Une page Web contient un lien qui accède à un servlet Java qui appelle le service Forms.</p></td>
   </tr>
   <tr>
@@ -96,7 +96,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
    <td><p>Le service Forms génère un formulaire PDF interactif dans le navigateur Web client.</p></td>
   </tr>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>L’utilisateur remplit un formulaire interactif et clique sur un bouton d’envoi. Le formulaire est renvoyé au service Forms en tant que données PDF. Cette option est définie dans Designer.</p></td>
   </tr>
   <tr>
