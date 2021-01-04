@@ -1,8 +1,8 @@
 ---
 title: Conversion de PostScript en Documents PDF
 seo-title: Conversion de PostScript en Documents PDF
-description: 'null'
-seo-description: 'null'
+description: Utilisez le service Distiller pour convertir des fichiers PostScript®, Encapsulated PostScript (EPS) et PRN en fichiers PDF compacts, fiables et plus sécurisés sur un réseau. Le service Distiller convertit de gros volumes de documents imprimés en documents électroniques, tels que des factures et des relevés à l’aide de l’API Java et de l’API de service Web.
+seo-description: Utilisez le service Distiller pour convertir des fichiers PostScript®, Encapsulated PostScript (EPS) et PRN en fichiers PDF compacts, fiables et plus sécurisés sur un réseau. Le service Distiller convertit de gros volumes de documents imprimés en documents électroniques, tels que des factures et des relevés à l’aide de l’API Java et de l’API de service Web.
 uuid: 2143f406-1fdd-4551-a738-1a8388f8d478
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1365'
 ht-degree: 7%
 
 ---
