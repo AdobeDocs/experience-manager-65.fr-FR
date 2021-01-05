@@ -44,7 +44,7 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 
 >[!NOTE]
 >
->S’applique à *Contenu multimédia dynamique - Mode Scene7* uniquement dans AEM 6.4.6.0 ou version ultérieure.
+>S’applique à *Dynamic Media - mode Scene7* uniquement dans AEM 6.4.6.0 ou version ultérieure.
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de traitement existant que vous avez modifié ultérieurement.
 
