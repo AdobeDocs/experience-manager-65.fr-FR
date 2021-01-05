@@ -55,7 +55,7 @@ Si votre instance comprend déjà des pages ou si vous venez d’en créer une, 
 * [Couper/Copier/Coller un composant](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Annulation et rétablissement des modifications de page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Utilisation du mode Aperçu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (pour avoir un aperçu du contenu avant publication)
-* [Verrouillage d’une page   ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Verrouillage d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Déverrouillage d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Publication d’une page  {#publishing-a-page}
