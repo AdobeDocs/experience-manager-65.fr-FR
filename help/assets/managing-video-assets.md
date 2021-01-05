@@ -5,8 +5,8 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 58%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -60,10 +60,10 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 1. Sur la page [!UICONTROL Adobe Granite Workflow External Process Handler], définissez les secondes pour les champs **[!UICONTROL Default Timeout]** et **[!UICONTROL Max Timeout]** sur `18000` (cinq heures). Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Sur la page Modèles de processus, sélectionnez **[!UICONTROL Dynamic Media Encode Video]**, puis cliquez sur **[!UICONTROL Modifier]**.
-1. Dans la page de flux de travaux, cliquez sur le composant **[!UICONTROL Processus du service de vidéo multimédia dynamique]** en appuyant sur le doublon.
+1. Dans la page de flux de travail, cliquez sur le composant **[!UICONTROL Processus de service vidéo Dynamic Media]** en appuyant sur le doublon.
 1. Dans la boîte de dialogue [!UICONTROL Propriétés des étapes], sous l’onglet **[!UICONTROL Commun]**, développez **Paramètres avancés**.
-1. Dans le champ **[!UICONTROL Délai d’expiration]**, spécifiez la valeur `18000`, puis cliquez sur **[!UICONTROL OK]** pour revenir à la page de flux de travaux **[!UICONTROL Dynamic Media Encode Video]**.
-1. Près du haut de la page, sous le titre de la page [!UICONTROL Dynamic Media Encode Video], cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans le champ **[!UICONTROL Délai d’expiration]**, indiquez la valeur `18000`, puis cliquez sur **[!UICONTROL OK]** pour revenir à la page de flux de travaux **[!UICONTROL Vidéo d’encodage Dynamic Media]**.
+1. Près du haut de la page, sous le titre de la page [!UICONTROL Vidéo d’encodage Dynamic Media], cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Publication de ressources vidéo {#publish-video-assets}
 
