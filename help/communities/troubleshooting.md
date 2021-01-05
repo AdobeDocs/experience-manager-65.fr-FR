@@ -1,6 +1,6 @@
 ---
-title: Dépannage
-seo-title: Dépannage
+title: Résolution des incidents
+seo-title: Résolution des incidents
 description: Dépannage de la communauté, y compris les problèmes connus
 seo-description: Dépannage de la communauté, y compris les problèmes connus
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Dépannage {#troubleshooting}
+# Résolution des incidents {#troubleshooting}
 
 Cette section contient des préoccupations communes et des questions connues.
 
