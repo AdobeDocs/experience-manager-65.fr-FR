@@ -198,7 +198,7 @@ AEM Forms peut être installé à l’aide de n’importe quelle combinaison de
    <td>Java </td>
    <td>
     <ul>
-     <li>Java 11</li>
+     <li>Java 11</li>
     </ul> </td>
   </tr>
  </tbody>
