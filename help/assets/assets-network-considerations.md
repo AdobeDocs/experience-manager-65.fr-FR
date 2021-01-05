@@ -5,8 +5,8 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +68,7 @@ Les exemples de diagrammes vous permettent de conclure que six périphériques p
 
 La conception de la topologie de l&#39;environnement [!DNL Experience Manager] nécessite une connaissance détaillée de la configuration du système et de la façon dont le réseau est connecté dans l&#39;environnement utilisateur.
 
-L’exemple de scénario comprend une batterie de publication dotée de cinq serveurs, une banque de données binaires S3 et un Contenu multimédia dynamique.
+L’exemple de scénario inclut une batterie de publication avec cinq serveurs, une banque binaire S3 et Dynamic Media configurés.
 
 Le répartiteur partage sa connexion de 100 Mbit/s avec deux entités, le monde extérieur et le déploiement [!DNL Experience Manager]. Pour les opérations simultanées de chargement et de téléchargement, vous devez diviser ce nombre par deux. L’espace de stockage externe joint utilise une connexion distincte.
 
