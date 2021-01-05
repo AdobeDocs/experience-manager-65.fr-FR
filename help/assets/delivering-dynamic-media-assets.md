@@ -11,8 +11,8 @@ docset: aem65
 translation-type: tm+mt
 source-git-commit: 3eacfe8a79d155dddde8908d05b05790d048b0c5
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +42,7 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 * [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Diffusion d’images optimisées pour un site réactif](/help/assets/responsive-site.md)
 * [Diffusion de contenu HTTP/2](/help/assets/http2.md)
-* [Invalidation du cache CDN par le biais de Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
+* [Invalidation du cache CDN via Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Utilisation de jeux de règles de transformation d’URL](/help/assets/using-rulesets-to-transform-urls.md)
 
 
