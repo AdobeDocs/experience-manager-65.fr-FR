@@ -54,7 +54,7 @@ Pour appliquer un processus à une ressource, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Processus du Début]** dans la liste.
 
-1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste.
+1. Dans la section **[!UICONTROL Démarrer le processus]**, sélectionnez un modèle de workflow dans la liste.
 
 1. (Facultatif) Spécifiez un titre pour le processus qui peut être utilisé pour référencer l’instance du processus.
 
@@ -71,7 +71,7 @@ Pour appliquer un processus à une ressource, procédez comme suit :
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
 1. Cliquez sur **[!UICONTROL Actions]** ![chevron vers le haut](assets/do-not-localize/chevron-up-icon.png) en bas.
-1. Cliquez sur **[!UICONTROL Démarrer le processus]**. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste.
+1. Cliquez sur **[!UICONTROL Démarrer le processus]**. Dans la section **[!UICONTROL Démarrer le processus]**, sélectionnez un modèle de workflow dans la liste.
 
    ![Processus de début](assets/start-workflow.png)
 
