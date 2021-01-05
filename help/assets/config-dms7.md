@@ -11,8 +11,8 @@ docset: aem65
 translation-type: tm+mt
 source-git-commit: 24ad36d3ff329885efff319404e0d5321e8ce46d
 workflow-type: tm+mt
-source-wordcount: '5990'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ Par défaut, [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manag
 
 >[!NOTE]
 >
->Contenu multimédia dynamique : le mode Scene7 est réservé à l’instance d’auteur AEM. Vous devez donc configurer `runmode=dynamicmedia_scene7` sur l’instance d’auteur AEM, *et non* l’instance de publication AEM.
+>Dynamic Media - Le mode Scene7 est réservé à l’instance Auteur AEM. Vous devez donc configurer `runmode=dynamicmedia_scene7` sur l’instance d’auteur AEM, *et non* l’instance de publication AEM.
 
 Pour activer Dynamic Media, vous devez démarrer AEM en mode d’exécution `dynamicmedia_scene7` à partir de la ligne de commande en saisissant la commande suivante dans une fenêtre de terminal (dans l’exemple, le port utilisé est 4502) :
 
@@ -49,7 +49,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## (Facultatif) Migration des paramètres prédéfinis et des configurations Dynamic Media de 6.3 à 6.5 sans interruption {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-Si vous effectuez une mise à niveau AEM Contenu multimédia dynamique de la version 6.3 à la version 6.4 ou 6.5 (qui inclut désormais la possibilité de déployer sans interruption), vous devez exécuter la commande d’activation suivante pour migrer tous vos paramètres prédéfinis et configurations de `/etc` à `/conf` dans le CRXDE Lite.
+Si vous effectuez une mise à niveau AEM Dynamic Media de 6.3 à 6.4 ou 6.5 (qui inclut désormais la possibilité de déployer zéro temps d’arrêt), vous devez exécuter la commande curl suivante pour migrer tous vos paramètres prédéfinis et configurations de `/etc` à `/conf` en CRXDE Lite.
 
 >[!NOTE]
 >
@@ -67,19 +67,19 @@ Pour migrer les paramètres prédéfinis et les configurations de visionneuse pe
 
 L&#39;installation de Feature Pack 18912 est *optionnelle*.
 
-Feature Pack 18912 vous permet soit d’assimiler des fichiers en vrac par FTP, soit de migrer des fichiers du mode Contenu multimédia dynamique - hybride ou Contenu multimédia dynamique vers le mode Contenu multimédia dynamique - Scene7 sur AEM. Il est disponible à partir de [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
+Feature Pack 18912 vous permet soit d’assimiler des fichiers en vrac par FTP, soit de migrer des fichiers du mode Dynamic Media - Hybrid ou de Dynamic Media Classic vers le mode Dynamic Media - Scene7 sur AEM. Il est disponible à partir de [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
 
 Voir [Installation de Feature Pack 18912 pour la migration des ressources en vrac](/help/assets/bulk-ingest-migrate.md) pour plus d’informations.
 
-## Création d’une configuration multimédia dynamique en Cloud Services {#configuring-dynamic-media-cloud-services}
+## Création d’une configuration Dynamic Media en Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Avant de configurer Contenu multimédia**  dynamique : après avoir reçu votre courrier électronique de mise en service avec les informations d’identification Contenu multimédia dynamique, vous devez vous  [connecter ](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à Contenu multimédia dynamique pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que Dynamic Media Cloud Service soit configuré avec les informations d’identification correctes.
+**Avant de configurer Dynamic Media**  : après avoir reçu votre courrier électronique de mise en service avec les informations d’identification Dynamic Media, vous devez vous  [connecter ](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à Dynamic Media Classic pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que Dynamic Media Cloud Service soit configuré avec les informations d’identification correctes.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Pour créer une configuration multimédia dynamique en Cloud Services**
+**Pour créer une configuration Dynamic Media en Cloud Services**
 
-1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale et appuyez sur l’icône Outils, puis appuyez sur **[!UICONTROL Cloud Services > Configuration de médias dynamiques.]**
+1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale et appuyez sur l’icône Outils, puis appuyez sur **[!UICONTROL Cloud Services > Configuration Dynamic Media.]**
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, appuyez sur **[!UICONTROL global]** (ne sélectionnez/n’appuyez pas sur l’icône de dossier située à gauche de **[!UICONTROL global]**), puis sur **[!UICONTROL Créer.]**
 1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Veuillez contacter le support si vous ne l’avez pas reçu.
 
@@ -98,7 +98,7 @@ Voir [Installation de Feature Pack 18912 pour la migration des ressources en vra
    * **[!UICONTROL Publication de ressources]** : vous pouvez choisir parmi les trois options suivantes :
       * **[!UICONTROL Immédiatement]** signifie que lorsque les ressources sont chargées, le système intègre les ressources et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.
       * **[!UICONTROL Lors de l’activation]** : signifie que vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.
-      * **** Publier de manière sélectiveCette option vous permet de contrôler quels dossiers sont publiés dans Contenu multimédia dynamique afin que vous puissiez utiliser des fonctionnalités telles que Recadrage dynamique ou Rendus dynamiques ou, quels dossiers sont publiés exclusivement dans AEM pour la prévisualisation ; ces mêmes ressources ne sont  ** pas publiées dans Contenu multimédia dynamique pour diffusion dans le domaine public.<br>Vous pouvez définir cette option ici dans la  **[!UICONTROL configuration de]** Contenu multimédia dynamique ou, si vous préférez, vous pouvez choisir de la définir au niveau du dossier, dans les  **[!UICONTROL propriétés]** d’un dossier.<br>Voir [Utilisation de la publication sélective dans Dynamic Media.](/help/assets/selective-publishing.md)<br>Notez que si vous modifiez ultérieurement cette configuration, ou si vous la modifiez ultérieurement au niveau du dossier, ces modifications n’affectent que les nouveaux fichiers que vous téléchargez à partir de ce moment. L’état de publication des ressources existantes dans le dossier reste tel quel jusqu’à ce que vous modifiiez manuellement ces ressources à partir de la boîte de dialogue **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]**.
+      * **** Publier de manière sélectiveCette option vous permet de contrôler quels dossiers sont publiés dans Dynamic Media afin que vous puissiez utiliser des fonctionnalités telles que Recadrage dynamique ou Rendus dynamiques ou, quels dossiers sont publiés exclusivement dans AEM pour la prévisualisation ; ces mêmes ressources ne sont  ** pas publiées à Dynamic Media pour diffusion dans le domaine public.<br>Vous pouvez définir cette option ici dans la  **[!UICONTROL Dynamic Media Cloud]** Configurationou, si vous préférez, vous pouvez choisir de la définir au niveau du dossier, dans les  **[!UICONTROL Propriétés]** d’un dossier.<br>Voir [Utilisation de la publication sélective dans Dynamic Media.](/help/assets/selective-publishing.md)<br>Notez que si vous modifiez ultérieurement cette configuration, ou si vous la modifiez ultérieurement au niveau du dossier, ces modifications n’affectent que les nouveaux fichiers que vous téléchargez à partir de ce moment. L’état de publication des ressources existantes dans le dossier reste tel quel jusqu’à ce que vous modifiiez manuellement ces ressources à partir de la boîte de dialogue **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]**.
    * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, AEM peut accéder de manière sécurisée aux rendus Dynamic Media distants et en afficher un aperçu (aucune donnée binaire n’est renvoyée à l’instance AEM).
 À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre propre société ou un serveur spécial, Adobe Systems vous conseille de conserver ce paramètre tel que spécifié.
 
@@ -107,7 +107,7 @@ Voir [Installation de Feature Pack 18912 pour la migration des ressources en vra
    * **[!UICONTROL Mode de synchronisation Dynamic Media]**
       * **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.
-Pour marquer un dossier sélectionné en vue de sa synchronisation avec Contenu multimédia dynamique, sélectionnez un dossier de ressources, puis sur la barre d’outils, cliquez sur **[!UICONTROL Propriétés.]** Sous l’onglet **[!UICONTROL Détails]**, dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes. Lorsque vous avez terminé, appuyez sur **[!UICONTROL Enregistrer.]** *À retenir : ces trois options ne sont pas disponibles si vous avez sélectionné auparavant **Synchroniser tout le contenu**.* Voir aussi [Utilisation de la publication sélective au niveau du dossier dans Dynamic Media.](/help/assets/selective-publishing.md)
+Pour marquer un dossier sélectionné pour synchronisation vers Dynamic Media, sélectionnez un dossier de ressources, puis sur la barre d’outils, cliquez sur **[!UICONTROL Propriétés.]** Sous l’onglet **[!UICONTROL Détails]**, dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes. Lorsque vous avez terminé, appuyez sur **[!UICONTROL Enregistrer.]** *À retenir : ces trois options ne sont pas disponibles si vous avez sélectionné auparavant **Synchroniser tout le contenu**.* Voir aussi [Utilisation de la publication sélective au niveau du dossier dans Dynamic Media.](/help/assets/selective-publishing.md)
          * **[!UICONTROL Hérité]** : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.
          * **[!UICONTROL Activé pour les sous-dossiers]** : incluez tous les éléments de cette sous-arborescence dans la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
          * **[!UICONTROL Désactivé pour les sous-dossiers]** : excluez tous les éléments de cette sous-arborescence de la synchronisation avec Dynamic Media.
@@ -482,7 +482,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
 ### (Facultatif) Optimisation des performances du mode Scene7 de Dynamic Media  {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Pour que le mode Contenu multimédia dynamique - Scene7 fonctionne correctement, l’Adobe recommande les conseils de réglage précis des performances et de l’évolutivité de la synchronisation suivants :
+Pour que le mode Dynamic Media - Scene7 fonctionne correctement, l’Adobe recommande les conseils de réglage précis des performances et de l’évolutivité de la synchronisation suivants :
 
 * Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier.
 * Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo).
@@ -521,7 +521,7 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
-   Vous pouvez augmenter **[!UICONTROL le nombre maximal de tâches parallèles]** afin de prendre en charge un chargement important de fichiers dans Contenu multimédia dynamique. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un transfert en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
+   Vous pouvez augmenter **[!UICONTROL le nombre maximal de tâches parallèles]** afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un transfert en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -545,17 +545,17 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
-   Vous pouvez augmenter le nombre maximal de tâches parallèles afin de prendre en charge de manière adéquate le téléchargement intensif de fichiers dans Contenu multimédia dynamique. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un transfert en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
+   Vous pouvez augmenter le nombre maximal de tâches parallèles afin de prendre en charge de manière adéquate le téléchargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un transfert en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
 
-#### Mise à jour de la connexion de téléchargement de Dynamic Media Classic {#updating-the-scene-upload-connection}
+#### Mise à jour de la connexion de transfert Dynamic Media Classic {#updating-the-scene-upload-connection}
 
 Le paramètre de connexion de chargement vers Scene7 synchronise les ressources AEM avec les serveurs Dynamic Media Classic.
 
-**Pour mettre à jour la connexion de téléchargement de Dynamic Media Classic**
+**Pour mettre à jour la connexion de transfert Dynamic Media Classic**
 
 1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`.
 1. Dans le champ **[!UICONTROL Number of connections]** (Nombre de connexions) et/ou **[!UICONTROL Active job timeout]** (Délai d’expiration des tâches actives), modifiez le nombre en fonction de vos besoins.
@@ -572,15 +572,15 @@ Le paramètre de connexion de chargement vers Scene7 synchronise les ressources 
 
 ### (Facultatif) Filtrage des ressources en vue de la réplication {#optional-filtering-assets-for-replication}
 
-Dans les déploiements de médias non dynamiques, vous dupliquez *tous* les ressources (images et vidéos) de votre environnement d’auteur AEM au noeud de publication AEM. Ce processus est nécessaire car les serveurs de publication AEM diffusent également les ressources.
+Dans les déploiements non Dynamic Media, vous dupliquez *tous les* fichiers (images et vidéos) de votre environnement d’auteur AEM au noeud de publication AEM. Ce processus est nécessaire car les serveurs de publication AEM diffusent également les ressources.
 
-Cependant, dans les déploiements de Contenu multimédia dynamique, dans la mesure où les ressources sont distribuées par le biais du service cloud, il n’est pas nécessaire de répliquer ces mêmes ressources sur AEM noeuds de publication. Un tel processus de &quot;publication hybride&quot; permet d’éviter des coûts d’enregistrement supplémentaires et des délais de traitement plus longs pour la réplication des ressources. Les autres contenus, tels que les pages de site, continuent à être diffusés à partir des nœuds de publication AEM.
+Cependant, dans les déploiements Dynamic Media, dans la mesure où les ressources sont distribuées par le biais du service cloud, il n’est pas nécessaire de répliquer ces mêmes ressources sur AEM noeuds de publication. Un tel processus de &quot;publication hybride&quot; permet d’éviter des coûts d’enregistrement supplémentaires et des délais de traitement plus longs pour la réplication des ressources. Les autres contenus, tels que les pages de site, continuent à être diffusés à partir des nœuds de publication AEM.
 
 Les filtres vous permettent d’*empêcher* que les ressources ne soient répliquées vers le nœud de publication AEM.
 
 #### Utilisation des filtres de ressources par défaut pour la réplication {#using-default-asset-filters-for-replication}
 
-Si vous utilisez Contenu multimédia dynamique pour la création d’images et/ou la vidéo, vous pouvez utiliser les filtres par défaut que nous fournissons en l’état. Les filtres suivants sont activés par défaut :
+Si vous utilisez Dynamic Media pour l’imagerie et/ou la vidéo, vous pouvez utiliser les filtres par défaut que nous fournissons en l’état. Les filtres suivants sont activés par défaut :
 
 <table>
  <tbody>
@@ -591,7 +591,7 @@ Si vous utilisez Contenu multimédia dynamique pour la création d’images et/o
    <td><strong>Rendus</strong></td>
   </tr>
   <tr>
-   <td>Diffusion d’image de média dynamique</td>
+   <td>Dynamic Media Image Diffusion</td>
    <td><p>filter-images</p> <p>ensembles de filtres</p> <p> </p> </td>
    <td><p>Débuts avec <strong>image/</strong></p> <p>Contient <strong>application/</strong> et se termine par <strong>set</strong>.</p> </td>
    <td>Les "images-filtres" prêtes à l’emploi (s’appliquent aux fichiers d’images uniques, y compris aux images interactives) et les "visionneuses de filtres" (s’appliquent aux visionneuses à 360°, aux visionneuses d’images, aux visionneuses de supports variés et aux visionneuses de carrousel) :
@@ -600,7 +600,7 @@ Si vous utilisez Contenu multimédia dynamique pour la création d’images et/o
     </ul> </td>
   </tr>
   <tr>
-   <td>Diffusion vidéo de média dynamique</td>
+   <td>diffusion vidéo Dynamic Media</td>
    <td>filter-video</td>
    <td>Débuts avec <strong>video/</strong></td>
    <td>La "vidéo-filtre" prête à l'emploi permet de :
