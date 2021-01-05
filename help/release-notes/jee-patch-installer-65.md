@@ -7,8 +7,8 @@ discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 translation-type: tm+mt
 source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '480'
+ht-degree: 45%
 
 ---
 
@@ -82,7 +82,7 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 
 ## Modules touchés {#impacted-modules}
 
-* Services de documents
+* Services de document
 * Protection des documents
 * Foundation JEE
 
