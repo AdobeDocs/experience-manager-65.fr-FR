@@ -41,9 +41,9 @@ Pour télécharger des ressources à utiliser avec la visionneuse d’images pan
 
 ## Configuration de Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées propres à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
+Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées spécifiques à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
 
-1. [Connectez-vous à votre instance de Dynamic Media ](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) Classicfor pour chaque compte de société.
+1. [Connectez-vous à votre instance de Dynamic Media ](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) Classicic pour chaque compte de société.
 
 1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images.]**
 1. Sur la page Publication sur hébergeur d’images, dans le menu déroulant **[!UICONTROL Contexte de publication]** près de la partie supérieure, sélectionnez **[!UICONTROL Image Serving.]**
@@ -51,7 +51,7 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM
 1. Sur la même page Publication sur hébergeur d’images, localisez l’en-tête **[!UICONTROL Attributs de requête.]**
 1. Sous l’en-tête Attributs de requête, localisez **[!UICONTROL Limite de taille de l’image de réponse.]** Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
 
-   Contenu multimédia dynamique Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images de rapport 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
+   Dynamic Media Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images de rapport 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
 
    >[!NOTE]
    >
