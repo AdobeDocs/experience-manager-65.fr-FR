@@ -5,8 +5,8 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: e124025295f29d6f3999dc52467301d48bceee75
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 67%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
