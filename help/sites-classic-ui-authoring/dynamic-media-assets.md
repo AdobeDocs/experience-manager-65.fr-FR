@@ -28,5 +28,5 @@ L’utilisation de Dynamic Media n’est pas disponible dans l’IU classique. 
 
 >[!NOTE]
 >
->Si vous utilisez Contenu multimédia dynamique, vous ne pouvez pas utiliser simultanément les téléchargements automatiques disponibles si [l’intégration de Contenu multimédia dynamique dans AEM](/help/sites-administering/scene7.md). Voir [activation de Contenu multimédia dynamique](/help/assets/config-dynamic.md#enabling-dynamic-media). Par défaut, ce module complémentaire est désactivé.
+>Si vous utilisez Dynamic Media, vous ne pouvez pas utiliser simultanément les téléchargements automatiques disponibles si [intègre Dynamic Media Classic dans AEM](/help/sites-administering/scene7.md). Voir [activation de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Par défaut, ce module complémentaire est désactivé.
 
