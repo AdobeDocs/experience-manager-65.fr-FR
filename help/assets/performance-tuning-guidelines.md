@@ -164,7 +164,7 @@ Configurer une file d’attente à la moitié des processeurs disponibles est un
 
 ### Configuration des ressources de mise à jour de gestion des ressources numériques {#dam-update-asset-configuration}
 
-Le workflow [!UICONTROL DAM Update Asset] contient une suite complète d&#39;étapes qui sont configurées pour les tâches, telles que la génération de fichiers PTIFF de Contenu multimédia dynamique et l&#39;intégration de [!DNL Adobe InDesign Server]. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe vous recommande de créer une copie personnalisée du modèle de flux de travaux [!UICONTROL DAM Update Asset] et de supprimer toutes les étapes inutiles. Dans ce cas, mettez à jour les lanceurs pour [!UICONTROL DAM Update Asset] afin de pointer vers le nouveau modèle.
+Le workflow [!UICONTROL DAM Update Asset] contient une suite complète d&#39;étapes configurées pour les tâches, telles que la génération PTIFF Dynamic Media et l&#39;intégration [!DNL Adobe InDesign Server]. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe vous recommande de créer une copie personnalisée du modèle de flux de travaux [!UICONTROL DAM Update Asset] et de supprimer toutes les étapes inutiles. Dans ce cas, mettez à jour les lanceurs pour [!UICONTROL DAM Update Asset] afin de pointer vers le nouveau modèle.
 
 L&#39;exécution intensive du flux de travail [!UICONTROL DAM Update Asset] peut augmenter considérablement la taille de la banque de données de vos fichiers. Les résultats d’un test effectué par Adobe ont montré que la taille de l’entrepôt de données peut augmenter d’environ 400 Go si environ 5 500 workflows sont exécutés pendant une période de 8 heures.
 
@@ -180,7 +180,7 @@ Les clients utilisent des images de tailles et de formats différents sur leur s
 
 De nombreux clients de sites mettent en œuvre un servlet d’image qui redimensionne ou recadre les images lorsque cela est nécessaire, ce qui a pour effet d’appliquer une charge supplémentaire à l’instance de publication. Toutefois, tant que ces images peuvent être mises en cache, le défi peut être plus facilement relevé.
 
-Une autre approche consiste à utiliser la technologie Contenu multimédia dynamique pour masquer entièrement la manipulation d’images. En outre, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l&#39;infrastructure [!DNL Experience Manager], mais également l&#39;ensemble du niveau de publication.
+Une autre approche consiste à utiliser la technologie Dynamic Media pour redistribuer entièrement la manipulation d&#39;image. En outre, vous pouvez déployer le portail de marque qui prend en charge non seulement les responsabilités de génération de rendu de l&#39;infrastructure [!DNL Experience Manager], mais également l&#39;ensemble du niveau de publication.
 
 #### ImageMagick {#imagemagick}
 
@@ -252,7 +252,7 @@ Certaines optimisations peuvent être effectuées sur les configurations de l&#3
 1. Ouvrez CRXDe `/crx/de/index.jsp` et connectez-vous en tant qu’utilisateur administrateur.
 1. Accédez à `/oak:index/lucene`.
 1. Ajoutez une propriété `String[]` `excludedPaths` avec des valeurs `/var`, `/etc/workflow/instances` et `/etc/replication`.
-1. Accédez à `/oak:index/damAssetLucene`. Ajoutez une propriété `String[]` `includedPaths` avec la valeur `/content/dam`. Enregistrez les modifications.
+1. Accédez à `/oak:index/damAssetLucene`. Ajoutez une propriété `String[]` `includedPaths` avec la valeur `/content/dam`. Enregistrer les modifications.
 
 Si vos utilisateurs n’ont pas besoin de rechercher des ressources en texte intégral, par exemple, en recherchant du texte dans des documents PDF, désactivez-le. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l&#39;extraction de texte [!DNL Apache Lucene], procédez comme suit :
 
