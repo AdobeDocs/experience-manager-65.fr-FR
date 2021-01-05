@@ -160,7 +160,7 @@ L’application AEM Forms est une application PhoneGap 5.0 dans laquelle le mod�
 
 L’application AEM Forms est facile à personnaliser en fonction des besoins de l’entreprise. Le code source de l’application est fourni avec AEM Forms. Vous pouvez modifier le code source et concevoir votre propre solution mobile destinée au personnel de terrain. Vous pouvez également signer l’application avec votre propre clé d’entreprise.
 
-### Personnalisation  {#customize}
+### Personnalisation {#customize}
 
 Vous pouvez personnaliser votre application aux fins suivantes :
 
