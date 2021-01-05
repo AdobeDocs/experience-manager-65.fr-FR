@@ -215,7 +215,7 @@ Par exemple, pour supprimer tous les fichiers UGC dans ASRP :
 curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/usergenerated/asi/cloud -uadmin:admin
 ```
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### Requête solaire {#solr-query}
 
