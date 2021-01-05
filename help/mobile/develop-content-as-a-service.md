@@ -124,7 +124,7 @@ Les options suivantes sont prises en compte :
 
 ## Contenu indépendant du canal {#channel-independent-content}
 
-Le contenu indépendant du canal est un moyen d’exposer les éléments de contenu AEM (tels que les pages) sans se soucier de la disposition, des composants ou d’autres informations spécifiques au canal.
+Le contenu indépendant du canal est un moyen d&#39;exposer les éléments de contenu AEM (tels que les pages) sans se soucier de la disposition, des composants ou d&#39;autres informations spécifiques au canal.
 
 Ces entités de contenu sont générées à l’aide d’un modèle de contenu pour traduire les structures AEM en un format JSON. Les données JSON résultantes contiennent des informations sur les données du contenu, qui sont découplées du référentiel AEM. Cela inclut le renvoi de métadonnées et de liens de référence AEM aux ressources, ainsi que les relations entre les structures de contenu - y compris la hiérarchie des entités.
 
