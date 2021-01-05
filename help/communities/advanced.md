@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -130,7 +130,7 @@ Au lieu d&#39;associer des points à une image de badge, il suffit d&#39;identif
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th>Description de la valeur</th>
+   <th>Valeur Description</th>
   </tr>
   <tr>
    <td>badgingPath</td>
