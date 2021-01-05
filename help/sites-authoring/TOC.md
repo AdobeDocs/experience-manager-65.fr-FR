@@ -3,7 +3,7 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.5
+user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.5
 breadcrumb-title: Guide de création
 user-guide-description: Découvrez les principaux concepts de création de contenu dans AEM.
 translation-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 92%
 ---
 
 
-# Guide de l’utilisateur pour la création dans AEM 6.5  {#authoring}
+# Guide de l’utilisateur pour la création dans AEM 6.5  {#authoring}
 
 + [Présentation du guide de l’utilisateur de création](home.md)
 + Tâches, outils et concepts essentiels pour la création AEM {#essentials}
