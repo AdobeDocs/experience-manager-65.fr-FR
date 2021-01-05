@@ -1,6 +1,6 @@
 ---
-title: Applications sur une seule page
-seo-title: Applications sur une seule page
+title: des applications sur une seule page ;
+seo-title: des applications sur une seule page ;
 description: Suivez cette page pour en savoir plus sur les applications d’une seule page, c’est-à-dire que vous pouvez créer une application qui fonctionne de manière identique à une application de bureau ou mobile.
 seo-description: Suivez cette page pour en savoir plus sur les applications d’une seule page, c’est-à-dire que vous pouvez créer une application qui fonctionne de manière identique à une application de bureau ou mobile.
 uuid: d1865e79-6e7c-4149-95c0-556e61478b01
