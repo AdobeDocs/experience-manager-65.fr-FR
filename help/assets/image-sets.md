@@ -54,7 +54,7 @@ Pour démarrer rapidement :
    Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
-   >Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de ressources et sont disponibles uniquement en mode Contenu multimédia dynamique - Scene7.
+   >Les jeux de lots sont créés par le système IPS (Image Production System) dans le cadre de l’assimilation des ressources et ne sont disponibles qu’en mode Dynamic Media - Scene7.
 
    Voir [Préparation du chargement de ressources de visionneuse d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
 
@@ -176,7 +176,7 @@ Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou
 
 >[!IMPORTANT]
 >
->Les jeux de lots sont créés par le système IPS [Image Production System] dans le cadre de l’assimilation de ressources et ne sont disponibles qu’en mode Contenu multimédia dynamique - Scene7.)
+>Les jeux de lots sont créés par le système IPS [Image Production System] dans le cadre de l’assimilation des ressources et ne sont disponibles qu’en mode Dynamic Media - Scene7.)
 
 Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur. Vous pouvez afficher ces visionneuses de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses d’images dans l’interface utilisateur.)
 
