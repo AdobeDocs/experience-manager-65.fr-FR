@@ -10,8 +10,8 @@ content-type: reference
 translation-type: tm+mt
 source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Dynamic Media permet de charger, gérer, afficher et diffuser des ressources 3D 
 * Prise en charge optimisée de l’affichage de ressources 3D avec le paramètre prédéfini de visionneuse Dimensionnel de haute qualité et interactive, optimisée par Adobe Dimension.
 * Ajout aisé de ressources 3D à vos pages AEM Sites grâce au composant de gestion du contenu web Média 3D.
 
-Aucune configuration supplémentaire n’est requise pour utiliser des ressources 3D dans Contenu multimédia dynamique.
+Aucune configuration supplémentaire n’est nécessaire pour utiliser les ressources 3D dans Dynamic Media.
 
 ![chaussure en 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -45,13 +45,13 @@ Voir aussi [Formats 3D pris en charge.](/help/assets/assets-formats.md)
 
 ## Démarrage rapide : ressources 3D dans Dynamic Media {#quick-start-three-d}
 
-La description de flux de travaux détaillée suivante est conçue pour vous aider à maîtriser rapidement les opérations liées aux ressources 3D en mode Contenu multimédia dynamique - Scene7.
+La description de flux de travaux détaillée suivante est conçue pour vous aider à maîtriser rapidement les opérations liées aux ressources 3D en mode Dynamic Media - Scene7.
 
 >[!NOTE]
 >
->Les ressources 3D ne sont pas prises en charge en mode Contenu multimédia dynamique - hybride.
+>Les ressources 3D ne sont pas prises en charge en mode Dynamic Media - Hybrid.
 
-Avant d’utiliser des fichiers 3D dans Contenu multimédia dynamique, assurez-vous que votre administrateur AEM déjà activé et configuré les Cloud Services Contenu multimédia dynamique en mode Scene7 de Contenu multimédia dynamique.
+Avant de travailler avec des ressources 3D dans Dynamic Media, assurez-vous que votre administrateur AEM a déjà activé et configuré Dynamic Media Cloud Services en mode Dynamic Media - Scene7.
 
 Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media – mode Scene7 et [Dépannage de Dynamic Media – mode Scene7.](/help/assets/troubleshoot-dms7.md)
 
@@ -74,7 +74,7 @@ Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dms7.m
    * Utilisation des métadonnées des ressources 3D
 
       * [Gestion des métadonnées des ressources numériques](/help/assets/metadata.md).
-      * [Schémas de métadonnées](/help/assets/metadata-schemas.md).
+      * [Des schémas de métadonnées](/help/assets/metadata-schemas.md).
 
 
 
