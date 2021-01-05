@@ -176,7 +176,7 @@ Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
 ![generate-report](assets/generate-posts-report.png)
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### Aucun site communautaire n&#39;est répertorié {#no-community-sites-listed}
 
