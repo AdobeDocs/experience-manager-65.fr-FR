@@ -121,7 +121,7 @@ Le schéma d’architecture est une représentation graphique de l’architectur
 * de leurs principes ;
 * des éléments et des composants qui font partie de l’architecture.
 
-### Brouillon d’architecture {#architecture-draft}
+### Brouillon d’architecture  {#architecture-draft}
 
 Il fournit une vue de haut niveau du système et de l’architecture de la solution. À ce stade, il s’agit d’un brouillon qui sera révisé et affiné à un stade ultérieur.
 
@@ -332,7 +332,7 @@ Toutes les stratégies et/ou exigences du client concernant les rapports. Elles 
 * le format des rapports spécifiques ;
 * les besoins particuliers.
 
-### Feuille de route du client  {#customer-roadmap}
+### Feuille de route du client {#customer-roadmap}
 
 Établissez une feuille de route des principaux jalons à mettre en œuvre, aussi bien sur le plan technologique que métier. Cette feuille de route est ensuite communiquée au client.
 
