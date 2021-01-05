@@ -11,8 +11,8 @@ docset: aem65
 translation-type: tm+mt
 source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +71,7 @@ Le cas échéant, vous pouvez modifier une [visionneuse de médias mixtes](#edit
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes lors de la création de visionneuses, consultez la section [Résolution des problèmes liés au support dynamique - Mode Scene7](/help/assets/troubleshoot-dms7.md).
+>Si vous rencontrez des problèmes lors de la création de visionneuses, voir [Dépannage de Dynamic Media - Mode Scene7](/help/assets/troubleshoot-dms7.md).
 
 ## Téléchargement des ressources {#uploading-assets}
 
