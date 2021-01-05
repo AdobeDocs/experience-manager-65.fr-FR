@@ -107,7 +107,7 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
 
 Pour créer un composant en faisant glisser l’un des types de ressources ci-dessus, suivez ces étapes :
 
-1. Assurez-vous que votre page est en mode [**Édition**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
 1. Ouvrez l’[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Faites glisser la ressource jusqu’à la position requise. L’[espace réservé du composant](#componentplaceholder) indique où le composant va être positionné.
 
@@ -206,7 +206,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 Les [Annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages     {#previewing-pages}
+## Aperçu des pages  {#previewing-pages}
 
 Deux icônes disponibles dans la bordure inférieure du sidekick sont importantes pour afficher un aperçu des pages :
 
