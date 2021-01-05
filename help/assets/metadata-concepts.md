@@ -54,7 +54,7 @@ Les métadonnées techniques sont utiles pour les applications logicielles qui t
 * débit d’un fichier audio ou vidéo ;
 * résolution (niveau de détail) d’une image.
 
-Les métadonnées descriptives concernent le domaine d’application, par exemple l’entreprise d’où provient un fichier et ne peuvent pas être déterminées automatiquement. Elles sont créées manuellement ou semi-automatiquement. Par exemple, une caméra GPS peut automatiquement suivre la latitude et la longitude et ajouter un balisage géographique à l’image.
+Les métadonnées descriptives concernent le domaine d’application (par exemple, l’entreprise d’où provient une ressource) et ne peuvent pas être déterminées automatiquement. Elles sont créées manuellement ou semi-automatiquement. Par exemple, une caméra GPS peut automatiquement suivre la latitude et la longitude et ajouter un balisage géographique à l’image.
 
 La création manuelle d’informations descriptives de métadonnées coûte cher. Des normes ont donc été mises en place pour faciliter l’échange de métadonnées entre les systèmes logiciels et les organisations. [!DNL Experience Manager Assets] prend en charge l’ensemble des normes pertinentes pour la gestion des métadonnées.
 
@@ -116,7 +116,7 @@ Les schémas de métadonnées pris en charge sont répertoriés ci-dessous.
 
 Les métadonnées spécifiques à l’application englobent des métadonnées techniques et descriptives. Si vous utilisez ces types de métadonnées, il se peut que d’autres applications ne soient pas en mesure de les exploiter. Par exemple, il est possible qu’une autre application de rendu d’image ne puisse pas accéder aux métadonnées [!DNL Adobe Photoshop]. Vous pouvez créer une étape de workflow qui transforme une propriété spécifique à l’application en propriété standard.
 
-* ACDSee – métadonnées gérées par le programme. [!DNL ACDSee] Voir [www.acdsee.com/](https://www.acdsee.com/).
+* ACDSee – métadonnées gérées par le programme [!DNL ACDSee]. Voir [www.acdsee.com/](https://www.acdsee.com/).
 * Album – [!DNL Adobe Photoshop Album].
 * CQ – utilisées par [!DNL Experience Manager Assets].
 * DAM – utilisées par [!DNL Experience Manager Assets].
@@ -133,7 +133,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 * CC – [!DNL Creative Commons].
 * [!DNL XMPRights].
 * PLUS – [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM – [ Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata). ](https://www.idealliance.org/prism-metadata)
+* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.idealliance.org/prism-metadata).
 * PRL – PRISM Rights Language.
 * PUR – PRISM Usage Rights.
 * `xmpPlus` – intégration de PLUS avec XMP.
@@ -148,7 +148,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 ### Métadonnées spécifiques à l’impression {#print-specific-metadata}
 
 * PDF et PDF/X – Adobe PDF et applications tierces.
-* PRISM – [ Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata). ](https://www.idealliance.org/prism-metadata)
+* PRISM – [Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)](https://www.idealliance.org/prism-metadata).
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpPG` – Métadonnées XMP pour le texte paginé.
 
