@@ -419,7 +419,7 @@ Pour la ressource d&#39;activation sélectionnée, il est possible de :
 * Propriétés de la vue (par défaut)
 * Modification des propriétés
 * Supprimer
-* Publier
+* Publication
 * Annuler la publication
 
 Pour télécharger une nouvelle version de la ressource d&#39;activation, il est recommandé de créer une nouvelle ressource, puis d&#39;annuler l&#39;inscription des membres de l&#39;ancienne version et de les inscrire dans la nouvelle version.
