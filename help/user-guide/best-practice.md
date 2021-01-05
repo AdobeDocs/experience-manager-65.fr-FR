@@ -47,7 +47,7 @@ AEM peut être utilisé de plusieurs façons dans les organisations de service e
 * [Prise en main d’AEM Communities](/help/communities/getting-started.md)
 * [Prise en main d’AEM Livefyre](https://answers.livefyre.com/developers/getting-started/) 
 
-Nous avons également un nouveau [tutoriel WKND, qui est un guide détaillé de la création de votre premier site Web à l&#39;aide d&#39;AEM](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ainsi qu&#39;une [recette pas à pas pour déployer notre solution Digital Foundation](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), pour laquelle AEM est un élément clé.
+Nous avons également un nouveau [tutoriel WKND, qui est un guide détaillé de la création de votre premier site Web à l&#39;aide d&#39;AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ainsi qu&#39;une [recette pas à pas pour déployer notre solution Digital Foundation](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), pour laquelle AEM est un élément clé.
 
 ## Déploiements recommandés pour AEM {#deployments}
 
