@@ -1,6 +1,6 @@
 ---
 title: Résolution des problèmes liés à Dynamic Media - Mode Scene7
-description: Dépannage de Contenu multimédia dynamique lorsqu’il est exécuté en mode Scene7.
+description: Dépannage de Dynamic Media lorsqu’il s’exécute en mode Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
