@@ -218,7 +218,7 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th> Description de la valeur</th>
+   <th> Valeur Description</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -349,7 +349,7 @@ La propriété `scoringRules` d’une règle de badge limite simplement les règ
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th>Description de la valeur</th>
+   <th>Valeur Description</th>
   </tr>
   <tr>
    <td>seuils</td>
@@ -560,7 +560,7 @@ Pour un composant personnalisé, un SocialEvent est appelé pour enregistrer les
 
 Pour prendre en charge le score, SocialEvent doit remplacer la méthode `getVerb()` afin qu’un `verb` approprié soit renvoyé pour chaque `action`. L&#39;élément `verb` renvoyé pour une action peut être couramment utilisé (tel que `POST`) ou spécialisé pour le composant (tel que `ADD RATING`). Il existe une relation *n-1* entre `actions` et `verbs`.
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### Les badges n&#39;apparaissent pas {#badges-are-not-appearing}
 
