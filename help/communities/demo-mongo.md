@@ -176,7 +176,7 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
    ![ugc-solr](assets/ugc-solr.png)
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### Aucun UGC n&#39;apparaît {#no-ugc-appears}
 
