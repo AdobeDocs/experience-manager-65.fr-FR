@@ -5,13 +5,13 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
-source-wordcount: '3601'
-ht-degree: 60%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Schémas de métadonnées {#metadata-schemas}
+# Des schémas de métadonnées {#metadata-schemas}
 
 Les entreprises proposent un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. L’application correcte des métadonnées est indispensable à la gestion de workflows et de processus reposant sur les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs de la gestion des actifs numériques à s’aligner. [!DNL Adobe Experience Manager] permet des méthodes simples et flexibles pour créer, gérer et appliquer des schémas de métadonnées.
 
@@ -39,7 +39,7 @@ Pour vue d’une liste de formulaires ou de modèles, dans l’interface [!DNL E
 |---|---|---|
 | [!UICONTROL default] |  | Schéma de métadonnées de base pour les ressources. |
 |  | Les formulaires enfants suivants héritent des propriétés du formulaire [!UICONTROL default] : |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Schéma de formulaire pour les vidéos Contenu multimédia dynamique. |
+|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Schéma de formulaire pour les vidéos Dynamic Media. |
 |  | <ul><li>[!UICONTROL image]</li></ul> | Schéma de formulaire pour les images de type MIME telles que `image/jpeg` et `image/png`. <br> Le   formulaire d’image comporte les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg] : Schéma de formulaire pour les ressources avec un sous-type  [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff] : Formulaire de schéma pour les actifs avec un sous-type TIFF.</li></ul> |
 |  | <ul><li>[!UICONTROL l’application ;]</li></ul> | Schéma de formulaire pour les actifs de type MIME tels que `application/pdf` et `application/zip`. <br>[!UICONTROL pdf] : Schéma de formulaire pour les ressources avec un sous-type PDF. |
 |  | <ul><li>[!UICONTROL vidéo]</li></ul> | Schéma de formulaire pour les ressources vidéo de type MIME telles que `video/avi` et `video/mp4`. |
