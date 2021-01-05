@@ -30,7 +30,7 @@ Tenez compte des cas d’utilisation suivants lorsque vous souhaitez changer l�
 Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis les étapes suivantes.
 
 1. Copiez le fichier `userinfo.html` de `/libs/ws/js/runtime/templates` vers `/apps/ws/js/runtime/templates`.
-1. Remplacer :
+1. Modification:
 
    ```html
    <ul class="helpmenu">
