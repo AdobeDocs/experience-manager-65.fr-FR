@@ -60,7 +60,7 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 
 ## Fragments de contenu et Content Services     {#content-fragments-and-content-services}
 
-Les services de contenu AEM sont conçus pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web.
+AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 
 Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
 
