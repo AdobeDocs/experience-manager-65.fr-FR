@@ -4,8 +4,8 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 translation-type: tm+mt
 source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1063'
+ht-degree: 49%
 
 ---
 
@@ -45,7 +45,7 @@ Il s’agit d’une liste de fonctionnalités dont dispose l’administrateur cl
 | Fonctionnalité | État | Commentaire |
 |--- |--- |--- |
 | Navigation dans l’arborescence du site | Terminer | aem 6.4 a introduit une vue d&#39;arborescence de contenu [](/help/sites-authoring/basic-handling.md#content-tree). |
-| Démarrer le worfklow | Terminer |  |
+| Démarrer le processus | Terminer |  |
 | Créer une page | Complète |  |
 | Créer un site | Complète |  |
 | Créer un lancement | Complète |  |
