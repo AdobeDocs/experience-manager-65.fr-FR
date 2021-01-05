@@ -164,7 +164,7 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
    <td>Pris en charge <sup>[2]</sup></td>
   </tr>
   <tr>
-   <td>Services de documents</td>
+   <td>Services de document</td>
    <td>Pris en charge <sup>[3]</sup></td>
    <td>Pris en charge <sup>[3]</sup></td>
   </tr>
