@@ -4,8 +4,8 @@ description: Notes de mise à jour de la plateforme et du référentiel Adobe Ex
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '541'
+ht-degree: 57%
 
 ---
 
