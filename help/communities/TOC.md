@@ -2,8 +2,8 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur d’AEM 6.5 Communities
-breadcrumb-title: Guide Communities
+user-guide-title: Guide de l’utilisateur d’AEM 6.5 Communities
+breadcrumb-title: Guide de Communities
 user-guide-description: Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
 translation-type: tm+mt
 source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
@@ -16,7 +16,7 @@ ht-degree: 30%
 
 # Guide des communautés de Adobe Experience Manager 6.5 {#communities}
 
-+ [Guide Communities](home.md)
++ [Guide de Communities](home.md)
 + Introduction à l&#39;AEM Communities {#introduction}
    + [Sites des communautés](administer-landing.md)
    + [Présentation d’AEM Communities](overview.md)
