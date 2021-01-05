@@ -44,7 +44,7 @@ La modération de l’UGC est utile pour reconnaître les contributions positive
 
 * [Modération en contexte](in-context.md)
 
-   La modération dans l’environnement de publication peut être effectuée par les administrateurs et les modérateurs de la communauté directement sur la page où le contenu a été publié.
+   La modération dans l’environnement de publication peut être effectuée par les administrateurs et les modérateurs de la communauté directement sur la page sur laquelle le contenu a été publié.
 
 ## Actions de modération {#moderation-actions}
 
