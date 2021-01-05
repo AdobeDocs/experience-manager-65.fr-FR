@@ -199,8 +199,8 @@ Si vous choisissez de ne pas utiliser l’option **[!UICONTROL Coder pour la dif
 
 En fonction du mode que vous exécutez, les codecs de format vidéo pris en charge sont les suivants :
 
-* Mode Contenu multimédia dynamique-Scene7 : H.264 (.mp4)
-* Mode Contenu multimédia dynamique hybride : H.264 (.mp4), WebM
+* Mode Dynamic Media-Scene7 : H.264 (.mp4)
+* Mode Dynamic Media-hybride : H.264 (.mp4), WebM
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu adaptative](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
