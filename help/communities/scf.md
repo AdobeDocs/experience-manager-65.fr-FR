@@ -221,7 +221,7 @@ Les informations essentielles pour les développeurs sont décrites dans la sect
 
 Vous trouverez des informations supplémentaires sur les développeurs dans la section [Lignes directrices sur le codage](code-guide.md).
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 Les problèmes courants et les problèmes connus sont décrits dans la section [Dépannage](troubleshooting.md).
 
