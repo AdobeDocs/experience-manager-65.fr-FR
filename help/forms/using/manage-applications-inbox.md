@@ -123,7 +123,7 @@ L&#39;onglet **[!UICONTROL Détails du workflow]** affiche chaque étape du work
 
 ![tâche terminée-workflow](assets/completed-task-workflow.png)
 
-## Dépannage {#troubleshooting-workflows}
+## Résolution des incidents {#troubleshooting-workflows}
 
 ### Impossible de vue des éléments liés à AEM Workflow dans AEM boîte de réception {#unable-to-see-aem-worklow-items}
 
