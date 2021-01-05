@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur AEM 6.5 Mobile
+user-guide-title: Guide de l’utilisateur AEM 6.5 Mobile
 breadcrumb-title: Guide mobile
 user-guide-description: Créez et gérez du contenu pour les applications mobiles.
 translation-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 30%
 ---
 
 
-# Guide de l’utilisateur AEM 6.5 Mobile  {#mobile}
+# Guide de l’utilisateur AEM 6.5 Mobile  {#mobile}
 
 + [Guide de l’utilisateur mobile](home.md)
 + Introduction à l&#39;AEM Mobile {#introduction}
@@ -81,7 +81,7 @@ ht-degree: 30%
    + [Ajouter Adobe Analytics à votre application mobile](phonegap-add-analytics-to-apps.md)
    + [Modèles de page pour les applications mobiles](phonegap-apps-arch-page-templates.md)
    + [Configuration de l’Cloud Service Adobe Target](aem-mobile-configuring-cloud-service.md)
-   + [Applications sur une seule page](phonegap-single-page-applications.md)
+   + [des applications sur une seule page ;](phonegap-single-page-applications.md)
    + [Modèles dans le référentiel](administer-mobile-apps.md)
    + [Démarrage AEM PhoneGap](starting-aem-phonegap-app.md)
    + [Test des applications mobiles](develop-mobile-apps-testing.md)
