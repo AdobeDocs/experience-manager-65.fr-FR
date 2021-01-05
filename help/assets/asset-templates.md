@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
 source-wordcount: '1544'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
