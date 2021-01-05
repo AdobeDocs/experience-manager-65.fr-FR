@@ -13,9 +13,9 @@ ht-degree: 16%
 
 # liste des fonctionnalités Expériences AEM fluides{#aem-fluid-experiences-feature-list}
 
-Adobe Experience Manager Fluid Experiences s&#39;appuie sur les puissantes fonctionnalités d&#39;AEM Sites, AEM Dynamic Media et AEM Assets pour fournir une solution robuste à la diffusion de contenu sans en-tête.
+Adobe Experience Manager Fluid Experiences s’appuie sur les puissantes fonctionnalités d’AEM Sites, d’AEM Dynamic Media et d’AEM Assets pour fournir une solution robuste à la diffusion de contenu sans affichage.
 
-aem Fluid Experiences se distingue des AEM classiques en ce que seul le cas d&#39;utilisation de diffusions sans tête est traité. La création et la diffusion de contenu en cascade et la prise en charge AEM des cas d&#39;utilisation hybride sont disponibles avec les [solutions AEM Sites complètes, Ressources et Contenu multimédia dynamique.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+aem Fluid Experiences se distingue des AEM classiques en ce que seul le cas d&#39;utilisation de diffusions sans tête est traité. La création et la diffusion de contenu en cascade ainsi que la prise en charge AEM des cas d&#39;utilisation hybride sont disponibles avec les solutions [AEM Sites, Assets et Dynamic Media complètes.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/user-guide/home.html)
 
 Les tableaux ci-dessous définissent les fonctionnalités des AEM Expériences fluides et établissent un lien vers la documentation d&#39;assistance pertinente.
 
@@ -66,7 +66,7 @@ Les tableaux ci-dessous définissent les fonctionnalités des AEM Expériences f
 | [Traduction du contenu](/help/sites-administering/translation.md) |
 | [Surveillance](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Sauvegarde](/help/sites-administering/backup-and-restore.md) |
-| [Gestionnaire de cloud](https://docs.adobe.com/content/help/fr/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Gestionnaire de cloud](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
 | [Intégration PIM](/help/sites-authoring/managing-product-information.md) |
 | [Projets et tâches](/help/sites-authoring/projects.md) |
 | [Workflows](/help/sites-administering/workflows-starting.md) |
