@@ -45,7 +45,7 @@ Adobe vous recommande d’utiliser [!DNL Adobe InDesign Server] pour extraire de
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] génère et diffuse plusieurs variations de contenu riche en temps réel via son réseau mondial, extensible et optimisé pour garantir de bonnes performances. Il diffuse des expériences d’affichage interactif et simplifie le processus de gestion des campagnes numériques. Pour plus d’informations sur l’activation de [!DNL Dynamic Media], voir [Configuration de médias dynamiques](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] génère et diffuse plusieurs variations de contenu riche en temps réel via son réseau mondial, extensible et optimisé pour garantir de bonnes performances. Il diffuse des expériences d’affichage interactif et simplifie le processus de gestion des campagnes numériques. Pour plus d’informations sur l’activation de [!DNL Dynamic Media], voir [Configuration de Dynamic Media](/help/assets/config-dynamic.md).
 
 Actuellement, [!DNL Dynamic Media] peut prendre en charge les vidéos jusqu’à 15 Go de contenu par fichier.
 
