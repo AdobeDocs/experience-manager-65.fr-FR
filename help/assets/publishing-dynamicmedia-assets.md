@@ -18,9 +18,9 @@ ht-degree: 88%
 
 # Publication de ressources Dynamic Media  {#publishing-dynamic-media-assets}
 
-Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide.]** Une fois vos fichiers Contenu multimédia dynamique publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant le code sur la page.
+Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide.]** Une fois vos fichiers Dynamic Media publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant le code sur la page.
 
-Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Voir [Configuration de Contenu multimédia dynamique - Mode Scene7.](config-dms7.md)
+Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Voir [Configuration du mode Dynamic Media - Scene7.](config-dms7.md)
 Vous pouvez également publier des ressources de manière sélective sur Dynamic Media exclusivement ou sur AEM exclusivement, à l’aide d’une **[!UICONTROL Publication sélective]** au niveau des dossiers. Voir [Utilisation de la publication sélective dans Dynamic Media.](/help/assets/selective-publishing.md)
 
 En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource et à gauche de la date et de l’heure pour indiquer qu’elle est publiée. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
@@ -33,7 +33,7 @@ Si vous envisagez de publier des ressources vidéo immédiatement après les avo
 
 Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-Voir aussi [Incorporation de la visionneuse de vidéos ou d’images de contenu multimédia dynamique sur une page Web](embed-code.md)
+Voir aussi [Incorporation de la visionneuse de vidéos ou d’images Dynamic Media sur une page Web](embed-code.md)
 
 >[!NOTE]
 >
