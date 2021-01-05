@@ -87,7 +87,7 @@ Les composants, fonctions et fonctionnalités AEM Communities constituent les é
 * [Didacticiels côté serveur](tutorials.md#server-side-customization)
 * [Instructions pratiques](tutorials.md#how-to-instructions)
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 * [Résolution des incidents](troubleshooting.md)
 * [Problèmes connus](/help/release-notes/known-issues.md)
