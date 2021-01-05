@@ -1,8 +1,8 @@
 ---
 title: Compréhension de la segmentation
 seo-title: Compréhension de la segmentation
-description: La segmentation est un élément clé lors de la création d’une campagne.
-seo-description: La segmentation est un élément clé lors de la création d’une campagne.
+description: La segmentation est un élément clé de la création d’une campagne
+seo-description: La segmentation est un élément clé de la création d’une campagne
 uuid: 900da068-5dda-4b6b-8be3-4b7ad614126d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,7 +20,7 @@ ht-degree: 68%
 
 # Compréhension de la segmentation{#understanding-segmentation}
 
-La segmentation est un élément clé lors de la création d’une campagne. Dans la plupart des cas, vous devez avoir des segments déjà définis avant de démarrer votre campagne.
+La segmentation est un élément clé de la création d’une campagne. Dans la plupart des cas, vous devez avoir des segments déjà définis avant de démarrer votre campagne.
 
 Les visiteurs de site se rendent sur un site en fonction d’intérêts et d’objectifs divers. Le fait de comprendre ces objectifs et de satisfaire à ces attentes est un important facteur de réussite en matière de marketing en ligne.
 
