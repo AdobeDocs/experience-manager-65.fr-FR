@@ -10,8 +10,8 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 translation-type: tm+mt
 source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +49,7 @@ Voir également [Configuration de Dynamic Media](administering-dynamic-media.md
 
 >[!NOTE]
 >
->Pour comprendre les différences entre l’utilisation de Contenu multimédia dynamique et l’intégration de Contenu multimédia dynamique classique à l’AEM, voir [Intégration de Contenu multimédia dynamique classique par rapport à Contenu multimédia dynamique](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Pour comprendre les différences entre l’utilisation de Dynamic Media et l’intégration de Dynamic Media Classic à l’AEM, voir [Intégration de Dynamic Media Classic par rapport à Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Dynamic Media activé ou Dynamic Media désactivé {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -59,7 +59,7 @@ Les caractéristiques suivantes permettent de déterminer si Dynamic Media est 
 * Des visionneuses d’images, à 360° et de supports variés sont disponibles.
 * Des rendus PTIFF sont créés.
 
-Lorsque vous cliquez sur un fichier d’image, la vue du fichier est différente avec Contenu multimédia dynamique [activé](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilise les visionneuses HTML5 à la demande.
+Lorsque vous cliquez sur un fichier d’image, la vue du fichier est différente avec Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilise les visionneuses HTML5 à la demande.
 
 ### Rendus dynamiques {#dynamic-renditions}
 
