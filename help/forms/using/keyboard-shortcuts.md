@@ -123,7 +123,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
   </tr>
   <tr>
    <td><p>Sélectionner tout le texte dans l’éditeur de texte</p> </td> 
-   <td><p>Ctrl+A</p> </td> 
+   <td><p>Ctrl + A</p> </td> 
    <td>Commande + A</td> 
   </tr>
   <tr>
