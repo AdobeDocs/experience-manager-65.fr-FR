@@ -64,7 +64,7 @@ Pour plus d’informations sur *les utilisateurs*, *les profils utilisateur* et 
 * [Synchronisation des utilisateurs](sync.md)
 * [Gestion des utilisateurs et des groupes d’utilisateurs](users.md)
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### UGC invisible dans le JCR {#ugc-not-visible-in-jcr}
 
