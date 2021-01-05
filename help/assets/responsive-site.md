@@ -40,7 +40,7 @@ Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebappl
    >
    >La ressource sélectionnée *et* le paramètre d’image prédéfini ou le paramètre de visionneuse prédéfini sélectionné doivent être publiés pour que le bouton **[!UICONTROL URL]** ou **[!UICONTROL RESS]** soit disponible.
    >
-   >Contenu multimédia dynamique - Le mode hybride nécessite la publication de paramètres d’image prédéfinis ; Contenu multimédia dynamique : le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
+   >Dynamic Media - Le mode hybride nécessite la publication des paramètres d’image prédéfinis ; Dynamic Media - Le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
 
 1. Appuyez sur **[!UICONTROL RESS]**.
 
