@@ -103,7 +103,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-1. Dans la console [!DNL Assets], sélectionnez un dossier et créez une tâche de révision sur le dossier. 
+1. Dans la console [!DNL Assets], sélectionnez un dossier et créez une tâche de révision sur le dossier.
 1. Recherchez et approuvez/rejetez les ressources dans la tâche de révision, puis cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas du mode Carte. En mode Liste, les états d’approbation et d’expiration sont affichés dans les colonnes correspondantes.
 
@@ -127,7 +127,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## Gestion des droits numériques dans AEM [!DNL Assets] {#digital-rights-management-in-assets-1}
+## Gestion des droits numériques dans [!DNL Assets] {#digital-rights-management-in-assets-1}
 
 Cette fonction force l’acceptation du contrat de licence avant le téléchargement d’une ressource sous licence à partir d’[!DNL Adobe Experience Manager Assets].
 
