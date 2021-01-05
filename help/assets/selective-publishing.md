@@ -23,7 +23,7 @@ Par exemple, avec la publication sélective, vous pouvez travailler sur des ress
 
 >[!IMPORTANT]
 >
->La fonction Publication sélective est disponible uniquement en mode Contenu multimédia dynamique - Scene7.
+>La publication sélective est disponible uniquement en mode Dynamic Media - Scene7.
 
 >[!NOTE]
 >
@@ -81,13 +81,13 @@ Reportez-vous à [Création d’une configuration de Dynamic Media](#configuring
 
 >[!IMPORTANT]
 >
->La fonction Publication sélective est disponible uniquement en mode Contenu multimédia dynamique - Scene7.
+>La publication sélective est disponible uniquement en mode Dynamic Media - Scene7.
 
 >[!NOTE]
 >
 >La *copie* de ressources vers et depuis des dossiers efface l’état de publication de ces ressources. Cependant, lorsque vous *déplacez* des ressources vers et depuis des dossiers dont la propriété de dossier est définie sur **[!UICONTROL Publication sélective]**, l’état de publication de ces ressources est conservé.
 
-**Pour publier de manière sélective des fichiers dans un média dynamique ou AEM à l’aide de la commande Gérer la publication**
+**Pour publier des fichiers de manière sélective vers Dynamic Media ou AEM à l’aide de la commande Gérer la publication**
 
 1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers]**.
 1. En **[!UICONTROL Mode Carte]**, **[!UICONTROL Mode Colonnes]** ou **[!UICONTROL Mode Liste]**, effectuez l’une des opérations suivantes :
