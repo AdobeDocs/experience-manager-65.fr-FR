@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -150,7 +150,7 @@ Vous devez publier les activités afin de les rendre disponibles. À l’inverse
 
 >[!NOTE]
 >
->Lorsque vous annulez la publication d’une activité,   l’état de l’activité ne change que si vous actualisez la page.
+>Lors de l’annulation de la publication d’une activité, l’état de l’activité ne change pas, sauf si vous actualisez la page.
 
 Pour publier des activités ou annuler leur publication :
 
