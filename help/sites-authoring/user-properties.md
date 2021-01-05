@@ -1,8 +1,8 @@
 ---
-title: 'Configuration de votre environnement de compte  '
-seo-title: 'Configuration de votre environnement de compte  '
-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création
-seo-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création
+title: Configuration de votre environnement de compte
+seo-title: Configuration de votre environnement de compte
+description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
+seo-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -19,7 +19,7 @@ ht-degree: 99%
 ---
 
 
-# Configuration de votre environnement de compte  {#configuring-your-account-environment}
+# Configuration de votre environnement de compte{#configuring-your-account-environment}
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
@@ -80,7 +80,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
    Cette opération définit la couleur par défaut utilisée pour les annotations.
 
    * Cliquez sur le bloc de couleurs pour ouvrir le sélecteur d’échantillon afin de choisir une couleur.
-   * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ. 
+   * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
 
