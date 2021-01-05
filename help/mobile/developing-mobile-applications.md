@@ -82,7 +82,7 @@ Les développeurs IOS doivent être informés d&#39;un problème ouvert concerna
 * [Création d’applications mobiles](/help/mobile/building-app-mobile-phonegap.md)
 * [Structure d’une application](/help/mobile/phonegap-structure-an-app.md)
 * [Création et modification d’applications à l’aide de la console d’applications](/help/mobile/phonegap-apps-console.md)
-* [Applications sur une seule page](/help/mobile/phonegap-single-page-applications.md)
+* [des applications sur une seule page ;](/help/mobile/phonegap-single-page-applications.md)
 * [Développement d&#39;applications avec l&#39;interface de ligne de commande PhoneGap](/help/mobile/phonegap-apps-pg-cli.md)
 * [Accéder aux fonctionnalités du périphérique](/help/mobile/phonegap-access-device-features.md)
 * [Suivi des performances des applications avec les analyses mobiles Adobe](/help/mobile/phonegap-intro-to-app-analytics.md)
