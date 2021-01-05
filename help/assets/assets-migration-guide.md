@@ -79,7 +79,7 @@ Comme il n’est pas nécessaire que les ressources soient transmises sur un ré
 
 ### Traitement des rendus {#processing-renditions}
 
-Après avoir chargé les ressources dans le système, vous devez les traiter via le processus [!UICONTROL DAM Update Asset] pour extraire les métadonnées et générer des rendus. Avant d&#39;exécuter cette étape, vous devez duplicata et modifier le flux de travaux [!UICONTROL DAM Update Asset] en fonction de vos besoins. Le processus prêt à l’emploi contient de nombreuses étapes qui peuvent ne pas être nécessaires pour vous, telles que la génération de contenu PTIFF de contenu multimédia dynamique ou l’intégration [!DNL InDesign Server].
+Après avoir chargé les ressources dans le système, vous devez les traiter via le processus [!UICONTROL DAM Update Asset] pour extraire les métadonnées et générer des rendus. Avant d&#39;exécuter cette étape, vous devez duplicata et modifier le flux de travaux [!UICONTROL DAM Update Asset] en fonction de vos besoins. Le processus prêt à l’emploi contient de nombreuses étapes qui peuvent ne pas être nécessaires pour vous, telles que la génération Dynamic Media PTIFF ou l’intégration [!DNL InDesign Server].
 
 Après avoir configuré le workflow en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
