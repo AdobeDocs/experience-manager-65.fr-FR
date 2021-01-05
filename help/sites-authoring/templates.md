@@ -315,7 +315,7 @@ Les aspects suivants d’un modèle peuvent être modifiés :
    >
    >En mode **Contenu initial** (et dans les pages créées), les composants déverrouillés qui possèdent un parent accessible (c’est-à-dire, les composants dans un conteneur de mises en page) peuvent être supprimés.
 
-* [Disposition](#editingatemplatelayout)
+* [Mise en page](#editingatemplatelayout)
 
    Vous pouvez prédéfinir la mise en page du modèle pour les formats de dispositif de votre choix. Le mode **Disposition** pour la création de modèles comporte la même fonctionnalité que le mode [**Disposition** pour la création de pages](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
