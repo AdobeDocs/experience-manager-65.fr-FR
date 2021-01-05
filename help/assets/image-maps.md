@@ -45,4 +45,4 @@ Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fon
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Si l’option Contenu multimédia dynamique est activée, accédez à l’éditeur de fichiers et cliquez sur **[!UICONTROL Mapper]** pour vue toutes les zones cliquables appliquées.
+   Si l’option Dynamic Media est activée, accédez à l’éditeur de fichiers et cliquez sur **[!UICONTROL Mapper]** pour vue toutes les zones cliquables appliquées.
