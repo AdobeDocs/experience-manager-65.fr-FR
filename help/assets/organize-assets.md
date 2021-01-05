@@ -5,8 +5,8 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -71,5 +71,5 @@ La normalisation de l’utilisation des métadonnées, du nommage de fichiers et
 >* [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md).
 >* [Profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles).
 >* [Profils vidéo](video-profiles.md).
->* [Profils](image-profiles.md) d’image Contenu multimédia dynamique.
+>* [profils](image-profiles.md) d&#39;image Dynamic Media.
 
