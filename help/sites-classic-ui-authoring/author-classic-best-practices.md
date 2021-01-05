@@ -38,7 +38,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 ## Ressources {#assets}
 
-Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Contenu multimédia dynamique et l’intégration de Contenu multimédia dynamique classique, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
 
 <table>
  <tbody>
@@ -55,7 +55,7 @@ Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Cont
   <tr>
    <td>Imagerie dynamique</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Meilleures pratiques en matière d’imagerie dynamique </a></td>
-   <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure façon d’optimiser la qualité de vos images si vous utilisez la fonctionnalité Contenu multimédia dynamique ou si vous effectuez une intégration avec Contenu multimédia dynamique classique. </p> </td>
+   <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure façon d’optimiser la qualité de vos images si vous utilisez la fonctionnalité Dynamic Media ou si vous effectuez une intégration avec Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Ressources multilingues</td>
