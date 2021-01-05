@@ -959,7 +959,7 @@ Ce composant est nécessaire pour définir le début d’un nouveau formulaire s
 
       Page à référencer pour remercier les visiteurs pour leur message. Si ce champ est vide, le formulaire s’affiche de nouveau après l’envoi.
 
-   * **Démarrer le workflow**
+   * **Démarrer le processus**
 
       Détermine quel processus est déclenché une fois le formulaire envoyé.
 
