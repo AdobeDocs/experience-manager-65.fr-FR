@@ -187,7 +187,7 @@ Le **journal d’audit** est accessible depuis l’onglet **Informations** du si
 
 La console de site Web [fournit également des informations sur l&#39;état actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), telles que la publication, la modification, le verrouillage, la livecopy, etc.
 
-## Modes de page     {#page-modes}
+## Modes de page  {#page-modes}
 
 Lors de la modification d’une page dans l’IU classique, plusieurs modes sont accessibles à l’aide des icônes au bas du sidekick :
 
