@@ -21,17 +21,17 @@ ht-degree: 24%
 
 L&#39;installation de Feature Pack 18912 est *optionnelle*.
 
-Feature Pack 18912 vous permet soit d’assimiler des fichiers en masse directement dans le mode Contenu multimédia dynamique - Scene7 sur AEM par FTP, soit de migrer des fichiers de Contenu multimédia dynamique vers le mode Contenu multimédia dynamique sur AEM. Le Feature Pack est disponible à partir de [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
+Feature Pack 18912 vous permet soit d’assimiler des ressources en vrac directement en mode Dynamic Media - Scene7 sur AEM par FTP, soit de migrer des ressources de Dynamic Media Classic vers le mode Dynamic Media sur AEM. Le Feature Pack est disponible à partir de [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
 
 >[!NOTE]
 >
->Bien qu’il soit possible d’utiliser le pack de fonctionnalités pour migrer en masse des fichiers vous-même de Contenu multimédia dynamique vers Contenu multimédia dynamique - Scene 7 en mode AEM ou migrer en masse des fichiers à l’aide de la fonction FTP de Contenu multimédia dynamique classique, Adobe ne recommande *pas* cette méthode en raison de la complexité impliquée.
+>Bien qu’il soit possible d’utiliser Feature Pack pour migrer en masse des fichiers vous-même de Dynamic Media Classic vers Dynamic Media - Scene 7 en mode AEM ou migrer en masse des fichiers à l’aide de la fonctionnalité FTP de Dynamic Media Classic, l’Adobe ne recommande *pas* cette méthode en raison de la complexité impliquée.
 >
 >Par conséquent, les packs de fonctionnalités de migration, tels que celui-ci, sont *uniquement* pris en charge dans le cadre d’un projet de migration lorsqu’ils sont exécutés via [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
 
 Avant d’installer Feature Pack, vous devez d’abord créer un utilisateur de service et fournir ces informations à l’assistance Adobe.
 
-Voir aussi [Configuration de Contenu multimédia dynamique - Mode Scene7](/help/assets/config-dms7.md).
+Voir aussi [Configuration du mode Dynamic Media - Scene7](/help/assets/config-dms7.md).
 
 **Pour installer Feature Pack 18912 pour la migration des ressources en vrac**
 
