@@ -219,7 +219,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 Pour configurer MSRP pour un environnement de démonstration ou de développement, voir [Comment configurer MongoDB pour la démonstration](demo-mongo.md).
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### UGC invisible dans MongoDB {#ugc-not-visible-in-mongodb}
 
