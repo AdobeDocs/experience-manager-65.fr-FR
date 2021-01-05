@@ -147,7 +147,7 @@ Chaque option du panneau latéral Outils comporte une plage de sous-menus. Les [
 
 L’en-tête est toujours affiché en haut de l’écran. La plupart des options de l’en-tête restent les mêmes où que vous soyez dans le système. Cependant, certaines d’entre elles dépendent du contexte.
 
-![bh-05](assets/bh-03.png)
+![bh-03](assets/bh-03.png)
 
 * [Navigation globale](#navigatingconsolesandtools)
 
