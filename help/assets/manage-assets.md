@@ -161,7 +161,7 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
 >[!NOTE]
 >
->Pour télécharger des fichiers par FTP en mode Scene7 - Contenu multimédia dynamique, installez Feature Pack 18912 sur les instances d’auteur [!DNL Experience Manager]. Contactez le service à la clientèle [Adobe ](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Pour plus d’informations, voir [Installer Feature Pack 18912 pour la migration des ressources en vrac](/help/assets/bulk-ingest-migrate.md).
+>Pour télécharger des fichiers via FTP en mode Dynamic Media - Scene7, installez Feature Pack 18912 sur les instances d’auteur [!DNL Experience Manager]. Contactez le service à la clientèle [Adobe ](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Pour plus d’informations, voir [Installer Feature Pack 18912 pour la migration des ressources en vrac](/help/assets/bulk-ingest-migrate.md).
 >
 >Si vous utilisez FTP pour télécharger des fichiers, les paramètres de transfert spécifiés dans [!DNL Experience Manager] sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
@@ -369,7 +369,7 @@ Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme su
 
 >[!MORELIKETHIS]
 >
->* [Prévisualisation des ressources](/help/assets/previewing-assets.md) de médias dynamiques.
+>* [Prévisualisation Dynamic Media Assets](/help/assets/previewing-assets.md).
 >* [Affichage des sous-ressources](managing-linked-subassets.md#viewing-subassets).
 
 
@@ -644,7 +644,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche une fois que [!DNL Experience Manager] vous a authentifié.
 
-## Recherche de ressources   {#assetsearch}
+## Recherche de ressources  {#assetsearch}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
@@ -722,7 +722,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 >[!NOTE]
 >
->Dans la [console Collections](/help/assets/manage-collections.md#navigating-the-collections-console), la liste **[!UICONTROL Tout afficher]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la frise chronologique ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
+>Dans la [console Collections](/help/assets/manage-collections.md#navigating-the-collections-console), la liste **[!UICONTROL Afficher tout]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
 
 >[!NOTE]
 >
@@ -742,7 +742,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Cliquez sur l&#39;option **[!UICONTROL Annoter]** dans l&#39;une des options suivantes :
 
    * [Actions rapides](/help/assets/manage-assets.md#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource   ou avoir accédé à la page de la ressource.
+   * Dans la barre d’outils, après avoir sélectionné la ressource ou avoir accédé à la page de la ressource.
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
@@ -786,7 +786,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Pour afficher les annotations enregistrées pour une ressource, accédez à l’emplacement de la ressource et ouvrez la page de la ressource.
 
 1. Dans l’interface du Experience Manager, choisissez **[!UICONTROL Chronologie]**.
-1. Dans la liste **[!UICONTROL Tout afficher]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
+1. Dans la liste **[!UICONTROL Afficher tout]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
 
    Dans le panneau **[!UICONTROL Frise chronologique]**, cliquez sur un commentaire pour afficher l’annotation correspondate sur l’image.
 
