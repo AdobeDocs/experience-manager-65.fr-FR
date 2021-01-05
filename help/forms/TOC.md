@@ -4,7 +4,7 @@ product: adobe experience manager
 sub-product: formulaires
 solution: Experience Manager, Experience Manager Forms
 audience: end-user
-user-guide-title: Guide de Forms Adobe Experience Manager 6.5
+user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 translation-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 70%
 
 ---
 
-# Guide de Forms Adobe Experience Manager 6.5  {#forms}
+# Guide de Forms Adobe Experience Manager 6.5  {#forms}
 
 + [Guide de Forms AEM 6.5](home.md)
 + Notes de mise à jour {#release-notes-new-features}
@@ -356,7 +356,7 @@ ht-degree: 70%
    + [Création d’une page de portail de formulaires](using/creating-form-portal-page.md)
    + [API pour travailler avec des formulaires envoyés sur le portail de formulaires](using/report-submitted-data-forms.md)
    + [Stockage personnalisé pour les composants Drafts et Submissions](using/adding-custom-storage-provider-forms.md)
-+ Services de documents {#use-document-services}
++ Services de document {#use-document-services}
    + [Présentation d’AEM Document Services](using/overview-aem-document-services.md)
    + [Service Forms](using/forms-service.md)
    + [Service Output](using/output-service.md)
