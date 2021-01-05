@@ -28,7 +28,7 @@ ht-degree: 40%
 
 ## Cloud Manager pour AEM {#cloud-manager-for-aem}
 
-[Découvrez comment utiliser Cloud Manager avec AEM.](https://docs.adobe.com/content/help/fr/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+[Découvrez comment utiliser Cloud Manager avec AEM.](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 
 ## Configuration du Dispatcher {#dispatcher-configuration}
 
