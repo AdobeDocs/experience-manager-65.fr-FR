@@ -150,7 +150,7 @@ Pour permettre aux utilisateurs enregistrés d&#39;envoyer des messages directs 
 
 ![message social-op-service](assets/social-message-op-service.png)
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 Une façon de résoudre les problèmes consiste à activer les [messages de débogage dans le journal.](/help/sites-administering/troubleshooting.md)
 
