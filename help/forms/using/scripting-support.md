@@ -1348,7 +1348,7 @@ Les événements XFA côté client suivants sont pris en charge :
 * Cliquez sur
 * Enter
 * Quitter
-* Remplacer
+* Modification
 * ValidationState
 
 >[!NOTE]
