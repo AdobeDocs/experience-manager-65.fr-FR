@@ -11,8 +11,8 @@ docset: aem65
 translation-type: tm+mt
 source-git-commit: 71e827dc17fd1c36230cb8d26b68d7f41c584e60
 workflow-type: tm+mt
-source-wordcount: '6605'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
