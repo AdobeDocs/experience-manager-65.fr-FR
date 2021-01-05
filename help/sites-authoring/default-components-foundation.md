@@ -27,7 +27,7 @@ ht-degree: 87%
 >
 >La plupart des composants de base sont désormais obsolètes avec AEM 6.5. Pour plus d&#39;informations, consultez les [notes de mise à jour](/help/release-notes/deprecated-removed-features.md).
 >
->Adobe recommande l’utilisation des ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)composants principaux[ plus modernes et extensibles dans les projets AEM. Ils font partie de l&#39;exemple de contenu [We.Retail](/help/sites-developing/we-retail.md) et peuvent également être [installés séparément et utilisés pour le développement](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/get-started/using.html) par votre administrateur.
+>Adobe recommande l’utilisation des ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)composants principaux[ plus modernes et extensibles dans les projets AEM. Ils font partie de l&#39;exemple de contenu [We.Retail](/help/sites-developing/we-retail.md) et peuvent également être [installés séparément et utilisés pour le développement](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/get-started/using.html) par votre administrateur.
 >
 >Vous pouvez utiliser [AEM Moderniser la suite d&#39;outils](https://opensource.adobe.com/aem-modernize-tools/) pour refaçonner votre site basé sur les composants de base afin d&#39;utiliser les composants de base.
 
@@ -468,7 +468,7 @@ Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Liste](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/list.html).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Liste](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/list.html).
 
 Le composant Liste vous permet de configurer des critères de recherche pour afficher une liste :
 
@@ -1105,7 +1105,7 @@ Ce composant est nécessaire pour définir le début d’un nouveau formulaire s
 
       Page à référencer pour remercier les visiteurs pour leur message. Si ce champ est vide, le formulaire s’affiche de nouveau après l’envoi.
 
-   * **Démarrer le workflow**
+   * **Démarrer le processus**
 
       Détermine quel processus est déclenché une fois le formulaire envoyé.
 
