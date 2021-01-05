@@ -1,5 +1,5 @@
 ---
-title: 'Utilisation des sélecteurs  '
+title: Utilisation des sélecteurs
 description: Sélection de ressources pour les images interactives, vidéos interactives et bannières de carrousel
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
@@ -16,7 +16,7 @@ ht-degree: 99%
 ---
 
 
-# Utilisation des sélecteurs    {#working-with-selectors}
+# Utilisation des sélecteurs  {#working-with-selectors}
 
 Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et de contenu multimédia, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
 
