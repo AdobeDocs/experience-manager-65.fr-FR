@@ -161,7 +161,7 @@ Pour voir la liste de tous les modèles disponibles dans le référentiel, proc�
 1. Dans l’onglet Requête :
 1. Indiquez le **Type** **XPath**.
 
-1. Dans la zone de saisie **Requête**, entrez la chaîne suivante :
+1. Dans le champ d’entrée **Requête**, saisissez la chaîne suivante :
 //element(*, cq:Template)
 
 1. Cliquez sur **Exécuter**. La liste s’affiche dans la zone des résultats.
