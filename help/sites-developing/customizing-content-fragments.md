@@ -195,7 +195,7 @@ Il existe d’autres instructions que vous devez respecter pour vous assurer que
 
 Les fragments de contenu peuvent être intégrés à :
 
-* **des traductions** ;
+* **Des traductions**
 
    Les fragments de contenu sont entièrement intégrés au processus de traduction [AEM](/help/sites-administering/tc-manage.md). Au niveau architectural, cela présente les implications suivantes :
 
@@ -227,7 +227,7 @@ Les fragments de contenu peuvent être intégrés à :
    * Les modèles étant copiés pour créer le fragment, cela est donc implicite.
 
 
-* **Schémas de métadonnées**
+* **Des schémas de métadonnées**
 
    * Les fragments de contenu (ré)utilisent les [schémas de métadonnées](/help/assets/metadata-schemas.md) qui peuvent être définis par de ressources standard.
    * CFM fournit son propre schéma spécifique :
@@ -238,7 +238,7 @@ Les fragments de contenu peuvent être intégrés à :
 
    * Le formulaire de schéma respectif est intégré à l’éditeur de fragments.
 
-## L’API de gestion des fragments de contenu – côté serveur    {#the-content-fragment-management-api-server-side}
+## API de gestion des fragments de contenu – côté serveur  {#the-content-fragment-management-api-server-side}
 
 Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu ; voir :
 
@@ -248,7 +248,7 @@ Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de co
 >
 >Il est fortement conseillé d’utiliser l’API côté serveur plutôt que d’accéder directement à la structure du contenu.
 
-### Interfaces principales    {#key-interfaces}
+### Interfaces principales  {#key-interfaces}
 
 Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
@@ -357,7 +357,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 
 
-### Adaptation – utilisation d’adaptTo()    {#adapting-using-adaptto}
+### Adaptation – utilisation d’adaptTo()  {#adapting-using-adaptto}
 
 Ce qui suit peut être adapté :
 
@@ -496,7 +496,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Exemple : création d’un fragment de contenu    {#example-creating-a-new-content-fragment}
+### Exemple : création d’un fragment de contenu  {#example-creating-a-new-content-fragment}
 
 Pour créer un fragment de contenu par programmation, vous devez utiliser :
 
@@ -510,7 +510,7 @@ FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Exemple : spécification de l’intervalle d’enregistrement automatique    {#example-specifying-the-auto-save-interval}
+### Exemple : spécification de l’intervalle d’enregistrement automatique  {#example-specifying-the-auto-save-interval}
 
 L’intervalle d’enregistrement automatique (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
 
