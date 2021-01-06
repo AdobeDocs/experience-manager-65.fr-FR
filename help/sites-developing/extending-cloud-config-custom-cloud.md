@@ -52,7 +52,7 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
    * **Libellé** :  `googleanalyticspage`
    * **Titre**: `Google Analytics Page`
    * **Super Type** :  `cq/cloudserviceconfigs/components/configpage`
-   * **Groupe** :  `.hidden`
+   * **Groupe**: `.hidden`
 
 1. Cliquez deux fois sur **Suivant** et spécifiez :
 
