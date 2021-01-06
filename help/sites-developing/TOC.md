@@ -3,7 +3,7 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guide de l’utilisateur pour le développement d’AEM 6.5
+user-guide-title: Guide de l’utilisateur pour le développement d’AEM 6.5
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 translation-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 87%
 ---
 
 
-# Guide de l’utilisateur pour le développement d’AEM 6.5  {#developing}
+# Guide de l’utilisateur pour le développement d’AEM 6.5  {#developing}
 
 + [Présentation du guide de développement d’utilisateur](home.md)
 + Introduction pour les développeurs{#introduction}
@@ -109,14 +109,14 @@ ht-degree: 87%
       + [Prise en main des SPA en AEM - Angular](spa-getting-started-angular.md)
       + [Mise en oeuvre d’un composant de réaction pour SPA](spa-implementing-react-component.md)
       + [Immersion dans les SPA](spa-deep-dives.md)
-      + [Présentation de l’éditeur de SPA](spa-overview.md)
+      + [Aperçu de l’éditeur de SPA](spa-overview.md)
       + [Développement de SPA pour AEM](spa-architecture.md)
       + [Plan directeur d’applications sur une seule page (SPA)](spa-blueprint.md)
       + [Composant de page SPA](spa-page-component.md)
       + [Mappage du modèle dynamique avec les composants pour les SPA](spa-dynamic-model-to-component-mapping.md)
       + [Routage du modèle de SPA ](spa-routing.md)
       + [Intégration de SPA et d’Adobe Experience Platform Launch](spa-launch.md)
-      + [Rendu SPA et côté serveur](spa-ssr.md)
+      + [SPA et rendu côté serveur](spa-ssr.md)
       + [Documents de référence SPA](spa-reference-materials.md)
    + API HTTP [ ](/help/assets/mac-api-assets.md)
    + [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
