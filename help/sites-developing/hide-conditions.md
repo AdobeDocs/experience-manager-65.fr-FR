@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 76%
+ht-degree: 93%
 
 ---
 
@@ -34,9 +34,9 @@ Grâce aux conditions de masquage, les administrateurs, développeurs et super-u
 
 ## Détails relatifs à la mise en œuvre et à l’utilisation  {#implementation-and-usage-details}
 
-`com.adobe.granite.ui.components.FilteringResourceWrapper` est responsable du filtrage des ressources en fonction de l’existence et de la valeur de la  `granite:hide` propriété, située sur le champ à filtrer. L&#39;implémentation de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` comprend une instance de `FilteringResourceWrapper.`
+`com.adobe.granite.ui.components.FilteringResourceWrapper` est chargé de filtrer les ressources en fonction de l’existence et de la valeur de la propriété `granite:hide`, située sur le champ à filtrer. L’implémentation de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` comprend une instance de `FilteringResourceWrapper.`
 
-L’implémentation utilise l’API Granite [ELResolver](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) et ajoute une variable personnalisée `cqDesign` via ExpressionCustomizer.
+L’implémentation utilise l’[API ELResolver](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) de Granite et ajoute une variable personnalisée `cqDesign` via ExpressionCustomizer.
 
 Voici quelques exemples de conditions de masquage sur un nœud de conception situé sous `etc/design` ou sous la forme d’une stratégie de contenu.
 
@@ -60,7 +60,7 @@ Lors de la définition de votre expression de masquage, veuillez tenir compte de
 
 Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) en particulier. Prenons notamment l’exemple du [composant principal Liste](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
 
-[A l’aide de l’éditeur](/help/sites-authoring/templates.md) de modèles, l’auteur du modèle peut définir dans la boîte de dialogue de conception les options du composant de liste qui sont disponibles pour l’auteur de la page. Il est ainsi possible d’activer ou de désactiver des options permettant de définir une liste comme étant statique, une liste de pages enfants, une liste de pages balisées, etc.
+[En utilisant l’éditeur de modèles](/help/sites-authoring/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Il est ainsi possible d’activer ou de désactiver des options permettant de définir une liste comme étant statique, une liste de pages enfants, une liste de pages balisées, etc.
 
 Si un auteur de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à celle-ci, ce qui empêche le rendu de cette option pour l’auteur de pages.
 
@@ -77,7 +77,7 @@ Si un auteur de modèles choisit de désactiver l’option des pages enfants, un
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. La valeur `disableChildren` est extraite de la configuration de la conception et l&#39;expression `${cdDesign.disableChildren}` est évaluée sur `false`, ce qui signifie que l&#39;option ne sera pas rendue dans le composant.
+1. La valeur de `disableChildren` est extraite de la configuration de conception et l’expression `${cdDesign.disableChildren}` est évaluée sur `false`, ce qui signifie que le rendu de l’option ne sera pas effectué dans le cadre du composant.
 
    Pour afficher l’expression de masquage en tant que valeur de la propriété `granite:hide` dans GitHub, cliquez [ici](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
