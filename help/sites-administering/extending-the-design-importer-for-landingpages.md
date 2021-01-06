@@ -537,7 +537,7 @@ Vous trouverez dans le tableau ci-dessous une brève description des propriété
 >Et vous devez remplacer >`CQ_DESIGN_PATH` avec `VIPURL` dans le modèle de recherche, votre modèle de recherche doit se présenter comme suit :
 `/\* *VIPURL *\*/ *(['"])`
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 Plusieurs erreurs peuvent être générées lors de l’importation du module de conception. Elles sont décrites dans cette section.
 
