@@ -409,7 +409,7 @@ Par défaut, les données utilisateur créées dans l’environnement de publica
 
 Lorsque la console [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) est utilisée pour ajouter de nouveaux utilisateurs dans l’environnement de publication, la synchronisation des utilisateurs synchronise les nouveaux utilisateurs et leur appartenance à un groupe sur d’autres instances de publication, si nécessaire. La synchronisation des utilisateurs synchronise également les groupes d’utilisateurs créés via la console de sécurité.
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### Comment mettre la synchronisation des utilisateurs hors ligne {#how-to-take-user-sync-offline}
 
