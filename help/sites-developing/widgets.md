@@ -653,7 +653,7 @@ Comme expliqué dans la section précédente, l&#39;objet window obtient son obj
 
 Changez le fichier .js qui est référencé dans le jsp du composant :
 
-1. Dans **CRXDE Lite**, dans le fichier `content.jsp` du composant, placez en commentaire la ligne contenant le fichier `defaultgrid.js`, de telle sorte qu’elle se présente comme suit :
+1. Dans **CRXDE Lite**, dans le fichier `content.jsp` du composant, placez en commentaire la ligne qui inclut le fichier `defaultgrid.js`, de telle sorte qu’elle se présente comme suit :
    `<!-- script type="text/javascript" src="/apps/extjstraining/components/gridoverview/defaultgrid.js"></script-->`
 1. Supprimez le commentaire de la ligne contenant le fichier `referencesearch.js`, de telle sorte qu’il se présente comme suit :
    `<script type="text/javascript" src="/apps/extjstraining/components/gridoverview/referencesearch.js"></script>`
