@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes 
 description: Notes de mise à jour pour  [!DNL Adobe Experience Manager] Service Packs 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
+source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
 workflow-type: tm+mt
 source-wordcount: '14953'
 ht-degree: 20%
@@ -66,7 +66,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
    ![Capture d’écran illustrant le problème du menu manquant dans l’interface utilisateur classique](assets/33949_missing_menu.png)
 
 * Un [!DNL Content Fragment] ne peut pas être utilisé comme `TemplatedResource` car il échoue dans `ContentFragmentUsePojo` (NPR-33911).
-* Les opérations de déplacement synchrones et asynchrones peuvent entraîner des erreurs en raison de transferts simultanés. Les opérations de déplacement de page sont limitées au déplacement synchrone. Elle empêche le déplacement simultané des pages (NPR-33875).
+* Les opérations de déplacement synchrones et asynchrones peuvent entraîner des erreurs en raison de transferts simultanés. Les opérations de déplacement de page sont limitées au déplacement asynchrone. Elle empêche le déplacement simultané des pages (NPR-33875).
 * [!UICONTROL L’opération Gérer la ] publication pour répliquer du contenu de l’instance d’auteur à l’instance de publication échoue et génère une erreur JavaScript (NPR-33872).
 * Lorsque plusieurs pages ou ressources sont sélectionnées pour créer des versions, la nouvelle version est créée uniquement pour la dernière page ou ressource sélectionnée (NPR-33866).
 * Déplacez une page de plan avec des copies dynamiques dans un autre dossier. Lors du déplacement vers le dossier d&#39;origine, l&#39;opération de déplacement échoue sans aucune erreur (NPR-33864).
@@ -280,7 +280,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 
 ### [!DNL Communities] {#communities-6560}
 
-* Le partage d&#39;un billet sur les médias sociaux montre une option obsolète Google+ (NPR-33877).
+* Le partage d&#39;un billet sur les médias sociaux montre une option obsolète, Google+ (NPR-33877).
 
 * Le membre de la communauté ne peut pas modifier le modèle de groupe ou d&#39;autres paramètres de fonction de groupe (NPR-33530).
 
