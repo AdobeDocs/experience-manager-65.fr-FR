@@ -1,6 +1,6 @@
 ---
-title: Restructuration du référentiel Contenu multimédia dynamique dans AEM 6.5
-seo-title: Restructuration du référentiel Contenu multimédia dynamique dans AEM 6.5
+title: Restructuration du référentiel Dynamic Media dans AEM 6.5
+seo-title: Restructuration du référentiel Dynamic Media dans AEM 6.5
 description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.5 pour Dynamic Media.
 seo-description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.5 pour Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
@@ -17,9 +17,9 @@ ht-degree: 62%
 ---
 
 
-# Restructuration du référentiel Contenu multimédia dynamique dans AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
+# Restructuration du référentiel Dynamic Media dans AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Comme décrit sur la page parente [Restructuration du référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md), les clients qui effectuent la mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer l’effort associé aux modifications du référentiel qui affectent la solution Contenu multimédia dynamique. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md), les clients qui effectuent la mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer l&#39;effort de travail associé aux modifications du référentiel qui affectent la solution Dynamic Media. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
 
 **Avant la mise à niveau future**
 
@@ -54,7 +54,7 @@ Comme décrit sur la page parente [Restructuration du référentiel dans AEM 6.5
  </tbody>
 </table>
 
-### Configuration du cloud de Contenu de média dynamique (DMS7) {#dynamic-media-dms-cloud-configuration}
+### Configuration du cloud Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
 
 <table>
  <tbody>
@@ -81,7 +81,7 @@ Comme décrit sur la page parente [Restructuration du référentiel dans AEM 6.5
  </tbody>
 </table>
 
-### Configuration du Cloud Service de média dynamique (hybride DM) {#cloudserviceconfiguration}
+### Configuration du Cloud Service Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -104,7 +104,7 @@ Comme décrit sur la page parente [Restructuration du référentiel dans AEM 6.5
  </tbody>
 </table>
 
-### Contenu multimédia dynamique - Configuration du Cloud Service YouTube {#youtubecloudserviceconfiguration}
+### Dynamic Media - Configuration du Cloud Service YouTube {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
