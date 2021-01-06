@@ -31,7 +31,7 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[Le tutoriel du développeur WKND est disponible ici](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) et vous guide tout au long de la création d’un projet AEM à l’aide des dernières technologies et bonnes pratiques.
+[Le tutoriel du développeur WKND est disponible ici](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) et vous guide tout au long de la création d’un projet AEM à l’aide des dernières technologies et bonnes pratiques.
 
 ## Concepts de base {#core-concepts}
 
