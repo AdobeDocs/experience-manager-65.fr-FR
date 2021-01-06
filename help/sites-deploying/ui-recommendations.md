@@ -95,7 +95,7 @@ Voici une liste de recommandations de la gestion du produit pour Adobe Experien
  </tbody>
 </table>
 
-### FAQ  {#faq}
+### FAQ {#faq}
 
 Voir l’article de la base de connaissances, [FAQ sur la création dans l’interface utilisateur tactile](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html) pour en savoir plus, notamment sur la planification du déclassement de l’IU classique.
 
