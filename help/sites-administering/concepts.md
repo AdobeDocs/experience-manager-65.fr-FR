@@ -635,7 +635,7 @@ Pour que l’acheteur ait accès au panier, il doit généralement s’inscrire.
 >
 >Un panier et un passage en caisse anonymes sont également pris en charge.
 
-### Connexion des clients  {#customer-sign-in}
+### Connexion des clients {#customer-sign-in}
 
 Après s’être inscrit, l’acheteur peut se connecter à son compte afin que ses actions puissent faire l’objet d’un suivi et que ses commandes soient exécutées.
 
