@@ -37,7 +37,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 ## Ressources {#assets}
 
-Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Contenu multimédia dynamique et l’intégration de Contenu multimédia dynamique classique, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
 
 <table>
  <tbody>
