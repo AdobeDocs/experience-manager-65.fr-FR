@@ -110,7 +110,7 @@ La sélection d’un espace de noms ou d’une autre balise rend les opérations
 * [Modifier](#editing-tags)
 * [Déplacer](#moving-tags)
 * [Fusionner](#merging-tags)
-* [Publier](#publishing-tags)
+* [Publication](#publishing-tags)
 * [Annuler la publication](#unpublishing-tags)
 * [Supprimer](#deleting-tags)
 
