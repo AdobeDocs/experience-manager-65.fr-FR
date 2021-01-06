@@ -123,7 +123,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
    >
    >Sur une nouvelle installation (plus précisément : si les dépendances Maven n’ont jamais été téléchargées), vous risquez de créer le projet avec des erreurs. Dans ce cas, veuillez suivre la procédure décrite dans [Résolution d’une définition de projet non valide](#resolving-invalid-project-definition).
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### Résolution d’une définition de projet non valide {#resolving-invalid-project-definition}
 
