@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: e5e00cc181c2dc3a28e25beb52f9a4c459ee313a
 workflow-type: tm+mt
 source-wordcount: '1779'
-ht-degree: 60%
+ht-degree: 79%
 
 ---
 
@@ -37,27 +37,27 @@ AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs.
 
 La console [Audiences](/help/sites-authoring/managing-audiences.md) permet de gérer les segments pour ContextHub ou ClientContext, ainsi que les audiences de votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub. Pour les [segments ClientContext](/help/sites-administering/campaign-segmentation.md) et Adobe Target, voir la documentation appropriée.
 
-Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**.
+Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**.
 
 ![chlimage_1-310](assets/chlimage_1-310.png)
 
 ## Éditeur de segment {#segment-editor}
 
-L&#39;**éditeur de segments** vous permet de modifier facilement un segment. Pour modifier un segment, sélectionnez un segment dans la [liste de segments](/help/sites-administering/segmentation.md#accessing-segments) et cliquez sur le bouton **Modifier**.
+L’**éditeur de segment** vous permet de modifier facilement un segment. Pour modifier un segment, sélectionnez un segment dans la [liste de segments](/help/sites-administering/segmentation.md#accessing-segments) et cliquez sur le bouton **Modifier**.
 
 ![segmenteditor](assets/segmenteditor.png)
 
-A l’aide de l’explorateur de composants, vous pouvez ajouter des conteneurs **ET** et **OU** pour définir la logique du segment, puis ajouter des composants supplémentaires pour comparer les propriétés et les valeurs ou des scripts de référence et d’autres segments pour définir les critères de sélection (voir [Création d’un segment](#creating-a-new-segment)) pour définir le scénario exact de sélection du segment.
+Avec l’explorateur de composants, vous pouvez ajouter des conteneurs **ET** et **OU** pour définir la logique de segment, puis ajouter des composants supplémentaires pour comparer les propriétés et les valeurs ou référencer des scripts et d’autres segments afin de définir les critères de sélection (voir la rubrique [Création d’un nouveau segment](#creating-a-new-segment)) pour définir le scénario exact de sélection du segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. Si plusieurs segments sont applicables, le facteur **Amplifier** est également utilisé. Voir [Création d&#39;un nouveau segment](#creating-a-new-segment) pour plus d&#39;informations sur le [facteur de croissance.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. Si plusieurs segments sont applicables, le facteur **Amplifier** est également utilisé. Voir [Création d’un segment](#creating-a-new-segment)[ pour plus d’informations sur le facteur Amplifier.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
 >L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui à son tour référence le segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
 
-### Conteneurs  {#containers}
+### Conteneurs {#containers}
 
-Les conteneurs suivants sont disponibles clé en main et vous permettent de regrouper des comparaisons et des références en vue de l’évaluation booléenne. Ils peuvent être déplacés de l’explorateur de composants vers l’éditeur. Pour plus d&#39;informations, consultez la section [Utilisation des Conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers).
+Les conteneurs suivants sont disponibles clé en main et vous permettent de regrouper des comparaisons et des références en vue de l’évaluation booléenne. Ils peuvent être déplacés de l’explorateur de composants vers l’éditeur. Voir la section suivante, [Utilisation de conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers) pour plus d’informations.
 
 <table>
  <tbody>
@@ -67,70 +67,70 @@ Les conteneurs suivants sont disponibles clé en main et vous permettent de regr
   </tr>
   <tr>
    <td>Conteneur OU<br /> </td>
-   <td>Opérateur OR booléen</td>
+   <td>Opérateur OU booléen</td>
   </tr>
  </tbody>
 </table>
 
 ### Comparaisons {#comparisons}
 
-Les comparaisons de segments suivantes sont disponibles par défaut pour évaluer les propriétés des segments. Elles peuvent être déplacées de l’explorateur de composants vers l’éditeur.
+Les comparaisons de segments suivantes sont disponibles par défaut pour évaluer les propriétés des segments. Ils peuvent être déplacés de l’explorateur de composants vers l’éditeur.
 
 <table>
  <tbody>
   <tr>
-   <td>Propriété-Value<br /> </td>
-   <td>Compare une propriété d’un magasin à une valeur définie <br /> </td>
+   <td>Propriété-Valeur<br /> </td>
+   <td>Compare une propriété d’une boutique à une valeur définie.<br /> </td>
   </tr>
   <tr>
    <td>Propriété-Propriété</td>
-   <td>Compare une propriété d'un magasin à une autre propriété<br /> </td>
+   <td>Compare une propriété d’une boutique à une autre propriété.<br /> </td>
   </tr>
   <tr>
-   <td>Référence des segments de propriété</td>
-   <td>Compare une propriété d’un magasin à un autre segment référencé<br /> </td>
+   <td>Propriété-Référence de segment</td>
+   <td>Compare une propriété d’une boutique à un autre segment référencé.<br /> </td>
   </tr>
   <tr>
-   <td>Référence des scripts de propriété</td>
-   <td>Compare une propriété d’un magasin aux résultats d’un script<br /> </td>
+   <td>Propriété-Référence de script</td>
+   <td>Compare une propriété d’une boutique aux résultats d’un script.<br /> </td>
   </tr>
   <tr>
    <td>Référence de segment-Référence de script</td>
-   <td>Compare un segment référencé aux résultats d’un script<br /> </td>
+   <td>Compare un segment référencé aux résultats d’un script.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Lors de la comparaison de valeurs, si le type de données de la comparaison n’est pas défini (c.-à-d. défini pour la détection automatique), le moteur de segmentation de ContextHub compare simplement les valeurs comme le ferait javascript. Il ne projette pas de valeurs sur leurs types inattendus, ce qui peut donner des résultats trompeurs. Par exemple :
+>Lors de la comparaison des valeurs, si le type de données de la comparaison n’est pas défini (c.-à-d. défini sur la détection automatique), le moteur de segmentation de ContextHub compare simplement les valeurs comme le ferait JavaScript. Il ne projette pas de valeurs sur leurs types inattendus, ce qui peut donner des résultats trompeurs. Par exemple :
 >
 >`null < 30 // will return true`
 >
->Par conséquent, lorsque [vous créez un segment](/help/sites-administering/segmentation.md#creating-a-new-segment), vous devez sélectionner un **type de données** lorsque les types de valeurs comparées sont connus. Par exemple :
+>Par conséquent, lors de la [création d’un segment](/help/sites-administering/segmentation.md#creating-a-new-segment), vous devez sélectionner un **type de données** chaque fois que les types de valeurs comparées sont connus. Par exemple :
 >
->Lors de la comparaison de la propriété `profile/age`, vous savez déjà que le type comparé sera **nombre**. Par conséquent, même si `profile/age` n&#39;est pas défini, une comparaison `profile/age` inférieure à 30 renverra **false**, comme vous vous y attendriez.
+>Lorsque vous comparez la propriété `profile/age`, vous savez déjà que le type comparé sera un **nombre**. Donc, même si la propriété `profile/age` n’est pas définie, une comparaison `profile/age` inférieure à 30 retournera **faux**, comme prévu.
 
 ### Références {#references}
 
-Les références suivantes sont disponibles clé en main pour établir un lien direct à un script ou un segment différent. Elles peuvent être déplacées de l’explorateur de composants vers l’éditeur.
+Les références suivantes sont disponibles clé en main pour établir un lien direct à un script ou un segment différent. Ils peuvent être déplacés de l’explorateur de composants vers l’éditeur.
 
 <table>
  <tbody>
   <tr>
    <td>Référence de segment<br /> </td>
-   <td>Évaluer le segment référencé</td>
+   <td>Évalue le segment référencé.</td>
   </tr>
   <tr>
    <td>Référence de script</td>
-   <td>Evaluez le script référencé. Voir la section suivante <a href="/help/sites-administering/segmentation.md#using-script-references">Utilisation de références de script</a> pour plus d’informations.</td>
+   <td>Évalue le script référencé. Pour plus d’informations, voir la section suivante <a href="/help/sites-administering/segmentation.md#using-script-references">Utilisation de références de script</a>.</td>
   </tr>
  </tbody>
 </table>
 
-## Création d’un nouveau segment {#creating-a-new-segment}
+## Création d’un segment {#creating-a-new-segment}
 
-Pour définir votre nouveau segment :
+Pour définir votre nouveau segment :
 
 1. Après avoir [accédé aux segments](/help/sites-administering/segmentation.md#accessing-segments), [accédez au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment, ou laissez-le à la racine.
 
@@ -142,7 +142,7 @@ Pour définir votre nouveau segment :
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-   Chaque segment comporte un paramètre de stimulation utilisé comme facteur de pondération. Une valeur plus élevée indique que le segment sera sélectionné de préférence à un segment ayant une valeur plus basse dans les cas où plusieurs segments sont valides.
+   Chaque segment comporte un paramètre d’amplification utilisé comme facteur de pondération. Une valeur plus élevée indique que le segment sera sélectionné de préférence à un segment ayant une valeur plus basse dans les cas où plusieurs segments sont valides.
 
    * Valeur minimale : `0`
    * Valeur maximale : `1000000`
@@ -161,7 +161,7 @@ Pour définir votre nouveau segment :
 
 Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Cette tâche sera plus facile si vous tenez compte de certains aspects élémentaires :
 
-* Le niveau supérieur de la définition est toujours le conteneur ET initialement créé. Cette modification ne peut pas être modifiée, mais n’a aucun effet sur le reste de votre définition de segment.
+* Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé ; cela ne peut pas être changé, mais n’a pas d’effet sur le reste de votre définition de segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme les crochets de votre expression booléenne.
 
 L’exemple suivant permet de sélectionner les visiteurs qui sont considérés comme appartenant à notre classe d’âges principale :
@@ -182,7 +182,7 @@ Commencez par placer un composant de conteneur OU dans le conteneur ET par défa
 
 #### Définition d’une référence de script  {#defining-a-script-to-reference}
 
-1. Ajoutez le fichier à `contexthub.segment-engine.scripts` clientlib.
+1. Ajoutez le fichier `contexthub.segment-engine.scripts` à la propriété clientlib.
 1. Implémentez une fonction qui renvoie une valeur. Par exemple :
 
    ```
@@ -216,7 +216,7 @@ Commencez par placer un composant de conteneur OU dans le conteneur ET par défa
 
 1. Enregistrez le script avec `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Si le script dépend de propriétés supplémentaires, il doit appeler `this.dependOn()`. Par exemple, si le script dépend de `profile/age` :
+Si le script dépend de propriétés supplémentaires, il doit appeler `this.dependOn()`. Par exemple, si le script dépend de `profile/age` :
 
 ```
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -297,7 +297,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 >
 > Il n’est pas possible de déplacer un segment d’un dossier à un autre.
 
-## Test de l’application d’un segment {#testing-the-application-of-a-segment}
+## Test de l’application d’un segment  {#testing-the-application-of-a-segment}
 
 Une fois le segment défini, les résultats potentiels peuvent être testés avec **[ContextHub](/help/sites-authoring/ch-previewing.md).**
 
@@ -306,7 +306,7 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 1. Sélectionnez une personne qui correspond au segment que vous avez créé.
 1. ContextHub permet de résoudre les segments applicables pour la personne sélectionnée.
 
-Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le sexe de l’utilisateur. Le chargement d’une personne spécifique qui correspond à ces critères indique si le segment a été résolu avec succès :
+Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le sexe de l’utilisateur. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :
 
 ![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 
@@ -334,6 +334,6 @@ Si vous avez configuré une activité et une expérience à l’aide du segment 
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
-## Utilisation de votre segment {#using-your-segment}
+## Utilisation de votre segment  {#using-your-segment}
 
-Les segments sont utilisés afin d’orienter le contenu réel affiché pour une audience cible spécifique. Voir [Gestion des Audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur les audiences et les segments et [Création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md) sur l’utilisation d’audiences et de segments pour cible du contenu.
+Les segments sont utilisés afin d’orienter le contenu réel affiché pour une audience cible spécifique. Voir [Gestion des audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur les audiences et les segments et [Création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md) pour plus d’informations sur l’utilisation des audiences et des segments afin de cibler du contenu.
