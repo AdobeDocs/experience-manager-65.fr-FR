@@ -1,6 +1,6 @@
 ---
-title: Guide de l’utilisateur pour le développement d’AEM 6.5
-seo-title: Guide de l’utilisateur pour le développement d’AEM 6.5
+title: Guide de l’utilisateur pour le développement d’AEM 6.5
+seo-title: Guide de l’utilisateur pour le développement d’AEM 6.5
 description: Ce guide explique comment créer votre instance AEM.
 seo-description: Décrit comment créer votre instance AEM.
 translation-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 45%
 ---
 
 
-# Guide de l’utilisateur pour le développement d’AEM 6.5
+# Guide de l’utilisateur pour le développement d’AEM 6.5
 
 Ce guide explique comment créer votre instance AEM.
 
@@ -47,7 +47,7 @@ Ce guide explique comment créer votre instance AEM.
 * [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/fr/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
