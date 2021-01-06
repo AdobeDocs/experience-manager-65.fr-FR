@@ -68,7 +68,7 @@ Plus spécifiquement, les modifications de configuration suivantes seront effect
 
 1. Le servlet **Apache Sling GET** est configuré pour prendre en charge les configurations sécurisées par défaut, comme suit :
 
-| **Configuration** | **Auteur** | **Publier** |
+| **Configuration** | **Auteur** | **Publication** |
 |---|---|---|
 | Rendu TXT | disabled | désactivé |
 | Rendu HTML | désactivé | désactivé |
