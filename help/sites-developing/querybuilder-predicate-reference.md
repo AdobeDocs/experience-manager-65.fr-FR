@@ -120,7 +120,7 @@ Ne prend pas en charge le filtrage.
 
 * **lowerBound**
 
-   `2014-10-01`
+    Limite de date inférieure pour laquelle la propriété doit être vérifiée ; par exemple, `2014-10-01`
 
 * **lowerOperation**
 
