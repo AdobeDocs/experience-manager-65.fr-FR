@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >
 >* des applications sur une seule page ;
 >* des applications mobiles natives ;
->* Autres canaux et points de contact externes aux AEM
+>* D’autres canaux et points de contact externes à AEM.
 
 >
 >
