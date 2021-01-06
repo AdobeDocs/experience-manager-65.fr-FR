@@ -44,7 +44,7 @@ API de diffusion et de gestion de contenu AEM :
 * Composants principaux (JSON)
 
    * [Exportateur JSON](/help/sites-developing/json-exporter.md) 
-   * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md) 
+   * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
    * Pour plus d’informations, consultez la [section Composants du Guide de l’utilisateur pour le développement](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js).
 
 * **Assets** : l’API HTTP Assets permet d’effectuer des opérations de création/lecture/mise à jour/suppression (CRUD) sur les ressources, notamment les binaires, les métadonnées, les rendus et les commentaires. Voir [API HTTP AEM Assets](/help/assets/mac-api-assets.md)
