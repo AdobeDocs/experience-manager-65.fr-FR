@@ -250,7 +250,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
    * Attendez que l’application AEM soit installée.
 
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 Pour plus d’informations sur la résolution des problèmes qui peuvent survenir en cours d’installation, voir :
 
