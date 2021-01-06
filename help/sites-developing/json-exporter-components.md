@@ -99,5 +99,5 @@ Pour plus d’informations, voir :
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
 * [Exportateur JSON pour les services de contenu](/help/sites-developing/json-exporter.md)
-* [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et [Composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
