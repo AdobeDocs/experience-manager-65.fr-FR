@@ -105,7 +105,7 @@ Veuillez également tenir compte des points suivants :
 * **La** compactioncomplète est plus efficace mais a également un impact plus important sur les opérations normales du système. Il est donc conseillé de l’exécuter en dehors des jours ouvrables.
 * L’exécution des deux modes de compression doit être planifiée en dehors des heures de pointe.
 
-### Dépannage {#troubleshooting}
+### Résolution des incidents {#troubleshooting}
 
 Lorsque vous utilisez les nouveaux modes de compression, gardez à l’esprit les points suivants :
 
