@@ -1,8 +1,8 @@
 ---
-title: Exportateur JSON pour les services de contenu
-seo-title: Exportateur JSON pour les services de contenu
-description: Les services de contenu AEM sont conçus pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web. Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients.
-seo-description: Les services de contenu AEM sont conçus pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web. Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients.
+title: Exportateur JSON pour Content Services
+seo-title: Exportateur JSON pour Content Services
+description: AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web. Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients.
+seo-description: AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web. Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients.
 uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
@@ -13,32 +13,32 @@ translation-type: tm+mt
 source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 84%
+ht-degree: 95%
 
 ---
 
 
-# Exportateur JSON pour les services de contenu{#json-exporter-for-content-services}
+# Exportateur JSON pour Content Services{#json-exporter-for-content-services}
 
-Les services de contenu AEM sont conçus pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web.
+AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 
 Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
 
-* [Applications sur une seule page](spa-walkthrough.md)
+* [des applications sur une seule page ;](spa-walkthrough.md)
 * des applications mobiles natives ;
 * d’autres canaux et points de contact externes à AEM.
 
-Avec les fragments de contenu qui utilisent du contenu structuré, vous pouvez fournir des services de contenu en utilisant l’exportateur JSON pour fournir le contenu d’une page AEM(y) au format de modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
+Comme les fragments de contenu utilisent du contenu structuré, vous pouvez fournir des services de contenu à l’aide de l’exportateur JSON pour diffuser le contenu de toute page AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
 >[!NOTE]
 >
 >La fonctionnalité décrite ici est disponible pour tous les composants principaux depuis la version [1.1.0 des composants principaux](https://docs.adobe.com/content/docs/fr/core-components/v1.html).
 
-## Exportateur JSON avec les composants principaux des fragments de contenu {#json-exporter-with-content-fragment-core-components}
+## Exportateur JSON avec les composants principaux des fragments de contenu  {#json-exporter-with-content-fragment-core-components}
 
 Grâce à l’exportateur JSON AEM, vous pouvez diffuser le contenu des pages AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
-AEM la diffusion est réalisée à l&#39;aide de l&#39;extension de sélecteur `model` et `.json`.
+Avec AEM, la diffusion s’effectue à l’aide du sélecteur `model` et de l’extension `.json`.
 
 `.model.json`
 
@@ -72,23 +72,23 @@ Votre page peut contenir un fragment de contenu unique ou plusieurs composants d
 
    >[!NOTE]
    >
-   >Vous pouvez[ adapter vos propres composants](/help/sites-developing/json-exporter-components.md) pour accéder à ces données et les utiliser.
+   >Vous pouvez [adapter vos propres composants](/help/sites-developing/json-exporter-components.md) pour accéder à ces données et les utiliser.
 
    >[!NOTE]
    >
-   >Bien qu’il ne s’agisse pas d’une mise en oeuvre standard, [plusieurs sélecteurs sont pris en charge,](json-exporter-components.md#multiple-selectors) mais `model` doivent être les premiers.
+   >Bien qu’il ne s’agisse pas d’une implémentation standard, [plusieurs sélecteurs sont pris en charge,](json-exporter-components.md#multiple-selectors) mais `model` doit être le premier.
 
 ### Informations supplémentaires {#further-information}
 
 Voir également :
 
-* API HTTP Assets 
+* API HTTP Assets
 
    * [API HTTP Assets](/help/assets/mac-api-assets.md)
 
-* Modèles Sling:
+* Modèles Sling :
 
-   * [Modèles Sling - Association d’une classe de modèles à un type de ressource depuis la version 1.3.0](https://sling.apache.org/documentation/bundles/application d’une seule pages.html#associating-a-application d’une seule page-class-with-a-resource-type-since-130)
+   * [Modèles Sling - Association d’une classe de modèles à un type de ressource depuis la version 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM avec JSON :
 
@@ -102,7 +102,7 @@ Pour plus d’informations, voir :
 
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
-* [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md) 
+* [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
 
-* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et [Composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
