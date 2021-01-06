@@ -1,8 +1,8 @@
 ---
 title: ContextHub
 seo-title: ContextHub
-description: ContextHub est un framework qui permet de stocker, de manipuler et de présenter des données de contexte
-seo-description: ContextHub est un framework qui permet de stocker, de manipuler et de présenter des données de contexte
+description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles
+seo-description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles
 uuid: 14e6ff4f-ffbe-454a-b2ec-a35333526e27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
