@@ -38,7 +38,7 @@ Pour vous assurer que le déploiement n’est pas bloqué, les définitions poss
 
 Outre les fonctionnalités standard, des gestionnaires de conflit personnalisés peuvent être ajoutés pour mettre en œuvre différentes règles. Elles peuvent également permettre des actions de publication sous forme de processus individuel.
 
-### Exemple de scénario  {#example-scenario}
+### Exemple de scénario {#example-scenario}
 
 Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b`, créée dans les branches Plan directeur et Live Copy (créée manuellement) pour illustrer les différentes méthodes de résolution des conflits :
 
