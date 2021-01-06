@@ -132,7 +132,7 @@ Pour des personnalisations avancées à l’aide du SDK, voir [SDK StreamHub](ht
 * [Personnalisation de l’](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) intégration de la connexion unique pour AEM Identity Management
 * [Intégration d’identité](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) pour les plateformes d’authentification tierces
 
-### Exemples de clients  {#customer-examples-1}
+### Exemples de clients {#customer-examples-1}
 
 * [Poise (Kimberly Klark)](https://www.poise.com/en-us/advice-and-support/blog-and-podcast/blog/5-holiday-party-tips-for-managing-lbl)
 
@@ -194,7 +194,7 @@ Vous trouverez d&#39;autres API de classement et d&#39;examens [ici](https://api
 * [Personnalisation de l’](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) intégration de la connexion unique pour AEM Identity Management
 * [Intégration d’identité](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) pour les plateformes d’authentification tierces
 
-### Exemples de clients  {#customer-examples-2}
+### Exemples de clients {#customer-examples-2}
 
 * [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
 * [myrecipes](https://www.myrecipes.com/recipe/shrimp-florentine-pasta)
