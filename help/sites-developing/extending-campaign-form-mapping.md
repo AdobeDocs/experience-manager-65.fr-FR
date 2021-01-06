@@ -122,7 +122,7 @@ Vous pouvez à présent envoyer le formulaire et vérifier si les valeurs sont e
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 **&quot;Invalid type for value &#39;02/02/2015&#39; from element &#39;@eventdate&#39; (document of type &#39;Event ([adb:event])&#39;)&quot;**
 
