@@ -1,6 +1,6 @@
 ---
-title: Dépannage
-seo-title: Dépannage
+title: Résolution des incidents
+seo-title: Résolution des incidents
 description: Cet article aborde certains des problèmes d’installation pouvant survenir avec AEM.
 seo-description: Cet article aborde certains des problèmes d’installation pouvant survenir avec AEM.
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
@@ -18,7 +18,7 @@ ht-degree: 91%
 ---
 
 
-# Dépannage{#troubleshooting}
+# Résolution des incidents{#troubleshooting}
 
 Cette section comprend des informations détaillées sur les journaux qui vous permettent de résoudre les problèmes éventuels. Elle contient également des informations sur les problèmes que vous pouvez rencontrer avec AEM.
 
