@@ -23,7 +23,7 @@ ht-degree: 16%
 
 Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
-La fonction de création d’application d’une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d&#39;adaptation d&#39;un composant de réaction simple et existant pour travailler avec AEM SPA Editor.
+La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d&#39;adaptation d&#39;un composant de réaction simple et existant pour travailler avec AEM SPA Editor.
 
 >[!NOTE]
 >
