@@ -354,7 +354,7 @@ ou pour la page Bundles
 
 Pour plus d’informations, voir [Configuration OSGi avec la console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console).
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 Pour plus d’informations sur la résolution des problèmes qui peuvent survenir en cours d’installation, voir :
 
