@@ -1,8 +1,8 @@
 ---
-title: Aperçu des composants
+title: Composants Présentation
 seo-title: Composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
-seo-description: Composants sont des unités modulaires qui offrent des fonctionnalités spécifiques pour présenter votre contenu sur votre site Web.
+seo-description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
 uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 64%
+ht-degree: 82%
 
 ---
 
@@ -22,31 +22,31 @@ ht-degree: 64%
 
 Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels que ceux [utilisés pour la création de pages](/help/sites-authoring/default-components-foundation.md).
 
-## Que sont les composants ? {#what-exactly-is-a-component}
+## Que sont les composants ? {#what-exactly-is-a-component}
 
-* Unités modulaires qui réalisent des fonctionnalités spécifiques pour présenter votre contenu sur votre site Web.
-* Réutilisable.
-* Développé en tant qu&#39;unités autonomes dans un dossier du référentiel.
-* Ils ne comportent aucun fichier de configuration masqué.
-* Ils peuvent contenir d’autres composants.
+* sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web ;
+* peuvent être réutilisés ;
+* sont développés comme des unités autonomes dans un seul dossier du référentiel ;
+* ne comportent aucun fichier de configuration masqué ;
+* peuvent contenir d’autres composants ;
 * Ils peuvent s’exécuter n’importe où dans n’importe quel système AEM ; leur exécution peut également être limitée à des composants spécifiques.
-* Ils possèdent une interface utilisateur standardisée.
-* Comportement de modification pouvant être configuré.
+* possèdent une interface utilisateur standardisée ;
+* sont associés à un comportement de modification qui peut être configuré ;
 * Utiliser des boîtes de dialogue créées à l’aide de sous-éléments basés sur des composants de l’interface utilisateur Granite
-* Sont développés à l’aide de [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) (recommandé) ou JSP.
-* Ils peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
+* Sont développés à l’aide de [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) (recommandé) ou JSP.
+* peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
 
 Compte tenu de la nature modulaire des composants, vous pouvez effectuer les opérations suivantes :
 
 * Développer un nouveau composant sur votre instance locale.
-* Déployez-le sur votre environnement de test.
+* Déployer ce composant sur votre environnement de test.
 * Déployer le composant sur votre environnement de création actif et permettre ainsi aux auteurs et/ou développeurs d’ajouter et de configurer du contenu.
-* Déployez-le sur vos environnements de publication en direct, où il est utilisé pour générer du contenu pour des visiteurs sur votre site Web. Certains composants (c’est le cas de Communities, par exemple) acceptent la saisie de contenu de la part des utilisateurs.
+* Déployer le composant sur votre (vos) environnement(s) de publication actif(s), où il est utilisé pour effectuer le rendu du contenu à l’intention des visiteurs de votre site Web. Certains composants (c’est le cas de Communities, par exemple) acceptent la saisie de contenu de la part des utilisateurs.
 
 Chaque composant AEM :
 
-* Est un type de ressource.
-* Collection de scripts qui réalisent complètement une fonction spécifique.
+* est un type de ressource ;
+* est un ensemble de scripts qui exécutent complètement une fonction spécifique ;
 * Peut fonctionner dans *isolation*, ce qui signifie soit dans AEM ou un portail.
 
 ## Composants prêts à l’emploi dans AEM {#out-of-the-box-components-within-aem}
@@ -84,7 +84,7 @@ Pour avoir un aperçu de tous les composants disponibles dans votre instance AE
 
 Une autre méthode consiste à utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
 
-1. Dans **[!UICONTROL CRXDE Lite]**, sélectionnez **[!UICONTROL Outils]** dans la barre d&#39;outils, puis **[!UICONTROL Requête]**, qui ouvre l&#39;onglet **[!UICONTROL Requête]**.
+1. Dans **[!UICONTROL CRXDE Lite]**, sélectionnez **[!UICONTROL Outils]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Requête]** pour ouvrir l’onglet **[!UICONTROL Requête]**.
 
 1. Dans l’onglet **[!UICONTROL Requête]**, sélectionnez `XPath` comme **[!UICONTROL Type]**.
 
@@ -92,7 +92,7 @@ Une autre méthode consiste à utiliser CRXDE Lite pour obtenir la liste de tou
 
    `//element(*, cq:Component)`
 
-1. Cliquez sur **[!UICONTROL Exécuter]** et les composants sont répertoriés.
+1. Cliquez sur **[!UICONTROL Exécuter]** pour répertorier les composants.
 
 ## Ressources supplémentaires {#further-reading}
 
