@@ -363,7 +363,7 @@ Pour illustrer certaines des possibilités de création d&#39;un flux de travail
 
 1. Faites glisser un **Ou fractionner** sur le workflow et placez-le entre `Validate Content` et **Fin de flux**.
 1. Ouvrez la **Division OU** en vue de la configuration.
-1. Configurer:
+1. Configurer :
 
    * **Commun** : spécifiez le nom partagé.
    * **Branche 1** : sélectionnez **Itinéraire par défaut**.
