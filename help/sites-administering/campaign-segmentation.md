@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
 workflow-type: tm+mt
 source-wordcount: '1080'
-ht-degree: 74%
+ht-degree: 77%
 
 ---
 
@@ -31,7 +31,7 @@ En fonction des informations que vous avez déjà collectées sur les visiteurs 
 
 Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) du site Web. Les pages de teaser définies ici peuvent être ajoutées en tant que paragraphes de teaser à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
-AEM vous permet de facilement créer et mettre à jour des segments, des teasers et des campagnes. Il vous permet également de vérifier les résultats de vos définitions.
+AEM vous permet de facilement créer et mettre à jour des segments, des teasers et des campagnes. Il vous permet également de vérifier les résultats de vos définitions de 
 
 L&#39;**éditeur de segments** vous permet de définir facilement un segment :
 
@@ -58,7 +58,7 @@ Les conteneurs logiques suivants sont disponibles clé en main et vous permetten
   </tr>
   <tr>
    <td> Conteneur OU<br /> </td>
-   <td> Opérateur OR booléen.</td>
+   <td> Opérateur OU booléen.</td>
   </tr>
  </tbody>
 </table>
@@ -114,7 +114,7 @@ Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été
 
 >[!CAUTION]
 >
->L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B qui, à son tour, fait référence au segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
+>L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui à son tour référence le segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
 
 >[!NOTE]
 >
@@ -122,9 +122,9 @@ Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été
 >
 >Par conséquent, lors de la création d’un segment avec de telles propriétés, est-il normalement nécessaire de s’appuyer sur **browserFamily** par exemple au lieu de **browserFamily_i18n**.
 
-### Création d’un nouveau segment {#creating-a-new-segment}
+### Création d’un segment {#creating-a-new-segment}
 
-Pour définir votre nouveau segment :
+Pour définir votre nouveau segment :
 
 1. Dans le rail, sélectionnez **Outils > Opérations > Configuration**.
 1. Cliquez sur la page **Segmentation** dans le panneau gauche, puis accédez à l’emplacement requis.
