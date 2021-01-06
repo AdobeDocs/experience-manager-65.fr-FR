@@ -191,6 +191,6 @@ Pour exporter une page par programmation, vous pouvez utiliser le service OSGi 
 
 Le servlet lié au sélecteur `export` et à l’extension `zip` utilise le service PageExporter.
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 Si vous rencontrez un problème de téléchargement du fichier zip, vous pouvez supprimer le noeud `/var/contentsync` dans le référentiel et envoyer à nouveau la demande d’exportation.
