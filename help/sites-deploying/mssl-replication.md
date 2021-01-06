@@ -67,7 +67,7 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Option | Création | Publier |
+   | Option | Création | Publication |
    |---|---|---|
    | -alias | Auteur  | publish |
    | -keystore | author.keystore | publish.keystore |
@@ -78,7 +78,7 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Option | Création | Publier |
+   | Option | Création | Publication |
    |---|---|---|
    | -alias | Auteur  | publier |
    | -file | author.cer | publish.cer |
@@ -94,7 +94,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Option | Création | Publier |
+   | Option | Création | Publication |
    |---|---|---|
    | -out | author.key | publish.key |
 
@@ -104,7 +104,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Option | Création | Publier |
+   | Option | Création | Publication |
    |---|---|---|
    | -key | author.key | publish.key |
    | -out | author_request.csr | publish_request.csr |
@@ -117,7 +117,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Option | Création | Publier |
+   | Option | Création | Publication |
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -in | author_request.csr | publish_request.csr |
@@ -129,7 +129,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Option | Création | Publier |
+   | Option | Création | Publication |
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
