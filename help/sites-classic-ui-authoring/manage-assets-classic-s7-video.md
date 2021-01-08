@@ -1,19 +1,17 @@
 ---
 title: Vidéo
 seo-title: Vidéo
-description: Les ressources fournissent une gestion du contenu vidéo centralisée où vous pouvez télécharger des vidéos directement dans les ressources pour un codage automatique sur Scene7 et accéder aux vidéos Scene7 directement depuis les ressources à des fins de création de page.
-seo-description: Les ressources fournissent une gestion du contenu vidéo centralisée où vous pouvez télécharger des vidéos directement dans les ressources pour un codage automatique sur Scene7 et accéder aux vidéos Scene7 directement depuis les ressources à des fins de création de page.
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
+description: Les ressources permettent une gestion centralisée des ressources vidéo dans laquelle vous pouvez télécharger directement des vidéos vers les ressources pour un codage automatique vers Dynamic Media Classic et accéder directement aux vidéos quotidiennes à partir des ressources pour la création de pages.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '1735'
-ht-degree: 46%
+source-wordcount: '1698'
+ht-degree: 42%
 
 ---
 
@@ -24,8 +22,8 @@ Les ressources permettent une gestion centralisée des ressources vidéo dans la
 
 L’intégration vidéo Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans (détection de périphériques et de bande passante automatique).
 
-* Le composant vidéo Dynamic Media Classic (Scene7) détecte automatiquement les périphériques et la bande passante afin de lire la vidéo au format et à la qualité appropriés sur les ordinateurs de bureau, tablettes et appareils mobiles.
-* Ressources - Vous pouvez inclure des ensembles de vidéos adaptables au lieu de contenus vidéo uniques. Un ensemble de vidéos adaptables est un conteneur de tous les rendus vidéo requis permettant de lire la vidéo sans heurt sur plusieurs écrans. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Vous utilisez un ensemble de vidéos adaptables, accompagné d’un composant vidéo S7, pour la diffusion vidéo en continu adaptative sur plusieurs écrans, notamment des ordinateurs de bureau, des téléphones iOS, Android et Blackberry et des appareils mobiles Windows. Pour plus d’informations, voir [Documentation Scene7 sur les ensembles de vidéos adaptables](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* Le composant vidéo Dynamic Media Classic détecte automatiquement les périphériques et la bande passante afin de lire la vidéo au format et à la qualité appropriés sur les ordinateurs de bureau, les tablettes et les appareils mobiles.
+* Ressources - Vous pouvez inclure des ensembles de vidéos adaptables au lieu de contenus vidéo uniques. Un ensemble de vidéos adaptables est un conteneur de tous les rendus vidéo requis permettant de lire la vidéo sans heurt sur plusieurs écrans. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Vous utilisez un ensemble de vidéos adaptables, accompagné d’un composant vidéo S7, pour la diffusion vidéo en continu adaptative sur plusieurs écrans, notamment des ordinateurs de bureau, des téléphones iOS, Android et Blackberry et des appareils mobiles Windows. Voir [documentation de Dynamic Media Classic sur les visionneuses de vidéos adaptatives pour plus d’informations](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
 
 ## A propos de FFMPEG et de Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -66,7 +64,7 @@ Si vous avez besoin d’un worfklow ou d’une création de versions pour les re
 
 Si vous n’avez pas besoin d’un flux de travail ou d’un contrôle de version pour vos ressources, téléchargez-les vers Dynamic Media Classic. Vous trouverez ci-dessous le worfklow recommandé :
 
-1. Dans Dynamic Media Classic, [configurez un transfert et un codage FTP planifiés vers Dynamic Media Classic (système automatisé)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. Dans l’application de bureau Dynamic Media Classic, [configurez un transfert et un codage FTP planifiés vers Dynamic Media Classic (système automatisé)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
 1. Dans AEM, accédez aux ressources vidéo dans WCM dans l’onglet **[!UICONTROL Dynamic Media Classic]** de l’outil de recherche de contenu.
 1. Auteur avec le composant vidéo Dynamic Media Classic.
 
@@ -85,7 +83,7 @@ Si vous n’avez pas besoin d’un flux de travail ou d’un contrôle de versio
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur la signification des paramètres vidéo prédéfinis, voir la [documentation Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html).
+   >Pour plus d’informations sur la signification des paramètres vidéo prédéfinis, voir [Paramètres vidéo prédéfinis pour le codage de fichiers vidéo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files).
    >
    >Adobe recommande de sélectionner les deux ensembles de vidéos adaptables lors de la configuration des paramètres prédéfinis ou de sélectionner l’option **[!UICONTROL Codage vidéo adaptative]**.
 
@@ -112,7 +110,7 @@ Pour télécharger votre vidéo source Principale vers Dynamic Media Classic dep
 
 ### Composant vidéo de base par rapport au composant vidéo de Dynamic Media Classic {#foundation-video-component-versus-scene-video-component}
 
-Lorsque vous utilisez AEM, vous avez accès au composant vidéo disponible dans Sites et au composant vidéo Dynamic Media Classic (Scene7). Ces composants ne sont pas interchangeables.
+Lorsque vous utilisez AEM, vous avez accès au composant vidéo disponible dans Sites et au composant vidéo Dynamic Media Classic. Ces composants ne sont pas interchangeables.
 
 Le composant vidéo Dynamic Media Classic ne fonctionne que pour les vidéos Dynamic Media Classic. Le composant foundation fonctionne avec des vidéos stockées à partir d’AEM (à l’aide de ffmpeg) et de vidéos Dynamic Media Classic.
 
@@ -131,7 +129,7 @@ Même si l’utilisation du composant vidéo Dynamic Media Classic est recommand
 
 ### aem Vidéo et vidéo Dynamic Media Classic {#aem-video-and-scene-video-comparison}
 
-Le tableau suivant fournit une comparaison de niveau élevé des fonctions prises en charge par le composant vidéo de base AEM et le composant vidéo Scene7 :
+Le tableau suivant présente une comparaison de haut niveau des fonctionnalités prises en charge entre le composant AEM Foundation Video et le composant Dynamic Media Classic Video :
 
 |  | Vidéo de base AEM | Vidéo Dynamic Media Classic |
 |---|---|---|
@@ -162,8 +160,8 @@ Les divers codages vidéo sont créés selon les paramètres prédéfinis de cod
 
    | Propriété | Description |
    |---|---|
-   | Configuration de cloud Dynamic Media Classic (Scene7) | Configuration de cloud à utiliser pour les paramètres prédéfinis de codage. |
-   | Paramètre prédéfini de codage Dynamic Media Classic (Scene7) | Paramètre prédéfini de codage à associer à ce profil vidéo. |
+   | Configuration de cloud Dynamic Media Classic | Configuration de cloud à utiliser pour les paramètres prédéfinis de codage. |
+   | Paramètre prédéfini de codage Dynamic Media Classic | Paramètre prédéfini de codage à associer à ce profil vidéo. |
    | Type de vidéo HTML5 | Cette propriété permet de définir la valeur de la propriété du type de l’élément source vidéo HTML5. Ces informations ne sont pas fournies par les paramètres prédéfinis de codage Dynamic Media Classic, mais sont requises pour effectuer le rendu correct des vidéos à l’aide de l’élément vidéo HTML5. Une liste des formats courants est fournie mais ils peuvent être remplacés par d’autres formats. |
 
    Répétez cette étape pour tous les paramètres prédéfinis de codage sélectionnés dans la configuration de cloud que vous voulez utiliser dans le composant vidéo.
@@ -185,7 +183,7 @@ Le composant vidéo de base doit connaître les profils vidéo à utiliser afin 
 
 #### Liste de contrôle {#checklist}
 
-1. Créez une configuration de cloud Dynamic Media Classic (Scene7). S’assurer que les paramètres prédéfinis de codage vidéo sont définis et que l’importateur fonctionne.
+1. Créez une configuration de cloud Dynamic Media Classic. S’assurer que les paramètres prédéfinis de codage vidéo sont définis et que l’importateur fonctionne.
 1. Créez un profil vidéo Dynamic Media Classic pour chaque paramètre prédéfini de codage vidéo sélectionné dans la configuration cloud.
 1. Les profils vidéo doivent être activés.
 1. Configurer la conception du composant vidéo de base sur votre page.
