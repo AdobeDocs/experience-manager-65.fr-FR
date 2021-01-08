@@ -10,17 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe392c24-d01e-4d5b-9af9-9ec500adc61a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 100%
+source-wordcount: '88'
+ht-degree: 81%
 
 ---
 
 
 # Notification de fin de prise en charge de la visionneuse Flash{#flash-viewers-end-of-life-notice}
 
-*À compter du 31 janvier 2017, Adobe Dynamic Media Classic (Scene7) a officiellement arrêté la prise en charge de la plate-forme de la visionneuse Flash.*
+*Depuis le 31 janvier 2017, l’Adobe Dynamic Media Classic (anciennement Scene7) a officiellement mis fin à la prise en charge de la plate-forme de lecteur de Flash.*
 
 *Pour en savoir plus sur ce changement important, consultez les questions fréquentes à l’adresse suivante :*
 
