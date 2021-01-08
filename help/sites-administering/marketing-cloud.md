@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 86%
+source-wordcount: '1005'
+ht-degree: 75%
 
 ---
 
@@ -72,22 +72,15 @@ Souscrivez à l’intégration avec Analytics et/ou Target afin de permettre l�
 
 Pour plus d’informations, voir [Souscription à Adobe Analytics et Target.](/help/sites-administering/opt-in.md)
 
-## Intégration à Scene7  {#integrating-with-scene}
+## Intégration à l’Adobe Dynamic Media Classic {#integrating-with-scene}
 
-[Adobe Scene7](https://www.adobe.com/products/scene7.html) est une solution hébergée permettant la publication, la gestion, l’enrichissement et la livraison de ressources marketing dynamiques et le merchandising visuel enrichi sur une multiplicité de canaux : web, terminaux mobiles, courrier électronique, réseaux sociaux, écrans connectés à Internet et impression.
+Adobe Dynamic Media Classic est une solution hébergée qui permet de publier, gérer, améliorer et diffuser des ressources marketing dynamiques et du marchandisage visuel optimisé sur le Web, les mobiles, les e-mails, les médias sociaux, les écrans connectés à Internet et l’impression.
 
-Dans AEM, vous pouvez publier des ressources numériques directement d’AEM vers Scene7, ainsi que de Scene7 vers AEM.
+En AEM, vous pouvez publier des ressources numériques directement d’AEM vers Dynamic Media Classic et vous pouvez publier des ressources numériques de Dynamic Media Classic vers AEM.
 
-En outre, vous pouvez consulter les ressources AEM publiées dans Scene7 dans différentes visionneuses :
+En outre, vous pouvez vue AEM fichiers publiés dans Dynamic Media Classic dans différentes visionneuses, telles que Zoom de base et Vidéo.
 
-* Zoom de base
-* Zoom sur la fenêtre déroulante DHTML
-* Zoom sur la fenêtre déroulante Flash
-* Vidéo
-* Modèle  Template
-* Modèle d’image
-
-Pour plus d&#39;informations sur la façon dont AEM s&#39;intègre à Scene7, consultez la documentation [Intégration à Scene7](/help/sites-administering/scene7.md).
+Pour plus d’informations sur la façon dont AEM s’intègre à Dynamic Media Classic, voir la documentation [Intégration à Dynamic Media Classic](/help/sites-administering/scene7.md).
 
 ## Intégration à Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
@@ -101,7 +94,7 @@ L’intégration à Adobe Audience Manager a été supprimée dans AEM 6.3.
 
 ## Intégration à Search&amp;Promote  {#integrating-with-search-promote}
 
-Avec [Adobe Search&amp;Promote](https://www.omniture.com/en/products/conversion/search-and-promote), les marketeurs peuvent optimiser la manière dont les utilisateurs parcourent, recherchent, comparent et sélectionnent des produits et du contenu sur les sites web et mobiles. Les entreprises peuvent facilement faire la promotion des éléments importants en fonction des objectifs de l’entreprise et de l’intention des visiteurs, tout en automatisant les activités de marchandisation et de promotion par l’intermédiaire de déclencheurs et de mesures reposant sur les indicateurs de performances clés.
+[Adobe Search&amp;](https://www.omniture.com/en/products/conversion/search-and-promote) Promotepermet aux spécialistes du marketing d’optimiser la manière dont les visiteurs naviguent, recherchent, comparent et sélectionnent les produits et le contenu appropriés sur les sites Web et mobiles. Les entreprises peuvent facilement faire la promotion des éléments importants en fonction des objectifs de l’entreprise et de l’intention des visiteurs, tout en automatisant les activités de marchandisation et de promotion par l’intermédiaire de déclencheurs et de mesures reposant sur les indicateurs de performances clés.
 
 Adobe Search&amp;Promote est une application hébergée, évolutive et fiable de recherche de sites, extensible jusqu’à plusieurs millions de pages ou de produits, pour les entreprises en ligne au trafic de visite important allant de la vente au détail aux sites d’informations. Cet outil offre une maîtrise inégalée aux marketeurs et une pertinence corroborée par des mesures.
 
