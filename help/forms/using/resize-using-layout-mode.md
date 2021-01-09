@@ -2,9 +2,9 @@
 title: Utiliser le mode Mise en page pour redimensionner les composants des formulaires adaptatifs
 description: 'Définir la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
 translation-type: tm+mt
-source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
+source-git-commit: 923c31bf67c7ad480ef3c3a1e312b4bd841bac6d
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1045'
 ht-degree: 2%
 
 ---
@@ -35,12 +35,11 @@ Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut 
 
    La barre d’outils qui s’affiche après avoir appuyé sur des composants comprend les options suivantes :
 
-   * **Parent :** sélectionnez le parent d’un composant.
-   * **Flottant sur la nouvelle ligne :** déplacez le composant sur la ligne suivante s’il y a plusieurs composants dans la même ligne.
+   * **[!UICONTROL Parent]** : Sélectionnez le parent d’un composant.
+   * **[!UICONTROL Rétablir la disposition]** des points d’arrêt : Annulez toutes les modifications de redimensionnement et appliquez la mise en page par défaut au composant.
+   * **[!UICONTROL Flotter vers la nouvelle ligne]** : Déplacez le composant vers la ligne suivante s’il existe plusieurs composants dans la même ligne.
 
-   En outre, vous pouvez annuler toutes les modifications de redimensionnement et appliquer la mise en page par défaut au panneau contenant des composants redimensionnés à l’aide de l’option **[!UICONTROL Rétablir la mise en page du point d’arrêt]** ( ![Rétablir le point d’arrêt](assets/reverttopreviouslypublishedversion.png)). Appuyez sur le parent du composant redimensionné pour vue à l’option.
-
-   Vous pouvez appuyer sur le composant et utiliser l&#39;option **[!UICONTROL Rétablir la disposition du point d&#39;arrêt]** pour annuler toutes les modifications de redimensionnement et appliquer la disposition par défaut au niveau du composant.
+   Vous pouvez également utiliser l’option **[!UICONTROL Rétablir la disposition du point d’arrêt]** ( ![Rétablir le point d’arrêt](assets/reverttopreviouslypublishedversion.png)) au niveau du panneau pour annuler toutes les modifications de redimensionnement.
 
    >[!NOTE]
    >
