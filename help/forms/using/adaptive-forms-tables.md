@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
+source-git-commit: 01c30e78d1f89e8c07abeb0ac19af38722010dd0
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 79%
+source-wordcount: '2428'
+ht-degree: 75%
 
 ---
 
@@ -107,6 +107,14 @@ Pour activer le tri :
    De même, un en-tête de colonne avec une flèche vers le bas représente que les valeurs de la colonne sont affichées dans l’ordre décroissant.
 
    Vous pouvez également apporter des modifications au tableau en mode **Prévisualisation** et cliquer de nouveau sur l’en-tête de colonne pour trier les valeurs de colonne.
+
+## Définir la largeur d&#39;une colonne pour un tableau {#set-column-width}
+
+Exécutez les étapes suivantes pour définir la largeur de colonne d’un tableau :
+
+1. Dans l&#39;onglet **[!UICONTROL Contenu]**, appuyez sur le composant **[!UICONTROL Table]** et appuyez sur l&#39;icône Configurer (![Configurer](assets/configure-icon.svg)).
+
+1. Entrez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, la spécification de 2,4,6 comme valeur dans le champ **[!UICONTROL Largeur de colonne]** entraîne la définition de la largeur des colonnes comme 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième colonne. 2/12 car la largeur de la première colonne correspond à un sixième de la largeur du tableau. De même, le 12/4 définit la largeur de la deuxième colonne comme un tiers de la largeur du tableau et le 6/12 comme la largeur de la troisième colonne comme la moitié de la largeur du tableau.
 
 ## Configuration du style de tableau {#configure}
 
