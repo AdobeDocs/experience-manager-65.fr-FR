@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
 workflow-type: tm+mt
-source-wordcount: '7287'
-ht-degree: 87%
+source-wordcount: '7364'
+ht-degree: 85%
 
 ---
 
@@ -334,6 +334,10 @@ L’application externe est intégrée au système de paragraphes de la page AE
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
+
 Le composant Flash vous permet de charger une animation Flash. Faites glisser un élément Flash à partir de l’Outil de recherche de contenu ou utilisez la boîte de dialogue :
 
 * **Modèle**
@@ -544,6 +548,10 @@ L’exemple suivant illustre un composant **Liste** affichant une liste de pages
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
+
 Ces options fournissent les champs de nom d’utilisateur et de mot de passe.
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
@@ -579,6 +587,10 @@ Vous pouvez configurer :
       Texte indiquant que l’utilisateur est déjà connecté.
 
 ### État de la commande {#order-status}
+
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
 
 * **Titre**
 
@@ -721,7 +733,11 @@ Si nécessaire, vous pouvez configurer l’option suivante :
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
+
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
 
 Ce composant vous permet de charger une série d’images à afficher sous forme de diaporama dans la page. Vous pouvez ajouter ou supprimer des images et leur attribuer un titre. Sous l’onglet Avancé, vous pouvez également spécifier la taille de la zone d’affichage.
 
@@ -906,7 +922,11 @@ L’exemple suivant montre un composant **Titre** affiché (la conception est d�
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+>Ce composant de base est obsolète. Adobe recommande plutôt de tirer parti du [composant principal incorporé ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html).
+
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
 
 Le composant **Vidéo** permet de placer un élément vidéo prédéfini « prêt à l’emploi » sur une page.
 
@@ -1335,6 +1355,10 @@ Le composant est configuré pour une utilisation immédiate, mais vous pouvez mo
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
+
 Le composant Captcha requiert que l’utilisateur saisisse une chaîne alphanumérique comme affichée à l’écran. La chaîne est modifiée à chaque actualisation.
 
 ![dc_form_captcha](assets/dc_form_captcha.png)
@@ -1417,7 +1441,7 @@ Ce composant permet de créer un champ masqué. Ceux-ci peuvent être utilisés 
 >
 >Voir [Affichage et masquage de composants de formulaire](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Bouton Image {#image-button}
+### Bouton Image  {#image-button}
 
 >[!CAUTION]
 >
