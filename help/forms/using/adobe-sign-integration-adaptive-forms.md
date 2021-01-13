@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+source-git-commit: c451948c43004d084bc3fce7a2c6ad99381f1ea8
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 33%
+source-wordcount: '970'
+ht-degree: 32%
 
 ---
 
@@ -85,6 +85,9 @@ Une fois les conditions préalables en place, effectuez les étapes suivantes po
    **na1** fait référence au partitionnement de base de données par défaut.
 
    Vous pouvez modifier la valeur du partitionnement de base de données. Redémarrez le serveur pour pouvoir utiliser la nouvelle valeur pour le partitionnement de base de données.
+
+   >[!NOTE]
+   Assurez-vous que les configurations des instances d’auteur et de publication pointent vers le même partage. Si vous créez plusieurs configurations Adobe Sign pour une organisation, assurez-vous que toutes les configurations utilisent le même partage.
 
 1. Spécifiez l’**ID client** (également appelé ID de l&#39;application) et la **clé secrète client** copiée à l’étape 8. Sélectionnez l’option **[!UICONTROL Activer pour les pièces jointes également]** pour ajouter les fichiers joints à un formulaire adaptatif au document Adobe Sign correspondant envoyé à des fins de signature.[!DNL Adobe Sign]
 
