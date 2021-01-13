@@ -9,10 +9,10 @@ topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 428d675bd254c18651c1188de26b706b5ad3d55c
+source-git-commit: 4d95d0e38acc54e1ebbb9f9e31761205533e99f9
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 82%
+source-wordcount: '1043'
+ht-degree: 81%
 
 ---
 
@@ -70,6 +70,7 @@ Voici certaines restrictions, recommandations et aspects importants à garder à
 
 * Il est recommandé d’utiliser les formulaires adaptatifs basés sur un schéma XSD plutôt que les formulaires adaptatifs basés sur XFA pour configurer le chargement différé des formulaires volumineux. Le gain de performances en raison de l’implémentation du chargement différé dans les formulaires adaptatifs basés sur XFA est moins important que dans les formulaires adaptatifs XSD.
 * Ne configurez pas le chargement différé sur les fragments d’un formulaire adaptatif qui utilise **[!UICONTROL Réactif -tout sur une page sans disposition de navigation]** pour le panneau racine. En raison de la configuration de la mise en page réactive, tous les fragments se chargent simultanément dans un formulaire adaptatif. Elle peut également entraîner une dégradation des performances.
+* Il est recommandé de ne pas configurer le chargement différé sur le premier fragment d’un formulaire adaptatif.
 * Il est recommandé de ne pas configurer le chargement différé sur des fragments du premier panneau s’affichant au chargement du formulaire adaptatif.
 * Le chargement différé est pris en charge jusqu’à deux niveaux dans la hiérarchie de fragment.
 * Assurez-vous que les champs signalés comme étant globaux sont uniques sur un formulaire adaptatif.
