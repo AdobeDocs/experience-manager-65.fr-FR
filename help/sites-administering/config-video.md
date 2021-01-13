@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
+source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '500'
 ht-degree: 22%
 
 ---
@@ -23,6 +23,14 @@ ht-degree: 22%
 Le [composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer une ressource vidéo prédéfinie prête à l’emploi (prête à l’emploi) sur votre page.
 
 Pour un transcodage correct, un administrateur installe FFmpeg séparément. Voir [Installer FFmpeg et configurer AEM](#install-ffmpeg). Les administrateurs peuvent également [configurer des Profils vidéo](#configure-video-profiles) à utiliser avec des éléments HTML5.
+
+>[!CAUTION]
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt de tirer parti du [composant principal incorporé ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html).
+
+>[!CAUTION]
+>
+>Ce composant ne devrait plus fonctionner de manière prête sans une personnalisation étendue au niveau du projet.
 
 ## Configuration des profils vidéo {#configure-video-profiles}
 
