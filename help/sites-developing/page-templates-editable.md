@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
-source-wordcount: '3218'
-ht-degree: 91%
+source-wordcount: '3285'
+ht-degree: 89%
 
 ---
 
@@ -130,6 +130,16 @@ Lors de la création d’un modèle modifiable :
 
    Pour obtenir des informations techniques sur la création de pages à l’aide de modèles modifiables, consultez la section [Pages de contenu créées](/help/sites-developing/page-templates-editable.md#resultant-content-pages) de ce document.
 
+>[!TIP]
+>
+>Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. À des fins d’internalisation, il est recommandé d’utiliser la fonction de localisation [des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+
+>[!NOTE]
+>
+>Les modèles sont des outils puissants pour rationaliser votre processus de création de page. Cependant, trop de modèles peuvent submerger les auteurs et rendre la création de page déroutante. Une bonne règle générale consiste à garder le nombre de modèles en dessous de 100.
+>
+>L&#39;Adobe ne recommande pas d&#39;avoir plus de 1000 modèles en raison des impacts potentiels sur le rendement.
+
 >[!NOTE]
 >
 >La bibliothèque cliente de l’éditeur suppose que l’espace de noms `cq.shared` existe dans les pages de contenu. Si cet élément est absent, l’erreur JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` est renvoyée.
@@ -137,10 +147,6 @@ Lors de la création d’un modèle modifiable :
 >`cq.shared` est inclus dans tous les exemples de pages de contenu. Par conséquent, tout contenu basé sur ces pages inclut automatiquement `cq.shared`. Toutefois, si vous décidez de créer vos propres pages de contenu à partir de zéro, sans vous servir de l’exemple de contenu, vous devez veiller à inclure l’espace de noms `cq.shared`.
 >
 >Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
-
->[!CAUTION]
->
->Ne saisissez jamais d’informations qui doivent[ être internationalisées](/help/sites-developing/i18n.md) dans un modèle.
 
 ## Dossiers de modèles {#template-folders}
 
@@ -213,7 +219,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
 1. Accédez à **Navigation globale** > **Outils** > **Explorateur de configurations**.
 
-   Les dossiers existants sont répertoriés à gauche, y compris **Global**.
+   Les dossiers existants sont répertoriés à gauche, y compris le dossier **global**.
 
 1. Cliquez sur **Créer**.
 1. Les champs suivants doivent être configurés dans la boîte de dialogue **Créer une configuration** :
