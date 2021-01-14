@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f1c932a5937e8a115e2849935b8f5ea5c2613d
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
-source-wordcount: '4833'
-ht-degree: 97%
+source-wordcount: '4901'
+ht-degree: 96%
 
 ---
 
@@ -148,7 +148,7 @@ Lors de la création d’un modèle modifiable :
 
 >[!CAUTION]
 >
->Ne saisissez jamais d’informations qui doivent[ être internationalisées](/help/sites-developing/i18n.md) dans un modèle.
+>Ne saisissez jamais d’informations qui doivent[ être internationalisées](/help/sites-developing/i18n.md) dans un modèle. À des fins d&#39;internalisation, il est recommandé d&#39;utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
@@ -208,6 +208,12 @@ Pour afficher et/ou modifier les propriétés :
 1. Dans la **console de modèles**, sélectionnez le modèle.
 1. Sélectionnez **Afficher les propriétés** dans la barre d’outils ou les options rapides pour ouvrir la boîte de dialogue.
 1. Vous pouvez maintenant afficher ou modifier les propriétés du modèle.
+
+>[!NOTE]
+>
+>Les modèles sont des outils puissants pour rationaliser votre processus de création de page. Cependant, trop de modèles peuvent submerger les auteurs et rendre la création de page déroutante. Une bonne règle générale consiste à garder le nombre de modèles en dessous de 100.
+>
+>L&#39;Adobe ne recommande pas d&#39;avoir plus de 1000 modèles en raison des impacts potentiels sur le rendement.
 
 >[!NOTE]
 >
@@ -482,7 +488,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    >[!CAUTION]
    >
-   >Remarque : Dans AEM, les rapports de recadrage sont définis sous forme de **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur. Cette différence a été créée pour des raisons de compatibilité héritée. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
+   >Remarque : Dans AEM, les rapports de recadrage sont définis sous forme de **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur, à des fins de compatibilité avec les versions héritées. Les utilisateurs de la création de pages ne percevront aucune différence à condition que vous définissiez clairement le **Nom**, car c’est ce dernier qui s’affiche dans l’interface utilisateur.
 
    >[!NOTE]
    >
