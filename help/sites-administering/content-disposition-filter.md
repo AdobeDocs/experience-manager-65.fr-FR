@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 48%
+ht-degree: 45%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 48%
 
 Le filtre de disposition du contenu est une fonctionnalité de sécurité permettant de lutter contre les attaques XSS sur des fichiers SVG.
 
-Une fois installé, le filtre bloque l’accès à toutes les ressources. Par exemple, il vous a été impossible d’afficher un PDF en ligne. Cette section explique comment configurer ce filtre en fonction de vos besoins.
+Une fois installé, le filtre bloque l’accès à toutes les ressources. Par exemple, vous ne pouviez pas vue d’un PDF en ligne. Cette section explique comment configurer ce filtre en fonction de vos besoins.
 
 ## Configuration du filtre de disposition du contenu  {#configure-content-disposition-filter}
 
