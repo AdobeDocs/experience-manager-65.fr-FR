@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 71e827dc17fd1c36230cb8d26b68d7f41c584e60
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '6596'
+ht-degree: 94%
 
 ---
 
@@ -418,7 +418,7 @@ Vous allez configurer l’intégration dans les produits Adobe suivants :
 
 De plus, si cette solution d’intégration est utilisée avec AEM Sites, la configuration suivante doit également être effectuée :
 
-* Console Adobe I/O : l’intégration est créée pour Adobe Launch.
+* [!DNL Adobe I/O] Console : l&#39;intégration est créée pour le lancement d&#39;Adobe.
 * Nœud Auteur AEM : configuration IMS et configuration du cloud Adobe Launch.
 
 Dans le cadre de la configuration, assurez-vous dans Adobe Experience Cloud d’avoir accès à une société pour laquelle Adobe Analytics et Adobe Launch sont déjà activés.
@@ -693,7 +693,7 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Dans un nouvel onglet du navigateur, accédez à la [Console Adobe I/O](https://console.adobe.io/integrations).
+1. Dans un nouvel onglet du navigateur, accédez à la [[!DNL Adobe I/O] Console](https://console.adobe.io/integrations).
 
 1. Sur la page **[!UICONTROL Intégrations de la console Adobe I/O]**, près du coin supérieur droit, cliquez sur **[!UICONTROL Nouvelle intégration]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une intégration]** Créer une intégration, vérifiez que le bouton radio **[!UICONTROL Accès à une API]** est sélectionné, puis cliquez sur **[!UICONTROL Continuer]**.
@@ -850,4 +850,4 @@ Elle est toutefois prise en charge dans le nœud Publication AEM. Avec les param
 
 Il est possible de contourner cette limitation en spécifiant l’URL de développement ou d’évaluation de la bibliothèque Adobe Launch dans la configuration du cloud Adobe Launch pour la publication AEM ci-dessus. Ce faisant, le nœud Publication AEM utilise la version de développement ou d’évaluation de la bibliothèque Adobe Launch.
 
-Voir [Intégration d’AEM à Adobe Launch via Adobe I/O](https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html) pour plus d’informations sur la configuration du cloud Adobe Launch.
+Voir [Intégration d’AEM à Adobe Launch via  [!DNL Adobe I/O] pour plus d’informations sur la configuration du cloud Adobe Launch.](https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html)
