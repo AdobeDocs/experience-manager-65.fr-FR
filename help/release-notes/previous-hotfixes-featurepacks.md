@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes 
 description: Notes de mise à jour pour  [!DNL Adobe Experience Manager] Service Packs 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '14953'
+source-wordcount: '14944'
 ht-degree: 20%
 
 ---
@@ -280,7 +280,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 
 ### [!DNL Communities] {#communities-6560}
 
-* Le partage d&#39;un billet sur les médias sociaux montre une option obsolète, Google+ (NPR-33877).
+* Le partage d&#39;un billet sur les médias sociaux montre une option obsolète Google+ (NPR-33877).
 
 * Le membre de la communauté ne peut pas modifier le modèle de groupe ou d&#39;autres paramètres de fonction de groupe (NPR-33530).
 
@@ -454,7 +454,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 
 **Améliorations de l’accessibilité dans les ressources des Experience Manager**
 
-* Il est désormais possible d’activer l’option [!UICONTROL Commentaires] de la liste et de cliquer sur [!UICONTROL Créer] des commentaires de version sous [!UICONTROL Créer une nouvelle version] dans le [!UICONTROL panneau de ressources ] Timeline&lt;a7/> (NPR-33424).
+* Il est désormais possible d’activer l’option [!UICONTROL Commentaires] de la liste et de cliquer sur [!UICONTROL Créer] des commentaires de version sous [!UICONTROL Créer une nouvelle version] dans le [!UICONTROL panneau de ressources ] Timeline (NPR-33424).
 
 * Il est maintenant possible d&#39;accéder à l&#39;option [!UICONTROL Paramètres de Vue] pour les ressources et de modifier les paramètres dans la boîte de dialogue [!UICONTROL Paramètres de Vue] à l&#39;aide des touches du clavier (NPR-33420).
 
@@ -633,7 +633,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 * Le cache interne est effacé lorsqu’une page avec un composant Adobe Target est publiée (NPR-33162).
 * L&#39;intégration à Adobe Target ne fonctionne pas sur [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Lors de la configuration d’Adobe Target, les champs [!UICONTROL Société] et [!UICONTROL Report Suite] n’apparaissent pas lors de la sélection d’une source de rapports (NPR-32502).
-* Lors de l’exportation de [!DNL Experience Fragments] à l’aide d’Adobe I/O, les métadonnées telles que Source Product ne sont pas exportées dans Adobe Target (NPR-32159).
+* Lors de l&#39;exportation de [!DNL Experience Fragments] à l&#39;aide de [!DNL Adobe I/O], les métadonnées telles que Source Product ne sont pas exportées en Adobe Target (NPR-32159).
 * Les utilisateurs IMS autorisés du groupe d&#39;administrateurs de Experience Manager locaux ne peuvent pas créer ni modifier de configurations IMS (NPR-33045).
 * La page des configurations de lancement d&#39;Adobe n&#39;affiche pas tous les enregistrements (NPR-33011).
 * Les utilisateurs du groupe d’auteurs de contenu ne peuvent pas modifier les propriétés d’un composant Adobe Target en raison d’une erreur JavaScript (NPR-32996).
@@ -704,7 +704,7 @@ Adobe Experience Manager 6.5.4.0 est une mise à jour importante qui comprend de
 
 Voici quelques-unes des principales fonctionnalités et améliorations introduites dans Adobe Experience Manager 6.5.4.0 :
 
-* Adobe Experience Manager Assets est désormais configuré avec Brand Portal via Adobe I/O Console.
+* Adobe Experience Manager Assets est désormais configuré avec Brand Portal via la console [!DNL Adobe I/O].
 
 * Une nouvelle étape [Générer une sortie imprimable](../forms/using/aem-forms-workflow-step-reference.md) est désormais disponible pour les workflows Adobe Experience Manager Forms.
 
@@ -868,7 +868,7 @@ Pour obtenir une liste complète des fonctionnalités et des points saillants pr
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Les utilisateurs du portail de marque ne peuvent pas publier les ressources du dossier de contributions dans [!DNL Assets] lors de la mise à niveau vers Adobe I/O sur Experience Manager 6.5.4 (CQDOC-15655). Pour un correctif immédiat sur Experience Manager 6.5.4, il est recommandé de [télécharger le correctif logiciel](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) et de l’installer sur votre instance d’auteur.
+* Les utilisateurs du portail de marque ne peuvent pas publier les ressources du dossier de contribution dans [!DNL Assets] lors de la mise à niveau vers [!DNL Adobe I/O] sur le Experience Manager 6.5.4 (CQDOC-15655). Pour un correctif immédiat sur Experience Manager 6.5.4, il est recommandé de [télécharger le correctif logiciel](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) et de l’installer sur votre instance d’auteur.
 
 * Les valeurs des fenêtres contextuelles de schéma de métadonnées ne sont pas visibles dans les propriétés des ressources (CQ-4283287).
 
