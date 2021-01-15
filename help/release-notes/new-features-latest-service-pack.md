@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2815'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ Vous pouvez désormais effectuer les déplacements de page et les déploiements 
 
 Vous pouvez désormais utiliser l’option reset pour chaque composant en mode Mise en page d’un formulaire adaptatif. Lorsque vous définissez une mise en page à plusieurs colonnes pour un panneau, vous pouvez utiliser cette fonction pour réinitialiser des composants individuels dans le panneau. Voir [Utiliser le mode de mise en page pour redimensionner les composants](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
-## Fonctions clés des Service Packs [!DNL Experience Manager] 6.5 précédents{#key-features-previous-service-packs}
+## Fonctions clés des Service Packs {#key-features-previous-service-packs} 6.5 précédents[!DNL Experience Manager]
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
@@ -168,7 +168,7 @@ La prise en charge des images 3D dans [!DNL Dynamic Media] permet aux clients de
 
 #### Configurer [!DNL Experience Manager Assets] avec [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-Le canal d&#39;autorisation entre [!DNL Experience Manager Assets] et [!DNL Brand Portal] est modifié. Auparavant, [!DNL Brand Portal] était configuré dans l’interface utilisateur classique via la passerelle OAuth héritée, qui utilise l’échange de jetons JWT pour obtenir un Jeton d&#39;accès IMS pour l’autorisation. [!DNL Experience Manager Assets] est maintenant configuré avec  [!DNL Brand Portal] via Adobe I/O, qui achète un jeton IMS pour l&#39;autorisation de votre  [!DNL Brand Portal] client.
+Le canal d&#39;autorisation entre [!DNL Experience Manager Assets] et [!DNL Brand Portal] est modifié. Auparavant, [!DNL Brand Portal] était configuré dans l’interface utilisateur classique via la passerelle OAuth héritée, qui utilise l’échange de jetons JWT pour obtenir un Jeton d&#39;accès IMS pour l’autorisation. [!DNL Experience Manager Assets] est maintenant configuré avec  [!DNL Brand Portal] through  [!DNL Adobe I/O], qui achète un jeton IMS pour l&#39;autorisation de votre  [!DNL Brand Portal] client.
 
 Les étapes de configuration de [!DNL Experience Manager Assets] avec [!DNL Brand Portal] diffèrent selon votre version [!DNL Experience Manager] et selon que vous configurez pour la première fois ou mettez à niveau les configurations existantes. Voir [Configuration des ressources du Experience Manager avec le portail de marque](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) pour plus d’informations.
 
