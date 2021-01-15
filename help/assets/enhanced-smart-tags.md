@@ -3,17 +3,17 @@ title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e124025295f29d6f3999dc52467301d48bceee75
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1514'
+ht-degree: 60%
 
 ---
 
 
 # Comprendre, appliquer et traiter les balises actives {#enhanced-smart-tags}
 
-Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources peuvent être facilement identifiées et récupérées par des recherches reposant sur les balises.
+Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des actifs avec un vocabulaire contrôlé par la taxonomie permet d’identifier et de récupérer facilement les actifs.
 
 Comparé aux vocabulaires des langages naturels, le balisage des ressources numériques basé sur la taxonomie métier aide à les aligner avec les activités d’une entreprise et à assurer que les ressources les mieux adaptées apparaissent dans les recherches.
 
@@ -25,7 +25,7 @@ Une fois une balise entraînée et prête, le service peut appliquer ces balises
 
 En arrière-plan, Smart Content Service utilise la structure Adobe Sensei AI pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-Smart Content Service est un service cloud hébergé sur Adobe I/O. Pour l&#39;utiliser dans [!DNL Adobe Experience Manager], l&#39;administrateur système doit intégrer votre déploiement [!DNL Experience Manager] à Adobe I/O.
+Smart Content Service est un service cloud hébergé sur [!DNL Adobe I/O]. Pour l&#39;utiliser dans [!DNL Adobe Experience Manager], l&#39;administrateur système doit intégrer votre déploiement [!DNL Experience Manager] à [!DNL Adobe I/O].
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
@@ -34,19 +34,19 @@ En résumé, voici les principales étapes pour utiliser le service de contenu d
 * Entraînement du service de contenu dynamique
 * Balisage automatique
 
-![organigramme](assets/flowchart.gif)
+![Organigramme](assets/flowchart.gif)
 
 ## Conditions préalables {#prerequisites}
 
-Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur Adobe I/O :
+Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur [!DNL Adobe I/O]:
 
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
 * Le service de contenu dynamique est activé pour votre organisation.
-* Le package de base Smart Content Services ne peut être ajouté qu’à un déploiement pour lequel un package de base [!DNL Sites] et un module complémentaire [!DNL Assets] ont reçu une licence.
+* Le package de base Smart Content Services ne peut être ajouté qu’à un déploiement pour lequel un package de base [!DNL Adobe Experience Manager Sites] et un module complémentaire [!DNL Assets] ont reçu une licence.
 
 ## Intégration {#onboarding}
 
-Smart Content Service est disponible à l&#39;achat en tant que module complémentaire de [!DNL Experience Manager]. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers Adobe I/O.
+Smart Content Service est disponible à l&#39;achat en tant que module complémentaire de [!DNL Experience Manager]. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers [!DNL Adobe I/O].
 
 L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager]. Pour intégrer le service à [!DNL Experience Manager Assets], voir [Configurer des balises actives](config-smart-tagging.md).
 
@@ -73,17 +73,17 @@ Ajoutez les ressources à un dossier, puis appliquez les balises à chaque resso
 
 ## Comprendre les résultats de la recherche [!DNL Experience Manager] avec des balises actives {#understandsearch}
 
-Par défaut, la recherche [!DNL Experience Manager] combine les termes recherchés avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
+Par défaut, la recherche [!DNL Experience Manager] combine les termes recherchés avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. L’utilisation de balises actives ajoute une clause `OR` supplémentaire pour rechercher les termes de recherche qui sont liés aux balises actives. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
-* ressources avec les mots-clés `woman` et `running` dans les métadonnées ;
+* Fichiers contenant des mots-clés `woman` et `running` dans les métadonnées.
 
-* ressources avec balise dynamique avec l’un des mots-clés.
+* Actifs balisés avec l’un des mots-clés.
 
 Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche des balises dynamiques. Dans l’exemple ci-dessus, l’ordre approximatif de l’affichage des résultats de recherche est le suivant :
 
-1. correspondances de `woman running` dans les différents champs de métadonnées.
-1. correspondances de `woman running` dans les balises intelligentes.
-1. correspondances de `woman` ou de `running` dans les balises intelligentes.
+1. Correspondances de `woman running` dans les différents champs de métadonnées.
+1. Correspondances de `woman running` dans les balises intelligentes.
+1. Correspondances de `woman` ou de `running` dans les balises intelligentes.
 
 >[!CAUTION]
 >
@@ -140,7 +140,7 @@ Vous pouvez déclencher le processus de balisage à partir de la console de proc
 
 >[!NOTE]
 >
->Lors des cycles de balisage suivants, seules les ressources modifiées seront à nouveau balisées avec des balises nouvellement entraînées. Cependant, même les ressources inchangées seront balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel du workflow de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources inchangées sont balisées lorsque l’intervalle dépasse 6 mois.
+>Lors des cycles de balisage suivants, seules les ressources modifiées sont à nouveau balisées avec des balises nouvellement entraînées. Cependant, même les ressources non modifiées sont balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel du processus de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources non modifiées sont balisées lorsque l’intervalle de temps dépasse six mois.
 
 ## Traiter ou modérer les balises actives appliquées {#manage-smart-tags}
 
