@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ad8ca7aaacd80bf5ca8daec78f7836e883e2343b
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '4277'
+source-wordcount: '4274'
 ht-degree: 5%
 
 ---
@@ -463,7 +463,7 @@ Vérifiez si vous utilisez une fonction ou une fonctionnalité dans un déploiem
 
 | Zone | Fonctionnalité | Remplacement |
 |---|---|---|
-| Intégrations | L’écran **[!UICONTROL souscription aux services Cloud AEM]** est obsolète. L’intégration des AEM et des Cibles étant mise à jour dans AEM 6.5 pour prendre en charge l’API Target Standard, qui utilise l’authentification via l’Adobe IMS et E/S, et le rôle croissant du lancement d’Adobe pour l’instrumentalisation de pages de données d’analyse et de personnalisation, l’assistant d’inclusion est devenu non pertinent du point de vue fonctionnel. | Configurez les connexions système, l’authentification IMS Adobe et les intégrations Adobe I/O via les services cloud AEM respectifs. |
+| Intégrations | L’écran **[!UICONTROL souscription aux services Cloud AEM]** est obsolète. L’intégration des AEM et des Cibles étant mise à jour dans AEM 6.5 pour prendre en charge l’API Target Standard, qui utilise l’authentification via l’Adobe IMS et E/S, et le rôle croissant du lancement d’Adobe pour l’instrumentalisation de pages de données d’analyse et de personnalisation, l’assistant d’inclusion est devenu non pertinent du point de vue fonctionnel. | Configurez les connexions système, l’authentification IMS Adobe et les intégrations [!DNL Adobe I/O] via les services cloud AEM correspondants. |
 | Connecteurs | L’Adobe JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013 est obsolète pour AEM 6.5. | N/A |
 
 ## Problèmes connus {#known-issues}
