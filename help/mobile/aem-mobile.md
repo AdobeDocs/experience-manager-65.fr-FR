@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: administering-on-demand-services-app
 discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a876a1a8d4aeb9e9a94c93a16742a4058307b0a8
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Un administrateur AEM est responsable des tâches suivantes lors de la création
 
 * [Configuration de vos groupes d’utilisateurs et d’utilisateurs](/help/mobile/aem-mobile-configure-users.md)
 * [Aperçu avec contrôle en amont](/help/mobile/aem-mobile-manage-ondemand-services.md)
-* [Administration de Content Services](//help/mobile/developing-content-services.md)
+* [Administration de Content Services](/help/mobile/developing-content-services.md)
 
 ## Ressources supplémentaires {#additional-resources}
 
