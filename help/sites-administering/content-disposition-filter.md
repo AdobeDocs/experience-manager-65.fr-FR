@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
+source-git-commit: bb50e530f0d015c0e7d06650157e3e3994082483
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 45%
@@ -34,5 +34,4 @@ Les options Filtre de disposition du contenu offrent les fonctionnalités suivan
 
 * Chemins d’accès aux ressources exclues : une liste de ressources exclues. Chaque chemin doit être absolu et complet. La correspondance des préfixes et les caractères génériques ne sont pas pris en charge.
 
-* Activer pour tous les chemins d’accès aux ressources : cet indicateur contrôle l’activation de ce filtre pour tous les chemins, à l’exception des chemins d’accès aux ressources exclues. En définissant cette valeur sur « true », vous pouvez ignorer les chemins de disposition du contenu. Indépendamment de la configuration, seuls les chemins de ressources sont couverts qui contiennent une propriété nommée jcr:data ou jcr:content jcr:data.
-
+* Activer pour tous les chemins d’accès aux ressources : cet indicateur contrôle l’activation de ce filtre pour tous les chemins, à l’exception des chemins d’accès aux ressources exclues. En définissant cette valeur sur « true », vous pouvez ignorer les chemins de disposition du contenu. Indépendamment de la configuration, seuls les chemins de ressources sont couverts qui contiennent une propriété nommée jcr:data ou jcr:content/jcr:data.
