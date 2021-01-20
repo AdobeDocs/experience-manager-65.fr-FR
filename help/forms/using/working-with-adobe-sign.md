@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70fff9b4029ba70fe0667dafa69fc6172f4b1733
+source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
 workflow-type: tm+mt
-source-wordcount: '3755'
+source-wordcount: '3827'
 ht-degree: 40%
 
 ---
@@ -119,7 +119,7 @@ Effectuez les étapes suivantes pour ajouter des champs à un formulaire adaptat
    >[!NOTE]
    >
    >    * L&#39;utilisation du bloc [!DNL Adobe Sign] n&#39;est pas obligatoire pour utiliser [!DNL Adobe Sign] dans un formulaire adaptatif. Si vous n’utilisez pas le bloc [!DNL Adobe Sign] et n’ajoutez pas de champs pour les signataires, le champ de signature par défaut s’affiche au bas des documents de signature.
-   >    * Utilisez le bloc [!DNL Adobe Sign] uniquement pour les formulaires adaptatifs qui génèrent automatiquement un Document d&#39;enregistrement. Si vous utilisez un fichier XDP personnalisé pour générer un Document d’enregistrement ou un formulaire adaptatif basé sur un modèle de formulaire, le bloc [!DNL Adobe Sign] n’est pas nécessaire.
+   >    * Utilisez le bloc [!DNL Adobe Sign] uniquement pour les formulaires adaptatifs qui génèrent automatiquement un Document d&#39;enregistrement. Si vous utilisez un fichier XDP personnalisé pour générer un Document d’enregistrement ou un formulaire adaptatif basé sur un modèle de formulaire, le bloc [!DNL Adobe Sign] n’est pas pris en charge.
 
 
 1. Sélectionnez le composant **[!UICONTROL Bloc d’Adobe Sign]** et appuyez sur l’icône **Modifier** ![aem_6_3_edit](assets/aem_6_3_edit.png). Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
@@ -300,7 +300,8 @@ Effectuez les étapes suivantes pour configurer le composant Étape de signature
       > Voici quelques bonnes pratiques :
    > * Le panneau de formulaire adaptatif contenant l’étape Signature se trouve toujours dans le dernier ou le deuxième dernier panneau d’un formulaire adaptatif. Il peut s’agir du deuxième dernier panneau uniquement lorsque le dernier panneau contient l’étape Résumé.
    > * Le panneau contenant le composant d’étape Signature ou Résumé ne peut pas contenir d’autre composant.
-   > * Les formulaires adaptatifs contenant l’étape de signature ne peuvent pas comporter de bouton d’envoi. L&#39;envoi est traité par le biais d&#39;un service en arrière-plan ou de l&#39;étape Résumé.
+   > * Les formulaires adaptatifs contenant l’étape de signature ne peuvent pas comporter de bouton d’envoi.
+   > * L’envoi pour les formulaires adaptatifs contenant l’étape Signature est traité par le biais d’un service en arrière-plan ou de l’étape Résumé. Si un signataire configuré remplit également le formulaire, l’avantage de la gestion de l’envoi du formulaire adaptatif à l’aide de l’étape Résumé est qu’il évalue immédiatement que le signataire a signé le formulaire et appelle l’action d’envoi. Un service en arrière-plan prend plus de temps pour évaluer si tous les signataires configurés ont signé le formulaire et retarde l’envoi du formulaire adaptatif.
    > * Concevez le formulaire pour empêcher l’utilisateur de revenir d’un panneau contenant l’étape Signature ou Résumé.
 
 
