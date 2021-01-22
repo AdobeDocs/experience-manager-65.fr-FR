@@ -280,7 +280,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 
 ### [!DNL Communities] {#communities-6560}
 
-* Le partage d&#39;un billet sur les médias sociaux montre une option obsolète Google+ (NPR-33877).
+* Le partage d&#39;un billet sur les médias sociaux montre une option obsolète, Google+ (NPR-33877).
 
 * Le membre de la communauté ne peut pas modifier le modèle de groupe ou d&#39;autres paramètres de fonction de groupe (NPR-33530).
 
