@@ -169,7 +169,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
    <td>Toute nouvelle configuration d’émulateur d’appareil mobile doit être migrée vers le nouvel emplacement.
     <ol>
      <li>Copiez toute nouvelle configuration d'émulateur de périphérique mobile de l'emplacement précédent vers le nouvel emplacement (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-     <li>Pour toutes les pages AEM Sites qui dépendent de ces configurations d'émulateur de périphérique mobile, mettez à jour le <span class="code"> &lt;a0/&gt; de la page.
+     <li>Pour toutes les pages AEM Sites qui dépendent de ces configurations d'émulateur de périphérique mobile, mettez à jour le <span class="code">  de la page.
        <code>
         jcr
        </code>
