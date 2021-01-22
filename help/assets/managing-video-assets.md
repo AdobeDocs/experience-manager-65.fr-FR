@@ -5,8 +5,8 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '807'
+ht-degree: 58%
 
 ---
 
@@ -56,7 +56,7 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
-1. Dans la page [!DNL Adobe Experience Manager] [!UICONTROL Web Console Bundles], sous la colonne Nom du tableau, recherchez **[!UICONTROL Adobe Granite Workflow External Process Handler]**, puis cliquez sur &lt;a3/> Granite Workflow External Process Handler.
+1. Dans la page [!DNL Adobe Experience Manager] [!UICONTROL Web Console Bundles], sous la colonne Nom du tableau, recherchez **[!UICONTROL Adobe Granite Workflow External Process Handler]**, puis cliquez sur  Granite Workflow External Process Handler.
 1. Sur la page [!UICONTROL Adobe Granite Workflow External Process Handler], définissez les secondes pour les champs **[!UICONTROL Default Timeout]** et **[!UICONTROL Max Timeout]** sur `18000` (cinq heures). Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Sur la page Modèles de processus, sélectionnez **[!UICONTROL Dynamic Media Encode Video]**, puis cliquez sur **[!UICONTROL Modifier]**.
