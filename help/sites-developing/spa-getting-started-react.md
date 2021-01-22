@@ -280,7 +280,7 @@ Il est régulièrement nécessaire que les composants d’une application sur un
 
 ## Étapes suivantes {#next-steps}
 
-Pour obtenir un guide détaillé sur la création de votre propre SPA, consultez le [Guide de prise en main de l’AEM Éditeur de la SPA - Événements WKND ](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+Pour obtenir un guide détaillé sur la création de votre propre SPA, consultez le [Guide de prise en main de l’AEM Éditeur de la SPA - Événements WKND ](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
 Pour plus d&#39;informations sur la façon de vous organiser pour développer SPA pour AEM voir l&#39;article [Développer un SPA pour l&#39;](/help/sites-developing/spa-architecture.md).
 
