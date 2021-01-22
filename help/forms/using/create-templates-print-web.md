@@ -240,9 +240,9 @@ Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le
    | Nom | Titre | Nombre de colonnes |
    |---|---|---|
    | customerdetails | Informations sur le client | 1 |
-   | billsummary | Récapitulatif de facturation | 1 |
+   | billsummary | Récapitulatif de facturation | 3 |
    | summarycharges | Récapitulatif des frais | 2 |
-   | itemisedcalls | Appels détaillés | 1 |
+   | itemisedcalls | Appels détaillés | 3 |
    | PayNow | Payez maintenant | 2 |
    | vas | Services à valeur ajoutée | 1 |
 
