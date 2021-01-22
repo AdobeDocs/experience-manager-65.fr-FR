@@ -136,8 +136,8 @@ Le script post est appelé lorsqu’un formulaire est envoyé pour traiter le fo
 `POST`.
 
    1. Ajouter un script de transfert qui est appelé lors de l’envoi du formulaire.
-Le nom du script est &lt;a0/&quot;, par ex. `forward.<extension`
-Ce script peut définir un chemin. `forward.jsp` La requête actuelle est ensuite transmise au chemin d’accès spécifié.
+Le nom du script est &lt;a0/&quot;, par ex. `forward.jsp`
+Ce script peut définir un chemin. `forward.<extension` La requête actuelle est ensuite transmise au chemin d’accès spécifié.
    L&#39;appel nécessaire est `FormsHelper#setForwardPath` (2 variantes). Un cas de figure classique consiste à effectuer une validation, ou logique, pour trouver le chemin cible, puis à effectuer un transfert vers ce chemin, laissant au servlet POST Sling par défaut le soin de procéder au stockage proprement dit dans JCR.
 
    Un autre servlet peut également procéder au traitement. Dans ce cas, l’action de formulaire et le fichier `forward.jsp` font simplement office de code de collage. Par exemple, l&#39;action de courrier à `/libs/foundation/components/form/actions/mail`, qui transfère les détails à `<currentpath>.mail.html`où se trouve une servlet de courrier.
