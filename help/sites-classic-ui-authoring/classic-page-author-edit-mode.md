@@ -1227,7 +1227,7 @@ Ce composant permet de créer un champ masqué. Ceux-ci peuvent être utilisés 
 Vous pouvez également personnaliser votre formulaire de manière à afficher ou masquer des composants de formulaire spécifiques en fonction de la valeur d’autres champs du formulaire. Changer la visibilité d’un champ de formulaire est utile lorsque le champ est requis uniquement dans certaines conditions.
 Voir [Affichage et masquage de composants de formulaire](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Bouton Image {#image-button}
+### Bouton Image  {#image-button}
 
 Un bouton d’image permet de créer un bouton comportant vos texte et image :
 
