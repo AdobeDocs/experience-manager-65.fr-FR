@@ -37,7 +37,7 @@ Le diagramme suivant affiche le rendu des services de contenu.
 
 ## Demande de JSON {#requesting-json}
 
-Utilisez **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto demande JSON.**
+Utilisez **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto demande JSON.]
 
 <table>
  <tbody>
