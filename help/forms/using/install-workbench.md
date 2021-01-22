@@ -65,7 +65,7 @@ L’illustration suivante illustre l’installation de Workbench, notamment :
 
 >[!NOTE]
 >
->Le serveur AEM Forms nécessite un programme d&#39;installation distinct. Pour plus d’informations, voir la documentation d’installation d’AEM Forms on JEE.
+>Le serveur AEM Forms requiert un programme d&#39;installation distinct. Pour plus d’informations, voir la documentation d’installation d’AEM Forms on JEE.
 
 ![default-render-form](assets/installing-workbench.png)
 
