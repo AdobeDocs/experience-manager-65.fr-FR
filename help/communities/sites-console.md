@@ -148,7 +148,7 @@ Lors de la création ou de la sélection d’une image, gardez à l’esprit :
 
 * La hauteur de l’image sera rognée à 120 pixels, mesurée à partir du bord supérieur de l’image.
 * L’image est épinglée sur le bord gauche de la fenêtre du navigateur.
-* Il n&#39;y a pas de redimensionnement de l&#39;image, de telle sorte que lorsque la largeur de l&#39;image est...
+* L&#39;image n&#39;est pas redimensionnée, de telle sorte que lorsque la largeur de l&#39;image est...
 
    * Moins que la largeur du navigateur, l’image se répète horizontalement.
    * Plus grande que la largeur du navigateur, l’image semble recadrée.
