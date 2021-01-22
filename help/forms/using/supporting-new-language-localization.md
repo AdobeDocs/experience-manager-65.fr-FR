@@ -98,7 +98,7 @@ Créez un noeud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, a
 
 Ajouter les fichiers suivants à la bibliothèque client :
 
-* **i18n.** jsdefinition  `guidelib.i18n`, ayant des modèles de &quot;calendarSymbols&quot;,  `datePatterns`,  `timePatterns`,  `dateTimeSymbols`,  `numberPatterns`,  `numberSymbols`, , , pour les selon les spécifications XFA décrites dans le  de spécification des ensembles de paramètres régionaux de l’.[`<locale>``currencySymbols``typefaces`](https://helpx.adobe.com/fr/content/dam/Adobe/specs/xfa_spec_3_3.pdf) Vous pouvez également voir comment il est défini pour les autres paramètres régionaux pris en charge dans `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
+* **i18n.** jsdefinition  `guidelib.i18n`, ayant des modèles de &quot;calendarSymbols&quot;,  `datePatterns`,  `timePatterns`,  `dateTimeSymbols`,  `numberPatterns`,  `numberSymbols`, , , pour les selon les spécifications XFA décrites dans le  de spécification des ensembles de paramètres régionaux de l’.`currencySymbols``typefaces``<locale>`[](https://helpx.adobe.com/fr/content/dam/Adobe/specs/xfa_spec_3_3.pdf) Vous pouvez également voir comment il est défini pour les autres paramètres régionaux pris en charge dans `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
 * **LogMessages.** jsdefinition  `guidelib.i18n.strings` et  `guidelib.i18n.LogMessages` pour la  `<locale>` fonction définie dans  `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`la.
 * **js.txt** contenant les éléments suivants :
 
