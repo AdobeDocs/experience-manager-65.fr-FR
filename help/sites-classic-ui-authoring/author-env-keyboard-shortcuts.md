@@ -27,8 +27,10 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >Sélection multiple sur un ordinateur de bureau :
 >
 >* Windows : maintenez la touche **Ctrl** enfoncée tout en **cliquant** sur les composants requis.
->
->* Mac : maintenez la touche **Cmd** enfoncée tout en **cliquant** sur les composants requis.
+   >
+   >
+* Mac : maintenez la touche **Cmd** enfoncée tout en **cliquant** sur les composants requis.
+
 >
 
 
