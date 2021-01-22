@@ -111,7 +111,7 @@ IntelliJ IDEA doit comprendre où trouver les JSP pour débogage. Comme IDEA ne 
 1. Appuyez sur **+** et sélectionnez **JSR45 Remote**.
 1. Dans la boîte de dialogue de configuration, sélectionnez **Configurer** en regard de **Application Server** et configurez un serveur générique.
 1. Définissez la page de démarrage sur une URL appropriée si vous souhaitez ouvrir un navigateur lorsque vous commencez le débogage.
-1. Supprimez toutes les **tâches** avant de lancer&lt;a1/> si vous utilisez la synchronisation automatique vlt ou configurez les tâches Maven appropriées si vous ne le faites pas.
+1. Supprimez toutes les **tâches** avant de lancer si vous utilisez la synchronisation automatique vlt ou configurez les tâches Maven appropriées si vous ne le faites pas.
 1. Dans le volet **Démarrage/Connexion**, ajustez le port si nécessaire.
 1. Copiez les arguments de ligne de commande que IntelliJ IDEA propose
 
