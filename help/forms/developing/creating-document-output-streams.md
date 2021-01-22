@@ -504,7 +504,7 @@ Créez un document PDF/A à l’aide de l’API Output (Java) :
 
    >[!NOTE]
    >
-   >La version PDF d’un document PDF/A est 1.4, quelle que soit la valeur spécifiée pour la méthode `RenderOptionsSpec` de l’objet `setPdfVersion`**.&lt;a2/>
+   >La version PDF d’un document PDF/A est 1.4, quelle que soit la valeur spécifiée pour la méthode `RenderOptionsSpec` de l’objet `setPdfVersion`**.
 
 1. Générer un document PDF/A.
 
