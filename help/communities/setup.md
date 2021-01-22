@@ -122,7 +122,7 @@ Faites défiler jusqu&#39;à `Add User to Groups` :
 
 Avant de pouvoir utiliser les versions de démonstration de la connexion sociale avec Facebook et Twitter, il est nécessaire de
 
-1. Installez un pack de correctifs ou [dernier pack de fonctionnalités](deploy-communities.md#latestfeaturepack) (pour les modifications de l’API Facebook de mars 2017).
+1. Installez un pack de correctifs ou [dernier pack de fonctionnalités](deploy-communities.md#latestfeaturepack) (pour les modifications apportées à l’API Facebook en mars 2017).
 1. [Activez le ](social-login.md#adobe-granite-oauth-authentication-handler) fournisseur OAuth dans l’environnement de publication.
 
 Pour les serveurs de production, il est nécessaire de créer les services cloud nécessaires pour fournir une connexion sociale.
