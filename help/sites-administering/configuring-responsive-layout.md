@@ -264,7 +264,7 @@ Tout redimensionnement d’un composant dans la grille déclenche les programmes
 
 * `afterchildedit`
 
-Pour redimensionner et mettre à jour correctement le contenu d&#39;une image adaptative incluse dans une grille réactive, vous devez ajouter un `afterEdit` paramètre `REFRESH_PAGE` à &lt;a1/> dans le fichier `EditConfig` de chaque composant contenu.
+Pour redimensionner et mettre à jour correctement le contenu d&#39;une image adaptative incluse dans une grille réactive, vous devez ajouter un `afterEdit` paramètre `REFRESH_PAGE` à  dans le fichier `EditConfig` de chaque composant contenu.
 
 Par exemple :
 
