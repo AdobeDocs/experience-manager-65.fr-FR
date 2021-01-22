@@ -152,7 +152,6 @@ Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour vali
 
 1. Cliquez sur `validateConfigs()`. Dans la boîte de dialogue **[!UICONTROL Valider les configurations]**, cliquez sur **[!UICONTROL Appeler]**.
 
-
 Les résultats de la validation s’affichent dans la même boîte de dialogue.
 
 ### Activez le balisage intelligent dans le workflow [!UICONTROL DAM Update Asset] (facultatif) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
