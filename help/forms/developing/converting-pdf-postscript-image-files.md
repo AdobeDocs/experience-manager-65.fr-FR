@@ -190,7 +190,7 @@ Conversion d’un document PDF en PostScript à l’aide de l’API de service C
    * Objet `BLOB` représentant le document PDF à convertir en fichier PostScript
    * Objet `ToPSOptionsSpec` qui spécifie les options d’exécution
 
-   Une fois la conversion terminée, extrayez les données binaires qui représentent le document PostScript en accédant à la propriété `BLOB` `MTOM` de l’objet &lt;a1/>. Cette opération renvoie un tableau d’octets que vous pouvez écrire dans un fichier PostScript.
+   Une fois la conversion terminée, extrayez les données binaires qui représentent le document PostScript en accédant à la propriété `BLOB` `MTOM` de l’objet . Cette opération renvoie un tableau d’octets que vous pouvez écrire dans un fichier PostScript.
 
 1. Enregistrez le fichier PostScript.
 
