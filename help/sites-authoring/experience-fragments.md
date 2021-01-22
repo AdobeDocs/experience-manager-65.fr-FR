@@ -224,7 +224,7 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
    * **Description**
    * **Balises de variation**
 
-   ![xf-08](assets/xf-06.png)
+   ![xf-06](assets/xf-06.png)
 
 1. Confirmez en cliquant sur **Terminé** (icône représentant une coche). La nouvelle variation est alors affichée dans le panneau :
 
