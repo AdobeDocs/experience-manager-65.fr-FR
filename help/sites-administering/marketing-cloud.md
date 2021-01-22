@@ -1,19 +1,15 @@
 ---
 title: Intégration à Adobe Marketing Cloud
-seo-title: Intégration à Adobe Marketing Cloud
-description: Découvrez comment intégrer AEM avec Adobe Marketing Cloud.
-seo-description: Découvrez comment intégrer AEM avec Adobe Marketing Cloud.
-uuid: 36d71dd3-7fb0-4237-99d3-4fbb2e162e7b
+description: Découvrez comment intégrer Adobe Experience Manager à Adobe Marketing Cloud.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 75%
+source-wordcount: '998'
+ht-degree: 72%
 
 ---
 
@@ -26,7 +22,7 @@ Avec Adobe Experience Manager (AEM), vous pouvez intégrer aisément les produit
 
 * Adobe Analytics fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies en ligne et des initiatives marketing.
 * Adobe Target donne aux marketeurs la possibilité d’adapter continuellement leur contenu en ligne à leurs clients de manière à accroître le taux de conversion.
-* Adobe Scene7 automatise la gestion des médias, simplifie la publication web et améliore les expériences web, le tout dans un environnement hébergé.
+* L’Adobe Dynamic Media Classic automatise la gestion des médias, rationalise la publication sur le Web et améliore les expériences Web, le tout dans un environnement hébergé.
 * Adobe Dynamic Tag Management offre aux marketeurs des outils intuitifs grâce auxquels ils peuvent gérer facilement et rapidement un nombre illimité de balises Adobe et de tierces parties.
 * Adobe Search&amp;Promote permet aux marketeurs de contrôler et d’optimiser les résultats de la recherche sur leurs sites.
 * Adobe Campaign vous permet de gérer le contenu de livraison de courrier électronique directement dans Adobe Experience Manager.
@@ -76,11 +72,11 @@ Pour plus d’informations, voir [Souscription à Adobe Analytics et Target.](/
 
 Adobe Dynamic Media Classic est une solution hébergée qui permet de publier, gérer, améliorer et diffuser des ressources marketing dynamiques et du marchandisage visuel optimisé sur le Web, les mobiles, les e-mails, les médias sociaux, les écrans connectés à Internet et l’impression.
 
-En AEM, vous pouvez publier des ressources numériques directement d’AEM vers Dynamic Media Classic et vous pouvez publier des ressources numériques de Dynamic Media Classic vers AEM.
+Dans Adobe Experience Manager, vous pouvez publier des ressources numériques directement de Adobe Experience Manager à Dynamic Media Classic et vous pouvez publier des ressources numériques de Dynamic Media Classic vers Adobe Experience Manager.
 
-En outre, vous pouvez vue AEM fichiers publiés dans Dynamic Media Classic dans différentes visionneuses, telles que Zoom de base et Vidéo.
+En outre, vous pouvez vue des fichiers Adobe Experience Manager publiés dans Dynamic Media Classic dans diverses visionneuses, telles que Zoom de base et Vidéo.
 
-Pour plus d’informations sur la façon dont AEM s’intègre à Dynamic Media Classic, voir la documentation [Intégration à Dynamic Media Classic](/help/sites-administering/scene7.md).
+Pour plus d’informations sur la façon dont Adobe Experience Manager s’intègre à Dynamic Media Classic, voir la documentation [Intégration à Dynamic Media Classic](/help/sites-administering/scene7.md).
 
 ## Intégration à Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
@@ -94,7 +90,7 @@ L’intégration à Adobe Audience Manager a été supprimée dans AEM 6.3.
 
 ## Intégration à Search&amp;Promote  {#integrating-with-search-promote}
 
-[Adobe Search&amp;](https://www.omniture.com/en/products/conversion/search-and-promote) Promotepermet aux spécialistes du marketing d’optimiser la manière dont les visiteurs naviguent, recherchent, comparent et sélectionnent les produits et le contenu appropriés sur les sites Web et mobiles. Les entreprises peuvent facilement faire la promotion des éléments importants en fonction des objectifs de l’entreprise et de l’intention des visiteurs, tout en automatisant les activités de marchandisation et de promotion par l’intermédiaire de déclencheurs et de mesures reposant sur les indicateurs de performances clés.
+Le Search &amp; Promote d’Adobe permet aux spécialistes du marketing d’optimiser la manière dont les visiteurs naviguent, recherchent, comparent et sélectionnent les produits et le contenu appropriés sur les sites Web et mobiles. Les entreprises peuvent facilement faire la promotion des éléments importants en fonction des objectifs de l’entreprise et de l’intention des visiteurs, tout en automatisant les activités de marchandisation et de promotion par l’intermédiaire de déclencheurs et de mesures reposant sur les indicateurs de performances clés.
 
 Adobe Search&amp;Promote est une application hébergée, évolutive et fiable de recherche de sites, extensible jusqu’à plusieurs millions de pages ou de produits, pour les entreprises en ligne au trafic de visite important allant de la vente au détail aux sites d’informations. Cet outil offre une maîtrise inégalée aux marketeurs et une pertinence corroborée par des mesures.
 
