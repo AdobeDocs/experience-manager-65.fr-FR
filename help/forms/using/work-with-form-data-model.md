@@ -427,7 +427,7 @@ L’indicateur peut être défini sur l’une des valeurs suivantes :
 * **OFF** : Aucune validation
 * **BASE** : FDM effectue la validation en fonction des contraintes &quot;obligatoires&quot; et &quot;nullable&quot;
 
-Si aucune valeur n’est définie pour l’indicateur `ValidationOptions`BASIC **, la validation** BASIC&lt;a2/> est effectuée sur les données d’entrée.
+Si aucune valeur n’est définie pour l’indicateur `ValidationOptions`BASIC **, la validation** BASIC est effectuée sur les données d’entrée.
 
 Voici un exemple de définition de l’indicateur de validation sur **FULL** :
 
