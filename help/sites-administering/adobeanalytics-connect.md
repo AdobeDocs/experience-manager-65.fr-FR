@@ -166,7 +166,7 @@ Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas située en r
 * **Espace de noms du visiteur**
 
    * L’espace de noms détermine la première partie de l’URL de suivi.
-   * Par exemple, si vous modifiez l’espace de nommage en **CNAME**, les appels effectués à Adobe Analytics ressembleront à **CNAME.d1.omtrdc.net** au lieu de &lt;a3/> par défaut.
+   * Par exemple, si vous modifiez l’espace de nommage en **CNAME**, les appels effectués à Adobe Analytics ressembleront à **CNAME.d1.omtrdc.net** au lieu de  par défaut.
 
 ## Association d’une page à une structure Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
