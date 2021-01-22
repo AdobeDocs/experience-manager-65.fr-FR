@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '9562'
+source-wordcount: '9590'
 ht-degree: 62%
 
 ---
@@ -168,8 +168,12 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
 
 1. Sélectionnez le client FTP de votre choix, puis connectez-vous à l’aide du nom d’utilisateur et du mot de passe FTP qui vous ont été envoyés par courrier électronique. Dans le client FTP, téléchargez les fichiers et/ou dossiers vers le serveur FTP.
-1. [Connectez-vous à Dynamic Media Classic](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à l’aide des informations de connexion qui vous ont été envoyées par e-mail. Cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
 
+1. Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app), puis connectez-vous à votre compte.
+
+   Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+
+1. Cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
 1. Cliquez sur l’onglet **[!UICONTROL Via FTP]** dans le coin supérieur gauche de la page Télécharger.
 1. Sélectionnez le dossier FTP source à utiliser pour le transfert des fichiers dans la partie gauche de la page et le dossier de destination dans la partie droite.
 1. Cliquez sur **[!UICONTROL Options tâche]** dans le coin inférieur droit de la page, puis définissez les options de votre choix sur la base des ressources du dossier que vous avez sélectionné.
