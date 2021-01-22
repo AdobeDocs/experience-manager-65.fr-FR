@@ -211,7 +211,6 @@ Le composant Zoom HTML5 affiche une image plus grande lorsque vous appuyez sur l
 
 L’élément comporte des outils de zoom dans sa partie inférieure. Cliquez sur **+** pour agrandir. Cliquez sur **-** pour réduire. Cliquez sur **x** ou sur la flèche de zoom réinitialisé pour ramener l’image à la taille d’origine sous laquelle elle a été importée. Cliquez sur les flèches en diagonale pour passer en mode plein écran. Cliquez sur **Modifier** pour configurer le composant. Avec ce composant, vous pouvez configurer des paramètres [communs à tous les composants Scene7](#settings-common-to-all-scene-components).
 
-
 ![](do-not-localize/chlimage_1-3.png)
 
 ### Flyout {#flyout}
@@ -395,7 +394,7 @@ Par défaut, le Experience Manager recherche le dossier sélectionné et tous le
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Type de ressourceDans le navigateur Scene7, vous pouvez filtrer les résultats pour inclure l’un des éléments suivants :** images, modèles, vidéos et visionneuses de vidéos adaptatives. Si vous ne sélectionnez aucun type de fichier, le Experience Manager recherche par défaut tous les types de fichier.
+**Type de ressourceDans le navigateur Scene7, vous pouvez filtrer les résultats pour inclure l’un des éléments suivants :**  images, modèles, vidéos et visionneuses de vidéos adaptatives. Si vous ne sélectionnez aucun type de fichier, le Experience Manager recherche par défaut tous les types de fichier.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
