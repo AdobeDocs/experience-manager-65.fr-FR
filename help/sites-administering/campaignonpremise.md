@@ -208,7 +208,7 @@ Le contenu créé à partir de l’instance de création AEM est d’abord envoy
 
 >[!NOTE]
 >
->Si vous ne souhaitez pas utiliser l’URL de réplication mais plutôt l’URL accessible au public, vous pouvez définir l’**URL publique** dans le paramètre de configuration suivant dans OSGi (**logo AEM** > **icône Outils** > **Opérations** > **Console Web** a10/>Configuration OSGi **>** Intégration Campaign - Configuration **de &lt;a12/>AEM - Configuration&lt;a13/>) :**
+>Si vous ne souhaitez pas utiliser l’URL de réplication mais plutôt l’URL accessible au public, vous pouvez définir l’**URL publique** dans le paramètre de configuration suivant dans OSGi (**logo AEM** > **icône Outils** > **Opérations** > **Console Web** a10/>Configuration OSGi **>** Intégration Campaign - Configuration **de** AEM - Configuration) :
 **URL publique :** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
 
 Cette étape est également nécessaire pour répliquer certaines configurations d’instance de création dans l’instance de publication.
