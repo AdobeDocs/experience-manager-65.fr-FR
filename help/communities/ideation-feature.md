@@ -207,7 +207,7 @@ Sous l’onglet **[!UICONTROL Paramètres de tri]**, spécifiez le mode de tri d
 
 * **Sélectionner les options de temps pour le tri Analytics**
 
-   Appuyez sur la touche `All, Last 24 Hours, Last 7 Days, Last 30 Days` pour sélectionner l&#39;un des &lt;a0/>. La valeur par défaut est `All`.
+   Appuyez sur la touche `All, Last 24 Hours, Last 7 Days, Last 30 Days` pour sélectionner l&#39;un des . La valeur par défaut est `All`.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
