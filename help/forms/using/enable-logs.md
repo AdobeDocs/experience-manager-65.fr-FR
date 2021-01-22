@@ -94,7 +94,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
    <td>OFF<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>1</td>
+   <td>3</td>
    <td>FATAL<br type="_moz" /> </td>
   </tr>
   <tr>
