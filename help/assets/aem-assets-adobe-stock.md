@@ -64,7 +64,7 @@ Une fois qu’une ressource [!DNL Adobe Stock] est sous licence dans [!DNL Exper
 
 *Figure : Recherchez des  [!DNL Adobe Stock] ressources et filtrez les résultats de votre  [!DNL Experience Manager] interface.*
 
-**A.**[!DNL Adobe Stock] Rechercher les ressources semblables à celles dont l’ID est fourni. **B.** Rechercher les ressources correspondant à la forme ou à l’orientation que vous avez sélectionnée. **C.** Recherchez l&#39;un des types de ressources les plus pris en charge  **D.** Ouvrez ou réduisez le volet filtres  **E.** Licenciez et enregistrez la ressource sélectionnée en  [!DNL Experience Manager] **F.** Enregistrez la ressource avec un filigrane G.Explorez les ressources du site Web de  qui sont similaires à la ressource sélectionnée en Vue de ressources du site Web de . résultats de la recherche J.Basculer entre la vue de carte et la vue de Liste[!DNL Adobe Stock]******[!DNL Experience Manager][!DNL Adobe Stock]**********
+**A.**[!DNL Adobe Stock] Rechercher les ressources semblables à celles dont l’ID est fourni. **B.** Rechercher les ressources correspondant à la forme ou à l’orientation que vous avez sélectionnée. **C.** Recherchez l&#39;un des types de ressources les plus pris en charge  **D.** Ouvrez ou réduisez le volet filtres  **E.** Licenciez et enregistrez la ressource sélectionnée en  [!DNL Experience Manager] **F.** Enregistrez la ressource avec un filigrane G.Explorez les ressources du site Web de  qui sont similaires à la ressource sélectionnée en Vue de ressources du site Web de . résultats de la recherche J.Basculer entre la vue de carte et la vue de Liste[!DNL Experience Manager]****[!DNL Adobe Stock]****[!DNL Adobe Stock]********
 
 ### Recherche de ressources {#find-assets}
 
