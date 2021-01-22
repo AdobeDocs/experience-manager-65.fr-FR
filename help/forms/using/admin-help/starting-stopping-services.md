@@ -39,7 +39,7 @@ Une implémentation complète d’AEM forms comprend des services de serveur d�
 * *`[application server]`* pour les formulaires AEM
 * *`[database]`* pour les formulaires AEM
 
-Sous Windows, ces services sont accessibles via le **panneau** Outils d’administration&lt;a1/> > **Services**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
+Sous Windows, ces services sont accessibles via le **panneau** Outils d’administration > **Services**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
 
 * JBoss pour Adobe Experience Manager forms
 * MySQL pour Adobe Experience Manager forms
