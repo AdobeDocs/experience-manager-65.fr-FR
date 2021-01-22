@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '1820'
-ht-degree: 88%
+source-wordcount: '1870'
+ht-degree: 83%
 
 ---
 
@@ -123,7 +123,7 @@ Pour pouvoir utiliser l’imagerie dynamique, le compte Dynamic Media Classic ou
 * Utiliser le réseau de diffusion de contenu (CDN) fourni par Adobe dans le cadre de votre licence.
 * Utiliser un domaine dédié (par exemple, `images.company.com` ou `mycompany.scene7.com`), plutôt qu’un domaine générique (par exemple, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
+Pour rechercher vos domaines, ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre ou vos comptes de société.
 
 Appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]** Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]** Si vous utilisez actuellement un domaine générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition lorsque vous soumettez un ticket de support technique.
 
@@ -139,7 +139,7 @@ Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle 
    1. nom, adresse électronique et numéro de téléphone du contact principal.
    1. Tous les domaines à activer pour l’imagerie dynamique (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`).
 
-      Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
+      Pour rechercher vos domaines, ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre ou vos comptes de société.
 
       Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
@@ -147,7 +147,7 @@ Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle 
    1. Vérifiez que vous utilisez le CDN via Adobe et non le CDN géré avec une relation directe.
    1. Vérifiez que vous utilisez un domaine dédié, tel que `images.company.com` ou `mycompany.scene7.com`, et non un domaine générique, tel que `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`.
 
-      Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
+      Pour rechercher vos domaines, ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre ou vos comptes de société.
 
       Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
