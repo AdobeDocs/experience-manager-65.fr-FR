@@ -92,7 +92,7 @@ Un `WorkflowTransition` représente une transition entre deux `WorkflowNodes` d&
 Un `WorkItem` est l&#39;unité transmise par une instance `Workflow` d&#39;un `WorkflowModel`. Il contient le `WorkflowData` sur lequel l’instance agit et une référence au `WorkflowNode` qui décrit l’étape sous-jacente du flux de travail.
 
 * Il est utilisé pour identifier la tâche et placé dans la boîte de réception correspondante.
-* Une instance de processus peut avoir simultanément `WorkItems` &lt;a0/> (selon le modèle de processus).
+* Une instance de processus peut avoir simultanément `WorkItems`  (selon le modèle de processus).
 * Le `WorkItem` référence l&#39;instance de processus.
 * Dans le référentiel, `WorkItem` est stocké sous l’instance de flux de travaux.
 
