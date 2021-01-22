@@ -52,7 +52,7 @@ Une fois que vous avez créé une application à l’aide de ce modèle, vous po
 
 >[!NOTE]
 >
->Vous pouvez également sélectionner un exemple de modèle d’application, par exemple **Application &lt;a0/>We.Unlimited**, mise à votre disposition par un développeur AEM. Si vous utilisez cet exemple de modèle pour votre application, vous obtenez des exemples d’articles et de collections sur lesquels travailler. Vous aurez la possibilité d’utiliser les exemples de modèles et de composants, de personnaliser les modèles existants ou de créer de nouveaux modèles pour votre application.
+>Vous pouvez également sélectionner un exemple de modèle d’application, par exemple **Application We.Unlimited**, mise à votre disposition par un développeur AEM. Si vous utilisez cet exemple de modèle pour votre application, vous obtenez des exemples d’articles et de collections sur lesquels travailler. Vous aurez la possibilité d’utiliser les exemples de modèles et de composants, de personnaliser les modèles existants ou de créer de nouveaux modèles pour votre application.
 
 >[!CAUTION]
 >
