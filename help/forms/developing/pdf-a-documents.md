@@ -160,7 +160,7 @@ Conversion d’un document PDF en document PDF/A à l’aide de l’API DocConve
 1. Création d’un client DocConvert
 
    * A l&#39;aide de l&#39;assembly client Microsoft .NET, créez un objet `DocConverterServiceService` en appelant son constructeur par défaut.
-   * Définissez le membre de données `DocConverterServiceService` de l’objet avec une valeur `Credentials` qui spécifie le nom d’utilisateur et la valeur du mot de passe.`System.Net.NetworkCredential`
+   * Définissez le membre de données `Credentials` de l’objet avec une valeur `System.Net.NetworkCredential` qui spécifie le nom d’utilisateur et la valeur du mot de passe.`DocConverterServiceService`
 
 1. Référence à un document PDF à convertir en document PDF/A
 
@@ -313,7 +313,7 @@ Déterminez la conformité à la norme PDF/A en utilisant l’API du service Web
 1. Création d’un client DocConvert
 
    * A l&#39;aide de l&#39;assembly client Microsoft .NET, créez un objet `DocConverterServiceService` en appelant son constructeur par défaut.
-   * Définissez le membre de données `DocConverterServiceService` de l’objet avec une valeur `Credentials` qui spécifie le nom d’utilisateur et la valeur du mot de passe.`System.Net.NetworkCredential`
+   * Définissez le membre de données `Credentials` de l’objet avec une valeur `System.Net.NetworkCredential` qui spécifie le nom d’utilisateur et la valeur du mot de passe.`DocConverterServiceService`
 
 1. Référence à un document PDF utilisé pour déterminer la conformité à la norme PDF/A
 
