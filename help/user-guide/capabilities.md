@@ -34,7 +34,7 @@ ht-degree: 52%
 
 [Créez, gérez, publiez et mettez à jour des formulaires numériques.](/help/forms/home.md)
 
-## AEM Screens {#aem-screens}
+## Guide des bonnes pratiques {#aem-screens}
 
 [Découvrez la solution d’affichage numérique pour publier des expériences dynamiques et interactives.](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
