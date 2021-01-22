@@ -48,7 +48,7 @@ Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d
 
 [!DNL Dynamic Media] les éléments de l’interface utilisateur fonctionnent avec les technologies d’assistance, telles que les lecteurs d’écran. Par exemple, il reconnaît les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou de régions à l’aide du raccourci clavier `R`. Il décrit également l’en-tête lors de la navigation à l’aide du raccourci clavier de l’en-tête `H`.
 
-## Prise en charge de l’accessibilité du clavier dans les visionneuses [!DNL Dynamic Media] &lt;a1/>{#keyboard-accessibility-for-dm-viewers}
+## Prise en charge de l’accessibilité du clavier dans les visionneuses {#keyboard-accessibility-for-dm-viewers} [!DNL Dynamic Media]
 
 Tous les composants [!DNL Dynamic Media] prêts à l’emploi des visionneuses prennent en charge l’accessibilité du clavier pour vos clients.
 
