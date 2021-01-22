@@ -209,7 +209,7 @@ Par exemple, un point de fin de courrier électronique est créé pour un servic
 
 La valeur par défaut est asynchrone.
 
-**Incluez le corps du message électronique d’origine comme pièce jointe :** Par défaut, lorsque vous envoyez un message électronique au serveur Forms, le texte d’origine du message est inclus dans le corps du message. Pour inclure ce texte en pièce jointe à la place, sélectionnez cette option.
+**Inclure le corps du message électronique d’origine comme pièce jointe :** Par défaut, lorsque vous envoyez un message électronique au serveur Forms, le texte original du message est inclus dans le corps du message. Pour inclure ce texte en pièce jointe à la place, sélectionnez cette option.
 
 **Utiliser l’objet d’origine pour les courriers électroniques de résultats :** Par défaut, le serveur Forms utilise les valeurs spécifiées dans les paramètres Objet du message de réussite et Objet du message d’erreur comme objet lors de l’envoi des messages électroniques de résultats. Pour que l’objet des messages électroniques de résultat soit le même que l’objet du message électronique original envoyé au serveur, sélectionnez cette option.
 
