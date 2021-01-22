@@ -648,7 +648,7 @@ Pour modifier les langues :
 1. Cliquez avec le bouton droit sur le dossier `/apps/wcm/core/resources` et cliquez sur **Coller**. Modifiez les nœuds enfants selon les besoins.
 1. Cliquez sur **Enregistrer tout**.
 1. Cliquez sur **Outils**, **Opérations** puis **Console Web**. Depuis cette console, cliquez sur **OSGi**, puis sur **Configuration**.
-1. Recherchez **Day CQ WCM Language Manager** et cliquez sur **Day CQ WCM Language Manager&lt;a1/>, puis modifiez la valeur de &lt;a2/>Language Liste** en `/apps/wcm/core/resources/languages`, puis cliquez sur **Enregistrer**.
+1. Recherchez **Day CQ WCM Language Manager** et cliquez sur **Day CQ WCM Language Manager, puis modifiez la valeur de Language Liste** en `/apps/wcm/core/resources/languages`, puis cliquez sur **Enregistrer**.
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
