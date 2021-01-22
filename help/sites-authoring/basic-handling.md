@@ -69,7 +69,7 @@ Pour passer d’une console à une autre, utilisez le panneau de navigation glob
 
 Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant sur **Fermer** pour revenir à votre position précédente.
 
-![bh-05](assets/bh-03.png)
+![bh-03](assets/bh-03.png)
 
 >[!NOTE]
 >
@@ -398,7 +398,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 1. Par exemple, en mode Carte :
 
-   ![bh-17](assets/bh-15.png)
+   ![bh-15](assets/bh-15.png)
 
 1. Une fois que vous avez sélectionné une ressource, l’en-tête de premier niveau est couvert par la [barre d’outils Actions](#actionstoolbar), qui permet d’accéder aux actions actuellement applicables à la ressource sélectionnée.
 
