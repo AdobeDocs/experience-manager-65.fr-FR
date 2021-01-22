@@ -172,7 +172,7 @@ Il s’agit d’une augmentation temporaire ; l’entrepôt de données est res
 
 En règle générale, la tâche Nettoyage de la mémoire d’entrepôt de données s’exécute chaque semaine avec d’autres tâches de maintenance planifiées.
 
-Si vous disposez d’un espace disque limité et que vous exécutez [!UICONTROL les workflows ] DAM Update Asset&lt;a1/> intensément, pensez à planifier la tâche de collecte des déchets plus fréquemment.
+Si vous disposez d’un espace disque limité et que vous exécutez [!UICONTROL les workflows ] DAM Update Asset intensément, pensez à planifier la tâche de collecte des déchets plus fréquemment.
 
 #### Génération de rendus au moment de l’exécution {#runtime-rendition-generation}
 
