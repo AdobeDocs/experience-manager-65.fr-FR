@@ -616,7 +616,7 @@ Une fois que le service cloud Analytics a été activé pour un site communautai
 
 ### Gestion des rapports {#report-management}
 
-La [configuration OSGi ](/help/sites-deploying/configuring-osgi.md) de l’auteur et de l’éditeur Principal `AEM Communities Analytics Report Management`, &lt;a2/>, est utilisée pour requête Analytics.
+La [configuration OSGi ](/help/sites-deploying/configuring-osgi.md) de l’auteur et de l’éditeur Principal `AEM Communities Analytics Report Management`, , est utilisée pour requête Analytics.
 
 En ce qui concerne l’auteur, les requêtes concernent les rapports en temps réel.
 
