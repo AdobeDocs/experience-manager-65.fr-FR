@@ -1,17 +1,15 @@
 ---
 title: Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic
 description: L’invalidation du contenu mis en cache sur le réseau de Diffusion de contenu (CDN) vous permet de mettre rapidement à jour les ressources fournies par Dynamic Media Classic, plutôt que d’attendre l’expiration du cache.
-uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 84%
+source-wordcount: '700'
+ht-degree: 81%
 
 ---
 
@@ -28,15 +26,9 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic (Scene7)](https:
 
 **Pour invalider le cache CDN au moyen de Dynamic Media Classic :**
 
-1. Utilisez l’une des méthodes suivantes :
+1. Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app), puis connectez-vous à votre compte.
 
-   * Dans votre navigateur web, connectez-vous à votre compte Dynamic Media Classic :
-
-      [https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html)
-
-      Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
-
-   * Ouvrez l’application Dynamic Media Classic, puis connectez-vous à votre compte.
+   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1. Près du coin supérieur droit de la page, appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 1. Recherchez la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** dans la section Serveurs de la page Paramètres généraux de l’application.
