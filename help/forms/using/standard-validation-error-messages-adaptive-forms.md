@@ -71,7 +71,7 @@ Avant d’ajouter un gestionnaire personnalisé, vous devez configurer le formul
 1. Sélectionnez **[!UICONTROL Revalider sur le serveur]** pour valider les valeurs des champs d’entrée sur le serveur avant envoi.
 1. Sélectionnez l’action Envoyer :
 
-   * Sélectionnez **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** et sélectionnez le modèle de données approprié, si vous utilisez le modèle de données de formulaire [basé sur le service Web RESTful&lt;a2/> comme source de données.](work-with-form-data-model.md)
+   * Sélectionnez **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** et sélectionnez le modèle de données approprié, si vous utilisez le modèle de données de formulaire [basé sur le service Web RESTful](work-with-form-data-model.md) comme source de données.
    * Sélectionnez **[!UICONTROL Envoyer au point de terminaison REST]** et spécifiez l’**[!UICONTROL URL/chemin de redirection]**, si vous utilisez les services Web RESTful comme source de données.
 
    ![propriétés d’envoi de formulaire adaptatif](assets/af_submission_properties.png)
