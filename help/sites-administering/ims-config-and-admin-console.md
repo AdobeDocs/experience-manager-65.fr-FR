@@ -26,7 +26,7 @@ ht-degree: 60%
 
 ## Présentation {#introduction}
 
-aem 6.4.3.0 introduit la prise en charge [!DNL Admin Console] des instances AEM et de l’Adobe d’authentification basée sur le système IMS(Identity Management System) pour les **clients &lt;a1/>AEM Managed Services**.
+aem 6.4.3.0 introduit la prise en charge [!DNL Admin Console] des instances AEM et de l’Adobe d’authentification basée sur le système IMS(Identity Management System) pour les **clients AEM Managed Services**.
 
 L&#39;intégration AEM à [!DNL Admin Console] permet aux clients d&#39;AEM Managed Services de gérer tous les utilisateurs Experience Cloud dans une seule console. Les utilisateurs et les groupes peuvent être affectés à des profils de produits associés à des instances AEM, ce qui leur permet de se connecter à une instance spécifique.
 
