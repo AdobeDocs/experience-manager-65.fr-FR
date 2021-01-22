@@ -42,7 +42,7 @@ Les utilisateurs AEM ont le choix entre deux solutions pour utiliser les médias
 
 Utilisez les critères suivants pour déterminer la solution à sélectionner :
 
-* Si vous êtes un client **Dynamic Media Classic** existant dont les ressources multimédia riches résident dans Dynamic Media Classic pour publication et diffusion, mais que vous souhaitez intégrer ces ressources à la création et/ou à l’AEM Assets Sites (WCM) pour gestion, utilisez l’[intégration point à point ](#aem-scene-point-to-point-integration) &lt;a2/>AEM/Dynamic Media Classic &lt;a3/.
+* Si vous êtes un client **Dynamic Media Classic** existant dont les ressources multimédia riches résident dans Dynamic Media Classic pour publication et diffusion, mais que vous souhaitez intégrer ces ressources à la création et/ou à l’AEM Assets Sites (WCM) pour gestion, utilisez l’[intégration point à point ](#aem-scene-point-to-point-integration) AEM/Dynamic Media Classic &lt;a3/.
 
 * Si vous êtes un **nouveau** client d’AEM ayant des besoins de diffusion de contenu multimédia enrichi, sélectionnez l’option [Dynamic Media](#aem-dynamic-media). Cette option a plus de sens si vous ne disposez pas d’un compte S7 et que vous avez de nombreuses ressources stockées dans ce système.
 
