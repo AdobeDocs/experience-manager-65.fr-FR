@@ -7,8 +7,8 @@ solution: Dynamic Media Classic, Experience Manager
 translation-type: tm+mt
 source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1151'
+ht-degree: 100%
 
 ---
 
