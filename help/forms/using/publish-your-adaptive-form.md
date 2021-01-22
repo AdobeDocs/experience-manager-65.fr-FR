@@ -38,7 +38,7 @@ Vous disposez des méthodes suivantes pour publier un formulaire adaptatif :
 
 ## Publier le formulaire adaptatif en tant que page AEM {#publish-the-adaptive-form-as-an-aem-page}
 
-Lorsque le formulaire adaptatif est publié en tant que page AEM, la page Web entière contient uniquement le formulaire publié. Vous pouvez utiliser l’URL du formulaire adaptatif pour le lier à partir d’une autre page Web. Pour publier le **formulaire adaptatif** d&#39;expédition-address-add-update-form&lt;a1/> en tant que page d&#39;AEM :
+Lorsque le formulaire adaptatif est publié en tant que page AEM, la page Web entière contient uniquement le formulaire publié. Vous pouvez utiliser l’URL du formulaire adaptatif pour le lier à partir d’une autre page Web. Pour publier le **formulaire adaptatif** d&#39;expédition-address-add-update-form en tant que page d&#39;AEM :
 
 1. Connectez-vous à l’instance d’auteur [!DNL Forms] de l’AEM et recherchez le formulaire adaptatif Shipping-address-add-update-form dans l’AEM [!DNL Forms] IU.
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
