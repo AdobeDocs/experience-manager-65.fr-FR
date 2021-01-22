@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 42%
+source-wordcount: '1130'
+ht-degree: 41%
 
 ---
 
@@ -157,7 +157,7 @@ Tous ont un **en-tête**, un **pied de page** et une section **corps**. Sous la 
 | Texte et personnalisation | /libs/mcm/campaign/components/personalization |
 | Textimage | /libs/mcm/campaign/components/textimage |
 | Lien | /libs/mcm/campaign/components/reference |
-| Modèle d’image Scene7 | /libs/mcm/campaign/s7image |
+| Modèle d’image Dynamic Media Classic (anciennement Scene7) | /libs/mcm/campaign/s7image |
 | Référence ciblée | /libs/mcm/campaign/components/reference |
 
 >[!NOTE]
