@@ -12,8 +12,8 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 translation-type: tm+mt
 source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3828'
+ht-degree: 89%
 
 ---
 
