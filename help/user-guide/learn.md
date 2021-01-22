@@ -37,7 +37,7 @@ AEM Forms associe des outils de création, de gestion et de publication à des f
 * [Architecture et topologies dans AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md) 
 * [Amélioration des performances d’AEM Forms](/help/forms/using/performance-tuning-aem-forms.md) 
 
-## AEM Screens {#aem-screens}
+## Guide des bonnes pratiques {#aem-screens}
 
 Screens est une fonctionnalité Adobe Experience Manager qui vous permet de publier des expériences et interactions numériques dynamiques et interactives impliquant différents types d’écrans, conjointement avec une plate-forme de marketing numérique complète.  [En savoir plus.](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
