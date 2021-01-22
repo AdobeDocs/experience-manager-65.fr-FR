@@ -112,7 +112,7 @@ En clair, un type de règle Lorsque standard est structuré comme suit :
 
 Action 2 sur Objet B ; ET Action 3 sur Objet C ; 
 
-_
+]
 
 Lorsque vous disposez d’un composant à plusieurs valeurs, tel que des boutons radio ou des listes, lors de la création d’une règle pour ce composant, les options sont automatiquement récupérées et mises à la disposition du créateur de règles. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
 
@@ -120,7 +120,7 @@ Par exemple, une liste comporte quatre options : Rouge, Bleu, Vert et Jaune. Lo
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Lorsque vous écrivez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Clear Value of (Effacer la valeur de) de l’instruction When permet de créer des conditions complexes avec plusieurs champs.
+Lorsque vous écrivez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Clear Value of (Effacer la valeur de) de l’instruction Lorsque permet de créer des conditions complexes avec plusieurs champs.
 
 ![claivalueof](assets/clearvalueof.png)
 
