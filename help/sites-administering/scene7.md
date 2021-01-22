@@ -1,18 +1,14 @@
 ---
 title: Intégration à Dynamic Media Classic
-seo-title: Intégration à Dynamic Media Classic
-description: Découvrez comment intégrer AEM à Dynamic Media Classic.
-seo-description: Découvrez comment intégrer AEM à Dynamic Media Classic.
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
+description: Découvrez comment intégrer Adobe Experience Manager à Dynamic Media Classic.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '5464'
+source-wordcount: '5452'
 ht-degree: 20%
 
 ---
