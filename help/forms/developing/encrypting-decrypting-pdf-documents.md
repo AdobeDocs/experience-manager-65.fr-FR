@@ -208,7 +208,7 @@ Chiffrer un document PDF avec un mot de passe à l’aide de l’API Encryption 
    * Spécifiez les ressources de document PDF à chiffrer en attribuant une valeur de énumération `PasswordEncryptionOption` au membre de données `PasswordEncryptionOptionSpec` de l’objet `encryptOption`. Pour chiffrer l’intégralité du PDF, y compris ses métadonnées et ses pièces jointes, affectez `PasswordEncryptionOption.ALL` à ce membre de données.
    * Spécifiez l’option de compatibilité Acrobat en attribuant une valeur de énumération `PasswordEncryptionCompatability` au membre de données `PasswordEncryptionOptionSpec` de l’objet `compatability`. Par exemple, affectez `PasswordEncryptionCompatability.ACRO_7` à ce membre de données.
    * Spécifiez la valeur du mot de passe qui permet à un utilisateur d’ouvrir le document PDF chiffré en attribuant une valeur de chaîne qui représente le mot de passe d’ouverture au membre de données `documentOpenPassword` de l’objet `PasswordEncryptionOptionSpec`.
-   * Spécifiez la valeur du mot de passe qui permet à un utilisateur de supprimer le chiffrement du document PDF en attribuant une valeur de chaîne qui représente le mot de passe maître au membre de données `PasswordEncryptionOptionSpec` de l’objet &lt;a1/>.`permissionPassword`
+   * Spécifiez la valeur du mot de passe qui permet à un utilisateur de supprimer le chiffrement du document PDF en attribuant une valeur de chaîne qui représente le mot de passe maître au membre de données `permissionPassword` de l’objet `PasswordEncryptionOptionSpec`.
 
 1. Ajoutez le mot de passe.
 
