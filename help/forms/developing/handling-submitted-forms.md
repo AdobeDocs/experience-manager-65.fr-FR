@@ -88,7 +88,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Une page Web contient un lien qui accède à un servlet Java qui appelle le service Forms.</p></td>
   </tr>
   <tr>
