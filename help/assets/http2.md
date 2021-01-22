@@ -10,8 +10,8 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 translation-type: tm+mt
 source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '705'
+ht-degree: 100%
 
 ---
 
