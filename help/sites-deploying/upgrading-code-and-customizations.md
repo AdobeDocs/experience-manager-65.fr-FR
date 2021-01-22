@@ -153,7 +153,7 @@ Les configurations ContextHub sont affectées par une mise à niveau. Vous trouv
 
 ### Personnalisations des workflows {#workflow-customizations}
 
-Il est courant de modifier les workflows prêts à l’emploi pour ajouter ou supprimer des fonctionnalités. Un processus courant personnalisé est le [!UICONTROL workflow &lt;a0/>DAM Update Asset]. Tous les workflows nécessitant une implémentation personnalisée doivent être enregistrés et stockés dans le contrôle de version, car ils risquent d’être remplacés lors de la mise à niveau.
+Il est courant de modifier les workflows prêts à l’emploi pour ajouter ou supprimer des fonctionnalités. Un processus courant personnalisé est le [!UICONTROL workflow DAM Update Asset]. Tous les workflows nécessitant une implémentation personnalisée doivent être enregistrés et stockés dans le contrôle de version, car ils risquent d’être remplacés lors de la mise à niveau.
 
 ### Modèles modifiables {#editable-templates}
 
