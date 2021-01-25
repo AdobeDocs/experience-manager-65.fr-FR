@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 19faa273908e67a744e52d173a5352f0a52f7345
 workflow-type: tm+mt
 source-wordcount: '2060'
 ht-degree: 79%
@@ -414,7 +414,7 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 
 ### Création/ouverture d’une configuration personnalisée {#creating-opening-a-customized-configuration}
 
-1. Sélectionnez **Outils** > **Opérations** > **Formulaires de recherche**.
+1. Accédez à **Outils**, **Général**, **Formulaires de recherche**.
 
 1. Sélectionnez la configuration que vous souhaitez personnaliser.
 1. Utilisez l’icône **Modifier** pour ouvrir la configuration pour la mise à jour.
