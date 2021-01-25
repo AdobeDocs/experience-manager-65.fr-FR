@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: eec0e8f466c4a228b16ee2c1249052bfc3250dec
 workflow-type: tm+mt
-source-wordcount: '4255'
+source-wordcount: '4302'
 ht-degree: 5%
 
 ---
@@ -465,6 +465,8 @@ Vérifiez si vous utilisez une fonction ou une fonctionnalité dans un déploiem
 | Connecteurs | L’Adobe JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013 est obsolète pour AEM 6.5. | N/A |
 
 ## Problèmes connus {#known-issues}
+
+* Si vous rencontrez des problèmes dans la réponse [!DNL Experience Manager] en raison du minuteur de Registre des composants verrouillé, [installez ce package](https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr/2.1.20). La résolution de ces problèmes devrait être incluse dans la prochaine [version du Service Pack Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-on-prem-managed-services).
 
 * Ignorez les erreurs suivantes dans le fichier `error.log` lors de l&#39;installation du Experience Manager 6.5.7.0 :
 
