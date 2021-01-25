@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+source-git-commit: 838e194f699b0832839c80f4ba9503c9d5a15945
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 82%
@@ -85,7 +85,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
    <td><strong>Conseil de restructuration</strong></td>
    <td><p>Les modèles de workflow, nouveaux ou modifiés, doivent être migrés vers /conf/global/workflow/models.</p>
     <ol>
-     <li>Déployez les modèles de workflow modifiés dans une instance locale de développement AEM 6.4, comme ils existent dans l’emplacement précédent.</li>
+     <li>Déployez les modèles de workflow modifiés dans une instance locale de développement AEM 6.5, comme ils existent dans l’emplacement précédent.</li>
      <li>Modifiez le modèle de workflow à l’aide de l’éditeur de modèle de workflow d’AEM dans AEM &gt; Outils &gt; Workflow &gt; Modèles.</li>
      <li>Lors de la migration des modèles de workflow fournis par AEM modifiés
       <ol>
