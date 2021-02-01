@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5a99daa208d1d109d2736525fdca3accdcfb4dd1
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 90%
+source-wordcount: '788'
+ht-degree: 83%
 
 ---
 
@@ -97,7 +97,7 @@ Les workflows peuvent présenter l’un des statuts suivants :
 * **EN COURS** : l’instance de workflow est en cours d’exécution.
 * **TERMINÉ** : l’instance de workflow s’est terminée correctement.
 
-* **SUSPENDU** : l’instance de workflow a été suspendue.
+* **SUSPENDU** : Marque le processus comme suspendu. Toutefois, consultez la note de prudence ci-dessous sur un problème de connaissance de cet état.
 * **ABANDON** : l’instance de workflow a été arrêtée.
 * **PÉRIMÉ** : la progression de l’instance de workflow nécessite l’exécution d’une tâche en arrière-plan, mais la tâche est introuvable dans le système. Cette situation peut se produire lorsqu’une erreur survient pendant l’exécution du workflow.
 
@@ -107,7 +107,12 @@ Les workflows peuvent présenter l’un des statuts suivants :
 
 En fonction du statut actuel, vous pouvez effectuer des actions sur les instances de workflows en cours d’exécution lorsque vous devez intervenir dans la progression normale d’une instance de workflow :
 
-* **Suspendre** : arrête provisoirement l’exécution du workflow. Cette suspension est utile dans les cas exceptionnels où vous ne souhaitez pas que le workflow se poursuive (par exemple, pour des raisons de maintenance). Suspendre un workflow redéfinit son statut sur SUSPENDU.
+* **Suspendre** : La suspension change l&#39;état du workflow en Suspendu. Voir Attention ci-dessous :
+
+>[!CAUTION]
+>
+>Le fait de marquer un état de flux de travail comme &quot;Suspendre&quot; présente un problème connu. Dans cet état, il est possible d&#39;agir sur les éléments de workflow suspendus dans une boîte de réception.
+
 * **Reprendre** : Redémarre un flux de travaux suspendu au même point d’exécution où il a été suspendu, en utilisant la même configuration.
 * **Arrêter** : Met fin à l’exécution du flux de travail et définit l’état sur  **ABORTED**. Une instance de workflow abandonnée ne peut pas être redémarrée.
 
