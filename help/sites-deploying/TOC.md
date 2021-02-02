@@ -7,10 +7,10 @@ user-guide-title: Guide de déploiement d’AEM 6.5
 breadcrumb-title: Guide de déploiement
 user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.5, y compris sur le déploiement cloud d’Adobe Managed Services.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 95%
+source-wordcount: '352'
+ht-degree: 93%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 95%
    + [Tâches de déchargement](offloading.md)
    + [Connexion unique](single-sign-on.md)
    + [Mappage de ressources](resource-mapping.md)
-   + [Activation de HTTP via SSL](/help/sites-administering/ssl-by-default.md)
+   + [Activation de HTTP via SSL](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ssl-by-default.html)
    + [Vérifications transversales et contrôles de cohérence](consistency-check.md)
    + [Instructions de performance](performance-guidelines.md)
    + [Optimisation des performances](configuring-performance.md)
