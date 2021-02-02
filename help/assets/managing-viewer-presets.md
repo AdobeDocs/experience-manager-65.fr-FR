@@ -10,7 +10,7 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: fff2c39561f54436f8e5613ac648cb91af888c66
 workflow-type: tm+mt
 source-wordcount: '4335'
 ht-degree: 96%
@@ -55,7 +55,7 @@ Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et pr�
 
 Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez peut-être besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura peut-être une mise en page statique. Autrement, elle peut être « réactive » et affichée différemment en fonction du périphérique ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et les pages web réactives.
 
-Voir [Bibliothèque d’images réactives](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) dans la pour plus d’informations sur la manière d’incorporer des visionneuses réactives à vos pages Web.
+Voir [Bibliothèque d’images réactives](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) dans la pour plus d’informations sur la manière d’incorporer des visionneuses réactives à vos pages Web.
 
 >[!NOTE]
 >
