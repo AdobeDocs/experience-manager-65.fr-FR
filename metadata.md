@@ -4,7 +4,7 @@ solution-title: Formation et assistance
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Prise en main
-getting-started-url: https://experienceleague.corp.adobe.com/docs/experience-manager-tutorials.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
@@ -13,7 +13,7 @@ solution: Experience Manager
 type: Documentation
 index: y
 translation-type: tm+mt
-source-git-commit: 5f9fb08a59dd7cac5436b9c7836fb45de9cda007
+source-git-commit: fff2c39561f54436f8e5613ac648cb91af888c66
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 72%
@@ -32,7 +32,7 @@ Le fichier metadata.md comprend des métadonnées de niveau référentiel qui tr
 | solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté. |
 | getting-started-url | Lien vers la page de prise en main. |
 | tutorials-url | Lien vers des didacticiels vidéo. |
-| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2.    |
+| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2. |
 | git-repo | Spécifie l&#39;emplacement du repo principal pour une utilisation interne. |
 
 Dans le fichier TOC.md
