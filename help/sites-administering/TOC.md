@@ -7,10 +7,10 @@ user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.5
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 translation-type: tm+mt
-source-git-commit: 98180b630c991bc65ddfa275e0f8a97be3be6f7e
+source-git-commit: fd7a32c1070a0560ca744db041cf809f28672b33
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 96%
+source-wordcount: '671'
+ht-degree: 90%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 96%
    + [Réduction des problèmes de sérialisation dans AEM](mitigating-serialization-issues.md)
    + [Synchronisation des utilisateurs](sync.md)
    + [Prise en charge des jetons encapsulés](encapsulated-token.md)
-   + [Connexion unique](/help/sites-deploying/single-sign-on.md)
+   + [Connexion unique](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
    + [Contrôle des opérations de gestion des utilisateurs dans AEM](audit-user-management-operations.md)
    + [SSL par défaut](ssl-by-default.md)
    + [Gestionnaire d’authentification SAML 2.0](saml-2-0-authenticationhandler.md)
@@ -99,7 +99,7 @@ ht-degree: 96%
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
 + Personnalisation   {#personalization}
    + [Personnalisation ](personalization.md)
-   + [Configuration de ContextHub](/help/sites-developing/ch-configuring.md)
+   + [Configuration de ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [Contexte client](client-context.md)
    + [Campagnes](campaigns.md)
    + [Configuration de la segmentation avec ContextHub](segmentation.md)
@@ -158,11 +158,11 @@ ht-degree: 96%
    + [Intégration à Livefyre](livefyre.md)
 + Bonnes pratiques {#bestpractices}
    + [Bonnes pratiques](administer-best-practices.md)
-   + [Meilleures pratiques de traduction](tc-bp.md)
-   + [Meilleures pratiques MSM](msm-best-practices.md)
+   + [Meilleures pratiques de traduction](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
+   + [Meilleures pratiques MSM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites – Préparation pour le RGPD](gdpr-compliance-sites.md)
-   + [Traitement des demandes RGPD pour AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
-   + [AEM Commerce – Préparation pour le RGPD](gdpr-compliance-commerce.md)
+   + [Traitement des demandes RGPD pour AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
+   + [AEM Commerce – Préparation pour le RGPD](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
 + Gestion de contenu {#contentmanagement}
    + [Utilisation des modules](package-manager.md)
    + [Administration des balises](tags.md)
