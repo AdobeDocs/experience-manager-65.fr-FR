@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: 9b65f7194dc648ba9a6dbc127bc8d5951f126269
+source-git-commit: 6ca333c64fcd7d3b91b1ae8ef98c53ed770479d4
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 87%
@@ -98,7 +98,24 @@ Parfois, la fenêtre Quickstart de la gestion de contenu web AEM affiche le mess
 
 Si toutes les autres solutions échouent, consultez les journaux pour déterminer ce qui s’est passé.
 
-## Résolutions des problèmes d’installation avec un serveur d’applications  {#troubleshooting-installations-with-an-application-server}
+### Le site Web ne se charge pas ou échoue par intermittence avec Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
+
+Il existe un problème connu avec AEM 6.5 s’exécutant sur Java 11, en raison duquel le site Web ne se charge pas ou échoue par intermittence.
+
+Si tel est le cas, suivez la solution ci-dessous :
+
+1. Ouvrez le fichier `sling.properties` sous le dossier `crx-quickstart/conf/`.
+1. Recherchez la ligne suivante :
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.`
+
+1. Remplacez-le par ce qui suit :
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
+
+1. Redémarrez l’instance.
+
+## Résolutions des problèmes d’installation avec un serveur d’applications {#troubleshooting-installations-with-an-application-server}
 
 ### Lorsqu’une page geometrixx-outdoor est demandée, l’erreur Page introuvable est renvoyée.{#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
@@ -130,20 +147,3 @@ Si votre installation AEM utilise un système de stockage externe, comme un serv
 
 Si vous installez ou mettez à jour les fichiers JSP dans Experience Manager sur JBoss et si les servlets correspondants ne sont pas compilés, vérifiez que le compilateur JSP JBoss est correctement configuré. Pour plus d’informations, voir la section
 [Problèmes de compilation JSP dans l’article JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).
-
-### Le site Web ne se charge pas ou échoue par intermittence avec Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
-
-Il existe un problème connu avec AEM 6.5 s’exécutant sur Java 11, en raison duquel le site Web ne se charge pas ou échoue par intermittence.
-
-Si tel est le cas, suivez la solution ci-dessous :
-
-1. Ouvrez le fichier `sling.properties` sous le dossier `crx-quickstart/conf/`.
-1. Recherchez la ligne suivante :
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.`
-
-1. Remplacez-le par ce qui suit :
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
-
-1. Redémarrez l’instance.
