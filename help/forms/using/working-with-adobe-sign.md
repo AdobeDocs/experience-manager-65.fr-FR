@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
+source-git-commit: fd9ee8e4eb35bd5d303d7bbdd9660a94c54925ff
 workflow-type: tm+mt
-source-wordcount: '3827'
-ht-degree: 40%
+source-wordcount: '3859'
+ht-degree: 39%
 
 ---
 
@@ -37,6 +37,8 @@ Dans un scénario typique de [!DNL Adobe Sign] et de formulaires adaptatifs, un 
 * Signature de formulaires en tant qu’utilisateur anonyme ou connecté
 * Processus de signature dynamique (intégration au flux de travail AEM [!DNL Forms])
 * Authentification par le biais d’une base de connaissances, un téléphone et des profils de réseaux sociaux
+
+Découvrez les [meilleures pratiques d’utilisation de Adobe Sign avec des formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) pour créer de meilleures expériences de signature.
 
 ## Conditions préalables {#prerequisites}
 
@@ -330,7 +332,7 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 
 **Composant d’étape de signature :** vous pouvez utiliser le composant d’étape de signature pour créer une expérience de signature dans le formulaire. Il permet uniquement au premier signataire de signer pendant que le formulaire est rempli. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version PDF à signer du formulaire. Il s’agit généralement de la dernière ou de l’avant-dernière section suivie du composant de résumé d’un formulaire.
 
-## Résolution des problèmes d’{#troubleshoot}
+## Résolution des problèmes {#troubleshoot}
 
 ### [!DNL Adobe Sign] échecs d&#39;accord  {#adobe-sign-agreement-failures}
 
@@ -358,5 +360,5 @@ ProblèmeLorsque  [!DNL Adobe Sign] est configuré pour un formulaire adaptatif,
 ## Articles connexes {#related-articles}
 
 * [Incorporation d’Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
-* [Utilisation d’Adobe Sign dans un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md)
+* [Recommandations relatives à l’utilisation d’Adobe Sign avec des formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 * [Utilisation de Adobe Sign avec AEM Forms (vidéo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
