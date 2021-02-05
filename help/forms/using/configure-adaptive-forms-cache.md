@@ -10,10 +10,10 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ade3747ba608164a792a62097b82c55626245891
+source-git-commit: 2d54d115529126162c92e9943a188d05159535f9
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 21%
+source-wordcount: '934'
+ht-degree: 23%
 
 ---
 
@@ -46,7 +46,6 @@ Vous pouvez également configurer la mise en cache des formulaires adaptatifs su
 ### Conditions préalables {#pre-requisites}
 
 * Activez l&#39;option [fusion ou préremplissage des données au niveau du client](prepopulate-adaptive-form-fields.md#prefill-at-client). Il permet de fusionner des données uniques pour chaque instance d’un formulaire prérempli.
-* [Activez l’agent de vidage pour chaque instance](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) de publication. Il permet de mieux mettre en cache les performances des formulaires adaptatifs. L&#39;URL par défaut des agents de vidage est `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Considérations relatives à la mise en cache de formulaires adaptatifs sur un répartiteur {#considerations}
 
@@ -63,7 +62,7 @@ Vous pouvez également configurer la mise en cache des formulaires adaptatifs su
 
 Suivez les étapes ci-dessous pour activer et configurer la mise en cache des formulaires adaptatifs sur le répartiteur :
 
-1. Ouvrez l’URL suivante pour chaque instance de publication de votre environnement et configurez l’agent de réplication :
+1. Ouvrez l’URL suivante pour chaque instance de publication de votre environnement et [activez l’agent de vidage pour les instances de publication de votre environnement](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) :
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Ajoutez les éléments suivants à votre fichier](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) dispatcher.any :
@@ -143,17 +142,7 @@ Lorsque vous sélectionnez et ajoutez des images ou des vidéos via l’explorat
 
 Après avoir publié les images et la vidéo, annulez et publiez explicitement les formulaires adaptatifs qui référencent ces ressources.
 
-### Certains formulaires adaptatifs contenant des fragments de contenu ou d’expérience ne sont pas automatiquement invalidés à partir du cache de répartiteur {#content-or-experience-fragment-not-auto-invalidated}
-
-#### Problème {#issue2}
-
-Lorsque vous ajoutez un fragment de contenu ou un fragment d’expérience à un formulaire adaptatif et que ces ressources sont modifiées et publiées de manière indépendante, les formulaires adaptatifs contenant ces ressources ne sont pas automatiquement invalidés à partir du cache du répartiteur.
-
-#### Solution {#Solution2}
-
-Après avoir publié un fragment de contenu ou un fragment d’expérience mis à jour, annulez explicitement la publication et publiez les formulaires adaptatifs qui utilisent ces ressources.
-
-### Seule la première instance d’un formulaire adaptatif est mise en cache {#only-first-insatnce-of-adptive-forms-is-cached}
+### Seule la première instance d’un formulaire adaptatif est mise en cache {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Problème {#issue3}
 
