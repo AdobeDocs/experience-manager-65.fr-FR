@@ -1,12 +1,12 @@
 ---
-title: Introduction à  [!DNL Adobe Experience Manager Assets].
+title: Présentation de  [!DNL Adobe Experience Manager Assets]
 description: Découvrez ce qu’est la gestion des actifs numériques, ses cas d’utilisation et  [!DNL Adobe Experience Manager Asset] l’offre.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 130a03c821fd2a1e9ecda70039241720052a8920
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 32%
+source-wordcount: '868'
+ht-degree: 29%
 
 ---
 
@@ -67,11 +67,11 @@ Lorsque vous utilisez des ressources numériques dans [!DNL Experience Manager],
 
 * **Rendus** : Un rendu est la représentation binaire d’une ressource. [!DNL Assets] toujours avoir une Principale représentation - celle du fichier téléchargé. Elle peut en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du téléchargement de la ressource, par exemple. Les rendus peuvent avoir différentes tailles, différentes résolutions et un filigrane ou d’autres caractéristiques modifiées.
 
-* **Versions** : Le contrôle de version crée un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. Voir [versioning dans Assets](manage-assets.md#asset-versioning).
+* **Versions** : Le contrôle de version crée un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. Voir [versioning dans [!DNL Assets]](manage-assets.md#asset-versioning).
 
 * **Sous-ressources** : Les sous-ressources sont des ressources qui constituent un actif, par exemple, les calques d’un  [!DNL Adobe Photoshop] fichier ou les pages d’un fichier PDF. Dans [!DNL Assets], vous pouvez gérer les sous-ressources comme vous le feriez pour les ressources.
 
-### Utilisation des ressources {#how-to-work-with-assets}
+### Utilisation des ressources numériques {#how-to-work-with-assets}
 
 Vous effectuez une action sur une ressource ou une collection. Les actions peuvent créer ou modifier des ressources, des collections et des rendus. La plupart des actions de base que vous effectuez sur les ressources (téléchargement, suppression, mise à jour, enregistrement de sous-ressources) déclenchent des workflows préconfigurés. Ils sont automatiquement activés dans [!DNL Assets] et sont décrits en détail dans les gestionnaires de médias [!DNL Assets].
 
@@ -82,8 +82,13 @@ Tâches que vous pouvez exécuter avec ces workflows préconfigurés :
 * Générer des rendus et des miniatures pour la ressource ; y compris le redimensionnement et le recadrage automatiques si nécessaire.
 * Transcodez le fichier si nécessaire. Par exemple, la vidéo destinée aux utilisateurs mobiles et Web est transcodée avec 24 images par seconde, la vidéo téléchargée avec 30 images par seconde. L’audio pour l’utilisation mobile et Web est transcodé avec 128 Kbits/s, l’audio pour le téléchargement avec 192 Kbits/s.
 
-Vous pouvez bien sûr aussi appliquer des workflows manuellement. Voir [Gestionnaires de médias Assets](/help/assets/media-handlers.md) pour obtenir une liste des workflows par défaut.
+Vous pouvez bien sûr aussi appliquer des workflows manuellement. Voir [Gestionnaires de médias Assets](media-handlers.md) pour obtenir une liste des workflows par défaut.
 
-## [!DNL Experience Manager Assets] et [!DNL MediaLibrary] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] et [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Voir [Ressources et MediaLibrary](/help/assets/medialibrary.md) pour plus d’informations sur les différences.
+Voir [Ressources et bibliothèque de médias](medialibrary.md) pour plus d’informations sur les différences.
+
+>[!MORELIKETHIS]
+>
+>* [Experience Manager Assets en tant que DAM moderne](https://www.youtube.com/embed/PBwQqZgC-yo)
+
