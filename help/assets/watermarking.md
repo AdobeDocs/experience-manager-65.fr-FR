@@ -3,10 +3,10 @@ title: Ajout d’un filigrane à vos ressources numériques
 description: Découvrez comment utiliser la fonctionnalité d’application d’un filigrane pour ajouter un filigrane numérique aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: ec97cc41989cacdcae64a955a32a34d12212ca85
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 35%
+source-wordcount: '305'
+ht-degree: 31%
 
 ---
 
@@ -22,8 +22,8 @@ Pour pouvoir appliquer un filigrane aux ressources, ajoutez l’étape de filigr
 
 1. Dans le panneau latéral, faites glisser l’étape **[!UICONTROL Ajouter le filigrane]** vers le workflow [!UICONTROL DAM Update Asset].
 
-   ![Faites glisser l’étape  [!UICONTROL Ajouter les ] filigranes et ajoutez-la au processus  de mise à jour des ressources ](assets/add_watermark_step_aem_assets.png)
-DAM2.
+   ![Faites glisser l’étape  [!UICONTROL Ajouter les ] filigranes et ajoutez-la au processus  [!UICONTROL DAM Update ] Asset.](assets/add_watermark_step_aem_assets.png)
+
    *Figure : Faites glisser l’étape  [!UICONTROL Ajouter les ] filigranes et ajoutez-la au processus  [!UICONTROL DAM Update ] Asset.*
 
    >[!NOTE]
@@ -33,7 +33,7 @@ DAM2.
 1. Ouvrez l’étape **[!UICONTROL Ajouter un filigrane]** pour afficher ses propriétés.
 1. Sous l’onglet **[!UICONTROL Arguments]**, spécifiez des valeurs valides dans les différents champs, notamment le texte, le type de police, la taille, la couleur, l’emplacement, l’orientation, etc. Pour confirmer les modifications, cliquez sur **[!UICONTROL Terminé]**.
 
-   ![Indiquer les arguments dans l’étape Ajouter un filigrane dans Assets](assets/arguments_add_watermark_aem_assets.png)
+   ![Indiquer les arguments dans l’étape Ajouter un filigrane dans [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 
    *Figure : Fournissez les arguments dans l’étape d’ajout de filigrane dans  [!DNL Assets].*
 
@@ -41,3 +41,8 @@ DAM2.
 1. Dans l’interface utilisateur [!DNL Assets], téléchargez un exemple de fichier. Le filigrane apparaît avec la taille de police, la couleur, etc., à l’emplacement configuré aux étapes ci-dessus.
 
 Pour mettre en filigrane des documents PDF par programmation ou avec des informations dynamiques, pensez à utiliser l’offre [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md).
+
+## Conseils et restrictions {#tips-limitations}
+
+* Seuls les filigranes basés sur du texte sont pris en charge. Les images ne sont pas utilisées comme filigranes, même si vous pouvez télécharger des images lors de la création du processus [!UICONTROL Ajouter le filigrane].
+* Seuls les fichiers PNG et JPEG sont pris en charge pour être mis en filigrane. Les autres formats de fichier ne sont pas filigrane.
