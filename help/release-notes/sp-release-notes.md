@@ -4,10 +4,10 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eec0e8f466c4a228b16ee2c1249052bfc3250dec
+source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
 workflow-type: tm+mt
-source-wordcount: '4302'
-ht-degree: 5%
+source-wordcount: '4308'
+ht-degree: 7%
 
 ---
 
@@ -46,6 +46,8 @@ Les principales fonctionnalités et améliorations introduites dans [!DNL Adobe 
    * Validation des valeurs de champ sur le serveur lors de l’envoi d’un formulaire adaptatif.
 
    * Conversion d’un formulaire PDF en formulaire adaptatif à l’aide de [!DNL Automated Forms Conversion service].
+
+* Prise en charge de Microsoft SQL Server 2019 dans [!DNL Experience Manager Forms].
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.22.5.
 
@@ -147,13 +149,13 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 
 [!DNL Adobe Experience Manager] La version 6.5.7.0  [!DNL Assets] corrige les problèmes suivants et apporte les améliorations suivantes.
 
-* Les améliorations suivantes ont été apportées à l&#39;accessibilité dans [!DNL Experience Manager Assets] de cette version. Pour plus d&#39;informations, voir [fonctionnalités d&#39;accessibilité dans [!DNL Assets]](/help/assets/accessibility.md).
+* Les améliorations suivantes ont été apportées à l’accessibilité d’[!DNL Experience Manager Assets] grâce à cette version. Pour plus d’informations, voir [Fonctionnalités d’accessibilité d’ [!DNL Assets]](/help/assets/accessibility.md).
 
    * Lorsque vous naviguez dans la chronologie à l’aide d’un clavier, la touche `Esc` peut réduire l’option [!UICONTROL Afficher tout] sans perdre la cible d’action (CQ-4293598).
    * Lors de la navigation à l’aide de la touche de tabulation du clavier, après avoir supprimé la dernière balise des balises ajoutées, le champ de balise conserve la cible d’action (NPR-35109).
    * [!DNL Experience Manager] Les composants contiennent désormais les informations appropriées concernant le nom, le rôle et la valeur à utiliser par les lecteurs d’écran (NPR-34255).
    * Après avoir supprimé la zone de liste déroulante Type/Taille, la zone de liste déroulante Lien, la zone de liste déroulante Langue ou la zone d’édition Texte, la cible d’action du clavier revient aux éléments suivants ou précédents de l’interface utilisateur ou à un élément d’interface utilisateur plus pertinent (CQ-4293585).
-   * Lorsque vous placez le pointeur de la souris sur des options, des conseils tels que Sélectionner et Télécharger s’affichent. Les utilisateurs qui utilisent une loupe d’écran peuvent ne pas voir les miniatures de fichier en raison de ces conseils. Désormais, il est possible de conserver la cible d’action, après avoir supprimé l’option à l’aide de la touche `Escape`. (CQ-4293554).
+   * Lorsque vous placez le pointeur de la souris sur des options, des conseils concernant par exemple les fonctions Sélectionner et Télécharger s’affichent. Il est possible que les utilisateurs de la loupe ne voient pas les miniatures des fichiers en raison de ces conseils. Il est désormais possible de conserver la sélection après avoir supprimé l’option à l’aide de la touche `Escape`. (CQ-4293554).
    * Lors de la sélection d’une cellule de grille dans la grille présente dans la page, la sélection se déplace vers la barre d’actions qui s’affiche à l’écran (CQ-4282127).
    * Les utilisateurs visuels peuvent faire la différence entre un texte normal et un lien, car des indices visuels (soulignement et icône en chevron) s’affichent pour les liens vers toutes les solutions dans la page d&#39;accueil [!DNL Experience Manager] (CQ-4282072).
 
@@ -207,7 +209,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
    * Les utilisateurs peuvent naviguer dans la boîte de dialogue Lien d’adresse électronique à l’aide de la clé `Tab` (CQ-4290926).
    * Le flux de travail permettant de créer des profils de codage vidéo est plus facile à utiliser en raison de l’amélioration du lecteur d’écran (CQ-4290623, CQ-4290622).
    * Lorsque vous naviguez à l’aide de la touche `Tab`, la cible d’action se déplace vers les éléments d’interface utilisateur appropriés dans le processus pour créer une vidéo interactive (CQ-4290621, CQ-4290620, CQ-4290619).
-   * La page Publier, la page Modifier un fichier, la page Modifier les cultures dynamiques et la page Editeur de visionneuse d’images sont améliorées pour répondre aux normes Web. Les utilisateurs de la technologie d’assistance (AT) peuvent désormais naviguer facilement dans ces pages et prendre des mesures telles que recadrer des images (CQ-4290617, CQ-4290616, CQ-4290613, CQ-4290612, CQ-49 0610, CQ-4290614).
+   * Les pages Publier, Modifier ressource, Modifier les recadrages intelligents et Éditeur de visionneuse d’images ont été améliorées pour répondre aux références standard du web. Les utilisateurs de la technologie d’assistance (AT) peuvent désormais naviguer facilement dans ces pages et prendre des mesures telles que recadrer des images (CQ-4290617, CQ-4290616, CQ-4290613, CQ-4290612, CQ-49 0610, CQ-4290614).
    * Les lecteurs sont améliorés pour permettre aux utilisateurs de naviguer à l’aide du clavier (CQ-4290615).
    * Les utilisateurs du clavier et des lecteurs d’écran peuvent utiliser la fonctionnalité de recadrage (CQ-4290609).
    * Les utilisateurs du clavier peuvent mieux gérer les zones réactives (CQ-4290604, CQ-4290603).
