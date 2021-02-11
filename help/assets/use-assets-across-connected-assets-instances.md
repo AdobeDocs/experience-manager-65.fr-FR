@@ -3,10 +3,10 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f0d91a32caa4d3b862d852028e3bc5547aeb8015
+source-git-commit: d05dc3af0a885e51758194783e773695086d7956
 workflow-type: tm+mt
 source-wordcount: '2263'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Les utilisateurs peuvent créer des pages web dans [!DNL Experience Manager Site
 
 ## Présentation de la fonction Ressources connectées {#overview-of-connected-assets}
 
-Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d&#39;un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets].
+Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets].
 
 Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet de rechercher et d’utiliser aisément plusieurs ressources distantes à la fois. Envisagez de migrer en masse de nombreuses ressources distantes pour les rendre disponibles sur le déploiement local [!DNL Sites] en une seule fois. Voir [Guide de migration des ressources du Experience Manager](/help/assets/assets-migration-guide.md).
 
@@ -32,7 +32,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
+   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Pris en charge | Pris en charge | Pris en charge |
    | **[!DNL Experience Manager] 6.5 [!DNL Assets] sur AMS** | Pris en charge | Pris en charge | Pris en charge |
    | **[!DNL Experience Manager] 6.5 [!DNL Assets] on-premise** | Pas de prise en charge | Pas de prise en charge | Pas de prise en charge |
 
@@ -40,7 +40,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
 Les auteurs recherchent des images et les types de documents suivants dans l’outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Les documents sont ajoutés au composant `Download` et les images au composant `Image`. Les auteurs ajoutent également les ressources distantes d’un composant [!DNL Experience Manager] personnalisé qui étend les composants par défaut `Download` ou `Image`. Les formats pris en charge sont les suivants :
 
-* **Formats d’image** : les formats pris en charge par le composant [Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). Les images [!DNL Dynamic Media] ne sont pas prises en charge.
+* **Formats d’image** : les formats pris en charge par le composant [Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr). Les images [!DNL Dynamic Media] ne sont pas prises en charge.
 * **Formats de document** : voir les [formats de document pris en charge](assets-formats.md#supported-document-formats).
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
@@ -51,10 +51,10 @@ Les différents rôles impliqués pour configurer et utiliser la fonctionnalité
 |---|---|---|---|---|
 | Administrateur [!DNL Sites] | Local | [!DNL Experience Manager] `administrators` | `admin` | Configurez [!DNL Experience Manager], ainsi que l’intégration au déploiement [!DNL Assets] distant. |
 | Utilisateur DAM | Local | `Authors` | `ksaner` | Utilisé pour afficher et dupliquer les ressources récupérées au niveau de `/content/DAM/connectedassets/`. |
-| Auteur [!DNL Sites] | Local | `Authors` (avec les droits d’accès en lecture sur l’instance DAM distante et l’accès en tant qu’auteur sur l’instance [!DNL Sites] locale) | `ksaner` | Les utilisateurs finaux sont des auteurs [!DNL Sites] qui utilisent cette intégration pour améliorer leur vélocité de contenu. Les auteurs recherchent et parcourent les ressources dans des fichiers DAM distants à l’aide de l’[!UICONTROL outil de recherche de contenu] et utilisent les images requises dans les pages web locales. Les identifiants de l’utilisateur DAM `ksaner` sont utilisés. |
+| Auteur [!DNL Sites] | Local | <ul><li>`Authors` (avec les droits d’accès en lecture sur l’instance DAM distante et l’accès en tant qu’auteur sur l’instance [!DNL Sites] locale) </li> <li>`dam-users` sur local  [!DNL Sites]</li></ul> | `ksaner` | Les utilisateurs finaux sont des auteurs [!DNL Sites] qui utilisent cette intégration pour améliorer leur vélocité de contenu. Les auteurs recherchent et parcourent les ressources dans des fichiers DAM distants à l’aide de l’[!UICONTROL outil de recherche de contenu] et utilisent les images requises dans les pages web locales. Les identifiants de l’utilisateur DAM `ksaner` sont utilisés. |
 | Administrateur [!DNL Assets] | Distant | [!DNL Experience Manager] `administrators` | `admin` sur [!DNL Experience Manager] distant | Configurez le partage des ressources cross-origin (CORS). |
 | Utilisateur DAM | Distant | `Authors` | `ksaner` sur [!DNL Experience Manager] distant | Rôle d’auteur sur le déploiement [!DNL Experience Manager] distant. Recherchez et parcourez les ressources dans la fonction Ressources connectées à l’aide de l’[!UICONTROL outil de recherche de contenu]. |
-| Distributeur DAM (utilisateur technique) | Distant | [!DNL Sites] `Authors` | `ksaner` sur [!DNL Experience Manager] distant | Cet utilisateur présent sur le déploiement distant est utilisé par le serveur local [!DNL Experience Manager] (et non le rôle d’auteur [!DNL Sites]) pour récupérer les ressources distantes, au nom de l’auteur [!DNL Sites]. Ce rôle n’est pas identique aux deux rôles `ksaner` ci-dessus et appartient à un groupe d’utilisateurs différent.  |
+| Distributeur DAM (utilisateur technique) | Distant | [!DNL Sites] `Authors` | `ksaner` sur [!DNL Experience Manager] distant | Cet utilisateur présent sur le déploiement distant est utilisé par le serveur local [!DNL Experience Manager] (et non le rôle d’auteur [!DNL Sites]) pour récupérer les ressources distantes, au nom de l’auteur [!DNL Sites]. Ce rôle n’est pas identique aux deux rôles `ksaner` ci-dessus et appartient à un groupe d’utilisateurs différent. |
 
 ## Configurez une connexion entre les déploiements [!DNL Sites] et [!DNL Assets] {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -76,7 +76,7 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
    1. L’emplacement de [!DNL Assets] est `https://[assets_servername_ams]:[port]`.
    1. Identifiants d’un distributeur DAM (utilisateur technique).
    1. Dans le champ **[!UICONTROL Point de montage]**, entrez le chemin local [!DNL Experience Manager] où [!DNL Experience Manager] récupère les ressources. Par exemple, le dossier `remoteassets`.
-   1. Ajustez les valeurs du **[!UICONTROL Seuil d’optimisation du transfert du binaire d’origine]** en fonction de votre réseau. Un rendu de ressource dont la taille est supérieure à ce seuil est transféré de façon asynchrone. 
+   1. Ajustez les valeurs du **[!UICONTROL Seuil d’optimisation du transfert du binaire d’origine]** en fonction de votre réseau. Un rendu de ressource dont la taille est supérieure à ce seuil est transféré de façon asynchrone.
    1. Sélectionnez **[!UICONTROL Entrepôt de données partagé avec les ressources connectées]** si vous utilisez un entrepôt de données pour stocker vos ressources et qu’elle constitue le support de stockage commun aux deux déploiements. Dans ce cas, la limite de seuil n’a pas d’importance, car les fichiers binaires de ressources se trouvent dans l’entrepôt de données et ne sont pas transférés.
 
    ![Exemple de configuration standard pour les ressources connectées](assets/connected-assets-typical-config.png)
@@ -111,7 +111,7 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
 
    1. Dans le champ **[!UICONTROL Origines autorisées]**, entrez l’URL de l’instance locale [!DNL Sites], c’est-à-dire `https://[local_sites]:[port]`. Enregistrez la configuration.
 
-## Utilisation des ressources distantes  {#use-remote-assets}
+## Utilisation des ressources distantes {#use-remote-assets}
 
 Les auteurs de site web utilisent l’outil de recherche de contenu pour se connecter au déploiement DAM. Les auteurs peuvent parcourir, rechercher et faire glisser les ressources distantes dans un composant. Pour vous authentifier sur le système DAM distant, conservez les identifiants de l’utilisateur DAM fournis par votre administrateur.
 
@@ -153,7 +153,7 @@ Utilisez la configuration ci-dessus pour découvrir l’expérience de création
 
 >[!CAUTION]
 >
->Une fois utilisées dans une page Web, les ressources distantes extraites sont recherchées et utilisables par toute personne disposant des autorisations d’accès au dossier local. Les ressources extraites sont stockées dans le dossier local (`connectedassets` dans la procédure pas à pas ci-dessus). Les ressources sont également consultables et visibles dans le référentiel local via l’[!UICONTROL outil de recherche de contenu].
+>Une fois utilisées dans une page Web, les ressources distantes extraites peuvent être recherchées et utilisées par toute personne disposant des autorisations d’accès au dossier local. Les ressources extraites sont stockées dans le dossier local (`connectedassets` dans la procédure pas à pas ci-dessus). Les ressources sont également consultables et visibles dans le référentiel local via l’[!UICONTROL outil de recherche de contenu].
 
 Les ressources récupérées peuvent être utilisées comme n’importe quelle autre ressource locale, à la différence que les métadonnées associées ne peuvent pas être modifiées.
 
@@ -192,8 +192,8 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 
 Pour résoudre le scénario d’erreur courant, procédez comme suit :
 
-* Si vous ne parvenez pas à rechercher des ressources distantes à partir de l&#39;[!UICONTROL Outil de recherche de contenu], assurez-vous que les rôles et autorisations requis sont en place.
+* Si vous ne pouvez pas rechercher des ressources distantes à partir de l’[!UICONTROL outil de recherche de contenu], vérifiez que les rôles et autorisations requis sont bien appliqués.
 * Une ressource récupérée à partir du DAM distant peut ne pas être publiée sur une page web pour une ou plusieurs raisons, notamment son absence sur le serveur distant, l’absence d’autorisations appropriées pour la récupérer ou une défaillance du réseau. Assurez-vous que la ressource n’est pas supprimée du DAM distant. Assurez-vous que les autorisations appropriées sont en place et que les conditions préalables sont remplies. Essayez de rajouter la ressource à la page et de la republier. Recherchez dans la [liste des tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) les erreurs de récupération de ressources.
-* Si vous ne pouvez pas accéder au déploiement DAM distant à partir du déploiement local [!DNL Sites], assurez-vous que les cookies intersites sont autorisés. Si des cookies intersites sont bloqués, les deux déploiements de [!DNL Experience Manager] peuvent ne pas s&#39;authentifier. Par exemple, [!DNL Google Chrome] en mode Incognito peut bloquer les cookies tiers. Pour autoriser les cookies dans le navigateur [!DNL Chrome], cliquez sur l&#39;icône &quot;oeil&quot; dans la barre d&#39;adresse, accédez à Site Not Working > Block, sélectionnez l&#39;URL DAM distante et autorisez le cookie de jeton de connexion. Vous pouvez également consulter l’aide [sur la façon d’activer les cookies tiers](https://support.google.com/chrome/answer/95647).
+* Si vous ne pouvez pas accéder au déploiement de la gestion des actifs numériques distant à partir du déploiement [!DNL Sites] local, assurez-vous que les cookies intersites sont autorisés. Si les cookies intersites sont bloqués, les deux déploiements de [!DNL Experience Manager] peuvent ne pas s’authentifier. Par exemple, [!DNL Google Chrome] en mode Incognito peut bloquer les cookies tiers. Pour autoriser les cookies dans le navigateur [!DNL Chrome], cliquez sur l’icône « oeil » dans la barre d’adresse, accédez à Le site ne fonctionne pas > Bloqué, sélectionnez l’URL de la gestion des actifs numériques distante et autorisez le cookie de jeton de connexion. Vous pouvez également consulter l’aide [sur la façon d’activer les cookies tiers](https://support.google.com/chrome/answer/95647).
 
    ![Erreur de cookie dans Chrome en mode incognito](assets/chrome-cookies-incognito-dialog.png)
