@@ -2,10 +2,10 @@
 title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies.
 translation-type: tm+mt
-source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
+source-git-commit: 1725f19d0676680ae89ad7ea39fa3ae1deaeb8a3
 workflow-type: tm+mt
-source-wordcount: '4114'
-ht-degree: 83%
+source-wordcount: '4170'
+ht-degree: 81%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 83%
 
 Vous pouvez créer une Live Copy d’une configuration de page ou de plan directeur, puis gérer l’héritage et la synchronisation.
 
-## Gestion des configurations de plans directeurs  {#managing-blueprint-configurations}
+## Gestion des configurations de plans directeurs {#managing-blueprint-configurations}
 
 Une configuration de plan directeur identifie un site web existant que vous souhaitez utiliser comme source d’une ou plusieurs pages Live Copy.
 
@@ -356,7 +356,11 @@ Vous pouvez suspendre l’héritage de Live Copy d’une page Live Copy afin de 
 >
 >Vous pouvez également [désolidariser une Live Copy](#detaching-a-live-copy) de son plan directeur pour supprimer toutes les connexions. L’action Désolidariser est définitive et irréversible.
 
-#### Suspension de l’héritage à partir des propriétés de page  {#suspending-inheritance-from-page-properties}
+>[!NOTE]
+>
+>Si le composant est marqué comme conteneur, les actions d’annulation et de suspension ne s’appliquent pas à ses composants enfants. Voir aussi [Meilleures pratiques des MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) pour plus d&#39;informations.
+
+#### Suspension de l’héritage à partir des propriétés de page {#suspending-inheritance-from-page-properties}
 
 Pour suspendre l’héritage sur une page :
 
@@ -459,6 +463,10 @@ Pour spécifier ou changer la profondeur :
 ### Annulation de l’héritage pour un composant  {#cancelling-inheritance-for-a-component}
 
 Annulez l’héritage Live Copy d’un composant afin que ce composant ne soit plus synchronisé avec le composant source. Vous pouvez activer l’héritage ultérieurement si nécessaire.
+
+>[!NOTE]
+>
+>Si le composant est marqué comme conteneur, les actions d’annulation et de suspension ne s’appliquent pas à ses composants enfants. Voir aussi [Meilleures pratiques des MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) pour plus d&#39;informations.
 
 >[!NOTE]
 >
