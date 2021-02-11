@@ -1,34 +1,30 @@
 ---
-title: Création de formulaires adaptatifs à l’aide d’un schéma XML
-seo-title: Création de formulaires adaptatifs à l’aide d’un schéma XML
-description: Les formulaires adaptatifs peuvent utiliser un schéma XML en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles XSD existants pour créer des formulaires adaptatifs. Vous pouvez faire glisser et déposer des éléments de schéma du modèle XSD jusqu’à votre formulaire adaptatif.
-seo-description: Les formulaires adaptatifs peuvent utiliser un schéma XML en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles XSD existants pour créer des formulaires adaptatifs. Vous pouvez faire glisser et déposer des éléments de schéma du modèle XSD jusqu’à votre formulaire adaptatif.
-uuid: 84c35728-1b6c-4286-854b-51c03bfd0eac
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
-docset: aem65
+title: Comment créer une Forms adaptative à l’aide du Schéma XML ?
+description: Découvrez comment utiliser le schéma XML comme modèle de formulaire dans un formulaire adaptatif. Vous pouvez appliquer des modèles XSD existants pour créer des formulaires adaptatifs et faire glisser des éléments de schéma de XSD sur votre formulaire adaptatif. Explorez plus en détail un exemple de schéma XML, ajoutez des propriétés spéciales aux champs à l’aide du schéma XML et limitez les valeurs acceptables pour un composant de formulaire adaptatif.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: ec8a4c3941b5434f10ad0727be02fcf296cd4da7
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 91%
+source-wordcount: '1073'
+ht-degree: 84%
 
 ---
 
 
-# Création de formulaires adaptatifs à l’aide d’un schéma XML{#creating-adaptive-forms-using-xml-schema}
+# Création de formulaires adaptatifs à l’aide d’un schéma XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Conditions préalables {#prerequisites}
 
 La création d’un formulaire adaptatif à l’aide d’un schéma XML en tant que modèle de formulaire requiert des connaissances de base en matière de schémas XML. Il est également recommandé de lire le contenu suivant avant cet article.
 
-* [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md)
+* [Création d’un formulaire adaptatif](creating-adaptive-form.md)
 * [Schéma XML](https://www.w3.org/TR/xmlschema-2/)
 
 ## Utilisation d’un schéma XML en tant que modèle de formulaire {#using-an-xml-schema-as-form-model}
 
-AEM Forms prend en charge la création d’un formulaire adaptatif en utilisant un schéma XML existant en tant que modèle de formulaire. Ce schéma XML représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation.
+[!DNL Experience Manager Forms] prend en charge la création d’un formulaire adaptatif en utilisant un schéma XML existant en tant que modèle de formulaire. Ce schéma XML représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation.
 
 Les principales fonctionnalités de l’utilisation d’un schéma XML sont les suivantes :
 
@@ -293,7 +289,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
 
 **Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
 
-Lorsque vous cliquez sur un élément dans l’Outil de recherche de contenu en maintenant la touche doublon enfoncée, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
+Lorsque vous cliquez sur un élément dans l’Outil de recherche de contenu en doublon, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
 
 ![Champ bindref d’un élément de schéma XML](assets/dblclick.png)
 
@@ -305,7 +301,7 @@ Le champ bindRef</code> affiche l’association entre un élément d’arboresce
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 
-Dans un sous-formulaire répétable, vous devez utiliser le sous-formulaire complet. Si vous souhaitez uniquement des champs sélectifs, utilisez la structure entière et supprimez les champs indésirables.
+Dans un sous-formulaire répétable, vous devez utiliser le sous-formulaire Terminer. Si vous souhaitez uniquement des champs sélectifs, utilisez la structure entière et supprimez les champs indésirables.
 
 **Je dispose d’une longue structure complexe dans l’Outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
 
