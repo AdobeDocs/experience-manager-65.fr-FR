@@ -1,42 +1,38 @@
 ---
-title: Création de formulaires adaptatifs à l’aide d’un schéma JSON
-seo-title: Création de formulaires adaptatifs à l’aide d’un schéma JSON
-description: Les formulaires adaptatifs peuvent utiliser un schéma JSON en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles JSON existants pour créer des formulaires adaptatifs.
-seo-description: Les formulaires adaptatifs peuvent utiliser un schéma JSON en tant que modèle de formulaire, ce qui vous permet d’exploiter les modèles JSON existants pour créer des formulaires adaptatifs.
-uuid: bdeaeae8-65a3-4c46-b27d-fe68481e31f1
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
-docset: aem65
+title: Comment créer une Forms adaptative à l’aide du Schéma JSON ?
+description: Découvrez comment créer des formulaires adaptatifs à l’aide du schéma JSON en tant que modèle de formulaire. Vous pouvez utiliser des schémas JSON existants pour créer des formulaires adaptatifs. Explorez un exemple de schéma JSON, préconfigurez les champs dans la définition de schéma JSON, limitez les valeurs acceptables pour un composant de formulaire adaptatif et découvrez les éléments non pris en charge.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 37ab98c9c78af452887c32101287b6d7f18d9d91
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 71%
+source-wordcount: '1448'
+ht-degree: 63%
 
 ---
 
 
-# Création de formulaires adaptatifs à l’aide d’un schéma JSON{#creating-adaptive-forms-using-json-schema}
+# Création de formulaires adaptatifs à l’aide d’un schéma JSON {#creating-adaptive-forms-using-json-schema}
 
 ## Conditions préalables {#prerequisites}
 
-La création d’un formulaire adaptatif à l’aide d’un schéma JSON en tant que modèle de formulaire requiert des connaissances de base en matière de schémas JSON. Il est recommandé de lire le contenu suivant avant cet article.
+La création d’un formulaire adaptatif à l’aide d’un Schéma JSON en tant que modèle de formulaire nécessite une compréhension de base du Schéma JSON. Il est recommandé de lire le contenu suivant avant cet article.
 
-* [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md)
+* [Création d’un formulaire adaptatif](creating-adaptive-form.md)
 * [Schéma JSON](https://json-schema.org/)
 
-## Utilisation d’un schéma JSON comme modèle de formulaire   {#using-a-json-schema-as-form-model}
+## Utilisation d’un schéma JSON comme modèle de formulaire  {#using-a-json-schema-as-form-model}
 
-AEM Forms prend en charge la création d’un formulaire adaptatif en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation. Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] prend en charge la création d’un formulaire adaptatif en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation. Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
 
-Les principales fonctionnalités de l’utilisation d’un schéma JSON sont les suivantes :
+Les principales fonctionnalités de l’utilisation d’un Schéma JSON sont les suivantes :
 
 * La structure du modèle JSON s’affiche sous forme d’arborescence sous l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie JSON dans le formulaire adaptatif.
 * Vous pouvez préremplir le formulaire avec le code JSON conforme au schéma associé.
 * Au moment de l’envoi, les données saisies par l’utilisateur sont envoyées au format JSON approprié pour le schéma associé.
 
-Un schéma JSON se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés vers un formulaire adaptatif, ils sont automatiquement mis en correspondance avec les composants de formulaires adaptatifs correspondants.
+Un Schéma JSON est constitué de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés vers un formulaire adaptatif, ils sont automatiquement mis en correspondance avec les composants de formulaires adaptatifs correspondants.
 
 Cette mise en correspondance des éléments JSON avec les composants de formulaires adaptatifs est la suivante :
 
@@ -82,7 +78,7 @@ Cette mise en correspondance des éléments JSON avec les composants de formulai
     </ul> </td>
   </tr>
   <tr>
-   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td>
+   <td><p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>}</code></p> </td>
    <td><br /> <br /> Champ de texte<br /> <br /> <br /> </td>
   </tr>
   <tr>
@@ -112,21 +108,21 @@ Cette mise en correspondance des éléments JSON avec les composants de formulai
 
 Le formulaire adaptatif utilise les informations disponibles dans le schéma JSON pour mapper chaque champ généré. En particulier :
 
-* La propriété title sert de libellé pour les composants du formulaire adaptatif.
-* La propriété description est définie en tant que description longue pour un composant de formulaire adaptatif.
-* La propriété par défaut sert de valeur initiale à un champ de formulaire adaptatif.
-* La propriété maxLength est définie sous la forme d’un attribut maxlength du composant de champ de texte.
-* Les propriétés minimales, maximales, exclusivesMinimum et exclusivesMaximum sont utilisées pour le composant de zone numérique.
-* Pour prendre en charge la plage du composant DatePicker, d’autres propriétés de Schéma JSON minDate et maxDate sont fournies.
-* Les propriétés minItems et maxItems permettent de limiter le nombre d’éléments/de champs qui peuvent être ajoutés ou supprimés d’un composant de panneau.
-* La propriété readOnly définit l’attribut readonly d’un composant de formulaire adaptatif.
-* La propriété requise marque le champ du formulaire adaptatif comme obligatoire alors que dans le cas d’un panneau (où le type est un objet), les données JSON envoyées finales comportent des champs avec une valeur vide correspondant à cet objet.
-* La propriété pattern est définie en tant que modèle de validation (expression régulière) dans le formulaire adaptatif.
+* La propriété `title` sert de libellé aux composants du formulaire adaptatif.
+* La propriété `description` est définie comme une description longue pour un composant de formulaire adaptatif.
+* La propriété `default` sert de valeur initiale à un champ de formulaire adaptatif.
+* La propriété `maxLength` est définie comme attribut `maxlength` du composant de champ de texte.
+* Les propriétés `minimum`, `maximum`, `exclusiveMinimum` et `exclusiveMaximum` sont utilisées pour le composant de zone numérique.
+* Pour prendre en charge la plage `DatePicker component` d’autres propriétés de Schéma JSON `minDate` et `maxDate`, sont fournies.
+* Les propriétés `minItems` et `maxItems` permettent de limiter le nombre d’éléments/de champs qui peuvent être ajoutés ou supprimés d’un composant de panneau.
+* La propriété `readOnly` définit l&#39;attribut `readonly` d&#39;un composant de formulaire adaptatif.
+* La propriété `required` indique que le champ du formulaire adaptatif est obligatoire, tandis que dans le panneau (où le type est un objet), les données JSON envoyées finales comportent des champs avec une valeur vide correspondant à cet objet.
+* La propriété `pattern` est définie comme modèle de validation (expression régulière) dans le formulaire adaptatif.
 * L’extension du fichier de Schéma JSON doit être conservée dans .schéma.json. Par exemple, &lt;nom_fichier>.schéma.json.
 
 ## Exemple de schéma JSON {#sample-json-schema}
 
-Vous trouverez ci-dessous un exemple de schéma JSON.
+Voici un exemple de Schéma JSON.
 
 ```json
 {
@@ -306,7 +302,7 @@ Vous trouverez ci-dessous un exemple de schéma JSON.
 }
 ```
 
-### Définitions de schéma réutilisables  {#reusable-schema-definitions}
+### Définitions de schéma réutilisables {#reusable-schema-definitions}
 
 Les touches de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Il est semblable à l’identification des types complexes dans XSD. Un exemple de schéma JSON dont la définition est fournie ci-dessous :
 
@@ -337,7 +333,7 @@ Les touches de définition sont utilisées pour identifier les schémas réutili
 
 L’exemple ci-dessus définit un enregistrement de client dans lequel chaque client dispose d’une expédition et d’une adresse de facturation. La structure des deux adresses est la même : les adresses indiquent une rue, la ville et un état. Il est donc préférable de ne pas dupliquer les adresses. Cela simplifie également l’ajout et la suppression de champs simples pour toutes les nouvelles modifications.
 
-## Préconfiguration des champs dans la définition du schéma JSON  {#pre-configuring-fields-in-json-schema-definition}
+## Préconfiguration des champs dans la définition du schéma JSON {#pre-configuring-fields-in-json-schema-definition}
 
 Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de Schéma JSON en vue de le mapper à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
 
@@ -361,7 +357,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le 
 
 ## Configurer des scripts ou des expressions pour les objets de formulaire {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Vous pouvez préconfigurer les objets de formulaire pour [évaluer une expression](../../forms/using/adaptive-form-expressions.md) sur un événement de formulaire.
+JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Vous pouvez préconfigurer les objets de formulaire pour [évaluer une expression](adaptive-form-expressions.md) sur un événement de formulaire.
 
 Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou scripts de formulaire adaptatif pour les composants de formulaire adaptatif. Par exemple, lorsque le événement d’initialisation est déclenché, le code ci-dessous définit la valeur du champ de téléphone et imprime une valeur dans le journal :
 
@@ -381,7 +377,7 @@ Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou 
 }
 ```
 
-Vous devez être membre du [groupe d’utilisateurs des formulaires](/help/forms/using/forms-groups-privileges-tasks.md) pour configurer des scripts ou des expressions pour l’objet de formulaire. Le tableau ci-dessous liste tous les événements de script pris en charge pour un composant de formulaire adaptatif.
+Vous devez être membre du [groupe d’utilisateurs des formulaires](forms-groups-privileges-tasks.md) pour configurer des scripts ou des expressions pour l’objet de formulaire. Le tableau ci-dessous liste tous les événements de script pris en charge pour un composant de formulaire adaptatif.
 
 <table>
  <tbody>
@@ -394,7 +390,7 @@ Vous devez être membre du [groupe d’utilisateurs des formulaires](/help/forms
    <td>Activé</td>
    <td>Validation de la valeur</td>
    <td>Cliquez sur </td>
-   <td>Options </td>
+   <td>Options</td>
   </tr>
   <tr>
    <td>Champ de texte</td>
@@ -586,7 +582,7 @@ Vous devez être membre du [groupe d’utilisateurs des formulaires](/help/forms
  </tbody>
 </table>
 
-Certains exemples d’utilisation de événements dans un JSON masquent un champ sur l’initialisation du événement et la configuration de la valeur d’un autre champ sur le événement de validation de valeur. Pour plus d’informations sur la création d’expressions pour les événements de script, voir [Expressions de formulaire adaptatif](../../forms/using/adaptive-form-expressions.md).
+Certains exemples d’utilisation de événements dans un JSON masquent un champ sur l’initialisation du événement et la configuration de la valeur d’un autre champ sur le événement de validation de valeur. Pour plus d’informations sur la création d’expressions pour les événements de script, voir [Expressions de formulaire adaptatif](adaptive-form-expressions.md).
 
 Voici l’exemple de code JSON pour les exemples susmentionnés.
 
@@ -711,15 +707,15 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON po
     </ul> </td>
   </tr>
   <tr>
-   <td>maxItems</td>
+   <td><code>maxItems</code></td>
    <td>Chaîne</td>
-   <td>Indique le nombre maximum d’éléments dans un tableau. Le nombre maximal d’éléments doit être égal ou supérieur à zéro.</td>
+   <td>Indique le nombre maximal d'éléments d'un tableau. Le nombre maximal d’éléments doit être égal ou supérieur à zéro.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>minItems</td>
+   <td><code>minItems</code></td>
    <td>Chaîne</td>
-   <td>Indique le nombre minimum d’éléments dans un tableau. Le nombre d’éléments minimum doit être égal ou supérieur à zéro.</td>
+   <td>Spécifie le nombre minimum d'éléments dans un tableau. Le nombre d’éléments minimum doit être égal ou supérieur à zéro.</td>
    <td> </td>
   </tr>
  </tbody>
@@ -727,7 +723,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON po
 
 ## Éléments non pris en charge  {#non-supported-constructs}
 
-Les formulaires adaptatifs ne prennent pas en charge les éléments suivants de schéma JSON :
+Les formulaires adaptatifs ne prennent pas en charge les éléments de Schéma JSON suivants :
 
 * Type nul
 * Types d’union tels quels et
