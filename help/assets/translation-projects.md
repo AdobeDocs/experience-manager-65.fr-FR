@@ -3,10 +3,10 @@ title: Création de projets de traduction
 description: Apprenez à créer des projets de traduction dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: 534a3d75ebb6a6d297354cce4840bdc1dfa25707
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 68%
+source-wordcount: '1878'
+ht-degree: 66%
 
 ---
 
@@ -19,13 +19,11 @@ Pour créer une copie de langue, déclenchez l’un des workflows de copie de la
 
 * **Mettre à jour les copies** de langue : Exécutez ce processus pour traduire un groupe supplémentaire de ressources et l’inclure dans une copie de langue pour un paramètre régional particulier. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites.
 
->[!NOTE]
+>[!PREREQUISITES]
 >
->Les binaires des ressources ne sont traduits que si le fournisseur du service de traduction prend en charge la traduction de binaires.
+>* Les utilisateurs qui créent des projets de traduction sont membres du groupe `projects-administrators`.
+>* Le prestataire de traduction prend en charge la traduction des binaires.
 
->[!NOTE]
->
->Si vous lancez un processus de traduction pour des ressources complexes, telles que des fichiers PDF et [!DNL Adobe InDesign], leurs sous-ressources ou rendus (le cas échéant) ne sont pas envoyés pour traduction.
 
 ## Workflow Créer et traduire {#create-and-translate-workflow}
 
@@ -35,22 +33,19 @@ Vous utilisez le workflow Créer et traduire afin de générer des copies de lan
 * Créer un projet de traduction.
 * Ajouter à un projet de traduction existant.
 
-### Créer uniquement la structure   {#create-structure-only}
+### Créer uniquement la structure  {#create-structure-only}
 
 Utilisez l’option **[!UICONTROL Créer uniquement la structure]** pour créer une hiérarchie de dossiers cible au niveau de la racine de la langue cible semblable à celle du dossier source au sein de la racine de la langue source. Dans ce cas, les fichiers source sont copiés dans le dossier de destination. Cependant, aucun projet de traduction n’est généré.
 
 1. Dans l&#39;interface [!DNL Assets], sélectionnez le dossier source pour lequel vous souhaitez créer une structure dans la racine du langage de cible.
+
 1. Ouvrez le volet **[!UICONTROL Références]** et cliquez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]**.
 
-   ![chlimage_1-57](assets/chlimage_1-57.png)
+   ![Copies de langue](assets/translation-language-copies.png)
 
-1. Cliquez sur **[!UICONTROL Créer et traduire]** dans la partie inférieure.
-
-1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la langue pour laquelle vous souhaitez créer une structure de dossiers.
+1. Cliquez sur **[!UICONTROL Créer et traduire]**. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la langue pour laquelle vous souhaitez créer une structure de dossiers.
 
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Créer uniquement la structure]**.
-
-   ![chlimage_1-60](assets/chlimage_1-60.png)
 
 1. Cliquez sur **[!UICONTROL Créer]**. La nouvelle structure de la langue cible est répertoriée sous **[!UICONTROL Copies de langue]**.
 
@@ -109,7 +104,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
    Pour plus d’informations sur les états des tâches, voir [Surveillance de l’état d’une tâche de traduction](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Accédez à l&#39;interface utilisateur [!DNL Assets] et ouvrez la page Propriétés de chacun des fichiers traduits pour vue les métadonnées traduites.
+1. Accédez à l&#39;interface utilisateur [!DNL Assets] et ouvrez la page [!UICONTROL Propriétés] pour chacun des fichiers traduits afin de vue les métadonnées traduites.
 
    ![vue des métadonnées traduites dans la page Propriétés du fichier](assets/translated-metadata-asset-properties.png)
 
@@ -131,8 +126,6 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la ou les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Ajouter à un projet de traduction existant]** afin d’exécuter le workflow de traduction sur le dossier.
-
-   ![chlimage_1-77](assets/chlimage_1-77.png)
 
    >[!NOTE]
    >
@@ -157,10 +150,6 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
    >[!NOTE]
    >
-   >Si vous utilisez la traduction automatique, les binaires des ressources ne sont pas traduits.
-
-   >[!NOTE]
-   >
    >Si la ressource que vous ajoutez à la tâche de traduction contient des sous-ressources, sélectionnez-les et supprimez-les pour que la traduction se déroule sans problème.
 
 1. Pour commencer la traduction des ressources, cliquez sur la flèche au niveau de la mosaïque **[!UICONTROL Tâche de traduction]** et sélectionnez **[!UICONTROL Démarrer]** dans la liste.
@@ -179,7 +168,7 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
 ## Mise à jour des copies de langue {#update-language-copies}
 
-Exécutez ce processus pour traduire un ensemble de ressources supplémentaire et l’intégrer à une copie de langue pour des paramètres régionaux spécifiques. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon les options choisies, un projet de traduction est créé ou un projet de traduction existant est mis à jour avec les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
+Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie de langue pour une région donnée. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon les options choisies, un projet de traduction est créé ou un projet de traduction existant est mis à jour avec les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
 
 * Créer un projet de traduction
 * Ajouter à un projet de traduction existant
@@ -197,8 +186,6 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
 1. Cliquez sur **[!UICONTROL Mettre à jour les copies de langue]** en bas.
 
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Créer un projet de traduction]**.
-
-   ![chlimage_1-86](assets/chlimage_1-86.png)
 
 1. Dans le champ **[!UICONTROL Titre du projet]**, saisissez un titre pour le projet.
 
@@ -227,7 +214,7 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
 
    Pour plus d’informations sur les états des tâches, voir [Surveillance de l’état d’une tâche de traduction](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Accédez à l’interface utilisateur [!DNL Assets] et ouvrez la page Propriétés pour chacun des fichiers traduits afin de vue les métadonnées traduites.
+1. Accédez à l&#39;interface utilisateur [!DNL Assets] et ouvrez la page Propriétés de chacun des fichiers traduits pour vue les métadonnées traduites.
 
 ### Ajouter à un projet de traduction existant {#add-to-existing-translation-project-1}
 
@@ -273,13 +260,13 @@ Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie d
 
    >[!NOTE]
    >
-   >Pour permettre au workflow de traduction de mettre à jour la ou les ressources de destination, acceptez à la fois la ressource et les métadonnées.
+   >Pour permettre au processus de traduction de mettre à jour les fichiers de destination, acceptez à la fois le fichier et les métadonnées.
 
    Cliquez sur **[!UICONTROL Rejeter la traduction]** ![rejeter la traduction](assets/do-not-localize/thumb-down.png) pour conserver la version traduite d’origine du fichier dans la racine du paramètre régional de cible et rejeter la version modifiée.
 
 1. Pour vue des métadonnées traduites, accédez à la console [!DNL Assets] et ouvrez la page [!UICONTROL Propriétés] pour chacun des fichiers traduits.
 
->[!MORELIKETHIS]
->
->* [Conseils pour traduire efficacement les métadonnées](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+## Conseils et restrictions {#tips-limitations}
 
+* Si vous lancez un processus de traduction pour des ressources complexes, telles que des fichiers PDF et [!DNL Adobe InDesign], leurs sous-ressources ou rendus (le cas échéant) ne sont pas envoyés pour traduction.
+* Si vous utilisez la traduction automatique, les fichiers binaires ne sont pas traduits.
