@@ -4,10 +4,10 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
 source-wordcount: '9590'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -74,7 +74,7 @@ Avant de télécharger un fichier, assurez-vous qu’il est au format [](/help/a
 
 Vous pouvez configurer la taille au-dessus de laquelle une ressource est considérée comme volumineuse. Par exemple, vous pouvez configurer le système de sorte qu’il considère les ressources dont la taille est supérieure à 1 000 Mo (au lieu de 500 Mo) comme des ressources volumineuses. Dans ce cas, **[!UICONTROL Pause]** s’affiche sur la barre de progression lorsque des fichiers d’une taille supérieure à 1 000 Mo sont téléchargés.
 
-Le bouton Pause ne s’affiche pas si un fichier supérieur à 1 000 Mo est chargé avec un fichier inférieur à 1 000 Mo. Toutefois, si vous annulez le téléchargement de fichier inférieur à 1 000 Mo, le bouton **[!UICONTROL Pause]** apparaît.
+L&#39;option [!UICONTROL Pause] ne s&#39;affiche pas si un fichier supérieur à 1 000 Mo est téléchargé avec un fichier inférieur à 1 000 Mo. Cependant, si vous annulez le téléchargement de fichiers de moins de 1 000 Mo, l’option **[!UICONTROL Pause]** s’affiche.
 
 Pour modifier la limite de taille, configurez la propriété `chunkUploadMinFileSize` du noeud `fileupload`dans le référentiel CRX.
 
@@ -137,7 +137,7 @@ N’incluez pas de caractères spéciaux dans les extensions des noms de fichier
 
 ![La boîte de dialogue de progression du téléchargement affiche l’état des fichiers et fichiers téléchargés avec succès qui ne parviennent pas à être téléchargés](assets/bulk-upload-progress.png)
 
-En outre, l’interface utilisateur [!DNL Assets] affiche la ressource la plus récente que vous téléchargez ou le dossier que vous avez créé en premier.
+De plus, l’interface utilisateur [!DNL Assets] affiche la ressource la plus récente que vous avez chargée ou le dossier que vous avez créé en premier.
 
 Si vous annulez le chargement avant la fin de l’opération, [!DNL Assets] arrête le chargement du fichier en cours et actualise le contenu. Toutefois, les fichiers déjà chargés ne sont pas supprimés.
 
@@ -145,7 +145,7 @@ La boîte de dialogue de progression du chargement dans [!DNL Assets] affiche le
 
 ### Transferts en série {#serialuploads}
 
-Le transfert en masse de nombreux actifs consomme d&#39;importantes ressources d&#39;E/S, ce qui peut avoir un impact négatif sur les performances de votre déploiement [!DNL Assets]. En particulier, si vous disposez d’une connexion Internet lente, le temps de téléchargement augmente considérablement en raison d’un pic d’E/S disque. En outre, votre navigateur Web peut introduire des restrictions supplémentaires au nombre de demandes de POST [!DNL Assets] pouvant être gérées pour les téléchargements simultanés de ressources. Par conséquent, l’opération de chargement échoue ou prend fin prématurément. En d&#39;autres termes, [!DNL Experience Manager Assets] peut manquer certains fichiers lors de l&#39;assimilation d&#39;un groupe de fichiers ou ne pas importer de fichiers.
+Le transfert en masse de nombreux actifs consomme d&#39;importantes ressources d&#39;E/S, ce qui peut avoir un impact négatif sur les performances de votre déploiement [!DNL Assets]. En particulier, si vous disposez d’une connexion Internet lente, le temps de téléchargement augmente considérablement en raison d’un pic d’E/S disque. De plus, votre navigateur Web peut introduire des restrictions supplémentaires au nombre de demandes de POST [!DNL Assets] pouvant être traitées pour les téléchargements simultanés de ressources. Par conséquent, l’opération de chargement échoue ou prend fin prématurément. En d&#39;autres termes, [!DNL Experience Manager Assets] peut manquer certains fichiers lors de l&#39;assimilation d&#39;un groupe de fichiers ou ne pas importer de fichiers.
 
 Pour remédier à cette situation, [!DNL Assets] ingère une ressource à la fois (chargement en série) au cours d’une opération de transfert en masse, au lieu de l’assimilation simultanée de toutes les ressources.
 
@@ -198,7 +198,7 @@ Pour annuler une tâche de téléchargement en cours, cliquez sur **[!UICONTROL 
 | Publier après le téléchargement |  | Publie automatiquement les ressources que vous téléchargez. |
 | Écraser dans n’importe quel dossier, même nom de ressource de base, quelle que soit l’extension |  | Sélectionnez cette option si vous voulez que les fichiers que vous téléchargez remplacent les fichiers existants portant le même nom. Le nom de cette option peut varier en fonction des paramètres définis sous **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]** > **[!UICONTROL Télécharger dans l’application]** > **[!UICONTROL Écraser les images]**. |
 | Décompresser les fichiers zip ou tar lors du téléchargement |  |  |
-| Options de tâche |  | Cliquez sur **[!UICONTROL Options tâche]** pour ouvrir la boîte de dialogue [!UICONTROL Télécharger les options de la tâche] et choisissez les options qui affectent la tâche de téléchargement complète. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour télécharger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Cliquez sur le bouton **[!UICONTROL Options de téléchargement par défaut]** pour ouvrir la boîte de dialogue [!UICONTROL Télécharger les options de la tâche]. |
+| Options de tâche |  | Cliquez sur **[!UICONTROL Options tâche]** pour ouvrir la boîte de dialogue [!UICONTROL Télécharger les options de la tâche] et choisissez les options qui affectent la tâche de téléchargement complète. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour télécharger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Sélectionnez l’option **[!UICONTROL Options de téléchargement par défaut]** pour ouvrir la boîte de dialogue [!UICONTROL Télécharger les options de la tâche]. |
 |  | Quand | Sélectionnez Unique ou Périodique. Pour définir une tâche périodique, sélectionnez une option de répétition (Quotidien, Hebdomadaire, Mensuel ou Personnalisé) afin d’indiquer la fréquence souhaitée pour la tâche de transfert FTP. Indiquez ensuite les options de planification suivant vos besoins. |
 |  | Inclure les sous-dossiers | Téléchargez tous les sous-dossiers du dossier que vous avez l’intention de télécharger. Les noms du dossier et des sous-dossiers transférés sont saisis automatiquement dans [!DNL Experience Manager Assets]. |
 |  | Options de recadrage | Pour recadrer manuellement une image par ses côtés, sélectionnez le menu Recadrer, puis choisissez Manuel. Indiquez ensuite le nombre de pixels à recadrer d’un seul côté ou de chaque côté de l’image. La proportion de l’image qui est rognée dépend du paramètre ppp (pixels par pouce) défini dans le fichier d’image. Par exemple, si l’image affiche 150 ppp et que vous saisissez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur**  : choisissez l&#39;option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**** Transparence : sélectionnez l’option Transparence.<br> **Tolérance**  : faites glisser le curseur pour définir une tolérance comprise entre 0 et 1.Pour effectuer un rognage en fonction de la couleur, indiquez 0 pour rogner les pixels uniquement s&#39;ils correspondent exactement à la couleur sélectionnée dans l&#39;angle de l&#39;image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Notez que ces options de recadrage sont non destructives. |
@@ -209,7 +209,7 @@ Pour annuler une tâche de téléchargement en cours, cliquez sur **[!UICONTROL 
 |  | Options PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace de couleurs.<br> Notez que les catalogues électroniques ne sont pas pris en charge dans [!DNL Experience Manager]. <br> Voir [Définition des options de téléchargement PDF](#setting-pdf-upload-options). |
 |  | Options Illustrator | Vous pouvez pixelliser les fichiers Adobe Illustrator®, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace de couleurs.<br> Voir [Définition des options de téléchargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Options eVideo | Vous pouvez transcoder un fichier vidéo en sélectionnant un paramètre vidéo prédéfini.<br> Voir [Définition des options de téléchargement eVideo](#setting-evideo-upload-options). |
-|  | Paramètres prédéfinis d’ensemble par lot | Pour créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir de fichiers téléchargés, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Les paramètres prédéfinis sont créés sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, voir [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Voir [Définition de paramètres prédéfinis d’ensemble par lot lors du téléchargement](#setting-batch-set-presets-at-upload). |
+|  | Paramètres prédéfinis de lot | Pour créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir de fichiers téléchargés, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Les paramètres prédéfinis sont créés sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, voir [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Voir [Définition de paramètres prédéfinis d’ensemble par lot lors du téléchargement](#setting-batch-set-presets-at-upload). |
 
 #### Définissez les options d’édition d’images au téléchargement {#setting-image-editing-options-at-upload}
 
@@ -446,7 +446,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    >[!NOTE]
    >
-   >Si vous copiez un fichier au même emplacement, [!DNL Experience Manager] génère automatiquement une variante du nom. Par exemple, si vous copiez un fichier intitulé `Square`, [!DNL Experience Manager] génère automatiquement le titre de sa copie sous la forme `Square1`.
+   >Si vous copiez une ressource au même endroit, [!DNL Experience Manager] génère automatiquement une variante du nom. Par exemple, si vous copiez une ressource intitulée `Square`, [!DNL Experience Manager] génère automatiquement le titre de sa copie `Square1`.
 
 1. Cliquez sur l&#39;option **[!UICONTROL Coller]** ![Coller dans la barre d&#39;outils Ressources](assets/do-not-localize/paste.png) Fichier de la barre d&#39;outils. Les ressources sont ensuite copiées à cet emplacement.
 
@@ -518,7 +518,7 @@ Le déplacement des ressources en les faisant glisser n’ouvre pas l’assistan
 
    >[!NOTE]
    >
-   >Par défaut, [!DNL Assets] n’affiche pas le rendu original de la ressource en mode prévisualisation. Si vous êtes un administrateur, vous pouvez utiliser des incrustations pour configurer [!DNL Assets] pour afficher les rendus d’origine en mode prévisualisation.
+   >Par défaut, [!DNL Assets] n’affiche pas le rendu d’origine de la ressource en mode Aperçu. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer [!DNL Assets] de manière à afficher les rendus d’origine dans ce mode.
 
 1. Sélectionnez un rendu afin de l’afficher ou de le supprimer.
 
@@ -569,7 +569,7 @@ Pour supprimer un fichier ou un dossier contenant un fichier :
    * Si la ressource contient des références, un message d’erreur vous informe que **une ou plusieurs ressources sont référencées**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
    >[!NOTE]
    >
-   >* Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvrement afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
+   >* Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. Désactivez également l’option Forcer la suppression à l’aide d’une incrustation afin d’empêcher les utilisateurs de supprimer des fichiers référencés et de conserver les liens rompus.
    >* Il est possible de supprimer un *dossier* contenant des fichiers extraits. Avant de supprimer un dossier, assurez-vous qu’aucun fichier numérique n’est extrait par les utilisateurs.
 
 
@@ -626,9 +626,9 @@ Voir [Téléchargement de ressources à partir du Experience Manager](/help/asse
    >
    >Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références car elles peuvent être référencées par d’autres ressources publiées.
 
-## Groupe d’utilisateurs fermé  {#closed-user-group}
+## Groupe d’utilisateurs fermé {#closed-user-group}
 
-Un groupe d’utilisateurs fermé (CUG) est utilisé pour limiter l’accès à des dossiers de ressources spécifiques publiés à partir de [!DNL Experience Manager]. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
+Les groupes d’utilisateurs fermés permettent de limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’[!DNL Experience Manager]. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
 
 Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de limiter l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
 
@@ -637,16 +637,16 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 
    ![Ajouter un utilisateur dans un groupe d’utilisateurs fermé](assets/add_user.png)
 
-1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Sélectionnez ensuite le chemin d’accès à une page de connexion dans [!DNL Experience Manager], puis enregistrez les modifications.
+1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Sélectionnez ensuite le chemin de la page de connexion dans [!DNL Experience Manager] et enregistrez les modifications.
 
    ![Activer et sélectionner la page de connexion à afficher dans le dossier d’accès utilisateur](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Si vous ne spécifiez pas le chemin d’accès à une page de connexion, [!DNL Experience Manager] affiche la page de connexion par défaut dans l’instance de publication.
+   >Si vous ne spécifiez pas le chemin d’une page de connexion, [!DNL Experience Manager] affiche la page de connexion par défaut dans l’instance de publication.
 
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
-1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche une fois que [!DNL Experience Manager] vous a authentifié.
+1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
 ## Recherche de ressources  {#assetsearch}
 
@@ -673,11 +673,11 @@ Dans la vue de carte, l&#39;option **[!UICONTROL Sélectionner]** s&#39;affiche 
 
 Lorsque vous parcourez un dossier ou une collection dans l&#39;interface utilisateur [!DNL Assets] d&#39;un navigateur, vous pouvez sélectionner toutes les ressources affichées ou chargées à l&#39;aide de l&#39;option [!UICONTROL Sélectionner tout] située dans l&#39;angle supérieur droit. Au départ, seules 100 ressources sont chargées dans la vue de cartes et 200 dans la vue de listes. D’autres ressources sont chargées dans la vue lorsque vous faites défiler la page des résultats de la recherche. L&#39;option [!UICONTROL Sélectionner tout] sélectionne uniquement les ressources chargées.
 
-Pour plus d’informations, voir [vue et sélection de vos ressources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+Pour plus d&#39;informations, voir [vue et sélection de vos ressources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Modification des images {#editing-images}
 
-Les outils de modification de l&#39;interface [!DNL Assets] vous permettent d&#39;effectuer de petites tâches de modification sur les fichiers d&#39;image. Vous pouvez recadrer les images, les faire pivoter, les retourner et effectuer d’autres tâches de modification. Vous pouvez également ajouter des zones cliquables aux ressources.
+Les outils de modification de l’interface d’[!DNL Assets] permettent d’effectuer de petites tâches de modification sur les ressources d’image. Vous pouvez recadrer les images, les faire pivoter, les retourner et effectuer d’autres tâches de modification. Vous pouvez également ajouter des zones cliquables aux ressources.
 
 >[!NOTE]
 >
