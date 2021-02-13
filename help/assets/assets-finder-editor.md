@@ -3,10 +3,10 @@ title: Création et configuration des pages de l’éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
-source-wordcount: '2120'
-ht-degree: 72%
+source-wordcount: '2125'
+ht-degree: 70%
 
 ---
 
@@ -268,7 +268,7 @@ Le Formulaire de métadonnées est un formulaire incluant une action de début e
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Créez une action de fin en cliquant sur **Modifier** dans la zone Fin de formulaire. Par exemple, vous pouvez créer un bouton **Envoyer** pour permettre aux utilisateurs de soumettre les modifications des métadonnées. Facultativement, vous pouvez ajouter un bouton **Réinitialiser** qui réinitialise les métadonnées à leur état d’origine.
+1. Créez une action de fin en cliquant sur **Modifier** dans la zone Fin de formulaire. Par exemple, vous pouvez créer une option **[!UICONTROL Envoyer]** pour permettre aux utilisateurs d’envoyer leurs modifications de métadonnées. Vous pouvez éventuellement ajouter une option **Réinitialiser** qui réinitialise les métadonnées à leur état d’origine.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -328,7 +328,7 @@ Voici un composant Balises renseigné :
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniature   {#thumbnail}
+#### Miniature  {#thumbnail}
 
 Le composant Miniature est l’emplacement où la ressource affiche la miniature sélectionnée (pour la plupart des formats, la miniature est extraite automatiquement). En outre, le composant affiche le nom de fichier et les [actions que vous pouvez modifier](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -374,14 +374,14 @@ Les actions suivantes sont disponibles :
 
 | Action | Description |
 |---|---|
-| [!UICONTROL Téléchargement] | Permet aux utilisateurs de télécharger les éléments sélectionnés   sur leurs ordinateurs. |
+| [!UICONTROL Télécharger] | Permet aux utilisateurs de télécharger les éléments sélectionnés   sur leurs ordinateurs. |
 | [!UICONTROL Editeurs] | permet aux utilisateurs de modifier une image.   (édition interactive) |
 | [!UICONTROL Lightbox] | Enregistre les actifs dans une   &quot;lightbox&quot; où vous pouvez exécuter d’autres actions sur ces objets. La lightbox est pratique lorsque vous travaillez avec des ressources sur plusieurs pages. |
 | [!UICONTROL Verrouillage] | Permet aux utilisateurs de verrouiller un fichier. Cette fonctionnalité n’est pas activée par défaut et doit être activée dans la liste des composants. |
 | [!UICONTROL Références] | Cliquez pour afficher sur quelles pages   la ressource est utilisée. |
 | [!UICONTROL Contrôle de version] | Permet de créer et de restaurer   versions d’une ressource. |
 
-1. Faites glisser l’action appropriée vers la zone **Actions** de la page. Cette opération crée un bouton utilisé pour effectuer cette action.
+1. Faites glisser l’action appropriée vers la zone **Actions** de la page. Il crée une option qui est utilisée pour exécuter l’action qui est glissée sur la page.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
