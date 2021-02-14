@@ -3,10 +3,10 @@ title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 60%
+source-wordcount: '1610'
+ht-degree: 59%
 
 ---
 
@@ -25,7 +25,7 @@ Une fois une balise entraînée et prête, le service peut appliquer ces balises
 
 En arrière-plan, Smart Content Service utilise la structure Adobe Sensei AI pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-Smart Content Service est un service cloud hébergé sur [!DNL Adobe I/O]. Pour l&#39;utiliser dans [!DNL Adobe Experience Manager], l&#39;administrateur système doit intégrer votre déploiement [!DNL Experience Manager] à [!DNL Adobe I/O].
+Smart Content Service est un service cloud hébergé sur [!DNL Adobe Developer Console]. Pour l&#39;utiliser dans [!DNL Adobe Experience Manager], l&#39;administrateur système doit intégrer votre déploiement [!DNL Experience Manager] à [!DNL Adobe Developer Console].
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
@@ -36,19 +36,46 @@ En résumé, voici les principales étapes pour utiliser le service de contenu d
 
 ![Organigramme](assets/flowchart.gif)
 
-## Conditions préalables {#prerequisites}
+## Conditions préalables et formats pris en charge {#prerequisites}
 
-Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur [!DNL Adobe I/O]:
+Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur [!DNL Adobe Developer Console]:
 
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
 * Le service de contenu dynamique est activé pour votre organisation.
 * Le package de base Smart Content Services ne peut être ajouté qu’à un déploiement pour lequel un package de base [!DNL Adobe Experience Manager Sites] et un module complémentaire [!DNL Assets] ont reçu une licence.
 
+Les balises actives ne sont appliquées qu’aux ressources présentant les types MIME suivants :
+
+* image/jpeg
+* image/tiff
+* image/png
+* image/bmp
+* image/gif
+* image/pjpeg
+* image/x-portable-anymap
+* image/x-portable-bitmap
+* image/x-portable-graymap
+* image/x-portable-pixmap
+* image/x-rgb
+* image/x-xbitmap
+* image/x-xpixmap
+* image/x-icon
+* image/photoshop
+* image/x-photoshop
+* image/psd
+* image/vnd.adobe.photoshop
+
+Le balisage intelligent des rendus de ressources est pris en charge uniquement pour les types MIME suivants :
+
+* image/jpeg
+* image/pjpeg
+* image/png
+
 ## Intégration {#onboarding}
 
 Smart Content Service est disponible à l&#39;achat en tant que module complémentaire de [!DNL Experience Manager]. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers [!DNL Adobe I/O].
 
-L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager]. Pour intégrer le service à [!DNL Experience Manager Assets], voir [Configurer des balises actives](config-smart-tagging.md).
+L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager]. Pour intégrer le service à [!DNL Experience Manager Assets], voir [Configuration de balises actives](config-smart-tagging.md).
 
 Le processus d’intégration est terminé lorsque l’administrateur configure le service et ajoute des utilisateurs dans [!DNL Experience Manager].
 
@@ -99,7 +126,7 @@ Vous pouvez exécuter le workflow de balisage périodiquement ou au besoin.
 >
 >Le workflow de balisage s’exécute sur les ressources et les dossiers.
 
-### Balisage périodique  {#periodic-tagging}
+### Balisage périodique {#periodic-tagging}
 
 Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page de propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises actives]** sous l&#39;onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
 
@@ -162,3 +189,4 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 
 * L’utilisation de Smart Content Services est limitée à 2 millions d’images balisées par an. Toutes les images de duplicata qui sont traitées et balisées sont comptabilisées comme une image balisée.
 * Si vous exécutez le workflow de balisage à partir de la chronologie, vous pouvez appliquer des balises sur un maximum de 15 ressources à la fois.
+* Les balises actives fonctionnent uniquement pour les formats d’image PNG et JPG. Ainsi, les ressources prises en charge dont les rendus ont été créés dans ces deux formats sont balisées avec des balises actives.
