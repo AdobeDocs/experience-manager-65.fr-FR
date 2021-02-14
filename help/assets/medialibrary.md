@@ -3,7 +3,7 @@ title: Comparaison [!DNL Assets] des offres de la bibliothèque multimédia
 description: Comparez  [!DNL Experience Manager Assets] les fonctionnalités de la bibliothèque multimédia et connaissez les différences.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ca54c880cbda2a573d6c1229900fd80082c5f5aa
+source-git-commit: 82c2df0e53e8ef595ad158ef46089d6e4964ca26
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 21%
@@ -106,5 +106,6 @@ Dans ce cas d’utilisation, il n’est pas nécessaire d’acheter [!DNL Assets
 
 >[!MORELIKETHIS]
 >
->*[[!DNL Experience Manager] 6.5 Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->*[[!DNL Experience Manager] 6.5 description du produit sur site](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [[!DNL Experience Manager] 6.5 Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5 Description du produit sur site](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+
