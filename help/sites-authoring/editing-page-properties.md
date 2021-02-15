@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
+source-git-commit: 7fed51b68c626b54565b9120f69229872946016f
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 89%
+source-wordcount: '1883'
+ht-degree: 85%
 
 ---
 
@@ -53,6 +53,14 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
 
+* **Valorisation de marque**
+
+   Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant une limace de marque à chaque titre de page. Cette fonctionnalité nécessite l&#39;utilisation du composant de page de la version 2.14.0 ou ultérieure des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+
+   * **Remplacer**  : cochez la case pour définir la ligne-bloc de marque sur cette page.
+      * La valeur sera héritée par toutes les pages enfants à moins que leurs valeurs **Override** ne soient également définies.
+   * **Remplacer la valeur**  : texte de la ligne-bloc de marque à ajouter au titre de la page.
+      * La valeur est ajoutée au titre de la page après un caractère barre verticale tel que &quot;Cycling Toscany&quot;. | Toujours prêt pour le WKND&quot;
 * **Titre de la page**
 
    Titre à utiliser sur la page. Habituellement utilisé par les composants du titre. Si ce champ reste vide, le **titre** est utilisé.
@@ -167,7 +175,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Indiquez une configuration d’exportation.
 
-### Miniature   {#thumbnail}
+### Miniature  {#thumbnail}
 
 Affiche l’image de la miniature de la page. Vous pouvez :
 
@@ -204,7 +212,7 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation   {#personalization}
+### Personnalisation  {#personalization}
 
 * **Configurations ContextHub**
 
