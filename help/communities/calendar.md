@@ -188,7 +188,7 @@ Lorsqu’un événement de calendrier est sélectionné, ses détails, sa descri
 
 Les autres choix varient selon que le visiteur est modérateur, administrateur, membre de la communauté, membre privilégié ou anonyme.
 
-### Modérateurs et administrateurs  {#moderators-and-administrators}
+### Modérateurs et administrateurs {#moderators-and-administrators}
 
 Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’[activités de modération](/help/communities/moderate-ugc.md) (autorisées par la configuration du composant) pour tous les événements et commentaires de calendrier publiés pour un événement.
 
