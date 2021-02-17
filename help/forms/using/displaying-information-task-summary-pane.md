@@ -18,7 +18,7 @@ ht-degree: 68%
 ---
 
 
-# Affichage d’informations dans le volet Résumé de la tâche  {#displaying-information-in-the-task-summary-pane}
+# Affichage d’informations dans le volet Résumé de la tâche {#displaying-information-in-the-task-summary-pane}
 
 Lorsque vous ouvrez une tâche dans l’espace de travail AEM Forms, le volet Résumé de la tâche peut afficher un résumé de la tâche. Ces informations supplémentaires et pertinentes à propos d’une tâche ajoutent de la valeur pour l’utilisateur final de l’espace de travail AEM Forms.
 
