@@ -56,7 +56,7 @@ Vous pouvez également activer CRXDE Lite via cURL, en exécutant la commande su
 curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
-## Autres ressources  {#other-resources}
+## Autres ressources {#other-resources}
 
 Pour plus d’informations sur les fonctions de sécurité d’AEM 6, voir les pages suivantes :
 
