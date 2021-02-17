@@ -235,7 +235,7 @@ Vous pouvez éventuellement utiliser ces cases à cocher conjointement avec le p
    | Publication sélective | Publier vers Dynamic Media | Dynamic Media |
    | Immédiatement ou <br>Lors de l’activation | Annuler la publication | AEM et Dynamic Media |
    | Immédiatement ou <br>Lors de l’activation | Annuler la publication à partir de Dynamic Media | Aucune |
-   | Publication sélective | Annuler la publication | aem |
+   | Publication sélective | Annuler la publication | AEM |
    | Publication sélective | Annuler la publication à partir de Dynamic Media | Dynamic Media |
 
 1. Sur la page **[!UICONTROL Gestion de la publication – Portée]**, effectuez l’une des opérations suivantes :
