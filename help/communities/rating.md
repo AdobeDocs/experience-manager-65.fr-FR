@@ -45,7 +45,7 @@ Dans l’onglet **[!UICONTROL Textes et libellés]**, indiquez l’identifiant i
 **[!UICONTROL Nom]**
  du compte (*Obligatoire*) Nom simple du compte  `Rating` qui identifie de manière unique cette instance. Il doit s’agir d’un nom de nœud valide pour le référentiel.
 
-## Expérience des visiteurs  {#site-visitor-experience}
+## Expérience des visiteurs {#site-visitor-experience}
 
 ### Membres {#members}
 
