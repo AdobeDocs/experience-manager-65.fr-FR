@@ -52,7 +52,7 @@ Le plus souvent, vous utilisez un instantané de système de fichiers pour crée
 
 Comme la sauvegarde d’instantané ne prend généralement que quelques secondes, le temps d’interruption entier représente moins de quelques minutes.
 
-## Sauvegarde en ligne  {#online-backup}
+## Sauvegarde en ligne {#online-backup}
 
 Cette méthode de sauvegarde crée une sauvegarde du référentiel entier, y compris les applications déployées dans le référentiel, comme AEM. La sauvegarde comprend le contenu, l’historique des versions, la configuration, le logiciel, les correctifs, les applications personnalisées, les fichiers journaux, les index de recherche, etc. Si vous utilisez la mise en cluster et si le dossier partagé est un sous-répertoire de `crx-quickstart` (physiquement ou à l’aide d’un softlink), le répertoire partagé est lui aussi sauvegardé.
 
@@ -224,7 +224,7 @@ La sauvegarde en ligne utilise l’algorithme suivant :
 
        Un fichier vide nommé « `backupInProgress.txt` » est créé dans le répertoire cible au début de la sauvegarde. Ce fichier est supprimé une fois la sauvegarde terminée.
 
-1. Les fichiers sont copiés du répertoire source vers le répertoire cible (ou vers un répertoire temporaire lors de la création d’un fichier ZIP). Le magasin de segments est copié avant le magasin de données afin d’éviter toute corruption du référentiel. Les données d’index et du cache sont omises lors de la création de la sauvegarde. Par conséquent, les données de `crx-quickstart/repository/cache` et `crx-quickstart/repository/index` ne sont pas incluses dans la sauvegarde. L’indicateur de barre de progression du processus se situe entre 0 % et 70 % lors de la création d’un fichier zip, ou entre 0 % et 100 % si aucun fichier zip n’est créé.
+1. Les fichiers sont copiés du répertoire source vers le répertoire cible (ou vers un répertoire temporaire lors de la création d’un fichier ZIP). Le magasin de segments est copié avant le magasin de données afin d’éviter toute corruption du référentiel. Les données d’index et du cache sont omises lors de la création de la sauvegarde. Par conséquent, les données de `crx-quickstart/repository/cache` et `crx-quickstart/repository/index` ne sont pas incluses dans la sauvegarde. L’indicateur de barre de progression du processus se situe entre 0 % et 70 % lors de la création d’un fichier zip ou entre 0 % et 100 % si aucun fichier zip n’est créé.
 
 1. Si la sauvegarde est effectuée dans un répertoire préexistant, les « anciens » fichiers du répertoire cible sont supprimés. Les anciens fichiers sont les fichiers qui n’existent pas dans le répertoire source.
 
