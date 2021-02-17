@@ -42,7 +42,7 @@ Salesforce.com est une société de cloud computing d’entreprise leader dans l
 
 Pour plus d’informations sur l’intégration de votre site AEM et de Salesforce, voir la section [Intégration à Salesforce](/help/sites-administering/salesforce.md).
 
-## Intégration à Silverpop Engage  {#integrating-with-silverpop-engage}
+## Intégration à Silverpop Engage {#integrating-with-silverpop-engage}
 
 >[!NOTE]
 >
