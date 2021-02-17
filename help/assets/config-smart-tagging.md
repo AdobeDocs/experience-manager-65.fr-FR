@@ -243,7 +243,7 @@ Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne p
 
 Une fois cette option sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un processus de formation pour former Smart Content Service aux ressources de dossier et à leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
 
-### Entraînement à la demande  {#on-demand-training}
+### Entraînement à la demande {#on-demand-training}
 
 Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est nécessaire à partir de la console Processus.
 
@@ -281,7 +281,7 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 
    * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
    * Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
-   * Le balisage est pris en charge dans les paramètres régionaux dans lesquels [!DNL Experience Manager] est pris en charge. Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+   * Le balisage est pris en charge dans les paramètres régionaux dans lesquels [!DNL Experience Manager] est pris en charge. Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=fr).
 
 * Pour rechercher des ressources avec des balises actives (régulières ou améliorées), utilisez [!DNL Assets] Omnisearch (recherche de texte intégral). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 
