@@ -70,7 +70,7 @@ Pour publier sur Scene7 depuis la console Ressources si les éléments se trouve
    >
    >Si les éléments ne figurent pas dans un dossier synchronisé Scene7, l’option **Publier vers Scene7** des deux menus est visible mais désactivée.
 
-### Publication depuis un élément  {#publishing-from-an-asset}
+### Publication depuis un élément {#publishing-from-an-asset}
 
 Vous pouvez publier manuellement un élément sous réserve que cet élément figure dans le dossier Scene7 synchronisé.
 
