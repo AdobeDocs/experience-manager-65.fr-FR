@@ -17,7 +17,7 @@ ht-degree: 96%
 ---
 
 
-# Utilisation d’un formulaire  {#working-with-a-form}
+# Utilisation d’un formulaire {#working-with-a-form}
 
 Les formulaires activés pour la synchronisation dans l’application sont téléchargés et peuvent être utilisés directement.
 
