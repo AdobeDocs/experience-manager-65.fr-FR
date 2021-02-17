@@ -28,7 +28,7 @@ En outre, l’espace de travail AEM Forms est hautement personnalisable à l’a
 
 Pour en savoir plus, voir [Présentation de l’espace de travail AEM Forms](/help/forms/using/introduction-html-workspace.md).
 
-## Se familiariser  {#getting-familiar}
+## Se familiariser {#getting-familiar}
 
 Pour être informé du processus de bout en bout de création d’une application de formulaire afin d’automatiser un processus d’entreprise, suivez la présentation. Vous pouvez créer, gérer et tester une application à l’aide de Workbench, Designer et l’espace de travail AEM Forms après avoir suivi la présentation. Pour plus d’informations sur l’implémentation, voir [Création d’une première application AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
