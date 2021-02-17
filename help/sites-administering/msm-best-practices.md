@@ -127,7 +127,7 @@ MSM peut aider à la création de sites web multilingues de deux façons :
 
 Pour plus d’informations, voir [Traduction du contenu des sites multilingues](/help/sites-administering/translation.md) et [Meilleures pratiques de traduction](/help/sites-administering/tc-bp.md).
 
-## Modifications de structure et déploiements  {#structure-changes-and-rollouts}
+## Modifications de structure et déploiements {#structure-changes-and-rollouts}
 
 Les modifications apportées à la structure du contenu dans un plan directeur/une arborescence source sont répercutées différemment dans une Live Copy. Cela dépend du type de modification :
 
