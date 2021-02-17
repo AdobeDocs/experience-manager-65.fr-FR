@@ -16,7 +16,7 @@ ht-degree: 75%
 ---
 
 
-# Réutilisation de formulaires adaptatifs  {#reusing-adaptive-forms}
+# Réutilisation de formulaires adaptatifs {#reusing-adaptive-forms}
 
 ## Présentation {#introduction}
 
