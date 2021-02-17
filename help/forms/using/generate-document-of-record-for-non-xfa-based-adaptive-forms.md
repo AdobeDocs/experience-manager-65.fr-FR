@@ -30,7 +30,7 @@ Cet article explique comment vous pouvez générer un document d’enregistremen
 >
 >La génération automatique du document d’enregistrement n’est pas prise en charge pour les formulaires adaptatifs basés sur XFA. Cependant, vous pouvez vous servir du fichier XDP utilisé pour créer le formulaire adaptatif comme document d’enregistrement.
 
-## Types de formulaire adaptatif et leurs documents d’enregistrement  {#adaptive-form-types-and-their-documents-of-record}
+## Types de formulaire adaptatif et leurs documents d’enregistrement {#adaptive-form-types-and-their-documents-of-record}
 
 Lorsque vous créez un formulaire adaptatif, vous pouvez sélectionner un modèle de formulaire. Vous avez le choix entre :
 
