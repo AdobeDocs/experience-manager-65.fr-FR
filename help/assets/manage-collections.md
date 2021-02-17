@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '2176'
-ht-degree: 62%
+ht-degree: 65%
 
 ---
 
@@ -120,7 +120,7 @@ Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Dé
 Les collections dynamiques sont créées en enregistrant une recherche afin que vous puissiez modifier leur contenu en changeant les paramètres de recherche de la [recherche enregistrée](#saved-searches).
 
 1. Dans l&#39;interface utilisateur [!DNL Assets], cliquez sur l&#39;option de recherche ![option de recherche](assets/do-not-localize/search_icon.png) dans la barre d&#39;outils.
-1. Avec le curseur dans la zone Omnisearch, sélectionnez la clé `Return`.
+1. Placez le curseur dans la zone Omni-recherche et sélectionnez la touche `Return`.
 1. Dans l&#39;interface [!DNL Experience Manager], ouvrez le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 
@@ -175,7 +175,7 @@ Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment
 
 ## Recherche de collections {#searching-collections}
 
-Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez une recherche avec des mots-clés dans la zone Omnisearch, [!DNL Assets] recherche les noms de collection, les métadonnées et les balises ajoutées aux collections.
+Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez des recherches avec des mots-clés dans la zone Omni-recherche, [!DNL Assets] recherche les noms des collections, les métadonnées et les balises ajoutées aux collections.
 
 Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. [!DNL Assets] ou les dossiers des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), tous les fichiers, dossiers et collections appropriés sont renvoyés.
 
@@ -183,7 +183,7 @@ Si vous recherchez des collections à partir du niveau supérieur, seules les co
 
 Dans la console Collections, cliquez sur une collection pour l’ouvrir.
 
-Dans une collection, [!DNL Experience Manager] la recherche est limitée aux ressources (ainsi qu’à leurs balises et métadonnées) de la collection que vous visualisez. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
+Dans une collection, la recherche [!DNL Experience Manager] se limite aux ressources (ainsi qu’aux balises et métadonnées) de la collection en cours d’affichage. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
 
 ## Modification des paramètres d’une collection {#editing-collection-settings}
 
@@ -232,7 +232,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 >
 >Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, elles ne peuvent pas comporter d’autres collections.
 
-## Recherches enregistrées    {#saved-searches}
+## Recherches enregistrées  {#saved-searches}
 
 Dans l&#39;interface utilisateur [!DNL Assets], vous pouvez rechercher ou filtrer des ressources en fonction de certaines règles, critères de recherche ou facettes de recherche personnalisées. Si vous enregistrez ces éléments en tant que **[!UICONTROL recherches enregistrées]**, vous pouvez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtrer. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
 
@@ -249,7 +249,7 @@ La modification des recherches enregistrées est identique à celle des collecti
 Pour supprimer des recherches enregistrées, procédez comme suit :
 
 1. Dans l&#39;interface utilisateur [!DNL Assets], cliquez sur Rechercher ![option de recherche](assets/do-not-localize/search_icon.png).
-1. Avec le curseur dans le champ Omnisearch, sélectionnez la clé `Return`.
+1. Placez le curseur dans le champ Omni-recherche et appuyez sur la touche `Return`.
 1. Dans l&#39;interface [!DNL Experience Manager], ouvrez le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, cliquez sur **[!UICONTROL Supprimer]** en regard de la collection dynamique à supprimer.
 
