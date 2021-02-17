@@ -97,7 +97,7 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## Utilisation des métadonnées générées par le système dans une notification électronique  {#using-system-generated-metadata-in-an-email-notification}
+## Utilisation des métadonnées générées par le système dans une notification électronique {#using-system-generated-metadata-in-an-email-notification}
 
 Une application AEM Forms fournit plusieurs variables de métadonnées (paires clé-valeur) prêtes à l’emploi. Vous pouvez utiliser ces variables dans un modèle de courrier électronique. La valeur de la variable est basée sur une application de formulaires associés. Le tableau suivant répertorie toutes les variables de métadonnées disponibles prêtes à l’emploi :
 
