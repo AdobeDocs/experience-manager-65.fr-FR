@@ -54,7 +54,7 @@ Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
 D’autres [ressources d’aide sont accessibles depuis les consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Explorateur de composants  {#components-browser}
+## Explorateur de composants {#components-browser}
 
 L’explorateur de composants présente tous les composants que vous pouvez utiliser sur la page active. Faites-les glisser à l’emplacement de votre choix, puis modifiez-les pour ajouter du contenu.
 
