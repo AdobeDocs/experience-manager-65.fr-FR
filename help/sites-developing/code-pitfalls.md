@@ -28,6 +28,6 @@ Les liaisons Sling constituent un moyen inapproprié d’accéder à un service 
 
 *Thread.interrupt* est dangereux car il peut fermer des fichiers, y compris des fichiers Lucene et des fichiers cache persistants, s’il est appelé au mauvais moment.
 
-## Éviter de mélanger la synchronisation Java avec ReadWriteLocks  {#avoid-mixing-java-synchronization-with-readwritelocks}
+## Éviter de mélanger la synchronisation Java avec ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 
 Cela peut aboutir à une condition de concurrence dans laquelle le code finit par être bloqué.
