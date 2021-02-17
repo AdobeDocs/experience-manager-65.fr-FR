@@ -17,7 +17,7 @@ ht-degree: 84%
 ---
 
 
-# Affichage d’une liste des formulaires sur une page Web à l’aide d’API  {#listing-forms-on-a-web-page-using-apis}
+# Affichage d’une liste des formulaires sur une page Web à l’aide d’API {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points de fin de rendu.
 
@@ -33,7 +33,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Indique la fonction à appeler. Pour effectuer une recherche dans les formulaires, définissez la valeur de l’attribut <code>func </code> sur <code>searchForms</code>.</p> <p>Par exemple : <code class="code">
+   <td><p>Indique la fonction à appeler. Pour effectuer une recherche dans les formulaires, définissez la valeur de l’attribut <code>func </code> sur <code>searchForms</code>.</p> <p>Par exemple, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>Remarque :</strong> <em>ce paramètre est obligatoire.</em><br /> </p> </td>
   </tr>
@@ -43,7 +43,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Indique les propriétés à récupérer avec les ressources. Vous pouvez utiliser l’astérisque (*) pour récupérer toutes les propriétés simultanément. Utilisez la barre verticale (|) pour indiquer plusieurs propriétés. </p> <p>Par exemple : <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Remarque</strong> : </p>
+   <td><p>Indique les propriétés à récupérer avec les ressources. Vous pouvez utiliser l’astérisque (*) pour récupérer toutes les propriétés simultanément. Utilisez la barre verticale (|) pour indiquer plusieurs propriétés. </p> <p>Par exemple, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Remarque</strong> : </p>
     <ul>
      <li><em>Les propriétés telles que l’ID, le chemin et le nom sont toujours récupérées. </em></li>
      <li><em>Chaque ressource possède un ensemble de propriétés différent. Les propriétés telles que formUrl, pdfUrl et guideUrl ne dépendent pas de l’attribut cutPoints. Ces propriétés dépendent du type de ressource et sont récupérées en conséquence. </em></li>
@@ -72,7 +72,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>statements</td>
-   <td><p>Indique la liste d’instructions. Les requêtes sont des exécutions sur la liste des instructions spécifiées au format JSON. </p> <p>Par exemple :</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Indique la liste d’instructions. Les requêtes sont des exécutions sur la liste des instructions spécifiées au format JSON. </p> <p>Par exemple,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
@@ -99,7 +99,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>orderings<br /> </td>
-   <td><p>Indique les critères d’ordre relatifs aux résultats de la recherche. Les critères sont définis au format JSON. Vous pouvez classer les résultats de la recherche selon plusieurs champs. Les résultats sont classés selon l’ordre d’apparition des champs dans la requête.</p> <p>Par exemple :</p> <p>Pour récupérer les résultats de la requête triés par propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Indique les critères d’ordre relatifs aux résultats de la recherche. Les critères sont définis au format JSON. Vous pouvez classer les résultats de la recherche selon plusieurs champs. Les résultats sont classés selon l’ordre d’apparition des champs dans la requête.</p> <p>Par exemple,</p> <p>Pour récupérer les résultats de la requête triés par propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
