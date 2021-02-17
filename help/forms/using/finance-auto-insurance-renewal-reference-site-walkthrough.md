@@ -29,7 +29,7 @@ Lisez la présentation détaillée du cas d&#39;utilisation de l&#39;assurance a
 
 Sarah Rose est déjà cliente chez We.Finance et a acheté une police d’assurance automobile. Elle doit renouveler sa police d’assurance aujourd’hui. Gloria Rios, courtier d’assurance chez We.Finance, envoie un rappel à Sarah concernant le renouvellement de sa police. Sarah suit les instructions figurant dans le courrier électronique et effectue la procédure.
 
-## Présentation de la demande d’assurance automobile  {#auto-insurance-application-walkthrough}
+## Présentation de la demande d’assurance automobile {#auto-insurance-application-walkthrough}
 
 Le scénario de l&#39;application d&#39;assurance auto-assurance We.Finance est une narration visuelle pour l&#39;utilisateur et repose sur deux personnages :
 
