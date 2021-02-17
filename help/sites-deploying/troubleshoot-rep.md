@@ -23,7 +23,7 @@ ht-degree: 81%
 
 Cette page fournit des informations sur la manière de résoudre les problèmes de réplication.
 
-## Problème  {#problem}
+## Problème {#problem}
 
 La réplication (réplication non inversée) échoue pour quelque raison que ce soit.
 
@@ -85,7 +85,7 @@ Il est parfois très utile de programmer toute la journalisation de la réplicat
 
 1. Si vous soupçonnez que le problème est lié de quelque manière que ce soit à sling eventing/jobs, vous pouvez également ajouter ce module Java sous categories:org.apache.sling.event.
 
-## Mise en pause de la file d’attentre des agents de réplication   {#pausing-replication-agent-queue}
+## Mise en pause de la file d’attentre des agents de réplication  {#pausing-replication-agent-queue}
 
 Parfois, il vaut mieux mettre la file d’attente de réplication en pause pour réduire le chargement sur le système de création, sans le désactiver. Actuellement, cela est uniquement possible par le biais d’une configuration temporaire d’un port non valide. À partir de la version 5.4, vous pourrez voir un bouton pause dans la file d’attente des agents de réplication, mais avec certaines limites.
 
