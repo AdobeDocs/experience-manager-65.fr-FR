@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 83%
+ht-degree: 92%
 
 ---
 
@@ -60,9 +60,9 @@ Non. Smart Imaging est inclus dans votre licence existante de Dynamic Media Clas
 
 ## Comment fonctionne l’imagerie dynamique ? {#how-does-smart-imaging-work}
 
-Lorsqu’une image est demandée par un consommateur, nous vérifions les caractéristiques de l’utilisateur et la convertissons au format d’image approprié en fonction du navigateur utilisé. Ces conversions de format sont effectuées de manière à ne pas dégrader la fidélité visuelle. L’imagerie intelligente convertit automatiquement les images dans différents formats en fonction des fonctionnalités du navigateur, comme suit.
+Lorsqu’un client demande une image, nous vérifions les caractéristiques utilisateur et nous la convertissons au format approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
 
-* Convertir automatiquement en WebP pour les navigateurs suivants :
+* Convertir automatiquement vers WebP pour les navigateurs suivants :
    * Chrome
    * Firefox
    * Microsoft Edge
@@ -70,7 +70,7 @@ Lorsqu’une image est demandée par un consommateur, nous vérifions les caract
       * Safari 14 uniquement avec iOS 14.0 et versions ultérieures et macOS BigSur et versions ultérieures
    * Android
    * Opera
-* Prise en charge héritée du navigateur pour les éléments suivants :
+* Prise en charge des navigateurs existants pour les éléments suivants :
 
    | Navigateur | Version du navigateur/du système d’exploitation | Format |
    | --- | --- | --- |
@@ -81,7 +81,7 @@ Lorsqu’une image est demandée par un consommateur, nous vérifions les caract
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
 
-## Quels sont les formats d’image pris en charge ?   {#what-image-formats-are-supported}
+## Quels sont les formats d’image pris en charge ? {#what-image-formats-are-supported}
 
 Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique :
 * JPEG
@@ -102,9 +102,9 @@ L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis ex
 
 ## Vais-je devoir modifier des URL ou des paramètres d’image prédéfinis, ou déployer du nouveau code sur mon site pour exploiter l’imagerie dynamique ? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-L’imagerie dynamique fonctionne en toute transparence avec vos URL d’image et paramètres d’image prédéfinis existants si vous configurez l’imagerie dynamique sur votre domaine personnalisé existant. En outre, l’imagerie dynamique n’exige pas que vous ajoutiez du code sur votre site web pour détecter le navigateur d’un utilisateur. Tout cela est géré automatiquement.
+L’imagerie dynamique fonctionne en toute transparence avec les URL et les paramètres prédéfinis des images existantes si vous configurez l’imagerie dynamique sur votre domaine personnalisé existant. En outre, l’imagerie dynamique n’exige pas que vous ajoutiez du code sur votre site web pour détecter le navigateur d’un utilisateur. Tout cela est géré automatiquement.
 
-Si vous devez configurer un nouveau domaine personnalisé pour utiliser l’imagerie intelligente, les URL devront être mises à jour pour refléter ce domaine personnalisé.
+Si vous devez configurer un nouveau domaine personnalisé pour utiliser l’imagerie dynamique, les URL devront être mises à jour pour refléter ce domaine personnalisé.
 
 Voir également [Suis-je autorisé à utiliser l’imagerie dynamique ?](#am-i-eligible-to-use-smart-imaging) pour connaître les conditions préalables requises pour l’imagerie dynamique.
 
@@ -112,7 +112,7 @@ Voir également [Suis-je autorisé à utiliser l’imagerie dynamique ?](#am-i-
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?   {#does-smart-imaging-working-with-https-how-about-http}
+## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?  {#does-smart-imaging-working-with-https-how-about-http}
 
 L’imagerie dynamique fonctionne avec les images diffusées sur HTTP ou HTTPS. Elle fonctionne également sur HTTP/2.
 
@@ -133,15 +133,15 @@ Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire av
 
 Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle n’est pas activée automatiquement.
 
-1. [Utilisez le Admin Console pour créer un dossier de support.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
-1. Fournissez les informations suivantes dans votre dossier de support :
+1. [Utilisez Admin Console pour créer un dossier d’assistance.](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Indiquez les informations suivantes dans votre dossier d’assistance :
 
    1. nom, adresse électronique et numéro de téléphone du contact principal.
    1. Tous les domaines à activer pour l’imagerie dynamique (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`).
 
       Pour rechercher vos domaines, ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre ou vos comptes de société.
 
-      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
+      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]**
    1. Vérifiez que vous utilisez le CDN via Adobe et non le CDN géré avec une relation directe.
@@ -149,14 +149,14 @@ Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle 
 
       Pour rechercher vos domaines, ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre ou vos comptes de société.
 
-      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
+      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]** Si vous utilisez actuellement un domaine Dynamic Media Classic générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
    1. Indiquez s’il doit également fonctionner sur HTTP/2.
 
 1. Le support technique vous inscrira sur la liste d’attente des clients de l’imagerie dynamique en se basant sur l’ordre dans lequel les demandes ont été envoyées.
 1. Dès qu’Adobe est prêt à traiter votre demande, vous serez contacté par le support technique afin de programmer une date cible.
-1. **Facultatif** : vous avez la possibilité de tester l’imagerie dynamique dans le cadre de l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
+1. **Facultatif** : Vous avez la possibilité de tester l’imagerie dynamique dans le cadre de l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
 1. Une fois la procédure achevée, vous en serez informé par l’équipe de support.
 1. Pour tirer pleinement parti des améliorations de performances de l’imagerie dynamique, Adobe recommande de définir le délai d’expiration (TTL) sur 24 heures ou plus. Ce paramètre définit la période pendant laquelle les ressources sont mises en cache par le réseau de diffusion de contenu. Pour modifier ce paramètre :
 
