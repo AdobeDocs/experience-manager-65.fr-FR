@@ -188,7 +188,7 @@ Sous l&#39;onglet **Types de ressources**, spécifiez le type de ressource perso
 
 Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’activités de modération autorisées par la configuration du composant, peu importe qui a créé le commentaire.
 
-#### Membres  {#members}
+#### Membres {#members}
 
 Lorsque le visiteur est connecté, selon la configuration, il peut :
 
