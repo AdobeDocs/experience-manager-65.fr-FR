@@ -22,7 +22,7 @@ ht-degree: 95%
 
 AEM Forms (et les versions antérieures) utilisaient les files d’attente JMS pour exécuter des opérations de façon asynchrone. Dans AEM Forms, les files d’attente JMS ont été remplacées par Work Manager. Ce document fournit des informations sur Work Manager, ainsi que des instructions sur la configuration des options de ralentissement de Work Manager.
 
-## A propos des opérations de longue durée (asynchrones)  {#about-long-lived-asynchronous-operations}
+## A propos des opérations de longue durée (asynchrones) {#about-long-lived-asynchronous-operations}
 
 Dans AEM Forms, les opérations effectuées par les services peuvent être de longue (asynchrones) ou de courte durée (synchrones). Les opérations de courte durée sont achevées simultanément sur le même thread que celui qui les a appelées. Ces opérations attendent une réponse avant de continuer.
 
