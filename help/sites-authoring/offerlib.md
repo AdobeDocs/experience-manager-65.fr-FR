@@ -28,7 +28,7 @@ Utilisez la console Offres pour créer des offres que vous pourrez [utiliser dan
 
 La console Offres trie les offres par marque. Chaque marque contient une bibliothèque d’offres qui peuvent être utilisées dans les expériences d’une marque. Utilisez des dossiers pour organiser hiérarchiquement les offres dans chaque bibliothèque. Une structure de dossiers logique permet aux auteurs de retrouver facilement des offres en les parcourant. Les outils de balisage et de recherche permettent également aux auteurs de retrouver des offres pertinentes.
 
-## Ajout d’une marque dans la console Offres    {#add-a-brand-using-the-offers-console}
+## Ajout d’une marque dans la console Offres   {#add-a-brand-using-the-offers-console}
 
 Créez une marque à laquelle vos offres sont associées. Ouvrez une marque dans la console Offres pour accéder à la bibliothèque d’offres dans laquelle vous pouvez créer des dossiers et des offres.
 
