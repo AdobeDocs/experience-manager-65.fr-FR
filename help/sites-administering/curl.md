@@ -24,7 +24,7 @@ Les administrateurs ont souvent besoin d’automatiser ou de simplifier des tâc
 
 En raison de la nature RESTful de la structure Sling sur laquelle l’AEM est créée, la plupart des tâches peuvent être effectuées avec un appel d’URL. cURL peut être utilisé pour exécuter ce type d’appel d’adresse URL et peut s’avérer un outil utile pour les administrateurs AEM.
 
-## Qu’est-ce que cURL ?  {#what-is-curl}
+## Qu’est-ce que cURL ? {#what-is-curl}
 
 cURL est un outil de ligne de commande Open Source utilisé pour manipuler des adresses URL. Il prend en charge un large éventail de protocoles Internet, notamment HTTP, HTTPS, FTP, FTPS, SCP, TFTP, LDAP, DAP, DICT, TELNET, FILE, IMAP, POP3, SMTP et RTSP.
 
@@ -219,7 +219,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 Voir [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) pour plus de détails.
 
-### les lots OSGi {#osgi}
+### OSGi {#osgi}
 
 #### Démarrage d’un lot {#starting-a-bundle}
 
