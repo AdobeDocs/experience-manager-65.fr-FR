@@ -152,7 +152,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
  </tbody>
 </table>
 
-### Configurations de l’émulateur d’appareil mobile  {#mobile-device-emulator-configurations}
+### Configurations de l’émulateur d’appareil mobile {#mobile-device-emulator-configurations}
 
 <table>
  <tbody>
