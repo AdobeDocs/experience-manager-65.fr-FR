@@ -18,7 +18,7 @@ ht-degree: 87%
 ---
 
 
-# Internationalisation des chaînes d’interface utilisateur  {#internationalizing-ui-strings}
+# Internationalisation des chaînes d’interface utilisateur {#internationalizing-ui-strings}
 
 Les API Java et JavaScript vous permettent d’internationaliser des chaînes dans les types de ressources suivants :
 
