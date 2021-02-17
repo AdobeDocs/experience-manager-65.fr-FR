@@ -27,7 +27,7 @@ Pour configurer SSL sur WebLogic Server, vous avez besoin d’informations d’i
 
 Configurez ensuite WebLogic pour qu’il utilise les fichiers de stockage des clés d’identité et d’approbation personnalisées que vous avez créés. Désactivez également la fonction de vérification du nom d’hôte de WebLogic car le nom unique utilisé pour créer les fichiers de stockage de clés ne comprend pas le nom de l’ordinateur hébergeant WebLogic.
 
-## Création d’informations d’identification SSL pour WebLogic Server  {#creating-an-ssl-credential-for-use-on-weblogic-server}
+## Création d’informations d’identification SSL pour WebLogic Server {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
 La commande keytool se situe généralement dans le répertoire Java jre/bin et doit comprendre plusieurs options et valeurs d’option, répertoriées dans le tableau suivant.
 
