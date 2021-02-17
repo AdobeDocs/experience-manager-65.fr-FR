@@ -64,7 +64,7 @@ En mode de conception, le sidekick est réduit et vous avez la possibilité de c
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Configuration de la conception d’un composant  {#configuring-the-design-of-a-component}
+## Configuration de la conception d’un composant {#configuring-the-design-of-a-component}
 
 En mode de conception, vous pouvez également configurer des attributs pour les différents composants. Chaque composant possède ses propres paramètres. L’exemple suivant illustre le composant **Image** :
 
