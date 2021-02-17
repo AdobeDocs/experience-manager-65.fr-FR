@@ -37,7 +37,7 @@ Ce gestionnaire stocke le message de réponse SAML chiffré dans le nœud utilis
 >
 >Pour lire un article de la communauté de bout en bout, cliquez sur [Intégration de SAML avec Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/using/aem63_saml.html).
 
-## Configuration du gestionnaire d’authentification SAML 2.0  {#configuring-the-saml-authentication-handler}
+## Configuration du gestionnaire d’authentification SAML 2.0 {#configuring-the-saml-authentication-handler}
 
 La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder à la configuration de gestionnaire d’authentification [SAML](http://saml.xml.org/saml-specifications) 2.0 appelée **Gestionnaire d’authentification SAML 2.0 Adobe Granite**. Les propriétés suivantes peuvent être définies.
 
