@@ -1,6 +1,6 @@
 ---
 title: Lancements
-seo-title: 'Les lancements  '
+seo-title: Lancements
 description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 seo-description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
@@ -43,7 +43,7 @@ Cette section explique comment créer, modifier et convertir (et, le cas échéa
 * [Modification de lancements](/help/sites-authoring/launches-editing.md)
 * [Conversion de lancements](/help/sites-authoring/launches-promoting.md)
 
-## Lancements - Ordre des événements {#launches-the-order-of-events}
+## Lancements – Ordre des événements {#launches-the-order-of-events}
 
 La fonction Lancements vous permet de développer efficacement le contenu en vue d’une publication future d’une ou de plusieurs pages web activées.
 
@@ -75,7 +75,7 @@ La fonction Lancements vous permet de :
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
 
       * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
-      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la date de **lancement** (**En direct**) spécifiée ****. Après la promotion, les pages de production sont automatiquement publiées.\
+      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.\
          Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 
 
@@ -105,7 +105,7 @@ La fonction Lancements vous permet de :
 
 ### Console de lancements {#the-launches-console}
 
-La console de lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
+La console Lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
