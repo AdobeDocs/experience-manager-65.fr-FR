@@ -35,7 +35,7 @@ Voici un aperçu des critères généralement définis par les équipes :
 
 En l’absence de DoD bien définie, il est facile de se retrouver dans une situation dans laquelle de nombreuses choses sont faites à moitié, mais où rien n’est réellement terminé.
 
-### Définition et respect des conventions de codage et de formatage  {#define-and-adhere-to-coding-and-formatting-conventions}
+### Définition et respect des conventions de codage et de formatage {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Les espaces blancs et les niveaux d’indentation sont des éléments qui peuvent paraître secondaires. Cependant, disposer d’un code bien formaté améliore considérablement la lisibilité et la facilité de maintenance. Les conventions doivent être examinées et adoptées en équipe, puis appliquées dans le code.
 
