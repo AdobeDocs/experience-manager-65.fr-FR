@@ -255,13 +255,13 @@ A partir de la [console de modération en bloc](/help/communities/moderation.md)
 
 #### Mots-clés {#watchwords}
 
-Les communautés d’AEM fournissent un *analyseur de mots d’attente* comme étape du processus d’évaluation de [l’opinion](#sentiment). La contribution à la valeur d’opinion fournie par les mots de contrôle est due à la comparaison des mots de contrôle négatifs et positifs utilisés dans le contenu publié, ainsi que des mots interdits.
+Les communautés d’AEM fournissent un *analyseur de mots d’attente* en tant qu’étape du processus d’évaluation de [l’opinion](#sentiment). La contribution à la valeur d’opinion fournie par les mots de contrôle est due à la comparaison des mots de contrôle négatifs et positifs utilisés dans le contenu publié, ainsi que des mots interdits.
 
 #### Configuration de l’opinion et des mots de contrôle {#configure-sentiment-and-watchwords}
 
 La liste des mots d’ordre positifs et négatifs peut être personnalisée, de même que les règles d’opinion.
 
-La liste par défaut des mots-clés peut être saisie en tant que propriétés d&#39;un noeud dans le référentiel, comme par défaut ou en remplaçant la valeur par défaut en configurant le service OSGi `sentimentprocess.name` avec la liste de mots.
+La liste par défaut des mots-clés peut être entrée en tant que propriétés d&#39;un noeud dans le référentiel, comme dans le cas par défaut ou en remplaçant la valeur par défaut par la configuration du service OSGi `sentimentprocess.name` avec la liste de mots.
 
 Il est également possible de modifier **sentimentprocess.name** pour référencer l’emplacement d’un ensemble personnalisé de règles d’opinion.
 
