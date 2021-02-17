@@ -20,7 +20,7 @@ ht-degree: 82%
 ---
 
 
-# Mise à niveau vers AEM 6.5  {#upgrading-to-aem}
+# Mise à niveau vers AEM 6.5 {#upgrading-to-aem}
 
 Dans cette section, nous présentons la mise à niveau d’une installation AEM vers AEM 6.5 :
 
