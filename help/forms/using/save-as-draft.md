@@ -17,7 +17,7 @@ ht-degree: 89%
 ---
 
 
-# Enregistrement d’une tâche ou d’un formulaire en tant que brouillon  {#saving-a-task-or-form-as-a-draft}
+# Enregistrement d’une tâche ou d’un formulaire en tant que brouillon {#saving-a-task-or-form-as-a-draft}
 
 L’option Enregistrer en tant que brouillon enregistre un instantané d’une tâche ou d’un formulaire avec les données renseignées dans le formulaire associé. Vous pouvez également créer un brouillon à partir d’un modèle. Les brouillons sont enregistrés sur le périphérique mobile et synchronisées avec le serveur Adobe Experience Manager Forms pour une récupération ultérieure.
 
