@@ -33,7 +33,7 @@ Les certificats requis pour vérifier des signatures doivent résider au même e
 
 Vous pouvez également importer et supprimer des certificats à l’aide de l’API Trust Manager. Pour plus d’informations, reportez-vous aux sections « Importation des certificats à l’aide de l’API Trust Manager » et « Suppression des certificats à l’aide de l’API Trust Manager » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 
-## Importation d’un certificat  {#import-a-certificate}
+## Importation d’un certificat {#import-a-certificate}
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Certificats]**.
 1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez l’une des options suivantes :
