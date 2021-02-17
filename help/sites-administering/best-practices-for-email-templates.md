@@ -19,7 +19,7 @@ ht-degree: 41%
 ---
 
 
-# Meilleures pratiques des modèles de courrier électronique  {#best-practices-for-email-templates}
+# Meilleures pratiques des modèles de courrier électronique {#best-practices-for-email-templates}
 
 >[!CAUTION]
 >
