@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '2424'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -44,9 +44,9 @@ Pour les recherches de texte intégral, ajoutez le prédicat [!UICONTROL Texte c
 
 1. Sur la page [!UICONTROL Modifier des formulaires de recherche], faites glisser un prédicat de l’onglet **[!UICONTROL Sélectionner le prédicat]** vers le volet principal. Faites glisser, par exemple, **[!UICONTROL Prédicat de la propriété]**.
 
-   ![Sélectionner et déplacer un prédicat pour personnaliser les filtres de recherche](assets/drag_predicate.png)
+   ![Sélectionnez et déplacez un prédicat pour personnaliser les filtres de recherche](assets/drag_predicate.png)
 
-   *Figure : Sélectionnez et déplacez un prédicat pour personnaliser les filtres de recherche.*
+   *Figure : Sélectionner et déplacer un prédicat pour personnaliser les filtres de recherche.*
 
 1. Sous l’onglet [!UICONTROL Paramètres], saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Le libellé de l&#39;en-tête dans l&#39;onglet [!UICONTROL Paramètres] identifie le type du prédicat sélectionné.
 
@@ -175,7 +175,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
 | [!UICONTROL État d’expiration] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur état d’expiration. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
 | [!UICONTROL Masqué] | Prédicat de recherche permettant de définir une propriété de champ masqué pour rechercher des ressources. | <ul><li>Nom de la propriété</li><li>Valeur de la propriété</li><li>Description</li></ul> |
 
-## Restaurer les facettes de recherche par défaut {#restoring-default-search-facets}
+## Restauration des facettes de recherche par défaut {#restoring-default-search-facets}
 
 Par défaut, une icône de verrouillage ![icône de verrouillage fermée](assets/do-not-localize/lock_closed_icon.svg) apparaît avant **[!UICONTROL le rail de recherche des administrateurs des ressources]** dans la page **[!UICONTROL Rechercher Forms]**. L’icône de cadenas en regard d’une option de la page Formulaires de recherche indique que les paramètres par défaut sont intacts et non personnalisés. L’icône ![verrouiller l’icône ](assets/do-not-localize/lock_closed_icon.svg) disparaît si vous ajoutez des facettes de recherche au formulaire indiquant que le formulaire par défaut a été modifié.
 
