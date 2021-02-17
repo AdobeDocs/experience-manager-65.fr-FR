@@ -37,7 +37,7 @@ Un certain nombre de composants AEM prêts à l’emploi sont fournis pour utili
 
 Pour la recherche, un hook d’intégration permet d’utiliser la recherche AEM, une recherche tierce (comme Search &amp; Promote) ou une combinaison de ceux-ci.
 
-## Sélection du moteur eCommerce  {#ecommerce-engine-selection}
+## Sélection du moteur eCommerce {#ecommerce-engine-selection}
 
 Le framework eCommerce est compatible avec n’importe quelle solution eCommerce. Le moteur utilisé doit être identifié par AEM, même avec le moteur générique AEM :
 
@@ -45,7 +45,7 @@ Le framework eCommerce est compatible avec n’importe quelle solution eCommerce
 
    * Les moteurs peuvent être distingués par une propriété de service `commerceProvider`.
 
-* aem prend en charge `Resource.adaptTo()` pour `CommerceService` et `Product`
+* AEM prend en charge `Resource.adaptTo()` pour `CommerceService` et `Product`
 
    * L&#39;implémentation `adaptTo` recherche une propriété `cq:commerceProvider` dans la hiérarchie de la ressource :
 
