@@ -18,7 +18,7 @@ ht-degree: 85%
 ---
 
 
-# Fonctions de l’espace de travail AEM Forms non disponibles dans l’espace de travail Flex  {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
+# Fonctions de l’espace de travail AEM Forms non disponibles dans l’espace de travail Flex {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
 L’espace de travail AEM Forms va au-delà de l’espace de travail basé sur Flex, en passant par les fonctions d’offre et les capacités qui permettent d’améliorer l’intégration des entreprises et la productivité des utilisateurs.
 
