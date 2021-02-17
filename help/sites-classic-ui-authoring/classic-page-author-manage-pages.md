@@ -144,7 +144,7 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. aem est livré avec une gamme de composants prêts à l&#39;emploi qui offrent des fonctionnalités complètes ; il s&#39;agit notamment :
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est livré avec une gamme de composants prêts à l&#39;emploi qui offrent des fonctionnalités complètes ; il s&#39;agit notamment :
 
 * Texte
 * Image
@@ -210,7 +210,7 @@ Vous pouvez ouvrir la page à [modifier](/help/sites-classic-ui-authoring/classi
 
 * Après avoir ouvert une page, vous pouvez accéder à d’autres pages du site (en vue de les modifier) en cliquant sur des liens hypertexte.
 
-### Copier et coller une page   {#copying-and-pasting-a-page}
+### Copier et coller une page  {#copying-and-pasting-a-page}
 
 Vous pouvez copier, au choix :
 
