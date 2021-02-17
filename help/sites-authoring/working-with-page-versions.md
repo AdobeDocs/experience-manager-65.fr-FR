@@ -27,14 +27,14 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
 * Restaurer la version précédente d’une page (pour annuler une modification apportée à une page, par exemple).
 * Comparer la version actuelle d’une page avec une version précédente (les différences dans le texte et les images sont mises en évidence).
 
-## Création d’une version    {#creating-a-new-version}
+## Création d’une version   {#creating-a-new-version}
 
 Vous pouvez créer une version de votre ressource depuis :
 
 * le [rail de la frise chronologique](#creating-a-new-version-timeline)
 * l’option [Créer](#creating-a-new-version-create-with-a-selected-resource) (lorsqu’une ressource est sélectionnée).
 
-### Création d’une version - Frise chronologique{#creating-a-new-version-timeline}
+### Création d’une version – Frise chronologique {#creating-a-new-version-timeline}
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -52,7 +52,7 @@ Vous pouvez créer une version de votre ressource depuis :
 
    Les informations dans la frise chronologique sont mises à jour pour indiquer la nouvelle version.
 
-### Création d’une version - Création avec une ressource sélectionnée {#creating-a-new-version-create-with-a-selected-resource}
+### Création d’une version – Création avec une ressource sélectionnée {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -129,7 +129,7 @@ Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Sélectionnez **Comparer à actuel**. L’[outil de comparaison des pages](/help/sites-authoring/page-diff.md) s’ouvre et affiche les différences.
 
-## Distorsion du temps Timewarp   {#timewarp}
+## Distorsion du temps Timewarp  {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état *publié* d’une page à des moments spécifiques dans le passé.
 
@@ -158,7 +158,7 @@ Timewarp est un [mode](/help/sites-authoring/author-environment-tools.md#page-mo
 
    ![wwpv-03](assets/wwpv-03.png)
 
-### Limites du mode Timewarp{#timewarp-limitations}
+### Limites du mode Timewarp {#timewarp-limitations}
 
 Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutefois, en raison de la complexité de la création continue de contenu dans AEM, cela n’est pas toujours possible. Ces restrictions doivent être prises en compte lors de l’utilisation de Timewarp.
 
