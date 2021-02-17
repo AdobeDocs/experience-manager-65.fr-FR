@@ -34,7 +34,7 @@ La liste de modifications et correctifs pour la dernière version est disponible
 >
 >Pour en savoir plus sur Apache Oak les conceptes clés de persistence AEM, voir [Introduction à la plateforme AEM](/help/sites-deploying/platform.md).
 
-## Cas d’utilisation de migration  {#migration-use-cases}
+## Cas d’utilisation de migration {#migration-use-cases}
 
 L’outil peut être utilisé pour :
 
