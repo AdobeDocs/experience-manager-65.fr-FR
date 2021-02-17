@@ -106,7 +106,7 @@ Procédez comme suit pour créer une suite de rapports.
 
 1. Déconnectez-vous du compte Adobe Marketing Cloud.
 
-## Création de la configuration du service Cloud  {#creating-cloud-service-configuration}
+## Création de la configuration du service Cloud {#creating-cloud-service-configuration}
 
 La configuration du service Cloud rassemble les informations sur votre compte Adobe Analytics. Elle permet à Adobe Experience Manager (AEM) de se connecter à Adobe Analytics. Créez une configuration distincte pour chaque compte Analytics que vous utilisez.
 
