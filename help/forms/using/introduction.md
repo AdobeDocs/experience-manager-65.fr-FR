@@ -41,7 +41,7 @@ Les formulaires HTML5 génèrent des documents basés sur des éléments HTML5 s
 
 Les développeurs de formulaires peuvent utiliser un modèle XFA pour effectuer le rendu des formulaires aux formats PDF et HTML5. Cette fonctionnalité peut s’avérer utile dans les cas où vous avez un jeu de formulaires XFA important nécessitant des modifications mineures pour s’adapter aux pratiques de conception des formulaires HTML5. Vous pouvez générer les formulaires XFA existants au format HTML5 pour cibler différents périphériques ne prenant pas encore en charge le format PDF basé sur XFA.
 
-## Gestion des formulaires HTML5  {#manage-html-forms}
+## Gestion des formulaires HTML5 {#manage-html-forms}
 
 AEM fournit également un affichage unifié permettant de répertorier et gérer tous les modèles de formulaires à l’aide de l’interface utilisateur AEM Forms. Vous pouvez activer, désactiver, publier et prévisualiser des formulaires. Pour en savoir plus, voir [Présentation de la gestion des formulaires](../../forms/using/introduction-managing-forms.md).
 
