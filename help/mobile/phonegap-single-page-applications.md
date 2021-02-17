@@ -28,7 +28,7 @@ ht-degree: 3%
 
 En règle générale, SPA semblent plus performants que les sites Web traditionnels basés sur des pages, car ils ne chargent généralement une page HTML complète **qu&#39;une seule fois** (y compris CSS, JS et le contenu des polices prises en charge), puis ne chargent que ce qui est nécessaire chaque fois qu&#39;un changement d&#39;état se produit dans l&#39;application. Les éléments nécessaires à ce changement d&#39;état peuvent varier en fonction de l&#39;ensemble de technologies choisi, mais incluent généralement un fragment HTML unique pour remplacer la &quot;vue&quot; existante, et l&#39;exécution d&#39;un bloc de code JS pour câbler la nouvelle vue et effectuer tout rendu de modèle côté client nécessaire. La vitesse de ce changement d’état peut être améliorée encore davantage en prenant en charge les mécanismes de mise en cache des modèles, ou même l’accès hors ligne au contenu des modèles si Adobe PhoneGap est utilisé.
 
-aem 6.1 prend en charge la création et la gestion de SPA par l&#39;intermédiaire d&#39; Apps. Cet article présente les concepts qui sous-tendent la SPA et explique comment ils utilisent [AngularJS](https://angularjs.org/) pour amener votre marque sur l’App Store et Google Play.
+AEM 6.1 prend en charge la création et la gestion de SPA par l&#39;intermédiaire d&#39; Apps. Cet article présente les concepts qui sous-tendent la SPA et explique comment ils utilisent [AngularJS](https://angularjs.org/) pour amener votre marque sur l’App Store et Google Play.
 
 ## SPA dans les applications AEM {#spa-in-aem-apps}
 
