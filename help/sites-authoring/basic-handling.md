@@ -1,8 +1,8 @@
 ---
 title: Manipulation de base
 seo-title: Manipulation de base
-description: Se familiariser avec la navigation dans AEM et l’utilisation des fonctionnalités de base
-seo-description: Se familiariser avec la navigation dans AEM et l’utilisation des fonctionnalités de base
+description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
+seo-description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -53,7 +53,7 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 >
 >Cliquez ou appuyez sur **Sites** pour commencer.
 
-### Navigation dans le produit   {#product-navigation}
+### Navigation dans le produit {#product-navigation}
 
 La première fois que vous accédez à une console, un didacticiel de navigation du produit démarre. Prenez quelques instants pour cliquer ou appuyer sur divers éléments afin de vous familiariser avec le fonctionnement de base d’AEM.
 
@@ -77,12 +77,12 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole 
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole
 * **[Outils](/help/sites-authoring/basic-handling.md#tools-panel)** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
 
-### Panneau de navigation   {#navigation-panel}
+### Panneau de navigation  {#navigation-panel}
 
 Le panneau de navigation donne accès aux AEM consoles :
 
@@ -119,7 +119,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
    <td>Cette console permet de créer, de gérer et de traiter vos <a href="/help/forms/home.md">formulaires et documents</a>.</td>
   </tr>
   <tr>
-   <td>Personnalisation </td>
+   <td>Personnalisation</td>
    <td>Cette console propose un <a href="/help/sites-authoring/personalization.md">ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées</a>.</td>
   </tr>
   <tr>
@@ -294,7 +294,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 >
 >Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides   {#quick-actions}
+## Actions rapides  {#quick-actions}
 
 Dans le [mode Carte](#cardviewquickactions), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -317,7 +317,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 >
 >Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources   {#selecting-resources}
+### Sélection de ressources  {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
@@ -374,7 +374,7 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
 
 Vous pouvez sélectionner tous les éléments d’une vue en cliquant sur l’option **Sélectionner tout** dans l’angle supérieur droit de la console.
 
-* Dans le **mode d’affichage Carte**, toutes les cartes sont sélectionnées.
+* En **mode Carte**, toutes les cartes sont sélectionnées.
 * Dans le **mode d&#39;affichage Liste**, tous les éléments de la liste sont sélectionnés.
 * En **mode Colonnes**, tous les éléments de la colonne la plus à gauche sont sélectionnés.
 
@@ -416,7 +416,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 
    * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous cliquez ou appuyez dessus.
 
-   ![bh-17](assets/bh-17.png)
+   ![bh-15](assets/bh-17.png)
 
    * Les enfants de la ressource sélectionnée sont affichés dans la colonne située à droite de la ressource concernée.
    * Si vous appuyez ou cliquez sur le nom d’une ressource qui ne contient pas d’enfants, ses détails sont affichés dans la dernière colonne.
