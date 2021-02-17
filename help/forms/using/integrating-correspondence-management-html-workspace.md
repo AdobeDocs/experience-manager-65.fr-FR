@@ -33,7 +33,7 @@ Accédez au modèle Correspondence Management à l’adresse URL correspondante 
 
 où `encodedLetterId` correspond à l’ID de lettre codé URL. Spécifiez le même identifiant de lettre lors de la définition du processus de rendu pour une tâche d’espace de travail dans Workbench.
 
-## Création d’une tâche pour le rendu et l’envoi d’une lettre dans l’espace de travail AEM  {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## Création d’une tâche pour le rendu et l’envoi d’une lettre dans l’espace de travail AEM {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 Avant d’exécuter ces étapes, assurez-vous d’être membre des groupes suivants :
 
