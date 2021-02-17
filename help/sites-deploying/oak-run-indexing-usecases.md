@@ -31,7 +31,7 @@ Les principaux avantages de l&#39;utilisation de l&#39;approche de commande de l
 
 Les sections suivantes fournissent des échantillons de commande. La commande d’index oak-run prend en charge toutes les configurations NodeStore et BlobStore. Les exemples fournis ci-dessous concernent les configurations avec FileDataStore et SegmentNodeStore.
 
-## Cas d’utilisation 1 – Contrôle de cohérence de l’index  {#usercase1indexconsistencycheck}
+## Cas d’utilisation 1 – Contrôle de cohérence de l’index {#usercase1indexconsistencycheck}
 
 Il s’agit d’un cas d’utilisation lié à l’altération d’index. Dans certains cas, il s’avérait impossible de déterminer les index qui étaient altérés. C’est pourquoi Adobe a développé des outils qui :
 
