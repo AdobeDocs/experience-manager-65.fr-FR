@@ -17,7 +17,7 @@ ht-degree: 77%
 ---
 
 
-# Personnalisation du suivi des événements de formulaire  {#customizing-form-event-tracking}
+# Personnalisation du suivi des événements de formulaire {#customizing-form-event-tracking}
 
 Les événements suivants sont immédiatement suivis dans un formulaire adaptatif activé par analyse :
 
