@@ -34,7 +34,7 @@ Dans la page Paramètres de type de fichier, vous pouvez effectuer les tâches s
 >
 >les paramètres de type de fichier ne sont pas disponibles pour les convertisseurs de secours, tels que Acrobat pour conversion du format HTML au format PDF, Microsoft PowerPoint, Microsoft Word et Microsoft Excel.
 
-## Création ou modification de paramètres de type de fichier  {#create-or-edit-file-type-settings}
+## Création ou modification de paramètres de type de fichier {#create-or-edit-file-type-settings}
 
 Vous créez ou modifiez un paramètre de type de fichier pour définir la manière dont l’application traite la conversion des types de fichier pris en charge. Sous Windows, vous pouvez définir les paramètres de l’application pour chaque type de fichier pris en charge. Sous UNIX et Linux, vous pouvez définir les paramètres de l’application pour les formats HTML en PDF et OpenOffice.
 
