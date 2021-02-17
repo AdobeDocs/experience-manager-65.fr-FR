@@ -36,7 +36,7 @@ La solution consiste à configurer des connexions persistantes au niveau de l’
 
 Si une instance de publication devient inaccessible, tous les utilisateurs authentifiés sur cette instance perdent leur session, puisque pour valider le cookie d’authentification, il est nécessaire d’accéder au référentiel.
 
-## Authentification sans état avec le jeton encapsulé  {#stateless-authentication-with-the-encapsulated-token}
+## Authentification sans état avec le jeton encapsulé {#stateless-authentication-with-the-encapsulated-token}
 
 Pour permettre une évolutivité horizontale, la solution consiste à recourir à une authentification sans état grâce à la nouvelle prise en charge des jetons encapsulés dans AEM.
 
