@@ -1,18 +1,18 @@
 ---
-title: Module externe Maven du package de contenu Adobe
-description: Utilisez le module externe Content Package Maven pour déployer AEM applications
+title: Plug-in Maven Content Package d’Adobe
+description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
 translation-type: tm+mt
 source-git-commit: 7bbafbd96ec92ed4278f6fa1d9899a3d59ee69ad
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 11%
+ht-degree: 34%
 
 ---
 
 
-# Module externe Maven du package de contenu d&#39;Adobe {#adobe-content-package-maven-plugin}
+# Plug-in Maven Content Package d’Adobe {#adobe-content-package-maven-plugin}
 
-Utilisez le module externe Adobe Content Package Maven pour intégrer des tâches de déploiement et de gestion de modules dans vos projets Maven.
+Le plug-in Maven Content Package d’Adobe permet d’intégrer les tâches de déploiement et de gestion de modules dans vos projets Maven.
 
 Le déploiement des packages construits sur AEM est effectué par le module externe Adobe Content Package Maven et permet l’automatisation des tâches normalement exécutées à l’aide d’AEM Package Manager.
 
