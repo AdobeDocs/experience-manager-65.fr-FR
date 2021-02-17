@@ -128,7 +128,7 @@ Auparavant, ce contenu de la communauté était répliqué de manière inversée
 
 À partir de AEM Communities 6.1, la nécessité de reproduire le CU a été éliminée en utilisant l&#39;enregistrement partagé pour le CU, comme indiqué ci-dessus.
 
-Bien que le contenu du site soit répliqué, UGC n’est jamais répliqué.
+Bien que le contenu du site soit répliqué, l’UGC n’est jamais répliqué.
 
 ### Gestion des données utilisateur {#managing-user-data}
 
