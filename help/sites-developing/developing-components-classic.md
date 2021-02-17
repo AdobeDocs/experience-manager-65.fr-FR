@@ -37,7 +37,7 @@ L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparenc
 
 La structure de base d&#39;un composant est traitée sur la page [Composants AEM - Les concepts de base](/help/sites-developing/components-basics.md#structure), qui s&#39;applique à la fois aux interfaces utilisateur tactiles et classiques. Même si vous ne devez pas utiliser les paramètres de l’IU tactile dans votre nouveau composant, il est intéressant de les connaître lorsque vous héritez des composants existants.
 
-## Scripts JSP  {#jsp-scripts}
+## Scripts JSP {#jsp-scripts}
 
 Les servlets ou scripts JSP peuvent être utilisés pour le rendu des composants. Selon les règles de traitement des requêtes de Sling, le nom du script par défaut est :
 
@@ -177,7 +177,7 @@ Pour développer un nouveau composant pour AEM sur la base d’un composant exis
    >
    >Un composant pour :
    >
-   >* l’interface utilisateur tactile utilise des composants [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) ;
+   >* l’interface utilisateur tactile utilise des composants [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) ;
    >* l’interface utilisateur classique utilise des [widgets ExtJS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 
