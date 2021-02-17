@@ -27,7 +27,7 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
 * Restaurer la version précédente d’une page (pour annuler une modification apportée à une page, par exemple).
 * Comparer la version actuelle d’une page avec une version précédente (les différences dans le texte et les images sont mises en évidence).
 
-## Création d’une version    {#creating-a-new-version}
+## Création d’une version   {#creating-a-new-version}
 
 Pour créer une version d’une page :
 
@@ -103,7 +103,7 @@ Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Dans le sidekick, sélectionnez le sous-onglet **Restaurer la version**, puis cliquez sur le bouton **&lt;&lt;Précédent** pour afficher la version actuelle.
 
-## Distorsion du temps Timewarp   {#timewarp}
+## Distorsion du temps Timewarp  {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état ***publié*** d’une page à des moments spécifiques dans le passé.
 
@@ -182,7 +182,7 @@ Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifié
    1. **Aller** pour afficher le contenu de la page publiée au moment sélectionné.
    1. **Quitter Timewarp** pour quitter la fonctionnalité et revenir à la page de création en cours.
 
-### Limites du mode Timewarp{#timewarp-limitations}
+### Limites du mode Timewarp {#timewarp-limitations}
 
 Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutefois, en raison de la complexité de la création continue de contenu dans AEM, cela n’est pas toujours possible. Ces restrictions doivent être prises en compte lors de l’utilisation de Timewarp.
 
