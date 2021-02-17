@@ -49,7 +49,7 @@ Les règles générales suivantes sont pertinentes pour les développeurs dans l
 * Fournir la souplesse et les capacités de configuration requises à vos composants personnalisés.
 * Optimiser l’usage de la puissance et de la souplesse du système de paragraphe AEM : les composants parsys et iparsys.
 
-### Personnalisation des composants et d’autres éléments  {#customizing-components-and-other-elements}
+### Personnalisation des composants et d’autres éléments {#customizing-components-and-other-elements}
 
 Lors de la création de vos propres composants ou de la personnalisation d’un composant existant, il est souvent plus simple (et plus sûr) de recycler les définitions existantes. Les mêmes principes s’appliquent également à d’autres éléments dans AEM, par exemple le gestionnaire d’erreurs.
 
@@ -76,7 +76,7 @@ Par exemple :
 
    Ce cas implique le recouvrement d’une servlet :
 
-   * Dans le référentiel, copiez le(s) script(s) par défaut :
+   * Dans le référentiel, copiez le ou les scripts par défaut :
 
       * de `/libs/sling/servlet/errorhandler/`
       * vers `/apps/sling/servlet/errorhandler/`
