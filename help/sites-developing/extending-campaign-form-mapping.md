@@ -44,7 +44,7 @@ Pour créer des mappages de formulaire personnalisés, vous devez suivre ces ét
 1. Générez, dans AEM, le formulaire qui utilisera la distribution créée.
 1. Envoyez le formulaire pour le tester.
 
-### Création du tableau personnalisé dans Adobe Campaign  {#creating-the-custom-table-in-adobe-campaign}
+### Création du tableau personnalisé dans Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
 Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau de événement :
 
