@@ -24,7 +24,7 @@ La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet 
 
 Pour plus d’informations sur la création de topologies de déchargement et la configuration de la consommation de rubrique, voir [Tâches de déchargement](/help/sites-deploying/offloading.md).
 
-## Gestion des charges utiles de la tâche  {#handling-job-payloads}
+## Gestion des charges utiles de la tâche {#handling-job-payloads}
 
 La structure de déchargement définit deux propriétés de tâche que vous utilisez pour identifier la charge utile de la tâche. Les agents de réplication de déchargement utilisent ces propriétés pour identifier les ressources à répliquer sur les instances de la topologie :
 
