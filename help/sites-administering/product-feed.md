@@ -20,7 +20,7 @@ ht-degree: 71%
 
 # Flux de produit {#product-feed}
 
-aem s’intègre à [Search &amp; Promote](https://www.adobe.com/solutions/testing-targeting/searchandpromote.html) et vous permet de :
+AEM s’intègre à [Search &amp; Promote](https://www.adobe.com/solutions/testing-targeting/searchandpromote.html) et vous permet de :
 
 * d’utiliser l’API eCommerce, indépendamment de la structure de référentiel et de la plateforme de commerce sous-jacentes ;
 * de tirer parti de la fonction de connecteur d’index de Search&amp;Promote pour constituer un flux de produit au format XML ;
@@ -48,7 +48,7 @@ Vous devez d’abord saisir une racine de site web et un attribut d’identifian
 
 Vous devez également modifier deux configurations dans la console web pour générer des flux de produit.
 
-### Configuration de la mise en œuvre du moteur de recherche de produits Search&amp;Promote Day CQ pour Geometrixx  {#configuring-the-day-cq-search-promote-products-crawler-implementation-for-geometrixx}
+### Configuration de la mise en œuvre du moteur de recherche de produits Search&amp;Promote Day CQ pour Geometrixx {#configuring-the-day-cq-search-promote-products-crawler-implementation-for-geometrixx}
 
 1. Accédez à [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Cliquez sur **[!UICONTROL Configuration de la mise en œuvre du moteur de recherche de produits Search&amp;Promote Day CQ pour Geometrixx]**.
