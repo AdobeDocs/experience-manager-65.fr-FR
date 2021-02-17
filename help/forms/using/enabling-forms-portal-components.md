@@ -17,7 +17,7 @@ ht-degree: 47%
 ---
 
 
-# Activation des composants de Forms Portal  {#enabling-forms-portal-components}
+# Activation des composants de Forms Portal {#enabling-forms-portal-components}
 
 Les composants Forms Portal ne sont pas disponibles pour une utilisation immédiate. Pour faire apparaître les composants dans la liste des composants disponibles dans AEM sidekick, effectuez les étapes suivantes :
 
