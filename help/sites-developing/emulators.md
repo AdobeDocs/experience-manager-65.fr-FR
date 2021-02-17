@@ -37,7 +37,7 @@ La structure de l’émulateur AEM :
 >
 >Cette fonction est uniquement prise en charge dans l’IU classique.
 
-## Caractéristiques des émulateurs  {#emulators-characteristics}
+## Caractéristiques des émulateurs {#emulators-characteristics}
 
 Un émulateur :
 
