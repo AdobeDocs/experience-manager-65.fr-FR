@@ -74,7 +74,7 @@ La mise en page s’appuie sur les meilleures pratiques HTML5 Boilerplate. Pour
 >
 >Le module de conception **doit** contenir, au minimum, un fichier **index.html** au niveau racine. Au cas où la page d’entrée à importer comporterait également une version pour mobiles, le fichier ZIP doit contenir un fichier **mobile.index.html** en complément du fichier **index.html** au niveau racine.
 
-### Préparation du fichier HTML de la page d’entrée  {#preparing-the-landing-page-html}
+### Préparation du fichier HTML de la page d’entrée {#preparing-the-landing-page-html}
 
 Pour qu’il soit possible d’importer le fichier HTML, vous devez ajouter une balise &lt;div> de canevas au fichier HTML de la page d’entrée.
 
