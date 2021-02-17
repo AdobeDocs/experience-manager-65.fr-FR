@@ -18,7 +18,7 @@ ht-degree: 74%
 ---
 
 
-# Intégration des composants de l’espace de travail AEM Forms dans des applications Web  {#integrating-aem-forms-workspace-components-in-web-applications}
+# Intégration des composants de l’espace de travail AEM Forms dans des applications Web {#integrating-aem-forms-workspace-components-in-web-applications}
 
 Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-components.md) de l’espace de travail AEM Forms dans votre propre application Web. L’exemple d’implémentation suivant utilise des composants d’un paquet de développement d’espace de travail AEM Forms installé sur une instance CRX™ pour créer une application Web. Personnalisez la solution ci-dessous en fonction de vos besoins. L’exemple d’implémentation réutilise les composants `UserInfo`, `FilterList` et `TaskList`dans un portail Web.
 
