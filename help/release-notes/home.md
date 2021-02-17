@@ -20,7 +20,7 @@ Les notes de mise à jour d’AEM comportent des informations importantes sur la
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
-## aem 6.5 guides d’utilisation
+## AEM 6.5 guides d’utilisation
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -39,7 +39,7 @@ Les notes de mise à jour d’AEM comportent des informations importantes sur la
 
 ## Principales ressources AEM
 
-* [aem didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html)
+* [AEM didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html)
 * [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
