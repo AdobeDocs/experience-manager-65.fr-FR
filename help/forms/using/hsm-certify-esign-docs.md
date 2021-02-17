@@ -40,7 +40,7 @@ Adobe Experience Manager Forms peut utiliser les informations d’identification
 >
 >Sous Microsoft Windows, les clients à 32 bits uniquement de LunaSA ou EToken sont pris en charge.
 
-## Activer le service DocAssurance  {#configuredocassurance}
+## Activer le service DocAssurance {#configuredocassurance}
 
 Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes suivantes pour activer le service :
 
