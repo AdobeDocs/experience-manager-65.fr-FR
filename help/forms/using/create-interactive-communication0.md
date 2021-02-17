@@ -33,7 +33,7 @@ Ce didacticiel vous guide pas à pas dans la création de communications interac
 * Créer une communication interactive pour le canal web
 * Créer des communications interactives pour les versions impression et web avec l’impression comme option principale
 
-## Créer des communications interactives pour les versions impression et web sans aucune synchronisation  {#create-interactive-communications-for-print-and-web-with-no-synchronization}
+## Créer des communications interactives pour les versions impression et web sans aucune synchronisation {#create-interactive-communications-for-print-and-web-with-no-synchronization}
 
 ### Créer une communication interactive pour le canal d’impression {#create-interactive-communication-for-print-channel}
 
@@ -58,7 +58,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
    1. Spécifiez le dossier **Create_First_IC_templates** > **Create_First_IC_Web_Template** comme modèle Web et appuyez sur **Sélectionner**.
 
-   1. Appuyez sur **Créer**. 
+   1. Appuyez sur **Créer**.
 
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
@@ -121,7 +121,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
    1. Spécifiez le dossier **Create_First_IC_templates** > **Create_First_IC_Web_Template** comme modèle Web et appuyez sur **Sélectionner**.
 
-   1. Appuyez sur **Créer**. 
+   1. Appuyez sur **Créer**.
 
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
@@ -214,7 +214,7 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
    1. Cochez la case **Utiliser l&#39;impression comme Principal pour le Canal Web**.
    1. Spécifiez le dossier **Create_First_IC_templates** > **Create_First_IC_Web_Template** comme modèle Web et appuyez sur **Sélectionner**.
 
-   1. Appuyez sur **Créer**. 
+   1. Appuyez sur **Créer**.
 
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
@@ -225,7 +225,7 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
 
    Le contenu du canal d’impression est inséré sous le contenu du modèle de canal web. Pour modifier le contenu du canal web qui a été généré automatiquement à partir du canal d’impression, vous pouvez annuler l’héritage pour toute zone cible.
 
-   Passez la souris sur la zone de cible appropriée dans le canal Web et sélectionnez ![annuler l&#39;héritage](assets/cancelinheritance.png) (Annuler l&#39;héritage), puis dans la boîte de dialogue **Annuler l&#39;héritage**, appuyez sur **Oui**.
+   Passez la souris sur la zone de cible appropriée dans le canal Web et sélectionnez ![annuler l’héritage](assets/cancelinheritance.png) (Annuler l’héritage), puis dans la boîte de dialogue **Annuler l’héritage**, appuyez sur **Oui**.
 
    ![Annuler l’héritage](assets/cancel_inheritance_web_channel_new.png)
 
