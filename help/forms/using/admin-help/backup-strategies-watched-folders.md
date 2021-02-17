@@ -38,7 +38,7 @@ Vous pouvez sauvegarder les dossiers de contrôle en sauvegardant le système de
 >
 >cette sauvegarde est indépendante de la sauvegarde de stockage de la base de données ou des documents, de même que du processus de récupération.
 
-## Fonctionnement des dossiers de contrôle  {#how-watched-folders-work}
+## Fonctionnement des dossiers de contrôle {#how-watched-folders-work}
 
 Cette section décrit le processus de manipulation des fichiers du dossier de contrôle. Il est important de bien comprendre ce processus avant de mettre en place un plan de récupération. Dans cet exemple, l&#39;attribut `Preserve On Failure` du dossier de contrôle est activé. Les fichiers sont traités selon leur ordre d’arrivée.
 
