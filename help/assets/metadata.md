@@ -99,7 +99,7 @@ Pour personnaliser la page des propriétés de métadonnées, y compris l’ajou
    >
    >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
 
-## Importation de métadonnées   {#import-metadata}
+## Importation de métadonnées  {#import-metadata}
 
 [!DNL Assets] permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
