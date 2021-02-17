@@ -28,7 +28,7 @@ Il est important de faire la distinction entre la réindexation qui prend beauco
 
 Voir [Meilleures pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md) pour obtenir des informations supplémentaires indiquant quand et comment réindexer le contenu. 
 
-## Détection initiale  {#initial-detection}
+## Détection initiale {#initial-detection}
 
 L’indexation lente de la détection initiale nécessite de parcourir les MBeans `IndexStats` JMX. Sur l’instance AEM affectée, procédez comme suit :
 
@@ -46,7 +46,7 @@ Une fermeture forcée entraîne l’arrêt de l’indexation asynchrone par AEM 
 
 1. Tout d’abord, déterminez si une instance AEM a été arrêtée de manière forcée (le processus AEM a été interrompu de manière brutale ou une coupure de courant s’est produite), puis redémarrée. 
 
-   * [aem ](/help/sites-deploying/configure-logging.md) connexion peut être examinée à cette fin.
+   * [AEM ](/help/sites-deploying/configure-logging.md) connexion peut être examinée à cette fin.
 
 1. Si la fermeture forcée se produit, au redémarrage, AEM suspend automatiquement la réindexation pendant 30 minutes. 
 1. Attendez environ 45 minutes pour qu’AEM reprenne les opérations d’indexation asynchrones normales. 
@@ -121,7 +121,7 @@ Pour identifier et résoudre un processus de réindexation bloqué, procédez co
    * Utilisez le mode console [oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) pour collecter les détails de ce qui existe sous le noeud * `/:async`*.
    * Collectez une liste de points de contrôle du référentiel à l&#39;aide du `CheckpointManager` MBean :
 
-      * aem console Web OSGi>Main>JMX>CheckpointManager>listCheckpoints()
+      * AEM Console Web OSGi>Main>JMX>CheckpointManager>listCheckpoints()
 
          ou accédez à [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
