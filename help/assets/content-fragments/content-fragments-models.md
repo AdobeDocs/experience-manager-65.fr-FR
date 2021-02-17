@@ -20,9 +20,9 @@ ht-degree: 96%
 
 # Modèles de fragment de contenu{#content-fragment-models}
 
-Les modèles de fragment de contenu définissent la structure du contenu pour vos[ fragments de contenu](/help/assets/content-fragments/content-fragments.md).
+Les modèles de fragment de contenu définissent la structure du contenu pour vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md).
 
-## Activation des modèles de fragment de contenu    {#enable-content-fragment-models}
+## Activation des modèles de fragment de contenu   {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -31,7 +31,7 @@ Les modèles de fragment de contenu définissent la structure du contenu pour vo
 Pour activer les modèles de fragment de contenu, vous devez :
 
 * Activez l’utilisation des modèles de fragments de contenu dans le [navigateur de configuration](/help/sites-administering/configurations.md).
-* appliquer la configuration à votre dossier de ressources ;
+* appliquer la configuration à votre dossier de ressources.
 
 ### Activation des modèles de fragment de contenu dans Configuration Manager    {#enable-content-fragment-models-in-configuration-manager}
 
@@ -76,7 +76,7 @@ Pour utiliser d’autres configurations (c’est-à-dire à l’exclusion de la 
 
 1. Utilisez le bouton **Créer** pour enregistrer le modèle vide. Un message indique que l’action a réussi. Vous pouvez alors sélectionner **Ouvrir** pour publier immédiatement le modèle ou **Terminé** pour revenir à la console.
 
-## Définition de votre modèle de fragment de contenu    {#defining-your-content-fragment-model}
+## Définition de votre modèle de fragment de contenu   {#defining-your-content-fragment-model}
 
 Le modèle de fragment de contenu définit la structure des fragments de contenu qui en résultent. À l’aide de l’éditeur de modèles, vous pouvez ajouter et configurer les champs obligatoires :
 
@@ -102,7 +102,7 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 
 1. **Pour ajouter un champ**
 
-   * Faites glisser un type de données à l’emplacement souhaité pour un champ :
+   * Faites glisser un type de données à l’emplacement souhaité pour un champ:
 
    ![cfm-6420-11](assets/cfm-6420-11.png)
 
@@ -146,7 +146,7 @@ Pour supprimer un modèle de fragment de contenu :
    >[!NOTE]
    Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
 
-## Publication d’un modèle de fragment de contenu    {#publishing-a-content-fragment-model}
+## Publication d’un modèle de fragment de contenu   {#publishing-a-content-fragment-model}
 
 Les modèles de fragment de contenu doivent être publiés avant ou pendant la publication des fragments de contenu dépendants.
 
