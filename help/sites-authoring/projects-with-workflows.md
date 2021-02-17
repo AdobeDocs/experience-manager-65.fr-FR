@@ -59,7 +59,7 @@ Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-
 
 Cette section décrit les workflows disponibles pour les projets.
 
-## Workflow de demande de copie    {#request-copy-workflow}
+## Workflow de demande de copie   {#request-copy-workflow}
 
 Ce workflow vous permet de demander un manuscrit à un utilisateur, puis de l’approuver. Pour démarrer le workflow de demande de copie :
 
