@@ -42,7 +42,7 @@ Enfin, les administrateurs publient stratégiquement le contenu de l’applicati
 
 La mosaïque **Gérer l’application** affiche les informations d’application disponibles :
 
-* Title (Titre)
+* Titre
 * Description
 * Icône
 * Dernière modification
