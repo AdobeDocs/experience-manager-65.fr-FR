@@ -42,7 +42,7 @@ Cette page vous explique comment étendre les fonctionnalités de Multi Site Man
 >
 >Le Multi Site Manager et son API sont utilisés lors de la création d’un site Web. Ils sont donc destinés exclusivement à l’environnement de création.
 
-## Vue d’ensemble de l’API Java  {#overview-of-the-java-api}
+## Vue d’ensemble de l’API Java {#overview-of-the-java-api}
 
 La gestion de sites multiples comprend les modules suivants :
 
