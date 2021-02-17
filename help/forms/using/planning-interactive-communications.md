@@ -40,7 +40,7 @@ Une communication interactive comprend les éléments suivants :
 * Des **images stockées dans un référentiel**, tels que des logos et des images de signature. Les images comme les logos de l’entreprise sont présentes dans la majorité ou dans toutes les communications interactives.
 * Des **graphiques et tableaux** nécessaires pour simplifier la représentation de données complexes dans une communication interactive
 
-## Structure de la communication interactive  {#anatomy-of-the-interactive-communication}
+## Structure de la communication interactive {#anatomy-of-the-interactive-communication}
 
 Une fois que vous avez finalisé le contenu et les éléments utilisés pour créer votre communication interactive, vous pouvez créer une structure pour la communication interactive. Les informations de la structure doivent être répertoriées dans la section [Observations relatives à la planification](/help/forms/using/planning-interactive-communications.md#planning-considerations). En fonction de notre cas d’utilisation, voici un exemple de structure de facture mensuelle qu’un opérateur de télécommunications envoie à ses clients.
 
