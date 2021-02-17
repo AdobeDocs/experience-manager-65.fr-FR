@@ -20,7 +20,7 @@ ht-degree: 78%
 
 # Élaboration de rapports{#developing-reports}
 
-aem fournit une sélection de [rapports standard](/help/sites-administering/reporting.md) dont la plupart sont basés sur un cadre de rapports.
+AEM fournit une sélection de [rapports standard](/help/sites-administering/reporting.md) dont la plupart sont basés sur un cadre de rapports.
 
 Cette structure vous permet soit d’étendre ces rapports standard, soit de développer vos propres rapports en partant de zéro. La structure de création de rapports s’intègre parfaitement dans les concepts et principes CQ5 existants. Les développeurs peuvent ainsi mettre à profit leurs connaissances actuelles de la plate-forme CQ5 pour développer des rapports.
 
@@ -108,7 +108,7 @@ La page de rapport :
 * est une page CQ5 standard ;
 * est basée sur le [modèle CQ5 standard, configuré pour le rapport](#report-template).
 
-### Base de rapport  {#report-base}
+### Base de rapport {#report-base}
 
 Le [composant `reportbase`](#report-base-component) constitue la base de tout rapport, dans la mesure où il :
 
@@ -1377,7 +1377,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
 
    Cet exemple définit un modèle qui :
 
-   * définit le `allowedPaths` pour les rapports résultants ; dans le cas ci-dessus, sous `/etc/reports`
+   * définit l&#39;`allowedPaths` pour les rapports résultants ; dans le cas ci-dessus, sous `/etc/reports`
    * fournit des titres et des descriptions pour le modèle ;
    * fournit une vignette pour l’utiliser dans la liste de modèles (la définition complète de ce nœud n’est pas indiquée ci-dessus ; il est plus facile de copier une instance de thumbnail.png à partir d’un rapport existant).
 
