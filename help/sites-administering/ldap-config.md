@@ -18,7 +18,7 @@ ht-degree: 67%
 ---
 
 
-# Configuration de LDAP avec AEM 6  {#configuring-ldap-with-aem}
+# Configuration de LDAP avec AEM 6 {#configuring-ldap-with-aem}
 
 LDAP (**L** ightweight **D** irectory **A** ccess **P** rotocol) est un protocole utilisé pour accéder aux services d’annuaire centralisé. Cela permet de réduire l’effort de gestion des comptes utilisateur, car plusieurs applications peuvent accéder à ces comptes. L’un de ces serveurs LDAP est Active Directory. LDAP est souvent utilisé pour appliquer l’authentification unique, qui permet à un utilisateur d’accéder à plusieurs applications après s’être connecté une seule fois.
 
