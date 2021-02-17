@@ -93,7 +93,7 @@ Pour les applications Livefyre nécessitant une authentification, voir [Intégra
 * [Mur multimédia du PGA Tour](https://www.pgatour.com/social-hub.html)
 * [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
 
-## Intégration de Livefyre Comments à l’aide des composants AEM ou de l’intégration Livefyre classique  {#integrate-livefyre-comments-using-aem-components-or-traditional-livefyre-integration}
+## Intégration de Livefyre Comments à l’aide des composants AEM ou de l’intégration Livefyre classique {#integrate-livefyre-comments-using-aem-components-or-traditional-livefyre-integration}
 
 ### Intégration d’AEM {#aem-integration-1}
 
