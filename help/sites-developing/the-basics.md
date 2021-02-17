@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
 workflow-type: tm+mt
 source-wordcount: '3386'
-ht-degree: 76%
+ht-degree: 84%
 
 ---
 
@@ -54,19 +54,19 @@ Experience Server fournit des services Experience sur lesquels AEM est basé et 
 
 [Apache Jackrabbit](https://jackrabbit.apache.org/) est une implémentation open source entièrement conforme de l’API JCR 2.0.
 
-## Traitement de requête Sling  {#sling-request-processing}
+## Traitement de requête Sling {#sling-request-processing}
 
 ### Introduction à Sling {#introduction-to-sling}
 
-AEM repose sur [Sling ](https://sling.apache.org/site/index.html), un framework d’application web basé sur des principes REST. Il facilite le développement d’applications orientées contenu. Sling utilise un référentiel JCR, tel que Apache Jackrabbit, ou dans le cas d’AEM, le référentiel de contenu CRX, comme magasin de données. The Apache Software Foundation a contribué au développement de Sling. Plus d’informations sont disponibles sur Apache.
+AEM repose sur [Sling](https://sling.apache.org/site/index.html), un framework d’application web basé sur des principes REST. Il facilite le développement d’applications orientées contenu. Sling utilise un référentiel JCR, tel que Apache Jackrabbit, ou dans le cas d’AEM, le référentiel de contenu CRX, comme magasin de données. The Apache Software Foundation a contribué au développement de Sling. Plus d’informations sont disponibles sur Apache.
 
 Avec Sling, le type de contenu à diffuser n’est pas la première considération en matière de traitement. Il s’agit plutôt de savoir si l’URL se résout en un objet de contenu pour lequel un script peut ensuite être identifié afin d’effectuer le rendu. Les auteurs de contenu web bénéficient ainsi d’un excellent support pour créer des pages facilement personnalisables selon leurs besoins.
 
 Les avantages liés à cette flexibilité sont évidents dans les applications comportant un vaste éventail d’éléments de contenu différents ou dans les cas où des pages facilement personnalisables sont nécessaires. En particulier, lors de la mise en œuvre d’un système de gestion de contenu web comme celui de la solution AEM.
 
-Voir [Discover Sling en 15 minutes](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) pour les premières étapes du développement avec Sling.
+Voir [Découvrir Sling en 15 minutes](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) pour connaître les premières étapes de développement avec Sling.
 
-Le schéma suivant explique la résolution du script sling : il montre comment passer de la requête HTTP au nœud de contenu, du nœud de contenu au type de ressource, du type de ressource au script, ainsi que les variables de script sont disponibles.
+Le schéma suivant explique la résolution du script sling : il montre comment passer de la requête HTTP au nœud de contenu, du nœud de contenu au type de ressource, du type de ressource au script, ainsi que les variables de script disponibles.
 
 ![Présentation de la résolution du script Apache Sling](assets/sling-cheatsheet-01.png)
 
@@ -81,7 +81,7 @@ Sling est *centré sur le contenu*. Cela signifie que le traitement est axé sur
 * la première cible est la ressource (nœud JCR) contenant le contenu
 * ensuite, la représentation, ou script, est localisée à partir des propriétés de ressource en combinaison avec certaines parties de la requête (par exemple des sélecteurs et/ou l’extension)
 
-### Sling RESTful  {#restful-sling}
+### Sling RESTful {#restful-sling}
 
 En raison de son approche centrée sur le contenu, Sling implémente un serveur orienté REST et propose ainsi un nouveau concept dans les frameworks d’applications web. Les avantages sont les suivants :
 
@@ -132,9 +132,9 @@ La figure ci-dessous illustre le mécanisme (décrit plus en détail dans les se
 
 ![chlimage_1-86](assets/chlimage_1-86a.png)
 
-Avec Sling, vous spécifiez le script qui effectue le rendu d’une certaine entité (en définissant la propriété `sling:resourceType` dans le noeud JCR). Ce mécanisme offre plus de liberté que celui selon lequel le script accède aux entités de données (comme le ferait une instruction SQL dans un script PHP) puisqu’une ressource peut avoir plusieurs rendus.
+Avec Sling, vous spécifiez le script à appliquer pour le rendu d’une entité donnée (en définissant la propriété `sling:resourceType` dans le nœud JCR). Ce mécanisme offre plus de liberté que celui selon lequel le script accède aux entités de données (comme le ferait une instruction SQL dans un script PHP) puisqu’une ressource peut avoir plusieurs rendus.
 
-#### Mappage des requêtes avec les ressources  {#mapping-requests-to-resources}
+#### Mappage des requêtes avec les ressources {#mapping-requests-to-resources}
 
 La requête est décomposée et les informations nécessaires sont extraites. Une recherche de la ressource demandée (nœud de contenu) est effectuée dans le référentiel :
 
@@ -148,16 +148,16 @@ Sling permet également à des éléments autres que des nœuds JCR d’être de
 
 Lorsque la ressource appropriée (nœud de contenu) est localisée, le **type de ressource sling** est extrait. C’est un chemin qui localise le script à utiliser pour le rendu du contenu.
 
-Le chemin spécifié par `sling:resourceType` peut être :
+Le chemin spécifié par le `sling:resourceType` peut être :
 
 * absolu
 * relative, à un paramètre de configuration
 
-   Les chemins relatifs sont recommandés par l’Adobe lorsqu’ils augmentent la portabilité.
+   Les chemins relatifs sont recommandés par Adobe car ils contribuent à la portabilité.
 
 Tous les scripts Sling sont stockés dans des sous-dossiers de `/apps` ou `/libs`, qui seront recherchés dans cet ordre (voir [Personnalisation des composants et autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
-Autres points à noter sont :
+Un certain nombre d’autres points sont à noter :
 
 * si la méthode (GET, POST) est requise, elle est indiquée en majuscules selon la spécification HTTP, par ex. jobs.POST.esp (voir ci-dessous)
 * divers moteurs de script sont pris en charge :
@@ -168,7 +168,7 @@ Autres points à noter sont :
    * Compilateur Java Servlet (exécution côté serveur) : `.java`
    * Modèles JavaScript (exécution côté client) : `.jst`
 
-La liste des moteurs de script pris en charge par l&#39;instance donnée d&#39;AEM est répertoriée dans la console de gestion Felix ( `http://<host>:<port>/system/console/slingscripting`).
+La liste des moteurs de script pris en charge par l’instance donnée d’AEM figure dans la Felix Management Console (`http://<host>:<port>/system/console/slingscripting`).
 
 En outre, Apache Sling prend en charge l’intégration avec d’autres moteurs de script répandus (par exemple, Groovy, JRuby, Freemarker) et offre un moyen d’intégrer de nouveaux moteurs de script.
 
@@ -178,9 +178,9 @@ En utilisant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs`, alors
 
    Le script sera /apps/hr/jobs/jobs.esp; la dernière section de sling:resourceType forme le nom de fichier.
 
-* Requêtes de POST (tous les types de requête, à l’exclusion des GET/HEAD, le nom de la méthode doit être en majuscules)
+* Requêtes POST (tous les types de requête, à l’exclusion des GET/HEAD, le nom de la méthode doit être en majuscules)
 
-   Le POST sera utilisé dans le nom du script.
+   POST sera utilisé dans le nom du script.
 
    Le script sera `/apps/hr/jobs/jobs.POST.esp`.
 
@@ -188,7 +188,7 @@ En utilisant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs`, alors
 
    Par exemple, `../content/corporate/jobs/developer.pdf`
 
-   Le script sera `/apps/hr/jobs/jobs.pdf.esp`; le suffixe est ajouté au nom du script.
+   Le script sera `/apps/hr/jobs/jobs.pdf.esp` ; le suffixe est ajouté au nom du script.
 
 * URL avec sélecteurs
 
@@ -196,13 +196,13 @@ En utilisant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs`, alors
 
    Si nous étudions une version adaptée à l’imprimante dans laquelle le sélecteur peut être *imprimé*; comme dans `../content/corporate/jobs/developer.print.html`
 
-   Le script sera `/apps/hr/jobs/jobs.print.esp`; le sélecteur est ajouté au nom du script.
+   Le script sera `/apps/hr/jobs/jobs.print.esp` ; le sélecteur est ajouté au nom du script.
 
 * Si aucun sling:resourceType a été défini alors :
 
    * le chemin d’accès au contenu est utilisé pour rechercher un script correspondant (si ResourceTypeProvider basé sur un chemin est actif).
 
-      Par exemple, le script pour `../content/corporate/jobs/developer.html` génère une recherche dans `/apps/content/corporate/jobs/`.
+      par exemple, le script pour `../content/corporate/jobs/developer.html` génère une recherche dans `/apps/content/corporate/jobs/` ;
 
    * le type de nœud principal est utilisé.
 
@@ -216,7 +216,7 @@ En utilisant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs`, alors
 
 Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est spécifique, mieux c’est. En d’autres termes, plus le sélecteur correspond meilleur est le résultat, quelle que soit l’extension de requête ou la correspondance de nom de méthode.
 
-Par exemple, envisagez une demande d’accès à la ressource.
+Par exemple, envisagez une demande d’accès à la ressource
 `/content/corporate/jobs/developer.print.a4.html`
 de type
 `sling:resourceType="hr/jobs"`
@@ -232,14 +232,14 @@ En supposant que les scripts suivants sont présents dans l’emplacement correc
 1. `print/a4/html.esp`
 1. `print/a4.html.esp`
 
-L’ordre de préférence serait (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).
+L’ordre de préférence serait (8) – (7) – (6) – (5) – (4) – (3) – (2) – (1).
 
-En plus des types de ressources (principalement définis par la propriété `sling:resourceType`), il existe également le super type de ressource. Ceci est généralement indiqué par la propriété `sling:resourceSuperType`. Ces super types sont aussi pris en compte lors de la recherche d’un script. Les super types de ressources présentent l’avantage de former une hiérarchie de ressources où le type de ressource par défaut `sling/servlet/default` (utilisé par les servlets par défaut) est effectivement la racine.
+En plus des types de ressources (principalement définis par la propriété `sling:resourceType`), il existe également le super type de ressource. Il est généralement indiqué par la propriété `sling:resourceSuperType`. Ces super types sont aussi pris en compte lors de la recherche d’un script. Les super types de ressources présentent l’avantage de former une hiérarchie de ressources où le type de ressource par défaut `sling/servlet/default` (utilisé par les servlets par défaut) est effectivement la racine.
 
-Le super type de ressource d’une ressource peut être défini de deux manières :
+Le super type de ressource d’une ressource peut être défini de deux manières :
 
-* par la propriété `sling:resourceSuperType` de la ressource.
-* par la propriété `sling:resourceSuperType` du noeud vers lequel pointe `sling:resourceType`.
+* par la propriété `sling:resourceSuperType` de la ressource ;
+* par la propriété `sling:resourceSuperType` du nœud vers lequel pointe `sling:resourceType`.
 
 Par exemple :
 
@@ -263,14 +263,14 @@ Par exemple :
 
 
 
-Hiérarchie de types de :
+La hiérarchie de type de :
 
 * `/x`
    * sont celles du `[ c, b, a, <default>]`
 * while pour `/y`
    * la hiérarchie est `[ c, a, <default>]`
 
-Cela est dû au fait que `/y` possède la propriété `sling:resourceSuperType` alors que `/x` ne le fait pas et que, par conséquent, son supertype est extrait de son type de ressource.
+Ceci est dû au fait que `/y` possède la propriété `sling:resourceSuperType` contrairement à `/x`, et donc son super type est issu de son type de ressource.
 
 #### Les scrips Sling ne peuvent pas être appelés directement {#sling-scripts-cannot-be-called-directly}
 
@@ -285,7 +285,7 @@ Si vous appelez la représentation (le script) directement, vous masquez la ress
 
 * l’architecture du code perd de son intégrité et de sa structure qui sont primordiales dans les développements à grande échelle
 
-### API Sling  {#sling-api}
+### API Sling {#sling-api}
 
 Elle utilise le module API Sling org.apache.sling.Bibliothèques &amp;amp ; ast ; et de balises.
 
@@ -293,7 +293,7 @@ Elle utilise le module API Sling org.apache.sling.Bibliothèques &amp;amp ; ast 
 
 En dernier lieu, il faut considérer la nécessité de référencer les éléments existants dans les scripts.
 
-Des scripts plus complexes (scripts d’agrégation) peuvent avoir besoin d’accéder à plusieurs ressources (par exemple, navigation, barre latérale, pied de page, éléments d’une liste) et ce, en incluant la *ressource*.
+Des scripts plus complexes (agrégation de scripts) peuvent demander un accès à plusieurs ressources (par exemple, navigation, barre latérale, pied de page, éléments d’une liste) en ajoutant *resource*.
 
 Pour ce faire, vous pouvez utiliser la commande sling:include(&quot;/&lt;chemin>/&lt;ressource>&quot;). Cela inclut effectivement la définition de la ressource référencée, comme dans l’instruction suivante qui fait référence à une définition existante pour le rendu des images :
 
@@ -314,7 +314,7 @@ Le framework OSGi offre ensuite le chargement/déchargement dynamique, la config
 
 >[!NOTE]
 >
->Vous trouverez des informations complètes sur la technologie OSGi sur le [site Web OSGi](https://www.osgi.org).
+>Vous trouverez des informations complètes sur la technologie OSGi sur le [site web d’OSGi](https://www.osgi.org).
 >
 >En particulier, la page Basic Education (formation de base) contient un ensemble de présentations et de tutoriels.
 
@@ -322,11 +322,11 @@ Cette architecture vous permet d’étendre Sling en lui ajoutant des modules sp
 
 Cette extension permet d’appliquer les actions suivantes à l’un des modules dans votre installation :
 
-* installation
+* install
 * démarrage
 * arrêt
 * mise à jour
-* désinstallation
+* uninstall
 * voir l’état actuel
 * accéder à des informations plus détaillées (par exemple, nom symbolique, version, emplacement, etc.) pour des bundles en particulier
 
@@ -415,7 +415,7 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 >[!CAUTION]
 >
->Vous ne devez rien modifier dans le chemin `/libs`. Pour la configuration et d&#39;autres modifications, copiez l&#39;élément de `/libs` vers `/apps` et effectuez les modifications dans `/apps`.
+>Vous ne devez rien modifier dans le chemin `/libs`. Pour la configuration et d’autres modifications, copiez l’élément de `/libs` dans `/apps` et apportez des modifications dans `/apps`.
 
 * `/apps`
 
