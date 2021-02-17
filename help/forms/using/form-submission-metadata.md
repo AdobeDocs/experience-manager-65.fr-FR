@@ -27,7 +27,7 @@ Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce f
 
 Prenons un autre exemple d’un formulaire qui capture l’ID d’adresse électronique et le numéro de téléphone. Lorsqu’un utilisateur visite ce formulaire de manière anonyme et abandonne le formulaire, l’auteur peut configurer le formulaire afin que l’ID d’adresse électronique et le numéro de téléphone soient automatiquement enregistrés. Ce formulaire est enregistré automatiquement et le numéro de téléphone et l’ID d’adresse électronique sont stockés dans le nœud de métadonnées du brouillon. Un cas illustrant cette configuration est le tableau de bord de gestion des prospects.
 
-## Ajout d’éléments de formulaire aux métadonnées  {#adding-form-elements-to-metadata}
+## Ajout d’éléments de formulaire aux métadonnées {#adding-form-elements-to-metadata}
 
 Pour ajouter un élément aux métadonnées, procédez comme suit :
 
