@@ -78,7 +78,7 @@ La procédure ci-dessous utilise l’interface utilisateur optimisée pour les �
 
 1. Cliquez ou appuyez sur Créer. Dans la boîte de dialogue de confirmation, cliquez ou appuyez sur **Terminé** pour revenir à la console Sites ou sur **Ouvrir** pour ouvrir la copie de langue.
 
-## Affichage de l’état des racines de langue  {#seeing-the-status-of-language-roots}
+## Affichage de l’état des racines de langue {#seeing-the-status-of-language-roots}
 
 L’interface utilisateur optimisée pour les écrans tactiles contient un panneau Références, qui affiche une liste des racines de langue créées.
 
