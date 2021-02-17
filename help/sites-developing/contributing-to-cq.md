@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 workflow-type: tm+mt
 source-wordcount: '2726'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -68,7 +68,7 @@ REST (REpresentational State Transfer) fait référence à l’architecture logi
 
 Dans la mesure où REST offre une approche que nous suivons dans nombreux de nos projets, vous devriez vous attacher à maîtriser les principes de la conception RESTful. La dissertation de [Roy Fielding](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) est un excellent point de départ.
 
-### Résolution de requête Sling  {#sling-request-resolution}
+### Résolution de requête Sling {#sling-request-resolution}
 
 Dans AEM, il est impératif de cerner la relation entre les requêtes entrantes et le comportement du contenu et des applications, de comprendre la structure du contenu dans le référentiel de contenu et de savoir où AEM recherche la logique de l’application pour gérer la requête. Renseignez-vous sur la [décomposition d’URL Apache Sling](https://sling.apache.org/site/url-decomposition.html) et la façon dont elle applique l’approche architecturale REST et ses contraintes d’un système sans état, cachable et en couches.
 
