@@ -246,7 +246,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 * La mise à niveau échoue avec une erreur en raison des dépendances d&#39;une version spécifique du package de base `cq-wcm-api` (CQ-4300520).
 * Les valeurs par défaut des paramètres **[!UICONTROL Connect Timeout]** et **[!UICONTROL Socket Timeout]** pour la configuration de l&#39;agent par défaut (publication) ne sont pas spécifiées (NPR-33707).
 * Les mises à jour de la configuration de mappage sous `/etc/map.publish` ne sont pas répercutées sur les pages du site (NPR-34015).
-* [La ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html) documentation de référence d’API n’inclut pas la documentation du  `com.day.cq.tagging` package (CQ-4295864).
+* [La ](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html) documentation de référence d’API n’inclut pas la documentation du  `com.day.cq.tagging` package (CQ-4295864).
 
 ### Interface utilisateur {#ui-6560}
 
@@ -1307,7 +1307,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * La requête utilisée par l’interface utilisateur des modèles de fragments de contenu est très lente et entraîne éventuellement une erreur. Correctif pour CQ-4270807
 
-### IU - Fondation  {#ui-foundation}
+### IU - Fondation {#ui-foundation}
 
 * Le déclencheur de raccourcis empêche l’utilisateur d’utiliser &#39;m,&#39; &#39;p,&#39; &#39;e&#39; dans des interfaces utilisateur spécifiques. NPR-30355 : correctif pour GRANITE-26346
 * La fermeture de [!DNL Experience Manager Assets] l&#39;interface utilisateur de recherche ne réinitialise pas le rail de gauche sur la sélection Contenu, empêchant l&#39;utilisateur d&#39;ouvrir le rail de filtre la deuxième fois par la suite. NPR-30509 : correctif pour CQ-4274716
