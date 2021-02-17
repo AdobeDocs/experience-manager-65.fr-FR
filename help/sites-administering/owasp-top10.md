@@ -24,7 +24,7 @@ Le projet [Open Web Application Security Project](https://www.owasp.org) (OWASP)
 
 Ces risques sont répertoriés ci-dessous, avec une explication sur la manière dont ils sont gérés par CRX.
 
-## 1. Injection  {#injection}
+## 1. Injection {#injection}
 
 * SQL -Empêché par défaut : La configuration de référentiel par défaut ne comprend ni ne requiert de base de données traditionnelle et toutes les données sont stockées dans le référentiel de contenu. Tous les accès sont limités aux utilisateurs authentifiés et ne peuvent avoir lieu que via l’API JCR. SQL est pris en charge pour les requêtes de recherche uniquement (SELECT). SQL offre en outre une prise en charge de la valeur de liaison.
 * LDAP : L’injection LDAP est impossible, car le module d’authentification filtre l’entrée et exécute l’importation des utilisateurs à l’aide de la méthode de liaison.
