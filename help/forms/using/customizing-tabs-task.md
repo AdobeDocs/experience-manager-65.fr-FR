@@ -17,7 +17,7 @@ ht-degree: 51%
 ---
 
 
-# Personnalisation des onglets d’une tâche  {#customizing-tabs-for-a-task}
+# Personnalisation des onglets d’une tâche {#customizing-tabs-for-a-task}
 
 Vous pouvez personnaliser les noms de tabulation pour le composant `Start Process` dans la vue Uber `Start Process` et le composant `Task Details` dans la vue Uber `ToDo`.
 
