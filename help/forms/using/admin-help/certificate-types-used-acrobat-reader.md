@@ -27,7 +27,7 @@ L’afficheur de certificat fournit les informations suivantes sur le certificat
 * Période de validité
 * Droits d’utilisation des extensions d’Acrobat Reader DC
 
-## Nom « convivial » du certificat  {#certificate-friendly-name}
+## Nom « convivial » du certificat {#certificate-friendly-name}
 
 Le nom « convivial » d’un certificat des extensions d’Acrobat Reader DC est une chaîne décrivant les propriétés du certificat, comme dans l’exemple suivant :
 
