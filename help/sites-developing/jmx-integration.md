@@ -25,7 +25,7 @@ Créez et déployez des MBeans pour gérer les services à l’aide de la consol
 
 Pour plus d’informations sur l’utilisation de la console JMX, voir [Surveillance des ressources du serveur à l’aide de la console JMX ](/help/sites-administering/jmx-console.md).
 
-## Le framework JMX dans Felix et CQ5  {#the-jmx-framework-in-felix-and-cq}
+## Le framework JMX dans Felix et CQ5 {#the-jmx-framework-in-felix-and-cq}
 
 Sur la plate-forme Apache Felix, vous déployez MBeans en tant que services OSGi. Lorsqu&#39;un service MBean est enregistré dans le registre de services OSGi, le module Carte blanche Aries JMX enregistre automatiquement le MBean avec le serveur MBean. Le MBean est alors disponible pour la console JMX qui expose les attributs et opérations publics.
 
