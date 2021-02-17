@@ -37,7 +37,7 @@ Dans le cadre du processus d’intégration, configurez le flux de travaux **DAM
 >
 >Seuls des fichiers InDesign (.indd) sont utilisés comme modèles. Les fichiers possédant l’extension « .indt » ne sont pas pris en charge.
 
-## Création d’un catalogue  {#creating-a-catalog}
+## Création d’un catalogue {#creating-a-catalog}
 
 Catalog Producer utilise des données de gestion d’informations sur les produits pour mapper les propriétés d’un produit aux propriétés XML affichées dans le modèle. Pour créer un catalogue, procédez comme suit :
 
