@@ -152,7 +152,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
  </tbody>
 </table>
 
-## Définition de la taille maximale de la boîte de réception   {#setting-the-maximum-size-of-the-inbox}
+## Définition de la taille maximale de la boîte de réception  {#setting-the-maximum-size-of-the-inbox}
 
 Vous pouvez définir la taille maximale de la boîte de réception en configurant **Adobe Granite Workflow Service**, en utilisant la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [ajouter une configuration OSGi au référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Le tableau suivant décrit la propriété que vous configurez pour l’une ou l’autre méthode.
 
