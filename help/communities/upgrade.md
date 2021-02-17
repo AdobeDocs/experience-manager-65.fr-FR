@@ -107,6 +107,6 @@ Conceptuellement, il y a trois générations de composantes communautaires :
 
 **Gen 1** : D&#39;environ CQ 5.4 à AEM 5.6.0, il s&#39;agit des composants  **** collectifs qui ont stocké l&#39;UGC dans le référentiel local en utilisant la réplication comme moyen de synchroniser l&#39;UGC sur les plateformes. D’autres différences concernent l’implémentation à l’aide de Java Server Pages (JSP) ainsi que la fonction de blog consistant à créer uniquement dans l’environnement d’auteur.
 
-**Gen 2** : De AEM 5.6.1 à AEM 6.1, il s&#39;agit d&#39;un mélange de  **** composantes  **** sociales de la collabande. aem 6.0 a introduit le nouveau cadre de composants sociaux [a1/> (SCF) et AEM 6.2 a introduit un [magasin UGC commun](/help/communities/working-with-srp.md) où l&#39;UGC est accessible à l&#39;aide d&#39;un [fournisseur de ressources d&#39;enregistrement](/help/communities/srp.md) (SRP).](/help/communities/scf.md)
+**Gen 2** : De AEM 5.6.1 à AEM 6.1, il s&#39;agit d&#39;un mélange de  **** composantes  **** sociales de la collabande. AEM 6.0 a introduit le nouveau cadre de composants sociaux [a1/> (SCF) et AEM 6.2 a introduit un [magasin UGC commun](/help/communities/working-with-srp.md) où l&#39;UGC est accessible à l&#39;aide d&#39;un [fournisseur de ressources d&#39;enregistrement](/help/communities/srp.md) (SRP).](/help/communities/scf.md)
 
 **Gen 3** : À partir de la version 6.2 de l&#39;AEM, il n&#39;y a que des composants  **** sociaux, mis en oeuvre dans SCF en tant que composants Handlebars (HBS) nécessitant un choix de SRP pour UGC.
