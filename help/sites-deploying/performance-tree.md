@@ -58,7 +58,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
  <tbody>
   <tr>
    <td><strong>Étape</strong></td>
-   <td><strong>Title (Titre)</strong></td>
+   <td><strong>Titre</strong></td>
    <td><strong>Ressources</strong></td>
   </tr>
   <tr>
