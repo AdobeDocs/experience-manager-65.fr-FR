@@ -17,7 +17,7 @@ ht-degree: 85%
 ---
 
 
-# Téléchargement d’un modèle de formulaire XFA ou PDF  {#download-an-xfa-or-a-pdf-form-template}
+# Téléchargement d’un modèle de formulaire XFA ou PDF {#download-an-xfa-or-a-pdf-form-template}
 
 L’opération de téléchargement, comme son nom l’indique, permet d’exporter des formulaires du référentiel vers le système local. Associée à l’opération de transfert, elle vous permet de faire migrer des formulaires d’un référentiel vers un autre.
 
