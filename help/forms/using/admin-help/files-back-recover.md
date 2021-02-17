@@ -28,7 +28,7 @@ Considérez les points suivants concernant la sauvegarde et la récupération :
 * Si vous devez descendre les noeuds dans un environnement organisé en grappes pour la sauvegarde, veillez à ce que les noeuds secondaires soient fermés avant le noeud Principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le noeud Principal doit être rendu actif avant tout noeud secondaire.
 * Pour l’opération de restauration d’une grappe, le serveur d’applications doit être arrêté pour chaque nœud de la grappe.
 
-## Répertoire de stockage global de documents  {#global-document-storage-directory}
+## Répertoire de stockage global de documents {#global-document-storage-directory}
 
 Le répertoire de stockage global de documents est utilisé pour stocker les fichiers de longue durée utilisés dans un processus. La durée de vie de ces fichiers est destinée à couvrir un ou plusieurs lancements d’un système AEM Forms et peut être de plusieurs jours, voire de plusieurs années. Les fichiers de longue durée peuvent être des PDF, des stratégies ou des modèles de formulaires. Les fichiers de longue durée jouent un rôle capital la plupart des déploiements d’AEM. Si certains d’entre eux sont perdus ou corrompus, le serveur Forms peut devenir instable.
 
