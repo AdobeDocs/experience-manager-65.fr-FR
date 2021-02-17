@@ -44,7 +44,7 @@ Pour plus d’informations, voir [https://jakarta.apache.org/jmeter/](https://ja
 
 Il existe également une foule d’outils propriétaires conçus pour automatiser les tests et gérer les plans de test.
 
-### Suivi  {#tracking}
+### Suivi {#tracking}
 
 Les outils suivants sont faciles à obtenir. Il subsiste toutefois un problème fondamental dans tous les cas, à savoir : la disponibilité des données pour l’ensemble des membres de l’équipe du projet, tant le partenaire que le client.
 
