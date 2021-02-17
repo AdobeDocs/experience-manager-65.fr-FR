@@ -28,7 +28,7 @@ Les infrastructures d’entreprise comprennent des systèmes principaux ou des s
 
 Alors qu’un système modulaire distribué a des avantages propres, le défi consiste à intégrer et créer des associations de données dans plusieurs sources de données. L’intégration des données est essentielle au fonctionnement et à l’efficacité d’une infrastructure d’entreprise avec des sources de données distinctes connectées à des applications à des fins d’échange des données d’entreprise.
 
-## Aperçu de l’intégration de données  {#data-integration-overview}
+## Aperçu de l’intégration de données {#data-integration-overview}
 
 ![aem-forms-data-intégration](assets/aem-forms-data-integeration.png)
 
