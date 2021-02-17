@@ -78,7 +78,7 @@ Vous devez exécuter les étapes de configuration pour que les intégrations AEM
 
 1. Accéder à la configuration du service OSGI
 
-   1. aem > Outils > Opérations > Console Web
+   1. AEM > Outils > Opérations > Console Web
    1. Recherchez ***Experience Manager Mobile On-Demand Services Client (anciennement Adobe Digital Publishing Solution Client)***
 
 1. Modifier ***Client des services à la demande pour mobile Experience Manager***
@@ -99,7 +99,7 @@ Vous devez exécuter les étapes de configuration pour que les intégrations AEM
 
 1. Aller en Cloud Services
 
-   1. aem > Outils > Déploiement > [CloudServices](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). Recherchez ***Adobe Experience Manager Mobile On-Demand Services*** dans le menu déroulant.
+   1. AEM > Outils > Déploiement > [CloudServices](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). Recherchez ***Adobe Experience Manager Mobile On-Demand Services*** dans le menu déroulant.
 
 1. Sélectionnez ***Configurer maintenant*** ou ***Afficher les configurations*** et sélectionnez l&#39;icône Ajouter une nouvelle configuration.
 
