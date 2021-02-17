@@ -33,7 +33,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive dans un
 
 * Java SE Development Kit 8 ou version ultérieure
 * Apache Maven 3.3.1 ou version ultérieure
-* aem instance d’auteur
+* AEM instance d’auteur
 * [Module complémentaire AEM Forms 6.4.2 ](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) sur l’instance d’auteur
 
 ## Installer le composant de Conteneur AEM Forms SPA {#install-aem-forms-spa-container-component}
