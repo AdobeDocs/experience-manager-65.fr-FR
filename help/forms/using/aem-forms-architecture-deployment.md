@@ -18,7 +18,7 @@ ht-degree: 41%
 ---
 
 
-# Topologies d’architecture et de déploiement pour AEM Forms  {#architecture-and-deployment-topologies-for-aem-forms}
+# Topologies d’architecture et de déploiement pour AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## Architecture {#architecture}
 
@@ -85,7 +85,7 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 Une instance de traitement est configurée pour s’exécuter en mode d’exécution Auteur, car :
 
 * Elle active la réplication inverse des données de formulaire brutes d’une instance de publication. Le gestionnaire d&#39;enregistrement de données par défaut requiert la fonction de réplication inverse.
-* aem Workflows, qui constituent le Principal moyen de traiter les données de formulaire brutes provenant d’une instance de publication, sont recommandés pour s’exécuter sur un système de style auteur.
+* AEM Workflows, qui constituent le Principal moyen de traiter les données de formulaire brutes provenant d’une instance de publication, sont recommandés pour s’exécuter sur un système de style auteur.
 
 ## Exemples de topologies physiques pour AEM Forms on JEE {#sample-physical-topologies-for-aem-forms-on-jee}
 
@@ -122,7 +122,7 @@ Vous pouvez apporter les modifications/personnalisations suivantes à la topolog
 * L’utilisation d’Workspace HTML et d’une application AEM Forms requiert un auteur AEM ou une instance de traitement. Vous pouvez utiliser l’instance de création AEM intégrée au serveur AEM Forms on JEE au lieu de configurer un serveur de création AEM externe supplémentaire.
 * Une instance d’auteur ou de traitement AEM n’est requise que pour les workflows orientés Forms sur OSGi, les formulaires adaptatifs, le portail de formulaires et les communications interactives.
 * l&#39;interface utilisateur de l&#39;agent de communication interactive est généralement exécutée au sein de l&#39;entreprise. Ainsi, vous pouvez conserver un serveur de publication pour l’interface utilisateur de l’agent dans le réseau privé.
-* aem formulaires sur une instance OSGi intégrée au serveur AEM Forms on JEE peuvent également exécuter des workflows centrés sur Forms sur OSGi et les dossiers de contrôle.
+* AEM formulaires sur une instance OSGi intégrée au serveur AEM Forms on JEE peuvent également exécuter des workflows centrés sur Forms sur OSGi et les dossiers de contrôle.
 
 ## Exemples de topologies physiques pour AEM Forms on OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}
 
