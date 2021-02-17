@@ -26,7 +26,7 @@ Utilisez xgettext-maven-plugin pour extraire de votre code source les chaînes q
 * Fichiers sources JavaScript
 * Représentations XML de ressources SVN (nœuds JCR)
 
-## Configuration de l’extraction de chaînes  {#configuring-string-extraction}
+## Configuration de l’extraction de chaînes {#configuring-string-extraction}
 
 Configurez la manière dont l’outil xgettext-maven-plugin extrait des chaînes pour votre projet.
 
