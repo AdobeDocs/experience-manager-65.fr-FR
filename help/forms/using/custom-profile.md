@@ -17,7 +17,7 @@ ht-degree: 62%
 ---
 
 
-# Création d’un profil personnalisé pour HTML5 forms  {#creating-a-custom-profile-for-html-forms}
+# Création d’un profil personnalisé pour HTML5 forms {#creating-a-custom-profile-for-html-forms}
 
 Un profil est un noeud de ressources dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu HTML5 forms pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. Un noeud de profil existe dans le dossier `/content` du référentiel JCR. Vous pouvez placer le noeud directement sous le dossier `/content` ou tout sous-dossier du dossier `/content`.
 
