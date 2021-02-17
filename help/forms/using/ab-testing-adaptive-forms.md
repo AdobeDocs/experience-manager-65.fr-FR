@@ -28,7 +28,7 @@ AEM Forms s’intègre à Adobe Target, une solution Adobe Marketing Cloud qui 
 
 Avec AEM Forms, vous pouvez configurer et exécuter des tests A/B sur des formulaires adaptatifs en temps réel. Le module propose également des fonctionnalités personnalisables de rapport et prêtes à l’emploi afin de visualiser les performances de vos expériences de formulaire en temps réel et d’identifier celle qui optimise l’engagement et la conversion de l’utilisateur.
 
-## Installation et intégration de Target dans AEM Forms  {#set-up-and-integrate-target-in-aem-forms}
+## Installation et intégration de Target dans AEM Forms {#set-up-and-integrate-target-in-aem-forms}
 
 Avant de commencer à créer et analyser les tests A/B pour les formulaires adaptatifs, vous devez installer votre serveur Target et l’intégrer à AEM Forms.
 
