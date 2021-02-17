@@ -56,7 +56,7 @@ En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propri
 >
 >Lors de la création de votre site, vous devez déterminer à quel niveau général il doit se conformer.
 
-## L’accessibilité chez Adobe    {#accessibility-at-adobe}
+## L’accessibilité chez Adobe   {#accessibility-at-adobe}
 
 Pour plus d’informations, consultez le [Centre de ressources sur l’accessibilité Adobe](https://www.adobe.com/accessibility/).
 
