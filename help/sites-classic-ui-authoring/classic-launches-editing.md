@@ -37,7 +37,7 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
    >
    >Vous pouvez utiliser l’onglet **Page** du sidekick pour effectuer des actions telles que **Créer une page enfant**, entre autres. 
 
-## Modification d’une configuration de lancement    {#editing-a-launch-configuration}
+## Modification d’une configuration de lancement {#editing-a-launch-configuration}
 
 Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vous pouvez également indiquer une image à associer au lancement.
 
@@ -58,7 +58,7 @@ Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vou
 
 1. Cliquez sur **Enregistrer**.
 
-## Identification de l’état de lancement d’une page    {#discovering-the-launch-status-of-a-page}
+## Identification de l’état de lancement d’une page  {#discovering-the-launch-status-of-a-page}
 
 Lorsque vous modifiez le lancement d’une page, les informations sur le lancement s’affichent au bas de l’onglet **Création de versions** du sidekick :
 
