@@ -35,7 +35,7 @@ Reportez-vous à la section [Création de formulaires Adobe Campaign dans AEM](
 >
 >Avant de pouvoir utiliser cette fonctionnalité, vous devez configurer AEM de manière à l’intégrer à [Adobe Campaign](/help/sites-administering/campaignonpremise.md) ou à [Adobe Campaign Standard](/help/sites-administering/campaignstandard.md).
 
-## Envoi du contenu d’un courrier électronique via Adobe Campaign  {#sending-email-content-via-adobe-campaign}
+## Envoi du contenu d’un courrier électronique via Adobe Campaign {#sending-email-content-via-adobe-campaign}
 
 Une fois que vous avez configuré AEM et Adobe Campaign, vous pouvez créer du contenu à diffuser par courrier électronique directement dans AEM, puis le traiter dans Adobe Campaign.
 
@@ -56,7 +56,7 @@ Ce document contient des instructions détaillées.
 
 #### Création de contenu de courrier électronique {#creating-new-email-content-1}
 
-1. Dans AEM sélectionnez **Sites** puis **Campagnes**, puis accédez à l&#39;emplacement où vos campagnes par courrier électronique sont gérées. Dans l’exemple suivant, le chemin d’accès est **Sites** > **Campagnes** > **Geometrixx Outdoors** > **Campagnes par courriel**.
+1. Dans AEM sélectionnez **Sites**, puis **Campagnes**, puis accédez à l&#39;emplacement où vos campagnes par courrier électronique sont gérées. Dans l’exemple suivant, le chemin d’accès est **Sites** > **Campagnes** > **Geometrixx Outdoors** > **Campagnes par courriel**.
 
    >[!NOTE]
    >
