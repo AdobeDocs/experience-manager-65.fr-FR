@@ -1,6 +1,6 @@
 ---
-title: 'Personnalisation '
-seo-title: 'Personnalisation '
+title: Personnalisation
+seo-title: Personnalisation
 description: En savoir plus sur la personnalisation dans AEM.
 seo-description: En savoir plus sur la personnalisation dans AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
@@ -18,7 +18,7 @@ ht-degree: 72%
 ---
 
 
-# Personnalisation   {#personalization}
+# Personnalisation {#personalization}
 
 ## Qu’est-ce que la personnalisation ? {#what-is-personalization}
 
