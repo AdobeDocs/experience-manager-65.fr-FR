@@ -56,7 +56,7 @@ Cela signifie que le développeur front-end peut ajouter du contenu client avant
 
 ### Rendu dynamique {#dynamic-rendering}
 
-La SPA ne devrait reposer que sur le rendu dynamique de contenu. Il s’agit du comportement par défaut attendu lorsqu’AEM récupère tous les enfants de la structure de contenu et en effectue le rendu.  [](/help/sites-developing/spa-architecture.md#portability)
+La SPA ne devrait reposer que sur le rendu dynamique de contenu. Il s’agit du comportement par défaut attendu lorsqu’AEM récupère tous les enfants de la structure de contenu et en effectue le rendu. [](/help/sites-developing/spa-architecture.md#portability)
 
 Tout rendu explicite pointant vers un contenu spécifique est considéré comme un rendu statique. Bien qu’il soit pris en charge, il ne sera pas compatible avec les fonctionnalités de création de contenu d’AEM. Cela va aussi à l’encontre du principe de [portabilité](/help/sites-developing/spa-architecture.md#portability).
 
