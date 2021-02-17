@@ -59,7 +59,7 @@ L’API suivante recherche les instances de lettre en fonction de l’objet de l
  </tbody>
 </table>
 
-#### Exemple 1 : récupérer toutes les instances de lettre de type ENVOYEE  {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Exemple 1 : récupérer toutes les instances de lettre de type ENVOYEE {#example-fetch-all-the-letter-instances-of-type-submitted}
 
 Le code suivant renvoie la liste des instances de lettre envoyées. Pour obtenir uniquement des brouillons, remplacez `LetterInstanceType.COMPLETE.name()` par `LetterInstanceType.DRAFT.name().`.
 
