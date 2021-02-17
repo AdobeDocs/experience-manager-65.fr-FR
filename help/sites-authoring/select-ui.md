@@ -58,7 +58,7 @@ Un administrateur système peut configurer l’IU qui s’affiche au démarrage 
 
 Les paramètres par défaut de l’utilisateur ou les paramètres de la session peuvent remplacer ce comportement.
 
-## Définition de l’IU de création classique pour votre compte  {#setting-classic-ui-authoring-for-your-account}
+## Définition de l’IU de création classique pour votre compte {#setting-classic-ui-authoring-for-your-account}
 
 Chaque utilisateur peut accéder à ses [préférences utilisateur](/help/sites-authoring/user-properties.md#userpreferences) pour définir s’il souhaite utiliser l’IU classique pour la création de pages (au lieu de l’IU par défaut).
 
