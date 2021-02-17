@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '1080'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -29,7 +29,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 >
 >Seuls les administrateurs d’[!DNL Experience Manager] et d’[!DNL Admin Console] d’une entreprise peuvent procéder à l’intégration, dans la mesure où elle requiert des privilèges d’administrateur.
 
-### Création d’une configuration d’IMS   {#create-an-ims-configuration}
+### Création d’une configuration d’IMS {#create-an-ims-configuration}
 
 1. Dans l’interface utilisateur [!DNL Experience Manager], naviguez jusqu’à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
@@ -122,7 +122,7 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 >[!MORELIKETHIS]
 >
->* [Didacticiel vidéo sur l’ [!DNL Adobe Stock] utilisation de ressources avec [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Didacticiel vidéo sur l’ [!DNL Adobe Stock] utilisation de ressources avec [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
 >* [[!DNL Adobe Stock] aide du plan d&#39;entreprise](https://helpx.adobe.com/fr/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/fr/stock/faq.html)
 
