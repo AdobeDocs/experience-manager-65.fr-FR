@@ -46,7 +46,7 @@ Vous pouvez exécuter les tâches suivantes dans la page Opérations bloquées o
 * Sélectionner une erreur pour afficher des informations détaillées sur cette erreur. Si vous sélectionnez une erreur, la page Détails d’erreur s’affiche.
 * Arrêter ou essayer de relancer les opérations bloquées ou essayer de relancer les branches bloquées.
 
-## Arrêt ou nouvelle tentative d’opérations ou de branches bloquées  {#terminating-or-retrying-stalled-operations-or-branches}
+## Arrêt ou nouvelle tentative d’opérations ou de branches bloquées {#terminating-or-retrying-stalled-operations-or-branches}
 
 Dans la page Opérations bloquées, vous pouvez arrêter les instances de processus affichées.
 
