@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 workflow-type: tm+mt
 source-wordcount: '2323'
-ht-degree: 59%
+ht-degree: 62%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 59%
 ## Général {#general}
 
 * [root](#root)
-* Groupe [](#group)
+* [groupe](#group)
 * [orderby](#orderby)
 
 ## Prédicats {#predicates}
@@ -51,7 +51,7 @@ ht-degree: 59%
 * [tagsearch](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
 * [type](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
-### boolproperty  {#boolproperty}
+### boolproperty {#boolproperty}
 
 Correspond aux propriétés JCR BOOLEAN. Accepte uniquement les valeurs &quot; `true`&quot; et &quot; `false`&quot;. En cas de valeur « `false` », il correspond si la valeur de la propriété est « `false` » ou si la propriété n’existe pas. Cela peut s’avérer utile pour rechercher des indicateurs booléens qui sont définis uniquement lorsqu’ils sont activés.
 
@@ -103,8 +103,8 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d�
 
 ### daterange {#daterange}
 
-Fait correspondre les propriétés JCR DATE par rapport à un intervalle de date/heure. Cette méthode utilise la norme ISO8601.
-format pour les dates et les heures ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) et permet également des représentations partielles, comme `YYYY-MM-DD`. L’horodatage peut également être fourni sous la forme d’un nombre de millisecondes écoulées depuis 1970 dans le fuseau horaire UTC (format d’heure UNIX).
+Fait correspondre les propriétés JCR DATE par rapport à un intervalle de date/heure. Il utilise le format ISO8601
+pour les dates et heures (`YYYY-MM-DDTHH:mm:ss.SSSZ`) et autorise les représentations partielles, comme `YYYY-MM-DD`. L’horodatage peut également être fourni sous la forme d’un nombre de millisecondes écoulées depuis 1970 dans le fuseau horaire UTC (format d’heure UNIX).
 
 Vous pouvez rechercher tout ce qui se trouve entre deux horodatages, un élément plus récent ou plus ancien qu’une date donnée, et également choisir entre des intervalles inclusifs et ouverts.
 
@@ -138,7 +138,7 @@ Ne prend pas en charge le filtrage.
 
    ID du fuseau horaire à utiliser lorsqu’il n’est pas indiqué sous la forme d’une chaîne de date ISO-8601. La valeur par défaut est le fuseau horaire par défaut du système.
 
-### excludepaths  {#excludepaths}
+### excludepaths {#excludepaths}
 
 Exclut des nœuds du résultat lorsque leur chemin d’accès correspond à une expression régulière.
 
@@ -170,7 +170,7 @@ Ne prend pas en charge l’extraction de facettes.
 
    Chemin d’accès relatif devant faire l’objet d’une recherche dans la propriété ou le sous-nœud. Cette propriété est facultative.
 
-### Groupe {#group}
+### groupe {#group}
 
 Permet de créer des conditions imbriquées. Les groupes peuvent contenir des groupes imbriqués. Tout le contenu d’une requête Query Builder se trouve implicitement dans un groupe racine qui peut également posséder des paramètres `p.or` et `p.not`.
 
@@ -184,7 +184,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-Il s’agit de `(1_property` OU `2_property)` conceptuellement.
+D’un point de vue conceptuel, il s’agit de `(1_property`OR `2_property)`.
 
 Exemple pour les groupes imbriqués :
 
@@ -199,7 +199,7 @@ group.2_group.type=dam:Asset
 
 Cela recherche le terme &quot;**Gestion**&quot; dans les pages de `/content/geometrixx/en` ou dans les ressources de `/content/dam/geometrixx`.
 
-Il s&#39;agit de `fulltext AND ( (path AND type) OR (path AND type) )` conceptuellement. Pour des jointures OR de ce type, de bons index sont requis pour garantir les performances.
+Il s’agit conceptuellement de `fulltext AND ( (path AND type) OR (path AND type) )`. Pour des jointures OR de ce type, de bons index sont requis pour garantir les performances.
 
 #### Propriétés {#properties-6}
 
@@ -261,7 +261,7 @@ Prend en charge l’extraction de facettes. Fournit 2 buckets pour les ressourc
 
 ### memberOf {#memberof}
 
-Recherche les éléments qui sont membres d’une [collection de ressources Sling](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
+Recherche les éléments qui sont membres d’une [collection de ressources Sling](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche. Ne prend pas en charge l’extraction de facettes.
 
@@ -303,7 +303,7 @@ Prend en charge l’extraction de facettes de la même manière que le prédicat
 
 ### orderby {#orderby}
 
-Permet de trier les résultats. Si l’ordre par plusieurs propriétés est requis, ce préfixe doit être ajouté plusieurs fois à l’aide du préfixe de nombre, tel que `1_orderby=first`, `2_oderby=second`.
+Permet de trier les résultats. Si un classement basé sur plusieurs propriétés est requis, ce prédicat doit être ajouté plusieurs fois à l’aide du préfixe numérique, tel que `1_orderby=first`, `2_oderby=second`.
 
 #### Propriétés {#properties-13}
 
@@ -377,7 +377,7 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque vale
 
 ### rangeproperty {#rangeproperty}
 
-Fait correspondre une propriété JCR par rapport à un intervalle de temps. Cela s’applique aux propriétés de types linéaires tels que `LONG`, `DOUBLE` et `DECIMAL`. Pour `DATE`, reportez-vous au prédicat daterange qui présente une entrée de format de date optimisée.
+Fait correspondre une propriété JCR par rapport à un intervalle de temps. Ce prédicat s’applique à des propriétés de type linéaire telles que `LONG`, `DOUBLE` et `DECIMAL`. Pour `DATE`, reportez-vous au prédicat daterange qui présente une entrée de format de date optimisée.
 
 Vous pouvez définir une limite inférieure et une limite supérieure ou seulement l’une des deux. L’opération (par exemple, « inférieur à » ou « inférieur ou égal à ») peut également être spécifiée séparément pour la limite inférieure et la limite supérieure.
 
@@ -483,7 +483,7 @@ Inclut tous les prédicats d’une requête Query Builder persistante dans la r
 
 Notez que ce prédicat n’exécute pas une requête supplémentaire, mais étend la requête en cours.
 
-Les requêtes peuvent être conservées par programmation à l&#39;aide de `QueryBuilder#storeQuery()`. Ce format peut être soit une propriété String multiligne, soit un nœud `nt:file` contenant la requête en tant que fichier texte au format des propriétés Java.
+Les requêtes peuvent être conservées par programmation à l’aide de `QueryBuilder#storeQuery()`. Ce format peut être soit une propriété String multiligne, soit un nœud `nt:file` contenant la requête en tant que fichier texte au format des propriétés Java.
 
 Ne prend pas en charge l’extraction de facettes pour les prédicats de la requête enregistrée.
 
