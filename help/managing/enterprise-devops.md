@@ -65,7 +65,7 @@ Selon l’échelle de votre système, l’environnement de développement peut c
 
 Cet environnement est utilisé par l&#39;équipe d&#39;assurance de la qualité pour [tester](/help/sites-developing/test-plan.md) votre nouveau système de manière exhaustive; conception et fonction. Il devrait comprendre des environnements de création et de publication, avec le contenu approprié, et fournir tous les services nécessaires pour réaliser une suite complète de tests.
 
-### Évaluation   {#staging}
+### Évaluation  {#staging}
 
 L’environnement intermédiaire doit être un miroir de l’environnement de production, en matière de configuration, de code et de contenu :
 
