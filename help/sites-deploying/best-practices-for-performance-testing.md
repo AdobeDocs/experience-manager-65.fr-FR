@@ -26,7 +26,7 @@ Les tests de performance constituent une partie importante de tout déploiement 
 
 Cette documentation présente les stratégies et méthodologies globales d’exécution des tests de performance ainsi que certains des outils mis à disposition par Adobe pour faciliter le processus. Enfin, nous analyserons certains des outils disponibles dans AEM 6 pour faciliter le réglage des performances, à la fois du point de vue de l’analyse du code et de la configuration du système.
 
-### Simulation de la réalité  {#simulating-reality}
+### Simulation de la réalité {#simulating-reality}
 
 Le plus important lorsque vous effectuez des tests de performance, c’est de vous assurer que vous simulez un environnement de production le plus fidèlement possible. Même si c’est souvent difficile de le faire, il est impératif de garantir la précision de ces tests. Lorsque vous concevez des tests de performance, il est important de prendre en compte les points suivants :
 
@@ -50,7 +50,7 @@ De nombreux problèmes de performances ne sont pas visibles tant que le système
 
 Avant de commencer les tests de performance, il est nécessaire de définir des exigences non fonctionnelles afin de spécifier la charge et les temps de réponse. Si vous migrez à partir d’un système existant, assurez-vous que le temps de réponse est similaire à vos valeurs de production actuelles. Pour la charge, il est préférable d’utiliser la charge de pointe actuelle et de la doubler. Cela permet au site web de continuer à être performant à mesure qu’il se développe.
 
-### Outils  {#tools}
+### Outils {#tools}
 
 De nombreux outils de test de performance sont proposés sur le marché. Lors de l’exécution d’un outil de génération de charge, il est important de s’assurer que les ordinateurs qui effectuent les tests disposent d’une bande passante réseau suffisante. À défaut, une fois que la machine de test atteint les limites de sa connexion, aucune charge supplémentaire n’est générée sur l’environnement testé.
 
