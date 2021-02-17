@@ -17,7 +17,7 @@ ht-degree: 94%
 ---
 
 
-# Suppression des formulaires et des ressources associées  {#deleting-forms-and-related-resources}
+# Suppression des formulaires et des ressources associées {#deleting-forms-and-related-resources}
 
 Vous pouvez supprimer des formulaires et des ressources pour supprimer ces dernières du référentiel. L’opération de suppression fonctionne pour tous les types de ressources et les dossiers.
 
