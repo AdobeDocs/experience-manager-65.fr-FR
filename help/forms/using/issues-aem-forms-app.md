@@ -42,7 +42,7 @@ L’application AEM Forms pour iOS configurée pour se synchroniser avec AEM For
 
 1. Cliquez sur **Enregistrer**.
 
-## Les brouillons de formulaires HTML5 envoyés par les utilisateurs de l’espace de travail ne sont pas visibles sur le portail  {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
+## Les brouillons de formulaires HTML5 envoyés par les utilisateurs de l’espace de travail ne sont pas visibles sur le portail {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
 Pour les formulaires HTML5 activés dans l’application AEM Forms avec le Profil de rendu HTML **Enregistrer en tant que brouillon**, les brouillons enregistrés ne sont pas visibles pour les utilisateurs de l’espace de travail. Pour vue des brouillons enregistrés de formulaires HTML5 envoyés par les utilisateurs de l’espace de travail sur le portail, effectuez les étapes suivantes :
 
