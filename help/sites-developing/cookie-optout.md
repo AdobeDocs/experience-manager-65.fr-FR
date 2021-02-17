@@ -20,14 +20,14 @@ ht-degree: 81%
 
 # Configuration de l’utilisation de cookies{#configuring-cookie-usage}
 
-aem fournit un service qui vous permet de configurer et de contrôler l’utilisation des cookies dans vos pages Web :
+AEM fournit un service qui vous permet de configurer et de contrôler l’utilisation des cookies dans vos pages Web :
 
 * Un service configurable côté serveur conserve la liste des cookies qui peuvent être utilisés.
 * Une API JavaScript permet à votre code JavaScript de vérifier qu’un cookie peut être utilisé.
 
 Utilisez cette fonctionnalité pour vous assurer que vos pages respectent l’autorisation des utilisateurs concernant l’utilisation des cookies.
 
-## Configuration des cookies autorisés  {#configuring-allowed-cookies}
+## Configuration des cookies autorisés {#configuring-allowed-cookies}
 
 Configuration du service d’exclusion d’Adobe Granite pour indiquer la façon dont les cookies sont utilisés sur vos pages web. Le tableau suivant décrit les propriétés que vous pouvez configurer.
 
