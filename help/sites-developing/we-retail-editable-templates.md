@@ -24,7 +24,7 @@ Grâce aux modèles modifiables, les tâches de création et de gestion des mod�
 
 Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles.
 
-## Test  {#trying-it-out}
+## Test {#trying-it-out}
 
 1. Modifiez la page Équipement de la branche principale de langue.
 
@@ -54,7 +54,7 @@ Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet 
 
 1. De retour dans l’éditeur de modèles, vous pouvez modifier la stratégie du composant de texte dans le conteneur de mises en page.
 
-   Ce permet d’effectuer les opérations suivantes :
+   Vous avez ainsi la possibilité d’effectuer les opérations suivantes :
 
    * Sélectionner une stratégie existante ou en créer une nouvelle pour le conteneur.
    * Définir les fonctionnalités dont dispose le créateur de la page lorsqu’il utilise ce composant :
