@@ -94,7 +94,7 @@ Pour vous familiariser avec les rôles et responsabilités des développeurs, vo
 
 ## Auteur AEM {#aem-author}
 
-Un ***auteur AEM* (ou *Marketer*)**utilise les modèles et composants développés ou prêts à l’emploi personnalisés pour ajouter et modifier des pages, faire glisser des composants et ajouter des supports de tous types à partir du module DAM, y compris des images, des vidéos et des fragments de texte (fragments de contenu). aem éditeur de contenu intégré est ensuite utilisé par *les auteurs AEM* pour créer des expériences riches et pertinentes au sein de l’application, y compris l’intégration au reste du Adobe Marketing Cloud.
+Un ***auteur AEM* (ou *Marketer*)**utilise les modèles et composants développés ou prêts à l’emploi personnalisés pour ajouter et modifier des pages, faire glisser des composants et ajouter des supports de tous types à partir du module DAM, y compris des images, des vidéos et des fragments de texte (fragments de contenu). AEM éditeur de contenu intégré est ensuite utilisé par *les auteurs AEM* pour créer des expériences riches et pertinentes au sein de l’application, y compris l’intégration au reste du Adobe Marketing Cloud.
 
 Un auteur AEM doit comprendre les rubriques suivantes, lors de la création d’une application à l’aide de AEM Mobile On-demand Services :
 
