@@ -54,7 +54,7 @@ La création de prédicats personnalisés nécessite des connaissances de base s
 
 La pratique recommandée consiste à copier un prédicat existant, puis à le modifier. Des exemples de prédicats sont disponibles dans le répertoire **/libs/cq/search/components/predicates**.
 
-### Exemple : création d’un prédicat de propriété simple    {#example-build-a-simple-property-predicate}
+### Exemple : création d’un prédicat de propriété simple   {#example-build-a-simple-property-predicate}
 
 Pour créer un prédicat de propriété, procédez comme suit :
 
