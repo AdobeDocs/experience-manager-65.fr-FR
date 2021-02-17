@@ -76,7 +76,7 @@ Diverses améliorations ont été apportées à l’interface utilisateur pour l
 
 * La mise à niveau directe sur place vers AEM 6.5 est prise en charge pour les clients exécutant AEM 6.2, 6.3 et 6.4. Les clients utilisant les versions 5.x ou 6.0/6.1 qui souhaitent utiliser une mise à niveau sur place doivent tout d’abord passer à la version 6.4, puis à la version 6.5, ou à la mise à niveau via le transfert du contenu entre les instances directement vers AEM 6.5.
 
-#### Projets et workflows  {#projects-and-workflows}
+#### Projets et workflows {#projects-and-workflows}
 
 * Le nouvel éditeur de modèle de workflow ajouté à la version 6.4 a été amélioré afin d’inclure davantage d’opérations telles que la copie et la publication, la prise en charge des variables dans les étapes de workflow et les divisions OR et AND améliorées.
 
@@ -132,7 +132,7 @@ AEM 6.5 propose les fonctionnalités et améliorations suivantes pour accroîtr
 
 #### Intégration avec Adobe Creative Cloud  {#integration-with-adobe-creative-cloud}
 
-L’ajout d’[Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html), expérience intégrée pour les créatifs utilisant les applications Adobe Creative Cloud, notamment Photoshop, Illustrator et InDesign, simplifie la collaboration entre créatifs et marketeurs dans le processus de création de contenu. aem application de bureau continue de prendre en charge les besoins des utilisateurs qui utilisent des ressources d’AEM sur leur bureau, en utilisant n’importe quel type de fichier et n’importe quelle application de bureau.
+L’ajout d’[Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html), expérience intégrée pour les créatifs utilisant les applications Adobe Creative Cloud, notamment Photoshop, Illustrator et InDesign, simplifie la collaboration entre créatifs et marketeurs dans le processus de création de contenu. AEM application de bureau continue de prendre en charge les besoins des utilisateurs qui utilisent des ressources d’AEM sur leur bureau, en utilisant n’importe quel type de fichier et n’importe quelle application de bureau.
 
 De plus, AEM s’intègre à Adobe Stock pour vous aider à rechercher, prévisualiser, concéder sous licence et enregistrer des ressources Adobe Stock directement à partir de l’interface utilisateur web d’AEM.
 
