@@ -32,7 +32,7 @@ Concevez vos filtres de sorte à pouvoir utiliser des combinaisons pour définir
 
 Après avoir créé un filtre, vous pouvez l’utiliser dans la [configuration du groupe](/help/sites-developing/mobile.md#creating-a-device-group).
 
-## La classe Java de filtre  {#the-filter-java-class}
+## La classe Java de filtre {#the-filter-java-class}
 
 Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Une fois déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupes d’appareils.
 
