@@ -30,7 +30,7 @@ Vous devez créer une conception pour votre site web et dans AEM. Pour ce faire,
 >
 >Pour plus d’informations sur l’accessibilité web, voir [AEM et les instructions pour l’accessibilité web](/help/managing/web-accessibility.md).
 
-## Utilisation de Designer  {#using-the-designer}
+## Utilisation de Designer {#using-the-designer}
 
 Votre conception peut être définie dans la section **designs** de l&#39;onglet **Outils** :
 
