@@ -89,6 +89,6 @@ Pour les informations administratives :
 
 Pour les informations de développement :
 
-* [Infrastructure de balisage AEM](../../help/sites-developing/framework.md)
+* [Cadre de balisage AEM](../../help/sites-developing/framework.md)
 * [Notions fondamentales sur le balisage](tag.md)
 
