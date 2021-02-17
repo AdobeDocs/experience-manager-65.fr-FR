@@ -24,7 +24,7 @@ Les listes de contrôle de projet sont conçues comme un ensemble de meilleures 
 
 Il existe des listes de contrôle pour chaque personnage (rôle) impliqué dans votre projet. Elles répertorient les éléments livrables, classés par phase et jalon. Elles indiquent également les documents requis pour générer les éléments livrables. En suivant l’état et la qualité de vos documents, vous pouvez contrôler l’état du projet dans son ensemble, ce qui garantit transparence et responsabilisation.
 
-## Téléchargement {#download}
+## Télécharger {#download}
 
 Liste de contrôle des bonnes pratiques AEM Project v2
 
@@ -44,7 +44,7 @@ Les feuilles de calcul suivantes sont fournies :
    * Le [glossaire](/help/managing/best-practices-glossary.md) est également disponible dans le cadre de la documentation.
 * **[Définition des personnages](/help/managing/best-practices.md#persona)**
 
-## Utilisation des listes de contrôle  {#using-the-checklists}
+## Utilisation des listes de contrôle {#using-the-checklists}
 
 Pour livrer un projet de grande qualité, vous devez suivre tous les éléments affichés dans les listes de contrôle, de préférence dans l’ordre :
 
