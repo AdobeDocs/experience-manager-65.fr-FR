@@ -47,7 +47,7 @@ Ce document décrit les notions fondamentales de la création de newsletters dan
 >
 >Si vous mettez à jour vos fournisseurs de messagerie, que vous effectuez un test envoi ou que vous envoyez une newsletter, ces opérations échouent si la newsletter n’est pas au préalable publiée sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit activée.
 
-## Création d’une expérience Newsletter  {#creating-a-newsletter-experience}
+## Création d’une expérience Newsletter {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
