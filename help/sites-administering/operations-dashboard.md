@@ -210,7 +210,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
     <ul>
      <li>renvoie l’état Avertir si l’une des limites est égale ou supérieure à la valeur <code>Integer.MAX_VALUE</code></li>
      <li>« Avertissement » si l’une des limites est inférieure à 10 000 (paramètre recommandé d’Oak) ;</li>
-     <li>renvoie l'état Critique si l'élément <code>QueryEngineSettings</code> ou l'une des limites ne peut pas être récupéré</li>
+     <li>renvoie l'état Critique si <code>QueryEngineSettings</code> ou l'une des limites ne peut pas être récupérée</li>
     </ul> <p>Le Mbean pour cette vérification d'intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.health-check:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -325,7 +325,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
  </tbody>
 </table>
 
-## Surveillance à l’aide de Nagios  {#monitoring-with-nagios}
+## Surveillance à l’aide de Nagios {#monitoring-with-nagios}
 
 Le tableau de bord des contrôles de l’intégrité peut être intégré à Nagios par le biais des MBeans JMX Granite. L’exemple ci-dessous indique comment ajouter un contrôle qui affiche la mémoire utilisée sur le serveur qui exécute AEM.
 
@@ -697,7 +697,7 @@ Le **Tableau de bord d&#39;aperçu du système** présente un aperçu général 
 
 >[!NOTE]
 >
->Vous pouvez également [regarder cette vidéo](https://video.tv.adobe.com/v/21340?captions=fre_fr) pour découvrir le Tableau de bord d&#39;aperçu du système.
+>Vous pouvez également [regarder cette vidéo](https://video.tv.adobe.com/v/21340) pour découvrir le Tableau de bord d&#39;aperçu du système.
 
 ### Accès {#how-to-access}
 
