@@ -108,7 +108,7 @@ Les deux méthodes suivantes fonctionnent pour les ressources et les dossiers :
 >
 >Pour vérifier l’état de quelques copies dynamiques distinctes, utilisez la première méthode répertoriée dans la page Propriétés. Pour vérifier les états de plusieurs copies dynamiques, utilisez la deuxième méthode, à savoir, consulter la page **[!UICONTROL État de la relation]**.
 
-### Informations et état d’une Live Copy     {#statuslcasset}
+### Informations et état d’une Live Copy    {#statuslcasset}
 
 Pour vérifier les informations et les états d’une ressource ou d’un dossier de Live Copy, procédez comme suit :
 
