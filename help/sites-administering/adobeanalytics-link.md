@@ -22,7 +22,7 @@ ht-degree: 74%
 
 Lorsque des utilisateurs cliquent sur des liens figurant sur les pages de votre site web, vous pouvez enregistrer diverses informations dans Adobe Analytics. Par exemple, utilisez le suivi des liens pour savoir comment les utilisateurs interagissent avec votre site et surveiller le téléchargement de fichiers et les liens de sortie.
 
-## Configuration du suivi des liens de configuration pour une structure Adobe Analytics  {#configuring-link-tracking-for-an-adobe-analytics-framework}
+## Configuration du suivi des liens de configuration pour une structure Adobe Analytics {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
 1. Avec **Navigation**, accédez via **Déploiement**, **Services Cloud** à la section **Adobe Analytics.**
 
