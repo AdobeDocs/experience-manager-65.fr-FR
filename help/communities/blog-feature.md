@@ -240,7 +240,7 @@ Dans l’onglet **Champ de balise**, spécifiez les balises qui peuvent être ap
 
    Entrez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur -1 signifie qu’aucune limite n’est définie. La valeur par défaut est 0.
 
-### Configuration de la barre latérale de blog  {#configuring-blog-sidebar}
+### Configuration de la barre latérale de blog {#configuring-blog-sidebar}
 
 Lorsque vous cliquez sur le composant `Blog Sidebar` en maintenant le doublon enfoncé, une boîte de dialogue de modification s’ouvre.
 
