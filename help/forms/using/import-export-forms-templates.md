@@ -38,7 +38,7 @@ L’exportation et l’importation via l’interface utilisateur AEM Forms sont 
 
 Pour ces types d’actifs, vous devez utiliser AEM Package Manager pour créer un package CRX sur le serveur AEM source et pour installer le package sur le serveur de destination. Pour plus d’informations sur la création et l’installation des packages, voir [Utilisation des packages](/help/sites-administering/package-manager.md).
 
-### Téléchargement des actifs Formulaires et documents  {#download-forms-amp-documents-assets}
+### Téléchargement des actifs Formulaires et documents {#download-forms-amp-documents-assets}
 
 Pour télécharger des ressources Forms &amp; Documents :
 
