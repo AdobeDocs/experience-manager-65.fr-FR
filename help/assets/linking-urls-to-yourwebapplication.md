@@ -26,7 +26,7 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 
 >[!NOTE]
 >
->Les chaînes URL ne sont disponibles que pour les rendus dynamiques des ressources. Elles ne sont actuellement pas disponibles pour les ressources statiques qui résident dans la gestion des ressources numériques et non dans le serveur de média dynamique. Le bouton URL n’apparaît pas pour les rendus statiques.
+>Les chaînes URL ne sont disponibles que pour les rendus dynamiques des ressources. Elles ne sont actuellement pas disponibles pour les ressources statiques qui résident dans la gestion des ressources numériques (DAM) et non dans le serveur de média dynamique. Le bouton URL n’apparaît pas pour les rendus statiques.
 
 Voir aussi [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
@@ -34,9 +34,9 @@ Voir aussi [Liaison d’URL YouTube à une application web.](video.md)
 
 Voir aussi [Diffusion d’images optimisées pour un site réactif.](responsive-site.md)
 
-Voir aussi [Téléchargement de ressources.](manage-assets.md#uploading-assets)
+Voir aussi [Chargement de ressources.](manage-assets.md#uploading-assets)
 
-## Obtention d’une URL pour une ressource   {#obtaining-a-url-for-an-asset}
+## Obtention d’une URL pour une ressource  {#obtaining-a-url-for-an-asset}
 
 Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’image prédéfini ou un paramètre prédéfini de la visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
@@ -157,7 +157,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Il s’agit de l’URL complète d’un rendu vidéo publié.
 
-## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)   {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Dans AEM, accédez à **[!UICONTROL Outils > Déploiement > Cloud > Cloud Services.]**
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations.]**
