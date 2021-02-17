@@ -15,7 +15,7 @@ ht-degree: 70%
 
 ---
 
-# Guide de Forms Adobe Experience Manager 6.5  {#forms}
+# Guide de Forms Adobe Experience Manager 6.5 {#forms}
 
 + [Guide de Forms AEM 6.5](home.md)
 + Notes de mise à jour {#release-notes-new-features}
@@ -85,7 +85,7 @@ ht-degree: 70%
       + [Configuration de Connector for Microsoft SharePoint](http://help.adobe.com/fr/AEMForms/6.1/SharePointConfig/index.html)
       + [Connexion d’AEM Forms à Adobe LiveCycle](using/aem-livecycle-connector.md)
       + [Configuration d’AEM Forms pour envoyer des données de formulaire aux processus AEM Forms sur JEE](using/submit-form-data-livecycle-process.md)
-      + [aem application pour ordinateur de bureau pour AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+      + [AEM application pour ordinateur de bureau pour AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + Mettre à niveau AEM Forms {#upgrade-aem-forms}
    + [Chemins de mise à niveau disponibles](using/upgrade.md)
    + Mettre à niveau AEM Forms sur OSGi {#aem-forms-osgi-upgrade}
