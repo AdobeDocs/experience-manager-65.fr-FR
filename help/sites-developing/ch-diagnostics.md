@@ -32,7 +32,7 @@ La page de diagnostic de ContextHub présente des informations sur les magasins 
 >
 >Pour les configurations ContextHub toujours situées sous leurs chemins d’accès hérités, l’emplacement de la page de diagnostics est `http://<host>:<port>/libs/settings/cloudsettings/legacy/contexthub.diagnostics.html`.
 
-## Magasins  {#stores}
+## Magasins {#stores}
 
 La section Magasins répertorie tous les magasins ContextHub qui ont été configurés. Chaque élément de la liste comprend les informations suivantes :
 
