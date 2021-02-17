@@ -26,7 +26,7 @@ La page Paramètres du serveur donne accès aux différents paramètres du proce
 * Les **Paramètres de notification de tâche** permettent d’activer, de désactiver ou de modifier les messages envoyés dans les notifications électroniques aux utilisateurs finaux et aux groupes concernant leurs tâches (voir [Configuration des notifications destinées aux utilisateurs et aux groupes](configuring-server-settings.md#configuring-notifications-for-users-and-groups)).
 * Les **Paramètres de notification de l’administrateur** permettent d’activer, de désactiver ou de modifier les messages envoyés dans les notifications électroniques pour les tâches administratives (voir [Configuration des notifications destinées aux administrateurs](configuring-server-settings.md#configuring-notifications-for-administrators)).
 
-## Configuration des paramètres de courrier électronique  {#configuring-email-settings}
+## Configuration des paramètres de courrier électronique {#configuring-email-settings}
 
 Vous pouvez indiquer un compte de courrier électronique pour le serveur Forms, par l’intermédiaire duquel il envoie des courriers électroniques aux utilisateurs et aux administrateurs et en reçoit de la part de ces mêmes utilisateurs et administrateurs. Ces courriers électroniques sont utilisés pour notifier aux utilisateurs les tâches qu’ils sont tenus d’exécuter, les leur rappeler, les notifier lorsque les tâches arrivées à échéance et notifier à l’administrateur toute erreur de processus survenue.
 
@@ -210,7 +210,7 @@ Pour que ces URL fonctionnent correctement, remplacez `<`*PORT* `>` par le numé
 >
 >si vous utilisez une application Web personnalisée autre que Forms pour permettre aux utilisateurs d’accéder aux tâches, vous devez utiliser le format d’URL approprié pour votre application personnalisée.
 
-### Sélecteur de variables  {#variable-picker}
+### Sélecteur de variables {#variable-picker}
 
 La liste Sélectionneur de variables fournit des variables utiles que vous pouvez faire glisser vers les champs Objet ou Modèle de notification. Lorsque vous déposez une variable dans les zones Objet ou Modèle de notification, elle se transforme en nom de variable de processus des formulaires réel avec deux symboles @ de chaque côté, par exemple `@@taskid@@`.
 
