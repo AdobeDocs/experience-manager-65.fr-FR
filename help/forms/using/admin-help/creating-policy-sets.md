@@ -44,7 +44,7 @@ Lorsque vous créez des jeux de stratégies, vous affectez à des utilisateurs l
 
 L’installation de Document Security crée un jeu de stratégies par défaut, appelé *Jeu de stratégies global*. Ce jeu de stratégies est géré par l’administrateur ayant installé le logiciel ou par le coordinateur de jeux de stratégies désigné pour ce jeu de stratégies.
 
-## Création d’un jeu de stratégies  {#create-a-policy-set}
+## Création d’un jeu de stratégies {#create-a-policy-set}
 
 Le Jeu de stratégies global est le seul jeu de stratégies par défaut créé lors de l’installation. Vous pouvez créer d’autres jeux de stratégies et ajouter des stratégies, des utilisateurs, des coordinateurs de jeux de stratégies et des éditeurs. Après avoir créé un jeu de stratégies, vous pouvez créer des stratégies à l’intérieur du jeu.
 
