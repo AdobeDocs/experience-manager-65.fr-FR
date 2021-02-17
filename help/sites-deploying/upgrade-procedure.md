@@ -34,7 +34,7 @@ Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des
 >The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
 -->
 
-## Niveau d’auteur TarMK  {#tarmk-author-tier}
+## Niveau d’auteur TarMK {#tarmk-author-tier}
 
 ### Démarrage de la topologie {#starting-topology}
 
