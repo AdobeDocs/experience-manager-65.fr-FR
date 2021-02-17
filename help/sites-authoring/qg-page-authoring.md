@@ -98,7 +98,7 @@ Pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-pa
 
 1. Un assistant s’ouvre, qui vous aidera à collecter les informations nécessaires lors de la [création de votre page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Suivez les instructions à l’écran.
 
-### Sélection de la page pour d’autres actions    {#selecting-your-page-for-further-action}
+### Sélection de la page pour d’autres actions   {#selecting-your-page-for-further-action}
 
 Sélectionnez une page pour y effectuer des actions. Ce faisant, la barre d’outils est automatiquement mise à jour afin de présenter les actions appropriées pour cette ressource.
 
