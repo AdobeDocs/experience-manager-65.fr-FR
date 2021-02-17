@@ -55,7 +55,7 @@ La première fois que vous démarrez AEM, vous pouvez souscrire à l’aide de l
 
 1. Cliquez sur **Terminé**.
 
-## Souscription à l’aide de la console web  {#opt-in-by-using-the-web-console}
+## Souscription à l’aide de la console web {#opt-in-by-using-the-web-console}
 
 Vous pouvez souscrire (ou vous exclure) à l’aide de la console web, comme suit :
 
