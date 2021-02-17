@@ -80,15 +80,15 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
  </tbody>
 </table>
 
-## Communities  {#communities}
+## Communities {#communities}
 
-[aem ](/help/communities/overview.md) Collectivités simplifie la création et la gestion de communautés sur site.
+[AEM ](/help/communities/overview.md) Collectivités simplifie la création et la gestion de communautés sur site.
 
 Les bonnes pratiques pour AEM Communities sont présentées ici :
 
 |  |  |  |
 |---|---|---|
-| Recommandations relatives à l’utilisation du contenu généré par l’utilisateur (UGC) | [Consignes de codage](/help/communities/code-guide.md) | Directives pour le développement de code flexible et portable pour le cadre de composants sociaux [a1/> (SCF).](/help/communities/scf.md) |
+| Recommandations relatives à l’utilisation du contenu généré par l’utilisateur (UGC) | [Consignes de codage](/help/communities/code-guide.md) | Lignes directrices pour le développement de code flexible et portable pour la structure de composants sociaux [a1/> (SCF).](/help/communities/scf.md) |
 | Exemple d’utilisation des composants Communities | [Guide de composants de communauté](/help/communities/components-guide.md) | Un outil de développement interactif. |
 
 ## Outillage/HTL {#tooling-htl}
