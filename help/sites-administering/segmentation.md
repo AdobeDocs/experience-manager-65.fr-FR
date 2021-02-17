@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: e5e00cc181c2dc3a28e25beb52f9a4c459ee313a
 workflow-type: tm+mt
 source-wordcount: '1779'
-ht-degree: 79%
+ht-degree: 97%
 
 ---
 
 
-# Configuration de la segmentation avec ContextHub{#configuring-segmentation-with-contexthub}
+# Configuration de la segmentation avec ContextHub {#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ Les références suivantes sont disponibles clé en main pour établir un lien d
 
 Pour définir votre nouveau segment :
 
-1. Après avoir [accédé aux segments](/help/sites-administering/segmentation.md#accessing-segments), [accédez au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment, ou laissez-le à la racine.
+1. Après [accès aux segments](/help/sites-administering/segmentation.md#accessing-segments), [accédez au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment, ou laissez-le dans la racine.
 
 1. cliquez ou appuyez sur le bouton Créer et sélectionnez **Créer un segment ContextHub**.
 
@@ -157,7 +157,7 @@ Pour définir votre nouveau segment :
 1. Cliquez sur **OK** pour enregistrer votre définition :
 1. Ajoutez d’autres composants, en fonction de vos besoins. Vous pouvez formuler des expressions booléennes à l’aide des composants de conteneur pour des comparaisons ET et OU (voir la rubrique [Utilisation des conteneurs ET et OU](/help/sites-administering/segmentation.md#using-and-and-or-containers) ci-dessous). Avec l’éditeur de segment, vous pouvez supprimer les composants qui ne sont plus utiles ou les faire glisser vers un nouvel emplacement dans l’instruction.
 
-### Utilisation des conteneurs ET et OU  {#using-and-and-or-containers}
+### Utilisation des conteneurs ET et OU {#using-and-and-or-containers}
 
 Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Cette tâche sera plus facile si vous tenez compte de certains aspects élémentaires :
 
@@ -230,19 +230,19 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ## Organisation des segments {#organizing-segments}
 
-Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer en tant que liste plate. Dans ce cas, il peut s’avérer utile de créer des dossiers pour gérer vos segments.
+Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer sous la forme d’une liste brute. Dans ce cas, il peut s’avérer utile de créer des dossiers pour gérer ces segments.
 
-### Créer un nouveau dossier {#create-folder}
+### Créer un dossier {#create-folder}
 
-1. Après avoir [accédé aux segments](#accessing-segments), cliquez ou appuyez sur le bouton **Créer** et sélectionnez **Dossier**.
+1. Après [accès aux segments](#accessing-segments), appuyez ou cliquez sur le bouton **Créer** et sélectionnez **Dossier**.
 
-   ![Dossier Ajouter](assets/contexthub-create-segment.png)
+   ![Ajouter un dossier](assets/contexthub-create-segment.png)
 
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
-   * **Name** deviendra le nom du noeud dans le référentiel.
-      * Elle sera générée automatiquement en fonction du titre et ajustée selon les [conventions d&#39;appellation AEM.](/help/sites-developing/naming-conventions.md)
-      * Il peut être ajusté si nécessaire.
+   * Le **Nom** devient le nom du nœud dans le référentiel.
+      * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/sites-developing/naming-conventions.md)
+      * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](assets/contexthub-create-folder.png)
 
@@ -251,13 +251,13 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
    ![Confirmer le dossier](assets/contexthub-confirm-folder.png)
 
 1. Le dossier s’affiche dans la liste des segments.
-   * La manière dont vous triez vos colonnes aura une incidence sur l&#39;emplacement d&#39;affichage du nouveau dossier dans la liste.
-   * Vous pouvez appuyer ou cliquer sur les en-têtes de colonne pour ajuster votre tri.
+   * La manière dont vous triez vos colonnes aura une incidence sur l’emplacement d’affichage du nouveau dossier dans la liste.
+   * Vous pouvez appuyer ou cliquer sur les en-têtes de colonne pour adapter votre tri.
       ![Le nouveau dossier](assets/contexthub-folder.png)
 
 ### Modifier les dossiers existants {#modify-folders}
 
-1. Après avoir [accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
+1. Après [accès aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](assets/contexthub-select-folder.png)
 
@@ -265,15 +265,15 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 1. Saisissez un nouveau **Titre du dossier** et appuyez ou cliquez sur **Enregistrer**.
 
-   ![Renommer le dossier](assets/contexthub-rename-folder.png)
+   ![Renommer un dossier](assets/contexthub-rename-folder.png)
 
 >[!NOTE]
 >
 >Lorsque vous renommez des dossiers, seul le titre peut être modifié. Le nom ne peut pas être modifié.
 
-### Suppression d’un dossier
+### Supprimer un dossier
 
-1. Après avoir [accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
+1. Après [accès aux segments](#accessing-segments), cliquez ou appuyez sur le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](assets/contexthub-select-folder.png)
 
@@ -295,14 +295,14 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 >[!NOTE]
 >
-> Il n’est pas possible de déplacer un segment d’un dossier à un autre.
+> Il est impossible de déplacer un segment d’un dossier à un autre.
 
 ## Test de l’application d’un segment  {#testing-the-application-of-a-segment}
 
 Une fois le segment défini, les résultats potentiels peuvent être testés avec **[ContextHub](/help/sites-authoring/ch-previewing.md).**
 
-1. Affichage de l’aperçu d’une page
-1. Cliquez sur l’icône ContextHub pour afficher la barre d’outils ContextHub
+1. Affichez l’aperçu d’une page.
+1. Cliquez sur l’icône ContextHub pour afficher la barre d’outils ContextHub.
 1. Sélectionnez une personne qui correspond au segment que vous avez créé.
 1. ContextHub permet de résoudre les segments applicables pour la personne sélectionnée.
 
