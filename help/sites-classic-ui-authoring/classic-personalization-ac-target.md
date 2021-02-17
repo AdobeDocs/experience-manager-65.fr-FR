@@ -42,7 +42,7 @@ Pour créer des segments :
 1. Doublon-clic sur la caractéristique, saisissez l’identifiant représentant dans ce cas, le segment mâle défini dans Adobe Campaign - par exemple, **MALE** - et cliquez sur **OK**. Le message suivant doit apparaître : `targetData.segmentCode == "MALE"`
 1. Recommencez ces étapes pour un autre segment, par exemple, un segment ciblant les utilisateurs femmes.
 
-### Création d’une marque  {#creating-a-brand}
+### Création d’une marque {#creating-a-brand}
 
 Pour créer une marque, procédez comme suit :
 
