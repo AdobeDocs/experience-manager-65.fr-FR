@@ -33,7 +33,7 @@ We.Finance est une entreprise qui permet à des candidats de postuler à des off
 >
 >Les cas d’utilisation de recrutement des employés sont disponibles sur les sites de référence de We.Finance et de We.Gov. Les images, descriptions et exemples utilisés dans les présentations se basent sur le site de référence We.Finance. Cependant, vous pouvez exécuter ces cas d’utilisation et consulter les artefacts également via We.Gov. Pour ce faire, remplacez **we-finance** par **we-gov** dans les adresses URL mentionnées.
 
-### Modèles de processus impliqués  {#workflow-models-involved}
+### Modèles de processus impliqués {#workflow-models-involved}
 
 Le cas d’utilisation du recrutement des employés implique deux processus :
 
