@@ -19,7 +19,7 @@ ht-degree: 82%
 ---
 
 
-# Création de rapports  {#reporting}
+# Création de rapports {#reporting}
 
 Pour vous aider à analyser et surveiller l’état de votre instance, AEM propose une sélection de rapports par défaut, qui peuvent être configurés en fonction de vos besoins :
 
@@ -304,7 +304,7 @@ Le rapport de composants fournit des informations sur la façon dont votre site 
 * Chemin de composant
 * Type de composant
 * Dernière modification
-* Page 
+* Page
 
 Signifient que vous pouvez voir, par exemple :
 
@@ -378,7 +378,7 @@ Le rapport d’activité de la page répertorie les pages et les actions effectu
 
 [Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
 
-* Page 
+* Page
 * Heure
 * Type
 * User
@@ -403,7 +403,7 @@ Ce rapport fournit des informations sur le contenu généré par l’utilisateur
 
 * Date
 * Adresse IP
-* Page 
+* Page
 * Référent
 * Type
 * Identifiant de l’utilisateur
