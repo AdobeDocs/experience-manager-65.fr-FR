@@ -41,7 +41,7 @@ Pour définir la façon dont vos sites partagent du contenu personnalisé, vous 
 
 Vous pouvez à tout moment suspendre ou restaurer l’héritage. En outre, si vous ne souhaitez pas suspendre l’héritage, vous pouvez également créer des expériences locales. Sauf indication contraire, toutes les pages utilisent par défaut la zone maître.
 
-## Présentation de la prise en charge de sites multiples pour le contenu ciblé     {#introduction-to-multisite-support-for-targeted-content}
+## Présentation de la prise en charge de sites multiples pour le contenu ciblé    {#introduction-to-multisite-support-for-targeted-content}
 
 La prise en charge de sites multiples pour le contenu ciblé est prête à l’emploi. Elle vous permet de pousser le contenu ciblé du gabarit que vous gérez via MSM vers une Live Copy locale ou de gérer des modifications globales et locales du contenu en question.
 
@@ -57,6 +57,7 @@ Un site ou une Live Copy présente un lien vers une zone contenant les activité
 >
 >* Lorsque vous utilisez des déploiements ou des Live Copies, une licence MSM est requise.
 >* Lorsque vous utilisez la synchronisation avec Adobe Target, une licence Adobe Target est requise.
+
 >
 
 
@@ -249,6 +250,7 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 >
 >* Vous pouvez uniquement suspendre ou désolidariser des Live Copies dans une activité.
 >* Vous n’avez pas besoin de suspendre ou de désolidariser des Live Copies pour étendre une activité héritée. Vous pouvez toujours créer de **nouvelles** expériences et offres locales pour cette activité. Si vous souhaitez modifier une activité existante, il vous faut suspendre l’héritage.
+
 >
 
 
