@@ -30,7 +30,7 @@ Vous pouvez changer le logo dans l&#39;interface utilisateur de création de cor
 
 L&#39;icône personnalisée dans l&#39;interface utilisateur de création de correspondance
 
-### Modification du logo dans l&#39;interface utilisateur de création de correspondance  {#changing-the-logo-in-the-create-correspondence-ui}
+### Modification du logo dans l&#39;interface utilisateur de création de correspondance {#changing-the-logo-in-the-create-correspondence-ui}
 
 Pour configurer une image de logo de votre choix, procédez comme suit :
 
@@ -50,7 +50,7 @@ La branche /apps (structure de dossiers) :
 
 * Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau, de feature pack ou de correctif logiciel, la branche /libs est mise à jour et si vous hébergez vos modifications dans la branche /libs, elles sont remplacées.
 * Vous aide à ne pas toucher au système/à la branche actuels, que vous pouvez ébranler par erreur si vous utilisez les emplacements par défaut pour enregistrer les fichiers personnalisés.
-* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. aem est configuré pour rechercher d&#39;abord la branche /apps, puis la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
+* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. AEM est configuré pour rechercher d&#39;abord la branche /apps, puis la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
 
 Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans la branche /apps :
 
