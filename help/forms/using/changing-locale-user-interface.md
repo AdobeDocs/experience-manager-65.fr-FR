@@ -35,7 +35,7 @@ Avant d’exécuter les étapes ci-dessus, veillez à suivre les étapes répert
 >
 >Pour modifier la langue de l’écran de connexion de l’espace de travail AEM Forms, voir [Création d’un nouvel écran de connexion](../../forms/using/creating-new-login-screen.md).
 
-## Localisation du texte  {#localizing-text}
+## Localisation du texte {#localizing-text}
 
 Effectuez les étapes suivantes pour ajouter la prise en charge d’une langue *New* et du code de paramètres régionaux du navigateur *nw*.
 
