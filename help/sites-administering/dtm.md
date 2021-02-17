@@ -18,7 +18,7 @@ ht-degree: 67%
 ---
 
 
-# Intégration à Adobe Dynamic Tag Management  {#integrating-with-adobe-dynamic-tag-management}
+# Intégration à Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
 Intégrez la [gestion dynamique des balises Adobe](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) à AEM afin de pouvoir utiliser vos propriétés web de gestion dynamique des balises pour effectuer le suivi des sites AEM. La gestion dynamique des balises permet aux spécialistes du marketing de gérer les balises pour la collecte de données et de distribuer les données sur les systèmes de marketing numérique. Par exemple, utilisez la gestion dynamique des balises pour collecter des données d’utilisation pour votre site Web AEM et distribuer les données pour l’analyse dans Adobe Analytics ou Adobe Target.
 
@@ -164,7 +164,7 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
   </tr>
   <tr>
    <td>Activer l'importateur d'interrogations</td>
-   <td><p>(Facultatif) Sélectionnez cette option pour télécharger et installer régulièrement la bibliothèque Gestion dynamique des balises afin de vous assurer que vous utilisez une version mise à jour. Lorsqu’elle est sélectionnée, la gestion dynamique des balises n’envoie pas de requêtes de POST HTTP à l’URL du Hook de déploiement.</p> <p>aem configure automatiquement la propriété Deploy Hook URL de la propriété Library Download pour la propriété web Gestion dynamique des balises. Si cette option est sélectionnée, la propriété est configurée sans valeur. Lorsqu’elle n’est pas sélectionnée, la propriété est configurée avec l’URL de votre configuration de la gestion dynamique des balises.</p> <p>Activez l’importateur d’interrogation lorsque le hook de déploiement de la gestion dynamique des balises ne peut pas se connecter à AEM, par exemple lorsque AEM se trouve derrière un pare-feu.</p> </td>
+   <td><p>(Facultatif) Sélectionnez cette option pour télécharger et installer régulièrement la bibliothèque Gestion dynamique des balises afin de vous assurer que vous utilisez une version mise à jour. Lorsqu’elle est sélectionnée, la gestion dynamique des balises n’envoie pas de requêtes de POST HTTP à l’URL du Hook de déploiement.</p> <p>AEM configure automatiquement la propriété Deploy Hook URL de la propriété Library Download pour la propriété web Gestion dynamique des balises. Si cette option est sélectionnée, la propriété est configurée sans valeur. Lorsqu’elle n’est pas sélectionnée, la propriété est configurée avec l’URL de votre configuration de la gestion dynamique des balises.</p> <p>Activez l’importateur d’interrogation lorsque le hook de déploiement de la gestion dynamique des balises ne peut pas se connecter à AEM, par exemple lorsque AEM se trouve derrière un pare-feu.</p> </td>
   </tr>
   <tr>
    <td>Enoncé de planification</td>
