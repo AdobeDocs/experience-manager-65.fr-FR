@@ -22,7 +22,7 @@ ht-degree: 88%
 
 Cette page fournit d’autres détails qui précisent et/ou enrichissent les documents et les principes couverts dans la section [Gestion des projets : liste de contrôle des meilleures pratiques](/help/managing/best-practices.md).
 
-## AEM – Qu’allez-vous utiliser ?  {#aem-what-will-you-be-using}
+## AEM – Qu’allez-vous utiliser ? {#aem-what-will-you-be-using}
 
 >[!CAUTION]
 >
@@ -527,7 +527,7 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>aem fournit une gamme de mécanismes pour vous aider à surveiller, tester, rechercher et déboguer votre application ; y compris :</p>
+   <td><p>AEM fournit une gamme de mécanismes pour vous aider à surveiller, tester, rechercher et déboguer votre application ; y compris :</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Mode Développeur</a></li>
      <li><a href="/help/sites-developing/hobbes.md">Console de test</a></li>
