@@ -385,7 +385,7 @@ Puisque la fonction communautaire est mise en oeuvre en tant que [copie dynamiqu
 
 Voir aussi [Gestionnaire de sites multiples](/help/sites-administering/msm.md).
 
-### Miniature   {#thumbnail}
+### Miniature  {#thumbnail}
 
 ![fonction-miniature](assets/funtion-thumbnail.png)
 
