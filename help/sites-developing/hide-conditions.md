@@ -32,7 +32,7 @@ Grâce aux conditions de masquage, les administrateurs, développeurs et super-u
 >
 >Le masquage d’une ressource sur la base d’une expression ne remplace pas les autorisations ACL. Le contenu peut toujours être modifié, mais il n’est pas simplement affiché.
 
-## Détails relatifs à la mise en œuvre et à l’utilisation  {#implementation-and-usage-details}
+## Détails relatifs à la mise en œuvre et à l’utilisation {#implementation-and-usage-details}
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` est chargé de filtrer les ressources en fonction de l’existence et de la valeur de la propriété `granite:hide`, située sur le champ à filtrer. L’implémentation de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` comprend une instance de `FilteringResourceWrapper.`
 
