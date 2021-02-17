@@ -40,7 +40,7 @@ Voir aussi [Configuration du mode Dynamic Media - Scene7](/help/assets/config-dm
 1. Contactez le service à la clientèle [Adobe Enterprise ](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) pour demander l’accès à Feature Pack 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l&#39;assistance :
 
    * Adresse IP du serveur de votre instance d’auteur, y compris le numéro de port (par défaut, le numéro de port est 4502).
-   * aem nom d’utilisateur et mot de passe du service de maintenance de l’étape précédente.
+   * AEM nom d’utilisateur et mot de passe du service de maintenance de l’étape précédente.
 
 1. L’assistance clientèle d’Adobe Entreprise pour AEM vous fournit les informations d’identification FTP et l’accès à Feature Pack 18912.
 1. Lorsque vous recevez Feature Pack 18912, installez-le.
