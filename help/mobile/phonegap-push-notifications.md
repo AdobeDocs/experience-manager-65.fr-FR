@@ -92,7 +92,7 @@ Les étapes suivantes montrent une autre méthode de création des clés d’API
 
 ### Étape 2 : Enregistrement et configuration d&#39;un service de messagerie Push {#step-register-and-configure-a-push-messaging-service}
 
-aem est configuré pour utiliser l’un des trois services pour les notifications Push :
+AEM est configuré pour utiliser l’un des trois services pour les notifications Push :
 
 * SNS Amazon
 * Pushwoosh
@@ -260,7 +260,7 @@ Avec XCode 8.1, avant d&#39;utiliser les notifications Push, vous devez accéder
 
 #### Android {#android}
 
-Pour installer l&#39;application sur un téléphone Android à l&#39;aide de l&#39;interface de ligne de commande (voir ci-dessous : **Étape 6 - Créer et déployer l’application**), vous devez d’abord mettre le téléphone en &quot;mode développeur&quot;. Voir [Activation des options du développeur sur périphérique](https://developer.android.com/tools/device.html#developer-device-options) pour plus d’informations sur cette opération.
+Pour installer l&#39;application sur un téléphone Android à l&#39;aide de l&#39;interface de ligne de commande (voir ci-dessous : **Étape 6 - Créer et déployer l’application**), vous devez d’abord mettre le téléphone en &quot;mode développeur&quot;. Voir [Activation des options du développeur sur périphérique](https://developer.android.com/tools/device.html#developer-device-options) pour plus d’informations à ce sujet.
 
 ### Étape 5 : Configuration de la fonction Push sur les applications AEM {#step-configure-push-on-aem-apps}
 
