@@ -19,7 +19,7 @@ ht-degree: 84%
 ---
 
 
-# SPA et rendu côté serveur{#spa-and-server-side-rendering}
+# SPA et rendu côté serveur {#spa-and-server-side-rendering}
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->aem version 6.5.1.0 ou ultérieure est requise pour utiliser les fonctions de rendu SPA côté serveur, comme décrit dans ce document.
+>AEM version 6.5.1.0 ou ultérieure est requise pour utiliser les fonctions de rendu SPA côté serveur, comme décrit dans ce document.
 
 ## Présentation {#overview}
 
