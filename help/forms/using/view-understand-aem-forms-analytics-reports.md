@@ -18,7 +18,7 @@ ht-degree: 89%
 ---
 
 
-# Consultation et compréhension des rapports d’analyse d’AEM Forms  {#view-and-understand-aem-forms-analytics-reports}
+# Consultation et compréhension des rapports d’analyse d’AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms s’intègre à Adobe Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
 
