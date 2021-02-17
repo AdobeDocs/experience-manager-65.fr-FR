@@ -33,7 +33,7 @@ Exemple d’un widget par défaut et d’un widget personnalisé
 
 Vous pouvez créer un profil ou choisir un profil existant pour ajouter un widget personnalisé. Pour plus d’informations sur la création de profils, voir [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
 
-### Création d’un widget  {#create-a-widget}
+### Création d’un widget {#create-a-widget}
 
 Les formulaires HTML5 fournissent une implémentation de la structure de widgets qui peut être étendue pour créer de nouveaux widgets. L’implémentation est un widget jQuery *abstractWidget* qui peut être étendu afin d’écrire un nouveau widget. Le nouveau widget peut être rendu fonctionnel uniquement par l’extension/le remplacement des fonctions mentionnées ci-dessous.
 
