@@ -28,7 +28,7 @@ Effectuez les opérations suivantes pour effectuer la mise à niveau de l’AEM 
 
 1. Mettez à niveau l’instance AEM existante vers AEM 6.5. Les étapes sont énumérées ci-dessous :
 
-   1. Installez le dernier Service Pack et les derniers correctifs pour AEM 6.3 Forms ou AEM 6.4 Forms. Pour plus de détails, voir [AEM Centre de soutien ](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
+   1. Installez le dernier Service Pack et les derniers correctifs pour AEM 6.3 Forms ou AEM 6.4 Forms. Pour plus d&#39;informations, voir [AEM Centre de soutien ](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
    1. Préparez l’instance source pour la mise à niveau. Pour obtenir des instructions détaillées, reportez-vous à l’article [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md).
    1. Téléchargez [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software).
    1. **(Installations Unix/Linux uniquement)** Si vous utilisez UNIX ou Linux en tant que système d’exploitation sous-jacent, ouvrez la fenêtre de terminal, accédez au dossier contenant crx-quickstart et exécutez la commande suivante :
