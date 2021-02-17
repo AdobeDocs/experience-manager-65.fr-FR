@@ -41,7 +41,7 @@ Les tests devraient définir clairement :
 
 L’idée d’automatiser les cas de test est évidemment intéressante car on peut ainsi éliminer les tâches répétitives.
 
-## Tests manuels ou tests automatisés  {#manual-versus-automated-tests}
+## Tests manuels ou tests automatisés {#manual-versus-automated-tests}
 
 Cependant, l’automatisation des cas de test est un lourd investissement. Il faut donc prendre en compte certains aspects :
 
