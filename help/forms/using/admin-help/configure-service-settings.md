@@ -38,7 +38,7 @@ Vous pouvez utiliser la page Gestion des services pour configurer les paramètre
 1. Cliquez sur Enregistrer pour enregistrer vos modifications ou sur Annuler pour les ignorer.
 1. Cochez la case en regard du nom du service et cliquez sur Démarrer pour redémarrer le service.
 
-## Paramètres du service Audit Workflow  {#audit-workflow-service-settings}
+## Paramètres du service Audit Workflow {#audit-workflow-service-settings}
 
 Workbench permet d’enregistrer des instances de processus au moment de l’exécution, puis de les relire pour observer le comportement du processus (Voir [l’Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)). Pour préserver l’espace disponible sur le système de fichiers du serveur Forms, vous pouvez limiter la quantité de données d’enregistrement de processus conservées. Vous pouvez configurer les propriétés suivantes du service Audit Workflow Service (`AuditWorkflowService`) :
 
@@ -573,7 +573,7 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Nombre maximal de sessions de vérification imbriquées autorisées :** nombre maximal de sessions de vérification imbriquées autorisées. AEM forms utilise cette valeur pour empêcher une boucle infinie lors de la vérification des certificats des signataires OCSP ou CRL en cas de configuration incorrecte du certificat OCSP ou CRL. La valeur par défaut est 10.
 
-**Inclinaison maximale de l’horloge pour la vérification :** durée maximale, en minutes, pendant laquelle l’heure de signature peut être postérieure à l’heure de validation. Si le décalage est supérieur à cette valeur, la signature n’est pas valable. la valeur par défaut est de 65 minutes.
+**Inclinaison maximale de l’horloge pour la vérification :** durée maximale (en minutes) pendant laquelle l’heure de signature peut être postérieure à l’heure de validation. Si le décalage est supérieur à cette valeur, la signature n’est pas valable. la valeur par défaut est de 65 minutes.
 
 **Cache de durée de vie du certificat :** durée de vie d’un certificat, récupérée en ligne ou par d’autres moyens, dans le cache. La valeur par défaut est de 1 jour.
 
@@ -663,7 +663,7 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Signature de la demande OCSP :** indique si la demande OCSP doit être signée. La valeur par défaut est false. 
 
-**Request Signer Credential Alias :** spécifie l’alias d’identification à utiliser pour signer la demande OCSP si la signature est activée. Cette option est utilisée uniquement si la signature de la demande OCSP est activée. Pas de valeur par défaut.
+**Request Signer Credential Alias :** indique l’alias d’identification à utiliser pour signer la demande OCSP si la signature est activée. Cette option est utilisée uniquement si la signature de la demande OCSP est activée. Pas de valeur par défaut.
 
 **Aller en ligne :** indique s’il faut se connecter pour effectuer la vérification de révocation. La valeur par défaut est true.
 
