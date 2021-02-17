@@ -27,7 +27,7 @@ Dans chaque page du processus des formulaires dans Administration Console, vous 
 <table>
  <thead>
   <tr>
-   <th><p>Page </p></th>
+   <th><p>Page</p></th>
    <th><p>Tâches</p></th>
    <th><p>Voir</p></th>
   </tr>
