@@ -35,7 +35,7 @@ Le connecteur pour Microsoft SharePoint permet la communication entre AEM forms 
 
 1. Cliquez sur Enregistrer.
 
-## Service de configuration Microsoft SharePoint  {#microsoft-sharepoint-configuration-service}
+## Service de configuration Microsoft SharePoint {#microsoft-sharepoint-configuration-service}
 
 Le service de configuration Microsoft SharePoint `(MSSharePointConfigService)` vous permet de spécifier les informations d’identification de l’utilisateur de formulaires AEM qui dispose d’autorisations d’emprunt d’identité. Pour plus d’informations sur les droits d’emprunt d’identité, consultez [Configuration du connecteur pour Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Suivez les étapes suivantes pour définir les paramètres de `MSSharePointConfigService` :
 
