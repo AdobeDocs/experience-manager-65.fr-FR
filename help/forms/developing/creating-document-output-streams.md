@@ -798,8 +798,8 @@ Transmettez un document récupéré de Content Services (obsolète) à l’aide 
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant les options d’exécution de rendu.
    * Objet `BLOB` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
-   * Objet de sortie `BLOB` renseigné par la méthode `generatePDFOutput2`. La méthode `generatePDFOutput2` remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
-   * Objet output `OutputResult` contenant les résultats de l&#39;opération. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+   * Objet de sortie `BLOB` renseigné par la méthode `generatePDFOutput2`. La méthode `generatePDFOutput2` remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
+   * Objet output `OutputResult` contenant les résultats de l&#39;opération. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
 
    La méthode `generatePDFOutput2` renvoie un objet `BLOB` contenant le formulaire PDF non interactif.
 
@@ -1124,8 +1124,8 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant les options d’exécution de rendu.
    * Objet `BLOB` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
-   * Objet de sortie `BLOB` que la méthode `generatePDFOutput2` remplit. La méthode `generatePDFOutput2` remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
-   * Objet output `OutputResult` contenant les résultats de l&#39;opération. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+   * Objet de sortie `BLOB` que la méthode `generatePDFOutput2` remplit. La méthode `generatePDFOutput2` remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
+   * Objet output `OutputResult` contenant les résultats de l&#39;opération. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
 
    La méthode `generatePDFOutput2` renvoie un objet `BLOB` contenant le formulaire PDF non interactif.
 
@@ -1997,7 +1997,7 @@ Définissez les options d’exécution PDF suivantes afin que le service Output 
 
 * **URI** du fichier : Indique le nom et l’emplacement du fichier PDF généré par le service Output.
 * **Règles** : Indique les règles que vous avez définies.
-* **LookAHead** : Indique le nombre d’octets à utiliser depuis le début du fichier de données d’entrée pour rechercher les modèles de texte définis. La valeur par défaut est de 500 octets.
+* **LookAHead** : Indique le nombre d’octets à utiliser depuis le début du fichier de données d’entrée pour analyser les modèles de texte définis. La valeur par défaut est de 500 octets.
 
 **Définition des options d’exécution de rendu**
 
