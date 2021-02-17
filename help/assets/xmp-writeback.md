@@ -27,7 +27,7 @@ Cependant, [!DNL Experience Manager Assets] ne propage pas automatiquement les m
 
 La fonction d’écriture différée XMP permet de propager les modifications de métadonnées à tous les rendus ou à des rendus spécifiques du fichier. Toutefois, les modifications ne sont pas stockées sous le nœud de métadonnées dans la hiérarchie de la ressource. Au lieu de cela, cette fonction incorpore les modifications dans les fichiers binaires pour les rendus.
 
-## Activation de l’écriture différée XMP  {#enabling-xmp-writeback}
+## Activation de l’écriture différée XMP {#enabling-xmp-writeback}
 
 Pour activer la propagation des modifications apportées aux métadonnées aux rendus de la ressource lors de leur chargement, modifiez la configuration **[!UICONTROL Créateur de rendus de gestion des actifs numériques Adobe CQ]** dans Configuration Manager.
 
