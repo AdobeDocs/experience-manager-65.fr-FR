@@ -26,7 +26,7 @@ L’objet CQ_Analytics.ClientContextMgr est un singleton qui contient un ensembl
 
 Étend CQ_Analytics.PersistedSessionStore.
 
-### Méthodes  {#methods}
+### Méthodes {#methods}
 
 #### getRegisteredStore(name) {#getregisteredstore-name}
 
