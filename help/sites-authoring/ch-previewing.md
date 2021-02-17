@@ -49,7 +49,7 @@ La barre d’outils ContextHub est disponible en mode Aperçu. La barre d’outi
 
 Chaque module d’IU fournit un ensemble de fonctionnalités différent, mais les types de fonctionnalités suivants sont communs. Les modules d’IU étant redimensionnables, votre développeur peut mettre en œuvre d’autres fonctionnalités selon les besoins.
 
-### Contenu de la barre d’outils  {#toolbar-content}
+### Contenu de la barre d’outils {#toolbar-content}
 
 Les modules d’IU peuvent afficher des données d’une ou de plusieurs boutiques ContextHub sur la barre d’outils. Les modules d’IU utilisent une icône et un titre pour s’identifier.
 
