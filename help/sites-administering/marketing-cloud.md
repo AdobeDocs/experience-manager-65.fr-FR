@@ -74,7 +74,7 @@ Adobe Dynamic Media Classic est une solution hébergée qui permet de publier, g
 
 Dans Adobe Experience Manager, vous pouvez publier des ressources numériques directement de Adobe Experience Manager à Dynamic Media Classic et vous pouvez publier des ressources numériques de Dynamic Media Classic vers Adobe Experience Manager.
 
-En outre, vous pouvez vue des fichiers Adobe Experience Manager publiés dans Dynamic Media Classic dans diverses visionneuses, telles que Zoom de base et Vidéo.
+En outre, vous pouvez vue des fichiers Adobe Experience Manager publiés dans Dynamic Media Classic dans différentes visionneuses, telles que Zoom de base et Vidéo.
 
 Pour plus d’informations sur la façon dont Adobe Experience Manager s’intègre à Dynamic Media Classic, voir la documentation [Intégration à Dynamic Media Classic](/help/sites-administering/scene7.md).
 
@@ -88,7 +88,7 @@ Pour plus d’informations sur la façon dont Adobe Experience Manager s’intè
 
 L’intégration à Adobe Audience Manager a été supprimée dans AEM 6.3.
 
-## Intégration à Search&amp;Promote  {#integrating-with-search-promote}
+## Intégration à Search&amp;Promote {#integrating-with-search-promote}
 
 Le Search &amp; Promote d’Adobe permet aux spécialistes du marketing d’optimiser la manière dont les visiteurs naviguent, recherchent, comparent et sélectionnent les produits et le contenu appropriés sur les sites Web et mobiles. Les entreprises peuvent facilement faire la promotion des éléments importants en fonction des objectifs de l’entreprise et de l’intention des visiteurs, tout en automatisant les activités de marchandisation et de promotion par l’intermédiaire de déclencheurs et de mesures reposant sur les indicateurs de performances clés.
 
