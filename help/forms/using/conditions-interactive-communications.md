@@ -99,7 +99,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
    >
    >Vous pouvez insérer dans votre condition des actifs dans lesquels des règles ou des répétitions ont déjà été appliquées.
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
    La condition est créée. Vous pouvez maintenant utiliser la condition comme bloc de construction lors de la création d’une communication interactive.
 
@@ -107,7 +107,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
    >
    >Pour enregistrer une condition nouvelle ou modifiée, vous devez disposer d’au moins une règle pour chacun des actifs ajoutés à la condition.
 
-## Modifier une condition  {#edit-a-condition}
+## Modifier une condition {#edit-a-condition}
 
 Vous pouvez modifier une condition en suivant les étapes suivantes. Vous pouvez également choisir de modifier une condition dans une communication interactive en sélectionnant Modifier le fragment dans le menu contextuel.
 
@@ -183,7 +183,7 @@ Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Cré
 
    ![ditrulevariables expandedededededitrables](assets/expandededitrulevariables.png)
 
-1. Appuyez sur **[!UICONTROL Créer]**. 
+1. Appuyez sur **[!UICONTROL Créer]**.
 
    Le volet Créer des variables apparaît.
 
@@ -194,7 +194,7 @@ Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Cré
    * **[!UICONTROL Type]** : Sélectionnez un type de variable : Chaîne, Nombre, Valeur booléenne ou Date.
    * **[!UICONTROL Autoriser les valeurs spécifiques uniquement]** : pour les variables de type Chaîne et Nombre, vous pouvez garantir que l’agent choisisse parmi un ensemble spécifique de valeurs pour un espace réservé dans l’interface utilisateur de l’agent. Pour spécifier le jeu de valeurs, sélectionnez cette option, puis spécifiez des valeurs séparées par des virgules qui sont autorisées dans le champ **[!UICONTROL Valeurs]**.
 
-1. Appuyez sur **[!UICONTROL Créer]**. 
+1. Appuyez sur **[!UICONTROL Créer]**.
 
    La variable est créée et répertoriée dans le volet Variables.
 
