@@ -18,7 +18,7 @@ ht-degree: 72%
 ---
 
 
-# Débogage des formulaires HTML5  {#debugging-html-forms}
+# Débogage des formulaires HTML5 {#debugging-html-forms}
 
 Ce document comprend plusieurs scénarios de résolution des problèmes. Pour chaque scénario, certaines étapes sont fournies pour résoudre le problème. Procédez comme suit et, si le problème persiste, configurez le journal pour obtenir et parcourir les journaux et rechercher les erreurs/avertissements. Pour plus d’informations sur la journalisation des formulaires HTML5, voir [Génération de journaux pour les formulaires HTML5](/help/forms/using/enable-logs.md).
 
