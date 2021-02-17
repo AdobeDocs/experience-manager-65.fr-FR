@@ -51,7 +51,7 @@ Le processus de mise à jour des copies de langue comprend les options suivantes
 
 Vous pouvez également créer des copies de langue temporaires pour les fragments en procédant de la même manière que pour créer des copies temporaires pour les ressources. Pour plus d’informations, reportez-vous à la section [Création de copies de langue temporaires pour les ressources](translation-projects.md#creating-temporary-language-copies).
 
-## Traduction de fragments de supports variés  {#translating-mixed-media-fragments}
+## Traduction de fragments de supports variés {#translating-mixed-media-fragments}
 
 AEM vous permet de traduire des fragments de contenu qui incluent diverses types de ressources multimédia et de collections. Si vous traduisez un fragment de contenu qui comprend des ressources intégrées, les copies traduites de ces ressources sont stockées à la racine de la langue cible.
 
