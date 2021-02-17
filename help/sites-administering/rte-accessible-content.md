@@ -106,7 +106,7 @@ RTE peut utiliser les balises `strong` et `em` à la place de `b` et `i`. Ajoute
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
 
-   vers :
+   vers:
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
 
@@ -118,7 +118,7 @@ RTE peut utiliser les balises `strong` et `em` à la place de `b` et `i`. Ajoute
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
-   vers :
+   vers:
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`.
 
