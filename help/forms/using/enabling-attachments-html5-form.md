@@ -17,7 +17,7 @@ ht-degree: 68%
 ---
 
 
-# Activation des pièces jointes à un formulaire HTML5  {#enabling-attachments-for-an-html-form}
+# Activation des pièces jointes à un formulaire HTML5 {#enabling-attachments-for-an-html-form}
 
 Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec des formulaires HTML5. Par défaut, la prise en charge des pièces jointes est désactivée. Pour activer la prise en charge des pièces jointes :
 
