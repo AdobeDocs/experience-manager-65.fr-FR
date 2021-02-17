@@ -33,7 +33,7 @@ AEM Forms fournit un composant Tableau dans l’explorateur de composants de la 
 * Prise en charge de l’ajout de lignes ou de cellules à l’aide d’éléments complexes de type XSD
 * Fusion des données à partir d’un fichier XML
 
-## Création d’un tableau  {#create-a-table}
+## Création d’un tableau {#create-a-table}
 
 Pour créer un tableau, faites glisser un composant Tableau à partir de l’explorateur de composants du panneau latéral d’un formulaire adaptatif. Par défaut, le tableau contient deux colonnes et trois lignes, dont la ligne d’en-tête.
 
