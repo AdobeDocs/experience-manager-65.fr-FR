@@ -275,7 +275,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 
 * Le champ [!UICONTROL Lien vers ] des propriétés du composant affiche des suggestions de saisie automatique qui ne correspondent pas à la chaîne spécifiée (NPR-34865).
 
-* aem affiche le message d&#39;erreur suivant lorsque vous planifiez une période de maintenance quotidienne distribuée entre 2 jours (NPR-35280) :
+* AEM affiche le message d&#39;erreur suivant lorsque vous planifiez une période de maintenance quotidienne distribuée entre 2 jours (NPR-35280) :
 
    ```TXT
    ERROR The start time must precede (be less than) the end time
@@ -360,7 +360,7 @@ Pour plus d’informations sur les mises à jour de sécurité, voir [Experience
 
 **Configuration requise et informations supplémentaires**
 
-* aem 6.5.7.0 requiert AEM 6.5. Voir [documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour obtenir des instructions détaillées.
+* AEM 6.5.7.0 requiert AEM 6.5. Voir [documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour obtenir des instructions détaillées.
 * Le téléchargement du Service Pack est disponible sur l&#39;Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 * Lors d’un déploiement avec MongoDB et plusieurs instances, installez AEM 6.5.7.0 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.
 
@@ -426,7 +426,7 @@ Pour connaître les plates-formes certifiées pour fonctionner avec cette versio
 
 >[!NOTE]
 >
->aem 6.5.7.0 inclut une nouvelle version du [package de compatibilité AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Si vous utilisez une ancienne version du package de compatibilité AEM Forms et que vous mettez à jour vers AEM 6.5.7.0, installez la dernière version du package après l&#39;installation du package Forms-Ajoute-On.
+>AEM 6.5.7.0 inclut une nouvelle version du [package de compatibilité AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Si vous utilisez une ancienne version du package de compatibilité AEM Forms et que vous mettez à jour vers AEM 6.5.7.0, installez la dernière version du package après l&#39;installation du package Forms-Ajoute-On.
 
 ### Installer Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
