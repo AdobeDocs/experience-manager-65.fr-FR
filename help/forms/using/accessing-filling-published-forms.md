@@ -65,7 +65,7 @@ La recherche avancée vous permet de rechercher des formulaires en fonction de p
 
 Le composant Lister affiche des formulaires en fonction de paramètres de recherche. Chaque formulaire dans le résultat de la recherche est signalé par une icône, qui est liée au formulaire associé. Pour ouvrir et utiliser le formulaire associé, cliquez sur l’icône.
 
-### Remplissage d’un formulaire  {#filling-a-form}
+### Remplissage d’un formulaire {#filling-a-form}
 
 ![Exemple de formulaire adaptatif](assets/filling_a_form.png)
 
