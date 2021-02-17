@@ -26,7 +26,7 @@ ht-degree: 69%
 
 Vérifiez si des erreurs s’affichent sur la console JavaScript du navigateur. Les erreurs non prises en charge peuvent empêcher le code suivant de s’exécuter correctement. S’il y a des erreurs, vérifiez le script à l’origine de chaque erreur et dans quelle zone celle-ci s’est produite. Le chemin d’accès au script peut donner une indication de la fonctionnalité à laquelle le script est associé.
 
-### Connexion au niveau du composant  {#logging-on-component-level}
+### Connexion au niveau du composant {#logging-on-component-level}
 
 Dans certains cas, il peut s’avérer utile d’ajouter des instructions au niveau du composant. Puisque le composant est rendu, vous pouvez ajouter un balisage temporaire pour afficher les valeurs de variable qui pourraient vous aider à identifier les problèmes potentiels. Par exemple :
 
