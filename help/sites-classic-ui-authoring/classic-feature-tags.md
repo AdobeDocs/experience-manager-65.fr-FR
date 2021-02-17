@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 78%
 Les balises sont un moyen simple et rapide de classer le contenu de votre site web. Les balises sont en quelque sorte des mots-clés ou des libellés qu’il est possible d’associer à une page, à une ressource ou à tout autre type de contenu, pour permettre aux fonctions de recherche de retrouver le contenu en question et son contenu associé.
 
 * Voir [Administration des balises](/help/sites-administering/tags.md) pour plus d&#39;informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
-* Voir [Balisage pour les développeurs](/help/sites-developing/tags.md) pour plus d’informations sur la structure de balisage ainsi que sur l’inclusion et l’extension de balises dans les applications personnalisées.
+* Voir [Balisage pour les développeurs](/help/sites-developing/tags.md) pour plus d’informations sur l’environnement de balisage et sur l’inclusion et l’extension de balises dans les applications personnalisées.
 
 ## Dix raisons d’utiliser les balises {#ten-reasons-to-use-tagging}
 
@@ -40,7 +40,7 @@ Les balises sont un moyen simple et rapide de classer le contenu de votre site w
 
 Lors de la conception de la structure du contenu d’un site et du schéma de métadonnées des ressources, pensez à l’approche légère et accessible qu’offre le balisage.
 
-## Application de balises    {#applying-tags}
+## Application de balises {#applying-tags}
 
 Dans l’environnement de développement de contenu, les auteurs peuvent appliquer des balises en accédant aux propriétés de la page et en entrant une ou plusieurs balises dans le champ **Balises/Mots-clés**.
 
