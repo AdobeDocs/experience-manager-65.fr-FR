@@ -39,7 +39,7 @@ L’interface de l’éditeur de boîtes de dialogue est composée de quatre pan
 * Le volet **render**, au centre de la fenêtre. ce panneau affiche le rendu en tant que boîte de dialogue de la définition de boîte de dialogue définie dans le panneau Structure.
 * **Propriétés** : ce panneau affiche les propriétés du nœud actuellement sélectionné dans le panneau Structure.
 
-### Utilisation de l’éditeur de boîtes de dialogue  {#using-the-dialog-editor}
+### Utilisation de l’éditeur de boîtes de dialogue {#using-the-dialog-editor}
 
 Pour créer une boîte de dialogue, vous devez effectuer un glisser-déposer des éléments de la palette dans le panneau Structure en les positionnant dans la hiérarchie de la définition de boîte de dialogue.
 
