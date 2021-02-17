@@ -92,7 +92,7 @@ Cette icône représente un package Version du contenu pour l’interpréteur d�
 
 Cette icône représente un package Version du contenu pour le contenu de l’application
 
-### Mosaïque PhoneGap Build  {#the-phonegap-build-tile}
+### Mosaïque PhoneGap Build {#the-phonegap-build-tile}
 
 Le **PhoneGap Build Tile** se connecte à [https://build.phonegap.com](https://build.phonegap.com) pour créer et héberger des buids distants. Une fois générée, la compilation est disponible sous forme de téléchargement ou est déployée directement sur votre appareil à l’aide d’un code QR.
 
