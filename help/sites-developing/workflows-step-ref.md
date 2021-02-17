@@ -36,7 +36,7 @@ Les modèles de workflow se composent d’une série d’étapes de différents 
 
 
 
-## Propriétés des étapes  {#step-properties}
+## Propriétés des étapes {#step-properties}
 
 Chaque composant d’étape dispose d’une boîte de dialogue **Propriétés des étapes** pour définir et modifier les propriétés requises.
 
