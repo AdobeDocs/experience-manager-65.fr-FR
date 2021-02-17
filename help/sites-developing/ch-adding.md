@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Ajout de ContextHub à des pages et accès à des magasins  {#adding-contexthub-to-pages-and-accessing-stores}
+# Ajout de ContextHub à des pages et accès à des magasins {#adding-contexthub-to-pages-and-accessing-stores}
 
 Ajoutez ContextHub à vos pages pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub.
 
