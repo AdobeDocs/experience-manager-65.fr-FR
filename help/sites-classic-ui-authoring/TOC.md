@@ -14,7 +14,7 @@ ht-degree: 84%
 ---
 
 
-# aem 6.5 Classic UI Authoring User Guide {#classic-ui}
+# AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
 
 + [Présentation du guide de création d’interface utilisateur classique](home.md)
 + Présentation de la création d’interface utilisateur classique {#introduction}
@@ -37,7 +37,7 @@ ht-degree: 84%
    + [Modification des propriétés de page](classic-page-author-edit-page-properties.md)
    + [Annotations lors de la modification d’une page](classic-page-author-annotations.md)
    + [Résolution des problèmes d’AEM lors de la création](classic-page-author-troubleshooting.md)
-   + [Création d’un contenu accessible (conformité WCAG 2.0)](classic-page-author-accessible-content.md)
+   + [Création de contenu accessible (conformité WCAG 2.0)](classic-page-author-accessible-content.md)
    + [Création d’une page pour les appareils mobiles](classic-feature-mobile.md)
    + [Composants pour la création de page](classic-page-author-edit-mode.md)
    + [Raccourcis clavier lors de la modification de pages](classic-page-author-keyboard-shortcuts.md)
@@ -59,7 +59,7 @@ ht-degree: 84%
    + [Création de lancements](classic-launches-creating.md)
    + [Modification de lancements](classic-launches-editing.md)
    + [Conversion de lancements](classic-launches-promoting.md)
-+ Personnalisation   {#personalization}
++ Personnalisation {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
    + [Pages d’entrée](classic-personalization-campaigns-landingpage.md)
