@@ -24,7 +24,7 @@ ht-degree: 76%
 
 Cet article décrit la méthode d’intégration de la solution de création de correspondance dans votre environnement.
 
-## Appel basé sur une URL  {#url-based-invocation}
+## Appel basé sur une URL {#url-based-invocation}
 
 Il est possible d’appeler l’application de création de correspondance à partir d’un portail personnalisé en préparant une URL selon les paramètres de demande suivants :
 
