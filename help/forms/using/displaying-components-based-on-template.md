@@ -23,7 +23,7 @@ ht-degree: 75%
 
 Lorsqu’un auteur de formulaire crée un formulaire adaptatif à l’aide d’un [modèle](../../forms/using/template-editor.md), il peut consulter et utiliser des composants spécifiques en fonction de la stratégie de modèle. Vous pouvez spécifier une stratégie de contenu de modèle qui vous permet de sélectionner un groupe de composants visible par l’auteur de formulaire lors de la création de formulaires.
 
-## Modification de la stratégie de contenu d’un modèle  {#changing-the-content-policy-of-a-template}
+## Modification de la stratégie de contenu d’un modèle {#changing-the-content-policy-of-a-template}
 
 Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans le répertoire `/conf`, le chemin d’accès à votre modèle est le suivant : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
