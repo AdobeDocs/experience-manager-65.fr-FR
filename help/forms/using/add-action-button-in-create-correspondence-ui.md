@@ -33,7 +33,7 @@ Les éléments suivants sont requis pour terminer ce scénario :
 * Connaissances de CRX et Javascript
 * Serveur LiveCycle
 
-## Scénario : Création du bouton dans l’interface utilisateur de création de correspondance en vue de la révision d’une lettre  {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Scénario : Création du bouton dans l’interface utilisateur de création de correspondance en vue de la révision d’une lettre {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à l’interface utilisateur de création de correspondance comprend :
 
@@ -105,7 +105,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    La balise modelExtension dispose d’un jeu de balises enfant customAction qui permet de configurer l’action, les autorisations et l’aspect du bouton d’action. Voici la liste des balises de configuration customAction :
 
-   | **Nom** | **Description** |
+   | **Name** (Nom) | **Description** |
    |---|---|
    | name | Nom alphanumérique de l’action à exécuter. La valeur de cette balise est obligatoire, doit être unique (dans la balise modelExtension) et doit commencer par une lettre de l’alphabet. |
    | label | Libellé du bouton d’action. |
@@ -116,7 +116,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    Outre les paramètres ci-dessus, des configurations supplémentaires associées à une action personnalisée customAction peuvent exister. Ces configurations supplémentaires sont mises à la disposition du gestionnaire par le biais de l’objet CustomAction.
 
-   | **Nom** | **Description** |
+   | **Name** (Nom) | **Description** |
    |---|---|
    | serviceName | Si une action personnalisée contient une balise enfant nommée serviceName, puis en cliquant sur le bouton/lien approprié, un processus est appelé avec le nom représenté par la balise serviceName. Assurez-vous que ce processus a la même signature que le post-processus de lettre. Ajoutez le préfixe « Flux de travail Forms - > » au nom du service. |
    | Paramètres contenant le préfixe cm_ dans le nom de balise | Si une action personnalisée contient une balise enfant dont le nom commence par cm_, ces paramètres sont disponibles dans le code XML d’entrée sous la balise appropriée avec le préfixe cm_, dans le post-processus (qu’il s’agisse du post-processus de lettre ou du processus spécial représenté par la balise serviceName). |
