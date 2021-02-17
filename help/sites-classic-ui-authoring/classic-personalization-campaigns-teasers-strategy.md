@@ -37,7 +37,7 @@ Dans AEM, les teasers sont constitués de plusieurs parties :
 * Les **paragraphes de teaser** sont de véritables instances de votre teaser au sein d’une page de contenu. Ceux-ci incitent un segment de visiteurs à consulter du contenu centré sur leurs intérêts.
 * Les pages qui présentent le contenu de la campagne centré sur un segment de visiteurs spécifique. Généralement, les paragraphes de teaser dirigent le visiteur jusqu’à des pages de ce type.
 
-## Stratégies  {#strategies}
+## Stratégies {#strategies}
 
 Lorsque vous ajoutez un paragraphe de teaser à une page, vous devez définir la **Stratégie**.
 
