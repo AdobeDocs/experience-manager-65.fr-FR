@@ -102,7 +102,7 @@ La console Sites propose deux options de publication :
 * [Publication rapide](/help/sites-authoring/publishing-pages.md#quick-publish)
 * [Gérer la publication](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### Publication rapide   {#quick-publish}
+#### Publication rapide  {#quick-publish}
 
 L’option **Publication rapide** concerne les cas simples. Elle publie immédiatement la ou les pages sélectionnées sans aucune autre interaction. De ce fait, toute autre référence non publiée l’est aussi automatiquement.
 
