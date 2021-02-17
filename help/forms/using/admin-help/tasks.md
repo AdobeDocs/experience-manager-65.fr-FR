@@ -26,7 +26,7 @@ Utilisez la page Recherche de tâche pour rechercher les tâches par nom d’uti
 >
 >les recherches de tâches ne renvoient aucun résultat pour les noms d’utilisateur commençant par le signe dièse (#). Dans la mesure du possible, évitez de créer des noms d’utilisateur commençant par ce signe.
 
-## Recherche de tâches associées à un utilisateur  {#search-for-tasks-associated-with-a-user}
+## Recherche de tâches associées à un utilisateur {#search-for-tasks-associated-with-a-user}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Recherche de tâche.
 1. Dans Rechercher par, sélectionnez Nom d’utilisateur. Si vous connaissez une partie du nom de l’utilisateur que vous recherchez, saisissez-la dans ce champ. Cliquez sur Rechercher un utilisateur.
@@ -68,7 +68,7 @@ Pour chaque affectation de tâche, la liste présente les informations suivantes
 
 **Nom :** nom de l’utilisateur.
 
-**Etat :** Affecté signifie que la tâche est actuellement affectée à l’utilisateur. Non affecté signifie que la tâche a été affectée auparavant à l’utilisateur.
+**Etat :** Affecté signifie que la tâche est actuellement attribuée à l’utilisateur. Non affecté signifie que la tâche a été affectée auparavant à l’utilisateur.
 
 **ID de liste de tâches :** identifiant numérique de la file d’attente d’utilisateur à laquelle appartient la tâche. Un processus peut être partagé par plusieurs utilisateurs.
 
