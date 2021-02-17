@@ -128,7 +128,7 @@ où `<<YOUR_PROFILE>>` et `<<ADDITIONAL_FLAGS>>` sont remplacés par le profil e
 
 * Si vous utilisez Java 7, ajoutez le paramètre `-XX:MaxPermSize=2048m` juste après le paramètre `-Xmx`.
 
-Pour plus d’informations sur l’utilisation de l’outil crx2oak, reportez-vous à la section [Utilisation de l’outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md). Le fichier JAR auxiliaire de crx2oak peut être mis à niveau manuellement, si nécessaire, en le remplaçant manuellement par des versions récentes après la décompression du démarrage rapide. Son emplacement dans le dossier d’installation AEM est le suivant :  `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. La dernière version de l’outil de migration CRX2Oak peut être téléchargée sur Adobe Repository, à l’adresse : [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
+Pour plus d’informations sur l’utilisation de l’outil crx2oak, reportez-vous à la section [Utilisation de l’outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md). Le fichier JAR auxiliaire de crx2oak peut être mis à niveau manuellement, si nécessaire, en le remplaçant manuellement par des versions récentes après la décompression du démarrage rapide. Son emplacement dans le dossier d’installation AEM est le suivant : `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. La dernière version de l’outil de migration CRX2Oak peut être téléchargée sur Adobe Repository, à l’adresse : [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
 Si la migration a réussi, l’outil quitte avec un code de sortie égal à 0. Cherchez également des messages AVERTISSEMENT et ERREUR dans le fichier `upgrade.log`, disponible sous `crx-quickstart/logs` dans le répertoire d’installation d’AEM, car ils peuvent indiquer des erreurs non fatales qui se sont produites lors de la migration.
 
@@ -138,7 +138,7 @@ Vérifiez les fichiers de configuration situés sous le dossier `crx-quickstart/
 
 Lorsque `FileDataStore` est la nouvelle valeur par défaut pour des installations AEM 6.3, l’utilisation d’un magasin de données externe n’est pas nécessaire. Même si les meilleures pratiques recommandent d’utiliser un magasin de données externe pour les déploiements en environnement de production, cela n’est pas un prérequis pour la mise à niveau. En raison de la complexité existante lors de la mise à niveau d’AEM, il est recommandé d’effectuer la mise à niveau sans migrer le magasin de données. Si vous le souhaitez, vous pouvez effectuer la migration du magasin de données séparément.
 
-## Dépannage des problèmes de migration  {#troubleshooting-migration-issues}
+## Dépannage des problèmes de migration {#troubleshooting-migration-issues}
 
 Veuillez ignorer cette section si vous effectuez une mise à niveau à partir de la version 6.3. Même si les profils crx2oak fournis doivent répondre aux besoins de la plupart des clients, des paramètres supplémentaires sont parfois nécessaires. Si une erreur se produit lors de la migration, certains aspects de l’environnement peuvent nécessiter des options de configuration supplémentaires. Si c’est le cas, l’erreur qui se produit est probablement la suivante :
 
