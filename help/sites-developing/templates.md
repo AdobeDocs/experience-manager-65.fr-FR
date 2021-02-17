@@ -70,7 +70,7 @@ Avantages des modèles modifiables :
 Les modèles statiques :
 
 * Doivent être définis et configurés par vos développeurs.
-* Il s&#39;agissait du système de modèle d&#39;AEM d&#39;origine et a été disponible pour de nombreuses versions.
+* Il s&#39;agissait du système de modèle d&#39;AEM d&#39;origine et il a été disponible pour de nombreuses versions.
 * Un modèle statique est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
 * Sont copiés pour créer la nouvelle page, aucune connexion dynamique n’existe après cela.
 * Utilisez le [mode Conception](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
@@ -81,7 +81,7 @@ Les modèles statiques :
 >
 >À l&#39;AEM 6.5, l&#39;utilisation de modèles statiques n&#39;est pas considérée comme une bonne pratique. Privilégiez les modèles modifiables à la place.
 >
->[aem ](modernization-tools.md) ModernisationTools peut vous aider à migrer des modèles statiques vers des modèles modifiables.
+>[AEM ](modernization-tools.md) ModernisationTools peut vous aider à migrer des modèles statiques vers des modèles modifiables.
 
 ### Disponibilité des modèles {#template-availability}
 
@@ -141,6 +141,6 @@ Vous pouvez appliquer la propriété `cq:allowedTemplates` sur le nœud `jcr:con
 
 Si vous souhaitez ajouter d’autres contraintes, par exemple concernant la hiérarchie des modèles, vous pouvez appliquer les propriétés `allowedParents/allowedChildren` sur le modèle. Vous pouvez ensuite spécifier explicitement que les pages créées à partir d’un modèle T doivent être des parents/enfants de pages créées à partir d’un modèle T.
 
-## Modèles - Fragments de contenu  {#templates-content-fragments}
+## Modèles - Fragments de contenu {#templates-content-fragments}
 
 Voir [Modèles de fragment de contenu](/help/sites-developing/content-fragment-templates.md) pour plus d’informations.
