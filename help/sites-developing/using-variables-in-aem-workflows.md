@@ -36,7 +36,7 @@ Les variables sont une extension de l&#39;interface [MetaDataMap](https://helpx.
 
 ## Créer une variable {#create-a-variable}
 
-Vous pouvez créer des variables à l’aide de la section Variables disponible dans le panneau latéral du modèle de flux de travail. aem variables de processus prennent en charge les types de données suivants :
+Vous pouvez créer des variables à l’aide de la section Variables disponible dans le panneau latéral du modèle de flux de travail. AEM variables de processus prennent en charge les types de données suivants :
 
 * **Types** de données primitifs : Long, Doublon, Boolean, Date et String
 * **Types** de données complexes :  [](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html) XMLet  [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)
