@@ -17,7 +17,7 @@ ht-degree: 91%
 ---
 
 
-# Structure de l’apparence des formulaires adaptatifs et HTML5  {#appearance-framework-for-adaptive-and-html-forms}
+# Structure de l’apparence des formulaires adaptatifs et HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
 Les formulaires (formulaires adaptatifs et HTML5) utilisent [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) et [Underscore.js](https://underscorejs.org/) pour l’apparence et les scripts. Les formulaires utilisent également l’architecture des [jQuery UI](https://jqueryui.com/) **widgets** pour tous les éléments interactifs (comme les champs ou les boutons) qu’ils contiennent. Cette architecture permet aux développeurs de formulaires d’utiliser un riche ensemble de widgets et modules externes jQuery disponibles dans les formulaires. Vous pouvez également implémenter une logique spécifique au formulaire lors de l’acquisition des données des utilisateurs comme les restrictions leadDigits/trailDigits ou l’implémentation de clauses d’image. Les développeurs de formulaires peuvent créer et utiliser des apparences personnalisées pour améliorer l’expérience d’acquisition des données et la rendre plus conviviale.
 
@@ -231,7 +231,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 
 ### NumericEdit : champ numérique, champ décimal  {#numericedit-numericfield-decimalfield}
 
-| Options  | Description |
+| Options | Description |
 |---|---|
 | dataType | Chaîne représentant le type de données du champ (entier/décimal). |
 | leadDigits | Nombre maximal de chiffres autorisés dans le nombre décimal. |
@@ -244,7 +244,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 <table>
  <tbody>
   <tr>
-   <th>Options </th>
+   <th>Options</th>
    <th>Description</th>
   </tr>
   <tr>
