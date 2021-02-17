@@ -58,7 +58,7 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 Vous trouverez plus d’informations sur les profils Mobile Form dans la section [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
 
-## Nouveaux processus de rendu et d’envoi de formulaire HTML  {#new-html-form-render-amp-submit-processes}
+## Nouveaux processus de rendu et d’envoi de formulaire HTML {#new-html-form-render-amp-submit-processes}
 
 Pour chaque opération « AssignTask », spécifiez un processus de rendu et d’envoi avec le formulaire. Ces processus sont appelés par les API TaskManager `renderForm` et `submitForm`   pour autoriser la gestion personnalisée. Sémantique de ces processus pour un nouveau formulaire HTML :
 
