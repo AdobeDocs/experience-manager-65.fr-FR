@@ -18,7 +18,7 @@ ht-degree: 88%
 ---
 
 
-# Configuration d’une page pour la modification en masse des propriétés de page  {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configuration d’une page pour la modification en masse des propriétés de page {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 La [modification des propriétés de page](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) vous permet de modifier les propriétés de plusieurs pages à la fois.
 
