@@ -134,7 +134,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Indiquez une configuration d’exportation.
 
-### Miniature   {#thumbnail}
+### Miniature  {#thumbnail}
 
 * **Miniature de page**
 
@@ -154,7 +154,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation   {#personalization}
+### Personnalisation  {#personalization}
 
 * **Personnalisation**
 
