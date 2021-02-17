@@ -14,14 +14,14 @@ translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 workflow-type: tm+mt
 source-wordcount: '2197'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
 
 # Concepts de l’interface utilisateur (IU) tactile d’AEM{#concepts-of-the-aem-touch-enabled-ui}
 
-aem dispose d&#39;une interface utilisateur tactile [adaptée](/help/sites-authoring/responsive-layout.md) pour l&#39;environnement auteur, conçue pour fonctionner à la fois sur les périphériques tactiles et de bureau.
+AEM dispose d&#39;une interface utilisateur tactile [adaptée](/help/sites-authoring/responsive-layout.md) pour l&#39;environnement auteur, conçue pour fonctionner à la fois sur les périphériques tactiles et de bureau.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ FileThe Granite UI :
 * [Composants de base de l’IU Granite](#granite-ui-foundation-components) Cette bibliothèque de composants de base (Foundation) peut être utilisée ou étendue par d’autres bibliothèques.
 * [Composants d’administration de l’IU Granite](#granite-ui-administration-components)
 
-### Côté client / côté serveur  {#client-side-vs-server-side}
+### Côté client / côté serveur {#client-side-vs-server-side}
 
 La communication client-serveur au sein de l’IU Granite est constituée d’éléments hypertexte, et non d’objets. Il n’est donc pas nécessaire pour le client de comprendre la logique métier.
 
@@ -201,7 +201,7 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
 
 ### Composants de base de l’IU Granite {#granite-ui-foundation-components}
 
-Les [composants de base de l’IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les éléments nécessaires à la création d’une interface utilisateur. Ils comprennent, entre autres, les éléments suivants :
+Les [composants de base de l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les éléments nécessaires à la création d’une interface utilisateur. Ils comprennent, entre autres, les éléments suivants :
 
 * Bouton
 * Lien hypertexte
