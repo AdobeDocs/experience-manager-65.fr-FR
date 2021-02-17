@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 7bbafbd96ec92ed4278f6fa1d9899a3d59ee69ad
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 32%
+ht-degree: 49%
 
 ---
 
 
-# Création de projets AEM à l’aide d’Apache Maven  {#how-to-build-aem-projects-using-apache-maven}
+# Création de projets AEM à l’aide d’Apache Maven {#how-to-build-aem-projects-using-apache-maven}
 
-aem 6.5 respecte les meilleures pratiques en matière de gestion des paquets et de structure des projets, telles qu&#39;elles sont mises en oeuvre par le dernier AEM Project Archetype pour les mises en oeuvre sur site et AMS.
+AEM 6.5 respecte les bonnes pratiques de gestion des modules et de structure des projets, telles qu’elles sont mises en œuvre par le dernier archétype de projet AEM pour les implémentations On-Premise et AMS.
 
 >[!TIP]
 >
