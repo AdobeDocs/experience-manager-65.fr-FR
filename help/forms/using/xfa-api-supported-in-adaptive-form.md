@@ -228,7 +228,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
  </tbody>
 </table>
 
-### Validations  {#validations}
+### Validations {#validations}
 
 Le tableau suivant capture la manière dont les validations XFA sont associées aux validations dans les formulaires adaptatifs.   
 
