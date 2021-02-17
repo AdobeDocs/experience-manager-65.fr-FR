@@ -24,7 +24,7 @@ Le gestionnaire des utilisateurs vous permet également d’activer l’authenti
 
 Pour plus d’informations sur l’amélioration des performances de synchronisation de la base de données et de l’annuaire pour DB2, voir [Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
-## Configuration de User Management pour un serveur LDAP compatible SSL  {#configuring-user-management-for-an-ssl-enabled-ldap-server}
+## Configuration de User Management pour un serveur LDAP compatible SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
 Si vous disposez d’un serveur LDAP compatible SSL, configurez User Management en conséquence (voir [Configuration de User Management pour un serveur LDAP compatible SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)).
 
