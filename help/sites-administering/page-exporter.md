@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 6aee1506b54a932bae8f2521fce4488de7d2a52a
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 29%
+ht-degree: 30%
 
 ---
 
 
 # Exportateur de page{#the-page-exporter}
 
-aem vous permet d’exporter une page en tant que page Web complète comprenant des images, des fichiers `.js` et `.css`.
+AEM vous permet d’exporter une page en tant que page Web complète comprenant des images, des fichiers `.js` et `.css`.
 
 Une fois configurée, vous demandez une exportation de page à partir de votre navigateur en remplaçant `html` par `export.zip` dans l’URL. Ceci génère un fichier d’archive (zip) contenant la page rendue au format html, ainsi que les ressources référencées. Tous les chemins de la page (par exemple, les chemins d’accès aux images) sont réécrits pour pointer vers les fichiers inclus dans l’archive ou vers les ressources du serveur. Le fichier d’archive (zip) peut ensuite être téléchargé à partir de votre navigateur.
 
