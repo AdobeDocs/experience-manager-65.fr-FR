@@ -24,7 +24,7 @@ Utilisez la page Recherche de processus pour entrer les critères de recherche q
 
 Vous pouvez entrer des critères de base pour effectuer une recherche générale, des attributs spécifiques pour effectuer une recherche détaillée, ou une combinaison de critères de base et d’attributs spécifiques pour effectuer une recherche combinée.
 
-## Exécution d’une recherche générale  {#perform-a-general-search}
+## Exécution d’une recherche générale {#perform-a-general-search}
 
 Si vous souhaitez rechercher un processus, utilisez une recherche générale si vous connaissez l’identificateur de processus de l’instance du processus, si vous recherchez un groupe d’instances de processus liées, ou si seulement quelques instances de processus sont en cours d’exécution.
 
