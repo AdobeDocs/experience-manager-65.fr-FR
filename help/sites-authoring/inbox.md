@@ -64,7 +64,7 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 >
 >Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-authoring/basic-handling.md#card-view).
 
-## Tâches administratives prêtes à l’emploi   {#out-of-the-box-administrative-tasks}
+## Tâches administratives prêtes à l’emploi  {#out-of-the-box-administrative-tasks}
 
 AEM est fourni avec quatre tâches prêtes à l’emploi attribuées au groupe d’utilisateurs administrateurs.
 
@@ -73,7 +73,7 @@ AEM est fourni avec quatre tâches prêtes à l’emploi attribuées au groupe d
 * Autoriser la collecte de statistiques d’utilisation agrégées
 * [Configurer HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Ouverture de la boîte de réception    {#opening-the-inbox}
+## Ouverture de la boîte de réception   {#opening-the-inbox}
 
 Pour ouvrir la boîte de réception des notifications AEM :
 
