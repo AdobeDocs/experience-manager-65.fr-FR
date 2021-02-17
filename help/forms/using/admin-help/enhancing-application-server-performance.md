@@ -22,7 +22,7 @@ ht-degree: 95%
 
 Cette section décrit les paramètres facultatifs que vous pouvez configurer pour améliorer les performances du serveur d’applications AEM forms.
 
-## Configuration des sources de données du serveur d’applications  {#configuring-application-server-data-sources}
+## Configuration des sources de données du serveur d’applications {#configuring-application-server-data-sources}
 
 AEM forms utilise le référentiel AEM forms comme source de données. Le référentiel AEM forms stocke les actifs de l’application et, lors de l’exécution, les services peuvent récupérer ces derniers dans le cadre d’un processus métier automatisé.
 
