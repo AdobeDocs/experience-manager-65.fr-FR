@@ -45,7 +45,7 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
    * **`class {String}` :** cette propriété peut être utilisée pour spécifier des noms de classe CSS à ajouter à l’élément wrapper.
    * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
 
-## Contrôles de script  {#script-controls}
+## Contrôles de script {#script-controls}
 
 Le comportement de l’enveloppe diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément.
 
