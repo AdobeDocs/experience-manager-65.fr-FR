@@ -27,7 +27,7 @@ ht-degree: 4%
 
 Pour commencer à créer un site communautaire :
 
-Utilisation de l’[instance d’auteur](https://localhost:4502/)
+Utilisation de l’instance d’auteur [](https://localhost:4502/)
 
 * Connectez-vous avec les droits d’administrateur et accédez à **[!UICONTROL Communautés]** > **[!UICONTROL Sites]**.
 
@@ -102,7 +102,7 @@ Les balises qui peuvent être appliquées au contenu de la communauté sont cont
 
 En outre, la sélection des Espaces de nommage de balises pour le site communautaire limite la sélection présentée lors de la définition de catalogues et de ressources d’activation. Voir [Ressources d’activation du balisage](/help/communities/tag-resources.md) pour obtenir des informations importantes.
 
-La recherche d&#39;espaces de nommage est facile avec la recherche par type. Par exemple :
+La recherche d&#39;espaces de nommage est facile avec la recherche par type. Par exemple,
 
 * Type `tut`
 * Sélectionner `Tutorial`
@@ -115,7 +115,7 @@ La recherche d&#39;espaces de nommage est facile avec la recherche par type. Par
 
 Pour permettre à un membre de la communauté (ou à un groupe de membres) de découvrir le site en tant que responsable de la communauté, utilisez la recherche par type et sélectionnez le nom du membre ou du groupe dans les options de la liste déroulante.
 
-Par exemple :
+Par exemple,
 
 * Type `q`
 * Sélectionnez [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
