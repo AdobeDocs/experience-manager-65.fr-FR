@@ -76,7 +76,7 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 >・ Base de données IBM DB2
 >・ Systèmes d’exploitation IBM AIX et Sun Solaris
 >
->Pour les nouvelles installations, dans la mesure du possible, il est recommandé de déployer AEM Forms sur la pile OSGi moderne afin de tirer parti des dernières innovations en matière d’intégration de données adaptatives adaptative Forms adaptée aux périphériques mobiles, aux communications interactives multicanaux et aux intégrations de données dorsales à l’aide du modèle de données de formulaire.
+>Pour les nouvelles installations, dans la mesure du possible, il est recommandé de déployer AEM Forms sur la pile OSGi moderne afin de tirer parti des dernières innovations en matière d’intégration adaptative Forms adaptée pour les communications interactives mobiles, multicanaux et les intégrations de données d’arrière-plan à l’aide du modèle de données de formulaire.
 >
 >Nous reconnaissons que les utilisateurs existants doivent continuer à déployer la pile AEM Forms on JEE. Dans ce cas, l’Adobe nécessite le déploiement d’AEM Forms JEE sur l’infrastructure prise en charge, comme décrit dans la présente documentation. Si vous effectuez une mise à niveau vers AEM 6.5 Forms et utilisez une plateforme non prise en charge dans la version précédente de AEM Forms, vous pouvez contacter l’assistance Adobe pour obtenir de l’aide sur la mise à niveau vers une plateforme prise en charge.
 
