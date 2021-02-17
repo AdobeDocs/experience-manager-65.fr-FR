@@ -18,7 +18,7 @@ ht-degree: 79%
 ---
 
 
-# Configuration du planificateur de synchronisation  {#configuring-the-synchronization-scheduler}
+# Configuration du planificateur de synchronisation {#configuring-the-synchronization-scheduler}
 
 Par défaut, le planificateur de synchronisation s’exécute toutes les 3 minutes pour synchroniser toutes les ressources modifiées et mises à jour dans le référentiel via LiveCycle Workbench 11. Les applications contenant des formulaires ou des ressources sont visibles dans l’interface utilisateur d’AEM Forms une fois le processus de synchronisation terminé.
 
