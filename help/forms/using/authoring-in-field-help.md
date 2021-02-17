@@ -25,7 +25,7 @@ Dans certains cas, les utilisateurs finaux qui remplissent un formulaire ne sont
 
 Cet article décrit comment les auteurs de formulaires peuvent ajouter une aide contextuelle lors de la création de formulaires adaptatifs.
 
-## Ajout d’une aide contextuelle  {#add-in-context-help}
+## Ajout d’une aide contextuelle {#add-in-context-help}
 
 Vous pouvez spécifier une aide contextuelle à l’aide des options suivantes dans la section Contenu de l’aide de l’onglet Propriétés de la barre latérale.
 
