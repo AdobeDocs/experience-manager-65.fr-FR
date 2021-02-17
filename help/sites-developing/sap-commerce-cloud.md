@@ -24,7 +24,7 @@ ht-degree: 83%
 >
 >La structure eCommerce peut être utilisée avec n’importe quelle solution eCommerce. Certaines fonctionnalités et certains exemples traités ici font référence à la solution [hybris](https://www.hybris.com/).
 
-La structure d’intégration comprend une couche d’intégration avec une API. Ce permet d’effectuer les opérations suivantes :
+La structure d’intégration comprend une couche d’intégration avec une API. Cela vous permet de :
 
 * connecter un système eCommerce et d’extraire les données produit vers AEM ;
 
@@ -44,7 +44,7 @@ Un certain nombre de composants AEM prêts à l’emploi sont fournis pour utili
 
 Pour rechercher, le crochet d’intégration fourni vous permet d’utiliser la recherche AEM, la recherche du système eCommerce, une recherche tiers (comme Search&amp;Promote) ou une combinaison de ces éléments.
 
-## Sélection du moteur eCommerce  {#ecommerce-engine-selection}
+## Sélection du moteur eCommerce {#ecommerce-engine-selection}
 
 La structure eCommerce peut être utilisée avec n’importe quelle solution d’eCommerce. Le moteur utilisé doit être identifiable par AEM :
 
@@ -52,7 +52,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
 
    * Les moteurs peuvent être distingués par une propriété de service `commerceProvider`.
 
-* aem prend en charge `Resource.adaptTo()` pour `CommerceService` et `Product`
+* AEM prend en charge `Resource.adaptTo()` pour `CommerceService` et `Product`
 
    * L&#39;implémentation `adaptTo` recherche une propriété `cq:commerceProvider` dans la hiérarchie de la ressource :
 
@@ -566,11 +566,11 @@ L’intégration est fournie entre AEM et différents systèmes eCommerce. Elle 
 
 * Authentification
 
-   aem est présumé être l&#39;interface Web *uniquement* et effectue donc l&#39;authentification *all*.
+   AEM est présumé être l&#39;interface Web *uniquement* et effectue donc l&#39;authentification *all*.
 
 * Comptes en hybris
 
-   aem crée un compte (Secondaire) correspondant en hybris pour chaque acheteur. Le nom d’utilisateur de ce compte est identique à celui de l’AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
+   AEM crée un compte (Secondaire) correspondant en hybris pour chaque acheteur. Le nom d’utilisateur de ce compte est identique à celui de l’AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
 
 #### Utilisateurs préexistants {#pre-existing-users}
 
