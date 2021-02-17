@@ -20,7 +20,7 @@ ht-degree: 86%
 
 # Intégration d’AEM Forms Workspace à Microsoft Office SharePoint Server{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
-**- Conditions requises**
+**- Conditions préalables**
 
 **Connaissances préalablesAvant de pouvoir ajouter AEM Forms Workspace à SharePoint Server, vous devez avoir accès à SharePoint Server avec les privilèges appropriés et connaître l’URL d’accès à Workspace.**
 Les étapes ci-dessous supposent que vous connaissez SharePoint Server. Pour en savoir plus sur les composants Webpart de SharePoint Server, consultez Composants Webpart sous Windows SharePoint Services.
