@@ -46,7 +46,7 @@ Le SDK Adobe Mobile Analytics fournit les éléments suivants :
 
 Mosaïque Mesures du centre de commande AEM
 
-## Configuration du service cloud  {#configuring-the-cloud-service}
+## Configuration du service cloud {#configuring-the-cloud-service}
 
 Pour exploiter pleinement Adobe Mobile Services Analytics, vous devez configurer le service cloud AEM Mobile Analytics avec les informations de votre compte Adobe Analytics.
 
@@ -60,7 +60,7 @@ Pour exploiter pleinement Adobe Mobile Services Analytics, vous devez configurer
 
 1. Choisissez une configuration existante dans **Mobile Services** ou sélectionnez **Créer une configuration** pour en créer une nouvelle.
 
-   Pour la nouvelle configuration, saisissez **Propriétés des services mobiles** et cliquez sur **Vérifier.**
+   Pour la nouvelle configuration, saisissez les **propriétés des services mobiles** et cliquez sur **Vérifier.**
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
