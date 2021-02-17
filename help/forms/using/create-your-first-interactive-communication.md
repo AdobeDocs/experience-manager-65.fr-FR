@@ -60,7 +60,7 @@ Un opérateur de télécommunications envoie des factures mensuelles aux clients
 
 La première étape de la planification d’une communication interactive consiste à finaliser le contenu de cette dernière. Une fois le contenu finalisé, vous devez l’analyser pour identifier les différents types de ressources requis pour créer la communication interactive.
 
-**Goals:**
+**Objectifs:**
 
 Pour créer une anatomie pour la communication interactive avec les modes de saisie de données suivants :
 
@@ -78,7 +78,7 @@ Pour créer une anatomie pour la communication interactive avec les modes de sai
 
 Un modèle de données de formulaire vous permet de connecter une communication interactive à des sources de données disparates, par exemple, le profil utilisateur AEM, les services Web RESTful, les services Web basés sur SOAP, les services OData et les bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec une communication interactive pour extraire des données de sources de données connectées. Pour plus d’informations sur le modèle de données de formulaire, voir [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
-**Objectifs :**
+**Objectifs:**
 
 * Configurer l’instance de base de données (base de données MySQL) en tant que source de données
 * Créer le modèle de données de formulaire à l’aide de la base de données MySQL en tant que source de données
@@ -97,7 +97,7 @@ Un modèle de données de formulaire vous permet de connecter une communication 
 
 Les fragments de document sont des composants réutilisables d’une correspondance utilisés pour composer une communication interactive. Les fragments de document sont des fragments de type : Texte, Liste et Condition.
 
-**Objectifs :**
+**Objectifs:**
 
 * Créer des fragments de document
 * Créer des variables
@@ -115,7 +115,7 @@ Les modèles pour le canal d’impression sont créés dans Adobe Forms Designer
 
 Les modèles pour le canal web sont créés dans AEM. Les auteurs et les administrateurs de modèles peuvent créer, modifier et activer des modèles web. Une fois créés et activés, ces modèles sont disponibles pour être utilisés lors de la création d’une communication interactive.
 
-**Objectifs :**
+**Objectifs:**
 
 * Créer des modèles XDP pour le canal d’impression à l’aide d’Adobe Forms Designer
 * Télécharger les modèles XDP sur le serveur AEM Forms
@@ -131,7 +131,7 @@ Une fois que vous avez créé tous les blocs de construction, tels que le modèl
 
 Les communications interactives peuvent être fournies par deux canaux : impression et web. Vous pouvez également créer une communication interactive avec le canal d’impression comme option principale. L’impression comme option principale pour le canal web garantit que le contenu, l’héritage et la liaison des données du canal web sont dérivés du canal d’impression.
 
-**Objectifs :**
+**Objectifs:**
 
 * Créer une communication interactive pour le canal d’impression
 * Créer une communication interactive pour le canal web
@@ -148,7 +148,7 @@ Les communications interactives peuvent être fournies par deux canaux : impres
 
 Une fois que vous avez créé une communication interactive, il est important de tester chaque modification que vous y apportez. Testez tous les champs d’une communication interactive est fastidieux. AEM Forms fournit un SDK (Calvin SDK) pour automatiser les tests de communications interactives dans un navigateur web.
 
-**Objectifs :**
+**Objectifs:**
 
 * Créer une suite de tests
 * Créer des cas de test
@@ -160,7 +160,7 @@ Une fois que vous avez créé une communication interactive, il est important de
 
 Une fois que vous avez créé et testé les communications interactives à l’aide des canaux d’impression et web, vous pouvez publier ces ressources. Le cas d’utilisation décrit dans ce didacticiel porte sur l’intégration de ces ressources à un client de messagerie. Le client de messagerie sert de passerelle pour envoyer les communications interactives à plusieurs adresses électroniques.
 
-**Objectifs :**
+**Objectifs:**
 
 * Intégrer les communications interactives à un client de messagerie pour pouvoir envoyer une communication aux clients
 * Inclure un document PDF en tant que pièce jointe (communication interactive créée dans le canal d’impression)
