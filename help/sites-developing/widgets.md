@@ -116,7 +116,7 @@ Dans certains cas, une bibliothèque cliente ne doit être disponible que dans l
     }
 ```
 
-### Prise en main des exemples  {#getting-started-with-the-samples}
+### Prise en main des exemples {#getting-started-with-the-samples}
 
 Pour suivre les didacticiels de cette page, installez le package **Utilisation des widgets ExtJS** dans une instance d&#39;AEM locale et créez un exemple de page dans laquelle les composants seront inclus. Pour ce faire :
 
