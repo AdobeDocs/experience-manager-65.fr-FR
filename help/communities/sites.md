@@ -60,7 +60,7 @@ Dans le panneau Informations de base, un nom, une description et si le modèle e
 
    Bascule permettant de contrôler si le modèle est référencé.
 
-### Miniature   {#thumbnail}
+### Miniature  {#thumbnail}
 
 ![site-miniature](assets/site-thumbnail.png)
 
