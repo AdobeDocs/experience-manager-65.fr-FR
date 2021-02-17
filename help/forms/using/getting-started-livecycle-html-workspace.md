@@ -18,7 +18,7 @@ ht-degree: 82%
 ---
 
 
-# Prise en main de l’espace de travail AEM Forms  {#getting-started-with-aem-forms-workspace}
+# Prise en main de l’espace de travail AEM Forms {#getting-started-with-aem-forms-workspace}
 
 Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches suivantes :
 
