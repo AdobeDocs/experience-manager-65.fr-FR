@@ -41,13 +41,13 @@ Chacune des étapes suivantes est expliquée plus en détail dans le reste de ce
 >
 >Cette rubrique est basée sur Eclipse 4.3 (Kepler) et AEM 5.6.1.
 
-## Installation d’Eclipse  {#install-eclipse}
+## Installation d’Eclipse {#install-eclipse}
 
 Téléchargez « Eclipse IDE for Java EE Developers » (Environnement de développement intégré Eclipse pour développeurs Java EE) depuis la [page des téléchargements d’Eclipse](https://www.eclipse.org/downloads/).
 
 Installez Eclipse en suivant les [instructions d’installation](https://wiki.eclipse.org/Eclipse/Installation).
 
-## Configuration du projet AEM basé sur Maven  {#set-up-your-aem-project-based-on-maven}
+## Configuration du projet AEM basé sur Maven {#set-up-your-aem-project-based-on-maven}
 
 Ensuite, configurez votre projet à l’aide de Maven, comme décrit dans la section [Comment créer des projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
