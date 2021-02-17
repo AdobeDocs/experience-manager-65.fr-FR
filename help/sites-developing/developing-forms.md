@@ -43,7 +43,7 @@ Outre le [développement de nouveaux composants](/help/sites-developing/developi
 >
 >Ce document porte sur le développement de formulaires à l’aide des [composants Foundation](/help/sites-authoring/default-components-foundation.md) dans l’IU classique. Adobe recommande de tirer parti des nouveaux [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et des [conditions de masquage](/help/sites-developing/hide-conditions.md) pour le développement de formulaires dans l’interface utilisateur tactile.
 
-## Préchargement de valeurs de formulaire  {#preloading-form-values}
+## Préchargement de valeurs de formulaire {#preloading-form-values}
 
 Le composant de début de formulaire fournit un champ pour le **Chemin de chargement**, un chemin d’accès facultatif qui pointe vers un nœud du répertoire.
 
