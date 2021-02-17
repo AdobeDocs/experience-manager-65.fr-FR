@@ -134,7 +134,7 @@ Pour les champs dont le modèle est le schéma XML, les données sont remplies d
 >
 >Il est recommandé de ne pas utiliser de champs non liés dans les panneaux liés (panneaux avec une valeur `bindRef` non vides qui ont été créés en faisant glisser des composants depuis Sidekick ou l’onglet Sources de données). Cela peut entraîner une perte des données de ces champs non liés. Il est également recommandé que les noms des champs soient uniques dans le formulaire, notamment pour les champs non liés.
 
-#### Exemple sans wrapper afData et afBoundData  {#an-example-without-afdata-and-afbounddata-wrapper}
+#### Exemple sans wrapper afData et afBoundData {#an-example-without-afdata-and-afbounddata-wrapper}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><config>
