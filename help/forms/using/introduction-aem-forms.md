@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Pour en savoir plus sur les nouvelles fonctions et améliorations d’AEM Forms, voir [Les nouveautés d’AEM Forms](../../forms/using/whats-new.md).
 
-## A propos d’AEM Forms  {#about-aem-forms}
+## A propos d’AEM Forms {#about-aem-forms}
 
 Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer, publier et mettre à jour des formulaires numériques complexes tout en s’intégrant aux processus principaux, aux règles métier et aux données.
 
