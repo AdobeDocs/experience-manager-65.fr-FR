@@ -101,7 +101,7 @@ Un élément peut présenter les états suivants :
 
    Après la publication d’un élément, vous pouvez utiliser Forms Portal pour afficher l’ensemble des éléments sur une page Web. Pour plus d’informations, consultez la section [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
 
-## Publication de tous les actifs de Correspondence Management  {#publish-all-the-correspondence-management-assets}
+## Publication de tous les actifs de Correspondence Management {#publish-all-the-correspondence-management-assets}
 
 AEM Forms permet de modifier tous les actifs de Correspondence Management sur un serveur en une seule fois. Les éléments publiés comportent tous les actifs de Correspondence Management et dépendances connexes.
 
