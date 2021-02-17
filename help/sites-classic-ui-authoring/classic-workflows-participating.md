@@ -44,7 +44,7 @@ Vous pouvez effectuer les actions suivantes pour traiter un élément de travail
 
    Si vous vous rendez compte qu’une étape ou qu’une série d’étapes doit être répétée, vous pouvez revenir en arrière. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow retourne à l’étape spécifiée et poursuit à partir de là.
 
-## Participation aux workflows  {#participating-in-a-workflow}
+## Participation aux workflows {#participating-in-a-workflow}
 
 ### Notifications d’actions de workflow attribués {#notifications-of-assigned-workflow-actions}
 
