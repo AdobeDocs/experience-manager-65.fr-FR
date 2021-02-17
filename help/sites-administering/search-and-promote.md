@@ -125,7 +125,7 @@ Pour configurer le centre de données :
 
 1. Cliquez sur **Enregistrer**.
 
-## Ajout de composants Search&amp;Promote au sidekick  {#adding-search-promote-components-to-sidekick}
+## Ajout de composants Search&amp;Promote au sidekick {#adding-search-promote-components-to-sidekick}
 
 En mode création, modifiez un composant **par** pour autoriser les composants Search&amp;Promote dans le sidekick. (Voir la documentation [Composants](/help/sites-developing/components.md#addinganewcomponenttotheparagraphsystemdesignmode) pour en savoir plus.)
 
