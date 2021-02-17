@@ -33,7 +33,7 @@ En particulier, vous pouvez utiliser la fonction Projet de création pour simpli
 >
 >Voir [Rôles d’utilisateur dans un projet](/help/sites-authoring/projects.md#user-roles-in-a-project) pour plus d’informations sur l’affectation des rôles d’utilisateur et des workflows à certains types d’utilisateurs.
 
-## Exploration des workflows de séance photo de produit   {#exploring-product-photo-shoot-workflows}
+## Exploration des workflows de séance photo de produit  {#exploring-product-photo-shoot-workflows}
 
 La fonction Projet de création fournit divers modèles de projet pour satisfaire aux différentes exigences des projets. Le modèle **Projet de séance photo du produit** est prêt à l’emploi. Ce modèle inclut des workflows de séance photo qui permettent de lancer et de gérer des demandes de séance photo de produit. Il comprend également une série de tâches qui vous permettent d’obtenir des images numériques des produits par l’intermédiaire de processus de révision et d’approbation appropriés.
 
@@ -46,7 +46,7 @@ Le modèle comporte les workflows suivants :
 >
 >Le fichier CSV transféré dans la tâche Transférer la liste de plans du worfklow Séance photo du produit doit avoir pour nom shotlist.csv.
 
-## Création d’un projet de séance photo du produit  {#create-a-product-photo-shoot-project}
+## Création d’un projet de séance photo du produit {#create-a-product-photo-shoot-project}
 
 1. Dans la console **Projets**, appuyez/cliquez sur **Créer**, puis sélectionnez **Créer un projet** dans la liste.
 
