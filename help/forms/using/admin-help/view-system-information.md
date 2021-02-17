@@ -88,7 +88,7 @@ Le volet gauche de l’onglet Système affiche des renseignements relatifs au se
 
 **Date d’installation :** date (au format aaaa-mm-jj) à laquelle AEM forms a été installé.
 
-**aem forms Version :** version des AEM forms installés.
+**AEM forms Version :** version des AEM forms installés.
 
 **Version du correctif : numéro de correctif des formulaires** AEM.
 
