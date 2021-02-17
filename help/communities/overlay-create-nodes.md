@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -69,10 +69,10 @@ Certains noeuds du chemin d’accès sont des dossiers et d’autres sont des co
    * Sélectionner **[!UICONTROL Enregistrer tout]**
 1. Supprimer le `comments.jsp` par défaut
    * Sélectionner le noeud `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * Sélectionner **[!UICONTROL Supprimer]**
+   * Sélectionnez **[!UICONTROL Supprimer]**
 1. Supprimer le fichier comment.jsp par défaut
    * sélectionner le noeud `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Sélectionner **[!UICONTROL Supprimer]**
+   * Sélectionnez **[!UICONTROL Supprimer]**
    * Sélectionner **[!UICONTROL Enregistrer tout]**
 
 >[!NOTE]
