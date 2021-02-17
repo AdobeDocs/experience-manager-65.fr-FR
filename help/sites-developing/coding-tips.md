@@ -63,7 +63,7 @@ Idéalement, les noms doivent décrire clairement leur intention. Un test de cod
  </tbody>
 </table>
 
-### Ne pas se répéter   {#don-t-repeat-yourself}
+### Ne pas se répéter  {#don-t-repeat-yourself}
 
 DRY indique que le même ensemble de code ne doit jamais être dupliqué. Cela s’applique également aux éléments de type littéraux de chaîne. La duplication de code ouvre la porte à des erreurs chaque fois que quelque chose doit être modifié. Il faut absolument l’éliminer.
 
@@ -99,6 +99,6 @@ Pour le code Java, AEM prend en charge slf4j comme API standard pour la journali
 
 Dans le cas de JavaScript, *console.log* ne doit être utilisé que pendant le développement et toutes les informations du journal doivent être supprimées avant sa diffusion.
 
-### Éviter la programmation bête et méchante  {#avoid-cargo-cult-programming}
+### Éviter la programmation bête et méchante {#avoid-cargo-cult-programming}
 
 Évitez de copier du code sans comprendre sa fonction. En cas de doute, il est toujours préférable de demander à quelqu’un qui a plus d’expérience avec le module ou l’API qui pose un problème.
