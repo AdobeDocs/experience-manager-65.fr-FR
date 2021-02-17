@@ -17,7 +17,7 @@ ht-degree: 96%
 ---
 
 
-# Obtention de variables de tâche dans l’URL de résumé  {#getting-task-variables-in-summary-url}
+# Obtention de variables de tâche dans l’URL de résumé {#getting-task-variables-in-summary-url}
 
 La page Résumé affiche des informations liées aux tâches. Cet article décrit comment vous pouvez réutiliser les informations liées aux tâches dans la page Résumé.
 
