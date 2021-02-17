@@ -33,7 +33,7 @@ Vous pouvez également envoyer manuellement des courriers électroniques d’enr
 >
 >Il est également possible d’ajouter des utilisateurs invités directement par l’intermédiaire de l’annuaire LDAP (Lightweight Directory Access Protocol) référencé par Document Security ou lorsqu’un utilisateur ou un administrateur invite un nouvel utilisateur lors de la création ou de la modification d’une stratégie, déclenchant ainsi l’envoi d’un courrier électronique l’invitant à s’enregistrer. Les utilisateurs peuvent ajouter des utilisateurs invités à des stratégies si vous activez l’option correspondante dans la page Enregistrement d’utilisateur invité.
 
-## Ajout d’un utilisateur invité  {#add-an-invited-user}
+## Ajout d’un utilisateur invité {#add-an-invited-user}
 
 Vous pouvez ajouter un ou plusieurs comptes d’utilisateurs invités simultanément dans Document Security. Pour ajouter un compte d’utilisateur invité, vous devez connaître l’adresse électronique de l’utilisateur. Lorsque vous ajoutez un utilisateur, Document Security envoie un courrier électronique invitant l’utilisateur à s’enregistrer.
 
