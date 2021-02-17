@@ -23,7 +23,7 @@ ht-degree: 66%
 
 Vous avez besoin du matériel, des logiciels et licences ci-dessous pour générer et déployer l’application AEM Forms :
 
-## Pour les périphériques Windows  {#for-windows-devices}
+## Pour les périphériques Windows {#for-windows-devices}
 
 * Microsoft Windows 10
 * Microsoft Visual Studio 2015
