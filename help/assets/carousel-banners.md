@@ -64,7 +64,7 @@ Pour démarrer rapidement :
 
    Si vous êtes administrateur, vous pouvez personnaliser le comportement et l’apparence du carrousel en créant votre propre paramètre prédéfini de visionneuse de carrousel. L’avantage principal est que vous pouvez réutiliser ce paramètre prédéfini de visionneuse personnalisé pour plusieurs carrousels. Cependant, les utilisateurs ont également la possibilité de personnaliser le comportement et l’apparence du carrousel directement lors de sa création. Il s’agit de l’approche recommandée lorsque vous souhaitez une conception très spécifique d’un carrousel donné.
 
-1. [Chargement d’une bannière d’image](#uploading-image-banners).
+1. [Chargez une bannière d’image](#uploading-image-banners).
 
    Chargez les bannières d’images que vous souhaitez rendre interactives.
 
@@ -80,16 +80,16 @@ Pour démarrer rapidement :
 
    Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners). Si vous le souhaitez, vous pouvez afficher une représentation de l’ensemble de carrousel et tester son interactivité.
 
-1. [Publication des bannières de carrousel.](#publishing-carousel-banners)
+1. [Publiez les bannières de carrousel.](#publishing-carousel-banners)
 
    Vous publiez un ensemble de carrousel comme vous le feriez pour d’autres ressources. Dans Ressources, accédez à l’ensemble de carrousel, sélectionnez-le et appuyez ou cliquez sur **[!UICONTROL Publier.]** La publication d’un ensemble de carrousel active l’URL et la chaîne incorporée.
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * [Ajout d’une bannière de carrousel à votre page web](#adding-a-carousel-banner-to-your-website-page) Vous pouvez ajouter le code intégré ou l’URL de la bannière de carrousel que vous avez copié sur la page web.
+   * [Ajoutez une bannière de carrousel à votre page web. ](#adding-a-carousel-banner-to-your-website-page) Vous pouvez ajouter le code intégré ou l’URL de la bannière de carrousel que vous avez copié sur la page web.
 
       * [Intégrez la bannière de carrousel à un aperçu rapide existant](#integrating-the-carousel-banner-with-an-existing-quickview). Si vous utilisez un système de gestion de contenu web externe, vous devez intégrer la nouvelle bannière de carrousel à la mise en œuvre de l’aperçu rapide existant sur votre site web.
-   * [Ajout d’une bannière de carrousel à votre site web dans AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) Si vous êtes client AEM Sites, vous pouvez ajouter le carrousel défini directement à la page dans AEM, à l’aide du composant Interactive Media.
+   * [Ajoutez une bannière de carrousel à votre site web dans AEM. ](/help/assets/adding-dynamic-media-assets-to-pages.md) Si vous êtes client AEM Sites, vous pouvez ajouter le carrousel défini directement à la page dans AEM, à l’aide du composant Interactive Media.
 
 
 Si vous devez modifier des ensembles de carrousels, voir [Modification d’ensembles de carrousels.](#editing-carousel-sets) De plus, vous pouvez afficher et modifier les [propriétés d’un ensemble de carrousel](manage-assets.md#editing-properties).
@@ -182,7 +182,7 @@ Si vous avez déjà chargé les images à utiliser, passez à l’étape suivant
 
 Pour charger des bannières d’image, voir [Chargement de ressources](/help/assets/manage-assets.md).
 
-## Création d’ensembles de carrousels   {#creating-carousel-sets}
+## Création d’ensembles de carrousels {#creating-carousel-sets}
 
 >[!NOTE]
 >
@@ -323,7 +323,7 @@ Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
    Reportez-vous à la section [Ajout d’un ensemble de carrousel à la page d’entrée de votre site web](#adding-a-carousel-banner-to-your-website-page).
 
-## Modification d’ensembles de carrousels   {#editing-carousel-sets}
+## Modification d’ensembles de carrousels  {#editing-carousel-sets}
 
 >[!NOTE]
 Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **[!UICONTROL dam-users]**.
@@ -334,7 +334,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses de c
 * Réorganiser les diapositives dans l’ensemble de carrousel.
 * Supprimer des ressources de l’ensemble de carrousel.
 * Appliquer des paramètres prédéfinis de visionneuse.
-* Supprimez l’ensemble de carrousel.
+* Supprimer l’ensemble de carrousel.
 * Ajouter ou modifier des zones réactives et des zones cliquables. Voir également [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
 **Pour modifier un ensemble de carrousel**
@@ -399,7 +399,7 @@ De plus, si vous modifiez une image interactive publiée existante que vous util
 
 Voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) pour savoir comment publier des bannières de carrousel.
 
-## Ajout d’une bannière de carrousel à votre page web   {#adding-a-carousel-banner-to-your-website-page}
+## Ajout d’une bannière de carrousel à votre page web  {#adding-a-carousel-banner-to-your-website-page}
 
 Une fois que vous avez chargé les images de la bannière pour créer un carrousel, ajouté des zones réactives et/ou cliquables à la bannière et publié l’ensemble de carrousel, vous êtes prêt à l’ajouter à votre page web existante.
 
@@ -436,8 +436,8 @@ Alors que la bannière de carrousel remplace l’étape 1, et partiellement l�
 
 Dans ce type de gestionnaire d’événements, le code frontal effectue les opérations suivantes :
 
-* Elle écoute un événement émis par la bannière de carrousel.
-* Elle crée une URL d’aperçu rapide d’après les données des zones réactives ou des zones cliquables.
+* Écoute un événement émis par la bannière de carrousel.
+* Crée une URL d’aperçu rapide d’après les données des zones réactives ou des zones cliquables.
 * Déclenche le processus de chargement de l’aperçu rapide depuis le serveur principal et en effectue le rendu à l’écran.
 
 Un gestionnaire d’événements prêt à l’emploi et commenté est déjà en place pour le code intégré renvoyé par AEM Assets.
