@@ -19,7 +19,7 @@ ht-degree: 90%
 ---
 
 
-# Création – Environnement et outils  {#authoring-the-environment-and-tools}
+# Création – Environnement et outils {#authoring-the-environment-and-tools}
 
 L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils proposés sont accessibles dans les divers éditeurs de pages et consoles.
 
