@@ -34,7 +34,7 @@ Pour les deux intégrations, vous pouvez vérifier si les appels HTTP sont envoy
 * En ce qui concerne la fonctionnalité AEM, vous constaterez que les appels JSON sont demandés à partir de l’interface de création d’AEM ; ils ne devraient pas engendrer d’erreur HTTP 500. Si vous voyez des erreurs HTTP 500, vérifiez le fichier `error.log` pour plus d’informations à leur sujet.
 * L’augmentation du niveau de débogage pour les classes Campaign dans AEM aide également à résoudre des problèmes.
 
-## Si la connexion échoue  {#if-the-connection-fails}
+## Si la connexion échoue {#if-the-connection-fails}
 
 Vérifiez que vous avez configuré l&#39;opérateur **aemserver** en Adobe Campaign.
 
