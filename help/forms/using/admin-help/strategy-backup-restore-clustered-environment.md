@@ -34,7 +34,7 @@ Vous devez sauvegarder les éléments suivants du système AEM Forms pour récup
 >
 >Vous devez sauvegarder toutes les autres données qui sont utilisées par votre configuration d’AEM Forms, telles que les polices du client, les données des connecteurs, etc.
 
-## Sauvegarde d’un environnement organisé en grappes  {#back-up-a-clustered-environment}
+## Sauvegarde d’un environnement organisé en grappes {#back-up-a-clustered-environment}
 
 Cette rubrique présente les stratégies suivantes pour sauvegarder tout environnement organisé en grappes d’AEM Forms :
 
