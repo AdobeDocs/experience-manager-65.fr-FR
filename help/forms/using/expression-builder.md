@@ -28,7 +28,7 @@ Le créateur d’Expressions utilise en interne les bibliothèques EL JSP. L’e
 
 ![Générateur d’expression](assets/expressionbuilder.png)
 
-### Opérateurs    {#operators}
+### Opérateurs   {#operators}
 
 Les opérateurs pouvant être utilisées dans les expressions sont disponibles dans la barre supérieure du Générateur d’expression.
 
