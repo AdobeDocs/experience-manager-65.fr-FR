@@ -28,7 +28,7 @@ Vous pouvez exécuter les tâches ci-dessous à l’aide du service ConvertPDF :
 * Convertir des documents PDF en PostScript. Lors d’une conversion au format PostScript, vous pouvez indiquer le document source et choisir entre une conversion vers PostScript niveau 2 ou 3. Le document PDF à convertir en fichier PostScript ne doit pas être interactif.
 * Convertir des documents PDF aux formats d’image JPEG, JPEG 2000, PNG et TIFF. Lors de cette conversion, vous pouvez préciser le document source et fournir une spécification portant sur les options d’image. Cette spécification contient différentes préférences, définissant notamment le format de conversion d’image, la résolution d’image et la conversion de couleur.
 
-## Configurer les propriétés du service    {#properties}
+## Configurer les propriétés du service   {#properties}
 
 Vous pouvez utiliser le **service AEMFD ConvertPDF** dans la console AEM pour configurer les propriétés de ce service. L’URL par défaut de la console AEM est `https://[host]:'port'/system/console/configMgr`.
 
