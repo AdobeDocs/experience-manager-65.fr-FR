@@ -37,7 +37,7 @@ Lorsqu’un utilisateur effectue une requête à partir d’un périphérique cl
 
 Pour plus d’informations sur la résolution du script sling, reportez-vous à [Aide-mémoire sur AEM Sling](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) ou à [Décomposition de l’URL d’Apache Sling](https://sling.apache.org/site/url-decomposition.html).
 
-#### Flux d’appel de traitement de formulaire usuel  {#typical-form-processing-call-flow}
+#### Flux d’appel de traitement de formulaire usuel {#typical-form-processing-call-flow}
 
 HTML5 forms masque tous les objets intermédiaires requis pour le traitement (génération ou envoi) d’un formulaire dans la première requête. Il ne met pas en cache les objets qui dépendent des données car ces objets sont susceptibles d’être modifiés.
 
