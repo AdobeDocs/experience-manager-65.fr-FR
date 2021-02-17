@@ -51,7 +51,7 @@ Le tableau suivant répertorie les options d’aperçu disponibles pour les diff
  </tbody>
 </table>
 
-## Prévisualisation d’un formulaire  {#previewing-a-form-1}
+## Prévisualisation d’un formulaire {#previewing-a-form-1}
 
 1. Sélectionnez une ressource à prévisualisation, puis cliquez sur Prévisualisation ![aem6forms_prévisualisation](assets/aem6forms_preview.png) dans la barre d’outils Actions.
 
