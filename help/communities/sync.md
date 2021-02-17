@@ -258,7 +258,7 @@ Sur chaque instance de publication AEM :
 
    Les types de noeud spécifiés dans cette propriété vont se synchroniser et les informations de notification (blogs et configurations suivis) sont synchronisées entre les différents éditeurs.
 
-1. Ajoutez tous les dossiers à synchroniser dans **DistributedFolders**. Par exemple :
+1. Ajoutez tous les dossiers à synchroniser dans **DistributedFolders**. Par exemple,
 
    `segments/scoring`
 
@@ -278,7 +278,7 @@ Sur chaque instance de publication AEM :
 
 ### Identifiant Sling unique{#unique-sling-id}.
 
-aem instance d’auteur utilise l’identifiant Sling pour identifier d’où viennent les données et vers quels éditeurs elle doit (ou ne doit pas) renvoyer le package.
+AEM instance d’auteur utilise l’identifiant Sling pour identifier d’où viennent les données et vers quels éditeurs elle doit (ou ne doit pas) renvoyer le package.
 
 Assurez-vous que tous les éditeurs d’une batterie de publication possèdent un identifiant Sling unique. Si l’ID Sling est identique pour plusieurs instances de publication dans une batterie de publication, la synchronisation des utilisateurs échoue. Comme l&#39;auteur ne sait pas où récupérer le pack et où l&#39;installer.
 
@@ -307,7 +307,7 @@ Pour garantir l’identifiant Sling unique des éditeurs dans la batterie de pub
 
 Répétez ces étapes jusqu’à ce que toutes les instances de publication aient un identifiant Sling unique.
 
-### Fabrique Vault Package Builder  {#vault-package-builder-factory}
+### Fabrique Vault Package Builder {#vault-package-builder-factory}
 
 Pour que les mises à jour soient synchronisées correctement, il est nécessaire de modifier le créateur de packages en chambre forte pour la synchronisation utilisateur.
 Dans `/home/users`, un noeud `*/rep:cache` est créé. Il s&#39;agit d&#39;un cache qui est utilisé pour trouver que si nous requêtes sur le nom principal d&#39;un noeud alors ce cache peut être utilisé directement.
