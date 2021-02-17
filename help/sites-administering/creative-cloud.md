@@ -19,7 +19,7 @@ ht-degree: 65%
 ---
 
 
-# Partage de dossiers avec Adobe Creative Cloud  {#folder-sharing-with-adobe-creative-cloud}
+# Partage de dossiers avec Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
