@@ -1,6 +1,6 @@
 ---
-title: aem 6.5 - Guide de l’utilisateur du déploiement
-seo-title: aem 6.5 - Guide de l’utilisateur du déploiement
+title: AEM 6.5 - Guide de l’utilisateur du déploiement
+seo-title: AEM 6.5 - Guide de l’utilisateur du déploiement
 description: Ce guide couvre toutes les tâches de déploiement AEM, telles que l’installation et le déploiement d’AEM.
 seo-description: Couvre toutes les tâches de déploiement AEM, telles que l’installation et le déploiement d’AEM.
 translation-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 33%
 ---
 
 
-# aem 6.5 - Guide de l’utilisateur du déploiement
+# AEM 6.5 - Guide de l’utilisateur du déploiement
 
 Ce guide couvre toutes les tâches de déploiement AEM, telles que l’installation et le déploiement d’AEM.
 
@@ -23,7 +23,7 @@ Ce guide couvre toutes les tâches de déploiement AEM, telles que l’installat
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
-## aem 6.5 guides d’utilisation
+## AEM 6.5 guides d’utilisation
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -43,7 +43,7 @@ Ce guide couvre toutes les tâches de déploiement AEM, telles que l’installat
 
 ## Principales ressources AEM
 
-* [aem didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
