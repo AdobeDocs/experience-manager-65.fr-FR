@@ -147,7 +147,7 @@ Après avoir exécuté la procédure suivante, lorsque vous téléchargez un fic
       * Id d’artefact : myBundle.
       * Nom : Mon lot [!DNL Experience Manager].
       * Description : Il s&#39;agit de mon lot [!DNL Experience Manager].
-   1. Cliquez sur **[!UICONTROL Terminer]**.
+   1. Cliquez sur **[!UICONTROL Finish]** (Terminer). 
 
 
 1. Définissez le compilateur [!DNL Java] sur la version 1.5 :
