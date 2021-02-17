@@ -37,7 +37,7 @@ L’éditeur de règles remplace les fonctionnalités de script dans AEM version
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent créer de nouveaux scripts et modifier les scripts existants. Les utilisateurs appartenant au groupe d’utilisateurs de formulaires peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
 
-## Compréhension d’une règle  {#understanding-a-rule}
+## Compréhension d’une règle {#understanding-a-rule}
 
 Une règle est une combinaison d’actions et de conditions. Dans l’éditeur de règles, les actions incluent des activités telles que masquer, afficher, activer, désactiver ou calculer la valeur d’un objet dans un formulaire. Les conditions sont des expressions booléennes qui sont évaluées en effectuant des vérifications et des opérations sur l’état, la valeur ou la propriété d’un objet de formulaire. Les actions sont exécutées en fonction de la valeur (`True` ou`False` ) ) renvoyée par l’évaluation d’une condition.
 
