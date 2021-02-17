@@ -22,7 +22,7 @@ ht-degree: 68%
 
 Le composant Drafts &amp; Submissions dresse la liste de tous les formulaires qui sont à l’état de brouillon et des formulaires déjà envoyés. Le composant dispose de sections distinctes (onglets) pour les brouillons et les formulaires envoyés. Les utilisateurs peuvent afficher leurs brouillons et leurs formulaires envoyés uniquement.
 
-## Configuration du composant  {#configuring-the-component}
+## Configuration du composant {#configuring-the-component}
 
 Le composant Drafts &amp; Submissions comporte deux onglets : Brouillons et envois.
 
