@@ -19,7 +19,7 @@ ht-degree: 74%
 ---
 
 
-# Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5  {#custom-user-group-mapping-in-aem}
+# Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5 {#custom-user-group-mapping-in-aem}
 
 ## Comparaison du contenu JCR associé aux groupes d’utilisateurs fermés {#comparison-of-jcr-content-related-to-cug}
 
