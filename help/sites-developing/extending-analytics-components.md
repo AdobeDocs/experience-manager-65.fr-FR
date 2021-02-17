@@ -113,7 +113,7 @@ $CQ(function(){
 
 Tous les exemples de sites, tels qu’AEM Geometrixx Outdoors, incluent ce code.
 
-### L’événement sitecatalystAfterCollect  {#the-sitecatalystaftercollect-event}
+### L’événement sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
 
 Le script `cloudservices` déclenche le événement `sitecatalystAfterCollect` :
 
