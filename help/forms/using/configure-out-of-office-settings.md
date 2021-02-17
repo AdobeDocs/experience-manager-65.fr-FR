@@ -46,7 +46,7 @@ Effectuez les étapes suivantes pour activer le paramètre d’absence du bureau
 
    En outre, pour affecter tous les éléments, quel que soit le modèle de flux de travail, à un utilisateur particulier, sélectionnez **[!UICONTROL Tous les Workflows]** dans la liste déroulante Modèle de flux de travail. <br>
 
-   Pour affecter des éléments à un utilisateur particulier pour tous les modèles de processus sauf quelques uns, sélectionnez **[!UICONTROL Tous les Workflows]** dans la liste déroulante Modèle de processus, appuyez sur **[!UICONTROL + Ajouter les exceptions]** et spécifiez les modèles de processus à exclure.
+   Pour affecter des éléments à un utilisateur particulier pour tous les modèles de processus sauf quelques uns, sélectionnez **[!UICONTROL Tous les Workflows]** dans la liste déroulante Modèle de processus, appuyez sur **[!UICONTROL + Ajouter Exceptions]** et spécifiez les modèles de processus à exclure.
    <br>
 
    Répétez l’étape pour ajouter d’autres personnes désignées. <br>
