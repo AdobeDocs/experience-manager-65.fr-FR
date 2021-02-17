@@ -103,7 +103,7 @@ Cochez toutes les cases pour [User Management](/help/communities/sites-console.m
 
 Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant AEM espaces de nommage précédemment définis dans la [Console de balisage](/help/sites-administering/tags.md#tagging-console) (comme l&#39;[espace de nommage didacticiel](/help/communities/setup.md#create-tutorial-tags)).
 
-La recherche d&#39;espaces de nommage est facile avec la recherche par type. Par exemple :
+La recherche d&#39;espaces de nommage est facile avec la recherche par type. Par exemple,
 
 * Type `tut`
 * Sélectionner `Tutorial`
@@ -116,7 +116,7 @@ La recherche d&#39;espaces de nommage est facile avec la recherche par type. Par
 
 Pour permettre à un membre de la communauté (ou à un groupe de membres) de découvrir le site en tant que responsable de la communauté, utilisez la recherche par type et sélectionnez le nom du membre ou du groupe dans les options de la liste déroulante.
 
-Par exemple :
+Par exemple,
 
 * Type `q`
 * Sélectionnez [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
