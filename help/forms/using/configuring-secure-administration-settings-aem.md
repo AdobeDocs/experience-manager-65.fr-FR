@@ -25,7 +25,7 @@ En règle générale, les développeurs n’utilisent pas l’environnement de p
 
 Cet article décrit les méthodes que vous pouvez appliquer pour réduire la surface d’attaque globale en utilisant des options d’administration qu’AEM Forms sur JEE fournit.
 
-## Désactivation des accès distants non indispensables à des services  {#disabling-non-essential-remote-access-to-services}
+## Désactivation des accès distants non indispensables à des services {#disabling-non-essential-remote-access-to-services}
 
 Une fois qu’AEM Forms sur JEE est installé et configuré, de nombreux services sont accessibles par appel distant sur SOAP et Enterprise JavaBeans™ (EJB). Le terme « distant » renvoie ici à tout appelant disposant d’un accès réseau aux ports SOAP, EJB ou Action Message Format (AMF) du serveur d’applications.
 
