@@ -119,7 +119,7 @@ Dans l’interface utilisateur CCR, effectuez les étapes suivantes pour associe
 1. Passez la souris sur une lettre et appuyez sur **Propriétés de la Vue**.
 1. Sélectionnez **Modifier**.
 1. Dans Propriétés de base, sélectionnez le post-traitement à associer à la lettre dans la liste déroulante Post-traitement. Les post-traitements liés aux formulaires et à AEM sont répertoriés dans la liste déroulante.
-1. Appuyez sur **Save** (Enregistrer).
+1. Appuyez sur **Enregistrer**.
 1. Après avoir configuré la lettre avec le post-traitement, publiez la lettre et, sur l’instance de publication, spécifiez éventuellement l’URL de traitement dans le service Paramètres AEM DS. Cela garantit que le post-traitement est exécuté sur une instance de traitement.
 
 ## Rechargement d’une instance de lettre Brouillon{#reloaddraft}
