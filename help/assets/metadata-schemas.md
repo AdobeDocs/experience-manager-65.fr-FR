@@ -41,7 +41,7 @@ Pour vue d’une liste de formulaires ou de modèles, dans l’interface [!DNL E
 |  | Les formulaires enfants suivants héritent des propriétés du formulaire [!UICONTROL default] : |  |
 |  | <ul><li>[!UICONTROL dm_video]</li></ul> | Schéma de formulaire pour les vidéos Dynamic Media. |
 |  | <ul><li>[!UICONTROL image]</li></ul> | Schéma de formulaire pour les images de type MIME telles que `image/jpeg` et `image/png`. <br> Le   formulaire d’image comporte les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg] : Schéma de formulaire pour les ressources avec un sous-type  [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff] : Formulaire de schéma pour les actifs avec un sous-type TIFF.</li></ul> |
-|  | <ul><li>[!UICONTROL l’application ;]</li></ul> | Schéma de formulaire pour les actifs de type MIME tels que `application/pdf` et `application/zip`. <br>[!UICONTROL pdf] : Schéma de formulaire pour les ressources avec un sous-type PDF. |
+|  | <ul><li>[!UICONTROL l’application ;]</li></ul> | Schéma de formulaire pour les ressources de type MIME telles que `application/pdf` et `application/zip`. <br>[!UICONTROL pdf] : Schéma de formulaire pour les ressources avec un sous-type PDF. |
 |  | <ul><li>[!UICONTROL vidéo]</li></ul> | Schéma de formulaire pour les ressources vidéo de type MIME telles que `video/avi` et `video/mp4`. |
 | [!UICONTROL collection] |  | Schéma de formulaire pour les collections. |
 | [!UICONTROL contentfragment] |  | [Schéma de formulaire pour les fragments](/help/sites-developing/customizing-content-fragments.md) de contenu. |
@@ -70,7 +70,7 @@ Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouve
 
 1. Sur la page [!UICONTROL Forms] Schéma de métadonnées, sélectionnez un formulaire et cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
-1. Sur la page **[!UICONTROL Éditeur de formulaire du Schéma de métadonnées]**, personnalisez le formulaire de métadonnées. Faites glisser les composants nécessaires de l&#39;onglet **[!UICONTROL Créer un formulaire]** vers l&#39;un des onglets.
+1. Sur la page **[!UICONTROL Éditeur de formulaire de Schéma de métadonnées]**, personnalisez le formulaire de métadonnées. Faites glisser les composants nécessaires de l&#39;onglet **[!UICONTROL Créer un formulaire]** vers l&#39;un des onglets.
 
    ![Editeur de Schéma de métadonnées pour personnaliser la page Propriétés du fichier](assets/metadata-schema-editor.png)
 
@@ -176,7 +176,7 @@ Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métad
 * Modifier les options affichées pour un champ particulier en fonction de la valeur spécifiée dans un autre champ.
 * Définir la valeur de métadonnées par défaut dans un domaine spécifique en fonction de la valeur spécifiée dans un autre champ.
 
-### Configurer des métadonnées en cascade dans [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+### Configuration des métadonnées en cascade dans [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Supposons que vous souhaitiez afficher les métadonnées en cascade en fonction du type de ressource sélectionné. Quelques exemples
 
@@ -277,7 +277,7 @@ Pour supprimer un formulaire, sélectionnez-le, puis cliquez sur Supprimer.
 >* Vous ne pouvez pas supprimer les formulaires de schéma de métadonnées par défaut dans [!DNL Assets].
 
 
-## Formulaires de schéma pour les types MIME     {#schema-forms-for-mime-types}
+## Formulaires de schéma pour les types MIME    {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] fournit des formulaires par défaut pour plusieurs types MIME prêts à l’emploi. Vous pouvez toutefois ajouter des formulaires personnalisés pour les ressources de plusieurs types MIME.
 
