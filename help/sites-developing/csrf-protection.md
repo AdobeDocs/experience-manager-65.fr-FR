@@ -28,7 +28,7 @@ Le framework utilise des jetons pour garantir que la demande du client est légi
 >
 >Il n’existe aucun jeton sur les instances de publication pour les utilisateurs anonymes.
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 ### Dépendances {#dependencies}
 
