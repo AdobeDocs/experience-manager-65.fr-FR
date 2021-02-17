@@ -26,7 +26,7 @@ Le connecteur pour IBM FileNet permet la communication entre AEM forms et IBM Fi
 >
 >Dans les versions précédentes, il était possible de stocker des actifs dans un référentiel ECM. Dans cette version, les actifs sont stockés dans le référentiel natif d’AEM forms et les services du fournisseur de référentiel sont ignorés. La migration d’actifs d’un référentiel ECM vers le référentiel AEM forms s’effectue lors de la mise à niveau vers AEM forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM forms correspondant à votre serveur d’applications.
 
-## Configuration de la connexion à Content Engine  {#configure-the-connection-to-the-content-engine}
+## Configuration de la connexion à Content Engine {#configure-the-connection-to-the-content-engine}
 
 IBM FileNet P8 Content Engine fournit des services logiciels permettant de gérer le contenu d’entreprise et les objets commerciaux définis par les clients dans les référentiels de contenu FileNet.
 
