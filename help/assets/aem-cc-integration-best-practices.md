@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '3248'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -35,7 +35,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 
 | Proposition de valeur pour les personnes impliquées | Offre d’Adobe | Surfaces impliquées |
 |---|---|---|
-| Les utilisateurs créatifs découvrent des ressources de [!DNL Experience Manager], les ouvrent et les utilisent, modifient et téléchargent les modifications apportées à [!DNL Experience Manager] et téléchargent de nouveaux fichiers dans [!DNL Experience Manager], sans quitter les applications [!DNL Creative Cloud]. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], et [!DNL Adobe InDesign]. |
+| Les utilisateurs créatifs découvrent des ressources de [!DNL Experience Manager], les ouvrent et les utilisent, modifient et téléchargent les modifications apportées à [!DNL Experience Manager] et téléchargent de nouveaux fichiers dans [!DNL Experience Manager], sans quitter les applications [!DNL Creative Cloud]. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign]. |
 | Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le téléchargement des modifications dans [!DNL Experience Manager] et le téléchargement de nouveaux fichiers dans [!DNL Experience Manager] à partir de l’environnement de bureau. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | [Application de bureau Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager]Application de bureau sous Windows et Mac |
 | Les marketeurs et les utilisateurs professionnels découvrent, prévisualisation, concèdent des licences et enregistrent et gèrent les ressources [!DNL Adobe Stock] depuis [!DNL Experience Manager]. Les ressources sous licence et enregistrées fournissent des [!DNL Adobe Stock] métadonnées sélectionnées pour une meilleure gouvernance. | [Intégration d’Experience Manager et d’Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface Web |
 
@@ -43,20 +43,20 @@ Cet article se concentre principalement sur les deux premiers aspects des besoin
 
 ![Connexions Creative Cloud pour le Experience Manager, déterminer la capacité d’utiliser](assets/creative-connections-aem.png)
 
-### Correspondance des cas d’utilisation aux solutions Adobe  {#mapping-of-use-cases-and-adobe-solutions}
+### Correspondance des cas d’utilisation aux solutions Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
 <!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
 -->
 
-| Exemple d’utilisation  | [!DNL Adobe Asset Link] | [!DNL Experience Manager] application de bureau | Remarques/autres solutions |
+| Exemple d’utilisation  | [!DNL Adobe Asset Link] | Appli de bureau [!DNL Experience Manager] | Remarques/autres solutions |
 |---|---|---|---|
 | Discover - parcourir les dossiers DAM | Oui | [!DNL Experience Manager] Interface Web et actions de bureau |  |
 | Discover - Accès aux collections DAM | Oui | [!DNL Experience Manager] Interface Web et actions de bureau |  |
 | Discover - Recherche de ressources à partir de DAM | Oui | [!DNL Experience Manager] Interface Web et actions de bureau |  |
 | Utilisation - ouverture de la ressource | Oui | Oui | [Ouverture depuis l’interface web](manage-assets.md#previewing-assets) ou de l’outil de recherche |
 | Utilisation : placer un fichier de la gestion des actifs numériques dans un document | Oui - incorporation | Oui - liaison ou incorporation | [!DNL Experience Manager]L’application de bureau donne accès aux ressources sous forme de fichiers sur le système de fichiers local. Ces liens dans les applications natives sont représentés par des chemins d’accès locaux. |
-| Modification - ouvrir pour modification | Oui - Action d’extraction | Oui - Action d’ouverture (dans le partage réseau) | L’[extraction dans AAL](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) enregistre la ressource dans le compte de stockage Creative Cloud de l’utilisateur (synchronisé par l’application Creative Cloud) par défaut. |
-| Modifier : travail en cours en dehors de DAM | Oui - Ressource disponible dans le compte de stockage Creative Cloud de l’utilisateur synchronisé avec le poste de travail. | Oui |  |
+| Modification - ouvrir pour modification | Oui - action d’extraction | Oui - action d’ouverture (dans le partage réseau) | L’[extraction dans AAL](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) enregistre la ressource dans le compte de stockage Creative Cloud de l’utilisateur (synchronisé par l’application Creative Cloud) par défaut. |
+| Modifier : travail en cours en dehors de DAM | Oui - ressource disponible dans le compte de stockage Creative Cloud de l’utilisateur synchronisé avec le poste de travail. | Oui |  |
 | Modification - téléchargement des modifications | Oui - [Action d’archivage](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) avec des commentaires facultatifs | Oui |  |
 | Téléchargement - fichier unique | Oui - téléchargement du document actif | Oui | [Chargement via l’interface web](manage-assets.md#uploading-assets) |
 | Téléchargement - plusieurs fichiers/structures de dossiers hiérarchiques | Non | Oui | [Chargement via l’interface web](manage-assets.md#uploading-assets) ou par le biais d’un script ou d’un outil personnalisé. |
@@ -225,6 +225,6 @@ Pour planifier et exécuter des migrations de ressources depuis le système exis
 >
 >* [Lien de ressource Adobe](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Meilleures pratiques pour les applications de bureau Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
->* [Portail des marques Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+>* [Portail des marques Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr)
 >* [Intégration d’Experience Manager et d’Adobe Stock](aem-assets-adobe-stock.md)
 
