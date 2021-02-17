@@ -89,7 +89,7 @@ Ajout de teasers pour créer une page d’accueil efficace pour newsletter :
 
 1. Créez une campagne avec les deux teasers -- affectez un avec un tag commercial et un autre sans tag.
 
-### Pousser du contenu vers les abonnés  {#pushing-content-to-subscribers}
+### Pousser du contenu vers les abonnés {#pushing-content-to-subscribers}
 
 Poussez toute modification des pages via la fonctionnalité Newsletter dans MCM. Vous pouvez alors envoyer du contenu mis à jour aux abonnés.
 
