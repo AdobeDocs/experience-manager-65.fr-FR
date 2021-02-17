@@ -29,7 +29,7 @@ MicroKernels agit en tant que gestionnaires de persistance à partir de AEM 6.2.
 
 Les exemples ci-dessous ont pour objectif de vous donner une indication des utilisations recommandées pour les configurations d’AEM les plus courantes.
 
-## Scénarios de déploiement  {#deployment-scenarios}
+## Scénarios de déploiement {#deployment-scenarios}
 
 ### Instance TarMK unique {#single-tarmk-instance}
 
