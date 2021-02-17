@@ -16,7 +16,7 @@ ht-degree: 78%
 ---
 
 
-# Création de formulaires avec des sections répétables  {#creating-forms-with-repeatable-sections}
+# Création de formulaires avec des sections répétables {#creating-forms-with-repeatable-sections}
 
 Les sections répétables sont des panneaux qui peuvent être ajoutés ou supprimés dynamiquement dans un formulaire.
 
