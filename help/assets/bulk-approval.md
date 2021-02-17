@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
 source-wordcount: '784'
-ht-degree: 61%
+ht-degree: 62%
 
 ---
 
@@ -19,7 +19,7 @@ Mettez en place des workflows de révision pour les ressources dans un dossier o
 
 Vous pouvez associer le workflow de révision à un projet ou créer une tâche de révision indépendante.
 
-Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires voulus de la fin des diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé(e) pour la révision.
+Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires voulus de la fin des diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
 
 Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ressources), vous recevez une notification de fin de révision.
 
@@ -49,7 +49,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![review_name](assets/review_name.png)
 
 1. Cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
-1. Connectez-vous à [!DNL Assets] en tant qu’approbateur et accédez à l’interface utilisateur [!DNL Assets]. Pour approuver des actifs, cliquez sur **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
+1. Connectez-vous à [!DNL Assets] en tant qu’approbateur et accédez à l’IU [!DNL Assets] Pour approuver des actifs, cliquez sur **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
 
    ![Notification des ressources](assets/aemAssetsNotification.png)
 
