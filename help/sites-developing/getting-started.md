@@ -1,6 +1,6 @@
 ---
-title: Prise en main du développement de sites AEM – Tutoriel WKND
-seo-title: Prise en main du développement de sites AEM – Tutoriel WKND
+title: Prise en main du développement d’AEM Sites – Tutoriel WKND
+seo-title: Prise en main du développement d’AEM Sites – Tutoriel WKND
 description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
 seo-description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
 uuid: 12861ca8-b5b9-404e-9788-9d13aa7c5a68
@@ -19,7 +19,7 @@ ht-degree: 88%
 ---
 
 
-# Prise en main du développement de sites AEM – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
+# Prise en main du développement d’AEM Sites – Tutoriel WKND {#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Présentation {#overview}
 
