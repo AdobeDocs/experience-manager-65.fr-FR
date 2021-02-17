@@ -48,7 +48,7 @@ Dans l&#39;onglet **Propriétés** du nouveau noeud `clientlibs`, saisissez la p
 
 Remarque : la préface de la valeur catégories avec &quot;applications&quot;. est une convention permettant d&#39;identifier l&#39;application propriétaire comme se trouvant dans le dossier /apps et non /libs.  IMPORTANT : Ajoutez les fichiers d’espace réservé `js.tx`t et **`css.txt`**. (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans eux.)
 
-1. Cliquez avec le bouton droit **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Faites un clic-droit **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Sélectionnez **Créer un fichier...**
 1. Saisissez **Nom :** `css.txt`
 1. Sélectionnez **Créer un fichier...**
