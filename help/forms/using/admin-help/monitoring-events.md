@@ -42,7 +42,7 @@ Un événement d’échec est enregistré si un utilisateur non autorisé tente 
 
 Si une stratégie autorise l’accès d’utilisateurs anonymes et si l’administrateur désactive par la suite l’accès anonyme pour Document Security, l’accès anonyme échoue pour les documents protégés par la stratégie et l’événement n’est pas consigné.
 
-## Activation du contrôle des événements  {#enable-event-auditing}
+## Activation du contrôle des événements {#enable-event-auditing}
 
 La configuration requise pour contrôler les événements est la suivante :
 
