@@ -62,7 +62,7 @@ L’éditeur en bloc permet ce qui suit :
 
 * [d’importer le contenu d’une feuille de calcul de données séparées par des tabulations.](#importing-content)
 
-### Recherche et modification du contenu  {#searching-and-editing-content}
+### Recherche et modification du contenu {#searching-and-editing-content}
 
 Pour utiliser l’éditeur en bloc pour modifier simultanément différents éléments, procédez comme suit :
 
@@ -73,7 +73,7 @@ Pour utiliser l’éditeur en bloc pour modifier simultanément différents él�
 <table>
  <tbody>
   <tr>
-   <td>Field (Champ)</td>
+   <td>Champ</td>
    <td>Propriété</td>
   </tr>
   <tr>
