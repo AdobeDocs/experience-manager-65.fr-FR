@@ -38,7 +38,7 @@ David’s Model se trouve sur le wiki de Jackrabbit à l’adresse [https://wiki
 
 Vous devez tout stocker dans le référentiel plutôt que dans des sources de données tierces, telles que des bases de données. Cela s’applique aussi bien au contenu généré qu’aux données binaires comme les images, le code, les configurations, etc. Il nous est ainsi possible d’utiliser un seul ensemble d’API pour gérer tout le contenu, ainsi que pour gérer la promotion de ce contenu par le biais de la réplication. Nous disposons également d’une source unique de sauvegarde, de journalisation, etc.
 
-### Utilisez le principe de conception « Le modèle de contenu d’abord »  {#use-the-content-model-first-design-principle}
+### Utilisez le principe de conception « Le modèle de contenu d’abord » {#use-the-content-model-first-design-principle}
 
 Lors de la mise au point d’une fonctionnalité, commencez toujours par concevoir la structure du contenu JCR, puis tâchez de lire et d’écrire votre contenu à l’aide des servlets Sling par défaut. Vous pouvez ainsi vous assurer que votre implémentation fonctionne bien avec des mécanismes de contrôle d’accès standard. Cela vous évite également de générer des servlets de type CRUD inutiles.
 
