@@ -17,7 +17,7 @@ ht-degree: 85%
 ---
 
 
-# Prise en main des formulaires HTML5  {#getting-started-with-html-forms}
+# Prise en main des formulaires HTML5 {#getting-started-with-html-forms}
 
 Les formulaires HTML5 proposent de nombreuses fonctionnalités compatibles avec les périphériques mobiles. Cette application vous permet d’étendre vos solutions et flux actuels aux tablettes ou smartphones équipés de navigateurs HTML5. Exemple de fonctionnalités disponibles :
 
