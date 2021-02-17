@@ -30,7 +30,7 @@ Il est donc vivement conseillé de planifier soigneusement vos implémentations 
 
 Lors de la configuration des processus de workflow (qu’ils soient personnalisés et/ou standard), vous devez tenir compte de plusieurs éléments.
 
-### Workflows transitoires  {#transient-workflows}
+### Workflows transitoires {#transient-workflows}
 
 Pour optimiser les charges d’assimilation élevées, vous pouvez définir un [workflow comme étant transitoire](/help/sites-developing/workflows.md#transient-workflows).
 
@@ -59,7 +59,7 @@ Si les workflows en cours d’exécution consomment de nombreuses ressources sys
 
 Pour remédier à ce problème, Adobe recommande de configurer le **nombre maximal de tâches en parallèle** sur une valeur comprise entre 50 % et 75 % du nombre de cœurs de processeur du système. Cela devrait laisser suffisamment de capacité de réaction au système lors du traitement de ces workflows.
 
-Pour configurer **Nombre maximal de tâches parallèles**, vous pouvez :
+Pour configurer **Nombre maximal de tâches parallèles**, vous pouvez effectuer l&#39;une des opérations suivantes :
 
 * Configurez la **[configuration OSGi](/help/sites-deploying/configuring-osgi.md)** à partir de la console Web AEM ; pour **File d&#39;attente : Granite Workflow Queue** (une **configuration de la file d’attente de travaux Apache Sling**).
 
