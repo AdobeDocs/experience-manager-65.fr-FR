@@ -100,7 +100,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
 | **Conseil de restructuration** | L’utilitaire [Migration différée de contenu](/help/sites-deploying/lazy-content-migration.md) doit être déclenché depuis l’interface utilisateur de migration Forms. |
 | **Remarques** | S/O |
 
-### Configurations du service cloud Recaptcha  {#recaptcha-cloud-service-configurations}
+### Configurations du service cloud Recaptcha {#recaptcha-cloud-service-configurations}
 
 | **Emplacement précédent** | `/etc/cloudservices/recaptcha` |
 |---|---|
