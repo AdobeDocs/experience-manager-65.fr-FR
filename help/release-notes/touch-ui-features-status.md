@@ -12,7 +12,7 @@ ht-degree: 49%
 
 # État des fonctionnalités de l’IU tactile {#touch-ui-feature-status}
 
-aem version 6.4 ou ultérieure [L’interface utilisateur classique est obsolète](../release-notes/deprecated-removed-features.md). L’Adobe n’apporte pas d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont invités à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
+AEM version 6.4 ou ultérieure [L’interface utilisateur classique est obsolète](../release-notes/deprecated-removed-features.md). L’Adobe n’apporte pas d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont invités à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
 
 À partir de la version 6.0, AEM a introduit une nouvelle interface utilisateur appelée &quot;interface utilisateur tactile&quot; (simplement appelée &quot;interface utilisateur tactile&quot;) qui est alignée sur [!DNL Adobe Experience Cloud] et sur les directives générales relatives à l’interface utilisateur de l’Adobe. Avec la quasi parité des fonctionnalités atteinte, cette interface est devenue l’interface standard en AEM avec l’interface héritée et orientée sur les ordinateurs de bureau, appelée &quot;interface utilisateur classique&quot;.
 
@@ -44,7 +44,7 @@ Il s’agit d’une liste de fonctionnalités dont dispose l’administrateur cl
 
 | Fonctionnalité | État | Commentaire |
 |--- |--- |--- |
-| Navigation dans l’arborescence du site | Terminer | aem 6.4 a introduit une vue d&#39;arborescence de contenu [](/help/sites-authoring/basic-handling.md#content-tree). |
+| Navigation dans l’arborescence du site | Terminer | AEM 6.4 a introduit une vue d&#39;arborescence de contenu [](/help/sites-authoring/basic-handling.md#content-tree). |
 | Démarrer le processus | Terminer |  |
 | Créer une page | Complète |  |
 | Créer un site | Complète |  |
@@ -151,7 +151,7 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
 | Editeur de tableau | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
 | Faire glisser l’image dans la cellule du tableau | Terminer | Utilisation en ligne |
 | Éditeur d’image | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
-| Activation/désactivation des modules externes IPE | Terminer | aem 6.3 a introduit une interface utilisateur dans l&#39;[éditeur de modèles](/help/sites-authoring/templates.md). |
+| Activation/désactivation des modules externes IPE | Terminer | AEM 6.3 a introduit une interface utilisateur dans l&#39;[éditeur de modèles](/help/sites-authoring/templates.md). |
 | Module externe IPE : Recadrer | Terminer |  |
 | Module externe IPE : Retourner | Terminer |  |
 | Module externe IPE : Annuler/Rétablir | Terminer |  |
