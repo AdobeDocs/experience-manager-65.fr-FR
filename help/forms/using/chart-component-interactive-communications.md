@@ -122,7 +122,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour l�
    <td>Impression et web</td>
   </tr>
   <tr>
-   <td>Title (Titre)</td>
+   <td>Titre</td>
    <td>Titre du graphique. </td>
    <td>Imprimer</td>
   </tr>
