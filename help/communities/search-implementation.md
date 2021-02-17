@@ -46,7 +46,7 @@ Voir [SRP et UGC Essentials](srp-and-ugc.md) pour plus d&#39;informations sur le
 
 ## API de recherche UGC {#ugc-search-api}
 
-Le [magasin commun UGC](working-with-srp.md) est fourni par l&#39;un des divers fournisseurs de ressources d&#39;enregistrement (SRP), chacun pouvant avoir une langue de requête native différente. Par conséquent, quel que soit le SRP choisi, le code personnalisé doit utiliser les méthodes du [package de l&#39;API UGC](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) qui appelleront le langage de requête approprié pour le SRP choisi.
+Le [magasin commun UGC](working-with-srp.md) est fourni par l&#39;un des divers fournisseurs de ressources d&#39;enregistrement (SRP), chacun pouvant avoir une langue de requête native différente. Par conséquent, quel que soit le SRP choisi, le code personnalisé doit utiliser les méthodes du [package d&#39;API UGC](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) qui appelleront le langage de requête approprié pour le SRP choisi.
 
 ### Recherches ASRP {#asrp-searches}
 
@@ -110,7 +110,7 @@ Vous trouverez ci-dessous quelques-unes des propriétés pouvant faire l’objet
 |---|---|
 | isFlagged | *Booléen* |
 | isSpam | *Booléen* |
-| lire | *Booléen* |
+| lecture | *Booléen* |
 | influence | *Booléen* |
 | attachments | *Booléen* |
 | opinion | *Long* |
