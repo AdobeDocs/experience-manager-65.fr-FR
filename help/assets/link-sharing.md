@@ -104,7 +104,7 @@ Pour générer l’URL des fichiers que vous souhaitez partager avec les utilisa
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Configuration de la taille maximale des données  {#maxdatasize}
+## Configuration de la taille maximale des données {#maxdatasize}
 
 Lorsque vous téléchargez des ressources à partir du lien partagé à l’aide de la fonction de partage de liens, [!DNL Experience Manager] compresse la hiérarchie des ressources à partir du référentiel, puis renvoie la ressource dans un fichier ZIP. Toutefois, en l’absence de limite à la quantité de données pouvant être compressées dans un fichier ZIP, il est possible que des volumes de données considérables à compresser entraînent des erreurs d’insuffisance de mémoire dans JVM. Afin de protéger le système contre une potentielle attaque par déni de service (DoS) résultant de cette situation, configurez la taille maximale à l’aide du paramètre **[!UICONTROL Taille max. de contenu (sans compression)]** pour le servlet proxy du partage de ressource adhoc de la gestion des ressources numériques Day CQ dans le gestionnaire de configuration.  Si la taille non compressée de la ressource dépasse la valeur configurée, les demandes de téléchargement sont rejetées. La valeur par défaut est de 100 Mo.
 
