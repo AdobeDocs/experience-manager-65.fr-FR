@@ -58,7 +58,7 @@ Configuration facultative de :
 
 ## Étapes de configuration {#configuration-steps}
 
-Voici les étapes nécessaires pour activer les communautés.
+Vous trouverez ci-dessous les étapes nécessaires pour activer les communautés.
 
 Chaque étape donne un lien vers la documentation qui fournit les détails nécessaires.
 
