@@ -48,7 +48,7 @@ L’objectif du calque de stockage est le suivant :
 * Rendre possible l’alimentation du·stockage
 * Fournir un mécanisme de mise en cluster
 
-### Cœur Oak  {#oak-core}
+### Cœur Oak {#oak-core}
 
 Le cœur Oak ajoute plusieurs niveaux au niveau de stockage :
 
