@@ -15,7 +15,7 @@ ht-degree: 16%
 
 Adobe Experience Manager Fluid Experiences s’appuie sur les puissantes fonctionnalités d’AEM Sites, d’AEM Dynamic Media et d’AEM Assets pour fournir une solution robuste à la diffusion de contenu sans affichage.
 
-aem Fluid Experiences se distingue des AEM classiques en ce que seul le cas d&#39;utilisation de diffusions sans tête est traité. La création et la diffusion de contenu en cascade ainsi que la prise en charge AEM des cas d&#39;utilisation hybride sont disponibles avec les solutions [AEM Sites, Assets et Dynamic Media complètes.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/user-guide/home.html)
+AEM Fluid Experiences se distingue des AEM classiques en ce que seul le cas d&#39;utilisation de diffusions sans tête est traité. La création et la diffusion de contenu en cascade ainsi que la prise en charge AEM des cas d&#39;utilisation hybride sont disponibles avec les solutions [AEM Sites, Assets et Dynamic Media complètes.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/user-guide/home.html)
 
 Les tableaux ci-dessous définissent les fonctionnalités des AEM Expériences fluides et établissent un lien vers la documentation d&#39;assistance pertinente.
 
@@ -26,7 +26,7 @@ Les tableaux ci-dessous définissent les fonctionnalités des AEM Expériences f
 
 >[!NOTE]
 >
->aem Fluid Experiences est un sous-ensemble de fonctionnalités AEM. Les fonctions liées à ces tableaux peuvent inclure des fonctions supplémentaires incluses dans AEM, mais pas dans AEM Expériences de fluides.
+>AEM Fluid Experiences est un sous-ensemble de fonctionnalités AEM. Les fonctions liées à ces tableaux peuvent inclure des fonctions supplémentaires incluses dans AEM, mais pas dans AEM Expériences de fluides.
 
 ## Fonctionnalités du référentiel {#repository-features}
 
@@ -83,7 +83,7 @@ Les tableaux ci-dessous définissent les fonctionnalités des AEM Expériences f
 ## En savoir plus {#learn-more}
 
 * [Expériences fluides pour les cas d’utilisation sans tête](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
-* [aem Content Service : Quoi, pourquoi et comment ?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
+* [AEM Content Service : Quoi, pourquoi et comment ?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Utilisation de Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
 * [Développement d’applications mobiles](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/developing/developing-content-services.html)
 * [FAQ sur l’accès des tiers](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
