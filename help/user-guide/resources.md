@@ -1,6 +1,6 @@
 ---
-title: aem 6.5 Ressources supplémentaires
-seo-title: aem 6.5 Ressources supplémentaires
+title: AEM 6.5 Ressources supplémentaires
+seo-title: AEM 6.5 Ressources supplémentaires
 description: Notes de mise à jour AEM 6.5, certifications et ressources supplémentaires
 seo-description: Notes de mise à jour AEM 6.5, certifications et ressources supplémentaires
 translation-type: tm+mt
@@ -12,13 +12,13 @@ ht-degree: 25%
 ---
 
 
-# aem 6.5 Ressources supplémentaires {#aem-64-additional-resources}
+# AEM 6.5 Ressources supplémentaires {#aem-64-additional-resources}
 
 ## Notes de mise à jour d’AEM 6.5 {#aem-64-release-notes}
 
 [Découvrez les nouvelles fonctionnalités les plus récentes de AEM 6.5 dans les notes de mise à jour.](/help/release-notes/home.md)
 
-## aem 6.5 Vidéos didacticielles {#aem-64-tutorial-videos}
+## AEM 6.5 Vidéos didacticielles {#aem-64-tutorial-videos}
 
 * [Vidéos de formation AEM 6.5](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Tutoriels AEM](https://helpx.adobe.com/experience-manager/tutorials.html)
