@@ -91,7 +91,7 @@ Vous trouverez ci-dessous la liste des domaines qui sont impactés dans un proje
 
 Il est important de vous assurer que votre système d’exploitation, Java Runtime, httpd et la version du dispatcher sont pris en charge. Pour plus d’informations, voir la page [Exigences techniques d’AEM 6.5](/help/sites-deploying/technical-requirements.md). La mise à niveau de ces composants doit être ajoutée à votre plan d’action et exécutée avant la mise à niveau d’AEM.
 
-## Phases du projet  {#project-phases}
+## Phases du projet {#project-phases}
 
 La planification et l’exécution d’une mise à niveau AEM requiert un effort important. En vue de clarifier les différents efforts du processus, nous avons divisé les exercices de planification et d’exécution en des phases distinctes. Dans les sections ci-dessous, chaque phase entraîne la création d’un livrable, souvent exploité lors des étapes suivantes du projet.
 
