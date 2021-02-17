@@ -43,7 +43,7 @@ Les composants de portail de formulaires vous permettent d’ajouter les fonctio
 * Création de liens vers des formulaires.
 * Création d’une liste de brouillons et d’envois associés au formulaire adaptatif créé par l’utilisateur final.
 
-## Composants disponibles du portail AEM Forms  {#available-aem-forms-portal-components}
+## Composants disponibles du portail AEM Forms {#available-aem-forms-portal-components}
 
 AEM Forms fournit les composants de portail suivants prêts à l’emploi, regroupés sous les groupes de composants **Services de document** et **Prédicats de services de document** :
 
