@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '1348'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
@@ -25,7 +25,7 @@ Les références sont résolues sur la base du chemin d’accès, du document et
 
 Vous pouvez référencer des ressources numériques existantes dans un fichier [!DNL Adobe Illustrator].
 
-1. A l’aide de [[!DNL Experience Manager] l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html), récupérez les ressources numériques sur le système de fichiers local. Accédez à l&#39;emplacement du système de fichiers de la ressource à référencer.
+1. A l’aide de [[!DNL Experience Manager] l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr), récupérez les ressources numériques sur le système de fichiers local. Accédez à l&#39;emplacement du système de fichiers de la ressource à référencer.
 1. Faites glisser le fichier du dossier local vers le fichier [!DNL Illustrator].
 
 1. Enregistrez le fichier [!DNL Illustrator] sur le lecteur monté ou [téléchargez ](/help/assets/manage-assets.md#uploading-assets) dans le référentiel [!DNL Experience Manager].
@@ -109,7 +109,7 @@ Les sous-ressources s’affichent uniquement si elles sont générées et dispon
 
 ![Sous-ressources de vue pour une ressource de plusieurs pages](assets/view_subassets_simulation.gif)
 
-## Affichage des pages d’un fichier multipage    {#view-pages-of-a-multi-page-file}
+## Affichage des pages d’un fichier multipage   {#view-pages-of-a-multi-page-file}
 
 Vous pouvez vue un fichier de plusieurs pages, tel que PDF, INDD, PPT, PPTX et AI, à l’aide de la fonction Page Viewer de [!DNL Experience Manager Assets]. Ouvrez un fichier de plusieurs pages et cliquez sur **[!UICONTROL Pages de Vue]** dans le coin supérieur gauche de la page. La visionneuse de pages qui s’ouvre affiche les pages du fichier et les commandes permettant de parcourir et de zoomer chaque page.
 
@@ -119,7 +119,7 @@ Pour [!DNL InDesign], vous pouvez extraire des pages à l&#39;aide de [!DNL InDe
 
 Les options suivantes sont disponibles dans la barre d’outils, dans le rail de gauche et dans les commandes de la visionneuse de pages :
 
-* **[!UICONTROL Les]** actions de bureau permettent d’ouvrir ou d’afficher une sous-ressource spécifique à l’aide d’une application  [!DNL Experience Manager] de bureau. Découvrez comment [configurer les actions de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) si vous utilisez [!DNL Experience Manager] une application de bureau.
+* **[!UICONTROL Les]** actions de bureau permettent d’ouvrir ou d’afficher une sous-ressource spécifique à l’aide d’une application  [!DNL Experience Manager] de bureau. Découvrez comment [configurer les actions de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2) si vous utilisez [!DNL Experience Manager] une application de bureau.
 
 * **[!UICONTROL L’option]** Propriétés ouvre la   page Propriétés de la sous-ressource spécifique.
 
