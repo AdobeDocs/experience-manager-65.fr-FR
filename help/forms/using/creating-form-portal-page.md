@@ -232,7 +232,7 @@ Pour lier un formulaire depuis n’importe quel point de la page, utilisez le co
 
 Pour répertorier les formulaires qui sont à l’état Brouillon et ceux qui ont déjà été envoyés, utilisez le composant **[!UICONTROL Drafts &amp; Submissions]**. Pour en savoir plus, consultez la section [Personnalisation du composant Drafts &amp; Submission](../../forms/using/draft-submission-component.md).
 
-## Compatibilité avec les périphériques mobiles  {#mobile-device-friendliness}
+## Compatibilité avec les périphériques mobiles {#mobile-device-friendliness}
 
 Le composant Search &amp; Lister de Forms Portal est compatible avec les périphériques mobiles et s’adapte en conséquence. Les trois vues par défaut : La grille, la carte, les mises en page du panneau en fonction du périphérique sur lequel le site est ouvert, à condition que la page Web s’adapte également. Search &amp; Lister n’est qu’un simple composant et ne contrôle pas le style au niveau de la page.
 
