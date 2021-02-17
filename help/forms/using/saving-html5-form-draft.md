@@ -17,7 +17,7 @@ ht-degree: 66%
 ---
 
 
-# Enregistrement d’un formulaire HTML5 en tant que brouillon  {#saving-an-html-form-as-a-draft}
+# Enregistrement d’un formulaire HTML5 en tant que brouillon {#saving-an-html-form-as-a-draft}
 
 Vous pouvez enregistrer un formulaire HTML5 comme brouillon et reprendre le remplissage du formulaire ultérieurement. Le portail des formulaires permet à tout utilisateur d’enregistrer et de restaurer un formulaire HTML5. Pour activer la fonctionnalité Enregistrer en tant que brouillon, ajoutez les configurations suivantes au noeud de profil :
 
