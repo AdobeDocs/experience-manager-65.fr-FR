@@ -14,7 +14,7 @@ ht-degree: 93%
 ---
 
 
-# Guide de l’utilisateur pour la gestion d’AEM 6.5  {#managing}
+# Guide de l’utilisateur pour la gestion d’AEM 6.5 {#managing}
 
 + [Gestion du guide de l’utilisateur](home.md)
 + Gestion : liste de contrôle des meilleures pratiques {#managing-best-practices-checklist}
