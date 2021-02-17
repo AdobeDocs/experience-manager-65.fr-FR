@@ -19,7 +19,7 @@ ht-degree: 78%
 ---
 
 
-# Résolution des incidents liés à AEM  {#troubleshooting-aem}
+# Résolution des incidents liés à AEM {#troubleshooting-aem}
 
 La section ci-dessous traite de certains problèmes susceptibles d’être rencontrés lorsque vous utilisez AEM, ainsi que des suggestions pour les résoudre.
 
