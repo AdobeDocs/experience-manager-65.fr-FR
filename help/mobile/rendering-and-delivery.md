@@ -27,7 +27,7 @@ Le contenu AEM peut facilement être rendu via [Sling Default Servlets](https://
 
 Ces rendus prêts à l’emploi parcourent généralement le référentiel et renvoient le contenu tel quel.
 
-aem, via Sling, prend également en charge le développement et le déploiement de rendus sling personnalisés pour prendre le contrôle total du schéma et du contenu rendus.
+AEM, via Sling, prend également en charge le développement et le déploiement de rendus sling personnalisés pour prendre le contrôle total du schéma et du contenu rendus.
 
 Les rendus par défaut de Content Services comblent le fossé entre les valeurs par défaut prêtes à l’emploi et le développement personnalisé, ce qui permet de personnaliser et de contrôler de nombreux aspects du contenu rendu sans développement.
 
