@@ -35,7 +35,7 @@ Il est possible de configurer les liens qui sont visibles. Cela peut être défi
 * [Consoles principales](#links-in-main-console-left-pane) : liens de la console principale (volet de gauche)
 * [Ressources, documentation et ressources, fonctionnalités](#links-in-sidebar-right-pane) : liens de la barre latérale (volet de droite)
 
-## Liens de la console principale (volet de gauche)  {#links-in-main-console-left-pane}
+## Liens de la console principale (volet de gauche) {#links-in-main-console-left-pane}
 
 Liste des consoles principales d’AEM.
 
