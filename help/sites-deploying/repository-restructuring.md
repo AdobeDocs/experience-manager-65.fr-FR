@@ -26,7 +26,7 @@ Avant AEM 6.4, le code client était déployé dans des zones imprévisibles du 
 
 Il est possible d’éviter ces conflits en définissant clairement les hiérarchies applicables au code du produit AEM et au code client.
 
-À cette fin, à partir de l&#39;AEM 6.4 et à poursuivre dans les versions futures, le contenu est restructuré à partir de /etc vers d&#39;autres dossiers du référentiel, ainsi que des lignes directrices sur le contenu qui va où, en respectant les règles de haut niveau suivantes :
+À cette fin, à partir de l&#39;AEM 6.4 et à poursuivre dans les versions futures, le contenu est restructuré à partir de /etc vers d&#39;autres dossiers du référentiel, ainsi que des directives sur le contenu qui va où, en respectant les règles de haut niveau suivantes :
 
 * Le code de produit AEM sera toujours placé dans /libs, qui ne peut pas être écrasé par du code personnalisé.
 * Le code personnalisé doit être placé dans /apps, /content et /conf.
