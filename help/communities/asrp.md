@@ -27,7 +27,7 @@ Lorsque AEM Communities est configuré pour utiliser ASRP en tant que magasin co
 
 Voir aussi [Caractéristiques des options SRP](/help/communities/working-with-srp.md#characteristics-of-srp-options) et [Topologies recommandées](/help/communities/topologies.md).
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 Une licence supplémentaire est requise pour l&#39;utilisation de ASRP.
 
