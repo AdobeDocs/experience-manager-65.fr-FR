@@ -20,7 +20,7 @@ ht-degree: 87%
 ---
 
 
-# Guides des API  {#api-guides}
+# Guides des API {#api-guides}
 
 Adobe Experience Manager (AEM) fournit plusieurs API pour développer des applications et étendre AEM. La liste suivante répertorie la documentation des API prises en charge par AEM :
 
