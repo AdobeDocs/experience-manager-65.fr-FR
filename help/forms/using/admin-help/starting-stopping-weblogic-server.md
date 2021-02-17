@@ -53,7 +53,7 @@ Plusieurs procédures nécessitent de démarrer ou d’arrêter l’instance de 
 >
 >Si vous exécutez WebLogic Server sur Red Hat® Enterprise Linux Advanced Server 4.0, définissez la variable d’environnement `LD_ASSUME_KERNEL` sur 2.4.19 à l’aide de la commande `export LD_ASSUME_KERNEL=2.4.19`. Exécutez ensuite WebLogic Server depuis le shell à partir duquel vous avez défini la variable d’environnement.
 
-## Lancement de WebLogic Server  {#start-weblogic-server}
+## Lancement de WebLogic Server {#start-weblogic-server}
 
 1. Ouvrez une invite de commande et accédez à *[racine du serveur d’applications]*/user_projects/domains/*[domaine du serveur d’applications]*.
 1. Saisissez la commande suivante :
