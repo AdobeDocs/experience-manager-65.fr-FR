@@ -22,7 +22,7 @@ ht-degree: 69%
 
 Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](/help/forms/using/create-your-first-adaptive-form.md). Adobe recommande de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
-## À propos du didacticiel  {#about-the-tutorial}
+## À propos du didacticiel {#about-the-tutorial}
 
 Vous pouvez utiliser des règles pour ajouter de l’interactivité, une logique d’entreprise et des validations intelligentes à un formulaire adaptatif. Les formulaires adaptatifs ont un éditeur de règles intégré. L’éditeur de règles offre une fonctionnalité de glisser-déposer, semblable aux visites guidées. L’option de glisser-déposer est la méthode la plus rapide et la plus simple pour créer des règles. L’éditeur de règles fournit également une fenêtre de code pour les utilisateurs intéressés par le test de leurs compétences de codage ou à par l’optimisation des règles.
 
