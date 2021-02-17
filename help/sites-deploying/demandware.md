@@ -77,7 +77,7 @@ La réplication doit être activée après l’installation du package. Vous pou
 >
 >L’agent de réplication est configuré au niveau du journal d’informations par défaut. Si vous souhaitez disposer d’informations supplémentaires, vous pouvez définir le niveau du journal sur Débogage.
 
-#### OAuth  {#oauth}
+#### OAuth {#oauth}
 
 Le client OAuth est configuré de manière à fonctionner avec une instance de sandbox Demandware. À des fins de test, aucune modification n’est nécessaire.
 
