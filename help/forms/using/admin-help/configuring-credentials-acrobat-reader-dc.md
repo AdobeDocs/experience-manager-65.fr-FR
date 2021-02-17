@@ -37,7 +37,7 @@ Le Trust Store peut comporter plusieurs jeux d’informations d’identification
 >
 >vous pouvez également importer et supprimer des informations d’identification automatiquement (Voir [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63)).
 
-## Importation des données d’identification des extensions d’Acrobat Reader DC  {#import-a-acrobat-reader-dc-extensions-credential}
+## Importation des données d’identification des extensions d’Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Cliquez sur Importer, puis sous Type de Trust Store, sélectionnez Informations d’identification des extensions d’Acrobat Reader DC.
