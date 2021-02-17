@@ -78,9 +78,9 @@ Gardez également à l’esprit qu’en fonction du type et du nombre de validat
 
 C’est pourquoi il est recommandé d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.
 
-## Modes de compression complète et de compression des révisions les plus récentes   {#full-and-tail-compaction-modes}
+## Modes de compression complète et de compression des révisions les plus récentes  {#full-and-tail-compaction-modes}
 
-**aem 6.5** introduit  **deux nouveaux** modèles pour la phase de  **** compactiondu processus de nettoyage de la révision en ligne :
+**AEM 6.5** introduit  **deux nouveaux** modèles pour la phase de  **** compactiondu processus de nettoyage de la révision en ligne :
 
 * Le mode **compaction complète** réécrit tous les segments et fichiers tar dans l’ensemble du référentiel. La phase de nettoyage suivante peut donc supprimer un maximum d’informations parasites du référentiel. Étant donné qu’une compression complète affecte l’ensemble du référentiel, cette opération nécessite une quantité considérable de ressources systèmes et demande beaucoup de temps. La compression complète correspond à la phase de compression dans AEM 6.3.
 * Le mode de compaction **tail** réécrit uniquement les segments et fichiers tar les plus récents dans le référentiel. Il s’agit des segments et fichiers tar qui ont été ajoutés depuis la dernière exécution d’une compression, de quelque type que ce soit. La phase de nettoyage suivante peut donc ne supprimer que les informations parasites contenues dans la partie récente du référentiel. Étant donné que ce mode de compression ne concerne qu’une partie du référentiel, il consomme beaucoup moins de ressources système qu’une compression complète et s’avère bien plus rapide.
@@ -118,7 +118,7 @@ TarMK GC: running tail compaction
 TarMK GC: no base state available, running full compaction instead
 ```
 
-### Limites connues  {#known-limitations}
+### Limites connues {#known-limitations}
 
 Dans certains cas, basculer entre les deux modes de compression a pour effet de retarder le processus de nettoyage. Plus exactement, la taille du référentiel augmente après une compression complète (elle est multipliée par deux). L’espace supplémentaire sera récupéré lors de l’opération de compression des révisions les plus récentes suivante, le référentiel retrouvant alors une taille inférieure à celle qu’il avait avant la compression complète. Il est également conseillé d’éviter les exécutions de tâches de maintenance en parallèle.
 
@@ -270,7 +270,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Quelles sont les conditions minimales requises en matière d’espace disque et de mémoire de tas lors de l’exécution du nettoyage des révisions en ligne ?</strong></td>
-   <td><p>L’espace disque est surveillé en permanence lors du nettoyage des révisions en ligne. Si l’espace disque passe en dessous d’une certaine valeur, le processus est annulé. La valeur critique par défaut est de 25 % de l’encombrement sur le disque du référentiel, et elle n’est pas configurable.</p> <p><strong>Il est recommandé d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.</strong></p> <p>L’espace de tas libre est surveillé en permanence lors du processus de nettoyage. Si l’espace de tas disponible passe en dessous d’une certaine valeur, le processus est annulé. La valeur critique est configurée via org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. La valeur par défaut est 15 %.</p> <p>Les recommandations sur le dimensionnement du tas de compression minimal ne sont pas séparées des recommandations sur le dimensionnement de la mémoire AEM. En règle générale : <strong>si une instance AEM est suffisamment bien dimensionnée pour gérer les cas d’utilisation et la charge utile attendue, le processus de nettoyage obtiendra suffisamment de mémoire.</strong></p> </td>
+   <td><p>L’espace disque est surveillé en permanence lors du nettoyage des révisions en ligne. Si l’espace disque passe en dessous d’une certaine valeur, le processus est annulé. La valeur critique par défaut est de 25 % de l’encombrement sur le disque du référentiel, et elle n’est pas configurable.</p> <p><strong>Il est recommandé d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.</strong></p> <p>L’espace de tas libre est surveillé en permanence lors du processus de nettoyage. Si l’espace de tas disponible passe en dessous d’une certaine valeur, le processus est annulé. La valeur critique est configurée via org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. La valeur par défaut est 15%.</p> <p>Les recommandations sur le dimensionnement du tas de compression minimal ne sont pas séparées des recommandations sur le dimensionnement de la mémoire AEM. En règle générale : <strong>si une instance AEM est suffisamment bien dimensionnée pour gérer les cas d’utilisation et la charge utile attendue, le processus de nettoyage obtiendra suffisamment de mémoire.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>
