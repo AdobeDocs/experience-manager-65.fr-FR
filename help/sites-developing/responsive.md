@@ -431,7 +431,7 @@ Le code HTML suivant est un exemple des éléments `div` que le JSP génère :
 
 Si vous personnalisez le composant Image adaptative et modifiez les sélecteurs de largeur, vous devez également configurer le servlet Adaptive Image Component Servlet pour qu’il prenne en charge ces largeurs.
 
-### Présentation du servlet Adaptive Image Component Servlet  {#understanding-the-adaptive-image-component-servlet}
+### Présentation du servlet Adaptive Image Component Servlet {#understanding-the-adaptive-image-component-servlet}
 
 Le servlet Adaptive Component Servlet redimensionne une image JPEG selon une largeur spécifiée et définit la qualité JPEG.
 
