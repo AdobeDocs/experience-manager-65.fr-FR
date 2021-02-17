@@ -17,7 +17,7 @@ ht-degree: 88%
 ---
 
 
-# Personnalisation de la liste des instances de processus  {#customizing-the-listing-of-process-instances}
+# Personnalisation de la liste des instances de processus {#customizing-the-listing-of-process-instances}
 
 La liste des instances de processus est affichée dans l’onglet Suivi de l’espace de travail AEM Forms.
 
