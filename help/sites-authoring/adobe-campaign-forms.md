@@ -42,7 +42,7 @@ Même si vous créez ces formulaires individuellement, dans un cas d’utilisati
 
 Le formulaire est mis à jour automatiquement en fonction de l’utilisateur. Voir [Modification du contenu d’un formulaire](#editing-form-content) pour plus d’informations.
 
-## Rendre un modèle disponible  {#making-a-template-available}
+## Rendre un modèle disponible {#making-a-template-available}
 
 Avant de pouvoir créer des formulaires spécifiques à Adobe Campaign, vous devez rendre les différents modèles disponibles dans votre application AEM.
 
