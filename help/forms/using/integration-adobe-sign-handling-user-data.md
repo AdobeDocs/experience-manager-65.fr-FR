@@ -27,7 +27,7 @@ Pour plus d&#39;informations sur l&#39;intégration de [!DNL AEM Forms] à [!DNL
 
 [!DNL Adobe Sign]Le formulaire adaptatif activé par inclut des informations sur les signataires et peut inclure d’autres données utilisateur collectées par le formulaire adaptatif. Le service [!DNL Adobe Sign] enregistre les données utilisateur avec la signature dans l&#39;accord. L&#39;accord est enregistré sur le serveur [!DNL Adobe Sign] configuré dans les services de cloud [!DNL AEM Forms]. Par ailleurs, si le formulaire adaptatif est configuré pour utiliser l’action d’envoi du portail Forms, les données du contrat sont enregistrées dans le stockage de données du portail Forms avec les données du formulaire.
 
-## Accès et suppression des données utilisateur  {#access-and-delete-user-data}
+## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
 Les données utilisateur sont collectées dans le contrat mais ne sont enregistrées dans aucune des tables de service. [!DNL Adobe Sign] permet aux administrateurs de faire leurs propres choix concernant la gestion des données qu’ils contrôlent dans le service. Les administrateurs de la confidentialité sur le service [!DNL Adobe Sign] peuvent liste ou supprimer des accords basés sur l&#39;adresse électronique d&#39;un demandeur.
 
