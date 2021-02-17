@@ -26,7 +26,7 @@ Lors d’un envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le d
 
 Lisez la suite pour plus de détails sur l’envoi asynchrone dans les formulaires adaptatifs.
 
-## Configurer l’envoi asynchrone  {#configure}
+## Configurer l’envoi asynchrone {#configure}
 
 Pour configurer la soumission asynchrone pour un formulaire adaptatif :
 
