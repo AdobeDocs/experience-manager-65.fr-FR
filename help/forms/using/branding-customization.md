@@ -27,7 +27,7 @@ Vous pouvez personnaliser l’icône et le nom de l’application, les images de
 * Personnalisation des images sur la page de connexion
 * Personnalisation du logo dans le menu de l’application
 
-## Personnalisation de l’icône et des images de lancement  {#customizing-icon-and-launch-images}
+## Personnalisation de l’icône et des images de lancement {#customizing-icon-and-launch-images}
 
 Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l’image de lancement de l’application Forms :
 
