@@ -22,7 +22,7 @@ ht-degree: 6%
 
 Pour AEM Communities, la console Ressources permet aux [gestionnaires d&#39;activation](users.md) de créer, gérer et affecter des ressources aux membres d&#39;un site communautaire d&#39;activation.
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 Avant d’ajouter des ressources d’activation pour un site de la communauté, les instances AEM doivent être correctement configurées, notamment :
 
@@ -438,7 +438,7 @@ Si la seule modification consiste à modifier les affectations à l’étape Par
 
 En sélectionnant l&#39;icône de la corbeille, la ressource d&#39;activation sera `Deleted` après confirmation.
 
-### Publication   {#publish}
+### Publication  {#publish}
 
 ![publier-ressource](assets/publish-resource1.png)
 
@@ -500,7 +500,7 @@ L’axe horizontal est l’heure du calendrier.
 
 #### Engagement de la visionneuse {#viewer-engagement}
 
-Le rapport Engagement de la visionneuse Analytics montre, pour les ressources vidéo, le nombre d’apprenants qui ont consulté la ressource et, s’ils n’ont pas lu la ressource jusqu’à la fin, à quel moment les apprenants ont cessé de la lire.
+Le rapport Engagement de la visionneuse Analytics montre, pour les ressources vidéo, le nombre d’apprenants qui ont affiché la ressource et, s’ils n’ont pas lu la ressource jusqu’à la fin, à quel moment les apprenants ont cessé de la lire.
 
 L&#39;axe vertical est le nombre d&#39;apprenants qui ont consulté cette ressource.
 
