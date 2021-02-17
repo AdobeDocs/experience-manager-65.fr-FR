@@ -23,7 +23,7 @@ ht-degree: 79%
 
 Ce chapitre décrit comment configurer et gérer l’autorisation de l’utilisateur et décrit également la théorie sous-jacente au fonctionnement de l’authentification et des autorisations dans AEM.
 
-## Utilisateurs et groupes dans AEM  {#users-and-groups-in-aem}
+## Utilisateurs et groupes dans AEM {#users-and-groups-in-aem}
 
 Cette section traite des différentes entités et des concepts associés plus en détail pour vous aider à définir un concept de gestion des utilisateurs simple.
 
@@ -151,7 +151,7 @@ Vous pouvez modifier les autorisations accordées/refusées à un utilisateur do
 
 L’emplacement de la coche sur la grille indique également de quelles autorisations les utilisateurs disposent et à quels endroits dans AEM (c’est-à-dire, les chemins d’accès).
 
-### Actions   {#actions}
+### Actions  {#actions}
 
 Les actions peuvent être effectuées sur une page (ressource). Pour chaque page dans la hiérarchie, vous pouvez spécifier quelle action l’utilisateur est autorisé à effectuer sur cette page. [Vous pouvez ](#permissions-and-acls) autoriser ou refuser une action.
 
@@ -205,7 +205,7 @@ Les actions peuvent être effectuées sur une page (ressource). Pour chaque page
 
 >[!NOTE]
 >
->aem génère automatiquement des groupes d’utilisateurs pour l’affectation de rôles (propriétaire, éditeur, visionneuse) dans [Collections](/help/assets/manage-collections.md). Cependant, ajouter manuellement des listes de contrôle d’accès pour ces groupes peut introduire des vulnérabilités en matière de sécurité dans AEM. Adobe recommande d’éviter d’ajouter des listes de contrôle d’accès manuellement.
+>AEM génère automatiquement des groupes d’utilisateurs pour l’affectation de rôles (propriétaire, éditeur, visionneuse) dans [Collections](/help/assets/manage-collections.md). Cependant, ajouter manuellement des listes de contrôle d’accès pour ces groupes peut introduire des vulnérabilités en matière de sécurité dans AEM. Adobe recommande d’éviter d’ajouter des listes de contrôle d’accès manuellement.
 
 ### Listes de contrôle d’accès et leur méthode d’évaluation  {#access-control-lists-and-how-they-are-evaluated}
 
@@ -238,8 +238,8 @@ Les listes de contrôle d’accès sont composées d’autorisations spécifique
 
 | **Action** | **Description** |
 |---|---|
-| Autoriser (coche) | aem WCM permet à l’utilisateur d’effectuer l’action sur cette page ou sur n’importe quelle page enfant. |
-| Refuser (aucune coche) | aem WCM ne permet pas à l’utilisateur d’effectuer l’action sur cette page ni sur aucune page enfant. |
+| Autoriser (coche) | AEM WCM permet à l’utilisateur d’effectuer l’action sur cette page ou sur n’importe quelle page enfant. |
+| Refuser (aucune coche) | AEM WCM ne permet pas à l’utilisateur d’effectuer l’action sur cette page ni sur aucune page enfant. |
 
 Les autorisations sont également appliquées à toutes les pages enfants.
 
