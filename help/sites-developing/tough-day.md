@@ -167,7 +167,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Ajout de plusieurs instances du même test   {#adding-multiple-instances-of-the-same-test}
+### Ajout de plusieurs instances du même test  {#adding-multiple-instances-of-the-same-test}
 
 Vous pouvez également ajouter et exécuter plusieurs instances du même test, mais chaque instance doit avoir un nom unique. Les exemples ci-dessous montrent comment ajouter deux instances du même test en utilisant des paramètres de ligne de commande ou un fichier de configuration yaml.
 
@@ -191,7 +191,7 @@ tests:
       name : SecondAssetTree
 ```
 
-### Modification des propriétés de test  {#changing-the-test-properties}
+### Modification des propriétés de test {#changing-the-test-properties}
 
 Si vous devez modifier une ou plusieurs propriétés de test, vous pouvez ajouter cette propriété à la ligne de commande ou au fichier de configuration yaml. Pour afficher toutes les propriétés de test disponibles, ajoutez le paramètre `--help <TestClass/PublisherClass>` à la ligne de commande, par exemple :
 
@@ -352,7 +352,7 @@ Tough Day 2 génère à la fois des métriques de test et des journaux. Pour pl
 
 Tough Day 2 fait actuellement état de 9 métriques de test que vous pouvez évaluer. Les mesures avec le symbole ***** ne sont reportées qu’après des exécutions réussies :
 
-| **Nom** | **Description** |
+| **Name** (Nom) | **Description** |
 |---|---|
 | Timestamp | Horodatage de la dernière exécution de test terminée. |
 | Transmis | Nombre d&#39;exécutions réussies. |
@@ -406,7 +406,7 @@ Tough Day 2 crée un dossier de journaux dans le même répertoire que celui où
 
 Les journaux ne sont pas remplacés, les exécutions subséquentes ajoutent des messages aux journaux existants. Les journaux ont plusieurs niveaux, pour plus d&#39;informations voir le ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Cas d’utilisation     {#example-usage}
+#### Cas d’utilisation  {#example-usage}
 
 #### Problèmes connus {#known-issues}
 
