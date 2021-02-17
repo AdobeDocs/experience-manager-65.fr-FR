@@ -17,7 +17,7 @@ ht-degree: 51%
 ---
 
 
-# Personnalisation des images utilisées dans les actions d’itinéraire  {#customize-images-used-in-route-actions}
+# Personnalisation des images utilisées dans les actions d’itinéraire {#customize-images-used-in-route-actions}
 
 Pour personnaliser les images utilisées dans les actions d’itinéraire, suivez les étapes décrites dans [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis la procédure décrite dans cet article.
 
