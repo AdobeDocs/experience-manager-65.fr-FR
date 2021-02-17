@@ -82,6 +82,6 @@ Si vous avez fait glisser une image dans le composant Média panoramique au sein
 
 Voir aussi [Aperçu des ressources](/help/assets/previewing-assets.md).
 
-## Publication des images panoramiques    {#publishing-panoramic-images}
+## Publication des images panoramiques   {#publishing-panoramic-images}
 
 Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
