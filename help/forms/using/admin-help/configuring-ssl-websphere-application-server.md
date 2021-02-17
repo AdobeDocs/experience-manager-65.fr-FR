@@ -22,7 +22,7 @@ ht-degree: 94%
 
 Cette section décrit la procédure permettant de configurer SSL sur IBM WebSphere Application Server.
 
-## Création d’un compte d’utilisateur local sur WebSphere  {#creating-a-local-user-account-on-websphere}
+## Création d’un compte d’utilisateur local sur WebSphere {#creating-a-local-user-account-on-websphere}
 
 Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le registre utilisateur du système d’exploitation local, qui soit autorisé à administrer le système :
 
@@ -87,7 +87,7 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 1. Assurez-vous que la case à cocher **Enable Application Security** est activée. Cliquez sur **Next** (Suivant).
 1. Sélectionnez **Federated Repositories** et cliquez sur **Next**.
 1. Spécifiez les informations d’identification que vous souhaitez configurer et cliquez sur **Next**.
-1. Cliquez sur **Terminer**.
+1. Cliquez sur **Finish** (Terminer). 
 1. Redémarrez le profil WebSphere.
 
    WebSphere commencera à utiliser le fichier de stockage de clés et le fichier de magasin d’approbations (Trust Store) par défaut.
