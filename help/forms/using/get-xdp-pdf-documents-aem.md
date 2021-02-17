@@ -34,7 +34,7 @@ Vous pouvez transférer les types de ressource pris en charge individuellement o
 >
 >Assurez-vous d’être membre du groupe `form-power-users` pour pouvoir télécharger des fichiers XDP. Contactez votre administrateur pour devenir membre du groupe.
 
-## Chargement de formulaires  {#uploading-forms}
+## Chargement de formulaires {#uploading-forms}
 
 1. Connectez-vous à l’interface utilisateur AEM Forms en accédant à `https://'[server]:[port]'/aem/forms.html`.
 1. Accédez au dossier vers lequel vous souhaitez transférer le formulaire ou le dossier contenant des formulaires.
