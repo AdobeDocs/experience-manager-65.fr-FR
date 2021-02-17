@@ -62,7 +62,7 @@ Ce diagramme illustre une arborescence de décision concernant l’utilisation d
 >
 >Pour obtenir des informations détaillées sur ce scénario, voir [Cas d’utilisation 3 – Réindexation](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
 
-### Pré-extraction de texte pour SegmentNodeStore et DocumentNodeStore  {#textpre-extraction}
+### Pré-extraction de texte pour SegmentNodeStore et DocumentNodeStore {#textpre-extraction}
 
 La [pré-extraction de texte](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (une fonctionnalité qui existait déjà dans AEM 6.3) permet de réduire la durée de réindexation. Elle peut être utilisée avec toutes les méthodes de réindexation.
 
