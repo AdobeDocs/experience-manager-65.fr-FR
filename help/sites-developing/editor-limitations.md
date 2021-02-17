@@ -22,7 +22,7 @@ ht-degree: 94%
 
 L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions lorsque cela s’avère possible.
 
-## Limites fonctionnelles   {#functional-limitations}
+## Limites fonctionnelles  {#functional-limitations}
 
 Un auteur peut être confronté aux limites fonctionnelles suivantes lors de l’utilisation de l’éditeur pour créer des pages.
 
