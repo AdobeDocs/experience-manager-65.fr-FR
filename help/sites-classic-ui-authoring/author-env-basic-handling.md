@@ -59,7 +59,7 @@ Les principales consoles sont les suivantes :
    <td>Ces consoles permettent d’importer et de <a href="/help/sites-classic-ui-authoring/classicui-assets.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM. </td>
   </tr>
   <tr>
-   <td><strong>Les lancements  </strong></td>
+   <td><strong>Lancements</strong></td>
    <td>Cela vous permet de gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a>; vous pouvez ainsi développer le contenu pour une prochaine publication d’une ou de plusieurs pages Web activées.<br /> <i>Remarque : Dans l’interface utilisateur tactile, la plupart des mêmes fonctionnalités sont disponibles dans la console Sites, ainsi que dans le rail Références.</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
   </tr>
   <tr>
@@ -117,7 +117,7 @@ Sur diverses consoles (Sites web, par exemple), un bouton **Aide** permet d’ou
 
 Lors de la modification d’une page, le [sidekick comporte aussi un bouton d’accès à l’aide](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
-## Navigation à l’aide de la console Sites web  {#navigating-with-the-websites-console}
+## Navigation à l’aide de la console Sites web {#navigating-with-the-websites-console}
 
 La console **Sites web** répertorie vos pages de contenu dans une structure arborescente (volet de gauche). Pour garantir une navigation aisée, les sections de l’arborescence peuvent être développées (+) ou réduites (-) suivant les besoins :
 
@@ -168,7 +168,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
    <td>Présente une miniature de la page.</td>
   </tr>
   <tr>
-   <td>Title (Titre)</td>
+   <td>Titre</td>
    <td>Titre qui apparaît sur la page.</td>
   </tr>
   <tr>
