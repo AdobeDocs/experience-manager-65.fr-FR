@@ -31,7 +31,7 @@ Cela signifie que le composant doit avoir un modèle Sling pour effectuer une ex
 * [Définition d’un modèle Sling pour le composant](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Annotation de l’interface du modèle Sling](#annotate-the-sling-model-interface)
 
-## Définition d’un modèle Sling pour le composant   {#define-a-sling-model-for-the-component}
+## Définition d’un modèle Sling pour le composant  {#define-a-sling-model-for-the-component}
 
 Il faut d’abord définir un modèle Sling pour le composant.
 
