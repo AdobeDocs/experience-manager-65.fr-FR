@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: cb141914428f42a9755b5479ab1652c8ca51f640
 workflow-type: tm+mt
 source-wordcount: '2155'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ CRXDE Lite est recommandé si vous ne disposez pas d’un accès direct au serve
 >
 >Il est recommandé d’utiliser [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) et [AEM HTL Brackets Extension](/help/sites-developing/aem-brackets.md) pendant le développement du projet.
 
-## Prise en main de CRXDE Lite  {#getting-started-with-crxde-lite}
+## Prise en main de CRXDE Lite {#getting-started-with-crxde-lite}
 
 Pour commencer avec CRXDE Lite, procédez comme suit :
 
@@ -48,13 +48,13 @@ Pour commencer avec CRXDE Lite, procédez comme suit :
 
 1. Cliquez sur **OK**.
 
-L’interface utilisateur de CRXDE Lite est la suivante dans votre navigateur : 
+L’interface utilisateur de CRXDE Lite est la suivante dans votre navigateur :
 
 ![chlimage_1-18](assets/crx-interface.jpg)
 
 Vous pouvez désormais utiliser CRXDE Lite pour développer votre application.
 
-## Présentation de l’interface utilisateur  {#overview-of-the-user-interface}
+## Présentation de l’interface utilisateur {#overview-of-the-user-interface}
 
 CRXDE Lite offre les fonctionnalités suivantes :
 
@@ -129,7 +129,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
    <td>Renomme le nœud sélectionné.<br /> </td>
   </tr>
   <tr>
-   <td>Mixin...<br /> </td>
+   <td>Mixins ...<br /> </td>
    <td>Permet d’ajouter des types mixin au type de nœud. Les types mixin sont principalement utilisés pour ajouter des fonctionnalités avancées telles que la gestion des versions, le contrôle d’accès, le référencement et le verrouillage du nœud.</td>
   </tr>
   <tr>
@@ -148,13 +148,13 @@ CRXDE Lite offre les fonctionnalités suivantes :
 Pour créer un dossier avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier sous lequel vous souhaitez créer le nouveau dossier, sélectionnez **Créer ...**, puis **Créer un dossier...**.
+1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier sous lequel vous souhaitez créer le nouveau dossier, sélectionnez **Créer...**, puis **Créer un dossier...**.
 
 1. Entrez le **nom** du dossier et cliquez sur **OK**.
 
 1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
 
-## Création d’un modèle  {#creating-a-template}
+## Création d’un modèle {#creating-a-template}
 
 Pour créer un modèle avec CRXDE Lite :
 
@@ -223,7 +223,7 @@ Vous pouvez désormais adapter la boîte de dialogue à vos besoins en modifiant
 
 Vous pouvez également utiliser l’éditeur de boîte dialogue pour modifier une boîte de dialogue. Un double-clic sur le nœud dialog dans CRXDE Lite fait apparaître l’éditeur. Plus d’informations sur l’éditeur de boîte de dialogue sont disponibles [ici](/help/sites-developing/dialog-editor.md).
 
-## Création d’un nœud  {#creating-a-node}
+## Création d’un nœud {#creating-a-node}
 
 Pour créer un nœud avec CRXDE Lite :
 
@@ -286,7 +286,7 @@ Pour importer une définition de type de nœud :
 
 ## Journalisation {#logging}
 
-Avec CRXDE Lite, vous pouvez afficher le fichier `error.log` situé sur le système de fichiers à `<crx-install-dir>/crx-quickstart/server/logs` et le filtrer au niveau de journal approprié. Procédez comme suit :
+CRXDE Lite permet d’afficher le fichier `error.log` qui se trouve sur le système de fichiers sous `<crx-install-dir>/crx-quickstart/server/logs` et de filtrer selon le niveau de journalisation approprié. Procédez comme suit :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans l’onglet **Console** en bas de la fenêtre, dans le menu déroulant à droite, sélectionnez **Journaux de serveur**.
@@ -295,9 +295,9 @@ Avec CRXDE Lite, vous pouvez afficher le fichier `error.log` situé sur le syst�
 
 Vous pouvez :
 
-* Réglez les paramètres de journal dans la console Felix en cliquant sur l&#39;icône **Configurations de journalisation**.
+* Ajuster les paramètres du journal dans la console Felix en cliquant sur l’icône **Configurations de journalisation**.
 * Effacer les messages en cliquant sur l’icône **Pinceau**.
-* Épingler le message à la sélection en cours en cliquant sur l’icône **Épingler**.
+* Épingler le message à la sélection en cours en cliquant sur l’icône **Épingler la**.
 * Activer ou désactiver l’affichage des messages en cliquant sur l’icône **Stop**.
 
 ## Contrôle d’accès {#access-control}
