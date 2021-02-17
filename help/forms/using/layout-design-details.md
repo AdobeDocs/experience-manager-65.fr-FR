@@ -94,7 +94,7 @@ Pour utiliser un sous-formulaire dans un modèle XDP, procédez comme suit :
    1. Accédez à l’emplacement d’enregistrement du fichier et spécifiez un nom pour le modèle XDP.
    1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
 
-   1. Appuyez sur **Save** (Enregistrer).
+   1. Appuyez sur **Enregistrer**.
 
 ### Utiliser le composant Champ d’image dans un modèle XDP {#use-image-field-component-in-an-xdp-template}
 
@@ -147,7 +147,7 @@ Suivez les étapes ci-après pour utiliser le composant Tableau dans le modèle 
 
    1. Appuyez sur **Enregistrer**.
 
-### Télécharger le modèle XDP sur le serveur AEM Forms  {#uploadxdptemplate}
+### Télécharger le modèle XDP sur le serveur AEM Forms {#uploadxdptemplate}
 
 Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous devez le télécharger sur le serveur AEM Forms pour qu’il soit disponible lors de la création de la communication interactive.
 
