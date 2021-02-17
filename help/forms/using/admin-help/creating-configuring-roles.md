@@ -56,15 +56,15 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
 **Administrateur Forms :** peut vue et modifier des paramètres de la page Forms dans Administration Console
 
-**aem forms Contentspace Administrator :** peut vue et modifier des paramètres de la page Content Services (obsolète) dans Administration Console.
+**AEM forms Contentspace Administrator :** peut vue et modifier des paramètres de la page Content Services (obsolète) dans Administration Console.
 
-**aem Forms Contentspace User:** peut se connecter aux pages Web Contentspace (obsolète)
+**AEM Forms Contentspace User:** peut se connecter aux pages Web Contentspace (obsolète)
 
 **Documentum Connector Administrator :** peut vue et modifier des paramètres de la page Connector for EMC Documentum dans Administration Console.
 
-**aem forms Administrateur FileNet Connector :** peut vue et modifier des paramètres de la page Connector for IBM FileNet dans Administration Console.
+**AEM forms Administrateur FileNet Connector :** peut vue et modifier des paramètres de la page Connector for IBM FileNet dans Administration Console.
 
-**aem forms Administrateur IBM CM Connector :** peut vue et modifier des paramètres de la page Connector for IBM Content Manager dans Administration Console.
+**AEM forms Administrateur IBM CM Connector :** peut vue et modifier des paramètres de la page Connector for IBM Content Manager dans Administration Console.
 
 **Administrateur Rights Management :** exécute toutes les tâches requises pour toutes les configurations de serveur sur les pages de Rights Management appropriées.
 
@@ -78,7 +78,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
 **Super administrateur Rights Management :** exécute toutes les tâches requises à partir de la page Rights Management
 
-**aem Forms Workspace Administrator :** peut vue et modifier des paramètres de la page Workspace dans Administration Console
+**AEM Forms Workspace Administrator :** peut vue et modifier des paramètres de la page Workspace dans Administration Console
 
 ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
 
@@ -100,7 +100,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 >
 >Flex Workspace est obsolète pour la version d’AEM Forms.
 
-## Création d’un rôle  {#create-a-role}
+## Création d’un rôle {#create-a-role}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des rôles, puis sur Nouveau rôle.
 1. Dans la zone Nom du rôle, saisissez le nom du rôle, indiquez-en éventuellement une description, puis cliquez sur Suivant.
