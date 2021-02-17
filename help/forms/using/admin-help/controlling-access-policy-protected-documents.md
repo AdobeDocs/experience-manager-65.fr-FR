@@ -34,7 +34,7 @@ Lorsqu’un document est protégé par une stratégie et que vous révoquez des 
 * Si le document est en ligne, la modification est appliquée immédiatement, sauf si l’utilisateur a ouvert le document. Si tel est le cas, l’utilisateur doit fermer le document pour que la modification soit prise en compte.
 * Si un destinataire utilise le document hors connexion (par exemple, sur un ordinateur portable), la modification prend effet lorsque le destinataire se synchronise avec Document Security en ouvrant un document protégé par une stratégie.
 
-## Affichage des informations sur un document  {#view-information-about-a-document}
+## Affichage des informations sur un document {#view-information-about-a-document}
 
 Pour chacun des documents répertoriés dans la page Documents, vous pouvez voir le nom du document, le nom de l’éditeur, le nom de la stratégie et la date à laquelle le document a été protégé. Si la stratégie qui protégeait un document a été supprimée, son ID apparaît sous le nom de la stratégie.
 
