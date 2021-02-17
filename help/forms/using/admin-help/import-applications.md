@@ -37,7 +37,7 @@ Importez et gérez les applications créées avec Workbench dans l’onglet Appl
 * les paramètres de configuration du point de fin ;
 * les paramètres de sécurité.
 
-## Importation d’une application ou d’une archive  {#import-an-application-or-archive}
+## Importation d’une application ou d’une archive {#import-an-application-or-archive}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications.
 1. Cliquez sur Importer.
