@@ -36,7 +36,7 @@ L’outil va créer la boîte de dialogue à l’aide de l’IU basée sur Coral
 >
 >Bien qu’il soit généralement préférable de migrer vers la plate-forme la plus récente, passer de Coral 2 à Coral 3 n’est pas indispensable. Cependant, tout nouveau projet doit être commencé dans Coral 3.
 
-## Téléchargement et installation de l’outil de conversion de boîte de dialogue  {#download-and-install-the-dialog-conversion-tool}
+## Téléchargement et installation de l’outil de conversion de boîte de dialogue {#download-and-install-the-dialog-conversion-tool}
 
 L’outil de conversion de boîte de dialogue est désormais disponible en Open Source. Vous pouvez y accéder via GitHub.
 
