@@ -25,9 +25,9 @@ Les sites web modernes sont très dépendants du traitement côté client effect
 
 Pour résoudre ce problème, AEM fournit des **dossiers de bibliothèques côté client** qui permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct.
 
-## Fonctionnement des bibliothèques côté client dans AEM  {#how-client-side-libraries-work-in-aem}
+## Fonctionnement des bibliothèques côté client dans AEM {#how-client-side-libraries-work-in-aem}
 
-La méthode standard pour inclure une bibliothèque côté client (c’est-à-dire un fichier JS ou CSS) dans le code HTML d’une page consiste simplement à inclure une balise `<script>` ou `<link>` dans le JSP pour cette page, contenant le chemin d’accès au fichier en question. Par exemple :
+La méthode standard pour inclure une bibliothèque côté client (c’est-à-dire un fichier JS ou CSS) dans le code HTML d’une page consiste simplement à inclure une balise `<script>` ou `<link>` dans le JSP pour cette page, contenant le chemin d’accès au fichier en question. Par exemple,
 
 ```xml
 ...
