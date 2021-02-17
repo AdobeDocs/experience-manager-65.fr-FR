@@ -26,7 +26,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
 * [Outils – IU optimisée pour les écrans tactiles](#tools-touch-optimized-ui)
 * [Outils – IU classique](#tools-classic-ui)
 
-## Outils – IU optimisée pour les écrans tactiles  {#tools-touch-optimized-ui}
+## Outils – IU optimisée pour les écrans tactiles {#tools-touch-optimized-ui}
 
 >[!NOTE]
 >
@@ -394,7 +394,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Permet d’accéder aux importateurs et aux différentes données de produit.</td>
   </tr>
   <tr>
-   <td>Gestion des ressources numériques </td>
+   <td>Gestion des ressources numériques (DAM)  </td>
    <td>Permet d’accéder à différentes options.</td>
   </tr>
   <tr>
