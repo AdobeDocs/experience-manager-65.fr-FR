@@ -115,7 +115,7 @@ Un simple clic sur une marque effectue les deux opérations suivantes :
 * **Dans le volet de droite** : Des icônes sont affichées pour chaque marque (les anciennes campagnes ne sont pas visibles).
 Vous pouvez double-cliquer sur ces icônes pour ouvrir l’aperçu de la marque.
 
-#### Aperçu de la marque  {#brand-overview}
+#### Aperçu de la marque {#brand-overview}
 
 ![mcm_brandoverview](assets/mcm_brandoverview.png)
 
