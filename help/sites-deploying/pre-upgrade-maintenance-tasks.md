@@ -40,7 +40,7 @@ Avant de démarrer la mise à niveau, il est important de suivre les tâches de 
 
 * [Effectuez la rotation des fichiers journaux](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
-## Vérification de l’espace disque  {#ensure-sufficient-disk-space}
+## Vérification de l’espace disque {#ensure-sufficient-disk-space}
 
 Lors de l’exécution de la mise à niveau, en plus des activités de mise à niveau de contenu et du code, une migration du référentiel doit être effectuée. La migration crée une copie du référentiel dans le nouveau format tar de segment. Par conséquent, vous devez disposer de suffisamment d’espace disque pour conserver une seconde version du référentiel, potentiellement plus grande.
 
