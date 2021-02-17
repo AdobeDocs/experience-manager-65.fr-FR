@@ -26,7 +26,7 @@ Lorsque la fonction SSO est implémentée, les pages d’ouverture de session ut
 
 Si AEM forms n’est pas en mesure d’authentifier un utilisateur à l’aide de l’une de ces méthodes, l’utilisateur est redirigé vers une page d’ouverture de session.
 
-## Activation de la fonction SSO à l’aide d’en-têtes HTTP  {#enable-sso-using-http-headers}
+## Activation de la fonction SSO à l’aide d’en-têtes HTTP {#enable-sso-using-http-headers}
 
 La page Configuration du portail permet d’activer l’authentification unique (SSO) entre les applications et les applications prenant en charge l’acheminement de l’identité via l’en-tête HTTP. Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires. Elles ne s’affichent pas si l’utilisateur s’est déjà authentifié via le portail de son entreprise.
 
