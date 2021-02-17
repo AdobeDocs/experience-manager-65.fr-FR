@@ -1,8 +1,8 @@
 ---
 title: Définition de votre filtre de référent sur Autoriser vide
 seo-title: Définition de votre filtre de référent sur Autoriser vide
-description: Suivez cette page pour en savoir plus sur le filtre de Parrain. Pour autoriser l’application AEM Mobile Application Viewer à vue des applications sur votre instance d’auteur, vous devez définir votre filtre de parrain HTML sur "Autoriser vide".
-seo-description: Suivez cette page pour en savoir plus sur le filtre de Parrain. Pour autoriser l’application AEM Mobile Application Viewer à vue des applications sur votre instance d’auteur, vous devez définir votre filtre de parrain HTML sur "Autoriser vide".
+description: Suivez cette page pour en savoir plus sur le filtre de Parrain. Pour autoriser l’application AEM Mobile Application Viewer à vue les applications de votre instance d’auteur, vous devez définir votre filtre de parrain HTML sur "Autoriser vide".
+seo-description: Suivez cette page pour en savoir plus sur le filtre de Parrain. Pour autoriser l’application AEM Mobile Application Viewer à vue les applications de votre instance d’auteur, vous devez définir votre filtre de parrain HTML sur "Autoriser vide".
 uuid: 4fb0f95c-ac8f-4a14-8c46-6616d9d4f380
 contentOwner: User
 content-type: reference
@@ -24,7 +24,7 @@ ht-degree: 47%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Pour autoriser l’application AEM Mobile Application Viewer à vue des applications sur votre instance d’auteur, vous devez définir votre filtre de parrain HTML sur &quot;Autoriser vide&quot;.
+Pour autoriser l’application AEM Mobile Application Viewer à vue les applications de votre instance d’auteur, vous devez définir votre filtre de parrain HTML sur &quot;Autoriser vide&quot;.
 
 Si vous n’avez pas l’intention d’utiliser la visionneuse d’application pour passer en revue les applications se trouvant aux stades de développement et intermédiaire, il n’est pas nécessaire de modifier le paramètre par défaut du filtre de référent.
 
