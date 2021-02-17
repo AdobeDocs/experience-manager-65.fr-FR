@@ -16,7 +16,7 @@ ht-degree: 88%
 ---
 
 
-# Publication de ressources Dynamic Media  {#publishing-dynamic-media-assets}
+# Publication de ressources Dynamic Media {#publishing-dynamic-media-assets}
 
 Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide.]** Une fois vos fichiers Dynamic Media publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant le code sur la page.
 
@@ -46,7 +46,7 @@ Voir aussi [Incorporation de la visionneuse de vidéos ou d’images Dynamic Med
 
 Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, reportez-vous à la section [Publication de ressources.](manage-assets.md)
 
-## Diffusion de ressources Dynamic Media via HTTP/2   {#http-delivery-of-dynamic-media-assets}
+## Diffusion de ressources Dynamic Media via HTTP/2  {#http-delivery-of-dynamic-media-assets}
 
 AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
