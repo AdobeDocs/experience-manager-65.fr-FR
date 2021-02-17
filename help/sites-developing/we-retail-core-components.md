@@ -22,7 +22,7 @@ ht-degree: 82%
 
 Les composants principaux sont des composants souples et modernes offrant une grande facilité d’extensibilité et permettant une intégration aisée dans vos projets. Plusieurs principes de conception majeurs ont présidé à l’élaboration des composants principaux : HTL, composants utillisables immédiatement, configurabilité, contrôle de version, extensibilité… We.Retail repose sur des composants principaux.
 
-## Test  {#trying-it-out}
+## Test {#trying-it-out}
 
 1. Démarrez AEM avec l’échantillon de contenu We.Retail, puis ouvrez la [Console Composants](/help/sites-authoring/default-components-console.md).
 
