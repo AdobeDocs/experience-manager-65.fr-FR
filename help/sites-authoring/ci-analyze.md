@@ -23,7 +23,7 @@ ht-degree: 98%
 
 Ouvrez la page [Content Insight](/help/sites-authoring/content-insights.md) pour analyser les performances de la page que vous créez. Configurez la période de création de rapports afin de cibler votre analyse.
 
-## Ouverture de l’analyse et des recommandations relatives à une page  {#opening-analytics-and-recommendations-for-a-page}
+## Ouverture de l’analyse et des recommandations relatives à une page {#opening-analytics-and-recommendations-for-a-page}
 
 Utilisez la procédure suivante afin de voir les analyses et les recommandations pour une page :
 
