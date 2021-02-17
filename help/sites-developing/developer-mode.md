@@ -70,7 +70,7 @@ Il doit être désactivé à nouveau après utilisation.
 
 
 
-## Ouverture du mode Développeur  {#opening-developer-mode}
+## Ouverture du mode Développeur {#opening-developer-mode}
 
 Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dans l’éditeur de page. Pour ouvrir le panneau, sélectionnez **Développeur** dans le sélecteur de mode au niveau de la barre d’outils de l’éditeur de page :
 
