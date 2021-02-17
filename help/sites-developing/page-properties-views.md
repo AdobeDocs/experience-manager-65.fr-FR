@@ -102,7 +102,7 @@ Par exemple, l’[**assistant Créer une page**](/help/sites-authoring/managing-
 >[!NOTE]
 Lors de la configuration des propriétés de page à utiliser avec des Live Copies, reportez-vous à la section [Configuration de verrouillages MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
 
-## Exemple de configuration des propriétés de page  {#sample-configuration-of-page-properties}
+## Exemple de configuration des propriétés de page {#sample-configuration-of-page-properties}
 
 Cet exemple illustre la technique dialog diff de [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) ; y compris l’utilisation de [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Il illustre également l&#39;utilisation de `cq:showOnCreate` et `cq:hideOnEdit`.
 
