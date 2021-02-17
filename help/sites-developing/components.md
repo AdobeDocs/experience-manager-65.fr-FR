@@ -1,5 +1,5 @@
 ---
-title: Composants Présentation
+title: Aperçu des composants
 seo-title: Composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
 seo-description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
@@ -61,7 +61,7 @@ AEM est fourni avec un éventail de [composants prêts à l’emploi](/help/site
 
 Les composants fournis et leur utilisation dans les [exemples de sites web We.Retail](/help/sites-developing/we-retail.md) illustrent l’implémentation et l’utilisation des composants. Les composants sont fournis avec l’intégralité du code source et peuvent être utilisés tels quels ou comme points de départ pour des composants modifiés ou étendus.
 
-### Composants principaux et composants de base  {#core-components-and-foundation-components}
+### Composants principaux et composants de base {#core-components-and-foundation-components}
 
 Il existe deux groupes de composants AEM fournis par Adobe :
 
