@@ -71,13 +71,13 @@ Pour Adobe Experience Manager :
 
    * L’Adobe Experience Platform Privacy Service ne fera pas partie du processus d’AEM, comme illustré dans le diagramme ci-dessous.
 
-* aem comprend la documentation et les procédures permettant à l&#39;administrateur de la protection des renseignements personnels du client et/ou à l&#39;administrateur AEM d&#39;exécuter les demandes de réglementation de la protection des renseignements personnels ; soit manuellement, soit par le biais d’API, si disponible.
+* AEM comprend la documentation et les procédures permettant à l&#39;administrateur de la protection des renseignements personnels du client et/ou à l&#39;administrateur AEM d&#39;exécuter les demandes de réglementation de la protection des renseignements personnels ; soit manuellement, soit par le biais d’API, si disponible.
 
-* Aucun nouveau service ou interface utilisateur n&#39;a été ajouté.
+* Aucun nouveau service ou interface utilisateur n’a été ajouté.
 
    * En revanche, les procédures et les API sont documentées pour être utilisées par les interfaces utilisateur/portails client qui gèrent les demandes de réglementation de la confidentialité.
 
-* aem n’inclut aucun outil prêt à l’emploi pour prendre en charge le processus de demande de confidentialité.
+* AEM n’inclut aucun outil prêt à l’emploi pour prendre en charge le processus de demande de confidentialité.
 
    * L&#39;Adobe fournira de la documentation et des procédures à l&#39;administrateur de la confidentialité du client et/ou à l&#39;administrateur AEM, leur permettant d&#39;exécuter manuellement les demandes liées à la réglementation sur la confidentialité.
 
