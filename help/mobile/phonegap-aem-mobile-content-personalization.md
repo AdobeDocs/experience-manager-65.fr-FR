@@ -32,7 +32,7 @@ La fonction de personnalisation du contenu AEM Mobile permet à [Auteurs AEM](#a
 
 Comme c&#39;est souvent le cas en AEM, pour que les auteurs puissent commencer à créer ce contenu, les administrateurs et les développeurs doivent d&#39;abord préparer l&#39;environnement.
 
-[aem ](#administrator) les administrateurs doivent établir une connexion entre AEM Mobile et le Cloud Service Adobe Target.
+[AEM ](#administrator) les administrateurs doivent établir une connexion entre AEM Mobile et le Cloud Service Adobe Target.
 
 En attendant, les [développeurs](#developer) AEM Mobile doivent modifier leurs scripts existants pour faciliter la création de contenu ciblé.
 
@@ -54,7 +54,7 @@ Il est conseillé, dans le cadre de la configuration des utilisateurs et des gro
 
 >[!NOTE]
 >
->Si vous oubliez d’ajouter les utilisateurs ou les groupes auxquels vous souhaitez accéder à la console d’administration de la personnalisation au groupe d’auteurs d’activités-cibles, les utilisateurs ne pourront pas voir la console de personnalisation.
+>Si vous oubliez d’ajouter les utilisateurs ou les groupes auxquels vous souhaitez avoir accès à la console d’administration de la personnalisation au groupe d’auteurs d’activités-cibles, les utilisateurs ne pourront pas voir la console de personnalisation.
 
 ### Cloud Services {#cloud-services}
 
