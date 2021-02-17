@@ -39,7 +39,7 @@ Pour suivre le scénario ci-après ou un scénario similaire, vous devez dispose
 * JavaScript
 * Java
 
-## Scénario : Ajoutez une commande à l’interface utilisateur des listes Lettres pour envoyer la version PDF aplatie d’une lettre  {#addcommandtoletters}
+## Scénario : Ajoutez une commande à l’interface utilisateur des listes Lettres pour envoyer la version PDF aplatie d’une lettre {#addcommandtoletters}
 
 Les étapes ci-dessous ajoutent une commande « Télécharger un PDF aplati » à la vue Liste des ressources de lettres et permettent à vos utilisateurs de télécharger le PDF aplati de la lettre sélectionnée. Le suivi de ces étapes à l’aide du code et des paramètres appropriés permet d’ajouter une autre fonctionnalité pour une ressource différente, telle que des dictionnaires de données ou des textes.
 
