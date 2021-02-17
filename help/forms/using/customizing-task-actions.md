@@ -17,7 +17,7 @@ ht-degree: 62%
 ---
 
 
-# Personnalisation des actions de tâche  {#customizing-task-actions}
+# Personnalisation des actions de tâche {#customizing-task-actions}
 
 L’espace de travail AEM Forms permet aux utilisateurs de personnaliser les actions de tâche. Avant de personnaliser les actions de tâche, vous devez suivre les étapes indiquées dans [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
