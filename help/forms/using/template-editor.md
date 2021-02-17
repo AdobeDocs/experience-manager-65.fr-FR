@@ -28,7 +28,7 @@ Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de cert
 * Fournissez le contenu initial pour le formulaire. 
 * Spécifiez un thème, des actions d’envoi.
 
-## Utilisation de modèles  {#working-with-templates}
+## Utilisation de modèles {#working-with-templates}
 
 Vous pouvez accéder à l’éditeur de modèles à partir du menu Outils en accédant à **Adobe Experience Manager> Outils> Modèles**. Ici, les modèles sont organisés dans des dossiers activés pour les modèles modifiables. AEM fournit un dossier global pour organiser les modèles. Cependant, il n’est pas activé par défaut. Vous pouvez demander à votre administrateur d’activer le dossier global ou de créer un nouveau dossier pour les modèles. Pour plus d’informations sur la création de dossiers, voir [Dossiers de modèles](/help/sites-developing/page-templates-editable.md).
 
@@ -170,7 +170,7 @@ Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formula
 
 Une fois que vous avez créé et activé un modèle, il est disponible dans Form Manager lorsque vous créez un formulaire adaptatif. Pour utiliser un modèle et créer un formulaire adaptatif, voir [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md).
 
-## Modifier l’option d’affichage des modèles prêts à l’emploi   {#change-display-option-of-out-of-the-box-templates}
+## Modifier l’option d’affichage des modèles prêts à l’emploi  {#change-display-option-of-out-of-the-box-templates}
 
 Vous pouvez créer des modèles personnalisés pour les formulaires adaptatifs afin de définir une structure de base et du contenu initial. AEM Forms fournit également un jeu de modèles prêts à l’emploi pour les formulaires adaptatifs. Vous pouvez afficher ou masquer les modèles.
 
