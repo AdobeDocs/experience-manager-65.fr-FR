@@ -36,7 +36,7 @@ ht-degree: 11%
 
 ## Auteur AEM Mobile {#aem-mobile-author}
 
-Un ***auteur AEM* (ou *Marketer*)**utilise des modèles et des composants personnalisés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser des composants et ajouter des supports de tous types à partir du module DAM, y compris des images, des vidéos et des fragments de texte (fragments de contenu). aem éditeur de contenu intégré est ensuite utilisé par *les auteurs AEM* pour créer des expériences riches et pertinentes au sein de l’application, y compris l’intégration au reste du Adobe Marketing Cloud.
+Un ***auteur AEM* (ou *Marketer*)**utilise des modèles et des composants personnalisés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser des composants et ajouter des supports de tous types à partir du module DAM, y compris des images, des vidéos et des fragments de texte (fragments de contenu). AEM éditeur de contenu intégré est ensuite utilisé par *les auteurs AEM* pour créer des expériences riches et pertinentes au sein de l’application, y compris l’intégration au reste du Adobe Marketing Cloud.
 
 Un auteur AEM est responsable des tâches suivantes lors de la création d&#39;une application à l&#39;aide de AEM Mobile On Demand Services.
 
