@@ -28,7 +28,7 @@ Les meilleures pratiques en matière de numérotation des versions sémantiques 
 
 Les bibliothèques courantes doivent être factorisées dans des lots distincts. Cela leur permet d’être réutilisées dans vos lots. Lorsque vous encapsulez un fichier *JAR* dans un lot OSGi, prenez soin de vérifier dans les sources en ligne si quelqu’un a effectué cette opération auparavant. Voici certains des principaux lieux dans lesquels vous pouvez trouver les wrappers de lots existants : Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes et le référentiel SpringSource Enterprise Bundle Repository.
 
-## Dépendez des plus anciennes versions de lots nécessaires.  {#depend-on-the-lowest-needed-bundle-versions}
+## Dépendez des plus anciennes versions de lots nécessaires. {#depend-on-the-lowest-needed-bundle-versions}
 
 Pour les dépendances au moment de la compilation dans les fichiers POM, utilisez toujours la plus ancienne version nécessaire qui expose l’API requise. Cela permet davantage de compatibilité ascendante et facilite les correctifs de rétroportage des versions plus anciennes.
 
