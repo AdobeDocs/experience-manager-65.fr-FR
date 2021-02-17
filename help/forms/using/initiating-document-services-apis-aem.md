@@ -26,7 +26,7 @@ AEM Forms fournit des workflows personnalisés pour appeler les API de service A
 * **invoke** : permet d’appeler des opérations spécifiées dans input DDX sur les entrées fournies.
 * **toPDFA** : permet de convertir un document PDF d’entrée en document PDF/A.
 
-### Flux de travail Invoke DDX  {#invoke-ddx-workflow}
+### Flux de travail Invoke DDX {#invoke-ddx-workflow}
 
 Le flux de travaux **Appeler DDX** appelle l&#39;API du service Assembler `Invoke`, que vous pouvez utiliser pour assembler ou désassembler des documents, ajouter un filigrane à un PDF, etc.
 
