@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
 source-wordcount: '42'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Depuis le 31 janvier 2014, la plate-forme de la visionneuse DHTML est officiellement en fin de vie.
 
-Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) pour connaître les dernières visionneuses prises en charge.
+Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr) pour connaître les dernières visionneuses prises en charge.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 
