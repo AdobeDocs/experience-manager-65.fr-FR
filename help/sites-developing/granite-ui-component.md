@@ -54,7 +54,7 @@ Le composant générique de l’interface utilisateur Granite `field` est compos
 
 Reportez-vous à la [documentation de l’IU Granite – champ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) si vous souhaitez plus de détails.
 
-Pour consulter des exemples, reportez-vous à :
+Pour consulter des exemples, voir :
 
 * `cqgems/customizingfield/components/colorpicker`
 
@@ -96,7 +96,7 @@ Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vou
    >
    >Pour le moment, JSP est la méthode de script préférée, car il n’est pas aisé de transmettre des informations d’un composant à l’autre (ce qui est assez fréquent dans le cadre du formulaire/des champs) en HTL.
 
-## Création de la bibliothèque cliente pour le composant  {#creating-the-client-library-for-the-component}
+## Création de la bibliothèque cliente pour le composant {#creating-the-client-library-for-the-component}
 
 Pour ajouter un comportement côté client spécifique à votre composant :
 
