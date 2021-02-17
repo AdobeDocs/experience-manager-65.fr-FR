@@ -50,7 +50,7 @@ Pour les périphériques Windows, vous devez disposer des éléments suivants :
 * Microsoft Visual Studio 2015
 * Outils Microsoft Visual Studio pour Apache Cordova
 
-## Installation du projet Visual Studio pour l’application AEM Forms  {#setting-up-visual-studio-project-for-aem-forms-app}
+## Installation du projet Visual Studio pour l’application AEM Forms {#setting-up-visual-studio-project-for-aem-forms-app}
 
 Exécutez les étapes suivantes pour configurer le projet de l’application AEM Forms dans Visual Studio.
 
