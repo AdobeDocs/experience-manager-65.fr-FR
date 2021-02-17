@@ -45,7 +45,7 @@ Cette barre d’outils propose les options suivantes :
 * **Fermer**
 * **Enregistrer**
 
-## Édition en mode Plein écran  {#full-screen-editing}
+## Édition en mode Plein écran {#full-screen-editing}
 
 Pour les composants basés sur du texte, appuyer sur le mode plein écran de la barre d’outils ![](do-not-localize/screen_shot_2018-03-21at163236.png) ouvre l’éditeur de texte enrichi et masque le reste du contenu de la page.
 
