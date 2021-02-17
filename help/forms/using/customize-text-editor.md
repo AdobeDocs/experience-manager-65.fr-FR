@@ -36,7 +36,7 @@ Pour ce faire, vous devez :
 1. [Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX](#customizefonts)
 1. [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts)
 
-## Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX  {#customizefonts}
+## Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX {#customizefonts}
 
 Pour personnaliser des polices en modifiant le fichier tbxeditor-config.xml, procédez comme suit :
 
