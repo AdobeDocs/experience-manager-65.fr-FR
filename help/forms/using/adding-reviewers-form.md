@@ -17,7 +17,7 @@ ht-degree: 76%
 ---
 
 
-# Association de réviseurs d’envoi à un formulaire  {#associating-submission-reviewers-with-a-form}
+# Association de réviseurs d’envoi à un formulaire {#associating-submission-reviewers-with-a-form}
 
 Lorsque vous créez un formulaire, vous pouvez spécifier les utilisateurs qui passent en revue les envois du formulaire via le portail de formulaires et qui font part de leur avis. Votre entreprise peut recueillir des avis et retravailler les formulaires envoyés.
 
