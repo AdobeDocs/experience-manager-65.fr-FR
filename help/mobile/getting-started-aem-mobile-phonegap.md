@@ -1,6 +1,6 @@
 ---
-title: aem Adobe PhoneGap
-seo-title: aem Adobe PhoneGap
+title: AEM Adobe PhoneGap
+seo-title: AEM Adobe PhoneGap
 description: AEM s’intègre dans PhoneGap pour vous aider à créer aisément des applications à l’aide de pages AEM. Suivez cette page pour commencer avec Adobe PhoneGap Enterprise.
 seo-description: AEM s’intègre dans PhoneGap pour vous aider à créer aisément des applications à l’aide de pages AEM. Suivez cette page pour commencer avec Adobe PhoneGap Enterprise.
 uuid: bdd90cda-2489-4763-a90a-9c409d6e68ae
@@ -18,7 +18,7 @@ ht-degree: 15%
 ---
 
 
-# aem Adobe PhoneGap{#aem-adobe-phonegap}
+# AEM Adobe PhoneGap{#aem-adobe-phonegap}
 
 >[!NOTE]
 >
