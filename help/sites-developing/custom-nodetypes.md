@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
 workflow-type: tm+mt
 source-wordcount: '1918'
-ht-degree: 61%
+ht-degree: 62%
 
 ---
 
@@ -25,7 +25,7 @@ Comme AEM est basé sur Sling et utilise un référentiel JCR, les types de noeu
 * [Types de nœuds JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Types de nœuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-De plus, aem fournit une gamme de types de noeud personnalisés.
+De plus, AEM propose un éventail de types de nœuds personnalisés.
 
 ## Audit {#audit}
 
@@ -392,7 +392,7 @@ Définit les écouteurs (côté client) à exécuter sur un événement de modif
    * `- afterremove (string)`
    * `- aftermove (string)`
 
-## Gestion des ressources numériques {#dam}
+## Gestion des ressources numériques (DAM) {#dam}
 
 ### dam:AssetContent {#dam-assetcontent}
 
@@ -932,7 +932,7 @@ Panneau à onglets
 
 **Description**
 
-Field (Champ)
+Champ
 
 **Définition**
 
