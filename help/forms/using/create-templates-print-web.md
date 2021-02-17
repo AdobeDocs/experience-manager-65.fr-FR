@@ -35,7 +35,7 @@ Ce didacticiel vous guide pas à pas dans la création de modèles pour les cana
 * Télécharger les modèles XDP sur le serveur AEM Forms
 * Créer et activer des modèles pour le canal web
 
-## Créer un modèle pour le canal d’impression  {#create-template-for-print-channel}
+## Créer un modèle pour le canal d’impression {#create-template-for-print-channel}
 
 Créez et gérez un modèle pour le canal d’impression de la communication interactive à l’aide des tâches suivantes :
 
@@ -161,7 +161,7 @@ Pour créer un fragment de mise en page pour le canal d’impression de la commu
    1. Accédez à l’emplacement d’enregistrement du fichier et spécifiez le nom **table_lf**.
    1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
 
-   1. Appuyez sur **Save** (Enregistrer).
+   1. Appuyez sur **Enregistrer**.
    Une fois que vous avez créé un modèle XDP pour le fragment de mise en page à l’aide de Forms Designer, vous devez le [télécharger](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) sur le serveur AEM Forms pour qu’il soit disponible lors de la création des fragments de mise en page.
 
 ## Créer un modèle pour le canal web  {#create-template-for-web-channel}
@@ -207,7 +207,7 @@ Toutes les entités telles que des fragments de document, des graphiques, des ta
 Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le dossier **Create_First_IC_templates** :
 
 1. Accédez au dossier de modèles approprié en sélectionnant **Outils** > **Modèles** > **Créer_premiers_modèles_IC**.
-1. Appuyez sur **Créer**. 
+1. Appuyez sur **Créer**.
 1. Dans l&#39;assistant de configuration **Choisir un type de modèle**, sélectionnez **Communication interactive - Canal Web** et appuyez sur **Suivant**.
 1. Dans l’assistant de configuration **Détails du modèle**, spécifiez **Create_First_IC_Web_Template** comme titre de modèle. Spécifiez une description facultative et appuyez sur **Créer**.
 
@@ -240,9 +240,9 @@ Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le
    | Nom | Titre | Nombre de colonnes |
    |---|---|---|
    | customerdetails | Informations sur le client | 1 |
-   | billsummary | Récapitulatif de facturation | 3 |
+   | billsummary | Récapitulatif de facturation | 1 |
    | summarycharges | Récapitulatif des frais | 2 |
-   | itemisedcalls | Appels détaillés | 3 |
+   | itemisedcalls | Appels détaillés | 1 |
    | PayNow | Payez maintenant | 2 |
    | vas | Services à valeur ajoutée | 1 |
 
