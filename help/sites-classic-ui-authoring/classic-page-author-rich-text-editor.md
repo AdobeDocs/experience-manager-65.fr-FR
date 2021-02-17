@@ -15,7 +15,7 @@ ht-degree: 77%
 ---
 
 
-# Éditeur de texte enrichi  {#rich-text-editor}
+# Éditeur de texte enrichi {#rich-text-editor}
 
 L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants, dont :
 
