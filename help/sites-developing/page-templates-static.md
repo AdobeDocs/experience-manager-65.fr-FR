@@ -107,7 +107,7 @@ Pour créer une page, le modèle doit être copié (node-tree `/apps/<myapp>/tem
 
 Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling: resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
-## Structuration des modèles  {#how-templates-are-structured}
+## Structuration des modèles {#how-templates-are-structured}
 
 Il y a deux aspects à considérer :
 
@@ -168,7 +168,7 @@ Pour voir la liste de tous les modèles disponibles dans le référentiel, proc�
 
 Dans la plupart des cas, c’est à partir d’un modèle existant que vous élaborerez un nouveau modèle pour votre usage personnel. Pour plus d’informations, voir [Développement de modèles de page](#developing-page-templates).
 
-Pour activer un modèle existant pour votre site Web et l&#39;afficher dans la boîte de dialogue **Créer une page** lors de la création d&#39;une page juste sous **Sites Web** à partir de la console **Sites Web**, définissez la propriété allowedPaths du noeud de modèle sur : **/content(/.*) ?**
+Pour activer un modèle existant pour votre site Web et l&#39;afficher dans la boîte de dialogue **Créer une page** lors de la création d&#39;une page juste sous **Sites Web** à partir de la console **Sites Web**, définissez la propriété allowedPaths du noeud de modèle sur : **/content(/.*)?**
 
 ## Application des conceptions de modèle {#how-template-designs-are-applied}
 
@@ -186,7 +186,7 @@ Si les conceptions sont appliquées uniquement en mode Création, les sections s
 
 Lors du rendu du contenu à partir d’un modèle statique, AEM tentera d’appliquer la conception et les styles les plus pertinents au contenu en fonction d’une traversée de la hiérarchie du contenu.
 
-aem détermine le style le plus pertinent pour un noeud de contenu dans l’ordre suivant :
+AEM détermine le style le plus pertinent pour un noeud de contenu dans l’ordre suivant :
 
 * S’il existe une conception pour le chemin d’accès complet et exact du noeud de contenu (comme lorsque la conception est définie en mode Création), utilisez cette conception.
 * S’il existe une conception pour le noeud de contenu du parent, utilisez-la.
