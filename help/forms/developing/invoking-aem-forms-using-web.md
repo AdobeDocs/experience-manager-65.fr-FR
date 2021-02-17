@@ -769,7 +769,7 @@ Une fois que vous avez créé une référence de service, les types de données 
 
 1. Créez un projet .NET à l&#39;aide de Microsoft Visual Studio 2008.
 1. Dans le menu **Projet**, sélectionnez **Ajouter le service de référence**.
-1. Dans la boîte de dialogue **Adresse**, spécifiez le WSDL pour le service AEM Forms. Par exemple :
+1. Dans la boîte de dialogue **Adresse**, spécifiez le WSDL pour le service AEM Forms. Par exemple,
 
    ```java
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
