@@ -21,7 +21,7 @@ ht-degree: 76%
 
 Lors de la conception d’un formulaire dans AEM Forms Designer, en plus de la prévisualisation du rendu PDF du formulaire, vous pouvez également prévisualiser un rendu HTML5. Vous pouvez utiliser l’onglet **Aperçu HTML** afin de prévisualiser le formulaire tel qu’il apparaîtra dans un navigateur.
 
-## Activation de l’aperçu HTML pour les formulaires XDP dans Designer  {#html-preview-of-forms-in-forms-designer}
+## Activation de l’aperçu HTML pour les formulaires XDP dans Designer {#html-preview-of-forms-in-forms-designer}
 
 Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, effectuez les procédures suivantes :
 
