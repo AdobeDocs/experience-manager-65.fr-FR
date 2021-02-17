@@ -168,7 +168,7 @@ Lorsque les [bibliothèques client requises](reviews-basics.md#essentials-for-cl
 >
 >La « moyenne » reflète les votes pour le premier élément visible dans l’onglet Évaluations autorisées de la révision qui fait l’objet d’un résumé.
 
-### Configuration du résumé des révisions (affichage)  {#configuring-reviews-summary-display}
+### Configuration du résumé des révisions (affichage) {#configuring-reviews-summary-display}
 
 Sélectionnez le composant `Reviews Summary (Display)` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
