@@ -17,7 +17,7 @@ ht-degree: 93%
 ---
 
 
-# Description de l’objet JSON de l’espace de travail AEM Forms  {#aem-forms-workspace-json-object-description}
+# Description de l’objet JSON de l’espace de travail AEM Forms {#aem-forms-workspace-json-object-description}
 
 Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-dessous.
 
