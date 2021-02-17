@@ -28,7 +28,7 @@ Vous pouvez utiliser le service d’assemblage pour les opérations suivantes :
 
 Vous pouvez utiliser le service Assembler pour assembler deux documents PDF ou plus en un seul document PDF ou portfolio PDF. Vous pouvez également appliquer différentes fonctions au document PDF, afin de faciliter la navigation ou d’optimiser la sécurité. Vous pouvez assembler des documents PDF de différentes manières, dont voici quelques exemples :
 
-### Assemblage dans un document PDF unique  {#assemble-a-simple-pdf-document}
+### Assemblage dans un document PDF unique {#assemble-a-simple-pdf-document}
 
 L’illustration suivante présente la fusion de trois documents source en un seul document cible.
 
