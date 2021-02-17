@@ -28,7 +28,7 @@ Vous pouvez en importer et en exporter autant que vous le souhaitez. Si vous sou
 
 Pour obtenir des informations et des instructions concernant les extensions d’Acrobat Reader DC, consultez la section [Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
-## Importation d’informations d’identification  {#import-a-credential}
+## Importation d’informations d’identification {#import-a-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
 1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez l’une des options suivantes :
