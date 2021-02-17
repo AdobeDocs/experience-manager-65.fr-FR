@@ -14,14 +14,14 @@ ht-degree: 29%
 ---
 
 
-# Guide de l’utilisateur AEM 6.5 Mobile  {#mobile}
+# Guide de l’utilisateur AEM 6.5 Mobile {#mobile}
 
 + [Guide de l’utilisateur mobile](home.md)
 + Introduction à l&#39;AEM Mobile {#introduction}
    + [Prise en main d’AEM Mobile](getting-started-aem-mobile.md)
    + [AEM Mobile à la demande](getting-started-aem-mobile-on-demand.md)
    + [Applications mobiles](mobile-apps.md)
-   + [aem Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
+   + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile – Préparation pour le RGPD](aem-mobile-gdpr-compliance.md)
    + [Développement d’applications mobiles](develop-mobile-apps.md)
 + Création de l&#39;application On-Demand Services {#authoring}
