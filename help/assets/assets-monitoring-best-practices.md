@@ -56,7 +56,7 @@ En règle générale, vous utilisez ces outils ensemble pour obtenir une idée c
 
 La surveillance à long terme d&#39;un déploiement [!DNL Experience Manager] implique la surveillance à plus long terme des mêmes parties que celles qui sont surveillées en direct. Cela implique également de définir des alertes spécifiques à votre environnement.
 
-### Agrégation des journaux et création de rapports  {#log-aggregation-and-reporting}
+### Agrégation des journaux et création de rapports {#log-aggregation-and-reporting}
 
 Il existe plusieurs outils disponibles pour les journaux d&#39;agrégats, par exemple Splunk(TM) et Elastic Search, Logstash et Kabana (ELK). Pour évaluer le temps de fonctionnement de votre déploiement [!DNL Experience Manager], il est important que vous compreniez les événements de journaux spécifiques à votre système et que vous créiez des alertes en fonction de ces derniers. Une bonne connaissance de vos pratiques de développement et d&#39;exploitation peut vous aider à mieux comprendre comment ajuster votre processus d&#39;agrégation des journaux pour générer des alertes critiques.
 
