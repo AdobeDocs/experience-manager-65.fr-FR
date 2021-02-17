@@ -25,7 +25,7 @@ L’optimisation pour les moteurs de recherche est devenue une préoccupation es
 
 Le présent document commence par décrire certaines [bonnes pratiques relatives à l’optimisation pour les moteurs de recherche](#seo-best-practices) et explique comment les suivre lors d’une mise en œuvre d’AEM Il approfondit ensuite certaines des [étapes de mise en œuvre plus complexes](#aem-configurations) abordées dans la première section.
 
-## Bonnes pratiques relatives à l’optimisation pour les moteurs de recherche   {#seo-best-practices}
+## Bonnes pratiques relatives à l’optimisation pour les moteurs de recherche  {#seo-best-practices}
 
 Cette section décrit certaines bonnes pratiques générales d’optimisation pour les moteurs de recherche.
 
@@ -56,7 +56,6 @@ Voici quelques conseils généraux sur la façon d’optimiser les URL pour les 
    * Si vous utilisez des sélecteurs sur une page, il est préférable d’opter pour des sélecteurs avec une valeur sémantique.
    * Si une personne ne peut pas lire votre URL, un moteur de recherche ne le peut pas non plus.
    * Par exemple :
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
 est préférable à 
 `mybrand.com/products/product-detail.1234.html`
@@ -374,8 +373,8 @@ Pour générer un plan de site par programmation, enregistrez une servlet Sling 
 >
 >Vous pouvez enregistrer une servlet Sling pour écouter le sélecteur `sitemap` avec l’extension `xml`. Ainsi, la servlet traite la requête à chaque fois qu’une URL demandée se termine par :
 >    `/<path-to>/page.sitemap.xml`
->Vous pouvez alors obtenir la ressource demandée par la requête et générer un plan de site à partir de ce point dans l’arborescence de contenu à l’aide des API JCR.
->L’avantage d’une telle approche se révèle lorsque plusieurs sites sont diffusés à partir d’une même instance. Une requête `/content/siteA.sitemap.xml` génère un plan de site pour `siteA`, tandis que la requête `/content/siteB.sitemap.xml` génère un plan de site pour `siteB` sans devoir écrire du code supplémentaire.
+Vous pouvez alors obtenir la ressource demandée par la requête et générer un plan de site à partir de ce point dans l’arborescence de contenu à l’aide des API JCR.
+L’avantage d’une telle approche se révèle lorsque plusieurs sites sont diffusés à partir d’une même instance. Une requête `/content/siteA.sitemap.xml` génère un plan de site pour `siteA`, tandis que la requête `/content/siteB.sitemap.xml` génère un plan de site pour `siteB` sans devoir écrire du code supplémentaire.
 
 ### Création de redirections 301 pour les URL héritées {#creating-redirects-for-legacy-urls}
 
