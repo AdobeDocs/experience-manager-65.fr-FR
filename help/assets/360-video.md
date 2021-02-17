@@ -21,7 +21,7 @@ ht-degree: 96%
 
 Les vidéos 360 enregistrent une vue dans chaque direction au même moment. Elles sont tournées à l’aide d’une caméra omnidirectionnelle ou d’un ensemble de caméras. Lors de la lecture sur un écran plat, l’utilisateur contrôle l’angle de vue ; la lecture sur les appareils mobiles utilise généralement les commandes gyroscopiques intégrées.
 
-Le mode Scene7 de Dynamic Media inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.
+Le mode Scene7 de Dynamic Media inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.
 
 Cette section décrit l’utilisation de la visionneuse de vidéos 360/VR pour obtenir un rendu équirectangulaire et une expérience de visionnage immersive d’une pièce, d’une propriété, d’un lieu, d’un paysage, d’une procédure médicale, etc.
 
@@ -29,7 +29,7 @@ L’audio spatial n’est actuellement pas pris en charge ; si l’audio est mi
 
 Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
 
-## Vidéo 360 en action    {#video-in-action}
+## Vidéo 360 en action {#video-in-action}
 
 Appuyez sur [Station spatiale 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) pour ouvrir une fenêtre de navigateur et visionner une vidéo à 360 degrés. Pendant la lecture vidéo, faites glisser le pointeur de la souris vers un nouvel emplacement pour modifier l’angle de vue.
 
@@ -49,7 +49,7 @@ Les ressources vidéo 360 qui sont chargées dans AEM sont considérées comme 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *Une ressource vidéo 360 chargée et affichée en mode Carte. La ressource est considérée comme multimédia.*
 
-**Pour télécharger des ressources pour une utilisation avec la visionneuse de vidéos 360 :**
+**Pour charger des ressources pour une utilisation avec la visionneuse de vidéos 360 :**
 
 1. Créez un dossier dédié à votre ressource vidéo 360.
 1. [Appliquez un profil de vidéo adaptative au dossier.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
@@ -60,8 +60,8 @@ Les ressources vidéo 360 qui sont chargées dans AEM sont considérées comme 
 
    * Idéalement, votre contenu vidéo 360 d’origine doit avoir l’une des résolutions suivantes :
 
-      * 1080p - 1920 x 1080, connu sous le nom de résolution Full HD ou FHD ou,
-      * 2160p - 3840 x 2160, connu sous le nom de résolution HD, UHD ou Ultra HD. Cette résolution d’affichage très importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée « 4K », car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
+      * 1080p – 1920 x 1080, connu sous le nom de résolution Full HD ou FHD ou,
+      * 2160p – 3840 x 2160, connu sous le nom de résolution 4K, UHD ou Ultra HD. Cette résolution d’affichage très importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée « 4K », car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
    * [Créez un profil de vidéo adaptative personnalisé](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) avec des rendus de qualité supérieure. Par exemple, vous pouvez créer un profil de vidéo adaptative qui contient les trois paramètres suivants :
 
       * Largeur=auto ; hauteur=720 ; bitrate=2500 Kbit/s
@@ -73,7 +73,7 @@ Les ressources vidéo 360 qui sont chargées dans AEM sont considérées comme 
 
 1. [Téléchargez votre vidéo dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-## Remplacement du rapport d’aspect par défaut des vidéos 360   {#overriding-the-default-aspect-ratio-of-videos}
+## Remplacement du rapport d’aspect par défaut des vidéos 360  {#overriding-the-default-aspect-ratio-of-videos}
 
 Pour qu’une ressource téléchargée soit qualifiée de vidéo 360 à utiliser avec la visionneuse de vidéos 360, la ressource doit avoir un rapport d’aspect de 2.
 
