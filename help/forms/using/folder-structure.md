@@ -18,7 +18,7 @@ ht-degree: 66%
 ---
 
 
-# Présentation de la structure de dossiers  {#understanding-the-folder-structure}
+# Présentation de la structure de dossiers {#understanding-the-folder-structure}
 
 Les composants de l’espace de travail AEM Forms reposent sur une architecture MVC (modèle-vue-contrôleur) utilisant le modèle Backbone. Chaque composant possède un fichier pour :
 
