@@ -27,7 +27,7 @@ Vous pouvez utiliser l’interface utilisateur du dossier de contrôle pour :
 * Modification des propriétés d’un dossier de contrôle existant
 * Supprimer un dossier de contrôle
 
-## Création d’un dossier de contrôle  {#create-a-watched-folder}
+## Création d’un dossier de contrôle {#create-a-watched-folder}
 
 Avant de configurer un dossier de contrôle, vérifiez les éléments suivants :
 
