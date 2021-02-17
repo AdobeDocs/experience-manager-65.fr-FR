@@ -36,7 +36,7 @@ Lorsque vous créez la configuration, vous spécifiez un titre. Le titre doit ê
 1. Saisissez un titre pour la configuration. Éventuellement, saisissez un nom pour le nœud utilisé afin de stocker la configuration dans le référentiel. Cliquez sur Créer.
 1. Dans la boîte de dialogue Configuration de BrightEdge Content Optimizer, saisissez le nom d’utilisateur et le mot de passe du compte BrightEdge, puis cliquez sur OK.
 
-## Modification d’une configuration BrightEdge  {#editing-a-brightedge-configuration}
+## Modification d’une configuration BrightEdge {#editing-a-brightedge-configuration}
 
 Modifiez le nom d’utilisateur et le mot de passe d’une configuration BrightEdge, au besoin. Les modifications affectent toutes les pages qui utilisent la configuration.
 
