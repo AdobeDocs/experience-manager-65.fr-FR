@@ -92,7 +92,7 @@ Flux de travail pour modifier un article :
 
 ### Affichage et modification des métadonnées dans une bannière {#viewing-and-editing-the-metadata-within-a-banner}
 
-Les bannières ont de nombreuses propriétés, telles que des titres, des descriptions, des images. Cette action est utilisée pour vue et modifier ces propriétés. Ces modifications peuvent éventuellement être téléchargées sur Mobile On-Demand lors de l’enregistrement.
+Les bannières ont de nombreuses propriétés telles que des titres, des descriptions, des images. Cette action est utilisée pour vue et modifier ces propriétés. Ces modifications peuvent éventuellement être téléchargées sur Mobile On-Demand lors de l’enregistrement.
 
 Processus général de vue/modification d’un article :
 
