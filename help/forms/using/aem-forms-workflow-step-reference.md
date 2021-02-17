@@ -23,7 +23,7 @@ ht-degree: 51%
 
 Les étapes de processus Forms effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement des formulaires adaptatifs à partir de processus basés sur l’utilisation de Forms on OSGi. Ces workflows peuvent être utilisés pour élaborer des workflows de révision et d&#39;approbation de base, des processus d&#39;entreprise internes et intermuraux. Vous pouvez également utiliser les étapes de processus Forms pour lancer les services de document, les intégrer au processus de signature Adobe Sign et effectuer d’autres opérations AEM Forms. Un [module complémentaire AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) est nécessaire pour utiliser ces étapes dans un processus.
 
-## Étape Affecter une tâche  {#assign-task-step}
+## Étape Affecter une tâche {#assign-task-step}
 
 L’étape Affecter une tâche crée une tâche et l’affecte à un utilisateur ou un groupe. Lors de l’affectation de la tâche, le composant spécifie également le formulaire adaptatif ou le fichier PDF non interactif de la tâche. Le formulaire adaptatif est requis pour accepter une saisie des utilisateurs et un fichier PDF non interactif ou un formulaire adaptatif en lecture seule est utilisé pour les processus de révision uniquement.
 
@@ -144,7 +144,7 @@ L’étape Envoyer un courrier électronique utilise le service de messagerie Da
 * **URL du fichier :** utilisez l’option pour incorporer un lien Web d’une communication interactive avec le courrier électronique. Après avoir sélectionné l’option, recherchez et choisissez la communication interactive à incorporer. Un actif peut résider sur le serveur de création ou de publication.
 * **Image :** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;*&quot;/>) disponibles dans le modèle du courrier électronique.
 
-**Adresse électronique de l’expéditeur/du Destinataire :** sélectionnez l’option  **** Littéral pour spécifier manuellement une adresse électronique ou sélectionnez l’option  **Récupérer à partir des** métadonnées du flux de travail pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérer à partir des métadonnées de processus.** Sélectionnez l&#39;option **Variable** pour récupérer l&#39;adresse de messagerie à partir de la valeur stockée dans une variable de type de données de chaîne.
+**Adresse électronique de l’expéditeur/du Destinataire :** sélectionnez l’ **** option Littéral pour spécifier manuellement une adresse électronique ou sélectionnez l’option  **Récupérer à partir des** métadonnées du flux de travail pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérer à partir des métadonnées de processus.** Sélectionnez l&#39;option **Variable** pour récupérer l&#39;adresse de messagerie à partir de la valeur stockée dans une variable de type de données de chaîne.
 
 **Pièce jointe :** la ressource disponible à l’emplacement spécifié est jointe au courrier électronique. Le chemin d’accès de l’actif peut être lié à la charge utile ou au chemin d’accès absolu. Un exemple de chemin d’accès est [Payload_Directory]/attachments/.
 
