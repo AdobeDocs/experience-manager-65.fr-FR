@@ -31,7 +31,7 @@ Cet article décrit des techniques de renforcement à appliquer au cours des ét
 
 AEM Forms sur JEE est hautement personnalisable et compatible avec de nombreux environnements. Il est possible que certains des conseils présentés ici ne soient pas directement applicables à votre entreprise.
 
-## Préinstallation  {#preinstallation}
+## Préinstallation {#preinstallation}
 
 Avant d’installer AEM Forms sur JEE, vous pouvez appliquer des solutions de sécurité à la couche réseau et au système d’exploitation. Cette section décrit certains problèmes et propose des conseils pour réduire les vulnérabilités de la sécurité correspondantes.
 
@@ -817,7 +817,7 @@ Lorsque vous configurez une architecture réseau sécurisée comme décrit dans 
  <thead> 
   <tr> 
    <th><p>Protocole</p> </th> 
-   <th><p>Utilisation</p> </th> 
+   <th><p>Utilisez</p> </th> 
   </tr> 
  </thead> 
  <tbody>
