@@ -11,7 +11,7 @@ ht-degree: 58%
 ---
 
 
-# Gestion des ressources vidéo   {#manage-video-assets}
+# Gestion des ressources vidéo {#manage-video-assets}
 
 Le format vidéo est un élément essentiel des ressources numériques d’une entreprise. [!DNL Adobe Experience Manager] propose des solutions et des fonctionnalités matures pour gérer l’ensemble du cycle de vie de vos ressources vidéo après leur création.
 
