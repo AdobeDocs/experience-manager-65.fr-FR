@@ -21,7 +21,7 @@ ht-degree: 82%
 
 Adobe Experience Manager (AEM) vous permet de créer des formulaires adaptatifs simples d’emploi qui offrent des expériences dynamiques aux utilisateurs finaux. La disposition détermine l’affichage des ressources et composants sur un formulaire adaptatif.
 
-## Connaissances préalables  {#prerequisite-knowledge}
+## Connaissances préalables {#prerequisite-knowledge}
 
 Avant de découvrir les différentes fonctionnalités de disposition des formulaires adaptatifs, consultez les articles suivants pour en savoir plus sur les formulaires de ce type.
 
