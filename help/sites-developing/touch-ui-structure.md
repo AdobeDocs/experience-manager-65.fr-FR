@@ -149,7 +149,7 @@ AEM s’accompagne de plusieurs calques qui sont déjà implémentés pour la cr
 >
 >Les calques constituent une puissante solution qui affecte la manière dont l’utilisateur affiche le contenu de la page et interagit avec celui-ci. Lorsque vous développez vos propres calques, vous devez veiller à ce qu’ils soient effacés lorsque vous les quittez.
 
-### Sélecteur de calques   {#layer-switcher}
+### Sélecteur de calques  {#layer-switcher}
 
 Le sélecteur de calques vous permet de choisir le calque à utiliser. Lorsqu’il est fermé, il indique le calque en cours d’utilisation.
 
