@@ -134,7 +134,7 @@ Pour télécharger une nouvelle version de la ressource d&#39;activation, il est
 
 Pour que les inscrits puissent voir les ressources affectées, elles doivent être publiées :
 
-* Sélectionner l&#39;icône `Publish` mondiale
+* Sélectionner l&#39;icône `Publish` monde
 
 L’Activation est confirmée par un message de réussite :
 
