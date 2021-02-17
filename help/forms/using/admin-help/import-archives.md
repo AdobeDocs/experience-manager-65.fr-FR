@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Archives.
 
-## Importation d’une archive  {#import-an-archive}
+## Importation d’une archive {#import-an-archive}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
 1. Cliquez sur Importer.
