@@ -18,7 +18,7 @@ ht-degree: 74%
 ---
 
 
-# Configuration manuelle de l’intégration à Adobe Target  {#manually-configuring-the-integration-with-adobe-target}
+# Configuration manuelle de l’intégration à Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
 Vous pouvez modifier les configurations de l’assistant de souscription que vous avez effectuées lors de l’utilisation de l’assistant, ou vous pouvez intégrer AEM manuellement à Adobe Target sans utiliser l’assistant.
 
@@ -198,7 +198,7 @@ Vous pouvez créer des structures multiples pour une même configuration Target.
 
 La structure est créée. Pour répliquer la structure sur l’instance de publication, utilisez l’option **Activer le cadre** dans le sidekick.
 
-### Association des activités à la configuration de cloud Target   {#associating-activities-with-the-target-cloud-configuration}
+### Association des activités à la configuration de cloud Target  {#associating-activities-with-the-target-cloud-configuration}
 
 Associez vos [AEM activités](/help/sites-authoring/activitylib.md) à votre configuration de cloud de Cibles afin que vous puissiez mettre en miroir les activités dans [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html).
 
