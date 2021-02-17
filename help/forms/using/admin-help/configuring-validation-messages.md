@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Pour les formulaires rendus au format HTML, les erreurs de validation de formulaire qui surviennent s’affichent pour consultation par l’utilisateur. Vous pouvez personnaliser le type d’affichage des messages de validation. Selon l’endroit où les messages de validation sont affichés, vous pouvez également contrôler l’emplacement du message dans le formulaire et la taille du cadre.
 
-## Définition du type d’affichage des messages de validation  {#specify-how-validation-messages-are-displayed}
+## Définition du type d’affichage des messages de validation {#specify-how-validation-messages-are-displayed}
 
 1. Dans Administration Console, cliquez sur Services > Formulaires.
 1. Sous Sortie de validation, dans la liste Rapport, sélectionnez l’une des options suivantes :
