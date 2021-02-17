@@ -169,7 +169,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
 
    * Le fichier de modèle fournit des exemples d’implémentation pour différentes méthodes. Supprimez les méthodes qui ne doivent pas être étendues.
 
-### Créer une bibliothèque cliente  {#create-a-client-library}
+### Créer une bibliothèque cliente {#create-a-client-library}
 
 L’exemple de projet généré par l’archétype d’expert crée automatiquement les bibliothèques clientes requises et les inclut dans une bibliothèque cliente avec une catégorie `af.customwidgets` . Les fichiers Javascript et CSS disponibles dans `af.customwidgets` sont automatiquement inclus au moment de l’exécution.
 
@@ -226,7 +226,7 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
 
    1. Recherchez et sélectionnez le dossier dans lequel vous avez exécuté la commande `archetype:generate`. 
 
-   1. Cliquez sur **[!UICONTROL Terminer]**.
+   1. Cliquez sur **[!UICONTROL Finish]** (Terminer). 
 
       ![capture d’écran éclipse](assets/eclipse-screenshot.png)
 
