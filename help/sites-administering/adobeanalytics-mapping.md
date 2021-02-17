@@ -74,7 +74,7 @@ Suivez la procédure suivante pour mapper des variables de composant CQ avec des
 
 ## Mappage de variables liées à des produits {#mapping-product-related-variables}
 
-aem utilise une convention pour nommer les variables et les événements liés aux produits qui sont censés être mappés aux propriétés liées aux produits Adobe Analytics :
+AEM utilise une convention pour nommer les variables et les événements liés aux produits qui sont censés être mappés aux propriétés liées aux produits Adobe Analytics :
 
 | Variable CQ | Variable Analytics | Description |
 |---|---|---|
@@ -137,7 +137,7 @@ La liste peut être manipulée comme suit :
 
 1. Dans Adobe Analytics vue, l’outil de recherche de contenu affiche toutes les variables CQ appartenant aux composants de suivi glissés dans la vue CQ.
 
-   * Par exemple, si le **composant de téléchargement** est le *seul à être déplacé* dans la vue CQ (qui comporte deux variables mappables *eventdata.downloadLink* et *eventdata.événements.startDownload*), l&#39;outil de recherche de contenu ressemblera à ceci lors du basculement vers vue Adobe Analytics :
+   * Par exemple, si le **composant de téléchargement** est le *seul à être déplacé* dans la vue CQ (qui possède deux variables mappables *eventdata.downloadLink* et *eventdata.événements.startDownload*), l&#39;outil de recherche de contenu ressemblera à ceci lors du basculement vers vue Adobe Analytics :
 
    ![aa-22](assets/aa-22.png)
 
