@@ -338,7 +338,7 @@ Cette méthode est similaire à la méthode Jalons, excepté que les jalons spé
 
    * *Session*  de lecture : détails de la session de lecture. Ce champ indique comment l’utilisateur a interagi avec la vidéo. Cela peut inclure des données telles que l&#39;endroit où ils ont commencé à lire la vidéo, s&#39;ils ont utilisé la réglette de la vidéo pour faire avancer la vidéo, et l&#39;endroit où ils ont arrêté de lire la vidéo (*L10E24S58L58 - la vidéo a été arrêtée à la seconde. 25 de la section L10, puis avance rapide jusqu’à la seconde 48*)
 
-## Secondes héritées  {#legacy-seconds}
+## Secondes héritées {#legacy-seconds}
 
 Lors de l’utilisation de la méthode** legacy seconds**, les appels Adobe Analytics sont déclenchés toutes les N-e secondes, où N est spécifié dans le champ de décalage de suivi.
 
