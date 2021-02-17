@@ -165,7 +165,7 @@ Dans cette procédure :
 
    Le port SSL par défaut pour JBoss est 8443. A partir de là, spécifiez ce port lors de l’accès à AEM forms.
 
-## Demande d’informations d’identification à une autorité de certification  {#request-a-credential-from-a-ca}
+## Demande d’informations d’identification à une autorité de certification {#request-a-credential-from-a-ca}
 
 1. Dans une invite de commande, accédez à *[JAVA HOME]*/bin et tapez la commande suivante pour créer le fichier de stockage des clés et la clé :
 
