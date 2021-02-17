@@ -26,7 +26,7 @@ Une attaque multisite par usurpation de requête ou CRSF (Cross-site request for
 
 Imaginons, par exemple, un scénario où vous êtes connecté à Administration Console dans un navigateur. Vous recevez un message électronique contenant un lien. Vous cliquez sur le lien qui vient ouvrir un nouvel onglet dans votre navigateur. La page que vous avez ouverte contient un iFrame masqué qui envoie une requête malveillante au serveur Forms à l’aide du cookie de votre session AEM forms authentifiée. Comme User Management reçoit un cookie valide, il transmet la requête.
 
-## Termes associés aux attaques CSRF  {#csrf-related-terms}
+## Termes associés aux attaques CSRF {#csrf-related-terms}
 
 **Référent :** adresse de la page source à partir de laquelle une demande arrive. Par exemple, une page Web de site1.com contient un lien vers site2.com. En cliquant sur ce lien, une requête est envoyée à site2.com. Le référent de la requête est donc site1.com, la requête ayant été envoyée à partir d’une page provenant de site1.com.
 
