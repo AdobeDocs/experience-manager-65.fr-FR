@@ -25,7 +25,7 @@ Les applications clientes peuvent appeler par programmation les services AEM For
 
 Les exigences de votre entreprise déterminent la méthode d’appel à utiliser. Par exemple, à l’aide de l’API Java, vous pouvez intégrer des fonctionnalités AEM Forms à vos applications d’entreprise Java, telles que les beans d’entité Java et de message. De même, vous pouvez intégrer la fonctionnalité AEM Forms dans des projets .NET (ou d&#39;autres projets développés avec des environnements de développement qui prennent en charge les normes de service Web) à l&#39;aide de services Web.
 
-Les services nécessitent l’exécution d’un conteneur de service, de la même manière que les EJB (Enterprise JavaBeans™) nécessitent un conteneur J2EE. AEM Forms ne comprend qu’une seule implémentation d’un conteneur de service. Le conteneur de service est chargé de gérer la durée de vie d’un service, notamment de le déployer et de s’assurer que toutes les demandes sont envoyées au service approprié. Il gère également les documents qu’un service consomme ou produit.
+Les services nécessitent l’exécution d’un conteneur de service, de la même manière que les EJB (Enterprise JavaBeans™) nécessitent un conteneur J2EE. AEM Forms ne comprend qu’une seule mise en oeuvre d’un conteneur de service. Le conteneur de service est chargé de gérer la durée de vie d’un service, notamment de le déployer et de s’assurer que toutes les demandes sont envoyées au service approprié. Il gère également les documents qu’un service consomme ou produit.
 
 >[!NOTE]
 >
