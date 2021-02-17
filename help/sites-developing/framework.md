@@ -1,8 +1,8 @@
 ---
-title: Infrastructure de balisage AEM
-seo-title: Infrastructure de balisage AEM
-description: Balisage de contenu et utilisation de l’infrastructure de balisage AEM
-seo-description: Balisage de contenu et utilisation de l’infrastructure de balisage AEM
+title: Cadre de balisage AEM
+seo-title: Cadre de balisage AEM
+description: Balisage de contenu et utilisation du cadre de balisage AEM
+seo-description: Balisage de contenu et utilisation du cadre de balisage AEM
 uuid: f80a2cb1-359f-41dd-a70b-626d92cc3d4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,23 +14,23 @@ translation-type: tm+mt
 source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1915'
-ht-degree: 52%
+ht-degree: 60%
 
 ---
 
 
-# Infrastructure de balisage AEM  {#aem-tagging-framework}
+# Cadre de balisage AEM {#aem-tagging-framework}
 
-Pour baliser le contenu et utiliser l’infrastructure de balisage AEM, procédez comme suit :
+Pour baliser le contenu et utiliser le cadre de balisage AEM, procédez comme suit :
 
-* La balise doit exister en tant que nœud du type ` [cq:Tag](#tags-cq-tag-node-type)` sous le [nœud racine de taxonomie](#taxonomy-root-node).
+* La balise doit exister en tant que nœud du type ` [cq:Tag](#tags-cq-tag-node-type)` sous le [nœud racine de taxonomie](#taxonomy-root-node)
 
 * Le type du nœud de contenu balisé doit inclure le mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * Le [TagID](#tagid) est ajouté à la propriété [ `cq:tags`](#tagged-content-cq-tags-property) du noeud de contenu et est résolu en un noeud de type ` [cq:Tag](#tags-cq-tag-node-type)`.
 
 ## Balises : type de nœud cq:Tag  {#tags-cq-tag-node-type}
 
-La déclaration d’une balise est capturée dans le référentiel dans un noeud de type `cq:Tag.`.
+La déclaration d’une balise est capturée dans le référentiel dans un nœud de type `cq:Tag.`
 
 Une balise peut être constituée d’un simple mot (sky, par exemple) ou représenter une taxonomie hiérarchique (par exemple, fruit/apple, c’est-à-dire la catégorie générique et le fruit).
 
@@ -38,7 +38,7 @@ Les balises sont identifiées par un identifiant unique.
 
 Une balise comprend des méta-informations facultatives, telles qu’un titre, des titres localisés et une description. Le titre doit être affiché dans les interfaces utilisateur au lieu de l’ID de balise, le cas échéant.
 
-La structure de balisage offre également la possibilité de contraindre les auteurs et les visiteurs du site à n’utiliser que des balises prédéfinies spécifiques.
+Le cadre de balisage offre également la possibilité de contraindre les auteurs et les visiteurs du site à n’utiliser que des balises prédéfinies spécifiques.
 
 ### Caractéristiques de la balise {#tag-characteristics}
 
@@ -53,7 +53,7 @@ La structure de balisage offre également la possibilité de contraindre les aut
 * Lorsqu’elle contient des nœuds enfants, la balise est qualifiée de [balise conteneur](#container-tags).
 * Elle est stockée dans le référentiel, sous un chemin de base appelé [nœud racine de taxonomie](#taxonomy-root-node).
 
-### ID de balise  {#tagid}
+### TagID {#tagid}
 
 Un ID de balise identifie un chemin d’accès qui est résolu sur un nœud de balise dans le référentiel.
 
@@ -67,13 +67,13 @@ L’ID de balise se compose d’un [espace de noms](#tag-namespace), suivi de l�
 
 Le nœud racine de taxonomie est le chemin d’accès de base pour toutes les balises du référentiel. Le nœud racine de taxonomie ne peut *pas* être un nœud de type `  cq   :Tag`.
 
-En AEM, le chemin d’accès de base est `/content/  cq   :tags` et le noeud racine est de type `  cq   :Folder`.
+Dans AEM, le chemin d’accès de base est `/content/  cq   :tags` et le nœud racine est de type `  cq   :Folder`.
 
 ### Espace de noms des balises {#tag-namespace}
 
 Les espaces de noms permettent de regrouper des éléments. Le cas d’utilisation le plus courant consiste à disposer d’un espace de nommage par (site Web) site (par exemple public, interne et portail) ou par application plus large (par exemple, WCM, Assets, Communities), mais les espaces de nommage peuvent être utilisés pour divers autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
 
-L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie](#taxonomy-root-node). Un espace de nommage est un noeud de type `cq:Tag` dont le parent n&#39;est pas de type de noeud `cq:Tag`.
+L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie](#taxonomy-root-node).  Un espace de noms est un nœud de type `cq:Tag` dont le parent n’est pas de type `cq:Tag`.
 
 Toutes les balises possèdent un espace de noms. Si aucun espace de nommage n’est spécifié, la balise est affectée à l’espace de nommage par défaut, qui est TagID `default` (le titre est `Standard Tags),`qui est `/content/cq:tags/default.`
 
@@ -83,7 +83,7 @@ Une balise conteneur est un nœud de type `cq:Tag` contenant le nombre et le typ
 
 En outre, les balises conteneurs (ou super-balises) d’une taxonomie font office de sous-cumul de toutes les sous-balises. Par exemple, le contenu balisé avec « fruit/apple » est considéré comme étant également balisé avec « fruit ». Dès lors, une recherche de contenu balisé simplement avec « fruit » renverra également le contenu balisé avec « fruit/apple ».
 
-### Résolution d’ID de balise  {#resolving-tagids}
+### Résolution d’ID de balise {#resolving-tagids}
 
 Si l’ID de balise contient le signe deux-points (« : »), celui-ci sépare l’espace de noms de la balise ou de la sous-taxonomie, qui sont alors séparés par des barres obliques (« / »). En l’absence de signe deux-points dans l’ID de balise, l’espace de noms par défaut est impliqué.
 
@@ -99,7 +99,7 @@ Le tableau suivant présente quelques exemples d’ID de balise, leurs élément
 <table>
  <tbody>
   <tr>
-   <td><strong>ID de balise<br /> </strong></td>
+   <td><strong>TagID<br /> </strong></td>
    <td><strong>Espace de noms</strong></td>
    <td><strong>ID local</strong></td>
    <td><strong>Balise(s) de conteneur</strong></td>
@@ -166,16 +166,16 @@ En outre, refuser les autorisations de lecture sur certains espaces de noms et b
 
 Une pratique habituelle est la suivante :
 
-* Autorisation de l&#39;accès en écriture de groupe/rôle `tag-administrators` à tous les espaces de nommage (ajouter/modifier sous `/content/cq:tags`). Ce groupe est fourni en standard avec AEM.
+* Accorder au groupe/rôle `tag-administrators` l’accès en écriture à tous les espaces de noms (add/modify sous `/content/cq:tags`). Ce groupe est fourni en standard avec AEM.
 
 * Accorder aux utilisateurs/auteurs l’accès en lecture à tous les espaces de noms qu’ils doivent être autorisés à lire (presque tous).
 * Autoriser les utilisateurs/auteurs à écrire l’accès aux espaces de nommage où les balises doivent être définies librement par les utilisateurs/auteurs (add_node sous `/content/cq:tags/some_namespace`)
 
 ## Contenu pouvant être balisé : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
-Pour que les développeurs d’applications puissent associer un balisage à un type de contenu, l’enregistrement du noeud ([CND](https://jackrabbit.apache.org/node-type-notation.html)) doit inclure le mixin `cq:Taggable` ou le mixin `cq:OwnerTaggable`.
+Pour que les développeurs d’application attachent le balisage à un type de contenu, l’enregistrement du nœud ([CND](https://jackrabbit.apache.org/node-type-notation.html)) doit inclure le mixin `cq:Taggable` ou `cq:OwnerTaggable`.
 
-Le mixin `cq:OwnerTaggable`, qui hérite de `cq:Taggable`, sert à indiquer que le contenu peut être classé par propriétaire/auteur. En AEM, il ne s’agit que d’un attribut du noeud `cq:PageContent`. Le mixin `cq:OwnerTaggable` n&#39;est pas requis par la structure de balisage.
+Le mixin `cq:OwnerTaggable`, qui hérite de `cq:Taggable`, sert à indiquer que le contenu peut être classé par propriétaire/auteur. Dans AEM, il s’agit uniquement d’un attribut du nœud `cq:PageContent`. Le mixin `cq:OwnerTaggable` n’est pas requis par le cadre de balisage.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Les définitions essentielles relatives aux types de nœud inclus dans AEM sont 
 
 ## Contenu balisé : propriété cq:tags {#tagged-content-cq-tags-property}
 
-La propriété `cq:tags` est une table de chaînes utilisée pour stocker un ou plusieurs ID de balise lorsque les auteurs ou les visiteurs du site les appliquent au contenu. La propriété n&#39;a de signification que lorsqu&#39;elle est ajoutée à un noeud défini avec le mixin `[cq:Taggable](#taggable-content-cq-taggable-mixin)`.
+La propriété `cq:tags` est une table de chaînes utilisée pour stocker un ou plusieurs ID de balise lorsque les auteurs ou les visiteurs du site les appliquent au contenu. La propriété n’a de sens que lorsqu’elle est ajoutée à un nœud qui est défini avec le mixin `[cq:Taggable](#taggable-content-cq-taggable-mixin)`.
 
 >[!NOTE]
 >
@@ -233,7 +233,7 @@ Une valeur spéciale pour la propriété `cq:movedTo` est `nirvana` : elle est a
 
    >[!NOTE]
    >
-   >La propriété `cq:movedTo` n&#39;est ajoutée à la balise déplacée ou fusionnée que si l&#39;une de ces conditions est remplie :
+   >La propriété `cq:movedTo` n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
    > 1. La balise est utilisée dans le contenu (c&#39;est-à-dire qu&#39;elle contient une référence) OU
    > 1. La balise a des enfants qui ont déjà été déplacés.
 
@@ -242,7 +242,7 @@ Une valeur spéciale pour la propriété `cq:movedTo` est `nirvana` : elle est a
 
    >[!NOTE]
    >
-   >La propriété `cq:backlinks` n&#39;est ajoutée à la balise déplacée ou fusionnée que si l&#39;une de ces conditions est remplie :
+   >La propriété `cq:backlinks` n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
    >
    > 1. La balise est utilisée dans le contenu (c&#39;est-à-dire qu&#39;elle contient une référence) OU    >
    > 1. La balise a des enfants qui ont déjà été déplacés.
@@ -250,7 +250,7 @@ Une valeur spéciale pour la propriété `cq:movedTo` est `nirvana` : elle est a
 
 * La lecture d’une propriété `cq:tags` d’un nœud de contenu implique la résolution suivante :
 
-   1. Si aucune correspondance n’est trouvée sous `/content/cq:tags`, aucune balise n’est renvoyée.
+   1. S’il n’existe aucune correspondance sous `/content/cq:tags`, aucune balise n’est renvoyée.
    1. Si la propriété `cq:movedTo` est définie pour la balise, l’ID de balise référencé est suivi.
  Cette étape est répétée aussi longtemps que la balise suivie contient la propriété `cq:movedTo`.
 
