@@ -33,7 +33,7 @@ AEM tire parti des solutions Adobe PhoneGap and Adobe Publishing, ce qui vous pe
 * Introduisez des Webviews HTML5 dans des applications **natives** préexistantes ou nouvelles par le biais de Cordova WebViews.
 * Créez, traitez et partagez du contenu multimédia enrichi sur tous les canaux de la diffusion, y compris Web, mobile-web, mobile-app et print.
 
-aem s’intègre à l’Adobe **[service de PhoneGap Build](https://build.phonegap.com/)** pour simplifier le processus de création et de déploiement d’applications.
+AEM s’intègre à l’Adobe **[service de PhoneGap Build](https://build.phonegap.com/)** pour simplifier le processus de création et de déploiement d’applications.
 
 **Adobe** ContentLes utilisateurs peuvent facilement télécharger des mises à jour de page et de contenu en direct (OTA) sur leurs appareils sans avoir à réinstaller l’application ou à télécharger à partir de l’AppStore, de Google Play ou d’autres sources d’application.
 
