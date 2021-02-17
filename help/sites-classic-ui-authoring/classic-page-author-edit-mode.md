@@ -45,7 +45,7 @@ Les composants sont triés en plusieurs catégories (groupes de composants) y co
 
 Les composants de type Général sont des composants de base qui servent à créer du contenu.
 
-### Élément de compte  {#account-item}
+### Élément de compte {#account-item}
 
 Vous pouvez définir un lien avec un titre et une description.
 
@@ -237,11 +237,11 @@ Des [fragments de contenu](/help/sites-classic-ui-authoring/classic-page-author-
 
 Cette option permet de transférer un fichier compressé qui contient un bloc de conception.
 
-### Téléchargement {#download}
+### Télécharger {#download}
 
 Le composant Télécharger crée un lien dans la page web sélectionnée pour télécharger un fichier spécifique. Faites glisser un élément à partir de l’Outil de recherche de contenu ou téléchargez un fichier.
 
-* **Téléchargement**
+* **Télécharger**
 
    * **Description**
 Courte description affichée avec le lien de téléchargement.
@@ -511,7 +511,7 @@ Vous pouvez configurer :
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
-### Référence   {#reference}
+### Référence  {#reference}
 
 Le composant **Référence** permet de référencer du texte à partir d’une autre page de votre site web AEM (dans l’instance actuelle). Le contenu du paragraphe référencé s’affiche alors comme s’il faisait partie de la page actuelle. Le contenu est mis à jour lorsque le paragraphe source est modifié (peut nécessiter une actualisation de la page).
 
@@ -1099,7 +1099,7 @@ Spécifiez la liste de pistes requise.
             Page utilisée pour modifier le mot de passe.
       * **Stocker le contenu**
 
-         * **Chemin d’accès au contenu**
+         * **Content Path** (Chemin d’accès au contenu)
 
             Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
             `/forms/feedback/`
