@@ -18,7 +18,7 @@ ht-degree: 22%
 ---
 
 
-# Configuration du composant vidéo  {#configure-the-video-component}
+# Configuration du composant vidéo {#configure-the-video-component}
 
 Le [composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer une ressource vidéo prédéfinie prête à l’emploi (prête à l’emploi) sur votre page.
 
