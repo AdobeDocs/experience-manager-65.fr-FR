@@ -36,7 +36,7 @@ AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur s
 
 Les événements personnalisés suivent tout ce qui dépend de la disponibilité d’un élément spécifique sur la page. Cela inclut également les événements spécifiques à un modèle, car le composant de page est traité comme un autre composant.
 
-### Suivi d’événements personnalisés lors du chargement d’une page  {#tracking-custom-events-on-page-load}
+### Suivi d’événements personnalisés lors du chargement d’une page {#tracking-custom-events-on-page-load}
 
 Cela peut être fait à l&#39;aide du pseudo-attribut `data-tracking` (l&#39;ancien attribut d&#39;enregistrement est toujours pris en charge pour la compatibilité ascendante). Vous pouvez l’ajouter à n’importe quelle balise HTML.
 
