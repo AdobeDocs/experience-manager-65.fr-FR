@@ -23,7 +23,7 @@ ht-degree: 89%
 
 Connaissances en matière de CSS et structure LESS.
 
-## Eléments personnalisables  {#what-can-be-customized}
+## Eléments personnalisables {#what-can-be-customized}
 
 Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez exploiter ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
 
@@ -286,7 +286,7 @@ Selon leur type, les widgets contiennent également des classes. En règle gén�
 
 ### Restrictions de la définition de style de widget  {#limitations-in-widget-styling}
 
-La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être assouplie si l’apparence d’un champ change radicalement car elle se trouve dans l’un des états décrits précédemment.
+La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être assouplie si l’aspect d’un champ change radicalement car il se trouve dans l’un des états décrits précédemment.
 
 ## Description d’aide {#help-description}
 
