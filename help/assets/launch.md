@@ -201,7 +201,7 @@ Lorsqu’il est sélectionné, l’éditeur d’éléments de données génère 
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
+Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=fr#viewers-aem-assets-dmc), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
 
 Examinons à présent le cycle de vie de l’*élément de données* Visionneuses Dynamic Media. La valeur de cet élément de données est renseignée après que l’événement de visionneuse Dynamic Media correspondant a lieu sur la page. Par exemple, si l’élément de données pointe vers l’événement **[!UICONTROL LOAD]** et son argument « asset », la valeur de cet élément de données recevra des données valides une fois que la visionneuse aura exécuté l’événement LOAD pour la première fois. Si l’élément de données pointe vers l’événement **[!UICONTROL ZOOM]** et son argument « scale », la valeur de cet élément de données reste vide jusqu’à ce que la visionneuse envoie un événement **[!UICONTROL ZOOM]** pour la première fois.
 
@@ -659,7 +659,7 @@ La publication d’une bibliothèque implique les deux étapes suivantes :
 Conditions préalables :
 
 * AEM exécute les instances d’auteur et de publication.
-* aem noeud d’auteur est configuré en mode d’exécution Dynamic Media - Scene7 (dynamicmedia_s7)
+* AEM noeud d’auteur est configuré en mode d’exécution Dynamic Media - Scene7 (dynamicmedia_s7)
 * Les composants WCM Dynamic Media sont activés dans AEM Sites.
 
 La configuration d’AEM comprend les deux étapes principales suivantes :
