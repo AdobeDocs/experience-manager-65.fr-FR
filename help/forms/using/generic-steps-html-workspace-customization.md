@@ -19,7 +19,7 @@ ht-degree: 40%
 ---
 
 
-# Procédure générique de personnalisation de l’espace de travail AEM Forms  {#generic-steps-for-aem-forms-workspace-customization}
+# Procédure générique de personnalisation de l’espace de travail AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
 
 Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
