@@ -193,7 +193,7 @@ Une communauté d’engagement est un site communautaire axé sur la mobilisatio
 
 Les caractéristiques d&#39;une communauté d&#39;engagement peuvent inclure :
 
-* Connexion
+* La connexion
 * Message
 * Forums
 * Commentaires
@@ -228,7 +228,7 @@ Une communauté d&#39;activation peut être créée lorsque le module complémen
 
 Pour découvrir la facilité de création d&#39;une nouvelle communauté d&#39;activation, visitez [Prise en main de AEM Communities pour l&#39;activation](/help/communities/getting-started-enablement.md).
 
-## aem Demo Machine {#aem-demo-machine}
+## AEM Demo Machine {#aem-demo-machine}
 
 La [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) gère et exécute des démos pour AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Ressources](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communautés](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Applications](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) et [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), qui nécessitent souvent plus de configuration que le lancement. Instance QuickStart. L&#39;AEM Demo Machine va installer une infrastructure [supplémentaire](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) telle que MongoDB, Solr, MySQL, FFmpeg et les serveurs de messagerie.
 
