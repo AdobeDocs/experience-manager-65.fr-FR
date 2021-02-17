@@ -96,7 +96,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
  </tbody>
 </table>
 
-### Conceptions classiques de partage de ressources  {#classic-asset-share-designs}
+### Conceptions classiques de partage de ressources {#classic-asset-share-designs}
 
 <table>
  <tbody>
