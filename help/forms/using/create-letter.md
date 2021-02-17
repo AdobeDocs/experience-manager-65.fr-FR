@@ -45,7 +45,7 @@ Dans ce flux de travaux :
 
 1. Auteur : prévisualise la lettre et l’envoie en post-traitement. En savoir plus sur[ le post-traitement](/help/forms/using/submit-letter-topostprocess.md).
 
-#### Utilisation de modèles de lettre fournis avec Correspondence Management  {#using-letter-templates-provided-with-correspondence-management}
+#### Utilisation de modèles de lettre fournis avec Correspondence Management {#using-letter-templates-provided-with-correspondence-management}
 
 Au lieu de créer un modèle de mise en forme entièrement nouveau, vous pouvez choisir de modifier et réutiliser des modèles fournis par Correspondence Management. Vous pouvez utiliser Designer pour modifier rapidement l’identité graphique et les données et les champs de contenu des modèles en fonction des besoins de votre entreprise. Pour plus d’informations sur les modèles Correspondence Management, voir [Modèles de lettre de référence](/help/forms/using/reference-cm-layout-templates.md).
 
@@ -180,7 +180,7 @@ La complexité de la correspondance peut être déterminée grâce à l’analys
 
 **** Complexité de la mise en pageQuelle est la complexité de la mise en page ? Les lettres telles que l’avis d’annulation ont des dispositions simples. tandis que des courriers comme les demandes de confirmation de couverture ont une mise en page complexe avec plusieurs tableaux et plus de soixante champs de formulaire. La création de mises en page complexes requiert plus de temps et nécessite des compétences avancées de maquettiste.
 
-**Nombre de paragraphes et de** conditions de texteUn contrat de prêt peut comporter 10 pages et contenir plus de 40 clauses de texte. Beaucoup de ces clauses dépendraient de &quot;paramètres de prêt&quot;. Selon les termes et conditions exacts, les clauses seront incluses dans le contrat ou au contraire en seront exclues. La création de ce type de courrier nécessite une planification rigoureuse et une définition méticuleuse des conditions complexes.
+**Nombre de paragraphes et de** conditions de texteUn contrat de prêt peut comporter 10 pages et plus de 40 clauses de texte. Beaucoup de ces clauses dépendraient de &quot;paramètres de prêt&quot;. Selon les termes et conditions exacts, les clauses seront incluses dans le contrat ou au contraire en seront exclues. La création de ce type de courrier nécessite une planification rigoureuse et une définition méticuleuse des conditions complexes.
 
 Le tableau qui suit expose quelques règles utiles pour la classification de vos lettres :
 
@@ -342,7 +342,7 @@ Après avoir créé une correspondance, lorsque vous appuyez sur Ouvrir, Corresp
 ### Installez les pièces jointes {#set-up-the-attachments}
 
 1. Sélectionnez **Ajouter un actif**.
-1. Dans l’écran Sélectionner un fichier, appuyez sur les fichiers à joindre à la lettre et appuyez sur **Terminé**. Les actifs doivent d’abord être chargés dans Actifs. Il est recommandé de joindre uniquement des documents PDF et Microsoft Office, mais vous pouvez également joindre des images. Pour plus d’informations sur le transfert de ressources dans la gestion des actifs numériques, voir [Téléchargement de ressources](/help/assets/manage-assets.md).
+1. Dans l’écran Sélectionner un fichier, appuyez sur les fichiers à joindre à la lettre et appuyez sur **Terminé**. Les actifs doivent d’abord être chargés dans Actifs. Il est recommandé de joindre uniquement des documents PDF et Microsoft Office, mais vous pouvez également joindre des images. Pour plus d’informations sur le transfert de ressources dans DAM, voir [Téléchargement de ressources](/help/assets/manage-assets.md).
 1. Pour verrouiller l’ordre des actifs dans la liste afin que l’expert en assurance ne puisse pas modifier l’ordre, appuyez sur **Verrouiller l’ordre**. Si vous ne sélectionnez pas cette option, l’utilisateur pourra modifier l’ordre des éléments de la liste.
 1. Pour modifier l’ordre des actifs, faites glisser un actif contenant l’icône de réorganisation d’un actif ( ![dragndrop](assets/dragndrop.png)).
 1. Appuyez sur **Modifier** devant une pièce jointe et indiquez que cette dernière est obligatoire si vous ne souhaitez pas que l’auteur puisse la supprimer. Indiquez qu’une pièce jointe est sélectionnée si vous souhaitez qu’elle soit présélectionnée dans l’interface CCR.
@@ -372,7 +372,7 @@ Les valeurs suivantes du tableau
    <td><strong>Dictionnaire de données</strong></td> 
    <td><strong>Ignorer</strong></td> 
    <td><strong>User</strong></td> 
-   <td><strong>Field (Champ)</strong></td> 
+   <td><strong>Champ</strong></td> 
    <td><strong>Variable</strong></td> 
   </tr> 
   <tr> 
