@@ -123,7 +123,7 @@ La fonctionnalité d’exportation sert à collecter les captures d’écran et 
 
 ### URL du serveur de mise à jour du contenu {#content-update-server-url}
 
-L’une des principales fonctionnalités des applications AEM est la possibilité d’obtenir un nouveau contenu pour une demande d’application mobile via ContentSync, où le contenu peut être des ressources HTML, des pages, des vidéos, des images, du texte, etc. Une fois qu’un auteur de contenu a mis à jour le contenu, puis le publie, le serveur met le contenu à jour pour que l’application mobile puisse le télécharger.
+L’une des principales fonctionnalités des applications AEM est la possibilité d’obtenir un nouveau contenu pour une demande d’application mobile via ContentSync, où le contenu peut être des ressources html, des pages, des vidéos, des images, du texte, etc. Une fois qu’un auteur de contenu a mis à jour le contenu, puis le publie, le serveur met le contenu à jour pour que l’application mobile puisse le télécharger.
 
 La propriété URL du serveur Content Update Server est l’URL qui doit pointer vers une instance de publication ; soit directement, soit par l&#39;intermédiaire du répartiteur ou du CDN. Le format de l’URL est le suivant :
 
