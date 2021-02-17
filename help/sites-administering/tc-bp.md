@@ -33,7 +33,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 * Si les ressources le permettent, il est préférable de gérer l’activité de traduction avec une équipe centrale qui peut développer une expertise dans les outils, les processus et les relations avec les fournisseurs nécessaires.
 * **Planifiez**,  **** prototypez et  **** testez votre structure et vos processus globaux pour vous assurer qu&#39;ils soutiennent l&#39;entreprise et que vous avez le soutien nécessaire des parties prenantes dans les régions géographiques.
 
-## Structure du site   {#site-structure}
+## Structure du site  {#site-structure}
 
 * Lors de la conception de la structure de votre site, commencez par examiner votre contenu et déterminer où et dans quelle langue il est rédigé. Cet emplacement doit être le niveau supérieur de votre site.
 * La meilleure pratique consiste à adopter une **structure basée sur les langues** ne comportant pas de plus de 3 niveaux entre le niveau supérieur de rédaction et les sites des pays.
