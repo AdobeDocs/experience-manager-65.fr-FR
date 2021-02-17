@@ -19,7 +19,7 @@ ht-degree: 77%
 ---
 
 
-# Personnalisation des consoles  {#customizing-the-consoles}
+# Personnalisation des consoles {#customizing-the-consoles}
 
 >[!CAUTION]
 >
@@ -157,7 +157,7 @@ Pour personnaliser les colonnes en mode Liste :
 1. Si vous le souhaitez :
 
    * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec un
-      `pageInfoProviderType`.
+      `pageInfoProviderType` property.
 
    Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.
 
