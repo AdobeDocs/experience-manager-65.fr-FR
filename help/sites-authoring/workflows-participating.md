@@ -30,7 +30,7 @@ Les workflows incluent généralement les étapes qu’une personne doit suivre 
 * [Ouverture d’un élément de workflow pour afficher les détails (et réaliser des actions)](#opening-a-workflow-item-to-view-details-and-take-actions)
 * [Affichage de la charge utile de workflow (plusieurs ressources)](#viewing-the-workflow-payload-multiple-resources)
 
-## Notifications d’actions de workflow disponibles    {#notifications-of-available-workflow-actions}
+## Notifications d’actions de workflow disponibles   {#notifications-of-available-workflow-actions}
 
 Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**), diverses alertes et/ou notifications s’affichent :
 
