@@ -26,7 +26,7 @@ Accédez à une base de données SQL externe, de sorte que vos applications CQ p
 1. [Configurez un fournisseur de pool de sources de données JDBC](#configuring-the-jdbc-connection-pool-service).
 1. [Procurez-vous un objet de source de données et créez la connexion dans votre code](#connecting-to-the-database).
 
-## Regroupement du pilote de base de données JDBC  {#bundling-the-jdbc-database-driver}
+## Regroupement du pilote de base de données JDBC {#bundling-the-jdbc-database-driver}
 
 Certains fournisseurs de base de données proposent des pilotes JDBC dans un lot OSGi ; [MySQL](https://www.mysql.com/downloads/connector/j/), par exemple. Si le pilote JDBC correspondant à votre base de données n’est pas disponible sous la forme d’un lot OSGi, procurez-vous le fichier JAR du pilote et enveloppez-le dans un lot OSGi. Le lot doit exporter les packages nécessaires pour interagir avec le serveur de base de données. Le lot doit également importer les packages auxquels il fait référence.
 
