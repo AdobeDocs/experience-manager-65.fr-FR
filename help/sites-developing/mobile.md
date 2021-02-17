@@ -221,7 +221,7 @@ Pour affecter un groupe d’appareils à votre site :
 >
 >Lorsque les groupes d’appareils sont définis pour un site, ils sont hérités par toutes les pages du site.
 
-#### Filtres de groupe d’appareils  {#device-group-filters}
+#### Filtres de groupe d’appareils {#device-group-filters}
 
 Les filtres de groupe d’appareils définissent des critères fonctionnels pour déterminer si un appareil appartient ou non à un groupe. Lorsque vous créez un groupe d’appareils, vous pouvez sélectionner les filtres à utiliser pour évaluer les appareils.
 
@@ -305,7 +305,7 @@ Pour plus d’informations, accédez à [Création de filtres de groupe d’appa
 
 ### Utilisation de la base de données WURFL™  {#using-the-wurfl-database}
 
-aem utilise une version tronquée de la base de données [WURFL](https://wurfl.sourceforge.net/)™ pour requête les fonctionnalités du périphérique, telles que la résolution d’écran ou la prise en charge javascript, en fonction de l’User-Agent du périphérique.
+AEM utilise une version tronquée de la base de données [WURFL](https://wurfl.sourceforge.net/)™ pour requête les fonctionnalités du périphérique, telles que la résolution d’écran ou la prise en charge javascript, en fonction de l’User-Agent du périphérique.
 
 Le code XML de la base de données WURFL™ est représenté sous la forme de noeuds au-dessous de `/var/mobile/devicespecs` en analysant le fichier `wurfl.xml`à `/libs/wcm/mobile/devicespecs/wurfl.xml.` L&#39;extension aux noeuds se produit lors du premier démarrage du lot `cq-mobile-core`.
 
@@ -332,7 +332,7 @@ Pour installer une base de données WURFL™ :
 1. Copiez le fichier WURFL™ dans le dossier.
 1. Renommez le fichier en `wurfl.xml`.
 
-aem analyse automatiquement le fichier `wurfl.xml` et met à jour les noeuds sous `/var/mobile/devicespecs`.
+AEM analyse automatiquement le fichier `wurfl.xml` et met à jour les noeuds sous `/var/mobile/devicespecs`.
 
 >[!NOTE]
 >
@@ -354,7 +354,7 @@ La configuration ci-dessus fait que les périphériques pour lesquels User-Agent
 
 Cette section explique comment utiliser la détection côté client d’AEM afin d’optimiser le rendu des pages ou de proposer au client des versions de site web secondaires.
 
-aem prend en charge la détection côté client du périphérique en fonction de `BrowserMap`. `BrowserMap` est expédié en AEM en tant que bibliothèque cliente sous  `/etc/clientlibs/browsermap`.
+AEM prend en charge la détection côté client du périphérique en fonction de `BrowserMap`. `BrowserMap` est expédié en AEM en tant que bibliothèque cliente sous  `/etc/clientlibs/browsermap`.
 
 `BrowserMap` offre trois alternatives pour fournir un site web secondaire à un client. Elles sont appliquées dans l’ordre suivant :
 
@@ -544,15 +544,15 @@ Par conséquent, vous devez appeler la même `URL` avec la valeur `device` défi
 AEM traite les requêtes émises par des appareils mobiles appartenant au groupe d’appareils tactiles comme suit : 
 
 1. Un iPad envoie une requête à l’instance de publication AEM, par exemple. `https://localhost:4503/content/geometrixx_mobile/en/products.html`
-1. aem détermine si le site de la page demandée est un site mobile (en vérifiant si la page de premier niveau `/content/geometrixx_mobile` étend le composant de page mobile). Si oui :
-1. aem recherche les fonctionnalités du périphérique en fonction de l’User-Agent dans l’en-tête de requête.
-1. aem mappe les capacités du périphérique au groupe de périphériques et définit `touch` comme sélecteur de groupe de périphériques.
-1. aem redirige la requête vers `https://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
-1. aem envoie la réponse à l’iPad :
+1. AEM détermine si le site de la page demandée est un site mobile (en vérifiant si la page de premier niveau `/content/geometrixx_mobile` étend le composant de page mobile). Si oui :
+1. AEM recherche les fonctionnalités du périphérique en fonction de l’User-Agent dans l’en-tête de requête.
+1. AEM mappe les capacités du périphérique au groupe de périphériques et définit `touch` comme sélecteur de groupe de périphériques.
+1. AEM redirige la requête vers `https://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
+1. AEM envoie la réponse à l’iPad :
 
    * La page `products.touch.html` est diffusée de manière habituelle et peut être mise en cache.
    * Les composants de rendu utilisent des sélecteurs pour adapter la présentation.
-   * aem ajoute automatiquement le sélecteur de dispositifs portables à tous les liens internes de la page.
+   * AEM ajoute automatiquement le sélecteur de dispositifs portables à tous les liens internes de la page.
 
 ### Statistiques {#statistics}
 
