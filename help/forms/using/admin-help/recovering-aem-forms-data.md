@@ -50,7 +50,7 @@ Lorsque vous effectuez une restauration à partir d’une sauvegarde sur un nouv
 
 Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restants de la grappe fonctionnent correctement, effectuez une récupération du nœud unique de la grappe.
 
-## Récupération des données AEM Forms  {#recover-the-aem-forms-data}
+## Récupération des données AEM Forms {#recover-the-aem-forms-data}
 
 1. Arrêtez les services AEM Forms et le serveur d’applications en cours d’exécution.
 1. Au besoin, recréez le système physique à partir d’une image système. Par exemple, cette étape peut ne pas être nécessaire si la raison de la récupération est un serveur de bases de données déficient.
