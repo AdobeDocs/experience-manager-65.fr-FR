@@ -28,7 +28,7 @@ Dans Adobe Experience Manager (AEM), les données binaires peuvent être stocké
 
 Les entrepôts de données et les magasins de nœuds peuvent être configués en utilisant la configuration OSGi. Chaque configuration OSGi est référencé à l’aide d’un PID (identifiant de persistant).
 
-## Étapes de configuration  {#configuration-steps}
+## Étapes de configuration {#configuration-steps}
 
 Pour configurer le magasin de nœuds et l’entrepôt de données, procédez comme suit :
 
@@ -144,7 +144,7 @@ Voici les options de configuration disponibles :
 
 ## Entrepôt de données S3 Amazon  {#amazon-s-data-store}
 
-aem peut être configuré pour stocker des données dans Amazon Simple Enregistrement Service (S3). Il utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` pour la configuration.
+AEM peut être configuré pour stocker des données dans Amazon Simple Enregistrement Service (S3). Il utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` pour la configuration.
 
 Pour activer la fonctionnalité de l’entrepôt de données S3, un Feature Pack contenant le connecteur d’entrepôt de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.10.x du Feature Pack (par exemple, com.adobe.granite.oak.s3connector-1.10.0.zip). De plus, vous devez également télécharger et installer le dernier Service Pack AEM, tel qu&#39;il est indiqué sur la [page Notes de mise à jour AEM 6.5](/help/release-notes/sp-release-notes.md).
 
