@@ -43,7 +43,7 @@ Les développeurs peuvent utiliser cet exemple comme point de départ pour essay
 
 ## Modèles et composants {#templates-and-components}
 
-aem *Les modèles* et *Composants* permettent aux propriétaires de la gamme de créer des expériences personnalisées. *Les deux modèles *et *Composants* sont disponibles prêts à l&#39;emploi ou peuvent être développés sur mesure par vous, le développeur, soit en étendant les composants existants, soit en créant un champ vert (avancé). *Les* modèles et  ** composants permettent à l’auteur AEM de faire glisser-déposer pour créer des expériences pertinentes et attrayantes.
+AEM *Les modèles* et *Composants* permettent aux propriétaires de la gamme de créer des expériences personnalisées. *Les deux modèles *et *Composants* sont disponibles prêts à l&#39;emploi ou peuvent être développés sur mesure par vous, le développeur, soit en étendant les composants existants, soit en créant un champ vert (avancé). *Les* modèles et  ** composants permettent à l’auteur AEM de faire glisser-déposer pour créer des expériences pertinentes et attrayantes.
 
 1. [Création de composants](/help/sites-developing/components.md)
 1. [Création de modèles](/help/sites-developing/templates.md)
