@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 16%
+ht-degree: 23%
 
 ---
 
@@ -22,7 +22,7 @@ Ce guide couvre toutes les tâches [!DNL Experience Manager Assets], telles que 
 
 * [Prise en main du Experience Manager](https://helpx.adobe.com/fr/experience-manager/get-started.html)
 * [Notes de mise à jour de Experience Manager 6.5](/help/release-notes/home.md)
-* [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=fr)
 * [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6,5 guides
@@ -49,6 +49,6 @@ Ce guide couvre toutes les tâches [!DNL Experience Manager Assets], telles que 
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Forum de la communauté des ressources Experience Manager](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Guide de l&#39;utilisateur du répartiteur](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
-* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
-* [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
+* [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
