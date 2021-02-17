@@ -19,7 +19,7 @@ ht-degree: 79%
 ---
 
 
-# Intégration à Salesforce  {#integrating-with-salesforce}
+# Intégration à Salesforce {#integrating-with-salesforce}
 
 L’intégration de Salesforce à AEM fournit des fonctions de gestion de prospect et exploite les fonctions existantes que Salesforce met à disposition commercialement. Vous pouvez configurer AEM de manière à publier des prospects dans Salesforce et à créer des composants qui accèdent directement aux données à partir de Salesforce.
 
