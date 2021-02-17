@@ -17,7 +17,7 @@ ht-degree: 92%
 ---
 
 
-# Distribuer l’application AEM Forms  {#distribute-aem-forms-app}
+# Distribuer l’application AEM Forms {#distribute-aem-forms-app}
 
 Les solutions MDM (Mobile Device Management) permettent le déploiement à grande échelle des applications sur des périphériques mobiles.
 
