@@ -24,7 +24,7 @@ ht-degree: 17%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-## aem Vérifier l&#39;application {#aem-verify-app}
+## AEM Vérifier l&#39;application {#aem-verify-app}
 
 >[!CAUTION]
 >
