@@ -97,4 +97,4 @@ La page contenant le composant `Featured Content` inclut désormais cette public
 
 Pour plus d&#39;informations, consultez la page [Contenu phare](essentials-featured.md) à l&#39;intention des développeurs.
 
-Pour marquer le contenu comme présenté, voir [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
+Pour marquer le contenu comme étant présenté, voir [Modération du contenu généré par l’utilisateur](moderate-ugc.md).
