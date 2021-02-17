@@ -40,7 +40,7 @@ Le coin inférieur gauche du graphique présente deux périphériques connectés
 
 L’ordinateur présenté à droite, connecté au réseau d’entreprise via un VPN, a un débit limité, avec une vitesse de 1 Mbps. L’expérience utilisateur est totalement différente avec une connexion de 1 Mbps et avec une connexion de 1 Gbps. En fonction de la taille des ressources que les utilisateurs manipulent, leur liaison VPN peut s’avérer insuffisante pour la tâche.
 
-## La topologie du réseau d’entreprise   {#topology-of-the-corporate-network}
+## La topologie du réseau d’entreprise  {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
