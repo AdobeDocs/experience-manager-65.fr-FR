@@ -22,7 +22,7 @@ ht-degree: 95%
 
 La page Suivi vous permet de rechercher les processus actifs ou terminés que vous avez démarrés ou modifiés et d’afficher les détails. Les détails du processus indiquent les tâches, les affectations et les formulaires qui faisaient partie du processus. Vous pouvez également démarrer de nouveaux processus à l’aide des données de formulaire provenant d’un processus lancé précédemment.
 
-## Recherche de processus et de tâches  {#search-for-processes-and-tasks}
+## Recherche de processus et de tâches {#search-for-processes-and-tasks}
 
 Vous pouvez rechercher des instances de processus et des tâches associées en fonction des noms de processus ou en utilisant des modèles de recherche définis par l’administrateur de l’espace de travail AEM Forms.
 
