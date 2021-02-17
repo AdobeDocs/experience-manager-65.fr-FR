@@ -19,7 +19,7 @@ ht-degree: 63%
 ---
 
 
-# Connexion à Adobe Analytics et création de structures  {#connecting-to-adobe-analytics-and-creating-frameworks}
+# Connexion à Adobe Analytics et création de structures {#connecting-to-adobe-analytics-and-creating-frameworks}
 
 Pour suivre les données Web de vos pages AEM dans Adobe Analytics, créez une configuration Adobe Analytics Cloud Services et une structure Adobe Analytics :
 
@@ -57,7 +57,7 @@ Adobe Analytics [datacenters](https://developer.omniture.com/en_US/content_page/
 
 | Centre de données | URL |
 |---|---|
-| San Jose | https://api.omniture.com/admin/1.4/rest/ |
+| San Jose | https://api.omniture.com/admin/1.4/rest/ |
 | Dallas | https://api2.omniture.com/admin/1.4/rest/ |
 | Londres | https://api3.omniture.com/admin/1.4/rest/ |
 | Singapour | https://api4.omniture.com/admin/1.4/rest/ |
