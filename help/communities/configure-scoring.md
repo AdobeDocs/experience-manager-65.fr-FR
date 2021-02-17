@@ -248,7 +248,7 @@ Pour le site Interagir, l’utilisateur et son score se trouvent dans un chemin 
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Pour le site du guide des composants de la communauté, l’utilisateur et son score se trouvent dans un chemin créé avec le nom de la règle de score, un id par défaut ( `default-site`), un id unique et l’id de l’utilisateur :
+Pour le site du guide Composants de la communauté, l’utilisateur et son score se trouvent dans un chemin créé avec le nom de la règle de score, un id par défaut ( `default-site`), un id unique et l’id de l’utilisateur :
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
