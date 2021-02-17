@@ -22,7 +22,7 @@ ht-degree: 97%
 
 Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux qui sont fournis ne répondent pas à vos besoins en termes de solution.
 
-## Création de candidats de magasin personnalisés   {#creating-custom-store-candidates}
+## Création de candidats de magasin personnalisés  {#creating-custom-store-candidates}
 
 Les magasins ContextHub sont créés à partir de candidats de magasin enregistrés. Pour créer un magasin personnalisé, vous devez créer et enregistrer un candidat de magasin.
 
