@@ -41,7 +41,7 @@ Il est possible d’agir sur les workflows dans les cas suivants :
 >
 >Il s’agit des conditions requises minimales. Pour effectuer des actions spécifiques, votre compte doit également correspondre au participant affecté ou à un membre du groupe affecté pour prendre des mesures spécifiques.
 
-## Configuration de l’accès aux workflows  {#configuring-access-to-workflows}
+## Configuration de l’accès aux workflows {#configuring-access-to-workflows}
 
 Les modèles de workflows héritent d’une liste de contrôle d’accès par défaut pour contrôler les interactions possibles des utilisateurs avec les workflows. Pour personnaliser l’accès utilisateur d’un workflow, modifiez la liste de contrôle d’accès dans le référentiel du dossier contenant le nœud de modèles de workflows :
 
