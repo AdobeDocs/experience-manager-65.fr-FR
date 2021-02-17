@@ -37,7 +37,7 @@ Vous pouvez utiliser le serveur proxy pour surveiller toutes les interactions cl
 
 Vous pouvez, par exemple, placer le serveur proxy entre deux applications qui communiquent par un réseau TCP/IP, par exemple, un navigateur web et AEM. Vous pouvez ainsi surveiller ce qui se passe exactement lorsque vous demandez une page AEM.
 
-## Démarrage de l’outil de serveur proxy  {#starting-the-proxy-server-tool}
+## Démarrage de l’outil de serveur proxy {#starting-the-proxy-server-tool}
 
 L&#39;outil se trouve dans le dossier /opt/helpers de votre installation AEM. Pour le lancer, saisissez :
 
