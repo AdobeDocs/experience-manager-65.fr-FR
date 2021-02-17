@@ -18,7 +18,7 @@ ht-degree: 76%
 ---
 
 
-# Modification des couleurs de l’interface  {#changing-the-color-scheme-of-the-interface}
+# Modification des couleurs de l’interface {#changing-the-color-scheme-of-the-interface}
 
 Vous pouvez modifier les couleurs des différentes parties de l’interface utilisateur de l’espace de travail AEM Forms selon vos besoins. Voici quelques exemples de personnalisation des couleurs. Outre les étapes décrites dans cet article, voir [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
