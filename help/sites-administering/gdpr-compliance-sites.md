@@ -46,7 +46,7 @@ Par défaut, les composants AEM Sites ne stockent pas les données de formulair
 
 ## Souscription/exclusion {#opt-in-opt-out}
 
-aem dispose d’un [service d’exclusion des cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer l’inclusion/exclusion des utilisateurs.
+AEM dispose d’un [service d’exclusion des cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer l’inclusion/exclusion des utilisateurs.
 
 ## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
 
@@ -54,7 +54,7 @@ AEM Sites comprend une intégration facultative à Enhanced Insights by Analytic
 
 Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Analytics, voir [Adobe Analytics et RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Enhanced Personalization by Target  {#enhanced-personalization-by-target}
+## Enhanced Personalization by Target {#enhanced-personalization-by-target}
 
 AEM Sites comprend une intégration facultative à Enhanced Personalization by Target utilisant la fonctionnalité incluse dans le service On-demand Adobe Target.
 
@@ -62,7 +62,7 @@ Pour plus d’informations sur la gestion des requêtes RGPD des personnes titul
 
 ## ContextHub {#contexthub}
 
-aem fournit une couche de données facultative avec [ContextHub](/help/sites-developing/contexthub.md). Cette option conserve les données spécifiques aux visiteurs dans le navigateur, afin qu’elles soient utilisées pour la personnalisation basée sur des règles.
+AEM fournit une couche de données facultative avec [ContextHub](/help/sites-developing/contexthub.md). Cette option conserve les données spécifiques aux visiteurs dans le navigateur, afin qu’elles soient utilisées pour la personnalisation basée sur des règles.
 
 Par défaut, ces données sur les visiteurs ne sont pas stockées dans AEM ; AEM envoie des règles à la couche de données de façon à prendre des décisions de personnalisation dans le navigateur.
 
@@ -110,21 +110,21 @@ Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisa
 
 * utiliser la console du navigateur, par exemple :
 
-   * Chrome :
+   * Chrome:
 
       * Ouvrez Outils de développement > Application > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
-   * Firefox :
+   * Firefox:
 
       * Ouvrez Outils de développement > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
-   * Safari :
+   * Safari:
 
       * Ouvrez Préférences > Avancé > Afficher le menu Développement dans la barre de menus
       * Ouvrez Développement > Afficher la console JavaScript
