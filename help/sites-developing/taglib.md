@@ -22,7 +22,7 @@ ht-degree: 65%
 
 Les bibliothèques de balises Granite, CQ et Sling vous donnent accès à des fonctions spécifiques à utiliser dans le script JSP de vos modèles et composants.
 
-## Bibliothèque de balises Granite  {#granite-tag-library}
+## Bibliothèque de balises Granite {#granite-tag-library}
 
 La bibliothèque de balises Granite comporte des fonctions bien utiles.
 
