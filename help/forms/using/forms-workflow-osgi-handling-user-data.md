@@ -29,7 +29,7 @@ Un flux de travail basé sur l’utilisation de Forms peut être déclenché ou 
 
 Pour plus d’informations sur les flux de travail et les fonctionnalités AEM basés sur l’utilisation de Forms, voir [Flux de travail basé sur l’utilisation de Forms sur OSGi](/help/forms/using/aem-forms-workflow.md).
 
-## Données utilisateur et stockage de données  {#user-data-and-data-stores}
+## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
 Lorsqu’un flux de travail est déclenché, une charge utile est générée automatiquement pour l’instance de flux de travail. Chaque instance de flux de travail se voit attribuer un ID d’instance unique et un ID de charge utile associé. La charge utile contient les emplacements de référentiel pour les données d’utilisateur et de formulaire associées à une instance de flux de travail. Par ailleurs, les données d’historique et de brouillon d’une instance de flux de travail sont également stockées dans le référentiel AEM.
 
@@ -43,8 +43,8 @@ Les emplacements de référentiel par défaut où la charge utile, les brouillon
  <tbody>
   <tr>
    <td> </td>
-   <td><b>aem 6.4 [ ! DNL Forms]</b></td>
-   <td><b>aem 6.3 [ ! DNL Forms]</b></td>
+   <td><b>AEM 6.4 [ ! DNL Forms]</b></td>
+   <td><b>AEM 6.3 [ ! DNL Forms]</b></td>
   </tr>
   <tr>
    <td><strong>Instance <br /> de flux de travail </strong></td>
@@ -122,7 +122,7 @@ Pour identifier et accéder aux données utilisateur stockées pour une instance
 
    >[!NOTE]
    >
-   >aem application [!DNL Forms] stocke également les données en mode hors ligne. Il est possible que les données d’une instance de processus soient stockées localement sur des périphériques individuels et soient envoyées au serveur [!DNL Forms] lorsque l’application se synchronise avec le serveur.
+   >AEM application [!DNL Forms] stocke également les données en mode hors ligne. Il est possible que les données d’une instance de processus soient stockées localement sur des périphériques individuels et soient envoyées au serveur [!DNL Forms] lorsque l’application se synchronise avec le serveur.
 
 ### Suppression de données utilisateur {#delete-user-data}
 
