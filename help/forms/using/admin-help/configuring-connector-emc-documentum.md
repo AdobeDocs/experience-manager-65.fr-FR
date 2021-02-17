@@ -28,7 +28,7 @@ La configuration de Connector for EMC Documentum requiert de configurer la conne
 >
 >Dans les versions précédentes, il était possible de stocker des actifs dans un référentiel ECM. Dans la version actuelle, les actifs sont stockés dans le référentiel natif d’AEM forms et les services du fournisseur de référentiel sont ignorés. La migration d’actifs d’un référentiel ECM vers le référentiel AEM forms s’effectue lors de la mise à niveau vers AEM forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM forms correspondant à votre serveur d’applications.
 
-## Configuration de la connexion au serveur  {#configuring-the-server-connection}
+## Configuration de la connexion au serveur {#configuring-the-server-connection}
 
 Cette rubrique décrit les tâches de Connector for EMC Documentum que vous pouvez effectuer à partir de la page Paramètres de configuration.
 
