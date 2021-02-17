@@ -34,7 +34,7 @@ Pour plus d’informations sur l’activation du mode de sauvegarde sécurisé, 
 1. Dans la page Configurations de base, modifiez les options selon les besoins et cliquez sur **[!UICONTROL OK]**. Pour plus d’informations sur les options, voir [Options Configurations de base](configure-general-aem-forms-settings.md#core-configurations-options).
 
 
-## Options Configurations de base  {#core-configurations-options}
+## Options Configurations de base {#core-configurations-options}
 
 **Emplacement du** répertoire temporaireChemin du répertoire dans lequel AEM forms va créer des fichiers temporaires de produit. Si la valeur de ce paramètre est vide, l’emplacement par défaut est le répertoire temporaire système. Assurez-vous que le répertoire temporaire est un dossier modifiable.
 
