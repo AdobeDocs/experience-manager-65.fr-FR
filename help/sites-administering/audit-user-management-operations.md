@@ -33,7 +33,7 @@ Cette amélioration permet de contrôler la création, la lecture, la mise à jo
 
 Par défaut, les entrées sont écrites dans le fichier `error.log`. Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct. Vous trouverez plus d’informations sur la marche à suivre dans le paragraphe ci-dessous.
 
-## Redirection de la sortie vers un fichier journal distinct  {#redirecting-the-output-to-a-separate-log-file}
+## Redirection de la sortie vers un fichier journal distinct {#redirecting-the-output-to-a-separate-log-file}
 
 Pour rediriger la sortie de la journalisation vers un fichier journal distinct, vous devez créer une configuration **Enregistreur de journalisation Apach Sling**. Dans l’exemple ci-dessous, nous utilisons `useraudit.log` comme nom de fichier distinct.
 
