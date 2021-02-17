@@ -23,7 +23,7 @@ ht-degree: 67%
 
 Après la création d’un modèle de lettre [dans Correspondence Management](../../forms/using/create-letter.md), l’utilisateur/agent/expert en assurance final peut ouvrir la lettre dans l’interface utilisateur de création de correspondance et créer une correspondance en saisissant des données, en configurant le contenu et en gérant les pièces jointes. Enfin, l’agent ou l’expert en assurance peut gérer le contenu en mode Aperçu et envoyer la lettre.
 
-### Afficher l’aperçu d’une correspondance  {#preview-a-correspondence}
+### Afficher l’aperçu d’une correspondance {#preview-a-correspondence}
 
 Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
