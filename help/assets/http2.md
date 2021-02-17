@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Diffusion de contenu HTTP/2    {#http-delivery-of-content}
+# Diffusion de contenu HTTP/2   {#http-delivery-of-content}
 
 Adobe est heureux d’annoncer la disponibilité de HTTP/2 pour la diffusion de contenu, protocole qui permet d’améliorer les performances globales.
 
@@ -41,7 +41,7 @@ La démonstration suivante illustre la différence entre le chargement HTTP/1 et
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Puis-je passer à HTTP/2 ?   {#am-i-eligible-to-switch-over-to-http}
+## Puis-je passer à HTTP/2 ?  {#am-i-eligible-to-switch-over-to-http}
 
 Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
@@ -83,13 +83,13 @@ Les demandes sont traitées par ordre chronologique de réception par le support
 >
 >Le délai d’exécution peut être long, car la transition vers HTTP/2 implique l’effacement du cache. Par conséquent, seules quelques transitions client peuvent être traitées simultanément.
 
-## Quels risques présente la transition vers HTTP/2 ?   {#what-are-the-risks-with-moving-to-http}
+## Quels risques présente la transition vers HTTP/2 ?  {#what-are-the-risks-with-moving-to-http}
 
 La transition vers HTTP/2 efface le cache au niveau du CDN, car elle implique la définition d’une nouvelle configuration de CDN.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes de notre site d’origine.
 
-## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ?   {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ?  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Le navigateur ne détecte pas cette transition, il est donc nécessaire de télécharger une extension.
 
