@@ -34,7 +34,7 @@ Les scénarios suivants indiquent comment vous pouvez ajouter des propriétés/o
 
 En ajustant les propriétés, chemins et valeurs de ces scénarios, vous pouvez ajouter des propriétés et des onglets personnalisés à un jeu différent de ressources selon vos besoins.
 
-### Scénario : ajout d’un champ commun (propriété) à tous les types de ressources  {#scenario-adding-a-common-field-property-to-all-the-asset-types}
+### Scénario : ajout d’un champ commun (propriété) à tous les types de ressources {#scenario-adding-a-common-field-property-to-all-the-asset-types}
 
 Ce scénario vous indique comment ajouter une propriété personnalisée à tous les types de ressources (texte, liste, condition et fragments de disposition) et aux lettres. Ce scénario vous permet d’ajouter une propriété, Emplacement des destinataires, à toutes les ressources et lettres. L’emplacement de la propriété destinataire permet d’identifier la zone géographique de diffusion à laquelle un actif ou une lettre est pertinent.
 
