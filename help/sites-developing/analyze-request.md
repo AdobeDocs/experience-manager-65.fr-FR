@@ -20,7 +20,7 @@ ht-degree: 47%
 
 # Script d’analyse des requêtes{#request-analysis-script}
 
-## Téléchargement {#download}
+## Télécharger {#download}
 
 Ce script est conçu pour faciliter l&#39;analyse des fichiers `access.log`, ce qui permet de générer un rapport lisible en vue d&#39;un traitement ultérieur.
 
