@@ -80,7 +80,7 @@ Le tableau suivant explique comment les données de tous les brouillons par `sro
 >
 >Une structure exacte telle que `drafts` est répliquée pour les formulaires envoyés pour `srose` sous le noeud `/content/forms/fp/srose/submit/`.
 >
->Tous les brouillons et les envois des utilisateurs `anonymous` sont stockés sous le noeud `/content/forms/fp/anonymous/`, qui organise les brouillons et les envois pour tous les utilisateurs anonymes sous les noeuds `draft` et `submit`.
+>Tous les brouillons et envois des utilisateurs `anonymous` sont stockés sous le noeud `/content/forms/fp/anonymous/`, qui organise les brouillons et les envois pour tous les utilisateurs anonymes sous les noeuds `draft` et `submit`.
 
 | Node | Description |
 |---|---|
@@ -92,7 +92,7 @@ Le tableau suivant explique comment les données de tous les brouillons par `sro
 | `/content/forms/fp/srose/drafts/data/` | Range les données de formulaire de l’utilisateur en fonction de l’ID de données utilisateur |
 | `/content/forms/fp/srose/drafts/data/<user data ID>` | Contient les données de formulaire pour l’ID de données utilisateur sélectionné au format binaire |
 
-#### Suppression de données utilisateur  {#delete-user-data}
+#### Suppression de données utilisateur {#delete-user-data}
 
 Pour supprimer définitivement des données utilisateur des brouillons et des envois dans les systèmes AEM pour un utilisateur connecté, vous devez supprimer le nœud `user ID` pour un utilisateur spécifique à partir du nœud d’auteur. Vous devez supprimer manuellement les données de toutes les instances AEM applicables.
 
