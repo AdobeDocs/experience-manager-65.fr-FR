@@ -24,7 +24,7 @@ ht-degree: 4%
 
 Ce package a été créé pour **AEM Forms 6.4 OSGI Author**, a été testé et est donc pris en charge sur les versions de plateforme suivantes :
 
-| aem VERSION | VERSION DU PACKAGE AEM FORMS | ÉTAT |
+| AEM VERSION | VERSION DU PACKAGE AEM FORMS | ÉTAT |
 |---|---|---|
 | 6.4 | 5,0,86 | **Pris en charge** |
 | 6.5 | 6,0,80 | **Pris en charge** |
@@ -66,7 +66,7 @@ Le [paquet de démonstration AEM Forms We.Gov](https://experience.adobe.com/#/do
 
 Les actifs inclus dans ce package sont les suivants :
 
-* aem des pages de site avec des modèles modifiables
+* AEM des pages de site avec des modèles modifiables
 * AEM Forms adaptatif Forms
 * AEM Forms Interactive Communications (Impression et Canal Web)
 * document d’enregistrement XDP AEM Forms
@@ -294,7 +294,7 @@ Les étapes détaillées dans cette section sont incluses pour vous aider à loc
 
 Une fois la configuration du cloud terminée, vous pouvez tester le modèle de données de formulaire.
 
-1. Accédez à .
+1. Accédez à
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
@@ -449,7 +449,7 @@ Les données AEM Forms Analytics sont disponibles hors ligne ou sans configurati
 >[!NOTE]
 Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration de cloud Adobe Analytics si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration de cloud principal.
 
-1. Accédez à .
+1. Accédez à
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
@@ -657,7 +657,7 @@ Les modèles modifiables se trouvent à l’emplacement suivant :
 
 *https://&lt;aemserver>:&lt;port>/libs/wcm/core/content/sites/templates.html/conf/we-gov*
 
-Ces modèles incluent les modèles Site AEM, Formulaire adaptatif et Communications interactives, créés et assemblés avec des composants disponibles à l&#39;adresse suivante :
+Ces modèles incluent les modèles Site AEM, Formulaire adaptatif et Communications interactives, créés et assemblés avec des composants disponibles à l’adresse suivante :
 
 *https://&lt;aemserver>:&lt;port>/crx/de/index.jsp#/apps/we-gov/components*
 
