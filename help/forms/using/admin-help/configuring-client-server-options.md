@@ -18,7 +18,7 @@ ht-degree: 85%
 ---
 
 
-# Configuration du serveur Document Security  {#configure-the-document-security-server}
+# Configuration du serveur Document Security {#configure-the-document-security-server}
 
 1. Dans Administration Console, cliquez sur Services > Document Security > Configuration > Configuration du serveur.
 1. Configurez les paramètres et cliquez sur OK.
