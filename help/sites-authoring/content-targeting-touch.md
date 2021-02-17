@@ -14,12 +14,12 @@ translation-type: tm+mt
 source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '5374'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
 
-# Création de contenu ciblé en mode Ciblage {#authoring-targeted-content-using-targeting-mode}
+# Création de contenu ciblé en mode Ciblage{#authoring-targeted-content-using-targeting-mode}
 
 Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences :
 
@@ -53,7 +53,7 @@ Les activités et les expériences qui s’affichent en mode Cible se répercute
 >
 >Lors du ciblage, la combinaison de la marque et de l’activité est conservée au niveau de l’utilisateur, et non au niveau du canal.
 
-## Passage en mode Ciblage   {#switching-to-targeting-mode}
+## Passage en mode Ciblage {#switching-to-targeting-mode}
 
 Passez en mode Cible pour accéder aux outils de création de contenu ciblé.
 
@@ -109,13 +109,13 @@ Pour ajouter une activité :
    * Ciblage de l’expérience : gérez les activités Adobe Target à partir d’AEM.
    * Test A/B : créez/gérez les activités de test A/B dans Adobe Target à partir d’AEM.
 
-## Procédure de ciblage : création, ciblage et objectifs et paramètres   {#the-targeting-process-create-target-and-goals-settings}
+## Procédure de ciblage : création, ciblage et objectifs et paramètres  {#the-targeting-process-create-target-and-goals-settings}
 
 Le mode Ciblage permet de configurer plusieurs aspects d’une activité. Pour créer du contenu ciblé pour une activité de marque, utilisez la procédure en trois étapes ci-dessous :
 
 1. [Créer](#create-authoring-the-experiences) : ajoutez ou supprimez des expériences et ajoutez des offres pour chaque expérience.
 1. [Cible](#diagramtargetconfiguringtheaudiences) : spécifiez l’audience ciblée par les différentes expériences. Vous pouvez cibler une audience spécifique et, si vous utilisez un test A/B, déterminer le pourcentage de trafic dirigé vers une expérience.
-1. [Objectifs et paramètres](#settingsgoalssettingsconfiguringtheactivityandsettinggoals) : planifiez l’activité et définissez la priorité. Vous pouvez également définir des objectifs de mesures de réussite.
+1. [Objectifs et paramètres](#settingsgoalssettingsconfiguringtheactivityandsettinggoals) : planifiez l’activité et définissez la priorité. Vous pouvez également définir des objectifs de mesures de succès.
 
 Utilisez la procédure ci-dessous pour commencer la procédure de ciblage du contenu pour une activité.
 
@@ -135,11 +135,11 @@ Pour ajouter une activité :
    >
    >Pour modifier l’activité que vous utilisez, cliquez ou appuyez sur **Précédent**.
 
-## Créer : création d’expériences   {#create-authoring-the-experiences}
+## Créer : création d’expériences  {#create-authoring-the-experiences}
 
 L’étape Créer du ciblage de contenu consiste à créer des expériences. Au cours de cette étape, vous pouvez créer ou supprimer les expériences de l’activité et ajouter des offres à chaque expérience.
 
-### Affichage des offres d’expérience en mode Ciblage   {#seeing-experience-offers-in-targeting-mode}
+### Affichage des offres d’expérience en mode Ciblage  {#seeing-experience-offers-in-targeting-mode}
 
 Après avoir [commencé la procédure de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), sélectionnez une expérience pour afficher les offres disponibles pour cette expérience. Lorsque vous sélectionnez une expérience, les composants ciblés dans la page changent de manière à afficher l’offre concernant cette expérience.
 
@@ -181,14 +181,14 @@ Vous pouvez enregistrer des offres personnalisées à une bibliothèque d’offr
 
 À l’aide de l’étape Créer de la [procédure de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), vous pouvez ajouter et supprimer des expériences. Vous pouvez également dupliquer une expérience et la renommer.
 
-#### Ajout d’expériences à l’aide du mode Ciblage   {#adding-experiences-using-targeting-mode}
+#### Ajout d’expériences à l’aide du mode Ciblage  {#adding-experiences-using-targeting-mode}
 
 Pour ajouter une expérience :
 
-1. Pour ajouter une expérience, cliquez ou appuyez sur **+** **Ajouter le ciblage d’expérience** qui s’affiche sous les expériences existantes dans le volet **Audiences**.
+1. Pour ajouter une expérience, cliquez ou appuyez sur **+** **Ajouter le ciblage d’expérience**, qui s’affiche en dessous des expériences existantes dans le volet **Audiences**.
 1. Sélectionnez une audience. Par défaut, ce nom est le nom de l’expérience. Vous pouvez entrer un autre nom, si vous le souhaitez. Cliquez ou appuyez sur **OK**.
 
-#### Suppression d’expériences à l’aide du mode Ciblage   {#removing-experiences-using-targeting-mode}
+#### Suppression d’expériences à l’aide du mode Ciblage  {#removing-experiences-using-targeting-mode}
 
 Pour supprimer une expérience :
 
@@ -198,7 +198,7 @@ Pour supprimer une expérience :
 
 1. Cliquez sur **Supprimer**.
 
-#### Attribution d’un nouveau nom à des expériences à l’aide du mode Ciblage   {#renaming-experiences-using-targeting-mode}
+#### Attribution d’un nouveau nom à des expériences à l’aide du mode Ciblage  {#renaming-experiences-using-targeting-mode}
 
 Pour renommer des expériences à l’aide du mode Ciblage :
 
@@ -214,7 +214,7 @@ Pour modifier les audiences à l’aide du mode Ciblage :
 1. Cliquez sur **Modifier l’audience** et sélectionnez une nouvelle audience.
 1. Cliquez sur **OK**.
 
-#### Duplication d’expériences à l’aide du mode Ciblage   {#duplicating-experiences-using-targeting-mode}
+#### Duplication d’expériences à l’aide du mode Ciblage  {#duplicating-experiences-using-targeting-mode}
 
 Pour copier des expériences à l’aide du mode Ciblage :
 
@@ -222,7 +222,7 @@ Pour copier des expériences à l’aide du mode Ciblage :
 1. Cliquez sur **Dupliquer** et sélectionnez l’audience.
 1. Renommez l’expérience, si vous le souhaitez, puis cliquez sur **OK**.
 
-### Création d’offres à l’aide du mode Ciblage   {#creating-offers-using-targeting-mode}
+### Création d’offres à l’aide du mode Ciblage  {#creating-offers-using-targeting-mode}
 
 Ciblez un composant pour créer des offres pour les expériences. Les composants ciblés fournissent le contenu utilisé comme offres pour les expériences.
 
@@ -240,7 +240,7 @@ Les outils ci-dessous sont disponibles pour l’utilisation d’offres :
 * [Convertissez une offre de bibliothèque en offre personnalisée](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library).
 * [Ouvrez une offre de bibliothèque et modifiez son contenu](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer).
 
-#### Création d’une offre par défaut à l’aide d’un composant Ciblage existant   {#creating-a-default-offer-by-targeting-an-existing-component}
+#### Création d’une offre par défaut à l’aide d’un composant Ciblage existant  {#creating-a-default-offer-by-targeting-an-existing-component}
 
 Ciblez un composant dans la page pour l’utiliser comme offre pour l’expérience par défaut de l’activité. Lorsque vous ciblez un composant, il est enveloppé dans un composant cible et son contenu devient l’offre de l’expérience par défaut.
 
@@ -270,7 +270,7 @@ Pour plus d’informations sur la personnalisation de ce composant, voir [Config
 
 Comme le composant cible est un conteneur, il s’affiche sous forme de zone cible pour d’autres composants.
 
-En mode Cible, le composant cible possède une bordure bleue, et le message de indique la nature ciblée.
+En mode Cible, le composant cible possède une bordure bleue, et le message de cible de dépôt indique la nature ciblée.
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -305,7 +305,7 @@ Si vous modifiez le contenu ciblé, vous devez cliquer ou appuyer sur **Commence
    * Pour l’expérience par défaut, faites glisser les composants vers la zone ciblée et modifiez les propriétés du composant comme vous le faites habituellement pour créer le contenu de l’offre.
    * Pour les expériences autres que l’expérience par défaut, [ajoutez une offre personnalisée](#adding-a-custom-offer) ou [ajoutez une offre de bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
-#### Ajout d’une offre personnalisée   {#adding-a-custom-offer}
+#### Ajout d’une offre personnalisée  {#adding-a-custom-offer}
 
 Créez une offre en créant le contenu d’un composant ciblé en mode Ciblage. Lorsque vous créez une offre personnalisée, elle est utilisée comme offre pour une seule expérience.
 
@@ -326,7 +326,7 @@ Si vous décidez que l’offre peut être utilisée pour d’autres expériences
 
 1. Modifiez le contenu du composant.
 
-#### Ajout d’une offre à partir d’une bibliothèque d’offres   {#adding-an-offer-from-an-offer-library}
+#### Ajout d’une offre à partir d’une bibliothèque d’offres  {#adding-an-offer-from-an-offer-library}
 
 Ajoutez une offre de la [bibliothèque d’offres](/help/sites-authoring/offerlib.md) à une expérience. Vous pouvez ajouter une offre de la bibliothèque de la marque que vous ciblez actuellement.
 
@@ -341,7 +341,7 @@ Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par d�
 
    ![](do-not-localize/chlimage_1-3.png)
 
-1. Sélectionnez l’offre dans la bibliothèque, puis cliquez ou appuyez sur l’icône Coche.
+1. Sélectionnez l’offre dans la bibliothèque, puis cliquez ou appuyez sur l’icône en forme de coche.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -374,9 +374,9 @@ Pour plus d’informations sur l’utilisation de la console Offres pour créer 
 
    ![](do-not-localize/chlimage_1-4.png)
 
-1. Saisissez le nom de l’offre et sélectionnez la bibliothèque à laquelle vous ajoutez l’offre, puis cliquez ou appuyez sur l’icône Coche.
+1. Saisissez le nom de l’offre et sélectionnez la bibliothèque à laquelle vous ajoutez l’offre, puis cliquez ou appuyez sur l’icône en forme de coche.
 
-#### Conversion d’une offre de bibliothèque en bibliothèque personnalisée   {#converting-a-library-offer-to-a-custom-library}
+#### Conversion d’une offre de bibliothèque en bibliothèque personnalisée  {#converting-a-library-offer-to-a-custom-library}
 
 Convertissez une offre de bibliothèque en offre personnalisée pour modifier l’offre pour l’expérience actuelle, sans modifier l’offre dans d’autres expériences.
 
@@ -399,7 +399,7 @@ Ouvrez une offre de bibliothèque à partir d’une expérience en mode ciblé p
 
 L’étape Cibler de la [procédure de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique de mapper les audiences sur les expériences utilisées lors de l’étape Créer. La page Cible affiche les audiences ciblées par chaque expérience. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui permettent de cibler le pourcentage de trafic d’une audience pour une expérience spécifique.
 
-### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences)…   {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences) ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Les audiences s’affichent dans la partie gauche du diagramme de mappage, tandis que les expériences s’affichent dans la partie droite.
 
@@ -437,7 +437,7 @@ Vous pouvez modifier les pourcentages, à condition que leur somme reste égale 
 1. Saisissez les pourcentages pour configurer le mode d’acheminement du trafic vers les différentes expériences. Le total doit être égal à 100.
 1. (Facultatif) Modifiez le nom de l’expérience en cliquant sur le menu déroulant en regard du nom de l’expérience.
 
-## Objectifs et paramètres : configuration de l’activité et définition des objectifs   {#goals-settings-configuring-the-activity-and-setting-goals}
+## Objectifs et paramètres : configuration de l’activité et définition des objectifs  {#goals-settings-configuring-the-activity-and-setting-goals}
 
 L’étape Objectifs et paramètres de la [procédure de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique de configurer le comportement de l’activité de marque. Spécifiez le moment auquel l’activité commence et se termine, ainsi que le niveau de priorité de l’activité. Vous pouvez également suivre les objectifs. En particulier, vous pouvez déterminer ce que vous souhaitez mesurer avec vos activités.
 
@@ -457,7 +457,7 @@ Si vous utilisez Adobe Target comme moteur de ciblage et que A4T Analytics est
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-Les mesures de réussite ci-dessous sont disponibles (pour la publication uniquement) :
+Les mesures de succès ci-dessous sont disponibles (pour la publication uniquement) :
 
 <table>
  <tbody>
@@ -491,7 +491,7 @@ Les mesures de réussite ci-dessous sont disponibles (pour la publication unique
  </tbody>
 </table>
 
-De plus, il existe des paramètres avancés qui permettent de déterminer comment compter les mesures de réussite. Les options incluent la comptabilisation de la mesure par impression ou une fois par visiteur et la possibilité de conserver l’utilisateur dans l’activité ou de l’en retirer.
+De plus, il existe des paramètres avancés qui permettent de déterminer comment compter les mesures de succès. Les options incluent la comptabilisation de la mesure par impression ou une fois par visiteur et la possibilité de conserver l’utilisateur dans l’activité ou de l’en retirer.
 
 Utilisez les options avancées pour déterminer ce qui se passe **après** qu’un utilisateur a rencontré la mesure de l’objectif. Le tableau suivant présente les options disponibles.
 
@@ -530,9 +530,9 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
  </tbody>
 </table>
 
-Pour plus d’informations sur les mesures de réussite, voir [Documentation d’Adobe Target](https://docs.adobe.com/content/help/fr-FR/target/using/activities/success-metrics/success-metrics.html).
+Pour plus d’informations sur les mesures de succès, voir [Documentation d’Adobe Target](https://docs.adobe.com/content/help/fr-FR/target/using/activities/success-metrics/success-metrics.html).
 
-### Paramètres de configuration (ciblage d’AEM)   {#configuring-settings-aem-targeting}
+### Paramètres de configuration (ciblage d’AEM)  {#configuring-settings-aem-targeting}
 
 Pour configurer les paramètres si vous utilisez le ciblage d’AEM :
 
@@ -548,7 +548,7 @@ Pour configurer les paramètres si vous utilisez le ciblage d’AEM :
 
 1. Pour spécifier la priorité de l’activité, utilisez le curseur pour choisir **Faible**, **Normale** ou **Élevée**.
 
-### Configuration des objectifs et des paramètres (Adobe Target)   {#configuring-goals-settings-adobe-target}
+### Configuration des objectifs et des paramètres (Adobe Target)  {#configuring-goals-settings-adobe-target}
 
 Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target :
 
@@ -575,7 +575,7 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
 
    Si vous devez supprimer tous les champs, cliquez sur le bouton de sélection dans le coin supérieur droit et sélectionnez **Effacer tous les champs**.
 
-   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de réussite dans le tableau précédent et à la [Documentation d’Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
+   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de succès dans le tableau précédent et à la [Documentation d’Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    Un objectif au moins doit être défini.
@@ -585,19 +585,19 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
    >[!NOTE]
    S’il manque des informations dans votre mesure, la mesure est entourée d’une ligne rouge.
 
-1. Cliquez sur **Ajouter une nouvelle mesure** pour configurer d’autres mesures de réussite.
+1. Cliquez sur **Ajouter une nouvelle mesure** pour configurer d’autres mesures de succès.
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
    >[!NOTE]
    Vous pouvez supprimer d’autres objectifs en cliquant ou en appuyant sur le bouton de sélection et cliquant ou en appuyant sur **Supprimer**. AEM exige qu’au moins un objectif soit défini.
 
-1. Si vous souhaitez mieux contrôler la méthode de comptabilisation des mesures de réussite, cliquez ou appuyez sur **Paramètres avancés** pour y accéder.
+1. Si vous souhaitez mieux contrôler la méthode de comptabilisation des mesures de succès, cliquez ou appuyez sur **Paramètres avancés** pour y accéder.
 1. Cliquez sur **Enregistrer**.
 
 Après la configuration, vous pouvez [afficher les performances de vos activités](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test), qui utilisent Adobe Target (ciblage d’expériences ou des tests A/B). De plus, avec le ciblage des tests A/B, vous pouvez [convertir les gagnants](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test).
 
-## Simulation d’une expérience   {#simulating-an-experience}
+## Simulation d’une expérience  {#simulating-an-experience}
 
 Simulez l’expérience d’un visiteur pour vérifier que le contenu de la page s’affiche de la façon escomptée en fonction de la conception du contenu ciblé. Lors de la simulation, chargez différents profils utilisateur et découvrez le contenu ciblé pour l’utilisateur en question.
 
@@ -632,7 +632,7 @@ Pour simuler l’expérience du visiteur, utilisez les outils suivants :
 
 1. Pour apporter des modifications aux offres affichées, passez en mode Ciblage. L’activité de simulation étant sélectionnée, modifiez les offres pour le contexte configuré en mode Aperçu.
 
-## Configuration des options du composant cible   {#configuring-target-component-options}
+## Configuration des options du composant cible  {#configuring-target-component-options}
 
 Vous pouvez personnaliser le composant cible en accédant aux options du composant de l’une des deux façons suivantes :
 
