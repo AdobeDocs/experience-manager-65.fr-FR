@@ -38,7 +38,7 @@ L’objectif de la nouvelle mise en oeuvre est de couvrir les fonctionnalités e
 * Extension de type de nœud dédiée pour marquer l’exigence d’authentification
 * Chemin de connexion facultatif associé à l’exigence d’authentification
 
-### La nouvelle mise en œuvre personnalisée de groupe d’utilisateurs  {#the-new-custom-user-group-implementation}
+### La nouvelle mise en œuvre personnalisée de groupe d’utilisateurs {#the-new-custom-user-group-implementation}
 
 Dans le contexte d’AEM, un CUG comprend les étapes suivantes :
 
@@ -133,7 +133,7 @@ Il en va de même pour la propriété `granite:loginPath`. Elle ne sera respect�
 
 La configuration AEM par défaut utilise désormais cette configuration en permettant de définir le mixin en mode d’exécution Auteur, mais n’a d’effet que lors de la réplication sur l’instance de publication. Voir [cette page](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) pour savoir comment Sling applique les exigences d’authentification.
 
-Si vous Ajoutez le type de mixin `granite:AuthenticationRequired` dans les chemins d&#39;accès pris en charge configurés, l&#39;enregistrement OSGi du gestionnaire responsable sera mis à jour et contient une nouvelle entrée supplémentaire avec la propriété `sling.auth.requirements`. Si une exigence d&#39;authentification donnée spécifie la propriété facultative `granite:loginPath`, la valeur est en outre enregistrée auprès de l&#39;Authentificateur avec un préfixe &quot;-&quot; afin d&#39;être exclue de l&#39;exigence d&#39;authentification.
+Si vous Ajoutez le type de mixin `granite:AuthenticationRequired` dans les chemins d&#39;accès pris en charge configurés, l&#39;enregistrement OSGi du gestionnaire responsable sera mis à jour, contenant une nouvelle entrée supplémentaire avec la propriété `sling.auth.requirements`. Si une exigence d&#39;authentification donnée spécifie la propriété facultative `granite:loginPath`, la valeur est en outre enregistrée auprès de l&#39;Authentificateur avec un préfixe &quot;-&quot; afin d&#39;être exclue de l&#39;exigence d&#39;authentification.
 
 #### Évaluation et héritage de l&#39;exigence d&#39;authentification {#evaluation-and-inheritance-of-the-authentication-requirement}
 
