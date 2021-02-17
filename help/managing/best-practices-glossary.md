@@ -27,7 +27,7 @@ Ce glossaire présente les listes (alpabetiquement) de tous les documents livrab
 
 L’acceptation des parties prenantes professionnelles confirme que les parties prenantes principales sont alignées sur la solution et ont approuvé la manière dont les exigences de l’entreprise satisfont l’étude de cas.
 
-### Tests d’acceptation  {#acceptance-tests}
+### Tests d’acceptation {#acceptance-tests}
 
 Les tests d’acceptation sont réalisés lorsqu’une application est prête pour la production. Les tests sont effectués par un groupe représentant les différents types d’utilisateurs finaux, en utilisant des scénarios de la vraie vie.
 
