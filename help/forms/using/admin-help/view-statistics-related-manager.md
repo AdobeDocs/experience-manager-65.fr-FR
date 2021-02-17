@@ -22,7 +22,7 @@ ht-degree: 80%
 
 L’onglet Work Manager affiche les statistiques liées aux éléments de Work Manager. Ces tâches se trouvent dans des états différents selon leur position dans le processus (voir [Etat (pour les catégories Par défaut, Workflow ou Evénements uniquement)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only)). Vous pouvez filtrer les informations de façon à n’afficher qu’un sous-ensemble des éléments en utilisant les différentes options disponibles (par exemple, Etat ou Catégorie). Vous pouvez trier les travaux ou tâches produits (dans l’ordre croissant ou décroissant) en cliquant sur l’un des en-têtes de colonne suivants. Vous pouvez également gérer les tâches en utilisant les outils d’opération qui s’affichent au-dessus de la liste des tâches.
 
-## Filtrage des tâches  {#filter-the-work-items}
+## Filtrage des tâches {#filter-the-work-items}
 
 1. Cliquez sur l’onglet Work Manager.
 1. Choisissez des critères pour un ou plusieurs des filtres suivants, tels que décrits ci-dessous, puis cliquez sur Atteindre.
