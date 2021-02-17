@@ -68,7 +68,7 @@ Seul l’éditeur de l’IU tactile prend entièrement en charge les composants 
 
 Cette bibliothèque ajoute à l’éditeur des fonctionnalités spécifiques aux fragments de contenu. Par exemple, il est possible d’ajouter et de configurer des fragments de contenu sur la page, ainsi que de rechercher des éléments de contenu dans le navigateur de ressources et du contenu associé dans le panneau latéral.
 
-### Contenu intermédiaire  {#in-between-content}
+### Contenu intermédiaire {#in-between-content}
 
 Le composant **Fragment de contenu** vous permet de déposer des composants supplémentaires entre les différents paragraphes de l’[élément](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) affiché. À la base, l’élément affiché est composé de différents paragraphes (chaque paragraphe est marqué par un retour chariot). Entre chacun de ces paragraphes, vous pouvez insérer du contenu en utilisant d’autres composants.
 
