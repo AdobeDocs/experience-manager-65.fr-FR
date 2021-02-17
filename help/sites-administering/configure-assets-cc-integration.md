@@ -47,7 +47,7 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 >
 >Adobe Marketing Cloud a été rebaptisé Adobe Experience Cloud. Les procédures ci-dessous mentionnent toujours Marketing Cloud afin de refléter l’interface actuelle. Ces mentions seront modifiées ultérieurement.
 
-## Création d’une application  {#create-an-application}
+## Création d’une application {#create-an-application}
 
 1. Accédez à l&#39;interface de passerelle Adobe Developer en vous connectant à [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/).
 
