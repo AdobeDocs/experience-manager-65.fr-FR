@@ -75,7 +75,7 @@ Le tableau suivant répertorie les noms des événements qui se produisent pour 
 
 L’objet ContextHub fournit l’accès à tous les magasins.
 
-### Fonctions (ContextHub)   {#functions-contexthub}
+### Fonctions (ContextHub)  {#functions-contexthub}
 
 #### getAllStores() {#getallstores}
 
@@ -264,7 +264,7 @@ Initialise le magasin.
 
 * Définit les données du magasin sur un objet vide.
 * Définit les références du magasin sur un objet vide.
-* L’événementChannel est data:*name*, où *name* est le nom du magasin.
+* eventChannel est data:*name*, où *name* est le nom de la boutique.
 
 * Le paramètre StoreDataKey est /store/*name* où *name* correspond au nom du magasin.
 
