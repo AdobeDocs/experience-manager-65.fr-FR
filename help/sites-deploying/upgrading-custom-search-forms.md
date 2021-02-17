@@ -45,7 +45,7 @@ Vous pouvez modifier la propriété en procédant comme suit :
 1. Cliquez sur le nœud. Dans le volet droit des propriétés, cliquez sur la propriété **sling:resourceType**, puis modifiez-la.
 1. Enfin, enregistrez les modifications en appuyant sur le bouton **Tout enregistrer**.
 
-## Liste de formulaires de recherche personnalisée  {#list-of-custom-search-forms}
+## Liste de formulaires de recherche personnalisée {#list-of-custom-search-forms}
 
 Vous trouverez ci-dessous une liste de tous les formulaires de recherche personnalisée et des modifications dont ils ont besoin après la mise à niveau. Ils font référence aux noms figurant dans `/conf/global/settings/cq/search/facets/sites/items`.
 
@@ -259,7 +259,7 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
 >
 >Remarque : Contrairement à la version 6.1, le prédicat de plage ne génère pas le rendu d’une balise dans la barre de recherche.
 
-### Prédicat de propriété d’options  {#options-property-predicate}
+### Prédicat de propriété d’options {#options-property-predicate}
 
 <table>
  <tbody>
