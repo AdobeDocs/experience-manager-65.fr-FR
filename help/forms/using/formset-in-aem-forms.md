@@ -32,7 +32,7 @@ Qui plus est, vous pouvez paramétrer les champs communs de différents formulai
 
 Les jeux de formulaires sont également pris en charge dans l’application AEM Forms, ce qui permet à vos collaborateurs sur le terrain de prendre un jeu de formulaires hors ligne, de rendre visite aux clients, d’entrer les données et d’effectuer une synchronisation ultérieurement avec le serveur AEM Forms pour envoyer des données de formulaires aux processus d’entreprise.
 
-## Création et gestion de jeux de formulaires  {#creating-and-managing-form-set}
+## Création et gestion de jeux de formulaires {#creating-and-managing-form-set}
 
 Vous pouvez associer plusieurs XDP ou modèles de formulaire, créés à l’aide de Designer, à un jeu de formulaires. Les jeux de formulaires peuvent ensuite être utilisés pour effectuer un rendu sélectif des fichiers XDP en fonction des valeurs saisies par les utilisateurs dans les formulaires initiaux et leurs profils.
 
