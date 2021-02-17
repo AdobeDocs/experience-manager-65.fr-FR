@@ -17,7 +17,7 @@ ht-degree: 89%
 ---
 
 
-# Optimisation des formulaires HTML5  {#optimizing-html-forms}
+# Optimisation des formulaires HTML5 {#optimizing-html-forms}
 
 Les formulaires HTML5 génèrent des formulaires au format HTML5. Le résultat peut être volumineux en fonction de facteurs comme la taille du formulaire et les images qu’il contient. Pour optimiser le transfert de données, l’approche recommandée consiste à compresser la réponse HTML à l’aide du serveur Web à partir duquel la requête est traitée. Cette approche permet de réduire la taille de la réponse, le trafic réseau et le temps nécessaire pour transmettre les données entre le serveur et le client.
 
