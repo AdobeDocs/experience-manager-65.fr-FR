@@ -17,7 +17,7 @@ ht-degree: 80%
 ---
 
 
-# Personnalisation des services de données Drafts &amp; Submission  {#customizing-draft-and-submission-data-services}
+# Personnalisation des services de données Drafts &amp; Submission {#customizing-draft-and-submission-data-services}
 
 ## Présentation {#overview}
 
