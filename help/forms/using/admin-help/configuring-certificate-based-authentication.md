@@ -24,7 +24,7 @@ En général, User Management effectue l’authentification à l’aide d’un n
 
 Pour utiliser l’authentification par certificat, importez dans Trust Store un certificat d’une autorité de certification en qui vous avez confiance, puis créez un mappage de certificat.
 
-## Importation du certificat d’une autorité de certification  {#import-the-ca-certificate}
+## Importation du certificat d’une autorité de certification {#import-the-ca-certificate}
 
 Lors de l’importation du certificat, sélectionnez les options Approbation d’authentification de certificat et Approbation d’identité, et d’autres options selon les besoins. Pour plus d’informations sur l’importation de certificats, voir [Gestion de certificats](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
