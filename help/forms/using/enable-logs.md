@@ -50,7 +50,7 @@ Vous pouvez utiliser les méthodes suivantes pour activer la journalisation côt
 * A l’aide du paramètre de requête nommé `log`
 * A l’aide de CQ Configuration Manager
 
-### Activation de la journalisation à l’aide du paramètre de requête  {#enabling-logging-using-request-parameter}
+### Activation de la journalisation à l’aide du paramètre de requête {#enabling-logging-using-request-parameter}
 
 Grâce à cette méthode, vous pouvez générer les journaux d’une requête particulière. Le nom du paramètre de requête est `log. L’URL du journal est la suivante :
 
