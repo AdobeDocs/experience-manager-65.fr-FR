@@ -58,7 +58,7 @@ AEM fournit une interface utilisateur intuitive pour créer un modèle de proces
 >
 >Vous devez être membre du groupe d’éditeurs de processus pour créer ou modifier un modèle de processus.
 
-### Création d’un modèle pour un processus d’approbation et de révision  {#create-a-model-for-an-approval-and-review-workflow}
+### Création d’un modèle pour un processus d’approbation et de révision {#create-a-model-for-an-approval-and-review-workflow}
 
 Le processus d’approbation et de révision est destiné aux tâches qui nécessitent une intervention humaine pour une prise de décisions. L’exemple suivant crée un modèle de processus pour une demande de prêt immobilier à remplir par un conseiller bancaire. Une fois remplie, la demande est envoyée pour approbation. Par la suite, la demande approuvée est envoyée au demandeur pour signature électronique à l&#39;aide de l&#39;Adobe Sign.
 
