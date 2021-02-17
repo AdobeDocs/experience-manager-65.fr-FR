@@ -26,7 +26,7 @@ Deux types de groupes différents sont disponibles. Vous pouvez créer manuellem
 
 Les utilisateurs appartenant à de nombreux groupes (500 ou plus par exemple) ou dont les groupes sont imbriqués profondément (30 niveaux) peuvent connaître un ralentissement du temps de réponse. Si vous rencontrez ce problème, vous pouvez configurer AEM forms pour la prélecture des informations provenant de certains domaines (voir [Configuration d’AEM forms pour la prélecture des informations de domaine](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)).
 
-## Création manuelle d’un groupe  {#create-a-group-manually}
+## Création manuelle d’un groupe {#create-a-group-manually}
 
 Lors de la création manuelle d’un groupe, vous pouvez ajouter des utilisateurs et d’autres groupes à ce dernier et lui affecter des rôles. Vous pouvez également associer le groupe à un groupe parent.
 
