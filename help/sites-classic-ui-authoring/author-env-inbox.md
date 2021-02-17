@@ -104,7 +104,7 @@ Si vous souhaitez n’être averti que pour les actions sur la page définie par
 
 1. Cliquez sur **OK** pour enregistrer la configuration.
 
-## Traitement des notifications  {#processing-your-notifications}
+## Traitement des notifications {#processing-your-notifications}
 
 Si vous avez choisi cette option, les notifications seront reçues et stockées dans votre boîte de réception AEM. Vous pouvez [afficher vos notifications](#viewing-your-notifications), puis sélectionner celles qui s’appliquent :
 
