@@ -56,7 +56,7 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 
 
 
-## Publication d’une page  {#publishing-a-page}
+## Publication d’une page {#publishing-a-page}
 
 Pour activer une page, vous pouvez procéder de deux manières :
 
