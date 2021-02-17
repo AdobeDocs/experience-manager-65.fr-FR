@@ -32,7 +32,7 @@ Ce document répond aux questions suivantes :
 
 L’architecture du portail AEM comporte des définitions des portails et des portlets.
 
-### Qu’est-ce qu’un portail ?  {#what-is-a-portal}
+### Qu’est-ce qu’un portail ? {#what-is-a-portal}
 
 Un portail est une application web qui permet la personnalisation, la connexion unique et l’intégration du contenu provenant de sources différentes et héberge la couche de présentation des systèmes d’information.
 
@@ -614,7 +614,7 @@ Les services ci-dessous possèdent une mise en œuvre par défaut dans le portle
 
 En mettant en œuvre ce service, veillez à définir la propriété **service.ranking** du service sur une valeur positive. L’implémentation par défaut utilise le classement** 0** et le portlet utilise le service avec le rang le plus élevé.
 
-| **Nom** | **Description** | **Comportement par défaut** |
+| **Name** (Nom) | **Description** | **Comportement par défaut** |
 |---|---|---|
 | Authentificateur | Fournit les informations d’authentification à AEM. | Utilise un utilisateur technique configurable pour la création et la publication. Ou le protocole SSO peut être utilisé. |
 | HTMLRewriter | Réécrit les liens, les images, etc. | Réécrit les liens AEM en liens de portail ; peut être étendu par un UrlMapper et un TextMapper |
