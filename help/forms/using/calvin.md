@@ -93,7 +93,7 @@ Avant d’utiliser cet article pour créer vos cas de test, vous devez savoir ce
 * [API JavaScript Hobbes](https://docs.adobe.com/docs/fr/aem/6-2/develop/ref/test-api/index.html)
 * [API JavaScript Calvin](https://helpx.adobe.com/fr/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test  {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
+## Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
 L’exemple suivant vous guide dans la création d’une suite de tests pour tester plusieurs formulaires adaptatifs. Vous devez créer un cas de test distinct pour chaque formulaire que vous souhaitez tester. En effectuant des étapes similaires à celles ci-dessous et en modifiant le code JavaScript à l’étape 11, vous pouvez créer votre propre suite de tests pour tester vos formulaires adaptatifs.
 
@@ -328,7 +328,7 @@ Les étapes de test de vos formulaires adaptatifs AEM sont similaires aux étape
    <td><p>Un cas de test représente une tâche effectuée par un utilisateur à l’aide de votre interface utilisateur. Ajoutez des cas de test à votre suite de tests pour tester les activités effectuées par les utilisateurs.</p> </td>
   </tr>
   <tr>
-   <td><p>Actions </p> </td>
+   <td><p>Actions</p> </td>
    <td><p>Les actions sont des méthodes qui effectuent un geste dans l’interface utilisateur, par exemple en cliquant sur un bouton ou en remplissant une zone de saisie avec une valeur.</p> <p>Les méthodes des classes hobs.actions.Asserts, hobs.actions.Core et hobs.utils.af sont des actions que vous pouvez utiliser dans vos tests. Toutes les actions sont exécutées de manière synchronisée.</p> </td>
   </tr>
   <tr>
