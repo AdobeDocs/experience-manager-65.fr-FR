@@ -26,7 +26,7 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 * nombre d’itinéraires d’affichage
 * dégradé de couleur d’arrière-plan
 
-## Étapes  {#steps}
+## Étapes {#steps}
 
 1. Ouvrez le projet.
 
