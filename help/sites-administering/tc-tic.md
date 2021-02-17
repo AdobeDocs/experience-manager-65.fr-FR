@@ -64,7 +64,7 @@ Vous pouvez créer plusieurs configurations de cloud pour le même connecteur, s
 
 Une fois que vous avez configuré une connexion, vous pouvez créer la configuration de la structure d’intégration de traduction qui l’utilise.
 
-## Création d’une configuration de l’intégration de traduction  {#creating-a-translation-integration-configuration}
+## Création d’une configuration de l’intégration de traduction {#creating-a-translation-integration-configuration}
 
 Créez une configuration de structure d’intégration de traduction pour spécifier comment traduire le contenu. La configuration contient les informations suivantes :
 
@@ -78,7 +78,7 @@ Si différentes parties de votre site web impliquent différentes exigences en m
 
 Après avoir configuré une structure d’intégration de traduction, vous pouvez [l’associer aux pages](/help/sites-administering/tc-prep.md) qui l’utilisent.
 
-**Remarque :** pour une présentation des fonctions de traduction de contenu dans AEM, voir  [Traduction de contenu pour les sites](/help/sites-administering/translation.md) multilingues.
+**Remarque :** Pour une présentation des fonctions de traduction de contenu dans AEM, voir  [Traduction de contenu pour les sites](/help/sites-administering/translation.md) multilingues.
 
 Une configuration unique de la structure contrôle la façon de traduire le contenu d’une page, le contenu d’une communauté et les ressources.
 ![chlimage_1-386](assets/translation-config-65.jpg)
