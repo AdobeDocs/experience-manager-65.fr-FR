@@ -1,6 +1,6 @@
 ---
-title: Aperçu de l’éditeur d’application sur une seule page
-seo-title: Aperçu de l’éditeur d’application sur une seule page
+title: Présentation de l’éditeur de SPA
+seo-title: Présentation de l’éditeur de SPA
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 seo-description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
@@ -19,7 +19,7 @@ ht-degree: 92%
 ---
 
 
-# Aperçu de l’éditeur d’application sur une seule page{#spa-editor-overview}
+# Présentation de l’éditeur de SPA{#spa-editor-overview}
 
 Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
