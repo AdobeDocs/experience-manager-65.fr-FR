@@ -112,7 +112,7 @@ La communication interactive est l’approche recommandée par défaut pour cré
   <tr>
    <td>Graphiques</td>
    <td>Graphiques pris en charge dans les canaux web et d’impression</td>
-   <td>pas de prise en charge</td>
+   <td>Pas de prise en charge</td>
   </tr>
   <tr>
    <td>Thèmes</td>
@@ -121,12 +121,12 @@ La communication interactive est l’approche recommandée par défaut pour cré
   </tr>
   <tr>
    <td>Contrôle et création de version</td>
-   <td>pas de prise en charge</td>
+   <td>Pas de prise en charge</td>
    <td>Pris en charge</td>
   </tr>
   <tr>
    <td>Brouillons et gestion d’une instance</td>
-   <td>pas de prise en charge</td>
+   <td>Pas de prise en charge</td>
    <td>Pris en charge</td>
   </tr>
   <tr>
@@ -136,12 +136,12 @@ La communication interactive est l’approche recommandée par défaut pour cré
   </tr>
   <tr>
    <td>Signature de l’agent</td>
-   <td>pas de prise en charge</td>
+   <td>Pas de prise en charge</td>
    <td>Pris en charge</td>
   </tr>
   <tr>
    <td>Fonctions distantes</td>
-   <td>pas de prise en charge</td>
+   <td>Pas de prise en charge</td>
    <td>Pris en charge</td>
   </tr>
  </tbody>
