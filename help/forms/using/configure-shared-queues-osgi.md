@@ -27,7 +27,7 @@ L&#39;utilisateur connecté doit être membre du groupe `workflow-users`. L’ut
 
 ## Partager un ou tous les éléments de votre boîte de réception avec un autre utilisateur
 
-aem Boîte de réception vous permet de partager un ou tous les éléments de votre boîte de réception avec un autre utilisateur.
+AEM Boîte de réception vous permet de partager un ou tous les éléments de votre boîte de réception avec un autre utilisateur.
 
 ### Partage de tous les éléments de la boîte de réception
 
@@ -37,7 +37,7 @@ Effectuez les étapes suivantes pour partager tous les éléments d’une boîte
 1. Appuyez sur l&#39;icône ![Sélecteur de Vue](assets/viewlist.svg) ou ![Sélecteur de Vue](assets/calendar.svg) en regard du bouton **[!UICONTROL Créer]** et appuyez sur **[!UICONTROL Paramètres]**. La boîte de dialogue des paramètres s’affiche.
 1. Ouvrez l&#39;onglet **[!UICONTROL Partager]** dans la boîte de dialogue des paramètres.
 1. Entrez le nom d&#39;un utilisateur dans la zone de texte **[!UICONTROL Accorder l&#39;accès à vos éléments de boîte de réception]** et appuyez sur **[!UICONTROL Octroyer]**. Répétez l’étape pour ajouter d’autres utilisateurs. Tous les utilisateurs ayant accès à vos éléments apparaissent sous la section **Nom d’utilisateur**.
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Effectuez les étapes suivantes pour partager un élément de boîte de récepti
 1. Connectez-vous à l’instance AEM  Appuyez sur l&#39;icône ![Boîte de réception](assets/bell.svg) et appuyez sur **[!UICONTROL Vue All]**. Une liste de vos éléments de boîte de réception s’affiche.
 1. Sélectionnez un élément et appuyez sur **[!UICONTROL Partager]**. Une boîte de dialogue s’affiche.
 1. Saisissez le nom d’un utilisateur dans la zone de texte Ajouter les utilisateurs à partager cet élément et appuyez sur **[!UICONTROL Ajouter]**. Répétez l’étape pour ajouter d’autres utilisateurs. Tous les utilisateurs ayant accès à vos éléments apparaissent sous la section **[!UICONTROL Nom d’utilisateur]**.
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
 
 >[!NOTE]
