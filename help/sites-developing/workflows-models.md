@@ -29,7 +29,7 @@ Vous créez un [modèle de workflow](/help/sites-developing/workflows.md#model) 
 
 Lorsqu’un utilisateur lance un workflow, une instance est démarrée ; il s’agit du modèle d’exécution correspondant, créé lorsque vous [synchronisez](#sync-your-workflow-generate-a-runtime-model) vos modifications.
 
-## Création d’un workflow  {#creating-a-new-workflow}
+## Création d’un workflow {#creating-a-new-workflow}
 
 La première fois que vous créez un modèle de workflow, il se compose des éléments suivants :
 
@@ -252,7 +252,7 @@ Pour définir des **Phases** pour votre workflow, procédez comme suit :
    |---|---|
    | Étape 1 | Créer |
    | Étape 2 | Créer |
-   | Étape 3 | Réviser |
+   | Étape 3 | Révision |
    | Étape 4 | Approuver |
    | Étape 5 | Approuver |
    | Étape 6 | Terminer |
