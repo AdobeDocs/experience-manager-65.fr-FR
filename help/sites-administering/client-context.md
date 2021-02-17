@@ -143,7 +143,7 @@ Vous pouvez changer le profil en effectuant l’une des opérations suivantes :
 
 Lorsque vous avez terminé, vous pouvez [réinitialiser le profil](#resetting-the-profile-to-the-current-user).
 
-#### Chargement d’un nouveau profil de visiteur avec l’icône de chargement de profil  {#loading-a-new-visitor-profile-with-the-load-profile-icon}
+#### Chargement d’un nouveau profil de visiteur avec l’icône de chargement de profil {#loading-a-new-visitor-profile-with-the-load-profile-icon}
 
 1. Cliquez sur l’icône de chargement de profil :
 
