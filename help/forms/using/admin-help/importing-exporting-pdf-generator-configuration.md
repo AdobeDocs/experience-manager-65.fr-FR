@@ -26,7 +26,7 @@ Le fichier de configuration contient les informations de conversion de PDF Gener
 >
 >vous ne pouvez pas modifier le paramètre de délai d’expiration de PDF Generator en important un fichier native2pdfconfig.xml personnalisé. Le paramètre de délai d’expiration dans ce fichier est donné à titre purement indicatif et affiche le paramètre actuel dans PDF Generator. Pour le modifier, consultez la section Définition des paramètres de performance de PDF Generator dans [Installation et déploiement d’AEM forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
-## Exportation du fichier de configuration  {#export-your-current-configuration-file}
+## Exportation du fichier de configuration {#export-your-current-configuration-file}
 
 1. Dans Administration Console, sélectionnez Services > PDF Generator > Fichiers de configuration > Exporter la configuration.
 1. Pour exporter les paramètres, sélectionnez l’option appropriée :
