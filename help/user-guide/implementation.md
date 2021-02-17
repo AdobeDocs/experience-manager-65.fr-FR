@@ -12,7 +12,7 @@ ht-degree: 40%
 ---
 
 
-# aem 6.5 Guides de l’utilisateur de la mise en oeuvre {#aem-65-implementation-user-guides}
+# AEM 6.5 Guides de l’utilisateur de la mise en oeuvre {#aem-65-implementation-user-guides}
 
 ## Développement dans AEM {#developing-on-aem}
 
