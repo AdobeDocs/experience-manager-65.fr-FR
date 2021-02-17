@@ -22,7 +22,7 @@ ht-degree: 84%
 
 AEM propose plusieurs étapes de processus qui peuvent être utilisées pour créer des modèles de workflow. Des étapes de processus personnalisées peuvent également être ajoutées pour les tâches qui ne sont pas couvertes par les étapes intégrées (voir [Création de modèles de workflow](/help/sites-developing/workflows-models.md)).
 
-## Caractéristiques du processus  {#process-characteristics}
+## Caractéristiques du processus {#process-characteristics}
 
 Les caractéristiques suivantes sont décrites pour chaque étape du processus.
 
