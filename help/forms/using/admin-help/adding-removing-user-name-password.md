@@ -22,7 +22,7 @@ ht-degree: 52%
 
 La page Trust Store Management vous permet d’ajouter et de supprimer des informations d’identification d’utilisateur et de mot de passe utilisées par le service Forms lorsqu’il reçoit une demande avec une sécurité de niveau SOAP.
 
-## Ajout d’informations d’identification d’utilisateur et de mot de passe  {#add-a-user-name-and-password-credential}
+## Ajout d’informations d’identification d’utilisateur et de mot de passe {#add-a-user-name-and-password-credential}
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres >Trust Store Management > Informations d’identification d’utilisateur et de mot de passe]**, puis sur **[!UICONTROL Ajouter]**.
 1. Dans la zone **[!UICONTROL Nom du Profil]**, saisissez le nom des informations d’identification.
