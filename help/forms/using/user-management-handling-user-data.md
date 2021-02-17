@@ -39,7 +39,7 @@ User Management stocke des données utilisateur dans une base de données telle 
 >
 >Les données stockées dans des stockages tiers ne sont pas prises en charge pour ce document. Contactez directement le fournisseur tiers pour gérer les données utilisateur dans ces stockages.
 
-### Base de données  {#database}
+### Base de données {#database}
 
 User Management stocke les données utilisateur dans les tables de base de données suivantes :
 
