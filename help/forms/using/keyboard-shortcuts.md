@@ -242,7 +242,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Annuler et rétablir les actions  {#undo-and-redo-actions}
+### Annuler et rétablir les actions {#undo-and-redo-actions}
 
 <table> 
  <tbody>
