@@ -66,7 +66,7 @@ CRX permet de configurer les droits d’accès pour des comptes utilisateur et d
 >
 >L’installation standard du référentiel CRX est configurée de manière à utiliser des listes de contrôle d’accès dépendant des ressources. Il s’agit d’une mise en œuvre possible du contrôle d’accès JSR-283 et l’une des mises en œuvre présentes avec Jackrabbit.
 
-### Sujets et entités  {#subjects-and-principals}
+### Sujets et entités {#subjects-and-principals}
 
 CRX utilise deux concepts clés lors de l’évaluation des droits d’accès :
 
