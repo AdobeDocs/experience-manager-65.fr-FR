@@ -12,7 +12,7 @@ ht-degree: 52%
 ---
 
 
-# aem 6.5 Fonctionnalités Guides de l&#39;utilisateur {#aem-65-capabilities-user-guides}
+# AEM 6.5 Fonctionnalités Guides de l&#39;utilisateur {#aem-65-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
