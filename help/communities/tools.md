@@ -33,7 +33,7 @@ Pour accéder à la console des outils des communautés, connectez-vous à votre
 
 * [Fonctions](functions.md)  communautaires - Console pour la création et la gestion de fonctions communautaires.
 
-* [Configuration](srp-config.md)  des Enregistrements - Console pour la configuration et la sélection du SRP [ ](working-with-srp.md)par défaut.
+* [Configuration](srp-config.md)  de l&#39;Enregistrement - Console pour la configuration et la sélection du SRP [ ](working-with-srp.md)par défaut.
 
 * [Guide](components-guide.md)  des composants - Ouvre un site interactif qui permet d&#39;expérimenter comment fonctionnent les composants SCF et comment ils peuvent être configurés ou personnalisés.
 
