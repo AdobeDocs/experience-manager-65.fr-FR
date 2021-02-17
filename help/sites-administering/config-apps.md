@@ -22,7 +22,7 @@ ht-degree: 60%
 
 Adobe Experience Manager Apps offre la possibilité de mettre à jour le contenu de votre application par les airs (OTA, Over The Air). Le contenu mis à jour est stocké sur l’instance de publication. Pour permettre à l’application sur votre appareil de se connecter à l’instance de publication et de rechercher les mises à jour, l’instance de publication doit être configurée pour autoriser un en-tête de référent vide.
 
-## Configuration d’un en-tête de référent vide  {#configuring-empty-referrer-header}
+## Configuration d’un en-tête de référent vide {#configuring-empty-referrer-header}
 
 Pour configurer le service de filtrage de référent :
 
