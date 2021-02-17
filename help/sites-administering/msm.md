@@ -40,7 +40,7 @@ La présente section et les pages suivantes abordent les questions connexes :
 * [Conflits de déploiement dans MSM](/help/sites-administering/msm-rollout-conflicts.md)
 * [Meilleures pratiques MSM](/help/sites-administering/msm-best-practices.md)
 
-## Scénarios possibles  {#possible-scenarios}
+## Scénarios possibles {#possible-scenarios}
 
 Il existe de nombreux cas d’utilisation de MSM et des Live Copies, par exemple :
 
