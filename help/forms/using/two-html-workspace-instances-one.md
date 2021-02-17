@@ -17,7 +17,7 @@ ht-degree: 70%
 ---
 
 
-# Hébergement de deux instances d’espace de travail AEM Forms sur un serveur  {#hosting-two-aem-forms-workspace-instances-on-one-server}
+# Hébergement de deux instances d’espace de travail AEM Forms sur un serveur {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
 L’installation et les paramètres par défaut d’AEM Forms permettent la mise à disposition d’un seul espace de travail AEM Forms sur le serveur. Cela dit, vous pouvez être amené à héberger deux instances différentes d’AEM Forms sur un serveur AEM Forms unique. Les deux instances sont accessibles via différentes URL.
 
