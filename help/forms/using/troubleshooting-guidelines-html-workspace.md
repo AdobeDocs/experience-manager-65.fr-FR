@@ -18,7 +18,7 @@ ht-degree: 80%
 ---
 
 
-# Dépannage des conseils de l’espace de travail AEM Forms.  {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Dépannage des conseils de l’espace de travail AEM Forms. {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 Cet article explique comment déboguer l’espace de travail AEM Forms en activant la journalisation et en utilisant le débogueur dans un navigateur. Il explique également certains problèmes communs que vous pouvez rencontrer lors de l’utilisation de l’espace de travail AEM Forms et leurs solutions.
 
