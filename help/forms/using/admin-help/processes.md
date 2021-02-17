@@ -34,7 +34,7 @@ La page Liste de processus répertorie les processus initiés par un utilisateur
 
 1. Cliquez sur le nom d’un processus pour afficher les instances de ce processus dans la page Instance du processus.
 
-## Utilisation d’instances de processus  {#working-with-process-instances}
+## Utilisation d’instances de processus {#working-with-process-instances}
 
 Si vous accédez à la page Instance du processus à partir de la page Liste de processus, toutes les instances de processus que vous avez sélectionnées sont répertoriées. Si vous accédez à la page Instance du processus après avoir exécuté une recherche, seules les instances de processus trouvées sont répertoriées.
 
