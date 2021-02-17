@@ -22,7 +22,7 @@ ht-degree: 78%
 
 Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires que le fournisseur d’authentification interroge pour obtenir les informations utilisateur. Il est possible de configurer plusieurs annuaires par domaine.
 
-## Ajout d’annuaires ou d’interfaces SPI personnalisées  {#adding-directories-or-custom-spis}
+## Ajout d’annuaires ou d’interfaces SPI personnalisées {#adding-directories-or-custom-spis}
 
 Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires que le fournisseur d’authentification interroge pour obtenir les informations utilisateur. Vous pouvez ajouter un annuaire à un domaine d’entreprise existant ou à un nouveau domaine d’entreprise que vous ajoutez. Il est possible de configurer plusieurs annuaires par domaine. Vous pouvez également configurer un domaine afin qu’il utilise une interface SPI personnalisée pour la synchronisation.
 
