@@ -18,7 +18,7 @@ ht-degree: 88%
 ---
 
 
-# Description des composants réutilisables  {#description-of-reusable-components}
+# Description des composants réutilisables {#description-of-reusable-components}
 
 L’espace de travail AEM Forms est composé de composants [réutilisables](/help/forms/using/integrating-html-ws-components-web.md) organisés dans une structure de dossiers [spécifique](/help/forms/using/folder-structure.md) dans CRX™. Chaque composant possède des fichiers de modèle, de vue et de contrôleur à l’emplacement spécifié dans la structure de dossiers, des dépendances JavaScript™ à d’autres fichiers de composant, des événements écoutés par le composant et des objets JavaScript qui peuvent déclencher ces événements dans l’espace de travail AEM Forms. La liste complète des composants réutilisables avec leurs noms de fichier et leurs dépendances figure ici.
 
