@@ -25,7 +25,7 @@ Lorsqu’un utilisateur professionnel ou un agent enregistre une correspondance 
 >
 >Dans AEM 6.5 Forms, la gestion des correspondances n’est pas disponible hors champ. Si vous effectuez une mise à niveau à partir d’une version précédente d’AEM Forms, installez le package de compatibilité et migrez vos actifs Correspondence Management pour continuer à les utiliser dans AEM 6.5 Forms. Pour plus d’informations, reportez-vous à la section [Package de compatibilité](/help/forms/using/compatibility-package.md).
 
-## Données utilisateur et stockage de données  {#data}
+## Données utilisateur et stockage de données {#data}
 
 Correspondence Management stocke les données de brouillon et les lettres envoyées dans le référentiel AEM uniquement si l’instance de publication est configurée pour gérer les instances de lettre. Pour en savoir plus sur les propriétés de configuration, reportez-vous à la section [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
