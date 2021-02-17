@@ -18,7 +18,7 @@ ht-degree: 96%
 ---
 
 
-# Utilisation des adaptateurs Sling {#using-sling-adapters}
+# Utilisation des adaptateurs Sling{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) propose un [modèle Adaptateur](https://sling.apache.org/site/adapters.html) permettant de convertir facilement les objets qui mettent en œuvre l’interface [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Cette interface fournit une méthode [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) générique qui convertit les objets dans le type de classe qui est transmis comme argument.
 
@@ -80,7 +80,7 @@ Cependant, il n’existe pas de règle absolue : l’objet peut soit être une 
 
 Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `adaptTo-targets` possibles. Cependant, pour des sous-classes spécifiques, telles que la ressource basée sur JCR, cela s’avère souvent impossible. Dans ce cas, les implémentations de `AdapterFactory` font généralement partie des classes privées d’un lot et ne sont donc pas exposées dans une API cliente ni répertoriées dans les JavaDocs. En théorie, il serait possible d’accéder à toutes les implémentations `AdapterFactory` à partir de l’exécutable de service [OSGi](/help/sites-deploying/configuring-osgi.md) et d’observer leurs configurations « adaptables » (sources et cibles), mais pas de les mapper entre elles. En définitive, cela dépend de la logique interne, qui doit être documentée, d’où cette référence.
 
-## Référence   {#reference}
+## Référence {#reference}
 
 ### Sling {#sling}
 
@@ -201,11 +201,11 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td>État de réplication de la ressource donnée ou de son sous-nœud jcr:content (vérifié en premier).</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
    <td>Renvoie une ressource de connecteur adaptée pour certains types, s’il s’agit d’une ressource basée sur JCR.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">Config</a></td>
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">Config</a></td>
    <td>S’il s’agit d’une ressource de nœud <code>cq:ContentSyncConfig</code>.</td>
   </tr>
   <tr>
@@ -236,7 +236,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
    <td>Basé sur la session JCR, s’il s’agit d’un résolveur de ressources basé sur JCR.</td>
   </tr>
   <tr>
@@ -245,7 +245,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
-   <td>UserManager permet d’accéder aux objets Autorizable et de les gérer, c’est-à-dire les utilisateurs et les groupes. UserManager est lié à une session particulière.
+   <td>UserManager permet d’accéder aux objets Authorizable et de les gérer, c’est-à-dire les utilisateurs et les groupes. UserManager est lié à une session particulière.
    </td>
   </tr>
   <tr>
@@ -257,11 +257,11 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td>Utilisateur actuel.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
    <td>Pour externaliser des URL absolues, même sans l’objet de requête.<br /> </td>
   </tr>
  </tbody>
@@ -346,7 +346,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 |---|---|
 | [ReplicationStatus](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
 
-#### Gestion des ressources numériques {#dam}
+#### Gestion des ressources numériques (DAM) {#dam}
 
 **Asset** s’adapte à :
 
