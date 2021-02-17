@@ -22,7 +22,7 @@ ht-degree: 76%
 
 La sécurité des applications débute lors de la phase de développement. Adobe recommande d’appliquer les méthodes de sécurité suivantes.
 
-## Utilisation de la session de requête  {#use-request-session}
+## Utilisation de la session de requête {#use-request-session}
 
 Conformément au principe des privilèges allégés, l&#39;Adobe recommande que chaque accès au référentiel soit effectué en utilisant la session liée à la demande de l&#39;utilisateur et au contrôle d&#39;accès approprié.
 
