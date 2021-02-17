@@ -112,7 +112,7 @@ Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du co
 
 #### Améliorations de l’accessibilité (6.5.6.0) {#accessibility-assets-6560}
 
-* **Amélioration de la mise au point de l’interface utilisateur lors de la navigation** au clavier, par exemple en mettant l’accent sur :
+* **Amélioration de la mise au point de l’interface utilisateur lors de la navigation** clavier, par exemple en mettant l’accent sur :
 
    * `x` dans la boîte de dialogue  [!UICONTROL Prévisualisation ] de version d’une ressource dans le  [!UICONTROL journal].
 
