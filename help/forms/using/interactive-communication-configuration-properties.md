@@ -34,7 +34,7 @@ Les propriétés de configuration incluent :
 * [Configuration de canal web du formulaire adaptatif et de la communication interactive](#adaptive-form-and-interactive-communication-web-channel-configuration)
 * [Configuration des thèmes de canal web du formulaire adaptatif et de la communication interactive](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
 
-## Configuration de fragments de document  {#document-fragments-configuration}
+## Configuration de fragments de document {#document-fragments-configuration}
 
 Appuyez sur **Configuration des fragments de Document** dans la page **Configuration de la console Web de Adobe Experience Manager** pour vue les propriétés de configuration des fragments de document.
 
