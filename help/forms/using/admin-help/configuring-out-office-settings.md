@@ -24,7 +24,7 @@ La fonction d’absence du bureau permet aux utilisateurs ou aux administrateurs
 
 Lors de la création d’un processus, l’utilisateur de Workbench peut spécifier si une tâche peut être redirigée en fonction de paramètres d’absence du bureau.
 
-## Affichage des informations d’absence du bureau d’un utilisateur  {#view-a-user-s-out-of-office-information}
+## Affichage des informations d’absence du bureau d’un utilisateur {#view-a-user-s-out-of-office-information}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Absence du bureau.
 1. Dans la zone adjacente à la page Absence du bureau, vous pouvez effectuer l’une des actions suivantes :
