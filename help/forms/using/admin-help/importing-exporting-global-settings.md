@@ -35,7 +35,7 @@ Lorsque vous avez exporté le fichier de paramètres globaux, vous pouvez modifi
 >
 >si vous modifiez les propriétés relatives à un événement dans le fichier des options globales, vous devez redémarrer le serveur.
 
-## Importation d’une définition de modèle de recherche  {#import-a-search-template-definition}
+## Importation d’une définition de modèle de recherche {#import-a-search-template-definition}
 
 1. Dans Administration Console, cliquez sur Services > Workspace > Administration globale.
 1. Dans le champ Importer une définition de modèle de recherche, cliquez sur le bouton Choisir fichier, puis sélectionnez le modèle de recherche. Seules les définitions de modèles de recherche initialement exportées à partir d’une instance de Workspace peuvent être importées.
