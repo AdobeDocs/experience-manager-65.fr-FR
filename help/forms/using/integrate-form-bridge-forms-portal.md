@@ -26,7 +26,7 @@ Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de 
 
 Une application HTML existante peut tirer profit de l’API FormBridge pour interagir avec un formulaire et l’intégrer à la page HTML. Vous pouvez utiliser les étapes suivantes pour définir la valeur d’un champ à l’aide de l’API Form Bridge.
 
-## Intégration de formulaires HTML5 à une page Web  {#integrating-html-forms-to-a-web-page}
+## Intégration de formulaires HTML5 à une page Web {#integrating-html-forms-to-a-web-page}
 
 1. **Choix ou création d’un profil**
 
