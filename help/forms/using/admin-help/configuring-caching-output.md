@@ -34,7 +34,7 @@ Le service Output stocke le cache à deux emplacements :
 * **en mémoire :** les éléments sont stockés dans la mémoire pour un accès rapide. Le cache mémoire est limité en taille et supprimé au redémarrage du serveur.
 * **sur le disque :** les éléments sont stockés dans le système de fichiers du serveur. Le cache disque est doté d’une plus grande capacité que le cache mémoire et il est conservé au redémarrage du serveur. L’emplacement du cache disque dépend du serveur d’applications. Pour plus d’informations sur la modification de l’emplacement du cache disque, voir [Définition des emplacements de fichiers pour Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
 
-## Définition du mode de cache  {#specifying-the-cache-mode}
+## Définition du mode de cache {#specifying-the-cache-mode}
 
 Le service Output gère deux modes de mise en cache :
 
