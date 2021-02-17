@@ -28,7 +28,7 @@ Cette section contient des informations sur la sécurité des systèmes d’expl
 
 Utilisez les liens proposés dans cette section pour accéder à des informations de sécurité spécifiques au revendeur de votre système d’exploitation, de votre base de données et de votre serveur d’applications.
 
-### Informations sur la sécurité des systèmes d’exploitation  {#operating-system-security-information}
+### Informations sur la sécurité des systèmes d’exploitation {#operating-system-security-information}
 
 Lorsque vous sécurisez votre système d&#39;exploitation, réfléchissez soigneusement à la mise en oeuvre des mesures décrites par le fournisseur de votre système d&#39;exploitation, notamment :
 
