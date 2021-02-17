@@ -30,7 +30,7 @@ Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de dif
 
 Pour configurer AEM en vue du suivi des messages rejetés, vous devez faire en sorte que le logiciel sonde une boîte aux lettres existante dans laquelle les messages rejetés sont reçus (il s’agit généralement de l’adresse indiquée pour l’envoi de la newsletter). AEM sonde cette boîte aux lettres et importe tous les messages sous le chemin indiqué dans la configuration de sondage. Un flux de travail est ensuite déclenché pour rechercher les adresses électroniques reportées au sein des utilisateurs et met à jour la valeur de la propriété bounceCounter de l’utilisateur en conséquence. Une fois le nombre maximum de rebonds atteint, l’utilisateur est supprimé de la liste des newsletters.
 
-## Configuration de Feed Importer  {#configuring-the-feed-importer}
+## Configuration de Feed Importer {#configuring-the-feed-importer}
 
 Feed Importer vous permet d’importer, dans votre référentiel, du contenu provenant de sources externes et ce, de manière itérative. Lorsque Feed Importer est configuré de la sorte, AEM recherche des messages rejetés dans la boîte aux lettres de l’expéditeur.
 
