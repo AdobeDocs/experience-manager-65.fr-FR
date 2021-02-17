@@ -43,7 +43,7 @@ Chaque magasin ContextHub est une instance d’un type de magasin prédéfini :
 * Les développeurs peuvent [créer des types de magasin personnalisés](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Les développeurs peuvent [accéder aux données du magasin](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via Javascript.
 
-## Segmentation   {#segmentation}
+## Segmentation  {#segmentation}
 
 ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
 
