@@ -49,7 +49,7 @@ Pour une instance sécurisée, il est obligatoire d’activer la couche de trans
 
 Assurez-vous d’avoir installé les derniers [correctifs de sécurité fournis par Adobe](https://helpx.adobe.com/fr/experience-manager/kb/aem63-available-hotfixes.html).
 
-### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi  {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
 L&#39;Adobe recommande vivement, après l&#39;installation, de modifier le mot de passe des comptes [**AEM** `admin` privilégiés ](#changing-the-aem-admin-password) (sur toutes les instances).
 
