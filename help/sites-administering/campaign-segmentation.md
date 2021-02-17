@@ -19,7 +19,7 @@ ht-degree: 77%
 ---
 
 
-# Configuration de la segmentation  {#configuring-segmentation}
+# Configuration de la segmentation {#configuring-segmentation}
 
 >[!NOTE]
 >
