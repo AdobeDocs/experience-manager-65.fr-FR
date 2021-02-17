@@ -36,7 +36,7 @@ Le scénario implique les personnages suivants :
 * John Jacobs, la personne qui gère la demande et la fait suivre au service approprié
 * Gloria Rios, la fonctionnaire du gouvernement qui fournit les informations de la demande
 
-## Sarah lance la demande d’informations dans le cadre de la loi sur l’accès à l’information  {#sarah-initiates-request-for-information-under-foia}
+## Sarah lance la demande d’informations dans le cadre de la loi sur l’accès à l’information {#sarah-initiates-request-for-information-under-foia}
 
 En vertu de la loi sur la liberté d&#39;information, Sarah demande une copie des dossiers de l&#39;Administration pour les enfants et les familles pour les années 2013 à 2016. Sarah envoie cette demande au bureau de la stratégie des informations du Ministère de la Justice et indique également qu’elle est prête à payer jusqu’à 100 dollars américains pour les frais d’impression et d’envoi.
 
