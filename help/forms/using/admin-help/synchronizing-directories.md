@@ -40,7 +40,7 @@ Vous pouvez également indiquer s’il convient d’envoyer des informations rel
 >
 >Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Pour savoir comment configurer Content Services (obsolète), consultez [Administration de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
-## Activation de la synchronisation d’annuaires Delta  {#enable-delta-directory-synchronization}
+## Activation de la synchronisation d’annuaires Delta {#enable-delta-directory-synchronization}
 
 La synchronisation différentielle des annuaires améliore l’efficacité de la synchronisation des annuaires. Lorsque la synchronisation différentielle des annuaires est activée, User Management synchronise uniquement les utilisateurs et les groupes qui ont été ajoutés et mis à jour depuis la dernière synchronisation.
 
