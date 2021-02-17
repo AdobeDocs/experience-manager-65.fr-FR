@@ -100,7 +100,7 @@ Au début, le fait que je ne stocke pas les « commentaires » avec l’articl
 
 Grâce au modèle de contenu ci-dessus, je peux facilement autoriser l’utilisateur « anonyme » à « créer » des commentaires, tout en le limitant à un accès en lecture seule sur le reste de l’espace de travail.
 
-### Règle n° 3 : Les espaces de travail sont réservés aux méthodes clone(), merge() et update().  {#rule-workspaces-are-for-clone-merge-and-update}
+### Règle n° 3 : Les espaces de travail sont réservés aux méthodes clone(), merge() et update(). {#rule-workspaces-are-for-clone-merge-and-update}
 
 #### Explication {#explanation-3}
 
@@ -143,7 +143,7 @@ Dans le cas d’une importation de code XML ou d’une interaction avec un code 
 
 #### Exemple {#example-4}
 
-Utilisation
+Utilisez
 
 ```xml
 /content/myblog/posts/what_i_learned_today
@@ -221,7 +221,7 @@ Dès lors, ce n’est pas parce que vous aimeriez être en mesure de référence
 
 #### Exemple {#example-7}
 
-Utilisation:
+Utilisez:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
