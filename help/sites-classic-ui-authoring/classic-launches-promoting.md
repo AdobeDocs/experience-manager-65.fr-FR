@@ -25,7 +25,7 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 
 * Faut-il convertir l’intégralité du lancement ou uniquement la page en cours ?
 * Faut-il convertir les pages enfants de la page en cours ?
-* Conversion de l’intégralité du lancement ou uniquement des pages qui ont été modifiées.
+* Faut-il convertir l’intégralité du lancement ou uniquement des pages qui ont été modifiées ?
 
 ## Conversion de pages de lancement {#promoting-launch-pages}
 
