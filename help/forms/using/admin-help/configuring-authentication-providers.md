@@ -24,7 +24,7 @@ Les domaines hybrides requièrent au moins un fournisseur d’authentification e
 
 Si vous activez la fonction SSO avec le protocole SPNEGO, ajoutez un fournisseur d’authentification Kerberos avec SPNEGO activé et un fournisseur LDAP comme solution de secours. Cette configuration permet l’authentification de l’utilisateur grâce à un ID utilisateur et un mot de passe en cas de défaillance de SPNEGO. Voir [Activation de la fonction SSO à l’aide de SPNEGO ](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego).
 
-## Ajout d’un fournisseur d’authentification  {#add-an-authentication-provider}
+## Ajout d’un fournisseur d’authentification {#add-an-authentication-provider}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur un domaine existant dans la liste. Si vous ajoutez un fournisseur d’authentification pour un nouveau domaine, voir [Ajout d’un domaine d’entreprise](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) ou [Ajout d’un domaine hybride](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
