@@ -30,7 +30,7 @@ Vous pouvez gérer l’accès à la file d’attente d’utilisateur sélectionn
 
 Vous pouvez gérer les files d’attente partagées affectées à un utilisateur sélectionné à l’aide de cette option.
 
-## Gestion de l’accès à une file d’attente d’utilisateur sélectionnée  {#managing-access-to-a-selected-user-queue}
+## Gestion de l’accès à une file d’attente d’utilisateur sélectionnée {#managing-access-to-a-selected-user-queue}
 
 L’option Gérer l’accès à un utilisateur permet de gérer l’accès à une file d’attente d’utilisateur sélectionnée. Vous pouvez accorder ou révoquer l’accès à une file d’attente d’utilisateur à d’autres utilisateurs au sein de votre société. Par exemple, Kara Bowman est absente du bureau. La fonction Gérer l’accès à un utilisateur permet de partager sa file d’attente avec Akira Tanaka et John Jacobs pour qu’elle puisse être terminée. Une fois que Kara Bowman revient au bureau, vous pouvez alors révoquer à Akira Tanaka et John Jacobs l’accès à sa file d’attente.
 
