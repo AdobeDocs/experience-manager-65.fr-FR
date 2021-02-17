@@ -31,14 +31,14 @@ Le contenu est ajouté à l’aide de [composants](/help/sites-classic-ui-author
 >
 >En cas de problèmes, contactez votre administrateur système.
 
-## Sidekick  {#sidekick}
+## Sidekick {#sidekick}
 
 Le sidekick est un outil clé lors de la création de pages. Il est toujours visible (dans une fenêtre flottante) pendant la création d’une page.
 
 Plusieurs onglets et icônes sont disponibles, notamment :
 
 * Composants
-* Page 
+* Page
 * Informations
 * Contrôle de version
 * Workflow
