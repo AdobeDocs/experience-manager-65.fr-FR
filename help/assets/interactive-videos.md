@@ -25,7 +25,7 @@ Une fois la vidéo terminée, un récapitulatif visuel de toutes les offres s’
 
 Voir aussi [Images interactives](/help/assets/interactive-images.md).
 
-## Vidéos interactives à l’œuvre   {#interactive-video-in-action}
+## Vidéos interactives à l’œuvre {#interactive-video-in-action}
 
 Pour visionner une vidéo interactive et pouvant être visitée en action, cliquez sur [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), faites défiler l’écran jusqu’à l’en-tête **[!UICONTROL Médias susceptibles d’être consultés]** sur la page, puis cliquez sur la vidéo pouvant être partagée.
 
@@ -41,7 +41,7 @@ Pour visionner une vidéo interactive et pouvant être visitée en action, cliqu
 >
 >Si vous créez une vidéo interactive pour lancer une page web lorsqu’un utilisateur clique sur une vignette, certains dispositifs bloquent l’ouverture de la page web contextuelle. Dans ce cas, vous devez modifier le paramètre de blocage des fenêtres contextuelles sur le dispositif. Par exemple, sur un Apple iPhone 6, appuyez sur **[!UICONTROL Paramètres]** > **safari** > **Bloquer les fenêtres contextuelles**, puis faites glisser la commande sur **[!UICONTROL Désactivé]**. À présent, lorsque vous visionnez une vidéo interactive et que vous cliquez sur une vignette, vous êtes invité à ouvrir la fenêtre contextuelle. Si vous acceptez, la page web s’affiche.
 
-### Découvrez comment les vidéos interactives sont créées   {#watch-how-interactive-videos-are-created}
+### Découvrez comment les vidéos interactives sont créées  {#watch-how-interactive-videos-are-created}
 
 Visionnez une présentation vidéo de 7 minutes 30 sur la [création des vidéos interactives](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
 (Même si la présentation vidéo est personnalisée grâce à Assets on Demand, les principes et les étapes restent compatibles avec les vidéos interactives dans AEM Assets.)
@@ -216,7 +216,7 @@ En fonction de cette analyse, vous concluez que vous pouvez utiliser les deux va
 
 Vous êtes maintenant prêt à charger une vidéo et les ressources de vignette associées.
 
-## (En option) Création d’un paramètre prédéfini de la visionneuse de vidéo interactive   {#optional-creating-an-interactive-video-viewer-preset}
+## (En option) Création d’un paramètre prédéfini de la visionneuse de vidéo interactive  {#optional-creating-an-interactive-video-viewer-preset}
 
 Vous pouvez ignorer cette tâche et passer à la tâche suivante si vous envisagez d’utiliser les types de paramètres prédéfinis de visionneuse de vidéos interactives par défaut, prêtes à l’emploi, `Shoppable_Video_dark` ou `Shoppable_Video_light`.
 
@@ -307,7 +307,7 @@ Pour ajouter de l’interactivité à votre vidéo :
         <td>30 secondes</td>
         </tr>
         <tr>
-        <td>1-2 minutes</td>
+        <td>1 à 2 minutes</td>
         <td>20 secondes<br /> </td>
         </tr>
         <tr>
@@ -349,7 +349,7 @@ Pour ajouter de l’interactivité à votre vidéo :
 
       Sélectionnez un segment, puis faites glisser l’ovale bleu de début ou de fin pour ajuster respectivement l’heure de début ou de fin. L’image vidéo affichée se déplace à l’heure appropriée dans la vidéo, en fonction de vos ajustements. Le déplacement du segment de la chronologie est limité en fonction des segments adjacents dans la chronologie. Le temps minimal autorisé pour un segment est d’une seconde.
 
-        Utilisez les raccourcis de navigation ci-dessous pour vérifier et optimiser rapidement les segments de vidéo :
+      Utilisez les raccourcis de navigation ci-dessous pour vérifier et optimiser rapidement les segments de vidéo :
 
       * Appuyez sur l’ovale bleu de début pour chercher la vidéo directement au début de ce segment.
       * Appuyez sur l’ovale bleu de fin pour chercher la vidéo directement à la fin de ce segment.
@@ -412,7 +412,7 @@ Pour ajouter de l’interactivité à votre vidéo :
       </tr> 
       <tr> 
       <td>Pour associer l’image miniature sélectionnée à un lien hypertexte</td> 
-      <td><p>Sous Type d’action, appuyez sur <strong>Lien hypertexte</strong>, puis procédez de l’une des manières suivantes :</p> 
+      <td><p>Sous Type d’action, appuyez sur <strong>Hyperlien</strong>, puis procédez de l’une des manières suivantes :</p> 
        <ul> 
        <li>Si vous êtes client AEM Sites, appuyez sur l’icône Sélecteur de site (dossier) pour accéder à une page web. Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.</li> 
        <li>Si vous êtes un client Dynamic Media autonome, dans le champ de texte HREF, spécifiez le chemin URL complet vers une page web liée.</li> 
@@ -554,7 +554,7 @@ L’intégration est aussi simple que la suppression du code intégré de la vid
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
-## Intégration d’une vidéo interactive avec un aperçu rapide existant   {#integrating-an-interactive-video-with-an-existing-quickview}
+## Intégration d’une vidéo interactive avec un aperçu rapide existant  {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 Cette tâche ne s’applique que si vous êtes un client AEM Assets autonome.
