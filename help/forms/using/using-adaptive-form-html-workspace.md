@@ -32,7 +32,7 @@ Effectuez les opérations suivantes pour activer l’utilisation des formulaires
 * Dans Assign Task ou dans la feuille de propriétés Workbench du Point de départ, vous pouvez masquer la barre d’outils supérieure/globale d’un formulaire adaptatif.
 * Vous pouvez utiliser les nouveaux profils d’action pour les actions de rendu et d’envoi des formulaires adaptatifs.
 
-### Exportation et importation d’applications LiveCycle  {#livecycle-application-export-and-import}
+### Exportation et importation d’applications LiveCycle {#livecycle-application-export-and-import}
 
 Les formulaires adaptatifs étant situés dans le référentiel AEM, l’exportation d’applications LiveCycle contient uniquement les références des formulaires adaptatifs utilisés. Par conséquent, l&#39;exportation et l&#39;importation de l&#39;application de LiveCycle est un processus en deux étapes. L’application LiveCycle comprend des définitions de processus, etc. Un module distinct contenant les formulaires adaptatifs est exporté au format ZIP à partir d’AEM. Lors de l’importation, l’application LiveCycle est importée par Workbench et les formulaires adaptatifs sont importés par AEM.
 
