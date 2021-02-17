@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: fd7a32c1070a0560ca744db041cf809f28672b33
 workflow-type: tm+mt
 source-wordcount: '671'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
 
-# Guide de l’utilisateur pour l’administration dans AEM 6.5  {#administering}
+# Guide de l’utilisateur pour l’administration dans AEM 6.5 {#administering}
 
 + [Présentation de l’administration du Guide de l’utilisateur](home.md)
 + Fonctionnalités des sites {#introduction}
@@ -82,7 +82,7 @@ ht-degree: 90%
    + [Réduction des problèmes de sérialisation dans AEM](mitigating-serialization-issues.md)
    + [Synchronisation des utilisateurs](sync.md)
    + [Prise en charge des jetons encapsulés](encapsulated-token.md)
-   + [Connexion unique](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
+   + [Connexion unique](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=fr)
    + [Contrôle des opérations de gestion des utilisateurs dans AEM](audit-user-management-operations.md)
    + [SSL par défaut](ssl-by-default.md)
    + [Gestionnaire d’authentification SAML 2.0](saml-2-0-authenticationhandler.md)
@@ -97,8 +97,8 @@ ht-degree: 90%
    + [Affichage principal de la gestion des autorisations](touch-ui-principal-view.md)
    + [Filtre de disposition du contenu](content-disposition-filter.md)
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
-+ Personnalisation   {#personalization}
-   + [Personnalisation ](personalization.md)
++ Personnalisation  {#personalization}
+   + [Personnalisation](personalization.md)
    + [Configuration de ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [Contexte client](client-context.md)
    + [Campagnes](campaigns.md)
