@@ -22,7 +22,7 @@ ht-degree: 82%
 
 Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de WebSphere sur laquelle vous souhaitez déployer les produits AEM forms. Si vous ne savez pas si le serveur d’applications a déjà été démarré, vous pouvez commencer par vérifier l’état de WebSphere Application Server.
 
-## Affichage de l’état de WebSphere Application Server  {#view-the-status-of-websphere-application-server}
+## Affichage de l’état de WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
 1. Ouvrez une invite de commande et accédez au répertoire `[appserver root]/bin`.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
