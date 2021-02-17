@@ -166,7 +166,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
 1. Le composant sélectionné est alors ajouté au bas de la page. [Modifiez](#editmovecopypastedelete) le composant selon les besoins.
 
-### Insertion d’un composant à partir de l’Explorateur de ressources  {#inserting-a-component-using-the-assets-browser}
+### Insertion d’un composant à partir de l’Explorateur de ressources {#inserting-a-component-using-the-assets-browser}
 
 Vous pouvez également ajouter un nouveau composant à la page en faisant glisser un élément depuis l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
