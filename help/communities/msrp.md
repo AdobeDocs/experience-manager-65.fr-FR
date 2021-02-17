@@ -26,7 +26,7 @@ Lorsque AEM Communities est configuré pour utiliser MSRP comme magasin commun, 
 
 Voir aussi [Caractéristiques des options SRP](working-with-srp.md#characteristics-of-srp-options) et [Topologies recommandées](topologies.md).
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 * [MongoDB](https://www.mongodb.org/):
 
@@ -179,7 +179,7 @@ Lors de la réindexation, il existe un compromis entre la mémoire et les perfor
 La valeur par défaut raisonnable est 5000 :
 
 * Si la mémoire pose problème, indiquez un nombre inférieur.
-* Si la vitesse est un problème, indiquez un nombre plus élevé pour augmenter la vitesse.
+* Si la vitesse pose problème, indiquez un nombre plus élevé pour augmenter la vitesse.
 
 ### Exécution de l&#39;outil de réindexation MSRP à l&#39;aide de la commande cURL {#running-msrp-reindex-tool-using-curl-command}
 
