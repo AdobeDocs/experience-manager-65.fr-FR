@@ -88,7 +88,7 @@ Un module de workflow :
 * peut être utilisé plusieurs fois ;
 * peut être modifié par l’utilisateur (ajout ou suppression de ressources) alors que l’instance de workflow est en cours d’exécution.
 
-## Démarrage d’un workflow à partir de la console Modèles  {#starting-a-workflow-from-the-models-console}
+## Démarrage d’un workflow à partir de la console Modèles {#starting-a-workflow-from-the-models-console}
 
 1. Accédez à la console **Modèles** en utilisant **Outils**, **Workflow**, puis **Modèles**.
 1. Sélectionnez le workflow (selon la vue de la console). Vous pouvez également utiliser la fonction Rechercher (dans la partie supérieure gauche), si nécessaire :
