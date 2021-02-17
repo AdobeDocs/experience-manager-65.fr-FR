@@ -14,7 +14,7 @@ ht-degree: 83%
 ---
 
 
-# Invalidation du cache du réseau de diffusion de contenu par le biais de Dynamic Media {#invalidating-cdn-cache-for-dm-assets}
+# Invalidation du cache du réseau CDN par le biais de Dynamic Media {#invalidating-cdn-cache-for-dm-assets}
 
 Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de contenu (CDN) pour une diffusion rapide à vos clients. Cependant, lorsque vous apportez des mises à jour à ces ressources, vous souhaiterez peut-être que ces modifications prennent effet immédiatement sur votre site web. La purge ou l’invalidation du cache du réseau CDN vous permet de mettre rapidement à jour les ressources distribuées par Dynamic Media. Au lieu d’attendre que le cache arrive à expiration à l’aide d’une valeur TTL (durée de vie) (10 heures par défaut), vous pouvez envoyer une requête depuis l’interface utilisateur de Dynamic Media pour que le cache arrive à expiration en quelques minutes.
 
