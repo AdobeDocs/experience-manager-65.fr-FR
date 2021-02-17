@@ -43,7 +43,7 @@ La procédure suivante utilise l’interface utilisateur optimisée pour les éc
 1. Cliquez sur Créer.
 1. Dans la boîte de dialogue qui s’affiche, saisissez les valeurs des propriétés et cliquez sur OK.
 
-## Exemples de configurations du service cloud Microsoft Translator  {#sample-microsoft-translator-cloud-service-configurations}
+## Exemples de configurations du service cloud Microsoft Translator {#sample-microsoft-translator-cloud-service-configurations}
 
 Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configuration utilisent un compte Microsoft Translation d&#39;évaluation qui permet de traduire gratuitement jusqu&#39;à 2 000 000 caractères par mois.
 
