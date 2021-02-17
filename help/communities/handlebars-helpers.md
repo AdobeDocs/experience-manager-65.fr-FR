@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1534'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -184,7 +184,7 @@ Aide permettant de renvoyer du contenu selon une condition d’égalité.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Aide de bloc qui teste la valeur actuelle de [mode WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) par rapport à une liste de modes séparée par des chaînes.
+Aide de bloc qui teste la valeur actuelle de [mode WCM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) par rapport à une liste de modes séparée par des chaînes.
 
 ### Paramètres {#parameters-4}
 
