@@ -163,7 +163,7 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-## Exemple 2 : Adobe Campaign vers AEM  {#example-adobe-campaign-to-aem}
+## Exemple 2 : Adobe Campaign vers AEM {#example-adobe-campaign-to-aem}
 
 AEM propose des API prêtes à l’emploi pour récupérer les objets disponibles n’importe où dans la vue de l’explorateur siteadmin.
 
