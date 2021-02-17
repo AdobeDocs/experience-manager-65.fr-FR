@@ -41,7 +41,7 @@ Déplacez les fichiers d’application vers l’instance de publication afin de 
 
 Il vous suffit de déplacer les fichiers de la branche `/content/phonegap/content/<application name>` vers l’instance de publication. Les fichiers de la branche `/content/phonegap/apps/<application name>` sont déplacés lorsque l&#39;auteur active les pages.
 
-aem fournit deux méthodes pour déplacer du contenu en vrac vers l’instance de publication :
+AEM fournit deux méthodes pour déplacer du contenu en vrac vers l’instance de publication :
 
 * [Utilisez la ](/help/sites-authoring/publishing-pages.md) commande Activer l&#39;arborescence de la console de réplication.
 * [Créez un ](/help/sites-administering/package-manager.md) package qui contient le contenu et duplique le package.
