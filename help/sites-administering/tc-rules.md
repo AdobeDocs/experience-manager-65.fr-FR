@@ -98,7 +98,7 @@ L’exemple suivant traduit le contenu de toutes les propriétés `text` et trad
 </node>
 ```
 
-## Syntaxe de règle pour extraire des ressources à partir de pages   {#rule-syntax-for-extracting-assets-from-pages}
+## Syntaxe de règle pour extraire des ressources à partir de pages  {#rule-syntax-for-extracting-assets-from-pages}
 
 Utilisez la syntaxe de règle suivante pour inclure les ressources qui sont incorporées dans des composants ou référencées à partir de composants :
 
@@ -117,7 +117,7 @@ L’exemple suivant extrait les images à partir du composant Image de base :
 <assetNode resourceType="foundation/components/image" assetReferenceAttribute="fileReference"/>
 ```
 
-## Règles de remplacement  {#overriding-rules}
+## Règles de remplacement {#overriding-rules}
 
 Le fichier translation_rules.xml est constitué d’un élément `nodelist` ayant plusieurs éléments `node` enfants. AEM lit la liste des nœuds de haut en bas. Lorsque plusieurs règles ciblent le même nœud, la règle inférieure dans le fichier est utilisée. Par exemple, les règles suivantes font traduire tout le contenu des propriétés `text`, à l’exception de la branche `/content/mysite/en` des pages :
 
