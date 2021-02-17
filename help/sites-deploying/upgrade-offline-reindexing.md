@@ -166,7 +166,7 @@ Vous trouverez d&#39;autres détails techniques dans la [documentation relative 
 
 ### Importation d&#39;index {#importing-indexes}
 
-Avec AEM 6.4 et les versions plus récentes, AEM a la capacité intégrée d&#39;importer des index à partir du disque au démarrage. Le dossier `<repository>/indexing-result/indexes` est surveillé pour la présence de données d&#39;index au démarrage. Vous pouvez copier l’index précréé à l’emplacement ci-dessus pendant le processus de mise à niveau [](in-place-upgrade.md#performing-the-upgrade) avant de commencer avec la nouvelle version du fichier jar AEM **cible**. aem l&#39;importe dans le référentiel et supprime le point de contrôle correspondant du système. Ainsi, un réindice est complètement évité.
+Avec AEM 6.4 et les versions plus récentes, AEM a la capacité intégrée d&#39;importer des index à partir du disque au démarrage. Le dossier `<repository>/indexing-result/indexes` est surveillé pour la présence de données d&#39;index au démarrage. Vous pouvez copier l’index précréé à l’emplacement ci-dessus pendant le processus de mise à niveau [](in-place-upgrade.md#performing-the-upgrade) avant de commencer avec la nouvelle version du fichier jar AEM **cible**. AEM l&#39;importe dans le référentiel et supprime le point de contrôle correspondant du système. Ainsi, un réindice est complètement évité.
 
 ## Autres conseils et dépannage {#troubleshooting}
 
