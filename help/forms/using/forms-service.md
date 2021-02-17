@@ -31,7 +31,7 @@ Utilisez le service Forms pour effectuer les opérations suivantes :
 * Intégration de données de formulaire pour importer des données dans des formulaires PDF et les en extraire.
 * Rendu des formulaires reposant sur des fragments.
 
-## Création de formulaires PDF   {#creating-pdf-forms-nbsp}
+## Création de formulaires PDF  {#creating-pdf-forms-nbsp}
 
 Utilisez le service Forms pour créer des formulaires PDF pour la capture de données. En général, vous commencez avec un modèle AEM Forms Designer. Utilisez l’opération `renderPDFForm` (lien vers Javadoc) du service Forms pour convertir ce modèle en formulaire PDF.
 
