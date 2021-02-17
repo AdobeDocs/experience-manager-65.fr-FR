@@ -33,7 +33,7 @@ AEM Forms prend en charge CAPTCHA dans les formulaires adaptatifs. Vous pouvez u
 
 
 
-## Configurer le service ReCAPTCHA par Google  {#google-recaptcha}
+## Configurer le service ReCAPTCHA par Google {#google-recaptcha}
 
 Les auteurs du formulaire peuvent utiliser le service reCAPTCHA de Google pour mettre en place CAPTCHA dans les formulaires adaptatifs. Il offre des fonctionnalités CAPTCHA avancées pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, voir [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
