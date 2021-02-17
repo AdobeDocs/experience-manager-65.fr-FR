@@ -48,9 +48,9 @@ Lorsque le formulaire adaptatif est publié en tant que page AEM, la page Web en
 
 ## Incorporer le formulaire adaptatif dans une page AEM Sites {#embed-the-adaptive-form-in-an-aem-sites-page}
 
-aem [!DNL Forms] permet aux développeurs de formulaires d’incorporer aisément des formulaires adaptatifs dans une page AEM [!DNL Sites]. Le formulaire adaptatif incorporé est entièrement fonctionnel et les utilisateurs peuvent le remplir et le soumettre sans quitter la page. Il permet à l’utilisateur de rester dans le contexte d’autres éléments de la page Web et d’interagir simultanément avec le formulaire.
+AEM [!DNL Forms] permet aux développeurs de formulaires d’incorporer aisément des formulaires adaptatifs dans une page AEM [!DNL Sites]. Le formulaire adaptatif incorporé est entièrement fonctionnel et les utilisateurs peuvent le remplir et le soumettre sans quitter la page. Il permet à l’utilisateur de rester dans le contexte d’autres éléments de la page Web et d’interagir simultanément avec le formulaire.
 
-aem [!DNL Forms] fournissent un composant, AEM [!DNL Forms] Conteneur, pour incorporer un formulaire adaptatif à une page [!DNL Sites] d&#39;AEM. Par défaut, le composant n’est pas visible dans AEM conteneur [!DNL Sites]. Effectuez les étapes suivantes pour activer le composant de Conteneur [!DNL Forms] AEM et pour incorporer le formulaire adaptatif dans une page AEM [!DNL Sites] :
+AEM [!DNL Forms] fournissent un composant, AEM [!DNL Forms] Conteneur, pour incorporer un formulaire adaptatif à une page [!DNL Sites] d&#39;AEM. Par défaut, le composant n’est pas visible dans AEM conteneur [!DNL Sites]. Effectuez les étapes suivantes pour activer le composant de Conteneur [!DNL Forms] AEM et pour incorporer le formulaire adaptatif dans une page AEM [!DNL Sites] :
 
 1. Créez et ouvrez une page du site Web.Retail pour modification. Par exemple, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Le formulaire adaptatif est incorporé à la page [!DNL Sites].
 
