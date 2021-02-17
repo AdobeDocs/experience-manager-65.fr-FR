@@ -19,7 +19,7 @@ ht-degree: 86%
 ---
 
 
-# Administration de la solution eCommerce générique  {#administering-generic-ecommerce}
+# Administration de la solution eCommerce générique {#administering-generic-ecommerce}
 
 La solution AEM générique fournit des méthodes pour gérer les informations commerciales conservées dans le référentiel (plutôt que d’utiliser un moteur d’e-commerce externe). Cela inclut :
 
@@ -304,7 +304,7 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 1. Saisissez la **catégorie d’image** choisie (`cat1`, par exemple).
 1. Appuyez/cliquez sur **Terminé.** La page s’actualise et la ressource appropriée doit s’afficher.
 
-#### Catalogue   {#catalog}
+#### Catalogue  {#catalog}
 
 1. Accédez à votre catalogue.
 1. Appuyez/cliquez sur **Afficher les propriétés**.
