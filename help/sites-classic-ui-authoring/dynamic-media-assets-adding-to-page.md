@@ -28,7 +28,7 @@ Vous pouvez ajouter directement des fichiers multimédias dynamiques à la page 
 >
 >Les zones cliquables sont disponibles et prêtes à l’emploi pour les bannières de carrousel.
 
-## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
+## Ajout d’un composant Dynamic Media à une page {#adding-a-dynamic-media-component-to-a-page}
 
 Ajouter le composant [!UICONTROL Dynamic Media] ou [!UICONTROL Interactive Media] à une page revient à ajouter un composant à une page. Les composants [!UICONTROL Dynamic Media] et [!UICONTROL Interactive Media] sont décrits en détail dans les sections suivantes.
 
