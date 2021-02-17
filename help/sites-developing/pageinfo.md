@@ -55,7 +55,7 @@ Les composants de page peuvent être associés à un ou plusieurs services `com.
 >
 >À l’instar des PageInfoProviders, utilisez des ListInfoProviders pour mettre à jour des listes d’informations au format JSON (voir [Personnalisation de la console d’administration des sites web](/help/sites-developing/customizing-siteadmin.md)).
 
-## Fournisseurs d’informations de page par défaut  {#default-page-information-providers}
+## Fournisseurs d’informations de page par défaut {#default-page-information-providers}
 
 Le composant `/libs/foundation/components/page` est associé aux services PageInfoProvider suivants :
 
