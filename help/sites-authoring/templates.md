@@ -94,7 +94,7 @@ En raison de la nature de certaines tâches (comme la création d’un dossier),
 
 Les tâches détaillées dans ce document sont répertoriées avec le rôle responsable de leur exécution.
 
-### Modèles modifiables et statiques  {#editable-and-static-templates}
+### Modèles modifiables et statiques {#editable-and-static-templates}
 
 AEM comporte maintenant deux types de modèles standard :
 
