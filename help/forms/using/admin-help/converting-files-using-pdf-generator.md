@@ -22,7 +22,7 @@ ht-degree: 91%
 
 Vous pouvez utiliser les pages Web de PDF Generator pour convertir des fichiers.
 
-## Création d’un fichier PDF  {#create-a-pdf-file}
+## Création d’un fichier PDF {#create-a-pdf-file}
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Créer un fichier PDF.
 1. Cliquez sur Parcourir pour rechercher et sélectionner le fichier.
