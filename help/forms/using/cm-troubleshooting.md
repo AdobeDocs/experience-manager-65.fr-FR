@@ -35,7 +35,7 @@ Ces erreurs peuvent se produire à cause de l’une des raisons suivantes :
 * Un dictionnaire de données est associé à la lettre, mais n’est pas présent sur le serveur.
 * Un dictionnaire de données est associé à la lettre, mais son nom comporte un caractère de soulignement (_).
 
-### Solution  {#workaround}
+### Solution {#workaround}
 
 Assurez-vous que le dictionnaire de données utilisé dans la lettre est présent sur le serveur et que son nom ne comporte aucun trait de soulignement (_).
 
