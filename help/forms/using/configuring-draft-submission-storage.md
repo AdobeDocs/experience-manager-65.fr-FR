@@ -17,7 +17,7 @@ ht-degree: 89%
 ---
 
 
-# Configuration des services de stockage pour les brouillons et les envois  {#configuring-storage-services-for-drafts-and-submissions}
+# Configuration des services de stockage pour les brouillons et les envois {#configuring-storage-services-for-drafts-and-submissions}
 
 ## Présentation {#overview}
 
