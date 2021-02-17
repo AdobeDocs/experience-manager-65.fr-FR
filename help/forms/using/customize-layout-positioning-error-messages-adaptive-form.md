@@ -27,7 +27,7 @@ Vous pouvez personnaliser la disposition et la position des messages d’erreur 
 * Personnalisation du contenu d’un indicateur d’aide dynamique
 * Personnaliser la position des composants de champ (légende, widget, brève description, longue description et composants d’indicateur d’aide) sans apporter de modifications aux propriétés CSS correspondantes
 
-## Personnalisation de la disposition des champs  {#customize-layout-of-fields}
+## Personnalisation de la disposition des champs {#customize-layout-of-fields}
 
 Vous pouvez personnaliser la disposition d’un champ spécifique ou de tous les champs pour modifier la position de la légende et des messages d’erreur. Effectuez les étapes suivantes pour appliquer une disposition personnalisée à un champ :
 
