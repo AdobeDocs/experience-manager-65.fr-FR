@@ -70,7 +70,7 @@ Les données d’application AEM forms résident dans le répertoire de stockage
  </tbody>
 </table>
 
-## Configuration du répertoire de stockage global de document  {#configuring-the-gds-directory}
+## Configuration du répertoire de stockage global de document {#configuring-the-gds-directory}
 
 L’emplacement du répertoire de stockage global de documents peut être configuré manuellement pendant la procédure d’installation d’AEM forms. Si le paramètre d’emplacement du stockage global de documents n’est pas défini pendant l’installation, l’emplacement par défaut utilisé est un sous-répertoire de l’emplacement d’installation du serveur d’applications :
 
