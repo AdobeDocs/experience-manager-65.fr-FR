@@ -36,7 +36,7 @@ Vous pouvez utiliser les documents protégés par une stratégie que vous receve
 >
 >si vous recevez un document protégé par une stratégie sans recevoir d’invitation d’enregistrement par messagerie électronique, contactez son expéditeur afin d’obtenir plus de détails.
 
-## Enregistrement en tant qu’utilisateur invité  {#register-as-an-invited-user}
+## Enregistrement en tant qu’utilisateur invité {#register-as-an-invited-user}
 
 Si vous êtes utilisateur invité et recevez un message d’enregistrement par messagerie électronique de Document security, vous pouvez vous enregistrer en cliquant sur l’URL contenue dans le message pour ouvrir la page d’enregistrement en ligne. Après l’enregistrement, vous recevez un second avis sur l’activation de votre compte.
 
