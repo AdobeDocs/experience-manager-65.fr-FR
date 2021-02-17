@@ -40,7 +40,7 @@ De plus, lors de la conception d’une taxonomie, il faut considérer si l’ord
 
 Comme les requêtes peuvent être l’une des opérations les plus intensives sur un système AEM, il est conseillé de les exclure de vos composants. L’exécution de plusieurs requêtes chaque fois qu’une page est rendue peut souvent dégrader les performances du système. Deux stratégies sont conseillées pour éviter l’exécution de requêtes lors du rendu de composants : le **parcours transversal des nœuds** et la **pré-récupération des résultats**.
 
-#### Parcours transversal des nœuds  {#traversing-nodes}
+#### Parcours transversal des nœuds {#traversing-nodes}
 
 Si le référentiel est conçu de manière à permettre une connaissance préalable de l’emplacement des données requises, le code qui récupère ces données à partir des chemins nécessaires peut être déployé sans avoir à exécuter des requêtes pour les localiser.
 
@@ -483,5 +483,5 @@ Le texte pré-extrait peut être ajouté de manière incrémentielle au fil du t
 
 3a. La [réindexation](#how-to-re-index) des index Lucene est invoquée dans AEM.
 
-3b. La configuration OSGi d&#39;Apache Jackrabbit Oak DataStore PreExtraitsTextProvider (configurée pour pointer vers le texte extrait via un chemin d&#39;accès au système de fichiers) indique à Oak de trouver du texte intégral à partir des fichiers extraits, et évite d&#39;accéder directement aux données stockées dans le référentiel et de les traiter.
+3b. La configuration OSGi d&#39;Apache Jackrabbit Oak DataStore PreExtraitsTextProvider (configurée pour pointer vers le texte extrait via un chemin d&#39;accès au système de fichiers) indique à Oak de trouver du texte intégral à partir des fichiers extraits et évite d&#39;accéder directement aux données stockées dans le référentiel et de les traiter.
 
