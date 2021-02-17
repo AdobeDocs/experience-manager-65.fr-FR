@@ -56,9 +56,9 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 
 >[!CAUTION]
 >
->aem inclut la version 1.12.4 de la bibliothèque jQuery afin de fournir une compatibilité maximale avec le code personnalisé existant. Adobe a procédé à des modifications de façon à résoudre les problèmes de sécurité connus.
+>AEM inclut la version 1.12.4 de la bibliothèque jQuery afin de fournir une compatibilité maximale avec le code personnalisé existant. Adobe a procédé à des modifications de façon à résoudre les problèmes de sécurité connus.
 
-## Administration de sites  {#site-administration}
+## Administration de sites {#site-administration}
 
 * Le rail [Référence](/help/sites-authoring/author-environment-tools.md#references) comporte une nouvelle section permettant de répertorier les liens internes pointant vers la page sélectionnée. Cela s’avère utile lorsque vous envisagez de supprimer une page hors ligne ou de la supprimer, pour voir quelles pages doivent être ajustées avant de les mettre hors ligne.
 * La [vue de liste](/help/sites-authoring/basic-handling.md#list-view) comporte une nouvelle colonne de workflow indiquant le statut de la page dans un workflow.
@@ -69,7 +69,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 * Autorisez l’édition en contexte et la composition d’expériences d’application monopage avec des composants côté client React et Angular utilisant le SDK JS (également appelé éditeur de SPA)
 * Le mode Génération de modèles automatique s’affiche uniquement si la page possède une page de modèle automatique configurée.
 
-## Fragments de contenu et éditeur  {#content-fragments-amp-editor}
+## Fragments de contenu et éditeur {#content-fragments-amp-editor}
 
 * Nouveau rail [Annotations](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) dans l’éditeur de fragment de contenu permettant de faire des commentaires généraux et d’afficher des commentaires dans le texte (à afficher également dans le rail de la chronologie)
 * Possibilité de définir le type de contenu par défaut d’un élément de texte multiligne dans un modèle de fragment de contenu [Content Fragment](/help/assets/content-fragments/content-fragments-models.md) sur du texte simple, du texte enrichi ou un balisage
@@ -106,7 +106,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 
 * Le code JavaScript de la couche de données ContextHub et du moteur de règles côté client a été mis à jour pour utiliser jQuery 3 par défaut.
 
-## aem et Adobe Target {#aem-amp-adobe-target}
+## AEM et Adobe Target {#aem-amp-adobe-target}
 
 >[!CAUTION]
 >
@@ -116,12 +116,12 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 * Adobe Target `mbox.js` version 63 est incluse. L’Adobe recommande vivement de basculer l’implémentation vers `at.js` v1.x.
 * `at.js` la version 1.5.0 est désormais incluse. Adobe vous recommande d’utiliser [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) pour configurer `at.js` v1.x dans le site.
 
-## aem et Adobe Analytics {#aem-amp-adobe-analytics}
+## AEM et Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 est inclus. Adobe vous recommande de passer à l’implémentation `AppMeasurement.js`
 * `AppMeasurement.js` v1.8.0 est inclus. L’Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) pour configurer AppMeasurement.js dans le site.
 
-## aem et Commerce {#aem-commerce}
+## AEM et Commerce {#aem-commerce}
 
 Les améliorations apportées à la structure d&#39;intégration commerciale ont été accélérées depuis AEM 6.4. [En savoir plus ici](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
 
