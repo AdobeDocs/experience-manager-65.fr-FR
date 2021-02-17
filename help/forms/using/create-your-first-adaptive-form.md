@@ -53,9 +53,9 @@ Le site Web s’exécute sur Adobe Experience Manager (AEM) et utilise AEM [!DNL
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Les formulaires adaptatifs sont de nouvelle génération, attrayants, réactifs, dynamiques et par nature adaptatifs. En utilisant des formulaires adaptatifs, vous pouvez offrir des expériences personnalisées et ciblées. aem [!DNL Forms] fournit un éditeur WYSIWYG par glisser-déposer pour créer des formulaires adaptatifs. Pour plus d’informations sur les formulaires adaptatifs, voir [Présentation de la création de formulaires adaptatifs](../../forms/using/introduction-forms-authoring.md).
+Les formulaires adaptatifs sont de nouvelle génération, attrayants, réactifs, dynamiques et par nature adaptatifs. En utilisant des formulaires adaptatifs, vous pouvez offrir des expériences personnalisées et ciblées. AEM [!DNL Forms] fournit un éditeur WYSIWYG par glisser-déposer pour créer des formulaires adaptatifs. Pour plus d’informations sur les formulaires adaptatifs, voir [Présentation de la création de formulaires adaptatifs](../../forms/using/introduction-forms-authoring.md).
 
-Goals:
+Objectifs:
 
 * Créer un formulaire adaptatif permettant à un client d’ajouter une adresse de livraison
 * Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’un client
@@ -70,7 +70,7 @@ Goals:
 
 Un modèle de données de formulaire permet de connecter un formulaire adaptatif à des sources de données disparates, par exemple, le profil utilisateur AEM, les services Web RESTful, les services Web basés sur SOAP, les services OData et les bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec un formulaire adaptatif pour extraire, mettre à jour, supprimer et ajouter des données aux sources de données connectées.
 
-Objectifs :
+Objectifs:
 
 * Configurez l’instance de base de données du site Web ([!DNL MySQL] base de données) en tant que sources de données.
 * Créez le modèle de données de formulaire à l’aide de la base de données [!DNL MySQL] en tant que source de données.
@@ -86,7 +86,7 @@ Objectifs :
 
 Les formulaires adaptatifs fournissent un éditeur pour l’écriture de règles sur des objets de formulaire adaptatifs. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des saisies de l’utilisateur et des actions de l’utilisateur sur le formulaire.  Cela permet d’assurer la précision et accélère le remplissage des formulaires.
 
-Objectifs :
+Objectifs:
 
 * Créer et appliquer des règles aux champs de formulaires adaptatifs
 * Utiliser des règles pour déclencher des services de modèle de données de formulaire pour mettre à jour les données dans la base de données
@@ -99,7 +99,7 @@ Objectifs :
 
 Les formulaires adaptatifs fournissent des thèmes et un [éditeur](../../forms/using/themes.md) pour créer des thèmes pour les formulaires adaptatifs. Un thème contient les informations de style pour les composants et les panneaux, et vous pouvez réutiliser un thème dans plusieurs formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Les formulaires adaptatifs prennent également en charge le style en ligne pour les styles spécifiques à un formulaire.
 
-Objectifs :
+Objectifs:
 
 * Appliquer un thème prêt à l’emploi à un formulaire adaptatif
 * Créer un thème pour formulaire adaptatif à l’aide de l’éditeur de thème
@@ -111,9 +111,9 @@ Objectifs :
 
 ![11-test-votre-formulaire adaptatif](assets/11-test-your-adaptive-form.png)
 
-Les formulaires adaptatifs font partie intégrante de vos interactions avec les clients. Il est important de tester vos formulaires adaptatifs à chaque modification que vous y apportez. Tester tous les champs d’un formulaire est fastidieux. aem [!DNL Forms] fournit un SDK (Calvin SDK) pour automatiser le test des formulaires adaptatifs. Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web.
+Les formulaires adaptatifs font partie intégrante de vos interactions avec les clients. Il est important de tester vos formulaires adaptatifs à chaque modification que vous y apportez. Tester tous les champs d’un formulaire est fastidieux. AEM [!DNL Forms] fournit un SDK (Calvin SDK) pour automatiser le test des formulaires adaptatifs. Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web.
 
-Objectifs :
+Objectifs:
 
 * Créer une suite de tests pour le formulaire adaptatif
 * Création de cas de test pour les formulaires adaptatifs
@@ -125,9 +125,9 @@ Objectifs :
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-Vous pouvez publier des formulaires adaptatifs sous la forme d’un formulaire autonome (application d’une seule page), inclure dans AEM [Page de sites](/help/forms/using/embed-adaptive-form-aem-sites.md) ou la liste sur un AEM [!DNL Site] à l’aide de [Forms Portal](../../forms/using/introduction-publishing-forms.md).
+Vous pouvez publier des formulaires adaptatifs sous la forme d’un formulaire autonome (application d’une seule page), inclure dans AEM [Page de sites](/help/forms/using/embed-adaptive-form-aem-sites.md) ou une liste sur un AEM [!DNL Site] à l’aide de [Forms Portal](../../forms/using/introduction-publishing-forms.md).
 
-Objectifs :
+Objectifs:
 
 * Publier le formulaire adaptatif en tant que page AEM
 * Incorporer le formulaire adaptatif dans une page AEM [!DNL Sites]
