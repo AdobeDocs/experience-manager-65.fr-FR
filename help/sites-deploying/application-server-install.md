@@ -95,7 +95,7 @@ Pour vérifier que tous les éléments ont été installés, vous pouvez :
 1. Dans les instances d’auteur et de publication, assurez-vous que dans les fichiers sling.properties, la propriété felix.service.urlhandlers=false est définie sur false (par défaut, elle est définie sur true).
 1. Redémarrez les deux applications web.
 
-## Procédures d’installation des serveurs d’applications  {#application-servers-installation-procedures}
+## Procédures d’installation des serveurs d’applications {#application-servers-installation-procedures}
 
 ### /WebSphere 8.5{#websphere}
 
