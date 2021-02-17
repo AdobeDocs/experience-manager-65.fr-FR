@@ -38,7 +38,7 @@ Si la base de données s’exécute dans un mode de consignation tel que décrit
 >
 >les fichiers qui ne sont pas référencés peuvent persister dans le répertoire de stockage global de documents après la récupération. Il s’agit d’une limitation connue actuelle.
 
-## Sauvegarde de la base de données, du répertoire de stockage global de documents, du référentiel AEM et du répertoire racine de stockage de contenu  {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
+## Sauvegarde de la base de données, du répertoire de stockage global de documents, du référentiel AEM et du répertoire racine de stockage de contenu {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
 AEM Forms peut être soit en mode de sauvegarde sécurisé (instantané) soit en mode de sauvegarde restauration (couverture continue). Avant de définir AEM Forms sur l’un de ces modes de sauvegarde, assurez-vous que les conditions suivantes sont remplies :
 
