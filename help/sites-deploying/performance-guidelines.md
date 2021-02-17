@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a678716e2c0520891e4228bc49b075f070ea45b7
 workflow-type: tm+mt
 source-wordcount: '2993'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -242,7 +242,7 @@ Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>application de bureau</p> </td>
+   <td><p>Application de bureau </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -262,7 +262,7 @@ Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à
 >
 >Les directives de performance s’appliquent principalement à AEM Sites.
 
-## Quand utiliser les conseils de performance ?  {#when-to-use-the-performance-guidelines}
+## Quand utiliser les conseils de performance ? {#when-to-use-the-performance-guidelines}
 
 Utilisez les conseils de performance dans les situations suivantes :
 
