@@ -62,7 +62,7 @@ Les étapes de création d’un projet sont identiques d’un projet à l’autr
 
 1. Cliquez/appuyez sur **Créer**. Le message de confirmation vous demande si vous voulez ouvrir votre projet ou revenir à la console.
 
-### Association de ressources à un projet    {#associating-resources-with-your-project}
+### Association de ressources à un projet   {#associating-resources-with-your-project}
 
 Dans la mesure où les projets permettent de regrouper les ressources dans une seule entité, il convient d’associer des ressources à votre projet. Ces ressources sont connues sous le nom de **mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits dans la section [Mosaïques de projet](/help/sites-authoring/projects.md#project-tiles).
 
