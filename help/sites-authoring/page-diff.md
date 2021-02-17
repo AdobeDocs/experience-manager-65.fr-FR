@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ L’outil de comparaison côte à côte permet de comparer les éléments suivan
 
 Reportez-vous aux rubriques correspondantes afin de connaître la procédure de comparaison pour ces différents éléments.
 
-### Présentation des différences  {#presentation-of-differences}
+### Présentation des différences {#presentation-of-differences}
 
 La présentation des différences reste la même, quel que soit le contenu à comparer.
 
@@ -92,7 +92,7 @@ Vous pouvez quitter le mode de comparaison côte à côte à tout moment en cliq
 Dans certaines situations, l’outil de comparaison des pages peut ne pas détecter toutes les différences.
 
 * C’est le cas lorsque vous comparez des versions et des lancements. La fonctionnalité ne prend pas en compte les composants dynamiques comme les chemins de navigation, les menus, les listes de produits ou les logos (des composants qui dépendent de la structure du site pour le rendu du contenu).
-* Pour les versions, la différence ne recrée pas la stratégie de contrôle d&#39;accès et les relations de copie dynamique.
+* Pour les versions, l’outil de comparaison ne recrée pas la règle de contrôle d’accès ni les relations Live Copy.
 * Si une page est déplacée, vous ne pouvez plus effectuer de comparaison avec les versions antérieures au déplacement.
 
    * Si vous rencontrez des problèmes avec une comparaison, vérifiez dans la [chronologie](/help/sites-authoring/basic-handling.md#timeline) si la page a été déplacée.
