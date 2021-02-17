@@ -73,7 +73,7 @@ Les facettes sont configurées sur le serveur Search&amp;Promote, de même que l
  </tbody>
 </table>
 
-## Création de la page de résultats de la recherche  {#creating-the-search-results-page}
+## Création de la page de résultats de la recherche {#creating-the-search-results-page}
 
 Utilisez la console Sites web WCM pour créer une page qui servira à afficher les résultats de recherche. Les résultats d’une recherche de n’importe quel composant de recherche peuvent apparaître dans cette page si elle utilise le même service Search&amp;Promote. 
 
