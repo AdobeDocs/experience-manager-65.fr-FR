@@ -52,7 +52,7 @@ Une fois le contenu mis à jour, les administrateurs peuvent publier une charge 
 
 Sélectionnez l’un des packages de contenu de la liste pour créer ou modifier du contenu tel que la création, la modification ou la suppression de pages, la modification de la navigation et de l’ordre des pages, la création ou la mise à jour de contenu tel que la copie (texte) et le support.
 
-Remarque *tout est du contenu*, ce qui signifie que les styles d’application, la copie (texte), les médias, les pages, la navigation et, le ciblage du contenu peut tous être modifié et mis à jour OTA, sans aller dans une boutique d’applications.
+Notez *que tout est du contenu*, ce qui signifie que les styles d’application, la copie (texte), les médias, les pages, la navigation et, le ciblage du contenu peut tous être modifié et mis à jour OTA, sans aller dans une boutique d’applications.
 
 Afin de modifier le contenu AEM Mobile, *les auteurs AEM *auront besoin d&#39;une bonne compréhension de l&#39;interface de modification de contenu AEM : [Création de pages dans AEM.](/help/sites-authoring/qg-page-authoring.md)
 
