@@ -80,7 +80,7 @@ Le tableau suivant montre comment Document Security organise les données dans l
  </tbody>
 </table>
 
-## Accès et suppression des données utilisateur  {#access-and-delete-user-data}
+## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
 Vous pouvez accéder et exporter les données de Document Security pour les utilisateurs dans les bases de données et, si nécessaire, les supprimer définitivement.
 
