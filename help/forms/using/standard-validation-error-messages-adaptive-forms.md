@@ -138,7 +138,7 @@ A l’aide de ce gestionnaire d’erreurs personnalisé, le formulaire adaptatif
 Exécutez les étapes suivantes pour ajouter un gestionnaire d&#39;erreurs afin de convertir une structure d&#39;erreur personnalisée en structure d&#39;erreur standard à l&#39;aide de l&#39;action [Éditeur de règles](rule-editor.md) Service d&#39;appel :
 
 1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire et appuyez sur ![Éditeur de règles](assets/rule_editor_icon.png) pour ouvrir l’éditeur de règles.
-1. Appuyez sur **[!UICONTROL Créer]**. 
+1. Appuyez sur **[!UICONTROL Créer]**.
 1. Créez une condition dans la section **[!UICONTROL Lorsque]** de la règle. Par exemple, Lorsque[Nom du champ] est modifié. Sélectionnez **[!UICONTROL est modifié]** dans la liste déroulante **[!UICONTROL Sélectionner l’état]** pour obtenir cette condition.
 1. Dans la section **[!UICONTROL Then]** (Alors), sélectionnez **[!UICONTROL Invoke Service]** (Appeler un service) dans la liste déroulante **[!UICONTROL Select Action]** (Sélectionner une action). 
 1. Sélectionnez un service Post et ses liaisons de données correspondantes dans la section **[!UICONTROL Entrée]**. Par exemple, si vous souhaitez valider les champs **Nom**, **ID** et **État** dans le formulaire adaptatif, sélectionnez un service Post (animal de compagnie) et sélectionnez pet.name, pet.id et pet.status dans la section **[!UICONTROL Input]**.
