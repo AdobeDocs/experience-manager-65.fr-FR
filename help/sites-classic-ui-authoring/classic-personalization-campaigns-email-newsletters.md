@@ -36,7 +36,7 @@ Pour diffuser votre message électronique sur un service de messagerie, vous dev
 >
 >Si vous mettez à jour vos fournisseurs de messagerie, que vous effectuez un test envoi ou que vous envoyez une newsletter, ces opérations échouent si la newsletter n’est pas au préalable publiée sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit activée.
 
-## Création d’un message électronique  {#creating-an-email}
+## Création d’un message électronique {#creating-an-email}
 
 Un courrier électronique ou un bulletin d’information que vous souhaitez publier dans un service de messagerie peut être créé sous une campagne à l’aide du modèle **Geometrixx Newsletter**. Vous pouvez également utiliser le modèle **Geometrixx Outdoors E-Mail**. Vous trouverez un exemple de courrier électronique/bulletin d&#39;information basé sur le modèle **Geometrixx Outdoors E-Mail** à l&#39;adresse `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
