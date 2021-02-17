@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
 source-wordcount: '3828'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -79,7 +79,7 @@ Le format de fichier d’Adobe Illustrator est une variante du format PDF. Les 
 * Les documents Adobe Illustrator se composent d’une seule page avec plusieurs calques. Chaque calque est extrait sous la forme d’une sous-ressource PNG sous la ressource Illustrator principale.
 * Les documents PDF se composent d’une ou de plusieurs pages. Chaque page est extraite sous la forme d’une sous-ressource PDF d’une seule page sous le document PDF multi-pages principal.
 
-Les sous-ressources sont créées par le composant `Create Sub Asset process` dans le workflow `DAM Update Asset` global. Pour voir ce composant dans le workflow, appuyez sur **[!UICONTROL Outils > Processus > Modèles > Ressource de mise à jour de gestion des actifs numériques > Modifier.]**
+Les sous-ressources sont créées par le composant `Create Sub Asset process` dans le workflow `DAM Update Asset` global. Pour voir ce composant dans le workflow, appuyez sur **[!UICONTROL Outils > Processus > Modèles > Ressource de mise à jour de gestion des actifs numériques (DAM) > Modifier.]**
 
 Voir aussi [Affichage des pages d’un fichier multi-pages](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
@@ -95,7 +95,7 @@ Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus d
 >
 >Dans le flux de travaux [!UICONTROL DAM Update Asset], l’étape **[!UICONTROL Miniatures EPS]** génère des miniatures pour les fichiers EPS.
 
-#### Propriétés des métadonnées de ressource PDF/AI/EPS   {#pdf-ai-eps-asset-metadata-properties}
+#### Propriétés des métadonnées de ressource PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
 
 | **Propriété de métadonnées** | **Description** |
 |---|---|
@@ -104,7 +104,7 @@ Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus d
 
 Vous accédez aux options des composants de processus `Rasterize PDF/AI Image Preview Rendition` par le biais du workflow `DAM Update Asset`.
 
-Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran, puis accédez à **[!UICONTROL Outils > Processus > Modèles.]** Sur la page Modèles de workflows, sélectionnez **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**, puis appuyez sur **[!UICONTROL Modifier.]**[!UICONTROL  Sur la page du workflow Ressources de mise à jour de gestion des actifs numériques, appuyez deux fois sur le composant de processus ] pour ouvrir la boîte de dialogue Propriétés de l’étape.`Rasterize PDF/AI Image Preview Rendition`
+Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran, puis accédez à **[!UICONTROL Outils > Processus > Modèles.]** Sur la page Modèles de workflows, sélectionnez **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques (DAM)]**, puis appuyez sur **[!UICONTROL Modifier.]**[!UICONTROL  Sur la page du workflow Ressources de mise à jour de gestion des actifs numériques (DAM), appuyez deux fois sur le composant de processus ] pour ouvrir la boîte de dialogue Propriétés de l’étape.`Rasterize PDF/AI Image Preview Rendition`
 
 #### Options Pixelliser le rendu d’aperçus d’image PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -148,7 +148,7 @@ Largeur max. et Hauteur max. limitent la résolution à laquelle la pixellisatio
 
 Une valeur maximale est définie pour le composant de processus `Rasterize PDF/AI Image Preview Rendition`, afin de s’assurer qu’il ne crée pas d’images exagérément grandes en mémoire. Ces images volumineuses peuvent, en effet, dépasser la capacité de mémoire allouée à la machine virtuelle Java (JVM). Il faut veiller à fournir suffisamment de mémoire à la machine virtuelle Java pour gérer le nombre configuré de workflows parallèles, de sorte que chacun d’eux soit en mesure de créer une image à la taille maximale configurée.
 
-### Format de fichier InDesign (INDD)   {#indesign-indd-file-format}
+### Format de fichier InDesign (INDD)  {#indesign-indd-file-format}
 
 Si vous avez l’intention de prendre en charge l’assimilation de fichiers INDD de manière à pouvoir générer le rendu dynamique de ce format de fichier, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
@@ -191,7 +191,7 @@ Les scripts suivants sont utilisés par l’intégration de Dynamic Media :
 
 ## Configuration de la taille des miniatures d’images {#configuring-image-thumbnail-size}
 
-Vous pouvez définir la taille des miniatures en configurant ces paramètres dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**. Le workflow comprend deux étapes au cours desquelles vous pouvez configurer la taille de miniature des ressources d’images. Bien qu’un composant (**[!UICONTROL Ressources d’image du processus de média dynamique]**) soit utilisé pour les ressources d’images dynamiques et que l’autre (**[!UICONTROL Miniatures des processus]**) soit exécuté pour la génération des miniatures statiques ou lorsqu’aucun autre processus ne parvient à générer des miniatures, *tous deux* doivent posséder les mêmes paramètres.
+Vous pouvez définir la taille des miniatures en configurant ces paramètres dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques (DAM)]**. Le workflow comprend deux étapes au cours desquelles vous pouvez configurer la taille de miniature des ressources d’images. Bien qu’un composant (**[!UICONTROL Ressources d’image du processus de média dynamique]**) soit utilisé pour les ressources d’images dynamiques et que l’autre (**[!UICONTROL Miniatures des processus]**) soit exécuté pour la génération des miniatures statiques ou lorsqu’aucun autre processus ne parvient à générer des miniatures, *tous deux* doivent posséder les mêmes paramètres.
 
 Avec l’étape **[!UICONTROL Ressources d’image du processus Dynamic Media]**, les miniatures sont générées par le serveur d’images et cette configuration est indépendante de la configuration appliquée à l’étape des **[!UICONTROL miniatures de processus]**. La génération de miniatures en passant par l’étape **[!UICONTROL Miniatures des processus]** constitue la méthode la plus lente et la plus gourmande en mémoire.
 
@@ -210,7 +210,7 @@ Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL
 
 **Pour configurer la taille des miniatures d’images**:
 
-1. Appuyez sur **[!UICONTROL Outils > Processus > Modèles > Ressource de mise à jour de gestion des actifs numériques > Modifier.]**
+1. Appuyez sur **[!UICONTROL Outils > Processus > Modèles > Ressource de mise à jour de gestion des actifs numériques (DAM) > Modifier.]**
 1. Appuyez sur l’étape **[!UICONTROL Ressources d’image du processus de média dynamique]**, puis sur l’onglet **[!UICONTROL Miniatures]**. Modifiez la taille de la miniature, si nécessaire, puis appuyez sur **[!UICONTROL OK.]**
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -437,7 +437,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 ## Définition des options de paramètres d’image prédéfinis à l’aide des modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
 
-Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de vous donner plus d’options lors de la définition de paramètres d’image prédéfinis. Le rendu d’image repose sur l’API de rendu d’image qui est définie en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
+Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu d’image repose sur l’API de rendu d’image qui est définie en détail dans la [Référence du protocole HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
 
 Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l’aide des modificateurs d’image.
 
