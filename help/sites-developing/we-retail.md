@@ -73,7 +73,7 @@ Geometrixx et ses nombreuses incarnations ont servi d’exemple de contenu dans 
 
 D’un point de vue technique, We.Retail est plus robuste et exploite la technologie AEM dernier cri pour garantir une souplesse et une évolutivité accrues, tout en offrant les fonctionnalités les plus récentes du produit.
 
-### Comparaison des fonctions  {#feature-comparison}
+### Comparaison des fonctions {#feature-comparison}
 
 Le tableau suivant vous donne un aperçu des principales fonctionnalités qui sont disponibles dans We.Retail par rapport à Geometrixx.
 
