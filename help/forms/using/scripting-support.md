@@ -18,7 +18,7 @@ ht-degree: 98%
 ---
 
 
-# Prise en charge des scripts pour les formulaires HTML5  {#scripting-support-for-html-forms}
+# Prise en charge des scripts pour les formulaires HTML5 {#scripting-support-for-html-forms}
 
 Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans les formulaires HTML5 se répartissent comme suit :
 
@@ -85,7 +85,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody>
 </table>
 
-### $hôte {#host}
+### $host {#host}
 
 <table>
  <tbody>
