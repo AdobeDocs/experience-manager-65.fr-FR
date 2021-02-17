@@ -160,7 +160,7 @@ Conversion d’un document Microsoft Word en document PDF à l’aide de l’API
 
 1. Convertissez le fichier en document PDF.
 
-   Convertissez le fichier en document PDF en appelant la méthode `GeneratePdfServiceClient` de l’objet `createPDF2` et en transmettant les valeurs suivantes :
+   Convertissez le fichier en document PDF en appelant la méthode `createPDF2` de l’objet `GeneratePdfServiceClient` et en transmettant les valeurs suivantes :
 
    * Objet `com.adobe.idp.Document` représentant le fichier à convertir.
    * Objet `java.lang.String` contenant l&#39;extension de fichier.
@@ -230,7 +230,7 @@ Conversion d’un document Microsoft Word en document PDF à l’aide de l’API
 
 1. Convertissez le fichier en document PDF.
 
-   Convertissez le fichier en document PDF en appelant la méthode `GeneratePDFServiceService` de l’objet `CreatePDF2` et en transmettant les valeurs suivantes :
+   Convertissez le fichier en document PDF en appelant la méthode `CreatePDF2` de l’objet `GeneratePDFServiceService` et en transmettant les valeurs suivantes :
 
    * Objet `BLOB` représentant le fichier à convertir.
    * Chaîne contenant l’extension de fichier.
@@ -239,8 +239,8 @@ Conversion d’un document Microsoft Word en document PDF à l’aide de l’API
    * Objet de chaîne contenant les paramètres de sécurité à utiliser. Vous pouvez spécifier `No Security`.
    * Objet `BLOB` facultatif contenant les paramètres à appliquer lors de la génération du document PDF.
    * Objet `BLOB` facultatif contenant des informations de métadonnées à appliquer au document PDF.
-   * Paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` remplit cet objet avec le document converti. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
-   * Paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` remplit cet objet avec le document de journal. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+   * Paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` remplit cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
+   * Paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` remplit cet objet avec le document de journal. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
 
 1. Récupérez les résultats.
 
@@ -627,12 +627,12 @@ Ce tableau liste le type d’informations utilisées pour imprimer des formats d
   </tr>
   <tr>
    <td><p>Instructions de la boîte de dialogue spécifique à l’application</p></td>
-   <td><p>Indique comment répondre aux boîtes de dialogue spécifiques à l’application. </p><p>Le fichier qui contient ces informations s'affiche.<i>`[nomappli]`</i>.dialog.<i>`[locale]`</i>.xml (par exemple, appmon.word.en_US.xml).</p></td>
+   <td><p>Indique comment répondre aux boîtes de dialogue spécifiques à l’application. </p><p>Le fichier qui contient ces informations est commun.<i>`[nomappli]`</i>.dialog.<i>`[locale]`</i>.xml (par exemple, appmon.word.en_US.xml).</p></td>
    <td><p>Ne modifiez pas ce fichier. </p><p>Pour ajouter des instructions de boîte de dialogue pour une nouvelle application native, voir <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Création ou modification d’un fichier XML de boîte de dialogue supplémentaire pour une application native</a>.</p></td>
   </tr>
   <tr>
    <td><p>Autres instructions de boîte de dialogue spécifiques à l’application </p></td>
-   <td><p>Spécifie les remplacements et les ajouts aux instructions de boîte de dialogue propres à l'application. La section présente un exemple de ces renseignements. </p><p>Le fichier qui contient ces informations s'affiche.<i>`[nom d’application]`</i>.addition.<i>`[locale]`</i>.xml. Un exemple est appmon.addition.en_US.xml.</p></td>
+   <td><p>Spécifie les remplacements et les ajouts aux instructions de boîte de dialogue propres à l'application. La section présente un exemple de ces renseignements. </p><p>Le fichier qui contient ces informations est commun.<i>`[nom d’application]`</i>.addition.<i>`[locale]`</i>.xml. Un exemple est appmon.addition.en_US.xml.</p></td>
    <td><p>Les fichiers de ce type peuvent être créés et modifiés à l’aide d’une application de modification XML. (Voir <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Création ou modification d’un fichier XML de boîte de dialogue supplémentaire pour une application native</a>.) </p><p><strong>Important</strong> : Vous devez créer des instructions de boîte de dialogue spécifiques à chaque application pour chaque application native que votre serveur prendra en charge. </p></td>
   </tr>
  </tbody>
@@ -642,9 +642,9 @@ Ce tableau liste le type d’informations utilisées pour imprimer des formats d
 
 Les fichiers XML de script demandent au service Generate PDF de naviguer dans les boîtes de dialogue de l’application de la même manière qu’un utilisateur navigue dans les boîtes de dialogue de l’application. Les fichiers XML de script demandent également au service Generate PDF de répondre aux boîtes de dialogue en exécutant des actions telles que appuyer sur des boutons, sélectionner ou désélectionner des cases à cocher ou sélectionner des options de menu.
 
-En revanche, les fichiers XML de boîte de dialogue répondent simplement aux boîtes de dialogue avec les mêmes types d’actions que celles utilisées dans les fichiers XML de script.
+En revanche, les fichiers XML de boîte de dialogue répondent simplement aux boîtes de dialogue avec les mêmes types d’actions que ceux utilisés dans les fichiers XML de script.
 
-#### Terminologie des éléments de la boîte de dialogue et de la fenêtre {#dialog-box-and-window-element-terminology}
+#### Terminologie des éléments de boîte de dialogue et de fenêtre {#dialog-box-and-window-element-terminology}
 
 Cette section et la section suivante utilisent une terminologie différente pour les boîtes de dialogue et les composants qu’elles contiennent, selon la perspective décrite. Les composants de la boîte de dialogue sont des éléments tels que des boutons, des champs et des zones de liste modifiable.
 
