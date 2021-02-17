@@ -55,7 +55,7 @@ Ce sont deux paires de modes d’exécution mutuellement exclusifs. Par exemple,
 >
 >Vous *ne pouvez pas* modifier ces modes d’exécution après l’installation.
 
-## Modes d’exécution personnalisés  {#customized-run-modes}
+## Modes d’exécution personnalisés {#customized-run-modes}
 
 Vous pouvez également créer vos propres modes d’exécution personnalisés. Ils peuvent être combinés pour créer différents scénarios, par exemple :
 
