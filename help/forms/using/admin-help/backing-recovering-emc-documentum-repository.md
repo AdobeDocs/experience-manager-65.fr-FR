@@ -47,7 +47,7 @@ Les modules EMC NetWorker suivants sont nécessaires :
 * Module NetWorker pour le type de base de données utilisé par votre serveur de contenu
 * Module NetWorker pour Documentum
 
-## Préparation d’EMC Document Content Server pour la sauvegarde et la récupération  {#preparing-the-emc-document-content-server-for-backup-and-recovery}
+## Préparation d’EMC Document Content Server pour la sauvegarde et la récupération {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
 Cette section décrit l’installation et la configuration du logiciel EMC NetWorker sur le serveur de contenu.
 
