@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
 source-wordcount: '6029'
-ht-degree: 78%
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ Le schéma d’architecture suivant décrit le fonctionnement de Dynamic Media�
 
 Avec la nouvelle architecture, AEM est responsable des ressources issues de sources originales et des synchronisations avec Dynamic Media pour le traitement et la publication des ressources :
 
-1. Lorsque la ressource issue de sources originales est chargée dans AEM, elle est répliquée vers Dynamic Media. À ce stade, Dynamic Media gère l’intégralité du traitement des ressources et de la génération du rendu, comme le codage vidéo et les variantes dynamiques d’une image.  <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. Lorsque la ressource issue de sources originales est chargée dans AEM, elle est répliquée vers Dynamic Media. À ce stade, Dynamic Media gère l’intégralité du traitement des ressources et de la génération du rendu, comme le codage vidéo et les variantes dynamiques d’une image. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
 1. Une fois les rendus générés, AEM peut accéder de manière sécurisée aux rendus Dynamic Media distants et en afficher un aperçu (aucune donnée binaire n’est renvoyée à l’instance AEM).
 1. Une fois que le contenu est prêt à être publié et approuvé, il déclenche l’envoi du contenu par le service Dynamic Media vers les serveurs de diffusion et la mise en cache du contenu sur le réseau de diffusion de contenu.
 
@@ -155,7 +155,7 @@ Les tâches d’installation et de configuration incluent :
 * [Configuration des paramètres généraux de l’application](#configuring-application-general-settings)
 * [Configuration de la gestion des couleurs](#configuring-color-management)
 * [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats)
-* [Ajouter les types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
+* [Ajout de types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
 * [Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Configuration de la publication pour Image Server  {#publishing-setup-for-image-server}
@@ -235,7 +235,7 @@ Vous pouvez définir les types de ressources qui doivent être traités par Dyna
 * Conversion d’un PDF Adobe en ressource de catalogue électronique.
 * Conversion d’un document Adobe Photoshop (.psd) en ressource de modèle de bannière afin de permettre la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript encapsulé Adobe Photoshop (.eps).
-* [Les ](/help/assets/video-profiles.md) profils vidéo et les  [profils ](/help/assets/image-profiles.md) d’imagerie peuvent être utilisés pour définir le traitement des vidéos et des images, respectivement.
+* Des [profils vidéo](/help/assets/video-profiles.md) et des [profils d’images](/help/assets/image-profiles.md) peuvent être utilisés pour définir le traitement des vidéos et des images.
 
 Voir la section [Chargement des ressources](/help/assets/manage-assets.md#uploading-assets).
 
@@ -262,7 +262,7 @@ Voir la section [Chargement des ressources](/help/assets/manage-assets.md#upload
 
 1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL CRXDE Lite]** pour revenir dans AEM.
 
-#### Ajouter les types MIME pour les formats non pris en charge {#adding-mime-types-for-unsupported-formats}
+#### Ajout de types MIME pour les formats non pris en charge {#adding-mime-types-for-unsupported-formats}
 
 Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en charge dans AEM Assets. Pour vous assurer que tout nouveau nœud ajouté dans CRXDE Lite n’est pas supprimé par AEM, vous devez vous assurer que vous déplacez le type MIME avant `image_` et que sa valeur activée est définie sur **[!UICONTROL false.]**
 
@@ -521,7 +521,7 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
-   Vous pouvez augmenter **[!UICONTROL le nombre maximal de tâches parallèles]** afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un transfert en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
+   Vous pouvez augmenter le **[!UICONTROL nombre maximal de tâches en parallèle]** afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité du matériel. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un chargement massif unique, vous pouvez utiliser une valeur élevée. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de cœurs) peut avoir des effets négatifs sur les activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -545,7 +545,7 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
-   Vous pouvez augmenter le nombre maximal de tâches parallèles afin de prendre en charge de manière adéquate le téléchargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un transfert en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
+   Vous pouvez augmenter le nombre maximal de tâches en parallèle afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité du matériel. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un chargement massif unique, vous pouvez utiliser une valeur élevée. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de cœurs) peut avoir des effets négatifs sur les activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
