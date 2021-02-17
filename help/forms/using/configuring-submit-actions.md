@@ -101,7 +101,7 @@ L’action d’envoi **Envoyer un courrier électronique** envoie un courrier é
 >[!NOTE]
 Tous les champs de formulaire doivent avoir des noms d’élément différents, même s’ils sont définis sur des panneaux différents, afin d’inclure les données de formulaire dans un message électronique.
 
-## Envoyer un fichier PDF par courrier électronique  {#send-pdf-via-email}
+## Envoyer un fichier PDF par courrier électronique {#send-pdf-via-email}
 
 L’action d’envoi **Envoyer le PDF par courrier électronique** envoie un message électronique avec un fichier PDF contenant des données de formulaire à un ou plusieurs destinataires lors d’un envoi réussi du formulaire.
 
