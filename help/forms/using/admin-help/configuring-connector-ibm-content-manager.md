@@ -22,7 +22,7 @@ ht-degree: 96%
 
 Le connecteur pour IBM Content Manager permet la communication entre AEM forms et IBM Content Manager. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Configuration de la connexion IBM Content Manager  {#configure-the-ibm-content-manager-connection}
+## Configuration de la connexion IBM Content Manager {#configure-the-ibm-content-manager-connection}
 
 1. Dans Administration Console, cliquez sur Services > Connector for IBM Content Manager.
 1. Dans le champ Nom de la banque de données, saisissez le nom de la banque de données IBM Content Manager à laquelle vous voulez vous connecter. S’il s’agit d’une base de données locale, entrez son nom. S’il s’agit d’une base de données distante, indiquez son nom d’alias.
