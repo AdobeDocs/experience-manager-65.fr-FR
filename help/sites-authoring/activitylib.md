@@ -76,7 +76,7 @@ Quand vous créez une marque avec la console Activités, elle apparaît égaleme
 1. Saisissez le titre de la marque tel qu’il doit apparaître dans les consoles Activités et Offres. Si vous le souhaitez, saisissez ou sélectionnez une ou plusieurs balises à associer à la marque.
 1. Cliquez ou appuyez sur **Créer**. Votre marque apparaît dans la console Activités.
 
-## Ajout/modification d’une activité à l’aide de la console Activités   {#adding-editing-an-activity-using-the-activities-console}
+## Ajout/modification d’une activité à l’aide de la console Activités  {#adding-editing-an-activity-using-the-activities-console}
 
 Ajoutez une activité ou modifiez une activité existante pour concentrer vos efforts marketing sur certaines audiences. Lorsque vous créez/modifiez une activité, vous spécifiez les informations suivantes :
 
