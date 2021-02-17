@@ -17,7 +17,7 @@ ht-degree: 71%
 ---
 
 
-# Lecteurs d’écran pour les formulaires HTML5  {#screen-readers-for-html-forms}
+# Lecteurs d’écran pour les formulaires HTML5 {#screen-readers-for-html-forms}
 
 Les composants de formulaires HTML5 rendent des modèles de formulaires XFA au format HTML5. Tous les navigateurs standard supportant le format HTML5 peuvent générer ces formulaires. Pour prendre en charge une expérience de capture de données similaire entre les formulaires PDF et HTML5, la mise en page des formulaires PDF est conservée dans les formulaires au format HTML5.
 
