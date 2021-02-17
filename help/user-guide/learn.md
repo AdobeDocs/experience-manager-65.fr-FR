@@ -47,7 +47,7 @@ Les communautés sont une fonctionnalité Adobe Experience Manager qui vous aide
 
 ## AEM Livefyre {#aem-livefyre}
 
-aem Livefyre est une toute nouvelle fonctionnalité de Adobe Experience Manager qui vous permet de tirer parti de tout ce qui est partagé sur le Web pour créer un flux constant de contenu frais et de haute qualité sur vos propres sites. [Apprenez ](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) plus ou  [sautez directement dans nos guides.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre est une toute nouvelle fonctionnalité de Adobe Experience Manager qui vous permet de tirer parti de tout ce qui est partagé sur le Web pour créer un flux constant de contenu frais et de haute qualité sur vos propres sites. [Apprenez ](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) plus ou  [sautez directement dans nos guides.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM Foundation {#aem-foundation}
 
