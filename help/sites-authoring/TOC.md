@@ -15,7 +15,7 @@ ht-degree: 88%
 ---
 
 
-# Guide de l’utilisateur pour la création dans AEM 6.5  {#authoring}
+# Guide de l’utilisateur pour la création dans AEM 6.5 {#authoring}
 
 + [Présentation du guide de l’utilisateur de création](home.md)
 + Tâches, outils et concepts essentiels pour la création AEM {#essentials}
@@ -54,7 +54,7 @@ ht-degree: 88%
    + [Console des composants](default-components-console.md)
    + [Mise en page réactive](responsive-layout.md)
    + [Content Insight ](content-insights.md)
-   + [Création d’un contenu accessible (conformité WCAG 2.1)](creating-accessible-content.md)
+   + [Création de contenu accessible (conformité WCAG 2.1)](creating-accessible-content.md)
    + [Configuration de composants en mode de conception](default-components-designmode.md)
    + [Composants de base](default-components-foundation.md)
    + [Génération de modèles automatique](scaffolding.md)
@@ -80,8 +80,8 @@ ht-degree: 88%
    + [Analyse des performances de page](ci-analyze.md)
    + [Affichage des données d’analyse de page](pa-using.md)
    + [Ajout de fonctionnalités Search&amp;Promote à une page](search-and-promote.md)
-+ Personnalisation   {#personalization}
-   + [Personnalisation ](personalization.md)
++ Personnalisation  {#personalization}
+   + [Personnalisation](personalization.md)
    + [Aperçu des pages à l’aide des données ContextHub](ch-previewing.md)
    + [Création de contenu ciblé en mode Ciblage](content-targeting-touch.md)
    + [Utilisation de contenu ciblé sur plusieurs sites](multisite-support-targeted-content.md)
@@ -90,7 +90,7 @@ ht-degree: 88%
    + [Gestion des audiences](managing-audiences.md)
    + [Création et gestion d’offres](offerlib.md)
    + [Compréhension de la segmentation](segmentation-overview.md)
-+ aem et Adobe Campaign {#aem-adobe-campaign}
++ AEM et Adobe Campaign {#aem-adobe-campaign}
    + [Utilisation d’Adobe Campaign](adobe-campaign.md)
    + [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](campaign.md)
    + [Ciblage de votre Adobe Campaign](target-adobe-campaign.md)
