@@ -57,7 +57,7 @@ Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. Pour qu
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Feuille de style Geometrixx   {#geometrixx-style-sheet}
+### Feuille de style Geometrixx  {#geometrixx-style-sheet}
 
 Les exemples de composants de page nécessitent que tous les sélecteurs commencent par `.asseteditor` dans `static.css` (`/etc/designs/geometrixx/static.css`). Bonne pratique : copiez tous les sélecteurs `.asseteditor` dans votre feuille de style et ajustez les règles en fonction de vos besoins.
 
