@@ -68,7 +68,7 @@ Les modifications apportées au modèle de flux de travail qui se produisent et/
 >
 >Si le modèle de workflow est modifié après ce stade (sans déclenchement de **synchronisation**), son instance d’exécution ne reflète pas ces modifications. Seuls les modèles de mise en œuvre générés après la mise à jour reflètent les modifications. Les exceptions sont les scripts ECMA sous-jacents, qui ne sont conservés qu’une seule fois, de sorte que les modifications apportées à ces derniers sont sélectionnées.
 
-### Étape  {#step}
+### Étape {#step}
 
 Chaque étape accomplit une tâche discrète. Il existe différents types d’étapes de workflow :
 
@@ -205,7 +205,7 @@ Par exemple, pour un workflow avec six étapes et quatre phases :
    |---|---|
    | Étape 1 | Créer |
    | Étape 2 | Créer |
-   | Étape 3 | Réviser |
+   | Étape 3 | Révision |
    | Étape 4 | Approuver |
    | Étape 5 | Terminer |
    | Étape 6 | Terminer |
