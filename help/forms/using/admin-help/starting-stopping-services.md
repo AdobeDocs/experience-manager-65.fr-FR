@@ -25,7 +25,7 @@ Il existe deux types de services faisant partie d’AEM Forms :
 * Services qui contrôlent le serveur d’applications et la base de données AEM forms.
 * Services qui contrôlent les modules AEM forms
 
-## Démarrage ou arrêt des services associés aux modules AEM forms  {#start-or-stop-the-services-associated-with-aem-forms-modules}
+## Démarrage ou arrêt des services associés aux modules AEM forms {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
 Les modules AEM forms (par exemple, Forms, Rights Management et Output) fonctionnent comme des services. Vous devrez parfois arrêter ou démarrer les services de ces modules AEM forms. Par exemple, vous devez arrêter puis redémarrer un service AEM forms après avoir procédé à une modification sur un paramètre de ce service.
 
