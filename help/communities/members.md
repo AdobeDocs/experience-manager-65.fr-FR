@@ -190,7 +190,7 @@ Les champs requis pour créer un groupe de membres côté publication sont les s
 
    *Une fois créé, l’ID ne peut plus être modifié.*
 
-* **[!UICONTROL Nom]**
+* **[!UICONTROL Name]** (Nom)
 
    (*Facultatif*) Nom d’affichage du groupe.
 
