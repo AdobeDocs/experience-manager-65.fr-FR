@@ -30,7 +30,7 @@ ht-degree: 76%
 
 * Présentation des [bibliothèques côté client](/help/sites-developing/clientlibs.md) AEM
 
-## Modèle de formulaire adaptatif  {#adaptive-form-template}
+## Modèle de formulaire adaptatif {#adaptive-form-template}
 
 Un modèle de formulaire adaptatif est un modèle de page AEM spécialisé avec des propriétés et une structure de contenu qui est utilisé pour créer un formulaire adaptatif. Il possède des dispositions, des styles et une structure de contenu initiale de base préconfigurés.
 
