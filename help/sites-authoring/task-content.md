@@ -24,7 +24,7 @@ Les tâches représentent des éléments de travail à effectuer sur le contenu.
 
 Les tâches sont également utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours, y compris des tâches de worfklow.
 
-## Suivi de la progression du projet    {#tracking-project-progress}
+## Suivi de la progression du projet   {#tracking-project-progress}
 
 Vous pouvez surveiller l’état d’avancement de votre projet en examinant les tâches actives/terminées au sein du projet, représentées par la mosaïque **Tâches**. L’état d’avancement de votre projet peut être déterminé par les éléments suivants :
 
