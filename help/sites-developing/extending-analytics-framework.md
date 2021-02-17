@@ -255,7 +255,7 @@ function s_doPlugins(s) {
 s.doPlugins=s_doPlugins;
 ```
 
-aem installe les modules externes Adobe Analytics suivants, de sorte qu’ils soient disponibles par défaut :
+AEM installe les modules externes Adobe Analytics suivants, de sorte qu’ils soient disponibles par défaut :
 
 * getQueryParam()
 * getPreviousValue()
