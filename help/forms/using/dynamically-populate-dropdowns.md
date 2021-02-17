@@ -18,7 +18,7 @@ ht-degree: 80%
 ---
 
 
-# Remplissage dynamique des listes déroulantes  {#dynamically-populating-drop-down-lists}
+# Remplissage dynamique des listes déroulantes {#dynamically-populating-drop-down-lists}
 
 ## Conditions préalables {#prerequisites}
 
