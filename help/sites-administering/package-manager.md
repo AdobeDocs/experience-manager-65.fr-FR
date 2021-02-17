@@ -71,7 +71,7 @@ Une définition de module comprend différents types d’informations :
 * [Captures d’écran de module](#package-screenshots)
 * [Icônes de module](#package-icons)
 
-### Paramètres du module  {#package-settings}
+### Paramètres du module {#package-settings}
 
 Vous pouvez modifier différents paramètres du module pour définir certains aspects comme la description des modules, les bogues associés, les dépendances et les informations sur le fournisseur.
 
@@ -79,7 +79,7 @@ La boîte de dialogue **Paramètres du module** est accessible à l’aide du bo
 
 ![packagesedit](assets/packagesedit.png)
 
-| **Field (Champ)** | **Description** |
+| **Champ** | **Description** |
 |---|---|
 | Nom | Nom du package. |
 | Groupe | Nom du groupe auquel ajouter le package, pour l’organisation des packages. Saisissez le nom d’un nouveau groupe ou sélectionnez un groupe existant. |
@@ -144,7 +144,7 @@ La boîte de dialogue **Paramètres du module** est accessible à l’aide du bo
 
 ![packages-dépendances](assets/packagesdependencies.png)
 
-| **Field (Champ)** | **Description** | **Format/Exemple** |
+| **Champ** | **Description** | **Format/Exemple** |
 |---|---|---|
 | Testé avec | Nom du produit et version avec lesquels ce pack est ciblé ou compatible. | *AEM 6* |
 | Problèmes/bogues résolus | Un champ de texte vous permettant de liste des détails des bogues corrigés avec ce paquet. Répertoriez chaque bogue sur une ligne distincte. | résumé de bug-nr |
@@ -220,7 +220,7 @@ Feature Packs officiels :
 
 ![](do-not-localize/chlimage_1-29.png)
 
-## Gestionnaire de modules  {#package-manager}
+## Gestionnaire de modules {#package-manager}
 
 Le Gestionnaire de modules gère les modules dans l’installation locale d’AEM. Après avoir [affecté les autorisations nécessaires](#permissions-needed-for-using-the-package-manager), vous pouvez utiliser le Gestionnaire de modules pour différentes actions, dont la configuration, la création, le téléchargement et l’installation des modules. Les principaux éléments à configurer sont les suivants :
 
@@ -270,7 +270,7 @@ Pour créer une définition de module :
        Champ de texte permettant d’indiquer une version. Il sera ajouté au nom du module pour former le nom du fichier ZIP.
    Cliquez sur **OK** pour créer le module.
 
-1. aem liste le nouveau package dans le dossier de groupe approprié.
+1. AEM liste le nouveau package dans le dossier de groupe approprié.
 
    ![packagesitem](assets/packagesitem.png)
 
@@ -392,7 +392,7 @@ Cette section décrit comment télécharger un module d’AEM vers votre systèm
 
 1. Cliquez sur le lien formé par le nom du fichier ZIP (souligné) pour le module à télécharger, par exemple, `export-for-offline.zip`.
 
-   aem télécharge le package sur votre ordinateur (à l’aide d’une boîte de dialogue de téléchargement standard du navigateur).
+   AEM télécharge le package sur votre ordinateur (à l’aide d’une boîte de dialogue de téléchargement standard du navigateur).
 
 ### Chargement des modules à partir du système de fichiers {#uploading-packages-from-your-file-system}
 
@@ -470,7 +470,7 @@ Ces options sont détaillées ci-dessous.
 
    **Résolution d’erreurs**
 
-   Pour résoudre ce problème, le responsable de la gestion du fichier d’incrustation dans `/apps` doit examiner les modifications apportées au fichier d’incrustation dans `/libs` et incorporer les modifications nécessaires dans l’incrustation ( `/apps`), puis redéployer le fichier d’incrustation.
+   Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/apps` doit examiner les modifications apportées au fichier superposé dans `/libs` et incorporer les modifications nécessaires dans le fichier de recouvrement ( `/apps`), puis redéployer le fichier superposé.
 
    >[!NOTE]
    >
@@ -626,7 +626,7 @@ Si votre instance est en cours d’exécution, l’ajout d’un module au dossie
 
 ### Désinstallation des modules  {#uninstalling-packages}
 
-aem vous permet de désinstaller des packages. Cette action renvoie le contenu concerné du référentiel vers l’instantané enregistré juste avant l’installation des modules.
+AEM vous permet de désinstaller des packages. Cette action renvoie le contenu concerné du référentiel vers l’instantané enregistré juste avant l’installation des modules.
 
 >[!NOTE]
 >
@@ -655,7 +655,7 @@ Pour supprimer un module dans les listes du Gestionnaire de modules :
 
    ![packagesdelete](assets/packagesdelete.png)
 
-1. aem demande de confirmer que vous souhaitez supprimer le package. Cliquez sur **OK** pour confirmer la suppression.
+1. AEM demande de confirmer que vous souhaitez supprimer le package. Cliquez sur **OK** pour confirmer la suppression.
 
 >[!CAUTION]
 >
@@ -684,5 +684,5 @@ Pour plus d&#39;informations, consultez la [documentation sur la distribution de
 
 >[!CAUTION]
 >
->aem gestionnaire de paquets n&#39;est pas utilisable avec Software Distribution pour le moment, vous téléchargez vos paquets sur votre disque local.
+>AEM gestionnaire de paquets n&#39;est pas utilisable avec Software Distribution pour le moment, vous téléchargez vos paquets sur votre disque local.
 
