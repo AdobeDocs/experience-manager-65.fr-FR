@@ -31,7 +31,7 @@ ht-degree: 94%
 
 1. Cliquez sur Enregistrer.
 
-## Définition de l’emplacement du rendu des contenus au format PDF  {#specify-the-location-where-pdf-content-is-rendered}
+## Définition de l’emplacement du rendu des contenus au format PDF {#specify-the-location-where-pdf-content-is-rendered}
 
 1. Sous Sortie de formulaire, dans la liste Rendu vers, sélectionnez l’une des options suivantes :
 
