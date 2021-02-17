@@ -63,7 +63,7 @@ TarMK est conçu pour les performances, tandis que MongoMK et RDBMK sont conçus
 
 Pour obtenir la liste des Microkernels pris en charge, voir [Exigences techniques d’AEM Forms on OSGi](/help/sites-deploying/technical-requirements.md) ou [Combinaisons de plates-formes prises en charge AEM Forms on JEE](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
-## Mongo ou Microkernel de base de données relationnelle versus TarMK  {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
+## Mongo ou Microkernel de base de données relationnelle versus TarMK {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 Un environnement AEM Forms (en grappes) évolutif est un ensemble de deux instances d’auteur actives ou plus, configurées horizontalement. Vous pouvez choisir d’exécuter plus d’une instance d’auteur si un seul serveur prenant en charge toutes les activités de création simultanées n’est plus fiable.
 
