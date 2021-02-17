@@ -22,7 +22,7 @@ ht-degree: 85%
 
 Lorsque vous vous connectez à l’application AEM Forms, vous êtes redirigé vers l’écran d’accueil.
 
-## Écran d’accueil par défaut  {#default-home-screen}
+## Écran d’accueil par défaut {#default-home-screen}
 
 Par défaut, l’écran d’accueil affiche tous les formulaires, y compris les points de départ et les tâches (si le serveur connecté est activé pour le flux de travail d’AEM forms), avec les vignettes associées. Vous pouvez spécifier les vignettes dans le serveur AEM Forms.
 
