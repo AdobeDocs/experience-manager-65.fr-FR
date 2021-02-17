@@ -23,7 +23,7 @@ Les formulaires adaptatifs facilitent et optimisent le remplissage des formulair
 
 JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html)
 
-## Recommandations relatives à l’écriture d’expressions  {#best-practices-for-writing-expressions}
+## Recommandations relatives à l’écriture d’expressions {#best-practices-for-writing-expressions}
 
 * Lors de l’écriture d’expressions, pour accéder aux champs et aux panneaux, vous pouvez utiliser le nom du champ ou du panneau. Pour accéder à la valeur d’un champ, utilisez la propriété de la valeur. Par exemple, `field1.value`
 * Utilisez des noms uniques pour l’ensemble des champs et des panneaux du formulaire. Vous éviterez ainsi les conflits possibles créés à cause des noms de champs lors de l’écriture d’expressions.
