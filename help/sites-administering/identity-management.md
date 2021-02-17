@@ -55,7 +55,7 @@ La fonctionnalité supplémentaire peut être configurée ou développée :
 >
 >Les informations spécifiées dans le profil peuvent également être utilisées pour proposer à l’utilisateur du contenu ciblé par le biais de [segments](/help/sites-administering/campaign-segmentation.md) et de [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-## Formulaires d’enregistrement  {#registration-forms}
+## Formulaires d’enregistrement {#registration-forms}
 
 Un [formulaire](/help/sites-authoring/default-components.md#form-component) peut être utilisé pour collecter des informations d’enregistrement, puis générer le nouveau compte et le nouveau profil.
 
@@ -86,7 +86,7 @@ Par exemple, les utilisateurs peuvent se connecter ou créer un compte à l’ai
 
 Tout comme il y a un mécanisme de connexion, un mécanisme de déconnexion est également nécessaire. Il est disponible sous la forme de l’option **Se connecter** dans Geometrixx.
 
-## Affichage et mise à jour d’un profil  {#viewing-and-updating-a-profile}
+## Affichage et mise à jour d’un profil {#viewing-and-updating-a-profile}
 
 En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré des informations sur son profil. Il doit pouvoir les afficher et/ou les mettre à jour ultérieurement. Cela peut se faire sous une forme similaire ; par exemple, en Geometrixx :
 
