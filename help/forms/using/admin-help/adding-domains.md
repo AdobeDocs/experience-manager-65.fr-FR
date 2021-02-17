@@ -36,7 +36,7 @@ ht-degree: 99%
 
 Après avoir créé un domaine d’entreprise, synchronisez manuellement l’annuaire ou créez un déclencheur à cet effet pour que User Management puisse l’utiliser. Vous pouvez ensuite configurer un calendrier de synchronisation des annuaires et effectuer une synchronisation manuelle, si nécessaire. Voir [Synchronisation des annuaires](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).
 
-## Ajout d’un domaine local  {#add-a-local-domain}
+## Ajout d’un domaine local {#add-a-local-domain}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine local.
