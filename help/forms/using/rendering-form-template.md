@@ -17,13 +17,13 @@ ht-degree: 79%
 ---
 
 
-# Rendu du modèle de formulaire pour des formulaires HTML5  {#rendering-form-template-for-html-forms}
+# Rendu du modèle de formulaire pour des formulaires HTML5 {#rendering-form-template-for-html-forms}
 
 ## Point de fin du rendu {#render-endpoint}
 
 Les formulaires HTML5 ont la notion de **Profils** qui sont exposés en tant que points de terminaison REST pour activer le rendu mobile des modèles de formulaire. Ces Profils ont associé **Profil Renderer**. Il s’agit de pages JSP chargées de générer une représentation HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point de fin du rendu. Le point de fin du rendu par défaut du formulaire pointant vers le profil « par défaut» ressemble à :
 
-https://&quot;a0/>hôte *:&quot;a2/>port&lt;a3/&quot;/content/xfaforms/profiles/default.html?contentRoot=&quot;a4/>chemin d’accès du dossier contenant le formulaire xdp&lt;a5/&quot;&amp;template=&quot;a6/>nom de xdp&lt;a7/&quot;*******
+https://&quot;a0/>hôte *:&quot;a2/>port&lt;a3/&quot;/content/xfaforms/profiles/default.html?contentRoot=&quot;a4/>chemin d’accès du dossier contenant le formulaire xdp&lt;a5/&quot;&amp;template=&quot;a6/>nom du fichier xdp&lt;a7/&quot;*******
 
 Par exemple, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
