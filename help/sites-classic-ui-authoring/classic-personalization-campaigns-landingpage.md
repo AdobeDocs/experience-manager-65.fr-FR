@@ -55,7 +55,7 @@ Dans AEM, vous pouvez créer des pages d’entrée en procédant comme suit :
 1. Importez le module de conception sur la page de l’importateur.
 1. Modifiez et publiez la page.
 
-### Pages d’entrée pour ordinateurs de bureau  {#desktop-landing-pages}
+### Pages d’entrée pour ordinateurs de bureau {#desktop-landing-pages}
 
 Un exemple de page d’entrée dans AEM se présente comme suit :
 
