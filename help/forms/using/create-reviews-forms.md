@@ -20,7 +20,7 @@ ht-degree: 88%
 
 # Création et gestion de révisions des actifs d’un formulaire{#creating-and-managing-reviews-for-assets-in-forms}
 
-## Réviser {#review}
+## Révision {#review}
 
 Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajouter des commentaires sur un élément disponible dans un formulaire.
 
@@ -37,7 +37,7 @@ Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajo
 
 1. Renseignez toutes les informations restantes et cliquez ensuite sur Démarrer.
 
-### Actions survenant lorsqu’une révision est configurée  {#actions-that-occur-when-a-review-is-set-up}
+### Actions survenant lorsqu’une révision est configurée {#actions-that-occur-when-a-review-is-set-up}
 
 Cette section décrit ce qui se produit lorsqu’une révision est créée ou configurée.
 
