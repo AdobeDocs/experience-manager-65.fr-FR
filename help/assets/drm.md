@@ -1,12 +1,12 @@
 ---
 title: Digital Rights Management des actifs
-description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager].
+description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] .
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '1398'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -50,7 +50,7 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 
 1. Dans la console [!DNL Assets], cliquez sur l’option **[!UICONTROL Rechercher]** de la barre d’outils pour afficher la zone Omni-recherche.
 
-1. Avec le curseur dans la zone Omnisearch, sélectionnez la clé `Enter` pour afficher la page des résultats de la recherche.
+1. Avec le curseur dans la zone Omni-recherche, sélectionnez la touche `Enter` pour afficher la page des résultats de la recherche.
 1. Ouvrez le panneau de recherche dans le rail de gauche. Cliquez sur l’option **[!UICONTROL Statut d’expiration]** pour développer l’option.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
