@@ -29,7 +29,7 @@ La fonctionnalité Infrastructure de personnalisation est conçue pour vous aide
 
 L’infrastructure de personnalisation comprend deux composants : **Surface d’API** et **Classification du contenu**.
 
-#### Surface d’API  {#api-surface}
+#### Surface d’API {#api-surface}
 
 Dans les versions précédentes d’AEM, de nombreuses API étaient exposées par l’intermédiaire du jar Uber. Bien que certaines de ces API n’étaient pas destinées à être utilisées par les clients, elles étaient exposées afin de prendre en charge la fonctionnalité AEM entre les différents modules. Dorénavant, les API Java seront marquées comme étant publiques ou privées pour indiquer aux utilisateurs lesquelles peuvent être utilisées en toute sécurité dans le cadre des mises à niveau. Voici d’autres observations :
 
