@@ -70,7 +70,7 @@ Environnement de test de l’auteurPour vérifier les modifications. Le nombre d
 
 En outre, les environnements peuvent varier, d’un système à un serveur exécutant AEM et un serveur d’application, à un ensemble d’instances organisées en grappes multiserveur et multiprocesseur hautement évoluées. Nous vous recommandons d’utiliser un ordinateur distinct pour chaque système de production et de ne pas exécuter d’autres applications sur ces ordinateurs.
 
-## Remarques génériques concernant le dimensionnement du matériel  {#generic-hardware-sizing-considerations}
+## Remarques génériques concernant le dimensionnement du matériel {#generic-hardware-sizing-considerations}
 
 Les sections suivantes fournissent des instructions pour calculer les configurations matérielles requises, en prenant en compte plusieurs points. Pour les systèmes de grande taille, nous suggérons que vous réalisiez un simple jeu de tests d’évaluation des performances en interne sur une configuration de référence.
 
