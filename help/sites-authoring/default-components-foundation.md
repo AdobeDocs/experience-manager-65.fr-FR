@@ -62,7 +62,7 @@ Les composants sont regroupés dans diverses catégories appelées groupes de co
 
 Les composants de type Général sont des composants de base qui servent à créer du contenu.
 
-### Élément de compte  {#account-item}
+### Élément de compte {#account-item}
 
 >[!CAUTION]
 >
@@ -277,7 +277,7 @@ Des [fragments de contenu](/help/sites-authoring/content-fragments.md) sont cré
 
 Cette option permet de transférer un fichier compressé qui contient un bloc de conception.
 
-### Téléchargement {#download}
+### Télécharger {#download}
 
 >[!CAUTION]
 >
@@ -285,7 +285,7 @@ Cette option permet de transférer un fichier compressé qui contient un bloc de
 
 Le composant Télécharger crée un lien dans la page web sélectionnée pour télécharger un fichier spécifique. Faites glisser un élément à partir de l’Outil de recherche de contenu ou téléchargez un fichier.
 
-* **Téléchargement**
+* **Télécharger**
 
    * **Description**
 Courte description affichée avec le lien de téléchargement.
@@ -608,7 +608,7 @@ Vous pouvez configurer :
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-### Référence   {#reference}
+### Référence  {#reference}
 
 >[!CAUTION]
 >
@@ -1197,7 +1197,7 @@ Une sélection de types d’action est incluse dans une installation AEM standar
             Page utilisée lors de la création d’un compte.
       * **Créer le contenu**
 
-         * Chemin d’accès au contenu
+         * Content Path (Chemin d’accès au contenu)
 
             Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
 
@@ -1270,7 +1270,7 @@ Une sélection de types d’action est incluse dans une installation AEM standar
             Page utilisée pour modifier le mot de passe.
       * **Stocker le contenu**
 
-         * **Chemin d’accès au contenu**
+         * **Content Path** (Chemin d’accès au contenu)
 
             Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
             `/forms/feedback/`
