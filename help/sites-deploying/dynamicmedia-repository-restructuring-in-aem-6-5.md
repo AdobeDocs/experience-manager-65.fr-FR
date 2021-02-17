@@ -127,7 +127,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
  </tbody>
 </table>
 
-### Divers  {#misc}
+### Divers {#misc}
 
 <table>
  <tbody>
