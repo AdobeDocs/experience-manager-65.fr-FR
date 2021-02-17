@@ -26,7 +26,7 @@ Procédez comme suit pour contrôler la façon dont les Live Copies sont synchro
 * Déterminez si des configurations de déploiement existantes répondent à vos besoins ou si vous devez en créer d’autres.
 * Spécifiez les configurations du déploiement à utiliser avec les Live Copies.
 
-## Configurations du déploiement installées et personnalisées  {#installed-and-custom-rollout-configurations}
+## Configurations du déploiement installées et personnalisées {#installed-and-custom-rollout-configurations}
 
 Cette section contient des informations sur les configurations du déploiement installées et les actions de synchronisation qu’elles utilisent, ainsi que sur la création de configurations personnalisées, si nécessaire.
 
