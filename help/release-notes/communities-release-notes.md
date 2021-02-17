@@ -21,7 +21,7 @@ Pour obtenir la version la plus récente, consultez la section [Déploiement de 
 ### Améliorations de l’engagement communautaire {#enhancements-to-community-engagement}
 
 **@Mentions**
-supportLes communautés AEM permettent désormais aux utilisateurs enregistrés de baliser (mentionner) d&#39;autres membres enregistrés pour attirer leur attention, dans le contenu généré par l&#39;utilisateur. Les membres balisés (mentionnés) sont ensuite notifiés, avec un lien profond vers le Contenu généré par l’utilisateur correspondant. Les utilisateurs peuvent toutefois choisir d’activer/de désactiver les notifications par e-mail et web.
+supportLes communautés AEM permettent maintenant aux utilisateurs enregistrés de baliser (mentionner) d&#39;autres membres enregistrés pour attirer leur attention, dans le contenu généré par l&#39;utilisateur. Les membres balisés (mentionnés) sont ensuite notifiés, avec un lien profond vers le Contenu généré par l’utilisateur correspondant. Les utilisateurs peuvent toutefois choisir d’activer/de désactiver les notifications par e-mail et web.
 
 ![Prise en charge des mentions @](assets/at-mentions.png)
 
@@ -61,7 +61,7 @@ Communities, à partir de la version AEM 6.5, permet une administration (et une
 
 Les administrateurs de site peuvent créer un groupe à n’importe quel niveau de la hiérarchie et devenir les administrateurs par défaut. Ces administrateurs peuvent ensuite être supprimés par d’autres administrateurs de groupe. Les administrateurs de groupe peuvent gérer leur groupe G1 et créer un sous-groupe imbriqué sous G1.
 
-### Améliorations de l’activation  {#enhancements-to-enablement}
+### Améliorations de l’activation {#enhancements-to-enablement}
 
 **Prise en charge de SCORM 2017.1** 
 
@@ -73,4 +73,4 @@ La fonctionnalité d’activation des communautés AEM 6.5 prend en charge le mo
 ### Autres améliorations {#other-enhancements}
 
 * Prise en charge de Solr 7
-* aem 6.5 Communities prend en charge la version Apache Solr 7.0 de la plate-forme de recherche lors de la configuration de MSRP et DSRP.
+* AEM 6.5 Communities prend en charge la version Apache Solr 7.0 de la plate-forme de recherche lors de la configuration de MSRP et DSRP.
