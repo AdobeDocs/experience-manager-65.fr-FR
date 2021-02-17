@@ -117,7 +117,7 @@ Dans cette section, vous allez créer les éléments suivants :
 * Le composant contentpage qui sera utilisé pour effectuer le rendu des pages de contenu
 * Le script contentpage
 
-#### Création du modèle contentpage  {#creating-the-contentpage-template}
+#### Création du modèle contentpage {#creating-the-contentpage-template}
 
 Créez un modèle à utiliser comme base des pages web de votre site.
 
@@ -1256,7 +1256,7 @@ Vous disposez de plusieurs options, aussi bien en mode d’édition qu’en mode
 
    * Contacts
    * Commentaires
-   * Connexion
+   * La connexion
    * Rechercher
 
 1. Dans votre navigateur, rechargez la page Products. Elle se présente comme suit :
@@ -1291,7 +1291,7 @@ Votre zone de saisie des termes de recherche se présentera comme suit sur la pa
 1. Copiez les nœuds suivants et collez-les dans le nœud apps/mywebsite/components/search :
 
    * `/libs/foundation/components/search/dialog`
-   * &quot;`/libs/foundation/components/search/i18n`
+   * `` `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 
