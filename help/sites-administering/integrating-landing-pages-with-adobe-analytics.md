@@ -20,7 +20,7 @@ ht-degree: 48%
 
 # Intégration des pages d’entrée à Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-aem a intégré la solution landings page avec [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants d&#39;appel à l&#39;action suivants :
+AEM a intégré la solution landings page avec [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants d&#39;appel à l&#39;action suivants :
 
 1. Composant Lien des clics publicitaires
 1. Composant Lien graphique
