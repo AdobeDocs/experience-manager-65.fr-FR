@@ -52,7 +52,7 @@ L’onglet **Configuration** est accessible soit via :
 
 * Le menu déroulant :
 
-   **les lots OSGi >**
+   **OSGi >**
 
 * L&#39;URL ; par exemple :
 
@@ -107,7 +107,7 @@ L&#39;onglet **Bundles** est le mécanisme d&#39;installation des lots OSGi requ
 
 * Le menu déroulant :
 
-   **les lots OSGi >**
+   **OSGi >**
 
 * L&#39;URL ; par exemple :
 
