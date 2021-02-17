@@ -22,7 +22,7 @@ ht-degree: 6%
 
 Dans cette section, maintenant que le modèle a été configuré dans la section [application initiale](initial-app.md) et que les pages initiales ont été établies dans la section [contenu initial](initial-content.md), l&#39;application peut être développée à l&#39;aide de scripts de base, y compris la possibilité d&#39;activer la création avec les composants Communities. À la fin de cette section, le site Web sera fonctionnel.
 
-## Utilisation des scripts de page de base {#using-foundation-page-scripts}
+## Utilisation de scripts de page Foundation {#using-foundation-page-scripts}
 
 Le script par défaut, créé lorsque le composant qui effectue le rendu du modèle de page de lecture a été ajouté, est modifié pour inclure le fichier head.jsp de la page de base et un fichier body.jsp local.
 
