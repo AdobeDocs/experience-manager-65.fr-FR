@@ -32,7 +32,7 @@ Cette fonction ajoute la capacité à définir un nouveau mot de passe d’admin
 >
 >Notez que la fonction ne couvre pas la console Felix, dont le mot de passe doit être modifié manuellement. Pour plus d’informations, voir la section [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
 
-## Comment puis-je l’utiliser ?  {#how-do-i-use-it}
+## Comment puis-je l’utiliser ? {#how-do-i-use-it}
 
 Cette fonction se déclenche automatiquement si vous choisissez d’installer AEM via la ligne de commande, au lieu de double-cliquer sur le fichier JAR à partir d’un explorateur de système de fichiers.
 
