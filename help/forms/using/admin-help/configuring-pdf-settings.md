@@ -43,7 +43,7 @@ Les paramètres Adobe PDF sont applicables uniquement aux conversions basées su
 >
 >Si vous utilisez OpenOffice pour convertir les formats ci-dessus, les paramètres Adobe PDF ne sont donc pas appliqués.
 
-## A propos des paramètres PDF prédéfinis  {#about-the-predefined-pdf-settings}
+## A propos des paramètres PDF prédéfinis {#about-the-predefined-pdf-settings}
 
 PDF Generator propose plusieurs options PDF prédéfinies à utiliser. Ces paramètres ne sont pas modifiables, mais vous pouvez créer un paramètre basé sur un des paramètres existants et l’enregistrer sous un autre nom.
 
@@ -393,7 +393,7 @@ Les fonctions de transfert sont utilisées pour obtenir un effet artistique et p
 
 En imprimerie traditionnelle, une demi-teinte est obtenue en plaçant une trame de similigravure entre un film et l’image, puis en exposant le film. Les équivalents électroniques, comme dans Adobe Photoshop, permettent aux utilisateurs de définir les attributs de la trame de similigravure avant d’imprimer le film ou le papier. Les informations en demi-teintes doivent être utilisées avec un périphérique de sortie spécifique.
 
-## Options avancées {#advanced-options}
+## Options avancées  {#advanced-options}
 
 Ces options avancées permettent d’indiquer les commentaires DSC à conserver dans le fichier PDF et comment définir les autres options qui affectent la conversion à partir du format PostScript. Dans un fichier PostScript, les commentaires DSC contiennent des informations sur le fichier (comme l’application d’origine, la date de création et l’orientation de la page). Ils fournissent également une structure pour la description des pages du fichier (comme les instructions de début et de fin d’une section de prologue). Ces commentaires peuvent servir en cas d’impression du document. Pour plus d’informations sur l’accès aux options avancées, voir [Ajout ou modification de paramètres PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
