@@ -92,7 +92,7 @@ Vous pouvez utiliser une simple mise en correspondance des entrées pour indique
 * FTP
 * HTTP/HTTPS
 
-## Service Doc Assurance  {#doc-assurance-service}
+## Service Doc Assurance {#doc-assurance-service}
 
 Le service Doc Assurance vous permet de chiffrer et de déchiffrer des documents, d’ajouter des droits d’utilisation aux fonctionnalités d’Adobe Reader ou encore d’ajouter des signatures numériques à vos documents. Vos utilisateurs peuvent facilement interagir avec les documents et formulaires PDF, tandis que votre entreprise améliore la sécurité, l’archivage et la conformité.
 
