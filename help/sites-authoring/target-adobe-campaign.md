@@ -22,7 +22,7 @@ ht-degree: 78%
 
 Pour cibler votre newsletter Adobe Campaign, vous devez d’abord configurer la segmentation, ce qui n’est possible que dans l’IU classique (pour ClientContext). Ensuite, vous pouvez créer des expériences ciblées pour Adobe Campaign. Les deux procédures sont décrites dans cette section.
 
-## Configuration de la segmentation dans AEM  {#setting-up-segmentation-in-aem}
+## Configuration de la segmentation dans AEM {#setting-up-segmentation-in-aem}
 
 Pour configurer la segmentation, vous devez utiliser l’IU classique afin de configurer les segments. Les étapes restantes peuvent être exécutées dans l’IU standard.
 
