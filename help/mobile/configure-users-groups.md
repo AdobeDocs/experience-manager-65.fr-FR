@@ -79,7 +79,7 @@ Les membres du groupe app-admins peuvent également créer du contenu d’applic
 >
 >Vous remarquerez que certaines options ne sont pas disponibles pour le groupe app-authors, mais le sont pour app-admins.
 
-#### Configuration du groupe - app-admins  {#group-configuration-app-admins}
+#### Configuration du groupe - app-admins {#group-configuration-app-admins}
 
 1. Créez un groupe appelé app-admins.
 1. Ajoutez les groupes suivants à votre nouveau groupe app-admins :
