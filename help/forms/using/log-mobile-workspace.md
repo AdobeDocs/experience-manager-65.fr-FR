@@ -22,7 +22,7 @@ ht-degree: 93%
 
 Lorsque vous démarrez l’application AEM Forms, vous devez d’abord indiquer vos identifiants de connexion ainsi que l’URL d’un serveur AEM Forms.
 
-## Démarrage de l’application  {#to-start-the-app}
+## Démarrage de l’application {#to-start-the-app}
 
 1. Appuyez sur l’icône de l’application AEM Forms sur votre périphérique mobile.
 1. Pour vous connecter à l’application, saisissez un nom d’utilisateur, un mot de passe et l’URL du serveur AEM Forms.
