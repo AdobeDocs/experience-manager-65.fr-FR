@@ -36,7 +36,7 @@ Vous disposez des options suivantes pour configurer l’intégration :
 
 * Définissez la configuration et la mise en service à l’aide d’un script.
 
-## Configuration de l’intégration  {#configuring-the-integration}
+## Configuration de l’intégration {#configuring-the-integration}
 
 Souscrivez à l’intégration avec :
 
