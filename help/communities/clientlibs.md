@@ -29,7 +29,7 @@ Pour obtenir des informations de base, visitez :
 
 * [Utilisation de ](/help/sites-developing/clientlibs.md) bibliothèques côté client qui fournit des détails d’utilisation ainsi que des outils de débogage
 * [Clientlibs for ](/help/communities/client-customize.md#clientlibs) SCFqui fournit des informations utiles lors de la personnalisation des composants SCF
-* [Blog : aem bibliothèques clientes expliquées par l’exemple](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [Blog : AEM bibliothèques clientes expliquées par l’exemple](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Raisons pour lesquelles les bibliothèques clientes sont requises {#why-clientlibs-are-required}
 
