@@ -61,7 +61,7 @@ Dans les deux cas, vous aurez besoin d’effectuer les opérations suivantes :
 
 * [Spécifier les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Démarrage d’un workflow à partir de la barre d’outils Sites    {#starting-a-workflow-from-the-sites-toolbar}
+### Démarrage d’un workflow à partir de la barre d’outils Sites   {#starting-a-workflow-from-the-sites-toolbar}
 
 Vous pouvez démarrer un workflow à partir de la barre d’outils de la console **Sites** :
 
