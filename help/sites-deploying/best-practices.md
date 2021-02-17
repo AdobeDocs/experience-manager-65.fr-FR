@@ -37,7 +37,7 @@ Pour les meilleures pratiques d’administration, de développement ou de créat
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
-## OAK  {#oak}
+## OAK {#oak}
 
 [OAK](/help/sites-deploying/platform.md) est un référentiel de contenu hiérarchique évolutif et performant qui constitue la base d’AEM.
 
@@ -85,7 +85,7 @@ Les meilleures pratiques relatives à l’interface utilisateur sont présentée
 
 [Recommandations d’interfaces utilisateur aux clients](/help/sites-deploying/ui-recommendations.md)
 
-aem dispose actuellement de deux interfaces utilisateur : IU classique et optimisée pour les écrans tactiles dans la même version. Les clients doivent donc décider laquelle utiliser lors de la mise en œuvre du projet. Ce document vise à aider à trouver le bon choix.
+AEM dispose actuellement de deux interfaces utilisateur : IU classique et optimisée pour les écrans tactiles dans la même version. Les clients doivent donc décider laquelle utiliser lors de la mise en œuvre du projet. Ce document vise à aider à trouver le bon choix.
 
 ## Performances {#performance}
 
