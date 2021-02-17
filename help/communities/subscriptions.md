@@ -32,7 +32,7 @@ Ce qui distingue les abonnements des notifications est :
 * La seule action que les membres doivent entreprendre est de sélectionner `Email Subscriptions` lorsque vous procédez comme suit.
 * Lorsque la réponse par courrier électronique est configurée, les membres peuvent effectivement publier du contenu en répondant simplement au courrier électronique reçu.
 
-### Conditions requises {#requirements}
+### Conditions préalables {#requirements}
 
 **Configurer le courrier électronique**
 
