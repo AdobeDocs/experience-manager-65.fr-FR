@@ -61,7 +61,7 @@ Le contenu du modèle automatique est le formulaire. Lorsqu’un utilisateur sou
 * **Image / Avancé** : **Taille** : taille de l’image.
 * **Tags / Mots-clés** : métadonnées à affecter à cette page. Ce champ est présent sur chaque modèle automatique.
 
-### Création d’un modèle automatique  {#creating-a-scaffold}
+### Création d’un modèle automatique {#creating-a-scaffold}
 
 Pour créer un nouvel échafaudage, accédez à la console **Outils**, puis **Mise à l’échafaudage de page par défaut** et créez une nouvelle page. Un modèle de page unique sera disponible, le *modèle d&#39;échafaudage.*
 
