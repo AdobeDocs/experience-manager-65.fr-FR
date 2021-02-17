@@ -17,7 +17,7 @@ ht-degree: 42%
 ---
 
 
-# API Form Bridge pour les formulaires HTML5  {#form-bridge-apis-for-html-forms}
+# API Form Bridge pour les formulaires HTML5 {#form-bridge-apis-for-html-forms}
 
 Vous pouvez utiliser les API Form Bridge pour ouvrir un canal de communication entre des formulaires HTML5 XFA et vos applications. Les API Form Bridge fournissent une API **connect** pour créer la connexion.
 
@@ -184,7 +184,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 * **Entrée:**
 
    * **som :** tableau contenant les expressions Som du champ. Expression de définition de la valeur des champs.
-   * **value:** Array contenant les valeurs correspondant aux expressions Som fournies dans un  **** tableau somarray. Si le type de données de la valeur n’est pas identique à fieldType, la valeur n’est pas modifiée.
+   * **value:** Array contenant des valeurs correspondant aux expressions Som fournies dans un  **** tableau somarray. Si le type de données de la valeur n’est pas identique à fieldType, la valeur n’est pas modifiée.
 
 * **Output :** aucune
 * **Erreur :** renvoie une exception en cas d’expression Som incorrecte
