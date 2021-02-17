@@ -1,5 +1,5 @@
 ---
-title: aem Foundation et référentiel
+title: AEM Foundation et référentiel
 description: Notes de mise à jour de la plateforme et du référentiel Adobe Experience Manager.
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
@@ -10,9 +10,9 @@ ht-degree: 57%
 ---
 
 
-# aem Foundation et référentiel {#aem-foundation-repository}
+# AEM Foundation et référentiel {#aem-foundation-repository}
 
-## Liste des modifications  {#list-of-changes}
+## Liste des modifications {#list-of-changes}
 
 ### Référentiel {#repository}
 
