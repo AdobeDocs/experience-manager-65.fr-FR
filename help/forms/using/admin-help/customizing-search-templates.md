@@ -30,7 +30,7 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
 >
 >lorsque vous enregistrez un modèle de recherche, vous devez lui affecter un nom unique. Si vous ne le faites pas, un modèle existant risque d’être remplacé sans message d’avertissement.
 
-## Création d’un modèle de recherche simple  {#create-a-simple-search-template}
+## Création d’un modèle de recherche simple {#create-a-simple-search-template}
 
 1. Dans Administration Console, cliquez sur Services > Workspace > Modèles de recherche.
 1. Dans l’onglet Identification, indiquez l’objectif du modèle dans la zone Description du modèle de recherche.
