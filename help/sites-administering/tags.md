@@ -18,7 +18,7 @@ ht-degree: 61%
 ---
 
 
-# Administration des balises  {#administering-tags}
+# Administration des balises {#administering-tags}
 
 Les balises constituent un moyen simple et rapide de classer le contenu de votre site web. Elles peuvent être considérées comme des mots-clés ou des étiquettes (métadonnées) qui permettent de trouver plus rapidement du contenu dans le résultat d’une recherche.
 
@@ -89,7 +89,7 @@ L’espace de noms est lui-même une balise et ne comporte pas forcément de bal
 
    *(obligatoire)* Titre d’affichage de l’espace de nommage.
 
-* **Nom**
+* **Name** (Nom)
    *(facultatif)* Nom de l’espace de nommage. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. Voir [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Description**
