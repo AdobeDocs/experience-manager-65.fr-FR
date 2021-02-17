@@ -220,7 +220,7 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
 1. Créez le document DDX.
 
    * Créez un objet `System.Xml.XmlElement` en utilisant son constructeur.
-   * Créez l’élément racine du document DDX en appelant la méthode `XmlElement` de l’objet `CreateElement`. Cette méthode crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `CreateElement`. Définissez une valeur pour l’élément DDX en appelant sa méthode `SetAttribute`. Enfin, ajoutez l’élément au document DDX en appelant la méthode `XmlElement` de l’objet `AppendChild`. Transmettez l’objet DDX en argument. Les lignes de code suivantes présentent cette logique d’application :
+   * Créez l’élément racine du document DDX en appelant la méthode `XmlElement` de l’objet `CreateElement`. Cette méthode crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `CreateElement`. Définissez une valeur pour l’élément DDX en appelant sa méthode `SetAttribute`. Enfin, ajoutez l’élément au document DDX en appelant la méthode `XmlElement` de l’objet `AppendChild`. Transférez l’objet DDX en argument. Les lignes de code suivantes présentent cette logique d’application :
 
       ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
