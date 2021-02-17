@@ -35,7 +35,7 @@ Adobe propose deux versions de la structure d’intégration de commerce :
 | Quand utiliser la personnalisation | Cas d&#39;utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
 
 
-## Déploiement d’autres applications  {#deploying-other-implementations}
+## Déploiement d’autres applications {#deploying-other-implementations}
 
 Pour l&#39;AEM et le Magento, voir [Intégration AEM et Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md) en utilisant [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html).
 
