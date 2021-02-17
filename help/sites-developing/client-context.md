@@ -111,7 +111,7 @@ Le composant clientcontext fait en sorte que la page charge les bibliothèques c
 
 L’IU de ClientContext est disponible uniquement sur l’instance de création.
 
-## Extension de ClientContext  {#extending-client-context}
+## Extension de ClientContext {#extending-client-context}
 
 Pour étendre ClientContext, créez un magasin de sessions et affichez éventuellement les données du magasin :
 
