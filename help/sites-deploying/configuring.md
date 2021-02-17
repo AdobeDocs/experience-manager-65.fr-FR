@@ -62,7 +62,7 @@ Selon la configuration spécifique, ces modifications peuvent être effectuées 
 >
 >Certaines modifications peuvent avoir un impact majeur sur la ou les applications. C’est pourquoi vous devez vous assurer de disposer de l’expérience et des connaissances requises avant de commencer à configurer AEM, et apporter uniquement les changements dont vous savez la nécessité. Tout changement effectué via la console OSGi est **immédiatement** appliqué au système en exécution (aucun redémarrage n’est requis).
 
-## Principales considérations en matière de configuration  {#primary-configuration-considerations}
+## Principales considérations en matière de configuration {#primary-configuration-considerations}
 
 Cette liste présente les principaux aspects qui sont généralement configurés pour chaque nouveau projet. Ils ne sont pas tous nécessaires, mais la liste doit être lue et examinée afin de voir ce qui s’applique à votre projet.
 
