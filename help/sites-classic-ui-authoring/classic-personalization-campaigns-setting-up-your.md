@@ -65,7 +65,7 @@ Pour créer une marque, procédez comme suit :
 
 1. Cliquez sur **Créer**. Votre nouvelle marque s’affiche alors dans MCM (avec une icône par défaut).
 
-### Définition des propriétés de votre nouvelle marque  {#defining-the-properties-for-your-new-brand}
+### Définition des propriétés de votre nouvelle marque {#defining-the-properties-for-your-new-brand}
 
 1. A partir de **Campagnes**, dans le volet de gauche, sélectionnez l’icône de votre nouvelle marque dans le volet de droite, puis cliquez sur **Propriétés...**
 
