@@ -42,7 +42,7 @@ Pour créer un tableau de bord, procédez comme suit :
 1. Entrez le **Titre** (Mon tableau de bord, par exemple) et le **Nom**.
 1. Cliquez sur **Créer**.
 
-### Clonage d’un tableau de bord  {#cloning-a-dashboard}
+### Clonage d’un tableau de bord {#cloning-a-dashboard}
 
 Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin de consulter rapidement des informations sur votre contenu depuis différentes vues. Pour faciliter la création d’un tableau de bord, AEM propose une fonctionnalité de clonage que vous pouvez utiliser pour dupliquer un tableau de bord existant. Pour cloner un tableau de bord, procédez comme suit :
 
@@ -85,7 +85,7 @@ Chacun de ces composants comprend au moins trois onglets :
 
 Les composants de génération de rapports sont initialisés avec une configuration par défaut qui vous aide à configurer rapidement votre tableau de bord.
 
-#### Configuration de base  {#basic-configuration}
+#### Configuration de base {#basic-configuration}
 
 L’onglet **De base** vous donne accès aux entrées de configuration suivantes :
 
