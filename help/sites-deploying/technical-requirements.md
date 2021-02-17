@@ -153,7 +153,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 | MongoDB Enterprise 4.0  | Référentiel | A : Pris en charge `[2, 3]` |
 | MongoDB Enterprise 3.6 | Référentiel | Z : Non pris en charge |
 | MongoDB Enterprise 3.4 | Référentiel | Z : Non pris en charge |
-| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée   `[4]` |
+| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée  `[4]` |
 | Base de données Oracle 12c (12.1.x) | Base de données de formulaires et de référentiels | R : Prise en charge limitée  |
 | Microsoft SQL Server 2016 | Base de données de formulaires | A : Pris en charge |
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : Pris en charge |
