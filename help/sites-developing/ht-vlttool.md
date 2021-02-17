@@ -86,7 +86,7 @@ Après l’avoir installé, vous devez mettre à jour les fichiers Subversion gl
 global-ignores = .vlt
 ```
 
-### Configuration du caractère de fin de ligne  {#configuring-the-end-of-line-character}
+### Configuration du caractère de fin de ligne {#configuring-the-end-of-line-character}
 
 VLT gère automatiquement la fin de ligne (EOL) selon les règles suivantes : 
 
@@ -814,7 +814,7 @@ Listing sync status for http://localhost:4502/crx/server/-/jcr:root
 
 >[!NOTE]
 >
->La commande `status` ne récupère pas les données actives du service, mais lit plutôt la configuration à `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`.
+>La commande `status` ne récupère aucune donnée active du service, mais lit plutôt la configuration à l&#39;adresse `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`.
 
 ### Ajout d’un dossier de synchronisation {#adding-a-sync-folder}
 
