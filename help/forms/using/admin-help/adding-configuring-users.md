@@ -20,7 +20,7 @@ ht-degree: 73%
 
 Les informations relatives aux utilisateurs et aux groupes sont gérées dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management n’a pas la possibilité d’écrire dans le système de stockage tiers, mais assure la synchronisation de ces informations avec sa propre base de données
 
-## Créer un utilisateur  {#create-a-user}
+## Créer un utilisateur {#create-a-user}
 
 Lorsque vous créez des utilisateurs, vous pouvez les ajouter à des groupes et leur affecter des rôles.
 
@@ -36,7 +36,7 @@ Lorsque vous créez des utilisateurs, vous pouvez les ajouter à des groupes et 
    * Cliquez sur **[!UICONTROL Next]** (Suivant).
 
 1. (Facultatif) Pour attribuer des rôles à l’utilisateur, cliquez sur **[!UICONTROL Rechercher des rôles]**, cochez la case correspondant aux rôles à affecter, puis cliquez sur **[!UICONTROL OK]**.
-1. Cliquez sur **[!UICONTROL Terminer]**.
+1. Cliquez sur **[!UICONTROL Finish]** (Terminer). 
 
    >[!NOTE]
    >
