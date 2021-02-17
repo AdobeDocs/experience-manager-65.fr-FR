@@ -20,7 +20,7 @@ ht-degree: 71%
 
 ## Présentation {#introduction}
 
-aem Form a la capacité de centraliser la création, l&#39;assemblage, la gestion et la diffusion de documents sécurisés et interactifs tels que les correspondances d&#39;entreprise, les documents, les relevés, les avis d&#39;avantages, les courriels marketing, les factures et les kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le package du module complémentaire est déployé sur une instance de création ou de publication d’AEM.
+AEM Form a la capacité de centraliser la création, l&#39;assemblage, la gestion et la diffusion de documents sécurisés et interactifs tels que les correspondances d&#39;entreprise, les documents, les relevés, les avis d&#39;avantages, les courriels marketing, les factures et les kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le package du module complémentaire est déployé sur une instance de création ou de publication d’AEM.
 
 Vous pouvez utiliser la fonctionnalité de communication interactive pour produire une communication dans plusieurs formats, par exemple, Web et PDF. Vous pouvez intégrer la communication interactive au processus AEM pour traiter et fournir la communication assemblée aux clients sur le canal de leur choix. Par exemple, l’envoi d’une communication à l’utilisateur final par email.
 
