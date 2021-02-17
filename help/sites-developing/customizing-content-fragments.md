@@ -19,7 +19,7 @@ ht-degree: 84%
 ---
 
 
-# Personnalisation et extensions de fragments de contenu{#customizing-and-extending-content-fragments}
+# Personnalisation et extensions de fragments de contenu {#customizing-and-extending-content-fragments}
 
 Un fragment de contenu étend une ressource standard. Voir :
 
@@ -64,7 +64,7 @@ Selon le type de fragment, des modèles sont également utilisés :
    * [Les ](/help/sites-developing/content-fragment-templates.md) modèles de fragments de contenu fonctionnent différemment de ceux d’autres mécanismes de modélisation au sein de l’écosystème AEM (modèles de page, etc.). C’est la raison pour laquelle ils doivent être pris en compte séparément.
    * S’il est basé sur un modèle, le type MIME du contenu est géré sur le contenu. Cela signifie que chaque élément et variation peut avoir un type MIME différent.
 
-### Intégration avec Assets  {#integration-with-assets}
+### Intégration avec Assets {#integration-with-assets}
 
 La gestion des fragments de contenu (CFM) fait partie d’AEM Assets pour les raisons suivantes :
 
@@ -451,7 +451,7 @@ Les processus impliqués sont les suivants :
    * Toutes les modifications (enregistrement automatique inclus) sont effectuées sur le fragment de contenu actif, et non dans une zone séparée et protégée.
    * Par conséquent, ces modifications sont répercutées immédiatement sur les pages AEM faisant référence au fragment de contenu respectif.
 
-#### Actions   {#actions}
+#### Actions  {#actions}
 
 Les actions possibles sont les suivantes :
 
