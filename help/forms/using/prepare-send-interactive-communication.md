@@ -16,7 +16,7 @@ ht-degree: 37%
 ---
 
 
-# Préparation et envoi d’une communication interactive à l’aide de l’interface utilisateur de l’agent  {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# Préparation et envoi d’une communication interactive à l’aide de l’interface utilisateur de l’agent {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer la communication interactive au post-traitement. L’agent apporte les modifications nécessaires dans la mesure du possible et envoie la communication interactive en post-traitement, comme un courrier électronique ou une impression.
 
