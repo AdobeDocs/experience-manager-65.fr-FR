@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 12%
+ht-degree: 15%
 
 ---
 
@@ -150,10 +150,10 @@ Bien qu’il ne soit pas directement lié à une migration vers l’interface ut
 Pour de plus amples renseignements sur l&#39;AEM en développement, voir la collecte des ressources sous :
 
 * [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md)
-* [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [aem 6.5 Sites Tutorials et vidéos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
-* [Prise en main du développement d’AEM Sites – Tutoriel WKND](/help/sites-developing/getting-started.md)
-* [aem Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
+* [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [AEM 6.5 Sites Tutorials et vidéos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [Prise en main du développement d’AEM Sites – Tutoriel WKND](/help/sites-developing/getting-started.md)
+* [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
