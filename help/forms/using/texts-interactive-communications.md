@@ -67,7 +67,7 @@ Le fragment de document de texte dans Interactive Communication prend en charge 
    >
    >Vous pouvez ajouter des éléments de modèle de données de formulaire, des éléments de dictionnaire de données et des variables à l’aide du symbole @ dans l’éditeur de texte. Lorsque vous saisissez une chaîne précédée de @ dans l’éditeur de texte, tous les éléments du modèle de données, les éléments du dictionnaire de données et les variables sont recherchés et les éléments ou variables contenant la chaîne recherchée s’affichent. Vous pouvez parcourir les résultats de la recherche et sélectionner un élément ou une variable. S’il n’existe aucun résultat correspondant, le message *Aucun résultat correspondant trouvé* s’affiche.
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
    Le texte est créé. Vous pouvez maintenant utiliser le texte comme bloc de création lors de la création d’une communication interactive.
 
@@ -117,7 +117,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
    ![variable espane](assets/variablespane.png)
 
-1. Appuyez sur **[!UICONTROL Créer]**. 
+1. Appuyez sur **[!UICONTROL Créer]**.
 
    Le volet Créer des variables apparaît.
 
@@ -128,7 +128,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
    * **[!UICONTROL Type]**  : Sélectionnez un type de variable : Chaîne, Nombre, Valeur booléenne ou Date.
    * **[!UICONTROL Autoriser les valeurs spécifiques uniquement]** : pour les variables de type Chaîne et Nombre, vous pouvez garantir que l’agent choisisse parmi un ensemble spécifique de valeurs pour un espace réservé dans l’interface utilisateur de l’agent. Pour spécifier le jeu de valeurs, sélectionnez cette option, puis spécifiez des valeurs séparées par des virgules qui sont autorisées dans le champ **[!UICONTROL Valeurs]**.
 
-1. Appuyez sur **[!UICONTROL Créer]**. 
+1. Appuyez sur **[!UICONTROL Créer]**.
 
    La variable est créée et répertoriée dans le volet Variables.
 
@@ -140,7 +140,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
    Vous pouvez également effectuer des recherches et ajouter des variables à l’aide du symbole @ dans l’éditeur de texte. Placez le curseur à l’endroit où vous souhaitez insérer la variable. Tapez @ suivi de la chaîne de recherche. L’opération de recherche est effectuée sur toutes les propriétés et variables du modèle de données de formulaire disponibles dans le fragment de document. Les propriétés et variables contenant la chaîne de recherche sont récupérées et affichées sous forme de liste déroulante. Parcourez les résultats de la recherche et cliquez sur la variable à insérer à l’emplacement du curseur. Appuyez sur Echap pour masquer les résultats de la recherche.
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
+1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
 ## Créer des règles dans le texte {#rules}
 
@@ -153,7 +153,7 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 * Propriétés du modèle de données de formulaire associé
 * Toute variable que vous avez potentiellement créée dans le texte
 
-### Créer des règles dans le texte  {#create-rules-in-text}
+### Créer des règles dans le texte {#create-rules-in-text}
 
 1. Lors de la création ou de la modification d’un texte, sélectionnez la chaîne de texte, le paragraphe ou le contenu que vous souhaitez conditionner à l’aide de la règle.
 
