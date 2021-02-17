@@ -65,7 +65,7 @@ Notez la modification du style de la zone de texte comme illustré ci-dessous ap
    <td><p>Effet</p> </td>
   </tr>
   <tr>
-   <td><p>Field (Champ)</p> </td>
+   <td><p>Champ</p> </td>
    <td><p>bordure</p> </td>
    <td><p>Largeur de la bordure = 2px</p> <p>Style de la bordure = plein</p> <p>Couleur de la bordure = #1111</p> </td>
    <td><p>Crée une bordure large noire 2px autour du champ</p> </td>
