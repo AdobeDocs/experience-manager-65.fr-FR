@@ -25,7 +25,7 @@ Effectuez les étapes suivantes dans l’ordre recommandé pour créer l’appli
 1. [Définition des variables d’environnement](#set-environment-variable-android)
 1. [Génération d’une application AEM Forms standard](#set-up-the-xcode-project)
 
-## Téléchargement du package de code source de l’application AEM Forms  {#download-android-zip}
+## Téléchargement du package de code source de l’application AEM Forms {#download-android-zip}
 
 Le package de code source de l’application AEM Forms fait référence à l’archive `adobe-lc-mobileworkspace-src-<version>.zip`. Cette archive comprend le code source requis pour créer une application AEM Forms personnalisée. L&#39;archive est incluse dans le package `adobe-aemfd-forms-app-src-pkg-<version>.zip`disponible sur la distribution de logiciels.
 
