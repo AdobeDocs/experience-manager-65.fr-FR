@@ -22,7 +22,7 @@ ht-degree: 100%
 
 PDF Generator permet d’effectuer des conversions multithreads de certains types de fichiers. Ce type de conversion améliore les performances de PDF Generator en lui permettant d’effectuer plusieurs conversions simultanément.
 
-## Activation des conversions multithreads de fichiers OpenOffice, Word et PowerPoint  {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
+## Activation des conversions multithreads de fichiers OpenOffice, Word et PowerPoint {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
 
 Par défaut, PDF Generator ne peut convertir qu’un document OpenOffice, Microsoft Word ou PowerPoint à la fois. Si vous activez les conversions de fichiers multithreads, PDF Generator peut convertir plusieurs documents simultanément. PDF Generator lancera plusieurs instances d’OpenOffice ou PDFMaker (utilisés pour effectuer les conversions Word et PowerPoint).
 
