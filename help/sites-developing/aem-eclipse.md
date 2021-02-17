@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 81%
+ht-degree: 93%
 
 ---
 
@@ -24,32 +24,32 @@ ht-degree: 81%
 
 ## Présentation {#overview}
 
-AEM Developer Tools for Eclipse est un module externe Eclipse basé sur le module externe [Eclipse pour Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) disponible avec Apache License 2.
+AEM Developer Tools for Eclipse est un plug-in Eclipse basé sur le [plug-in Eclipse pour Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) disponible avec Apache License 2.
 
 Il offre plusieurs fonctionnalités qui facilitent le développement d’AEM :
 
 * Intégration transparente avec les instances AEM via Eclipse Server Connector.
 * Synchronisation pour les bundles de contenu et d’OSGI
-* Prise en charge du débogage avec fonctionnalité de permutation de code à chaud.
-* Bootstrap simple de projets AEM avec un assistant de création de projet spécifique.
+* Prise en charge du débogage avec fonctionnalité de remplacement de code à chaud.
+* Amorçage simple de projets AEM avec un assistant de création de projet spécifique.
 * Modification facile des propriétés JCR.
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
-Avant d’utiliser les outils de développement AEM, vous devez :
+Avant d’utiliser AEM Developer Tools, vous devez :
 
 * Télécharger et installer [Eclipse IDE pour les développeurs Java EE](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). Les outils de développement AEM prennent actuellement en charge Eclipse Kepler ou version ultérieure
 
 * Peut être utilisé avec AEM version 5.6.1 ou ultérieure
-* Configurez votre installation d&#39;éclipse pour vous assurer que vous disposez d&#39;au moins 1 gigaoctet de mémoire de tas en modifiant votre fichier de configuration `eclipse.ini` comme décrit dans la [FAQ sur l&#39;éclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
+* configurer votre installation Eclipse pour vous assurer de disposer d’au moins 1 Go de mémoire de segment en modifiant votre fichier de configuration `eclipse.ini` de la manière décrite dans la [FAQ Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
 >
->Sur macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Afficher le contenu du package** pour trouver votre `eclipse.ini`**.**
+>Sous macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Voir le contenu du paquet** pour trouver le fichier `eclipse.ini`**.**
 
 ## Installation de AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Une fois que vous avez satisfait aux [exigences](#requirements) ci-dessus, vous pouvez installer le module externe comme suit :
+Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous pouvez installer le plug-in comme suit :
 
 1. Parcourez le [**site web AEM** Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
 
@@ -59,12 +59,12 @@ Une fois que vous avez satisfait aux [exigences](#requirements) ci-dessus, vous 
 
 1. Dans Eclipse, ouvrez le menu **Help** (Aide).
 1. Cliquez sur **Install New Software** (Installer un nouveau logiciel).
-1. Cliquez sur **Ajouter...**.
+1. Cliquez sur **Add...** (Ajouter).
 1. Dans **Name** (Nom), tapez AEM Developer Tools.
 1. Dans **Location** (Emplacement), copiez l’URL d’installation.
 1. Cliquez sur **OK**.
 1. Cochez les deux modules externes **AEM** et **Sling**.
-1. Cliquez sur **Suivant**.
+1. Cliquez sur **Next** (Suivant).
 1. Cliquez sur **Suivant**.
 1. Acceptez les contrats de licence et cliquez sur **Finish** (Terminer).
 1. Cliquez sur **Yes** pour redémarrer Eclipse.
@@ -75,7 +75,7 @@ Une fois que vous avez satisfait aux [exigences](#requirements) ci-dessus, vous 
 >
 >Voir [Comment utiliser un lot dans Eclipse lorsqu’il a été téléchargé à partir d’AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
 
-## AEM Perspective {#the-aem-perspective}
+## La perspective AEM {#the-aem-perspective}
 
 AEM Developer Tools for Eclipse est proposé avec une Perspective offrant un contrôle total sur vos projets et instances AEM.
 
@@ -87,7 +87,7 @@ AEM Developer Tools for Eclipse est fourni avec un exemple de projet multi-modul
 
 Suivez les étapes ci-après pour créer l’exemple de projet :
 
-1. Dans le menu **Fichier** > **Nouveau** > **Projet**, accédez à la section **AEM** et sélectionnez **Exemple de projet multi-module AEM**.
+1. Dans le menu **Fichier** > **Nouveau** > **Projet**, accédez à la section **AEM** et sélectionnez **Exemple de projet multi-module AEM**.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -117,7 +117,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
 
    ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-1. Cliquez sur **Termine**. La structure du projet est créée.
+1. Cliquez sur **Finish** (Terminer). La structure du projet est créée.
 
    >[!NOTE]
    >
@@ -131,7 +131,7 @@ Pour résoudre des dépendances et une définition de projet non valides, procé
 
 1. Sélectionnez tous les projets créés.
 1. Faites un clic-droit. Dans le menu **Maven**, sélectionnez **Update Projects** (Mettre à jour les projets).
-1. Cochez **Force Updates of Snapshot/Releases** (Forcer les mises à jour de snaptshot/versions).
+1. Cochez **Force Updates of Snapshot/Releases** (Forcer les mises à jour d’instantané/de versions).
 1. Cliquez sur **OK**. Eclipse essaie de télécharger les dépendances demandées.
 
 ### Activation de l’auto-remplissage de la bibliothèque de balises dans les fichiers JSP {#enabling-tag-library-autocompletion-in-jsp-files}
@@ -160,7 +160,7 @@ Le site web officiel Apache Sling IDE tooling for Eclipse fournit des informatio
 
 La documentation officielle [Eclipse](https://eclipse.org/) suivante peut vous aider à configurer votre environnement :
 
-* [Getting Started with Eclipse](https://eclipse.org/users/)
-* [Eclipse Luna Help System](https://help.eclipse.org/luna/index.jsp)
-* [Maven Integration (m2eclipse)](https://www.eclipse.org/m2e/)
+* [Prise en main d’Eclipse](https://eclipse.org/users/)
+* [Système d’aide d’Eclipse Luna](https://help.eclipse.org/luna/index.jsp)
+* [Intégration Maven (m2eclipse)](https://www.eclipse.org/m2e/)
 
