@@ -68,7 +68,7 @@ Pour une syntaxe et une utilisation correctes, consultez la documentation du fab
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY FOR INDEXES ALL
 ```
 
-## Exécution de la commande reorg sur la base de données AEM forms  {#run-the-reorg-command-on-your-aem-forms-database}
+## Exécution de la commande reorg sur la base de données AEM forms {#run-the-reorg-command-on-your-aem-forms-database}
 
 Exécutez la commande `reorg` sur les tables et index de base de données AEM forms suivants. Pour une syntaxe et une utilisation correctes, consultez la documentation du fabricant de la base de données.
 
