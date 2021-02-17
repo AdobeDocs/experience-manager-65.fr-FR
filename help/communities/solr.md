@@ -28,7 +28,7 @@ Si les deux collections Oak et SRP sont utilisées de façon intensive, un secon
 
 Pour les environnements de production, le [mode SolrCloud](#solrcloud-mode) offre de meilleures performances par rapport au mode autonome (une seule configuration Solr locale).
 
-### Conditions requises {#requirements}
+### Conditions préalables {#requirements}
 
 Téléchargez et installez Apache Solr :
 
@@ -144,7 +144,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 
 #### Comparaison de l&#39;AEM 6.1 Solr search, Standard MLS et Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Remarque** : aem 6.1 se rapporte à AEM 6.1 Communautés FP3 et versions antérieures.
+**Remarque** : AEM 6.1 se rapporte à AEM 6.1 Communautés FP3 et versions antérieures.
 
 ![compare-solr-mls](assets/compare-solr-mls.png)
 
