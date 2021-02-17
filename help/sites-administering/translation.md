@@ -20,7 +20,7 @@ ht-degree: 87%
 ---
 
 
-# Traduction de contenu pour les sites multilingues  {#translating-content-for-multilingual-sites}
+# Traduction de contenu pour les sites multilingues {#translating-content-for-multilingual-sites}
 
 Automatisez la traduction du contenu des pages, des ressources et du contenu créé par les utilisateurs pour créer et tenir à jour des sites web multilingues. Pour automatiser les processus de traduction, vous intégrez des fournisseurs de services de traduction à AEM et vous créez des projets pour traduire le contenu dans plusieurs langues. AEM prend en charge les workflows de traduction humaine et automatique.
 
