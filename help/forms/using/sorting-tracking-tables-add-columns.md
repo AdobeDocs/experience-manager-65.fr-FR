@@ -154,7 +154,7 @@ Pour les personnalisations suivantes dans le tableau de la tâche, vous devez ef
    </table>
    ```
 
-## Tri d’un tableau de suivi  {#sorting-a-tracking-table}
+## Tri d’un tableau de suivi {#sorting-a-tracking-table}
 
 Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tête de la colonne :
 
