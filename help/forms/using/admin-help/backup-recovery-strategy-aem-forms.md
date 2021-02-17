@@ -30,13 +30,13 @@ Après avoir identifié le mode d’utilisation d’AEM Forms, déterminez les f
 
 Adobe Experience Manager (AEM) fait partie intégrante d’AEM forms. Par conséquent, vous devez également sauvegarder AEM en synchronisation avec la sauvegarde AEM Forms, car les services et la solution Correspondence Management, tels que Forms Manager, sont basés sur les données stockées dans la partie AEM d’AEM Forms. Pour éviter toute perte de données, les données propres à AEM Forms doivent être sauvegardées de sorte que le stockage global de documents et AEM (référentiel) soient en corrélation avec les références de la base de données. La base de données, le répertoire de stockage global de documents, le répertoire AEM et le répertoire racine de stockage de contenu doivent être restaurés sur un ordinateur avec le même nom DNS que le nom d’origine.
 
-## Types de sauvegardes  {#types-of-backups}
+## Types de sauvegardes {#types-of-backups}
 
 La stratégie de sauvegarde d’AEM forms implique deux types de sauvegardes :
 
 **Image système :** sauvegarde complète du système que vous pouvez utiliser pour restaurer le contenu de votre ordinateur si votre disque dur ou l’ordinateur entier ne fonctionne plus. Une sauvegarde de l’image système doit être exécutée avant tout déploiement de production d’AEM Forms. Les stratégies internes à l’entreprise définissent ensuite la fréquence d’exécution des sauvegardes de l’image système.
 
-**aem données spécifiques aux formulaires : les données** d’application existent dans la base de données, le répertoire de stockage global de Documents (GDS) et le référentiel AEM, et doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
+**AEM données spécifiques aux formulaires : les données** d’application existent dans la base de données, le répertoire de stockage global de Documents (GDS) et le référentiel AEM, et doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
 
 >[!NOTE]
 >
