@@ -196,7 +196,7 @@ String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
 ```
 
-### Ajout de nouveau texte ou modification du texte existant  {#adding-new-text-or-modifying-existing-text}
+### Ajout de nouveau texte ou modification du texte existant {#adding-new-text-or-modifying-existing-text}
 
 1. Copier le dossier `i18n` :
 
