@@ -35,7 +35,7 @@ Si Oak rencontre une requête sans index, un message de journal de niveau WARN s
 *WARN* Traversed 1000 nodes with filter Filter(query=select ...) consider creating an index or changing the query
 ```
 
-## Langages de requête pris en charge  {#supported-query-languages}
+## Langages de requête pris en charge {#supported-query-languages}
 
 Le moteur de requête Oak prend en charge les langages suivants :
 
@@ -245,7 +245,7 @@ Prenez cette structure de nœud comme exemple :
          * **Nom :**`Mapping`
       * **Nom :**`tokenizer`
 
-         * **Nom de la propriété :**`name`
+         * **Nom de la propriété:** `name`
 
             * **Type :** `String`
             * **Valeur:** `Standard`
