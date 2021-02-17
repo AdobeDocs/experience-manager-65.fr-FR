@@ -87,7 +87,7 @@ Configurez AEM pour utiliser les informations d’identification de licence Live
 
    Votre instance AEM est maintenant configurée pour utiliser Livefyre et vous pouvez utiliser les fonctionnalités d’intégration.
 
-### Personnalisation de l’intégration SSO  {#customize-single-sign-on-integration}
+### Personnalisation de l’intégration SSO {#customize-single-sign-on-integration}
 
 Le module Livefyre pour AEM comprend une intégration clé en main entre les profils AEM Communities et le service SSO de Livefyre.
 
