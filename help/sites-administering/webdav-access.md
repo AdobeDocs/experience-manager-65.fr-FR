@@ -36,7 +36,7 @@ http://localhost:4502
 
 Cette adresse URL, lors d’une connexion au niveau du système d’exploitation, permet à WebDAV d’accéder à l’espace de travail par défaut (`crx.default`). Si cette approche est plus simple pour l’utilisateur, elle n’offre toutefois pas la flexibilité supplémentaire de spécifier des noms d’espace de travail, ce qui peut être effectué à l’aide d’[adresses URL WebDAV](/help/sites-administering/webdav-access.md#webdav-urls) supplémentaires.
 
-aem affiche le contenu du référentiel comme suit :
+AEM affiche le contenu du référentiel comme suit :
 
 * Un nœud du type `nt:folder` s’affiche sous la forme d’un dossier. Les nœuds situés sous le nœud `nt:folder` s’affichent comme contenu du dossier.
 
@@ -48,7 +48,7 @@ Lorsque vous utilisez WebDAV pour créer et modifier des dossiers et des fichier
 >
 >Avant de configurer WebDAV, reportez-vous aux [exigences techniques](/help/sites-deploying/technical-requirements.md#webdav-clients).
 
-## Adresses URL de WebDAV  {#webdav-urls}
+## Adresses URL de WebDAV {#webdav-urls}
 
 L’adresse URL du serveur WebDAV possède la structure suivante :
 
