@@ -24,7 +24,7 @@ Des conflits peuvent survenir si de nouvelles pages portant le même nom de page
 
 Ces conflits doivent être gérés et résolus lors du déploiement.
 
-## Gestion des conflits  {#conflict-handling}
+## Gestion des conflits {#conflict-handling}
 
 Lorsqu’il y a des pages en conflit (dans les branches Plan directeur et Live Copy), MSM permet de définir comment elles doivent être gérées (voire si elles doivent l’être).
 
