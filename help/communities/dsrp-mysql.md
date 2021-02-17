@@ -24,7 +24,7 @@ MySQL est une base de données relationnelle qui peut être utilisée pour stock
 
 Ces instructions décrivent comment se connecter au serveur MySQL et établir la base de données UGC.
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 * [Pack de fonctionnalités des dernières communautés](deploy-communities.md#latestfeaturepack)
 * [Pilote JDBC pour MySQL](deploy-communities.md#jdbc-driver-for-mysql)
@@ -122,7 +122,7 @@ Le script SQL est obtenu à partir du référentiel AEM :
    * Par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Sélectionnez le dossier /libs/social/config/datastore/dsrp/schéma.
-1. Téléchargement `init-schema.sql`
+1. Télécharger `init-schema.sql`
 
    ![base de données-schéma-de-crxde](assets/database-schema-crxde.png)
 
