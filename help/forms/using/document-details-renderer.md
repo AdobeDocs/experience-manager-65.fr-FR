@@ -17,7 +17,7 @@ ht-degree: 56%
 ---
 
 
-# Détails de document pour le rendu  {#document-details-for-renderer}
+# Détails de document pour le rendu {#document-details-for-renderer}
 
 ## Présentation {#introduction}
 
