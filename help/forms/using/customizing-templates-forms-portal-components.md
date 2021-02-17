@@ -34,7 +34,7 @@ Forms Portal permet d’utiliser des métadonnées personnalisées dans les list
 
 Pour créer un modèle personnalisé pour divers composants de Forms Portal, suivez la procédure ci-après.
 
-## Création d’un modèle personnalisé  {#creating-a-nbsp-custom-template}
+## Création d’un modèle personnalisé {#creating-a-nbsp-custom-template}
 
 1. Créez un nœud sling:Folder sous /apps
 
