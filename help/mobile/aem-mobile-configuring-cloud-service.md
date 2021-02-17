@@ -36,7 +36,7 @@ L&#39;hypothèse suivante est que l&#39;application de référence hybride [AEM 
 
 Les utilisateurs qui doivent accéder à la console de personnalisation doivent faire partie du groupe `target-activity-authors`. Il est conseillé, dans le cadre de la configuration des utilisateurs et des groupes, d’ajouter le groupe d’activités-cibles au groupe d’administrateurs d’applications. En ajoutant le groupe cible-activités-auteurs, cela permet aux utilisateurs de voir l’entrée du menu de navigation Personnalisation.
 
-Si vous oubliez d’ajouter les utilisateurs ou les groupes auxquels vous souhaitez accéder à la console d’administration de la personnalisation au groupe d’auteurs d’activités-cibles, les utilisateurs ne pourront pas voir la console de personnalisation.
+Si vous oubliez d’ajouter les utilisateurs ou les groupes auxquels vous souhaitez avoir accès à la console d’administration de la personnalisation au groupe d’auteurs d’activités-cibles, les utilisateurs ne pourront pas voir la console de personnalisation.
 
 ## Cloud Services {#cloud-services}
 
