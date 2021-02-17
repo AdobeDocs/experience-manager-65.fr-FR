@@ -32,7 +32,7 @@ Notez que l’outil Traducteur et les dictionnaires que vous gérez servent à p
 >
 >Modifiez uniquement les dictionnaires créés pour votre projet et qui résident sous `/apps`.
 >
->Les dictionnaires système AEM sont également disponibles dans cet outil. Ne modifiez pas les dictionnaires système AEM, car cela risque de poser des problèmes avec l’interface utilisateur AEM. De plus, vous risquez de perdre les modifications au cours d’une mise à niveau. Les dictionnaires système AEM sont situés sous `/libs`.
+>Les dictionnaires système AEM sont également disponibles dans cet outil. Ne modifiez pas les dictionnaires système AEM, car cela risque de poser des problèmes avec l’interface utilisateur AEM. De plus, vous risquez de perdre les modifications au cours d’une mise à niveau. AEM dictionnaires système sont situés sous `/libs`.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Il est également possible d’ajouter les dictionnaires i18n à un projet de tr
    >
    >Pour plus d’informations sur les projets de traduction, voir [Gestion des projets de traduction](/help/sites-administering/tc-manage.md).
 
-## Création d’un dictionnaire  {#creating-a-dictionary}
+## Création d’un dictionnaire {#creating-a-dictionary}
 
 Créez un dictionnaire pour gérer vos chaînes d’IU localisées. Après avoir créé un dictionnaire, vous pouvez utiliser l’outil de traduction pour le gérer.
 
@@ -102,7 +102,7 @@ Utilisez l’outil de traduction pour gérer les chaînes de caractères de vos 
 >
 >Modifiez uniquement les dictionnaires créés pour votre projet et qui résident sous `/apps`.
 >
->Ne modifiez pas les dictionnaires système AEM, car cela risque de poser des problèmes avec l’interface utilisateur AEM. De plus, vous risquez de perdre les modifications au cours d’une mise à niveau. Les dictionnaires système AEM sont situés sous `/libs`.
+>Ne modifiez pas les dictionnaires système AEM, car cela risque de poser des problèmes avec l’interface utilisateur AEM. De plus, vous risquez de perdre les modifications au cours d’une mise à niveau. AEM dictionnaires système sont situés sous `/libs`.
 
 ### Ajout, modification et suppression de chaînes {#adding-changing-and-removing-strings}
 
@@ -207,7 +207,7 @@ Une fois que vous avez ajouté la chaîne anglaise à un dictionnaire, vous pouv
    >
    >Modifiez uniquement les dictionnaires créés pour votre projet et qui résident sous `/apps`.
    >
-   >Les dictionnaires système AEM sont également disponibles dans cet outil. Ne modifiez pas les dictionnaires système AEM, car cela risque de poser des problèmes avec l’interface utilisateur AEM. De plus, vous risquez de perdre les modifications au cours d’une mise à niveau. Les dictionnaires système AEM sont situés sous `/libs`.
+   >Les dictionnaires système AEM sont également disponibles dans cet outil. Ne modifiez pas les dictionnaires système AEM, car cela risque de poser des problèmes avec l’interface utilisateur AEM. De plus, vous risquez de perdre les modifications au cours d’une mise à niveau. AEM dictionnaires système sont situés sous `/libs`.
 
 1. Pour modifier les textes traduits pour l’une des chaînes, vous pouvez effectuer l’une des opérations suivantes :
 
