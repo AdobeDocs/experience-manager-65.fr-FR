@@ -21,7 +21,7 @@ ht-degree: 71%
 
 Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](/help/forms/using/create-your-first-adaptive-form.md). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
-## À propos du didacticiel  {#about-the-tutorial}
+## À propos du didacticiel {#about-the-tutorial}
 
 Les formulaires adaptatifs sont des formulaires dynamiques et réactifs nouvelle génération. Vous pouvez utiliser des formulaires adaptatifs pour offrir des expériences personnalisées. Vous pouvez également intégrer des formulaires adaptatifs à [!DNL Adobe Analytics] pour les statistiques d’utilisation et à [!DNL Adobe Campaign] pour la Gestion de campagne. Pour plus d’informations sur les fonctionnalités des formulaires adaptatifs, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
@@ -55,7 +55,7 @@ Il est plus facile de créer et de gérer des formulaires en suivant un processu
 
 ## Étape 2 : ajout d’un en-tête et d’un pied de page {#step-add-header-and-footer}
 
-aem [!DNL Forms] fournit de nombreux composants pour afficher des informations sur un formulaire adaptatif. Les composants d’en-tête et de pied de page contribuent à une apparence cohérente du formulaire. Un en-tête comprend généralement le logo d’une entreprise, le titre du formulaire et un résumé. Un pied de page contient généralement des informations de copyright, ainsi que des liens vers d’autres pages.
+AEM [!DNL Forms] fournit de nombreux composants pour afficher des informations sur un formulaire adaptatif. Les composants d’en-tête et de pied de page contribuent à une apparence cohérente du formulaire. Un en-tête comprend généralement le logo d’une entreprise, le titre du formulaire et un résumé. Un pied de page contient généralement des informations de copyright, ainsi que des liens vers d’autres pages.
 
 1. Appuyez sur ![toggle-side-panel](assets/toggle-side-panel.png) > ![treeexpanall](assets/treeexpandall.png). L’explorateur de composants s’affiche. Faites glisser et déposez le composant **[!UICONTROL En-tête]** de l’explorateur de composants vers le formulaire adaptatif.
 1. Appuyez sur **[!UICONTROL Logo]**. La barre d’outils s’affiche. Appuyez sur ![aem_6_3_edit](assets/aem_6_3_edit.png) dans la barre d’outils, tapez **We.Retail**, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -72,7 +72,7 @@ aem [!DNL Forms] fournit de nombreux composants pour afficher des informations s
 
 ## Étape 3 : ajout de composants pour capturer et afficher les informations {#step-add-components-to-capture-and-display-information}
 
-Les composants sont les blocs de construction d’un formulaire adaptatif. aem [!DNL Forms] fournit de nombreux composants pour capturer et afficher des informations dans un formulaire adaptatif. Vous pouvez faire glisser les composants de ![treeextenall](assets/treeexpandall.png) vers un formulaire. Pour en savoir plus sur les composants disponibles et les fonctionnalités correspondantes, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
+Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [!DNL Forms] fournit de nombreux composants pour capturer et afficher des informations dans un formulaire adaptatif. Vous pouvez faire glisser les composants de ![treeextenall](assets/treeexpandall.png) vers un formulaire. Pour en savoir plus sur les composants disponibles et les fonctionnalités correspondantes, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
 1. Faites glisser le composant **[!UICONTROL Zone numérique]** vers le formulaire adaptatif. Placez-le avant le composant de pied de page. Ouvrez les propriétés du composant, remplacez **[!UICONTROL Titre]** du composant par **`Customer ID`**, **[!UICONTROL Nom de l’élément]** par **`customer_ID`**, activez l’option **[!UICONTROL Champ requis]**, activez l’option **[!UICONTROL Utiliser le type d’entrée numérique HTML5]** et appuyez sur ![aem_6_6_forms_save](assets/aem_6_3_forms_save.png).
 1. Faites glisser trois composants de la zone de texte vers le formulaire adaptatif. Placez-les avant le pied de page. Définissez les propriétés suivantes pour ces zones de texte. :
@@ -116,7 +116,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. aem [
 
    | Propriétés | Valeur |
    |---|---|
-   | Title (Titre) | Code postal |
+   | Titre | Code postal |
    | Nom de l’élément | customer_ZIPCode |
    | Nombre maximal de chiffres | 6 |
    | Champ obligatoire | Activé |
@@ -126,7 +126,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. aem [
 
    | Propriétés | Valeur |
    |---|---|
-   | Title (Titre) | Courrier électronique |
+   | Titre | Courrier électronique |
    | Nom de l’élément | customer_Email |
    | Champ obligatoire | Activé |
 
@@ -139,7 +139,7 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. aem [
       <td><b>Valeur</b></td> 
      </tr> 
      <tr> 
-      <td>Title (Titre)</td> 
+      <td>Titre</td> 
       <td>Preuve d’adresse approuvée par le gouvernement<br /> </td> 
      </tr> 
      <tr> 
