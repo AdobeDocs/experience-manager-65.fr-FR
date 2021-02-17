@@ -182,6 +182,6 @@ Pour rediriger ceci vers votre version de siteadmin sur `/apps/wcm/core/content/
 >
 >Si plusieurs configurations de grille correspondent au chemin d’accès demandé défini par la propriété **pathRegex**, c’est la première qui est utilisée, et non la plus spécifique. Cela signifie que l’ordre des configurations est important.
 
-### Exemple de module  {#sample-package}
+### Exemple de module {#sample-package}
 
 Le résultat de ce didacticiel est disponible dans le package [Personnalisation du module Administration Console](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) des sites Web sur le partage de package.
