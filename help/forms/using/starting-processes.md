@@ -18,7 +18,7 @@ ht-degree: 90%
 ---
 
 
-# Démarrage des processus  {#starting-processes}
+# Démarrage des processus {#starting-processes}
 
 L’espace de travail AEM Forms organise les processus selon les catégories définies par l’administrateur ou le concepteur de processus. Il vous est également possible de placer les processus que vous utilisez souvent dans la catégorie Favoris pour les retrouver plus rapidement.
 
