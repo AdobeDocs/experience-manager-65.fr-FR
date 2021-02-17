@@ -186,7 +186,7 @@ AEM eCommerce fournit ce qui suit :
    * Historique des commandes exhaustif
    * Mise à jour rapide du catalogue
 
-## Structure  {#the-framework}
+## Structure {#the-framework}
 
 La section [Concepts](/help/sites-administering/concepts.md) couvre la structure plus en détail. Vous trouverez ci-dessous un aperçu de la structure :
 
