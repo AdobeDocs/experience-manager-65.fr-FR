@@ -72,9 +72,9 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
 1. Pour chaque entrée vous pouvez indiquer s’il faut ou non :
 
-   * **Inclure les sous-pages**:
+   * **Inclure les sous-pages** :
 
-      * Indiquez si vous souhaitez créer le lancement avec ou sans les pages enfants.  Par défaut, ces sous-pages sont intégrées.
+      * Indiquez si vous souhaitez créer le lancement avec ou sans les pages enfants. Par défaut, ces sous-pages sont intégrées.
 
    Poursuivez en cliquant sur **Suivant**.
 
@@ -82,14 +82,14 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
 1. À l’étape **Propriétés** de l’assistant, vous pouvez définir les paramètres suivants :
 
-   * **Titre du lancement **: nom du lancement. Ce nom doit être explicite pour les auteurs.
+   * **Titre du lancement** : nom du lancement. Ce nom doit être explicite pour les auteurs.
    * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement.
    * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
    * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Pour ce faire, cette option effectue le lancement d’une [copie dynamique](/help/sites-administering/msm.md).
 
       Par défaut, cette option est sélectionnée.
 
-   * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements – Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -125,7 +125,7 @@ La sélection de cette option va :
 >
 >Ce mécanisme peut être utilisé pour modifier le modèle d’une [page existante](/help/sites-authoring/managing-pages.md#creating-a-new-page), bien que la perte du contenu doit être envisagée.
 
-### Création d’un lancement imbriqué    {#creating-a-nested-launch}
+### Création d’un lancement imbriqué {#creating-a-nested-launch}
 
 La création d’un lancement imbriqué (lancement dans un lancement) vous permet de créer un lancement à partir d’un lancement existant pour que les développeurs de contenu exploitent les modifications déjà apportées, au lieu de répercuter ces mêmes modifications à plusieurs reprises pour chaque lancement.
 
@@ -133,7 +133,7 @@ La création d’un lancement imbriqué (lancement dans un lancement) vous perme
 >
 >Voir aussi [Promotion d’un lancement imbriqué](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch).
 
-#### Création d’un lancement imbriqué - Console de lancements {#creating-a-nested-launch-launches-console}
+#### Création d’un lancement imbriqué – Console Lancements {#creating-a-nested-launch-launches-console}
 
 La création d’un lancement imbriqué à partir de la console **Lancements** est similaire à la création de tout autre type de lancement, si ce n’est que vous devez accéder à la branche de lancements `/content/launches` :
 
@@ -146,7 +146,7 @@ La création d’un lancement imbriqué à partir de la console **Lancements** e
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-#### Création d’un lancement imbriqué - Console Sites {#creating-a-nested-launch-sites-console}
+#### Création d’un lancement imbriqué – Console Sites {#creating-a-nested-launch-sites-console}
 
 Pour créer un lancement imbriqué à partir de la console **Sites**, sur la base d’un lancement existant :
 
