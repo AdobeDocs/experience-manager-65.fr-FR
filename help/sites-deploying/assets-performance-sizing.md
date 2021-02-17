@@ -25,7 +25,7 @@ La gestion des ressources numériques est souvent utilisée lorsque les performa
 * Informations destinées aux administrateurs système lors de la détermination des dimensions optimales du matériel pour une nouvelle configuration de gestion des actifs numériques
 * Informations destinées aux développeurs de logiciels cherchant à résoudre les problèmes de performances concernant des instances de gestion des actifs numériques
 
-## Problèmes de performances  {#performance-issues}
+## Problèmes de performances {#performance-issues}
 
 Dans la gestion des actifs numériques, des performances insatisfaisantes peuvent avoir un impact sur l’expérience utilisateur de trois façons : performances des interactions, traitement des ressources et vitesse de téléchargement. Pour améliorer les performances, il est important de mesurer les performances observées et d’établir des objectifs de mesures de façon appropriée.
 
@@ -75,9 +75,9 @@ La légende ci-dessous décrit les écueils potentiels en matière de performanc
 
 **Système de fichiers temporaire** Un système de fichiers local lent peut provoquer des problèmes de performances interactives, notamment en ce qui concerne la recherche, car les index de recherche sont stockés sur le disque local. Cela peut, par ailleurs, entraîner des problèmes de traitement des ressources si le processus de ligne de commande est utilisé.
 
-**aem DAM** FinderLes problèmes de performances interactifs, souvent rencontrés dans les recherches, sont dus à une utilisation élevée de l&#39;UC due à de nombreux utilisateurs simultanés ou à d&#39;autres processus consommateurs d&#39;UC sur la même instance. Pour améliorer les performances, passez des machines virtuelles à des ordinateurs dédiés et assurez-vous qu’il n’y a pas d’autres services exécutés sur l’ordinateur. En cas de charge élevée sur le processeur, causée par le traitement des ressources et un nombre important d’utilisateurs simultanés, Day recommande d’ajouter des nœuds de cluster supplémentaires.
+**AEM DAM** FinderLes problèmes de performances interactifs, souvent rencontrés dans les recherches, sont dus à une utilisation élevée de l&#39;UC due à de nombreux utilisateurs simultanés ou à d&#39;autres processus consommateurs d&#39;UC sur la même instance. Pour améliorer les performances, passez des machines virtuelles à des ordinateurs dédiés et assurez-vous qu’il n’y a pas d’autres services exécutés sur l’ordinateur. En cas de charge élevée sur le processeur, causée par le traitement des ressources et un nombre important d’utilisateurs simultanés, Day recommande d’ajouter des nœuds de cluster supplémentaires.
 
-**aem** Workflow DAMLes processus de workflow à long terme pendant l&#39;assimilation des ressources provoquent des problèmes de performances de traitement des ressources. En fonction du type de ressources traitées, cela peut indiquer une surutilisation du processeur. Day recommande de réduire le nombre des autres processus exécutés sur le système et d’augmenter le nombre de processeurs disponibles en ajoutant des nœuds de cluster.
+**AEM** Workflow DAMLes processus de workflow à long terme pendant l&#39;assimilation des ressources provoquent des problèmes de performances de traitement des ressources. En fonction du type de ressources traitées, cela peut indiquer une surutilisation du processeur. Day recommande de réduire le nombre des autres processus exécutés sur le système et d’augmenter le nombre de processeurs disponibles en ajoutant des nœuds de cluster.
 
 **Connectivité NASUne connectivité réseau insuffisante au NAS entraîne des problèmes de performances interactives, car l&#39;accès à de nouveaux noeuds pendant le traitement des ressources est ralenti en raison de la latence du réseau.** De plus, un débit réseau lent affecte négativement le débit, mais également les performances de traitement des ressources, car le chargement et l’enregistrement des rendus sont ralentis.
 
