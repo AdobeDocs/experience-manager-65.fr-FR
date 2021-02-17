@@ -123,7 +123,7 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 
    ![configure-email-abonnement](assets/configure-email-subscriptions.png)
 
-* **[!UICONTROL Nom]**
+* **[!UICONTROL Name]** (Nom)
 
    *(Obligatoire)* `subscriptions-email`. Ne pas modifier.
 
