@@ -23,7 +23,7 @@ Le système de style permet à un auteur de modèles de définir des classes de 
 
 Cela rend inutile le développement d’un composant personnalisé pour chaque style ou la personnalisation d’une boîte de dialogue de composant pour activer une telle fonctionnalité de style. On obtient ainsi des composants plus réutilisables, pouvant être adaptés, rapidement et aisément, aux besoins des auteurs de contenu sans développement back-end dans AEM.
 
-## Exemple d’utilisation   {#use-case}
+## Exemple d’utilisation  {#use-case}
 
 Les auteurs de modèles doivent être en mesure de configurer non seulement le mode de fonctionnement des composants pour les auteurs de contenu, mais aussi diverses variantes visuelles d’un composant.
 
