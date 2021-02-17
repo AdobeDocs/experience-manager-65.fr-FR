@@ -27,7 +27,7 @@ L’espace de travail de formulaire AEM permet de modifier la sémantique de pr�
 
 Exemple d’espace de travail personnalisé
 
-## Types de personnalisation  {#types-of-customizations}
+## Types de personnalisation {#types-of-customizations}
 
 L’espace de travail AEM Forms prend en charge un large éventail de personnalisations pour mettre à jour la mise en page de l’interface utilisateur, son aspect, sa fonctionnalité et bien plus encore. Les personnalisations impliquent la mise à jour d’un ou plusieurs des éléments suivants :
 
