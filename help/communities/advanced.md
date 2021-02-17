@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -130,7 +130,7 @@ Au lieu d&#39;associer des points à une image de badge, il suffit d&#39;identif
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th>Valeur Description</th>
+   <th>Description de la valeur</th>
   </tr>
   <tr>
    <td>badgingPath</td>
@@ -180,7 +180,7 @@ Consultez les informations de base pour :
 
 ### Règles et sous-règles de score incluses {#included-scoring-rules-and-sub-rules}
 
-La version bêta comprend deux règles de notation avancées pour la fonction de forum [](/help/communities/functions.md#forum-function) (une pour le forum et les composants de commentaires de la fonction de forum) :
+La version bêta comprend deux règles de notation avancées pour la fonction de forum [](/help/communities/functions.md#forum-function) (une pour chacune des composantes du forum et des commentaires de la fonction de forum) :
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
