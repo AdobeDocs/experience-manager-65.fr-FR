@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!CAUTION]
 >
->La fonction de partage de dossiers [!DNL Experience Manager] vers [!DNL Creative Cloud] est obsolète. L’Adobe recommande vivement d’utiliser des fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou [application de bureau Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). En savoir plus sur les [meilleures pratiques d&#39;intégration des Experience Manager et des Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La fonction de partage de dossiers [!DNL Experience Manager] vers [!DNL Creative Cloud] est obsolète. L’Adobe recommande vivement d’utiliser des fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou [application de bureau Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr). En savoir plus sur les [meilleures pratiques d&#39;intégration des Experience Manager et des Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] peuvent être configurés pour permettre  [!DNL Assets] aux utilisateurs de partager des dossiers avec les utilisateurs d’ [!DNL Adobe Creative Cloud] applications, de sorte qu’ils soient disponibles sous forme de dossiers partagés dans le service  [!DNL Adobe Creative Cloud] ressources. Cette fonction permet d’échanger des fichiers entre les équipes créatives et les utilisateurs [!DNL Assets], en particulier lorsque les utilisateurs créatifs n’ont pas accès au déploiement [!DNL Assets] (ils ne se trouvent pas sur le réseau de l’entreprise).
 
