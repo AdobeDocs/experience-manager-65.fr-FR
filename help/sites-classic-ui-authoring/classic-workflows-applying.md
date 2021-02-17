@@ -34,7 +34,7 @@ Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes 
 >
 >Les administrateurs AEM peuvent commencer des workflows à l’aide de [plusieurs autres méthodes](/help/sites-administering/workflows-starting.md).
 
-## Application de workflows  {#applying-workflows}
+## Application de workflows {#applying-workflows}
 
 Les workflows peuvent être démarrés à partir de la console Sites web ou, lors de la modification d’une page, à partir du sidekick.
 
