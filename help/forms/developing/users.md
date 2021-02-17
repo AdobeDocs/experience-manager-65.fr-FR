@@ -381,7 +381,7 @@ Supprimez des utilisateurs à l’aide de l’API Service Directory Manager (ser
 
 [Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Création de groupes   {#creating-groups}
+## Création de groupes  {#creating-groups}
 
 Vous pouvez utiliser l’API Service Directory Manager (Java et le service Web) pour créer par programmation des groupes AEM Forms. Après avoir créé un groupe, vous pouvez l’utiliser pour effectuer une opération de service nécessitant un groupe. Par exemple, vous pouvez affecter un utilisateur au nouveau groupe. (Voir [Gestion des utilisateurs et des groupes](users.md#managing-users-and-groups).)
 
@@ -752,7 +752,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
    <td><p>Les informations d’identification de l’utilisateur sont authentifiées avec le service Authentication Manager. Si les informations d’identification de l’utilisateur sont valides, le processus passe à l’étape 3. Dans le cas contraire, un message est envoyé à l’utilisateur pour lui indiquer qu’il n’est pas un utilisateur autorisé.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Les informations utilisateur et une conception de formulaire sont récupérées dans une base de données d’entreprise sécurisée. </p></td>
   </tr>
   <tr>
@@ -870,7 +870,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Une application cliente demande à AEM Forms d’effectuer une opération de synchronisation.</p></td>
   </tr>
   <tr>
@@ -878,7 +878,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
    <td><p>AEM Forms effectue une opération de synchronisation.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Les informations utilisateur sont mises à jour.</p></td>
   </tr>
   <tr>
