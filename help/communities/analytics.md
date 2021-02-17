@@ -67,7 +67,7 @@ Cette section de la documentation décrit la connexion d’une suite de rapports
 
 Pour configurer les fonctionnalités d’Analytics pour les communautés, vous devez travailler avec votre gestionnaire de compte pour configurer un compte Adobe Analytics et une [suite de rapports](#adobe-analytics-report-suite-for-video-reporting). Une fois établies, les informations suivantes devraient être disponibles :
 
-* **Nom de la société**
+* **Nom de l’entreprise**
 
    Société associée au compte Adobe Analytics.
 
@@ -185,7 +185,7 @@ Dans la boîte de dialogue Créer une configuration, les valeurs à saisir ident
    (Obligatoire) Titre d’affichage de la configuration.
 Par exemple, saisissez *Activer les analyses de la communauté*.
 
-* **Nom**
+* **Name** (Nom)
 
    (Facultatif) S’il n’est pas spécifié, le nom est défini par défaut sur un nom de noeud valide dérivé du titre.
 Par exemple, saisissez *communautés*
@@ -262,7 +262,7 @@ Après avoir configuré correctement la connexion de base à Adobe Analytics, il
    (Obligatoire) Titre d’affichage de la structure
 Par exemple, saisissez *Enablement Community Framework*.
 
-* **Nom**
+* **Name** (Nom)
 
    (Facultatif) S’il n’est pas spécifié, le nom est défini par défaut sur un nom de noeud valide dérivé du titre.
 Par exemple, saisissez *communautés*.
@@ -559,7 +559,7 @@ Si les eVars et les événements des communautés remplacent les mappages qui ex
 
 ![analytics-mapping-evar1](assets/analytics-mapping-evar1.png)
 
-#### Exemple d’étape 3 : aem var eventdata.siteId a été mappé à la variable evar14 d’Analytics {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
+#### Exemple d’étape 3 : AEM var eventdata.siteId a été mappé à la variable evar14 d’Analytics {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
 ![analytics-mapping-evar2](assets/analytics-mapping-evar2.png)
 
@@ -668,5 +668,5 @@ Adobe Analytics fournit des API qui vous permettent d’accéder, d’exporter e
 ## Ressources {#resources}
 
 * Adobe Experience Cloud : [Aide et référence d’Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
-* aem : [Intégration à Adobe Analytics](/help/sites-administering/adobeanalytics.md)
-* aem : [Analyses avec fournisseurs externes](/help/sites-administering/external-providers.md)
+* AEM : [Intégration à Adobe Analytics](/help/sites-administering/adobeanalytics.md)
+* AEM : [Analyses avec fournisseurs externes](/help/sites-administering/external-providers.md)
