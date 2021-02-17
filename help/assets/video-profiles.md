@@ -55,13 +55,13 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
  <tbody>
   <tr>
    <td><strong>Codec du format vidéo</strong></td>
-   <td><strong>Taille de la vidéo - Largeur (px)</strong></td>
-   <td><strong>Taille de la vidéo - Hauteur (px)</strong></td>
+   <td><strong>Taille de la vidéo – Largeur (px)</strong></td>
+   <td><strong>Taille de la vidéo – Hauteur (px)</strong></td>
    <td><strong>Conserver les proportions ?</strong></td>
    <td><strong>Débit vidéo (kbit/s)</strong></td>
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td>
    <td><strong>Codec audio</strong></td>
-   <td><strong>Débit audio  (kbit/s)</strong></td>
+   <td><strong>Débit audio (kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -361,7 +361,7 @@ Appuyez sur l’icône d’information pour obtenir une description de la diffus
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer.]**
 1. Appuyez sur **[!UICONTROL OK.]**
 
-## Application d’un profil vidéo à des dossiers   {#applying-a-video-profile-to-folders}
+## Application d’un profil vidéo à des dossiers  {#applying-a-video-profile-to-folders}
 
 Lorsque vous affectez un profil vidéo à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
 
