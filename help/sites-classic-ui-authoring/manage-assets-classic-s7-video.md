@@ -16,7 +16,7 @@ ht-degree: 42%
 ---
 
 
-# Vidéo{#video}
+# Vidéo {#video}
 
 Les ressources permettent une gestion centralisée des ressources vidéo dans laquelle vous pouvez télécharger directement des vidéos vers les ressources pour un codage automatique vers Dynamic Media Classic et accéder directement aux vidéos Dynamic Media Classic à partir des ressources pour la création de pages.
 
@@ -43,7 +43,7 @@ Les formats suivants sont pris en charge pour le composant vidéo Dynamic Media 
 * F4V H.264
 * MP4 H.264
 
-### Choix de l’emplacement du téléchargement de la vidéo  {#deciding-where-to-upload-your-video}
+### Choix de l’emplacement du téléchargement de la vidéo {#deciding-where-to-upload-your-video}
 
 Le choix de l’emplacement du téléchargement du contenu vidéo dépend des éléments suivants :
 
@@ -127,7 +127,7 @@ Le tableau suivant explique les cas d’utilisation de chaque composant :
 
 Même si l’utilisation du composant vidéo Dynamic Media Classic est recommandée pour visionner les vidéos Dynamic Media Classic, cette section décrit l’utilisation des vidéos Dynamic Media Classic avec le [!UICONTROL composant vidéo de base] en AEM, par souci d’exhaustivité.
 
-### aem Vidéo et vidéo Dynamic Media Classic {#aem-video-and-scene-video-comparison}
+### AEM Vidéo et vidéo Dynamic Media Classic {#aem-video-and-scene-video-comparison}
 
 Le tableau suivant présente une comparaison de haut niveau des fonctionnalités prises en charge entre le composant AEM Foundation Video et le composant Dynamic Media Classic Video :
 
