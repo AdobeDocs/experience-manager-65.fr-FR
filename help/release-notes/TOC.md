@@ -28,5 +28,5 @@ ht-degree: 45%
 + [Notes de mise à jour d’AEM Communities](communities-release-notes.md)
 + [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
 + [Problèmes connus](known-issues.md)
-+ [aem Foundation et Repository](wcm-platform.md)
++ [AEM Foundation et Repository](wcm-platform.md)
 + [État des fonctionnalités de l’IU tactile](touch-ui-features-status.md)
