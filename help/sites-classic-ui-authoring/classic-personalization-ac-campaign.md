@@ -33,7 +33,7 @@ Le contenu peut alors être synchronisé avec une diffusion dans Adobe Campaign.
 >
 >Avant de pouvoir utiliser cette fonctionnalité, vous devez configurer AEM de manière à l’intégrer à [Adobe Campaign](/help/sites-administering/campaignonpremise.md) ou à [Adobe Campaign Standard](/help/sites-administering/campaignstandard.md).
 
-## Envoi du contenu d’un courrier électronique via Adobe Campaign  {#sending-email-content-via-adobe-campaign}
+## Envoi du contenu d’un courrier électronique via Adobe Campaign {#sending-email-content-via-adobe-campaign}
 
 Une fois que vous avez configuré AEM et Adobe Campaign, vous pouvez créer du contenu à diffuser par courrier électronique directement dans AEM, puis le traiter dans Adobe Campaign.
 
