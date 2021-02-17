@@ -19,11 +19,11 @@ ht-degree: 100%
 ---
 
 
-# Métadonnées – propriétés des fragments{#metadata-fragment-properties}
+# Métadonnées – propriétés des fragments {#metadata-fragment-properties}
 
 ## Modification des propriétés/métadonnées {#editing-properties-meta-data}
 
-Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu :
+Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu:
 
 1. Dans la console **Ressources**, naviguez jusqu’à l’emplacement de votre fragment de contenu.
 1. Vous pouvez :
@@ -35,7 +35,7 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
 
 1. L’onglet **De base** fournit des options que vous pouvez afficher ou modifier :
 
-   * Une miniature, pour laquelle vous pouvez **télécharger une image** 
+   * Une miniature, pour laquelle vous pouvez **charger une image** 
    * **Titre**
    * **Description**
    * **Balises**
