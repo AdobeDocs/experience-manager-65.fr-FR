@@ -30,7 +30,7 @@ L’**aperçu de la Live Copy** vous permet :
 
 * Exécuter des actions de déploiement
 
-## Ouverture de l’aperçu de la Live Copy  {#opening-the-live-copy-overview}
+## Ouverture de l’aperçu de la Live Copy {#opening-the-live-copy-overview}
 
 Vous pouvez ouvrir l’aperçu de la Live Copy via :
 
