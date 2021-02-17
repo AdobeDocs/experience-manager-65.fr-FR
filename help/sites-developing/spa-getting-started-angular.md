@@ -113,7 +113,7 @@ En réalité, la construction de l’application utilise [Webpack](https://webpa
 
 Une fois généré, le module peut être chargé dans une instance AEM.
 
-### Archétype de projet AEM{#aem-project-archetype}
+### Archétype de projet AEM {#aem-project-archetype}
 
 Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
 
