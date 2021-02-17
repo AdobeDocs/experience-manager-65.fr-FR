@@ -80,7 +80,7 @@ Les groupes suivants sont également inclus :
 1. **Se faire passer pour** : Utilisateurs et groupes définis dans AEM démonstration.
 1. **Bouton** : Rectangle coloré ou flèche circulaire pour la navigation.
 1. **Cliquez sur** : Pour exécuter une action dans l’article utilisateur.
-1. **Liens** : Situé en haut du menu principal du site We.Gov.
+1. **Liens** : Situé en haut du menu principal du site Web We.Gov.
 1. **Instructions** utilisateur : Ensemble d’étapes numériques à suivre pour parcourir l’article de l’utilisateur.
 1. **Portail** Forms :  *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
 1. **Vue** mobile : utilisateur We.Gov pour répliquer une vue mobile avec un navigateur redimensionné.
@@ -318,7 +318,7 @@ Aya doit passer en revue certains documents à la maison avant de pouvoir rempli
 
    ![Examen des demandes d&#39;assurance maladie](/help/forms/using/assets/health_benefits.png)
 
-### Facultatif : aem Boîte de réception et MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Facultatif : AEM Boîte de réception et MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
 Grâce aux intégrations de données et aux workflows automatisés, l’application d’Aya apparaît, ainsi qu’un enregistrement CRM qui a été généré automatiquement lors de l’envoi des données.
 
@@ -511,7 +511,7 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 
 ### rapports Forms de Adobe Analytics (Camila) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
 
-1. Accédez à .
+1. Accédez à
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
