@@ -38,7 +38,7 @@ Une fois Engagement Silverpop configuré, vous pouvez publier des newsletters ou
 
 Les configurations Silverpop peuvent être ajoutées via **Services cloud**, **Outils** ou des **points de terminaison d’API**. Toutes les méthodes sont décrites dans cette section.
 
-### Configuration de Silverpop via Services cloud  {#configuring-silverpop-via-cloudservices}
+### Configuration de Silverpop via Services cloud {#configuring-silverpop-via-cloudservices}
 
 Pour créer une configuration Silverpop dans Services cloud :
 
