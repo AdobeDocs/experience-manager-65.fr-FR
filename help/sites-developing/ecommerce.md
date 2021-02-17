@@ -21,7 +21,7 @@ ht-degree: 65%
 
 # eCommerce{#ecommerce}
 
-La structure d’intégration comprend une couche d’intégration avec une API. Ce permet d’effectuer les opérations suivantes :
+La structure d’intégration comprend une couche d’intégration avec une API. Cela vous permet de :
 
 * connecter un système eCommerce et d’extraire les données produit vers AEM ;
 * créer des composants AEM afin de disposer de fonctionnalités de commerce indépendantes du moteur eCommerce spécifique.
@@ -41,7 +41,7 @@ Pour en savoir plus, voir:
 >
 >Pour plus d’informations sur les concepts et l’administration des implémentations eCommerce, consultez [Administration d’eCommerce](/help/sites-administering/ecommerce.md).
 
-## Documentation d’API  {#api-documentation}
+## Documentation d’API {#api-documentation}
 
 L’API eCommerce est fournie par les modules :
 
