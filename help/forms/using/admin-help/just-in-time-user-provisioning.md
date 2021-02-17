@@ -22,7 +22,7 @@ ht-degree: 95%
 
 AEM Forms prend en charge l’approvisionnement juste à temps des utilisateurs n’existant pas encore dans Gestion des utilisateurs. Grâce à la fonction d’approvisionnement juste à temps, les utilisateurs sont automatiquement ajoutés à User Management une fois leurs informations d’identification authentifiées. En outre, les rôles et les groupes appropriés sont affectés de manière dynamique au nouvel utilisateur.
 
-## Fonction de l’approvisonnement juste à temps  {#need-for-just-in-time-user-provisioning}
+## Fonction de l’approvisonnement juste à temps {#need-for-just-in-time-user-provisioning}
 
 Voici comment l’authentification traditionnelle fonctionne :
 
