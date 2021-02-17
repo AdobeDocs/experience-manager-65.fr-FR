@@ -64,7 +64,7 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
  </tbody>
 </table>
 
-## Ajout d’options Java à JBoss  {#add-java-options-to-jboss}
+## Ajout d’options Java à JBoss {#add-java-options-to-jboss}
 
 1. Arrêtez le serveur d’applications JBoss.
 1. Ouvrez *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez les options Java requises.
