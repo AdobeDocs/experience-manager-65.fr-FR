@@ -16,7 +16,7 @@ ht-degree: 91%
 ---
 
 
-# Exemples de types de module d’IU ContextHub  {#sample-contexthub-ui-module-types}
+# Exemples de types de module d’IU ContextHub {#sample-contexthub-ui-module-types}
 
 ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions. Les informations suivantes sont disponibles :
 
@@ -180,7 +180,7 @@ Le module d’IU contextthub.screen-orientation affiche l’orientation actuelle
 
 ![chlimage_1-81](assets/chlimage_1-81a.png)
 
-La source du module d&#39;interface se trouve à l&#39;emplacement /libs/granite/contexthub/components/modules/screen-orientation.
+La source du module d&#39;interface se trouve dans /libs/granite/contexthub/components/modules/screen-orientation.
 
 ### Configuration {#configuration-5}
 
