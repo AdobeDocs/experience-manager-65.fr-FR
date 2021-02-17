@@ -33,7 +33,7 @@ L’utilitaire de migration convertit les [ressources Forms adaptatives](../../f
 >
 >En cas de mise à niveau dynamique, pour les ressources de Correspondence Management, vous pouvez exécuter la migration à chaque importation des actifs. Pour la migration de Correspondence Management, le package de compatibilité Forms doit être installé.
 
-## Approche de la migration  {#approach-to-migration}
+## Approche de la migration {#approach-to-migration}
 
 Vous pouvez [mettre à niveau](../../forms/using/upgrade.md) vers la dernière version d&#39;AEM Forms 6.5 à partir de AEM Forms 6.4, 6.3 ou 6.2 ou effectuer une nouvelle installation. Selon que vous avez mis à niveau votre installation précédente ou procédé à une nouvelle installation, vous devez effectuer l’une des opérations suivantes :
 
