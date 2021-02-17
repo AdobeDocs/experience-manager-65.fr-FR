@@ -44,7 +44,7 @@ Topologies du proxy de service de formulaires HTML5
 
 Les formulaires HTML5 se connectent aux serveurs AEM pour exécuter les scripts, les services web et les envois côté serveur. L’exécution XFA des formulaires HTML5 utilise des appels Ajax sur l’extrémité « /bin/xfaforms/submitaction » avec divers paramètres permettant de se connecter aux serveurs AEM. Les formulaires HTML5 connectent les serveurs AEM pour effectuer les opérations suivantes :
 
-#### Exécuter les scripts et services Web côté serveur  {#execute-server-sided-scripts-and-web-services}
+#### Exécuter les scripts et services Web côté serveur {#execute-server-sided-scripts-and-web-services}
 
 Les scripts destinés à s’exécuter sur le serveur sont appelés scripts côté serveur. Le tableau suivant liste tous les paramètres utilisés dans les scripts côté serveur et les services Web.
 
