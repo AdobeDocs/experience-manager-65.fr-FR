@@ -24,7 +24,7 @@ Vous pouvez restreindre l’accès aux documents PDF en définissant des mots de
 
 Dans la page Paramètres de protection, vous pouvez effectuer les opérations suivantes :
 
-## Création ou modification d’un paramètre de protection  {#create-or-edit-a-security-setting}
+## Création ou modification d’un paramètre de protection {#create-or-edit-a-security-setting}
 
 Un *paramètre de sécurité* permet de contrôler la sécurité et les autorisations des fichiers convertis avec ce paramètre.
 
