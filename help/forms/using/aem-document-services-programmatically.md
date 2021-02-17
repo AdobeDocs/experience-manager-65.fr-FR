@@ -17,7 +17,7 @@ ht-degree: 86%
 ---
 
 
-# Utilisation des Services de document AEM par programmation  {#using-aem-document-services-programmatically}
+# Utilisation des Services de document AEM par programmation {#using-aem-document-services-programmatically}
 
 Les classes de client requises pour générer des projets Maven utilisant des Services de document AEM sont disponibles dans le fichier jar [SDK client AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html). Pour plus d’informations sur les projets Maven, voir [Comment créer votre projet AEM à l’aide de Maven](/help/sites-developing/ht-projects-maven.md).
 
