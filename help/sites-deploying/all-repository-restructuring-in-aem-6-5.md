@@ -241,7 +241,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
  </tbody>
 </table>
 
-### Conceptions de services cloud classiques  {#classic-cloud-services-designs}
+### Conceptions de services cloud classiques {#classic-cloud-services-designs}
 
 <table>
  <tbody>
@@ -621,7 +621,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
        <li>Hiérarchies de fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.</li>
        <li>Hiérarchies des dossiers de fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Dossier &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.<br /> </li>
        <li>AEM Assets Folder hierarchy via <strong>AEM Assets &gt; Folder &gt; Folder Properties &gt; Cloud Services, onglet &gt; Configuration</strong>.</li>
-       <li>aem Projets via <strong>AEM Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li>
+       <li>AEM Projets via <strong>AEM Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li>
       </ol> </li>
      <li>Dissociez les anciens services cloud de traduction migrés des hiérarchies de contenu AEM mentionnées ci-dessus.</li>
     </ol> </td>
@@ -777,7 +777,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
        <li>Hiérarchies des fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.</li>
        <li>Hiérarchies des dossiers de fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Dossier &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.</li>
        <li>AEM Assets Folder hierarchy via <strong>AEM Assets &gt; Folder &gt; Folder Properties &gt; Cloud Services, onglet &gt; Configuration</strong>.</li>
-       <li>aem Projets via <strong>AEM Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li>
+       <li>AEM Projets via <strong>AEM Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li>
       </ol> </li>
      <li>Dissociez les anciens services cloud de traduction migrés des hiérarchies de contenu AEM mentionnées ci-dessus.</li>
     </ol> </td>
