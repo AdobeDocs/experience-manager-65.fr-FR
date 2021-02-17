@@ -42,7 +42,7 @@ Si les critères ne sont pas remplis, un déploiement TarMK actif/en mode atten
 >
 >Des informations supplémentaires sur le dimensionnement des instances d’auteur et la définition des utilisateurs simultanés sont disponibles dans les [Conseils pour le dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel).
 
-### Déploiement minimal de MongoDB pour AEM  {#minimal-mongodb-deployment-for-aem}
+### Déploiement minimal de MongoDB pour AEM {#minimal-mongodb-deployment-for-aem}
 
 Voici un déploiement minimal pour AEM sur MongoDB. Par souci de simplicité, l’arrêt SSL et les composants proxy HTTP ont été généralisés. Il est constitué d&#39;un jeu de réplicas MongoDB unique, avec un Principal et deux secondes.
 
