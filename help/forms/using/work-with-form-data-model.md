@@ -35,7 +35,7 @@ Lisez la suite pour plus de détails sur les diverses tâches et configurations 
 >
 >Vous devez être membre des groupes **fdm-author** et **forms-user** pour pouvoir créer et utiliser le modèle de données de formulaire. Contactez votre administrateur AEM pour devenir membre des groupes.
 
-## Ajouter des objets et des services de modèle de données  {#add-data-model-objects-and-services}
+## Ajouter des objets et des services de modèle de données {#add-data-model-objects-and-services}
 
 Si vous avez créé un modèle de données de formulaire avec des sources de données, vous pouvez utiliser l’éditeur de modèle de données de formulaire pour ajouter des objets et des services de modèle de données, configurer leurs propriétés, créer des associations entre les objets de modèle de données et tester le modèle et les services de données de formulaire.
 
@@ -541,7 +541,7 @@ Dans cet exemple, les données d’entrée sont validées en fonction des contra
    ]
 ```
 
-Une exception s’affiche si les données d’entrée ne répondent pas aux critères de validation. Si le niveau de journal est défini sur **Debug**, une erreur est consignée dans le fichier **error.log**. Par exemple :
+Une exception s’affiche si les données d’entrée ne répondent pas aux critères de validation. Si le niveau de journal est défini sur **Debug**, une erreur est consignée dans le fichier **error.log**. Par exemple,
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
