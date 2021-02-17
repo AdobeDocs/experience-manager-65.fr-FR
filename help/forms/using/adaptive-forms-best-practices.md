@@ -31,7 +31,7 @@ En outre, voici quelques recommandations de lecture concernant les meilleures pr
 * [Meilleures pratiques : administration d’AEM](/help/sites-administering/administer-best-practices.md)
 * [Meilleures pratiques : développement de solutions](/help/sites-developing/best-practices.md)
 
-## Installation et configuration d’AEM Forms  {#set-up-and-configure-aem-forms}
+## Installation et configuration d’AEM Forms {#set-up-and-configure-aem-forms}
 
 ### Installation du projet de développement de formulaires {#setting-up-forms-development-project}
 
