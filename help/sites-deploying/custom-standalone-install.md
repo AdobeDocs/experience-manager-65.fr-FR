@@ -23,7 +23,7 @@ ht-degree: 79%
 
 Cette section décrit les options disponibles lors de l’installation d’une instance AEM autonome. Vous pouvez également consulter [Éléments de stockage](/help/sites-deploying/storage-elements-in-aem-6.md) pour plus d’informations sur le choix du type de stockage principal après avoir installé AEM 6.
 
-## Modification du numéro de port en renommant le fichier  {#changing-the-port-number-by-renaming-the-file}
+## Modification du numéro de port en renommant le fichier {#changing-the-port-number-by-renaming-the-file}
 
 Le port par défaut pour AEM est 4502. Si ce port n&#39;est pas disponible ou est déjà utilisé, Quickstart se configure automatiquement pour utiliser le premier numéro de port disponible comme suit : 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<*random*>`.
 
