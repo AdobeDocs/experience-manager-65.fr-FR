@@ -19,7 +19,7 @@ ht-degree: 87%
 ---
 
 
-# Différences de caractéristiques entre formulaires HTML5 et formulaires PDF  {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Différences de caractéristiques entre formulaires HTML5 et formulaires PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 Le tableau suivant indique les fonctionnalités prises en charge par les formulaires HTML5 et les formulaires PDF :
 
