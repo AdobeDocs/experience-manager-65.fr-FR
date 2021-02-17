@@ -18,7 +18,7 @@ ht-degree: 44%
 ---
 
 
-# Envoi d’un accusé de réception d’envoi de formulaire par courrier électronique  {#sending-a-form-submission-acknowledgement-via-email}
+# Envoi d’un accusé de réception d’envoi de formulaire par courrier électronique {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Envoi de données de formulaire adaptatif {#adaptive-form-data-submission}
 
