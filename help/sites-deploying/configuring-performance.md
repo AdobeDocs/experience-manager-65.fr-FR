@@ -18,7 +18,7 @@ ht-degree: 73%
 ---
 
 
-# Optimisation des performances  {#performance-optimization}
+# Optimisation des performances {#performance-optimization}
 
 >[!NOTE]
 >
@@ -389,7 +389,7 @@ Dans les deux cas, vous pouvez définir le nombre attendu de transactions par se
 | Composant | Type de test | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
 | Utilisateur unique de la page d&#39;accueil | Moyenne | 1 | 3 |  |  |
-|  | Crête | 3 | 3 |  |  |
+|  | Crête | 1 | 3 |  |  |
 | 100 utilisateurs de la page d&#39;accueil | Moyenne | 100 | 1 |  |  |
 |  | Crête | 100 | 3 |  |
 
@@ -399,10 +399,10 @@ En testant une combinaison de composants, vous vous dotez d’une visibilité pl
 
 | Scénario | Composant | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Moyenne mixte | Page d’accueil | 10 | 3 |  |  |
-|  | Rechercher | 10 | 3 |  |  |
+| Moyenne mixte | Page d’accueil | 10 | 1 |  |  |
+|  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 10 | 2 |  |  |
-|  | Événements | 10 | 3 |  |  |
+|  | Événements | 10 | 1 |  |  |
 |  | Activations | 10 | 3 |  | Simulation du comportement de l’auteur. |
 | Pic mixte | Page d’accueil | 100 | 5 |  |  |
 |  | Rechercher | 50 | 5 |  |  |
@@ -433,10 +433,10 @@ Lors de la conception de ces tests, il faut garder à l’esprit que tous les sc
 
 | Scénario d’erreur | Type d’erreur | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge des composants de recherche | Recherche sur un caractère générique global (astérisque) | 10 | 3 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast; sont recherchées. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique global (astérisque) | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast; sont recherchées. |
 |  | Mot d’arrêt | 20 | 2 |  | Recherche d&#39;un mot d&#39;arrêt. |
 |  | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
-|  | Caractères spéciaux | 10 | 3 |  | Recherche de caractères spéciaux. |
+|  | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
 
 #### Tests d’endurance {#endurance-tests}
 
@@ -444,11 +444,11 @@ Certains problèmes ne feront surface qu’après une période continue de fonct
 
 | Scénario | Type de test | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Essai d&#39;endurance (72 heures) | Page d’accueil | 10 | 1 |  |  |
-|  | Rechercher | 10 | 1 |  |  |
+| Essai d&#39;endurance (72 heures) | Page d’accueil | 10 | 3 |  |  |
+|  | Rechercher | 10 | 3 |  |  |
 |  | Actualités | 20 | 2 |  |  |
-|  | Événements | 10 | 3 |  |  |
-|  | Activations | 3 | 1 |  | Simulation du comportement de l’auteur. |
+|  | Événements | 10 | 1 |  |  |
+|  | Activations | 3 | 3 |  | Simulation du comportement de l’auteur. |
 
 ### Optimisation {#optimization}
 
@@ -653,7 +653,7 @@ Pour s’assurer que ces fichiers sont correctement mis en cache, suivez les con
 
 ## Performances des sauvegardes {#backup-performance}
 
-Cette section présente une série de points de référence utilisés pour évaluer les performances des sauvegardes AEM et les effets de l&#39;activité de sauvegarde sur les performances des applications. aem sauvegardes présentent une charge importante sur le système pendant son exécution, et nous mesurons cela, ainsi que les effets des paramètres de délai de sauvegarde qui tentent de moduler ces effets. L’objectif est d’offrir des données de référence sur les performances attendues des sauvegardes avec des configurations et des quantités de données de production réalistes, et de fournir des conseils sur l’évaluation de la durée de la sauvegarde pour les systèmes planifiés.
+Cette section présente une série de points de référence utilisés pour évaluer les performances des sauvegardes AEM et les effets de l&#39;activité de sauvegarde sur les performances des applications. AEM sauvegardes présentent une charge importante sur le système pendant son exécution, et nous mesurons cela, ainsi que les effets des paramètres de délai de sauvegarde qui tentent de moduler ces effets. L’objectif est d’offrir des données de référence sur les performances attendues des sauvegardes avec des configurations et des quantités de données de production réalistes, et de fournir des conseils sur l’évaluation de la durée de la sauvegarde pour les systèmes planifiés.
 
 ### Environnement de référence {#reference-environment}
 
