@@ -1,8 +1,8 @@
 ---
 title: Gestion des fragments de contenu
 seo-title: Gestion des fragments de contenu
-description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
-seo-description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
+description: Les fragments de contenu sont stockés en tant que Ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
+seo-description: Les fragments de contenu sont stockés en tant que Ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
 uuid: 675e1a6b-2583-488f-bbb4-210daed3e1b0
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -27,7 +27,7 @@ Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont d
 >
 >Les fragments de contenu sont ensuite utilisés avec les pages de création ; voir [Création de page avec des fragments de contenu](/help/sites-authoring/content-fragments.md).
 
-## Création de fragments de contenu   {#creating-content-fragments}
+## Création de fragments de contenu  {#creating-content-fragments}
 
 ### Création d’un modèle de contenu {#creating-a-content-model}
 
@@ -91,7 +91,7 @@ Dans la console **Ressources**, différentes actions sont disponibles pour vos f
 
 Sélectionnez le fragment pour afficher la barre d’outils avec les actions applicables :
 
-* **Téléchargement**
+* **Télécharger**
 
    * Enregistrez le fragment sous forme d’un fichier ZIP. Vous pouvez indiquer si vous souhaitez inclure des éléments, des variations ou des métadonnées.
 
@@ -162,7 +162,7 @@ Pour ouvrir votre fragment à des fins de modification :
    >
    >Les options **Enregistrer** et **Annuler** vous font quitter l’éditeur. Pour plus d’informations sur le fonctionnement des deux options avec les fragments de contenu, voir [Enregistrer, Annuler et Versions](#save-cancel-and-versions).
 
-## Enregistrer, Annuler et Versions   {#save-cancel-and-versions}
+## Enregistrer, Annuler et Versions  {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -219,19 +219,19 @@ Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des v
 
 Une fois que vous avez ouvert le fragment, vous pouvez utiliser l’onglet [Variations](/help/assets/content-fragments/content-fragments-variations.md) pour créer votre contenu.
 
-## Création et gestion de variations dans un fragment   {#creating-and-managing-variations-within-your-fragment}
+## Création et gestion de variations dans un fragment  {#creating-and-managing-variations-within-your-fragment}
 
 Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer des [Variations](/help/assets/content-fragments/content-fragments-variations.md) de ce contenu.
 
-## Association de contenu au fragment   {#associating-content-with-your-fragment}
+## Association de contenu au fragment  {#associating-content-with-your-fragment}
 
 Vous pouvez également [associer du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) à un fragment. Cela fournit une liaison pour que les ressources (c’est-à-dire les images) puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
-## Affichage et modification des métadonnées (propriétés) du fragment   {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Affichage et modification des métadonnées (propriétés) du fragment  {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de l’onglet [Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md).
 
-## Chronologie pour les fragments de contenu   {#timeline-for-content-fragments}
+## Chronologie pour les fragments de contenu  {#timeline-for-content-fragments}
 
 Outre les options standard, la [Chronologie](/help/assets/manage-assets.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
@@ -242,7 +242,7 @@ Outre les options standard, la [Chronologie](/help/assets/manage-assets.md#timel
 
    * **[Comparer à actuel](#comparing-fragment-versions)** (sélectionner un fragment existant, puis une version spécifique)
 
-   * Ajouter un **libellé** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
+   * Ajouter une **étiquette** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
 
    * **Enregistrer comme version** (sélectionner un fragment existant, puis la flèche du haut au bas de la chronologie)
 
@@ -292,7 +292,7 @@ Elles seront affichées côte à côte, où :
    * Le texte remplacé est en bleu
 
 * L’icône en plein écran permet d’ouvrir l’une ou l’autre version seule, puis de revenir en mode parallèle.
-* Vous pouvez **restaurer** à la version spécifique
+* Vous pouvez **rétablir** la version spécifique
 * **Terminé** vous ramène à la console
 
 >[!NOTE]
