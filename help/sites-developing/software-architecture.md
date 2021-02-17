@@ -44,7 +44,7 @@ SOLID est un acronyme qui décrit cinq principes architecturaux qu’il convient
 
 Vous devez vous efforcer de respecter ces cinq principes pour élaborer un système offrant une stricte séparation des préoccupations.
 
-### Observation du principe de robustesse  {#follow-the-robustness-principle}
+### Observation du principe de robustesse {#follow-the-robustness-principle}
 
 Le principe de robustesse stipule qu’il faut être tolérant dans ce que l’on accepte, et pointilleux dans ce que l’on envoie. En d’autres termes, lors de l’envoi de messages à un tiers, il convient de respecter scrupuleusement les spécifications. Cependant, lors de la réception de messages envoyés par un tiers, on doit accepter des messages non conformes, pour autant que leur signification soit claire.
 
