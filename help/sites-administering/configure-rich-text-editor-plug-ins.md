@@ -11,7 +11,7 @@ ht-degree: 95%
 ---
 
 
-# Configuration des modules externes d’éditeur de texte enrichi  {#configure-the-rich-text-editor-plug-ins}
+# Configuration des modules externes d’éditeur de texte enrichi {#configure-the-rich-text-editor-plug-ins}
 
 Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
 
