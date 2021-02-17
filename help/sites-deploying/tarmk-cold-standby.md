@@ -74,7 +74,7 @@ En outre, vous pouvez spécifier les instances de secours qui sont autorisées �
 >
 >Il est recommandé d’ajouter un équilibreur de charge entre le dispatcher et les serveurs qui font partie de la configuration Coldy Standby. L’équilibreur de charge doit être configuré pour diriger le trafic des utilisateurs uniquement vers l’instance **principale**, pour assurer la régularité et empêcher la copie du contenu sur l’instance de secours par des moyens autres que le mécanisme Cold Standby.
 
-## Création d’une configuration AEM TarMK Cold Standby  {#creating-an-aem-tarmk-cold-standby-setup}
+## Création d’une configuration AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
