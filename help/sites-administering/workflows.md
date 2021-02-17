@@ -47,7 +47,7 @@ Les workflows d’entreprise que votre organisation a établis peuvent être rep
 
 
 
-## Modèles et instances de workflow  {#workflow-models-and-instances}
+## Modèles et instances de workflow {#workflow-models-and-instances}
 
 Les [modèles de workflows](/help/sites-developing/workflows.md#model) dans AEM sont la représentation et la mise en œuvre de processus d’entreprise :
 
