@@ -29,7 +29,7 @@ AEM propose plusieurs outils qui vous permettent de développer des sites pour l
 
 Cette page doit être lue avec la [page Mobile pour les auteurs](/help/sites-authoring/mobile.md).
 
-## Développement de sites web pour mobiles  {#developing-web-sites-for-mobile}
+## Développement de sites web pour mobiles {#developing-web-sites-for-mobile}
 
 Développez des composants et des modèles de page optimisés pour un affichage sur des appareils mobiles. Développez des pages qui utilisent une disposition réactive qui s’adapte à différents formats d’écran, ou développez des pages qui sont optimisées pour une taille d’écran spécifique. Utilisez les émulateurs de périphériques que AEM fournit ou créez vos propres émulateurs pour la création et la prévisualisation WSYWIG :
 
