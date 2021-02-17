@@ -19,7 +19,7 @@ ht-degree: 79%
 ---
 
 
-# Analytics avec des fournisseurs externes  {#analytics-with-external-providers}
+# Analytics avec des fournisseurs externes {#analytics-with-external-providers}
 
 Analytics peut vous apporter des informations importantes et intéressantes sur l’utilisation de votre site web.
 
