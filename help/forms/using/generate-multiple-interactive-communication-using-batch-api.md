@@ -177,7 +177,7 @@ Avant de déployer la servlet Java, assurez-vous que vous disposez d’une commu
 
 1. Connectez-vous à votre instance AEM et créez une communication interactive. Pour utiliser la communication interactive mentionnée dans l&#39;exemple de code donné ci-dessous, [cliquez ici](assets/SimpleMediumIC.zip).
 1. [Créez et déployez un projet AEM à l’aide d’Apache ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) Mavenon votre instance AEM.
-1. Ajoutez [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure dans le fichier de liste des dépendances du POM de votre projet AEM. Par exemple :
+1. Ajoutez [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure dans le fichier de liste des dépendances du POM de votre projet AEM. Par exemple,
 
    ```xml
        <dependency>
