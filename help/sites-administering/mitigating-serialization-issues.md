@@ -47,7 +47,7 @@ Adobe prend officiellement en charge Java 6, 7 et 8, toutefois, il semble que N
 1. Accédez à la console Web du lot à l&#39;adresse `https://server:port/system/console/bundles`
 1. Recherchez le lot de sérialisation et démarrez-le. Cela devrait charger automatiquement et dynamiquement l’agent NotSoSerial.
 
-## Installation de l’agent sur les serveurs d’applications  {#installing-the-agent-on-application-servers}
+## Installation de l’agent sur les serveurs d’applications {#installing-the-agent-on-application-servers}
 
 L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM pour les serveurs d’applications. Cependant, vous pouvez l’extraire du fichier de distribution JAR d’AEM et l’utiliser avec la configuration de votre serveur d’applications :
 
