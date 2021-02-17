@@ -426,7 +426,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
 1. Enregistrez et fermez le fichier 
 
-### Configuration du service de gestion de polices   {#configuring-the-font-manager-service}
+### Configuration du service de gestion de polices  {#configuring-the-font-manager-service}
 
 1. Connectez-vous à [AEM Configuration Manager](http://localhost:4502/system/console/configMgr) en tant qu’administrateur.
 1. Recherchez et ouvrez le service **[!UICONTROL CQ-DAM-Handler-Gibson Font Managers]**. Spécifiez le chemin d’accès des répertoires Polices système, Polices Adobe Server et Polices client. Cliquez sur **[!UICONTROL Enregistrer]**.
