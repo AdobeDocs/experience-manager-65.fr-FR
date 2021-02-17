@@ -158,7 +158,7 @@ Dans ce composant, vous accédez au paragraphe ciblé pour le sélectionner.
 
 Cliquez sur le menu déroulant pour accéder au paragraphe à référencer. Une fois que vous avez terminé, cliquez sur **OK**.
 
-### Texte et image (Campaign)  {#text-image-campaign}
+### Texte et image (Campaign) {#text-image-campaign}
 
 Le composant Texte et image (Campaign) permet d’ajouter un bloc de texte et une image.
 
