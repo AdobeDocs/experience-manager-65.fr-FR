@@ -18,7 +18,7 @@ ht-degree: 85%
 ---
 
 
-# Minimisation des fichiers JavaScript  {#minification-of-the-javascript-files}
+# Minimisation des fichiers JavaScript {#minification-of-the-javascript-files}
 
 La minimisation supprime du code source les caractères redondants, comme les espaces blancs, les nouvelles lignes et les commentaires. Cela améliore les performances en réduisant la taille du code. La minimisation n’a aucun impact sur la fonctionnalité et réduit la lisibilité du code.
 
