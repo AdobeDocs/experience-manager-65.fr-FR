@@ -109,7 +109,7 @@ Après avoir configuré votre modèle et votre composant, vous pouvez ajouter vo
 
 `/etc/cloudservices/<service-name>`
 
-### Modèle de contenu {#content-model}
+### Modèles de contenu {#content-model}
 
 Le modèle de contenu est stocké sous `cq:Page` sous :
 
