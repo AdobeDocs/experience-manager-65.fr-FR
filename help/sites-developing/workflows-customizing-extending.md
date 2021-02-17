@@ -29,7 +29,7 @@ La création d’une étape personnalisée de processus implique les tâches sui
 
 Vous pouvez également [interagir avec vos processus à partir de vos programmes et scripts](/help/sites-developing/workflows-program-interaction.md).
 
-## Composants d’étape de processus - Notions de base  {#workflow-step-components-the-basics}
+## Composants d’étape de processus - Notions de base {#workflow-step-components-the-basics}
 
 Un composant d’étape de processus définit l’apparence et le comportement de l’étape lors de la création de modèles de processus :
 
