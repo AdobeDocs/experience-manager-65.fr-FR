@@ -17,7 +17,7 @@ ht-degree: 6%
 
 + [Hub du guide d’utilisateur d’AEM 6.5](home.md)
 + Guides de l’utilisateur et ressources{#user-guides}
-   + [aem Fonctionnalités Guides de l’utilisateur](capabilities.md)
+   + [AEM Fonctionnalités Guides de l’utilisateur](capabilities.md)
    + [Guides de l’utilisateur de la mise en oeuvre AEM](implementation.md)
    + [Ressources AEM](resources.md)
 + Dépannage et aide{#troubleshooting}
