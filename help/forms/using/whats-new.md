@@ -212,9 +212,9 @@ Conformément à la fin de Flash Player d’Adobe prévue et à l’orientation 
 
 #### Améliorations de la sécurité {#security-improvements}
 
-* aem 6.5 Forms on JEE Administration Console UI est désormais basé sur Apache Struts 2.5.
-* aem 6.5 Forms utilise désormais jQuery à 3.2.1 et jQuery UI 1.12.1. Voir [documentation de mise à niveau](/help/forms/home.md) pour connaître l&#39;impact de la modification.
+* AEM 6.5 Forms on JEE Administration Console UI est désormais basé sur Apache Struts 2.5.
+* AEM 6.5 Forms utilise désormais jQuery à 3.2.1 et jQuery UI 1.12.1. Voir [documentation de mise à niveau](/help/forms/home.md) pour connaître l&#39;impact de la modification.
 
 #### Améliorations de l’accessibilité {#accessibility-improvements}
 
-aem 6.5 Forms a amélioré l’accessibilité de AEM Forms Workspace.
+AEM 6.5 Forms a amélioré l’accessibilité de AEM Forms Workspace.
