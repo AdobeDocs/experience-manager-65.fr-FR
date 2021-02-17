@@ -18,7 +18,7 @@ ht-degree: 89%
 ---
 
 
-# Conception de formulaires HTML5 accessibles  {#designing-accessible-html-forms}
+# Conception de formulaires HTML5 accessibles {#designing-accessible-html-forms}
 
 Les formulaires HTML5 utilisent la norme d’accessibilité ARIA HTML5 pour générer des formulaires HTML accessibles. Ces formulaires prennent en charge la navigation par onglets (sauf Mozilla Firefox) et sont certifiés compatibles avec les lecteurs d’écran les plus courants. Pour générer un formulaire HTML5 avec de bonnes fonctions d’accessibilité, concevez le modèle de formulaire XFA en fonction de quelques directives de conception de base. Les directives de conception comprennent la configuration des onglets dans l’ordre approprié et fournissent le contenu du texte vocal pour chaque commande du formulaire. AEM Forms Designer prend en charge la définition de ces attributs de contrôle de formulaire pour générer un formulaire PDF et HTML5 accessible.
 
