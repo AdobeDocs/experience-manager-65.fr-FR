@@ -38,7 +38,7 @@ Adobe a sorti les extensions suivantes :
 * [Extension AEM Brackets](/help/sites-developing/aem-brackets.md)
 * [Extension AEM IntelliJ (de Headwire)](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf)
 
-### Autres outils  {#other-tools}
+### Autres outils {#other-tools}
 
 AEM est livré avec d’autres outils qui facilitent le développement :
 
