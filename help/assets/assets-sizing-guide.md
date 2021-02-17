@@ -15,7 +15,7 @@ ht-degree: 68%
 
 Lorsque vous dimensionnez l&#39;environnement pour une mise en oeuvre [!DNL Adobe Experience Manager Assets], il est important de s&#39;assurer que les ressources disponibles sont suffisantes en termes de disque, de processeur, de mémoire, d&#39;E/S et de débit réseau. Pour dimensionner la plupart de ces ressources, vous devez comprendre leur mode de chargement dans le système. Si aucune meilleure mesure n’est disponible, vous pouvez diviser la taille de la bibliothèque existante par l’âge de la bibliothèque pour trouver la fréquence de création des ressources.
 
-## Disque  {#disk}
+## Disque {#disk}
 
 ### Banque de données {#datastore}
 
