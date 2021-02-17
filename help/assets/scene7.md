@@ -50,7 +50,7 @@ Vous pouvez publier des ressources numériques dans Dynamic Media Classic comme 
 
 >[!NOTE]
 >
->aem publie dans Dynamic Media Classic de manière asynchrone. Une fois que vous avez cliqué sur **[!UICONTROL Publier]**, la publication de votre fichier dans Dynamic Media Classic peut prendre plusieurs secondes.
+>AEM publie dans Dynamic Media Classic de manière asynchrone. Une fois que vous avez cliqué sur **[!UICONTROL Publier]**, la publication de votre fichier dans Dynamic Media Classic peut prendre plusieurs secondes.
 
 
 ## Composants Dynamic Media Classic {#scene-components}
