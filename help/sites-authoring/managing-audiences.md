@@ -38,7 +38,7 @@ Les audiences sont accompagnées d’un libellé qui décrit le type d’audienc
 * CC - segment ClientContext
 * AT - audience Adobe Target
 
-## Création d’un segment ContextHub dans la console Audiences   {#creating-a-contexthub-segment-in-the-audiences-console}
+## Création d’un segment ContextHub dans la console Audiences  {#creating-a-contexthub-segment-in-the-audiences-console}
 
 Vous pouvez créer un segment ContextHub dans la console Audiences ou durant le processus de ciblage.
 
