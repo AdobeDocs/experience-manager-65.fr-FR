@@ -186,7 +186,7 @@ StatutVous pouvez marquer le compte comme
 
        Il s’agit d’un identifiant unique pour le groupe. Il est obligatoire et ne peut pas contenir d’espaces.
 
-   * **Nom**
+   * **Name** (Nom)
 
       Nom du groupe ; elle s’affichera dans la console Groupes.
 
