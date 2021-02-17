@@ -18,7 +18,7 @@ ht-degree: 62%
 ---
 
 
-# Configuration de Dynamic Media – mode hybride  {#configuring-dynamic-media-hybrid-mode}
+# Configuration de Dynamic Media – mode hybride {#configuring-dynamic-media-hybrid-mode}
 
 Dynamic Media mode hybride doit être activé et configuré pour être utilisé. Selon l’utilisation que vous souhaitez en faire, Dynamic Media prend en charge [plusieurs configurations](#supported-dynamic-media-configurations).
 
@@ -66,7 +66,7 @@ Les tâches de configuration suivantes font référence aux termes suivants :
 | **Terme** | **Dynamic Media activé** | **Description** |
 |---|---|---|
 | Noeud d’auteur AEM | Coche blanche dans un cercle vert | Noeud d’auteur que vous déployez sur site ou via Managed Services. |
-| aem noeud de publication | &quot;X&quot; blanc dans un carré rouge. | Noeud de publication que vous déployez sur site ou via Managed Services. |
+| AEM noeud de publication | &quot;X&quot; blanc dans un carré rouge. | Noeud de publication que vous déployez sur site ou via Managed Services. |
 | Noeud de publication Image Service | Coche blanche en cercle vert. | Noeud de publication que vous exécutez sur les centres de données gérés par Adobe. Renvoie à l’URL du service d’images. |
 
 Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, uniquement pour les vidéos ou à la fois pour les images et les vidéos. Pour déterminer les étapes à suivre pour configurer Dynamic Media pour votre scénario, reportez-vous au tableau suivant.
@@ -201,7 +201,7 @@ Dans un déploiement AEM QuickStart WAR, le numéro de port et le chemin de cont
 >[!NOTE]
 Dans un [déploiement autonome Quickstart AEM](/help/sites-deploying/deploy.md), un domaine **self** n’a généralement pas besoin d’être configuré, car le numéro de port et le chemin d’accès au contexte peuvent s’autoconfigurer. Si toutefois toutes les interfaces réseau sont désactivées, vous devez configurer le domaine **self**.
 
-## Désactivation de Dynamic Media   {#disabling-dynamic-media}
+## Désactivation de Dynamic Media  {#disabling-dynamic-media}
 
 Dynamic Media est désactivé par défaut. Toutefois, si vous l’avez activé, vous voudrez peut-être le désactiver.
 
@@ -553,7 +553,7 @@ Vérifiez que le module de paramètres prédéfinis d’analyses vidéo du premi
 
    * **Vérifiez les paramètres prédéfinis d’analyses vidéo au moyen du JCR** Pour vérifier les paramètres prédéfinis d’analyses vidéo au moyen du JCR, vous devez disposer d’un accès à CRXDE Lite.
 
-      aem - En CRXDE Lite, accédez à `/conf/global/settings/
+      AEM - En CRXDE Lite, accédez à `/conf/global/settings/
 dam/dm/presets/analytics/jcr:content/userdata`
 
       C&#39;est `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
@@ -611,7 +611,7 @@ Les propriétés des paramètres prédéfinis sont les suivantes :
 * `trackingNamespace`
 * `marketingCloudOrgId` (non présent dans les anciennes versions d’AEM)
 
-aem 6.4 et les versions ultérieures enregistrent ce paramètre prédéfini à `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+AEM 6.4 et les versions ultérieures enregistrent ce paramètre prédéfini à `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 ## Réplication des paramètres de catalogue {#replicating-catalog-settings}
 
