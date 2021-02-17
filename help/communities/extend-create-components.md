@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 418e7fad2d990f1a7cb3b69ab4c290ca1b7075ba
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -68,8 +68,8 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
 
 1. Développez le noeud qui vient d’être créé : `/apps/custom/components/comments`
 1. Sélectionner **[!UICONTROL Enregistrer tout]**
-1. Cliquez avec le bouton droit `comments.jsp`
-1. Sélectionner **[!UICONTROL Supprimer]**
+1. Faites un clic-droit `comments.jsp`
+1. Sélectionnez **[!UICONTROL Supprimer]**
 1. Sélectionner **[!UICONTROL Enregistrer tout]**
 
 ![create-component](assets/create-component.png)
@@ -98,8 +98,8 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
 
 1. Développez le noeud qui vient d’être créé : `/apps/custom/components/comments/comment`
 1. Sélectionner **[!UICONTROL Enregistrer tout]**
-1. Cliquez avec le bouton droit `comment.jsp`
-1. Sélectionner **[!UICONTROL Supprimer]**
+1. Faites un clic-droit `comment.jsp`
+1. Sélectionnez **[!UICONTROL Supprimer]**
 1. Sélectionner **[!UICONTROL Enregistrer tout]**
 
 ![create-child-component](assets/create-child-component.png)
