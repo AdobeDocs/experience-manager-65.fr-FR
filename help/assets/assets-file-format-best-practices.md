@@ -60,7 +60,7 @@ Adobe recommande d’utiliser la bibliothèque ImageMagick dans les cas suivants
 
 Pour savoir comment configurer la bibliothèque [!DNL ImageMagick] dans [!DNL Experience Manager], voir [Utilisation d’ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
-## Bibliothèque de transcodage d’imagerie (ITL)  {#image-transcoding-library}
+## Bibliothèque de transcodage d’imagerie (ITL) {#image-transcoding-library}
 
 La bibliothèque de transcodage d’images d’Adobe est une solution de traitement d’images qui exécute des fonctions de gestion d’images de base, notamment le codage d’images, le transcodage, le ré-échantillonnage, le redimensionnement, etc.
 
