@@ -73,7 +73,7 @@ L’illustration suivante illustre l’installation de Workbench, notamment :
 
 Cette section décrit le configuration matérielle et logicielle requise et les plates-formes prises en charge.
 
-### Configuration matérielle et logicielle minimale  {#minimum-hardware-software-requirements}
+### Configuration matérielle et logicielle minimale {#minimum-hardware-software-requirements}
 
 ****
 WorkbenchLes exigences suivantes sont recommandées au minimum : Espace disque pour l&#39;installation :
