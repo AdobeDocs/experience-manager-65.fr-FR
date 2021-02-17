@@ -144,7 +144,7 @@ Définissez des seuils bas pour oak.queryLimitInMemory (par exemple, 10000) et o
 
 Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire non soutenues par un index ou soutenues par un index moins étendu). Par exemple, une requête qui lit 1 million de nœuds générerait un grand nombre d’E/S et aurait un impact négatif sur les performances globales de l’application. Par conséquent, toute requête qui échoue en raison des limites ci-dessus doit être analysée et optimisée.
 
-#### Après le déploiement  {#post-deployment-2}
+#### Après le déploiement {#post-deployment-2}
 
 * Surveillez les journaux à la recherche de requêtes déclenchant une traversée de grands noeuds ou une consommation importante de mémoire de tas : &quot;
 
@@ -421,7 +421,7 @@ Par conséquent, assurez-vous que les index satisfont aux requêtes, sauf si la 
 
 ### Prise en charge par Adobe {#adobe-supported}
 
-* **Débogueur du créateur de requêtes**
+* **Débogueur Query Builder**
 
    * Interface utilisateur web destinée à exécuter des requêtes Query Builder et à générer le XPath connexe (à utiliser dans l’outil Expliquer la requête ou dans le Générateur de définitions d’index en Oak).
    * Situé sur AEM à [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
