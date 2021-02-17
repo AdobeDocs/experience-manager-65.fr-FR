@@ -28,7 +28,7 @@ Cette section de la documentation AEM Communities s&#39;ajoute aux éléments su
 
 Il n&#39;y a qu&#39;un seul artefact &quot;uber&quot; qui remplace les artefacts individuels :
 
-* aem [JAR de l&#39;API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [JAR de l&#39;API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
