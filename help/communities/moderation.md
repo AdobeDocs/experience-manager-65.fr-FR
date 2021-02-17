@@ -130,7 +130,7 @@ Cependant, si vous cochez **Question** et **En attente**, vous ne verrez que le 
 
 Lorsque le rail de filtre est ouvert, l’icône Rechercher permet de basculer entre le panneau latéral et le panneau latéral fermé. Cependant, pour fermer le rail de filtre et ne faire que vue au contenu généré par l’utilisateur, cliquez sur l’icône Rechercher et sélectionnez l’option Contenu uniquement.
 
-#### Chemin d’accès au contenu {#content-path}
+#### Content Path{#content-path} (Chemin d’accès au contenu)
 
 Le chemin d’accès au contenu limite la référence de l’UGC affichée aux publications placées dans le référentiel de contenu spécifié.
 
