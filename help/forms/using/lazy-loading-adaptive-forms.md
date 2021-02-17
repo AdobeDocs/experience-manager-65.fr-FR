@@ -25,7 +25,7 @@ Lorsque les formulaires sont volumineux et complexes et qu’ils contiennent des
 
 Découvrons d’abord les exigences et les étapes préparatoires avant de configurer le chargement différé.
 
-## Préparation à la configuration du chargement différé  {#preparing-to-configure-lazy-loading}
+## Préparation à la configuration du chargement différé {#preparing-to-configure-lazy-loading}
 
 Avant de configurer le chargement différé des fragments d’un formulaire adaptatif, il est essentiel de définir des stratégies afin de créer des fragments, d’identifier les valeurs utilisées dans les scripts ou référencées dans d’autres fragments, ou encore de définir des règles de contrôle de la visibilité des champs des fragments chargés.
 
