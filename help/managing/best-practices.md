@@ -40,7 +40,7 @@ Pour vous aider, les meilleures pratiques se composent des éléments suivants 
 
 * D’[autres documents de référence](/help/managing/best-practices-further-reference.md) pour fournir plus de détails sur des domaines spécifiques.
 
-## Tableau de bord de pulsation du projet  {#project-heartbeat-dashboard}
+## Tableau de bord de pulsation du projet {#project-heartbeat-dashboard}
 
 La feuille de calcul de **pulsation du projet** fournit un aperçu graphique des mesures essentielles de votre projet :
 
