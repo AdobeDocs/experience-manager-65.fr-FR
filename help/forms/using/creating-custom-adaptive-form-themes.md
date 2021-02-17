@@ -29,7 +29,7 @@ ht-degree: 82%
 * Comment créer une bibliothèque cliente dans Adobe Experience Manager
 * [Création d’un modèle de formulaire adaptatif](/help/forms/using/custom-adaptive-forms-templates.md) pour utiliser le thème que vous créez
 
-## Thème de formulaire adaptatif  {#adaptive-form-theme}
+## Thème de formulaire adaptatif {#adaptive-form-theme}
 
 Un **thème de formulaire adaptatif** est une bibliothèque cliente AEM utilisée pour définir les styles, c’est-à-dire l’apparence d’un formulaire adaptatif.
 
@@ -230,7 +230,7 @@ Après avoir créé un thème de formulaire adaptatif, effectuez les étapes sui
 
    1. **Facultatif** : dans la page personnalisée, remplacez les fichiers header.jsp, footer.jsp, et body.jsp le cas échéant.
 
-1. Créez un modèle personnalisé (par exemple : `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) dont le jcr:content pointe vers la page personnalisée créée à l’étape précédente (par exemple : `myAfCustomizations/myAfPages/forestPage)`.
+1. Créez un modèle personnalisé (par exemple : `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) dont le jcr:content pointe vers une page personnalisée créée à l’étape précédente (par exemple : `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Instantané du référentiel CRX](assets/2-1.png)
 
