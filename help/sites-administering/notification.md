@@ -38,7 +38,7 @@ Lorsque l’utilisateur est averti, il reçoit un courrier électronique dans la
 >
 >Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
-## Configuration du service de messagerie  {#configuring-the-mail-service}
+## Configuration du service de messagerie {#configuring-the-mail-service}
 
 Pour qu’AEM puisse envoyer des courriers électroniques, le **service de messagerie Day CQ** doit être correctement configuré. Vous pouvez afficher la configuration dans la console Web. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
@@ -66,7 +66,7 @@ Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig
 1. Dans CRXDE Lite, ajoutez un dossier nommé `config` sous votre dossier d’application.
 1. Dans le dossier de configuration, ajoutez un noeud nommé :
 
-   `com.day.cq.wcm.notification.email.impl.EmailChannel` de type  `sling:OsgiConfig`
+   `com.day.cq.wcm.notification.email.impl.EmailChannel` de type `sling:OsgiConfig`
 
 1. Ajoutez une propriété `String` au noeud nommé `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
 
