@@ -24,7 +24,7 @@ MySQL est une base de données relationnelle principalement utilisée pour le su
 
 Ces instructions décrivent comment se connecter au serveur MySQL, établir la base de données d’activation et renseigner la base de données avec les données initiales.
 
-## Conditions requises {#requirements}
+## Conditions préalables {#requirements}
 
 Avant de configurer la fonction d’activation de MySQL pour les communautés, veillez à
 
@@ -109,8 +109,8 @@ Les scripts SQL sont obtenus à l’aide du CRXDE Lite sur l’instance d’aute
 1. Accédez au CRXDE Lite :
    * Par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Développez le dossier `/libs/social/config/scorm/`.
-1. Téléchargement `database_scormengine.sql`
-1. Téléchargement `database_scorm_integration.sql`
+1. Télécharger `database_scormengine.sql`
+1. Télécharger `database_scorm_integration.sql`
 
 ![sqlscripts](assets/sqlscripts.png)
 
