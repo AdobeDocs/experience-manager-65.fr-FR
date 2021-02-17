@@ -32,7 +32,7 @@ Les conditions préalables à la création d’une communication interactive son
 * Vérifiez que vous disposez de [modèles pour l’impression et le canal Web](/help/forms/using/web-channel-print-channel.md).
 * Assurez-vous de disposer du [thème](/help/forms/using/themes.md) requis pour le canal web.
 
-## Créer une communication interactive  {#createic}
+## Créer une communication interactive {#createic}
 
 1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Appuyez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Communication interactive]**. La page Créer une communication interactive s’affiche.
@@ -304,7 +304,7 @@ Le tableau suivant liste un exemple des valeurs qui s’affichent suite à la d�
 
 Si aucun modèle d’affichage n’est spécifié pour une variable ou un élément de modèle de données de formulaire, la [configuration de fragment de document global](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) est utilisée par défaut.
 
-Si vous n’appliquez pas de modèle d’affichage à une variable de type de données numérique, la prévisualisation d’impression affiche le modèle en fonction de la configuration globale du fragment de document. Si vous appliquez des modifications à la configuration de fragment de document global par défaut, l’interface utilisateur de l’agent affiche toujours le modèle en fonction des séparateurs par défaut définis pour le paramètre régional.
+Si vous n’appliquez pas de modèle d’affichage à une variable de type de données numérique, la prévisualisation d’impression affiche le modèle en fonction de la configuration globale du fragment de document. Si vous appliquez des modifications à la configuration de fragment de document global par défaut, l’interface utilisateur de l’agent affiche toujours le modèle en fonction des séparateurs par défaut définis pour les paramètres régionaux.
 
 De même, pour les champs, si le modèle d’affichage n’est pas spécifié, le modèle défini lors de la création du modèle d’impression (XDP) est appliqué au champ. S’il n’existe aucun modèle lors de la création du modèle d’impression, les modèles par défaut basés sur les spécifications XFA sont appliqués aux champs.
 
@@ -463,7 +463,7 @@ Pour accéder à la page **Propriétés** :
 
 ### Ajouter ou supprimer le canal Web {#add-or-delete-the-web-channel}
 
-Exécutez les étapes suivantes pour ajouter le canal Web d&#39;une communication interactive existante :
+Exécutez les étapes suivantes pour ajouter le canal Web d’une communication interactive existante :
 
 1. Sur la page **Propriétés**, sélectionnez l&#39;onglet **Canaux**.
 1. Cochez la case **Web** et sélectionnez un modèle pour le canal Web.
@@ -474,7 +474,7 @@ Exécutez les étapes suivantes pour ajouter le canal Web d&#39;une communicatio
 
 ## Composant Bouton d&#39;Ajoute au canal Web {#add-button-component-to-the-web-channel}
 
-Vous pouvez ajouter un bouton en tant que composant au canal Web de la communication interactive. Définissez des règles à l’aide de l’[éditeur de règles](../../forms/using/rule-editor.md) pour pouvoir accéder à d’autres communications interactives, à des formulaires adaptatifs, à d’autres ressources telles que des images ou des fragments de document ou à une URL externe lorsque vous appuyez sur le bouton.
+Vous pouvez ajouter un bouton en tant que composant au canal Web de la communication interactive. Définissez des règles à l’aide de l’[éditeur de règles](../../forms/using/rule-editor.md) pour pouvoir accéder à d’autres communications interactives, formulaires adaptatifs, autres ressources telles que des images ou des fragments de document, ou à une URL externe lorsque vous appuyez sur le bouton.
 
 Pour ajouter un bouton et définir des règles sur celui-ci :
 
