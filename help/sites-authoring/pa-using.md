@@ -22,7 +22,7 @@ ht-degree: 93%
 
 Utilisez les données d’analyse de page pour mesurer l’efficacité du contenu de page.
 
-## Les données d’analyse sont visibles à partir de la console  {#analytics-visible-from-the-console}
+## Les données d’analyse sont visibles à partir de la console {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
