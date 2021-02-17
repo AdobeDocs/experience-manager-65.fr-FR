@@ -36,7 +36,7 @@ Il peut y avoir des cas où la session administrateur n’est pas utilisée, ou 
 
 Lorsque cela est possible, refactorisez votre fonction de sorte que la session de requête authentifiée donnée puisse être utilisée pour écrire ou lire du contenu. Si ce n’est pas possible, elle peut fréquemment être obtenue en appliquant les priorités comme ci-dessous.
 
-### Priorité 2 : restructurez le contenu  {#priority-restructure-content}
+### Priorité 2 : restructurez le contenu {#priority-restructure-content}
 
 De nombreux problèmes peuvent être résolus en restructurant le contenu. Gardez ces règles simples à l’esprit lors de la restructuration :
 
@@ -66,7 +66,7 @@ En outre, assurez-vous que toutes les nouvelles fonctions que vous développez s
 
 * **Respectez les paramètres de confidentialité.**
 
-   * Dans le cas des profils privés, par exemple, ne pas exposer l&#39;image du profil, le courriel ou le nom complet figurant sur le noeud privé `/profile`.
+   * Dans le cas des profils privés, un exemple consisterait à ne pas exposer l&#39;image du profil, le courriel ou le nom complet figurant sur le noeud privé `/profile`.
 
 ## Contrôle d’accès strict {#strict-access-control}
 
