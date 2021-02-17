@@ -63,7 +63,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.4]
  </tbody>
 </table>
 
-### Configurations des abonnements  {#subscription-configurations}
+### Configurations des abonnements {#subscription-configurations}
 
 <table>
  <tbody>
@@ -279,7 +279,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.4]
      <li>Créez les configurations à l’emplacement <code>/conf/.../settings</code> <br /> souhaité. </li>
      <li>La propriété <code>cq:conf </code>du site des communautés doit être définie.
       <ol>
-       <li>Si aucun <code>cq:conf</code> n'est défini, les règles d'évaluation sont directement lues à partir du chemin d'accès donné pour la propriété "<code>scoringRules</code>" au noeud racine du site, par exemple : <code>/content/we-retail/us/en/community/jcr:content</code></li>
+       <li>Si <code>cq:conf</code> n'est pas défini, les règles d'évaluation sont directement lues à partir du chemin d'accès donné pour la propriété "<code>scoringRules</code>" au noeud racine du site, par exemple : <code>/content/we-retail/us/en/community/jcr:content</code></li>
       </ol> </li>
     </ol> <p>Nettoyage : Supprimer la ressource <code>/etc/community/scoring</code></p> </td>
   </tr>
