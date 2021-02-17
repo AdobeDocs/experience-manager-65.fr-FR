@@ -61,7 +61,7 @@ Pour créer un modèle de canal Web, procédez comme suit :
 1. Accédez au dossier de modèle approprié et créez un modèle web.
 
    1. Accédez au dossier de modèle approprié en sélectionnant **[!UICONTROL Outils]** > **[!UICONTROL Modèles]** > **`[Folder]`**.
-   1. Appuyez sur **[!UICONTROL Créer]**. 
+   1. Appuyez sur **[!UICONTROL Créer]**.
    1. Sélectionnez **[!UICONTROL Communication interactive - Canal Web]** et appuyez sur **[!UICONTROL Suivant]**.
    1. Entrez un titre et une description de modèle, puis appuyez sur **[!UICONTROL Créer]**.
 
