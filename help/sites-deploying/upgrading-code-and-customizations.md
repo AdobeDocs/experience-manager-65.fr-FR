@@ -67,7 +67,7 @@ AEM Uber jar inclut toutes les API d’AEM en tant que dépendance unique dans l
 </dependency>
 ```
 
-### Élimination graduelle de l’utilisation de l’Administrative Resource Resolver   {#phase-out-use-of-administrative-resource-resolver}
+### Élimination graduelle de l’utilisation de l’Administrative Resource Resolver  {#phase-out-use-of-administrative-resource-resolver}
 
 L&#39;utilisation d&#39;une session d&#39;administration par `SlingRepository.loginAdministrative()` et `ResourceResolverFactory.getAdministrativeResourceResolver()` était très répandue dans les bases de code avant l&#39;AEM 6.0. Ces méthodes ont été abandonnées pour des raisons de sécurité car elles donnent un niveau d&#39;accès trop large. [Dans les prochaines versions de Sling, ces méthodes seront supprimées](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Il est vivement recommandé de restructurer les codes afin d’utiliser les utilisateurs de service à la place. Plus d’informations sur les utilisateurs de service et [la manière d’éliminer les sessions administrative progressivement sont présentées ici](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
@@ -175,7 +175,7 @@ Un plan evaluation complet doit être préparé en vue de tester les mises à ni
 
 La procédure de mise à niveau, comme décrit ici, doit être testée sur des environnements de développement et de contrôle qualité, tel que cela est décrit dans votre runbook personnalisé (voir [Planification de votre mise à niveau](/help/sites-deploying/upgrade-planning.md)). La procédure de mise à niveau doit être répétée jusqu’à ce que toutes les étapes soient documentées dans le runbook de mise à niveau et que le processus de mise à niveau soit fluide.
 
-### Zones de test d’implémentation   {#implementation-test-areas-}
+### Zones de test d’implémentation  {#implementation-test-areas-}
 
 Vous trouverez ci-dessous les domaines stratégiques de toute implémentation AEM devant être couverts par votre plan de tests une fois que l’environnement a été mis à niveau et que la base de code améliorée a été déployée.
 
