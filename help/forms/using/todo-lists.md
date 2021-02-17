@@ -23,7 +23,7 @@ ht-degree: 90%
 
 Lorsque vous affichez vos listes de tâches, vous pouvez visualiser les tâches d’un processus d’entreprise qui vous sont affectées, ou qui sont affectées à des groupes auxquels vous appartenez, ou qui sont les tâches partagées d’autres utilisateurs. Vous pouvez ouvrir, modifier et effectuer les tâches selon vos besoins, par exemple en approuvant ou en rejetant une demande ou en ajoutant davantage d’informations. Après avoir terminé une tâche, elle est envoyée à la personne suivante dans le processus d’entreprise.
 
-## A propos des listes de tâches  {#about-todo-lists}
+## A propos des listes de tâches {#about-todo-lists}
 
 AEM Forms Workspace comporte les trois types de listes de tâches suivants :
 
