@@ -244,7 +244,7 @@ Assemblage d’un document PDF avec des signets à l’aide de l’API Service A
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Assemblage de documents PDF avec des signets à l’aide de l’API de service Web {#assemble-pdf-documents-with-bookmarks-using-the-web-service-api}
+## Assemblage de documents PDF avec des signets à l’aide de l’API du service Web {#assemble-pdf-documents-with-bookmarks-using-the-web-service-api}
 
 Assemblage d’un document PDF avec des signets à l’aide de l’API Assembler Service (service Web) :
 
