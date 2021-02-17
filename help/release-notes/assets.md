@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 42%
+ht-degree: 43%
 
 ---
 
@@ -80,9 +80,9 @@ Vous pouvez maintenant personnaliser les vignettes de vos ressources vidéo à l
 
 ### Amélioration de l’accessibilité {#accessibility-enhancements}
 
-[!DNL Dynamic Media] les lecteurs d’écran prennent désormais en charge des fonctions d’accessibilité améliorées, telles que la prise en charge Aria, les lecteurs d’écran et Alt-text. Pour plus de détails, consultez les [notes de mise à jour des visionneuses de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] les lecteurs d’écran prennent désormais en charge des fonctions d’accessibilité améliorées, telles que la prise en charge Aria, les lecteurs d’écran et Alt-text. Pour plus de détails, consultez les [notes de mise à jour des visionneuses de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr).
 
-## Amélioration de l’expérience de recherche  {#experience-enhancement-for-searching}
+## Amélioration de l’expérience de recherche {#experience-enhancement-for-searching}
 
 [!DNL Experience Manager] A partir de la version 6.5, les marketeurs peuvent découvrir les ressources de leur choix plus rapidement à partir de la page des résultats de la recherche. Les facettes de recherche sont mises à jour avec le nombre de ressources avant même d’appliquer le filtre de recherche. L’affichage du nombre attendu par rapport au filtre aide les utilisateurs à naviguer efficacement dans les résultats de la recherche. Pour plus d’informations, voir [Rechercher des ressources dans le Experience Manager](../assets/search-assets.md).
 
