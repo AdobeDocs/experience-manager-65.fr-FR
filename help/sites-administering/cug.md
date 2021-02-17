@@ -40,7 +40,7 @@ Pour configurer ce type de zone dans votre site web :
 >
 >L’impact des groupes d’utilisateurs fermés doit toujours être pris en compte lorsque vous effectuez des tests de performances.
 
-## Création du groupe d’utilisateurs à utiliser  {#creating-the-user-group-to-be-used}
+## Création du groupe d’utilisateurs à utiliser {#creating-the-user-group-to-be-used}
 
 Pour créer un groupe d’utilisateurs fermé :
 
