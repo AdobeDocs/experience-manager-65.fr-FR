@@ -90,7 +90,7 @@ ht-degree: 4%
 
 ## Dernières versions {#latest-releases}
 
-aem 6.5 Communities GA inclut le package Communities. Pour en savoir plus sur les mises à jour apportées à AEM 6.5 [Communautés](/help/release-notes/release-notes.md#experiencemanagercommunities), consultez [AEM Notes de mise à jour 6.5](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communities GA inclut le package Communities. Pour en savoir plus sur les mises à jour apportées à AEM 6.5 [Communautés](/help/release-notes/release-notes.md#experiencemanagercommunities), consultez [AEM Notes de mise à jour 6.5](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### Mises à jour d’AEM 6.5 {#aem-updates}
 
@@ -162,13 +162,13 @@ Si vous le souhaitez, le niveau de journal peut être défini sur WARN pour le p
 
 Pour utiliser les journaux, voir [Utilisation des enregistrements d&#39;audit et des fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
-### aem MLS avancé {#aem-advanced-mls}
+### AEM MLS avancé {#aem-advanced-mls}
 
 Pour que la collection SRP (MSRP ou DSRP) prenne en charge la recherche multilingue avancée (MLS), de nouveaux modules externes Solr sont requis en plus d&#39;un schéma personnalisé et d&#39;une configuration Solr. Tous les éléments requis sont compressés dans un fichier zip téléchargeable.
 
 Le téléchargement MLS avancé (également appelé &quot;phasetwo&quot;) est disponible à partir du référentiel d&#39;Adobes :
 
-* [aem-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
    * Version 1.2.40, 6 avril 2016
    * Télécharger AEM-SOLR-MLS-phasetwo-1.2.40.zip
@@ -396,7 +396,7 @@ En particulier, veillez à utiliser le nom de serveur correct, et non `localhost
 
 Si vous utilisez un répartiteur, voir :
 
-* aem [Documentation sur le répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+* AEM [Documentation sur le répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 * [Installation de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
 * [Configuration du répartiteur pour les communautés](/help/communities/dispatcher.md)
 * [Problèmes connus](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
