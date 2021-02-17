@@ -19,7 +19,7 @@ ht-degree: 80%
 ---
 
 
-# Nettoyage de la mémoire d’entrepôt de données  {#data-store-garbage-collection}
+# Nettoyage de la mémoire d’entrepôt de données {#data-store-garbage-collection}
 
 Lorsqu’une ressource WCM conventionnelle est supprimée, la référence à l’enregistrement d’entrepôt de données sous-jacent peut être supprimée de la hiérarchie de nœud, mais l’enregistrement d’entrepôt de données lui-même est conservé. Cet enregistrement d’entrepôt de données non référencé est alors considéré comme faisant partie des « données à nettoyer » qu’il n’est pas utile de conserver. Dans les instances où plusieurs ressources de nettoyage existent, il est préférable de vous en débarrasser pour préserver l’espace et pour optimiser les performances de sauvegarde et de la maintenance du système de fichiers.
 
@@ -38,7 +38,7 @@ Les modules constituent une autre source de données à nettoyer récupérables.
 
 ## Comment fonctionne le nettoyage de la mémoire d’entrepôt de données ?  {#how-does-data-store-garbage-collection-work}
 
-Si le référentiel a été configuré avec un entrepôt de données externe, le [nettoyage de la mémoire d’entrepôt de données est exécuté automatiquement](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) dans le cadre de la période de maintenance hebdomadaire. L&#39;administrateur système peut également [exécuter manuellement la collecte des déchets de stockage de données](#running-data-store-garbage-collection) selon les besoins. En général, il est recommandé d’effectuer le nettoyage de la mémoire d’entrepôt de données régulièrement, et de prendre en compte les facteurs suivants dans la planification du nettoyage :
+Si le référentiel a été configuré avec un entrepôt de données externe, le [nettoyage de la mémoire d’entrepôt de données est exécuté automatiquement](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) dans le cadre de la période de maintenance hebdomadaire. L&#39;administrateur système peut également [exécuter manuellement la collecte des déchets de stockage de données](#running-data-store-garbage-collection) en fonction des besoins. En général, il est recommandé d’effectuer le nettoyage de la mémoire d’entrepôt de données régulièrement, et de prendre en compte les facteurs suivants dans la planification du nettoyage :
 
 * Le nettoyage de la mémoire d’entrepôt de données prend du temps et peut avoir une incidence sur les performances. Il doit donc être planifié en conséquence.
 * La suppression des enregistrements du nettoyage de la mémoire d’entrepôt de données n’affecte pas les performances normales et ne relève donc pas d’une optimisation des performances.
