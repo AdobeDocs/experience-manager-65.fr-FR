@@ -40,7 +40,7 @@ Si vous étendez votre intégration à Adobe Campaign, vous pouvez consulter le
 * [Création d’extensions personnalisées](/help/sites-developing/extending-campaign-extensions.md)
 * [Création de mises en correspondance de formulaires personnalisés](/help/sites-developing/extending-campaign-form-mapping.md)
 
-## Configuration d’Adobe Campaign  {#configuring-adobe-campaign}
+## Configuration d’Adobe Campaign {#configuring-adobe-campaign}
 
 La configuration d’Adobe Campaign implique les tâches suivantes :
 
