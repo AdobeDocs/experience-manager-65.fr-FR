@@ -37,11 +37,11 @@ La procédure suivante crée un lancement.
 1. Cliquez sur **Nouveau…**, puis sur **Nouveau lancement…**.
 1. Définissez des valeurs pour les propriétés suivantes dans la boîte de dialogue **Créer un lancement** :
 
-   * **Titre du lancement **: nom du lancement. Ce nom doit être explicite pour les auteurs.
+   * **Titre du lancement** : nom du lancement. Ce nom doit être explicite pour les auteurs.
    * **Page source** : chemin d’accès à la page pour laquelle vous souhaitez créer le lancement. Par défaut, toutes les pages enfants sont incluses.
    * **Exclure les sous-pages** : sélectionnez cette option pour ne créer le lancement que pour la page source (et non pour les pages enfants). Par défaut, cette option n’est pas sélectionnée.
    * **** Garder synchronisé : sélectionnez cette option pour mettre à jour automatiquement le contenu des pages de lancement lors de la modification des pages source. Cette option transforme le lancement en [Live Copy](/help/sites-administering/msm.md).
-   * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements – Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-99](assets/chlimage_1-99a.png)
 
