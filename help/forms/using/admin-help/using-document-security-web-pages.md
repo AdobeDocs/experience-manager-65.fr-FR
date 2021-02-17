@@ -32,7 +32,7 @@ Comme Document Security référence les répertoires existants de votre entrepri
 
 Pour ouvrir une session en tant qu’administrateur, vous devez avoir le rôle d’administrateur. Vous pouvez utiliser le compte de super-administrateur par défaut créé lors de l’installation.
 
-## Ouverture d’une session de pages Web  {#log-in-to-the-web-pages}
+## Ouverture d’une session de pages Web {#log-in-to-the-web-pages}
 
 Pour ouvrir une session de pages Web à l’aide d’un navigateur, vous devez disposer d’un compte et de l’URL Document Security. L’URL des utilisateurs diffère de celle des administrateurs. Les administrateurs peuvent également se connecter aux pages utilisateur pour créer des stratégies.
 
