@@ -74,9 +74,9 @@ déclenche :
 
 pour rediriger une requête :
 
-`https://localhost:4503/welcome` &quot;
+`https://localhost:4503/welcome` ``
 
-vers :
+vers:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
