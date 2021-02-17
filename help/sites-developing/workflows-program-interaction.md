@@ -26,7 +26,7 @@ Lors de la [personnalisation et de l’extension de vos workflows](/help/sites-d
 * [Obtention d’objets de workflow dans des scripts ECMA](#obtaining-workflow-objects-in-ecma-scripts)
 * [Utilisation de l’API REST Workflow](#using-the-workflow-rest-api)
 
-## Utilisation de l’API Java Workflow  {#using-the-workflow-java-api}
+## Utilisation de l’API Java Workflow {#using-the-workflow-java-api}
 
 L’API Java Workflow se compose du module [`com.adobe.granite.workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) et de plusieurs sous-modules. Le membre le plus important de l’API est la classe `com.adobe.granite.workflow.WorkflowSession`. La classe `WorkflowSession` permet d’accéder aux objets de workflow au moment de la conception et de l’exécution :
 
@@ -92,7 +92,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions </td>
+   <td>Actions</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -111,7 +111,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
 
 `http://localhost:4502/etc/workflow/instances.{state}`
 
-| Méthode de requête HTTP | Actions  |
+| Méthode de requête HTTP | Actions |
 |---|---|
 | `GET` | Liste les instances de processus disponibles et leurs états ( `RUNNING`, `SUSPENDED`, `ABORTED` ou `COMPLETED`) |
 
@@ -125,7 +125,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions </td>
+   <td>Actions</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -148,7 +148,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions </td>
+   <td>Actions</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -233,7 +233,7 @@ Où `*{uri}*` est le chemin d’accès au noeud de modèle dans le référentiel
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions </td>
+   <td>Actions</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -338,7 +338,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
 
 `http://localhost:4502/etc/workflow/models/{id}.{version}`
 
-| Méthode de requête HTTP | Actions  |
+| Méthode de requête HTTP | Actions |
 |---|---|
 | `GET` | Récupère les données du modèle dans la version donnée (le cas échéant). |
 
@@ -352,7 +352,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions </td>
+   <td>Actions</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -371,7 +371,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
 
 `http://localhost:4502/bin/workflow/inbox/{id}`
 
-| Méthode de requête HTTP | Actions  |
+| Méthode de requête HTTP | Actions |
 |---|---|
 | `GET` | Obtient les données (définition et métadonnées) de la boîte de réception `WorkItem` identifiée par son identifiant. |
 
