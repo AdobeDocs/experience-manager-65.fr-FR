@@ -18,7 +18,7 @@ ht-degree: 82%
 ---
 
 
-# Modification du logo de l’organisation pour l’identité graphique  {#changing-the-organization-logo-for-branding}
+# Modification du logo de l’organisation pour l’identité graphique {#changing-the-organization-logo-for-branding}
 
 Le logo de l’entreprise est affiché dans l’angle supérieur gauche de l’espace de travail d’AEM Forms. Pour mettre le logo à jour, suivez les instructions de la section [Étapes génériques de la configuration de l’espace de travail d’AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization), puis les étapes suivantes.
 
