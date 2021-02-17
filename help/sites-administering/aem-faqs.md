@@ -28,7 +28,7 @@ La distribution sans fichier binaire est prise en charge pour les déploiements 
 
 Le mode sans fichier binaire étant activé, les modules de contenu distribués contiennent des références à des fichiers binaires plutôt que des fichiers binaires réels.
 
-#### Comment activer la distribution sans fichier binaire ?  {#how-do-i-enable-binary-less-distribution}
+#### Comment activer la distribution sans fichier binaire ? {#how-do-i-enable-binary-less-distribution}
 
 Pour activer la distribution sans fichier binaire, déployez un entrepôt de grands objets binaires partagé.
 Vérifiez la propriété `useBinaryReferences` dans la configuration OSGI avec le PID d&#39;usine ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* utilisé par votre agent.
@@ -123,7 +123,7 @@ Pour configurer et configurer Asset Insights pour un Experience Manager déploy�
 
 #### Comment personnaliser les consoles d’administration ? {#how-to-customize-admin-consoles}
 
-aem fournit divers mécanismes permettant de personnaliser les consoles et les fonctionnalités de création de page de votre instance de création. Pour savoir comment créer une console personnalisée et modifier l’affichage par défaut d’une console, veuillez consulter la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
+AEM fournit divers mécanismes permettant de personnaliser les consoles et les fonctionnalités de création de page de votre instance de création. Pour savoir comment créer une console personnalisée et modifier l’affichage par défaut d’une console, veuillez consulter la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Quelle est la différence entre les composants basés sur CoralUI 2 et CoralUI 3 ?  {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
