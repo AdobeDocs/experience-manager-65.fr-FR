@@ -157,7 +157,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 Lors de l’utilisation des [consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md), plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau.
 
-## Raccourcis clavier pour les développeurs  {#keyboard-shortcuts-for-development}
+## Raccourcis clavier pour les développeurs {#keyboard-shortcuts-for-development}
 
 Des raccourcis clavier supplémentaires sont disponibles pour les développeurs qui utilisent l’éditeur de page.
 
