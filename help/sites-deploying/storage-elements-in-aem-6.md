@@ -32,7 +32,7 @@ L’un des principaux changements dans AEM 6 concerne les innovations au niveau
 
 Actuellement, il existe deux implémentations de stockage de nœud disponibles dans AEM 6 : le stockage tar et le stockage MongoDB.
 
-### Stockage tar  {#tar-storage}
+### Stockage tar {#tar-storage}
 
 #### Exécution d’une toute nouvelle instance AEM installée avec un stockage tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
