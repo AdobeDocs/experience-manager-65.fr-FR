@@ -94,7 +94,7 @@ Les deux méthodes utilisent un objet `com.day.cq.analytics.sitecatalyst.Analyti
 
 La classe fournit également un setter pour le nom de la page.
 
-### Exemple d’implémentation de l’interface AnalyticsPageNameProvider  {#example-analyticspagenameprovider-implementation}
+### Exemple d’implémentation de l’interface AnalyticsPageNameProvider {#example-analyticspagenameprovider-implementation}
 
 L’exemple d’implémentation `AnalyticsPageNameProvider` suivant prend en charge un composant de page personnalisé :
 
