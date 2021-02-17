@@ -71,7 +71,7 @@ Les tableaux suivants liste les méthodes à utiliser à la place des méthodes 
 | Page getPage(chemin de chaîne, résolveur ResourceResolver) |
 | Chaîne getPagePath(ressource) |
 | String getPagePath(String path) |
-| Chaîne getResourceTypeForIncludedResource(composant de ressource, chaîne defaultResourceType, chaîne designPropertyName) |
+| String getResourceTypeForIncludedResource(composant Resource, String defaultResourceType, String designPropertyName) |
 | String getResourceTypeFromDesign(Resource resource, String styleProperty, String defaultValue) |
 | booléen isResourceOwner(ressource ressource ressource) |
 | String mapUGCPath(Resource resource) |
