@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Vous pouvez modifier les paramètres des domaines existants à partir de la page Gestion des domaines. Vous avez également la possibilité de convertir un domaine d’entreprise existant en domaine hybride.
 
-## Modification d’un domaine  {#edit-an-existing-domain}
+## Modification d’un domaine {#edit-an-existing-domain}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine à modifier.
