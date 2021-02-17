@@ -60,7 +60,7 @@ Sous l&#39;onglet **[!UICONTROL Textes et étiquettes]**, spécifiez les propri�
 
 Les membres ne peuvent voter qu’une seule fois, mais peuvent changer leur vote à tout moment.
 
-### Anonyme  {#anonymous}
+### Anonyme {#anonymous}
 
 Le vote anonyme n’est pas possible. Les visiteurs du site doivent s’enregistrer (devenir membres) et se connecter pour participer au vote.
 
