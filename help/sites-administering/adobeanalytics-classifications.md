@@ -44,7 +44,7 @@ Pour configurer cela :
 
    Les propriétés sont par exemple les suivantes :
 
-   | **Field (Champ)** | **Description** |
+   | **Champ** | **Description** |
    |---|---|
    | Activé | Sélectionnez **Oui** pour activer les paramètres d’Adobe Classifications. |
    | Remplacer en cas de conflit | Sélectionnez **Oui** pour remplacer toute collision de données. Par défaut, cette option est définie sur **Non**. |
@@ -59,7 +59,7 @@ Pour configurer cela :
 
 1. Cliquez sur **OK** pour enregistrer vos paramètres.
 
-## Modification de la taille des pages  {#modifying-page-size}
+## Modification de la taille des pages {#modifying-page-size}
 
 Les enregistrements sont traités par pages. Par défaut, les classifications d’Adobes créent des pages d’un format de page de 1 000.
 
