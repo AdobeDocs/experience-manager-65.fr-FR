@@ -8,14 +8,14 @@ translation-type: tm+mt
 source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 0%
+ht-degree: 69%
 
 ---
 
 
 # Accessibilité dans [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
-[!DNL Dynamic Media] prend en charge les technologies de contrôle du clavier et d’assistance, telles que les lecteurs d’écran JAWS et NVDA, dans l’interface utilisateur de création.
+[!DNL Dynamic Media] prend en charge les technologies d’assistance et de contrôle du clavier, telles que les lecteurs d’écran JAWS et NVDA, dans l’interface utilisateur de création.
 
 ## Prise en charge de l&#39;accessibilité du clavier dans [!DNL Dynamic Media]
 
@@ -23,17 +23,17 @@ Comme [!DNL Dynamic Media] est un module externe de [!DNL Adobe Experience Manag
 
 Les touches prises en charge par les éléments d&#39;interface utilisateur individuels dans [!DNL Dynamic Media] sont, dans la plupart des cas, évidentes et faciles à découvrir. Le contrôle clavier dans [!DNL Dynamic Media] est à peu près le suivant :
 
-* Possibilité d’utiliser des touches `Tab` et `Shift+Tab` pour naviguer entre les éléments interactifs de la page.
-L’utilisation de `Tab` permet d’activer la cible d’action sur l’élément d’interface utilisateur suivant dans l’ordre de tabulation ; l’utilisation de `Shift+Tab` rétablit la cible d’action sur l’élément d’interface utilisateur précédent.
-La traversée de la cible d’action suit l’emplacement de l’élément d’interface utilisateur naturel à l’écran et se déplace de gauche à droite, puis de haut en bas. En outre, si un champ comporte une erreur, vous pouvez appuyer sur `Tab` pour déplacer la cible d’action.
-* Possibilité d’utiliser les clés `Spacebar` et `Enter` pour activer les éléments standard de l’interface utilisateur, tels que les boutons, les listes déroulantes, etc.
-* Possibilité de voir la mise en surbrillance du clavier sur l’élément principal. L’élément d’interface utilisateur qui a le focus d’entrée peut recevoir une indication de focus visuel sous la forme d’une bordure rendue autour de l’élément d’interface utilisateur.
-* Dans l’éditeur de zones réactives, vous pouvez utiliser des touches personnalisées, telles que des touches fléchées, pour interagir avec des éléments complexes de l’interface utilisateur afin de repositionner les zones réactives.
-* Dans l’éditeur de vidéo interactive, vous pouvez utiliser `Spacebar` pour sélectionner une image et l’ajouter à un segment. De plus, vous pouvez utiliser la clé `Backspace` pour supprimer l&#39;élément sélectionné de l&#39;onglet **[!UICONTROL Contenu]**. En outre, appuyez sur `Tab` fonctions selon vos besoins pour naviguer entre les éléments interactifs de la page.
-* Dans l’éditeur Recadrage d’image/Recadrage dynamique, vous pouvez effectuer les opérations suivantes :
-   * Utilisez les touches fléchées pour recadrer la taille du cadre ou repositionner l’image, ou les deux.
+* Possibilité d’utiliser les touches `Tab` et `Shift+Tab` pour naviguer entre les éléments interactifs de la page.
+`Tab` permet d’activer le focus d’entrée sur l’élément d’interface utilisateur suivant dans l’ordre de tabulation ; `Shift+Tab` rétablit le focus d’entrée sur l’élément d’interface utilisateur précédent.
+Le parcours du focus suit l’emplacement naturel des éléments de l’interface utilisateur à l’écran et se déplace de gauche à droite, puis de haut en bas. En outre, si un champ comporte une erreur, vous pouvez appuyer sur `Tab` pour y placer le focus.
+* Possibilité d’utiliser les touches `Spacebar` et `Enter` pour activer les éléments standard de l’interface utilisateur, tels que les boutons, les listes déroulantes, etc.
+* Possibilité de voir la mise en surbrillance du clavier sur l’élément actif. L’élément d’interface utilisateur avec le focus peut recevoir une indication de focus visuelle sous la forme d’un contour autour de l’élément d’interface utilisateur.
+* Dans l’éditeur de zones réactives, vous pouvez utiliser des touches personnalisées, telles que les touches fléchées, pour interagir avec des éléments complexes de l’interface utilisateur afin de repositionner les zones réactives.
+* Dans l’éditeur de vidéo interactive, vous pouvez utiliser `Spacebar` pour sélectionner une image et l’ajouter à un segment. De plus, vous pouvez utiliser la touche `Backspace` pour supprimer l’élément sélectionné de l’onglet **[!UICONTROL Contenu]**. La touche `Tab` permet par ailleurs de naviguer entre les éléments interactifs de la page.
+* Dans l’éditeur Recadrage d’image/Recadrage intelligent, vous pouvez effectuer les opérations suivantes :
+   * Utiliser les touches fléchées pour recadrer la taille du cadre ou repositionner l’image, ou les deux.
    * Le premier arrêt `Tab` met en surbrillance l’ensemble du cadre d’image. Vous pouvez ensuite utiliser les touches fléchées du clavier pour repositionner le cadre.
-   * Les quatre arrêts suivants `Tab` sont les quatre coins du cadre. Lorsque la cible d’action est placée sur un angle de cadre, le coin est mis en surbrillance. Encore une fois, vous pouvez utiliser les touches fléchées du clavier pour déplacer le coin ciblé.
+   * Les quatre arrêts `Tab` suivants sont les quatre coins du cadre. Lorsque la cible d’action est placée sur un angle de cadre, le coin est mis en surbrillance. Encore une fois, vous pouvez utiliser les touches fléchées du clavier pour déplacer le coin ciblé.
 Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d’une seule image](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
@@ -46,7 +46,7 @@ Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d
 
 ## Prise en charge des technologies d&#39;assistance dans [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
 
-[!DNL Dynamic Media] les éléments de l’interface utilisateur fonctionnent avec les technologies d’assistance, telles que les lecteurs d’écran. Par exemple, il reconnaît les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou de régions à l’aide du raccourci clavier `R`. Il décrit également l’en-tête lors de la navigation à l’aide du raccourci clavier de l’en-tête `H`.
+[!DNL Dynamic Media]Les éléments de l’interface utilisateur de fonctionnent avec des technologies d’assistance telles que les lecteurs d’écran. Par exemple, il reconnaît les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou de régions à l’aide du raccourci clavier `R`. Elle décrit également la section lors de la navigation à l’aide du raccourci clavier de la section `H`.
 
 ## Prise en charge de l’accessibilité du clavier dans les visionneuses {#keyboard-accessibility-for-dm-viewers} [!DNL Dynamic Media]
 
@@ -61,6 +61,6 @@ Consultez la rubrique d’aide **Prise en charge des technologies d’assistance
 
 >[!MORELIKETHIS]
 >
->* [Accessibilité pour les solutions d&#39;Adobe](https://www.adobe.com/accessibility.html)
+>* [Accessibilité pour les solutions d’Adobe](https://www.adobe.com/accessibility.html)
 >* [Accessibilité dans [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
 
