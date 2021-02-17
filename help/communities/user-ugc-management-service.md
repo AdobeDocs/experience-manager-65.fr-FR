@@ -19,7 +19,7 @@ ht-degree: 30%
 ---
 
 
-# Service de gestion des utilisateurs et du contenu qu’ils génèrent dans AEM Communities  {#user-and-ugc-management-service-in-aem-communities}
+# Service de gestion des utilisateurs et du contenu qu’ils génèrent dans AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
 >
