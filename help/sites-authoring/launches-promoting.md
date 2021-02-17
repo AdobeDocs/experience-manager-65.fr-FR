@@ -26,12 +26,12 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 
 * Faut-il convertir l’intégralité du lancement ou uniquement la page en cours ?
 * Faut-il convertir les pages enfants de la page en cours ?
-* Conversion de l’intégralité du lancement ou uniquement des pages qui ont été modifiées.
+* Faut-il convertir l’intégralité du lancement ou uniquement des pages qui ont été modifiées ?
 * Faut-il supprimer le lancement après la conversion ?
 
 >[!NOTE]
 >
->Après avoir converti les pages de lancement en pages cibles (de **production**), vous pouvez activer les pages de **production** sous la forme d’une entité (pour accélérer le processus de rendu). Ajoutez les pages à un module de workflow et utilisez ce dernier comme charge utile pour un workflow qui active un module de pages. Vous devez créer le module de workflow avant la conversion du lancement Voir [Traitement de pages converties à l’aide du worfklow AEM](#processing-promoted-pages-using-aem-workflow).
+>Après avoir converti les pages de lancement en pages cibles (de **production**), vous pouvez activer les pages de **production** sous la forme d’une entité (pour accélérer le processus de rendu). Ajoutez les pages à un module de workflow et utilisez ce dernier comme charge utile pour un workflow qui active un module de pages. Vous devez créer le module de workflow avant la conversion du lancement Voir [Traitement de pages converties à l’aide du workflow AEM](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
@@ -98,7 +98,7 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
 
 1. Sélectionnez **Convertir**.
 
-## Conversion de pages de lancement lors de leur modification    {#promoting-launch-pages-when-editing}
+## Conversion de pages de lancement lors de leur modification {#promoting-launch-pages-when-editing}
 
 Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement** est également disponible dans les **informations sur la page**. Cette action ouvre l’assistant pour collecter les informations nécessaires.
 
@@ -108,7 +108,7 @@ Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement
 >
 >Cette option est disponible pour les lancements simples et [imbriqués](#promoting-a-nested-launch).
 
-## Promotion d’un lancement imbriqué    {#promoting-a-nested-launch}
+## Promotion d’un lancement imbriqué  {#promoting-a-nested-launch}
 
 Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (production).
 
