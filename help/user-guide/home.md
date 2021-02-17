@@ -22,7 +22,7 @@ ht-degree: 31%
 
 ## Guides de l&#39;utilisateur et ressources {#user-guides-and-resources}
 
-* [aem Fonctionnalités Guides de l’utilisateur](capabilities.md)
+* [AEM Fonctionnalités Guides de l’utilisateur](capabilities.md)
 * [Guides de l’utilisateur de la mise en oeuvre AEM](implementation.md)
 * [Ressources AEM](resources.md)
 
