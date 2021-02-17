@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# API utilisées dans l’espace de travail AEM Forms  {#apis-used-in-aem-forms-workspace}
+# API utilisées dans l’espace de travail AEM Forms {#apis-used-in-aem-forms-workspace}
 
 Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
 
