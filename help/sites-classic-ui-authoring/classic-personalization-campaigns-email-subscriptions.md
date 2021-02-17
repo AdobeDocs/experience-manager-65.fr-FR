@@ -40,7 +40,7 @@ Pour configurer une page AEM :
 
 1. Cliquez sur **OK**.
 
-## Création d’un formulaire d’inscription dans une page AEM en vue de s’abonner à des listes ou de s’en désabonner  {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
+## Création d’un formulaire d’inscription dans une page AEM en vue de s’abonner à des listes ou de s’en désabonner {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
 
 Pour créer un formulaire d’inscription et le configurer en vue de s’abonner à des listes de diffusion de fournisseurs de services de messagerie, procédez comme suit :
 
