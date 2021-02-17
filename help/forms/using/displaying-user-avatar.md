@@ -18,7 +18,7 @@ ht-degree: 80%
 ---
 
 
-# Affichage de l’avatar de l’utilisateur  {#displaying-the-user-avatar}
+# Affichage de l’avatar de l’utilisateur {#displaying-the-user-avatar}
 
 L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droit de l’espace de travail AEM Forms. Les avatars de rapports directs dans la hiérarchie de l’entreprise sont affichés également dans la vue du gestionnaire. Vous pouvez configurer l’espace de travail AEM Forms pour sélectionner les images des utilisateurs dans votre base de données, par exemple, le serveur LDAP.
 
