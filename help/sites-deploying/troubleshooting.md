@@ -22,7 +22,7 @@ ht-degree: 87%
 
 Cette section comprend des informations détaillées sur les journaux qui vous permettent de résoudre les problèmes éventuels. Elle contient également des informations sur les problèmes que vous pouvez rencontrer avec AEM.
 
-## Dépannage des performances d’auteur  {#troubleshoot-author-performance}
+## Dépannage des performances d’auteur {#troubleshoot-author-performance}
 
 L’analyse de la lenteur de la performance sur l’instance de création peut s’avérer compliquée. Il est tout d’abord nécessaire d’identifier sur quel niveau de la pile technologique la performance décroît.
 
