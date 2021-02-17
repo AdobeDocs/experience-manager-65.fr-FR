@@ -30,7 +30,7 @@ L’intégration offre les fonctionnalités suivantes :
 
 Une fois ExactTarget configuré, vous pouvez publier des newsletters ou des courriers électroniques dans ExactTarget. Voir [Publication de newsletters dans un service de messagerie](/help/sites-authoring/personalization.md).
 
-## Création d’une configuration ExactTarget  {#creating-an-exacttarget-configuration}
+## Création d’une configuration ExactTarget {#creating-an-exacttarget-configuration}
 
 Il est possible d’ajouter des configurations ExactTarget par le biais d’outils ou de services cloud. Les deux méthodes sont décrites dans cette section.
 
