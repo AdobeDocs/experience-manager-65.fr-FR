@@ -65,7 +65,7 @@ Une sauvegarde complète est souvent effectuée à intervalles réguliers (par e
 >
 >Pour plus d’informations sur les performances de sauvegarde, consultez la section [Performance de sauvegarde](/help/sites-deploying/configuring-performance.md#backup-performance).
 
-### Prise en charge de votre installation logicielle  {#backing-up-your-software-installation}
+### Prise en charge de votre installation logicielle {#backing-up-your-software-installation}
 
 Après l’installation de votre configuration ou des modifications importantes au sein de celle-ci, effectuez une sauvegarde de votre installation logicielle. 
 
@@ -740,7 +740,7 @@ Des tests doivent être effectués pour déterminer le nombre d’utilisations s
 
 ### Utilisation de rlog.jar pour trouver des demandes avec de longues durées  {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-aem comprend divers outils d&#39;assistance situés dans :
+AEM comprend divers outils d&#39;assistance situés dans :
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 L’un de ces outils, `rlog.jar` , , peut être utilisé pour trier rapidement `request.log` de sorte que les demandes soient affichées selon la durée, c’est-à-dire de la plus longue à la plus courte.
