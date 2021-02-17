@@ -27,7 +27,7 @@ Les formulaires adaptatifs fournissent un mécanisme pratique pour créer un seg
 
 Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enregistrer un panneau dans un formulaire adaptatif existant en tant que fragment.
 
-### Créer un fragment à partir de zéro  {#create-fragment-from-scratch}
+### Créer un fragment à partir de zéro {#create-fragment-from-scratch}
 
 1. Connectez-vous à l’instance d’auteur AEM Forms à l’adresse https://[*hostname*]:[*port*]/aem/forms.html.
 1. Cliquez sur **Créer > Fragment de formulaire adaptatif**.
