@@ -51,7 +51,7 @@ En ce qui concerne les communautés [FP1](/help/communities/deploy-communities.m
 
 Les futurs canaux sont mobiles et de bureau.
 
-### Conditions requises {#requirements}
+### Conditions préalables {#requirements}
 
 **Configurer le courrier électronique**
 
