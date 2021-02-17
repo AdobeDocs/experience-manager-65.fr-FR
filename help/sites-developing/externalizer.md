@@ -27,7 +27,7 @@ Comme une instance ne peut pas connaître son URL visible en externe si elle s�
 
 Cette page explique comment configurer le service **Externalizer** et l’utiliser. Pour plus d’informations, reportez-vous aux [JavaDocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
-## Configuration du service Externalizer  {#configuring-the-externalizer-service}
+## Configuration du service Externalizer {#configuring-the-externalizer-service}
 
 Le service **Externalizer** vous permet de définir de manière centralisée plusieurs domaines qui peuvent être utilisés pour préfixer par programmation les chemins de ressources. Chaque domaine est identifié par un nom unique utilisé pour faire référence au domaine par programmation.
 
