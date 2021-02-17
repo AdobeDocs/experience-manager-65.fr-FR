@@ -42,7 +42,7 @@ Pour les membres connectés, le répartiteur contourne le cache, relayant direct
 
 Lorsqu’elle est configurée pour prendre en charge la mise en cache du répartiteur, une expiration &quot;âge maximum&quot; basée sur TTL est ajoutée à l’en-tête afin de s’assurer que les pages mises en cache du répartiteur sont à jour.
 
-### Conditions requises {#requirements}
+### Conditions préalables {#requirements}
 
 * Répartiteur version 4.1.2 ou ultérieure (voir [Installation du répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) pour la dernière version)
 * [Package ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
