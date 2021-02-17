@@ -40,7 +40,7 @@ Le contenu de votre site web est conservé dans une structure en arborescence. P
 
 Avant de procéder à l’édition, vous devez [créer une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
-### Ouverture d’une page  {#opening-a-page}
+### Ouverture d’une page {#opening-a-page}
 
 Pour la plupart des opérations (l’édition par exemple), vous devez [ouvrir une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
