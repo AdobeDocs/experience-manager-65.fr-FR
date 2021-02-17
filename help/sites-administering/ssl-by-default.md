@@ -23,7 +23,7 @@ ht-degree: 74%
 
 Afin d&#39;améliorer en permanence la sécurité de l&#39;AEM, l&#39;Adobe a introduit une fonctionnalité appelée SSL By Default (SSL par défaut). L’objectif est d’inciter à utiliser le protocole HTTPS pour se connecter aux instances AEM.
 
-## Activation de SSL par défaut  {#enabling-ssl-by-default}
+## Activation de SSL par défaut {#enabling-ssl-by-default}
 
 Vous pouvez commencer à configurer la fonctionnalité SSL par défaut en cliquant sur le message correspondant dans la boîte de réception de l’écran d’accueil d’AEM. Pour accéder à la boîte de réception, appuyez sur l’icône de cloche dans le coin supérieur droit de l’écran. Ensuite, cliquez sur **Afficher tout**. Une liste ordonnée de toutes les alertes s’affiche.
 
