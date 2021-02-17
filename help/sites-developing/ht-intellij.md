@@ -35,7 +35,7 @@ Chacune des étapes suivantes est expliquée plus en détail dans le reste de ce
 >
 >Ce guide est basé sur IntelliJ IDEA Ultimate Edition 12.1.4 et AEM 5.6.1.
 
-### Installation de IntelliJ IDEA  {#install-intellij-idea}
+### Installation de IntelliJ IDEA {#install-intellij-idea}
 
 Téléchargez IntelliJ IDEA depuis la page [des téléchargements de JetBrains](https://www.jetbrains.com/idea/download/index.html).
 
