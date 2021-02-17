@@ -17,7 +17,7 @@ ht-degree: 82%
 ---
 
 
-# Utilisation en mode hors ligne  {#working-in-the-offline-mode}
+# Utilisation en mode hors ligne {#working-in-the-offline-mode}
 
 Le mode hors ligne de l’application AEM Forms vous permet de travailler en toute transparence, même si l’application est hors ligne. Vous pouvez ouvrir, mettre à jour et même envoyer un formulaire sans avoir besoin d’une connexion réseau.
 
