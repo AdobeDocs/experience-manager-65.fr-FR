@@ -73,7 +73,7 @@ L’une des principales fonctionnalités d’AEM Communities est la génération
 * [Consoles](members.md) Membres et Groupes : permet de créer et de gérer des membres et des groupes de membres côté publication à partir de l’environnement d’auteur.
 * [Synchronisation](sync.md) utilisateur : pour synchroniser des membres et des groupes de membres sur plusieurs instances de publication.
 * [Connexion aux réseaux sociaux avec Facebook et Twitter](social-login.md) : possibilité pour les visiteurs du site de devenir membres de la communauté à l’aide de leurs identifiants Facebook ou Twitter.
-* [Scores et insignes](implementing-scoring.md) : capacité d&#39;attribuer des badges pour identifier le ou les rôles d&#39;un membre et permettre aux membres d&#39;obtenir des badges en participant à la communauté.
+* [Scores et insignes](implementing-scoring.md) : la capacité d&#39;attribuer des badges pour identifier le ou les rôles d&#39;un membre et de permettre aux membres d&#39;obtenir des badges en participant à la communauté.
 * [Notifications](notifications.md) : capacité pour les membres d&#39;être informés de l&#39;activité qu&#39;ils suivent.
 * [Abonnements](subscriptions.md) : capacité des membres à interagir avec la communauté à l’aide de courriers électroniques externes.
 * [Messagerie](messaging.md) : capacité des membres à interagir avec la communauté à l&#39;aide de messages internes.
