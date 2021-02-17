@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 workflow-type: tm+mt
 source-wordcount: '1375'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -49,7 +49,7 @@ Ils peuvent être utilisés de différentes manières pour étendre la fonctionn
 >
 >* Utilisation et création de [bibliothèques clientes](/help/sites-developing/clientlibs.md).
 >* Utilisation et création d’[incrustations](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md) pour plus d’informations sur les zones structurelles utilisées pour la création de pages.
 
 >
@@ -72,7 +72,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 
 Lorsque vous modifiez une page, plusieurs [modes](/help/sites-authoring/author-environment-tools.md#page-modes) sont disponibles. Ces modes sont implémentés à l’aide de [calques](/help/sites-developing/touch-ui-structure.md#layer). Ils permettent d’accéder à différents types de fonctionnalités pour le même contenu de page. Les calques standard sont les suivants : édition, aperçu, annotation, développeur et ciblage.
 
-### Exemple de calque : État de Live Copy  {#layer-example-live-copy-status}
+### Exemple de calque : État de Live Copy {#layer-example-live-copy-status}
 
 Une instance AEM standard fournit le calque MSM. Elle accède aux données associées à la [gestion multisite](/help/sites-administering/msm.md) et les met en évidence dans le calque.
 
@@ -154,7 +154,7 @@ Dans une installation AEM standard :
 
    * `cq:inplaceEditing`
 
-      par exemple:
+      par exemple :
 
       * `/libs/foundation/components/text/cq:editConfig`
       * `/libs/foundation/components/image/cq:editConfig`
