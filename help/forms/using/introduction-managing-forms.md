@@ -18,9 +18,9 @@ ht-degree: 69%
 ---
 
 
-# Présentation de la gestion des formulaires  {#introduction-to-managing-forms}
+# Présentation de la gestion des formulaires {#introduction-to-managing-forms}
 
-aem [!DNL Forms] offre une interface utilisateur simplifiée mais puissante pour créer et gérer des formulaires, des documents, des thèmes, des lettres, des fragments de document, des dictionnaires de données et des ressources connexes. Cela leur permet de gérer le cycle de vie complet des formulaires, des documents et des ressources associées, depuis le bureau du développeur jusqu’à sa publication sur un serveur de portail pour les utilisateurs finaux. Vous pouvez utiliser l&#39;interface utilisateur AEM [!DNL Forms] pour :
+AEM [!DNL Forms] offre une interface utilisateur simplifiée mais puissante pour créer et gérer des formulaires, des documents, des thèmes, des lettres, des fragments de document, des dictionnaires de données et des ressources connexes. Cela leur permet de gérer le cycle de vie complet des formulaires, des documents et des ressources associées, depuis le bureau du développeur jusqu’à sa publication sur un serveur de portail pour les utilisateurs finaux. Vous pouvez utiliser l&#39;interface utilisateur AEM [!DNL Forms] pour :
 
 * Accéder aux composants [!DNL Forms] AEM
 * Accéder aux configurations AEM [!DNL Forms]
@@ -75,7 +75,7 @@ Un thème contient des détails de style pour les composants et les panneaux. Le
 
 Pour plus d’informations sur la création et l’utilisation des thèmes, voir [Thèmes dans AEM Forms](../../forms/using/themes.md).
 
-### Lettres   {#letters}
+### Lettres  {#letters}
 
 Une lettre [!DNL Forms] AEM est une correspondance sécurisée, personnalisée et interactive. Vous pouvez utiliser AEM [!DNL Forms] pour assembler rapidement des lettres (également appelées correspondances) à partir de contenu préapprouvé et personnalisé dans le cadre d’un processus simplifié.
 
@@ -87,7 +87,7 @@ Les fragments de document sont des éléments ou composants réutilisables d’u
 
 ### Dictionnaires de données {#data-dictionaries}
 
-En règle générale, les utilisateurs professionnels n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin de l’accès à ces structures de données et à leurs attributs dans le but de créer des solutions. aem [!DNL Forms] utilise un dictionnaire de données qui permet aux utilisateurs professionnels d’utiliser des informations provenant de sources de données dorsales sans connaître les détails techniques de leurs modèles de données sous-jacents.
+En règle générale, les utilisateurs professionnels n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin de l’accès à ces structures de données et à leurs attributs dans le but de créer des solutions. AEM [!DNL Forms] utilise un dictionnaire de données qui permet aux utilisateurs professionnels d’utiliser des informations provenant de sources de données dorsales sans connaître les détails techniques de leurs modèles de données sous-jacents.
 
 Pour plus d’informations sur la création et l’utilisation de dictionnaires de données, voir l’article [Créer un dictionnaire de données](../../forms/using/data-dictionary.md).
 
