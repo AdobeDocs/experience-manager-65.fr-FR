@@ -45,7 +45,7 @@ Voyons en détail la façon dont vous pouvez mesurer les performances et amélio
 * Clients professionnels et analystes responsables des stratégies marketing et de leur réussite
 * Personnel IT chargé de la configuration et de la maintenance des infrastructures et des solutions
 
-### Composants et fonctions d’AEM Forms impliqués  {#aem-forms-components-and-features-involved}
+### Composants et fonctions d’AEM Forms impliqués {#aem-forms-components-and-features-involved}
 
 * Formulaires adaptatifs
 * Intégration à Adobe Analytics pour collecter, organiser et générer un rapport des interactions client avec vos formulaires adaptatifs
