@@ -86,7 +86,7 @@ Pour mettre à jour une configuration avec la console web :
 
    * Ouvrant la console web à partir du lien du menu **Outil -> Opérations**. Après vous être connecté à la console, vous pouvez utiliser le menu déroulant de :
 
-      **les lots OSGi >**
+      **OSGi >**
 
    * L&#39;URL directe ; par exemple :
 
@@ -157,7 +157,7 @@ La console web n’indique pas à quel emplacement les modifications ont été e
 
 1. Vous pouvez maintenant créer un module de contenu comportant ce nœud et l’utiliser comme requis dans vos autres instances.
 
-## Configuration OSGi dans le référentiel  {#osgi-configuration-in-the-repository}
+## Configuration OSGi dans le référentiel {#osgi-configuration-in-the-repository}
 
 Outre l’utilisation de la console web, vous pouvez également définir des détails de la configuration dans le référentiel. Vous pouvez ainsi configurer facilement les différents modes d’exécution.
 
@@ -255,7 +255,7 @@ Pour ajouter la nouvelle configuration au référentiel :
 
 >[!CAUTION]
 >
->Vous ne devez rien modifier dans le chemin `/libs`.
+>Vous ne devez rien modifier dans le chemin `/libs`. 
 
 >[!CAUTION]
 >
