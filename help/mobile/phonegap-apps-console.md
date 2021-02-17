@@ -159,7 +159,7 @@ Les applications mobiles comportent une commande Mises à jour qui télécharge 
 
 ![chlimage_1-149](assets/chlimage_1-149.png)
 
-Pour rendre le contenu mis à jour disponible pour les applications, vous devez mettre à jour le cache Content Sync. Lors de la première mise à jour du cache, tout le contenu publié est ajouté. Les mises à jour suivantes ajoutent uniquement le contenu publié qui a changé depuis la mise à jour précédente.
+Pour rendre le contenu mis à jour disponible pour les applications, vous devez mettre à jour le cache de synchronisation de contenu. Lors de la première mise à jour du cache, tout le contenu publié est ajouté. Les mises à jour suivantes ajoutent uniquement le contenu publié qui a changé depuis la mise à jour précédente.
 
 Content Sync assure également le suivi des mises à jour. Grâce à ces informations, Content Sync peut déterminer la mise à jour du cache à envoyer à une application mobile.
 
@@ -262,7 +262,7 @@ Contient un bouton Précédent. Le système de paragraphe vous permet d’ajoute
 
 Lors de l’utilisation de l’application, la page Révisions est disponible à partir du carrousel sur la page Anglais.
 
-### Page d&#39;actualités - Application mobile Geometrixx {#the-news-page-geometrixx-mobile-app}
+### Page Actualités - Application mobile Geometrixx {#the-news-page-geometrixx-mobile-app}
 
 Contient un bouton Précédent. Le système de paragraphe vous permet d’ajouter des composants.
 
