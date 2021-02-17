@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
 source-wordcount: '5452'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -55,7 +55,7 @@ Les composants que vous utilisez pour cette intégration se trouvent dans la zon
 
 ### AEM Dynamic Media {#aem-dynamic-media}
 
-aem Dynamic Media est l&#39;unification des fonctionnalités de Dynamic Media Classic directement dans la plate-forme AEM.
+AEM Dynamic Media est l&#39;unification des fonctionnalités de Dynamic Media Classic directement dans la plate-forme AEM.
 
 Lorsque vous travaillez avec des ressources dans cette solution, vous suivez ce workflow :
 
@@ -70,7 +70,7 @@ Les composants que vous utilisez pour Dynamic Media se trouvent dans la zone du 
 
 * **[!UICONTROL Interactive Media]** : le composant **[!UICONTROL Interactive Media]** est destiné aux ressources (par exemple, les bannières de carrousel, les images interactives et la vidéo interactive) offrant une interactivité (par exemple, des zones réactives ou des zones cliquables). Ce composant est dynamique : il propose des options différentes selon que vous ajoutez une image ou une vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille d’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
-### Scénario à double utilisation  {#dual-use-scenario}
+### Scénario à double utilisation {#dual-use-scenario}
 
 Vous pouvez utiliser simultanément les fonctionnalités d’intégration Dynamic Media et Dynamic Media Classic de l’AEM. Le tableau suivant décrit les cas d’utilisation lorsque vous activez ou désactivez certaines zones.
 
@@ -232,7 +232,7 @@ Lors de la configuration de la synchronisation AEM Assets et Dynamic Media Class
 
 >[!NOTE]
 >
->aem incorpore toutes les métadonnées comme XMP avant de les télécharger vers Dynamic Media Classic, de sorte que toutes les propriétés sur le noeud de métadonnées soient disponibles dans Dynamic Media Classic en tant que XMP.
+>AEM incorpore toutes les métadonnées comme XMP avant de les télécharger vers Dynamic Media Classic, de sorte que toutes les propriétés sur le noeud de métadonnées soient disponibles dans Dynamic Media Classic en tant que XMP.
 
 #### Restrictions connues et implications en termes de conception {#known-limitations-and-design-implications}
 
@@ -402,7 +402,7 @@ Pour configurer le téléchargement automatique à partir d’AEM Assets :
    >[!NOTE]
    >
    >* Lors de l’ajout de fichiers après l’automatisation, s’ils ne sont pas placés dans le dossier de cible CQ, ils ne sont pas téléchargés vers Dynamic Media Classic.
-   >* aem incorpore toutes les métadonnées comme XMP avant de les télécharger vers Dynamic Media Classic, de sorte que toutes les propriétés sur le noeud de métadonnées soient disponibles dans Dynamic Media Classic en tant que XMP.
+   >* AEM incorpore toutes les métadonnées comme XMP avant de les télécharger vers Dynamic Media Classic, de sorte que toutes les propriétés sur le noeud de métadonnées soient disponibles dans Dynamic Media Classic en tant que XMP.
 
 
 ### Configuration de l’état (publié/non publié) des ressources transférées à Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
@@ -421,7 +421,7 @@ Cependant, si vous ne souhaitez pas que les ressources transférées vers Dynami
 
 Avant de pouvoir transmettre des fichiers à Dynamic Media Classic sans les publier, vous devez configurer les éléments suivants :
 
-1. [Utilisez le Admin Console pour créer un dossier de support.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Dans votre cas d’assistance, demandez que la prévisualisation sécurisée soit activée pour votre compte Dynamic Media Classic.
+1. [Utilisez Admin Console pour créer un dossier d’assistance.](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Dans votre cas d’assistance, demandez que la prévisualisation sécurisée soit activée pour votre compte Dynamic Media Classic.
 1. Suivez les instructions pour [configurer une prévisualisation sécurisée pour votre compte Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 Il s’agit des mêmes étapes que celles que vous suivez pour créer une configuration de test sécurisée dans Dynamic Media Classic.
