@@ -32,7 +32,7 @@ Dans Workspace, les processus d’une catégorie s’affichent en général sous
 
 Lorsque vous utilisez MySQL en tant que base de données AEM forms, Administration Console n’est pas en mesure de différencier les noms des deux catégories qui ne diffèrent que par l’utilisation de caractères étendus. Par exemple, si vous créez une catégorie appelée abcde et une autre appelée âbcdè, elles sont considérées comme identiques.
 
-## Ajout d’une catégorie  {#add-a-category}
+## Ajout d’une catégorie {#add-a-category}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des catégories.
 1. Cliquez sur Ajouter. Si vous souhaitez ajouter une sous-catégorie, sélectionnez une catégorie et cliquez ensuite sur Ajouter.
