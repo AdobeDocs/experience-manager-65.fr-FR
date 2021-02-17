@@ -199,7 +199,7 @@ Pour consulter des configurations détaillées des modules externes de l’édit
 >
 Pour créer votre propre composant textuel, copiez le composant ci-dessus au lieu de modifier ces composants.
 
-## Configuration de la barre d’outils de l’éditeur de texte enrichi   {#dialogfullscreen}
+## Configuration de la barre d’outils de l’éditeur de texte enrichi  {#dialogfullscreen}
 
 AEM vous permet de configurer différemment l’interface de l’éditeur de texte enrichi pour les différents modes de modification. Les paramètres par défaut sont fournis ci-dessous. Vous pouvez remplacer ces paramètres par défaut en fonction de vos besoins. Vous personnalisez uniquement les fonctionnalités de la barre d’outils que vous souhaitez fournir à vos auteurs. Vous n’avez pas besoin de définir toutes les configurations de barre d’outils.
 
