@@ -16,7 +16,7 @@ ht-degree: 78%
 ---
 
 
-# Configuration de la solution Correspondence Management  {#configuring-a-correspondence-management-solution}
+# Configuration de la solution Correspondence Management {#configuring-a-correspondence-management-solution}
 
 ## Définition de l’URL de l’instance d’auteur pour VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
 
