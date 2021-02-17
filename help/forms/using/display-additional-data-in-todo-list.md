@@ -26,7 +26,7 @@ Par défaut, la liste des tâches de l’espace de travail AEM Forms affiche le 
 
 Cet article décrit les étapes à suivre pour ajouter les informations à afficher pour chaque tâche dans la liste Tâches.
 
-## Informations pouvant être ajoutées  {#what-can-be-added}
+## Informations pouvant être ajoutées {#what-can-be-added}
 
 Vous pouvez ajouter les informations disponibles dans `task.json` envoyées par le serveur. Les informations peuvent être ajoutées sous la forme de texte brut ou vous pouvez utiliser des styles pour formater les informations.
 
