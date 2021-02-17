@@ -22,7 +22,7 @@ ht-degree: 87%
 
 Un administrateur peut configurer un dossier réseau, appelé *dossier de contrôle* (en anglais Watched Folder), de sorte que lorsqu’un utilisateur y place un fichier (par exemple un fichier PDF), une opération de service configurée est appelée et manipule le fichier. Après que le service a effectué l’opération spécifiée, il enregistre le fichier modifié dans un dossier de sortie spécifié.
 
-## Configuration du service Watched Folder  {#configuring-the-watched-folder-service}
+## Configuration du service Watched Folder {#configuring-the-watched-folder-service}
 
 Avant de configurer un point de fin Watched Folder, configurez le service Watched Folder. Les paramètres de configuration du service Watched Folder ont deux objectifs :
 
