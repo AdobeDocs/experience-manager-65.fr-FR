@@ -37,7 +37,7 @@ Un modèle de données de formulaire est une extension du schéma JSON que vous 
 * [Écrire les données de formulaires adaptatifs envoyés dans les sources de données](#write-af)
 * [Appeler les services à l’aide des règles de formulaire adaptatif](#invoke-services)
 
-## Créer des formulaires adaptatifs et des fragments  {#create-af}
+## Créer des formulaires adaptatifs et des fragments {#create-af}
 
 Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adaptive-form.md) et des [fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) en fonction du modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données du formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
 
