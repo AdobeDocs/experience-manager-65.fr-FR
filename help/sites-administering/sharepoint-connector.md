@@ -52,7 +52,7 @@ Pour débuter avec le connecteur, effectuez les opérations suivantes :
 * Installez le module du connecteur depuis le gestionnaire de modules.
 * Configurez les options du connecteur.
 
-## Installation de SharePoint Connector  {#installing-sharepoint-connector}
+## Installation de SharePoint Connector {#installing-sharepoint-connector}
 
 Le connecteur est un module de contenu qui facilite la configuration. Installez le package à l’aide de Package Manager, puis définissez l’URL du serveur SharePoint.
 et d’autres options de configuration. Le contenu SharePoint est disponible dans le référentiel AEM.
