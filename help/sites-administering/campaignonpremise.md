@@ -40,7 +40,7 @@ Si vous étendez votre intégration à Adobe Campaign, vous pouvez consulter le
 * [Création d’extensions personnalisées](/help/sites-developing/extending-campaign-extensions.md)
 * [Création de mises en correspondance de formulaires personnalisés](/help/sites-developing/extending-campaign-form-mapping.md)
 
-## Processus d’intégration d’AEM et d’Adobe Campaign  {#aem-and-adobe-campaign-integration-workflow}
+## Processus d’intégration d’AEM et d’Adobe Campaign {#aem-and-adobe-campaign-integration-workflow}
 
 Cette section décrit un processus de production type entre AEM et Adobe Campaign lors de la création de campagnes et de la diffusion de contenu.
 
