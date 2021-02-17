@@ -43,7 +43,7 @@ Il existe un filtre permettant à l’utilisateur de sélectionner le type de pr
 
 ![](assets/image2019-3-20_23-52-51.png)
 
-### Affichage des autorisations pour un principal  {#viewing-permissions-for-a-principal}
+### Affichage des autorisations pour un principal {#viewing-permissions-for-a-principal}
 
 Le cadre de gauche permet aux utilisateurs de faire défiler la page vers le bas pour rechercher un principal, un groupe ou un utilisateur selon le filtre sélectionné, comme illustré ci-dessous :
 
