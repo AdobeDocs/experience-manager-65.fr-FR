@@ -80,7 +80,7 @@ Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et
 * [Mise à jour de la plateforme AEM](https://helpx.adobe.com/fr/experience-manager/kb/aem62-available-hotfixes.html)
 * [Mises à jour d’AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
-### 1. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation  {#apache-sling-distribution-agent-sync-agents-factory}
+### 1. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
 
 **Activer la synchronisation des utilisateurs**
 
