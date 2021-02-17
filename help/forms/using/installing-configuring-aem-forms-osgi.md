@@ -223,7 +223,7 @@ Dans un scénario Adobe Sign et de formulaires adaptatifs standard, un utilisate
 
 Pour utiliser Adobe Sign avec AEM Forms, [intégrez Adobe Sign à AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
-#### Configuration d’Adobe Analytics  {#configure-adobe-analytics}
+#### Configuration d’Adobe Analytics {#configure-adobe-analytics}
 
 AEM Forms s’intègre à Adobe Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
 
