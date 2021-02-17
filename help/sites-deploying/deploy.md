@@ -106,7 +106,7 @@ Les sections suivantes décrivent les deux scénarios :
 
 * **Managed Services - Cloud Manager pour Adobe Experience Manager** : AEM déployé et géré par Adobe Managed Services.
 
-### On-Premise  {#on-premise}
+### On-Premise {#on-premise}
 
 Vous pouvez installer AEM sur des serveurs dans votre environnement d’entreprise. Les instances d’installation standard incluent les environnements de développement, de test et de publication. Reportez-vous à la section[ Prise en main](/help/sites-deploying/deploy.md#getting%20started) pour obtenir des informations de base sur la façon d’obtenir le logiciel AEM à installer en local.
 
