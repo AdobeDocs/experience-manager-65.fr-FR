@@ -55,7 +55,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
    <td><strong>Description</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td>Title (Titre)</td> 
+   <td>Titre</td> 
    <td>Tout type, à l’exception du type ressource</td> 
    <td>Nom d’affichage du formulaire.<br /> </td> 
   </tr> 
