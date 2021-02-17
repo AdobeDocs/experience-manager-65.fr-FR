@@ -73,7 +73,7 @@ Voici un exemple de rapport affichant un lot n’ayant pas été installé lors 
 
 Le fichier error.log doit être soigneusement passé en revue pendant et après le démarrage d’AEM à l’aide du jar de la version cible. Les avertissements ou les erreurs doivent être vérifiés. En général, il est conseillé de rechercher les problèmes au début du journal. Les erreurs qui surviennent par la suite dans le journal peuvent en réalité être des effets secondaires d’une cause principale signalée tôt au début du fichier. Si des erreurs et des avertissements s’affichent à plusieurs reprises, voir la section ci-dessous [Analyse des problèmes avec la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
-### Vérification des lots OSGi  {#verify-osgi-bundles}
+### Vérification des lots OSGi {#verify-osgi-bundles}
 
 Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots ne sont pas démarrés. Si des lots sont installés, consultez le fichier `error.log` pour identifier le problème racine.
 
@@ -133,7 +133,7 @@ Cette section comporte des scénarios de problèmes que l’on peut rencontrer a
 
 Ces scénarios doivent vous permettre de trouver la cause première des problèmes de mise à niveau et d’identifier des problèmes spécifiques à un projet ou un produit.
 
-### Échec de la migration du référentiel   {#repository-migration-failing-}
+### Échec de la migration du référentiel  {#repository-migration-failing-}
 
 La migration des données de CRX2 à Oak doit être réalisable en toutes situations, à commencer par les instances source basées sur CQ 5.4. Assurez-vous de suivre de près les instructions de mise à niveau de ce document, y compris la préparation du fichier `repository.xml`. Ainsi, vous garantissez qu’aucun authentificateur personnalisé ne puisse démarrer via JAAS et que l’instance a été testée pour éviter les incohérences avant de démarrer la migration.
 
