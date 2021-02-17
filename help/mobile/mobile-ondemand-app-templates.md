@@ -33,7 +33,7 @@ La sélection de cet exemple de modèle lors de la création d’une application
 
 >[!NOTE]
 >
->Pour gérer le contenu de votre application et de votre application mobile depuis AEM Mobile Apps Control Center, consultez le [Tableau de bord d’application AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Pour gérer le contenu de votre application et de votre application mobile à partir du Centre de contrôle des applications AEM Mobile, consultez le [Tableau de bord d’application AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 ## Création de modèles d’application {#creating-app-templates}
 
