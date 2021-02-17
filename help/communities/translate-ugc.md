@@ -102,7 +102,7 @@ Pour créer une nouvelle intégration de traduction, qui intègre un connecteur 
 
    (Obligatoire) Saisissez le titre d’affichage de votre choix. Pas de valeur par défaut.
 
-* **[!UICONTROL Nom]**
+* **[!UICONTROL Name]** (Nom)
 
    (Facultatif) Entrez un nom pour la configuration. Par défaut, il s’agit d’un nom de noeud basé sur le titre.
 
