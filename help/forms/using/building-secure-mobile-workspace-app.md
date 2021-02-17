@@ -17,7 +17,7 @@ ht-degree: 81%
 ---
 
 
-# Création d’une application AEM Forms sécurisée pour iOS  {#building-a-secure-aem-forms-app-for-ios}
+# Création d’une application AEM Forms sécurisée pour iOS {#building-a-secure-aem-forms-app-for-ios}
 
 Vous devez archiver le projet Xcode pour l’application AEM Forms afin de générer le programme d’installation (un fichier .ipa) et une liste de propriétés (un fichier .plist). Le fichier de liste de propriétés contient les informations de configuration de l’application interne hébergée, telles que le nom de l’application et l’emplacement où elle est hébergée. Pour en savoir plus sur le fichier de liste de propriétés, consultez [A propos des fichiers de liste de propriétés d’informations](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
