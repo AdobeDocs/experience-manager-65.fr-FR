@@ -34,7 +34,7 @@ Pour tout problème lié aux paramètres prédéfinis de visionneuse, consultez 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    * Les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** s’affichent lorsque vous avez sélectionné un paramètre de visionneuse prédéfini.
-   * Le système affiche plusieurs paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des **[!UICONTROL détails d’une ressource.]** Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmenter le nombre de paramètres de visionneuse prédéfinis affichés](managing-viewer-presets.md).
+   * Le système affiche plusieurs paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des **[!UICONTROL détails d’une ressource.]** Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent](managing-viewer-presets.md).
 
 1. Sélectionnez une visionneuse dans le volet gauche pour l’appliquer à la ressource telle qu’elle figure dans le volet de droite. Vous pouvez également [copier l’URL à partager](linking-urls-to-yourwebapplication.md) avec d’autres utilisateurs.
 
