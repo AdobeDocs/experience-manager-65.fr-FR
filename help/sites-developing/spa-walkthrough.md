@@ -39,7 +39,7 @@ L’objectif de cette introduction et de cette présentation est de montrer aux 
 
 La procédure pas à pas est basée sur la fonctionnalité AEM standard et l&#39;exemple d&#39;application de Journal We.Retail. Les exigences suivantes doivent être respectées :
 
-* [aem version 6.4 avec Service Pack 2 ou plus récent](/help/release-notes/sp-release-notes.md)
+* [AEM version 6.4 avec Service Pack 2 ou plus récent](/help/release-notes/sp-release-notes.md)
 * [Installez l&#39;exemple d&#39;application de Journal We.Retail disponible sur GitHub ici.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 >[!CAUTION]
@@ -103,7 +103,7 @@ Lorsqu’un SPA est créé pour tirer parti de l’AEM Éditeur, l’auteur du c
 >
 >La procédure pas à pas est basée sur la fonctionnalité AEM standard et l&#39;exemple d&#39;application de Journal We.Retail. Les exigences suivantes doivent être respectées :
 >
->* [aem version 6.4 avec Service Pack 2](/help/release-notes/sp-release-notes.md)
+>* [AEM version 6.4 avec Service Pack 2](/help/release-notes/sp-release-notes.md)
 >* [Installez l&#39;exemple d&#39;application de Journal We.Retail disponible sur GitHub ici.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 >
