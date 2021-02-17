@@ -17,7 +17,7 @@ ht-degree: 70%
 ---
 
 
-# Utilisation de l’API sendToPrinter  {#using-the-sendtoprinter-api}
+# Utilisation de l’API sendToPrinter {#using-the-sendtoprinter-api}
 
 ## Présentation {#overview}
 
