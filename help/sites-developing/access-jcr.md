@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 60%
+ht-degree: 61%
 
 ---
 
@@ -34,7 +34,7 @@ Vous pouvez modifier, par programmation, les nœuds et propriétés situés dans
 >
 >Pour savoir comment interroger le JCR Adobe CQ à l’aide de l’API JCR Query, voir [Interrogation des données Adobe Experience Manager à l’aide de l’API JCR](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
-## Création d’une instance de référentiel  {#create-a-repository-instance}
+## Création d’une instance de référentiel {#create-a-repository-instance}
 
 Cet article de développement fait appel à une méthode statique appartenant à la classe `org.apache.jackrabbit.commons.JcrUtils` pour se connecter à un référentiel et établir une connexion. Il existe cependant d’autres modus operandi. Cette méthode se nomme `getRepository`. Dans ce cas, un paramètre de chaîne est utilisé, qui représente l’URL du serveur Adobe CQ. Par exemple, `http://localhost:4503/crx/server`.
 
