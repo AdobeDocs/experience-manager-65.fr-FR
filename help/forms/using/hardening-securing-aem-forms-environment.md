@@ -38,7 +38,7 @@ AEM Forms est hautement personnalisable et compatible avec de nombreux environne
 
 Les vulnérabilités de sécurité de couche de transport comptent parmi les premières menaces qui affectent les serveurs d’applications accessibles par Internet ou par un intranet. Cette section décrit le processus de renforcement des hôtes du réseau contre ces vulnérabilités. Elle traite de la segmentation du réseau, du renforcement de la pile TCP/IP (Transmission Control Protocol/Internet Protocol) et de l’utilisation de pare-feu pour protéger les hôtes.
 
-### Limiter les points de fin ouverts   {#limit-open-endpoints}
+### Limiter les points de fin ouverts  {#limit-open-endpoints}
 
 Une entreprise peut configurer un pare-feu externe pour limiter l’accès entre un utilisateur final et une batterie de publication AEM Forms. L’entreprise peut également avoir un pare-feu interne pour limiter l’accès entre une batterie de publication et d’autres dans des éléments d’entreprise (par exemple, instance d’auteur, instance de traitement, bases de données). Autoriser les pare-feu à autoriser l’accès à un nombre limité d’URL AEM Forms pour les utilisateurs finaux et au sein des éléments d’entreprise :
 
@@ -121,7 +121,7 @@ Vous pouvez configurer le pare-feu interne pour autoriser certains composants AE
  </tbody>
 </table>
 
-#### Configurer les autorisations de référentiel et les listes de contrôle d’accès (ACL)  {#setup-repository-permissions-and-access-control-lists-acls}
+#### Configurer les autorisations de référentiel et les listes de contrôle d’accès (ACL) {#setup-repository-permissions-and-access-control-lists-acls}
 
 Par défaut, les actifs disponibles sur des nœuds de publication sont accessibles à tous. L’accès en lecture seule est activé pour tous les actifs. Il est nécessaire pour autoriser l’accès anonyme. Si vous envisagez de restreindre l’affichage des formulaires et d’autoriser l’accès uniquement aux utilisateurs authentifiés, utilisez un groupe commun pour autoriser uniquement les utilisateurs authentifiés à accéder en lecture seule aux actifs disponibles sur les nœuds de publication. Les répertoires/emplacements suivants contiennent des actifs de formulaires qui nécessitent un renforcement (accès en lecture seule pour les utilisateurs authentifiés) :
 
