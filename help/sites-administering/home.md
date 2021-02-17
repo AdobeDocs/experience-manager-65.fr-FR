@@ -1,8 +1,8 @@
 ---
 title: Guide de l’utilisateur pour l’administration dans AEM 6.5
 seo-title: Guide de l’utilisateur pour l’administration dans AEM 6.5
-description: aem Administration
-seo-description: aem Administration
+description: AEM Administration
+seo-description: AEM Administration
 translation-type: tm+mt
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
@@ -23,7 +23,7 @@ Ce guide couvre toutes les tâches d&#39;administration AEM.
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
-## aem 6.5 guides d’utilisation
+## AEM 6.5 guides d’utilisation
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -43,7 +43,7 @@ Ce guide couvre toutes les tâches d&#39;administration AEM.
 
 ## Principales ressources AEM
 
-* [aem didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
