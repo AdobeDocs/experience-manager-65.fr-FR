@@ -24,7 +24,7 @@ ht-degree: 87%
 
 L’API Sling fonctionne à un niveau plus avancé et plus abstrait que l’API JCR. Ainsi, votre code est plus réutilisable et indépendant du stockage sous-jacent. Cela facilite l’ajout de données virtuelles externes via le mécanisme ResourceProvider si nécessaire.
 
-## Éviter les requêtes autant que possible  {#avoid-queries-wherever-possible}
+## Éviter les requêtes autant que possible {#avoid-queries-wherever-possible}
 
 Pour récupérer des données, il est toujours plus simple de naviguer dans le référentiel plutôt que d’exécuter une requête. Dans certains cas, les requêtes sont nécessaires, par exemple, une requête d’utilisateur final ou s’il faut trouver du contenu structuré à travers le référentiel entier, mais pour toutes les autres situations, il est préférable de naviguer jusqu’aux nœuds demandés. Les requêtes doivent toujours être évitées dans la logique de rendu telle que les composants de navigation, une &quot;liste d’éléments récente&quot;, le nombre d’éléments, etc. Dans ces cas, il est préférable de parcourir la hiérarchie ou de pré-mettre en cache le résultat afin qu’il puisse être utilisé directement lors du rendu.
 
