@@ -28,7 +28,7 @@ Par exemple, un rappel de tâche est configuré pour se produire trois jours ouv
 >
 >Lors du calcul des dates et heures à l’aide des calendriers professionnels, AEM Forms utilise la date et l’heure de la zone géographique dans laquelle se trouve le serveur et n’effectue aucune modification en fonction des fuseaux horaires. Par exemple, si un rappel de tâche est planifié pour 10 h 00 sur un serveur situé à Londres et si le destinataire du rappel se trouve à New York, celui-ci reçoit le rappel à 5 h 00, heure locale.
 
-## Utilisation du calendrier professionnel par défaut  {#using-the-default-business-calendar}
+## Utilisation du calendrier professionnel par défaut {#using-the-default-business-calendar}
 
 AEM Forms fournit un calendrier professionnel par défaut (*le calendrier intégré*) qui désigne les samedis et dimanches en tant que jours non ouvrés. Si les jours non ouvrés sont identiques pour l’ensemble des utilisateurs de votre organisation, vous pouvez mettre le calendrier professionnel par défaut à jour pour l’adapter à vos besoins. Si seul le calendrier professionnel par défaut est utilisé, il est inutile d’activer les calendriers professionnels dans User Management et de définir des associations. Lorsqu’aucun autre calendrier professionnel n’est défini, AEM Forms utilise le calendrier professionnel par défaut.
 
