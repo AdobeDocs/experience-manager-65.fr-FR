@@ -113,7 +113,7 @@ Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicie
 
    Voir [Chargement de ressources 3D pour utilisation dans Dynamic Media.](/help/assets/manage-assets.md#uploading-assets)
 
-1. Dans AEM, sur la page de **[!UICONTROL navigation]**, appuyez sur **[!UICONTROL Ressources > Fichiers.]**
+1. Dans AEM, sur la page de **[!UICONTROL navigation]**, appuyez sur **[!UICONTROL Assets > Fichiers.]**
 1. Dans l’angle supérieur droit de la page, dans la liste déroulante **[!UICONTROL Vue]**, appuyez sur **[!UICONTROL Mode Carte.]**
 1. Accédez à une ressource 3D que vous souhaitez afficher.
 1. Appuyez sur la carte de la ressource 3D pour l’ouvrir sur la page Détails de l’actif.
@@ -179,7 +179,7 @@ Dynamic Media contient un composant Média 3D Dynamic Media que vous pouvez util
 
 * [Ajout du composant Média 3D au modèle de page](#adding-three-d-media-component-to-page-template)
 * [Ajout du composant Média 3D à une page web](#adding-the-three-d-media-component-to-a-web-page)
-   * [Facultatif - Configuration du composant Média 3D](#configuring-the-three-d-component)
+   * [Facultatif – Configuration du composant Média 3D](#configuring-the-three-d-component)
 * [Affectation d’une ressource 3D au composant Média 3D](#assigning-a-three-d-asset-to-the-component)
 
 
@@ -235,7 +235,7 @@ Voir [Affectation d’une ressource 3D au composant Média 3D.](#assigning-a-thr
 
 1. Dans l’angle supérieur droit, appuyez sur la coche pour enregistrer vos modifications.
 
-## Affectation d’une ressource 3D au composant Média 3D{#assigning-a-three-d-asset-to-the-component}
+## Affectation d’une ressource 3D au composant Média 3D {#assigning-a-three-d-asset-to-the-component}
 
 Après avoir ajouté un composant Média 3D à une page web, vous pouvez lui affecter une ressource 3D.
 
