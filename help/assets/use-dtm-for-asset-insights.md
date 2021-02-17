@@ -11,7 +11,7 @@ ht-degree: 34%
 ---
 
 
-# Activation des statistiques sur les ressources via DTM    {#enable-asset-insights-through-dtm}
+# Activation des statistiques sur les ressources via DTM   {#enable-asset-insights-through-dtm}
 
 La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Asset Insights ou utiliser la gestion dynamique des balises pour insérer des balises Asset Insights. Les statistiques sont uniquement prises en charge et fournies pour les images.
 
