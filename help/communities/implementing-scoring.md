@@ -218,7 +218,7 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th> Valeur Description</th>
+   <th> Description de la valeur</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -349,7 +349,7 @@ La propriété `scoringRules` d’une règle de badge limite simplement les règ
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th>Valeur Description</th>
+   <th>Description de la valeur</th>
   </tr>
   <tr>
    <td>seuils</td>
