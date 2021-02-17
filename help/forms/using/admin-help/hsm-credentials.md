@@ -30,7 +30,7 @@ AEM Forms Digital Signatures peut utiliser les informations d’identification s
 >
 >Après avoir modifié votre configuration HSM, redémarrez le serveur AEM Forms.
 
-## Création d’un alias pour des informations d’identification HSM lorsque le périphérique HSM est en ligne  {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+## Création d’un alias pour des informations d’identification HSM lorsque le périphérique HSM est en ligne {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification HSM, puis sur Ajouter.
 1. Dans la zone Nom du profil, saisissez une chaîne utilisée pour identifier l’alias. Cette valeur est utilisée en tant que propriété pour certaines opérations de Digital Signatures, comme l’opération de saisie du champ de signature.
