@@ -26,7 +26,7 @@ Le rendu HTML5 d’un modèle de formulaire XFA comporte plusieurs éléments HT
 >
 >Dans les classes CSS, ne modifiez pas les attributs de position et de taille, tels que la largeur, la hauteur, l’épaisseur de la bordure, le haut, la gauche, la droite, le bas, le remplissage et la marge. Modifier les attributs de position et de taille modifie la disposition du formulaire.
 
-## Classes CSS pour les éléments  {#css-classes-nbsp-for-elements-nbsp}
+## Classes CSS pour les éléments {#css-classes-nbsp-for-elements-nbsp}
 
 Chaque élément contient des classes CSS bien définies. Vous pouvez modifier ces classes pour modifier l’apparence d’un élément. Chaque élément, à l’exception des éléments de champ et de dessin, comporte deux classes CSS –  Type et Nom.
 
@@ -81,7 +81,7 @@ Outre les classes type et name, le composant de champ contient également une au
    <td><strong>Nom</strong></td>
   </tr>
   <tr>
-   <td>Page </td>
+   <td>Page</td>
    <td>page</td>
    <td>Nom défini par l’utilisateur<br /> ou<br /> Page&lt;pageNumber&gt; (valeur par défaut)</td>
   </tr>
@@ -106,7 +106,7 @@ Outre les classes type et name, le composant de champ contient également une au
    <td>Nom défini par l’utilisateur</td>
   </tr>
   <tr>
-   <td>Field (Champ)</td>
+   <td>Champ</td>
    <td>field</td>
    <td>Nom défini par l’utilisateur</td>
   </tr>
