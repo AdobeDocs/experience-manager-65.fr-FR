@@ -92,7 +92,7 @@ Après le décodage des codes à barres, le service Barcoded Forms renvoie le do
 </xb:scanned_image>
 ```
 
-## Remarques sur le service  {#considerations}
+## Remarques sur le service {#considerations}
 
 ### Flux de production utilisant des formulaires à code à barres {#workflows-that-use-barcoded-forms}
 
