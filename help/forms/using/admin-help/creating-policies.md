@@ -22,7 +22,7 @@ ht-degree: 85%
 
 Une *stratégie* définit un jeu de paramètres de confidentialité et d’utilisateurs habilités à accéder au document auquel la stratégie est appliquée. Un *jeu de stratégies* regroupe plusieurs stratégies ayant une finalité commune. Ces jeux de stratégies sont ensuite rendus accessibles à un sous-groupe d’utilisateurs du système. Pour plus d’informations sur les stratégies, voir [Stratégies et documents protégés par une stratégie](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
-## Types de stratégies  {#types-of-policies}
+## Types de stratégies {#types-of-policies}
 
 Document Security offre les types de stratégies suivants.
 
