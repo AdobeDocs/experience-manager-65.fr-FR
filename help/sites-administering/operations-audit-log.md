@@ -76,7 +76,7 @@ Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâ
 >
 >L’arrêt de la tâche de maintenance consiste à suspendre son exécution sans perdre la trace de la tâche déjà en cours.
 
-## Configuration de la purge du journal d’audit de la gestion des actifs numériques  {#configure-dam-audit-log-purging}
+## Configuration de la purge du journal d’audit de la gestion des actifs numériques {#configure-dam-audit-log-purging}
 
 1. Accédez à System Console à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Recherchez la règle **Purge du journal d’audit de la gestion des actifs numériques** et cliquez sur le résultat.
@@ -89,7 +89,7 @@ Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâ
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre configuration.
 
-## Configuration de la purge du journal d’audit de réplication   {#configure-replication-audit-log-purging}
+## Configuration de la purge du journal d’audit de réplication  {#configure-replication-audit-log-purging}
 
 1. Accédez à System Console à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Recherchez le **planificateur de purge du journal d’audit de réplication** et cliquez sur le résultat.
