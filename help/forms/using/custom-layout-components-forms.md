@@ -24,7 +24,7 @@ ht-degree: 63%
 
 Connaissance des dispositions qui vous permet de créer et utiliser une disposition personnalisée. Voir [Modification de la disposition du panneau](../../forms/using/layout-capabilities-adaptive-forms.md).
 
-## Composant de disposition de panneau de formulaire adaptatif  {#adaptive-form-panel-layout-component}
+## Composant de disposition de panneau de formulaire adaptatif {#adaptive-form-panel-layout-component}
 
 Le composant Disposition de panneau de formulaire adaptatif contrôle la disposition des composants d’un formulaire adaptatif dans un panneau par rapport à l’interface utilisateur.
 
