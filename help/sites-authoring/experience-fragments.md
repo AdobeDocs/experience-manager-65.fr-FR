@@ -46,7 +46,7 @@ Vous pouvez utiliser des fragments d’expérience :
 >    `experience-fragments-editors`
 Si vous rencontrez des problèmes, contactez votre administrateur système.
 
-## Quand utiliser les fragments d’expérience ?    {#when-should-you-use-experience-fragments}
+## Quand utiliser les fragments d’expérience ?   {#when-should-you-use-experience-fragments}
 
 Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
@@ -224,7 +224,7 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
    * **Description**
    * **Balises de variation**
 
-   ![xf-06](assets/xf-06.png)
+   ![xf-08](assets/xf-06.png)
 
 1. Confirmez en cliquant sur **Terminé** (icône représentant une coche). La nouvelle variation est alors affichée dans le panneau :
 
