@@ -40,15 +40,15 @@ ht-degree: 45%
    >   * un espace de travail nommé, spécifié dans la configuration Cloud.
    >   * **Remarque : l’** exportation vers des espaces de travail spécifiques nécessite Adobe Target Premium.
 >
->* aem doit être [intégré à Adobe Target en utilisant Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+>* AEM doit être [intégré à Adobe Target en utilisant Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 
 >
 >
 
-aem 6.5.0.0 et 6.5.1.0 :
+AEM 6.5.0.0 et 6.5.1.0 :
 >
 >* Les fragments d’expérience AEM sont exportés dans l’espace de travail par défaut de Adobe Target.
->* aem doit être intégré à Adobe Target conformément aux instructions de la section [Intégration à Adobe Target](/help/sites-administering/target.md).
+>* AEM doit être intégré à Adobe Target conformément aux instructions de la section [Intégration à Adobe Target](/help/sites-administering/target.md).
 
 
 Vous pouvez exporter [Fragments d’expérience](/help/sites-authoring/experience-fragments.md), créés dans Adobe Experience Manager (AEM), vers Adobe Target (Cible). Ceux-ci peuvent ensuite être utilisés comme offres dans les activités Target, pour tester et personnaliser les expériences en fonction des besoins.
