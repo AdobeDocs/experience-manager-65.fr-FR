@@ -62,7 +62,7 @@ Comprend des champs permettant de saisir le numéro de téléphone et l’adress
 
 Aperçu PDF d’une lettre créée à l’aide du modèle Classique simple
 
-## Équilibré à gauche  {#balanced-left}
+## Équilibré à gauche {#balanced-left}
 
 Le modèle Équilibré à gauche affiche le logo à gauche de la lettre.
 
