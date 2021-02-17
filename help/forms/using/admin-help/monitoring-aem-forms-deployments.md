@@ -24,7 +24,7 @@ Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du systè
 
 Pour plus d’informations sur la surveillance des déploiements d’AEM Forms, voir le[ Guide technique pour la surveillance des déploiements d’AEM Forms](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
 
-## Contrôle via les MBeans  {#monitoring-using-mbeans}
+## Contrôle via les MBeans {#monitoring-using-mbeans}
 
 AEM forms propose deux MBeans qui fournissent des informations de navigation et des statistiques. Il s’agit des seuls MBeans pris en charge au niveau de l’intégration et de l’inspection :
 
