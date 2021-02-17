@@ -103,7 +103,7 @@ AEM Brackets Extension fournit les types suivants de synchronisation de contenu 
 
 Ne synchronise que les changements de Brackets vers l’instance d’AEM, mais jamais l’inverse.
 
-### Synchronisation bidirectionnelle manuelle  {#manual-bidirectional-synchronization}
+### Synchronisation bidirectionnelle manuelle {#manual-bidirectional-synchronization}
 
 Dans Project Explorer, ouvrez le menu contextuel en cliquant avec le bouton droit de la souris sur un fichier ou un dossier, et vous pouvez accéder aux options **Exporter vers le serveur** ou **Importer à partir du serveur**.
 
