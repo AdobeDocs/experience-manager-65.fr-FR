@@ -112,7 +112,7 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 >
 >Une stratégie de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
 
-## Exemple de magasin candidat contexthub.surferinfo   {#contexthub-surferinfo-sample-store-candidate}
+## Exemple de magasin candidat contexthub.surferinfo  {#contexthub-surferinfo-sample-store-candidate}
 
 Stocke des informations sur l’environnement client actuel, telles que l’appareil, la fenêtre, le navigateur, la date et l’heure.
 
