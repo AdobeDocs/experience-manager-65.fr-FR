@@ -657,7 +657,7 @@ Les attributs ci-dessous sont fournis pour chaque type de statistique faisant l�
 * ValuePerHour : Valeur mesurée par heure au cours de la dernière semaine. Lecture seule.
 * ValuePerWeek : Valeur mesurée par semaine au cours des trois dernières années. Lecture seule.
 
-## Statistiques des requêtes dans le référentiel  {#repository-query-stats}
+## Statistiques des requêtes dans le référentiel {#repository-query-stats}
 
 Informations statistiques sur les requêtes dans le référentiel.
 
