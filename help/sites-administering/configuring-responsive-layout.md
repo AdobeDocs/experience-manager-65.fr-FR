@@ -75,7 +75,7 @@ Ces tâches vous permettent d’afficher l’**émulateur** en responsive design
 
 Pour permettre à l’émulateur de prendre en charge vos pages, vous devez enregistrer vos composants Page. Voir [Enregistrement de composants de page en vue de la simulation](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
 
-### Spécification des groupes d’appareils  {#specify-the-device-groups}
+### Spécification des groupes d’appareils {#specify-the-device-groups}
 
 Pour spécifier les groupes d’appareils qui s’affichent dans la liste des appareils de l’émulateur, voir [Définition des groupes de périphériques](/help/sites-developing/responsive.md#specifying-the-device-groups).
 
