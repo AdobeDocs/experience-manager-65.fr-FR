@@ -44,7 +44,7 @@ Les formats suivants sont pris en charge pour le composant vidéo Scene7 :
 * F4V H.264
 * MP4 H.264
 
-## Choix de l’emplacement du téléchargement de la vidéo  {#deciding-where-to-upload-your-video}
+## Choix de l’emplacement du téléchargement de la vidéo {#deciding-where-to-upload-your-video}
 
 Le choix de l’emplacement du téléchargement du contenu vidéo dépend des éléments suivants :
 
