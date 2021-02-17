@@ -24,7 +24,7 @@ AEM (et, avant cela, CQ) applique depuis longtemps déjà le principe des incrus
 
 Recouvrement est un terme qui peut être utilisé dans de nombreux contextes. Dans ce contexte, l’incrustation désigne l’utilisation de la fonctionnalité prédéfinie et l’application de vos propres définitions par-dessus (afin de personnaliser la fonctionnalité standard).
 
-Dans une instance standard, la fonctionnalité prédéfinie est conservée sous `/libs` et il est recommandé de définir votre recouvrement (personnalisations) sous la branche `/apps`. aem utilise un chemin de recherche pour trouver une ressource, recherchant d&#39;abord la branche `/apps` puis la branche `/libs` (le chemin de recherche [peut être configuré](#configuring-the-search-paths)). Ce mécanisme signifie que votre incrustation (et les personnalisations qui y sont définies) est prioritaire.
+Dans une instance standard, la fonctionnalité prédéfinie est conservée sous `/libs` et il est recommandé de définir votre recouvrement (personnalisations) sous la branche `/apps`. AEM utilise un chemin de recherche pour trouver une ressource, recherchant d&#39;abord la branche `/apps` puis la branche `/libs` (le chemin de recherche [peut être configuré](#configuring-the-search-paths)). Ce mécanisme signifie que votre incrustation (et les personnalisations qui y sont définies) est prioritaire.
 
 Depuis AEM 6.0, des modifications ont été effectuées sur le plan de la mise en œuvre et de l’utilisation des incrustations :
 
@@ -73,7 +73,7 @@ Il est conseillé de recourir aux incrustations pour de nombreuses modifications
 
 * Elles centralisent vos modifications dans un seul emplacement ; cela facilite le suivi, la migration, la sauvegarde et/ou le débogage de vos modifications, suivant les besoins.
 
-## Configuration des chemins de recherche  {#configuring-the-search-paths}
+## Configuration des chemins de recherche {#configuring-the-search-paths}
 
 Dans le cas des incrustations, la ressource diffusée est un regroupement des ressources et propriétés récupérées, en fonction des chemins de recherche qui peuvent être définis :
 
