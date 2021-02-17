@@ -111,7 +111,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    >Une suppression d’un élément composite ou de collection avec des nœuds enfant supprime également les nœuds enfant.
 
 1. (Facultatif) Sélectionnez un élément dans le volet Structure du dictionnaire de données et dans le volet Liste des champs et des variables. Modifiez ou ajoutez n’importe quels attributs requis associés à l’élément.
-1. Appuyez sur **Save** (Enregistrer).
+1. Appuyez sur **Enregistrer**.
 
 ### Créer des copies d’un ou de plusieurs dictionnaires de données {#create-copies-of-one-or-more-data-dictionary}
 
@@ -207,7 +207,7 @@ Par la suite, lorsque vous prévisualisation une lettre normalement (non personn
 
 Les exemples de code suivants illustrent les détails d’implémentation pour le Dictionnaire de données.
 
-### Exemple de schéma pouvant être chargé dans le Dictionnaire de données  {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
+### Exemple de schéma pouvant être chargé dans le Dictionnaire de données {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
