@@ -45,7 +45,7 @@ Vous avez besoin d’une clé privée et d’un certificat public pour les insta
 * Les certificats doivent être contenus au format pkcs#12 ou JKS. En outre, le certificat contenu dans le format « CER » peut également être ajouté à Granite Truststore.
 * Les certificats peuvent être auto-signés ou signés par une autorité de certification reconnue.
 
-### Format JKS  {#jks-format}
+### Format JKS {#jks-format}
 
 Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java`keytool` ](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
 
