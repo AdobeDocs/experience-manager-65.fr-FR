@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '4532'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -301,7 +301,7 @@ Plusieurs ressources peuvent être disponibles pour différents produits. En gé
 
 Un catalogue regroupe des données sur les produits afin de faciliter la gestion et la présentation à l’acheteur. Généralement, un catalogue est structuré selon des attributs comme la langue, la région géographique, la marque, la saison, le centre d’intérêt, le sport, etc.
 
-### Structure de catalogue  {#catalog-structure}
+### Structure de catalogue {#catalog-structure}
 
 #### Catalogues multilingues {#catalogs-in-multiple-languages}
 
@@ -594,7 +594,7 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
 >
 >Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Le contenu marketing spécifique à une promotion (bannières, etc.) ne fait pas partie de la promotion Hybris.
 
-## Personnalisation   {#personalization}
+## Personnalisation  {#personalization}
 
 ### Enregistrement et comptes des clients {#customer-registration-and-accounts}
 
