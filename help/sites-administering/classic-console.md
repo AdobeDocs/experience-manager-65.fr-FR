@@ -68,14 +68,14 @@ par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging)
    * Sélectionnez **Créer**.
 
 
-## Modification de balises  {#editing-tags}
+## Modification de balises {#editing-tags}
 
 1. Dans le volet de droite, sélectionnez la balise à modifier.
 1. Cliquez sur **Modifier**.
 1. Vous pouvez modifier le **Titre** et la **Description**.
 1. Cliquez sur **Enregistrer** pour fermer la boîte de dialogue.
 
-## Suppression de tags  {#deleting-tags}
+## Suppression des balises {#deleting-tags}
 
 1. Dans le volet de droite, sélectionnez la balise à supprimer.
 1. Cliquez sur **Supprimer**.
