@@ -341,13 +341,13 @@ ProblèmeLorsque  [!DNL Adobe Sign] le service est configuré pour un formulaire
 
 **Résolution**
 
-* Vérifiez la configuration [du service cloud Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md) utilisé dans le formulaire adaptatif.
+* Vérifiez la [configuration du service cloud Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md) utilisé dans le formulaire adaptatif.
 * Assurez-vous que l’application d’API sur le serveur [!DNL Adobe Sign] utilisé pour configurer le service [!DNL Adobe Sign] Cloud dispose des autorisations requises.
 * Si vous utilisez plusieurs services [!DNL Adobe Sign] Cloud, pointez l’**[!UICONTROL URL d’authentification]** de tous les services vers le même **[!UICONTROL Adobe Sign Shard]**.
 
 * Utilisez des adresses électroniques distinctes pour configurer le compte [!DNL Adobe Sign] et pour le premier signataire et le signataire unique. L’adresse électronique du premier signataire ou du seul signataire (dans le cas du signataire unique) ne peut pas être identique au compte [!DNL Adobe Sign] utilisé pour configurer les services cloud AEM.
 
-### aem processus [!DNL Forms] configuré pour un formulaire adaptatif [!DNL Adobe Sign] activé ne début pas {#adobe-sign-aem-form-workflow-failures}
+### AEM processus [!DNL Forms] configuré pour un formulaire adaptatif [!DNL Adobe Sign] activé ne début pas {#adobe-sign-aem-form-workflow-failures}
 
 ****
 ProblèmeLorsque  [!DNL Adobe Sign] est configuré pour un formulaire adaptatif, le processus configuré à l’aide de l’option Appeler un  [!DNL Forms] flux de travail ne s’début pas.
