@@ -32,7 +32,7 @@ Pour activer le filigrane dans la prévisualisation PDF, sélectionnez l&#39;opt
 
 Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’apparence du filigrane :
 
-## Personnalisation du filigrane dans l’aperçu PDF dans l’interface utilisateur de création de correspondance  {#customizewatermark-}
+## Personnalisation du filigrane dans l’aperçu PDF dans l’interface utilisateur de création de correspondance {#customizewatermark-}
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 1. Dans le dossier d’applications, créez un dossier nommé **[!UICONTROL previewwatermark]** avec un chemin/une structure similaires au dossier previewwatermark dans le dossier libs :
