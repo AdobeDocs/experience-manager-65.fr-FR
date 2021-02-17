@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# Ouverture d’une tâche  {#opening-a-task}
+# Ouverture d’une tâche {#opening-a-task}
 
 Si l’application AEM Forms se synchronise avec un serveur AEM Forms, vous pouvez travailler avec des tâches qui vous sont assignées. Les tâches sont des étapes du flux de travail défini dans le Workbench ou dans l’éditeur de flux de travail AEM.
 
