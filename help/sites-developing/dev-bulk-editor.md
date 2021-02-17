@@ -22,7 +22,7 @@ ht-degree: 65%
 
 Cette section explique comment développer l’outil d’éditeur en masse et comment étendre le composant Liste de produits, lui-même basé sur l’éditeur en masse.
 
-## Paramètres de requête de l’éditeur en masse  {#bulk-editor-query-parameters}
+## Paramètres de requête de l’éditeur en masse {#bulk-editor-query-parameters}
 
 Lorsque vous travaillez avec l’éditeur en masse, plusieurs paramètres de requête peuvent être ajoutés à l’URL pour appeler l’éditeur en masse avec une configuration spécifique. Pour que l’éditeur en masse soit toujours utilisé avec une certaine configuration, par exemple, comme dans le composant Liste de produits, vous devez modifier bulkeditor.jsp (situé dans /libs/wcm/core/components/bulkeditor) ou créer un composant avec la configuration spécifique. Les modifications apportées à l’aide des paramètres de requête ne sont pas permanentes.
 
