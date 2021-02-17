@@ -30,7 +30,7 @@ Cette section traite du développement de composants à utiliser avec le ciblage
 >
 >Lorsque vous ciblez un composant dans le mode Auteur AEM, il effectue une série d’appels côté serveur vers Adobe Target afin d’enregistrer la campagne, de configurer des offres et de récupérer des segments Adobe Target (si cela est configuré). Aucun appel côté serveur n’est effectué depuis le mode Publication AEM vers Adobe Target.
 
-## Activation du ciblage avec Adobe Target sur vos pages  {#enabling-targeting-with-adobe-target-on-your-pages}
+## Activation du ciblage avec Adobe Target sur vos pages {#enabling-targeting-with-adobe-target-on-your-pages}
 
 Pour utiliser des composants ciblés dans vos pages qui interagissent avec Adobe Target, incluez du code client spécifique dans l’élément &lt;head>.
 
@@ -127,7 +127,7 @@ La fonctionnalité de Cible côté client est gérée par l&#39;objet `CQ_Analyt
  </div>
 ```
 
-Le JSP ajoute les objets javascript d’analyse requis et les références aux bibliothèques javascript côté client. Le fichier testandtarget.js contient les fonctions mbox.js. Le code HTML généré par le script est similaire à l’exemple suivant :
+Le JSP ajoute les objets javascript d’analyse requis et les références aux bibliothèques JavaScript côté client. Le fichier testandtarget.js contient les fonctions mbox.js. Le code HTML généré par le script est similaire à l’exemple suivant :
 
 ```xml
 <script type="text/javascript">
