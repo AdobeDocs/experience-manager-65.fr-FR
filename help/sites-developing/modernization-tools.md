@@ -18,10 +18,10 @@ ht-degree: 72%
 
 [Les outils de modernisation d’AEM permettent de convertir facilement :](http://opensource.adobe.com/aem-modernize-tools/)
 
-* [](page-templates-static.md)Les modèles statiques en modèles modifiables[](page-templates-editable.md)
-* [](page-templates-static.md)Les configurations de la conception en stratégies[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)Les composants de base en composants principaux[](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [](website.md)L’interface utilisateur classique en interface utilisateur tactile[](touch-ui-concepts.md)
+* [](page-templates-static.md)[Les modèles statiques en modèles modifiables](page-templates-editable.md)
+* [](page-templates-static.md)[Les configurations de la conception en stratégies](page-templates-editable.md)
+* [](/help/sites-authoring/default-components-foundation.md)[Les composants de base en composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+* [](website.md)[L’interface utilisateur classique en interface utilisateur tactile](touch-ui-concepts.md)
 
 Pour plus d’informations sur l’utilisation de ces outils, [voir leur documentation](http://opensource.adobe.com/aem-modernize-tools/).
 
