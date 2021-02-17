@@ -60,7 +60,7 @@ Le site Web d’Adobe Developer contient les articles suivants traitant de l’
 
 [Création d’une application Web Java qui appelle un processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md)
 
-## Inclusion des fichiers de bibliothèque Java d’AEM Forms  {#including-aem-forms-java-library-files}
+## Inclusion des fichiers de bibliothèque Java d’AEM Forms {#including-aem-forms-java-library-files}
 
 Pour appeler un service AEM Forms par programmation à l’aide de l’API Java, incluez les fichiers de bibliothèque requis (fichiers JAR) dans le chemin d’accès aux classes de votre projet Java. Les fichiers JAR que vous incluez dans le chemin d’accès aux classes de votre application client dépendent de plusieurs facteurs :
 
