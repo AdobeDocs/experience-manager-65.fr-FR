@@ -23,7 +23,7 @@ ht-degree: 71%
 
 Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](../../forms/using/create-your-first-adaptive-form.md). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
-## À propos du didacticiel  {#about-the-tutorial}
+## À propos du didacticiel {#about-the-tutorial}
 
 Le module d&#39;intégration des données [!DNL Forms] permet de créer un modèle de données de formulaire à partir de sources de données dorsales disparates, telles que le profil d&#39;utilisateurs AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet du modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
 
@@ -89,7 +89,7 @@ Procédez comme suit pour configurer votre base de données [!DNL MySQL] :
 
 ## Étape 2 : Créer un modèle de données de formulaire {#create-fdm}
 
-aem [!DNL Forms] fournit une interface utilisateur intuitive pour [créer un modèle de données de formulaire](data-integration.md) à partir de sources de données configurées. Vous pouvez utiliser plusieurs sources de données dans un modèle de données de formulaire. Pour notre cas d&#39;utilisation, nous utiliserons la source de données [!DNL MySQL] configurée.
+AEM [!DNL Forms] fournit une interface utilisateur intuitive pour [créer un modèle de données de formulaire](data-integration.md) à partir de sources de données configurées. Vous pouvez utiliser plusieurs sources de données dans un modèle de données de formulaire. Pour notre cas d&#39;utilisation, nous utiliserons la source de données [!DNL MySQL] configurée.
 
 Procédez comme suit pour créer un modèle de données de formulaire :
 
