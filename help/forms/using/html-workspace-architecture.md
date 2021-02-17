@@ -18,7 +18,7 @@ ht-degree: 81%
 ---
 
 
-# Architecture de l’espace de travail AEM Forms  {#aem-forms-workspace-architecture}
+# Architecture de l’espace de travail AEM Forms {#aem-forms-workspace-architecture}
 
 L’espace de travail AEM Forms est une application Web hébergée sur CRX™. Lorsque l’espace de travail est ouvert dans un navigateur, une ressource CRX est appelée et l’application est rendue en tant que page HTML dans le navigateur.
 
@@ -36,4 +36,4 @@ L’espace de travail AEM Forms est conçu en composants modulaires JavaScript�
 Packages fournis pour l’espace de travail AEM Forms :
 
 * `adobe-lc-workspace-pkg-<version>.zip` : il s’agit du package CRX, c’est-à-dire qu’il peut être déployé dans CRX en utilisant Package Manager.
-* `adobe-lc-workspace-<version>-src.zip`: Il s’agit d’une archive contenant le code complet de l’espace de travail AEM Forms et les scripts permettant de créer les packs de déploiement (Ship, Debug et Dev).
+* `adobe-lc-workspace-<version>-src.zip`: Il s’agit d’une archive qui contient le code complet de l’espace de travail AEM Forms et des scripts pour créer les packs de déploiement (Ship, Debug et Dev).
