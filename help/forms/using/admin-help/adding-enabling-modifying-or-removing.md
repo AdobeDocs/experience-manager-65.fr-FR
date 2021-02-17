@@ -43,7 +43,7 @@ Vous ne pouvez ajouter des points de fin qu’à des services. Un point de fin n
 
 1. Cliquez sur Ajouter.
 
-## Activation ou désactivation d’un point de fin  {#enable-or-disable-an-endpoint}
+## Activation ou désactivation d’un point de fin {#enable-or-disable-an-endpoint}
 
 Par défaut, les nouveaux points de fin sont automatiquement activés. Cependant, si vous en désactivez un, vous devez le réactiver pour qu’il soit opérationnel.
 
