@@ -10,10 +10,10 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: cacf15a4e9c407d86aef47d7a6dda19e8eda7fb7
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 63%
+source-wordcount: '1639'
+ht-degree: 59%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 63%
 MSM est une structure configurable pour automatiser le déploiement de contenu. Les mises en œuvre impliquent souvent des parties importantes d’un site web, ainsi que plusieurs organisations et zones géographiques. Il est donc vivement recommandé de planifier les mises en œuvre MSM avec autant d’attention que lorsque vous planifiez votre site web :
 
 * Soigneusement **planifier la structure et les flux de contenu** avant de commencer la mise en oeuvre.
+* **Le nombre de copies en direct doit être réduit au minimum.** Le traitement des copies en direct est une tâche gourmande en ressources. Plus le système contient de copies dynamiques, plus les performances peuvent être affectées : depuis le traitement des index internes de copie dynamique, sur les opérations de copie dynamique telles que les déploiements, jusqu&#39;aux opérations de l&#39;interface utilisateur telles que l&#39;affichage des relations de copie dynamique dans le rail des références des sites par l&#39;administrateur. Il est recommandé de créer des copies en direct des sites ou des branches d&#39;un site, où les relations de copie en direct sont héritées des pages du site ou de la branche. Evitez de créer des copies dynamiques individuelles pour les pages d&#39;un site ou d&#39;une branche lorsque l&#39;ensemble de la structure peut être transformé en copie dynamique.
 * **Personnalisez autant que nécessaire, mais le moins possible.** Bien que MSM prenne en charge un haut degré de personnalisation (par exemple, les configurations de déploiement), la meilleure pratique pour les performances, la fiabilité et la mise à niveau de votre site Web consiste à minimiser la personnalisation.
 * Établir rapidement un modèle de **gouvernance** et former les utilisateurs en conséquence afin d&#39;assurer la réussite. Une bonne pratique d&#39;un point de vue de gouvernance consiste à **réduire au minimum l&#39;autorité dont disposent les producteurs de contenu locaux** pour allouer/connecter du contenu à d&#39;autres utilisateurs locaux et leurs copies en direct respectives. En effet, les héritages enchaînés et non gouvernés peuvent considérablement accroître la complexité d&#39;une structure de gestion multivariée et compromettre ses performances et sa fiabilité.
 
