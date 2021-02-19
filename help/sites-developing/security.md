@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea4de28525ec4c2094e84d98aad6a518b03f011e
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 76%
@@ -24,7 +24,7 @@ La sécurité des applications débute lors de la phase de développement. Adobe
 
 ## Utilisation de la session de requête {#use-request-session}
 
-Conformément au principe des privilèges allégés, l&#39;Adobe recommande que chaque accès au référentiel soit effectué en utilisant la session liée à la demande de l&#39;utilisateur et au contrôle d&#39;accès approprié.
+Conformément au principe des privilèges les moins élevés, l&#39;Adobe recommande que chaque accès au référentiel soit effectué en utilisant la session liée à la demande de l&#39;utilisateur et au contrôle d&#39;accès approprié.
 
 ## Protection contre les scripts de site à site (XSS) {#protect-against-cross-site-scripting-xss}
 
