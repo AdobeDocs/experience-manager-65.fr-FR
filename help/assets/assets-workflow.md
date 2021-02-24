@@ -3,9 +3,9 @@ title: Traiter les actifs à l’aide de workflows
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '961'
 ht-degree: 27%
 
 ---
@@ -106,5 +106,4 @@ Pour un modèle de processus, les utilisateurs peuvent créer un lanceur de proc
 >* [Créer des modèles de processus et étendre les fonctionnalités de processus](/help/sites-developing/workflows.md)
 >* [Méthodes d’exécution des workflows](/help/sites-administering/workflows-starting.md)
 >* [Meilleures pratiques de flux de travaux](/help/sites-developing/workflows-best-practices.md)
->* [Article de la communauté sur la modification d’une ressource à l’aide du processus](https://helpx.adobe.com/fr/experience-manager/using/modify_asset_workflow.html)
 
