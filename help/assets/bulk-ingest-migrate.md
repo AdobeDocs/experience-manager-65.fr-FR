@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 24%
+source-wordcount: '392'
+ht-degree: 23%
 
 ---
 
@@ -37,7 +37,7 @@ Voir aussi [Configuration du mode Dynamic Media - Scene7](/help/assets/config-dm
 
 1. Dans votre instance AEM, sélectionnez **[!UICONTROL Outils > Sécurité > Utilisateurs]** et sélectionnez **[!UICONTROL Créer un utilisateur]**. Cet utilisateur du service doit disposer des autorisations de *lecture/écriture* sur `/content/dam.`
 1. Dans les champs **[!UICONTROL ID]** et **[!UICONTROL Mot de passe]**, saisissez un nom d’utilisateur et un mot de passe ; par exemple, **Utilisateur FTP**. Ce nom apparaît dans la chronologie en tant qu’utilisateur qui a créé cette ressource. Lorsqu’une ressource est transférée à partir du FTP, elle est considérée créée lorsqu’elle est transférée sur le serveur FTP et envoyée vers AEM.
-1. Contactez le service à la clientèle [Adobe Enterprise ](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) pour demander l’accès à Feature Pack 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l&#39;assistance :
+1. Contactez le service à la clientèle [Adobe Enterprise ](https://experienceleague.adobe.com/?support-solution=General#support) pour demander l’accès à Feature Pack 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l&#39;assistance :
 
    * Adresse IP du serveur de votre instance d’auteur, y compris le numéro de port (par défaut, le numéro de port est 4502).
    * AEM nom d’utilisateur et mot de passe du service de maintenance de l’étape précédente.
