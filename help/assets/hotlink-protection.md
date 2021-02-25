@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 33%
+source-wordcount: '196'
+ht-degree: 19%
 
 ---
 
@@ -24,4 +24,4 @@ La liaison rapide est le cas où un site Web tiers utilise du code HTML pour aff
 
 >[!NOTE]
 >
->La protection des liens chauds requiert que vous utilisiez le CDN fourni par Adobe. Pour activer la protection de lien dynamique, un administrateur doit créer un ticket de support afin de demander le changement de configuration à votre compte Dynamic Media. L&#39;activation de la protection des liens chauds n&#39;entraîne aucun coût supplémentaire.
+>Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre CDN personnalisé n’est pris en charge avec cette fonctionnalité. Pour activer la protection des liens à chaud, un administrateur doit créer un ticket d’assistance à la clientèle Adobe pour demander la modification de la configuration de votre compte Dynamic Media. L&#39;activation de la protection des liens chauds n&#39;entraîne aucun coût supplémentaire.
