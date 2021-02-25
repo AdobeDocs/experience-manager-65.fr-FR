@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1865'
 ht-degree: 3%
 
 ---
 
 
 # Assemblage de Portfolios PDF {#assembling-pdf-portfolios}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 Vous pouvez assembler un Portfolio PDF à l’aide de l’API Java et du service Web d’Assembler. Un portfolio peut combiner plusieurs documents de différents types, y compris des fichiers Word, des fichiers image (par exemple, un fichier jpeg) et des documents PDF. La mise en page du portefeuille peut être définie selon différents styles, tels que la *grille avec Prévisualisation*, la *mise en page Image* ou même la *révolution*.
 
