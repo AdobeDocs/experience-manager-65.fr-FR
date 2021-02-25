@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1876'
 ht-degree: 55%
 
 ---
@@ -24,7 +24,7 @@ La technologie Smart Imaging applique les fonctionnalités d’IA Adobe Sensei e
 
 >[!NOTE]
 >
->Les clients doivent utiliser le réseau CDN (Content Deliver Network) fourni avec Adobe Experience Manager pour bénéficier de l’imagerie intelligente.
+>Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
 L’imagerie dynamique tire également parti de sa parfaite intégration dans un service de réseau de diffusion de contenu haut de gamme proposé par Adobe afin d’offrir un gain de performance accru. Ce service trouve la route Internet optimale entre les serveurs, les réseaux et les points d’écoute. Il trouve un itinéraire présentant la latence la plus faible et le taux de perte de paquets le plus faible au lieu d&#39;utiliser l&#39;itinéraire par défaut sur Internet.
 
