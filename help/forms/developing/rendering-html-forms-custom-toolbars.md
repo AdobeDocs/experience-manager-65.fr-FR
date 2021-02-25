@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2384'
 ht-degree: 1%
 
 ---
 
 
 # Rendu de HTML Forms avec des barres d’outils personnalisées {#rendering-html-forms-with-customtoolbars}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 ## Rendu de HTML Forms avec des barres d’outils personnalisées {#rendering-html-forms-with-custom-toolbars}
 
@@ -52,7 +54,7 @@ Vous pouvez également spécifier les emplacements absolus de ces fichiers JS et
 
 >[!NOTE]
 >
->Il n’est pas recommandé de mélanger les méthodes de référencement de ces fichiers. En d’autres termes, tous les URI doivent être référencés à l’aide du mot-clé `FSToolBarURI` ou d’un emplacement absolu.
+>Il n’est pas recommandé de mélanger les méthodes de référencement de ces fichiers. Autrement dit, tous les URI doivent être référencés à l&#39;aide du mot-clé `FSToolBarURI` ou d&#39;un emplacement absolu.
 
 Vous pouvez obtenir les fichiers JS et CSS en ouvrant le fichier adobe-forms-&lt;serveur d’applications>.ear. Dans ce fichier, ouvrez le fichier adobe-forms-res.war. Tous ces fichiers se trouvent dans le fichier WAR. Le fichier adobe-forms-&lt;serveur d’applications>.ear se trouve dans le dossier d’installation AEM forms (C:\ is the installation directory). Vous pouvez ouvrir le fichier adobe-forms-&lt;serveur d’applications>.ear à l’aide d’un outil d’extraction de fichiers tel que WinRAR.
 
