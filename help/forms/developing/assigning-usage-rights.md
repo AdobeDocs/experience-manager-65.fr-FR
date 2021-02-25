@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '3937'
+source-wordcount: '3951'
 ht-degree: 7%
 
 ---
 
 
 # Attribution des droits d&#39;utilisation {#assigning-usage-rights}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 ## À propos du service des extensions Acrobat Reader DC {#about-the-acrobat-reader-dc-extensions-service}
 
@@ -393,7 +395,7 @@ Après avoir récupéré un document PDF doté de droits, vous pouvez obtenir de
 * Date à laquelle les informations d’identification ne sont plus valides.
 * Date avant laquelle les informations d’identification ne sont pas valides.
 * Droits d’utilisation définis pour ce document PDF dont les droits sont activés.
-* Nombre d’utilisation des informations d’identification.
+* Nombre d’utilisations des informations d’identification.
 
 **Voir également**
 
