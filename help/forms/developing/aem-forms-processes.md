@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 3%
+source-wordcount: '807'
+ht-degree: 2%
 
 ---
 
 
 # Présentation des processus AEM Forms {#understanding-aem-forms-processes}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 Un cas d&#39;utilisation courant est qu&#39;un ensemble de services AEM Forms fonctionne sur un seul document. Vous pouvez envoyer une demande au conteneur de services en créant un processus à l’aide de Workbench. Un processus représente un processus d’entreprise que vous automatisez. Pour plus d’informations sur la création de processus, voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
