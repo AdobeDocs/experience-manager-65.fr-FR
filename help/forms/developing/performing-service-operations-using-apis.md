@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fa1426f-f453-45c5-89b9-67038f56c70e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
 
 
 # Exécution d’opérations de service à l’aide d’API {#performing-service-operations-using-apis}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 Avant de début le développement d’applications clientes à l’aide des API AEM Forms, il est recommandé de lire d’abord Invoking AEM Forms, qui décrit les différentes manières d’appeler les services. (Voir [conteneur de service](/help/forms/developing/service-container.md#service-container).)
 
