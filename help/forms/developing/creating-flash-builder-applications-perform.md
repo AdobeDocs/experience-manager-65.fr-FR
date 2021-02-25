@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1839'
 ht-degree: 0%
 
 ---
 
 
 # Création d’applications de Flash Builder qui effectuent une authentification SSO à l’aide de jetons HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 Vous pouvez créer une application cliente à l’aide d’un Flash Builder qui effectue l’authentification par authentification unique (SSO) à l’aide de jetons HTTP. Supposons, par exemple, que vous créiez une application Web à l’aide du Flash Builder. Supposons ensuite que l’application contient différentes vues, où chaque vue appelle une opération AEM Forms différente. Au lieu d’authentifier un utilisateur pour chaque opération Forms, vous pouvez créer une page de connexion qui permet à un utilisateur de s’authentifier une fois. Une fois authentifié, un utilisateur peut appeler plusieurs opérations sans avoir à s’authentifier à nouveau. Par exemple, si un utilisateur s’est connecté à Workspace (ou à une autre application Forms), il n’aurait pas besoin de s’authentifier à nouveau.
 
