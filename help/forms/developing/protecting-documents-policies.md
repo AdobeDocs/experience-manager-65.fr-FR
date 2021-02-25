@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '15544'
+source-wordcount: '15558'
 ht-degree: 4%
 
 ---
@@ -20,11 +20,13 @@ ht-degree: 4%
 
 # Protection des Documents avec des stratégies {#protecting-documents-with-policies}
 
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
+
 **À propos du service de sécurité Document**
 
 Le service Document Security permet aux utilisateurs d&#39;appliquer de manière dynamique des paramètres de confidentialité aux documents Adobe PDF et de garder le contrôle sur les documents, quelle que soit leur diffusion.
 
-Le service Document Security empêche la diffusion des informations au-delà de la portée de l’utilisateur en permettant à ce dernier de contrôler la manière dont les destinataires utilisent le document PDF protégé par une stratégie. Un utilisateur peut spécifier qui peut ouvrir un document, comment l’utiliser et contrôler le document après sa distribution. Un utilisateur peut également contrôler dynamiquement l’accès à un document protégé par une stratégie et peut même révoquer dynamiquement l’accès au document.
+Le service Document Security empêche la diffusion des informations au-delà de la portée de l’utilisateur en permettant à ce dernier de contrôler la manière dont les destinataires utilisent le document PDF protégé par une stratégie. Un utilisateur peut spécifier qui peut ouvrir un document, comment l’utiliser et contrôler le document une fois distribué. Un utilisateur peut également contrôler dynamiquement l’accès à un document protégé par une stratégie et peut même révoquer dynamiquement l’accès au document.
 
 Le service Document Security protège également d&#39;autres types de fichiers tels que les fichiers Microsoft Word (fichiers DOC). Vous pouvez utiliser l&#39;API du client Document Security pour utiliser ces types de fichiers. Les versions suivantes sont prises en charge :
 
@@ -328,7 +330,7 @@ Vous pouvez modifier une stratégie existante à l’aide de l’API Java Docume
 
 Vous pouvez modifier une stratégie lorsque les besoins de l’entreprise changent et que la stratégie ne reflète plus ces besoins. Au lieu de créer une nouvelle stratégie, vous pouvez simplement mettre à jour une stratégie existante.
 
-Pour modifier les attributs de stratégie à l’aide d’un service Web (par exemple, à l’aide de classes proxy Java créées avec JAX-WS), vous devez vous assurer que la stratégie est enregistrée auprès du service Document Security. Vous pouvez ensuite référencer la stratégie existante à l’aide de la méthode `PolicySpec.getPolicyXml` et modifier les attributs de la stratégie à l’aide des méthodes applicables. Par exemple, vous pouvez modifier la période d’ouverture hors connexion en appelant la méthode `PolicySpec.setOfflineLeasePeriod`.
+Pour modifier les attributs de stratégie à l’aide d’un service Web (par exemple, à l’aide de classes proxy Java créées avec JAX-WS), vous devez vous assurer que la stratégie est enregistrée auprès du service Document Security. Vous pouvez ensuite référencer la stratégie existante à l&#39;aide de la méthode `PolicySpec.getPolicyXml` et modifier les attributs de la stratégie à l&#39;aide des méthodes applicables. Par exemple, vous pouvez modifier la période d’ouverture hors connexion en appelant la méthode `PolicySpec.setOfflineLeasePeriod`.
 
 >[!NOTE]
 >
