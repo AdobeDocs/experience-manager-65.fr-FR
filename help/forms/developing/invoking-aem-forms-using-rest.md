@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2520'
 ht-degree: 4%
 
 ---
 
 
 # Appeler AEM Forms à l’aide de requêtes REST {#invoking-aem-forms-using-rest-requests}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 les processus créés dans Workbench peuvent être configurés pour être invoqués via des demandes REST (Representational State Transfer). Ces demandes sont envoyées à partir de pages HTML. En d’autres termes, vous pouvez appeler un processus Forms directement à partir d’une page Web à l’aide d’une requête REST. Par exemple, vous pouvez ouvrir une nouvelle instance d’une page Web. Ensuite, vous pouvez appeler un processus Forms et charger un document PDF rendu avec des données qui ont été envoyées dans une demande de POST HTTP.
 
