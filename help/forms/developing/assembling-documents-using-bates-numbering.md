@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1941'
 ht-degree: 5%
 
 ---
 
 
 # Assemblage de Documents à l’aide de la numérotation Bates {#assembling-documents-using-bates-numbering}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 Vous pouvez assembler des documents PDF contenant des identifiants de page uniques à l’aide de la numérotation Bates. *La* numérotation Bates est une méthode permettant d&#39;appliquer des identifiants uniques à un lot de documents connexes. Chaque page du document (ou jeu de documents) se voit attribuer un numéro Bates qui identifie de manière unique la page. Par exemple, des documents d’entreprise contenant une nomenclature et liés à la production d’un assemblage peuvent contenir un identifiant. Un numéro Bates contient une valeur numérique incrémentée séquentiellement et optionnellement un préfixe et un suffixe. Le préfixe + suffixe numérique + est appelé modèle *bates*.
 
