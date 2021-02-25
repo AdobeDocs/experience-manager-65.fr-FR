@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: b4795930c87fa30d7c7ab60a50bc6f40da4f97d2
+source-git-commit: c3fddf28c0f2f5377fff7561d29f073cc847c3ca
 workflow-type: tm+mt
-source-wordcount: '6418'
+source-wordcount: '6450'
 ht-degree: 84%
 
 ---
@@ -19,7 +19,13 @@ ht-degree: 84%
 
 # Utilisation des Services de document AEM par programmation  {#using-aem-document-services-programmatically}
 
-Les exemples et exemples de ce document vous aident à comprendre et à utiliser AEM Document Services sur un environnement AEM Forms sur OSGi. Pour des exemples et des exemples pour l’environnement AEM Forms on JEE, voir [Programmation avec AEM Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee).
+Les exemples et exemples de ce document vous aident à comprendre et à utiliser AEM Document Services sur un environnement AEM Forms sur OSGi. Pour consulter des exemples et des exemples pour l’environnement AEM Forms on JEE, voir
+
+* [Début rapide de l’API Java du service Signature](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+
+* [Début rapide de l’API Java du service Encryption](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+
+* [début rapide de l’API Java du service d’extensions Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
 
 ## Condition requise {#prerequisite}
 
