@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2588'
 ht-degree: 2%
 
 ---
 
 
 # Assemblage de Documents PDF avec des signets {#assembling-pdf-documents-with-bookmarks}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 Vous pouvez assembler un document PDF contenant des signets. Par exemple, supposons que vous disposez d’un document PDF qui ne contient pas de signets et que vous souhaitez le modifier en fournissant des signets. Le service Assembler vous permet de lui transmettre un document PDF qui ne contient pas de signets et de récupérer un document PDF contenant des signets.
 
