@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 
 # Présentation du Début rapide API Java {#introducing-java-api-quickstart}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 Le Début rapide de l’API AEM Forms Adobe peut vous aider à accélérer vos efforts pour développer des programmes qui interagissent avec les services AEM Forms. *Les* Débuts rapides sont des programmes complets que vous pouvez copier et coller dans vos propres projets et utiliser comme point de départ. Vous pouvez exécuter un Début rapide pour voir comment il se comporte et le modifier en fonction de vos besoins.
 
