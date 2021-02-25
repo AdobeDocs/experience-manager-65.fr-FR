@@ -2,15 +2,17 @@
 title: Création d’un gestionnaire d’invitation d’utilisateurs externes
 description: Création d’un gestionnaire d’invitation d’utilisateurs externes
 translation-type: tm+mt
-source-git-commit: 92e5cc0b1934dad641357a22894e70a3660b774a
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1116'
 ht-degree: 1%
 
 ---
 
 
 # Création d&#39;un gestionnaire d&#39;invitation d&#39;utilisateurs externes {#create-invite-external-users-handler}
+
+**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
 
 Vous pouvez créer un gestionnaire d’invitation d’utilisateurs externes pour le service de Rights Management. Un gestionnaire d’invite d’utilisateurs externes permet au service de Rights Management d’inviter des utilisateurs externes à devenir des utilisateurs Rights Management. Lorsqu’un utilisateur devient un utilisateur Rights Management, il peut effectuer des tâches, telles que l’ouverture d’un document PDF protégé par une stratégie. Une fois que le gestionnaire d’invite d’utilisateurs externes est déployé dans AEM Forms, vous pouvez utiliser Administration Console pour interagir avec celui-ci.
 
