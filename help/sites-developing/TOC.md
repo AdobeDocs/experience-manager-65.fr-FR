@@ -106,7 +106,7 @@ ht-degree: 80%
       + [Introduction et présentation des SPA](spa-walkthrough.md)
       + [Tutoriel sur SPA WKND](spa-wknd.md)
       + [Prise en main des SPA dans AEM - Réagir](spa-getting-started-react.md)
-      + [Prise en main des SPA en AEM - Angular](spa-getting-started-angular.md)
+      + [Prise en main des SPA dans AEM - Angular](spa-getting-started-angular.md)
       + [Mise en oeuvre d’un composant de réaction pour SPA](spa-implementing-react-component.md)
       + [Immersion dans les SPA](spa-deep-dives.md)
       + [Aperçu de l’éditeur de SPA](spa-overview.md)
