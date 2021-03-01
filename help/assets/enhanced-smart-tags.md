@@ -3,10 +3,10 @@ title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
+source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 59%
+source-wordcount: '1597'
+ht-degree: 48%
 
 ---
 
@@ -19,7 +19,7 @@ Comparé aux vocabulaires des langages naturels, le balisage des ressources num�
 
 Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèles afin d’afficher uniquement les images appropriées lors de recherches d’images de différents modèles pour concevoir une campagne de promotion.
 
-Pour que le service de contenu dynamique applique les balises adéquates, vous devez l’entraîner à reconnaître votre taxonomie. Pour entraîner le service, regroupez tout d’abord un ensemble de ressources et de balises qui décrivent le mieux ces ressources. Appliquez ces balises sur les ressources et exécutez un workflow d’entraînement pour aider le service à apprendre.
+Pour que Smart Content Service applique les balises appropriées, entraînez-le à reconnaître votre taxonomie. Pour entraîner le service, regroupez tout d’abord un ensemble de ressources et de balises qui décrivent le mieux ces ressources. Pour aider le service à en savoir plus, appliquez ces balises aux ressources et exécutez un processus de formation.
 
 Une fois une balise entraînée et prête, le service peut appliquer ces balises sur les ressources par un workflow de balisage.
 
@@ -40,11 +40,11 @@ En résumé, voici les principales étapes pour utiliser le service de contenu d
 
 Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur [!DNL Adobe Developer Console]:
 
-* L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
-* Le service de contenu dynamique est activé pour votre organisation.
-* Le package de base Smart Content Services ne peut être ajouté qu’à un déploiement pour lequel un package de base [!DNL Adobe Experience Manager Sites] et un module complémentaire [!DNL Assets] ont reçu une licence.
+* Un compte Adobe ID doté de droits d’administrateur pour l’entreprise.
+* Activez le service Smart Content Service pour votre entreprise.
+* Pour ajouter le package de base Smart Content Services à un déploiement, autorisez les licences [!DNL Adobe Experience Manager Sites] Package de base et [!DNL Assets] module complémentaire.
 
-Les balises actives ne sont appliquées qu’aux ressources présentant les types MIME suivants :
+Le service applique les balises actives aux actifs des types MIME suivants :
 
 * image/jpeg
 * image/tiff
@@ -65,7 +65,7 @@ Les balises actives ne sont appliquées qu’aux ressources présentant les type
 * image/psd
 * image/vnd.adobe.photoshop
 
-Le balisage intelligent des rendus de ressources est pris en charge uniquement pour les types MIME suivants :
+Le service applique des balises actives aux rendus de ressources des types MIME suivants :
 
 * image/jpeg
 * image/pjpeg
@@ -152,7 +152,7 @@ Vous pouvez déclencher le processus de balisage à partir de la console de proc
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources.
+   Pour vérifier si Smart Content Service a balisé correctement vos ressources, accédez au dossier des ressources et passez en revue les balises.
 
 #### Balisage des ressources à partir de la chronologie {#tagging-assets-from-the-timeline}
 
@@ -163,7 +163,7 @@ Vous pouvez déclencher le processus de balisage à partir de la console de proc
    ![start_workflow](assets/start_workflow.png)
 
 1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]** et spécifiez un titre pour le workflow.
-1. Cliquez sur **[!UICONTROL Début]**. Le workflow applique vos balises aux ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources.
+1. Cliquez sur **[!UICONTROL Début]**. Le processus applique des balises aux ressources. pour vérifier si Smart Content Service a balisé correctement vos ressources, accédez au dossier de ressources et passez en revue les balises.
 
 >[!NOTE]
 >
@@ -171,16 +171,16 @@ Vous pouvez déclencher le processus de balisage à partir de la console de proc
 
 ## Traiter ou modérer les balises actives appliquées {#manage-smart-tags}
 
-Vous pouvez traiter les balises actives pour supprimer les balises inexactes qui ont pu être attribuées à vos images de marque afin que seules les balises les plus pertinentes s’affichent.
+Vous pouvez traiter les balises actives pour supprimer les balises inexactes attribuées aux images de votre marque afin que seules les balises les plus pertinentes soient affichées.
 
 La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaisse dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des images non pertinentes apparaissent dans les résultats de la recherche.
 
-Vous pouvez également attribuer un rang supérieur à une balise afin d’accroître son degré de pertinence par rapport à une image. La promotion d’une balise pour une image augmente les risques qu’une image apparaisse dans les résultats de la recherche lorsqu’une recherche est basée sur cette balise.
+Vous pouvez également attribuer un rang plus élevé à une balise pour accroître sa pertinence pour une image. La promotion d’une balise pour une image augmente les chances d’affichage de l’image dans les résultats de la recherche lorsque la balise particulière est recherchée.
 
-1. Dans l’encadré Omnisearch, recherchez des ressources sur la base d’une balise.
-1. Examinez les résultats de la recherche pour identifier une image que vous ne trouvez pas pertinente.
+1. Dans la zone de recherche, recherchez des ressources basées sur une balise en tant que mot-clé.
+1. Pour identifier une image que vous ne trouvez pas pertinente pour votre recherche, vérifiez les résultats de la recherche.
 1. Sélectionnez l’image, puis cliquez sur **[!UICONTROL Gérer les balises]** dans la barre d’outils.
-1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que l’image soit recherchée en fonction d’une balise spécifique, sélectionnez la balise, puis cliquez sur **[!UICONTROL Supprimer]** dans la barre d’outils. Vous pouvez également cliquer sur le symbole `x` qui s’affiche en regard d’une balise .
+1. Dans la page **[!UICONTROL Gérer les balises]**, passez en revue les balises. Si vous ne souhaitez pas que l’image soit recherchée en fonction d’une balise spécifique, sélectionnez la balise, puis cliquez sur **[!UICONTROL Supprimer]** dans la barre d’outils. Vous pouvez également cliquer sur le symbole `x` qui s’affiche en regard d’une balise .
 1. Si vous le souhaitez, sélectionnez la balise et cliquez sur **[!UICONTROL Promouvoir]** dans la barre d’outils. La balise objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]**.
 1. Accédez à la page **[!UICONTROL Propriétés]** de l&#39;image. Observez que la balise que vous avez promue se voit attribuer plus de pertinence et apparaît plus tôt dans les résultats de la recherche.
