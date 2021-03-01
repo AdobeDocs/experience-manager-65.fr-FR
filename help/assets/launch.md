@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1f40c099518bc9d296026d8cfac5b6291e41a846
+source-git-commit: 02937bb85792e2ae9dcdeee3b860f800812a4461
 workflow-type: tm+mt
-source-wordcount: '6634'
+source-wordcount: '6627'
 ht-degree: 50%
 
 ---
@@ -25,7 +25,7 @@ Cette intégration signifie que vous pouvez suivre l’utilisation des visionneu
 
 Pour en savoir plus sur les extensions, voir [Adobe Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) dans le Guide de l’utilisateur Experience Platform Launch.
 
-**Destinée à :administrateurs** du site, développeurs sur la plate-forme des Experience Manager et personnes participant aux opérations.
+**Cette rubrique est destinée aux administrateurs de** site, aux développeurs de la plate-forme des Experience Manager et aux personnes participant aux opérations.
 
 ### Restrictions de l’intégration {#limitations-of-the-integration}
 
@@ -260,7 +260,7 @@ La méthode la plus simple consiste à effectuer le processus en deux étapes :
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement Dynamic Media Viewer. Entrez le nom complet de l’argument événement dans le champ d’entrée **[!UICONTROL value]** de l’affectation de variable Analytics. Assurez-vous de l&#39;entourer de signes de pourcentage (%). Par exemple :
+Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement Dynamic Media Viewer. Entrez le nom complet de l’argument événement dans le champ d’entrée **[!UICONTROL value]** de l’affectation de variable Analytics. Veillez à l’entourer de signes de pourcentage (%). Par exemple :
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -405,7 +405,7 @@ Le tableau suivant répertorie les événements de visionneuse Dynamic Media et
 
 **AVANT DE COMMENCER**
 
-Si vous ne l’avez pas déjà fait, l’Adobe vous conseille de passer en revue l’ensemble de la documentation avant cette section afin de comprendre l’intégration complète.
+Adobe vous recommande de passer en revue l’ensemble de la documentation avant cette section afin de comprendre l’intégration complète.
 
 Cette section décrit les étapes de configuration nécessaires pour intégrer des visionneuses Dynamic Media à Adobe Analytics et Adobe Analytics for Audio and Video. Bien que l’utilisation de l’extension Dynamic Media Viewers à d’autres fins dans l’Experience Platform Launch soit possible, de tels scénarios ne sont pas traités dans cette documentation.
 
@@ -468,7 +468,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
    Pour activer une nouvelle variable Trafic personnalisé, en Adobe Analytics, dans la barre d’outils, cliquez sur **[!UICONTROL Admin > Report Suites]**.
 
 1. Sur la page **[!UICONTROL Gestionnaire de Report Suites]**, sélectionnez le rapport approprié, puis dans la barre d’outils, cliquez sur **[!UICONTROL Modifier les paramètres > Trafic > Variables de trafic]**.
-1. Là, sélectionnez une variable inutilisée, donnez-lui un nom descriptif ( **[!UICONTROL Fichier de visionneuse (prop 30)]**) et remplacez la zone de liste déroulante par &quot;Activé&quot; dans la colonne Activé.
+1. Sélectionnez une variable inutilisée, donnez-lui un nom descriptif ( **[!UICONTROL Fichier de visionneuse (prop 30)]**) et remplacez la zone de liste déroulante par &quot;Activé&quot; dans la colonne Activé.
 
    La capture d’écran suivante est un exemple de variable Trafic personnalisé ( **[!UICONTROL prop30]**) pour le suivi d’un nom de fichier utilisé par le lecteur de contenu :
 
@@ -597,7 +597,7 @@ Voir [Environnements](https://experienceleague.adobe.com/docs/launch/using/refer
 La publication d’une bibliothèque implique les deux étapes suivantes :
 
 * Ajout et création d’une bibliothèque en incluant toutes les modifications nécessaires (nouvelles et mises à jour) dans la bibliothèque.
-* Déplacement de la bibliothèque vers les différents niveaux d’environnement (du développement au test et à la production)
+* Déplacement de la bibliothèque vers les différents niveaux d’environnement (du développement à l’évaluation et à la production).
 
 #### Ajout et création d’une bibliothèque {#adding-and-building-a-new-library}
 
@@ -677,7 +677,7 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
 
    Le message d’informations suivant s’affiche :
 
-   *Pour récupérer un jeton d&#39;accès valide, la clé publique du nouveau certificat est ajoutée au compte technique sur Adobe I/O !*.
+   *Pour récupérer un jeton d&#39;accès valide, la clé publique du nouveau certificat est ajoutée au compte technique de l&#39;Adobe I/O !*
 
    Pour fermer la boîte de dialogue Infos, cliquez sur **[!UICONTROL OK]**.
 
@@ -733,7 +733,7 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
 
 1. Revenez à la page **[!UICONTROL Configuration du compte technique Adobe IMS]** que vous avez laissée ouverte précédemment. Dans le coin supérieur droit de la page, cliquez sur **[!UICONTROL Suivant]** pour ouvrir la page **[!UICONTROL Compte]** dans la fenêtre **[!UICONTROL Configuration du compte technique Adobe IMS]**.
 
-   (Si vous avez accidentellement fermé la page plus tôt, revenez à l’auteur du Experience Manager, puis cliquez sur **[!UICONTROL Outils > Sécurité > Configurations IMS de l’Adobe]**. Cliquez sur **[!UICONTROL Créer]**. Dans la liste déroulante **[!UICONTROL Solution cloud]**, sélectionnez **[!UICONTROL Experience Platform Launch]**. Dans la liste déroulante **[!UICONTROL Certificat]**, sélectionnez le nom du certificat créé précédemment.)
+   (Si vous avez fermé la page plus tôt, revenez à l’auteur du Experience Manager, puis cliquez sur **[!UICONTROL Outils > Sécurité > Configurations IMS de l’Adobe]**. Cliquez sur **[!UICONTROL Créer]**. Dans la liste déroulante **[!UICONTROL Solution cloud]**, sélectionnez **[!UICONTROL Experience Platform Launch]**. Dans la liste déroulante **[!UICONTROL Certificat]**, sélectionnez le nom du certificat créé précédemment.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
