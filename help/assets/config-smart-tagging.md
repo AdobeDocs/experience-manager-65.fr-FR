@@ -3,17 +3,17 @@ title: Configuration du balisage des ressources à l’aide de Smart Content Ser
 description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans  [!DNL Adobe Experience Manager], à l’aide de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 60%
+source-wordcount: '2172'
+ht-degree: 55%
 
 ---
 
 
 # Préparer [!DNL Assets] pour le balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
 
-Avant de pouvoir début le balisage de vos ressources à l’aide de Smart Content Services, intégrez [!DNL Experience ManageR Assets] à Adobe Developer Console pour tirer parti du service intelligent [!DNL Adobe Sensei]. Une fois configuré, le service est formé à l’aide de quelques images et d’une balise.
+Avant de pouvoir début le balisage de vos ressources à l’aide de Smart Content Services, intégrez [!DNL Experience Manager Assets] à Adobe Developer Console pour tirer parti du service intelligent [!DNL Adobe Sensei]. Une fois configuré, le service est formé à l’aide de quelques images et d’une balise.
 
 Avant d’utiliser Smart Content Service, vérifiez les points suivants :
 
@@ -27,11 +27,11 @@ Avant d’utiliser Smart Content Service, vérifiez les points suivants :
 
 ## Intégration à Adobe Developer Console {#integrate-adobe-io}
 
-Lorsque vous effectuez une intégration avec Adobe Developer Console, le serveur [!DNL Experience Manager] authentifie vos informations d’identification de service auprès de la passerelle Adobe Developer Console avant de transmettre votre demande à Smart Content Service. Pour intégrer votre entreprise, vous devez disposer d’un compte Adobe ID doté de droits d’administrateur pour l’entreprise et d’une licence Smart Content Service achetée et activée pour celle-ci.
+Lorsque vous effectuez une intégration avec Adobe Developer Console, le serveur [!DNL Experience Manager] authentifie vos informations d’identification de service auprès de la passerelle Adobe Developer Console avant de transmettre votre demande à Smart Content Service. Pour l’intégrer, vous devez disposer d’un compte Adobe ID doté de droits d’administrateur pour l’entreprise et d’une licence Smart Content Service achetée et activée pour votre entreprise.
 
 Pour configurer Smart Content Service, procédez comme suit :
 
-1. [Création d’une configuration de service de contenu dynamique dans pour générer une clé publique. ](#obtain-public-certificate)[!DNL Experience Manager] [Obtenez un certificat public](#obtain-public-certificate) pour l’intégration d’OAuth.
+1. Pour générer une clé publique, [créez une configuration Smart Content Service](#obtain-public-certificate) dans [!DNL Experience Manager]. [Obtenez un certificat public](#obtain-public-certificate) pour l’intégration d’OAuth.
 
 1. [Créez une intégration dans Adobe Developer Console](#create-adobe-i-o-integration) et chargez la clé publique générée.
 
@@ -41,7 +41,7 @@ Pour configurer Smart Content Service, procédez comme suit :
 
 1. [Vous pouvez éventuellement activer le balisage automatique lors du transfert des ressources](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-### Créer une configuration de Smart Content Service pour obtenir un certificat public {#obtain-public-certificate}
+### Obtenez un certificat public en créant la configuration de Smart Content Service {#obtain-public-certificate}
 
 Un certificat public permet d’authentifier votre profil sur Adobe Developer Console.
 
@@ -73,11 +73,11 @@ Un certificat public permet d’authentifier votre profil sur Adobe Developer Co
    ![Représentation des paramètres créés pour le service de balisage intelligent](assets/smart-tags-download-public-cert.png)
 
 
-   *Figure : Paramètres du service de balisage intelligent*
+   *Figure : Paramètres du service de balisage intelligent.*
 
 #### Reconfigurer à l’expiration d’un certificat {#certrenew}
 
-Une fois qu’un certificat expire, il n’est plus approuvé. Vous ne pouvez pas renouveler un certificat ayant expiré. Pour ajouter un nouveau certificat, procédez comme suit.
+Une fois qu’un certificat expire, il n’est plus approuvé. Vous ne pouvez pas renouveler un certificat ayant expiré. Pour ajouter un certificat, procédez comme suit.
 
 1. Connectez-vous en tant qu’administrateur à votre déploiement [!DNL Experience Manager]. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
 
@@ -85,10 +85,10 @@ Une fois qu’un certificat expire, il n’est plus approuvé. Vous ne pouvez pa
 
 1. Supprimez le fichier de stockage de clés **[!UICONTROL similaritysearch]** existant avec le certificat arrivé à expiration. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
-   ![Supprimer l’entrée de recherche de similitudes existante dans Keystore pour ajouter un nouveau certificat de sécurité](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Supprimer l&#39;entrée de recherche de similitude existante dans Keystore pour ajouter un certificat de sécurité](assets/smarttags_delete_similaritysearch_keystore.png)
 
 
-   *Figure : Suppression d’une entrée existante`similaritysearch` dans le Keystore pour ajouter un nouveau certificat de sécurité.*
+   *Figure : Supprimez l’ `similaritysearch` entrée existante dans Keystore pour ajouter un certificat de sécurité.*
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Ancienne version de Cloud Services]**. Cliquez sur **[!UICONTROL Balises dynamiques de ressources]** > **[!UICONTROL Afficher la configuration]** > **[!UICONTROL Configurations disponibles]**. Cliquez sur la configuration requise.
 
@@ -108,7 +108,7 @@ Pour utiliser les API de Smart Content Service, créez une intégration dans la 
 
 1. Sélectionnez **[!UICONTROL Upload your public key]** (Charger votre clé publique). Fournissez le fichier de certificat téléchargé depuis [!DNL Experience Manager]. Le message [!UICONTROL Public key(s) uploaded successfully] (La ou les clés publiques ont été chargées) s’affiche. Cliquez sur **[!UICONTROL Next]** (Suivant).
 
-   La page [!UICONTROL Create a new Service Account (JWT) credential] (Créer des informations d’identification de compte de service (JWT)) affiche la clé publique du compte de service qui vient d’être configuré.
+   [!UICONTROL La page d’] identification Créer un compte de service (JWT) affiche la clé publique du compte de service.
 
 1. Cliquez sur **[!UICONTROL Next]** (Suivant).
 
@@ -187,7 +187,7 @@ Les résultats de la validation s’affichent dans la même boîte de dialogue.
    ![Configurez le processus de mise à jour de la gestion des actifs numériques pour ajouter une étape de balise active et sélectionnez ignorer l’indicateur de balise active.](assets/smart-tag-step-properties-workflow3.png)
 
 
-   *Figure : Configurez le processus de mise à jour de la gestion des actifs numériques pour ajouter une étape de balise active et sélectionnez ignorer l’indicateur de balise active.*
+   *Figure : Configurez le processus de mise à jour de la gestion des actifs numériques pour ajouter l’étape de balise active et sélectionnez ignorer l’indicateur de balise active.*
 
 1. Cliquez sur **[!UICONTROL OK]** pour fermer l’étape du processus, puis enregistrez ce dernier.
 
@@ -205,17 +205,17 @@ Vous pouvez entraîner le service de contenu dynamique périodiquement ou en fon
 
 ### Instructions d’entraînement {#guidelines-for-training}
 
-Pour un résultat optimal, les images de votre corpus d’entraînement doivent respecter les instructions suivantes :
+Pour de meilleurs résultats, les images de votre jeu de formations sont conformes aux consignes suivantes :
 
 **Quantité et taille :** minimum 30 images par balise. Minimum 500 pixels sur le côté le plus long.
 
-**Cohérence** : les images associées à une même balise doivent être visuellement similaires.
+**Cohérence** : Les images utilisées pour une balise spécifique sont visuellement similaires.
 
 Par exemple, il est déconseillé d’incorporer une balise `my-party` pour toutes ces images (en situation d’entraînement), car elles ne sont pas similaires visuellement.
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](/help/assets/assets/do-not-localize/coherence.png)
 
-**Couverture** : les images d’entraînement doivent être suffisamment variées. L&#39;idée est de fournir quelques exemples, mais raisonnablement variés, pour que le Experience Manager apprenne à se concentrer sur les bonnes choses. Si vous appliquez la même balise sur des images visuellement différentes, incluez au moins cinq exemples de chaque type.
+**Couverture** : Utilisez une variété suffisante d’images dans la formation. L&#39;idée est de fournir quelques exemples, mais raisonnablement variés, pour que le Experience Manager apprenne à se concentrer sur les bonnes choses. Si vous appliquez la même balise sur des images visuellement différentes, incluez au moins cinq exemples de chaque type.
 
 Par exemple, pour la balise *mannequin-pose-tête-baissée*, incluez davantage d’images d’entraînement similaires à l’image mise en évidence ci-dessous pour que le service reconnaisse les images similaires avec plus de précision lors du balisage.
 
@@ -250,7 +250,7 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 1. Dans l&#39;interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de flux de travail]**, sélectionnez le processus **[!UICONTROL Formation aux balises actives]**, puis cliquez sur **[!UICONTROL Processus de Début]** dans la barre d’outils.
 1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, localisez le dossier de charge utile qui comprend les ressources balisées pour entraîner le service.
-1. Indiquez le titre du workflow et ajoutez un commentaire. Cliquez ensuite sur **[!UICONTROL Exécuter]**. Les ressources et les balises sont soumises à l’entraînement.
+1. Indiquez un titre pour le processus et ajoutez un commentaire. Cliquez ensuite sur **[!UICONTROL Exécuter]**. Les ressources et les balises sont soumises à l’entraînement.
 
    ![workflow_dialog](assets/workflow_dialog.png)
 
@@ -273,7 +273,7 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 
    Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
 
-1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Le rapport est téléchargé sous la forme d’une feuille de calcul Microsoft Excel.
+1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Le rapport est téléchargé sous forme de feuille de calcul Microsoft Excel.
 
 ## Restrictions {#limitations}
 
