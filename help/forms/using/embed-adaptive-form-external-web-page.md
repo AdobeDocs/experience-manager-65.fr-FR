@@ -1,6 +1,6 @@
 ---
-title: Incorporation d’un formulaire adaptatif dans une page Web externe
-seo-title: Incorporation d’un formulaire adaptatif dans une page Web externe
+title: Incorporation d’un formulaire adaptatif dans une page web externe
+seo-title: Incorporation d’un formulaire adaptatif dans une page web externe
 description: Découvrez comment incorporer un formulaire adaptatif dans une page Web externe
 seo-description: Découvrez comment incorporer un formulaire adaptatif dans une page Web HTML externe
 uuid: d81032dd-af80-4f4b-a717-ee1b89fd3d3d
@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ade3747ba608164a792a62097b82c55626245891
+source-git-commit: 3ca71b73444589096dee46c38daded043c9232b1
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 70%
@@ -17,7 +17,7 @@ ht-degree: 70%
 ---
 
 
-# Incorporation d’un formulaire adaptatif dans une page Web externe{#embed-adaptive-form-in-external-web-page}
+# Incorporation d’un formulaire adaptatif dans une page web externe{#embed-adaptive-form-in-external-web-page}
 
 Vous pouvez [incorporer des formulaires adaptatifs dans une page de sites AEM](/help/forms/using/embed-adaptive-form-aem-sites.md) ou une page Web hébergée en dehors d’AEM. Le formulaire adaptatif incorporé est entièrement fonctionnel et les utilisateurs peuvent le remplir et le soumettre sans quitter la page. Il permet à l’utilisateur de rester dans le contexte des autres éléments de la page Web et d’interagir simultanément avec le formulaire..
 
@@ -165,7 +165,6 @@ Lorsque vous incorporez un formulaire adaptatif dans une page Web, prenez en com
 
 ## Activer AEM Forms pour diffuser des formulaires adaptatifs vers un site interdomaines {#cross-site}
 
-1. Sur AEM instance d’auteur, accédez à AEM Web Console Configuration Manager à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
+1. Sur AEM instance de publication, accédez à AEM Web Console Configuration Manager à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
 1. Recherchez et ouvrez la configuration **Apache Sling Referrer Filter** .
 1. Dans le champ Hôtes autorisés, spécifiez le domaine dans lequel la page Web se trouve. Cette opération permet à l’hôte de créer des requêtes POST vers le serveur AEM. Vous pouvez également utiliser l’expression régulière pour spécifier une série de domaines d’application externes.
-
