@@ -12,10 +12,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 99%
+source-wordcount: '551'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,14 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles.
 1. Sélectionnez **Aller à la page** pour ouvrir la page d’édition.
 
-### Modification de l’objet des pages de lancement en Live Copy   {#editing-launch-pages-subject-to-a-live-copy}
+>[!NOTE]
+>
+>Vous n’êtes pas autorisé à déplacer une page au cours d’un lancement. La tentative de cette action déclenchera un message d’avertissement :
+>
+>* Avertissement : Cette page est la source du lancement. Le déplacement de la page n’est pas autorisé.
+
+
+### Modification de l’objet des pages de lancement en Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
 Si votre lancement est basé sur une [Live Copy](/help/sites-administering/msm.md), vous :
 
