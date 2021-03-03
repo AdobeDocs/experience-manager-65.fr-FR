@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
+source-git-commit: a2fa9a56de8882731e8193696f572a74c98c6b89
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 84%
+source-wordcount: '1691'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur la structure (par ex. Réaction ou Angular).
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Cela s’effectue via le **service RemoteContentRenderer – Configuration d’u
 Les champs suivants sont disponibles pour la configuration :
 
 * **Modèle de chemin d’accès au contenu** : expression régulière afin de faire correspondre une partie du contenu, si nécessaire
-* **URL du point d’entrée distant** : URL du point d’entrée responsable de la génération du contenu
+* **URL**  du point de terminaison distant - URL du point de terminaison responsable de la génération du contenu
    * Utilisez le protocole HTTPS sécurisé si ce point d’entrée ne figure pas sur le réseau local.
 * **En-têtes de requête supplémentaires** : en-têtes supplémentaires à ajouter à la requête envoyée au point d’entrée distant
    * Modèle : `key=value`
