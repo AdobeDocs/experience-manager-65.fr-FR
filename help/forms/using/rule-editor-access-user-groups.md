@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 71%
+source-wordcount: '336'
+ht-degree: 70%
 
 ---
 
@@ -33,7 +33,7 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 
    ![1-2](assets/1-2.png)
 
-1. Dans la fenêtre de la console Web, recherchez et cliquez sur **Service de configuration de formulaire adaptatif**. **La boîte de dialogue Service de configuration de formulaire adaptatif** s’affiche. Ne modifiez aucune valeur puis cliquez sur **Enregistrer**.
+1. Dans la fenêtre de la console Web, recherchez et cliquez sur **[!UICONTROL Formulaire adaptatif et Configuration du Canal Web de communication interactive]**. **[!UICONTROL La boîte de dialogue]** Configuration du Canal Web de formulaire adaptatif et de communication interactive s&#39;affiche. Ne modifiez aucune valeur puis cliquez sur **Enregistrer**.
 
    Vous créez ainsi un fichier /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config dans le référentiel CRX.
 
