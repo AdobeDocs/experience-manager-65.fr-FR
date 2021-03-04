@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 96%
+source-wordcount: '2093'
+ht-degree: 95%
 
 ---
 
@@ -119,7 +119,7 @@ Effectuez les étapes suivantes pour afficher les fragments complets dans les fo
 
 1. Accédez à la page de configuration de la console Web AEM à l’adresse https:[*host*]:[*port*]/system/console/configMgr.
 
-1. Recherchez et cliquez sur **[!UICONTROL Service de configuration de formulaire adaptatif]** pour l’ouvrir en mode d’édition.
+1. Recherchez **[!UICONTROL Formulaire adaptatif et Configuration du Canal Web de communication interactive]** pour l’ouvrir en mode d’édition.
 1. Décochez la case d’**[!UICONTROL activation de l’espace réservé à la place du fragment]** pour afficher les fragments complets à la place de l’image d’espace réservé.
 
 ### Insertion d’un fragment dans un formulaire adaptatif  {#insert-a-fragment-in-an-adaptive-form}
