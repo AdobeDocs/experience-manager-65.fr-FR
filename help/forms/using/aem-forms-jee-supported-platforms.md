@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9c407ea7c0bff3d15934552cd709bec7f24e857
+source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3311'
 ht-degree: 75%
 
 ---
@@ -140,12 +140,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td><p>Base de données Oracle 12c version 1</p> </td>
+   <td><p>Oracle de données 12c version 1</p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
    <tr>
-   <td><p>Base de données Oracle 12c version 2 (12.2.0.1.0)</p> </td>
+   <td><p>Oracle de données 12c version 2 (12.2.0.1.0)</p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
@@ -155,7 +155,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Pris en charge</td>
   </tr> 
    <tr>
-   <td>Oracle Database 19c (éditions Standard, Real Application Clusters (RAC) et Enterprise) </td>
+   <td>Oracle de données 19c (éditions Standard, Real Application Clusters (RAC) et Enterprise) </td>
    <td>Micronoyau de référentiel </td>
    <td>Pris en charge</td>
   </tr>
@@ -222,7 +222,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   <tr>
    <td>Oracle</td>
    <td><p>Pilote JDBC pour Oracle Database 19.3.0.0.0</p> <p>ojdbc8.jar (version 19.3.0.0.0)<br /> </p> </td>
-   <td><p>Télécharger à partir du <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">site Web d’Oracle</a>.</p> </td>
+   <td><p>Télécharger à partir du <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">site Web de l'Oracle</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -552,23 +552,17 @@ Pour la configuration requise supplémentaire, voir :
 
 ### Designer {#designer}
 
->[!NOTE]
->
->Pour installer Designer sous Windows, exécutez le programme d’installation avec les droits d’administrateur.
-
-* Microsoft® Windows® 2016 Server, Microsoft Windows 10
-
-   * Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
-   * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
-   * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
-
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server ou Microsoft Windows 10
+* Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
+* Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
+* Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
 * Mémoire graphique - 128 Mo de GPU (256 Mo recommandé)
 * 2,35 Go d’espace disponible sur le disque dur
 * Lecteur de DVD-ROM
-* Internet Explorer 10 ou 11 ; Firefox 45.x
 * Résolution d’écran 1 024 X 768 pixels ou plus
 * Accélération matérielle de la vidéo (en option)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
+* Droits d’administrateur pour l’installation de Designer.
 
 ### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
