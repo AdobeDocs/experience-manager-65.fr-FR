@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '6814'
+source-wordcount: '6818'
 ht-degree: 76%
 
 ---
@@ -112,7 +112,7 @@ En clair, un type de règle Lorsque standard est structuré comme suit :
 
 Action 2 sur Objet B ; ET Action 3 sur Objet C ; 
 
-]
+_
 
 Lorsque vous disposez d’un composant à plusieurs valeurs, tel que des boutons radio ou des listes, lors de la création d’une règle pour ce composant, les options sont automatiquement récupérées et mises à la disposition du créateur de règles. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
 
@@ -381,7 +381,7 @@ Les utilisateurs appartenant au groupe des utilisateurs avancés de formulaires 
 AEM Forms suit le mode Éditeur de règles que vous avez utilisé en dernier pour créer une règle. Lorsque vous lancez l’éditeur de règles la fois suivante, il s’ouvre dans ce mode. Toutefois, vous pouvez également configurer un mode par défaut pour ouvrir l’éditeur de règles dans le mode spécifié. Pour ce faire :
 
 1. Accédez à AEM console Web à l’adresse `https://[host]:[port]/system/console/configMgr`.
-1. Cliquez pour modifier **[!UICONTROL Service de configuration de formulaire adaptatif]**.
+1. Cliquez pour modifier **[!UICONTROL la configuration du Canal Web de formulaire adaptatif et de communication interactive]**.
 1. Sélectionnez **[!UICONTROL Éditeur visuel]** ou **[!UICONTROL Éditeur de code]** dans la liste déroulante **[!UICONTROL Mode par défaut de l’éditeur de règle]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
