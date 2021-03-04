@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 67%
+source-wordcount: '697'
+ht-degree: 64%
 
 ---
 
@@ -35,8 +35,8 @@ Les sections de cet article incluent :
 L’application AEM Forms pour iOS configurée pour se synchroniser avec AEM Forms sur OSGi ne prend en charge que les pièces jointes au niveau du champ. Toutes les pièces jointes doivent avoir des noms uniques. Si plusieurs pièces jointes ont un nom identique, une seule pièce jointe est conservée et toutes les autres portant le même nom sont perdues. Suivez les étapes ci-après pour empêcher les utilisateurs des périphériques iOS de subir une perte de données :
 
 1. Sur le serveur connecté, accédez à **Adobe Experience Manager > Tools > Operations > Web Console**.
-1. Recherchez et cliquez sur **Service de configuration de formulaire adaptatif**.
-1. Dans la boîte de dialogue Service de configuration de formulaire adaptatif, activez **Rendre les noms de fichier uniques**.
+1. Recherchez et cliquez sur **[!UICONTROL Formulaire adaptatif et Configuration du Canal Web de communication interactive]**.
+1. Dans la boîte de dialogue [!UICONTROL Configuration du Canal Web de formulaire adaptatif et de communication interactive], activez **Rendre les noms de fichier uniques**.
 
    Si le paramètre **Rendre les noms de fichier uniques** est désactivé, les utilisateurs subissent une perte de données s’ils tentent d’envoyer des formulaires adaptatifs avec plusieurs pièces jointes.
 
