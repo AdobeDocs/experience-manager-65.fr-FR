@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a2fa9a56de8882731e8193696f572a74c98c6b89
+source-git-commit: 41e30a668c8c02f2c43e509ed708c4b9fa39a269
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 83%
@@ -37,7 +37,7 @@ Toutefois, cela peut entraîner des temps de chargement initiaux plus longs, en 
 
 ## Quand utiliser le rendu côté serveur {#when-to-use-ssr}
 
-Le rendu côté serveur n’est pas requis pour tous les projets. Bien que l&#39;Adobe AEM pleinement soutenir JS SSR pour SPA, il ne recommande pas de le mettre en oeuvre systématiquement pour chaque projet.
+Le rendu côté serveur n’est pas requis pour tous les projets. Bien que AEM appuie pleinement la stratégie SSR JS pour SPA, l&#39;Adobe ne recommande pas de la mettre en oeuvre systématiquement pour chaque projet.
 
 Lorsque vous décidez de mettre en œuvre le rendu côté serveur, vous devez d’abord estimer la complexité, les efforts et les coûts supplémentaires que ce rendu représente de manière réaliste pour le projet, y compris la maintenance à long terme. Une architecture SSR ne doit être choisie que lorsque la valeur ajoutée dépasse clairement les coûts estimés.
 
