@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3453'
 ht-degree: 86%
 
 ---
@@ -68,6 +68,10 @@ Créez des projets de traduction afin de pouvoir exécuter et gérer le processu
 Vous pouvez spécifier que les pages enfants de la page sélectionnée soient elles aussi sélectionnées. Dans ce cas, les copies des pages enfants sont également ajoutées à chaque projet afin d’être traduites. Lorsque des pages enfants sont associées à des configurations de structure d’intégration de traduction différentes, AEM crée des projets supplémentaires.
 
 Vous pouvez également [créer manuellement des projets de traduction](#creating-a-translation-project-using-the-projects-console).
+
+>[!NOTE]
+>
+>Pour créer un projet, votre compte doit être membre du groupe `project-administrators`.
 
 **Traductions initiales et mise à jour de traductions**
 
@@ -418,6 +422,10 @@ Remplissez la copie de langue afin qu’elle contienne le contenu de la langue p
 ## Création d’un projet de traduction à l’aide de la console Projets  {#creating-a-translation-project-using-the-projects-console}
 
 Si vous préférez utiliser la console Projets, vous pouvez créer manuellement un projet de traduction.
+
+>[!NOTE]
+>
+>Pour créer un projet, votre compte doit être membre du groupe `project-administrators`.
 
 Lorsque vous créez manuellement un projet de traduction, vous devez fournir des valeurs pour les propriétés associées à la traduction ci-dessous en complément des [propriétés de base](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) :
 
