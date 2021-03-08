@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1399'
 ht-degree: 93%
 
 ---
@@ -234,7 +234,7 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
    <td>
     <ul>
      <li>Groupe d’utilisateurs DAM (pour pouvoir créer un projet)</li>
-     <li>groupe d’administrateurs de projet (pour pouvoir déplacer des ressources)</li>
+     <li>groupe d’administrateurs de projet (pour pouvoir créer un projet et déplacer des ressources)</li>
     </ul> </td>
   </tr>
  </tbody>
