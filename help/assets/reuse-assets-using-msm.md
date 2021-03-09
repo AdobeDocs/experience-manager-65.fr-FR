@@ -4,9 +4,9 @@ description: Utilisez des ressources sur plusieurs pages/dossiers qui sont déri
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7eb569c86c45daa8b175f924b211693a5d5dde58
+source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
 workflow-type: tm+mt
-source-wordcount: '3373'
+source-wordcount: '3366'
 ht-degree: 71%
 
 ---
@@ -70,7 +70,7 @@ Pour créer des Live Copies à l’aide de la première méthode, procédez comm
 
 1. Sélectionnez des fichiers ou des dossiers sources. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Live Copy]**.
 
-   ![Création d’une copie dynamique à partir de l’interface du Experience Manager](assets/create_lc1.png)
+   ![Création d’une copie dynamique à partir de  [!DNL Experience Manager] l’interface](assets/create_lc1.png)
 
    *Figure : Créez une copie dynamique à partir de  [!DNL Experience Manager] l’interface.*
 
@@ -82,7 +82,7 @@ Pour créer des Live Copies à l’aide de la seconde méthode, procédez comme 
 
 1. Dans l&#39;interface [!DNL Experience Manager], dans le coin supérieur droit, cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Live Copy]**.
 
-   ![Création d’une copie dynamique à partir de l’interface du Experience Manager](assets/create_lc2.png)
+   ![Création d’une copie dynamique à partir de  [!DNL Experience Manager] l’interface](assets/create_lc2.png)
 
    *Figure : Créez une copie dynamique à partir de  [!DNL Experience Manager] l’interface.*
 
@@ -106,7 +106,7 @@ Les deux méthodes suivantes fonctionnent pour les ressources et les dossiers :
 
 >[!TIP]
 >
->Pour vérifier l’état de quelques copies dynamiques distinctes, utilisez la première méthode pour vérifier la page [!UICONTROL Propriétés]. Pour vérifier les états de plusieurs copies dynamiques, utilisez la deuxième méthode pour vérifier la page **[!UICONTROL État de la relation]**.
+>Pour vérifier l’état de quelques copies dynamiques distinctes, utilisez la première méthode pour vérifier la page **[!UICONTROL Propriétés]**. Pour vérifier les états de plusieurs copies dynamiques, utilisez la deuxième méthode pour vérifier la page **[!UICONTROL État de la relation]**.
 
 ### Informations et état d’une Live Copy    {#statuslcasset}
 
@@ -189,8 +189,9 @@ Une fois une source modifiée, les modifications peuvent être propagées aux Li
 Vous pouvez lancer une action de déploiement à partir de la ressource source et mettre à jour quelques ou toutes les Live Copies.
 
 1. Sélectionnez une ressource ou un dossier de Live Copy. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Vous pouvez également utiliser le raccourci clavier `p`.
-1. Cliquez sur **[!UICONTROL Source Live Copy]**. Cliquez sur **[!UICONTROL Déployer]** dans la barre d’outils supérieure.
-1. Sélectionnez les Live Copies que vous souhaitez mettre à jour. Cliquez sur **[!UICONTROL Déployer]**. Pour déployer les mises à jour apportées aux ressources enfants, sélectionnez **[!UICONTROL Déployer la source et tous les enfants]**.
+1. Cliquez sur **[!UICONTROL Source Live Copy]**. Cliquez sur **[!UICONTROL Déploiement]** dans la barre d’outils.
+1. Sélectionnez les Live Copies que vous souhaitez mettre à jour. Cliquez sur **[!UICONTROL Déployer]**.
+1. Pour déployer les mises à jour apportées aux ressources enfants, sélectionnez **[!UICONTROL Déployer la source et tous les enfants]**.
 
    ![Déploiement des modifications de la source vers quelques ou toutes les Live Copies](assets/livecopy_rollout_page.png)
 
@@ -210,7 +211,7 @@ Vous pouvez également lancer une action de déploiement à partir du rail Réf�
 
 Une action de synchronisation récupère les modifications d’une source uniquement pour la Live Copy sélectionnée. L’action de synchronisation respecte et gère les modifications locales effectuées après l’annulation de l’héritage. Les modifications locales ne sont pas remplacées et l’héritage annulé n’est pas rétabli. Vous pouvez lancer une action de synchronisation de trois manières différentes.
 
-| Emplacement dans l&#39;interface [!DNL Experience Manager] | Utilisation : à quel moment et pourquoi | Utilisation |
+| Emplacement dans l&#39;interface [!DNL Experience Manager] | Utilisation : à quel moment et pourquoi | Mode d’emploi |
 |---|---|---|
 | [!UICONTROL Rail Références] | Effectuez rapidement une synchronisation lorsque la source est déjà sélectionnée. | Voir [Actions rapides pour la source depuis le rail Références](#refrailsource) |
 | Barre d’outils de la page [!UICONTROL Propriétés] | Lancez une synchronisation lorsque les propriétés de la Live Copy sont déjà ouvertes. | Voir [Synchronisation d’une Live Copy](#sync-lc) |
