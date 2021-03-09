@@ -3,9 +3,9 @@ title: Écriture différée XMP sur les rendus
 description: Découvrez comment la fonctionnalité d’écriture différée XMP propage les modifications apportées aux métadonnées d’une ressource à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '792'
 ht-degree: 58%
 
 ---
@@ -88,6 +88,6 @@ Le filtrage par liste autorisée des métadonnées XMP résout le problème en v
 
    >[!NOTE]
    >
-   >L’option **[!UICONTROL Appliquer la liste bloquée aux propriétés XMP]** est sélectionnée par défaut. En d’autres termes, le filtrage à l’aide d’une liste bloquée est activé par défaut. Pour désactiver ce filtrage, désélectionnez l’option **[!UICONTROL Appliquer la Liste bloquée aux propriétés XMP]**.
+   >L’option **[!UICONTROL Appliquer la liste bloquée aux propriétés XMP]** est sélectionnée par défaut. En d’autres termes, le filtrage à l’aide d’une liste bloquée est activé par défaut. Pour désactiver ce filtrage, annulez la sélection de l&#39;option **[!UICONTROL Appliquer la Liste bloquée aux propriétés XMP]**.
 
 1. Enregistrez les modifications.
