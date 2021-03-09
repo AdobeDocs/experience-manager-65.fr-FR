@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 7a96ff5cdd187291efe108d1171782bcbecfaeb0
+source-git-commit: 054b49fb8aacb9e267ed23552d788f72123ed3b3
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 62%
@@ -99,7 +99,7 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d�
 
 * **operation**
 
-   &quot;`equals`&quot; pour la correspondance exacte, &quot;`!=`&quot; pour la comparaison des inégalités, &quot;`greater`&quot; pour la propriété1 supérieure à la propriété2, &quot;`>=`&quot; pour la propriété1 supérieure ou égale à la propriété2. La valeur par défaut est &quot;`equals`&quot;.
+   &quot; `equals`&quot; pour la correspondance exacte, &quot; `!=`&quot; pour la comparaison des inégalités, &quot; `greater`&quot; pour la propriété1 supérieure à la propriété2, &quot; `>=`&quot; pour la propriété1 supérieure ou égale à la propriété2. La valeur par défaut est &quot; `equals`&quot;.
 
 ### daterange {#daterange}
 
@@ -369,7 +369,7 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque vale
 
 * **opération**
 
-   &quot;`equals`&quot; pour la correspondance exacte (par défaut), &quot;`unequals`&quot; pour la comparaison des inégalités, &quot;`like`&quot; pour l&#39;utilisation de la fonction `jcr:like` xpath (facultative), &quot; `not`&quot; pour l&#39;absence de correspondance (par ex. &quot;`not(@prop)`&quot; dans xpath, le paramètre de valeur sera ignoré) ou &quot;`exists`&quot; pour la vérification de l&#39;existence (la valeur peut être true - la propriété doit exister, la valeur par défaut - ou false - identique à &quot;`not`&quot;)
+   &quot;`equals`&quot; pour la correspondance exacte (par défaut), &quot; `unequals`&quot; pour la comparaison des inégalités, &quot; `like`&quot; pour l&#39;utilisation de la fonction `jcr:like` xpath (facultative), &quot; `not`&quot; pour l&#39;absence de correspondance (par ex. &quot;`not(@prop)`&quot; dans xpath, le paramètre value sera ignoré) ou &quot; `exists`&quot; pour la vérification de l&#39;existence (la valeur peut être true - la propriété doit exister, la valeur par défaut - ou false - identique à &quot; `not`&quot;)
 
 * **profondeur**
 
