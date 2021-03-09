@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 571a48790c4977e97abec24fe88407b5b6376108
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 62%
@@ -99,7 +99,7 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d�
 
 * **operation**
 
-   &quot; `=`&quot; pour la correspondance exacte, &quot; `!=`&quot; pour la comparaison des inégalités, &quot; `>`&quot; pour la propriété1 supérieure à la propriété2, &quot; `>=`&quot; pour la propriété1 supérieure ou égale à la propriété2. La valeur par défaut est &quot; `=`&quot;.
+   &quot; `equals`&quot; pour la correspondance exacte, &quot; `!=`&quot; pour la comparaison des inégalités, &quot; `greater`&quot; pour la propriété1 supérieure à la propriété2, &quot; `>=`&quot; pour la propriété1 supérieure ou égale à la propriété2. La valeur par défaut est &quot; `equals`&quot;.
 
 ### daterange {#daterange}
 
