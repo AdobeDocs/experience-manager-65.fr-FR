@@ -3,10 +3,10 @@ title: Rapports sur l’utilisation et le partage des ressources
 description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 90%
+source-wordcount: '1139'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ L’interface de gestion de rapports est intuitive et inclut des options et des 
 
 Si un rapport est généré, vous êtes averti par un courrier électronique (facultatif) et une notification dans la boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
-## Condition requise {#prerequisite-for-reporting}
+## Prérequis {#prerequisite-for-reporting}
 
 Pour générer des rapports, procédez comme suit :
 
@@ -97,13 +97,13 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
 1. Cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 
-1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner plus de colonnes. Désélectionnez une colonne sélectionnée pour l’exclure du rapport.
+1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner plus de colonnes. Annule la sélection d&#39;une colonne pour l&#39;exclure dans le rapport.
 
-   ![Sélectionner ou désélectionner des colonnes de rapports](assets/configure_columns.png)
+   ![Sélectionner ou annuler la sélection des colonnes de rapports](assets/configure_columns.png)
 
    Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud `jcr:content` dans CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
 
-   ![Sélectionner ou désélectionner des colonnes de rapports](assets/custom_columns.png)
+   ![Sélectionner ou annuler la sélection des colonnes de rapports](assets/custom_columns.png)
 
 1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
 1. Sur la page [!UICONTROL Rapports de ressources], l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport ; par exemple [!UICONTROL Réussite], [!UICONTROL Échec], [!UICONTROL En file d’attente] ou [!UICONTROL Planifié]. Le même état s’affiche dans la boîte de réception des notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
