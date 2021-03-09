@@ -3,10 +3,10 @@ title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Ex
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d070f5dca569dfb90d3034b74c2940fd68d8ceab
+source-git-commit: 4ca77c7de6113127b123645a1955aaa70a91c1f3
 workflow-type: tm+mt
-source-wordcount: '2421'
-ht-degree: 56%
+source-wordcount: '2384'
+ht-degree: 57%
 
 ---
 
@@ -77,11 +77,6 @@ Pour personnaliser la page des propriétés de métadonnées, y compris l’ajou
 1. Dans l&#39;interface utilisateur [!DNL Assets], accédez à l&#39;emplacement des ressources à modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]** pour ouvrir la page des propriétés des ressources sélectionnées.
-
-   >[!NOTE]
-   >
-   >Lorsque vous sélectionnez plusieurs ressources, la plus petite forme parent commune est sélectionnée. En d’autres termes, la page de propriétés affiche uniquement les champs de métadonnées communs aux pages de propriétés de tous les fichiers individuels.
-
 1. Modifiez les propriétés de métadonnées des ressources sélectionnées dans les différents onglets.
 1. Pour afficher l’éditeur de métadonnées pour une ressource spécifique, désélectionnez les autres ressources de la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la ressource particulière.
 
