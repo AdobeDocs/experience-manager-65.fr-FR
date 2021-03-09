@@ -3,9 +3,9 @@ title: Présentation de  [!DNL Adobe Experience Manager Assets]
 description: Découvrez ce qu’est la gestion des actifs numériques, ses cas d’utilisation et  [!DNL Adobe Experience Manager Asset] l’offre.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 130a03c821fd2a1e9ecda70039241720052a8920
+source-git-commit: b851bfb2758db60e960afd4720d04202934c18bc
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '874'
 ht-degree: 29%
 
 ---
@@ -36,7 +36,7 @@ L’interface utilisateur de base est identique à celle de [!DNL Sites]. Voir [
 
 ### Gestion des ressources numériques par rapport au composant d’image {#digital-asset-management-versus-image-component}
 
-Pour déterminer si une image doit être placée dans le référentiel DAM ou utiliser le composant d’image, tenez compte du cycle de vie des images :
+Lorsque vous décidez de placer une image dans le référentiel DAM ou d’utiliser le composant d’image, tenez compte du cycle de vie des images :
 
 * Si l’image a le même cycle de vie que la page, utilisez le composant Image.
 * Si l’image a un cycle de vie distinct, par exemple, si vous utilisez l’image deux fois ou en dehors de la gestion de contenu web, utilisez [!DNL Assets].
@@ -90,5 +90,6 @@ Voir [Ressources et bibliothèque de médias](medialibrary.md) pour plus d’inf
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Assets en tant que DAM moderne](https://www.youtube.com/embed/PBwQqZgC-yo)
+>* [Présentation vidéo - Actifs Experience Manager en tant que gestion des actifs numériques moderne](https://www.youtube.com/watch?v=PBwQqZgC-yo)
+>* [Comprendre les concepts de métadonnées](/help/assets/metadata-concepts.md)
 
