@@ -4,10 +4,10 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '2176'
-ht-degree: 65%
+source-wordcount: '2180'
+ht-degree: 63%
 
 ---
 
@@ -94,7 +94,7 @@ Pour créer une collection dynamique, procédez comme suit :
 
    >[!NOTE]
    >
-   >Si vous sélectionnez **[!UICONTROL Public]**, la collection dynamique devient disponible pour tous les utilisateurs ayant le rôle de propriétaire après sa création. Si vous désactivez la case à cocher **[!UICONTROL Public]**, le groupe Utilisateurs DAM n’est plus associé à la collection dynamique.
+   >Si vous sélectionnez **[!UICONTROL Public]**, la collection dynamique devient disponible pour tous les utilisateurs ayant le rôle de propriétaire après sa création. Si vous annulez l’option **[!UICONTROL Public]**, le groupe d’utilisateurs DAM n’est plus associé à la collection dynamique.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la collection dynamique, puis fermez la boîte de message pour terminer le processus.
 
@@ -152,11 +152,11 @@ Vous pouvez modifier simultanément les métadonnées de plusieurs collections. 
 1. Dans la console Collections, sélectionnez plusieurs collections.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, modifiez les métadonnées sous **[!UICONTROL De base]** et **[!UICONTROL Avancé]**, selon les besoins.
-1. Pour afficher les propriétés de métadonnées associées à une collection spécifique, désélectionnez les autres collections dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
+1. Pour vue des propriétés de métadonnées d’une collection spécifique, annulez la sélection des collections restantes dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
 
    >[!NOTE]
    >
-   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des collections de la liste des collections en les désélectionnant. La liste des collections contient toutes les collections sélectionnées par défaut. [!DNL Experience Manager] ne met pas à jour les métadonnées des collections que vous supprimez.
+   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des collections de la liste des collections en annulant la sélection. La liste des collections contient toutes les collections sélectionnées par défaut. [!DNL Experience Manager] ne met pas à jour les métadonnées des collections que vous supprimez.
    >* En haut de la liste, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des collections à l’effacement de la liste, et inversement.
 
 
