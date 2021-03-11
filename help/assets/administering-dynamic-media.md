@@ -6,7 +6,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 72%
@@ -24,7 +24,7 @@ ht-degree: 72%
 >
 >Voir [Scénario à double usage](/help/sites-administering/scene7.md#dual-use-scenario) pour connaître les moments où vous pouvez vouloir utiliser AEM intégré à Dynamic Media Classic avec Dynamic Media.
 
-Si vous administrez des médias dynamiques, les rubriques suivantes peuvent vous intéresser :
+Si vous administrez Dynamic Media, les rubriques suivantes peuvent vous intéresser :
 
 * [Configuration du mode](config-dms7.md)  Dynamic Media-Scene7 : utilisez cette configuration si vous êtes un nouveau client Dynamic Media.
 * [Configuration du mode](config-dynamic.md)  Dynamic Media-Hybrid : utilisez cette configuration si vous êtes déjà un utilisateur Dynamic Media qui effectue une mise à niveau AEM.
