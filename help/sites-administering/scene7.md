@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '5452'
 ht-degree: 21%
@@ -34,7 +34,7 @@ Pour plus d’informations sur l’utilisation de tous les composants Dynamic Me
 
 ## Intégration AEM/Dynamic Media Classic par rapport à Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
-Les utilisateurs AEM ont le choix entre deux solutions pour utiliser les médias dynamiques : Soit en intégrant leur instance d&#39;AEM avec Dynamic Media Classic, soit en utilisant la solution Dynamic Media intégrée à AEM.
+AEM utilisateurs ont le choix entre deux solutions pour travailler avec Dynamic Media : Soit en intégrant leur instance d&#39;AEM avec Dynamic Media Classic, soit en utilisant la solution Dynamic Media intégrée à AEM.
 
 Utilisez les critères suivants pour déterminer la solution à sélectionner :
 
