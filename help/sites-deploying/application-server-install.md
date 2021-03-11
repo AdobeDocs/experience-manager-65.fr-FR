@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 0a082d3cff66b82ef6de551a735a16a001446a1e
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '1175'
-ht-degree: 65%
+ht-degree: 63%
 
 ---
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur l’installation d’applications web, sur les co
 
 >[!NOTE]
 >
->Si vous utilisez Dynamic Media dans un déploiement WAR, consultez la [documentation de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Si vous utilisez Dynamic Media dans un déploiement WAR, consultez la [documentation Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Description générale {#general-description}
 
