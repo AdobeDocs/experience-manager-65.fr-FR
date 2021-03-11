@@ -1,28 +1,24 @@
 ---
 title: Ajout de ressources Dynamic Media aux pages
-seo-title: Ajout de ressources Dynamic Media aux pages
-description: Pour ajouter la fonctionnalité de média dynamique aux ressources que vous utilisez sur des sites web, vous pouvez ajouter le composant Dynamic Media ou Interactive Media directement aux pages.
-seo-description: Pour ajouter la fonctionnalité de média dynamique aux ressources que vous utilisez sur des sites web, vous pouvez ajouter le composant Dynamic Media ou Interactive Media directement aux pages.
-uuid: 650d0867-a079-4936-a466-55b7a30803a2
+description: Pour ajouter la fonctionnalité Dynamic Media aux fichiers que vous utilisez sur vos sites Web, vous pouvez ajouter le composant Dynamic Media ou Interactive Media directement sur la page.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 60%
+source-wordcount: '1685'
+ht-degree: 56%
 
 ---
 
 
 # Ajout de ressources Dynamic Media aux pages{#adding-dynamic-media-assets-to-pages}
 
-Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites Web, vous pouvez ajouter directement le composant **[!UICONTROL Dynamic Media]** ou **[!UICONTROL Interactive Media]** sur la page. Pour ce faire, saisissez le mode [!UICONTROL Conception] et activez les composants de média dynamique. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et Interactive Media sont dynamiques : ils détectent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
+Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites Web, vous pouvez ajouter directement le composant **[!UICONTROL Dynamic Media]** ou **[!UICONTROL Interactive Media]** sur la page. Pour ce faire, saisissez le mode [!UICONTROL Conception] et activez les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et médias interactifs sont intelligents : ils savent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
 
-Vous pouvez ajouter directement des fichiers multimédias dynamiques à la page si vous utilisez AEM comme gestion de contenu Web.
+Si vous utilisez AEM comme système de gestion de contenu web, vous pouvez ajouter les ressources Dynamic Media directement aux pages.
 
 >[!NOTE]
 >
@@ -65,7 +61,7 @@ Le composant Dynamic Media est intelligent ; selon que vous ajoutez une image ou
 >Lorsque vous ajoutez le composant [!UICONTROL Dynamic Media] et que **[!UICONTROL Paramètres de Dynamic Media]** est vide ou que vous ne pouvez pas ajouter correctement un fichier, vérifiez les éléments suivants :
 >
 >* Vous avez [activé Dynamic Media](/help/assets/config-dynamic.md). Par défaut, ce module complémentaire est désactivé.
->* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne possèdent pas de fichier pyramid tiff.
+>* L’image possède un fichier pyramid tiff. Les images importées avant l’activation de Dynamic Media ne comportent pas de fichier de tiff de pyramide.
 
 >
 
