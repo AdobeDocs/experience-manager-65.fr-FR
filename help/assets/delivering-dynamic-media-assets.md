@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eacfe8a79d155dddde8908d05b05790d048b0c5
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 96%
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise
 
 Avec Dynamic Media, vous disposez de plusieurs options :
 
-* Si votre site web est hébergé sur AEM, vous souhaiterez ajouter les ressources Dynamic Media directement à votre page.
+* Si votre site Web est hébergé sur AEM, vous souhaitez ajouter les ressources Dynamic Media directement à votre page.
 * Si votre site web n’est pas hébergé par AEM, les possibilités suivantes s’offrent à vous :
 
    * Intégration de votre vidéo ou image à votre site web.
