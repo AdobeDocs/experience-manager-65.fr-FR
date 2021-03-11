@@ -3,9 +3,9 @@ title: Configuration du balisage des ressources à l’aide de Smart Content Ser
 description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans  [!DNL Adobe Experience Manager], à l’aide de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 178b1433de1d6b1e20527755414a494d4291935e
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2170'
 ht-degree: 55%
 
 ---
@@ -20,10 +20,7 @@ Avant d’utiliser Smart Content Service, vérifiez les points suivants :
 * [Intégration à Adobe Developer Console](#integrate-adobe-io).
 * [Formation de Smart Content Service](#training-the-smart-content-service).
 
-   <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
-  -->
-
-* Installez le dernier [Service Pack du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Installez le dernier [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Intégration à Adobe Developer Console {#integrate-adobe-io}
 
