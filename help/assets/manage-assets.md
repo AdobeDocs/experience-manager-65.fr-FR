@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
+source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
 workflow-type: tm+mt
 source-wordcount: '9590'
 ht-degree: 63%
@@ -340,7 +340,7 @@ La fonctionnalité présente certaines limites :
 * Si un dossier portant le même nom existe au niveau de la destination, les ressources du fichier ZIP sont extraites dans le dossier existant.
 * Si vous annulez l’extraction, les ressources déjà extraites ne sont pas supprimées.
 * Vous ne pouvez pas sélectionner deux fichiers ZIP simultanément et les extraire. Vous pouvez seulement extraire une archive ZIP à la fois.
-* Lors du chargement d’une archive ZIP, si la boîte de dialogue de chargement affiche un message d’erreur de serveur 500, réessayez après avoir installé le dernier Service Pack.
+* Lors du transfert d’une archive ZIP, si la boîte de dialogue de téléchargement affiche une erreur de serveur 500, réessayez après avoir installé [le dernier Service Pack](/help/release-notes/sp-release-notes.md).
 
 ## Aperçu des ressources {#previewing-assets}
 
