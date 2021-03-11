@@ -1,16 +1,16 @@
 ---
 title: Configuration de Dynamic Media – mode Scene7
-description: Informations sur la manière de configurer Dynamic Media – mode Scene7.
+description: Découvrez comment configurer le mode Dynamic Media - Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
+source-git-commit: 99293a13fcdf06f37d9747683f7c32ebd9246d18
 workflow-type: tm+mt
-source-wordcount: '6072'
-ht-degree: 54%
+source-wordcount: '6138'
+ht-degree: 53%
 
 ---
 
@@ -38,7 +38,7 @@ Grâce à la nouvelle architecture, Experience Manager est responsable des resso
 >* [Imagerie dynamique](/help/assets/imaging-faq.md)
 >* [Invalidation du cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [Protection des liens dynamiques](/help/assets/hotlink-protection.md)
->* [DIFFUSION de contenu HTTP/2](/help/assets/http2.md)
+>* [Diffusion de contenu HTTP/2](/help/assets/http2.md)
 >* Redirection d’URL au niveau du CDN
 >* Akamai ChinaCDN (pour une diffusion optimale en Chine)
 
@@ -65,11 +65,11 @@ La mise à niveau de Experience Manager Dynamic Media de la version 6.3 à la ve
 >
 >Si vous exécutez votre instance de Experience Manager en mode de compatibilité (c&#39;est-à-dire si le package de compatibilité est installé), vous n&#39;avez pas besoin d&#39;exécuter ces commandes.
 
-Pour toutes les mises à niveau, avec ou sans le module de compatibilité, vous pouvez copier les paramètres prédéfinis de la visionneuse prête à l’emploi fournie initialement avec Dynamic Media en exécutant la commande curl Linux suivante :
+Pour toutes les mises à niveau, avec ou sans le package de compatibilité, vous pouvez copier les paramètres prédéfinis de visionneuse prêts à l’emploi par défaut fournis à l’origine avec Dynamic Media en exécutant la commande suivante de l’option d’activation de Linux® :
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-Pour migrer les paramètres prédéfinis et les configurations de visionneuse personnalisés que vous avez créés à partir de `/etc` vers `/conf`, exécutez la commande d’activation de Linux suivante :
+Pour migrer les paramètres prédéfinis et les configurations de visionneuse personnalisés que vous avez créés à partir de `/etc` vers `/conf`, exécutez la commande d’activation de Linux® suivante :
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
@@ -106,7 +106,10 @@ Voir [Installation de Feature Pack 18912 pour la migration des ressources en vra
 
    * **[!UICONTROL Publication de ressources]** : vous pouvez choisir parmi les trois options suivantes :
       * **[!UICONTROL Immédiatement]** signifie que lorsque les ressources sont chargées, le système intègre les ressources et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.
-      * **[!UICONTROL Lors de]** l’activation, cela signifie que vous devez publier explicitement le fichier avant qu’un lien URL/incorporé ne soit fourni.
+      * **[!UICONTROL Lors de]** l’activation, cela signifie que vous devez publier explicitement le fichier avant qu’un lien URL/incorporé ne soit fourni.<br><!-- CQDOC-17478, Added March 9, 2021-->À partir de la version 6.5.8 de Experience Manager, l’instance de publication de Experience Manager reflète des valeurs de métadonnées Dynamic Media précises, telles que  `dam:scene7Domain` et  `dam:scene7FileStatus` en mode  **[!UICONTROL Lors de l’]** activation, publication uniquement. Pour activer cette fonctionnalité, installez le Service Pack 8, puis redémarrez le Experience Manager. Accédez au Gestionnaire de configuration Sling. Recherchez la configuration de `Scene7ActivationJobConsumer Component` ou créez-en une). Cochez la case **[!UICONTROL Répliquer les métadonnées après la publication Dynamic Media]**, puis appuyez sur **[!UICONTROL Enregistrer]**.
+
+         ![Répliquer les métadonnées après la publication Dynamic Media, case à cocher](assets-dm/replicate-metadata-setting.png)
+
       * **** Publier de manière sélectiveCette option vous permet de contrôler les dossiers publiés dans Dynamic Media. Il vous permet d’utiliser des fonctionnalités telles que la recadrage dynamique ou les rendus dynamiques, ou de déterminer quels dossiers sont publiés exclusivement en Experience Manager pour la prévisualisation. Ces mêmes actifs sont *non* publiés à Dynamic Media pour diffusion dans le domaine public.<br>Vous pouvez définir cette option ici dans la  **[!UICONTROL Dynamic Media Cloud]** Configurationou, si vous préférez, vous pouvez choisir de la définir au niveau du dossier, dans les  **[!UICONTROL Propriétés]** d’un dossier.<br>Voir [Utilisation de la publication sélective dans Dynamic Media.](/help/assets/selective-publishing.md)<br>Si vous modifiez ultérieurement cette configuration, ou si vous la modifiez ultérieurement au niveau du dossier, ces modifications n’affectent que les nouveaux fichiers que vous téléchargez à partir de ce moment. L’état de publication des ressources existantes dans le dossier reste tel quel jusqu’à ce que vous modifiiez manuellement ces ressources à partir de la boîte de dialogue **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]**.
    * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, le Experience Manager peut accéder en toute sécurité et prévisualisation aux rendus Dynamic Media distants (aucun binaire n’est renvoyé à l’instance Experience Manager).
 À moins que vous ne disposiez d’un arrangement spécial pour utiliser votre propre serveur de société ou un serveur spécial, l’Adobe vous recommande de laisser ce paramètre tel qu’il est spécifié.
@@ -117,7 +120,7 @@ Voir [Installation de Feature Pack 18912 pour la migration des ressources en vra
       * **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.
 Pour marquer un dossier sélectionné afin de le synchroniser avec Dynamic Media, sélectionnez un dossier de ressources, puis, dans la barre d’outils, appuyez sur **[!UICONTROL Propriétés]**. Sous l’onglet **[!UICONTROL Détails]**, dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes. Une fois le choix effectué, appuyez sur **[!UICONTROL Enregistrer.]** *À retenir : ces trois options ne sont pas disponibles si vous avez sélectionné auparavant **Synchroniser tout le contenu**.* Voir aussi [Utilisation de la publication sélective au niveau du dossier dans Dynamic Media.](/help/assets/selective-publishing.md)
-         * **[!UICONTROL Hérité]**  : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.
+         * **[!UICONTROL Hérité]**  : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration cloud. L’état détaillé pour les éléments hérités s’affiche par le biais d’une info-bulle.
          * **[!UICONTROL Activer pour les sous-dossiers]**  - Inclure tout ce qui se trouve dans cette sous-arborescence pour la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
          * **[!UICONTROL Désactivé pour les sous-dossiers]**  - Exclure tous les éléments de cette sous-arborescence de la synchronisation vers Dynamic Media.
 
@@ -574,7 +577,7 @@ Le paramètre Scene7 Upload Connection synchronise les ressources du Experience 
 
 ### (Facultatif) Filtrage des ressources en vue de la réplication {#optional-filtering-assets-for-replication}
 
-Dans les déploiements non Dynamic Media, vous dupliquez *tous les* fichiers (images et vidéos) de votre environnement d’auteur Experience Manager au noeud de publication Experience Manager. Ce processus est nécessaire car les serveurs de publication du Experience Manager diffusent également les ressources.
+Dans les déploiements autres que Dynamic Media, vous pouvez répliquer *tous les* fichiers (images et vidéos) de votre environnement d’auteur Experience Manager vers le noeud de publication Experience Manager. Ce processus est nécessaire car les serveurs de publication du Experience Manager diffusent également les ressources.
 
 Cependant, dans les déploiements Dynamic Media, dans la mesure où les ressources sont distribuées par le biais du Cloud Service, il n’est pas nécessaire de répliquer ces mêmes ressources sur les noeuds de publication Experience Manager. Un tel processus de &quot;publication hybride&quot; permet d’éviter des coûts d’enregistrement supplémentaires et des délais de traitement plus longs pour la réplication des ressources. D’autres contenus, tels que les pages du site, continuent d’être diffusés à partir des noeuds de publication du Experience Manager.
 
@@ -589,7 +592,7 @@ Si vous utilisez Dynamic Media pour la création d’images, la vidéo ou les de
   <tr>
    <td> </td>
    <td><strong>Filtrer</strong></td>
-   <td><strong>Type de MIME</strong></td>
+   <td><strong>Type Mime</strong></td>
    <td><strong>Rendus</strong></td>
   </tr>
   <tr>
