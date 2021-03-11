@@ -4,10 +4,10 @@ description: Suggestions et conseils sur  [!DNL Experience Manager] la configura
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 54%
+source-wordcount: '2741'
+ht-degree: 53%
 
 ---
 
@@ -241,7 +241,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 
 ## Recherche des index     {#search-indexes}
 
-Veillez à mettre en œuvre les derniers Service Packs et les correctifs liés aux performances étant donné qu’ils contiennent souvent des mises à jour des index du système. Voir [Conseils d&#39;optimisation des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) pour connaître certaines optimisations d&#39;index.
+Installez [les derniers Service Packs](/help/release-notes/sp-release-notes.md) et les correctifs liés aux performances, car ceux-ci incluent souvent des mises à jour des index système. Voir [conseils d&#39;optimisation des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) pour certaines optimisations d&#39;index.
 
 Créez des index personnalisés pour les demandes que vous exécutez régulièrement. Pour plus d’informations, consultez la [méthodologie pour l’analyse des requêtes lentes](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) et la [création d’index personnalisés](/help/sites-deploying/queries-and-indexing.md). Pour des informations complémentaires au sujet des meilleures pratiques de requête et d’index, consultez les [Meilleures pratiques pour les requêtes et l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -305,6 +305,6 @@ Pour réduire la latence et obtenir un débit élevé grâce à une utilisation 
 * Configurez [!DNL ImageMagick] pour limiter la consommation des ressources.
 * Supprimez les étapes inutiles du workflow [!UICONTROL DAM Update Asset].
 * Configurer la purge des workflows et versions.
-* Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès du service à la clientèle Adobe si d’autres optimisations d’index sont disponibles.
+* Optimisez les index avec les derniers Service Packs et correctifs. Vérifiez auprès du service à la clientèle Adobe si d’autres optimisations d’index sont disponibles.
 * Utilisez guessTotal afin d’optimiser les performances des requêtes.
 * Si vous configurez [!DNL Experience Manager] pour détecter les types de fichiers à partir du contenu des fichiers (en activant **[!UICONTROL Day CQ DAM Mime Type Service]** dans la **[!UICONTROL AEM Web Console]**), téléchargez de nombreux fichiers en vrac pendant les heures creuses, car il consomme beaucoup de ressources.
