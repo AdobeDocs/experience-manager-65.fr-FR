@@ -1,66 +1,50 @@
 ---
-title: Nouveautés de Adobe Experience Manager 6.5 Service Pack 7
-description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 7
+title: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 8
+description: Nouveautés de  [!DNL Experience Manager] Service Pack 8 6.5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
+source-git-commit: 2c6d11f63420040a500bbb75f1146c29f64bdcc5
 workflow-type: tm+mt
-source-wordcount: '2780'
+source-wordcount: '2883'
 ht-degree: 5%
 
 ---
 
 
-# Nouveautés de Adobe Experience Manager 6.5 Service Pack 7 {#aem-whats-new-service-pack}
+# Nouveautés de [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
 
 ![Nouveautés](assets/whatsnew.jpeg)
 
-[!DNL Adobe Experience Manager] Les Service Packs 6.5 offrent de nouvelles fonctionnalités, des améliorations demandées par les clients, ainsi que des améliorations des performances, de la stabilité et de la sécurité à tous les trimestres. La disponibilité trimestrielle facilite l&#39;accès et l&#39;adoption de nouvelles fonctionnalités et innovations.
+[!DNL Adobe Experience Manager] 6.5 Les Service Packs offrent de nouvelles fonctionnalités, des améliorations demandées par les clients, ainsi que des améliorations des performances, de la stabilité et de la sécurité à tous les trimestres. La disponibilité trimestrielle facilite l&#39;accès et l&#39;adoption de nouvelles fonctionnalités et innovations.
 
-Cet article présente les fonctionnalités incluses dans la dernière version du Service Pack 6.5, [les fonctionnalités clés incluses dans les Service Packs 6.5 précédents](#key-features-previous-service-packs) et les [principales AEM versions depuis la dernière version du Service Pack](#key-releases-since-last-sp).
+Cet article présente les fonctionnalités incluses dans le dernier Service Pack, [les fonctionnalités clés incluses dans les Service Packs 6.5 précédents](#key-features-previous-service-packs) et les [versions clés depuis la dernière version du Service Pack](#key-releases-since-last-sp).
 
-## Adobe [!DNL Experience Manager Sites] {#aem-sites}
+## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Disponibilité des déplacements de page et des déploiements MSM en tant qu&#39;opérations asynchrones {#page-moves-msm-asynchronous}
+### Trier les pages Live Copy disponibles pour le déploiement {#sort-livecopy-pages}
 
-Vous pouvez désormais effectuer les déplacements de page et les déploiements MSM en tant qu’opérations asynchrones afin de réduire leur impact sur les performances d’exécution. Vous pouvez planifier les opérations pour une exécution immédiate ou ultérieure. L’état des tâches et étapes de processus associées s’affiche dans une console, ce qui s’avère utile pour surveiller les déploiements MSM à grande échelle.
+Vous pouvez désormais trier les pages Live Copy disponibles pour le déploiement à l’aide des propriétés [!UICONTROL Name], [!UICONTROL Date de la dernière modification] et [!UICONTROL Date de la dernière mise en oeuvre]. La [!UICONTROL dernière date de déploiement] d’une page est une nouvelle propriété introduite dans cette version.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* [!DNL Assets] et  [!DNL Dynamic Media] offrent plusieurs améliorations d’accessibilité. Les améliorations ont trait à la navigation au clavier, à l’utilisation de lecteurs d’écran, ainsi qu’à l’utilisation de technologies d’assistance (AT). Voir [[!DNL Assets] améliorations](/help/release-notes/sp-release-notes.md#assets-6570) et [[!DNL Dynamic Media] améliorations](/help/release-notes/sp-release-notes.md#dynamic-media-6570).
+* Lorsque vous utilisez la fonctionnalité [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md), vous pouvez désormais vue une liste de toutes les [!DNL Sites] pages qui utilisent la ressource. Ces références à une ressource sont disponibles dans la page [!UICONTROL Propriétés] d&#39;une ressource. Cela permet aux administrateurs, aux marketeurs et aux bibliothécaires d’avoir une vue complète de l’utilisation des ressources, ce qui permet un meilleur suivi, une meilleure gestion et une meilleure cohérence de la marque.
 
-* Les utilisateurs peuvent trier les fichiers numériques dans les vues Carte et Colonne.
+* Lors de la suppression d’un élément référencé dans une page Web, [!DNL Experience Manager] affiche un avertissement. Vous pouvez forcer la suppression d’une ressource référencée ou vérifier et modifier les références affichées dans la page [!DNL Properties] de la ressource. Cliquez sur les références pour ouvrir les pages locales et distantes [!DNL Sites].
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] les packages de modules complémentaires sont rendus disponibles une semaine après la publication du  [!DNL Experience Manager] Service Pack planifié.
-
-### Amélioration des performances {#performance-improvements-forms}
-
-[!DNL Experience Manager] 6.5 Service Pack 7 Forms améliore les performances pour :
-
-* Validation des valeurs de champ sur le serveur lors de l’envoi d’un formulaire adaptatif.
-
-* Conversion d’un formulaire PDF en formulaire adaptatif à l’aide de [!DNL Automated Forms Conversion service].
-
-### Modèle de données de formulaire configuration du client HTTP pour optimiser les performances {#fdm-http-client-config}
-
-[!DNL Experience Manager Forms] modèle de données de formulaire lors de l’intégration avec les services Web RESTful en tant que source de données inclut désormais des configurations de client HTTP pour l’optimisation des performances. Voir [Configurer les sources de données](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
-
-### Disponibilité de l&#39;option de réinitialisation pour chaque composant en mode Disposition {#reset-option-layout-mode}
-
-Vous pouvez désormais utiliser l’option reset pour chaque composant en mode Mise en page d’un formulaire adaptatif. Lorsque vous définissez une mise en page à plusieurs colonnes pour un panneau, vous pouvez utiliser cette fonction pour réinitialiser des composants individuels dans le panneau. Voir [Utiliser le mode de mise en page pour redimensionner les composants](../../help/forms/using/resize-using-layout-mode.md#resize-components).
-
-### Prise en charge de Microsoft SQL Server 2019
-
-[!DNL Experience Manager Forms] prend désormais en charge Microsoft SQL Server 2019.
+>Le module complémentaire de [!DNL Experience Manager Forms] est disponible une semaine après la publication du Service Pack [!DNL Experience Manager] planifiée.
 
 ## Fonctions clés des Service Packs {#key-features-previous-service-packs} 6.5 précédents[!DNL Experience Manager]
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### Disponibilité des déplacements de page et des déploiements MSM en tant qu&#39;opérations asynchrones (6.5.7.0) {#page-moves-msm-asynchronous}
+
+Vous pouvez désormais effectuer les déplacements de page et les déploiements MSM en tant qu’opérations asynchrones afin de réduire leur impact sur les performances d’exécution. Vous pouvez planifier les opérations pour une exécution immédiate ou ultérieure. L’état des tâches et étapes de processus associées s’affiche dans une console, ce qui s’avère utile pour surveiller les déploiements MSM à grande échelle.
 
 #### Disponibilité de l&#39;opération de déplacement de page en mode asynchrone (6.5.6.0) {#page-move-asynchronous}
 
@@ -109,6 +93,10 @@ Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du co
 * Amélioration de la gestion des URL incomplètes ou non valides. De telles URL peuvent ralentir l’éditeur de modèles.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* [!DNL Assets] et  [!DNL Dynamic Media] offrent plusieurs améliorations d’accessibilité. Les améliorations ont trait à la navigation au clavier, à l’utilisation de lecteurs d’écran, ainsi qu’à l’utilisation de technologies d’assistance (AT). Voir [[!DNL Assets] améliorations](/help/release-notes/sp-release-notes.md#assets-6570) et [[!DNL Dynamic Media] améliorations](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0).
+
+* Les utilisateurs peuvent trier les ressources numériques dans les vues Carte et Colonne (6.5.7.0).
 
 #### Améliorations de l’accessibilité (6.5.6.0) {#accessibility-assets-6560}
 
@@ -213,13 +201,29 @@ Vous pouvez désormais choisir de publier ou d’annuler la publication de fichi
 
 #### Smart Imaging pour Dynamic Media {#smart-imaging}
 
-L’imagerie intelligente utilise les caractéristiques d’affichage uniques de chaque utilisateur pour fournir automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Smart Imaging](../assets/imaging-faq.md).
+L’imagerie intelligente utilise les caractéristiques d’affichage uniques de chaque utilisateur pour fournir automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir la section [Imagerie dynamique](../assets/imaging-faq.md).
 
 #### Recadrage intelligent dans les profils vidéo pour Dynamic Media (6.5.3.0) {#smart-crop-video}
 
 Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les profils vidéo) est un outil qui utilise la puissance de l’intelligence artificielle d’Adobe Sensei pour détecter et rogner automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille. Voir [A propos de l’utilisation du recadrage intelligent dans les profils vidéo](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### Amélioration des performances (6.5.7.0) {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms améliore les performances pour :
+
+* Validation des valeurs de champ sur le serveur lors de l’envoi d’un formulaire adaptatif.
+
+* Conversion d’un formulaire PDF en formulaire adaptatif à l’aide de [!DNL Automated Forms Conversion service].
+
+#### Modèle de données de formulaire configuration du client HTTP pour optimiser les performances (6.5.7.0) {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] modèle de données de formulaire lors de l’intégration avec les services Web RESTful en tant que source de données inclut désormais des configurations de client HTTP pour l’optimisation des performances. Voir [Configurer les sources de données](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
+
+#### Disponibilité de l&#39;option de réinitialisation pour chaque composant en mode Disposition (6.5.7.0) {#reset-option-layout-mode}
+
+Vous pouvez désormais utiliser l’option reset pour chaque composant en mode Mise en page d’un formulaire adaptatif. Lorsque vous définissez une mise en page à plusieurs colonnes pour un panneau, vous pouvez utiliser cette fonction pour réinitialiser des composants individuels dans le panneau. Voir [Utiliser le mode de mise en page pour redimensionner les composants](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 #### Préremplir un formulaire adaptatif au client (6.5.6.0) {#prefill-merge-data-at-client}
 
@@ -337,19 +341,18 @@ Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et u
 
 Vous pouvez utiliser l’API de traitement par lots pour produire plusieurs communications interactives à partir d’un modèle. Le modèle est une communication interactive sans données. L’API de traitement par lots combine les données avec un modèle pour produire une communication interactive. L&#39;API est utile pour la production de masse de communications interactives. Par exemple, factures de téléphone, relevés de carte de crédit pour plusieurs clients. Voir [Générer plusieurs communications interactives à l’aide de l’API de lot](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Principales versions depuis Adobe Experience Manager 6.5 SP6 {#key-releases-since-last-sp}
+<!-- TBD: Check if the wider team released anything in FY21.
+-->
 
-Entre le 3 septembre 2020 et le 26 novembre 2020, Adobe a publié ce qui suit, en plus des Service Packs et des Fix Packs cumulatifs :
+## Principales versions depuis [!DNL Adobe Experience Manager] 6.5 SP7 {#key-releases-since-last-sp}
 
-* [!DNL Adobe Experience Manager] en tant que Cloud Service  [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) et  [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
+Entre le 26 novembre 2020 et le 25 février 2021, Adobe a publié ce qui suit, en plus des Service Packs et des Cumulative Fix Packs :
 
-* [[!DNL Experience Manager] application de bureau 2.0 (2.0.3.2)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [!DNL Adobe Experience Manager] en tant que Cloud Service  [2020.11.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-11-0.html),  [2020.12.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-12-0.html) et  [2021.1.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
 
-* [Site de référence WKND - 0.0.6](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-0.0.6)
+* [[!DNL Experience Manager] application de bureau 2.1 (2.1.0.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 * [Experience Manager Screens : Feature Pack 202011](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202011.html)
-
-* [Adobe Asset Link v2.2](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
 
 >[!MORELIKETHIS]
 >
