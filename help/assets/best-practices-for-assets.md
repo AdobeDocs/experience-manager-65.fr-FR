@@ -3,7 +3,7 @@ title: Bonnes pratiques pour  [!DNL Assets]
 description: Améliore la stabilité et les performances du système en charge en identifiant et en respectant les meilleures pratiques qui dépendent de votre déploiement et de votre configuration.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 25%
@@ -13,7 +13,7 @@ ht-degree: 25%
 
 # Bonnes pratiques pour [!DNL Assets] {#best-practices-for-assets}
 
-[!DNL Adobe Experience Manager Assets] est essentiel pour fournir des expériences marketing numériques de qualité qui contribuent à la réussite des objectifs commerciaux en augmentant la vélocité du contenu. Si vous travaillez avec un grand nombre de ressources dans [!DNL Experience Manager Assets] ou que vous téléchargez régulièrement/régulièrement de nombreuses ressources, y compris des vidéos et des médias dynamiques, l’optimisation de votre expérience de gestion des ressources numériques est essentielle à l’efficacité du système.
+[!DNL Adobe Experience Manager Assets] est essentiel pour fournir des expériences marketing numériques de qualité qui contribuent à la réussite des objectifs commerciaux en augmentant la vélocité du contenu. Si vous travaillez avec un grand nombre de ressources dans [!DNL Experience Manager Assets] ou que vous téléchargez régulièrement/régulièrement de nombreuses ressources, y compris des vidéos et Dynamic Media, l’optimisation de votre expérience de gestion des ressources numériques est essentielle à l’efficacité du système.
 
 En fonction du positionnement de [!DNL Assets] pour votre organisation et des fonctionnalités que vous utilisez pour l’assimilation de ressources, la génération de rendus et l’extraction des métadonnées, l’identification et le respect des meilleures pratiques dans différents domaines améliorent considérablement la stabilité et les performances du système en cours de chargement.
 
