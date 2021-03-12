@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d17749cb8e923848f8f81360c03b9afba7989ae2
+source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 73%
@@ -225,4 +225,4 @@ Pour résoudre les erreurs courantes, procédez comme suit :
 
 * Si les références distantes ne sont pas récupérées et génèrent un message d’erreur, vérifiez si le déploiement des sites est disponible et recherchez les problèmes de connectivité réseau. Réessayez ultérieurement pour vérifier. [!DNL Assets] le déploiement tente à deux reprises d’établir une connexion avec le  [!DNL Sites] déploiement, puis signale un échec.
 
-![échec de la nouvelle tentative de références distantes de ressources](assets/reference-report-failure.png)
+   ![échec de la nouvelle tentative de références distantes de ressources](assets/reference-report-failure.png)
