@@ -7,10 +7,10 @@ user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.5
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 translation-type: tm+mt
-source-git-commit: fd7a32c1070a0560ca744db041cf809f28672b33
+source-git-commit: ac2f3d69fd20d7779120a194c698d6f0dd6e6a84
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 92%
+source-wordcount: '675'
+ht-degree: 91%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 92%
    + [Vérificateur de lien](external-link-checker.md)
    + [Résolution des incidents liés à AEM](troubleshoot.md)
    + [Gestion de l’accès aux workflows](workflows-managing.md)
-   + [Démarrage de workflows](workflows-starting.md)
+   + [Démarrage d’un workflow](workflows-starting.md)
    + [Administration des workflows](workflows.md)
    + [Administration d’instances de workflow](workflows-administering.md)
    + [Utilisation de cURL avec AEM](curl.md)
@@ -97,6 +97,7 @@ ht-degree: 92%
    + [Affichage principal de la gestion des autorisations](touch-ui-principal-view.md)
    + [Filtre de disposition du contenu](content-disposition-filter.md)
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
+   + [Prise en charge des cookies du même site](same-site-cookie-support.md)
 + Personnalisation  {#personalization}
    + [Personnalisation](personalization.md)
    + [Configuration de ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
@@ -106,8 +107,8 @@ ht-degree: 92%
    + [Configuration de la segmentation](campaign-segmentation.md)
    + [Extension et configuration de l’importateur de conception pour les pages d’entrée](extending-the-design-importer-for-landingpages.md)
    + [Intégration des pages d’entrée à Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ Aperçu {#ecommerce}
-   + [Commerce électronique](ecommerce.md)
++ eCommerce {#ecommerce}
+   + [eCommerce](ecommerce.md)
    + [Concepts ](concepts.md)
    + [Administration du commerce électronique générique](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
