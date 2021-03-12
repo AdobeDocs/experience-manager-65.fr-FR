@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’AEM Sites
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 Sites.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 23656e023a9a0bfc335655f9cfb0530aa917b3ef
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 66%
+source-wordcount: '872'
+ht-degree: 63%
 
 ---
 
@@ -83,7 +83,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 * Amélioration de l’indexation des [fragments d’expérience](/help/sites-authoring/experience-fragments.md) afin que leur contenu soit trouvé dans la recherche des pages où ils sont utilisés.
 * L’option [Exporter vers la cible](/help/sites-administering/experience-fragments-target.md) permet désormais d’envoyer le fragment d’expérience sous forme de fichier JSON (HTML par défaut), ou les deux.
 
-## Traduction  {#translation}
+## Traduction {#translation}
 
 * Simplifiez la création de projets de traduction à l’aide de Project Masters
 * Simplifiez l’exécution des projets de traduction en définissant les tâches de traduction sur l’état approuvé par défaut.
@@ -110,7 +110,13 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 
 >[!CAUTION]
 >
->at.js 2.x n’est pas pris en charge avec AEM au moment de la publication de la version AEM 6.5. Utilisez la version la plus récente de at.js 1.x
+>Actuellement :
+>
+>* Seul `at.js 1.x` est pris en charge si vous utilisez Adobe Target comme moteur de ciblage dans AEM console Activités.
+   >
+   >
+* `at.js. 1.x` et `at.js 2.x` sont pris en charge si vous utilisez l’exportation de fragments d’expérience vers la Cible et si vous exécutez des Activités dans la console de Cible.
+
 
 * L’intégration Adobe Target peut désormais utiliser l’API Target Standard. Les versions antérieures d’AEM utilisent l’API HTTP Cible Classic, qui est désormais obsolète.
 * Adobe Target `mbox.js` version 63 est incluse. L’Adobe recommande vivement de basculer l’implémentation vers `at.js` v1.x.
