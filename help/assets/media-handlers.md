@@ -3,9 +3,9 @@ title: Traiter des fichiers à l’aide de gestionnaires de médias et de workfl
 description: Découvrez les gestionnaires de médias et comment utiliser des workflows pour effectuer des tâches sur vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 42b6bf50145ad82cd4cade3fa0de7effac3584b9
+source-git-commit: a6758adf5ac8992e27c13b87ae65c83b5b8695c7
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2161'
 ht-degree: 52%
 
 ---
@@ -35,7 +35,7 @@ Les gestionnaires de médias suivants sont disponibles dans [!DNL Assets] et tra
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b>  - Lorsque vous téléchargez un fichier MP3, il est  [traité à l’aide d’une bibliothèque](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html) tierce. La bibliothèque calcule une longueur approximative non précise si le MP3 a un débit variable (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
