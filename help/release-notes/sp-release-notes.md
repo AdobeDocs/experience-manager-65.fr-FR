@@ -4,7 +4,7 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d96730eed6447815c40307a8d60b6ffc9ff45c2e
+source-git-commit: 89b037fbde6003ccf86336c4467df415e233986b
 workflow-type: tm+mt
 source-wordcount: '2822'
 ht-degree: 5%
@@ -36,7 +36,7 @@ Les principales fonctionnalités et améliorations introduites dans [!DNL Adobe 
 
 * Lorsque vous utilisez la fonctionnalité [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md), vous pouvez désormais vue une liste de toutes les [!DNL Sites] pages qui utilisent la ressource. Ces références à une ressource sont disponibles dans la page [!UICONTROL Propriétés] d&#39;une ressource. Cela permet aux administrateurs, aux marketeurs et aux bibliothécaires d’avoir une vue complète de l’utilisation des ressources, ce qui permet un meilleur suivi, une meilleure gestion et une meilleure cohérence de la marque.
 
-* Lors de la suppression d’un élément référencé dans une page Web, [!DNL Experience Manager] affiche un avertissement. Vous pouvez forcer la suppression d’une ressource référencée ou vérifier et modifier les références affichées dans la page [!DNL Properties] de la ressource. Cliquez sur les références pour ouvrir les pages locales et distantes [!DNL Sites].
+* Lors de la suppression d’un élément référencé dans une page Web, [!DNL Experience Manager] [affiche un avertissement](/help/assets/use-assets-across-connected-assets-instances.md#asset-usage-references). Vous pouvez forcer la suppression d’une ressource référencée ou vérifier et modifier les références affichées dans la page [!DNL Properties] de la ressource. Cliquez sur les références pour ouvrir les pages locales et distantes [!DNL Sites].
 
 * Tri des pages Live Copy disponibles pour le déploiement à l’aide des propriétés [!UICONTROL Name], [!UICONTROL Date de la dernière modification,] et [!UICONTROL Date de la dernière exécution].
 
