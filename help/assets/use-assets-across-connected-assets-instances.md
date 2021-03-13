@@ -3,10 +3,10 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
+source-git-commit: 8df7e4403c6664b52573cd4479b3a6a08d2cb6fa
 workflow-type: tm+mt
-source-wordcount: '2754'
-ht-degree: 73%
+source-wordcount: '2717'
+ht-degree: 72%
 
 ---
 
@@ -106,13 +106,15 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
    >
    >Tous les rendus disponibles sur le déploiement distant sont récupérés lorsque les auteurs obtiennent une ressource. Si vous souhaitez créer d’autres rendus d’une ressource récupérée, ignorez cette étape de configuration. Le workflow [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] est déclenché et crée d’autres rendus. Ces rendus sont disponibles uniquement sur le déploiement [!DNL Sites] local, et non sur le déploiement DAM distant.
 
-1. Ajoutez le déploiement [!DNL Sites] comme origine autorisée dans la configuration CORS du déploiement [!DNL Assets].
+1. Ajoutez le déploiement [!DNL Sites] comme origine autorisée dans la configuration CORS du déploiement [!DNL Assets]. Pour plus d&#39;informations, voir [comprendre CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
-   1. Connectez-vous à l’aide des informations d’identification d’administrateur. Recherchez `Cross-Origin`. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
+<!-- TBD: See if these steps are not required.
+    1. Log in using the administrator credentials. Search for `Cross-Origin`. Access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-   1. Pour créer une configuration CORS concernant le déploiement [!DNL Sites], cliquez sur l’option Ajouter ![icône Ajouter des ressources](assets/do-not-localize/assets_add_icon.png) en regard de **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+    1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
-   1. Dans le champ **[!UICONTROL Origines autorisées]**, entrez l’URL de l’instance locale [!DNL Sites], c’est-à-dire `https://[local_sites]:[port]`. Enregistrez la configuration.
+    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Save the configuration.
+-->
 
 Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] configurés et le déploiement [!DNL Assets].
 
@@ -173,7 +175,7 @@ Pour vue et gérer les références sur le déploiement [!DNL Assets], procédez
 1. Sélectionnez un fichier dans la console [!DNL Assets] et cliquez sur **[!UICONTROL Propriétés]** dans la barre d&#39;outils.
 1. Cliquez sur **[!UICONTROL Références]** onglet. Voir **[!UICONTROL Références locales]** pour l’utilisation de la ressource sur le déploiement [!DNL Assets]. Voir **[!UICONTROL Références distantes] pour l’utilisation de la ressource dans le déploiement [!DNL Sites] où la ressource a été récupérée à l’aide de la fonctionnalité Ressources connectées.
 
-   ![références distantes dans les propriétés de ressources](assets/connected-assets-remote-reference.png)
+   ![références distantes dans la page Propriétés des ressources](assets/connected-assets-remote-reference.png)
 
 1. Les références des pages [!DNL Sites] indiquent le nombre total de références pour chaque [!DNL Sites] local. Il peut s&#39;écouler un certain temps avant de trouver toutes les références et d&#39;afficher le nombre total de références.
 1. La liste des références est interactive et les utilisateurs DAM peuvent cliquer sur une référence pour ouvrir la page de référence. Si les références distantes ne peuvent pas être extraites pour une raison quelconque, une notification s’affiche pour informer l’utilisateur de l’échec.
@@ -223,6 +225,6 @@ Pour résoudre les erreurs courantes, procédez comme suit :
 
    ![Erreur de cookie dans Chrome en mode incognito](assets/chrome-cookies-incognito-dialog.png)
 
-* Si les références distantes ne sont pas récupérées et génèrent un message d’erreur, vérifiez si le déploiement des sites est disponible et recherchez les problèmes de connectivité réseau. Réessayez ultérieurement pour vérifier. [!DNL Assets] le déploiement tente à deux reprises d’établir une connexion avec le  [!DNL Sites] déploiement, puis signale un échec.
+* Si les références distantes ne sont pas récupérées et génèrent un message d’erreur, vérifiez si le déploiement [!DNL Sites] est disponible et recherchez les problèmes de connectivité réseau. Réessayez ultérieurement pour vérifier. [!DNL Assets] le déploiement tente à deux reprises d’établir une connexion avec le  [!DNL Sites] déploiement, puis signale un échec.
 
    ![échec de la nouvelle tentative de références distantes de ressources](assets/reference-report-failure.png)
