@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 89b037fbde6003ccf86336c4467df415e233986b
+source-git-commit: 60764db23115e7f548a82a67955331da2b858973
 workflow-type: tm+mt
-source-wordcount: '2822'
+source-wordcount: '2812'
 ht-degree: 5%
 
 ---
@@ -208,7 +208,7 @@ Il existe deux manières d’installer automatiquement Adobe Experience Manager 
 
 R. Placez le package dans le dossier `../crx-quickstart/install` lorsque le serveur est disponible en ligne. Le package est automatiquement installé.
 
-B. Utilisez l’API [HTTP de Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html). Utilisez `cmd=install&recursive=true` pour installer les packages imbriqués.
+B. Utilisez l’API [HTTP de Package Manager](/help/sites-administering/package-manager.md#package-share). Utilisez `cmd=install&recursive=true` pour installer les packages imbriqués.
 
 >[!NOTE]
 >
