@@ -3,9 +3,9 @@ title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Ex
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: 31dcf48691fa849f757579e2e57dc3a9c2bbbbee
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2340'
 ht-degree: 55%
 
 ---
@@ -78,23 +78,17 @@ Pour personnaliser la page des propriétés de métadonnées, y compris l’ajou
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]** pour ouvrir la page des propriétés des ressources sélectionnées.
 1. Modifiez les propriétés de métadonnées des ressources sélectionnées dans les différents onglets.
-1. Pour vue à l’éditeur de métadonnées d’un fichier spécifique, annulez la sélection des fichiers restants dans la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la ressource particulière.
-
-   >[!NOTE]
-   >
-   >* Dans la page de propriétés, vous pouvez supprimer des fichiers de la liste de ressources en annulant la sélection. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
-   >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
-
-
-1. Pour sélectionner un autre schéma de métadonnées pour les ressources, cliquez sur **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez le schéma de votre choix.
-1. Enregistrez les modifications.
+1. Pour vue des métadonnées d’une ressource spécifique, annulez la sélection des ressources restantes dans la liste. Si vous annulez la sélection de quelques ressources sur la page [!UICONTROL Propriétés], les métadonnées de ces ressources ne sont pas mises à jour.
+1. Pour sélectionner un autre schéma de métadonnées pour les ressources, cliquez sur **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez un schéma. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Cliquez sur **[!UICONTROL Envoyer]**.
 
-   >[!CAUTION]
-   >
-   >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
+![Le schéma de métadonnées s’applique en bloc à plusieurs fichiers](assets/metadata-schema-bulk-edit.gif)
 
-## Importation de métadonnées  {#import-metadata}
+>[!CAUTION]
+>
+>Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
+
+## Importation de métadonnées {#import-metadata}
 
 [!DNL Assets] permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
@@ -129,7 +123,7 @@ Pour ajouter une date et un horodatage au cours de l’importation de métadonn�
 
 ## Exporter des métadonnées {#export-metadata}
 
-Vous pouvez exporter des métadonnées pour plusieurs fichiers au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, [!DNL Experience Manager] parcourt les propriétés du noeud de ressources `jcr:content/metadata` et de ses noeuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
+Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, [!DNL Experience Manager] parcourt les propriétés du noeud de ressources `jcr:content/metadata` et de ses noeuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
 
 Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot :
 
