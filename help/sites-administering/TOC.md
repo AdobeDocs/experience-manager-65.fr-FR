@@ -7,10 +7,10 @@ user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.5
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 translation-type: tm+mt
-source-git-commit: ac2f3d69fd20d7779120a194c698d6f0dd6e6a84
+source-git-commit: c56e93b99553993e1c144c2ad2cb1299c9894812
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 91%
+source-wordcount: '662'
+ht-degree: 92%
 
 ---
 
@@ -114,7 +114,6 @@ ht-degree: 91%
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [AEM Commerce – Préparation pour le RGPD](gdpr-compliance-commerce.md)
 + Intégration {#integration}
    + [Intégration à des services tiers](third-party-services.md)
    + [Intégration à Salesforce](salesforce.md)
@@ -124,7 +123,7 @@ ht-degree: 91%
    + [Configuration du suivi des liens pour Adobe Analytics](adobeanalytics-link.md)
    + [Mise en correspondance des données de composant avec les propriétés Adobe Analytics](adobeanalytics-mapping.md)
    + [Configuration du suivi vidéo pour Adobe Analytics](adobeanalytics-video.md)
-   + [FAQ sur la diffusion de contenu HTTP2](scene7-http2faq.md)
+   + [FAQ sur la diffusion de contenu HTTP/2](scene7-http2faq.md)
    + [Résolution des incidents liés à votre intégration Adobe Campaign](troubleshooting-campaignintegration.md)
    + [Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector](sharepoint-connector-licenses.md)
    + [SharePoint Connector](sharepoint-connector.md)
@@ -163,8 +162,7 @@ ht-degree: 91%
    + [Meilleures pratiques MSM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites – Préparation pour le RGPD](gdpr-compliance-sites.md)
    + [Traitement des demandes RGPD pour AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
-   + [AEM Commerce – Préparation pour le RGPD](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
-+ Gestion de contenu {#contentmanagement}
+   + [AEM Commerce – Préparation pour le RGPD](gdpr-compliance-commerce.md)
    + [Utilisation des modules](package-manager.md)
    + [Administration des balises](tags.md)
    + [Exportateur de page](page-exporter.md)
