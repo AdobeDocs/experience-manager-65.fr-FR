@@ -3,17 +3,19 @@ title: Écriture différée XMP sur les rendus
 description: Découvrez comment la fonctionnalité d’écriture différée XMP propage les modifications apportées aux métadonnées d’une ressource à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: 7faa6638eff422599450946a257e53970d25189c
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 58%
+source-wordcount: '784'
+ht-degree: 57%
 
 ---
 
 
 # Écriture différée XMP sur les rendus {#xmp-writeback-to-renditions}
 
-La fonction d’écriture différée XMP de [!DNL Adobe Experience Manager Assets] permet de répliquer les modifications de métadonnées de fichier dans les rendus de la ressource. Lorsque vous modifiez les métadonnées d’un fichier dans [!DNL Experience Manager Assets] ou lorsque vous téléchargez le fichier, les modifications sont initialement stockées dans le noeud de fichier dans CRXDe. La fonction d’écriture différée XMP propage les modifications de métadonnées à tous les rendus ou à des rendus spécifiques du fichier.
+Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] reproduit les modifications de métadonnées apportées aux rendus de la ressource d’origine. Lorsque vous modifiez les métadonnées d’un fichier depuis le composant Ressources ou lors du téléchargement du fichier, les modifications sont initialement stockées dans le noeud de métadonnées de la hiérarchie des ressources.
+
+La fonction Écriture différée XMP permet de propager les modifications de métadonnées à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux. La fonctionnalité n&#39;écrit que les propriétés de métadonnées qui utilisent l&#39;espace de nommage `jcr`, c&#39;est-à-dire qu&#39;une propriété nommée `dc:title` est réécrite, mais qu&#39;une propriété nommée `mytitle` ne l&#39;est pas.
 
 Supposons que vous remplaciez la propriété [!UICONTROL Titre] d’une ressource intitulée `Classic Leather` par `Nylon`.
 
@@ -23,11 +25,9 @@ Dans ce cas, la propriété [!DNL Experience Manager Assets] enregistre les modi
 
 ![metadata_saved](assets/metadata_stored.png)
 
-Cependant, [!DNL Experience Manager Assets] ne propage pas automatiquement les modifications de métadonnées aux rendus d’un fichier.
+Cependant, [!DNL Experience Manager Assets] ne propage pas automatiquement les modifications de métadonnées aux rendus d’un fichier. Voir [comment activer l’écriture différée XMP](#enable-xmp-writeback).
 
-La fonction d’écriture différée XMP permet de propager les modifications de métadonnées à tous les rendus ou à des rendus spécifiques du fichier. Toutefois, les modifications ne sont pas stockées sous le nœud de métadonnées dans la hiérarchie de la ressource. Au lieu de cela, cette fonction incorpore les modifications dans les fichiers binaires pour les rendus.
-
-## Activation de l’écriture différée XMP {#enabling-xmp-writeback}
+## Activer l’écriture différée XMP {#enable-xmp-writeback}
 
 Pour activer la propagation des modifications apportées aux métadonnées aux rendus de la ressource lors de leur chargement, modifiez la configuration **[!UICONTROL Créateur de rendus de gestion des actifs numériques Adobe CQ]** dans Configuration Manager.
 
@@ -47,7 +47,7 @@ Pour que la fonction Écriture différée XMP propage les métadonnées aux min
 1. Sur la page Modèles, ouvrez le modèle de workflow **[!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques]**.
 1. Sur la page de propriétés **[!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques]**, ouvrez l’étape **[!UICONTROL Processus d’écriture différée XMP]**.
 1. Dans la boîte de dialogue [!UICONTROL Propriétés de l’étape], cliquez sur l’onglet **[!UICONTROL Processus]**.
-1. Dans la zone **Arguments**, ajoutez `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, puis cliquez sur **OK**.
+1. Dans la zone **Arguments**, ajoutez `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, puis cliquez sur **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
