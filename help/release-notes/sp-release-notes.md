@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 60764db23115e7f548a82a67955331da2b858973
+source-git-commit: dfaa25ea72e50b60b8a40883ffb0241c131cc846
 workflow-type: tm+mt
-source-wordcount: '2812'
+source-wordcount: '3352'
 ht-degree: 5%
 
 ---
@@ -168,6 +168,56 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 >
 >[!DNL Experience Manager Forms] publie les packages de modules complémentaires une semaine après la date de publication prévue du Service Pack [!DNL Experience Manager].
 
+**Formulaires adaptatifs**
+
+* Lorsque vous insérez un tableau avec une rangée répétable dans un panneau répétable contenant plusieurs instances dans un formulaire adaptatif, le tableau est toujours ajouté à la première instance du panneau (NPR-35635).
+
+* Lorsque la mise au point de l&#39;onglet atteint à nouveau le composant CAPTCHA après avoir vérifié correctement sa présence dans un formulaire adaptatif, [!DNL Experience Manager Forms] affiche le message d&#39;erreur `Provide Captcha phrase to proceed` (NPR-35539).
+
+**Communication interactive**
+
+* Lorsque vous envoyez un formulaire traduit, les messages d’envoi s’affichent en anglais et ne sont pas traduits dans la langue appropriée (NPR-35808).
+
+* Lorsque vous incluez une condition de masquage dans les fragments XDP ou de document joints, le chargement de la communication interactive échoue (NPR-35745).
+
+**Correspondence Management**
+
+* Lorsque vous modifiez une lettre, le chargement des modules avec des conditions prend plus de temps (NPR-35325).
+
+* Lorsque vous sélectionnez un fichier dans le volet de navigation de gauche qui n&#39;est pas inclus dans une lettre, puis que vous sélectionnez le fichier suivant, la mise en surbrillance bleue n&#39;est pas supprimée de l&#39;actif précédemment sélectionné (NPR-35851).
+
+* Lorsque vous modifiez des champs de texte dans une lettre, [!DNL Experience Manager Forms] affiche le message d’erreur `Text Edit Failed` (CQ-4313770).
+
+**Processus**
+
+* Lorsque vous essayez d’ouvrir un formulaire adaptatif sur une application mobile [!DNL Experience Manager Forms] pour iOS, l’application s’arrête pour répondre (CQ-4314825).
+
+* L’onglet [!UICONTROL Tâches] de l’espace de travail HTML affiche des caractères HTML (NPR-35298).
+
+**XMLFM**
+
+* Lorsque vous générez un document XML à l’aide du service Output, l’erreur `OutputServiceException` se produit pour certains fichiers XML (CQ-4311341, CQ-4313893).
+
+* Lorsque vous appliquez la propriété exposant au premier caractère de la puce, la taille de la puce devient plus petite (CQ-4306476).
+
+* Les PDF forms générés à l’aide du service Output n’incluent pas de bordures (CQ-4312564).
+
+**Designer**
+
+* Lorsque vous ouvrez un fichier XDP dans [!DNL Experience Manager Forms] Designer, un fichier designer.log est généré dans le même dossier que le fichier XDP (CQ-4309427, CQ-4310865).
+
+**Formulaires HTML5**
+
+* Lorsque vous cochez une case dans un formulaire adaptatif dans le navigateur Web [!DNL Safari] pour [!DNL iOS 14.1 or 14.2], d’autres champs ne s’affichent pas (NPR-35652).
+
+**Gestion des Forms**
+
+* Aucun message de confirmation n’indique la réussite du transfert en masse des fichiers XDP vers le référentiel CRX (NPR-35546).
+
+**Document Security**
+
+* Plusieurs problèmes ont été signalés pour l&#39;option [!UICONTROL Modifier la stratégie] sur AdminUI (NPR-35747).
+
 Pour plus d’informations sur les mises à jour de sécurité, voir [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Installer 6.5.8.0 {#install}
@@ -223,6 +273,32 @@ B. Utilisez l’API [HTTP de Package Manager](/help/sites-administering/package-
 1. Le lot OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.3 ou ultérieure (Utilisez la console Web : `/system/console/bundles`).
 
 Pour connaître les plates-formes certifiées pour fonctionner avec cette version, voir les [exigences techniques](/help/sites-deploying/technical-requirements.md).
+
+### Installer le module complémentaire Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>Ignorez si vous n’utilisez pas le Forms Experience Manager. Les correctifs dans le Forms Experience Manager sont diffusés par le biais d’un module complémentaire distinct une semaine après la publication du Service Pack [!DNL Experience Manager] planifiée.
+
+1. Assurez-vous d’avoir installé le Service Pack de Adobe Experience Manager.
+1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [versions AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) pour votre système d’exploitation.
+1. Installez le module complémentaire Forms comme décrit dans [Installation des modules complémentaires AEM Forms](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
+
+>[!NOTE]
+>
+>AEM 6.5.8.0 inclut une nouvelle version du [package de compatibilité AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Si vous utilisez une ancienne version du package de compatibilité AEM Forms et que vous mettez à jour vers AEM 6.5.8.0, installez la dernière version du package après l&#39;installation du package Forms-Ajoute-On.
+
+### Installer Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+
+>[!NOTE]
+>
+>Passez cette étape si vous n’utilisez pas AEM Forms sous JEE. Les correctifs d’Adobe Experience Manager Forms on JEE sont diffusés par le biais d’un programme d’installation distinct.
+
+Pour plus d’informations sur l’installation cumulative du programme d’installation pour Experience Manager Forms on JEE et sur la configuration après le déploiement, voir les [notes de mise à jour](jee-patch-installer-65.md).
+
+>[!NOTE]
+>
+>Après avoir installé le programme d’installation cumulatif pour Experience Manager Forms on JEE, installez le dernier module complémentaire Forms, supprimez le module complémentaire Forms du dossier `crx-repository\install`, puis redémarrez le serveur.
 
 ### UberJar {#uber-jar}
 
