@@ -2,11 +2,12 @@
 title: Digital Rights Management des actifs
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] .
 contentOwner: AG
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 80%
+source-wordcount: '1401'
+ht-degree: 79%
 
 ---
 
