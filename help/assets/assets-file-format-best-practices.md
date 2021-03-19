@@ -2,10 +2,11 @@
 title: Recommandations relatives au traitement des formats de fichier pris en charge
 description: Recommandations relatives au traitement des différents types de fichiers pris en charge à l’aide de  [!DNL Experience Manager Assets].
 contentOwner: AG
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '466'
 ht-degree: 47%
 
 ---
