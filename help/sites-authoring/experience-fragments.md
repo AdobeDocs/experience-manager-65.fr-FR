@@ -1,7 +1,7 @@
 ---
 title: Fragments d’expérience
 seo-title: Fragments d’expérience
-description: 'null'
+description: Fragments d’expérience
 seo-description: 'null'
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5c88d9cfdd6238961aa46d36ebc1206a5d0507e0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 96%
 
 ---
@@ -240,7 +240,7 @@ Vous pouvez désormais utiliser le fragment d’expérience lors de la création
 
 1. Créez une instance du composant Fragment d’expérience. Pour ce faire, faites glisser le composant sur le système de paragraphes de la page depuis l’explorateur de composants :
 
-   ![xf-08](assets/xf-08.png)
+   ![xf-06](assets/xf-08.png)
 
 1. Ajoutez le fragment d’expérience proprement dit à l’instance de composant. Pour ce faire, vous pouvez effectuer l’une des opérations suivantes :
 
