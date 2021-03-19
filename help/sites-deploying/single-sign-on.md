@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '756'
 ht-degree: 81%
 
 ---
@@ -37,7 +38,7 @@ Configurez les deux services suivants pour identifier le nom de l’attribut qui
 
 Vous devez spécifier le même nom d’attribut pour les deux services. L&#39;attribut est inclus dans le `SimpleCredentials` fourni à `Repository.login`. La valeur de l’attribut est inutile et ignorée. Sa simple présence est importante et vérifiée.
 
-## CONFIGURATION SSO  {#configuring-sso}
+## CONFIGURATION SSO {#configuring-sso}
 
 Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionnaire d’authentification SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler) :
 
