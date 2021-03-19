@@ -2,10 +2,11 @@
 title: Comparaison [!DNL Assets] des offres de la bibliothèque multimédia
 description: Comparez  [!DNL Experience Manager Assets] les fonctionnalités de la bibliothèque multimédia et connaissez les différences.
 contentOwner: AG
+role: Architecte, Leader
 translation-type: tm+mt
-source-git-commit: 82c2df0e53e8ef595ad158ef46089d6e4964ca26
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '610'
 ht-degree: 21%
 
 ---
