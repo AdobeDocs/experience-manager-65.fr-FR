@@ -5,10 +5,13 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guide de l’utilisateur de création de l’interface utilisateur classique d’AEM 6.5
 user-guide-description: Ce guide traite des concepts de création dans AEM interface utilisateur classique.
+feature-set: Experience Manager Sites
+feature: 'Création  '
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '274'
 ht-degree: 84%
 
 ---
