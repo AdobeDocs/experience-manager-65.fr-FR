@@ -7,11 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
+feature: Gestion des ressources
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 95%
+source-wordcount: '1454'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +48,7 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans AEM en vous référant aux ressources suivantes :
 
-Le livre blanc Meilleures pratiques [Accentuation des images dans l’Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) s’applique également à AEM.
+Le livre blanc relatif aux bonnes pratiques [Accentuation des images dans Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) s’applique également à AEM.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
