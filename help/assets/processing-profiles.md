@@ -8,11 +8,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 90%
+source-wordcount: '1373'
+ht-degree: 89%
 
 ---
 
