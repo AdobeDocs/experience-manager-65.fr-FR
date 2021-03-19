@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 6d0ff6ae47688ba7f0e071bad40808fb3466246f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2804'
 ht-degree: 2%
 
 ---
@@ -451,7 +452,7 @@ Pour localiser l’instance créée pour une application Facebook ou Twitter :
 
 Pour chaque configuration du gestionnaire d’authentification OAuth, deux configurations supplémentaires sont créées dans l’instance :
 
-* Gestionnaire de synchronisation par défaut d’Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler) - Aucune modification n’est requise, mais vous pouvez examiner les mappages de champs utilisateur comment les champs Facebook sont mappés à un noeud de profil d’utilisateur CQ. Notez également que &quot;Nom du gestionnaire de synchronisation&quot; correspond à l’ID de configuration du fournisseur OAuth.
+* Gestionnaire de synchronisation par défaut d’Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler) - Aucune modification n’est requise, mais vous pouvez examiner les mappages des champs utilisateur comment les champs Facebook sont mappés à un noeud de profil d’utilisateur CQ. Notez également que &quot;Nom du gestionnaire de synchronisation&quot; correspond à l’ID de configuration du fournisseur OAuth.
 * Module de connexion externe Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory) - Aucune modification n&#39;est requise ici, mais vous pouvez remarquer que &#39;Nom du fournisseur d&#39;identité&#39; et &#39;Nom du gestionnaire de synchronisation&#39; sont identiques et pointent vers les configurations OAuth et de gestionnaire de synchronisation correspondantes, respectivement.
 
 Pour plus d’informations, voir [Authentification avec le module de connexion externe Apache Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
