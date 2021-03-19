@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1484'
 ht-degree: 2%
 
 ---
@@ -132,7 +133,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 | Arabe | Allemand | Norvégien |
 |---|---|---|
 | Bulgare | Grec | Polonais |
-| Chinois (simplifié) | Créole haïtien | Portugais |
+| Chinois (simplifié) | Créole haïtien | brésilien |
 | Chinois (traditionnel) | Hébreu | Roumain |
 | Tchèque | Hongrois | Russe |
 | Danois | Indonésien | Slovaque |
