@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 103468b8e6e5bdf870156f85b7f547f190044561
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3169'
+source-wordcount: '3171'
 ht-degree: 81%
 
 ---
@@ -35,7 +36,7 @@ Les formulaires adaptatifs vous permettent de créer des formulaires attrayants,
 
 Pour en savoir plus sur la création d’un formulaire adaptatif, consultez [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md).
 
-## Interface de création de formulaires adaptatifs  {#adaptive-form-authoring-ui}
+## Interface de création de formulaires adaptatifs {#adaptive-form-authoring-ui}
 
 L’interface utilisateur optimisée pour les écrans tactiles permet de créer des formulaires adaptatifs de manière intuitive et offre les avantages suivants :
 
