@@ -7,10 +7,11 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1140'
 ht-degree: 78%
 
 ---
@@ -24,7 +25,7 @@ Par exemple, lorsqu’elle dépose sa candidature pour un poste, la personne à 
 
 Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthodes suivantes :
 
-## Utilisation du gestionnaire d’instances via des scripts   {#using-instance-manager-via-scripts-nbsp}
+## Utilisation du gestionnaire d’instances via des scripts  {#using-instance-manager-via-scripts-nbsp}
 
 1. En mode d’édition, sélectionnez un panneau, puis appuyez sur ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **Activer la répétition du panneau**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
 
