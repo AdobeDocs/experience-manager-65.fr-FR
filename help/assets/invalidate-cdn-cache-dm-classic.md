@@ -5,11 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+feature: Dynamic Media Classic
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 47%
+source-wordcount: '726'
+ht-degree: 49%
 
 ---
 
@@ -30,7 +32,7 @@ Voir aussi [Présentation du cache dans Dynamic Media Classic (Scene7)](https:
 
 **Pour invalider le cache CDN au moyen de Dynamic Media Classic :**
 
-1. Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app), puis connectez-vous à votre compte.
+1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) puis connectez-vous à votre compte.
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
