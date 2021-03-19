@@ -1,11 +1,12 @@
 ---
 title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies.
+feature: Gestionnaire de plusieurs sites
 translation-type: tm+mt
-source-git-commit: 1725f19d0676680ae89ad7ea39fa3ae1deaeb8a3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '4170'
-ht-degree: 81%
+source-wordcount: '4173'
+ht-degree: 82%
 
 ---
 
