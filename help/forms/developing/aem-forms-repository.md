@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '9157'
+source-wordcount: '9158'
 ht-degree: 2%
 
 ---
@@ -269,7 +270,7 @@ Appelez la méthode du service Repository pour écrire la ressource, en spécifi
 
 ### Écrire des ressources à l’aide de l’API Java {#write-resources-using-the-java-api}
 
-Ecrivez une ressource à l’aide de l’API du service de référentiel (Java) :
+Ecrivez une ressource à l’aide de l’API du service Repository (Java) :
 
 1. Inclure les fichiers de projet
 
