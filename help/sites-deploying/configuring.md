@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 8f35717324cd2c1524fb2cf931b3ce21be05729a
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2133'
 ht-degree: 88%
 
 ---
@@ -143,7 +144,7 @@ La connexion unique permet à l’utilisateur d’accéder à plusieurs système
 
 Voir [Connexion unique](/help/sites-deploying/single-sign-on.md) pour des détails complets.
 
-### Mappage de ressource  {#resource-mapping}
+### Mappage de ressources {#resource-mapping}
 
 Le mappage de ressource permet de définir des redirections, des URL Vanity et des hôtes virtuels pour AEM.
 
