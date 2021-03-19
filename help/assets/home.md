@@ -2,11 +2,13 @@
 title: Guide d’Assets
 description: Ce guide porte sur toutes les tâches de ressources Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 user-guide-title: Guide d’Assets
+feature: Gestion des ressources
+role: Professionnel, Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 23%
+source-wordcount: '327'
+ht-degree: 24%
 
 ---
 
@@ -47,7 +49,7 @@ Ce guide couvre toutes les tâches [!DNL Experience Manager Assets], telles que 
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Forum de la communauté des ressources Experience Manager](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
-* [Guide de l&#39;utilisateur du répartiteur](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [Guide de l&#39;utilisateur du répartiteur](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
 * [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
