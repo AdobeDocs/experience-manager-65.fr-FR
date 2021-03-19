@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '298'
 ht-degree: 78%
 
 ---
@@ -36,7 +37,7 @@ Procédez aux étapes suivantes pour définir une URL d’instance d’auteur po
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Définition de l’URL de l’instance de publication pour ActivationManagerImpl (gestionnaire d’activation de l’instance de publication)  {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
+## Définition de l’URL de l’instance de publication pour ActivationManagerImpl (gestionnaire d’activation de l’instance de publication) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
 Suivez ces étapes pour définir l’URL de l’instance de publication pour le gestionnaire d’activation de l’instance de publication :
 
