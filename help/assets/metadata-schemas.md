@@ -2,10 +2,11 @@
 title: 'Schémas de métadonnées pour définir la disposition de la page des propriétés de métadonnées dans  [!DNL Adobe Experience Manager Assets]. '
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3601'
+source-wordcount: '3604'
 ht-degree: 60%
 
 ---
