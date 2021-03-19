@@ -6,10 +6,13 @@ audience: end-user
 user-guide-title: Guide de déploiement d’AEM 6.5
 breadcrumb-title: Guide de déploiement
 user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.5, y compris sur le déploiement cloud d’Adobe Managed Services.
+feature-set: Experience Manager Sites
+feature: Déploiement
+role: Architecte
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '354'
 ht-degree: 93%
 
 ---
@@ -30,7 +33,7 @@ ht-degree: 93%
    + [Installation autonome personnalisée](custom-standalone-install.md)
    + [Début et arrêt d’AEM à partir de la ligne de commande](command-line-start-and-stop.md)
    + [Configuration des magasins de nœuds et des entrepôts de données dans AEM 6](data-store-config.md)
-   + [Nettoyage des révisions](revision-cleanup.md)
+   + [Nettoyage de révision](revision-cleanup.md)
    + [Requêtes et indexation Oak](queries-and-indexing.md)
    + [Exécution d’AEM avec TarMK Cold Standby](tarmk-cold-standby.md)
    + [Prise en charge RDBMS dans AEM 6.5](rdbms-support-in-aem.md)
@@ -88,7 +91,7 @@ ht-degree: 93%
    + [Restructuration des référentiels de Forms dans AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Restructuration des référentiels e-Commerce dans AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Restructuration des référentiels pour AEM Communities dans la version 6.5](communities-repository-restructuring-in-aem-6-5.md)
-+ Aperçu {#ecommerce}
++ eCommerce {#ecommerce}
    + [Aperçu du commerce électronique](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
