@@ -7,11 +7,12 @@ uuid: 6d182bbc-b47a-4c97-af70-c960b52fdfac
 contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 1a816672b3e97346f5a7a984fcb4dc0df1a5b0da
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 10%
+source-wordcount: '968'
+ht-degree: 11%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 10%
 
 ![](do-not-localize/10-test-your-adaptive-form.png)
 
-Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
+Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
 Une fois que le formulaire adaptatif est prêt, il est important de le tester avant de le déployer pour les utilisateurs finaux. Vous pouvez tester manuellement (des tests fonctionnels) chaque champ ou automatiser le test de votre formulaire adaptatif. Lorsque vous disposez de plusieurs formulaires adaptatifs, le test manuel de chaque champ de tous les formulaires adaptatifs devient une tâche intimidante.
 
@@ -111,7 +112,7 @@ Un cas de test est un ensemble d’actions permettant de tester une fonctionnali
 
 Une action est une activité spécifique sur un formulaire adaptatif, telle qu’un clic sur un bouton. Pour créer un cas de test et des actions permettant de valider les données utilisateur pour chaque champ de formulaire adaptatif :
 
-1. Dans [!UICONTROL CRXDE Lite], accédez au dossier `/content/forms/af/create-first-adaptive-form`. Cliquez avec le bouton droit sur le noeud de dossier **[!UICONTROL create-first-adaptive-form]** et cliquez sur **[!UICONTROL Créer]** **[!UICONTROL Créer un fichier]**. Dans le champ **[!UICONTROL Nom]**, saisissez `prefill.xml` et cliquez sur **[!UICONTROL OK]**. Ajoutez le code suivant au fichier 
+1. Dans [!UICONTROL CRXDE Lite], accédez au dossier `/content/forms/af/create-first-adaptive-form`. Cliquez avec le bouton droit sur le noeud de dossier **[!UICONTROL create-first-adaptive-form]** et cliquez sur **[!UICONTROL Créer]** **[!UICONTROL Créer un fichier]**. Dans le champ **[!UICONTROL Nom]**, saisissez `prefill.xml` et cliquez sur **[!UICONTROL OK]**. Ajoutez le code suivant au fichier :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -166,7 +167,7 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
      </tbody>
    </table>
 
-1. Créez un fichier, js.txt, dans le noeud **[!UICONTROL WeRetailFormTests]**. Ajoutez les éléments suivants dans le fichier :
+1. Créez un fichier, js.txt, dans le noeud **[!UICONTROL WeRetailFormTests]**. Ajoutez le suivant au fichier :
 
    ```shell
    #base=.
