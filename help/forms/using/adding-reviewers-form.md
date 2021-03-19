@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '522'
 ht-degree: 76%
 
 ---
@@ -25,7 +26,7 @@ AEM Forms vous permet d’associer un groupe de réviseurs à un formulaire. Les
 
 Les groupes de réviseurs assignés à un formulaire peuvent uniquement analyser les envois du formulaire spécifié.
 
-## Condition requise {#prerequisite}
+## Prérequis {#prerequisite}
 
 ### Activation de la propriété des groupes de réviseurs d’envoi pour des formulaires adaptatifs à l’aide de l’éditeur de schéma de métadonnées {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
 
