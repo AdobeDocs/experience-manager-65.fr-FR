@@ -1,7 +1,7 @@
 ---
 title: Meilleures pratiques en matière de workflow
 seo-title: Meilleures pratiques en matière de workflow
-description: 'null'
+description: Meilleures pratiques en matière de workflow
 seo-description: 'null'
 uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1924'
 ht-degree: 91%
 
 ---
@@ -51,7 +51,7 @@ Cela peut se traduire par divers avantages :
 
 Pour obtenir des conseils en matière d’optimisation des performances pour les workflows DAM, reportez-vous au [Guide d’optimisation des performances d’AEM Assets](/help/assets/performance-tuning-guidelines.md).
 
-### Configuration du nombre maximum de workflows simultanés  {#configure-the-maximum-number-of-concurrent-workflows}
+### Configuration du nombre maximum de workflows simultanés {#configure-the-maximum-number-of-concurrent-workflows}
 
 AEM peut autoriser l’exécution simultanée de plusieurs threads de workflow. Par défaut, le nombre de threads est configuré sur la moitié du nombre de cœurs de processeur du système.
 
