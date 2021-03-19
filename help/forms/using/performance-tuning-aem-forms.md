@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 76%
 
 ---
@@ -60,7 +61,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Les paramètres recommandés sont pour le JDK Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) et doivent être augmentés ou réduits selon votre configuration système.
+>Les paramètres recommandés concernent le JDK Core et HotSpot 1.7 (64 bits) de Windows 2008 R2 8 et Oracle et doivent être augmentés ou réduits selon votre configuration système.
 
 ## Utilisation d’un serveur Web {#using-a-web-server}
 
