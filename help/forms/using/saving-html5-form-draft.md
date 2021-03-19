@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '325'
 ht-degree: 66%
 
 ---
@@ -50,7 +51,7 @@ Pour activer la fonctionnalité Enregistrer en tant que brouillon pour votre [pr
  </tbody>
 </table>
 
-## Stockage et liste des brouillons  {#drafts-storage-and-listing}
+## Stockage et liste des brouillons {#drafts-storage-and-listing}
 
 Après l’activation de la fonctionnalité Enregistrer en tant que brouillon pour un formulaire, lorsque le formulaire est enregistré, il est répertorié dans le [composant Drafts and Submissions](/help/forms/using/draft-submission-component.md). Vous pouvez extraire le formulaire enregistré et commencer son remplissage depuis le composant Drafts and Submissions.
 
