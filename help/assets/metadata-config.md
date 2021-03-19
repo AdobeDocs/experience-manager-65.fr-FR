@@ -2,11 +2,12 @@
 title: Configuration et administration de la fonctionnalité de métadonnées.
 description: Configuration et administration de  [!DNL Experience Manager Assets] fonctionnalités liées à l’ajout et à la gestion de métadonnées.
 contentOwner: AG
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 56%
+source-wordcount: '1954'
+ht-degree: 55%
 
 ---
 
