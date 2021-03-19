@@ -6,11 +6,12 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
+role: Administrator
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +87,7 @@ User Management stocke les données utilisateur dans les tables de base de donn�
  </tbody>
 </table>
 
-### Référentiel AEM {#aem-repository}
+### Référentiel AEM  {#aem-repository}
 
 Les données de gestion des utilisateurs pour les utilisateurs qui ont accédé au moins une fois aux applications Forms sous `https://'[server]:[port]'lc` sont également stockées dans le référentiel AEM.
 
@@ -175,7 +176,7 @@ Procédez comme suit pour supprimer les données User Management pour un ID prin
 
 1. Démarrez le serveur AEM Forms.
 
-### Référentiel AEM {#aem-repository-1}
+### Référentiel AEM  {#aem-repository-1}
 
 Les données des utilisateurs Forms JEE se trouvent dans le référentiel AEM s’ils ont accédé à l’instance d’auteur AEM Forms au moins une fois. Vous pouvez accéder et supprimer des données utilisateur d’un référentiel AEM.
 
