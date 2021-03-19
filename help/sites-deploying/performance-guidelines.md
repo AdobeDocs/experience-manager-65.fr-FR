@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: a678716e2c0520891e4228bc49b075f070ea45b7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2994'
 ht-degree: 86%
 
 ---
@@ -74,7 +75,7 @@ Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à
    <td><p>Analyses</p> </td>
   </tr>
   <tr>
-   <td><p>Communautés</p> </td>
+   <td><p>Communities</p> </td>
    <td><p>Author-CS </p> </td>
    <td><p>Red Hat </p> </td>
    <td><p>WebSphere</p> </td>
@@ -242,7 +243,7 @@ Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Application de bureau </p> </td>
+   <td><p>Appli de bureau  </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
