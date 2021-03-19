@@ -1,14 +1,14 @@
 ---
 title: Programme d’installation des correctifs AEM Forms JEE
-description: 'null'
+description: Programme d’installation des correctifs AEM Forms JEE
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 translation-type: tm+mt
-source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 45%
+source-wordcount: '484'
+ht-degree: 49%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 45%
 
 >[!NOTE]
 >
->[Contactez le ](https://www.adobe.com/fr/account/sign-in.supportportal.html) support technique pour plus d&#39;informations ou pour obtenir le correctif.
+>[Contactez le ](https://www.adobe.com/account/sign-in.supportportal.html) support technique pour plus d&#39;informations ou pour obtenir le correctif.
 
 ## À propos du programme d’installation de correctif {#about-the-patch-installer}
 
@@ -31,11 +31,11 @@ Le programme d’installation de correctif Forms JEE 6.5 AEM comprend tous les p
 
 1. Effectuez une sauvegarde du dossier de déploiement &lt;*AEM_forms_root*>/. Il est nécessaire si vous décidez de désinstaller le Quick Fix.
 1. Arrêtez le serveur d’applications.
-1. Extrayez le fichier d&#39;archive du programme d&#39;installation du correctif sur votre disque dur.
+1. Extrayez le fichier d’archive du programme d’installation de correctif sur votre disque dur.
 1. Dans le répertoire, dont le nom dépend du système d’exploitation que vous utilisez :
 
-   * ****
-WindowsAccédez au répertoire approprié sur le support d’installation ou le dossier de votre disque dur dans lequel vous avez copié le programme d’installation, puis cliquez sur le fichier aemforms65_cfp_install.exe en appuyant sur le doublon.
+   * **Windows**
+Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur dans lequel vous avez copié le programme d’installation, puis cliquez sur le fichier aemforms65_cfp_install.exe en appuyant sur le doublon.
 
       * (Windows 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
@@ -50,7 +50,7 @@ LinuxAccédez au répertoire approprié et, à partir d’une invite de commande
 1. Dans le panneau Introduction, cliquez sur **[!UICONTROL Suivant]**.
 1. Dans l’écran Choisir le répertoire d’installation, vérifiez que l’emplacement par défaut affiché correspond à votre installation ou cliquez sur **[!UICONTROL Parcourir]** pour sélectionner le dossier dans lequel AEM Forms est actuellement installé, puis cliquez sur **[!UICONTROL Suivant]**.
 1. Lisez le résumé du correctif Quick Fix, puis cliquez sur **[!UICONTROL Suivant]**.
-1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**. 
+1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**.
 1. Lorsque l’installation est terminée, cliquez sur **[!UICONTROL Suivant]** pour appliquer les mises à jour du Quick Fix à vos fichiers installés.
 
 1. Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *&lt;AEMForms_Install_Dir>\configurationManager\bin* et mettez à jour **axis.jar** vers **axis-1.4.1.4.1.1.1.4.1.1.1.1.4.1.1.1.1 1.jar** dans les fichiers suivants :
@@ -83,7 +83,7 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 ## Modules touchés {#impacted-modules}
 
 * Services de document
-* Protection des documents
+* Document Security
 * Foundation JEE
 
 [Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
