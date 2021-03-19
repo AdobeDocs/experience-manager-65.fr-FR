@@ -9,10 +9,11 @@ content-type: reference
 discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 54dd71655aeae00bcaa27847f91af07f15faf478
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '7840'
+source-wordcount: '7843'
 ht-degree: 38%
 
 ---
@@ -388,7 +389,7 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 
 **Solution** : vérifiez le mot de passe. Le mot de passe enregistré dans l’agent de réplication n’est pas le même mot de passe que celui utilisé pour créer le KeyStore.
 
-#### Problème : InvalidAlgorithmParameterException  {#problem-invalidalgorithmparameterexception}
+#### Problème : InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
 Ce problème est provoqué par une erreur de configuration dans votre instance d’auteur Experience Manager. Le processus Java™ sur l’auteur n’obtient pas le `javax.net.ssl.trustStore` correct. L’erreur est visible dans le journal de réplication :
 
