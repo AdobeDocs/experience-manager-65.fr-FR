@@ -2,11 +2,12 @@
 title: '[!DNL Assets] guide de dimensionnement'
 description: Meilleures pratiques pour déterminer des mesures efficaces afin d’estimer l’infrastructure et les ressources nécessaires au déploiement [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 68%
+source-wordcount: '1617'
+ht-degree: 67%
 
 ---
 
@@ -57,7 +58,7 @@ Les exemples de données renseignés dans l’outil montrent à quel point il es
 
 Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banque de données partagée soit par l&#39;intermédiaire d&#39;une banque de données de fichiers partagés sur un lecteur connecté au réseau, soit par l&#39;intermédiaire d&#39;une banque de données Amazon S3. Dans ce cas, les instances individuelles n’ont pas besoin de conserver une copie des fichiers binaires. En outre, une banque de données partagée facilite la réplication sans binaire et réduit la bande passante utilisée pour répliquer des ressources vers des environnements de publication.
 
-#### Scénarios d’utilisation     {#use-cases}
+#### Scénarios d’utilisation  {#use-cases}
 
 La banque de données peut être partagée entre une instance d’auteur principale et de secours afin de réduire le temps nécessaire à la mise à jour de l’instance de secours avec les modifications apportées à l’instance principale. Vous pouvez également partager la banque de données entre les instances d’auteur et de publication afin de réduire le trafic lors de la réplication.
 
