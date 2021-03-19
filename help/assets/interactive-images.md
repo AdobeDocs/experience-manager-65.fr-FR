@@ -8,16 +8,18 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
+feature: Images interactives
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '4330'
+source-wordcount: '4335'
 ht-degree: 99%
 
 ---
 
 
-# Images interactives{#interactive-images}
+# Images interactives {#interactive-images}
 
 Vous pouvez facilement réaliser des expériences riches et engageantes pour les clients à partir d’images statiques en faisant glisser et en déposant des zones réactives « Shoppable ». Les zones réactives Shoppable associent des informations supplémentaires sur un produit ou un service avec une fonction « Ajouter au panier » ou « Acheter » directe, au point de vente. Les clients peuvent appuyer ou cliquer sur ces zones réactives et accéder directement au produit ou service, l’ajouter à un panier d’achat ou encore être dirigés vers une page web. De telles expériences directes augmentent l’engagement et la conversion des clients sur votre site web.
 
@@ -377,9 +379,9 @@ L’intégration revient simplement à supprimer la balise `IMG` et à la rempla
 
 Pour appliquer un « recadrage » à une image interactive Shoppable pour un environnement réactif, vous pouvez inclure l’attribut de configuration de l’image interactive `ZoomView.iscommand` au chemin d’accès, où `ZoomView` correspond au composant à appeler et `iscommand` correspond à la commande de service d’images « crop » que vous appliquez.
 
-Voir l’attribut de configuration [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Voir l’attribut de configuration [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=fr).
 
-Voir la commande de service d’images [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
+Voir la commande de service d’images [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=fr).
 
 Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rapide existant de votre site web.
 
