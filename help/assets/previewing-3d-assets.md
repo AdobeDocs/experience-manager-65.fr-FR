@@ -3,16 +3,17 @@ title: Prévisualisation de fichiers 3D
 description: Découvrez comment prévisualiser des ressources 3D
 contentOwner: Rick Brough
 docset: aem65
+feature: Ressources 3D
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '566'
 ht-degree: 100%
 
 ---
 
 
-# Prévisualisation de ressources 3D dans AEM{#previewing-3d-assets-aem}
+# Prévisualisation de ressources 3D dans AEM {#previewing-3d-assets-aem}
 
 Adobe Experience Manager prend en charge le chargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
 
