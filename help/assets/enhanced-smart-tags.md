@@ -2,11 +2,13 @@
 title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
+feature: Balises dynamiques, Recherche
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 48%
+source-wordcount: '1602'
+ht-degree: 50%
 
 ---
 
@@ -167,7 +169,7 @@ Vous pouvez déclencher le processus de balisage à partir de la console de proc
 
 >[!NOTE]
 >
->Lors des cycles de balisage suivants, seules les ressources modifiées sont à nouveau balisées avec des balises nouvellement entraînées. Cependant, même les ressources non modifiées sont balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel du processus de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources non modifiées sont balisées lorsque l’intervalle de temps dépasse six mois.
+>Lors des cycles de balisage suivants, seules les ressources modifiées sont à nouveau balisées avec des balises nouvellement entraînées. Toutefois, même les ressources non modifiées sont balisées si l’intervalle entre le dernier cycle de balisage et l’actuel pour le workflow de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources non modifiées sont balisées lorsque l’intervalle de temps dépasse six mois.
 
 ## Traiter ou modérer les balises actives appliquées {#manage-smart-tags}
 
