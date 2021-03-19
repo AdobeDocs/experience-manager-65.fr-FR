@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
+role: Administrator
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2980'
 ht-degree: 6%
 
 ---
@@ -41,7 +42,7 @@ Pour plus d&#39;informations, voir [Configuration de l&#39;activation](enablemen
 
 ## Terminologie {#terminology}
 
-### Resource {#resource}
+### Ressource {#resource}
 
 Les ressources sont essentielles pour une [communauté d&#39;activation](overview.md#enablement-community). Ce sont les matériaux affectés aux membres qui leur permettent d&#39;améliorer leurs compétences.
 
