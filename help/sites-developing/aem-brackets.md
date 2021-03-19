@@ -1,7 +1,7 @@
 ---
 title: Extension AEM Brackets
 seo-title: Extension AEM Brackets
-description: 'null'
+description: Extension AEM Brackets
 seo-description: 'null'
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 translation-type: tm+mt
-source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '931'
 ht-degree: 55%
 
 ---
@@ -26,7 +26,7 @@ L’extension AEM Brackets offre un workflow fluide pour modifier les composant
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
-### Fonctions {#features}
+### Fonctionnalités {#features}
 
 Les principales fonctionnalités de l’extension AEM Brackets sont les suivantes :
 
