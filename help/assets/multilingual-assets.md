@@ -2,10 +2,12 @@
 title: Ressources multilingues et traduction des ressources
 description: Découvrez comment automatiser les workflows pour traduire des ressources, notamment des fichiers binaires, des métadonnées et des balises en plusieurs langues.
 contentOwner: AG
+feature: Gestion des ressources
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '170'
 ht-degree: 46%
 
 ---
