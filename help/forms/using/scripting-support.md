@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3909'
+source-wordcount: '3911'
 ht-degree: 98%
 
 ---
@@ -493,7 +494,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 |---|---|
 | target | Adresse URL à laquelle les données sont envoyées. L’omission de cet attribut implique que l’application de traitement XFA obtienne l’URI à l’aide d’une technique spécifique au produit, telle que l’accès aux informations spécifiques au produit dans l’objet config. |
 
-## arborescence  {#tree}
+## arborescence {#tree}
 
 <table>
  <tbody>
