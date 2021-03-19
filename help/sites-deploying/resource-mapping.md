@@ -10,16 +10,17 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '538'
 ht-degree: 66%
 
 ---
 
 
-# Mappage de ressource{#resource-mapping}
+# Mappage de ressources{#resource-mapping}
 
 Le mappage de ressource permet de définir des redirections, des URL Vanity et des hôtes virtuels pour AEM.
 
