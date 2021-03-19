@@ -2,10 +2,11 @@
 title: Considérations et exigences relatives au réseau
 description: Traite des considérations relatives au réseau lors de la conception d’un déploiement [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
+role: Architecte, Administrateur
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '994'
 ht-degree: 72%
 
 ---
