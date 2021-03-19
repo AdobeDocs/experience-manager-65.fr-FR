@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2447'
+source-wordcount: '2448'
 ht-degree: 93%
 
 ---
@@ -123,11 +124,11 @@ Passez en revue les exigences techniques pour AEM 6.5 et vérifiez si votre log
 
 [Tableau de bord des opérations](/help/sites-administering/operations-dashboard.md)
 
-[Meilleures pratiques en matière de surveillance des ressources](/help/assets/assets-monitoring-best-practices.md)
+[Bonnes pratiques en matière de surveillance des ressources](/help/assets/assets-monitoring-best-practices.md)
 
 [Contrôle des ressources de serveur à l’aide de la console JMX](/help/sites-administering/jmx-console.md)
 
-[Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md)
+[Nettoyage de révision](/help/sites-deploying/revision-cleanup.md)
 
 **Sauvegarde/restauration et reprise sur sinistre :**
 
