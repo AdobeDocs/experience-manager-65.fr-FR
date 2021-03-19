@@ -8,16 +8,18 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
+feature: Images panoramiques,Gestion des ressources
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 78%
+source-wordcount: '587'
+ht-degree: 80%
 
 ---
 
 
-# Images panoramiques{#panoramic-images}
+# Images panoramiques {#panoramic-images}
 
 Cette section décrit comment utiliser la visionneuse d’images panoramiques pour le rendu d’images panoramiques sphériques afin de profiter d’une expérience de visionnage immersive à 360° d’une pièce, d’une propriété, d’un lieu ou d’un paysage.
 
@@ -43,7 +45,7 @@ Pour télécharger des ressources à utiliser avec la visionneuse d’images pan
 
 Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées spécifiques à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
 
-1. Ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte.
+1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte.
 
 1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images.]**
 1. Sur la page Publication sur hébergeur d’images, dans le menu déroulant **[!UICONTROL Contexte de publication]** près de la partie supérieure, sélectionnez **[!UICONTROL Image Serving.]**
@@ -80,8 +82,8 @@ Si vous avez fait glisser une image dans le composant Média panoramique au sein
 
 ## Aperçu des images panoramiques {#previewing-panoramic-images}
 
-Voir aussi [Aperçu des ressources](/help/assets/previewing-assets.md).
+Voir [Aperçu des ressources](/help/assets/previewing-assets.md).
 
-## Publication des images panoramiques   {#publishing-panoramic-images}
+## Publication des images panoramiques {#publishing-panoramic-images}
 
 Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
