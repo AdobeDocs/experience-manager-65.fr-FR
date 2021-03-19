@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '840'
 ht-degree: 87%
 
 ---
@@ -113,7 +114,7 @@ Outre les classes type et name, le composant de champ contient également une au
   <tr>
    <td>Légende</td>
    <td>caption</td>
-   <td>N/A</td>
+   <td>NA</td>
   </tr>
   <tr>
    <td>Widget</td>
@@ -140,7 +141,7 @@ Chaque champ contient un widget associé qui représente l’élément de l’in
   </tr>
   <tr>
    <td>Bouton<br type="_moz" /> </td>
-   <td>N/A</td>
+   <td>NA</td>
    <td>xfaButton<br type="_moz" /> </td>
    <td>buttonfieldwidget<br type="_moz" /> </td>
    <td>input type=button<br type="_moz" /> </td>
