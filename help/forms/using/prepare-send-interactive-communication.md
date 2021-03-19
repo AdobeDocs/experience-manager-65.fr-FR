@@ -7,10 +7,11 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: 04e1b722cc9be1c4f51b629caffabe1a3f06d28e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2062'
 ht-degree: 37%
 
 ---
@@ -88,7 +89,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu, tel que des fragments de
 
    Procédez à la gestion des pièces jointes de la communication interactive.
 
-### Gestion des pièces jointes  {#manage-attachments}
+### Gestion des pièces jointes {#manage-attachments}
 
 1. Sélectionnez **[!UICONTROL Pièce jointe]**. L’interface utilisateur de l’agent affiche les pièces jointes disponibles de la manière dont elles ont été configurées lors de la création de la communication interactive.
 
