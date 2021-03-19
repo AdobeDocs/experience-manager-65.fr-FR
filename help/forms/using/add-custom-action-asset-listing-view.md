@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
+feature: Correspondence Management
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1383'
 ht-degree: 59%
 
 ---
@@ -35,7 +36,7 @@ Cette personnalisation est illustrée par un scénario qui ajoute une commande �
 
 Pour suivre le scénario ci-après ou un scénario similaire, vous devez disposer des connaissances suivantes :
 
-* CRX
+* CRX 
 * JavaScript
 * Java
 
