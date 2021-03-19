@@ -2,11 +2,12 @@
 title: Configuration du balisage des ressources à l’aide de Smart Content Service
 description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans  [!DNL Adobe Experience Manager], à l’aide de Smart Content Service.
 contentOwner: AG
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 178b1433de1d6b1e20527755414a494d4291935e
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 55%
+source-wordcount: '2171'
+ht-degree: 56%
 
 ---
 
@@ -17,7 +18,7 @@ Avant de pouvoir début le balisage de vos ressources à l’aide de Smart Conte
 
 Avant d’utiliser Smart Content Service, vérifiez les points suivants :
 
-* [Intégration à Adobe Developer Console](#integrate-adobe-io).
+* [Intégration dֺ’ à Adobe Developer Console](#integrate-adobe-io).
 * [Formation de Smart Content Service](#training-the-smart-content-service).
 
 * Installez le dernier [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
@@ -280,7 +281,7 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
    * Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
    * Le balisage est pris en charge dans les paramètres régionaux dans lesquels [!DNL Experience Manager] est pris en charge. Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=fr).
 
-* Pour rechercher des ressources avec des balises actives (régulières ou améliorées), utilisez [!DNL Assets] Omnisearch (recherche de texte intégral). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
+* Pour rechercher des ressources à l’aide de balises intelligentes (standard ou améliorées), utilisez la recherche de texte intégral d’[!DNL Assets]. Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 
 >[!MORELIKETHIS]
 >
