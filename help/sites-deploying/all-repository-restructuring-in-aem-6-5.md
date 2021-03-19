@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
+feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: 838e194f699b0832839c80f4ba9503c9d5a15945
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2721'
+source-wordcount: '2722'
 ht-degree: 82%
 
 ---
@@ -639,7 +640,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
  </tbody>
 </table>
 
-### Langues de traduction  {#translation-languages}
+### Langues de traduction {#translation-languages}
 
 <table>
  <tbody>
@@ -670,7 +671,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
  </tbody>
 </table>
 
-### Règles de traduction  {#translation-rules}
+### Règles de traduction {#translation-rules}
 
 <table>
  <tbody>
