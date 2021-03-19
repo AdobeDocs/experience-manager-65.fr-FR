@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
+role: Administrator
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1210'
 ht-degree: 3%
 
 ---
@@ -179,7 +180,7 @@ Lors de la réindexation, il existe un compromis entre la mémoire et les perfor
 La valeur par défaut raisonnable est 5000 :
 
 * Si la mémoire pose problème, indiquez un nombre inférieur.
-* Si la vitesse pose problème, indiquez un nombre plus élevé pour augmenter la vitesse.
+* Si la vitesse est un problème, indiquez un nombre plus élevé pour augmenter la vitesse.
 
 ### Exécution de l&#39;outil de réindexation MSRP à l&#39;aide de la commande cURL {#running-msrp-reindex-tool-using-curl-command}
 
