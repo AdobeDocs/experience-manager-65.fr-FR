@@ -7,11 +7,13 @@ audience: end-user
 user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
+feature-set: Experience Manager Forms
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: 4e4625fe20045a337c7bce780c57819c334fa4d6
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3718'
-ht-degree: 70%
+source-wordcount: '3720'
+ht-degree: 71%
 
 ---
 
@@ -143,7 +145,7 @@ ht-degree: 70%
    + [Création de formulaires adaptatifs accessibles](using/creating-accessible-adaptive-forms.md)
    + [Création de formulaires avec des sections répétables](using/creating-forms-repeatable-sections.md)
    + [Incorporation d’un formulaire adaptatif ou d’une communication interactive dans une page des sites AEM](using/embed-adaptive-form-aem-sites.md)
-   + [Incorporation d’un formulaire adaptatif dans une page Web externe](using/embed-adaptive-form-external-web-page.md)
+   + [Incorporation d’un formulaire adaptatif dans une page web externe](using/embed-adaptive-form-external-web-page.md)
    + [Styles intégrés des composants de formulaire adaptatif](using/inline-style-adaptive-forms.md)
    + [Présentation de la séquence de formulaires en plusieurs étapes](using/introduction-form-sequence.md)
    + [Fonctionnalités de disposition des formulaires adaptatifs](using/layout-capabilities-adaptive-forms.md)
