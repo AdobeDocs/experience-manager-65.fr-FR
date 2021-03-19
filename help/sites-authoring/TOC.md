@@ -6,11 +6,14 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.5
 breadcrumb-title: Guide de création
 user-guide-description: Découvrez les principaux concepts de création de contenu dans AEM.
+feature-set: Experience Manager Sites
+feature: 'Création  '
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: a74be2627dd63c246eaf4576827f1b2ea16d3146
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 88%
+source-wordcount: '301'
+ht-degree: 87%
 
 ---
 
@@ -47,7 +50,7 @@ ht-degree: 88%
    + [Bonnes pratiques](best-practices.md)
 + Fonctions de site et de page {#siteandpage}
    + [Utilisation des balises](tags.md)
-   + [Création de modèles de page ](templates.md)
+   + [Création de modèles de page](templates.md)
    + [Système de style](style-system.md)
    + [Utilisation des versions de page](working-with-page-versions.md)
    + [Outil de comparaison des pages](page-diff.md)
@@ -80,7 +83,7 @@ ht-degree: 88%
    + [Analyse des performances de page](ci-analyze.md)
    + [Affichage des données d’analyse de page](pa-using.md)
    + [Ajout de fonctionnalités Search&amp;Promote à une page](search-and-promote.md)
-+ Personnalisation  {#personalization}
++ Personnalisation {#personalization}
    + [Personnalisation](personalization.md)
    + [Aperçu des pages à l’aide des données ContextHub](ch-previewing.md)
    + [Création de contenu ciblé en mode Ciblage](content-targeting-touch.md)
