@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '640'
 ht-degree: 84%
 
 ---
@@ -87,7 +88,7 @@ Les options de configuration suivantes sont disponibles :
 
    * `org.postgresql.Driver` pour PostgreSQL ;
    * `com.ibm.db2.jcc.DB2Driver` pour DB2 ;
-   * `oracle.jdbc.OracleDriver` pour Oracle ;
+   * `oracle.jdbc.OracleDriver` pour l&#39;Oracle ;
    *  `com.mysql.jdbc.Driver` pour MySQL et MariaDB (expérimentaux) ;
    * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` pour Microsoft SQL Server (expérimental).
 
@@ -101,7 +102,7 @@ Un format de chaîne d’URL différent est utilisé dans la configuration de la
 
 * `jdbc:postgresql:databasename` pour PostgreSQL ;
 * `jdbc:db2://localhost:port/databasename` pour DB2 ;
-* `jdbc:oracle:thin:localhost:port:SID` pour Oracle ;
+* `jdbc:oracle:thin:localhost:port:SID` pour l&#39;Oracle ;
 *  `jdbc:mysql://localhost:3306/databasename` pour MySQL et MariaDB (expérimentaux) ;
 * `jdbc:sqlserver://localhost:1453;databaseName=name` pour Microsoft SQL Server (expérimental).
 
