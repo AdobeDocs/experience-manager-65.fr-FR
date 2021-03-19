@@ -2,10 +2,11 @@
 title: Utiliser le pixelliseur PDF pour générer des rendus
 description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer.
 contentOwner: AG
+role: Développeur, administrateur
 translation-type: tm+mt
-source-git-commit: b68311d593730d1c441b863967b15e6481758267
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '722'
 ht-degree: 43%
 
 ---
