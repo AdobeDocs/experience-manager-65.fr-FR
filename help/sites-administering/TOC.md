@@ -6,10 +6,13 @@ audience: admin-user
 user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.5
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
+feature-set: Experience Manager Sites
+feature: Administration
+role: Administrator
 translation-type: tm+mt
-source-git-commit: c56e93b99553993e1c144c2ad2cb1299c9894812
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '664'
 ht-degree: 92%
 
 ---
@@ -98,7 +101,7 @@ ht-degree: 92%
    + [Filtre de disposition du contenu](content-disposition-filter.md)
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Prise en charge des cookies du même site](same-site-cookie-support.md)
-+ Personnalisation  {#personalization}
++ Personnalisation {#personalization}
    + [Personnalisation](personalization.md)
    + [Configuration de ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [Contexte client](client-context.md)
