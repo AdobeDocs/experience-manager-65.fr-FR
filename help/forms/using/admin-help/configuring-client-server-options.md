@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '10273'
+source-wordcount: '10275'
 ht-degree: 85%
 
 ---
@@ -70,7 +71,7 @@ Hauteur : minimum = 450 ; maximum = 800
 
 **Activer la mise en cache des informations d’identification du client :** sélectionnez cette option pour permettre aux utilisateurs de mettre en cache leurs informations d’identification (nom d’utilisateur et mot de passe). Lorsque les informations d’identification d’un utilisateur sont mises en cache, il n’a plus à les saisir à chaque fois qu’il ouvre un document ou lorsqu’il clique sur le bouton Actualiser de la page de gestion des stratégies de sécurité dans Adobe Acrobat. Vous pouvez spécifier le nombre de jours à l’issue duquel les utilisateurs doivent à nouveau fournir ces informations. Si le nombre de jours est fixé à 0, les informations sont mises en cache indéfiniment.
 
-## Configuration des utilisateurs et administrateurs de Document Security  {#configuring-document-security-users-and-administrators}
+## Configuration des utilisateurs et administrateurs de Document Security {#configuring-document-security-users-and-administrators}
 
 ### Attribution de rôles Document Security aux administrateurs {#assigning-document-security-roles-to-administrators}
 
