@@ -6,8 +6,9 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 59%
@@ -28,7 +29,7 @@ ht-degree: 59%
    + [Utilisation des métadonnées de fichier](metadata.md)
    + [Ressources multilingues](multilingual-assets.md)
    + [ [!DNL Adobe Stock] Utilisation des ressources dans les ressources](aem-assets-adobe-stock.md)
-   + [Prévisualisation de fichiers 3D](previewing-3d-assets.md)
+   + [Prévisualisation de ressources 3D](previewing-3d-assets.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Balises intelligentes améliorées](enhanced-smart-tags.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
@@ -69,7 +70,7 @@ ht-degree: 59%
    + [Images interactives](interactive-images.md)
    + [Vidéos interactives](interactive-videos.md)
    + [Vidéo 360 VR](/help/assets/360-video.md)
-   + [Intégration de visionneuses de médias dynamiques à Adobe Analytics et Adobe Launch](/help/assets/launch.md)
+   + [Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch](/help/assets/launch.md)
    + [Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées](custom-pop-ups.md)
    + [Diffusion d’images optimisées pour un site réactif](responsive-site.md)
    + [Aperçu de ressources Dynamic Media](previewing-assets.md)
@@ -80,7 +81,7 @@ ht-degree: 59%
    + [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
    + [Utilisation de la publication sélective dans Dynamic Media](selective-publishing.md)
    + [Invalidation du cache CDN via Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidation du cache CDN via Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
+   + [Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Étendre les actifs {#extending}
@@ -127,7 +128,7 @@ ht-degree: 59%
    + [Modèles de ressources](asset-templates.md)
    + [Recommandations relatives au partage de dossier avec [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
-   + [Configuration d’ [!DNL Assets]  avec  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configuration d’ [!DNL Assets] avec [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publier des dossiers dans [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publier des collections dans [!DNL Brand Portal]](brand-portal-publish-collection.md)
