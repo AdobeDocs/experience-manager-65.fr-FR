@@ -8,10 +8,11 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
+feature: Modèle de données de formulaire
 translation-type: tm+mt
-source-git-commit: 19ee2722bc73f67b77cc08dd2a634328ba5269ec
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2023'
 ht-degree: 42%
 
 ---
