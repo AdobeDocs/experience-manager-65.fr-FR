@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '727'
 ht-degree: 52%
 
 ---
@@ -57,7 +58,7 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
    Si vous ne disposez pas d’un domaine dédié, l’Adobe prévoit de programmer votre transition sur HTTP/2 en 2018.
 
-## Quel est le processus d’activation de HTTP/2 pour mon compte Dynamic Media ?{#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
+## Quel est le processus d’activation de HTTP/2 pour mon compte Dynamic Media ? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
 Vous lancez la demande de basculement sur HTTP/2 ; ce n&#39;est pas automatiquement fait pour vous.
 
