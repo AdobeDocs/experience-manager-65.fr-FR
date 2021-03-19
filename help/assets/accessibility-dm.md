@@ -4,11 +4,13 @@ description: En savoir plus sur la prise en charge de l’accessibilité dans le
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
+feature: Accessibilité
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 69%
+source-wordcount: '582'
+ht-degree: 71%
 
 ---
 
@@ -52,12 +54,12 @@ Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d
 
 Tous les composants [!DNL Dynamic Media] prêts à l’emploi des visionneuses prennent en charge l’accessibilité du clavier pour vos clients.
 
-Voir [Accessibilité du clavier et navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) dans le Guide de référence des visionneuses Dynamic Media.
+Voir [Accessibilité du clavier et navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=fr) dans le Guide de référence des visionneuses Dynamic Media.
 
 ## Prise en charge des technologies d’assistance dans les [!DNL Dynamic Media] visionneuses {#assistive-technology-support-for-dm-viewers}
 
 Tous les composants de la visionneuse [!DNL Dynamic Media] prennent en charge les rôles et attributs ARIA (Applications Internet enrichies accessibles) afin d’améliorer l’intégration avec les technologies d’assistance telles que les lecteurs d’écran.
-Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
+Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=fr) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
 
 >[!MORELIKETHIS]
 >
