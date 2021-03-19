@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
+role: Administrator
 translation-type: tm+mt
-source-git-commit: acc758b83486e8c623e31bb4a68f3c29dd4848ba
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2510'
 ht-degree: 12%
 
 ---
@@ -101,7 +102,7 @@ La synchronisation des utilisateurs repose sur l’environnement de création po
 
 1. Vérifiez que le code le plus récent a été installé :
 
-   * [Mise à jour de la plateforme AEM](https://helpx.adobe.com/fr/experience-manager/kb/aem62-available-hotfixes.html)
+   * [Mise à jour de la plateforme AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr)
    * [Mises à jour d’AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
 Les configurations suivantes sont nécessaires pour activer la synchronisation des utilisateurs sur AEM Communities. Assurez-vous que ces configurations sont correctes pour empêcher l’échec de la distribution de contenu sling.
