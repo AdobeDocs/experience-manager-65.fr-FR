@@ -2,10 +2,11 @@
 title: Multi-tenanciation pour les collections, les extraits de code et les modèles de fragments de code
 description: Découvrez comment la fonction de multipropriété vous permet de séparer le contenu dans le référentiel CRX en fonction de l’entreprise cliente afin d’empêcher tout accès non autorisé.
 contentOwner: AG
+role: Architecte, Administrateur, Leader
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '223'
 ht-degree: 3%
 
 ---
