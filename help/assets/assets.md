@@ -2,10 +2,12 @@
 title: Présentation de  [!DNL Adobe Experience Manager Assets]
 description: Découvrez ce qu’est la gestion des actifs numériques, ses cas d’utilisation et  [!DNL Adobe Experience Manager Asset] l’offre.
 contentOwner: AG
+feature: Gestion des ressources
+role: Chef, Architecte, Professionnel
 translation-type: tm+mt
-source-git-commit: b851bfb2758db60e960afd4720d04202934c18bc
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '880'
 ht-degree: 29%
 
 ---
@@ -36,7 +38,7 @@ L’interface utilisateur de base est identique à celle de [!DNL Sites]. Voir [
 
 ### Gestion des ressources numériques par rapport au composant d’image {#digital-asset-management-versus-image-component}
 
-Lorsque vous décidez de placer une image dans le référentiel DAM ou d’utiliser le composant d’image, tenez compte du cycle de vie des images :
+Pour déterminer si une image doit être placée dans le référentiel DAM ou utiliser le composant d’image, tenez compte du cycle de vie des images :
 
 * Si l’image a le même cycle de vie que la page, utilisez le composant Image.
 * Si l’image a un cycle de vie distinct, par exemple, si vous utilisez l’image deux fois ou en dehors de la gestion de contenu web, utilisez [!DNL Assets].
