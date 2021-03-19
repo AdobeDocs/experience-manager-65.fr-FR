@@ -8,16 +8,18 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
+feature: Combiner des visionneuses de supports, Gestion des ressources
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 98%
+source-wordcount: '1473'
+ht-degree: 97%
 
 ---
 
 
-# Visionneuses de médias mixtes{#mixed-media-sets}
+# Visionneuses de médias mixtes {#mixed-media-sets}
 
 Une visionneuse de médias mixtes permet d’offrir un mélange d’images, de visionneuses d’images, de visionneuses à 360° et de vidéos dans une même présentation.
 
