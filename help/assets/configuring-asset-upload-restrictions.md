@@ -2,11 +2,12 @@
 title: Configuration des restrictions de transfert de ressources
 description: 'Limiter le type de fichiers (fichiers) que les utilisateurs peuvent télécharger '
 contentOwner: AG
+role: Développeur, administrateur, architecte
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 55%
+source-wordcount: '193'
+ht-degree: 54%
 
 ---
 
