@@ -1,11 +1,12 @@
 ---
 title: Utiliser le mode Mise en page pour redimensionner les composants pour la communication interactive
 description: 'Définir la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 2%
+source-wordcount: '869'
+ht-degree: 3%
 
 ---
 
