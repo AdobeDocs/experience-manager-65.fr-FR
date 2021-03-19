@@ -2,11 +2,12 @@
 title: Traiter des fichiers à l’aide de gestionnaires de médias et de workflows
 description: Découvrez les gestionnaires de médias et comment utiliser des workflows pour effectuer des tâches sur vos ressources numériques.
 contentOwner: AG
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: a6758adf5ac8992e27c13b87ae65c83b5b8695c7
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 52%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
