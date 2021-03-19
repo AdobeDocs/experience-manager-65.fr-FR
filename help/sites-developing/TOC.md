@@ -6,11 +6,14 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur pour le développement d’AEM 6.5
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
+feature-set: Experience Manager Sites
+feature: Développement
+role: Développeur
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 80%
+source-wordcount: '907'
+ht-degree: 81%
 
 ---
 
@@ -68,8 +71,8 @@ ht-degree: 80%
    + [Intégration de services à la console JMX](jmx-integration.md)
    + [Développement de l’éditeur en masse](dev-bulk-editor.md)
    + [Élaboration de rapports](dev-reports.md)
-   + Aperçu {#ecommerce}
-      + [Commerce électronique](ecommerce.md)
+   + eCommerce{#ecommerce}
+      + [eCommerce](ecommerce.md)
       + [Développement (générique)](generic.md)
       + [Développement avec SAP Commerce Cloud](sap-commerce-cloud.md)
 + Composants{#components}
@@ -80,7 +83,7 @@ ht-degree: 80%
    + [Développement de composants AEM](developing-components.md)
    + [Développement de composants AEM – Échantillons de code](developing-components-samples.md)
    + [Exportateur JSON pour les services de contenu](json-exporter.md)
-   + [Activation de l’exportateur JSON pour un composant](json-exporter-components.md) 
+   + [Activation de l’exportateur JSON pour un composant](json-exporter-components.md)
    + [Éditeur d’image](image-editor.md)
    + [Balise décorative](decoration-tag.md)
    + [Utilisation de conditions de masquage](hide-conditions.md)
@@ -107,7 +110,7 @@ ht-degree: 80%
       + [Tutoriel sur SPA WKND](spa-wknd.md)
       + [Prise en main des SPA dans AEM - Réagir](spa-getting-started-react.md)
       + [Prise en main des SPA dans AEM - Angular](spa-getting-started-angular.md)
-      + [Mise en oeuvre d’un composant de réaction pour SPA](spa-implementing-react-component.md)
+      + [Mise en œuvre d’un composant de réaction pour SPA](spa-implementing-react-component.md)
       + [Immersion dans les SPA](spa-deep-dives.md)
       + [Aperçu de l’éditeur de SPA](spa-overview.md)
       + [Développement de SPA pour AEM](spa-architecture.md)
@@ -159,11 +162,11 @@ ht-degree: 80%
    + [Fragments de contenu – Configuration des composants pour le rendu](content-fragments-config-components-rendering.md)
    + [Fragments d’expérience](experience-fragments.md)
    + Workflows étendus{#extending-workflows}
-      + [Développement et extension des processus](workflows.md)
+      + [Développement et extension des workflows](workflows.md)
       + [Création de modèles de workflow](workflows-models.md)
-      + [Développement des fonctionnalités de workflow](workflows-customizing-extending.md)
+      + [Extension des fonctionnalités de processus](workflows-customizing-extending.md)
       + [Interaction avec les workflows par programmation](workflows-program-interaction.md)
-      + [Référence sur les étapes du workflow](workflows-step-ref.md)
+      + [Référence sur les étapes de workflow](workflows-step-ref.md)
       + [Meilleures pratiques relatives aux workflows](workflows-best-practices.md)
       + [Référence sur les processus de workflow](workflows-process-ref.md)
       + [Variables dans les workflows AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
@@ -177,7 +180,7 @@ ht-degree: 80%
       + [Configurations du service cloud](extending-cloud-config.md)
       + [Création d’un service cloud personnalisé](extending-cloud-config-custom-cloud.md)
    + [Création d’extensions personnalisées](extending-campaign-extensions.md)
-   + Formulaires{#extending-forms}
+   + Forms{#extending-forms}
       + [Création de mises en correspondance de formulaires personnalisés](extending-campaign-form-mapping.md)
       + [Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign](extending-campaign-custom-template.md)
       + [Script d’analyse des requêtes](analyze-request.md)
