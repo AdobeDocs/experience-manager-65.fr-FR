@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 72%
 
 ---
@@ -104,7 +105,7 @@ Vérifiez les paramètres suivants :
 
 1. Si les fichiers mentionnés ne sont pas disponibles, réinstallez le package adobe-lc-forms-runtime-pkg-&lt;version>.zip.
 
-### Problème : erreur inattendue rencontrée  {#problem-unexpected-error-encountered}
+### Problème : erreur inattendue rencontrée {#problem-unexpected-error-encountered}
 
 1. Dans l’URL du formulaire, ajoutez un paramètre de requête debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;serveur>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;chemin d’accès>&amp;template=&lt;nom du fichier xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Dans le navigateur de bureau, comme Chrome, accédez à Outils de développement -> Console.
