@@ -6,11 +6,13 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
+feature: Visionneuses
+role: Professionnel, Administrateur, Développeur, Ingénieur de données, Architecte de données
 translation-type: tm+mt
-source-git-commit: 0a4708800e00eb34042e6979eb0703ca7816c7e1
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '6627'
-ht-degree: 50%
+source-wordcount: '6636'
+ht-degree: 52%
 
 ---
 
@@ -25,7 +27,7 @@ La nouvelle extension *Dynamic Media Viewers* pour les visionneuses de Platform 
 
 Cette intégration signifie que vous pouvez suivre l’utilisation des visionneuses Dynamic Media sur votre site web avec Adobe Analytics. En même temps, vous pouvez utiliser les événements et les données exposés par les lecteurs avec toute autre extension Experience Platform Launch provenant d’Adobe ou d’un tiers.
 
-Pour en savoir plus sur les extensions, voir [Adobe Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) dans le Guide de l’utilisateur Experience Platform Launch.
+Pour en savoir plus sur les extensions, voir [Adobe Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html?lang=fr#adobe-extension) dans le Guide de l’utilisateur Experience Platform Launch.
 
 **Cette rubrique est destinée aux administrateurs de** site, aux développeurs de la plate-forme des Experience Manager et aux personnes participant aux opérations.
 
@@ -34,7 +36,7 @@ Pour en savoir plus sur les extensions, voir [Adobe Extension](https://experienc
 * L’intégration d’Experience Platform Launch pour les visionneuses Dynamic Media ne fonctionne pas dans le noeud d’auteur du Experience Manager. Vous ne pouvez pas afficher de suivi à partir d’une page WCM tant qu’elle n’est pas publiée.
 * L’intégration d’Experience Platform Launch pour les visionneuses Dynamic Media n’est pas prise en charge pour le mode de fonctionnement &quot;contextuel&quot;, où l’URL de la visionneuse est obtenue à l’aide du bouton &quot;URL&quot; sur la page Détails du fichier.
 * L’intégration de l’Experience Platform Launch ne peut pas être utilisée simultanément avec l’intégration des visionneuses héritées Analytics (au moyen du paramètre `config2=`).
-* La prise en charge du suivi vidéo est limitée au suivi de &quot;lecture principale&quot;, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
+* La prise en charge du suivi vidéo est limitée au suivi de &quot;lecture principale&quot;, comme décrit dans [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html?lang=fr#player-events). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
 * La configuration de la durée de stockage n’est pas prise en charge pour les éléments de données à l’aide de l’extension *Visionneuses Dynamic Media*. La durée de stockage doit être définie sur **[!UICONTROL Aucune]**.
 
 ### Cas d’utilisation de l’intégration {#use-cases-for-the-integration}
@@ -69,7 +71,7 @@ L’extension Dynamic Media Viewer actualise automatiquement les valeurs de ses 
 
 Une fois que vous l’avez défini, un élément de données peut être utilisé dans d’autres emplacements de l’interface utilisateur Experience Platform Launch, à l’aide du widget de sélecteur d’éléments de données. En particulier, les éléments de données définis aux fins du suivi des visionneuses Dynamic Media sont référencés par l’action Définir les variables de l’extension Adobe Analytics dans la règle (voir ci-dessous).
 
-Voir [Éléments de données](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference).
+Voir [Éléments de données](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=fr#reference).
 
 #### A propos des règles dans l’Experience Platform Launch {#about-rules-in-adobe-launch}
 
@@ -95,7 +97,7 @@ Dans la section Actions, vous devez disposer d’une action *Définir les variab
 
 L’action *Définir les variables* doit être suivie d’une action *Envoyer une balise*. L’action *Envoyer la balise* envoie en fait des données au serveur de suivi Analytics. Les deux actions, *Définir les variables* et *Envoyer une balise*, proviennent de l’extension Adobe Analytics.
 
-Voir [Règles](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference).
+Voir [Règles](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html?lang=fr#reference).
 
 #### Exemple de configuration {#sample-configuration}
 
@@ -153,7 +155,7 @@ Suivez les étapes de configuration des sections [Configuration d&#39;Adobe Anal
 
 Une fois la configuration appropriée effectuée, vous pouvez ajouter la prise en charge des Experience Platform Launch à une page Web à l’aide d’un lecteur Dynamic Media.
 
-Voir [Ajouter le code incorporé du Platform launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) pour en savoir plus sur l’utilisation du code incorporé de bibliothèque Experience Platform Launch.
+Voir [Ajouter le code incorporé du Platform launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html?lang=fr#configure-launch) pour en savoir plus sur l’utilisation du code incorporé de bibliothèque Experience Platform Launch.
 
 <!-- To be reviewed and updated although this is found live in the AEMaaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
@@ -237,7 +239,7 @@ L’exemple de configuration ci-dessus affecte également la durée de vie de la
 
 Dans tous les cas, les valeurs des éléments de données pilotées par les visionneuses Dynamic Media ne sont pas stockées sur l’enregistrement local ou sur le serveur ; ils sont conservés uniquement dans la bibliothèque Experience Platform Launch côté client. Les valeurs de cet élément de données disparaissent lors du rechargement de la page web.
 
-En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface utilisateur, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
+En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=fr#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface utilisateur, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
 
 ### À propos des règles dans l’extension Visionneuses Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -262,7 +264,7 @@ La méthode la plus simple consiste à effectuer le processus en deux étapes :
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement Dynamic Media Viewer. Entrez le nom complet de l’argument événement dans le champ d’entrée **[!UICONTROL value]** de l’affectation de variable Analytics. Veillez à l’entourer de signes de pourcentage (%). Par exemple :
+Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement Dynamic Media Viewer. Entrez le nom complet de l’argument événement dans le champ d’entrée **[!UICONTROL value]** de l’affectation de variable Analytics. Assurez-vous de l&#39;entourer de signes de pourcentage (%). Par exemple :
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -431,7 +433,7 @@ Une fois Adobe Analytics configuré, les éléments suivants sont configurés p
 * Les variables Analytics sont disponibles pour recevoir les données de suivi.
 * Les rapports sont disponibles pour afficher les données collectées dans Adobe Analytics.
 
-Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).
+Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).
 
 **Pour configurer Adobe Analytics en vue de l’intégration** :
 
@@ -449,7 +451,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
    Si aucune suite de rapports n’est disponible, votre administrateur Adobe Analytics ou vous-même devez en créer une avant de poursuivre la configuration.
 
-   Voir [Rapports et suites de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) et [Création d’une suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console).
+   Voir [Rapports et suites de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=fr#manage-report-suites) et [Création d’une suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console).
 
    Dans Adobe Analytics, les suites de rapports sont gérées sous **[!UICONTROL Admin > Suites de rapports]**.
 
@@ -463,7 +465,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
    Il est possible d’utiliser n’importe quel type de variable pris en charge par Adobe Analytics. La décision concernant le type de variable (comme Trafic personnalisé [props], Conversion [eVar]) est fonction des besoins spécifiques de votre implémentation Analytics.
 
-   Voir [Présentation de props et eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
+   Voir [Présentation de props et eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=fr#vars).
 
    Aux fins de cette documentation, seule une variable Trafic personnalisé (props) sera utilisée, car elle sera disponible dans un rapport Analytics quelques minutes après qu’une action a eu lieu sur une page Web.
 
@@ -511,7 +513,7 @@ Une fois l’Experience Platform Launch configuré, les éléments suivants sero
 
 Une propriété dans l’Experience Platform Launch est une configuration nommée qui maintient tous vos paramètres ensemble. Une bibliothèque des paramètres de configuration est générée et publiée à différents niveaux d’environnement (développement, évaluation et production).
 
-Voir aussi [Créer une propriété Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
+Consultez également [Création d’une propriété Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html?lang=fr#configure-launch).
 
 1. Dans l’Experience Platform Launch, cliquez sur **[!UICONTROL Nouvelle propriété]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une propriété]**, dans le champ **[!UICONTROL Nom]**, saisissez un nom descriptif, tel que le titre de votre site web. Par exemple, `DynamicMediaViewersProp.`
@@ -536,7 +538,7 @@ Le cas échéant, les extensions suivantes doivent être installées et configur
 
 Aucune configuration supplémentaire n’est nécessaire, acceptez les valeurs proposées. Lorsque vous avez terminé, veillez à cliquer sur **[!UICONTROL Enregistrer]**.
 
-Voir [Extension Experience Cloud ID Service](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref).
+Voir [Extension Experience Cloud ID Service](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html?lang=fr#extensions-ref).
 
 * (Obligatoire) Extension *Adobe Analytics*
 
@@ -556,7 +558,7 @@ Sur la page **[!UICONTROL Installer l’extension]**, développez **[!UICONTROL 
 
 Cliquez sur **[!UICONTROL Enregistrer]**.
 
-Voir [Extension Adobe Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref).
+Voir [Extension Adobe Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html?lang=fr#extensions-ref).
 
 * (Facultatif) requis uniquement si le suivi vidéo est nécessaire) *Extension Adobes Medium Analytics pour l’audio et la vidéo*
 
@@ -564,7 +566,7 @@ Renseignez le champ Serveur de suivi. Le serveur de suivi pour l’extension *Ad
 
 Tous les autres champs sont facultatifs.
 
-Voir [Adobe Media Analytics for Audio and Video](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref).
+Voir [Adobe Media Analytics for Audio and Video](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=fr#extensions-ref).
 
 * (Obligatoire) Extension *Visionneuses Dynamic Media*
 
@@ -594,7 +596,7 @@ Pour modifier la configuration de l’Experience Platform Launch (y compris la p
 
 Le platform launch peut avoir plusieurs environnements de développement, un environnement intermédiaire et un environnement de production. Par défaut, la configuration de Platform launch Cloud dans le Experience Manager pointe le noeud d’auteur du Experience Manager vers l’environnement d’étape du Platform launch. Le noeud de publication du Experience Manager pointe vers l’environnement de production du Platform launch. Cette disposition signifie qu’avec les paramètres de Experience Manager par défaut, il est nécessaire de publier la bibliothèque de Platform launchs dans l’environnement d’évaluation. Cela vous permet de l’utiliser dans l’auteur Experience Manager. Vous pouvez ensuite le publier dans l’environnement de production afin de pouvoir l’utiliser dans la publication Experience Manager.
 
-Voir [Environnements](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) pour plus d&#39;informations sur les environnements Experience Platform Launch.
+Voir [Environnements](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html?lang=fr#environment-types) pour plus d&#39;informations sur les environnements Experience Platform Launch.
 
 La publication d’une bibliothèque implique les deux étapes suivantes :
 
@@ -652,7 +654,7 @@ La publication d’une bibliothèque implique les deux étapes suivantes :
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Voir [Publication](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference) pour plus d’informations sur le processus de publication dans l’Experience Platform Launch.
+   Voir [Publication](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html?lang=fr#reference) pour plus d’informations sur le processus de publication dans l’Experience Platform Launch.
 
 ## Configuration d’Adobe Experience Manager pour l’intégration {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -696,7 +698,7 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
 1. Dans un nouvel onglet du navigateur, accédez à la [[!DNL Adobe I/O] Console](https://console.adobe.io/integrations).
 
 1. Sur la page **[!UICONTROL Intégrations de la console Adobe I/O]**, près du coin supérieur droit, cliquez sur **[!UICONTROL Nouvelle intégration]**.
-1. Dans la boîte de dialogue **[!UICONTROL Créer une intégration]** Créer une intégration, vérifiez que le bouton radio **[!UICONTROL Accès à une API]** est sélectionné, puis cliquez sur **[!UICONTROL Continuer]**.
+1. Dans la boîte de dialogue **[!UICONTROL Créer une intégration]**, vérifiez que le bouton radio **[!UICONTROL Accès à une API]** est sélectionné, puis cliquez sur **[!UICONTROL Continuer]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
