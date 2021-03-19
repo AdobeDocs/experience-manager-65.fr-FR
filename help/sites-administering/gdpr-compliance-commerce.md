@@ -1,15 +1,15 @@
 ---
 title: AEM Commerce – Préparation pour le RGPD
 seo-title: AEM Commerce – Préparation pour le RGPD
-description: 'null'
+description: '"AEM Commerce – Préparation pour le RGPD"'
 seo-description: 'null'
 uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
 contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 translation-type: tm+mt
-source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '314'
 ht-degree: 76%
 
 ---
