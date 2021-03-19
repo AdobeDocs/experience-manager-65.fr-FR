@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '347'
 ht-degree: 71%
 
 ---
@@ -27,7 +28,7 @@ Les formulaires HTML5 utilisent des constructions HTML standard, ce qui permet 
 
 Les formulaires HTML5 sont conformes à la section 508 concernant l’accessibilité avec des exceptions connues. Voir [VPAT pour les formulaires HTML5](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) pour obtenir des détails.
 
-## Lecteurs d’écran certifiés pour les formulaires HTML5  {#certified-screen-readers-for-html-forms}
+## Lecteurs d’écran certifiés pour les formulaires HTML5 {#certified-screen-readers-for-html-forms}
 
 * JAWS 14.0 sous Microsoft Windows
 * Voix off sous Mac OS X et iPad
