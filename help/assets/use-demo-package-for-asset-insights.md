@@ -2,11 +2,12 @@
 title: Utiliser le package de démonstration pour Asset Insights
 description: Utilisez le module de démonstration afin de permettre à la fonction Statistiques sur les ressources d’Adobe de capturer les données d’une page web et de générer des informations pour cette page.
 contentOwner: AG
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 78%
+source-wordcount: '163'
+ht-degree: 76%
 
 ---
 
