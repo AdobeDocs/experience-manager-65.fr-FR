@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '7912'
+source-wordcount: '7913'
 ht-degree: 4%
 
 ---
@@ -392,7 +393,7 @@ Conversion de contenu HTML en document PDF à l’aide de l’API Generate PDF (
    * Objet de chaîne contenant les paramètres de sécurité à utiliser.
    * Objet `BLOB` facultatif contenant les paramètres à appliquer lors de la génération du document PDF.
    * Objet `BLOB` facultatif contenant des informations de métadonnées à appliquer au document PDF.
-   * Paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` remplit cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
+   * Paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` remplit cet objet avec le document converti. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
 
 1. Récupérez les résultats.
 
