@@ -8,10 +8,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
+feature: Communication interactive
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1814'
 ht-degree: 68%
 
 ---
@@ -240,11 +241,11 @@ Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le
    | Nom | Titre | Nombre de colonnes |
    |---|---|---|
    | customerdetails | Informations sur le client | 1 |
-   | billsummary | Récapitulatif de facturation | 1 |
+   | billsummary | Récapitulatif de facturation | 3 |
    | summarycharges | Récapitulatif des frais | 2 |
    | itemisedcalls | Appels détaillés | 1 |
    | PayNow | Payez maintenant | 2 |
-   | vas | Services à valeur ajoutée | 1 |
+   | vas | Services à valeur ajoutée | 3 |
 
    L’image suivante illustre l’arborescence de contenu après l’ajout de tous les panneaux au modèle :
 
