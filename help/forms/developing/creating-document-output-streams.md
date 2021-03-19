@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '19044'
+source-wordcount: '19045'
 ht-degree: 4%
 
 ---
@@ -352,9 +353,9 @@ Créez un document PDF à l’aide de l’API Output (service Web) :
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant les options d’exécution de rendu.
    * Objet `BLOB` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
-   * Objet `BLOB` renseigné par la méthode `generatePDFOutput`. La méthode `generatePDFOutput` remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
-   * Objet `BLOB` renseigné par la méthode `generatePDFOutput`. La méthode `generatePDFOutput` remplit cet objet avec les données de résultat. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
-   * Objet `OutputResult` contenant les résultats de l&#39;opération. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
+   * Objet `BLOB` renseigné par la méthode `generatePDFOutput`. La méthode `generatePDFOutput` remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+   * Objet `BLOB` renseigné par la méthode `generatePDFOutput`. La méthode `generatePDFOutput` remplit cet objet avec les données de résultat. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+   * Objet `OutputResult` contenant les résultats de l&#39;opération. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
 
    >[!NOTE]
    >
@@ -1126,8 +1127,8 @@ Créez un document PDF basé sur des fragments à l’aide de l’API Output Ser
    * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant les options d’exécution de rendu.
    * Objet `BLOB` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire.
-   * Objet de sortie `BLOB` que la méthode `generatePDFOutput2` remplit. La méthode `generatePDFOutput2` remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
-   * Objet output `OutputResult` contenant les résultats de l&#39;opération. (Cette valeur de paramètre est requise uniquement pour l’appel de service Web).
+   * Objet de sortie `BLOB` que la méthode `generatePDFOutput2` remplit. La méthode `generatePDFOutput2` remplit cet objet avec des métadonnées générées qui décrivent le document. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
+   * Objet output `OutputResult` contenant les résultats de l&#39;opération. (Cette valeur de paramètre n’est requise que pour l’appel de service Web).
 
    La méthode `generatePDFOutput2` renvoie un objet `BLOB` contenant le formulaire PDF non interactif.
 
