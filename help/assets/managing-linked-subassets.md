@@ -2,10 +2,11 @@
 title: Gérer des ressources composées avec des références et plusieurs pages
 description: Découvrez comment créer des références à des ressources numériques à partir de  [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilisez la fonction Visionneuse de pages pour vue des pages de sous-ressources individuelles de fichiers de plusieurs pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1351'
 ht-degree: 19%
 
 ---
