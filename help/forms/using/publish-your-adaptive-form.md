@@ -8,11 +8,12 @@ contentOwner: khsingh
 topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 1a816672b3e97346f5a7a984fcb4dc0df1a5b0da
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 9%
+source-wordcount: '968'
+ht-degree: 10%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 9%
 
 ![](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
+Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
 Une fois le formulaire adaptatif prêt, vous pouvez le publier pour le rendre disponible pour les utilisateurs finaux. Les utilisateurs finaux peuvent ouvrir le formulaire publié sur n’importe quel périphérique et navigateur Internet. Lorsqu’un formulaire adaptatif est publié, le formulaire et le contenu associé sont copiés d’une instance d’auteur AEM vers une instance de publication AEM. Le formulaire est mis à la disposition de l’utilisateur final via l’instance de publication.
 
@@ -33,7 +34,7 @@ Vous disposez des méthodes suivantes pour publier un formulaire adaptatif :
 
 ## Avant de commencer {#before-you-start}
 
-* **[Configurez une instance](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)** de publication AEM Forms : L’instance de publication est une instance accessible au public de AEM  [!DNL Forms] s’exécutant en mode de publication. Dans un environnement de production, l’instance de publication se trouve en dehors du pare-feu de l’entreprise.
+* **[Configurez une instance](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)** de publication AEM Forms : L’instance de publication est une instance accessible au public de AEM  [!DNL Forms] s’exécutant en mode de publication. Dans un environnement de production, l’instance de publication se trouve en dehors du pare-feu de l’entreprise.
 * **[Configuration de la réplication et de la réplication](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)** inverse : La réplication copie le contenu de l’instance d’auteur vers une instance de publication et renvoie les entrées utilisateur (par exemple, les entrées de formulaire) de l’instance de publication vers l’instance d’auteur.
 
 ## Publier le formulaire adaptatif en tant que page AEM {#publish-the-adaptive-form-as-an-aem-page}
