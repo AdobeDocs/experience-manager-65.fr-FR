@@ -2,10 +2,11 @@
 title: Étendre la fonctionnalité de recherche.
 description: Étendez les capacités de recherche de  [!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
 contentOwner: AG
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '839'
 ht-degree: 77%
 
 ---
