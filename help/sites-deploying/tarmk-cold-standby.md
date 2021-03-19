@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: a99c5794cee88d11ca3fb9eeed443c4d0178c7b3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2731'
+source-wordcount: '2732'
 ht-degree: 79%
 
 ---
@@ -371,7 +372,7 @@ Des informations supplémentaires pour jusqu’à 10 clients (instances de seco
 
 ## Maintenance du référentiel Cold Standby {#cold-standby-repository-maintenance}
 
-### Nettoyage des révisions {#revision-clean}
+### Nettoyage de révision {#revision-clean}
 
 >[!NOTE]
 >
