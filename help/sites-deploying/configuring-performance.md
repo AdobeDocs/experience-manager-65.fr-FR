@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: a0673c23588cba263c292680637b16a18ef1431c
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '6658'
+source-wordcount: '6659'
 ht-degree: 73%
 
 ---
@@ -70,7 +71,7 @@ Une fois que le site est « en ligne », l’optimisation des performances se 
 
 Dans la mesure où la charge de votre système change et que les profils de performances de votre système évoluent au fil du temps, il faut prévoir une « mise au point » ou un « contrôle d’intégrité » des performances tous les 6 à 12 mois.
 
-### Simulation de la réalité  {#simulate-reality}
+### Simulation de la réalité {#simulate-reality}
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -129,7 +130,7 @@ La structure d’un référentiel de contenu peut également se répercuter sur 
 
 Lors d’une activité ordinaire d’optimisation des performances, les ressources suivantes sont d’une très grande utilité :
 
-* La page `request.log`
+* Les `request.log`
 * Délai basé sur les composants
 * Dernier mais non le moindre profileur java.
 
@@ -389,7 +390,7 @@ Dans les deux cas, vous pouvez définir le nombre attendu de transactions par se
 | Composant | Type de test | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
 | Utilisateur unique de la page d&#39;accueil | Moyenne | 1 | 3 |  |  |
-|  | Crête | 1 | 3 |  |  |
+|  | Crête | 3 | 3 |  |  |
 | 100 utilisateurs de la page d&#39;accueil | Moyenne | 100 | 1 |  |  |
 |  | Crête | 100 | 3 |  |
 
@@ -399,11 +400,11 @@ En testant une combinaison de composants, vous vous dotez d’une visibilité pl
 
 | Scénario | Composant | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Moyenne mixte | Page d’accueil | 10 | 1 |  |  |
+| Moyenne mixte | Page d’accueil | 10 | 3 |  |  |
 |  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 10 | 2 |  |  |
-|  | Événements | 10 | 1 |  |  |
-|  | Activations | 10 | 3 |  | Simulation du comportement de l’auteur. |
+|  | Événements | 10 | 3 |  |  |
+|  | Activations | 10 | 1 |  | Simulation du comportement de l’auteur. |
 | Pic mixte | Page d’accueil | 100 | 5 |  |  |
 |  | Rechercher | 50 | 5 |  |  |
 |  | Actualités | 100 | 10 |  |  |
@@ -433,9 +434,9 @@ Lors de la conception de ces tests, il faut garder à l’esprit que tous les sc
 
 | Scénario d’erreur | Type d’erreur | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge des composants de recherche | Recherche sur un caractère générique global (astérisque) | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast; sont recherchées. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique global (astérisque) | 10 | 3 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast; sont recherchées. |
 |  | Mot d’arrêt | 20 | 2 |  | Recherche d&#39;un mot d&#39;arrêt. |
-|  | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
+|  | Chaîne vide | 10 | 3 |  | Recherche d’une chaîne vide. |
 |  | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
 
 #### Tests d’endurance {#endurance-tests}
@@ -444,7 +445,7 @@ Certains problèmes ne feront surface qu’après une période continue de fonct
 
 | Scénario | Type de test | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Essai d&#39;endurance (72 heures) | Page d’accueil | 10 | 3 |  |  |
+| Essai d&#39;endurance (72 heures) | Page d’accueil | 10 | 1 |  |  |
 |  | Rechercher | 10 | 3 |  |  |
 |  | Actualités | 20 | 2 |  |  |
 |  | Événements | 10 | 1 |  |  |
