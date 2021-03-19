@@ -4,10 +4,11 @@ description: 'La newsletter Dynamic Media d’Experience League est un bulleti
 keywords: Dynamic Media ; newsletter ; mises à jour des produits ; conseils et astuces ; événements ; succès client ; blog ; blogs ; images ; vidéos ; fonctionnalités ; fonctionnalités
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 98%
 
 ---
