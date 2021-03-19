@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1160'
 ht-degree: 82%
 
 ---
@@ -91,7 +92,7 @@ Expression de fin d’étape dans la disposition Assistant d’un formulaire à 
 
 Formulaire avec assistant
 
-### Disposition de la conception en accordéon  {#layout-for-accordion-design}
+### Disposition de la conception en accordéon {#layout-for-accordion-design}
 
 Cette disposition vous permet de placer le composant `Panel adaptive form` dans un panneau avec un style de navigation en accordéon. Cette disposition vous permet également de créer des panneaux reproductibles. Ces panneaux vous permettent d’ajouter ou de supprimer des panneaux de manière dynamique suivant vos besoins. Vous pouvez définir le nombre minimum et maximum de répétitions d’un panneau. Le titre du panneau peut également être déterminé de manière dynamique sur la base des informations fournies dans les éléments du panneau.
 
