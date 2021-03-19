@@ -2,11 +2,12 @@
 title: Statistiques sur les ressources
 description: Découvrez comment la fonction Statistiques sur les ressources permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe.
 contentOwner: AG
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 75%
+source-wordcount: '731'
+ht-degree: 74%
 
 ---
 
