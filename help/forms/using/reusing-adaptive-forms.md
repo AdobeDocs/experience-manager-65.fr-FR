@@ -7,10 +7,11 @@ uuid: f1d0fb70-e255-4dd9-8e6d-fd65eaf2e81a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
+feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '555'
 ht-degree: 75%
 
 ---
@@ -62,7 +63,7 @@ Le contenu d’un formulaire adaptatif collé peut être modifié en utilisant l
 
 1. **Modification des propriétés de métadonnées :** 
 
-   Vous pouvez modifier les propriétés de métadonnées du formulaire adaptatif ; le titre et la description, par exemple. Pour plus d’informations sur les propriétés de métadonnées et la manière dont elles peuvent être modifiées, voir [Gestion des métadonnées de formulaire](/help/forms/using/manage-form-metadata.md).
+   Vous pouvez modifier les propriétés de métadonnées du formulaire adaptatif ; le titre et la description, par exemple. Pour plus d’informations sur les propriétés de métadonnées et sur la manière de les modifier, voir [Gestion des métadonnées de formulaire](/help/forms/using/manage-form-metadata.md).
 
 1. **Modifiez XFA/XSD pour Forms adaptatif basé sur XFA/XSD :**
 
