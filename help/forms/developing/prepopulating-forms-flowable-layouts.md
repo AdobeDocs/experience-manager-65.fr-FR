@@ -1,18 +1,19 @@
 ---
 title: Préremplissage de Forms avec des mises en page souples
 seo-title: Préremplissage de Forms avec des mises en page souples
-description: Préremplissez les formulaires avec une disposition souple pour afficher les données aux utilisateurs dans un formulaire rendu à l’aide de l’API Java et de l’API de service Web.
-seo-description: Préremplissez les formulaires avec une disposition souple pour afficher les données aux utilisateurs dans un formulaire rendu à l’aide de l’API Java et de l’API de service Web.
+description: Préremplissez les formulaires avec disposition souple pour afficher les données aux utilisateurs dans un formulaire rendu à l’aide de l’API Java et de l’API de service Web.
+seo-description: Préremplissez les formulaires avec disposition souple pour afficher les données aux utilisateurs dans un formulaire rendu à l’aide de l’API Java et de l’API de service Web.
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3534'
 ht-degree: 4%
 
 ---
