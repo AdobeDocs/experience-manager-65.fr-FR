@@ -2,11 +2,12 @@
 title: 'Activation des statistiques sur les ressources via DTM  '
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 34%
+source-wordcount: '674'
+ht-degree: 33%
 
 ---
 
