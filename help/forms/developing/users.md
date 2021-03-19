@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '6257'
+source-wordcount: '6258'
 ht-degree: 4%
 
 ---
@@ -754,7 +755,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
    <td><p>Les informations d’identification de l’utilisateur sont authentifiées avec le service Authentication Manager. Si les informations d’identification de l’utilisateur sont valides, le processus passe à l’étape 3. Dans le cas contraire, un message est envoyé à l’utilisateur pour lui indiquer qu’il n’est pas un utilisateur autorisé.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Les informations utilisateur et une conception de formulaire sont récupérées dans une base de données d’entreprise sécurisée. </p></td>
   </tr>
   <tr>
@@ -872,7 +873,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Une application cliente demande à AEM Forms d’effectuer une opération de synchronisation.</p></td>
   </tr>
   <tr>
@@ -880,7 +881,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
    <td><p>AEM Forms effectue une opération de synchronisation.</p></td>
   </tr>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Les informations utilisateur sont mises à jour.</p></td>
   </tr>
   <tr>
