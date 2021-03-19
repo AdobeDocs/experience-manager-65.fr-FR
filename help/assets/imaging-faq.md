@@ -7,11 +7,13 @@ topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
+feature: Gestion des ressources
+role: Professionnel, Administrateur
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 55%
+source-wordcount: '1881'
+ht-degree: 56%
 
 ---
 
@@ -127,7 +129,7 @@ Pour pouvoir utiliser l’imagerie dynamique, le compte Dynamic Media Classic ou
 * Utiliser le réseau de diffusion de contenu (CDN) fourni par Adobe dans le cadre de votre licence.
 * Utiliser un domaine dédié (par exemple, `images.company.com` ou `mycompany.scene7.com`), plutôt qu’un domaine générique (par exemple, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-Pour rechercher vos domaines, ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre ou vos comptes de société.
+Pour rechercher vos domaines, ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à votre ou vos comptes de société.
 
 Appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]** Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]** Si vous utilisez actuellement un domaine générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition lorsque vous soumettez un ticket de support technique.
 
@@ -145,7 +147,7 @@ Vous lancez une demande d’utilisation de l’imagerie intelligente ; elle n&#3
 
       Pour rechercher vos domaines, ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre ou vos comptes de société.
 
-      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
+      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]**
    1. Vérifiez que vous utilisez le CDN via Adobe et non le CDN géré avec une relation directe.
@@ -153,7 +155,7 @@ Vous lancez une demande d’utilisation de l’imagerie intelligente ; elle n&#3
 
       Pour rechercher vos domaines, ouvrez l&#39;[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre ou vos comptes de société.
 
-      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
+      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
       Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]** Si vous utilisez actuellement un domaine Dynamic Media Classic générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
    1. Indiquez s’il doit fonctionner sur HTTP/2.
