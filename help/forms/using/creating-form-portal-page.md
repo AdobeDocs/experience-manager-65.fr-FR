@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
+feature: Portail Formulaires
 translation-type: tm+mt
-source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
