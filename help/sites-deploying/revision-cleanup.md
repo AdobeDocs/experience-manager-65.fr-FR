@@ -1,6 +1,6 @@
 ---
-title: Nettoyage des révisions
-seo-title: Nettoyage des révisions
+title: Nettoyage de révision
+seo-title: Nettoyage de révision
 description: Découvrez comment utiliser la fonction de nettoyage des révisions dans AEM 6.3.
 seo-description: Découvrez comment utiliser la fonction de nettoyage des révisions dans AEM 6.3.
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
@@ -9,16 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
+feature: Configuration
 translation-type: tm+mt
-source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '5916'
+source-wordcount: '5917'
 ht-degree: 67%
 
 ---
 
 
-# Nettoyage des révisions{#revision-cleanup}
+# Nettoyage de révision{#revision-cleanup}
 
 ## Présentation {#introduction}
 
