@@ -2,11 +2,12 @@
 title: Partage de fichiers à l’aide d’un lien
 description: Partagez des fichiers, des dossiers et des collections sous la forme d’une URL.
 contentOwner: AG
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 39%
+source-wordcount: '1058'
+ht-degree: 40%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 39%
 
 Pour générer l’URL des fichiers que vous souhaitez partager avec les utilisateurs, utilisez la boîte de dialogue Partage de liens. Les utilisateurs disposant de privilèges d’administrateur ou avec des autorisations de lecture à l’emplacement `/var/dam/share` peuvent afficher les liens partagés avec eux.
 
-1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez la ressource à partager en tant que lien.
+1. Dans l’interface utilisateur [!DNL Assets], sélectionnez la ressource à partager sous forme de lien.
 1. Dans la barre d’outils, cliquez sur l’icône **[!UICONTROL Partager le lien]** ![partager les ressources](assets/do-not-localize/assets_share.png).
 
    Le lien qui sera créé après avoir cliqué sur [!UICONTROL Partager] s’affiche à l’avance dans le champ [!UICONTROL Partager le lien]. Le délai d’expiration par défaut du lien est de 1 jour.
