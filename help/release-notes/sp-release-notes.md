@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dfaa25ea72e50b60b8a40883ffb0241c131cc846
+source-git-commit: fb1423b7ae110b8a3cf8e0e389394e9266157a9f
 workflow-type: tm+mt
-source-wordcount: '3352'
+source-wordcount: '3360'
 ht-degree: 5%
 
 ---
@@ -349,9 +349,10 @@ Pour récupérer votre copie d’exécution, l’Adobe recommande de synchronise
 * Les erreurs et les messages d&#39;avertissement suivants peuvent s&#39;afficher lors de l&#39;installation du Experience Manager 6.5.x.x :
    * &quot;Lorsque l’intégration Adobe Target est configurée dans le Experience Manager à l’aide de l’API Target Standard (authentification IMS), l’exportation de fragments d’expérience vers la Cible entraîne la création de types d’offres incorrects. Au lieu du type « Fragment d’expérience » / source « Adobe Experience Manager », Target crée plusieurs offres avec le type « HTML » / source « Adobe Target Classic ».
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.
-   * La validation côté serveur du formulaire adaptatif échoue lorsque des fonctions d’agrégat telles que SUM, MAX et MIN sont utilisées. CQ-4274424
+   * La validation côté serveur du formulaire adaptatif échoue lorsque des fonctions d’agrégat telles que SUM, MAX et MIN sont utilisées (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.
    * La zone réactive d’une image interactive Dynamic Media n’est pas visible lors de la prévisualisation du fichier via la visionneuse de bannières modifiables.
+   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Délai d’attente en attente de la modification de l’enregistrement non enregistrée.
 
 ## bundles OSGi et packages de contenu inclus {#osgi-bundles-and-content-packages-included}
 
