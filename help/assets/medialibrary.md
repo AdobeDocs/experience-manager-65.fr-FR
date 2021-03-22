@@ -1,12 +1,12 @@
 ---
-title: Bibliothèque de médias pour la gestion des ressources numériques.
+title: Utilisation de la bibliothèque multimédia pour la gestion des ressources numériques de base
 description: '[!DNL Experience Manager Assets] et la bibliothèque multimédia pour la gestion des fichiers.'
 contentOwner: AG
 role: Architecte, Leader
 translation-type: tm+mt
-source-git-commit: 10e5ca2fb6e108a7201e6114b61b3d0266ff80d2
+source-git-commit: 31dc984d9cd93f7024229fd6773878eebfdadc57
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '457'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,6 @@ La bibliothèque de médias couvre en général les cas d’utilisation suivants
 * Expériences d’écran numérique créées à l’aide de [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] API REST HTTP pour les opérations sans en-tête.
 
-
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Basic metadata properties
@@ -65,7 +64,7 @@ La bibliothèque de médias couvre en général les cas d’utilisation suivants
 * Comments and annotation
 -->
 
-Vous pouvez accomplir les tâches spécifiques suivantes à l’aide de la bibliothèque multimédia :
+Pour utiliser la fonctionnalité Bibliothèque de médias, vous pouvez utiliser l’interface utilisateur [!DNL Experience Manager] par défaut. Media Library fait partie de l&#39;installation de [!DNL Experience Manager Sites] et aucune interface ou module complémentaire distinct n&#39;est nécessaire. Grâce à l’interface existante, les utilisateurs de la bibliothèque de médias ont les droits d’effectuer les tâches suivantes :
 
 * Créez des dossiers pour organiser les fichiers.
 * Chargement des ressources.
