@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -154,7 +154,7 @@ Pour exécuter le nettoyage de la mémoire :
 
 >[!NOTE]
 >
->La tâche de nettoyage de la mémoire d’entrepôt de données ne commence que si vous avez configuré un entrepôt de données basé sur les fichiers. Si aucune banque de données de fichier externe n&#39;a été configurée, la tâche renvoie le message `Cannot perform operation: no service of type BlobGCMBean found` après l&#39;appel. Voir [Configuration des magasins de noeuds et des entrepôts de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour plus d’informations sur la configuration d’un magasin de données de fichiers.
+>La tâche de collecte des données de la banque de données ne sera début que si vous avez configuré une banque de données de fichiers externe. Si aucune banque de données de fichier externe n&#39;a été configurée, la tâche renvoie le message `Cannot perform operation: no service of type BlobGCMBean found` après l&#39;appel. Voir [Configuration des magasins de noeuds et des entrepôts de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour plus d’informations sur la configuration d’un magasin de données de fichiers.
 
 ## Automatisation du nettoyage de la mémoire d’entrepôt de données {#automating-data-store-garbage-collection}
 
@@ -172,7 +172,7 @@ Si vous ne souhaitez pas exécuter la collecte des déchets de stockage de donn�
 >
 >Dans les exemples de commande `curl` suivants, il se peut que divers paramètres doivent être configurés pour votre instance. Par exemple, le nom d’hôte (`localhost`), le port (`4502`) le mot de passe administrateur (`xyz`) et divers paramètres pour le nettoyage effectif de la mémoire d’entrepôt de données.
 
-Voici un exemple de commande curl invoquant le nettoyage de la mémoire d’entrepôt de données via la ligne de commande :
+Voici un exemple de commande curl permettant d’appeler la collecte de déchets de la banque de données via la ligne de commande :
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
