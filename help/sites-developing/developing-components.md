@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '3533'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -290,11 +290,11 @@ La structure du contenu décrit la structure sémantique ; elle ne devrait (doi
 
 #### Détection de la disponibilité de la boîte de dialogue {#dialog-ready}
 
-Si vous disposez d’un script JavaScript personnalisé qui doit être exécuté uniquement lorsque la boîte de dialogue est disponible et prête, vous devez écouter le événement `dialog-ready`.
+Si vous utilisez un script JavaScript personnalisé qui doit être exécuté uniquement lorsque la boîte de dialogue est disponible et prête, vous devez écouter l’événement `dialog-ready`.
 
-Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prêt à l’emploi, ce qui signifie chaque fois qu’il y a une modification (création/mise à jour) dans le DOM de la boîte de dialogue.
+Ce événement est déclenché chaque fois que la boîte de dialogue se charge (ou se recharge) et est prête à l’emploi, soit chaque fois qu’une modification (création ou mise à jour) a lieu dans le DOM de la boîte de dialogue.
 
-`dialog-ready` peut être utilisé pour associer du code personnalisé JavaScript qui effectue des personnalisations sur les champs d’une boîte de dialogue ou de tâches similaires.
+`dialog-ready` peut être utilisé pour associer du code personnalisé JavaScript qui effectue des personnalisations dans les champs d’une boîte de dialogue ou pour des tâches similaires.
 
 ### Validation de champ {#field-validation}
 
@@ -470,7 +470,7 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
 * Boîtes de dialogue
 
    * Vous devrez créer une boîte de dialogue à utiliser dans l’IU tactile. Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
-   * L’[outil de conversion de boîte de dialogue](/help/sites-developing/dialog-conversion.md) permet d’étendre les composants existants.
+   * Les [AEM outils de modernisation](/help/sites-developing/modernization-tools.md) sont fournis pour vous aider à étendre les composants existants.
    * Le [mappage d’ExtJS aux composants de l’IU Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fournit une présentation pratique des xtypes ExtJS et des types de nœud avec les types de ressources équivalents dans l’IU Granite.
    * Pour plus d’informations sur la personnalisation des champs, reportez-vous à la session AEM Gems sur la [personnalisation des champs de boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
    * Migration de vtypes vers la [validation dans l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
