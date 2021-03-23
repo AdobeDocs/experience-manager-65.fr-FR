@@ -2,7 +2,7 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 de Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 43%
@@ -76,4 +76,4 @@ Cette section permet de préannoncer les modifications à venir dans les prochai
 
 | Zone | Fonctionnalité | Annonce |
 |--- |--- |--- |
-| Fondation | Structure de l’IU | Adobe prévoit de rendre obsolète les composants de l’interface utilisateur Coral 2 en 2019. L’interface utilisateur Coral 3 a été introduite avec AEM 6.2, et AEM 6.5 est entièrement basé sur Coral 3. Adobe recommande à ses clients et partenaires qui ont créé des interfaces utilisateur personnalisées avec Coral 2 de les restructurer avec Coral 3. Adobe fournit un outil permettant de convertir les boîtes de dialogue Coral 2 en Coral 3 - [En savoir plus](/help/sites-developing/dialog-conversion.md). |
+| Fondation | Structure de l’IU | Adobe prévoit de rendre obsolète les composants de l’interface utilisateur Coral 2 en 2019. L’interface utilisateur Coral 3 a été introduite avec AEM 6.2, et AEM 6.5 est entièrement basé sur Coral 3. Adobe recommande à ses clients et partenaires qui ont créé des interfaces utilisateur personnalisées avec Coral 2 de les restructurer avec Coral 3. Adobe fournit un outil permettant de convertir les boîtes de dialogue Coral 2 en Coral 3 - [En savoir plus](/help/sites-developing/modernization-tools.md). |
