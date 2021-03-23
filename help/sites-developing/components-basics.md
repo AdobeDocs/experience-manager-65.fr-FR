@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '4974'
-ht-degree: 73%
+ht-degree: 77%
 
 ---
 
@@ -431,7 +431,7 @@ Les définitions de boîte de dialogue sont spécifiques à l’IU :
 >[!NOTE]
 >
 >* Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
->* L’[outil de conversion de boîtes de dialogue](/help/sites-developing/dialog-conversion.md) sert à étendre/convertir les composants dont les boîtes de dialogue sont seulement définies pour l’IU classique.
+>* Les outils de modernisation [AEM](/help/sites-developing/modernization-tools.md) sont également fournis pour vous aider à étendre/convertir les composants dont seules les boîtes de dialogue sont définies pour l&#39;interface utilisateur classique.
 
 >
 
@@ -611,16 +611,16 @@ Il existe de nombreuses configurations dans le référentiel. Vous pouvez facile
 
 ### Espaces réservés de composant {#component-placeholders}
 
-Les composants doivent toujours générer du code HTML visible par l’auteur, même si le composant ne comporte aucun contenu. Sinon, il peut disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne pourront pas sélectionner et interagir avec le composant vide.
+Les composants doivent toujours générer du code HTML visible par l’auteur, même si le composant ne comporte aucun contenu, sans quoi il pourrait disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent, mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne pourraient pas sélectionner ce composant vide ni interagir avec lui.
 
-Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le mode WCM est `edit` ou `preview`).
-L’annotation HTML type d’un espace réservé est la suivante :
+Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).
+L’annotation HTML type d’un espace réservé est la suivante :
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
 ```
 
-Le script HTML type qui effectue le rendu du code HTML d’espace réservé ci-dessus est le suivant :
+Le script HTL type pour effectuer le rendu du code HTML d’espace réservé ci-dessus est le suivant :
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
@@ -629,9 +629,9 @@ Le script HTML type qui effectue le rendu du code HTML d’espace réservé ci-d
 
 Dans l’exemple précédent, `isEmpty` est une variable vraie uniquement lorsque le composant n’a aucun contenu et est invisible pour l’auteur.
 
-Pour éviter la répétition, l&#39;Adobe recommande que les implémenteurs des composants utilisent un modèle HTML pour ces espaces réservés, [comme celui fourni par les composants principaux.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Pour éviter la répétition, Adobe recommande que les implémenteurs des composants utilisent un modèle HTL pour ces espaces réservés, [comme celui fourni par les composants principaux.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
-L’utilisation du modèle dans le lien précédent se fait ensuite avec la ligne HTML suivante :
+L’utilisation du modèle dans le lien précédent se fait ensuite grâce à la ligne HTL suivante :
 
 ```HTML
 <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
@@ -640,7 +640,7 @@ L’utilisation du modèle dans le lien précédent se fait ensuite avec la lign
 
 Dans l’exemple précédent, `model.text` est la variable qui est vraie uniquement lorsque le contenu comporte du contenu et est visible.
 
-Vous trouverez un exemple d&#39;utilisation de ce modèle dans les composants principaux, [tels que dans le composant Titre.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+Vous trouverez un exemple d’utilisation de ce modèle dans les composants principaux, [tels que dans le composant Titre.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Configuration avec les propriétés cq:EditConfig {#configuring-with-cq-editconfig-properties}
 
