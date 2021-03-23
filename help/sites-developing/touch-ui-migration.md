@@ -11,7 +11,7 @@ topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 15%
@@ -119,7 +119,7 @@ Les boîtes de dialogue sont un facteur important de la migration de vos composa
 
 * [Développement de composants](/help/sites-developing/developing-components.md)  AEM (avec l’interface utilisateur tactile)
 * [Migration à partir d’un composant classique](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Outil](/help/sites-developing/dialog-conversion.md)  de conversion de boîte de dialogue - pour vous aider à convertir les boîtes de dialogue de vos composants classiques de l&#39;interface utilisateur en interface utilisateur tactile
+* [Outils](/help/sites-developing/modernization-tools.md)  de modernisation AEM - pour vous aider à convertir les boîtes de dialogue de vos composants classiques de l&#39;interface utilisateur en interface utilisateur tactile
 
    * Il existe une couche de compatibilité dans l’interface utilisateur tactile pour ouvrir une boîte de dialogue classique dans un &quot;wrapper d’interface tactile&quot;, mais cette fonctionnalité est limitée et n’est pas recommandée à long terme.
 
