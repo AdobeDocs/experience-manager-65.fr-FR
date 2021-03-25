@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
+source-git-commit: d700510efb340598a7931647164e22d574884569
 workflow-type: tm+mt
-source-wordcount: '5511'
-ht-degree: 11%
+source-wordcount: '5517'
+ht-degree: 10%
 
 ---
 
@@ -351,7 +351,7 @@ Pour configurer le Experience Manager de manière à pouvoir publier des ressour
 
 Activez le module d’écoute de barrage Adobe CQ Classic, qui est désactivé par défaut.
 
-Pour l’activer :
+Pour activer le module d’écoute de barrage Adobe CQ Classic :
 
 1. Appuyez sur l&#39;icône [!UICONTROL Outils], puis accédez à **[!UICONTROL Opérations > Console Web]**. La console Web s’ouvre.
 1. Accédez à **[!UICONTROL Écouteur de barrage Dynamic Media Classic]** et cochez la case **[!UICONTROL Activé]**.
