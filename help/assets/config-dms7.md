@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 543f59a82e869e7d004d994014e0bd586b013b02
+source-git-commit: 6f4cbacb89a891ea8193ca2f495aba353bea6b1a
 workflow-type: tm+mt
-source-wordcount: '6133'
+source-wordcount: '6154'
 ht-degree: 55%
 
 ---
@@ -519,7 +519,7 @@ L’Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot;
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+Pour mettre à jour l’un de ces paramètres, procédez comme indiqué dans la [Activation de la prise en charge du paramètre de tâche de chargement Assets/Dynamic Media Classic basé sur le type MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Mise à jour de la file d&#39;attente de processus transitoire Granite {#updating-the-granite-transient-workflow-queue}
 
