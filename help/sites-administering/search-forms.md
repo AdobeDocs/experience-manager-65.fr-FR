@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 19faa273908e67a744e52d173a5352f0a52f7345
+source-git-commit: b7be1ff0e842794511ffeb4fed60eed60796b4ff
 workflow-type: tm+mt
-source-wordcount: '2060'
-ht-degree: 79%
+source-wordcount: '2042'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 Utilisez des **formulaires de recherche** pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans différents panneaux ou consoles AEM de l’environnement de création. La personnalisation de ces panneaux permet d’adapter la fonctionnalité de recherche à vos besoins.
 
-Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, dont (entre autres) le prédicat Texte intégral pour les recherches en texte intégral, le prédicat Propriété pour rechercher des ressources correspondant à une propriété unique que vous avez spécifiée ou le prédicat Options pour rechercher des ressources correspondant à une ou plusieurs valeurs que vous spécifiez pour une propriété donnée.
+Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, y compris (entre autres) le prédicat Propriété pour rechercher des ressources qui correspondent à une propriété unique que vous avez définie, ou le prédicat Options pour rechercher des ressources qui correspondent à une ou plusieurs valeurs que vous spécifiez pour une propriété particulière.
 
 Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessibles en sélectionnant :
 
@@ -176,17 +176,6 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
      <li>Libellé du champ</li>
      <li>Nom de la propriété*</li>
      <li>Chemin d’accès aux options</li>
-     <li>Description</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Texte intégral </td>
-   <td>Prédicat de recherche pour les recherches en texte intégral..</td>
-   <td>
-    <ul>
-     <li>Libellé du champ</li>
-     <li>Espace réservé</li>
-     <li>Nom de la propriété</li>
      <li>Description</li>
     </ul> </td>
   </tr>
