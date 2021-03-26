@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes 
 description: Notes de mise à jour pour  [!DNL Adobe Experience Manager] Service Packs 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 131e564e4ed50c4f08412ba39c62f15b9c362b8c
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '17898'
+source-wordcount: '17912'
 ht-degree: 17%
 
 ---
@@ -36,6 +36,8 @@ Les principales fonctionnalités et améliorations introduites dans [!DNL Adobe 
    * Conversion d’un formulaire PDF en formulaire adaptatif à l’aide de [!DNL Automated Forms Conversion service].
 
 * Prise en charge de [!DNL Microsoft SQL Server] 2019 dans [!DNL Experience Manager Forms].
+
+* Prise en charge des groupes de disponibilité de [!DNL Microsoft] SQL Server 2016 Always On pour la haute disponibilité pour les déploiements OSGi.
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.22.5.
 
