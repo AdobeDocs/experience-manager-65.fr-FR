@@ -4,9 +4,9 @@ description: Nouveautés de  [!DNL Experience Manager] Service Pack 8 6.5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3041'
 ht-degree: 5%
 
 ---
@@ -232,6 +232,10 @@ Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les 
 * Validation des valeurs de champ sur le serveur lors de l’envoi d’un formulaire adaptatif.
 
 * Conversion d’un formulaire PDF en formulaire adaptatif à l’aide de [!DNL Automated Forms Conversion service].
+
+#### Prise en charge des groupes de disponibilité Toujours en service pour Microsoft SQL Server 2016 pour la haute disponibilité (6.5.7.0) {#always-on-availability-groups}
+
+[!DNL Experience Manager Forms] prend désormais en charge  [!DNL Microsoft] SQL Server 2016 les groupes de disponibilité Always On pour la haute disponibilité pour les déploiements OSGi.
 
 #### Modèle de données de formulaire configuration du client HTTP pour optimiser les performances (6.5.7.0) {#fdm-http-client-config}
 
