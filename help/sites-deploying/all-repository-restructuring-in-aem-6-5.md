@@ -9,11 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
-feature: Mise à niveau
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 8d6818d0f2d90482f930f8e98682670ed6d0dd28
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2724'
 ht-degree: 82%
 
 ---
@@ -72,7 +71,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Modèles de workflow {#workflow-models}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -121,7 +120,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Instances de workflow {#workflow-instances}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -147,7 +146,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Lanceurs de workflow {#workflow-launchers}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -178,7 +177,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Scripts de workflow {#workflow-scripts}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -213,7 +212,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Configurations ContextHub {#contexthub-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -244,7 +243,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Conceptions de services cloud classiques {#classic-cloud-services-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -283,7 +282,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Conceptions de tableaux de bord classiques  {#classic-dashboards-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -322,7 +321,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Conceptions de rapports classiques  {#classic-reports-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -361,7 +360,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Conceptions par défaut {#default-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -400,7 +399,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Point de terminaison Javascript Adobe DTM  {#adobe-dtm-javascript-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -423,7 +422,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Point de terminaison Web-Hook Adobe DTM  {#adobe-dtm-web-hook-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -446,7 +445,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Tâches de la boîte de réception  {#inbox-tasks}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -473,7 +472,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Configurations Blueprint de Multi-site Manager  {#multi-site-manager-blueprint-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong><em></em>Emplacement précédent</strong></td>
@@ -500,7 +499,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Configurations du gadget de tableau de bord AEM Projects  {#aem-projects-dashboard-gadget-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -530,7 +529,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Modèle d’e-mail de notification de réplication  {#replication-notification-e-mail-template}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -563,7 +562,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Balises {#tags}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -597,7 +596,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Cloud Services de traduction {#translation-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -642,7 +641,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Langues de traduction {#translation-languages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -673,7 +672,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Règles de traduction {#translation-rules}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -704,7 +703,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Bibliothèque cliente du widget de traduction {#translation-widget-client-library}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -749,9 +748,11 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 | **Conseil de restructuration** | Aucune action requise. |
 | **Remarques** | La console web d’activation des arborescences est maintenant disponible via **Outils > Déploiement > Réplication > Activer l’arborescence**. |
 
-### Services cloud de connecteur de traduction de fournisseur  {#vendor-translation-connector-cloud-services}
+{style=&quot;table-layout:auto&quot;}
 
-<table>
+### Services cloud de connecteur de traduction de fournisseur {#vendor-translation-connector-cloud-services}
+
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -798,7 +799,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Modèles d’e-mail de notification de workflow {#workflow-notification-email-templates}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
@@ -830,7 +831,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
 
 ### Packages de workflow {#workflow-packages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Emplacement précédent</strong></td>
