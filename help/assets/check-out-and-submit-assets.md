@@ -1,13 +1,13 @@
 ---
-title: Archivage et extraction de fichiers pour modification
+title: Archiver et extraire des fichiers dans  [!DNL Assets]
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
 role: Professionnel
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: eb87d77e1366786e8574f84590dfe9a3303efda0
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 49%
+source-wordcount: '429'
+ht-degree: 50%
 
 ---
 
@@ -23,8 +23,7 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 ## Extraire les ressources {#checking-out-assets}
 
 1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez la ressource à extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Passage en caisse]**.
-L&#39;option **[!UICONTROL Passage en caisse]** passe à **[!UICONTROL Passage en caisse]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Passage en caisse]**. L&#39;option **[!UICONTROL Passage en caisse]** passe à **[!UICONTROL Passage en caisse]**.
 Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous avez extraite, connectez-vous comme un utilisateur différent. Un symbole de verrou s’affiche sur la miniature de la ressource que vous avez récupérée.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -33,7 +32,7 @@ Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Vous pouvez cliquer sur **[!UICONTROL Propriétés de la Vue]** pour modifier les métadonnées du fichier verrouillé.
+   Pour modifier les métadonnées du fichier verrouillé, cliquez sur **[!UICONTROL Propriétés de la Vue]**.
 
 1. Cliquez sur **[!UICONTROL Modifier]** pour ouvrir la ressource en mode d’édition.
 
@@ -64,6 +63,6 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
 
 >[!MORELIKETHIS]
 >
->* [Comprendre l&#39;archivage et l&#39;extraction dans l&#39;application de bureau Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
->* [Didacticiel vidéo pour comprendre comment archiver et extraire des ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Comprendre l&#39;archivage et l&#39;extraction  [!DNL Experience Manager] dans l&#39;application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Didacticiel vidéo pour comprendre la procédure d&#39;enregistrement et de départ [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
