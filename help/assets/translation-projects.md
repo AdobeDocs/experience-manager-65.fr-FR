@@ -3,10 +3,11 @@ title: Création de projets de traduction
 description: Apprenez à créer des projets de traduction dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Architecte, Administrateur
+feature: Traduction
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1881'
 ht-degree: 66%
 
 ---
