@@ -3,10 +3,11 @@ title: Ressources liées
 description: Découvrez comment relier des ressources numériques qui partagent certains attributs communs. Créez également des relations dérivées de la source entre les ressources numériques.
 contentOwner: AG
 role: Professionnel
+feature: Collaboration, gestion des ressources
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '637'
 ht-degree: 47%
 
 ---
