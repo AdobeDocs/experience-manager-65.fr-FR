@@ -2,12 +2,13 @@
 title: Étendre l’éditeur de fichiers
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
-role: Professionnel, Administrateur
+role: Professionnel, administrateur
+feature: Outils de développement
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 87%
+source-wordcount: '693'
+ht-degree: 88%
 
 ---
 
