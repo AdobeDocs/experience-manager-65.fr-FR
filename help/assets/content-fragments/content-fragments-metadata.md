@@ -10,10 +10,12 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
 docset: aem65
+feature: Fragments de contenu
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '118'
 ht-degree: 100%
 
 ---
@@ -23,7 +25,7 @@ ht-degree: 100%
 
 ## Modification des propriétés/métadonnées {#editing-properties-meta-data}
 
-Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu:
+Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu :
 
 1. Dans la console **Ressources**, naviguez jusqu’à l’emplacement de votre fragment de contenu.
 1. Vous pouvez :
@@ -35,7 +37,7 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
 
 1. L’onglet **De base** fournit des options que vous pouvez afficher ou modifier :
 
-   * Une miniature, pour laquelle vous pouvez **charger une image** 
+   * Une miniature, pour laquelle vous pouvez **charger une image**
    * **Titre**
    * **Description**
    * **Balises**
