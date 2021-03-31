@@ -10,10 +10,10 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Formulaires adaptatifs
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 7a3f54d90769708344e6751756b2a12ac6c962d7
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 42%
+source-wordcount: '2078'
+ht-degree: 37%
 
 ---
 
@@ -163,6 +163,24 @@ Les raccourcis clavier suivants sont disponibles dans AEM Forms.
 | Revenir au panneau précédent | Alt+Flèche Gauche |
 | Réinitialiser les données saisies dans un formulaire | Alt+R |
 | Envoyer un formulaire | Alt+S |
+
+En outre, plusieurs raccourcis clavier sont disponibles pour le composant **[!UICONTROL Sélecteur de date]** dans Adaptive Forms. Pour activer les touches de raccourci, appuyez sur le composant **[!UICONTROL Sélecteur de date]** et appuyez sur ![Configurer](assets/configure-icon.svg) pour ouvrir les propriétés. Dans la section **[!UICONTROL Modèles]**, sélectionnez un modèle d’affichage à l’aide des listes de liste déroulante **[!UICONTROL Type]** et **[!UICONTROL Modèle]**. Enregistrez les propriétés pour activer l’utilisation de raccourcis clavier pour le composant **[!UICONTROL Sélecteur de date]**.
+
+Les touches de raccourci clavier suivantes sont disponibles pour le composant Sélecteur de date dans Adaptive Forms :
+
+| Action | Raccourci clavier |
+|---|---|
+| <ul><li>Affichez les options du composant Sélecteur de date lorsque la sélection de l’onglet met en surbrillance l’icône de calendrier.</li><li>Effectuez le événement de clics lorsque la sélection de l’onglet met en surbrillance une option.</li> | Espace ou Entrée |
+| Masquer les options du composant Sélecteur de date | Échap |
+| <ul><li>Déplacez le curseur vers l’avant dans les options disponibles dans le composant Sélecteur de date.</li><li>Définir l’icône de calendrier lorsque le champ de saisie de date est principal</li> | Onglet |
+| Déplacer le curseur vers l’arrière dans les options disponibles dans le composant Sélecteur de date | Maj+Touche de tabulation |
+| <ul><li>Affichez les options du composant Sélecteur de date lorsque le focus de l’onglet met en surbrillance le champ de saisie de date.</li><li>Déplacer le curseur vers le bas dans le calendrier disponible dans le composant Sélecteur de date</li> | Flèche vers le bas |
+| Déplacer le curseur vers le haut dans le calendrier disponible dans le composant Sélecteur de date | Flèche vers le haut |
+| Déplacer le curseur vers l’arrière dans le calendrier disponible dans le composant Sélecteur de date | Flèche vers la gauche |
+| Déplacer le curseur vers l&#39;avant dans le calendrier disponible dans le composant Sélecteur de date | Flèche vers la droite |
+| Exécutez l’action de la légende disponible entre les flèches de navigation de droite et de gauche dans le calendrier. | Maj+Flèche Haut |
+| Exécutez l’action correspondant à l’icône de flèche de navigation droite ![flèche de droite](assets/right-navigation-icon.svg) disponible dans le calendrier. | Maj+Flèche Gauche |
+| Exécutez l’action correspondant à l’icône de flèche de navigation gauche ![flèche de gauche](assets/left-navigation-icon.svg) disponible dans le calendrier. | Maj+Flèche Droite |
 
 ## Utiliser l&#39;outil d&#39;accessibilité pour identifier les problèmes d&#39;accessibilité restants
 
