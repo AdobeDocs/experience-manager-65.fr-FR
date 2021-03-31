@@ -10,10 +10,12 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
+feature: Fragments de contenu
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1749'
 ht-degree: 92%
 
 ---
@@ -28,7 +30,7 @@ Les [variations](/help/assets/content-fragments/content-fragments.md#constituent
 * [saisir le contenu](#authoring-your-content) de votre fragment
 * [créer et gérer les variations](#managing-variations) du contenu **maître**.
 
-Vous pouvez effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
+effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
 
 * [Insertion de ressources visuelles dans votre fragment](#inserting-assets-into-your-fragment) (images)
 * Sélection entre [Texte enrichi](#rich-text), [Texte brut](#plain-text) et [Texte (Markdown)](#markdown) pour la modification
