@@ -9,11 +9,13 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
+feature: Fragments de contenu
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 932601c849b3a1ddd196e6570a9cf05710cd3e6a
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 96%
+source-wordcount: '758'
+ht-degree: 98%
 
 ---
 
@@ -39,9 +41,9 @@ Pour [créer un nouveau modèle de fragment de contenu](#creating-a-content-frag
 
 >[!CAUTION]
 >
->Les sous-configurations (configuration imbriquée dans une configuration) ne sont pas prises en charge pour une utilisation avec les fragments de contenu.
+>L’utilisation des sous-configurations (les configurations imbriquées dans une configuration) n’est pas prise en charge avec les fragments de contenu.
 
-1. Accédez à **Outils**, **Général**, puis ouvrez l’**explorateur de configurations**.
+1. Accédez à **Outils**, **Général**, puis ouvrez l’**Explorateur de configurations**.
 
 1. Utilisez le bouton **Créer** pour ouvrir la boîte de dialogue.
 
@@ -76,7 +78,7 @@ Pour utiliser d’autres configurations (c’est-à-dire à l’exclusion de la 
 
 1. Utilisez le bouton **Créer** pour enregistrer le modèle vide. Un message indique que l’action a réussi. Vous pouvez alors sélectionner **Ouvrir** pour publier immédiatement le modèle ou **Terminé** pour revenir à la console.
 
-## Définition de votre modèle de fragment de contenu   {#defining-your-content-fragment-model}
+## Définition de votre modèle de fragment de contenu  {#defining-your-content-fragment-model}
 
 Le modèle de fragment de contenu définit la structure des fragments de contenu qui en résultent. À l’aide de l’éditeur de modèles, vous pouvez ajouter et configurer les champs obligatoires :
 
@@ -91,7 +93,7 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 
    Une fois ouvert, l’éditeur de modèles affiche :
 
-   * à gauche : les champs déjà définis 
+   * à gauche : les champs déjà définis
    * à droite : les **types de données** disponibles pour la création des champs (et les **propriétés** à utiliser une fois les champs créés).
 
    >[!NOTE]
@@ -102,7 +104,7 @@ Le modèle de fragment de contenu définit la structure des fragments de contenu
 
 1. **Pour ajouter un champ**
 
-   * Faites glisser un type de données à l’emplacement souhaité pour un champ:
+   * Faites glisser un type de données à l’emplacement souhaité pour un champ :
 
    ![cfm-6420-11](assets/cfm-6420-11.png)
 
@@ -146,7 +148,7 @@ Pour supprimer un modèle de fragment de contenu :
    >[!NOTE]
    Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
 
-## Publication d’un modèle de fragment de contenu   {#publishing-a-content-fragment-model}
+## Publication d’un modèle de fragment de contenu  {#publishing-a-content-fragment-model}
 
 Les modèles de fragment de contenu doivent être publiés avant ou pendant la publication des fragments de contenu dépendants.
 
