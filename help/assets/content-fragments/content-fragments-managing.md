@@ -1,8 +1,8 @@
 ---
 title: Gestion des fragments de contenu
 seo-title: Gestion des fragments de contenu
-description: Les fragments de contenu sont stockés en tant que Ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
-seo-description: Les fragments de contenu sont stockés en tant que Ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
+description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
+seo-description: Les fragments de contenu sont stockés en tant que ressources, et ils sont donc principalement gérés par l’intermédiaire de la console Ressources.
 uuid: 675e1a6b-2583-488f-bbb4-210daed3e1b0
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,16 +10,18 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
+feature: Fragments de contenu
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1491'
 ht-degree: 99%
 
 ---
 
 
-# Gestion des fragments de contenu{#managing-content-fragments}
+# Gestion des fragments de contenu {#managing-content-fragments}
 
 Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
