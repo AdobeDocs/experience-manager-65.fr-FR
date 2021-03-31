@@ -3,10 +3,11 @@ title: Facettes de recherche pour filtrer les résultats de la recherche
 description: Comment créer, modifier et utiliser les facettes de recherche dans  [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Administrateur, développeur
+feature: Rechercher
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2427'
 ht-degree: 77%
 
 ---
