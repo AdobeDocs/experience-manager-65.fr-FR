@@ -2,12 +2,13 @@
 title: Activation de la détection des ressources en double
 description: Découvrez comment activer la détection des ressources de duplicata dans le Experience Manager.
 contentOwner: AG
-role: Professionnel, Administrateur
+role: Professionnel, administrateur
+feature: Gestion des ressources,Rapports sur les ressources
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 26%
+source-wordcount: '164'
+ht-degree: 28%
 
 ---
 
