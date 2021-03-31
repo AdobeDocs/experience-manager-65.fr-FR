@@ -1,6 +1,6 @@
 ---
-title: Prise en charge des fragments de contenu dans l’API HTTP AEM Assets
-seo-title: Prise en charge des fragments de contenu dans l’API HTTP AEM Assets
+title: 'Prise en charge des fragments de contenu dans l’API HTTP AEM Assets '
+seo-title: 'Prise en charge des fragments de contenu dans l’API HTTP AEM Assets '
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP AEM Assets.
 seo-description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP AEM Assets.
 uuid: c500d71e-ceee-493a-9e4d-7016745c544c
@@ -10,16 +10,18 @@ content-type: reference
 topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
+feature: Fragments de contenu
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1864'
 ht-degree: 94%
 
 ---
 
 
-# Prise en charge des fragments de contenu dans l’API HTTP AEM Assets{#content-fragments-support-in-aem-assets-http-api}
+# Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 ## Présentation {#overview}
 
