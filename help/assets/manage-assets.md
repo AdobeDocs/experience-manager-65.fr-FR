@@ -4,10 +4,11 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 role: Professionnel
+feature: Gestion des ressources,Rechercher
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '9592'
+source-wordcount: '9595'
 ht-degree: 63%
 
 ---
