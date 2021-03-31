@@ -2,12 +2,12 @@
 title: Gérer des ressources composées avec des références et plusieurs pages
 description: Découvrez comment créer des références à des ressources numériques à partir de  [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilisez la fonction Visionneuse de pages pour vue des pages de sous-ressources individuelles de fichiers de plusieurs pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
-role: Professionnel, Administrateur
+role: Professionnel, administrateur
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: e6a0cab17d203183cc4169563179060338596cc3
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 19%
+source-wordcount: '1381'
+ht-degree: 18%
 
 ---
 
@@ -22,7 +22,7 @@ Outre l&#39;élimination de la redondance, le référencement des ressources dan
 
 Les références sont résolues sur la base du chemin d’accès, du document et de l’ID d’instance des ressources référencées.
 
-## Ajouter les ressources numériques en tant que références dans [!DNL Adobe Illustrator] {#refai}
+## [!DNL Adobe Illustrator]: Ajouter des ressources numériques en tant que références  {#refai}
 
 Vous pouvez référencer des ressources numériques existantes dans un fichier [!DNL Adobe Illustrator].
 
@@ -45,7 +45,7 @@ Vous pouvez référencer des ressources numériques existantes dans un fichier [
 
    *Figure : Références de ressources dans les détails de la ressource.*
 
-## Ajouter les ressources numériques en tant que références dans [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Ajouter des ressources numériques en tant que références  {#add-aem-assets-as-references-in-adobe-indesign}
 
 Pour référencer des ressources numériques à partir d&#39;un fichier [!DNL InDesign], faites glisser les ressources vers le fichier [!DNL InDesign] ou exportez le fichier [!DNL InDesign] en tant qu&#39;archive ZIP.
 
@@ -55,6 +55,8 @@ Les actifs référencés existent déjà dans [!DNL Experience Manager Assets]. 
 >
 >Si [!DNL InDesign Server] est propagé, la prévisualisation des fichiers [!DNL InDesign] est incorporée dans leurs métadonnées XMP. Dans ce cas, l’extraction de miniature n’est pas explicitement requise. Cependant, si [!DNL InDesign Server] n’est pas un proxy, les miniatures doivent être extraites explicitement pour les fichiers [!DNL InDesign].
 
+Lorsqu’un fichier INDD est téléchargé, les références sont récupérées en interrogeant des ressources dont les propriétés `xmpMM:InstanceID` et `xmpMM:DocumentID` se trouvent dans le référentiel.
+
 ### Création de références en faisant glisser des ressources {#create-references-by-dragging-aem-assets}
 
 Cette procédure est similaire à l’[ajout de ressources numériques en tant que références en Adobe Illustrator](#refai).
@@ -62,18 +64,18 @@ Cette procédure est similaire à l’[ajout de ressources numériques en tant q
 ### Création de références aux ressources en exportant un fichier ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Suivez les étapes décrites dans [Créer des modèles de processus](/help/sites-developing/workflows-models.md) pour créer un nouveau processus.
-1. Utilisez la fonction Package de [!DNL Adobe InDesign] pour exporter le document. [!DNL Adobe InDesign] peut exporter un document et les ressources liées sous la forme d’un assemblage. Dans ce cas, le dossier exporté contient un dossier Links contenant des sous-ressources dans le fichier [!DNL InDesign].
+1. Utilisez la fonction [Package](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) de [!DNL Adobe InDesign] pour exporter le document. [!DNL Adobe InDesign] peut exporter un document et les ressources liées sous la forme d’un assemblage. Dans ce cas, le dossier exporté contient un dossier `Links` contenant des sous-ressources dans le fichier [!DNL InDesign]. Le dossier `Links` se trouve dans le même dossier que le fichier INDD.
 1. Créez un fichier ZIP et téléchargez-le dans le référentiel [!DNL Experience Manager].
 1. Début du flux de travaux `Unarchiver`.
 1. Une fois le processus terminé, les références du dossier Links sont automatiquement référencées en tant que sous-ressources. Pour vue d&#39;une liste de ressources référencées, accédez à la page des détails de la ressource [!DNL InDesign] et fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Ajouter les ressources numériques en tant que références dans [!DNL Adobe Photoshop] {#refps}
+## [!DNL Adobe Photoshop]: Ajouter des ressources numériques en tant que références  {#refps}
 
 1. Utilisez [!DNL Experience Manager] application de bureau pour accéder à [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la fonctionnalité [!UICONTROL Placer Linked] dans [!DNL Adobe Photoshop]. Voir [placement de ressources dans l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
-1. Enregistrez le fichier [!DNL Photoshop] dans le lecteur monté ou [téléchargez](/help/assets/manage-assets.md#uploading-assets) dans le référentiel [!DNL Experience Manager].
+1. Enregistrez le fichier [!DNL Photoshop] dans le lecteur monté ou [téléchargez ](/help/assets/manage-assets.md#uploading-assets) dans le référentiel [!DNL Experience Manager].
 1. Une fois le processus terminé, les références aux ressources [!DNL Experience Manager] existantes sont répertoriées dans la page des détails de la ressource.
 
    Pour afficher les ressources référencées, fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector) dans la page des détails de la ressource.
