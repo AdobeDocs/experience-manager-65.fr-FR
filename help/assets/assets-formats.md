@@ -2,11 +2,12 @@
 title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichiers et types MIME pris en charge par  [!DNL Assets] and [!DNL Dynamic Media] et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
-role: Professionnel, Administrateur
+role: Professionnel, administrateur
+feature: Gestion des ressources,Rendus
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1585'
 ht-degree: 61%
 
 ---
