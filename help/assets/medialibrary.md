@@ -3,10 +3,11 @@ title: Utilisation de la bibliothèque multimédia pour la gestion des ressource
 description: '[!DNL Experience Manager Assets] et la bibliothèque multimédia pour la gestion des fichiers.'
 contentOwner: AG
 role: Architecte, Leader
+feature: Gestion des ressources
 translation-type: tm+mt
-source-git-commit: 15c525746a613eb33cd09b7ff476f43aa18b146b
+source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '486'
 ht-degree: 2%
 
 ---
