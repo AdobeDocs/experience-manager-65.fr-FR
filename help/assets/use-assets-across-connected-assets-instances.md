@@ -2,11 +2,12 @@
 title: Utilisation des ressources connectées pour partager des ressources DAM dans  [!DNL Sites]
 description: Utilisez des ressources disponibles pour un déploiement [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] à distance.
 contentOwner: AG
-role: Professionnel, Administrateur, Leader
+role: Professionnel, administrateur, dirigeant
+feature: Ressources, utilisateurs et groupes connectés
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '2721'
+source-wordcount: '2726'
 ht-degree: 96%
 
 ---
