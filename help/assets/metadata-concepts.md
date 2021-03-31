@@ -2,11 +2,12 @@
 title: Comprendre les concepts de métadonnées
 description: Découvrez le besoin et les types de métadonnées qui facilitent la catégorisation et l’organisation des fichiers.
 contentOwner: AG
-role: Professionnel, Administrateur
+role: Professionnel, administrateur
+feature: 'Métadonnées  '
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '2734'
+source-wordcount: '2735'
 ht-degree: 86%
 
 ---
