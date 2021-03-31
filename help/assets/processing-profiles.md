@@ -8,11 +8,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
-role: Professionnel, Administrateur
+role: Professionnel, administrateur
+feature: Workflow,Gestion des ressources,Rendus
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1377'
 ht-degree: 89%
 
 ---
