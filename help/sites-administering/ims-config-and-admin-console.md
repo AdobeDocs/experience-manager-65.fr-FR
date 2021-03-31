@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: a71c1e87dd5f01ba2584282e0960ca27d419adb0
+source-git-commit: 655d32a4ebb72ca447fc2157b029f0d08cf42b27
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 60%
+source-wordcount: '1691'
+ht-degree: 62%
 
 ---
 
@@ -206,7 +206,9 @@ Dans l’exemple ci-dessous, nous ajoutons des groupes synchronisés au groupe l
 
 Ici, un utilisateur a également été affecté à quelques groupes dans le [!DNL Admin Console]. ( Notez que les utilisateurs et les groupes peuvent être synchronisés à partir du protocole LDAP à l&#39;aide de l&#39;outil de synchronisation des utilisateurs ou créés localement, consultez la section **Intégration d&#39;utilisateurs à[!DNL Admin Console]** ci-dessus).
 
-&amp;ast;Notez que les groupes d’utilisateurs ne sont synchronisés que lorsque les utilisateurs se connectent à l’instance, pour les clients qui ont un grand nombre d’utilisateurs et de groupes, un utilitaire de synchronisation de groupes peut être exécuté par AMS pour prérécupérer les groupes pour la gestion des contrôles d&#39;accès et des autorisations décrite ci-dessus.
+>[!NOTE]
+>
+>Les groupes d’utilisateurs ne sont synchronisés que lorsque les utilisateurs se connectent à l’instance.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
