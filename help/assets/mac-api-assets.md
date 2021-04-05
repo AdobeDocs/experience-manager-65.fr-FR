@@ -4,14 +4,14 @@ description: Créer, lire, mettre à jour, supprimer et gérer des ressources nu
 contentOwner: AG
 role: Développeur
 feature: API,API HTTP Ressources,Outils de développement
+exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1730'
 ht-degree: 79%
 
 ---
-
 
 # API HTTP [!DNL Assets] {#assets-http-api}
 
@@ -314,4 +314,4 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 * [L’API HTTP met à jour les ](#update-asset-metadata) propriétés de métadonnées dans l’ `jcr` espace de nommage. Toutefois, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans l’espace de nommage `dc`.
 
-* L’API de ressources ne renvoie pas les métadonnées complètes. Dans l&#39;API, les espaces de nommage sont codés en dur et ceux-ci ne sont renvoyés que. Si vous avez besoin de métadonnées complètes, examinez le chemin d’accès au fichier `/jcr_content/metadata.json`.
+* L’API HTTP Assets ne renvoie pas les métadonnées complètes. Les espaces de nommage sont codés en dur et seuls ces espaces de nommage sont renvoyés. Pour obtenir des métadonnées complètes, voir le chemin d’accès au fichier `/jcr_content/metadata.json`.
