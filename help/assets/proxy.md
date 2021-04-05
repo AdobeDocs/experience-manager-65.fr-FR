@@ -3,14 +3,14 @@ title: '[!DNL Assets] développement par proxy'
 description: Un proxy est un  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] proxy, des opérations prises en charge, des composants de proxy et comment développer un agent proxy personnalisé.
 contentOwner: AG
 role: Administrateur, architecte
+exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 58%
 
 ---
-
 
 # [!DNL Assets] développement par proxy  {#assets-proxy-development}
 
@@ -18,7 +18,7 @@ ht-degree: 58%
 
 Un proxy est une instance de Experience Manager spécifique (et parfois distincte) qui utilise des agents proxy comme processeurs chargés de gérer une tâche et de créer un résultat. Un worker de proxy peut être utilisé pour de nombreuses tâches. Dans le cas d’un proxy [!DNL Assets], il peut être utilisé pour charger des ressources pour le rendu dans Assets. Par exemple, le [worker de proxy IDS](indesign.md) utilise un serveur pour traiter les fichiers à utiliser dans  Assets.[!DNL Adobe InDesign]
 
-Lorsque le proxy est une instance [!DNL Experience Manager] distincte, cela permet de réduire la charge sur les instances de création du Experience Manager. Par défaut, [!DNL Assets] exécute les tâches de traitement des ressources dans la même JVM (externalisée par proxy) afin de réduire la charge sur l’instance de création du Experience Manager.
+Lorsque le proxy est une instance distincte [!DNL Experience Manager], cela permet de réduire la charge sur les instances de création [!DNL Experience Manager]. Par défaut, [!DNL Assets] exécute les tâches de traitement des ressources dans la même JVM (externalisée par proxy) afin de réduire la charge sur l’instance de création [!DNL Experience Manager].
 
 ## Proxy (Accès HTTP) {#proxy-http-access}
 
@@ -104,7 +104,7 @@ Voici un exemple d’utilisation d’API :
  proxyJobService.removeJob(jobId);
 ```
 
-### Configurations du service cloud {#cloud-service-configurations}
+### Configurations Cloud Service {#cloud-service-configurations}
 
 >[!NOTE]
 >
