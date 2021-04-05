@@ -2,14 +2,14 @@
 title: Configuration des modules externes d’éditeur de texte enrichi
 description: Découvrez comment configurer les modules externes Adobe Experience Manager Rich Text Editor pour activer des fonctionnalités individuelles.
 contentOwner: AG
+exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 translation-type: tm+mt
-source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
+source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
 workflow-type: tm+mt
-source-wordcount: '4398'
+source-wordcount: '4397'
 ht-degree: 95%
 
 ---
-
 
 # Configuration des modules externes d’éditeur de texte enrichi {#configure-the-rich-text-editor-plug-ins}
 
@@ -73,13 +73,13 @@ Lors de l’utilisation de la fonctionnalité de remplacement, la chaîne à rem
 
 La boîte de dialogue de recherche et de remplacement devient transparente lorsque l’utilisateur clique sur Rechercher et devient opaque lorsque l’utilisateur clique sur Remplacer. Cela permet à l’auteur de vérifier le texte qui sera remplacé. Si les utilisateurs cliquent sur Tout remplacer, la boîte de dialogue se ferme et affiche le nombre de remplacements effectués.
 
-## Configuration des modes de collage {#pastemodes}
+## Configuration des modes de collage {#paste-modes}
 
 Lors de l’utilisation de l’éditeur de texte enrichi, les auteurs peuvent copier le contenu selon l’un des trois modes suivants :
 
 * **Mode Navigateur** : collage de texte avec la mise en œuvre de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables.
 
-* **Mode Texte brut** : collage du contenu du Presse-papiers en tant que texte brut. Cela supprime tous les éléments de style et de mise en forme du contenu copié avant insertion dans le composant AEM.
+* **Mode Texte brut** : collage du contenu du Presse-papiers en tant que texte brut. Cela supprime tous les éléments de style et de mise en forme du contenu copié avant insertion dans le composant [!DNL Experience Manager].
 
 * **Mode MS Word** : collage du texte, y compris des tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle.
 
@@ -124,7 +124,7 @@ Le mode Coller comme élément Microsoft Word (`paste-wordhtml`) peut être conf
 
 Par exemple, s’il n’est possible de coller que des formats gras et des listes dans AEM, vous pouvez écarter les autres formats en les filtrant. Il s’agit du filtrage du collage configurable, qui peut être effectué pour les deux types de filtrage :
 
-* [Texte](#pastemodes)
+* [Texte](#paste-modes)
 * [Liens](#linkstyles)
 
 Pour les liens, vous pouvez également définir les protocoles acceptés automatiquement.
