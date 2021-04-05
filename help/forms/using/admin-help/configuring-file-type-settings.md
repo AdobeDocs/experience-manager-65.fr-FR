@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 3bb12f6323398971ec315f49611a39977bd548a2
 workflow-type: tm+mt
-source-wordcount: '6148'
-ht-degree: 82%
+source-wordcount: '6171'
+ht-degree: 81%
 
 ---
 
@@ -515,6 +515,8 @@ Ces options permettent de déterminer comment les fichiers Microsoft Word sont 
 **[!UICONTROL Activer le balisage avancé ]**: ajoute des balises avancées pour une meilleure accessibilité.
 
 **[!UICONTROL Convertir tous les styles en signets ]**: permet de convertir tous les styles du document Word en signets dans le document PDF.
+
+**[!UICONTROL Convertir les styles spécifiés en signets]** : Convertit les styles définis dans le champ  **[!UICONTROL Styles avec]** niveaux en signets dans le document PDF.
 
 **[!UICONTROL Styles avec niveaux ]**: permet de spécifier les styles du document Word à convertir en signets dans le document PDF. Permet également de spécifier le niveau des signets. Pour utiliser cette fonctionnalité, désélectionnez l’option **[!UICONTROL Convertir tous les styles en signets]** et spécifiez le nom des styles en adoptant le format suivant :
 
