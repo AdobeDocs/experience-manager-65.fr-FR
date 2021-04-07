@@ -10,14 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
+exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
+feature: Sécurité
 translation-type: tm+mt
-source-git-commit: 2142df4f7579e052e18879b437fc43911010b475
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '6890'
+source-wordcount: '6891'
 ht-degree: 61%
 
 ---
-
 
 # Groupes d’utilisateurs fermés dans AEM{#closed-user-groups-in-aem}
 
@@ -570,7 +571,7 @@ Les deux composants OSGi suivants ont été ajoutés pour définir les exigences
   </tr>
   <tr>
    <td>Références</td>
-   <td>N/A</td>
+   <td>NA</td>
   </tr>
  </tbody>
 </table>
@@ -655,7 +656,7 @@ Les deux composants OSGi suivants ont été ajoutés pour définir les exigences
 | Description | `RequirementHandler` implémentation qui met à jour les exigences d’authentification Apache Sling et l’exclusion correspondante pour les chemins d’accès associés. |
 | Propriétés de configuration | `supportedPaths` |
 | Stratégie de configuration | `ConfigurationPolicy.REQUIRE` |
-| Références | N/A |
+| Références | NA |
 
 #### Options de configuration {#configuration-options-1}
 
@@ -883,4 +884,3 @@ Adobe fournit un outil pour migrer vers la nouvelle mise en œuvre CUG. Pour l�
 >[!NOTE]
 >
 >Si vous rencontrez des problèmes, il est possible de configurer une journalisation spécifique au niveau **DEBUG** sur `com.day.cq.auth.impl.cug` pour obtenir la sortie de l&#39;outil de migration. Consultez la rubrique [Connexion](/help/sites-deploying/configure-logging.md) pour en savoir plus sur la procédure à suivre.
-
