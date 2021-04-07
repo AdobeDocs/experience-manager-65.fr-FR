@@ -10,14 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
+exl-id: 314a6409-398c-470b-8799-0c4e6f745141
+feature: Sécurité
 translation-type: tm+mt
-source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '2841'
+source-wordcount: '2842'
 ht-degree: 86%
 
 ---
-
 
 # Liste de contrôle de sécurité {#security-checklist}
 
@@ -110,7 +111,7 @@ Adobe recommande de définir des pages de gestionnaire d’erreur personnalisé,
 
 ### Liste de contrôle de sécurité de Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recommande vivement de compléter la [liste de contrôle de sécurité de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html).
+AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recommande vivement de compléter la [liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=fr#getting-started).
 
 >[!CAUTION]
 >
