@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
+exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 98%
+source-wordcount: '854'
+ht-degree: 94%
 
 ---
-
 
 # Lancements{#launches}
 
@@ -103,7 +103,14 @@ La fonction Lancements vous permet de :
 >
 >Si vous rencontrez des difficultés, contactez votre administrateur système. 
 
-### Console de lancements {#the-launches-console}
+>[!CAUTION]
+>
+>La réorganisation des composants sur une page de lancement n’est pas prise en charge.
+>
+>Lorsque la page est promue, toute modification du contenu est prise en compte, mais les positions des composants ne changent pas.
+
+
+### Console Lancements {#the-launches-console}
 
 La console Lancements fournit un aperçu de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
 
