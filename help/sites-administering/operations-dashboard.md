@@ -10,14 +10,15 @@ topic-tags: operations
 content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
+exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
+feature: Opérations
 translation-type: tm+mt
-source-git-commit: 19a6a4f80e2af37b8de49080a977d02bf0e43507
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '6198'
+source-wordcount: '6199'
 ht-degree: 77%
 
 ---
-
 
 # Tableau de bord des opérations {#operations-dashboard}
 
@@ -486,7 +487,7 @@ Oak tente de déterminer la meilleure façon d’exécuter une requête donnée 
 
 L’outil Expliquer la requête explique la façon dont Oak exécute une requête. Pour y accéder, sélectionnez **Outils > Opérations > Diagnostic** dans l’écran d’accueil d’AEM, puis cliquez sur **Performances des requêtes** et accédez à l’onglet **Expliquer la requête**.
 
-**Fonctions**
+**Fonctionnalités**
 
 * Prend en charge les langages de requête Xpath, JCR-SQL et JCR-SQL2.
 * Indique le temps d’exécution réel de la requête spécifiée.
@@ -581,7 +582,7 @@ Vous pouvez accéder à la tâche de nettoyage des fichiers binaires Lucene à p
 
 Pour plus d’informations sur ce sujet, consultez cette [page de la documentation](/help/sites-administering/data-store-garbage-collection.md).
 
-### Purge du workflow {#workflow-purge}
+### Purge du workflow  {#workflow-purge}
 
 Il est possible également de purger les workflows à partir du tableau de bord de maintenance. Pour exécuter la tâche de purge du workflow, procédez comme suit :
 
@@ -905,4 +906,3 @@ Vous pouvez également télécharger un fichier `JSON` résumant les information
   </tr>
  </tbody>
 </table>
-
