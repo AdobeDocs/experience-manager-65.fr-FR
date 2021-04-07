@@ -7,15 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
-role: Professionnel, Administrateur
+role: Business Practitioner, Administrator
+exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
+feature: Collaboration, gestion des ressources
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 90%
 
 ---
-
 
 # Utilisation de Dynamic Media {#working-with-dynamic-media}
 
