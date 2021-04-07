@@ -1,21 +1,22 @@
 ---
 title: 'Diffusion de contenu HTTP/2  '
-description: HTTP/2 améliore la communication entre les navigateurs et les serveurs, ce qui accélère le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
+description: HTTP/2 améliore la communication entre les navigateurs et les serveurs, ce qui accélère le transfert d’informations tout en réduisant la quantité de puissance de traitement nécessaire.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
-role: Professionnel, Administrateur
+role: Business Practitioner, Administrator
+exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
+feature: Publication, Configuration
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '726'
 ht-degree: 52%
 
 ---
-
 
 # DIFFUSION HTTP/2 du contenu {#http-delivery-of-content}
 
