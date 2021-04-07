@@ -10,14 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
+exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
+feature: Sécurité
 translation-type: tm+mt
-source-git-commit: c2937a1989c6cfe33cc3f56f89c307cb5fb8d272
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '505'
 ht-degree: 74%
 
 ---
-
 
 # Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5 {#custom-user-group-mapping-in-aem}
 
@@ -32,7 +33,7 @@ ht-degree: 74%
   </tr>
   <tr>
    <td><p>Propriété : cq:cugEnabled</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
-   <td><p>Autorisation :</p> <p>Nœud : rep:cugPolicy, type de nœud : rep:CugPolicy</p> <p>Type de nœud indiqué : rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentification :</p> <p>Type de mixin : granite:AuthenticationRequired</p> </td>
+   <td><p>Autorisation :</p> <p>Nœud : rep:cugPolicy, type de nœud : rep:CugPolicy</p> <p>Type de nœud indiqué : rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentification:</p> <p>Type de mixin : granite:AuthenticationRequired</p> </td>
    <td><p>Pour restreindre l’accès en lecture, une stratégie de CUG dédiée est appliquée au nœud cible.</p> <p>REMARQUE : les stratégies s’appliquent uniquement aux chemins d’accès pris en charge.</p> <p>Les nœuds rep:cugPolicy de type rep:CugPolicy sont protégés et ne peuvent pas être écrits à l’aide des appels standard de l’API JCR. Vous devrez utiliser la fonctionnalité de gestion du contrôle d’accès JCR.</p> <p>Pour plus d’informations, consultez <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">cette page</a>.</p> <p>Afin d’appliquer les exigences d’authentification sur un noeud, il suffit d’ajouter le type de mixin granite:AuthenticationRequired.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
   </tr>
   <tr>
@@ -47,13 +48,13 @@ ht-degree: 74%
   </tr>
   <tr>
    <td><p>Propriété : cq:cugRealm</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
-   <td>N/A</td>
+   <td>NA</td>
    <td>Plus pris en charge depuis la nouvelle implémentation.</td>
   </tr>
  </tbody>
 </table>
 
-## Comparaison des services OSGI  {#comparison-of-osgi-services}
+## Comparaison des services OSGI {#comparison-of-osgi-services}
 
 **Anciennes versions d’AEM**
 
@@ -156,4 +157,3 @@ Service permettant de configurer la liste d’exclusion des entités qui ne doiv
  </tbody>
 </table>
 -->
-
