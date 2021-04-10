@@ -3,16 +3,16 @@ title: Gérer vos ressources numériques
 description: Découvrez les tâches de gestion des ressources telles que le téléchargement, la modification, la recherche, la suppression, l’annotation et la version de vos ressources numériques.
 contentOwner: AG
 mini-toc-levels: 1
-role: Professionnel
+role: Business Practitioner
 feature: Gestion des ressources,Rechercher
+exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: d88962cb4018b0b60f61006510f416478d119cb5
 workflow-type: tm+mt
-source-wordcount: '9595'
-ht-degree: 63%
+source-wordcount: '9652'
+ht-degree: 61%
 
 ---
-
 
 # Gérer vos ressources numériques {#manage-digital-assets}
 
@@ -585,48 +585,33 @@ Pour supprimer un fichier ou un dossier contenant un fichier :
 
 Voir [Téléchargement de ressources à partir du Experience Manager](/help/assets/download-assets-from-aem.md).
 
-## Publication des ressources {#publishing-assets}
+## Publier ou annuler la publication des ressources {#publish-assets}
 
->[!NOTE]
->
->Pour obtenir des informations spécifiques à Dynamic Media, voir [Publication de ressources Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
+Après avoir téléchargé, traité ou modifié vos fichiers sur l’auteur [!DNL Experience Manager], vous publiez le fichier sur le serveur de publication. La publication rend la ressource accessible au public. L’action d’annulation de publication a supprimé le fichier du serveur de publication mais pas du serveur de création.
 
-1. Accédez à l’emplacement des ressources/dossiers que vous souhaitez publier.
+Pour plus d’informations sur [!DNL Dynamic Media], voir [publication [!DNL Dynamic Media] ressources](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. Sélectionnez l’action rapide **[!UICONTROL Publier]** dans la carte de ressources ou sélectionnez la ressource et cliquez sur l’option **[!UICONTROL Publication rapide]** dans la barre d’outils.
-1. Si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ont été modifiées ou dont la publication a été annulée depuis leur dernière publication/annulation de publication sont affichées. Choisissez les références que vous souhaitez publier.
+1. Accédez à l’emplacement du fichier ou du dossier de fichiers que vous souhaitez publier ou que vous souhaitez supprimer de l’environnement de publication (annuler la publication).
 
-   >[!NOTE]
-   >
-   >Les dossiers vides, qui font partie d’un dossier que vous avez publié, ne sont pas publiés.
+1. Sélectionnez le fichier ou le dossier à annuler la publication, puis cliquez sur **[!UICONTROL Gérer la publication]** ![gérer l’option de publication](assets/do-not-localize/globe-publication.png) dans la barre d’outils. Pour publier rapidement, vous pouvez également sélectionner l’option **[!UICONTROL Publication rapide]** dans la barre d’outils. Si le dossier que vous souhaitez publier comprend un sous-dossier vide, ce dernier n’est pas publié.
 
-1. Cliquez sur **[!UICONTROL Publier]** pour confirmer la d’activation pour les ressources.
-
->[!CAUTION]
->
->Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
-
-## Annulation de la publication de ressources {#unpublishing-assets}
-
-1. Accédez à l’emplacement de la ressource/du dossier de ressources que vous souhaitez supprimer de l’environnement de publication (annuler la publication).
-
-1. Sélectionnez le fichier/dossier à annuler la publication, puis cliquez sur **[!UICONTROL Gérer la publication]** ![gérer l’option de publication](assets/do-not-localize/globe-publication.png) dans la barre d’outils.
-
-1. Sélectionnez l’action **[!UICONTROL Annuler la publication]** dans la liste.
+1. Sélectionnez l’option **[!UICONTROL Publier]** ou **[!UICONTROL Annuler la publication]** selon les besoins.
 
    ![Action Annuler la publication](assets/unpublish_action.png)
+   *Figure : Options de publication et d’annulation de publication et option de planification.*
 
-1. Pour annuler la publication de la ressource à une date ultérieure, sélectionnez **[!UICONTROL Annuler la publication ultérieurement]**, puis choisissez une date d’annulation de la publication de la ressource.
-1. Planifiez une date à laquelle la ressource devient indisponible dans l’environnement de publication.
-1. Si la ressource fait référence à d’autres ressources, sélectionnez les références dont vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**.
-1. Dans la boîte de dialogue de confirmation, cliquez sur :
+1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou **[!UICONTROL Plus tard]** pour planifier l&#39;action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Next]** (Suivant).
 
-   * **[!UICONTROL Annuler]** pour arrêter l’action
-   * **[!UICONTROL Annuler la publication]** pour confirmer l’annulation de la publication des ressources (elles ne sont plus disponibles dans l’environnement de publication) à la date indiquée.
+1. Lors de la publication, si une ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’assistant. Seules les références affichées, qui sont soit non publiées, soit modifiées depuis la dernière publication. Sélectionnez les références que vous souhaitez publier.
 
-   >[!NOTE]
-   >
-   >Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références car elles peuvent être référencées par d’autres ressources publiées.
+1. Lors de l’annulation de publication, si un fichier référence d’autres ressources, choisissez les références que vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Annuler la publication]** pour confirmer que les ressources doivent être annulées à la date spécifiée.
+
+Comprenez les restrictions et conseils suivants liés à la publication ou à l’annulation de publication de fichiers ou de dossiers :
+
+* L’option [!UICONTROL Gérer la publication] est disponible uniquement pour les comptes d’utilisateurs disposant d’autorisations de réplication.
+* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Evitez d’annuler la publication des références, car elles peuvent être référencées par d’autres ressources publiées.
+* Les dossiers vides ne sont pas publiés.
+* Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
 
 ## Groupe d’utilisateurs fermé {#closed-user-group}
 
@@ -650,7 +635,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
-## Recherche de ressources  {#assetsearch}
+## Recherche de ressources {#assetsearch}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
