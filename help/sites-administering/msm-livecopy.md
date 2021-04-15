@@ -1,15 +1,15 @@
 ---
 title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies.
-feature: Gestionnaire de plusieurs sites
+feature: Multi Site Manager
+exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056
 workflow-type: tm+mt
-source-wordcount: '4173'
-ht-degree: 82%
+source-wordcount: '4174'
+ht-degree: 81%
 
 ---
-
 
 # Création et synchronisation de Live Copies{#creating-and-synchronizing-live-copies}
 
@@ -240,7 +240,7 @@ Les déploiements sont traités en tant que tâches asynchrones et peuvent être
 
 #### Déploiement d’un plan directeur à partir du rail de référence {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Dans la console **Sites**, sélectionnez la page dans le plan directeur et ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)** (dans la barre d&#39;outils).
+1. Dans la console **Sites**, sélectionnez la page dans la copie dynamique et ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)** (dans la barre d&#39;outils).
 1. Sélectionnez l’option **Plan directeur** dans la liste pour afficher les plans directeurs associés à cette page.
 1. Sélectionnez le plan directeur requis dans la liste.
 1. Cliquez ou appuyez sur **Déployer**.
