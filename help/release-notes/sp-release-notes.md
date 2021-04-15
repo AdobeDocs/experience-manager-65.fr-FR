@@ -3,14 +3,14 @@ title: '[!DNL Experience Manager] Notes de mise à jour de Service Pack 6.5'
 description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manager] Service Pack 6.5 8
 docset: aem65
 mini-toc-levels: 1
+exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: fb1423b7ae110b8a3cf8e0e389394e9266157a9f
+source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3418'
 ht-degree: 5%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] Notes de mise à jour de Service Pack 6.5  {#aem-service-pack-release-notes}
 
@@ -154,9 +154,11 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 
 * Lors de l’ajout d’une structure de page à un groupe de communauté, le titre [!UICONTROL Groupe] dans le chemin de navigation est remplacé par le titre de la première [!UICONTROL page] (NPR-35803).
 * Contrairement aux modérateurs, un membre standard de la communauté n&#39;est pas en mesure d&#39;accéder à un brouillon de publication et de le modifier (NPR-35339).
-* Contrôle d&#39;accès rompu et déni de service avec DSRPReindexServlet, ce qui réduit le site des communautés jusqu&#39;à ce que l&#39;indexation soit terminée (NPR-35591).
+* Contrôle d&#39;accès rompu et déni de service avec `DSRPReindexServlet`, ce qui réduit le site des communautés jusqu&#39;à ce que l&#39;indexation soit terminée (NPR-35591).
 * La suppression de [!UICONTROL Tous les utilisateurs] du champ [!UICONTROL Administrateurs] ne les supprime pas du serveur principal (NPR-35592, NPR-35611).
 * Le composant [!UICONTROL Composer le message] ne renvoie aucun résultat lorsque le texte saisi correspond partiellement (NPR-35666).
+
+* Lorsque vous essayez d&#39;ajouter des balises à un nouveau blog en sélectionnant **Ajouter les balises**, certains impacts sur les performances sont remarqués. Pour améliorer les performances, installez [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) qui résout le problème de la suggestion de balise. Vous pouvez télécharger le correctif à partir de [!DNL Software Distribution].
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
