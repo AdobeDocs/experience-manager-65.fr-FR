@@ -2,16 +2,16 @@
 title: Intégration aux meilleures pratiques de Adobe Creative Cloud
 description: Meilleures pratiques d'intégration [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] pour rationaliser les workflows de transfert d'actifs et atteindre une vitesse de contenu élevée.
 contentOwner: AG
-role: Professionnel, administrateur
-feature: Collaboration,Lien de ressources d’Adobe,Application de bureau Experience Manager
+role: Business Practitioner, Administrator
+feature: Collaboration,Lien de ressources d’Adobe,Application de bureau
+exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: c4cfb709162ca8f8f6e8508516c39542347c6bc4
 workflow-type: tm+mt
-source-wordcount: '3259'
+source-wordcount: '3254'
 ht-degree: 55%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] et bonnes pratiques  [!DNL Creative Cloud] d’intégration  {#aem-and-creative-cloud-integration-best-practices}
 
