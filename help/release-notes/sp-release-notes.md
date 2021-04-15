@@ -5,9 +5,9 @@ docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
+source-git-commit: 9b23e9d5bbdbdde864ce71f434d6536439067f82
 workflow-type: tm+mt
-source-wordcount: '3418'
+source-wordcount: '3413'
 ht-degree: 5%
 
 ---
@@ -158,7 +158,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 * La suppression de [!UICONTROL Tous les utilisateurs] du champ [!UICONTROL Administrateurs] ne les supprime pas du serveur principal (NPR-35592, NPR-35611).
 * Le composant [!UICONTROL Composer le message] ne renvoie aucun résultat lorsque le texte saisi correspond partiellement (NPR-35666).
 
-* Lorsque vous essayez d&#39;ajouter des balises à un nouveau blog en sélectionnant **Ajouter les balises**, certains impacts sur les performances sont remarqués. Pour améliorer les performances, installez [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) qui résout le problème de la suggestion de balise. Vous pouvez télécharger le correctif à partir de [!DNL Software Distribution].
+* Vous remarquerez peut-être un certain impact sur les performances et une certaine lenteur lorsque vous tentez d&#39;ajouter des balises à un nouveau blog en sélectionnant **[!UICONTROL Ajouter les balises]**. Pour améliorer les performances, installez [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) disponible à partir de [!DNL Software Distribution].
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
