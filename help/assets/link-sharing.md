@@ -2,8 +2,8 @@
 title: Partage de fichiers à l’aide d’un lien
 description: Partagez des fichiers, des dossiers et des collections sous la forme d’une URL.
 contentOwner: AG
-role: Professionnel
-feature: Partage de liens, gestion des ressources
+role: Business Practitioner
+feature: Link Sharing,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

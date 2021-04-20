@@ -2,8 +2,8 @@
 title: 'Meilleures pratiques de surveillance du déploiement [!DNL Assets] '
 description: Recommandations relatives à la surveillance de l’environnement et des performances de votre déploiement  [!DNL Adobe Experience Manager] après son déploiement.
 contentOwner: AG
-role: Administrateur, architecte
-feature: Gestion des ressources
+role: Administrator, Architect
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

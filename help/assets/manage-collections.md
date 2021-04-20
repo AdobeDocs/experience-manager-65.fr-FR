@@ -3,8 +3,8 @@ title: Gestion des collections de ressources numériques
 description: Découvrez les tâches de gestion des collections de ressources, telles que la création, la vue, la suppression, la modification et le téléchargement de collections.
 contentOwner: AG
 mini-toc-levels: 1
-role: Professionnel
-feature: Collections, Gestion des ressources
+role: Business Practitioner
+feature: Collections,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

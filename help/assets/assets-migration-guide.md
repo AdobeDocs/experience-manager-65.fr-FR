@@ -2,8 +2,8 @@
 title: Migration des actifs en bloc
 description: Décrit comment importer des fichiers dans  [!DNL Adobe Experience Manager], appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
 contentOwner: AG
-role: Architecte, Administrateur
-feature: Migration, Rendus, Gestion des ressources
+role: Architect, Administrator
+feature: Migration,Renditions,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

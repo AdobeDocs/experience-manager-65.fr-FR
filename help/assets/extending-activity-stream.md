@@ -2,8 +2,8 @@
 title: Intégrer [!DNL Assets] avec le flux d’activité
 description: Décrit les capacités d'enregistrement de  [!DNL Experience Manager] et comment le configurer pour enregistrer des événements spécifiques.
 contentOwner: AG
-role: Développeur
-feature: Gestion des ressources
+role: Developer
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

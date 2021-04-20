@@ -2,8 +2,8 @@
 title: Organisez vos ressources numériques.
 description: Organisez vos fichiers numériques, images, fichiers, dossiers, etc. à l’aide du Experience Manager.
 contentOwner: AG
-role: Professionnel
-feature: Gestion des ressources,Rechercher
+role: Business Practitioner
+feature: Asset Management,Search
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

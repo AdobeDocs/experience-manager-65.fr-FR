@@ -3,7 +3,7 @@ title: Configuration du balisage des ressources à l’aide de Smart Content Ser
 description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans  [!DNL Adobe Experience Manager], à l’aide de Smart Content Service.
 contentOwner: AG
 role: Administrator
-feature: Balisage,Balises actives
+feature: Tagging,Smart Tags
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

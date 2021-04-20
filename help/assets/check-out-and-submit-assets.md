@@ -2,8 +2,8 @@
 title: Archiver et extraire des fichiers dans  [!DNL Assets]
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
-role: Professionnel
-feature: Gestion des ressources
+role: Business Practitioner
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
 workflow-type: tm+mt

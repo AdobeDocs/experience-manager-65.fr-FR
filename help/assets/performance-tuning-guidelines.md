@@ -3,8 +3,8 @@ title: Réglage des performances  [!DNL Assets].
 description: Suggestions et conseils sur  [!DNL Experience Manager] la configuration, les modifications apportées au matériel, aux logiciels et aux composants réseau pour supprimer les goulets d'étranglement et optimiser les performances de  [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Architecte, Administrateur
-feature: Gestion des ressources
+role: Architect, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

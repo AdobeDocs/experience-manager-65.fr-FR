@@ -2,8 +2,8 @@
 title: Modèles de ressources
 description: Découvrez les modèles d’actifs dans  [!DNL Adobe Experience Manager Assets] et comment utiliser les modèles d’actifs pour créer de la documentation marketing.
 contentOwner: AG
-role: Professionnel
-feature: Gestion des ressources,Outils de développement
+role: Business Practitioner
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

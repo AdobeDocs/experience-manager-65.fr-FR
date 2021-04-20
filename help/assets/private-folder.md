@@ -2,7 +2,7 @@
 title: Dossiers privés pour le partage de fichiers
 description: Découvrez comment créer un dossier privé dans  [!DNL Adobe Experience Manager Assets] et le partager avec d'autres utilisateurs et leur attribuer divers privilèges.
 contentOwner: AG
-role: Professionnel
+role: Business Practitioner
 feature: Collaboration
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c

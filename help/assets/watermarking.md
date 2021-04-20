@@ -2,8 +2,8 @@
 title: Ajout d’un filigrane à vos ressources numériques
 description: Découvrez comment utiliser la fonctionnalité d’application d’un filigrane pour ajouter un filigrane numérique aux ressources.
 contentOwner: AG
-role: Professionnel, administrateur
-feature: Gestion des ressources
+role: Business Practitioner, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

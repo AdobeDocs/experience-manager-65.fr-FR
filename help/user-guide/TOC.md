@@ -5,8 +5,8 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.5
 user-guide-description: Un aperçu de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser l'AEM 6.5
 feature-set: Experience Manager
-feature: Informations sur la version
-role: Leader, Architecte, Développeur, Architecte de données, Ingénieur de données, Administrateur, Professionnel
+feature: Release Information
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt

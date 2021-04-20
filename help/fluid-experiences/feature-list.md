@@ -2,7 +2,7 @@
 title: liste des fonctionnalités Expériences AEM fluides
 description: Liste des fonctionnalités des expériences fluides
 index: n
-feature: 'Création  '
+feature: Authoring
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

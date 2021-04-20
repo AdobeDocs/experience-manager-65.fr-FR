@@ -1,7 +1,7 @@
 ---
 title: Utiliser le mode Mise en page pour redimensionner les composants des formulaires adaptatifs
 description: 'Définir la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

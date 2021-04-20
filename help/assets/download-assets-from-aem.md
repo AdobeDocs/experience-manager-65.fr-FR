@@ -2,8 +2,8 @@
 title: Téléchargement de ressources
 description: Découvrez comment télécharger des ressources à partir de  [!DNL Adobe Experience Manager] et activer ou désactiver la fonctionnalité de téléchargement.
 contentOwner: AG
-role: Professionnel
-feature: Gestion des ressources,Répartition des ressources
+role: Business Practitioner
+feature: Asset Management,Asset Distribution
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

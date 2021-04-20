@@ -1,7 +1,7 @@
 ---
 title: Création d’un gestionnaire d’invitation d’utilisateurs externes
 description: Création d’un gestionnaire d’invitation d’utilisateurs externes
-role: Développeur
+role: Developer
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Partage de dossiers avec  [!DNL Adobe Creative Cloud] les meilleures pratiques
 description: Configurez  [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] pour échanger des dossiers avec des utilisateurs Adobe Creative Cloud (CC).
 contentOwner: AG
-role: Professionnel, administrateur
+role: Business Practitioner, Administrator
 feature: Collaboration
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c

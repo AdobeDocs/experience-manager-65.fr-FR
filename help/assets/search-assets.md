@@ -3,8 +3,8 @@ title: Recherche d’images et de ressources numériques dans [!DNL Adobe Experi
 description: Découvrez comment rechercher les ressources souhaitées dans  [!DNL Adobe Experience Manager] à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Recherche, métadonnées
-role: Professionnel
+feature: Search, Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: fd283b840830bef613689f81cf753e226fb834d7
 workflow-type: tm+mt

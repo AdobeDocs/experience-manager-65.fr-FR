@@ -2,8 +2,8 @@
 title: Présentation de  [!DNL Adobe Experience Manager Assets]
 description: Découvrez ce qu’est la gestion des actifs numériques, ses cas d’utilisation et  [!DNL Adobe Experience Manager Asset] l’offre.
 contentOwner: AG
-feature: Gestion des ressources
-role: Chef, Architecte, Professionnel
+feature: Asset Management
+role: Leader, Architect, Business Practitioner
 translation-type: tm+mt
 source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt

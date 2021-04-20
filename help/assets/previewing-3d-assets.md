@@ -3,8 +3,8 @@ title: Prévisualisation de fichiers 3D
 description: Découvrez comment prévisualiser des ressources 3D
 contentOwner: Rick Brough
 docset: aem65
-feature: Ressources 3D
-role: Professionnel
+feature: 3D Assets
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
