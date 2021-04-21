@@ -5,13 +5,12 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur AEM 6.5 Mobile
 breadcrumb-title: Guide mobile
 user-guide-description: Créez et gérez du contenu pour les applications mobiles.
-feature-set: Experience Manager Sites
 feature: Mobile
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '332'
 ht-degree: 30%
 
 ---
