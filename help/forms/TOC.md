@@ -7,12 +7,11 @@ audience: end-user
 user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
-feature-set: Experience Manager Forms
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3718'
 ht-degree: 71%
 
 ---
@@ -569,7 +568,7 @@ ht-degree: 71%
    + Service d’informations système {#system-information-service}
       + [Configuration du service d’informations système](/help/forms/using/admin-help/set-system-information-service.md)
       + [API du service d’informations système](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Rapports de workflow {#process-reporting}
++ Rapports de workflow  {#process-reporting}
    + [Présentation du Rapports de processus](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Prise en main du Rapports de processus](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Fonctionnement du Rapports de traitement](/help/forms/using/process-reporting/process-reporting-architecture.md)
