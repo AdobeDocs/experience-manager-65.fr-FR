@@ -6,16 +6,16 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
-feature: Viewers
+feature: Visionneuses
 role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
+exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 4b1b9fb014594a67e8db271cc02bc54b29e24896
 workflow-type: tm+mt
-source-wordcount: '6636'
+source-wordcount: '6602'
 ht-degree: 52%
 
 ---
-
 
 # Intégration des visionneuses Dynamic Media avec Adobe Analytics et l’Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
@@ -43,11 +43,13 @@ Pour en savoir plus sur les extensions, voir [Adobe Extension](https://experienc
 
 Le cas d’utilisation Principal pour l’intégration avec l’Experience Platform Launch est celui des clients qui utilisent à la fois AEM Assets et AEM Sites. Dans de tels scénarios, vous pouvez configurer une intégration standard entre votre noeud d’auteur AEM et votre Experience Platform Launch, puis associer votre instance Sites à la propriété Experience Platform Launch. Ensuite, tout composant WCM Dynamic Media ajouté à une page Sites suit les données et les événements des visiteurs.
 
-Voir [À propos du suivi des visionneuses Dynamic Media dans AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+Voir [Suivi des visionneuses Dynamic Media dans AEM Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
 Un autre cas d’utilisation pris en charge par l’intégration est celui des clients qui utilisent AEM Assets uniquement ou Dynamic Media Classic. Dans ce cas, vous obtenez le code intégré pour votre visionneuse et vous l’ajoutez à la page du site web. Ensuite, récupérez l’URL de production de la bibliothèque Experience Platform Launch auprès de l’Experience Platform Launch et ajoutez-la manuellement au code de page Web.
 
-Voir [À propos du suivi des visionneuses Dynamic Media à l’aide du code intégré](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+Voir [Suivi des visionneuses Dynamic Media à l’aide du code incorporé](#tracking-dynamic-media-viewers-using-embed-code).
+
+<!-- Path on internal wiki [About tracking Dynamic Media viewers using embed code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode). -->
 
 ## Fonctionnement du suivi des données et des événements dans l’intégration {#how-data-and-event-tracking-works-in-the-integration}
 
@@ -264,7 +266,7 @@ La méthode la plus simple consiste à effectuer le processus en deux étapes :
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement Dynamic Media Viewer. Entrez le nom complet de l’argument événement dans le champ d’entrée **[!UICONTROL value]** de l’affectation de variable Analytics. Assurez-vous de l&#39;entourer de signes de pourcentage (%). Par exemple :
+Il est toutefois possible d’utiliser une autre approche et d’éviter la création d’un élément de données. Vous pouvez référencer directement un argument à partir d’un événement Dynamic Media Viewer. Entrez le nom complet de l’argument événement dans le champ d’entrée **[!UICONTROL value]** de l’affectation de variable Analytics. Veillez à l’entourer de signes de pourcentage (%). Par exemple :
 
 `%event.detail.dm.LOAD.asset%`
 
