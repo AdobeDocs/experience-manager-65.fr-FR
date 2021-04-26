@@ -3,14 +3,14 @@ title: Guide de l’utilisateur des fonctionnalités d’AEM 6.5
 seo-title: Guide de l’utilisateur des fonctionnalités d’AEM 6.5
 description: Aperçu des capacités essentielles de l'AEM 6.5
 seo-description: Aperçu des capacités essentielles de l'AEM 6.5
+exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 52%
+source-wordcount: '157'
+ht-degree: 47%
 
 ---
-
 
 # AEM 6.5 Fonctionnalités Guides de l&#39;utilisateur {#aem-65-capabilities-user-guides}
 
@@ -34,9 +34,13 @@ ht-degree: 52%
 
 [Créez, gérez, publiez et mettez à jour des formulaires numériques.](/help/forms/home.md)
 
-## Guide des bonnes pratiques {#aem-screens}
+## AEM Screens {#aem-screens}
 
-[Découvrez la solution d’affichage numérique pour publier des expériences dynamiques et interactives.](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Découvrez la solution d’affichage numérique pour publier des expériences dynamiques et interactives.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+
+## AEM Commerce {#aem-commerce}
+
+[Découvrez AEM Commerce.](/help/commerce/home.md)
 
 ## AEM Communities {#aem-communities}
 
@@ -46,6 +50,6 @@ ht-degree: 52%
 
 [Partagez du contenu généré par l’utilisateur avec AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
-## AEM Mobile {#aem-mobile}
+## AEM  Mobile {#aem-mobile}
 
 [Créez et gérez du contenu pour les applications mobiles.](/help/mobile/home.md)
