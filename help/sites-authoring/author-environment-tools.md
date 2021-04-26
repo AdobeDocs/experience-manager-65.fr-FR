@@ -10,14 +10,14 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
+exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2239'
 ht-degree: 97%
 
 ---
-
 
 # Création – Environnement et outils{#authoring-the-environment-and-tools}
 
@@ -243,7 +243,7 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 
-* [Références aux pages de produit](/help/sites-administering/generic.md#showing-product-references) (depuis la console Commerce – Produits)
+* [Références aux pages de produit](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (depuis la console Commerce – Produits)
 * [Lancements](/help/sites-authoring/launches.md) donne accès aux lancements associés.
 * [](/help/sites-administering/msm.md)Live Copies affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
 * [Plan directeur](/help/sites-administering/msm-best-practices.md), fournit des détails et diverses actions
