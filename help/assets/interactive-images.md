@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
-feature: Interactive Images
+feature: Images interactives
 role: Business Practitioner, Administrator
+exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4335'
+source-wordcount: '4332'
 ht-degree: 99%
 
 ---
-
 
 # Images interactives {#interactive-images}
 
@@ -49,7 +49,7 @@ Le tutoriel permet d’illustrer les étapes d’intégration d’images interac
 
 1. **(Facultatif) Identification des variables de zone réactive** : si vous utilisez des instances autonomes d’AEM Assets et de Dynamic Media, commencez par identifier les variables dynamiques utilisées dans votre aperçu rapide existant afin de pouvoir entrer les données de zone réactive lors de la création de l’image interactive. Voir [(Facultatif) Identification des variables de zone réactive](#optional-identifying-hotspot-variables).
 Cependant, si vous utilisez AEM Sites ou AEM eCommerce, ou les deux, cette étape n’est pas nécessaire.
-Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
+Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives** : personnalisez l’image utilisée pour représenter des zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactives prêt à l’emploi `Shoppable_Banner`.
 Voir [(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -75,7 +75,7 @@ Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégre
 >Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
 >
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
->* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
+>* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
 >
