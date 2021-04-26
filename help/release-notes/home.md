@@ -1,14 +1,14 @@
 ---
 title: Notes de mise à jour de Adobe Experience Manager 6.5
 description: Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
+exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 translation-type: tm+mt
-source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '384'
 ht-degree: 46%
 
 ---
-
 
 # Notes de mise à jour de Adobe Experience Manager 6.5
 
@@ -16,7 +16,7 @@ Les notes de mise à jour d’AEM comportent des informations importantes sur la
 
 ## Principaux articles AEM
 
-* [Initiez-vous à AEM](https://helpx.adobe.com/fr/experience-manager/get-started.html)
+* [Initiez-vous à AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=fr)
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
@@ -34,6 +34,7 @@ Les notes de mise à jour d’AEM comportent des informations importantes sur la
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base de l&#39;AEM. |
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre instance AEM. |
 | [Gestion du guide de l’utilisateur](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |
+| [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez le cadre d&#39;intégration du commerce sur AEM. |
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit comment créer et gérer du contenu pour les applications mobiles. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par les utilisateurs avec Livefyre. |
 
