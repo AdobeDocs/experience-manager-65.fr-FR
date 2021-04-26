@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 6%
 
 ---
@@ -28,17 +28,17 @@ L’intégration pour AEM Content and Commerce est un processus en deux étapes 
 
 2. Connectez AEM à votre solution commerciale
 
-### Installation du module complémentaire AEM Content and Comemerce pour AEM 6.5
+### Installez le module complémentaire AEM Content and Commerce pour AEM 6.5 {#install-add-on}
 
 Téléchargez et installez l&#39;Ajoute commerciale AEM pour AEM 6.5 à partir du portail [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
 Début et installation du Service Pack AEM 6.5 requis. Nous vous recommandons d&#39;installer le dernier Service Pack disponible.
 
-    >[!NOTA]
-    >
-    >Ce processus sera effectué par le CST pour les clients du service AEM géré.
+>[!NOTE]
+>
+>Ce sera fait par le CST pour les clients AEM Service Géré.
 
-### Connectez AEM à votre système commercial
+### Connectez AEM à votre système commercial {#connect}
 
 AEM peut être connecté à tout système commercial qui dispose d&#39;un point de terminaison GraphQL accessible pour AEM. Ces points de terminaison sont généralement accessibles au public ou peuvent être connectés via un VPN privé ou des connexions locales selon la configuration du projet individuel.
 
