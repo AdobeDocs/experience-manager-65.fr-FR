@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
+exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 92%
 
 ---
-
 
 # Composants{#components}
 
@@ -62,7 +62,7 @@ Les pages suivantes fournissent des liens vers des informations supplémentaires
 
 * [Communautés](/help/communities/author-communities.md) - Ces composants fournissent des fonctionnalités interactives pour un site web, tel que des forums et des commentaires. La plupart de ces composants sont inclus lors de la création d&#39;un [site communautaire](/help/communities/overview.md).
 
-* [eCommerce](/help/sites-administering/ecommerce.md)  - La fonctionnalité eCommerce de l&#39;AEM comprend également une gamme de composants. L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)  - La fonctionnalité eCommerce de l&#39;AEM comprend également une gamme de composants. L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
 
 ### Configuration des composants {#configuring-components}
 
@@ -70,4 +70,3 @@ Outre les composants auxquels les auteurs peuvent avoir accès dans une installa
 
 * Si votre page est basée sur un modèle modifiable recommandé, vous pouvez [modifier le modèle](/help/sites-authoring/templates.md) pour activer/désactiver ces composants et modifier les paramètres d’éléments spécifiques.
 * Si votre page est basée sur un modèle statique, vous pouvez utiliser le [mode de conception](/help/sites-authoring/default-components-designmode.md#enable-disable-components) pour activer/désactiver ces composants et modifier les paramètres d’éléments spécifiques.
-
