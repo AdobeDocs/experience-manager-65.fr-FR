@@ -9,10 +9,10 @@ user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Développement
 role: Developer
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 82%
+source-wordcount: '910'
+ht-degree: 81%
 
 ---
 
@@ -70,10 +70,6 @@ ht-degree: 82%
    + [Intégration de services à la console JMX](jmx-integration.md)
    + [Développement de l’éditeur en masse](dev-bulk-editor.md)
    + [Élaboration de rapports](dev-reports.md)
-   + eCommerce{#ecommerce}
-      + [eCommerce](ecommerce.md)
-      + [Développement (générique)](generic.md)
-      + [Développement avec SAP Commerce Cloud](sap-commerce-cloud.md)
 + Composants{#components}
    + [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
    + [Système de style](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
