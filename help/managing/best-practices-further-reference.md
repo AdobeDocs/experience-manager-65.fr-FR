@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
+exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3783'
 ht-degree: 88%
 
 ---
-
 
 # La liste de contrôle – Référence supplémentaire{#the-checklist-further-reference}
 
@@ -34,18 +34,18 @@ Lors de la mise en oeuvre de l&#39;AEM (en particulier pour la première fois), 
 
 Tenez compte des fonctions d’AEM que vous utiliserez et de l’impact sur votre travail de conception, par exemple :
 
-* [Commerce](/help/sites-administering/ecommerce.md)
+* [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
 * [Screens](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Ressources](/help/assets/assets.md)
 * [Balises](/help/sites-administering/tags.md)
 * [Gestion de sites multiples·et traduction](/help/sites-administering/msm-and-translation.md)
-* [Formulaires](/help/forms/home.md)
+* [Forms](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
 En outre, consultez les [notes de mise à jour](/help/release-notes/release-notes.md) pour les différentes versions d’AEM, afin de savoir quand de nouvelles fonctions ont été ajoutées.
 
-### Intégrations  {#integrations}
+### Intégrations {#integrations}
 
 AEM peut être intégré à d’autres produits Adobe et/ou services tiers. Ceux-ci peuvent augmenter la puissance et les fonctionnalités à votre disposition.
 
@@ -362,7 +362,7 @@ Avant de discuter des mesures relatives, une définition rapide des termes :
    | Cache du répartiteur | Mémoire serveur du serveur Web (mémoire principale et disque dur). | Serveur Web (mémoire principale et disque dur). Nombre et taille des pages mises en cache. |
    | Cache de sortie | Mémoire serveur du serveur AEM (mémoire principale et disque dur). | Nombre et taille des pages du cache de sortie, nombre de dépendances par page. Le cache du Dispatcher réduit ce volume. |
    | Serveur web | Puissance de calcul du serveur Web. | Nombre de demandes. La mise en cache réduit ce volume. |
-   | Template | Puissance de calcul du serveur Web. | Complexité des modèles. |
+   | Modèle | Puissance de calcul du serveur Web. | Complexité des modèles. |
    | Référentiel | Performances du référentiel. | Nombre de pages chargées à partir du référentiel. |
 
 ### Autres mesures {#other-metrics}
