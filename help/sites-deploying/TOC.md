@@ -9,10 +9,10 @@ user-guide-description: En savoir plus sur l’installation, le déploiement et 
 feature: Déploiement
 role: Architect
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 93%
+source-wordcount: '328'
+ht-degree: 92%
 
 ---
 
@@ -90,11 +90,6 @@ ht-degree: 93%
    + [Restructuration des référentiels de Forms dans AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Restructuration des référentiels e-Commerce dans AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Restructuration des référentiels pour AEM Communities dans la version 6.5](communities-repository-restructuring-in-aem-6-5.md)
-+ eCommerce {#ecommerce}
-   + [Aperçu du commerce électronique](ecommerce.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Bonnes pratiques {#practices}
    + [Meilleures pratiques de déploiement](best-practices.md)
    + [Arborescence de la performance](performance-tree.md)
