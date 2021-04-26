@@ -3,14 +3,14 @@ title: Guide de Forms Adobe Experience Manager 6.5
 seo-title: Guide de Forms AEM 6.5
 description: Ce guide couvre toutes les tâches AEM Forms, y compris la création, la gestion, la publication et la mise à jour de formulaires numériques.
 seo-description: couvre toutes les tâches AEM Forms, y compris la création, la gestion, la publication et la mise à jour de formulaires numériques.
+exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
 translation-type: tm+mt
-source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '378'
 ht-degree: 37%
 
 ---
-
 
 # Guide de Forms Adobe Experience Manager 6.5
 
@@ -18,7 +18,7 @@ Ce guide couvre toutes les tâches AEM Forms, y compris la création, la gestion
 
 ## Principaux articles AEM
 
-* [Prise en main d’AEM](https://helpx.adobe.com/fr/experience-manager/get-started.html)
+* [Prise en main d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=fr)
 * [Notes de mise à jour d’AEM 6.5](/help/release-notes/home.md)
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
@@ -38,6 +38,7 @@ Ce guide couvre toutes les tâches AEM Forms, y compris la création, la gestion
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base de l&#39;AEM. |
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre instance AEM. |
 | [Gestion du guide de l’utilisateur](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |
+| [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez le cadre d&#39;intégration du commerce sur AEM. |
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit comment créer et gérer du contenu pour les applications mobiles. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par les utilisateurs avec Livefyre. |
 
