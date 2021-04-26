@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
+exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 89%
 
 ---
-
 
 # Implémentation de référence We.Retail{#we-retail-reference-implementation}
 
@@ -28,7 +28,7 @@ We.Retail utilise les technologies AEM les plus récentes, telles que HTL, les m
 
 Bien que le site représente le secteur du commerce de détail, la façon dont il est configuré le rend applicable à tous les secteurs. Seuls le catalogue de produits et les fonctionnalités du panier d’achat sont propres au secteur du commerce de détail.
 
-## Fonctions {#features}
+## Fonctionnalités {#features}
 
 En tant qu’implémentation de référence standard d’AEM, We.Retail présente certaines des fonctions les plus puissantes d’AEM.
 
@@ -38,7 +38,7 @@ En tant qu’implémentation de référence standard d’AEM, We.Retail présent
 | [Mise en page réactive](/help/sites-authoring/responsive-layout.md) | Toutes les pages disposent d’une mise en page réactive pour s’adapter de manière dynamique à la taille de l’écran et du terminal. | [Faites un essai !](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Modèles modifiables](/help/sites-developing/page-templates-editable.md) | Toutes les pages reposent sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles. | [Faites un essai !](/help/sites-developing/we-retail-editable-templates.md) |
 | [HTML Template Language](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) | Tous les composants sont basés sur HTL. |  |
-| [Fonctionnalités de commerce électronique](/help/sites-developing/ecommerce.md) | Catalogue de produits intégré. |  |
+| [Fonctionnalités de commerce électronique](/help/commerce/cif-classic/developing/ecommerce.md) | Catalogue de produits intégré. |  |
 | [Sites Communities](/help/communities/overview.md) | Les visiteurs sont autorisés à participer à des discussions communautaires, à lire des blogs et bien plus encore. |  |
 | [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) | Tous les composants sont basés sur les nouveaux composants principaux. Ils s’avèrent également plus faciles à utiliser et à configurer en standard. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
 | [Fragments de contenu](/help/assets/content-fragments/content-fragments.md) | La section Expériences We.Retail permet de réutiliser du contenu au moyen de fragments de contenu. | [Faites un essai !](/help/sites-developing/we-retail-content-fragments.md) |
@@ -123,4 +123,3 @@ N’hésitez pas à répliquer ou à contribuer avec des [requêtes d’extracti
 Aperçu de page d’accueil de We.Retail :
 
 ![screencapture-localhost-4502-editor-html-content-we-commerce-us-fr-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
-
