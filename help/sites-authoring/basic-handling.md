@@ -10,14 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
+exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 95%
 
 ---
-
 
 # Manipulation de base{#basic-handling}
 
@@ -108,7 +108,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>Vous permet de gérer les produits, les catalogues de produits et les commandes liés à vos sites de <a href="/help/sites-administering/ecommerce.md">commerce</a>.</td>
+   <td>Vous permet de gérer les produits, les catalogues de produits et les commandes liés à vos sites de <a href="/help/commerce/cif-classic/administering/ecommerce.md">commerce</a>.</td>
   </tr>
   <tr>
    <td>Fragments d’expérience</td>
@@ -193,7 +193,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * Chemin de navigation
 
-   ![bh-03](assets/bh-05.png)
+   ![bh-05](assets/bh-05.png)
 
    Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site web.
 
@@ -416,7 +416,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 
    * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous cliquez ou appuyez dessus.
 
-   ![bh-15](assets/bh-17.png)
+   ![bh-17](assets/bh-17.png)
 
    * Les enfants de la ressource sélectionnée sont affichés dans la colonne située à droite de la ressource concernée.
    * Si vous appuyez ou cliquez sur le nom d’une ressource qui ne contient pas d’enfants, ses détails sont affichés dans la dernière colonne.
@@ -593,4 +593,3 @@ Les **références** affichent toutes les connexions avec la ressource sélectio
 Cette action ouvre un panneau similaire à [Rechercher](/help/sites-authoring/search.md) avec les filtres d’emplacement correspondants déjà définis, ce qui permet de filtrer davantage le contenu que vous souhaitez afficher.
 
 ![bh-29](assets/bh-29.png)
-
