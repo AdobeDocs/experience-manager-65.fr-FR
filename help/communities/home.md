@@ -3,14 +3,14 @@ title: Guide des communautés Adobe Experience Manager 6.5
 seo-title: Guide des communautés Adobe Experience Manager 6.5
 description: Ce guide couvre toutes les tâches AEM Communities, telles que la création d’expériences en ligne, telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
 seo-description: couvre toutes les tâches AEM Communities, telles que la création d’expériences en ligne, telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales.
+exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
 translation-type: tm+mt
-source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '399'
 ht-degree: 32%
 
 ---
-
 
 # Guide des communautés Adobe Experience Manager 6.5
 
@@ -18,7 +18,7 @@ Ce guide couvre toutes les tâches AEM Communities, telles que la création d’
 
 ## Principaux articles AEM
 
-* [Prise en main d’AEM](https://helpx.adobe.com/fr/experience-manager/get-started.html)
+* [Prise en main d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=fr)
 * [Notes de mise à jour d’AEM 6.5](/help/release-notes/home.md)
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
@@ -38,6 +38,7 @@ Ce guide couvre toutes les tâches AEM Communities, telles que la création d’
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base de l&#39;AEM. |
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre instance AEM. |
 | [Gestion du guide de l’utilisateur](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |
+| [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez le cadre d&#39;intégration du commerce sur AEM. |
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit comment créer et gérer du contenu pour les applications mobiles. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par les utilisateurs avec Livefyre. |
 
