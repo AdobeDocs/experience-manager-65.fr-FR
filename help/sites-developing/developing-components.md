@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
+exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 91%
 
 ---
-
 
 # Développement de composants AEM{#developing-aem-components}
 
@@ -26,8 +26,8 @@ Les composants AEM servent à stocker, mettre en forme et générer le rendu du 
 
 * Lors de la [création de pages](/help/sites-authoring/default-components.md), les composants permettent aux auteurs de modifier et de configurer le contenu.
 
-   * Lors de la construction d’un site [marchand](/help/sites-administering/ecommerce.md), les composants peuvent, par exemple, collecter et afficher des informations issues du catalogue.
-Pour plus d’informations, voir [Développement du commerce électronique](/help/sites-developing/ecommerce.md).
+   * Lors de la construction d’un site [marchand](/help/commerce/cif-classic/administering/ecommerce.md), les composants peuvent, par exemple, collecter et afficher des informations issues du catalogue.
+Pour plus d’informations, voir [Développement du commerce électronique](/help/commerce/cif-classic/developing/ecommerce.md).
 
    * Lors de la construction d’un site de [communauté](/help/communities/author-communities.md), les composants peuvent fournir des informations et en collecter auprès des visiteurs.
 Pour plus d’informations, voir [Développement de communautés](/help/communities/communities.md).
