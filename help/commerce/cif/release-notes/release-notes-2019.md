@@ -2,10 +2,10 @@
 title: Notes de mise à jour AEM Content and Commerce 2021
 description: Notes de mise à jour AEM Content and Commerce 2021
 translation-type: tm+mt
-source-git-commit: c2fb9af056fa4be13cfd7e60e8a44485e8712c0b
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 9%
 
 * Composants côté client basés sur la réaction pour la gestion de compte. Cette version prend en charge les fonctionnalités suivantes : Connectez-vous, Mot de passe oublié et créez un compte.
 
-### Améliorations  {#what-is-improved-october}
+### Améliorations {#what-is-improved-october}
 
 * Les détails du produit et les composants de la liste du produit ont été améliorés afin d’afficher les données factices afin de fournir aux auteurs une prévisualisation de la mise en page lorsque ces composants sont placés sur un modèle/une page.
 
@@ -77,7 +77,7 @@ ht-degree: 9%
 
 * Le composant Passage en caisse comprend les formulaires d&#39;adresse, la sélection des paiements et la sélection des modes de livraison.
 
-### Améliorations  {#what-is-improved-september}
+### Améliorations {#what-is-improved-september}
 
 * Les composants Teaser et Carrousel de produit prennent en charge les variantes de produit.
 
@@ -105,7 +105,7 @@ ht-degree: 9%
 
 * Bouton permettant aux auteurs de placer un lien sur une page d’AEM et de créer un lien vers une page d’AEM, une page des détails du produit, une page de liste du produit ou un lien externe.
 
-### Améliorations  {#what-is-improved-august}
+### Améliorations {#what-is-improved-august}
 
 * La configuration de la boutique de Magento a été déplacée d’OSGi vers AEM Console de produit pour rendre la configuration de l’intégration plus conviviale en termes de création.
 
@@ -131,7 +131,7 @@ ht-degree: 9%
 
 * Liste de Catégories personnalisées côté serveur pour afficher la liste des catégories sur une page AEM.
 
-### Améliorations  {#what-is-improved-july}
+### Améliorations {#what-is-improved-july}
 
 * La prise en charge de Magento 2.3.2 et les correctifs liés aux propriétés du produit s’affichent dans la console du produit.
 
