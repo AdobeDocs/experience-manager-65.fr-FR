@@ -3,9 +3,9 @@ title: Présentation et présentation
 description: Présentation et présentation du contenu et du commerce. Le Cadre d'intégration du commerce Experience Manager (CIF) est le modèle recommandé par l'Adobe pour intégrer et étendre les services de commerce à partir de solutions de commerce Magento et tierces avec l'Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '869'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Les marques peuvent intégrer le Experience Manager à l&#39;Adobe Commerce, une
 
 * Optimiser et innover plus rapidement
 * Personnaliser les expériences pour générer des conversions
-* créer une fois et publier partout
+* Créer une fois et publier partout
 * Enrichir et différencier les expériences pour les clients
 * Rationalisation de la création avec accès aux données commerciales
 
@@ -58,7 +58,7 @@ Les puissants outils de FIC en AEM permettent aux créateurs de contenu de crée
 
 ### Durée à valeur (TTV)
 
-Accélère le développement des projets grâce à [AEM Core Components](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html) et aux modèles d&#39;intégration pour les PWA (Contenu et commerce sans affichage).
+Accélère le développement des projets grâce à [AEM Core Components](https://www.aemcomponents.dev/), [AEM Venia reference storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) et aux modèles d&#39;intégration pour les PWA (Headless Content and Commerce).
 
 CIF est conçu pour l&#39;innovation continue avec un module complémentaire toujours à jour, permettant au client d&#39;accéder à de nouvelles fonctionnalités améliorées.
 
