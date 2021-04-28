@@ -1,13 +1,13 @@
 ---
-sub-product: AEM Commerce
-user-guide-title: AEM Commerce
+sub-product: Contenu AEM et commerce
+user-guide-title: Contenu AEM et commerce
 breadcrumb-title: Guide commercial
-user-guide-description: Comprendre comment utiliser et administrer le commerce des Experience Manager.
+user-guide-description: Comprendre comment utiliser et administrer AEM Contenu et commerce.
 translation-type: tm+mt
-source-git-commit: 96bb4904818e7f3f64613c810eeb48f223e287c7
+source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 58%
+source-wordcount: '104'
+ht-degree: 51%
 
 ---
 
