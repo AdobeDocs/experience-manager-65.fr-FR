@@ -3,10 +3,10 @@ title: Modifications notables du module complémentaire CIF (Commerce Integratio
 description: Changements notables du module complémentaire CIF (Commerce Integration Framework) par rapport aux anciennes versions de CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: a8dba82029168660b84b085ab46d0406b19961ef
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 9%
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ Le point de terminaison est configuré via la console OSGi.
 
 ## Déploiement du projet CIF Venia
 
-Projet disponible sur [Guides d&#39;AEM GitHub - Projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué par l&#39;intermédiaire du gestionnaire de modules
+Projet disponible sur [GitHub AEM Guides - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué via AEM Package Manager.
 
 **Versions CIF précédentes**
 
@@ -58,4 +58,4 @@ AEM effectue le rendu des expériences de catalogue de produits à la volée à 
 
 >[!NOTE]
 >
->Pour obtenir de la documentation supplémentaire sur l’utilisation de CIF avec AEM Managed Service ou AEM On-premise, voir [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html).
+>Pour obtenir de la documentation supplémentaire sur l&#39;utilisation du FIC avec le service AEM géré ou AEM sur site, consultez [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
