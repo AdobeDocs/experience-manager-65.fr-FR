@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
+exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 423e17dadf2e506eb68b37851dde5e68ed950866
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 85%
+source-wordcount: '622'
+ht-degree: 73%
 
 ---
-
 
 # Architecture logicielle{#software-architecture}
 
@@ -36,17 +36,23 @@ En définissant les composants qui peuvent être inclus dans chaque système de 
 
 SOLID est un acronyme qui décrit cinq principes architecturaux qu’il convient de respecter :
 
-* **Principe de responsabilité** unique - chaque module, classe, méthode, etc., ne devrait faire qu&#39;une seule chose.
+* **Principe de responsabilité** unique - chaque module, classe, méthode, etc., ne devrait avoir qu&#39;une seule responsabilité.
 * **Principe** ouvert/fermé - les modules doivent être ouverts pour extension et fermés pour modification.
 * **Principe de substitution** Liskov - les types doivent être remplaçables par leurs sous-types.
-* **Principe de segmentation de l&#39;** interface - aucun client ne doit être contraint de dépendre de méthodes qu&#39;il n&#39;utilise pas.
+* **Principe de** segmentation de l&#39;interface - aucun client ne doit être contraint de dépendre de méthodes qu&#39;il n&#39;utilise pas.
 * **Principe d&#39;inversion de** dépendance - Les modules de haut niveau ne doivent pas dépendre de modules de bas niveau. Les deux doivent dépendre d’abstractions. Les abstractions ne doivent pas dépendre des détails. Les détails doivent dépendre des abstractions.
 
 Vous devez vous efforcer de respecter ces cinq principes pour élaborer un système offrant une stricte séparation des préoccupations.
 
+>[!TIP]
+>
+>SOLID est un concept couramment utilisé dans la programmation orientée objet et chaque élément est largement discuté dans la littérature de l&#39;industrie.
+>
+>Ce n&#39;est qu&#39;un bref résumé présenté pour la sensibilisation et nous vous encourageons à vous familiariser davantage avec ces concepts.
+
 ### Observation du principe de robustesse {#follow-the-robustness-principle}
 
-Le principe de robustesse stipule qu’il faut être tolérant dans ce que l’on accepte, et pointilleux dans ce que l’on envoie. En d’autres termes, lors de l’envoi de messages à un tiers, il convient de respecter scrupuleusement les spécifications. Cependant, lors de la réception de messages envoyés par un tiers, on doit accepter des messages non conformes, pour autant que leur signification soit claire.
+Le principe de robustesse stipule qu’il faut être tolérant dans ce que l’on accepte, et pointilleux dans ce que l’on envoie. En d&#39;autres termes, lors de l&#39;envoi de messages à un tiers, nous devrions nous conformer entièrement aux spécifications, mais lorsque nous recevons des messages d&#39;un tiers, nous devrions accepter des messages non conformes tant que la signification du message est claire.
 
 ### Mise en œuvre de spikes dans leurs propres modules {#implement-spikes-in-their-own-modules}
 
