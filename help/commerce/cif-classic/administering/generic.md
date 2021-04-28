@@ -9,10 +9,10 @@ content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '3009'
-ht-degree: 86%
+ht-degree: 84%
 
 ---
 
@@ -642,7 +642,7 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 
 >[!NOTE]
 >
->Souvenez-vous que, par défaut, AEM ne dispose pas des actions requises pour les fonctionnalités standard associées aux commandes, telles que le retour de marchandises, la mise à jour de l’état des commandes, la réalisation et la génération de bons de livraison. Il s’agit principalement d’un aperçu technologique.
+>N&#39;oubliez pas que l&#39;AEM prêt à l&#39;emploi ne comporte pas d&#39;actions requises pour les fonctionnalités standard liées aux commandes, telles que le renvoi de marchandises, la mise à jour de l&#39;état de la commande, l&#39;exécution, la génération de bordereaux de livraison. Il s’agit principalement d’un aperçu technologique.
 >
 >La gestion générique des commandes dans AEM a été maintenue de base ; les champs disponibles dans l’assistant dépendent de l’échafaudage :
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
@@ -664,7 +664,7 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. Un assistant s’ouvre. Utilisez les onglets **Basique**, **Contenu**, **Paiement** et **Réalisation** pour saisir les [informations concernant la nouvelle commande](/help/commerce/cif-classic/administering/concepts.md#order-information).
+1. Un assistant s’ouvre. Utilisez les onglets **Basic**, **Content**, **Paiement** et **Exécution** pour saisir les [informations sur la nouvelle commande](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
 1. Sélectionnez **Créer** pour enregistrer les informations.
 
