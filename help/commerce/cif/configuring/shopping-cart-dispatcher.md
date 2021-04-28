@@ -2,10 +2,10 @@
 title: Configuration du panier et du Dispatcher
 description: Configuration du panier et du Dispatcher
 translation-type: tm+mt
-source-git-commit: 1848a9789b4008f1be43b36ee3edfac35d8fdc7c
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '140'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
 
-Vous trouverez des informations supplémentaires à ce sujet dans les ressources suivantes :
+Pour plus d’informations sur cette rubrique, consultez les ressources suivantes :
 
 - [Panier](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
 - [Dispatcher AEM avec proxy Magento](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
