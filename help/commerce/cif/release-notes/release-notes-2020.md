@@ -2,10 +2,10 @@
 title: Notes de mise à jour AEM Content and Commerce 2021
 description: Notes de mise à jour AEM Content and Commerce 2021
 translation-type: tm+mt
-source-git-commit: c859aa89e481e852302e9cda0adf2acc04d68a55
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 11%
+source-wordcount: '1324'
+ht-degree: 10%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 11%
 
 * Composants principaux CIF étendus pour hydrater la couche de données client Adobe en envoyant des données commerciales. La couche de données du client Adobe est une méthode normalisée de collecte de données et de communication des données aux serveurs d’analyses numériques et de rapports. Pour plus d&#39;informations, reportez-vous à [couche de données client Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* Détails du produit et pages de Liste des produits étendus pour renseigner automatiquement les métadonnées d’optimisation du référencement (par exemple, titre, méta-description, méta-mots-clés) configurées dans l’interface utilisateur d’administration du Magento
+* Les pages Détails du produit et Liste de produits sont étendues pour renseigner automatiquement les métadonnées d’optimisation du référencement (telles que le titre, la méta-description, les méta-mots-clés) configurées dans l’interface utilisateur d’administration du Magento.
 
 * Correction d&#39;un bogue de composant de teaser commercial.
 
@@ -120,7 +120,7 @@ ht-degree: 11%
 
 * L’interface utilisateur de configuration de CIF Cloud prend en charge les actions de publication/annulation de publication.
 
-### Améliorations  {#what-is-improved-july}
+### Améliorations {#what-is-improved-july}
 
 * Composant de connexion déplacé vers la liste déroulante des utilisateurs pour un accès facile.
 
@@ -138,7 +138,7 @@ ht-degree: 11%
 
 ### Nouveautés {#what-is-new-june}
 
-Il s’agit de la première version des composants principaux CIF prise en charge sur Adobe Experience Manager.
+Il s’agit de la première version de CIF Core Components prise en charge sur Adobe Experience Manager.
 
 * Tri des produits Ajouté sur les pages Liste des produits et Résultats de la recherche pour permettre aux acheteurs de trier en fonction de la pertinence, du prix et du nom du produit.
 
@@ -146,7 +146,7 @@ Il s’agit de la première version des composants principaux CIF prise en charg
 
 * Mise en correspondance des utilisateurs de services Ajoutés dans le cadre de la sécurité requise pour garantir l’accès à /conf via les utilisateurs de services et non en manipulant directement les listes de contrôle d’accès. Les composants principaux CIF doivent maintenant utiliser un utilisateur de service pour accéder aux configurations.
 
-### Améliorations  {#what-is-improved-june}
+### Améliorations {#what-is-improved-june}
 
 * Les pages Liste de produits et Résultat de la recherche affichent le nombre total d’articles. Le nombre d’éléments est mis à jour lorsque le filtres appliqué par l’acheteur est appliqué.
 
@@ -192,7 +192,7 @@ Il s’agit de la première version des composants principaux CIF prise en charg
 
 * Paramètres de configuration pour CIF Connector unifiés et simplifiés. Pour plus d&#39;informations, extrayez [Prise en main](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) ou [Nouveau projet AEM CIF Configuration](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
-### Améliorations  {#what-is-improved-april}
+### Améliorations {#what-is-improved-april}
 
 * Le panier d&#39;achat et le flux de passage en caisse sont étendus pour prendre en charge les acheteurs inscrits.
 
@@ -218,9 +218,9 @@ Il s’agit de la première version des composants principaux CIF prise en charg
 
 * Prise en charge de la recherche Ajoutée dans le sélecteur de Catégories.
 
-* Pagination dans le composant Liste de catégorie pour la prise en charge de jeux de catalogues volumineux.
+* Pagination dans le composant de Liste de Catégorie pour la prise en charge de jeux de catalogues volumineux.
 
-### Améliorations  {#what-is-improved-february}
+### Améliorations {#what-is-improved-february}
 
 * Panier amélioré pour afficher les remises.
 
@@ -248,7 +248,7 @@ Il s’agit de la première version des composants principaux CIF prise en charg
 
 * Composant produit générique associé disponible.
 
-### Améliorations  {#what-is-improved-january}
+### Améliorations {#what-is-improved-january}
 
 * Prise en charge de l&#39;affichage du bouton CTA sur le teaser du produit.
 
