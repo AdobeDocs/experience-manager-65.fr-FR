@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '682'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,7 @@ L’intégration pour AEM Content and Commerce est un processus en deux étapes 
 
 2. Connectez AEM à votre solution commerciale
 
-### Installez le module complémentaire AEM Content and Commerce pour AEM 6.5 {#install-add-on}
+### Installer l&#39;Ajoute de contenu et de commerce AEM pour AEM 6.5 {#install-add-on}
 
 Téléchargez et installez l&#39;Ajoute commerciale AEM pour AEM 6.5 à partir du portail [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
@@ -50,11 +50,11 @@ Remplacez la valeur de `url` dans `com.adobe.cq.commerce.graphql.client.impl.Gra
 
 L’Ajoute de contenu et de commerce AEM et les composants principaux CIF utilisent à la fois AEM connexions côté serveur et côté client. Les composants principaux CIF côté client et les outils de création CIF Ajoute-On se connectent par défaut à `/api/graphql`. Si nécessaire, cette option peut être ajustée via la configuration du Cloud Service CIF (voir ci-dessous).
 
-Le module complémentaire CIF fournit une servlet proxy GraphQL à `/api/graphql` qui peut être éventuellement utilisé pour le [développement local](develop.md). Pour les déploiements de production, il est fortement recommandé de configurer un proxy inverse vers le point de terminaison GraphQL de commerce via le répartiteur d&#39;AEM ou à d&#39;autres couches du réseau (comme CDN).
+L&#39;Ajoute CIF-On fournit une servlet proxy GraphQL à l&#39;adresse `/api/graphql` qui peut éventuellement être utilisée pour le [développement local](develop.md). Pour les déploiements de production, il est fortement recommandé de configurer un proxy inverse vers le point de terminaison GraphQL de commerce via le répartiteur d&#39;AEM ou à d&#39;autres couches du réseau (comme CDN).
 
-## Configuration des magasins et des catalogues {#catalog}
+## Configuration de magasins et de catalogues {#catalog}
 
-Le module complémentaire et les [composants principaux du FIC](https://github.com/adobe/aem-core-cif-components) peuvent être utilisés sur plusieurs structures de site AEM reliées à différents magasins commerciaux (ou vues de stockage, etc.). Par défaut, le module complémentaire CIF est déployé avec une configuration par défaut se connectant à la boutique et au catalogue par défaut d&#39;Adobe Commerce (Magento).
+L&#39;Ajoute-On et les [Composants principaux du FIC](https://github.com/adobe/aem-core-cif-components) peuvent être utilisés sur plusieurs structures de site AEM reliées à différents magasins commerciaux (ou vues de stockage, etc.). Par défaut, l&#39;Ajoute CIF est déployée avec une configuration par défaut se connectant au magasin et au catalogue par défaut d&#39;Adobe Commerce (Magento).
 
 Cette configuration peut être ajustée pour le projet via la configuration du Cloud Service CIF en procédant comme suit :
 
