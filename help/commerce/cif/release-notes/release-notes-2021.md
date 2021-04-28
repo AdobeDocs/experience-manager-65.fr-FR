@@ -2,10 +2,10 @@
 title: Notes de mise à jour AEM Content and Commerce 2021
 description: Notes de mise à jour AEM Content and Commerce 2021
 translation-type: tm+mt
-source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 15%
+ht-degree: 14%
 
 ---
 
@@ -27,13 +27,13 @@ Consultez le tableau ci-dessous pour connaître la configuration minimale requis
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
-| Module complémentaire CIF | v021.04.22 | [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| Module complémentaire CIF | 2021.04.22 | [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | Composants principaux CIF | 1,10,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de référence de CIF Venia | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Nouveautés {#what-is-new-april}
 
-* Prise en charge de l’identifiant d’utilisateur de catégorie - Déverrouille les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les identifiants de catégorie
+* Prise en charge de l’identifiant d’utilisateur de la catégorie - Cette opération déverrouille les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les identifiants de catégorie.
 
 * Extension AEM pour PWA Studio incl. exemple d’intégration
 
@@ -79,9 +79,9 @@ Consultez le tableau ci-dessous pour connaître la configuration minimale requis
 
 * Propriétés étendues de la console de produits pour afficher les ressources liées et les fragments d’expérience, y compris les actions permettant d’accéder rapidement au contenu associé.
 
-### Améliorations  {#what-is-improved-february}
+### Améliorations {#what-is-improved-february}
 
-* Amélioration de la couche de données côté client avec l’URL d’image du produit et les informations de catégorie
+* Amélioration de la couche de données côté client avec l’URL d’image du produit et les informations de catégorie.
 
 * Plusieurs correctifs de bogues.
 
@@ -97,7 +97,7 @@ Consultez le tableau ci-dessous pour connaître la configuration minimale requis
 
 * Gestion de l&#39;expérience des produits : Nouvel onglet de propriété Commerce pour les ressources et les fragments d’expérience. Cet onglet vous permet de lier des ressources et des fragments d’expérience à des produits et catégories. L&#39;onglet affiche également des données en temps réel pour les objets de commerce liés et un lien pour afficher des détails dans la console du produit.
 
-### Améliorations  {#what-is-improved-january}
+### Améliorations {#what-is-improved-january}
 
 * Envoyez les données utilisateur après l’authentification à la couche de données du client Adobe.
 
