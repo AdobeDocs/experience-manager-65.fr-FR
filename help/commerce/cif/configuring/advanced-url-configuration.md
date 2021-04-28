@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 98%
+source-wordcount: '791'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-compon
 
 ## Configuration {#configuration}
 
-Pour configurer le service `UrlProvider` en fonction des exigences SEO et des besoins, un projet doit fournir une configuration OSGI pour la configuration de fournisseur URL CIF et configurer le service comme décrit ci-dessous.
+Pour configurer le service `UrlProvider` en fonction des exigences d&#39;optimisation du référencement et des besoins, un projet doit fournir une configuration OSGI pour la configuration &quot;CIF URL Provider configuration&quot; et configurer le service comme décrit ci-dessous.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Les réécritures d’URL peuvent également être archivées en utilisant le se
 
 ## Exemple
 
-Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) comprend des exemples de configuration afin de démontrer l’utilisation d’URL personnalisées pour les pages de produits et de catégories. Cela permet à chaque projet de configurer des modèles d’URL individuels pour les pages de produits et de catégories en fonction de leurs besoins SEO. Une combinaison de mappages `UrlProvider` et Sling CIF telle que décrite ci-dessus est utilisée.
+Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) comprend des exemples de configuration afin de démontrer l’utilisation d’URL personnalisées pour les pages de produits et de catégories. Cela permet à chaque projet de configurer des modèles d’URL individuels pour les pages de produits et de catégories en fonction de leurs besoins d’optimisation du référencement. Une combinaison de mappages `UrlProvider` et Sling CIF telle que décrite ci-dessus est utilisée.
 
 >[!NOTE]
 >
@@ -74,5 +74,5 @@ Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-gui
 ## Ressources supplémentaires
 
 * [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappage des ressources AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Mappage des ressources AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Mappages Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
