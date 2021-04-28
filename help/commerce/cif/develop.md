@@ -7,10 +7,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 38%
+source-wordcount: '874'
+ht-degree: 37%
 
 ---
 
@@ -30,7 +30,7 @@ Un environnement de développement local est recommandé pour travailler avec de
 
 >[!NOTE]
 >
->Les instructions suivantes vous aident à configurer un environnement de développement AEM local pour AEM Commerce à l’aide de CIF avec une cible d’action pour l’ 6.5). Si vous utilisez AEM en tant que Cloud Service, consultez la documentation [AEM Commerce en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html).
+>Les instructions suivantes vous aident à configurer un environnement de développement AEM local pour AEM Commerce à l’aide de CIF avec une cible d’action pour l’ 6.5). Si vous utilisez AEM en tant que Cloud Service, consultez la documentation [AEM Commerce en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
 
 L&#39;Ajoute commerciale AEM pour AEM 6.5 aka. L&#39;Ajoute-On du FCI est également disponible pour le développement local et est fourni sous forme d&#39;un forfait AEM. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en tant que Feature Pack.
 
@@ -46,7 +46,7 @@ Les logiciels suivants doivent être installés localement :
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-### Accès au module complémentaire CIF
+### Accès à l&#39;Ajoute CIF
 
 Le module complémentaire CIF peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), à la recherche de &quot;module complémentaire Commerce AEM&quot;.
 
