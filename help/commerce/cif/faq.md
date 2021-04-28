@@ -3,9 +3,9 @@ title: AEM - Intégration du commerce à l’aide du cadre d’intégration du c
 description: AEM - Intégration du commerce à l’aide du cadre d’intégration du commerce FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45,aece1190-9530-4060-9b08-022da7068987
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '946'
 ht-degree: 47%
 
 ---
@@ -64,7 +64,7 @@ Les données produit sont généralement déjà traduites dans PIM ou Magento. L
 
 ## 13. Existe-t-il un moyen d’améliorer les données de produit avec le texte commercial ? Où effectuer cette opération ? En AEM ou dans la solution commerciale ?
 
-Nous vous recommandons de gérer les données et le contenu liés au marketing dans AEM. Décorez les données de produit issues de votre solution commerciale avec des attributs supplémentaires à l’aide de fragments de contenu ou créez et liez des fragments d’expérience pour un contenu sans structure avec vos produits.
+Nous vous recommandons de gérer les données et le contenu liés au marketing dans AEM. Décorez les données de produit issues de votre solution commerciale avec des attributs supplémentaires à l’aide de fragments de contenu ou créez et liez des fragments d’expérience pour le contenu non structuré de vos produits.
 
 ## 14. Comment pouvons-nous garantir la conformité PCI lors de l’utilisation d’AEM pour toute la couche de présentation ?
 
