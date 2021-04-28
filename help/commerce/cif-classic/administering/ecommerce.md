@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 90%
+source-wordcount: '733'
+ht-degree: 88%
 
 ---
 
@@ -69,7 +69,7 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
    <td><p>Évolutivité</p> </td>
    <td>
     <ul>
-     <li>Peut prendre en charge jusqu'à quelques millions de produits (selon le cas d’utilisation)</li>
+     <li>Peut prendre en charge jusqu’à quelques millions de produits (selon le cas d’utilisation)</li>
      <li>Mise en cache sur le Dispatcher</li>
     </ul> </td>
    <td>
