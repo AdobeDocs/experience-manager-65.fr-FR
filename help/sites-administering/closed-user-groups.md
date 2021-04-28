@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
-feature: Security
+feature: Sécurité
 translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '6891'
+source-wordcount: '6886'
 ht-degree: 61%
 
 ---
@@ -773,7 +773,7 @@ La configuration de CUG en association avec LiveCopy est représentée dans le r
 
 Ces deux éléments sont créés sous `cq:Page`. Avec la conception actuelle, MSM traite uniquement les noeuds et les propriétés qui se trouvent sous le noeud `cq:PageContent` (`jcr:content`).
 
-Par conséquent, les groupes CUG ne peuvent pas être récupérés d’un plan directeur vers une Live Copy. Veuillez prendre en compte ce paramètre lors de la configuration d’une Live Copy.
+Par conséquent, les groupes CUG ne peuvent pas être déployés sur Live Copies à partir de Blueprints. Veuillez en tenir compte lors de la configuration de Live Copy.
 
 ## Modifications avec la nouvelle mise en œuvre CUG {#changes-with-the-new-cug-implementation}
 
