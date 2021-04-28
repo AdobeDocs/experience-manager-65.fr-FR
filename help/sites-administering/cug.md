@@ -10,14 +10,14 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
+exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 82%
+ht-degree: 80%
 
 ---
-
 
 # Création d’un groupe d’utilisateurs fermé{#creating-a-closed-user-group}
 
@@ -85,7 +85,7 @@ Pour appliquer le groupe d’utilisateurs fermé à une page :
 
    >[REMARQUE!]
    >
-   > Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être restaurés depuis les plans directeurs vers les Live Copies. Veuillez en tenir compte lors de la configuration de Live Copy.
+   > Notez que les CUG de l&#39;onglet Autorisations ne peuvent pas être déployés sur des Live Copies à partir de Blueprints. Veuillez en tenir compte lors de la configuration de Live Copy.
    >
    > Pour plus d’informations, consultez [cette page](closed-user-groups.md#aem-livecopy).
 
@@ -144,4 +144,3 @@ Configurez la gestion de session [dans le fichier dispatcher.any](https://helpx.
    ```
 
 1. Définissez [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) sur `0`.
-
