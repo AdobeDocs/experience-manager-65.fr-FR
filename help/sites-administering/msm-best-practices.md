@@ -10,14 +10,14 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 feature: Multi Site Manager
+exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1667'
 ht-degree: 59%
 
 ---
-
 
 # Meilleures pratiques MSM{#msm-best-practices}
 
@@ -68,6 +68,10 @@ Les avantages de l’utilisation d’une configuration de plan directeur sont qu
 Dans le cas où aucune configuration de plan directeur n’est référencée, les déploiements peuvent uniquement être lancés à partir des Live Copies elles-mêmes, en extrayant essentiellement le contenu de la source.
 
 Lors de la création d’un site avec une Live Copy, il est pratique de créer des configurations de plan directeur pour garantir la disponibilité du jeu complet de fonctions MSM.
+
+>[REMARQUE!]
+>
+> Notez que les CUG de l&#39;onglet Autorisations ne peuvent pas être déployés sur des Live Copies à partir de Blueprints. Veuillez en tenir compte lors de la configuration de Live Copy.
 
 ## Composants et synchronisation de conteneur {#components-and-container-synchronization}
 
@@ -207,4 +211,3 @@ La présente section et les pages suivantes abordent les questions connexes :
 * [Console Aperçu de la Live Copy](/help/sites-administering/msm-livecopy-overview.md)
 * [Configuration de la synchronisation des Live Copies](/help/sites-administering/msm-sync.md)
 * [Conflits de déploiement dans MSM](/help/sites-administering/msm-rollout-conflicts.md)
-
