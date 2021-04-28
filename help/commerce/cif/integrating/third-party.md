@@ -1,26 +1,26 @@
 ---
-title: Intégration d’AEM et de solutions commerciales tierces à l’aide de Commerce Integration Framework
-description: Les entreprises peuvent avoir besoin de solutions commerciales tierces supplémentaires pour alimenter leur vitrine. Le cadre d’intégration commerciale (CIF) peut être utilisé dans de tels scénarios d’intégration pour connecter une solution commerciale tierce à Adobe Experience Manager à l’aide de l’environnement d’exécution d’E/S.
+title: Intégration commerciale AEM et tierce à l’aide du cadre d’intégration commerciale
+description: Les entreprises peuvent avoir besoin de solutions commerciales tierces supplémentaires pour alimenter leur vitrine. Le cadre d'intégration commerciale (CIF) peut être utilisé dans de tels scénarios d'intégration pour connecter une solution commerciale tierce à Adobe Experience Manager à l'aide de l'exécution E/S.
 thumbnail: cif-third-party-architecture.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 20%
+ht-degree: 4%
 
 ---
 
-# Intégration d’AEM et de solutions commerciales tierces à l’aide de Commerce Integration Framework {#aem-third-party}
+# Intégration commerciale des AEM et des tiers à l&#39;aide du cadre d&#39;intégration commerciale {#aem-third-party}
 
-L&#39;intégration de la solution de commerce non-Adobe est un scénario courant pour CIF. Les solutions tierces avec différentes API et différents schémas sont connectées via une couche d’intégration.
+L&#39;intégration de la solution de commerce non-Adobe est un scénario courant pour CIF. les solutions tierces avec différentes API et différents schémas sont connectées via une couche d’intégration.
 
 ## Architecture {#architecture}
 
 L’architecture globale se présente comme suit :
 
-![Présentation de l’architecture d’AEM non Magento/solutions tierces](../assets//AEM_nonMagento_Architecture.png)
+![Présentation de l&#39;architecture non Magento/tierce AEM](../assets//AEM_nonMagento_Architecture.png)
 
-Cette couche d’intégration a pour but de mapper des API et des schémas tiers aux API et schémas GraphQL de commerce d’Adobe pris en charge en dehors du Experience Manager. Grâce à cette encapsulation, la logique d&#39;intégration et les systèmes peuvent être mis à jour sans modifier le code dans le Experience Manager.
+Cette couche d’intégration a pour but de mapper les API et les schémas tiers aux API et schémas GraphQL de commerce d’Adobe pris en charge en dehors du Experience Manager. Grâce à cette encapsulation, la logique d&#39;intégration et les systèmes peuvent être mis à jour sans modifier le code dans le Experience Manager.
 
 ## Configuration requise pour une intégration
 
@@ -36,7 +36,7 @@ Il n&#39;est pas nécessaire de mettre en oeuvre le schéma GraphQL complet, jus
 
 CIF étend le Experience Manager avec l’accès en temps réel aux catalogues de produits et les outils de gestion de l’expérience des produits. Cette intégration transparente permet aux auteurs d’accéder aux données commerciales à l’aide d’interfaces intégrées chaque fois que cela est nécessaire sans quitter le contexte de contenu.
 
-L’intégration des API de catalogue de produits est nécessaire pour déverrouiller ces cas d’utilisation.
+L’intégration des API de catalogue de produits est requise pour déverrouiller ces cas d’utilisation.
 
 ## Cas d’utilisation principaux
 
@@ -50,4 +50,4 @@ Nous vous recommandons d’utiliser [Adobe I/O Runtime](https://www.adobe.io/api
 
 L&#39;[implémentation de référence](https://github.com/adobe/commerce-cif-graphql-integration-reference) est un excellent point de départ pour construire l&#39;intégration à votre solution commerciale. Bien qu&#39;il prenne en charge GraphQL, il peut également être intégré à tout autre type d&#39;API tel que REST.
 
-Cette couche d’intégration n’est pas requise si une couche tierce est disponible (par exemple, Mulesoft) ou si l’intégration est construite sur la solution tierce.
+Cette couche d’intégration n’est pas requise si une couche tierce est disponible (telle que Mulesoft) ou si l’intégration est construite sur la solution tierce.
