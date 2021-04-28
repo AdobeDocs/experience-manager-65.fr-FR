@@ -7,10 +7,10 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -203,7 +203,7 @@ Cette procédure permet de transférer et de configurer le magasin de démonstra
    * username : admin
    * password: nimda
 
-1. À partir de la navigation de la barre latérale, développez **Système** (System) et **Outils** (Tools). Ensuite, sélectionnez **Importer** (Import) pour ouvrir la fenêtre **Assistant : Importation d’un fichier CSV** (Wizard: CSV Import).
+1. Dans la barre de navigation latérale, développez **Système** et **Outils**. Ensuite, sélectionnez **Importer** (Import) pour ouvrir la fenêtre **Assistant : Importation d’un fichier CSV** (Wizard: CSV Import).
 1. Dans l’onglet **Configuration**, **transférez** le **fichier d’importation** suivant :
 
    [Obtenir le fichier](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
