@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
+exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 63%
+source-wordcount: '386'
+ht-degree: 58%
 
 ---
-
 
 # Conceptions et Designer{#designs-and-the-designer}
 
@@ -24,7 +24,7 @@ ht-degree: 63%
 >
 >Cet article explique comment créer un site Web basé sur l’interface utilisateur classique. Adobe vous recommande de tirer parti des technologies AEM les plus récentes pour vos sites web. Vous en trouverez une description détaillée dans l’article [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md).
 
-Vous devez créer une conception pour votre site web et dans AEM. Pour ce faire, vous allez utiliser le Designer.
+Designer permet de créer une conception pour votre site Web à l’aide de l’[interface utilisateur classique](/help/release-notes/touch-ui-features-status.md) en AEM.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Votre conception peut être définie dans la section **designs** de l&#39;onglet
 
 Ici, vous pouvez créer la structure requise pour stocker la conception, puis stocker les feuilles de style en cascade (CSS) et les images requises.
 
-Les conceptions sont stockées sous `/etc/designs`. Le chemin d’accès à la conception à utiliser pour un site web est spécifié à l’aide de la propriété `cq:designPath` du nœud `jcr:content`.
+Les conceptions sont stockées sous `/apps/<your-project>`. Le chemin d’accès à la conception à utiliser pour un site web est spécifié à l’aide de la propriété `cq:designPath` du nœud `jcr:content`.
 
 ![chlimage_1-74](assets/chlimage_1-74a.png)
 
@@ -55,7 +55,7 @@ Pour créer votre conception, vous aurez besoin des éléments suivants :
 
 ### Points à prendre en compte lors de la conception de votre site web {#considerations-when-designing-your-website}
 
-Lors du développement d’un site Web, il est vivement recommandé de stocker des images et des fichiers CSS sous `/etc/design/<project>` afin que vous puissiez référencer vos ressources en fonction de la conception actuelle, comme décrit dans le fragment de code suivant.
+Lors du développement d’un site Web, il est vivement recommandé de stocker des images et des fichiers CSS sous `/apps/<your-project>` afin que vous puissiez référencer vos ressources en fonction de la conception actuelle, comme décrit dans le fragment de code suivant.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
@@ -67,4 +67,3 @@ L&#39;exemple précédent offre plusieurs avantages :
 * Pour reconcevoir le site Web, il suffit de pointer le chemin de conception vers un autre noeud à la racine du site, de `design/v1` à `design/v2.`.
 
 * `/etc/designs` et  `/content` sont les seules URL externes que le navigateur voit vous protéger d&#39;un utilisateur externe qui se demande ce qui se trouve sous votre  `/apps` arborescence. Les avantages des URL ci-dessus aident également l’administrateur système à mieux configurer la sécurité, dans la mesure où vous limitez l’exposition des ressources à une poignée d’emplacements distincts.
-
