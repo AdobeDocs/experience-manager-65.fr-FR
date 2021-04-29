@@ -10,14 +10,14 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
+exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 translation-type: tm+mt
-source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2815'
 ht-degree: 82%
 
 ---
-
 
 # Création de rapports {#reporting}
 
@@ -31,6 +31,10 @@ Pour vous aider à analyser et surveiller l’état de votre instance, AEM propo
 * [Rapport de l’utilisateur](#user-report)
 * [Rapport d’instance de workflow](#workflow-instance-report)
 * [Rapport de workflow](#workflow-report)
+
+>[!NOTE]
+>
+>Ces rapports ne sont disponibles que dans l’interface utilisateur classique. Pour la surveillance et le rapports du système dans l&#39;interface utilisateur moderne, consultez le [Tableau de bord d&#39;exploitation.](/help/sites-administering/operations-dashboard.md)
 
 Tous ces rapports sont accessibles à partir de la console **Tools**. Sélectionnez **Rapports** dans le panneau de gauche, puis double-cliquez sur le rapport dans le panneau de droite pour l’ouvrir afin de l’afficher et/ou de le configurer.
 
