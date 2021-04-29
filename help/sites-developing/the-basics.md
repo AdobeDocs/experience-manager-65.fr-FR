@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
+exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 translation-type: tm+mt
-source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
+source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
 workflow-type: tm+mt
-source-wordcount: '3386'
-ht-degree: 84%
+source-wordcount: '3367'
+ht-degree: 85%
 
 ---
-
 
 # Concepts de base d’AEM {#aem-core-concepts}
 
@@ -441,13 +441,13 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 * `/var`
 
-   / Fichiers qui évoluent et sont mis à jour par le système, tels que les journaux d’audit, les statistiques, la gestion des événements. Le sous-dossier `/var/classes` contient les servlets java dans la source et les formulaires compilés qui ont été générés à partir des scripts de composants.
+   / Fichiers qui évoluent et sont mis à jour par le système, tels que les journaux d’audit, les statistiques, la gestion des événements.
 
 ## Environnements {#environments}
 
 Avec AEM, un environnement de production se compose souvent de deux types d’instances différents : [une instance de création et une instance de publication](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
-## Le dispatcher  {#the-dispatcher}
+## Le dispatcher {#the-dispatcher}
 
 Le dispatcher est un outil Adobe qui sert à la mise en cache et/ou l’équilibrage de charge. Plus d’informations sont disponibles sous [le dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
