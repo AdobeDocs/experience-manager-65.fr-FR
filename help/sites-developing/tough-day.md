@@ -10,14 +10,14 @@ topic-tags: testing
 content-type: reference
 discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
 docset: aem65
+exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 3727b561a2ee9778d75f18530caf16c6c3ef846a
 workflow-type: tm+mt
 source-wordcount: '1909'
-ht-degree: 54%
+ht-degree: 53%
 
 ---
-
 
 # Jour difficile{#tough-day}
 
@@ -222,7 +222,7 @@ tests:
 
 ### Utilisation de suites de tests prédéfinies  {#working-with-predefined-test-suites}
 
-Les exemples ci-dessous montrent comment ajouter un test à une suite prédéfinie et reconfigurer et exclure un test existant d’une suite prédéfinie.
+Les exemples ci-dessous montrent comment ajouter un test à une suite prédéfinie et comment reconfigurer et exclure un test existant d’une suite prédéfinie.
 
 Vous pouvez ajouter un nouveau test à une suite prédéfinie en utilisant le paramètre `add` et en spécifiant la suite prédéfinie ciblée.
 
@@ -406,7 +406,7 @@ Tough Day 2 crée un dossier de journaux dans le même répertoire que celui où
 
 Les journaux ne sont pas remplacés, les exécutions subséquentes ajoutent des messages aux journaux existants. Les journaux ont plusieurs niveaux, pour plus d&#39;informations voir le ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Cas d’utilisation  {#example-usage}
+#### Exemple d’utilisation  {#example-usage}
 
 #### Problèmes connus {#known-issues}
 
