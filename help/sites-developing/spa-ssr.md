@@ -10,14 +10,14 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
+exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: eeb4c7f6a80d6bad5cd1b540dfacfc7bc5071664
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 83%
+source-wordcount: '1761'
+ht-degree: 79%
 
 ---
-
 
 # SPA et rendu côté serveur {#spa-and-server-side-rendering}
 
@@ -64,7 +64,9 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande une instance Adobe I/O Runtime distincte pour chaque environnement AEM (création, publication, évaluation, etc.).
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (stage, prod, testing, etc.). Cela permet de créer des modèles de cycle de vie de développement de systèmes (SDLC) standard avec différentes versions d’une application unique déployée sur différents environnements. Pour plus d&#39;informations, consultez le document [CI/CD pour Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
+>
+>Un espace de travail distinct n’est pas nécessaire par instance (auteur, publication), sauf s’il existe des différences dans l’implémentation d’exécution par type d’instance.
 
 ## Configuration du moteur de rendu distant {#remote-renderer-configuration}
 
