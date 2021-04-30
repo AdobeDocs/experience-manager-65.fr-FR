@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 100%
+source-wordcount: '104'
+ht-degree: 88%
 
 ---
 
@@ -22,6 +22,6 @@ Les [composant principaux AEM CIF](https://github.com/adobe/aem-core-cif-compone
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-Vous trouverez plus d’informations sur ce sujet à partir des ressources suivantes :
+Pour plus d’informations sur cette rubrique, consultez la ressource suivante :
 
 - [Composants principaux AEM CIF – Configuration de pages multi-catalogue](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
