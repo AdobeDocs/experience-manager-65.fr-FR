@@ -1,21 +1,21 @@
 ---
-title: 'Schémas de métadonnées pour définir la disposition de la page des propriétés de métadonnées dans  [!DNL Adobe Experience Manager Assets]. '
+title: 'Les schémas de métadonnées définissent la disposition de la page des propriétés de métadonnées '
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
+role: Business Practitioner,Administrator
+feature: 'Métadonnées  '
+exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+source-git-commit: ae0c8bda918e2e8a7a6a32e0228d1a2410b283d9
 workflow-type: tm+mt
-source-wordcount: '3605'
-ht-degree: 60%
+source-wordcount: '3571'
+ht-degree: 59%
 
 ---
 
-
 # Des schémas de métadonnées {#metadata-schemas}
 
-Les entreprises proposent un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. L’application correcte des métadonnées est indispensable à la gestion de workflows et de processus reposant sur les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs de la gestion des actifs numériques à s’aligner. [!DNL Adobe Experience Manager] permet des méthodes simples et flexibles pour créer, gérer et appliquer des schémas de métadonnées.
+Les entreprises proposent un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. Une application de métadonnées correcte est sacro-sainte pour la gestion de workflows et de processus reposant sur les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs de la gestion des actifs numériques à s’aligner. [!DNL Adobe Experience Manager] permet des méthodes simples et flexibles pour créer, gérer et appliquer des schémas de métadonnées.
 
 Dans [!DNL Adobe Experience Manager Assets], les schémas contiennent des champs spécifiques pour des informations spécifiques à remplir. Il contient également des informations de mise en page pour afficher les champs de métadonnées d’une manière conviviale. Les propriétés de métadonnées comprennent le titre, la description, les types MIME, les balises, etc. Vous pouvez utiliser l’éditeur [!UICONTROL Forms] du Schéma de métadonnées pour modifier les schémas existants ou ajouter des schémas de métadonnées personnalisés.
 
@@ -27,9 +27,9 @@ Pour vue et modifier la page de propriétés d’un fichier, procédez comme sui
 
    ![Onglet de base Propriétés du fichier, où le type de fichier ne peut pas être modifié](assets/asset-properties-basic-tab.png)
 
-*Figure : Onglet Simple sur  [!UICONTROL Propriétés] du fichier.*
+   *Figure : Onglet Simple sur  [!UICONTROL Propriétés] du fichier.*
 
-Pour modifier le type MIME d’une ressource, utilisez un formulaire de schéma de métadonnées personnalisé ou modifiez un formulaire existant. Voir [Modifier le Schéma de métadonnées Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) pour plus d’informations. Si vous modifiez le schéma de métadonnées d’un type MIME, la mise en page des propriétés des fichiers et de tous les sous-types est modifiée. Par exemple, la modification d’un schéma jpeg sous `default/image` concerne uniquement la disposition des métadonnées (propriétés de ressource) des ressources du type MIME `image/jpeg`. Si vous modifiez le schéma par défaut, les modifications changent toutefois la disposition des métadonnées pour tous les types de ressources.
+   Pour modifier le type MIME d’une ressource, utilisez un formulaire de schéma de métadonnées personnalisé ou modifiez un formulaire existant. Voir [Modifier le Schéma de métadonnées Forms](#edit-metadata-schema-forms) pour plus d’informations. Si vous modifiez le schéma de métadonnées d’un type MIME, la mise en page des propriétés des fichiers et de tous les sous-types est modifiée. Par exemple, la modification d’un schéma jpeg sous `default/image` concerne uniquement la disposition des métadonnées (propriétés de ressource) des ressources du type MIME `image/jpeg`. Si vous modifiez le schéma par défaut, les modifications changent toutefois la disposition des métadonnées pour tous les types de ressources.
 
 ## Formulaires de Schéma de métadonnées {#default-metadata-schema-forms}
 
@@ -113,7 +113,7 @@ Les valeurs admises pour cette propriété sont les suivantes :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées de la ressource en tant que propriété `dc:title`.
 
-* `./jcr:created` : stocke la date et l’heure de création d’une ressource. Il s’agit d’une propriété protégée. Si vous configurez ces propriétés, Adobe recommande de les marquer avec l’état Désactiver la modification.
+* `./jcr:created` : stocke la date et l’heure de création d’une ressource. Il s’agit d’une propriété protégée. Si vous configurez ces propriétés, Adobe recommande de les marquer avec l’état Désactiver la modification. Dans le cas contraire, l’erreur « Échec de modification des ressources » est générée lorsque vous enregistrez les propriétés de la ressource.
 
 Pour garantir que le composant s’affiche correctement dans le formulaire de schéma de métadonnées, le chemin de la propriété ne doit pas comporter d’espace.
 
@@ -155,7 +155,7 @@ L’éditeur de schéma vous permet d’ajouter ou de supprimer un onglet. Le fo
 
 ![Onglets par défaut dans le formulaire Schéma de métadonnées](assets/metadata-schema-form-tabs.png)
 
-Cliquez sur `+` pour ajouter un onglet à un formulaire de schéma. Par défaut, le nouvel onglet porte le nom `Unnamed-1`. Vous pouvez modifier le nom à partir de l&#39;onglet **[!UICONTROL Paramètres.]** Pour supprimer un onglet, cliquez sur `X`.
+Cliquez sur `+` pour ajouter un onglet à un formulaire de schéma. Par défaut, le nouvel onglet porte le nom `Unnamed-1`. Vous pouvez modifier le nom à partir de l’onglet **[!UICONTROL Paramètres.]** Pour supprimer un onglet, cliquez sur `X`.
 
 ![Ajouter ou supprimer un onglet à l’aide de l’éditeur de Schéma de métadonnées](assets/metadata-schema-form-new-tab.png)
 
@@ -301,7 +301,7 @@ Dans ce cas, créez un noeud à `/etc/dam/metadataeditor/mimetypemappings` dans 
 [!DNL Assets] mappe les types MIME et les formulaires de schéma suivants :
 
 | Formulaire de schéma | Types MIME |
-| --------------------------- | --------------------------------------------------- |
+|---|---|
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
 | application/pdf | application/postscript |
@@ -326,9 +326,7 @@ Par exemple, vous pouvez définir une variation du schéma de métadonnées par 
 
 Seuls les fichiers téléchargés vers le dossier auquel ce schéma est appliqué sont conformes aux métadonnées modifiées définies dans le schéma de métadonnées de variante. [!DNL Assets] dans d’autres dossiers où le schéma d’origine est appliqué, la conformité aux métadonnées définies dans le schéma d’origine est maintenue.
 
-L’héritage des métadonnées par les ressources est basé sur le schéma appliqué au dossier de premier niveau dans la hiérarchie. Autrement dit, si un dossier ne contient aucun sous-dossier, les ressources du dossier héritent des métadonnées du schéma appliqué au dossier.
-
-Vous pouvez appliquer un autre schéma au sous-dossier. Les ressources d’un sous-dossier héritent du schéma de métadonnées du sous-dossier immédiat. Si aucun schéma ou le même schéma n’est appliqué au niveau du sous-dossier, ses ressources héritent du schéma du dossier parent.
+L’héritage des métadonnées par ressources dépend du schéma appliqué au dossier de niveau supérieur dans la hiérarchie. Le même schéma est appliqué ou hérité par les sous-dossiers. Si un autre schéma est appliqué au niveau du sous-dossier, l’héritage s’arrête.
 
 1. Dans l&#39;interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**. La page **[!UICONTROL Formulaires de schéma de métadonnées]** s’affiche.
 1. Cochez la case située avant un formulaire, par exemple le formulaire de métadonnées par défaut, puis cliquez sur **[!UICONTROL Copier]** et enregistrez-le comme formulaire personnalisé. Spécifiez un nom personnalisé pour le formulaire, par exemple `my_default`. Vous pouvez également créer un formulaire personnalisé.
