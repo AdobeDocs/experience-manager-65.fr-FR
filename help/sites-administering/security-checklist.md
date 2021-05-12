@@ -11,12 +11,11 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
-feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Sécurité
+source-git-commit: 1c6ee9b547fd0870feb510e35ffdcb8e3f857f18
 workflow-type: tm+mt
-source-wordcount: '2842'
-ht-degree: 86%
+source-wordcount: '2873'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +25,7 @@ Cette section traite des différentes étapes à suivre pour s’assurer que vot
 
 >[!NOTE]
 >
->Vous trouverez des informations supplémentaires [sur les menaces de sécurité les plus dangereuses, publiées par l’OWASP (Open Web Application Security Project)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project)
+>De plus amples informations sont également disponibles sur les menaces les plus dangereuses pour la sécurité, telles que publiées par le [Open Application web Security Project (OWASP)](https://owasp.org/www-project-top-ten/).
 
 >[!NOTE]
 >
@@ -155,7 +154,7 @@ Ces lots OSGi de développement doivent être désinstallés sur les systèmes d
 
 ### Contrôle de la présence des lots de développement Sling  {#check-if-the-sling-development-bundle-is-present}
 
-[AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) déploie l’installation de la prise en charge des outils Apache Sling (org.apache.sling.tooling.support.install).
+L&#39;[AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) déploie l&#39;installation de prise en charge d&#39;Apache Sling (org.apache.sling.tooling.support.install).
 
 Ce lot OSGi doit être désinstallé sur les systèmes de création et de publication en production avant de les rendre accessibles.
 
@@ -163,7 +162,7 @@ Ce lot OSGi doit être désinstallé sur les systèmes de création et de public
 
 #### Le framework de protection CSRF {#the-csrf-protection-framework}
 
-AEM 6.1 est fourni avec un mécanisme qui offre une protection contre les attaques par usurpation des demandes intersites, appelé « **Infrastructure de protection CSRF Framework** ». Pour plus d’informations sur l’utilisation, consulter la [documentation](/help/sites-developing/csrf-protection.md).
+AEM 6.1 est doté d&#39;un mécanisme de protection contre les attaques multisites par usurpation de requête, appelé le **cadre de protection CSRF**. Pour plus d’informations sur l’utilisation, consulter la [documentation](/help/sites-developing/csrf-protection.md).
 
 #### Filtre de référents Sling {#the-sling-referrer-filter}
 
@@ -333,11 +332,9 @@ Pour atténuer ce problème, veuillez procéder comme suit :
 
 **Atténuer les attaques par déni de service (DoS) provoquées par l’utilisation du servlet de téléchargement de ressources**
 
-Le servlet de téléchargement de ressources par défaut d’AEM permet aux utilisateurs authentifiés d’émettre des demandes de téléchargement simultanées de grande taille pour créer des fichiers ZIP de ressources visibles, susceptibles de surcharger le serveur et/ou le réseau.
+La servlet de téléchargement de fichier par défaut permet aux utilisateurs authentifiés d’émettre des demandes de téléchargement simultanées de grande taille et de taille arbitraire pour créer des fichiers ZIP. La création d&#39;archives ZIP volumineuses peut surcharger le serveur et le réseau. Pour atténuer le risque potentiel de déni de service (DoS) provoqué par ce comportement, le composant `AssetDownloadServlet` OSGi est désactivé par défaut sur l’instance de publication [!DNL Experience Manager]. Il est activé par défaut sur l’instance d’auteur [!DNL Experience Manager].
 
-Pour atténuer les risques d’attaques par déni de service, le composant OSGi `AssetDownloadServlet` est désactivé par défaut pour les instances de publication sur les dernières versions d’AEM.
-
-Si votre configuration nécessite l’activation du serveur de téléchargement de ressources, veuillez consulter [cet article](/help/assets/download-assets-from-aem.md) pour plus d’informations.
+Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactivez la servlet sur les déploiements d’auteur et de publication. Si votre configuration nécessite l’activation de la fonctionnalité de téléchargement de ressources, consultez [cet article](/help/assets/download-assets-from-aem.md) pour plus d’informations. Vous pouvez également définir une limite de téléchargement maximale que votre déploiement peut prendre en charge.
 
 ### Désactivation de WebDAV {#disable-webdav}
 
@@ -452,4 +449,4 @@ Adobe recommande vivement d’effectuer un test de pénétration de l’infrastr
 
 ### Meilleures pratiques de développement {#development-best-practices}
 
-Il est essentiel que les nouveaux développements respectent les [meilleures pratiques de sécurité](/help/sites-developing/security.md) afin de vous assurer de la sécurité de votre environnement AEM.
+Il est essentiel que les nouveaux développements suivent les [Bonnes pratiques en matière de sécurité](/help/sites-developing/security.md) pour s&#39;assurer que votre environnement AEM reste sûr.
