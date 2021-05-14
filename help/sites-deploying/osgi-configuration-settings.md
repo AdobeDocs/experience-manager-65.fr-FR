@@ -10,15 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
+source-git-commit: ca66c0655bcd878644e275fc8f7a41b38110beae
 workflow-type: tm+mt
-source-wordcount: '3806'
-ht-degree: 60%
+source-wordcount: '3561'
+ht-degree: 63%
 
 ---
-
 
 # Paramètres de configuration OSGi{#osgi-configuration-settings}
 
@@ -425,29 +424,6 @@ Les autres modes sont accessibles à partir du sidekick, ou le suffixe `?wcmmode
 Voir [Purge des version](/help/sites-deploying/version-purging.md) pour plus d’informations.
 
 **Service de notification par courrier électronique de Workflow Day CQ** Configurez les paramètres de courrier électronique pour les notifications envoyées par un Workflow.
-
-**Day CQSE HTTP** ServiceControl the CQ Servlet Engine :
-
-* **NIO pour HTTP, **Indique s’il faut utiliser NIO ou non pour HTTP. La valeur par défaut est « true ». Utilisé uniquement si HTTP est activé.
-* **Délai de connexion, **Délai de connexion en millisecondes. Cette propriété s’applique aux connexions HTTP et HTTPS. Valeur par défaut : 60 secondes.
-
-* **Activez HTTPS,** que HTTPS soit activé ou non. La valeur par défaut est false.
-* **Délai d’expiration** de session, durée de vie par défaut d’une session HTTP spécifiée en minutes. Si le délai d’attente est égal ou inférieur à 0, les sessions n’expireront jamais. Valeur par défaut : 10 minutes.
-* **Débogage de la journalisation**, écrire ou non des messages au niveau DEBUG. La valeur par défaut est false.
-* **Taille** de la mémoire tampon de la requête, Taille de la mémoire tampon des requêtes en octets. La valeur par défaut est 8 Ko.
-* **Nombre maximal de threads**, Nombre maximal de threads à utiliser pour traiter les requêtes. La valeur par défaut est 200.
-
-Les propriétés suivantes ne s’appliquent que si HTTPS est activé.
-
-* **Port** HTTPS, Port pour écouter la demande HTTPS. La valeur par défaut est 433.
-* **NIO pour HTTPS**, indique s’il faut utiliser NIO pour HTTP. Valeur par défaut de la propriété NIO pour HTTP.
-* **Keystore**, chemin d’accès absolu au Keystore à utiliser pour HTTPS. Obligatoire si HTTPS est activé.
-* **Mot de passe** de stockage de clés, Mot de passe pour accéder au fichier de stockage de clés.
-* **Alias** clé, alias de la clé secrète dans le fichier de stockage des clés.
-* **Mot de passe** clé, Mot de passe pour déverrouiller la clé secrète dans le fichier de stockage des clés.
-* **Certificat** client, exigence pour le client de fournir un certificat valide. La valeur par défaut est none.
-
-Voir aussi [Activation du protocole HTTP sur SSL](/help/sites-administering/ssl-by-default.md) pour plus d&#39;informations sur les options liées au protocole SSL et pour obtenir une description complète de l&#39;activation du protocole HTTPS pour CQSE.
 
 **Fabrique d’analyseur HTML pour le module de réécriture CQ**
 
