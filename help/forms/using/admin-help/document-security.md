@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
+source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 99%
+source-wordcount: '2560'
+ht-degree: 98%
 
 ---
-
 
 # À propos de Document Security {#about-document-security}
 
@@ -223,6 +222,10 @@ Les coordinateurs de jeux de stratégie peuvent exécuter les tâches suivantes�
 * afficher des événements de stratégie et de document pour n’importe quel document ou stratégie du jeu de stratégies ;
 * révoquer l’accès aux documents ;
 * changer de stratégies pour le document.
+
+>[!NOTE]
+>
+>Vous pouvez récupérer un maximum de 1 000 noms de jeux de stratégies dans la base de données.
 
 Les jeux de stratégies sont créés et supprimés dans les pages Web d’administration de Document Security par des administrateurs et des coordinateurs de jeux de stratégies bénéficiant des autorisations requises.
 
