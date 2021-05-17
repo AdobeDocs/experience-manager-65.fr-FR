@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
+source-git-commit: ffba6ecf6c3d75a71c3e6f970fd9a20ce467492d
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2562'
 ht-degree: 98%
 
 ---
@@ -225,7 +225,7 @@ Les coordinateurs de jeux de stratégie peuvent exécuter les tâches suivantes�
 
 >[!NOTE]
 >
->Vous pouvez récupérer un maximum de 1 000 noms de jeux de stratégies dans la base de données.
+>Vous pouvez récupérer un maximum de 1 000 noms de jeux de stratégies dans la base de données à l’aide de l’API `getAllPolicysetnames()`.
 
 Les jeux de stratégies sont créés et supprimés dans les pages Web d’administration de Document Security par des administrateurs et des coordinateurs de jeux de stratégies bénéficiant des autorisations requises.
 
