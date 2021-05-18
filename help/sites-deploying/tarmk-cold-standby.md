@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
+source-git-commit: d9565be9183bd4485036d99869585a79999be54b
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2719'
 ht-degree: 79%
 
 ---
-
 
 # Exécution d’AEM avec TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
 
@@ -282,7 +281,7 @@ Les paramètres OSGi suivants sont disponibles pour le service Cold Standby :
 
 * **Plages IP autorisées (`primary.allowed-client-ip-ranges`) :**  les plages IP à partir desquelles la Principale autorise les connexions.
 * **Sécurisé (`secure`) :** activez le chiffrement SSL. Pour que ce paramètre fonctionne, il doit être activé sur toutes les instances.
-* **Délai d’expiration de lecture Secondaire (`standby.readtimeout`) :** Délai d’expiration pour les requêtes émises par l’instance Secondaire en millisecondes. La valeur recommandée pour le délai d’expiration est 43200000. Il est généralement recommandé de définir le délai d’expiration sur au moins 12 heures.
+* **Délai d’expiration de lecture Secondaire (`standby.readtimeout`) :** Délai d’expiration pour les requêtes émises par l’instance Secondaire en millisecondes. La valeur par défaut utilisée est 60 000 (une minute).
 
 * **Nettoyage automatique Secondaire (`standby.autoclean`) :** Appelez la méthode de nettoyage si la taille de la banque augmente au cours d’un cycle de synchronisation.
 
@@ -410,4 +409,3 @@ Il est important d’exécuter de temps en temps le nettoyage de la mémoire sur
    >[!NOTE]
    >
    >Si vous n’utilisez pas d’entrepôt de données partagé, le nettoyage de la mémoire doit d’abord être exécuté sur l’instance principale, puis sur l’instance de secours.
-
