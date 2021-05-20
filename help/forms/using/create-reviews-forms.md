@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
-
 
 # Création et gestion de révisions des actifs d’un formulaire{#creating-and-managing-reviews-for-assets-in-forms}
 
@@ -28,13 +27,13 @@ Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajo
 ## Configuration d’une révision {#setting-up-a-review}
 
 1. Accédez à l’onglet Formulaires et sélectionnez un formulaire.
-1. Si la révision de la ressource n’est pas en cours, une icône Révision du Début ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) apparaît dans la barre Action. Cliquez sur l’icône Révision du Début ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+1. Si aucune révision de ressource n’est en cours, l’icône de démarrage d’une révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) s’affiche dans la barre Action. Cliquez sur l’icône de démarrage d’une révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 1. Saisissez les informations suivantes :
 
    * Nom de la révision : (Obligatoire) peut contenir des caractères alphanumériques, des traits d’union ou des caractères de soulignement.
    * Description de la révision : (Facultatif) description de la finalité ou du contenu à réviser.
    * Echéance de la révision : (Facultatif) date de fin de la révision. Une fois l’échéance passée, la tâche est indiquée comme étant « Overdue » (En retard).
-   * Réviseurs : Un minimum de un est obligatoire. Utilisez la zone de liste déroulante pour ajouter des réviseurs. Lorsque vous entrez un nom, tous les noms correspondants sont répertoriés. Sélectionnez-en un et cliquez ensuite sur Ajouter.
+   * Réviseurs : au moins un réviseur doit être indiqué. Utilisez la zone de liste déroulante pour ajouter des réviseurs. Lorsque vous entrez un nom, tous les noms correspondants sont répertoriés. Sélectionnez-en un et cliquez ensuite sur Ajouter.
 
 1. Renseignez toutes les informations restantes et cliquez ensuite sur Démarrer.
 
@@ -59,7 +58,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
 1. Accédez à l’onglet Formulaires et sélectionnez un formulaire.
 
-1. Si une révision d’un fichier est en cours et que vous en êtes l’initiateur, une icône Gérer la révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) apparaît dans la barre Action. Seul l’initiateur de la révision peut gérer (mettre à jour/terminer) la révision.
+1. Si une révision de ressource est en cours et que vous en êtes l’initiateur, l’icône Gérer la révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) s’affiche dans la barre Action. Seul l’initiateur de la révision peut gérer (mettre à jour/terminer) la révision.
 
    Cliquez sur l’icône Gérer la révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
@@ -71,15 +70,15 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
    * **Description de la révision** : ce champ peut être modifié.
 
-   * **Echéance** : ce champ peut être modifié. Vous pouvez modifier l’échéance selon n’importe quelle date et heure au-delà de la date et de l’heure actuelles.
+   * **Échéance** : ce champ peut être modifié. Vous pouvez modifier l’échéance selon n’importe quelle date et heure au-delà de la date et de l’heure actuelles.
 
    * **Réviseurs** : ce champ peut être modifié. Vous pouvez ajouter ou supprimer des réviseurs. Si une tâche est échue, vous ne pourrez ajouter des réviseurs qu’après avoir étendu l’échéance au-delà de la date actuelle.
 
 1. Modifiez les champs nécessaires, puis cliquez sur Mettre à jour.
 
-   ![Etat Mis à jour de la révision dans le Gestionnaire des tâches](assets/tskmgr.png)
+   ![État Mis à jour de la révision dans le Gestionnaire des tâches](assets/tskmgr.png)
 
-   Etat Mis à jour de la révision dans le Gestionnaire des tâches
+   État Mis à jour de la révision dans le Gestionnaire des tâches
 
 1. Pour mettre fin à la révision, cliquez sur Terminer.
 
@@ -99,7 +98,7 @@ Cette section décrit ce qui se produit lorsque vous modifiez ou mettez fin à u
    1. Si la tâche affectée est incomplète, elle est terminée.
    1. Le réviseur ne peut plus ajouter de commentaires à l’actif.
 
-1. Si un réviseur est ajouté : 
+1. Si un réviseur est ajouté :
 
    ![Ajout d’un réviseur](assets/addedreviewer.png)
 
@@ -108,9 +107,8 @@ Cette section décrit ce qui se produit lorsque vous modifiez ou mettez fin à u
    1. Une tâche de révision est créée et affectée au réviseur qui vient d’être ajouté.
    1. Le nouveau réviseur peut ajouter des commentaires à l’actif.
 
-1. Lorsqu’une révision est terminée : 
+1. Lorsqu’une révision est terminée :
 
    1. **Réviseurs** : pour chaque réviseur, il est mis fin à la tâche incomplète associée à la révision. La tâche n’apparaît plus avec l’état « Pending » (En attente) dans la section Notifications du réviseur.
    1. **Initiateur** : la tâche affectée à l’initiateur de la révision est marquée comme étant terminée. La tâche est supprimée de la section de notification de l’initiateur de la révision.
    1. **Tous** : la révision s’affiche dans la section des révisions précédentes. Plus aucun commentaire ne peut être ajouté.
-
