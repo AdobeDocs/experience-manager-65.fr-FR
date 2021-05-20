@@ -1,8 +1,8 @@
 ---
-title: Score et badges des communautés
-seo-title: Score et badges des communautés
-description: Les notes et les badges AEM Communities vous permettent d'identifier et de récompenser les membres de la communauté
-seo-description: Les notes et les badges AEM Communities vous permettent d'identifier et de récompenser les membres de la communauté
+title: Notation et badges des communautés
+seo-title: Notation et badges des communautés
+description: La notation et les badges d’AEM Communities vous permettent d’identifier et de récompenser les membres de la communauté.
+seo-description: La notation et les badges d’AEM Communities vous permettent d’identifier et de récompenser les membres de la communauté.
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,56 +12,55 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2884'
 ht-degree: 3%
 
 ---
 
-
-# Scores et badges des communautés {#communities-scoring-and-badges}
+# Notation et badges des communautés {#communities-scoring-and-badges}
 
 ## Présentation {#overview}
 
-La fonction de notation et de badges AEM Communities permet d&#39;identifier et de récompenser les membres de la communauté.
+La fonction Scores et badges d’AEM Communities permet d’identifier et de récompenser les membres de la communauté.
 
 Les principaux aspects de la notation et des badges sont les suivants :
 
-* [Attribuer des ](#assign-and-revoke-badges) badges pour identifier le rôle d&#39;un membre dans la communauté.
+* [Attribuez des ](#assign-and-revoke-badges) badges pour identifier le rôle d’un membre dans la communauté.
 
-* [Attribution de base de ](#enable-scoring) badgestes aux membres pour encourager leur participation (quantité de contenu créé).
+* [Octroi basique de ](#enable-scoring) badges aux membres pour encourager leur participation (quantité de contenu créé).
 
-* [Attribution avancée de ](/help/communities/advanced.md) badgestes pour identifier les membres comme experts (qualité du contenu créé).
+* [Attribution avancée de ](/help/communities/advanced.md) badges pour identifier les membres comme experts (qualité du contenu créé).
 
-**** Notez que l’attribution de badges  [n’est pas activée par défaut](/help/communities/implementing-scoring.md#main-pars-text-237875536).
+**** Notez que l’attribution des badges  [n’est pas activée par défaut](/help/communities/implementing-scoring.md#main-pars-text-237875536).
 
 >[!CAUTION]
 >
->La structure d’implémentation visible dans le CRXDE Lite peut être modifiée une fois que l’interface utilisateur est disponible.
+>La structure d’implémentation visible dans CRXDE Lite peut être modifiée une fois l’interface utilisateur disponible.
 
 ## Badges {#badges}
 
-Les insignes sont placés sous le nom d&#39;un membre pour indiquer soit son rôle, soit son statut dans la communauté. Les badges peuvent être affichés sous forme d&#39;image ou de nom. Lorsqu’il est affiché sous forme d’image, le nom est inclus en tant que texte de remplacement pour l’accessibilité.
+Les badges sont placés sous le nom d’un membre pour indiquer son rôle ou sa position dans la communauté. Les badges peuvent être affichés sous forme d’image ou de nom. Lorsqu’il est affiché sous forme d’image, le nom est inclus en tant que texte de remplacement pour l’accessibilité.
 
 Par défaut, les badges se trouvent dans le référentiel à l’adresse
 
 * `/libs/settings/community/badging/images`
 
-S&#39;ils sont stockés à un autre emplacement, ils doivent être lus accessibles à tous.
+S’ils sont stockés à un autre emplacement, ils doivent être lus et accessibles à tous.
 
-Les insignes sont différenciés en UGC selon qu&#39;ils ont été attribués ou acquis selon les règles. Actuellement, les badges attribués apparaissent sous forme de texte et les badges gagnés apparaissent sous forme d’image.
+Les badges sont différenciés par rapport au contenu généré par l’utilisateur selon qu’ils ont été attribués ou acquis selon les règles. Actuellement, les badges attribués apparaissent sous forme de texte et les badges gagnés apparaissent sous forme d’image.
 
 ### Interface utilisateur de gestion des badges {#badge-management-ui}
 
-La console Communautés [Badges](/help/communities/badges.md) permet d&#39;ajouter des badges personnalisés qui peuvent être affichés pour un membre lorsqu&#39;il est gagné (attribué) ou lorsqu&#39;il assume un rôle spécifique dans la communauté (attribué).
+La [console Badges de Communities](/help/communities/badges.md) permet d’ajouter des badges personnalisés qui peuvent être affichés pour un membre lorsqu’il est gagné (attribué) ou lorsqu’il occupe un rôle spécifique dans la communauté (affecté).
 
-### Badges affectés {#assigned-badges}
+### Badges attribués {#assigned-badges}
 
-Un administrateur attribue aux membres de la communauté des badges fondés sur le rôle en fonction de leur rôle dans la communauté.
+Les badges en fonction du rôle sont attribués par un administrateur aux membres de la communauté en fonction de leur rôle dans la communauté.
 
-Les badges attribués (et attribués) sont stockés dans le [SRP](/help/communities/srp.md) sélectionné et ne sont pas directement accessibles. Tant qu’une interface graphique n’est pas disponible, le seul moyen d’attribuer des badges basés sur les rôles consiste à le faire avec du code ou de l’URL. Pour obtenir des instructions sur les URL, voir la section intitulée [Attribuer et révoquer des badges](#assign-and-revoke-badges).
+Les badges attribués (et récompensés) sont stockés dans la [SRP](/help/communities/srp.md) sélectionnée et ne sont pas directement accessibles. Tant qu’une interface utilisateur graphique n’est pas disponible, le seul moyen d’affecter des badges basés sur un rôle consiste à utiliser du code ou cURL. Pour obtenir des instructions sur cURL, reportez-vous à la section intitulée [Attribuer et révoquer des badges](#assign-and-revoke-badges).
 
 Cette version comprend trois badges basés sur les rôles :
 
@@ -69,7 +68,7 @@ Cette version comprend trois badges basés sur les rôles :
 
    `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
-* **gestionnaire de groupes**
+* **gestionnaire de groupe**
 
    `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
@@ -77,18 +76,18 @@ Cette version comprend trois badges basés sur les rôles :
 
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-   ![badges assignés](assets/assigned-badges.png)
+   ![assigned-badges](assets/assigned-badges.png)
 
-### Badges attribués {#awarded-badges}
+### Badges accordés {#awarded-badges}
 
-Le service de notation accorde aux membres de la communauté des badges récompensés en fonction des règles appliquées à leur activité dans la communauté.
+Les badges récompensés sont attribués par le service de notation aux membres de la communauté selon les règles appliquées à leur activité dans la communauté.
 
-Pour que les badges apparaissent comme une récompense pour l&#39;activité, deux choses doivent se produire :
+Pour que les badges apparaissent comme une récompense pour l’activité, deux choses doivent se produire :
 
-* Le badge doit être [activé](#enableforcomponent) pour le composant de fonction.
-* Les règles de score et de badge doivent être [appliquées](#applytopage) à la page (ou ancêtre) sur laquelle le composant est placé.
+* Le badge doit être [activé](#enableforcomponent) pour le composant de fonctionnalité.
+* Les règles de notation et de badge doivent être [appliquées](#applytopage) à la page (ou ancêtre) sur laquelle le composant est placé.
 
-La version comprend trois badges basés sur la récompense :
+Trois badges basés sur les récompenses sont inclus dans la version :
 
 * **or**
 
@@ -106,133 +105,133 @@ La version comprend trois badges basés sur la récompense :
 
 >[!NOTE]
 >
->Les règles de score peuvent être configurées pour affecter des points négatifs aux publications marquées comme inappropriées et affecter ainsi la valeur de score. Cependant, une fois qu’un badge est gagné, il ne sera pas automatiquement supprimé en raison de la réduction du point de notation ou des modifications de la règle de notation.
+>Les règles de notation peuvent être configurées pour affecter des points négatifs aux publications marquées comme inappropriées et affecter ainsi la valeur du score. Cependant, une fois qu’un badge est gagné, il n’est pas automatiquement supprimé en raison de la réduction du point de notation ou des modifications des règles de notation.
 >
->Les badges attribués peuvent être révoqués de la même manière que les badges attribués. Voir la section [Attribuer et révoquer les badges](#assign-and-revoke-badges). Les améliorations futures comprendront une interface utilisateur pour gérer les badges des membres.
+>Les badges primés peuvent être révoqués de la même manière que les badges attribués. Voir la section [Attribuer et révoquer des badges](#assign-and-revoke-badges) . À l’avenir, une interface utilisateur sera ajoutée pour gérer les badges des membres.
 
 ### Badges personnalisés {#custom-badges}
 
-Les badges personnalisés peuvent être installés à l&#39;aide de la console [Badges](/help/communities/badges.md) et être affectés ou spécifiés dans les règles de badge.
+Les badges personnalisés peuvent être installés à l’aide de la [console Badges](/help/communities/badges.md) et attribués ou spécifiés dans les règles de badge.
 
-Une fois installés à partir de la console Badges, les badges personnalisés sont automatiquement répliqués dans l’environnement de publication.
+Une fois installés à partir de la console Badges, les badges personnalisés sont automatiquement répliqués vers l’environnement de publication.
 
-## Activer le score {#enable-scoring}
+## Activer la notation {#enable-scoring}
 
-Le score n’est pas activé par défaut. Les étapes de base pour la configuration et l&#39;activation de la notation et de l&#39;attribution des badges sont les suivantes :
+La notation n’est pas activée par défaut. Les étapes de base pour configurer et activer la notation et l’attribution de badges sont les suivantes :
 
-* Identifiez les règles pour les points de rendement ([règles de notation](#scoring-rules)).
-* Pour les points cumulés par règle de score, affectez [badges](#badges) ([règles de badge](#badging-rules)).
+* Identifiez les règles pour les points d’entrée ([règles de notation](#scoring-rules)).
+* Pour les points cumulés par règles de notation, affectez [badges](#badges) ([règles de badge](#badging-rules)).
 
-* [Appliquez les règles de score et de badge à un site](#apply-rules-to-content) communautaire.
-* [Activez le badge pour les fonctionnalités](#enable-badges-for-component) de la communauté.
+* [Appliquez les règles de notation et de badge à un site](#apply-rules-to-content) communautaire.
+* [Activez la badge pour les fonctionnalités de la communauté](#enable-badges-for-component).
 
-Consultez la section [Test rapide](#quick-test) pour activer la notation pour un site communautaire à l’aide des règles de notation et de badge par défaut pour les forums et les commentaires.
+Consultez la section [Test rapide](#quick-test) pour activer la notation pour un site de communauté à l’aide des règles de notation et de badge par défaut pour les forums et les commentaires.
 
 ### Appliquer des règles au contenu {#apply-rules-to-content}
 
-Pour activer la notation et les badges, ajoutez les propriétés `scoringRules` et `badgingRules` à tout noeud de l&#39;arborescence de contenu du site.
+Pour activer la notation et les badges, ajoutez les propriétés `scoringRules` et `badgingRules` à n’importe quel noeud de l’arborescence de contenu du site.
 
 Si le site est déjà publié, après avoir appliqué toutes les règles et activé les composants, republiez le site.
 
 Les règles qui s’appliquent à un composant activé par badge sont celles du noeud actif ou de son ancêtre.
 
-Si le noeud est de type `cq:Page` (recommandé), ajoutez les propriétés à son noeud `jcr:content` à l&#39;aide de CRXDE|Lite.
+Si le noeud est de type `cq:Page` (recommandé), ajoutez les propriétés à son noeud `jcr:content` à l’aide de CRXDE|Lite.
 
 | **Propriété** | **Type** | **Description** |
 |---|---|---|
-| badgingRules | Chaîne | une liste de tableau de [règles de badge](#badging-rules) |
-| scoringRules | Chaîne | une liste de tableau de [règles de score](#scoring-rules) |
+| badgingRules | Chaîne | une liste de tableaux de [règles de badge](#badging-rules) |
+| scoringRules | Chaîne | une liste de tableaux de [règles de notation](#scoring-rules) |
 
 >[!NOTE]
 >
->Si une règle d’évaluation ne semble pas avoir d’effet sur l’attribution des badges, assurez-vous que la règle d’évaluation n’a pas été bloquée par la propriété scoringRules de la règle d’évaluation. Consultez la section intitulée [Règles d’insigne](#badging-rules).
+>Si une règle de notation ne semble avoir aucun effet sur l’attribution des badges, assurez-vous que la règle de notation n’a pas été bloquée par la propriété scoringRules de la règle de badge. Voir la section intitulée [Règles de badge](#badging-rules).
 
-### Activer les badges pour le composant {#enable-badges-for-component}
+### Activation des badges pour le composant {#enable-badges-for-component}
 
-Les règles d’évaluation et de classement ne sont en vigueur que pour les instances de composants qui ont activé la mise en badge en modifiant la configuration du composant en [mode de création](/help/communities/author-communities.md).
+Les règles de notation et de mise en page ne sont appliquées que pour les instances de composants qui ont activé la mise en badge en modifiant la configuration du composant en [mode de création](/help/communities/author-communities.md).
 
-Une propriété booléenne, `allowBadges`, active/désactive l&#39;affichage des badges pour une instance de composant. Il est configurable dans la boîte de dialogue de modification des composants [](/help/communities/author-communities.md) pour les composants de forum, de QnA et de commentaires par le biais d&#39;une case à cocher intitulée **Afficher les badges**.
+Une propriété booléenne, `allowBadges`, active/désactive l’affichage des badges pour une instance de composant. Il est configurable dans la [boîte de dialogue de modification du composant](/help/communities/author-communities.md) pour les composants de forum, de Q&amp;R et de commentaire via une case à cocher intitulée **Afficher les badges**.
 
-#### Exemple : allowBadges pour l&#39;instance de composant Forum {#example-allowbadges-for-forum-component-instance}
+#### Exemple : allowBadges pour l’instance de composant Forum {#example-allowbadges-for-forum-component-instance}
 
 ![enable-badges-component](assets/enable-badges-component.png)
 
 >[!NOTE]
 >
->N’importe quel composant peut être superposé pour afficher les badges à l’aide du code HBS trouvé dans les forums, QnA et les commentaires comme exemple.
+>N’importe quel composant peut être superposé pour afficher les badges à l’aide du code HBS trouvé dans les forums, la qualité de service et les commentaires comme exemple.
 
-## Règles de score {#scoring-rules}
+## Règles de notation {#scoring-rules}
 
-Les règles de score sont la base de la notation pour l’attribution de badges.
+Les règles de notation sont la base de la notation dans le but d’attribuer des badges.
 
-Très simplement, chaque règle de score est une liste d’une ou de plusieurs sous-règles. Des règles de score sont appliquées au contenu du site de la communauté afin d’identifier les règles à appliquer lorsque les badges sont activés.
+Très simplement, chaque règle de notation est une liste d’une ou de plusieurs sous-règles. Les règles de notation sont appliquées au contenu du site de la communauté afin d’identifier les règles à appliquer lorsque les badges sont activés.
 
-Les règles de score sont héritées, mais pas additifs. Par exemple :
+Les règles de notation sont héritées, mais pas additifs. Par exemple :
 
-* Si la page2 contient la règle de score2 et son ancêtre page1 contient la règle de score1.
+* Si la page 2 contient la règle de notation 2 et que sa page 1 ancêtre contient la règle de notation 1.
 * Une action sur un composant page2 appelle à la fois règle1 et règle2.
 * Si les deux règles contiennent des sous-règles applicables pour le même `topic/verb` :
 
-   * Seule la sous-règle de la règle2 affectera le score.
-   * Les scores des deux sous-règles ne sont pas additionnés.
+   * Seule la sous-règle de la règle 2 affectera le score.
+   * Les scores des deux sous-règles ne sont pas cumulés.
 
-Lorsqu’il existe plusieurs règles de score, les scores sont conservés séparément pour chaque règle.
+S’il existe plusieurs règles de notation, les scores sont conservés séparément pour chaque règle.
 
-Les règles de score sont des noeuds de type `cq:Page` avec des propriétés sur son noeud `jcr:content` qui spécifient la liste des sous-règles qui le définissent.
+Les règles de notation sont des noeuds de type `cq:Page` avec des propriétés sur leur noeud `jcr:content` qui spécifient la liste des sous-règles qui les définissent.
 
 Les scores sont stockés dans SRP.
 
 >[!NOTE]
 >
->Bonne pratique : nommez de manière unique chaque règle de score.
+>Bonne pratique : nommez de manière unique chaque règle de notation.
 >
->Les noms des règles de score doivent être globalement uniques ; ils ne devraient pas se terminer par le même nom.
+>Les noms des règles de notation doivent être uniques au niveau global. ils ne doivent pas se terminer par le même nom.
 >
->Exemple de ce que *ne pas* faire :
+>Exemple de ce que *ne doit pas* faire :
 >
->/libs/settings/community/scoring/rules/site1/forums-score
->/libs/settings/community/scoring/rules/site2/forums-score
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
-### Sous-règles de score {#scoring-sub-rules}
+### Sous-règles de notation {#scoring-sub-rules}
 
 Les sous-règles de notation contiennent les propriétés qui détaillent les valeurs de participation à la communauté.
 
 Chaque sous-règle de notation identifie :
 
 * Quelles activités sont suivies ?
-* Quelle fonction communautaire particulière est impliquée ?
+* Quelle fonction communautaire spécifique est impliquée ?
 * Combien de points sont attribués ?
 
-Par défaut, les points sont attribués au membre qui agit, sauf si la sous-règle spécifie le propriétaire du contenu comme recevant les points ( `forOwner`).
+Par défaut, les points sont attribués au membre qui agit, sauf si la sous-règle spécifie au propriétaire du contenu qu’il reçoit les points ( `forOwner`).
 
 Chaque sous-règle peut être incluse dans une ou plusieurs règles de notation.
 
-Le nom de la sous-règle suit généralement le modèle d’utilisation d’un *sujet*, *objet* et *verbe*. Par exemple :
+Le nom de la sous-règle suit généralement le modèle d’utilisation d’un *subject* , *object* et *verb*. Par exemple :
 
-* membre-commentaire-créer
-* membre-réception-vote
+* member-comment-create
+* member-receive-vote
 
-Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son `jcr:content`noeud qui spécifient les [verbes et rubriques](#topics-and-verbs).
+Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son noeud `jcr:content`qui spécifient les [verbes et rubriques](#topics-and-verbs) .
 
 <table>
  <tbody>
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th> Description de la valeur</th>
+   <th> Valeur Description</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
    <td>Long</td>
    <td>
     <ul>
-     <li>requis ; le verbe correspond à une action de événement</li>
-     <li>il doit y avoir au moins une propriété verbe</li>
-     <li>le verbe doit être saisi en UPPERCASE</li>
-     <li>il peut y avoir plusieurs propriétés de verbes, mais aucun duplicata</li>
-     <li>la valeur est le score à appliquer pour ce événement</li>
-     <li>la valeur peut être positive ou négative</li>
-     <li>une liste de verbes prise en charge dans la version se trouve dans la section <a href="#topics-and-verbs">Rubriques et verbes</a>.</li>
+     <li>requis; le verbe correspond à une action d’événement</li>
+     <li>il doit y avoir au moins une propriété verb</li>
+     <li>le verbe doit être saisi en MAJUSCULES</li>
+     <li>il peut y avoir plusieurs propriétés de verbe, mais pas de doublons.</li>
+     <li>la valeur est le score à appliquer pour cet événement.</li>
+     <li>la valeur peut être positive ou négative.</li>
+     <li>la liste des verbes pris en charge dans la version figure dans la section <a href="#topics-and-verbs">Rubriques et verbes</a> .</li>
     </ul> </td>
   </tr>
   <tr>
@@ -240,10 +239,10 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
    <td>Chaîne</td>
    <td>
     <ul>
-     <li>facultatif ; restreint la sous-règle aux composants de la communauté identifiés par des sujets de événement</li>
-     <li>si spécifié : est une chaîne de plusieurs valeurs de rubriques de événement</li>
-     <li>une liste des rubriques de la version se trouve dans la section <a href="#topics-and-verbs">Rubriques et verbes</a>.</li>
-     <li>par défaut est appliquée à toutes les rubriques associées aux verbes.</li>
+     <li>facultatif ; limite la sous-règle aux composants de communauté identifiés par les rubriques d’événement ;</li>
+     <li>si spécifié : La valeur est une chaîne à plusieurs valeurs de rubriques d’événement.</li>
+     <li>une liste des rubriques de la version figure dans la section <a href="#topics-and-verbs">Sujets et verbes</a> .</li>
+     <li>La valeur par défaut est d’appliquer à toutes les rubriques associées aux verbes.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -251,9 +250,9 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
    <td>Booléen</td>
    <td>
     <ul>
-     <li>facultatif ; n'est pas pertinent lorsque le membre agit sur le contenu qu'il possède</li>
-     <li>si la valeur est true, appliquez un score au propriétaire du contenu concerné</li>
-     <li>si la valeur est false, appliquer un score à l'action du membre</li>
+     <li>facultatif ; n’est pas pertinent lorsque le membre agit sur le contenu qu’il possède</li>
+     <li>si la valeur est true, appliquez un score au propriétaire du contenu sur lequel l’action est effectuée.</li>
+     <li>si la valeur est false, appliquez un score à l’action du membre.</li>
      <li>false par défaut</li>
     </ul> </td>
   </tr>
@@ -263,65 +262,65 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
    <td>
     <ul>
      <li>facultatif ; identifie le moteur de notation</li>
-     <li>si "de base", spécifie le moteur de notation en fonction de la quantité
+     <li>si "basic", spécifie le moteur de notation en fonction de la quantité
       <ul>
        <li>inclus dans la version</li>
       </ul> </li>
-     <li>si "avancé", indique le moteur de notation en fonction de la qualité et de la quantité
+     <li>si "advanced", indique le moteur de notation en fonction de la qualité et de la quantité
       <ul>
        <li>nécessite un <a href="/help/communities/advanced.md">package supplémentaire</a></li>
       </ul> </li>
-     <li>default is "basic"</li>
+     <li>La valeur par défaut est "basic"</li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-### Règles et sous-règles de score incluses {#included-scoring-rules-and-sub-rules}
+### Règles de notation et sous-règles incluses {#included-scoring-rules-and-sub-rules}
 
-Cette version comprend deux règles de notation pour la fonction [Forum](/help/communities/functions.md#forum-function) (une pour les composants Forum et Commentaires de la fonction Forum) :
+Cette version comprend deux règles de notation pour la [fonction Forum](/help/communities/functions.md#forum-function) (une pour les composants Forum et Commentaires de la fonction Forum) :
 
-1. /libs/settings/community/score/rules/commentaires-score
-
-   * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/Member-comment-create
-/libs/settings/community/scoring/rules/sub-rules/members-receive-vote
-/libs/settings/community/scoring/rules/sub-rules/members-don-vote
-/libs/settings/community/scoring/rules/sub-rules/members-is-modérated
-
-1. /libs/settings/community/score/rules/forums-score
+1. /libs/settings/community/scoring/rules/comments-scoring
 
    * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/membre-forum-create
-/libs/settings/community/scoring/rules/sub-rules/members-receive-vote
-/libs/settings/community/scoring/rules/sub-rules/members-don-vote
-/libs/settings/community/scoring/rules/sub-rules/members-is-modérated
+/libs/settings/community/scoring/rules/sub-rules/member-comment-create
+/libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+/libs/settings/community/scoring/rules/sub-rules/member-don-vote
+/libs/settings/community/scoring/rules/sub-rules/member-is-modéated
+
+1. /libs/settings/community/scoring/rules/forums-scoring
+
+   * subRules[] =
+/libs/settings/community/scoring/rules/sub-rules/member-forum-create
+/libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+/libs/settings/community/scoring/rules/sub-rules/member-don-vote
+/libs/settings/community/scoring/rules/sub-rules/member-is-modéated
 
 **Remarques:**
 
 * Les noeuds `rules` et `sub-rules` sont de type cq:Page.
 
-* `subRules` est un attribut de type [] String sur le  `jcr:content` noeud de la règle.
+* `subRules` est un attribut de type [] Chaîne sur le  `jcr:content` noeud de la règle.
 
 * `sub-rules` peut être partagée entre différentes règles de notation.
 * `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
 
-   * Les noms de règle doivent être uniques, quel que soit l’emplacement.
+   * Les noms des règles doivent être uniques, quel que soit l’emplacement.
 
-### Activation de règles de score personnalisées {#activating-custom-scoring-rules}
+### Activation des règles de notation personnalisées {#activating-custom-scoring-rules}
 
-Toute modification ou tout ajout apporté aux règles de notation ou aux sous-règles apportées dans l’environnement d’auteur doit être installé lors de la publication.
+Toutes les modifications ou ajouts apportés aux règles de notation ou aux sous-règles effectuées dans l’environnement de création doivent être installés lors de la publication.
 
-## Règles d’insigne {#badging-rules}
+## Règles de badge {#badging-rules}
 
-Les règles de mise en badge lient les règles de notation aux badges en spécifiant :
+Les règles de badge lient les règles de notation aux badges en spécifiant :
 
-* Règle de score
-* Score nécessaire pour obtenir un badge spécifique
+* Règle de notation
+* Score nécessaire pour recevoir un badge spécifique
 
-Les règles de mise en badge sont des noeuds de type `cq:Page` avec des propriétés sur son noeud `jcr:content` qui corrélent les règles de notation aux scores et aux badges.
+Les règles de badge sont des noeuds de type `cq:Page` avec des propriétés sur son noeud `jcr:content` qui mettent en corrélation les règles de notation avec les scores et les badges.
 
-Les règles de badge consistent en une propriété `thresholds` obligatoire qui est une liste ordonnée de scores mappés à des badges. Les scores doivent être triés en valeur croissante. Par exemple :
+Les règles de badge se composent d’une propriété `thresholds` obligatoire qui est une liste ordonnée de scores mappés à des badges. Les scores doivent être triés en valeur croissante. Par exemple :
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
@@ -335,13 +334,13 @@ Les règles de badge consistent en une propriété `thresholds` obligatoire qui 
 
    * Un badge d&#39;or est décerné lorsque 80 points ont été accumulés.
 
-Les règles de badge sont associées à des règles de score, qui déterminent comment les points s’accumulent. Voir la section intitulée [Appliquer des règles au contenu](#apply-rules-to-content).
+Les règles de badge sont associées à des règles de notation qui déterminent la manière dont les points s’accumulent. Voir la section intitulée [Appliquer des règles au contenu](#apply-rules-to-content).
 
-La propriété `scoringRules` d’une règle de badge limite simplement les règles de score qui peuvent être associées à cette règle de badge particulière.
+La propriété `scoringRules` d’une règle de badge limite simplement les règles de notation qui peuvent être associées à cette règle de badge spécifique.
 
 >[!NOTE]
 >
->Meilleure pratique : créez des images de badge propres à chaque site AEM.
+>Bonne pratique : créer des images de badge uniques à chaque site AEM.
 
 ![badging-rule-configuration](assets/badging-rule-configuration.png)
 
@@ -350,34 +349,34 @@ La propriété `scoringRules` d’une règle de badge limite simplement les règ
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th>Description de la valeur</th>
+   <th>Valeur Description</th>
   </tr>
   <tr>
    <td>seuils</td>
    <td>Chaîne</td>
-   <td><em>(obligatoire)</em> Chaîne à plusieurs valeurs du formulaire "numéro|chemin"
+   <td><em>(obligatoire) </em> Chaîne à plusieurs valeurs de la forme 'number|path'
     <ul>
      <li>nombre = score</li>
      <li>| = la ligne verticale char (U+007C)</li>
-     <li>chemin = chemin complet vers la ressource image de badge</li>
-    </ul> Les chaînes doivent être triées afin que les nombres augmentent en valeur et qu’aucun espace vide ne s’affiche entre le nombre et le chemin.<br /> Exemple d’entrée :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+     <li>path = chemin complet de la ressource image de badge</li>
+    </ul> Les chaînes doivent être triées de sorte que les nombres augmentent en valeur et qu’aucun espace vide ne s’affiche entre le nombre et le chemin.<br /> Exemple d’entrée :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
    <td>Chaîne</td>
-   <td><em>(Facultatif)</em> Identifie le moteur d’évaluation comme étant "de base" ou "avancé". Si vous souhaitez utiliser le moteur de score avancé, voir <a href="/help/communities/advanced.md">Advanced Scoring and Badges</a>. La valeur par défaut est "basic".</td>
+   <td><em>(facultatif)</em> Identifie le moteur de notation comme "de base" ou "avancé". Si vous souhaitez utiliser le moteur de notation avancé, voir <a href="/help/communities/advanced.md">Notation avancée et badges</a>. La valeur par défaut est "basic".</td>
   </tr>
   <tr>
    <td>scoringRules</td>
    <td>Chaîne</td>
-   <td>(<em>facultatif</em>) Chaîne à plusieurs valeurs pour limiter la règle de badge aux événements de notation identifiés par les règles de notation</td>
+   <td>(<em>facultatif</em>) Chaîne à plusieurs valeurs permettant de limiter la règle de badge aux événements de notation identifiés par les règles de notation.</td>
   </tr>
  </tbody>
 </table>
 
-### Règles de mise en badge incluses {#included-badging-rules}
+### Règles de badge incluses {#included-badging-rules}
 
-Cette version comprend deux règles de mise en badge qui correspondent aux [Forums et aux ](#includedscoringrules) règles de score des commentaires.
+Cette version comprend deux règles de badge qui correspondent aux [forums et aux règles de notation des commentaires](#includedscoringrules).
 
 * `/libs/settings/community/badging/rules/comments-badging`
 
@@ -385,44 +384,44 @@ Cette version comprend deux règles de mise en badge qui correspondent aux [Foru
 
 **Remarques:**
 
-* `rules` sont de type cq:Page.
+* `rules` Les noeuds sont de type cq:Page.
 * `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
 
-   * Les noms de règle doivent être uniques, quel que soit l’emplacement.
+   * Les noms des règles doivent être uniques, quel que soit leur emplacement.
 
-### Activation de règles de badge personnalisé {#activating-custom-badging-rules}
+### Activation des règles de badge personnalisées {#activating-custom-badging-rules}
 
-Toute modification ou tout ajout apporté aux règles de mise en badge ou aux images effectuées dans l’environnement d’auteur doit être installé lors de la publication.
+Toute modification ou tout ajout apporté aux règles de badge ou aux images effectuées dans l’environnement de création doit être installé lors de la publication.
 
 ## Affectation et révocation de badges {#assign-and-revoke-badges}
 
-Des badges peuvent être attribués à des membres à l&#39;aide de la console [members](/help/communities/members.md#badges-tab) ou par programmation à l&#39;aide des commandes cURL.
+Les badges peuvent être attribués aux membres à l’aide de la [console des membres](/help/communities/members.md#badges-tab) ou par programmation à l’aide des commandes cURL.
 
-Les commandes cURL suivantes indiquent ce qui est nécessaire pour une demande HTTP d’attribution et de révocation de badges. Le format de base est le suivant :
+Les commandes cURL suivantes indiquent les éléments nécessaires à une requête HTTP d’attribution et de révocation des badges. Le format de base est le suivant :
 
-cURL -i -X POST -H *header* -u *signature* -F *opération* -F *badge* *membre-profil-url*
+cURL -i -X POST -H *header* -u *signature* -F *opération* -F *badge* *member-profile-url*
 
-*header* = &quot;Accepter : application/json&quot; en-tête personnalisé à transmettre au serveur (obligatoire)
+*header* = &quot;Accept:application/json&quot; en-tête personnalisé à transmettre au serveur (obligatoire)
 
-*signature* = administrator-id:password par exemple : admin:admin
+*signature*  = administrator-id:password par exemple : admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OU &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = l’emplacement du fichier image de badge dans le référentiel, par exemple : /libs/settings/community/badging/images/modérator/jcr:content/moderator.png
+*badge-image-file*  = emplacement du fichier image de badge dans le référentiel, par exemple : /libs/settings/community/badging/images/modérator/jcr:content/moderator.png
 
-*members-profil-url* = le point de terminaison du profil du membre lors de la publication, par exemple : https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url*  = point de terminaison du profil du membre lors de la publication, par exemple : https://&lt;server> : &lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
->Le *membre-profil-url* :
+>*member-profile-url* :
 >
->* Peut faire référence à une instance d’auteur si le service de tunnel [Tunnel ](/help/communities/users.md#tunnel-service) est activé.
->* Il peut s&#39;agir d&#39;un nom aléatoire et obscur - voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) concernant l&#39;ID autorisé.
+>* Peut faire référence à une instance d’auteur si le [service tunnel](/help/communities/users.md#tunnel-service) est activé.
+>* Peut être un nom aléatoire et obscur - voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) concernant l’ID autorisable.
 
 
-### Exemples: {#examples}
+### Exemples : {#examples}
 
 #### Attribuer un badge de modérateur {#assign-a-moderator-badge}
 
@@ -438,43 +437,43 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 >[!NOTE]
 >
->L’utilisation de cURL pour attribuer et révoquer des badges fonctionne pour n’importe quelle image de badge, mais lorsqu’elle est affectée à la place de celle acquise, elle est marquée comme des badges attribués et gérée en conséquence.
+>L’utilisation de cURL pour attribuer et révoquer des badges fonctionne pour n’importe quelle image de badge, mais lorsqu’elle est affectée au lieu d’être acquise, elles sont marquées comme des badges attribués et gérées en conséquence.
 
-## Scores et badges pour les composants personnalisés {#scoring-and-badges-for-custom-components}
+## Notation et badges pour les composants personnalisés {#scoring-and-badges-for-custom-components}
 
-Il est possible de créer des règles de score et de badge pour les composants personnalisés en associant les rubriques de événement créées pour le composant aux verbes.
+Il est possible de créer des règles de notation et de badge pour les composants personnalisés en associant les rubriques d’événement créées pour le composant aux verbes.
 
-## Rubriques et verbes {#topics-and-verbs}
+## Sujets et verbes {#topics-and-verbs}
 
-Lorsque les membres interagissent avec les fonctionnalités des communautés, des événements sont envoyés qui peuvent déclencher des écouteurs asynchrones, tels que des notifications et des scores.
+Lorsque les membres interagissent avec les fonctionnalités des communautés, des événements sont envoyés, qui peuvent déclencher des écouteurs asynchrones, tels que des notifications et des scores.
 
-L’instance SocialEvent d’un composant enregistre les événements sous la forme `actions` qui se produisent pour un `topic`. SocialEvent inclut une méthode pour renvoyer une `verb` associée à l’action. Il existe une relation *n-1* entre `actions` et `verbs`.
+L’instance SocialEvent d’un composant enregistre les événements sous la forme `actions` qui se produisent pour une balise `topic`. SocialEvent inclut une méthode pour renvoyer une `verb` associée à l’action. Il existe une relation *n-1* entre `actions` et `verbs`.
 
-Pour les composants de communautés livrés, les tableaux suivants décrivent les `verbs` définis pour chaque `topic` disponible pour l&#39;utilisation dans [sous-règles de notation](#scoring-sub-rules).
+Pour les composants des communautés livrés, les tableaux suivants décrivent les `verbs` définis pour chaque `topic` disponible pour utilisation dans les [sous-règles de notation](#scoring-sub-rules).
 
 >[!NOTE]
 >
->Une nouvelle propriété booléenne, `allowBadges`, active/désactive l&#39;affichage des badges pour une instance de composant. Il sera configurable dans les boîtes de dialogue de modification de composant [mises à jour](/help/communities/author-communities.md) via une case à cocher intitulée **Badges d&#39;affichage**.
+>Une nouvelle propriété booléenne, `allowBadges`, active/désactive l’affichage des badges pour une instance de composant. Il sera configurable dans les [boîtes de dialogue de modification des composants](/help/communities/author-communities.md) mises à jour par le biais d’une case à cocher intitulée **Badges d’affichage**.
 
 **[Calendrier](/help/communities/calendar.md)**
 ComponentSocialEvent  `topic`= com/adobe/cq/social/calendar
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | crée un événement de calendrier |
-| AJOUTER | commentaires d&#39;un membre sur un événement de calendrier |
-| UPDATE | le événement de calendrier ou le commentaire du membre est modifié |
-| DELETE | le événement de calendrier ou le commentaire du membre est supprimé |
+| POST | Un membre crée un événement de calendrier |
+| AJOUTER | commentaires d’un membre sur un événement de calendrier |
+| UPDATE | l’événement ou le commentaire de calendrier du membre est modifié. |
+| DELETE | l’événement ou le commentaire de calendrier du membre est supprimé. |
 
-**[Commentaires](/help/communities/comments.md)**
+**[Comments](/help/communities/comments.md)**
 ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | crée un commentaire |
-| AJOUTER | réponse du membre au commentaire |
-| METTRE À JOUR | le commentaire du membre est modifié |
-| DELETE | le commentaire du membre est supprimé |
+| POST | Un membre crée un commentaire |
+| AJOUTER | réponses du membre au commentaire |
+| UPDATE | le commentaire du membre est modifié. |
+| DELETE | le commentaire du membre est supprimé. |
 
 **[File Library](/help/communities/file-library.md)**
 ComponentSocialEvent  `topic`= com/adobe/cq/social/fileLibrary
@@ -482,8 +481,8 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/fileLibrary
 | **Verbe** | **Description** |
 |---|---|
 | POST | crée un dossier |
-| ATTAQUE | le membre télécharge un fichier |
-| METTRE À JOUR | met à jour un dossier ou un fichier |
+| ATTACH | Le membre charge un fichier |
+| UPDATE | met à jour un dossier ou un fichier |
 | DELETE | supprime un dossier ou un fichier |
 
 **[Forum](/help/communities/forum.md)**
@@ -491,139 +490,139 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/forum
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | membre crée une rubrique de forum |
+| POST | thème de forum de création de membre |
 | AJOUTER | réponses des membres au sujet du forum |
-| METTRE À JOUR | le sujet ou la réponse du forum du membre est modifié |
-| DELETE | le sujet ou la réponse du membre du forum est supprimé |
+| UPDATE | Le sujet ou la réponse du forum du membre est modifié |
+| DELETE | La rubrique ou la réponse du forum du membre est supprimée |
 
 **[Journal](/help/communities/blog-feature.md)**
 ComponentSocialEvent  `topic`= com/adobe/cq/social/journal
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | crée un article de blog |
+| POST | Un membre crée un article de blog. |
 | AJOUTER | commentaires d&#39;un membre sur un article de blog |
-| METTRE À JOUR | article ou commentaire du blog du membre modifié |
-| DELETE | article ou commentaire du blog du membre supprimé |
+| UPDATE | article ou commentaire de blog du membre modifié |
+| DELETE | article ou commentaire de blog du membre supprimé |
 
-**[QnA](/help/communities/working-with-qna.md)**
+**[Q&amp;R](/help/communities/working-with-qna.md)**
 ComponentSocialEvent  `topic` = com/adobe/cq/social/qna
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | crée une question QnA |
-| AJOUTER | crée une réponse QnA |
-| METTRE À JOUR | Question ou réponse QnA du membre modifiée |
-| SELECT | la réponse du membre est sélectionnée |
-| DÉSÉLECTIONNER | la réponse du membre est désélectionnée |
-| DELETE | QnUne question ou réponse du membre est supprimée |
+| POST | crée une question Q&amp;R |
+| AJOUTER | crée une réponse Q&amp;R |
+| UPDATE | Q&amp;R du membre : une question ou une réponse est modifiée |
+| SELECT | la réponse du membre est sélectionnée. |
+| UNSELECT | la réponse du membre est désélectionnée. |
+| DELETE | Q&amp;R du membre : une question ou une réponse est supprimée |
 
-**[Critiques](/help/communities/reviews.md)**
+**[Révisions](/help/communities/reviews.md)**
 ComponentSocialEvent  `topic`= com/adobe/cq/social/review
 
 | **Verbe** | **Description** |
 |---|---|
-| POST | membre crée une révision |
-| METTRE À JOUR | révision du membre est modifiée |
-| DELETE | la révision du membre est supprimée |
+| POST | création de la révision par le membre |
+| UPDATE | la révision du membre est modifiée. |
+| DELETE | la révision du membre est supprimée. |
 
-**[Evaluation](/help/communities/rating.md)**
+**[Évaluation](/help/communities/rating.md)**
 ComponentSocialEvent  `topic`= com/adobe/cq/social/tally/rating
 
 | **Verbe** | **Description** |
 |---|---|
-| AJOUTE | le contenu du membre a été amélioré |
-| SUPPRESSION DE LA COTE | le contenu du membre a été réduit |
+| AJOUTER UNE NOTE | le contenu du membre a été mis au point |
+| SUPPRESSION DE LA NOTE | le contenu du membre a été abaissé. |
 
-**[Vote du](/help/communities/voting.md)**
-composantSocialEvent  `topic`= com/adobe/cq/social/tally/vote
+**[Vote](/help/communities/voting.md)**
+ComponentSocialEvent  `topic`= com/adobe/cq/social/tally/vote
 
 | **Verbe** | **Description** |
 |---|---|
-| AJOUTER VOTE | le contenu du député a été voté |
-| SUPPRIMER LE VOTE | le contenu du député a été rejeté, voté |
+| AJOUTER UN VOTE | le contenu du membre a été voté |
+| SUPPRIMER LE VOTE | le contenu du membre a été rejeté |
 
 ****
-Composants prenant en charge la modérationSocialEvent  `topic`= com/adobe/cq/social/modération
+Composants activés pour la modérationSocialEvent  `topic`= com/adobe/cq/social/modération
 
 | **Verbe** | **Description** |
 |---|---|
-| DENY | le contenu du membre est refusé |
+| DENY | le contenu du membre est refusé ; |
 | INDICATEUR INAPPROPRIÉ | le contenu du membre est marqué |
-| INAPPROPRIÉ | le contenu du membre n&#39;est pas marqué |
-| ACCEPTER | le contenu du membre est approuvé par le modérateur |
-| CLOSE | le membre ferme les commentaires aux modifications et aux réponses |
-| OUVRIR | membre réouvre le commentaire |
+| INAPPROPRIÉ | le contenu du membre n’est pas marqué |
+| ACCEPT | le contenu du membre est approuvé par le modérateur ; |
+| CLOSE | le membre ferme le commentaire aux modifications et aux réponses |
+| OUVRIR | commentaire de réouverture du membre |
 
 ### Événements de composants personnalisés {#custom-component-events}
 
-Pour un composant personnalisé, un SocialEvent est appelé pour enregistrer les événements du composant sous la forme `actions` qui se produisent pour un `topic`.
+Pour un composant personnalisé, un événement SocialEvent est appelé pour enregistrer les événements du composant sous la forme `actions` qui se produisent pour un `topic`.
 
-Pour prendre en charge le score, SocialEvent doit remplacer la méthode `getVerb()` afin qu’un `verb` approprié soit renvoyé pour chaque `action`. L&#39;élément `verb` renvoyé pour une action peut être couramment utilisé (tel que `POST`) ou spécialisé pour le composant (tel que `ADD RATING`). Il existe une relation *n-1* entre `actions` et `verbs`.
+Pour prendre en charge la notation, SocialEvent doit remplacer la méthode `getVerb()` afin qu’une `verb` appropriée soit renvoyée pour chaque `action`. La valeur `verb` renvoyée pour une action peut être couramment utilisée (telle que `POST`) ou spécialisée pour le composant (telle que `ADD RATING`). Il existe une relation *n-1* entre `actions` et `verbs`.
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
-### Les badges n&#39;apparaissent pas {#badges-are-not-appearing}
+### Les badges n’apparaissent pas {#badges-are-not-appearing}
 
-Si des règles de notation et de badge ont été appliquées au contenu du site Web, mais que les badges ne sont attribués à aucune activité, assurez-vous que les badges ont été activés pour l’instance de ce composant.
+Si des règles de notation et de badge ont été appliquées au contenu du site web, mais que les badges n’ont été attribués pour aucune activité, assurez-vous que les badges ont été activés pour l’instance de ce composant.
 
-Voir [Activer les badges pour le composant](#enable-badges-for-component).
+Voir [Activation des badges pour le composant](#enable-badges-for-component).
 
-### La règle de score n&#39;a aucun effet {#scoring-rule-has-no-effect}
+### La règle de notation n’a aucun effet {#scoring-rule-has-no-effect}
 
-Si des règles de notation et de badge ont été appliquées au contenu du site Web et que des badges sont attribués pour certaines actions, mais pas pour d’autres, vérifiez que la règle de badge n’a pas limité les règles de notation auxquelles elle s’applique.
+Si des règles de notation et de badge ont été appliquées au contenu du site web et que des badges sont attribués pour certaines actions, mais pas pour d’autres, vérifiez que la règle de badge n’a pas restreint les règles de notation auxquelles elle s’applique.
 
-Voir la propriété `scoringRules` de [Règles d&#39;insigne](#badging-rules).
+Voir la propriété `scoringRules` des [Règles de badge](#badging-rules).
 
 ### Type sensible à la casse {#case-sensitive-typo}
 
-La plupart des propriétés et valeurs, en particulier les verbes, sont sensibles à la casse. Les verbes doivent être en MAJUSCULES lorsqu’ils sont utilisés dans une sous-règle de score.
+La plupart des propriétés et valeurs, en particulier les verbes, sont sensibles à la casse. Les verbes doivent être en MAJUSCULES lorsqu’ils sont utilisés dans une sous-règle de notation.
 
-Si la fonction ne fonctionne pas comme prévu, assurez-vous que les données ont été saisies correctement.
+Si la fonction ne fonctionne pas comme prévu, vérifiez que les données ont été correctement saisies.
 
 ## Test rapide {#quick-test}
 
-Il est possible d’essayer rapidement de marquer et de marquer des points à l’aide du site [Didacticiel de prise en main](/help/communities/getting-started.md) (engager) :
+Il est possible d’essayer rapidement de noter et d’attribuer un badge à l’aide du [Tutoriel de prise en main](/help/communities/getting-started.md) (engage) site :
 
 * Accédez au CRXDE Lite sur l’auteur.
 * Accédez à la page de base :
 
-   * /content/sites/learn/fr/jcr:content
+   * /content/sites/engage/en/jcr:content
 
 * Ajoutez la propriété badgingRules :
 
    * **Nom** : `badgingRules`
    * **Type** : `String`
-   * Sélectionner **Multi**
-   * Sélectionner **Ajouter**
+   * Sélectionnez **Multi**
+   * Sélectionnez **Ajouter**
    * Enter `/libs/settings/community/badging/rules/forums-badging`
    * Sélectionner **+**
-   * Saisissez `/libs/settings/community/badging/rules/comments-badging`
+   * Entrez `/libs/settings/community/badging/rules/comments-badging`
    * **Cliquez sur OK**
 
 * Ajoutez la propriété scoringRules :
 
    * **Nom** : `scoringRules`
    * **Type** : `String`
-   * Sélectionner **Multi**
-   * Sélectionner **Ajouter**
-   * Saisissez `/libs/settings/community/scoring/rules/forums-scoring`
+   * Sélectionnez **Multi**
+   * Sélectionnez **Ajouter**
+   * Entrez `/libs/settings/community/scoring/rules/forums-scoring`
    * Sélectionner **+**
-   * Saisissez `/libs/settings/community/scoring/rules/comments-scoring`
+   * Entrez `/libs/settings/community/scoring/rules/comments-scoring`
    * **Cliquez sur OK**
 
 * Sélectionnez **Enregistrer tout**.
 
-![test-score-badging](assets/test-scoring-badging.png)
+![test-scoring-badging](assets/test-scoring-badging.png)
 
-Ensuite, assurez-vous que les composants du forum et des commentaires permettent l&#39;affichage des badges :
+Vérifiez ensuite que les composants de forum et de commentaires permettent l’affichage des badges :
 
-* Encore une fois en utilisant le CRXDE Lite.
-* Accédez au composant de forum
+* Encore une fois en utilisant CRXDE Lite.
+* Accédez au composant Forum
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
-* Ajoutez la propriété booléenne allowBadges, si nécessaire, et assurez-vous qu’elle est vraie.
+* Ajoutez la propriété booléenne allowBadges, si nécessaire, et assurez-vous qu’elle est définie sur true.
 
    * **Nom** : `allowBadges`
    * **Type** : `Boolean`
@@ -631,27 +630,27 @@ Ensuite, assurez-vous que les composants du forum et des commentaires permettent
 
 ![test-forum-component](assets/test-forum-component.png)
 
-Ensuite, [republier](/help/communities/sites-console.md#publishing-the-site) le site communautaire.
+Ensuite, [republiez](/help/communities/sites-console.md#publishing-the-site) le site de la communauté.
 
 Enfin,
 
 * Accédez au composant sur l’instance de publication.
-* Connectez-vous en tant que membre de la communauté (par exemple : weston.mccall@dodgit.com / mot de passe).
+* Se connecter en tant que membre de la communauté (par exemple : weston.mccall@dodgit.com).
 * Publiez un nouveau sujet de forum.
 * La page doit être actualisée pour que le badge s’affiche.
 
-   * Déconnexion et connexion en tant que membre de la communauté différent (par exemple : aaron.mcdonald@mailinator.com/mot de passe).
+   * Déconnectez-vous et connectez-vous en tant que membre de la communauté différent (par exemple : aaron.mcdonald@mailinator.com/password).
 
-* Sélectionnez le forum.
+* Sélectionnez le Forum.
 
-Cela devrait permettre au membre de la communauté d&#39;obtenir un badge en bronze visible avec son billet sur le forum car le premier seuil de la règle de badge de forums est un score de 1.
+Cela devrait permettre au membre de la communauté d’obtenir un badge en bronze visible avec sa publication sur le forum car le premier seuil de la règle de badge des forums est de 1.
 
 ![bronzebadge](assets/bronzebadge.png)
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d&#39;informations, consultez la page [Scoring and Badges Essentials](/help/communities/configure-scoring.md) destinée aux développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la notation et les badges](/help/communities/configure-scoring.md) pour les développeurs.
 
-Pour plus d’informations sur le moteur de score avancé, voir [Advanced Scoring and Badges](/help/communities/advanced.md).
+Pour plus d’informations sur le moteur de notation avancée, voir [Notation avancée et badges](/help/communities/advanced.md).
 
-Le tableau de bord configurable [composant](/help/communities/enabling-leaderboard.md) et [fonction](/help/communities/functions.md#leaderboard-function) simplifie l&#39;affichage des membres et leurs scores sur un site communautaire.
+Le tableau de classement configurable [component](/help/communities/enabling-leaderboard.md) et [function](/help/communities/functions.md#leaderboard-function) simplifie l’affichage des membres et de leurs scores sur un site communautaire.
