@@ -1,10 +1,9 @@
 ---
-title: Prise en main du contenu et du commerce AEM
-description: Découvrez comment déployer un projet AEM Content and Commerce.
+title: Prise en main d’AEM Content and Commerce
+description: Découvrez comment déployer un projet Content and Commerce AEM.
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '682'
@@ -12,9 +11,9 @@ ht-degree: 6%
 
 ---
 
-# Prise en main de AEM Contenu et commerce {#start}
+# Prise en main d’AEM Content and Commerce {#start}
 
-Pour commencer à utiliser AEM Content and Commerce, vous devez installer AEM Content and Commerce Ajoute-On pour AEM 6.5.
+Pour commencer à utiliser AEM Content and Commerce, vous devez installer AEM module complémentaire Content and Commerce pour 6.5.
 
 ## Configuration logicielle minimale requise
 
@@ -22,43 +21,43 @@ Pour commencer à utiliser AEM Content and Commerce, vous devez installer AEM Co
 
 ## Intégration {#onboarding}
 
-L’intégration pour AEM Content and Commerce est un processus en deux étapes :
+L’intégration à AEM Content and Commerce est un processus en deux étapes :
 
-1. Installation de l’Ajoute de contenu et de commerce AEM pour AEM 6.5
+1. Installation du module complémentaire Content and Commerce AEM pour AEM 6.5
 
-2. Connectez AEM à votre solution commerciale
+2. Connexion d’AEM à votre solution commerciale
 
-### Installer l&#39;Ajoute de contenu et de commerce AEM pour AEM 6.5 {#install-add-on}
+### Installez le module complémentaire Content and Commerce AEM pour AEM 6.5 {#install-add-on}
 
-Téléchargez et installez l&#39;Ajoute commerciale AEM pour AEM 6.5 à partir du portail [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+Téléchargez et installez le module complémentaire Commerce AEM pour AEM 6.5 à partir du portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-Début et installation du Service Pack AEM 6.5 requis. Nous vous recommandons d&#39;installer le dernier Service Pack disponible.
+Démarrez et installez le Service Pack d’AEM 6.5 requis. Nous vous recommandons d’installer le dernier Service Pack disponible.
 
 >[!NOTE]
 >
->Ce sera fait par le CST pour les clients AEM Service Géré.
+>Cela sera effectué par l’ingénieur du service client pour les clients AEM Managed Service.
 
-### Connectez AEM à votre système commercial {#connect}
+### Connexion d’AEM à votre système Commerce {#connect}
 
-AEM peut être connecté à tout système commercial qui dispose d&#39;un point de terminaison GraphQL accessible pour AEM. Ces points de terminaison sont généralement accessibles au public ou peuvent être connectés via un VPN privé ou des connexions locales selon la configuration du projet individuel.
+AEM peut être connecté à n’importe quel système commercial disposant d’un point d’entrée GraphQL accessible pour AEM. Ces points de terminaison sont généralement disponibles publiquement ou peuvent être connectés via des connexions VPN privées ou locales selon la configuration du projet individuel.
 
-Vous pouvez éventuellement fournir un en-tête d’authentification pour utiliser des fonctions CIF supplémentaires nécessitant une authentification.
+En option, l’en-tête d’authentification peut être fourni pour utiliser des fonctionnalités CIF supplémentaires nécessitant une authentification.
 
-Les projets générés par l&#39;archétype de projet [AEM ](https://github.com/adobe/aem-project-archetype) et le magasin de référence [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) qui est déjà inclus dans la configuration [par défaut](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) doivent être ajustés.
+Les projets générés par [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) et le [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) qui est déjà inclus dans la [configuration par défaut](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) doivent être ajustés.
 
-Remplacez la valeur de `url` dans `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` par le point de terminaison GraphQL de votre système commercial. Cette configuration peut être effectuée via la console OSGI ou en déployant la configuration OSGI via le projet. Différentes configurations pour les systèmes d’évaluation et de production sont prises en charge à l’aide de différents modes d’exécution AEM.
+Remplacez la valeur de `url` dans `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` par le point d’entrée GraphQL de votre système commercial. Cette configuration peut être effectuée via la console OSGI ou en déployant la configuration OSGI via le projet. Les différentes configurations pour les systèmes d’évaluation et de production sont prises en charge à l’aide de différents modes d’exécution AEM.
 
-L’Ajoute de contenu et de commerce AEM et les composants principaux CIF utilisent à la fois AEM connexions côté serveur et côté client. Les composants principaux CIF côté client et les outils de création CIF Ajoute-On se connectent par défaut à `/api/graphql`. Si nécessaire, cette option peut être ajustée via la configuration du Cloud Service CIF (voir ci-dessous).
+Le module complémentaire Content and Commerce AEM et les composants principaux CIF utilisent AEM connexions côté serveur et côté client. Les composants principaux CIF côté client et les outils de création de module complémentaire CIF se connectent par défaut à `/api/graphql`. Cela peut être ajusté via la configuration du Cloud Service CIF si nécessaire (voir ci-dessous).
 
-L&#39;Ajoute CIF-On fournit une servlet proxy GraphQL à l&#39;adresse `/api/graphql` qui peut éventuellement être utilisée pour le [développement local](develop.md). Pour les déploiements de production, il est fortement recommandé de configurer un proxy inverse vers le point de terminaison GraphQL de commerce via le répartiteur d&#39;AEM ou à d&#39;autres couches du réseau (comme CDN).
+Le module complémentaire CIF fournit une servlet proxy GraphQL à l’adresse `/api/graphql` qui peut éventuellement être utilisée pour le [développement local](develop.md). Pour les déploiements de production, il est vivement recommandé de configurer un proxy inverse vers le point d’entrée GraphQL de commerce via le Dispatcher AEM ou sur d’autres couches réseau (comme CDN).
 
 ## Configuration de magasins et de catalogues {#catalog}
 
-L&#39;Ajoute-On et les [Composants principaux du FIC](https://github.com/adobe/aem-core-cif-components) peuvent être utilisés sur plusieurs structures de site AEM reliées à différents magasins commerciaux (ou vues de stockage, etc.). Par défaut, l&#39;Ajoute CIF est déployée avec une configuration par défaut se connectant au magasin et au catalogue par défaut d&#39;Adobe Commerce (Magento).
+Le module complémentaire et les [composants principaux CIF](https://github.com/adobe/aem-core-cif-components) peuvent être utilisés sur plusieurs structures de site AEM connectées à différents magasins de commerce (ou vues de magasin, etc.). Par défaut, le module complémentaire CIF est déployé avec une configuration par défaut se connectant au magasin et au catalogue par défaut d’Adobe Commerce (Magento).
 
 Cette configuration peut être ajustée pour le projet via la configuration du Cloud Service CIF en procédant comme suit :
 
-1. Dans AEM accédez à Outils -> Cloud Services -> Configuration CIF
+1. Dans AEM, accédez à Outils -> Cloud Services -> Configuration CIF.
 
 2. Sélectionnez la configuration commerciale à modifier.
 
@@ -68,24 +67,24 @@ Cette configuration peut être ajustée pour le projet via la configuration du C
 
 Les propriétés suivantes peuvent être configurées :
 
-- Client GraphQL : sélectionnez le client GraphQL configuré pour la communication d&#39;arrière-plan de commerce. En règle générale, cette option doit rester par défaut.
-- Vue de stockage : identifiant (Magento) de vue de stockage. Si elle est vide, la vue de stockage par défaut est utilisée.
-- Chemin d&#39;accès du proxy GraphQL : chemin d&#39;accès de l&#39;URL Proxy GraphQL dans AEM utilisé pour les demandes de proxy au point de terminaison GraphQL principal du commerce.
+- Client GraphQL : sélectionnez le client GraphQL configuré pour la communication du serveur principal Commerce. Cela doit généralement rester par défaut.
+- Affichage de magasin : identifiant de vue de magasin (Magento). Si cette valeur est vide, la vue de magasin par défaut est utilisée.
+- Chemin du proxy GraphQL : chemin d’URL du proxy GraphQL dans AEM utilisé pour les requêtes proxy vers le point d’entrée GraphQL principal du commerce.
    >[!NOTE]
    >
-   > Dans la plupart des configurations, la valeur par défaut `/api/graphql` ne doit pas être modifiée. Seule une configuration avancée n&#39;utilisant pas le proxy GraphQL fourni doit modifier ce paramètre.
-- Activer la prise en charge de l&#39;UID du catalogue : activez la prise en charge de l&#39;UID plutôt que de l&#39;ID dans les appels GraphQL d&#39;arrière-plan du commerce.
+   > Dans la plupart des configurations, la valeur par défaut `/api/graphql` ne doit pas être modifiée. Seule la configuration avancée n’utilisant pas le proxy GraphQL fourni doit modifier ce paramètre.
+- Activer la prise en charge de l’UID du catalogue : activez la prise en charge de l’UID au lieu de l’ID dans les appels GraphQL du serveur principal de commerce.
    >[!NOTE]
    >
-   > La prise en charge des UID a été introduite dans Adobe Commerce (Magento) 2.4.2. Activez cette option uniquement si votre serveur principal de commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
-- Identifiant de Catégorie racine du catalogue - identifiant (UID ou ID) de la racine du catalogue de stockage
+   > La prise en charge des UID a été introduite dans Adobe Commerce (Magento) 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+- Identifiant de catégorie racine du catalogue : l’identifiant (UID ou ID) de la racine du catalogue du magasin.
 
 La configuration illustrée ci-dessus est à titre de référence. Les projets doivent fournir leurs propres configurations.
 
-Pour des configurations plus complexes à l’aide de plusieurs structures de site AEM associées à différents catalogues commerciaux, consultez le [didacticiel Configuration de plusieurs magasins de commerce](configuring/multi-store-setup.md).
+Pour des configurations plus complexes à l’aide de plusieurs structures de site AEM combinées à différents catalogues commerciaux, consultez le tutoriel [Configuration multi-magasin de commerce](configuring/multi-store-setup.md) .
 
 ## Ressources supplémentaires {#additional-resources}
 
 - [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
 - [Magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia)
-- [Configuration de plusieurs magasins commerciaux](configuring/multi-store-setup.md)
+- [Configuration multi-magasin Commerce](configuring/multi-store-setup.md)
