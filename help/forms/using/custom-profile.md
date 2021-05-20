@@ -9,30 +9,29 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 62%
 
 ---
 
-
 # Création d’un profil personnalisé pour HTML5 forms {#creating-a-custom-profile-for-html-forms}
 
-Un profil est un noeud de ressources dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu HTML5 forms pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. Un noeud de profil existe dans le dossier `/content` du référentiel JCR. Vous pouvez placer le noeud directement sous le dossier `/content` ou tout sous-dossier du dossier `/content`.
+Un profil est un noeud de ressource dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu de formulaires HTML5 pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. Un noeud de profil existe dans le dossier `/content` du référentiel JCR. Vous pouvez placer le noeud directement sous le dossier `/content` ou tout sous-dossier du dossier `/content`.
 
-Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**. Le script de rendu du noeud se trouve dans /libs/xfaforms/profil.
+Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**. Le script de rendu du noeud se trouve à l’emplacement /libs/xfaforms/profile.
 
-Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu de profil appelle le service Forms OSGi pour effectuer le rendu du formulaire demandé.
+Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le moteur de rendu de profil appelle le service Forms OSGi pour effectuer le rendu du formulaire demandé.
 
-Le script de profil se trouve dans html.jsp et html.POST.jsp pour les demandes de GET et de POST. Vous pouvez copier et modifier un ou plusieurs fichiers à remplacer pour y ajouter vos personnalisations. N&#39;apportez aucune modification statique, la mise à jour du correctif écrase ces modifications.
+Le script de profil se trouve dans html.jsp et html.POST.jsp pour les requêtes de GET et de POST. Vous pouvez copier et modifier un ou plusieurs fichiers à remplacer pour y ajouter vos personnalisations. N’effectuez aucune modification statique, la mise à jour du correctif remplace ces modifications.
 
 Un profil comporte divers modules : les modules formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp, et footer.jsp.
 
 ## formRuntime.jsp {#formruntime-jsp-br}
 
-Les modules formRuntime.jsp contiennent des références aux bibliothèques clientes. Il décrit également des méthodes pour extraire des informations sur les paramètre régionaux dans la demande et inclure les messages dans la demande. Vous pouvez inclure des libs ou des styles JavaScript personnalisés dans le fichier formRuntime.jsp.
+Les modules formRuntime.jsp contiennent des références aux bibliothèques clientes. Il décrit également des méthodes pour extraire des informations sur les paramètre régionaux dans la demande et inclure les messages dans la demande. Vous pouvez inclure des bibliothèques ou des styles JavaScript personnalisés dans le fichier formRuntime.jsp.
 
 ## config.jsp {#config-jsp}
 
@@ -40,7 +39,7 @@ Le module config.jsp contient les différentes configurations telles que les ser
 
 ## toolbar.jsp {#toolbar-jsp}
 
-Le fichier toolbar.jsp contient le code permettant de créer une barre d’outils colorée. Pour supprimer la barre d’outils, supprimez toolbar.jsp du module HTML.jsp
+Le fichier toolbar.jsp contient le code pour créer la barre d’outils colorée. Pour supprimer la barre d’outils, supprimez toolbar.jsp du module HTML.jsp
 
 ## formBody.jsp {#formbody-jsp}
 
@@ -74,12 +73,12 @@ Pour créer un profil personnalisé, procédez comme suit :
 
 Après la création d’un profil personnalisé, ajoutez les informations de rendu à ce profil. Lorsqu’il reçoit une demande pour le nouveau profil, CRX vérifie l’existence du dossier/apps pour la page JSP à générer. Créez la page JSP dans le dossier /apps.
 
-1. Dans le volet de gauche, accédez au dossier `/apps`.
+1. Dans le volet de gauche, accédez au dossier `/apps` .
 1. Cliquez avec le bouton droit sur le dossier `/apps` et choisissez de créer un dossier nommé **hrform**.
-1. Dans le dossier **hrform**, créez un dossier nommé **demo**.
+1. Dans le dossier **hrform** , créez un dossier nommé **demo**.
 1. Cliquez sur le bouton **Enregistrer tout**.
 1. Accédez à `/libs/xfaforms/profile/html.jsp` et copiez le noeud **html.jsp**.
-1. Collez le noeud **html.jsp** dans le dossier `/apps/hrform/demo` créé ci-dessus avec le même nom **html.jsp**, puis cliquez sur **Enregistrer**.
+1. Collez le noeud **html.jsp** dans le dossier `/apps/hrform/demo` créé ci-dessus avec le même nom **html.jsp** et cliquez sur **Enregistrer**.
 1. Si vous rencontrez d’autres composants du script de profil, suivez les étapes 1 à 6 pour copier les composants dans le dossier /apps/hrform/demo.
 
 1. Pour vérifier que le profil est créé, ouvrez l’URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
