@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 76%
 
 ---
-
 
 # Surveillance des déploiements d’AEM forms {#monitoring-aem-forms-deployments}
 
@@ -77,31 +76,31 @@ Vous pouvez accéder aux statistiques du MBean OperationStatistic depuis une con
 
 **Nom de domaine de l’Adobe :** dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
 
-**ServiceType :** AdobeService est le nom utilisé pour la liste de tous les services.
+**ServiceType :** AdobeService est le nom utilisé pour répertorier tous les services.
 
-**AdobeServiceName:Nom** du service ou ID du service.
+**AdobeServiceName :** nom du service ou ID du service.
 
 **Version :** version du service.
 
 **Statistiques des opérations**
 
-**Temps d’appel :** Temps nécessaire à l’exécution de la méthode. Cette valeur ne comprend pas le temps de sérialisation de la demande, de transfert du client vers le serveur et de désérialisation.
+**Invocation Time :** temps pris pour l’exécution de la méthode. Cette valeur ne comprend pas le temps de sérialisation de la demande, de transfert du client vers le serveur et de désérialisation.
 
-**Nombre d’appels :** nombre d’appels du service.
+**Invocation count :** nombre de fois où le service est appelé.
 
-**Temps moyen d’appel : temps** moyen de tous les appels exécutés depuis le démarrage du serveur.
+**Temps moyen d’appel :** temps moyen de tous les appels exécutés depuis le démarrage du serveur.
 
-**Max invocation time :** durée de l’appel le plus long qui a été exécuté depuis le démarrage du serveur.
+**Délai d’appel maximal :**  durée de l’appel le plus long qui a été exécuté depuis le démarrage du serveur.
 
-**Temps d’appel min. :** durée de l’appel le plus court qui a été exécuté depuis le démarrage du serveur.
+**Délai d’appel min.**  : durée de l’appel le plus court qui a été exécuté depuis le démarrage du serveur.
 
 **Nombre d’exceptions :** nombre d’appels ayant entraîné des échecs.
 
-**Message d’exception : message** d’erreur de la dernière exception survenue.
+**Message d’exception :** message d’erreur de la dernière exception survenue.
 
-**Date du dernier échantillonnage Heure : date** du dernier appel.
+**Date du dernier échantillonnage :** date du dernier appel.
 
-**Unité de temps :** la valeur par défaut est de milliseconde.
+**Unité de temps :** la valeur par défaut est de millisecondes.
 
 Pour activer le contrôle JMX, les serveurs d’applications ont généralement besoin d’être configurés. Veuillez consulter la documentation de votre serveur d’applications pour obtenir des informations détaillées.
 
@@ -155,4 +154,3 @@ Pour afficher les MBeans depuis JConsole, vous devez configurer les paramètres 
    ```
 
 1. Redémarrez WebSphere.
-
