@@ -3,68 +3,66 @@ title: Configuration des paramètres d’absence du bureau
 seo-title: Configuration des paramètres d’absence du bureau
 description: Configuration des paramètres d’absence du bureau
 seo-description: Configuration des paramètres d’absence du bureau
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
+# Configuration du paramètre d&#39;absence du bureau {#configure-out-of-office-settings}
 
+Si vous envisagez de vous absenter du bureau, vous pouvez spécifier les actions à entreprendre pour les tâches qui vous sont affectées pendant cette période.
 
-# Configurer le paramètre d&#39;absence du bureau {#configure-out-of-office-settings}
+Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et une heure de fin, pour l’application de vos paramètres d’absence du bureau. Si vous êtes situé dans un fuseau horaire différent de celui du serveur, le fuseau horaire utilisé est celui du client.
 
-Si vous prévoyez d’être absent du bureau, vous pouvez indiquer ce qui se passe pour les éléments qui vous sont affectés pour cette période.
+Vous pouvez définir une personne par défaut à laquelle toutes vos tâches sont envoyées. Vous pouvez également spécifier des exceptions pour que des tâches issues de processus spécifiques soient envoyées à un utilisateur différent ou pour qu’elles restent dans votre boîte de réception jusqu’à votre retour. Si la personne désignée est également absente du bureau, la tâche passe à l’utilisateur qu’elle aura désigné. Si la tâche ne peut pas être affectée à un utilisateur qui n’est pas absent du bureau, elle demeure dans votre boîte de réception.
 
-Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et une heure de fin, pour l’application de vos paramètres d’absence du bureau. Si vous vous trouvez dans un fuseau horaire différent du serveur, le fuseau horaire utilisé est celui du client.
-
-Vous pouvez définir une personne par défaut à laquelle tous vos éléments sont envoyés. Vous pouvez également spécifier des exceptions pour les éléments de processus spécifiques à envoyer à un autre utilisateur ou à rester dans votre boîte de réception jusqu’à ce que vous reveniez. Si la personne désignée est également absente du bureau, l&#39;article est envoyé à l&#39;utilisateur qu&#39;elle a désigné. Si l&#39;article ne peut pas être affecté à un utilisateur qui n&#39;est pas absent du bureau, il reste dans votre boîte de réception.
-
-Vous pouvez séparer la délégation d’éléments en fonction des modèles de processus. Par exemple, vous pouvez affecter un élément lié au flux de travail A à l’utilisateur A et affecter un élément lié au flux de travail B à l’utilisateur B.
+Vous pouvez séparer la délégation de tâches en fonction des modèles de processus. Par exemple, vous pouvez affecter une tâche liée au processus A à l’utilisateur A et affecter une tâche liée au processus B à l’utilisateur B.
 
 
 >[!NOTE]
 >
->* Lorsque vous activez le paramètre Absence du bureau, tous les éléments disponibles dans votre boîte de réception, avant d’activer ce paramètre, restent dans votre boîte de réception. Seuls les éléments reçus après l’activation du paramètre sont délégués.
->* Lorsque vous désactivez le paramètre d’absence du bureau, les éléments délégués ne vous sont pas automatiquement réaffectés. Vous pouvez utiliser la fonctionnalité de revendication pour vous affecter des éléments.
->* Lorsque l’utilisateur A délègue des éléments à l’utilisateur B et que l’utilisateur B délègue des éléments à l’utilisateur C, les éléments sont affectés uniquement à l’utilisateur C et non à l’utilisateur B.
->* Lorsqu’une boucle est présente dans l’affectation, les tâches restent avec l’utilisateur d’origine. Par exemple, lorsque l’utilisateur A délègue des éléments à l’utilisateur B, l’utilisateur C délègue des éléments à l’utilisateur C, l’utilisateur C délègue des éléments à l’utilisateur D et l’utilisateur D délègue des éléments à l’utilisateur B, une boucle est créée. Dans ce cas, l’élément reste à l’utilisateur d’origine. L’utilisateur A est l’utilisateur d’origine dans l’exemple ci-dessus.
+>* Lorsque vous activez le paramètre Absence du bureau, toutes les tâches disponibles dans votre boîte de réception avant d’activer ce paramètre restent dans votre boîte de réception. Seules les tâches reçues après l’activation du paramètre sont déléguées.
+>* Lorsque vous désactivez le paramètre Absence du bureau, les tâches déléguées ne vous sont pas automatiquement réaffectées. Vous pouvez utiliser la fonctionnalité de revendication pour que ces tâches vous soient attribuées.
+>* Lorsque l’utilisateur A délègue des tâches à l’utilisateur B et que l’utilisateur B délègue des tâches à l’utilisateur C, les tâches sont affectées uniquement à l’utilisateur C et non à l’utilisateur B.
+>* Lorsqu’une boucle est présente dans l’affectation, les tâches restent chez l’utilisateur initial. Par exemple, lorsque l’utilisateur A délègue des tâches à l’utilisateur B, l’utilisateur C délègue des tâches à l’utilisateur C, l’utilisateur C délègue des tâches à l’utilisateur D et l’utilisateur D délègue des tâches à l’utilisateur B, une boucle est créée. Dans ce cas, la tâche reste à l’utilisateur initial. L’utilisateur A est l’utilisateur initial dans l’exemple ci-dessus.
 
 
 ## Activez le paramètre Absence du bureau pour votre compte {#enable-out-of-office}
 
-Effectuez les étapes suivantes pour activer le paramètre d’absence du bureau pour votre compte et déléguez vos éléments de boîte de réception à un autre utilisateur :
+Effectuez les étapes suivantes pour activer le paramètre Absence du bureau pour votre compte et déléguez les tâches de votre boîte de réception à un autre utilisateur :
 
-1. Connectez-vous à l’instance AEM  Appuyez sur l&#39;icône ![Boîte de réception](assets/bell.svg) et appuyez sur **[!UICONTROL Vue All]**. Une liste de vos éléments de boîte de réception s’affiche.
-1. Appuyez sur l&#39;icône ![Sélecteur de Vue](assets/viewlist.svg) ou ![Sélecteur de Vue](assets/calendar.svg) en regard du bouton **[!UICONTROL Créer]** et appuyez sur **[!UICONTROL Paramètres]**. La boîte de dialogue des paramètres s’affiche.
+1. Connectez-vous à l’instance AEM. Appuyez sur l&#39;icône ![Boîte de réception](assets/bell.svg) et appuyez sur **[!UICONTROL Afficher tout]**. Une liste des tâches figurant dans votre boîte de réception s&#39;affiche.
+1. Appuyez sur l&#39;icône ![Sélecteur de Vue](assets/viewlist.svg) ou ![Sélecteur de Vue](assets/calendar.svg) à côté du bouton **[!UICONTROL Créer]** et appuyez sur **[!UICONTROL Paramètres]**. La boîte de dialogue des paramètres s&#39;affiche.
 1. Ouvrez l&#39;onglet **[!UICONTROL Absence du bureau]** dans la boîte de dialogue des paramètres.
 1. Appuyez sur le bouton **[!UICONTROL Activer/Désactiver]** pour activer le paramètre Absence du bureau.
-1. Spécifiez les paramètres **[!UICONTROL Heure de Début]** et **[!UICONTROL Heure de fin]**. Les éléments sont délégués uniquement pendant la période spécifiée. Laissez le champ **[!UICONTROL Heure de fin]** vide pour déléguer des éléments pour une période indéfinie.
-1. Cochez la case **[!UICONTROL Transférer mes éléments au cours de cette période]**. Si vous ne sélectionnez pas l’option et ne spécifiez pas de personne désignée, vos éléments ne sont transférés à aucun utilisateur. Bien que vous soyez absent et que le paramètre soit activé, les éléments restent dans votre boîte de réception.
-1. Appuyez sur **[!UICONTROL Ajouter le signataire]**. Spécifiez un utilisateur dans le champ **[!UICONTROL Personne à qui attribuer]** les éléments à qui déléguer. Spécifiez le **[!UICONTROL modèle de flux de travail]** à déléguer à l&#39;utilisateur spécifié. Vous pouvez sélectionner plusieurs modèles de processus.
+1. Spécifiez les paramètres **[!UICONTROL Heure de Début]** et **[!UICONTROL Heure de fin]**. Les tâches sont déléguées uniquement pendant la période spécifiée. Laissez le champ **[!UICONTROL Heure de fin]** vide pour déléguer des tâches pour une période indéfinie.
+1. Cochez la case **[!UICONTROL Transférer mes tâches au cours de cette période]**. Si vous ne sélectionnez pas l’option et ne spécifiez pas de personne désignée, vos tâches ne sont transférées à aucun utilisateur. Bien que vous soyez absent et que le paramètre soit activé, les tâches restent dans votre boîte de réception.
+1. Appuyez sur **[!UICONTROL Ajouter un délégataire]**. Spécifiez un utilisateur dans le champ **[!UICONTROL Délégataire]** pour lui déléguer les tâches. Spécifiez le **[!UICONTROL modèle de processus]** à déléguer à l&#39;utilisateur spécifié. Vous pouvez sélectionner plusieurs modèles de processus.
 
-   En outre, pour affecter tous les éléments, quel que soit le modèle de flux de travail, à un utilisateur particulier, sélectionnez **[!UICONTROL Tous les Workflows]** dans la liste déroulante Modèle de flux de travail. <br>
+   En outre, pour affecter toutes les tâches, quel que soit le modèle de processus, à un utilisateur particulier, sélectionnez **[!UICONTROL Tous les processus]** dans la liste déroulante Modèle de processus. <br>
 
-   Pour affecter des éléments à un utilisateur particulier pour tous les modèles de processus sauf quelques uns, sélectionnez **[!UICONTROL Tous les Workflows]** dans la liste déroulante Modèle de processus, appuyez sur **[!UICONTROL + Ajouter Exceptions]** et spécifiez les modèles de processus à exclure.
+   Pour affecter des tâches à un utilisateur particulier pour tous les modèles de processus sauf quelques-uns, sélectionnez **[!UICONTROL Tous les processus]** dans la liste déroulante Modèle de processus, appuyez sur **[!UICONTROL + Ajouter exceptions]** et spécifiez les modèles de processus à exclure.
    <br>
 
-   Répétez l’étape pour ajouter d’autres personnes désignées. <br>
+   Répétez cette étape pour ajouter d’autres délégataires. <br>
 
    >[!NOTE]
    >
-   >L&#39;ordre des personnes désignées est important. Lorsqu’un élément est affecté à un utilisateur qui a activé le paramètre d’absence du bureau, l’élément est évalué par rapport à la liste désignée dans l’ordre d’ajout des personnes désignées. Lorsqu’un élément correspond aux critères, il est affecté à la personne désignée et la personne désignée suivante n’est pas cochée.
+   >L&#39;ordre des délégataires est important. Lorsqu’une tâche est affectée à un utilisateur qui a activé le paramètre Absence du bureau, la tâche est évaluée par rapport à la liste des délégataires dans leur ordre d&#39;ajout. Lorsqu’une tâche correspond aux critères, elle est affectée au délégataire et le délégataire suivant n’est pas coché.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**. Ce paramètre prend effet à la date et à l’heure de début spécifiées. Si vous vous connectez pendant que vous êtes absent du bureau, vous êtes toujours considéré comme absent du bureau jusqu’à ce que vous ayez modifié vos paramètres.
 
-Désormais, les éléments qui vous sont affectés au cours de la période d’absence du bureau sont automatiquement affectés à la personne désignée.
-![Absence de bureau](assets/out-of-office.png)
+Désormais, les tâches qui vous sont affectées au cours de la période d’absence du bureau sont automatiquement affectées au délégataire spécifié.
+![Absence du bureau](assets/out-of-office.png)
 
 >[!NOTE]
 >
->(Pour les éléments de flux de travaux centrés sur Forms uniquement) Activez l&#39;option **Autoriser les personnes désignées à déléguer à l&#39;aide des paramètres &quot;Absence du bureau&quot;** de l&#39;étape **Attribuer la tâche** du flux de travaux. Seuls les éléments pour lesquels l’option ci-dessus est activée sont délégués à d’autres utilisateurs.
+>(Pour les éléments de processus orientés formulaire uniquement) Activez l&#39;option **Autoriser les délégataires à déléguer à l&#39;aide des paramètres « Absence du bureau »** de l&#39;étape **Attribuer la tâche** du processus. Seules les tâches pour lesquelles l’option ci-dessus est activée sont déléguées à d’autres utilisateurs.
 
 ## Restrictions {#limitations}
 
-* L’affectation d’éléments à un groupe n’est pas prise en charge.
-* L’activation de l’absence du bureau pour les tâches de projet n’est actuellement pas prise en charge.
+* L’affectation de tâches à un groupe n’est pas prise en charge.
+* L’activation du paramètre Absence du bureau pour les tâches de projet n’est actuellement pas prise en charge.
