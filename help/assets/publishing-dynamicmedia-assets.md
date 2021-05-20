@@ -1,6 +1,6 @@
 ---
 title: Publication de ressources Dynamic Media
-description: Publication de fichiers Dynamic Media
+description: Publication de ressources Dynamic Media
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,8 +9,7 @@ content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
-feature: Publishing
-translation-type: tm+mt
+feature: Publication
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '462'
@@ -20,9 +19,9 @@ ht-degree: 87%
 
 # Publication de ressources Dynamic Media {#publishing-dynamic-media-assets}
 
-Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide.]** Une fois vos fichiers Dynamic Media publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant le code sur la page.
+Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide.]** Une fois vos ressources Dynamic Media publiées, vous pouvez les inclure dans une page web au moyen d’une URL ou en incorporant le code sur la page.
 
-Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Voir [Configuration du mode Dynamic Media - Scene7.](config-dms7.md)
+Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Voir [Configuration de Dynamic Media - mode Scene7.](config-dms7.md)
 Vous pouvez également publier des ressources de manière sélective sur Dynamic Media exclusivement ou sur AEM exclusivement, à l’aide d’une **[!UICONTROL Publication sélective]** au niveau des dossiers. Voir [Utilisation de la publication sélective dans Dynamic Media.](/help/assets/selective-publishing.md)
 
 En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource et à gauche de la date et de l’heure pour indiquer qu’elle est publiée. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
@@ -35,7 +34,7 @@ Si vous envisagez de publier des ressources vidéo immédiatement après les avo
 
 Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-Voir aussi [Incorporation de la visionneuse de vidéos ou d’images Dynamic Media sur une page Web](embed-code.md)
+Voir aussi [Incorporation de la visionneuse de vidéos ou d’images Dynamic Media dans une page web](embed-code.md)
 
 >[!NOTE]
 >
