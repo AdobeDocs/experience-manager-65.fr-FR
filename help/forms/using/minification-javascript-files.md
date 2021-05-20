@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: d88c6831-8ae9-426d-acb5-2a7e066ad158
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 85%
 
 ---
-
 
 # Minimisation des fichiers JavaScript {#minification-of-the-javascript-files}
 
@@ -24,13 +23,13 @@ La minimisation supprime du code source les caractères redondants, comme les es
 
 Pour générer un code minimisé pour les modifications sémantiques, effectuez les étapes suivantes.
 
-1. Copiez `client-html/src/main/webapp/js` du paquet src sur le système de fichiers.
+1. Copiez `client-html/src/main/webapp/js` du package src sur le système de fichiers.
 
    >[!NOTE]
    >
    >Voir [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour plus d’informations sur les paquets.
 
-1. Mettez à jour les chemins dans `main.js` situé sous client-html/src/main/webapp/js, pour les modèles/vues ajoutés/mis à jour.
+1. Mettez à jour les chemins dans `main.js` situé sous client-html/src/main/webapp/js, pour les vues/modèles ajoutés/mis à jour.
 
    Par exemple, pour ajouter un nouveau modèle Sharequeue, par exemple mySharequeue, modifiez :
 
@@ -44,7 +43,7 @@ Pour générer un code minimisé pour les modifications sémantiques, effectuez 
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Mettez à jour `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` en cas de modification/ajout d&#39;alias dans `main.js`.
+1. Mettez à jour `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` en cas de changement/ajout d’alias dans `main.js`.
 
    Par exemple, pour ajouter un nouveau modèle Sharequeue, par exemple mySharequeue, modifiez :
 
