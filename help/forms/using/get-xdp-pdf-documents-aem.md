@@ -10,14 +10,13 @@ topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '708'
 ht-degree: 93%
 
 ---
-
 
 # Obtention de documents XDP et PDF dans AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
@@ -29,7 +28,7 @@ Vous pouvez importer vos formulaires depuis votre système de fichiers local ver
 * Formulaires PDF
 * Document (documents PDF aplatis)
 
-Vous pouvez transférer les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez télécharger un fichier de type `Resource`, uniquement en regard d’un formulaire XFA dans une archive ZIP.
+Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez télécharger une ressource de type `Resource`, uniquement à côté d’un formulaire XFA dans une archive ZIP.
 
 >[!NOTE]
 >
@@ -37,7 +36,7 @@ Vous pouvez transférer les types de ressource pris en charge individuellement o
 
 ## Chargement de formulaires {#uploading-forms}
 
-1. Connectez-vous à l’interface utilisateur AEM Forms en accédant à `https://'[server]:[port]'/aem/forms.html`.
+1. Connectez-vous à l’interface utilisateur d’AEM Forms en accédant à `https://'[server]:[port]'/aem/forms.html`.
 1. Accédez au dossier vers lequel vous souhaitez transférer le formulaire ou le dossier contenant des formulaires.
 1. Dans la barre d’outils des actions, appuyez sur **Créer > Chargement de fichier**.
 
@@ -89,4 +88,3 @@ La suppression d’un modèle de formulaire altère le formulaire adaptatif ou l
 Un indicateur est conservé pour indiquer si un formulaire adaptatif est de type « dirty ». Ces informations sont disponibles sur la page de propriétés du formulaire, avec les métadonnées du formulaire. Uniquement pour les formulaires adaptatifs non conformes, une propriété de métadonnées `Model Refresh` affiche la valeur `Recommended`.
 
 ![Indication d’un formulaire adaptatif désynchronisé par rapport au modèle XFA](assets/model-refresh.png)
-
