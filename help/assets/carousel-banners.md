@@ -11,7 +11,6 @@ docset: aem65
 feature: Bannières de carrousel
 role: Business Practitioner, Administrator
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '4804'
@@ -284,12 +283,12 @@ Voir aussi [Ajout de zones cliquables](/help/assets/image-maps.md).
 
    * Appuyez sur **[!UICONTROL Aperçu rapide.]**
 
-      * Si vous êtes client AEM Sites et eCommerce, appuyez sur l’icône Sélecteur de produits (loupe) pour ouvrir la page Sélectionner un produit. Appuyez sur le produit à utiliser, puis sur la coche dans le coin supérieur droit de la page pour revenir à l’éditeur de bannière de carrousel.
+      * Si vous êtes client AEM Sites et eCommerce, appuyez sur l’icône Sélecteur de produit (loupe) pour ouvrir la page Sélectionner un produit . Appuyez sur le produit à utiliser, puis sur la coche dans le coin supérieur droit de la page pour revenir à l’éditeur de bannière de carrousel.
       * Si vous n’êtes pas client AEM Sites ou eCommerce
 
          * Voir [Identification des variables de zone réactive](#identifying-hotspot-and-image-map-variables), car vous souhaitez peut-être définir ces variables.
          * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur de SKU, entrez la SKU, qui est un identifiant unique pour chaque produit ou service que vous proposez. La valeur de SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
-         * (Facultatif) Si d&#39;autres variables de la vue rapide doivent être utilisées pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique.]** Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, category=Mens est une variable ajoutée.
+         * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide dont vous avez besoin pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique.]** Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, category=Mens est une variable ajoutée.
 
          * Pour plus d’informations, voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
    * Appuyez sur **[!UICONTROL Lien hypertexte.]**
