@@ -1,30 +1,29 @@
 ---
-title: Composants, fonctions et caractéristiques essentielles
-seo-title: Composants, fonctions et caractéristiques essentielles
-description: Fonctionnement des sites, modèles et groupes de la communauté
-seo-description: Fonctionnement des sites, modèles et groupes de la communauté
+title: Notions fondamentales sur les composants, les fonctions et les fonctionnalités
+seo-title: Notions fondamentales sur les composants, les fonctions et les fonctionnalités
+description: Fonctionnement des sites, modèles et groupes de communautés
+seo-description: Fonctionnement des sites, modèles et groupes de communautés
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 18%
 
 ---
 
+# Notions fondamentales sur les composants, les fonctions et les fonctionnalités {#component-function-and-feature-essentials}
 
-# Composants, fonctions et caractéristiques essentielles {#component-function-and-feature-essentials}
+Les fonctionnalités d’AEM Communities exigent que les visiteurs du site deviennent membres et se connectent au [site de la communauté](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, les [modèles de site communautaire](sites.md), à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion ainsi que des profils utilisateur, des messages, des recherches, de la modération et des traductions.
 
-Les fonctionnalités AEM Communities exigent que les visiteurs du site deviennent membres et se connectent au [site communautaire](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, les [modèles de site communautaire](sites.md), à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion ainsi que des profils d&#39;utilisateur, la messagerie, la recherche, la modération et la traduction.
+Un site communautaire prend en charge la création de groupes communautaires lorsque les [groupes communautaires fonctionnent](functions.md#groups-function) sont inclus dans le modèle de site communautaire sélectionné.
 
-Un site communautaire aidera les membres à créer des groupes communautaires lorsque les [groupes communautaires fonctionnent](functions.md#groups-function) sont inclus dans le modèle de site communautaire sélectionné.
-
-Vous trouverez ci-dessous des liens vers des informations essentielles sur les composants, fonctions et fonctionnalités des Communautés.
+Vous trouverez ci-dessous des liens vers des informations essentielles pour les composants, fonctions et fonctionnalités de Communities.
 
 ## Composants de base {#base-components}
 
@@ -35,7 +34,7 @@ Vous trouverez ci-dessous des liens vers des informations essentielles sur les c
    * [Aimer](essentials-liking.md)
    * [Évaluation](rating-basics.md)
    * [Vote](essentials-voting.md)
-   * *Sondage (plus disponible)*
+   * *Sondage (n’est plus disponible)*
 
 ## Composants avec fonctions {#components-with-functions}
 
@@ -57,33 +56,32 @@ Vous trouverez ci-dessous des liens vers des informations essentielles sur les c
 
 * [Bibliothèques clientes](clientlibs.md)
 * [Sites communautaires](sites-for-developers.md)
-* [Événements OSGi de composant](events.md)
+* [Événements OSGi des composants](events.md)
 * [Chargement partiel des composants](sideloading.md)
 * [Message](essentials-messaging.md)
 * [Éditeur de texte enrichi](rte.md)
-* [Scores et insignes](configure-scoring.md)
+* [Notation et badges](configure-scoring.md)
 * [Rechercher](search-implementation.md)
 * [Graphique des réseaux sociaux](essentials-socialgraph.md)
-* [Fournisseur de ressources d&#39;Enregistrement](srp-and-ugc.md) `(SRP)`
+* [Fournisseur de ressources de stockage](srp-and-ugc.md) `(SRP)`
 
 * [Balisage](tag.md)
 
 ## Javadocs {#javadocs}
 
-Les [javadocs en ligne](../../help/sites-developing/reference-materials.md) reflètent les API disponibles dans la version AEM 6.3.
-Les API de communautés se trouvent dans des packages `com.adobe.cq.social.*`.
+Les [javadocs en ligne](../../help/sites-developing/reference-materials.md) reflètent les API disponibles dans la version 6.3 d’AEM.
+Les API Communities se trouvent dans les packages `com.adobe.cq.social.*`.
 
-Pour chaque [feature pack](deploy-communities.md#latestfeaturepack), un javadoc jar est disponible. Pour plus d&#39;informations, consultez [Utilisation de Maven pour les communautés](maven.md#javadocs).
+Pour chaque [Feature Pack](deploy-communities.md#latestfeaturepack), un jar javadoc est disponible. Pour plus d’informations, voir [Utilisation de Maven pour Communities](maven.md#javadocs).
 
 ## Informations supplémentaires {#additional-information}
 
-* [Cadre des composants sociaux (SCF)](scf.md)
+* [Structure des composants sociaux (SCF)](scf.md)
 
    * [Personnalisations côté client](client-customize.md)
    * [Personnalisations côté serveur](server-customize.md)
-   * [Présentation du fournisseur de ressources d&#39;Enregistrement](srp.md)
+   * [Présentation du fournisseur de ressources de stockage](srp.md)
 
 * [Consignes de codage](code-guide.md)
 * [Tutoriels](tutorials.md)
-* [Résolution des incidents](troubleshooting.md)
-
+* [Résolution des problèmes](troubleshooting.md)
