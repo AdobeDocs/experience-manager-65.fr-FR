@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 72%
 
 ---
-
 
 # Débogage des formulaires HTML5 {#debugging-html-forms}
 
@@ -59,12 +58,12 @@ Vérifiez les paramètres suivants :
 ## Problème : impossible d&#39;effectuer le rendu d&#39;un formulaire (un message d’erreur s’affiche) {#problem-unable-to-render-form}
 
 1. Assurez-vous que les paramètres indiqués sont corrects. Pour plus d’informations sur les paramètres, voir [Paramètres de rendu](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
-1. Connectez-vous à CRX Package Manager (à l’adresse https://&lt;serveur>:&lt;port>/crx/packmgr/index.jsp) et vérifiez si les packages suivants sont correctement installés :
+1. Connectez-vous au gestionnaire de modules CRX (à l’adresse https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) et vérifiez que les modules suivants sont correctement installés :
 
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. Connectez-vous à la console Web CQ (console Felix) à l’adresse https://&lt;serveur>:&lt;port>/system/console/bundles.
+1. Connectez-vous à la console web CQ (console Felix) à l’adresse https://&lt;serveur>:&lt;port>/system/console/bundles.
 
     Assurez-vous que l’état des bundles suivants est « actif » :
 
@@ -72,7 +71,7 @@ Vérifiez les paramètres suivants :
 
    (com.adobe.livecyclescala-lang.bundle)
 
-   * Adobe de rendu XFA Forms
+   * Adobe du moteur de rendu XFA Forms
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
@@ -82,8 +81,8 @@ Vérifiez les paramètres suivants :
 
 ## Problème : le rendu des formulaires ne prend pas les styles en compte {#problem-form-renders-without-styles}
 
-1. Dans votre navigateur, ouvrez **Outils de développement**. Assurez-vous que profil.css est disponible.
-1. Si le fichier profil.css n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;serveur>:&lt;port>/crx/de.
+1. Dans votre navigateur, ouvrez **Outils de développement**. Vérifiez que profile.css est disponible.
+1. Si le fichier profile.css n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;server>:&lt;port>/crx/de.
 1. Dans la hiérarchie de dossiers sur la gauche, accédez à /etc/clientlibs/fd/xfaforms/. Ouvrez les fichiers css.txt répertoriés dans les fichiers.
 
    * son profil
@@ -107,7 +106,7 @@ Vérifiez les paramètres suivants :
 
 ### Problème : erreur inattendue rencontrée {#problem-unexpected-error-encountered}
 
-1. Dans l’URL du formulaire, ajoutez un paramètre de requête debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;serveur>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;chemin d’accès>&amp;template=&lt;nom du fichier xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. Dans l’URL du formulaire, ajoutez un paramètre de requête debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;serveur>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Dans le navigateur de bureau, comme Chrome, accédez à Outils de développement -> Console.
 1. Ouvrez les journaux pour identifier le type d’erreur. Pour plus d’informations sur les journaux, voir [journaux des formulaires HTML5](/help/forms/using/enable-logs.md).
 1. Accédez à Outils de développement -> Console. Utilisez la trace de pile pour localiser le code qui déclenche l’erreur. Corrigez l’erreur pour résoudre le problème.
@@ -120,13 +119,13 @@ Vérifiez les paramètres suivants :
 
 1. Assurez-vous de disposer des droits d’accès au serveur AEM et d’être connecté au serveur.
 1. Vérifiez que le paramètre submitUrl est correct.
-1. Activez les journaux côté client comme mentionné à la section [Journaux pour les formulaires HTML5](/help/forms/using/enable-logs.md) en utilisant l’option de débogage comme **1-a5-b5-c5**. Puis lancez le rendu du formulaire et cliquez sur envoyer. Ouvrez la console de dépannage du navigateur et vérifiez s’il se produit une erreur.
+1. Activez les journaux côté client comme mentionné à la section [Journaux pour les formulaires HTML5](/help/forms/using/enable-logs.md) à l’aide de l’option de débogage comme **1-a5-b5-c5**. Puis lancez le rendu du formulaire et cliquez sur envoyer. Ouvrez la console de dépannage du navigateur et vérifiez s’il se produit une erreur.
 1. Recherchez les journaux du serveur comme expliqué dans la section [Journaux des formulaires HTML5](/help/forms/using/enable-logs.md). Vérifiez si une erreur s’est produite dans les journaux du serveur pendant l’envoi.
 
 ## Problème : les messages d’erreur localisés ne s’affichent pas  {#problem-localized-error-messages-do-not-display}
 
 1. Effectuez le rendu du formulaire avec un paramètre de requête supplémentaire **debugClientLibs=true** dans le navigateur de bureau, puis accédez à Outils de développement -> Ressources et vérifiez le fichier I18N.css.
-1. Si le fichier n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;serveur>:&lt;port>/crx/de.
+1. Si le fichier n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;server>:&lt;port>/crx/de.
 1. Dans la hiérarchie des dossiers sur la gauche, accédez à /libs/fd/xfaforms/clientlibs/I18N et assurez-vous que les fichiers et dossiers suivants existent :
 
    * Namespace.js
@@ -165,7 +164,7 @@ Texte de l’étape
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>template</td>
+   <td>modèle</td>
    <td>Nom de fichier du modèle</td>
   </tr>
   <tr>
