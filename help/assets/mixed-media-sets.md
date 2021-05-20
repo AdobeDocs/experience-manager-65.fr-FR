@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
-feature: Mix Media Sets,Asset Management
+feature: Combiner des visionneuses de médias, Gestion des ressources
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 97%
+source-wordcount: '1470'
+ht-degree: 98%
 
 ---
-
 
 # Visionneuses de médias mixtes {#mixed-media-sets}
 
@@ -29,7 +28,7 @@ Les visionneuses de médias mixtes sont désignées par une bannière contenant 
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur Ressources, voir [Gestion des ressources](/help/assets/manage-assets.md).
+>Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources](/help/assets/manage-assets.md).
 
 ## Démarrage rapide : Visionneuses de médias mixtes {#quick-start-mixed-media-sets}
 
@@ -73,7 +72,7 @@ Le cas échéant, vous pouvez modifier une [visionneuse de médias mixtes](#edit
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes lors de la création de visionneuses, voir [Dépannage de Dynamic Media - Mode Scene7](/help/assets/troubleshoot-dms7.md).
+>Si vous rencontrez des problèmes lors de la création des visionneuses, voir [Dépannage de Dynamic Media - mode Scene7](/help/assets/troubleshoot-dms7.md).
 
 ## Chargement des ressources {#uploading-assets}
 
@@ -180,4 +179,3 @@ Pour obtenir des informations sur la publication d’une visionneuse de médias 
 >[!NOTE]
 >
 >Si la visionneuse de médias mixtes n’apparaît pas complètement dans le service de diffusion la première fois que vous la publiez, vous devrez peut-être la publier une seconde fois.
-
