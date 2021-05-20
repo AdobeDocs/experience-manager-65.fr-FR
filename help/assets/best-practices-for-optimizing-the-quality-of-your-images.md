@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
-feature: Asset Management
+feature: Gestion des ressources
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 96%
+source-wordcount: '1451'
+ht-degree: 97%
 
 ---
-
 
 # Bonnes pratiques relatives à l’optimisation de la qualité des images {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -74,7 +73,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
       Rubrique d’aide d’AEM sur l’accentuation d’une image.
 
-      Livre blanc des meilleures pratiques [Accentuation des images dans l’Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+      Livre blanc des bonnes pratiques [Accentuation des images dans Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
    * AEM permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/intensité de l’image en utilisant la valeur 1.
 
@@ -90,7 +89,7 @@ Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne correspon
 
 Laissez le paramètre monochrome sur 0.
 
-### Recommandations relatives à la compression JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
+### Bonnes pratiques relatives à la compression JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
 * Ce paramètre contrôle la qualité du codage JPG. Une valeur élevée produit une image de meilleure qualité, mais un fichier plus volumineux ; en revanche, une valeur faible signifie une image de qualité inférieure mais un fichier plus petit. Ce paramètre est compris entre 0 et 100.
 * Pour optimiser la qualité, ne définissez pas la valeur du paramètre sur 100. La différence entre une valeur de 90, 95 ou 100 est presque imperceptible. Par contre, la valeur 100 augmente de manière inutile la taille du fichier image. En conséquence, pour optimiser la qualité, mais éviter que les fichiers image deviennent trop volumineux, définissez `qlt= value` sur 90 ou 95.
@@ -108,7 +107,7 @@ La bonne pratique pour la compression JPG consiste à utiliser `&qlt=85,0`.
 Le paramètre jpegSize est utile pour garantir qu’une image n’excède pas une certaine taille pour sa diffusion sur les appareils dont la mémoire est limitée.
 
 * Ce paramètre est défini en kilo-octets (`jpegSize=&lt;size_in_kilobytes&gt;`). Il définit la taille maximale autorisée pour la diffusion de l’image.
-* `&jpegSize=` interagit avec le paramètre de compression JPG `&qlt=`. Si la réponse JPG avec le paramètre de compression JPG spécifié (`&qlt=`) ne dépasse pas la valeur jpegSize, l’image est renvoyée avec `&qlt=` comme défini. Sinon, `&qlt=` est graduellement diminué jusqu’à ce que l’image soit ajustée à la taille maximale autorisée ou jusqu’à ce que le système détermine qu’il ne peut pas procéder à l’ajustement et renvoie une erreur.
+* `&jpegSize=` interagit avec le paramètre de compression JPG `&qlt=`. Si la réponse JPG avec le paramètre de compression JPG spécifié (`&qlt=`) ne dépasse pas la valeur jpegSize, l’image est renvoyée avec la valeur `&qlt=` définie. Sinon, `&qlt=` est graduellement diminué jusqu’à ce que l’image soit ajustée à la taille maximale autorisée ou jusqu’à ce que le système détermine qu’il ne peut pas procéder à l’ajustement et renvoie une erreur.
 
 Une bonne pratique consiste à définir `&jpegSize=` et à ajouter le paramètre `&qlt=` si vous diffusez des images JPG vers des appareils dont la mémoire est limitée.
 
@@ -129,4 +128,3 @@ Tandis que vous testez différentes valeurs, vous trouverez peut-être égalemen
 * Testez différents paramètres en temps réel, directement sur une URL.
 * Gardez à l’esprit que vous pouvez regrouper les commandes de diffusion d’images Dynamic Media dans un paramètre d’image prédéfini. Il s’agit en outre d’une bonne pratique. Un paramètre d’image prédéfini est, en fait, constitué de macros de commande d’URL avec des noms de paramètres prédéfinis personnalisés tels que `$thumb_low$` et `&product_high$`. Le nom du paramètre prédéfini personnalisé d’un chemin URL appelle ces paramètres prédéfinis. Cette fonctionnalité vous aide à gérer les commandes et les paramètres de qualité pour différents modèles d’utilisation des images sur vos sites web et raccourcit la longueur globale des URL.
 * AEM propose également des méthodes plus élaborées permettant d’optimiser la qualité des images, par exemple en accentuant les images lors de l’assimilation. Pour les cas d’utilisation plus complexes où il peut s’avérer nécessaire d’affiner et d’optimiser le rendu, n’hésitez pas à faire appel à [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
-
