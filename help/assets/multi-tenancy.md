@@ -1,32 +1,31 @@
 ---
-title: Multi-tenanciation pour les collections, les extraits de code et les modèles de fragments de code
-description: Découvrez comment la fonction de multipropriété vous permet de séparer le contenu dans le référentiel CRX en fonction de l’entreprise cliente afin d’empêcher tout accès non autorisé.
+title: Multi-location pour les collections, les fragments de code et les modèles de fragments de code
+description: Découvrez comment la fonctionnalité multi-tenant vous permet de séparer le contenu dans le référentiel CRX en fonction de l’organisation du client afin d’empêcher tout accès non autorisé.
 contentOwner: AG
 role: Architect, Administrator, Leader
 feature: Collections
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 3%
 
 ---
 
+# Multi-location pour les collections, les fragments de code et les modèles de fragments de code {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
-# Multi-tenanciation pour les collections, les extraits de code et les modèles de fragment de code {#multi-tenancy-for-collections-snippets-and-snippet-templates}
+La fonctionnalité multi-tenant vous permet de séparer le contenu dans CRX en fonction du préfixe de l’organisation et de l’ID d’organisation afin de protéger le contenu contre tout accès non autorisé par les utilisateurs d’autres organisations.
 
-La fonction de multipropriété vous permet de séparer le contenu dans CRX en fonction du préfixe et de l’ID d’organisation afin de protéger le contenu contre un accès non autorisé des utilisateurs d’autres organisations.
-
-[!DNL Adobe Experience Manager Assets] stocke les données de chaque organisation dans un chemin différent. Chaque chemin spécifique à l&#39;organisation est identifié par le préfixe et l&#39;ID d&#39;organisation de l&#39;organisation.
+[!DNL Adobe Experience Manager Assets] stocke les données de chaque organisation dans un chemin d’accès différent. Chaque chemin spécifique à l’organisation est identifié par le préfixe de l’organisation et l’ID d’organisation.
 qui est inclus dans l’emplacement traditionnel où différents types de ressources sont stockés dans CRX.
 
-Par exemple, si vous créez un dossier nommé `Demo`, les ressources [!DNL Experience Manager] stockent généralement le dossier à `../content/dam/Demo`. Avec l’option multi-tenancy activée, vous pouvez désormais stocker les données à `../content/dam/<organization prefix>/<organization id>Demo`
+Par exemple, si vous créez un dossier nommé `Demo`, les ressources [!DNL Experience Manager] stockent traditionnellement le dossier à `../content/dam/Demo`. Lorsque la multi-location est activée, vous pouvez désormais stocker les données à l’adresse `../content/dam/<organization prefix>/<organization id>Demo`
 
-Par exemple, si, pour [!DNL Adobe Marketing Cloud] utilisateurs de [!DNL Assets] (sur demande) affectés à l&#39;organisation `aodpremium`, vous pouvez utiliser la fonction de multilocation pour configurer le chemin `../content/dam/<mac>/<aodpremium>Demo` afin de séparer leur contenu. Dans cet exemple, `mac` est le préfixe d&#39;organisation et `aodpremium` l&#39;ID d&#39;organisation.
+Par exemple, si, pour [!DNL Adobe Marketing Cloud] utilisateurs de [!DNL Assets] (à la demande) affectés à l’organisation `aodpremium`, vous pouvez utiliser la fonction multi-location pour configurer le chemin `../content/dam/<mac>/<aodpremium>Demo` afin de séparer leur contenu. Dans cet exemple, `mac` est le préfixe de l’organisation et `aodpremium` est l’ID d’organisation.
 
-En fonction de l&#39;organisation et de l&#39;ID de l&#39;utilisateur, ce chemin d&#39;accès qualifié s&#39;affiche dans l&#39;interface [!DNL Assets] et dans divers assistants, y compris les assistants de création de déplacement et d&#39;extrait de code pour appliquer la ségrégation.
+En fonction de l’organisation et de l’identifiant de l’utilisateur, ce chemin d’accès qualifié est affiché dans l’interface [!DNL Assets] et dans divers assistants, y compris les assistants Déplacer et Création de fragments de code pour appliquer la ségrégation.
 
-La fonction de multilocation vous permet de séparer les types d’actifs et de composants suivants :
+La fonctionnalité multiclient permet de séparer les types de ressources et de composants suivants :
 
 * Collections
 * Collections publiques
