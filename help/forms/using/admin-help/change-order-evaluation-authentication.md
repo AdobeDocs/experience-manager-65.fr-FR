@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 91%
 
 ---
-
 
 # Modification de l’ordre d’évaluation pour l’authentification {#change-the-order-of-evaluation-for-authentication}
 
@@ -44,8 +43,7 @@ Si vous avez configuré plusieurs fournisseurs d’authentification, vous pouvez
     </node>
    ```
 
-   Dans `<entry key="order" value="3" />`, modifiez la valeur de chaque noeud afin de définir l’ordre de l’évaluation de l’authentification.
+   Dans `<entry key="order" value="3" />`, modifiez la valeur de chaque noeud pour définir l’ordre de l’évaluation de l’authentification.
 
 1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
 1. Cliquez sur Parcourir pour rechercher le fichier, sur Importer, puis sur OK.
-
