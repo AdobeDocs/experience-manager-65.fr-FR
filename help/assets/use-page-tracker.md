@@ -1,21 +1,20 @@
 ---
-title: Utiliser le suivi de page et le code incorporé dans les pages Web
+title: Utilisation du dispositif de suivi de page et du code incorporé dans les pages web
 description: Découvrez comment inclure le dispositif de suivi de page et intégrer du code JavaScript dans le code de votre site web pour permettre à Adobe Analytics de capturer des données d’utilisation concernant les ressources.
 contentOwner: AG
 role: Architect, Administrator
-feature: Asset Reports
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Rapports de ressources
+exl-id: 14d02015-df00-4566-a098-de76eaf42605
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '178'
 ht-degree: 70%
 
 ---
 
+# Utiliser le dispositif de suivi de page et le code intégré dans les pages web {#using-page-tracker-and-embed-code-in-web-pages}
 
-# Utiliser le suivi de page et le code incorporé dans les pages Web {#using-page-tracker-and-embed-code-in-web-pages}
-
-Le suivi de page est un élément de code JavaScript que vous incluez dans le code des sites Web tiers pour permettre à Adobe Analytics de capturer des données d’utilisation autour de [!DNL Adobe Experience Manager Assets] ces sites Web.
+Le dispositif de suivi de page est un élément de code JavaScript que vous incluez dans le code des sites web tiers pour permettre à Adobe Analytics de capturer des données d’utilisation autour de [!DNL Adobe Experience Manager Assets] sur ces sites web.
 
 Pour capturer des événements tels que des clics propres aux ressources, vous devez également inclure le code intégré dans le code des sites web tiers.
 
@@ -61,7 +60,7 @@ L’exemple de code suivant indique à quoi ressemble une page web qui contient 
 </html>
 ```
 
-## Code de suivi de page d&#39;Ajoute {#adding-page-tracker-code}
+## Ajouter le code de suivi de page {#adding-page-tracker-code}
 
 Vous ajoutez le code de suivi de page dans la section d’en-tête du code de votre site web. Le fragment de code suivant présente le code de suivi de page inclus dans un exemple de page web :
 
@@ -81,7 +80,7 @@ Vous ajoutez le code de suivi de page dans la section d’en-tête du code de vo
  </head>
 ```
 
-## Code incorporé Ajouté {#add-embed-code}
+## Ajout du code incorporé {#add-embed-code}
 
 Vous ajoutez le code intégré dans le corps du code de votre site web. Le fragment de code suivant présente le code intégré inclus dans un exemple de page web :
 
