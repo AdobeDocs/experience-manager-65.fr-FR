@@ -225,7 +225,7 @@ Les coordinateurs de jeux de stratégie peuvent exécuter les tâches suivantes�
 
 >[!NOTE]
 >
->Vous pouvez récupérer un maximum de 1 000 noms de jeux de stratégies dans la base de données à l’aide de l’API `getAllPolicysetnames()`.
+>Vous pouvez récupérer un maximum de 1 000 noms de jeux de stratégies à partir de la base de données à l’aide de l’API `getAllPolicysetnames()`.
 
 Les jeux de stratégies sont créés et supprimés dans les pages Web d’administration de Document Security par des administrateurs et des coordinateurs de jeux de stratégies bénéficiant des autorisations requises.
 
