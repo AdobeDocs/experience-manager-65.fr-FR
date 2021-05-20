@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 100%
 
 ---
-
 
 # Mise à jour du type de licence pour le déploiement {#update-the-license-type-for-the-deployment}
 
@@ -49,4 +48,3 @@ La page Changer de licence contient des informations relatives à la licence :
 
 1. Sélectionnez Oui, le changement de licence concerne tous les modules déployés.
 1. Cliquez sur Confirmer le changement de licence. Une fois la licence mise à jour, un message vous confirme la réussite de l’opération.
-
