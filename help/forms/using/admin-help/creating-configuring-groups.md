@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
-translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 97%
 
 ---
-
 
 # Création et configuration de groupes{#creating-and-configuring-groups}
 
@@ -37,7 +36,7 @@ Si vous utilisez Content Services (obsolète), vous pouvez sélectionner l’opt
 
    Le Nom canonique est l’identificateur unique du groupe. Tous les utilisateurs et groupes d’un domaine doivent disposer d’un nom canonique unique. Cochez la case Généré par le système pour laisser User Management affecter une valeur unique au paramètre Nom canonique ou désélectionnez la case et saisissez une valeur personnalisée.
 
-   Evitez d’utiliser des caractères de soulignement (_) dans les noms canoniques, par exemple `sample_group`. Lorsque vous recherchez des groupes à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
+   Évitez d’utiliser des caractères de soulignement (_) dans les noms canoniques, par exemple `sample_group`. Lorsque vous recherchez des groupes à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
 
 1. Pour ajouter des utilisateurs et des groupes à ce nouveau groupe, cliquez sur Rechercher des utilisateurs/groupes et procédez comme suit :
 
@@ -47,14 +46,14 @@ Si vous utilisez Content Services (obsolète), vous pouvez sélectionner l’opt
    * Sélectionnez le domaine, le nombre d’éléments à afficher, puis cliquez sur Rechercher.
    * Dans les résultats de la recherche, cochez les cases en regard des utilisateurs et des groupes à ajouter à ce nouveau groupe, puis cliquez sur OK.
 
-1. Cliquez sur Next (Suivant).
+1. Cliquez sur Suivant.
 1. Pour ajouter ce nouveau groupe à d’autres groupes existants, cliquez sur Rechercher des groupes et procédez comme suit :
 
    * Dans la zone Rechercher, saisissez vos critères de recherche.
    * Sélectionnez le domaine, le nombre d’éléments à afficher, puis cliquez sur Rechercher.
    * Dans les résultats de la recherche, activez les cases à cocher correspondant aux groupes auxquels ajouter le nouveau groupe, puis cliquez sur OK.
 
-1. Cliquez sur Next (Suivant).
+1. Cliquez sur Suivant.
 1. Pour affecter des rôles au groupe, cliquez sur Rechercher des rôles, activez les cases à cocher correspondant aux rôles à affecter, puis cliquez sur OK. Les utilisateurs d’un groupe héritent des rôles affectés au niveau du groupe.
 1. Cliquez sur Terminer.
 
@@ -76,7 +75,7 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
 1. Indiquez à quel moment User Manager recherchera de nouveaux domaines d’adresses électroniques. Cette recherche doit être postérieure à la synchronisation des domaines, car la création de groupes dynamiques n’est pertinente que lorsque la synchronisation des domaines est terminée.
 
    * Pour activer une synchronisation automatique quotidienne, saisissez l’heure au format 24 heures dans la zone Se produit Quotidiennement à. Lorsque vous enregistrez vos paramètres, cette valeur est convertie en expression cron, qui s’affiche dans la zone située au-dessous.
-   * Pour programmer la synchronisation un jour donné de la semaine ou du mois, ou un mois donné, sélectionnez Expression cron et saisissez l’expression appropriée dans la zone. La valeur par défaut est `0 00 4 ? * *` (ce qui signifie que la vérification a lieu à 4 heures du matin tous les jours).
+   * Pour programmer la synchronisation un jour donné de la semaine ou du mois, ou un mois donné, sélectionnez Expression cron et saisissez l’expression appropriée dans la zone. La valeur par défaut est `0 00 4 ? * *` (c’est-à-dire qu’elle est vérifiée à 4 heures du matin tous les jours).
 
       L’utilisation de l’expression cron est basée sur le système de planification des tâches Open Source de Quartz, version 1.4.0 
 
@@ -97,7 +96,7 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
 
    **Description :** description de l’utilisateur, tel que « Informaticien ».
 
-   **Nom canonique : nom canonique de l’** utilisateur, tel que  `ou=adobe.com`
+   **Nom canonique : nom canonique de l’utilisateur** , tel que  `ou=adobe.com`
 
    **Nom de domaine :** nom du domaine auquel l’utilisateur appartient, par exemple `DefaultDom`. L’attribut Nom de domaine est sensible à la casse lorsque vous utilisez l’opérateur Contient. Cet attribut n’est pas sensible à la casse lorsque vous utilisez les opérateurs Commence par, Se termine par ou Egal.
 
@@ -109,7 +108,7 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
    * Sélectionnez le domaine, le nombre d’éléments à afficher, puis cliquez sur Rechercher.
    * Dans les résultats de la recherche, activez les cases à cocher correspondant aux groupes auxquels ajouter le groupe dynamique, puis cliquez sur OK.
 
-1. Cliquez sur Next (Suivant).
+1. Cliquez sur Suivant.
 1. Pour affecter des rôles au groupe dynamique, cliquez sur Rechercher des rôles, activez les cases à cocher correspondant aux rôles à affecter, puis cliquez sur OK. Les utilisateurs d’un groupe héritent des rôles affectés au niveau du groupe.
 1. Cliquez sur Terminer.
 
@@ -155,4 +154,3 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Dans la liste Rechercher, sélectionnez Groupes, puis cliquez sur Rechercher.
 1. Activez la case à cocher située en regard du groupe à supprimer, cliquez sur Supprimer, puis sur OK.
-
