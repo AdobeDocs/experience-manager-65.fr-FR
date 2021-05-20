@@ -3,15 +3,14 @@ title: Application de services cloud de traduction à des dossiers
 description: Application de services cloud de traduction à des dossiers
 contentOwner: AG
 role: Administrator
-feature: Translation
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Traduction
+exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '386'
 ht-degree: 79%
 
 ---
-
 
 # Application de services cloud de traduction à des dossiers {#applying-translation-cloud-services-to-folders}
 
@@ -23,7 +22,7 @@ Vous pouvez appliquer le service cloud de traduction directement à votre dossie
 
 L’application de services cloud directement à votre dossier de ressources élimine le besoin de configurer des services de traduction lorsque vous créez ou mettez à jour les workflows de traduction.
 
-1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez le dossier auquel vous souhaitez appliquer les services de traduction.
+1. Dans l’interface utilisateur [!DNL Assets], sélectionnez le dossier auquel vous souhaitez appliquer des services de traduction.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]** pour afficher la page **[!UICONTROL Propriétés du dossier]**.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
@@ -37,7 +36,7 @@ L’application de services cloud directement à votre dossier de ressources él
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Dans la barre d&#39;outils, cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Le service de traduction est appliqué au dossier.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Le service de traduction est appliqué au dossier.
 
 ## Application d’un connecteur de traduction personnalisé  {#applying-custom-translation-connector}
 
