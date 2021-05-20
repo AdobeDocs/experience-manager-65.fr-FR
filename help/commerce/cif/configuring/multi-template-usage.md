@@ -8,7 +8,6 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '104'
@@ -22,6 +21,6 @@ Les [composant principaux AEM CIF](https://github.com/adobe/aem-core-cif-compone
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-Pour plus d’informations sur cette rubrique, consultez la ressource suivante :
+Vous trouverez plus d’informations sur cette rubrique à partir de la ressource suivante :
 
 - [Composants principaux AEM CIF – Configuration de pages multi-catalogue](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
