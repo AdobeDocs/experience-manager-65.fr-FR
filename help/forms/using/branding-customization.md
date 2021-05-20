@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 79%
 
 ---
-
 
 # Personnalisation de l’identité graphique {#branding-customization}
 
@@ -43,8 +42,8 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 1. (***Pour la personnalisation des icônes***) En mode navigateur de Capture, accédez à **[!UICONTROL Capturer > Capture > Fichiers pris en charge > Capture-info.plist]**. Cliquez sur la liste déroulante à côté des fichiers d’icônes. Spécifiez le nom du fichier d’icône (.png) et chargez le fichier sur **[!UICONTROL Capturer > Capture > Ressources > icônes]**. Les dimensions actuellement prises en charge sont les suivantes : 29x29, 50x50, 58x58, 72x72, 100x100 et 144x144.
 1. (***Pour la personnalisation des images de lancement***) Vérifiez que les noms de fichiers de vos images sont les suivantes :
 
-   * Portrait : `Default-Portrait~ipad.png` et `Default-Portrait@2x~ipad.png`
-   * Pour paysage : `Default-Landscape~ipad.png` et `Default-Landscape@2x~ipad.png`
+   * Pour portrait : `Default-Portrait~ipad.png` et `Default-Portrait@2x~ipad.png`
+   * Pour le paysage : `Default-Landscape~ipad.png` et `Default-Landscape@2x~ipad.png`
 
    Chargez-les sur le projet de capture pour remplacer les fichiers existants du projet.
 
@@ -97,7 +96,7 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 1. Ouvrez le projet `Capture.xcodeproj` dans Xcode.
 1. Dans la vue du navigateur de Capture, accédez à **[!UICONTROL Capture > Capture > Fichiers pris en charge > InfoPlist.strings]**.
 
-   Mettez à jour la valeur de l&#39;attribut `CFBundleDisplayName` vers un nom que vous souhaitez afficher pour l&#39;application.
+   Mettez à jour la valeur de l’attribut `CFBundleDisplayName` vers un nom que vous souhaitez afficher pour l’application.
 
 1. Générez et exécutez l’application AEM Forms sur un périphérique ou un simulateur iOS.
 
@@ -120,7 +119,7 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. Mettez à jour la valeur de la balise `<name>...</name>`.
+1. Mettez à jour la valeur dans la balise `<name>...</name>` .
 1. Régénérez l’application AEM Forms.
 
    Pour en savoir plus sur la création de l’application pour Windows, consultez la section [Configuration du projet Visual Studio et génération d’une application Windows](/help/forms/using/setup-visual-studio-project-build-installer.md).
@@ -159,7 +158,7 @@ Vérifiez que vous disposez des images suivantes :
 
 1. Accédez au dossier `www/wsmobile/images`. 
 1. Pour changer le logo, remplacez le fichier `LC-logo.png` par défaut par le fichier `LC-logo.png` personnalisé.
-1. Pour modifier l’arrière-plan, remplacez le fichier `Landing_bg.jpeg` par défaut par le fichier `Landing_bg.jpeg`personnalisé.
+1. Pour changer l’arrière-plan, remplacez le fichier `Landing_bg.jpeg` par défaut par le fichier `Landing_bg.jpeg`personnalisé.
 1. Générez et exécutez l’application AEM Forms sur un périphérique ou un simulateur iOS.
 
 ### Personnalisation des images des pages de connexion à l’aide d’Eclipse  {#to-customize-images-on-the-login-pages-using-eclipse}
@@ -168,7 +167,7 @@ Vérifiez que vous disposez des images suivantes :
 
 1. Accédez au dossier `assets/www/wsmobile/images`. 
 1. Pour changer le logo, remplacez le fichier `LC-logo.png` par défaut par le fichier `LC-logo.png` personnalisé.
-1. Pour modifier l’arrière-plan, remplacez le fichier `Landing_bg.jpeg` par défaut par le fichier `Landing_bg.jpeg`personnalisé.
+1. Pour changer l’arrière-plan, remplacez le fichier `Landing_bg.jpeg` par défaut par le fichier `Landing_bg.jpeg`personnalisé.
 1. Générez et exécutez l’application AEM Forms sur un périphérique Android.
 
 ### Personnalisation des images sur les pages de connexion à l’aide de Visual Studio  {#to-customize-images-on-the-login-pages-using-visual-studio}
@@ -177,7 +176,7 @@ Vérifiez que vous disposez des images suivantes :
 
 1. Accédez au dossier `MWSWindows\www\wsmobile\images`. 
 1. Pour changer le logo, remplacez le fichier `LC-logo.png` par défaut par le fichier `LC-logo.png` personnalisé.
-1. Pour modifier l’arrière-plan, remplacez le fichier `Landing_bg.jpeg` par défaut par le fichier `Landing_bg.jpeg`personnalisé.
+1. Pour changer l’arrière-plan, remplacez le fichier `Landing_bg.jpeg` par défaut par le fichier `Landing_bg.jpeg`personnalisé.
 1. Générez et exécutez l’application AEM Forms sur un périphérique Windows.
 
 ## Personnalisation du logo dans le menu de l’application  {#customizing_images_on_the_login_page-1}
