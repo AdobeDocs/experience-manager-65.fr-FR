@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
-translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2143'
 ht-degree: 94%
 
 ---
-
 
 # Utilisation du Service Assembler{#using-assembler-service}
 
@@ -46,7 +45,7 @@ L’exemple suivant représente un document DDX utilisé pour assembler ce docum
 </PDF>
 ```
 
-L&#39;assemblage de documents produit un document résultant qui contient le contenu suivant et\
+L’assemblage de documents produit un document généré qui contient le contenu suivant et\
 caractéristiques :
 
 * L’intégralité ou une partie de chacun des documents source ;
@@ -164,8 +163,8 @@ Vous pouvez spécifier la valeur de l’attribut resolveAssets dans la balise XD
 
 #### Résolution de toutes les références source dans un document XDP  {#resolve-all-source-references-in-an-xdp-document}
 
-Pour résoudre toutes les références dans les documents XDP source, spécifiez l’attribut resolveAssets pour la variable\
-document obtenu pour tous, comme dans l’exemple ci-dessous :
+Pour résoudre toutes les références dans les documents XDP source, spécifiez l’attribut resolveAssets pour la propriété\
+le document généré à tous, comme dans l’exemple ci-dessous :
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -177,7 +176,7 @@ document obtenu pour tous, comme dans l’exemple ci-dessous :
 </DDX
 ```
 
-Vous pouvez également spécifier l’attribut pour tous les documents XDP source indépendamment pour obtenir la même valeur\
+Vous pouvez également spécifier l’attribut pour tous les documents XDP source indépendamment pour obtenir le même\
 résultat.
 
 ```xml
@@ -312,10 +311,10 @@ Vous pouvez utiliser le service Assembler pour obtenir les informations suivante
    * Nombre de phrases dans chaque paragraphe, sur chaque page du document.
 
 * Nombre de signets (incluant le numéro de la page, le titre, la destination et l’apparence). Vous pouvez l’exporter\
-   données d’un document PDF et importez-le dans un document PDF.
+   les données d’un document PDF et les importer dans un document PDF.
 
 * Pièces jointes, y compris les informations sur les fichiers. Pour les pièces jointes au niveau de la page, elle inclut également la variable\
-   emplacement de l’annotation de pièce jointe du fichier. Vous pouvez exporter ces données à partir d’un document PDF et\
+   emplacement de l’annotation de pièce jointe au fichier. Vous pouvez exporter ces données à partir d’un document PDF et\
    importez-le dans un document PDF.
 
 * Les fichiers de package, y compris les informations sur les fichiers, dossiers, packages, schémas et données de champ. Vous pouvez exporter ces données à partir d’un document PDF et les importer dans un document PDF.
