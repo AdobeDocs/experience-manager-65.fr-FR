@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 14314383-5228-4904-98c1-586f48a1142c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
 ---
-
 
 # Configuration des messages de validation {#configuring-validation-messages}
 
@@ -66,4 +65,3 @@ Lorsque l’option Rapport est définie sur Cadre, vous pouvez indiquer la taill
    La taille de la bordure doit être égale ou supérieure à 0. La valeur par défaut est 1.
 
 1. Cliquez sur Enregistrer.
-
