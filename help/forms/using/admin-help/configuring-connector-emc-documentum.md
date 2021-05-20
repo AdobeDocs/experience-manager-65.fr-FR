@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 93%
 
 ---
-
 
 # Configuration de Connector for EMC Documentum {#configuring-connector-for-emc-documentum}
 
@@ -62,15 +61,15 @@ Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect, vous obti
 
 Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec Documentum. Les appels des services de référentiel sont délégués au fournisseur que vous configurez. Les options suivantes sont disponibles :
 
-**Nom du Prestataire de référentiel actuel :** nom du prestataire de référentiel actuel
+**Nom du fournisseur de services de référentiel actuel :** nom du fournisseur de services de référentiel actuel.
 
-**Fournisseur de référentiel ECM Documentum :** fait du fournisseur de référentiel Documentum le fournisseur de référentiel pour le référentiel. Cette option est obsolète.
+**Fournisseur du référentiel ECM Documentum :** fait du fournisseur du référentiel Documentum le fournisseur du référentiel. Cette option est obsolète.
 
-**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur de référentiel pour le référentiel
+**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur du référentiel.
 
 >[!NOTE]
 >
->Pour sélectionner un prestataire de référentiel autre que ceux répertoriés, configurez RepositoryService dans Applications et services > Gestion des services. <!-- Fix broken link (See Managing Services) -->.
+>Pour sélectionner un fournisseur de services de référentiel autre que ceux répertoriés, configurez RepositoryService dans Applications and Services > Service Management. <!-- Fix broken link (See Managing Services) -->.
 
 1. Dans Administration Console, cliquez sur Services > Connecteur pour EMC Documentum > Paramètres de configuration.
 1. Dans la zone Informations sur les fournisseurs de services de référentiel, sélectionnez un autre fournisseur de services de référentiel.
@@ -117,4 +116,3 @@ Certaines tâches manuelles sont requises pour vérifier que la fonction de dema
 1. Dans l’affichage Variables, ouvrez les propriétés de la variable « theForm » et spécifiez dans l’URI le répertoire où vous avez placé le fichier QueueSharing.swf à l’étape 5.
 1. Enregistrez le processus.
 1. Migrez le processus vers l’environnement de production, conformément à la stratégie de votre entreprise.
-
