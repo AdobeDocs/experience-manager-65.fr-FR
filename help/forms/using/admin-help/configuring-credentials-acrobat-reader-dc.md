@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 97%
 
 ---
-
 
 # Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
@@ -62,4 +61,3 @@ Le Trust Store peut comporter plusieurs jeux d’informations d’identification
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Notez l’alias existant des informations d’identification, sélectionnez-le, puis cliquez sur Supprimer.
 1. Importez les nouvelles informations d’identification à l’aide du même nom d’alias.
-
