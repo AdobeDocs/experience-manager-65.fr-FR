@@ -1,11 +1,10 @@
 ---
-title: Gérer les  [!DNL Adobe Stock] ressources
+title: Gestion des  [!DNL Adobe Stock] ressources
 description: Rechercher, récupérer, gérer les licences et gérer les ressources [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager]. Utiliser les ressources sous licence comme toute autre ressource numérique.
 contentOwner: AG
-feature: Search, Adobe Stock
+feature: Recherche, Adobe Stock
 role: Business Practitioner, Administrator
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-translation-type: tm+mt
 source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
 workflow-type: tm+mt
 source-wordcount: '1091'
@@ -19,9 +18,9 @@ Les entreprises peuvent intégrer leur formule d’abonnement pour entreprise [!
 
 Le service [!DNL Adobe Stock] permet aux créateurs et aux entreprises d’accéder à des millions de photos, de vecteurs, d’illustrations, de vidéos, de modèles et de ressources 3D organisés, de haute qualité et libres de droits pour tous leurs projets de création. Les utilisateurs d’[!DNL Experience Manager] peuvent en un éclair, rechercher, prévisualiser et acquérir sous licence des ressources [!DNL Adobe Stock] qui sont enregistrées dans [!DNL Experience Manager], sans quitter l’interface d’[!DNL Experience Manager].
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
-L&#39;intégration requiert un [plan d&#39;entreprise [!DNL Adobe Stock] ](https://stockenterprise.adobe.com/).
+L’intégration requiert un [plan d’entreprise [!DNL Adobe Stock] ](https://stockenterprise.adobe.com/).
 
 ## Intégration d’[!DNL Experience Manager] et [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -35,11 +34,11 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 
 1. Dans l’interface utilisateur [!DNL Experience Manager], naviguez jusqu’à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
-1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois le certificat créé, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**. Laissez l&#39;écran [!UICONTROL Configuration du compte technique IMS ] Adobe ouvert pour fournir les valeurs requises sous peu.
+1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois le certificat créé, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**. Laissez l’écran [!UICONTROL Configuration du compte technique IMS d’Adobe] ouvert pour fournir rapidement les valeurs requises.
 1. Accédez à [Adobe Developer Console](https://console.adobe.io). Assurez-vous que votre compte dispose des autorisations d’administrateur pour l’entreprise pour laquelle l’intégration est requise.
 1. Cliquez sur **[!UICONTROL Créer un projet]**, puis sur **[!UICONTROL Ajouter l’API]**. Sélectionnez **[!UICONTROL Adobe Stock]** dans la liste des API disponibles. Sélectionnez [!UICONTROL OAUTH 2.0 Web].
-1. Spécifiez les valeurs **[!UICONTROL URI de redirection par défaut]** et **[!UICONTROL modèle URI de redirection]**. Cliquez sur **[!UICONTROL Save configured API]** (Enregistrer l’API configurée). Copiez l’ID et le secret générés.
-1. Dans l’écran [!UICONTROL Configuration du compte technique IMS Adobe], indiquez les valeurs dans les zones intitulées **[!UICONTROL Titre]**, **[!UICONTROL Serveur d’autorisation]**, **[!UICONTROL Clé d’API]**, **[!UICONTROL Secret client]** et **[!UICONTROL Charge utile&lt;a1/&quot;.]** Pour plus d’informations sur ces valeurs, voir [début rapide de l’authentification JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
+1. Indiquez les valeurs **[!UICONTROL URI de redirection par défaut]** et **[!UICONTROL Modèle d’URI de redirection]**. Cliquez sur **[!UICONTROL Save configured API]** (Enregistrer l’API configurée). Copiez l’identifiant et le secret générés.
+1. Dans l’écran [!UICONTROL Adobe de la configuration du compte technique IMS], indiquez les valeurs dans les zones intitulées **[!UICONTROL Titre]**, **[!UICONTROL Serveur d’autorisation]**, **[!UICONTROL Clé API]**, **[!UICONTROL Secret client]** et **[!UICONTROL Charge utile]**. Pour plus d’informations sur ces valeurs, voir [Démarrage rapide de l’authentification JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 
 <!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -54,7 +53,7 @@ Pour permettre à [!DNL Experience Manager] et [!DNL Adobe Stock] de communiquer
 
 >[!NOTE]
 >
->S’il existe plusieurs configurations [!DNL Adobe Stock], sélectionnez la configuration souhaitée dans le panneau Préférences utilisateur.  Pour accéder au panneau à partir de la page d&#39;accueil [!DNL Experience Manager], cliquez sur l’icône de l’utilisateur, puis sur **[!UICONTROL Préférences utilisateur]** > **[!UICONTROL Configuration du stock]**.
+>S’il existe plusieurs configurations [!DNL Adobe Stock], sélectionnez la configuration souhaitée dans le panneau Préférences utilisateur.  Pour accéder au panneau à partir de la [!DNL Experience Manager] page d’accueil, cliquez sur l’icône de l’utilisateur, puis sur **[!UICONTROL Préférences utilisateur]** > **[!UICONTROL Configuration de stock]**.
 
 ## Utilisation et gestion de ressources [!DNL Adobe Stock] dans [!DNL Experience Manager] {#usemanage}
 
@@ -62,11 +61,11 @@ Grâce à cette fonctionnalité, les entreprises peuvent permettre à leurs util
 
 Une fois qu’une ressource [!DNL Adobe Stock] est sous licence dans [!DNL Experience Manager], elle peut être utilisée et gérée comme une ressource standard. Dans [!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources, les prévisualiser, les copier, les publier, les partager sur [!DNL Brand Portal] et les utiliser via l’application de bureau [!DNL Experience Manager], etc.
 
-![Rechercher  [!DNL Adobe Stock] des ressources et filtrer les résultats de votre  [!DNL Adobe Experience Manager] espace de travail](assets/adobe-stock-search-results-workspace.png)
+![Recherche de  [!DNL Adobe Stock] ressources et filtrage des résultats de votre  [!DNL Adobe Experience Manager] espace de travail](assets/adobe-stock-search-results-workspace.png)
 
-*Figure : Recherchez des  [!DNL Adobe Stock] ressources et filtrez les résultats de votre  [!DNL Experience Manager] interface.*
+*Figure : Recherchez  [!DNL Adobe Stock] des ressources et filtrez les résultats à partir de votre  [!DNL Experience Manager] interface.*
 
-**A.**[!DNL Adobe Stock] Rechercher les ressources semblables à celles dont l’ID est fourni. **B.** Rechercher les ressources correspondant à la forme ou à l’orientation que vous avez sélectionnée. **C.** Recherchez l&#39;un des types de ressources les plus pris en charge  **D.** Ouvrez ou réduisez le volet filtres  **E.** Licenciez et enregistrez la ressource sélectionnée en  [!DNL Experience Manager] **F.** Enregistrez la ressource avec un filigrane G.Explorez les ressources du site Web de  qui sont similaires à la ressource sélectionnée en Vue de ressources du site Web de . résultats de la recherche J.Basculer entre la vue de carte et la vue de Liste[!DNL Experience Manager]****[!DNL Adobe Stock]****[!DNL Adobe Stock]********
+**A.**[!DNL Adobe Stock] Rechercher les ressources semblables à celles dont l’ID est fourni. **B.** Rechercher les ressources correspondant à la forme ou à l’orientation que vous avez sélectionnée. **C.** Recherchez l’un des types de ressources les plus pris en charge  **D.** Ouvrez ou réduisez le volet des filtres  **E.**  Donnez la licence et enregistrez la ressource sélectionnée dans  [!DNL Experience Manager] **F.** Enregistrez la ressource dans  [!DNL Experience Manager] avec le filigrane  **G.** Explorez les ressources du site web  [!DNL Adobe Stock] semblables à la ressource sélectionnée  **H.** Afficher les ressources sélectionnées sur le site web  [!DNL Adobe Stock]  **.**   **J.** Basculement entre le mode Carte et le mode Liste
 
 ### Recherche de ressources {#find-assets}
 
@@ -100,7 +99,7 @@ La prochaine fois que vous rechercherez des ressources, les ressources enregistr
 
 Les utilisateurs peuvent acquérir des ressources [!DNL Adobe Stock] sous licence en utilisant le quota de leur abonnement pour entreprise [!DNL Adobe Stock]. Lorsque vous acquérez une ressource sous licence, elle est enregistrée sans filigrane, et elle peut être recherchée et utilisée dans [!DNL Experience Manager Assets].
 
-![Boîte de dialogue pour activer la licence et enregistrer  [!DNL Adobe Stock] des fichiers dans  [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)
+![Boîte de dialogue permettant d’acquérir sous licence et d’enregistrer  [!DNL Adobe Stock] des ressources dans  [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)
 
 *Figure : Boîte de dialogue permettant d’acquérir sous licence et d’enregistrer des ressources [!DNL Adobe Stock] dans [!DNL Experience Manager Assets].*
 
@@ -124,7 +123,7 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 >[!MORELIKETHIS]
 >
->* [Didacticiel vidéo sur l’ [!DNL Adobe Stock] utilisation de ressources avec [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
->* [[!DNL Adobe Stock] aide du plan d&#39;entreprise](https://helpx.adobe.com/fr/enterprise/using/adobe-stock-enterprise.html)
+>* [Tutoriel vidéo sur l’ [!DNL Adobe Stock] utilisation de ressources avec [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
+>* [[!DNL Adobe Stock] aide pour les plans d’entreprise](https://helpx.adobe.com/fr/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/fr/stock/faq.html)
 
