@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
-translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 93%
 
 ---
-
 
 # Vérification de l’utilisation des informations d’identification {#review-credential-use-information}
 
@@ -24,7 +23,7 @@ Les informations d’identification contiennent des données décrivant leur uti
 
 1. Ouvrez un navigateur Web, puis saisissez l’URL suivante :
 
-   http://localhost:port/ReaderExtensions (où *port* correspond au numéro de port de votre serveur d’applications)
+   http://localhost:port/ReaderExtensions (où *port* est le numéro de port de votre serveur d’applications)
 
 1. Connectez-vous à l’aide du nom d’utilisateur et du mot de passe par défaut :
 
@@ -41,4 +40,3 @@ Les informations d’identification contiennent des données décrivant leur uti
 >[!NOTE]
 >
 >La date d’expiration des informations d’identification est également disponible à la page Paramètres > Trust Store Management > Informations d’identification locales dans Administration Console, sous Date d’expiration.
-
