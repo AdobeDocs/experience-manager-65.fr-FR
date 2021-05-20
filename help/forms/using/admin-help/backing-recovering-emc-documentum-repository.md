@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 88%
 
 ---
-
 
 # Sauvegarde et récupération du référentiel EMC Documentum {#backing-up-and-recovering-the-emc-documentum-repository}
 
@@ -188,12 +187,12 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   Ne renseignez pas le champ de mot de passe du fichier de configuration `NMDDE_DM_PASSWD`. Vous définirez ce mot de passe à l’étape suivante.
+   Laissez vide le champ du mot de passe du fichier de configuration `NMDDE_DM_PASSWD`. Vous définirez ce mot de passe à l’étape suivante.
 
 1. Définissez le mot de passe du fichier de configuration comme suit :
 
    * Ouvrez une invite de commande et remplacez-la par `[NetWorker_root]\Legato\nsr\bin`.
-   * Exécutez la commande suivante : `-nsrnmdsv.exe -f`*&lt;chemin_vers_fichier_cfg> -P &lt;mot de passe>*
+   * Exécutez la commande suivante : `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
 1. Créez les fichiers de commande (.bat) exécutables utilisés pour sauvegarder la base de données (reportez-vous à la documentation de NetWorker). Définissez les fichiers de commandes en fonction de votre installation.
 
@@ -211,11 +210,11 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
       Où :
 
-      `[NetWorker_database_module_root]` est le répertoire d&#39;installation du module NetWorker. Par exemple, le répertoire d’installation par défaut du module NetWorker pour SQL Server est C:\Program Files\Legato\nsr\bin\nsrsqlsv.
+      `[NetWorker_database_module_root]` est le répertoire d’installation du module NetWorker. Par exemple, le répertoire d’installation par défaut du module NetWorker pour SQL Server est C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 
       `NetWorker_Server_Name` est le serveur sur lequel NetWorker est installé.
 
-      `username` &amp;  `password` sont le nom d&#39;utilisateur et le mot de passe de l&#39;utilisateur administrateur de la base de données.
+      `username` &amp;  `password` sont le nom d’utilisateur et le mot de passe de l’utilisateur administrateur de base de données.
 
       `database_name` est le nom de la base de données à sauvegarder.
 
@@ -228,7 +227,7 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    **Nom :** chemin d’accès complet au répertoire partagé
 
-   **Type de support :** `File`
+   **Type de média :** `File`
 
 1. Cliquez avec le bouton droit de la souris sur le nouveau périphérique, puis sélectionnez Operations.
 1. Cliquez sur Label, saisissez un nom, puis cliquez sur Mount.
@@ -263,7 +262,7 @@ Avant de restaurer les données de votre environnement AEM forms, procédez comm
 1. Cliquez sur l’outil Restore, puis sélectionnez Normal.
 1. A gauche de l’écran, sélectionnez la base de données correspondant à votre Docbase, puis cliquez sur le bouton Start de la barre d’outils.
 1. Lorsque la base de données est restaurée, redémarrez le service Docbase.
-1. Ouvrez une invite de commande et passez à *[racine_NetWorker]*\Legato\nsr\bin
+1. Ouvrez une invite de commande et remplacez-la par *[racine_NetWorker]*\Legato\nsr\bin
 1. Exécutez la commande suivante :
 
    ```shell
