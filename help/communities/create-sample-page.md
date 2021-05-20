@@ -1,40 +1,39 @@
 ---
-title: Créer un exemple de page
-seo-title: Créer un exemple de page
-description: Créer un exemple de site communautaire
-seo-description: Créer un exemple de site communautaire
+title: Création d’un exemple de page
+seo-title: Création d’un exemple de page
+description: Créer un exemple de site de communauté
+seo-description: Créer un exemple de site de communauté
 uuid: 04a8f027-b7d8-493a-a9bd-5c4a6715d754
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
-translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 2%
 
 ---
 
-
 # Créer un exemple de page {#create-a-sample-page}
 
-AEM 6.1 Collectivités, le moyen le plus simple de créer un exemple de page est de créer un site communautaire simple, constitué simplement d&#39;une fonction Page.
+Depuis AEM 6.1 Communities, le moyen le plus simple de créer un exemple de page est de créer un site de communauté simple, composé simplement d’une fonction Page .
 
-Ceci inclut un composant parsys afin que vous puissiez [activer les composants pour la création](basics.md#accessing-communities-components).
+Cela inclut un composant parsys afin que vous puissiez [activer les composants pour la création](basics.md#accessing-communities-components).
 
-Une autre option d&#39;exploration avec des composants d&#39;exemple consiste à utiliser les fonctionnalités présentées dans le [Guide des composants de la communauté](components-guide.md).
+Une autre option d’exploration avec des exemples de composants consiste à utiliser les fonctionnalités présentées dans le [Guide des composants de communauté](components-guide.md).
 
 ## Créer un site communautaire {#create-a-community-site}
 
-Cela ressemble beaucoup à la création d&#39;un nouveau site décrit dans [Prise en main de AEM Communities](getting-started.md).
+Ceci est très similaire à la création d’un site décrit dans [Prise en main d’AEM Communities](getting-started.md).
 
-La principale différence est que ce tutoriel va créer un nouveau modèle de site communautaire qui ne contient que la fonction [Page](functions.md#page-function) afin de créer un site communautaire simple sans aucune autre fonctionnalité (autre que les fonctionnalités préprogrammées de base pour tous les sites communautaires).
+La principale différence réside dans le fait que ce tutoriel crée un nouveau modèle de site communautaire qui ne contient que la [fonction de page](functions.md#page-function) afin de créer un site communautaire simple, sans aucune autre fonctionnalité (autre que les fonctionnalités préconfigurées de base de tous les sites communautaires).
 
-### Créer un nouveau modèle de site {#create-new-site-template}
+### Créer un modèle de site {#create-new-site-template}
 
-Pour commencer, créez un modèle de site communautaire [simple ](sites.md).
+Pour commencer, créez un [modèle de site communautaire](sites.md) simple.
 
 Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL Modèles de site]**.
 
@@ -44,23 +43,23 @@ Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONT
 * INFORMATIONS DE BASE
 
    * `Name`: Modèle de page unique
-   * `Description`: Modèle constitué d’une fonction Page unique.
+   * `Description`: Un modèle constitué d’une fonction Page unique.
    * Sélectionner `Enabled`
 
 ![site-template-editor](assets/site-template-editor.png)
 
 * STRUCTURE
 
-   * Faites glisser une fonction `Page` vers le créateur de modèles
+   * Faites glisser une fonction `Page` vers le Créateur de modèles
    * Pour les détails de la fonction de configuration, saisissez
 
-      * `Title`: Page unique
+      * `Title`: Une seule page
       * `URL`: page
 
-![modèle-site-éditeur-structure](assets/site-template-editor1.png)
+![site-template-editor-structure](assets/site-template-editor1.png)
 
 * Sélectionnez **`Save`** pour la configuration.
-* Sélectionnez **`Save`** pour le modèle de site
+* Sélectionnez **`Save`** pour le modèle de site.
 
 ### Créer un site de communauté {#create-new-community-site}
 
@@ -74,15 +73,15 @@ Après avoir créé le modèle de site, dans la navigation globale, sélectionne
 
 * Étape `1 - Site Template`
 
-   * `Title`: Site communautaire simple
-   * `Description`: Site communautaire constitué d&#39;une seule page d&#39;expérimentation.
+   * `Title`: Site de communauté simple
+   * `Description`: Un site communautaire constitué d’une seule page à des fins d’expérimentation.
    * `Community Site Root: (leave blank)`
    * `Community Site Base Language: English`
    * `Name`: sample
 
       * url = http://localhost:4502/content/sites/sample
 
-      * `Template`: choisir  `Single Page Template`
+      * `Template`: select  `Single Page Template`
 
       ![create-community-site-template](assets/create-community-site-template.png)
 
@@ -103,22 +102,22 @@ Après avoir créé le modèle de site, dans la navigation globale, sélectionne
 
 ## Publier le site {#publish-the-site}
 
-![site de publication](assets/publish-site.png)
+![publish-site](assets/publish-site.png)
 
-Dans la console [sites de la communauté](sites-console.md), sélectionnez l&#39;icône de publication pour publier le site, par défaut sur http://localhost:4503.
+Dans la [console Sites de la communauté](sites-console.md), sélectionnez l’icône Publier pour publier le site, par défaut sur http://localhost:4503.
 
 ## Ouvrez le site sur l’auteur en mode d’édition {#open-the-site-on-author-in-edit-mode}
 
-![site ouvert](assets/open-site.png)
+![open site](assets/open-site.png)
 
-Sélectionnez l&#39;icône d&#39;ouverture du site pour vue du site en mode d&#39;édition.
+Sélectionnez l’icône d’ouverture de site pour afficher le site en mode d’édition.
 
 L’URL sera [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
-![auteur-site](assets/author-site.png)
+![author-site](assets/author-site.png)
 
-Sur la page d&#39;accueil simple, il est possible de voir ce qui est précâblé à travers les fonctions et modèles de la communauté, et de jouer avec l&#39;ajout et la configuration des composants de la communauté.
+Sur la page d’accueil simple, il est possible de voir ce qui est préconnecté par le biais des fonctions et modèles de communauté, et de jouer avec l’ajout et la configuration de composants de communauté.
 
-## Site de vue sur la publication {#view-site-on-publish}
+## Afficher le site lors de la publication {#view-site-on-publish}
 
-Après avoir publié la page, ouvrez la page sur l’[instance de publication](http://localhost:4503/content/sites/sample/en.html) pour tester les fonctionnalités en tant que visiteur anonyme du site, connecté ou administrateur. Le lien Administration visible dans l’environnement d’auteur n’apparaît pas dans l’environnement de publication, sauf si un administrateur se connecte.
+Après avoir publié la page, ouvrez la page sur l’ [instance de publication](http://localhost:4503/content/sites/sample/en.html) afin d’expérimenter les fonctionnalités en tant que visiteur anonyme du site, membre connecté ou administrateur. Le lien Administration visible dans l’environnement de création ne s’affiche pas dans l’environnement de publication, sauf si un administrateur se connecte.
