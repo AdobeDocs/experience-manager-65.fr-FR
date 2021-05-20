@@ -1,21 +1,20 @@
 ---
-title: Comment créer une Forms adaptative à l’aide du Schéma XML ?
-description: Découvrez comment utiliser le schéma XML comme modèle de formulaire dans un formulaire adaptatif. Vous pouvez appliquer des modèles XSD existants pour créer des formulaires adaptatifs et faire glisser des éléments de schéma de XSD sur votre formulaire adaptatif. Explorez plus en détail un exemple de schéma XML, ajoutez des propriétés spéciales aux champs à l’aide du schéma XML et limitez les valeurs acceptables pour un composant de formulaire adaptatif.
+title: Comment créer un Forms adaptatif à l’aide d’un schéma XML ?
+description: Découvrez comment utiliser le schéma XML comme modèle de formulaire dans un formulaire adaptatif. Vous pouvez appliquer des modèles XSD existants pour créer des formulaires adaptatifs et faire glisser des éléments de schéma depuis XSD sur votre formulaire adaptatif. Explorez un exemple de schéma XML, ajoutez des propriétés spéciales aux champs à l’aide du schéma XML et limitez les valeurs acceptables pour un composant de formulaire adaptatif.
 feature: Formulaires adaptatifs
 role: Business Practitioner, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-translation-type: tm+mt
 source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
 # Création de formulaires adaptatifs à l’aide d’un schéma XML {#creating-adaptive-forms-using-xml-schema}
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 La création d’un formulaire adaptatif à l’aide d’un schéma XML en tant que modèle de formulaire requiert des connaissances de base en matière de schémas XML. Il est également recommandé de lire le contenu suivant avant cet article.
 
@@ -59,7 +58,7 @@ Cette mise en correspondance des éléments XML avec les composants de formulair
         </code></li>
      <li>Tous les types de valeurs numériques</li>
     </ul> </td>
-   <td>Champ numérique</td>
+   <td>Zone numérique</td>
   </tr>
   <tr>
    <td><code>xs:date</code></td>
@@ -138,7 +137,7 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>Indique un champ obligatoire.<br />  </td>
+   <td>Indique un champ obligatoire.<br /> </td>
    <td>Attribut</td>
   </tr>
   <tr>
@@ -169,7 +168,7 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
 
 >
 >
-Par exemple, si vous ajoutez l’élément de schéma `userFirstName`, la légende générée dans le formulaire adaptatif est `User First Name`.
+Par exemple, si vous ajoutez l’élément de schéma `userFirstName` , la légende générée dans le formulaire adaptatif est `User First Name`.
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -189,7 +188,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Spécifie le nombre maximal de chiffres autorisés dans un composant. Le nombre de chiffres spécifié doit être supérieur à zéro.</p> </td>
    <td>
     <ul>
-     <li>Champ numérique</li>
+     <li>Zone numérique</li>
      <li>Procédure pas à pas numérique</li>
     </ul> </td>
   </tr>
@@ -199,7 +198,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Spécifie la limite supérieure pour les valeurs numériques et les dates. Par défaut, la valeur maximale est incluse.</p> </td>
    <td>
     <ul>
-     <li>Champ numérique</li>
+     <li>Zone numérique</li>
      <li>Procédure pas à pas numérique<br /> </li>
      <li>Sélecteur de date</li>
     </ul> </td>
@@ -210,7 +209,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Définit la limite inférieure pour les valeurs numériques et les dates. Par défaut, la valeur minimale est incluse.</p> </td>
    <td>
     <ul>
-     <li>Champ numérique</li>
+     <li>Zone numérique</li>
      <li>Procédure pas à pas numérique</li>
      <li>Sélecteur de date</li>
     </ul> </td>
@@ -221,7 +220,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit inférieure ou égale à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> </td>
    <td>
     <ul>
-     <li>Champ numérique</li>
+     <li>Zone numérique</li>
      <li>Procédure pas à pas numérique</li>
      <li>Sélecteur de date</li>
     </ul> </td>
@@ -232,7 +231,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure ou égale à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> </td>
    <td>
     <ul>
-     <li>Champ numérique</li>
+     <li>Zone numérique</li>
      <li>Procédure pas à pas numérique</li>
      <li>Sélecteur de date</li>
     </ul> </td>
@@ -270,7 +269,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
    <td><p>Spécifie le nombre maximal de décimales autorisées dans un composant. La valeur de fractionDigits doit être égale ou supérieure à zéro.</p> </td>
    <td>
     <ul>
-     <li> Boîte numérique avec type de données flottant ou décimal</li>
+     <li> Zone numérique avec type de données flottant ou décimal</li>
     </ul> </td>
   </tr>
   <tr>
@@ -289,11 +288,11 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
 
 **Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
 
-Lorsque vous cliquez sur un élément dans l’Outil de recherche de contenu en doublon, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
+Lorsque vous double-cliquez sur un élément dans l’outil de recherche de contenu, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
 
 ![Champ bindref d’un élément de schéma XML](assets/dblclick.png)
 
-Le champ bindRef</code> affiche l’association entre un élément d’arborescence et un élément ou attribut d’un schéma.
+Le champ bindRef</code> affiche l’association entre un élément de l’arborescence et un élément ou un attribut d’un schéma.
 
 >[!NOTE]
 >
@@ -301,13 +300,13 @@ Le champ bindRef</code> affiche l’association entre un élément d’arboresce
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 
-Dans un sous-formulaire répétable, vous devez utiliser le sous-formulaire Terminer. Si vous souhaitez uniquement des champs sélectifs, utilisez la structure entière et supprimez les champs indésirables.
+Dans un sous-formulaire répétable, vous devez utiliser le sous-formulaire complet. Si vous souhaitez uniquement des champs sélectifs, utilisez la structure entière et supprimez les champs indésirables.
 
 **Je dispose d’une longue structure complexe dans l’Outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
 
 Vous disposez de deux options :
 
-* Parcourez la structure de l’arborescence. 
+* Parcourez la structure de l’arborescence.
 * Utilisez la zone Rechercher pour rechercher un élément.
 
 **Qu’est-ce qu’un bindRef ?**
