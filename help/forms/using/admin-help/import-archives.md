@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 100%
 
 ---
-
 
 # Importation et gestion des archives {#import-and-manage-archives}
 
@@ -50,7 +49,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
    * Pour ajouter un point de fin REST, cliquez sur Ajouter un point de fin REST et spécifiez un nom et une description pour ce dernier. Conservez l’URL d’invocation REST qui s’affiche sur la page Ajouter un point de fin REST.
    * Pour supprimer un point de fin, sélectionnez la case à cocher en regard du point de fin et cliquez sur Supprimer.
 
-1. Cliquez sur Next (Suivant).
+1. Cliquez sur Suivant.
 1. Si un processus ou un service de l’archive LCA possède des paramètres de configuration, une page de configuration des paramètres apparaît. Configurez les paramètres du service et cliquez sur Suivant.
 1. Vous pouvez apporter toutes les modifications voulues dans la page de configuration du profil de sécurité :
 
@@ -117,7 +116,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
    * Pour ajouter un point de fin REST, cliquez sur Ajouter un point de fin REST et spécifiez un nom et une description pour ce dernier. Conservez l’URL d’invocation REST qui s’affiche sur la page Ajouter un point de fin REST.
    * Pour supprimer un point de fin, sélectionnez la case à cocher en regard du point de fin et cliquez sur Supprimer.
 
-1. Cliquez sur Next (Suivant).
+1. Cliquez sur Suivant.
 1. Si un processus ou un service de l’archive LCA possède des paramètres de configuration, une page de configuration des paramètres apparaît. Configurez les paramètres du service et cliquez sur Suivant.
 1. Vous pouvez apporter toutes les modifications voulues dans la page de configuration du profil de sécurité :
 
@@ -167,4 +166,3 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des archives.
 1. Dans la page Gestion des archives, cochez la case correspondant à l’archive à supprimer, puis cliquez sur Supprimer.
-
