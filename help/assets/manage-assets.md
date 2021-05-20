@@ -4,12 +4,11 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: Asset Management,Search
+feature: Gestion des ressources,Rechercher
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-translation-type: tm+mt
-source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '9798'
+source-wordcount: '9796'
 ht-degree: 60%
 
 ---
@@ -114,7 +113,7 @@ Vous pouvez choisir de remplacer une ressource existante, de créer une autre ve
 >
 >Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente.
 >
->Si la fonction Statistiques sur les ressources est activée pour effectuer le suivi des impressions/clics avec Adobe Analytics, l’ID de ressource régénéré invalide les données capturées pour la ressource dans Analytics.
+>Si la fonction Statistiques sur les ressources est activée pour effectuer le suivi des impressions/clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource dans [!DNL Analytics].
 
 Si le fichier que vous téléchargez existe dans [!DNL Assets], la boîte de dialogue **[!UICONTROL Duplicata détectés]** vous avertit que vous tentez de télécharger un fichier duplicata. La boîte de dialogue s’affiche uniquement si la valeur de somme de contrôle `SHA 1` du fichier binaire de l’actif existant correspond à la valeur de somme de contrôle de l’actif que vous téléchargez. Dans ce cas, les noms des fichiers n’ont pas d’importance.
 
@@ -321,7 +320,7 @@ Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble pa
 
 ### Chargements en continu {#streamed-uploads}
 
-Si vous téléchargez de nombreux fichiers vers Adobe Experience Manager, les requêtes d’E/S sur le serveur augmentent considérablement, ce qui réduit l’efficacité du transfert et peut même entraîner l’expiration de certaines tâches de transfert. [!DNL Experience Manager Assets] prend en charge le téléchargement en flux continu des ressources. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Le transfert en flux continu est activé par défaut dans [!DNL Assets].
+Si vous téléchargez de nombreux fichiers vers Adobe Experience Manager, les demandes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du transfert et peut même entraîner l’expiration de certaines tâches de transfert. [!DNL Experience Manager Assets] prend en charge le téléchargement en flux continu des ressources. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Le transfert en flux continu est activé par défaut dans [!DNL Assets].
 
 >[!NOTE]
 >
@@ -600,7 +599,7 @@ Pour plus d’informations sur [!DNL Dynamic Media], voir [publication [!DNL Dyn
    ![Action Annuler la publication](assets/unpublish_action.png)
    *Figure : Options de publication et d’annulation de publication et option de planification.*
 
-1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou **[!UICONTROL Plus tard]** pour planifier l&#39;action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Next]** (Suivant).
+1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou **[!UICONTROL Plus tard]** pour planifier l&#39;action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Suivant]**.
 
 1. Lors de la publication, si une ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’assistant. Seules les références affichées, qui sont soit non publiées, soit modifiées depuis la dernière publication. Sélectionnez les références que vous souhaitez publier.
 
@@ -719,7 +718,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 >
 >La chronologie comprend plusieurs [options spécifiques aux fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-## Annoter les ressources {#annotating}
+## Annotation de fichiers {#annotating}
 
 Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
@@ -733,7 +732,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Cliquez sur l&#39;option **[!UICONTROL Annoter]** dans l&#39;une des options suivantes :
 
    * [Actions rapides](/help/assets/manage-assets.md#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource ou avoir accédé à la page de la ressource.
+   * Dans la barre d’outils après avoir sélectionné la ressource ou accédé à la page de la ressource.
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
@@ -931,7 +930,7 @@ Pour plus d’informations sur la gestion des collections, voir [gestion des col
 
 [!DNL Experience Manager] application de bureau permet d’accéder au référentiel DAM depuis un bureau Windows ou Mac. Adobe Asset Link permet d’accéder aux ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge.
 
-Lors de la navigation dans des ressources de l&#39;interface utilisateur [!DNL Experience Manager], les ressources expirées ne s&#39;affichent pas. Pour empêcher l’affichage, la recherche et la récupération de fichiers expirés lors de la navigation dans des fichiers à partir d’une application de bureau et d’un lien d’actif, les administrateurs peuvent effectuer la configuration suivante. La configuration fonctionne pour tous les utilisateurs, quel que soit le privilège d’administrateur.
+Lors de la navigation dans des ressources de l’interface utilisateur [!DNL Experience Manager], les ressources parvenues à expiration ne s’affichent pas. Pour empêcher l’affichage, la recherche et la récupération de fichiers parvenus à expiration lors de la navigation dans des fichiers à partir d’une application de bureau et d’un lien d’actif, les administrateurs peuvent appliquer la configuration suivante. La configuration fonctionne pour tous les utilisateurs, quel que soit le privilège d’administrateur.
 
 Exécutez la commande CURL suivante. Assurez-vous de lire l’accès sur `/conf/global/settings/dam/acpapi/` pour les utilisateurs qui accèdent aux ressources. Les utilisateurs qui font partie du groupe `dam-user` ont l’autorisation par défaut.
 
