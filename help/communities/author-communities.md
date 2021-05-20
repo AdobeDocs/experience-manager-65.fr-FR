@@ -1,8 +1,8 @@
 ---
 title: Composants d’AEM Communities
 seo-title: Composants d’AEM Communities
-description: Ajouter des fonctionnalités de la communauté à tout site AEM
-seo-description: Ajouter des fonctionnalités de la communauté à tout site AEM
+description: Ajout de fonctionnalités de communauté à n’importe quel site AEM
+seo-description: Ajout de fonctionnalités de communauté à n’importe quel site AEM
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 67%
 
 ---
-
 
 # Composants d’AEM Communities {#communities-components}
 
@@ -33,7 +32,7 @@ Pour en savoir plus sur la création d’un site de communauté, voir :
 
 >[!NOTE]
 >
->Si l’environnement de création ne vous est pas familier, vue la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [guide rapide de création de pages](/help/sites-authoring/qg-page-authoring.md).
+>Si vous ne connaissez pas l’environnement de création, consultez la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un guide rapide [pour créer des pages](/help/sites-authoring/qg-page-authoring.md).
 
 ## Composants d’AEM Communities disponibles {#available-communities-components}
 
@@ -43,7 +42,7 @@ Voir aussi le [Guide des composants de la communauté](/help/communities/compone
 
 >[!NOTE]
 >
->Lisez [Community Components Basics](/help/communities/basics.md) car il contient les informations nécessaires à la création avec les composants Communities.
+>Lisez la section [Principes de base des composants des communautés](/help/communities/basics.md), car elle contient des informations nécessaires à la création avec des composants des communautés.
 
 | **Libellé du composant**  | **Fonctionnalité** |
 |---|---|
@@ -63,7 +62,7 @@ Voir aussi le [Guide des composants de la communauté](/help/communities/compone
 | Abonnement | [Graphique des réseaux sociaux](/help/communities/socialgraph.md) |
 | Forum | [Forum](/help/communities/forum.md) |
 | Conceptualisation | [Conceptualisation](/help/communities/ideation-feature.md) |
-| Classement | [Scores et insignes](/help/communities/enabling-leaderboard.md) |
+| Classement | [Notation et badges](/help/communities/enabling-leaderboard.md) |
 | Aimer | [Aimer](/help/communities/liking.md) |
 | Message | [Message](/help/communities/configure-messaging.md) |
 | Liste des messages | [Message](/help/communities/configure-messaging.md) |
@@ -80,7 +79,7 @@ Voir aussi le [Guide des composants de la communauté](/help/communities/compone
 
 >[!NOTE]
 >
->Le composant Sondage n’est plus disponible et n’est plus pris en charge dans les communautés Experience Manager.
+>Le composant Sondage n’est plus disponible et pris en charge dans les communautés de Experience Manager.
 
 ## Documentation sur les communautés associée {#related-communities-documentation}
 
@@ -88,5 +87,4 @@ Voir aussi le [Guide des composants de la communauté](/help/communities/compone
 
 * Reportez-vous à la section [Administration des sites de communauté](/help/communities/administer-landing.md) pour en savoir plus sur la création d’un site de communauté, la configuration de modèles de sites de communauté, la modération du contenu de communauté, la gestion des membres et la configuration de la messagerie.
 
-* Visitez [Communautés en développement](/help/communities/communities.md) pour en savoir plus sur le cadre des composants sociaux (SCF) et sur la personnalisation des composants et fonctionnalités des communautés.
-
+* Visitez [Développement de communautés](/help/communities/communities.md) pour en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités de communautés.
