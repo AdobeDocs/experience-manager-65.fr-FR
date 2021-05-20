@@ -10,33 +10,32 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '955'
 ht-degree: 69%
 
 ---
-
 
 # Mise à niveau vers AEM 6.5 Forms on OSGi {#upgrade-to-aem-forms-osgi}
 
 Vous pouvez effectuer une mise à niveau directe à partir d’AEM 6.3 Forms ou AEM 6.4 Forms vers AEM 6.5 Forms.
 
-Le chemin de mise à niveau direct de **AEM Forms 6.0, AEM 6.1 Forms** et **AEM 6.2 Forms** à l&#39; 6.5 Forms n&#39;est pas disponible. Effectuez une mise à niveau intermédiaire [vers AEM 6.2 Forms](https://helpx.adobe.com/fr/experience-manager/6-2/forms/using/upgrade.html), [vers AEM 6.3 Forms](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/upgrade.html), ou [vers l&#39; 6.4 Forms](/help/forms/using/upgrade.md), puis effectuez une mise à niveau de l&#39; 6.3 Forms ou de l&#39; 6.5 6.4.
+Le chemin de mise à niveau directe de **Forms 6.0, AEM 6.1 Forms** et **Forms 6.2** vers 6.5 Forms n’est pas disponible. Effectuez une mise à niveau intermédiaire vers AEM 6.2 Forms](https://helpx.adobe.com/fr/experience-manager/6-2/forms/using/upgrade.html), [vers AEM 6.3 Forms](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/upgrade.html) ou [vers la version 6.4 Forms](/help/forms/using/upgrade.md), puis effectuez une mise à niveau depuis 6.3 Forms ou la version 6.4 vers l’ 6.5.[
 
-Effectuez les opérations suivantes pour effectuer la mise à niveau de l’AEM 6.3 Forms ou AEM 6.4 Forms vers l’ 6.5 Forms :
+Procédez comme suit pour effectuer la mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers la version 6.5 Forms d’AEM :
 
 1. Mettez à niveau l’instance AEM existante vers AEM 6.5. Les étapes sont énumérées ci-dessous :
 
-   1. Installez le dernier Service Pack et les derniers correctifs pour AEM 6.3 Forms ou AEM 6.4 Forms. Pour plus d&#39;informations, voir [AEM Centre de soutien ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
+   1. Installez le dernier Service Pack et les derniers correctifs pour AEM 6.3 Forms ou AEM 6.4 Forms. Pour plus d’informations, voir [AEM Hub de subsistance](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
    1. Préparez l’instance source pour la mise à niveau. Pour obtenir des instructions détaillées, reportez-vous à l’article [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md).
    1. Téléchargez [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software).
    1. **(Installations Unix/Linux uniquement)** Si vous utilisez UNIX ou Linux en tant que système d’exploitation sous-jacent, ouvrez la fenêtre de terminal, accédez au dossier contenant crx-quickstart et exécutez la commande suivante :
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. Mettez à niveau votre instance AEM vers AEM 6.3. Pour obtenir des instructions étape par étape, voir [Mise à niveau vers l’ 6.5](/help/sites-deploying/upgrade.md).
+   1. Mettez à niveau votre instance d’AEM vers AEM 6.3. Pour obtenir des instructions étape par étape, voir [Mise à niveau vers la version 6.5](/help/sites-deploying/upgrade.md) d’.
 
       Avant de passer aux étapes suivantes, attendez que le journal &lt;crx-repository>/error.log contiennent les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED.
 
@@ -50,12 +49,12 @@ Effectuez les opérations suivantes pour effectuer la mise à niveau de l’AEM 
    1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
    1. Dans la section **[!UICONTROL Filtres]** :
       1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-      1. Sélectionnez la version et le type du package. Vous pouvez également utiliser l&#39;option **[!UICONTROL Rechercher les téléchargements]** pour filtrer les résultats.
-   1. Appuyez sur le nom du package correspondant à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
-   1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+      1. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Téléchargements de recherche]** pour filtrer les résultats.
+   1. Appuyez sur le nom du module approprié à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur (EULA)]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+   1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
    1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-      Vous pouvez également télécharger le package à l’aide du lien direct répertorié dans l’article [AEM Forms versions](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
+      Vous pouvez également télécharger le package à l’aide du lien direct répertorié dans l’ [article Versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) .
 
       >[!NOTE]
       >
@@ -67,7 +66,7 @@ Effectuez les opérations suivantes pour effectuer la mise à niveau de l’AEM 
 
    * **Exécuter l’utilitaire de migration**
 
-      L’utilitaire de migration rend les formulaires adaptatifs et les actions de gestion de la correspondance des versions antérieures compatibles avec les formulaires AEM 6.5. Vous pouvez télécharger l&#39;utilitaire depuis AEM Software Distribution. Pour des informations détaillées sur la configuration et l’utilisation de l’utilitaire de migration, voir [l’utilitaire de migration](../../forms/using/migration-utility.md).
+      L’utilitaire de migration rend les formulaires adaptatifs et les actions de gestion de la correspondance des versions antérieures compatibles avec les formulaires AEM 6.5. Vous pouvez télécharger l’utilitaire à partir d’AEM Distribution logicielle. Pour des informations détaillées sur la configuration et l’utilisation de l’utilitaire de migration, voir [l’utilitaire de migration](../../forms/using/migration-utility.md).
 
       Si vous utilisez [Exemple pour l’intégration du composant brouillons et envois](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) avec la base de données et que vous mettez à niveau à partir d’une version précédente, exécutez les requêtes SQL suivantes après avoir effectué la mise à niveau :
 
@@ -83,16 +82,16 @@ Effectuez les opérations suivantes pour effectuer la mise à niveau de l’AEM 
       WHERE `key` = 'dataType'
       ```
 
-   * **(Si la mise à niveau est effectuée à partir de AEM 6.2 Forms ou des versions précédentes uniquement) Reconfiguration de Adobe Sign**
+   * **(Si vous effectuez une mise à niveau à partir d’AEM 6.2 Forms ou de versions précédentes uniquement) Reconfigurez Adobe Sign**
 
       Si vous avez configuré Adobe Sign dans la version précédente d’AEM Forms, reconfigurez Adobe Sign à partir des services cloud AEM. Pour plus d’informations, voir [Incorporation d’Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
    * **Prise en charge de jQuery**
 
-      Dans AEM 6.5 Forms, la version de jQuery est mise à jour vers 3.2.1 et la version de l’interface utilisateur de jQuery est mise à jour vers 1.12.1. AEM Form utilise JQuery en mode **noConflict**. Ainsi, si vous utilisez une autre version de jQuery, aucun problème ne s’affiche lors de la mise à niveau. Toutefois, lorsque vous effectuez une mise à niveau vers AEM 6.5 Forms :
+      Dans AEM 6.5 Forms, la version de jQuery est mise à jour vers la version 3.2.1 et la version de l’interface utilisateur de jQuery est mise à jour vers la version 1.12.1. AEM Form utilise JQuery en mode **noConflict**. Ainsi, si vous utilisez une autre version de jQuery, aucun problème ne s’affiche lors de l’exécution d’une mise à niveau. Cependant, lorsque vous effectuez une mise à niveau vers AEM 6.5 Forms :
 
       * Assurez-vous que vos composants personnalisés, le cas échéant, sont compatibles avec les versions jQuery prises en charge.
-      * Supprimez les API non prises en charge des composants personnalisés. Voir [guide de mise à niveau](https://jquery.com/upgrade-guide/3.0/) pour la liste des API supprimées. Par exemple, les API load(), .unload() et .error() sont supprimées. Utilisez la méthode .on() à la place des API mentionnées ci-dessus. Par exemple, remplacez $(&quot;img&quot;).load(fn) par $(&quot;img&quot;).on(&quot;load&quot;, fn).
+      * Supprimez les API non prises en charge des composants personnalisés. Voir le [guide de mise à niveau](https://jquery.com/upgrade-guide/3.0/) pour obtenir la liste des API supprimées. Par exemple, la prise en charge des API load(), .unload() et .error() est supprimée. Utilisez la méthode .on() à la place des API mentionnées ci-dessus. Par exemple, remplacez $(&quot;img&quot;).load(fn) par $(&quot;img&quot;).on(&quot;load&quot;, fn).
    * **(Si vous effectuez une mise à niveau à partir d’AEM 6.2 Forms ou de versions précédentes uniquement) Reconfigurez l’analyse et les rapports**
 
       Dans AEM 6.4 Forms, la variable de trafic pour la source et l’événement de réussite pour l’impression ne sont pas disponibles. Ainsi, lorsque vous effectuez une mise à niveau à partir d’AEM 6.2 Forms ou de versions précédentes, AEM Forms cesse d’envoyer des données au serveur Adobe Analytics et les rapports d’analyse pour les formulaires adaptatifs ne sont pas disponibles. En outre, AEM 6.4 Forms introduit une variable de trafic pour la version de l’analyse de formulaire et de l’événement de réussite pour le temps passé sur un champ. Vous devez donc reconfigurer les analyses et les rapports pour votre environnement AEM Forms. Pour les étapes détaillées, voir [Configuration des analyses et des rapports](../../forms/using/configure-analytics-forms-documents.md).
@@ -109,5 +108,4 @@ Effectuez les opérations suivantes pour effectuer la mise à niveau de l’AEM 
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
-   Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Si vous passez de la version 6.3 Forms à AEM version 6.5 Forms, utilisez les chemins modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM ](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
-
+   Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Si vous effectuez une mise à niveau de Forms 6.3 vers AEM Forms 6.5, utilisez les chemins modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM ](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
