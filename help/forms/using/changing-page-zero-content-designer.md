@@ -8,31 +8,30 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
-
 # Modification du contenu de la page zéro avec Designer {#changing-page-zero-content-in-designer}
 
-Le contenu de la page zéro s’affiche par défaut lorsqu’un lecteur non Adobe PDF, tel que la visionneuse PDF par défaut dans [!DNL Chrome] ou [!DNL Firefox], ne peut pas lire le contenu du formulaire PDF/XFA. Le message par défaut de la page zéro est affiché ci-dessous.
+Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de visualisation PDF autre que celui d’Adobe, tel que la visionneuse de fichiers PDF par défaut dans [!DNL Chrome] ou [!DNL Firefox], ne peut pas lire le contenu d’un formulaire PDF/XFA. Le message par défaut de la page zéro est affiché ci-dessous.
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] La version de Designer vous permet de modifier le message affiché sur la page zéro. Pour modifier le message de la page zéro, procédez comme suit :
+La version [!DNL AEM Forms] de Designer vous permet de modifier le message affiché sur la page zéro. Pour modifier le message de la page zéro, procédez comme suit :
 
 1. Assurez-vous que la version [!DNL AEM Forms] de Designer est installée. Vous pouvez vérifier la version dans l’écran A propos de Designer.
 
 1. Ouvrez le formulaire dont vous souhaitez modifier le contenu de la page zéro.
 
-1. Cliquez sur **[!UICONTROL Fichier]** > **[!UICONTROL Propriétés du formulaire]**.
+1. Cliquez sur **[!UICONTROL Fichier]** > **[!UICONTROL Propriétés du formulaire]**.
 
-1. Dans la boîte de dialogue [!UICONTROL Propriétés du formulaire], cliquez sur ![plus](assets/plus.png) (icône Plus) pour ajouter une propriété personnalisée.
+1. Dans la boîte de dialogue [!UICONTROL Propriétés du formulaire], cliquez sur le signe ![plus](assets/plus.png) (icône plus) pour ajouter une propriété personnalisée.
 
 1. Spécifiez **_pagezerocontent** en tant que nom de propriété.
 1. Ajoutez le nouveau message de la page zéro au format Rich Text, en tant que valeur. Par exemple :
@@ -42,7 +41,7 @@ Le contenu de la page zéro s’affiche par défaut lorsqu’un lecteur non Adob
 
 1. Enregistrez le formulaire au format PDF.
 
-1. Affichez le formulaire PDF dans le navigateur pour vous assurer que le message a été mis à jour. La valeur d’exemple évoquée ci-dessus apparaît comme suit : 
+1. Affichez le formulaire PDF dans le navigateur pour vous assurer que le message a été mis à jour. La valeur d’exemple évoquée ci-dessus apparaît comme suit :
 
    ![changedmessage](assets/changedmessage.png)
 
