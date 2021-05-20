@@ -9,22 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 79%
 
 ---
 
-
 # Rendu du modèle de formulaire pour des formulaires HTML5 {#rendering-form-template-for-html-forms}
 
 ## Point de fin du rendu {#render-endpoint}
 
-Les formulaires HTML5 ont la notion de **Profils** qui sont exposés en tant que points de terminaison REST pour activer le rendu mobile des modèles de formulaire. Ces Profils ont associé **Profil Renderer**. Il s’agit de pages JSP chargées de générer une représentation HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point de fin du rendu. Le point de fin du rendu par défaut du formulaire pointant vers le profil « par défaut» ressemble à :
+Les formulaires HTML5 ont la notion de **Profils** qui sont exposés en tant que points de terminaison REST pour activer le rendu mobile des modèles de formulaire. Ces profils ont associé **Rendu de profil**. Il s’agit de pages JSP chargées de générer la représentation HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point de fin du rendu. Le point de fin du rendu par défaut du formulaire pointant vers le profil « par défaut» ressemble à :
 
-https://&quot;a0/>hôte *:&quot;a2/>port&lt;a3/&quot;/content/xfaforms/profiles/default.html?contentRoot=&quot;a4/>chemin d’accès du dossier contenant le formulaire xdp&lt;a5/&quot;&amp;template=&quot;a6/>nom du fichier xdp&lt;a7/&quot;*******
+https://&quot;a0/>host *:&quot;a2/>port&lt;a3/&quot;/content/xfaforms/profiles/default.html?contentRoot=&quot;a4/>chemin du dossier contenant le formulaire xdp*&amp;template=&quot;a6/>nom du xdp&lt;a7/&quot;******
 
 Par exemple, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
@@ -69,7 +68,7 @@ Les paramètres de requête pris en charge lors du rendu d’un formulaire au fo
 
 | Paramètre | Description |
 |---|---|
-| dataRef | Ce paramètre indique le **chemin d’accès absolu** du fichier de données fusionné avec le modèle. Ce paramètre peut être une URL vers un service rest renvoyant les données au format xml. |
+| dataRef | Ce paramètre indique le **chemin d’accès absolu** du fichier de données fusionné avec le modèle. Ce paramètre peut être une URL vers un service REST renvoyant les données au format xml. |
 | data | Ce paramètre spécifie les octets de données codés au format UTF-8 qui sont fusionnés avec le modèle. Si ce paramètre est spécifié, le formulaire HTML5 ignore le paramètre dataRef. |
 
 ### Passage du paramètre de rendu  {#passing-the-render-parameter}
@@ -80,7 +79,7 @@ Les formulaires HTML5 prennent en charge trois méthodes pour transmettre des pa
 
 * **Paramètres de demande SetAttribute** : Vous pouvez spécifier les paramètres de rendu sous la forme d’une paire de valeurs de clé. Dans les paramètres de demande SetAttribute, les paramètres ne sont pas visibles par l’utilisateur final. Vous pouvez transférer une requête depuis un autre JSP vers le JSP de rendu de profil HTML5 et utiliser *setAttribute* sur l’objet de la requête pour transmettre tous les paramètres de rendu. Cette méthode a la priorité la plus élevée.
 
-* **Paramètres de demande de noeud de profil :** vous pouvez spécifier les paramètres de rendu en tant que propriétés de noeud d’un noeud de profil. Dans les paramètres de requête de nœud de profil, les paramètres ne sont pas visibles par l’utilisateur. Le nœud de profil est le nœud où la requête est envoyée. Pour spécifier des paramètres en tant que propriétés de nœud, utilisez CRXDE lite.
+* **Paramètres de requête du noeud de profil :** vous pouvez spécifier les paramètres de rendu en tant que propriétés de noeud d’un noeud de profil. Dans les paramètres de requête de nœud de profil, les paramètres ne sont pas visibles par l’utilisateur. Le nœud de profil est le nœud où la requête est envoyée. Pour spécifier des paramètres en tant que propriétés de nœud, utilisez CRXDE lite.
 
 ### Paramètres d’envoi  {#submit-parameters}
 
