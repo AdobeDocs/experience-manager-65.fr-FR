@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1656'
 ht-degree: 74%
 
 ---
-
 
 # Gestion de processus {#managing-processes}
 
@@ -24,13 +23,13 @@ La page Liste de processus répertorie les processus initiés par un utilisateur
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Processus des formulaires. La Liste de processus présente les informations suivantes :
 
-   **Nom du processus - Version :** nom du processus, tel que défini dans Workbench.
+   **Nom du processus - Version :**  nom du processus, tel que défini dans Workbench.
 
    **Application :** application à laquelle appartient le processus, telle que définie dans Workbench.
 
-   **Etat :** Principal signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
+   **État :** Principal signifie que le processus est celui qui est activé pour la version de processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
 
-   **Date de création : date et heure** du déploiement du processus.
+   **Date de création :** date et heure de déploiement du processus.
 
 1. Cliquez sur le nom d’un processus pour afficher les instances de ce processus dans la page Instance du processus.
 
@@ -42,13 +41,13 @@ Pour chaque instance de processus, la liste présente les informations suivantes
 
 **ID de processus :** identifiant attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**Nom du processus - Version :** nom du processus, tel que défini dans Workbench.
+**Nom du processus - Version :**  nom du processus, tel que défini dans Workbench.
 
-**Etat :** indique si l’instance de processus s’exécute normalement, change d’état ou s’est arrêtée. (voir A propos des états d’instances de processus).
+**État :** indique si l’instance de processus s’exécute normalement, change d’état ou s’est arrêtée. (voir A propos des états d’instances de processus).
 
 **Date de création :** date et heure de création de l’instance de processus.
 
-**Date de mise à jour : date et heure** de la dernière modification de l’état de l’instance de processus.
+**Date de mise à jour :** date et heure de la dernière modification de l’état de l’instance de processus.
 
 Dans la page Instance du processus, vous pouvez exécuter les tâches suivantes :
 
@@ -62,11 +61,11 @@ Une instance de processus, y compris ses processus secondaires, peut présenter 
 
 **TERMINÉ :** toutes les branches et opérations de l’instance de processus sont terminées. ACHEVE est l’état final d’une instance de processus.
 
-**TERMINE :** l’état de l’instance de processus est sur le point de passer à TERMINE.
+**TERMINÉ :** l’état de l’instance de processus est sur le point de devenir TERMINÉ.
 
-**INITIÉ :** L’instance de processus a été créée mais n’est pas encore en cours d’exécution. INITIE est le premier état d’une instance de processus.
+**INITIÉ :** l’instance de processus a été créée, mais n’est pas encore en cours d’exécution. INITIE est le premier état d’une instance de processus.
 
-**EXÉCUTION :** L’instance de processus s’exécute normalement. Il est possible qu’une étape automatique soit en cours, ou que l’instance de processus reçoive des entrées utilisateur ou qu’elle soit en attente d’une interaction utilisateur.
+**EN COURS :**  l’instance de processus s’exécute normalement. Il est possible qu’une étape automatique soit en cours, ou que l’instance de processus reçoive des entrées utilisateur ou qu’elle soit en attente d’une interaction utilisateur.
 
 **SUSPENDU :** l’instance de processus a été suspendue par un administrateur ou par une étape du processus. Aucune opération supplémentaire ne sera exécutée jusqu’au changement de l’état.
 
@@ -74,9 +73,9 @@ Une instance de processus, y compris ses processus secondaires, peut présenter 
 
 **TERMINÉ :** l’instance de processus a été arrêtée par un administrateur.
 
-**TERMINE :** l’état est sur le point de devenir TERMINÉ. Si une opération a été conçue pour ignorer les requêtes d’arrêt et n’est pas encore achevée, cette opération doit s’achever avant que l’instance de processus soit arrêtée.
+**TERMINAISON :** l’état est sur le point de devenir TERMINÉ. Si une opération a été conçue pour ignorer les requêtes d’arrêt et n’est pas encore achevée, cette opération doit s’achever avant que l’instance de processus soit arrêtée.
 
-**SUSPENSION :** L’état est sur le point de devenir EN COURS après avoir été SUSPENDU.
+**UNSUSPENDING :**  l’état est sur le point de passer à EN COURS après avoir été SUSPENDU.
 
 >[!NOTE]
 >
@@ -120,25 +119,25 @@ Sur l’onglet Opérations, les opérations de l’instance de processus sont af
 
 **Nom de l’opération :** nom de l’opération, tel que défini dans Workbench.
 
-**Etat :** indique si l’opération s’exécute normalement ou s’est arrêtée. (voir A propos des états d’instances de processus).
+**État :** indique si l’opération s’exécute normalement ou s’est arrêtée. (voir A propos des états d’instances de processus).
 
 **Nom de branche :** nom de la branche, tel que défini dans Workbench.
 
-**Date de début : date et heure** de début de l’opération.
+**Date de début :** date et heure auxquelles l’opération a commencé.
 
-**Date de fin : date et heure** de fin de l’opération.
+**Date d’achèvement :** date et heure auxquelles l’opération s’est terminée.
 
 Un processus secondaire est une instance de processus qui a été démarrée par un autre processus et qui s’exécute indépendamment de cet autre processus. Des processus secondaires ne sont affichés que s’ils ont été conçus comme faisant partie du processus dans Workbench. Sur l’onglet Processus secondaires, chaque processus secondaire est affiché avec les informations suivantes :
 
-**ID de processus : entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance le processus).** Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
+**ID de processus :** entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance le processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**Nom du processus - Version :** nom du processus, tel que défini dans Designer.
+**Nom du processus - Version :**  nom du processus, tel que défini dans Designer.
 
-**Etat :** indique si l’instance de processus s’exécute normalement, change d’état ou s’est arrêtée. (voir A propos des états d’instances de processus).
+**État :** indique si l’instance de processus s’exécute normalement, change d’état ou s’est arrêtée. (voir A propos des états d’instances de processus).
 
-**Date de création :** date et heure auxquelles le processus secondaire a été créé.
+**Date de création :** date et heure de création du sous-processus.
 
-**Date de mise à jour : date et heure** de la dernière modification de l’état du processus secondaire.
+**Date de mise à jour :** date et heure de la dernière modification de l’état du sous-processus.
 
 Dans la page Détails de l’instance du processus, vous pouvez exécuter les tâches suivantes :
 
@@ -150,13 +149,13 @@ Dans la page Détails de l’instance du processus, vous pouvez exécuter les t�
 
 Une opération (une étape dans un processus) peut présenter les états suivants :
 
-**TERMINÉ :** l&#39;opération est terminée.
+**COMPLETE :** l’opération s’est terminée.
 
-**EXÉCUTION :** L’opération s’exécute normalement. Il est possible qu’elle reçoive des entrées utilisateur ou qu’elle attende une interaction utilisateur, ou encore qu’une étape automatisée soit en cours.
+**EN COURS :** l’opération s’exécute normalement. Il est possible qu’elle reçoive des entrées utilisateur ou qu’elle attende une interaction utilisateur, ou encore qu’une étape automatisée soit en cours.
 
-**BLOQUE :** un problème s&#39;est produit pendant le traitement de l&#39;opération. Recherchez l’erreur ou l’exception dans la page Opérations bloquées.
+**BLOQUE :** un problème s’est produit pendant le traitement de l’opération. Recherchez l’erreur ou l’exception dans la page Opérations bloquées.
 
-**TERMINÉ :** l&#39;opération a été arrêtée par un administrateur.
+**TERMINÉ :** l’opération a été arrêtée par un administrateur.
 
 ### Arrêt d’opérations ou de processus secondaires {#terminate-operations-or-subprocesses}
 
@@ -193,11 +192,10 @@ La page Détails de l’opération affiche le résumé d’une opération dans u
 
    Pour chaque tâche, la liste présente les informations suivantes :
 
-   **Nom du processus - Version :** nom du processus, tel que défini dans Workbench.
+   **Nom du processus - Version :**  nom du processus, tel que défini dans Workbench.
 
    **Application :** application à laquelle appartient le processus, telle que définie dans Workbench.
 
-   **Etat :** Principal signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
+   **État :** Principal signifie que le processus est celui qui est activé pour la version de processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
 
-   **Date de création : date et heure** du déploiement du processus.
-
+   **Date de création :** date et heure de déploiement du processus.
