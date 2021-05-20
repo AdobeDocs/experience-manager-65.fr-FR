@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 84%
 
 ---
 
-
 # Création d’une action de barre d’outils personnalisée{#creating-a-custom-toolbar-action}
 
-## Conditions préalables {#prerequisite}
+## Prérequis {#prerequisite}
 
 Avant de créer une action de barre d’outils personnalisée, reportez-vous aux sections [Utilisation de bibliothèques côté client](/help/sites-developing/clientlibs.md) et [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) pour vous familiariser avec ces concepts.
 
@@ -45,13 +44,13 @@ La procédure ci-dessous illustre la création d’une action personnalisée dan
    ![Hiérarchie des nœuds pour la personnalisation de la barre d’outils](assets/action3.png)
 
 1. Sélectionnez le noeud `cq:template` dans le noeud `reviewbeforesubmit`. Assurez-vous que la valeur de la propriété `guideNodeClass` est `guideButton` et modifiez la propriété `jcr:title` en conséquence.
-1. Modifiez la propriété type dans le noeud `cq:Template`. Dans l’exemple proposé, transformez la propriété de type en bouton.
+1. Modifiez la propriété type dans le noeud `cq:Template` . Dans l’exemple proposé, transformez la propriété de type en bouton.
 
    La valeur de type est ajoutée en tant que classe CSS dans le code HTML généré du composant. Les utilisateurs peuvent se servir de cette classe CSS pour appliquer un style à leurs actions. Le style par défaut pour les appareils mobiles et fixes (ordinateurs de bureau) est fourni pour les valeurs de type Bouton, Envoyer, Réinitialiser et Enregistrer.
 
 1. Sélectionnez l’action personnalisée dans la boîte de dialogue de barre d’outils de modification du formulaire adaptatif. Un bouton Révision s’affiche dans la barre d’outils du panneau.
 
-   ![Action personnalisée disponible dans la ](assets/custom_action_available_in_toolbar.png) ![barre d&#39;outilsAffichage de l&#39;action de barre d&#39;outils personnalisée](assets/action7.png)
+   ![L’action personnalisée est disponible dans la ](assets/custom_action_available_in_toolbar.png) ![barre d’outils Affichage de l’action de barre d’outils personnalisée](assets/action7.png)
 
 1. Pour fournir des fonctionnalités au bouton Révision, ajoutez du code JavaScript et CSS, ainsi que du code côté serveur, dans le fichier init.jsp situé dans le nœud `reviewbeforesubmit`.
 
