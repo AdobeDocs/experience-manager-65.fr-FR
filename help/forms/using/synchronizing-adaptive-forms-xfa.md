@@ -8,21 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
-
 
 # Synchronisation de formulaires adaptatifs avec des modèles de formulaire XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Présentation {#introduction}
 
-Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour la création d’un formulaire adaptatif, [Créez un formulaire adaptatif basé sur un modèle](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, voir [Créer un formulaire adaptatif basé sur un modèle](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptatif. Ces champs sont appelés champs liés. Les propriétés des champs liés (comme les scripts, les libellés et le format d’affichage) sont copiées à partir du fichier XDP. Vous pouvez également choisir de remplacer la valeur de certaines de ces propriétés.
 
@@ -32,7 +31,7 @@ AEM Forms permet de conserver les champs des formulaires adaptatifs synchronisé
 
 Dans l’environnement de création d’AEM Forms, vous pouvez faire glisser des champs d’un formulaire XFA (à gauche) jusqu’à un formulaire adaptatif (à droite).
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Pour utiliser les informations fournies dans cet article, il est recommandé de disposer de connaissances dans les domaines suivants :
 
@@ -40,7 +39,7 @@ Pour utiliser les informations fournies dans cet article, il est recommandé de 
 
 * XFA (XML Forms Architecture)
 
-Pour utiliser les ressources fournies pour l’exemple de l’article, téléchargez l’exemple de package, comme expliqué dans la section suivante, [Exemple de package](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
+Pour utiliser les ressources fournies pour l’exemple de cet article, téléchargez l’exemple de module, comme expliqué dans la section suivante, voir [Exemple de module](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
 
 ## Exemple de module {#sample-package}
 
@@ -48,11 +47,11 @@ Cet article utilise un exemple pour montrer comment synchroniser le formulaire a
 
 Une fois le module téléchargé, vous pouvez afficher ces ressources dans l’interface utilisateur d’AEM Forms.
 
-Installez le package à l’aide du gestionnaire de packages : `https://<server>:<port>/crx/packmgr/index.jsp`
+Installez le module à l’aide du gestionnaire de modules : `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Le module contient les ressources suivantes :
 
-1. `sample-form.xdp` : modèle de formulaire XFA utilisé comme exemple. 
+1. `sample-form.xdp` : modèle de formulaire XFA utilisé comme exemple.
 
 1. `sample-xfa-af` : formulaire adaptatif basé sur le fichier sample-form.xdp. Ce formulaire adaptatif ne contient toutefois aucun champ. Dans l’étape suivante, vous allez ajouter du contenu à ce formulaire adaptatif.
 
@@ -75,9 +74,9 @@ Après la mise à jour d’un fichier XDP, vous devez le télécharger à nouvea
 
 À titre d’exemple, vous allez mettre à jour le fichier `sample-form.xdp` en procédant comme suit :
 
-1. Accédez à `https://<server>:<port>/projects.html.` Entrez vos informations d’identification si vous y êtes invité.
+1. Accédez à `https://<server>:<port>/projects.html.` Entrez vos informations d’identification si cela vous est demandé.
 1. Cliquez sur l’onglet Formulaires à gauche.
-1. Téléchargez le fichier `sample-form.xdp` sur votre ordinateur local. Le fichier XDP est téléchargé en tant que fichier `.zip`, qui peut être extrait à l’aide de n’importe quel utilitaire de décompression de fichier.
+1. Téléchargez le fichier `sample-form.xdp` sur votre ordinateur local. Le fichier XDP est téléchargé sous la forme d’un fichier `.zip`, qui peut être extrait à l’aide de n’importe quel utilitaire de décompression de fichiers.
 
 1. Ouvrez le fichier `sample-form.xdp` et remplacez le titre du champ TextField1 de **Text Field** par **My Text Field**.
 
@@ -89,7 +88,7 @@ Si un fichier XDP est mis à jour, vous voyez une icône dans l’éditeur, lors
 
 ## Synchronisation des formulaires adaptatifs avec le fichier XDP le plus récent {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
-Lorsqu’un formulaire adaptatif qui n’est pas synchronisé avec le fichier XDP est ouvert en vue de sa création, le message suivant s’affiche :**Schema/Form Template for the Adaptive Form has been updated. `Click Here` pour la rebaser sur la nouvelle version.**
+Lorsqu’un formulaire adaptatif qui n’est pas synchronisé avec le fichier XDP est ouvert en vue de sa création, le message suivant s’affiche :**Schema/Form Template for the Adaptive Form has been updated. `Click Here` pour le baser sur la nouvelle version.**
 
 Lorsque vous cliquez sur le message, les champs du formulaire adaptatif sont synchronisés avec les champs correspondants du fichier XDP.
 
@@ -107,7 +106,7 @@ Pour mettre à jour les propriétés dans l’exemple de formulaire adaptatif, c
 
 >[!NOTE]
 >
->Le libellé AF Numeric Field n’a pas été modifié car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans [Ajouter le contenu aux formulaires adaptatifs](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
+>Le libellé AF Numeric Field n’a pas été modifié car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans la section [Ajout de contenu aux formulaires adaptatifs](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
 
 ### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
@@ -119,13 +118,13 @@ Il n’est pas nécessaire de cliquer sur le lien du message d’erreur pour met
 
 Si un champ qui a été copié dans un formulaire adaptatif est supprimé d’un fichier XDP, un message d’erreur s’affiche en mode création indiquant que le champ n’existe pas dans le fichier XDP. Dans ce cas, supprimez manuellement le champ du formulaire adaptatif ou effacez la propriété `bindRef` dans la boîte de dialogue Composant.
 
-Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l’exemple utilisé dans cet article : 
+Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l’exemple utilisé dans cet article :
 
 1. Mettez à jour le fichier `sample-form.xdp` et supprimez NumericField1.
 1. Téléchargez le fichier `sample-form.xdp` dans l’interface utilisateur d’AEM Forms.
-1. Ouvrez le formulaire adaptatif `sample-xfa-af`   en vue de sa création. Le message d’erreur suivant s’affiche : Le schéma/modèle de formulaire pour le formulaire adaptatif a été mis à jour. `Click Here` pour la rebaser sur la nouvelle version.
+1. Ouvrez le formulaire adaptatif `sample-xfa-af`   en vue de sa création. Le message d’erreur suivant s’affiche : Le schéma/le modèle de formulaire du formulaire adaptatif a été mis à jour. `Click Here`pour le baser sur la nouvelle version.
 
-1. Cliquez sur le lien (intitulé &quot; `Click Here`&quot;) dans le message. Un message d’erreur s’affiche indiquant que le champ n’existe plus dans le fichier XDP.
+1. Cliquez sur le lien (intitulé « `Click Here` ») du message. Un message d’erreur s’affiche indiquant que le champ n’existe plus dans le fichier XDP.
 
 ![Erreur apparaissant lorsque vous supprimez un élément dans le fichier XDP](assets/no-element-xdp.png)
 
@@ -137,8 +136,8 @@ Le champ qui a été supprimé est également signalé par une icône pour indiq
 >
 >Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` incorrecte dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section unbinded du fichier XML de sortie.
 
-## Downloads (Téléchargements){#downloads}
+## Téléchargements {#downloads}
 
-Module de contenu pour l’exemple dans cet article
+Package de contenu pour l’exemple dans cet article
 
 [Obtenir le fichier](assets/sample-xfa-af-sync-1.0.zip)
