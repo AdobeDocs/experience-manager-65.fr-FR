@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: f4045df5-a35b-41d7-910e-971017148597
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 94%
 
 ---
-
 
 # Configuration de Connector for IBM FileNet {#configuring-connector-for-ibm-filenet}
 
@@ -81,11 +80,11 @@ Vous pouvez configurer le fournisseur de services de référentiel à utiliser a
 
 Les options suivantes sont disponibles :
 
-**Nom du fournisseur de référentiel actuel :** nom du prestataire de référentiel actuel
+**Nom du fournisseur de référentiel actuel :** nom du fournisseur de services de référentiel actuel.
 
-**Fournisseur du référentiel IBM FileNet :** fait du fournisseur du référentiel FileNet le fournisseur du référentiel pour le référentiel. Cette option est obsolète.
+**Fournisseur du référentiel IBM FileNet :** fait du fournisseur du référentiel FileNet le fournisseur du référentiel. Cette option est obsolète.
 
-**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur de référentiel pour le référentiel
+**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur du référentiel.
 
 >[!NOTE]
 >
