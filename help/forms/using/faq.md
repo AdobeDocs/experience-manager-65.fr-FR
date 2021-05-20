@@ -11,22 +11,21 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 82%
 
 ---
 
-
 # Questions fréquentes (FAQ) des formulaires HTML5{#frequently-asked-questions-faq-for-html-forms}
 
 Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts, et les plages des formulaires HTML5.
 
-## Disposition {#layout}
+## Mise en page {#layout}
 
-1. Pourquoi les codes à barres et le champ de signature ne s’affichent-ils pas dans mon formulaire ?
+1. Pourquoi les codes à barres et le champ de signature dans n’apparaissent-ils pas dans mon formulaire ?
 
    Réponse : les champs de codes à barres et de signatures ne sont pas adaptés aux cas de figures impliquant du HTML ou des périphériques mobiles. Ces champs s’affichent sous la forme d’une zone non interactive. Cependant, AEM Forms Designer propose un nouveau champ de saisie tactile de signature qui peut être utilisé à la place du champ de signature. Vous pouvez également ajouter un [widget personnalisé](../../forms/using/custom-widgets.md) pour les codes à barres et l’intégrer.
 
@@ -40,7 +39,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    1. Définissez le nombre initial de sous-formulaire répétable sur 1.
 
-      ![nombre initial](assets/intial-count.png)
+      ![intial-count](assets/intial-count.png)
 
    1. Utilisez l’événement initialize du formulaire pour masquer l’instance principale du sous-formulaire. Par exemple, le code ci-dessous masque l’instance principale du sous-formulaire lors de l’initialisation du formulaire. Il vérifie également le type d’application pour s’assurer que le script est exécuté uniquement du côté client : 
 
@@ -90,13 +89,13 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Réponse : un sous-formulaire masqué avec une hiérarchie complexe fractionnée sur plusieurs pages génère des problèmes de mise en page. Une façon de contourner ce problème consiste à marquer le sous-formulaire visible au début, puis de le masquer dans un script d’initialisation basé sur une logique ou des données.
 
-1. Pourquoi un texte est-il tronqué ou s’affiche-t-il incorrectement dans HTML5 ?
+1. Pourquoi du texte est-il tronqué ou s’affiche-t-il incorrectement dans HTML5 ?
 
-   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue de conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception de AEM Forms Designer.
+   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue Conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception de AEM Forms Designer.
 
 1. Je constate des problèmes de mise en page liés à du contenu manquant ou à des chevauchements. Quelle en est la raison ?
 
-   Réponse : S’il existe un élément Texte de dessin ou Image de dessin avec un autre élément se chevauchant à la même position (un rectangle, par exemple), le contenu Texte de dessin n’est pas visible s’il apparaît plus loin dans l’ordre de document (dans la vue de la hiérarchie de AEM Forms Designer). Le format PDF prend en charge la mise en calque transparente mais ce n’est pas le cas du HTML et des navigateurs.
+   Réponse : S’il existe un élément de texte de dessin ou d’image de dessin accompagné d’un autre élément se chevauchant à la même position (un rectangle, par exemple), le contenu de texte de dessin n’est pas visible s’il apparaît plus loin dans l’ordre du document (dans la vue Hiérarchie d’AEM Forms Designer). Le format PDF prend en charge la mise en calque transparente mais ce n’est pas le cas du HTML et des navigateurs.
 
 1. Pourquoi certaines polices affichées dans le formulaire HTML sont-elles différentes de celles utilisées lors de la conception du formulaire ?
 
@@ -126,14 +125,14 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Existe-t-il des restrictions concernant l’utilisation des tableaux dans mon xdp ?
 
-   Réponse : Les tableaux complexes provoquent des problèmes de rendu.
+   Réponse : Les tableaux complexes entraînent des problèmes de rendu.
 
    * La section (SubformSet) à l’intérieur d’un tableau n’est pas prise en charge.
    * Les lignes d’en-tête ou de pied de page dans certains tableaux sont marquées pour la répétition. Le fractionnement de ces tableaux sur plusieurs pages peut conduire à certains problèmes.
 
 1. Les tableaux accessibles sont-ils soumis à des restrictions ?
 
-   Réponse : Oui, les tableaux accessibles présentent les restrictions suivantes :
+   Réponse : Oui, les tableaux accessibles présentent les limites suivantes :
 
    * Les tableaux imbriqués et le sous-formulaire à l’intérieur d’un tableau ne sont pas pris en charge.
    * Les en-têtes sont uniquement pris en charge pour la ligne supérieure ou les colonnes de gauche du tableau. Les en-têtes ne sont pas pris en charge pour les éléments de mi-tableau. Vous pouvez appliquer des en-têtes à plusieurs lignes et les en-têtes de colonne sont pris en charge si toutes les lignes et colonnes sont associées à la ligne la plus élevée ou la colonne la plus à gauche du tableau.
@@ -150,7 +149,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Pour désactiver l’affichage d’info-bulle lorsque vous survolez un champ, choisissez Aucun dans le panneau Accessibilité de Designer.
 
-1. Dans Designer, un utilisateur peut configurer les propriétés personnalisées d’aspect des boutons radio et des cases à cocher. Lors du rendu des formulaires, les formulaires HTML5 prennent-ils en compte ces propriétés d’aspect personnalisées ?
+1. Dans Designer, un utilisateur peut configurer les propriétés personnalisées d’aspect des boutons radio et des cases à cocher. Lors du rendu des formulaires, les formulaires HTML5 prennent-ils en compte ces propriétés personnalisées d’aspect ?
 
    Réponse : Les formulaires HTML5 ignorent les propriétés personnalisées d’aspect des boutons radio et des cases à cocher. Les boutons radio et les cases à cocher s’affichent selon les spécifications du navigateur sous-jacent.
 
@@ -165,11 +164,11 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
                </border> -->
    ```
 
-1. Pourquoi les lecteurs d’écran ne fonctionnent pas correctement avec l’objet de champ Date/Heure ?
+1. Pourquoi les lecteurs d’écran ne fonctionnent-ils pas correctement avec l’objet de champ Date/Heure ?
 
-   Les lecteurs d’écran ne prennent pas en charge les champs Date/Heure. Cependant, vous pouvez saisir manuellement la date et l’heure du champ pour que le lecteur d’écran le lise. Utilisez du texte d’info-bulle ou de lecteur d’écran pour indiquer à l’utilisateur de sélectionner manuellement la date et l’heure du champ.
+   Les lecteurs d’écran ne prennent pas en charge les champs Date/Heure. Cependant, vous pouvez saisir manuellement la date et l’heure du champ pour que le lecteur d’écran le lise. Utilisez une info-bulle ou du texte de lecteur d’écran pour indiquer à l’utilisateur de sélectionner manuellement la date/l’heure du champ.
 
-1. Les formulaires HTML5 prennent-ils en charge les modèles d’affichage des champs flottants ?
+1. Les formulaires HTML5 prennent-ils en charge les modèles d’affichage pour les champs flottants ?
 
    Réponse : Les formulaires HTML5 ne prennent pas en charge les modèles d’affichage pour les champs flottants.
 
@@ -179,8 +178,8 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Réponse:
 
-   * La prise en charge du script xfa.connectionSet est limitée. Pour connectionSet, seul l’appel côté serveur du service Web est pris en charge. Pour plus d’informations, voir [Prise en charge des scripts](/help/forms/using/scripting-support.md).
-   * Il n’existe aucune prise en charge de $record et $data dans les scripts côté client. Cependant, si les scripts sont écrits dans un bloc formReady ou layoutReady, les scripts fonctionnent toujours car ces événements s’exécutent côté serveur.
+   * La prise en charge du script xfa.connectionSet est limitée. Pour connectionSet, seul l’appel côté serveur du service web est pris en charge. Pour plus d’informations, voir [Prise en charge des scripts](/help/forms/using/scripting-support.md).
+   * Il n’existe aucune prise en charge de $record et $data dans les scripts côté client. Cependant, si les scripts sont écrits dans un bloc formReady ou layoutReady, ils fonctionnent toujours car ces événements s’exécutent côté serveur.
    * Les scripts spécifiques des éléments XFA constitués d’illustrations (ou les éléments de texte constitués de légendes quand il s’agit de champs) ne sont pas pris en charge.
 
 1. Existe-t-il des restrictions concernant l’utilisation de formCalc ?
@@ -189,7 +188,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Existe-t-il une convention de dénomination recommandée et des mots-clés réservés à éviter ?
 
-   * Dans AEM Forms Designer, il est recommandé de ne pas faire commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un tiret bas (_). Pour utiliser un trait de soulignement au début du nom, ajoutez un préfixe après le trait de soulignement, _&lt;prefix>&lt;objectname>.
+   * Dans AEM Forms Designer, il est recommandé de ne pas faire commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un tiret bas (_). Pour utiliser un trait de soulignement au début du nom, ajoutez un préfixe après le trait de soulignement, _&lt;préfixe>&lt;nom_objet>.
    * Toutes les API des formulaires HTML5 API sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md).
 
 1. Les formulaires HTML5 prennent-ils en charge les champs flottants ?
@@ -200,8 +199,8 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
    >
    >Le flottement des champs n’est pas activé par défaut. Vous pouvez utiliser Forms Designer pour définir la propriété de flottement des champs.
 
-   1. Ouvrez CRXde Lite et accédez au noeud `/content/xfaforms/profiles/default`.
-   1. Ajoutez une propriété `mfDataDependentFloatingField`de type String et définissez la valeur de la propriété sur `true`.
+   1. Ouvrez CRXde lite et accédez au noeud `/content/xfaforms/profiles/default` .
+   1. Ajoutez une propriété `mfDataDependentFloatingField`de type Chaîne et définissez la valeur de la propriété sur `true`.
    1. Cliquez sur **Enregistrer tout**. Désormais, les champs flottants sont activés pour les formulaires HTML à l’aide du profil de rendu mis à jour.
 
       >[!NOTE]
@@ -210,7 +209,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Les formulaires HTML5 exécutent-ils le script d’initialisation et forment-ils des événements prêts plusieurs fois ?
 
-   Oui, les scripts d’initialisation et les événements prêts pour le formulaire sont exécutés plusieurs fois, au moins une fois sur le serveur et une fois côté client. Il est conseillé d’écrire des scripts tels que initialize ou form:ready événements en fonction d’une logique métier (données de formulaire ou de champ) afin que l’action soit exécutée en fonction de l’état des données et de l’idempotent (si les données sont identiques).
+   Oui, les scripts d’initialisation et les événements prêts pour le formulaire sont exécutés plusieurs fois, au moins une fois sur le serveur et une fois côté client. Il est conseillé d’écrire des scripts tels que les événements initialize ou form:ready en fonction d’une logique métier (données de formulaire ou de champ) afin que l’action soit exécutée en fonction de l’état des données et de l’idempotent (si les données sont identiques).
 
 ### Conception XDP {#designing-xdp}
 
