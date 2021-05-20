@@ -11,11 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Administrator
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3309'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -71,15 +70,15 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 
 >[!NOTE]
 >
->Pour aider les clients AEM Forms à réduire les coûts de propriété, simplifier l&#39;architecture de déploiement et moderniser la pile de développement, la plate-forme Adobe Experience Manager Enterprise s&#39;éloigne des déploiements basés sur les serveurs d&#39;applications pour privilégier les déploiements OSGi autonomes. L&#39;Adobe continue de prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d&#39;infrastructure.
+>Pour aider les clients AEM Forms à réduire le coût de possession, à simplifier l’architecture de déploiement et à moderniser la pile de développement, la plateforme d’entreprise Adobe Experience Manager s’éloigne des déploiements sur serveur d’applications pour privilégier les déploiements OSGi autonomes. Adobe continue de prendre en charge la pile AEM Forms JEE avec une matrice réduite des composants d’infrastructure.
 >
->Avec la version 6.5, les composants d’infrastructure qui sont les moins utilisés par nos clients ne sont plus pris en charge, comme suit :
+>Avec la version 6.5, les composants d’infrastructure qui sont les plus utilisés par nos clients ne sont plus pris en charge, comme suit :
 >・ Base de données IBM DB2
 >・ Systèmes d’exploitation IBM AIX et Sun Solaris
 >
->Pour les nouvelles installations, dans la mesure du possible, il est recommandé de déployer AEM Forms sur la pile OSGi moderne afin de tirer parti des dernières innovations en matière d’intégration adaptative Forms adaptée pour les communications interactives mobiles, multicanaux et les intégrations de données d’arrière-plan à l’aide du modèle de données de formulaire.
+>Pour les nouvelles installations, dans la mesure du possible, il est recommandé de déployer AEM Forms sur la pile OSGi moderne afin d’exploiter les dernières innovations en matière de Forms adaptatif réactif pour les communications interactives mobiles multicanaux et les intégrations de données principales à l’aide du modèle de données de formulaire.
 >
->Nous reconnaissons que les utilisateurs existants doivent continuer à déployer la pile AEM Forms on JEE. Dans ce cas, l’Adobe nécessite le déploiement d’AEM Forms JEE sur l’infrastructure prise en charge, comme décrit dans la présente documentation. Si vous effectuez une mise à niveau vers AEM 6.5 Forms et utilisez une plateforme non prise en charge dans la version précédente de AEM Forms, vous pouvez contacter l’assistance Adobe pour obtenir de l’aide sur la mise à niveau vers une plateforme prise en charge.
+>Nous reconnaissons que les utilisateurs existants doivent continuer à déployer la pile AEM Forms on JEE. Dans ce cas de figure, Adobe nécessite le déploiement d’AEM Forms JEE sur l’infrastructure prise en charge, comme décrit dans cette documentation. Si vous effectuez une mise à niveau vers AEM 6.5 Forms et que vous utilisez une plateforme non prise en charge dans la version précédente d’AEM Forms, vous pouvez contacter l’assistance Adobe pour obtenir de l’aide sur la mise à niveau vers une plateforme prise en charge.
 
 ### Machines virtuelles Java (JVM) {#java-virtual-machines-jvm}
 
@@ -141,12 +140,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td><p>Oracle de données 12c version 1</p> </td>
+   <td><p>Oracle Database 12c version 1</p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
    <tr>
-   <td><p>Oracle de données 12c version 2 (12.2.0.1.0)</p> </td>
+   <td><p>Oracle de données version 12c 2 (12.2.0.1.0)</p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
@@ -156,8 +155,8 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Pris en charge</td>
   </tr> 
    <tr>
-   <td>Oracle de données 19c (éditions Standard, Real Application Clusters (RAC) et Enterprise) </td>
-   <td>Micronoyau de référentiel </td>
+   <td>Oracle Database 19c (éditions Standard, Real Application Clusters (RAC) et Enterprise) </td>
+   <td>Repository Microkernal </td>
    <td>Pris en charge</td>
   </tr>
   <tr>
@@ -183,7 +182,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
  </tbody>
 </table>
 
-* IBM DB2 n’est pas pris en charge pour les nouvelles installations. Il est pris en charge uniquement pour les clients existants qui effectuent une mise à niveau vers AEM 6.5 Forms.
+* IBM DB2 n’est pas pris en charge pour les nouvelles installations. Elle est prise en charge uniquement pour les clients existants effectuant une mise à niveau vers AEM 6.5 Forms.
 * MongoDB est un logiciel tiers qui n’est pas inclus dans le pack de licences AEM. Pour plus d’informations, consultez la page relative à la stratégie de gestion des licences MongoDB ([MongoDB licensing policy](https://www.mongodb.org/about/licensing/)).
 * Pour tirer pleinement parti de votre déploiement AEM, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle.
 * Vous obtiendrez auprès de l’assistance clientèle d’Adobe une aide adaptée aux problèmes admissibles relatifs à l’utilisation de MongoDB avec AEM. Pour plus d’informations, consultez la page [MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
@@ -192,7 +191,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 * La fragmentation MongoDB n’est pas pris en charge dans AEM. 
 * AEM Forms on JEE ne prend pas en charge MySQL pour la persistance de RDBMK.
 * Le module Document Security n’utilise pas Content Repository. Cela signifie que si vous utilisez uniquement Document Security et ne prévoyez pas d’utiliser Workspace HTML, les formulaires HTML5 ou les formulaires adaptatifs, vous n’avez pas besoin d’installer Content Repository.
-* AEM Forms on JEE ne prend pas en charge l’utilisation de MySQL pour la conservation du référentiel AEM (CRX-Repository).
+* AEM Forms on JEE ne prend pas en charge l’utilisation de MySQL pour la conservation du référentiel AEM (référentiel CRX).
 
 
 ### Pilotes de base de données {#database-drivers}
@@ -217,12 +216,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   <tr>
    <td>Microsoft SQL Server<br /> </td>
    <td><p>Pilote Microsoft® SQL Server JDBC 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
-   <td><p>Télécharger à partir du site Web de Microsoft.</p> </td>
+   <td><p>Téléchargez-les à partir du site Web de Microsoft.</p> </td>
   </tr>
   <tr>
    <td>Oracle</td>
    <td><p>Pilote JDBC pour Oracle Database 19.3.0.0.0</p> <p>ojdbc8.jar (version 19.3.0.0.0)<br /> </p> </td>
-   <td><p>Télécharger à partir du <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">site Web de l'Oracle</a>.</p> </td>
+   <td><p>Téléchargez-le à partir du <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">site Web d’Oracle</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -275,7 +274,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)</br><b>Remarque : </b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> atteint la phase de fin de maintenance et les transitions à la phase de prise en charge du cycle de vie étendu le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour les mises à niveau et les nouvelles installations. Les installations existantes peuvent utiliser Red Hat Enterprise Linux 6 pendant la phase de prise en charge du cycle de vie étendu.</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)</br><b>Remarque :</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> atteint la phase de fin de maintenance et passe à la phase de prise en charge du cycle de vie étendu le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour les mises à niveau et les nouvelles installations. Les installations existantes peuvent utiliser Red Hat Enterprise Linux 6 pendant la phase de prise en charge du cycle de vie étendu.</p> </td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
@@ -299,7 +298,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 
 #### Environnement virtualisé {#virtualized-environment}
 
-Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environnement virtuel. Toutefois, si vous rencontrez un problème avec AEM Forms sur un environnement virtuel, essayez de reproduire le problème sur un ordinateur physique. Si le problème persiste sur l’ordinateur physique, contactez l’assistance Adobe pour obtenir une résolution. Pour les problèmes que vous ne pouvez pas reproduire sur un ordinateur physique, contactez votre fournisseur d&#39;environnement virtuel.
+Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environnement virtuel. Toutefois, si vous rencontrez un problème avec AEM Forms sur un environnement virtuel, essayez de reproduire le problème sur un ordinateur physique. Si le problème persiste sur l’ordinateur physique, contactez le support Adobe pour une résolution. Pour les problèmes que vous ne pouvez pas répliquer sur une machine physique, contactez votre fournisseur d’environnement virtuel.
 
 #### Environnements de développement {#development-environments}
 
@@ -326,7 +325,7 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 1. AEM Forms on JEE ne prend pas en charge et JBoss sur SUSE Linux Enterprise Server 12. Seul IBM WebSphere est pris en charge sur SUSE Linux Enterprise Server 12.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
-1. CRX-repository prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de base de données différents entre le serveur d’applications et le référentiel CRX. Cependant, sur un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec CRX-repository et une base de données relationnelle prise en charge avec le serveur d’applications.
+1. Le référentiel CRX prend en charge la persistance de type TarMK, MongoDB et des bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de base de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec le référentiel CRX et une base de données relationnelle prise en charge avec le serveur d’applications.
 1. AEM Forms on JEE ne prend pas en charge le serveur d’application WebSphere sur CentOS.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss.
 
@@ -339,7 +338,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 * AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
 * AEM Forms on JEE ne prend pas en charge la mise en grappe verticale.
 * AEM Forms on JEE ne prend pas en charge la base de données MySQL sur un environnement organisé en grappes.
-* Pour la liste des plateformes supprimées ou mises à jour, voir le document [AEM 6.5 Forms New Feature Summary](../../forms/using/whats-new.md).
+* Pour obtenir la liste des plateformes supprimées ou mises à jour, reportez-vous au document [AEM Résumé des nouvelles fonctionnalités Forms 6.5](../../forms/using/whats-new.md) .
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
 
@@ -409,7 +408,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 
 ### Prise en charge de Cordova {#support-for-cordova}
 
-AEM Forms App prend désormais en charge Apache Cordova. Voici les versions spécifiques à la plate-forme de Cordova prises en charge :
+L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouverez ci-dessous les versions Cordova prises en charge pour chaque plateforme :
 
 * Apache Cordova 6.4.0
 * Cordova iOS 4.3.0
@@ -450,7 +449,7 @@ AEM Forms App prend désormais en charge Apache Cordova. Voici les versions spé
   </tr>
   <tr>
    <td>OpenOffice 4.1.2</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td>
   </tr>
  </tbody>
 </table>
@@ -466,7 +465,7 @@ AEM Forms App prend désormais en charge Apache Cordova. Voici les versions spé
 >* PDF Generator ne prend pas en charge Microsoft Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d&#39;informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([Sur site](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;.
+>* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
    >
    >
 * Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
@@ -518,7 +517,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [5
 
 Pour la configuration requise supplémentaire, voir :
 
-* [Configuration requise pour le déploiement d’un serveur unique AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
+* [Configuration requise pour le déploiement sur serveur unique d’AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
 * [Configuration requise pour le déploiement en grappe d’AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
 ## Clients pris en charge pour AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
@@ -532,7 +531,7 @@ Pour la configuration requise supplémentaire, voir :
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr>
-   <td><p>Microsoft® Windows® 10 (Enterprise, Pro, Basic)</p> <p>Version 32 bits ou 64 bits</p> <p> </p> </td>
+   <td><p>Microsoft® Windows® 10 (Enterprise, Pro, Basique)</p> <p>Version 32 bits ou 64 bits</p> <p> </p> </td>
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
@@ -552,11 +551,11 @@ Pour la configuration requise supplémentaire, voir :
 
 ### Designer {#designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server ou Microsoft® Windows® 10
+* Microsoft® Windows® 2016 Server , Microsoft® Windows® 2019 Server ou Microsoft Windows 10
 * Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
-* Mémoire graphique - 128 Mo de GPU (256 Mo recommandé)
+* Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)
 * 2,35 Go d’espace disponible sur le disque dur
 * Résolution d’écran 1 024 X 768 pixels ou plus
 * Accélération matérielle de la vidéo (en option)
@@ -580,7 +579,7 @@ Pour la configuration requise supplémentaire, voir :
 
 >[!NOTE]
 >
->La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont essentiellement des produits différents : « Classique » et « Continu ». Pour obtenir des détails et une comparaison des deux pistes, voir [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
+>La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont essentiellement des produits différents : « Classique » et « Continu ». Pour plus d’informations et une comparaison des deux suivis, voir [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
 
 ### Navigateurs {#browsers}
 
@@ -635,11 +634,11 @@ Pour la configuration requise supplémentaire, voir :
 >
 >Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
 >
->* La plupart des navigateurs récents ne prennent plus en charge les modules externes basés sur NPAPI. Pour plus d&#39;informations sur son impact sur les applications et les workflows AEM Forms, voir [Arrêt des modules externes de navigateur NPAPI et son impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+>* La plupart des navigateurs récents ne prennent plus en charge les modules externes basés sur NPAPI. Pour plus d’informations sur son impact sur les applications et les workflows AEM Forms, voir [Arrêt des modules externes de navigateur NPAPI et son impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 >* Safari est pris en charge uniquement sous Macintosh OS X.
 >* Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures. Pour plus d’informations sur la compatibilité de Safari 5.1 avec Adobe Reader, Acrobat, voir [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 >* Administration Console n’est pas prise en charge sur Safari.
->* Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
+>* Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour AEM Forms 6.1.
 >* Forms Portal prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
 >
 
@@ -688,8 +687,8 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 | **Plate-forme** | **Appareils mobiles** |
 |---|---|
 | Apple iOS  | Apple iPhone, iPad, iPad Air et iPad mini exécutant iOS 12 et versions ultérieures. |
-| Google Android | Android 5.1 et versions ultérieures. L&#39;application AEM Forms est certifiée sur les tablettes Samsung Galaxy 7 et 10 pouces et les smartphones les plus courants. |
-| Microsoft Windows | Périphériques Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d&#39;exploitation Microsoft Windows 10. |
+| Google Android | Android 5.1 et versions ultérieures. L’application AEM Forms est certifiée sur les tablettes Samsung Galaxy 7 et 10 pouces et les smartphones les plus courants. |
+| Microsoft Windows | Périphériques Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d’exploitation Microsoft Windows 10. |
 
 ### Adobe Flash Player {#adobe-flash-player}
 
@@ -720,13 +719,13 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs 
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour l’installation de logiciels de fournisseurs tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Toute la documentation est accessible à partir de [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
+La configuration requise pour l’installation de logiciels de fournisseurs tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Toute la documentation est accessible à partir de [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr) .
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/Service Pack de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
 Adobe prend en charge les correctifs urgents ou recommandés publiés par des fournisseurs tiers à leur parution en supposant que les fournisseurs tiers garantissent une compatibilité ascendante avec les versions qu’AEM Forms on JEE prend en charge. Adobe ne prend en charge que les correctifs publiés après le niveau minimal de correctif indiqué dans la documentation d’AEM Forms on JEE.
 
-Dans certains cas, Adobe ne prend pas en charge les mises à jour de fournisseurs tiers qui changent des fonctionnalités importantes, et ne permettent donc pas une compatibilité ascendante totale. Pour plus d&#39;informations sur les mises à jour prises en charge, reportez-vous à la section [Définitions de correctif prises en charge](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) pour connaître les produits de fournisseurs spécifiques et les types de correctifs pris en charge par l&#39;Adobe.
+Dans certains cas, Adobe ne prend pas en charge les mises à jour de fournisseurs tiers qui changent des fonctionnalités importantes, et ne permettent donc pas une compatibilité ascendante totale. Pour plus d’informations sur les mises à jour prises en charge, voir [Définitions de correctif prises en charge](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) pour les produits de fournisseurs spécifiques et l’Adobe des types de correctifs est pris en charge.
 
 Dans des circonstances échappant au contrôle d’Adobe, des correctifs de fournisseurs revendiquant une compatibilité ascendante peuvent avoir un impact négatif sur les produits ou les environnements clients Adobe. Dans ce cas, Adobe recommande que les clients évaluent l’impact de tout correctif urgent d’un fournisseur tiers avant de l’appliquer aux systèmes critiques. Adobe collabore avec des fournisseurs tiers afin de faire le nécessaire pour résoudre ces problèmes, que ce soit au travers des programmes de prise en charge standard d’Adobe ou de fournisseurs tiers rectifiant les problèmes de leurs correctifs. Ceci ne garantit toutefois pas qu’un nouveau correctif récemment publié par un fournisseur tiers et pris en charge par Adobe fonctionne comme documenté par le fournisseur ou avec AEM Forms on JEE.
 
@@ -737,4 +736,4 @@ Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en
 ## Historique des révisions {#revision-history}
 
 * 9 septembre 2020
-   * Version prise en charge d’iOS pour l’application AEM Forms remplacée par iOS 12. La version précédente était iOS 11.
+   * Modification de la version prise en charge d’iOS pour l’application AEM Forms en iOS 12. La version précédente était iOS 11.
