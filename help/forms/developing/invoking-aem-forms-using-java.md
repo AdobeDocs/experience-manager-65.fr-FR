@@ -1,8 +1,8 @@
 ---
 title: Appel d’AEM Forms à l’aide de l’API Java
 seo-title: Appel d’AEM Forms à l’aide de l’API Java
-description: Utilisez l’API Java AEM Forms pour le protocole de transport RMI pour l’appel distant, le transport VM pour l’appel local, SOAP pour l’appel distant, une authentification différente, telle que le nom d’utilisateur et le mot de passe, et les demandes d’appel synchrones et asynchrones.
-seo-description: Utilisez l’API Java AEM Forms pour le protocole de transport RMI pour l’appel distant, le transport VM pour l’appel local, SOAP pour l’appel distant, une authentification différente, telle que le nom d’utilisateur et le mot de passe, et les demandes d’appel synchrones et asynchrones.
+description: Utilisez l’API Java AEM Forms pour le protocole de transport RMI pour l’appel à distance, le transport VM pour l’appel local, SOAP pour l’appel à distance, une authentification différente, comme le nom d’utilisateur et le mot de passe, ainsi que des demandes d’appel synchrones et asynchrones.
+seo-description: Utilisez l’API Java AEM Forms pour le protocole de transport RMI pour l’appel à distance, le transport VM pour l’appel local, SOAP pour l’appel à distance, une authentification différente, comme le nom d’utilisateur et le mot de passe, ainsi que des demandes d’appel synchrones et asynchrones.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '5495'
+source-wordcount: '5494'
 ht-degree: 88%
 
 ---
 
-
 # Appel d’AEM Forms en utilisant l’API Java {#invoking-aem-forms-using-the-javaapi}
 
-**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
+**Les exemples et les exemples de ce document sont réservés à l’environnement AEM Forms on JEE.**
 
 AEM Forms peut être appelé à l’aide de l’API Java d’AEM Forms. Lorsque vous utilisez l’API Java d’AEM Forms, vous pouvez utiliser l’API d’appel ou les bibliothèques client Java. Des bibliothèques client Java sont disponibles pour des services tels que le service Rights Management. Ces API fortement typées vous permettent de développer des applications Java qui appellent AEM Forms.
 
@@ -47,7 +46,7 @@ Le site Web d’Adobe Developer contient les articles suivants traitant de l’
 
 **Voir également**
 
-[Inclusion des fichiers de bibliothèque Java AEM Forms](#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java d’AEM Forms](#including-aem-forms-java-library-files)
 
 [Appel de processus pour des intervenants humains de longue durée](invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
@@ -63,7 +62,7 @@ Le site Web d’Adobe Developer contient les articles suivants traitant de l’
 
 [Création d’une application Web Java qui appelle un processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md)
 
-## Inclusion des fichiers de bibliothèque Java d’AEM Forms {#including-aem-forms-java-library-files}
+## Inclusion des fichiers de bibliothèque Java AEM Forms {#including-aem-forms-java-library-files}
 
 Pour appeler un service AEM Forms par programmation à l’aide de l’API Java, incluez les fichiers de bibliothèque requis (fichiers JAR) dans le chemin d’accès aux classes de votre projet Java. Les fichiers JAR que vous incluez dans le chemin d’accès aux classes de votre application client dépendent de plusieurs facteurs :
 
@@ -72,11 +71,11 @@ Pour appeler un service AEM Forms par programmation à l’aide de l’API Java
 
 >[!NOTE]
 >
->(Clé en main uniquement) Début le serveur AEM Forms avec la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB.
+>(Clé en main uniquement) Démarrez le serveur AEM Forms avec la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB.
 
 * Le serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
-### Fichiers JAR spécifiques au service  {#service-specific-jar-files}
+### Fichiers JAR spécifiques au service {#service-specific-jar-files}
 
 Le tableau suivant énumère les fichiers JAR qui sont nécessaires pour appeler les services AEM Forms.
 
@@ -268,7 +267,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
-   <td><p>Si AEM Forms est déployé sur le serveur d’applications JBoss, incluez ce fichier JAR.</p> <p>Les classes requises ne seront pas trouvées par le chargeur de classe si jboss-client.jar et les jars référencés ne sont pas colocalisés.</p> </td>
+   <td><p>Si AEM Forms est déployé sur le serveur d’applications JBoss, incluez ce fichier JAR.</p> <p>Les classes requises ne seront pas trouvées par le chargeur de classes si jboss-client.jar et les fichiers JAR référencés ne sont pas colocalisés.</p> </td>
    <td><p>Répertoire lib du client JBoss</p> <p>Si vous déployez votre application client sur le même serveur d’applications J2EE, vous n’avez pas besoin d’inclure ce fichier.</p> </td>
   </tr>
   <tr>
@@ -425,7 +424,7 @@ Supposant que vous procédez à la mise à niveau vers AEM Forms. Pour utiliser
 
 [Appel d’un service à l’aide d’une bibliothèque client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Réglage des propriétés de la connexion  {#setting-connection-properties}
+## Réglage des propriétés de la connexion {#setting-connection-properties}
 
 Vous définissez les propriétés de connexion pour appeler AEM Forms lors de l’utilisation de l’API Java. Lors de la définition des propriétés de connexion, indiquez si vous souhaitez appeler des services à distance ou localement, ainsi que le mode de connexion et les valeurs d’authentification. Les valeurs d’authentification sont requises si la sécurité des services est activée. Toutefois, si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier des valeurs d’authentification.
 
@@ -443,7 +442,7 @@ Pour appeler un service AEM Forms, définissez les propriétés de connexion su
 
    * La valeur du port `8080` est applicable si l’application J2EE est JBoss. Si le serveur d’applications J2EE est IBM® WebSphere®, utilisez le port `9080`. Si le serveur d’applications J2EE est WebLogic, utilisez le port `7001`. (Ces valeurs sont les valeurs de port par défaut. Si vous modifiez la valeur du port, utilisez le numéro de port applicable.)
 
-* **DSC_TRANSPORT_PROTOCOL** : si vous utilisez le mode de connexion EJB, spécifiez `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` pour cette valeur. Si vous utilisez le mode de connexion SOAP, spécifiez `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
+* **DSC_TRANSPORT_PROTOCOL** : si vous utilisez le mode de connexion EJB, spécifiez `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` pour cette valeur. Si vous utilisez le mode de connexion SOAP, indiquez `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
 * **DSC_SERVER_TYPE** : spécifiez le serveur d’applications J2EE sur lequel AEM Forms est déployé. Les valeurs valides sont `JBoss`, `WebSphere`, `WebLogic`.
 
    * Si vous définissez cette propriété de connexion sur `WebSphere`, la valeur `java.naming.factory.initial` est définie sur `com.ibm.ws.naming.util.WsnInitCtxFactory`.
@@ -453,7 +452,7 @@ Pour appeler un service AEM Forms, définissez les propriétés de connexion su
 
    >[!NOTE]
    >
-   >Au lieu d&#39;utiliser une chaîne pour définir la propriété de connexion `DSC_SERVER_TYPE`, vous pouvez utiliser un membre statique de la classe `ServiceClientFactoryProperties`. Les valeurs suivantes peuvent être utilisées : `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE` ou `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+   >Au lieu d’utiliser une chaîne pour définir la propriété de connexion `DSC_SERVER_TYPE`, vous pouvez utiliser un membre statique de la classe `ServiceClientFactoryProperties`. Les valeurs suivantes peuvent être utilisées : `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE` ou `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME :** spécifie le nom d’utilisateur d’AEM Forms. Pour qu’un utilisateur puisse appeler un service AEM Forms, il lui faut le rôle Services User. Un utilisateur peut également avoir un autre rôle incluant l’autorisation d’appel de services. Sinon, une exception est levée lorsqu’il tente d’appeler un service. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
 * **DSC_CREDENTIAL_PASSWORD :** indique la valeur de mot de passe correspondant. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
@@ -464,35 +463,35 @@ Pour appeler un service AEM Forms, définissez les propriétés de connexion su
 Pour définir les propriétés de connexion, effectuez les tâches suivantes :
 
 1. Créez un objet `java.util.Properties` en utilisant son constructeur.
-1. Pour définir la propriété de connexion `DSC_DEFAULT_EJB_ENDPOINT`, appelez la méthode `java.util.Properties` de l&#39;objet `setProperty` et transmettez les valeurs suivantes :
+1. Pour définir la propriété de connexion `DSC_DEFAULT_EJB_ENDPOINT`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
 
-   * Valeur de la énumération `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`
+   * Valeur de l’énumération `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`
    * Une valeur string qui spécifie l’URL du serveur d’applications J2EE hébergeant AEM Forms
 
    >[!NOTE]
    >
-   >Si vous utilisez le mode de connexion SOAP, spécifiez la valeur de énumération `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` au lieu de la valeur de énumération `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`.
+   >Si vous utilisez le mode de connexion SOAP, indiquez la valeur de l&#39;énumération `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` au lieu de la valeur de l&#39;énumération `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`.
 
-1. Pour définir la propriété de connexion `DSC_TRANSPORT_PROTOCOL`, appelez la méthode `java.util.Properties` de l&#39;objet `setProperty` et transmettez les valeurs suivantes :
+1. Pour définir la propriété de connexion `DSC_TRANSPORT_PROTOCOL`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
 
-   * Valeur de la énumération `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL`
-   * Valeur de la énumération `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL`
+   * Valeur de l’énumération `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL`
+   * Valeur de l’énumération `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL`
 
    >[!NOTE]
    >
-   >Si vous utilisez le mode de connexion SOAP, spécifiez la valeur de énumération `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`au lieu de la valeur de énumération `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL`.
+   >Si vous utilisez le mode de connexion SOAP, indiquez la valeur de l&#39;énumération `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`au lieu de la valeur de l&#39;énumération `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL`.
 
-1. Pour définir la propriété de connexion `DSC_SERVER_TYPE`, appelez la méthode `java.util.Properties` de l&#39;objet `setProperty` et transmettez les valeurs suivantes :
+1. Pour définir la propriété de connexion `DSC_SERVER_TYPE`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
 
-   * Valeur de la énumération `ServiceClientFactoryProperties.DSC_SERVER_TYPE`
+   * Valeur de l&#39;énumération `ServiceClientFactoryProperties.DSC_SERVER_TYPE`
    * Valeur string qui spécifie le serveur d’application J2EE hébergeant AEM Forms (par exemple, si AEM Forms est déployé sur , spécifiez`JBoss` JBoss).
 
-      1. Pour définir la propriété de connexion `DSC_CREDENTIAL_USERNAME`, appelez la méthode `java.util.Properties` de l&#39;objet `setProperty` et transmettez les valeurs suivantes :
-   * Valeur de la énumération `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME`
+      1. Pour définir la propriété de connexion `DSC_CREDENTIAL_USERNAME`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
+   * Valeur de l’énumération `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME`
    * Valeur string qui spécifie le nom d’utilisateur requis pour appeler AEM Forms
 
-      1. Pour définir la propriété de connexion `DSC_CREDENTIAL_PASSWORD`, appelez la méthode `java.util.Properties` de l&#39;objet `setProperty` et transmettez les valeurs suivantes :
-   * Valeur de la énumération `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD`
+      1. Pour définir la propriété de connexion `DSC_CREDENTIAL_PASSWORD`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
+   * Valeur de l’énumération `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD`
    * Valeur string qui spécifie la valeur du mot de passe correspondant
 
 
@@ -583,16 +582,16 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 **Utilisation d’un objet de contexte pour appeler AEM Forms**
 
-Vous pouvez utiliser un objet `com.adobe.idp.Context` pour appeler un service AEM Forms avec un utilisateur authentifié (l’objet du `com.adobe.idp.Context` représente un utilisateur authentifié). Lors de l&#39;utilisation d&#39;un objet `com.adobe.idp.Context`, il n&#39;est pas nécessaire de définir les propriétés `DSC_CREDENTIAL_USERNAME` ou `DSC_CREDENTIAL_PASSWORD`. Vous pouvez obtenir un objet `com.adobe.idp.Context` lors de l’authentification d’utilisateurs à l’aide de la méthode `AuthenticationManagerServiceClient` de l’objet `authenticate`.
+Vous pouvez utiliser un objet `com.adobe.idp.Context` pour appeler un service AEM Forms avec un utilisateur authentifié (l’objet du `com.adobe.idp.Context` représente un utilisateur authentifié). Lors de l’utilisation d’un objet `com.adobe.idp.Context`, il n’est pas nécessaire de définir les propriétés `DSC_CREDENTIAL_USERNAME` ou `DSC_CREDENTIAL_PASSWORD`. Vous pouvez obtenir un objet `com.adobe.idp.Context` lors de l’authentification des utilisateurs à l’aide de la méthode `AuthenticationManagerServiceClient` de l’objet `authenticate`.
 
-La méthode `authenticate` renvoie un objet `AuthResult` contenant les résultats de l&#39;authentification. Vous pouvez créer un objet `com.adobe.idp.Context` en appelant son constructeur. Ensuite, appelez la méthode `com.adobe.idp.Context` de l’objet `initPrincipal` et transmettez l’objet `AuthResult`, comme indiqué dans le code suivant :
+La méthode `authenticate` renvoie un objet `AuthResult` contenant les résultats de l’authentification. Vous pouvez créer un objet `com.adobe.idp.Context` en appelant son constructeur. Ensuite, appelez la méthode `com.adobe.idp.Context` de l’objet `initPrincipal` et transmettez l’objet `AuthResult`, comme indiqué dans le code suivant :
 
 ```java
  Context myCtx = new Context();
  myCtx.initPrincipal(authResult);
 ```
 
-Au lieu de définir les propriétés `DSC_CREDENTIAL_USERNAME` ou `DSC_CREDENTIAL_PASSWORD`, vous pouvez appeler la méthode `ServiceClientFactory` de l&#39;objet `setContext` et transmettre l&#39;objet `com.adobe.idp.Context`. Lorsque vous utilisez un utilisateur d’AEM Forms pour appeler un service, assurez-vous qu’il possède le rôle `Services User` requis pour appeler un service AEM Forms.
+Au lieu de définir les propriétés `DSC_CREDENTIAL_USERNAME` ou `DSC_CREDENTIAL_PASSWORD`, vous pouvez appeler la méthode `setContext` de l’objet `ServiceClientFactory` et transmettre l’objet `com.adobe.idp.Context`. Lorsque vous utilisez un utilisateur d’AEM Forms pour appeler un service, assurez-vous qu’il possède le rôle `Services User` requis pour appeler un service AEM Forms.
 
 L’exemple de code suivant montre comment utiliser un objet `com.adobe.idp.Context` dans les paramètres de connexion qui sont utilisés pour créer un objet `EncryptionServiceClient`.
 
@@ -690,13 +689,13 @@ L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé po
 
 **Voir également**
 
-[Inclusion des fichiers de bibliothèque Java AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java d’AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Transmission de données vers les services AEM Forms à l’aide de l’API Java](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
 
 [Appel d’un service à l’aide d’une bibliothèque client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Transmission de données vers les services AEM Forms à l’aide de l’API Java  {#passing-data-to-aem-forms-services-using-the-java-api}
+## Transmission de données vers les services AEM Forms à l’aide de l’API Java {#passing-data-to-aem-forms-services-using-the-java-api}
 
 Les opérations de service AEM Forms consomment ou produisent généralement des documents PDF. Lorsque vous invoquez un service, il est parfois nécessaire de lui transmettre un document PDF (ou d’autres types de documents tels que des données XML). De même, il est parfois nécessaire de gérer un document PDF renvoyé par le service. La classe Java qui vous permet de transmettre des données depuis et vers les services AEM Forms est `com.adobe.idp.Document`.
 
@@ -708,11 +707,11 @@ En fonction de la taille de l’objet de `com.adobe.idp.Document`, les données 
 
 Parfois, il est nécessaire de connaître le type de contenu d’un objet `com.adobe.idp.Document` avant de pouvoir le transmettre à un service. Par exemple, si une opération nécessite un type de contenu spécifique, comme `application/pdf`, il est recommandé de déterminer le type de contenu. (Voir [Détermination du type de contenu d’un document](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document).)
 
-L’objet `com.adobe.idp.Document` tente de déterminer le type de contenu en utilisant les données fournies. Si le type de contenu ne peut pas être extrait des données fournies (par exemple, lorsque les données ont été fournies sous forme de tableau d’octets), définissez le type de contenu. Pour définir le type de contenu, appelez la méthode `com.adobe.idp.Document` de l’objet `setContentType`. (Voir [Détermination du type de contenu d’un document](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document))
+L’objet `com.adobe.idp.Document` tente de déterminer le type de contenu en utilisant les données fournies. Si le type de contenu ne peut pas être extrait des données fournies (par exemple, lorsque les données ont été fournies sous forme de tableau d’octets), définissez le type de contenu. Pour définir le type de contenu, appelez la méthode `setContentType` de l’objet `com.adobe.idp.Document`. (Voir [Détermination du type de contenu d’un document](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document))
 
 Si les fichiers de documentation et ressources résident sur le même système de fichiers, cela crée un objet `com.adobe.idp.Document` plus rapide. Si les fichiers de documentation et ressources résident sur des systèmes de fichiers distants, une opération de copie doit avoir lieu, ce qui affecte les performances.
 
-Une application peut contenir à la fois les types de données `com.adobe.idp.Document` et `org.w3c.dom.Document`. Toutefois, assurez-vous que vous remplissez les conditions requises pour le type de données `org.w3c.dom.Document`. Pour plus d’informations sur la conversion d’un objet `org.w3c.dom.Document` à un objet `com.adobe.idp.Document`, voir le [didacticiel de mise en route (mode EJB) : Préremplissage des formulaires avec les mises en page souples à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api).
+Une application peut contenir à la fois des types de données `com.adobe.idp.Document` et `org.w3c.dom.Document`. Veillez toutefois à ce que vous remplissiez entièrement les conditions requises pour le type de données `org.w3c.dom.Document`. Pour plus d’informations sur la conversion d’un objet `org.w3c.dom.Document` à un objet `com.adobe.idp.Document`, voir le [didacticiel de mise en route (mode EJB) : Préremplissage des formulaires avec les mises en page souples à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api).
 
 >[!NOTE]
 >
@@ -761,15 +760,15 @@ Une application peut contenir à la fois les types de données `com.adobe.idp.Do
 
 [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Création de documents  {#creating-documents}
+### Création de documents {#creating-documents}
 
 Créez un objet `com.adobe.idp.Document` avant d’appeler une opération de service ayant besoin d’un document PDF (ou d’autres types de documents) comme une valeur d’entrée. La classe `com.adobe.idp.Document` fournit des constructeurs qui vous permettent de créer un document à partir des types de contenu suivants :
 
 * Tableau d’octets
-* Un objet `com.adobe.idp.Document` existant
-* Un objet `java.io.File`
-* Un objet `java.io.InputStream`
-* Un objet `java.net.URL`
+* Objet `com.adobe.idp.Document` existant
+* Objet `java.io.File`
+* Objet `java.io.InputStream`
+* Objet `java.net.URL`
 
 #### Création d’un document basé sur un tableau d’octets {#creating-a-document-based-on-a-byte-array}
 
@@ -858,12 +857,12 @@ Le fichier c:/temp/input.pdf doit se trouver sur l’ordinateur client (et non s
 
 [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Traitement des documents retournés  {#handling-returned-documents}
+### Traitement des documents retournés {#handling-returned-documents}
 
 Les opérations de service retournant un document PDF (ou d’autres types de données telles que les données XML) comme valeur de sortie retournent l’objet `com.adobe.idp.Document`. Après avoir reçu un objet `com.adobe.idp.Document`, vous pouvez le convertir aux formats suivants :
 
-* Un objet `java.io.File`
-* Un objet `java.io.InputStream`
+* Objet `java.io.File`
+* Objet `java.io.InputStream`
 * Tableau d’octets
 
 La ligne suivante de code convertit un objet `com.adobe.idp.Document` à un objet `java.io.InputStream`. Supposons que `myPDFDocument` représente un objet `com.adobe.idp.Document` :
@@ -874,8 +873,8 @@ La ligne suivante de code convertit un objet `com.adobe.idp.Document` à un obje
 
 De même, vous pouvez copier le contenu d’un fichier `com.adobe.idp.Document` dans un fichier local en effectuant les tâches suivantes :
 
-1. Créez un objet `java.io.File`.
-1. Appelez la méthode `com.adobe.idp.Document` de l&#39;objet `copyToFile` et transmettez l&#39;objet `java.io.File`.
+1. Créez un objet `java.io.File` .
+1. Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` et transmettez l’objet `java.io.File`.
 
 L’exemple de code suivant copie le contenu d’un objet `com.adobe.idp.Document` dans un fichier nommé *AnotherMap.pdf*.
 
@@ -892,9 +891,9 @@ L’exemple de code suivant copie le contenu d’un objet `com.adobe.idp.Documen
 
 [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Détermination du type de contenu d’un document  {#determining-the-content-type-of-a-document}
+### Détermination du type de contenu d’un document {#determining-the-content-type-of-a-document}
 
-Déterminez le type MIME d&#39;un objet `com.adobe.idp.Document` en appelant la méthode `com.adobe.idp.Document` de l&#39;objet `getContentType`. Cette méthode renvoie une valeur string qui spécifie le type de contenu de l’objet `com.adobe.idp.Document`. Le tableau suivant décrit les différents types de contenu qu’AEM Forms retourne.
+Déterminez le type MIME d’un objet `com.adobe.idp.Document` en appelant la méthode `getContentType` de l’objet `com.adobe.idp.Document`. Cette méthode renvoie une valeur string qui spécifie le type de contenu de l’objet `com.adobe.idp.Document`. Le tableau suivant décrit les différents types de contenu qu’AEM Forms retourne.
 
 <table>
  <thead>
@@ -955,7 +954,7 @@ L’exemple de code suivant détermine le type de contenu d’un objet `com.adob
 
 [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Élimination d’objets de document  {#disposing-document-objects}
+### Élimination d’objets de document {#disposing-document-objects}
 
 Lorsque vous n’avez plus besoin d’un objet `Document`, il est recommandé de l’éliminer en appelant la méthode `dispose`. Chaque objet `Document` consomme un descripteur de fichier et jusqu’à 75 Mo d’espace mémoire sur la plate-forme de votre application hôte. Si un objet `Document` n’est pas éliminé, le processus de collecte de Java Garage le supprime. Toutefois, si vous l’éliminez avant en utilisant la méthode `dispose`, vous pouvez libérer la mémoire occupée par l’objet `Document`.
 
@@ -963,11 +962,11 @@ Lorsque vous n’avez plus besoin d’un objet `Document`, il est recommandé de
 
 [Appel d’AEM Forms en utilisant l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
-[Inclusion des fichiers de bibliothèque Java AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java d’AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Appel d’un service à l’aide d’une bibliothèque client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Appel d’un service à l’aide d’une bibliothèque client Java  {#invoking-a-service-using-a-java-client-library}
+## Appel d’un service à l’aide d’une bibliothèque client Java {#invoking-a-service-using-a-java-client-library}
 
 Les opérations du service AEM Forms peuvent être appelées à l’aide de l’API fortement typée du service, appelée bibliothèque client Java. Une *bibliothèque client Java* est un ensemble de classes concrètes permettant d’accéder aux services déployés dans le conteneur de service. Vous instanciez un objet Java qui représente le service à appeler au lieu de créer l’objet `InvocationRequest` en utilisant l’API d’appel. L’API d’appel est utilisée pour appeler des processus, tels que des processus de longue durée, créés dans Workbench. (Voir [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
@@ -987,22 +986,22 @@ Vous pouvez appeler le service Repository en utilisant une bibliothèque client 
 
 1. Incluez les fichiers JAR du client, tels que adobe-repository-client.jar, dans le chemin d’accès aux classes de votre projet Java. Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclusion des fichiers de bibliothèque Java AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Définir les propriétés de connexion requises pour appeler un service.
-1. Créez un objet `ServiceClientFactory` en appelant la méthode statique `createInstance` de l&#39;objet `ServiceClientFactory` et en transmettant l&#39;objet `java.util.Properties` contenant des propriétés de connexion.
+1. Créez un objet `ServiceClientFactory` en appelant la méthode `createInstance` statique de l’objet `ServiceClientFactory` et en transmettant l’objet `java.util.Properties` contenant des propriétés de connexion.
 1. Créez un objet `ResourceRepositoryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. Utilisez l’objet `ResourceRepositoryClient` pour appeler les opérations du service Repository.
 1. Créez un objet `RepositoryInfomodelFactoryBean` en utilisant son constructeur et transmettez-le comme `null`. Cet objet vous permet de créer un objet `Resource` qui représente le contenu ajouté au référentiel.
-1. Créez un objet `Resource` en appelant la méthode `RepositoryInfomodelFactoryBean` de l&#39;objet `newImage` et en transmettant les valeurs suivantes :
+1. Créez un objet `Resource` en appelant la méthode `newImage` de l’objet `RepositoryInfomodelFactoryBean` et en transmettant les valeurs suivantes :
 
-   * Valeur d’ID unique en spécifiant `new Id()`.
+   * Une valeur d’identifiant unique en spécifiant `new Id()`.
    * Valeur UUID unique en spécifiant `new Lid()`.
    * Nom de la ressource. Vous pouvez spécifier le nom du fichier XDP.
 
    Convertissez la valeur de retour en `Resource`.
 
-1. Créez un objet `ResourceContent` en appelant la méthode `RepositoryInfomodelFactoryBean` de l&#39;objet `newImage` et en faisant passer la valeur renvoyée à `ResourceContent`. Cet objet représente le contenu ajouté au référentiel.
+1. Créez un objet `ResourceContent` en appelant la méthode `newImage` de l’objet `RepositoryInfomodelFactoryBean` et en transmettant la valeur renvoyée à `ResourceContent`. Cet objet représente le contenu ajouté au référentiel.
 1. Créez un objet `com.adobe.idp.Document` en transmettant un objet `java.io.FileInputStream` qui stocke le fichier XDP à ajouter au référentiel. (Voir [Création d’un document basé sur un objet InputStream](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
-1. Ajoutez le contenu de l&#39;objet `com.adobe.idp.Document` à l&#39;objet `ResourceContent` en appelant la méthode `ResourceContent` de l&#39;objet `setDataDocument`. Transmettez l&#39;objet `com.adobe.idp.Document`.
+1. Ajoutez le contenu de l’objet `com.adobe.idp.Document` à l’objet `ResourceContent` en appelant la méthode `setDataDocument` de l’objet `ResourceContent`. Transmettez l’objet `com.adobe.idp.Document` .
 1. Définissez le type MIME du fichier XDP à ajouter au référentiel en appelant la méthode `ResourceContent` de l’objet `setMimeType` et en transmettant `application/vnd.adobe.xdp+xml`.
-1. Ajoutez le contenu de l&#39;objet `ResourceContent` à l&#39;objet `Resource` en appelant la méthode `Resource` de l&#39;objet `setContent` et en transmettant l&#39;objet `ResourceContent`.
+1. Ajoutez le contenu de l’objet `ResourceContent` à l’objet `Resource` en appelant la méthode `Resource` de l’objet `setContent` et en transmettant l’objet `ResourceContent`.
 1. Ajoutez une description de la ressource en appelant la méthode `Resource` de l’objet `setDescription` et en transmettant une valeur string représentant la description de la ressource.
 1. Ajoutez la conception de formulaire au référentiel en appelant la méthode `ResourceRepositoryClient` de l’objet `writeResource` et en transmettant les valeurs suivantes :
 
@@ -1015,9 +1014,9 @@ Vous pouvez appeler le service Repository en utilisant une bibliothèque client 
 
 [Appel d’AEM Forms en utilisant l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
-[Inclusion des fichiers de bibliothèque Java AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java d’AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-## Appel d’un processus de courte durée en utilisant l’API d’appel  {#invoking-a-short-lived-process-using-the-invocation-api}
+## Appel d’un processus de courte durée en utilisant l’API d’appel {#invoking-a-short-lived-process-using-the-invocation-api}
 
 Vous pouvez appeler un processus de courte durée en utilisant l’API d’appel de Java. Lorsque vous appelez un processus de courte durée à l’aide de l’API d’appel, vous transmettez les valeurs de paramètre requises à l’aide d’un objet `java.util.HashMap`. Pour chaque paramètre à transmettre à un service, appelez la méthode `java.util.HashMap` de l’objet `put` et spécifiez la paire nom-valeur requise par le service pour effectuer l’opération spécifiée. Indiquez le nom exact des paramètres appartenant au processus de courte durée.
 
@@ -1054,7 +1053,7 @@ Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aid
     params.put("inDoc", inDoc);
    ```
 
-1. Créez un objet `InvocationRequest` en appelant la méthode `ServiceClientFactory` de l&#39;objet `createInvocationRequest` et en transmettant les valeurs suivantes :
+1. Créez un objet `InvocationRequest` en appelant la méthode `createInvocationRequest` de l’objet `ServiceClientFactory` et en transmettant les valeurs suivantes :
 
    * Valeur string qui spécifie le nom du processus de longue durée à appeler. Pour appeler le processus `MyApplication/EncryptDocument`, spécifiez `MyApplication/EncryptDocument`.
    * Une valeur string qui représente le nom de l’opération de processus. En général, le nom d’une opération de processus de courte durée est `invoke`.
@@ -1075,7 +1074,7 @@ Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aid
    ```
 
 1. Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est .pdf.
-1. Appelez la méthode `com.adobe.idp.Document` de l&#39;objet `copyToFile` pour copier le contenu de l&#39;objet `com.adobe.idp.Document` dans le fichier. Assurez-vous d’utiliser l’objet `com.adobe.idp.Document` qui a été retourné par la méthode `getOutputParameter`.
+1. Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `com.adobe.idp.Document` dans le fichier. Assurez-vous d’utiliser l’objet `com.adobe.idp.Document` qui a été retourné par la méthode `getOutputParameter`.
 
 **Voir également**
 
@@ -1083,4 +1082,4 @@ Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aid
 
 [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
-[Inclusion des fichiers de bibliothèque Java AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java d’AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
