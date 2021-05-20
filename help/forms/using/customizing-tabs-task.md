@@ -8,25 +8,24 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 8412cfec-bcab-40b7-9e5b-fcc211d43c0b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 51%
 
 ---
 
-
 # Personnalisation des onglets d’une tâche {#customizing-tabs-for-a-task}
 
-Vous pouvez personnaliser les noms de tabulation pour le composant `Start Process` dans la vue Uber `Start Process` et le composant `Task Details` dans la vue Uber `ToDo`.
+Vous pouvez personnaliser les noms des onglets pour le composant `Start Process` dans la vue `Start Process` Uber et le composant `Task Details` dans la vue `ToDo` Uber.
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Modifiez la valeur de `tabname`dans le fichier `translation.json`.
 
-   Par exemple, remplacez `/apps/ws/locales/en-US/translation.json` par ce qui suit pour l’anglais.
+   Par exemple, remplacez `/apps/ws/locales/en-US/translation.json` pour l’anglais par ce qui suit.
 
-   * Pour les tâches lancées dans le processus de début, utilisez le fragment de code suivant du bloc `"startprocess" : {}`.
+   * Pour les tâches lancées dans le processus de démarrage, utilisez le fragment de code suivant du bloc `"startprocess" : {}`.
 
    ```json
    "tabname" : {
@@ -37,7 +36,7 @@ Vous pouvez personnaliser les noms de tabulation pour le composant `Start Proces
            }
    ```
 
-   * Pour les tâches dans Tâches, utilisez le fragment de code suivant du bloc `"todo" : {}`.
+   * Pour les tâches dans Tâches, utilisez le fragment de code suivant du bloc `"todo" : {}` .
 
    ```json
    "tabname" : {
