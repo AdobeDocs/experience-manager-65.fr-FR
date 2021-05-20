@@ -11,22 +11,21 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 83%
+source-wordcount: '213'
+ht-degree: 84%
 
 ---
 
-
 # Installation et configuration de Designer{#installing-and-configuring-designer}
 
-## Conditions préalables {#pre-requisites}
+## Prérequis {#pre-requisites}
 
-Le programme d’installation d’AEM Forms Designer requiert la version 32 bits du [package d’exécution redistribuable Visual C++ 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) et du [package d’exécution redistribuable Visual C++ 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation.
+Le programme d’installation d’AEM Forms Designer nécessite la version 32 bits du [package d’exécution redistribuable Visual C++ 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) et du [package d’exécution redistribuable Visual C++ 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation.
 
-## Installer Designer {#install-designer}
+## Installation de Designer {#install-designer}
 
 Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Si vous utilisez un programme d’installation autonome pour Designer, procédez comme suit :
 
@@ -38,7 +37,7 @@ Designer est disponible sous la forme d’un programme autonome et est égalemen
 
 1. Lancez le programme d’installation de Designer en cliquant deux fois sur setup.exe.
 1. Continuez et fournissez vos détails ainsi que le numéro de série dans la boîte de dialogue Personnalisation.
-1. Si vous acceptez les termes du contrat de licence, cliquez sur Suivant pour continuer.
-1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur Next (Suivant).
+1. Si vous acceptez les termes du contrat de licence, appuyez sur Suivant pour continuer.
+1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur Suivant.
 1. Cliquez sur Précédent pour modifier les préférences. Pour installer Designer, cliquez sur Installer.
 1. Cliquez sur Terminer à la fin de l’installation.
