@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1861'
 ht-degree: 94%
 
 ---
-
 
 # Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
@@ -36,13 +35,13 @@ ht-degree: 94%
 >
 La mise en œuvre actuelle de l’API HTTP AEM Assets est REST.
 
-L’API REST Adobe Experience Manager (AEM) [Assets ](/help/assets/mac-api-assets.md) permet aux développeurs d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, via des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer).
+L’API REST Adobe Experience Manager (AEM) [Assets](/help/assets/mac-api-assets.md) permet aux développeurs d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, via des opérations CRUD (création, lecture, mise à jour, suppression).
 
 L’API permet d’utiliser AEM en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant des services de contenu à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
 Par exemple, les applications sur une seule page, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
-Bien que AEM Core Components fournisse une API très complète, flexible et personnalisable qui peut servir les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils nécessitent AEM savoir-faire WCM (Web Gestion de contenu) pour la mise en oeuvre car ils doivent être hébergés dans des pages (API) basées sur des modèles de AEM dédiés. Les entreprises de développement d’applications monopages n’ont pas toutes accès à ces ressources.
+Bien que les composants principaux d’AEM fournissent une API très complète, flexible et personnalisable qui peut servir les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas AEM savoir-faire WCM (Web Content Management) pour la mise en oeuvre, car ils doivent être hébergés sur des pages (API) basées sur des modèles d’AEM dédiés. Les entreprises de développement d’applications monopages n’ont pas toutes accès à ces ressources.
 
 Dans ce cas, l’API REST Assets peut être utilisée. Elle permet aux développeurs d’accéder à des ressources (par exemple, des images et des fragments de contenu) directement, sans devoir d’abord les intégrer dans une page puis diffuser leur contenu au format JSON sérialisé. (Remarque : Il est impossible de personnaliser la sortie JSON de l’API REST Assets.) L’API REST Assets permet également aux développeurs de modifier du contenu, en créant, en mettant à jour ou en supprimant des ressources, des fragments de contenu et des dossiers.
 
@@ -52,7 +51,7 @@ L’API REST Assets :
 
 * met en œuvre le [format SIREN](https://github.com/kevinswiber/siren)
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 L’API REST Assets est disponible sur chaque installation prête à l’emploi d’une version AEM récente.
 
@@ -191,7 +190,7 @@ L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemp
 >
 >Selon le type de ressource, la liste des entités enfants peut déjà contenir l’ensemble complet de propriétés qui définissent l’entité enfant respective. Une autre possibilité consiste à afficher uniquement un jeu limité de propriétés pour une entité dans cette liste d’entités enfants.
 
-### Ressources {#assets}
+### Assets {#assets}
 
 Si une ressource est demandée, la réponse renvoie ses métadonnées, telles que le titre, le nom et les autres informations, tel que défini par le schéma des ressources respectives.
 
@@ -214,7 +213,7 @@ Les fragments de contenu :
 
 * Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la charge utile d’un fragment.
 
-#### Modèles et fragments de contenu  {#content-models-and-content-fragments}
+#### Modèles et fragments de contenu {#content-models-and-content-fragments}
 
 Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). Font partie de la définition.
 
@@ -380,4 +379,3 @@ Pour plus d’informations, voir :
 
 * [Documentation de l’API HTTP Assets](/help/assets/mac-api-assets.md)
 * [Session AEM Gem : OAuth](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
