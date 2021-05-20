@@ -10,14 +10,13 @@ topic-tags: customization
 content-type: reference
 discoiquuid: f658da57-0134-4458-9ef9-a99787b66742
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+exl-id: 1fc56829-db81-4450-b1d8-b4a31110199e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 75%
 
 ---
-
 
 # Affichage des composants en fonction du modèle utilisé{#displaying-components-based-on-the-template-used}
 
@@ -25,12 +24,12 @@ Lorsqu’un auteur de formulaire crée un formulaire adaptatif à l’aide d’u
 
 ## Modification de la stratégie de contenu d’un modèle {#changing-the-content-policy-of-a-template}
 
-Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans le répertoire `/conf`, le chemin d’accès à votre modèle est le suivant : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans le répertoire `/conf` , le chemin d’accès à votre modèle est le suivant : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 Effectuez les étapes suivantes pour afficher les composants dans la barre latérale en fonction de la stratégie de contenu d’un modèle :
 
 1. Ouvrez CRXDE Lite.\
-   URL: `https://<server>:<port>/crx/de/index.jsp`
+   URL : `https://<server>:<port>/crx/de/index.jsp`
 1. Dans CRXDE, accédez au dossier dans lequel le modèle est créé.
 
    Par exemple : `/conf/<your-folder>/`
@@ -57,9 +56,8 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
    Pour modifier la stratégie, dans CRXDE, accédez à `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
-   Dans la propriété `cq:policy`, remplacez `default` par le nouveau nom de la stratégie ( `myPolicy`).
+   Dans la propriété `cq:policy` , remplacez `default` par le nouveau nom de la stratégie ( `myPolicy`).
 
    ![Stratégie de contenu de modèle mise à jour](assets/updated-policy.png)
 
    Lorsque vous créez un formulaire à l’aide du modèle, vous pouvez voir les composants supplémentaires dans la barre latérale.
-
