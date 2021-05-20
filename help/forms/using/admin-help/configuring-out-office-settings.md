@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 96%
 
 ---
-
 
 # Configuration des paramètres d’absence du bureau {#configuring-out-of-office-settings}
 
@@ -71,4 +70,3 @@ Vous pouvez affecter l’exécution des tâches d’un utilisateur absent du bur
 
    1. Si certains processus ne doivent pas être envoyés à l’utilisateur par défaut, cliquez sur Ajouter une exception, puis sélectionnez le processus et un autre utilisateur dans la liste. Vous pouvez également sélectionner Ne pas affecter pour que la tâche reste attribuée à l’utilisateur absent du bureau.
    1. Cliquez sur Enregistrer.
-
