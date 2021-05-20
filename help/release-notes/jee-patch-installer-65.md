@@ -1,29 +1,28 @@
 ---
-title: Programme d’installation des correctifs AEM Forms JEE
-description: Programme d’installation des correctifs AEM Forms JEE
+title: Programme d’installation des correctifs d’AEM Forms JEE
+description: Programme d’installation des correctifs d’AEM Forms JEE
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6b17472b-9226-4319-b305-4dba862d21af
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 49%
+ht-degree: 50%
 
 ---
 
-
-# Programme d’installation du correctif AEM Forms JEE {#aem-forms-jee-patch-installer}
+# Programme d’installation des correctifs d’AEM Forms JEE {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
->[Contactez le ](https://www.adobe.com/account/sign-in.supportportal.html) support technique pour plus d&#39;informations ou pour obtenir le correctif.
+>[Pour plus d’informations ou pour obtenir le correctif, contactez le ](https://www.adobe.com/account/sign-in.supportportal.html) support technique.
 
-## À propos du programme d’installation de correctif {#about-the-patch-installer}
+## A propos du programme d&#39;installation de correctif {#about-the-patch-installer}
 
-Le programme d’installation de correctif Forms JEE 6.5 AEM comprend tous les problèmes corrigés pour tous les composants d’AEM 6.5 Forms JEE disponibles jusqu’à la sortie de ce correctif. Consultez les dernières [Notes de mise à jour du Service Pack](sp-release-notes.md) pour obtenir la liste complète des problèmes résolus.
+Le programme d’installation du correctif Forms JEE d’AEM 6.5 comprend tous les problèmes résolus pour tous les composants d’AEM 6.5 Forms JEE disponibles jusqu’à la publication de ce correctif. Consultez les dernières [Notes de mise à jour du Service Pack](sp-release-notes.md) pour obtenir la liste complète des problèmes résolus.
 
-## Conditions préalables à l&#39;installation du correctif {#prerequisites-to-installing-the-patch}
+## Prérequis pour installer le correctif {#prerequisites-to-installing-the-patch}
 
 * AEM 6.5 Forms
 
@@ -35,12 +34,12 @@ Le programme d’installation de correctif Forms JEE 6.5 AEM comprend tous les p
 1. Dans le répertoire, dont le nom dépend du système d’exploitation que vous utilisez :
 
    * **Windows**
-Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur dans lequel vous avez copié le programme d’installation, puis cliquez sur le fichier aemforms65_cfp_install.exe en appuyant sur le doublon.
+Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur dans lequel vous avez copié le programme d’installation, puis double-cliquez sur le fichier aemforms65_cfp_install.exe .
 
-      * (Windows 32 bits) `Windows\Disk1\InstData\VM`
-      * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
+      * (Windows 32 bits) `Windows\Disk1\InstData\VM`
+      * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
    * ****
-LinuxAccédez au répertoire approprié et, à partir d’une invite de commande, tapez 
+LinuxAccédez au répertoire approprié, puis, à l’invite de commande, saisissez 
 `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -53,14 +52,14 @@ LinuxAccédez au répertoire approprié et, à partir d’une invite de commande
 1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**.
 1. Lorsque l’installation est terminée, cliquez sur **[!UICONTROL Suivant]** pour appliquer les mises à jour du Quick Fix à vos fichiers installés.
 
-1. Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *&lt;AEMForms_Install_Dir>\configurationManager\bin* et mettez à jour **axis.jar** vers **axis-1.4.1.4.1.1.1.4.1.1.1.1.4.1.1.1.1 1.jar** dans les fichiers suivants :
+1. Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *&lt;AEMForms_Install_Dir>\configurationManager\bin* et mettez à jour **axis.jar** vers **axis-1.1.4.1.4.1.1.1.1.1.1.1.1 1.jar** dans les fichiers suivants :
 
    * ConfigurationManager.lax
    * ConfigurationManager_IPv6.lax
 
-1. La case à cocher Début Configuration Manager est activée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager.
+1. La case à cocher Démarrer Configuration Manager est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager.
 
-1. Pour exécuter Configuration Manager ultérieurement, désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Vous pouvez début Configuration Manager ultérieurement à l’aide du script approprié dans le répertoire `[AEM_forms_root]/configurationManager/bin`.
+1. Pour exécuter Configuration Manager ultérieurement, désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Vous pouvez lancer Configuration Manager ultérieurement à l’aide du script approprié dans le répertoire `[AEM_forms_root]/configurationManager/bin`.
 
 1. En fonction de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions de la section *Configuration et déploiement d’AEM Forms*.
 
