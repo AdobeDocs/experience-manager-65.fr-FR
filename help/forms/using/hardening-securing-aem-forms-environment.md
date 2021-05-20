@@ -7,14 +7,13 @@ uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 95%
 
 ---
-
 
 # Renforcement et sécurisation d’AEM Forms dans un environnement OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
 
@@ -31,7 +30,7 @@ Cet article est destiné aux consultants, aux spécialistes de la sécurité, au
 
 L’image suivante affiche les composants et les protocoles utilisés dans un déploiement AEM Forms standard, y compris la topologie de pare-feu appropriée :
 
-![architecture typique](assets/typical-architecture.png)
+![standard-architecture](assets/typical-architecture.png)
 
 AEM Forms est hautement personnalisable et compatible avec de nombreux environnements. Certaines recommandations peuvent ne pas s’appliquer à votre entreprise.
 
@@ -45,7 +44,7 @@ Une entreprise peut configurer un pare-feu externe pour limiter l’accès entre
 
 #### Configurer le pare-feu externe  {#configure-external-firewall}
 
-Vous pouvez configurer un pare-feu externe pour activer certaines URL AEM Forms pour accéder à Internet. L’accès à ces URL est nécessaire pour remplir ou envoyer un formulaire adaptatif, du code HTML5, une lettre de gestion de correspondance ou pour se connecter à un serveur AEM Forms :
+Vous pouvez configurer un pare-feu externe pour activer certaines URL AEM Forms pour accéder à Internet. L’accès à ces URL est nécessaire pour remplir ou envoyer un formulaire adaptatif, HTML5, une lettre Correspondence Management ou pour se connecter à un serveur AEM Forms :
 
 <table> 
  <tbody>
@@ -191,7 +190,7 @@ Un ensemble différent de rôles utilisateur est requis pour les instances d’a
 
 ## Éléments Intranet sécurisés d’un environnement AEM Forms  {#secure-intranet-elements-of-an-aem-forms-environment}
 
-En règle générale, les grappes de traitement et le module complémentaire Forms Workflow (AEM Forms on JEE) s’exécutent derrière un pare-feu. Par conséquent, ils sont considérés comme étant sécurisés. Vous pouvez tout de même effectuer quelques étapes pour renforcer ces environnements :
+En règle générale, les grappes de traitement et le module complémentaire Forms Workflow (AEM Forms on JEE) s’exécutent derrière un pare-feu. Par conséquent, ils sont considérés comme étant sécurisés. Vous pouvez toujours effectuer quelques étapes pour renforcer ces environnements :
 
 ### Grappe de traitement sécurisée {#secure-processing-cluster}
 
