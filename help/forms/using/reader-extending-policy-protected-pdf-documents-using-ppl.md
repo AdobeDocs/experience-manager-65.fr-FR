@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 98%
 
 ---
-
 
 # Documents PDF protégés par une stratégie Reader Extension à l’aide de la bibliothèque de protection portable {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
@@ -189,4 +188,3 @@ System.out.println("RE rights removed successfully from the document.”);
 outputStream.close();
 inputFileStream.close();
 ```
-
