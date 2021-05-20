@@ -10,18 +10,17 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 84%
 
 ---
 
-
 # Intégration d’un objet FormBridge à un portail personnalisé pour les formulaires HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge est une API de « pont logiciel » d’HTML5 qui vous permet d’interagir avec un formulaire. Pour la référence à l’API FormBridge, voir [Référence à l’API FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge est une API de « pont logiciel » d’HTML5 qui vous permet d’interagir avec un formulaire. Pour plus d’informations sur la référence à l’API FormBridge, voir [Référence à l’API FormBridge](/help/forms/using/form-bridge-apis.md).
 
 Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de champs de formulaire à partir de la page HTML et envoyer le formulaire. Par exemple, vous pouvez utiliser l’API pour créer une expérience semblable à un assistant.
 
@@ -77,7 +76,7 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
 
    >[!NOTE]
    >
-   >La **ligne 9** contient une référence JSP supplémentaire pour les styles CSS et les fichiers JavaScript permettant de concevoir la page.
+   >La **ligne 9** contient une référence JSP supplémentaire pour les styles CSS et les fichiers JavaScript pour concevoir la page.
    >
    >
    >La balise &lt;div id=&quot;rightdiv&quot;> à la **ligne 18** contient le snippet HTML du formulaire XFA.
@@ -92,9 +91,9 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
 
    Voici un exemple de script que vous pouvez ajouter pour définir les valeurs dans un champ de formulaire.
 
-   Par exemple, si vous souhaitez définir **NomEmployé** à l’aide des valeurs des champs **Prénom** et **Nom**, appelez la fonction **window.formBridge.setFieldValue**.
+   Par exemple, si vous souhaitez définir le **NomEmployé** à l’aide des valeurs des champs **Prénom** et **Nom**, appelez la fonction **window.formBridge.setFieldValue**.
 
-   De même, vous pouvez lire la valeur en appelant l’API **window.formBridge.getFieldValue**.
+   De même, vous pouvez lire la valeur en appelant l’API **window.formBridge.getFieldValue** .
 
    ```javascript
    $(function() {
