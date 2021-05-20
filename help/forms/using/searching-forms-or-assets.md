@@ -10,14 +10,13 @@ topic-tags: forms-manager
 discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '721'
 ht-degree: 95%
 
 ---
-
 
 # Recherche de formulaires et de ressources{#searching-for-forms-and-assets}
 
@@ -42,7 +41,7 @@ Tenez compte des points suivants au sujet de la recherche de base :
 * La recherche ne respecte pas la casse. Par exemple, lorsque vous tapez `geometrixx`, les ressources dont les titres sont `Geometrixx`, `GEOMETRIXX` et `GeoMetRixx` s’affichent dans les résultats de la recherche.
 
 * Les correspondances partielles d’un mot ne sont pas prises en charge. Pour effectuer une recherche en utilisant des chaînes partielles, utilisez le caractère générique *. Toutefois, si la requête correspond à un mot complet, le formulaire ou la ressource correspondant s’affiche.
-* Les espaces supplémentaires sont respectés et ne sont pas coupés lors de la recherche. Par exemple, `My form` n&#39;est pas la même requête de recherche que `My form`.
+* Les espaces supplémentaires sont respectés et ne sont pas coupés lors de la recherche. Par exemple, `My form` n’est pas la même requête de recherche que `My form`.
 
 * Si les données et les valeurs d’affichage des champs dans les propriétés de métadonnées sont différentes, vous ne pouvez pas utiliser ces valeurs comme paramètres de recherche. Par exemple, vous ne pouvez effectuer une recherche sur la base de l’état, tel que Modifié ou Publié, car ces propriétés sont stockées dans un format différent.
 
