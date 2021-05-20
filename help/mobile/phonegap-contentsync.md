@@ -1,8 +1,8 @@
 ---
-title: Mobile avec Content Sync
-seo-title: Mobile avec Content Sync
-description: Suivez cette page pour en savoir plus sur Content Sync for Adobe PhoneGap Enterprise avec AEM.
-seo-description: Suivez cette page pour en savoir plus sur Content Sync for Adobe PhoneGap Enterprise avec AEM.
+title: Mobile avec synchronisation de contenu
+seo-title: Mobile avec synchronisation de contenu
+description: Consultez cette page pour en savoir plus sur la synchronisation de contenu pour Adobe PhoneGap Enterprise avec AEM.
+seo-description: Consultez cette page pour en savoir plus sur la synchronisation de contenu pour Adobe PhoneGap Enterprise avec AEM.
 uuid: c3a82171-e070-4e32-b1ef-26e65ae23d99
 contentOwner: User
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 923fc031-1a06-4a9d-94da-a2a4e82c54ee
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2989'
 ht-degree: 2%
 
 ---
 
-
-# Mobile avec Content Sync{#mobile-with-content-sync}
+# Mobile avec synchronisation de contenu{#mobile-with-content-sync}
 
 >[!NOTE]
 >
@@ -27,119 +26,119 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Ce document fait partie du [Guide de prise en main de AEM Mobile](/help/mobile/getting-started-aem-mobile.md), point de départ recommandé pour la référence à AEM Mobile.
+>Ce document fait partie du guide [Prise en main d’AEM Mobile](/help/mobile/getting-started-aem-mobile.md), point de départ recommandé pour la référence AEM Mobile.
 
-Utilisez la synchronisation de contenu pour regrouper le contenu afin de l’utiliser dans des applications mobiles natives. Les pages créées dans AEM peuvent être utilisées comme contenu d’application, même lorsque l’appareil est hors ligne. De plus, comme les pages AEM sont basées sur des normes Web, elles fonctionnent sur plusieurs plates-formes et vous permettent de les incorporer dans n’importe quel wrapper natif. Cette stratégie réduit les efforts de développement et vous permet de mettre facilement à jour le contenu de l’application.
+Utilisez Synchronisation de contenu pour regrouper le contenu afin qu’il puisse être utilisé dans des applications mobiles natives. Les pages créées dans AEM peuvent être utilisées comme contenu d’application, même lorsque l’appareil est hors ligne. De plus, comme les pages d’AEM sont basées sur des normes web, elles fonctionnent sur plusieurs plateformes et vous permettent de les incorporer dans n’importe quel wrapper natif. Cette stratégie réduit les efforts de développement et vous permet de mettre facilement à jour le contenu de l’application.
 
 >[!NOTE]
 >
->Les applications PhoneGap que vous créez à l’aide d’AEM outils sont déjà configurées pour utiliser AEM pages comme contenu via Content Sync.
+>Les applications PhoneGap que vous créez à l’aide AEM outils sont déjà configurées pour utiliser AEM pages comme contenu via la synchronisation de contenu.
 
-La structure Content Sync crée un fichier d’archive contenant le contenu Web. Le contenu peut provenir de pages simples, d’images et de fichiers PDF, ou d’Applications web entières. L’API de synchronisation de contenu permet d’accéder au fichier d’archive à partir d’applications mobiles ou de créer des processus afin que le contenu puisse être récupéré et inclus dans l’application.
+La structure de synchronisation de contenu crée un fichier d’archive contenant le contenu web. Il peut s’agir de pages simples, d’images et de fichiers PDF ou d’applications Web complètes. L’API de synchronisation de contenu permet d’accéder au fichier d’archive à partir des applications mobiles ou des processus de création afin que le contenu puisse être récupéré et inclus dans l’application.
 
 La séquence d’étapes suivante illustre un cas d’utilisation typique de la synchronisation de contenu :
 
-1. Le développeur AEM crée une configuration Content Sync qui spécifie le contenu à inclure.
-1. La structure Content Sync collecte et met en cache le contenu.
-1. Sur un périphérique mobile, l’application mobile est démarrée et demande du contenu au serveur, qui est diffusé dans un fichier ZIP.
-1. Le client décompresse le contenu ZIP vers le système de fichiers local. La structure de dossiers dans le fichier ZIP simule les chemins d’accès qu’un client (navigateur, par exemple) demande normalement au serveur.
+1. Le développeur AEM crée une configuration de synchronisation de contenu qui spécifie le contenu à inclure.
+1. La structure de synchronisation de contenu collecte et met en cache le contenu.
+1. Sur un appareil mobile, l’application mobile est lancée et demande du contenu au serveur, qui est livré dans un fichier ZIP.
+1. Le client décompresse le contenu ZIP vers le système de fichiers local. La structure de dossiers dans le fichier ZIP simule les chemins d’accès qu’un client (un navigateur, par exemple) demanderait normalement au serveur.
 1. Le client ouvre le contenu dans un navigateur incorporé ou l’utilise d’une autre manière.
-1. Par la suite, le client demande du contenu mis à jour à partir du serveur. La structure Content Sync fournit des mises à jour incrémentielles afin de réduire la taille et le temps de téléchargement, ce qui peut s’avérer important pour les périphériques mobiles en raison d’une bande passante ou de volumes de données limités.
+1. Par la suite, le client demande du contenu mis à jour au serveur. La structure de synchronisation de contenu fournit des mises à jour incrémentielles afin de réduire la taille et le temps de téléchargement, ce qui peut être important pour les appareils mobiles en raison de la bande passante ou des volumes de données limités.
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur les instructions relatives au développement des gestionnaires de synchronisation de contenu, reportez-vous à la section [Développement de gestionnaires de synchronisation de contenu](/help/mobile/contentsync-app-handlers.md).
+>Pour plus d’informations sur les instructions de développement des gestionnaires de synchronisation de contenu, voir Gestionnaires d’applications prêts à l’emploi, voir [Développement de gestionnaires de synchronisation de contenu](/help/mobile/contentsync-app-handlers.md).
 
-## Configuration du contenu de synchronisation de contenu {#configuring-the-content-sync-content}
+## Configuration du contenu de synchronisation du contenu {#configuring-the-content-sync-content}
 
-Créez une configuration Content Sync pour spécifier le contenu du fichier ZIP distribué au client. Vous pouvez créer autant de configurations Content Sync que vous le souhaitez. Chaque configuration a un nom à des fins d’identification.
+Créez une configuration de synchronisation de contenu pour spécifier le contenu du fichier ZIP livré au client. Vous pouvez créer un nombre illimité de configurations de synchronisation de contenu. Chaque configuration a un nom à des fins d’identification.
 
-Pour créer une configuration Content Sync, ajoutez un noeud `cq:ContentSyncConfig` au référentiel, avec la propriété `sling:resourceType` définie sur `contentsync/config`. Le noeud `cq:ContentSyncConfig` peut se trouver n’importe où dans le référentiel, mais il doit être accessible aux utilisateurs de l’instance de publication AEM. Par conséquent, vous devez ajouter le noeud sous `/content`.
+Pour créer une configuration de synchronisation de contenu, ajoutez un noeud `cq:ContentSyncConfig` au référentiel, avec la propriété `sling:resourceType` définie sur `contentsync/config`. Le noeud `cq:ContentSyncConfig` peut se trouver n’importe où dans le référentiel, mais il doit être accessible aux utilisateurs sur l’instance de publication AEM. Par conséquent, vous devez ajouter le noeud sous `/content`.
 
-Pour spécifier le contenu du fichier ZIP Content Sync, ajoutez des noeuds enfants au noeud cq:ContentSyncConfig. Les propriétés suivantes de chaque noeud enfant identifient un élément de contenu à inclure et comment il est traité lors de son ajout :
+Pour spécifier le contenu du fichier ZIP de synchronisation de contenu, ajoutez des noeuds enfants au noeud cq:ContentSyncConfig . Les propriétés suivantes de chaque noeud enfant identifient un élément de contenu à inclure et la manière dont il est traité lors de son ajout :
 
 * `path`: Emplacement du contenu.
 * `type`: Nom du type de configuration à utiliser pour le traitement du contenu. Plusieurs types sont disponibles et sont décrits dans la section Types de configuration.
 
 Voir Exemple de configuration de synchronisation de contenu.
 
-Une fois la configuration de synchronisation de contenu créée, elle s’affiche dans la console de synchronisation de contenu.
+Une fois la configuration Synchronisation du contenu créée, elle s’affiche dans la console Synchronisation du contenu .
 
 >[!NOTE]
 >
->La structure Content Sync ne vérifie pas que les dépendances des ressources et des fichiers liés à la conception sont incluses dans les packages Content Sync. Veillez à inclure tous les fichiers requis dans le fichier ZIP.
+>La structure de synchronisation de contenu ne vérifie pas que les dépendances des ressources et des fichiers liés à la conception sont incluses dans les modules de synchronisation de contenu. Veillez à inclure tous les fichiers requis dans le fichier ZIP.
 
 ### Configuration de l’accès aux téléchargements de synchronisation de contenu {#configuring-access-to-content-sync-downloads}
 
-Spécifiez un utilisateur ou un groupe pouvant être téléchargé à partir de la synchronisation de contenu. Vous pouvez configurer l’utilisateur ou le groupe par défaut pouvant être téléchargé à partir de tous les caches de synchronisation de contenu. Vous pouvez également remplacer la valeur par défaut et configurer l’accès pour une configuration de synchronisation de contenu spécifique.
+Spécifiez un utilisateur ou un groupe pouvant être téléchargé à partir de la synchronisation de contenu. Vous pouvez configurer l’utilisateur ou le groupe par défaut qui peut être téléchargé à partir de tous les caches de synchronisation de contenu. Vous pouvez également remplacer la valeur par défaut et configurer l’accès pour une configuration de synchronisation de contenu spécifique.
 
-Une fois l’AEM installé, les membres du groupe d’administrateurs peuvent, par défaut, télécharger à partir de Content Sync.
+Lorsque AEM est installé, les membres du groupe d’administrateurs peuvent, par défaut, télécharger depuis Synchronisation du contenu .
 
 ### Définition de l’accès par défaut pour les téléchargements de synchronisation de contenu {#setting-the-default-access-for-content-sync-downloads}
 
-Le service Day CQ Content Sync Manager contrôle l’accès à Content Sync. Configurez ce service pour spécifier l’utilisateur ou le groupe qui peut télécharger à partir de Content Sync par défaut.
+Le service Day CQ Content Sync Manager contrôle l’accès à la synchronisation de contenu. Configurez ce service pour spécifier l’utilisateur ou le groupe pouvant être téléchargé à partir de la synchronisation de contenu par défaut.
 
-Si vous configurez [le service à l&#39;aide de la console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), entrez le nom de l&#39;utilisateur ou du groupe comme valeur de la propriété Autorisation du cache de secours.
+Si vous [configurez le service à l’aide de la console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), saisissez le nom de l’utilisateur ou du groupe comme valeur de la propriété Fallback Cache Authorizable .
 
-Si vous configurez [dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), utilisez les informations suivantes sur le service :
+Si vous effectuez une [configuration dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), utilisez les informations suivantes sur le service :
 
 * PID : com.day.cq.contentsync.impl.ContentSyncManagerImpl
-* Nom de la propriété : contentsync.fallback.authizable
+* Nom de la propriété : contentsync.fallback.authorizable
 
 #### Remplacement de l’accès au téléchargement pour un cache de synchronisation de contenu {#overriding-download-access-for-a-content-sync-cache}
 
-Pour configurer l’accès au téléchargement pour une configuration Content Sync spécifique, ajoutez la propriété suivante au noeud `cq:ContentSyncConfig` :
+Pour configurer l’accès au téléchargement pour une configuration de synchronisation de contenu spécifique, ajoutez la propriété suivante au noeud `cq:ContentSyncConfig` :
 
-* Nom : autorisé
+* Nom : autorisable
 * Type : chaîne
-* Valeur : Nom de l’utilisateur ou du groupe qui peut télécharger.
+* Valeur : Nom de l’utilisateur ou du groupe pouvant être téléchargé.
 
-Par exemple, votre application permet aux utilisateurs d’installer des mises à jour directement à partir de Content Sync. Pour permettre à tous les utilisateurs de télécharger la mise à jour, définissez la valeur de la propriété autorisée sur `everyone`.
+Par exemple, votre application permet aux utilisateurs d’installer des mises à jour directement à partir de la synchronisation de contenu. Pour permettre à tous les utilisateurs de télécharger la mise à jour, définissez la valeur de la propriété autorisable sur `everyone`.
 
-Si le noeud `cq:ContentSyncConfig` ne possède aucune propriété autorisée, l’utilisateur ou le groupe par défaut configuré pour la propriété Autorisable du cache de secours du service Day CQ Content Sync Manager détermine qui peut télécharger.
+Si le noeud `cq:ContentSyncConfig` ne possède pas de propriété autorisable, l’utilisateur ou le groupe par défaut configuré pour la propriété Autorizable du cache de secours du service Day CQ Content Sync Manager détermine qui peut effectuer le téléchargement.
 
 ### Configuration de l’utilisateur pour la mise à jour d’un cache de synchronisation de contenu {#configuring-the-user-for-updating-a-content-sync-cache}
 
-Lorsqu’un utilisateur effectue une mise à jour du cache de synchronisation de contenu, un compte utilisateur spécifique effectue l’action pour le compte de l’utilisateur. Par défaut, l’utilisateur anonyme met à jour tous les caches Content Sync.
+Lorsqu’un utilisateur effectue une mise à jour du cache de synchronisation de contenu, un compte utilisateur spécifique effectue l’action au nom de l’utilisateur. Par défaut, l’utilisateur anonyme met à jour tous les caches de synchronisation de contenu.
 
-Vous pouvez remplacer l’utilisateur par défaut et spécifier un utilisateur ou un groupe qui met à jour un cache Content Sync spécifique.
+Vous pouvez remplacer l’utilisateur par défaut et spécifier un utilisateur ou un groupe qui met à jour un cache de synchronisation de contenu spécifique.
 
-Pour remplacer l’utilisateur par défaut, spécifiez un utilisateur ou un groupe qui effectue des mises à jour pour une configuration Content Sync spécifique en ajoutant la propriété suivante au noeud cq:ContentSyncConfig :
+Pour remplacer l’utilisateur par défaut, spécifiez un utilisateur ou un groupe qui effectue des mises à jour pour une configuration de synchronisation de contenu spécifique en ajoutant la propriété suivante au noeud cq:ContentSyncConfig :
 
 * Nom : updateuser
 * Type : chaîne
 * Valeur : Nom de l’utilisateur ou du groupe qui peut effectuer les mises à jour.
 
-Si le noeud cq:ContentSyncConfig n’a pas de propriété updateuser, l’utilisateur anonyme par défaut met à jour le cache.
+Si le noeud cq:ContentSyncConfig n’a pas de propriété d’utilisateur de mise à jour, l’utilisateur anonyme par défaut met à jour le cache.
 
 ### Types de configuration {#configuration-types}
 
-Le traitement peut aller du rendu JSON simple au rendu complet des pages, y compris leurs ressources référencées. Cette section liste les types de configuration disponibles et leurs paramètres spécifiques :
+Le traitement peut aller du rendu simple JSON au rendu complet des pages, y compris leurs ressources référencées. Cette section répertorie les types de configuration disponibles et leurs paramètres spécifiques :
 
-**** copyCopiez simplement les fichiers et les dossiers.
+**** copyIl vous suffit de copier des fichiers et des dossiers.
 
-* **chemin**  - Si le chemin d&#39;accès pointe vers un seul fichier, seul le fichier est copié. S’il pointe vers un dossier (y compris les noeuds de page), tous les fichiers et dossiers ci-dessous seront copiés.
+* **path**  : si le chemin pointe vers un seul fichier, seul le fichier est copié. S’il pointe vers un dossier (y compris les noeuds de page), tous les fichiers et dossiers ci-dessous seront copiés.
 
-**** contentRender le contenu à l’aide du traitement de requête Sling standard.
+**** contentRender du contenu à l’aide du traitement de requête Sling standard.
 
-* **chemin**  - chemin d&#39;accès à la ressource qui doit être sortie.
-* **extension**  - extension qui doit être utilisée dans la demande. Les exemples courants sont *html* et *json*, mais toute autre extension est possible.
+* **path**  : chemin d’accès à la ressource qui doit être sortie.
+* **extension**  : extension qui doit être utilisée dans la requête. *html* et *json* sont des exemples courants, mais toute autre extension est possible.
 
 * **sélecteur**  : sélecteurs facultatifs séparés par un point. Les exemples courants sont *touch* pour le rendu des versions mobiles d’une page ou *infinity* pour la sortie JSON.
 
 **** clientlibPackage d’une bibliothèque cliente JavaScript ou CSS.
 
-* **chemin**  : chemin d&#39;accès à la racine de la bibliothèque cliente.
-* **extension**  - Type de bibliothèque cliente. Il doit être défini sur *js* ou *css* pour le moment.
+* **path**  : chemin d’accès à la racine de la bibliothèque cliente.
+* **extension**  - Type de bibliothèque cliente. Elle doit être définie sur *js* ou *css* pour le moment.
 
-* **includeFolders**  - Le type est un tableau de chaînes, qui permet à l&#39;utilisateur de spécifier des dossiers supplémentaires à analyser dans la bibliothèque cliente pour récupérer des fichiers (tels que des polices personnalisées).
+* **includeFolders**  : le type est un tableau de chaînes qui permet à l’utilisateur de spécifier des dossiers supplémentaires à analyser dans la bibliothèque cliente pour récupérer les fichiers (polices personnalisées, par exemple).
 
 **ressources**
 
-Collecte des rendus originaux de ressources.
+Collectez les rendus originaux des ressources.
 
-* **chemin**  - Chemin d&#39;accès à un dossier de ressources situé sous /content/dam.
-* **Rendus**  - Le type est un tableau de chaînes qui permet à l&#39;utilisateur de spécifier les rendus à utiliser à la place de l&#39;image par défaut. La liste suivante résume certains rendus prêts à l’emploi, mais vous pouvez également utiliser tout rendu créé par le flux de travaux :
+* **path**  : chemin d’accès à un dossier de ressources sous /content/dam.
+* **rendus**  : le type est un tableau de chaînes qui permet à l’utilisateur de spécifier les rendus à utiliser à la place de l’image par défaut. La liste suivante résume certains rendus prêts à l’emploi, mais vous pouvez également utiliser n’importe quel rendu créé par le workflow :
 
    * *l’image originale*
    * *cq5dam.thumbnail.48.48.png*
@@ -147,25 +146,25 @@ Collecte des rendus originaux de ressources.
    * *cq5dam.thumbnail.140.100.png*
    * *cq5dam.web.1280.1280.png*
 
-**** imageCollecte d’une image.
+**** imageCollectez une image.
 
-* **chemin**  - Chemin d&#39;accès à une ressource d&#39;image.
+* **path**  : chemin d’accès à une ressource image.
 
 Le type d’image est utilisé pour inclure le logo We.Retail dans le fichier zip.
 
-**** pagesGénérer des pages AEM et collecter des ressources référencées.
+**** pagesRendre les pages AEM et collecter les ressources référencées.
 
-* **chemin**  - Chemin d&#39;accès à une page.
-* **extension**  - extension qui doit être utilisée dans la demande. Pour les pages, il s’agit presque toujours de *html*, mais d’autres sont encore possibles.
+* **path**  : chemin d’accès à une page.
+* **extension**  : extension qui doit être utilisée dans la requête. Pour les pages, cela est presque toujours *html*, mais d’autres sont encore possibles.
 
 * **sélecteur**  : sélecteurs facultatifs séparés par un point. Les exemples courants sont *touch* pour le rendu des versions mobiles d’une page.
 
 * **deep**  - Propriété booléenne facultative déterminant si les pages enfants doivent également être incluses. La valeur par défaut est *true.*
 
-* **includeImages**  - Propriété booléenne facultative déterminant si les images doivent être incluses. La valeur par défaut est *true*.
-Par défaut, seuls les composants d’image avec un type de ressource de fondation/composants/image sont pris en compte pour l’inclusion. Vous pouvez ajouter d&#39;autres types de ressources en configurant le gestionnaire de mise à jour des pages WCM de **Day CQ** dans la console Web.
+* **includeImages**  : propriété booléenne facultative déterminant si les images doivent être incluses. La valeur par défaut est *true*.
+Par défaut, seuls les composants d’image avec un type de ressource foundation/components/image sont pris en compte pour inclusion. Vous pouvez ajouter d’autres types de ressources en configurant le **gestionnaire de mise à jour des pages WCM Day CQ** dans la console web.
 
-**** rewriteLe noeud rewrite définit comment les liens sont réécrits dans la page exportée. Les liens réécrits peuvent pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources sur le serveur.
+**** rewriteLe noeud rewrite définit la manière dont les liens sont réécrits dans la page exportée. Les liens réécrits peuvent pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources sur le serveur.
 
 Le noeud `rewrite` doit être situé sous le noeud `page`.
 
@@ -178,17 +177,17 @@ Le noeud `rewrite` peut avoir une ou plusieurs des propriétés suivantes :
 
 Chaque propriété peut avoir l’une des valeurs suivantes :
 
-* `REWRITE_RELATIVE`: réécrit le chemin d’accès avec une position relative par rapport au fichier page.html sur le système de fichiers.
+* `REWRITE_RELATIVE`: réécrit le chemin d’accès avec une position relative par rapport au fichier .html de la page sur le système de fichiers.
 
-* `REWRITE_EXTERNAL`: réécrit le chemin en pointant vers la ressource sur le serveur, à l’aide du service [ Externalizer AEM ](/help/sites-developing/externalizer.md)Externalizer.
+* `REWRITE_EXTERNAL`: réécrit le chemin en pointant vers la ressource du serveur, à l’aide du service  [Externalizer](/help/sites-developing/externalizer.md) d’AEM.
 
-Le service AEM appelé **PathRewriterTransformerFactory** vous permet de configurer les attributs html spécifiques qui seront réécrits. Le service peut être configuré dans la console Web et possède une configuration pour chaque propriété du noeud `rewrite` : `clientlibs`, `images` et `links`.
+Le service AEM appelé **PathRewriterTransformerFactory** vous permet de configurer les attributs HTML spécifiques qui seront réécrits. Le service peut être configuré dans la console web et dispose d’une configuration pour chaque propriété du noeud `rewrite` : `clientlibs`, `images` et `links`.
 
 Cette fonctionnalité a été ajoutée à AEM 5.5.
 
 ### Exemple de configuration de synchronisation de contenu {#example-content-sync-configuration}
 
-La liste ci-dessous présente un exemple de configuration de Content Sync.
+La liste ci-dessous présente un exemple de configuration pour la synchronisation de contenu.
 
 ```java
 + weretail_go [cq:ContentSyncConfig]
@@ -224,32 +223,32 @@ La liste ci-dessous présente un exemple de configuration de Content Sync.
   + ...
 ```
 
-**etc.designs.default et etc.designs.** mobileLes deux premières entrées de la configuration doivent être assez évidentes. Comme nous allons inclure un certain nombre de pages mobiles, nous avons besoin des fichiers de conception associés sous /etc/designs. Et comme aucun traitement supplémentaire n&#39;est nécessaire, la copie est suffisante.
+**etc.designs.default et etc.designs.** mobileLes deux premières entrées de la configuration doivent être assez évidentes. Comme nous allons inclure un certain nombre de pages mobiles, nous avons besoin des fichiers de conception associés sous /etc/designs. Et comme aucun traitement supplémentaire n’est nécessaire, la copie est suffisante.
 
-**événements.** plistCette entrée est un peu spéciale. Comme indiqué dans l&#39;introduction, l&#39;application devrait fournir une vue cartographique avec les marqueurs des emplacements des événements. Nous allons fournir les renseignements nécessaires sur l&#39;emplacement sous la forme d&#39;un fichier distinct au format PLIST. Pour que cela fonctionne, le composant événement liste utilisé sur la page d’index dispose d’un script appelé plist.jsp. Ce script est exécuté lorsque la ressource du composant est demandée avec l&#39;extension .plist. Comme d’habitude, le chemin d’accès aux composants est indiqué dans la propriété path et le type est défini sur content, car nous voulons exploiter le traitement des requêtes Sling.
+**events.** plistCette entrée est un peu spéciale. Comme indiqué dans l’introduction, l’application doit fournir une vue de carte avec les marqueurs des emplacements des événements. Nous allons fournir les informations d&#39;emplacement nécessaires sous la forme d&#39;un fichier distinct au format PLIST. Pour que cela fonctionne, le composant de liste d’événements utilisé sur la page d’index comporte un script appelé plist.jsp. Ce script est exécuté lorsque la ressource du composant est demandée avec l’extension .plist . Comme d’habitude, le chemin d’accès aux composants est indiqué dans la propriété path et le type est défini sur content, car nous voulons utiliser le traitement des requêtes Sling.
 
-**événements.touch.** htmlEnsuite, les pages réelles qui s’afficheront dans l’application sont affichées. La propriété path est définie sur la page racine des événements. Toutes les pages de événement situées en dessous de cette page seront également incluses, car la propriété deep prend par défaut la valeur true. Nous utilisons les pages comme type de configuration, de sorte que toute image ou tout autre fichier qui peut être référencé à partir d&#39;une image ou d&#39;un composant de téléchargement sur une page, soit incluse. En outre, la définition du sélecteur tactile nous donne une version mobile des pages. La configuration du Feature Pack contient plus d&#39;entrées de ce type, mais elles sont laissées pour compte ici pour la simplicité.
+**events.touch.** htmlNext affiche les pages réelles qui s’afficheront dans l’application. La propriété path est définie sur la page racine des événements. Toutes les pages d’événement situées sous cette page seront également incluses, car la propriété profonde est définie par défaut sur true. Nous utilisons les pages comme type de configuration, de sorte que toute image ou tout autre fichier pouvant être référencé à partir d’une image ou d’un composant de téléchargement sur une page soit inclus. En outre, le paramétrage du sélecteur tactile nous donne une version mobile des pages. La configuration dans le Feature Pack contient plus d’entrées de ce type, mais elles sont omises pour plus de simplicité ici.
 
-**** logoLe type de configuration du logo n&#39;a pas été mentionné jusqu&#39;à présent et il ne s&#39;agit pas des types de connexion. Cependant, la structure Content Sync est extensible dans une certaine mesure et c’est un exemple de cette structure, qui sera traité dans la section suivante.
+**** logoLe type de configuration du logo n’a pas été mentionné jusqu’à présent et il ne s’agit pas des types intégrés. Cependant, le framework de synchronisation de contenu est extensible dans une certaine mesure. C’est un exemple de cela, qui sera traité dans la section suivante.
 
-**** manifestIl est souvent souhaitable que certaines métadonnées soient incluses dans le fichier zip, comme la page de début de votre contenu, par exemple. Cependant, le codage en dur de ces informations vous empêche de facilement les modifier ultérieurement. La structure Content Sync prend en charge cette utilisation en recherchant un noeud manifeste dans la configuration, qui est simplement identifié par son nom et ne nécessite pas de type de configuration. Chaque propriété définie sur ce noeud particulier est ajoutée à un fichier, également appelé manifest et se trouve à la racine du fichier zip.
+**** manifestIl est souvent souhaitable d’inclure un certain type de métadonnées dans le fichier zip, comme la page de début de votre contenu, par exemple. Cependant, le codage en dur de ces informations vous empêche de les modifier facilement ultérieurement. La structure de synchronisation de contenu prend en charge ce cas d’utilisation en recherchant un noeud manifeste dans la configuration, qui est simplement identifié par son nom et ne nécessite pas de type de configuration. Chaque propriété définie sur ce noeud particulier est ajoutée à un fichier, également appelé manifest et réside à la racine du fichier zip.
 
-Dans cet exemple, la page de liste des événements est censée être la page initiale. Ces informations sont fournies dans la propriété **indexPage** et peuvent donc être facilement modifiées à tout moment. Une seconde propriété définit le chemin d’accès du fichier *événements.plist*. Comme nous le verrons plus tard, l’application cliente peut maintenant lire le manifeste et agir en fonction de celui-ci.
+Dans cet exemple, la page de liste d’événements est censée être la page initiale. Ces informations sont fournies dans la propriété **indexPage** et peuvent donc être facilement modifiées à tout moment. Une seconde propriété définit le chemin d’accès du fichier *events.plist*. Comme nous le verrons plus tard, l’application cliente peut désormais lire le manifeste et agir en conséquence.
 
-Dès que la configuration est configurée, le contenu peut être téléchargé avec un navigateur ou tout autre client HTTP, ou si vous développez pour iOS, vous pouvez utiliser la bibliothèque cliente WppKitSync dédiée. L’emplacement de téléchargement est constitué du chemin d’accès de la configuration et de l’extension *.zip*, par exemple lorsque vous travaillez avec une instance d’AEM locale : *https://localhost:4502/content/weretail_go.zip*
+Dès que la configuration est configurée, le contenu peut être téléchargé avec un navigateur ou tout autre client HTTP. Si vous développez pour iOS, vous pouvez utiliser la bibliothèque cliente WAppKitSync dédiée. L’emplacement de téléchargement est constitué du chemin de la configuration et de l’extension *.zip*, par exemple lorsque vous utilisez une instance d’AEM locale : *https://localhost:4502/content/weretail_go.zip*
 
-### Console de synchronisation du contenu {#the-content-sync-console}
+### Console de synchronisation de contenu {#the-content-sync-console}
 
-La console Content Sync liste toutes les configurations Content Sync du référentiel (tous les noeuds de type `cq:ContentSyncConfig`) et pour chaque configuration, vous permet d’effectuer les opérations suivantes :
+La console Synchronisation du contenu répertorie toutes les configurations de synchronisation du contenu dans le référentiel (tous les noeuds de type `cq:ContentSyncConfig`) et pour chaque configuration, vous pouvez effectuer les opérations suivantes :
 
 * Mettez à jour le cache.
 * Effacez le cache.
-* Téléchargez un fichier zip complet.
-* Téléchargez un fichier zip diff entre maintenant et une date et une heure spécifiques.
+* Téléchargez un fichier compressé complet.
+* Téléchargez un fichier compressé de comparaison entre maintenant et une date et une heure spécifiques.
 
-Il peut être utile pour le développement et le dépannage.
+Il peut s’avérer utile pour le développement et la résolution des problèmes.
 
-La console est accessible à l&#39;adresse suivante :
+La console est accessible à l’adresse :
 
 `https://localhost:4502/libs/cq/contentsync/content/console.html`
 
@@ -257,16 +256,16 @@ Elle se présente comme suit :
 
 ![chlimage_1](assets/chlimage_1.png)
 
-### Extension de la structure Content Sync {#extending-the-content-sync-framework}
+### Extension de la structure de synchronisation de contenu {#extending-the-content-sync-framework}
 
-Bien que le nombre d&#39;options de configuration soit déjà assez important, il peut ne pas couvrir toutes les exigences de votre cas d&#39;utilisation spécifique. Cette section décrit les points d’extension de la structure Content Sync et comment créer des types de configuration personnalisés.
+Bien que le nombre d’options de configuration soit déjà assez important, il se peut qu’il ne couvre pas toutes les exigences de votre cas d’utilisation spécifique. Cette section décrit les points d’extension de la structure de synchronisation de contenu et comment créer des types de configuration personnalisés.
 
-Pour chaque type de configuration, il existe un *gestionnaire de mise à jour de contenu*, qui est une fabrique de composants OSGi enregistrée pour ce type spécifique. Ces gestionnaires collectent le contenu, le traitent et l’ajoutent à un cache qui est conservé par la structure Content Sync. Implémentez l’interface ou la classe de base abstraite suivante :
+Pour chaque type de configuration, il existe un *gestionnaire de mise à jour de contenu*, qui est une fabrique de composants OSGi enregistrée pour ce type spécifique. Ces gestionnaires collectent du contenu, le traitent et l’ajoutent à un cache qui est géré par la structure de synchronisation de contenu. Implémentez l’interface ou la classe de base abstraite suivante :
 
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface que tous les gestionnaires de mise à jour doivent implémenter
-* `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Une classe abstraite qui simplifie le rendu des ressources à l&#39;aide de Sling
+* `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Une classe abstraite qui simplifie le rendu des ressources à l’aide de Sling
 
-Enregistrez votre classe en tant que fabrique de composants OSGi et déployez-la dans le conteneur OSGi dans un lot. Pour ce faire, vous pouvez utiliser le [module externe SCR Maven](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) en utilisant des balises JavaDoc ou des annotations. L’exemple suivant montre la version de JavaDoc :
+Enregistrez votre classe comme fabrique de composants OSGi et déployez-la dans le conteneur OSGi dans un lot. Pour ce faire, utilisez le [module externe Maven SCR](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) à l’aide de balises JavaDoc ou d’annotations. L’exemple suivant illustre la version de JavaDoc :
 
 ```java
 /*
@@ -286,15 +285,15 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 }
 ```
 
-Notez que la définition *usine* contient l’interface commune et le type personnalisé séparé par une barre oblique. Cette stratégie permet à la structure Content Sync de trouver et de créer une instance de votre classe personnalisée, car elle reconnaît le type personnalisé dans une entrée de configuration. La section suivante donne un exemple concret de gestionnaire de mise à jour personnalisé.
+Notez que la définition *factory* contient l’interface commune et le type personnalisé séparés par une barre oblique. Cette stratégie permet au framework de synchronisation de contenu de rechercher et de créer une instance de votre classe personnalisée, car elle reconnaît le type personnalisé dans une entrée de configuration. La section suivante fournit un exemple concret de gestionnaire de mise à jour personnalisé.
 
 >[!CAUTION]
 >
->Lors de la création sur la classe de base AbstractSlingResourceUpdateHandler, vous devez ajouter la définition *héritage*. Sinon, le conteneur OSGi ne définira pas les références requises qui sont déclarées dans la classe de base.
+>Lors de la création de la classe de base AbstractSlingResourceUpdateHandler , vous devez ajouter la définition *inherit* . Sinon, le conteneur OSGi ne définit pas les références requises qui sont déclarées dans la classe de base.
 
-### Implémentation d’un gestionnaire de mise à jour personnalisé {#implementing-a-custom-update-handler}
+### Mise en oeuvre d’un gestionnaire de mise à jour personnalisé {#implementing-a-custom-update-handler}
 
-Chaque page Web Web.Retail Mobile contient un logo dans le coin supérieur gauche que nous aimerions inclure dans le fichier zip, bien sûr. Toutefois, pour l&#39;optimisation du cache, AEM ne fait pas référence à l&#39;emplacement réel du fichier image dans le référentiel, ce qui nous empêche d&#39;utiliser simplement le type de configuration **copy**. Nous devons plutôt fournir notre propre type de configuration **logo** qui rend l&#39;image disponible à l&#39;emplacement demandé par AEM. La liste de code suivante indique la mise en oeuvre complète du gestionnaire de mise à jour du logo :
+Chaque page mobile We.Retail contient un logo dans le coin supérieur gauche que nous souhaitons inclure dans le fichier zip, bien sûr. Toutefois, pour l’optimisation du cache, AEM ne fait pas référence à l’emplacement réel du fichier image dans le référentiel, ce qui nous empêche d’utiliser simplement le type de configuration **copy**. Nous devons plutôt fournir notre propre type de configuration **logo** qui rend l’image disponible à l’emplacement demandé par AEM. La liste de code suivante indique l’implémentation complète du gestionnaire de mise à jour du logo :
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -360,40 +359,39 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 }
 ```
 
-La classe `LogoUpdateHandler` implémente la méthode `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` de l&#39;interface `ContentUpdateHandler`, qui prend plusieurs arguments :
+La classe `LogoUpdateHandler` met en oeuvre la méthode `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` de l’interface `ContentUpdateHandler`, qui prend plusieurs arguments :
 
-* Une instance `ConfigEntry` qui permet d&#39;accéder à l&#39;entrée de configuration, pour laquelle ce gestionnaire est appelé, et à ses propriétés.
-* Horodatage `lastUpdated` indiquant la dernière fois que Content Sync a mis à jour son cache. Le contenu qui n’a pas été modifié après cet horodatage ne doit pas être mis à jour par le gestionnaire.
-* Argument `configCacheRoot` spécifiant le chemin d&#39;accès racine du cache. Tous les fichiers mis à jour doivent être stockés sous ce chemin pour être ajoutés au fichier zip.
+* Une instance `ConfigEntry` qui permet d’accéder à l’entrée de configuration, pour laquelle ce gestionnaire est appelé, et à ses propriétés.
+* Un `lastUpdated` horodatage indiquant la dernière fois que la synchronisation de contenu a mis à jour son cache. Le contenu qui n’a pas été modifié après cet horodatage ne doit pas être mis à jour par le gestionnaire.
+* Argument `configCacheRoot` qui spécifie le chemin racine du cache. Tous les fichiers mis à jour doivent être stockés sous ce chemin pour être ajoutés au fichier zip.
 * Session d’administration qui doit être utilisée pour toutes les opérations de référentiel liées au cache.
-* Session utilisateur pouvant être utilisée pour mettre à jour le contenu dans le contexte d’un utilisateur donné et, par conséquent, pour fournir un type de contenu personnalisé.
+* Session utilisateur pouvant être utilisée pour mettre à jour le contenu dans le contexte d’un utilisateur spécifique et ainsi fournir une sorte de contenu personnalisé.
 
-Pour implémenter le gestionnaire personnalisé, vous devez d’abord créer une instance de la classe Image en fonction de la ressource fournie dans l’entrée de configuration. C&#39;est en gros la même procédure que le composant de logo sur nos pages. Il s’assure que le chemin de cible de l’image est identique à celui référencé à partir d’une page.
+Pour implémenter le gestionnaire personnalisé, créez d’abord une instance de la classe Image en fonction de la ressource fournie dans l’entrée de configuration. C&#39;est fondamentalement la même procédure que le composant Logo réel sur nos pages. Il s’assure que le chemin cible de l’image est identique à celui référencé à partir d’une page.
 
-Ensuite, vérifiez si la ressource a été modifiée depuis la dernière mise à jour. Les implémentations personnalisées doivent éviter les mises à jour inutiles du cache et renvoyer la valeur false si rien ne change. Si la ressource a été modifiée, copiez l’image à l’emplacement de cible attendu par rapport à la racine du cache. Enfin, `true` est renvoyé pour indiquer à la structure que le cache a été mis à jour.
+Vérifiez ensuite si la ressource a été modifiée depuis la dernière mise à jour. Les implémentations personnalisées doivent éviter les mises à jour inutiles du cache et renvoyer la valeur false si rien ne change. Si la ressource a été modifiée, copiez l’image vers l’emplacement cible attendu par rapport à la racine du cache. Enfin, `true` est renvoyé pour indiquer à la structure que le cache a été mis à jour.
 
 ## Utilisation du contenu sur le client {#using-the-content-on-the-client}
 
-Pour utiliser du contenu dans une application mobile fournie par Content Sync, vous devez demander du contenu via une connexion HTTP ou HTTPS. En conséquence, le contenu récupéré (compressé dans un fichier ZIP) peut être extrait et stocké localement sur le périphérique mobile. Notez que le contenu fait non seulement référence aux données mais aussi à la logique, c&#39;est-à-dire aux applications Web complètes ; permettant ainsi à l’utilisateur mobile d’exécuter des applications Web récupérées et des données correspondantes, même sans connectivité réseau.
+Pour utiliser du contenu dans une application mobile fournie par la synchronisation de contenu, vous devez demander du contenu via une connexion HTTP ou HTTPS. Par conséquent, le contenu récupéré (compressé dans un fichier ZIP) peut être extrait et stocké localement sur l’appareil mobile. Notez que le contenu fait non seulement référence aux données, mais également à la logique, c’est-à-dire aux applications web complètes ; permettant ainsi à l’utilisateur mobile d’exécuter les applications web récupérées et les données correspondantes, même sans connectivité réseau.
 
-Content Sync fournit le contenu de manière intelligente : Seules les modifications apportées aux données depuis la dernière synchronisation réussie des données sont distribuées, ce qui réduit le temps nécessaire au transfert des données. Lors de la première exécution d&#39;une application, des modifications de données sont demandées depuis le 1er janvier 1970, tandis que, par la suite, seules les données modifiées depuis la dernière synchronisation réussie sont demandées. AEM utilise un cadre de communication client pour iOS afin de simplifier la communication et le transfert des données, de sorte qu’une quantité minimale de code natif soit nécessaire pour activer une application Web basée sur iOS.
+La synchronisation de contenu permet d’afficher le contenu de manière intelligente : Seules les modifications apportées aux données depuis une dernière synchronisation des données réussie sont diffusées, ce qui réduit le temps nécessaire au transfert des données. Lors de la première exécution d’une application, des modifications de données sont demandées depuis le 1er janvier 1970, tandis que, par la suite, seules les données modifiées depuis la dernière synchronisation réussie sont demandées. AEM utilise une structure de communication client pour iOS afin de simplifier la communication et le transfert des données, de sorte qu’une quantité minimale de code natif soit nécessaire pour activer une application web basée sur iOS.
 
-Toutes les données transférées peuvent être extraites dans la même structure de répertoires, aucune étape supplémentaire (par exemple, les contrôles de dépendance) n’est requise lors de l’extraction des données. Dans le cas d’iOS, toutes les données sont stockées dans un sous-dossier du dossier Documents de l’application iOS.
+Toutes les données transférées peuvent être extraites dans la même structure de répertoires. Aucune étape supplémentaire (par exemple, les contrôles de dépendance) n’est nécessaire lors de l’extraction des données. Dans le cas d’iOS, toutes les données sont stockées dans un sous-dossier du dossier Documents de l’application iOS.
 
 Chemin d’exécution standard d’une application AEM Mobile basée sur iOS :
 
-* Application de débuts utilisateur sur périphérique iOS.
-* L’application tente de se connecter à AEM principal et demande des modifications de données depuis la dernière exécution.
-* Le serveur récupère les données en question et les zip dans un fichier.
+* L’utilisateur démarre l’application sur un appareil iOS.
+* L’application tente de se connecter à AEM serveur principal et demande des modifications de données depuis la dernière exécution.
+* Le serveur récupère les données en question et les archive dans un fichier.
 * Les données sont renvoyées au périphérique client où elles sont extraites dans le dossier documents.
-* Débuts/actualisations du composant UIWebView.
+* Le composant UIWebView démarre/actualise.
 
-Si une connexion n&#39;a pas pu être établie, les données précédemment téléchargées s&#39;affichent.
+Si une connexion n’a pas pu être établie, les données précédemment téléchargées s’affichent.
 
-### Aller de l&#39;avant {#getting-ahead}
+### Prise en main {#getting-ahead}
 
 Pour en savoir plus sur les rôles et les responsabilités d’un administrateur et d’un développeur, consultez les ressources ci-dessous :
 
 * [Création pour Adobe PhoneGap Enterprise avec AEM](/help/mobile/phonegap.md)
 * [Administration de contenu pour Adobe PhoneGap Enterprise avec AEM](/help/mobile/administer-phonegap.md)
-
