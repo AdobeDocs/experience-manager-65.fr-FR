@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 6cf82c2b-29f0-49d5-a138-99d7801d5a28
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 100%
 
 ---
-
 
 # Options de définition de l’internationalisation{#setting-internationalization-options}
 
@@ -35,4 +34,3 @@ Vous pouvez préciser les paramètres régionaux utilisés au moment de effectue
    Pour les transformations HTML, AEM forms prend en charge les valeurs d’encodage de caractères définies par le package `java.nio.charset` Si le paramètre sFormPreference prend la valeur PDFForm, seuls des jeux de caractères spécifiques sont pris en charge. Le nom du jeu de caractères doit être un nom canonique valide. La valeur par défaut est ISO-8859-1.
 
 1. Cliquez sur Enregistrer.
-
