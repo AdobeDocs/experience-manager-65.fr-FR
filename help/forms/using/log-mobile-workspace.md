@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: fb2b7ff6-6b29-425b-a86e-d1f80faab9e0
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 93%
 
 ---
-
 
 # Connexion à l’application AEM Forms{#logging-in-to-aem-forms-app}
 
@@ -24,7 +23,7 @@ Lorsque vous démarrez l’application AEM Forms, vous devez d’abord indiquer 
 
 ## Démarrage de l’application {#to-start-the-app}
 
-1. Appuyez sur l’icône de l’application AEM Forms sur votre périphérique mobile.
+1. Appuyez sur l’icône de l’application AEM Forms sur votre appareil mobile.
 1. Pour vous connecter à l’application, saisissez un nom d’utilisateur, un mot de passe et l’URL du serveur AEM Forms.
 
    >[!NOTE]
