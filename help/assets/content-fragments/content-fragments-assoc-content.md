@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '243'
 ht-degree: 100%
 
 ---
-
 
 # Contenu associé {#associated-content}
 
@@ -56,4 +55,3 @@ Une fois que vous avez associé une collection, vous pouvez effectuer les opéra
 * **Ajouter des ressources** à la collection.
 * Sélectionner une ressource en vue d’effectuer d’autres opérations.
 * Modifier la ressource.
-
