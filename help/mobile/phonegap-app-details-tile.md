@@ -1,22 +1,21 @@
 ---
 title: Mosaïque Gestion de l’application
 seo-title: Mosaïque Gestion de l’application
-description: Suivez cette page pour en savoir plus sur la gestion de la mosaïque d’applications sur le tableau de bord d’applications qui permet de modifier les détails relatifs à l’application.
-seo-description: Suivez cette page pour en savoir plus sur la gestion de la mosaïque d’applications sur le tableau de bord d’applications qui permet de modifier les détails relatifs à l’application.
+description: Consultez cette page pour en savoir plus sur la mosaïque Gérer l’application du tableau de bord de l’application qui permet de modifier les détails de l’application.
+seo-description: Consultez cette page pour en savoir plus sur la mosaïque Gérer l’application du tableau de bord de l’application qui permet de modifier les détails de l’application.
 uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 52%
 
 ---
-
 
 # Mosaïque Gestion de l’application{#manage-app-tile}
 
@@ -24,23 +23,23 @@ ht-degree: 52%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-La mosaïque **Gestion de l’application** du tableau de bord des applications permet de modifier les détails d’une application. Pour ouvrir la page Détails, cliquez sur le lien des détails de la mosaïque Gestion de l’application. Dans la page Gérer l’application, vous pouvez modifier les paramètres Configuration de l’application PhoneGap (config.xml) et préparer votre application pour l’envoi aux différentes boutiques d’applications.
+La mosaïque **Gestion de l’application** du tableau de bord des applications permet de modifier les détails d’une application. Pour ouvrir la page Détails, cliquez sur le lien des détails de la mosaïque Gestion de l’application. Dans la page Gérer l’application , vous pouvez modifier les paramètres Configuration de l’application PhoneGap (config.xml) et préparer l’envoi de votre application aux différents magasins d’applications.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## Présentation de la mosaïque de gestion de l’application {#understanding-the-manage-app-tile}
+## Présentation de la mosaïque Gérer l’application {#understanding-the-manage-app-tile}
 
-Vous pouvez explorer chaque volet de la mosaïque **Gérer l’application** à la vue ou modifier les détails en cliquant sur le bouton &quot;...&quot;. dans le coin inférieur droit.
+Vous pouvez parcourir chaque mosaïque de la mosaïque **Gérer l’application** pour afficher ou modifier les détails en cliquant sur &quot;..&quot;. dans le coin inférieur droit.
 
-### Onglet Simple {#the-basic-tab}
+### Onglet De base {#the-basic-tab}
 
-Vous pouvez modifier le **nom**, **auteur**, **brève description** et la **description** de votre application à partir de cet onglet.
+Vous pouvez modifier le **nom**, **auteur**, la **description courte** et la **description** de votre application depuis cet onglet.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
 ### Onglet Avancé {#the-advanced-tab}
 
-Chaque plate-forme d’applications mobiles décrit les données collectées, ciblant spécifiquement chaque magasin d’applications.
+Chaque plateforme d’applications mobiles décrit les données collectées, ciblant spécifiquement chaque boutique d’applications.
 
 Chaque plateforme est pilotée par le contenu de config.xml PhoneGap :
 
@@ -51,21 +50,21 @@ Chaque plateforme est pilotée par le contenu de config.xml PhoneGap :
 </widget>
 ```
 
-Chaque boutique d’applications fournisseur, telle qu’Apple App Store ou Google Play Store, nécessite par exemple une ou plusieurs captures d’écran de votre application mobile afin d’afficher les détails de votre application aux clients. Ces captures d&#39;écran peuvent avoir des exigences strictes en termes de dimensions et de contenu (en gros, elles doivent représenter l&#39;application). Les applications AEM prennent en charge la sélection et la gestion de ces captures d’écran pour les plates-formes et les dimensions de port de vue prises en charge, comme l’exige la boutique d’applications de chaque fournisseur.
+Chaque boutique d’applications de fournisseurs, telle qu’Apple App Store ou Google Play Store, nécessite par exemple une ou plusieurs captures d’écran de votre application mobile afin d’afficher les détails de votre application aux clients. Ces captures d’écran peuvent avoir des exigences strictes concernant les dimensions et le contenu (en fait, elles doivent représenter fidèlement l’application). Les applications d’AEM prennent en charge la sélection et la gestion de ces captures d’écran pour les plateformes prises en charge et les dimensions de port requises par la boutique d’applications de chaque fournisseur.
 
 >[!NOTE]
 >
 >L’application AEM Vérifier permet d’envoyer des captures d’écran directement aux détails de votre application dans AEM.
 >
->Voir [Démarrage rapide mobile pour AEM vérification](/help/mobile/phonegap-mobile-quickstart.md) pour plus d’informations.
+>Pour plus d’informations, voir [Démarrage rapide mobile pour AEM vérification](/help/mobile/phonegap-mobile-quickstart.md).
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
-### Métadonnées {#metadata}
+### Métadonnées   {#metadata}
 
 >[!NOTE]
 >
->Une fois que vous connaissez la mosaïque **Gérer l’application**, voir [Modification des métadonnées de l’application](/help/mobile/phonegap-editmetadata.md) pour la vue et la modification des métadonnées.
+>Une fois que vous connaissez la mosaïque **Gérer l’application**, voir [Modification des métadonnées de l’application](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
 
 #### Métadonnées courantes {#common-metadata}
 
@@ -75,25 +74,25 @@ Il existe une configuration et des métadonnées communes à toutes les platefor
 
 Dans cette section, vous définissez l’URL du serveur de mise à jour de contenu, la page d’entrée de votre application mobile, la version de PhoneGap utilisée pour la compilation, la version, le nom et la description de votre application, etc.
 
-**App** Versionis est la version opérationnelle de votre application. L’une des pratiques conseillées consiste à utiliser une notation à 3 décimales séparées par un point en commençant en dessous de 1.0.0 avant la première version.
+**App** Version est la version opérationnelle de votre application. L’une des pratiques conseillées consiste à utiliser une notation à 3 décimales séparées par un point en commençant en dessous de 1.0.0 avant la première version.
 
-**PhoneGap** Versionis est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. L’une des pratiques conseillées consiste à toujours la mettre à jour pour bénéficier des dernières fonctionnalités et des correctifs PhoneGap.
+**PhoneGap** Version est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. L’une des pratiques conseillées consiste à toujours la mettre à jour pour bénéficier des dernières fonctionnalités et des correctifs PhoneGap.
 
-**L’** URL du serveur de mise à jour de contenu est l’URL que votre application utilisera pour appeler les mises à jour de ContentSync. Elle doit correspondre à l’URL de votre répartiteur. Si vous n’utilisez pas de répartiteur, il doit s’agir de l’une des instances de publication qui sera utilisée pour déployer les mises à jour ContentSync de votre application.
+**L’** URL du serveur de mise à jour de contenu est l’URL que votre application utilisera pour appeler les mises à jour ContentSync. Elle doit correspondre à l’URL de votre répartiteur. Si vous n’utilisez pas de répartiteur, il doit s’agir de l’une des instances de publication qui sera utilisée pour déployer les mises à jour ContentSync de votre application.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
 >[!NOTE]
 >
->Cette section peut sembler vide, sauf si des données sont remplies dans les champs.
+>Cette section peut apparaître vide, sauf si des données sont renseignées dans les champs.
 >
->Dans la partie supérieure de la vue Détails, vous voyez la version de l’application, la version de PhoneGap et l’URL de mise à jour, chacune de ces valeurs pouvant être définie dans la section Métadonnées courantes. Toutefois, le ID de l&#39;application ne peut pas être modifié.
+>Dans la partie supérieure de la vue Détails, vous voyez la version de l’application, la version de PhoneGap et l’URL de mise à jour, chacune de ces valeurs pouvant être définie dans la section Métadonnées courantes. Toutefois, l’ID de l’application ne peut pas être modifié.
 
 #### Métadonnées de plateforme {#platform-metadata}
 
 Chaque plateforme définie dans PhoneGap config.xml peut contenir des propriétés personnalisées. Un développeur AEM doit contribuer à établir la structure de contenu pour capturer ces propriétés. Un exemple de propriétés spécifiques à la plateforme est disponible pour iOS.
 
-Les métadonnées pour toutes les plateformes configurées s’affichent désormais en même temps sur l’onglet Avancé de la mosaïque Gérer l’application.
+Les métadonnées pour toutes les plateformes configurées s’affichent désormais en même temps dans l’onglet Avancé de la mosaïque Gérer l’application .
 
 >[!NOTE]
 >
@@ -105,7 +104,7 @@ Dans le cas de plateformes dont le langage n’est pas compris par AEM, un déve
 
 L’Appstore d’Apple nécessite des métadonnées supplémentaires pour la soumission de votre application en vue de sa diffusion. La section Métadonnées iOS tente de collecter les informations nécessaires, qui peuvent être utilisées par l’outil iTMSTransporter d’Apple pour publier les métadonnées sur le compte développeur Apple associé.
 
-Pour obtenir les métadonnées propres à Apple, vous devez d’abord créer votre application sur [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Lors de la création de votre application, Apple génère les métadonnées requises par la section des métadonnées iOS si vous souhaitez utiliser l’outil Apple iTMSTransporter pour valider et télécharger les métadonnées sur itunesconnect.apple.com. Si vous souhaitez uniquement vous procurer les métadonnées à collecter, vous n’êtes pas obligé de renseigner les métadonnées spécifiques à iOS. Vous pouvez exporter les métadonnées qui fusionneront les métadonnées iOS et les métadonnées courantes et collecteront toutes les captures d’écran dans un fichier zip téléchargeable à tout moment.
+Pour obtenir les métadonnées spécifiques à Apple, vous devez d’abord créer votre application sur [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Lors de la création de votre application, Apple génère les métadonnées requises par la section des métadonnées iOS si vous souhaitez utiliser l’outil Apple iTMSTransporter pour valider et charger les métadonnées sur itunesconnect.apple.com. Si vous souhaitez uniquement vous procurer les métadonnées à collecter, vous n’êtes pas obligé de renseigner les métadonnées spécifiques à iOS. Vous pouvez exporter les métadonnées qui fusionneront les métadonnées iOS et les métadonnées courantes et collecteront toutes les captures d’écran dans un fichier zip téléchargeable à tout moment.
 
 Le fichier zip téléchargé contient un fichier itmsp qui peut être contrôlé au niveau du fichier metadata.xml. Le fichier itmsp contient les métadonnées exportées (dans le fichier metadata.xml) et toutes les captures d’écran associées.
 
@@ -123,9 +122,9 @@ La fonctionnalité d’exportation sert à collecter les captures d’écran et 
 
 ### URL du serveur de mise à jour du contenu {#content-update-server-url}
 
-L’une des principales fonctionnalités des applications AEM est la possibilité d’obtenir un nouveau contenu pour une demande d’application mobile via ContentSync, où le contenu peut être des ressources html, des pages, des vidéos, des images, du texte, etc. Une fois qu’un auteur de contenu a mis à jour le contenu, puis le publie, le serveur met le contenu à jour pour que l’application mobile puisse le télécharger.
+L’une des fonctionnalités clés des applications AEM est la possibilité de demander un nouveau contenu à une application mobile via ContentSync, où le contenu peut être des ressources html, des pages, des vidéos, des images, du texte, etc. Une fois qu’un auteur de contenu a mis à jour le contenu, puis le publie, le serveur met à disposition la mise à jour de contenu pour que l’application mobile puisse la télécharger.
 
-La propriété URL du serveur Content Update Server est l’URL qui doit pointer vers une instance de publication ; soit directement, soit par l&#39;intermédiaire du répartiteur ou du CDN. Le format de l’URL est le suivant :
+La propriété URL du serveur de mise à jour de contenu est l’URL qui doit pointer vers une instance de publication ; directement ou par le biais du dispatcher ou du CDN. Le format de l’URL est le suivant :
 
 `https://[hostname]:[port]`
 
@@ -135,13 +134,13 @@ La propriété URL du serveur Content Update Server est l’URL qui doit pointer
 
 ### Onglet Plugins {#the-plugins-tab}
 
-L&#39;onglet **Plugins** décrit les modules externes associés à votre application. Ces informations seront utilisées pour récupérer le module externe approprié pendant une génération.
+L’onglet **Plugins** décrit les modules externes associés à votre application. Ces informations seront utilisées pour récupérer le module externe approprié pendant une génération.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### L&#39;onglet Captures d&#39;écran {#the-screenshots-tab}
+### Onglet Captures d’écran {#the-screenshots-tab}
 
-L&#39;onglet **Captures d&#39;écran** affiche les résolutions d&#39;écran prises en charge sur différentes plates-formes.
+L’onglet **Captures d’écran** affiche les résolutions de capture d’écran prises en charge sur différentes plateformes.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
@@ -151,17 +150,17 @@ L&#39;onglet **Captures d&#39;écran** affiche les résolutions d&#39;écran pri
 
 ### Onglet Authentification {#the-authentication-tab}
 
-L&#39;onglet **Authentification** vous permet de sélectionner un client OAuth à associer à votre application et permet à un développeur d&#39;utiliser l&#39;authentification Adobe Experience Manager OAuth.
+L’onglet **Authentification** vous permet de sélectionner un client OAuth à associer à votre application et permet à un développeur d’utiliser l’authentification Adobe Experience Manager OAuth.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ### Étapes suivantes {#the-next-steps}
 
-Une fois que vous avez pris connaissance de la gestion des mosaïques d’application dans le tableau de bord d’applications, consultez les ressources suivantes pour les autres rôles de création :
+Une fois que vous avez appris à gérer la mosaïque d’application dans le tableau de bord de l’application, reportez-vous aux ressources suivantes pour d’autres rôles de création :
 
 * [Modification de métadonnées d’application](/help/mobile/phonegap-editmetadata.md)
-* [Définitions d’application](/help/mobile/phonegap-app-definitions.md)
-* [Création d’une application à l’aide de l’assistant de création d’application](/help/mobile/phonegap-create-new-app.md)
+* [Définitions des applications](/help/mobile/phonegap-app-definitions.md)
+* [Création d’une application à l’aide de l’assistant Créer une application](/help/mobile/phonegap-create-new-app.md)
 * [Importation d’une application hybride existante](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
@@ -169,6 +168,5 @@ Une fois que vous avez pris connaissance de la gestion des mosaïques d’applic
 
 Pour en savoir plus sur les rôles et les responsabilités d’un administrateur et d’un développeur, consultez les ressources ci-dessous :
 
-* [Développer pour Adobe PhoneGap Enterprise avec AEM](/help/mobile/developing-in-phonegap.md)
+* [Développement pour Adobe PhoneGap Enterprise avec AEM](/help/mobile/developing-in-phonegap.md)
 * [Administration de contenu pour Adobe PhoneGap Enterprise avec AEM](/help/mobile/administer-phonegap.md)
-
