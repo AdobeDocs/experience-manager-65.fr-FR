@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 50f0c963-8007-4e2a-aa73-d99b97d9a1aa
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 96%
 
 ---
-
 
 # Configuration de Connector for IBM Content Manager{#configuring-connector-for-ibm-content-manager}
 
@@ -37,4 +36,3 @@ Si vous saisissez un nom d’utilisateur ou un alias de banque de données incor
 
 * Si le service est arrêté, aucune erreur n’apparaît lorsque vous enregistrez les informations de configuration du service. Toutefois, lors du prochain démarrage du service, une exception sera générée et le service ne démarrera pas.
 * Si le service est démarré, ce dernier tente de valider immédiatement les informations d’identification lorsque vous enregistrez les informations de configuration du service. Dans ce cas, une erreur se produit et les informations de configuration ne sont pas enregistrées.
-
