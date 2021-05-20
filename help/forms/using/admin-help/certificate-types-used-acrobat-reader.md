@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 86%
 
 ---
-
 
 # Types de certificats utilisés par les extensions d’Acrobat Reader DC {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
@@ -37,13 +36,13 @@ Cette chaîne contient les éléments suivants :
 
 **Type de certificat :** décrit les modules de formulaires AEM activés par le certificat, ainsi que le niveau d’activation, tel que ARE Code à barres 2D Complet. Pour la liste des types de certificat, reportez-vous à la colonne Type du tableau de la section Profils de certificat.
 
-**Type de déploiement :** indique l’utilisation prévue du certificat, telle que Production. Cette valeur peut être Evaluation ou Production. Pour la liste des types de déploiement associés à chaque type de certificat, reportez-vous à la colonne Type de déploiement du tableau de la section Profils de certificat.
+**Type de déploiement :** indique l’utilisation prévue du certificat, par exemple Production. Cette valeur peut être Evaluation ou Production. Pour la liste des types de déploiement associés à chaque type de certificat, reportez-vous à la colonne Type de déploiement du tableau de la section Profils de certificat.
 
-**Version des droits d’utilisation :** décrit la version de l’algorithme des droits d’utilisation pour laquelle le certificat peut être utilisé, par exemple V6.1. Cette version ne signifie pas la version des extensions Acrobat ou Acrobat Reader DC.
+**Version des droits d’utilisation :** décrit la version de l’algorithme des droits d’utilisation pour laquelle le certificat peut être utilisé, par exemple V6.1. Cette version ne correspond pas à la version des extensions Acrobat ou Acrobat Reader DC.
 
-**Code de profil :** le code de profil est une description abrégée des propriétés complètes du certificat, par exemple, P8. Pour la liste des codes de profil associés à chaque type de fichier, reportez-vous à la colonne Profil du tableau de la section Profils de certificat.
+**Code de profil :** le code de profil est une description courte des propriétés complètes du certificat, comme par exemple, P8. Pour la liste des codes de profil associés à chaque type de fichier, reportez-vous à la colonne Profil du tableau de la section Profils de certificat.
 
-**Numéro de série :** un numéro de série est attribué à chaque certificat émis par l’Adobe, par exemple 0002054. Adobe Enterprise Support ou un représentant du compte Enterprise Adobe peut utiliser ce numéro de série pour tracer le certificat à une commande de produit spécifique ou à une relation OEM.
+**Numéro de série :** un numéro de série est attribué à chaque certificat émis par l’Adobe, tel que 0002054. Adobe Enterprise Support ou un représentant de compte Enterprise Adobe peut utiliser ce numéro de série pour tracer le certificat à une commande de produit spécifique ou à une relation OEM.
 
 ## Profils du certificat {#certificate-profiles}
 
@@ -226,4 +225,3 @@ Les droits d’utilisation des extensions d’Acrobat Reader DC autorisés compr
 >[!NOTE]
 >
 >Adobe ne peut concéder des droits d’utilisation des extensions d’Acrobat Reader DC sous licence que pour certaines combinaisons fonctionnelles. Il est impossible d’obtenir la licence d’utilisation de ces fonctionnalités indépendamment. Pour plus d’informations sur les combinaisons de droits d’utilisation proposées, contactez votre représentant commercial AEM forms.
-
