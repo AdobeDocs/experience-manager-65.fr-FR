@@ -9,20 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 74%
 
 ---
 
-
 # Intégration des composants de l’espace de travail AEM Forms dans des applications Web {#integrating-aem-forms-workspace-components-in-web-applications}
 
-Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-components.md) de l’espace de travail AEM Forms dans votre propre application Web. L’exemple d’implémentation suivant utilise des composants d’un paquet de développement d’espace de travail AEM Forms installé sur une instance CRX™ pour créer une application Web. Personnalisez la solution ci-dessous en fonction de vos besoins. L’exemple d’implémentation réutilise les composants `UserInfo`, `FilterList` et `TaskList`dans un portail Web.
+Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-components.md) de l’espace de travail AEM Forms dans votre propre application Web. L’exemple d’implémentation suivant utilise des composants d’un paquet de développement d’espace de travail AEM Forms installé sur une instance CRX™ pour créer une application Web. Personnalisez la solution ci-dessous en fonction de vos besoins. L’exemple d’implémentation réutilise les composants `UserInfo`, `FilterList` et `TaskList`dans un portail web.
 
-1. Connectez-vous à l’environnement CRXDE Lite à `https://'[server]:[port]'/lc/crx/de/`. Assurez-vous que vous avez installé un package de développement d’espace de travail AEM Forms.
+1. Connectez-vous à l’environnement de CRXDE Lite à l’adresse `https://'[server]:[port]'/lc/crx/de/`. Assurez-vous que vous avez installé un package de développement d’espace de travail AEM Forms.
 1. Créez un chemin `/apps/sampleApplication/wscomponents`.
 1. Copiez css, images, js/libs, js/runtime et js/registry.js
 
@@ -43,9 +42,9 @@ Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-com
        });
    ```
 
-1. Créez un noeud sous /content par nom `sampleApplication` et tapez `nt:unstructured`. Dans les propriétés de ce noeud, ajoutez `sling:resourceType` de type String et la valeur `sampleApplication`. Dans la liste de contrôle d’accès de ce nœud, ajoutez une entrée pour `PERM_WORKSPACE_USER` autorisant des privilèges jcr:read. En outre, dans l&#39;Contrôle d&#39;accès Liste de `/apps/sampleApplication`, ajoutez une entrée pour `PERM_WORKSPACE_USER` autorisant les privilèges jcr:read.
-1. Dans `/apps/sampleApplication/wscomponents/js/registry.js`, mettez à jour les chemins d&#39;accès de `/lc/libs/ws/` à `/lc/apps/sampleApplication/wscomponents/` pour les valeurs de modèle.
-1. Dans le fichier JSP de votre page d&#39;accueil de portail à l’adresse `/apps/sampleApplication/GET.jsp`, ajoutez le code suivant pour inclure les composants requis dans le portail.
+1. Créez un noeud sous /content par nom `sampleApplication` et saisissez `nt:unstructured`. Dans les propriétés de ce noeud, ajoutez `sling:resourceType` de type Chaîne et valeur `sampleApplication`. Dans la liste de contrôle d’accès de ce nœud, ajoutez une entrée pour `PERM_WORKSPACE_USER` autorisant des privilèges jcr:read. En outre, dans la liste de contrôle d’accès de `/apps/sampleApplication`, ajoutez une entrée pour `PERM_WORKSPACE_USER` autorisant des privilèges jcr:read.
+1. Dans `/apps/sampleApplication/wscomponents/js/registry.js`, mettez à jour les chemins d’accès de `/lc/libs/ws/` vers `/lc/apps/sampleApplication/wscomponents/` pour les valeurs de modèle.
+1. Dans le fichier JSP de la page d’accueil de votre portail à l’adresse `/apps/sampleApplication/GET.jsp`, ajoutez le code suivant pour inclure les composants requis dans le portail.
 
    ```jsp
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
