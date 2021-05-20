@@ -9,20 +9,19 @@ topic-tags: hTML5_forms
 discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 96%
 
 ---
 
-
 # Présentation des formulaires HTML5{#introduction-to-html-forms}
 
 Les formulaires HTML5 sont une nouvelle fonctionnalité du logiciel Adobe Experience Manager 6.0 (AEM 6.0) qui offre le rendu des modèles de formulaires XFA au format HTML5. Cette fonctionnalité permet le rendu des formulaires sur les périphériques mobiles et les navigateurs de bureau ne prenant pas en charge les documents XFA en PDF. Les formulaires HTML5 prennent en charge les fonctionnalités existantes des modèles de formulaires XFA, mais ajoutent également de nouvelles fonctionnalités, telles que la signature tactile, pour les appareils mobiles.
 
-Les formulaires HTML5 génèrent des documents basés sur des éléments HTML5 standards. Vous pouvez afficher les formulaires HTML5 dans tous les navigateurs récents prenant en charge le format HTML5. Il n’est pas nécessaire d’installer de module externe de navigateur supplémentaire pour les navigateurs. Pour plus d’informations sur les navigateurs pris en charge, voir [Plates-formes clientes prises en charge](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
+Les formulaires HTML5 génèrent des documents basés sur des éléments HTML5 standards. Vous pouvez afficher les formulaires HTML5 dans tous les navigateurs récents prenant en charge le format HTML5. Il n’est pas nécessaire d’installer de module externe de navigateur supplémentaire pour les navigateurs. Pour plus d’informations sur les navigateurs pris en charge, voir [Plateformes clientes prises en charge](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
 ![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
