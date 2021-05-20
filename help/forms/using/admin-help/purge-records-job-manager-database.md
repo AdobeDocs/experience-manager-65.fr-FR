@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 100%
 
 ---
-
 
 # Purge d’enregistrements de la base de données de Job Manager.{#purge-records-from-the-job-manager-database}
 
@@ -68,4 +67,3 @@ Les informations relatives aux purges actuellement planifiées s’affichent dan
    >Si vous spécifiez une date et une heure de début antérieures à la date actuelle, AEM forms calcule la date logique de départ suivante selon la date indiquée. Par exemple, si vous planifiez le 9 avril une tâche de purge hebdomadaire à partir du 7 avril, la première purge sera effectuée le 14 avril.
 
 1. Cliquez sur Démarrer le planificateur. Tous les paramètres de planificateur précédemment définis seront remplacés par les nouveaux.
-
