@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 85%
 
 ---
-
 
 # Nouveau service de rendu et d’envoi{#new-render-and-submit-service}
 
@@ -88,7 +87,7 @@ Sortie - `runtimeMap`
 
 Sortie - `outputDocument`
 
-Le processus définit `outputDocument`sur `inputDocument`récupéré de `taskContext`.
+Le processus définit la `outputDocument`sur la `inputDocument`récupérée de `taskContext`.
 
 ## Processus de rendu ou d’envoi par défaut, et profils d’action {#default-render-or-submit-processes-and-action-profiles}
 
@@ -115,7 +114,7 @@ Les navigateurs retirent progressivement la prise en charge des modules externes
 
    La boîte de dialogue Obtenir les applications s’affiche.
 
-1. Sélectionnez les applications pour lesquelles vous souhaitez modifier le rendu des formulaires mobiles, puis cliquez sur **OK**.
+1. Sélectionnez les applications pour lesquelles vous souhaitez modifier le rendu du formulaire mobile et cliquez sur **OK**.
 1. Ouvrez le processus pour lequel vous souhaitez modifier le rendu.
 1. Ouvrez le point de départ/la tâche ciblé(e), accédez à la section Présentation et Données, puis cliquez sur **Gérer les profils d’action**.
 
@@ -142,7 +141,7 @@ Voici certaines questions fréquentes sur les profils d’action :
 
 Et, les processus d’envoi équivalents.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Quels Profils d&#39;action seront disponibles en standard ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Quels profils d’action seront disponibles prêts à l’emploi ?**
 
 Pour des formulaires XDP:
 
@@ -152,11 +151,11 @@ Pour des formulaires XDP:
 
 Rien. Le profil d’action par défaut est choisi automatiquement, et le mode de rendu est pris en charge automatiquement.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Que faut-il faire pour permettre le rendu du formulaire au format HTML sur un bureau ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Que doit-on faire pour permettre le rendu du formulaire au format HTML sur un bureau ?**
 
 L’utilisateur doit sélectionner le bouton radio HTML pour le profil par défaut.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du profil d&#39;action par défaut ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du profil d’action par défaut ?**
 
 Oui ; étant donné que le rendu précédent et les services d’envoi associés au profil d’action par défaut étaient différents, ils sont gérés en tant que personnalisations des formulaires existants. En cliquant sur **Restaurer les valeurs par défaut**, les services de rendu et d’envoi par défaut sont définis à la place.
 
