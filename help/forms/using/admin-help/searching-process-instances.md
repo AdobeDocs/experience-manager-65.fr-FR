@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 98%
 
 ---
-
 
 # Recherche d’instances de processus{#searching-for-process-instances}
 
@@ -58,7 +57,7 @@ Vous pouvez entrer des attributs spécifiques pour effectuer une recherche déta
 
 [A propos des états d’instances de processus](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
-## Exécution d’une recherche de processus combinée  {#perform-a-combined-search-for-a-process}
+## Exécution d’une recherche de processus combinée {#perform-a-combined-search-for-a-process}
 
 Pour créer une recherche basée à la fois sur une recherche générale et une recherche détaillée, avec un ET implicite entre les champs, entrez vos critères de recherche dans les champs Recherche générale et Recherche détaillée de la page Recherche de processus.
 
