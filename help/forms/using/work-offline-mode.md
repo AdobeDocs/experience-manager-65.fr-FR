@@ -8,20 +8,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 82%
 
 ---
 
-
 # Utilisation en mode hors ligne {#working-in-the-offline-mode}
 
 Le mode hors ligne de l’application AEM Forms vous permet de travailler en toute transparence, même si l’application est hors ligne. Vous pouvez ouvrir, mettre à jour et même envoyer un formulaire sans avoir besoin d’une connexion réseau.
 
-Vous débuts travailler sur l’application AEM Forms en synchronisant votre application avec le serveur AEM Forms. Tous les formulaires qui vous sont assignés sont téléchargés dans votre application. Pour AEM Forms sur JEE, les tâches sont récupérées dans l’onglet des tâches, les formulaires associés à des points de départ et d’autres formulaires sous l’onglet Formulaires. Pour AEM Forms sur OSGi, seuls les formulaires sont chargés dans l’onglet Formulaires.
+Vous commencez à travailler sur l’application AEM Forms en synchronisant votre application avec le serveur AEM Forms. Tous les formulaires qui vous sont assignés sont téléchargés dans votre application. Pour AEM Forms sur JEE, les tâches sont récupérées dans l’onglet des tâches, les formulaires associés à des points de départ et d’autres formulaires sous l’onglet Formulaires. Pour AEM Forms sur OSGi, seuls les formulaires sont chargés dans l’onglet Formulaires.
 
 Pour plus de d’informations sur la synchronisation de l’application, consultez la section [Synchronisation de l’application](/help/forms/using/sync-app.md).
 
@@ -31,7 +30,7 @@ Lorsque vous synchronisez votre application avec le serveur AEM Forms, les formu
 
 Pour vous assurer que les pièces jointes associées sont téléchargées avec chaque formulaire, activez l’option de récupération des pièces jointes. Pour plus d’informations, consultez [Mise à jour des paramètres généraux](/help/forms/using/update-general-settings.md).
 
-Le téléchargement de données sur le périphérique mobile pouvant affecter ses performances, l’option de récupération des pièces jointes est désactivée par défaut. Les pièces jointes sont récupérées sur le périphérique pour toutes les tâches téléchargées à partir du serveur après le réglage de ce paramètre sur ON (Activé). En mode hors connexion, un utilisateur peut alors travailler sur toutes les tâches téléchargées sur le périphérique après avoir défini les options **Récupérer les pièces jointes** sur ON.
+Le téléchargement de données sur le périphérique mobile pouvant affecter ses performances, l’option de récupération des pièces jointes est désactivée par défaut. Les pièces jointes sont récupérées sur le périphérique pour toutes les tâches téléchargées à partir du serveur après le réglage de ce paramètre sur ON (Activé). En mode hors ligne, un utilisateur peut alors travailler sur toutes les tâches téléchargées sur l’appareil après avoir défini les options **Récupérer les pièces jointes** sur ON.
 
 ## Configuration du service hors ligne pour l’application AEM Forms {#configuring-offline-service-for-aem-forms-app-br}
 
@@ -39,9 +38,9 @@ Le service hors ligne de l’application AEM Forms identifie les ressources util
 
 Pour configurer le composant hors ligne côté serveur de l’application AEM Forms :
 
-1. Dans l’instance d’auteur, accédez à **Adobe Experience Manager** >**Outils** > **Forms** > **Configurer Forms App Offline Service**.
+1. Dans l’instance d’auteur, accédez à **Adobe Experience Manager** >**Outils** > **Forms** > **Configurer le service hors ligne de l’application Forms**.
 
-   URL: `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
+   URL : `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
 
 1. Sous Paramètres généraux, vous pouvez effectuer les opérations suivantes :
 
