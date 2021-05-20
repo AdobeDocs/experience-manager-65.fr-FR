@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 95%
 
 ---
-
 
 # Approvisionnement juste à temps {#just-in-time-user-provisioning}
 
@@ -32,7 +31,7 @@ Voici comment l’authentification traditionnelle fonctionne :
 
    **Existe :** si l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
 
-   **N’existe pas :** User Management renvoie un échec d’authentification.
+   **N’existe pas :** User Management renvoie l’échec de l’authentification.
 
    **Non valide :** User Management renvoie l’échec d’authentification.
 
@@ -112,4 +111,3 @@ Supposons qu’un utilisateur essaie de se connecter à AEM Forms et qu’un fou
 >[!NOTE]
 >
 >la fonction d’approvisionnement juste à temps comprend une mise en œuvre par défaut de `IdentityCreator` que vous pouvez utiliser pour créer des utilisateurs de manière dynamique. Les utilisateurs sont créés avec les informations associées aux annuaires dans ce domaine.
-
