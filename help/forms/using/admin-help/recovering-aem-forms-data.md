@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 95%
 
 ---
-
 
 # Récupération des données AEM Forms {#recovering-the-aem-forms-data}
 
@@ -109,11 +108,11 @@ Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restant
       Pour la restauration dans un environnement organisé en grappes, consultez la section [Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Supprimez tous les fichiers temporaires AEM forms créés dans le répertoire java.io.temp ou dans le répertoire temporaire Adobe.
-1. Formulaires d&#39;AEM début (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Démarrez AEM forms (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Modification de l’emplacement du stockage global de documents durant la récupération {#changing-the-gds-location-during-recovery}
 
-Si votre répertoire de stockage global de documents est restauré à un emplacement différent de son emplacement d’origine, exécutez le script LCSetGDS pour définir le répertoire de stockage global de documents sur le nouvel emplacement. Le script se trouve dans le dossier `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Le script utilise deux paramètres, `defaultGDS` et `newGDS`. Voir le fichier `ReadMe.txt` dans le même dossier pour obtenir des instructions sur la façon d’exécuter le script.
+Si votre répertoire de stockage global de documents est restauré à un emplacement différent de son emplacement d’origine, exécutez le script LCSetGDS pour définir le répertoire de stockage global de documents sur le nouvel emplacement. Le script se trouve dans le dossier `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline` . Le script utilise deux paramètres, `defaultGDS` et `newGDS`. Voir le fichier `ReadMe.txt` dans le même dossier pour obtenir des instructions sur la façon d’exécuter le script.
 
 >[!NOTE]
 >
@@ -134,4 +133,3 @@ Pour modifier l’emplacement du stockage global de documents dans un environnem
 >[!NOTE]
 >
 >si vous ne pouvez pas vous assurer du démarrage complet d’un nœud avant le démarrage des autres nœuds, vous devez exécuter le script LCSetGDS sur chacun des nœuds avant de démarrer la grappe.
-
