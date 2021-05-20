@@ -1,6 +1,6 @@
 ---
-title: Envoi d’un accusé de réception d’envoi de formulaire par courrier électronique
-seo-title: Envoi d’un accusé de réception d’envoi de formulaire par courrier électronique
+title: Envoi d’un accusé de réception d’envoi de formulaire par e-mail
+seo-title: Envoi d’un accusé de réception d’envoi de formulaire par e-mail
 description: AEM Forms permet de configurer l’action Envoyer de courrier électronique qui envoie un accusé de réception à un utilisateur lors de l’envoi du formulaire.
 seo-description: AEM Forms permet de configurer l’action Envoyer de courrier électronique qui envoie un accusé de réception à un utilisateur lors de l’envoi du formulaire.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
@@ -9,50 +9,49 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
-translation-type: tm+mt
-source-git-commit: acc2a3977353386d7e1dfd1344a61d78812fe3fc
+exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '574'
-ht-degree: 44%
+ht-degree: 69%
 
 ---
 
-
-# Envoi d’un accusé de réception d’envoi de formulaire par courrier électronique {#sending-a-form-submission-acknowledgement-via-email}
+# Envoi d’un accusé de réception d’envoi de formulaire par e-mail {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Envoi de données de formulaire adaptatif {#adaptive-form-data-submission}
 
 Les formulaires adaptatifs fournissent plusieurs flux de travaux [d’actions Envoyer](../../forms/using/configuring-submit-actions.md) prêts à l’emploi pour envoyer les données de formulaire à différents points de terminaison.
 
-Par exemple, l’action d’envoi **[!UICONTROL Envoyer un courrier électronique]** envoie un courrier électronique lors de l’envoi réussi d’un formulaire adaptatif. Elle peut également être configurée pour envoyer les données de formulaire et le fichier PDF dans le courrier électronique.
+Par exemple, l’action d’envoi **[!UICONTROL Envoyer un courrier électronique]** envoie un courrier électronique lors de l’envoi réussi d’un formulaire adaptatif. Elle peut également être configurée pour envoyer les données de formulaire et le fichier PDF dans l’e-mail.
 
 Cet article décrit la procédure pour activer l’action Courrier électronique dans un formulaire adaptatif et les différentes configurations fournies.
 
 >[!NOTE]
 >
->Vous pouvez également utiliser l’option **[!UICONTROL Envoyer un PDF par courrier électronique]** pour envoyer le formulaire rempli par courrier électronique en tant que pièce jointe PDF. Les options de configuration disponibles pour cette action sont identiques à celles disponibles pour l&#39;action **[!UICONTROL Envoyer un courrier électronique]**. L’action PDF par courrier électronique est disponible uniquement pour les formulaires adaptatifs basés sur XFA.
+>Vous pouvez également utiliser l’option **[!UICONTROL Envoyer PDF par e-mail]** pour envoyer le formulaire rempli par e-mail en tant que pièce jointe. Les options de configuration disponibles pour cette action sont identiques à celles proposées pour l’action **[!UICONTROL Envoyer un e-mail]**. L’action PDF par courrier électronique est disponible uniquement pour les formulaires adaptatifs basés sur XFA.
 
-## Envoyer une action de courrier électronique {#email-action}
+## Action Envoyer un e-mail {#email-action}
 
-L’action Envoyer un courrier électronique permet à un auteur d’envoyer automatiquement un courrier électronique à un ou plusieurs destinataires lors de l’envoi réussi d’un formulaire adaptatif.
+L’action Envoyer un courrier électronique permet à un auteur d’envoyer automatiquement du courrier électronique à un ou plusieurs destinataires lors de l’envoi réussi d’un formulaire adaptatif.
 
 >[!NOTE]
 >
->Pour utiliser l&#39;action Envoyer un courrier électronique, vous devez configurer le service de messagerie AEM comme décrit dans [Configuration du service de messagerie](/help/sites-administering/notification.md#configuring-the-mail-service).
+>Pour utiliser l’action Envoyer un courrier électronique, vous devez configurer le service de messagerie d’AEM comme décrit dans la section [Configuration du service de messagerie](/help/sites-administering/notification.md#configuring-the-mail-service).
 
 ### Activation de l’action Envoyer un courrier électronique sur un formulaire adaptatif {#enabling-email-action-on-an-adaptive-form}
 
-1. Ouvrez un formulaire adaptatif en mode **[!UICONTROL modifier]**.
+1. Ouvrez un formulaire adaptatif en mode **[!UICONTROL edit]** .
 
-1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur **[!UICONTROL Conteneur de formulaire]** et appuyez sur ![configurer](assets/configure-icon.svg) pour vue les propriétés du formulaire adaptatif.
+1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur **[!UICONTROL Conteneur de formulaires]** et appuyez sur ![configurer](assets/configure-icon.svg) pour afficher les propriétés du formulaire adaptatif.
 
-1. Dans la section **[!UICONTROL Envoi]**, sélectionnez **[!UICONTROL Envoyer un courriel]** dans la liste déroulante **[!UICONTROL Action d’envoi]**.
+1. Dans la section **[!UICONTROL Submission]** (Envoi), sélectionnez **[!UICONTROL Send email]** dans la liste déroulante **[!UICONTROL Submit Action]**.
 
    ![Actions Envoyer](assets/submission-actions.png)
 
-1. Indiquez des ID de courrier électronique valides dans les champs **[!UICONTROL À]**, **[!UICONTROL CC]** et **[!UICONTROL BCC]**.
+1. Spécifiez des ID de courrier électronique valides dans les champs **[!UICONTROL To]**, **[!UICONTROL CC]** et **[!UICONTROL BCC]**.
 
-   Indiquez l’objet et le corps du courrier électronique dans les champs **[!UICONTROL Objet]** et **[!UICONTROL Modèle de courriel]**, respectivement.
+   Indiquez l’objet et le corps de l’email dans les champs **[!UICONTROL Objet]** et **[!UICONTROL Modèle d’email]** , respectivement.
 
    Vous pouvez également spécifier des espaces réservés aux variables dans les champs. Dans ce cas, les valeurs des champs sont traitées lorsque le formulaire est envoyé par un utilisateur final. Pour plus d’informations, voir [Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un courrier électronique](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
@@ -60,7 +59,7 @@ L’action Envoyer un courrier électronique permet à un auteur d’envoyer aut
 
    >[!NOTE]
    >
-   >Si vous choisissez l’option **[!UICONTROL Envoyer le PDF par courrier électronique]**, vous devez sélectionner l’option Inclure les pièces jointes.
+   >Si vous choisissez l’option **[!UICONTROL Envoyer le PDF par courrier électronique]**, vous devez sélectionner l’option Inclure les pièces jointes .
 
 1. Cliquez sur ![enregistrer](assets/save_icon.svg) pour enregistrer les modifications.
 
@@ -68,21 +67,21 @@ L’action Envoyer un courrier électronique permet à un auteur d’envoyer aut
 
 Dans un formulaire adaptatif, les noms de champ sont appelés espaces réservés. Ils sont remplacés par la valeur du champ après l’envoi du formulaire par un utilisateur.
 
-Dans l&#39;action **[!UICONTROL Envoyer un courrier électronique]**, vous pouvez utiliser des espaces réservés qui sont traités lorsque l&#39;action est exécutée. Cela signifie que les en-têtes du courrier électronique (tels que **[!UICONTROL À]**, **[!UICONTROL CC]**, **[!UICONTROL BCC]**, **[!UICONTROL Objet]**) sont générés lorsque l’utilisateur envoie le formulaire.
+Sous l’action **[!UICONTROL Envoyer un e-mail]**, vous pouvez utiliser des espaces réservés qui sont traités lorsque l’action est effectuée. Cela implique que les en-têtes de l’e-mail (tels que **[!UICONTROL À]**, **[!UICONTROL Cc]**, **[!UICONTROL Cci]**, **[!UICONTROL Objet]**) sont générés lorsque l’utilisateur envoie le formulaire.
 
-Pour définir un espace réservé, spécifiez `${<field name>}` dans un champ après avoir sélectionné **[!UICONTROL Envoyer un courrier électronique]** comme action d’envoi.
+Pour définir un espace réservé, spécifiez `${<field name>}` dans un champ après avoir sélectionné **[!UICONTROL Envoyer un e-mail]** comme action Envoyer.
 
-Par exemple, si le formulaire contient le champ **[!UICONTROL Adresse électronique]**, nommé `email_addr`, pour capturer l’ID d’adresse électronique d’un utilisateur, vous pouvez spécifier les éléments suivants dans les champs **[!UICONTROL À]**, **[!UICONTROL CC]** ou **[!UICONTROL BCC]**.
+Par exemple, si le formulaire contient le champ **[!UICONTROL Adresse électronique]**, appelé `email_addr` pour capturer l’identifiant d’adresse électronique d’un utilisateur, vous pouvez spécifier les valeurs suivantes dans les champs **[!UICONTROL À]**, **[!UICONTROL Cc]**, ou **[!UICONTROL Cci]**.
 
 `${email_addr}`
 
-Lorsqu’un utilisateur envoie le formulaire, un courrier électronique est envoyé à l’identifiant d’adresse électronique entré dans le champ `email_addr` du formulaire.
+Lorsqu’un utilisateur envoie le formulaire, un e-mail est envoyé à l’identifiant d’adresse électronique entré dans le champ `email_addr` du formulaire.
 
 >[!NOTE]
 >
 >Vous pouvez trouver le nom d’un champ dans la boîte de dialogue **[!UICONTROL Modifier]** de ce champ.
 
-Les espaces réservés aux variables peuvent également être utilisés dans les champs **[!UICONTROL Objet]** et **[!UICONTROL Modèle de courriel]**.
+Les espaces réservés aux variables peuvent également être utilisés dans les champs **[!UICONTROL Objet]** et **[!UICONTROL Modèle d’e-mail]**.
 
 Par exemple :
 
@@ -97,4 +96,3 @@ Par exemple :
 >[!NOTE]
 >
 >Les champs des panneaux répétables ne peuvent pas être utilisés en tant qu’espaces réservés aux variables.
-
