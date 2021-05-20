@@ -8,16 +8,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
-feature: Panoramic Images,Asset Management
+feature: Images panoramiques, Gestion des ressources
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 80%
+source-wordcount: '584'
+ht-degree: 81%
 
 ---
-
 
 # Images panoramiques {#panoramic-images}
 
@@ -32,7 +31,7 @@ Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/asse
 Pour qu’une ressource téléchargée soit une image panoramique sphérique utilisable avec la visionneuse d’images panoramiques, la ressource doit présenter l’une ou l’autre des caractéristiques suivantes, ou les deux :
 
 * Un rapport d’aspect de 2.
-Vous pouvez remplacer le paramètre de format par défaut de 2 en CRXDE Lite par le paramètre suivant :
+Vous pouvez remplacer le paramètre de rapport d’aspect par défaut de 2 en CRXDE Lite à l’emplacement suivant :
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Avec les mots-clés `equirectangular`, ou `spherical` et `panorama`, ou `spherical` et `panoramic`. Voir [Utilisation des balises](/help/sites-authoring/tags.md).
@@ -43,7 +42,7 @@ Pour télécharger des ressources à utiliser avec la visionneuse d’images pan
 
 ## Configuration de Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées spécifiques à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
+Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées spécifiques à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte.
 
@@ -53,7 +52,7 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM
 1. Sur la même page Publication sur hébergeur d’images, localisez l’en-tête **[!UICONTROL Attributs de requête.]**
 1. Sous l’en-tête Attributs de requête, localisez **[!UICONTROL Limite de taille de l’image de réponse.]** Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
 
-   Dynamic Media Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images de rapport 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
+   Dynamic Media Classic est limitée à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport d’aspect de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
 
    >[!NOTE]
    >
@@ -78,7 +77,7 @@ Si vous avez fait glisser une image dans le composant Média panoramique au sein
 
 * En cas d’erreur « Verrou incorrect » ou « Erreur d’analyse » sur la page, vérifiez que Mode d’obscurcissement de requête de vérification et Mode de verrouillage de requête sont désactivés.
 * Pour une erreur de canevas corrompu, configurez un chemin de fichier de définitions de règles et l’option Invalider sur le réseau de diffusion de contenu pour les demandes précédentes de la ressource d’image.
-* Si la qualité d’image devient très faible après une demande d’image dont la taille dépasse la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs d’encodage JPEG > Qualité]** n’est pas vide. Un paramètre type du champ **[!UICONTROL Qualité]** est `95`. Vous trouverez le paramètre sur la page Publication sur hébergeur d’images. Pour accéder à la page, voir [Configuration de Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Si la qualité d’image devient très faible après une demande d’image dont la taille dépasse la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs d’encodage JPEG > Qualité]** n’est pas vide. Un paramètre type pour le champ **[!UICONTROL Qualité]** est `95`. Vous trouverez le paramètre sur la page Publication sur hébergeur d’images. Pour accéder à la page, voir [Configuration de Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Aperçu des images panoramiques {#previewing-panoramic-images}
 
