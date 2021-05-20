@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
-feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Portail Formulaires
+exl-id: a685889e-5d24-471c-926d-dbb096792bc8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 99%
 
 ---
-
 
 # API pour travailler avec des formulaires envoyés sur le portail de formulaires {#apis-to-work-with-submitted-forms-on-forms-portal}
 
@@ -96,7 +95,7 @@ Spécifiez les paramètres suivants dans l’URL de requête :
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (facultatif)</td>
-   <td>Spécifie une liste de propriétés de formulaire séparées par des virgules du formulaire à inclure dans les résultats. Les propriétés par défaut sont : <br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>Spécifie une liste de propriétés de formulaire séparées par des virgules du formulaire à inclure dans les résultats. Les propriétés par défaut sont :<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (facultatif)</td>
@@ -230,4 +229,3 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSub
 ```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
-
