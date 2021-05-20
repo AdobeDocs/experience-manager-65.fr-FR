@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
-translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 81%
 
 ---
-
 
 # Création d’une application AEM Forms sécurisée pour iOS {#building-a-secure-aem-forms-app-for-ios}
 
@@ -35,8 +34,8 @@ Vous devez archiver le projet Xcode pour l’application AEM Forms afin de gén�
 1. Téléchargez le profil d’approvisionnement et ajoutez-le à Xcode et à l’iPad.
 1. Ouvrez une session sur l’ordinateur Mac sur lequel Xcode et le SDK iOS sont installés et configurés.
 1. Ouvrez le projet `AEM Forms.xcodeproj` dans Xcode.
-1. Cliquez sur **[!UICONTROL AEM Forms]**, sous **[!UICONTROL TARGETS]**, sélectionnez **[!UICONTROL AEM Forms]**. Sélectionnez l’onglet **[!UICONTROL Créer des paramètres]**, recherchez la section **[!UICONTROL Droits de signature de code]** et, dans la liste déroulante Droits, sélectionnez l’option **[!UICONTROL LC Enterprise]**.
-1. Trouvez et ouvrez le fichier `LC Enterprise.entitlements` dans Xcode pour le modifier. Sous les **droits XCode**, ajoutez la même paire clé-valeur que dans votre profil de mise en service.
+1. Cliquez sur **[!UICONTROL AEM Forms]**, sous **[!UICONTROL TARGETS]**, sélectionnez **[!UICONTROL AEM Forms]**. Sélectionnez l’onglet **[!UICONTROL Paramètres de génération]**, recherchez la section **[!UICONTROL Droit de signature de code]** et, dans la liste déroulante Droits, sélectionnez l’option **[!UICONTROL LC Enterprise]**.
+1. Trouvez et ouvrez le fichier `LC Enterprise.entitlements` dans Xcode pour le modifier. Sous les **droits XCode**, ajoutez la même paire clé-valeur que celle présente dans votre profil d’approvisionnement.
 1. Sous l’onglet **[!UICONTROL Paramètres de génération]**, cliquez sur **[!UICONTROL Tous]**, puis sur **[!UICONTROL Combiné]**.
 1. Dans la liste des **[!UICONTROL Paramètres]**, développez **[!UICONTROL Signature de code]**. 
 1. Pour **[!UICONTROL Identité de signature de code]**, sélectionnez la signature appropriée. Vérifiez que la même signature est sélectionnée pour **[!UICONTROL Débogage]**, **[!UICONTROL Version finale]** et **[!UICONTROL N’importe quel SDK iOS]**.
