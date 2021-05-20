@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a9879445-d626-4279-8a95-a9009294b483
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 66%
 
 ---
 
-
 # Enregistrement d’un formulaire HTML5 en tant que brouillon {#saving-an-html-form-as-a-draft}
 
-Vous pouvez enregistrer un formulaire HTML5 comme brouillon et reprendre le remplissage du formulaire ultérieurement. Le portail des formulaires permet à tout utilisateur d’enregistrer et de restaurer un formulaire HTML5. Pour activer la fonctionnalité Enregistrer en tant que brouillon, ajoutez les configurations suivantes au noeud de profil :
+Vous pouvez enregistrer un formulaire HTML5 comme brouillon et reprendre le remplissage du formulaire ultérieurement. Le portail des formulaires permet à tout utilisateur d’enregistrer et de restaurer un formulaire HTML5. Pour activer la fonctionnalité Enregistrer en tant que brouillon , ajoutez les configurations suivantes au noeud de profil :
 
 ## Profil personnalisé permettant d&#39;activer la fonctionnalité Enregistrer en tant que brouillon {#custom-profile-to-allow-save-as-draft-feature}
 
@@ -55,7 +54,7 @@ Pour activer la fonctionnalité Enregistrer en tant que brouillon pour votre [pr
 
 Après l’activation de la fonctionnalité Enregistrer en tant que brouillon pour un formulaire, lorsque le formulaire est enregistré, il est répertorié dans le [composant Drafts and Submissions](/help/forms/using/draft-submission-component.md). Vous pouvez extraire le formulaire enregistré et commencer son remplissage depuis le composant Drafts and Submissions.
 
-Pour activer la liste des formulaires pour le composant Drafts and Submission, ajoutez la propriété suivante au noeud de profil :
+Pour activer les listes de formulaires pour le composant Drafts and Submission, ajoutez la propriété suivante au noeud de profil :
 
 <table>
  <tbody>
@@ -69,7 +68,7 @@ Pour activer la liste des formulaires pour le composant Drafts and Submission, a
    <td>fp.enablePortalSubmit</td>
    <td>Chaîne</td>
    <td>true</td>
-   <td>Pour permettre aux brouillons et aux formulaires d’être répertoriés dans <br /> le composant Drafts &amp; Submissions du portail Forms après envoi</td>
+   <td>Pour permettre aux brouillons et aux formulaires d’être répertoriés dans<br /> composant Drafts &amp; Submissions du portail Forms après envoi</td>
   </tr>
  </tbody>
 </table>
