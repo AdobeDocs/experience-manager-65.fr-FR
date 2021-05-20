@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 3458471a-9815-463e-8044-68631073863c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 91%
 
 ---
-
 
 # Structure de l’apparence des formulaires adaptatifs et HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
@@ -53,7 +52,7 @@ Vous trouverez ci-après une définition des options globales. Ces options sont 
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Les lecteurs d’écran utilisent cette valeur pour fournir des informations sur le champ. Le formulaire fournit la valeur et vous pouvez remplacer la valeur.<br /> </td>
+   <td>Les lecteurs d’écran utilisent cette valeur pour fournir des informations sur le champ. Le formulaire fournit la valeur et vous pouvez la remplacer.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -135,10 +134,10 @@ La structure de l’apparence appelle certaines fonctions du widget qui sont imp
   </tr>
   <tr>
    <td>click:function()</td>
-   <td>Place l’accent sur le champ et appelle XFA_CLICK_ÉVÉNEMENT.</td>
+   <td>Place l’accent sur le champ et appelle XFA_CLICK_EVENT.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: chaîne </em>représentant l'erreur<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: chaîne </em>représentant l’erreur<br /> <em>errorType : string ("warning"/"error")</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td>
    <td>Envoie le message d’erreur et le type d’erreur au widget. Le widget affiche l’erreur.</td>
   </tr>
   <tr>
@@ -253,11 +252,11 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
   </tr>
   <tr>
    <td>states</td>
-   <td><p>Nombre d’états autorisés. </p> <p>Deux pour les formulaires adaptatifs (Activé, Désactivé) et trois pour les formulaires HTML5 (Activé, Désactivé, Neutre).</p> </td>
+   <td><p>Nombre d’états autorisés. </p> <p>Deux pour les formulaires adaptatifs (activé, désactivé) et trois pour les formulaires HTML5 (activé, désactivé, neutre).</p> </td>
   </tr>
   <tr>
    <td>state</td>
-   <td><p>État actuel de l’élément.</p> <p>Deux pour les formulaires adaptatifs (Activé, Désactivé) et trois pour les formulaires HTML5 (Activé, Désactivé, Neutre).</p> </td>
+   <td><p>État actuel de l’élément.</p> <p>Deux pour les formulaires adaptatifs (activé, désactivé) et trois pour les formulaires HTML5 (activé, désactivé, neutre).</p> </td>
   </tr>
  </tbody>
 </table>
