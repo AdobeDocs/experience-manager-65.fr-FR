@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 575bab27-d973-47fa-a0da-fa889cec6f27
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 94%
 
 ---
-
 
 # Service ConvertPDF {#convertpdf-service}
 
@@ -30,7 +29,7 @@ Vous pouvez exécuter les tâches ci-dessous à l’aide du service ConvertPDF :
 
 ## Configurer les propriétés du service   {#properties}
 
-Vous pouvez utiliser le **service AEMFD ConvertPDF** dans la console AEM pour configurer les propriétés de ce service. L’URL par défaut de la console AEM est `https://[host]:'port'/system/console/configMgr`.
+Vous pouvez utiliser le **service AEMFD ConvertPDF** dans la console AEM pour configurer les propriétés de ce service. L’URL par défaut de AEM console est `https://[host]:'port'/system/console/configMgr`.
 
 ## Utilisation du service {#using-the-service}
 
@@ -136,7 +135,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 Exécuter le service ConvertPDF à partir d’un flux de travail équivaut à l’exécuter à partir d’un JSP/servlet.
 
 La seule différence réside dans le fait qu’avec une exécution du service à partir d’un JSP/servlet, l’objet de document récupère automatiquement une instance d’objet ResourceResolver à partir de l’objet ResourceResolverHelper. Ce mécanisme automatique ne fonctionne pas lorsque le code est appelé à partir d’un processus. Pour un flux de travail, transmettez explicitement une occurrence de l’objet ResourceResolver au constructeur de classe du document. Ensuite, l’objet Document utilise
-a fourni l&#39;objet ResourceResolver pour lire le contenu du référentiel.
+Objet ResourceResolver fourni pour lire le contenu du référentiel.
 
 L’exemple de processus de flux de travail suivant convertit le document d’entrée en document PostScript. Le code est écrit dans ECMAScript et le document est transmis en tant que charge utile de flux de travail :
 
@@ -192,4 +191,3 @@ var convertedPS = cpdfService.toPS(inputDocument, toPSOptions);
 // save converted PostScript file to disk
 convertedPS.copyToFile(new File("C:/temp/out.ps"));
 ```
-
