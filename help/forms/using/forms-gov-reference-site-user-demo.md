@@ -1,38 +1,37 @@
 ---
 title: Présentation du site de référence We.Gov et We.Finance
 seo-title: Présentation du site de référence We.Gov et We.Finance
-description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des tâches AEM Forms à l’aide du package de démonstration We.Gov et We.Finance.
-seo-description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des tâches AEM Forms à l’aide du package de démonstration We.Gov et We.Finance.
+description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des tâches AEM Forms à l’aide du module de démonstration We.Gov et We.Finance.
+seo-description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des tâches AEM Forms à l’aide du module de démonstration We.Gov et We.Finance.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2548'
 ht-degree: 1%
 
 ---
 
-
 # Présentation du site de référence We.Gov et We.Finance {#we-gov-reference-site-walkthrough}
 
-## Conditions préalables {#pre-requisites}
+## Prérequis {#pre-requisites}
 
-Configurez le site de référence comme décrit dans [Configuration et configuration du site de référence We.Gov et We.Finance](../../forms/using/forms-install-configure-gov-reference-site.md).
+Configurez le site de référence comme décrit dans [Configuration du site de référence We.Gov et We.Finance](../../forms/using/forms-install-configure-gov-reference-site.md).
 
-## Article utilisateur {#user-story}
+## User Story {#user-story}
 
 * AEM Forms
 
    * Conversion de formulaires automatisée
    * Création  
-   * Modèles de données de formulaire/Sources de données
+   * Modèles de données de formulaire/sources de données
 
 * AEM Forms
 
-   * Capture des données
+   * Capture de données
    * (Facultatif) Intégration de données (MS Dynamics)
    * (Facultatif) Adobe Sign
 
@@ -48,146 +47,146 @@ Configurez le site de référence comme décrit dans [Configuration et configura
 
 ### Utilisateurs et groupes fictifs {#fictitious-users-and-groups}
 
-Le paquet de démonstration We.Gov est fourni avec les utilisateurs fictifs intégrés suivants :
+Le module de démonstration We.Gov est fourni avec les utilisateurs fictifs intégrés suivants :
 
 * **Aya Tan** : Citoyen éligible à un Service d&#39;une agence gouvernementale
 
-![Utilisateur fictif](/help/forms/using/assets/aya_tan_new.png)
+![Un utilisateur fictif](/help/forms/using/assets/aya_tan_new.png)
 
-* **George Lang** : Analyste d&#39;affaires de l&#39;agence We.Gov
+* **George Lang** : Analyste commercial de l’agence We.Gov
 
-![Utilisateur fictif](/help/forms/using/assets/george_lang.png)
+![Un utilisateur fictif](/help/forms/using/assets/george_lang.png)
 
-* **Camila Santos** : Directeur CX de l&#39;agence We.Gov
+* **Camila Santos** : Plomb CX de l’agence We.Gov
 
-![Utilisateur fictif](/help/forms/using/assets/camila_santos.png)
+![Un utilisateur fictif](/help/forms/using/assets/camila_santos.png)
 
 Les groupes suivants sont également inclus :
 
-* **Utilisateurs de We.Gov Forms**
+* **Utilisateurs de Forms We.Gov**
 
    * George Lang (membre)
    * Camila Santos (membre)
 
-* **Utilisateurs Web.Gov**
+* **Utilisateurs de We.Gov**
 
    * George Lang (membre)
    * Camila Santos (membre)
    * Aya Tan (membre)
 
-### Légende des termes de présentation de la démonstration {#demo-overview-terms-legend}
+### Légende des termes de présentation de démonstration {#demo-overview-terms-legend}
 
-1. **Se faire passer pour** : Utilisateurs et groupes définis dans AEM démonstration.
-1. **Bouton** : Rectangle coloré ou flèche circulaire pour la navigation.
-1. **Cliquez sur** : Pour exécuter une action dans l’article utilisateur.
-1. **Liens** : Situé en haut du menu principal du site Web We.Gov.
-1. **Instructions** utilisateur : Ensemble d’étapes numériques à suivre pour parcourir l’article de l’utilisateur.
-1. **Portail** Forms :  *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
-1. **Vue** mobile : utilisateur We.Gov pour répliquer une vue mobile avec un navigateur redimensionné.
-1. **Vue** de bureau : Démo de l&#39;utilisateur We.gov vers la vue sur un ordinateur portable ou un ordinateur de bureau.
-1. **Formulaire** pré-écran : Formulaire sur la Page d&#39;accueil du site We.Gov.
-1. **Formulaire** adaptatif : Formulaire de demande d&#39;inscription pour la démonstration We.gov.
+1. **Emprunter l’identité** : Utilisateurs et groupes définis dans AEM démonstration.
+1. **Bouton** : Rectangle coloré ou flèche entourée pour la navigation.
+1. **Cliquez sur** : Pour exécuter une action dans l’article de l’utilisateur.
+1. **Liens** : Situé dans la partie supérieure du menu principal du site We.Gov.
+1. **Instructions** utilisateur : Ensemble d’étapes numériques à suivre lors de la navigation dans l’histoire de l’utilisateur.
+1. **Portail Forms** :  *https://&lt;aemserver> : &lt;port>/content/we-gov/formsportal.html*
+1. **Vue mobile** : utilisateur We.Gov pour répliquer une vue mobile avec un navigateur redimensionné.
+1. **Vue Bureau** : Utilisateur de We.gov pour afficher une démonstration sur un ordinateur portable ou un ordinateur de bureau.
+1. **Formulaire de pré-filtrage** : Formulaire sur la page d’accueil du site We.Gov.
+1. **Formulaire** adaptatif : Formulaire de demande d’inscription pour la démonstration de We.gov.
 
-   *https://&lt;aemserver>:&lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
+   *https://&lt;aemserver> : &lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
-1. **Adobe Site** We.Gov :  *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. **Boîte de réception** Adobe : La barre de menu supérieure  [Bell ](assets/bell.svg) iconin AEM backend.
+1. **Adobe du site We.Gov** :  *https://&lt;aemserver> : &lt;port>/content/we-gov/home.html*
+1. **Boîte de réception d’Adobe** : Icône de la barre de menu supérieure  [Bell ](assets/bell.svg) dans AEM arrière-plan.
 
-   *https://&lt;aemserver>:&lt;port>/aem/start.html*
+   *https://&lt;aemserver> : &lt;port>/aem/start.html*
 
-1. **Client** de messagerie : Moyen privilégié de vue de vos e-mails (Gmail, Outlook)
-1. **DEC** : Appel à l&#39;action
-1. **Naviguer** : Pour localiser un point de référence spécifique sur la page du navigateur.
+1. **Client de messagerie** : Mode d’affichage préféré de vos emails (Gmail, Outlook)
+1. **CTA** : Appel à l’action
+1. **Naviguez** : Pour localiser un point de référence spécifique sur la page du navigateur.
 1. **AFC** : automated forms conversion
 
 ## automated forms conversion (Camila) {#automated-forms-conversion}
 
-**Cette section** : Camila the CX Lead dispose d’un formulaire PDF existant qui a été utilisé dans le cadre d’un processus papier. Dans le cadre d’un effort de modernisation, elle souhaite utiliser ce formulaire PDF pour créer automatiquement une nouvelle Forms adaptative moderne.
+**Cette section** : Camila the CX Lead dispose d’un formulaire PDF existant qui a été utilisé dans le cadre d’un processus papier. Dans le cadre d’un effort de modernisation, elle souhaite utiliser ce formulaire PDF pour créer automatiquement un nouveau Forms adaptatif moderne.
 
 ### automated forms conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
-1. Connexion par :
+1. Connectez-vous avec :
    * **Utilisateur** : camila.santos
    * **Mot de passe** : password
 1. Dans la page principale, sélectionnez Forms > Forms &amp; Documents > AEM Forms We.gov Forms > AFC.
-1. Camila télécharge le PDF en AEM Forms.
+1. Camila télécharge le PDF dans AEM Forms.
 
    ![Télécharger le formulaire](assets/aftia-upload-form.jpg)
 
-1. Camilla sélectionne ensuite le formulaire PDF et clique sur **Conversion automatisée du Début** pour début du processus de conversion. Vous devrez peut-être cliquer sur **Remplacer la conversion** si vous avez converti le formulaire.
+1. Camilla sélectionne ensuite le formulaire PDF et clique sur **Démarrer la conversion automatisée** pour lancer le processus de conversion. Vous devrez peut-être cliquer sur **Remplacer la conversion** si vous avez converti le formulaire.
 
    >[!NOTE]
    >
-   >Notez que les paramètres d&#39;AFC sont préconfigurés pour l&#39;utilisateur final, ce qui signifie qu&#39;ils ne doivent pas être modifiés.
+   >Notez que les paramètres d’AFC sont préconfigurés pour l’utilisateur final, ce qui signifie qu’ils ne doivent pas être modifiés.
 
-   * **Facultatif** : Si vous souhaitez utiliser le thème Accessible Ultramarine, cliquez simplement sur le thème Spécifier un formulaire adaptatif et sélectionnez le thème Accessible-Ultramarine qui apparaît dans la liste des options.
+   * **Facultatif** : Si vous souhaitez utiliser le thème Ultramarine accessible, cliquez simplement sur le thème Spécifier un formulaire adaptatif et sélectionnez le thème Ultramarine accessible qui apparaît dans la liste des options.
 
-   ![Conversion de début](assets/aftia-start-conversion.jpg)
+   ![Commencer la conversion](assets/aftia-start-conversion.jpg)
 
    ![Thème Ultramarine](assets/aftia-upload-conversion-settings.jpg)
 
-   Le pourcentage d’achèvement de l’état s’affiche pendant la conversion. Une fois que l’état affiche **Converted**, cliquez sur le dossier **output**, sélectionnez le formulaire adaptatif et cliquez sur **Modifier** pour ouvrir le formulaire converti.
+   Le statut de pourcentage terminé s’affiche pendant la conversion. Une fois que l’état affiche **Converted**, cliquez sur le dossier **output**, sélectionnez le formulaire adaptatif et cliquez sur **Modifier** pour ouvrir le formulaire converti.
 
-1. Camilla examine ensuite le formulaire et s’assure que tous les champs sont présents.
+1. Camilla examine ensuite le formulaire et s’assure que tous les champs sont présents
 
    ![Conversion des révisions](assets/aftia-review-conversion.jpg)
 
-1. Camilla effectue ensuite des débuts pour modifier le formulaire. Elle sélectionne Panneau racine > Modifier (la clé à molette) > sélectionne Onglets en haut dans le menu déroulant Disposition du panneau > sélectionne la case à cocher.
+1. Camilla commence ensuite à éditer le formulaire. Elle sélectionne Panneau racine > Modifier (la clé) > Sélectionner Onglets en haut dans le menu déroulant Disposition du panneau > sélectionne la case à cocher.
 
    ![Propriétés de révision](assets/aftia-review-properties.jpg)
 
-1. Camilla ajoute ensuite toutes les transformations CSS et les modifications de terrain nécessaires pour produire le produit final.
+1. Camilla ajoute ensuite toutes les modifications de champ et CSS nécessaires pour produire le produit final.
 
    ![Ajouter CSS](assets/aftia-add-css.jpg)
 
 ### Modèle de données de formulaire et sources de données (Camila) {#data-sources}
 
-**Cette section** : Une fois que le document a été converti et créé un formulaire adaptatif, Camila doit alors connecter le formulaire adaptatif à une source de données.
+**Cette section** : Une fois le document converti et généré un formulaire adaptatif, Camila doit connecter le formulaire adaptatif à une source de données.
 
-1. Camila ouvre les Propriétés sur le formulaire qui a été converti dans [Automated forms conversion - We.Gov](#automated-forms-conversion-wegov).
+1. Camila ouvre les Propriétés sur le formulaire qui a été converti en [Automated forms conversion - We.Gov](#automated-forms-conversion-wegov).
 
-1. Camila sélectionne ensuite Modèle de formulaire > Sélectionne Modèle de données de formulaire dans la liste déroulante Sélectionner dans > Sélectionne l&#39;inscription We.gov FDM à partir de la liste de l&#39;option.
+1. Camila sélectionne ensuite Modèle de formulaire > Sélectionner le modèle de données de formulaire dans la liste déroulante Sélectionner dans > Sélectionner le FDM d’inscription We.gov dans la liste des options.
 
-1. Cliquez sur le bouton Enregistrer et fermer.
+1. Cliquez sur le bouton Enregistrer et fermer .
 
    ![Sélection FDM](assets/aftia-select-fdm.jpg)
 
-1. Camila clique sur le dossier **output**, sélectionne le formulaire adaptatif et clique sur **Modifier** pour ouvrir le formulaire We.Gov rempli.
-1. Camila sélectionne un champ de formulaire adaptatif et clique sur ![Icône Configurer](assets/configure-icon.svg). Elle crée une liaison avec les entités du modèle de données de formulaire à l’aide du champ **Référence de liaison**. Elle répète cette étape pour tous les champs du formulaire adaptatif.
+1. Camila clique sur le dossier **output** , sélectionne le formulaire adaptatif et clique sur **Edit** pour ouvrir le formulaire We.Gov complété.
+1. Camila sélectionne un champ de formulaire adaptatif et clique sur ![Icône Configurer](assets/configure-icon.svg). Elle crée une liaison avec les entités de modèle de données de formulaire à l’aide du champ **Référence de liaison**. Elle répète cette étape pour tous les champs du formulaire adaptatif.
 
-### Test d&#39;accessibilité des formulaires (Camila) {#form-accessibility-testing}
+### Test d’accessibilité des formulaires (Camila) {#form-accessibility-testing}
 
-Camila valide également que le contenu créé est construit correctement et entièrement accessible selon les standards de l&#39;entreprise.
+Camila confirme également que le contenu créé est construit correctement et entièrement accessible selon les standards de l&#39;entreprise.
 
-1. Camila clique sur le dossier **output**, sélectionne le formulaire adaptatif et clique sur **Prévisualisation** pour ouvrir le formulaire We.Gov rempli.
+1. Camila clique sur le dossier **output** , sélectionne le formulaire adaptatif et clique sur **Aperçu** pour ouvrir le formulaire We.Gov complété.
 
-1. Ouvre l’onglet Audit dans l’outil de développement Chrome.
+1. Ouvre l’onglet Audit dans l’outil Chrome Developer.
 
-1. Effectue une vérification de l’accessibilité afin de valider le formulaire adaptatif.
+1. Exécute une vérification d’accessibilité afin de valider le formulaire adaptatif.
 
    ![Vérification de l’accessibilité](assets/aftia-accessibility.jpg)
 
-## Démo de la Vue mobile de formulaire adaptatif (Aya) {#mobile-view-demo}
+## Démonstration de la vue mobile du formulaire adaptatif (Aya) {#mobile-view-demo}
 
-**Cette section doit être exécutée avant la manifestation.**
+**Cette section doit être effectuée avant la démonstration.**
 
 **Instructions utilisateur :**
 
 1. Accédez à : *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. Connexion par :
+1. Connectez-vous avec :
 
    1. **Utilisateur** : aya.tan
    1. **Mot de passe** : password
 
-1. Redimensionnez la fenêtre du navigateur ou utilisez l’émulateur du navigateur pour reproduire la taille d’un périphérique mobile.
+1. Redimensionnez la fenêtre du navigateur ou utilisez l’émulateur du navigateur pour répliquer la taille d’un appareil mobile.
 
 ### Site Web We.Gov (Aya) {#aya-user-story-we-gov-website}
 
-![Utilisateur fictif](/help/forms/using/assets/aya_tan_new-1.png)
+![Un utilisateur fictif](/help/forms/using/assets/aya_tan_new-1.png)
 
-**Cette section** : Aya est citoyenne. Elle apprend d&#39;une amie qu&#39;elle peut être admissible à recevoir un Service d&#39;une agence gouvernementale. Aya accède au site Web We.Gov à partir de son téléphone portable pour en savoir plus sur les services auxquels elle a droit.
+**Cette section** : Aya est une citoyenne. Elle entend d&#39;une amie qu&#39;elle peut être éligible pour recevoir un Service d&#39;une agence gouvernementale. Aya accède au site Web We.Gov à partir de son téléphone mobile pour en savoir plus sur les services auxquels elle est éligible.
 
 ### We.Gov Pre-Screener (Aya) {#aya-user-story-we-gov-pre-screener}
 
@@ -195,52 +194,52 @@ Aya répond à quelques questions pour confirmer son éligibilité en remplissan
 
 **Instructions utilisateur :**
 
-1. Effectuez une sélection dans chaque champ déroulant.
+1. Effectuez une sélection dans chaque champ de liste déroulante.
 
    >[!NOTE]
    >
-   >Si l’utilisateur gagne plus de 200 000 $ par année, il n’est pas admissible.
+   >Si l’utilisateur gagne plus de 200 000 $ par an, il n’est pas éligible.
 
 1. Cliquez sur &quot;**Suis-je éligible ?**” button.
 1. Cliquez sur le bouton &quot;**Appliquer maintenant**&quot; pour continuer.
 
    ![Lien Appliquer maintenant](/help/forms/using/assets/apply_now_link.png)
 
-### Formulaire adaptatif We.Gov (Aya) {#aya-user-story-we-gov-adaptive-form}
+### Formulaire Adaptatif We.Gov (Aya) {#aya-user-story-we-gov-adaptive-form}
 
-Aya découvre qu&#39;elle est éligible et commence à remplir sa demande de service sur son appareil mobile.
+Aya découvre qu’elle est éligible et commence à remplir sa demande pour demander le service sur son appareil mobile.
 
-Aya doit passer en revue certains documents à la maison avant de pouvoir remplir la demande de service. Elle enregistre et quitte l&#39;application depuis son appareil mobile.
+Aya doit consulter certains documents à la maison avant de pouvoir remplir la demande de service. Elle enregistre et quitte l’application à partir de son appareil mobile.
 
 **Instructions utilisateur :**
 
-1. Renseignez les champs Informations de base, les champs et listes déroulantes obligatoires suivants sont requis :
+1. Renseignez les champs Informations de base , les champs et listes déroulantes suivants sont obligatoires :
 
    1. Informations de base
 
       1. Prénom
       1. Nom
-      1. DOB
-      1. Courrier électronique
+      1. DDN
+      1. E-mail
 
 1. Utilisez la **logique dynamique** suivante pour démontrer la fonctionnalité dynamique à l’aide de la liste déroulante **État de la famille** :
 
-   1. **Simple** : Afficher le prochain panneau de mise en page
+   1. **Simple** : Afficher en regard du panneau parent
    1. **Marié** : Afficher le panneau dépendant du mariage
-   1. **Divorcé** : Afficher le prochain panneau de mise en page
-   1. **veuf** : Afficher le prochain panneau de mise en page
-   1. **Avez-vous des enfants ?**: (Oui/Non) pour afficher le panneau enfant à charge.
+   1. **Divorcé** : Afficher en regard du panneau parent
+   1. **veuve** : Afficher en regard du panneau parent
+   1. **Avez-vous des enfants ?**: Bouton radio (Oui/Non) pour afficher le panneau enfant à charge.
 
       1. (Ajouter/Supprimer) pour ajouter/supprimer plusieurs panneaux enfant dépendants.
 
 1. Cliquez sur la flèche droite dans la barre de menus grise.
-1. Cliquez sur le bouton Enregistrer en bas.
+1. Cliquez sur le bouton Enregistrer en bas de la page.
 
    ![Détails du formulaire adaptatif](/help/forms/using/assets/adaptive_form.png)
 
-## Démo de bureau {#desktop-demo}
+## Démonstration de l’appli de bureau {#desktop-demo}
 
-**Cette section :** De retour à la maison, Aya a trouvé les informations dont elle avait besoin et reprend la demande à partir de son bureau. Aya accède au portail de formulaires en ligne pour reprendre sa demande. Avec une personnalisation simple, les agences peuvent également générer automatiquement et envoyer par courrier électronique un lien pour reprendre l&#39;application.
+**Cette section :** De retour à la maison, Aya a trouvé les informations dont elle avait besoin et reprend la demande depuis son bureau. Aya accède au portail de formulaires en ligne pour reprendre sa demande. Avec une personnalisation simple, les agences peuvent également générer automatiquement et envoyer par courrier électronique un lien pour reprendre l’application.
 
 ### Suite du formulaire adaptatif (Aya) {#aya-user-story-continued-adaptive-form}
 
@@ -248,131 +247,131 @@ Aya doit passer en revue certains documents à la maison avant de pouvoir rempli
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
 1. Dans la barre de navigation, sélectionnez &quot;**Services en ligne**&quot;.
-1. Dans le panneau &quot;Version préliminaire de Forms&quot;, sélectionnez l’option existante &quot;Demande d’inscription pour les prestations de santé&quot;.
+1. Dans le panneau &quot;Version préliminaire de Forms&quot;, sélectionnez la demande d’inscription existante pour les prestations d’intégrité.
 
-   ![Demande d&#39;inscription pour les prestations de santé](/help/forms/using/assets/enrollment_application.png)
+   ![Demande d’inscription pour les prestations de santé](/help/forms/using/assets/enrollment_application.png)
 
-   L&#39;apparence est la même, et elle n&#39;a pas besoin de saisir à nouveau des données.
+   L’apparence est la même, et elle n’a pas besoin de saisir à nouveau des données.
 
    **Instructions utilisateur :**
 
-1. Cliquez sur Circle CTA à droite pour passer à la section suivante.
+1. Cliquez sur Circle CTA droit pour passer à la section suivante.
 
-   ![DEC du cercle droit](/help/forms/using/assets/right_circle_cta_new.png)
+   ![CTA du cercle droit](/help/forms/using/assets/right_circle_cta_new.png)
 
-   Le formulaire est renseigné jusqu’au point de la dernière entrée d’Aya. Aya a entré toutes ses informations et est prête à les envoyer.
+   Le formulaire est renseigné jusqu’au point de la dernière entrée d’Aya. Aya a saisi toutes ses informations et est prête à les envoyer.
 
    ![Envoyer le formulaire adaptatif](/help/forms/using/assets/submit_adaptive_form.png)
 
    >[!NOTE]
    >
-   >Lorsqu&#39;Aya remplit le champ du numéro de téléphone, elle doit le remplir sous la forme d&#39;un numéro continu à 11 chiffres sans tirets, espaces ou traits d&#39;union.
+   >Lorsqu’Aya remplit le champ du numéro de téléphone, elle doit le remplir sous la forme d’un nombre à 11 chiffres au fil de l’eau, sans tirets, espaces ou tirets.
 
-   Après avoir envoyé Aya reçoit une page de remerciement. Il est possible qu&#39;elle reçoive également un courriel qu&#39;elle peut ouvrir pour signer le document d&#39;enregistrement par voie électronique avec Adobe Sign.
+   Après l’envoi, Aya reçoit une page de remerciement. Elle peut également recevoir un courrier électronique qu’elle peut ouvrir pour signer électroniquement le document d’enregistrement avec Adobe Sign.
 
 ### Facultatif : Adobe Sign (Aya) {#adobe-sign}
 
 **Instructions utilisateur :**
 
-1. Accédez à votre client de messagerie et recherchez le courrier électronique Adobe Sign.
+1. Accédez à votre client de messagerie et recherchez l’adresse électronique Adobe Sign.
 1. Cliquez sur le lien vers Adobe Sign.
 
-   ![Lien de signe d&#39;Adobe](/help/forms/using/assets/adobe_sign_link.png)
+   ![Lien de signature d’Adobe](/help/forms/using/assets/adobe_sign_link.png)
 
 **Instructions utilisateur :**
 
-1. Cochez la case &quot;**Je suis d&#39;accord**&quot;.
+1. Cochez la case &quot;**J’accepte**&quot;.
 1. Cliquez sur &quot;**Accepter**&quot;.
-1. Faites défiler l’écran jusqu’au bas du document consulté.
-1. Cliquez sur l&#39;onglet jaune surligné pour signer le document.
+1. Faites défiler jusqu’au bas du document révisé.
+1. Cliquez sur l’onglet jaune en surbrillance pour signer le document.
 
-   ![Signez le ](/help/forms/using/assets/sign_document_new.png) ![documentSignez le document de test](/help/forms/using/assets/sign_test_document.png)
+   ![Signer le ](/help/forms/using/assets/sign_document_new.png) ![documentSigner le document de test](/help/forms/using/assets/sign_test_document.png)
 
 ## Agent du gouvernement (George) {#government-agent-george}
 
 ![Agent du gouvernement George](/help/forms/using/assets/george_lang-1.png)
 
-**Cette section :** George est un analyste d&#39;affaires de l&#39;agence gouvernementale Aya est une demande de service. George a un tableau de bord unique où il peut voir toutes les demandes de service qui lui ont été assignées pour examen.
+**Cette section :** George est un analyste des affaires de l&#39;agence gouvernementale Aya est un demandeur de service. George dispose d’un seul tableau de bord où il peut voir toutes les demandes de service qui lui ont été affectées pour révision.
 
-### Boîte de réception AEM (George) {#george-user-story-aem-inbox}
+### AEM Boîte de réception (George) {#george-user-story-aem-inbox}
 
 **Instructions utilisateur :**
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Cliquez sur l’icône de l’utilisateur (dans le coin supérieur droit) et utilisez l’option de menu &quot;**Se déconnecter**&quot; ou &quot;**Se faire passer pour**&quot; si vous êtes actuellement connecté avec un administrateur.
+1. Cliquez sur l’icône de l’utilisateur (coin supérieur droit) et utilisez l’option de menu &quot;**Se déconnecter**&quot; ou &quot;**Se faire passer pour**&quot; si vous êtes actuellement connecté avec un utilisateur administrateur.
 
-   1. Connexion par :
+   1. Connectez-vous avec :
 
       1. **Utilisateur :** george.lang
       1. **Mot de passe :** password
-   1. Ou s&#39;emprunt d&#39;identité :
+   1. Ou emprunter l’identité :
 
-      1. Tapez &quot;**George**&quot; dans le champ &quot;**Impersonate as**&quot;.
+      1. Saisissez &quot;**George**&quot; dans le champ &quot;**Emprunter l’identité de**&quot;.
 
-      1. Cliquez sur OK pour vous faire passer pour une identité.
+      1. Cliquez sur OK pour emprunter l’identité.
 
 
-1. Dans le coin supérieur droit, cliquez sur l’icône Notification (cloche).
-1. Cliquez sur &quot;**Vue All**&quot; pour accéder à la boîte de réception.
-1. Dans la boîte de réception, ouvrez la dernière tâche &quot;**Health Benefits Application Review**&quot;.
+1. Dans le coin supérieur droit, cliquez sur l’icône Notification (cloche) .
+1. Cliquez sur &quot;**Afficher tout**&quot; pour accéder à la boîte de réception.
+1. Dans la boîte de réception, ouvrez la dernière tâche &quot;**Health Avantages Application Review**&quot;.
 
-   ![Examen des demandes d&#39;assurance maladie](/help/forms/using/assets/health_benefits.png)
+   ![Examen des demandes d’avantages sociaux](/help/forms/using/assets/health_benefits.png)
 
 ### Facultatif : AEM Boîte de réception et MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
-Grâce aux intégrations de données et aux workflows automatisés, l’application d’Aya apparaît, ainsi qu’un enregistrement CRM qui a été généré automatiquement lors de l’envoi des données.
+Grâce aux intégrations de données et aux workflows automatisés, l’application Aya apparaît, ainsi qu’un enregistrement CRM qui a été généré automatiquement lors de l’envoi des données.
 
 **Instructions utilisateur :**
 
 1. Ouvrez et examinez le formulaire adaptatif en lecture seule.
-1. Cliquez sur le bouton &quot;**Ouvrir MS Dynamics**&quot; pour ouvrir l&#39;enregistrement MS Dynamics dans une nouvelle fenêtre.
-1. Dans la gestion de la relation client, toutes les informations peuvent être mises à jour.
+1. Cliquez sur le bouton &quot;**Ouvrir MS Dynamics**&quot; pour ouvrir l’enregistrement MS Dynamics dans une nouvelle fenêtre.
+1. Dans le CRM, toutes les informations peuvent être mises à jour.
 
    1. Vous pouvez éventuellement ajouter des notes de révision directement dans Dynamics.
 
-1. Fermez la boîte de réception et revenez à AEM.
+1. Fermez et revenez à AEM boîte de réception.
 
    ![Enregistrement MS Dynamics](/help/forms/using/assets/ms_dynamics.png)
 
-### Retour à AEM boîte de réception (George) {#george-user-story-back-to-aem-inbox}
+### Retour à AEM Boîte de réception (George) {#george-user-story-back-to-aem-inbox}
 
-George approuve la demande d’Aya et, grâce à un processus automatisé existant, un courrier électronique de confirmation est également envoyé à Aya.
+George approuve la demande d’Aya et, grâce à un workflow automatisé existant, un email de confirmation est également envoyé à Aya.
 
 **Instructions utilisateur :**
 
-1. Accédez au coin supérieur gauche et cliquez sur &quot;**Approuver**&quot; pour approuver l’application.
-1. Dans le module modal, vous pouvez laisser un message pour la piste CX.
-1. Cliquez sur Done (Terminé). 
-1. (Rôle Citoyen) Ouvrez votre client de messagerie pour vue à l’e-mail envoyé à Aya.
+1. Accédez au coin supérieur gauche et cliquez sur &quot;**Approve**&quot; (Approuver) pour approuver la demande.
+1. Dans le modal, vous pouvez laisser un message pour le prospect CX.
+1. Cliquez sur Terminé.
+1. (Rôle citoyen) Ouvrez votre client de messagerie pour afficher l’e-mail envoyé à Aya.
 
-   ![Vue de l&#39;e-mail envoyé à Aya](/help/forms/using/assets/email_client.png)
+   ![Afficher l&#39;email envoyé à Aya](/help/forms/using/assets/email_client.png)
 
 ## CX Lead (Camila) {#cx-lead-camila}
 
 ![Camila (chef CX)](/help/forms/using/assets/camila_santos-1.png)
 
-**Cette section :** Camila the CX Lead établit un appel téléphonique de bienvenue avec Aya pour expliquer comment utiliser les services gouvernementaux pour lesquels elle a été approuvée.
+**Cette section :** Camila the CX lance un appel téléphonique de bienvenue avec Aya pour expliquer comment utiliser les services publics pour lesquels elle a reçu l&#39;autorisation de service.
 
 ### (Facultatif) AEM Boîte de réception et MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **Instructions utilisateur :**
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Cliquez sur l’icône de l’utilisateur (dans le coin supérieur droit) et utilisez l’option de menu &quot;**Se déconnecter**&quot; ou &quot;**Se faire passer pour**&quot; si vous êtes actuellement connecté avec un administrateur.
+1. Cliquez sur l’icône de l’utilisateur (coin supérieur droit) et utilisez l’option de menu &quot;**Se déconnecter**&quot; ou &quot;**Se faire passer pour**&quot; si vous êtes actuellement connecté avec un utilisateur administrateur.
 
-   1. Connexion par :
+   1. Connectez-vous avec :
 
       1. **Utilisateur** : camila.santos
       1. **Mot de passe** : password
-   1. Ou s&#39;emprunt d&#39;identité :
+   1. Ou emprunter l’identité :
 
-      1. Tapez &quot;**Camila**&quot; dans le champ &quot;**Impersonate as**&quot;.
+      1. Saisissez &quot;**Camila**&quot; dans le champ &quot;**Emprunter l’identité de**&quot;.
 
-      1. Cliquez sur OK pour vous faire passer pour une identité.
+      1. Cliquez sur OK pour emprunter l’identité.
 
 
-1. Dans le coin supérieur droit, cliquez sur l’icône Notification (sonnerie).
-1. Cliquez sur &quot;**Vue All**&quot; pour accéder à la boîte de réception.
+1. Dans le coin supérieur droit, cliquez sur l’icône Notification (cloche) .
+1. Cliquez sur &quot;**Afficher tout**&quot; pour accéder à la boîte de réception.
 1. Dans la boîte de réception, ouvrez la dernière tâche &quot;**Nouvelle approbation de contact**&quot;.
 
 ![Nouvelle approbation de contact](/help/forms/using/assets/new_contact_approval.png)
@@ -380,81 +379,81 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 **(Facultatif) Instructions utilisateur :**
 
 1. Ouvrez et examinez le formulaire adaptatif en lecture seule.
-1. Cliquez sur le bouton &quot;**Ouvrir MS Dynamics**&quot; pour ouvrir l&#39;enregistrement MS Dynamics dans une nouvelle fenêtre.
-1. Dans la gestion de la relation client, toutes les informations peuvent être mises à jour.
+1. Cliquez sur le bouton &quot;**Ouvrir MS Dynamics**&quot; pour ouvrir l’enregistrement MS Dynamics dans une nouvelle fenêtre.
+1. Dans le CRM, toutes les informations peuvent être mises à jour.
 
-   1. Vous pouvez éventuellement ajouter une nouvelle activité d&#39;appel directement dans Dynamics.
+   1. Vous pouvez éventuellement ajouter une nouvelle activité d’appel directement dans Dynamics.
    1. Ouvrez la section &quot;**Activités**&quot;.
-   1. Cliquez sur l&#39;option &quot;**Nouvel appel téléphonique**&quot;.
-   1. Ajouter les détails de l&#39;appel téléphonique.
-   1. Enregistrez et fermez la fenêtre.
+   1. Cliquez sur l’option &quot;**Nouvel appel téléphonique**&quot;.
+   1. Ajoutez les détails de l’appel téléphonique.
+   1. Enregistrez la fenêtre, puis fermez-la.
 
-1. De retour en AEM, accédez au coin supérieur gauche et cliquez sur &quot;**Envoyer**&quot; pour envoyer la demande.
-1. Dans le module, vous pouvez laisser un message.
-1. Cliquez sur Done (Terminé). 
+1. De retour dans AEM, accédez au coin supérieur gauche et cliquez sur &quot;**Submit**&quot; pour envoyer la demande.
+1. Dans le modal, vous pouvez laisser un message.
+1. Cliquez sur Terminé.
 
-   ![Activités, ](/help/forms/using/assets/activities_tab.png) ![onglet Confirmer un nouveau contact](/help/forms/using/assets/confirm_new_contact.png)
+   ![Onglet Activités ](/help/forms/using/assets/activities_tab.png) ![Confirmer nouveau contact](/help/forms/using/assets/confirm_new_contact.png)
 
 ## (Facultatif) Kit de bienvenue Citoyen (Aya) {#welcome-kit-citizen-aya}
 
-**Cette section :** Aya reçoit un courrier électronique contient un lien vers une communication interactive qui résume ses avantages et inclut également des champs de formulaire à remplir. Avec un énoncé des avantages PDF joint et un lien vers une lettre de communication interactive dans le courrier (avec le même thème/marque que la communication interactive).
+**Cette section :** Aya reçoit un courrier électronique contenant un lien vers une communication interactive qui résume ses avantages et inclut également des champs de formulaire à remplir. Une instruction d’avantages PDF est jointe et un lien vers une lettre de communication interactive dans le courrier (avec le même thème/marque que la communication interactive).
 
-### Notification client par courrier électronique (Aya) {#aya-user-story-email-client}
+### Notification Client Par Courrier Électronique (Aya) {#aya-user-story-email-client}
 
 **Instructions utilisateur :**
 
 1. Recherchez et ouvrez le courrier électronique du kit de bienvenue.
-1. Faites défiler la page jusqu’à la pièce jointe PDF au bas de la page.
+1. Faites défiler la page jusqu’à la pièce jointe PDF.
 1. Cliquez sur pour ouvrir la pièce jointe PDF.
-1. Faites défiler la page vers le haut dans votre client de messagerie et cliquez sur &quot;**kit de bienvenue de la Vue en ligne**&quot;.
+1. Faites défiler l’écran vers le haut dans votre client de messagerie et cliquez sur &quot;**Afficher le kit de bienvenue en ligne**&quot;.
 
-   1. Ceci ouvrira la version du canal Web du même document.
+   1. Cette opération ouvre la version du canal web du même document.
 
-1. Pour obtenir une référence rapide au format PDF directement :
+1. Pour une référence rapide à PDF directement :
 
-   *https://&lt;aemserver>:&lt;port>/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
+   *https://&lt;aemserver> :&lt;port>/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
 
 1. Pour une référence rapide à IC directement :
 
-   *https://&lt;aemserver>:&lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?canal=web&amp;mode=prévisualisation&amp;wcmmode=disabled*
+   *https://&lt;aemserver>: &lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&amp;mode=preview&amp;wcmmode=disabled*
 
-   ![Bienvenue Avantages ](/help/forms/using/assets/welcome_benefits_handbook.png) ![HandbookLien de communication interactif](/help/forms/using/assets/interactive_communication.png)
+   ![Welcome Avantages ](/help/forms/using/assets/welcome_benefits_handbook.png) ![ManualInteractive Communication Link](/help/forms/using/assets/interactive_communication.png)
 
-## Renouvellement du rappel citoyen {#renewal-reminder-citizen-aya}
+## Renouvellement du citoyen (Aya) {#renewal-reminder-citizen-aya}
 
-**Cette section :** Camila planifie aussi un rappel de communication pour qu&#39;un an plus tard. (Etape de flux de travail qui automatise/s’exécute et envoie des courriers électroniques).
+**Cette section :** Camila planifie également un rappel de communication un an plus tard. (Étape de workflow qui automatise/exécute et envoie électronique).
 
-### Notification client par courrier électronique (Aya) {#aya-user-story-email-client-updated}
+### Notification Client Par Courrier Électronique (Aya) {#aya-user-story-email-client-updated}
 
 **Instructions utilisateur :**
 
 1. Accédez à votre client de messagerie.
-1. Recherchez et ouvrez le courrier électronique Rappel de renouvellement.
-1. Cliquez sur le bouton &quot;**Envoyer une nouvelle application**&quot; pour ouvrir le formulaire adaptatif.
+1. Recherchez et ouvrez l’e-mail Rappel de renouvellement .
+1. Cliquez sur le bouton &quot;**Submit a1/>&quot; pour ouvrir le formulaire adaptatif.**
 
-   1. Cette section est volontairement laissée vide pour prendre en charge le préremplissage de données dans la phase 2.
+   1. Cette section est délibérément laissée vide pour prendre en charge le préremplissage de données lors de la phase 2.
 
-   ![Courriel du rappel de renouvellement](/help/forms/using/assets/renewal_reminder_email.png)
+   ![Courrier électronique de rappel de renouvellement](/help/forms/using/assets/renewal_reminder_email.png)
 
 ## (Facultatif) Modèle de données de formulaire (Camila) {#form-data-model}
 
-**Cette section** : Camila se rend à AEM Forms Data Integrations où elle peut exécuter un test rapide pour vérifier que les informations envoyées à la source de données externe via l’intégration du modèle de données de formulaire sont bien présentes.
+**Cette section** : Camila accède aux intégrations de données AEM Forms où elle peut exécuter un test rapide pour vérifier que les informations envoyées à la source de données externe via l’intégration du modèle de données de formulaire sont bien présentes.
 
 ### Modèle de données de formulaire (Camila) {#form-data-model-camila}
 
 **Cette section** : Camila accède à la page Sources de données pour valider les données que le serveur a répliquées dans la base de données Derby.
 
-1. Une fois l’expérience utilisateur terminée et l’envoi de l’utilisateur terminé, Camila accède à l’onglet Sources de données dans AEM Forms (**Forms** > **Intégrations des données**).
+1. Une fois l’expérience utilisateur terminée et l’envoi de l’utilisateur terminé, Camila accède à l’onglet Sources de données dans AEM Forms (**Forms** > **Intégrations de données**).
 
-1. Camila sélectionne ensuite AEM Forms **We.gov FDM**, puis modifie l&#39;inscription **We.gov FDM**.
+1. Camila sélectionne ensuite AEM Forms **We.gov FDM**, puis édite le **FDM d’inscription We.gov**.
 
-1. Camila sélectionne ensuite le **contact** > **service de lecture** à tester.
+1. Camila sélectionne ensuite le **Contact** > **Service de lecture** à tester.
 
-   ![Service de lecture de contact](assets/aftia-contact-read-service.jpg)
+   ![Service de lecture des contacts](assets/aftia-contact-read-service.jpg)
 
 1. Camila fournit ensuite au service de test un ID de contact, puis clique sur le bouton Tester. Par exemple, 1 ou 2, si vous avez envoyé le formulaire. Si vous n’avez pas envoyé le formulaire, aucune donnée n’est renvoyée.
 
-   ![Service de lecture de contact](assets/aftia-test-service.jpg)
+   ![Service de lecture des contacts](assets/aftia-test-service.jpg)
 
 1. Camila peut ensuite vérifier que les données ont bien été insérées dans la source de données.
 
@@ -482,44 +481,43 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 
 ## (Facultatif) Analytics (Camila) {#analytics-cx-lead-camila}
 
-**Cette section :** Camila navigue jusqu&#39;à un tableau de bord où elle peut voir à travers les IPC de l&#39;agence, tels que le pourcentage de citoyens qui début à remplir un formulaire de demande de service et abandonner, la durée moyenne de temps entre la soumission de la demande et la réponse d&#39;approbation/refus, et les statistiques d&#39;engagement pour les manuels d&#39;avantages qu&#39;elle a envoyés aux citoyens.
+**Cette section :** Camila accède à un tableau de bord où elle peut voir les IPC de l’agence, tels que le pourcentage de citoyens qui commencent à remplir un formulaire de demande de service et abandonnent, la durée moyenne entre l’envoi d’une demande et la réponse d’approbation/refus, et les statistiques d’engagement pour les manuels d’avantages qu’elle a envoyés aux citoyens.
 
-### rapports des sites Adobe Analytics (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
+### Rapports Adobe Analytics Sites (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Sélectionnez &quot;**AEM Forms We.Gov Site**&quot; pour vue des pages du site.
-1. Sélectionnez l’une des pages du site (par exemple Accueil), puis choisissez &quot;**Analyses et Recommendations**&quot;.
+1. Sélectionnez &quot;**AEM Forms We.Gov Site**&quot; pour afficher les pages du site.
+1. Sélectionnez l’une des pages du site (par exemple Accueil), puis &quot;**Analytics et Recommendations**&quot;.
 
    ![Analytics et recommandation](/help/forms/using/assets/analytics_recommendation.jpg)
 
-1. Sur cette page, vous verrez les informations extraites d&#39;Adobe Analytics qui se rapportent à la page AEM Sites (REMARQUE : par conception, ces informations sont périodiquement actualisées à partir de l&#39;Adobe Analytics et ne sont pas affichées en temps réel).
+1. Sur cette page, vous verrez les informations récupérées d’Adobe Analytics qui se rapportent à la page AEM Sites (REMARQUE : par conception, ces informations sont régulièrement actualisées à partir d’Adobe Analytics et ne s’affichent pas en temps réel).
 
    ![Mesures clés Adobe Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. De nouveau sur la page de vue de page (accessible à l’étape 3.), vous pouvez également vue les informations de vue de page en modifiant le paramètre d’affichage en éléments de vue dans la Vue de Liste **.**
-1. Recherchez le menu déroulant &quot;**Vue**&quot; et sélectionnez &quot;**Liste Vue**&quot;.
+1. De retour sur la page vue (accessible à l’étape 3.), vous pouvez également afficher les informations de page vue en modifiant le paramètre d’affichage pour afficher les éléments dans le &quot;**mode Liste**&quot;.
+1. Recherchez le menu déroulant &quot;**Afficher**&quot; et sélectionnez &quot;**Mode Liste**&quot;.
 
-   ![Vue de liste dans le menu déroulant Vue](/help/forms/using/assets/list_view_view_dropdown.jpg)
+   ![Mode Liste dans le menu déroulant Affichage](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Dans le même menu, sélectionnez &quot;**Paramètre de Vue**&quot; et sélectionnez les colonnes à afficher dans la section &quot;**Analyses**&quot;.
+1. Dans le même menu, sélectionnez &quot;**Paramètre d’affichage**&quot; et sélectionnez les colonnes à afficher dans la section &quot;**Analytics**&quot;.
 
-   ![Configuration de l’affichage des colonnes](/help/forms/using/assets/view_setting_analytics.jpg)
+   ![Configurer l&#39;affichage des colonnes](/help/forms/using/assets/view_setting_analytics.jpg)
 
 1. Cliquez sur &quot;**Mettre à jour**&quot; pour rendre les nouvelles colonnes disponibles.
 
-   ![Rendre les nouvelles colonnes disponibles](/help/forms/using/assets/new_columns_available.jpg)
+   ![Mettre de nouvelles colonnes à disposition](/help/forms/using/assets/new_columns_available.jpg)
 
-### rapports Forms de Adobe Analytics (Camila) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
+### Rapports Adobe Analytics Forms (Camila) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
 
-1. Accédez à
+1. Accédez à . 
 
-   *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
+   *https://&lt;aemserver> :&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Sélectionnez le formulaire adaptatif &quot;**Demande d&#39;inscription pour les avantages de santé**&quot; et sélectionnez l&#39;option &quot;**Rapport Analytics**&quot;.
+1. Sélectionnez le formulaire adaptatif &quot;**Demande d’inscription pour les prestations de santé**&quot; et sélectionnez l’option &quot;**Rapport d’analyse**&quot;.
 
-   ![Demande d&#39;inscription pour les prestations de santé](/help/forms/using/assets/analytics_report_benefits.jpg)
+   ![Demande d’inscription pour les prestations de santé](/help/forms/using/assets/analytics_report_benefits.jpg)
 
-1. Attendez que la page se charge et vue les données du rapport Analytics.
+1. Patientez jusqu’au chargement de la page et affichez les données du rapport Analytics.
 
    ![Données du rapport Analytics](/help/forms/using/assets/analytics_report_data_updated.jpg)
-
