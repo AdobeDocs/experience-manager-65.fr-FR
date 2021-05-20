@@ -10,18 +10,17 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ca25e66b280db479f69c487753a557b0240233da
+exl-id: 9672f7a4-82b7-4175-874d-181846115442
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '7050'
 ht-degree: 96%
 
 ---
 
+# Glossaire{#glossary}
 
-# Glossaire {#glossary}
-
-Ce glossaire présente les listes (alpabetiquement) de tous les documents livrables figurant dans la [liste de vérification du projet](/help/managing/best-practices-checklist.md).
+Ce glossaire répertorie (de manière alpaïque) les détails de tous les documents livrables de la [liste de contrôle de projet](/help/managing/best-practices-checklist.md).
 
 ## Acceptation des parties prenantes {#acceptance-from-business-stakeholders}
 
@@ -68,13 +67,13 @@ Formation pour le personnel qui produit du contenu pour la solution. Voir les [s
 
 Assurez-vous que les personnages appropriés sont inscrits pour passer les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinents.
 
-### Certifié AEM {#aem-certified}
+### Certifié AEM  {#aem-certified}
 
 Assurez-vous que les personnages appropriés ont réussi les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinents.
 
 ### Formation technique AEM  {#aem-technical-training}
 
-dispenser une formation technique à la personne concernée ; par exemple, les développeurs, les architectes, les ingénieurs et les professionnels du monde des affaires.
+offrir une formation technique à la personne appropriée ; par exemple, les développeurs, les architectes, les ingénieurs et les professionnels.
 
 ### Accord sur les indicateurs de performances clés, définis comme les objectifs du projet {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -94,7 +93,7 @@ La feuille de route du client se compose de jalons de haut niveau et d’objecti
 
 ### Définition de l’architecture des applications  {#application-architecture-definition}
 
-L&#39;[architecture d&#39;application](/help/managing/best-practices.md#development-preparation) doit définir clairement le comportement des applications proposées.
+L’ [architecture de l’application](/help/managing/best-practices.md#development-preparation) doit définir clairement le comportement des applications proposées.
 
 Notamment :
 
@@ -109,7 +108,7 @@ Outre les tâches de maintenance standard d’Adobe Experience Manager (AEM), 
 
 Assurez-vous que votre équipe se compose d’un personnel ayant reçu une formation appropriée. Pour les équipes de projet, nous recommandons chacun des éléments suivants :
 
-* au moins un développeur de pistes certifié AEM
+* au moins un développeur de piste certifié AEM
 * au moins un architecte certifié AEM
 * au moins 75 % de vos développeurs certifiés AEM ; cela permet aux développeurs certifiés de jouer le rôle de mentors auprès des développeurs juniors, ainsi que de garantir le partage et la transparence des connaissances.
 
@@ -121,7 +120,7 @@ Le schéma d’architecture est une représentation graphique de l’architectur
 * de leurs principes ;
 * des éléments et des composants qui font partie de l’architecture.
 
-### Brouillon d’architecture  {#architecture-draft}
+### Brouillon d’architecture {#architecture-draft}
 
 Il fournit une vue de haut niveau du système et de l’architecture de la solution. À ce stade, il s’agit d’un brouillon qui sera révisé et affiné à un stade ultérieur.
 
@@ -129,7 +128,7 @@ Il fournit une vue de haut niveau du système et de l’architecture de la solut
 
 Le conseil d’examen de l’architecture est un corps trans-organisationnel qui :
 
-* supervise la mise en oeuvre d&#39;une stratégie cohérente
+* supervise la mise en oeuvre d’une stratégie cohérente
 * garantit la conformité des systèmes.
 
 Le conseil d’examen doit représenter toutes les parties prenantes principales impliquées dans l’architecture. Elles comprennent généralement un groupe de dirigeants chargés de la révision et de la maintenance de l’architecture globale.
@@ -178,7 +177,7 @@ Toute l’équipe de projet et l’ensemble des parties prenantes doivent confir
 
 ### Concept de sauvegarde et de restauration  {#backup-and-restore-concept}
 
-Le concept de sauvegarde et de restauration décrit les fonctionnalités techniques qui seront mises en œuvre dans la solution. Elle est requise par la politique de sauvegarde et de restauration de la Société.
+Le concept de sauvegarde et de restauration décrit les fonctionnalités techniques qui seront mises en œuvre dans la solution. Elle est requise par la stratégie de sauvegarde et de restauration de l’entreprise.
 
 ### Sauvegarde et restauration testées {#backup-and-restore-tested}
 
@@ -208,7 +207,7 @@ Les indicateurs de performances clés métier définissent des valeurs mesurable
 
 Le document des exigences de l’entreprise décrit la solution d’entreprise pour un projet, en spécifiant clairement les besoins et attentes métier du client. Le document des exigences de l’entreprise distingue également la solution métier et la solution technique.
 
-Lors de l&#39;examen de la solution commerciale, la BRD doit répondre à la question suivante :
+Lors de l’examen de la solution commerciale, l’outil BRD doit répondre à la question suivante :
 &quot;Que veut faire l&#39;entreprise ?&quot;
 
 ### Validation par l’entreprise de tous les réglages nécessaires de la solution ou de l’architecture identifiée et alignée par rapport aux attentes de retour sur investissement et d’IPC {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
@@ -356,7 +355,7 @@ Rapports du client pour le responsable de la qualité au cours de la période de
 
 Tous les correctifs et/ou personnalisations appliqués doivent être documentés, car ils peuvent affecter les futures mises à niveau :
 
-* AEM peut être hautement personnalisé selon vos besoins. Toutes les personnalisations qui peuvent affecter la mise à niveau doivent être entièrement documentées. Par exemple, toute modification majeure apportée à l’interface utilisateur de l’AEM.
+* AEM peut être hautement personnalisé selon vos besoins. Toutes les personnalisations qui peuvent affecter la mise à niveau doivent être entièrement documentées. Par exemple, toute modification majeure apportée à l’interface utilisateur d’AEM.
 * Toutes les mises à jour requises pour la solution actuelle doivent être entièrement documentées. Celles-ci peuvent inclure :
 
    * des Cumulative Fix Packs (CFP) ;
@@ -464,7 +463,7 @@ Un schéma (ou un ensemble de schémas) des systèmes et des dépendances exista
 
 ### Définitions et critères de réussite attendus  {#expected-success-definitions-and-criteria}
 
-Le sponsor du projet collecte les attentes de l’entreprise associées à la réussite du projet. Il est important de disposer de l&#39;ensemble complet des attentes au début d&#39;un projet, car celles-ci devraient influencer toutes les décisions prises tout au long de la mise en oeuvre.
+Le sponsor du projet collecte les attentes de l’entreprise associées à la réussite du projet. Il est important de disposer de l’ensemble des attentes disponibles au début d’un projet, car elles devraient influencer toutes les décisions prises tout au long de la mise en oeuvre.
 
 Les exceptions peuvent inclure :
 
@@ -642,7 +641,7 @@ Contactez l’assistance d’Adobe pour vous assurer que toute prise en charge n
 
 Concepts préliminaires pour les conceptions des expériences.
 
-### Test d’intégration  {#integration-testing}
+### Test d’intégration {#integration-testing}
 
 Test, et confirmation résultante, de toutes les intégrations, à la fois internes et externes.
 
@@ -701,14 +700,14 @@ Tester et activer les tâches de maintenance d’AEM telles que :
 * le nettoyage du système ;
 * la purge des workflows.
 
-### Plan de migration  {#migration-plan}
+### Plan de migration {#migration-plan}
 
 Documentez la migration, notamment :
 
 * la chronologie de la migration ;
 * le plan de maintenance du contenu, selon la stratégie de migration.
 
-### Stratégie de migration  {#migration-strategy}
+### Stratégie de migration {#migration-strategy}
 
 Une description complète du contenu existant, de l’architecture du contenu et des formats associés à la nouvelle solution. Elle doit aborder :
 
@@ -806,7 +805,7 @@ Assurez-vous que les ingénieurs système et le personnel de production connaiss
 
 Définissez les éléments suivants :
 
-* lorsque des rapports de surveillance doivent être générés
+* lorsque les rapports de surveillance doivent être générés ;
 * à qui ils doivent être livrés.
 
 ### Documentation des tâches opérationnelles  {#operational-tasks-documentation}
@@ -914,7 +913,7 @@ Ces estimations sont utilisées pour la gestion des ressources et la budgétisat
 
 Les estimations initiales sont de haut niveau et établies selon les exigences de haut niveau pour la mise en œuvre. Elles seront révisées et affinées ultérieurement.
 
-### Organisation du projet  {#project-organization}
+### Organisation du projet {#project-organization}
 
 La documentation nécessaire pour décrire l’organisation et la structure hiérarchique du projet et de l’équipe.
 
@@ -952,7 +951,7 @@ AEM conserve plusieurs versions des ressources et du contenu. Les règles de pur
 
 Définissez le contenu requis et le format du rapport de qualité, ainsi que la fréquence à laquelle il doit être livré.
 
-### Publication coordonnée  {#release-coordinated}
+### Publication coordonnée {#release-coordinated}
 
 Le chef de projet coordonne tous les rôles requis pour la publication en production.
 
@@ -969,7 +968,7 @@ Elles sont utilisées avec le runbook pour effectuer des étapes et des vérific
 
 >[!NOTE]
 >
->Pour un exemple, consultez les [AEM Notes de mise à jour](/help/release-notes/release-notes.md).
+>Pour obtenir un exemple, consultez les [Notes de mise à jour AEM](/help/release-notes/release-notes.md).
 
 ### Exécution de la version dans l’environnement de production {#release-running-on-production-environment}
 
@@ -993,7 +992,7 @@ Pour contrebalancer la taille en croissance perpétuelle du référentiel, une s
 
 Demande officielle de configuration du projet sur le portail d’assistance d’Adobe.
 
-### Documentation sur les besoins {#requirements-documentation}
+### Documentation sur les besoins  {#requirements-documentation}
 
 Cet ensemble de documentation couvre les exigences fonctionnelles et non fonctionnelles, ainsi que les efforts prévus.
 
@@ -1139,7 +1138,7 @@ Personnel interne qui doit être formé pour administrer la solution.
 
 Personnel interne qui doit être formé pour créer dans la solution.
 
-### Parties prenantes  {#stakeholders}
+### Parties prenantes {#stakeholders}
 
 Les parties prenantes sont les personnes et/ou les rôles clés qui ont un impact significatif sur le projet. Certaines contribueront au budget du projet.
 
@@ -1247,7 +1246,7 @@ Les spécifications techniques abordent (entre autres informations) :
 
 Spécifications des modèles requis. Elles doivent englober les détails, y compris le système de paragraphe (parsys), le plan directeur et le mappage d’héritage, entre autres.
 
-Les spécifications sont basées sur les exigences opérationnelles et les exigences d’expérience.
+Les spécifications sont basées sur les exigences de l’entreprise et de l’expérience.
 
 ### Cas de test {#test-cases}
 
@@ -1255,7 +1254,7 @@ Les cas de test spécifient les étapes détaillées nécessaires pour exécuter
 
 ### Contenu du test  {#test-content}
 
-Le contenu du test doit être le plus proche possible du contenu de production. Il doit être suffisamment large pour permettre de tester tous les scénarios.
+Le contenu du test doit être le plus proche possible du contenu de production. Il doit s’agir d’une sélection suffisamment large pour permettre le test de tous les scénarios.
 
 ### Environnement de test prêt {#test-environment-ready}
 
@@ -1417,4 +1416,3 @@ Les workflows permettent d’automatiser les activités d’AEM. Le concept des 
 
 * les processus qui auront besoin d’une automatisation ;
 * les services et les rôles dans AEM qui seront affectés.
-
