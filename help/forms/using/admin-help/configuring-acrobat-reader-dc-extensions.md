@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 98%
 
 ---
-
 
 # Configuration des extensions d’Acrobat Reader DC pour la capture de données {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
@@ -40,4 +39,3 @@ La capture des données nécessite d’affecter un rôle utilisateur pour l’ac
 1. Dans l’onglet Utilisateurs/groupes de rôle, cliquez sur Rechercher des utilisateurs/groupes.
 1. Dans l’écran Rechercher des utilisateurs et des groupes, cliquez sur Rechercher, sélectionnez les utilisateurs nécessitant un rôle de capture de données, puis cliquez sur OK.
 1. Dans l’écran Modifier le rôle, cliquez sur Enregistrer.
-
