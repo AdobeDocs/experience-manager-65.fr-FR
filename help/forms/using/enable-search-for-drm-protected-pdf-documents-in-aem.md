@@ -11,14 +11,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 86%
 
 ---
-
 
 # Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire{#enable-aem-to-search-document-security-protected-pdf-documents}
 
@@ -27,7 +26,7 @@ La recherche AEM peut rechercher et localiser des ressources AEM et effectuer un
 1. Créez une connexion sécurisée
 1. Indexer un document PDF protégé par un exemple de stratégie
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 * Si vous utilisez AEM Forms sur OSGi :
 
@@ -46,7 +45,7 @@ La recherche AEM peut rechercher et localiser des ressources AEM et effectuer un
    1. Ouvrez la console web AEM. L’URL est https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Recherchez et ouvrez **la configuration du pare-feu de désérialisation.**
 
-   1. Ajoutez le package sun.util.calendar dans le champ des classes Placées sur la liste autorisée ou des préfixes de package et cliquez sur **Enregistrer**.
+   1. Ajoutez le package sun.util.calendar au champ des classes ou préfixes de package Placés sur la liste autorisée et cliquez sur **Enregistrer**.
 
 ### Établir une connexion sécurisée entre les piles AEM Forms JEE et OSGi {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
@@ -89,4 +88,3 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 1. Créez un dossier dans AEM Digital Asset Manager et téléchargez les documents PDF protégés par une stratégie vers le dossier que vous venez de créer.
 
    Désormais, vous pouvez effectuer une recherche portant sur les documents protégés par une stratégie à l’aide de la recherche AEM.
-
