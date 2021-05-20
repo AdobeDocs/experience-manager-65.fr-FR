@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
-translation-type: tm+mt
-source-git-commit: befbdfd574949a7f7449b70a15480e7c105418fe
+exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 93%
 
 ---
-
 
 # Mesure et amélioration de l’efficacité et de la conversion des formulaires{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
@@ -34,7 +33,7 @@ Pour optimiser le retour sur investissement, les entreprises doivent contrôler 
 
 ## La solution {#the-solution}
 
-AEM Forms s’intègre aux solutions [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) et [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - qui peuvent vous aider à surveiller et analyser les performances de vos formulaires et vous permettre d’expérimenter et d’identifier l’expérience qui mène à un meilleur taux de conversion.
+AEM Forms s’intègre aux solutions [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) et [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - qui peuvent vous aider à surveiller et analyser les performances de vos formulaires et vous permettent d’expérimenter et d’identifier l’expérience qui conduit à un meilleur taux de conversion.
 
 ## Le flux de travail {#the-workflow}
 
@@ -74,7 +73,7 @@ Pour obtenir des instructions détaillées, voir [Configuration des analyses et 
 
 **Configuration de Target**
 
-Pour créer et exécuter des tests A/B pour vos formulaires adaptatifs, configurez la Cible dans AEM Forms comme décrit dans [Configuration et intégration de la Cible dans AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Pour créer et exécuter des tests A/B pour vos formulaires adaptatifs, configurez Target dans AEM Forms comme décrit dans [Configuration et intégration de Target dans AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
 #### Etape 2 : Afficher le rapport d’analyse {#step-view-analytics-report-br}
 
@@ -160,4 +159,3 @@ Voici quelques recommandations à propos de la conception des formulaires et l�
 * Formulez une hypothèse et identifiez les mesures de réussite avant d’exécuter les tests A/B.
 * Effectuez des variations minimales (dans l’idéal, une à la fois) de votre expérience alternative pour savoir ce qui a influé le taux de conversion.
 * Effectuez fréquemment des tests pour éliminer les modifications qui ne fonctionnent pas.
-
