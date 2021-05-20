@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 96%
 
 ---
-
 
 # Synchronisation de l’application{#synchronizing-the-app}
 
@@ -31,7 +30,7 @@ Lorsque vous êtes connecté avec le serveur AEM Forms, votre application est s
 
 **Synchronisation manuelle de l’application**
 
-Appuyez sur le bouton Synchroniser ![sync-app](assets/sync-app.png) dans l’angle inférieur droit de l’écran d’accueil.
+Appuyez sur le bouton Synchroniser ![sync-app](assets/sync-app.png) dans le coin inférieur droit de l’écran d’accueil.
 
 **Modification de la fréquence de synchronisation**
 
