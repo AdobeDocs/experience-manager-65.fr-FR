@@ -1,17 +1,16 @@
 ---
-title: Digital Rights Management des actifs
+title: Digital Rights Management des ressources
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] .
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: DRM,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: DRM,Gestion des ressources
+exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1401'
 ht-degree: 79%
 
 ---
-
 
 # Gestion des droits numériques des ressources {#digital-rights-management-in-assets}
 
@@ -21,13 +20,13 @@ Les ressources numériques sont souvent associées à une licence qui prévoit l
 
 L’expiration de ressources est un moyen efficace de faire respecter les exigences en matière de licence. Elle garantit que la ressource qui est publiée ne l’est plus lorsqu’elle arrive à expiration, ce qui évite tout risque de violation de licence. Sans autorisations d’administration, un utilisateur ne peut pas modifier, copier, déplacer, publier ni télécharger une ressource arrivée à expiration.
 
-Vous pouvez vue l’état d’expiration d’un fichier dans la console [!DNL Assets] dans les vues de carte et de liste.
+Vous pouvez afficher l’état d’expiration d’une ressource dans la console [!DNL Assets] en mode Carte et Liste.
 
-![expired_flag_liste](assets/expired_flag_list.png)
+![expired_flag_list](assets/expired_flag_list.png)
 
-*Figure : Dans liste vue, la colonne   Etat affiche la bannière   Expiration.*
+*Figure : En mode Liste, la colonne   État affiche la bannière   Expiré.*
 
-Vous pouvez vue l’état d’expiration d’une ressource dans le [!UICONTROL journal] du rail de gauche.
+Vous pouvez afficher l’état d’expiration d’une ressource dans la [!UICONTROL chronologie] du rail de gauche.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -35,14 +34,14 @@ Vous pouvez vue l’état d’expiration d’une ressource dans le [!UICONTROL j
 >
 >La date d’expiration d’une ressource s’affiche différemment pour les utilisateurs de différents fuseaux horaires.
 
-Vous pouvez également vue l’état d’expiration des ressources dans le rail **[!UICONTROL Références]**. Il gère les états d’expiration des ressources et les relations entre les ressources composites et les sous-ressources, les collections et les projets référencés.
+Vous pouvez également afficher l’état d’expiration des ressources dans le rail **[!UICONTROL Références]**. Il gère les états d’expiration des ressources et les relations entre les ressources composites et les sous-ressources, les collections et les projets référencés.
 
 1. Accédez à la ressource pour laquelle vous souhaitez voir les pages web de référencement et les ressources composites.
-1. Sélectionnez la ressource et ouvrez **[!UICONTROL Références]** dans le rail de gauche. Pour les actifs expirés, le rail [!UICONTROL Références] affiche l’état d’expiration **[!UICONTROL La ressource est expirée]** en haut.
+1. Sélectionnez la ressource et ouvrez **[!UICONTROL Références]** dans le rail de gauche. Pour les ressources arrivées à expiration, le rail [!UICONTROL Références] affiche l’état d’expiration **[!UICONTROL La ressource est arrivée à expiration]** en haut.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Si la ressource a des sous-ressources expirées, le rail [!UICONTROL Références] affiche l&#39;état **[!UICONTROL La ressource a des sous-ressources expirées]**.
+   Si la ressource contient des sous-ressources arrivées à expiration, le rail [!UICONTROL Références] affiche l’état **[!UICONTROL La ressource contient des sous-ressources arrivées à expiration]**.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -53,11 +52,11 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 1. Dans la console [!DNL Assets], cliquez sur l’option **[!UICONTROL Rechercher]** de la barre d’outils pour afficher la zone Omni-recherche.
 
 1. Avec le curseur dans la zone Omni-recherche, sélectionnez la touche `Enter` pour afficher la page des résultats de la recherche.
-1. Ouvrez le panneau de recherche dans le rail de gauche. Cliquez sur l’option **[!UICONTROL Statut d’expiration]** pour développer l’option.
+1. Ouvrez le panneau de recherche dans le rail de gauche. Cliquez sur l’option **[!UICONTROL État d’expiration]** pour la développer.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Sélectionnez **[!UICONTROL Expiré]**. Seules les ressources expirées s’affichent après le filtrage des résultats de la recherche.
+1. Sélectionnez **[!UICONTROL Expiré]**. Seules les ressources expirées s’affichent après le filtrage des résultats de recherche.
 
 Quand vous choisissez l’option **[!UICONTROL Expiré]**, la console [!DNL Assets] affiche seulement les ressources et les sous-ressources arrivées à expiration qui ont été référencées par des ressources composites. Les ressources composites qui référencent des sous-ressources expirées ne s’affichent pas immédiatement une fois que les sous-ressources arrivent à expiration. En réalité, elles sont affichées lorsqu’[!DNL Experience Manager] détecte qu’elles référencent des sous-ressources expirées, lors de la prochaine exécution du planificateur.
 
@@ -75,9 +74,9 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 
    >[!NOTE]
    >
-   >Seul le créateur d’actifs (la personne qui télécharge un actif particulier vers [!DNL Assets]) reçoit un courrier électronique à l’expiration de l’actif. Voir [comment configurer la notification par courrier électronique](/help/sites-administering/notification.md) pour plus d&#39;informations sur la configuration des notifications par courrier électronique au niveau [!DNL Experience Manager] global.
+   >Seul le créateur de la ressource (la personne qui charge une ressource spécifique dans [!DNL Assets]) reçoit un courrier électronique à l’expiration de la ressource. Voir [Configuration de la notification électronique](/help/sites-administering/notification.md) pour plus d’informations sur la configuration des notifications électroniques au niveau [!DNL Experience Manager] global.
 
-1. Dans le champ **[!UICONTROL Notification préalable en secondes]** indiquez l’intervalle de temps, en secondes, qui précède le moment auquel une ressource expire et pendant lequel vous souhaitez recevoir une notification concernant l’expiration. Les créateurs de ressources reçoivent un message avant l’expiration de la ressource, vous informant que la ressource va expirer après l’heure spécifiée. Une fois la ressource arrivée à expiration, vous recevez une notification par courrier électronique qui confirme l’expiration. En outre, les ressources expirées sont désactivées.
+1. Dans le champ **[!UICONTROL Notification préalable en secondes]** indiquez l’intervalle de temps, en secondes, qui précède le moment auquel une ressource expire et pendant lequel vous souhaitez recevoir une notification concernant l’expiration. Les créateurs de ressources reçoivent un message avant l’expiration de la ressource vous informant que la ressource va expirer après l’heure spécifiée. Une fois la ressource arrivée à expiration, vous recevez une notification par courrier électronique qui confirme l’expiration. En outre, les ressources expirées sont désactivées.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -86,19 +85,19 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 La console [!DNL Assets] peut afficher différents états des ressources. En fonction de l’état actuel d’une ressource donnée, le mode Carte affiche un libellé décrivant son état (par exemple, expiré, modifié, approuvé, rejeté, etc.).
 
 1. Dans l’interface utilisateur [!DNL Assets], sélectionnez une ressource.
-1. Cliquez sur **[!UICONTROL Publier]** dans la barre d’outils. Si **Publier** n’apparaît pas dans la barre d’outils, cliquez sur **[!UICONTROL Plus]** dans la barre d’outils et recherchez **[!UICONTROL Publier]** ![l’option de publication](assets/do-not-localize/publish-globe.png).
+1. Cliquez sur **[!UICONTROL Publier]** dans la barre d’outils. Si vous ne voyez pas **Publier** dans la barre d’outils, cliquez sur **[!UICONTROL Plus]** dans la barre d’outils et recherchez l’option **[!UICONTROL Publier]** ![option de publication](assets/do-not-localize/publish-globe.png).
 1. Sélectionnez **[!UICONTROL Publier]** dans le menu, puis fermez la boîte de dialogue de confirmation.
 1. Quittez le mode de sélection. L’état de publication de la ressource s’affiche au bas de sa miniature en mode d’affichage Carte. En mode Liste, la colonne Publié indique le moment auquel la ressource a été publiée.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Pour afficher la page des détails de sa ressource, dans l&#39;interface [!DNL Assets], sélectionnez une ressource et cliquez sur **[!UICONTROL Propriétés]** ![Propriétés de la vue](assets/do-not-localize/info-circle-icon.png).
+1. Pour afficher la page des détails de la ressource, dans l’interface [!DNL Assets], sélectionnez une ressource et cliquez sur **[!UICONTROL Propriétés]** ![afficher les propriétés](assets/do-not-localize/info-circle-icon.png).
 
 1. Dans l’onglet [!UICONTROL Avancé], définissez une date d’expiration pour la ressource dans le champ **[!UICONTROL Date d’expiration]**.
 
-   ![définir la date et l’heure d’expiration de l’actif dans le champ Expire](assets/asset-properties-advanced-tab.png)
+   ![Définition de la date et de l’heure d’expiration des ressources dans le champ Expiration](assets/asset-properties-advanced-tab.png)
 
-   *Figure :  [!UICONTROL Onglet ] avancé dans   Propriétés de la ressource pour définir l’expiration de la ressource.*
+   *Figure :   Onglet avancé dans   Propriétés de la ressource pour définir l’expiration de la ressource.*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL Fermer]** pour afficher la console Ressources.
 1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. En mode Liste, l’état de la ressource s’affiche comme étant **[!UICONTROL arrivée à expiration]**.
@@ -111,7 +110,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Pour rechercher des ressources en fonction de leur état, cliquez sur **[!UICONTROL Rechercher]** ![option de recherche](assets/do-not-localize/search_icon.png) pour afficher la barre Omnisearch.
+1. Pour rechercher des ressources en fonction de leur état, cliquez sur **[!UICONTROL Rechercher]** ![option de recherche](assets/do-not-localize/search_icon.png) pour afficher la barre Omni-recherche.
 1. Sélectionnez `Return` et cliquez sur [!DNL Experience Manager] pour afficher le panneau de recherche.
 1. Dans le panneau de recherche, cliquez sur **[!UICONTROL État de publication]** et choisissez **[!UICONTROL Publié]** pour rechercher des ressources publiées dans [!DNL Assets].
 
