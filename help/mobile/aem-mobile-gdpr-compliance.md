@@ -6,20 +6,19 @@ seo-description: 'null'
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '697'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
-
 
 # AEM Mobile – Préparation pour le RGPD {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations relatives à la protection des données et à la protection de la vie privée ; comme le RGPD, l&#39;ACCP, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité ; comme le RGPD, le CCPA, etc.
 
 ## Prise en charge du RGPD par AEM Mobile {#aem-mobile-gdpr-support}
 
@@ -45,23 +44,23 @@ Obligatoire:
 
 * Identifiant du contrat du client : *dpsc-contractId*
 
-Fournissez au moins une des informations suivantes :
+Fournissez au moins l’une des informations suivantes :
 
 * L’identifiant OAuth de l’utilisateur final fourni par le client (l’identifiant utilisé dans le système de droits direct du client) : *dpsc-directEntitlementId*
 * Pour les utilisateurs d’applications Windows, l’ID de la boutique d’applications de l’utilisateur final : *dpsc-windowsAppStoreId*
 * L’adresse électronique de utilisateur final utilisée pour interagir avec l’application DPS : *email*
 
-### Questions fréquentes (FAQ) {#frequently-asked-questions-faq}
+### Questions fréquentes  {#frequently-asked-questions-faq}
 
-**L’Adobe va-t-il supprimer mes achats de boutique d’applications lors du lancement d’une demande de DELETE ?**
+**L’Adobe supprimera-t-il mes achats de la boutique d’applications lors du lancement d’une demande de DELETE ?**
 
 Adobe supprime les informations qu’il contient au sujet des achats dans les boutiques d’applications (abonnements, etc.), mais les achats resteront enregistrés dans les boutiques d’applications. Si l’application (pour l’utilisateur final) est consignée dans la boutique d’applications, ces reçus seront à nouveau détectés et envoyés à Adobe ; ils seront considérés comme de nouveaux achats et restaurés par l’application afin d’en rétablir l’accès.
 
-**L&#39;Adobe va-t-il supprimer les droits fournis par le client lors du lancement d&#39;une demande de DELETE ?**
+**Adobe supprimera-t-il les droits fournis par les clients lors de la présentation d’une demande de DELETE ?**
 
 Adobe supprimera les informations dont il dispose sur les droits directs supplémentaires du client. Si l’application (pour l’utilisateur final) se connecte au mécanisme OAuth que le client a utilisé, des informations seront envoyées à Adobe, et les services détecteront à nouveau les droits supplémentaires.
 
-**À quoi s&#39;attend l&#39;utilisateur final ?**
+**Que doit-on attendre de l’utilisateur final ?**
 
 Étant donné que la clé d’attribution des droits de l’application réside sur l’appareil en tant que partie intégrante du logiciel de visionneuse, l’utilisateur final doit désinstaller l’application. L’utilisateur final doit se rendre compte que s’il réinstalle l’application, les achats existants (associés à un utilisateur de la boutique d’applications) et les droits directs (associés à l’utilisateur OAuth) seront toujours restaurés.
 
@@ -81,9 +80,9 @@ Au fil de l’évolution du produit Digital Publishing Suite, les mises en œu
 
 Veuillez contacter l’assistance clientèle d’Adobe pour présenter une demande RGPD.
 
-Voici un exemple des entrées et des sorties résultantes d’une demande de RDPR Digital Publishing Suite :
+Voici un exemple des entrées et des sorties résultantes d’une demande en vertu du RGPD pour Digital Publishing Suite :
 
-#### Entrées : {#inputs}
+#### Entrées : {#inputs}
 
 ```
 dpsc-contractId = “12345-1234-12416234” 
@@ -303,4 +302,3 @@ email = “test@what.com”
 
 }
 ```
-
