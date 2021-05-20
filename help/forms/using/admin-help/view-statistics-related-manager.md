@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 80%
 
 ---
-
 
 # Affichage des statistiques relatives à Work Manager {#view-statistics-related-to-work-manager}
 
@@ -29,19 +28,19 @@ L’onglet Work Manager affiche les statistiques liées aux éléments de Work M
 
 ### Catégorie {#category}
 
-**Par défaut :** toutes les tâches auxquelles le client n’a pas affecté de catégorie lors de leur envoi. Ces tâches étant gérées par Work Manager, les états lui appartiennent.
+**Valeur par défaut :**  toutes les tâches auxquelles le client n’a pas affecté de catégorie lors de leur envoi. Ces tâches étant gérées par Work Manager, les états lui appartiennent.
 
-**Job Manager :** toutes les tâches qui appartiennent à Job Manager. Job Manager gère ses propres tâches et dispose de ses propres états de tâches. Reportez-vous aux états spécifiques des tâches, décrits ci-dessous.
+**Job Manager :** toutes les tâches appartenant à Job Manager. Job Manager gère ses propres tâches et dispose de ses propres états de tâches. Reportez-vous aux états spécifiques des tâches, décrits ci-dessous.
 
-**Workflow :** toutes les tâches qui appartiennent à l’exécution de Workflow. Workflow ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
+**Workflow :** toutes les tâches qui appartiennent à l’exécution du workflow. Workflow ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
 
-**Événements :** toutes les tâches qui appartiennent à Événement Management. Gestion des événements ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
+**Événements :** toutes les tâches qui appartiennent à la gestion des événements. Gestion des événements ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
 
 ### Etat (pour les catégories Par défaut, Workflow ou Evénements uniquement)  {#status-for-default-workflow-or-events-categories-only}
 
-**Afficher tout :** affiche toutes les tâches en cours.
+**Tout afficher :** affiche toutes les tâches en cours.
 
-**Programmé :** affiche toutes les tâches prêtes à être exécutées par le serveur d’applications mais pas encore démarrées.
+**Planifié :** affiche toutes les tâches prêtes à être exécutées par le serveur d’applications, mais pas encore démarrées.
 
 **En pause :** affiche toutes les tâches planifiées mises en pause par l’application cliente. Elles peuvent être exécutées ou supprimées (voir Gestion des tâches). 
 
@@ -49,7 +48,7 @@ L’onglet Work Manager affiche les statistiques liées aux éléments de Work M
 
 **Terminé :** affiche toutes les tâches qui ont été exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés. Vous pouvez supprimer ces tâches en utilisant l’opération Supprimer les éléments (voir Gestion des tâches). 
 
-**Échec :** affiche toutes les tâches qui n&#39;ont pas été exécutées correctement en raison d&#39;une condition d&#39;erreur. Ces tâches peuvent être relancées à plusieurs reprises en utilisant l’opération Essayer de relancer les éléments (voir Gestion des tâches). Un lien Echec dans la colonne Etat vous permet d’accéder à des informations détaillées se rapportant à l’échec.
+**Échec :** affiche toutes les tâches qui ne se sont pas terminées correctement en raison d’une condition d’erreur. Ces tâches peuvent être relancées à plusieurs reprises en utilisant l’opération Essayer de relancer les éléments (voir Gestion des tâches). Un lien Echec dans la colonne Etat vous permet d’accéder à des informations détaillées se rapportant à l’échec.
 
 **Inconnu :** affiche toutes les tâches dont l’état est inconnu.
 
@@ -57,15 +56,15 @@ L’onglet Work Manager affiche les statistiques liées aux éléments de Work M
 
 **Terminé :** affiche toutes les tâches qui ont été exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés.
 
-**Terminé demandé :** affiche les tâches pour lesquelles une demande complète a été effectuée.
+**Terminé demandé :** affiche les tâches pour lesquelles une requête complète a été effectuée.
 
-**Echec de la demande :** affiche les tâches pour lesquelles une demande d&#39;échec a été effectuée.
+**Échec demandé :** affiche les tâches pour lesquelles une demande d’échec a été effectuée.
 
-**Échec :** affiche les tâches qui n’ont pas été exécutées correctement en raison d’une condition d’erreur. Un lien Echec dans la colonne Etat vous permet d’accéder à des informations détaillées se rapportant à l’échec.
+**Échec :** affiche les tâches qui n’ont pas réussi en raison d’une condition d’erreur. Un lien Echec dans la colonne Etat vous permet d’accéder à des informations détaillées se rapportant à l’échec.
 
-**Arrêter la demande :** affiche les tâches pour lesquelles une demande d&#39;arrêt a été effectuée.
+**Arrêter la demande :**  affiche les tâches pour lesquelles une demande d’arrêt a été effectuée.
 
-**Interrompu :** affiche les tâches qui se sont terminées sans avoir été exécutées.
+**Terminé :** affiche les tâches qui ont pris fin sans avoir été terminées.
 
 **Suspendre la demande :** affiche les tâches pour lesquelles une demande de suspension a été effectuée.
 
@@ -75,7 +74,7 @@ L’onglet Work Manager affiche les statistiques liées aux éléments de Work M
 
 **En file d’attente :** affiche les tâches qui se trouvent dans la file d’attente.
 
-**Exécution :** affiche les tâches en cours d’exécution.
+**En cours :** affiche les tâches en cours d’exécution.
 
 ### Nom du serveur {#server-name}
 
