@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 87%
+ht-degree: 94%
 
 ---
-
 
 # Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -24,11 +23,11 @@ ht-degree: 87%
 
 Les formulaires adaptatifs prennent en charge différents événements XFA, propriétés, scripts et validations définis dans un fichier XDP, notamment : 
 
-* Exécution de scripts définis sur les événements dans le fichier XDP. 
-* Capture des valeurs par défaut et des propriétés comportementales pour les champs du fichier XDP. 
-* Exécution de scripts de validation définis dans le fichier XDP.  
+* Exécution de scripts définis sur les événements dans le fichier XDP.
+* Capture des valeurs par défaut et des propriétés comportementales pour les champs du fichier XDP.
+* Exécution de scripts de validation définis dans le fichier XDP.
 
-Lorsqu’un formulaire adaptatif est créé à partir d’un fichier XDP, les propriétés, les événements et les validations sont automatiquement renseignés sur l’interface utilisateur de création de formulaire. Toutefois, les concepteurs de formulaires peuvent remplacer certains de ces éléments pour créer une autre expérience. 
+Lorsqu’un formulaire adaptatif est créé à partir d’un fichier XDP, les propriétés, les événements et les validations sont automatiquement renseignés sur l’interface utilisateur de création de formulaire. Toutefois, les concepteurs de formulaires peuvent remplacer certains de ces éléments pour créer une autre expérience.
 
 Cet article répertorie les événements XFA, les propriétés et les validations pris en charge dans les formulaires adaptatifs et explique comment les remplacer dans ces formulaires. 
 
@@ -41,7 +40,7 @@ Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Champ ou conteneur XFA    </strong></p> </td>
+   <td><p><strong>Champ ou conteneur XFA</strong></p> </td>
    <td><p><strong>Composant de formulaire adaptatif correspondant    </strong></p> </td>
   </tr>
   <tr>
@@ -85,15 +84,15 @@ Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous
    <td><p>Image</p> </td>
   </tr>
   <tr>
-   <td><p>Text (Texte)</p> </td>
-   <td><p>Text (Texte)</p> </td>
+   <td><p>Texte</p> </td>
+   <td><p>Texte</p> </td>
   </tr>
   <tr>
    <td><p>Sous-formulaire </p> </td>
    <td><p>Panneau</p> </td>
   </tr>
   <tr>
-   <td><p>Zone (groupe)   </p> </td>
+   <td><p>Zone (groupe)</p> </td>
    <td><p>Panneau</p> </td>
   </tr>
   <tr>
@@ -110,7 +109,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Propriétés du composant XFA    </strong></p> </td>
+   <td><p><strong>Propriétés du composant XFA</strong></p> </td>
    <td><p><strong>Comportement correspondant dans les formulaires adaptatifs    </strong></p> </td>
   </tr>
   <tr>
@@ -119,11 +118,11 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
   </tr>
   <tr>
    <td><p>presence </p> </td>
-   <td><p>Associé à la propriété visible dans le formulaire adaptatif. Vous pouvez le remplacer en utilisant l’expression Visibility.   </p> </td>
+   <td><p>Associé à la propriété visible dans le formulaire adaptatif. Vous pouvez le remplacer en utilisant l’expression Visibility</p> </td>
   </tr>
   <tr>
    <td><p>access </p> </td>
-   <td><p>Associé à la propriété activée dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression d’accès.</p> </td>
+   <td><p>Associé à la propriété activée dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression Access.</p> </td>
   </tr>
   <tr>
    <td><p>Accessibilité : role </p> </td>
@@ -134,7 +133,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Associé à la propriété speakPriority dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
-   <td><p>Accessibilité : speakText</p> </td>
+   <td><p>Accessibilité : speakText</p> </td>
    <td><p>Associé au texte Accessibility personnalisé dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
@@ -142,23 +141,23 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Associé à la propriété short description dans le formulaire adaptatif.</p> </td>
   </tr>
   <tr>
-   <td><p>légende<em> (tous les types de champ)</em></p> </td>
+   <td><p>caption<em> (tous les types de champ)</em></p> </td>
    <td><p>Associé à la propriété Title dans le formulaire adaptatif.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> (tous les types de champ)</em>    </p> </td>
+   <td><p>displayFormat<em> (tous les types de champ)</em></p> </td>
    <td><p>Associé à la propriété Display Pattern dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> (tous les types de champ)</em>    </p> </td>
+   <td><p>rawValue<em> (tous les types de champ)</em></p> </td>
    <td><p>Associé à la propriété Value dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (Liste Box, Check Box)</em></p> </td>
-   <td><p>Associé à la propriété options dans le formulaire adaptatif. Vous pouvez la remplacer à l’aide de l’expression Options.</p> </td>
+   <td><p>items<em> (zone de liste, case à cocher)</em></p> </td>
+   <td><p>Associé à la propriété options dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression Options.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (champ de texte)</em></p> </td>
+   <td><p>maxChar<em> (champ de texte)</em></p> </td>
    <td><p>Associé à la propriété Maximum characters allowed dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
@@ -166,15 +165,15 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Associé à la propriété Allow multiple lines dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (champ numérique, champ décimal)</em>    </p> </td>
+   <td><p>fracDigit<em> (champ numérique, champ décimal)</em></p> </td>
    <td><p>Associé à la propriété Frac digits dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (champ numérique, champ décimal)</em>    </p> </td>
+   <td><p>leadDigit<em> (champ numérique, champ décimal)</em></p> </td>
    <td><p>Associé à la propriété Lead digits dans le formulaire adaptatif.   </p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Liste Box)</em></p> </td>
+   <td><p>multiSelect<em> (zone de liste)</em></p> </td>
    <td><p>Associé à la propriété Allows multiple selection dans le formulaire adaptatif.   </p> </td>
   </tr>
  </tbody>
@@ -187,7 +186,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Événements de script XFA    </strong></p> </td>
+   <td><p><strong>Événements de script XFA</strong></p> </td>
    <td><p><strong>Comportement correspondant dans les formulaires adaptatifs    </strong></p> </td>
   </tr>
   <tr>
@@ -211,19 +210,19 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Ce script est exécuté lors de l’exécution et ne peut pas être remplacé dans les formulaires adaptatifs.   </p> </td>
   </tr>
   <tr>
-   <td><p>click (champs de bouton)</p> </td>
-   <td><p>Associé à l’expression Click du bouton.   </p> </td>
+   <td><p>click (champs de bouton)</p> </td>
+   <td><p>Associé à l’expression Click du bouton.</p> </td>
   </tr>
   <tr>
-   <td><p>Prise en charge de script côté serveur   </p> </td>
+   <td><p>Prise en charge de script côté serveur</p> </td>
    <td><p>Ce script est exécuté lors de l’exécution et ne peut pas être remplacé dans les formulaires adaptatifs.   </p> </td>
   </tr>
   <tr>
-   <td><p>Prise en charge des services Web   </p> </td>
+   <td><p>Prise en charge des services Web</p> </td>
    <td><p>Ce script est exécuté lors de l’exécution et ne peut pas être remplacé dans les formulaires adaptatifs.   </p> </td>
   </tr>
   <tr>
-   <td><p>Modification (champ de saisie tactile, bouton radio, case à cocher)   </p> </td>
+   <td><p>Modification (champ de saisie tactile, bouton radio, case à cocher)</p> </td>
    <td><p>Ce script est exécuté lors de l’exécution et ne peut pas être remplacé dans les formulaires adaptatifs.   </p> </td>
   </tr>
  </tbody>
@@ -236,19 +235,19 @@ Le tableau suivant capture la manière dont les validations XFA sont associées 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Validation XFA    </strong></p> </td>
+   <td><p><strong>Validation XFA</strong></p> </td>
    <td><p><strong>Validation correspondante dans les formulaires adaptatifs    </strong></p> </td>
   </tr>
   <tr>
-   <td><p>Modèle de validation (formatTest)</p> </td>
+   <td><p>Modèle de validation (formatTest)</p> </td>
    <td><p>validatePictureClause</p> </td>
   </tr>
   <tr>
-   <td><p>Message du modèle de validation (formatTestMessage)</p> </td>
+   <td><p>Message du modèle de validation (formatTestMessage)</p> </td>
    <td><p>validatePictureMessage</p> </td>
   </tr>
   <tr>
-   <td><p>Requis (nullTest )</p> </td>
+   <td><p>Required (nullTest)</p> </td>
    <td><p>mandatory </p> </td>
   </tr>
   <tr>
@@ -256,11 +255,11 @@ Le tableau suivant capture la manière dont les validations XFA sont associées 
    <td><p>mandatoryMessage</p> </td>
   </tr>
   <tr>
-   <td><p>Valider le script (scriptTest)</p> </td>
-   <td><p>validateExp   </p> </td>
+   <td><p>Validate script (scriptTest)</p> </td>
+   <td><p>validateExp</p> </td>
   </tr>
   <tr>
-   <td><p>Message du script de validation (scriptTestMessage)   </p> </td>
+   <td><p>Message du script de validation (scriptTestMessage)</p> </td>
    <td><p>validateMessage</p> </td>
   </tr>
  </tbody>
@@ -269,4 +268,3 @@ Le tableau suivant capture la manière dont les validations XFA sont associées 
 >[!NOTE]
 >
 >Vous ne pouvez pas remplacer la propriété obligatoire pour le groupe bouton radio et case à cocher du formulaire adaptatif qui est lié aux boutons de vérification XFA.
-
