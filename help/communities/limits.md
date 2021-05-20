@@ -1,8 +1,8 @@
 ---
-title: Limites de contribution des membres
-seo-title: Limites de contribution des membres
-description: La fonction Limites de contribution vous permet de limiter les contributions à protéger contre le spam.
-seo-description: La fonction Limites de contribution vous permet de limiter les contributions à protéger contre le spam.
+title: Limites des contributions des membres
+seo-title: Limites des contributions des membres
+description: La fonction Limites de contribution permet de limiter les contributions à protéger contre les spams
+seo-description: La fonction Limites de contribution permet de limiter les contributions à protéger contre les spams
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,80 +10,79 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d00a8eb2-47ce-425a-a312-f043f82912be
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 2%
 
 ---
 
-
-# Limites de contribution des membres {#member-contribution-limits}
+# Limites des contributions des membres {#member-contribution-limits}
 
 ## Présentation {#overview}
 
-La fonction des limites de contribution permet de limiter les contributions des membres de la communauté comme moyen de protection contre le spam.
+La fonctionnalité Limites de contribution permet de limiter les contributions des membres de la communauté en tant que moyen de protection contre le spam.
 
-Lorsqu’un membre est limité, toute publication qui dépasse le nombre autorisé de contributions déclenche une alerte indiquant que la limite a été dépassée et que la publication est rejetée. Le membre de la communauté peut alors se rendre au centre de messages de la communauté et communiquer avec un gestionnaire de la communauté qui peut supprimer les limites, le cas échéant.
+Lorsqu’un membre est limité, toute publication qui dépasse le nombre autorisé de contributions déclenche une alerte indiquant que la limite a été dépassée et que la publication est rejetée. Le membre de la communauté peut alors se rendre au centre de messagerie de la communauté et contacter un responsable de la communauté qui peut supprimer les limites, le cas échéant.
 
-Les limites de contribution peuvent être activées individuellement à partir de la [console Membres](members.md) et/ou configurées pour être automatiquement activées lorsque les visiteurs du site deviennent de nouveaux membres.
+Les limites de contribution peuvent être activées individuellement à partir de la [console Membres](members.md) et/ou configurées pour être activées automatiquement lorsque les visiteurs du site deviennent de nouveaux membres.
 
-À l&#39;aide de la console Membres, les limites de contribution peuvent être supprimées de façon proactive pour un membre par un gestionnaire de communauté à tout moment, ou supprimées de façon réactive lorsqu&#39;un membre envoie un message à un gestionnaire de communauté qui fait une telle demande.
+À l’aide de la console Membres, les limites de contribution peuvent être supprimées de manière proactive pour un membre par un responsable de la communauté à tout moment, ou supprimées de manière réactive lorsqu’un membre envoie un message à un responsable de la communauté qui effectue une telle requête.
 
-## Configuration des limites de contribution du contenu généré par l’utilisateur AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configuration des limites de contribution du contenu généré par les utilisateurs d’AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Cette configuration OSGi :
 
-* Définit les caractéristiques des limites de contribution (nombre de postes au cours d’une période).
-* Indique qui le membre sera en mesure de transmettre un message lorsque la limite a été atteinte.
+* Définit les caractéristiques des limites de contribution (nombre de publications au cours d’une période).
+* Identifie qui le membre pourra envoyer un message lorsque la limite a été atteinte.
 * Identifie les domaines qui n’ont jamais besoin d’être limités.
 
 Pour atteindre cette configuration OSGi :
 
-* Sur l’éditeur Principal :
-* Connectez-vous avec des droits d’administrateur.
-* Accédez à la [console Web](../../help/sites-deploying/configuring-osgi.md).
+* Sur le Principal éditeur :
+* Connectez-vous avec les privilèges d’administrateur.
+* Accédez à la [console web](../../help/sites-deploying/configuring-osgi.md).
 
    * Par exemple, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Recherchez `AEM Communities User Generated Content Contribution Limits Configuration`.
-* Sélectionnez l’icône Modifier.
+* Sélectionnez l’icône de modification.
 
-![configurer-limites](assets/configure-limits.png)
+![configure-limits](assets/configure-limits.png)
 
-* **[!UICONTROL Appliquer automatiquement les limites de contribution UGC]**
+* **[!UICONTROL Application automatique des limites de contribution du contenu généré par l’utilisateur]**
 
-   Si cette option est cochée, définissez automatiquement des limites de contribution pour les utilisateurs lorsqu’ils s’inscrivent en tant que membres de la communauté. Cela se reflète dans le profil du membre de la communauté et peut être activé/désactivé à partir de la console [membres](members.md). Les nouveaux membres dotés d’une adresse électronique provenant d’une liste autorisée de domaines ne sont jamais limités.
+   Si cette case est cochée, définissez automatiquement des limites de contribution pour les utilisateurs lorsqu’ils s’enregistrent en tant que membres de la communauté. Cela se reflète dans le profil du membre de la communauté et peut être activé/désactivé à partir de la [console membres](members.md). Les nouveaux membres disposant d’une adresse électronique provenant d’une liste autorisée de domaines ne sont jamais contraints.
 
    Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Limite UGC]**
 
-   Nombre maximal de contributions.
+   Nombre maximum de contributions.
 
    La valeur par défaut est de 10 publications.
 
-* **[!UICONTROL Fréquence limite UGC]**
+* **[!UICONTROL Fréquence des limites UGC]**
 
-   Période restreignant la limite UGC.
+   La période limitant la limite du contenu généré par l’utilisateur.
 
    La valeur par défaut est de 60 minutes.
 
 * **[!UICONTROL Domaines]**
 
-   Liste de liste autorisée d’un ou de plusieurs domaines de courriel. Sélectionnez l’icône + pour effectuer d’autres entrées.
+   Liste de liste autorisée d’un ou de plusieurs domaines de messagerie. Sélectionnez l’icône + pour effectuer d’autres entrées.
 
-   Les utilisateurs dont les adresses électroniques se placent sur la liste autorisée de domaines ne sont pas affectés lorsque les limites de contribution UGC sont automatiquement appliquées. Par exemple, si le domaine `mycompany.com` est ajouté à la liste des domaines, un membre avec l’adresse électronique `me@mycompany.com` n’est jamais limité à la publication.
+   Les utilisateurs dont les adresses électroniques se trouvent dans la liste autorisée des domaines ne sont pas affectés lorsque les limites de contribution du contenu généré par l’utilisateur sont automatiquement appliquées. Par exemple, si le domaine `mycompany.com` est ajouté à la liste des domaines, un membre avec l’adresse électronique `me@mycompany.com` n’est jamais restreint à la publication.
 
-   La valeur par défaut est une liste autorisée vide.
+   La liste autorisée par défaut est vide.
 
-* **[!UICONTROL Destinataires de messagerie]**
+* **[!UICONTROL Destinataires de la messagerie]**
 
-   Liste d&#39;un ou de plusieurs identifiants autorisés des membres pouvant modifier les limites de contribution des membres. Sélectionnez l’icône + pour effectuer d’autres entrées.
+   Liste d’un ou plusieurs ID autorisables des membres pouvant modifier les limites de contribution des membres. Sélectionnez l’icône + pour effectuer d’autres entrées.
 
-   Les membres ne peuvent communiquer avec des membres spécifiés que lorsque leur limite a été atteinte.
+   Les membres ne peuvent atteindre que les membres spécifiés lorsque leur limite a été atteinte.
 
-   La valeur par défaut n’est pas destinataire de messagerie.
+   La valeur par défaut n’est pas un destinataire de messagerie.
 
-Remarque : La configuration par défaut génère une limite de 10 publications en une heure.
+Remarque : La configuration par défaut génère une limite de 10 publications sur une période d’une heure.
