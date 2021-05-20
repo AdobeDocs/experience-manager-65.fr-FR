@@ -9,15 +9,14 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 role: Business Practitioner, Administrator
-feature: Workflow,Asset Management,Renditions
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Workflow,Gestion des ressources,Rendus
+exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1374'
 ht-degree: 89%
 
 ---
-
 
 # Profils de traitement des métadonnées, des images et des vidéos{#profiles-for-processing-metadata-images-and-videos}
 
@@ -46,7 +45,7 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 
 >[!NOTE]
 >
->S’applique à *Dynamic Media - mode Scene7* uniquement dans AEM 6.4.6.0 ou version ultérieure.
+>S’applique à *Dynamic Media - mode Scene7* uniquement dans AEM version 6.4.6.0 ou ultérieure.
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de traitement existant que vous avez modifié ultérieurement.
 
@@ -94,18 +93,18 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 ### Réglage de la taille du lot du workflow de retraitement {#adjusting-load}
 
-(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille de lot optimale est régie par la taille moyenne des fichiers et les types MIME de fichiers sur lesquels le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. Par conséquent, la bannière de traitement reste plus longtemps sur AEM Assets. Cependant, si la taille de fichier moyenne est inférieure ou égale à 1 Mo, Adobe recommande de définir cette valeur sur plusieurs centaines de Mo, mais de ne jamais dépasser 1 000 Mo. Si la taille de fichier moyenne est élevée (de l’ordre de quelques centaines de Mo), Adobe recommande de réduire la taille du lot jusqu’à 10.
+(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale du lot est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. Par conséquent, la bannière de traitement reste plus longtemps sur AEM Assets. Cependant, si la taille de fichier moyenne est inférieure ou égale à 1 Mo, Adobe recommande de définir cette valeur sur plusieurs centaines de Mo, mais de ne jamais dépasser 1 000 Mo. Si la taille de fichier moyenne est élevée (de l’ordre de quelques centaines de Mo), Adobe recommande de réduire la taille du lot jusqu’à 10.
 
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
-1. En Experience Manager, cliquez sur **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis cliquez sur l&#39;icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Processus > Modèles.]**
+1. Dans Experience Manager, cliquez sur **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis cliquez sur l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Processus > Modèles.]**
 1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
 
    ![Page Modèles de processus avec le workflow Scene7 : Retraiter les ressources sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Modifier.]** Un nouvel onglet de navigateur ouvre la page du modèle de processus Scene7 : Retraiter les ressources.
-1. Sur la Scene7 : Retraiter la page de processus des ressources, près du coin supérieur droit, cliquez sur **[!UICONTROL Modifier]** pour &quot;déverrouiller&quot; le processus.
-1. Dans le processus, sélectionnez le composant de transfert par lots Scene7 pour ouvrir la barre d’outils, puis cliquez sur **[!UICONTROL Configurer]** dans la barre d’outils.
+1. Sur Scene7 : Retraiter la page du workflow Ressources, près du coin supérieur droit, cliquez sur **[!UICONTROL Modifier]** pour &quot;déverrouiller&quot; le workflow.
+1. Dans le workflow, sélectionnez le composant Transfert par lots Scene7 pour ouvrir la barre d’outils, puis cliquez sur **[!UICONTROL Configurer]** dans la barre d’outils.
 
    ![Composant Transfert par lots Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -119,9 +118,9 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
    ![Boîte de dialogue des propriétés](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Télécharger par lots vers Scene7 - Propriétés des étapes]**, cliquez sur **[!UICONTROL Terminé]**.
+1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 - Propriétés des étapes]**, cliquez sur **[!UICONTROL Terminé]**.
 
-1. Dans le coin supérieur droit de la Scene7 : Retraiter la page du modèle de processus des ressources, cliquez sur **[!UICONTROL Sync]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
+1. Dans le coin supérieur droit de Scene7 : Retraiter la page du modèle de workflow des ressources, cliquez sur **[!UICONTROL Synchroniser]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
 
    ![Synchronisation du modèle de workflow](/help/assets/assets-dm/reprocess-assets1.png)
 
