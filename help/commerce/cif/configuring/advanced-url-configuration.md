@@ -8,7 +8,6 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '791'
@@ -24,7 +23,7 @@ Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-compon
 
 ## Configuration {#configuration}
 
-Pour configurer le service `UrlProvider` en fonction des exigences d&#39;optimisation du référencement et des besoins, un projet doit fournir une configuration OSGI pour la configuration &quot;CIF URL Provider configuration&quot; et configurer le service comme décrit ci-dessous.
+Pour configurer le service `UrlProvider` en fonction des exigences SEO et des besoins, un projet doit fournir une configuration OSGI pour la configuration &quot;configuration du fournisseur d’URL CIF&quot;, puis configurer le service comme décrit ci-dessous.
 
 >[!NOTE]
 >
@@ -41,7 +40,7 @@ Ce modèle configure les URL des pages de produits avec les propriétés suivant
 * **Emplacement de l’identifiant de produit** : définit l’emplacement de l’identifiant qui sera utilisé pour récupérer les données du produit. La valeur par défaut est `SELECTOR`, l’autre valeur possible étant `SUFFIX`. Dans l’exemple d’URL précédent, cela signifie que l’identifiant `chaz-kangeroo-hoodie` sera utilisé pour récupérer les données du produit.
 * **Type d’identifiant de produit** : définit le type de l’identifiant à utiliser lors de la récupération des données de produit. La valeur par défaut est `URL_KEY`, l’autre valeur possible étant `SKU`. Avec l’exemple d’URL précédent, cela signifie que les données de produit seront récupérées avec un filtre GraphQL Magento tel que `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
 
-### Modèle d’URL de page de Liste de produits {#product-list}
+### Modèle d’URL de page de liste de produits {#product-list}
 
 Ce modèle configure les URL des pages de listes de catégories ou de produits avec les propriétés suivantes :
 
@@ -65,7 +64,7 @@ Les réécritures d’URL peuvent également être archivées en utilisant le se
 
 ## Exemple
 
-Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) comprend des exemples de configuration afin de démontrer l’utilisation d’URL personnalisées pour les pages de produits et de catégories. Cela permet à chaque projet de configurer des modèles d’URL individuels pour les pages de produits et de catégories en fonction de leurs besoins d’optimisation du référencement. Une combinaison de mappages `UrlProvider` et Sling CIF telle que décrite ci-dessus est utilisée.
+Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) comprend des exemples de configuration afin de démontrer l’utilisation d’URL personnalisées pour les pages de produits et de catégories. Cela permet à chaque projet de configurer des modèles d’URL individuels pour les pages de produits et de catégories en fonction de leurs besoins SEO. Une combinaison de mappages `UrlProvider` et Sling CIF telle que décrite ci-dessus est utilisée.
 
 >[!NOTE]
 >
