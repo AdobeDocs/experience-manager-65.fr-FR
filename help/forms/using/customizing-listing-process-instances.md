@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: b27ffe92-8491-43a0-bf42-613eb39a606e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 88%
 
 ---
-
 
 # Personnalisation de la liste des instances de processus {#customizing-the-listing-of-process-instances}
 
@@ -70,7 +69,7 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
 
 **Exemple:**
 
-Pour afficher la propriété `description` de l’instance de processus dans la carte de l’instance de processus, effectuez les étapes suivantes.
+Pour afficher la propriété `description` de l’instance de processus dans la carte de l’instance de processus, procédez comme suit.
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Procédez comme suit :
