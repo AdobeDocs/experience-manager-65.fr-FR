@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3911'
 ht-degree: 98%
 
 ---
-
 
 # Prise en charge des scripts pour les formulaires HTML5 {#scripting-support-for-html-forms}
 
@@ -49,7 +48,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td><code>newtext</code></td>
    <td>Indique le contenu du champ une fois qu’il a été modifié suite aux actions de l’utilisateur.</td>
-   <td><p>La propriété <code>newText</code> ne fonctionne pas correctement dans les cas suivants :</p>
+   <td><p>La propriété <code>newText</code> ne fonctionne pas correctement pour les cas suivants :</p>
     <ul>
      <li>Lorsque vous sélectionnez des textes de remplacement</li>
      <li>Lorsque vous supprimez, copiez et collez des textes</li>
@@ -64,7 +63,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>change</td>
    <td>Indique la valeur saisie ou collée par un utilisateur dans un champ immédiatement après avoir effectué une opération. </td>
-   <td><p>La propriété change ne fonctionne pas correctement dans les cas suivants :</p>
+   <td><p>La propriété de modification ne fonctionne pas correctement dans les cas suivants :</p>
     <ul>
      <li>Lorsque vous sélectionnez des textes de remplacement</li>
      <li>Lorsque vous supprimez, copiez et collez des textes</li>
@@ -456,7 +455,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>validate</td>
+   <td>valider</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
    <td>Aucune</td>
   </tr>
@@ -584,7 +583,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody>
 </table>
 
-## fill  {#fill}
+## fill {#fill}
 
 <table>
  <tbody>
@@ -706,7 +705,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody>
 </table>
 
-## draw  {#draw}
+## draw {#draw}
 
 <table>
  <tbody>
@@ -721,7 +720,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td> </td>
   </tr>
   <tr>
-   <td>légende</td>
+   <td>caption</td>
    <td>L’objet caption décrit un libellé descriptif associé à un objet de conception de formulaire.</td>
    <td> </td>
   </tr>
@@ -743,7 +742,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody>
 </table>
 
-## coin {#corner}
+## corner {#corner}
 
 <table>
  <tbody>
@@ -872,7 +871,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody>
 </table>
 
-## textEdit  {#textedit}
+## textEdit {#textedit}
 
 <table>
  <tbody>
@@ -949,12 +948,12 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>légende</td>
+   <td>caption</td>
    <td>L’objet caption décrit un libellé descriptif associé à un objet de conception de formulaire.<br /> </td>
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>validate</td>
+   <td>valider</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
    <td>Aucune</td>
   </tr>
@@ -1018,7 +1017,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
  </tbody>
 </table>
 
-## border {#border}
+## bordure {#border}
 
 <table>
  <tbody>
@@ -1116,7 +1115,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 FormCalc est un langage spécifique à XFA pour la création d’une logique relative aux formulaires électroniques et de racines de calcul. FormCalculation fournit un puissant ensemble de fonctions de création.
 
-### Fonctions FormCalc prises en charge  {#formcalc-supported-functions}
+### Fonctions FormCalc prises en charge {#formcalc-supported-functions}
 
 ### Prise en charge des expressions de FormCalc {#formcalc-expression-support}
 
@@ -1159,12 +1158,12 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
   <tr>
    <td>pour</td>
    <td><br type="_moz" /> </td>
-   <td>pour i = 100 downto 1 <br /> do s = s + i endfor</td>
+   <td>pour i = 100 vers 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>for each</td>
    <td><br type="_moz" /> </td>
-   <td>pour chaque i in (1, 2, 3) <br /> do s = s + i endfor</td>
+   <td>pour chaque i dans (1, 2, 3) <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>déclaration de la fonction</td>
@@ -1258,12 +1257,12 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
   </tr>
   <tr>
    <td>console.println()</td>
-   <td>Cette API Acrobat vide la sortie vers la console JavaScript.</td>
+   <td>Cette API Acrobat vide la sortie dans la console JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.alert()</td>
-   <td>Cette API Acrobat envoie un message d’alerte par le biais de la fenêtre contextuelle JavaScript.</td>
+   <td>Cette API Acrobat envoie un message d’alerte via la fenêtre contextuelle JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1329,7 +1328,7 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
   <tr>
    <td>app.formsVersion</td>
    <td>Numéro de version du logiciel de la visionneuse de formulaires. Vérifiez cette propriété pour déterminer si des objets, des propriétés ou des méthodes dans les versions plus récentes du logiciel sont disponibles si vous souhaitez préserver la compatibilité ascendante dans vos scripts.</td>
-   <td>11.001 toujours.</td>
+   <td>Toujours 11.001.</td>
   </tr>
   <tr>
    <td>app.language</td>
