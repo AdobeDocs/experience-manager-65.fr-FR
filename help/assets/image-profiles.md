@@ -1,22 +1,21 @@
 ---
 title: Profils d’image Dynamic Media
-description: Créez des profils d’image qui contiennent des paramètres de masquage flou et de recadrage intelligent ou d’échantillon dynamique, ou les deux, puis appliquez le profil à un dossier de fichiers d’image.
+description: Créez des profils d’image qui contiennent des paramètres pour le masquage flou et le recadrage intelligent ou l’échantillon intelligent, ou les deux, puis appliquez le profil à un dossier de ressources d’image.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
-feature: Image Profiles
+feature: Profils d’image
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2761'
 ht-degree: 97%
 
 ---
-
 
 # Profils d’image Dynamic Media {#image-profiles}
 
@@ -105,7 +104,7 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
  </tbody>
 </table>
 
-L’accentuation est décrite dans [Accentuation des images](/help/assets/assets/sharpening_images.pdf).
+L’accentuation est décrite dans [Accentuation des images](/help/assets/assets/sharpening_images.pdf.
 
 ## Création de profils d’image Dynamic Media {#creating-image-profiles}
 
@@ -277,7 +276,7 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
 
 
-1. Près du coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer.]**, puis sur **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
+1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer.]** puis appuyez sur **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
 
 ## Suppression d’un profil d’image d’un dossier {#removing-an-image-profile-from-folders}
 
