@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 91%
 
 ---
-
 
 # Conversion de fichiers à l’aide de PDF Generator{#converting-files-using-pdf-generator}
 
@@ -68,7 +67,7 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 >* la conversion de fichiers HTML au format PDF requiert certaines polices dans le répertoire des polices système. Sur les systèmes Linux, Solaris et AIX, le répertoire des polices système doit contenir la police Courier. Sur les systèmes Windows, le répertoire des polices système doit contenir Times New Roman.
    >
    >
-* (Système UNIX uniquement) L’une des polices japonaises suivantes doit être disponible sur le serveur AEM Forms pour convertir une page Web contenant une police japonaise en document PDF.
+* (Système UNIX uniquement) L’une des polices japonaises suivantes doit être disponible sur le serveur AEM Forms pour convertir une page web avec une police japonaise en document PDF.
    >
    >  
 * &quot;Sazanami Gothic&quot;
@@ -120,7 +119,7 @@ Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comm
 
    La durée de conversion affichée une fois le fichier converti peut être supérieure à la valeur spécifiée ici. En effet, elle inclut le temps passé à attendre le thread ou le processus, la durée de conversion du fichier et le temps pris par le convertisseur de secours (le cas échéant). time. La valeur du paramètre Spécifier un délai d’expiration ne reflète que le temps de conversion du fichier.
 
-1. (Facultatif) Dans l’option **Spécifier le profil de contrôle en amont personnalisé**, cliquez sur Parcourir et sélectionnez un [profil de contrôle en amont personnalisé](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont ne sont utilisés que lors de la conversion de documents au format d’archive PDF (PDF/A).
+1. (Facultatif) Dans l’option **Spécifiez le profil de contrôle en amont personnalisé**, cliquez sur Parcourir, puis sélectionnez un [profil de contrôle en amont personnalisé](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont ne sont utilisés que lors de la conversion de documents au format d’archive PDF (PDF/A).
 1. Cliquez sur Exporter. Lorsque la conversion est terminée, un lien renvoyant au fichier exporté s’affiche.
 1. Cliquez sur ce lien pour afficher le fichier converti.
 
@@ -140,4 +139,3 @@ PDF Generator permet de réduire la taille des fichiers PDF.
    * Pour utiliser un fichier de paramètres existant, sélectionnez Télécharger le fichier de paramètres et cliquez sur Parcourir pour accéder au fichier.
 
 1. Cliquez sur Créer.
-
