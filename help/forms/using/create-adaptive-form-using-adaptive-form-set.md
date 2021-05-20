@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 75%
 
 ---
-
 
 # Créer un formulaire adaptatif à l’aide d’un jeu de formulaires adaptatifs{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
@@ -56,7 +55,7 @@ Par exemple, vos clients remplissent le formulaire de demande. Les deux premiers
 </afData>
 ```
 
-Vous ajoutez un autre formulaire à la demande qui permet aux clients de remplir leur adresse professionnelle. Le schéma racine du formulaire enfant est`officeAddress` . Appliquez `bindref` `/application/officeAddress` ou `/officeAddress`. Si `bindref` n’est pas fourni, le formulaire enfant est ajouté comme sous-arborescence `officeAddress`. Consultez le XML du formulaire ci-dessous :
+Vous ajoutez un autre formulaire à la demande qui permet aux clients de remplir leur adresse professionnelle. Le schéma racine du formulaire enfant est`officeAddress` . Appliquez `bindref` `/application/officeAddress` ou `/officeAddress`. Si `bindref` n’est pas fourni, le formulaire enfant est ajouté comme sous-arborescence `officeAddress`. Voir le XML du formulaire ci-dessous :
 
 ```xml
 <afData>
@@ -76,7 +75,7 @@ Vous ajoutez un autre formulaire à la demande qui permet aux clients de remplir
 </afData>
 ```
 
-Si vous insérez un autre formulaire qui permet à vos clients de fournir l’adresse du domicile, appliquez `bindref` `/application/houseAddress or /houseAddress.`Le code XML ressemble à ce qui suit :
+Si vous insérez un autre formulaire qui permet à vos clients de fournir l&#39;adresse du domicile, appliquez `bindref` `/application/houseAddress or /houseAddress.`Le XML ressemble à ceci :
 
 ```xml
 <afData>
@@ -102,7 +101,7 @@ Si vous insérez un autre formulaire qui permet à vos clients de fournir l’ad
 
 Si vous souhaitez conserver le même nom de sous-racine que la racine du schéma ( `Address`dans cet exemple), utilisez des bindrefs indexés.
 
-Par exemple, appliquez les bindrefs `/application/address[1]` ou `/address[1]` et `/application/address[2]` ou `/address[2]`. Le XML du formulaire est :
+Par exemple, appliquez des bindrefs `/application/address[1]` ou `/address[1]` et `/application/address[2]` ou `/address[2]`. Le XML du formulaire est :
 
 ```xml
 <afData>
@@ -141,9 +140,8 @@ Vous pouvez ajouter plusieurs fois un formulaire adaptatif en tant que formulair
 Effectuez les étapes suivantes pour ajouter un formulaire adaptatif en tant que formulaire enfant à l’aide de l’explorateur de ressources.
 
 1. Ouvrez le formulaire parent en mode de modification.
-1. Dans la barre latérale, cliquez sur **Assets** ![assets-browser](assets/assets-browser.png). Sous Ressources, sélectionner **Formulaire adaptatif** dans la liste déroulante.
+1. Dans la barre latérale, cliquez sur **Ressources** ![assets-browser](assets/assets-browser.png). Sous Ressources, sélectionner **Formulaire adaptatif** dans la liste déroulante.
    [ ![Sélection d’un formulaire adaptatif dans Ressources](assets/asset.png)](assets/asset-1.png)
 
 1. Glissez et déposez le formulaire adaptatif que vous souhaitez ajouter en tant que formulaire enfant.
    [ ![Faites glisser et déposez le formulaire adaptatif dans votre ](assets/drag-drop.png)](assets/drag-drop-1.png)site. Le formulaire adaptatif que vous déposez est ajouté en tant que formulaire enfant.
-
