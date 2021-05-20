@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 97%
 
 ---
-
 
 # Gestion des catégories affichées dans Workspace {#managing-the-categories-displayed-in-workspace}
 
@@ -24,9 +23,9 @@ Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent d
 
 Lorsque vous spécifiez des noms de catégorie, vous devez les créer afin qu’ils s’affichent correctement dans le volet de navigation de Workspace. Par défaut, le volet de navigation gauche a une largeur fixe de 210 pixels, soit environ 24 caractères. Si le nom de catégorie que vous indiquez est trop long pour tenir dans la largeur définie du volet de navigation gauche, ce nom est tronqué. Le nom complet ne s’affiche que si le pointeur de la souris est posé dessus. Evitez d’utiliser des noms de catégorie qui seront tronqués. Les deux exemples suivants illustrent les noms de catégories qui conviennent et ceux qui sont tronqués :
 
-**nom de la catégorie qui convient:** Présence et absence
+**Nom de catégorie qui convient :** Attente et absence
 
-**nom de la catégorie tronquée :** Présence et absence (Etats-Unis)
+**Nom de catégorie tronqué :** Participation et sortie (États-Unis)
 
 Dans Workspace, les processus d’une catégorie s’affichent en général sous forme de cartes dans la page Démarrer le processus. En général, l’écran peut afficher six cartes pour une catégorie avant que l’utilisateur ne doive le faire défiler afin de visualiser les autres cartes. Comme le défilement de l’écran rend la recherche d’un processus plus difficile, pensez à limiter chaque catégorie à six processus ou, en fonction de votre résolution, au nombre de processus susceptibles d’être affichés à l’écran sans avoir recours au défilement.
 
@@ -53,4 +52,3 @@ Vous ne pouvez supprimer que les catégories que vous n’utilisez pas.
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des catégories.
 1. Dans la page Gestion des catégories, cochez la case correspondant à la catégorie à supprimer, puis cliquez sur Supprimer. Cette catégorie n’est plus affichée.
-
