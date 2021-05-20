@@ -1,8 +1,8 @@
 ---
 title: Publication de ressources sur Brand Portal
 seo-title: Publication de ressources sur Brand Portal
-description: Découvrez comment publier et annuler la publication de fichiers sur le portail des marques.
-seo-description: Découvrez comment publier et annuler la publication de fichiers sur le portail des marques.
+description: Découvrez comment publier des ressources et en annuler la publication sur Brand Portal.
+seo-description: Découvrez comment publier des ressources et en annuler la publication sur Brand Portal.
 uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,14 +12,13 @@ discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 61%
+source-wordcount: '373'
+ht-degree: 62%
 
 ---
-
 
 # Publication de ressources sur Brand Portal {#publish-assets-to-brand-portal}
 
@@ -37,21 +36,21 @@ Une fois la réplication réussie, vous pouvez publier des ressources, des dossi
 
    ![publish2bp-2](assets/publish2bp.png)
 
-1. Pour publier les fichiers sur le portail des marques, deux options sont disponibles :
-   * [Publication immédiate des fichiers](#publish-to-bp-now)
+1. Pour publier les ressources dans Brand Portal, deux options sont disponibles :
+   * [Publier les ressources immédiatement](#publish-to-bp-now)
    * [Publication ultérieure des ressources](#publish-to-bp-now)
 
 ## Publication immédiate des ressources {#publish-to-bp-now}
 
 Pour publier les ressources sélectionnées sur Brand Portal, effectuez l’une des opérations suivantes :
 
-* Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Ensuite, dans le menu, sélectionnez **[!UICONTROL Publier sur le portail de marque]**.
+* Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Ensuite, dans le menu, sélectionnez **[!UICONTROL Publier sur Brand Portal]**.
 
 * Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**.
 
-   1. Ensuite, à partir de **[!UICONTROL Action]** sélectionnez **[!UICONTROL Publier sur le portail de la marque]**, et dans **[!UICONTROL Planification]** sélectionnez **[!UICONTROL Maintenant]**. Cliquez sur **[!UICONTROL Next]** (Suivant).
+   1. Ensuite, à partir de **[!UICONTROL Action]** sélectionnez **[!UICONTROL Publier sur Brand Portal]**, puis, dans **[!UICONTROL Planification]** sélectionnez **[!UICONTROL Maintenant]**. Cliquez sur **[!UICONTROL Suivant]**.
 
-   2. Dans **[!UICONTROL Scope]**, confirmez votre sélection et cliquez sur **[!UICONTROL Publier sur le portail de la marque]**.
+   2. Dans **[!UICONTROL Portée]**, confirmez votre sélection et cliquez sur **[!UICONTROL Publier sur Brand Portal]**.
 
 Un message indique que les ressources ont été placées en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir les ressources publiées.
 
@@ -59,9 +58,9 @@ Un message indique que les ressources ont été placées en file d’attente pou
 
 Pour planifier la publication des ressources sur Brand Portal à une date ou une heure ultérieure :
 
-1. Une fois que vous avez sélectionné les fichiers/dossiers à publier, sélectionnez **[!UICONTROL Gérer la publication]** dans la barre d’outils située en haut de l’écran.
+1. Une fois que vous avez sélectionné les ressources/dossiers à publier, sélectionnez **[!UICONTROL Gérer la publication]** dans la barre d’outils supérieure.
 
-1. Sur la **[!UICONTROL page Gérer la publication]**, sélectionnez **[!UICONTROL Publier sur le portail de la marque]** dans **[!UICONTROL Action]** et **[!UICONTROL Plus tard]** dans **[!UICONTROL Planification]**.
+1. Sur la page **[!UICONTROL Gérer la publication]**, sélectionnez **[!UICONTROL Publier sur Brand Portal]** dans **[!UICONTROL Action]** et sélectionnez **[!UICONTROL Plus]** dans **[!UICONTROL Planification]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
@@ -73,7 +72,6 @@ Pour planifier la publication des ressources sur Brand Portal à une date ou un
 
    ![publishworkflow](assets/publishworkflow.png)
 
-Désormais, connectez-vous au portail Marques pour savoir si les fichiers publiés sont disponibles dans l’interface du portail Marque.
+Désormais, connectez-vous à Brand Portal pour voir si les ressources publiées sont disponibles dans l’interface de Brand Portal.
 
 ![bp_landing_page](assets/bp_landing_page.png)
-
