@@ -4,26 +4,25 @@ description: En savoir plus sur la prise en charge de l’accessibilité dans le
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Accessibility
+feature: Accessibilité
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 71%
+source-wordcount: '579'
+ht-degree: 72%
 
 ---
-
 
 # Accessibilité dans [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media] prend en charge les technologies d’assistance et de contrôle du clavier, telles que les lecteurs d’écran JAWS et NVDA, dans l’interface utilisateur de création.
 
-## Prise en charge de l&#39;accessibilité du clavier dans [!DNL Dynamic Media]
+## Prise en charge de l’accessibilité du clavier dans [!DNL Dynamic Media]
 
-Comme [!DNL Dynamic Media] est un module externe de [!DNL Adobe Experience Manager Assets], la plupart des commandes de clavier se comportent exactement comme dans [!DNL Experience Manager Assets]. Par exemple, le bouton `Cancel` dans [!DNL Dynamic Media] a la même mise en surbrillance que dans [!DNL Experience Manager Assets] et réagit à la clé `Spacebar` comme dans [!DNL Experience Manager Assets]. Voir [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Étant donné que [!DNL Dynamic Media] est un plug-in de [!DNL Adobe Experience Manager Assets], la plupart des commandes au clavier sont exactement identiques à celles de [!DNL Experience Manager Assets]. Par exemple, le bouton `Cancel` de [!DNL Dynamic Media] est mis en surbrillance de la même façon que dans [!DNL Experience Manager Assets] et réagit à la clé `Spacebar` comme dans [!DNL Experience Manager Assets]. Voir [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Les touches prises en charge par les éléments d&#39;interface utilisateur individuels dans [!DNL Dynamic Media] sont, dans la plupart des cas, évidentes et faciles à découvrir. Le contrôle clavier dans [!DNL Dynamic Media] est à peu près le suivant :
+Les touches prises en charge par les éléments d’interface utilisateur individuels dans [!DNL Dynamic Media] sont, dans la plupart des cas, évidentes et faciles à découvrir. Le contrôle clavier dans [!DNL Dynamic Media] est à peu près le suivant :
 
 * Possibilité d’utiliser les touches `Tab` et `Shift+Tab` pour naviguer entre les éléments interactifs de la page.
 `Tab` permet d’activer le focus d’entrée sur l’élément d’interface utilisateur suivant dans l’ordre de tabulation ; `Shift+Tab` rétablit le focus d’entrée sur l’élément d’interface utilisateur précédent.
@@ -46,23 +45,23 @@ Voir [Modification du recadrage intelligent ou de l’échantillon intelligent d
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Prise en charge des technologies d&#39;assistance dans [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
+## Prise en charge de la technologie d’assistance dans [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
 
-[!DNL Dynamic Media]Les éléments de l’interface utilisateur de fonctionnent avec des technologies d’assistance telles que les lecteurs d’écran. Par exemple, il reconnaît les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou de régions à l’aide du raccourci clavier `R`. Elle décrit également la section lors de la navigation à l’aide du raccourci clavier de la section `H`.
+[!DNL Dynamic Media]Les éléments de l’interface utilisateur de fonctionnent avec des technologies d’assistance telles que les lecteurs d’écran. Par exemple, il reconnaît les repères sur une page lorsque vous naviguez entre les repères à l’aide du raccourci clavier `D` ou des régions à l’aide du raccourci clavier `R`. Elle décrit également la section lors de la navigation à l’aide du raccourci clavier de la section `H`.
 
-## Prise en charge de l’accessibilité du clavier dans les visionneuses {#keyboard-accessibility-for-dm-viewers} [!DNL Dynamic Media]
+## Prise en charge de l’accessibilité du clavier dans les visionneuses [!DNL Dynamic Media] {#keyboard-accessibility-for-dm-viewers}
 
-Tous les composants [!DNL Dynamic Media] prêts à l’emploi des visionneuses prennent en charge l’accessibilité du clavier pour vos clients.
+Tous les composants de visionneuses [!DNL Dynamic Media] prêts à l’emploi prennent en charge l’accessibilité clavier pour vos clients.
 
-Voir [Accessibilité du clavier et navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=fr) dans le Guide de référence des visionneuses Dynamic Media.
+Voir [Accessibilité clavier et navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=fr) dans le Guide de référence des visionneuses Dynamic Media.
 
-## Prise en charge des technologies d’assistance dans les [!DNL Dynamic Media] visionneuses {#assistive-technology-support-for-dm-viewers}
+## Prise en charge de la technologie d’assistance dans les [!DNL Dynamic Media] visionneuses {#assistive-technology-support-for-dm-viewers}
 
-Tous les composants de la visionneuse [!DNL Dynamic Media] prennent en charge les rôles et attributs ARIA (Applications Internet enrichies accessibles) afin d’améliorer l’intégration avec les technologies d’assistance telles que les lecteurs d’écran.
+Tous les [!DNL Dynamic Media] composants de visionneuse prennent en charge les rôles et attributs ARIA (Accessible Rich Internet Applications) pour améliorer l’intégration aux technologies d’assistance telles que les lecteurs d’écran.
 Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=fr) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
 
 >[!MORELIKETHIS]
 >
 >* [Accessibilité pour les solutions d’Adobe](https://www.adobe.com/accessibility.html)
->* [Accessibilité dans [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
+>* [Accessibilité dans  [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
 
