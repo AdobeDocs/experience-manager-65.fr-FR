@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Correspondence Management
+exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 58%
 
 ---
-
 
 # Filigrane personnalisé dans l’aperçu de la lettre PDF{#custom-watermark-in-letter-pdf-preview}
 
@@ -27,32 +26,32 @@ Dans l’interface utilisateur de création de correspondance, les utilisateurs 
 
 Pour éviter l’utilisation non autorisée de ces données, les entreprises peuvent ajouter un filigrane à l’aperçu PDF. Le filigrane par défaut, « APERÇU », apparaît sur le PDF.
 
-Pour activer le filigrane dans la prévisualisation PDF, sélectionnez l&#39;option **[!UICONTROL Appliquer le filigrane]** Pendant la Prévisualisation dans **[!UICONTROL Configurations de Correspondence Management]** à l&#39;adresse https://&#39;[server]:[port]&#39;/system/console/configMgr.
+Pour activer le filigrane dans l’aperçu PDF, sélectionnez l’option **[!UICONTROL Appliquer le filigrane]** pendant l’aperçu dans **[!UICONTROL Configurations de Correspondence Management]** à l’adresse https://&#39;[server]:[port]&#39;/system/console/configMgr.
 
-![filigrane par défaut](assets/default-watermark.png)
+![default-watermark](assets/default-watermark.png)
 
 Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’apparence du filigrane :
 
 ## Personnalisation du filigrane dans l’aperçu PDF dans l’interface utilisateur de création de correspondance {#customizewatermark-}
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier d’applications, créez un dossier nommé **[!UICONTROL previewwatermark]** avec un chemin/une structure similaires au dossier previewwatermark dans le dossier libs :
+1. Dans le dossier d’applications, créez un dossier nommé **[!UICONTROL previewwatermark]** avec un chemin/une structure semblables au dossier previewwatermark dans le dossier libs :
 
-   1. Cliquez avec le bouton droit sur le dossier **previewwatermark** à l’emplacement suivant et sélectionnez **Noeud d’incrustation** :
+   1. Cliquez avec le bouton droit sur le dossier **previewwatermark** à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin:** /libs/fd/cm/configFiles/previewwatermark
+      **Chemin d’accès :** /libs/fd/cm/configFiles/previewwatermark
 
-      **Emplacement de l’incrustation:** /apps/
+      **Emplacement de la superposition :** /apps/
 
-      **Faire correspondre les types de noeud:** coché
+      **Faire correspondre les types de noeud :** coché
 
       >[!NOTE]
       >
-      >N&#39;apportez aucune modification à la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
+      >N’effectuez pas de modifications dans la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
       >
       >    
       >    
@@ -61,7 +60,7 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
       >    * Configurez un feature pack
 
 
-   1. Cliquez sur **OK**, puis sur **Enregistrer tout**. Le dossier **[!UICONTROL previewwatermark]** est créé dans le chemin d’accès spécifié.
+   1. Cliquez sur **OK**, puis sur **Enregistrer tout**. Le dossier **[!UICONTROL previewwatermark]** est créé dans le chemin spécifié.
 
 
 
@@ -83,11 +82,10 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
    </DDX>
    ```
 
-   Pour plus d’informations sur la personnalisation de l’aspect, du texte et de l’alignement du filigrane, voir Ajoute et suppression des filigranes et des arrière-plans dans le document [Service Assembler et référence DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
+   Pour plus d’informations sur la personnalisation de l’aspect, du texte et de l’alignement du filigrane, voir Ajout et suppression de filigranes et d’arrière-plans dans le document [Guide de référence du service Assembler et du DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) .
 
    >[!NOTE]
    >
    >Dans le fichier ddx, les références au résultat et à la source doivent rester identiques à output.pdf et input.pdf. Le nom du fichier ddx doit également rester identique.
 
 1. Cliquez sur **Enregistrer tout**.
-
