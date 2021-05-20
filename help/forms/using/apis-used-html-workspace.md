@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
-
 
 # API utilisées dans l’espace de travail AEM Forms {#apis-used-in-aem-forms-workspace}
 
@@ -146,13 +145,13 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>consult</td>
    <td>ProcessManagementTaskService</td>
-   <td>consulter</td>
+   <td>consult</td>
    <td>Elle consulte une tâche avec un autre utilisateur.</td>
   </tr>
   <tr>
    <td>claim</td>
    <td>ProcessManagementTaskService</td>
-   <td>revendication</td>
+   <td>request</td>
    <td>Elle demande une tâche disponible dans la file d’attente partagée.</td>
   </tr>
   <tr>
@@ -164,7 +163,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>lock</td>
    <td>ProcessManagementTaskService</td>
-   <td>verrouiller</td>
+   <td>lock</td>
    <td>Elle verrouille une tâche ; la tâche ne peut plus être demandée par un autre utilisateur si elle est partagée.</td>
   </tr>
   <tr>
@@ -176,7 +175,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>abandon</td>
    <td>ProcessManagementTaskService</td>
-   <td>abandonner</td>
+   <td>abandon</td>
    <td>Elle supprime une tâche.</td>
   </tr>
   <tr>
@@ -224,7 +223,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>revokeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
-   <td>cancelQueueAccess</td>
+   <td>révocationQueueAccess</td>
    <td>Elle supprime un utilisateur de la liste des utilisateurs qui ont accès à la file d’attente de l’utilisateur connecté.</td>
   </tr>
   <tr>
@@ -344,7 +343,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>rejectTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
-   <td>rejeterTâcheDeDirectReport</td>
+   <td>rejectTaskOfDirectReport</td>
    <td>Elle renvoie une tâche d’un rapport direct à l’utilisateur précédent.</td>
   </tr>
   <tr>
