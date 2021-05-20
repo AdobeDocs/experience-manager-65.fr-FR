@@ -4,7 +4,6 @@ description: AEM eCommerce aide les spécialistes du marketing à offrir des exp
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '733'
@@ -81,7 +80,7 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
   <tr>
    <td>Modèle de données normalisé</td>
    <td>Non</td>
-   <td>Oui, schéma Magento GraphQL</td>
+   <td>Oui, schéma GraphQL Magento</td>
   </tr>
   <tr>
    <td>Disponibilité</td>
@@ -120,15 +119,15 @@ La mise en œuvre d’eCommerce permet d’accéder en temps réel à des inform
 
 >[!NOTE]
 >
->Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement du commerce électronique](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement d’eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Pour plus d&#39;informations sur l&#39;extension des capacités de commerce électronique, voir [Développement de l&#39;eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
+>Pour plus d’informations sur l’extension des fonctionnalités d’eCommerce, voir [Développement d’eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Principales fonctionnalités {#main-features}
 
 AEM eCommerce fournit ce qui suit :
 
-* Un certain nombre de **composants d&#39;AEM prêts à l&#39;emploi** pour illustrer ce qui peut être réalisé pour votre projet :
+* Un certain nombre de **composants d’AEM prêts à l’emploi** pour illustrer ce qui peut être réalisé pour votre projet :
 
    * Affichage des produits
    * Panier
@@ -152,7 +151,7 @@ AEM eCommerce fournit ce qui suit :
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Utilise la capacité AEM **présenter votre contenu sur plusieurs canaux**, que ce soit sur la fenêtre complète du navigateur ou sur un périphérique mobile. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
+* Utilise la possibilité de **présenter votre contenu sur plusieurs canaux**, que ce soit sur la fenêtre de navigateur complète ou sur un appareil mobile. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 
@@ -190,8 +189,8 @@ La section [Concepts](/help/commerce/cif-classic/administering/concepts.md) couv
 * La structure est extensible.
 * La structure ne fournit pas de site prêt à l’emploi. Un certain travail de développement reste nécessaire pour adapter la structure à vos spécifications.
 
-### Pourquoi ? {#why}
+### Pourquoi ? {#why}
 
-* Fournir les mécanismes de base nécessaires pour réaliser rapidement un site de commerce électronique personnalisé.
+* Fournit les mécanismes de base nécessaires pour réaliser rapidement un site de commerce électronique personnalisé.
 * Offrir la flexibilité nécessaire pour développer un site de commerce électronique réel.
 * Illustrer les pratiques recommandées.
