@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '4757'
 ht-degree: 85%
 
 ---
-
 
 # Création et gestion des stratégies {#creating-and-managing-policies}
 
@@ -53,7 +52,7 @@ La façon dont vous interagissez avec les stratégies et les jeux de stratégies
 
 **Utilisateurs :** les utilisateurs peuvent créer, modifier et supprimer leurs stratégies personnelles. Les utilisateurs invités peuvent également créer des stratégies personnelles si l’administrateur active cette fonctionnalité.
 
-**Coordinateurs de jeux de stratégies : les coordinateurs de jeux de** stratégies peuvent créer et gérer des stratégies partagées dans les jeux de stratégies où ils sont désignés comme coordinateurs. Au sein de l’organisation, c’est généralement la personne la plus à même de créer des stratégies dans un jeu donné.
+**Coordinateurs de jeux de stratégies :**  les coordinateurs de jeux de stratégies peuvent créer et gérer des stratégies partagées dans les jeux de stratégies où ils sont désignés comme coordinateurs. Au sein de l’organisation, c’est généralement la personne la plus à même de créer des stratégies dans un jeu donné.
 
 **Administrateurs :** les administrateurs peuvent modifier les stratégies personnelles de n’importe quel utilisateur. Ils peuvent créer des stratégies partagées. Ils peuvent également créer, modifier et supprimer des jeux de stratégies et désigner des coordinateurs de jeux de stratégies.
 
@@ -145,7 +144,7 @@ Dans la zone Utilisateurs et groupes, vous spécifiez les utilisateurs autorisé
 >
 >si vous avez saisi un nom d’utilisateur invité ou une adresse électronique valide et qu’aucun résultat ne s’affiche, cela signifie que l’utilisateur n’est pas encore enregistré ou que le compte a été supprimé. Vous pouvez soit essayer d’ajouter l’utilisateur en tant qu’utilisateur invité, soit contacter votre administrateur.
 
-**Inviter un nouvel utilisateur :** pour ajouter un utilisateur invité, cliquez sur Inviter un nouvel utilisateur, entrez l’adresse électronique de l’utilisateur dans la zone qui s’affiche, puis cliquez sur Inviter. Cette option n’est disponible que si l’administrateur l’a activée. Lorsque vous ajoutez des utilisateurs invités à une stratégie, Document Security leur envoie par courrier électronique une invitation à s’enregistrer si cela n’a pas déjà été fait. Les utilisateurs doivent cliquer sur le lien dans le courrier électronique pour créer un compte, puis activer ce compte. 
+**Inviter un nouvel utilisateur :** pour ajouter un utilisateur invité, cliquez sur Inviter un nouvel utilisateur, saisissez l’adresse électronique de l’utilisateur dans la zone qui s’affiche, puis cliquez sur Inviter. Cette option n’est disponible que si l’administrateur l’a activée. Lorsque vous ajoutez des utilisateurs invités à une stratégie, Document Security leur envoie par courrier électronique une invitation à s’enregistrer si cela n’a pas déjà été fait. Les utilisateurs doivent cliquer sur le lien dans le courrier électronique pour créer un compte, puis activer ce compte. 
 
 Après leur enregistrement, les utilisateurs invités peuvent utiliser les documents protégés par une stratégie, pour lesquels ils possèdent les autorisations appropriées. Selon les fonctionnalités activées par l’administrateur, les utilisateurs externes peuvent également recevoir l’autorisation d’appliquer des stratégies à des documents, de créer, modifier et supprimer des stratégies, et d’ajouter d’autres utilisateurs externes à des stratégies.
 
@@ -171,49 +170,49 @@ Ces droits de document sont disponibles dans l’onglet Droits. Vous pouvez les 
 
 **Autorisé :** l’utilisateur est autorisé à imprimer le PDF.
 
-**Basse résolution only :** L’utilisateur est autorisé à imprimer le PDF à basse résolution.
+**Basse résolution only :** L’utilisateur est autorisé à imprimer le PDF à une résolution faible.
 
 **Modifier :** autorise l’utilisateur à modifier un document protégé par cette stratégie. Pour les fichiers Office et Pro/E, vous pouvez cocher la case Modifier pour autoriser les modifications, ou la décocher dans le cas contraire. Si vous cochez la case Afficher les droits personnalisés pour PDF, vous pouvez choisir l’une des options suivantes :
 
 **Non autorisé :** l’utilisateur n’est pas autorisé à modifier le PDF.
 
-**Any:** User peut modifier le PDF.
+**N’importe quel :** l’utilisateur peut modifier le PDF.
 
-**Collaboration :** l’utilisateur est autorisé à collaborer avec d’autres utilisateurs, à l’aide des options de collaboration dans Adobe Acrobat. Cette autorisation permet à l’utilisateur de copier les données d’un formulaire, même si l’autorisation Copier n’est pas explicitement donnée dans la stratégie.
+**Collaborer :** l’utilisateur est autorisé à collaborer avec d’autres utilisateurs à l’aide des options Collaborer d’Adobe Acrobat. Cette autorisation permet à l’utilisateur de copier les données d’un formulaire, même si l’autorisation Copier n’est pas explicitement donnée dans la stratégie.
 
-**Modifier les pages :** l’utilisateur est autorisé à ajouter et supprimer des pages et à modifier le contenu du PDF.
+**Modifier les pages :** l’utilisateur est autorisé à ajouter et supprimer des pages et à modifier du contenu dans le PDF.
 
-**Fill &amp; Sign:** L’utilisateur est autorisé à remplir les champs de formulaire du PDF et à le signer.
+**Fill &amp; Sign :** l’utilisateur est autorisé à remplir les champs de formulaire du PDF et à le signer.
 
 **Copier :** autorise l’utilisateur à copier du texte d’un document protégé par cette stratégie.
 
-**Reader d’écran :** cette autorisation s’affiche si vous cochez la case Afficher les autorisations personnalisées pour PDF. Lorsque cette option est sélectionnée, Adobe Acrobat a l’autorisation d’ajouter des balises temporaires sur le PDF pour améliorer sa lisibilité sur un lecteur d’écrans.
+**Reader d’écran :** cette autorisation s’affiche si vous cochez la case Afficher les autorisations personnalisées pour PDF . Lorsque cette option est sélectionnée, Adobe Acrobat a l’autorisation d’ajouter des balises temporaires sur le PDF pour améliorer sa lisibilité sur un lecteur d’écrans.
 
 Ces droits de document sont disponibles dans l’onglet Options. Vous pouvez les appliquer aux fichiers PDF, PTC Pro/E et Microsoft Office :
 
-**Hors connexion :** autorise l’utilisateur à vue hors connexion d’un document protégé par cette stratégie.
+**Hors ligne :** autorise l’utilisateur à afficher hors ligne un document protégé par cette stratégie.
 
-**Validité des autorisations :** sélectionnez Autorisations toujours valides ou définissez une période de validité des autorisations document. Si vous sélectionnez une période de validité, cliquez sur les icônes de calendrier pour sélectionner une date et utilisez les flèches pour spécifier l’heure au format 24 heures. 
+**Validité des autorisations :** sélectionnez Autorisations toujours valides ou définissez une période de validité pour les autorisations de document. Si vous sélectionnez une période de validité, cliquez sur les icônes de calendrier pour sélectionner une date et utilisez les flèches pour spécifier l’heure au format 24 heures. 
 
 Pour les stratégies partagées, les administrateurs peuvent désactiver les privilèges de l’éditeur (l’utilisateur qui applique la stratégie à un document) ci-dessous :
 
-**Révoquer :** autorise l’éditeur du document à révoquer les privilèges d’accès au document.
+**Révoquer :** autorise l’éditeur à révoquer les privilèges d’accès au document.
 
-**Switch :** autorise l’éditeur de document à changer de privilèges de stratégie.
+**Basculer :** autorise l’éditeur à changer de privilèges de stratégie.
 
 ### Paramètres généraux {#general-settings}
 
 La zone Paramètres généraux contient les paramètres suivants :
 
-**Période de validité :** période pendant laquelle le document protégé par une stratégie est accessible aux destinataires autorisés. Plusieurs périodes de validité sont proposées :
+**Période de validité :**  période pendant laquelle le document protégé par une stratégie est accessible aux destinataires autorisés. Plusieurs périodes de validité sont proposées :
 
-**Le document ne sera pas valide après :** Le document est accessible pendant le nombre de jours spécifié à partir du moment où le document a été sécurisé.
+**Le document ne sera pas valide après :** le document est accessible pendant le nombre de jours spécifié à partir du moment où il a été protégé.
 
-**Le document ne sera pas valide après cette date :** Le document est valide à partir de la date d’application de la stratégie au document jusqu’à la date de fin spécifiée.
+**Le document ne sera pas valide après cette date :**  le document est valide à partir de la date d’application de la stratégie au document jusqu’à la date de fin spécifiée.
 
-**Valide de, à:** Le document est valide pendant les dates spécifiées. Le cas échéant, vous pouvez utiliser le calendrier pour sélectionner une date. Pour ce faire, cliquez sur l’icône de calendrier.
+**Valide de, à :** le document est valide pendant les dates que vous avez spécifiées. Le cas échéant, vous pouvez utiliser le calendrier pour sélectionner une date. Pour ce faire, cliquez sur l’icône de calendrier.
 
-**Document toujours valide :** la période de validité du document n’expire pas.
+**Document toujours valide :**  la période de validité du document n’expire pas.
 
 >[!NOTE]
 >
@@ -227,7 +226,7 @@ La zone Paramètres généraux contient les paramètres suivants :
 
 **Suivi des utilisations étendues :** activez ou désactivez le suivi des utilisations étendues. Document Security prend en charge le suivi des événements d’utilisateur associés aux diverses opérations réalisées sur un fichier PDF. L’objet Document Security peut être accessible à l’aide d’un script Java. Le fait de cliquer sur un bouton, un fichier multimédia en cours de lecture ou l’enregistrement d’un fichier sont quelques exemples d’événements pouvant être envoyés par un fichier PDF protégé par une stratégie. A l’aide de l’objet Document Security, vous pouvez également récupérer des informations sur l’utilisateur. Le suivi des événements peut être activé dans le serveur Document Security au niveau global ou au niveau stratégique.
 
-**Période de location hors connexion :** nombre maximal de jours pendant lesquels le destinataire peut utiliser le document protégé par une stratégie hors connexion (sans une principale connexion Internet ou réseau). A l’issue de cette période d’ouverture, le destinataire doit resynchroniser le document pour continuer à l’utiliser.
+**Période d’ouverture hors connexion :** nombre maximal de jours pendant lesquels le destinataire peut utiliser hors connexion le document protégé par une stratégie (sans connexion principale à Internet ou au réseau). A l’issue de cette période d’ouverture, le destinataire doit resynchroniser le document pour continuer à l’utiliser.
 
 ### Fournisseurs d’autorisations externes  {#external-authorization-providers}
 
@@ -237,13 +236,13 @@ Sélectionnez les fournisseurs d’authentification externe si vous en avez déj
 
 Vous pouvez remplacer les paramètres d’authentification que vous avez configuré sur le serveur et spécifier les options d’authentification pertinentes pour cette stratégie. Cochez la case Remplacer les paramètres d’authentification globaux, puis sélectionnez les options d’authentification pertinentes pour cette stratégie. Les options d’authentification suivantes sont disponibles :
 
-**Autoriser l’authentification par mot de passe par nom d’utilisateur :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification par nom d’utilisateur/mot de passe lors de la connexion au serveur.
+**Autoriser l’authentification par mot de passe du nom d’utilisateur :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification par nom d’utilisateur/mot de passe lors de la connexion au serveur.
 
 **Autoriser l’authentification Kerberos :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification Kerberos lors de la connexion au serveur.
 
-**Autoriser l’authentification de certificat client :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification de certificat lors de la connexion au serveur.
+**Autoriser l’authentification par certificat client :** sélectionnez cette option pour permettre aux applications clientes d’utiliser l’authentification par certificat lors de la connexion au serveur.
 
-**Autoriser l&#39;** authentification étendueSélectionnez pour activer l&#39;authentification étendue. Le fait de sélectionner cette option autorise les applications clientes à utiliser l’authentification étendue. L’authentification étendue fournit des processus d’authentification personnalisés et différentes options d’authentification configurées sur le serveur Document Security.
+**Autoriser l’** authentification étendue : sélectionnez cette option pour activer l’authentification étendue. Le fait de sélectionner cette option autorise les applications clientes à utiliser l’authentification étendue. L’authentification étendue fournit des processus d’authentification personnalisés et différentes options d’authentification configurées sur le serveur Document Security.
 
 Si vous remplacez les paramètres d’authentification globaux, vous pouvez choisir les options d’authentification pertinentes pour cette stratégie. Par exemple, si vous aviez activé trois options d’authentification (nom d’utilisateur et mot de passe, certificat du client et authentification étendue) sur le serveur, vous pouvez annuler ce paramètre global et sélectionnez seulement l’authentification étendue pour cette stratégie. Vous devez vous assurer que l’option d’authentification que vous sélectionnez ici est déjà configurée sur le serveur. Dans cet exemple, vous ne pouvez pas sélectionner Kerberos comme option d’authentification, car elle n’est pas configurée sur le serveur.
 
@@ -265,7 +264,7 @@ Si vous modifiez une stratégie et que l’administrateur a supprimé un filigra
 >
 >pour les stratégies qui autorisent les accès anonymes, le nom d’utilisateur et l’ID d’un utilisateur anonyme ne s’affichent pas en filigrane si vous sélectionnez ce type de filigrane.
 
-**Utiliser uniquement les modules externes Acrobat certifiés pour PDF:** lorsque cette option est sélectionnée pour une stratégie, elle spécifie que Acrobat 8.0 et les versions ultérieures doivent s’exécuter en mode certifié lors de l’ouverture de documents sécurisés par la stratégie. Lorsqu’Acrobat s’exécute en mode certifié, il n’ouvre aucun module externe tiers. 
+**Utiliser uniquement les modules externes Acrobat certifiés pour PDF :** lorsque cette option est sélectionnée pour une stratégie, elle indique qu’Acrobat 8.0 et versions ultérieures doivent s’exécuter en mode certifié lors de l’ouverture de documents sécurisés avec la stratégie. Lorsqu’Acrobat s’exécute en mode certifié, il n’ouvre aucun module externe tiers. 
 
 Sélectionnez cette option si un destinataire d’un document crée un module externe susceptible de contourner les systèmes de protection des documents dans Acrobat 8.0 et versions ultérieures. Ne la sélectionnez pas si les destinataires du document doivent utiliser des modules externes tiers dans Acrobat pour interagir avec des documents.
 
@@ -275,7 +274,7 @@ Cette option n’active le mode certifié que dans Acrobat 8.0 ou versions ult�
 
 Cette option ne concerne pas Adobe Reader.
 
-**Message d’erreur d’accès refusé : message** qui s’affiche pour quiconque tente d’ouvrir un document protégé par une stratégie sans autorisation. Ce message apparaît dans Acrobat. Les clients qui ne peuvent pas afficher ce message affichent un message par défaut pour indiquer que l’accès est refusé.
+**Message d’erreur d’accès refusé :**  message qui s’affiche pour toute personne qui tente d’ouvrir un document protégé par une stratégie sans autorisation. Ce message apparaît dans Acrobat. Les clients qui ne peuvent pas afficher ce message affichent un message par défaut pour indiquer que l’accès est refusé.
 
 ### Paramètres avancés non modifiables  {#unchangeable-advanced-settings}
 
@@ -284,10 +283,10 @@ La zone Paramètres avancés non modifiables contient les paramètres suivants 
 **Algorithme de chiffrement et longueur de clé :** utilisé pour protéger vos documents. Faites votre choix parmi les options suivantes :
 
 * AES 128 bits
-* AES 256 bits. Cette option est uniquement prise en charge par Acrobat 9.0 et versions ultérieures. Pour utiliser le chiffrement AES 256 pour les fichiers PDF, récupérez et installez les fichiers Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy. Ces fichiers remplacent les fichiers local_policy.jar et US_export_policy.jar dans le dossier [JAVE_HOME]/lib/security. Par exemple, si vous utilisez Sun JDK 1.6, copiez les fichiers téléchargés dans le dossier [dep root]/Java/jdk1.6.0_26/lib/security. Vous pouvez télécharger ces fichiers à partir de la page de [téléchargements de Java SE](https://java.sun.com/javase/downloads/index.jsp).
+* AES 256 bits. Cette option est uniquement prise en charge par Acrobat 9.0 et versions ultérieures. Pour utiliser le chiffrement AES 256 pour les fichiers PDF, récupérez et installez les fichiers Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy. Ces fichiers remplacent les fichiers local_policy.jar et US_export_policy.jar dans le dossier [JAVE_HOME]/lib/security . Par exemple, si vous utilisez Sun JDK 1.6, copiez les fichiers téléchargés dans le dossier [dep root]/Java/jdk1.6.0_26/lib/security. Vous pouvez télécharger ces fichiers à partir de la page de [téléchargements de Java SE](https://java.sun.com/javase/downloads/index.jsp).
 * Aucun chiffrement. Cette option est actuellement prise en charge par Acrobat 9.0 et versions ultérieures. Si vous sélectionnez cette option, les options Restrictions du document sont désactivées. Cette option peut s’avérer utile si vous souhaitez recourir à Document Security pour le contrôle des versions ou le suivi d’un document sans chiffrer le document.
 
-**Restrictions du document :** sélectionnez les composants du document PDF à chiffrer. D’autres applications clientes chiffrent le document entier, mais pas les fichiers liés ou incorporés. Faites votre choix parmi les options suivantes :
+**Restrictions du document :** sélectionnez les composants de document PDF à chiffrer. D’autres applications clientes chiffrent le document entier, mais pas les fichiers liés ou incorporés. Faites votre choix parmi les options suivantes :
 
 * Le document en entier, avec ses pièces jointes et ses métadonnées. Les *métadonnées* décrivent le document et son contenu, et vous pouvez les consulter dans la boîte de dialogue Propriétés du document ou à partir du menu avancé d’Acrobat. Dans Acrobat, vous pouvez joindre des fichiers de différents types (fichiers texte, audio et vidéo, par exemple) à des documents PDF.
 * Le document et ses pièces jointes, mais pas ses métadonnées.
@@ -407,4 +406,3 @@ Pour faciliter la recherche de stratégies, vous pouvez en trier la liste par en
 1. Sélectionnez un jeu de stratégies, puis cliquez sur l’onglet Stratégies.
 1. Cliquez sur l’en-tête de colonne approprié.
 1. Pour modifier l’ordre de tri, cliquez de nouveau sur l’en-tête de colonne.
-
