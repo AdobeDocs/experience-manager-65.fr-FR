@@ -8,21 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
-
 
 # Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire{#adding-information-from-user-data-to-form-submission-metadata}
 
 Vous pouvez utiliser des valeurs saisies dans un élément de votre formulaire pour calculer les champs de métadonnées d’un brouillon ou d’un envoi de formulaire. Les métadonnées vous permettent de filtrer le contenu en fonction des données utilisateur. Par exemple, un utilisateur entre John Doe dans le champ de nom du formulaire. Vous pouvez utiliser ces informations pour calculer les métadonnées pouvant classer cet envoi par catégorie sous les initiales JD.
 
-Pour calculer les champs de métadonnées avec des valeurs saisies par l’utilisateur, ajoutez les éléments de votre formulaire aux métadonnées. Lorsqu’un utilisateur saisit une valeur dans cet élément, un script utilise cette valeur pour calculer les informations. Ces informations sont ajoutées dans les métadonnées. Lorsque vous ajoutez un élément sous la forme d’un champ de métadonnées, vous fournissez la clé correspondante. La clé est ajoutée en tant que champ dans les métadonnées, et les informations calculées sont enregistrées en fonction de cette clé.
+Pour calculer les champs de métadonnées avec des valeurs saisies par l’utilisateur, ajoutez les éléments de votre formulaire aux métadonnées. Lorsqu’un utilisateur entre une valeur dans cet élément, un script utilise la valeur pour calculer les informations. Ces informations sont ajoutées dans les métadonnées. Lorsque vous ajoutez un élément sous la forme d’un champ de métadonnées, vous fournissez la clé correspondante. La clé est ajoutée en tant que champ dans les métadonnées, et les informations calculées sont enregistrées en fonction de cette clé.
 
 Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce formulaire, un champ capture l’âge des utilisateurs finaux. Le client souhaite vérifier tous les envois correspondant à une tranche d’âge spécifique après qu’un certain nombre d’utilisateurs a envoyé le formulaire. Plutôt que de parcourir toutes les données qui deviennent complexes à mesure que le nombre de formulaires augmente, des métadonnées supplémentaires aident le client. L’auteur du formulaire peut configurer quelles propriétés/données remplies par l’utilisateur final sont stockées au niveau supérieur afin de faciliter la recherche. Les métadonnées supplémentaires sont des informations remplies par l’utilisateur stockées au niveau supérieur du nœud de métadonnées, tel que configuré par l’auteur.
 
@@ -30,16 +29,16 @@ Prenons un autre exemple d’un formulaire qui capture l’ID d’adresse élect
 
 ## Ajout d’éléments de formulaire aux métadonnées {#adding-form-elements-to-metadata}
 
-Pour ajouter un élément aux métadonnées, procédez comme suit :
+Effectuez les étapes suivantes pour ajouter un élément aux métadonnées :
 
 1. Ouvrez votre formulaire adaptatif en mode d’édition.\
    Pour ouvrir le formulaire en mode d’édition, dans Forms Manager, sélectionnez le formulaire, puis appuyez sur **Ouvrir**.
-1. En mode d’édition, sélectionnez un composant, appuyez sur ![niveau champ](assets/field-level.png) > **Conteneur de formulaire adaptatif**, puis sur ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, appuyez sur ![field-level](assets/field-level.png) > **Adaptive Form Container**, puis appuyez sur ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, cliquez sur **Métadonnées**.
 1. Dans la section Métadonnées, cliquez sur **Ajouter**.
 1. Utilisez le champ Valeur de l’onglet Métadonnées pour ajouter des scripts. Les scripts que vous ajoutez collectent des données à partir d’éléments sur le formulaire et calculent les valeurs qui sont ajoutées aux métadonnées.
 
-   Par exemple, **true** est enregistré dans les métadonnées si l’âge saisi est supérieur à 21, et **false** est enregistré s’il est inférieur à 21. Vous entrez le script suivant dans l’onglet Métadonnées :
+   Par exemple, **true** est consigné dans les métadonnées si l’âge entré est supérieur à 21, et **false** est consigné s’il est inférieur à 21. Vous entrez le script suivant dans l’onglet Métadonnées :
 
    `(agebox.value >= 21) ? true : false`
 
@@ -51,7 +50,7 @@ Pour ajouter un élément aux métadonnées, procédez comme suit :
 
 Une fois qu’un utilisateur a saisi des données dans l’élément sélectionné comme champ de métadonnées, les informations calculées sont enregistrées dans les métadonnées. Vous pouvez afficher les métadonnées dans le référentiel que vous avez configuré pour stocker les métadonnées.
 
-## Affichage des métadonnées d’envoi de formulaire mises à jour : {#seeing-updated-form-nbsp-submission-metadata}
+## Affichage des métadonnées d’envoi de formulaire mises à jour : {#seeing-updated-form-nbsp-submission-metadata}
 
 Pour l’exemple ci-dessus, les métadonnées sont conservées dans le référentiel CRX. Les métadonnées présentent l’aspect suivant :
 
@@ -68,4 +67,3 @@ Vous sélectionnez le conteneur de formulaires adaptatifs et dans les propriét�
 >[!NOTE]
 >
 >L’exemple ci-dessus est fourni uniquement à des fins d’apprentissage. Assurez-vous que vous recherchez des métadonnées à l’emplacement correct, tel que configuré dans votre implémentation AEM Forms.
-
