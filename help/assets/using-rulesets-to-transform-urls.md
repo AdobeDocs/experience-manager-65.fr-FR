@@ -7,8 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 role: Business Practitioner, Administrator,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
-feature: Configuration,Rulesets
-translation-type: tm+mt
+feature: Configuration, jeux de règles
 source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
 source-wordcount: '765'
