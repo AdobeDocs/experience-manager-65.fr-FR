@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
 discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
-feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Modèle de données de formulaire
+exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
-
 
 # [!DNL AEM Forms] Intégration de données {#aem-forms-data-integration}
 
@@ -31,9 +30,9 @@ Alors qu’un système modulaire distribué a des avantages propres, le défi co
 
 ## Aperçu de l’intégration de données {#data-integration-overview}
 
-![aem-forms-data-intégration](assets/aem-forms-data-integeration.png)
+![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] L’intégration des données permet de configurer et de connecter des sources de données disparates avec  [!DNL AEM Forms]. Il fournit une interface utilisateur intuitive qui permet de créer un schéma de représentation de données unifiée des entités d’entreprise dans les sources de données connectées. La représentation unifiée est appelée modèle de données de formulaire, qui est une extension du schéma JSON. Les entités d’un modèle de données de formulaire sont appelées objets de modèle de données. Un modèle de données du formulaire vous permet d’effectuer les opérations suivantes :
+L’intégration de données [!DNL AEM Forms] permet de configurer et de connecter des sources de données disparates à [!DNL AEM Forms]. Elle fournit une interface utilisateur intuitive qui permet de créer un schéma de représentation de données unifiée des entités d’entreprise dans les sources de données connectées. La représentation unifiée est appelée modèle de données de formulaire, qui est une extension du schéma JSON. Les entités d’un modèle de données de formulaire sont appelées objets de modèle de données. Un modèle de données du formulaire vous permet d’effectuer les opérations suivantes :
 
 * Accédez aux objets de modèle de données, aux propriétés et aux services à partir de sources de données connectées.
 * Créez des objets et des propriétés de modèle de données personnalisés.
@@ -43,11 +42,11 @@ Alors qu’un système modulaire distribué a des avantages propres, le défi co
 Une fois que vous avez créé un modèle de données de formulaire, vous pouvez l’utiliser dans divers processus de formulaires adaptatifs et de communications interactives :
 
 * Créer des formulaires adaptatifs et des communications interactives basés sur le modèle de données de formulaire
-* Préremplir les formulaires adaptatifs et les communications interactives à partir de sources de données configurées
+* Préremplir des formulaires adaptatifs et des communications interactives à partir de sources de données configurées
 * Appeler des services/opérations de source de données à l’aide de règles de formulaire adaptatif
 * Écrire les données de formulaire adaptatif envoyées dans les sources de données
 
-## Prise en main de l’intégration de données  {#get-started-with-data-integration}
+## Prise en main de l’intégration de données {#get-started-with-data-integration}
 
 La première étape de l’implémentation de l’intégration de données consiste à identifier et configurer les sources de données qui stockent les informations que vous souhaitez exploiter dans les formulaires adaptatifs et les cas d’utilisation de communications interactives. Ensuite, vous créez un modèle de données de formulaire qui utilise un objet, des propriétés et des services de modèle de données provenant d’une ou de plusieurs sources de données. Vous pouvez créer des formulaires adaptatifs et des communications interactives basés sur un modèle de données de formulaire dans lequel les champs de formulaire adaptatif ou les espaces réservés dans les communications interactives sont liés aux propriétés de source de données respectives.
 
@@ -55,8 +54,7 @@ La première étape de l’implémentation de l’intégration de données consi
 
 Examinez les éléments suivants pour commencer, comprendre et implémenter l’intégration de données.
 
-* [Configurer les sources de données](../../forms/using/configure-data-sources.md)
-* [Créer un modèle de données de formulaire](../../forms/using/create-form-data-models.md)
+* [Configuration des sources de données](../../forms/using/configure-data-sources.md)
+* [Création d’un modèle de données de formulaire](../../forms/using/create-form-data-models.md)
 * [Utilisation d’un modèle de données de formulaire](../../forms/using/work-with-form-data-model.md)
 * [Utilisation d’un modèle de données de formulaire](../../forms/using/using-form-data-model.md)
-
