@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 94%
 
 ---
 
-
 # Intégration du composant Link dans une page{#embedding-link-component-in-a-page}
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Le composant Link est membre de la catégorie Document Services. Assurez-vous que la catégorie Document Services est visible dans le navigateur de composants d’AEM. Si la catégorie n’est pas répertoriée, suivez la procédure décrite à la section [Activation des composants d’un portail de formulaires](/help/forms/using/enabling-forms-portal-components.md).
 
@@ -40,16 +39,16 @@ Suivez les étapes ci-après pour ajouter un composant Link à la page :
    * **Link Tooltip** : info-bulle du lien.
    * **Modèle de mise en page** : modèle pour la mise en page du composant Link.
 
-1. Ouvrez l’onglet **Informations d’actif** et spécifiez le type d’actif. Un élément peut être un **formulaire**. Selon le type de fichier sélectionné, les options ci-dessous s’affichent : 
+1. Ouvrez l’onglet **Informations d’actif** et spécifiez le type d’actif. Une ressource peut être un **formulaire**. Selon le type de fichier sélectionné, les options ci-dessous s’affichent : 
 
    * **Chemin d’accès à l’actif** : chemin d’accès au référentiel de stockage de l’actif.
 
    * **Type de rendu** : le format de rendu : PDF, HTML ou Auto. Le type de rendu Auto détecte l’environnement de l’utilisateur et effectue le rendu du formulaire en conséquence, au format HTML ou PDF. Par exemple, si le formulaire est utilisé sur un périphérique mobile, le type de rendu Auto est effectué au format HTML.
-   * **Envoyer URL:**  URL à la servlet où les données du formulaire sont envoyées.
+   * **URL d’envoi :**  URL du servlet vers lequel les données de formulaire sont envoyées.
    * **Profil HTML** : profil de rendu du formulaire au format HTML.
    * **Profil PDF** : profil de rendu du formulaire au format PDF.
 
-1. Ouvrez l’onglet **Avancé.** Vous pouvez spécifier des paramètres supplémentaires au format de paire clé-valeur. Lorsque le lien est activé, ces paramètres supplémentaires sont transmis avec le formulaire.
+1. Ouvrez l’onglet **Avancé**. Vous pouvez spécifier des paramètres supplémentaires au format de paire clé-valeur. Lorsque le lien est activé, ces paramètres supplémentaires sont transmis avec le formulaire.
 
    Appuyez sur **Terminé** pour enregistrer la règle.
 
