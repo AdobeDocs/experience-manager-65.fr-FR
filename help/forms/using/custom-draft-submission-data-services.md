@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 80%
 
 ---
-
 
 # Personnalisation des services de données Drafts &amp; Submission {#customizing-draft-and-submission-data-services}
 
@@ -29,12 +28,12 @@ Cependant, les composants du portail AEM Forms fournissent des services de donn�
 
 Pour personnaliser le stockage des données utilisateur, vous devez implémenter les services de données [drafts](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) &amp; [submission](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
-* Activer [les composants du portail Forms](/help/forms/using/enabling-forms-portal-components.md)
-* Créer une [page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
-* Activer [les formulaires adaptatifs pour Forms Portal](/help/forms/using/draft-submission-component.md)
-* Découvrez [les détails d&#39;implémentation de l&#39;enregistrement personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Activer [Composants du portail Forms](/help/forms/using/enabling-forms-portal-components.md)
+* Créer une [page Forms Portal](/help/forms/using/creating-form-portal-page.md)
+* Activation de [formulaires adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
+* Découvrez les [détails de mise en oeuvre du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 
@@ -85,7 +84,7 @@ public interface DraftAFDataService {
 
 ## Service Submission Data   {#submission-data-service}
 
-Pour personnaliser l’enregistrement des données d’envoi des utilisateurs, vous devez fournir une implémentation pour toutes les méthodes de l’interface `SubmittedAFDataService`.
+Pour personnaliser le stockage des données d’envoi des utilisateurs, vous devez fournir une implémentation pour toutes les méthodes de l’interface `SubmittedAFDataService`.
 
 Vous trouverez une description des méthodes et de leurs arguments dans l’échantillon de code suivant de l’interface : 
 
@@ -131,4 +130,3 @@ public interface SubmittedAFDataService {
 
 }
 ```
-
