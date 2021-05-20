@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
-translation-type: tm+mt
-source-git-commit: a26bc4e4ea10370dd2fc3403500004b9e378c418
+exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 95%
 
 ---
-
 
 # Amélioration des performances du serveur d’applications{#enhancing-application-server-performance}
 
@@ -55,8 +54,8 @@ Lorsque l’administrateur du serveur d’applications détermine les paramètre
 1. Sous Domain Structure, cliquez sur Services > JDBC > Data sources, puis dans le volet de droite, cliquez sur EDC_DS.
 1. Dans l’écran suivant, cliquez sur Configuration > Connection Pool (onglet), puis saisissez une valeur dans les champs suivants :
 
-   * Capacité initiale
-   * Capacité maximale
+   * Initial Capacity
+   * Maximum Capacity
    * Augmentation de capacité
    * Statement Cache Size
 
@@ -108,7 +107,7 @@ Lorsque le contenu du document est en ligne d’entrée (c’est-à-dire qu’il
 
    >[!NOTE]
    >
-   >La valeur de la propriété Taille maximale en ligne d’entrée du Document doit être identique pour l’environnement AEM Forms on JEE et AEM Forms sur l’environnement JEE inclus dans le lot OSGi. Cette étape a mis à jour la valeur uniquement pour l’environnement AEM Forms sur JEE et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms sur JEE.
+   >La valeur de la propriété Taille maximale de la ligne d’entrée du document doit être identique pour l’environnement AEM Forms on JEE et le bundle AEM Forms on OSGi inclus dans l’environnement AEM Forms on JEE. Cette étape a mis à jour la valeur uniquement pour l’environnement AEM Forms sur JEE et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms sur JEE.
 
 1. Redémarrez le serveur d’applications à l’aide de la propriété système suivante :
 
@@ -164,7 +163,7 @@ Si vous exécutez Configuration Manager ou si vous essayez de générer le code 
    * (Linux et UNIX) `ejbdeploy.sh`
 
 1. Recherchez le paramètre `-Xmx256M` et remplacez-le par une valeur supérieure, telle que `-Xmx1024M`.
-1. Enregistrez le fichier .
+1. Enregistrez le fichier.
 1. Exécutez la commande `ejbdeploy` ou effectuez de nouveau le déploiement à l’aide de Configuration Manager.
 
 ## Amélioration des performances de Windows Server 2003 avec le protocole LDAP {#improving-windows-server-2003-performance-with-ldap}
@@ -176,13 +175,13 @@ L’utilisation du pool de connexions sur la connexion de recherche peut réduir
 ### Configuration de Windows Server pour le pool de connexion  {#configure-your-windows-server-for-connection-pooling}
 
 1. Cliquez sur Démarrer > Exécuter pour lancer l’éditeur de registre, puis dans le champ Ouvrir, tapez `regedit` et cliquez sur OK.
-1. Accéder à la clé de Registre `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+1. Accédez à la clé de registre `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. Dans le volet droit de l’éditeur de registre, recherchez le nom de valeur TcpTimedWaitDelay. Si ce nom n’apparaît pas, sélectionnez Edition > Nouveau > Valeur DWORD dans la barre de menus pour l’ajouter.
 1. Dans la zone Nom, saisissez `TcpTimedWaitDelay`
 
    >[!NOTE]
    >
-   >Si vous ne voyez pas de curseur clignotant et `New Value #` dans la zone, cliquez avec le bouton droit dans le panneau de droite, sélectionnez Renommer et, dans la zone Nom, tapez `TcpTimedWaitDelay`*.*
+   >Si vous ne voyez pas de curseur clignotant et `New Value #` dans la zone, cliquez avec le bouton droit dans le panneau de droite, sélectionnez Renommer et, dans la zone Nom, saisissez `TcpTimedWaitDelay`*.*
 
 1. Répétez l’étape 4 pour les noms de valeur MaxUserPort, MaxHashTableSize et MaxFreeTcbs.
 1. Cliquez deux fois dans le volet de droite pour définir la valeur TcpTimedWaitDelay. Sous Base, sélectionnez Décimale puis entrez `30` dans le champ Valeur.
@@ -193,4 +192,3 @@ L’utilisation du pool de connexions sur la connexion de recherche peut réduir
 >[!NOTE]
 >
 >Vous risquez de rencontrer de sérieux problèmes si vous modifiez le registre, au moyen de l’éditeur de registre ou d’une autre méthode, de façon incorrecte. Vous pourriez être obligé de réinstaller votre système d’exploitation. Modifiez le registre à vos propres risques.
-
