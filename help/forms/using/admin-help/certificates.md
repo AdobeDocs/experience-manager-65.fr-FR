@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 83%
 
 ---
-
 
 # Gestion de certificats {#managing-certificates}
 
@@ -55,7 +54,7 @@ Vous pouvez également importer et supprimer des certificats à l’aide de l’
 ## Exportation d’un certificat {#export-a-certificate}
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Certificats]**.
-1. Cliquez sur le nom d’alias du certificat à exporter. La page **[!UICONTROL Détails du certificat]** s&#39;affiche.
+1. Cliquez sur le nom d’alias du certificat à exporter. La page **[!UICONTROL Détails du certificat]** s’affiche.
 1. Cliquez sur **[!UICONTROL Exporter]**, suivez les instructions pour exporter le certificat, puis cliquez sur **[!UICONTROL OK]**.
 
 ## Modification des paramètres d’approbation et du type de Trust Store d’un certificat {#edit-a-certificate-s-trust-settings-and-trust-store-type}
@@ -71,4 +70,3 @@ Vous pouvez également importer et supprimer des certificats à l’aide de l’
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Certificats]**.
 1. Cochez les cases correspondant aux certificats à supprimer, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL OK]**.
-
