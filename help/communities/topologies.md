@@ -1,46 +1,45 @@
 ---
 title: Topologies recommandées pour Communities
 seo-title: Topologies recommandées pour Communities
-description: Comment aborder la gestion du contenu généré par l’utilisateur (UGC)
-seo-description: Comment aborder la gestion du contenu généré par l’utilisateur (UGC)
+description: Comment aborder la gestion du contenu généré par l’utilisateur
+seo-description: Comment aborder la gestion du contenu généré par l’utilisateur
 uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
-translation-type: tm+mt
-source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
+exl-id: b6658330-d862-44e3-aac0-824fb91cd087
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 7%
 
 ---
 
-
 # Topologies recommandées pour Communities {#recommended-topologies-for-communities}
 
-Depuis AEM Communities 6.1, une approche unique a été adoptée pour la gestion du contenu généré par les utilisateurs (UGC) soumis par les visiteurs du site (membres) à partir de l’environnement de publication.
+Depuis AEM Communities 6.1, une approche unique a été adoptée pour gérer le contenu généré par les utilisateurs (UGC) envoyé par les visiteurs du site (membres) à partir de l’environnement de publication.
 
-Cette approche est fondamentalement différente de la manière dont la plateforme AEM gère le contenu du site qui est généralement géré à partir de l’environnement d’auteur.
+Cette approche diffère fondamentalement de la manière dont la plateforme AEM gère le contenu du site généralement géré à partir de l’environnement de création.
 
-La plate-forme AEM utilise un magasin de noeuds qui reproduit le contenu du site de l’auteur à la publication, tandis qu’AEM Communities utilise un magasin commun unique pour UGC qui n’est jamais répliqué.
+La plateforme AEM utilise un magasin de noeuds qui reproduit le contenu du site de l’auteur à la publication, tandis qu’AEM Communities utilise un seul magasin commun pour le contenu généré par l’utilisateur qui n’est jamais répliqué.
 
-Pour le magasin UGC commun, il est nécessaire de choisir un [fournisseur de ressources d&#39;enregistrement (SRP)](working-with-srp.md). Les choix recommandés sont les suivants :
+Pour le magasin UGC commun, il est nécessaire de choisir un [fournisseur de ressources de stockage (SRP)](working-with-srp.md). Les choix recommandés sont les suivants :
 
-* [DSRP - Fournisseur de ressources d&#39;Enregistrement de données relationnelles](dsrp.md)
-* [MSRP - Fournisseur de ressources d&#39;Enregistrement MongoDB](msrp.md)
-* [ASRP - Fournisseur de ressources d&#39;Enregistrement d&#39;Adobe](asrp.md)
+* [DSRP - Fournisseur de ressources de stockage de la base de données relationnelle](dsrp.md)
+* [MSRP - Fournisseur de ressources de stockage MongoDB](msrp.md)
+* [ASRP - Fournisseur de ressources de stockage d’Adobe](asrp.md)
 
-Une autre option SRP, [JSRP - JCR Enregistrement Resource Provider](jsrp.md), ne prend pas en charge un magasin UGC commun pour l’auteur et les environnements de publication pour les deux accès.
+Une autre option SRP, [JSRP - JCR Storage Resource Provider](jsrp.md), ne prend pas en charge un magasin UGC commun pour les environnements de création et de publication pour les deux accès.
 
-Si un magasin commun est requis, les topologies suivantes sont recommandées.
+L’exigence d’un magasin commun entraîne les topologies recommandées suivantes.
 
 >[!NOTE]
 >
->Pour AEM Communities, [UGC n’est jamais répliqué](working-with-srp.md#ugc-never-replicated).
+>Pour AEM Communities, [le contenu généré par l’utilisateur n’est jamais répliqué](working-with-srp.md#ugc-never-replicated).
 >
->Lorsque le déploiement n’inclut pas [magasin commun](working-with-srp.md), l’UGC n’est visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi.
+>Lorsque le déploiement n’inclut pas un [magasin commun](working-with-srp.md), le contenu généré par l’utilisateur n’est visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi.
 
 
 >[!NOTE]
@@ -49,67 +48,67 @@ Si un magasin commun est requis, les topologies suivantes sont recommandées.
 
 ## Pour la production {#for-production}
 
-Il est essentiel de créer un magasin commun pour l&#39;UGC et, par conséquent, le déploiement sous-jacent dépend de sa capacité à soutenir un magasin commun.
+La création d’un magasin commun pour le contenu généré par l’utilisateur est essentielle, de sorte que le déploiement sous-jacent dépend de sa capacité à prendre en charge un magasin commun.
 
 Deux exemples :
 
-1. Si le volume attendu de l&#39;UGC est élevé et qu&#39;une instance MongoDB locale est possible, le choix sera alors [MSRP](msrp.md).
+1. Si le volume de contenu généré par l’utilisateur est élevé et qu’une instance MongoDB locale est possible, le choix sera [MSRP](msrp.md).
 
-1. Pour optimiser les performances du contenu de la page, le choix d&#39;une [batterie de publication](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) et [ASRP](asrp.md) permettrait une mise à l&#39;échelle optimale de l&#39;UGC avec des opérations relativement simples.
+1. Pour des performances optimales du contenu de la page, le choix d’une [ferme de publication](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) et [ASRP](asrp.md) donnerait une mise à l’échelle optimale du contenu généré par l’utilisateur avec des opérations relativement simples.
 
-Pour les deux cas, le déploiement peut être basé sur tout micronoyau OAK.
+Pour les deux, le déploiement peut être basé sur n’importe quel micronoyau OAK.
 
-Pour choisir le magasin commun approprié, réfléchissez soigneusement aux caractéristiques [uniques](working-with-srp.md#characteristics-of-srp-options) de chacun.
+Pour choisir le magasin commun approprié, prenez soigneusement en compte les [caractéristiques](working-with-srp.md#characteristics-of-srp-options) uniques de chacun.
 
-Pour plus de détails sur les micro-kernals de chêne, consultez [Déploiements recommandés](../../help/sites-deploying/recommended-deploys.md).
+Pour plus d’informations sur les microkernals Oak, consultez la page [Déploiements recommandés](../../help/sites-deploying/recommended-deploys.md).
 
 ### Ferme de publication TarMK {#tarmk-publish-farm}
 
-Lorsque la topologie est une batterie de publication, les sujets importants sont les suivants :
+Lorsque la topologie est une ferme de publication, les sujets importants sont les suivants :
 
 * [Synchronisation des utilisateurs](sync.md)
 * [Gestion des utilisateurs et des groupes d’utilisateurs](users.md)
 
 ### Recommandé : DSRP, MSRP ou ASRP {#recommended-dsrp-msrp-or-asrp}
 
-| MicroKernel | CONTENTREPOSITORY DU SITE | CONTENTREPOSITORY GÉNÉRÉ PAR L’UTILISATEUR | FOURNISSEUR DE RESSOURCES ENREGISTREMENTS | COMMON STORE |
+| MicroKernel | CONTENTREPOSITORY DU SITE | CONTENTREPOSITORY GÉNÉRÉ PAR L’UTILISATEUR | FOURNISSEUR DE RESSOURCES DE STOCKAGE | COMMON STORE |
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | quelconque | JCR | MySQL | DSRP | Oui |
 | quelconque | JCR | MongoDB | MSRP | Oui |
-| quelconque | JCR | Stockage à la demande Adobe | ASRP | Oui |
+| quelconque | JCR | Adobe du stockage sur demande | ASRP | Oui |
 
 ### JSRP {#jsrp}
 
 
-| Déploiement | CONTENTREPOSITORY DU SITE | CONTENTREPOSITORY GÉNÉRÉ PAR L’UTILISATEUR | FOURNISSEUR DE RESSOURCES ENREGISTREMENTS | COMMON STORE |
+| Déploiement | CONTENTREPOSITORY DU SITE | CONTENTREPOSITORY GÉNÉRÉ PAR L’UTILISATEUR | FOURNISSEUR DE RESSOURCES DE STOCKAGE | COMMON STORE |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | Ferme TarMK (par défaut) | JCR | JCR | JSRP | Non |
-| Grappe de chêne | JCR | JCR | JSRP | Yesfor publish environnement only |
+| Grappe Oak | JCR | JCR | JSRP | Yesfor Publish uniquement |
 
 ## Pour le développement {#for-development}
 
-Pour les environnements non productifs, [JSRP](jsrp.md) simplifie la configuration d’un environnement de développement avec une instance d’auteur et une instance de publication.
+Pour les environnements hors production, [JSRP](jsrp.md) simplifie la configuration d’un environnement de développement avec une instance d’auteur et une instance de publication.
 
-Si vous choisissez [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) pour la production, il est également possible de configurer un environnement de développement similaire à l&#39;aide d&#39;un enregistrement à la demande Adobe ou de MongoDB. Pour un exemple, voir [Comment configurer MongoDB pour la démonstration](demo-mongo.md).
+Si vous choisissez [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) pour la production, il est également possible de configurer un environnement de développement similaire à l’aide du stockage Adobe à la demande ou de MongoDB. Pour obtenir un exemple, voir [Comment configurer MongoDB pour Demo](demo-mongo.md).
 
 ## Références {#references}
 
 * [Synchronisation des utilisateurs](sync.md)
 
-   Traite de la synchronisation des données utilisateur entre les instances de batterie de publication.
+   Décrit la synchronisation des données utilisateur entre les instances de fermes de publication.
 
 * [Gestion des utilisateurs et des groupes d’utilisateurs](users.md)
 
-   Parle des rôles des utilisateurs et des groupes d’utilisateurs dans les environnements d’auteur et de publication.
+   Discute des rôles des utilisateurs et des groupes d’utilisateurs dans les environnements de création et de publication.
 
 * UGC [magasin commun](working-with-srp.md)
 
-   Décrit l’enregistrement du contenu de la communauté distinct du contenu du site.
+   Décrit le stockage du contenu de la communauté distinct du contenu du site.
 
-* [Stockages de noeuds et de données](../../help/sites-deploying/data-store-config.md)
+* [Magasins de noeuds et entrepôts de données](../../help/sites-deploying/data-store-config.md)
 
-   Essentiellement, le contenu du site est stocké dans un magasin de noeuds. Pour les ressources, une banque de données peut être configurée pour stocker des données binaires. Pour les communautés, un magasin commun doit être configuré pour sélectionner le SRP.
+   Fondamentalement, le contenu du site est stocké dans un magasin de noeuds. Pour Assets, un entrepôt de données peut être configuré pour stocker des données binaires. Pour Communities, un magasin commun doit être configuré pour sélectionner la SRP.
 
-* [Eléments Enregistrement](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Éléments de stockage](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   Décrit les deux mises en oeuvre d’enregistrement de noeud : Tar et MongoDB.
+   Décrit les deux implémentations de stockage de noeud : Tar et MongoDB.
