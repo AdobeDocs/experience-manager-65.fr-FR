@@ -9,50 +9,49 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
 
+# Point d’entrée : démarrage rapide de l’API Java de registre (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
-# Début rapide de l&#39;API Java du registre de points de terminaison (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+L’API Java Quick Start (SOAP) est disponible pour le registre des points de terminaison.
 
-Le Début rapide des API Java (SOAP) est disponible pour le Registre des points de terminaison.
+[QuickStart : Ajout d’un point de terminaison EJB à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart : Ajouter un point de terminaison EJB à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart : Ajout d’un point d’entrée SOAP à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[QuickStart : Ajouter un point de terminaison SOAP à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart : Ajout d’un point de fin Watched Folder à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[QuickStart : Ajouter un point de terminaison Watched Folder à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[QuickStart : Ajout d’un point de fin de courrier électronique à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[QuickStart : Ajouter un point de terminaison de courrier électronique à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[QuickStart : Ajout d’un point de fin Remoting à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[QuickStart : Ajouter un point de terminaison Remoting à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
-
-[QuickStart : Ajouter un point de terminaison TaskManager à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[QuickStart : Ajout d’un point de fin TaskManager à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
 [QuickStart : Modification d’un point de terminaison à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
 [QuickStart : Suppression d’un point de terminaison à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[QuickStart : Récupération des informations du connecteur de point de terminaison à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
+[QuickStart : Récupération des informations du connecteur de point d’entrée à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
-
->[!NOTE]
->
->Les débuts rapides situés dans Programmation avec AEM formulaires sont basés sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Vous ne pouvez pas utiliser de points de terminaison à l’aide d’un service Web.
+>Le démarrage rapide disponible dans Programmation avec AEM forms est basé sur Forms si vous utilisez un autre système d’exploitation, tel qu’Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## QuickStart : Ajouter un point de terminaison EJB à l’aide de l’API Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
+>[!NOTE]
+>
+>Vous ne pouvez pas utiliser de points de fin à l’aide d’un service Web.
 
-L’exemple de code Java suivant ajoute un point de terminaison EJB à un service nommé *MyApplication/EncryptDocument*. (Voir [Ajouter les points de terminaison EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
+## QuickStart : Ajout d’un point de terminaison EJB à l’aide de l’API Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
+
+L’exemple de code Java suivant ajoute un point d’entrée EJB à un service nommé *MyApplication/EncryptDocument*. (Voir [Ajout de points de fin EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
 ```java
  /*
@@ -149,9 +148,9 @@ L’exemple de code Java suivant ajoute un point de terminaison EJB à un servic
  
 ```
 
-## QuickStart : Ajouter un point de terminaison SOAP à l’aide de l’API Java {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## QuickStart : Ajout d’un point d’entrée SOAP à l’aide de l’API Java {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-L’exemple de code Java suivant ajoute un point de terminaison SOAP à un service nommé *MyApplication/EncryptDocument*. (Voir [Ajouter des points de terminaison SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+L’exemple de code Java suivant ajoute un point de terminaison SOAP à un service nommé *MyApplication/EncryptDocument*. (Voir [Ajout de points de fin SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*
@@ -249,13 +248,13 @@ L’exemple de code Java suivant ajoute un point de terminaison SOAP à un servi
  
 ```
 
-## QuickStart : Ajouter un point de terminaison Watched Folder à l’aide de l’API Java {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
+## QuickStart : Ajout d’un point de fin Watched Folder à l’aide de l’API Java {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-L’exemple de code Java suivant ajoute un point de terminaison Watched Folder à un service nommé *MyApplication/EncryptDocument*. (Voir [Ajouter les points de terminaison du dossier de contrôle](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
+L’exemple de code Java suivant ajoute un point de fin Watched Folder à un service nommé *MyApplication/EncryptDocument*. (Voir [Ajout de points de fin Watched Folder](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
->Vous devez inclure le fichier WatchedFolderEndpointConfigConstants.java dans votre projet pour compiler et exécuter le début rapide suivant. (Voir [fichier de constante de valeurs de configuration du dossier de contrôle](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>Vous devez inclure le fichier WatchedFolderEndpointConfigConstants.java dans votre projet pour compiler et exécuter le démarrage rapide suivant. (Voir [Valeurs constantes de configuration du dossier de contrôle ](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -384,13 +383,13 @@ L’exemple de code Java suivant ajoute un point de terminaison Watched Folder �
  
 ```
 
-## QuickStart : Ajouter un point de terminaison de courrier électronique à l’aide de l’API Java {#quickstart-adding-an-email-endpoint-using-the-java-api}
+## QuickStart : Ajout d’un point de fin de courrier électronique à l’aide de l’API Java {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-L’exemple de code Java suivant ajoute un point de terminaison E-mail à un service nommé *MyApplication/EncryptDocument* t. (Voir [Ajouter des points de terminaison de courriel](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
+L’exemple de code Java suivant ajoute un point de fin Email à un service nommé *MyApplication/EncryptDocument* t. (Voir [Ajout de points de fin de courrier électronique](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
->Vous devez inclure le fichier EmailEndpointConfigConstants.java dans votre projet pour compiler et exécuter le début rapide suivant. (Voir [Fichier de constante de valeurs de configuration de courriel](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>Vous devez inclure le fichier EmailEndpointConfigConstants.java dans votre projet pour compiler et exécuter le démarrage rapide suivant. (Voir [Fichier constant de valeurs de configuration des emails](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*
@@ -527,9 +526,9 @@ L’exemple de code Java suivant ajoute un point de terminaison E-mail à un ser
  
 ```
 
-## QuickStart : Ajouter un point de terminaison Remoting à l’aide de l’API Java {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
+## QuickStart : Ajout d’un point de fin Remoting à l’aide de l’API Java {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-L’exemple de code Java suivant ajoute un point de terminaison Remoting à un service nommé *MyApplication/EncryptDocument*. (Voir [Ajouter des points de terminaison distants](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
+L’exemple de code Java suivant ajoute un point de terminaison Remoting à un service nommé *MyApplication/EncryptDocument*. (Voir [Ajout de points de fin Remoting](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
 ```java
  /*
@@ -632,9 +631,9 @@ L’exemple de code Java suivant ajoute un point de terminaison Remoting à un s
  
 ```
 
-## QuickStart : Ajouter un point de terminaison TaskManager à l’aide de l’API Java {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
+## QuickStart : Ajout d’un point d’entrée TaskManager à l’aide de l’API Java {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-L’exemple de code Java suivant ajoute un point de terminaison TaskManager à un service nommé *MyApplication/EncryptDocument*. Notez que le nom de la catégorie est *EncryptProcess*. (Voir [Ajouter les points de terminaison TaskManager](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
+L’exemple de code Java suivant ajoute un point d’entrée TaskManager à un service nommé *MyApplication/EncryptDocument*. Notez que le nom de la catégorie est *EncryptProcess*. (Voir [Ajout de points de fin TaskManager](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```java
  /*
@@ -743,7 +742,7 @@ L’exemple de code Java suivant ajoute un point de terminaison TaskManager à u
 
 ## QuickStart : Modification d’un point de terminaison à l’aide de l’API Java {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-L&#39;exemple de code Java suivant modifie un point de terminaison Watched Folder. Le point de terminaison correspond au processus *MyApplication/EncryptDocument*. Le dossier de contrôle est remplacé par `C:\NewWatchedFolder`. (Voir [Modification des points de terminaison](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
+L’exemple de code Java suivant modifie un point de terminaison Watched Folder. Le point de terminaison est pour le processus *MyApplication/EncryptDocument* . Le dossier de contrôle a été remplacé par `C:\NewWatchedFolder`. (Voir [Modification des points de fin](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```java
  /*
@@ -893,7 +892,7 @@ L&#39;exemple de code Java suivant modifie un point de terminaison Watched Folde
 
 ## QuickStart : Suppression d’un point de terminaison à l’aide de l’API Java {#quickstart-removing-an-endpoint-using-the-java-api}
 
-Le code Java suivant supprime un point de terminaison EJB d’un service nommé *MyApplication/EncryptDocument*. (Voir [Suppression des points de terminaison](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
+Le code Java suivant supprime un point de terminaison EJB d’un service nommé *MyApplication/EncryptDocument*. (Voir [Suppression des points de fin](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
 ```java
  /*
@@ -1010,9 +1009,9 @@ Le code Java suivant supprime un point de terminaison EJB d’un service nommé 
  
 ```
 
-## QuickStart : Récupération des informations du connecteur de point de terminaison à l’aide de l’API Java {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
+## QuickStart : Récupération des informations du connecteur de point d’entrée à l’aide de l’API Java {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-Le code Java suivant récupère des informations sur un point de terminaison Watched Folder. Les informations sur chaque valeur de configuration sont récupérées et affichées. Cette liste de code indique si chaque valeur de configuration est obligatoire ou facultative. En outre, le nom et la valeur de chaque valeur de configuration s’affichent. (Voir [Récupération des informations du connecteur de point de terminaison](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
+Le code Java suivant récupère des informations sur un point de fin Watched Folder. Les informations sur chaque valeur de configuration sont récupérées et affichées. Cette liste de codes indique si chaque valeur de configuration est requise ou facultative. De plus, le nom et la valeur de chaque valeur de configuration s’affichent. (Voir [Récupération des informations du connecteur de point d’entrée](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ```java
  /*
@@ -1116,4 +1115,3 @@ Le code Java suivant récupère des informations sur un point de terminaison Wat
  }
  
 ```
-
