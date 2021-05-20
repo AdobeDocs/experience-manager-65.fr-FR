@@ -10,8 +10,7 @@ discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 274af114-845a-46bd-b091-802cf589687a
-feature: Asset Management,Renditions
-translation-type: tm+mt
+feature: Gestion des ressources,Rendus
 source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
 source-wordcount: '309'
@@ -25,7 +24,7 @@ La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise
 
 Avec Dynamic Media, vous disposez de plusieurs options :
 
-* Si votre site Web est hébergé sur AEM, vous souhaitez ajouter les ressources Dynamic Media directement à votre page.
+* Si votre site web est hébergé sur AEM, vous souhaitez ajouter les ressources Dynamic Media directement à votre page.
 * Si votre site web n’est pas hébergé par AEM, les possibilités suivantes s’offrent à vous :
 
    * Intégration de votre vidéo ou image à votre site web.
@@ -43,7 +42,7 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 * [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
 * [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Diffusion d’images optimisées pour un site réactif](/help/assets/responsive-site.md)
-* [Diffusion de contenu HTTP/2](/help/assets/http2.md)
+* [Diffusion de contenu HTTP/2  ](/help/assets/http2.md)
 * [Invalidation du cache CDN via Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Utilisation de jeux de règles de transformation d’URL](/help/assets/using-rulesets-to-transform-urls.md)
 
