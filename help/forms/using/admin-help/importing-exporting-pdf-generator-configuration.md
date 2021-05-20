@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 98%
 
 ---
-
 
 # Importation et exportation des fichiers de configuration de PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
 
@@ -65,4 +64,3 @@ Par défaut, PDF Generator ne convertit que le calque par défaut des fichiers A
 
 1. Dans Administration Console, sélectionnez Services > PDF Generator > Fichiers de configuration > Importer la configuration.
 1. Sélectionnez Réinitialiser la configuration pour rétablir les paramètres par défaut et cliquez sur Importer.
-
