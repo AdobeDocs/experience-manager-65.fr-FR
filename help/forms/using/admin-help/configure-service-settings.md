@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '10710'
 ht-degree: 63%
 
 ---
-
 
 # Configuration des paramètres du service {#configure-service-settings}
 
@@ -48,11 +47,11 @@ Workbench permet d’enregistrer des instances de processus au moment de l’ex�
 
 ## Paramètres du service Barcoded Forms  {#barcoded-forms-service-settings}
 
-Le service Barcoded Forms `(BarcodedFormsService)` extrait les données de code à barres des images numérisées. Ce service reçoit un formulaire à code-barres (TIFF ou PDF) en entrée, puis extrait la représentation machine des données codées par le code-barres.
+Le service Barcoded Forms `(BarcodedFormsService)` extrait les données de code-barres des images numérisées. Ce service reçoit un formulaire à code-barres (TIFF ou PDF) en entrée, puis extrait la représentation machine des données codées par le code-barres.
 
 Les paramètres ci-dessous sont disponibles pour le service Barcoded Forms.
 
-**Lecture à gauche :** lorsque cette option est sélectionnée, les images de code à barres sont numérisées horizontalement de droite à gauche.
+**Lecture à gauche :** lorsque cette option est sélectionnée, les images de code à barres sont numérisées horizontalement, de droite à gauche.
 
 **Lecture à droite :** lorsque cette option est sélectionnée, les images de code à barres sont numérisées horizontalement de gauche à droite.
 
@@ -64,23 +63,23 @@ Les paramètres ci-dessous sont disponibles pour le service Barcoded Forms.
 >
 >par défaut, tous les paramètres sont sélectionnés. Désélectionnez un paramètre uniquement si vous êtes certain qu’aucun code-barres n’apparaît sous cette forme dans vos formulaires.
 
-**Chemin d’accès au fichier de base :** chemin d’accès au fichier relatif auquel les paramètres d’entrée et de sortie par lot pour les opérations Exécuter la tâche de fichier XML et Exécuter la tâche de fichier plat sont résolus. Dans les configurations en grappe, le chemin d’accès au fichier de base doit être un emplacement de système de fichiers partagé auquel tous les noeuds de la grappe ont accès en lecture/écriture.
+**Chemin d’accès au fichier de base :**  chemin d’accès au fichier relatif auquel les paramètres d’entrée et de sortie du lot pour les opérations Run XML File Job et Run Flat File Job sont résolus. Dans les configurations en grappe, le chemin d’accès au fichier de base doit être un emplacement de système de fichiers partagé auquel tous les noeuds de la grappe ont accès en lecture/écriture.
 
-**Nom de la source de données :** nom de la source de données utilisée pour gérer les informations d’état et d’historique sur les tâches de traitement par lot. La source de données spécifiée doit prendre en charge les transactions globales (XA).
+**Nom de la source de données :** nom de la source de données utilisé pour conserver les informations d’état et d’historique concernant les tâches de traitement par lots. La source de données spécifiée doit prendre en charge les transactions globales (XA).
 
 ## Paramètres (obsolètes) du service Central Migration Bridge {#central-migration-bridge-service-settings}
 
 Le service Central migration Bridge (`CentralMigrationBridge`) appelle un sous-ensemble de fonctionnalités Adobe Central Pro Output Server (Central), qui comprend les commandes JFMERGE, JFTRANS et XMLIMPORT. Les opérations du service Central Migration Bridge vous permettent de réutiliser les actifs Central suivants dans AEM Forms :
 
 * conception de modèle (&amp;ast;.ifd)
-* modèles de sortie (&amp;ast;.mdf)
-* Fichiers de données (&amp;amp ; fichiers ast ; .dat)
+* Modèles de sortie (&amp;ast;.mdf)
+* Fichiers de données (&amp;fichiers ast;.dat)
 * Fichiers de préface (&amp;ast;.pre)
 * Fichiers de définition de données (&amp;ast;.tdf)
 
 Le paramètre ci-dessous est disponible pour le service Central Migration Bridge.
 
-**Répertoire d’installation de Central : répertoire** dans lequel Adobe Central 5.7 est installé.
+**Répertoire d’installation de Central :** répertoire dans lequel Adobe Central 5.7 est installé.
 
 ## Paramètres du service Content Repository Connector for EMC Documentum {#content-repository-connector-for-emc-documentum-service-settings}
 
@@ -88,9 +87,9 @@ Le service Content Repository Connector for EMC Documentum (`EMCDocumentumConten
 
 Le paramètre suivant est disponible pour le service Content Repository Connector for EMC Documentum.
 
-**Chemin d’accès par défaut de l’objet de lien d’actif :** portion par défaut du chemin d’accès dans le référentiel Documentum pour stocker l’objet de lien d’actif. Le chemin d’accès se compose du chemin par défaut et de l’emplacement du modèle de formulaire dans le référentiel AEM forms.
+**Asset Link Object Default Path :** la partie par défaut du chemin dans le référentiel Documentum pour stocker l’objet Asset Link. Le chemin d’accès se compose du chemin par défaut et de l’emplacement du modèle de formulaire dans le référentiel AEM forms.
 
-Par exemple, si le chemin d’accès par défaut est défini sur `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects` et que le modèle de formulaire est stocké dans un dossier `/Docbase/forms/`, l’objet de lien d’actif est stocké à l’emplacement suivant :
+Par exemple, si le chemin par défaut est défini sur `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects` et que le modèle de formulaire est stocké dans un dossier `/Docbase/forms/`, l’objet Asset Link est stocké à l’emplacement suivant :
 
 `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects/Docbase/forms/`
 
@@ -102,9 +101,9 @@ Le service Content Repository Connector for IBM FileNet vous permet de créer de
 
 Le paramètre ci-dessous est disponible pour le service Content Repository Connector for IBM FileNet.
 
-**Chemin d’accès par défaut de l’objet de lien d’actif :** portion par défaut du chemin d’accès dans le référentiel IBM FileNet pour le stockage de l’objet de lien d’actif. Le chemin d’accès se compose du chemin par défaut et de l’emplacement du modèle de formulaire dans le référentiel AEM forms.
+**Asset Link Object Default Path :** la partie par défaut du chemin dans le référentiel IBM FileNet pour le stockage de l’objet Asset Link. Le chemin d’accès se compose du chemin par défaut et de l’emplacement du modèle de formulaire dans le référentiel AEM forms.
 
-Par exemple, si le chemin d’accès par défaut est défini sur `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects` et que le modèle de formulaire est stocké dans un dossier `/Docbase/forms/`, l’objet de lien d’actif est stocké à l’emplacement suivant :
+Par exemple, si le chemin par défaut est défini sur `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects` et que le modèle de formulaire est stocké dans un dossier `/Docbase/forms/`, l’objet Asset Link est stocké à l’emplacement suivant :
 
 `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects/Docbase/forms/`
 
@@ -118,19 +117,19 @@ Les paramètres ci-dessous sont disponibles pour le service Convert PDF.
 
 **Type de transaction :** indique comment un contexte de transaction doit être propagé à une opération.
 
-**Obligatoire :** prend en charge un contexte de transaction s&#39;il en existe un ; sinon, un nouveau contexte de transaction est créé. Il s’agit de la valeur par défaut.
+**Obligatoire :**  prend en charge un contexte de transaction s’il en existe un ; dans le cas contraire, un nouveau contexte de transaction est créé. Il s’agit de la valeur par défaut.
 
-**Nécessite : crée** toujours un contexte de transaction. Si un contexte de transaction actif existe, il est suspendu.
+**Nécessite :** crée toujours un contexte de transaction. Si un contexte de transaction actif existe, il est suspendu.
 
-**Délai d&#39;expiration du mouvement (en s) :** nombre de secondes que le fournisseur de transactions sous-jacent doit attendre avant de restaurer une transaction qui englobe cette opération. Cette valeur sera ignorée si un contexte de transaction existant est propagé. La valeur par défaut est 180.
+**Transaction Time Out (in sec) :** nombre de secondes pendant lesquelles le fournisseur de transactions sous-jacent doit attendre avant de restaurer une transaction qui termine cette opération. Cette valeur sera ignorée si un contexte de transaction existant est propagé. La valeur par défaut est 180.
 
-**Résolution de seuil pour le lissage (en ppp) : résolution** de l’image sous laquelle le lissage (ou l’anti-crénelage) est appliqué au texte, aux dessins au trait et aux images, si vous avez sélectionné les options &quot;Appliquer le lissage à&quot; pour ces éléments.
+**Résolution du seuil pour le lissage (en ppp) :**  résolution de l’image sous laquelle le lissage (ou anti-crénelage) est appliqué au texte, aux dessins au trait et aux images, si vous avez sélectionné les options &quot;Appliquer le lissage à&quot; pour ces éléments.
 
-**Apply smoothing to text:** Contrôle le lissage du texte. Pour désactiver le lissage du texte et rendre le texte plus net et plus facile à lire à l’aide d’un agrandisseur d’écran, désélectionnez cette case.
+**Appliquer le lissage au texte :** contrôle le lissage du texte. Pour désactiver le lissage du texte et rendre le texte plus net et plus facile à lire à l’aide d’un agrandisseur d’écran, désélectionnez cette case.
 
-**Apply smoothing to LineArt:** Applique le lissage pour supprimer les angles abrupts dans les lignes.
+**Apply smoothing to LineArt :** applique le lissage pour supprimer les angles brusques des lignes.
 
-**Apply smoothing to images:** Applique le lissage afin de minimiser les modifications brusques des images.
+**Apply smoothing to images :** applique le lissage pour minimiser les modifications brusques des images.
 
 ## Paramètres du service Distiller {#distiller-service-settings}
 
@@ -138,7 +137,7 @@ Le service Distiller (`DistillerService`) convertit les fichiers PostScript, Enc
 
 Les paramètres ci-dessous sont disponibles pour le service Distiller.
 
-**Paramètres Adobe PDF :** les paramètres préconfigurés suivants sont appliqués au fichier PDF généré :
+**Paramètres Adobe PDF :**  les paramètres préconfigurés suivants sont appliqués au PDF généré :
 
 * High quality print (Haute qualité d’impression)
 * Oversized pages (Pages surdimensionnées)
@@ -152,7 +151,7 @@ Les paramètres ci-dessous sont disponibles pour le service Distiller.
 
 Vous pouvez créer des paramètres dans l’interface utilisateur de PDF Generator.
 
-**Paramètres de protection : paramètres de protection** préconfigurés appliqués aux documents PDF générés. La valeur par défaut est No Security. Vous devez créer des paramètres de protection dans l’interface utilisateur graphique de LiveCycle PDF Generator, puis saisir le paramètre voulu dans ce champ.
+**Paramètres de protection :** paramètres de protection préconfigurés appliqués aux documents PDF générés. La valeur par défaut est No Security. Vous devez créer des paramètres de protection dans l’interface utilisateur graphique de LiveCycle PDF Generator, puis saisir le paramètre voulu dans ce champ.
 
 **Taille du pool :** taille initiale du pool. Lors du déploiement du service Distiller, cette valeur permet de déterminer le nombre d’instances d’implémentation du service à créer et à affecter au pool libre en attente de demandes d’appel. Le conteneur du service peut alors répondre immédiatement aux demandes d’appel sans initialisation préalable d’une instance de service.
 
@@ -166,7 +165,7 @@ Le service Document Management (`DocumentManagementService`) permet aux processu
 
 Les paramètres ci-dessous sont disponibles pour le service Document Management.
 
-**Schéma de stockage : schéma** de la boutique dans laquelle se trouve le contenu. La valeur par défaut est workspace.
+**Schéma de magasin :**  schéma du magasin dans lequel se trouve le contenu. La valeur par défaut est workspace.
 
 **Port HTTP :** port utilisé pour accéder à Content Services (obsolète). La valeur par défaut est 8080.
 
@@ -178,33 +177,33 @@ Par exemple, un processus utilise le service Email pour envoyer un courrier éle
 
 Les paramètres ci-dessous sont disponibles pour le service Email.
 
-**Hôte SMTP :** adresse IP ou URL du serveur SMTP à utiliser pour l’envoi de courrier électronique.
+**Hôte SMTP :** adresse IP ou URL du serveur SMTP à utiliser pour l’envoi des emails.
 
-**Numéro de port SMTP :** port utilisé pour la connexion au serveur SMTP.
+**Numéro de port SMTP :** port utilisé pour se connecter au serveur SMTP.
 
-**Authentification SMTP :** sélectionnez si l’authentification de l’utilisateur est requise pour se connecter au serveur SMTP.
+**Authentification SMTP :** sélectionnez cette option si l’authentification de l’utilisateur est requise pour se connecter au serveur SMTP.
 
-**Utilisateur SMTP : nom** d’utilisateur du compte utilisateur à utiliser pour se connecter au serveur SMTP.
+**SMTP User :** nom d’utilisateur du compte utilisateur à utiliser pour se connecter au serveur SMTP.
 
 **Mot de passe SMTP :** mot de passe associé au compte utilisateur SMTP.
 
-**Sécurité du transport SMTP : protocole** de sécurité à utiliser pour la connexion au serveur SMTP :
+**SMTP Transport Security :** protocole de sécurité à utiliser pour la connexion au serveur SMTP :
 
 * Sélectionnez None si aucun protocole n’est utilisé (les données sont envoyées en clair).
 * Sélectionnez SSL si le protocole Secure Sockets Layer est utilisé.
 * Sélectionnez TLS si le protocole Transport Layer Security est utilisé.
 
-**Hôte POP3/IMAP :** adresse IP ou URL du serveur POP3 ou IMAP à utiliser pour l’envoi de courrier électronique.
+**Hôte POP3/IMAP :** adresse IP ou URL du serveur POP3 ou IMAP à utiliser pour l’envoi des emails.
 
-**Nom d’utilisateur POP3/IMAP : nom** d’utilisateur du compte utilisateur à utiliser pour se connecter au serveur POP3 ou IMAP.
+**Nom d’utilisateur POP3/IMAP :**  nom d’utilisateur du compte utilisateur à utiliser pour se connecter au serveur POP3 ou IMAP.
 
-**Mot de passe POP3/IMAP :** mot de passe associé au compte utilisateur POP3 ou IMAP.
+**Mot de passe POP3/IMAP :**  mot de passe associé au compte utilisateur POP3 ou IMAP.
 
-**Numéro de port POP3/IMAP :** port utilisé pour la connexion au serveur POP3 ou IMAP.
+**POP3/IMAP Port Number :**  port utilisé pour se connecter au serveur POP3 ou IMAP.
 
-**POP3/IMAP : protocole** à utiliser pour l’envoi et la réception de courriers électroniques.
+**POP3/IMAP :** protocole à utiliser pour envoyer et recevoir des emails.
 
-**Recevoir la sécurité du transport : protocole** de sécurité à utiliser pour la connexion au serveur SMTP :
+**Receive Transport Security :** protocole de sécurité à utiliser pour la connexion au serveur SMTP :
 
 * Sélectionnez None si aucun protocole n’est utilisé (les données sont envoyées en clair).
 * Sélectionnez SSL si le protocole Secure Sockets Layer est utilisé.
@@ -216,13 +215,13 @@ Le service Encryption (`EncryptionService`) vous donne la possibilité de chiffr
 
 Les paramètres ci-dessous sont disponibles pour le service Encryption.
 
-**Serveur LDAP par défaut auquel se connecter : nom d’** hôte du serveur LDAP utilisé pour récupérer les certificats pour le chiffrement de document.
+**Serveur LDAP par défaut auquel se connecter :** nom d’hôte du serveur LDAP utilisé pour récupérer les certificats pour le chiffrement des documents.
 
-**Port LDAP par défaut auquel se connecter : numéro de** port du serveur LDAP.
+**Port LDAP par défaut auquel se connecter :** numéro de port du serveur LDAP.
 
 **Nom d’utilisateur LDAP par défaut :** si le serveur LDAP requiert une authentification, indiquez le nom d’utilisateur à utiliser pour la connexion au serveur LDAP.
 
-**Mot de passe LDAP par défaut :** si le serveur LDAP requiert une authentification, spécifiez le mot de passe correspondant au nom d’utilisateur à utiliser pour la connexion au serveur LDAP.
+**Mot de passe LDAP par défaut :** si le serveur LDAP requiert une authentification, indiquez le mot de passe correspondant au nom d’utilisateur à utiliser pour la connexion au serveur LDAP.
 
 >[!NOTE]
 >
@@ -238,9 +237,9 @@ Les paramètres ci-dessous sont disponibles pour le service FTP.
 
 **Hôte par défaut :** adresse IP ou URL du serveur FTP.
 
-**Port par défaut : port** utilisé pour la connexion au serveur FTP. La valeur par défaut est 21.
+**Port par défaut :** port utilisé pour la connexion au serveur FTP. La valeur par défaut est 21.
 
-**Nom d’utilisateur par défaut : nom** du compte d’utilisateur que vous pouvez utiliser pour accéder au serveur FTP. Le compte utilisateur doit disposer de droits suffisants pour effectuer les opérations FTP que ce service requiert.
+**Nom d’utilisateur par défaut :** nom du compte utilisateur que vous pouvez utiliser pour accéder au serveur FTP. Le compte utilisateur doit disposer de droits suffisants pour effectuer les opérations FTP que ce service requiert.
 
 **Mot de passe par défaut :** mot de passe à utiliser avec le nom d’utilisateur spécifié pour l’authentification auprès du serveur FTP.
 
@@ -250,29 +249,29 @@ Le service Generate PDF (`GeneratePDFService`) convertit des fichiers de nombreu
 
 Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
-**Paramètres Adobe PDF :** nom des paramètres Adobe PDF préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appel d’API. Les paramètres Adobe PDF sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres Adobe PDF. Ces paramètres sont applicables uniquement aux conversions basées sur PDFMaker.
+**Paramètres Adobe PDF :** nom des paramètres Adobe PDF préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appel de l’API. Les paramètres Adobe PDF sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres Adobe PDF. Ces paramètres sont applicables uniquement aux conversions basées sur PDFMaker.
 
-**Paramètres de sécurité : nom** des paramètres de sécurité préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés dans les paramètres d’appel d’API. Les paramètres de protection sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres de protection.
+**Paramètres de sécurité :** nom des paramètres de sécurité préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appel de l’API. Les paramètres de protection sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres de protection.
 
-**Paramètres de type de fichier :** nom du paramètre de type de fichier préconfiguré à appliquer à un travail de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appel d’API. Les paramètres de type de fichier sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres de type de fichier.
+**Paramètres de type de fichier :** nom du paramètre de type de fichier préconfiguré à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appel de l’API. Les paramètres de type de fichier sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres de type de fichier.
 
 **Utiliser Acrobat WebCapture (Windows uniquement) :** lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat X Pro pour toutes les conversions HTML en PDF. La qualité des fichiers PDF produits à partir de fichiers HTML peut en être améliorée, bien que la performance puisse être légèrement plus faible. La valeur par défaut est false. 
 
-**Utiliser la conversion des images Acrobat (Windows uniquement) :** lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat X Pro pour toutes les conversions Image en PDF. Ce paramètre est utile uniquement si le mécanisme de conversion Java pur par défaut ne peut pas convertir correctement une proportion significative des images d’entrée. La valeur par défaut est false. 
+**Utiliser la conversion d’images Acrobat (Windows uniquement) :** lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat X Pro pour toutes les conversions Image en PDF. Ce paramètre est utile uniquement si le mécanisme de conversion Java pur par défaut ne peut pas convertir correctement une proportion significative des images d’entrée. La valeur par défaut est false. 
 
-**Activer les conversions AutoCAD basées sur Acrobat (Windows uniquement) :** lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat X Pro pour toutes les conversions DWG en PDF. Ce paramètre est utile uniquement si AutoCAD n’est pas installé sur le serveur ou si le mécanisme de conversion AutoCAD ne peut pas convertir correctement les fichiers.
+**Activer les conversions AutoCAD basées sur Acrobat (Windows uniquement) :**  lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat X Pro pour toutes les conversions DWG en PDF. Ce paramètre est utile uniquement si AutoCAD n’est pas installé sur le serveur ou si le mécanisme de conversion AutoCAD ne peut pas convertir correctement les fichiers.
 
-**Expressions régulières pour trouver des caractères spéciaux interdits dans le nom d’utilisateur (Windows uniquement) :** spécifie les caractères qui interfèrent avec les opérations d’Export PDF et de Optimize PDF lorsque les caractères apparaissent dans le nom d’un utilisateur.
+**Expressions régulières pour trouver les caractères spéciaux interdits dans le nom d’utilisateur (Windows uniquement) :** spécifie les caractères qui interfèrent avec les opérations d’Export PDF et de Optimize PDF lorsque les caractères apparaissent dans le nom d’un utilisateur.
 
-**Taille du pool ImageToPDF : taille** du pool du convertisseur Image en PDF par défaut (Java pur) dans le service Generate PDF. Ce paramètre contrôle le nombre maximal de conversions Image en PDF qui peuvent être exécutées simultanément par le service Generate PDF. La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs.
+**Taille du pool ImageToPDF :**  taille du pool du convertisseur Image en PDF par défaut (Java pur) dans le service Generate PDF. Ce paramètre contrôle le nombre maximal de conversions Image en PDF qui peuvent être exécutées simultanément par le service Generate PDF. La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs.
 
-**Taille du pool HTML vers PDF : taille** du pool du convertisseur HTML vers PDF dans le service Generate PDF. Ce paramètre contrôle le nombre maximal de conversions HTML en PDF qui peuvent être exécutées simultanément par le service Generate PDF. La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs.
+**Taille du pool HTML vers PDF :**  taille du pool du convertisseur HTML vers PDF dans le service Generate PDF. Ce paramètre contrôle le nombre maximal de conversions HTML en PDF qui peuvent être exécutées simultanément par le service Generate PDF. La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs.
 
-**Taille du pool OCR : taille** du pool PaperCaptureService utilisé par PDF Generator pour la reconnaissance optique des caractères. La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs. Ce paramètre n’est valide que sur les systèmes Windows.
+**Taille du pool OCR :**  taille du pool PaperCaptureService utilisé par PDF Generator pour la reconnaissance optique des caractères (OCR). La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs. Ce paramètre n’est valide que sur les systèmes Windows.
 
-**Famille de polices de secours pour les conversions HTML en PDF : nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le code HTML d’origine n’est pas disponible pour AEM serveur Forms.** Spécifiez une famille de polices si vous envisagez de convertir des pages HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales pourraient utiliser des polices non disponibles.
+**Famille de polices de secours pour les conversions HTML en PDF :**  nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le code HTML d’origine n’est pas disponible pour le serveur AEM forms. Spécifiez une famille de polices si vous envisagez de convertir des pages HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales pourraient utiliser des polices non disponibles.
 
-**Essayer de relancer Logic pour les** conversions nativesGouverne les Reprises de génération de PDF si la première tentative de conversion a échoué :
+**Retry Logic for Native** ConversionsGos La génération de PDF tente de relancer si la première tentative de conversion a échoué :
 
 **No Retry (Pas de nouvelle tentative) :**
 
@@ -307,25 +306,25 @@ Les valeurs par défaut du service Guide Utilities prennent en charge la plupart
 
 **publicPaths :** cette option a été abandonnée. Ne l’utilisez pas avec AEM forms.
 
-**pathInfoExpiryInSeconds :** intervalle après lequel expire une demande d’informations de chemin d’accès provenant d’un client. La valeur par défaut est 1.
+**pathInfoExpiryInSeconds :**  intervalle après lequel expire une demande d’informations de chemin d’accès d’un client. La valeur par défaut est 1.
 
-**nantissementExpiryInSeconds :** intervalle au bout duquel expire une demande de nantissement d’un client. La valeur par défaut est 315576000.
+**supportsExpiryInSeconds :**  intervalle après lequel expire une demande de document provenant d’un client. La valeur par défaut est 315576000.
 
-**mismatchExpiryInSeconds :** intervalle au bout duquel expire une demande de garantie d’un client, lorsque la balise d’entité (eTag) ne correspond pas. (une eTag est un en-tête de réponse HTTP). La valeur par défaut est 1.
+**mismatchExpiryInSeconds :** intervalle après lequel une demande de document provenant d’un client expire, lorsque l’eTag (balise d’entité) ne correspond pas. (une eTag est un en-tête de réponse HTTP). La valeur par défaut est 1.
 
-**guideContext : racine** du contexte de l’application Web Guides. Correspond à la valeur définie via l’application Web Guides. Par défaut, cette valeur est réglée sur /Guides/.
+**guideContext :** racine de contexte de l’application web Guides. Correspond à la valeur définie via l’application Web Guides. Par défaut, cette valeur est réglée sur /Guides/.
 
 **secureRandomAlgorithm :** algorithme à utiliser lors de la génération de clés et d’identifiants. Cette valeur est transmise à la méthode getInstance de la classe Java SecureRandom. Par défaut, cette valeur est réglée sur SHA1PRNG.
 
 **idBytes :** nombre d’octets aléatoires à utiliser pour un identifiant de clé. La valeur par défaut est 6.
 
-**macAlgorithm :** algorithme MAC (code d’authentification de message) à utiliser pour la vérification d’URL de garantie. Cette méthode est transmise à la méthode getInstance de la classe Mac. Par défaut, cette valeur est réglée sur HmacSHA1.
+**macAlgorithm :** algorithme MAC (code d’authentification de message) à utiliser pour la vérification d’URL collatérale. Cette méthode est transmise à la méthode getInstance de la classe Mac. Par défaut, cette valeur est réglée sur HmacSHA1.
 
-**macRefreshIntervalInMinutes :** durée pendant laquelle une clé est principale. Lorsqu’une clé a été active pendant cette durée, une nouvelle clé est générée. La nouvelle clé devient la clé active. La clé précédemment active est conservée pendant une durée équivalente à 10 % de l’intervalle d’actualisation. Ce comportement permet aux URL générées avec l’ancienne clé de continuer à fonctionner pendant le changement de clé. La valeur par défaut est 144000.
+**macRefreshIntervalInMinutes :** la durée pendant laquelle une clé est principale. Lorsqu’une clé a été active pendant cette durée, une nouvelle clé est générée. La nouvelle clé devient la clé active. La clé précédemment active est conservée pendant une durée équivalente à 10 % de l’intervalle d’actualisation. Ce comportement permet aux URL générées avec l’ancienne clé de continuer à fonctionner pendant le changement de clé. La valeur par défaut est 144000.
 
-**macOverlapIntervalInMinutes :** durée pendant laquelle la clé précédente reste valide après la génération d’une nouvelle clé. La valeur par défaut est 1 440 minutes (1 jour).
+**macOverlapIntervalInMinutes :**  durée pendant laquelle la clé précédente reste valide après la génération d’une nouvelle clé. La valeur par défaut est 1 440 minutes (1 jour).
 
-**macKeySeed :** valeur de base pour la génération de l’URL sécurisée. Lorsque cette valeur est une option, la clé n’est jamais actualisée. En définissant la même valeur de base sur différents serveurs, ces serveurs génèrent des URL sécurisées compatibles. Cela peut s’avérer utile lorsque plusieurs serveurs Forms sont en cours d’utilisation en même temps qu’un programme d’équilibrage de charge. Entrez une séquence aléatoire de caractères et de nombres en tant que valeur de base.
+**macKeySeed :**  valeur de départ pour la génération de l’URL sécurisée. Lorsque cette valeur est une option, la clé n’est jamais actualisée. En définissant la même valeur de base sur différents serveurs, ces serveurs génèrent des URL sécurisées compatibles. Cela peut s’avérer utile lorsque plusieurs serveurs Forms sont en cours d’utilisation en même temps qu’un programme d’équilibrage de charge. Entrez une séquence aléatoire de caractères et de nombres en tant que valeur de base.
 
 ### Utilisation des guides dans une grappe de serveurs  {#using-guides-in-a-server-cluster}
 
@@ -345,7 +344,7 @@ Le service JDBC (`JdbcService`) permet aux processus d’interagir avec des base
 
 Le paramètre ci-dessous est disponible pour le service JDBC.
 
-**datasourceName :** valeur de chaîne qui représente le nom JNDI de la source de données à utiliser pour la connexion au serveur de base de données. La source de données doit être définie sur le serveur d’applications qui héberge le serveur Forms. La valeur par défaut correspond au nom JNDI de la source de données de la base de données AEM forms.
+**datasourceName :**  valeur string qui représente le nom JNDI de la source de données à utiliser pour la connexion au serveur de base de données. La source de données doit être définie sur le serveur d’applications qui héberge le serveur Forms. La valeur par défaut correspond au nom JNDI de la source de données de la base de données AEM forms.
 
 ## Paramètres du service JMS  {#jms-service-settings}
 
@@ -355,7 +354,7 @@ Configurez le service JMS avec les propriétés par défaut pour que les opérat
 
 Les paramètres ci-dessous sont disponibles pour le service JMS.
 
-**URL du fournisseur :** URL du prestataire JNDI. La valeur par défaut est basée sur le serveur d’applications JBoss. Les URL suivantes sont les valeurs par défaut pour les serveurs d’applications pris en charge par AEM Forms :
+**URL du fournisseur :** URL du fournisseur de services JNDI. La valeur par défaut est basée sur le serveur d’applications JBoss. Les URL suivantes sont les valeurs par défaut pour les serveurs d’applications pris en charge par AEM Forms :
 
 **JBoss :**`<server name>:1099` 
 
@@ -363,23 +362,23 @@ Les paramètres ci-dessous sont disponibles pour le service JMS.
 
 **WebSphere :**`<server name>:2809`
 
-**Nom d’utilisateur JNDI : nom** d’utilisateur du compte à utiliser pour l’authentification auprès du prestataire JNDI utilisé pour rechercher les noms de file d’attente et de rubrique. La valeur par défaut est guest.
+**Nom d’utilisateur JNDI :** nom d’utilisateur du compte à utiliser pour l’authentification auprès du fournisseur de services JNDI utilisé pour rechercher les noms de file d’attente et de rubrique. La valeur par défaut est guest.
 
 **Mot de passe JNDI :** mot de passe associé au nom d’utilisateur spécifié pour le nom d’utilisateur JNDI. La valeur par défaut est guest.
 
-**Initial Context Factory : classe** Java à utiliser comme fabrique de contexte initiale. Le service JMS utilise cette classe pour créer un contexte initial qui représente le point de départ pour la résolution des noms des rubriques et des files d’attente. La valeur par défaut est la fabrique de contexte de nommage initial pour le service JMS sur JBoss. Les classes suivantes sont les fabriques de contexte de nommage initial pour les serveurs d’applications pris en charge par AEM Forms :
+**Initial Context Factory :** classe Java à utiliser comme fabrique de contexte initiale. Le service JMS utilise cette classe pour créer un contexte initial qui représente le point de départ pour la résolution des noms des rubriques et des files d’attente. La valeur par défaut est la fabrique de contexte de nommage initial pour le service JMS sur JBoss. Les classes suivantes sont les fabriques de contexte de nommage initial pour les serveurs d’applications pris en charge par AEM Forms :
 
-**JBoss:** org.jnp.interfaces.NamingContextFactory
+**JBoss :** org.jnp.interfaces.NamingContextFactory
 
-**WebLogic:** weblogic.jndi.WLInitialContextFactory
+**WebLogic :** weblogic.jndi.WLInitialContextFactory
 
-**WebSphere:** com.ibm.websphere.naming.WsnInitialContextFactory
+**WebSphere :** com.ibm.websphere.naming.WsnInitialContextFactory
 
 **Connection Username :** mot de passe associé au nom d’utilisateur spécifié pour Connection Username. La valeur par défaut est guest.
 
-**Connection Password : mot de passe associé** au nom d’utilisateur spécifié pour Connection Username. La valeur par défaut est guest.
+**Mot de passe de connexion :** mot de passe associé au nom d’utilisateur spécifié pour le nom d’utilisateur de connexion. La valeur par défaut est guest.
 
-**Autres propriétés : paires nom** de propriété et valeur que vous pouvez transmettre au prestataire JNDI. Ces propriétés dépendent de l’implémentation et de la configuration du fournisseur que vous utilisez. 
+**Autres propriétés :** paires nom-valeur de propriété que vous pouvez transmettre au fournisseur de services JNDI. Ces propriétés dépendent de l’implémentation et de la configuration du fournisseur que vous utilisez. 
 
 Les paires nom-valeur de propriétés sont séparées par des points-virgules **;**. Par exemple, le texte suivant indique la valeur qui serait spécifiée pour deux propriétés appelées name1 et name2, avec les valeurs value1 et value2, respectivement :
 
@@ -391,7 +390,7 @@ Le service LDAP (`LDAPService`) fournit des opérations permettant d’interroge
 
 Les paramètres ci-dessous sont disponibles pour le service LDAP.
 
-**Initial Context Factory : classe** Java à utiliser comme fabrique de contexte. Cette classe est utilisée pour créer une connexion au serveur LDAP. La valeur par défaut est com.sun.jndi.ldap.LdapCtxFactory ; elle est appropriée pour la plupart des serveurs LDAP.
+**Initial Context Factory :** classe Java à utiliser comme fabrique de contexte. Cette classe est utilisée pour créer une connexion au serveur LDAP. La valeur par défaut est com.sun.jndi.ldap.LdapCtxFactory ; elle est appropriée pour la plupart des serveurs LDAP.
 
 **URL du fournisseur :** URL à utiliser pour la connexion au service LDAP. Le format de la valeur est `ldap://server name:port`
 
@@ -399,19 +398,19 @@ Les paramètres ci-dessous sont disponibles pour le service LDAP.
 
 *port* est le port de communication que le service LDAP utilise. La valeur par défaut est 389 ; elle représente le port standard utilisé pour les connexions LDAP.
 
-**Nom d’utilisateur : nom** d’utilisateur du compte d’utilisateur à utiliser pour se connecter au serveur LDAP. Le compte utilisateur doit disposer d’une autorisation pour se connecter au serveur et lire les informations contenues dans le répertoire LDAP. 
+**Nom d’utilisateur :** nom d’utilisateur du compte utilisateur à utiliser pour se connecter au serveur LDAP. Le compte utilisateur doit disposer d’une autorisation pour se connecter au serveur et lire les informations contenues dans le répertoire LDAP. 
 
 Selon le serveur LDAP, le nom d’utilisateur peut être un nom d’utilisateur simple tel que `myname` ou un nom unique, tel que `cn=myname,cn=users,dc=myorg`.
 
 **Mot de passe :** mot de passe correspondant au nom d’utilisateur fourni pour le paramètre Nom d’utilisateur.
 
-**Autres propriétés :** valeur de chaîne qui représente d’autres propriétés et leurs valeurs correspondantes que vous pouvez fournir au serveur LDAP. La valeur utilise le format suivant :
+**Autres propriétés :** valeur string qui représente d’autres propriétés et leurs valeurs correspondantes que vous pouvez fournir au serveur LDAP. La valeur utilise le format suivant :
 
 `property=value;property=value;...`
 
 ## Paramètres du service de configuration Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-Le service de configuration Microsoft SharePoint `(MSSharePointConfigService)`vous permet de spécifier les informations d’identification de l’utilisateur de formulaires AEM qui dispose d’autorisations d’emprunt d’identité. Pour plus d’informations sur les droits d’emprunt d’identité, consultez [Configuration du connecteur pour Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
+Le service de configuration Microsoft SharePoint `(MSSharePointConfigService)`vous permet de spécifier les informations d’identification de l’utilisateur d’AEM forms disposant des droits d’emprunt d’identité. Pour plus d’informations sur les droits d’emprunt d’identité, consultez [Configuration du connecteur pour Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 Les paramètres suivants sont disponibles pour le service de configuration Microsoft SharePoint :
 
@@ -420,37 +419,37 @@ Les paramètres suivants sont disponibles pour le service de configuration Micro
 
 **Activer SSL (HTTPS) :**
 
-**Durée de vie :** durée, en secondes, pendant laquelle ce profil de mise en service est valide et mis en cache sur le client. La valeur par défaut est 86400 (24 heures). Lorsqu’une application cliente se synchronise avec le serveur et que le délai spécifié est écoulé, l’application cliente demande un nouveau profil de mise en service au serveur.
+**Durée de vie :**  durée, en secondes, pendant laquelle ce profil d’approvisionnement est valide et mis en cache sur le client. La valeur par défaut est 86400 (24 heures). Lorsqu’une application cliente se synchronise avec le serveur et que le temps spécifié est écoulé, l’application cliente demande un nouveau profil d’approvisionnement au serveur.
 
 **Chiffrement :** indique s’il faut chiffrer les données stockées sur le périphérique mobile.
 
 **Application Forms :** active la fonction Forms dans les applications clientes mobiles. Lorsque cette option est sélectionnée, les utilisateurs peuvent ouvrir des formulaires et lancer des processus à partir de leurs périphériques mobiles.
 
-**Application tâches :** active la fonction Tâches dans les applications clientes mobiles. Lorsque cette option est sélectionnée, les utilisateurs peuvent accéder à leurs listes de tâche et à leurs tâches complètes à partir de leurs périphériques mobiles.
+**Application de tâches :** active la fonction Tâches dans les applications clientes mobiles. Lorsque cette option est sélectionnée, les utilisateurs peuvent accéder à la liste des tâches et effectuer des tâches à partir de leurs appareils mobiles.
 
-**Application Content Services :** active la fonction Content Services dans l’application cliente mobile. Cette fonctionnalité est disponible uniquement pour iOS. Lorsque cette option est sélectionnée, les utilisateurs d’iPhone et d’iPad peuvent accéder aux fichiers stockés sur le serveur WebDAV de votre entreprise.
+**Application Content Services :** active la fonctionnalité Content Services dans l’application cliente mobile. Cette fonctionnalité est disponible uniquement pour iOS. Lorsque cette option est sélectionnée, les utilisateurs d’iPhone et d’iPad peuvent accéder aux fichiers stockés sur le serveur WebDAV de votre entreprise.
 
-**Prise en charge hors connexion :** permet aux utilisateurs de continuer à utiliser les applications clientes mobiles même s’ils n’ont pas de connexion au serveur (par exemple, lorsqu’ils sont hors plage de cellules ou en mode avion). Les utilisateurs doivent également activer le paramètre Prise en charge hors connexion sur leurs périphériques mobiles. Cette fonctionnalité est disponible pour les périphériques Android et iOS. Par défaut, cette fonction est désactivée.
+**Prise en charge hors ligne :** permet aux utilisateurs de continuer à utiliser les applications clientes mobiles même s’ils n’ont pas de connexion au serveur (par exemple, lorsqu’elles sont hors plage de cellules ou en mode avion). Les utilisateurs doivent également activer le paramètre Prise en charge hors ligne sur leurs appareils mobiles. Cette fonctionnalité est disponible pour les appareils Android et iOS. Par défaut, cette fonctionnalité est désactivée.
 
 >[!NOTE]
 >
->Si la prise en charge hors connexion a été activée, puis que vous la désactivez, les profils d’approvisionnement des utilisateurs sont mis à jour immédiatement ou dès qu’ils sont en ligne. Si un utilisateur travaille hors connexion, toutes les tâches en attente sont renvoyées à leur liste de Tâches et tous les éléments de leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation, sont supprimés de la file d’attente.
+>Si la prise en charge hors ligne a été activée, puis que vous la désactivez, les profils d’approvisionnement des utilisateurs sont mis à jour immédiatement ou dès qu’ils sont en ligne. Si un utilisateur a travaillé hors ligne, toutes les tâches en attente sont renvoyées à leur liste Tâches et tous les éléments de leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation, sont supprimés de la file d’attente.
 
-**Android :** permet aux périphériques Android de se connecter au serveur.
+**Android :** permet aux appareils Android de se connecter au serveur.
 
-**Apple iOS :** permet aux iPhones et aux iPad de se connecter au serveur.
+**Apple iOS :** permet aux iPhone et aux iPad de se connecter au serveur.
 
 **AIR :** permet aux périphériques exécutant des applications basées sur Adobe AIR® de se connecter au serveur.
 
 **BlackBerry :** permet aux périphériques BlackBerry de se connecter au serveur.
 
-**Android Microsoft Exchange ActiveSync Obligatoire :** indique si le gestionnaire de stratégies (EA) Microsoft Exchange ActiveSync doit être installé et principal sur les périphériques Android. Lorsque cette option est sélectionnée, EA doit être appliquée sur le périphérique Android. Si cette option n’est pas sélectionnée, aucune vérification n’est effectuée, bien que d’autres exigences soient toujours appliquées.
+**Android Microsoft Exchange ActiveSync requis :** indique si le gestionnaire de stratégies Microsoft Exchange ActiveSync (EA) doit être installé et principal sur les appareils Android. Lorsque cette option est sélectionnée, EA doit être appliqué sur l’appareil Android. Lorsque cette option n’est pas sélectionnée, aucune vérification n’est effectuée, bien que d’autres exigences soient toujours appliquées.
 
-**Longueur minimale du code confidentiel Android : les périphériques** Android doivent disposer d’un paramètre global qui permet de s’assurer que le code confidentiel ou le mot de passe est au moins de cette longueur. Le simple fait d&#39;avoir un NIP de la longueur spécifiée ne suffit pas. La longueur du code confidentiel doit être appliquée par le système afin que les utilisateurs ne puissent pas supprimer ou raccourcir le code confidentiel ultérieurement. La valeur par défaut est 4.
+**Longueur minimale du code PIN Android :**  les appareils Android doivent avoir un paramètre global qui permet d’exiger que le code PIN ou le mot de passe soit au moins de cette longueur. Le simple fait d’avoir un code PIN de la longueur spécifiée ne suffit pas. La longueur du code PIN doit être appliquée par le système afin que les utilisateurs ne puissent pas le supprimer ni le raccourcir ultérieurement. La valeur par défaut est 4.
 
-**Reprises de mot de passe maximum pour Android avant l’effacement : les périphériques** Android disposent d’un paramètre global qui efface le système après un nombre spécifié de tentatives de mot de passe non valides. Ce paramètre global est activé et égal ou inférieur à la valeur spécifiée ici. La valeur par défaut est 5.
+**Android Nombre maximal de tentatives de suppression du mot de passe :** les appareils Android disposent d’un paramètre global qui efface le système après un nombre spécifié de tentatives de mot de passe non valides. Ce paramètre global est activé et égal ou inférieur à la valeur spécifiée ici. La valeur par défaut est 5.
 
-**Android Wipe On Removal :** indique ce qui se produit lorsqu’une violation de stratégie survient sur un périphérique Android. Lorsque cette option est sélectionnée, le compte est supprimé. Si cette option n’est pas sélectionnée, le mot de passe du compte stocké et les données mises en cache sont supprimés. Aucune autre tentative de synchronisation n’est effectuée tant que l’utilisateur n’a pas corrigé la violation de stratégie.
+**Android Wipe On Removal :** indique ce qui se produit lorsqu’une violation de stratégie se produit sur un appareil Android. Lorsque cette option est sélectionnée, le compte est supprimé. Lorsque cette option n’est pas sélectionnée, le mot de passe du compte stocké et les données mises en cache sont supprimés. Aucune autre tentative de synchronisation n’est effectuée tant que l’utilisateur n’a pas corrigé la violation de stratégie.
 
 ## Paramètres du service Output {#output-service-settings}
 
@@ -467,11 +466,11 @@ Les paramètres ci-dessous sont disponibles pour le service Output.
 
 **Type de transaction :** indique comment un contexte de transaction doit être propagé à une opération :
 
-**Obligatoire :** prend en charge un contexte de transaction s&#39;il en existe déjà un ; sinon, un nouveau contexte de transaction est créé. Il s’agit de la valeur par défaut.
+**Obligatoire :**  prend en charge un contexte de transaction s’il en existe déjà un ; dans le cas contraire, un nouveau contexte de transaction est créé. Il s’agit de la valeur par défaut.
 
-**Nécessite : crée** toujours un contexte de transaction. Si un contexte de transaction actif existe, il est suspendu.
+**Nécessite :** crée toujours un contexte de transaction. Si un contexte de transaction actif existe, il est suspendu.
 
-**Expiration du délai de transaction (en s) :** nombre de secondes pendant lesquelles le fournisseur de transaction sous-jacent attend avant de restaurer une transaction qui englobe cette opération. Cette valeur est ignorée si un contexte de transaction existant est propagé. 
+**Transaction Time Out (in sec) :** nombre de secondes pendant lesquelles le fournisseur de transactions sous-jacent attend avant de restaurer une transaction qui englobe cette opération. Cette valeur est ignorée si un contexte de transaction existant est propagé. 
 
 En cas de traitement de fichiers de données volumineux ou d’exploitation d’un serveur fortement sollicité, il peut être nécessaire d’augmenter le délai d’expiration du service Output. Pour modifier la valeur du délai, assurez-vous que les serveurs matériels disposent de la quantité de mémoire appropriée et que celle-ci est disponible pour le tas du serveur d’applications Java. La valeur par défaut est `180`.
 
@@ -479,25 +478,25 @@ En cas de traitement de fichiers de données volumineux ou d’exploitation d’
 
 Les paramètres ci-dessous sont disponibles pour le service PDFG Config ( `PDFGConfigService`).
 
-**User Job Options Directory :** chemin d’accès du dossier du système de fichiers dans lequel le service c écrit les fichiers d’options de travail accessibles à Acrobat Pro Extended. La valeur par défaut est [user.home]/Application Data/Adobe/Adobe PDF/Settings.
+**User Job Options Directory :** chemin d’accès du dossier du système de fichiers dans lequel le service c écrit les fichiers d’options de tâche accessibles à Acrobat Pro Extended. La valeur par défaut est [user.home]/Application Data/Adobe/Adobe PDF/Settings.
 
-**PS Startup Directory :** chemin du dossier du système de fichiers dans lequel les fichiers de démarrage requis par Adobe Acrobat sont enregistrés. La valeur par défaut est [user.home]/Application Data/Adobe/Adobe PDF/Distiller/Startup.
+**PS Startup Directory :** chemin d’accès au dossier du système de fichiers dans lequel les fichiers de démarrage requis par Adobe Acrobat Distiller sont enregistrés. La valeur par défaut est [user.home]/Application Data/Adobe/Adobe PDF/Distiller/Startup.
 
 **PS Startup File :** nom du fichier de démarrage requis par Adobe Acrobat Distiller. La valeur par défaut est example.ps.
 
-**Délai d’expiration de conversion du serveur :** délai d’expiration de conversion de tâche maximal (en secondes) pour le service Generate PDF et le service Distiller. Ce paramètre limite le délai d’expiration de conversion maximal qui peut être spécifié dans le fichier config.xml et dans les pages de Administration Console pour PDF Generator. La valeur par défaut est 270.
+**Délai d’expiration de conversion du serveur :**  délai d’expiration de conversion de tâche maximal (en secondes) pour le service Generate PDF et le service Distiller. Ce paramètre limite le délai d’expiration de conversion maximal qui peut être spécifié dans le fichier config.xml et dans les pages de Administration Console pour PDF Generator. La valeur par défaut est 270.
 
-**Délai d’expiration global du serveur :** lors des conversions PDF, un serveur Forms prend en compte la limite de délai d’expiration. Configurez la valeur du délai d’expiration pour résoudre ce problème.
+**Délai d’expiration global du serveur :** lors des conversions PDF, un serveur Forms prend en compte le délai d’expiration. Configurez la valeur du délai d’expiration pour résoudre ce problème.
 
-**Préfixe des options de tâche :** préfixe utilisé par le service Generate PDF pour ajouter en préfixe une chaîne courte aux fichiers d’options de tâche qu’il crée temporairement pour être utilisés par Acrobat. La valeur par défaut est pdfg.
+**Préfixe des options de tâche :** préfixe utilisé par le service Generate PDF pour ajouter en préfixe une chaîne courte aux fichiers d’options de tâche qu’il crée temporairement pour être utilisés par Acrobat Distiller. La valeur par défaut est pdfg.
 
-**Applications non Unicode :** liste de noms d’applications séparées par des virgules, dont l’utilisation est réputée non compatible Unicode. Cette liste est préremplie avec les noms de plusieurs applications, dont la prise en charge est préconfigurée dans PDF Generator. Si vous choisissez d’ajouter une prise en charge pour des conversions PDF via des applications tierces incompatibles avec Unicode, vous devez les ajouter à cette liste. La valeur par défaut est Autocad,Excel,PowerPoint,Project,Publisher,Visio,Word,WordPerfect.
+**Applications non Unicode :** liste séparée par des virgules de noms d’application connus pour être incompatibles avec l’Unicode. Cette liste est préremplie avec les noms de plusieurs applications, dont la prise en charge est préconfigurée dans PDF Generator. Si vous choisissez d’ajouter une prise en charge pour des conversions PDF via des applications tierces incompatibles avec Unicode, vous devez les ajouter à cette liste. La valeur par défaut est Autocad,Excel,PowerPoint,Project,Publisher,Visio,Word,WordPerfect.
 
-**Server Threadpool Count :** contrôle la taille du pool de threads que le service Generate PDF utilise en interne pour traiter les demandes de conversion HTML vers PDF impliquant l’indexation (conversion des pages liées accessibles à partir de la page principale). La valeur par défaut est 20.
+**Server Threadpool Count :** contrôle la taille du pool de threads que le service Generate PDF utilise en interne pour traiter les demandes de conversion HTML vers PDF qui impliquent une indexation (conversion de pages liées accessibles à partir de la page principale). La valeur par défaut est 20.
 
-**Secondes d’analyse de nettoyage PDFG :** voir la section Secondes avant expiration de la tâche pour en savoir plus.
+**Secondes d’analyse de nettoyage PDFG :** reportez-vous à la section Secondes avant expiration de la tâche pour plus d’informations.
 
-**Secondes avant expiration de la tâche :** le service Generate PDF supprime les fichiers d’entrée dès leur conversion. Il stocke les fichiers de sortie de façon temporaire, pendant une durée définie par les paramètres Secondes d’analyse de nettoyage PDFG et Secondes avant expiration de la tâche. 
+**Secondes avant expiration de la tâche :** le service Generate PDF supprime les fichiers d’entrée dès qu’ils sont convertis. Il stocke les fichiers de sortie de façon temporaire, pendant une durée définie par les paramètres Secondes d’analyse de nettoyage PDFG et Secondes avant expiration de la tâche. 
 
 Le paramètre Secondes avant expiration de la tâche spécifie l’ancienneté que doit avoir un fichier ou un dossier vide avant de pouvoir être supprimé. Le paramètre Secondes d’analyse de nettoyage PDFG indique la fréquence d’analyse, par un thread de nettoyage, des fichiers temporaires à la recherche de fichiers pouvant être supprimés.
 
@@ -521,9 +520,9 @@ La plupart des services sont configurés afin que vous puissiez y accéder avec 
 
 Les paramètres ci-dessous sont disponibles pour le service Remoting.
 
-**Méthode d’authentification du client Flex :** détermine le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, l’opération appelée ne prend pas en charge les appels anonymes et le client transmet des informations d’identification non valides ou non valides. Choisissez entre Personnalisée ou Standard. La valeur par défaut est Standard.
+**Méthode d’authentification du client Flex :** détermine le type de réponse que le serveur renvoie au client lorsque le service appelé est activé pour la sécurité, l’opération appelée ne prend pas en charge les appels anonymes et le client transmet des informations d’identification non valides ou aucune information d’identification non valide. Choisissez entre Personnalisée ou Standard. La valeur par défaut est Standard.
 
-**Autoriser la sérialisation de classes non sérialisables : la** plupart des points de terminaison de formulaires AEM permettent d’utiliser uniquement des classes sérialisables pour l’appel. Dans les versions antérieures, les points de fin Remoting autorisaient l’utilisation des classes non sérialisables pour les appels depuis les clients Flex. Pour éviter toute vulnérabilité de sécurité décrite dans APS11-15, ceci a été modifié. Si vous souhaitez continuer à utiliser des classes non-sérialisables avec le point de fin Flex Remoting, cochez cette case.
+**Autoriser la sérialisation des classes non sérialisables :**  la plupart des points de fin d’AEM forms autorisent uniquement l’utilisation de classes sérialisables pour l’appel. Dans les versions antérieures, les points de fin Remoting autorisaient l’utilisation des classes non sérialisables pour les appels depuis les clients Flex. Pour éviter toute vulnérabilité de sécurité décrite dans APS11-15, ceci a été modifié. Si vous souhaitez continuer à utiliser des classes non-sérialisables avec le point de fin Flex Remoting, cochez cette case.
 
 ## Paramètres du service Repository  {#repository-service-settings}
 
@@ -535,7 +534,7 @@ Le service Repository Provider est un délégué de service qui sert d’interfa
 
 Le paramètre ci-dessous est disponible pour le service Repository.
 
-**Provider Service :** nom du service utilisé comme fournisseur d’enregistrements. La valeur par défaut est RepositoryProviderService.
+**Provider Service :** nom du service utilisé comme fournisseur de stockage. La valeur par défaut est RepositoryProviderService.
 
 ## Paramètres du service Signature {#signature-service-settings}
 
@@ -545,107 +544,107 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Nom du service SPI HSM distant :** Cette option est à utiliser lorsque le HSM est installé sur un ordinateur distant. Spécifiez cette option quand AEM forms est installé sur un système Windows 64 bits et que vous utilisez des périphériques HSM pour la signature.
 
-**URL du service Web HSM distant :** indiquez cette option lorsque AEM formulaires est installé sous Windows 64 bits et que vous utilisez des périphériques HSM pour la signature.
+**URL du service Web HSM distant :** spécifiez cette option lorsque AEM forms est installé sur Windows 64 bits et que vous utilisez des périphériques HSM pour la signature.
 
-**Certification pour inclure les modifications de chargement de formulaire :** lorsque cette option est sélectionnée, l’état du formulaire XFA est certifié en plus du modèle XFA. Notez que l’activation de cette option peut avoir un impact négatif sur les performances. La valeur par défaut est true.
+**Certification To Include Form Load Changes :** lorsque cette option est sélectionnée, l’état du formulaire XFA est certifié en plus du modèle XFA. Notez que l’activation de cette option peut avoir un impact négatif sur les performances. La valeur par défaut est true.
 
-**Exécuter des scripts JavaScript Document :** indique s’il faut exécuter des scripts JavaScript Document pendant les opérations de signature. La valeur par défaut est false. 
+**Exécuter les scripts JavaScript du document :** indique s’il faut exécuter les scripts JavaScript du document lors des opérations de signature. La valeur par défaut est false. 
 
-**Documents de traitement avec compatibilité Acrobat 9 :** indique si la compatibilité Acrobat 9 doit être activée. Par exemple, lorsque cette option est sélectionnée, l’option Visible Certification in Dynamics PDFs est activée. La valeur par défaut est false. 
+**Traiter les documents avec compatibilité Acrobat 9 :** indique s’il faut activer la compatibilité Acrobat 9. Par exemple, lorsque cette option est sélectionnée, l’option Visible Certification in Dynamics PDFs est activée. La valeur par défaut est false. 
 
 **Incorporer les informations de révocation lors de la signature :** indique si les informations de révocation sont incorporées lors de la signature du document PDF. La valeur par défaut est false. 
 
 **Incorporer les informations de révocation lors de la certification :** indique si les informations de révocation sont incorporées lors de la certification du document PDF. La valeur par défaut est false. 
 
-**Imposer l’incorporation des informations de révocation pour tous les certificats lors de la signature/certification :** indique si une opération de signature ou de certification échoue si des informations de révocation valides pour tous les certificats ne sont pas incorporées. Notez que si un certificat ne contient pas d’informations CRL ou OCSP, il est considéré comme valide, même si aucune information de révocation n’est récupérée. La valeur par défaut est false. 
+**Application de l’incorporation des informations de révocation pour tous les certificats lors de la signature/certification :** indique si une opération de signature ou de certification échoue si des informations de révocation valides pour tous les certificats ne sont pas incorporées. Notez que si un certificat ne contient pas d’informations CRL ou OCSP, il est considéré comme valide, même si aucune information de révocation n’est récupérée. La valeur par défaut est false. 
 
-**Ordre de vérification de révocation :** indique l’ordre de vérification de révocation lorsque la vérification est possible par le biais des mécanismes CRL (Certificate Revocation Liste) et OCSP (Online Certificate Status Protocol). La valeur par défaut est OCSPFirst.
+**Ordre de vérification de révocation :** spécifie l’ordre de vérification de révocation lorsque la vérification est possible par le biais des mécanismes Liste de révocation des certificats (CRL) et Protocole d’état du certificat en ligne (OCSP). La valeur par défaut est OCSPFirst.
 
-**Taille maximale des informations d’archivage de révocation : taille maximale des informations d’archivage de révocation en** kilo-octets. AEM forms tente de stocker le plus grand nombre d’informations de révocation possible sans dépasser cette limite. La valeur par défaut est 10 Ko.
+**Taille maximale des informations d’archivage de révocation :**  taille maximale des informations d’archivage de révocation en kilo-octets. AEM forms tente de stocker le plus grand nombre d’informations de révocation possible sans dépasser cette limite. La valeur par défaut est 10 Ko.
 
-**Signatures de prise en charge créées à partir des créations de produits d’Adobe avant la publication :** lorsque cette option est sélectionnée, la signature créée à l’aide de la version préliminaire des produits d’Adobe sera validée correctement. La valeur par défaut est false. 
+**Prise en charge des signatures créées à partir des versions antérieures des produits Adobe :**  lorsque cette option est sélectionnée, la signature créée à l’aide de la version préliminaire des produits Adobe sera validée correctement. La valeur par défaut est false. 
 
-**Option Heure de vérification :** indique l’heure de vérification du certificat d’un signataire. La valeur par défaut est Secure Time Else Current Time.
+**Option de durée de vérification :** indique l’heure de vérification du certificat d’un signataire. La valeur par défaut est Secure Time Else Current Time.
 
 **Utiliser les informations de révocation archivées dans la signature lors de la validation :** indique si les informations de révocation archivées avec la signature sont utilisées pour la vérification de révocation. La valeur par défaut est true.
 
-**Utiliser les informations de validation stockées dans le Document pour la validation des signatures :** lorsque cette option est sélectionnée, les informations de validation (y compris les informations de révocation et d’horodatage) intégrées dans le document sont utilisées pour valider les signatures. La valeur par défaut est true.
+**Utiliser les informations de validation stockées dans le document pour la validation des signatures :**  lorsque cette option est sélectionnée, les informations de validation (y compris les informations de révocation et d’horodatage) intégrées dans le document sont utilisées pour valider les signatures. La valeur par défaut est true.
 
-**Nombre maximal de sessions de vérification imbriquées autorisées :** nombre maximal de sessions de vérification imbriquées autorisées. AEM forms utilise cette valeur pour empêcher une boucle infinie lors de la vérification des certificats des signataires OCSP ou CRL en cas de configuration incorrecte du certificat OCSP ou CRL. La valeur par défaut est 10.
+**Nombre maximal de sessions de vérification imbriquées autorisé :**  nombre maximal de sessions de vérification imbriquées autorisées. AEM forms utilise cette valeur pour empêcher une boucle infinie lors de la vérification des certificats des signataires OCSP ou CRL en cas de configuration incorrecte du certificat OCSP ou CRL. La valeur par défaut est 10.
 
-**Inclinaison maximale de l’horloge pour la vérification :** durée maximale (en minutes) pendant laquelle l’heure de signature peut être postérieure à l’heure de validation. Si le décalage est supérieur à cette valeur, la signature n’est pas valable. la valeur par défaut est de 65 minutes.
+**Ecartement maximal de l’horloge pour la vérification :**  durée maximale, en minutes, pendant laquelle l’heure de signature peut être postérieure à l’heure de validation. Si le décalage est supérieur à cette valeur, la signature n’est pas valable. la valeur par défaut est de 65 minutes.
 
-**Cache de durée de vie du certificat :** durée de vie d’un certificat, récupérée en ligne ou par d’autres moyens, dans le cache. La valeur par défaut est de 1 jour.
+**Cache de durée de vie du certificat :**  durée de vie d’un certificat, récupéré en ligne ou par d’autres moyens, dans le cache. La valeur par défaut est de 1 jour.
 
 ### Options de transport {#transport-options}
 
-**Hôte proxy :** URL de l’hôte proxy. Attribut utilisé uniquement si une valeur valide est indiquée. Pas de valeur par défaut.
+**Hôte du proxy :** URL de l’hôte du proxy. Attribut utilisé uniquement si une valeur valide est indiquée. Pas de valeur par défaut.
 
-**Port proxy : port** du proxy. Saisissez tout numéro de port valide compris entre 0 et 65535. La valeur par défaut est 80.
+**Port du proxy :** port du proxy. Saisissez tout numéro de port valide compris entre 0 et 65535. La valeur par défaut est 80.
 
-**Proxy Login Username : nom** d’utilisateur de connexion du proxy. Attribut utilisé uniquement si une valeur valide est indiquée pour l’hôte proxy et le port du proxy. Pas de valeur par défaut.
+**Nom d’utilisateur de connexion au proxy :** nom d’utilisateur de connexion au proxy. Attribut utilisé uniquement si une valeur valide est indiquée pour l’hôte proxy et le port du proxy. Pas de valeur par défaut.
 
 **Mot de passe de connexion du proxy :** mot de passe de connexion du proxy. utilisé uniquement si une valeur valide est indiquée pour l’hôte proxy, le port du proxy et le nom d’utilisateur de connexion du proxy. Pas de valeur par défaut.
 
-**Limite de téléchargement maximale :** quantité maximale de données, en Mo, pouvant être reçue par connexion. Valeur minimale : 1 Mo. Valeur maximale : 1 024 Mo. La valeur par défaut est de 16 Mo.
+**Limite maximale de téléchargement :** quantité maximale de données, en Mo, pouvant être reçue par connexion. Valeur minimale : 1 Mo. Valeur maximale : 1 024 Mo. La valeur par défaut est de 16 Mo.
 
-**Délai d’expiration de la connexion :** délai maximal d’attente, en secondes, pour établir une nouvelle connexion. Valeur minimale : 1. Valeur maximale : 300. Valeur par défaut : 5.
+**Délai d’expiration de la connexion :**  durée maximale d’attente, en secondes, pour établir une nouvelle connexion. Valeur minimale : 1. Valeur maximale : 300. Valeur par défaut : 5.
 
-**Délai d’expiration du socket :** délai maximal d’attente, en secondes, avant l’expiration du socket (en attendant le transfert des données). Valeur minimale : 1. Valeur maximale : 3600. Valeur par défaut : 30.
+**Délai d’expiration du socket :**  durée d’attente maximale, en secondes, avant l’expiration du socket (en attendant le transfert des données). Valeur minimale : 1. Valeur maximale : 3600. Valeur par défaut : 30.
 
 ### Options de validation du chemin d’accès {#path-validation-options}
 
-**Exiger une stratégie explicite :** indique si le chemin d’accès doit être valide pour au moins l’une des stratégies de certificat associées à l’ancrage d’approbation du certificat du signataire. La valeur par défaut est false. 
+**Require Explicit Policy :** indique si le chemin doit être valide pour au moins l’une des stratégies de certificat associées à l’ancre de confiance du certificat du signataire. La valeur par défaut est false. 
 
 **Inhibit ANY Policy :** indique si l’identifiant d’objet de stratégie (OID) doit être traité s’il est inclus dans un certificat. La valeur par défaut est false. 
 
 **Inhibit Policy Mapping :** indique si le mappage de stratégie est autorisé dans le chemin de certification. La valeur par défaut est false. 
 
-**Vérifier tous les chemins :** indique si tous les chemins doivent être validés ou si la validation doit s’arrêter après avoir trouvé le premier chemin valide. Sélectionnez true ou false. La valeur par défaut est false. 
+**Check All Paths :** indique si tous les chemins doivent être validés ou si la validation doit s’arrêter après avoir trouvé le premier chemin valide. Sélectionnez true ou false. La valeur par défaut est false. 
 
-**Serveur LDAP : serveur LDAP** utilisé pour rechercher des certificats en vue de la validation du chemin d’accès. Pas de valeur par défaut.
+**Serveur LDAP :** serveur LDAP utilisé pour rechercher des certificats pour la validation du chemin. Pas de valeur par défaut.
 
-**Suivez les URI dans l’AIA du certificat :** indique si les URI (Uniform Resource Identifiers) dans l’AIA du certificat sont traités lors de la découverte du chemin d’accès. La valeur par défaut est false. 
+**Suivez les URI dans l’AIA de certificat :** indique si les URI (Uniform Resource Identifiers) dans l’AIA de certificat sont traités lors de la découverte du chemin. La valeur par défaut est false. 
 
-**Extension de contraintes de base requise dans les certificats d’autorité de certification :** indique si l’extension de certificat de contraintes de base de l’autorité de certification doit être présente pour les certificats d’autorité de certification. Certains des tout premiers certificats racine allemands certifiés (7 et antérieurs) ne sont pas conformes à la RFC 3280 et ne contiennent pas l’extension de contraintes de base. Si le certificat EE d’un utilisateur est associé à une telle racine, désactivez cette case à cocher. La valeur par défaut est true.
+**Extension de contraintes de base requise dans les certificats d’autorité de certification :** indique si l’extension de contraintes de base de l’autorité de certification (CA) doit être présente pour les certificats d’autorité de certification. Certains des tout premiers certificats racine allemands certifiés (7 et antérieurs) ne sont pas conformes à la RFC 3280 et ne contiennent pas l’extension de contraintes de base. Si le certificat EE d’un utilisateur est associé à une telle racine, désactivez cette case à cocher. La valeur par défaut est true.
 
-**Exiger une signature de certificat valide lors de la création de chaînes :** indique si le générateur de chaînes requiert des signatures valides sur les certificats utilisés pour créer des chaînes. Lorsque cette case est cochée, le générateur de chaînes ne crée pas de chaînes comportant des signatures RSA non valides dans les certificats. Soit la chaîne CA > ICA > EE où la signature de l’AC (Autorité de certification) sur une ICA est incorrecte. Si ce paramètre est true, la création de chaînes s’arrête au niveau de l’ICA, et l’AC n’est pas incluse dans la chaîne. Si ce paramètre est false, la chaîne complète des trois certificats est générée. Ce paramètre n’a aucune incidence sur les signatures DSA. Valeur par défaut : false.
+**Exiger une signature de certificat valide lors de la création de chaînes :** indique si le créateur de chaînes nécessite des signatures valides sur les certificats utilisés pour créer des chaînes. Lorsque cette case est cochée, le générateur de chaînes ne crée pas de chaînes comportant des signatures RSA non valides dans les certificats. Soit la chaîne CA > ICA > EE où la signature de l’AC (Autorité de certification) sur une ICA est incorrecte. Si ce paramètre est true, la création de chaînes s’arrête au niveau de l’ICA, et l’AC n’est pas incluse dans la chaîne. Si ce paramètre est false, la chaîne complète des trois certificats est générée. Ce paramètre n’a aucune incidence sur les signatures DSA. Valeur par défaut : false.
 
 ### Options du fournisseur d’horodatage  {#timestamp-provider-options}
 
-**URL du serveur TSP : URL** du fournisseur d’horodatage par défaut. Attribut utilisé uniquement si une valeur valide est indiquée. Pas de valeur par défaut.
+**URL du serveur TSP :** URL du fournisseur d’horodatage par défaut. Attribut utilisé uniquement si une valeur valide est indiquée. Pas de valeur par défaut.
 
-**Nom d’utilisateur du serveur TSP : nom** d’utilisateur si le fournisseur d’horodatage l’exige. Utilisé uniquement si une valeur valide est indiquée pour l’URL. Pas de valeur par défaut.
+**Nom d’utilisateur du serveur TSP :** nom d’utilisateur s’il est requis par le fournisseur d’horodatage. Utilisé uniquement si une valeur valide est indiquée pour l’URL. Pas de valeur par défaut.
 
 **Mot de passe du serveur TSP :** mot de passe du nom d’utilisateur ci-dessus si le fournisseur d’horodatage l’exige. Utilisé uniquement si une valeur valide est indiquée pour l’URL et le nom d’utilisateur. Pas de valeur par défaut.
 
-**Algorithme de hachage de requête :** indique l’algorithme de hachage à utiliser lors de la création de la requête pour le fournisseur d’horodatage. La valeur par défaut est SHA1.
+**Algorithme de hachage de requête :** indique l’algorithme de hachage à utiliser lors de la création de la demande pour le fournisseur d’horodatage. La valeur par défaut est SHA1.
 
-**Style de vérification de révocation :** indique le style de vérification de révocation utilisé pour déterminer l’état d’approbation du certificat du fournisseur d’horodatage à partir de son état de révocation observé. La valeur par défaut est BestEffort.
+**Style de vérification de révocation :** spécifie le style de vérification de révocation utilisé pour déterminer l’état de confiance du certificat du fournisseur d’horodatage à partir de son état de révocation observé. La valeur par défaut est BestEffort.
 
-**Send Nonce :** indique si un nonce est envoyé avec la demande du fournisseur d’horodatage. Une telle valeur peut être un horodatage, un compteur de visites sur une page Web ou bien un marqueur spécial destiné à limiter ou empêcher la réplication ou la reproduction non autorisées d’un fichier. La valeur par défaut est true.
+**Envoyer une valeur à usage unique :** indique si une valeur à usage unique est envoyée avec la demande du fournisseur d’horodatage. Une telle valeur peut être un horodatage, un compteur de visites sur une page Web ou bien un marqueur spécial destiné à limiter ou empêcher la réplication ou la reproduction non autorisées d’un fichier. La valeur par défaut est true.
 
-**Utiliser les horodatages expirés pendant la validation :** lorsque cette option est sélectionnée, les horodatages expirés peuvent être utilisés pour récupérer les heures de validation des signatures. La valeur par défaut est true.
+**Utiliser les horodatages expirés lors de la validation :**  lorsque cette option est sélectionnée, les horodatages expirés peuvent être utilisés pour récupérer les heures de validation des signatures. La valeur par défaut est true.
 
-**TSP Response Size : taille** estimée, en octets, de la réponse TSP. Cette valeur doit correspondre à la taille maximale de la réponse de l’horodatage que le fournisseur d’horodatage configuré peut renvoyer. Ne la modifiez pas à moins d’être parfaitement sûr de ce que vous faites. Valeur minimale : 60 octets. Valeur maximale : 10 240 octets. Valeur par défaut : 4 096 octets.
+**Taille de réponse TSP :** taille estimée, en octets, de la réponse TSP. Cette valeur doit correspondre à la taille maximale de la réponse de l’horodatage que le fournisseur d’horodatage configuré peut renvoyer. Ne la modifiez pas à moins d’être parfaitement sûr de ce que vous faites. Valeur minimale : 60 octets. Valeur maximale : 10 240 octets. Valeur par défaut : 4 096 octets.
 
 **Ignorer l’extension du serveur de tampons temporels** : sélectionnez **Ignorer l’extension du serveur de tampons temporels** afin d’empêcher le serveur AEM Forms de contacter le serveur de tampons temporels spécifié. La sélection de cette option permet d’éviter les échecs de processus qui se produisent en raison du délai de connexion entre les serveurs AEM Forms et de tampons temporels.
 
 ### Options de listes de révocation des certificats  {#certificate-revocation-list-options}
 
-**Consult Local URI First :** indique si l’emplacement CRL fourni dans l’URI local ou la recherche CRL doit recevoir la préférence par rapport à tout emplacement spécifié dans un certificat à des fins de vérification de révocation. La valeur par défaut est false. 
+**Consult Local URI First :** indique si l’emplacement de la CRL fourni dans l’URI local ou la recherche CRL doit recevoir la préférence de tout emplacement spécifié dans un certificat à des fins de vérification de révocation. La valeur par défaut est false. 
 
-**URI local pour la recherche CRL :** URL du fournisseur CRL local. Cette valeur est consultée uniquement si le paramètre Consult Local URI First ci-dessus est défini sur true. Pas de valeur par défaut.
+**URI local pour la recherche de CRL :**  URL du fournisseur de CRL local. Cette valeur est consultée uniquement si le paramètre Consult Local URI First ci-dessus est défini sur true. Pas de valeur par défaut.
 
-**Style de vérification de révocation :** indique le style de vérification de révocation utilisé pour déterminer l’état d’approbation du certificat du fournisseur de liste CRL à partir de son état de révocation observé. La valeur par défaut est BestEffort.
+**Style de vérification de révocation :** spécifie le style de vérification de révocation utilisé pour déterminer l’état de confiance du certificat du fournisseur de CRL à partir de son état de révocation observé. La valeur par défaut est BestEffort.
 
-**Serveur LDAP pour la recherche CRL :** serveur LDAP utilisé pour obtenir les listes CRL (comme www.ldap.com). Toutes les requêtes DN de CRL sont adressées à ce serveur. Pas de valeur par défaut.
+**Serveur LDAP pour la recherche CRL :** serveur LDAP utilisé pour obtenir les CRL (comme www.ldap.com). Toutes les requêtes DN de CRL sont adressées à ce serveur. Pas de valeur par défaut.
 
-**Aller en ligne :** indique s’il faut se connecter pour récupérer une liste CRL. Avec la valeur false, seules les CRL en cache (sur le disque local ou incorporées avec signature) sont consultées. La valeur par défaut est true.
+**Go Online :** indique s’il faut se connecter pour récupérer une CRL. Avec la valeur false, seules les CRL en cache (sur le disque local ou incorporées avec signature) sont consultées. La valeur par défaut est true.
 
-**Ignorer les dates de validité :** indique si les heures thisUpdate et nextUpdate de la réponse doivent être ignorées, ce qui empêche ces heures d&#39;avoir un effet négatif sur la validité de la réponse. La valeur par défaut est false. 
+**Ignorer les dates de validité :** indique s’il faut ignorer les heures thisUpdate et nextUpdate de la réponse, ce qui empêche ces heures d’avoir un effet négatif sur la validité de la réponse. La valeur par défaut est false. 
 
-**Require AKI extension in CRL :** indique si l&#39;extension Authority Key Identifier doit être incluse dans une CRL. Valeur par défaut : false.
+**Require AKI extension in CRL :** indique si l’extension de l’identifiant de clé d’autorité doit être incluse dans une CRL. Valeur par défaut : false.
 
 ### Options du protocole OCSP (Online Certificate Status Protocol)  {#online-certificate-status-protocol-options}
 
@@ -653,33 +652,33 @@ Les paramètres ci-dessous sont disponibles pour le service Signature.
 
 **Option URL à consulter :** contrôle la liste et l’ordre des serveurs OCSP utilisés pour effectuer la vérification d’état. La valeur par défaut est UseAIAInCert.
 
-**Style de vérification de révocation :** indique le style de vérification de révocation utilisé lors de la vérification du certificat du serveur OCSP. La valeur par défaut est CheckIfAvailable.
+**Revocation Check Style** : indique le style de vérification de révocation utilisé lors de la vérification du certificat du serveur OCSP. La valeur par défaut est CheckIfAvailable.
 
-**Send Nonce :** indique si un nonce est envoyé avec la demande OCSP. Une telle valeur peut être un horodatage, un compteur de visites sur une page Web ou bien un marqueur spécial destiné à limiter ou empêcher la réplication ou la reproduction non autorisées d’un fichier. La valeur par défaut est true.
+**Envoyer à usage unique :** indique si une valeur à usage unique est envoyée avec la requête OCSP. Une telle valeur peut être un horodatage, un compteur de visites sur une page Web ou bien un marqueur spécial destiné à limiter ou empêcher la réplication ou la reproduction non autorisées d’un fichier. La valeur par défaut est true.
 
-**Max Clock Skew Time :** Max Clock Skew Time (Durée d’inclinaison maximale de l’horloge) autorisée, en minutes, entre le temps de réponse et l’heure locale. Valeur minimale : 0. Valeur maximale : 2 147 483 647 min. La valeur pas défaut est : 5 min.
+**Max Clock Skew Time :** décalage maximal autorisé, en minutes, entre le temps de réponse et l’heure locale. Valeur minimale : 0. Valeur maximale : 2 147 483 647 min. La valeur pas défaut est : 5 min.
 
-**Temps de fraîcheur de la réponse :** temps maximal, en minutes, pour lequel une réponse OCSP préconstruite est considérée comme valide. Valeur minimale : 1 Min. Valeur maximale : 2 147 483 647 min. La valeur par défaut est de 525600 (un an).
+**Response Freshness Time :** durée maximale, en minutes, pour laquelle une réponse OCSP préconstruite est considérée comme valide. Valeur minimale : 1 Min. Valeur maximale : 2 147 483 647 min. La valeur par défaut est de 525600 (un an).
 
-**Signature de la demande OCSP :** indique si la demande OCSP doit être signée. La valeur par défaut est false. 
+**Sign OCSP Request :** indique si la requête OCSP doit être signée. La valeur par défaut est false. 
 
-**Request Signer Credential Alias :** indique l’alias d’identification à utiliser pour signer la demande OCSP si la signature est activée. Cette option est utilisée uniquement si la signature de la demande OCSP est activée. Pas de valeur par défaut.
+**Request Signer Credential Alias :** spécifie l’alias d’identification à utiliser pour signer la demande OCSP si la signature est activée. Cette option est utilisée uniquement si la signature de la demande OCSP est activée. Pas de valeur par défaut.
 
-**Aller en ligne :** indique s’il faut se connecter pour effectuer la vérification de révocation. La valeur par défaut est true.
+**Go Online :** indique s’il faut se connecter pour vérifier la révocation. La valeur par défaut est true.
 
 **Ignorer les heures thisUpdate et nextUpdate de la réponse :** indique s’il faut ignorer les heures thisUpdate et nextUpdate de la réponse, ce qui empêche ces heures d’avoir un effet négatif sur la validité de la réponse. La valeur par défaut est false. 
 
-**Autoriser l&#39;extension OCSPNoCheck :** indique si l&#39;extension OCSPNoCheck est autorisée dans le certificat de signature de réponse. La valeur par défaut est true.
+**Allow OCSPNoCheck extension :** indique si l’extension OCSPNoCheck est autorisée dans le certificat de signature de la réponse. La valeur par défaut est true.
 
 **Require OCSP ISIS-MTT CertHash Extension :** indique si une extension de hachage de clé publique de certificat doit être incluse dans les réponses OCSP. Valeur par défaut : false.
 
 ### Options de gestion des erreurs pour le débogage  {#error-handling-options-for-debugging}
 
-**Purger le cache de certificats lors de l’appel d’API suivant :** indique si le cache de certificats doit être purgé lors de l’appel de l’opération de service de signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. La valeur par défaut est false. 
+**Purger le cache de certificats lors de l’appel API suivant :** indique s’il faut purger le cache de certificats lors de l’appel de l’opération de service Signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. La valeur par défaut est false. 
 
-**Purger le cache CRL lors de l’appel d’API suivant :** indique si le cache CRL doit être purgé lors de l’appel de l’opération de service Signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. La valeur par défaut est false. 
+**Purger le cache de CRL lors de l’appel API suivant :** indique s’il faut purger le cache de CRL lors de l’appel de l’opération du service Signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. La valeur par défaut est false. 
 
-**Purger le cache OCSP lors de l’appel d’API suivant :** indique si le cache OCSP doit être purgé lors de l’appel de l’opération de service Signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. Valeur par défaut : false.
+**Purger le cache OCSP lors de l’appel API suivant :** indique s’il faut purger le cache OCSP lors de l’appel de l’opération du service Signature suivante. Une fois l’opération appelée, cette option reprend la valeur false. Valeur par défaut : false.
 
 ## Paramètres du service Watched Folder  {#watched-folder-service-settings}
 
@@ -689,15 +688,15 @@ Les paramètres ci-dessous sont disponibles pour le service WatchedFolder.
 
 **Expression cron :** expression cron utilisée par quartz pour planifier l’interrogation du répertoire d’entrée.
 
-**Nombre de répétitions :** nombre de fois où le répertoire d’entrée est interrogé. Nombre de répétitions par défaut à utiliser si cette valeur n’est pas spécifiée dans la configuration des points de fin. La valeur -1 indique une analyse indéfinie du répertoire. La valeur par défaut est -1.
+**Nombre de répétitions :** nombre d’interrogations du répertoire d’entrée. Nombre de répétitions par défaut à utiliser si cette valeur n’est pas spécifiée dans la configuration des points de fin. La valeur -1 indique une analyse indéfinie du répertoire. La valeur par défaut est -1.
 
-**Intervalle de répétition : nombre** par défaut si secondes s’écoulent entre chaque interrogation. Cette valeur est utilisée comme intervalle de répétition à moins qu’une valeur différente ne soit définie dans la configuration du point de fin du dossier de contrôle. La valeur par défaut est 5. Pour plus d’informations, voir la description du paramètre Batch Size.
+**Intervalle de répétition :** nombre par défaut de secondes entre chaque interrogation. Cette valeur est utilisée comme intervalle de répétition à moins qu’une valeur différente ne soit définie dans la configuration du point de fin du dossier de contrôle. La valeur par défaut est 5. Pour plus d’informations, voir la description du paramètre Batch Size.
 
 **Asynchrone :** identifie le type d’appel comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est asynchrone.
 
-**Durée d’attente :** valeur par défaut, en secondes, après laquelle les fichiers sont récupérés à partir des dossiers d’entrée. Si le fichier ou le dossier sont plus anciens que la durée définie dans l’attribut Durée d’attente, ils sont sélectionnés pour traitement. La valeur par défaut est 0.
+**Temps d’attente :** valeur par défaut du temps, en secondes, après lequel les fichiers sont récupérés dans les dossiers d’entrée. Si le fichier ou le dossier sont plus anciens que la durée définie dans l’attribut Durée d’attente, ils sont sélectionnés pour traitement. La valeur par défaut est 0.
 
-**Taille du lot :** valeur par défaut du nombre de fichiers ou de dossiers traités par analyse. La valeur par défaut est 2.
+**Taille du lot :**  valeur par défaut du nombre de fichiers ou de dossiers traités par analyse. La valeur par défaut est 2.
 
 Les paramètres Intervalle de répétition et Taille du lot permettent de déterminer le nombre de fichiers sélectionnés par Watched Folder pour chaque analyse. Watched Folder utilise un pool de threads Quartz pour analyser le dossier input. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse défini est court, les threads analysent fréquemment le dossier input. Si des fichiers sont déposés régulièrement dans le dossier de contrôle, faites en sorte que l’intervalle d’analyse soit court. Si au contraire, des fichiers y sont déposés peu fréquemment, utilisez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads. 
 
@@ -707,13 +706,13 @@ Lorsque des fichiers sont déposés dans le dossier de contrôle, ce dernier les
 
 Dans une configuration en grappe, la taille du lot d’un dossier de contrôle n’est pas mise à l’échelle sur plusieurs nœuds de la grappe. Par exemple, si la taille du lot est définie sur `2` (grappe à deux nœuds) et que l’option Ralentissement est sélectionnée, les nœuds traitent ensemble les fichiers par lots de deux. Cette opération remplace le traitement simultané de deux fichiers par chaque nœud.
 
-**Remplacer les noms de fichier de Duplicata : chaîne booléenne qui indique si le dossier de contrôle remplace les noms de fichier de résultats de duplicata et si les documents conservés du même nom doivent être remplacés.** 
+**Remplacer les noms de fichier en double :** chaîne booléenne qui indique si le dossier de contrôle remplace les noms de fichier de résultat en double et si les documents conservés du même nom doivent être remplacés.
 
-**Conserver le dossier :** valeur par défaut du dossier conservé. Ce dossier est utilisé pour copier les fichiers source en cas de traitement réussi de l’entrée. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu avec un modèle de fichier, tel que décrit pour le paramètre Result Folder.
+**Conserver le dossier :** valeur par défaut du dossier preserve. Ce dossier est utilisé pour copier les fichiers source en cas de traitement réussi de l’entrée. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu avec un modèle de fichier, tel que décrit pour le paramètre Result Folder.
 
 **Dossier d’échec :** nom du dossier dans lequel les fichiers d’échec sont copiés. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu avec un modèle de fichier, tel que décrit pour le paramètre Result Folder.
 
-**Dossier de résultats :** nom par défaut du dossier de résultats. Ce dossier est utilisé pour copier les fichiers obtenus. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu répondant au modèle de fichier suivant :
+**Result Folder :** nom par défaut du dossier result. Ce dossier est utilisé pour copier les fichiers obtenus. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu répondant au modèle de fichier suivant :
 
 * %F = préfixe du nom du fichier
 * %E = extension du nom du fichier
@@ -730,7 +729,7 @@ Dans une configuration en grappe, la taille du lot d’un dossier de contrôle n
 * %R = nombre aléatoire (de 0 à 9)
 * %P = ID de processus ou de travail
 
-Par exemple, s’il est 20 h le 17 juillet 2009 et que vous spécifiez `C:/Test/WF0/failure/%Y/%M/%D/%H/`, le dossier de résultats est `C:/Test/WF0/failure/2009/07/17/20`.
+Par exemple, s’il est 20 h, que nous sommes le 17 juillet 2009 et que vous indiquez `C:/Test/WF0/failure/%Y/%M/%D/%H/`, le dossier de résultats est `C:/Test/WF0/failure/2009/07/17/20`.
 
 Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -738,13 +737,13 @@ Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé 
 >
 >plus les dossiers de résultats sont petits, plus les performances de Watched Folder augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type `result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type `result/%Y%M%D`.
 
-**Dossier d’étape :** nom par défaut du dossier d’étape dans le dossier de contrôle.
+**Dossier d’évaluation :** nom par défaut du dossier d’évaluation dans le dossier de contrôle.
 
-**Input Folder :** nom par défaut du dossier input situé dans le dossier de contrôle.
+**Input Folder :** nom par défaut du dossier input dans le dossier de contrôle.
 
 **Conserver en cas d’échec :** si la valeur est true, les fichiers d’origine sont conservés dans le dossier failure en cas d’échec.
 
-**Ralentissement :** lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle que les formulaires AEM à traiter à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches (voir A propos du ralentissement).
+**Ralentissement :** lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle AEM processus des formulaires à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches (voir A propos du ralentissement).
 
 ## Paramètres du service Web Service {#web-service-service-settings}
 
@@ -756,11 +755,11 @@ Le service Web Service interagit avec les services Web en envoyant et en recevan
 
 Les paramètres ci-dessous sont disponibles pour le service Web Service.
 
-**Key Store :** chemin d’accès complet au fichier de stockage des clés qui contient la clé privée à utiliser pour l’authentification. Le serveur Forms doit être en mesure d’accéder au fichier.
+**Key Store :** chemin d’accès complet au fichier de stockage de clés contenant la clé privée à utiliser pour l’authentification. Le serveur Forms doit être en mesure d’accéder au fichier.
 
-**Mot de passe du stockage de clés :** mot de passe du fichier de stockage de clés.
+**Mot de passe du Key Store :** mot de passe du fichier de KeyStore.
 
-**Key Store Type :** type du fichier de stockage des clés. N’indiquez aucune valeur si vous souhaitez utiliser le type de fichier de stockage des clés par défaut configuré pour la machine virtuelle Java exécutant le serveur Forms. Dans le cas contraire, spécifiez une des valeurs suivantes :
+**Type de magasin de clés :** type du magasin de clés. N’indiquez aucune valeur si vous souhaitez utiliser le type de fichier de stockage des clés par défaut configuré pour la machine virtuelle Java exécutant le serveur Forms. Dans le cas contraire, spécifiez une des valeurs suivantes :
 
 * jks
 * pkcs12
@@ -769,7 +768,7 @@ Les paramètres ci-dessous sont disponibles pour le service Web Service.
 
 **Trust Store :** chemin d’accès complet au fichier Trust Store qui contient la clé publique du serveur de services Web.
 
-**Mot de passe Trust Store :** mot de passe du fichier Trust Store.
+**Mot de passe Trust Store :** mot de passe du fichier truststore.
 
 **Type de Trust Store :** type de Trust Store. N’indiquez aucune valeur si vous souhaitez utiliser le type de fichier de stockage des clés par défaut configuré pour la machine virtuelle Java exécutant le serveur Forms. Dans le cas contraire, spécifiez une des valeurs suivantes :
 
@@ -784,7 +783,7 @@ Le service XSLT Transformation (`XSLTService`) permet aux processus d’applique
 
 Le paramètre ci-dessous est disponible pour le service XSLT Transformation.
 
-**Factory Name :** nom qualifié complet de la classe Java à utiliser pour effectuer des transformations XSLT. Si aucune valeur n’est spécifiée, la valeur d&#39;usine par défaut configurée dans la machine virtuelle Java exécutant le serveur Forms est utilisée.
+**Nom d’usine :** nom qualifié complet de la classe Java à utiliser pour exécuter des transformations XSLT. Si aucune valeur n’est spécifiée, la valeur d&#39;usine par défaut configurée dans la machine virtuelle Java exécutant le serveur Forms est utilisée.
 
 ## Modification des paramètres de sécurité d’un service  {#modifying-security-settings-for-a-service}
 
@@ -867,9 +866,8 @@ Chaque service peut tirer parti des options de pool pour traiter les demandes d�
 1. Cliquez sur l’onglet Mise en pool.
 1. Dans la liste Stratégie de traitement de requête, sélectionnez Nouvelle instance pour chaque requête ou Instance unique pour toutes les requêtes.
 
-   **Instance unique pour toutes les requêtes :** une instance de service est créée et mise en cache lorsque la première requête arrive dans le conteneur. Chaque requête suivant cette demande utilise la même instance de service pour gérer la demande.
+   **Instance unique pour toutes les requêtes :**  une instance de service est créée et mise en cache lorsque la première requête entre dans le conteneur. Chaque requête suivant cette demande utilise la même instance de service pour gérer la demande.
 
    **Nouvelle instance pour chaque requête :** une nouvelle instance de service est créée pour chaque appel reçu.
 
 1. Cliquez sur Enregistrer.
-
