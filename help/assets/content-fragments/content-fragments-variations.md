@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1746'
 ht-degree: 92%
 
 ---
-
 
 # Variations – création de contenu de fragment {#variations-authoring-fragment-content}
 
@@ -185,7 +184,7 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 
 >[!CAUTION]
 >
->Le fragment de contenu doit avoir un dossier de langue (code ISO) valide en tant qu’ancêtre ; elle est utilisée pour déterminer le modèle de langue à utiliser.
+>le fragment de contenu doit avoir un dossier de langue (code ISO) valide en tant qu’ancêtre ; il est utilisé pour déterminer le modèle de langue à utiliser.
 >
 >Par exemple, `en/` comme dans le chemin d’accès suivant :
 >
@@ -197,10 +196,10 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 >
 >D’autres langues sont disponibles en tant que modules de modèle de langues sur le portail Distribution logicielle :
 >
->* [Français (fr) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Allemand (de) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italien (it) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espagnol (es) de la distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Français (fr) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Allemand (de) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italien (it) de Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Espagnol (es) de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 >
 
@@ -294,7 +293,7 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
    >* **Markdown** : le fichier ne sera pas visible, mais il sera toujours présent lorsque vous reviendrez au **texte enrichi**.
 
 
-## Gestion des variations  {#managing-variations}
+## Gestion des variations {#managing-variations}
 
 ### Création d’une variation {#creating-a-variation}
 
@@ -382,4 +381,3 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Sélectionnez **Synchroniser**. La variation est alors mise à jour et affichée.
-
