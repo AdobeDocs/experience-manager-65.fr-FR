@@ -9,18 +9,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: e0a261a2-518b-4984-a5b5-24f0b9222e24
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 76%
 
 ---
 
-
 # Modification des couleurs de l’interface {#changing-the-color-scheme-of-the-interface}
 
-Vous pouvez modifier les couleurs des différentes parties de l’interface utilisateur de l’espace de travail AEM Forms selon vos besoins. Voici quelques exemples de personnalisation des couleurs. Outre les étapes décrites dans cet article, voir [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+Vous pouvez modifier les couleurs des différentes parties de l’interface utilisateur de l’espace de travail AEM Forms selon vos besoins. Voici quelques exemples de personnalisation des couleurs. Outre les étapes décrites dans cet article, reportez-vous à la section [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Barre de navigation supérieure {#top-navigation-bar}
 
@@ -54,9 +53,9 @@ Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM 
    }
    ```
 
-## Composant de catégories {#category-component}
+## Composant de catégories  {#category-component}
 
-Le composant de catégories affiche les différentes catégories de tâches dans le volet de gauche. Pour modifier sa couleur, définissez la couleur d’arrière-plan dans l’élément `.category` du fichier CSS.
+Le composant de catégories affiche les différentes catégories de tâches dans le volet de gauche. Pour modifier sa couleur, définissez la couleur de fond dans l’élément `.category` du fichier CSS.
 
 ## Composant de tâches {#task-component}
 
