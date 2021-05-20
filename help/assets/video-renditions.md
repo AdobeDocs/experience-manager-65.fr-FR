@@ -5,14 +5,13 @@ uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
-translation-type: tm+mt
-source-git-commit: 66f46a34832254af74c72da16ec8ebe3eb8cd46d
+exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 79%
 
 ---
-
 
 # Rendus vidéo {#video-renditions}
 
@@ -44,4 +43,4 @@ Une fois que vous avez configuré le serveur proxy et créé les profils vidéo,
 >
 >La lecture audio ne fonctionne pas pour les fichiers OGG et WAV sur Microsoft Internet Explorer 11. Une erreur `Invalid Source` s’affiche sur la page des détails de la ressource pour les ressources avec l’extension OGG ou WAV.
 >
->Sur MS Edge et iPad, les fichiers OGG ne sont pas lus et génèrent une erreur de format non prise en charge.
+>Sous MS Edge et iPad, les fichiers OGG ne sont pas lus et génèrent une erreur de format non pris en charge.
