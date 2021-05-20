@@ -1,41 +1,40 @@
 ---
-title: Leaderboard Essentials
-seo-title: Leaderboard Essentials
-description: Présentation des fonctionnalités du tableau de bord
-seo-description: Présentation des fonctionnalités du tableau de bord
+title: Notions fondamentales relatives au tableau de bord
+seo-title: Notions fondamentales relatives au tableau de bord
+description: Présentation des fonctionnalités du tableau de classement
+seo-description: Présentation des fonctionnalités du tableau de classement
 uuid: 815a6928-b147-496d-9751-13159ad1304d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
-translation-type: tm+mt
-source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+exl-id: fd1b1749-13f9-4079-ae39-348676105852
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 8%
 
 ---
 
+# Notions fondamentales sur le tableau de bord {#leaderboard-essentials}
 
-# Leadboard Essentials {#leaderboard-essentials}
+Cette page fournit les informations essentielles pour utiliser la fonctionnalité de classement.
 
-Cette page fournit les informations essentielles pour travailler avec la fonction de classement.
+Avant d’inclure le composant de classement sur une page, il est nécessaire de configurer [Notation et badges des communautés](implementing-scoring.md).
 
-Avant d’inclure le composant Leadboard sur une page, il est nécessaire de configurer [le score des communautés et les badges](implementing-scoring.md).
+Voir [Notions fondamentales sur la notation et les badges](configure-scoring.md).
 
-Voir [Scoring and Badges Essentials](configure-scoring.md).
-
-## Essentials for Client-Side {#essentials-for-client-side}
+## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/gamification/composants/hbs/leadboard</td>
+   <td>social/gamification/components/hbs/Leadboard</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -52,7 +51,7 @@ Voir [Scoring and Badges Essentials](configure-scoring.md).
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="enabling-leaderboard.md">Fonctionnalité du tableau de bord</a></td>
+   <td>Voir <a href="enabling-leaderboard.md">Fonctionnalité de classement</a></td>
   </tr>
  </tbody>
 </table>
@@ -61,4 +60,4 @@ Voir [Scoring and Badges Essentials](configure-scoring.md).
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site communautaire qui comprend la fonction [Leaderboard](functions.md#leaderboard-function), comprend un composant `leaderboard` configuré.
+Une structure de site de communauté qui comprend la fonction [Leaderboard](functions.md#leaderboard-function), comprend un composant `leaderboard` configuré.
