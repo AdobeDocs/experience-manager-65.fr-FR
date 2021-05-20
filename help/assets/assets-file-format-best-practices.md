@@ -1,33 +1,32 @@
 ---
-title: Recommandations relatives au traitement des formats de fichier pris en charge
-description: Recommandations relatives au traitement des différents types de fichiers pris en charge à l’aide de  [!DNL Experience Manager Assets].
+title: Bonnes pratiques relatives au traitement des formats de fichiers pris en charge
+description: Bonnes pratiques pour traiter les différents types de fichiers pris en charge à l’aide de  [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Administrator
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Gestion des ressources,Outils de développement
+exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 46%
 
 ---
 
-
 # Meilleures pratiques relatives au format de fichier des ressources {#assets-file-format-best-practices}
 
-[!DNL Adobe Experience Manager Assets] prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques d&#39;Adobes prises en charge sont [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer et [!DNL Adobe InDesign Server]. En outre, [!DNL Experience Manager Assets] prend en charge les bibliothèques tierces, notamment [!DNL ImageMagick], [!DNL TwelveMonkeys], etc.
+[!DNL Adobe Experience Manager Assets] prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques d’Adobe prises en charge sont les suivantes : [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer et [!DNL Adobe InDesign Server]. En outre, [!DNL Experience Manager Assets] prend en charge les bibliothèques tierces, notamment [!DNL ImageMagick], [!DNL TwelveMonkeys], etc.
 
 Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AEM Assets](/help/assets/assets-formats.md).
 
 >[!TIP]
 >
->Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez le service à la clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Collaborez avec le service à la clientèle d’Adobe pour mettre en oeuvre ces meilleures pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires des Adobes. [!DNL Experience Manager] peut ne pas traiter de fichiers PSB très haute résolution de plus de 3 000 x 2 3 000 pixels.
+>Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez l’assistance clientèle Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Collaborez avec le représentant de l’assistance clientèle d’Adobe afin de mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires de l’Adobe. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## [!DNL Adobe Camera Raw] bibliothèque  {#adobe-camera-raw-library}
 
-Pour des performances optimales, l’Adobe recommande d’utiliser la bibliothèque [!DNL Adobe Camera Raw] pour les fichiers RAW et DNG.
+Pour des performances optimales, Adobe recommande d’utiliser la bibliothèque [!DNL Adobe Camera Raw] pour les fichiers RAW et DNG.
 
-[!DNL Adobe Camera Raw] prend en charge le profil de couleurs CMJN en tant qu’entrée. Cependant, elle génère la sortie dans l’espace colorimétrique RVB et ne la prend en charge qu’au format JPEG. Elle ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
+[!DNL Adobe Camera Raw] prend en charge le profil colorimétrique CMJN en tant qu’entrée. Cependant, elle génère la sortie dans l’espace colorimétrique RVB et ne la prend en charge qu’au format JPEG. Elle ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
 
 Pour plus d’informations, voir [Prise en charge Camera Raw](/help/assets/camera-raw.md).
 
@@ -43,7 +42,7 @@ Les miniatures et les aperçus générés à l’aide de l’interpréteur de PD
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-Adobe vous recommande d’utiliser [!DNL Adobe InDesign Server] pour extraire des rendus spécifiques à [!DNL Adobe InDesign], tels que IDML et HTML. Pour plus d’informations, voir [Ajouter des ressources Experience Manager en tant que références dans Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
+Adobe vous recommande d’utiliser [!DNL Adobe InDesign Server] pour extraire des rendus spécifiques à [!DNL Adobe InDesign], tels que IDML et HTML. Pour plus d’informations, voir [Ajout de ressources de Experience Manager comme références dans Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
@@ -64,7 +63,7 @@ Pour savoir comment configurer la bibliothèque [!DNL ImageMagick] dans [!DNL Ex
 
 ## Bibliothèque de transcodage d’imagerie (ITL) {#image-transcoding-library}
 
-La bibliothèque de transcodage d’images d’Adobe est une solution de traitement d’images qui exécute des fonctions de gestion d’images de base, notamment le codage d’images, le transcodage, le ré-échantillonnage, le redimensionnement, etc.
+La bibliothèque ITL est une solution de traitement des images qui exécute des fonctions essentielles de gestion des images, notamment le codage, le transcodage, le rééchantillonnage, le redimensionnement des images, etc.
 
 La bibliothèque de transcodage d’imagerie (ITL) prend en charge les types MIME suivants :
 
@@ -76,4 +75,4 @@ La bibliothèque de transcodage d’imagerie (ITL) prend en charge les types MIM
 * ICO
 * ICN
 
-Pour plus d’informations, voir [Bibliothèque de transcodage d’images](/help/assets/imaging-transcoding-library.md).
+Pour plus d’informations, voir [Bibliothèque de transcodage d’imagerie](/help/assets/imaging-transcoding-library.md).
