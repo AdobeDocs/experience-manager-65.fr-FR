@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
-feature: Spin Sets,Asset Management
+feature: Visionneuses à 360°, Gestion des ressources
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1829'
 ht-degree: 96%
 
 ---
-
 
 # Visionneuses à 360 {#spin-sets}
 
@@ -25,13 +24,13 @@ Une visionneuse à 360° simule l’action consistant à faire pivoter un objet 
 
 Une visionneuse à 360° simule une expérience de visionnage à 360°. Dynamic Media fournit des visionneuses à 360° à axe unique avec lesquelles les observateurs peuvent faire pivoter un élément. En outre, les utilisateurs peuvent effectuer un zoom et un panoramique de « forme libre » sur n’importe quelle vue en quelques clics de souris. Ainsi, les utilisateurs peuvent examiner un élément de plus près, depuis un point de vue spécifique.
 
-Les visionneuses à 360° sont désignées par une bannière avec le mot **[!UICONTROL SPINSET.]** De plus, si la visionneuse à 360° est publiée, la date de publication, indiquée par l’icône **[!UICONTROL Monde]**, est sur la bannière avec la date de dernière modification, indiquée par l’icône **[!UICONTROL Crayon]**.
+Les visionneuses à 360° sont désignées par une bannière contenant le mot **[!UICONTROL SPINSET.]** De plus, si la visionneuse à 360° est publiée, la date de publication, indiquée par l’icône **[!UICONTROL World]** figure sur la bannière avec la date de dernière modification, indiquée par l’icône **[!UICONTROL crayon]** .
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur Ressources, voir [Gestion des ressources](/help/assets/manage-assets.md).
+>Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources](/help/assets/manage-assets.md).
 
 ## Démarrage rapide : Visionneuse à 360° {#quick-start-spin-sets}
 
