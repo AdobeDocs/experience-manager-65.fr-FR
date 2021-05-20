@@ -10,32 +10,31 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
 
 ---
 
+# Modifier l’aspect (HBS) {#alter-the-appearance-hbs}
 
-# Modifier l&#39;apparence (HBS) {#alter-the-appearance-hbs}
+Maintenant que les composants du système de commentaires personnalisé dans le répertoire de l’application (/apps) sont en place, avec un resourceSuperType référençant le système de commentaires par défaut et le modèle/affichage personnalisé enregistré, il est possible de modifier l’implémentation.
 
-Maintenant que les composants du système de commentaires personnalisés dans le répertoire de l&#39;application (/apps) sont en place, avec un resourceSuperType référençant le système de commentaires par défaut et le modèle/Vue personnalisé enregistré, il est possible de modifier l&#39;implémentation.
-
-Pour une simple démonstration, une fonction visuelle, l’avatar affiché par l’utilisateur connecté qui publie un commentaire, est supprimée.
+Pour une démonstration simple, l’avatar affiché pour l’utilisateur connecté qui publie un commentaire est supprimé.
 
 >[!NOTE]
 >
->Pour utiliser l&#39;extension, l&#39;instance du système de commentaires d&#39;un site Web à affecter (/content) doit définir resourceType comme système de commentaires personnalisé.
+>Pour utiliser l’extension , l’instance du système de commentaires d’un site web à affecter (/content) doit définir son resourceType comme système de commentaires personnalisé.
 
 ## Modification des scripts HBS {#modify-the-hbs-scripts}
 
 Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* Ouvrez [/apps/custom/components/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Ouvrez [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * Mettez en commentaire la balise qui contient l’avatar pour un commentaire (~ ligne 21) :
+   * Commentez la balise qui contient l’avatar d’une publication de commentaire (~ ligne 21) :
 
       ```
         <!--
@@ -43,7 +42,7 @@ Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md
          -->
       ```
 
-* Ouvrez [/apps/custom/components/commentaires/**commentaires.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Ouvrez [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Mettez en commentaire la balise qui contient l’avatar pour la prochaine entrée de commentaire (~ ligne 44) :
 
@@ -53,30 +52,30 @@ Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md
          -->
       ```
 
-* Sélectionner **Enregistrer tout**
+* Sélectionnez **Enregistrer tout**.
 
 ### Répliquer l’application personnalisée {#replicate-custom-app}
 
-Une fois l’application modifiée, il est nécessaire de reproduire à nouveau le composant personnalisé.
+Une fois l’application modifiée, il est nécessaire de répliquer à nouveau le composant personnalisé.
 
-L&#39;une des façons de le faire est :
+Pour ce faire, procédez comme suit :
 
-* Dans le menu principal
+* À partir du menu principal
 
    * Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**.
-   * Sélectionnez **[!UICONTROL Activer l&#39;arbre]**.
+   * Sélectionnez **[!UICONTROL Activer l’arborescence]**.
    * Définissez `Start Path` sur `/apps/custom`.
-   * Désélectionnez **[!UICONTROL Uniquement modifié]**.
-   * Sélectionnez le bouton **[!UICONTROL Activer]**.
+   * Désélectionnez **[!UICONTROL Uniquement Modifié]**.
+   * Sélectionnez le bouton **[!UICONTROL Activer]** .
 
-### Commentaire modifié de la vue sur l’exemple de page publié {#view-modified-comment-on-published-sample-page}
+### Afficher le commentaire modifié sur l’exemple de page publié {#view-modified-comment-on-published-sample-page}
 
-[En poursuivant l’](/help/communities/extend-sample-page.md#publish-sample-page) expérience de l’instance de publication, toujours connectée en tant que même utilisateur, il est maintenant possible d’actualiser la page dans l’environnement de publication afin de vue la modification de suppression de l’avatar :
+[En poursuivant l’](/help/communities/extend-sample-page.md#publish-sample-page) expérience sur l’instance de publication, toujours connecté en tant qu’utilisateur identique, il est désormais possible d’actualiser la page dans l’environnement de publication pour afficher la modification afin de supprimer l’avatar :
 
-![Contenu modifié par vue](assets/view-modified-content.png)
+![view-modified-content](assets/view-modified-content.png)
 
-### Exemple de package d&#39;extension de commentaire {#sample-comment-extension-package}
+### Exemple de module d’extension de commentaire {#sample-comment-extension-package}
 
-Vous trouverez ci-joint un package de l&#39;application de commentaires personnalisés créée dans ce didacticiel.
+Vous trouverez ci-joint un package de l’application de commentaires personnalisés créée dans ce tutoriel.
 
 [Obtenir le fichier](assets/sample-comment-extension-6-1-fp3.zip)
