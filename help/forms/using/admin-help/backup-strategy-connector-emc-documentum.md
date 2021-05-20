@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e83b1a59-a730-4d22-9d58-1c9c38e5d534
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: b759b936-5907-4311-a5cc-60f321476368
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
 
 ---
-
 
 # Stratégie de sauvegarde pour les utilisateurs de Connector for EMC Documentum {#backup-strategy-for-connector-for-emc-documentum-users}
 
@@ -31,4 +30,3 @@ Restaurez l’environnement AEM forms à l’aide du référentiel ECM en procé
 
 * Restaurez votre système ECM en suivant les instructions fournies dans [Restauration d’EMC Documentum Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server).
 * Restaurez AEM forms en suivant les instructions fournies dans le présent document.
-
