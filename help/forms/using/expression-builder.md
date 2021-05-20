@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Correspondence Management
+exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 83%
 
 ---
-
 
 # Fonctions distantes du Générateur d’expression{#remote-functions-in-expression-builder}
 
@@ -25,7 +24,7 @@ Avec le Générateur d’expression, vous pouvez créer des expressions ou des c
 
 ## Création d’expressions et de fonctions distantes avec Expression Builder {#creating-expressions-and-remote-functions-with-expression-builder}
 
-Le créateur d’Expressions utilise en interne les bibliothèques EL JSP. L’expression adhère donc à la syntaxe JSPEL. Pour plus d’informations, voir [Exemples d’expressions](#exampleexpressions).
+Le Générateur d’expression utilise en interne des bibliothèques EL JSP. L’expression est donc conforme à la syntaxe JSPEL. Pour plus d’informations, voir [Exemples d’expressions](#exampleexpressions).
 
 ![Générateur d’expression](assets/expressionbuilder.png)
 
@@ -43,7 +42,7 @@ Vous trouverez ci-dessous quelques exemples d’EL JSP couramment utilisés que 
 
 Vous trouverez plus d’informations dans [Spécification de l’EL JSP](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Le gestionnaire d’expression côté client ne prend pas en charge certaines variables et fonctions de la spécification de l’EL JSP, plus précisément :
 
-* Les index de collection et les clés de mappage (utilisant la notation []) ne sont pas pris en charge dans les noms de variable pour les expressions évaluées côté client.
+* Les index de collection et les clés de mappage (à l’aide de la notation []) ne sont pas pris en charge dans les noms de variable pour les expressions évaluées côté client.
 * Voici une liste des types de paramètre ou types de retour de fonctions utilisées dans les expressions :
 
    * java.lang.String
@@ -79,7 +78,7 @@ Les fonctions distantes offrent la possibilité d’utiliser la logique personna
 Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonctions distantes à utiliser dans les expressions. Pour créer un lot personnalisé afin d’exporter vos propres fonctions distantes, effectuez les tâches suivantes. Cet onglet indique comment créer une fonction personnalisée tirant parti de sa chaîne d’entrée.
 
 1. Définissez une interface pour le service OSGi, contenant des méthodes à exporter pour l’utilisation par Expression Manager.
-1. Déclarez les méthodes sur l’interface A et annotez-les avec l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L&#39;annotation ServiceMethod possède les attributs facultatifs suivants, qui peuvent également être spécifiés :
+1. Déclarez les méthodes dans l’interface A et annotez-les avec l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L’annotation ServiceMethod présente les attributs facultatifs suivants, qui peuvent également être spécifiés :
 
    1. **Enabled** : indique si la méthode est activée. Expression Manager ignore toute méthode désactivée.
    1. **familyId** : indique la famille (groupe) de méthodes. Si cet attribut n’est pas spécifié, Expression Manager présume que la méthode appartient à la famille par défaut. Il n’y a aucun registre de familles (à l’exception de celui par défaut) d’où sont sélectionnées les fonctions. Expression Manager crée le registre de façon dynamique en prenant en compte l’ensemble des ID de famille spécifiés par toutes les fonctions exportées par les différents lots. Assurez-vous que l’ID spécifié ici est raisonnablement lisible étant donné qu’il apparaît également dans l’interface utilisateur de création d’expression.
@@ -97,7 +96,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
    }
    ```
 
-   Les paramètres des méthodes peuvent également être annotés facultativement à l’aide de l’annotation @ServiceMethodParameter (com.adobe.exm.expeval.ServiceMethodParameter). Cette annotation est uniquement utilisée pour spécifier les noms intelligibles et les descriptions des paramètres de méthode à utiliser dans l’interface utilisateur de création. Assurez-vous que les paramètres et les valeurs renvoyées relatives aux méthodes d’interface correspondent à l’un des types suivants :
+   Les paramètres des méthodes peuvent également être annotés éventuellement à l’aide de l’annotation @ServiceMethodParameter (com.adobe.exm.expeval.ServiceMethodParameter). Cette annotation est uniquement utilisée pour spécifier les noms intelligibles et les descriptions des paramètres de méthode à utiliser dans l’interface utilisateur de création. Assurez-vous que les paramètres et les valeurs renvoyées relatives aux méthodes d’interface correspondent à l’un des types suivants :
 
    * java.lang.String
    * java.lang.Character
@@ -111,7 +110,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
    * java.lang.Byte
    * byte
    * java.lang.Double
-   * Doublon
+   * Double
    * java.lang.Long
    * Long
    * java.lang.Float
@@ -158,7 +157,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Voici des exemples d’échantillons à utiliser :
 
-* **GoodFunctions.jar.** zipis est le fichier jar avec un lot contenant un exemple de définition de fonction distante. Téléchargez le fichier GoodFunctions.jar.zip et décompressez-le pour obtenir le fichier jar.
+* **GoodFunctions.jar.** zipis le fichier jar avec un lot contenant un exemple de définition de fonction distante. Téléchargez le fichier GoodFunctions.jar.zip et décompressez-le pour obtenir le fichier jar.
 * **GoodFunctions.zip** est le package de code source pour définir une fonction distante personnalisée et créer un lot pour elle.
 
 GoodFunctions.jar.zip
