@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
-feature: 360 VR Video
+feature: Vidéo 360 VR
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1097'
 ht-degree: 96%
 
 ---
-
 
 # Vidéo 360/VR {#vr-video}
 
