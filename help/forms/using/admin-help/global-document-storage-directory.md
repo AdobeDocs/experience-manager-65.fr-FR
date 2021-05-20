@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 97%
 
 ---
-
 
 # Répertoire de stockage global de documents{#global-document-storage-directory}
 
@@ -99,11 +98,10 @@ AEM forms est constitué de deux types de fichiers de déploiement : les conten
 * adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear
 
-L’implémentation d’AEM forms implique le déploiement des fichiers EAR assemblés et des fichiers de prise en charge sur le serveur d’applications sur lequel vous envisagez d’exécuter la solution AEM forms. Si vous avez configuré et assemblé plusieurs modules, les modules déployables sont contenus dans les fichiers EAR déployables. Pour déployer ces fichiers, copiez-les dans le répertoire d’accueil *[du serveur d’applications]*\server\all\deploy directory.
+L’implémentation d’AEM forms implique le déploiement des fichiers EAR assemblés et des fichiers de prise en charge sur le serveur d’applications sur lequel vous envisagez d’exécuter la solution AEM forms. Si vous avez configuré et assemblé plusieurs modules, les modules déployables sont contenus dans les fichiers EAR déployables. Pour déployer ces fichiers, copiez-les sur la *[page d’accueil du serveur d’applications]*\server\all\deploy directory.
 
 Les modules et les fichiers d’archive d’AEM forms sont compressés dans des fichiers JAR. Comme ce ne sont pas des fichiers J2EE, ils ne sont pas déployés sur le serveur d’applications. Ils sont copiés dans le répertoire de stockage global de documents et une référence à leur emplacement est stockée dans la base de données AEM forms. C’est pourquoi le répertoire de stockage global de documents doit être partagé par tous les nœuds de la grappe. Ces derniers doivent avoir accès au répertoire de stockage central des DSC.
 
 >[!NOTE]
 >
 >avant de déployer les conteneurs de service, vérifiez que vous avez créé et configuré le répertoire de stockage global de documents (voir [Configuration du répertoire de stockage global de documents](global-document-storage-directory.md#configuring-the-gds-directory)).
-
