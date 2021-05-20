@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
-translation-type: tm+mt
-source-git-commit: 7caf09f7020c066072eac04a349a19b144dfeb7b
+exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 91%
 
 ---
-
 
 # Lancement des API Document Services depuis un processus AEM  {#initiate-document-services-apis-from-aem-workflow}
 
@@ -28,7 +27,7 @@ AEM Forms fournit des workflows personnalisés pour appeler les API de service A
 
 ### Flux de travail Invoke DDX {#invoke-ddx-workflow}
 
-Le flux de travaux **Appeler DDX** appelle l&#39;API du service Assembler `Invoke`, que vous pouvez utiliser pour assembler ou désassembler des documents, ajouter un filigrane à un PDF, etc.
+Le workflow **Invoke DDX** appelle l’ `Invoke` API du service Assembler, que vous pouvez utiliser pour assembler ou désassembler des documents, ajouter un filigrane à un PDF, etc.
 
 1. Faites glisser l’étape de flux de travail **[!UICONTROL Invoke DDX]** sous l’onglet Forms Workflow dans Sidekick.
 1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
@@ -46,7 +45,7 @@ Le flux de travail Invoke DDX nécessite les documents d’entrée suivants :
 
 * **Create Map from PayLoad** : si vous activez cette option, les documents sous le dossier de charge sont ajoutés au mappage de document d’entrée pour l’API `invoke` dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
 
-* **Carte** du Document d’entrée : Indique la carte du Document d’entrée. Vous pouvez ajouter plusieurs entrées, où chaque entrée spécifie la clé du document dans la carte et la source du document.
+* **Input Document’s Map** : Spécifie la carte du document d’entrée. Vous pouvez ajouter plusieurs entrées, où chaque entrée spécifie la clé du document dans la carte et la source du document.
 
 #### Options d&#39;environnement {#environment-options}
 
@@ -61,7 +60,7 @@ L’onglet Environment Options permet de définir différentes options de traite
 
 Selon input DDX, l’API d’appel peut produire plusieurs documents de sortie. L’onglet Output documents vous permet de sélectionner le document de sortie à enregistrer.
 
-1. *Enregistrer la sortie dans la charge* : Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile si celle-ci est un fichier.
+1. *Enregistrer la sortie dans la charge utile* : Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile si la charge est un fichier .
 1. *Output Document’s Map* : permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Output document peut écraser la charge ou être enregistré dans le dossier de charge. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
 
 1. *Job Log* : indique l’emplacement d’enregistrement du document de journal de tâche, ce qui peut être utile pour le dépannage des échecs.
@@ -160,4 +159,3 @@ Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non i
 * Linearized PDF : indique si le PDF généré doit être optimisé pour l’affichage Web.
 * *Tagged PDF* : indique si le PDF généré est accessible.
 * *XCI document* : indique le chemin d’accès au fichier XCI.
-
