@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 73%
 
 ---
 
-
 # Ajout de pièces jointes{#adding-attachments}
 
-## Ajouter des pièces jointes dans les formulaires synchronisés avec le serveur AEM Forms Workflow (AEM Forms on JEE) {#adding-annotations}
+## Ajout de pièces jointes dans les formulaires synchronisés avec le serveur de processus AEM Forms (AEM Forms on JEE) {#adding-annotations}
 
-L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé depuis un serveur de flux de travail AEM Forms, vos pièces jointes sont ajoutées au formulaire. Vous pouvez appuyer sur le bouton de pièce jointe ![attachments-app](assets/attachments-app.png) pour afficher toutes les pièces jointes d’un formulaire. La notification rouge indique le nombre de pièces jointes du formulaire. S’il n’y a aucune pièce jointe dans le formulaire, le bouton rouge des notifications ne s’affiche pas. S’il n’y a aucune pièce jointe dans le formulaire, lorsque vous appuyez sur le bouton Pièces jointes ![Joindre](assets/attch.png), vous avez la possibilité de joindre des photos ou des annotations.
+L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé depuis un serveur de flux de travail AEM Forms, vos pièces jointes sont ajoutées au formulaire. Vous pouvez appuyer sur le bouton de pièce jointe ![attachments-app](assets/attachments-app.png) pour afficher toutes les pièces jointes d’un formulaire. La notification rouge indique le nombre de pièces jointes du formulaire. S’il n’y a aucune pièce jointe dans le formulaire, vous ne pouvez pas voir le bouton de notification rouge. S’il n’y a aucune pièce jointe dans le formulaire, lorsque vous appuyez sur le bouton pièces jointes ![attch](assets/attch.png), vous avez la possibilité de joindre des photos ou des annotations.
 
 Vous avez le choix entre :
 
@@ -30,11 +29,11 @@ Vous avez le choix entre :
 
 * **Appareil photo** : vous permet de prendre une photo et de l’ajouter au formulaire. 
 
-* **Notes** : vous permet d’ajouter une saisie tactile ou une note de texte. Utilisez ![saisie tactile](assets/scribble.png) pour ajouter une saisie tactile et ![clavier](assets/keyboard.png) pour ajouter une note de texte.
+* **Notes** : vous permet d’ajouter une saisie tactile ou une note de texte. Utilisez ![Griffonnage](assets/scribble.png) pour ajouter une annotation et ![clavier](assets/keyboard.png) pour ajouter une note de texte.
 
 >[!NOTE]
 >
->Les pièces jointes ajoutées par un utilisateur sont visibles par les autres utilisateurs de l’application AEM Forms. Les autres utilisateurs ne peuvent pas supprimer les pièces jointes ajoutées par un utilisateur.
+>Les pièces jointes ajoutées par un utilisateur sont visibles par d’autres utilisateurs de l’application AEM Forms. Les autres utilisateurs ne peuvent pas supprimer les pièces jointes ajoutées par un utilisateur.
 
 
 ### L’écran Pièces jointes {#the-attachments-screen}
@@ -49,13 +48,13 @@ Vous pouvez utiliser le bouton **+** sur l’écran Pièces jointes pour joindre
 
 Vous pouvez utiliser l’appareil photo de votre périphérique mobile ou des images enregistrées dans votre périphérique pour joindre une photo dans le formulaire.
 
-1. Appuyez sur le bouton de pièce jointe ![atteler](assets/attch.png) au bas de la fenêtre.
+1. Appuyez sur le bouton de pièce jointe ![attch](assets/attch.png) au bas de la fenêtre.
 1. Appuyez sur **Galerie** ou **Appareil photo** dans la fenêtre contextuelle qui s’affiche.
 1. Selon l’option que vous sélectionnez, effectuez ce qui suit :
 
    1. Si vous sélectionnez **Appareil photo**.
 
-      Prenez une photo. Appuyez ensuite sur le bouton **Utiliser** ![utiliser-pic](assets/use-pic.png).
+      Prenez une photo. Appuyez ensuite sur le bouton **Utiliser** ![use-pic](assets/use-pic.png) .
 
       Ou appuyez sur le bouton **Reprendre** ![reprendre](assets/retake.png) pour reprendre la photo.
 
@@ -67,7 +66,7 @@ Vous pouvez utiliser l’appareil photo de votre périphérique mobile ou des im
 
 L’option **Notes** vous permet d’ajouter des annotations à main levée et du texte en pièces jointes dans votre formulaire.
 
-1. Appuyez sur le bouton de pièce jointe ![atteler](assets/attch.png) au bas de la fenêtre.
+1. Appuyez sur le bouton de pièce jointe ![attch](assets/attch.png) au bas de la fenêtre.
 1. Appuyez sur **Notes** dans la fenêtre contextuelle qui s’affiche.
 1. Dans l’interface utilisateur de Notes qui est lancée, saisissez des annotations à main levée.
 
