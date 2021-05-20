@@ -10,7 +10,6 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-translation-type: tm+mt
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '1275'
@@ -28,7 +27,7 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 
 >[!NOTE]
 >
->Les chaînes URL ne sont disponibles que pour les rendus dynamiques de ressources. Ils ne sont actuellement pas disponibles pour les ressources statiques résidant dans DAM et non sur le serveur Dynamic Media. Le bouton URL n’apparaît pas pour les rendus statiques.
+>Les chaînes URL ne sont disponibles que pour les rendus dynamiques de ressources. Ils ne sont actuellement pas disponibles pour les ressources statiques qui résident dans la gestion des ressources numériques et non dans le serveur Dynamic Media. Le bouton URL n’apparaît pas pour les rendus statiques.
 
 Voir aussi [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
@@ -140,7 +139,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Par exemple, si l’ID d’enregistrement est `87654321|MyCompany`, le nom du client est `MyCompany`.
 
-1. Près du coin supérieur gauche de la page, appuyez sur **[!UICONTROL Cloud Services]**, puis appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Général > CRXDE Lite.]**
+1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Cloud Services]**, puis appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Général > CRXDE Lite.]**
 1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java Content Repository).
 
    Par exemple, le chemin URL du rendu vidéo est similaire au suivant :
