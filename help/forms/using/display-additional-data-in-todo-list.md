@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 90%
 
 ---
-
 
 # Affichage de données supplémentaires dans la liste Tâches{#displaying-additional-data-in-todo-list}
 
@@ -37,7 +36,7 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Pour afficher des informations supplémentaires pour une tâche, les paires clé-valeur correspondantes doivent être ajoutées dans le bloc de tâche de `translation.json`.
 
-   Par exemple, changez `/apps/ws/locales/en-US/translation.json` pour l’anglais :
+   Par exemple, modifiez `/apps/ws/locales/en-US/translation.json` pour l’anglais :
 
    ```json
    "task" : {
