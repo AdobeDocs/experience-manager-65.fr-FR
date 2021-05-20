@@ -11,7 +11,6 @@ docset: aem65
 feature: Images interactives
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '4332'
@@ -369,7 +368,7 @@ Notez que l’image des trois hommes est une balise `IMG` statique :
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-L’intégration revient simplement à supprimer la balise `IMG` et à la remplacer par le code intégré copié à partir d’AEM Assets. Vous pouvez voir le résultat dans l’URL suivante qui affiche l’image interactive pouvant être consultée sur la page avec trois zones réactives de cercle :
+L’intégration revient simplement à supprimer la balise `IMG` et à la remplacer par le code intégré copié à partir d’AEM Assets. Vous pouvez voir le résultat dans l’URL suivante qui affiche l’image interactive Shoppable sur la page avec trois zones réactives en cercle :
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
 
