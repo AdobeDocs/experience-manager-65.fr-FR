@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
-feature: Image Sets,Asset Management
+feature: Visionneuses d’images, Gestion des ressources
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2076'
 ht-degree: 96%
 
 ---
-
 
 # Visionneuses d’images {#image-sets}
 
@@ -35,7 +34,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur Ressources, voir [Gestion des ressources](/help/assets/manage-assets.md).
+>Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources](/help/assets/manage-assets.md).
 
 ## Démarrage rapide : Visionneuses d’images {#quick-start-image-sets}
 
@@ -56,7 +55,7 @@ Pour démarrer rapidement :
    Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
-   >Les jeux de lots sont créés par le système IPS (Image Production System) dans le cadre de l’assimilation des ressources et ne sont disponibles qu’en mode Dynamic Media - Scene7.
+   >Les ensembles par lots sont créés par IPS (Image Production System) dans le cadre de l’assimilation des ressources et sont disponibles uniquement en mode Dynamic Media - Scene7.
 
    Voir [Préparation du chargement de ressources de visionneuse d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
 
@@ -75,7 +74,7 @@ Pour démarrer rapidement :
 
 1. [Publiez une visionneuse d’images.](/help/assets/publishing-dynamicmedia-assets.md)
 
-   La publication d’une visionneuse d’images active l’URL et le code incorporé. En outre, vous devez [publier tous les paramètres prédéfinis de visionneuse personnalisés](/help/assets/managing-viewer-presets.md) que vous avez créés. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
+   La publication d’une visionneuse d’images active l’URL et le code intégré. En outre, vous devez [publier tous les paramètres prédéfinis de visionneuse personnalisés](/help/assets/managing-viewer-presets.md) que vous avez créés. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
 
 1. [Liez des URL à l’application web](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](/help/assets/embed-code.md).
 
@@ -178,7 +177,7 @@ Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou
 
 >[!IMPORTANT]
 >
->Les jeux de lots sont créés par le système IPS [Image Production System] dans le cadre de l’assimilation des ressources et ne sont disponibles qu’en mode Dynamic Media - Scene7.)
+>Les ensembles par lots sont créés par IPS [Image Production System] dans le cadre de l’assimilation des ressources et sont disponibles uniquement en mode Dynamic Media - Scene7.)
 
 Notez toutefois que les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot *ne s’affichent pas* dans l’interface utilisateur. Vous pouvez afficher ces visionneuses de trois manières différentes. (Ces méthodes sont disponibles même si vous avez créé les visionneuses d’images dans l’interface utilisateur.)
 
