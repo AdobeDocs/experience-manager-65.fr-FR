@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 93%
 
 ---
-
 
 # Configuration des calendriers professionnels {#configuring-business-calendars}
 
@@ -40,11 +39,11 @@ Si certains utilisateurs de votre entreprise ont des jours non ouvrés différen
 
 1. Choisissez la méthode appropriée d’association du calendrier professionnel à un utilisateur, parmi les deux suivantes :
 
-   **Appartenance à un groupe :** vous pouvez affecter un calendrier professionnel à un utilisateur en fonction de son appartenance à un groupe. Dans ce cas, chaque utilisateur du groupe utilise le même calendrier professionnel. 
+   **Appartenance à un groupe :** vous pouvez attribuer un calendrier professionnel à un utilisateur en fonction de son appartenance à un groupe. Dans ce cas, chaque utilisateur du groupe utilise le même calendrier professionnel. 
 
    Si un utilisateur est membre de deux groupes et si ces groupes sont associés à deux calendriers professionnels différents, AEM Forms utilise le premier calendrier qui s’affiche dans les résultats de recherche. Vous devez alors envisager d’utiliser des clés de calendriers professionnels pour associer les utilisateurs aux calendriers professionnels.
 
-   **Clés de calendrier professionnel :** vous pouvez affecter un calendrier professionnel à un utilisateur en fonction d’une clé de calendrier professionnel, paramètre défini dans User Management. Associez ensuite la clé de calendrier professionnel à un calendrier professionnel dans le processus des formulaires. 
+   **Clés de calendrier professionnel :** vous pouvez attribuer un calendrier professionnel à un utilisateur en fonction d’une clé de calendrier professionnel, paramètre défini dans User Management. Associez ensuite la clé de calendrier professionnel à un calendrier professionnel dans le processus des formulaires. 
 
     Les clés de calendrier professionnel sont attribuées à des utilisateurs en fonction du domaine utilisé, tel que le domaine d’entreprise, local ou hybride Pour plus d’informations sur la configuration de domaines, voir [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains). 
 
@@ -74,7 +73,7 @@ Si votre organisation comprend différents groupes d’utilisateurs pour lesquel
    Pour modifier un calendrier professionnel existant, sélectionnez-le dans la liste déroulante.
 
 1. Sous Jours non ouvrés par défaut, sélectionnez les jours non ouvrés par défaut de votre choix dans la semaine (week-ends, par exemple).
-1. [] FacultatifSélectionnez Utiliser les heures de bureau et spécifiez les heures de début et de fin pour les jours ouvrés.
+1. [] Facultatif : sélectionnez Utiliser les heures de bureau et spécifiez les heures de début et de fin pour les jours ouvrés.
 
    Si vous sélectionnez cette option, un événement qui se produit avant la plage horaire définie est déplacé au début de la plage horaire et un événement qui se produit après est déplacé à l’heure de début du prochain jour ouvré.
 
@@ -82,7 +81,7 @@ Si votre organisation comprend différents groupes d’utilisateurs pour lesquel
 
 1. Dans le calendrier de gauche, cliquez deux fois sur un autre jour non ouvré, comme congés. Vous ne pouvez pas sélectionner de jours sur des périodes antérieures. Les jours non ouvrés sélectionnés apparaissent dans une liste sur la droite et la date s’affiche deux fois sur une seule ligne. Sélectionnez la date sur la gauche pour pouvoir taper le nom ou la description du jour non ouvré.
 
-   Pour retirer un jour non ouvré de la liste, cliquez sur ![bus_cal_trash](assets/bus_cal_trash.png) en regard de ce jour.
+   Pour supprimer un jour non ouvré de la liste, cliquez sur ![bus_cal_trash](assets/bus_cal_trash.png) en regard du jour.
 
 1. [] FacultatifSi ce calendrier doit être le calendrier par défaut, sélectionnez Calendrier par défaut. Le calendrier par défaut est utilisé lorsqu’il n’existe aucune autre association de calendrier pour des événements utilisateur ou si aucun calendrier professionnel n’est spécifié pour l’événement de temporisation ou le service d’attente. Vous ne pouvez pas supprimer le calendrier par défaut.
 1. La définition des jours non ouvrés terminée, sélectionnez Calendrier activé pour activer le calendrier, puis cliquez sur Enregistrer.
@@ -100,7 +99,7 @@ Il existe deux méthodes pour associer un calendrier professionnel à un utilisa
 ### Association de calendriers professionnels à des utilisateurs à partir de clés de calendrier professionnel  {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Calendriers professionnels, puis cliquez sur l’onglet Association.
-1. IntheSystem Will Use liste, sélectionnez User Manager Business Calendar Key Resolution.
+1. Dans la liste Le système va utiliser , sélectionnez Résolution de la clé du calendrier professionnel User Manager.
 1. Sélectionnez Afficher la clé du calendrier professionnel du gestionnaire des utilisateurs. Une liste des clés de calendrier professionnel définies dans User Management s’affiche.
 
    Pour les domaines locaux et hybrides, la liste affiche les valeurs entrées dans le champ Clé du calendrier professionnel de User Management. Pour les domaines d’entreprise (LDAP), la liste affiche l’ensemble unique provenant du champ LDAP (par exemple, « pays ») configuré dans les paramètres de domaine LDAP.
@@ -113,7 +112,7 @@ Il existe deux méthodes pour associer un calendrier professionnel à un utilisa
 ### Association de calendriers professionnels à des utilisateurs et des groupes à partir de groupes de services d’annuaires  {#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Calendriers professionnels, puis cliquez sur l’onglet Association.
-1. IntheSystem Utilisera la liste, sélectionnez Groupes définis par le serveur d&#39;annuaire.
+1. Dans la liste IntheSystem Will Use, sélectionnez Groups Defined By The Directory Server.
 1. Dans l’onglet Association, sélectionnez Afficher les groupes de services d’annuaire. Une liste des groupes définis dans User Management s’affiche (voir [Paramètres d’annuaire](/help/forms/using/admin-help/configuring-directories.md#directory-settings)).
 
    >[!NOTE]
@@ -149,4 +148,3 @@ Vous pouvez supprimer tous les calendriers professionnels devenus inutiles. Si v
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Calendriers professionnels.
 1. Sélectionnez le calendrier.
 1. Cliquez sur Supprimer.
-
