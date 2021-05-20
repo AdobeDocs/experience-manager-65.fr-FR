@@ -1,42 +1,41 @@
 ---
-title: Idéal Essentials
-seo-title: Idéal Essentials
-description: Présentation de la fonction d’orientation
-seo-description: Présentation de la fonction d’orientation
+title: Notions fondamentales relatives aux idées
+seo-title: Notions fondamentales relatives aux idées
+description: Présentation de la fonctionnalité d’orientation
+seo-description: Présentation de la fonctionnalité d’orientation
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 6%
 
 ---
 
+# Notions fondamentales sur les idées {#ideation-essentials}
 
-# Ideation Essentials {#ideation-essentials}
+Cette page fournit les informations essentielles pour travailler avec la fonction d’idéation, qui est similaire à un forum, mais qui permet d’enregistrer en tant que brouillon et d’avoir un aspect plus collaboratif.
 
-Cette page fournit les informations essentielles pour travailler avec la fonction d&#39;idéation, qui est similaire à un forum, mais avec la possibilité d&#39;enregistrer en tant que brouillon et une atmosphère plus collaborative.
-
-## Essentials for Client-Side {#essentials-for-client-side}
+## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/idéation/composants/hbs/idéation</td>
+   <td>social/ideation/components/hbs/ideation</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.vote<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
+   <td>cq.social.hbs.votes<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -48,7 +47,7 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="ideation-feature.md">Fonction d’idéation</a></td>
+   <td>Voir <a href="ideation-feature.md">Fonctionnalité d’idéation</a></td>
   </tr>
  </tbody>
 </table>
@@ -57,4 +56,4 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
 
 ### Fonction de conceptualisation {#ideation-function}
 
-Une structure de site communautaire qui comprend la fonction [Idéation](functions.md#ideation-function), comprend un composant `ideation` configuré.
+Une structure de site de communauté qui comprend la fonction [Idéation](functions.md#ideation-function), comprend un composant `ideation` configuré.
