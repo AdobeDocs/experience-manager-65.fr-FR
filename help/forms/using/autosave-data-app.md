@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2c71cc28-b7c8-4785-9fc2-b47fa80cbd70
 docset: aem65
-translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+exl-id: 1603eef1-d7c8-47d3-8cfa-55ec3eaadd64
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 75%
 
 ---
-
 
 # Utilisation de l’enregistrement automatique dans l’application AEM Forms{#using-autosave-in-aem-forms-app}
 
@@ -38,11 +37,10 @@ Vous pouvez spécifier les intervalles auxquels l’application enregistre les d
 Suivez les étapes ci-après pour utiliser la fonction d’enregistrement automatique de l’application AEM Forms :
 
 1. Connectez-vous à l’application et accédez à **Paramètres > Général**.
-1. Dans l’écran Général, utilisez l’option **Fréquence d’enregistrement automatique** pour sélectionner les intervalles auxquels l’application doit enregistrer les données saisies.
+1. Dans l’écran Général, utilisez l’option **Fréquence d’enregistrement automatique** pour sélectionner les intervalles auxquels vous souhaitez que l’application enregistre les données saisies.
    [ ![Définition de la fréquence d’enregistrement automatique](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Lorsque vous redémarrez l’application et que vous vous connectez avec le même nom d’utilisateur, vous êtes invité à restaurer votre tâche à l’aide de la boîte de dialogue de récupération de la tâche non enregistrée. Cliquez sur **OK** dans la boîte de dialogue Récupérer la Tâche non enregistrée pour reprendre l&#39;utilisation de la tâche enregistrée. Vous pouvez cliquer sur **Annuler** pour supprimer les données enregistrées correspondant au dernier enregistrement automatique déclenché et commencer à travailler sur une nouvelle tâche.
+1. Lorsque vous redémarrez l’application et que vous vous connectez avec le même nom d’utilisateur, vous êtes invité à restaurer votre tâche à l’aide de la boîte de dialogue de récupération de la tâche non enregistrée. Cliquez sur **OK** dans la boîte de dialogue Récupérer la tâche non enregistrée pour reprendre l’utilisation de la tâche enregistrée. Vous pouvez cliquer sur **Annuler** pour supprimer les données enregistrées correspondant au dernier enregistrement automatique déclenché et commencer à travailler sur une nouvelle tâche.
 
-   Si vous cliquez sur **OK**, la tâche est restaurée avec les données correspondant au dernier enregistrement automatique déclenché avant que l’application ne s’arrête. Il comprend les données du formulaire et toutes les pièces jointes associées à la tâche.
-   [ ![Obtention d&#39;une tâche ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**récupéréeA.** Un formulaire de travail en cours  **B.** App fermé avec force  **C.** App redémarré avec la boîte de dialogue Récupérer une Tâche non enregistrée  **D.Formulaire restauré avec les données d&#39;origine**
-
+   Si vous cliquez sur **OK**, la tâche est restaurée avec les données correspondant au dernier enregistrement automatique déclenché avant que l’application ne s’arrête. Il inclut les données du formulaire et toutes les pièces jointes associées à la tâche.
+   [ ![Obtention d’une tâche ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**récupéréeA.** Formulaire de travail en cours  **B.** Fermeture forcée de l’application  **C.** L’application a redémarré avec la boîte de dialogue Récupérer la tâche non enregistrée  **D.** Formulaire restauré avec les données d’origine
