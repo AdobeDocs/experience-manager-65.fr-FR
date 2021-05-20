@@ -7,15 +7,14 @@ uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Correspondence Management
+exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '4008'
 ht-degree: 79%
 
 ---
-
 
 # Créer une lettre {#create-letter}
 
@@ -62,7 +61,7 @@ Un actif de texte est un élément de contenu comprenant un ou plusieurs paragra
 
 #### Liste {#list}
 
-La liste est une série de fragments de document, y compris du texte, des listes (la même liste ne peut pas être &quot;ajoutée en soi&quot;), des conditions et des images. L’ordre des éléments de la liste peut être fixe ou modifiable. Lors de la création d’une lettre, vous pouvez utiliser certains ou la totalité des éléments de liste pour reproduire un modèle d’éléments réutilisable.
+La liste est une série de fragments de document, y compris du texte, des listes (la même liste ne peut pas être &quot;ajoutée en elle-même&quot;), des conditions et des images. L’ordre des éléments de la liste peut être fixe ou modifiable. Lors de la création d’une lettre, vous pouvez utiliser certains ou la totalité des éléments de liste pour reproduire un modèle d’éléments réutilisable.
 
 #### Condition {#condition}
 
@@ -70,7 +69,7 @@ Les conditions vous permettent de définir le contenu à inclure lors de la cré
 
 #### Fragment de disposition {#layout-fragment}
 
-Un fragment de mise en page est une mise en page pouvant être utilisée dans une ou plusieurs lettres. Un fragment de mise en page est utilisé pour créer des schémas reproductibles, en particulier des tableaux dynamiques. La mise en page peut contenir des champs de formulaire types tels qu’« Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Les mises en page (XDP) sont créées dans Designer, puis [téléchargées sur Forms et les Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Un fragment de mise en page est une mise en page pouvant être utilisée dans une ou plusieurs lettres. Un fragment de mise en page est utilisé pour créer des schémas reproductibles, en particulier des tableaux dynamiques. La mise en page peut contenir des champs de formulaire types tels qu’« Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Les mises en page (XDP) sont créées dans Designer puis sont [téléchargées vers Forms et les documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Création de lettre {#letter-creation}
 
@@ -84,7 +83,7 @@ Les employés en contact avec la clientèle comme les experts en assurances ou l
 
 #### Création par le système {#system-driven}
 
-La génération des correspondances est automatisée, basée sur des déclencheurs d’événement. Par exemple, un rappel envoyé à un citoyen l&#39;invitant à déposer une déclaration anticipée d&#39;impôt est généré en fusionnant le modèle prédéfini avec les données des citoyens. La lettre finale peut être envoyée par courrier électronique, imprimée, télécopiée ou archivée.
+La génération des correspondances est automatisée, basée sur des déclencheurs d’événement. Par exemple, un rappel envoyé à un citoyen l’invitant à remplir sa déclaration d’impôt anticipée est généré par la fusion du modèle prédéfini avec les données du citoyen. La lettre finale peut être envoyée par courrier électronique, imprimée, télécopiée ou archivée.
 
 ![Correspondence créée par le système](assets/us_cm_generate.png)
 
@@ -106,7 +105,7 @@ Le graphique suivant présente un aperçu d’un exemple d’architecture de la 
 
 ## Découpage d&#39;une lettre {#deconstructing-a-letter}
 
-Le présent document d&#39;avis d&#39;annulation est un exemple de correspondance type :
+Ce document d’avis d’annulation est un exemple de correspondance type :
 
 ![Un modèle de lettre d’annulation](assets/5_deconstructingaletter.png)
 
@@ -134,7 +133,7 @@ Le présent document d&#39;avis d&#39;annulation est un exemple de correspondanc
   </tr> 
   <tr> 
    <td>Données<br /> basées sur une logique personnalisée ?</td> 
-   <td>Pour certaines lettres, comme une lettre pour demander plus d’informations sur une réclamation, les utilisateurs tels que l’expert en assurance peuvent ajouter du contenu de texte personnalisé.</td> 
+   <td>Dans le cas de certaines lettres, telles qu’une lettre pour demander plus d’informations sur une réclamation, des utilisateurs comme l’expert en assurance peuvent ajouter du contenu textuel personnalisé.</td> 
    <td>Fragment de <br /> document de type Condition </td> 
   </tr> 
   <tr> 
@@ -167,21 +166,21 @@ Analysez chaque lettre pour déceler ses différentes composantes. C’est au sp
 
 ## Avantages de l’analyse {#benefits-of-performing-the-analysis}
 
-**** réutilisation du contenuVous disposez d’une liste consolidée de nouveau contenu nécessaire pour générer de la correspondance. Une grande partie des contenus (en-têtes, pieds de page, clauses de protection légale et introductions) est commune à de nombreux courriers et peut être réutilisée entre différents courriers. Il suffit alors que ces contenus communs soient créés et approuvés une seule fois par des experts pour pouvoir être réutilisés par la suite dans un grand nombre de courriers.
+**Réutilisation du contenu** : vous disposez d’une liste consolidée de nouveau contenu nécessaire pour générer de la correspondance. Une grande partie des contenus (en-têtes, pieds de page, clauses de protection légale et introductions) est commune à de nombreux courriers et peut être réutilisée entre différents courriers. Il suffit alors que ces contenus communs soient créés et approuvés une seule fois par des experts pour pouvoir être réutilisés par la suite dans un grand nombre de courriers.
 
-**Création du** dictionnaire de donnéesIl existe des valeurs de données telles que &quot;ID de client&quot; et &quot;Nom du client&quot; communes à de nombreuses lettres. Vous pouvez établir une liste consolidée de toutes ces valeurs de données. En règle générale, l’on consulte une personne de l’équipe middleware de l’entreprise lors de la planification de la structure. Ces valeurs de données constituent la base à partir de laquelle est créé le dictionnaire de données.
+**Création du** dictionnaire de données : il existe des valeurs de données telles que &quot;ID client&quot; et &quot;Nom client&quot; qui sont communes à de nombreuses lettres. Vous pouvez établir une liste consolidée de toutes ces valeurs de données. En règle générale, l’on consulte une personne de l’équipe middleware de l’entreprise lors de la planification de la structure. Ces valeurs de données constituent la base à partir de laquelle est créé le dictionnaire de données.
 
-**Obtention de données à partir de** systèmes d&#39;arrière-plan de l&#39;entrepriseVous connaissez également toutes les valeurs de données nécessaires et d&#39;où proviennent les données du système d&#39;entreprise. Vous pouvez ensuite architecturer l’implémentation permettant d’extraire les données du système d’entreprise pour alimenter la solution Lettres.
+**Approvisionnement des données à partir de** systèmes d’arrière-plan de l’entreprise. Vous connaissez également toutes les valeurs de données nécessaires et d’où proviennent les données du système d’entreprise. Vous pouvez ensuite architecturer l’implémentation permettant d’extraire les données du système d’entreprise pour alimenter la solution Lettres.
 
-**Estimation de la complexité des** lettresIl est important de déterminer à quel point il sera complexe de créer une correspondance particulière. Cette analyse permet de déterminer le temps et les ensembles de compétences nécessaires pour créer les modèles de lettre. Cela vous permettra ensuite d’estimer les ressources et les coûts nécessaires à l’implémentation de la solution Lettres.
+**Estimer la complexité des** lettres Il est important de déterminer la complexité de la création d’une correspondance particulière. Cette analyse permet de déterminer le temps et les ensembles de compétences nécessaires pour créer les modèles de lettre. Cela vous permettra ensuite d’estimer les ressources et les coûts nécessaires à l’implémentation de la solution Lettres.
 
 ## Complexité de la correspondance  {#correspondence-complexity}
 
 La complexité de la correspondance peut être déterminée grâce à l’analyse des paramètres suivants :
 
-**** Complexité de la mise en pageQuelle est la complexité de la mise en page ? Les lettres telles que l’avis d’annulation ont des dispositions simples. tandis que des courriers comme les demandes de confirmation de couverture ont une mise en page complexe avec plusieurs tableaux et plus de soixante champs de formulaire. La création de mises en page complexes requiert plus de temps et nécessite des compétences avancées de maquettiste.
+**** Complexité de la mise en pageQuelle est la complexité de la mise en page ? Des lettres telles que l’avis d’annulation ont des dispositions simples. tandis que des courriers comme les demandes de confirmation de couverture ont une mise en page complexe avec plusieurs tableaux et plus de soixante champs de formulaire. La création de mises en page complexes requiert plus de temps et nécessite des compétences avancées de maquettiste.
 
-**Nombre de paragraphes et de** conditions de texteUn contrat de prêt peut comporter 10 pages et plus de 40 clauses de texte. Beaucoup de ces clauses dépendraient de &quot;paramètres de prêt&quot;. Selon les termes et conditions exacts, les clauses seront incluses dans le contrat ou au contraire en seront exclues. La création de ce type de courrier nécessite une planification rigoureuse et une définition méticuleuse des conditions complexes.
+**Nombre de paragraphes et de** conditions de texteUn contrat de prêt peut comporter 10 pages et contenir plus de 40 clauses de texte. Nombre de ces clauses dépendraient de &quot;paramètres de prêt&quot;. Selon les termes et conditions exacts, les clauses seront incluses dans le contrat ou au contraire en seront exclues. La création de ce type de courrier nécessite une planification rigoureuse et une définition méticuleuse des conditions complexes.
 
 Le tableau qui suit expose quelques règles utiles pour la classification de vos lettres :
 
@@ -225,16 +224,16 @@ Le tableau qui suit expose quelques règles utiles pour la classification de vos
 1. Sélectionnez l’aperçu de la correspondance.
 1. Modifiez et configurez les champs, les variables, le contenu et les pièces jointes.
 
-### Conditions préalables {#prerequisites}
+### Prérequis {#prerequisites}
 
 Vous devez d’abord avoir les éléments suivants correctement configurés pour créer une correspondance :
 
-* [Package de compatibilité](compatibility-package.md). Installez le package de compatibilité pour vue l&#39;option **Lettres** sur la page **Forms**.
+* [Package de compatibilité](compatibility-package.md). Installez le package de compatibilité pour afficher l’option **Lettres** sur la page **Forms**.
 * La lettre XDP ([mise en page](/help/forms/using/document-fragments.md)).
 * Autres XDP ([fragment de mise en page](document-fragments.md#document-fragments)) qui constituent des parties de la lettre. Les xdp\mises en page sont créés dans [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
-* Le [dictionnaire de données ](/help/forms/using/data-dictionary.md) approprié (facultatif).
+* Le [dictionnaire de données](/help/forms/using/data-dictionary.md) approprié (facultatif).
 * Les [modules de données](/help/forms/using/document-fragments.md) à utiliser dans la correspondance.
-* [Test ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) Data désigne le fichier XML contenant les données de test. Des données de test sont requises si vous utilisez un dictionnaire de données.
+* [Test ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) Data : le fichier XML contient les données de test. Des données de test sont requises si vous utilisez un dictionnaire de données.
 
 ## Création d’un modèle de lettre  {#create-a-letter-template}
 
@@ -242,7 +241,7 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 
 1. Sélectionnez **Formulaires** > **Lettres**.
 
-1. Sélectionnez **Créer > Lettre**. Correspondence Management affiche les mises en page disponibles (XDP). Ces mises en page proviennent de Designer. Les mises en forme incluent également les modèles de lettre prêts à l’emploi de Correspondence Management. Pour plus d’informations sur les modèles Correspondence Management, voir [Modèles de lettre de référence](/help/forms/using/reference-cm-layout-templates.md). Pour ajouter vos propres mises en page, créez des fichiers XDP (mise en page) dans Designer, puis [téléchargez-les vers AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Sélectionnez **Créer > Lettre**. Correspondence Management affiche les mises en page disponibles (XDP). Ces mises en page proviennent de Designer. Les mises en forme incluent également les modèles de lettre prêts à l’emploi de Correspondence Management. Pour plus d’informations sur les modèles Correspondence Management, voir [Modèles de lettre de référence](/help/forms/using/reference-cm-layout-templates.md). Pour ajouter vos propres mises en page, créez des fichiers XDP (mise en page) dans Designer, puis [téléchargez-les dans AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
    ![create-letter](assets/create-letter.png)
 
@@ -250,18 +249,18 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 
    ![Sélection de la mise en page pour créer une lettre](assets/selectlayout.png)
 
-1. Saisissez les propriétés de la correspondance et appuyez sur **Enregistrer:**.
+1. Saisissez les propriétés de la correspondance et appuyez sur **Enregistrer :**
 
-   * **Titre (facultatif) :** Saisissez le titre de la lettre. Le titre ne doit pas nécessairement être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais.
-   * **Nom :** nom unique de la lettre. Deux lettres ne peuvent en aucun cas porter le même nom. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
+   * **Titre (facultatif) :** saisissez le titre de la lettre. Le titre ne doit pas nécessairement être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais.
+   * **Nom :** nom unique de la lettre. Deux lettres ne peuvent en aucun cas porter le même nom. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les nombres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom . Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description (facultatif) :** Décrivez la lettre à titre de référence.
-   * **Dictionnaire de données (facultatif)** : Le dictionnaire de données peut être associé à la correspondance. Les actifs que vous insérerez ultérieurement dans cette correspondance doivent avoir le même dictionnaire de données que celui choisi pour cette même correspondance ou ne pas avoir de dictionnaire de données.
+   * **Dictionnaire de données (facultatif)**: Le dictionnaire de données peut être associé à la correspondance. Les actifs que vous insérerez ultérieurement dans cette correspondance doivent avoir le même dictionnaire de données que celui choisi pour cette même correspondance ou ne pas avoir de dictionnaire de données.
    * **Balises (facultatif) :** sélectionnez les balises à appliquer à la correspondance. Vous pouvez également saisir un nom de balise nouveau ou personnalisé et appuyer sur Entrée pour créer la balise.
    * **Post-traitement (facultatif) :** sélectionnez le post-traitement à appliquer au modèle de lettre. Il existe des post-processus prêts à l’emploi ainsi que ceux que vous avez créés grâce à AEM, comme l’envoi par courrier électronique et l’impression.
 
    ![Propriétés de correspondance](assets/createcorrespondenceproperties.png)
 
-1. Le système affiche le message suivant : « Lettre créée avec succès » (dans le message d’alerte) Appuyez sur **Ouvrir** pour configurer les modules de données et les fragments de mise en page qu’il contient. Ou appuyez sur **Terminé** pour revenir à la page précédente.
+1. Le système affiche le message suivant : « Lettre créée avec succès » (dans le message d’alerte) Appuyez sur **Ouvrir** pour configurer les modules de données et les fragments de mise en page dans celui-ci. Ou appuyez sur **Terminé** pour revenir à la page précédente.
 
    ![Message d’avertissement : lettre créée avec succès](assets/createcorrespondencecreated.png)
 
@@ -269,13 +268,13 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 
 ### Insérez des modules de données et des fragments de mise en page dans une lettre puis configurez-les.  {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-Après avoir créé une correspondance, lorsque vous appuyez sur Ouvrir, Correspondence Management affiche une représentation de la mise en page répertoriant tous les sous-formulaires/zones de cible de la mise en page (XDP). Dans chaque zone cible, vous pouvez choisir d’insérer un module de données ou un fragment de mise en page (puis des modules de données dans le fragment de mise en page).
+Après avoir créé une correspondance, lorsque vous appuyez sur Ouvrir, Correspondence Management affiche une représentation de la mise en page répertoriant tous les sous-formulaires/zones cible de la mise en page (XDP). Dans chaque zone cible, vous pouvez choisir d’insérer un module de données ou un fragment de mise en page (puis des modules de données dans le fragment de mise en page).
 
 >[!NOTE]
 >
 >Vous pouvez également appuyer sur l’icône Modifier d’une lettre dans la page Lettres pour insérer des modules de données et des fragments de mise en page dans une lettre avant de les configurer.
 
-1. Appuyez sur **Insérer** pour chacun des sous-formulaires et sélectionnez Modules de données ou un fragment de disposition à insérer dans chacun des sous-formulaires.
+1. Appuyez sur **Insérer** pour chacun des sous-formulaires et sélectionnez des modules de données ou un fragment de mise en page à insérer dans chacun des sous-formulaires.
 
    ![Insertion de modules de données et de fragments de mise en page](assets/insertdmandlf.png)
 
@@ -299,17 +298,17 @@ Après avoir créé une correspondance, lorsque vous appuyez sur Ouvrir, Corresp
 
    Dans cette page, vous pouvez également procéder comme suit pour les sous-formulaires :
 
-   1. **Autoriser le texte** libre : Si l’option Autoriser le texte libre est activée, l’utilisateur peut ajouter du texte en ligne dans la lettre de la vue CCR. Dans la vue CCR, une action « T » est activée pour ces zones cible. Le texte libre est activé dans cette action et lorsque l’utilisateur appuie dessus, le nom et la description du texte lui seront demandés. En appuyant sur OK, ce texte s’ouvre en mode de modification où l’utilisateur peut ajouter du texte. Il s’agit donc du même fonctionnement que pour d’autres modules de texte
+   1. **Autoriser le texte libre** : Si l’option Autoriser le texte libre est activée, l’utilisateur peut ajouter du texte en ligne dans la lettre en mode CCR. Dans la vue CCR, une action « T » est activée pour ces zones cible. Le texte libre est activé dans cette action et lorsque l’utilisateur appuie dessus, le nom et la description du texte lui seront demandés. En appuyant sur OK, ce texte s’ouvre en mode de modification où l’utilisateur peut ajouter du texte. Il s’agit donc du même fonctionnement que pour d’autres modules de texte
    1. **Verrouillage de l’ordre** : verrouille l’ordre des sous-formulaires dans la lettre. L’auteur n’est pas autorisé à réorganiser les sous-formulaires et composants lors de la création de la lettre.
 
    Dans cette page, vous pouvez également procéder comme suit pour chaque actif des sous-formulaires :
 
-   1. **Modifiez l’ordre des actifs** : faites glisser une ressource contenant l’icône de réorganisation d’une ressource ( ![dragndrop](assets/dragndrop.png)).
+   1. **Modifier l’ordre des ressources** : faites glisser et déposez un actif contenant l’icône de réorganisation d’un actif (  ![dragdrop](assets/dragndrop.png)).
    1. **Suppression d’actifs** : appuyez sur l’icône de suppression en regard d’un actif pour le supprimer.
-   1. **Actifs** de prévisualisation : Appuyez sur l’icône d’affichage de la prévisualisation ( ![aperçu](assets/showpreview.png)) en regard d’une ressource.
+   1. **Aperçu des ressources** : Appuyez sur l’icône d’aperçu de l’affichage (  ![aperçu de l’affichage](assets/showpreview.png)) en regard d’une ressource.
 
 
-1. Appuyez sur **Next** (Suivant).
+1. Appuyez sur **Suivant**.
 1. La page de données détaille la façon dont les champs de données et les variables sont utilisés dans le modèle. Les données peuvent être associées à des sources de données comme un dictionnaire de données ou des entrées utilisateur. Chaque champ définit des propriétés que le dictionnaire de données associe aux données ou aux légendes affichées pour les champs d’entrée utilisateur.
 
    Liaison :
@@ -319,10 +318,10 @@ Après avoir créé une correspondance, lorsque vous appuyez sur Ouvrir, Corresp
 
    Voici quelques champs de liaison importants :
 
-   * **Multiligne** : Vous pouvez spécifier si l’entrée de données d’un champ ou d’une variable est multiligne. Si vous sélectionnez cette option, la zone de saisie du champ ou de la variable s’affiche en tant que zone d’entrée multiligne dans la vue Edition de données. Le champ ou la variable est également multiligne dans les vues Données et Contenu de l’interface utilisateur de création de correspondance. Le champ d’entrée multiligne est identique au champ de saisie de commentaire dans un TextModule. L’option multiligne est disponible uniquement pour les champs et variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
-   * **Facultatif** : Vous pouvez indiquer si la valeur du champ ou de la variable est facultative ou non. L’option de champ facultative est disponible pour les champs et variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
+   * **Multi-lignes** : Vous pouvez spécifier si la saisie de données pour un champ ou une variable est multiligne. Si vous sélectionnez cette option, la zone de saisie du champ ou de la variable s’affiche en tant que zone d’entrée multiligne dans la vue Edition de données. Le champ ou la variable est également multiligne dans les vues Données et Contenu de l’interface utilisateur de création de correspondance. Le champ d’entrée multiligne est identique au champ de saisie de commentaire dans un TextModule. L’option multiligne est disponible uniquement pour les champs et variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
+   * **Facultatif** : Vous pouvez indiquer si la valeur d’un champ ou d’une variable est facultative ou non. L’option de champ facultative est disponible pour les champs et variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
 
-   * **Validation** de champ/variable : Pour une validation améliorée de la valeur d’un champ ou d’une variable, vous pouvez affecter un validateur au champ ou à la variable. Cette option est disponible uniquement pour les champs et variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
+   * **Validation de champ/variable** : Pour une validation améliorée de la valeur d’un champ ou d’une variable, vous pouvez affecter un programme de validation au champ ou à la variable. Cette option est disponible uniquement pour les champs et variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
    * **Légende** et **Info-bulle** : la légende est le libellé du champ qui s’affiche avant le champ dans l’interface utilisateur CCR. Cette option est disponible pour les champs et variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
 
    Voici les types de validation que vous pouvez utiliser pour les champs :
@@ -336,15 +335,15 @@ Après avoir créé une correspondance, lorsque vous appuyez sur Ouvrir, Corresp
    >
    >La validation des champs et des variables est disponible uniquement pour les champs ou variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
 
-   ![liens](assets/linkages.png)
+   ![les liens](assets/linkages.png)
 
-1. Après avoir spécifié la liaison, appuyez sur **Suivant**. Correspondence Management affiche l’écran Pièces jointes.
+1. Après avoir spécifié la liaison, appuyez sur **Suivant**. Correspondence Management affiche l’écran Pièces jointes .
 
 ### Installez les pièces jointes {#set-up-the-attachments}
 
 1. Sélectionnez **Ajouter un actif**.
-1. Dans l’écran Sélectionner un fichier, appuyez sur les fichiers à joindre à la lettre et appuyez sur **Terminé**. Les actifs doivent d’abord être chargés dans Actifs. Il est recommandé de joindre uniquement des documents PDF et Microsoft Office, mais vous pouvez également joindre des images. Pour plus d’informations sur le transfert de ressources dans DAM, voir [Téléchargement de ressources](/help/assets/manage-assets.md).
-1. Pour verrouiller l’ordre des actifs dans la liste afin que l’expert en assurance ne puisse pas modifier l’ordre, appuyez sur **Verrouiller l’ordre**. Si vous ne sélectionnez pas cette option, l’utilisateur pourra modifier l’ordre des éléments de la liste.
+1. Dans l’écran Sélectionner une ressource, appuyez sur les ressources à joindre à la lettre et appuyez sur **Terminé**. Les actifs doivent d’abord être chargés dans Actifs. Il est recommandé de joindre uniquement des documents PDF et Microsoft Office, mais vous pouvez également joindre des images. Pour plus d’informations sur le chargement de ressources dans DAM, voir [Téléchargement de ressources](/help/assets/manage-assets.md).
+1. Pour verrouiller l’ordre des actifs dans la liste de sorte que l’utilisateur ne puisse pas modifier l’ordre, appuyez sur **Verrouiller l’ordre**. Si vous ne sélectionnez pas cette option, l’utilisateur pourra modifier l’ordre des éléments de la liste.
 1. Pour modifier l’ordre des actifs, faites glisser un actif contenant l’icône de réorganisation d’un actif ( ![dragndrop](assets/dragndrop.png)).
 1. Appuyez sur **Modifier** devant une pièce jointe et indiquez que cette dernière est obligatoire si vous ne souhaitez pas que l’auteur puisse la supprimer. Indiquez qu’une pièce jointe est sélectionnée si vous souhaitez qu’elle soit présélectionnée dans l’interface CCR.
 1. Sélectionnez **Accès à la bibliothèque** pour donner accès à la bibliothèque. Si Accès à la bibliothèque est activé, l’expert en sinistre peut accéder à la bibliothèque de contenu lors de la création d’une lettre et insérer des pièces jointes.
@@ -361,8 +360,8 @@ Le tableau suivant décrit les types de liaison disponibles pour les différents
 Les valeurs suivantes du tableau
 
 * **Oui** : le type de champ de la colonne située le plus à gauche prend en charge ce type de mappage
-* **Non** : Le type de champ dans la colonne la plus à gauche ne prend pas en charge ce type de mappage
-* **S/O** : Le type de champ dans la colonne la plus à gauche n’est pas applicable
+* **Non** : Le type de champ dans la colonne la plus à gauche ne prend pas en charge ce type de mappage.
+* **N/A** : Le type de champ dans la colonne la plus à gauche n’est pas applicable
 
 <table> 
  <tbody> 
@@ -423,7 +422,7 @@ Les valeurs suivantes du tableau
    <td>Oui</td> 
    <td>Oui</td> 
    <td>Oui<br /> </td> 
-   <td>S/O</td> 
+   <td>N/A</td> 
    <td>N/A<br /> </td> 
   </tr> 
   <tr> 
@@ -437,7 +436,7 @@ Les valeurs suivantes du tableau
    <td>N/D</td> 
   </tr> 
   <tr> 
-   <td><strong></strong> <strong>texte brut</strong></td> 
+   <td><strong></strong> <strong>plaintext</strong></td> 
    <td>Oui</td> 
    <td>Texte seul</td> 
    <td>Oui</td> 
@@ -463,13 +462,13 @@ Les valeurs suivantes du tableau
    <td>Non<br /> </td> 
    <td>Oui</td> 
    <td>Non</td> 
-   <td>S/O</td> 
-   <td>S/O<br /> </td> 
+   <td>N/A</td> 
+   <td>N/A<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Création d’une copie d’un modèle de lettre  {#createcopylettertemplate}
+## Création d’une copie d’un modèle de lettre {#createcopylettertemplate}
 
 Vous pouvez utiliser un modèle de lettre existant pour créer rapidement un modèle de lettre avec des propriétés, un contenu et des actifs hérités similaires, tels que des fragments de document et un dictionnaire de données. Pour ce faire, copiez et collez une lettre.
 
@@ -478,4 +477,3 @@ Vous pouvez utiliser un modèle de lettre existant pour créer rapidement un mod
 1. Appuyez sur Coller. La boîte de dialogue Coller s’affiche. Si vous copiez et collez des lettres au même endroit, le système attribue automatiquement des noms et des titres aux nouvelles copies des lettres, mais vous pouvez modifier les titres et les noms des lettres.
 1. Si nécessaire, modifiez le titre et le nom sous lesquels vous souhaitez enregistrer la copie de la lettre.
 1. Appuyez sur Coller. La copie de la lettre est créée. À présent, vous pouvez effectuer les modifications nécessaires dans la lettre que vous venez de créer.
-
