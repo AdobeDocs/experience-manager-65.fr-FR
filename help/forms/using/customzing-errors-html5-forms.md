@@ -8,20 +8,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 83%
 
 ---
 
-
 # Personnalisation des messages d’erreur pour les formulaires HTML5 {#customizing-error-messages-for-html-forms}
 
 Dans les formulaires HTML5, hors de la zone, les messages d’erreur et les avertissements ont une position et un aspect fixes (police et couleur), l’erreur est affichée uniquement pour un champ sélectionné, et une seule erreur s’affiche.
 
-L&#39;article décrit la procédure à suivre pour personnaliser les messages d&#39;erreur des formulaires HTML5 en :
+L’article décrit les étapes de personnalisation des messages d’erreur de formulaires HTML5 pour,
 
 * changer l’aspect et la position des messages d’erreur. Vous pouvez faire qu’une erreur apparaisse en haut, en bas, et sur le côté droit de chaque champ.
 * afficher les messages d’erreur pour plusieurs champs à tout moment spécifié. 
@@ -77,7 +76,7 @@ Pour personnaliser la position d’un message d’erreur, ajoutez une balise &lt
            },
    ```
 
-1. Enregistrez et fermez le fichier 
+1. Enregistrez et fermez le fichier.
 1. Accédez au dossier `CustomErrorManager-1.0-SNAPSHOT` et créez une archive des dossiers jcr_root et META-INF. Renommez l’archive en CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilisez le gestionnaire de packages pour télécharger et installer le package.
 
@@ -115,17 +114,16 @@ Utilisez le package ci-joint pour afficher simultanément les messages d’erreu
    Save the changes.
    ```
 
-1. Enregistrez et fermez le fichier 
+1. Enregistrez et fermez le fichier.
 1. Accédez au dossier CustomErrorManager-1.0-SNAPSHOT et créez une archive des dossiers jcr_root et META-INF. Renommez l’archive en CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilisez le gestionnaire de packages pour télécharger et installer le package.
 
 ## Rendre le formulaire avec le nouveau profil.  {#render-the-form-with-the-new-profile-nbsp}
 
-Les formulaires HTML5 utilisent un profil par défaut prêt à l’emploi : https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;emplacement xdp>&amp;template=&lt;nom du fichier xdp>
+Les formulaires HTML5 prêts à l’emploi utilisent un profil par défaut : https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;nom du xdp>
 
-Pour vue d’un formulaire avec des messages d’erreur personnalisés, effectuez le rendu du formulaire avec le profil d’erreur : https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;emplacement xdp>&amp;template=&lt;nom du fichier xdp>
+Pour afficher un formulaire avec les messages d’erreur personnalisés, effectuez le rendu du formulaire avec le profil d’erreur : https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;nom du xdp>
 
 >[!NOTE]
 >
 >Le package ci-joint installe le profil d’erreur.
-
