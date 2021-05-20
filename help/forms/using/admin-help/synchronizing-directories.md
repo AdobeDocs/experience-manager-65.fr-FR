@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 97%
 
 ---
-
 
 # Synchronisation d’annuaires {#synchronizing-directories}
 
@@ -100,4 +99,3 @@ L’utilisation de l’expression cron est basée sur le système de planificati
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Abandonner. Ce bouton apparaît uniquement lorsqu’une synchronisation d’annuaires est en cours.
-
