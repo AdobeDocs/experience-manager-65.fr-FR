@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 82%
 
 ---
-
 
 # Démarrage et arrêt des services {#starting-and-stopping-services}
 
@@ -39,7 +38,7 @@ Une implémentation complète d’AEM forms comprend des services de serveur d�
 * *`[application server]`* pour les formulaires AEM
 * *`[database]`* pour les formulaires AEM
 
-Sous Windows, ces services sont accessibles via le **panneau** Outils d’administration > **Services**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
+Sous Windows, ces services sont accessibles via **Outils d’administration** > **Panneau Services**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
 
 * JBoss pour Adobe Experience Manager forms
 * MySQL pour Adobe Experience Manager forms
@@ -51,4 +50,3 @@ Sous UNIX® ou Linux, saisissez le texte suivant à partir d’une ligne de comm
 ```java
      ps -A | grep [service name]
 ```
-
