@@ -9,15 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d3565776-1b7d-498c-9840-b17f80170d9b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5be26485-afe5-47ac-918c-e2fff4f394b2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 89%
 
 ---
 
-
 # Nombre maximal de curseurs ouverts dans une base de données Oracle {#oracle-database-maximum-open-cursors-threshold}
 
-Pour configurer le nombre maximal de curseurs ouverts dans Oracle, il se peut que vous ayez à ajuster la valeur en fonction de votre application. Avec une charge modérée, le nombre moyen de curseurs ouverts était de 2 700. Nous vous conseillons de démarrer avec une limite supérieure de 3 000. Pour plus d’informations, consultez [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Pour configurer le nombre maximal de curseurs ouverts dans Oracle, il se peut que vous ayez à ajuster la valeur en fonction de votre application. Avec une charge modérée, le nombre moyen de curseurs ouverts était de 2 700. Nous vous conseillons de démarrer avec une limite supérieure de 3 000. Pour plus d’informations, voir [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
