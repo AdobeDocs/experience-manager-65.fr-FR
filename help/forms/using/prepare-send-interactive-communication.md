@@ -7,15 +7,14 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Communication interactive
+exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2062'
 ht-degree: 37%
 
 ---
-
 
 # Préparation et envoi d’une communication interactive à l’aide de l’interface utilisateur de l’agent {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
@@ -23,22 +22,22 @@ L’interface utilisateur de l’agent permet aux agents de préparer et d’env
 
 ## Présentation {#overview}
 
-Après la création d&#39;une communication interactive, l&#39;agent peut ouvrir la communication interactive dans l&#39;interface utilisateur de l&#39;agent et préparer une copie spécifique au destinataire en saisissant des données et en gérant le contenu et les pièces jointes. Enfin, l&#39;agent peut soumettre la communication interactive à un post-processus.
+Une fois la communication interactive créée, l’agent peut ouvrir la communication interactive dans l’interface utilisateur de l’agent et préparer une copie spécifique au destinataire en saisissant des données et en gérant le contenu et les pièces jointes. Enfin, l’agent peut envoyer la communication interactive à un post-traitement.
 
-Lors de la préparation de la communication interactive à l’aide de l’interface utilisateur de l’agent, l’agent gère les aspects suivants de la communication interactive dans l’interface utilisateur de l’agent avant de l’envoyer à un post-traitement :
+Lors de la préparation de la communication interactive à l’aide de l’interface utilisateur de l’agent, l’agent gère les aspects suivants de la communication interactive dans l’interface utilisateur de l’agent avant de l’envoyer en post-traitement :
 
-* **Données** : l’onglet Données de l’interface utilisateur de l’agent affiche toutes les variables modifiables par l’agent et les propriétés du modèle de données du formulaire non verrouillées dans la communication interactive. Ces variables/propriétés sont créées lors de la modification ou de la création de fragments de documents inclus dans la communication interactive. L’onglet Données comprend également tous les champs intégrés dans le modèle de canal d’impression/XDP. L’onglet Données s’affiche uniquement lorsque des variables, des propriétés de modèle de données de formulaire ou des champs de la communication interactive peuvent être modifiés par l’agent.
+* **Données** : l’onglet Données de l’interface utilisateur de l’agent affiche toutes les variables modifiables par l’agent et les propriétés du modèle de données du formulaire non verrouillées dans la communication interactive. Ces variables/propriétés sont créées lors de la modification ou de la création de fragments de documents inclus dans la communication interactive. L’onglet Données comprend également tous les champs intégrés dans le modèle de canal d’impression/XDP. L’onglet Données s’affiche uniquement lorsqu’il existe des variables, des propriétés de modèle de données de formulaire ou des champs de la communication interactive modifiables par l’agent.
 * **Contenu** : dans l’onglet Contenu, l’agent gère le contenu, tel que des fragments de documents et des variables de contenu dans la communication interactive. L’agent peut apporter les modifications au fragment de document comme autorisé lors de la création de la communication interactive dans les propriétés de ces fragments de document. L’agent peut également réorganiser, ajouter/supprimer un fragment de document et ajouter des sauts de page, si cela est autorisé.
-* **Pièces jointes** : L&#39;onglet Pièces jointes apparaît dans l&#39;interface utilisateur de l&#39;agent uniquement si la communication interactive comporte des pièces jointes ou si l&#39;agent a accès à la bibliothèque. L’agent peut être autorisé ou non à modifier les pièces jointes.
+* **Pièces jointes** : L’onglet Pièces jointes apparaît dans l’interface utilisateur de l’agent uniquement si la communication interactive comporte des pièces jointes ou si l’agent a accès à la bibliothèque. L’agent peut être autorisé ou non à modifier les pièces jointes.
 
 ## Préparation de la communication interactive à l’aide de l’interface utilisateur de l’agent {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Sélectionnez la communication interactive appropriée et appuyez sur **[!UICONTROL Ouvrir l&#39;interface utilisateur de l&#39;agent]**.
+1. Sélectionnez la communication interactive appropriée et appuyez sur **[!UICONTROL Ouvrir l’interface utilisateur de l’agent]**.
 
    >[!NOTE]
    >
-   >L&#39;interface utilisateur de l&#39;agent ne fonctionne que si la communication interactive sélectionnée comporte un canal d&#39;impression.
+   >L’interface utilisateur de l’agent ne fonctionne que si la communication interactive sélectionnée comporte un canal d’impression.
 
    ![openagentiui](assets/openagentiui.png)
 
@@ -50,27 +49,27 @@ Lors de la préparation de la communication interactive à l’aide de l’inter
 
 ### Saisir des données {#enter-data}
 
-1. Dans l’onglet Données, saisissez les données pour les variables, les propriétés du modèle de données de formulaire et les champs du modèle d’impression (XDP), selon les besoins. Renseignez tous les champs obligatoires signalés par un astérisque (&amp;amp ; ast ;) pour activer le bouton **Envoyer**.
+1. Dans l’onglet Données, saisissez les données pour les variables, les propriétés du modèle de données de formulaire et les champs du modèle d’impression (XDP), selon les besoins. Renseignez tous les champs obligatoires marqués d’un astérisque (&amp;ast;) pour activer le bouton **Envoyer**.
 
-   Appuyez sur une valeur de champ de données dans la prévisualisation de communication interactive pour mettre en surbrillance le champ de données correspondant dans l’onglet Données ou vice versa.
+   Appuyez sur une valeur de champ de données dans l’aperçu de la communication interactive pour mettre en surbrillance le champ de données correspondant dans l’onglet Données ou vice versa.
 
 ### Gérer le contenu {#manage-content}
 
 Dans l’onglet Contenu, vous pouvez gérer du contenu, tel que des fragments de documents et des variables de contenu dans la communication interactive.
 
-1. Sélectionnez **[!UICONTROL Contenu]**. L&#39;onglet Contenu de la communication interactive s&#39;affiche.
+1. Sélectionnez **[!UICONTROL Contenu]**. L’onglet Contenu de la communication interactive s’affiche.
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
-1. Modifiez les fragments de document, selon les besoins, dans l’onglet Contenu. Pour mettre l’accent sur le fragment approprié dans la hiérarchie de contenu, vous pouvez soit appuyer sur la ligne ou le paragraphe approprié dans la prévisualisation de communication interactive, soit appuyer directement sur le fragment dans la hiérarchie Contenu.
+1. Modifiez les fragments de document, selon les besoins, dans l’onglet Contenu. Pour mettre l’accent sur le fragment approprié dans la hiérarchie de contenu, vous pouvez appuyer sur la ligne ou le paragraphe approprié dans l’aperçu de la communication interactive ou appuyer directement sur le fragment dans la hiérarchie Contenu .
 
    Par exemple, le fragment de document avec la ligne « Effectuer un paiement en ligne dès maintenant… » est sélectionné dans l’aperçu du graphique ci-dessous et le même fragment de document est sélectionné dans l’onglet Contenu.
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   Dans l’onglet Contenu ou Données, en appuyant sur Mettre en surbrillance les modules sélectionnés dans le contenu ( ![surligntselectedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) dans l’angle supérieur gauche de la prévisualisation, vous pouvez désactiver ou activer la fonctionnalité d’accès au fragment de document lorsque le texte, le paragraphe ou le champ de données approprié est sélectionné ou sélectionné dans la prévisualisation.
+   Dans l’onglet Contenu ou Données, en appuyant sur Mettre en surbrillance les modules sélectionnés dans le contenu ( ![surtselectedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) dans le coin supérieur gauche de l’aperçu, vous pouvez activer ou désactiver la fonctionnalité d’accès au fragment de document lorsque le texte, le paragraphe ou le champ de données approprié est sélectionné dans l’aperçu.
 
-   Les fragments qui peuvent être modifiés par l&#39;agent lors de la création de la communication interactive ont l&#39;icône Modifier le contenu sélectionné ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Appuyez sur l’icône Modifier le contenu sélectionné pour lancer le fragment en mode édition et y apporter des modifications. Utilisez les options suivantes pour formater et gérer le texte :
+   Les fragments qui peuvent être modifiés par l’agent lors de la création de la communication interactive ont l’icône Modifier le contenu sélectionné ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) . Appuyez sur l’icône Modifier le contenu sélectionné pour lancer le fragment en mode édition et y apporter des modifications. Utilisez les options suivantes pour formater et gérer le texte :
 
    * [Options de mise en forme](#formattingtext)
 
@@ -79,9 +78,9 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu, tel que des fragments de
    * [Caractères spéciaux](#specialcharacters)
    * [Raccourcis clavier](/help/forms/using/keyboard-shortcuts.md)
 
-   Pour plus d&#39;informations sur les actions disponibles pour divers fragments de document dans l&#39;interface utilisateur de l&#39;agent, voir [Actions et informations disponibles dans l&#39;interface utilisateur de l&#39;agent](#actionsagentui).
+   Pour plus d’informations sur les actions disponibles pour divers fragments de document dans l’interface utilisateur de l’agent, voir [Actions et informations disponibles dans l’interface utilisateur de l’agent](#actionsagentui).
 
-1. Pour ajouter un saut de page à la sortie d’impression de la communication interactive, placez le curseur à l’endroit où vous souhaitez insérer un saut de page et sélectionnez Saut de page avant ou Saut de page après ( ![pagebreakbefore](assets/pagebreakbeforeafter.png)).
+1. Pour ajouter un saut de page à la sortie d’impression de la communication interactive, placez le curseur à l’endroit où vous souhaitez insérer un saut de page et sélectionnez Saut de page avant ou Saut de page après ( ![pagebreakbebefore](assets/pagebreakbeforeafter.png)).
 
    Un espace réservé explicite de saut de page est inséré dans la communication interactive. Pour voir comment un saut de page explicite affecte la communication interactive, reportez-vous à l’aperçu avant impression.
 
@@ -93,26 +92,26 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu, tel que des fragments de
 
 1. Sélectionnez **[!UICONTROL Pièce jointe]**. L’interface utilisateur de l’agent affiche les pièces jointes disponibles de la manière dont elles ont été configurées lors de la création de la communication interactive.
 
-   Vous pouvez choisir de ne pas envoyer de pièce jointe en même temps que la communication interactive en appuyant sur l&#39;icône de vue et en appuyant sur la croix de la pièce jointe pour la supprimer (si l&#39;agent est autorisé à supprimer ou à masquer la pièce jointe) de la communication interactive. Pour les pièces jointes spécifiées comme obligatoires, lors de la création de la communication interactive, les icônes Afficher et Supprimer sont désactivées.
+   Vous pouvez choisir de ne pas envoyer de pièce jointe avec la communication interactive en appuyant sur l’icône d’affichage et vous pouvez appuyer sur la croix dans la pièce jointe pour la supprimer (si l’agent est autorisé à supprimer ou masquer la pièce jointe) de la communication interactive. Pour les pièces jointes spécifiées comme obligatoires, lors de la création de la communication interactive, les icônes Afficher et Supprimer sont désactivées.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Appuyez sur l’icône Accès à la bibliothèque ( ![libraryaccess](assets/libraryaccess.png)) pour accéder à la bibliothèque de contenu et insérer des fichiers DAM en tant que pièces jointes.
+1. Appuyez sur l’icône Accès à la bibliothèque ( ![libraryaccess](assets/libraryaccess.png)) pour accéder à la bibliothèque de contenu afin d’insérer des ressources DAM en tant que pièces jointes.
 
    >[!NOTE]
    >
-   >L’icône Accès à la bibliothèque n’est disponible que si l’accès à la bibliothèque a été activé lors de la création de la communication interactive (dans les propriétés de Conteneur de Document du canal d’impression).
+   >L’icône Accès à la bibliothèque n’est disponible que si l’accès à la bibliothèque a été activé lors de la création de la communication interactive (dans les propriétés Conteneur de document du canal d’impression).
 
 1. Si l’ordre des pièces jointes n’a pas été verrouillé lors de la création de la communication interactive, vous pouvez réorganiser les pièces jointes en sélectionnant une pièce jointe et en appuyant sur les flèches haut et bas.
 1. Utilisez Aperçu web et Aperçu avant impression pour voir si les deux sorties sont conformes à vos besoins.
 
-   Si les prévisualisations vous conviennent, appuyez sur **[!UICONTROL Envoyer]** pour envoyer la communication interactive à un post-processus. Ou pour apporter des modifications, quittez la prévisualisation pour revenir à l’étape d’élaboration des modifications.
+   Si vous trouvez les aperçus satisfaisants, appuyez sur **[!UICONTROL Submit]** pour envoyer/envoyer la communication interactive à un post-traitement. Ou, pour apporter des modifications, quittez l’aperçu pour revenir à la modification.
 
 ## Formatage du texte {#formattingtext}
 
 Lors de l’édition d’un fragment de texte dans l’interface utilisateur de l’agent, la barre d’outils change en fonction du type d’édition que vous choisissez d’effectuer (Police, Paragraphe ou Liste) :
 
-![](assets/typeofformattingtoolbar.png) ![typeofformattingtoolbarBarre d&#39;outils Police](do-not-localize/fonttoolbar.png)
+![](assets/typeofformattingtoolbar.png) ![typeofformattingtoolbarFont toolbar](do-not-localize/fonttoolbar.png)
 
 Barre d’outils de la police
 
@@ -124,7 +123,7 @@ Barre d’outils Paragraphe
 
 Barre d’outils de la liste
 
-### Mettre des parties de texte en surbrillance/en évidence  {#highlightemphasize}
+### Mettre des parties de texte en surbrillance/en évidence {#highlightemphasize}
 
 Pour mettre des parties de texte en surbrillance\en évidence dans un fragment modifiable, sélectionnez le texte et appuyez sur Couleur de surbrillance.
 
@@ -132,19 +131,19 @@ Pour mettre des parties de texte en surbrillance\en évidence dans un fragment m
 
 ### Coller le texte formaté {#pasteformattedtext}
 
-![texte collé](assets/pastedtext.png)
+![pastedtext](assets/pastedtext.png)
 
 ### Insérer des caractères spéciaux dans le texte {#specialcharacters}
 
-L’interface utilisateur de l’agent offre une prise en charge intégrée de 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de caractères spéciaux supplémentaires/personnalisés en personnalisant](/help/forms/using/custom-special-characters.md).
+L’interface utilisateur de l’agent offre une prise en charge intégrée de 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de caractères spéciaux plus ou personnalisés en personnalisant](/help/forms/using/custom-special-characters.md).
 
 #### Livraison des pièces jointes {#attachmentdelivery}
 
-* Lorsque la communication interactive est rendue à l’aide d’API côté serveur sous la forme d’un PDF interactif ou non interactif, le PDF rendu contient des pièces jointes au format PDF.
-* Lorsqu’un post-processus associé à une communication interactive est chargé dans le cadre de l’interface utilisateur d’envoi à l’aide de l’agent, les pièces jointes sont transmises en tant que paramètre inAttachmentDocs de Liste&lt;com.adobe.idp.Document>.
+* Lorsque la communication interactive est rendue à l’aide des API côté serveur sous la forme d’un PDF interactif ou non, le PDF rendu contient des pièces jointes au format PDF.
+* Lorsqu’un post-traitement associé à une communication interactive est chargé dans le cadre de l’option Envoyer à l’aide de l’interface utilisateur de l’agent, les pièces jointes sont transmises en tant que paramètre List&lt;com.adobe.idp.Document> dans AttachmentDocs .
 * Les processus du mécanisme de livraison, tels que l’envoi par courrier électronique et l’impression, livrent les pièces jointes avec la version PDF de la communication interactive.
 
-## Actions et informations disponibles dans l’interface utilisateur de l’agent  {#actionsagentui}
+## Actions et informations disponibles dans l’interface utilisateur de l’agent {#actionsagentui}
 
 ### Fragments de document {#document-fragments}
 
@@ -154,7 +153,7 @@ L’interface utilisateur de l’agent offre une prise en charge intégrée de 2
 * **Supprimer** : si cela est autorisé, supprimez le fragment de document de la communication interactive.
 * **Saut de page avant** (applicable aux modules enfant de la zone cible) : insère un saut de page avant le fragment de document.
 * **Retrait** : augmente ou réduit le retrait d’un fragment de document.
-* **Saut de page après**  (applicable pour les fragments enfants de la zone de cible) : Insère un saut de page après le fragment de document.
+* **Saut de page après**  (applicable pour les fragments enfants de la zone cible) : Insère un saut de page après le fragment de document.
 
 ![docfragoptions](assets/docfragoptions.png)
 
@@ -176,49 +175,49 @@ L’interface utilisateur de l’agent offre une prise en charge intégrée de 2
 
 Vous pouvez utiliser l’interface utilisateur de l’agent pour enregistrer un ou plusieurs brouillons pour chaque communication interactive et récupérer le brouillon ultérieurement pour continuer à travailler dessus. Vous pouvez spécifier un nom différent pour chaque brouillon afin de l’identifier.
 
-L’Adobe recommande d’exécuter ces instructions en séquence pour enregistrer une communication interactive en tant que brouillon.
+Adobe recommande d’exécuter ces instructions en séquence pour enregistrer une communication interactive en tant que brouillon.
 
-### Active la fonction Enregistrer en tant que brouillon {#before-save-as-draft}
+### Activation de la fonction Enregistrer en tant que brouillon {#before-save-as-draft}
 
 Par défaut, la fonction Enregistrer en tant que brouillon n’est pas activée. Pour activer cette fonction, effectuez les étapes suivantes :
 
-1. Implémentez l&#39;interface de Prestataire [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) (SPI).
+1. Implémentez l’ [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) interface du fournisseur de services (SPI).
 
-   L’interface SPI vous permet d’enregistrer la version préliminaire de la communication interactive dans la base de données avec un ID de brouillon en tant qu’identifiant unique. Ces instructions supposent que vous connaissez déjà comment créer un lot OSGi à l&#39;aide d&#39;un projet Maven.
+   La SPI vous permet d’enregistrer la version préliminaire de la communication interactive dans la base de données avec un ID de brouillon comme identifiant unique. Ces instructions supposent que vous avez des connaissances préalables sur la création d’un bundle OSGi à l’aide d’un projet Maven.
 
-   Pour un exemple d’implémentation SPI, voir [Exemple d’implémentation SPI ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
-1. Ouvrez `http://<hostname>:<port>/ system/console/bundles` et appuyez sur **[!UICONTROL Installer/Mettre à jour]** pour télécharger le lot OSGi. Vérifiez que l’état du package téléchargé s’affiche sous la forme **Principal**. Redémarrez le serveur si l’état du package ne s’affiche pas sous la forme **Principal**.
+   Pour obtenir un exemple d’implémentation SPI, voir [Exemple d’implémentation SPI crDocumentInstance](#sample-ccrDocumentInstance-spi).
+1. Ouvrez `http://<hostname>:<port>/ system/console/bundles` et appuyez sur **[!UICONTROL Installer/Mettre à jour]** pour charger le lot OSGi. Vérifiez que l’état du package téléchargé s’affiche sous la forme **Principal**. Redémarrez le serveur si l’état du package ne s’affiche pas sous la forme **Principal**.
 1. Accédez à `https://'[server]:[port]'/system/console/configMgr`.
-1. Appuyez sur **[!UICONTROL Créer la configuration de correspondance]**.
+1. Appuyez sur **[!UICONTROL Configuration de la création de correspondance]**.
 1. Sélectionnez **[!UICONTROL Activer Enregistrer avec CCRDocumentInstanceService]** et appuyez sur **[!UICONTROL Enregistrer]**.
 
-### Enregistrer une communication interactive en tant que brouillon {#save-as-draft-agent-ui}
+### Enregistrement d’une communication interactive en tant que brouillon {#save-as-draft-agent-ui}
 
-Pour enregistrer une communication interactive en tant que brouillon, procédez comme suit :
+Effectuez les étapes suivantes pour enregistrer une communication interactive en tant que brouillon :
 
 1. Sélectionnez une communication interactive dans Forms Manager et appuyez sur **[!UICONTROL Ouvrir l’interface utilisateur de l’agent]**.
 
 1. Apportez les modifications appropriées dans l’interface utilisateur de l’agent et appuyez sur **[!UICONTROL Enregistrer en tant que brouillon]**.
 
-1. Indiquez le nom du brouillon dans le champ **[!UICONTROL Nom]** et appuyez sur **[!UICONTROL Terminé]**.
+1. Indiquez le nom de la version préliminaire dans le champ **[!UICONTROL Nom]** et appuyez sur **[!UICONTROL Terminé]**.
 
 Une fois que vous avez enregistré la communication interactive en tant que brouillon, appuyez sur **[!UICONTROL Enregistrer les modifications]** pour enregistrer d’autres modifications dans le brouillon.
 
-### Récupérer le projet d&#39;une communication interactive {#retrieve-draft}
+### Récupérer le brouillon d’une communication interactive {#retrieve-draft}
 
-Après avoir enregistré une communication interactive en tant que brouillon, vous pouvez la récupérer pour continuer à travailler dessus. Récupérez la communication interactive à l’aide des éléments suivants :
+Après avoir enregistré une communication interactive en tant que brouillon, vous pouvez la récupérer pour continuer à travailler dessus. Récupérez la communication interactive à l’aide de :
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
-[] draft désigne l’identifiant unique de la version préliminaire qui est générée après l’enregistrement d’une communication interactive en tant que brouillon.
+[] draftidfait référence à l’identifiant unique de la version préliminaire qui est générée après l’enregistrement d’une communication interactive en tant que brouillon.
 
 >[!NOTE]
 >
->Si vous apportez des modifications à la communication interactive après l’avoir enregistrée en tant que brouillon, le brouillon de version ne s’ouvre pas.
+>Si vous apportez des modifications à la communication interactive après l’avoir enregistrée en tant que brouillon, la version préliminaire ne s’ouvre pas.
 
 ### Exemple d’implémentation SPI ccrDocumentInstance {#sample-ccrDocumentInstance-spi}
 
-Mettez en oeuvre l&#39;`ccrDocumentInstance` interface SPI pour enregistrer une communication interactive en tant que brouillon. Voici un exemple d&#39;implémentation de l&#39;interface SPI `ccrDocumentInstance`.
+Implémentez la SPI `ccrDocumentInstance` pour enregistrer une communication interactive en tant que brouillon. Voici un exemple de mise en oeuvre de la SPI `ccrDocumentInstance`.
 
 ```javascript
 package Implementation;
@@ -320,34 +319,34 @@ public class CCRDraftService implements CCRDocumentInstanceService {
 
 Les opérations `save`, `update`, `get` et `getAll` appellent le service de base de données pour enregistrer une communication interactive en tant que brouillon, mettre à jour une communication interactive, récupérer des données de la base de données et récupérer des données pour toutes les communications interactives disponibles dans la base de données. Cet exemple utilise `mySQLDataBaseServiceCRUD` comme nom du service de base de données.
 
-Le tableau suivant explique l’exemple d’implémentation SPI `ccrDocumentInstance`. Il montre comment les opérations `save`, `update`, `get` et `getAll` appellent le service de base de données dans l&#39;exemple d&#39;implémentation.
+Le tableau suivant explique l’exemple d’implémentation de SPI `ccrDocumentInstance`. Il montre comment les opérations `save`, `update`, `get` et `getAll` appellent le service de base de données dans l’exemple d’implémentation.
 
 <table> 
  <tbody>
  <tr>
-  <td><p><strong>Operation</strong></p></td>
-  <td><p><strong>Exemples de service de base de données</strong></p></td> 
+  <td><p><strong>Opération</strong></p></td>
+  <td><p><strong>Exemples de services de base de données</strong></p></td> 
    </tr>
   <tr>
-   <td><p>Vous pouvez soit créer un brouillon pour une communication interactive, soit l’envoyer directement. L’API pour l’opération d’enregistrement vérifie si la communication interactive est envoyée en tant que brouillon et contient un nom de brouillon. L’API appelle ensuite le service mySQLDataBaseServiceCRUD avec la méthode d’entrée Save.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>Le service mySQLDataBaseServiceCRUD vérifie Save comme méthode d’entrée et génère un ID de brouillon généré automatiquement et le renvoie à l’AEM. La logique de génération d’un ID de brouillon peut varier en fonction de la base de données.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>Vous pouvez créer un brouillon pour une communication interactive ou l’envoyer directement. L’API de l’opération d’enregistrement vérifie si la communication interactive est envoyée en tant que brouillon et inclut un nom de brouillon. L’API appelle ensuite le service mySQLDataBaseServiceCRUD avec la méthode d’entrée Enregistrer.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
+   <td><p>Le service mySQLDataBaseServiceCRUD vérifie Enregistrer en tant que méthode d’entrée et génère un ID de brouillon généré automatiquement et le renvoie à AEM. La logique de génération d’un ID de brouillon peut varier en fonction de la base de données.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
    </tr>
   <tr>
-   <td><p>L’API pour l’opération de mise à jour récupère l’état du brouillon de communication interactive et vérifie si la communication interactive comporte un nom de brouillon. L'API appelle le service mySQLDataBaseServiceCRUD pour mettre à jour cet état dans la base de données.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
-   <td><p>Le service mySQLDataBaseServiceCRUD vérifie Update comme méthode d’entrée et enregistre l’état du brouillon de communication interactive dans la base de données.</br></p><img src="assets/update-operation-service.png"/></td>
+   <td><p>L’API pour l’opération de mise à jour récupère l’état du brouillon de communication interactive et vérifie si la communication interactive inclut un nom de brouillon. L’API appelle le service mySQLDataBaseServiceCRUD pour mettre à jour cet état dans la base de données.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>Le service mySQLDataBaseServiceCRUD vérifie Update en tant que méthode d’entrée et enregistre l’état du brouillon de communication interactive dans la base de données.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
-   <td><p>L’API pour l’opération d’obtention vérifie si la communication interactive contient un brouillon d’ID. L’API appelle ensuite le service mySQLDataBaseServiceCRUD avec Get comme méthode d’entrée pour récupérer les données pour la communication interactive.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
-   <td><p>Le service mySQLDataBaseServiceCRUD vérifie Get comme méthode d’entrée et récupère les données pour la communication interactive en fonction de l’ID de brouillon.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   <td><p>L’API de l’opération get vérifie si la communication interactive inclut un ID de brouillon. L’API appelle ensuite le service mySQLDataBaseServiceCRUD avec Get comme méthode d’entrée pour récupérer les données de la communication interactive.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
+   <td><p>Le service mySQLDataBaseServiceCRUD vérifie Get en tant que méthode d’entrée et récupère les données de la communication interactive en fonction de l’ID de brouillon.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
    </tr>
    <tr>
-   <td><p>L'API pour l'opération getAll appelle le service mySQLGetALLData pour récupérer les données de toutes les communications interactives enregistrées dans la base de données.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
+   <td><p>L’API de l’opération getAll appelle le service mySQLGetALLData pour récupérer les données de toutes les communications interactives enregistrées dans la base de données.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
    <td><p>Le service mySQLGetALLData récupère des données pour toutes les communications interactives enregistrées dans la base de données.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
    </tr>
   </tbody>
 </table>
 
-Voici un exemple du fichier `pom.xml` qui fait partie de l&#39;implémentation :
+Voici un exemple du fichier `pom.xml` qui fait partie de l’implémentation :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -444,4 +443,4 @@ Voici un exemple du fichier `pom.xml` qui fait partie de l&#39;implémentation :
 
 >[!NOTE]
 >
->Veillez à mettre à jour la dépendance `aemfd-client-sdk` à 6.0.160 dans le fichier `pom.xml`.
+>Veillez à mettre à jour la dépendance `aemfd-client-sdk` vers la version 6.0.160 dans le fichier `pom.xml`.
