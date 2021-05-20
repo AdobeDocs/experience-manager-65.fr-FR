@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d4409c6b-f4ef-499c-8daa-e93a163ff8ab
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 95%
 
 ---
-
 
 # Configuration des paramètres de verrouillage des comptes {#configure-account-locking-settings}
 
@@ -28,4 +27,3 @@ Utilisez les paramètres de la page Gestion des domaines pour spécifier le nomb
 1. Dans la zone Echecs d’authentification consécutifs max., indiquez le nombre de tentatives consécutives dont dispose un utilisateur pour ouvrir une session avant que son compte ne soit verrouillé. La valeur par défaut est 20.
 1. Dans la zone Déverrouiller le compte après (minutes), indiquez la durée de verrouillage du compte utilisateur en minutes. A l’issue de ce délai, l’utilisateur peut tenter d’ouvrir une autre session. La valeur par défaut est 30.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
-
