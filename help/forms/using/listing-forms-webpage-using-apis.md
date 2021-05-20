@@ -8,7 +8,6 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
-translation-type: tm+mt
 source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '719'
@@ -68,7 +67,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>returnCount</td>
-   <td>Indique s’il faut renvoyer les résultats de la recherche qui correspondent aux critères donnés ou non. </td>
+   <td>Indique s’il faut renvoyer ou non les résultats de recherche correspondant aux critères donnés. </td>
   </tr>
   <tr>
    <td>statements</td>
@@ -82,7 +81,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
      <li><strong>value</strong> : indique la valeur de la propriété à rechercher.</li>
      <li><strong>operator</strong> : indique l’opérateur à appliquer au cours de la recherche. Les opérateurs ci-dessous sont pris en charge :
       <ul>
-       <li>EQ - Égal à </li>
+       <li>EQ - Est égal à </li>
        <li>NEQ – Est différent de </li>
        <li>GT – Est supérieur à</li>
        <li>LT – Est inférieur à</li>
@@ -99,7 +98,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
   </tr>
   <tr>
    <td>orderings<br /> </td>
-   <td><p>Indique les critères d’ordre relatifs aux résultats de la recherche. Les critères sont définis au format JSON. Vous pouvez classer les résultats de la recherche selon plusieurs champs. Les résultats sont classés selon l’ordre d’apparition des champs dans la requête.</p> <p>Par exemple,</p> <p>Pour récupérer les résultats de la requête triés par propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Indique les critères d’ordre relatifs aux résultats de la recherche. Les critères sont définis au format JSON. Vous pouvez classer les résultats de la recherche selon plusieurs champs. Les résultats sont classés selon l’ordre d’apparition des champs dans la requête.</p> <p>Par exemple,</p> <p>Pour récupérer les résultats de la requête classés par propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
@@ -110,13 +109,13 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande
      <li><strong>criteria</strong> : indique l’ordre des résultats. L’attribut order accepte les valeurs suivantes :
       <ul>
        <li>ASC – Utilisez l’attribut ASC pour classer les résultats dans l’ordre croissant.<br /> </li>
-       <li>DES - Utilisez DES pour classer les résultats dans l'ordre décroissant.</li>
+       <li>DES - Utilisez DES pour organiser les résultats dans l’ordre décroissant.</li>
       </ul> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Indique si le contenu binaire doit être récupéré ou non. L'attribut <code>includeXdp</code> s'applique aux actifs de type <code>FORM</code>, <code>PDFFORM</code> et <code>PRINTFORM</code>.</td>
+   <td>Indique si le contenu binaire doit être récupéré ou non. L’attribut <code>includeXdp</code> s’applique aux ressources de type <code>FORM</code>, <code>PDFFORM</code> et <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -171,11 +170,11 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 
 ## Articles connexes
 
-* [Activation des composants du portail de formulaires](/help/forms/using/enabling-forms-portal-components.md)
-* [Créer une page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
+* [Activation des composants de Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* [Page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
-* [Utiliser le composant Drafts and Submissions](/help/forms/using/draft-submission-component.md)
-* [Personnalisation de l’enregistrement des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
+* [Utiliser le composant Drafts &amp; Submissions](/help/forms/using/draft-submission-component.md)
+* [Personnalisation du stockage des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
 * [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
 * [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)
