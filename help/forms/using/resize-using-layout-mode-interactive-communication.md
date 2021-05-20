@@ -1,106 +1,104 @@
 ---
 title: Utiliser le mode Mise en page pour redimensionner les composants pour la communication interactive
-description: 'Définir la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+description: 'Définissez la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
+feature: Communication interactive
+exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 3%
+ht-degree: 67%
 
 ---
 
+# Utilisation du mode Mise en page pour redimensionner des composants {#use-layout-mode-to-resize-components}
 
-# Utiliser le mode Mise en page pour redimensionner les composants {#use-layout-mode-to-resize-components}
+L’interface de création de canal web de communication interactive vous permet de redimensionner les composants à l’aide du mode Mise en page . Faites glisser des points bleus dans les colonnes pour définir les points de début et de fin pour positionner les composants. Les points bleus s’affichent après avoir appuyé sur le composant dans la grille réactive. La grille réactive est composée de 12 colonnes égales. L’ombrage blanc et bleu différencie une colonne d’une l’autre.
 
-L&#39;interface de création de canal Web Interactive Communication vous permet de redimensionner des composants en mode Mise en page. Faites glisser des points bleus dans les colonnes pour définir le début et les points d’extrémité à positionner les composants. Les points bleus s’affichent après avoir appuyé sur le composant dans la grille réactive. La grille réactive est composée de 12 colonnes égales. L’ombrage blanc et bleu des autres colonnes différencie une colonne de l’autre.
-
-Vous pouvez utiliser le mode Mise en page pour redimensionner les composants pour tous les types de périphériques, tels que les ordinateurs de bureau, tablettes, smartphones et autres périphériques plus petits. La tablette dérive automatiquement la configuration de la mise en page de la version de bureau et les périphériques plus petits dérivent la configuration de la mise en page de la version de téléphone. Cependant, vous pouvez remplacer les configurations dérivées automatiquement pour définir une configuration différente pour chaque type de périphérique.
+Vous pouvez utiliser le mode Mise en page afin de redimensionner les composants pour tous les types d’appareils tels que les ordinateurs de bureau, les tablettes, les smartphones et d’autres appareils plus petits. La tablette dérive automatiquement la configuration de la disposition de la version de bureau. Les appareils plus petits dérivent la configuration de la disposition du téléphone. Vous pouvez toutefois remplacer les configurations dérivées automatiquement pour définir une configuration différente pour chaque type d’appareil.
 
 >[!NOTE]
 >
->Si vous créez le canal Web à l&#39;aide de [canal d&#39;impression en tant que maître](../../forms/using/create-interactive-communication.md) pour une communication interactive, les composants disponibles pour le redimensionnement incluent également les sous-formulaires et les champs qui sont générés automatiquement dans le canal Web à l&#39;aide du canal d&#39;impression. Le canal Web conserve la mise en page des éléments du canal Imprimer en mode Mise en page.
+>Si vous créez le canal web à l’aide de [Canal d’impression en tant que gabarit](../../forms/using/create-interactive-communication.md) pour une communication interactive, les composants disponibles pour le redimensionnement comprennent également les sous-formulaires et les champs générés automatiquement dans le canal web à l’aide du canal d’impression. Le canal web conserve la mise en page des éléments du canal d’impression en mode Mise en page.
 
 ## Accès au mode Mise en page {#access-layout-mode}
 
-Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut de l’interface de création de communications interactives en regard de l’option **Prévisualisation**. Le formulaire s’affiche en mode Mise en page.
+Sélectionnez **Mise en page** dans la liste déroulante qui s’affiche en haut de l’interface de création de la communication interactive en regard de l’option **Aperçu** . Le formulaire s’affiche en mode Mise en page.
 
 1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
 1. Créez ou ouvrez une [communication interactive ](../../forms/using/create-interactive-communication.md) existante.
-1. Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut à côté de l’option **Prévisualisation**. Le formulaire s’affiche en mode Mise en page.
+1. Sélectionnez **Mise en page** dans la liste déroulante qui s’affiche en haut à côté de l’option **Prévisualiser**. Le formulaire s’affiche en mode Mise en page.
 
-   ![Mode de mise en page pour les communications interactives](assets/layout_mode_ic_new.png)
+   ![Mode Mise en page pour les communications interactives](assets/layout_mode_ic_new.png)
 
-## Redimensionnement des composants {#resize-components}
+## Redimensionner les composants {#resize-components}
 
-1. En mode Mise en page, appuyez sur le composant pour le redimensionner. Les points bleus s’affichent en début et à la fin de la grille réactive.
+1. En mode Mise en page, appuyez sur le composant pour le redimensionner. Les points bleus s’affichent au début et à la fin de la grille réactive.
 1. Faites glisser les points bleus pour définir la position du composant dans la grille réactive.
 
    ![Redimensionnement en mode Mise en page](assets/layout_mode_resize_new_updated.png)
 
-   La barre d’outils qui s’affiche après avoir appuyé sur des composants comprend les options suivantes :
+   La barre d’outils qui s’affiche après avoir appuyé sur des composants comprend les options suivantes :
 
    * **Parent :** sélectionnez le parent d’un composant.
-   * **Flottant sur la nouvelle ligne :** déplacez le composant sur la ligne suivante s’il y a plusieurs composants dans la même ligne.
+   * **Flotter sur une nouvelle ligne :** déplacez le composant vers la ligne suivante s’il existe plusieurs composants dans la même ligne.
 
-   Vous pouvez annuler toutes les modifications de redimensionnement et appliquer la mise en page par défaut au panneau contenant des composants redimensionnés à l’aide de l’option **[!UICONTROL Rétablir la mise en page du point d’arrêt]** ( ![Rétablir le point d’arrêt](assets/reverttopreviouslypublishedversion.png)). Appuyez sur le parent du composant redimensionné pour vue à l’option.
+   Vous pouvez annuler toutes les modifications de redimensionnement et appliquer la disposition par défaut au panneau contenant les composants redimensionnés à l’aide de l’option **[!UICONTROL Rétablir la disposition du point d’arrêt]** ( ![Rétablir le point d’arrêt](assets/reverttopreviouslypublishedversion.png)). Appuyez sur le parent du composant redimensionné pour afficher l’option.
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas redimensionner les composants de colonne de tableau, de barre d’outils, de bouton de barre d’outils et de zone de cible à l’aide du mode Disposition. Utilisez le mode Style pour redimensionner ces composants.
+   >Vous ne pouvez pas redimensionner les composants de colonne de tableau, de barre d’outils, de bouton de barre d’outils et de zone cible à l’aide du mode Mise en page. Utilisez le mode Style pour redimensionner ces composants.
 
 ### Exemple {#example}
 
-**Objectif :** vous souhaitez insérer un composant de tableau et un composant d’image et les positionner en parallèle dans une communication interactive.
+**Objectif :** vous souhaitez insérer un composant de tableau et un composant Image et les placer l’un à côté de l’autre dans une communication interactive.
 
-1. Insérez le tableau et les composants d’image en mode Edition dans le canal Web d’une communication interactive. Le composant d’image s’affiche après le composant de tableau.
+1. Insérez les composants de tableau et d’image en mode d’édition dans le canal web d’une communication interactive. Le composant d’image s’affiche après le composant de tableau.
 1. Passez en mode Mise en page et appuyez sur le composant Tableau. Les points bleus pour redimensionner le composant s’affichent aux colonnes 1 et 12.
 1. Faites glisser le point bleu de la colonne 12 vers la colonne 6 de la grille réactive.
 
-   ![Définir le point de fin du tableau](assets/layout_mode_end_point_table_new.png)
+   ![Définition du point de fin du tableau](assets/layout_mode_end_point_table_new.png)
 
-1. De même, sélectionnez le composant Image et faites glisser le point bleu de la colonne 1 vers la colonne 7 de la grille dynamique. Les composants de tableau et d’image s’affichent en parallèle.
+1. De même, sélectionnez le composant Image et faites glisser le point bleu de la colonne 1 vers la colonne 7 de la grille réactive. Les composants de tableau et d’image s’affichent en parallèle.
 
-   ![Tableau et image en parallèle en mode Disposition](assets/table_image_parallel_new.png)
+   ![Tableau et image en parallèle en mode Mise en page](assets/table_image_parallel_new.png)
 
-   Vous pouvez sélectionner le composant Image et appuyer sur l’option **Flotter jusqu’à la nouvelle ligne** disponible dans la barre d’outils pour déplacer le composant Image vers la ligne suivante.
+   Vous pouvez sélectionner le composant d’image et appuyer sur l’option **Flotter jusqu’à la nouvelle ligne** disponible dans la barre d’outils pour déplacer le composant d’image vers la ligne suivante.
 
-## Redimensionner les panneaux {#resize-panels-layout-mode}
+## Redimensionnement des panneaux {#resize-panels-layout-mode}
 
-Exécutez les étapes suivantes si vous souhaitez redimensionner l’ensemble du panneau au lieu de composants individuels :
+Effectuez les étapes suivantes si vous souhaitez redimensionner l’ensemble du panneau au lieu de composants distincts :
 
-1. Appuyez sur l’un des composants du panneau à redimensionner, sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg) et sélectionnez la première option dans la liste déroulante, si le panneau est le parent immédiat du composant.
+1. Appuyez sur l’un des composants du panneau à redimensionner, sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg), puis la première option dans la liste déroulante, si le panneau est le parent immédiat du composant.
 
-   Les points bleus s’affichent en début et à la fin de la grille réactive.
+   Les points bleus s’affichent au début et à la fin de la grille réactive.
 
 1. Faites glisser les points bleus pour définir la position du panneau dans la grille réactive.
-Vous pouvez répéter les étapes 1 et 2 et sélectionner ![Sélectionner le parent](assets/float_to_new_line_icon.svg) pour déplacer le panneau redimensionné sur la ligne suivante.
+Vous pouvez répéter les étapes 1 et 2 et sélectionner ![Sélectionner le parent](assets/float_to_new_line_icon.svg) pour déplacer le panneau redimensionné vers la ligne suivante.
 
-## Définition de la disposition à plusieurs colonnes pour un panneau
+## Définition d’une mise en page à plusieurs colonnes pour un panneau
 
-Exécutez les étapes suivantes pour définir le nombre de colonnes d’un panneau :
+Pour définir le nombre de colonnes d’un panneau, procédez comme suit :
 
-1. En mode **[!UICONTROL Modifier]**, appuyez sur le panneau, sélectionnez ![Configurer](assets/configure_icon.png), puis sélectionnez **[!UICONTROL Réactif - tout sur la page sans navigation]** dans la liste déroulante **[!UICONTROL Disposition du panneau]**.
+1. En mode **[!UICONTROL Édition]**, appuyez sur le panneau, sélectionnez ![Configurer](assets/configure_icon.png), puis **[!UICONTROL Réactif - tout sur la page sans navigation]** dans la liste déroulante **[!UICONTROL Disposition du panneau]**.
 
-1. Appuyez sur ![Save](assets/save_icon.svg) (Enregistrer) pour enregistrer les propriétés.
+1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
 
-1. En mode **[!UICONTROL Mise en page]**, appuyez sur l’un des composants du panneau, sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg), puis sélectionnez le panneau.
+1. En mode **[!UICONTROL Mise en page]**, appuyez sur l’un des composants du panneau, sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg), puis le panneau.
 
-1. Appuyez sur ![multi-colonne](assets/multi-column.svg) et sélectionnez le nombre de colonnes dans la liste déroulante. Le nombre de colonnes peut être compris entre 1 et 12. Le panneau est divisé en plusieurs colonnes.
+1. Appuyez sur ![plusieurs colonnes](assets/multi-column.svg) et sélectionnez le nombre de colonnes dans la liste déroulante. Le nombre de colonnes peut être compris entre 1 et 12. Le panneau est divisé en une mise en page à plusieurs colonnes.
 
 ![plusieurs colonnes en mode de mise en page](assets/multi-column-layout.png)
 
-## Désactiver le mode de mise en page pour les formulaires avec une ancienne mise en page réactive {#disable-layout-mode-for-forms-with-old-responsive-layout}
+## Désactivation du mode Mise en page pour les formulaires avec une ancienne disposition réactive {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
-Vous pouvez désactiver le mode Disposition pour les formulaires dotés d’une ancienne disposition réactive en modifiant les propriétés du modèle utilisé dans le formulaire.
+Vous pouvez désactiver le mode Mise en page pour les formulaires avec une ancienne disposition réactive en modifiant les propriétés du modèle utilisé dans le formulaire.
 
-Pour désactiver le mode Disposition, procédez comme suit :
+Pour désactiver le mode Mise en page, procédez comme suit :
 
-1. Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]** et ouvrez le modèle utilisé dans le formulaire en mode **[!UICONTROL Modifier]**.
-1. Sélectionnez le Conteneur de Document dans le volet de gauche et appuyez sur **[!UICONTROL Stratégie.]**
+1. Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]** et ouvrez le modèle utilisé dans le formulaire en mode **[!UICONTROL Édition]**.
+1. Sélectionnez le conteneur de documents dans le volet de gauche et appuyez sur **[!UICONTROL Stratégie.]**
 
-   ![Désactiver le mode de mise en page](assets/policy_disable_layout_mode.png)
+   ![Désactivation du mode Mise en page](assets/policy_disable_layout_mode.png)
 
-1. Appuyez sur l’onglet **[!UICONTROL Paramètres de mise en page]** et sélectionnez **[!UICONTROL Désactiver le mode de mise en page]**.
-1. Appuyez sur ![Enregistrer les modifications](assets/save_icon.png) pour enregistrer les propriétés du modèle.
-
+1. Appuyez sur l’onglet **[!UICONTROL Paramètres de mise en page]** et sélectionnez **[!UICONTROL Désactiver le mode Mise en page]**.
+1. Appuyez sur ![Enregistrer](assets/save_icon.png) pour enregistrer les propriétés.
