@@ -7,14 +7,13 @@ uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
-
 
 # Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de processus basés sur l’utilisation d’AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
@@ -22,27 +21,27 @@ Découvrez comment sélectionner un utilisateur ou un groupe pour un processus A
 
 Dans les grandes entreprises, il existe des exigences pour sélectionner de manière dynamique les utilisateurs d’un processus, par exemple, la sélection d’un agent de terrain pour servir un client en fonction de la proximité de l’agent avec le client. Dans ce cas, l’agent est sélectionné de manière dynamique.
 
-Affectez des étapes de tâche et de Adobe Sign à des workflows [centrés sur Forms sur OSGi](/help/forms/using/aem-forms-workflow.md) pour sélectionner dynamiquement un utilisateur. Vous pouvez utiliser des bundles ECMAScript ou OSGi pour sélectionner de manière dynamique une personne désignée pour l’étape Affecter une tâche ou pour sélectionner des signataires pour l’étape Signer un document.
+Les étapes Affecter une tâche et Adobe Sign des [processus Forms sur OSGi](/help/forms/using/aem-forms-workflow.md) fournissent des options pour sélectionner dynamiquement un utilisateur. Vous pouvez utiliser des bundles ECMAScript ou OSGi pour sélectionner de manière dynamique une personne désignée pour l’étape Affecter une tâche ou pour sélectionner des signataires pour l’étape Signer un document.
 
 ## Utilisation de ECMAScript pour sélectionner de manière dynamique un utilisateur ou un groupe {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
 ECMAScript est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Effectuez les étapes suivantes pour sélectionner de manière dynamique un utilisateur ou un groupe à l’aide de ECMAScript :
 
-1. Ouvrez CRXDE Lite. L’URL est `https://'[server]:[port]'/crx/de/index.jsp`
+1. Ouvrez CRXDE Lite. L&#39;URL est `https://'[server]:[port]'/crx/de/index.jsp`
 1. Créez un fichier avec l’extension .ecma au chemin d’accès suivant. Si le chemin d’accès (structure du nœud) n’existe pas, créez-le :
 
-   * (Chemin d’accès à l’étape d’affectation de la Tâche) `/apps/fd/dashboard/scripts/participantChooser`
-   * (Chemin de l’étape de signature) `/apps/fd/workflow/scripts/adobesign`
+   * (Chemin de l’étape Affecter une tâche) `/apps/fd/dashboard/scripts/participantChooser`
+   * (Chemin de l’étape Signature) `/apps/fd/workflow/scripts/adobesign`
 
 1. Ajoutez ECMAScript, qui possède la logique pour sélectionner de manière dynamique un utilisateur, au fichier .ecma. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
    Pour des exemples de script, voir [Exemples de ECMAScript pour la sélection dynamique d’un utilisateur ou d’un groupe](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
-1. Ajoutez le nom d’affichage du script. Ce nom s’affiche dans les étapes du processus. Pour spécifier le nom :
+1. Ajoutez le nom d’affichage du script. Ce nom s’affiche dans les étapes du processus. Pour spécifier le nom :
 
    1. Développez le nœud du script, cliquez avec le bouton droit de la souris sur **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
    1. Ajoutez la propriété `mix:title` dans la boîte de dialogue Modifier les mixins et cliquez sur **OK**.
-   1. Ajoutez la propriété suivante au noeud jcr:content du script :
+   1. Ajoutez la propriété suivante au nœud de script jcr:content :
 
       | Nom | Type | Valeur |
       |--- |--- |--- |
@@ -121,9 +120,9 @@ Vous pouvez utiliser l’interface Java [RecipientInfoSpecifier](https://helpx.a
 
 Vous avez besoin des fichiers jar [SDK client AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
-1. Ouvrez l’IDE Eclipse. Accédez à **[!UICONTROL Fichier]**>**[!UICONTROL Nouveau projet]**.
+1. Ouvrez l’IDE Eclipse. Accédez à **[!UICONTROL Fichier]** **[!UICONTROL Nouveau projet]**.
 1. Sur l’écran de sélection de l’assistant, sélectionnez **[!UICONTROL Projet Maven]** puis cliquez sur **[!UICONTROL Suivant]**.
-1. Sur le nouveau projet Maven, conservez les valeurs par défaut, puis cliquez sur **[!UICONTROL Suivant]**. Sélectionnez un archétype et cliquez sur **[!UICONTROL Suivant]**. Par exemple, maven-archetype-quickstart. Spécifiez l’**[!UICONTROL ID du groupe]**, l’**[!UICONTROL ID de l’artefact]**,**[!UICONTROL la version]** et le **[!UICONTROL package]** pour le projet et cliquez sur **[!UICONTROL Terminer]**. La du projet est créée.
+1. Sur le nouveau projet Maven, conservez les valeurs par défaut, puis cliquez sur **[!UICONTROL Suivant]**. Sélectionnez un archétype et cliquez sur **[!UICONTROL Suivant]**. Par exemple, maven-archetype-quickstart. Spécifiez l’**[!UICONTROL ID du groupe]**, l’**[!UICONTROL ID de l’artefact]**,**[!UICONTROL la version]** et le **[!UICONTROL package]** pour le projet et cliquez sur **[!UICONTROL Terminer]**. Le projet est créé.
 1. Ouvrez le fichier pom.xml pour modifier et remplacer tout le contenu du fichier par ce qui suit :
 
    ```xml
@@ -350,4 +349,3 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
-
