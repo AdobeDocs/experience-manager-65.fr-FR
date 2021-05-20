@@ -10,14 +10,13 @@ topic-tags: forms-manager
 discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1995'
-ht-degree: 88%
+source-wordcount: '1994'
+ht-degree: 91%
 
 ---
-
 
 # Gestion des métadonnées de formulaire{#manage-form-metadata}
 
@@ -29,7 +28,7 @@ Par défaut, AEM Forms fournit un ensemble défini de métadonnées pour chaque 
 
 Si vous êtes développeur ou propriétaire d’un site, vous pouvez personnaliser Forms Portal, l’interface utilisateur pour AEM Forms, afin qu’il reflète les métadonnées utilisées dans votre entreprise. Pour plus d’informations sur Forms Portal, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
 
-## Métadonnées en AEM Forms {#metadata-in-aem-forms}
+## Métadonnées dans AEM Forms {#metadata-in-aem-forms}
 
 Dans AEM Forms, la liste des propriétés de métadonnées associées à une ressource dépend du type de cette dernière. En outre, si vous ajoutez une propriété de métadonnées personnalisée, celle-ci est ajoutée pour toutes les ressources du même type.
 
@@ -46,7 +45,7 @@ Les types de ressources suivants sont pris en charge dans les AEM Forms :
 
 #### Liste exhaustive des métadonnées {#extensive-list-of-metadata}
 
-Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées prises en charge dans AEM Forms :
+Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées prises en charge dans AEM Forms :
 
 <table>
  <tbody> 
@@ -92,14 +91,14 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
    <td>Tout type, à l’exception du type ressource</td> 
    <td><p>Valeur en lecture seule qui est automatiquement calculée selon le type de formulaire.</p> 
     <ul> 
-     <li>PDF/Modèle de formulaire/Document - extrait du fichier binaire téléchargé.</li> 
+     <li>PDF/Modèle de formulaire/Document – extrait du fichier binaire téléchargé.</li> 
      <li>Formulaire adaptatif : utilisateur connecté au moment de la création du formulaire.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>État</td> 
    <td>Tout type, à l’exception du type ressource</td> 
-   <td><p> Valeur en lecture seule qui définit l’un des états suivants d’un formulaire :</p> 
+   <td><p> Valeur en lecture seule qui définit l’un des états suivants d’un formulaire :</p> 
     <ul> 
      <li>Aucune valeur : si un formulaire n’a jamais été publié.</li> 
      <li>Publié : lorsqu’un formulaire est publié.</li> 
@@ -183,25 +182,25 @@ Les ressources possèdent des valeurs de propriété qui peuvent être affichée
 
 1. Ouvrez la page de propriétés à l’aide de l’une des méthodes suivantes :
 
-   1. Cliquez sur l&#39;icône Propriétés de la Vue ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) dans Actions rapides.
+   1. Cliquez sur l’icône Afficher les propriétés ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) dans les actions rapides.
 
       >[!NOTE]
       >
-      >Les Actions rapides sont les éléments d’action qui s’affichent sur une miniature lorsque vous pointez dessus.
+      >Les actions rapides sont les éléments d’action qui s’affichent sur une vignette lorsque vous pointez dessus.
 
-   1. Sélectionnez le formulaire et cliquez sur l’icône Propriétés de la Vue ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) qui s’affiche dans la barre d’outils.
-   1. Accédez à la page des détails du formulaire en cliquant sur la miniature de celui-ci lorsque vous n’êtes pas en mode de sélection. Cliquez maintenant sur l’icône ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) en haut à droite, puis cliquez sur Propriétés dans la liste en dessous.
+   1. Sélectionnez le formulaire et cliquez sur l’icône Afficher les propriétés ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) qui apparaît dans la barre d’outils.
+   1. Accédez à la page des détails du formulaire en cliquant sur la vignette de celui-ci lorsque vous n’êtes pas en mode de sélection. Cliquez maintenant sur l’icône ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) en haut à droite, puis cliquez sur Propriétés dans la liste en dessous.
 
 1. La page de propriétés qui s’ouvre affiche un schéma contenant uniquement les propriétés de métadonnées comportant des valeurs.
 
    La page de propriétés comporte une barre d’outils dotée de deux icônes d’action :
 
    * Modifier : ![aem6forms_edit](assets/aem6forms_edit.png) Modifier les valeurs des propriétés de métadonnées
-   * Vue : ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Accédez à la page des détails du formulaire, qui ouvre le formulaire en mode prévisualisation.
+   * Afficher : ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Accédez à la page des détails du formulaire, qui ouvre le formulaire en mode d’aperçu.
 
    La section du contenu est divisée en deux parties :
 
-   * Le panneau de gauche contient la miniature du formulaire
+   * Le panneau de gauche contient une vignette du formulaire.
    * Le panneau de droite contient les propriétés de métadonnées en mode lecture seule, réparties dans différents onglets.
 
 
@@ -213,7 +212,7 @@ Vous pouvez modifier les valeurs des propriétés de métadonnées existantes ou
 
 1. Suivez la procédure décrite dans la section précédente pour ouvrir la page de propriétés dans laquelle peuvent être affichées les métadonnées existantes du formulaire sélectionné.
 
-1. Dans la barre d’outils, cliquez sur l’icône de modification ![aem6forms_edit](assets/aem6forms_edit.png) pour modifier le mode de la page de lecture seule à lecture/écriture.
+1. Dans la barre d’outils, cliquez sur l’icône ![aem6forms_edit](assets/aem6forms_edit.png) pour modifier le mode de la page de lecture seule à lecture/écriture.
 
 1. La page de propriétés qui s’affiche contient un schéma comportant un mélange de champs d’entrée modifiables et de texte statique.
 
@@ -223,23 +222,23 @@ Vous pouvez modifier les valeurs des propriétés de métadonnées existantes ou
 
    Cette page contient une barre d’outils dotée de deux icônes d’action différentes de celles du mode d’affichage :
 
-   * Annuler : ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Annuler les modifications apportées jusqu’à présent aux valeurs des propriétés de métadonnées
-   * Terminé : ![aem6forms_check](assets/aem6forms_check.png) Enregistrer toutes les modifications apportées jusqu’à présent aux valeurs de propriété de métadonnées
+   * Annuler : ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Annuler les modifications apportées jusqu’à présent aux valeurs de propriété de métadonnées
+   * Terminé : ![aem6forms_check](assets/aem6forms_check.png) Enregistrez toutes les modifications apportées jusqu’à présent aux valeurs de propriété de métadonnées.
 
    Ces deux actions redirigent l’utilisateur dans le mode lecture seule de la page de propriétés contenant les valeurs mises à jour.
 
-### Mise à jour de la miniature du formulaire {#update-the-form-thumbnail}
+### Mise à jour de la vignette du formulaire {#update-the-form-thumbnail}
 
-Dans la page de propriétés, le panneau de gauche affiche la miniature du formulaire. Par défaut, la miniature affichée est celle qui a été générée au moment de la création du formulaire (formulaire adaptatif) ou du téléchargement du formulaire.
+Dans la page de propriétés, le panneau de gauche affiche la vignette du formulaire. Par défaut, la miniature affichée est celle qui a été générée au moment de la création du formulaire (formulaire adaptatif) ou du téléchargement du formulaire.
 
-Pour tous les types de formulaires, vous avez la possibilité de télécharger une image en cliquant sur **[!UICONTROL Télécharger l’image]** et en accédant à un fichier image dans le répertoire local. L’image sélectionnée remplace la miniature par défaut.
+Pour tous les types de formulaires, vous avez la possibilité de télécharger une image en cliquant sur **[!UICONTROL Télécharger l’image]** et en accédant à un fichier image dans le répertoire local. L’image sélectionnée remplace la vignette par défaut.
 
 Pour les formulaires adaptatifs, les utilisateurs ont également la possibilité de générer une miniature en tant qu’instantané de l’aperçu du formulaire adaptatif actuel. Comme AEM Forms prend également en charge la création de formulaires adaptatifs, l’aperçu d’un formulaire adaptatif peut être modifié chaque fois que vous changez ce dernier. Cette possibilité de générer une miniature permet d’obtenir une miniature mise à jour du formulaire adaptatif selon l’état de l’aperçu actuel. Cliquez sur **[!UICONTROL Générer l’aperçu]** pour exécuter cette action.
 
 >[!NOTE]
 >
->* Utilisez une image carrée pour la miniature. Lorsque vous utilisez une image qui n’est pas carrée et affichez la miniature dans une vue de liste, la miniature apparaît tronquée.
->* Une fois qu’une nouvelle image est téléchargée ou générée, la miniature est remplacée par celle-ci et l’image précédente ne peut pas être rétablie.
+>* Utilisez une image carrée pour la vignette. Lorsque vous utilisez une image qui n’est pas carrée et affichez la vignette dans une vue de liste, la vignette apparaît tronquée.
+>* Une fois qu’une nouvelle image est téléchargée ou générée, la vignette est remplacée par celle-ci et l’image précédente ne peut pas être rétablie.
 
 >
 
@@ -249,7 +248,7 @@ Pour les formulaires adaptatifs, les utilisateurs ont également la possibilité
 
 Outre les métadonnées prêtes à l’emploi, AEM Forms prend en charge de nouvelles métadonnées personnalisées.
 
-Un outil (Editeur de Schéma de métadonnées) est fourni pour définir le schéma de la mise en page des métadonnées ; c’est-à-dire la disposition de ce qui apparaît dans la page **[!UICONTROL Propriétés]** d’un formulaire. L’éditeur de schéma de métadonnées permet d’ajouter ou de modifier un schéma personnalisé pour vos ressources.
+Un outil (l’éditeur de schéma de métadonnées) est proposé pour définir le schéma de la mise en page des métadonnées, c’est-à-dire la mise en page des élément de la page de **[!UICONTROL propriétés]** d’un formulaire. L’éditeur de schéma de métadonnées permet d’ajouter ou de modifier un schéma personnalisé pour vos ressources.
 
 AEM Forms exposent les schémas de métadonnées des types de formulaires pris en charge dans cet outil. Vous pouvez ainsi accéder à ces schémas et utiliser les fonctionnalités de l’éditeur de schéma de métadonnées pour ajouter des propriétés personnalisées.
 
@@ -273,13 +272,13 @@ AEM Forms exposent les schémas de métadonnées des types de formulaires pris e
 
    ![Editeur de schéma de métadonnées pour le type de formulaire adaptatif](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
-   Editeur de métadonnées
+   Éditeur de métadonnées
 
    1. Le panneau de gauche contient des sections à onglets où se trouvent les champs. Le panneau de droite affiche tous les composants d’IU disponibles et les propriétés du champ sélectionné dans le panneau de gauche.
 
    1. La section verrouillée n’est pas modifiable et contient les champs de toutes les propriétés de métadonnées prêtes à l’emploi.
 
-   1. Vous pouvez ajouter d’autres onglets en cliquant sur le symbole +. 
+   1. Vous pouvez ajouter d’autres onglets en cliquant sur le symbole +.
 
    1. Vous pouvez ajouter un champ personnalisé de type souhaité en faisant glisser le composant de champ de la section **[!UICONTROL Créateur de formulaires]** jusqu’à la page de schéma.
    1. Les caractéristiques de ce champ peuvent être affichées sous la section **[!UICONTROL Paramètres]** en cliquant dessus.
@@ -294,10 +293,10 @@ AEM Forms exposent les schémas de métadonnées des types de formulaires pris e
    >
    >Vous ne pouvez pas déplacer les sections verrouillées. Vous pouvez toutefois placer votre composant dans un des espaces vides.
 
-1. Cliquez sur un composant que vous venez de déplacer. Dans l’onglet Paramètres qui s’affiche dans le panneau de droite, renseignez les champs suivants : 
+1. Cliquez sur un composant que vous venez de déplacer. Dans l’onglet Paramètres qui s’affiche dans le panneau de droite, renseignez les champs suivants :
 
    1. Fournissez un libellé de champ qui sera utilisé comme nom d’affichage au-dessus du champ placé dans le schéma (Service, par exemple).
-   1. Sous le champ Associer à la propriété, vous pouvez voir une valeur prérenseignée **’./jcr:content/metadata/default’**. Remplacez « **default** » par le nom de propriété de votre choix, qui sera utilisé pour stocker la propriété dans le référentiel crx (par exemple,  »./jcr:content/metadata/service ») 
+   1. Sous le champ Associer à la propriété, vous pouvez voir une valeur prérenseignée **’./jcr:content/metadata/default&#39;**. Remplacez « **default** » par le nom de propriété de votre choix, qui sera utilisé pour stocker la propriété dans le référentiel crx (par exemple, &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
@@ -306,7 +305,7 @@ AEM Forms exposent les schémas de métadonnées des types de formulaires pris e
       >En outre, le nom de propriété doit être unique pour éviter d’écrire des valeurs pour deux propriétés ou davantage au même emplacement dans le référentiel. Il est donc recommandé de modifier la valeur « default ».
 
    1. Remplissez les autres paramètres selon vos besoins. Sélectionnez par exemple l’option Obligatoire si vous souhaitez que le champ soit obligatoire.
-   1. Pour supprimer un champ que vous avez ajouté, sélectionnez-le, puis cliquez sur l’icône Supprimer ![delete-1](assets/delete-1.png).
+   1. Pour supprimer un champ que vous avez ajouté, sélectionnez-le, puis cliquez sur l’icône de suppression ![delete-1](assets/delete-1.png).
 
 1. Si nécessaire, suivez les étapes 1 à 3 pour ajouter une autre propriété.
 1. Cliquez sur **Terminé** lorsque vous avez apporté toutes les modifications.
