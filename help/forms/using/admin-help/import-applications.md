@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 98%
 
 ---
-
 
 # Importation et gestion des applications{#import-and-manage-applications}
 
@@ -111,8 +110,7 @@ Vous pouvez également utiliser un outil de déploiement par scripts pour déplo
 
 Le déploiement par script vous évite d’avoir à reconfigurer manuellement les paramètres dans l’environnement de production avant d’exécuter les applications déployées.
 
-1. Ouvrez une invite de commande et accédez à *[la racine aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
+1. Ouvrez une invite de commande, puis accédez à la *[racine aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
 1. Pour des instructions plus détaillées, lisez le fichier ReadMe.txt.
 1. Modifiez manuellement les fichiers scriptedDeploy.bat et sample-files/settings.xml, tel qu’indiqué dans le fichier ReadMe.txt.
 1. Exécutez le fichier scriptedDeploy.bat. Cette action déploie le fichier d’archives AEM forms avec les paramètres de remplacement.
-
