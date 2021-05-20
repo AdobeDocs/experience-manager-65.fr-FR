@@ -1,20 +1,19 @@
 ---
-title: Adobe Experience Manager (AEM) et les directives d'accessibilité du Web
-description: Introduction à Adobe Experience Manager (AEM) et aux directives sur l'accessibilité au Web
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+title: Adobe Experience Manager (AEM) et directives d’accessibilité web
+description: Introduction à Adobe Experience Manager (AEM) et directives d’accessibilité web
+exl-id: db8785b9-09eb-444a-addc-74c520e710a9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 84%
 
 ---
 
-
 # AEM et les consignes pour l’accessibilité web{#aem-and-the-web-accessibility-guidelines}
 
-De nombreuses motivations sociales, économiques et juridiques peuvent vous inciter à vous assurer que votre contenu web est conçu de façon à être aussi accessible que possible au public cible, quelles que soient ses situations de handicap ou ses limitations. L&#39;accessibilité au Web avec Adobe Experience Manager (AEM) est donc un aspect de plus en plus important d&#39;une bonne conception Web.
+De nombreuses motivations sociales, économiques et juridiques peuvent vous inciter à vous assurer que votre contenu web est conçu de façon à être aussi accessible que possible au public cible, quelles que soient ses situations de handicap ou ses limitations. L’accessibilité web avec Adobe Experience Manager (AEM) est donc un aspect de plus en plus important d’une bonne conception web.
 
-Création de sites Web et de contenu accessibles avec un impact AEM :
+Création de sites web et de contenu accessibles avec des impacts AEM :
 
 * les administrateurs chargés de configurer AEM pour s’assurer que les fonctions d’accessibilité sont correctement activées ;
 
@@ -24,7 +23,7 @@ Création de sites Web et de contenu accessibles avec un impact AEM :
 
 * Les développeurs de modèles doivent également être conscients de ces problèmes lors de la mise en œuvre de la conception du site web.
 
-Adobe Experience Manager travaille avec les [directives](#wcag-accessibility-guidelines) fournies par le [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager fonctionne avec les [directives](#wcag-accessibility-guidelines) fournies par le [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -59,4 +58,3 @@ En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propri
 ## L’accessibilité chez Adobe   {#accessibility-at-adobe}
 
 Pour plus d’informations, consultez le [Centre de ressources sur l’accessibilité Adobe](https://www.adobe.com/accessibility/).
-
