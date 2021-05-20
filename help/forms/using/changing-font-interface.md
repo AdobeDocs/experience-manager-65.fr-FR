@@ -10,20 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 79%
 
 ---
 
-
 # Modification de la police de l’interface{#changing-the-font-on-the-interface}
 
 Vous pouvez modifier la police affichée dans l’espace de travail AEM Forms. Les polices utilisées dans une section spécifique de l’interface utilisateur sont définies dans la section correspondante de la feuille de style. Vous pouvez modifier les polices sur l’interface utilisateur de manière sélective.
 
-Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) et, en fonction de vos besoins, suivez la procédure de personnalisation de CSS, HTML ou des deux.
+Suivez les [Étapes génériques de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) et selon vos besoins, suivez les étapes de personnalisation de CSS, HTML ou des deux.
 
 1. Modifiez ou ajoutez la famille de police dans un style existant.
 1. Modifiez ou ajoutez la famille de police en ligne pour l’élément HTML.
@@ -31,7 +30,7 @@ Suivez la [Procédure générique de personnalisation de l’espace de travail A
 
 Par exemple, pour remplacer la police du texte de la barre de navigation supérieure par Courier New, procédez comme suit :
 
-1. Connectez-vous au CRXDE Lite en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Connectez-vous à CRXDE Lite en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Utilisez l’une des méthodes suivantes :
 
    1. Pour modifier la famille de police dans un style existant, ajoutez la ligne suivante dans le fichier newStyle.css sous /apps/ws/css.
@@ -42,7 +41,7 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
       }
       ```
 
-   1. Pour ajouter la famille de polices insérée pour l’élément HTML, copiez le fichier `/libs/ws/js/runtime/templates/appnavigation.html` dans `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Pour ajouter la famille de polices intégrée pour l’élément HTML, copiez le fichier `/libs/ws/js/runtime/templates/appnavigation.html` dans `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Mettez à jour le fichier apps/ws/js/runtime/templates/appnavigation.html comme suit :
 
