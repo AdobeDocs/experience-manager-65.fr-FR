@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5fb38afd-7517-494e-b084-1fdd4aef3ca4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 70%
 
 ---
-
 
 # Utilisation de l’API sendToPrinter {#using-the-sendtoprinter-api}
 
@@ -44,12 +43,12 @@ Le tableau ci-dessous répertorie :
 
 | Protocole (système d’accès) | URI de serveur d’impression (PrinterSpec.printServer) | Nom de l’imprimante (PrinterSpec.printerName) | Résultat |
 |--- |--- |--- |--- |
-| SharedPrinter | Valeur nulle ou non nulle | Vide | Exception : L&#39;argument requis sPrinterName ne peut pas être vide. |
+| SharedPrinter | Valeur nulle ou non nulle | Vide | Exception : L’argument requis sPrinterName ne peut pas être vide. |
 | SharedPrinter | Valeur nulle ou non nulle | Invalid (non valide) : | Une exception indique que l’imprimante est introuvable. |
 | SharedPrinter | Valeur nulle ou non nulle | Valide | Tâche d’impression réussie. |
 | LPD | Vide | Valeur nulle ou non nulle | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
 | LPD | Invalid (non valide) : | Vide | une exception indiquant que l’argument requis sPrinterName ne peut pas être vide. |
-| LPD | Invalid (non valide) : | Non vide | exception indiquant que sPrintServerUri est introuvable. |
+| LPD | Invalid (non valide) : | Non vide | une exception indiquant que sPrintServerUri est introuvable. |
 | LPD | Valide | Invalid (non valide) : | une exception indiquant que l’imprimante est introuvable. |
 | LPD | Valide | Valide | Tâche d’impression réussie. |
 | CUPS | Vide | Valeur nulle ou non nulle | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
@@ -71,4 +70,3 @@ L’authentification est prise en charge uniquement pour l’impression CIFS. Po
 1. Accédez à **[!UICONTROL Général]** > **[!UICONTROL Crypto Support]**.
 
 1. Entrez du texte brut puis cliquez sur **[!UICONTROL Protection]**.
-
