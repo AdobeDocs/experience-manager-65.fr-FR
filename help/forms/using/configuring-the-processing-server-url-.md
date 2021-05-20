@@ -10,14 +10,13 @@ topic-tags: Configuration
 discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '258'
 ht-degree: 61%
 
 ---
-
 
 # Configuration des paramètres AEM DS{#configuring-aem-ds-settings}
 
@@ -37,19 +36,19 @@ Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
 
    ![Configuration de la console Web AEM](assets/web_configuration_console_new.png)
 
-1. Dans la fenêtre **[!UICONTROL Configuration de la console Web de Adobe Experience Manager]**, recherchez **[!UICONTROL AEM Paramètres DS]** et cliquez dessus.
+1. Dans la fenêtre **[!UICONTROL Configuration de la console Web Adobe Experience Manager]** , recherchez l’option **[!UICONTROL AEM Paramètres DS]** et cliquez dessus.
 
    ![Paramètres DS](assets/ds_settings_new.png)
 
 1. La fenêtre **[!UICONTROL Service Paramètres AEM DS]** affiche les paramètres de configuration communs pour les composants AEM DS.
 
-   ![Service des paramètres DS](assets/ds_settings_service_new.png)
+   ![Service de paramètres DS](assets/ds_settings_service_new.png)
 
 1. Ajoutez les informations suivantes dans les champs respectifs :
 
-   **[!UICONTROL URL]** du serveur de traitement : Le serveur de traitement est le serveur sur lequel le flux de travail Forms ou AEM doit être déclenché. Il peut s’agir de l’URL de l’instance d’auteur AEM ou de l’autre URL de serveur (https://localhost:port/).
+   **[!UICONTROL URL]** du serveur de traitement : Le serveur de traitement est le serveur sur lequel le workflow Forms ou AEM doit être déclenché. Cela peut être identique à l’URL de l’instance d’auteur AEM ou à l’autre URL du serveur (c’est-à-dire https://localhost:port/).
 
-   **[!UICONTROL Nom]** d’utilisateur du serveur de traitement : Nom d’utilisateur de l’utilisateur de Workflow  [en fonction de l’URL du serveur utilisé]
+   **[!UICONTROL Nom d’utilisateur du serveur de traitement]** : Nom d’utilisateur de l’utilisateur du workflow  [en fonction de l’URL du serveur utilisé]
 
    **[!UICONTROL Mot de passe du serveur de traitement]** : mot de passe de l’utilisateur du processus
 
@@ -59,5 +58,6 @@ Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
    >    
    >    
    >    * Lorsque vous utilisez des processus AEM ou des formulaires, vous devez configurer le service de paramètres DS avant tout envoi depuis le serveur de publication. Dans le cas contraire, l’envoi du formulaire échouera.
+
 
 
