@@ -1,8 +1,8 @@
 ---
-title: Activité Stream Essentials
-seo-title: Activité Stream Essentials
-description: Liste des activités récentes effectuées par un membre ou une liste d'activités récentes sur un seul thread de contenu
-seo-description: Liste des activités récentes effectuées par un membre ou une liste d'activités récentes sur un seul thread de contenu
+title: Notions fondamentales sur les flux d’activités
+seo-title: Notions fondamentales sur les flux d’activités
+description: Liste des activités récentes effectuées par un membre ou liste des activités récentes sur un seul fil de contenu
+seo-description: Liste des activités récentes effectuées par un membre ou liste des activités récentes sur un seul fil de contenu
 uuid: 30c5ac08-0af0-4670-9d81-0beb5c93e00a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,43 +10,42 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 2%
 
 ---
 
+# Notions fondamentales sur les flux d’activités {#activity-stream-essentials}
 
-# Activité Stream Essentials {#activity-stream-essentials}
+Les activités d’un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont collectées dans un flux qui peut être filtré et affiché de différentes manières via la configuration du composant Flux d’activités.
 
-Les activités d&#39;un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont collectées dans un flux qui peut être filtré et affiché de différentes manières via la configuration du composant de flux d&#39;activité.
+La possibilité de suivre ajoute un autre ensemble d’activités lorsque les membres de la communauté suivent des messages d’intérêt ou d’autres membres de la communauté.
 
-La capacité de suivre ajoute un autre ensemble d&#39;activités lorsque les membres de la communauté suivent des messages d&#39;intérêt ou d&#39;autres membres de la communauté.
+Tous les [sites communautaires](/help/communities/overview.md#communitiessites) incluent une page de profil utilisateur pour le membre connecté qui affichera les activités du membre de la même manière.
 
-Tous les [sites de la communauté](/help/communities/overview.md#communitiessites) incluent une page de profil utilisateur pour le membre connecté qui affichera les activités du membre de la même manière.
+## Concepts  {#concepts}
 
-## Concepts {#concepts}
+Un *flux d’activités* est la liste des activités récentes exécutées par un membre ou une liste des activités récentes sur un seul fil de contenu, tel qu’un sujet de forum ou un blog.
 
-Un *flux d&#39;activité* est la liste des activités récentes effectuées par un membre ou une liste d&#39;activités récentes sur un seul fil de contenu, tel qu&#39;un sujet de forum ou un blog.
+Un membre peut suivre un flux d’activité en suivant un autre individu ou un autre contenu.
 
-Un membre peut suivre un flux d&#39;activités, soit en suivant un autre individu, soit en suivant un autre contenu.
+Un *fil d’actualités* est une fusion des flux d’activité suivis par un membre dans un seul flux.
 
-Un *fil d&#39;actualité* est une fusion des flux d&#39;activités suivis par un membre dans un seul flux.
+Un *[graphique social](/help/communities/essentials-socialgraph.md)* capture les relations suivantes d’un membre à un autre.
 
-Un *[graphique social](/help/communities/essentials-socialgraph.md)* capture les relations suivantes entre un membre et un autre.
-
-## Essentials for Client-Side {#essentials-for-client-side}
+## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>flux sociaux/d’activités/composants/hbs/flux d’activités</td>
+   <td>social/activitystreams/components/hbs/activitystreams</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -63,21 +62,21 @@ Un *[graphique social](/help/communities/essentials-socialgraph.md)* capture les
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="/help/communities/activities.md">Fonctionnalité des flux d’Activité</a></td>
+   <td>Voir <a href="/help/communities/activities.md">Fonctionnalité de flux d’activités</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personnalisations côté client](/help/communities/client-customize.md)
 
-## Essentials for Server-Side {#essentials-for-server-side}
+## Principes élémentaires côté serveur {#essentials-for-server-side}
 
-* [API Activités Streams](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
+* [API Flux d’activités](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [API du module d&#39;écoute des flux d&#39;Activité](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
+* [API du récepteur de flux d’activités](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
 * [Personnalisations côté serveur](/help/communities/server-customize.md)
 
 ### Fonction Flux d&#39;activités {#activity-stream-function}
 
-Une structure de site communautaire qui comprend la fonction [Activité Stream](/help/communities/functions.md#activity-stream-function), comprend un composant `activity streams` configuré.
+Une structure de site de communauté qui comprend la fonction [Flux d’activités](/help/communities/functions.md#activity-stream-function), comprend un composant `activity streams` configuré.
