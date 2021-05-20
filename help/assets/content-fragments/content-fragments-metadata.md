@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
 docset: aem65
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 319cd6b0-c866-4838-96a5-eceb7edae9af
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '115'
 ht-degree: 100%
 
 ---
-
 
 # Métadonnées – propriétés des fragments {#metadata-fragment-properties}
 
@@ -42,6 +41,4 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
    * **Description**
    * **Balises**
    * Créé (affichage uniquement)
-
    ![cfm-6420-07](assets/cfm-6420-07.png)
-
