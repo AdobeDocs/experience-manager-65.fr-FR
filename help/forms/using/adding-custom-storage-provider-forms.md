@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
-feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Portail Formulaires
+exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 70%
 
 ---
-
 
 # Stockage personnalisé pour les composants Drafts et Submissions {#custom-storage-for-drafts-and-submissions-component}
 
@@ -26,12 +25,12 @@ AEM Forms vous permet d’enregistrer un formulaire sous forme de brouillon. La 
 
 Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans le noeud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
 
-## Conditions préalables  {#prerequisites}
+## Prérequis  {#prerequisites}
 
-* Activer [les composants du portail de formulaires](/help/forms/using/enabling-forms-portal-components.md)
-* Créer une [page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
-* Activer [les formulaires adaptatifs pour Forms Portal](/help/forms/using/draft-submission-component.md)
-* Découvrez [les détails d&#39;implémentation de l&#39;enregistrement personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Activation des [composants Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Créer une [page Forms Portal](/help/forms/using/creating-form-portal-page.md)
+* Activation de [formulaires adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
+* Découvrez les [détails de mise en oeuvre du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 
@@ -100,7 +99,7 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->La longueur minimale du champ ID de brouillon est de 26 caractères. L’Adobe recommande de définir la longueur du brouillon d’ID sur 26 caractères ou plus.
+>La valeur minimale pour la longueur du champ d’ID de brouillon est de 26 caractères. Adobe recommande de définir la longueur du brouillon de l’ID sur 26 caractères ou plus.
 
 ## Service Submission Data {#submission-data-service}
 
@@ -189,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-Le portail Forms utilise le concept d’identificateur unique universel (UUID) pour générer un identificateur unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un identifiant unique de votre choix. Vous pouvez implémenter l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée pour générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
+Le portail Forms utilise le concept d’identificateur unique universel (UUID) pour générer un identificateur unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un identifiant unique de votre choix. Vous pouvez mettre en oeuvre l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée afin de générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -208,10 +207,9 @@ Vous pouvez utiliser l’annotation ci-dessous pour augmenter le classement du s
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Pour utiliser l’annotation ci-dessus, importe les éléments suivants dans votre projet :
+Pour utiliser l’annotation ci-dessus, importez les éléments suivants dans votre projet :
 
 ```java
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
 ```
-
