@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: a9695d10-43ec-40eb-942f-7720abaa0973
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bd1216e4-2248-484b-a3c1-c209da4ff94f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 83%
 
 ---
-
 
 # Service Forms {#forms-service}
 
@@ -35,9 +34,9 @@ Utilisez le service Forms pour effectuer les opérations suivantes :
 
 Utilisez le service Forms pour créer des formulaires PDF pour la capture de données. En général, vous commencez avec un modèle AEM Forms Designer. Utilisez l’opération `renderPDFForm` (lien vers Javadoc) du service Forms pour convertir ce modèle en formulaire PDF.
 
-Le premier paramètre de l’opération `renderPDFForm` est le nom du fichier de modèle (par exemple, `ExpenseClaim.xdp`. Vous pouvez stocker le fichier de modèle dans un système de fichiers local, un référentiel CRX ou à un emplacement HTTP ou FTP. Vous pouvez spécifier l’emplacement du fichier de modèle en définissant la racine de contenu dans le paramètre `PDFFormRenderOptions` de l’opération `renderPDFForm`. Voir la documentation Javadoc pour en savoir plus sur les autres options que vous pouvez spécifier pour le paramètre `PDFFormRenderOptions`.
+Le premier paramètre de l’opération `renderPDFForm` est le nom du fichier de modèle (par exemple, `ExpenseClaim.xdp`. Vous pouvez stocker le fichier de modèle dans un système de fichiers local, un référentiel CRX ou à un emplacement HTTP ou FTP. Vous pouvez spécifier l’emplacement du fichier de modèle en définissant la racine du contenu dans le paramètre `PDFFormRenderOptions` de l’opération `renderPDFForm`. Voir la documentation Javadoc pour en savoir plus sur les autres options que vous pouvez spécifier pour le paramètre `PDFFormRenderOptions`.
 
-L’opération `renderPDFForm` peut également accepter des données XML. Les données XML sont fusionnées avec le modèle lors de la création d’un formulaire PDF de sorte que le formulaire PDF généré contienne les données spécifiées. Le deuxième paramètre pour l’opération `renderPDFForm` peut accepter un objet de document (Javadoc) qui contient des données XML.
+L’opération `renderPDFForm` peut également accepter des données XML. Les données XML sont fusionnées avec le modèle lors de la création d’un formulaire PDF afin que le formulaire PDF généré contienne les données spécifiées. Le deuxième paramètre pour l’opération `renderPDFForm` peut accepter un objet de document (Javadoc) qui contient des données XML.
 
 ## Extraction de données des formulaires PDF  {#extracting-data-from-pdf-forms-nbsp}
 
@@ -57,5 +56,4 @@ L’utilisation de fragments présente les avantages suivants :
 
 * **Réutilisation du contenu** : vous pouvez réutiliser du contenu dans plusieurs conceptions de formulaire. Pour réutiliser rapidement des portions d’un même contenu dans plusieurs formulaires, créez un fragment. La copie ou la recréation du contenu prend plus de temps. L’emploi de fragments permet par ailleurs de garantir l’homogénéité du contenu et de l’aspect de parties de formulaire reprises dans les différents formulaires de référencement.
 * **Mises à jour globales** : vous pouvez apporter des changements généraux à plusieurs formulaires simultanément en effectuant cette opération une fois dans un seul fichier. Vous pouvez modifier le contenu, les objets de script, les liaisons de données, la disposition ou les styles d’un fragment. Tous les formulaires XDP référençant ce fragment reflètent ces changements.
-* **Création de formulaires partagée** : vous pouvez partager la création de formulaires entre plusieurs ressources. Les développeurs de formulaires maîtrisant les fonctions de script ou d’autres fonctions avancées d’AEM Forms Designer peuvent développer et partager des fragments qui utilisent des scripts et des propriétés dynamiques. Les concepteurs peuvent créer des formulaires à partir des fragments. En outre, ils peuvent utiliser les fragments pour s’assurer que l’aspect et la fonctionnalité de tous les éléments d’un formulaire sont cohérents dans plusieurs formulaires.
-
+* **Création de formulaires partagée** : vous pouvez partager la création de formulaires entre plusieurs ressources. Les développeurs de formulaires maîtrisant les fonctions de script ou d’autres fonctions avancées d’AEM Forms Designer peuvent développer et partager des fragments utilisant des fonctions de script et des propriétés dynamiques. Les concepteurs peuvent créer des formulaires à partir des fragments. En outre, ils peuvent utiliser les fragments pour s’assurer que l’aspect et la fonctionnalité de tous les éléments d’un formulaire sont cohérents dans plusieurs formulaires.
