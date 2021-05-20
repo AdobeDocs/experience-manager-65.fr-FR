@@ -1,6 +1,6 @@
 ---
-title: Création de Documents PDF avec des données XML envoyées
-seo-title: Création de Documents PDF avec des données XML envoyées
+title: Création de documents PDF avec des données XML envoyées
+seo-title: Création de documents PDF avec des données XML envoyées
 description: Utilisez le service Forms pour récupérer les données de formulaire saisies par l’utilisateur dans un formulaire interactif. Transmettez les données de formulaire à une autre opération de service AEM Forms et créez un document PDF à l’aide des données.
 seo-description: Utilisez le service Forms pour récupérer les données de formulaire saisies par l’utilisateur dans un formulaire interactif. Transmettez les données de formulaire à une autre opération de service AEM Forms et créez un document PDF à l’aide des données.
 uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
@@ -11,35 +11,34 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1361'
 ht-degree: 4%
 
 ---
 
+# Création de documents PDF avec des données XML envoyées {#creating-pdf-documents-with-submittedxml-data}
 
-# Création de Documents PDF avec des données XML envoyées {#creating-pdf-documents-with-submittedxml-data}
+**Les exemples et les exemples de ce document sont réservés à l’environnement AEM Forms on JEE.**
 
-**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
+## Création de documents PDF avec des données XML envoyées {#creating-pdf-documents-with-submitted-xml-data}
 
-## Création de Documents PDF avec des données XML envoyées {#creating-pdf-documents-with-submitted-xml-data}
-
-Les applications Web permettant aux utilisateurs de remplir des formulaires interactifs requièrent que les données soient renvoyées au serveur. Le service Forms vous permet de récupérer les données de formulaire saisies par l’utilisateur dans un formulaire interactif. Vous pouvez ensuite transmettre les données de formulaire à une autre opération de service AEM Forms et créer un document PDF à l’aide des données.
+Les applications Web qui permettent aux utilisateurs de remplir des formulaires interactifs requièrent que les données soient renvoyées au serveur. Le service Forms vous permet de récupérer les données de formulaire saisies par l’utilisateur dans un formulaire interactif. Vous pouvez ensuite transmettre les données de formulaire à une autre opération de service AEM Forms et créer un document PDF à l’aide des données.
 
 >[!NOTE]
 >
->Avant de lire ce contenu, il est recommandé de bien comprendre la gestion des formulaires envoyés. Les concepts tels que la relation entre une conception de formulaire et les données XML envoyées sont traités dans Gestion des Forms envoyées.
+>Avant de lire ce contenu, il est recommandé de bien comprendre la gestion des formulaires envoyés. Les concepts tels que la relation entre une conception de formulaire et les données XML envoyées sont abordés dans la section Gestion des Forms envoyées.
 
-Tenez compte du processus suivant qui implique trois services AEM Forms :
+Tenez compte du workflow suivant qui implique trois services AEM Forms :
 
 * Un utilisateur envoie des données XML au service Forms à partir d’une application Web.
-* Le service Forms permet de traiter le formulaire envoyé et d’extraire les champs de formulaire. Les données de formulaire peuvent être traitées. Par exemple, les données peuvent être envoyées à une base de données d’entreprise.
+* Le service Forms est utilisé pour traiter le formulaire envoyé et extraire les champs de formulaire. Les données de formulaire peuvent être traitées. Par exemple, les données peuvent être envoyées à une base de données d’entreprise.
 * Les données de formulaire sont envoyées au service Output pour créer un document PDF non interactif.
 * Le document PDF non interactif est stocké dans Content Services (obsolète).
 
-Le diagramme suivant fournit une représentation visuelle de ce processus.
+Le diagramme suivant fournit une représentation visuelle de ce workflow.
 
 ![cd_cd_finsrv_architecture_xml_pdf1](assets/cd_cd_finsrv_architecture_xml_pdf1.png)
 
@@ -49,9 +48,9 @@ Une fois que l’utilisateur a envoyé le formulaire à partir du navigateur Web
 
 ### Résumé des étapes {#summary-of-steps}
 
-Pour créer un document PDF non interactif avec des données XML envoyées et le stocker dans le document PDF de Content Services (obsolète), effectuez les tâches suivantes :
+Pour créer un document PDF non interactif avec les données XML envoyées et le stocker dans le document PDF dans Content Services (obsolète), effectuez les tâches suivantes :
 
-1. Incluez des fichiers de projet.
+1. Inclure les fichiers de projet.
 1. Créez des objets Forms, Output et Document Management.
 1. Récupérez les données de formulaire à l’aide du service Forms.
 1. Créez un document PDF non interactif à l’aide du service Output.
@@ -63,7 +62,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’objets Forms, Output et Document Management**
 
-Avant de pouvoir exécuter par programmation une opération d’API de service Forms, créez un objet API Client Forms. De même, dans la mesure où ce processus appelle les services Output et Document Management, créez un objet API Client Output et un objet API Client Document Management.
+Avant d’effectuer par programmation une opération d’API de service Forms, créez un objet API client Forms. De même, comme ce workflow appelle les services Output et Document Management, créez un objet API Output Client et un objet API Document Management Client .
 
 **Récupération des données de formulaire à l’aide du service Forms**
 
@@ -71,7 +70,7 @@ Récupérez les données de formulaire qui ont été envoyées au service Forms.
 
 **Créez un document PDF non interactif à l’aide du service Output.**
 
-Utilisez le service Output pour créer un document PDF non interactif basé sur une conception de formulaire et des données de formulaire XML. Dans le processus, les données de formulaire sont récupérées à partir du service Forms.
+Utilisez le service Output pour créer un document PDF non interactif basé sur une conception de formulaire et des données de formulaire XML. Dans le workflow, les données de formulaire sont récupérées à partir du service Forms.
 
 **Stockage du formulaire PDF dans Content Services (obsolète) à l’aide du service Document Management**
 
@@ -79,13 +78,13 @@ Utilisez l’API du service Document Management pour stocker un document PDF dan
 
 **Voir également**
 
-[Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Débuts rapides de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Démarrages rapides de l’API Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-### Créez un Document PDF avec des données XML envoyées à l’aide de l’API Java {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
+### Créez un document PDF avec les données XML envoyées à l’aide de l’API Java {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
 
 Créez un document PDF avec les données XML envoyées à l’aide de l’API Forms, Output et Document Management (Java) :
 
@@ -97,60 +96,60 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API Fo
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
-   * Créez un objet `OutputClient` en utilisant son constructeur et en transmettant l&#39;objet `ServiceClientFactory`.
+   * Créez un objet `OutputClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
    * Créez un objet `DocumentManagementServiceClientImpl` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
 
 1. Récupération des données de formulaire à l’aide du service Forms
 
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `com.adobe.idp.Document` contenant les données du formulaire.
-      * Valeur de chaîne qui spécifie les variables d’environnement, y compris tous les en-têtes HTTP appropriés. Spécifiez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d&#39;environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`.
-      * Valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Objet `com.adobe.idp.Document` contenant les données de formulaire.
+      * Une valeur string qui spécifie les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d&#39;environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`.
+      * Une valeur string qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Objet `RenderOptionsSpec` qui stocke les options d’exécution.
 
       La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
-   * Déterminez si le service Forms a terminé de traiter les données de formulaire en appelant la méthode `FormsResult` de l’objet `getAction`. Si cette méthode renvoie la valeur `0`, les données sont prêtes à être traitées.
-   * Récupérez les données de formulaire en créant un objet `com.adobe.idp.Document` en appelant la méthode `FormsResult` de l&#39;objet `getOutputContent`. (Cet objet contient des données de formulaire qui peuvent être envoyées au service Output.)
-   * Créez un objet `java.io.InputStream` en appelant le constructeur `java.io.DataInputStream` et en transmettant l&#39;objet `com.adobe.idp.Document`.
-   * Créez un objet `org.w3c.dom.DocumentBuilderFactory` en appelant la méthode `org.w3c.dom.DocumentBuilderFactory` statique de l&#39;objet `newInstance`.
-   * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `org.w3c.dom.DocumentBuilderFactory` de l&#39;objet `newDocumentBuilder`.
-   * Créez un objet `org.w3c.dom.Document` en appelant la méthode `org.w3c.dom.DocumentBuilder` de l&#39;objet `parse` et en transmettant l&#39;objet `java.io.InputStream`.
-   * Récupérez la valeur de chaque noeud dans le document XML. Pour accomplir cette tâche, vous pouvez créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du noeud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du noeud. Dans l&#39;exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode s’affiche.
+   * Déterminez si le service Forms a terminé le traitement des données de formulaire en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `0`, les données sont prêtes à être traitées.
+   * Récupérez les données de formulaire en créant un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`. (Cet objet contient des données de formulaire qui peuvent être envoyées au service Output.)
+   * Créez un objet `java.io.InputStream` en appelant le constructeur `java.io.DataInputStream` et en transmettant l’objet `com.adobe.idp.Document`.
+   * Créez un objet `org.w3c.dom.DocumentBuilderFactory` en appelant la méthode `newInstance` statique de l’objet `org.w3c.dom.DocumentBuilderFactory`.
+   * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `org.w3c.dom.DocumentBuilderFactory`.
+   * Créez un objet `org.w3c.dom.Document` en appelant la méthode `parse` de l’objet `org.w3c.dom.DocumentBuilder` et en transmettant l’objet `java.io.InputStream`.
+   * Récupérez la valeur de chaque noeud dans le document XML. Pour accomplir cette tâche, vous pouvez créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du noeud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur string représentant la valeur du noeud. Dans l’exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode s’affiche.
 
 
 1. Créez un document PDF non interactif à l’aide du service Output.
 
-   Créez un document PDF en appelant la méthode `generatePDFOutput` de l’objet `OutputClient` et en transmettant les valeurs suivantes :
+   Créez un document PDF en appelant la méthode `OutputClient` de l’objet `generatePDFOutput` et en transmettant les valeurs suivantes :
 
-   * Valeur d&#39;énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
+   * Valeur `TransformationFormat` d’énumération. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string spécifiant le nom de la nouvelle conception de formulaire. Assurez-vous que la conception de formulaire est compatible avec les données de formulaire extraites du service Forms.
-   * Valeur de chaîne qui spécifie la racine de contenu où se trouve la conception de formulaire.
-   * Objet `PDFOutputOptionsSpec` contenant des options d’exécution PDF.
+   * Une valeur string qui spécifie la racine de contenu où se trouve la conception de formulaire.
+   * Objet `PDFOutputOptionsSpec` contenant les options d’exécution PDF.
    * Objet `RenderOptionsSpec` contenant les options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` contenant la source de données XML contenant les données à fusionner avec la conception de formulaire. Assurez-vous que cet objet a été renvoyé par la méthode `getOutputContent` de l’objet `FormsResult`.
-   * La méthode `generatePDFOutput` renvoie un objet `OutputResult` contenant les résultats de l&#39;opération.
+   * La méthode `generatePDFOutput` renvoie un objet `OutputResult` contenant les résultats de l’opération.
    * Récupérez le document PDF non interactif en appelant la méthode `OutputResult` de l’objet `getGeneratedDoc`. Cette méthode renvoie une instance `com.adobe.idp.Document` qui représente le document PDF non interactif.
 
 1. Stockage du formulaire PDF dans Content Services (obsolète) à l’aide du service Document Management
 
    Ajoutez le contenu en appelant la méthode `storeContent` de l’objet `DocumentManagementServiceClientImpl` et en transmettant les valeurs suivantes :
 
-   * Valeur de chaîne qui spécifie la banque où le contenu est ajouté. Le magasin par défaut est `SpacesStore`. Cette valeur est un paramètre obligatoire.
-   * Valeur de chaîne qui spécifie le chemin d’accès complet à l’espace dans lequel le contenu est ajouté (par exemple, `/Company Home/Test Directory`). Cette valeur est un paramètre obligatoire.
+   * Une valeur string qui spécifie le magasin où le contenu est ajouté. Le magasin par défaut est `SpacesStore`. Cette valeur est un paramètre obligatoire.
+   * Une valeur string qui spécifie le chemin d’accès complet de l’espace où le contenu est ajouté (par exemple, `/Company Home/Test Directory`). Cette valeur est un paramètre obligatoire.
    * Nom du noeud qui représente le nouveau contenu (par exemple, `MortgageForm.pdf`). Cette valeur est un paramètre obligatoire.
-   * Valeur de chaîne qui spécifie le type de noeud. Pour ajouter un nouveau contenu, tel qu’un fichier PDF, spécifiez `{https://www.alfresco.org/model/content/1.0}content`. Cette valeur est un paramètre obligatoire.
-   * Un objet `com.adobe.idp.Document` qui représente le contenu. Cette valeur est un paramètre obligatoire.
-   * Valeur de chaîne qui spécifie la valeur de codage (par exemple, `UTF-8`). Cette valeur est un paramètre obligatoire.
-   * Valeur de énumération `UpdateVersionType` qui spécifie comment gérer les informations de version (par exemple, `UpdateVersionType.INCREMENT_MAJOR_VERSION` pour incrémenter la version de contenu. ) Cette valeur est un paramètre obligatoire.
-   * Instance `java.util.List` qui spécifie les aspects liés au contenu. Cette valeur est un paramètre facultatif et vous pouvez spécifier `null`.
+   * Une valeur string qui spécifie le type de noeud. Pour ajouter un nouveau contenu, tel qu’un fichier PDF, spécifiez `{https://www.alfresco.org/model/content/1.0}content`. Cette valeur est un paramètre obligatoire.
+   * Objet `com.adobe.idp.Document` représentant le contenu. Cette valeur est un paramètre obligatoire.
+   * Une valeur string qui spécifie la valeur de codage (par exemple, `UTF-8`). Cette valeur est un paramètre obligatoire.
+   * Une valeur d’énumération `UpdateVersionType` qui spécifie comment gérer les informations de version (par exemple, `UpdateVersionType.INCREMENT_MAJOR_VERSION` pour incrémenter la version du contenu. ) Cette valeur est un paramètre obligatoire.
+   * Une instance `java.util.List` qui spécifie les aspects liés au contenu. Cette valeur est un paramètre facultatif et vous pouvez spécifier `null`.
    * Objet `java.util.Map` qui stocke les attributs de contenu.
 
-   La méthode `storeContent` renvoie un objet `CRCResult` qui décrit le contenu. A l’aide d’un objet `CRCResult`, vous pouvez, par exemple, obtenir la valeur d’identificateur unique du contenu. Pour exécuter cette tâche, appelez la méthode `CRCResult` de l’objet `getNodeUuid`.
+   La méthode `storeContent` renvoie un objet `CRCResult` qui décrit le contenu. À l’aide d’un objet `CRCResult`, vous pouvez, par exemple, obtenir la valeur d’identifiant unique du contenu. Pour effectuer cette tâche, appelez la méthode `CRCResult` de l’objet `getNodeUuid`.
 
 **Voir également**
 
-[Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
