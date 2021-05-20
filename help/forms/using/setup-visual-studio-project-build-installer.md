@@ -7,40 +7,39 @@ uuid: 9559e584-2a40-4740-a29a-d7ad66220224
 topic-tags: forms-app
 discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 71%
+ht-degree: 73%
 
 ---
 
-
 # Configuration du projet Visual Studio et création d’une application Windows{#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour générer une application d’espace de travail personnalisée. L&#39;archive de code source `adobe-lc-mobileworkspace-src-<version>.zip`fait partie du package `adobe-aemfd-forms-app-src-pkg-<version>.zip` sur la distribution de logiciels.
+AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour générer une application d’espace de travail personnalisée. L’archive du code source, `adobe-lc-mobileworkspace-src-<version>.zip`fait partie du package `adobe-aemfd-forms-app-src-pkg-<version>.zip` sur la distribution logicielle.
 
 Pour obtenir le code source de l’application AEM Forms, procédez comme suit :
 
-1. Ouvrez [Distribution de logiciels](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** dans le menu d’en-tête.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l&#39;option **[!UICONTROL Rechercher les téléchargements]** pour filtrer les résultats.
-1. Appuyez sur le nom du package correspondant à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Téléchargements de recherche]** pour filtrer les résultats.
+1. Appuyez sur le nom du module approprié à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur (EULA)]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-1. Pour télécharger l&#39;archive du code source, ouvrez `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.\
+1. Pour télécharger l’archive du code source, ouvrez `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.\
    Le package source est téléchargé sur votre périphérique.
 
 L&#39;image suivante affiche le contenu extrait du fichier`adobe-lc-mobileworkspace-src-<version>.zip`.
 
 ![mws-content-1](assets/mws-content-1.png)
 
-L&#39;image suivante affiche la structure de répertoires du dossier `windows` dans le dossier `src`.
+L’image suivante affiche la structure du répertoire du dossier `windows` dans le dossier `src`.
 
-![rép_win](assets/win-dir.png)
+![win-dir](assets/win-dir.png)
 
 ## Configuration de l’environnement {#setting-up-the-environment}
 
@@ -54,9 +53,9 @@ Pour les périphériques Windows, vous devez disposer des éléments suivants :
 
 Exécutez les étapes suivantes pour configurer le projet de l’application AEM Forms dans Visual Studio.
 
-1. Copiez l&#39;archive `adobe-lc-mobileworkspace-src-<version>.zip` dans le dossier `%HOMEPATH%\Projects` du périphérique Windows 8.1 ou Windows 10 avec Visual Studio 2015 installé et configuré.
-1. Extrayez l&#39;archive dans le répertoire `%HOMEPATH%\Projects\MobileWorkspace`.
-1. Accédez au répertoire `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows`.
+1. Copiez l’archive `adobe-lc-mobileworkspace-src-<version>.zip` dans le dossier `%HOMEPATH%\Projects` du périphérique Windows 8.1 ou Windows 10 avec Visual Studio 2015 installé et configuré.
+1. Extrayez l’archive dans le répertoire `%HOMEPATH%\Projects\MobileWorkspace`.
+1. Accédez au répertoire `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` .
 1. Ouvrez le fichier `CordovaApp.sln` à l’aide de Visual Studio 2015 et continuez à créer l’application AEM Forms.
 
 ## Génération de l&#39;application AEM Forms {#build-aem-forms-app}
@@ -65,43 +64,43 @@ Suivez les étapes ci-après pour générer et déployer l’application AEM For
 
 >[!NOTE]
 >
->Les données stockées sur le système de fichiers Windows de l’application AEM Forms ne sont pas chiffrées. Il est recommandé d’utiliser un outil tiers, tel que Windows BitLocker Drive Encryption, pour chiffrer les données du disque.
+>Les données stockées sur le système de fichiers Windows de l’application AEM Forms ne sont pas chiffrées. Il est recommandé d’utiliser un outil tiers tel que Windows BitLocker Drive Encryption pour crypter les données du disque.
 
-1. Dans la barre d&#39;outils Visual Studio Standard, sélectionnez **Release** dans la liste déroulante pour le mode de création.
+1. Dans la barre d’outils Visual Studio Standard, sélectionnez **Version** dans la liste déroulante pour le mode de création.
 
 1. Sélectionnez Windows-AnyCPU, Windows-x64 ou Windows-x86 en fonction de votre plateforme. Windows-AnyCPU est recommandé.
-1. Dans l&#39;Explorateur de solutions Visual Studio, cliquez avec le bouton droit sur le projet **CordovaApp.Windows** et sélectionnez **Magasin > Créer des paquets d&#39;applications**.
+1. Dans l’Explorateur de solutions Visual Studio, cliquez avec le bouton droit sur le projet **CordovaApp.Windows** et sélectionnez **Boutique > Créer des packages d’application**.
 
-   ![createapppackages](assets/createapppackages.png)
+   ![create apppackages](assets/createapppackages.png)
 
-   L’assistant de création de packs d’applications s’affiche.
+   L’assistant Créer des packages d’application s’affiche.
 
    Le fichier d’installation CordovaApp.Windows_3.0.2.0_anycpu.appx est créé dans le répertoire platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test.
 
-   Si vous rencontrez l&#39;erreur `Retarget to windows 8.1 required`, cliquez avec le bouton droit de la souris sur l&#39;erreur et dans le menu contextuel, sélectionnez **Recibler sur Windows 8.1**.
+   Si vous rencontrez l’erreur `Retarget to windows 8.1 required`, cliquez avec le bouton droit de la souris sur l’erreur et, dans le menu contextuel, sélectionnez **Recibler à Windows 8.1**.
 
    ![reciblage-solution](assets/retarget-solution.png)
 
 1. Dans l’assistant Créer des packages d’application, indiquez si vous souhaitez charger votre application dans Windows Store, puis cliquez sur **Suivant**.
 
-   ![create apppackagesassistant1](assets/createapppackageswizard1.png)
+   ![create apppackageswizard1](assets/createapppackageswizard1.png)
 
 1. Effectuez les modifications dans les paramètres, tels que la version et l’emplacement de sortie de la build de l’application, selon les besoins.
 
-   ![create apppackagesassistant2](assets/createapppackageswizard2.png)
+   ![create apppackageswizard2](assets/createapppackageswizard2.png)
 
 1. Une fois que le projet est créé, vous pouvez installer l’application à l’aide des éléments suivants :
 
    * Windows PowerShell
    * Visual Studio
 
-   Le package `.appx` nécessite l&#39;installation des éléments suivants :
+   Le package `.appx` nécessite les éléments suivants pour s’installer correctement :
 
    1. Bibliothèque WinJS
    1. Assurez-vous que le package s’accompagne d’un certificat auto-signé ou qu’une autorité approuvée, telle que VeriSign, a signé le certificat public.
    1. Licence de développeur
 
-   Le répertoire Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contient les quatre composants principaux suivants :
+   Le répertoire Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contient les quatre composants principaux :
 
    1. `.appx` approuvé
    1. Certificat (il s’agit actuellement d’un certificat signé Apache Cordova)
@@ -116,7 +115,7 @@ Il existe deux manières d’installer l’application sur un périphérique Win
 
 ### Via l’acquisition d’une licence développeur {#by-acquiring-the-developer-license}
 
-1. Cliquez avec le bouton droit sur le fichier PowerShell ( `Add-AppDevPackage.ps1)`, puis choisissez **Exécuter avec PowerShell**.
+1. Cliquez avec le bouton droit sur le fichier PowerShell ( `Add-AppDevPackage.ps1)`), puis sélectionnez **Exécuter avec PowerShell**.
 
 1. La configuration vous invite à obtenir une licence développeur. Utilisez les informations de connexion de votre compte Microsoft pour l’acquérir.\
    Cette licence est valable pendant 30 jours et peut être renouvelée gratuitement.
@@ -132,12 +131,12 @@ Microsoft recommande d’installer un certificat public émis par une autorité 
 
 Pour déployer l’application :
 
-* Assurez-vous que le périphérique est joint au domaine de l’entreprise.
+* Assurez-vous que l’appareil est connecté au domaine de l’entreprise.
 * Activez le paramètre de stratégie de groupe.
 
 **Pour activer le paramètre de stratégies de groupe :** 
 
-1. Sur votre périphérique, exécutez `gpedit.msc`.
+1. Sur votre appareil, exécutez `gpedit.msc`.
 1. Accédez à **Configuration de l’ordinateur > Modèles d’administration > Composant Windows > Déploiement du package de l’application**.
 1. Cliquez avec le bouton droit de la souris sur **Autoriser toutes les applications de confiance pour l’installation**.
 1. Cliquez sur **Modifier** puis sélectionnez **Activé**.
@@ -159,8 +158,7 @@ Pour plus d’informations, cliquez [ici](https://blogs.msdn.com/b/mvpawardprogr
 Pour installer l’application sous Windows à l’aide de Visual Studio :
 
 1. Connectez le périphérique à l’aide du débogueur à distance.\
-   Pour plus d’informations, voir [Exécution d’applications Windows Store sur un ordinateur distant](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
+   Pour plus d’informations, voir [Exécution d’applications Windows Store sur une machine distante](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 
 1. Avec l’application ouverte dans Visual Studio, sélectionnez Windows x64, Windows-x86 ou Windows-AnyCPU à partir de la liste des plateformes de solution, puis sélectionnez **Ordinateur distant**.
 1. Votre application est déployée sur un ordinateur distant.
-
