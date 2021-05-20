@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
-feature: Image Presets
+feature: Paramètres d’image prédéfinis
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 95%
+source-wordcount: '326'
+ht-degree: 96%
 
 ---
-
 
 # Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
 
@@ -34,7 +33,7 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 
 >[!NOTE]
 >
->En mode Dynamic Media - Scene7, les paramètres d’image prédéfinis sont pris en charge uniquement pour les fichiers d’image.
+>En mode Dynamic Media - Scene7, les paramètres d’image prédéfinis sont pris en charge uniquement pour les ressources d’image.
 
 **Pour appliquer les paramètres d’image prédéfinis Dynamic Media**
 
@@ -60,4 +59,3 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
    >Si la ressource *et* le paramètre d’image prédéfini ne sont pas encore publiés, le bouton **[!UICONTROL URL]** (ou les boutons **[!UICONTROL URL]** et **[!UICONTROL RESS]**, le cas échéant) n’est pas disponible.
    >
    >Notez également que les paramètres prédéfinis de l’image sont automatiquement publiés sur un serveur Dynamic Media 
-
