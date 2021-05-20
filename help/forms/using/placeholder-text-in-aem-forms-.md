@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: f9ff2cc5-3f0a-4b2f-a206-2fe0985646ea
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: 6b6e27b5-8b4e-489c-9e72-4d256692c1ca
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
-
 
 # Texte d’espace réservé dans AEM Forms {#placeholder-text-in-aem-forms}
 
@@ -28,7 +27,7 @@ Le texte d’espace réservé représente un mot ou un groupe de mots court. Il 
 
 ![Un composant de date avec et sans le texte d’espace réservé](assets/dat-picker-place-holder-text.png)
 
-**Composant A.** Date avec le texte d’espace réservé  **B.** Date sans texte d’espace réservé
+**A.** Composant de date avec le texte d’espace réservé **B.** Composant de date sans le texte d’espace réservé
 
 AEM Forms prend en charge le texte d’espace réservé pour la zone Mot de passe, le sélecteur de date, la zone numérique et les champs de zone de texte.\
 Les textes d’espace réservé ne sont pas pris en charge pour le widget natif de date en HTML5. Pour spécifier un texte d’espace réservé :
@@ -41,4 +40,3 @@ Les textes d’espace réservé ne sont pas pris en charge pour le widget natif 
 >[!NOTE]
 >
 >Le texte d’espace réservé n’est pas pris en charge sous Microsoft Internet Explorer 9.
-
