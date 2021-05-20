@@ -1,5 +1,5 @@
 ---
-title: Configuration de plusieurs magasins commerciaux
+title: Configuration multi-magasin Commerce
 description: Découvrez comment faire correspondre plusieurs vues de stockage de Magento vers AEM. Cela permet aux projets de prendre en charge des cas d’utilisation à plusieurs clients et multilingues.
 sub-product: Commerce
 doc-type: technical-video
@@ -8,7 +8,6 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '381'
@@ -16,7 +15,7 @@ ht-degree: 76%
 
 ---
 
-# Configuration de plusieurs magasins commerciaux {#multi-store}
+# Configuration multi-magasin de commerce {#multi-store}
 
 Les composants principaux AEM CIF peuvent être utilisés sur plusieurs structures de site AEM et la mise en œuvre du client GraphQL sous-jacent peut se connecter à différents magasins/vues de magasin Magento. Cela permet aux projets de mettre en œuvre des configurations multi-magasin/multi-site complexes.
 
@@ -28,7 +27,7 @@ Les fonctions de gestion multi-site AEM de Live Copy et Language Copy sont utili
 
 La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue de magasin Magento.
 
-Pour connecter un site AEM et AEM CIF Core Components ainsi qu’à une vue de stockage dédiée, procédez comme suit :
+Pour connecter un site AEM et les composants principaux AEM CIF à une vue de magasin dédiée, procédez comme suit :
 
 ## Configuration {#configuration}
 
@@ -46,12 +45,12 @@ Pour connecter un site AEM et AEM CIF Core Components ainsi qu’à une vue de s
 
    >[!TIP]
    >
-   > Les catalogues commerciaux peuvent être traités à l’aide d’ID ou d’UID. Les UID ont été introduits dans le Magento 2.4.2. Activez cette option uniquement si votre serveur principal de commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+   > Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Magento 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 
 4. Affectez la configuration enfant à un site AEM
 
    * Accédez à la console AEM Sites.
-   * Accédez à la région ou à la racine de langue de la structure de votre site, par exemple /content/venia/us _ou_ /content/venia/us/fr pour la page d’exemple Venia
+   * Accédez à la racine de région ou de langue de la structure de votre site, par exemple /content/venia/us _ou_ /content/venia/us/en pour la page d’exemple Venia.
    * Sélectionnez la page et ouvrez ses propriétés.
    * Sélectionnez l’onglet Avancé.
    * Dans la section `Configuration`, sélectionnez la configuration que vous avez créée à l’étape.
