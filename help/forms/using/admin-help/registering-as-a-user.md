@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 100%
 
 ---
-
 
 # Enregistrement en tant qu’utilisateur {#registering-as-a-user}
 
@@ -70,4 +69,3 @@ Pour plus de détails sur la prise de contact avec un administrateur Document se
 1. Dans l’angle supérieur droit de la page, cliquez sur Options. La page Utilisateurs externes s’affiche.
 1. Sélectionnez Changer de mot de passe, puis saisissez le mot de passe temporaire dans la zone Ancien mot de passe.
 1. Dans la zone Nouveau mot de passe, saisissez un nouveau mot de passe, puis saisissez-le de nouveau dans la zone Confirmer le mot de passe.
-
