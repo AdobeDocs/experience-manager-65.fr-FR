@@ -1,46 +1,44 @@
 ---
 title: Consignes de codage
 seo-title: Consignes de codage
-description: Conseils, astuces et astuces pour les développeurs de communautés
-seo-description: Conseils, astuces et astuces pour les développeurs de communautés
+description: Conseils, astuces et conseils pour les développeurs de communautés
+seo-description: Conseils, astuces et conseils pour les développeurs de communautés
 uuid: 311ef4f7-7f2c-44c3-bcf2-f68713752623
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: a23aab83-1dfa-4d91-9b6b-6246a2103896
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 4%
 
 ---
 
-
 # Consignes de codage {#coding-guidelines}
 
-## Lignes directrices, conseils et astuces {#guidelines-tips-and-tricks}
+## Conseils, conseils et astuces {#guidelines-tips-and-tricks}
 
-L’utilisation de AEM Communities a évolué, passant d’une dépendance importante à l’égard des pages Java Server à une flexibilité dans le choix de langages de script de modèles où la logique métier, le style et le contenu des pages sont distincts les uns des autres.
+L’utilisation d’AEM Communities est passée d’une dépendance importante à Java Server Pages à une flexibilité dans le choix de langages de script de modèle dans lesquels la logique commerciale, le style et le contenu de page sont différents les uns des autres.
 
-L’API SocialResourceProvider offre une plus grande souplesse dans l’utilisation du contenu généré par l’utilisateur. Il n’est donc plus nécessaire de savoir quelle option [SRP](srp.md) a été choisie pour le déploiement.
+L’API SocialResourceProvider offre une plus grande flexibilité pour l’utilisation du contenu généré par l’utilisateur, ce qui évite de devoir savoir quelle option [SRP](srp.md) a été sélectionnée pour le déploiement.
 
-Vous trouverez ci-dessous diverses directives de codage et les meilleures pratiques pour les développeurs AEM Communities :
+Vous trouverez ci-dessous diverses instructions de codage et bonnes pratiques pour les développeurs AEM Communities :
 
-### Code {#code}
+### Code {#code}
 
-* [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md)  - comment éviter d&#39;écrire une application qui ne fonctionne que lorsque l&#39;UGC est stocké dans JCR (JSRP).
-* [SocialUtils Refactoring](socialutils.md)  - méthodes d’utilitaire pour SRP qui remplacent SocialUtils.
-* [Conventions](naming-conventions.md)  de dénomination - conventions de dénomination pour les classes Java personnalisées.
+* [Accès au contenu créé par l’utilisateur avec SRP](accessing-ugc-with-srp.md)  : comment éviter d’écrire une application qui ne fonctionne que lorsque le contenu créé par l’utilisateur est stocké dans JCR (JSRP).
+* [SocialUtils Refactoring](socialutils.md)  : méthodes d’utilitaire pour SRP qui remplacent SocialUtils.
+* [Conventions de dénomination](naming-conventions.md)  : conventions de dénomination pour les classes Java personnalisées.
 
 ### Scripts {#scripts}
 
-* [Téléchargement partiel des composants](sideloading.md)  de communautés : comment ajouter dynamiquement un composant après le chargement de la page.
-* [Rich Text Editor Essentials](rte.md)  - Comment personnaliser l’interface utilisateur de texte enrichi fournie aux membres pour la publication de contenu.
+* [Chargement dynamique des composants](sideloading.md)  de communauté : comment ajouter dynamiquement un composant après le chargement de la page.
+* [Principes de base de l’éditeur de texte enrichi](rte.md)  : comment personnaliser l’interface utilisateur de texte enrichi fournie aux membres pour la publication de contenu.
 
 ### IDE {#ide}
 
-* [Utilisation de Maven pour les communautés](maven.md)  : comment inclure le fichier jar de l&#39;API Communities.
-* [SocialUtils Refactoring](socialutils.md)  - méthodes d’utilitaire pour SRP qui remplacent SocialUtils.
-
+* [Utilisation de Maven pour Communities](maven.md)  - Comment inclure le fichier jar de l’API Communities.
+* [SocialUtils Refactoring](socialutils.md)  : méthodes d’utilitaire pour SRP qui remplacent SocialUtils.
