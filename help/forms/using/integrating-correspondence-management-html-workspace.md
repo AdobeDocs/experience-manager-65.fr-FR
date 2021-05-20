@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 84%
 
 ---
-
 
 # Intégration d’applications tierces à l’espace de travail AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
@@ -27,9 +26,9 @@ Par exemple, considérons Correspondence Management comme exemple de candidat po
 
 ## Création d’actifs de Correspondence Management {#create-correspondence-management-assets}
 
-Début en créant un exemple de modèle Correspondence Management qui est rendu dans l’espace de travail AEM Forms. Pour plus d’informations, voir [Création d’un modèle de lettre](../../forms/using/create-letter.md).
+Commencez par créer un exemple de modèle Correspondence Management rendu dans l’espace de travail AEM Forms. Pour plus d’informations, voir [Création d’un modèle de lettre](../../forms/using/create-letter.md).
 
-Accédez au modèle Correspondence Management à l’adresse URL correspondante pour vérifier si le modèle Correspondence Management peut être rendu correctement. L’URL a un modèle similaire à `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Accédez au modèle Correspondence Management à son URL pour vérifier si le rendu du modèle Correspondence Management peut être effectué avec succès. L’URL a un modèle similaire à `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 où `encodedLetterId` correspond à l’ID de lettre codé URL. Spécifiez le même identifiant de lettre lors de la définition du processus de rendu pour une tâche d’espace de travail dans Workbench.
 
@@ -55,7 +54,7 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
 
    1. Recherchez une ressource. Dans la boîte de dialogue Sélection de l’actif de formulaire, l’onglet de lettres répertorie toutes les lettres sur le serveur.
 
-      ![Panneau Lettre](assets/letter_tab_new.png)
+      ![Onglet Lettre](assets/letter_tab_new.png)
 
    1. Sélectionnez la lettre appropriée et cliquez sur **OK**.
 
