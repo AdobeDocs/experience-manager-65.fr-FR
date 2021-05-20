@@ -1,31 +1,30 @@
 ---
 title: Modèles de ressources
-description: Découvrez les modèles d’actifs dans  [!DNL Adobe Experience Manager Assets] et comment utiliser les modèles d’actifs pour créer de la documentation marketing.
+description: Découvrez les modèles de ressources dans  [!DNL Adobe Experience Manager Assets] et comment utiliser les modèles de ressources pour créer des documents marketing.
 contentOwner: AG
 role: Business Practitioner
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Gestion des ressources,Outils de développement
+exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1548'
 ht-degree: 33%
 
 ---
 
-
 # Modèles de ressources {#asset-templates}
 
-Les modèles de ressources sont une catégorie spéciale de ressources qui facilite la réaffectation rapide de contenu visuellement riche pour les supports numériques et imprimés. Un modèle de ressource comprend deux parties : une section de message fixe et une section modifiable. La section fixe peut comprendre du contenu propriétaire, comme le logo d’une marque ou des informations sur les droits d’auteur, pour lequel la modification n’est pas activée. La section modifiable peut contenir du contenu visuel et textuel dans des champs qui peuvent être modifiés pour personnaliser la messagerie.
+Les modèles de ressources sont une classe spéciale de ressources qui facilite la réorientation rapide de contenu visuellement riche pour les médias numériques et imprimés. Un modèle de ressource comprend deux parties : une section de message fixe et une section modifiable. La section fixe peut comprendre du contenu propriétaire, comme le logo d’une marque ou des informations sur les droits d’auteur, pour lequel la modification n’est pas activée. La section modifiable peut contenir du contenu visuel et textuel dans des champs qui peuvent être modifiés pour personnaliser les messages.
 
-La souplesse d’effectuer des modifications limitées tout en sécurisant la signalisation globale rend les modèles de ressources des blocs de construction idéaux pour une adaptation et une distribution rapides du contenu en tant qu’artefacts de contenu pour diverses fonctions. La redéfinition du contenu permet de réduire les coûts de gestion des canaux imprimés et numériques et de proposer des expériences holistiques et cohérentes sur l’ensemble de ces canaux.
+La possibilité d’apporter des modifications limitées tout en sécurisant la signalétique globale rend les modèles de ressources des blocs de création idéaux pour une adaptation et une distribution rapides du contenu en tant qu’artefacts de contenu pour diverses fonctions. La redéfinition de l’objectif du contenu permet de réduire le coût de gestion des canaux papier et numériques et de proposer des expériences globales et cohérentes sur l’ensemble de ces canaux.
 
-En tant que spécialiste du marketing, vous pouvez stocker et gérer des modèles dans [!DNL Experience Manager Assets] et utiliser un modèle de base unique pour créer facilement plusieurs expériences d’impression personnalisée. Vous pouvez créer différents types de documents marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
+En tant que marketeur, vous pouvez stocker et gérer des modèles dans [!DNL Experience Manager Assets] et utiliser un seul modèle de base pour créer facilement plusieurs expériences d’impression personnalisées. Vous pouvez créer différents types de documents marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre de façon claire votre message marketing à vos clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Vous pouvez surtout diffuser des expériences à la fois numériques et papier simultanément en toute simplicité et offrir ainsi aux utilisateurs une expérience intégrée cohérente.
 
-Bien que les modèles de ressources soient principalement des fichiers [!DNL Adobe InDesign], la maîtrise de [!DNL Adobe InDesign] n&#39;empêche pas la création d&#39;artefacts stellaires. Il n’est pas nécessaire de mapper les champs de votre modèle [!DNL Adobe InDesign] avec les champs de vos produits que vous auriez autrement dû utiliser lors de la création de catalogues. Vous pouvez modifier les modèles en mode WYSIWYG directement sur l’interface Web. Cependant, pour que [!DNL Adobe InDesign] puisse traiter vos modifications de modification, vous devez d&#39;abord configurer [!DNL Experience Manager Assets] pour qu&#39;il s&#39;intègre à [!DNL Adobe InDesign Server].
+Bien que les modèles de ressources soient principalement des [!DNL Adobe InDesign] fichiers, la maîtrise de [!DNL Adobe InDesign] n’empêche pas la création d’artefacts stellaires. Vous n’avez pas besoin de mapper les champs de votre modèle [!DNL Adobe InDesign] avec les champs de vos produits que vous avez normalement besoin de faire lors de la création de catalogues. Vous pouvez éditer les modèles en mode WYSIWYG directement depuis l&#39;interface web. Cependant, pour que [!DNL Adobe InDesign] traite vos modifications, vous devez d’abord configurer [!DNL Experience Manager Assets] pour qu’il s’intègre à [!DNL Adobe InDesign Server].
 
-La possibilité de modifier des modèles [!DNL Adobe InDesign] à partir de l’interface Web permet de renforcer la collaboration entre les créatifs et le personnel marketing. La vitesse accrue du contenu réduit le délai de mise sur le marché des garanties marketing.
+La possibilité de modifier des modèles [!DNL Adobe InDesign] à partir de l’interface web favorise une plus grande collaboration entre les créatifs et le personnel marketing. La vitesse accrue du contenu réduit le délai de mise sur le marché des collatéraux marketing.
 
-Les modèles de ressources permettent d’effectuer les opérations suivantes :
+Vous pouvez effectuer les opérations suivantes avec les modèles de ressources :
 
 * Modifier des champs de modèle modifiables depuis l’interface web.
 * Contrôler les paramètres de base de style du texte, par exemple, la taille, le style et le type de police au niveau des balises.
@@ -33,31 +32,31 @@ Les modèles de ressources permettent d’effectuer les opérations suivantes :
 * Prévisualiser les modifications du modèle.
 * Fusionner plusieurs fichiers de modèle pour créer un document multipage.
 
-Lorsque vous choisissez un modèle pour votre garantie, [!DNL Experience Manager Assets] crée une copie du modèle que vous pouvez modifier. Le modèle original est préservé, ce qui garantit que votre signalétique reste intacte et peut être réutilisée pour renforcer la cohérence de la marque.
+Lorsque vous choisissez un modèle pour votre document, [!DNL Experience Manager Assets] crée une copie du modèle que vous pouvez modifier. Le modèle original est préservé, ce qui garantit que votre signalétique reste intacte et peut être réutilisée pour renforcer la cohérence de la marque.
 
-Vous pouvez exporter le fichier mis à jour dans le dossier parent aux formats INDD, PDF ou JPG. Vous pouvez également télécharger la sortie dans ces formats vers votre système de fichiers local.
+Vous pouvez exporter le fichier mis à jour dans le dossier parent aux formats INDD, PDF ou JPG. Vous pouvez également télécharger la sortie dans ces formats sur votre système de fichiers local.
 
-## Créer une garantie {#creating-a-collateral}
+## Créer un document {#creating-a-collateral}
 
-Imaginons que vous voulez créer des contenus numériques papier, comme des brochures, des prospectus ou des publicités pour une future campagne, et les envoyer à des magasins dans le monde entier. Créer de tels documents à l’aide d’un modèle vous permet de proposer la même expérience client sur tous les canaux de diffusion. Les concepteurs peuvent créer des modèles de campagne (d’une ou de plusieurs pages) à l’aide d’une solution créative, telle que [!DNL InDesign] et télécharger les modèles vers [!DNL Experience Manager Assets] pour vous. Avant de créer une garantie, demandez qu&#39;un ou plusieurs modèles INDD soient chargés et disponibles dans [!DNL Experience Manager] à l&#39;avance.
+Imaginons que vous voulez créer des contenus numériques papier, comme des brochures, des prospectus ou des publicités pour une future campagne, et les envoyer à des magasins dans le monde entier. Créer de tels documents à l’aide d’un modèle vous permet de proposer la même expérience client sur tous les canaux de diffusion. Les concepteurs peuvent créer les modèles de campagne (une ou plusieurs pages) à l’aide d’une solution créative, telle que [!DNL InDesign], puis charger les modèles dans [!DNL Experience Manager Assets] pour vous. Avant de créer un document, vous devez avoir téléchargé un ou plusieurs modèles INDD sur et les mettre à disposition dans [!DNL Experience Manager] à l’avance.
 
-1. Dans l&#39;interface [!DNL Experience Manager], cliquez sur [!UICONTROL Ressources].
+1. Dans l’interface [!DNL Experience Manager], cliquez sur [!UICONTROL Ressources].
 
 1. Dans les options, choisissez **[!UICONTROL Modèles]**.
 
    ![chlimage_1-101](assets/chlimage_1-306.png)
 
-1. Cliquez sur **[!UICONTROL Créer]**, puis choisissez la garantie que vous souhaitez créer dans le menu. Par exemple, choisissez **[!UICONTROL Brochure]**.
+1. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez le document que vous souhaitez créer dans le menu. Par exemple, choisissez **[!UICONTROL Brochure]**.
 
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
-1. Demandez qu&#39;un ou plusieurs modèles INDD soient chargés et disponibles à l&#39;avance dans [!DNL Experience Manager]. Choisissez un modèle pour votre brochure, puis cliquez sur **[!UICONTROL Suivant]**.
+1. Demandez qu’un ou plusieurs modèles INDD soient téléchargés et disponibles à l’avance dans [!DNL Experience Manager]. Choisissez un modèle pour votre brochure, puis cliquez sur **[!UICONTROL Suivant]**.
 1. Entrez un nom et éventuellement une description pour la brochure.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Facultatif) Cliquez sur **[!UICONTROL Balises]** et sélectionnez une ou plusieurs balises pour la brochure. Cliquez sur **[!UICONTROL Confirmer]** pour confirmer votre sélection.
-1. Cliquez sur **[!UICONTROL Créer]**. Une boîte de dialogue s’ouvre pour confirmer que la nouvelle brochure a été créée. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir la brochure en mode d&#39;édition.
+1. Cliquez sur **[!UICONTROL Créer]**. Une boîte de dialogue s’ouvre pour confirmer que la nouvelle brochure a été créée. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir la brochure en mode d’édition.
 
    <!--![chlimage_1-106](assets/.png) -->
 
@@ -65,16 +64,16 @@ Imaginons que vous voulez créer des contenus numériques papier, comme des broc
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Modifier une garantie {#editing-a-collateral}
+## Modifier un document {#editing-a-collateral}
 
-Vous pouvez modifier un document immédiatement après sa création. Vous pouvez également l’ouvrir à partir de la page [!UICONTROL Modèles] ou de la page de ressources.
+Vous pouvez modifier un document immédiatement après sa création. Vous pouvez également l’ouvrir à partir de la page [!UICONTROL Modèles] ou de la page de la ressource.
 
 1. Pour ouvrir un document pour le modifier, procédez de l’une des façons suivantes :
 
-   * Ouvrez la garantie (brochure dans ce cas) que vous avez créée à l’étape 7 de [Créer une garantie](/help/assets/asset-templates.md#creating-a-collateral).
-   * Dans la page Modèles, accédez à un dossier dans lequel vous avez créé la garantie, puis cliquez sur l&#39;action rapide [!UICONTROL Modifier] sur la miniature d&#39;une garantie.
-   * Dans la page de ressources de la garantie, cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
-   * Sélectionnez la garantie et cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
+   * Ouvrez le document (brochure dans ce cas) que vous avez créé à l’étape 7 de la section [Créer un document ](/help/assets/asset-templates.md#creating-a-collateral).
+   * Sur la page Modèles , accédez au dossier dans lequel vous avez créé le document, puis cliquez sur l’action rapide [!UICONTROL Modifier] de la miniature d’un document.
+   * Dans la page Ressource du document, cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
+   * Sélectionnez le document et cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
@@ -82,25 +81,25 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    Vous pouvez utiliser l’éditeur de texte pour modifier le texte à afficher dans le champ de texte. Vous pouvez modifier la taille, le style, la couleur et le type de police au niveau de la balise.
 
-   A l’aide de l’outil de recherche de ressources, vous pouvez parcourir ou rechercher des images dans [!DNL Experience Manager Assets] et remplacer les images modifiables du modèle par les images de votre choix.
+   À l’aide de l’outil de recherche de ressources, vous pouvez parcourir ou rechercher des images dans [!DNL Experience Manager Assets] et remplacer les images modifiables du modèle par les images de votre choix.
 
    ![chlimage_1-109](assets/chlimage_1-314.png)
 
-   Les champs modifiables sont affichés à droite. Pour qu’un champ soit modifiable dans [!DNL Experience Manager Assets], le champ correspondant dans le modèle doit être balisé dans [!DNL InDesign]. En d&#39;autres termes, ils doivent être marqués comme modifiables dans [!DNL InDesign].
+   Les champs modifiables sont affichés à droite. Pour qu’un champ soit modifiable dans [!DNL Experience Manager Assets], le champ correspondant dans le modèle doit être balisé dans [!DNL InDesign]. En d’autres termes, ils doivent être marqués comme modifiables dans [!DNL InDesign].
 
    >[!NOTE]
    >
-   >Assurez-vous que votre déploiement [!DNL Experience Manager] est intégré à un [!DNL InDesign Server] pour permettre à [!DNL Experience Manager Assets] d&#39;extraire des données du modèle [!DNL InDesign] et de les rendre disponibles pour modification. Pour plus d&#39;informations, voir [intégrer des ressources Experience Manager à l&#39;InDesign Server](/help/assets/indesign.md).
+   >Assurez-vous que votre déploiement [!DNL Experience Manager] est intégré à un [!DNL InDesign Server] pour permettre à [!DNL Experience Manager Assets] d’extraire des données du modèle [!DNL InDesign] et de les rendre disponibles pour modification. Pour plus d’informations, voir [Intégration des ressources Experience Manager à InDesign Server](/help/assets/indesign.md).
 
-1. Pour modifier le texte d’un champ modifiable, cliquez sur le champ de texte à partir de la liste des champs modifiables et modifiez le texte du champ.
+1. Pour modifier le texte d’un champ modifiable, cliquez sur le champ de texte dans la liste des champs modifiables et modifiez le texte dans le champ.
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
-   Vous pouvez modifier les propriétés de texte, par exemple le style, la couleur et la taille de la police, à l’aide des options fournies.
+   Vous pouvez modifier les propriétés du texte, par exemple le style, la couleur et la taille de la police à l’aide des options fournies.
 
-1. Cliquez sur **[!UICONTROL Prévisualisation]** pour prévisualisation des modifications de texte.
+1. Cliquez sur **[!UICONTROL Aperçu]** pour prévisualiser les modifications de texte.
 
-1. Pour permuter une image, cliquez sur le **[!UICONTROL Outil de recherche de ressources]** ![chlimage_1-113](assets/chlimage_1-318.png).
+1. Pour permuter une image, cliquez sur l’**[!UICONTROL outil de recherche de ressources]** ![chlimage_1-113](assets/chlimage_1-318.png).
 
 1. Sélectionnez le champ d’image dans la liste des champs modifiables, puis faites glisser l’image souhaitée du sélecteur de ressource vers le champ modifiable.
 
@@ -110,26 +109,26 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
-1. Cliquez sur **[!UICONTROL Prévisualisation]** pour prévisualisation de l’image.
-1. Pour modifier une page spécifique dans une documentation multipage, utilisez le navigateur de page situé en bas.
+1. Cliquez sur **[!UICONTROL Aperçu]** pour prévisualiser l’image.
+1. Pour modifier une page spécifique dans un document multipage, utilisez le navigateur de page en bas de la page.
 
-1. Cliquez sur **[!UICONTROL Prévisualisation]** dans la barre d’outils pour prévisualisation toutes les modifications. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer les modifications apportées à la garantie.
+1. Cliquez sur **[!UICONTROL Aperçu]** dans la barre d’outils pour prévisualiser toutes les modifications. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer les modifications apportées au document.
 
    >[!NOTE]
    >
-   >Les options Prévisualisation et Terminé ne sont activées que si les champs d’image modifiables dans la documentation ne comportent pas d’icônes manquantes. S’il manque des icônes dans votre garantie, c’est parce que [!DNL Experience Manager] ne parvient pas à résoudre les images du modèle [!DNL InDesign]. En règle générale, [!DNL Experience Manager] ne parvient pas à résoudre les images dans les cas suivants :
+   >Les options Aperçu et Terminé sont activées uniquement lorsque les champs d’image modifiables dans le document ne comportent aucune icône manquante. S’il manque des icônes dans votre document, c’est parce que [!DNL Experience Manager] ne peut pas résoudre les images dans le modèle [!DNL InDesign]. En règle générale, [!DNL Experience Manager] ne peut pas résoudre les images dans les cas suivants :
    >
    >* Les images ne sont pas incorporées dans le modèle [!DNL InDesign] sous-jacent.
    >* Les images sont liées à partir du système de fichiers local.
 
    >
-   >Pour permettre à [!DNL Experience Manager] de résoudre des images, procédez comme suit :
+   >Pour permettre à [!DNL Experience Manager] de résoudre les images, procédez comme suit :
    >
-   >* Incorporer des images lors de la création de modèles [!DNL InDesign] (voir [A propos des liens et des graphiques incorporés](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
+   >* Incorporer des images lors de la création de modèles [!DNL InDesign] (voir [À propos des liens et des graphiques incorporés](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
    >* Montez [!DNL Experience Manager] sur votre système de fichiers local, puis mappez les icônes manquantes avec les ressources existantes dans [!DNL Experience Manager].
 
    >
-   >Pour plus d&#39;informations sur l&#39;utilisation des documents [!DNL InDesign], consultez la section [meilleures pratiques pour travailler avec les documents d&#39;InDesign en Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Pour plus d’informations sur l’utilisation des documents [!DNL InDesign], voir [Bonnes pratiques relatives à l’utilisation des documents InDesign dans Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
 1. Le document est créé dans le dossier où vous avez commencé. Pour afficher les rendus, ouvrez le document et choisissez **[!UICONTROL Rendus]** dans la liste de navigation globale.
@@ -140,9 +139,9 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
-## Fusionner la garantie {#merge-collateral}
+## Fusionner le document {#merge-collateral}
 
-1. Dans l&#39;interface [!DNL Experience Manager], cliquez sur [!UICONTROL Ressources] dans la page Navigation.
+1. Dans l’interface [!DNL Experience Manager], cliquez sur [!UICONTROL Ressources] dans la page Navigation.
 
 1. Dans les options, choisissez **[!UICONTROL Modèles]**.
 
@@ -150,28 +149,28 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Dans la page [!UICONTROL Fusion de modèles], cliquez sur **[!UICONTROL Fusion]** ![ajouter des ressources](assets/do-not-localize/assets_add_icon.png).
+1. Sur la page [!UICONTROL Fusion de modèles] , cliquez sur **[!UICONTROL Fusionner]** ![ajouter des ressources](assets/do-not-localize/assets_add_icon.png).
 
-1. Accédez à l&#39;emplacement de la garantie que vous souhaitez fusionner, cliquez sur les miniatures de la sûreté à fusionner pour les sélectionner.
+1. Accédez à l’emplacement des documents que vous souhaitez fusionner, cliquez sur les miniatures des documents que vous souhaitez fusionner pour les sélectionner.
 
    ![chlimage_1-122](assets/chlimage_1-327.png)
 
-   Vous pouvez également rechercher des modèles dans la zone Omnisearch.
+   Vous pouvez également rechercher des modèles dans la zone Omni-recherche.
 
-   Vous pouvez parcourir le référentiel [!DNL Experience Manager Assets] ou les collections, accéder à l’emplacement des modèles souhaités, puis les sélectionner pour les fusionner.
+   Vous pouvez parcourir le référentiel [!DNL Experience Manager Assets] ou les collections, accéder à l’emplacement des modèles souhaités, puis les sélectionner pour la fusion.
 
    Vous pouvez appliquer différents filtres pour rechercher les modèles souhaités. Par exemple, vous pouvez rechercher des modèles en fonction de leur type ou de leurs balises.
 
 1. Cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
-1. Dans l’écran **[!UICONTROL Prévisualisation et réorganisation]**, réorganisez les modèles si nécessaire et prévisualisation la sélection des modèles à fusionner. Cliquez ensuite sur **[!UICONTROL Suivant]** dans la barre d’outils.
+1. Dans l’écran **[!UICONTROL Aperçu et réorganisation]**, réorganisez les modèles si nécessaire et prévisualisez la sélection de modèles à fusionner. Cliquez ensuite sur **[!UICONTROL Suivant]** dans la barre d’outils.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. Dans l’écran [!UICONTROL Configurer le modèle], spécifiez un nom pour la garantie. Vous pouvez également spécifier les balises que vous considérez appropriées. Si vous souhaitez exporter la sortie au format PDF, sélectionnez **[!UICONTROL Acrobat (.PDF)]**. Par défaut, la garantie est exportée au format JPG et [!DNL InDesign]. Pour modifier la miniature d’affichage de la documentation multipage, cliquez sur **[!UICONTROL Modifier la miniature]**.
+1. Dans l’écran [!UICONTROL Configurer le modèle], indiquez un nom pour le document. Vous pouvez également spécifier les balises que vous considérez appropriées. Si vous souhaitez exporter la sortie au format PDF, sélectionnez **[!UICONTROL Acrobat (.PDF)]**. Par défaut, le document est exporté au format JPG et [!DNL InDesign]. Pour modifier la miniature d’affichage des documents de plusieurs pages, cliquez sur **[!UICONTROL Modifier la miniature]**.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** dans la boîte de dialogue pour fermer la boîte de dialogue. La documentation multipage est créée dans le dossier que vous avez créé.
+1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** dans la boîte de dialogue pour fermer la boîte de dialogue. Le document multi-page est créé dans le dossier avec lequel vous avez commencé.
 
    >[!NOTE]
    >
@@ -179,4 +178,4 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
-* L&#39;éditeur [!DNL InDesign] de [!DNL Experience Manager] fonctionne au niveau de la balise et tout le texte sous une balise unique est considéré comme une entité unique. Pour conserver la mise en forme et les styles du texte lors de la modification, balisez séparément chaque paragraphe (ou le texte avec des styles différents).
+* L’éditeur [!DNL InDesign] de [!DNL Experience Manager] fonctionne au niveau d’une balise et tout le texte situé sous une seule balise est considéré comme une entité unique. Pour préserver le formatage et les styles du texte lors de la modification, marquez séparément chaque paragraphe (ou texte avec un style différent).
