@@ -9,15 +9,14 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 70%
+ht-degree: 74%
 
 ---
-
 
 # Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs sélectionnés{#grant-rule-editor-access-to-select-user-groups}
 
@@ -30,11 +29,11 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 ## Spécification des groupes d’utilisateurs qui peuvent accéder à l’éditeur de règles {#specify-user-groups-that-can-access-rule-editor}
 
 1. Connectez-vous à AEM Forms en tant qu’administrateur.
-1. Dans l’instance d’auteur, cliquez sur ![adobeexperience emanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Opérations > Console Web. La console Web s’ouvre dans une nouvelle fenêtre.
+1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Opérations > Console web. La console web s’ouvre dans une nouvelle fenêtre.
 
    ![1-2](assets/1-2.png)
 
-1. Dans la fenêtre de la console Web, recherchez et cliquez sur **[!UICONTROL Formulaire adaptatif et Configuration du Canal Web de communication interactive]**. **[!UICONTROL La boîte de dialogue]** Configuration du Canal Web de formulaire adaptatif et de communication interactive s&#39;affiche. Ne modifiez aucune valeur puis cliquez sur **Enregistrer**.
+1. Dans la fenêtre de la console web, recherchez et cliquez sur **[!UICONTROL Configuration du canal web du formulaire adaptatif et de la communication interactive]**. **[!UICONTROL La boîte de dialogue de]** configuration de canal web du formulaire adaptatif et de la communication interactive s’affiche. Ne modifiez aucune valeur, puis cliquez sur **Enregistrer**.
 
    Vous créez ainsi un fichier /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config dans le référentiel CRX.
 
@@ -49,15 +48,14 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles des utilisateu
 
    ![Créer un utilisateur](assets/create_user_new.png)
 
-   Désormais, lorsqu’un utilisateur qui ne fait pas partie d’un groupe d’utilisateurs spécifié (ici RuleEditorsUserGroup) touche un champ, l’icône Modifier la règle ( ![edit-rules1](assets/edit-rules1.png)) n’est pas disponible pour elle dans la barre d’outils des composants :
+   Désormais, lorsqu’un utilisateur qui ne fait pas partie d’un groupe d’utilisateurs spécifié (ici RuleEditorsUserGroup) appuie sur un champ, l’icône Modifier la règle ( ![edit-rules1](assets/edit-rules1.png)) n’est pas disponible dans la barre d’outils des composants :
 
-   ![composant stoolbarwithre](assets/componentstoolbarwithre.png)
+   ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 
    Barre d’outils de composants comme visible pour un utilisateur ayant un accès à l’éditeur de règles
 
-   ![composant ststoolbarwithoutre](assets/componentstoolbarwithoutre.png)
+   ![componentstoolbarwithoutre](assets/componentstoolbarwithoutre.png)
 
    Barre d’outils de composants comme visible pour un utilisateur sans accès à l’éditeur de règles
 
-   Pour obtenir des instructions sur l’ajout d’utilisateurs à des groupes, voir [Administration utilisateur et sécurité](/help/sites-administering/security.md).
-
+   Pour obtenir des instructions sur l’ajout d’utilisateurs aux groupes, voir [Administration et sécurité des utilisateurs](/help/sites-administering/security.md).
