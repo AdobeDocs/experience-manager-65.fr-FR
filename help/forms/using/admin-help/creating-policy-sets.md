@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 736926af-ae41-4da3-b181-444de72407bd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 100%
 
 ---
-
 
 # Création et gestion des jeux de stratégies {#creating-and-managing-policy-sets}
 
@@ -115,4 +114,3 @@ Lorsque vous supprimez un jeu de stratégies, les stratégies qui faisaient part
 1. Cliquez sur Stratégies, puis sur l’onglet Jeux de stratégies.
 1. Cochez la case correspondant au jeu de stratégies à supprimer.
 1. Cliquez sur Supprimer, puis sur OK.
-
