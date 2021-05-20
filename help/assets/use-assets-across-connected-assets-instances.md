@@ -22,18 +22,18 @@ Les utilisateurs peuvent créer des pages web dans [!DNL Experience Manager Site
 
 Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets].
 
-Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet de rechercher et d’utiliser aisément plusieurs ressources distantes à la fois. Envisagez de migrer en masse de nombreuses ressources distantes pour les rendre disponibles sur le déploiement local [!DNL Sites] en une seule fois. Voir [Guide de migration des ressources du Experience Manager](/help/assets/assets-migration-guide.md).
+Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet de rechercher et d’utiliser aisément plusieurs ressources distantes à la fois. Envisagez de migrer en masse de nombreuses ressources distantes pour les rendre disponibles sur le déploiement local [!DNL Sites] en une seule fois. Voir [Guide de migration des ressources Experience Manager](/help/assets/assets-migration-guide.md).
 
 ### Conditions préalables et déploiements pris en charge {#prerequisites}
 
 Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points suivants :
 
 * Les utilisateurs font partie de groupes d’utilisateurs appropriés sur chaque déploiement.
-* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] 6.5  [!DNL Assets] fonctionne  [!DNL Experience Manager] en tant que Cloud Service. Pour plus d’informations sur le fonctionnement de cette fonctionnalité en tant que [!DNL Cloud Service] [!DNL Experience Manager], voir [Actifs connectés dans [!DNL Experience Manager] sous la forme  [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] La version 6.5  [!DNL Assets] fonctionne avec  [!DNL Experience Manager] en tant que Cloud Service. Pour plus d’informations sur le fonctionnement de cette fonctionnalité dans [!DNL Experience Manager] as a [!DNL Cloud Service], voir [Ressources connectées dans [!DNL Experience Manager] as a [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]comme[!DNL Cloud Service]** | Pris en charge | Pris en charge | Pris en charge |
+   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Pris en charge | Pris en charge | Pris en charge |
    | **[!DNL Experience Manager] 6.5 [!DNL Assets] sur AMS** | Pris en charge | Pris en charge | Pris en charge |
    | **[!DNL Experience Manager] 6.5 [!DNL Assets] on-premise** | Pas de prise en charge | Pas de prise en charge | Pas de prise en charge |
 
@@ -87,7 +87,7 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
 
    *Schéma : exemple de configuration standard pour la fonctionnalité de ressources connectées.*
 
-1. Les ressources numériques existantes sur le déploiement [!DNL Assets] sont déjà traitées et les rendus sont générés. Ces rendus sont récupérés à l’aide de cette fonctionnalité, de sorte qu’il n’est pas nécessaire de les régénérer. Désactivez les lanceurs de workflow pour empêcher la régénération des rendus. Modifiez les paramètres du lanceur pour le déploiement ([!DNL Sites]) pour exclure le dossier `connectedassets` (les ressources sont extraites de ce dossier).
+1. Les ressources numériques existantes sur le déploiement [!DNL Assets] sont déjà traitées et les rendus sont générés. Ces rendus sont récupérés à l’aide de cette fonctionnalité, de sorte qu’il n’est pas nécessaire de régénérer les rendus. Désactivez les lanceurs de workflow pour empêcher la régénération des rendus. Modifiez les paramètres du lanceur pour le déploiement ([!DNL Sites]) pour exclure le dossier `connectedassets` (les ressources sont extraites de ce dossier).
 
    1. Sur le déploiement [!DNL Sites], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Lanceurs]**.
 
@@ -109,7 +109,7 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
 
 1. Ajoutez le déploiement [!DNL Sites] en tant que point d’origine autorisé dans la configuration CORS du déploiement [!DNL Assets]. Pour plus d’informations, consultez [Comprendre le partage des ressources cross-origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr).
 
-1. Configurez [la prise en charge du même cookie de site](/help/sites-administering/same-site-cookie-support.md).
+1. Configurez la [même prise en charge des cookies de site](/help/sites-administering/same-site-cookie-support.md).
 
 Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] et le déploiement [!DNL Assets] configurés.
 
@@ -171,7 +171,7 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 1. Sélectionnez une ressource dans la console [!DNL Assets] et cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
 1. Cliquez sur l’onglet **[!UICONTROL Références]**. Consultez **[!UICONTROL Références locales]** pour en savoir plus sur l’utilisation de la ressource dans le déploiement [!DNL Assets]. Consultez [!UICONTROL Références distantes] pour en savoir plus sur l’utilisation de la ressource dans le déploiement [!DNL Sites] lorsque la ressource est récupérée à l’aide de la fonctionnalité Ressources connectées.
 
-   ![Références distantes dans la page Propriétés des ressources](assets/connected-assets-remote-reference.png)
+   ![Références distantes dans la page Propriétés de la ressource](assets/connected-assets-remote-reference.png)
 
 1. Les références des pages [!DNL Sites] indiquent le nombre total de références pour chaque [!DNL Sites] local. Il peut s’écouler un certain temps avant de trouver toutes les références et d’afficher le nombre total de références.
 1. La liste des références est interactive et les utilisateurs de DAM peuvent cliquer sur une référence pour ouvrir la page de référence. Si les références distantes ne peuvent pas être extraites pour une raison quelconque, une notification s’affiche pour informer l’utilisateur de l’échec de l’extraction.
@@ -181,7 +181,7 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 
 ## Restrictions et bonnes pratiques {#tip-and-limitations}
 
-* Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Assets Insight](/help/assets/asset-insights.md) sur l’instance [!DNL Sites].
+* Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Statistiques sur les ressources](/help/assets/asset-insights.md) sur l’instance [!DNL Sites].
 
 ### Autorisations et gestion des ressources {#permissions-and-managing-assets}
 
@@ -217,12 +217,12 @@ Pour résoudre les erreurs courantes, procédez comme suit :
 
 * Si vous ne pouvez pas rechercher des ressources distantes à partir de l’[!UICONTROL outil de recherche de contenu], vérifiez que les rôles et autorisations requis sont bien appliqués.
 
-* Une ressource extraite du DAM distant peut ne pas être publiée sur une page Web pour une ou plusieurs raisons. notamment son absence sur le serveur distant, l’absence d’autorisations appropriées pour la récupérer ou une défaillance du réseau. Assurez-vous que la ressource n’est pas supprimée du DAM distant. Assurez-vous que les autorisations appropriées sont en place et que les conditions préalables sont remplies. Essayez de rajouter la ressource à la page et de la republier. Recherchez dans la [liste des tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) les erreurs de récupération de ressources.
+* Une ressource récupérée à partir du DAM distant peut ne pas être publiée sur une page web pour une ou plusieurs raisons. notamment son absence sur le serveur distant, l’absence d’autorisations appropriées pour la récupérer ou une défaillance du réseau. Assurez-vous que la ressource n’est pas supprimée du DAM distant. Assurez-vous que les autorisations appropriées sont en place et que les conditions préalables sont remplies. Essayez de rajouter la ressource à la page et de la republier. Recherchez dans la [liste des tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) les erreurs de récupération de ressources.
 
-* Si vous ne pouvez pas accéder au déploiement DAM distant à partir du déploiement local [!DNL Sites], assurez-vous que les cookies intersites sont autorisés et [la prise en charge des cookies de site identiques](/help/sites-administering/same-site-cookie-support.md) est configurée. Si des cookies intersites sont bloqués, les déploiements de [!DNL Experience Manager] ne peuvent pas s’authentifier. Par exemple, [!DNL Google Chrome] en mode Incognito peut bloquer les cookies tiers. Pour autoriser les cookies dans le navigateur [!DNL Chrome], cliquez sur l’icône &quot;oeil&quot; dans la barre d’adresse, accédez à **Site Not Working** > **Blocage**, sélectionnez l’URL DAM distante et autorisez le cookie login-token. Vous pouvez également voir [comment activer les cookies tiers](https://support.google.com/chrome/answer/95647).
+* Si vous ne parvenez pas à accéder au déploiement DAM distant à partir du déploiement [!DNL Sites] local, assurez-vous que les cookies intersites sont autorisés et que [la même prise en charge des cookies de site](/help/sites-administering/same-site-cookie-support.md) est configurée. Si les cookies intersites sont bloqués, les déploiements de [!DNL Experience Manager] peuvent ne pas s’authentifier. Par exemple, [!DNL Google Chrome] en mode Incognito peut bloquer les cookies tiers. Pour autoriser les cookies dans le navigateur [!DNL Chrome], cliquez sur l’icône &quot;oeil&quot; dans la barre d’adresse, accédez à **Site Not Working** > **Blocked**, sélectionnez l’URL DAM distante et autorisez le cookie login-token. Vous pouvez également consulter la section [Comment activer les cookies tiers](https://support.google.com/chrome/answer/95647).
 
    ![Erreur de cookie dans le navigateur Chrome en mode Incognito](assets/chrome-cookies-incognito-dialog.png)
 
 * Si les références distantes ne sont pas récupérées et génèrent un message d’erreur, vérifiez si le déploiement [!DNL Sites] est disponible et recherchez les problèmes de connectivité réseau. Réessayez ultérieurement pour vérifier si l’erreur est toujours générée. Le déploiement [!DNL Assets] tente à deux reprises d’établir une connexion avec le déploiement [!DNL Sites], puis signale un échec.
 
-   ![échec de récupération des références distantes de ressources](assets/reference-report-failure.png)
+   ![échec de la récupération des références distantes de ressources](assets/reference-report-failure.png)
