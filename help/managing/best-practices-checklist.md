@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
-translation-type: tm+mt
-source-git-commit: e12f994a16511e8be4efe3e507deb97b42175f90
+exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 82%
 
 ---
-
 
 # La liste de contrôle{#the-checklist}
 
@@ -26,7 +25,7 @@ Il existe des listes de contrôle pour chaque personnage (rôle) impliqué dans 
 
 ## Télécharger {#download}
 
-Liste de contrôle des bonnes pratiques AEM Project v2
+Liste de contrôle des bonnes pratiques du projet AEM v2
 
 [Obtenir le fichier](assets/aem_project_bp_checklistv2-65.xlsx)
 
@@ -40,7 +39,7 @@ Les feuilles de calcul suivantes sont fournies :
 * **[État par rôle](/help/managing/best-practices.md#status-by-role)**
 * Série de listes de contrôle, selon le [personnage](/help/managing/best-practices.md#persona), la [phase et le jalon](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossaire**
-   * Le glossaire liste les détails de tous les documents livrables figurant dans la liste de contrôle du projet.
+   * Le glossaire répertorie les détails de tous les documents livrables de la liste de contrôle du projet.
    * Le [glossaire](/help/managing/best-practices-glossary.md) est également disponible dans le cadre de la documentation.
 * **[Définition des personnages](/help/managing/best-practices.md#persona)**
 
@@ -48,8 +47,8 @@ Les feuilles de calcul suivantes sont fournies :
 
 Pour livrer un projet de grande qualité, vous devez suivre tous les éléments affichés dans les listes de contrôle, de préférence dans l’ordre :
 
-1. Les listes de contrôle sont définies en fonction de la **[personnalité](/help/managing/best-practices.md#persona)** (rôle) impliquée. Chaque personne devrait utiliser la liste de contrôle correspondant à son rôle dans le projet.
-1. Les listes de contrôle couvrent les **[Documents requis](/help/managing/best-practices.md#required-documents)** et **[Produits livrables](/help/managing/best-practices.md#deliverables)** pour chaque jalon - la personne concernée doit définir les champs d&#39;état et de qualité appropriés.
+1. Les listes de contrôle sont définies en fonction de **[Persona](/help/managing/best-practices.md#persona)** (rôle) impliqué. Chaque personne doit utiliser la liste de contrôle appropriée à son rôle dans le projet.
+1. Les listes de contrôle couvrent les **[Documents requis](/help/managing/best-practices.md#required-documents)** et **[Livrables](/help/managing/best-practices.md#deliverables)** pour chaque jalon : le personnage concerné doit définir les champs de statut et de qualité appropriés.
 
    >[!NOTE]
    >
