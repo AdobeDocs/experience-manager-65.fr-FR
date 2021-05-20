@@ -9,16 +9,15 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 76f3a684-027d-4822-9eb4-220fc96956e3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '755'
 ht-degree: 98%
 
 ---
-
 
 # Modèles de fragment de contenu{#content-fragment-models}
 
@@ -32,7 +31,7 @@ Les modèles de fragment de contenu définissent la structure du contenu pour vo
 
 Pour activer les modèles de fragment de contenu, vous devez :
 
-* Activez l’utilisation des modèles de fragments de contenu dans le [navigateur de configuration](/help/sites-administering/configurations.md).
+* Activer l’utilisation des modèles de fragment de contenu dans le [navigateur de configuration](/help/sites-administering/configurations.md)
 * appliquer la configuration à votre dossier de ressources.
 
 ### Activation des modèles de fragment de contenu dans Configuration Manager    {#enable-content-fragment-models-in-configuration-manager}
@@ -161,4 +160,3 @@ Pour publier un modèle de fragment de contenu :
 
    >[!NOTE]
    Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
-
