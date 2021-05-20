@@ -10,14 +10,13 @@ topic-tags: hTML5_forms
 discoiquuid: 80e3eec4-95e0-4731-a0e5-a617e9bcb069
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 039afdf3-013b-41b2-8821-664d28617f61
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2862'
 ht-degree: 91%
 
 ---
-
 
 # Jeu de formulaires dans AEM Forms{#form-set-in-aem-forms}
 
@@ -35,9 +34,9 @@ Les jeux de formulaires sont également pris en charge dans l’application AEM 
 
 ## Création et gestion de jeux de formulaires {#creating-and-managing-form-set}
 
-Vous pouvez associer plusieurs XDP ou modèles de formulaire, créés à l’aide de Designer, à un jeu de formulaires. Les jeux de formulaires peuvent ensuite être utilisés pour effectuer un rendu sélectif des fichiers XDP en fonction des valeurs saisies par les utilisateurs dans les formulaires initiaux et leurs profils.
+Vous pouvez associer plusieurs XDP ou modèles de formulaire, créés à l’aide de Designer, dans un jeu de formulaires. Les jeux de formulaires peuvent ensuite être utilisés pour rendre les XDP de manière sélective en fonction des valeurs saisies par les utilisateurs dans les formulaires initiaux et de leurs profils.
 
-Utilisez [l’interface utilisateur AEM Forms](../../forms/using/introduction-managing-forms.md) pour gérer tous vos formulaires, jeux de formulaires et ressources connexes.
+Utilisez [l’interface utilisateur d’AEM Forms](../../forms/using/introduction-managing-forms.md) pour gérer tous vos formulaires, jeux de formulaires et ressources associés.
 
 ### Créer un jeu de formulaires {#create-a-form-set}
 
@@ -51,8 +50,8 @@ Pour créer un jeu de formulaires, procédez comme suit :
    * Titre : indique le titre du document. Le titre vous permet d’identifier le jeu de formulaires dans l’interface utilisateur d’AEM Forms.
    * Description : indique des informations détaillées relatives au document.
    * Balises : indique les balises pour individualiser le jeu de formulaires. Les balises aident à rechercher le jeu de formulaires. Pour créer des balises, saisissez les nouveaux noms de balise dans la boîte de dialogue Balises.
-   * URL d’envoi : Indique l’URL où les données envoyées sont publiées pour le cas du rendu autonome du jeu de formulaires (cas d’utilisation d’applications non AEM Forms). Les données sont envoyées vers ce point de fin comme données de formulaire multiples avec le paramètre de requête suivant :
-   * dataXML : ce paramètre contient une représentation XML des données du jeu de formulaires envoyé. Si tous les formulaires du jeu utilisent un schéma commun, le fichier XML est généré selon ce schéma. Sinon, la balise XML racine contient une balise enfant pour chaque formulaire rempli du jeu de formulaires contenant les données des pièces jointes du formulaire.
+   * Submit URL : Indique l’URL où les données envoyées sont publiées pour le cas du rendu autonome du jeu de formulaires (cas d’utilisation d’application non AEM Forms). Les données sont envoyées vers ce point de fin comme données de formulaire multiples avec le paramètre de requête suivant :
+   * dataXML : ce paramètre contient une représentation XML des données du jeu de formulaires envoyé. Si tous les formulaires du jeu utilisent un schéma commun, le fichier XML est généré selon ce schéma. Dans le cas contraire, la balise XML racine contient une balise enfant pour chaque formulaire rempli du jeu contenant les données des pièces jointes du formulaire.
    * formsetPath : le chemin du jeu de formulaires dans CRXDE, qui a été envoyé.
    * Profil de rendu HTML : vous pouvez configurer certaines options telles que les champs flottants, les pièces jointes et la prise en charge de brouillon (pour le rendu d’un jeu de formulaires autonome) pour personnaliser l’apparence, le comportement et les interactions du jeu de formulaires. Vous pouvez personnaliser ou étendre le profil existant pour modifier n’importe quel paramètre du profil du formulaire HTML.
 
@@ -104,11 +103,11 @@ Une fois que le jeu de formulaires est créé, vous pouvez y effectuer les actio
 Pour modifier un jeu de formulaires, procédez comme suit : 
 
 1. Sélectionnez formulaires > Formulaires &amp; Documents.
-1. Localisez le jeu de formulaires que vous souhaitez modifier. Passez la souris dessus et sélectionnez Modifier ( ![editicon](assets/editicon.png)).
+1. Localisez le jeu de formulaires que vous souhaitez modifier. Passez la souris dessus et sélectionnez Modifier ( ![édition](assets/editicon.png)).
 1. Dans la page Configurer le(s) formulaire(s), vous pouvez modifier les éléments suivants : 
 
    * L’ordre des formulaires
-   * Identifiant du formulaire
+   * L’identifiant de formulaires
    * La racine des données
    * L’expression d’éligibilité
 
@@ -128,7 +127,7 @@ Une fois que vous avez créé un jeu de formulaires avec l’interface utilisate
 
    ![Création d’un processus : sélectionnez la boîte de dialogue Sélection de l’actif de formulaire](assets/formsetinprocessmgmt2.png)
 
-1. Sélectionne un jeu de formulaires et cliquez sur OK.
+1. Sélectionnez un jeu de formulaires et cliquez sur OK.
 
 ## Expressions d’éligibilité {#eligibility-expressions}
 
@@ -166,7 +165,7 @@ var formUid = "form1";
 
 Un jeu de formulaires est un ensemble de formulaires HTML5 multiples dont les schémas sont communs ou différents. Le jeu de formulaires prend en charge le préremplissage des champs de formulaire à l’aide d’un fichier XML. Vous pouvez associer un fichier XML à un jeu de formulaires. Ainsi, lorsque vous ouvrez un formulaire dans le jeu, certains champs du formulaire sont pré-remplis.
 
-Le fichier XML de pré-remplissage est spécifié à l’aide du paramètre dataRef de l’URL du jeu de formulaires. Le paramètre dataRef spécifie le chemin absolu du fichier XML de données fusionné avec le jeu de formulaires.
+Le fichier XML de pré-remplissage est spécifié à l’aide du paramètre dataRef de l’URL du jeu de formulaires. Le paramètre dataRef spécifie le chemin d’accès absolu au fichier XML de données fusionné avec le jeu de formulaires.
 
 Par exemple, vous avez trois formulaires (formulaire 1, formulaire 2 et formulaire 3) dans le jeu de formulaires dont la structure est la suivante :
 
@@ -257,7 +256,7 @@ Règles de syntaxe pour créer un fichier XML de préremplissage :
 * prefillXML : indique si l’élément est requis (R) ou optionnel (O) dans le XML prérempli.
 * enfants : indique les éléments qui peuvent être ses enfants.
 
-### JEU DE FORMULAIRES  {#formset}
+### JEU DE FORMULAIRES {#formset}
 
 `parent elements:`
 
@@ -339,7 +338,7 @@ Cette balise indique le début du XML du formulaire HTML5. Cela est ajouté à l
 
 `children: controlled by the Forms in Form set`
 
-Le rootElement du nom est simplement un espace réservé. Le nom réel est sélectionné dans les formulaires utilisés dans le jeu de formulaires. La sous-arborescence qui début avec rootElement contient les données des champs et des sous-formulaires à l’intérieur du Forms dans le jeu de formulaires. Des facteurs multiples déterminent la structure du rootElement et de ses enfants.
+Le rootElement du nom est simplement un espace réservé. Le nom réel est sélectionné dans les formulaires utilisés dans le jeu de formulaires. La sous-arborescence commençant par rootElement contient les données des champs et des sous-formulaires dans Forms dans le jeu de formulaires. Des facteurs multiples déterminent la structure du rootElement et de ses enfants.
 
 Dans le code XML de préremplissage, cette balise est optionnelle, mais si elle est manquante, le code XML entier est ignoré.
 
@@ -381,4 +380,3 @@ Les modèles de données suivants ne sont pas entièrement pris en charge dans l
   </tr>
  </tbody>
 </table>
-
