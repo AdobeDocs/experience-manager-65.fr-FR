@@ -10,64 +10,62 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '361'
 ht-degree: 2%
 
 ---
-
 
 # Abonnements des communautés {#communities-subscriptions}
 
 ## Présentation {#overview}
 
-En ce qui concerne les communautés [FP1](deploy-communities.md#latestfeaturepack), les membres de la communauté peuvent interagir avec la communauté par courriel en utilisant une fonction appelée abonnements.
+À partir de Communities [FP1](deploy-communities.md#latestfeaturepack), les membres de la communauté peuvent interagir avec la communauté par courrier électronique à l’aide d’une fonctionnalité appelée abonnements.
 
-Les Abonnements sont similaires aux [notifications](notifications.md), car les membres peuvent s&#39;abonner lorsqu&#39;ils suivent des articles de blog, des sujets de forum ou des questions QnA.
+Les abonnements sont similaires aux [notifications](notifications.md), car les membres peuvent s’abonner lorsqu’ils suivent des articles de blog, des sujets de forum ou des questions Q&amp;R.
 
 Ce qui distingue les abonnements des notifications est :
 
-* Les membres ne peuvent s&#39;abonner lorsqu&#39;ils suivent d&#39;autres membres.
-* La seule action que les membres doivent entreprendre est de sélectionner `Email Subscriptions` lorsque vous procédez comme suit.
-* Lorsque la réponse par courrier électronique est configurée, les membres peuvent effectivement publier du contenu en répondant simplement au courrier électronique reçu.
+* Les membres ne peuvent pas s’abonner lorsqu’ils suivent d’autres membres.
+* La seule action que les membres peuvent effectuer est de sélectionner `Email Subscriptions` en suivant la liste.
+* Lorsque la réponse par courrier électronique est configurée, les membres peuvent effectivement publier du contenu en répondant simplement à l’e-mail reçu.
 
-### Conditions préalables {#requirements}
+### Conditions requises {#requirements}
 
 **Configurer le courrier électronique**
 
-Le courriel doit être configuré pour que les abonnements soient fonctionnels et que les membres puissent répondre par courriel.
+L&#39;email doit être paramétré pour que les abonnements soient fonctionnels et que les membres puissent répondre par email.
 
-Pour obtenir des instructions sur la configuration du courrier électronique, voir [Configuration du courrier électronique](email.md).
+Pour plus d’informations sur la configuration de l’e-mail, voir [Configuration de l’e-mail](email.md).
 
-**Activer les Abonnements et suivre**
+**Activation des abonnements et suivez**
 
 Les composants doivent être configurés pour activer les abonnements *et* suivants. Les fonctionnalités qui autorisent les abonnements sont [blog](blog-feature.md), [forum](forum.md) et [QnA](working-with-qna.md).
 
-## Abonnements de la suite {#subscriptions-from-following}
+## Abonnements à partir de la balise {#subscriptions-from-following}
 
-![abonnement suivant](assets/subscription-following.png)
+![subscription-following](assets/subscription-following.png)
 
-Le bouton **Suivre** permet de suivre les entrées comme activités, abonnements et/ou notifications. Chaque fois que le bouton **Suivre** est sélectionné, il est possible d&#39;activer ou de désactiver une sélection.
+Le bouton **Suivre** permet de suivre les entrées en tant qu’activités, abonnements et/ou notifications. Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection.
 
-Si une méthode de suivi est sélectionnée, le texte du bouton devient **Suivant**. Pour plus de commodité, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
+Si l’une des méthodes suivantes est sélectionnée, le texte du bouton passe à **Suivant**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
 
-Le bouton **Suivre** n&#39;inclura l&#39;option `Email Subscriptions` que lorsqu&#39;un forum, QnA ou blog est configuré pour activer les abonnements de messagerie. Ce bouton apparaît :
+Le bouton **Suivre** comprend l’option `Email Subscriptions` uniquement lorsqu’un forum, une correspondance ou un blog est configuré pour activer les abonnements aux emails. Ce bouton apparaît :
 
-* Sur la page principale de la fonctionnalité pour le forum activé, QnA, ou blog Envoie un courriel pour toute l&#39;activité sous cette fonction.
+* Sur la page principale du forum activé, Q&amp;R ou blog enverra un e-mail pour toutes les activités sous cette fonction.
 
-* Pour une entrée spécifique, telle qu&#39;un sujet de forum, une question QnA ou un article de blog Envoie un courriel lorsqu&#39;il y a activité pour cette entrée spécifique.
+* Pour une entrée spécifique, telle qu’un sujet de forum, une question Q&amp;R ou un article de blog, enverra un email lorsqu’il y a une activité pour cette entrée spécifique.
 
 ## Réponse par courriel {#reply-by-email}
 
-Lorsque le courrier électronique est [configuré pour répondre par courrier électronique](email.md#configure-polling-importer), le membre qui s’est abonné reçoit un courrier électronique contenant le contenu publié et un lien vers le contenu en ligne.
+Lorsque l’adresse électronique est [configurée pour répondre par adresse électronique](email.md#configure-polling-importer), le membre qui s’est abonné recevra un courrier électronique contenant le contenu publié et un lien vers le contenu en ligne.
 
-S&#39;ils répondent à l&#39;e-mail, le contenu qu&#39;ils saisissent dans la réponse apparaîtra en ligne.
+S&#39;ils répondent à l&#39;email, le contenu qu&#39;ils saisissent dans la réponse apparaîtra en ligne.
 
 ![email-response](assets/email-reply.png)
 
-Le temps nécessaire à la publication d&#39;une réponse est contrôlé par l&#39;[intervalle de mise à jour de l&#39;importateur d&#39;interrogation](email.md#configure-polling-importer).
+Le temps nécessaire à la publication d’une réponse est contrôlé par l’[intervalle de mise à jour de l’importateur d’interrogations](email.md#configure-polling-importer).
 
 ![AQ](assets/qa.png)
-
