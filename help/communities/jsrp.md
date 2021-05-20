@@ -1,6 +1,6 @@
 ---
-title: JSRP - Fournisseur de ressources d’Enregistrement JCR
-seo-title: JSRP - Fournisseur de ressources d’Enregistrement JCR
+title: JSRP - Fournisseur de ressources de stockage JCR
+seo-title: JSRP - Fournisseur de ressources de stockage JCR
 description: JSRP est généralement mieux adapté aux environnements de démonstration ou de développement d’une instance de publication et d’une instance d’auteur.
 seo-description: JSRP est généralement mieux adapté aux environnements de démonstration ou de développement d’une instance de publication et d’une instance d’auteur.
 uuid: 358a43c1-4137-4300-8443-c0d7166968ad
@@ -10,20 +10,19 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
 
-
-# JSRP - Fournisseur de ressources d&#39;Enregistrement JCR {#jsrp-jcr-storage-resource-provider}
+# JSRP - Fournisseur de ressources de stockage JCR {#jsrp-jcr-storage-resource-provider}
 
 ## À propos de JSRP {#about-jsrp}
 
-Lorsque AEM Communities utilise JSRP comme option d’enregistrement (valeur par défaut), le contenu de la communauté est stocké dans le JCR et le contenu généré par l’utilisateur (UGC) n’est accessible que depuis l’instance d’auteur ou de publication à laquelle il a été publié.
+Lorsqu’AEM Communities utilise JSRP comme option de stockage (valeur par défaut), le contenu de la communauté est stocké dans JCR et le contenu généré par l’utilisateur est accessible uniquement à partir de l’instance d’auteur ou de publication à laquelle il a été publié.
 
 En raison de la simplicité du déploiement, JSRP est généralement mieux adapté aux environnements de démonstration ou de développement d’une instance de publication et d’une instance d’auteur.
 
@@ -31,17 +30,17 @@ Voir aussi [Caractéristiques des options SRP](working-with-srp.md#characteristi
 
 ## Configuration {#configuration}
 
-### Sélectionner JSRP {#select-jsrp}
+### Sélectionnez JSRP {#select-jsrp}
 
-Par défaut, JSRP est l’option d’enregistrement pour UGC.
+Par défaut, JSRP est l’option de stockage du contenu généré par l’utilisateur.
 
-La [console de configuration d&#39;Enregistrement](srp-config.md) permet de sélectionner la configuration d&#39;enregistrement par défaut, qui identifie l&#39;implémentation de SRP à utiliser.
+La [console Configuration du stockage](srp-config.md) permet de sélectionner la configuration du stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
 
-Dans l’environnement d’auteur, pour accéder à la console de configuration de l’Enregistrement
+Dans l’environnement de création, pour accéder à la console Configuration de stockage
 
-* A partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL Configuration de l&#39;Enregistrement]**
+* À partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL Configuration de stockage]**
 
-* Sélectionnez **[!UICONTROL JCR Enregistrement Resource Provider (JSRP)]**
+* Sélectionnez **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
 
 * Sélectionnez **[!UICONTROL Envoyer]**
 
@@ -49,10 +48,10 @@ Dans l’environnement d’auteur, pour accéder à la console de configuration 
 
 ### Publication de la configuration {#publishing-the-configuration}
 
-Bien que JSRP soit la configuration par défaut, pour s’assurer que la configuration identique est définie dans l’environnement de publication :
+Bien que JSRP soit la configuration par défaut, assurez-vous que la configuration identique est définie dans l’environnement de publication :
 
-* A partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]**
-* Sélectionnez **[!UICONTROL Activer l&#39;arborescence]** > **[!UICONTROL chemin de Début]** :
+* À partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]**
+* Sélectionnez **[!UICONTROL Activer l’arborescence]** > **[!UICONTROL Chemin de début]** :
 
    * Accédez à `/conf/global/settings/community/srpc/`
 
@@ -60,32 +59,32 @@ Bien que JSRP soit la configuration par défaut, pour s’assurer que la configu
 
 ## Gestion des données utilisateur {#managing-user-data}
 
-Pour plus d’informations sur *les utilisateurs*, *les profils utilisateur* et *les groupes d’utilisateurs*, souvent saisis dans l’environnement de publication, consultez :
+Pour plus d’informations sur les *utilisateurs*, les *profils utilisateur* et les *groupes d’utilisateurs*, souvent renseignés dans l’environnement de publication, consultez :
 
 * [Synchronisation des utilisateurs](sync.md)
 * [Gestion des utilisateurs et des groupes d’utilisateurs](users.md)
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
-### UGC invisible dans le JCR {#ugc-not-visible-in-jcr}
+### UGC invisible dans JCR {#ugc-not-visible-in-jcr}
 
-Assurez-vous que JSRP a été configuré comme fournisseur par défaut en vérifiant la configuration de l’option enregistrement. Par défaut, le fournisseur de ressources d’enregistrement est JSRP.
+Vérifiez que JSRP a été configuré comme fournisseur par défaut en vérifiant la configuration de l&#39;option de stockage. Par défaut, le fournisseur de ressources de stockage est JSRP.
 
-Sur toutes les instances d’AEM création et de publication, revisitez la console de configuration de l’Enregistrement ou vérifiez le référentiel AEM :
+Sur toutes les instances d’AEM de création et de publication, consultez à nouveau la console Configuration de stockage ou vérifiez le référentiel AEM :
 
 * Dans JCR, si [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * Ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc), cela signifie que le fournisseur d’enregistrement est JSRP.
+   * Ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc), cela signifie que le fournisseur de stockage est JSRP.
    * Si le noeud srpc existe et contient le noeud [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), les propriétés de la configuration par défaut doivent définir JSRP comme fournisseur par défaut.
 
-### UGC invisible sur l’instance d’auteur {#ugc-not-visible-on-author-instance}
+### Contenu généré par l’utilisateur non visible sur l’instance d’auteur {#ugc-not-visible-on-author-instance}
 
-Ce n&#39;est pas un bug. L’une des caractéristiques de JSRP est que le contenu de la communauté saisi dans l’environnement de publication n’est visible que dans l’environnement de publication.
+Ce n&#39;est pas un bogue. L’une des caractéristiques de JSRP est que le contenu de la communauté saisi dans l’environnement de publication ne sera visible que dans l’environnement de publication.
 
-### UGC invisible sur l’instance de publication {#ugc-not-visible-on-publish-instance}
+### Contenu généré par l’utilisateur non visible sur l’instance de publication {#ugc-not-visible-on-publish-instance}
 
-Si une instance de publication unique ou si une grappe de publication est déployée, suivez les instructions pour [UGC invisible dans JCR](#ugc-not-visible-in-jcr).
+Si une instance de publication unique ou si une grappe de publication est déployée, suivez les instructions pour [UGC non visible dans JCR](#ugc-not-visible-in-jcr).
 
-Si une batterie de publication est déployée, une caractéristique de JSRP est que le contenu de la communauté ne sera visible que sur l’instance de publication à laquelle il a été publié.
+Si une ferme de publication est déployée, une caractéristique de JSRP est que le contenu de la communauté n’est visible que sur l’instance de publication à laquelle il a été publié.
 
-Pour que l’UGC soit visible à partir de n’importe quelle instance de publication, une grappe de publication est requise.
+Pour que le contenu créé par l’utilisateur soit visible à partir de n’importe quelle instance de publication, un cluster de publication est requis.
