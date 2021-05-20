@@ -1,6 +1,6 @@
 ---
-title: Développement du contenu du sandbox
-seo-title: Développement du contenu du sandbox
+title: Développement du contenu des environnements de test
+seo-title: Développement du contenu des environnements de test
 description: Développement de contenu
 seo-description: Développement de contenu
 uuid: ca046cf8-f6cd-41a1-97c8-74a86fbe9cd2
@@ -9,19 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: b97abfc9-62e6-470c-bb86-086e662c8091
-translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+exl-id: d25c243c-257b-4ba8-b1c5-e306906812ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 0%
 
 ---
 
+# Développer le contenu des environnements de test {#develop-sandbox-content}
 
-# Développer le contenu du sandbox {#develop-sandbox-content}
+**[Ajout de bibliothèques clientes](add-clientlibs.md)**
 
-**[Ajouter les bibliothèques clientes](add-clientlibs.md)**
-
-À ce stade, il est possible d&#39;explorer les fonctionnalités de la communauté dans le sandbox en même temps que d&#39;utiliser [We-Retail Community](../../help/sites-developing/we-retail.md), le [Community Components Guide](components-guide.md) et [feature essentials](essentials.md) à titre de référence.
-
-
+À ce stade, il est possible d’explorer les fonctionnalités de la communauté dans l’environnement de test tout en utilisant [We-Retail Community](../../help/sites-developing/we-retail.md), le [Guide des composants de communauté](components-guide.md) et les [éléments essentiels](essentials.md) à titre de référence.
