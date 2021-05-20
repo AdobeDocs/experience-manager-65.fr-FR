@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
-feature: Viewer Presets
+feature: Paramètres prédéfinis de la visionneuse
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 98%
+source-wordcount: '219'
+ht-degree: 100%
 
 ---
-
 
 # Application des paramètres prédéfinis de la visionneuse Dynamic Media {#applying-viewer-presets}
 
