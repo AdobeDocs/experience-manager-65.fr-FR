@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 23a65be4-3277-4c73-9189-a9b4d7be73cd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 73%
 
 ---
-
 
 # Fichiers journaux {#log-files}
 
@@ -28,7 +27,7 @@ Les événements, comme les erreurs d’exécution ou de démarrage, sont enregi
 * server.log.*[aaaa-mm-jj]*
 * server.log
 
-(WebLogic) Les fichiers journaux de domaine se trouvent dans le répertoire `[appserverdomain]` et les fichiers journaux de serveur se trouvent dans le répertoire `[appserverdomain]/servers/[appserver name]/logs` :
+(WebLogic) Les fichiers journaux de domaine se trouvent dans le répertoire `[appserverdomain]` et les fichiers journaux du serveur dans le répertoire `[appserverdomain]/servers/[appserver name]/logs` :
 
 * `access.log`
 * `[appserver name].log`
@@ -39,4 +38,3 @@ Les événements, comme les erreurs d’exécution ou de démarrage, sont enregi
 * SystemErr.log
 * SystemOut.log
 * StartServer.log
-
