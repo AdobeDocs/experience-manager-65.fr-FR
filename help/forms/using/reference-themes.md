@@ -1,25 +1,24 @@
 ---
 title: Thèmes de référence
 seo-title: Thèmes de référence
-description: AEM Forms fournit des thèmes de formulaires adaptatifs que vous pouvez obtenir de la distribution de logiciels et utiliser pour mettre en forme un formulaire.
-seo-description: AEM Forms fournit des thèmes de formulaires adaptatifs que vous pouvez obtenir de la distribution de logiciels et utiliser pour mettre en forme un formulaire.
+description: AEM Forms fournit des thèmes de formulaires adaptatifs que vous pouvez obtenir de Distribution logicielle et utiliser pour appliquer un style à un formulaire.
+seo-description: AEM Forms fournit des thèmes de formulaires adaptatifs que vous pouvez obtenir de Distribution logicielle et utiliser pour appliquer un style à un formulaire.
 uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+exl-id: f6c24894-c322-4c44-b001-8978954d6e53
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 81%
 
 ---
 
-
 # Thèmes de référence{#reference-themes}
 
-Les [thèmes](../../forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Outre le thème par défaut, vous pouvez obtenir les thèmes suivants en installant le package [AEM-FORMS-REFERENCE-THÈMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
+Les [thèmes](../../forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Outre le thème par défaut, vous pouvez obtenir les thèmes suivants en installant le package [AEM-FORMS-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
 
 * Beryl
 * Exec
@@ -68,7 +67,7 @@ Le thème Exec Light utilise l’espace vierge pour créer une expérience homog
 
 ](assets/exec-light-1.png)-->
 
-## Liberty {#liberty}
+## Liberté {#liberty}
 
 Le thème Liberty utilise une approche minimaliste pour mettre en avant les éléments importants. Par exemple, la couleur de police de l’onglet visité devient verte. Vous pouvez uniquement afficher le contour inférieur de la zone de texte qui simule l’aspect d’un formulaire papier avec des lignes. La zone de texte active dispose d’un contour inférieur noir, tandis que les autres disposent d’un contour inférieur gris clair.
 
@@ -98,7 +97,7 @@ Le thème Ultramarine utilise des nuances de bleu profond pour mettre en éviden
 
 ## Urbane {#urbane}
 
-Le thème Urbane met l’accent sur un aspect minimaliste et fonctionnel de votre formulaire. Lorsque vous appliquez le thème Urbane à votre formulaire, vous pouvez voir que les composants sont aplatis. Les panneaux reçoivent des contours fins pour créer un aspect moderne.
+Le thème Urbane met l’accent sur l’aspect minimaliste et fonctionnel de votre formulaire. Lorsque vous appliquez le thème Urbane à votre formulaire, vous pouvez voir que les composants sont aplatis. Les panneaux reçoivent des contours fins pour créer un aspect moderne.
 
 ![Thème Urbane](assets/urbane.png)
 
@@ -108,7 +107,7 @@ Le thème Urbane met l’accent sur un aspect minimaliste et fonctionnel de votr
 
 ## U.S. Web Design Standards {#u-s-web-design-standards}
 
-Le thème U.S. Web Design Standards, comme son nom l&#39;indique, utilise des polices de caractères et des styles décrits dans le site Draft U.S. Web Design Standards. La norme Web est utilisée par les organisations fédérales pour créer des contenus Web homogènes sur les sites Web du gouvernement fédéral américain.
+Le thème U.S. Web Design Standards, comme son nom l’indique, utilise des polices de caractères et des styles décrits sur le site Draft U.S. Web Design Standards. La norme Web est utilisée par les organisations fédérales pour créer des contenus Web homogènes sur les sites Web du gouvernement fédéral américain.
 
 ![Thème U.S. Web Design Standards](assets/us-web-standards.png)
 
