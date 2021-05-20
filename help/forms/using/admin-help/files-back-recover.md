@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 89%
 
 ---
-
 
 # Fichiers à sauvegarder et à récupérer {#files-to-back-up-and-recover}
 
@@ -25,7 +24,7 @@ Les fichiers d’application et de données à sauvegarder sont décrits en dét
 Considérez les points suivants concernant la sauvegarde et la récupération :
 
 * La base de données doit être sauvegardée avant le stockage global de document et le référentiel AEM.
-* Si vous devez descendre les noeuds dans un environnement organisé en grappes pour la sauvegarde, veillez à ce que les noeuds secondaires soient fermés avant le noeud Principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le noeud Principal doit être rendu actif avant tout noeud secondaire.
+* Si vous devez mettre les noeuds en grappe dans un environnement organisé en grappe pour la sauvegarde, assurez-vous que les noeuds secondaires sont fermés avant le noeud Principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le noeud Principal doit être rendu actif avant tout noeud secondaire.
 * Pour l’opération de restauration d’une grappe, le serveur d’applications doit être arrêté pour chaque nœud de la grappe.
 
 ## Répertoire de stockage global de documents {#global-document-storage-directory}
@@ -59,7 +58,7 @@ Vous pouvez activer le stockage de documents AEM Forms dans la base de données 
 
 Lorsque vous sélectionnez l’option « Activer le stockage de documents dans la base de données » dans les paramètres de Core System dans Administration Console ou à l’aide du gestionnaire de configuration, AEM Forms n’autorise pas les modes de sauvegarde d’instantané et de sauvegarde de restauration. Par conséquent, vous n’avez pas besoin de gérer les modes de sauvegarde à l’aide d’AEM Forms. Si vous utilisez cette option, sauvegardez le répertoire de stockage global de documents uniquement après avoir activé cette option. Lors de la récupération d’AEM Forms à partir d’une sauvegarde, il n’est pas nécessaire de renommer le répertoire de sauvegarde du stockage global de documents ni de restaurer ce dernier.
 
-## Référentiel AEM {#aem-repository}
+## Référentiel AEM  {#aem-repository}
 
 Le référentiel AEM (crx-repository) est créé si crx-repository est configuré lors de l’installation d’AEM Forms. Le processus d’installation d’AEM Forms détermine l’emplacement du répertoire crx-repository. Le référentiel de sauvegarde et de restauration AEM est requis, de même que la base de données et le stockage global de documents pour des données AEM Forms cohérentes dans AEM Forms. Le référentiel AEM contient des données pour la solution Correspondence Management, Forms Manager et l’espace de travail AEM Forms.
 
@@ -93,7 +92,7 @@ Pour sauvegarder la base de données en temps réel, vous devez utiliser le mode
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Pour savoir comment configurer Content Services (obsolète), consultez [Administration de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Pour en savoir plus sur la configuration de Content Services (obsolète), voir [Administration de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ### DB2 {#db2}
 
@@ -131,9 +130,9 @@ SQL Server propose également deux outils de sauvegarde et de récupération :
 * SQL Server Management Studio (interface utilisateur graphique)
 * T-SQL (ligne de commande)
 
-Pour plus d&#39;informations, voir [Sauvegarde et restauration](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Pour plus d’informations, voir [Sauvegarde et restauration](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
-### MySQL {#mysql}
+### MySQL {#mysql}
 
 Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer votre base de données MySQL pour qu’elle s’exécute en mode de consignation binaire (Voir [Connexion binaire MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)). Un outil de sauvegarde à chaud pour MySQL est également disponible à partir du logiciel InnoBase (Voir [Sauvegarde à chaud avec Innobase](https://www.innodb.com/hot-backup/features.md)).
 
@@ -141,7 +140,7 @@ Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer vo
 >
 >le mode de connexion binaire par défaut pour MySQL est Instruction ; il est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la connexion binaire dans ce mode par défaut fait échouer Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de connexion mixte. Pour activer la connexion mixte, ajoutez l’argument suivant au fichier my.ini :  `binlog_format=mixed log-bin=logname`
 
-Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. Pour effectuer une sauvegarde incrémentielle, veillez à début le serveur avec l&#39;option - `log-bin`, comme décrit dans la section précédente. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. Vous pouvez forcer un commutateur manuellement à l&#39;aide de la commande `FLUSH LOGS SQL`. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
+Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. Pour effectuer une sauvegarde incrémentielle, veillez à démarrer le serveur avec l’option - `log-bin` comme décrit dans la section précédente. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. Vous pouvez forcer un commutateur manuellement à l’aide de la commande `FLUSH LOGS SQL`. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
 
 Voir [Résumé de la stratégie de sauvegarde](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
@@ -158,7 +157,7 @@ Le répertoire racine de stockage de contenu contient le référentiel Content S
 
 Le répertoire racine de stockage de contenu est créé à l’installation de Content Services (obsolète). Le processus d’installation d’AEM Forms détermine l’emplacement du répertoire racine de stockage de contenu.
 
-L’emplacement par défaut du répertoire racine de l’Enregistrement de contenu est `[aem-forms root]/lccs_data`.
+L’emplacement par défaut du répertoire racine de stockage de contenu est `[aem-forms root]/lccs_data`.
 
 Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
 
@@ -180,7 +179,7 @@ Lors de l’installation de Content Services (obsolète) dans un environnement o
 
 **Répertoire racine d’index :** répertoire créé sur chaque nœud de la grappe et ayant toujours les mêmes chemin et nom.
 
-L’emplacement par défaut du répertoire racine d’Enregistrement de contenu est `[GDS root]/lccs_data`, où `[GDS root]` correspond à l’emplacement décrit dans [Emplacement du répertoire de stockage global de documents](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
+L’emplacement par défaut du répertoire racine de stockage de contenu est `[GDS root]/lccs_data`, où `[GDS root]` est l’emplacement décrit dans [Emplacement du répertoire de stockage global de documents](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
 
 /audit.contentstore
 
@@ -200,6 +199,6 @@ Sauvegardez séparément les polices supplémentaires éventuellement installée
 
 >[!NOTE]
 >
->Par défaut, les polices d’Adobe installées avec AEM forms se trouvent dans le répertoire `[aem-forms root]/fonts`.
+>Par défaut, les polices Adobe installées avec AEM forms se trouvent dans le répertoire `[aem-forms root]/fonts`.
 
 Si vous réinitialisez le système d’exploitation sur l’ordinateur hôte et que vous souhaitez utiliser des polices du précédent système d’exploitation, le contenu du répertoire des polices système doit également être sauvegardé. (Pour plus d’instructions, reportez-vous à la documentation de votre système d’exploitation).
