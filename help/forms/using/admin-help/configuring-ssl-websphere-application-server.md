@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
-translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 94%
 
 ---
-
 
 # Configuration de SSL pour WebSphere Application Server {#configuring-ssl-for-websphere-application-server}
 
@@ -46,7 +45,7 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 
 1. Ouvrez le fichier de groupe du répertoire /etc dans un éditeur de texte.
 1. Ajoutez l’utilisateur créé à l’étape 2 au groupe `root`.
-1. Enregistrez et fermez le fichier 
+1. Enregistrez et fermez le fichier.
 1. (UNIX avec SSL activé) Démarrez et arrêtez WebSphere en tant qu’utilisateur root.
 
 ### Création d’un utilisateur Windows pour WebSphere  {#create-a-windows-user-for-websphere}
@@ -73,7 +72,7 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 1. Sous Administrative Security, sélectionnez les **rôles utilisateurs administratifs**.
 1. Cliquez sur Add et effectuez les opérations suivantes :
 
-   1. Tapez **&amp;ast;** dans la zone de recherche et cliquez sur search.
+   1. Saisissez **&amp;ast;** dans la zone de recherche, puis cliquez sur Rechercher.
    1. Cliquez sur le rôle **Administrator**.
    1. Ajoutez l’utilisateur nouvellement créé dans la zone Mapped to role et mappez-le à Administrator.
 
@@ -84,7 +83,7 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 
 1. Dans la console d’administration WebSphere, sélectionnez **Security > Global Security**.
 1. Cliquez sur **Security Configuration Wizard**.
-1. Assurez-vous que la case à cocher **Enable Application Security** est activée. Cliquez sur **Next** (Suivant).
+1. Assurez-vous que la case à cocher **Enable Application Security** est activée. Cliquez sur **Suivant**.
 1. Sélectionnez **Federated Repositories** et cliquez sur **Next**.
 1. Spécifiez les informations d’identification que vous souhaitez configurer et cliquez sur **Next**.
 1. Cliquez sur **Finish** (Terminer). 
@@ -183,4 +182,3 @@ Effectuez les étapes suivantes pour faire en sorte que le port soit dynamique e
    ```
 
 1. Enregistrez le fichier et redémarrez le serveur.
-
