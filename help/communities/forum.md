@@ -1,8 +1,8 @@
 ---
 title: Fonction Forum
 seo-title: Fonction Forum
-description: Comment ajouter et configurer la fonction de forum
-seo-description: Comment ajouter et configurer la fonction de forum
+description: Ajout et configuration de la fonction de forum
+seo-description: Ajout et configuration de la fonction de forum
 uuid: e69be4e1-c9d5-4d51-8e7e-609e5460e378
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 871c42ee000eb250c1c6159d9a0c752e8ed4d7b8
+exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 35%
 
 ---
-
 
 # Fonction Forum{#forum-feature}
 
@@ -25,35 +24,35 @@ ht-degree: 35%
 
 La fonction Forum offre un espace aux visiteurs connectés (membres de la communauté) dans l’environnement de publication pour leur permettre de :
 
-* Créer de nouvelles rubriques
-* Vue et réponse aux rubriques
+* Création de rubriques
+* Affichage des rubriques et réponse
 * Suivre une rubrique
-* Rechercher un forum
+* Recherche d’un forum
 * Aider à modérer le contenu du forum
-* Déplacement des rubriques de forum d’une page vers une autre
+* Déplacement des sujets de forum d’une page vers une autre
 
 Cette section de la documentation décrit:
 
-* Ajouter la fonction du forum à un site AEM.
+* Ajout de la fonction Forum à un site AEM.
 * Paramètres de configuration du composant `Forum`.
 
 ### Ajout d’un forum à une page {#adding-a-forum-to-a-page}
 
-Pour ajouter un composant `Forum` à une page en mode création, utilisez l’explorateur de composants pour localiser
+Pour ajouter un composant `Forum` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
 
 * `Communities / Forum`
 
 et faites glisser le composant sur la page où le forum doit être visible.
 
-Pour obtenir les informations nécessaires, consultez [Community Components Basics](/help/communities/basics.md).
+Pour plus d’informations, voir [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques client requises](/help/communities/essentials-forum.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Forum` apparaîtra :
+Lorsque les [bibliothèques côté client requises](/help/communities/essentials-forum.md#essentials-for-client-side) sont incluses, voici comment le composant `Forum` apparaîtra :
 
 ![forum-component](assets/forum-component.png)
 
 ### Configuration d’un forum {#configuring-a-forum}
 
-Sélectionnez le composant `Forum` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Forum` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -65,16 +64,16 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser les miniatures de pièces jointes**
 
-   Si cette option est cochée, une miniature de l’image jointe est créée.
+   Si cette case est cochée, une miniature de l’image jointe est créée.
 
 * **Taille max. des miniatures de pièces jointes**
 
    Taille maximale (en pixels) de l’image miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
-* **Taille d’image minimale pour la miniature**
+* **Taille d’image min. pour la miniature**
 * **Taille maximale de la miniature**
 
-   Taille maximale (en pixels) de la vignette de l’image intégrée. La valeur par défaut est 800 x 800.
+   Taille maximale (en pixels) de la miniature de l’image intégrée. La valeur par défaut est 800 x 800.
 
 * **Sujets par page**
 
@@ -82,70 +81,70 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Modéré**
 
-   Si cette option est cochée, la publication des sujets et commentaires doit être approuvée avant qu’ils n’apparaissent sur un site de publication. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, la publication des sujets et des commentaires doit être approuvée avant d’apparaître sur un site de publication. Cette option n’est pas cochée par défaut.
 
 * **Fermé**
 
-   Si cette option est cochée, le forum est fermé aux nouveaux sujets et commentaires. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, le forum est fermé pour de nouveaux sujets et commentaires. Cette option n’est pas cochée par défaut.
 
 * **Éditeur de texte enrichi**
 
-   Si cette option est cochée, les rubriques et commentaires peuvent être saisis avec une annotation. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les sujets et les commentaires peuvent être saisis avec une annotation. Cette option n’est pas cochée par défaut.
 
 * **Autoriser le balisage**
 
-   Si cette option est cochée, autorisez les membres à ajouter des étiquettes de balise à leur publication (voir **onglet Champ de balise**). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir l’onglet **Champ de balise** ). Cette option n’est pas cochée par défaut.
 
 * **Autoriser les transferts de fichiers**
 
-   Si cette option est cochée, autorisez l’ajout de pièces jointes à la rubrique ou au commentaire. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, vous pouvez ajouter des pièces jointes à la rubrique ou au commentaire. Cette option n’est pas cochée par défaut.
 
 * **Autoriser abonnement**
 
-   Si cette option est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [avertis](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **Autoriser l’épinglage**
 
-   Si cette option est cochée, les sujets du forum peuvent être épinglés en haut de la liste des sujets. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les sujets de forum peuvent être placés en haut de la liste des sujets. Cette option n’est pas cochée par défaut.
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est cochée, l’idée peut être identifiée comme [contenu incitatif](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, l’idée peut être identifiée en tant que [contenu présenté](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette option est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](/help/communities/subscriptions.md)). `Allow Following` doit être vérifié et [e-mail configuré](/help/communities/email.md). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par e-mail ([subscription](/help/communities/subscriptions.md)). `Allow Following` doit être vérifié et [email configuré](/help/communities/email.md). Cette option n’est pas cochée par défaut.
 
 * **Taille maximale du fichier**
 
-   Ne s&#39;applique que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Convient uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   Ne s&#39;applique que si `Allow File Uploads` est coché. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Convient uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
-* **Taille maximale du fichier image jointPertinente uniquement si l’option Autoriser les téléchargements de fichiers est cochée.**
-Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
+* **Max Attach Image File**
+SizeRelevant uniquement si l’option Autoriser les chargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
 
 * **Autoriser les réponses à thème**
 
-   Si cette option est cochée, autorisez les réponses aux commentaires publiés sur la rubrique. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les réponses aux commentaires sont publiées sur le sujet. Cette option n’est pas cochée par défaut.
 
 * **Autoriser le vote**
 
-   Si cette case est cochée, incluez la fonction de vote avec une rubrique. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, la fonction de vote est ajoutée à un sujet. Cette option n’est pas cochée par défaut.
 
 * **Autoriser les utilisateurs à supprimer les commentaires et sujets**
 
-   Si cette option est cochée, autorisez les membres à supprimer les commentaires et les rubriques qu’ils ont publiés. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à supprimer les commentaires et les sujets qu’ils ont publiés. Cette option n’est pas cochée par défaut.
 
 * **Afficher le fil d’Ariane**
 
-   Si cette case est cochée, affichez les chemins de navigation dans les pages de rubrique. Cette option est cochée par défaut.
+   Si cette case est cochée, les chemins de navigation s’affichent sur les pages de rubrique. Cette option est cochée par défaut.
 
 * **Afficher les badges**
 
-   Si cette case est cochée, afficher les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l’entrée de blog d’un membre. Cette option n’est pas cochée par défaut.
 
 * **Autoriser les membres privilégiés**
 
@@ -157,59 +156,59 @@ Taille maximale en octets pour un fichier image chargé. La valeur par défaut e
 
 * **Bloquer le contenu généré par l’utilisateur en mode d’édition d’auteur**
 
-   Si cette option est activée, bloque le contenu généré par l’utilisateur lors de la modification en mode Auteur.
+   S’il est activé, bloque le contenu généré par l’utilisateur lors de la modification en mode création.
 
 * **Activer la mention**
 
-   S’il est activé, permet aux utilisateurs enregistrés de la communauté d’identifier d’autres membres enregistrés (à l’aide de leur prénom, de leur nom de famille, de leur nom d’utilisateur) et de les baliser à l’aide de la syntaxe courante de @user-name. Les utilisateurs balisés reçoivent des notifications concernant leurs mentions.
+   S’il est activé, permet aux utilisateurs enregistrés de la communauté d’identifier d’autres membres enregistrés (à l’aide du prénom, du nom, du nom d’utilisateur) et de les baliser à l’aide de la syntaxe @user-name courante. Les utilisateurs balisés reçoivent des notifications concernant leurs mentions.
 
 * **Nombre max. de mentions**
 
-   Limitez le nombre maximum de mentions autorisées dans une publication. La valeur par défaut est 10.
+   Limitez le nombre maximal de mentions autorisées dans une publication. La valeur par défaut est 10.
 
 * **Modèle des mentions de l’IU**
 
-   Spécifiez la chaîne de modèle autorisée à baliser (@mentions) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
+   Spécifiez la chaîne de modèle autorisée à baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >
 >Il peut être nécessaire de vérifier `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` pour activer les commentaires sur un sujet.
 
-#### Onglet Modération utilisateur {#user-moderation-tab}
+#### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous l’onglet **Modération utilisateur**, spécifiez comment les rubriques publiées et les réponses (contenu généré par l’utilisateur) sont gérées. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+Sous l’onglet **Modération d’utilisateur** , indiquez comment les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 * **Refuser les publications**
 
-   Si cette option est cochée, les modérateurs membres de confiance seront autorisés à refuser les publications et à empêcher que la publication ne s&#39;affiche sur le forum public. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les modérateurs membres approuvés sont autorisés à refuser des publications et à empêcher que la publication ne s’affiche sur le forum public. Cette option n’est pas cochée par défaut.
 
 * **Fermer/rouvrir les sujets**
 
-   Si cette option est cochée, les modérateurs membres approuvés peuvent fermer une rubrique pour apporter d’autres modifications et commentaires et peuvent également rouvrir une rubrique. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer une rubrique pour ajouter d’autres modifications et commentaires et rouvrir une rubrique. Cette option n’est pas cochée par défaut.
 
 * **Déplacer les rubriques**
 
-   Si cette option est cochée, autorisez les modérateurs côté publication à déplacer les rubriques. Cette option est cochée par défaut.
+   Si cette case est cochée, les modérateurs côté publication peuvent déplacer des rubriques. Cette option est cochée par défaut.
 
 * **Marquer les publications**
 
-   Si cette option est cochée, autorisez les membres à signaler les sujets ou commentaires d&#39;autres personnes comme inappropriés. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit de marquer les sujets ou commentaires d’autres personnes comme étant inappropriés. Cette option n’est pas cochée par défaut.
 
 * **Marquer la liste de motifs**
 
-   Si cette option est cochée, permettez aux membres de choisir, dans une liste déroulante, la raison pour laquelle ils signalent une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un sujet ou un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
 
 * **Motif de la marque personnalisée**
 
-   Si cette option est cochée, autorisez les membres à entrer leur propre raison de signaler une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à indiquer leur propre motif de signalement d’un sujet ou d’un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
 
 * **Seuil de modération**
 
-   Indiquez le nombre de fois où une rubrique ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est 1 (une fois).
+   Saisissez le nombre de fois qu’un sujet ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient informés. La valeur par défaut est 1 (une fois).
 
 * **Limite de marquage**
 
-   Saisissez le nombre de fois où une rubrique ou un commentaire doit être marqué avant d’être masqué dans la vue publique. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
+   Saisissez le nombre de fois qu’un sujet ou un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
 
 #### Onglet Champ de balise {#tag-field-tab}
 
@@ -217,11 +216,11 @@ Dans l’onglet **Champ de balise**, les balises qui peuvent être appliquées, 
 
 * **Espaces de noms autorisés**
 
-   Pertinent si `Allow Tagging` est coché sous l&#39;onglet **Paramètres**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
+   Convient si `Allow Tagging` est coché sous l’onglet **Paramètres**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **Limite de suggestions**
 
-   Entrez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est **-**1 (aucune limite).
+   Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est **-**1 (aucune limite).
 
 #### Onglet Traduction {#translation-tab}
 
@@ -229,11 +228,11 @@ Sous l’onglet **Traduction**, si la traduction est activée pour le site de la
 
 * **Tout traduire**
 
-   Si cette option est cochée, le fil du forum est traduit dans la langue préférée de l’utilisateur. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, le fil du forum est traduit dans la langue préférée de l’utilisateur. Cette option n’est pas cochée par défaut.
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet **Paramètres de tri**, spécifiez le mode de tri des commentaires publiés lorsqu’ils s’affichent.
+Sous l’onglet **Paramètres de tri**, indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
 
 * **Trier par**
 
@@ -241,11 +240,11 @@ Sous l’onglet **Paramètres de tri**, spécifiez le mode de tri des commentair
 
 * **Définir par défaut**
 
-   Appuyez sur la touche Ctrl pour sélectionner l’une des options de tri cochées pour qu’elle s’affiche par défaut. La valeur par défaut est `Newest`.
+   Extrayez pour sélectionner l’une des options de tri cochées à afficher par défaut. La valeur par défaut est `Newest`.
 
 * **Sélectionner les options de temps pour le tri Analytics**
 
-   Maintenez la touche enfoncée pour sélectionner l’une des options suivantes : `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+   Faites glisser le curseur pour sélectionner l’une des options suivantes : `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 
    La valeur par défaut est `All`.
 
