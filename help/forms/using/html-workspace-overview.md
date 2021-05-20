@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 87%
 
 ---
-
 
 # Utilisation de l’espace de travail AEM Forms{#working-with-aem-forms-workspace}
 
@@ -36,9 +35,9 @@ Pour être informé du processus de bout en bout de création d’une applicatio
 
 Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches suivantes :
 
-**Début d’un processus d’entreprise : l’espace de travail** AEM Forms catégorie vos processus tel qu’il a été conçu et configuré par votre organisation. Vous pouvez ajouter aux favoris les catégories fréquemment utilisées pour pouvoir y accéder rapidement. Lors du démarrage d’un processus, vous remplissez généralement un formulaire pour démarrer un processus d’entreprise contrôlé par le flux de travail des formulaires. Pour plus d’informations, voir [Démarrage des processus](/help/forms/using/starting-processes.md).
+**Démarrer un processus d’entreprise :**  l’espace de travail AEM Forms classe vos processus comme prévu et configuré par votre entreprise. Vous pouvez ajouter aux favoris les catégories fréquemment utilisées pour pouvoir y accéder rapidement. Lors du démarrage d’un processus, vous remplissez généralement un formulaire pour démarrer un processus d’entreprise contrôlé par le flux de travail des formulaires. Pour plus d’informations, voir [Démarrage des processus](/help/forms/using/starting-processes.md).
 
-**Vue et action en fonction des tâches :** Lorsque vous vue vos listes de tâches, vous voyez les tâches d’un processus d’entreprise qui vous sont affectées, ou à tout groupe auquel vous appartenez, ou qui sont les tâches partagées d’autres utilisateurs. Vous pouvez ouvrir, modifier et effectuer les tâches selon vos besoins. En règle générale, l’exécution d’une tâche implique de fournir des informations, d’approuver ou de rejeter un formulaire. Pour plus d’informations, voir [Utilisation des listes de tâches](/help/forms/using/todo-lists.md).
+**Afficher et agir sur les tâches :** lorsque vous affichez vos listes de tâches, vous voyez les tâches d’un processus d’entreprise qui vous sont affectées, ou à tout groupe auquel vous appartenez, ou qui sont les tâches partagées d’autres utilisateurs. Vous pouvez ouvrir, modifier et effectuer les tâches selon vos besoins. En règle générale, l’exécution d’une tâche implique de fournir des informations, d’approuver ou de rejeter un formulaire. Pour plus d’informations, voir [Utilisation des listes de tâches](/help/forms/using/todo-lists.md).
 
 **Suivi de tâches** : pour effectuer le suivi des tâches, utilisez l’onglet Suivi dans l’espace de travail AEM Forms. Vous pouvez rechercher les processus actifs ou terminés que vous avez démarrés ou modifiés. Vous pouvez afficher les tâches, les affectations et les formulaires qui faisaient partie du processus. Vous pouvez également démarrer de nouveaux processus à l’aide des données de formulaire provenant d’un processus lancé précédemment. Pour plus d’informations, voir [Suivi des processus](/help/forms/using/tracking-processes.md).
 
@@ -46,7 +45,7 @@ Vous pouvez utiliser l’espace de travail AEM Forms pour effectuer les tâches 
 
 **Prise en charge de l’approbation en bloc des tâches** :
 
-Vous pouvez approuver plusieurs tâches du même type. Une fois que vous avez sélectionné une tâche pour approbation, seules les tâches avec le même processus, avec les mêmes noms de tâche et les mêmes options d&#39;itinéraire restent activées. Voir [Utilisation des listes de tâches](/help/forms/using/todo-lists.md) pour plus d’informations sur l’implémentation.
+Vous pouvez approuver plusieurs tâches du même type. Une fois que vous avez sélectionné une tâche à approuver, seules les tâches avec le même processus, avec le même nom de tâche, et les mêmes options d’itinéraire restent activées. Voir [Utilisation de listes de tâches](/help/forms/using/todo-lists.md) pour plus d’informations sur l’implémentation.
 
 ## Migration de Workspace Flex vers l’espace de travail AEM Forms {#migrating-from-flex-workspace-to-aem-forms-workspace}
 
@@ -135,7 +134,7 @@ Vous pouvez personnaliser une grande partie de l’interface et des principales 
 
 Par défaut, pour un nouveau processus, un formulaire XDP est rendu au format PDF sur un bureau d’ordinateur et au format HTML sur une tablette. Il est possible de toujours rendre un formulaire XDP au format HTML. Pour plus d’informations, voir [Nouveaux services de rendu et d’envoi](/help/forms/using/new-render-submit-service.md).
 
-[La ](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) fonction Mobile Forms, qui fonctionne avec  [les profils](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), active le rendu HTML des formulaires XDP. Par défaut, « Rendre le nouveau formulaire HTML » utilise le profil `default.html`, qui peut être modifié. Vous pouvez également ajouter des modifications personnalisées qui surviennent avant le rendu d’un formulaire XDP au format HTML.
+[La ](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) fonctionnalité Mobile Forms, qui fonctionne avec  [les profils](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), active le rendu HTML des formulaires XDP. Par défaut, « Rendre le nouveau formulaire HTML » utilise le profil `default.html`, qui peut être modifié. Vous pouvez également ajouter des modifications personnalisées qui surviennent avant le rendu d’un formulaire XDP au format HTML.
 
 ## Application de l’espace de travail AEM Forms  {#aem-forms-workspace-app}
 
