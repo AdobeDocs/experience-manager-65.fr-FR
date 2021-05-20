@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '989'
 ht-degree: 86%
 
 ---
 
-
 # Création de projets de traduction pour des fragments de contenu {#creating-translation-projects-for-content-fragments}
 
-Outre les ressources, Adobe Experience Manager (AEM) Assets prend en charge les workflows de copie de langue pour [fragments de contenu](/help/assets/content-fragments/content-fragments.md) (y compris les variations). Aucune autre optimisation n’est requise pour exécuter des processus de copie de langue sur des fragments de contenu. Dans chaque processus, le fragment de contenu entier est envoyé en traduction.
+Outre les ressources, Adobe Experience Manager (AEM) Assets prend en charge les processus de copie de langue pour les [fragments de contenu](/help/assets/content-fragments/content-fragments.md) (y compris les variations). Aucune autre optimisation n’est requise pour exécuter des processus de copie de langue sur des fragments de contenu. Dans chaque processus, le fragment de contenu entier est envoyé en traduction.
 
 Les types de processus que vous pouvez exécuter sur les fragments de contenu sont exactement identiques aux types de processus que vous exécutez pour les ressources. En outre, les options disponibles dans chaque type de processus correspondent aux options disponibles sous les types de processus correspondants pour les actifs.
 
@@ -42,14 +41,14 @@ Le processus Créer et traduire comprend les options suivantes. Les étapes de p
 
 * Créer uniquement la structure : pour les étapes de la procédure, reportez-vous à la section [Création de structure uniquement pour les ressources](translation-projects.md#create-structure-only).
 * Créez un projet de traduction : Pour connaître les étapes de la procédure, voir [Création d’un projet de traduction pour les ressources](translation-projects.md#create-a-new-translation-project).
-* Ajouter au projet de traduction existant : Pour les étapes de la procédure, voir [Ajouter au projet de traduction existant pour les ressources](translation-projects.md#add-to-existing-translation-project).
+* Ajouter à un projet de traduction existant : Pour connaître les étapes de la procédure, voir [Ajouter à un projet de traduction existant pour les ressources](translation-projects.md#add-to-existing-translation-project).
 
 ## Processus de mise à jour des copies de langue {#update-language-copies-workflow}
 
 Le processus de mise à jour des copies de langue comprend les options suivantes. Les étapes de procédure associées à chaque option sont similaires aux étapes de procédure associées à l’option correspondante pour les ressources.
 
-* Créez un projet de traduction : Pour connaître les étapes de la procédure, voir [Création d’un projet de traduction pour les ressources](translation-projects.md#create-a-new-translation-project) (flux de travaux de mise à jour).
-* Ajouter au projet de traduction existant : Pour connaître les étapes de la procédure, voir [Ajouter au projet de traduction existant pour les ressources](translation-projects.md#add-to-existing-translation-project) (flux de travaux de mise à jour).
+* Créez un projet de traduction : Pour connaître les étapes de la procédure, voir [Création d’un projet de traduction pour les ressources](translation-projects.md#create-a-new-translation-project) (workflow de mise à jour).
+* Ajouter à un projet de traduction existant : Pour les étapes de la procédure, voir [Ajouter à un projet de traduction existant pour les ressources](translation-projects.md#add-to-existing-translation-project) (workflow de mise à jour).
 
 Vous pouvez également créer des copies de langue temporaires pour les fragments en procédant de la même manière que pour créer des copies temporaires pour les ressources. Pour plus d’informations, reportez-vous à la section [Création de copies de langue temporaires pour les ressources](translation-projects.md#creating-temporary-language-copies).
 
@@ -88,7 +87,7 @@ Pour pouvoir traduire des fragments de contenu comprenant des supports variés, 
 
 1. Insérez une ressource dans le fragment de contenu.
 
-   ![insérer un fichier dans un fragment de contenu](assets/column-view.png)
+   ![insérer une ressource dans le fragment de contenu ;](assets/column-view.png)
 
 1. Cliquez/appuyez sur l’icône **[!UICONTROL Associer le contenu]**.
 
@@ -111,7 +110,7 @@ Pour pouvoir traduire des fragments de contenu comprenant des supports variés, 
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Cliquez/appuyez sur **[!UICONTROL Créer et traduire]** depuis le bas du panneau pour afficher la boîte de dialogue **[!UICONTROL Créer et traduire]**.
+1. Cliquez/appuyez sur **[!UICONTROL Créer et traduire]** dans la partie inférieure du panneau pour afficher la boîte de dialogue **[!UICONTROL Créer et traduire]**.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -154,7 +153,7 @@ Pour pouvoir traduire des fragments de contenu comprenant des supports variés, 
 
    Notez que seul le contenu de la collection est traduit. La collection elle-même n’est pas traduite.
 
-1. Accédez au chemin d’accès de la ressource associée traduite. Observez que le fichier traduit est stocké sous la racine de la langue de la cible.
+1. Accédez au chemin d’accès de la ressource associée traduite. Observez que la ressource traduite est stockée sous la racine de la langue cible.
 
    ![chlimage_1-466](assets/chlimage_1-466.png)
 
@@ -165,4 +164,3 @@ Pour pouvoir traduire des fragments de contenu comprenant des supports variés, 
    >[!NOTE]
    >
    >Les procédures d’ajout de fragment de contenu à un projet existant et les processus de mise à jour sont similaires aux procédures correspondantes pour les ressources. Pour en savoir plus sur ces procédures, reportez-vous aux procédures décrites pour les ressources.
-
