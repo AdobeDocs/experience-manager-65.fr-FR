@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Correspondence Management
+exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 62%
 
 ---
-
 
 # Utiliser les API pour accéder aux instances de lettre {#apis-to-access-letter-instances}
 
@@ -24,7 +23,7 @@ ht-degree: 62%
 
 A l’aide de l’interface utilisateur de création de correspondance de Correspondence Management, vous pouvez enregistrer des brouillons d’instances de lettre en cours. Vous y trouverez également les instances de lettre envoyées.
 
-Correspondence Management vous fournit des API grâce auxquelles vous pouvez créer l’interface d’énumération pour travailler sur des instances de lettre envoyées ou des brouillons. Les API liste et ouvrent les instances de lettre envoyée et de lettre brouillon d’un agent, de sorte que l’agent puisse continuer à travailler sur les instances de lettre brouillon ou envoyée.
+Correspondence Management vous fournit des API grâce auxquelles vous pouvez créer l’interface d’énumération pour travailler sur des instances de lettre envoyées ou des brouillons. Les API répertorient et ouvrent les instances de lettre envoyées et de brouillon d’un agent, de sorte que l’agent puisse continuer à travailler sur les instances de lettre envoyée ou de brouillon.
 
 ## Récupérer des instances de lettre {#fetching-letter-instances}
 
@@ -38,12 +37,12 @@ Correspondence Management expose les API pour récupérer des instances de lett
 
 >[!NOTE]
 >
->LetterInstanceService est un service OSGI et son instance peut être récupérée à l’aide de @Reference dans Java
->Classe ou sling.getService(LetterInstanceService). Classe ) dans JSP.
+>LetterInstanceService est un service OSGI et son instance peut être récupérée à l’aide de @Reference en Java.
+>Classe ou sling.getService(LetterInstanceService. Classe ) dans JSP.
 
 ### Utilisation de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L’API suivante recherche les instances de lettre en fonction de l’objet de la requête (envoyée et brouillon). Si l’objet requête est nul, il renvoie toutes les instances de lettre. Cette API renvoie la liste des objets [LetterInstanceVO](https://helpx.adobe.com/experience-manager/6-2/forms/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) qui peuvent être utilisés pour extraire des informations supplémentaires sur l’instance de lettre.
+L’API suivante recherche les instances de lettre en fonction de l’objet de la requête (envoyée et brouillon). Si l’objet de requête est nul, il renvoie toutes les instances de lettre. Cette API renvoie la liste des objets [LetterInstanceVO](https://helpx.adobe.com/experience-manager/6-2/forms/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) pouvant être utilisés pour extraire des informations supplémentaires sur l’instance de lettre.
 
 **Syntaxe** :  `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -62,7 +61,7 @@ L’API suivante recherche les instances de lettre en fonction de l’objet de l
 
 #### Exemple 1 : récupérer toutes les instances de lettre de type ENVOYEE {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-Le code suivant renvoie la liste des instances de lettre envoyées. Pour obtenir uniquement des brouillons, remplacez `LetterInstanceType.COMPLETE.name()` par `LetterInstanceType.DRAFT.name().`.
+Le code suivant renvoie la liste des instances de lettre envoyées. Pour obtenir uniquement les brouillons, remplacez `LetterInstanceType.COMPLETE.name()` par `LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference
@@ -81,7 +80,7 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 #### Exemple 2 : récupérer toutes les instances de lettre envoyées par un utilisateur, le type d’instance de lettre étant BROUILLON {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
 
-Le code suivant comporte plusieurs instructions dans la même requête pour que les résultats soient filtrés en fonction de différents critères tels que l’instance de lettre envoyée (attribut submittedby) par un utilisateur et le type de letterInstanceType est BROUILLON.
+Le code suivant comporte plusieurs instructions dans la même requête pour que les résultats soient filtrés en fonction de différents critères tels que l’instance de lettre envoyée (attribut submittedby) par un utilisateur et le type de letterInstanceType est DRAFT.
 
 ```java
 @Reference
@@ -145,13 +144,13 @@ L’instance de lettre peut être de type Envoyée ou Brouillon. L’ouverture d
 
 ### Ouverture d’un brouillon d’instance de lettre  {#opening-draft-letter-instance-nbsp}
 
-L’interface utilisateur CCR prend en charge le paramètre cmLetterInstanceId, qui peut être utilisé pour une lettre rechargée.
+L’interface utilisateur CCR prend en charge le paramètre cmLetterInstanceId, qui peut être utilisé pour la lettre rechargée.
 
 `https://[hostName]:[portNo]/[contextPath]//aem/forms/createcorrespondence.html?random=[randomNo]&cmLetterInstanceId=[letterInstanceId]`
 
 >[!NOTE]
 >
->Il n’est pas nécessaire de spécifier cmLetterId ou cmLetterName/State/Version lors du rechargement d’une correspondance, car les données envoyées contiennent déjà tous les détails sur la correspondance rechargée. RandomNo est utilisé pour éviter les problèmes de cache du navigateur. Vous pouvez utiliser l’horodatage comme nombre aléatoire.
+>Il n’est pas nécessaire de spécifier cmLetterId ou cmLetterName/State/Version lors du rechargement d’une correspondance, car les données envoyées contiennent déjà tous les détails de la correspondance rechargée. RandomNo est utilisé pour éviter les problèmes de cache du navigateur. Vous pouvez utiliser l’horodatage comme nombre aléatoire.
 
 ### Ouverture d’une instance de lettre envoyée {#opening-submitted-letter-instance}
 
