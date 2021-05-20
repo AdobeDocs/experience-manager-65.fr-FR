@@ -1,27 +1,26 @@
 ---
-title: Statistiques sur les ressources
-description: Découvrez comment la fonction Statistiques sur les ressources permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe.
+title: Assets Insights
+description: Découvrez comment la fonction Informations sur les ressources vous permet de suivre les évaluations des utilisateurs et les statistiques d’utilisation des images utilisées sur des sites Web tiers, des campagnes marketing et des solutions créatives d’Adobe.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Statistiques sur les ressources,Rapports sur les ressources
+exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 74%
+source-wordcount: '756'
+ht-degree: 52%
 
 ---
 
+# Assets Insights {#asset-insights}
 
-# Statistiques sur les ressources {#asset-insights}
-
-La fonction Statistiques sur les ressources vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’extraire les statistiques sur leurs performances et leur popularité.
+La fonction Statistiques des ressources vous permet de suivre les évaluations des utilisateurs et les statistiques d’utilisation des images utilisées dans les sites Web tiers, les campagnes marketing et les solutions créatives des Adobes. Elle permet d’extraire les statistiques sur leurs performances et leur popularité.
 
 [!DNL Assets] Insights capture les détails de l’activité des utilisateurs, tels que le nombre de fois où une image est notée, sur laquelle les utilisateurs cliquent et les impressions (nombre de fois où une image est chargée sur le site Web). Elle attribue des scores aux images en fonction de ces statistiques. Vous pouvez utiliser les scores et les statistiques de performances pour sélectionner les images populaires à inclure dans les catalogues, les campagnes marketing et ainsi de suite. Vous pouvez même formuler des stratégies de renouvellement de licence et d’archivage en fonction de ces statistiques.
 
 Pour [!DNL Assets] statistiques d’utilisation des images d’un site Web, vous devez inclure le code incorporé de l’image dans le code du site Web.
 
-Pour permettre aux statistiques sur les ressources d’afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction afin qu’elle récupère les données de rapports d’Adobe Analytics. Pour plus d’informations, consultez la section [Configuration des statistiques sur les ressources](/help/assets/configure-asset-insights.md).
+Pour permettre à Assets Insights d’afficher les statistiques d’utilisation des ressources, configurez d’abord la fonction pour récupérer les données de rapports d’Adobe Analytics. Pour plus de détails, voir [Configurer les statistiques des ressources](/help/assets/configure-asset-insights.md). Pour utiliser cette fonctionnalité, achetez une licence [!DNL Adobe Analytics] séparément. Les clients sur [!DNL Managed Services] reçoivent la licence [!DNL Analytics] fournie avec [!DNL Experience Manager]. Voir [Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -29,7 +28,7 @@ Pour permettre aux statistiques sur les ressources d’afficher les statistiques
 
 ## Affichage des statistiques pour une image {#viewing-statistics-for-an-image}
 
-Vous pouvez afficher les scores de statistiques sur les ressources à partir de la page des métadonnées.
+Vous pouvez vue les scores Assets Insights à partir de la page de métadonnées.
 
 1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez l&#39;image, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d&#39;outils.
 1. Sur la page Propriétés, cliquez sur l’onglet **[!UICONTROL Statistiques]**.
@@ -50,7 +49,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    >[!NOTE]
    >
-   >La fonctionnalité Statistiques des ressources récupérant généralement les données Solutions d’Adobe Analytics de manière périodique, la section Solutions n’affiche peut-être pas les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’Analytics.
+   >La fonction Informations sur les ressources récupère généralement les données des solutions à partir d’Adobe Analytics de manière périodique. Il se peut donc que la section Solutions n’affiche pas les données les plus récentes. La période pendant laquelle les données sont affichées dépend du calendrier de l’opération de récupération exécutée par Assets Insights pour récupérer les données Analytics.
 
 1. Pour afficher les statistiques de performances de l’actif sous forme graphique sur une période donnée, sélectionnez une période dans la section **[!UICONTROL Statistiques de performances]**. Les détails, y compris les clics et les impressions, sont affichés sous forme de lignes de tendance dans un graphique.
 
@@ -74,7 +73,7 @@ Vous pouvez afficher les scores de toutes les ressources d’un dossier simultan
 
 ## Planification d’une tâche en arrière-plan {#scheduling-background-job}
 
-La fonction Statistiques sur les ressources extrait les données d’utilisation des ressources à partir de suites de rapports Adobe Analytics de manière périodique. Par défaut, la fonction Statistiques sur les ressources exécute une tâche en arrière-plan toutes les 24 heures à 2 heures du matin pour récupérer les données. Cependant, vous pouvez modifier la fréquence et l’heure en configurant le service de **[!UICONTROL tâche de synchronisation de rapport de performances de ressource Adobe CQ DAM]** via la console web.
+Assets Insights récupère périodiquement les données d’utilisation des ressources des suites de rapports Adobe Analytics. Par défaut, Assets Insights exécute une tâche d’arrière-plan toutes les 24 heures à 02h00 du matin pour récupérer les données. Cependant, vous pouvez modifier la fréquence et l’heure en configurant le service de **[!UICONTROL tâche de synchronisation de rapport de performances de ressource Adobe CQ DAM]** via la console web.
 
 1. Cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
 1. Ouvrez la configuration de service **[!UICONTROL Tâche de synchronisation des rapports sur les performances des ressources de la gestion des actifs numériques Adobe CQ]**.
