@@ -9,8 +9,7 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: Business Practitioner, Administrator
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
-feature: Publishing,Configuration
-translation-type: tm+mt
+feature: Publication,Configuration
 source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
 source-wordcount: '726'
@@ -18,13 +17,13 @@ ht-degree: 52%
 
 ---
 
-# DIFFUSION HTTP/2 du contenu {#http-delivery-of-content}
+# HTTP/2 Diffusion de contenu {#http-delivery-of-content}
 
 Adobe est heureux d’annoncer la disponibilité de HTTP/2 pour la diffusion de contenu, protocole qui permet d’améliorer les performances globales.
 
 >[!NOTE]
 >
->Cette fonctionnalité nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre CDN personnalisé n’est pris en charge avec cette fonctionnalité.
+>Cette fonctionnalité nécessite l’utilisation du réseau de diffusion de contenu prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau de diffusion de contenu personnalisé n’est pris en charge avec cette fonctionnalité.
 
 ## Qu’est-ce que le HTTP/2 ? {#what-is-http}
 
@@ -36,7 +35,7 @@ Le site web ci-dessous décrit simplement HTTP/2 et les avantages qu’il procur
 
 ## Quels sont les principaux avantages à la transition vers HTTP/2 pour la diffusion de contenu ? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-L&#39;amélioration des performances peut varier considérablement. Il est basé sur de nombreux facteurs tels que le code de votre site Web, la manière dont vous utilisez Dynamic Media, le périphérique, l’écran et l’emplacement du client.
+L’amélioration des performances peut varier considérablement. Il repose sur de nombreux facteurs, tels que le code de votre site web, la manière dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du consommateur.
 
 Les tests d’Adobe ont donné les résultats suivants :
 
@@ -55,48 +54,48 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 * Utilisez le CDN de lots Adobe (réseau de diffusion de contenu) dans le cadre de votre licence Dynamic Media.
 * Utilisez un domaine dédié (autre que company-h.assetsadobe#.com).
 
-   Si vous disposez déjà d&#39;un domaine dédié, vous pouvez opt-in par le biais du support technique.
+   Si vous disposez déjà d’un domaine dédié, vous pouvez vous inscrire par le biais du support technique.
 
-   Si vous ne disposez pas d’un domaine dédié, l’Adobe prévoit de programmer votre transition sur HTTP/2 en 2018.
+   Si vous ne disposez pas d’un domaine dédié, Adobe prévoit de programmer votre transition vers HTTP/2 en 2018.
 
 ## Quel est le processus d’activation de HTTP/2 pour mon compte Dynamic Media ? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
-Vous lancez la demande de basculement sur HTTP/2 ; ce n&#39;est pas automatiquement fait pour vous.
+Vous lancez la requête pour passer à HTTP/2. ce n&#39;est pas fait automatiquement pour vous.
 
-1. Pour passer à HTTP/2, lancez une demande de service à la clientèle Adobe. Voir [Accès au portail d’assistance AEM](https://helpx.adobe.com/fr/experience-manager/kb/accessing-aem-support-portal.html).
+1. Pour passer à HTTP/2, envoyez une demande d’Adobe à l’assistance clientèle. Voir [Accès au portail d’assistance AEM](https://helpx.adobe.com/fr/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Indiquez les informations suivantes dans votre demande de support :
 
       1. nom, adresse électronique et numéro de téléphone du contact principal.
-      1. Tous les domaines à passer à HTTP/2.
-      1. Vérifiez que vous utilisez le protocole HTTPS sécurisé pour les demandes de média enrichi.
+      1. Tous les domaines à transférer vers HTTP/2.
+      1. Vérifiez que vous utilisez le protocole HTTPS sécurisé pour les demandes de médias riches.
       1. Vérifiez que vous utilisez le CDN par Adobe et que vous n’êtes pas géré avec une relation directe.
-      1. Vérifiez que vous utilisez un domaine dédié. Si vous utilisez Dynamic Media, vous utilisez alors un domaine dédié.
-   1. Le service d’assistance clientèle vous ajoute à la liste d’attente des clients HTTP/2 en fonction de l’ordre dans lequel les demandes ont été envoyées.
-   1. Lorsque l’Adobe est prêt à traiter votre demande, le service à la clientèle vous contacte pour coordonner la transition et définir une date de cible.
-   1. Vous êtes averti une fois terminé et pouvez vérifier la transition réussie sur HTTP2.
+      1. Vérifiez que vous utilisez un domaine dédié. Si vous utilisez Dynamic Media, vous utilisez un domaine dédié.
+   1. L’assistance clientèle vous ajoute à la liste d’attente des clients HTTP/2 dans l’ordre dans lequel les demandes ont été envoyées.
+   1. Lorsque l’Adobe est prêt à traiter votre demande, l’assistance clientèle vous contacte pour coordonner la transition et définir une date cible.
+   1. Une fois la transition terminée, vous en êtes informé et pouvez vérifier que la transition vers HTTP2 a réussi.
 
       Le navigateur ne détecte pas cette transition, il est donc nécessaire de télécharger une extension.
 
-      Pour Firefox et Chrome, il existe une extension appelée &quot;HTTP/2 et indicateur SPDY&quot;. Les navigateurs ne prennent en charge HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si http/2 est pris en charge, il est indiqué par l’extension sous la forme d’un symbole de Flash bleu et d’un en-tête &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
+      Pour Firefox et Chrome, il existe une extension appelée &quot;HTTP/2 and SPDY Indicator&quot;. Les navigateurs ne prennent en charge HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si http/2 est pris en charge, il est indiqué par l’extension sous la forme d’un symbole de Flash bleu et d’un en-tête &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
 
 
 ## Quand puis-je espérer passer à HTTP/2 ? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par le service d’assistance clientèle.
+Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par l’assistance clientèle.
 
 >[!NOTE]
 >
->Il peut y avoir un long délai car la transition à HTTP/2 implique de vider le cache. Par conséquent, seules quelques transitions client peuvent être traitées simultanément.
+>Le délai d’exécution peut être long, car la transition vers HTTP/2 implique l’effacement du cache. Par conséquent, seules quelques transitions client peuvent être traitées simultanément.
 
 ## Quels risques présente la transition vers HTTP/2 ?  {#what-are-the-risks-with-moving-to-http}
 
 La transition vers HTTP/2 efface le cache au niveau du CDN, car elle implique la définition d’une nouvelle configuration de CDN.
 
-Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. Ainsi, l&#39;Adobe prévoit de gérer quelques transitions client à la fois afin de maintenir des performances acceptables lors de l&#39;extraction des demandes de l&#39;origine.
+Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. Par conséquent, Adobe prévoit de gérer quelques transitions à la fois afin de maintenir des performances acceptables lors de l’extraction des requêtes à partir de l’origine.
 
 ## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ?  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Le navigateur ne détecte pas cette transition, il est donc nécessaire de télécharger une extension.
 
-Pour Firefox et Chrome, il existe une extension appelée &quot;HTTP/2 et indicateur SPDY&quot;. Les navigateurs ne prennent en charge HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si http/2 est pris en charge, il est indiqué par l’extension sous la forme d’un symbole de Flash bleu et d’un en-tête `X-Firefox-Spdy` : `h2`.
+Pour Firefox et Chrome, il existe une extension appelée &quot;HTTP/2 and SPDY Indicator&quot;. Les navigateurs ne prennent en charge HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si http/2 est pris en charge, il est indiqué par l’extension sous la forme d’un symbole de Flash bleu et d’un en-tête `X-Firefox-Spdy` : `h2`.
