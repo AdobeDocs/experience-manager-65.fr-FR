@@ -9,31 +9,30 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 63%
+ht-degree: 67%
 
 ---
 
-
 # Configuration du projet Xcode et génération de l’application iOS{#set-up-the-xcode-project-and-build-the-ios-app}
 
-AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour créer l’application personnalisée AEM Forms. L&#39;archive de code source `adobe-lc-mobileworkspace-src-<version>.zip` fait partie du package `adobe-aemfd-forms-app-src-pkg-<version>.zip` sur la distribution de logiciels.
+AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour créer l’application personnalisée AEM Forms. L’archive du code source, `adobe-lc-mobileworkspace-src-<version>.zip` fait partie du package `adobe-aemfd-forms-app-src-pkg-<version>.zip` sur la distribution logicielle.
 
 Pour obtenir le code source de l’application AEM Forms, procédez comme suit :
 
-1. Ouvrez [Distribution de logiciels](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** dans le menu d’en-tête.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l&#39;option **[!UICONTROL Rechercher les téléchargements]** pour filtrer les résultats.
-1. Appuyez sur le nom du package correspondant à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Téléchargements de recherche]** pour filtrer les résultats.
+1. Appuyez sur le nom du module approprié à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur (EULA)]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-1. Pour télécharger l&#39;archive du code source, ouvrez `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.
+1. Pour télécharger l’archive du code source, ouvrez `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.
 Le package source est téléchargé sur votre périphérique.
 
 L&#39;image suivante affiche le contenu extrait du fichier`adobe-lc-mobileworkspace-src-<version>.zip`.
@@ -75,18 +74,18 @@ Pour avoir des informations détaillées sur la signature de code et l’ajout d
 
    Connectez-vous à l’ordinateur Mac sur lequel Xcode et le SDK iOS sont installés et configurés.
 
-1. Copiez l&#39;archive `adobe-lc-mobileworkspace-src-<version>.zip` du dossier des téléchargements dans `[User_Home]/Projects/`.
-1. Extrayez l&#39;archive dans le répertoire `[User_Home]/Projects/[your-project]`.
-1. Accédez au répertoire ` [User_Home]/Projects/ `[your-project]`/adobe-lc-mobileworkspace-src-[version]/ios`.
+1. Copiez l’archive `adobe-lc-mobileworkspace-src-<version>.zip` du dossier des téléchargements vers `[User_Home]/Projects/`.
+1. Extrayez l’archive dans le répertoire `[User_Home]/Projects/[your-project]`.
+1. Accédez au répertoire ` [User_Home]/Projects/ `[your-project]`/adobe-lc-mobileworkspace-src-[version]/ios` .
 1. Ouvrez le projet `AEM Forms.xcodeproj` dans Xcode.
-1. Cliquez sur **AEM Forms**, sous **TARGETS**, sélectionnez **AEM Forms**. Sélectionnez l’onglet **Paramètres de création**, recherchez la section **Droits de signature de code** et dans les champs Débogage et version, effectuez l’une des opérations suivantes :
+1. Cliquez sur **AEM Forms**, sous **TARGETS**, sélectionnez **AEM Forms**. Sélectionnez l’onglet **Paramètres de génération**, recherchez la section **Droit de signature de code** et dans les champs Débogage et Version , effectuez l’une des opérations suivantes :
 
    * Laisser les champs non spécifiés pour créer une application Mobile Workspace standard
-   * Spécifiez les champs à utiliser comme expliqué dans la section [Création d’une application AEM Forms sécurisée pour iOS](/help/forms/using/building-secure-mobile-workspace-app.md) pour créer une application AEM Forms sécurisée.
+   * Indiquez les champs à utiliser comme expliqué dans la section [Création d’une application AEM Forms sécurisée pour iOS](/help/forms/using/building-secure-mobile-workspace-app.md) pour créer une application AEM Forms sécurisée.
 
 1. Sous l’onglet **Paramètres de génération**, cliquez sur **Tous**, puis sur **Combiné**.
 1. Dans la liste des **Paramètres**, développez **Signature de code**. 
-1. Pour **Identité de signature de code**, sélectionnez la signature appropriée. Pour plus d&#39;informations sur la création de nouvelles signatures, voir [Création et téléchargement de Profils d&#39;approvisionnement de développement](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
+1. Pour **Identité de signature de code**, sélectionnez la signature appropriée. Pour plus d’informations sur la création de signatures, voir [Création et téléchargement de profils d’approvisionnement de développement](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
 1. Vérifiez que la même signature est sélectionnée pour **Débogage**, **Version finale** et **N’importe quel SDK iOS**.
 1. Remplacez le code suivant dans le fichier `AEM Forms-info.plist` :
 
@@ -126,7 +125,7 @@ Pour avoir des informations détaillées sur la signature de code et l’ajout d
 
    >[!NOTE]
    >
-   >Cette étape n’est requise que si l’application AEM Forms doit se connecter à un serveur qui ne respecte pas les exigences de sécurité du transport des applications.
+   >Cette étape est requise uniquement si l’application AEM Forms doit se connecter à un serveur qui ne respecte pas les exigences de sécurité du transport des applications.
 
 1. Sous **PROJECT**, sélectionnez **AEM Forms** et assurez-vous que la signature appropriée est sélectionnée pour **Identité de signature de code**, **Débogage**, **Version** et **Tout SDK iOS**.
 1. Connectez un iPad muni d’un profil d’approvisionnement à un ordinateur Mac.
@@ -143,7 +142,7 @@ Pour avoir des informations détaillées sur la signature de code et l’ajout d
 
 Vous devez archiver le projet Xcode pour générer le programme d’installation (un fichier .ipa) et une liste de propriétés (un fichier .plist). Le fichier de liste de propriétés contient les informations de configuration de l’application interne hébergée, telles que le nom de l’application et l’emplacement où elle est hébergée. Pour en savoir plus sur le fichier de liste de propriétés, consultez [A propos des fichiers de liste de propriétés d’informations](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 
-1. Connectez un iPad muni d’un profil d’approvisionnement à un ordinateur Mac. Pour plus d’informations sur l’approvisionnement d’un iPad, voir [Création et téléchargement de Profils d’approvisionnement de développement](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
+1. Connectez un iPad muni d’un profil d’approvisionnement à un ordinateur Mac. Pour plus d’informations sur la configuration d’un iPad, voir [Création et téléchargement de profils d’approvisionnement de développement](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
 1. Sélectionnez le périphérique configuré pour le projet **AEM Forms**.
 
    ![ipad-1](assets/ipad-1.png)
@@ -157,7 +156,7 @@ Vous devez archiver le projet Xcode pour générer le programme d’installatio
 1. Sélectionnez **Enregistrer pour déploiement en entreprise ou ad hoc** comme méthode de distribution et cliquez sur **Suivant**.
 1. Sélectionnez l’identité de signature qui convient dans le champ **Code Signing Identity** et cliquez sur **Next**. Cliquez sur **Allow** (Autoriser) pour appliquer la signature.
 1. Indiquez le nom de l’application et sélectionnez **Enregistrer pour distribution en entreprise**.
-1. Indiquez l’URL de l’application dans le champ **Application URL**. Par exemple, pour héberger l’application sur un serveur CRX, fournissez l’URL `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
+1. Indiquez l’URL de l’application dans le champ **Application URL**. Par exemple, pour héberger l’application sur un serveur CRX, indiquez l’URL `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. Dans le champ **Titre**, indiquez AEM Forms.
 1. Cliquez sur **Enregistrer** et fermez Xcode.
 
