@@ -1,7 +1,7 @@
 ---
-title: Débuts APIQuick du service de sauvegarde et de restauration
-seo-title: Débuts APIQuick du service de sauvegarde et de restauration
-description: Débuts APIQuick du service de sauvegarde et de restauration
+title: Démarrages de l’API du service de sauvegarde et de restauration
+seo-title: Démarrages de l’API du service de sauvegarde et de restauration
+description: Démarrages de l’API du service de sauvegarde et de restauration
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
@@ -9,34 +9,33 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
+# Démarrages rapides de l’API de service de sauvegarde et de restauration {#backup-and-restore-service-apiquick-starts}
 
-# Débuts rapides de l&#39;API du service de sauvegarde et de restauration {#backup-and-restore-service-apiquick-starts}
+**Les exemples et les exemples de ce document sont réservés à l’environnement AEM Forms on JEE.**
 
-**Les exemples et exemples de ce document ne concernent que l’environnement AEM Forms on JEE.**
+L’API Java Quick Start (SOAP) est disponible pour l’API du service de sauvegarde et de restauration.
 
-Le Début rapide de l’API Java (SOAP) est disponible pour l’API du service de sauvegarde et de restauration.
+[Démarrage rapide : Passage en mode de sauvegarde à l’aide de l’API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Début rapide : Passage en mode de sauvegarde à l’aide de l’API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Démarrage rapide : Quitter le mode de sauvegarde à l’aide de l’API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-[Début rapide : Quitter le mode de sauvegarde à l’aide de l’API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
-
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les Débuts rapides situés dans Programmation avec AEM Forms sont basés sur le système d&#39;exploitation Forms. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les didacticiels de mise en route situés dans Programmation avec AEM Forms sont basés sur le système d’exploitation Forms. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Début rapide (mode SOAP) : Passage en mode de sauvegarde à l’aide de l’API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Passage en mode de sauvegarde à l’aide de l’API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-L&#39;exemple de code Java suivant passe en mode de sauvegarde avec un libellé unique pendant deux heures. Après l’expiration du délai de sauvegarde ou si le mode de sauvegarde est explicitement quitté, le serveur Forms revient à purger les fichiers de l’Enregistrement de Document global. (Voir [Saisie du mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+L’exemple de code Java suivant passe en mode de sauvegarde avec un libellé unique de deux heures. Une fois le délai de sauvegarde expiré ou si le mode de sauvegarde est explicitement quitté, le serveur Forms revient à purger les fichiers du stockage global de documents. (Voir [Activation du mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -149,9 +148,9 @@ L&#39;exemple de code Java suivant passe en mode de sauvegarde avec un libellé 
  
 ```
 
-## Début rapide (mode SOAP) : Quitter le mode de sauvegarde à l’aide de l’API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Quitter le mode de sauvegarde à l’aide de l’API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-L’exemple de code Java suivant montre comment forcer explicitement un Forms Server à quitter le mode de sauvegarde et à revenir à la purge des fichiers de l’Enregistrement de Document global. (Voir [Quitter le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+L’exemple de code Java suivant entraîne explicitement un serveur Forms à quitter le mode de sauvegarde et à revenir à la purge des fichiers du stockage global de documents. (Voir [Quitter le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -253,4 +252,3 @@ L’exemple de code Java suivant montre comment forcer explicitement un Forms Se
  }
  
 ```
-
