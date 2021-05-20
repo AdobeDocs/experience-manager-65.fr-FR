@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
-feature: Asset Management
+feature: Gestion des ressources
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 87%
+source-wordcount: '116'
+ht-degree: 89%
 
 ---
-
 
 # À propos de la gestion des ressources Dynamic Media {#managing-assets}
 
