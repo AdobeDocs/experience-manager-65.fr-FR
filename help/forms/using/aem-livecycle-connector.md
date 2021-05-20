@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1029'
 ht-degree: 93%
 
 ---
-
 
 # Connexion d’AEM Forms à Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
@@ -32,7 +31,7 @@ AEM LiveCycle Connector fait partie du [package de module complémentaire AEM Fo
 
 Bien que les propriétés soient explicites, les plus importantes sont les suivantes :
 
-* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que l’LiveCycle et l’AEM communiquent via https, début AEM avec la JVM suivante
+* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que le LiveCycle et l’AEM communiquent via https, commencez AEM avec la JVM suivante.
 
    ```java
    argument
@@ -45,7 +44,7 @@ Bien que les propriétés soient explicites, les plus importantes sont les suiva
 * **Mot de passe** : indique le mot de passe.
 * **Nom du service** : indique les services démarrés à l’aide des informations d’identification fournies dans les champs Nom d’utilisateur et Mot de passe. Par défaut, aucune information d’identification n’est transmise lors du démarrage des services LiveCycle.
 
-## Démarrage des Services de document {#starting-document-services}
+## Démarrage des Services de document  {#starting-document-services}
 
 Les applications clientes peuvent démarrer des services LiveCycle par programmation en utilisant une API Java, des services Web, Remoting et REST. Pour les clients Java, l’application peut utiliser le kit SDK LiveCycle. Ce kit SDK fournit une API Java permettant de démarrer ces services à distance. Par exemple, pour convertir un document Microsoft Word au format PDF, le client lance GeneratePDFService. Le flux d’appel se compose des étapes suivantes :
 
@@ -53,9 +52,9 @@ Les applications clientes peuvent démarrer des services LiveCycle par programma
 1. Chaque service fournit une classe de client. Pour démarrer un service, créez-en une instance de client.
 1. Démarrez le service et traitez le résultat.
 
-AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client comme des services OSGi accessibles par des méthodes OSGi standard. Le connecteur de LiveCycle offre les fonctionnalités suivantes :
+AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client comme des services OSGi accessibles par des méthodes OSGi standard. Le connecteur de LiveCycle fournit les fonctionnalités suivantes :
 
-* Instances de client en tant que service OSGi : Les clients conditionnés en bundles OSGI sont répertoriés dans la section [Document Services liste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
+* Instances de client en tant que service OSGi : Les clients conditionnés en tant que bundles OSGI sont répertoriés dans la section [Liste de Document Services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) . Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
 * Propagation des informations d’identification : les détails de connexion requis pour la connexion au serveur LiveCycle sont gérés de manière centralisée.
 * Service ServiceClientFactory : pour démarrer les processus, l’application cliente peut accéder à l’instance ServiceClientFactory.
 
@@ -161,7 +160,7 @@ La plupart des Services de document de LiveCycle nécessitent une authentificati
 
 La configuration du SDK client LiveCycle contient un paramètre sur les noms de service. Il s’agit d’une liste de services pour lesquels la logique d’appel utilise des informations d’identification prêtes à l’emploi. Si vous ajoutez, par exemple, des services DirectoryManager (qui font partie de l’API de gestion d’utilisateur) à cette liste, tout code client peut utiliser directement le service et la couche d’appel transmet automatiquement les informations d’identification configurées dans le cadre de la demande envoyée au serveur LiveCycle.
 
-### RunAsManager  {#runasmanager}
+### RunAsManager {#runasmanager}
 
 Dans le cadre de l’intégration, un nouveau service RunAsManager est fourni. Il permet de contrôler par programmation les informations d’identification à utiliser quand vous émettez un appel au serveur LiveCycle.
 
