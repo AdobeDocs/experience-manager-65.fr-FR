@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f38ebd69-8d1c-49b6-824f-4bf0ec8a8953
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8fbff12a-4923-4151-a758-c1e44dee9160
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 100%
 
 ---
-
 
 # Définition des options de configuration XCI {#specify-xci-configuration-options}
 
@@ -32,4 +31,3 @@ Vous pouvez sélectionner des options qui annulent le remplacement des options r
 1. Dans Administration Console, cliquez sur Services > Output.
 1. Cochez ou désélectionnez la case Utiliser les options XCI par défaut du système. Lorsque cette option est sélectionnée, le service Output utilise ses valeurs par défaut pour les paramètres paquets, créateur, producteur et compressObjectStream. Lorsque cette option est désélectionnée, le service Output utilise les valeurs spécifiées dans le fichier XCI personnalisé.
 1. Cliquez sur Enregistrer.
-
