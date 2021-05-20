@@ -11,7 +11,6 @@ docset: aem65
 feature: Vidéos interactives
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '6058'
@@ -29,7 +28,7 @@ Voir aussi [Images interactives](/help/assets/interactive-images.md).
 
 ## Vidéos interactives à l’œuvre {#interactive-video-in-action}
 
-Pour visionner une vidéo interactive et pouvant être visitée en action, cliquez sur [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), faites défiler l’écran jusqu’à l’en-tête **[!UICONTROL Médias susceptibles d’être consultés]** sur la page, puis cliquez sur la vidéo pouvant être partagée.
+Pour voir une vidéo interactive Shoppable en action, cliquez sur [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), faites défiler la page jusqu’à l’en-tête **[!UICONTROL Médias Shoppable]**, puis cliquez sur la vidéo Shoppable.
 
 * Pendant la lecture, lorsque les produits sont utilisés dans la vidéo, le produit identique s’affiche à droite sous forme de miniature.
 
@@ -37,7 +36,7 @@ Pour visionner une vidéo interactive et pouvant être visitée en action, cliqu
 
 <!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
-![Image d&#39;une ](assets/chlimage_1-126.png) *vidéo interactive et accessibleCapture d&#39;une image vidéo d&#39;une vidéo interactive et accessible en magasin.*
+![Image d’une ](assets/chlimage_1-126.png) *vidéo interactive ShoppableCapture d’images vidéo d’une vidéo interactive pouvant faire l’objet d’un achat.*
 
 >[!NOTE]
 >
@@ -122,7 +121,7 @@ Normalement, il n’est pas nécessaire d’utiliser des outils de débogage sp�
 
 * Pour voir toutes les demandes HTTP sortantes dans Google Chrome, appuyez sur **F12** (Windows) ou **Contrôle+Options+I** (Mac) pour ouvrir le panneau Outils de développement, puis cliquez sur l’onglet **Réseau**.
 
-* Dans Firefox, vous pouvez activer le module externe Firebug en appuyant sur **F12** (Windows) ou **Commande+Option+I** (Mac) et en utilisant son onglet **`[Net]`**, ou vous pouvez utiliser l&#39;outil Inspecteur intégré et son onglet Réseau.
+* Dans Firefox, vous pouvez activer le module externe Firebug en appuyant sur **F12** (Windows) ou **Command+Option+I** (Mac) et utiliser son onglet **`[Net]`**, ou utiliser l’outil Inspecteur intégré et son onglet Réseau.
 
 * Dans Internet Explorer, activez l’outil de débogage en appuyant sur **F12**.
 
@@ -284,7 +283,7 @@ Pour ajouter de l’interactivité à votre vidéo :
 
       Pour chaque segment à ajouter, vous pouvez affecter une ou plusieurs images miniatures, puis lier ces miniatures à des pages de produit d’aperçu rapide pour que les clients achètent ou à des pages web pour plus d’informations.
 
-   * Appuyez sur le bouton **[!UICONTROL Lecture]** pour commencer à lire la vidéo. Lorsqu&#39;un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est mis en vue, appuyez sur **[!UICONTROL Pause.]** Appuyez sur **[!UICONTROL Ajouter le segment.]**
+   * Appuyez sur le bouton **[!UICONTROL Lire]** pour commencer à lire la vidéo. Lorsqu’un produit, service ou détail particulier que vous souhaitez mettre en surbrillance apparaît, appuyez sur **[!UICONTROL Pause.]** Appuyez sur **[!UICONTROL Ajouter un segment.]**
 
       Continuez la lecture et la mise en pause de la vidéo à des points de la chronologie où vous souhaitez ajouter un segment jusqu’à la fin de la vidéo.
 
