@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: c34dd4c2-5fff-4355-b86d-cc8a956dd8af
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 7c2a91c8-9b68-4491-88e2-f7ea68f5a79f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
 
 ---
-
 
 # Ajout d’une action personnalisée sur des éléments de liste de formulaire{#adding-custom-action-on-form-lister-items}
 
@@ -52,4 +51,3 @@ Vous pouvez ajouter des actions semblables dans votre modèle personnalisé. Pou
 Une fois les modifications apportées au modèle, la page d’exemple du portail contient un bouton permettant d’envoyer le lien du formulaire par courrier électronique, comme illustré ci-dessous.
 
 ![email](assets/email.png)
-
