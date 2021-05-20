@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1f544485-5a01-4a4a-ab0f-dcee67e1a38b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 100%
 
 ---
-
 
 # Définition des paramètres de protection {#specify-security-settings}
 
@@ -27,4 +26,3 @@ Le service Output permet de contrôler la résolution des entités externes dans
 1. Dans Administration Console, cliquez sur Services > Output.
 1. Désélectionnez la case Résoudre les entités externes.
 1. Cliquez sur Enregistrer.
-
