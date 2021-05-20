@@ -7,15 +7,14 @@ topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Correspondence Management
+exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 78%
 
 ---
-
 
 # Configuration de la solution Correspondence Management {#configuring-a-correspondence-management-solution}
 
@@ -23,9 +22,9 @@ ht-degree: 78%
 
 Procédez aux étapes suivantes pour définir une URL d’instance d’auteur pour la restauration de la version de l’instance d’auteur :
 
-1. Accédez à *https://:&lt;hôte de publication>:&lt;port de publication>/lc/system/console/configMgr*. Connectez-vous avec les informations d’identification d’utilisateur de la console de gestion OSGi. Les informations d’identification d’administrateur par défaut sont/admin.
+1. Accédez à *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Connectez-vous avec les informations d’identification d’utilisateur de la console de gestion OSGi. Les informations d’identification d’administrateur par défaut sont/admin.
 1. Recherchez l’icône **[!UICONTROL Modifier]** située en regard du paramètre **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]** et cliquez dessus.
-1. Dans le champ **[!UICONTROL VersionRestoreManager Author URL]**, spécifiez l’URL de l’instance d’auteur de VersionRestoreManager.
+1. Dans le champ **[!UICONTROL VersionRestoreManager Author URL]** , spécifiez l’URL de l’instance d’auteur de VersionRestoreManager.
 
    **Chaîne** d’URL :
 
@@ -33,7 +32,7 @@ Procédez aux étapes suivantes pour définir une URL d’instance d’auteur po
 
    >[!NOTE]
    >
-   >S’il existe plusieurs instances d’auteur (en grappe) devant un équilibreur de charge, spécifiez l’URL de l’équilibreur de charge dans le champ **[!UICONTROL VersionRestoreManager Author URL]**.
+   >S’il existe plusieurs instances d’auteur (en grappe) derrière un équilibreur de charge, spécifiez l’URL de l’équilibreur de charge dans le champ **[!UICONTROL VersionRestoreManager Author URL]** .
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
