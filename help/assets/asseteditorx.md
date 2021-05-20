@@ -1,37 +1,36 @@
 ---
-title: Étendre l’éditeur de fichiers
+title: Étendre l’Éditeur de ressources
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Outils de développement
+exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 88%
+source-wordcount: '690'
+ht-degree: 87%
 
 ---
 
-
-# Étendre l’éditeur de ressources {#extending-asset-editor}
+# Étendre l’Éditeur de ressources {#extending-asset-editor}
 
 L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur clique sur une ressource trouvée par le biais du partage de ressources, ce qui lui permet de modifier certains aspects de la ressource, tels que les métadonnées, la miniature, le titre et les balises.
 
 La configuration de l’éditeur à l’aide des composants de modification prédéfinis est traitée dans [Création et configuration d’une page Éditeur de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-Outre l&#39;utilisation de composants d&#39;éditeur préexistants, les développeurs [!DNL Adobe Experience Manager] peuvent également créer leurs propres composants.
+En plus d’utiliser des composants d’éditeur préexistants, les développeurs [!DNL Adobe Experience Manager] peuvent créer leurs propres composants.
 
-## Créer un modèle d’éditeur de ressources {#creating-an-asset-editor-template}
+## Créer un modèle Éditeur de ressources {#creating-an-asset-editor-template}
 
-Les exemples de pages suivants sont inclus dans le Geometrixx :
+Les exemples de pages suivants sont inclus dans Geometrixx :
 
 * Exemple de page Geometrixx : `/content/geometrixx/en/press/asseteditor.html`
 * Exemple de modèle : `/apps/geometrixx/templates/asseteditor`
 * Exemple de composant de page : `/apps/geometrixx/components/asseteditor`
 
-### Configurer Clientlib {#configuring-clientlib}
+### Configurer la bibliothèque cliente {#configuring-clientlib}
 
-[!DNL Assets] les composants utilisent une extension de WCM edit clientlib. Les clientlibs sont généralement chargés dans `init.jsp`.
+[!DNL Assets] Les composants utilisent une extension de la bibliothèque cliente de modification de la gestion du contenu web. Les clientlibs sont généralement chargés dans `init.jsp`.
 
 Par rapport au chargement du clientlib par défaut (au cœur d’`init.jsp`), un modèle doit répondre aux exigences suivantes :[!DNL Assets]
 
@@ -41,9 +40,9 @@ Par rapport au chargement du clientlib par défaut (au cœur d’`init.jsp`), un
 
 Dans la plupart des cas, la copie de l’exemple existant de `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) doit répondre à ces besoins.
 
-### Configurer les actions JS {#configuring-js-actions}
+### Configuration des actions JS {#configuring-js-actions}
 
-Certains composants [!DNL Assets] nécessitent des fonctions JS définies dans `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
+Certains composants [!DNL Assets] requièrent des fonctions JS définies dans `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -203,7 +202,7 @@ Cet exemple illustre comment créer un composant qui affiche les métadonnées d
 
 1. En mode d’**édition**, le nouveau composant (par exemple, **Exemple de métadonnées**) est désormais disponible dans le sidekick (qui se trouve dans le groupe **Éditeur de ressources**). Insérez le composant. Pour pouvoir stocker les métadonnées, celles-ci doivent être ajoutées au formulaire de métadonnées.
 
-## Modifier les options de métadonnées {#modifying-metadata-options}
+## Modification des options de métadonnées {#modifying-metadata-options}
 
 Vous pouvez modifier les espaces de noms disponibles [sous forme de métadonnées](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
