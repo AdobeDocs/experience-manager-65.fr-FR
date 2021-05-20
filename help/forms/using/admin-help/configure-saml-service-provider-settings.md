@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 98%
 
 ---
-
 
 # Configuration des paramètres du fournisseur de services SAML{#configure-saml-service-provider-settings}
 
@@ -63,4 +62,3 @@ Pour de plus amples informations sur le langage SAML, voir [Présentation techni
    `saml.sp.discovery.url=/custom/custom.jsp`
 
 1. Cliquez sur Enregistrer.
-
