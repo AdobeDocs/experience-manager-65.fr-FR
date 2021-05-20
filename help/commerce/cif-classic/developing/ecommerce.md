@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 docset: aem65
-translation-type: tm+mt
 source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '151'
@@ -31,11 +30,11 @@ Pour en savoir plus, voir:
 
 >[!NOTE]
 >
->Comme le cadre eCommerce peut être utilisé avec n&#39;importe quelle solution eCommerce, voir [Développement (générique)](/help/commerce/cif-classic/developing/generic.md) pour plus d&#39;informations sur le développement de possibilités.
+>Comme la structure eCommerce peut être utilisée avec n’importe quelle solution eCommerce, voir [Développement (générique)](/help/commerce/cif-classic/developing/generic.md) pour plus d’informations sur le développement de possibilités.
 
 >[!NOTE]
 >
->Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement du commerce électronique](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement d’eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
 >Pour plus d’informations sur les concepts et l’administration des implémentations eCommerce, consultez [Administration d’eCommerce](/help/commerce/cif-classic/administering/ecommerce.md).
 
