@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 94%
 
 ---
-
 
 # Configuration de l’authentification avec certificat {#configuring-certificate-based-authentication}
 
@@ -51,14 +50,14 @@ Lorsque vous testez un certificat, User Management télécharge les contrôles p
 
    Si le contenu de l’attribut dans le certificat est différent du contenu de l’attribut de l’utilisateur dans la base de données de User Management, vous pouvez utiliser une expression régulière Java (regex) pour faire correspondre les deux attributs. Par exemple, si les noms communs des certificats sont du type *Alex Dupont (Authentification)* et *Alex Dupont (Signature)* et si le nom commun dans la base de données de User Management est *Alex Dupont*, vous pouvez utiliser une expression regex pour extraire la partie requise de l’attribut du certificat (en l’occurrence, *Alex Dupont*). L’expression régulière que vous spécifiez doit être conforme à la spécification regex Java.
 
-   Vous pouvez transformer cette expression en spécifiant l’ordre des groupes dans la zone Ordre personnalisé. L&#39;ordre personnalisé est utilisé avec la méthode `java.util.regex.Matcher.replaceAll()`. Le comportement observé correspond à celui de cette méthode et la chaîne d’entrée (l’ordre personnalisé) doit être spécifiée en conséquence.
+   Vous pouvez transformer cette expression en spécifiant l’ordre des groupes dans la zone Ordre personnalisé. L’ordre personnalisé est utilisé avec la méthode `java.util.regex.Matcher.replaceAll()` . Le comportement observé correspond à celui de cette méthode et la chaîne d’entrée (l’ordre personnalisé) doit être spécifiée en conséquence.
 
    Pour tester l’expression regex, saisissez une valeur dans la zone Paramètre de test, puis cliquez sur Tester.
 
    Vous pouvez utiliser les caractères suivants dans l’expression regex :
 
    *  : (n’importe quel caractère)
-   * &amp;ast; (0 occurrence ou plus)
+   * &amp;ast; (0 ou plus d’occurrences)
    * () (spécifier le groupe entre parenthèses)
    * \ (permet d’utiliser un caractère regex en tant que caractère normal)
    * $n (permet de faire référence au énième groupe)
@@ -67,15 +66,15 @@ Lorsque vous testez un certificat, User Management télécharge les contrôles p
 
    * Pour extraire « Alex Dupont » de « Alex Dupont (Authentification) »
 
-      **Regex :** (.&amp;ast;) \(Authentification\)
+      **Regex :** (.&amp;ast;) \(Authentication\)
 
    * Pour extraire « Alex Dupont » de « Alex (Authentification) Dupont »
 
-      **Regex :** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
+      **Regex :** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
    * Pour extraire « Dupont Alex » de « Alex (Authentification) Dupont »
 
-      **Regex :** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
+      **Regex :** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
       Ordre personnalisé : $2 $1 (renvoyer le second groupe concaténé au premier groupe, capturé par un caractère espace)
 
@@ -98,4 +97,3 @@ Lorsque vous testez un certificat, User Management télécharge les contrôles p
 
 1. Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Mappage de certificats.
 1. Activez la case à cocher correspondant au mappage de certificat à supprimer, cliquez sur Supprimer puis sur OK.
-
