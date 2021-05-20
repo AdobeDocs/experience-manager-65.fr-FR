@@ -7,14 +7,13 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 87%
 
 ---
-
 
 # Correspondence Management | Gestion des données utilisateur {#correspondence-management-handling-user-data}
 
@@ -36,7 +35,7 @@ Selon la persistance du stockage de données configuré pour votre déploiement 
  <tbody>
   <tr>
    <td><p><strong>Type de persistance</strong></p> </td>
-   <td><p><strong>Stockage de données</strong></p> </td>
+   <td><p><strong>Entrepôt de données</strong></p> </td>
    <td><p><strong>Emplacement</strong></p> </td>
   </tr>
   <tr>
@@ -58,9 +57,9 @@ Selon la persistance du stockage de données configuré pour votre déploiement 
 * `[node-id]` correspond à l’ID attribué au dossier contenant la lettre
 * `[letter-instance-name]` correspond au nom spécifié lors de l’enregistrement ou de l’envoi d’une lettre
 
-Sous le noeud [letter-instance-name], la structure de noeud suivante est créée et les données de chaque instance de lettre sont stockées dans le référentiel AEM :
+Sous le noeud [letter-instance-name] , la structure de noeud suivante est créée et les données de chaque instance de lettre sont stockées dans le référentiel AEM :
 
-| Node | Description |
+| Nœud | Description |
 |---|---|
 | `extendedProperties` | Stocke les propriétés de métadonnées de l’instance de lettre. |
 | `dataXML` | Stocke un fichier dataXML téléchargeable contenant les données de correspondance au format binaire. |
@@ -77,11 +76,11 @@ Correspondence Management fournit des API que vous pouvez utiliser pour recherch
 
 Vous pouvez également accéder à une instance de lettre dans un référentiel AEM à l’aide de CRX DELite. Reportez-vous à la section [Données utilisateur et stockage de données](/help/forms/using/correspondence-management-handling-user-data.md#data) pour en savoir plus sur les données stockées et l’emplacement du référentiel.
 
-### Suppression de données utilisateur  {#delete-user-data}
+### Suppression de données utilisateur {#delete-user-data}
 
 Pour rechercher une instance de lettre qui contient les données d’un utilisateur spécifique, vous pouvez :
 
 * utiliser les API de Correspondence Management si le nom de l’instance de lettre ou l’utilisateur qui a enregistré le brouillon ou envoyé la correspondance est connu ;
-* Utilisez AEM recherche de référentiel à l’aide d’informations d’identification personnelle telles que l’ID ou le nom de l’adresse électronique pour rechercher le noeud sur lequel les informations sont stockées.
+* Utilisez AEM recherche de référentiel à l’aide d’informations d’identification personnelle telles que l’ID de courrier électronique ou le nom pour trouver le noeud où les informations sont stockées.
 
 Pour supprimer définitivement des données utilisateur de correspondances sous forme de brouillon et envoyées dans les systèmes AEM, vous devez supprimer manuellement le nœud d’instance de lettre de toutes les instances AEM applicables.
