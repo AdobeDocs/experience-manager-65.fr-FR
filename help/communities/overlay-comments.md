@@ -1,8 +1,8 @@
 ---
-title: Incrustations de composants de communautés
-seo-title: Incrustations de composants de communautés
-description: Incrustations de composants de communautés
-seo-description: Incrustations de composants de communautés
+title: Incrustation des composants des communautés
+seo-title: Incrustation des composants des communautés
+description: Incrustation des composants des communautés
+seo-description: Incrustation des composants des communautés
 uuid: 872f7006-959a-49d2-b025-3a5abb7c6dca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,36 +10,35 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
+# Composants de communautés de superposition {#overlay-communities-components}
 
-# Composants de communautés d’incrustation {#overlay-communities-components}
-
-L&#39;intention de [superposer](/help/communities/client-customize.md#overlays) un composant par défaut est de modifier globalement l&#39;apparence ou le comportement d&#39;un composant, pour toutes les références relatives au composant. Il dépend de la nature de sling à résoudre dans le dossier /apps avant de rechercher dans le dossier /libs. Par conséquent, le chemin d’accès au composant est identique à celui du composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs.
+L’intention de [superposer](/help/communities/client-customize.md#overlays) un composant par défaut est de modifier l’aspect ou le comportement d’un composant globalement, pour toutes les références relatives au composant. Il repose sur la nature de sling à résoudre dans le dossier /apps avant de rechercher dans le dossier /libs . Par conséquent, le chemin d’accès au composant est identique à celui du composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs .
 
 ## Exemple {#example}
 
-**Composant de commentaires d’incrustation**
+**Composant des commentaires de superposition**
 
-Supposons que vous souhaitez modifier la fonction de commentaire afin qu’elle corresponde à la conception de votre site Web, en modifiant l’en-tête du commentaire afin qu’il n’affiche plus l’avatar pour un commentaire. Les solutions permettant de masquer l’avatar utilisent le format CSS ou, comme décrit ici, superposent le fichier header.jsp dans le dossier des applications afin que le code HTML contenant l’avatar ne soit jamais envoyé au client.
+Supposons que vous souhaitiez modifier la fonction de commentaire afin qu’elle corresponde à la conception de votre site web, en modifiant l’en-tête du commentaire afin qu’il n’affiche plus l’avatar pour un commentaire. Les solutions pour masquer l’avatar utilisent soit CSS, soit, comme décrit ici, le recouvrement du fichier header.jsp dans le dossier des applications afin que le code HTML contenant l’avatar ne soit jamais envoyé au client.
 
 Pour superposer des commentaires, vous devez :
 
 1. [Page Commentaires](/help/communities/overlay-create-comments-page.md)
-1. [Créer des noeuds](/help/communities/overlay-create-nodes.md)
+1. [Création de noeuds](/help/communities/overlay-create-nodes.md)
 1. [Modification de l’aspect](/help/communities/overlay-alter-appearance.md)
 
-**Courriers électroniques de notifications d’incrustation**
+**Incrustation d’emails de notifications**
 
-Supposons que vous souhaitiez personnaliser le message des notifications par courrier électronique, vous pouvez le faire en [superposant](/help/communities/client-customize.md#overlays) les modèles à l’adresse **/libs/settings/community/templates/email/html**.
+Supposons que vous souhaitiez personnaliser le message des notifications par e-mail, vous pouvez le faire en [superposant](/help/communities/client-customize.md#overlays) les modèles à l’adresse **/libs/settings/community/templates/email/html**.
 
-Par exemple, pour modifier les notifications de mentions par courrier électronique (pour un composant de communautés spécifique où ugc est créé), ajoutez une condition **if** pour verbe **mentions** dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions**.
+Par exemple, pour modifier les notifications par courrier électronique de mentions (pour un composant de communautés spécifique où ugc est créé), ajoutez une condition **if** pour verb **mention** dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions**.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -47,4 +46,4 @@ Par exemple, pour modifier les notifications de mentions par courrier électroni
 {{/equals}}\
 ```
 
-Pour modifier le modèle de notifications électroniques pour @mentions dans les commentaires de blog, placez le modèle prêt à l&#39;emploi à l&#39;adresse suivante : `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+Pour modifier le modèle de notification électronique pour @mention dans les commentaires de blog, placez le modèle prêt à l’emploi à l’adresse : `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
