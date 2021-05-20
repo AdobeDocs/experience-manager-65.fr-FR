@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 100%
 
 ---
-
 
 # Ajout, activation, modification ou suppression de points de fin {#adding-enabling-modifying-or-removing-endpoints}
 
@@ -33,13 +32,13 @@ Vous ne pouvez ajouter des points de fin qu’à des services. Un point de fin n
 1. Dans la liste de l’onglet Points de fin, sélectionnez le type de point de fin à ajouter et cliquez sur Ajouter.
 1. En fonction du type de point de fin, configurez d’autres paramètres de point de fin.
 
-   [Paramètres des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+[Paramètres des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-   [Paramètres des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+[Paramètres des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-   [Configuration des points de fin TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+[Configuration des points de fin TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-   [Paramètres des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+[Paramètres des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. Cliquez sur Ajouter.
 
@@ -74,4 +73,3 @@ Pour exécuter cette tâche, vous pouvez également sélectionner un service dan
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des points de fin.
 1. Dans la page Gestion des points de fin, cochez la case correspondant au point de fin à supprimer, puis cliquez sur Supprimer. Ce point de fin n’est plus affiché.
-
