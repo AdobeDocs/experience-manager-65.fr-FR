@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 95%
 
 ---
-
 
 # Présentation des Services de document AEM{#overview-of-aem-document-services}
 
@@ -45,9 +44,9 @@ Les quatre opérations du service Output mentionnées ci-dessous sont disponible
 * **generatePrintedOutput** : fusionne une conception de formulaire avec des données pour générer un document à envoyer à une imprimante laser ou une imprimante d’étiquettes réseau.
 
 * **generatePDFOutputBatch** : Fusionne en un seul appel plusieurs modèles avec plusieurs enregistrements de données pour générer un lot de fichiers PDF. Il existe également une option pour générer un fichier PDF unique en combinant tous les fichiers PDF
-* **generatePrintedOutputBatch** : Fusionne plusieurs modèles avec plusieurs enregistrements de données dans un seul appel pour générer un lot de documents d’impression (PS, PCL, ZPL, DPL, IPL, TPCL). Il existe également une option pour générer un document d’impression unique.
+* **generatePrintedOutputBatch** : Fusionne plusieurs modèles avec plusieurs enregistrements de données en un seul appel pour générer un lot de documents d’impression (PS,PCL,ZPL,DPL,IPL,TPCL). Il existe également une option pour générer un document d’impression unique.
 
-## Incohérence affectant le service {#assembler-service}
+## Incohérence affectant le service assembleur {#assembler-service}
 
 Le service Assembler vous permet de combiner, d’organiser et d’étendre vos documents aux formats PDF et XDP. Grâce à lui, vous pouvez également obtenir des informations sur les documents PDF. Chacun des travaux envoyés au service Assembler inclut un document DDX (Document Description XML), ainsi qu’un ensemble de documents source et de ressources externes (chaînes et graphiques). Le document DDX explique comment utiliser les documents source pour générer un ensemble de documents cible.
 
@@ -108,7 +107,7 @@ Le service Signature vous permet d’utiliser des documents et des signatures nu
 
 Le service Signature accède aux certificats et aux informations d’identification stockées dans le Trust Store.
 
-### Service Encryption  {#encryption-service}
+### Service Encryption {#encryption-service}
 
 Le service Encryption permet de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Vous pouvez chiffrer l’intégralité d’un document PDF (contenu, métadonnées et pièces jointes), tous les éléments autres que ses métadonnées ou uniquement les pièces jointes. Un utilisateur autorisé peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Acrobat. Si un document PDF est chiffré avec un certificat, l’utilisateur doit déchiffrer ce document avec une clé privée (certificat). Cette clé doit correspondre à la clé publique utilisée pour le chiffrement.
 
@@ -133,4 +132,4 @@ Le service Doc Assurance ne peut pas être utilisé immédiatement. Pour config
 
 ## Service SendToPrinter {#send-to-printer-service}
 
-Le service Send To Printer fournit une API pour envoyer des documents vers une imprimante spécifiée pour l’impression.
+Le service SendToPrinter fournit une API pour envoyer des documents vers l’imprimante spécifiée pour l’impression.
