@@ -1,19 +1,18 @@
 ---
-title: Meilleures pratiques de traduction des ressources
+title: Bonnes pratiques relatives à la traduction des ressources
 description: Meilleures pratiques pour une gestion efficace des ressources afin de synchroniser les diverses versions traduites et de rationaliser les workflows de traduction.
 contentOwner: AG
 role: Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Gestion des ressources
+exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '418'
 ht-degree: 86%
 
 ---
 
-
-# Meilleures pratiques pour traduire des ressources {#best-practices-for-translating-assets-efficiently}
+# Bonnes pratiques pour traduire des ressources {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] prend en charge des workflow multilingues permettant de traduire les fichiers binaires, les métadonnées et les balises des ressources numériques en plusieurs paramètres régionaux et de gérer les ressources traduites. Pour plus d’informations, voir [Ressources multilingues](multilingual-assets.md).
 
@@ -46,7 +45,7 @@ Vous pouvez également apporter des modifications de configuration à quelques w
 
 1. Activez le workflow [!UICONTROL Définir la date de dernière modification].
 
-   Le workflow [!UICONTROL Définir la date de dernière modification] configure la date de dernière modification pour une ressource. Comme vous désactivez ce processus à l’étape 2, [!DNL Assets] ne peut plus tenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
+   Le workflow [!UICONTROL Définir la date de dernière modification] configure la date de dernière modification pour une ressource. Comme vous désactivez ce workflow à l’étape 2, [!DNL Assets] ne peut plus tenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
 
-1. [Configurez la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires des ressources. Désélectionnez l’option **[!UICONTROL Traduire les ressources]** sous l’onglet [!UICONTROL Ressources] pour arrêter la traduction des fichiers binaires.
-1. Traduisez les métadonnées/balises de fichier à l’aide de [workflows de ressources multilingues](multilingual-assets.md).
+1. [Configurez la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires des ressources. Désélectionnez l’option **[!UICONTROL Traduire les ressources]** sous l’onglet [!UICONTROL Ressources] pour arrêter la traduction des fichiers binaires des ressources.
+1. Traduisez les métadonnées/balises de ressources à l’aide de [processus de ressources multilingues](multilingual-assets.md).
