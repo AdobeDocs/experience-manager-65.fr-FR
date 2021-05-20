@@ -10,36 +10,35 @@ topic-tags: hTML5_forms
 discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 73%
 
 ---
 
-
 # Modification des styles par défaut des formulaires HTML5{#changing-default-styles-of-html-forms}
 
 Les formulaires HTML5 sont rendu utilisant des fonctionnalités HTML5 et le style du formulaire rendu est fait utilisant CSS. L’apparence par défaut des formulaires HTML5 est similaire à son rendu PDF. Les développeurs peuvent utiliser des CSS personnalisés pour modifier l’apparence par défaut des formulaires HTML5.
 
-Cet article fournit des informations détaillées sur la modification du style d’un formulaire HTML5 et [Introduction aux styles](/help/forms/using/css-styles.md) l’article contient des informations détaillées sur divers aspects de style des formulaires HTML5. Assurez-vous de lire l’article Introduction aux styles avant d’exécuter les étapes mentionnées dans cet article.
+Cet article fournit des informations détaillées sur la modification du style d’un formulaire HTML5 et l’article [Introduction aux styles](/help/forms/using/css-styles.md) contient des informations détaillées sur divers aspects de style des formulaires HTML5. Assurez-vous de lire l’article Introduction aux styles avant d’effectuer les étapes mentionnées dans cet article.
 
 Les deux images qui suivent montrent la différence entre les styles par défaut et les styles personnalisés.
 
-![images-002-small](assets/pictures-002-small.png)
+![picture-002-small](assets/pictures-002-small.png)
 
 ## Donner du style à vos formulaires {#style-your-forms}
 
 1. **Sélectionner un profil auquel ajouter des styles personnalisés**
 
-   Accédez à l’interface CRX DE à l’adresse URL : **https://&lt;serveur>:&lt;port>/crx/de** et créez un profil ou choisissez un profil existant. Pour savoir comment créer un profil, voir [Création d’un nouveau Profil](/help/forms/using/custom-profile.md).
+   Accédez à l’interface CRX DE à l’adresse URL : **https://&lt;serveur>:&lt;port>/crx/de** et créez un profil ou choisissez un profil existant. Pour savoir comment créer un profil, voir [Création d’un nouveau profil](/help/forms/using/custom-profile.md)
 
 1. **Création d’une feuille de style CSS pour modifier le style des formulaires HTML5**
 
    Naviguez jusqu’au dossier dans lequel vous avez créé le rendu du profil et créez un fichier de feuille de style CSS. Les étapes à suivre sont :
 
-   1. Cliquez avec le bouton droit sur le dossier et sélectionnez **créer** > **créer un fichier** dans le menu.
+   1. Cliquez avec le bouton droit sur le dossier et sélectionnez **create** > **create File** dans le menu.
 
    1. Dans la boîte de dialogue Création de fichier, entrez le nom de la feuille de style. Assurez -vous d’utiliser l’extension .css (par exemple stylesheet.css)
    1. Dans le volet de navigation, ouvrez le fichier CSS que vous avez créé.
