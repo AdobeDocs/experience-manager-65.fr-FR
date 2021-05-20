@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 162c9fda-f4d4-4ad5-a9ab-7554828e821c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 100%
 
 ---
-
 
 # Définition des options de configuration XCI {#specifying-xci-configuration-options}
 
@@ -32,4 +31,3 @@ Vous pouvez sélectionner des options qui annulent le remplacement des options r
 1. Dans Administration Console, cliquez sur Services > Forms.
 1. Cochez ou désélectionnez la case Utiliser les options XCI par défaut du système. Lorsque cette option est sélectionnée, le service Forms utilise ses valeurs par défaut pour les paramètres paquets, créateur, producteur et compressObjectStream. Lorsque cette option est désélectionnée, le service Forms utilise les valeurs spécifiées dans le fichier XCI personnalisé.
 1. Cliquez sur Enregistrer.
-
