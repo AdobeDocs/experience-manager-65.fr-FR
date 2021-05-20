@@ -8,14 +8,13 @@ topic-tags: publish
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 89%
 
 ---
-
 
 # Configuration des services de stockage pour les brouillons et les envois {#configuring-storage-services-for-drafts-and-submissions}
 
@@ -41,7 +40,7 @@ Outre l’approche par défaut mentionnée ci-dessus, une autre mise en œuvre d
 
 ## Configuration des services de brouillons et envois Forms Portal  {#configuring-forms-portal-drafts-and-submissions-services}
 
-Dans la configuration de la console Web AEM ( `https://[host]:'port'/system/console/configMgr`), cliquez pour ouvrir **Configuration des brouillons et des envois du portail Forms** en mode d’édition.
+Dans la configuration de la console web d’AEM ( `https://[host]:'port'/system/console/configMgr`), cliquez pour ouvrir la **configuration des brouillons et des envois de Forms Portal** en mode d’édition.
 
 Indiquez les valeurs des propriétés en fonction de vos besoins comme décrit ci-dessous :
 
@@ -105,9 +104,8 @@ Les données sont publiées directement sur l’instance à distance configurée
 
 Outre la configuration spécifiée ci-dessus, fournissez les informations sur l’instance de traitement à distance configurée.
 
-Dans la configuration de la console Web AEM ( `https://[host]:'port'/system/console/configMgr`), cliquez pour ouvrir **AEM DS Settings Service** en mode d&#39;édition. Dans la boîte de dialogue de service des paramètres AEM DS, renseignez les informations sur l’URL du serveur de traitement, y compris le nom d’utilisateur et le mot de passe.
+Dans la configuration de la console Web d’AEM ( `https://[host]:'port'/system/console/configMgr`), cliquez pour ouvrir **AEM Service de paramètres DS** en mode d’édition. Dans la boîte de dialogue de service des paramètres AEM DS, renseignez les informations sur l’URL du serveur de traitement, y compris le nom d’utilisateur et le mot de passe.
 
 >[!NOTE]
 >
->Un exemple de mise en œuvre est également fourni pour le stockage des données utilisateur dans une base de données. Pour savoir comment configurer les services de données et de métadonnées pour stocker les données utilisateur dans une base de données externe, voir [Exemple d’intégration du composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md).
-
+>Un exemple de mise en œuvre est également fourni pour le stockage des données utilisateur dans une base de données. Pour comprendre comment configurer les services de données et de métadonnées pour stocker les données utilisateur dans une base de données externe, voir [Exemple d’intégration du composant brouillons et envois à la base de données](/help/forms/using/integrate-draft-submission-database.md).
