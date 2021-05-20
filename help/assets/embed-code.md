@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
-feature: Viewers
+feature: Visionneuses
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 99%
+source-wordcount: '372'
+ht-degree: 100%
 
 ---
-
 
 # Intégration de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse dimensionnelle dans une page web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
