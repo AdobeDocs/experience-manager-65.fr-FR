@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 96%
 
 ---
-
 
 # Prise en charge des clauses d’image pour les formulaires HTML5 {#picture-clause-support-for-html-forms}
 
@@ -28,7 +27,7 @@ HTML5 forms prend en charge les clauses d’image XFA pour afficher la valeur et
 
 >[!NOTE]
 >
->Mobile Forms ne prend actuellement pas en charge la clause de modification de l’image. En outre, les symboles de clause DateTime et Image horaire ne sont pas pris en charge.
+>Mobile Forms ne prend actuellement pas en charge la clause de modification de l’image. En outre, les symboles de clause DateTime et Time Picture ne sont pas pris en charge.
 
 ## Symboles de champ date pris en charge {#supported-date-field-symbols}
 
@@ -108,7 +107,7 @@ Le nombre **10000** est formaté sous la forme **10 000** dans les formulaires 
 
 Le nombre 1000000 est formaté sous la forme 1 000 000 dans les formulaires PDF. Toutefois, dans les formulaires HTML, ce nombre n’est pas formaté et conserve la forme 1000000.
 
-Les expressions prises en charge pour la clause d’image numérique dans **Forms HTML** sont les suivantes :
+Les expressions prises en charge pour la clause d’image numérique dans **HTML Forms** sont les suivantes :
 
 * num.integer{}
 * num.decimal{}
