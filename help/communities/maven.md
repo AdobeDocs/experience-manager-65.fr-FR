@@ -1,40 +1,39 @@
 ---
-title: Utilisation de Maven pour les communautés
-seo-title: Utilisation de Maven pour les communautés
-description: JAR de l'API Uber AEM
-seo-description: JAR de l'API Uber AEM
+title: Utilisation de Maven pour Communities
+seo-title: Utilisation de Maven pour Communities
+description: Fichier jar de l’API Uber AEM
+seo-description: Fichier jar de l’API Uber AEM
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
-translation-type: tm+mt
-source-git-commit: 5e7cc6ab82ba450b9be7c97266ec4c81b18fe3d2
+exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-
-# Utilisation de Maven pour les communautés {#using-maven-for-communities}
+# Utilisation de Maven pour Communities {#using-maven-for-communities}
 
 ## Présentation {#overview}
 
-Cette section de la documentation AEM Communities s&#39;ajoute aux éléments suivants :
+Cette section de la documentation d’AEM Communities s’ajoute aux éléments suivants :
 
-* [Création de projets AEM à l&#39;aide d&#39;Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Création de projets AEM à l’aide d’Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
-Il n&#39;y a qu&#39;un seul artefact &quot;uber&quot; qui remplace les artefacts individuels :
+Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts individuels :
 
-* AEM [JAR de l&#39;API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [Jar de l’API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->À partir de AEM 6.4, les API Communautés ne sont pas publiées explicitement. Toutes les API Communities sont maintenant incluses dans le JAR Uber lui-même.
+>À partir d’AEM version 6.4, les API Communities ne sont pas publiées explicitement. Toutes les API Communities sont désormais incluses dans le jar Uber lui-même.
 >
->Il est recommandé de rester à jour avec la dernière version des communautés.
+>Il est recommandé de rester à jour avec la version la plus récente de Communities.
 >
 >Voir la section [Dernières versions](deploy-communities.md#latest-releases) pour identifier la version la plus récente.
 
@@ -51,7 +50,7 @@ Il n&#39;y a qu&#39;un seul artefact &quot;uber&quot; qui remplace les artefacts
 
 >[!NOTE]
 >
->Voir [AEM référentiel JAR Uber](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) pour identifier le dernier artefact JAR Uber.
+>Voir [AEM référentiel Uber jar](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) pour identifier le dernier artefact Uber jar.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:
