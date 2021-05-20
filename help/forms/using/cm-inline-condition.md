@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
-feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Correspondence Management
+exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 89%
 
 ---
-
 
 # Condition intégrée et répétition dans les communications interactives et les lettres{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
@@ -39,7 +38,7 @@ Pour conditionner une phrase, un paragraphe ou une chaîne de texte dans une com
 
 Pour plus d’informations, voir Créer une règle dans du texte dans [Textes dans les communications interactives](../../forms/using/texts-interactive-communications.md).
 
-Une fois que vous avez inclus le fragment de texte dans une communication interactive et que l’agent utilise l’interface utilisateur de l’agent pour préparer une communication interactive, les données (modèle de données de formulaire) pour les destinataires sont évaluées et le texte est présenté uniquement aux destinataires aux États-Unis.
+Une fois que vous avez inclus le fragment de texte dans une communication interactive et que l’agent utilise l’interface utilisateur de l’agent pour préparer une communication interactive, les données (modèle de données de formulaire) des destinataires sont évaluées et le texte est présenté uniquement aux destinataires aux États-Unis.
 
 ### Exemple : utilisation d’une condition intégrée dans une lettre pour effectuer le rendu de l’adresse appropriée  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
@@ -59,7 +58,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    >[!NOTE]
    >
-   >Une expression conditionnelle vide ou non valide ne peut pas être enregistrée. Il doit y avoir une expression conditionnelle valide dans `${}` pour enregistrer l&#39;expression.
+   >Une expression conditionnelle vide ou non valide ne peut pas être enregistrée. Pour enregistrer l’expression, une expression conditionnelle valide doit se trouver à l’intérieur de `${}`.
 
 1. Procédez comme suit pour créer une condition pour déterminer si le texte sélectionné/soumis à une condition apparaît dans la lettre, puis appuyez sur la coche pour enregistrer l’expression :
 
@@ -73,7 +72,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    Une fois que la condition est insérée, vous pouvez placer le pointeur sur la poignée située à gauche de la condition pour afficher la condition. Vous pouvez appuyer sur la poignée pour afficher le menu contextuel de la condition, qui permet de modifier ou de supprimer la condition.
 
-   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
+   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editcondition removeconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
 1. Insérez une condition similaire en sélectionnant le texte `Ma'am`.
 
@@ -132,11 +131,11 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
 1. Enregistrez la condition/règle, puis enregistrez la répétition. La répétition conditionnelle est appliquée au contenu sélectionné.
 
-   ![5_onmouseoverconditionrule](assets/5_onmouseoverconditionrule.png)
+   ![5_onmouseovercondition rule](assets/5_onmouseoverconditionrule.png)
 
    Au passage de la souris, le fragment de document texte affiche la condition et le séparateur utilisé dans la répétition appliquée au contenu.
 
-1. Enregistrez le fragment de document texte et prévisualisez la communication interactive concernée. Selon les données du modèle de données de formulaire, la répétition appliquée aux éléments rend les détails de la transaction de la même manière que dans la prévisualisation :
+1. Enregistrez le fragment de document texte et prévisualisez la communication interactive concernée. Selon les données du modèle de données de formulaire, la répétition appliquée aux éléments effectue le rendu des détails de transaction similaires à ce qui suit dans l’aperçu :
 
    ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
@@ -183,7 +182,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   Dans le cas contraire, si vous n’avez pas besoin de rendre les informations (ici les transactions) de manière sélective, gardez la condition vide en supprimant les éléments suivants dans la boîte de dialogue : `${}`. L’enregistrement d’une expression de répétition est activé lorsque la fenêtre d’expression de répétition est vide (sans ${} lorsqu’aucune de répétition n’est nécessaire) ou lorsqu’elle contient une condition valide pour la répétition.
+   Dans le cas contraire, si vous n’avez pas besoin de rendre les informations (ici les transactions) de manière sélective, laissez la condition vide en supprimant ce qui suit dans la boîte de dialogue : `${}`. L’enregistrement d’une expression de répétition est activé lorsque la fenêtre d’expression de répétition est vide (sans ${} lorsqu’aucune de répétition n’est nécessaire) ou lorsqu’elle contient une condition valide pour la répétition.
 
 1. Sélectionnez un séparateur pour mettre en forme le texte dynamique et appuyez sur la coche pour enregistrer :
 
@@ -223,7 +222,7 @@ Voici un exemple de répétition (mise en forme en rouge) dans une condition (mi
 
 Alors que la répétition rend les transactions de carte de crédit, la condition ${DD_creditcard_nooftransactions > 0} garantit que la structure de répétition est rendue uniquement s’il existe au moins une transaction.
 
-![condition répétée](assets/repeatwitincondition.png)
+![repeatwitincondition](assets/repeatwitincondition.png)
 
 De la même façon, selon vos besoins, vous pouvez créer :
 
@@ -231,10 +230,10 @@ De la même façon, selon vos besoins, vous pouvez créer :
 * Une ou plusieurs conditions dans une répétition
 * Une combinaison de conditions et d’une répétition dans une condition ou répétition
 
-### Condition intégrée vide  {#empty-inline-condition}
+### Condition intégrée vide {#empty-inline-condition}
 
 Vous pouvez être amené à insérer des conditions intégrées et incorporer du texte et des éléments DD ultérieurement. Correspondence Management vous permet de procéder ainsi.
 
-![vide](assets/emptycondition.png)
+![emptycondition](assets/emptycondition.png)
 
 Il est toutefois recommandé, dans la mesure du possible, d’insérer le texte et les éléments DD en premier dans le module de texte avec la mise en forme prévue, telle que des puces, et d’appliquer une condition intégrée par la suite.
