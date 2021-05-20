@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 92%
 
 ---
-
 
 # Distribuer l’application AEM Forms {#distribute-aem-forms-app}
 
@@ -38,7 +37,7 @@ L’administrateur MDM peut transférer des fichiers .ipa et .apk sur le serve
 
 ## Paramètres de profil affectant l’application AEM Forms {#profile-settings-affecting-the-aem-forms-app-br}
 
-Les paramètres de Profil suivants sur votre périphérique affecteront le fonctionnement de l’application AEM Forms sur votre périphérique :
+Les paramètres de profil suivants sur votre appareil auront une incidence sur le fonctionnement de l’application AEM Forms sur votre appareil :
 
 * **Autiliser l’utilisation de l’appareil photo** dans la section **Fonctionnalité du périphérique**
 
