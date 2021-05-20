@@ -10,24 +10,23 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 74%
 
 ---
 
-
 # Contrôle des événements {#monitoring-events}
 
 Lorsque la fonctionnalité de contrôle est activée, Document Security vous permet de contrôler certains types d’événements. Les événements visibles dépendent de votre rôle :
 
-**Utilisateurs :** peut vue des événements contrôlés pour leurs documents protégés par une stratégie et pour tout documents protégé qu’ils reçoivent et utilisent.
+**Utilisateurs :** peuvent afficher les événements contrôlés pour leurs documents protégés par une stratégie et pour tous les documents protégés qu’ils reçoivent et utilisent.
 
-**Coordinateurs de jeux de stratégies :** peut vue des événements contrôlés, y compris les événements de document et de stratégie, pour les documents protégés par des stratégies issues de leurs jeux de stratégies.
+**coordinateurs de jeux de stratégies :** peut afficher les événements contrôlés, y compris les événements de document et de stratégie, pour les documents protégés par des stratégies provenant de leurs jeux de stratégies.
 
-**Administrateurs :** peut vue les événements contrôlés qui sont liés à tous les documents et utilisateurs protégés par une stratégie. Les administrateurs peuvent également suivre d’autres types d’événements, tels que les événements d’utilisateur, de document, de stratégie et de système.
+**Administrateurs :** peut afficher les événements contrôlés qui sont liés à tous les documents et utilisateurs protégés par une stratégie. Les administrateurs peuvent également suivre d’autres types d’événements, tels que les événements d’utilisateur, de document, de stratégie et de système.
 
 >[!NOTE]
 >
@@ -59,25 +58,25 @@ Vous pouvez naviguer dans la liste des événements et afficher des descriptions
 
 Vous pouvez rechercher des événements dans la page Evénements en combinant des critères de recherche et des dates. Les événements pouvant faire l’objet d’une recherche dépendent de votre rôle :
 
-**Utilisateurs :** peut vue des événements contrôlés pour leurs documents protégés par une stratégie et pour tout documents protégé qu’ils reçoivent et utilisent. Les options de recherche disponibles sont les suivantes :
+**Utilisateurs :** peuvent afficher les événements contrôlés pour leurs documents protégés par une stratégie et pour tous les documents protégés qu’ils reçoivent et utilisent. Les options de recherche disponibles sont les suivantes :
 
-**Événements me concernant :** les utilisateurs peuvent trouver des événements pour tout document protégé par une stratégie qu’ils ont créé ou reçu. Par exemple, si un utilisateur ouvre, affiche ou imprime un document qui était protégé par une autre personne, l’utilisateur ne voit que les événements concernant ce document.
+**Événements me concernant :**  les utilisateurs peuvent rechercher des événements pour tout document protégé par une stratégie qu’ils ont créé ou reçu. Par exemple, si un utilisateur ouvre, affiche ou imprime un document qui était protégé par une autre personne, l’utilisateur ne voit que les événements concernant ce document.
 
-**Événements liés à mes documents :** les utilisateurs peuvent trouver tous les événements liés à leurs propres documents protégés par une stratégie. Les utilisateurs voient les événements générés par chaque personne ayant manipulé leurs documents.
+**Événements liés à mes documents :** les utilisateurs peuvent trouver tous les événements relatifs à leurs propres documents protégés par une stratégie. Les utilisateurs voient les événements générés par chaque personne ayant manipulé leurs documents.
 
-**Coordinateurs de jeux de stratégies :** peut vue des événements contrôlés, y compris les événements de document et de stratégie, pour les documents protégés par des stratégies issues de leurs jeux de stratégies. Voici les options de disponibles :
+**coordinateurs de jeux de stratégies :** peut afficher les événements contrôlés, y compris les événements de document et de stratégie, pour les documents protégés par des stratégies provenant de leurs jeux de stratégies. Voici les options de disponibles :
 
-**Événements de document où je suis coordinateur de jeux de stratégies : les coordinateurs de jeux de stratégies qui disposent de l’autorisation de événement de vues peuvent trouver des événements liés aux documents protégés par des stratégies issues de leurs jeux de stratégies.** 
+**Evénements de document pour lesquels je suis coordinateur de jeux de stratégies :**  les coordinateurs de jeux de stratégies qui disposent de l’autorisation d’affichage des événements peuvent trouver les événements liés aux documents protégés par des stratégies issues de leurs jeux de stratégies.
 
-**Événements de stratégie pour lesquels je suis coordinateur de jeux de stratégies : les coordinateurs de jeux de stratégies qui disposent de l’autorisation vue événements peuvent trouver des événements liés aux stratégies issues de leurs jeux de stratégies.** 
+**Evénements de stratégie pour lesquels je suis coordinateur de jeux de stratégies :**  les coordinateurs de jeux de stratégies qui disposent de l’autorisation d’affichage des événements peuvent trouver les événements liés aux stratégies de leurs jeux de stratégies.
 
-**Administrateurs :** peut vue les événements contrôlés qui sont liés à tous les documents et utilisateurs protégés par une stratégie. Les administrateurs peuvent également assurer le suivi d’autres types. De plus, les administrateurs peuvent subdiviser les recherches d’événements par type d’utilisateur :
+**Administrateurs :** peut afficher les événements contrôlés qui sont liés à tous les documents et utilisateurs protégés par une stratégie. Les administrateurs peuvent également assurer le suivi d’autres types. De plus, les administrateurs peuvent subdiviser les recherches d’événements par type d’utilisateur :
 
-**Utilisateurs connus :** les utilisateurs se trouvent dans les répertoires source ou sont enregistrés en tant qu’utilisateurs externes.
+**Utilisateurs connus :** les utilisateurs se trouvent dans les répertoires sources ou sont enregistrés en tant qu’utilisateurs externes.
 
-**Utilisateurs anonymes :** Utilisateurs inconnus qui accèdent à un document protégé par une stratégie autorisant l’accès anonyme.
+**Utilisateurs anonymes :** utilisateurs inconnus qui accèdent à un document protégé par une stratégie autorisant un accès anonyme.
 
-**Utilisateurs système : événements lancés par** le serveur, tels qu’une synchronisation d’annuaires.
+**Utilisateurs système :** événements déclenchés par le serveur, tels qu’une synchronisation d’annuaire.
 
 1. Dans la page Document Security, cliquez sur Événements.
 1. Dans la liste Rechercher, sélectionnez les critères de recherche à utiliser. Selon l’élément sélectionné dans la liste Rechercher, une seconde liste affiche des critères de recherche supplémentaires. Le cas échéant, saisissez votre critère de recherche dans la zone de texte.
@@ -109,4 +108,3 @@ Pour faciliter la recherche d’événements, triez la liste par en-tête de col
 
 1. Cliquez sur l’en-tête de colonne approprié.
 1. Pour modifier l’ordre de tri, cliquez de nouveau sur l’en-tête de colonne.
-
