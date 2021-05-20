@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 58%
 
 ---
-
 
 # Personnalisation du thème {#theme-customization}
 
@@ -28,7 +27,7 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 
 ## Étapes {#steps}
 
-1. Ouvrez le projet.
+1. Ouvrez votre projet.
 
    * Pour iOS, ouvrez `Capture.xcodeproj` dans Xcode.
    * Pour Android, ouvrez le projet Android dans Eclipse.
@@ -36,9 +35,9 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 
 1. Naviguez jusqu’au dossier des modèles.
 
-   * Dans Xcode, accédez au dossier **Capture > www > wsmobile > js > runtime > templates**.
-   * Dans Eclipse, accédez au dossier **assets > www > wsmobile > js > runtime > templates**.
-   * Dans Visual Studio, accédez au dossier **MWSWindows > www > wsmobile > js > runtime > templates**.
+   * Dans Xcode, accédez au dossier **Capture > www > wsmobile > js > runtime > modèles** .
+   * Dans Eclipse, accédez au dossier **ressources > www > wsmobile > js > runtime > modèles** .
+   * Dans Visual Studio, accédez au dossier **MWSWindows > www > wsmobile > js > runtime > templates** .
 
 1. Ouvrez le fichier `template.html` pour le modifier.
 1. Recherchez la chaîne suivante :
