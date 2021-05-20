@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d739806c-ce72-40fd-b304-3262a0988d96
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 94%
 
 ---
-
 
 # Configuration de la sortie de formulaire{#configuring-form-output}
 
@@ -27,7 +26,7 @@ ht-degree: 94%
 
    **HTML complet :** pour effectuer le rendu du formulaire avec des balises HTML complètes (page HTML complète). Il s’agit de la valeur par défaut.
 
-   **Corps du formulaire :** pour effectuer le rendu du formulaire sous  `<BODY>` des balises (page HTML non complète).
+   **Corps du formulaire :** pour effectuer le rendu du formulaire dans  `<BODY>` des balises (page HTML non complète).
 
 1. Cliquez sur Enregistrer.
 
@@ -56,4 +55,3 @@ Pour activer cette fonction, effectuez les étapes suivantes :
    >[!NOTE]
    >
    >*pour désactiver cette fonction, vous pouvez soit supprimer la variable JavaScript, soit lui donner la valeur 0.*
-
