@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 97%
 
 ---
-
 
 # Configuration des files d’attente partagées{#configuring-shared-queues}
 
@@ -85,4 +84,3 @@ Une fois affectées, ces tâches peuvent être exécutées par l’utilisateur �
 1. Sous l’onglet Gérer l’accès par un utilisateur, recherchez et sélectionnez l’utilisateur dont vous souhaitez gérer la file d’attente.
 1. Le volet inférieur droit affiche la liste des files d’attente d’utilisateur affectées à l’utilisateur sélectionné. Sélectionnez la file d’attente d’utilisateur et cliquez sur Révoquer.
 1. Cliquez sur Enregistrer pour terminer l’opération.
-
