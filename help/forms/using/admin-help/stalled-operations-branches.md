@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 89%
 
 ---
-
 
 # Utilisation d’opérations et de branches bloquées {#working-with-stalled-operations-and-branches}
 
@@ -29,15 +28,15 @@ Quand un processus bloque, l’exécution de toutes les opérations suivantes es
 
 Pour chaque élément bloqué, la liste présente les informations suivantes :
 
-**Nom de l&#39;opération ou Nom de la branche : nom** de l&#39;opération ou de la branche.
+**Nom de l’opération ou nom de la branche :** nom de l’opération ou de la branche.
 
-**Statut :** Toujours BLOQUE pour les éléments bloqués.
+**État :** toujours bloqué pour les éléments bloqués.
 
 **Erreur :** brève description du problème.
 
-**ID de processus : entier positif attribué par** le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
+**ID de processus :** entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**Nom du processus - Version : nom** du processus affecté dans Workbench.
+**Nom du processus - Version :** nom du processus affecté dans Workbench.
 
 **Date bloquée :** date et heure auxquelles l’opération ou la branche est bloquée.
 
