@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: adff5339-e026-4924-a401-f249f37fc6e6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 96%
 
 ---
-
 
 # Utilisation d’un formulaire {#working-with-a-form}
 
@@ -27,7 +26,7 @@ Pour synchroniser votre formulaire dans l’application AEM Forms :
 
 1. Dans l’instance d’auteur, sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**. 
 1. Dans la page des propriétés, cliquez sur **Avancé.** 
-1. Sous Avancé, activez l&#39;option : **Synchroniser avec l’application AEM Forms**, puis appuyez sur **Enregistrer**.
+1. Sous Avancé, activez l’option : **Synchroniser avec l’application AEM Forms**, puis appuyez sur **Enregistrer**.
 
 Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires et appuyez sur **Synchroniser avec l’application AEM Forms**. Lorsque le formulaire est publié, l’application AEM Forms peut se connecter au serveur de publication et récupérer les formulaires.
 
