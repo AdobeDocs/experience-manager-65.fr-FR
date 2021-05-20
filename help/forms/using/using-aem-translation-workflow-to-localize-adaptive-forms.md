@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 84%
+ht-degree: 92%
 
 ---
-
 
 # Utilisation du processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
@@ -28,29 +27,29 @@ Cet article décrit le processus d’utilisation du processus de traduction AEM 
 
 Le service de traduction automatique traduit directement le contenu de vos formulaires adaptatifs et document d’enregistrement. AEM Forms est préconfiguré pour utiliser une version d’évaluation de Microsoft Translator pour la traduction automatique. Procédez comme suit pour activer la traduction automatique pour les formulaires adaptatifs et le document d’enregistrement :
 
-1. Sur l’interface utilisateur AEM Forms, sélectionnez un formulaire, puis appuyez sur l’option **Ajouter un dictionnaire**.
+1. Dans l’interface utilisateur AEM Forms, sélectionnez un formulaire, puis appuyez sur l’option **Ajouter un dictionnaire**.
 1. Dans l’écran **Ajouter un dictionnaire au projet de traduction**, sélectionnez l’option **Créer un nouveau projet de traduction** ou **Ajouter à un projet de traduction existant**.
-1. Dans le champ **Titre du projet**, indiquez le titre. Par exemple, `Government Reference Site - German locale.`
-1. Dans le champ **Langues de la Cible**, spécifiez un paramètre régional (par exemple, `German(de)`), puis cliquez sur **Terminé**. Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**.
+1. Dans le champ **Titre du projet**, indiquez le titre, par exemple `Government Reference Site - German locale.`
+1. Dans le champ **Langues cibles**, spécifiez un paramètre régional (par exemple `German(de)`), puis cliquez sur **Terminé**. Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**.
 1. Dans la boîte de dialogue Dictionnaire ajouté, cliquez sur **Ouvrir des projets**. Dans l’écran Projets, ouvrez le nouveau projet.
 1. Cliquez sur les **points de suspension** situés au bas du volet **Résumé de traduction**. L’écran Résumé de traduction apparaît.
-1. Cliquez sur l’icône **Modifier** en haut de l’écran **Résumé de traduction**. Ouvrez l’onglet **Traduction** et sélectionnez Traduction automatique sur l’écran **Méthode de traduction.** Sélectionnez le **fournisseur de traduction** approprié et la **configuration de cloud**. Cliquez sur l’icône **Terminé** en haut de l’écran.
-1. Dans la mosaïque **Tâche de traduction**, cliquez sur l’icône ![flèche de téléchargement ](assets/aem62forms_downarrow.png) d’aem62forms, puis sur **Début**. Le statut du volet passe à Brouillon. À la fin de la traduction, le statut passe à **Prêt pour la révision**. Actualisez la page après quelques minutes et vérifiez l’état.
-1. Une fois l’état défini sur **Prêt pour révision** sur la mosaïque **Tâche de traduction**, ouvrez le formulaire dans une fenêtre de navigateur. Une version localisée du formulaire s’affiche.
+1. Cliquez sur l’icône **Modifier** en haut de l’écran **Résumé de traduction**. Ouvrez l’onglet **Traduction** et sélectionnez Traduction automatique sur l’écran **Méthode de traduction**. Sélectionnez le **fournisseur de traduction** approprié et la **configuration de cloud**. Cliquez sur l’icône **Terminé** en haut de l’écran.
+1. Dans le volet **Tâche de traduction**, cliquez sur l’icône ![aem62forms_downarrow](assets/aem62forms_downarrow.png), puis sur **Démarrer**. Le statut du volet passe à Brouillon. À la fin de la traduction, le statut passe à **Prêt pour la révision**. Actualisez la page après quelques minutes et vérifiez l’état.
+1. Après le changement d’état en **Prêt pour la révision**, dans la vignette **Tâche de traduction**, ouvrez le formulaire dans une fenêtre de navigateur. Une version localisée du formulaire s’affiche.
 
    >[!NOTE]
    >
    >* Avant d’ouvrir la version localisée du formulaire dans la fenêtre du navigateur, assurez-vous que les paramètres régionaux du navigateur permettent d’afficher le formulaire. Par exemple, si le formulaire est traduit en Allemand(de), définissez les paramètres régionaux du navigateur sur Allemand(de).
-   >* Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). Par exemple, hébreu.
+   >* Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). comme l’hébreu.
 
 
    Avec le formulaire adaptatif, le document d’enregistrement généré automatiquement est également localisé.
 
-   Pour plus d&#39;informations sur les paramètres et la configuration du Document d&#39;enregistrement, voir :
+   Pour plus d’informations sur les paramètres et la configuration du document d’enregistrement, voir :
 
-   [Configuration du modèle de document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+[Configuration du modèle de document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
 
-   [Paramètres des documents d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+[Paramètres d’un document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Personnalisez les informations de marque du document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) et assurez-vous que les paramètres régionaux du navigateur correspondent à la langue dans laquelle vous avez localisé le formulaire adaptatif à l’aide de la langue de la machine. Les paramètres régionaux du navigateur permettent de localiser les informations de marque dans le document d’enregistrement.
 1. Pour afficher le document d’enregistrement localisé, appuyez sur Générer l’aperçu. Le document d’enregistrement PDF est généré et ouvert dans un nouvel onglet de votre navigateur.
@@ -77,9 +76,8 @@ Effectuez les étapes suivantes pour localiser un formulaire et son document d�
 
 >[!NOTE]
 >
->* Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). Par exemple, hébreu.
+>* Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). comme l’hébreu.
 
 >
-
 
 
