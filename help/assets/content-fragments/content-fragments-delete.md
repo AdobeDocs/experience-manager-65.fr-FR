@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
 docset: aem65
-feature: Content Fragments
+feature: Fragments de contenu
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '457'
 ht-degree: 91%
 
 ---
-
 
 # Fragments de contenu – considérations sur la suppression{#content-fragments-delete-considerations}
 
@@ -89,11 +88,10 @@ Les conditions requises pour autoriser un utilisateur et/ou un groupe spécifiqu
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` et `jcr:removeChildNodes`, `jcr:removeNode`
 
-Ces privilèges `remove` doivent être [administrés à l&#39;aide de Listes de Contrôle d&#39;accès, dans CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Ces privilèges `remove` doivent être [administrés à l’aide des listes de contrôle d’accès, dans CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Les privilèges `add` et `modify` peuvent également être administrés en CRXDE Lite ou à l&#39;aide de la console User Management.
+Les privilèges `add` et `modify` peuvent également être gérés en CRXDE Lite ou à l’aide de la console de gestion des utilisateurs.
 
 Par exemple, la définition des privilèges `remove` pour un groupe `content-authors-no-delete` :
 
 ![cf-delete-03](assets/cf-delete-03.png)
-
