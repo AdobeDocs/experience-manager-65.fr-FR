@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
-translation-type: tm+mt
-source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
+exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 64%
 
 ---
-
 
 # Résolution des problèmes liés à l’application AEM Forms {#troubleshoot-aem-forms-app}
 
@@ -34,9 +33,9 @@ Les sections de cet article incluent :
 
 L’application AEM Forms pour iOS configurée pour se synchroniser avec AEM Forms sur OSGi ne prend en charge que les pièces jointes au niveau du champ. Toutes les pièces jointes doivent avoir des noms uniques. Si plusieurs pièces jointes ont un nom identique, une seule pièce jointe est conservée et toutes les autres portant le même nom sont perdues. Suivez les étapes ci-après pour empêcher les utilisateurs des périphériques iOS de subir une perte de données :
 
-1. Sur le serveur connecté, accédez à **Adobe Experience Manager > Tools > Operations > Web Console**.
-1. Recherchez et cliquez sur **[!UICONTROL Formulaire adaptatif et Configuration du Canal Web de communication interactive]**.
-1. Dans la boîte de dialogue [!UICONTROL Configuration du Canal Web de formulaire adaptatif et de communication interactive], activez **Rendre les noms de fichier uniques**.
+1. Sur le serveur connecté, accédez à **Adobe Experience Manager > Outils > Opérations > Console web**.
+1. Recherchez et cliquez sur **[!UICONTROL Configuration de canal web du formulaire adaptatif et de la communication interactive]**.
+1. Dans la boîte de dialogue [!UICONTROL Configuration du canal web du formulaire adaptatif et de la communication interactive], activez **Rendre les noms de fichier uniques**.
 
    Si le paramètre **Rendre les noms de fichier uniques** est désactivé, les utilisateurs subissent une perte de données s’ils tentent d’envoyer des formulaires adaptatifs avec plusieurs pièces jointes.
 
@@ -44,16 +43,16 @@ L’application AEM Forms pour iOS configurée pour se synchroniser avec AEM For
 
 ## Les brouillons de formulaires HTML5 envoyés par les utilisateurs de l’espace de travail ne sont pas visibles sur le portail {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-Pour les formulaires HTML5 activés dans l’application AEM Forms avec le Profil de rendu HTML **Enregistrer en tant que brouillon**, les brouillons enregistrés ne sont pas visibles pour les utilisateurs de l’espace de travail. Pour vue des brouillons enregistrés de formulaires HTML5 envoyés par les utilisateurs de l’espace de travail sur le portail, effectuez les étapes suivantes :
+Pour les formulaires HTML5 activés dans l’application AEM Forms avec le profil de rendu HTML **Enregistrer en tant que brouillon**, les brouillons enregistrés ne sont pas visibles par les utilisateurs de l’espace de travail. Pour afficher les brouillons enregistrés des formulaires HTML5 envoyés par les utilisateurs de l’espace de travail sur le portail, procédez comme suit :
 
 1. Ouvrez CRXDE et connectez-vous avec les informations d’identification de l’administrateur.
 
-   URL: `https://<server>:<port>/lc/crx/de/index.jsp`
+   URL : `https://<server>:<port>/lc/crx/de/index.jsp`
 
 1. Dans le chemin d’accès racine CRXDE, dans Liste de contrôle d’accès, sous Contrôle d’accès, cliquez sur **+**.
 1. Dans la boîte de dialogue **Ajouter une nouvelle entrée**, cliquez sur le bouton de recherche de groupe du champ Entité principale.
 1. Dans le champ Nom de la boîte de dialogue Sélectionner une entité principale, saisissez `PERM_WORKSPACE_USER`, puis cliquez sur **Rechercher**.
-1. Sélectionnez le groupe `PERM_WORKSPACE_USER` dans la boîte de dialogue Sélectionner une entité de sécurité et cliquez sur **OK**.
+1. Sélectionnez le groupe `PERM_WORKSPACE_USER` dans la boîte de dialogue Sélectionner une entité de sécurité, puis cliquez sur **OK**.
 1. Dans la boîte de dialogue Ajouter une entrée, le groupe `PERM_WORKSPACE_USER` est sélectionné dans le champ Entité principale.
 
    Activez les privilèges `jcr:read` pour le groupe d’utilisateurs.
@@ -83,27 +82,26 @@ Modifiez le chemin d’accès du formulaire et de ses ressources pour réduire l
 
 ## Version de Gradle non prise en charge  {#unsupported-version-of-gradle}
 
-**Message d’erreur :** le projet utilise une version non prise en charge de Gradle.
+**Message d’erreur :** le projet utilise une version de Gradle non prise en charge.
 
 Le message d’erreur s’affiche lorsque vous créez l’application AEM Forms dans Android Studio. Le problème se produit en raison d’une version non prise en charge de Gradle prise en charge sur le système.
 
-**Résolution :** Cliquez sur  **Corriger le wrapper Gradle et réimportez le** projet pour résoudre le problème.
+**Résolution :** cliquez sur  **Fix Gradle wrapper (wrapper de fusion) et réimportez** le projet pour résoudre le problème.
 
 ![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
 ## Problèmes de compatibilité des modules externes Gradle et Android Gradle {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
-**Message d’erreur :** les versions du module Android Gradle et Gradle ne sont pas compatibles.
+**Message d’erreur :** les versions du module externe Gradle Android et Gradle ne sont pas compatibles.
 
-Le message d’erreur s’affiche lorsque vous sélectionnez l’option **Build APK** dans le menu **Build** de l’interface utilisateur d’Android Studio.
+Le message d’erreur s’affiche lorsque vous sélectionnez l’option **Créer APK** dans le menu **Créer** de l’interface utilisateur d’Android Studio.
 
-![gradle_plugin_compatibilité](assets/gradle_plugin_compatibility.png)
+![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
 
-**Résolution :** Ouvrez  **Gradle Scripts** >  **gradle-wrapper.** properties et modifiez la propriété  **** distributionUrlproperty.
+**Résolution :** Ouvrez  **Gradle Scripts**  >  **gradle-wrapper.** properties et modifiez la propriété  **** distributionUrlproperty.
 
-Par exemple, la console Android Studio recommande de mettre à niveau la version Gradle vers 3.5. Modifiez la version dans le fichier **distributionUrl** de **gradle-wrapper.properties**.
+Par exemple, la console Android Studio recommande de rétrograder la version de Gradle vers la version 3.5. Modifiez la version dans le fichier **distributionUrl** de **gradle-wrapper.properties**.
 
 Sélectionnez à nouveau **Build** > **Build APK** pour résoudre l’erreur et générer le fichier .apk.
 
 ![gradle_wrapper_properties](assets/gradle_wrapper_properties.png)
-
