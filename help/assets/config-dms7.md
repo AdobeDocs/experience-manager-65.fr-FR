@@ -9,7 +9,6 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration, mode Scene7
-translation-type: tm+mt
 source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '6154'
@@ -25,35 +24,34 @@ Si vous utilisez Adobe Experience Manager configuré pour différents environnem
 
 Le schéma d’architecture suivant décrit le fonctionnement de Dynamic Media – mode Scene7.
 
-Grâce à la nouvelle architecture, Experience Manager est responsable des ressources d’origine Principale et des synchronisations avec Dynamic Media pour le traitement et la publication des ressources :
+Avec la nouvelle architecture, Experience Manager est responsable des ressources source Principales et des synchronisations avec Dynamic Media pour le traitement et la publication des ressources :
 
-1. Lorsque le fichier source Principal est téléchargé vers le Experience Manager, il est répliqué vers Dynamic Media. À ce stade, Dynamic Media gère l’intégralité du traitement des ressources et de la génération du rendu, comme le codage vidéo et les variantes dynamiques d’une image. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
-1. Une fois les rendus générés, le Experience Manager peut accéder en toute sécurité et prévisualisation aux rendus Dynamic Media distants (aucun binaire n’est renvoyé à l’instance Experience Manager).
-1. Une fois que le contenu est prêt à être publié et approuvé, il déclenche le service Dynamic Media pour diffuser le contenu vers les serveurs de diffusion et le mettre en cache sur le réseau CDN (Content Diffusion Network).
+1. Lorsque la ressource source Principale est téléchargée vers Experience Manager, elle est répliquée vers Dynamic Media. À ce stade, Dynamic Media gère l’intégralité du traitement des ressources et de la génération du rendu, comme le codage vidéo et les variantes dynamiques d’une image. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. Une fois les rendus générés, Experience Manager peut accéder en toute sécurité aux rendus Dynamic Media distants et les prévisualiser (aucune donnée binaire n’est renvoyée à l’instance de Experience Manager).
+1. Une fois que le contenu est prêt à être publié et approuvé, il déclenche le service Dynamic Media pour diffuser du contenu vers les serveurs de diffusion et mettre en cache le contenu sur le réseau de diffusion de contenu (CDN).
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
 >[!NOTE]
 >
->La liste de fonctionnalités suivante nécessite l’utilisation du CDN prêt à l’emploi fourni avec Adobe Experience Manager - Dynamic Media. Les autres réseaux CDN personnalisés ne sont pas pris en charge avec ces fonctionnalités.
+>La liste suivante de fonctionnalités nécessite l’utilisation du réseau de diffusion de contenu prêt à l’emploi fourni avec Adobe Experience Manager - Dynamic Media. Aucun autre réseau de diffusion de contenu personnalisé n’est pris en charge avec ces fonctionnalités.
 >
 >* [Imagerie dynamique](/help/assets/imaging-faq.md)
->* [Invalidation du cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
->* [Protection des liens dynamiques](/help/assets/hotlink-protection.md)
->* [Diffusion de contenu HTTP/2](/help/assets/http2.md)
->* Redirection d’URL au niveau du CDN
->* Akamai ChinaCDN (pour une diffusion optimale en Chine)
+* [Invalidation du cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+* [Protection par lien dynamique](/help/assets/hotlink-protection.md)
+* [Diffusion de contenu HTTP/2](/help/assets/http2.md)
+* Redirection d’URL au niveau du CDN
+* Akamai ChinaCDN (pour une diffusion optimale en Chine)
 
 
 ## Activation de Dynamic Media en mode Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Par défaut, ce module complémentaire est désactivé. ](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) Pour tirer parti des fonctionnalités de Dynamic Media, vous devez l&#39;activer.
+[Par défaut, ce module complémentaire est désactivé. ](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) Pour tirer parti des fonctionnalités de Dynamic Media, vous devez l’activer.
 
 >[!NOTE]
->
->Dynamic Media - Le mode Scene7 est réservé à l’instance d’auteur Experience Manager. Par conséquent, vous devez configurer `runmode=dynamicmedia_scene7` sur l’instance d’auteur Experience Manager, *et non* l’instance de publication Experience Manager.
+Dynamic Media : le mode Scene7 est réservé à l’instance d’auteur du Experience Manager. Par conséquent, vous devez configurer `runmode=dynamicmedia_scene7` sur l’instance d’auteur du Experience Manager, *et non* l’instance de publication du Experience Manager.
 
-Pour activer Dynamic Media, vous devez début le Experience Manager à l&#39;aide du mode d&#39;exécution `dynamicmedia_scene7` à partir de la ligne de commande en saisissant ce qui suit dans une fenêtre de terminal (l&#39;exemple de port utilisé est 4502) :
+Pour activer Dynamic Media, vous devez démarrer Experience Manager à l’aide du mode d’exécution `dynamicmedia_scene7` à partir de la ligne de commande en saisissant ce qui suit dans une fenêtre de terminal (l’exemple de port utilisé est 4502) :
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -61,85 +59,84 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## (Facultatif) Migration des paramètres prédéfinis et des configurations Dynamic Media de 6.3 à 6.5 sans interruption {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-La mise à niveau de Experience Manager Dynamic Media de la version 6.3 à la version 6.4 ou 6.5 permet désormais de ne pas déployer de périodes d’inactivité. Pour migrer tous vos paramètres prédéfinis et configurations de `/etc` vers `/conf` en CRXDE Lite, veillez à exécuter la commande curl suivante.
+La mise à niveau de Experience Manager Dynamic Media de la version 6.3 vers la version 6.4 ou 6.5 inclut désormais la possibilité de réaliser des déploiements sans interruption. Pour migrer tous vos paramètres prédéfinis et configurations de `/etc` vers `/conf` en CRXDE Lite, veillez à exécuter la commande curl suivante.
 
 >[!NOTE]
->
->Si vous exécutez votre instance de Experience Manager en mode de compatibilité (c&#39;est-à-dire si le package de compatibilité est installé), vous n&#39;avez pas besoin d&#39;exécuter ces commandes.
+Si vous exécutez votre instance de Experience Manager en mode de compatibilité (c’est-à-dire si le package de compatibilité est installé), vous n’avez pas besoin d’exécuter ces commandes.
 
-Pour toutes les mises à niveau, avec ou sans le package de compatibilité, vous pouvez copier les paramètres prédéfinis de visionneuse prêts à l’emploi par défaut fournis à l’origine avec Dynamic Media en exécutant la commande suivante de l’option d’activation de Linux® :
+Pour toutes les mises à niveau, avec ou sans le module de compatibilité, vous pouvez copier les paramètres prédéfinis de visionneuse par défaut fournis avec Dynamic Media en exécutant la commande curl Linux® suivante :
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-Pour migrer les paramètres prédéfinis et les configurations de visionneuse personnalisés que vous avez créés à partir de `/etc` vers `/conf`, exécutez la commande d’activation de Linux® suivante :
+Pour migrer les paramètres prédéfinis et configurations de visionneuse personnalisés que vous avez créés de `/etc` vers `/conf`, exécutez la commande curl Linux® suivante :
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Installation de Feature Pack 18912 pour la migration des ressources en vrac {#installing-feature-pack-for-bulk-asset-migration}
+## Installation du Feature Pack 18912 pour la migration en masse de ressources {#installing-feature-pack-for-bulk-asset-migration}
 
-L&#39;installation de Feature Pack 18912 est *optionnelle*.
+L’installation du Feature Pack 18912 est *optionnel*.
 
-Feature Pack 18912 vous permet soit d’assimiler des fichiers en vrac par FTP, soit de migrer des fichiers du mode Dynamic Media - Hybrid ou de Dynamic Media Classic vers le mode Dynamic Media - Scene7 sur Experience Manager. Il est disponible à partir de [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
+Le Feature Pack 18912 vous permet soit d’ingérer des ressources par FTP en masse, soit de migrer des ressources de Dynamic Media en mode hybride ou de Dynamic Media Classic vers Dynamic Media en mode Scene7 sur Experience Manager. Il est disponible à partir de [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
 
-Voir [Installation de Feature Pack 18912 pour la migration des ressources en vrac](/help/assets/bulk-ingest-migrate.md) pour plus d’informations.
+Pour plus d’informations, voir [Installation du Feature Pack 18912 pour la migration des ressources en masse](/help/assets/bulk-ingest-migrate.md) .
 
 ## Création d’une configuration Dynamic Media en Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Avant de configurer Dynamic Media**  : après avoir reçu votre courrier électronique de mise en service avec les informations d’identification Dynamic Media, vous devez ouvrir l’application [ de bureau ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started)Dynamic Media Classic, puis vous connecter à votre compte pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que Dynamic Media Cloud Service soit configuré avec les informations d’identification correctes.
+**Avant de configurer Dynamic Media**  : une fois que vous avez reçu l’e-mail de mise en service avec les informations d’identification Dynamic Media, vous devez ouvrir l’ [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis vous connecter à votre compte pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que Dynamic Media Cloud Service soit configuré avec les informations d’identification correctes.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Pour créer une configuration Dynamic Media en Cloud Services**
+**Création d’une configuration Dynamic Media en Cloud Services**
 
-1. Dans Experience Manager, appuyez sur le logo du Experience Manager pour accéder à la console de navigation globale et appuyez sur l’icône Outils, puis appuyez sur **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
+1. Dans Experience Manager, appuyez sur le logo du Experience Manager pour accéder à la console de navigation globale, puis appuyez sur l’icône Outils, puis sur **[!UICONTROL Cloud Services > Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, appuyez sur **[!UICONTROL global]** (ne sélectionnez/n’appuyez pas sur l’icône de dossier située à gauche de **[!UICONTROL global]**), puis sur **[!UICONTROL Créer]**.
-1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans le courrier électronique de mise en service. Contactez le service à la clientèle d’Adobe si vous n’avez pas reçu le courrier électronique.
+1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Contactez l’assistance clientèle d’Adobe si vous n’avez pas reçu l’e-mail.
 
    Appuyez sur **[!UICONTROL Se connecter à Dynamic Media]**.
 
    >[!NOTE]
-   Après avoir reçu votre courrier électronique de mise en service avec les informations d’identification Dynamic Media, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important de mettre à jour le mot de passe afin que le Cloud Service Dynamic Media soit configuré avec les informations d’identification appropriées.
+   Une fois que vous avez reçu l’e-mail de mise en service avec les informations d’identification Dynamic Media, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à votre compte pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que le Cloud Service Dynamic Media soit configuré avec les informations d’identification correctes.
 
 1. Lorsque la connexion est établie, définissez les options suivantes. Les en-têtes avec un astérisque (*) sont obligatoires :
 
-   * **[!UICONTROL Société]** : nom du compte Dynamic Media. Vous avez plusieurs comptes Dynamic Media. Par exemple, vous pouvez avoir différentes sous-marques, divisions, environnements de production ou de test.
+   * **[!UICONTROL Société]** : nom du compte Dynamic Media. Vous disposez de plusieurs comptes Dynamic Media. Par exemple, vous pouvez avoir différentes sous-marques, divisions, environnements d’évaluation ou environnements de production.
 
    * **[!UICONTROL Chemin d’accès au dossier racine de l’entreprise]**
 
    * **[!UICONTROL Publication de ressources]** : vous pouvez choisir parmi les trois options suivantes :
       * **[!UICONTROL Immédiatement]** signifie que lorsque les ressources sont chargées, le système intègre les ressources et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.
-      * **[!UICONTROL Lors de]** l’activation, cela signifie que vous devez publier explicitement le fichier avant qu’un lien URL/incorporé ne soit fourni.<br><!-- CQDOC-17478, Added March 9, 2021-->À partir de la version 6.5.8 de Experience Manager, l’instance de publication de Experience Manager reflète des valeurs de métadonnées Dynamic Media précises, telles que  `dam:scene7Domain` et  `dam:scene7FileStatus` en mode  **[!UICONTROL Lors de l’]** activation, publication uniquement. Pour activer cette fonctionnalité, installez le Service Pack 8, puis redémarrez le Experience Manager. Accédez au Gestionnaire de configuration Sling. Recherchez la configuration de `Scene7ActivationJobConsumer Component` ou créez-en une). Cochez la case **[!UICONTROL Répliquer les métadonnées après la publication Dynamic Media]**, puis appuyez sur **[!UICONTROL Enregistrer]**.
+      * **[!UICONTROL Lors de]** l’activation : signifie que vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.<br><!-- CQDOC-17478, Added March 9, 2021-->À partir de la version 6.5.8 de Experience Manager, l’instance de publication de Experience Manager reflète des valeurs de métadonnées Dynamic Media précises, telles que  `dam:scene7Domain` et  `dam:scene7FileStatus` dans le mode de publication  **[!UICONTROL Lors de l’]** activation uniquement. Pour activer cette fonctionnalité, installez le Service Pack 8, puis redémarrez Experience Manager. Accédez au Gestionnaire de configuration Sling. Recherchez la configuration pour `Scene7ActivationJobConsumer Component` ou créez-en une). Cochez la case **[!UICONTROL Répliquer les métadonnées après la publication de Dynamic Media]**, puis appuyez sur **[!UICONTROL Enregistrer]**.
 
-         ![Répliquer les métadonnées après la publication Dynamic Media, case à cocher](assets-dm/replicate-metadata-setting.png)
+         ![Case Répliquer les métadonnées après publication Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **** Publier de manière sélectiveCette option vous permet de contrôler les dossiers publiés dans Dynamic Media. Il vous permet d’utiliser des fonctionnalités telles que la recadrage dynamique ou les rendus dynamiques, ou de déterminer quels dossiers sont publiés exclusivement en Experience Manager pour la prévisualisation. Ces mêmes actifs sont *non* publiés à Dynamic Media pour diffusion dans le domaine public.<br>Vous pouvez définir cette option ici dans la  **[!UICONTROL Dynamic Media Cloud]** Configurationou, si vous préférez, vous pouvez choisir de la définir au niveau du dossier, dans les  **[!UICONTROL Propriétés]** d’un dossier.<br>Voir [Utilisation de la publication sélective dans Dynamic Media.](/help/assets/selective-publishing.md)<br>Si vous modifiez ultérieurement cette configuration, ou si vous la modifiez ultérieurement au niveau du dossier, ces modifications n’affectent que les nouveaux fichiers que vous téléchargez à partir de ce moment. L’état de publication des ressources existantes dans le dossier reste tel quel jusqu’à ce que vous modifiiez manuellement ces ressources à partir de la boîte de dialogue **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]**.
-   * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, le Experience Manager peut accéder en toute sécurité et prévisualisation aux rendus Dynamic Media distants (aucun binaire n’est renvoyé à l’instance Experience Manager).
-À moins que vous ne disposiez d’un arrangement spécial pour utiliser votre propre serveur de société ou un serveur spécial, l’Adobe vous recommande de laisser ce paramètre tel qu’il est spécifié.
+      * **[!UICONTROL Option]** Publier sélectiveCette option vous permet de contrôler les dossiers publiés dans Dynamic Media. Il vous permet d’utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques, ou de déterminer les dossiers qui sont publiés exclusivement en Experience Manager à des fins de prévisualisation. Ces mêmes ressources *ne sont pas* publiées dans Dynamic Media pour diffusion dans le domaine public.<br>Vous pouvez définir cette option ici dans la  **[!UICONTROL configuration du cloud de]** Dynamic Media ou, si vous préférez, vous pouvez choisir de définir cette option au niveau du dossier, dans les  **[!UICONTROL Propriétés]** d’un dossier.<br>Voir [Utilisation de la publication sélective dans Dynamic Media.](/help/assets/selective-publishing.md)<br>Si vous modifiez cette configuration par la suite ou au niveau du dossier, ces modifications n’affectent que les nouvelles ressources que vous chargez à partir de ce moment-là. L’état de publication des ressources existantes dans le dossier reste tel quel jusqu’à ce que vous modifiiez manuellement ces ressources à partir de la boîte de dialogue **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]**.
+   * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, Experience Manager peut accéder en toute sécurité aux rendus Dynamic Media distants et les prévisualiser (aucune donnée binaire n’est renvoyée à l’instance de Experience Manager).
+À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre propre entreprise ou un serveur spécial, Adobe vous recommande de conserver ce paramètre tel que spécifié.
 
-   * **[!UICONTROL Synchroniser tout le contenu]**  -  <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :
+   * **[!UICONTROL Synchroniser tout le contenu]**  :  <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :
 
    * **[!UICONTROL Mode de synchronisation Dynamic Media]**
       * **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.
 Pour marquer un dossier sélectionné afin de le synchroniser avec Dynamic Media, sélectionnez un dossier de ressources, puis, dans la barre d’outils, appuyez sur **[!UICONTROL Propriétés]**. Sous l’onglet **[!UICONTROL Détails]**, dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes. Une fois le choix effectué, appuyez sur **[!UICONTROL Enregistrer]**. *À retenir : ces trois options ne sont pas disponibles si vous avez sélectionné auparavant **Synchroniser tout le contenu**.* Voir aussi [Utilisation de la publication sélective au niveau du dossier dans Dynamic Media.](/help/assets/selective-publishing.md)
-         * **[!UICONTROL Hérité]**  : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration cloud. L’état détaillé pour les éléments hérités s’affiche par le biais d’une info-bulle.
-         * **[!UICONTROL Activer pour les sous-dossiers]**  - Inclure tout ce qui se trouve dans cette sous-arborescence pour la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
-         * **[!UICONTROL Désactivé pour les sous-dossiers]**  - Exclure tous les éléments de cette sous-arborescence de la synchronisation vers Dynamic Media.
+         * **[!UICONTROL Hérité]**  : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration cloud. L’état détaillé de l’héritage s’affiche par le biais d’une info-bulle.
+         * **[!UICONTROL Activé pour les sous-dossiers]**  : incluez tous les éléments de cette sous-arborescence pour la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
+         * **[!UICONTROL Désactivé pour les sous-dossiers]**  : excluez tous les éléments de cette sous-arborescence de la synchronisation avec Dynamic Media.
 
    >[!NOTE]
    Le contrôle de version n’est pas pris en charge dans DMS7. En outre, l’activation différée ne s’applique que si l’option **[!UICONTROL Publier des ressources]** dans la page de configuration de Dynamic Media est définie sur **[!UICONTROL Dès l’activation]**, puis uniquement jusqu’à la première activation de la ressource.
    Une fois qu’une ressource est activée, toutes les mises à jour sont immédiatement publiées en direct sur la livraison S7.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
-1. Pour prévisualisation en toute sécurité du contenu Dynamic Media avant qu’il ne soit publié, vous devez &quot;placer sur la liste autorisée&quot; l’instance d’auteur du Experience Manager à se connecter à Dynamic Media :
+1. Pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, vous devez &quot;placer sur la liste autorisée&quot; l’instance d’auteur du Experience Manager pour vous connecter à Dynamic Media :
 
-   * Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte. Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de l’attribution des privilèges d’accès. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   * Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte. Vos informations d’identification et vos informations de connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
    * Dans la barre de navigation située en haut à droite de la page, appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Image Server]**.
 
    * Sur la page Publication sur hébergeur d’images, dans la liste déroulante Contexte de publication, sélectionnez **[!UICONTROL Test de l’hébergeur d’images]**.
    * Pour l’option Filtre d’adresse client, appuyez sur **[!UICONTROL Ajouter]**.
-   * Pour activer (activer) l&#39;adresse, cochez la case. Entrez l’adresse IP de l’instance d’auteur du Experience Manager (et non l’adresse IP du répartiteur).
+   * Pour activer l’adresse, cochez la case. Saisissez l’adresse IP de l’instance d’auteur du Experience Manager (et non l’adresse IP du Dispatcher).
    * Appuyez sur **[!UICONTROL Enregistrer]**.
 
 Vous avez à présent terminé la configuration de base ; vous êtes prêt à utiliser le mode Scene7 de Dynamic Media.
@@ -191,14 +188,14 @@ L’écran Image Server permet de définir les paramètres par défaut pour la d
 
 Pour ouvrir la page Paramètres généraux de l’application, dans la barre de navigation globale de Dynamic Media Classic, appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
 
-**[!UICONTROL Serveurs]** : au moment de la mise en service du compte, Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour créer des chaînes URL pour votre site web et vos applications. Ces appels d’URL sont spécifiques à votre compte. Ne changez aucun nom de serveur, sauf si le service à la clientèle d’Adobe lui a demandé de le faire.
+**[!UICONTROL Serveurs]** : au moment de la mise en service du compte, Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour créer des chaînes URL pour votre site web et vos applications. Ces appels d’URL sont spécifiques à votre compte. Ne modifiez aucun nom de serveur, sauf si l’assistance clientèle Adobe vous a demandé de le faire.
 
 **[!UICONTROL Écraser les images]** : Dynamic Media ne permet pas que deux fichiers portent le même nom. L’identifiant de l’URL de chaque élément (le nom de fichier sans l’extension) doit être unique. Ces options spécifient la manière dont les ressources de remplacement sont chargées : elles peuvent remplacer l’original ou devenir un doublon. Les ressources en double sont renommées en ajoutant « -1 » (par exemple, chaise.tif devient chaise-1.tif). Ces options affectent les ressources chargées dans un dossier autre que celui d’origine ou les ressources dont l’extension est différente de celle du fichier d’origine (telle que JPG, TIF ou PNG).
 
 * **[!UICONTROL Écraser dans dossier actuel, même nom/même extension de fichier de base]** : cette option est la règle la plus stricte pour le remplacement. Elle implique que vous chargiez l’image de remplacement dans le même dossier que l’original, et qu’elle ait la même extension que le fichier d’origine. Si ces conditions ne sont pas remplies, un doublon est créé.
 
 >[!NOTE]
-Pour maintenir la cohérence avec le Experience Manager, choisissez toujours ce paramètre : **Ecraser dans le dossier actif, même nom/extension d’image de base**
+Pour maintenir la cohérence avec Experience Manager, sélectionnez toujours ce paramètre : **Écraser dans le dossier actuel, même nom/même extension d’image de base**
 
 * **[!UICONTROL Écraser dans un dossier, même nom/même extension de fichier de base]** : nécessite que l’image de remplacement ait la même extension que l’image d’origine (par exemple, chaise.jpg peut remplacer uniquement chaise.jpg, et non chaise.tif). Vous pouvez néanmoins télécharger l’image de remplacement dans un dossier différent de celui de l’image d’origine. L’image mise à jour se trouve dans le nouveau dossier ; le fichier d’origine n’est plus disponible à l’emplacement d’origine.
 * **[!UICONTROL Écraser dans un dossier, même nom de fichier, extension indépendante]** : cette option est la règle de remplacement la plus inclusive. Elle vous permet de charger une image de remplacement dans un dossier autre que celui de l’image d’origine, de charger un fichier dont l’extension est différente de celle du fichier d’origine et de remplacer le fichier d’origine. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été chargée.
@@ -206,7 +203,7 @@ Pour maintenir la cohérence avec le Experience Manager, choisissez toujours ce 
 **[!UICONTROL Profils de couleurs par défaut]** : voir [Configuration de la gestion des couleurs](#configuring-color-management) pour plus d’informations.
 
 >[!NOTE]
-Par défaut, le système affiche 15 rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** et 15 paramètres prédéfinis de la visionneuse lorsque vous sélectionnez **[!UICONTROL Visionneuses]** dans la vue détaillée de la ressource. Vous pouvez augmenter cette limite. Voir [Augmentation du nombre de paramètres d’image prédéfinis qui s’affichent](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+Par défaut, le système affiche 15 rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** et 15 paramètres prédéfinis de la visionneuse lorsque vous sélectionnez **[!UICONTROL Visionneuses]** dans la vue détaillée de la ressource. Vous pouvez augmenter cette limite. Voir [Augmentation du nombre de paramètres d’image prédéfinis qui s’affichent](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Augmentation du nombre de paramètres de visionneuse prédéfinis qui s’affichent](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 
 #### Configuration de la gestion des couleurs {#configuring-color-management}
@@ -218,7 +215,7 @@ Pour configurer les propriétés de couleur par défaut afin que la correction d
 1. Ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte à l’aide des informations d’identification fournies lors de la mise en service.
 1. Accédez à **[!UICONTROL Configuration > Configuration de l’application]**.
 1. Développez la zone **[!UICONTROL Configuration de la publication]** et sélectionnez **[!UICONTROL Image Server]**. Définissez **[!UICONTROL Contexte de publication]** sur **[!UICONTROL Imager Server]** lors de la définition des paramètres par défaut des instances de publication.
-1. Accédez à la propriété que vous souhaitez modifier. Par exemple, une propriété de la zone **[!UICONTROL Attributs de gestion des couleurs]**.
+1. Faites défiler l’écran jusqu’à la propriété que vous souhaitez modifier. Par exemple, une propriété de la zone **[!UICONTROL Attributs de gestion des couleurs]**.
 
    Vous pouvez définir les propriétés de correction des couleurs suivantes :
 
@@ -234,10 +231,10 @@ Par exemple, vous pouvez définir l’**[!UICONTROL Espace colorimétrique RVB p
 Cela aura les effets suivants :
 
 * Active la correction des couleurs pour les images RVB et CMJN.
-* Les images RVB sans profil de couleur sont supposées se trouver dans l’espace colorimétrique *sRVB*.
-* Les images CMJN qui n’ont pas de profil de couleur sont supposées se trouver dans l’espace colorimétrique *WebCoated*.
-* Rendus dynamiques renvoyant une sortie RVB, renvoyez-la dans l’espace colorimétrique *sRVB*.
-* Rendus dynamiques renvoyant une sortie CMJN, renvoyez-la dans l’espace colorimétrique *WebCoated*.
+* Les images RVB qui n’ont pas de profil colorimétrique sont supposées se trouver dans l’espace colorimétrique *sRVB* .
+* Les images CMJN qui n’ont pas de profil colorimétrique sont supposées se trouver dans l’espace colorimétrique *WebCoated* .
+* Les rendus dynamiques qui renvoient une sortie RVB la renvoient dans l’espace colorimétrique *sRVB*.
+* Les rendus dynamiques qui renvoient une sortie CMJN, la renvoient dans l’espace colorimétrique *WebCoated*.
 
 #### Modification des types MIME pour les formats pris en charge {#editing-mime-types-for-supported-formats}
 
@@ -245,7 +242,7 @@ Vous pouvez définir les types de ressources traités par Dynamic Media et pers
 
 * Conversion d’un PDF Adobe en ressource de catalogue électronique.
 * Conversion d’un document Adobe Photoshop (.psd) en ressource de modèle de bannière afin de permettre la personnalisation.
-* pixelliser un fichier Adobe Illustrator (.AI) ou un fichier PostScript® encapsulé Adobe Photoshop (.EPS).
+* Pixellisez un fichier Adobe Illustrator (.AI) ou un fichier Adobe Photoshop Encapsulated PostScript® (.EPS).
 * Des [profils vidéo](/help/assets/video-profiles.md) et des [profils d’images](/help/assets/image-profiles.md) peuvent être utilisés pour définir le traitement des vidéos et des images.
 
 Voir la section [Chargement des ressources](/help/assets/manage-assets.md#uploading-assets).
@@ -262,24 +259,24 @@ Voir la section [Chargement des ressources](/help/assets/manage-assets.md#upload
 1. Sous le dossier mimeTypes, sélectionnez un type MIME.
 1. Sur le côté droit de la page CRXDE Lite, dans la partie inférieure :
 
-   * Cliquez deux fois sur le champ **[!UICONTROL enabled]**. Par défaut, tous les types MIME d’actifs sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les actifs sont synchronisés sur Dynamic Media pour traitement. Si vous souhaitez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
+   * Cliquez deux fois sur le champ **[!UICONTROL enabled]**. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources sont synchronisées avec Dynamic Media pour traitement. Si vous souhaitez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
 
-   * doublon-appuyez sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types MIME pris en charge](/help/assets/assets-formats.md#supported-mime-types) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
+   * appuyez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types MIME pris en charge](/help/assets/assets-formats.md#supported-mime-types) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
 
 1. Utilisez l’une des méthodes suivantes :
 
    * Répétez les étapes 3 à 4 pour modifier d’autres types MIME.
    * Dans la barre de menus de la page du CRXDE Lite, appuyez sur **[!UICONTROL Enregistrer tout]**.
 
-1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL CRXDE Lite]** pour revenir au Experience Manager.
+1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL CRXDE Lite]** pour revenir à Experience Manager.
 
 #### Ajout de types MIME pour les formats non pris en charge {#adding-mime-types-for-unsupported-formats}
 
-Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en charge dans les ressources du Experience Manager. Assurez-vous que tout nouveau noeud ajouté dans le CRXDE Lite n’est pas supprimé par le Experience Manager en déplaçant le type MIME avant `image_`. Assurez-vous également que sa valeur activée est définie sur **[!UICONTROL false]**.
+Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en charge dans Experience Manager Assets. Assurez-vous que tout nouveau noeud ajouté en CRXDE Lite n’est pas supprimé par Experience Manager en déplaçant le type MIME avant `image_`. Assurez-vous également que sa valeur activée est définie sur **[!UICONTROL false]**.
 
 **Pour ajouter des types MIME pour des formats non pris en charge:**
 
-1. Dans le Experience Manager, appuyez sur **[!UICONTROL Outils > Opérations > Console Web]**.
+1. Dans Experience Manager, appuyez sur **[!UICONTROL Outils > Opérations > Console web]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -291,13 +288,13 @@ Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en c
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
-1. Sur la page **Adobe CQ Asset MIME type Service**, appuyez sur toute icône de signe plus &lt;+>. L’emplacement dans le tableau où vous appuyez sur le signe plus pour ajouter le nouveau type MIME est trivial.
+1. Sur la page **Adobe CQ Scene7 Asset MIME type Service** , appuyez sur n’importe quelle icône de signe plus &lt;+>. L’emplacement dans le tableau où vous appuyez sur le signe plus pour ajouter le nouveau type MIME est trivial.
 
    ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
 1. Entrez `DWG=image/vnd.dwg` dans le champ de texte vide que vous venez d’ajouter.
 
-   L&#39;exemple `DWG=image/vnd.dwg` n&#39;est fourni qu&#39;à titre d&#39;illustration. Le type MIME que vous ajoutez ici peut être tout autre format non pris en charge.
+   L’exemple `DWG=image/vnd.dwg` est fourni à titre d’illustration uniquement. Le type MIME que vous ajoutez ici peut être tout autre format non pris en charge.
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -306,7 +303,7 @@ Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en c
    À ce stade, vous pouvez fermer l’onglet du navigateur dans lequel la page de configuration de la console web d’Adobe Experience Manager est ouverte.
 
 1. Revenez à l’onglet du navigateur qui contient votre console de Experience Manager ouverte.
-1. Dans le Experience Manager, appuyez sur **[!UICONTROL Outils > Général > CRXDE Lite]**.
+1. Dans Experience Manager, appuyez sur **[!UICONTROL Outils > Général > CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -318,36 +315,36 @@ Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en c
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. Le type MIME `image_vnd.dwg` étant toujours sélectionné, dans l&#39;onglet **[!UICONTROL Propriétés]**, dans la ligne **[!UICONTROL enabled]**, sous l&#39;en-tête de colonne **[!UICONTROL Valeur]**, appuyez sur la valeur pour ouvrir la liste déroulante **[!UICONTROL Valeur]**.
+1. Avec le type MIME `image_vnd.dwg` toujours sélectionné, dans l’onglet **[!UICONTROL Propriétés]**, dans la ligne **[!UICONTROL enabled]**, sous l’en-tête de colonne **[!UICONTROL Valeur]**, appuyez deux fois sur la valeur pour ouvrir la liste déroulante **[!UICONTROL Valeur]**.
 1. Tapez `false` dans le champ (ou sélectionnez **[!UICONTROL false]** dans la liste déroulante).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
 
-1. Près du coin supérieur gauche de la page du CRXDE Lite, appuyez sur **[!UICONTROL Enregistrer tout]**.
+1. Dans le coin supérieur gauche de la page du CRXDE Lite, appuyez sur **[!UICONTROL Enregistrer tout]**.
 
 #### Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360° {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
 Utilisez les paramètres prédéfinis d’ensemble par lot pour automatiser la création de visionneuses d’images ou de jeux de rotation lorsque des ressources sont téléchargées sur Dynamic Media.
 
-Tout d’abord, définissez la convention d’affectation de nom pour le mode de regroupement des fichiers dans un ensemble. Créez ensuite un paramètre prédéfini d’ensemble par lot qui correspond à un ensemble d’instructions indépendant à nom unique. Il doit définir comment construire la visionneuse à l’aide d’images qui correspondent aux conventions d’affectation de nom définies dans la recette de paramètres prédéfinis.
+Tout d’abord, définissez la convention d’affectation des noms pour la manière dont les ressources sont regroupées dans un ensemble. Créez ensuite un paramètre prédéfini d’ensemble par lot qui est un ensemble d’instructions autonome nommé de manière unique. Il doit définir comment construire la visionneuse à l’aide d’images qui correspondent aux conventions d’affectation de nom définies dans la recette de paramètres prédéfinis.
 
 Lorsque vous téléchargez des fichiers, Dynamic Media crée automatiquement une visionneuse avec tous les fichiers qui correspondent à la convention de nommage définie dans les paramètres prédéfinis actifs.
 
 **Configuration du nommage par défaut**
 
-Créez une convention de nommage par défaut qui est utilisée dans n’importe quelle recette de paramètre prédéfini d’ensemble par lot. La convention d’affectation de nom par défaut sélectionnée dans la définition des paramètres prédéfinis d’ensemble par lot est probablement tout ce dont votre société a besoin pour générer des visionneuses par lot. Un paramètre prédéfini d’ensemble par lot est créé pour utiliser la convention de nommage par défaut que vous définissez. Vous pouvez créer autant de paramètres prédéfinis d’ensemble par lot que nécessaire avec des conventions de nommage différentes et personnalisées pour une visionneuse de contenu spécifique au cas où il existe une exception dans le nommage par défaut défini par l’entreprise.
+Créez une convention de nommage par défaut qui est utilisée dans n’importe quelle recette de paramètre prédéfini d’ensemble par lot. La convention d’affectation de nom par défaut sélectionnée dans la définition de paramètre prédéfini d’ensemble par lot est probablement tout ce dont votre entreprise a besoin pour générer des ensembles par lot. Un paramètre prédéfini d’ensemble par lot est créé pour utiliser la convention de nommage par défaut que vous définissez. Vous pouvez créer autant de paramètres prédéfinis d’ensemble par lot que nécessaire avec des conventions de nommage différentes et personnalisées pour une visionneuse de contenu spécifique au cas où il existe une exception dans le nommage par défaut défini par l’entreprise.
 
-Bien que la configuration d’une convention d’affectation de nom par défaut ne soit pas nécessaire pour utiliser la fonctionnalité de paramètres prédéfinis d’ensemble par lot, il est recommandé d’utiliser la convention d’affectation de nom par défaut. Il vous permet de définir autant d’éléments de votre convention d’affectation de nom que vous souhaitez regrouper dans une visionneuse afin de simplifier la création d’ensembles par lot.
+Bien que la configuration d’une convention d’affectation de nom par défaut ne soit pas nécessaire pour utiliser la fonctionnalité de paramètres prédéfinis d’ensemble par lot, il est recommandé d’utiliser la convention d’affectation de nom par défaut. Il vous permet de définir autant d’éléments de votre convention d’affectation de nom que vous souhaitez regrouper dans un ensemble afin de pouvoir rationaliser la création d’un ensemble de lots.
 
-Vous pouvez également utiliser le **[!UICONTROL code de Vue]** sans champs de formulaire. Dans cette vue, vous créez vos définitions de convention d’affectation de nom entièrement à l’aide d’expressions régulières.
+Vous pouvez également utiliser **[!UICONTROL Afficher le code]** sans champ de formulaire disponible. Dans cet affichage, vous créez vos définitions de convention d’affectation de nom entièrement à l’aide d’expressions régulières.
 
-Deux éléments sont disponibles pour la définition : correspondance et nom de base. Ces champs vous permettent de définir tous les éléments de la convention de nommage et d’identifier la partie de la convention utilisée pour nommer la visionneuse dans laquelle ils se trouvent. La convention d’affectation de nom individuelle d’une société utilise souvent une ou plusieurs lignes de définition pour chacun de ces éléments. Vous pouvez utiliser autant de lignes que vous le souhaitez pour votre définition unique et les regrouper dans des éléments distincts, par exemple, pour l’image principale, les éléments Couleur, Affichage secondaire et Échantillon.
+Deux éléments sont disponibles pour la définition : correspondance et nom de base. Ces champs vous permettent de définir tous les éléments de la convention de nommage et d’identifier la partie de la convention utilisée pour nommer la visionneuse dans laquelle ils se trouvent. La convention de dénomination individuelle d’une entreprise utilise souvent une ou plusieurs lignes de définition pour chacun de ces éléments. Vous pouvez utiliser autant de lignes que vous le souhaitez pour votre définition unique et les regrouper dans des éléments distincts, par exemple, pour l’image principale, les éléments Couleur, Affichage secondaire et Échantillon.
 
 **Pour configurer l’affectation de nom par défaut:**
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de l’attribution des privilèges d’accès. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et vos informations de connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1. Sur la barre de navigation située en haut de la page, appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres prédéfinis d’ensemble par lot > Affectation de nom par défaut]**.
 1. Sélectionnez **[!UICONTROL Afficher le formulaire]** ou **[!UICONTROL Afficher le code]** pour indiquer le mode de visualisation et de saisie des informations sur chaque élément.
@@ -372,7 +369,7 @@ Deux éléments sont disponibles pour la définition : correspondance et nom de
 
 Dynamic Media utilise les paramètres prédéfinis d’ensemble par lot pour organiser les ressources en visionneuses d’images (images de remplacement, options de couleur, rotation à 360°) pour l’affichage dans des visionneuses. Les paramètres prédéfinis d’ensemble par lot s’exécutent automatiquement avec les processus de transfert des ressources dans Dynamic Media.
 
-Vous pouvez créer, modifier et gérer vos paramètres prédéfinis d’ensemble par lot. Il existe deux formes de définitions de paramètres prédéfinis d’ensemble par lot : l’une pour une convention d’affectation de nom par défaut que vous pouvez configurer, l’autre pour des conventions d’affectation de nom personnalisées que vous créez à la volée.
+Vous pouvez créer, modifier et gérer vos paramètres prédéfinis d’ensemble par lot. Il existe deux formes de définitions de paramètres prédéfinis d’ensemble par lot : l’une pour une convention d’affectation de nom par défaut que vous pouvez configurer, l’autre pour les conventions d’affectation de nom personnalisées que vous créez à la volée.
 
 Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramètre prédéfini d’ensemble par lot ou la méthode de code, qui vous permet d’utiliser des expressions régulières. Comme dans le nommage par défaut, vous pouvez sélectionner Afficher le code en même temps que vous définissez la vue Formulaire et utilisez des expressions régulières pour créer vos définitions. Vous pouvez également désélectionner l’une des deux vues pour utiliser uniquement l’une ou l’autre.
 
@@ -380,28 +377,28 @@ Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramè
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de l’attribution des privilèges d’accès. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et vos informations de connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1. Dans la barre de navigation située en haut de la page, appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres prédéfinis d’ensemble par lot > Paramètre prédéfini d’ensemble par lot]**.
 
-   **[!UICONTROL Le formulaire]** de vue, tel qu’il est défini dans le coin supérieur droit de la page Détails, est la vue par défaut.
+   **[!UICONTROL Afficher le formulaire]**, tel que défini dans le coin supérieur droit de la page Détails, est la vue par défaut.
 
-1. Dans le panneau Liste des paramètres prédéfinis, appuyez sur **[!UICONTROL Ajouter]** pour activer les champs de définition dans le panneau Détails sur le côté droit de l’écran.
+1. Dans le panneau Liste des paramètres prédéfinis, appuyez sur **[!UICONTROL Ajouter]** pour activer les champs de définition dans le panneau Détails situé à droite de l’écran.
 1. Dans le panneau Détails, nommez le paramètre prédéfini dans le champ Nom du paramètre prédéfini.
 1. Dans le menu déroulant Type d’ensemble par lot, sélectionnez un type de paramètre prédéfini.
 1. Utilisez l’une des méthodes suivantes :
 
    * Si vous utilisez une convention d’affectation de nom par défaut que vous avez précédemment définie sous **[!UICONTROL Configuration de l’application > Paramètres prédéfinis d’ensemble par lot > Nom par défaut]**, développez **[!UICONTROL Conventions d’affectation de nom]**, puis dans la liste déroulante Affectation de nom de fichier, appuyez sur **[!UICONTROL Par défaut]**.
 
-   * Pour définir une nouvelle convention d’affectation de nom lorsque vous configurez le paramètre prédéfini, développez **[!UICONTROL Conventions d’affectation de nom]**, puis, dans la liste déroulante Affectation de nom de fichier, appuyez sur **[!UICONTROL Personnalisé]**.
+   * Pour définir une nouvelle convention d’affectation de nom lors de la configuration du paramètre prédéfini, développez **[!UICONTROL Conventions d’affectation de nom]**, puis, dans la liste déroulante Affectation de nom de fichier, appuyez sur **[!UICONTROL Personnalisé]**.
 
 1. Pour l’ordre des séquences, définissez l’ordre d’affichage des images une fois la visionneuse regroupée dans Dynamic Media.
 
    Par défaut, les ressources sont classées par ordre alphanumérique. Cependant, vous pouvez utiliser une liste d’expressions régulières séparées par des virgules pour définir l’ordre.
 
-1. Dans Options de création et d’affectation de nom de l’ensemble, indiquez le suffixe ou le préfixe du nom de base que vous avez défini dans la convention d’affectation de nom. Définissez également l’emplacement de création du jeu dans la structure de dossiers Dynamic Media.
+1. Dans Options de création et d’affectation de nom de l’ensemble, indiquez le suffixe ou le préfixe du nom de base que vous avez défini dans la convention d’affectation de nom. Définissez également l’emplacement de création de la visionneuse dans la structure de dossiers de Dynamic Media.
 
-   Si vous définissez un grand nombre de jeux, gardez les jeux à l’écart des dossiers contenant les fichiers eux-mêmes. Par exemple, créez un dossier Visionneuses d’images et placez les visionneuses générées ici.
+   Si vous définissez un grand nombre d’ensembles, séparez-les des dossiers contenant les ressources elles-mêmes. Par exemple, créez un dossier Visionneuses d’images et insérez-y les visionneuses générées.
 
 1. Dans le panneau Détails, appuyez sur **[!UICONTROL Enregistrer]**.
 1. Appuyez sur **[!UICONTROL Actif]** en regard du nom du nouveau paramètre prédéfini.
@@ -424,11 +421,11 @@ spin-01-01
  spin-03-12
 ```
 
-Grâce à ces informations, votre recette Type d&#39;ensemble par lot peut être créée comme suit :
+Avec ces informations, votre recette de type d’ensemble par lot peut être créée comme suit :
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-Le regroupement de la partie du nom de ressource partagée de la visionneuse à 360° est ajouté au champ **Correspondance** (comme souligné). La partie variable du nom de ressource contenant la ligne et la colonne est ajoutée respectivement aux champs **Ligne** et **Colonne**.
+Le regroupement de la partie du nom de ressource partagée de la visionneuse à 360° est ajouté au champ **Correspondance** (comme indiqué en surbrillance). La partie variable du nom de ressource contenant la ligne et la colonne est ajoutée respectivement aux champs **Ligne** et **Colonne**.
 
 Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le nom de la recette de visionneuse à 360° en 2D répertoriée sous **Paramètres prédéfinis d’ensemble par lot** dans la boîte de dialogue **Télécharger les options de la tâche**.
 
@@ -436,20 +433,20 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion ont été fournies par l’Adobe au moment de l’attribution des privilèges d’accès. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et vos informations de connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
 1. Dans la barre de navigation située en haut de la page, appuyez sur **[!UICONTROL Configuration] > [!UICONTROL Configuration de l’application] > [!UICONTROL Paramètres prédéfinis d’ensemble par lot] > [!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
 
-   **[!UICONTROL Le formulaire]** de vue, tel qu’il est défini dans le coin supérieur droit de la page Détails, est la vue par défaut.
+   **[!UICONTROL Afficher le formulaire]**, tel que défini dans le coin supérieur droit de la page Détails, est la vue par défaut.
 
-1. Dans le panneau Liste des paramètres prédéfinis, appuyez sur **[!UICONTROL Ajouter]** pour activer les champs de définition dans le panneau Détails sur le côté droit de l’écran.
+1. Dans le panneau Liste des paramètres prédéfinis, appuyez sur **[!UICONTROL Ajouter]** pour activer les champs de définition dans le panneau Détails situé à droite de l’écran.
 1. Dans le panneau Détails, nommez le paramètre prédéfini dans le champ Nom du paramètre prédéfini.
 1. Dans le menu déroulant Type d’ensemble par lot, sélectionnez **[!UICONTROL Visionneuse de ressources]**.
 1. Dans la liste déroulante Sous-type, sélectionnez **[!UICONTROL Visionneuse à 360° multi-axe]**.
 1. Développez **[!UICONTROL Conventions d’affectation de nom]**, puis, dans la liste déroulante Affectation de nom de fichier, appuyez sur **[!UICONTROL Personnalisé]**.
 1. Utilisez les attributs **[!UICONTROL Correspondance]** et, éventuellement, **[!UICONTROL Nom de base]** pour définir une expression régulière pour nommer les fichiers d’image qui constituent le regroupement.
 
-   Par exemple, votre expression ordinaire Correspondance littérale peut se présenter comme suit :
+   Par exemple, votre expression régulière Correspondance littérale peut se présenter comme suit :
 
    `(w+)-w+-w+`
 
@@ -465,7 +462,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
    `\w+-(\d+)-\w+`
 
-   Pour votre expression régulière de colonne, elle peut se présenter comme suit :
+   Pour l’expression régulière de colonne, elle peut se présenter comme suit :
 
    `\w+-\w+-C([0-9]+)`
 
@@ -473,16 +470,16 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
    `\w+-\w+-C(\d+)`
 
-   Les exemples ci-dessus sont fournis à titre indicatif uniquement. Vous pouvez créer votre expression régulière comme bon vous semble, en fonction de vos besoins.
+   Les exemples ci-dessus sont fournis à titre d’illustration uniquement. Vous pouvez créer votre expression régulière comme bon vous semble, en fonction de vos besoins.
 
    >[!NOTE]
-   Si la combinaison d’expressions régulières de ligne et de colonne ne parvient pas à déterminer la position de la ressource dans la baie de disques multidimensionnelle, la ressource n’est pas ajoutée à la visionneuse. Une erreur est également consignée.
+   Si la combinaison d’expressions régulières de ligne et de colonne ne parvient pas à déterminer la position de la ressource dans le tableau de la visionneuse à 360° multidimensionnelle, la ressource n’est pas ajoutée à la visionneuse. Une erreur est également consignée.
 
 1. Dans Options de création et d’affectation de nom de l’ensemble, indiquez le suffixe ou le préfixe du nom de base que vous avez défini dans la convention d’affectation de nom.
 
-   Définissez également l’emplacement de création de la visionneuse à 360° dans la structure de dossiers Dynamic Media Classic.
+   Définissez également l’emplacement de création de la visionneuse à 360° dans la structure de dossiers de Dynamic Media Classic.
 
-   Si vous définissez un grand nombre de jeux, gardez les jeux à l’écart des dossiers contenant les fichiers eux-mêmes. Par exemple, créez un dossier Visionneuses à 360° pour y placer les visionneuses générées.
+   Si vous définissez un grand nombre d’ensembles, séparez-les des dossiers contenant les ressources elles-mêmes. Par exemple, créez un dossier Visionneuses à 360° pour y placer les visionneuses générées.
 
 1. Dans le panneau Détails, appuyez sur **[!UICONTROL Enregistrer]**.
 1. Appuyez sur **[!UICONTROL Actif]** en regard du nom du nouveau paramètre prédéfini.
@@ -491,7 +488,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
 ### (Facultatif) Optimisation des performances du mode Scene7 de Dynamic Media  {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Pour que le mode Dynamic Media - Scene7 fonctionne correctement, l’Adobe recommande les conseils de réglage précis des performances et de l’évolutivité de la synchronisation suivants :
+Pour que le mode Dynamic Media - Scene7 fonctionne correctement, Adobe recommande les conseils d’optimisation des performances/évolutivité de la synchronisation suivants :
 
 * Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier.
 * Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo).
@@ -500,13 +497,13 @@ Pour que le mode Dynamic Media - Scene7 fonctionne correctement, l’Adobe recom
 
 #### Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier
 
-Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du chargement. Par exemple, si vous téléchargez des fichiers PSD mais que vous ne souhaitez pas les traiter comme modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affinée s’affiche comme suit : `process=None&createTemplate=false`.
+Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du chargement. Par exemple, si vous chargez des fichiers PSD, mais que vous ne souhaitez pas les traiter comme modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné se présente comme suit : `process=None&createTemplate=false`.
 
 Si vous souhaitez activer la création de modèles, utilisez les paramètres suivants : `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-L’Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; suivants pour les fichiers PDF, PostScript® et PSD :
+Adobe recommande d’utiliser les paramètres de tâche &quot;affiné&quot; suivants pour les fichiers PDF, PostScript® et PSD :
 
 <!-- OLD PDF JOB PARAMETERS `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` -->
 
@@ -522,11 +519,11 @@ L’Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot;
 
 Pour mettre à jour l’un de ces paramètres, procédez comme indiqué dans la [Activation de la prise en charge du paramètre de tâche de chargement Assets/Dynamic Media Classic basé sur le type MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
-#### Mise à jour de la file d&#39;attente de processus transitoire Granite {#updating-the-granite-transient-workflow-queue}
+#### Mise à jour de la file d’attente de workflow transitoire Granite {#updating-the-granite-transient-workflow-queue}
 
 La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**. Dans Dynamic Media, elle est utilisée pour l’intégration et le traitement des images.
 
-**Pour mettre à jour la file d&#39;attente de processus transitoire Granite :**
+**Pour mettre à jour la file d’attente de workflow transitoire Granite :**
 
 1. Accédez à [https://&lt;serveur>/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez **Queue: Granite Transient Workflow Queue** (File d’attente : file d’attente de workflows transitoires Granite).
 
@@ -535,7 +532,7 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
-   Vous pouvez augmenter le **[!UICONTROL nombre maximal de tâches en parallèle]** afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un chargement en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Par conséquent, testez et ajustez la valeur en fonction de votre cas d’utilisation particulier.
+   Vous pouvez augmenter le **[!UICONTROL nombre maximal de tâches en parallèle]** afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un chargement en masse ponctuel, vous pouvez utiliser une valeur importante. Notez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Par conséquent, testez et ajustez la valeur en fonction de votre cas d’utilisation spécifique.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -545,11 +542,11 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
-#### Mise à jour de la file d&#39;attente de processus Granite {#updating-the-granite-workflow-queue}
+#### Mise à jour de la file d’attente de workflows Granite {#updating-the-granite-workflow-queue}
 
-La file d’attente de workflows Granite est utilisée pour les workflows non transitoires. Dans Dynamic Media, il traitait la vidéo avec le flux de travail **[!UICONTROL Dynamic Media Encode Video]**.
+La file d’attente de workflows Granite est utilisée pour les workflows non transitoires. Dans Dynamic Media, il était utilisé pour traiter la vidéo avec le workflow **[!UICONTROL Vidéo de codage Dynamic Media]** .
 
-**Pour mettre à jour la file d&#39;attente de processus Granite :**
+**Pour mettre à jour la file d’attente de workflows Granite :**
 
 1. Accédez à `https://<server>/system/console/configMgr` et recherchez **Queue: Granite Workflow Queue** (File d’attente : file d’attente de workflows Granite).
 
@@ -558,22 +555,22 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
-   Vous pouvez augmenter le nombre maximal de tâches en parallèle afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un chargement en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Par conséquent, testez et ajustez la valeur en fonction de votre cas d’utilisation particulier.
+   Vous pouvez augmenter le nombre maximal de tâches en parallèle afin de prendre en charge le chargement intensif de fichiers vers Dynamic Media. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un chargement en masse ponctuel, vous pouvez utiliser une valeur importante. Notez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Par conséquent, testez et ajustez la valeur en fonction de votre cas d’utilisation spécifique.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
 
-#### Mise à jour de la connexion de transfert Dynamic Media Classic {#updating-the-scene-upload-connection}
+#### Mise à jour de la connexion de chargement vers Dynamic Media Classic {#updating-the-scene-upload-connection}
 
-Le paramètre Scene7 Upload Connection synchronise les ressources du Experience Manager sur les serveurs Dynamic Media Classic.
+Le paramètre Connexion de chargement de Scene7 synchronise les ressources de Experience Manager sur les serveurs Dynamic Media Classic.
 
-**Pour mettre à jour la connexion de transfert Dynamic Media Classic :**
+**Pour mettre à jour la connexion de chargement vers Dynamic Media Classic :**
 
 1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`.
 1. Dans le champ **[!UICONTROL Number of connections]** (Nombre de connexions) et/ou **[!UICONTROL Active job timeout]** (Délai d’expiration des tâches actives), modifiez le nombre en fonction de vos besoins.
 
-   Le paramètre **[!UICONTROL Nombre de connexions]** contrôle le nombre maximal de connexions HTTP autorisées pour le Experience Manager au transfert Dynamic Media ; généralement, la valeur prédéfinie de dix connexions est suffisante.
+   Le paramètre **[!UICONTROL Nombre de connexions]** contrôle le nombre maximal de connexions HTTP autorisées pour le téléchargement Experience Manager vers Dynamic Media ; généralement, la valeur prédéfinie de dix connexions est suffisante.
 
    Le paramètre **[!UICONTROL Active job timeout]** détermine le temps d’attente avant que les ressources Dynamic Media chargées ne soient publiées sur le serveur de diffusion. Cette valeur est de 2 100 secondes ou 35 minutes, par défaut.
 
@@ -585,68 +582,68 @@ Le paramètre Scene7 Upload Connection synchronise les ressources du Experience 
 
 ### (Facultatif) Filtrage des ressources en vue de la réplication {#optional-filtering-assets-for-replication}
 
-Dans les déploiements autres que Dynamic Media, vous pouvez répliquer *tous les* fichiers (images et vidéos) de votre environnement d’auteur Experience Manager vers le noeud de publication Experience Manager. Ce processus est nécessaire car les serveurs de publication du Experience Manager diffusent également les ressources.
+Dans les déploiements autres que Dynamic Media, vous répliquez toutes les *ressources* (images et vidéo) de votre environnement de création de Experience Manager vers le noeud de publication de Experience Manager. Ce workflow est nécessaire, car les serveurs de publication du Experience Manager diffusent également les ressources.
 
-Cependant, dans les déploiements Dynamic Media, dans la mesure où les ressources sont distribuées par le biais du Cloud Service, il n’est pas nécessaire de répliquer ces mêmes ressources sur les noeuds de publication Experience Manager. Un tel processus de &quot;publication hybride&quot; permet d’éviter des coûts d’enregistrement supplémentaires et des délais de traitement plus longs pour la réplication des ressources. D’autres contenus, tels que les pages du site, continuent d’être diffusés à partir des noeuds de publication du Experience Manager.
+Toutefois, dans les déploiements Dynamic Media, dans la mesure où les ressources sont diffusées par le biais du Cloud Service, il n’est pas nécessaire de répliquer ces mêmes ressources sur les noeuds de publication du Experience Manager. Un tel workflow de &quot;publication hybride&quot; évite des coûts de stockage supplémentaires et des temps de traitement plus longs pour répliquer les ressources. D’autres contenus, tels que les pages du site, continuent à être diffusés à partir des noeuds de publication du Experience Manager.
 
-Les filtres permettent d’exclure *les ressources* de la réplication sur le noeud de publication Experience Manager.
+Les filtres permettent d’exclure *les ressources* de la réplication sur le noeud de publication du Experience Manager.
 
 #### Utilisation des filtres de ressources par défaut pour la réplication {#using-default-asset-filters-for-replication}
 
-Si vous utilisez Dynamic Media pour la création d’images, la vidéo ou les deux, vous pouvez utiliser les filtres par défaut fournis par l’Adobe en l’état. Les filtres suivants sont activés par défaut :
+Si vous utilisez Dynamic Media pour les images ou les vidéos, ou les deux, vous pouvez utiliser les filtres par défaut fournis en l’état par Adobe. Les filtres suivants sont activés par défaut :
 
 <table>
  <tbody>
   <tr>
    <td> </td>
    <td><strong>Filtrer</strong></td>
-   <td><strong>Type Mime</strong></td>
+   <td><strong>Type MIME</strong></td>
    <td><strong>Rendus</strong></td>
   </tr>
   <tr>
-   <td>Dynamic Media Image Diffusion</td>
-   <td><p>filter-images</p> <p>ensembles de filtres</p> <p> </p> </td>
-   <td><p>Débuts avec <strong>image/</strong></p> <p>Contient <strong>application/</strong> et se termine par <strong>set</strong>.</p> </td>
-   <td>Les "images-filtres" prêtes à l’emploi (s’appliquent aux fichiers d’images uniques, y compris aux images interactives) et les "visionneuses de filtres" (s’appliquent aux visionneuses à 360°, aux visionneuses d’images, aux visionneuses de supports variés et aux visionneuses de carrousel) :
+   <td>Diffusion d’images Dynamic Media</td>
+   <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td>
+   <td><p>Commence par <strong>image/</strong></p> <p>Contient <strong>application/</strong> et se termine par <strong>set</strong>.</p> </td>
+   <td>Les "filter-images" d’usine (s’applique aux ressources d’images uniques, y compris aux images interactives) et les "filter-sets" (s’applique aux visionneuses à 360°, aux visionneuses de supports variés et aux visionneuses de carrousel) :
     <ul>
      <li>Suppriment de la réplication l’image d’origine et les rendus d’image statiques.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>diffusion vidéo Dynamic Media</td>
+   <td>Diffusion vidéo Dynamic Media</td>
    <td>filter-video</td>
-   <td>Débuts avec <strong>video/</strong></td>
-   <td>La "vidéo-filtre" prête à l'emploi permet de :
+   <td>Commence par <strong>video/</strong></td>
+   <td>La "filter-video" d’usine :
     <ul>
-     <li>Exclure de la réplication les rendus vidéo et miniatures statiques d'origine.<br /> <br /> </li>
+     <li>Excluez de la réplication la vidéo d’origine et les rendus de miniatures statiques.<br /> <br /> </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
-Les filtres s&#39;appliquent aux types MIME et ne peuvent pas être spécifiques au chemin.
+Les filtres s’appliquent aux types MIME et ne peuvent pas être spécifiques au chemin d’accès.
 
 #### Personnalisation des filtres de ressources en vue de la réplication {#customizing-asset-filters-for-replication}
 
-1. Dans Experience Manager, appuyez sur le logo du Experience Manager pour accéder à la console de navigation globale et appuyez sur **[!UICONTROL Outils > Général > CRXDE Lite]**.
-1. Dans l&#39;arborescence de dossiers de gauche, accédez à `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` pour consulter les filtres.
+1. Dans Experience Manager, appuyez sur le logo du Experience Manager pour accéder à la console de navigation globale, puis appuyez sur **[!UICONTROL Outils > Général > CRXDE Lite]**.
+1. Dans l’arborescence de gauche, accédez à `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` pour consulter les filtres.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
 
 1. Pour définir le type MIME du filtre, vous pouvez localiser le type MIME comme suit : 
 
-   Dans le rail de gauche, développez `content > dam > <locate_your_asset> > jcr:content > metadata`, puis dans le tableau, recherchez `dc:format`.
+   Dans le rail de gauche, développez `content > dam > <locate_your_asset> > jcr:content > metadata`, puis, dans le tableau, localisez `dc:format`.
 
    L’illustration ci-dessous est un exemple de chemin d’une ressource vers `dc:format`.
 
    ![chlimage_1-18](assets/chlimage_1-3.png)
 
-   Notez que `dc:format` pour l&#39;actif `Fiji Red.jpg` est `image/jpeg`.
+   Notez que la valeur `dc:format` de la ressource `Fiji Red.jpg` est `image/jpeg`.
 
    Pour que ce filtre s’applique à toutes les images, quel que soit leur format, définissez la valeur sur `image/*` où `*` est une expression régulière appliquée à toutes les images de n’importe quel format.
 
-   Pour que le filtre s’applique uniquement aux images de type JPEG, entrez la valeur `image/jpeg`.
+   Pour que le filtre s’applique uniquement aux images de type JPEG, saisissez la valeur `image/jpeg`.
 
 1. Définissez les rendus que vous souhaitez inclure ou exclure de la réplication.
 
@@ -656,7 +653,7 @@ Les filtres s&#39;appliquent aux types MIME et ne peuvent pas être spécifiques
  <tbody>
   <tr>
    <td><strong>Caractère à utiliser</strong></td>
-   <td><strong>Filtres des ressources pour la réplication</strong></td>
+   <td><strong>Filtrage des ressources pour la réplication</strong></td>
   </tr>
   <tr>
    <td>*</td>
@@ -668,7 +665,7 @@ Les filtres s&#39;appliquent aux types MIME et ne peuvent pas être spécifiques
   </tr>
   <tr>
    <td>-</td>
-   <td>Exclut les actifs de la réplication.</td>
+   <td>Exclut les ressources de la réplication.</td>
   </tr>
  </tbody>
 </table>
@@ -679,4 +676,4 @@ L’illustration ci-dessous est un exemple de rendu d’une ressource.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Si vous souhaitez uniquement répliquer l’original, vous devez saisir `+original`.
+Si vous ne souhaitez répliquer que l’original, saisissez `+original`.
