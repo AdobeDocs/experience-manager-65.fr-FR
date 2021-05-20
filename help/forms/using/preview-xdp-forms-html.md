@@ -9,14 +9,13 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 76%
 
 ---
-
 
 # Génération de l’aperçu HTML5 d’un formulaire XDP{#generate-html-preview-of-an-xdp-form}
 
@@ -33,7 +32,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 ### Configurer le service d&#39;authentification Apache Sling {#configure-apache-sling-authentication-service}
 
 1. Accédez à `https://'[server]:[port]'/system/console/configMgr` sur AEM Forms s’exécutant sur OSGi ou
-   `https://'[server]:[port]'/lc/system/console/configMgr` sur AEM Forms s’exécutant sur JEE.
+   `https://'[server]:[port]'/lc/system/console/configMgr` sur AEM Forms exécuté sur JEE.
 1. Localisez et cliquez sur la boîte de configuration **Service d’authentification Apache Sling** pour l’ouvrir en mode d’édition.
 
 1. Selon que vous exécutez AEM Forms sur OSGi ou JEE, ajoutez ce qui suit dans le **champ** Conditions d’authentification requises : 
@@ -52,15 +51,15 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
    >N’effectuez pas de copier-coller de la valeur spécifiée dans le champ des conditions d’authentification requises, car ceci risquerait d’endommager les caractères spéciaux dans la valeur. Saisissez plutôt la valeur spécifiée dans le champ.
 
 1. Indiquez un nom d’utilisateur et un mot de passe respectivement dans les champs **[!UICONTROL Nom d’utilisateur anonyme]** et **[!UICONTROL Mot de passe utilisateuranonyme]**. Les informations d’identification spécifiées sont utilisées pour gérer l’authentification anonyme et autoriser l’accès aux utilisateurs anonymes.
-1. Cliquez sur **Enregistrer** pour enregistrer la configuration 
+1. Cliquez sur **Enregistrer** pour enregistrer la configuration.
 
 ### Désactiver le mode Protégé {#disable-protected-mode}
 
-Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Pour la désactiver, procédez comme suit :
+Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Pour le désactiver, procédez comme suit :
 
 1. Connectez-vous à la console Web AEM en tant qu’administrateur. 
 
-   * L’URL de AEM Forms sur OSGi est `https://'[server]:[port]'/system/console/configMgr`
+   * L’URL d’AEM Forms sur OSGi est `https://'[server]:[port]'/system/console/configMgr`
    * L’URL d’AEM Forms on JEE est `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Ouvrez les **[!UICONTROL configurations de Mobile Forms]** à des fins d’édition.
@@ -69,12 +68,12 @@ Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé 
 ### Spécification des détails sur le serveur AEM Forms  {#provide-details-of-aem-forms-server}
 
 1. Dans Designer, cliquez sur **Tools**> **Options**.
-1. Dans la fenêtre Options, sélectionnez la page **Options serveur**, fournissez les détails suivants, puis cliquez sur **OK**.
+1. Dans la fenêtre Options, sélectionnez la page **Options du serveur**, fournissez les détails suivants, puis cliquez sur **OK**.
 
    * **URL de serveur** : URL du serveur de AEM Forms.
 
    * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.
-   * **Contexte de la Prévisualisation HTML :** chemin du profil pour le rendu des formulaires XFA. Les profils par défaut suivants permettent de prévisualisation du formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
+   * **Contexte de l’aperçu HTML :** chemin du profil pour le rendu des formulaires XFA. Les profils par défaut suivants sont utilisés pour prévisualiser le formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
 
@@ -86,13 +85,13 @@ Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
    >[!NOTE]
    >
-   >Assurez-vous que le serveur AEM Forms est en cours d’exécution. La prévisualisation HTML se connecte au serveur CRX pour *générer* une prévisualisation.
+   >Vérifiez que le serveur AEM Forms est opérationnel. L’aperçu HTML se connecte au serveur CRX pour *générer* un aperçu.
 
    ![Options d’AEM Forms Designer ](assets/server_options.png)
 
    Options d’AEM Forms Designer
 
-1. Pour prévisualisation d’un formulaire au format HTML, cliquez sur l’onglet **Prévisualisation HTML**.
+1. Pour prévisualiser un formulaire au format HTML, cliquez sur l’onglet **Aperçu HTML** .
 
    >[!NOTE]
    >
@@ -105,7 +104,7 @@ Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
    >[!CAUTION]
    >
-   >Pour tester la véritable expérience de l’utilisateur final, prévisualisation vos formulaires dans des navigateurs externes (Google Chrome, Microsoft Edge, Mozilla Firefox, etc.). Chaque navigateur utilise un moteur distinct pour générer du code HTML. Il peut donc exister des différences dans la manière dont un formulaire est prévisualisation dans Designer et dans un navigateur externe.
+   >Pour tester l’expérience de l’utilisateur final, prévisualisez vos formulaires dans des navigateurs externes (Google Chrome, Microsoft Edge, Mozilla Firefox, etc.). Chaque navigateur utilise un moteur distinct pour effectuer le rendu HTML. Il peut donc y avoir des différences dans la manière dont les aperçus de formulaire sont affichés dans Designer et dans un navigateur externe.
 
 ## Pour prévisualiser un formulaire contenant des données d’exemple {#to-preview-a-form-using-sample-data}
 
