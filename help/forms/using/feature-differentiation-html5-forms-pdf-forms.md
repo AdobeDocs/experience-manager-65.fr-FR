@@ -11,14 +11,13 @@ topic-tags: hTML5_forms
 discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 87%
 
 ---
-
 
 # Différences de caractéristiques entre formulaires HTML5 et formulaires PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
 
@@ -54,7 +53,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   <tr>
    <td>Pagination<br /> </td>
    <td><p>Un formulaire HTML5 est divisé en panneaux et en zones pour lui donner un aspect similaire aux formulaires PDF. La taille d’une page est calculée de façon dynamique. Si tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée et un espace vide (espace blanc) ne s’affiche pas entre les pages, au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion des données ou des scripts ajoutent du contenu à une page, la longueur de la page s’ajuste au contenu qui vient d’être ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’ajuster au contenu qui vient d’être ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td>
-   <td>La pagination dans le fichier PDF dépend du contenu des données fusionné ou du contenu de l’utilisateur et le nombre de pages est augmenté/réduit en fonction de ce contenu.</td>
+   <td>La pagination dans le PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur et le nombre de pages est augmenté/réduit en fonction de ce contenu.</td>
   </tr>
   <tr>
    <td>En-têtes/pieds de page </td>
@@ -68,7 +67,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>API de script XFA</td>
-   <td>Prend en charge les éléments de script XFA les plus couramment utilisés. Pour plus d’informations sur la liste des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
+   <td>Prend en charge les éléments de script XFA les plus couramment utilisés. Pour obtenir la liste détaillée des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
    <td>Prend en charge tous les éléments de script XFA.</td>
   </tr>
   <tr>
