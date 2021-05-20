@@ -1,25 +1,24 @@
 ---
 title: Intégrer [!DNL Assets] avec le flux d’activité
-description: Décrit les capacités d'enregistrement de  [!DNL Experience Manager] et comment le configurer pour enregistrer des événements spécifiques.
+description: Décrit les fonctionnalités d’enregistrement de  [!DNL Experience Manager] et comment le configurer pour enregistrer des événements spécifiques.
 contentOwner: AG
 role: Developer
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Gestion des ressources
+exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '269'
 ht-degree: 53%
 
 ---
 
-
 # Intégrer [!DNL Assets] au flux d’activité {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] les utilisateurs effectuent de nombreuses actions, telles que la création, le téléchargement et la suppression de fichiers. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les capacités d&#39;enregistrement de [!DNL Experience Manager] et comment configurer [!DNL Experience Manager] pour enregistrer des événements spécifiques.
+[!DNL Adobe Experience Manager Assets] Les utilisateurs effectuent de nombreuses opérations, telles que la création, le chargement et la suppression d’actifs. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement de [!DNL Experience Manager] et comment configurer [!DNL Experience Manager] afin d’enregistrer des événements spécifiques.
 
-## Performances et comportement par défaut {#performance-considerations-and-default-behavior}
+## Considérations de performance et comportement par défaut {#performance-considerations-and-default-behavior}
 
-Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. Pour ces raisons, l&#39;intégration de [!DNL Assets] au flux d&#39;Activité est désactivée par défaut.
+Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. Pour ces raisons, l’intégration de [!DNL Assets] au flux d’activités est désactivée par défaut.
 
 ## Événements d’action pris en charge {#supported-action-events}
 
@@ -41,11 +40,11 @@ Il est possible de configurer l’enregistrement des événements suivants :
 * Sous-ressource mise à jour (SUBASSET_UPDATED)
 * Sous-ressource supprimée (SUBASSET_REMOVED)
 
-## Configurer [!DNL Assets] l&#39;enregistrement des événements {#configuring-aem-assets-events-recording}
+## Configurer [!DNL Assets] l’enregistrement des événements {#configuring-aem-assets-events-recording}
 
-La [console Web](/help/sites-deploying/configuring-osgi.md) permet d&#39;accéder au réglage de l&#39;enregistreur du Événement des ressources. Pour configurer l’enregistreur de Événement des ressources, procédez comme suit :
+La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder au réglage de l’enregistreur d’événements de ressources. Pour configurer l’enregistreur d’événements de ressources, procédez comme suit :
 
-1. Accédez à la **[!UICONTROL console Web]**
+1. Accédez à la **[!UICONTROL console web]**
 
 1. Cliquez sur **[!UICONTROL Configuration]**.
 
