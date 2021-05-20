@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 91%
 
 ---
-
 
 # Configuration des attributs système avancés {#configure-advanced-system-attributes}
 
@@ -41,7 +40,7 @@ Utilisez la page Configurer les attributs système avancés pour modifier certai
 
    **Expression cron d’achèvement de synchronisation :** intervalle auquel User Management tente d’effectuer à nouveau les synchronisations ayant échoué (voir [Configuration de l’option de nouvelle synchronisation des annuaires](/help/forms/using/admin-help/synchronizing-directories.md#configure-the-directory-synchronization-retry-option)).
 
-   **Délai d’expiration de verrouillage de tâche de grappe en minutes :** option utilisée dans les environnements organisés en grappes. Si la synchronisation échoue sur un nœud et que le verrouillage de la grappe n’est pas désactivé, cette valeur permet de spécifier le nombre de minutes durant lesquelles un autre nœud doit patienter avant de forcer l’acquisition du verrouillage. La valeur par défaut est de `15` minutes. Les valeurs valides sont comprises entre `1` et `1440` minutes.
+   **Délai d’expiration de verrouillage de tâche de grappe en minutes :** option utilisée dans les environnements organisés en grappes. Si la synchronisation échoue sur un nœud et que le verrouillage de la grappe n’est pas désactivé, cette valeur permet de spécifier le nombre de minutes durant lesquelles un autre nœud doit patienter avant de forcer l’acquisition du verrouillage. La valeur par défaut est de `15` minutes. Les valeurs valides sont `1` à `1440` minutes.
 
 1. (Facultatif) Modifiez les attributs suivants, puis cliquez sur **[!UICONTROL OK]** :
 
