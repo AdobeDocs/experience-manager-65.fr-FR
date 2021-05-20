@@ -10,25 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f550b747-2def-4317-9ef7-dc6c1e7bb404
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: 76a8f93f-eb8a-4e68-8626-efa6dc67668f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 73%
 
 ---
 
-
 # Utilisation des jeux de formulaires dans l’espace de travail AEM Forms{#working-with-formsets-in-aem-forms-workspace}
 
-Un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés comme un ensemble unique de formulaires aux utilisateurs finaux. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, ils passent facilement d’un formulaire à l’autre. Le jeu de formulaires peut ensuite être envoyé en un simple clic. Pour plus d’informations sur les jeux de formulaires et sur leur configuration, voir [Jeu de formulaires en AEM Forms](../../forms/using/formset-in-aem-forms.md).
+Un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés comme un ensemble unique de formulaires aux utilisateurs finaux. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, ils passent facilement d’un formulaire à l’autre. Le jeu de formulaires peut ensuite être envoyé en un simple clic. Pour plus d’informations sur les jeux de formulaires et leur configuration, voir [Jeu de formulaires dans AEM Forms](../../forms/using/formset-in-aem-forms.md).
 
 L’espace de travail AEM Forms prend en charge les jeux de formulaires. Avec les jeux de formulaires, plusieurs formulaires associés à un service ou processus peuvent être regroupés pour automatiser un processus d’entreprise et présentés aux utilisateurs finaux. Dans ce cas, les utilisateurs peuvent remplir le jeu entier comme un seul et il n’est pas nécessaire de classer, envoyer et suivre des processus ou des formulaires individuels.
 
 ## Comment joindre un jeu de formulaires au point de départ dans l’application d’espace de travail AEM Forms {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
 1. Créez un flux de processus d’entreprise dans Workbench. Pour plus d’informations, voir [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
-1. Dans les propriétés de processus du point de départ, sélectionnez **Utiliser un actif CRX** dans Présentation et Données.
+1. Dans les propriétés de processus du point de départ, sélectionnez **Use A CRX Asset** dans Presentation &amp; Data.
 
    ![1-3](assets/1-3.png)
 
@@ -42,7 +41,7 @@ L’espace de travail AEM Forms prend en charge les jeux de formulaires. Avec le
 
 ## Utilisation des jeux de formulaires dans l’espace de travail AEM Forms {#using-formset-in-nbsp-aem-forms-workspace}
 
-Une fois qu’un jeu de formulaires est attaché à un point de départ, ce dernier peut être appelé, comme tout autre point de départ, à partir de l’espace de travail AEM Forms.
+Une fois qu’un jeu de formulaires est associé à un point de départ, ce dernier peut être appelé, comme tout autre point de départ, à partir de l’espace de travail AEM Forms.
 
 Les opérations prises en charge sur le jeu de formulaires via l’espace de travail AEM Forms sont les suivantes :
 
@@ -59,4 +58,3 @@ Les opérations prises en charge sur le jeu de formulaires via l’espace de tra
 >[!NOTE]
 >
 >Pour améliorer les performances durant le déplacement d’un formulaire à l’autre d’un jeu de formulaires, tous les boutons de l’espace de travail (Précédent, Suivant, Envoyer, etc.) sont désactivés jusqu’à ce que le formulaire approprié soit complètement rendu.
-
