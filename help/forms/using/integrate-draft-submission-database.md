@@ -8,14 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 92%
 
 ---
-
 
 # Exemple d’intégration d’un composant brouillons &amp; envois à la base de données {#sample-for-integrating-drafts-submissions-component-with-database}
 
@@ -40,14 +39,14 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
    Exemple de package pour l’intégration de base de données
 
-   [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+[Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Accédez à AEM gestionnaire de packages à l’adresse https://[*host*]:[*port*]/crx/packmgr/.
 1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
 
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Installer]** en regard du package pour installer le package. 
-1. Accédez à **[!UICONTROL AEM Configuration de la console Web]**
+1. Accédez à **[!UICONTROL Configuration de la console Web AEM]**
 à l’adresse https://[*host*]:[*port*]/system/console/configMgr.
 1. Cliquez pour ouvrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** (Configuration des brouillons et des envois du portail Forms) en mode d’édition.
 
@@ -84,11 +83,11 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de données du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau de données.
    >[!NOTE]
    >
-   >Si vous modifiez les noms des tables, fournissez-les dans la configuration de Forms Portal.
+   >Si vous modifiez les noms de tableau, indiquez-les dans la configuration du portail de formulaires.
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
-1. La connexion à la base de données peut être effectuée via la source de données en pool Apache Sling Connection.
+1. La connexion à la base de données peut être effectuée via la source de données en pool de la connexion Apache Sling.
 1. Pour la connexion Apache Sling, recherchez le **[!UICONTROL pool de connexions Apache Sling Days Commons]** en mode d’édition dans la configuration de la console Web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
 
 <table>
@@ -343,7 +342,7 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
     util.js
    ```
 
-   Dans le code ci-dessus, `util` est le nom du dossier et`util.js` est le nom du fichier dans le dossier `util`. Le dossier `util` et le fichier `util.js` sont créés lors des étapes suivantes.
+   Dans le code ci-dessus, `util` est le nom du dossier et`util.js` est le nom du fichier dans le dossier `util`. Le dossier `util` et le fichier `util.js` sont créés aux étapes suivantes.
 
 1. Cliquez avec le bouton droit sur le nœud `cq:ClientLibraryFolder` créé à l’étape 2 et sélectionnez Créer > Créer un dossier. Créez un dossier nommé `util`. Cliquez sur **[!UICONTROL Enregistrer tout]**. Cliquez avec le bouton droit sur le dossier `util` et sélectionnez Créer > Créer un fichier. Créez un fichier nommé `util.js`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
@@ -422,5 +421,4 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
    >
    >Si vous utilisez des bibliothèques client personnalisées au lieu des bibliothèques client guideRuntime et guideRuntimeWithXfa, utilisez le nom de catégorie pour intégrer la bibliothèque client créée dans cette procédure à vos bibliothèques personnalisées chargées lors de l’exécution.
 
-1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, un message s’affiche lorsque le nom de fichier dépasse 150 caractères (y compris l’extension).
-
+1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, lorsque le nom de fichier dépasse 150 caractères (extension comprise), un message s’affiche.
