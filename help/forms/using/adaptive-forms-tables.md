@@ -8,15 +8,14 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulaires adaptatifs
+exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2430'
-ht-degree: 75%
+ht-degree: 92%
 
 ---
-
 
 # Tableaux dans les formulaires adaptatifs{#tables-in-adaptive-forms}
 
@@ -42,13 +41,13 @@ Pour créer un tableau, faites glisser un composant Tableau à partir de l’exp
 
 ### A propos de l’en-tête et des cellules du corps {#about-header-and-body-cells}
 
-Les cellules d’en-tête sont des zones de texte. Pour modifier le libellé d’un en-tête, cliquez avec le bouton droit de la souris sur la cellule d’en-tête puis sur **Modifier**. Dans la boîte de dialogue Modifier, mettez à jour le libellé dans le champ **Valeur** et cliquez sur **OK**.
+Les cellules d’en-tête sont des zones de texte. Pour modifier le libellé d’un en-tête, cliquez avec le bouton droit de la souris sur la cellule d’en-tête puis sur **Modifier**. Dans la boîte de dialogue Modifier, mettez à jour le libellé dans le champ **Valeur** et appuyez sur **OK**.
 
 Les cellules du corps sont par défaut des zones de texte. Vous pouvez remplacer une cellule de corps par un autre composant de formulaire adaptatif disponible dans le panneau latéral, tel qu’une zone numérique, un sélecteur de date, ou une liste déroulante.
 
 Par exemple, la première rangée du corps du tableau ci-dessous inclut les composants Zone de texte, Sélecteur de dates et Liste déroulante comme cellules.
 
-![types de cellule-ligne](assets/row-cell-types.png)
+![row-cell-types](assets/row-cell-types.png)
 
 Vous pouvez fusionner deux cellules du corps ou plus en sélectionnant les cellules que vous souhaitez fusionner, puis en cliquant avec le bouton droit et en choisissant la commande **Fusionner**. Vous pouvez aussi diviser une cellule fusionnée en cliquant sur celle-ci et en sélectionnant **Fractionner les cellules**.
 
@@ -70,60 +69,60 @@ Le menu déroulant pour la ligne propose également l’opération Modifier pour
 >
 >Alors qu’il est possible d’ajouter un nombre quelconque de lignes à un tableau, le nombre maximal de colonnes que vous pouvez ajouter est de six. En outre, vous ne pouvez pas supprimer la ligne d’en-tête du tableau.
 
-### Ajouter une description de tableau  {#add-table-description}
+### Ajout d’une description de tableau {#add-table-description}
 
 Vous pouvez ajouter une description au tableau pour expliquer comment il organise les informations que les lecteurs peuvent interpréter et lire. Pour ajouter la description :
 
-1. Sélectionnez le tableau et appuyez sur ![cmppr](assets/cmppr.png) pour afficher ses propriétés dans la barre latérale.
+1. Sélectionnez le tableau, puis appuyez sur ![cmppr](assets/cmppr.png) pour afficher ses propriétés dans la barre latérale.
 1. Spécifiez le résumé dans l’onglet Accessibilité.
 1. Cliquez sur **Terminé**.
 
-### Trier les colonnes d&#39;un tableau {#sortcolumnstable}
+### Tri des colonnes d&#39;un tableau {#sortcolumnstable}
 
 Vous pouvez trier les données en fonction de n’importe quelle colonne d’un tableau dans le formulaire adaptatif. Les valeurs de la colonne peuvent être triées par ordre croissant ou décroissant.
 
-Le tri peut être appliqué aux colonnes du tableau contenant :
+Le tri peut être appliqué aux colonnes du tableau contenant :
 
-* Texte statique
-* Propriétés de l’objet de modèle de données
-* Combinaison de texte statique et de propriétés d’objet de modèle de données
+* Du texte statique
+* Des propriétés d&#39;objet de modèle de données
+* Une combinaison de texte statique et de propriétés d’objet de modèle de données
 
-Pour appliquer le tri sur les colonnes du tableau, les cellules des colonnes du tableau doivent contenir l’un des composants suivants : Zone numérique, Procédure pas à pas numérique, champ de saisie de date, sélecteur de date, texte ou zone de texte.
+Pour appliquer le tri sur les colonnes du tableau, les cellules des colonnes du tableau doivent contenir l’un des composants suivants : Zone numérique, Procédure pas à pas numérique, champ de saisie de date, sélecteur de date, texte ou zone de texte.
 
-Pour activer le tri :
+Pour activer le tri :
 
-1. Sélectionnez le tableau et appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer). Vous pouvez également sélectionner le tableau à l’aide du navigateur **Contenu** dans le panneau latéral de la communication interactive.
+1. Sélectionnez le tableau et appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **Contenu** dans le panneau latéral de la communication interactive.
 1. Sélectionnez **Activer le tri**.
-1. Appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du tableau. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
+1. Appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les propriétés. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
 
    ![Activer le tri](assets/enable_sorting_new.png)
 
-1. Passez au mode **Prévisualisation** pour vue de la sortie. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
-1. Cliquez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
+1. Passez au mode **Prévisualisation** pour voir le rendu. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
+1. Appuyez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
 
    Un en-tête de colonne avec une flèche vers le haut indique que le tableau est trié en fonction de cette colonne. En outre, les valeurs de la colonne s’affichent dans l’ordre croissant.
 
    ![Tri dans l’ordre croissant](assets/sorting_ascending_new.png)
 
-   De même, un en-tête de colonne avec une flèche vers le bas représente que les valeurs de la colonne sont affichées dans l’ordre décroissant.
+   De même, un en-tête de colonne avec une flèche vers le bas indique que les valeurs de la colonne sont affichées dans l’ordre décroissant.
 
    Vous pouvez également apporter des modifications au tableau en mode **Prévisualisation** et cliquer de nouveau sur l’en-tête de colonne pour trier les valeurs de colonne.
 
-## Définir la largeur d&#39;une colonne pour un tableau {#set-column-width}
+## Définir la largeur de colonne d’un tableau {#set-column-width}
 
-Exécutez les étapes suivantes pour définir la largeur de colonne d’un tableau :
+Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
-1. Dans l&#39;onglet **[!UICONTROL Contenu]**, appuyez sur le composant **[!UICONTROL Table]** et appuyez sur l&#39;icône Configurer (![Configurer](assets/configure-icon.svg)).
+1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur le composant **[!UICONTROL Tableau]** et appuyez sur l’icône Configurer (![Configurer](assets/configure-icon.svg)).
 
-1. Entrez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, la spécification de 2,4,6 comme valeur dans le champ **[!UICONTROL Largeur de colonne]** entraîne la définition de la largeur des colonnes comme 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième colonne. 2/12 car la largeur de la première colonne correspond à un sixième de la largeur du tableau. De même, le 12/4 définit la largeur de la deuxième colonne comme un tiers de la largeur du tableau et le 6/12 comme la largeur de la troisième colonne comme la moitié de la largeur du tableau.
+1. Entrez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, la spécification de 2,4,6 comme valeur dans le champ **[!UICONTROL Largeur de colonne]** entraîne la définition de la largeur des colonnes comme 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième colonne. 2/12 comme la largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
 
 ## Configuration du style de tableau {#configure}
 
 Vous pouvez définir le style d’un tableau à l’aide du mode Style dans la barre d’outils de la page. Exécutez les étapes suivantes pour passer en mode Style et modifier le style du tableau.
 
-1. Dans la barre d’outils de la page, avant la Prévisualisation, appuyez sur ![menu déroulant Zone de travail](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre d’outils de la page, avant l’aperçu, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
 
-1. Dans la barre latérale, sélectionnez le tableau et appuyez sur le bouton Modifier ![modifier-button](assets/edit-button.png).
+1. Dans la barre latérale, sélectionnez le tableau, puis appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png).
 Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 ![Propriétés de style d’un tableau](assets/style-table.png)
@@ -142,7 +141,7 @@ Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou l
 
 Lors de l’exécution, vous verrez les boutons **+** et *-* pour ajouter ou supprimer une ligne.
 
-![add-delete-rows-dynamiquement](assets/add-delete-rows-dynamically.png)
+![ajout-suppression-dynamique-de lignes](assets/add-delete-rows-dynamically.png)
 
 >[!NOTE]
 >
@@ -155,7 +154,7 @@ Les tableaux des formulaires adaptatifs permettent d’écrire des expressions e
 Alors que les tableaux et les lignes ne prennent en charge que les expressions de visibilité pour contrôler leur visibilité en fonction de la valeur renvoyée par une expression, les cellules prennent en charge les expressions suivantes :
 
 * **Script d’initialisation** : pour effectuer une action à l’initialisation d’un champ.
-* **Script de validation de valeur :** pour modifier les composants d’un formulaire après modification de la valeur d’un champ.
+* **Script de validation de valeur** : pour modifier les composants d’un formulaire après modification de la valeur d’un champ.
 
 >[!NOTE]
 >
@@ -172,7 +171,7 @@ Pour obtenir la liste complète des classes de formulaires adaptatifs, des évé
 
 ## Dispositions pour appareils mobiles {#mobile-layouts}
 
-Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms offre deux types de dispositions mobiles pour les tableaux : En-têtes à gauche et Colonnes réductibles.
+Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms offre deux types de dispositions de tableaux pour les appareils mobiles - En-têtes à gauche et Colonnes réductibles.
 
 Vous pouvez configurer une disposition de tableau pour périphériques mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
@@ -180,7 +179,7 @@ Vous pouvez configurer une disposition de tableau pour périphériques mobiles d
 
 Dans la disposition En-têtes à gauche, les en-têtes du tableau sont transposés à gauche. Une seule cellule apparaît pour un en-tête. Chaque ligne dans cette disposition s’affiche en tant que partie distincte. Les images suivantes comparent un tableau sur un bureau et le même tableau sur un périphérique mobile.
 
-![vue de bureau](assets/desktopview_new.png)
+![vue Bureau](assets/desktopview_new.png)
 
 Vue Bureau d’un tableau avec disposition En-têtes à gauche
 
@@ -194,15 +193,15 @@ Dans la disposition Colonnes réductibles, les colonnes du tableau sont réduite
 
 >[!NOTE]
 >
->Bien que la disposition Colonnes réductibles soit optimisée pour les périphériques mobiles, elle fonctionne également sur le bureau, si la largeur disponible ne suffit pas à afficher toutes les colonnes d’un tableau.
+>Remarque : alors que la disposition Colonne réductible est optimisée pour les appareils mobiles, elle fonctionne également sur le bureau, si la largeur disponible est insuffisante pour afficher toutes les colonnes d’un tableau.
 
 Les images suivantes comparent l’aspect d’un tableau affiché sur un périphérique, l’un comportant des colonnes réduites, l’autre les affichant développées.
 
-![colonne réduite](assets/collapsed-column.png)
+![collapsed-column](assets/collapsed-column.png)
 
 Colonnes réduites d’un tableau comportant uniquement deux colonnes, apparaissant sur un périphérique mobile
 
-![collapse_column](assets/collapsible_column.png)
+![collapsible_column](assets/collapsible_column.png)
 
 Colonne développée d’un tableau sur un périphérique mobile
 
@@ -212,7 +211,7 @@ Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors
 
 Prenons l’exemple du tableau récapitulatif de transaction bancaire suivant, que nous voulons renseigner avec des données provenant d’un fichier XML.
 
-![tableau de fusion-données](assets/data-merge-table.png)
+![data-merge-table](assets/data-merge-table.png)
 
 Dans cet exemple, la propriété Nom d’élément pour :
 
@@ -222,7 +221,7 @@ Dans cet exemple, la propriété Nom d’élément pour :
 * la cellule de corps sous Type de transaction est **type**
 * la cellule de corps sous Montant en euros est **tableItem3**
 
-Le fichier XML contenant les données au format suivant : 
+Le fichier XML contenant les données au format suivant :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -280,13 +279,13 @@ Le fichier XML contenant les données au format suivant :
 </afData>
 ```
 
-Dans l’exemple XML, les données d’une ligne sont définies par les balises `<Row1>`, qui est le nom de l’élément pour la ligne du tableau. Dans la balise `<Row1>`, les données de chaque cellule sont définies dans la balise pour son nom d’élément, tel que `<tableItem1>`, `<tableItem2>`, `<tableItem3>` et `<type>`.
+Dans l’exemple XML, les données d’une ligne sont définies par les balises `<Row1>`, qui sont le nom d’élément de la ligne du tableau. Dans la balise `<Row1>`, les données de chaque cellule sont définies dans la balise pour son nom d’élément, notamment `<tableItem1>`, `<tableItem2>`, `<tableItem3>` et `<type>`.
 
-Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. Par exemple, si le formulaire adaptatif se trouve à l’emplacement *https://localhost:4502/myForms/bankTransaction.html* et que le fichier XML de données est enregistré à l’emplacement *C:/myTransactions/bankSummary.xml*, vous pouvez vue le tableau avec des données à l’adresse URL suivante :
+Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. Par exemple, si le formulaire adaptatif se trouve à l’emplacement *https://localhost:4502/myForms/bankTransaction.html* et que le fichier de données XML est enregistré à l’emplacement *C:/myTransactions/bankSummary.xml*, vous pouvez afficher le tableau avec les données à l’adresse URL suivante :
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
-![tableau fusionné de données](assets/data-merged-table.png)
+![data-merged-table](assets/data-merged-table.png)
 
 ## Utilisation des composants XDP et des types complexes de schéma XSD {#use-xdp-components-and-xsd-complex-types}
 
@@ -314,4 +313,3 @@ Vous pouvez aussi faire glisser et déposer un groupe d’éléments de type com
 * Dans un tableau par défaut, chaque cellule de contenu est associée à un nom d’élément prédéfini. Si vous ajoutez un autre tableau dans le formulaire adaptatif, les cellules de contenu par défaut du nouveau tableau auront le même nom d’élément que dans le premier. Dans ce cas, les données générées lors de l’envoi du formulaire comprennent uniquement les données des cellules de contenu par défaut de l’un des tableaux. Par conséquent, assurez-vous que vous renommez les noms d’élément pour les cellules de contenu par défaut pour qu’elles restent uniques et éviter toute perte de données.
 
    Notez que cela s’applique uniquement aux cellules de contenu par défaut. Si vous ajoutez d’autres lignes ou colonnes à un tableau, des noms d’éléments uniques seront générés automatiquement pour les cellules de contenu non définies par défaut.
-
