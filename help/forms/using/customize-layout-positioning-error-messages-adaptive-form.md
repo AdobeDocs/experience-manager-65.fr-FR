@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
-
 
 # Personnalisation de la disposition et de la position des messages d’erreur d’un formulaire adaptatif{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
@@ -35,8 +34,8 @@ Vous pouvez personnaliser la disposition d’un champ spécifique ou de tous les
 
 Effectuez les étapes suivantes pour appliquer une disposition personnalisée à un champ spécifique :
 
-1. Ouvrez le formulaire en mode **Style**. Pour ouvrir le formulaire en mode style, dans la barre d’outils de la page, appuyez sur ![liste déroulante de trame](assets/canvas-drop-down.png) > **Style**.
-1. Dans la barre latérale, sous **Objets de formulaire**, sélectionnez le champ et appuyez sur le bouton Modifier ![bouton-modifier](assets/edit-button.png).
+1. Ouvrez le formulaire en mode **Style**. Pour ouvrir le formulaire en mode Style, dans la barre d’outils de la page, appuyez sur ![menu déroulant de la zone de travail](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre latérale, sous **Objets de formulaire**, sélectionnez le champ et appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png).
 1. Sélectionnez l’état du champ que vous souhaitez personnaliser, puis spécifiez le style de cet état.
 
    ![Spécification du style intégré d’un champ](assets/edit-error-state.png)
@@ -48,7 +47,7 @@ Avec AEM Forms, vous pouvez désormais créer un thème et l’appliquer à votr
 Créez un thème à l’aide de l’éditeur de thèmes pour personnaliser la mise en forme de tous les champs du formulaire. Après avoir créé un thème, effectuez les étapes suivantes pour l’appliquer à un formulaire :
 
 1. Ouvrez votre formulaire en mode d’édition.
-1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![niveau champ](assets/field-level.png) > **Conteneur de formulaire adaptatif**, puis sur ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis appuyez sur ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, sous Thème de formulaire adaptatif, sélectionnez le thème que vous avez créé à l’aide de l’éditeur de thèmes.
 
 ## Création d’une disposition de champ personnalisée  {#create-a-custom-field-layout}
