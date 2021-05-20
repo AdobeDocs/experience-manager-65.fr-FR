@@ -7,14 +7,13 @@ uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 95%
 
 ---
-
 
 # Utilisation de métadonnées dans une notification électronique {#use-metadata-in-an-email-notification}
 
@@ -152,7 +151,7 @@ Une application AEM Forms fournit plusieurs variables de métadonnées (paires c
 
 ## Utilisation des métadonnées personnalisées dans une notification électronique {#using-custom-metadata-in-an-email-notification}
 
-Vous pouvez également utiliser des métadonnées personnalisées dans une notification électronique. Les métadonnée personnalisées contiennent des informations en plus des métadonnées générées par le système ; par exemple, les informations de stratégie récupérées à partir d’une base de données. Vous pouvez utiliser un lot ECMAScript ou OSGi pour ajouter des métadonnées personnalisées dans crx-repository :
+Vous pouvez également utiliser des métadonnées personnalisées dans une notification électronique. Les métadonnée personnalisées contiennent des informations en plus des métadonnées générées par le système ; par exemple, les informations de stratégie récupérées à partir d’une base de données. Vous pouvez utiliser un lot ECMAScript ou OSGi pour ajouter des métadonnées personnalisées dans le référentiel crx :
 
 ### Utilisation de ECMAScript pour ajouter des métadonnées personnalisées  {#use-ecmascript-to-add-custom-metadata}
 
@@ -201,11 +200,11 @@ Vous pouvez utiliser l’interface Java WorkitemUserMetadataService pour ajouter
 
 Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers .jar [SDK client AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
-1. Ouvrez l’IDE Eclipse. Accédez à Fichier > Nouveau projet.
+1. Ouvrez l’IDE Eclipse. Accédez à Fichier  Nouveau projet.
 
 1. Sur l’écran de sélection de l’assistant, sélectionnez Projet Maven puis cliquez sur Suivant.
 
-1. Sur le nouveau projet Maven, conservez les valeurs par défaut, puis cliquez sur Suivant. Sélectionnez un archétype et cliquez sur Suivant. Par exemple, maven-archetype-quickstart. Spécifiez l’ID du groupe, l’ID de l’artefact, la version et le package pour le projet et cliquez sur Terminer. La du projet est créée.
+1. Sur le nouveau projet Maven, conservez les valeurs par défaut, puis cliquez sur Suivant. Sélectionnez un archétype et cliquez sur Suivant. Par exemple, maven-archetype-quickstart. Spécifiez l’ID du groupe, l’ID de l’artefact, la version et le package pour le projet et cliquez sur Terminer. Le projet est créé.
 
 1. Ouvrez le fichier pom.xml pour modifier et remplacer tout le contenu du fichier par ce qui suit :
 
