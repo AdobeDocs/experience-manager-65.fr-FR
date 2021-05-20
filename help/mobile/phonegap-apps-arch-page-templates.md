@@ -359,7 +359,7 @@ Incluez d’autres hooks selon les besoins. Les hooks suivants sont disponibles 
 
 Ce répertoire est vide jusqu’à ce que vous exécutiez la commande `phonegap run *<platform>*` sur le projet. Actuellement, `*<platform>*` peut être `ios` ou `android`.
 
-Une fois l’application créée pour une plateforme spécifique, le répertoire correspondant est créé et contient le code de l’application spécifique à la plateforme.
+Une fois que vous avez créé l’application pour une plateforme spécifique, le répertoire correspondant est créé et contient le code de l’application spécifique à la plateforme.
 
 ### plugins/ {#plugins}
 
