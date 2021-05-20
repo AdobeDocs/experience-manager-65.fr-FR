@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
-feature: Asset Management
+feature: Gestion des ressources
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '333'
 ht-degree: 93%
 
 ---
-
 
 # Diffusion d’images optimisées pour un site réactif {#delivering-optimized-images-for-a-responsive-site}
 
@@ -42,7 +41,7 @@ Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebappl
    >
    >La ressource sélectionnée *et* le paramètre d’image prédéfini ou le paramètre de visionneuse prédéfini sélectionné doivent être publiés pour que le bouton **[!UICONTROL URL]** ou **[!UICONTROL RESS]** soit disponible.
    >
-   >Dynamic Media - Le mode hybride nécessite la publication des paramètres d’image prédéfinis ; Dynamic Media - Le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
+   >Dynamic Media - Le mode hybride requiert la publication de paramètres d’image prédéfinis ; Dynamic Media : le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
 
 1. Appuyez sur **[!UICONTROL RESS]**.
 
