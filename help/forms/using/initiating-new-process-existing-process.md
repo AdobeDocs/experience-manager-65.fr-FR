@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: cbc5af90-5d51-4fdb-ac72-eea91137975d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+exl-id: 6fa97c06-9238-4444-b67f-983ef3b6fdc8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 97%
 
 ---
-
 
 # Lancement d’un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms{#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
 
@@ -35,4 +34,3 @@ Vous trouverez ci-dessous les étapes à suivre pour lancer un nouveau processus
 1. Dans la barre d’outils de l’action Tâche, cliquez sur **[!UICONTROL Démarrer]**. Un formulaire adaptatif pour la nouvelle instance de processus est affiché avec des données préremplies.
 
 1. Mettez à jour les données le cas échéant, et cliquez sur **[!UICONTROL Terminer]** ou sur le bouton approprié dans le formulaire.
-
