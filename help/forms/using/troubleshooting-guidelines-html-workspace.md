@@ -9,14 +9,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: a054b60a-5e89-4c98-87bc-35669988d160
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 80%
 
 ---
-
 
 # Dépannage des conseils de l’espace de travail AEM Forms. {#troubleshooting-guidelines-for-aem-forms-workspace}
 
@@ -24,7 +23,7 @@ Cet article explique comment déboguer l’espace de travail AEM Forms en activa
 
 ## Impossible d’installer le package de l’espace de travail AEM Forms  {#unable-to-install-aem-forms-workspace-package}
 
-Après l’installation du correctif, ouvrez l’espace de travail AEM Forms. Si vous rencontrez l’erreur Aucune ressource trouvée, ouvrez CRX Package Manager, puis réinstallez le package `adobe-lc-workspace-pkg-<version>.zip`.
+Après l’installation du correctif, ouvrez l’espace de travail AEM Forms. Si vous rencontrez l’erreur Aucune ressource trouvée, ouvrez le gestionnaire de modules CRX, puis réinstallez le module `adobe-lc-workspace-pkg-<version>.zip`.
 
 Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, effectuez les étapes suivantes :
 
@@ -43,7 +42,7 @@ Vous pouvez générer des journaux à différents niveaux pour la résolution op
 
 Dans l’espace de travail AEM Forms :
 
-* Pour obtenir les informations de journalisation relatives à un fichier de composant spécifique, ajoutez `/log/<ComponentFile>/<LogLevel>` dans l’URL, puis appuyez sur `Enter`. Toutes les informations de journalisation pour le fichier de composant au niveau spécifié de journal sont imprimées sur la console.
+* Pour obtenir les informations de journalisation sur un fichier de composant spécifique, ajoutez `/log/<ComponentFile>/<LogLevel>` dans l’URL, puis appuyez sur `Enter`. Toutes les informations de journalisation pour le fichier de composant au niveau spécifié de journal sont imprimées sur la console.
 
 * Pour obtenir les informations de journalisation de tous les fichiers de composant, ajoutez `/log/all/trace` dans l’URL, puis appuyez sur `Enter`.
 
@@ -150,7 +149,7 @@ Dans l’espace de travail AEM Forms :
 * INFO
 * DEBUG
 * TRACE
-* OFF
+* DÉSACTIVÉ
 
 ## Informations de débogage pour les navigateurs {#debugging-information-for-browsers}
 
