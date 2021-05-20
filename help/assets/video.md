@@ -1,5 +1,5 @@
 ---
-title: Vidéo au Dynamic Media
+title: Vidéo dans Dynamic Media
 description: Découvrez comment utiliser la vidéo dans Dynamic Media
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
@@ -11,7 +11,6 @@ docset: aem65
 feature: Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '11752'
@@ -19,7 +18,7 @@ ht-degree: 95%
 
 ---
 
-# Vidéo en Dynamic Media {#video}
+# Vidéo dans Dynamic Media {#video}
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
@@ -29,7 +28,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 
 >[!NOTE]
 >
->Avant de travailler sur la vidéo dans Dynamic Media, assurez-vous que votre administrateur AEM a déjà activé et configuré les Cloud Services Dynamic Media en mode Dynamic Media - Scene7 ou Dynamic Media - Hybrid.
+>Avant d’utiliser la vidéo dans Dynamic Media, assurez-vous que votre administrateur d’AEM a déjà activé et configuré les Cloud Services Dynamic Media en mode Dynamic Media - Scene7 ou Dynamic Media - Hybride .
 >
 >* Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media – mode Scene7 et [Dépannage de Dynamic Media – mode Scene7.](/help/assets/troubleshoot-dms7.md)
    >
@@ -75,24 +74,24 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
          [Affichage des rendus vidéo](video-renditions.md)
          [Gestion des rendus vidéo](manage-assets.md#managing-renditions)
 
-      * [Gestion des paramètres prédéfinis de la visionneuse](managing-viewer-presets.md)
-      * [Publication de ressources](publishing-dynamicmedia-assets.md)
+      * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
+      * [Publier des ressources](publishing-dynamicmedia-assets.md)
    * Utiliser des métadonnées vidéo
 
-      * Vue des propriétés d’un rendu vidéo codé tel que la fréquence d’images, le débit audio et vidéo et le codec :
+      * Affichez les propriétés d’un rendu vidéo codé, telles que la fréquence d’image, le débit audio et vidéo et le codec :
          [Affichage des propriétés de rendu vidéo](video-renditions.md)
 
-      * Modifiez les propriétés de la vidéo, telles que le titre, la description et les balises, ainsi que les champs de métadonnées personnalisés :
+      * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
          [Modification des propriétés vidéo](manage-assets.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
       * [Schémas de métadonnées](metadata-schemas.md)
    * Examiner, approuver et annoter des vidéos et conserver le contrôle total des versions
 
-      * [Annotation de ](managing-video-assets.md#annotate-video-assets) vidéos ou  [annotation de fichiers](manage-assets.md#annotating)
+      * [Annotation de ](managing-video-assets.md#annotate-video-assets) vidéos ou  [annotation de ressources](manage-assets.md#annotating)
 
-      * [Création d’une version](manage-assets.md#asset-versioning)
-      * [Application de workflows à des ](assets-workflow.md) ressources ou voir  [Démarrage d’un processus sur une ressource](manage-assets.md#starting-a-workflow-on-an-asset)
+      * [Créer une version](manage-assets.md#asset-versioning)
+      * [Application de workflows à des ](assets-workflow.md) ressources ou voir  [Démarrage d’un workflow sur une ressource](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Examiner les ressources des dossiers](bulk-approval.md)
       * [Projets](../sites-authoring/projects.md)
@@ -102,7 +101,7 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
 
 1. Pour **publier les vidéos Dynamic Media**, effectuez l’une des opérations suivantes :
 
-   * Si vous utilisez Adobe Experience Manager comme système de gestion de contenu Web, vous pouvez ajouter des vidéos directement à vos pages Web.
+   * Si vous utilisez Adobe Experience Manager comme système de gestion de contenu web, vous pouvez ajouter des vidéos directement à vos pages web.
 
       * [Ajout de vidéos à des pages web](adding-dynamic-media-assets-to-pages.md).
    * Si vous utilisez un système de gestion de contenu web tiers, vous pouvez lier ou incorporer des vidéos dans vos pages web.
@@ -164,7 +163,7 @@ Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Voir aussi [Visionneuses pour AEM Assets et Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=fr#viewers-aem-assets-dmc) et [Visionneuses pour les ressources AEM uniquement](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=fr#viewers-for-aem-assets-only).
+Voir aussi [Visionneuses pour AEM Assets et Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=fr#viewers-aem-assets-dmc) et [Visionneuses pour AEM ressources uniquement](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=fr#viewers-for-aem-assets-only).
 
 ## Bonne pratique : Utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -176,7 +175,7 @@ En ce qui concerne la lecture, la visionneuse, détecte automatiquement les fonc
 
 En combinant dans un lecteur unique la capacité de concevoir les composants de lecture à l’aide de code HTML5 et CSS, d’avoir accès à la lecture incorporée et d’utiliser les flux continus adaptatifs et progressifs selon la capacité du navigateur, vous pouvez étendre la portée de votre contenu multimédia aux utilisateurs d’appareils mobiles et de postes de travail et garantir ainsi une expérience vidéo rationalisée.
 
-Voir aussi [A propos des visionneuses HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
+Voir aussi [À propos des visionneuses HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -277,7 +276,7 @@ Le graphique suivant montre le workflow global de création de vidéos qui sont 
 
 ## Bonnes pratiques en matière de codage de vidéos {#best-practices-for-encoding-videos}
 
-Le flux de travail **Dynamic Media Encode Video** code la vidéo si vous avez activé Dynamic Media et configuré les services de cloud vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré les services de cloud de vidéos, le flux de travail **[!UICONTROL Dynamic Media Encode Video]** prend automatiquement effet lorsque vous téléchargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le processus **[!UICONTROL DAM Update Asset]** prend effet.)
+Le workflow **Vidéo de codage Dynamic Media** code la vidéo si vous avez activé Dynamic Media et configuré les services de cloud vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré les services cloud vidéo, le workflow **[!UICONTROL Vidéo de codage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** prend effet.)
 
 Vous trouverez ci-dessous quelques conseils sur les bonnes pratiques de codage des fichiers source vidéo.
 
@@ -325,7 +324,7 @@ Ce tableau décrit la façon dont les résultats de la formule se traduisent en 
 
 Par exemple, une vidéo qui a une largeur de 1440 pour une hauteur de 1080 a un format de 1440/1080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour le codage du fichier vidéo.
 
-### Débit binaire  {#bitrate}
+### Débit binaire {#bitrate}
 
 Le débit correspond à la quantité de données encodées pour produire une seule seconde de lecture vidéo. Le débit de données est mesuré en kilobits par seconde (kbit/s).
 
@@ -404,9 +403,9 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 | Type de vidéo | Largeur x hauteur | Rapport de largeur | Rapport de hauteur |
 |--- |--- |--- |--- |
-| Source | 1 920 x 1 080 | 1 | 1 |
+| Source | 1 920 x 1 080 | 1 | 3 |
 | Codée | 960 x 540 | 2 | 2 |
-| Codée | 640 x 360 | 3 | 1 |
+| Codée | 640 x 360 | 3 | 3 |
 | Codée | 480 x 270 | 4 | 4 |
 
 ### Format de fichier vidéo codé {#encoded-video-file-format}
@@ -491,11 +490,11 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
 1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 1, procédez comme suit :
 
-   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]** liste déroulante, sélectionnez  **[!UICONTROL YouTube Data API v3.]**
+   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]** , sélectionnez API de données  **[!UICONTROL YouTube v3.]**
 
    * Depuis la liste déroulante **[!UICONTROL Quelle plate-forme utilisez-vous pour appeler l’API ?]**, sélectionnez **[!UICONTROL Serveur web (exemple : node.js, Tomcat)]**
 
-   * Dans la liste déroulante **[!UICONTROL À quelles données allez-vous accéder ?]** liste déroulante, appuyez sur Données  **[!UICONTROL utilisateur.]**
+   * Dans la liste déroulante **[!UICONTROL À quelles données allez-vous accéder ?]** dans la liste déroulante, appuyez sur Données  **[!UICONTROL utilisateur.]**
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -640,7 +639,7 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte, car vous
 1. Veillez à vous connecter à votre instance Dynamic Media en tant qu’administrateur.
 
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud.]**
-1. Sous l&#39;en-tête Services tiers, sous YouTube, appuyez sur **[!UICONTROL Configurer maintenant.]**
+1. Sous l’en-tête Services tiers, sous YouTube, appuyez sur **[!UICONTROL Configurer maintenant.]**
 1. Dans la boîte de dialogue Créer une configuration, saisissez un titre (obligatoire) et un nom (facultatif) dans les champs correspondants.
 1. Appuyez sur **[!UICONTROL Créer.]**
 1. Dans la boîte de dialogue Paramètres du compte YouTube, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
@@ -690,7 +689,7 @@ Pour créer le profil de traitement des métadonnées, vous allez d’abord copi
 Pour automatiser la définition des propriétés YouTube par défaut pour vos vidéos transférées :
 
 1. Dans le coin supérieur gauche d’AEM, cliquez sur le logo AEM, puis, dans le rail de gauche, cliquez sur **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées.]**
-1. Cliquez sur l’option **[!UICONTROL Par défaut.]** (N’ajoutez pas de coche à la case de sélection située à gauche de &quot;valeur par défaut&quot;.)
+1. Cliquez sur l’option **[!UICONTROL Par défaut.]** (N’ajoutez pas de coche à la zone de sélection à gauche de &quot;default&quot;.)
 1. Sur la page **[!UICONTROL par défaut]**, cochez la case à gauche de **[!UICONTROL vidéo]**, puis cliquez sur **[!UICONTROL Modifier.]**
 1. Sur la page Éditeur de schéma de métadonnées, cliquez sur l’onglet **[!UICONTROL Avancé]**.
 1. Sous l’en-tête Publication YouTube, cliquez sur **[!UICONTROL Catégorie YouTube.]**
@@ -924,7 +923,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 
 La façon dont vous configurez les notifications varie si vous souhaitez recevoir des notifications pour les tâches de codage ou pour les tâches de publication YouTube :
 
-* Pour les tâches de codage, vous pouvez accéder à la page de configuration de toutes les notifications électroniques de flux de travail AEM à l’adresse **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]** et en recherchant **[!UICONTROL Service de notification par courrier électronique de flux de travail Day CQ.]** Voir  [Configuration de la notification par courrier électronique dans AEM](/help/sites-administering/notification.md). Vous pouvez cocher ou décocher les cases **[!UICONTROL Notifier sur Abort]** ou **[!UICONTROL Notifier sur Complete]** en conséquence.
+* Pour les tâches de codage, vous pouvez accéder à la page de configuration de toutes les notifications électroniques de workflow AEM à l’adresse **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]** et en recherchant **[!UICONTROL Service de notification électronique de workflow Day CQ.]** Voir  [Configuration des notifications électroniques dans AEM](/help/sites-administering/notification.md). Vous pouvez cocher ou décocher les cases correspondant à **[!UICONTROL Notifier sur Abandon]** ou **[!UICONTROL Notifier sur Terminé]** en conséquence.
 
 * Pour les tâches de publication YouTube, procédez comme suit :
 
@@ -935,7 +934,7 @@ La façon dont vous configurez les notifications varie si vous souhaitez recevoi
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
 
-1. Sur la barre d’outils intégrée, appuyez sur l’icône Configuration (en forme de clé). Cliquez sur l&#39;onglet **[!UICONTROL Arguments]**.
+1. Sur la barre d’outils intégrée, appuyez sur l’icône Configuration (en forme de clé). Cliquez sur l’onglet **[!UICONTROL Arguments]** .
 
    ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
 
@@ -1005,11 +1004,11 @@ Indiquez la période de début et de fin pour laquelle vous souhaitez obtenir le
 
 ### Affichage de rapports vidéo reposant sur une visionneuse de vidéos créée à l’aide du SDK Dynamic Media HTML5 Viewer {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée reposant sur une visionneuse de vidéos prête à l’emploi, aucune autre étape n’est nécessaire pour afficher les rapports vidéo. Cependant, si vous avez créé votre propre visionneuse de vidéos à partir de l’API du kit de développement de visionneuse HTML5, suivez les étapes ci-après pour vous assurer que la visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
+Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée reposant sur une visionneuse de vidéos prête à l’emploi, aucune autre étape n’est nécessaire pour afficher les rapports vidéo. Cependant, si vous avez créé votre propre visionneuse de vidéos à partir de l’API du kit de développement de visionneuses HTML5, procédez comme suit pour vous assurer que la visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
 
-Utilisez le [Guide de référence des visionneuses Dynamic Media Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr) et l&#39;[API du kit de développement de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) pour créer vos propres visionneuses de vidéos.
+Utilisez le [Guide de référence des visionneuses Dynamic Media Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr) et l’[API du kit de développement de visionneuses HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) pour créer vos propres visionneuses de vidéos.
 
-Pour vue des rapports Vidéo basés sur une visionneuse de vidéos que vous avez créée à l’aide de l’API du kit de développement de visionneuse HTML5 :
+Pour afficher des rapports vidéo basés sur une visionneuse de vidéos que vous avez créée à l’aide de l’API du kit de développement de visionneuses HTML5, procédez comme suit :
 
 1. Accédez à une ressource vidéo publiée.
 1. Près du coin supérieur gauche de la page du fichier, sélectionnez **[!UICONTROL Visionneuses]** dans la liste déroulante.
@@ -1027,7 +1026,7 @@ Pour vue des rapports Vidéo basés sur une visionneuse de vidéos que vous avez
    * Tout d’abord, déterminez si vous avez besoin du paramètre `&preset`.
 
 
-      Si le paramètre `config2` est `companypreset`, vous n&#39;avez pas besoin de ** `&preset=parameter`.
+      Si le paramètre `config2` est `companypreset`, *et* n’ont pas besoin de `&preset=parameter`.
 
       Si le paramètre `config2` a une autre valeur, attribuez au paramètre preset la même valeur que le paramètre `config2`. Par exemple, si `config2=companypreset-2`, ajoutez `&param2=companypreset-2` à l’URL d’AppMeasurmentBridge.jsp.
 
@@ -1079,7 +1078,7 @@ Les sous-titres offrent également une meilleure accessibilité en utilisant des
 
 Dynamic Media peut convertir des fichiers de sous-titres au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
 
-Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, voir [Diffusion du contenu statique (sans image)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=fr#image-serving-api) dans l’*Aide de l’API de diffusion et de rendu d’images de Dynamic Media*.
+Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, voir [Service de contenu statique (hors image)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=fr#image-serving-api) dans l’ *Aide de l’API Dynamic Media Image Serving and Rendering* .
 
 **Pour ajouter des sous-titres à une vidéo**:
 
@@ -1134,7 +1133,7 @@ Vous pouvez faciliter la lecture et le parcours de vos vidéos les plus longues 
 >
 >Le lecteur vidéo utilisé doit prendre en charge l’utilisation des marqueurs de chapitre. Les lecteurs vidéo Dynamic Media prennent en charge les marqueurs de chapitre, mais l’utilisation de lecteurs vidéo tiers ne le permet pas.
 
-Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour obtenir des instructions sur la création de votre propre visionneuse HTML5 avec une navigation de chapitre, dans l’API Adobe du kit de développement de la visionneuse HTML5, consultez l’en-tête &quot;Personnalisation du comportement à l’aide de modificateurs&quot; sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Consultez la [documentation sur l’API du kit de développement de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
+Si vous le souhaitez, vous pouvez créer votre propre visionneuse personnalisée, et lui donner le nom de votre marque, avec des chapitres au lieu d’utiliser le paramètre prédéfini de la visionneuse de vidéos. Pour plus d’informations sur la création de votre propre visionneuse HTML5 avec une navigation par chapitre, dans l’API Adobe du SDK de la visionneuse HTML5, reportez-vous à la section &quot;Personnalisation du comportement à l’aide de modificateurs&quot; sous les classes `s7sdk.video.VideoPlayer` et `s7sdk.video.VideoScrubber`. Voir la [documentation de l’API du kit de développement de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1206,7 +1205,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
      </tbody>
    </table>
 
-## A propos des miniatures vidéo en mode Dynamic Media - Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
+## À propos des miniatures vidéo dans Dynamic Media - mode Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
 Une miniature vidéo est une version en taille réduite d’une image vidéo ou d’une ressource d’image présentant la vidéo au client. La miniature doit inciter un client à cliquer sur la vidéo.
 
@@ -1272,7 +1271,7 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode Hy
 
 **Pour ajouter une miniature vidéo**,
 
-1. Accédez à un fichier vidéo téléchargé auquel vous souhaitez ajouter une miniature vidéo.
+1. Accédez à une ressource vidéo chargée à laquelle vous souhaitez ajouter une miniature vidéo.
 1. Dans un des modes de sélection des ressources (mode Liste ou Carte), appuyez sur la ressource vidéo.
 1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** (icône en forme de cercle avec un « i » à l’intérieur).
 1. Sur la page Propriétés de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature.]**
@@ -1299,7 +1298,7 @@ Voir [Ajout d’une miniature de vidéo](#adding-a-video-thumbnail).
 
 1. Dans AEM, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite.]**
 
-1. Dans la page du CRXDE Lite, dans le panneau d’annuaire de gauche, accédez à `o etc/dam/imageserver/configuration/jcr:content/settings.`
+1. Dans la page du CRXDE Lite, dans le panneau du répertoire à gauche, accédez à `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
    Si le panneau des répertoires n’est pas visible, vous devrez peut-être appuyer sur l’icône >> à gauche de l’onglet Accueil.
 
@@ -1321,7 +1320,7 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode Hy
 
 **Pour ajouter une miniature vidéo personnalisée**,
 
-1. Accédez à un fichier vidéo téléchargé auquel vous souhaitez ajouter une miniature vidéo personnalisée.
+1. Accédez à une ressource vidéo chargée à laquelle vous souhaitez ajouter une miniature vidéo personnalisée.
 1. Dans un des modes de sélection des ressources (mode Liste ou Carte), appuyez sur la ressource vidéo.
 1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** (icône en forme de cercle avec un « i » à l’intérieur).
 1. Sur la page Propriétés de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature.]**
