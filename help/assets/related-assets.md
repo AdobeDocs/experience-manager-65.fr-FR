@@ -1,35 +1,34 @@
 ---
 title: Ressources liées
-description: Découvrez comment relier des ressources numériques qui partagent certains attributs communs. Créez également des relations dérivées de la source entre les ressources numériques.
+description: Découvrez comment mettre en relation des ressources numériques qui partagent certains attributs communs. Créez également des relations dérivées de la source entre les ressources numériques.
 contentOwner: AG
 role: Business Practitioner
-feature: Collaboration,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Collaboration, Gestion des ressources
+exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 47%
+source-wordcount: '635'
+ht-degree: 46%
 
 ---
 
-
 # Ressources liées{#related-assets}
 
-[!DNL Adobe Experience Manager Assets] vous permet de relier manuellement des ressources en fonction des besoins de votre organisation à l’aide de la fonction d’éléments connexes. Par exemple, vous pouvez mettre en relation un fichier de licence avec une ressource ou une image/vidéo portant sur un sujet similaire. Vous pouvez mettre en relation des ressources qui partagent certains attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources. Par exemple, si un fichier PDF est généré à partir d’un fichier INDD, vous pouvez mettre en relation le fichier PDF avec son fichier INDD source.
+[!DNL Adobe Experience Manager Assets] vous permet de mettre en relation manuellement des ressources en fonction des besoins de votre entreprise à l’aide de la fonction ressources associée. Par exemple, vous pouvez mettre en relation un fichier de licence avec une ressource ou une image/vidéo portant sur un sujet similaire. Vous pouvez mettre en relation des ressources qui partagent certains attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources. Par exemple, si un fichier PDF est généré à partir d’un fichier INDD, vous pouvez mettre en relation le fichier PDF avec son fichier INDD source.
 
-Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résolution avec des fournisseurs ou des agences et de rendre le fichier INDD haute résolution disponible uniquement sur demande.
+Grâce à cette fonctionnalité, vous avez la possibilité de partager un fichier PDF ou JPG basse résolution avec des fournisseurs ou des agences et de rendre le fichier INDD haute résolution disponible uniquement sur demande.
 
 >[!NOTE]
 >
->Seuls les utilisateurs disposant d’autorisations de modification sur les ressources peuvent établir une relation et établir une relation entre les ressources.
+>Seuls les utilisateurs disposant d’autorisations de modification des ressources peuvent mettre en relation et dissocier ces dernières.
 
 ## Lier les ressources {#relating-assets}
 
-1. Dans l&#39;interface [!DNL Experience Manager], ouvrez la page **[!UICONTROL Propriétés]** pour une ressource à relier.
+1. Dans l’interface [!DNL Experience Manager], ouvrez la page **[!UICONTROL Propriétés]** d’une ressource que vous souhaitez mettre en relation.
 
-   ![ouvrir la page Propriétés d’une ressource pour établir une relation avec la ressource](assets/asset-properties-relate-assets.png)
+   ![ouvrir la page Propriétés d’une ressource pour mettre celle-ci en relation.](assets/asset-properties-relate-assets.png)
 
-   *Figure :  [!DNL Assets]  Propriétés pour associer des ressources.*
+   *Figure :  [!DNL Assets]  Propriétés permettant de mettre en relation des ressources.*
 
    Vous pouvez également sélectionner la ressource en mode Liste.
 
@@ -39,7 +38,7 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Pour établir une relation entre un autre fichier et le fichier sélectionné, cliquez sur **[!UICONTROL Reler]** ![relier les ressources](assets/do-not-localize/link-relate.png) dans la barre d’outils.
+1. Pour mettre en relation une autre ressource avec la ressource sélectionnée, cliquez sur **[!UICONTROL Lier]** ![mettre en relation les ressources](assets/do-not-localize/link-relate.png) dans la barre d’outils.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour mettre en relation le fichier source avec la ressource, sélectionnez **[!UICONTROL Source]** dans la liste.
@@ -55,9 +54,9 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Pour annuler la relation entre un élément, cliquez sur **[!UICONTROL Annuler la relation]** ![dissocier les éléments](assets/do-not-localize/link-unrelate-icon.png) dans la barre d’outils.
+1. Pour annuler la relation entre une ressource, cliquez sur **[!UICONTROL Ne plus mettre en relation]** ![Ressources ](assets/do-not-localize/link-unrelate-icon.png) dans la barre d’outils.
 
-1. Sélectionnez les ressources que vous souhaitez annuler la relation dans la boîte de dialogue **[!UICONTROL Supprimer les relations]**, puis cliquez sur **[!UICONTROL Annuler la relation]**.
+1. Sélectionnez la ou les ressources dont vous souhaitez annuler la relation dans la boîte de dialogue **[!UICONTROL Supprimer les relations]**, puis cliquez sur **[!UICONTROL Ne plus mettre en relation]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
@@ -65,32 +64,32 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
 ## Traduire les éléments connexes {#translating-related-assets}
 
-La création de relations source/dérivée entre les ressources à l’aide de la fonction ressources connexes s’avère également utile dans les workflows de traduction. Lorsque vous exécutez un processus de traduction sur une ressource dérivée, [!DNL Experience Manager Assets] récupère automatiquement toute ressource référencée par le fichier source et l’inclut pour la traduction. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
+La création de relations source/dérivées entre les ressources à l’aide de la fonction Ressources connexes s’avère également utile dans les processus de traduction. Lorsque vous exécutez un workflow de traduction sur une ressource dérivée, [!DNL Experience Manager Assets] récupère automatiquement toute ressource référencée par le fichier source et l’inclut pour traduction. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Si le fichier source est associé à un autre fichier, [!DNL Experience Manager Assets] récupère l’actif référencé et l’inclut pour traduction.
+Si le fichier source est associé à une autre ressource, [!DNL Experience Manager Assets] récupère la ressource référencée et l’inclut pour traduction.
 
-![la page Propriétés du fichier affiche le fichier source du fichier associé à inclure pour la traduction.](assets/asset-properties-source-asset.png)
+![la page Propriétés de la ressource affiche le fichier source de la ressource associée à inclure pour traduction.](assets/asset-properties-source-asset.png)
 
-*Figure : Fichier source des éléments connexes à inclure pour la traduction.*
+*Figure : Ressource des ressources connexes à inclure pour traduction.*
 
 1. Traduisez les ressources du dossier source dans une langue cible en suivant les étapes de la section [Créer un projet de traduction](translation-projects.md#create-a-new-translation-project). Par exemple, dans ce cas, traduisez vos ressources en français.
 
-1. Dans la page [!UICONTROL Projets], ouvrez le dossier de traduction.
+1. Sur la page [!UICONTROL Projets], ouvrez le dossier de traduction.
 
 1. Cliquez sur la mosaïque du projet pour ouvrir la page de détails.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Cliquez sur les points de suspension sous la carte Tâche de traduction pour vue l’état de la traduction.
+1. Cliquez sur les points de suspension situés sous la carte Tâche de traduction pour afficher l’état de traduction.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Afficher dans les ressources]** dans la barre d’outils pour vue l’état de traduction de la ressource.
+1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Afficher dans Assets]** dans la barre d’outils pour afficher l’état de traduction de la ressource.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
-1. Pour vérifier si les fichiers associés à la source ont été traduits, cliquez sur le fichier source.
+1. Pour vérifier si les ressources liées à la source ont été traduites, cliquez sur la ressource source.
 
-1. Sélectionnez la ressource associée à la source, puis cliquez sur **[!UICONTROL Afficher dans les ressources]**. La ressource associée traduite s’affiche.
+1. Sélectionnez la ressource liée à la source, puis cliquez sur **[!UICONTROL Afficher dans Assets]**. La ressource associée traduite s’affiche.
