@@ -3,13 +3,12 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] à distance.
 contentOwner: AG
 role: Business Practitioner, Administrator, Leader
-feature: Connected Assets,User and Groups
+feature: Ressources, utilisateurs et groupes connectés
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-translation-type: tm+mt
-source-git-commit: 48e5b55a1d79fef6172f684cb65a4137113fb7fb
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
 source-wordcount: '2739'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -182,7 +181,7 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 
 ## Restrictions et bonnes pratiques {#tip-and-limitations}
 
-* Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Asset Insight](/help/assets/asset-insights.md) sur l’instance [!DNL Sites].
+* Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Assets Insight](/help/assets/asset-insights.md) sur l’instance [!DNL Sites].
 
 ### Autorisations et gestion des ressources {#permissions-and-managing-assets}
 
@@ -212,7 +211,7 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 * Si des ressources sont désaffectées de la gestion des ressources numériques (DAM), elles continuent d’être utilisées sur les pages [!DNL Sites].
 * Les entrées de référence distantes d’une ressource sont extraites de manière asynchrone. Les références et le nombre total ne sont pas évalués en temps réel et peuvent présenter des différences si un auteur de Sites utilise la ressource en même temps que l’utilisateur de DAM consulte la référence. Les utilisateurs de DAM peuvent actualiser la page et réessayer quelques minutes plus tard pour obtenir le nombre total.
 
-## Résolution des problèmes  {#troubleshoot}
+## Résolution des problèmes {#troubleshoot}
 
 Pour résoudre les erreurs courantes, procédez comme suit :
 
