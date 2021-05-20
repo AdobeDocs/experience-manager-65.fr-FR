@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 98%
 
 ---
-
 
 # Gestion des informations d’identification locales {#managing-local-credentials}
 
@@ -72,4 +71,3 @@ Une fois que des informations d’identification ont été importées, vous pouv
 1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
 1. Cochez les cases correspondant aux informations d’identification à supprimer.
 1. Cliquez sur Supprimer, puis sur OK.
-
