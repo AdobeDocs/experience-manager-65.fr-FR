@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 95%
 
 ---
-
 
 # Work Manager et le ralentissement{#work-manager-and-throttling}
 
@@ -82,12 +81,12 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 **Ajout d’options Java à JBoss**
 
 1. Arrêtez le serveur d’applications JBoss.
-1. Ouvrez *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez les options Java nécessaires, au format `-Dproperty=value`.
+1. Ouvrez la *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez l’une des options Java requises, au format `-Dproperty=value`.
 1. Redémarrez le serveur.
 
 **Ajout d’options Java à WebLogic**
 
-1. Début de WebLogic Administration Console en saisissant `https://[host name]:[port]/console` dans un navigateur Web.
+1. Ouvrez WebLogic Administration Console en saisissant `https://[host name]:[port]/console` dans un navigateur Web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
@@ -106,4 +105,3 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 1. Sous Additional Properties, cliquez sur Java Virtual Machine.
 1. Dans la zone Generic JVM arguments, saisissez les arguments souhaités.
 1. Cliquez sur OK ou sur Apply, puis sur Save directly to master configuration.
-
