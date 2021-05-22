@@ -5,33 +5,32 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 72%
 
 ---
 
-
 # Intégration à Adobe Marketing Cloud{#integrating-with-the-adobe-marketing-cloud}
 
 [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html) inclut des produits puissants d’analyse web et d’optimisation des sites web qui proposent des données et des statistiques exploitables en temps réel pour mener à bien vos initiatives en ligne. Il constitue une plateforme ouverte et intégrée pour l’optimisation des entreprises en ligne. Le cloud comprend des applications intégrées pour collecter et donner libre cours à la puissance des données client en vue d’optimiser les efforts d’acquisition, de conversion et de rétention des clients, ainsi que la création et la diffusion du contenu.
 
-Avec Adobe Experience Manager (AEM), vous pouvez intégrer aisément les produits Adobe Marketing Cloud suivants :
+Avec Adobe Experience Manager (AEM), vous pouvez intégrer facilement les produits Adobe Marketing Cloud suivants :
 
 * Adobe Analytics fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies en ligne et des initiatives marketing.
 * Adobe Target donne aux marketeurs la possibilité d’adapter continuellement leur contenu en ligne à leurs clients de manière à accroître le taux de conversion.
-* L’Adobe Dynamic Media Classic automatise la gestion des médias, rationalise la publication sur le Web et améliore les expériences Web, le tout dans un environnement hébergé.
+* Adobe Dynamic Media Classic automatise la gestion des médias, simplifie la publication web et améliore les expériences web, le tout dans un environnement hébergé.
 * Adobe Dynamic Tag Management offre aux marketeurs des outils intuitifs grâce auxquels ils peuvent gérer facilement et rapidement un nombre illimité de balises Adobe et de tierces parties.
 * Adobe Search&amp;Promote permet aux marketeurs de contrôler et d’optimiser les résultats de la recherche sur leurs sites.
 * Adobe Campaign vous permet de gérer le contenu de livraison de courrier électronique directement dans Adobe Experience Manager.
 
-En outre, vous pouvez [intégrer AEM avec Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md) et avec [services tiers](/help/sites-administering/third-party-services.md).
+De plus, vous pouvez [intégrer AEM avec Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) et avec des [services tiers](/help/sites-administering/third-party-services.md).
 
 ## Intégration à Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe ](https://www.omniture.com/en/products/analytics/sitecatalyst) Analytics est la solution de pointe qui fournit aux spécialistes du marketing numérique un emplacement unique pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
+[Adobe ](https://www.omniture.com/en/products/analytics/sitecatalyst) Analytics est la solution de pointe qui fournit aux spécialistes du marketing numérique un point unique pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
 
 Vous pouvez utiliser Adobe Analytics pour analyser les données de vos sites.
 
@@ -68,15 +67,15 @@ Souscrivez à l’intégration avec Analytics et/ou Target afin de permettre l�
 
 Pour plus d’informations, voir [Souscription à Adobe Analytics et Target.](/help/sites-administering/opt-in.md)
 
-## Intégration à l’Adobe Dynamic Media Classic {#integrating-with-scene}
+## Intégration à Adobe Dynamic Media Classic {#integrating-with-scene}
 
-Adobe Dynamic Media Classic est une solution hébergée qui permet de publier, gérer, améliorer et diffuser des ressources marketing dynamiques et du marchandisage visuel optimisé sur le Web, les mobiles, les e-mails, les médias sociaux, les écrans connectés à Internet et l’impression.
+Adobe Dynamic Media Classic est une solution hébergée permettant de publier, gérer, améliorer et diffuser des ressources de marketing dynamique et de merchandising visuel enrichi sur le web, les appareils mobiles, les e-mails, les médias sociaux, les écrans connectés à Internet et l’impression.
 
-Dans Adobe Experience Manager, vous pouvez publier des ressources numériques directement de Adobe Experience Manager à Dynamic Media Classic et vous pouvez publier des ressources numériques de Dynamic Media Classic vers Adobe Experience Manager.
+Dans Adobe Experience Manager, vous pouvez publier des ressources numériques directement d’Adobe Experience Manager vers Dynamic Media Classic et vous pouvez publier des ressources numériques de Dynamic Media Classic vers Adobe Experience Manager.
 
-En outre, vous pouvez vue des fichiers Adobe Experience Manager publiés dans Dynamic Media Classic dans différentes visionneuses, telles que Zoom de base et Vidéo.
+En outre, vous pouvez afficher les ressources Adobe Experience Manager publiées dans Dynamic Media Classic dans différentes visionneuses telles que Zoom de base et Vidéo.
 
-Pour plus d’informations sur la façon dont Adobe Experience Manager s’intègre à Dynamic Media Classic, voir la documentation [Intégration à Dynamic Media Classic](/help/sites-administering/scene7.md).
+Pour plus d’informations sur la façon dont Adobe Experience Manager s’intègre à Dynamic Media Classic, consultez la documentation [Intégration à Dynamic Media Classic](/help/sites-administering/scene7.md) .
 
 ## Intégration à Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
@@ -90,7 +89,7 @@ L’intégration à Adobe Audience Manager a été supprimée dans AEM 6.3.
 
 ## Intégration à Search&amp;Promote {#integrating-with-search-promote}
 
-Le Search &amp; Promote d’Adobe permet aux spécialistes du marketing d’optimiser la manière dont les visiteurs naviguent, recherchent, comparent et sélectionnent les produits et le contenu appropriés sur les sites Web et mobiles. Les entreprises peuvent facilement faire la promotion des éléments importants en fonction des objectifs de l’entreprise et de l’intention des visiteurs, tout en automatisant les activités de marchandisation et de promotion par l’intermédiaire de déclencheurs et de mesures reposant sur les indicateurs de performances clés.
+Adobe Search &amp; Promote permet aux marketeurs d’optimiser la manière dont les visiteurs naviguent, recherchent, comparent et sélectionnent les produits et le contenu appropriés sur les sites web et mobiles. Les entreprises peuvent facilement faire la promotion des éléments importants en fonction des objectifs de l’entreprise et de l’intention des visiteurs, tout en automatisant les activités de marchandisation et de promotion par l’intermédiaire de déclencheurs et de mesures reposant sur les indicateurs de performances clés.
 
 Adobe Search&amp;Promote est une application hébergée, évolutive et fiable de recherche de sites, extensible jusqu’à plusieurs millions de pages ou de produits, pour les entreprises en ligne au trafic de visite important allant de la vente au détail aux sites d’informations. Cet outil offre une maîtrise inégalée aux marketeurs et une pertinence corroborée par des mesures.
 
@@ -100,7 +99,7 @@ Pour plus d’informations sur l’intégration d’AEM et de Search&amp;Promote
 
 [Adobe Campaign](https://www.adobe.com/solutions/campaign-management.html) vous permet de gérer le contenu de livraison de courrier électronique directement dans Adobe Experience Manager.
 
-Pour plus d&#39;informations sur la façon dont AEM s&#39;intègre à Adobe Campaign, voir [Intégration à Adobe Campaign](/help/sites-administering/campaignstandard.md).
+Pour plus d’informations sur la façon dont AEM s’intègre à Adobe Campaign, voir [Intégration à Adobe Campaign](/help/sites-administering/campaignstandard.md).
 
 ## Intégration à Livefyre {#integrating-with-livefyre}
 
@@ -109,4 +108,3 @@ Pour en savoir plus sur AEM et Livefyre :
 * [Prise en main de Livefyre](https://answers.livefyre.com/developers/getting-started)
 
 * [Livefyre et AEM](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
-
