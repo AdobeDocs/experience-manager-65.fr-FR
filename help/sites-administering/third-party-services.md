@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
-translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 83%
+source-wordcount: '335'
+ht-degree: 84%
 
 ---
-
 
 # Intégration à des services tiers{#integrating-with-third-party-services}
 
@@ -29,12 +28,12 @@ Avec AEM, vous pouvez intégrer clé en main les produits non Adobe suivants :
 * Extrait de code Analytics générique
 * Microsoft Translator ou autres fournisseurs de traduction par machine
 * Pushwoosh Connection - Notifications push pour applications
-* Salesforce - logiciel de vente et de gestion de la relation client
+* Salesforce - Logiciel de gestion de la relation client (CRM)
 * Silverpop Engage - Automatisation du marketing, courrier électronique, appareils mobiles et réseaux sociaux
 * Twitter - Réseaux sociaux
 * YouTube - Partage de vidéos
 
-De plus, vous pouvez intégrer AEM à [marketing cloud](/help/sites-administering/marketing-cloud.md) et au [Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md).
+De plus, vous pouvez intégrer AEM à [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 ## Intégration à Salesforce {#integrating-with-salesforce}
 
@@ -60,7 +59,7 @@ Pour plus d’informations sur l’intégration de votre site AEM et d’ExactTa
 
 ## Intégration à Facebook et Twitter  {#integrating-with-facebook-and-twitter}
 
-Facebook et Twitter sont des services de réseau social populaires. L’intégration AEM à Facebook et Twitter permet aux entreprises de fournir une option de connexion Facebook ou Twitter sur les propriétés numériques détenues, puis de personnaliser l’expérience utilisateur en fonction des informations de profil. Les spécialistes du marketing peuvent également combiner des données de profil avec des données provenant de sources supplémentaires (par exemple, un système de gestion de la relation client ou un profil de site web) pour créer une vue unifiée du client.
+Facebook et Twitter sont des services de réseau social populaires. L’intégration d’AEM à Facebook et Twitter permet aux entreprises de fournir une option de connexion à Facebook ou Twitter sur les propriétés numériques détenues, puis de personnaliser l’expérience utilisateur en fonction des informations de profil. Les spécialistes du marketing peuvent également combiner des données de profil avec des données provenant de sources supplémentaires (par exemple, un système de gestion de la relation client ou un profil de site web) pour créer une vue unifiée du client.
 
 Voir [Connexion sociale](/help/communities/social-login.md) pour plus d’informations.
 
