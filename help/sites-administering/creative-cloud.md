@@ -10,11 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 525b11fbb60fc3568ecc028562ffbf174b8e4c37
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 65%
+source-wordcount: '80'
+ht-degree: 80%
 
 ---
 
@@ -23,25 +22,28 @@ ht-degree: 65%
 
 >[!CAUTION]
 >
->La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. Il est vivement conseillé aux clients d’utiliser des fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou [AEM application de bureau](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html). En savoir plus sur les [meilleures pratiques d’intégration d’AEM et de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. Il est vivement conseillé aux clients d’utiliser des fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou [AEM application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr). En savoir plus sur les [meilleures pratiques d’intégration d’AEM et de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
-AEM Assets permet de partager des dossiers de ressources avec les utilisateurs d’Adobe Creative Cloud. Pour plus d’informations sur la configuration de Adobe Marketing Cloud pour vous permettre de partager des ressources avec Adobe Creative Cloud, voir [Configuration de l’intégration Ressources-Creative Cloud](/help/sites-administering/configure-assets-cc-integration.md).
+<!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 
-1. Dans la console Assets, sélectionnez un dossier à partager avec Creative Cloud.
+Adobe Experience Manager (AEM) Assets lets you share folders containing assets with Adobe Creative Cloud users. For details on how to configure Adobe Marketing Cloud to let you share assets with Adobe Creative Cloud, see [Configuring Assets-Creative Cloud integration](/help/sites-administering/configure-assets-cc-integration.md).
+
+1. In the Assets console, select a folder to share with Creative Cloud.
 
    ![](assets/chlimage_1-139.png)
 
-1. Dans la barre d’outils, cliquez sur **Partager **.
+1. From the toolbar, click **Share**.
 
    ![](assets/chlimage_1-140.png)
 
-1. Dans la liste, sélectionnez l’option **Adobe Creative Cloud**.
+1. From the list, select the **Adobe Creative Cloud** option.
 
    ![](assets/chlimage_1-141.png)
 
-1. Dans la page **Partage des Creative Cloud**, ajoutez l’utilisateur avec lequel partager le dossier, puis cliquez sur **Enregistrer**.
+1. In the **Creative Cloud Sharing** page, add the user to share the folder with and then click **Save**.
 
    ![](assets/chlimage_1-142.png)
 
-1. Cliquez sur **OK** pour fermer le message de confirmation.
-1. Connectez-vous à Creative Cloud avec les informations d’identification de l’utilisateur avec lequel vous avez partagé le dossier. Le dossier partagé est disponible dans Creative Cloud.
+1. Click **Ok** to close the confirmation message.
+1. Log on to Creative Cloud with the credentials of the user you shared the folder with. The shared folder is available in Creative Cloud.
+-->
