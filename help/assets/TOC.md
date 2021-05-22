@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 58%
+source-wordcount: '582'
+ht-degree: 59%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 58%
 + [[!DNL Experience Manager] 6.5 Notes de mise à jour d’Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [À propos de DAM](assets.md)
 + [Bonnes pratiques relatives aux ressources](best-practices-for-assets.md)
-+ [Accessibilité dans  [!DNL Assets]](accessibility.md)
++ [Accessibilité dans [!DNL Assets]](accessibility.md)
 + Utilisation des ressources Experience Manager {#using}
    + [[!DNL Assets] expérience de la page d’accueil](assets-home-page.md)
    + [Recherche de ressources numériques](search-assets.md)
@@ -112,7 +112,7 @@ ht-degree: 58%
    + [[!DNL Assets] et MediaLibrary](medialibrary.md)
    + [Utilisation de PDF rasterizer](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de chargement](configuring-asset-upload-restrictions.md)
-   + [[!DNL Experience Manager] and [!DNL Creative Cloud] integration](aem-cc-integration-best-practices.md)
+   + [Intégration d’[!DNL Experience Manager] and [!DNL Creative Cloud]](aem-cc-integration-best-practices.md)
    + [Intégration avec [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management dans les ressources](drm.md)
    + [Utilisation du module de démonstration pour les informations sur les ressources](use-demo-package-for-asset-insights.md)
@@ -124,7 +124,6 @@ ht-degree: 58%
    + [Multi-location pour les collections, les fragments et les modèles de fragments de code](multi-tenancy.md)
    + [Mise en filigrane de vos ressources](watermarking.md)
    + [Modèles de ressources](asset-templates.md)
-   + [Bonnes pratiques pour partager un dossier avec  [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
    + [Configuration d’ [!DNL Assets] avec [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur [!DNL Brand Portal]](brand-portal-publish-assets.md)
