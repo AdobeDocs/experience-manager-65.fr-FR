@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: edde225d-0be7-4306-8dda-d18d46fae977
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 95%
 
 ---
-
 
 # Création de contenu ciblé en mode Ciblage{#authoring-targeted-content-using-targeting-mode}
 
@@ -32,7 +31,7 @@ Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et
 * Simulez l’expérience utilisateur.
 * Pour une personnalisation plus importante, configurez le composant cible.
 
-Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (pour utiliser Adobe Target, vous devez disposer d’un compte Adobe Target valide). Si vous utilisez Adobe Target, vous devez commencer par configurer l’intégration. Voir [instructions d&#39;intégration à Adobe Target](/help/sites-administering/target.md).
+Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (pour utiliser Adobe Target, vous devez disposer d’un compte Adobe Target valide). Si vous utilisez Adobe Target, vous devez commencer par configurer l’intégration. Voir [Instructions pour l’intégration à Adobe Target](/help/sites-administering/target.md).
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -296,8 +295,8 @@ Si vous modifiez le contenu ciblé, vous devez cliquer ou appuyer sur **Commence
    >S’il est défini par l’administrateur, vous pouvez avoir besoin de définir explicitement l’emplacement.
    >
    >
-   >Les administrateurs peuvent déterminer si la définition de cette configuration est nécessaire en consultant **https://&lt;hôte>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
-   Pour demander aux utilisateurs de saisir un emplacement, cochez la case **Forcer l’emplacement **case.
+   >Les administrateurs peuvent déterminer si la définition de cette configuration est nécessaire en consultant **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   Pour obliger les utilisateurs à saisir un emplacement, cochez la case **Forcer l’emplacement **.
 
 1. Sélectionnez l’expérience pour laquelle vous souhaitez créer l’offre.
 1. Création de l’offre :
@@ -465,7 +464,7 @@ Les mesures de succès ci-dessous sont disponibles (pour la publication uniqueme
    <td><strong>Conversion</strong></td>
    <td><p>Pourcentage de visiteurs ayant cliqué sur n’importe quelle partie de l’expérience testée. Une conversion peut être comptabilisée une fois par visiteur ou chaque fois qu’un visiteur effectue une conversion. La mesure de conversion est définie sur l’une des options suivantes : :</p>
     <ul>
-     <li><strong>Affichage d'une page</strong>  - Vous pouvez définir la page que l'audience a consultée en sélectionnant l' <strong>URL </strong> qui vous intéresse, puis en définissant l'URL ou plusieurs URL, ou en sélectionnant  <strong>l'URL </strong> contenue, puis en ajoutant un chemin ou un mot-clé.</li>
+     <li><strong>A affiché une page</strong>  : vous pouvez définir la page que l’audience a consultée en sélectionnant l’ <strong>URL </strong> et en définissant ensuite la ou les URL, ou en sélectionnant  <strong>Contient </strong> l’URL, puis en ajoutant un chemin ou un mot-clé.</li>
      <li><strong>A affiché une mbox</strong> : vous pouvez définir la mbox que l’audience a consultée en saisissant le nom de la mbox. Vous pouvez saisir plusieurs mbox en cliquant sur <strong>Ajouter une mbox</strong>.</li>
     </ul> </td>
   </tr>
@@ -473,7 +472,7 @@ Les mesures de succès ci-dessous sont disponibles (pour la publication uniqueme
    <td><strong>Recettes</strong></td>
    <td><p>Recettes générées par la visite. Vous pouvez choisir parmi les mesures de recettes suivantes :</p>
     <ul>
-     <li>Recettes par Visiteur (RPV)</li>
+     <li>Recettes par visiteur (RPV)</li>
      <li>Valeur de commande moyenne (AOV)</li>
      <li>Total ventes </li>
      <li>Commandes</li>
@@ -503,7 +502,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
   </tr>
   <tr>
    <td><strong>Incrémenter le décompte et laisser l’utilisateur dans l’activité</strong></td>
-   <td>Spécifiez comment le nombre est incrémenté :
+   <td>Indiquez comment le nombre est incrémenté :
     <ul>
      <li>Une fois par participant</li>
      <li>À chaque impression (actualisations de page exclues)</li>
@@ -512,11 +511,11 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
   </tr>
   <tr>
    <td><strong>Incrémenter le décompte, libérer l’utilisateur et autoriser le retour</strong></td>
-   <td>Sélectionnez l’expérience que voit le visiteur s’il entre de nouveau dans l’activité :
+   <td>Sélectionnez l’expérience que voit le visiteur s’il entre à nouveau dans l’activité :
     <ul>
      <li>Même expérience</li>
      <li>Expérience aléatoire</li>
-     <li>Expérience inconnue</li>
+     <li>Expérience non vue</li>
     </ul> </td>
   </tr>
   <tr>
@@ -666,7 +665,7 @@ Vous pouvez personnaliser le composant cible en accédant aux options du composa
   </tr>
   <tr>
    <td><strong>Moteur</strong></td>
-   <td>Sélectionnez <strong>Règles côté client (sans suivi), Adobe Target, ContextHub, </strong>et <strong> Adobe Campaign </strong>selon le moteur à utiliser.</td>
+   <td>Sélectionnez <strong>Règles côté client (sans suivi), Adobe Target, ContextHub, </strong>et <strong> Adobe Campaign </strong>selon le moteur que vous souhaitez utiliser.</td>
   </tr>
  </tbody>
 </table>
@@ -683,7 +682,7 @@ Si vous sélectionnez Adobe Target comme moteur :
   </tr>
   <tr>
    <td><strong>Ciblage précis</strong></td>
-   <td><p>L’activation du ciblage précis indique au composant d’attendre les données de contexte du client ou les données ContextHub pour être disponible avant l’envoi de la demande à Adobe Target. Cela peut accroître le temps de chargement. Pour la création, le ciblage précis est toujours activé.</p> <p>Si vous cochez la case <strong>Ciblage précis</strong>, la mbox commence par effectuer une opération <code>mboxDefine</code>, puis une opération <code>mboxUpdate</code> dans une demande Ajax une fois que les données sont disponibles.</p> <p>Si vous ne cochez pas la case <strong>Ciblage précis</strong>, la mbox exécute immédiatement une <code>mboxCreate</code> requête synchrone (dans ce cas, toutes les données contextuelles ne sont pas encore disponibles).</p> <p><strong>Remarque :</strong> L’activation ou la désactivation du ciblage précis sur un composant spécifique n’a aucune incidence sur les paramètres définis globalement. Vous pouvez toujours remplacer les paramètres globaux en sélectionnant Ciblage précis dans le composant.</p> </td>
+   <td><p>L’activation du ciblage précis indique au composant d’attendre les données de contexte du client ou les données ContextHub pour être disponible avant l’envoi de la demande à Adobe Target. Cela peut accroître le temps de chargement. Pour la création, le ciblage précis est toujours activé.</p> <p>Si vous cochez la case <strong>Ciblage précis</strong>, la mbox commence par effectuer une opération <code>mboxDefine</code>, puis une opération <code>mboxUpdate</code> dans une demande Ajax une fois que les données sont disponibles.</p> <p>Si vous ne cochez pas la case <strong>Ciblage précis</strong>, la mbox effectue immédiatement une requête <code>mboxCreate</code>, ce qui entraîne une requête synchrone (dans ce cas, toutes les données contextuelles ne sont pas encore disponibles).</p> <p><strong>Remarque :</strong> L’activation ou la désactivation du ciblage précis sur un composant spécifique n’a aucune incidence sur les paramètres définis globalement. Vous pouvez toujours remplacer les paramètres globaux en sélectionnant Ciblage précis dans le composant.</p> </td>
   </tr>
   <tr>
    <td><strong>Inclure les segments résolus</strong></td>
@@ -695,11 +694,11 @@ Si vous sélectionnez Adobe Target comme moteur :
   </tr>
   <tr>
    <td><strong>Paramètres de contexte</strong></td>
-   <td>Cliquez ou appuyez sur <strong>Ajouter le champ</strong> pour configurer des paramètres contextuels supplémentaires (comme dans le cadre de Cible). Les paramètres de contexte ajoutés au composant ne concernent <i>que</i> le composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres de contexte directement dans l’infrastructure.</td>
+   <td>Cliquez ou appuyez sur <strong>Ajouter un champ</strong> pour configurer des paramètres de contexte supplémentaires (comme ceux disponibles dans la structure Target). Les paramètres de contexte ajoutés au composant ne concernent <i>que</i> le composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres de contexte directement dans l’infrastructure.</td>
   </tr>
   <tr>
    <td><strong>Paramètres statiques</strong></td>
-   <td>Cliquez ou appuyez sur <strong>Ajouter le champ</strong> pour configurer d'autres paramètres statiques (comme dans le cadre de Cible). Les paramètres statiques ajoutés au composant s'appliquent <i>uniquement</i> au composant et non à d'autres composants, comme ce serait le cas si vous ajoutez des paramètres statiques directement à la structure. Les paramètres statiques ne proviennent pas du contexte (contexte du client de ContextHub).</td>
+   <td>Cliquez ou appuyez sur <strong>Ajouter un champ</strong> pour configurer des paramètres statiques supplémentaires (comme ceux disponibles dans la structure Target). Les paramètres statiques ajoutés au composant s’appliquent <i>uniquement</i> au composant et non à un autre composant, comme ce serait le cas si vous ajoutiez des paramètres statiques directement à la structure. Les paramètres statiques ne proviennent pas du contexte (contexte du client de ContextHub).</td>
   </tr>
  </tbody>
 </table>
@@ -723,7 +722,7 @@ Si vous sélectionnez ClientContext (côté client) comme moteur :
     <ul>
      <li><strong>Première</strong> : expérience la plus élevée dans la liste organisée dans la campagne.</li>
      <li><strong>Aléatoire</strong> : n’importe quelle expérience est utilisée.</li>
-     <li><strong>Score</strong> du parcours de navigation : Les balises et les accès aux balises connexes qui sont suivis dans le contexte client sont utilisés. Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.</li>
+     <li><strong>Score Clickstream</strong> : Les balises et les accès aux balises associés qui sont suivis dans le contexte client sont utilisés. Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.</li>
     </ul> </td>
   </tr>
  </tbody>
