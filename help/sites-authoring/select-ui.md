@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: e418d330-f234-411d-8cad-3fd9906dcbee
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 82%
 
 ---
-
 
 # Choix de l’interface utilisateur{#selecting-your-ui}
 
@@ -50,7 +49,7 @@ Active l’IU classique pour la session en cours.
 >
 >Les instances mises à niveau à partir d’une version précédente conservent l’IU classique pour la création de pages.
 >
->Après la mise à niveau, la création de pages ne sera pas automatiquement basculée vers l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide du [service de configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **service de mode d’interface utilisateur de création WCM** (service `AuthoringUIMode`). Voir [IU par défaut en fonction de l’éditeur](#ui-overrides-for-the-editor).
+>Après la mise à niveau, la création de pages ne passe pas automatiquement à l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **service WCM Authoring UI Mode** (service `AuthoringUIMode`). Voir [IU par défaut en fonction de l’éditeur](#ui-overrides-for-the-editor).
 
 ## Configuration de l’IU par défaut pour votre instance {#configuring-the-default-ui-for-your-instance}
 
@@ -85,7 +84,7 @@ Ainsi, si l’IU tactile est activée sur un ordinateur de bureau, les utilisate
 
 * **URL**
 
-   L’interface utilisateur classique est accessible à l’aide de l’URL de l’écran de bienvenue à l’adresse `welcome.html`. Par exemple :
+   L’IU classique est accessible à partir de l’URL de l’écran de bienvenue à l’adresse `welcome.html`. Par exemple :
 
    `https://localhost:4502/welcome.html`
 
@@ -117,14 +116,14 @@ Les paramètres définis par un utilisateur ou un administrateur du système peu
    * L’utilisation de l’éditeur classique est forcée lors de l’accès à la page à l’aide de `cf#` dans l’URL. Par exemple :
       `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * L’utilisation de l’éditeur tactile est forcée lors de l’utilisation de `/editor.html` dans l’URL ou lors de l’utilisation d’un périphérique tactile. Par exemple :
+   * L’utilisation de l’éditeur tactile est forcée lors de l’utilisation de `/editor.html` dans l’URL ou lors de l’utilisation d’un appareil tactile. Par exemple :
       `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Tout recours forcé à un certain éditeur est temporaire et valide uniquement pour la session en cours.
 
-   * Un jeu de cookies sera défini selon que l’option tactile ( `editor.html`) ou classique ( `cf#`) est utilisée ou non.
+   * Un jeu de cookies sera défini selon que tactile ( `editor.html`) ou classique ( `cf#`) est utilisé ou non.
 
-* Lors de l&#39;ouverture de pages par `siteadmin`, des vérifications seront effectuées pour vérifier l&#39;existence de :
+* Lors de l’ouverture de pages par `siteadmin`, des vérifications sont effectuées pour vérifier l’existence des éléments suivants :
 
    * présence du cookie ;
    * préférence utilisateur ;
