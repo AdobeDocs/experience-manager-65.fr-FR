@@ -10,7 +10,6 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '445'
@@ -60,9 +59,9 @@ Les pages suivantes fournissent des liens vers des informations supplémentaires
 
 * [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - Les composants principaux offrent une fonctionnalité de création souple et complète, qui fournit des types de contenu essentiels à la création de pages.
 
-* [Communautés](/help/communities/author-communities.md) - Ces composants fournissent des fonctionnalités interactives pour un site web, tel que des forums et des commentaires. La plupart de ces composants sont inclus lors de la création d&#39;un [site communautaire](/help/communities/overview.md).
+* [Communautés](/help/communities/author-communities.md) - Ces composants fournissent des fonctionnalités interactives pour un site web, tel que des forums et des commentaires. La plupart de ces composants sont inclus lors de la création d’un [site communautaire](/help/communities/overview.md).
 
-* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)  - La fonctionnalité eCommerce de l&#39;AEM comprend également une gamme de composants. L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)  : la fonctionnalité eCommerce d’AEM comprend également divers composants. L’utilisation réelle peut dépendre du moteur de commerce utilisé.
 
 ### Configuration des composants {#configuring-components}
 
