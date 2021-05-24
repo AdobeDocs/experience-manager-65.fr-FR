@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 86%
 
 ---
-
 
 # ContextHub{#contexthub}
 
@@ -28,7 +27,7 @@ ContextHub est une structure pour stocker, manipuler et présenter des données 
 
 >[!CAUTION]
 >
->Le chemin d’accès contenant l’exemple de configuration ContextHub utilisé par l’implémentation de référence [We.Retail](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) ne doit être utilisé que comme référence pour créer votre propre configuration.
+>Le chemin contenant l’exemple de configuration ContextHub utilisé par l’[implémentation de référence We.Retail](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) ne doit être utilisé que comme référence pour créer votre propre configuration.
 >
 >Il ne doit pas être utilisé dans un projet comme votre propre configuration ContextHub.
 
