@@ -9,36 +9,35 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 1b5e0ccf-4157-45e3-8caf-1d6739d7d9d2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 47%
 
 ---
 
-
 # Script d’analyse des requêtes{#request-analysis-script}
 
 ## Télécharger {#download}
 
-Ce script est conçu pour faciliter l&#39;analyse des fichiers `access.log`, ce qui permet de générer un rapport lisible en vue d&#39;un traitement ultérieur.
+Ce script est conçu pour faciliter l’analyse des fichiers `access.log` produisant ainsi un rapport lisible en vue d’un traitement ultérieur.
 
 [Obtenir le fichier](assets/analyse-access.sh)
 
 ## Description {#description}
 
-Ce script est conçu pour faciliter l&#39;analyse des fichiers `access.log`, ce qui permet de générer un rapport lisible en vue d&#39;un traitement ultérieur.
+Ce script est conçu pour faciliter l’analyse des fichiers `access.log` produisant ainsi un rapport lisible en vue d’un traitement ultérieur.
 
 Il produit le nombre global de requêtes, GET vs POST, la répartition des requêtes au fil du temps, etc.
 
-La sortie est effectuée en syntaxe Markdown. Il sera donc plus facile de la convertir en PDF avec des outils tels que pandoc ou de l’afficher dans un navigateur avec des plug-ins tels que Markdown viewer.
+La sortie est en syntaxe Markdown, il sera donc plus facile de la convertir en PDF avec des outils tels que pandoc ou de l’afficher dans un navigateur avec des modules externes tels que la visionneuse Markdown.
 
-Il peut analyser un chemin personnalisé fourni sur la ligne de commande.
+Il peut analyser un chemin personnalisé fourni dans la ligne de commande.
 
 Prise du commentaire dans le fichier qui vous indique comment l’exécuter :
 
-Analyser CQ `access.log` en extrapolant diverses informations et en produisant une sortie Markdown sur `stdout`.
+Analysez CQ `access.log` en extrapolant diverses informations et en produisant une sortie Markdown sur `stdout`.
 
 ## Utilisation {#usage}
 
