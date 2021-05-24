@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 96%
 
 ---
-
 
 # Fragments d’expérience{#experience-fragments}
 
@@ -218,13 +217,13 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
 
 1. Définissez les propriétés requises :
 
-   * **Template**
+   * **Modèle**
    * **Titre**
    * **Nom** ; si rien n’est indiqué dans ce champ, le nom est déduit du titre
    * **Description**
    * **Balises de variation**
 
-   ![xf-08](assets/xf-06.png)
+   ![xf-06](assets/xf-06.png)
 
 1. Confirmez en cliquant sur **Terminé** (icône représentant une coche). La nouvelle variation est alors affichée dans le panneau :
 
@@ -240,7 +239,7 @@ Vous pouvez désormais utiliser le fragment d’expérience lors de la création
 
 1. Créez une instance du composant Fragment d’expérience. Pour ce faire, faites glisser le composant sur le système de paragraphes de la page depuis l’explorateur de composants :
 
-   ![xf-06](assets/xf-08.png)
+   ![xf-08](assets/xf-08.png)
 
 1. Ajoutez le fragment d’expérience proprement dit à l’instance de composant. Pour ce faire, vous pouvez effectuer l’une des opérations suivantes :
 
