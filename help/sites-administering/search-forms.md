@@ -5,20 +5,19 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b7be1ff0e842794511ffeb4fed60eed60796b4ff
+exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 77%
 
 ---
 
-
 # Configuration des formulaires de recherche{#configuring-search-forms}
 
 Utilisez des **formulaires de recherche** pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans différents panneaux ou consoles AEM de l’environnement de création. La personnalisation de ces panneaux permet d’adapter la fonctionnalité de recherche à vos besoins.
 
-Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, y compris (entre autres) le prédicat Propriété pour rechercher des ressources qui correspondent à une propriété unique que vous avez définie, ou le prédicat Options pour rechercher des ressources qui correspondent à une ou plusieurs valeurs que vous spécifiez pour une propriété particulière.
+Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, y compris (entre autres) le prédicat Propriété pour rechercher des ressources qui correspondent à une seule propriété que vous avez spécifiée, ou le prédicat Options pour rechercher des ressources qui correspondent à une ou plusieurs valeurs que vous spécifiez pour une propriété spécifique.
 
 Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessibles en sélectionnant :
 
@@ -38,39 +37,39 @@ Les configurations par défaut disponibles sont les suivantes :
 
 * **Éditeur de page (recherche de documents) :**
 
-   Cette configuration définit les options disponibles lors de la recherche de document dans l’explorateur d’actifs (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de document dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Éditeur de page (recherche d’images) :**
 
-   Cette configuration définit les options disponibles lors de la recherche d’images dans le navigateur de ressources (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche d’images dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Éditeur de page (recherche de manuscrits) :**
 
-   Cette configuration définit les options disponibles lors de la recherche de manuscrits dans le navigateur de ressources (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de manuscrits dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Éditeur de page (recherche de pages) :**
 
-   Cette configuration définit les options disponibles lors de la recherche de pages dans l’explorateur d’actifs (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de pages dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Éditeur de page (recherche de paragraphes) :**
 
-   Cette configuration définit les options disponibles lors de la recherche de paragraphes dans l’explorateur d’actifs (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de paragraphes dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Éditeur de page (recherche de produits) :**
 
-   Cette configuration définit les options disponibles lors de la recherche de produits dans l’explorateur d’actifs (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de produits dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Éditeur de page (Dynamic Media Classic  [anciennement Scene7] search)** :
 
-   Cette configuration définit les options disponibles lors de la recherche de ressources Scene7 dans le navigateur de ressources (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de ressources Scene7 dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Rail de recherche d’administrateurs de sites** :
 
-   Cette configuration définit les options de recherche disponibles pour l&#39;utilisateur lors de l&#39;utilisation du rail de recherche de la console Sites.
+   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de l’utilisation du rail de recherche de la console Sites.
 
 * **Éditeur de page (recherche de vidéos):**
 
-   Cette configuration définit les options disponibles lors de la recherche de vidéos dans le navigateur de ressources (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de vidéos dans l’explorateur de ressources (lors de la modification d’une page).
 
 * **Rail de recherche d’administrateurs de ressources :**
 
@@ -82,15 +81,15 @@ Les configurations par défaut disponibles sont les suivantes :
 
 * **Rail de recherche d’administrateurs de commandes:**
 
-   Cette configuration définit les options de recherche disponibles pour l&#39;utilisateur lors de la recherche de commandes commerciales.
+   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche de commandes commerciales.
 
 * **Rail de recherche d’administrateurs de collections de produits:**
 
-   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche de collections de produits commerciaux.
+   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche de collections de produits de commerce.
 
 * **Rail de recherche d’administrateurs de produits:**
 
-   Cette configuration définit les options de recherche disponibles pour l&#39;utilisateur lors de la recherche de produits commerciaux.
+   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche de produits commerciaux.
 
 * **Rail de recherche d’administrateurs de projets :**
 
@@ -120,8 +119,8 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Dernière modification de la ressource </td>
-   <td>Date de la dernière modification de l'actif.<br /> </td>
-   <td>Prédicat personnalisé, basé sur l’attribut de date.</td>
+   <td>Date de dernière modification de la ressource.<br /> </td>
+   <td>Prédicat personnalisé, basé sur le prédicat de date.</td>
   </tr>
   <tr>
    <td>Composants </td>
@@ -137,7 +136,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Date </td>
-   <td>Recherche de fichiers à l’aide de curseurs basée sur une propriété de date.</td>
+   <td>Recherche de ressources à l’aide d’un curseur en fonction d’une propriété de date.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -147,7 +146,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Date Plage </td>
-   <td>Rechercher des ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
+   <td>Recherchez les ressources créées pendant une période spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -160,7 +159,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>État d’expiration </td>
-   <td>Recherche de ressources en fonction de l’état d’expiration.</td>
+   <td>Recherchez des ressources en fonction de leur état d’expiration.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -170,7 +169,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Taille de fichier </td>
-   <td>Recherche de fichiers en fonction de leur taille.</td>
+   <td>Recherchez des ressources en fonction de leur taille.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -204,7 +203,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Propriété des options </td>
-   <td>Recherchez une propriété de l’option.</td>
+   <td>Recherchez une propriété de l’option .</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -216,7 +215,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Page État </td>
-   <td>Rechercher des pages en fonction de leur état.</td>
+   <td>Recherchez des pages en fonction de leur état.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -227,11 +226,11 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Chemin </td>
-   <td>Recherche de fichiers situés sous un chemin d’accès spécifique.</td>
+   <td>Recherchez des ressources situées sous un chemin d’accès spécifique.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
-     <li>Ajouter le chemin de recherche</li>
+     <li>Ajouter un chemin de recherche</li>
      <li>Description</li>
     </ul> </td>
   </tr>
@@ -262,7 +261,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Plage Options </td>
-   <td>Prédicat de recherche spécifique pour les ressources et identique à Prédicat de curseur commun. Il reste disponible en raison de problèmes de rétrocompatibilité.</td>
+   <td>Prédicat de recherche spécifique pour les ressources et identique au prédicat de curseur commun. Il reste disponible en raison de problèmes de rétrocompatibilité.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -273,7 +272,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Évaluation </td>
-   <td>Rechercher des ressources en fonction de leur évaluation.<br /> </td>
+   <td>Recherchez des ressources en fonction de leur évaluation.<br /> </td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -284,7 +283,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Date relative </td>
-   <td>Rechercher des ressources en fonction de la date relative de leur création<br /> </td>
+   <td>Recherche de ressources en fonction de la date relative de leur création<br /> </td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -335,9 +334,9 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    >
    >
 
-* Les prédicats de recherche liés uniquement à siteadmin (interface utilisateur classique) se trouvent sous :
+* Les prédicats de recherche liés uniquement à siteadmin (IU classique) se trouvent sous :
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
-   >   * Elles sont obsolètes et disponibles uniquement pour une compatibilité ascendante.
+   >   * Ils sont obsolètes et disponibles uniquement à des fins de compatibilité descendante.
 
 >
 >
@@ -397,7 +396,7 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 * **Nom des propriétés de publication et Live Copy**
 Libellés des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
 
-* &amp;ast; sur les libellés de champ de l&#39;onglet **Paramètres** signifie que les champs sont obligatoires et qu&#39;un message d&#39;erreur s&#39;affiche si rien n&#39;est.
+* &amp;ast; sur les libellés de champ de l’onglet **Paramètres** , cela signifie que les champs sont obligatoires. Si rien n’est indiqué, un message d’erreur s’affiche.
 
 ## Configuration des formulaires de recherche {#configuring-your-search-forms}
 
@@ -560,4 +559,3 @@ Le tableau ci-dessous répertorie les autorisations nécessaires à la modificat
   </tr>
  </tbody>
 </table>
-
