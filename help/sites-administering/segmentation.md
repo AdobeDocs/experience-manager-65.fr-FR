@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
-translation-type: tm+mt
-source-git-commit: e5e00cc181c2dc3a28e25beb52f9a4c459ee313a
+exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 97%
 
 ---
-
 
 # Configuration de la segmentation avec ContextHub {#configuring-segmentation-with-contexthub}
 
@@ -29,7 +28,7 @@ La segmentation est un élément clé de la création d’une campagne. Voir [Ge
 
 En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
 
-Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site Web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
+Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
 AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs. Il vous permet également de vérifier les résultats de vos définitions de segment.
 
@@ -172,7 +171,7 @@ OU
 
 Femme et entre 30 et 59 ans
 
-Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, vous ajoutez deux conteneurs ET et dans ces deux , vous pouvez ajouter la propriété ou les composants de référence.
+Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, vous ajoutez deux conteneurs ET ; dans ces deux conteneurs, vous pouvez ajouter la propriété ou les composants de référence.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145ama.png)
 
