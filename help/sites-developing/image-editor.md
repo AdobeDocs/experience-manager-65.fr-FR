@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 94%
 
 ---
-
 
 # Éditeur d’image{#image-editor}
 
@@ -24,7 +23,7 @@ L’éditeur d’image est un élément essentiel d’AEM qui peut être exploit
 
 >[!CAUTION]
 >
->Pour utiliser les fonctionnalités de l’éditeur d’images décrites dans cet article, [feature pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) doit être installé.
+>Pour utiliser les fonctionnalités de l’éditeur d’image décrites dans cet article, [Feature Pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) doit être installé.
 
 ## Unités relatives pour la zone cliquable {#relative-units-for-image-map}
 
@@ -97,4 +96,3 @@ La propriété `supportedMimeTypes` doit alors être définie sous la forme d’
      </cq:inplaceEditing>
  </jcr:root>
 ```
-
