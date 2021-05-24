@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
-translation-type: tm+mt
-source-git-commit: 36cc5ca0de9ae2933a0d7585a00f26cc984d24db
+exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2350'
 ht-degree: 96%
 
 ---
-
 
 # Utilisation des adaptateurs Sling{#using-sling-adapters}
 
@@ -346,7 +345,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 |---|---|
 | [ReplicationStatus](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
 
-#### Gestion des ressources numériques (DAM) {#dam}
+#### Gestion des ressources numériques (DAM)  {#dam}
 
 **Asset** s’adapte à :
 
