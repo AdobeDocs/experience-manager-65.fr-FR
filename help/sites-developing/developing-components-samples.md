@@ -10,14 +10,13 @@ topic-tags: components
 content-type: reference
 discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 97%
 
 ---
-
 
 # Développement de composants AEM – Échantillons de code{#developing-aem-components-code-samples}
 
@@ -34,10 +33,8 @@ Pour plus d’informations sur l’interface utilisateur classique, voir [Compos
 >
 >Pour vous aider à analyser, tester et déboguer vos composants, AEM propose :
 >
->* le [mode Développeur](/help/sites-developing/developer-mode.md),
->* une [structure permettant d’automatiser les tests sur la base de la bibliothèque Hobbes.js](/help/sites-developing/hobbes.md).
-
->
+>* [Mode Développeur](/help/sites-developing/developer-mode.md)
+* une [structure permettant d’automatiser les tests sur la base de la bibliothèque Hobbes.js](/help/sites-developing/hobbes.md).
 
 
 
@@ -47,12 +44,11 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-dialog-fields-customization sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* [Ouvrez le projet aem-authoring-dialog-fields-customization project sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip).
 
 >[!NOTE]
->
->Cet exemple de code est lié à la session AEM Gems traitant de la [Personnalisation des champs de la boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+Cet exemple de code est lié à la session AEM Gems traitant de la [Personnalisation des champs de la boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ## Ressources connexes {#related-resources}
 
@@ -67,4 +63,3 @@ Vous trouverez, dans la section [Ajout d’une nouvelle action à une barre d’
 Vous pouvez étendre le composant Fragment de contenu standard afin d’ajouter des fonctionnalités.
 
 Pour plus d’informations, voir [Personnalisation et extensions de fragments de contenu](/help/sites-developing/customizing-content-fragments.md).
-
