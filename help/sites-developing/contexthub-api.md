@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '5031'
 ht-degree: 92%
 
 ---
-
 
 # Guide de référence pour l’API JavaScript ContextHub{#contexthub-javascript-api-reference}
 
@@ -34,16 +33,16 @@ Le tableau suivant répertorie les noms des événements qui se produisent pour 
 | Constante | Description | Valeur |
 |---|---|---|
 | ContextHub.Constants.EVENT_NAMESPACE | Espace de nommage d’événement de ContextHub | ch |
-| ContextHub.Constants.EVENT_ALL_STORES_READY | Indique que tous les magasins requis sont enregistrés, initialisés et prêts à être consommés | prêt pour tous les magasins |
-| ContextHub.Constants.EVENT_STORES_PARTIALLY_READY | Indique que certains magasins n’ont pas été initialisés dans un délai défini | magasins-partiellement prêts |
+| ContextHub.Constants.EVENT_ALL_STORES_READY | Indique que tous les magasins requis sont enregistrés, initialisés et prêts à être consommés | all-stores-ready |
+| ContextHub.Constants.EVENT_STORES_PARTIALLY_READY | Indique que certains magasins n’ont pas été initialisés dans un délai défini | stores-partiellement prêts |
 | ContextHub.Constants.EVENT_STORE_REGISTERED | Déclenché lorsqu’un magasin est enregistré | enregistré en magasin |
-| ContextHub.Constants.EVENT_STORE_READY | Indique que le magasin est prêt à fonctionner. Il est déclenché immédiatement après l’enregistrement, à l’exception du cas des magasins JSONP où il est déclenché lorsque les données sont extraites). | prêt pour le stockage |
+| ContextHub.Constants.EVENT_STORE_READY | Indique que le magasin est prêt à fonctionner. Il est déclenché immédiatement après l’enregistrement, à l’exception du cas des magasins JSONP où il est déclenché lorsque les données sont extraites). | prêt pour le magasin |
 | ContextHub.Constants.EVENT_STORE_UPDATED | Déclenché lorsqu’un magasin met à jour sa persistance | store-update |
 | ContextHub.Constants.PERSISTENCE_CONTAINER_NAME | Nom du conteneur de persistance | ContextHubPersistence |
 | ContextHub.Constants.SERVICE_RAW_RESPONSE_KEY | Stocke le nom de clé de persistance spécifique où est stocké le résultat JSON brut | /_/raw-response |
-| ContextHub.Constants.SERVICE_RESPONSE_TIME_KEY | Stocke une date et une heure spécifiques indiquant quand les données JSON ont été extraites | /_/temps de réponse |
+| ContextHub.Constants.SERVICE_RESPONSE_TIME_KEY | Stocke une date et une heure spécifiques indiquant quand les données JSON ont été extraites | /_/response-time |
 | ContextHub.Constants.SERVICE_LAST_URL_KEY | Stocke l’URL spécifique du service JSON utilisé pendant le dernier appel | /_/url |
-| ContextHub.Constants.IS_CONTAINER_EXPANDED | Indique si l’IU ContextHub est développée | /_/conteneur étendu |
+| ContextHub.Constants.IS_CONTAINER_EXPANDED | Indique si l’IU ContextHub est développée | /_/container-expand |
 
 ### Constantes d’événement de l’IU {#ui-event-constants}
 
@@ -51,25 +50,25 @@ Le tableau suivant répertorie les noms des événements qui se produisent pour 
 
 | **Constante** | **Description** | **Valeur** |
 |---|---|---|
-| ContextHub.Constants.EVENT_UI_MODE_REGISTERED | Déclenché lorsqu’un mode est enregistré | auto-mode-registered |
-| ContextHub.Constants.EVENT_UI_MODE_UNREGISTERED | Déclenché lorsque l’enregistrement d’un mode est annulé | ui-mode-non-enregistré |
+| ContextHub.Constants.EVENT_UI_MODE_REGISTERED | Déclenché lorsqu’un mode est enregistré | ui-mode-registered |
+| ContextHub.Constants.EVENT_UI_MODE_UNREGISTERED | Déclenché lorsque l’enregistrement d’un mode est annulé | ui-mode-unregistered |
 | ContextHub.Constants.EVENT_UI_MODE_RENDERER_REGISTERED | Déclenché lorsqu’un moteur de rendu de mode est enregistré | ui-mode-renderer-registered |
-| ContextHub.Constants.EVENT_UI_MODE_RENDERER_UNREGISTERED | Déclenché lorsque l’enregistrement d’un moteur de rendu est annulé | ui-mode-renderer-non-enregistré |
-| ContextHub.Constants.EVENT_UI_MODE_ADDED | Déclenché lorsqu’un nouveau mode est ajouté | ui-mode-ajouté |
+| ContextHub.Constants.EVENT_UI_MODE_RENDERER_UNREGISTERED | Déclenché lorsque l’enregistrement d’un moteur de rendu est annulé | ui-mode-renderer-unregistered |
+| ContextHub.Constants.EVENT_UI_MODE_ADDED | Déclenché lorsqu’un nouveau mode est ajouté | ui-mode-added |
 | ContextHub.Constants.EVENT_UI_MODE_REMOVED | Déclenché lorsqu’un mode est supprimé | ui-mode-remove |
 | ContextHub.Constants.EVENT_UI_MODE_SELECTED | Déclenché lorsqu’un mode est sélectionné par l’utilisateur | ui-mode-selected |
 | ContextHub.Constants.EVENT_UI_MODULE_REGISTERED | Déclenché lorsqu’un nouveau module est enregistré | ui-module-registered |
 | ContextHub.Constants.EVENT_UI_MODULE_UNREGISTERED | Déclenché lorsque l’enregistrement d’un module est annulé | ui-module-unregistered |
 | ContextHub.Constants.EVENT_UI_MODULE_RENDERER_REGISTERED | Déclenché lorsqu’un moteur de rendu de module est enregistré | ui-module-renderer-registered |
 | ContextHub.Constants.EVENT_UI_MODULE_RENDERER_UNREGISTERED | Déclenché lorsque l’enregistrement d’un moteur de rendu de mode est annulé | ui-module-renderer-unregistered |
-| ContextHub.Constants.EVENT_UI_MODULE_ADDED | Déclenché lorsqu’un nouveau module est ajouté | ui-module-ajouté |
+| ContextHub.Constants.EVENT_UI_MODULE_ADDED | Déclenché lorsqu’un nouveau module est ajouté | ui-module-added |
 | ContextHub.Constants.EVENT_UI_MODULE_REMOVED | Déclenché lorsqu’un module est supprimé | ui-module-remove |
-| ContextHub.Constants.EVENT_UI_CONTAINER_ADDED | Déclenché lorsque le conteneur d’IU est ajouté à la page | ui-conteneur-ajouté |
-| ContextHub.Constants.EVENT_UI_CONTAINER_OPENED | Déclenché lorsque l’IU ContextHub est ouverte | ouvert par conteneur automatique |
-| ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED | Déclenché lorsque l’IU ContextHub est réduite | ui-conteneur-fermé |
-| ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED | Déclenché lorsqu’une propriété est modifiée | ui-property-changed |
-| ContextHub.Constants.EVENT_UI_RENDERED | Déclenché à chaque fois que l’IU ContextHub est restituée (par exemple, après un changement de propriété) | rendu par ui |
-| ContextHub.Constants.EVENT_UI_INITIALIZED | Déclenché lorsque le conteneur d’IU est initialisé | ui-initialisé |
+| ContextHub.Constants.EVENT_UI_CONTAINER_ADDED | Déclenché lorsque le conteneur d’IU est ajouté à la page | ui-container-added |
+| ContextHub.Constants.EVENT_UI_CONTAINER_OPENED | Déclenché lorsque l’IU ContextHub est ouverte | ui-container-opens |
+| ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED | Déclenché lorsque l’IU ContextHub est réduite | ui-container-closed |
+| ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED | Déclenché lorsqu’une propriété est modifiée | ui-property-modified |
+| ContextHub.Constants.EVENT_UI_RENDERED | Déclenché à chaque fois que l’IU ContextHub est restituée (par exemple, après un changement de propriété) | rendu ui |
+| ContextHub.Constants.EVENT_UI_INITIALIZED | Déclenché lorsque le conteneur d’IU est initialisé | ui-initialized |
 | ContextHub.Constants.ACTIVE_UI_MODE | Indique le mode d’IU actif | /_/principal-ui-mode |
 
 ## Guide de référence pour l’API JavaScript ContextHub {#contexthub-javascript-api-reference-2}
@@ -127,7 +126,7 @@ Représente un segment ContextHub. Utilisez ContextHub.SegmentEngine.SegmentMana
 
 Renvoie le nom du segment sous forme de chaîne.
 
-#### getPath()   {#getpath}
+#### getPath()  {#getpath}
 
 Renvoie le chemin du référentiel pour la définition de segment sous forme de chaîne.
 
@@ -170,7 +169,7 @@ Objet ContextHub.Utils.Persistence. Pour plus d’informations sur la valeur par
 Fusionne un objet de données ou un tableau contenant les données de magasin. Chaque paire clé/valeur de l’objet ou du tableau est ajoutée au magasin (via la fonction `setItem`) :
 
 * **Objet :** les clés sont les noms des propriétés.
-* **Tableau :** Les clés sont les index de tableau.
+* **Tableau :** les clés sont les index de tableau.
 
 Notez que les valeurs peuvent être des objets.
 
@@ -207,7 +206,7 @@ Une valeur `boolean` :
 
 Déclenche l’événement `ready` pour ce magasin. Cette fonction ne possède aucun paramètre et ne renvoie aucune valeur.
 
-#### clean()   {#clean}
+#### clean()  {#clean}
 
 Supprime toutes les données du magasin. La fonction ne possède aucun paramètre et aucune valeur de retour.
 
@@ -241,7 +240,7 @@ Récupère les références du magasin.
 
 **Renvoie**
 
-Tableau qui utilise les clés référençant comme index pour les clés référencées :
+Tableau qui utilise des clés de référencement comme index pour les clés référencées :
 
 * Les clés de référencement correspondent au paramètre `key` de la fonction `addReference`.
 
@@ -265,7 +264,7 @@ Initialise le magasin.
 
 * Définit les données du magasin sur un objet vide.
 * Définit les références du magasin sur un objet vide.
-* eventChannel est data:*name*, où *name* est le nom de la boutique.
+* eventChannel est data:*name*, où *name* est le nom du magasin.
 
 * Le paramètre StoreDataKey est /store/*name* où *name* correspond au nom du magasin.
 
@@ -417,7 +416,7 @@ Configure les détails de connexion au service JSONP que cet objet utilise. Vous
 
       * auto : //
       * true : https://
-      * false: https://
+      * false : https://
 
 * **override :** (booléen). Une valeur `true` donne lieu au remplacement de la configuration de service existante par les propriétés de `serviceConfig`. Une valeur `false` entraîne la fusion des propriétés de configuration de service existantes avec les propriétés de `serviceConfig`.
 
@@ -429,7 +428,7 @@ Renvoie la réponse brute mise en cache depuis le dernier appel au service JSONP
 
 Un objet qui représente la réponse brute.
 
-#### getServiceDetails()   {#getservicedetails}
+#### getServiceDetails()  {#getservicedetails}
 
 Récupère l’objet de service pour cet objet ContextHub.Store.JSONPStore. L’objet de service contient toutes les informations requises pour créer l’URL du service.
 
@@ -440,14 +439,14 @@ Un objet possédant les propriétés suivantes :
 * **host :** (chaîne). Nom ou adresse IP du serveur.
 * **jsonp :** (booléen). Une valeur true indique que le service est un service JSONP, false dans le cas contraire. Si la valeur est true, l’objet {callback:&quot;ContextHub.Callbacks.*Object.name*} est ajouté à l’objet service.params.
 
-* **paramètres d’URL params:** (Object) représentés sous forme de propriétés d’objet. Les noms des paramètres correspondent aux noms de propriétés et leurs valeurs aux valeurs des propriétés.
+* **params :**  (objet) Paramètres d’URL représentés sous forme de propriétés d’objet. Les noms des paramètres correspondent aux noms de propriétés et leurs valeurs aux valeurs des propriétés.
 * **path :** (chaîne). Chemin d’accès au service.
 * **port :** (nombre). Numéro de port du service.
 * **secure :** (chaîne ou booléen). Détermine le protocole à utiliser pour l’URL du service:
 
    * auto : //
    * true : https://
-   * false: https://
+   * false : https://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -484,7 +483,7 @@ initialise l’objet ContextHub.Store.JSONPStore.
 
          * auto : //
          * true : https://
-         * false: https://
+         * false : https://
       * timeout : (nombre). Délai d’attente avant que le service JSONP ne réponde, en millisecondes.
       * ttl : délai minimal en millisecondes qui s’écoule entre les appels au service JSONP. (Voir la fonction [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
 
@@ -538,7 +537,7 @@ Enregistre un moteur de rendu de module d’IU avec ContextHub. Une fois le mote
 **Paramètres**
 
 * **moduleType :** (chaîne). Identificateur du rendu du module d’IU. Si un moteur de rendu est déjà enregistré à l’aide de la valeur spécifiée, le moteur de rendu existant n’est pas enregistré avant l’enregistrement de ce convertisseur.
-* **renderer:** (String) Nom de la classe qui effectue le rendu du module d&#39;interface utilisateur.
+* **renderer :**  (chaîne). Nom de la classe qui effectue le rendu du module d’IU.
 * **dontRender :** (booléen). Définir sur `true` pour empêcher le rendu de l’IU ContextHub après l’enregistrement du moteur de rendu. La valeur par défaut est `false`.
 
 **Exemple**
@@ -561,7 +560,7 @@ Détermine si un cookie existe.
 
 **Paramètres**
 
-* **key :**  `String` qui contient la clé du cookie pour lequel vous effectuez des tests.
+* **key :**  `String` qui contient la clé du cookie que vous testez.
 
 **Renvoie**
 
@@ -670,8 +669,8 @@ Crée un cookie de la clé et de la valeur en question et ajoute le cookie au do
 * **options :** (facultatif). Objet contenant l’une des propriétés suivantes qui configurent les attributs de cookie :
 
    * expire : Valeur `date` ou `number` qui spécifie le moment où le cookie expire. Une valeur de date spécifie l’heure absolue d’expiration. Un nombre (en jours) définit l’heure d’expiration sur l’heure actuelle plus le nombre. La valeur par défaut est `undefined`.
-   * secure: Valeur `boolean` qui spécifie l’attribut `Secure` du cookie. La valeur par défaut est `false`.
-   * chemin : Valeur `String` à utiliser comme attribut `Path` du cookie. La valeur par défaut est `undefined`.
+   * secure : Valeur `boolean` qui spécifie l’attribut `Secure` du cookie. La valeur par défaut est `false`.
+   * path: Valeur `String` à utiliser comme attribut `Path` du cookie. La valeur par défaut est `undefined`.
 
 **Renvoie**
 
@@ -714,9 +713,9 @@ Dissocie une fonction d’un événement.
 
 **Paramètres**
 
-* **name :**  [nom de l’](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) événement pour lequel vous annulez la liaison de la fonction.
+* **name :**  [nom de l’](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) événement pour lequel vous dissociez la fonction.
 
-* **selector :** sélecteur identifiant l’association. (Voir le paramètre `selector` pour les fonctions [on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) et [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents)).
+* **selector :** sélecteur identifiant l’association. (Voir le paramètre `selector` pour les fonctions [on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) et [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) ).
 
 **Renvoie**
 
@@ -731,7 +730,7 @@ Associe une fonction à un événement. La fonction est appelée à chaque fois 
 * **name :** (chaîne). [Nom de l’événement](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) auquel vous associez la fonction.
 
 * **handler :** (fonction). Fonction à associer à l’événement.
-* **selector:** (String) Identifiant unique de la liaison. Le sélecteur est nécessaire pour identifier l’association si vous souhaitez utiliser la fonction `off` pour supprimer l’association.
+* **selector :**  (chaîne). Identifiant unique de la liaison. Le sélecteur est nécessaire pour identifier l’association si vous souhaitez utiliser la fonction `off` pour supprimer l’association.
 
 * **triggerForPastEvents :** (booléen). Indique si le gestionnaire doit être exécuté pour les événements survenus dans le passé. Une valeur `true` appelle le gestionnaire pour les événements passés. Une valeur `false`appelle le gestionnaire pour les événements futurs. La valeur par défaut est `true`.
 
@@ -773,7 +772,7 @@ Associe une fonction à un événement. La fonction est appelée une seule fois,
 * **name :** (chaîne). [Nom de l’événement](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) auquel vous associez la fonction.
 
 * **handler :** (fonction). Fonction à associer à l’événement.
-* **selector:** (String) Identifiant unique de la liaison. Le sélecteur est nécessaire pour identifier l’association si vous souhaitez utiliser la fonction `off` pour supprimer l’association.
+* **selector :**  (chaîne). Identifiant unique de la liaison. Le sélecteur est nécessaire pour identifier l’association si vous souhaitez utiliser la fonction `off` pour supprimer l’association.
 
 * **triggerForPastEvents :** (booléen). Indique si le gestionnaire doit être exécuté pour les événements survenus dans le passé. Une valeur `true` appelle le gestionnaire pour les événements passés. Une valeur `false`appelle le gestionnaire pour les événements futurs. La valeur par défaut est `true`.
 
@@ -821,7 +820,7 @@ Un objet JavaScript.
 
 **Exemple**
 
-Le code `ContextHub.Utils.JSON.parse("{'city':'Basel','country':'Switzerland','population':'173330'}");` renvoie l&#39;objet suivant :
+Le code `ContextHub.Utils.JSON.parse("{'city':'Basel','country':'Switzerland','population':'173330'}");` renvoie l’objet suivant :
 
 ```
 Object {
@@ -868,13 +867,13 @@ Crée une copie d’un objet de données et y ajoute l’arbre de données d’u
 **Paramètres**
 
 * **tree :** objet copié.
-* **secondTree :** objet fusionné avec la copie de l&#39; `tree` objet.
+* **secondTree :** objet fusionné avec la copie de l’ `tree` objet.
 
 **Renvoie**
 
 Un objet contenant les données fusionnées.
 
-#### cleanup()   {#cleanup}
+#### cleanup()  {#cleanup}
 
 Crée une copie d’un objet, identifie et supprime les éléments de l’arbre de données qui ne contiennent aucune valeur, une valeur nulle ou indéfinie et renvoie la copie.
 
@@ -886,7 +885,7 @@ Crée une copie d’un objet, identifie et supprime les éléments de l’arbre 
 
 Copie de l’arbre qui est nettoyé.
 
-#### getItem()   {#getitem}
+#### getItem()  {#getitem}
 
 Récupère la valeur d’un objet pour une clé donnée.
 
@@ -943,7 +942,7 @@ Object {
 }
 ```
 
-#### getKeys()   {#getkeys}
+#### getKeys()  {#getkeys}
 
 Récupère toutes les clés de l’arbre de données d’un objet. En option, vous pouvez récupérer uniquement les clés des enfants d’une clé spécifique. Vous pouvez également spécifier un ordre de tri des clés récupérées.
 
@@ -1043,7 +1042,7 @@ Assainit les valeurs de chaîne pour les rendre utilisables sous forme de clés.
 
 Utilisez le tableau obtenu pour créer une clé utilisable.  **Paramètres**
 
-* **clé :** La  `string` façon de procéder à l&#39;assainissement.
+* **clé :**  `string` à assainir.
 
 **Renvoie**
 
@@ -1128,7 +1127,7 @@ Renvoie un type de magasin parmi les candidats enregistrés. Si plus d’un type
 
 Un objet qui représente le magasin candidat enregistré. Si le type de magasin demandé n’est pas enregistré, une erreur est générée.
 
-#### getSupportedStoreTypes()   {#getsupportedstoretypes}
+#### getSupportedStoreTypes()  {#getsupportedstoretypes}
 
 Renvoie les noms des magasins enregistrés en tant que magasins candidats. Cette fonction ne nécessite aucun paramètre.
 
@@ -1146,7 +1145,7 @@ La priorité est un nombre qui indique l’importance des magasins de même nom.
 
 * **store :** (objet). Objet magasin à enregistrer en tant que magasin candidat.
 * **storeType :** (chaîne). Nom du magasin candidat. Cette valeur est requise lors de la création d’une instance du magasin candidat.
-* **priority:** (Number) La priorité du candidat au magasin.
+* **priority :**  (nombre). Priorité du magasin candidat.
 * **applies :** (fonction). Fonction à appeler pour évaluer l’applicabilité du magasin dans l’environnement actuel. La fonction doit renvoyer la valeur `true` si le magasin est applicable, et `false` dans le cas contraire. La valeur par défaut est une fonction qui renvoie la valeur true : `function() {return true;}`
 
 **Exemple**
@@ -1155,4 +1154,3 @@ La priorité est un nombre qui indique l’importance des magasins de même nom.
 ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandiate', 0);
 ```
-
