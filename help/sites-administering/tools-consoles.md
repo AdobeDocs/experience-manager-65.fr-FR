@@ -10,14 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 99%
 
 ---
-
 
 # Consoles Outils{#tools-consoles}
 
@@ -467,4 +466,3 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
  </tbody>
 </table>
-
