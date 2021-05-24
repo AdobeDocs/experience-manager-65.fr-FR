@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 79%
 
 ---
-
 
 # Personnalisation de la console de bienvenue (IU classique){#customizing-the-welcome-console-classic-ui}
 
@@ -63,7 +62,7 @@ Les autorisations au niveau du nœud déterminent si les liens sont visibles ou 
 
 Par exemple :
 
-* Pour limiter l&#39;accès aux **outils**, supprimez l&#39;accès en lecture de
+* Pour restreindre l’accès à **Outils**, supprimez l’accès en lecture à partir de
 
    `/libs/wcm/core/content/misc`
 
@@ -164,21 +163,21 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
 
 Il est possible de masquer un lien pour des utilisateurs ou des groupes spécifiques en supprimant l’accès aux nœuds qui le représentent.
 
-* Ressources - supprimer l&#39;accès à :
+* Ressources : supprimez l’accès à :
 
    `/libs/cq/core/content/welcome/resources/<link-target>`
 
-* Documents - supprimer l&#39;accès à :
+* Documents - supprimez l’accès à :
 
    `/libs/cq/core/content/welcome/docs/<link-target>`
 
-* Fonctionnalités - supprimer l&#39;accès à :
+* Fonctionnalités : supprimez l’accès à :
 
    `/libs/cq/core/content/welcome/features/<link-target>`
 
 Par exemple :
 
-* Pour supprimer le lien vers **Rapports**, supprimez l’accès en lecture de
+* Pour supprimer le lien vers **Reports**, supprimez l’accès en lecture de
 
    `/libs/cq/core/content/welcome/resources/reports`
 
@@ -190,7 +189,7 @@ Pour plus d’informations sur la définition des autorisations souhaitées, con
 
 ### Mécanisme de sélection de liens  {#link-selection-mechanism}
 
-Dans `/libs/cq/core/components/welcome/welcome.jsp`, l&#39;utilisation est faite de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), qui exécute une requête sur les noeuds qui possèdent la propriété :
+Dans `/libs/cq/core/components/welcome/welcome.jsp` , l’utilisation est faite de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), qui exécute une requête sur les noeuds possédant la propriété :
 
 * `jcr:mixinTypes` avec la valeur :  `cq:Console`
 
@@ -213,4 +212,3 @@ Vous pouvez utiliser le [mécanisme de sélection de liens](#link-selection-mech
 Ajoutez votre élément personnalisé à la liste en ajoutant le mixin `cq:Console` à votre widget ou ressource. Pour ce faire, vous devez définir la propriété suivante :
 
 * `jcr:mixinTypes` avec la valeur :  `cq:Console`
-
