@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 85bfce4f-737a-475c-987d-f94c85b3d763
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: ebf6d4ef-20ba-487b-b301-52de8936628f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 100%
 
 ---
-
 
 # Articles associés de la communauté{#related-community-articles}
 
@@ -27,4 +26,3 @@ Voici la liste des éléments disponibles :
 * [Utilisation des règles d’activation sur les pages Web Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/using/dtm.html)
 * [Intégration d’AEM à Adobe Analytics et Target avec DTM](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html)
 * [Intégration d’Adobe Experience Manager et d’Adobe Campaign Standard pour créer des bulletins d’information](https://helpx.adobe.com/fr/experience-manager/using/aem_campaign.html)
-
