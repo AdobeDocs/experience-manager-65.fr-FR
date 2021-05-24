@@ -5,9 +5,9 @@ contentOwner: AG
 role: Administrator
 feature: Publication
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1565'
 ht-degree: 38%
 
 ---
@@ -113,7 +113,9 @@ Arguments d’extraction de médias et chemins de scripts
 
 * **Étendre les scripts** : Vous pouvez spécifier différentes combinaisons de script ici. Si vous souhaitez que vos propres scripts soient exécutés sur [!DNL InDesign Server], enregistrez-les à l’emplacement `/apps/settings/dam/indesign/scripts`.
 
-Pour plus d’informations sur les scripts [!DNL Adobe InDesign], voir la [documentation InDesign destinée aux développeurs](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+<!-- TBD: Hiding this link since ADC is not available anymore. 
+For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+-->
 
 >[!CAUTION]
 >
