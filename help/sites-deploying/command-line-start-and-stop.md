@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
-translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 93%
 
 ---
-
 
 # Début et arrêt d’AEM à partir de la ligne de commande{#command-line-start-and-stop}
 
@@ -24,7 +23,7 @@ ht-degree: 93%
 
 Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Des versions sont fournies pour Unix et Windows. Le script démarre l’instance installée dans le répertoire *&lt;cq-installation>*.
 
-Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour début et régler l’instance AEM.
+Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et ajuster l’instance AEM.
 
 <table>
  <tbody>
@@ -125,4 +124,3 @@ Si vous souhaitez uniquement préconfigurer le référentiel (sans le déplacer)
 * créer `bootstrap.properties` et définir `repository.config`
 
 Vous devez effectuer ces opérations avant de démarrer l’installation actuelle.
-
