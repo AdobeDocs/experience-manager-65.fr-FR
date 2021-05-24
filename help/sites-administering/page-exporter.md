@@ -1,31 +1,30 @@
 ---
 title: Exportateur de page
 description: Découvrez comment utiliser l’exportateur de page d’AEM.
-translation-type: tm+mt
-source-git-commit: 6aee1506b54a932bae8f2521fce4488de7d2a52a
+exl-id: 15d08758-cf75-43c0-9818-98a579d64183
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 30%
 
 ---
 
-
 # Exportateur de page{#the-page-exporter}
 
-AEM vous permet d’exporter une page en tant que page Web complète comprenant des images, des fichiers `.js` et `.css`.
+AEM vous permet d’exporter une page sous la forme d’une page web complète comprenant des images, des fichiers `.js` et `.css`.
 
-Une fois configurée, vous demandez une exportation de page à partir de votre navigateur en remplaçant `html` par `export.zip` dans l’URL. Ceci génère un fichier d’archive (zip) contenant la page rendue au format html, ainsi que les ressources référencées. Tous les chemins de la page (par exemple, les chemins d’accès aux images) sont réécrits pour pointer vers les fichiers inclus dans l’archive ou vers les ressources du serveur. Le fichier d’archive (zip) peut ensuite être téléchargé à partir de votre navigateur.
+Une fois la configuration effectuée, vous demandez l’exportation d’une page à partir de votre navigateur en remplaçant `html` par `export.zip` dans l’URL. Cette opération génère un fichier d’archive (zip) contenant la page rendue au format html, ainsi que les ressources référencées. Tous les chemins d’accès de la page (par exemple, les chemins d’accès aux images) sont réécrits afin de pointer vers les fichiers inclus dans l’archive ou vers les ressources du serveur. Le fichier d’archive (zip) peut ensuite être téléchargé à partir de votre navigateur.
 
 >[!NOTE]
 >
->Selon votre navigateur et les paramètres, le téléchargement sera soit :
->* un fichier d’archive (`<page-name>.export.zip`)
->* un dossier (`<page-name>`); en fait, le fichier d&#39;archive a déjà été développé
+>Selon votre navigateur et les paramètres, le téléchargement sera :
+>* un fichier d’archive (`<page-name>.export.zip`) ;
+>* un dossier (`<page-name>`); en fait, le fichier d’archive a déjà été développé.
 
 
 ## Exportation d’une page {#exporting-a-page}
 
-La procédure ci-dessous décrit comment exporter une page et considère qu’il existe un modèle de de l’exportation pour votre site. Un modèle d’exportation définit la manière dont une page est exportée et est spécifique à votre site. Pour créer un modèle d’exportation, reportez-vous à la section [Création d’une configuration d’exportateur de pages pour votre site](#creating-a-page-exporter-configuration-for-your-site).
+La procédure ci-dessous décrit comment exporter une page et considère qu’il existe un modèle de de l’exportation pour votre site. Un modèle d’exportation définit la manière dont une page est exportée et est spécifique à votre site. Pour créer un modèle d’exportation, reportez-vous à la section [Création d’une configuration d’exportateur de page pour votre site](#creating-a-page-exporter-configuration-for-your-site) .
 
 Pour exporter une page, procédez comme suit :
 
@@ -35,12 +34,12 @@ Pour exporter une page, procédez comme suit :
 
 1. Sélectionnez l’onglet **Avancé**.
 
-1. Développez le champ **Exporter** pour sélectionner un modèle d’exportation.
+1. Développez le champ **Export** pour sélectionner un modèle d&#39;export.
 Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
 
-1. Sélectionnez **Enregistrer et fermer** pour fermer la boîte de dialogue des propriétés de page.
+1. Sélectionnez **Enregistrer et fermer** pour fermer la boîte de dialogue des propriétés de la page.
 
-1. Demandez la page à exporter en remplaçant le suffixe `html` par `export.zip` dans l’URL.
+1. Demandez la page à exporter, en remplaçant le suffixe `html` par `export.zip` dans l’URL.
 
    Par exemple :
    * localhost:4502/content/we-retail/language-masters/en.html
@@ -51,52 +50,52 @@ Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
 
 1. Téléchargez le fichier d’archive sur votre système de fichiers.
 
-1. Dans votre système de fichiers, décompressez le fichier si nécessaire. Une fois développé, il y aura un dossier portant le même nom que la page sélectionnée. Ce dossier contient :
+1. Dans votre système de fichiers, décompressez le fichier si nécessaire. Une fois développé, un dossier portant le même nom que la page sélectionnée s’affiche. Ce dossier contient :
 
-   * le sous-dossier `content`, qui est la racine d’une série de sous-dossiers qui reflètent le chemin d’accès à la page dans le référentiel
+   * le sous-dossier `content`, qui est la racine d’une série de sous-dossiers qui reflètent le chemin d’accès à la page dans le référentiel.
 
-      * dans cette structure, il y a le fichier html pour la page sélectionnée (`<page-name>.html`).
-   * autres ressources (`.js` fichiers, `.css` fichiers, images, etc.) sont situés en fonction des paramètres définis dans le modèle d’exportation.
+      * dans cette structure, il existe le fichier html pour la page sélectionnée (`<page-name>.html`).
+   * autres ressources (`.js` fichiers, `.css` fichiers, images, etc.) se situent en fonction des paramètres du modèle d’exportation.
 
 
 1. Ouvrez le fichier HTML de la page (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) dans votre navigateur pour vérifier le rendu.
 
 ## Création d’une configuration de l’exportateur de page pour votre site {#creating-a-page-exporter-configuration-for-your-site}
 
-L’exportateur de pages est basé sur la structure [Content Sync](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html). Les configurations disponibles dans la boîte de dialogue **Propriétés de la page** sont des modèles d&#39;exportation qui définissent les dépendances requises pour une page.
+L’exportateur de page est basé sur la [structure de synchronisation de contenu](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html). Les configurations disponibles dans la boîte de dialogue **Propriétés de page** sont des modèles d’exportation qui définissent les dépendances requises pour une page.
 
 Lorsqu’une exportation de page est déclenchée, le modèle d’exportation est référencé et le chemin de page et le chemin de conception sont appliqués dynamiquement. Le fichier compressé est alors créé à l’aide de la fonctionnalité de synchronisation de contenu standard.
 
-Une installation AEM prête à l’emploi inclut un modèle par défaut sous `/etc/contentsync/templates/default`.
+Une installation AEM prête à l’emploi comprend un modèle par défaut sous `/etc/contentsync/templates/default`.
 
-* Il s’agit du modèle de secours lorsqu’aucun modèle d’exportation n’est trouvé dans le référentiel.
+* Ce modèle est le modèle de secours lorsqu’aucun modèle d’exportation n’est trouvé dans le référentiel.
 
-* Le modèle `default` montre comment une exportation de page peut être configurée, de sorte qu&#39;il puisse servir de base pour un nouveau modèle d&#39;exportation.
+* Le modèle `default` indique comment une exportation de page peut être configurée, afin de servir de base à un nouveau modèle d’exportation.
 
-* Pour vue de la structure des noeuds du modèle dans votre navigateur au format JSON, demandez l’URL suivante :
+* Pour afficher la structure de noeud du modèle dans votre navigateur au format JSON, demandez l’URL suivante :
    `http://localhost:4502/etc/contentsync/templates/default.json`
 
-La méthode la plus simple pour créer un nouveau modèle d&#39;exportateur de pages consiste à :
+La méthode la plus simple pour créer un modèle d’exportateur de page consiste à :
 
 * copier le modèle `default`,
 
-* attribuez un nouveau nom, approprié à votre site,
+* attribuer un nouveau nom, approprié à votre site,
 
-* puis effectuez les mises à jour requises.
+* effectuez ensuite les mises à jour requises.
 
-Pour créer un modèle entièrement nouveau :
+Pour créer un modèle totalement nouveau :
 
 1. Dans **CRXDE Lite**, créez un noeud sous `/etc/contentsync/templates` :
 
-   * `Name`: un nom approprié à votre site ; par exemple,  `<mysite>`. Le nom s’affiche dans la boîte de dialogue des propriétés de la page lors du choix du modèle d’exportateur de page.
+   * `Name`: un nom approprié à votre site ; par exemple,  `<mysite>`. Le nom apparaît dans la boîte de dialogue Propriétés de la page lors du choix du modèle d’exportateur de page.
 
    * `Type`: `nt:unstructured`
 
 2. Sous le noeud de modèle, appelé ici `mysite`, créez une structure de noeud à l’aide des noeuds de configuration décrits ci-dessous.
 
-## Activation d&#39;un modèle d&#39;exportateur de pages pour vos pages {#activating-a-page-exporter-configuration-for-your-pages}
+## Activation d’un modèle d’exportateur de page pour vos pages {#activating-a-page-exporter-configuration-for-your-pages}
 
-Une fois votre modèle configuré, vous devez le rendre disponible :
+Une fois votre modèle paramétré, vous devez le rendre disponible :
 
 1. Dans CRXDE, accédez à la page requise dans la branche `/content`. Il peut s’agir d’une page individuelle ou de la page racine d’une sous-arborescence.
 
@@ -107,7 +106,7 @@ Une fois votre modèle configuré, vous devez le rendre disponible :
 
 ### Nœuds de configuration de l’exportateur de page {#page-exporter-configuration-nodes}
 
-Le modèle se compose d’une structure de noeud, dans la mesure où il utilise la structure [Content Sync](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html).  Chaque nœud possède une propriété `type` qui définit une action spécifique dans le processus de création du fichier compressé.
+Le modèle se compose d’une structure de noeud, car il utilise la [structure de synchronisation de contenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html).  Chaque nœud possède une propriété `type` qui définit une action spécifique dans le processus de création du fichier compressé.
 
 <!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
 -->
@@ -123,7 +122,7 @@ Les nœuds ci-dessous peuvent être utilisés pour créer un modèle de d’expo
 
    Le nœud `page` possède les propriétés suivantes :
 
-   * Propriété `type` définie avec la valeur `pages`.
+   * Une propriété `type` définie avec la valeur `pages`.
 
    * Il ne comporte pas de propriété `path`, car le chemin d’accès actuel à la page est copié dynamiquement dans la configuration.
 
@@ -143,20 +142,20 @@ Les nœuds ci-dessous peuvent être utilisés pour créer un modèle de d’expo
 
    Le nœud `design` possède les propriétés suivantes :
 
-   * Propriété `type` définie sur la valeur `copy`.
+   * Une propriété `type` définie sur la valeur `copy`.
 
-   * Il ne possède pas de propriété `path`, car le chemin de page actif est dynamiquement copié dans la configuration.
+   * Il ne possède pas de propriété `path`, car le chemin de page actuel est copié dynamiquement dans la configuration.
 
 
 * `generic`
-Un noeud générique est utilisé pour copier des ressources telles que clientlibs 
-`.js` ou  `.css` des fichiers au fichier zip. Il possède les caractéristiques suivantes :
+Un noeud générique est utilisé pour copier des ressources telles que clientlibs. 
+`.js` ou  `.css` au fichier zip. Il possède les caractéristiques suivantes :
 
    * Il est facultatif.
    * Se trouve sous `/etc/contentsync/templates/<mysite>`.
    * Il ne possède pas de domaine spécifique.
    * Le type de noeud est `nt:unstructured`.
-   * A une propriété `type` et des propriétés `type` connexes. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
+   * Possède une propriété `type` et des propriétés `type` associées. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
    Par exemple, le noeud de configuration suivant copie les fichiers `mysite.clientlibs.js` dans le fichier zip :
 
@@ -191,6 +190,6 @@ Pour exporter une page par programmation, vous pouvez utiliser le service OSGi 
 
 Le servlet lié au sélecteur `export` et à l’extension `zip` utilise le service PageExporter.
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
-Si vous rencontrez un problème de téléchargement du fichier zip, vous pouvez supprimer le noeud `/var/contentsync` dans le référentiel et envoyer à nouveau la demande d’exportation.
+Si vous rencontrez un problème lors du téléchargement du fichier zip, vous pouvez supprimer le noeud `/var/contentsync` dans le référentiel et envoyer à nouveau la demande d’exportation.
