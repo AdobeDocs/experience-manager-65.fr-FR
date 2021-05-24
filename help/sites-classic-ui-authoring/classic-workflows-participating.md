@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 98%
 
 ---
-
 
 # Participation aux workflows{#participating-in-workflows}
 
@@ -52,11 +51,11 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
 
 * La colonne **État** de la console Sites web indique quand une page fait partie d’un workflow :
 
-   ![workflow status-1](assets/workflowstatus-1.png)
+   ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Lorsque vous ou un groupe auquel vous appartenez vous voyez attribuer un élément de travail dans le cadre d’un workflow, l’élément de travail apparaît dans votre boîte de réception Worfklow AEM.
 
-   ![workfleinbox](assets/workflowinbox.png)
+   ![workflowinbox](assets/workflowinbox.png)
 
 ### Réalisation d’une étape de participant {#completing-a-participant-step}
 
@@ -65,7 +64,7 @@ Lorsque vous avez suivi l’étape qui vous a été attribuée, vous pouvez fina
 1. Sélectionnez l’étape du workflow et cliquez sur **Terminé** dans la barre de navigation supérieure.
 1. Dans la boîte de dialogue qui s’ouvre, sélectionnez **Étape suivante**, c’est-à-dire l’étape à exécuter par la suite. Une liste déroulante affiche toutes les destinations correspondantes. Un **commentaire** peut également être rédigé.
 
-   ![workflow complete](assets/workflowcomplete.png)
+   ![workflowcomplete](assets/workflowcomplete.png)
 
    Le nombre d’étapes indiqué dépend de la structure du modèle de workflow.
 
@@ -78,7 +77,7 @@ Procédez comme suit pour déléguer un élément de travail.
 1. Cliquez sur le bouton **Déléguer** dans la barre de navigation supérieure.
 1. Dans la boîte de dialogue, utilisez la liste déroulante pour sélectionner **l’utilisateur** auquel vous souhaitez déléguer l’élément de travail. Vous pouvez également rédiger un **commentaire**.
 
-   ![workflow delegate](assets/workflowdelegate.png)
+   ![workflowdelegate](assets/workflowdelegate.png)
 
 1. Cliquez sur **OK** pour confirmer l’action.
 
@@ -92,4 +91,3 @@ Procédez comme suit pour revenir en arrière.
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. Cliquez sur OK pour confirmer l’action.
-
