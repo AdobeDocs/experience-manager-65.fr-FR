@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 91%
 
 ---
-
 
 # Manipulation de base{#basic-handling}
 
@@ -60,7 +59,7 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Lancements</strong></td>
-   <td>Cela vous permet de gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a>; vous pouvez ainsi développer le contenu pour une prochaine publication d’une ou de plusieurs pages Web activées.<br /> <i>Remarque : Dans l’interface utilisateur tactile, la plupart des mêmes fonctionnalités sont disponibles dans la console Sites, ainsi que dans le rail Références.</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
+   <td>Cela vous aide à gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a> ; cela vous permet de développer le contenu pour une prochaine version d’une ou de plusieurs pages web activées.<br /> <i>Remarque : Dans l’interface utilisateur tactile, une grande partie de la même fonctionnalité est disponible dans la console Sites, avec le rail Références .</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
   </tr>
   <tr>
    <td><strong>Boîte de réception </strong></td>
@@ -93,13 +92,13 @@ La console **Sites Web** comporte deux volets grâce auxquels vous pouvez parcou
 
 * Volet de gauche
 
-   Vous voyez ainsi l&#39;arborescence de vos sites Web et les pages qu&#39;ils contiennent.
+   Vous voyez ainsi l’arborescence de vos sites web et les pages qu’ils contiennent.
 
-   Il présente également des informations sur d&#39;autres aspects ou AEM, y compris les projets, les plans directeurs et les actifs.
+   Il affiche également des informations sur d’autres aspects ou AEM, y compris les projets, les plans directeurs et les ressources.
 
 * Volet de droite
 
-   Cette option affiche les pages (à l’emplacement sélectionné dans le volet de gauche) et peut être utilisée pour des actions.
+   Les pages s’affichent alors (à l’emplacement sélectionné dans le volet de gauche) et peuvent être utilisées pour effectuer des actions.
 
 D’ici, vous pouvez [gérer vos pages](/help/sites-authoring/managing-pages.md) en utilisant la barre d’outils, un menu contextuel ou en ouvrant une page pour accomplir d’autres actions.
 
@@ -138,7 +137,7 @@ La console **Sites web** répertorie vos pages de contenu dans une structure arb
 >
 >Définissez la valeur de la propriété :
 >`treeAutoExpandMax`
->dans :
+>à:
 >`/apps/wcm/core/content/siteadmin`
 >
 >Ou à l’échelle du thème :
@@ -164,7 +163,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>Miniature </td>
+   <td>Miniature</td>
    <td>Présente une miniature de la page.</td>
   </tr>
   <tr>
@@ -196,7 +195,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
    <td>Affiche l’activité d’une page sous la forme d’un nombre d’accès.</td>
   </tr>
   <tr>
-   <td>Template</td>
+   <td>Modèle</td>
    <td>Indique le modèle sur lequel est basée une page.</td>
   </tr>
   <tr>
@@ -208,7 +207,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
    <td>Indique si une page a été verrouillée et quel compte d’utilisateur l’a verrouillée.</td>
   </tr>
   <tr>
-   <td>Live Copy </td>
+   <td>Live Copy</td>
    <td>Indique si la page fait partie d’une live copy.</td>
   </tr>
  </tbody>
@@ -234,4 +233,3 @@ Les couleurs en regard des pages des colonnes **Publié** et **Modifié** indiqu
 L’IU classique applique des mécanismes courants pour la navigation et le déclenchement des opérations, notamment clic et double-clic. Selon la situation actuelle, divers menus contextuels (qui s’ouvrent généralement en cliquant avec le bouton droit de la souris) sont également disponibles :
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
-
