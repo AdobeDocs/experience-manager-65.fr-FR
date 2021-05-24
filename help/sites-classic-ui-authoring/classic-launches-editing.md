@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 100%
 
 ---
-
 
 # Modification de lancements{#editing-launches}
 
@@ -58,7 +57,7 @@ Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vou
 
 1. Cliquez sur **Enregistrer**.
 
-## Identification de l’état de lancement d’une page  {#discovering-the-launch-status-of-a-page}
+## Identification du statut de lancement d’une page  {#discovering-the-launch-status-of-a-page}
 
 Lorsque vous modifiez le lancement d’une page, les informations sur le lancement s’affichent au bas de l’onglet **Création de versions** du sidekick :
 
@@ -68,4 +67,3 @@ Lorsque vous modifiez le lancement d’une page, les informations sur le lanceme
 * L’état de l’indicateur **Prêt pour la production** (orange=non défini ; vert=défini).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
-
