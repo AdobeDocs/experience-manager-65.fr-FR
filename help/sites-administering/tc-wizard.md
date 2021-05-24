@@ -10,15 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Copie de la langue
+exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 81%
 
 ---
-
 
 # Assistant Copie de la langue{#language-copy-wizard}
 
@@ -26,7 +25,7 @@ L’assistant Copie de la langue est une expérience guidée pour créer et gér
 
 >[!NOTE]
 >
->L’utilisateur doit être membre d’un groupe d’administrateurs de projet pour créer la copie de langue d’un site.
+>L’utilisateur doit être membre du groupe project-administrators pour créer la copie de langue d’un site.
 
 Pour accéder à cet assistant :
 
@@ -42,7 +41,7 @@ Pour accéder à cet assistant :
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. Le bouton **Suivant** vous amène à l&#39;étape **Configurer** de l&#39;Assistant. Ici, vous pouvez ajouter/supprimer des langues et sélectionner une méthode de traduction.
+1. Le bouton **Suivant** permet d’accéder à l’étape **Configurer** de l’assistant. Ici, vous pouvez ajouter/supprimer des langues et sélectionner une méthode de traduction.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
@@ -50,7 +49,7 @@ Pour accéder à cet assistant :
    >
    >Par défaut, il n’y a qu’un seul paramètre de traduction. Pour pouvoir sélectionner d’autres paramètres, vous devez d’abord configurer les configurations cloud. Voir [Configuration de la structure d’intégration de traduction](/help/sites-administering/tc-tic.md).
 
-1. Le bouton **Suivant** vous amène à l&#39;étape **Traduire** de l&#39;Assistant. Vous pouvez ici choisir entre créer uniquement la structure, créer un nouveau projet de traduction ou ajouter à un projet de traduction existant.
+1. Le bouton **Suivant** permet d’accéder à l’étape **Traduire** de l’assistant. Vous pouvez ici choisir entre créer uniquement la structure, créer un nouveau projet de traduction ou ajouter à un projet de traduction existant.
 
    >[!NOTE]
    >
@@ -61,4 +60,3 @@ Pour accéder à cet assistant :
 1. Le bouton **Créer** ferme l’assistant.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)
-
