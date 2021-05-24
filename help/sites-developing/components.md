@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
-translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 82%
 
 ---
-
 
 # Aperçu des composants{#components-overview}
 
@@ -32,8 +31,8 @@ Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels
 * Ils peuvent s’exécuter n’importe où dans n’importe quel système AEM ; leur exécution peut également être limitée à des composants spécifiques.
 * possèdent une interface utilisateur standardisée ;
 * sont associés à un comportement de modification qui peut être configuré ;
-* Utiliser des boîtes de dialogue créées à l’aide de sous-éléments basés sur des composants de l’interface utilisateur Granite
-* Sont développés à l’aide de [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) (recommandé) ou JSP.
+* Utilisez des boîtes de dialogue créées à l’aide de sous-éléments basés sur les composants de l’IU Granite.
+* sont développés à l’aide de [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) (recommandé) ou JSP ;
 * peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
 
 Compte tenu de la nature modulaire des composants, vous pouvez effectuer les opérations suivantes :
@@ -47,7 +46,7 @@ Chaque composant AEM :
 
 * est un type de ressource ;
 * est un ensemble de scripts qui exécutent complètement une fonction spécifique ;
-* Peut fonctionner dans *isolation*, ce qui signifie soit dans AEM ou un portail.
+* Peut fonctionner dans *isolation*, c’est-à-dire dans AEM ou un portail.
 
 ## Composants prêts à l’emploi dans AEM {#out-of-the-box-components-within-aem}
 
@@ -55,7 +54,7 @@ AEM est fourni avec un éventail de [composants prêts à l’emploi](/help/site
 
 * Système de paragraphes ( `parsys`)
 * Page ( `responsivegrid` - IU tactile uniquement)
-* Text (Texte)
+* Texte
 * Image, avec texte d’accompagnement
 * Barre d’outils
 
@@ -68,7 +67,7 @@ Il existe deux groupes de composants AEM fournis par Adobe :
 * [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Composants de base](/help/sites-authoring/default-components-foundation.md)
 
-**Les** composants de base ont été introduits avec AEM 6.3 et l&#39;offre de fonctionnalités de création flexibles et riches en fonctionnalités. Le [site de référence We.Retail](/help/sites-developing/we-retail.md) illustre comment les composants de base peuvent être utilisés et représente les meilleures pratiques actuelles de développement de composants.
+**Les** composants principaux ont été introduits avec AEM 6.3 et offrent des fonctionnalités de création flexibles et riches en fonctionnalités. Le [site de référence We.Retail](/help/sites-developing/we-retail.md) illustre comment les composants principaux peuvent être utilisés et représente les bonnes pratiques actuelles en matière de développement de composants.
 
 Les **composants de base** sont fournis avec AEM depuis de nombreuses versions et sont disponibles prêts à l’emploi dans une installation AEM standard. Bien qu’ils soient toujours pris en charge, la plupart d’entre eux ont été abandonnés, ne sont plus améliorés et reposent sur des technologies héritées.
 
@@ -76,7 +75,7 @@ Les **composants de base** sont fournis avec AEM depuis de nombreuses versions 
 >
 >Les [composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) représentent les méthodes recommandées en matière de conception et de développement de composants. Ils font également office d’implémentations de référence.
 >
->[Les ](modernization-tools.md) outils de modernisation AEM permettent la migration vers les composants principaux.
+>[Les ](modernization-tools.md) outils de modernisation d’AEM permettent la migration vers les composants principaux.
 
 ### Affichage des composants disponibles {#viewing-available-components}
 
@@ -96,23 +95,22 @@ Une autre méthode consiste à utiliser CRXDE Lite pour obtenir la liste de tou
 
 ## Ressources supplémentaires {#further-reading}
 
-Les pages suivantes fournissent des informations plus détaillées sur le développement de ces composants et d&#39;autres composants :
+Les pages suivantes fournissent des informations plus détaillées sur le développement de ces composants et d’autres composants :
 
-* [Composants AEM – Principes de base](/help/sites-developing/components-basics.md)
+* [Composants AEM - Notions de base](/help/sites-developing/components-basics.md)
 * [Développement de composants AEM](/help/sites-developing/developing-components.md)
-* [Développement de composants AEM – Échantillons de code](/help/sites-developing/developing-components-samples.md)
+* [Développement de composants AEM – Échantillons de code](/help/sites-developing/developing-components-samples.md)
 * [Configuration de plusieurs éditeurs statiques](/help/sites-developing/multiple-inplace-editors.md)
 * [Mode Développeur](/help/sites-developing/developer-mode.md)
-* [Test de votre interface utilisateur](/help/sites-developing/hobbes.md)
+* [Tester votre IU](/help/sites-developing/hobbes.md)
 * [Composants pour les fragments de contenu](/help/sites-developing/components-content-fragments.md)
-* [Obtention des informations sur la page au format JSON](/help/sites-developing/pageinfo.md) 
-* [Internationalisation des composants](/help/sites-developing/i18n.md)
+* [Obtention d’informations sur la page au format JSON](/help/sites-developing/pageinfo.md)
+* [Internationalisation de composants](/help/sites-developing/i18n.md)
 * [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Utilisation de conditions de masquage](/help/sites-developing/hide-conditions.md)
 * IU classique
 
    * [Composants AEM (IU classique)](/help/sites-developing/developing-components-classic.md)
-   * [Utilisation et extension de widgets (IU classique)](/help/sites-developing/widgets.md)
-   * [Utilisation de xtypes (IU classique)](/help/sites-developing/xtypes.md)
-   * [Développement de formulaires (IU classique)](/help/sites-developing/developing-forms.md)
-
+   * [Utilisation et extension de widgets (IU classique)](/help/sites-developing/widgets.md)
+   * [Utilisation des xtypes (IU classique)](/help/sites-developing/xtypes.md)
+   * [Développement de formulaires (IU classique)](/help/sites-developing/developing-forms.md)
