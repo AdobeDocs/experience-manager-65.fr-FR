@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 79%
 
 ---
 
-
 # Test des fragments de contenu dans We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail**  (comme disponible dans une instance prête à l&#39;emploi d&#39;AEM) fournit le fragment  **Arctic Surfing dans** Lofotenas comme échantillon de base. On peut en tirer les enseignements suivants :
+Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail**  (disponible dans une instance prête à l’emploi d’AEM) fournit le fragment  **Arctic Surfing in** Lofotenas en tant qu’échantillon de base. On peut en tirer les enseignements suivants :
 
 * Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). 
 
@@ -32,7 +31,7 @@ Les fragments de contenu vous permettent de créer du contenu compatible avec to
 
 Pour consulter la documentation complète traitant de la création, de la gestion, de l’utilisation et du développement de fragments de contenu :
 
-* Voir [Informations complémentaires](#further-information)
+* Voir [Informations supplémentaires](#further-information)
 
 >[!NOTE]
 >
@@ -47,11 +46,11 @@ Les fragments d’expérience peuvent être composés de contenu sous la forme d
 
 ## Emplacement des fragments de contenu dans We.Retail {#where-to-find-content-fragments-in-we-retail}
 
-Il existe plusieurs exemples de fragments de contenu dans We.Retail ; naviguez via **Assets**, **Files**, **We.Retail**, **English**, **Experiences**.
+Il existe plusieurs exemples de fragments de contenu dans We.Retail ; naviguez via **Ressources**, **Fichiers**, **We.Retail**, **Anglais**, **Expériences**.
 
 Vous y trouverez notamment **Arctic Surfing in Lofoten**, un fragment auquel sont associées des ressources visuelles :
 
-* Accédez à **Assets**, **Files**, **We.Retail**, **English**, **Experiences**, **Artic Surfing in Lofoten** :
+* Naviguez via **Ressources**, **Fichiers**, **We.Retail**, **Anglais**, **Expériences**, **Artic Surfing in Lofoten** :
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
@@ -79,7 +78,7 @@ Pour illustrer la [création de pages avec un fragment de contenu](/help/sites-a
 
 Par exemple, le fragment de contenu **Arctic Surfing in Lofoten** est référencé dans la page Sites :
 
-* Accédez à **Sites**, **We.Retail**, **Principal linguistiques**, **Anglais**, **Expérience**. Ouvrez ensuite le fragment **Arctic Surfing in Lofoten** en vue de le modifier :
+* Naviguez via **Sites**, **We.Retail**, **Principal de langue**, **Anglais**, **Expérience**. Ouvrez ensuite le fragment **Arctic Surfing in Lofoten** en vue de le modifier :
 
    * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
@@ -104,4 +103,3 @@ Pour plus d’informations, voir :
 * [Développement et extension de fragments de contenu](/help/sites-developing/customizing-content-fragments.md)
 
    * Les informations de cette section vous aident à développer et à étendre des fragments de contenu.
-
