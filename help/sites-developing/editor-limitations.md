@@ -1,22 +1,21 @@
 ---
 title: Limites de l’éditeur
 seo-title: Limites de l’éditeur
-description: 'L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. '
-seo-description: 'L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. '
+description: L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
+seo-description: L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
-translation-type: tm+mt
-source-git-commit: 844d42ed50da153077423190684aa85265bce12f
+exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 94%
 
 ---
-
 
 # Limites de l’éditeur{#editor-limitations}
 
@@ -56,7 +55,7 @@ Il est possible que les images d’arrière-plan fixes ne puissent pas être aff
 
 * Sélectionnez **Afficher la page comme publiée** dans les actions de la barre d’en-tête pour afficher correctement la page.
 
-### Hauteur de 100 %{#height}
+### Hauteur de 100 % {#height}
 
 La hauteur de 100 % n’est pas prise en charge sur l’élément de corps d’une page.
 
@@ -84,4 +83,3 @@ body:before, body:after{
     display: table;
 }
 ```
-
