@@ -9,14 +9,13 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
-translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 98%
 
 ---
-
 
 # Activation de l’exportateur JSON pour un composant{#enabling-json-export-for-a-component}
 
@@ -98,6 +97,5 @@ Pour plus d’informations, voir :
 
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
-* [Exportateur JSON pour les services de contenu](/help/sites-developing/json-exporter.md)
+* [Exportateur JSON pour Content Services](/help/sites-developing/json-exporter.md)
 * [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
-
