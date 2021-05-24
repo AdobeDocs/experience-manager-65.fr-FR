@@ -1,7 +1,7 @@
 ---
 title: Gestion des audiences
 seo-title: Gestion des audiences
-description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub. ou contexte client
+description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub. ou ClientContext
 seo-description: 'La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub ou ClientContext :'
 uuid: 76408a8c-25db-4e9f-8a69-27e820a2a7cf
 contentOwner: msm-service
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 93%
 
 ---
-
 
 # Gestion des audiences{#managing-audiences}
 
@@ -26,7 +25,7 @@ La console Audiences vous permet de créer, d’organiser et de gérer les audie
 * Ajouter des audiences (audiences d’Adobe Target ou segments ContextHub).
 * Gérer des audiences.
 
-Une Audience, appelée *segment* dans ContextHub et Client Context, est une classe de visiteurs définie par des critères spécifiques, qui détermine ensuite qui voit une activité ciblée. Lorsque vous ciblez une activité, vous pouvez sélectionner des audiences directement dans le processus de ciblage ou en créer de nouvelles dans la console Audiences.
+Une audience, appelée *segment* dans ContextHub et ClientContext, est une classe de visiteurs définie selon des critères spécifiques, qui détermine qui voit une activité ciblée. Lorsque vous ciblez une activité, vous pouvez sélectionner des audiences directement dans le processus de ciblage ou en créer de nouvelles dans la console Audiences.
 
 Dans la console Audiences, les audiences sont organisées par marque.
 
@@ -47,7 +46,7 @@ Pour créer un segment ContextHub dans la console Audiences :
 1. Dans la console Navigation, cliquez ou appuyez sur **Personnalisation**. Cliquez ou appuyez sur **Audiences**.
 1. Cliquez ou appuyez sur **Créer un segment ContextHub**.
 
-   ![capture d&#39;écran_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
+   ![screen-shot_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
 
 1. Dans la boîte de dialogue **Nouveau segment ContextHub**, saisissez un titre, ajustez l’amplification et cliquez sur **Créer**. Votre nouveau segment ContextHub apparaît dans la liste des audiences.
 
@@ -67,7 +66,7 @@ Lorsque vous utilisez plusieurs règles, elles sont combinées par l’opérateu
 
 >[!NOTE]
 >
->Si vous ne voyez pas **Créer une Audience de Cible **dans le menu **Créer**, vous ne disposez pas des autorisations nécessaires pour créer une audience. Vous devez disposer d’autorisations d’écriture sous **/etc/segmentation** pour pouvoir créer des audiences. Le groupe content-authors dispose par défaut d’autorisations d’écriture.
+>Si vous ne voyez pas **Créer une audience cible **dans le menu **Créer**, vous ne disposez pas des autorisations nécessaires pour créer une audience. Vous avez besoin d’autorisations d’écriture sous **/etc/segmentation** pour pouvoir créer des audiences. Le groupe content-authors dispose par défaut d’autorisations d’écriture.
 
 Pour créer une audience Adobe Target :
 
