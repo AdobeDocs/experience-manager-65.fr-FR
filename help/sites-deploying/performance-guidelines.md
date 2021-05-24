@@ -9,26 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2994'
 ht-degree: 86%
 
 ---
 
-
 # Instructions de performance{#performance-guidelines}
 
 Cet page fournit des directives générales sur l’optimisation de la performance de votre déploiement AEM. Si vous n’êtes pas familier avec AEM, veuillez étudier les pages suivantes avant de commencer à lire les directives en matière de performance :
 
-* [Concepts de base d’AEM](/help/sites-deploying/deploy.md#basic-concepts) 
+* [Concepts de base d’AEM ](/help/sites-deploying/deploy.md#basic-concepts)
 * [Présentation du stockage dans AEM ](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
 * [Exigences techniques](/help/sites-deploying/technical-requirements.md)
 
-Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à la vue de toutes les options) sont illustrées ci-dessous :
+Les options de déploiement disponibles pour AEM (faites défiler l’écran pour afficher toutes les options) sont illustrées ci-dessous :
 
 <table>
  <tbody>
@@ -243,7 +242,7 @@ Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Appli de bureau  </p> </td>
+   <td><p>Appli de bureau </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -287,13 +286,13 @@ Pour plus d’informations sur la plateforme AEM, voir [Ce qui est AEM](/help/si
 
 ### L’architecture d’AEM {#the-aem-architecture}
 
-Le déploiement d’AEM repose sur trois composants clés. L’**instance d’auteur** utilisée par les rédacteurs, éditeurs et les approbateurs de contenu pour créer et réviser le contenu. Lorsque le contenu est approuvé, il est publié sur un type d’instance secondaire nommée **instance de publication**, à partir de laquelle il est consulté par les utilisateurs finaux. Le troisième bloc de construction est le **Répartiteur**, module qui gère la mise en cache et le filtrage des URL et qui est installé sur le serveur Web. Pour plus d’informations sur l’architecture d’AEM, voir [Scénarios de déploiement classiques](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
+Le déploiement d’AEM repose sur trois composants clés. L’**instance d’auteur** utilisée par les rédacteurs, éditeurs et les approbateurs de contenu pour créer et réviser le contenu. Lorsque le contenu est approuvé, il est publié sur un type d’instance secondaire nommée **instance de publication**, à partir de laquelle il est consulté par les utilisateurs finaux. Le troisième bloc de création est le **Dispatcher** qui est un module qui gère la mise en cache et le filtrage des URL et qui est installé sur le serveur web. Pour plus d’informations sur l’architecture d’AEM, voir [Scénarios de déploiement classiques](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
 ### Micronoyaux {#micro-kernels}
 
-Les micronoyaux servent de gestionnaires de persistence dans AEM. Il existe trois types de micro-noyaux utilisés avec les AEM : TarMK, MongoDB et la base de données relationnelle (sous prise en charge restreinte). Le choix d’un exemple correspondant à vos besoins dépend de la finalité de l’instance et du type de déploiement envisagé. Pour plus d’informations sur les micro-noyaux, voir la page [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
+Les micronoyaux servent de gestionnaires de persistence dans AEM. Il existe trois types de micronoyaux utilisés avec les AEM : TarMK, MongoDB et la base de données relationnelle (avec prise en charge limitée). Le choix d’un exemple correspondant à vos besoins dépend de la finalité de l’instance et du type de déploiement envisagé. Pour plus d’informations sur les micronoyaux, consultez la page [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md) .
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -315,7 +314,7 @@ Dans AEM, des données binaires peuvent être stockées indépendamment des nœu
 
 Lorsque vous traitez un grand nombre de fichiers binaires, il est recommandé d’utiliser un entrepôt de données externe au lieu de l’entrepôt de nœuds par défaut pour optimiser la performance. Par exemple, si votre projet nécessite un grand nombre de ressources multimédias, leur stockage dans l’entrepôt de données Fichiers ou Azure/S3 rendra leur accès plus rapide que leur stockage direct dans une base de données MongoDB.
 
-Pour plus d&#39;informations sur les options de configuration disponibles, voir [Configuration de Noeuds et de Stockages de données](/help/sites-deploying/data-store-config.md).
+Pour plus d’informations sur les options de configuration disponibles, voir [Configuration des entrepôts de noeuds et de données](/help/sites-deploying/data-store-config.md).
 
 >[!NOTE]
 >
@@ -323,11 +322,11 @@ Pour plus d&#39;informations sur les options de configuration disponibles, voir 
 >
 >Pour des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors des Adobe Managed Services, nous vous recommandons vivement de travailler directement avec votre fournisseur cloud ou avec l’un de nos partenaires prenant en charge le déploiement d’AEM dans l’environnement de cloud de votre choix. Le partenaire ou fournisseur cloud que vous choisissez est responsable du dimensionnement, de la conception et de l’implémentation de l’architecture qu’ils vont prendre en charge pour répondre à vos besoins spécifiques en matière de performance, de chargement, d’évolutivité et de sécurité.
 >
->Pour plus de détails, voir la page [exigences techniques](/help/sites-deploying/technical-requirements.md#supported-platforms).
+>Pour plus d’informations, reportez-vous également à la page [exigences techniques](/help/sites-deploying/technical-requirements.md#supported-platforms) .
 
 ### Recherche {#search-features}
 
-Les fournisseurs d’index personnalisés utilisés avec AEM sont répertoriés dans cette section. Pour en savoir plus sur l’indexation, voir [Requêtes en chêne et Indexation](/help/sites-deploying/queries-and-indexing.md).
+Les fournisseurs d’index personnalisés utilisés avec AEM sont répertoriés dans cette section. Pour en savoir plus sur l’indexation, voir [Requêtes Oak et Indexation](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
 >
@@ -396,7 +395,7 @@ Média:
 * Lire l’article (27,4 %), lire la page (10,9 %), créer une session (2,6 %), activer la page de contenu (1,7 %) créer une page de contenu (0,4 %), créer un paragraphe (4,3 %), modifier le paragraphe (0,9 %), composant d’image (0,9 %), parcourir les ressources (20 %), lire les métadonnées de la ressource (8,5 %) télécharger la ressource (4,2 %), rechercher la ressource (0,2 %), Mettre à niveau les métadonnées de la ressource (2,4 %) transférer la ressource (1,2 %), parcourir le projet (4,9 %), lire le projet (6,6 %), Projet Ajouter une ressource (1,2 %), Projet Ajouter un site (1,2 %), créer un projet (0,1 %), rechercher un auteur (0,4 %)
 * Mode d’exécution : utilisateurs simultanés, interactions variées par utilisateur
 
-## TarMK  {#tarmk}
+## TarMK {#tarmk}
 
 Ce chapitre offre des directives générales en matière de performance pour TarMK, spécifiant les exigences minimales d’architecture et la configuration des paramètres. Des tests comparatifs sont également fournis pour plus de précisions.
 
@@ -408,7 +407,7 @@ Pour plus d’informations sur TarMK, voir [Scénarios de déploiement](/help/si
 
 >[!NOTE]
 >
->Les directives d’architecture minimale présentées ci-dessous concernent les environnements de production et les sites ayant un trafic élevé. Il s&#39;agit **non** des [spécifications minimales](/help/sites-deploying/technical-requirements.md#prerequisites) requises pour exécuter AEM.
+>Les directives d’architecture minimale présentées ci-dessous concernent les environnements de production et les sites ayant un trafic élevé. Il s’agit **non** des [spécifications minimales](/help/sites-deploying/technical-requirements.md#prerequisites) nécessaires pour exécuter AEM.
 
 Pour créer une bonne performance lorsque vous utilisez TarMK, il est conseillé de commencer à partir de l’architecture suivante :
 
@@ -432,7 +431,7 @@ Les consignes sur l’architecture pour AEM Sites et AEM Assets sont illustré
 
 ### Directives sur les paramètres TarMK {#tarmk-settings-guideline}
 
-Pour une bonne performance, nous vous conseillons de suivre les conseils relatifs aux paramètres présentés ci-dessous. Pour savoir comment modifier les paramètres, [voir cette page](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
+Pour une bonne performance, nous vous conseillons de suivre les conseils relatifs aux paramètres présentés ci-dessous. Pour plus d’informations sur la modification des paramètres, [consultez cette page](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 
 <table>
  <tbody>
@@ -493,18 +492,18 @@ Pour une bonne performance, nous vous conseillons de suivre les conseils relatif
 
 Les tests comparatifs ont été effectués selon les spécifications suivantes :
 
-|  | **Noeud d’auteur** |
+|  | **Noeud Auteur** |
 |---|---|
-| Serveur | Matériel métallique nu (HP) |
+| Serveur | Matériel de métal nu (HP) |
 | Système d’exploitation | RedHat Linux |
-| UC / Coeurs | Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs |
+| Processeur/Coeurs | Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs |
 | Mémoire RAM | 32 Go |
 | Disque | Magnétique |
 | Java | Oracle JRE version 8 |
-| Tas JVM | 16 Go |
+| JVM Heap | 16 Go |
 | Produit | AEM 6.2 |
 | Entrepôt de nœuds | TarMK |
-| Banque de données | Fichier DS |
+| Banque de données | File DS |
 | Scénario | Produit unique : Ressources / 30 threads simultanés |
 
 #### Résultats de la comparaison des performances {#performance-benchmark-results}
@@ -519,7 +518,7 @@ Les tests comparatifs ont été effectués selon les spécifications suivantes 
 
 La raison principale pour choisir la persistance MongoMK plutôt que TarMK est sa capacité à faire évoluer les instances horizontalement. Cela permet d’avoir au moins deux instances d’auteur actives s’exécutant à tout moment et d’utiliser MongoDB en tant que système de stockage de persistance. La nécessité d’exécuter plus d’une instance d’auteur découle en général du fait que la capacité du processeur et de la mémoire d’un serveur unique, prenant en charge toutes les activités de création simultanées, n’est plus suffisante.
 
-Pour plus d’informations sur TarMK, voir [Scénarios de déploiement](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) et [Enregistrement Mongo](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).
+Pour plus d’informations sur TarMK, voir [Scénarios de déploiement](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) et [Stockage Mongo](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).
 
 ### Conseils d’architecture minimale MongoMK {#mongomk-minimum-architecture-guidelines}
 
@@ -542,7 +541,7 @@ Pour créer une bonne performance lorsque vous utilisez MongoMK, il est conseill
 
 ### Directives de paramètres MongoMK {#mongomk-settings-guidelines}
 
-Pour une bonne performance, nous vous conseillons de suivre les conseils relatifs aux paramètres présentés ci-dessous. Pour savoir comment modifier les paramètres, [voir cette page](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+Pour une bonne performance, nous vous conseillons de suivre les conseils relatifs aux paramètres présentés ci-dessous. Pour plus d’informations sur la modification des paramètres, [consultez cette page](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
 <table>
  <tbody>
@@ -603,18 +602,18 @@ Pour une bonne performance, nous vous conseillons de suivre les conseils relatif
 
 Les tests comparatifs ont été effectués selon les spécifications suivantes :
 
-|  | **Noeud d’auteur** | **Noeud MongoDB** |
+|  | **Noeud Auteur** | **Noeud MongoDB** |
 |---|---|---|
-| Serveur | Matériel métallique nu (HP) | Matériel métallique nu (HP) |
+| Serveur | Matériel de métal nu (HP) | Matériel de métal nu (HP) |
 | Système d’exploitation | RedHat Linux | RedHat Linux |
-| UC / Coeurs | Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs | Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs |
+| Processeur/Coeurs | Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs | Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs |
 | Mémoire RAM | 32 Go | 32 Go |
-| Disque | Magique - >1 000 IOPS | Magique - >1 000 IOPS |
+| Disque | Magnétique - >1k IOPS | Magnétique - >1k IOPS |
 | Java | Oracle JRE version 8 | N/A |
-| Tas JVM | 16 Go | S/O |
+| JVM Heap | 16 Go | N/A |
 | Produit | AEM 6.2 | MongoDB 3.2 WiredTiger |
-| Entrepôt de nœuds | MongoMK | S/O |
-| Banque de données | Fichier DS | S/O |
+| Entrepôt de nœuds | MongoMK | N/A |
+| Banque de données | File DS | N/A |
 | Scénario | Produit unique : Ressources / 30 threads simultanés | Produit unique : Ressources / 30 threads simultanés |
 
 ### Résultats de la comparaison des performances {#performance-benchmark-results-1}
@@ -639,7 +638,7 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
 
 * Conçu spécifiquement pour les applications de gestion de contenu
 * Les fichiers sont toujours cohérents et peuvent être sauvegardés à l’aide de n’importe quel outil de sauvegarde basé sur un fichier
-* Fournit un mécanisme de basculement : voir [Cold Secondaire](/help/sites-deploying/tarmk-cold-standby.md) pour plus d&#39;informations.
+* Fournit un mécanisme de basculement : voir [Secondaire froid](/help/sites-deploying/tarmk-cold-standby.md) pour plus d’informations.
 * Fournit un haut niveau de performance et un stockage de données fiable avec des frais d’exploitation minimes
 * Réduit le coût total de possession
 
@@ -663,14 +662,14 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
  <tbody>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>Noeud OAK de l’auteur</strong></td>
+   <td><strong>Noeud OAK de création</strong></td>
    <td><strong>Noeud MongoDB</strong></td>
    <td> </td>
   </tr>
   <tr>
    <td>Serveur</td>
-   <td>Matériel métallique nu (HP)</td>
-   <td>Matériel métallique nu (HP)</td>
+   <td>Matériel de métal nu (HP)</td>
+   <td>Matériel de métal nu (HP)</td>
    <td> </td>
   </tr>
   <tr>
@@ -680,9 +679,9 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
    <td> </td>
   </tr>
   <tr>
-   <td>UC / Coeurs</td>
-   <td>Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs</td>
-   <td>Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs</td>
+   <td>Processeur/Coeurs</td>
+   <td>Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs</td>
+   <td>Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs</td>
    <td> </td>
   </tr>
   <tr>
@@ -693,20 +692,20 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
   </tr>
   <tr>
    <td>Disque</td>
-   <td>Magique - &gt;1 000 IOPS</td>
-   <td>Magique - &gt;1 000 IOPS</td>
+   <td>Magnétique - &gt;1k IOPS</td>
+   <td>Magnétique - &gt;1k IOPS</td>
    <td> </td>
   </tr>
   <tr>
    <td>Java</td>
    <td>Oracle JRE version 8</td>
-   <td>S/O</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
-   <td>JVM Heap16 Go</td>
+   <td>JVM Heap16GB</td>
    <td>16 Go</td>
-   <td>S/O</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
@@ -718,13 +717,13 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
   <tr>
    <td>Entrepôt de nœuds</td>
    <td>TarMK ou MongoMK</td>
-   <td>S/O</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
    <td>Banque de données</td>
-   <td>Fichier DS </td>
-   <td>S/O</td>
+   <td>File DS </td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
@@ -750,8 +749,8 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
  <tbody>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>Noeud TarMK de l’auteur</strong></td>
-   <td><strong>Noeud MongoMK de l’auteur</strong></td>
+   <td><strong>Noeud TarMK de création</strong></td>
+   <td><strong>Noeud MongoMK de création</strong></td>
    <td><strong>Noeud MongoDB</strong></td>
   </tr>
   <tr>
@@ -767,7 +766,7 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
    <td>RedHat Linux</td>
   </tr>
   <tr>
-   <td>UC / Coeurs</td>
+   <td>Processeur/Coeurs</td>
    <td>32</td>
    <td>32</td>
    <td>32</td>
@@ -780,21 +779,21 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
   </tr>
   <tr>
    <td>Disque</td>
-   <td>SSD - 10 000 E/S</td>
-   <td>SSD - 10 000 E/S</td>
-   <td>SSD - 10 000 E/S</td>
+   <td>SSD - 10 000 IOPS</td>
+   <td>SSD - 10 000 IOPS</td>
+   <td>SSD - 10 000 IOPS</td>
   </tr>
   <tr>
    <td>Java</td>
    <td>Oracle JRE version 8</td>
    <td><br /> Oracle JRE version 8</td>
-   <td>S/O</td>
+   <td>N/A</td>
   </tr>
   <tr>
-   <td>JVM Heap16 Go</td>
+   <td>JVM Heap16GB</td>
    <td>30 Go</td>
    <td>30 Go</td>
-   <td>S/O</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Produit </td>
@@ -806,17 +805,17 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
    <td>Entrepôt de nœuds</td>
    <td>TarMK </td>
    <td>MongoMK</td>
-   <td><br /> S/O</td>
+   <td><br /> N/A</td>
   </tr>
   <tr>
    <td>Banque de données</td>
-   <td>Fichier DS </td>
-   <td><br /> Fichier DS</td>
-   <td><br /> S/O</td>
+   <td>File DS </td>
+   <td><br /> File DS</td>
+   <td><br /> N/A</td>
   </tr>
   <tr>
    <td>Scénario</td>
-   <td><p><br /> <br /> Cas d’utilisation vertical : Fils simultanés Media/2000</p> </td>
+   <td><p><br /> <br /> Cas pratique vertical : Media / 2 000 threads simultanés</p> </td>
    <td></td>
    <td></td>
   </tr>
@@ -856,6 +855,6 @@ Les conseils répertoriés sur cette page peuvent être résumés comme suit :
 
    * Les index Lucene doivent être utilisés pour les index personnalisés
 
-* **La personnalisation du flux de travail peut améliorer considérablement les performances**, par exemple en supprimant l’étape vidéo dans le flux de travail &quot;Mettre à jour le fichier&quot;, en désactivant les écouteurs qui ne sont pas utilisés, etc.
+* **La personnalisation du workflow peut améliorer considérablement les performances**, par exemple, la suppression de l’étape vidéo dans le workflow &quot;Mettre à jour la ressource&quot;, la désactivation des écouteurs qui ne sont pas utilisés, etc.
 
 Pour plus d’informations, consultez également la page [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
