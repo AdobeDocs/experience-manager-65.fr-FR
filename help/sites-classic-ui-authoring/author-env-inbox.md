@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 95%
 
 ---
-
 
 # Votre boîte de réception  {#your-inbox}
 
@@ -26,7 +25,7 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des n
 Ces notifications arrivent dans deux boîtes de réception, en fonction de leur type :
 
 * Une boîte de réception dans laquelle parviennent les notifications liées à des abonnements, décrite à la section suivante.
-* Une boîte de réception spécialisée pour les éléments de processus est décrite dans le document [Participation aux Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
+* Une boîte de réception spécialisée pour les éléments de workflow est décrite dans le document [Participation aux workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) .
 
 ## Viewing Your Notifications {#viewing-your-notifications}
 
@@ -45,7 +44,7 @@ Pour afficher vos notifications, procédez comme suit :
 
 1. Vos notifications sont répertoriées. Vous pouvez agir comme suit :
 
-   * [S’abonner aux notifications](#subscribing-to-notifications)
+   * [Abonnement aux notifications](#subscribing-to-notifications)
    * [Traitement des notifications](#processing-your-notifications)
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
@@ -93,7 +92,7 @@ Lorsqu’une page est supprimée ou déplacée, une action de suppression est au
 1. Définissez les chemins d’accès des pages pour lesquelles vous recevrez une notification :
 
    * Cliquez sur **Ajouter** pour ajouter une nouvelle ligne au tableau.
-   * Cliquez sur la cellule de tableau **Chemin** et entrez le chemin, par ex. `/content/docs`.
+   * Cliquez sur la cellule de tableau **Chemin** et saisissez le chemin, par exemple : `/content/docs`.
 
    * Si vous souhaitez être averti pour toutes les pages appartenant à la sous-arborescence, définissez **Exact ?** sur **Non**.
 Si vous souhaitez n’être averti que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** sur **Oui**.
