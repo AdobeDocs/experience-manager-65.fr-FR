@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 88%
 
 ---
 
-
 # Éditeur de boîtes de dialogue{#dialog-editor}
 
 L’éditeur de boîtes de dialogue offre une interface graphique pour créer et modifier facilement des boîtes de dialogue et des modèles automatiques.
 
-Pour voir comment cela fonctionne, accédez au CRXDE Lite, ouvrez l&#39;arborescence de l&#39;explorateur à `/libs/foundation/components/chart` et cliquez sur le noeud `dialog` en doublon :
+Pour voir comment cela fonctionne, accédez à CRXDE Lite, ouvrez l’arborescence de l’explorateur sur `/libs/foundation/components/chart` et double-cliquez sur le noeud `dialog` :
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
@@ -59,6 +58,6 @@ Saisissez les informations requises, puis cliquez sur **Enregistrer tout**. Vous
 
 Un modèle automatique est une page spéciale qui contient un formulaire qui peut être rempli et envoyé en une seule étape. Vous pouvez ainsi créer rapidement une page à l’aide du contenu saisi.
 
-Le formulaire qui constitue un modèle automatique est défini par une définition de boîte de dialogue, comme une boîte de dialogue normale, bien qu’il apparaisse dans la page de génération de modèles automatiques sous une autre forme. Dans la mesure où des définitions de boîtes de dialogue sont utilisées pour définir des modèles automatiques, ces derniers peuvent être conçus à l’aide de l’éditeur de boîtes de dialogue. Notez que lorsque vous utilisez l’éditeur de dialogue de cette manière, le volet de rendu affiche toujours la définition de la boîte de dialogue sous la forme d’une boîte de dialogue et non sous la forme d’un échafaudage.
+Le formulaire qui constitue un modèle automatique est défini par une définition de boîte de dialogue, comme une boîte de dialogue normale, bien qu’il apparaisse dans la page de génération de modèles automatiques sous une autre forme. Dans la mesure où des définitions de boîtes de dialogue sont utilisées pour définir des modèles automatiques, ces derniers peuvent être conçus à l’aide de l’éditeur de boîtes de dialogue. Notez que lorsque vous utilisez l’éditeur de boîte de dialogue de cette manière, le volet de rendu affiche toujours la définition de boîte de dialogue sous la forme d’une boîte de dialogue et non d’un modèle automatique.
 
 Pour plus d’informations sur l’utilisation de l’éditeur de boîtes de dialogue pour créer des modèles automatiques, voir [Génération de modèles automatiques](/help/sites-authoring/scaffolding.md).
