@@ -10,14 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 76%
 
 ---
-
 
 # Intégration à Adobe Search&amp;Promote{#integrating-with-adobe-search-promote}
 
@@ -34,8 +33,8 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 >
 >Si vous utilisez Search&amp;Promote avec une configuration de proxy personnalisée, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’AEM utilisent les API 3.x et d’autres les API 4.x :
 >
->* 3.x est configuré avec [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x est configuré avec [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* La version 3.x est configurée avec [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* La version 4.x est configurée avec [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
 >
 
@@ -43,7 +42,7 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 
 ## Modification de l’URL du service Search&amp;Promote {#changing-the-search-promote-service-url}
 
-L’URL par défaut configurée pour le service de Search &amp; Promote est `https://searchandpromote.omniture.com/px/`. Pour utiliser un autre service, utilisez la console OSGi afin de spécifier une autre URL.
+L’URL par défaut configurée pour le service Search &amp; Promote est `https://searchandpromote.omniture.com/px/`. Pour utiliser un autre service, utilisez la console OSGi afin de spécifier une autre URL.
 
 1. Ouvrez la console OSGi et cliquez sur l’onglet Configuration. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))
 1. Cliquez sur l’élément Configuration de Day CQ Search&amp;Promote.
@@ -53,7 +52,7 @@ L’URL par défaut configurée pour le service de Search &amp; Promote est `htt
 
 Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages web puissent interagir avec le service. Pour vous connecter, vous avez besoin du numéro d’identification et de compte du membre de votre compte Search&amp;Promote.
 
-1. Dans l&#39;icône **Outils** > **Déploiement**, sélectionnez **Cloud Services**.
+1. Dans l’icône **Outils** > **Déploiement**, sélectionnez **Cloud Services**.
 
    Ceci vous amène au tableau de bord Services Cloud. Si vous utilisez un ordinateur local, l’URL du tableau de bord se présente comme suit :
 
@@ -61,9 +60,9 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
 
 1. Dans la page Services Cloud, cliquez sur le lien Adobe Search&amp;Promote ou sur l’icône Search&amp;Promote.
 
-1. Si c’est la première fois que vous configurez un Search &amp; Promote d’Adobe, cliquez sur **Configurer maintenant** pour ouvrir le panneau Créer une configuration.
+1. Si c’est la première fois que vous configurez Adobe Search &amp; Promote, cliquez sur **Configurer maintenant** pour ouvrir le panneau Créer une configuration .
 
-   Si vous souhaitez en savoir plus sur les Search &amp; Promote, cliquez **En savoir plus**&#x200B;à la place.
+   Si vous souhaitez en savoir plus sur Search &amp; Promote, cliquez sur **En savoir plus**&#x200B;à la place.
 
    ![](assets/chlimage_1-59.png)
 
@@ -82,7 +81,7 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
 
    >[!NOTE]
    >
-   >Pour obtenir ces informations **vous-même,** vous devez d&#39;abord vous connecter.
+   >Pour obtenir ces informations **vous-même,** vous devez d’abord vous connecter.
    >
    >[https://searchandpromote.omniture.com/center/](https://searchandpromote.omniture.com/center/)
    >
@@ -95,15 +94,15 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
    >
    >**Où :**
    >
-   >    * **** XXXXXXXX correspond à votre ** ID de membre**
-   >    * **** spYYYYYYYYYYY correspond à votre numéro de  **compte**
+   >    * **** XXXXXXXXcorrespond à votre** ID de membre**
+   >    * **** spYYYYYYYcorrespond à votre numéro de  **compte**
 
 
 1. Cliquez sur **Connexion à Search&amp;Promote**.
 
    Lorsque le message de réussite de la connexion apparaît, cliquez sur **OK**.
 
-   (Après la connexion, le texte du bouton devient ** Se reconnecter à un Search &amp; Promote**.)
+   (Après la connexion, le texte du bouton passe à** Reconnecter à Search &amp; Promote**.)
 
 1. Cliquez sur **OK**. La page Paramètres Search&amp;Promote s’affiche pour la configuration que vous venez de créer.
 
@@ -113,7 +112,7 @@ Si votre compte Search&amp;Promote se trouve en Asie ou en Europe, vous devez mo
 
 Pour configurer le centre de données :
 
-1. Accédez à la console Web à l’adresse `https://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
+1. Accédez à la console web à l’adresse `https://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
 
    ![](assets/chlimage_1-61.png)
 
@@ -129,7 +128,7 @@ Pour configurer le centre de données :
 
 En mode création, modifiez un composant **par** pour autoriser les composants Search&amp;Promote dans le sidekick. (Voir la documentation [Composants](/help/sites-developing/components.md#addinganewcomponenttotheparagraphsystemdesignmode) pour en savoir plus.)
 
-Pour plus d&#39;informations sur l&#39;utilisation des composants, voir [Ajouter des fonctionnalités de Search &amp; Promote à une page Web](/help/sites-authoring/search-and-promote.md).
+Pour plus d’informations sur l’utilisation des composants, voir [Ajout de fonctionnalités de Search &amp; Promote à une page web](/help/sites-authoring/search-and-promote.md).
 
 ## Spécification du service Search&amp;Promote utilisé par vos pages {#specifying-the-search-promote-service-that-your-pages-use}
 
@@ -141,7 +140,7 @@ Lorsque vous configurez les propriétés Search&amp;Promote d’une page, toutes
 >
 >La connexion au service doit déjà être configurée. (Voir [Configuration de la connexion à Search&amp;Promote](#connection).)
 
-1. Ouvrez la boîte de dialogue **Propriétés de la page**. Par exemple, sur la page** Sites Web**, cliquez avec le bouton droit sur la page et cliquez sur **Propriétés**.
+1. Ouvrez la boîte de dialogue **Propriétés de la page**. Par exemple, sur la page** Sites Web**, cliquez avec le bouton droit de la souris sur la page et cliquez sur **Propriétés**.
 1. Cliquez sur l’onglet **Services Cloud**.
 1. Pour désactiver l’héritage des configurations des services cloud d’une page parent, cliquez sur l’icône en forme de cadenas en regard du chemin d’héritage.
 
