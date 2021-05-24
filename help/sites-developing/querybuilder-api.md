@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
-translation-type: tm+mt
-source-git-commit: a491d4e9bd9ffc68c4ba7cac3149f48cf7576ee8
+exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2350'
 ht-degree: 91%
 
 ---
-
 
 # API Query Builder{#query-builder-api}
 
@@ -42,7 +41,7 @@ L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP
 
 >[!NOTE]
 >
->Consultez l&#39;AEM session Gem [Formulaires de recherche faciles à utiliser avec AEM querybuilder](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) pour un aperçu détaillé du créateur de requêtes.
+>Pour obtenir un aperçu détaillé du générateur de requêtes, reportez-vous à la session AEM Gem [Formulaires de recherche simplifiés avec AEM querybuilder](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) .
 
 ## Exemples de requêtes {#sample-queries}
 
@@ -138,7 +137,7 @@ Par défaut, Query Builder fournit également le nombre d’accès. Suivant la 
 
 L’interface utilisateur peut, par exemple, adapter la méthode suivante :
 
-* Obtenez et affichez le nombre exact du nombre total d&#39;accès ([SearchResult.getTotalMatches()](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) ou total dans la réponse querybuilder.json) est inférieur ou égal à 100 ;
+* Obtenez et affichez le nombre exact d’accès totaux ([SearchResult.getTotalMatches()](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) ou le total dans la réponse querybuilder.json) est inférieur ou égal à 100 ;
 * Définissez `guessTotal` sur 100 tout en effectuant l’appel vers Query Builder.
 
 * La réponse peut générer le résultat suivant :
@@ -219,7 +218,7 @@ Cette requête utilise un *groupe* (appelé « `group` »), qui sert à délim
 
 `"Management" and ("/content/geometrixx/en/company/management" or "/content/geometrixx/en/company/bod")`
 
-Le prédicat `path` est utilisé à plusieurs reprises dans le groupe de l’exemple précédent. Pour différencier et classer les deux instances du prédicat (l&#39;ordre est requis pour certains prédicats), vous devez préfixer les prédicats avec *N* `_ where`*N* comme index d&#39;ordonnancement. Dans l’exemple précédent, les prédicats obtenus sont `1_path` et `2_path`.
+Le prédicat `path` est utilisé à plusieurs reprises dans le groupe de l’exemple précédent. Pour différencier et classer les deux instances du prédicat (un ordre est requis pour certains prédicats), vous devez ajouter un préfixe aux prédicats avec *N* `_ where`*N* comme index d’ordonnancement. Dans l’exemple précédent, les prédicats obtenus sont `1_path` et `2_path`.
 
 Le `p` dans `p.or` est un délimiteur spécial qui indique que ce qui suit (dans ce cas, `or`) est un *paramètre* du groupe, par opposition à un sous-prédicat du groupe, tel que `1_path`.
 
@@ -366,7 +365,7 @@ Vous pouvez également consulter le [JavaDoc relatif aux `PredicateEvaluator`cla
 
 Le préfixe du nom de classe (par exemple, &quot; `similar`&quot; dans [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) est la *propriété principale* de la classe. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
 
-Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser &quot; `similar=/content/en`&quot; au lieu de la variante complète &quot; `similar.similar=/content/en`&quot;. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
+Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser &quot;`similar=/content/en`&quot; au lieu de la variante complète &quot;`similar.similar=/content/en`&quot;. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
 
 ## Exemple d’utilisation de l’API Query Builder  {#example-query-builder-api-usage}
 
@@ -434,7 +433,7 @@ La même requête exécutée sur HTTP à l’aide du servlet Query Builder (JSON
 
 ## Stockage et chargement de requêtes {#storing-and-loading-queries}
 
-Les requêtes peuvent être stockées dans le référentiel de manière à pouvoir les utiliser ultérieurement. La méthode `QueryBuilder` fournit la méthode &quot;`storeQuery` avec la signature suivante :
+Les requêtes peuvent être stockées dans le référentiel de manière à pouvoir les utiliser ultérieurement. `QueryBuilder` fournit la méthode &quot;`storeQuery` avec la signature suivante :
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
@@ -485,7 +484,7 @@ Expliquez **toutes** les requêtes pendant le cycle de développement par rappor
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Collez la requête XPath dans [Explication de la Requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath pour obtenir le plan de requête
+* Collez la requête XPath dans [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath pour obtenir le plan de requête.
 
 ### Obtention de la requête XPath explicable via le débogueur Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
@@ -504,7 +503,7 @@ Expliquez **toutes** les requêtes pendant le cycle de développement par rappor
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Collez la requête XPath dans [Explication de la Requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath pour obtenir le plan de requête
+* Collez la requête XPath dans [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath pour obtenir le plan de requête.
 
 **Obtention de la requête XPath explicable via le débogueur Query Builder**
 
@@ -531,7 +530,7 @@ Pour un aperçu du débogage des requêtes avec Query Builder, visionnez la vid
 
 >[!NOTE]
 >
->La configuration des journaux est décrite dans la section [Création de vos propres journaux et écrivains](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
+>La configuration des enregistreurs est décrite dans la section [Création de vos propres enregistreurs et rédacteurs](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
 
 Sortie de journal (niveau INFO) de l’implémentation Query Builder lors de l’exécution de la requête décrite à la section Tests et débogage :
 
@@ -569,11 +568,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Description** |
 |---|---|
-| [com.day.cq.search](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | API de base de QueryBuilder et de Requête |
+| [com.day.cq.search](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/package-summary.html) | QueryBuilder de base et l’API Query |
 | [com.day.cq.search.result](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/package-summary.html) | API Result |
 | [com.day.cq.search.facets](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | Facettes |
 | [com.day.cq.search.facets.buckets](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Intervalles (contenus dans les facettes) |
 | [com.day.cq.search.eval](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) | Évaluateurs de prédicats |
 | [com.day.cq.search.facets.extractors](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extracteurs de facettes (pour les évaluateurs) |
-| [com.day.cq.search.writer](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | Auteur d’accès aux résultats JSON pour la servlet Querybuilder (/bin/querybuilder.json) |
-
+| [com.day.cq.search.writer](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | Auteur d’accès JSON Result pour le servlet Query Builder (/bin/querybuilder.json) |
