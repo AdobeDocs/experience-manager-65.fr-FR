@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2487'
 ht-degree: 65%
 
 ---
-
 
 # Bibliothèques de balises{#tag-libraries}
 
@@ -40,27 +39,27 @@ Le fichier global déclare également la [bibliothèque Sling](/help/sites-devel
 
 ### <ui:includeClientLib> {#ui-includeclientlib}
 
-La balise `<ui:includeClientLib>` comprend une bibliothèque cliente html AEM, qui peut être un fichier js, un fichier CSS ou une bibliothèque de thèmes. Pour plusieurs inclusions de types différents, par exemple js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+La balise `<ui:includeClientLib>` comprend une bibliothèque cliente HTML AEM, qui peut être une bibliothèque js, css ou thème. Pour plusieurs inclusions de différents types, par exemple js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Elle présente les attributs suivants :
 
-**catégories**  - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
+**categories**  - Liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
 
 Equivalent à: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**thème**  - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
+**theme**  - Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
 
 Equivalent à: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js**  - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
+**js**  - Liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
 
 Equivalent à: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css**  - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
+**css**  - Liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
 
 Equivalent à: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
-**thème**  - Un indicateur indiquant uniquement les bibliothèques thématiques ou non devrait être inclus. Si cet attribut est omis, les deux ensembles sont inclus. S’applique uniquement aux inclusions JS et CSS pures (pas aux catégories ni aux inclusions de thème).
+**themed**  : un indicateur qui indique uniquement les bibliothèques à thème ou non doit être inclus. Si cet attribut est omis, les deux ensembles sont inclus. S’applique uniquement aux inclusions JS et CSS pures (pas aux catégories ni aux inclusions de thème).
 
 La balise `<ui:includeClientLib>` peut être utilisée comme suit dans un fichier jsp :
 
@@ -90,7 +89,7 @@ Pour utiliser la bibliothèque de balises CQ dans votre script, ce dernier doit 
 
 >[!NOTE]
 >
->Lorsque le fichier `/libs/foundation/global.jsp` est inclus dans le script, la bibliothèque taglib est automatiquement déclarée.
+>Lorsque le fichier `/libs/foundation/global.jsp` est inclus dans le script, la bibliothèque de balises est automatiquement déclarée.
 
 Lorsque vous développez le script jsp d’un composant AEM, il est recommandé d’inclure le code en début de script :
 
@@ -98,27 +97,27 @@ Lorsque vous développez le script jsp d’un composant AEM, il est recommandé 
 <%@include file="/libs/foundation/global.jsp"%>
 ```
 
-Il déclare les balises sling, CQ et jstl et expose les objets de script régulièrement utilisés définis par la balise [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects). Cela raccourcit et simplifie le code jsp de votre composant.
+Il déclare les bibliothèques de balises sling, CQ et jstl et expose les objets de script utilisés régulièrement, définis par la balise [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects). Cela raccourcit et simplifie le code jsp de votre composant.
 
 ### <cq:text> {#cq-text}
 
-La balise `<cq:text>` est une balise pratique qui génère le texte du composant dans un JSP.
+La balise `<cq:text>` est une balise de commodité qui génère le texte du composant dans un JSP.
 
 Il présente les attributs facultatifs ci-dessous :
 
-**property** - Nom de la propriété à utiliser. Le nom est relatif à la ressource actuelle.
+**property**  : nom de la propriété à utiliser. Le nom est relatif à la ressource actuelle.
 
-**valeur**  - Valeur à utiliser pour la sortie. Si cet attribut est présent, il annule l’utilisation de l’attribut property.
+**value**  - Valeur à utiliser pour la sortie. Si cet attribut est présent, il annule l’utilisation de l’attribut property.
 
 **oldValue**  : valeur à utiliser pour la sortie diff. Si cet attribut est présent, il annule l’utilisation de l’attribut property.
 
-**escapeXml**  - Définit si les caractères  &lt;>, &amp;, &#39; et &quot; de la chaîne résultante doivent être convertis en codes d&#39;entité de caractères correspondants. La valeur par défaut est false. Notez que l’échappement est appliqué après la mise en forme facultative.
+**escapeXml**  : définit si les caractères  &lt;>, &amp;, &#39; et &quot; de la chaîne obtenue doivent être convertis en codes d’entité de caractères correspondants. La valeur par défaut est false. Notez que l’échappement est appliqué après la mise en forme facultative.
 
-**format**  - Facultatif java.text.Format à utiliser pour le formatage du texte.
+**format**  : facultatif java.text.Format à utiliser pour le formatage du texte.
 
-**noDiff**  - Supprime le calcul d&#39;une sortie diff, même si une information diff est présente.
+**noDiff**  : supprime le calcul d’une sortie diff, même si des informations diff sont présentes.
 
-**tagClass**  - nom de classe CSS d’un élément qui entoure une sortie non vide. Si elle est vide, aucun élément n’est ajouté.
+**tagClass**  : nom de classe CSS d’un élément qui entoure une sortie non vide. Si elle est vide, aucun élément n’est ajouté.
 
 **tagName**  : nom de l’élément qui entoure une sortie non vide. Cet attribut est défini, par défaut, sur DIV.
 
@@ -126,7 +125,7 @@ Il présente les attributs facultatifs ci-dessous :
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
-**par défaut**  : valeur par défaut à utiliser pour le texte vide ou nul. Notez que la vérification par défaut est effectuée après l’échappement et la mise en forme facultatifs ; en d’autres termes, elle est écrite telle quelle dans la sortie.
+**default**  : valeur par défaut à utiliser pour le texte nul ou vide. Notez que la vérification par défaut est effectuée après l’échappement et la mise en forme facultatifs ; en d’autres termes, elle est écrite telle quelle dans la sortie.
 
 Voici quelques exemples d’utilisation de la balise `<cq:text>` dans un JSP :
 
@@ -164,28 +163,28 @@ La balise `<cq:setContentBundle>` crée un contexte de localisation i18n et le s
 
 Elle présente les attributs suivants :
 
-**langue**  - Langue du paramètre régional pour laquelle récupérer le regroupement de ressources.
+**language**  : langue du paramètre régional pour lequel récupérer le lot de ressources.
 
-**source**  : source à partir de laquelle le paramètre régional doit être pris. Les valeurs définies peuvent être les suivantes :
+**source**  : source d’où doit provenir le paramètre régional. Les valeurs définies peuvent être les suivantes :
 
-* **statique**  : le paramètre régional est extrait de l’ `language` attribut si disponible, sinon du paramètre régional par défaut du serveur.
+* **static**  : le paramètre régional provient de l’ `language` attribut si disponible, sinon du paramètre régional par défaut du serveur.
 
-* **page**  - le paramètre régional est extrait de la langue de la page ou de la ressource active si elle est disponible, sinon de l’ `language` attribut si disponible, sinon du paramètre régional par défaut du serveur.
+* **page**  : le paramètre régional provient de la langue de la page ou de la ressource active, le cas échéant, de l’ `language` attribut, le cas échéant, du paramètre régional par défaut du serveur.
 
-* **request**  - le paramètre régional est extrait du paramètre régional de la demande (  `request.getLocale()`).
+* **request**  : le paramètre régional provient du paramètre régional de la requête (  `request.getLocale()`).
 
-* **auto**  : le paramètre régional est extrait de l’ `language` attribut si disponible, sinon de la langue de la page ou de la ressource active si disponible, sinon de la requête.
+* **auto**  : le paramètre régional provient de l’ `language` attribut , le cas échéant, de la langue de la page ou de la ressource active, le cas échéant, de la requête.
 
 Si l’attribut `source` n’est pas défini :
 
-* Si l&#39;attribut `language` est défini, l&#39;attribut `source` prend par défaut la valeur &quot;`static`.
+* Si l’attribut `language` est défini, l’attribut `source` est défini par défaut sur &quot;`static`.
 
-* Si l&#39;attribut `language` n&#39;est pas défini, l&#39;attribut `source` prend par défaut la valeur `auto`.
+* Si l’attribut `language` n’est pas défini, l’attribut `source` est défini par défaut sur `auto`.
 
-Le &quot;lot de contenu&quot; peut être simplement utilisé par les balises JSTL `<fmt:message>` standard. La recherche des messages par clés est une opération en deux temps :
+Le &quot;lot de contenu&quot; peut simplement être utilisé par les balises JSTL `<fmt:message>` standard. La recherche des messages par clés est une opération en deux temps :
 
 1. Tout d’abord, des traductions sont recherchées dans les propriétés JCR de la ressource sous-jacente qui est actuellement restituée. Cela vous permet de définir une boîte de dialogue de composant simple pour modifier ces valeurs.
-1. Si le nœud ne contient pas de propriété dont le nom correspond exactement à celui de la clé, la solution de secours consiste à charger un lot de ressources à partir de la requête sling ( `SlingHttpServletRequest.getResourceBundle(Locale)`). La langue ou le paramètre régional de ce lot est défini par la langue et les attributs source de la balise `<cq:setContentBundle>`.
+1. Si le nœud ne contient pas de propriété dont le nom correspond exactement à celui de la clé, la solution de secours consiste à charger un lot de ressources à partir de la requête sling ( `SlingHttpServletRequest.getResourceBundle(Locale)`). La langue ou le paramètre régional de ce lot est défini par les attributs language et source de la balise `<cq:setContentBundle>` .
 
 La balise `<cq:setContentBundle>` peut être utilisée comme suit dans un fichier jsp.
 
@@ -247,8 +246,8 @@ Elle présente les attributs suivants :
 
 Devriez-vous utiliser `<%@ include file="myScript.jsp" %>` ou `<cq:include script="myScript.jsp" %>` pour inclure un script ?
 
-* La directive `<%@ include file="myScript.jsp" %>` informe le compilateur JSP d&#39;inclure un fichier complet dans le fichier actif. C’est comme si le contenu du fichier inclus était collé directement dans le fichier d’origine.
-* Avec la balise `<cq:include script="myScript.jsp">`, le fichier est inclus au moment de l’exécution.
+* La directive `<%@ include file="myScript.jsp" %>` informe le compilateur JSP d’inclure un fichier complet dans le fichier actif. C’est comme si le contenu du fichier inclus était collé directement dans le fichier d’origine.
+* Avec la balise `<cq:include script="myScript.jsp">` , le fichier est inclus au moment de l’exécution.
 
 Devriez-vous utiliser `<cq:include>` ou `<sling:include>` ?
 
@@ -259,29 +258,29 @@ Devriez-vous utiliser `<cq:include>` ou `<sling:include>` ?
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` a été abandonné depuis AEM 5.6.  [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) devrait être utilisé à la place.
+>`<cq:includeClientLib>` est obsolète depuis AEM 5.6.  [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) doit être utilisé à la place.
 
-La balise `<cq:includeClientLib>` comprend une bibliothèque cliente html AEM, qui peut être un js, un css ou une bibliothèque de thèmes. Pour plusieurs inclusions de types différents, par exemple js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service `com.day.cq.widget.HtmlLibraryManager`.
+La balise `<cq:includeClientLib>` comprend une bibliothèque cliente HTML AEM, qui peut être une bibliothèque js, css ou thème. Pour plusieurs inclusions de différents types, par exemple js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service `com.day.cq.widget.HtmlLibraryManager`.
 
 Elle présente les attributs suivants :
 
-**catégories**  - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
+**categories**  - Liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
 
 Equivalent à: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**thème**  - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
+**theme**  - Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
 
 Équivalent à : `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js**  - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
+**js**  - Liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
 
 Equivalent à: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css**  - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
+**css**  - Liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
 
 Equivalent à: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
-**thème**  - Un indicateur indiquant uniquement les bibliothèques thématiques ou non devrait être inclus. Si cet attribut est omis, les deux ensembles sont inclus. S’applique uniquement aux inclusions JS et CSS pures (pas aux catégories ni aux inclusions de thème).
+**themed**  : un indicateur qui indique uniquement les bibliothèques à thème ou non doit être inclus. Si cet attribut est omis, les deux ensembles sont inclus. S’applique uniquement aux inclusions JS et CSS pures (pas aux catégories ni aux inclusions de thème).
 
 La balise `<cq:includeClientLib>` peut être utilisée comme suit dans un fichier jsp :
 
@@ -301,7 +300,7 @@ La balise `<cq:includeClientLib>` peut être utilisée comme suit dans un fichie
 
 ### <cq:defineObjects> {#cq-defineobjects}
 
-La balise `<cq:defineObjects>` expose les objets de script suivants, régulièrement utilisés, qui peuvent être référencés par le développeur. Il expose également les objets définis par la balise [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects).
+La balise `<cq:defineObjects>` expose les objets de script suivants, utilisés régulièrement, qui peuvent être référencés par le développeur. Elle expose également les objets définis par la balise [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) .
 
 **componentContext**
 
@@ -443,15 +442,15 @@ La balise `<cq:defineObjects>` expose les objets de script suivants, régulière
 
 ### <cq:requestURL> {#cq-requesturl}
 
-La balise `<cq:requestURL>` écrit l’URL de requête actuelle à JspWriter. Les deux balises [ `<cq:addParam>`](#amp-lt-cq-addparam) et [ `<cq:removeParam>`](#amp-lt-cq-removeparam) peuvent être utilisées dans le corps de cette balise pour modifier l’URL de requête active avant qu’elle ne soit écrite.
+La balise `<cq:requestURL>` écrit l’URL de la requête actuelle au JspWriter. Les deux balises [ `<cq:addParam>`](#amp-lt-cq-addparam) et [ `<cq:removeParam>`](#amp-lt-cq-removeparam) et peuvent être utilisées dans le corps de cette balise pour modifier l’URL de requête actuelle avant qu’elle ne soit écrite.
 
 Cela vous permet de créer des liens vers la page en cours avec des paramètres variables. Cela vous permet, par exemple, de transformer la requête :
 
 `mypage.html?mode=view&query=something` en `mypage.html?query=something`.
 
-L&#39;utilisation de `addParam` ou `removeParam` ne modifie que l&#39;occurrence du paramètre donné, tous les autres paramètres ne sont pas affectés.
+L’utilisation de `addParam` ou `removeParam` modifie uniquement l’occurrence du paramètre donné, tous les autres paramètres ne sont pas affectés.
 
-`<cq:requestURL>` n’a aucun attribut.
+`<cq:requestURL>` ne comporte aucun attribut.
 
 Exemples :
 
@@ -465,7 +464,7 @@ Exemples :
 
 ### <cq:addParam> {#cq-addparam}
 
-La balise `<cq:addParam>` ajoute un paramètre de requête avec le nom et la valeur donnés à la balise [ `<cq:requestURL>`](#amp-lt-cq-requesturl) qui l&#39;entoure.
+La balise `<cq:addParam>` ajoute un paramètre de requête avec le nom et la valeur donnés à la balise [ `<cq:requestURL>`](#amp-lt-cq-requesturl) englobante.
 
 Elle présente les attributs suivants :
 
@@ -485,7 +484,7 @@ Elle présente les attributs suivants :
 
 ### <cq:removeParam> {#cq-removeparam}
 
-La balise `<cq:removeParam>` supprime un paramètre de requête avec le nom et la valeur donnés de la balise [ `<cq:requestURL>`](#amp-lt-cq-requesturl) qui l&#39;entoure. Si aucune valeur n’est indiquée, tous les paramètres portant le nom spécifié sont supprimés.
+La balise `<cq:removeParam>` supprime un paramètre de requête avec le nom et la valeur donnés de la balise [ `<cq:requestURL>`](#amp-lt-cq-requesturl) englobante. Si aucune valeur n’est indiquée, tous les paramètres portant le nom spécifié sont supprimés.
 
 Elle présente les attributs suivants :
 
@@ -511,7 +510,7 @@ Lorsque vous utilisez la bibliothèque de balises Sling dans votre script, ce de
 
 >[!NOTE]
 >
->Lorsque le fichier `/libs/foundation/global.jsp` est inclus dans le script, la bibliothèque sling taglib est automatiquement déclarée.
+>Lorsque le fichier `/libs/foundation/global.jsp` est inclus dans le script, la bibliothèque de balises sling est automatiquement déclarée.
 
 ### <sling:include> {#sling-include}
 
@@ -519,7 +518,7 @@ La balise `<sling:include>` inclut une ressource dans la page active.
 
 Elle présente les attributs suivants :
 
-**vider**
+**purge**
 
 * Valeur booléenne qui indique si la sortie doit être vidée ou non avant d’inclure la cible.
 
@@ -527,7 +526,7 @@ Elle présente les attributs suivants :
 
 * Objet de ressource à inclure dans le traitement de la requête en cours. L’attribut resource ou path doit être spécifié. Si les deux attributs sont spécifiés, l’attribut resource est prioritaire.
 
-**chemin**
+**path**
 
 * Chemin d’accès à l’objet de ressource à inclure dans le traitement de la requête en cours. S’il s’agit d’un chemin d’accès relatif, il est ajouté au chemin d’accès de la ressource en cours dont le script contient la ressource donnée. L’attribut resource ou path doit être spécifié. Si les deux attributs sont spécifiés, l’attribut resource est prioritaire.
 
@@ -550,7 +549,7 @@ Elle présente les attributs suivants :
 
 >[!NOTE]
 >
->La résolution de la ressource et du script inclus avec la balise `<sling:include>` est identique à celle d’une résolution d’URL sling normale. Par défaut, les sélecteurs, l’extension, etc. de la requête en cours sont également utilisés pour le script inclus. Ils peuvent être modifiés à l’aide des attributs de balise : par exemple, `replaceSelectors="foo.bar"` vous permet de remplacer les sélecteurs.
+>La résolution de la ressource et du script inclus dans la balise `<sling:include>` est identique à celle d’une résolution d’URL sling normale. Par défaut, les sélecteurs, l’extension, etc. de la requête en cours sont également utilisés pour le script inclus. Ils peuvent être modifiés à l’aide des attributs de balise : par exemple, `replaceSelectors="foo.bar"` permet de remplacer les sélecteurs.
 
 Exemples :
 
@@ -580,7 +579,7 @@ Exemples :
 
 ### <sling:defineObjects> {#sling-defineobjects}
 
-La balise `<sling:defineObjects>` expose les objets de script suivants, régulièrement utilisés, qui peuvent être référencés par le développeur :
+La balise `<sling:defineObjects>` expose les objets de script suivants, utilisés régulièrement, qui peuvent être référencés par le développeur :
 
 **slingRequest**
 
@@ -635,7 +634,7 @@ l **ogName resourceResolverName**
 
 ## Bibliothèque de balises JSTL  {#jstl-tag-library}
 
-La [bibliothèque de balises standard des pages JavaServer](https://www.oracle.com/technetwork/java/index-jsp-135995.html) contient beaucoup de balises utiles et standard. Les balises de base, de formatage et de fonctions sont définies par `/libs/foundation/global.jsp` comme le montre le fragment de code suivant.
+La [bibliothèque de balises standard JavaServer Pages](https://www.oracle.com/technetwork/java/index-jsp-135995.html) contient de nombreuses balises standard utiles. Les bibliothèques de balises de base, de formatage et de fonctions sont définies par la balise `/libs/foundation/global.jsp` comme illustré dans le fragment de code suivant.
 
 ### Extrait de /libs/foundation/global.jsp {#extract-of-libs-foundation-global-jsp}
 
@@ -645,4 +644,4 @@ La [bibliothèque de balises standard des pages JavaServer](https://www.oracle.c
 <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions" %>
 ```
 
-Après avoir importé le fichier `/libs/foundation/global.jsp` comme décrit précédemment, vous pouvez utiliser les préfixes `c`, `fmt` et `fn` pour accéder à ces balises. La documentation officielle de la JSTL est disponible [ici](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).
+Après avoir importé le fichier `/libs/foundation/global.jsp` comme décrit précédemment, vous pouvez utiliser les préfixes `c`, `fmt` et `fn` pour accéder à ces bibliothèques de balises. La documentation officielle de la JSTL est disponible [ici](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).
