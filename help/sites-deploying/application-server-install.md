@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
-translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 63%
 
 ---
-
 
 # Installation du serveur d’applications{#application-server-install}
 
@@ -29,7 +28,7 @@ Cette section vous explique comment installer Adobe Experience Manager (AEM) a
 
 La procédure d’installation est décrite pour les serveurs d’applications suivants :
 
-* [WebSphere 8.5](#websphere)
+* [/WebSphere 8.5](#websphere)
 * [JBoss EAP 6.3.0/6.4.0](#jboss-eap)
 * [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
 * [Tomcat 8/8.5](#tomcat)
@@ -42,16 +41,16 @@ Pour plus d’informations sur l’installation d’applications web, sur les co
 
 ## Description générale {#general-description}
 
-### Comportement par défaut lors de l’installation de AEM dans un serveur d’applications {#default-behaviour-when-installing-aem-in-an-application-server}
+### Comportement par défaut lors de l’installation d’AEM dans un serveur d’applications {#default-behaviour-when-installing-aem-in-an-application-server}
 
 AEM se présente sous la forme d’un seul fichier war à déployer.
 
 En cas de déploiement, le comportement par défaut est le suivant :
 
-* le mode d&#39;exécution est `author`
-* l’instance (référentiel, environnement Felix OSGI, lots, etc.) est installé dans `${user.dir}/crx-quickstart`où `${user.dir}` est le répertoire de travail actuel, ce chemin d&#39;accès à crx-quickstart est appelé `sling.home`
+* le mode d’exécution est `author`
+* l’instance (référentiel, environnement Felix OSGI, lots, etc.) est installé dans `${user.dir}/crx-quickstart`où `${user.dir}` est le répertoire de travail actuel, ce chemin d’accès à crx-quickstart est appelé `sling.home`
 
-* la racine du contexte est le nom du fichier de guerre, par exemple : `aem-6`
+* la racine du contexte est le nom du fichier war, par exemple : `aem-6`
 
 #### Configuration {#configuration}
 
@@ -77,27 +76,27 @@ Pour qu’une instance de publication soit déployée, vous devez définir le mo
 Pour vérifier que tous les éléments ont été installés, vous pouvez :
 
 * parcourir le fichier `error.log` jusqu’à la fin pour vous assurer que tout le contenu est installé ;
-* vérifiez dans `/system/console` que tous les lots sont installés.
+* Vérifiez dans `/system/console` que tous les lots sont installés.
 
 #### Deux instances sur le même serveur d’applications {#two-instances-on-the-same-application-server}
 
 À des fins de démonstration, il peut s’avérer utile d’installer les instances de création et de publication sur un seul serveur d’applications. Pour ce faire, procédez comme suit :
 
 1. Modifiez les variables sling.home et sling.run.modes de l’instance de publication.
-1. Décompressez le fichier WEB-INF/web.xml du fichier AEM war.
+1. Décompressez le fichier WEB-INF/web.xml du fichier war AEM.
 1. Définissez le paramètre sling.home sur un autre chemin d’accès (les chemins d’accès absolus et relatifs sont possibles).
 1. Modifiez sling.run.modes pour publier pour l’instance de publication.
 1. Recompressez le fichier web.xml.
-1. Renommez les fichiers de guerre afin qu’ils portent des noms différents : Par exemple, l’un renomme aemauthor.war et l’autre, aempublish.war.
-1. Utilisez des paramètres de mémoire plus élevés, par exemple pour les instances AEM par défaut, utilisez par exemple : -Xmx3072m
+1. Renommez les fichiers war afin qu’ils portent des noms différents : Par exemple, renommez-le aemauthor.war et renommez-le aempublish.war.
+1. Utilisez des paramètres de mémoire plus élevés, par exemple pour les instances d’AEM par défaut, utilisez par exemple : -Xmx3072m
 1. Déployez les deux applications web.
 1. Une fois le déploiement effectué, arrêtez les deux applications web.
-1. Dans les instances d’auteur et de publication, assurez-vous que dans les fichiers sling.properties, la propriété felix.service.urlhandlers=false est définie sur false (par défaut, elle est définie sur true).
+1. Dans les instances de création et de publication, assurez-vous que la propriété felix.service.urlhandlers=false est définie dans les fichiers sling.properties (par défaut, elle est définie sur true).
 1. Redémarrez les deux applications web.
 
 ## Procédures d’installation des serveurs d’applications {#application-servers-installation-procedures}
 
-### /WebSphere 8.5{#websphere}
+### /WebSphere 8.5 {#websphere}
 
 Avant de procéder à un déploiement, lisez la [Description générale](#general-description) ci-dessus.
 
@@ -115,10 +114,10 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 * Téléchargez le fichier war AEM.
 * Au besoin, effectuez vos configurations dans le fichier web.xml (voir ci-dessus, sous Description générale).
 
-   * Décompresser le fichier WEB-INF/web.xml
-   * modifier le paramètre sling.run.modes pour publier
-   * annuler la mise en commentaire du paramètre initial sling.home et définir ce chemin selon vos besoins
-   * Réparer le fichier web.xml
+   * Décompressez le fichier WEB-INF/web.xml
+   * Modifiez le paramètre sling.run.modes pour publier
+   * décommentez le paramètre initial sling.home et définissez ce chemin selon vos besoins.
+   * Réparation du fichier web.xml
 
 * Déployez le fichier war AEM.
 
@@ -132,11 +131,11 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
 **Préparation du serveur JBoss**
 
-Définissez des arguments de mémoire dans votre fichier conf (ex. `standalone.conf`)
+Définissez des arguments de mémoire dans votre fichier conf (par exemple, `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-si vous utilisez l&#39;analyseur de déploiement pour installer l&#39;application Web AEM, il peut être utile d&#39;augmenter l&#39;attribut `deployment-timeout,` pour ce jeu d&#39;attributs `deployment-timeout` dans le fichier xml de votre instance (par exemple `configuration/standalone.xml)` :
+si vous utilisez le scanner de déploiement pour installer l’application web AEM, il peut être utile d’augmenter le `deployment-timeout,` pour que l’attribut `deployment-timeout` soit défini dans le fichier xml de votre instance (par exemple `configuration/standalone.xml)` :
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -146,9 +145,9 @@ si vous utilisez l&#39;analyseur de déploiement pour installer l&#39;applicatio
 
 **Déploiement de l’application web AEM**
 
-* Téléchargez l’application Web AEM dans JBoss Administration Console.
+* Téléchargez l’application web AEM dans JBoss Administration Console.
 
-* Activez l’application Web AEM.
+* Activez l&#39;application web AEM.
 
 #### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
@@ -158,32 +157,32 @@ Dans ce cas, une simple disposition serveur est utilisée avec uniquement un ser
 
 **Préparation de WebLogic Server**
 
-* Dans `${myDomain}/config/config.xml`ajouter à la section security-configuration :
+* Dans `${myDomain}/config/config.xml`ajoutez à la section security-configuration :
 
    * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` voir sur  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdpour connaître la position correcte (par défaut, la position à la fin de la section est ok).
 
 * Augmentez les paramètres mémoire de la machine virtuelle :
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh) recherchez WLS_MEM_ARGS, définissez par exemple set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
-   * redémarrage de WebLogic Server
+   * Ouvrez `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) recherchez WLS_MEM_ARGS, définissez par exemple `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * Redémarrez WebLogic Server
 
-* Créer dans `${myDomain}` un dossier de packages et dans un dossier cq et y créer un dossier Plan
+* Créez dans `${myDomain}` un dossier de modules et à l’intérieur d’un dossier cq et, dans celui-ci, un dossier Plan
 
 **Déploiement de l’application web AEM**
 
 * Téléchargez le fichier war AEM.
-* Placez le fichier d&#39;AEM guerre dans le dossier ${myDomain}/packages/cq.
+* Placez le fichier war AEM dans le dossier ${myDomain}/packages/cq .
 * Effectuez vos configurations dans `WEB-INF/web.xml` si nécessaire (voir ci-dessus dans la Description générale).
 
-   * Décompresser le `WEB-INF/web.xml`fichier
-   * modifier le paramètre sling.run.modes pour publier
-   * annuler la mise en commentaire du paramètre initial sling.home et définir ce chemin selon vos besoins (voir Description générale)
-   * Réparer le fichier web.xml
+   * Décompressez le fichier `WEB-INF/web.xml`.
+   * Modifiez le paramètre sling.run.modes pour publier
+   * Supprimez les commentaires du paramètre initial sling.home et définissez ce chemin selon vos besoins (voir Description générale).
+   * Réparation du fichier web.xml
 
 * Déployez le fichier war AEM en tant qu’application (pour les autres paramètres, utilisez les valeurs par défaut).
 * L’installation peut prendre un certain temps.
 * Vérifiez que l’installation est bien terminée, comme indiqué ci-dessus dans la section Description générale (par exemple, en parcourant le fichier error.log jusqu’à la fin).
-* Vous pouvez modifier la racine de contexte dans l’onglet Configuration de l’application Web dans WebLogic `/console`
+* Vous pouvez modifier la racine du contexte dans l’onglet Configuration de l’application web dans WebLogic `/console`
 
 #### Tomcat 8/8.5 {#tomcat}
 
@@ -193,7 +192,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
    * Augmentez les paramètres mémoire de la machine virtuelle :
 
-      * Dans `bin/catalina.bat` (resp `catalina.sh` sur unix), ajoutez le paramètre suivant :
+      * Dans `bin/catalina.bat` (resp `catalina.sh` sous unix), ajoutez le paramètre suivant :
       * `set "JAVA_OPTS= -Xmx2048m`
    * Tomcat n’active aucun accès de type administrateur ou gestionnaire au niveau de l’installation. Vous devez donc modifier manuellement le fichier `tomcat-users.xml` si vous souhaitez autoriser l’accès pour ces comptes :
 
@@ -222,7 +221,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
       `webapps/manager/WEB-INF/web.xml`
 
-      et augmentez la taille maximale des fichiers et la taille maximale des requêtes à au moins 500 Mo, voir l&#39;exemple `multipart-config` suivant d&#39;un tel fichier `web.xml`.
+      et augmentez la taille maximale du fichier et la taille maximale de la requête à au moins 500 Mo, voir l’exemple `multipart-config` suivant d’un fichier `web.xml` de ce type.
 
       ```xml
       <multipart-config>
@@ -241,17 +240,17 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
    * Téléchargez le fichier war AEM.
    * Au besoin, effectuez vos configurations dans le fichier web.xml (voir ci-dessus, sous Description générale).
 
-      * Décompresser le fichier WEB-INF/web.xml
-      * modifier le paramètre sling.run.modes pour publier
-      * annuler la mise en commentaire du paramètre initial sling.home et définir ce chemin selon vos besoins
-      * Réparer le fichier web.xml
+      * Décompressez le fichier WEB-INF/web.xml
+      * Modifiez le paramètre sling.run.modes pour publier
+      * décommentez le paramètre initial sling.home et définissez ce chemin selon vos besoins.
+      * Réparation du fichier web.xml
    * Renommez le fichier war AEM en ROOT.war si vous souhaitez effectuer un déploiement en tant qu’application web racine ; renommez-le en aemauthor.war, par exemple, si aemauthor doit être une racine de contexte.
    * Copiez-le dans le dossier webapps de Tomcat.
    * Attendez que l’application AEM soit installée.
 
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
 Pour plus d’informations sur la résolution des problèmes qui peuvent survenir en cours d’installation, voir :
 
-* [Résolution des incidents](/help/sites-deploying/troubleshooting.md)
+* [Résolution des problèmes](/help/sites-deploying/troubleshooting.md)
