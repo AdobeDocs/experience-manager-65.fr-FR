@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 92%
 
 ---
-
 
 # Conversion de lancements{#promoting-launches}
 
@@ -34,7 +33,7 @@ Pour convertir des pages, procédez comme suit lors de la modification de la pag
 1. Ouvrez l’onglet **Page** dans le Sidekick, puis cliquez sur **Convertir le lancement**.
 1. Indiquez les pages à convertir :
 
-   * (Par défaut) Pour promouvoir uniquement la page active, sélectionnez **Promouvoir les modifications de page dans la version de production**.
+   * (Par défaut) Pour convertir uniquement la page active, sélectionnez **Convertir les modifications de page en version de production**.
    * Pour promouvoir également les pages enfants de la page active, sélectionnez **Inclure les sous-pages**.
    * Pour convertir toutes les pages du lancement, sélectionnez **Convertir le lancement complet en version de production**.
 
@@ -54,4 +53,3 @@ Pour lancer automatiquement un workflow lors de la conversion de pages, [configu
 Vous pouvez, par exemple, générer automatiquement des demandes d’activation de page lorsque les auteurs convertissent des pages Lancements. Configurez un lanceur de workflow pour démarrer le workflow « Demander l’activation » lors de la modification du nœud de module.
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
-
