@@ -8,21 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Mise à niveau
+exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 62%
 
 ---
 
-
 # Restructuration du référentiel Dynamic Media dans AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md), les clients qui effectuent la mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer l&#39;effort de travail associé aux modifications du référentiel qui affectent la solution Dynamic Media. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution Dynamic Media. Certaines modifications nécessitent des efforts lors du processus de mise à niveau d’AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
 
-**Avant la mise à niveau future**
+**Avant la mise à niveau ultérieure**
 
 * [Configurations personnalisées du codage vidéo adaptatif](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
 * [Configuration du cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
@@ -30,9 +29,9 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
 * [Dynamic Media - Configuration du service cloud YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Divers](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
-## Avant la mise à niveau ultérieure {#prior-to-upgrade}
+## Avant la mise à niveau future {#prior-to-upgrade}
 
-### Configurations de codage de vidéo adaptative personnalisées {#custom-adaptive-video-encoding-configurations}
+### Configurations personnalisées de codage de vidéo adaptative {#custom-adaptive-video-encoding-configurations}
 
 <table>
  <tbody>
@@ -82,7 +81,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
  </tbody>
 </table>
 
-### Configuration du Cloud Service Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
+### Configuration du Cloud Service Dynamic Media (hybride DM) {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -100,12 +99,12 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>S/O<br /> </td>
+   <td>N/A<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Dynamic Media - Configuration du Cloud Service YouTube {#youtubecloudserviceconfiguration}
+### Dynamic Media - Configuration du Cloud Service YouTube  {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -119,11 +118,11 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle interface utilisateur tactile (à partir de <code>/conf</code>), y compris en copiant tous les Canaux de l’ancien emplacement <br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce flux de travaux génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une nouvelle configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées à nouveau si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
+   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle interface utilisateur tactile (à partir de <code>/conf</code>), y compris en copiant tous les canaux de l’ancien emplacement <br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une nouvelle configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées à nouveau si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>S/O<br /> </td>
+   <td>N/A<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -146,7 +145,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>S/O</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -167,8 +166,7 @@ Comme décrit sur la page parent [Restructuration du référentiel dans AEM 6.5]
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>S/O</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
-
