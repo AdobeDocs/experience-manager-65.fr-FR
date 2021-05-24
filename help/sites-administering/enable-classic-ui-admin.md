@@ -10,24 +10,23 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 954c1d5b06b54d59f523483ce5c1af36c2083a76
+exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 69%
 
 ---
 
-
 # Consoles d’administration{#admin-consoles}
 
 Par défaut, la possibilité de basculer vers l’IU classique via les consoles d’administration a été désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lors du survol du curseur sur certaines icônes de la console, et qui permettaient d’accéder à l’IU classique, ne sont plus affichées.
 
-Chaque console disposant d’une version d’interface utilisateur classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche de nouveau sur l’icône de console lorsqu’elle est remplacée.
+Chaque console disposant d’une version d’IU classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche une fois de plus sur l’icône de console lorsqu’elle est pointée sur celle-ci.
 
 Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
-1. A l’aide de CRXDE Lite, recherchez le noeud correspondant à la console d’administration pour laquelle vous souhaitez réactiver l’interface utilisateur classique. Il se trouve sous :
+1. À l’aide de CRXDE Lite, recherchez le noeud correspondant à la console d’administration pour laquelle vous souhaitez réactiver l’interface utilisateur classique. Il se trouve sous :
 
    `/libs/cq/core/content/nav`
 
@@ -39,7 +38,7 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Créez une incrustation à l’aide de l’option **Noeud d’incrustation** ; par exemple :
+1. Créez une superposition à l’aide de l’option **Noeud de recouvrement** ; par exemple :
 
    * **Chemin**: `/apps/cq/core/content/nav/sites`
    * **Emplacement du recouvrement**: `/apps/`
