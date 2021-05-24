@@ -10,39 +10,38 @@ content-type: reference
 topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 71%
 
 ---
 
-
 # Tester votre IU{#testing-your-ui}
 
 >[!NOTE]
 >
->A partir de AEM version 6.5, la structure de test de l’interface utilisateur de hobbes.js est obsolète. Adobe n&#39;envisage pas d&#39;apporter d&#39;autres améliorations et recommande aux clients d&#39;utiliser l&#39;automatisation du sélénium.
+>À partir de la version 6.5 d’AEM, la structure de test de l’interface utilisateur hobbes.js est obsolète. Adobe ne prévoit pas d’y apporter d’autres améliorations et recommande aux clients d’utiliser l’automatisation Selenium.
 >
->Voir [Fonctions obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
+>Voir [Fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
-AEM fournit un framework pour l’automatisation des tests pour votre IU AEM. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur Web. La structure fournit une API javascript pour la création de tests.
+AEM fournit un framework pour l’automatisation des tests pour votre IU AEM. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur Web. La structure fournit une API JavaScript pour la création de tests.
 
-La structure de test AEM utilise Hobbes.js, une bibliothèque de test écrite en JavaScript. Le cadre de Hobbes.js a été développé pour tester AEM dans le cadre du processus de développement. Le framework est aujourd’hui disponible au public pour tester les applications AEM.
+La structure de test d’AEM utilise Hobbes.js, une bibliothèque de tests écrite en JavaScript. Le framework Hobbes.js a été développé pour tester AEM dans le cadre du processus de développement. Le framework est aujourd’hui disponible au public pour tester les applications AEM.
 
 >[!NOTE]
 >
->Consultez la [documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) de Hobbes.js pour plus d’informations sur l’API.
+>Pour plus d’informations sur l’API, consultez la [documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) de Hobbes.js .
 
 ## Structure des tests {#structure-of-tests}
 
 Lors de l’utilisation de tests automatisés dans AEM, il est important de comprendre les termes suivants :
 
-| Action | Une **action** est une activité spécifique sur une page Web, telle que cliquer sur un lien ou un bouton. |
+| Action | Une **action** est une activité spécifique sur une page web, comme cliquer sur un lien ou un bouton. |
 |---|---|
-| Cas de test | Un **cas de test** est une situation spécifique qui peut être constituée d&#39;une ou de plusieurs **actions**. |
-| Suite de tests | Une **suite de tests** est un groupe de **cas de test** connexes qui, ensemble, testent un cas d&#39;utilisation spécifique. |
+| Cas de test | Un **cas de test** est une situation spécifique qui peut être composée d’une ou de plusieurs **actions**. |
+| Suite de tests | Une **suite de tests** est un groupe de **cas de test** associés qui testent ensemble un cas d’utilisation spécifique. |
 
 ## Exécution de tests {#executing-tests}
 
@@ -104,13 +103,13 @@ Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel 
 
 ## Création et utilisation d’une suite de tests simple {#creating-and-using-a-simple-test-suite}
 
-La procédure suivante vous guide tout au long de la création et de l&#39;exécution d&#39;une suite de tests à l&#39;aide de [Contenu We.Retail](/help/sites-developing/we-retail.md), mais vous pouvez facilement modifier le test pour utiliser une autre page Web.
+La procédure suivante vous guide tout au long de la création et de l’exécution d’une suite de tests à l’aide du [contenu We.Retail](/help/sites-developing/we-retail.md), mais vous pouvez facilement modifier le test pour utiliser une autre page web.
 
 Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Ouvrez CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
-1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs`, puis cliquez sur **Créer > Créer un dossier**. Tapez `myTests` comme nom et cliquez sur **OK**.
-1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs/myTests`, puis cliquez sur **Créer > Créer un noeud**. Entrez les valeurs de propriété suivantes, puis cliquez sur **OK** :
+1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs` et cliquez sur **Créer > Créer un dossier**. Tapez `myTests` comme nom et cliquez sur **OK**.
+1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs/myTests` et cliquez sur **Créer > Créer un noeud**. Entrez les valeurs de propriété suivantes, puis cliquez sur **OK** :
 
    * Nom : `myFirstTest`
    * Type : `cq:ClientLibraryFolder`
@@ -130,10 +129,10 @@ Pour plus d’informations sur la création de vos propres suites de tests, repo
    >Pour tester des formulaires adaptatifs, ajoutez les valeurs suivantes aux catégories et aux dépendances. Par exemple :
    >
    >
-   >**catégories** :  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**categories** :  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
    >
-   >**dépendances** :  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
+   >**dependencies** :  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
 1. Cliquez sur **Enregistrer tout**.
 1. Cliquez avec le bouton droit sur le nœud `myFirstTest` et cliquez sur **Créer > Créer un fichier**. Nommez le fichier `js.txt` et cliquez sur **OK**.
