@@ -1,5 +1,5 @@
 ---
-title: 'Application de workflows aux pages  '
+title: Application de workflows aux pages
 seo-title: Application de workflows aux pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 seo-description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 611743cc4144f99968845093b3903fe7df8bf9d9
+exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 99%
 
 ---
-
 
 # Application de workflows aux pages  {#applying-workflows-to-pages}
 
@@ -80,7 +79,7 @@ Dans la **Chronologie**, vous pouvez démarrer un workflow à appliquer à la re
 1. [Sélectionnez la ressource](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) et ouvrez la [Chronologie](/help/sites-authoring/basic-handling.md#timeline) (ou ouvrez la chronologie, puis sélectionnez la ressource).
 1. La pointe de la flèche située en regard du champ de commentaire peut être utilisée pour afficher **Démarrer le workflow** :
 
-   ![capture d&#39;écran_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
+   ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
 
 1. L’assistant **Créer un workflow** vous aidera à [spécifier les détails du workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
