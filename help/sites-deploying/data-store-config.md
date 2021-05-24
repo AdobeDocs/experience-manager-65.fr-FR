@@ -11,15 +11,14 @@ topic-tags: deploying
 discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3424'
 ht-degree: 66%
 
 ---
-
 
 # Configuration des magasins de nœuds et des entrepôts de données dans AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
@@ -37,7 +36,7 @@ Pour configurer le magasin de nœuds et l’entrepôt de données, procédez com
 1. Créez un dossier `crx-quickstart/install` dans le répertoire d’installation.
 1. Configurez tout d’abord le magasin de nœuds en créant un fichier de configuration avec le nom de l’option de magasin de nœuds que vous voulez utiliser dans le répertoire `crx-quickstart/install`.
 
-   Par exemple, le magasin de noeuds de Document (qui est la base de l’implémentation AEM MongoMK) utilise le fichier `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
+   Par exemple, le magasin de noeuds de document (qui est la base de l’implémentation d’AEM MongoMK) utilise le fichier `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
 
 1. Modifiez le fichier et définissez vos options de configuration.
 1. Créez un fichier de configuration avec le PID de l’entrepôt de données que vous souhaitez utiliser. Modifiez le fichier pour définir les options de configuration. 
@@ -64,14 +63,14 @@ Le magasin de nœuds de segment constitue la base de l’implémentation de TarM
 
 >[!CAUTION]
 >
->Le PID du magasin de noeuds de segments est passé de `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` de l&#39;AEM 6 à `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` dans AEM 6.3. Assurez-vous d&#39;effectuer les ajustements de configuration nécessaires pour tenir compte de cette modification.
+>Le PID de la banque de noeuds de segment est passé de `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` de l’AEM 6 à `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` dans AEM 6.3. Veillez à effectuer les ajustements de configuration nécessaires pour refléter cette modification.
 
 Vous pouvez configurer les options suivantes :
 
 * `repository.home` : chemin vers le répertoire racine du référentiel dans lequel sont stockées les données associées au référentiel. Par défaut, les fichiers de segment sont stockés dans le répertoire `crx-quickstart/segmentstore`. 
 
 * `tarmk.size` : taille maximale d’un segment en Mo. La valeur maximale par défaut étant de 256 Mo.
-* `customBlobStore` : valeur booléenne indiquant qu’un entrepôt de données personnalisé est utilisé. La valeur par défaut est true pour AEM versions 6.3 et ultérieures. Pour les versions antérieures à AEM 6.3, la valeur par défaut était false.
+* `customBlobStore` : valeur booléenne indiquant qu’un entrepôt de données personnalisé est utilisé. La valeur par défaut est true pour AEM 6.3 et les versions ultérieures. Pour les versions antérieures à AEM 6.3, la valeur par défaut était false.
 
 Voici un exemple de fichier `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` :
 
@@ -88,11 +87,11 @@ customBlobStore=B"true"
 
 #### Magasin de nœuds de document {#document-node-store}
 
-Le magasin de noeuds de document est la base de l’implémentation AEM MongoMK. Il utilise le `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. Les options de configuration suivantes sont disponibles :
+Le magasin de noeuds de document est la base de l’implémentation d’AEM MongoMK. Il utilise le `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. Les options de configuration suivantes sont disponibles :
 
 * `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base donnée Mongo. La valeur par défaut est de `mongodb://localhost:27017`
 
-* `db` : nom de la base de donnée Mongo. La valeur par défaut est **Oak** ``. However, new AEM 6 installations use **aem-author** ``comme nom de base de données par défaut.
+* `db` : nom de la base de donnée Mongo. La valeur par défaut est **Oak** ``. However, new AEM 6 installations use **aem-author** ``comme nom de la base de données par défaut.
 
 * `cache` : taille du cache en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est de `256`
 
@@ -133,9 +132,9 @@ Il s’agit de l’implémentation de [FileDataStore ](https://jackrabbit.apache
 
 Voici les options de configuration disponibles :
 
-* `repository.home` : chemin vers le répertoire racine du référentiel dans lequel sont stockées les différentes données associées au référentiel. Par défaut, les fichiers binaires sont stockés dans le répertoire `crx-quickstart/repository/datastore`.
+* `repository.home` : chemin vers le répertoire racine du référentiel dans lequel sont stockées les différentes données associées au référentiel. Par défaut, les fichiers binaires sont stockés dans le répertoire `crx-quickstart/repository/datastore`
 
-* `path`: Chemin d’accès au répertoire sous lequel les fichiers seront stockés. Si spécifié, il prévaut sur la valeur `repository.home`.
+* `path`: Chemin d’accès au répertoire dans lequel les fichiers seront stockés. Si spécifié, il est prioritaire sur la valeur `repository.home`
 
 * `minRecordLength` : taille minimale en octets d’un fichier stocké dans l’entrepôt de données. Un contenu binaire inférieur à cette valeur est intégré.
 
@@ -145,13 +144,13 @@ Voici les options de configuration disponibles :
 
 ## Entrepôt de données S3 Amazon  {#amazon-s-data-store}
 
-AEM peut être configuré pour stocker des données dans Amazon Simple Enregistrement Service (S3). Il utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` pour la configuration.
+AEM peut être configuré pour stocker des données dans Amazon Simple Storage Service (S3). Il utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` pour la configuration.
 
-Pour activer la fonctionnalité de l’entrepôt de données S3, un Feature Pack contenant le connecteur d’entrepôt de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.10.x du Feature Pack (par exemple, com.adobe.granite.oak.s3connector-1.10.0.zip). De plus, vous devez également télécharger et installer le dernier Service Pack AEM, tel qu&#39;il est indiqué sur la [page Notes de mise à jour AEM 6.5](/help/release-notes/sp-release-notes.md).
+Pour activer la fonctionnalité de l’entrepôt de données S3, un Feature Pack contenant le connecteur d’entrepôt de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.10.x du Feature Pack (par exemple, com.adobe.granite.oak.s3connector-1.10.0.zip). En outre, vous devez également télécharger et installer le dernier Service Pack d’AEM, comme indiqué sur la page [AEM Notes de mise à jour 6.5](/help/release-notes/sp-release-notes.md) d’.
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM  avec TarMK, les fichiers binaires sont stockés par défaut dans `FileDataStore`. Pour utiliser TarMK avec la banque de données S3, vous devez début AEM en utilisant le mode d’exécution `crx3tar-nofds`, par exemple :
+>Lorsque vous utilisez AEM  avec TarMK, les fichiers binaires sont stockés par défaut dans `FileDataStore`. Pour utiliser TarMK avec l’entrepôt de données S3, vous devez commencer AEM en utilisant le mode d’exécution `crx3tar-nofds` , par exemple :
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -167,9 +166,9 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
    jcr_root/libs/system/install
    ```
 
-   Copiez tout le contenu de l’emplacement ci-dessus dans `<aem-install>/crx-quickstart/install.`
+   Copiez tout le contenu de l’emplacement ci-dessus vers `<aem-install>/crx-quickstart/install.`
 
-1. Si AEM est déjà configuré pour fonctionner avec l’enregistrement Tar ou MongoDB, supprimez tous les fichiers de configuration existants du dossier ***&lt;aem-install>***/*crx-quickstart*/*install* avant de continuer. Les fichiers à supprimer sont les suivants :
+1. Si AEM est déjà configuré pour fonctionner avec le stockage Tar ou MongoDB, supprimez tous les fichiers de configuration existants du dossier ***&lt;aem-install>***/*crx-quickstart*/*install* avant de continuer. Les fichiers à supprimer sont les suivants :
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -197,15 +196,15 @@ Si vous devez effectuer une mise à niveau vers une nouvelle version du connecte
 
 1. Désactivez l’instance AEM.
 
-1. Accédez à `<aem-install>/crx-quickstart/install/15` dans le dossier d’installation AEM et effectuez une sauvegarde de son contenu.
-1. Après la sauvegarde, supprimez l’ancienne version de S3 Connector et ses dépendances en supprimant tous les fichiers jar du dossier `<aem-install>/crx-quickstart/install/15`, par exemple :
+1. Accédez à `<aem-install>/crx-quickstart/install/15` dans le dossier d’installation d’AEM et sauvegardez son contenu.
+1. Après la sauvegarde, supprimez l&#39;ancienne version de S3 Connector et ses dépendances en supprimant tous les fichiers jar du dossier `<aem-install>/crx-quickstart/install/15`, par exemple :
 
    * **oak-blob-cloud-1.6.1.jar**
    * **aws-java-sdk-osgi-1.10.76.jar**
 
    >[!NOTE]
    >
-   >Les noms de fichier présentés ci-dessus sont utilisés à des fins d’illustration uniquement.
+   >Les noms de fichier présentés ci-dessus sont utilisés à titre d’illustration uniquement.
 
 1. Téléchargez la dernière version du Feature Pack 1.8.x depuis le [référentiel Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Décompressez le contenu dans un dossier distinct, puis accédez à `jcr_root/libs/system/install/15`.
@@ -215,20 +214,20 @@ Si vous devez effectuer une mise à niveau vers une nouvelle version du connecte
 Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 
 * accessKey : Clé d’accès AWS.
-* secretKey : clé d’accès secrète AWS. **Remarque :** Vous pouvez également utiliser les rôles  [IAM ](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) pour l’authentification. Si vous utilisez des rôles IAM, vous n’avez plus besoin de spécifier les attributs `accessKey` et `secretKey`.
+* secretKey : clé d’accès secrète AWS. **Remarque :** Vous pouvez également utiliser les rôles  [IAM ](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) pour l’authentification. Si vous utilisez des rôles IAM, vous n’avez plus besoin de spécifier les `accessKey` et `secretKey`.
 
-* s3Bucket : Nom du compartiment.
+* s3Bucket: Nom du compartiment.
 * s3Region : La région du seau.
-* chemin : Chemin d’accès du magasin de données. La valeur par défaut est **&lt;AEM dossier d’installation>/repository/datastore**
-* minRecordLength: Taille minimale d’un objet qui doit être stocké dans le magasin de données. La valeur minimale/par défaut est **16 Ko.**
-* maxCachedBinarySize : Les binaires dont la taille est inférieure ou égale à cette taille seront stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est **17408 **(17 Ko).
+* path: Chemin d’accès de l’entrepôt de données. La valeur par défaut est **&lt;AEM install folder>/repository/datastore**
+* minRecordLength: Taille minimale d’un objet qui doit être stocké dans l’entrepôt de données. La valeur minimale/par défaut est **16 Ko.**
+* maxCachedBinarySize : Les fichiers binaires dont la taille est inférieure ou égale à cette taille seront stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est **17408 **(17 Ko).
 
 * cacheSize : Taille du cache. La valeur est spécifiée en octets. La valeur par défaut est **64 Go**.
-* secret : Uniquement à utiliser en cas d&#39;utilisation de la réplication sans binaire pour la configuration de la banque de données partagée.
-* stagingSplitPourcentage : Pourcentage de la taille du cache configuré pour être utilisé pour le test des téléchargements asynchrones. La valeur par défaut est **10**.
-* uploadThreads : Nombre de threads de transfert utilisés pour les téléchargements asynchrones. La valeur par défaut est **10**.
-* stagingPurgeInterval : Intervalle en secondes de purge des téléchargements terminés du cache d’évaluation. La valeur par défaut est de **300** secondes (5 minutes).
-* stagingRetryInterval : Intervalle de nouvelle tentative en secondes pour les téléchargements ayant échoué. La valeur par défaut est de **600** secondes (10 minutes).
+* secret : À utiliser uniquement si vous utilisez la réplication sans fichier binaire pour la configuration de la banque de données partagée.
+* stagingSplitPercentage: Pourcentage de la taille du cache configuré pour être utilisé pour l’évaluation des téléchargements asynchrones. La valeur par défaut est **10**.
+* uploadThreads : Nombre de threads de chargement utilisés pour les chargements asynchrones. La valeur par défaut est **10**.
+* stagingPurgeInterval : Intervalle en secondes pour la purge des chargements terminés du cache intermédiaire. La valeur par défaut est **300** secondes (5 minutes).
+* stagingRetryInterval : Intervalle de reprise en secondes pour les chargements ayant échoué. La valeur par défaut est **600** secondes (10 minutes).
 
 ### Options de régions de compartiment {#bucket-region-options}
 
@@ -239,7 +238,7 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
    <td><code>us-standard</code></td>
   </tr>
   <tr>
-   <td>Ouest américain</td>
+   <td>Ouest des États-Unis</td>
    <td><code>us-west-2</code></td>
   </tr>
   <tr>
@@ -273,14 +272,14 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 
 >[!NOTE]
 >
->Les implémentations DataStore de `S3DataStore`, `CachingFileDataStore` et `AzureDataStore` prennent en charge la mise en cache du système de fichiers local. L&#39;implémentation de `CachingFileDataStore` est utile lorsque DataStore est sur NFS (Network File System).
+>Les mises en oeuvre de DataStore de `S3DataStore`, `CachingFileDataStore` et `AzureDataStore` prennent en charge la mise en cache du système de fichiers local. L’implémentation de `CachingFileDataStore` est utile lorsque DataStore est sur NFS (système de fichiers réseau).
 
 
-Lors de la mise à niveau à partir d’une ancienne implémentation de mise en cache (pré-oak 1.6), il existe une différence dans la structure du répertoire de cache du système de fichiers local. Dans l’ancienne structure de cache, les fichiers téléchargés et chargés étaient placés directement dans le chemin du cache. La nouvelle structure sépare les téléchargements et téléchargements et les stocke dans deux répertoires nommés `upload` et `download` sous le chemin du cache. Le processus de mise à niveau doit être transparent et tout téléchargement en attente doit être planifié. De plus, les fichiers précédemment téléchargés dans le cache seront placés dans le cache lors de l’initialisation.
+Lors de la mise à niveau à partir d’une ancienne implémentation de mise en cache (pré-oak 1.6), il existe une différence dans la structure du répertoire de cache du système de fichiers local. Dans l’ancienne structure de cache, les fichiers téléchargés et chargés étaient placés directement dans le chemin du cache. La nouvelle structure sépare les téléchargements et les téléchargements et les stocke dans deux répertoires nommés `upload` et `download` sous le chemin du cache. Le processus de mise à niveau doit être transparent et tout téléchargement en attente doit être planifié. De plus, les fichiers précédemment téléchargés dans le cache seront placés dans le cache lors de l’initialisation.
 
-Vous pouvez également mettre à niveau le cache hors ligne en utilisant la commande `datastorecacheupgrade` de oak-run. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md ) du module oak-run.
+Vous pouvez également mettre à niveau le cache hors ligne à l’aide de la commande `datastorecacheupgrade` de oak-run. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md ) du module oak-run.
 
-Le cache a une taille limite et il peut être configuré à l’aide du paramètre cacheSize.
+Le cache est limité en taille et il peut être configuré à l’aide du paramètre cacheSize .
 
 **Téléchargements**
 
@@ -290,22 +289,22 @@ Le cache local sera vérifié pour l’enregistrement du fichier/blob demandé a
 
 Le cache prend en charge les téléchargements asynchrones vers le DataStore. Les fichiers sont placés localement, dans le cache (sur le système de fichiers) et une tâche asynchrone commence à les télécharger. Le nombre de téléchargements asynchrones est limité par la taille du cache intermédiaire. La taille du cache intermédiaire est configurée à l’aide du paramètre `stagingSplitPercentage`. Ce paramètre définit le pourcentage de taille de cache à utiliser pour le cache intermédiaire. En outre, le pourcentage de cache disponible pour les téléchargements est calculé comme suit : **(100 - `stagingSplitPercentage`) *`cacheSize`**.
 
-Les téléchargements asynchrones sont multithreads et le nombre de threads est configuré à l’aide du paramètre `uploadThreads`.
+Les téléchargements asynchrones sont multithreads et le nombre de threads est configuré à l’aide du paramètre `uploadThreads` .
 
-Les fichiers sont déplacés vers le cache principal de téléchargement une fois les téléchargements effectués. Lorsque la taille du cache intermédiaire dépasse sa limite, les fichiers sont téléchargés de manière synchrone vers le DataStore jusqu’à ce que les téléchargements asynchrones précédents soient terminés et que de l’espace soit à nouveau disponible dans le cache intermédiaire. Les fichiers téléchargés sont supprimés de la zone d’évaluation par un travail périodique dont l’intervalle est configuré par le paramètre `stagingPurgeInterval`.
+Les fichiers sont déplacés vers le cache principal de téléchargement une fois les téléchargements effectués. Lorsque la taille du cache intermédiaire dépasse sa limite, les fichiers sont téléchargés de manière synchrone vers le DataStore jusqu’à ce que les téléchargements asynchrones précédents soient terminés et que de l’espace soit à nouveau disponible dans le cache intermédiaire. Les fichiers chargés sont supprimés de la zone d’évaluation par une tâche périodique dont l’intervalle est configuré par le paramètre `stagingPurgeInterval` .
 
-Les téléchargements ayant échoué (en raison d’une interruption du réseau, par exemple) sont placés dans une file d’attente pour effectuer régulièrement de nouvelles tentatives. L&#39;intervalle de nouvelle tentative est configuré à l&#39;aide de `stagingRetryInterval parameter`.
+Les téléchargements ayant échoué (en raison d’une interruption du réseau, par exemple) sont placés dans une file d’attente pour effectuer régulièrement de nouvelles tentatives. L’intervalle de reprise est configuré à l’aide de `stagingRetryInterval parameter`.
 
 #### Configuration d’une réplication sans binaire avec Amazon S3 {#configuring-binaryless-replication-with-amazon-s}
 
 Pour configurer une réplication sans binaire avec S3, les étapes suivantes sont nécessaires :
 
 1. Installez les instances de création et de publication, puis vérifiez qu’elles démarrent correctement.
-1. Accédez aux paramètres de l&#39;agent de réplication en ouvrant une page sur *https://localhost:4502/etc/replication/agents.author/publish.html*.
+1. Accédez aux paramètres de l’agent de réplication en ouvrant une page sur *https://localhost:4502/etc/replication/agents.author/publish.html*.
 1. Appuyez sur le bouton **Modifier** dans la section **Paramètres**.
 1. Modifiez l’option **Serialization type** en **Binary less**. 
 
-1. Ajoutez le paramètre &quot; `binaryless`= `true`&quot; dans l&#39;URI de transport. Après la modification, l’URI doit ressembler à ce qui suit :
+1. Ajoutez le paramètre &quot; `binaryless`= `true`&quot; dans l’URI de transport. Après la modification, l’URI doit ressembler à ce qui suit :
 
    *https://localhost:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
 
@@ -340,9 +339,9 @@ Pour configurer une réplication sans binaire avec S3, les étapes suivantes son
 
 1. Créez d’abord le fichier de configuration d’entrepôt de données sur chaque instance devant partager l’entrepôt de données :
 
-   * Si vous utilisez un `FileDataStore`, créez un fichier nommé `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` et placez-le dans le dossier `<aem-install>/crx-quickstart/install`.
+   * Si vous utilisez une balise `FileDataStore`, créez un fichier nommé `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` et placez-le dans le dossier `<aem-install>/crx-quickstart/install`.
 
-   * Si vous utilisez S3 comme magasin de données, créez un fichier nommé o `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` dans le dossier `<aem-install>/crx-quickstart/install` comme indiqué ci-dessus.
+   * Si vous utilisez S3 comme entrepôt de données, créez un fichier nommé `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` dans le dossier `<aem-install>/crx-quickstart/install` comme indiqué ci-dessus.
 
 1. Modifiez les fichiers de donfiguration d’entrepôt de données sur chaque instance pour qu’ils pointent vers le même entrepôt de données. Pour en savoir plus, voir [cet article](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Si l’instance a été clonée à partir d’un serveur existant, vous devez supprimer le `clusterId` de la nouvelle instance à l’aide du dernier outil oak-run lorsque le référentiel est hors ligne. La commande que vous devez exécuter est la suivante :
@@ -353,7 +352,7 @@ Pour configurer une réplication sans binaire avec S3, les étapes suivantes son
 
    >[!NOTE]
    >
-   >Si un magasin de nœuds de segment est configuré, le chemin du référentiel doit être spécifié. Par défaut, le chemin d’accès est `<aem-install-folder>/crx-quickstart/repository/segmentstore.` Si un magasin de noeuds de Document est configuré, vous pouvez utiliser un URI de chaîne de connexion [Mongo](https://docs.mongodb.org/manual/reference/connection-string/).
+   >Si un magasin de nœuds de segment est configuré, le chemin du référentiel doit être spécifié. Par défaut, le chemin d’accès est `<aem-install-folder>/crx-quickstart/repository/segmentstore.` Si un magasin de noeuds de document est configuré, vous pouvez utiliser un [URI de chaîne de connexion Mongo](https://docs.mongodb.org/manual/reference/connection-string/).
 
    >[!NOTE]
    >
@@ -378,17 +377,17 @@ Pour configurer une réplication sans binaire avec S3, les étapes suivantes son
    Les fichiers sont stockés différemment, selon l’entrepôt de données :
 
    * Pour `FileDataStore`, les fichiers sont créés sous le chemin racine du dossier de l’entrepôt de données.
-   * Pour `S3DataStore`, les fichiers sont créés dans le compartiment S3 configuré sous le dossier `META`.
+   * Pour la balise `S3DataStore` , les fichiers sont créés dans le compartiment S3 configuré sous le dossier `META` .
 
 ## Entrepôt de données Azure {#azure-data-store}
 
 AEM peut être configuré pour stocker des donnés dans le service de stockage Azure de Microsoft. Il utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` pour la configuration.
 
-Pour activer la fonctionnalité d’entrepôt de données Azure, un Feature Pack contenant le connecteur Azure doit être téléchargé et installé. Accédez au [Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) et téléchargez la dernière version des versions 1.6.x de Feature Pack (par exemple, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Pour activer la fonctionnalité d’entrepôt de données Azure, un Feature Pack contenant le connecteur Azure doit être téléchargé et installé. Accédez au [référentiel d’Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) et téléchargez la dernière version des versions 1.6.x du Feature Pack (par exemple, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM  avec TarMK, les fichiers binaires sont stockés par défaut dans FileDataStore. Pour utiliser TarMK avec Azure DataStore, vous devez début AEM en utilisant le mode d&#39;exécution `crx3tar-nofds`, par exemple :
+>Lorsque vous utilisez AEM  avec TarMK, les fichiers binaires sont stockés par défaut dans FileDataStore. Pour utiliser TarMK avec Azure DataStore, vous devez commencer AEM en utilisant le mode d’exécution `crx3tar-nofds`, par exemple :
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -399,7 +398,7 @@ Une fois téléchargé, vous pouvez installer et configurer le connecteur Azure 
 1. Extrayez le contenu du fichier zip du Feature Pack dans un dossier temporaire.
 
 1. Accédez au dossier temporaire et copiez le contenu de `jcr_root/libs/system/install` dans le dossier `<aem-install>crx-quickstart/install`.
-1. Si AEM est déjà configuré pour fonctionner avec l&#39;enregistrement Tar ou MongoDB, supprimez les fichiers de configuration existants du dossier `/crx-quickstart/install` avant de continuer. Les fichiers à supprimer sont les suivants : 
+1. Si AEM est déjà configuré pour fonctionner avec le stockage Tar ou MongoDB, supprimez tous les fichiers de configuration existants du dossier `/crx-quickstart/install` avant de continuer. Les fichiers à supprimer sont les suivants : 
 
    Pour MongoMK :
 
@@ -415,28 +414,28 @@ Une fois téléchargé, vous pouvez installer et configurer le connecteur Azure 
 
 Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 
-* azureSas=&quot;&quot;: Dans la version 1.6.3 du connecteur, la prise en charge du service SAS (Azure Shared Access Signature) a été ajoutée. **Si les informations d’identification SAS et de stockage figurent dans le fichier de configuration, SAS a la priorité.** Pour plus d’informations sur SAS, consultez la [documentation officielle](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-dotnet-shared-access-signature-part-1 ). Assurez-vous que le caractère &quot;=&quot; est placé en séquence d’échappement comme &quot;\=&quot;.
+* azureSas=&quot;&quot;: Dans la version 1.6.3 du connecteur, la prise en charge Azure Shared Access Signature (SAS) a été ajoutée. **Si les informations d’identification SAS et de stockage figurent dans le fichier de configuration, SAS a la priorité.** Pour plus d’informations sur SAS, consultez la [documentation officielle](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-dotnet-shared-access-signature-part-1 ). Assurez-vous que le caractère &#39;=&#39; est placé dans une séquence d’échappement telle que &#39;\=&#39;.
 
-* azureBlobEndpoint=&quot;&quot; : point de terminaison Blob Azure. Par exemple, https://&lt;enregistrement-account>.blob.core.windows.net.
+* azureBlobEndpoint=&quot;&quot; : point de terminaison Blob Azure. Par exemple, https://&lt;compte-stockage>.blob.core.windows.net.
 * accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft Azure, reportez-vous à la [documentation officielle](https://azure.microsoft.com/fr-fr/documentation/articles/storage-create-storage-account). 
 
-* secretKey=&quot;&quot; : clé d’accès au stockage. Assurez-vous que le caractère &quot;=&quot; est placé en séquence d’échappement comme &quot;\=&quot;.
+* secretKey=&quot;&quot; : clé d’accès au stockage. Assurez-vous que le caractère &#39;=&#39; est placé dans une séquence d’échappement telle que &#39;\=&#39;.
 * container=&quot;&quot; : nom du conteneur de stockage blob Microsoft Azure. Le conteneur est le regroupement d’un ensemble de blobs. Pour plus de détails, consultez[ la documentation officielle](https://msdn.microsoft.com/fr-fr/library/dd135715.aspx ). 
 * maxConnections=&quot;&quot; : nombre de demandes simultanées par opération. La valeur par défaut est 1.
-* maxErrorRetry=&quot;&quot;: Nombre de Reprises par requête. La valeur par défaut est 3.
-* socketTimeout=&quot;&quot;: Intervalle d’expiration, en millisecondes, utilisé pour la demande. la valeur par défaut est de 5 minutes.
+* maxErrorRetry=&quot;&quot;: Nombre de tentatives par requête. La valeur par défaut est 3.
+* socketTimeout=&quot;&quot;: Délai d’expiration, en millisecondes, utilisé pour la requête. la valeur par défaut est de 5 minutes.
 
 En plus des paramètres ci-dessus, les paramètres suivants peuvent également être configurés :
 
-* chemin : Chemin d’accès du magasin de données. La valeur par défaut est `<aem-install>/repository/datastore.`
-* RecordLength: Taille minimale d’un objet qui doit être stocké dans le magasin de données. La valeur par défaut est de 16 Ko.
-* maxCachedBinarySize : Les binaires dont la taille est inférieure ou égale à cette taille seront stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est 17408 (17 Ko).
+* path: Chemin d’accès de l’entrepôt de données. La valeur par défaut est `<aem-install>/repository/datastore.`
+* RecordLength: Taille minimale d’un objet qui doit être stocké dans l’entrepôt de données. La valeur par défaut est de 16 Ko.
+* maxCachedBinarySize : Les fichiers binaires dont la taille est inférieure ou égale à cette taille seront stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est 1 7408 (17 Ko).
 * cacheSize : Taille du cache. La valeur est spécifiée en octets. La valeur par défaut est de 64 Go.
-* secret : Uniquement à utiliser en cas d&#39;utilisation de la réplication sans binaire pour la configuration de la banque de données partagée.
-* stagingSplitPourcentage : Pourcentage de la taille du cache configuré pour être utilisé pour le test des téléchargements asynchrones. La valeur par défaut est 10.
-* uploadThreads : Nombre de threads de transfert utilisés pour les téléchargements asynchrones. La valeur par défaut est 10.
-* stagingPurgeInterval : Intervalle en secondes de purge des téléchargements terminés du cache d’évaluation. La valeur par défaut est de 300 secondes (5 minutes).
-* stagingRetryInterval : Intervalle de nouvelle tentative en secondes pour les téléchargements ayant échoué. La valeur par défaut est de 600 secondes (10 minutes).
+* secret : À utiliser uniquement si vous utilisez la réplication sans fichier binaire pour la configuration de la banque de données partagée.
+* stagingSplitPercentage: Pourcentage de la taille du cache configuré pour être utilisé pour l’évaluation des téléchargements asynchrones. La valeur par défaut est 10.
+* uploadThreads : Nombre de threads de chargement utilisés pour les chargements asynchrones. La valeur par défaut est 10.
+* stagingPurgeInterval : Intervalle en secondes pour la purge des chargements terminés du cache intermédiaire. La valeur par défaut est de 300 secondes (5 minutes).
+* stagingRetryInterval : Intervalle de reprise en secondes pour les chargements ayant échoué. La valeur par défaut est de 600 secondes (10 minutes).
 
 >[!NOTE]
 >
@@ -451,9 +450,9 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 
 Le processus de nettoyage de la mémoire d’entrepôt de données est utilisé pour supprimer tous les fichiers inutilisés dans l’entrepôt de données en vue de libérer de l’espace disque.
 
-Vous pouvez exécuter la collecte des déchets de la banque de données en procédant comme suit :
+Vous pouvez exécuter le nettoyage de la mémoire d’entrepôt de données en procédant comme suit :
 
-1. Accédez à la console JMX située à l’adresse *https://&lt;adresse du serveur:port>/system/console/jmx*.
+1. Accédez à la console JMX située à l’adresse *https://&lt;serveraddress:port>/system/console/jmx*
 1. Recherchant **RepositoryManagement.** Une fois que vous aurez trouvé le gestionnaire de référentiel MBean, cliquez dessus pour afficher les options disponibles.
 1. Accédez à la fin de la page, puis cliquez sur le lien **startDataStoreGC(boolean markOnly)**.
 1. Dans la boîte de dialogue suivante, saisissez `false`   pour le paramètre `markOnly`, puis cliquez sur **Invoke** :
@@ -468,12 +467,12 @@ Vous pouvez exécuter la collecte des déchets de la banque de données en proc�
 
 >[!NOTE]
 >
->Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Cela se produit car les ID d’objet blob supprimés dans une précédente collecte de déchets sont de nouveau référencés de manière incorrecte par d’autres noeuds de la grappe ou partagés qui ne disposent pas d’informations sur les suppressions d’ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
+>Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Cela se produit car les ID d’objets blob supprimés dans un nettoyage précédent sont à nouveau référencés de manière incorrecte par d’autres noeuds de cluster ou partagés qui ne disposent pas d’informations sur les suppressions d’ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
 
 Avec des versions plus récentes d’AEM, le nettoyage de la mémoire d’entrepôt de données peut également être effectué sur des entrepôts de données partagés par plusieurs référentiels. Pour pouvoir exécuter le nettoyage de la mémoire d’entrepôt de données sur un entrepôt de données partagé, procédez comme suit : 
 
 1. Vérifiez que les tâches de maintenance configurées pour le nettoyage de la mémoire d’entrepôt de données sont désactivées sur toutes les instances de référentiel partageant l’entrepôt de données.
-1. Exécutez les étapes mentionnées dans [Collecte de déchets binaire](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) individuellement sur **toutes** les instances de référentiel partageant le magasin de données. Toutefois, veillez à entrer `true` pour le paramètre `markOnly` avant de cliquer sur le bouton Appeler :
+1. Exécutez les étapes mentionnées dans [Nettoyage de la mémoire binaire](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) individuellement sur **toutes** les instances de référentiel partageant l’entrepôt de données. Veillez toutefois à saisir `true` pour le paramètre `markOnly` avant de cliquer sur le bouton Appeler :
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -481,7 +480,5 @@ Avec des versions plus récentes d’AEM, le nettoyage de la mémoire d’entrep
 
    1. Accédez à la console JMX, puis sélectionnez le gestionnaire de référentiel Mbean.
    1. Cliquez sur le lien **Click startDataStoreGC(boolean markOnly)**.
-   1. Dans la boîte de dialogue suivante, saisissez à nouveau `false` pour le paramètre `markOnly`.
-
+   1. Dans la boîte de dialogue suivante, saisissez à nouveau `false` pour le paramètre `markOnly` .
    Cela permettra d’assembler tous les fichiers trouvés à l’aide de la phase de repérage utilisée précédemment et de supprimer ensuite le reste inutilisé de l’entrepôt de données.
-
