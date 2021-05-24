@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
-feature: Tagging
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Balisage
+exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 77%
 
 ---
-
 
 # Création du balisage dans une application AEM{#building-tagging-into-an-aem-application}
 
@@ -31,12 +30,12 @@ qui interagit avec le
 
 Pour plus d’informations sur le balisage, voir :
 
-* [Administration des ](/help/sites-administering/tags.md) balises pour en savoir plus sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
+* [Administration ](/help/sites-administering/tags.md) des balises pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
 * [Utilisation des balises](/help/sites-authoring/tags.md) pour plus d’informations sur le balisage du contenu.
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}
 
-L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR . TagManager garantit que les balises entrées en tant que valeurs sur la propriété de tableau de chaînes `cq:tags` ne sont pas dupliquées. Il supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le module [com.day.cq.tagging](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
+L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR . TagManager s’assure que les balises saisies en tant que valeurs dans la propriété de tableau de chaînes `cq:tags` ne sont pas dupliquées. Il supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le module [com.day.cq.tagging](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
 
 * JcrTagManagerFactory - renvoie une implémentation JCR d’un `TagManager`. C’est l’implémentation de référence de l’API de balisage.
 * `TagManager` – permet de résoudre et de créer des balises par chemins et noms.
@@ -75,7 +74,7 @@ Pour l’implémentation basée sur JCR, qui mappe les `Tags` à des `Nodes` JCR
 Tag tag = resource.adaptTo(Tag.class);
 ```
 
-Bien qu’une balise ne puisse être convertie que *à partir d’une ressource (et non d’un noeud), une balise peut être convertie *en *à la fois un noeud et une ressource :
+Alors qu’une balise ne peut être convertie qu’à partir d’une ressource (et non d’un noeud), une balise peut être convertie *en *un noeud et une ressource :
 
 ```java
 Node node = tag.adaptTo(Node.class);
@@ -135,7 +134,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Tag Garbage Collector {#the-tag-garbage-collector}
 
-Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et inutilisées sont des balises inférieures à `/content/cq:tags` qui possèdent une propriété `cq:movedTo` et ne sont pas utilisées sur un noeud de contenu ; elles ont un nombre égal à zéro. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par ex. via la boîte de dialogue des propriétés de la page.
+Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et inutilisées sont des balises sous `/content/cq:tags` qui possèdent une propriété `cq:movedTo` et ne sont pas utilisées sur un noeud de contenu ; elles ont un nombre nul. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par ex. via la boîte de dialogue des propriétés de la page.
 
 Tag Garbage Collector s’exécute par défaut une fois par jour. Cette fréquence peut être configurée sur : 
 
@@ -147,15 +146,15 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 La recherche de balises et l’obtention de la liste des balises fonctionnent comme suit :
 
-* La recherche de TagID recherche les balises pour lesquelles la propriété `cq:movedTo` est définie sur TagID et suit l&#39;ensemble des balises `cq:movedTo` TagID.
+* La recherche de TagID recherche les balises dont la propriété `cq:movedTo` est définie sur TagID et suit les `cq:movedTo` ID de balise.
 
-* La recherche du titre de la balise recherche uniquement les balises qui ne possèdent pas de propriété `cq:movedTo`.
+* La recherche du titre de la balise recherche uniquement les balises qui n’ont pas de propriété `cq:movedTo`.
 
 ## Balises dans différentes langues {#tags-in-different-languages}
 
 Comme décrit dans la documentation relative à l’administration des balises, dans la section [Gestion des balises dans différentes langues](/help/sites-administering/tags.md#managing-tags-in-different-languages), une balise `title`peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction en français. `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser &quot;_&quot; au lieu de &quot;-&quot;, par exemple :  `de_ch`.
 
-Lorsque la balise **Animaux** est ajoutée à la page **Produits**, la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du noeud /content/geometrixx/fr/products/jcr:content. La traduction est référencée à partir du nœud de balise.
+Lorsque la balise **Animals** est ajoutée à la page **Products**, la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du noeud /content/geometrixx/en/products/jcr:content. La traduction est référencée à partir du nœud de balise.
 
 L’API côté serveur dispose de méthodes liées à `title` localisées :
 
@@ -200,4 +199,3 @@ La nouvelle langue (finnois) est désormais disponible dans la boîte de dialogu
 >[!NOTE]
 >
 >La nouvelle langue doit faire partie de celles reconnues par AEM, c’est-à-dire qu’elle doit être disponible sous `/libs/wcm/core/resources/languages`.
-
