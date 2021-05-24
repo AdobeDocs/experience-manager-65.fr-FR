@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 96%
 
 ---
-
 
 # Aperçu des pages à l’aide des données ContextHub {#previewing-pages-using-contexthub-data}
 
@@ -70,4 +69,3 @@ La fenêtre contextuelle d’un module peut contenir des éléments de formulair
 Les fenêtres contextuelles peuvent inclure une icône sur laquelle vous cliquez ou appuyez afin que le contenu de la fenêtre contextuelle englobe l’intégralité de la fenêtre du navigateur.
 
 ![](do-not-localize/chlimage_1-18.png)
-
