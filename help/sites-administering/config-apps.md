@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
-translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+exl-id: f7aa5ac0-3d03-4c04-b9c2-1bda427b0588
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 60%
 
 ---
-
 
 # Configuration d’Applications AEM{#configuring-for-aem-apps}
 
@@ -29,10 +28,10 @@ Pour configurer le service de filtrage de référent :
 * Ouvrez la console Apache Felix (**Configurations**) à l’adresse :
 * https://&lt;serveur>:&lt;numéro_port>/system/console/configMgr
 * Connectez-vous en tant qu’administrateur.
-* Dans le menu **Configurations**, sélectionnez : *Filtre de Parrain Apache Sling*
-* Cochez le champ Autoriser les champs vides pour autoriser les en-têtes de parrain vides/manquants.
+* Dans le menu **Configurations**, sélectionnez : *Filtre de référent Apache Sling*
+* Cochez le champ Autoriser vide pour autoriser les en-têtes de référent vides/manquants.
 * Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-Pour plus d&#39;informations, consultez les sections [Paramètres de configuration OSGI](/help/sites-deploying/osgi-configuration-settings.md) et [Liste de contrôle de sécurité - Problèmes liés à la falsification de requête sur plusieurs sites](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery).
+Pour plus d’informations, voir [Paramètres de configuration OSGI](/help/sites-deploying/osgi-configuration-settings.md) et [Liste de contrôle de sécurité - Problèmes avec falsification de requête intersites](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) .
