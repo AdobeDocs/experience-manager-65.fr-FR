@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 92%
 
 ---
-
 
 # Développement et outil de comparaison des pages{#developing-and-page-diff}
 
@@ -41,7 +40,7 @@ Une tâche de nettoyage s’exécute automatiquement pour nettoyer ce contenu te
 
 ## Autorisations {#permissions}
 
-Auparavant, dans l’interface utilisateur classique, une attention particulière devait être accordée au développement afin de faciliter la modification AEM (par exemple en utilisant `cq:text` tag lib ou en intégrant le service `DiffService` OSGi dans les composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
+Auparavant, dans l’interface utilisateur classique, une attention particulière devait être accordée au développement afin de faciliter la AEM (par exemple, en utilisant la bibliothèque de balises `cq:text` ou en intégrant personnalisé le service OSGi `DiffService` dans les composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
 
 Cependant, il subsiste un certain nombre de restrictions qui doivent être prises en compte par le développeur.
 
