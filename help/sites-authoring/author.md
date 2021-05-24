@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 18dcbf04bd88f63335ef36e2ec7ea81835e11b51
+exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 88%
 
 ---
-
 
 # Création{#authoring}
 
@@ -69,7 +68,7 @@ Certaines tâches administratives peuvent aussi vous aider à gérer votre conte
 
 #### Environnement de publication {#publish-environment}
 
-Une fois prêt, le contenu du site AEM est publié sur l&#39;**environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
+Une fois prêt, le contenu du site AEM est publié dans l’ **environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
 Dans le cas d’un site web ordinaire, l’environnement de publication est situé à l’intérieur de la zone DMZ ; en d’autres termes, il est disponible sur Internet, mais il ne bénéficie plus de la protection absolue de votre réseau interne.
 
@@ -88,7 +87,7 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
    >
    >
 * **Répliquer/Réplication**
-   >  Il s&#39;agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, le contenu des pages, les fichiers, le code, les commentaires des utilisateurs) d&#39;un environnement à l&#39;autre ; c’est-à-dire lors de la publication ou de la réplication inversée des commentaires d’utilisateur.
+   >  Il s’agit des termes techniques utilisés pour indiquer le mouvement des données (contenu de page, fichiers, code, commentaires utilisateur, etc.) d’un environnement à un autre. c’est-à-dire lors de la publication ou de la réplication inverse des commentaires utilisateur.
 >
 
 
