@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 8d3374ac-51dd-4ff5-84c9-495c937ade12
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 89%
 
 ---
 
-
 # Lots OSGi{#osgi-bundles}
 
 ## Utilisez le contrôle de version sémantique.{#use-semantic-versioning}
 
-Les meilleures pratiques en matière de numérotation des versions sémantiques sont convenues à l’adresse [https://semver.org/](https://semver.org/).
+Les bonnes pratiques pour la numérotation des versions sémantiques sont disponibles à l’adresse [https://semver.org/](https://semver.org/).
 
 ## N’incorporez pas d’autres classes et fichiers JAR que ceux strictement nécessaires dans les lots OSGi.{#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
@@ -44,4 +43,4 @@ Cela permet aux consommateurs de votre API d’évoluer avec vous. Lorsque vous 
 
 ## Incluez les informations de métatype lorsqu’elles sont exposées.{#include-metatype-information-where-exposed}
 
-En spécifiant des informations de métatype pertinentes, vos services et composants sont plus faciles à comprendre dans la console Felix. Vous trouverez une liste des annotations et des attributs SCR à l&#39;adresse suivante : [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+En spécifiant des informations de métatype pertinentes, vos services et composants sont plus faciles à comprendre dans la console Felix. Vous trouverez une liste des annotations et attributs SCR à l’adresse : [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
