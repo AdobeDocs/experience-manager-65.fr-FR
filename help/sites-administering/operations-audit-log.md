@@ -10,8 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
-feature: Operations
-translation-type: tm+mt
+feature: Opérations
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '616'
@@ -41,9 +40,9 @@ Vous pouvez configurer chacune de ces options en créant des règles dans la con
 
 Suivez ces étapes pour configurer la purge du journal d’audit :
 
-1. Accédez à l&#39;administrateur de la console Web en pointant votre navigateur vers `http://localhost:4502/system/console/configMgr/`
+1. Accédez à l’administrateur de la console web en pointant votre navigateur vers `http://localhost:4502/system/console/configMgr/`
 
-1. Recherchez un élément nommé **Règle de purge du journal d&#39;audit des pages** et cliquez dessus.
+1. Recherchez un élément appelé **Règle de purge du journal d’audit des pages** et cliquez dessus.
 
    ![chlimage_1-365](assets/chlimage_1-365.png)
 
@@ -56,22 +55,22 @@ Suivez ces étapes pour configurer la purge du journal d’audit :
 
    >[!NOTE]
    >
-   >Le chemin d’accès au contenu s’applique uniquement aux enfants du noeud `/var/audit/com.day.cq.wcm.core.page` dans le référentiel.
+   >Le chemin d’accès au contenu s’applique uniquement aux enfants du noeud `/var/audit/com.day.cq.wcm.core.page` du référentiel.
 
 1. Enregistrez la règle.
 1. La règle que vous venez de créer doit être exposée dans le tableau de bord des opérations afin d’être exécutée. Pour ce faire, accédez à **Outils - Opérations - Maintenance** dans l’écran de bienvenue d’AEM.
 
 1. Appuyez sur la carte **Période de maintenance hebdomadaire**.
 
-1. Vous trouverez la tâche de maintenance déjà présente sous la carte **AuditLog Maintenance Tâche**.
+1. La tâche de maintenance est déjà présente sous la carte **Tâche de maintenance du journal d’audit**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
 1. Vous pouvez inspecter la date de la prochaine exécution, configurer la prochaine exécution ou l’exécuter manuellement en appuyant sur le bouton de lecture.
 
-Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâche de purge du journal d&#39;audit ne puisse se terminer, la tâche s&#39;arrête automatiquement. Elle reprend lorsque commence la période de maintenance suivante.
+Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâche Purge du journal d’audit ne puisse se terminer, la tâche s’arrête automatiquement. Elle reprend lorsque commence la période de maintenance suivante.
 
-**Avec AEM 6.5**, vous pouvez arrêter manuellement une Tâche de purge du journal d&#39;audit en cours d&#39;exécution en cliquant sur l&#39; **** icône Stopicon. La tâche reprendra sans risque à la prochaine exécution.
+**Avec AEM 6.5**, vous pouvez arrêter manuellement une tâche de purge du journal d’audit en cours d’exécution en cliquant sur l’ **** icône Arrêter. La tâche reprendra sans risque à la prochaine exécution.
 
 >[!NOTE]
 >
@@ -79,7 +78,7 @@ Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâ
 
 ## Configuration de la purge du journal d’audit de la gestion des actifs numériques {#configure-dam-audit-log-purging}
 
-1. Accédez à System Console à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Accédez à la console système à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Recherchez la règle **Purge du journal d’audit de la gestion des actifs numériques** et cliquez sur le résultat.
 1. Dans la fenêtre suivante, configurez la règle. Les options disponibles sont les suivantes :
 
@@ -92,7 +91,7 @@ Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâ
 
 ## Configuration de la purge du journal d’audit de réplication  {#configure-replication-audit-log-purging}
 
-1. Accédez à System Console à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Accédez à la console système à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Recherchez le **planificateur de purge du journal d’audit de réplication** et cliquez sur le résultat.
 1. Dans la fenêtre suivante, configurez la règle. Les options disponibles sont les suivantes :
 
