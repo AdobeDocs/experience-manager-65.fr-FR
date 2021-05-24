@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 00806e6e-3578-4caa-bafa-064f200a871f
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: b55ff9d5-8139-4ecf-ba09-5cf88207c5c4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 87%
 
 ---
-
 
 # Configuration du mot de passe d’administrateur sur l’installation{#configure-the-admin-password-on-installation}
 
@@ -52,7 +51,7 @@ Lors de l’exécution de l’instance à partir de la ligne de commande, vous a
 
 ## À l’aide de l’indicateur -nointeractive  {#using-the-nointeractive-flag}
 
-Vous pouvez également choisir de spécifier le mot de passe dans un fichier de propriétés. Pour ce faire, utilisez l&#39;indicateur `-nointeractive` associé à la propriété système `-Dadmin.password.file`.
+Vous pouvez également choisir de spécifier le mot de passe dans un fichier de propriétés. Pour ce faire, utilisez l’indicateur `-nointeractive` associé à la propriété système `-Dadmin.password.file` .
 
 Voici un exemple :
 
@@ -68,5 +67,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Si vous utilisez simplement le paramètre `-nointeractive` sans la propriété système `-Dadmin.password.file`, AEM utilisera le mot de passe d&#39;administrateur par défaut sans vous demander de le modifier, répliquant essentiellement le comportement des versions antérieures. Ce mode non interactif peut être utilisé pour les installations automatisées via l’option de ligne de commande dans un script d’installation.
-
+>Si vous utilisez simplement le paramètre `-nointeractive` sans la propriété système `-Dadmin.password.file`, AEM utilisera le mot de passe administrateur par défaut sans vous demander de le modifier, répliquant essentiellement le comportement des versions antérieures. Ce mode non interactif peut être utilisé pour les installations automatisées via l’option de ligne de commande dans un script d’installation.
