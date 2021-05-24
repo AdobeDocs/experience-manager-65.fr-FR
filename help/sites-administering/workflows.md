@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
-translation-type: tm+mt
-source-git-commit: 5a99daa208d1d109d2736525fdca3accdcfb4dd1
+exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 83%
 
 ---
-
 
 # Administration des workflows{#administering-workflows}
 
@@ -31,7 +30,7 @@ Les workflows vous permettent d’automatiser les activités d’Adobe Experienc
 
 Les workflows d’entreprise que votre organisation a établis peuvent être représentés sous forme de workflows. Par exemple, le workflow de publication de contenu de site web implique généralement des étapes telles que l’approbation et la validation par différents intervenants. Ces processus peuvent être mis en œuvre sous la forme de workflows AEM et être appliqués aux pages de contenu et aux ressources.
 
-* [Démarrage de workflows](/help/sites-administering/workflows-starting.md)
+* [Démarrage d’un workflow](/help/sites-administering/workflows-starting.md)
 * [Administration d’instances de workflow](/help/sites-administering/workflows-administering.md)
 * [Gestion de l’accès aux workflows](/help/sites-administering/workflows-managing.md)
 
@@ -39,7 +38,7 @@ Les workflows d’entreprise que votre organisation a établis peuvent être rep
 >
 >Pour plus d’informations, voir :
 >
->* Application et participation aux workflows : [Utilisation de Workflows](/help/sites-authoring/workflows.md).
+>* Application et participation aux workflows : [Utilisation des workflows](/help/sites-authoring/workflows.md).
 >* Création de modèles de workflows et extension de la fonctionnalité de workflow : [Développement et extension des workflows](/help/sites-developing/workflows.md).
 >* Amélioration des performances des workflows qui utilisent des ressources de serveur significatives : [Traitement de workflows simultanés](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 
@@ -60,9 +59,9 @@ Lorsqu’un modèle de workflow est démarré (exécuté), une instance de workf
 
 >[!CAUTION]
 >
->Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Voir [Workflows en développement](/help/sites-developing/workflows.md#model) pour plus de détails.
+>Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Voir [Développement de processus](/help/sites-developing/workflows.md#model) pour plus de détails.
 
-Les instances de flux de travail progressent tout au long du cycle de vie suivant :
+Les instances de workflow passent par le cycle de vie suivant :
 
 1. Le modèle de workflow est lancé et une instance de workflow est créée et exécutée.
 
@@ -97,22 +96,21 @@ Les workflows peuvent présenter l’un des statuts suivants :
 * **EN COURS** : l’instance de workflow est en cours d’exécution.
 * **TERMINÉ** : l’instance de workflow s’est terminée correctement.
 
-* **SUSPENDU** : Marque le processus comme suspendu. Toutefois, consultez la note de prudence ci-dessous sur un problème de connaissance de cet état.
+* **SUSPENDU** : Marque le workflow comme suspendu. Toutefois, reportez-vous à la remarque Attention ci-dessous sur un problème de connaissance avec cet état.
 * **ABANDON** : l’instance de workflow a été arrêtée.
 * **PÉRIMÉ** : la progression de l’instance de workflow nécessite l’exécution d’une tâche en arrière-plan, mais la tâche est introuvable dans le système. Cette situation peut se produire lorsqu’une erreur survient pendant l’exécution du workflow.
 
 >[!NOTE]
 >
->Lorsque l’exécution d’une étape de processus génère des erreurs, l’étape s’affiche dans la boîte de réception de l’administrateur et l’état du processus est **EN COURS**.
+>Lorsque l’exécution d’une étape de processus génère des erreurs, l’étape apparaît dans la boîte de réception de l’administrateur et l’état du workflow est **EN COURS**.
 
 En fonction du statut actuel, vous pouvez effectuer des actions sur les instances de workflows en cours d’exécution lorsque vous devez intervenir dans la progression normale d’une instance de workflow :
 
-* **Suspendre** : La suspension change l&#39;état du workflow en Suspendu. Voir Attention ci-dessous :
+* **Suspendre** : L’état Suspendu du workflow passe à Suspendu. Voir Attention ci-dessous :
 
 >[!CAUTION]
 >
->Le fait de marquer un état de flux de travail comme &quot;Suspendre&quot; présente un problème connu. Dans cet état, il est possible d&#39;agir sur les éléments de workflow suspendus dans une boîte de réception.
+>Le marquage de l’état d’un workflow sur &quot;Suspendre&quot; présente un problème connu. Dans cet état, il est possible d’agir sur les éléments de workflow suspendus dans une boîte de réception.
 
-* **Reprendre** : Redémarre un flux de travaux suspendu au même point d’exécution où il a été suspendu, en utilisant la même configuration.
-* **Arrêter** : Met fin à l’exécution du flux de travail et définit l’état sur  **ABORTED**. Une instance de workflow abandonnée ne peut pas être redémarrée.
-
+* **Reprendre** : Redémarre un workflow suspendu au même endroit d’exécution que celui où il a été suspendu, avec la même configuration.
+* **Arrêter** : Met fin à l’exécution du workflow et définit l’état sur  **ABANDON**. Une instance de workflow abandonnée ne peut pas être redémarrée.
