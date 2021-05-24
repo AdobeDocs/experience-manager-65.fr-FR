@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
-translation-type: tm+mt
-source-git-commit: 215f062f80e7abfe35698743ce971394d01d0ed6
+exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 88%
 
 ---
-
 
 # Prise en charge des jetons encapsulés{#encapsulated-token-support}
 
@@ -40,7 +39,7 @@ Si une instance de publication devient inaccessible, tous les utilisateurs authe
 
 Pour permettre une évolutivité horizontale, la solution consiste à recourir à une authentification sans état grâce à la nouvelle prise en charge des jetons encapsulés dans AEM.
 
-Le jeton encapsulé est un élément de cryptographie qui permet aux AEM de créer et de valider en toute sécurité des informations d&#39;authentification hors ligne, sans accéder au référentiel. Ainsi, une demande d’authentification peut être effectuée sur toutes les instances de publication, sans nécessiter de connexions persistantes. Elle offre également l’avantage d’optimiser les performances d’authentification, car il n’est pas nécessaire d’accéder au référentiel pour chaque demande d’authentification.
+Le jeton encapsulé est un élément de cryptographie qui permet à AEM de créer et valider en toute sécurité des informations d’authentification hors ligne, sans accéder au référentiel. Ainsi, une demande d’authentification peut être effectuée sur toutes les instances de publication, sans nécessiter de connexions persistantes. Elle offre également l’avantage d’optimiser les performances d’authentification, car il n’est pas nécessaire d’accéder au référentiel pour chaque demande d’authentification.
 
 Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué géographiquement avec les instances de création MongoMK et de publication TarMK ci-dessous :
 
@@ -56,12 +55,12 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 ## Configuration du jeton encapsulé  {#configuring-the-encapsulated-token}
 
 >[!NOTE]
->Tous les gestionnaires d’authentification qui synchronisent les utilisateurs et reposent sur l’authentification par jeton (tels que SAML et OAuth) ne fonctionnent qu’avec des jetons encapsulés si :
+>Tous les gestionnaires d’authentification qui synchronisent les utilisateurs et reposent sur l’authentification par jeton (comme SAML et OAuth) ne fonctionnent qu’avec des jetons encapsulés si :
 >
->* Les sessions bascules sont activées ou
+>* Les sessions persistantes sont activées, ou
    >
    >
-* Les utilisateurs sont déjà créés dans AEM lors du début de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les cas où les gestionnaires **créent** des utilisateurs pendant le processus de synchronisation.
+* Les utilisateurs sont déjà créés dans AEM au démarrage de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les cas où les gestionnaires **create** utilisateurs pendant le processus de synchronisation.
 
 
 Lors de la configuration du jeton encapsulé, différents éléments doivent être pris en compte :
@@ -71,7 +70,7 @@ Lors de la configuration du jeton encapsulé, différents éléments doivent êt
 
 ### Réplication de la clé HMAC  {#replicating-the-hmac-key}
 
-La clé HMAC est présente comme une propriété binaire de `/etc/key` dans le référentiel. Vous pouvez la télécharger séparément en cliquant sur le lien **afficher** en regard :
+La clé HMAC est présente sous la forme d’une propriété binaire de `/etc/key` dans le référentiel. Vous pouvez la télécharger séparément en cliquant sur le lien **afficher** en regard :
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
@@ -105,4 +104,3 @@ Une fois la clé HMAC répliquée, vous pouvez activer le jeton encapsulé à l
 1. Pointez votre navigateur sur `https://serveraddress:port/system/console/configMgr`
 1. Recherchez une entrée nommée **Day CRX Token Authentication Handler** et cliquez dessus.
 1. Dans la fenêtre suivante, cochez la case **Activer la prise en charge des jetons encapsulés** et cliquez sur **Enregistrer**.
-
