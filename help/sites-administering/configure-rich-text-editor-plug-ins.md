@@ -1,9 +1,8 @@
 ---
 title: Configuration des modules externes d’éditeur de texte enrichi
-description: Découvrez comment configurer les modules externes Adobe Experience Manager Rich Text Editor pour activer des fonctionnalités individuelles.
+description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi Adobe Experience Manager pour activer des fonctionnalités individuelles.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-translation-type: tm+mt
 source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
 workflow-type: tm+mt
 source-wordcount: '4397'
@@ -61,7 +60,7 @@ Après activation d’un module externe, suivez ces instructions pour configurer
 
 |  | Activer toutes les fonctions | Activer des fonctions spécifiques | Désactiver toutes les fonctions |
 |---|---|---|---|
-| Nom | features | fonctionnalités | fonctionnalités |
+| Nom | features | features | features |
 | Type | Chaîne | Chaîne[] (multichaîne ; définissez le type sur chaîne et cliquez sur Multi dans CRXDE Lite) | Chaîne |
 | Valeur | `*` (astérisque) | définie sur une ou plusieurs valeurs de fonctions | - |
 
@@ -327,7 +326,7 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 
    Répétez les étapes ci-dessus pour chaque style requis.
 
-### Configuration de l’éditeur de texte enrichi pour des coupures de mots optimales en japonais  {#jpwordwrap}
+### Configuration de l’éditeur de texte enrichi pour des coupures de mots optimales en japonais {#jpwordwrap}
 
 Les auteurs qui utilisent AEM pour créer du contenu en japonais peuvent appliquer un style aux caractères afin d’éviter un saut de ligne lorsqu’il n’est pas nécessaire. Les auteurs peuvent ainsi couper les phrases où ils le souhaitent. Le style de cette fonctionnalité repose sur la classe CSS prédéfinie dans la feuille de style CSS.
 
@@ -384,7 +383,7 @@ Lorsque le module externe Formats des paragraphes est activé pour la première 
 
 Pour les configurations ultérieures, par exemple, afin d’ajouter davantage de formats, suivez uniquement la partie correspondante des instructions.
 
-### Activation du sélecteur de liste déroulante Format   {#formatselectorlist}
+### Activation du sélecteur de liste déroulante Format  {#formatselectorlist}
 
 Commencez d’abord par activer le module externe paraformat :
 
@@ -452,7 +451,7 @@ Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à di
 >[!CAUTION]
 Si vous ajoutez vos propres caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, définissez ou redéfinissez ces caractères dans votre sélection.
 
-### Définition d’un caractère unique   {#definesinglechar}
+### Définition d’un caractère unique  {#definesinglechar}
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/misctools`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Créez la propriété `features` sur le nœud `misctools` :
@@ -582,7 +581,7 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
 
 Répétez les étapes ci-dessus pour chaque style requis.
 
-### Configuration d’en-têtes masqués dans les tableaux pour l’accessibilité  {#hiddenheader}
+### Configuration d’en-têtes masqués dans les tableaux pour l’accessibilité {#hiddenheader}
 
 Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire d’indiquer un texte masqué à l’intérieur de la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres dispositifs d’assistance d’aider les utilisateurs, indépendamment de leur validité, à comprendre l’objectif de la colonne.
 
@@ -600,23 +599,23 @@ Pour aider les créateurs à appliquer la feuille de style CSS à des en-têtes
 
 Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
-## Ajout de dictionnaires au vérificateur orthographique  {#adddict}
+## Ajout de dictionnaires au vérificateur orthographique {#adddict}
 
 Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. Pour la branche `/en/`, la vérification est effectuée pour l’anglais ; pour la branche `/de/`, pour l’allemand.
 
 >[!NOTE]
-Le message `Spell checking failed` apparaît si une vérification est tentée pour une langue qui n&#39;est pas installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
+Le message `Spell checking failed` s’affiche si une vérification est effectuée pour une langue non installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
-Une installation AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
+Une installation d’AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
 1. Effectuez l’une des opérations suivantes pour trouver un dictionnaire de votre choix de langue :
 
-   * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, recherchez le lien vers la source d’origine ou la page Web de l’auteur. Localisez les fichiers de dictionnaire pour v2.x sur une telle page.
+   * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, recherchez le lien vers la source originale ou la page Web de l’auteur. Recherchez les fichiers de dictionnaire pour v2.x sur une telle page.
    * Recherchez des fichiers de dictionnaire v2.x à l’adresse [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
-1. Téléchargez l&#39;archive avec les définitions orthographiques. Extrayez le contenu de l’archive dans votre système de fichiers.
+1. Téléchargez l’archive avec les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
 
    >[!CAUTION]
    Seuls les dictionnaires au format `MySpell` pour OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers archives, il est recommandé de les vérifier après les avoir téléchargés.
@@ -625,8 +624,8 @@ Une installation AEM standard inclut les dictionnaires pour l’anglais américa
 1. Chargez les fichiers .aff et.dic dans le référentiel à l’emplacement `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter la vérification orthographique, cliquez sur [!UICONTROL Vérificateur orthographique] dans la barre d’outils. RTE vérifie l&#39;orthographe des mots et met en évidence les mots mal orthographiés.
-Si vous incorporez une modification suggérée par le vérificateur orthographique, l’état du texte change et les mots mal orthographiés ne sont plus surlignés. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
+Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter le vérificateur orthographique, cliquez sur [!UICONTROL Vérificateur orthographique] dans la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
+Si vous incorporez une modification suggérée par le vérificateur orthographique, l’état des changements de texte et des mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
@@ -641,7 +640,7 @@ L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir que
 
 1. Enregistrez les modifications.
 
-## Configuration de la taille de tabulation  {#tabsize}
+## Configuration de la taille de tabulation {#tabsize}
 
 Lorsque le caractère de tabulation est activé dans un texte, un nombre prédéfini d’espaces est inséré. Par défaut, il s’agit de trois espaces insécables et d’un espace.
 
@@ -656,7 +655,7 @@ Pour définir la taille de la tabulation :
 
 1. Enregistrez les modifications.
 
-## Définition de la marge de retrait  {#indentmargin}
+## Définition de la marge de retrait {#indentmargin}
 
 Lorsque la mise en retrait est activée (par défaut), vous pouvez définir la taille du retrait :
 
@@ -731,7 +730,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
       * **Nom** `cssExternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . »  ; par exemple, `cssClass` au lieu de `.cssClass`)
-   * Tableau de **protocoles** valides. Les protocoles pris en charge sont `http://`, `https://`, `file://` et `mailto:`.
+   * Tableau des **protocoles** valides. Les protocoles pris en charge sont `http://`, `https://`, `file://` et `mailto:`.
 
       * **Nom** `protocols`
       * **Type** `String[]`
