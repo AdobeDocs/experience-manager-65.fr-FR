@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 92%
 
 ---
-
 
 # Bonnes pratiques pour les tests de performance{#best-practices-for-performance-testing}
 
@@ -56,12 +55,12 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 
 #### Outils de test {#testing-tools}
 
-* L’outil **Tough Day** d’Adobe peut être utilisé pour générer une charge sur des instances AEM et collecter des données de performance. L’équipe AEM d’ingénieurs d’Adobe utilise en fait l’outil pour tester la charge du produit AEM lui-même. Les scripts exécutés dans Tough Day sont configurés via des fichiers de propriétés et des fichiers XML JMX. Pour plus d’informations, voir la [documentation Tough Day](/help/sites-developing/tough-day.md).
+* L’outil **Tough Day** d’Adobe peut être utilisé pour générer une charge sur des instances AEM et collecter des données de performance. L’équipe AEM d’ingénierie d’Adobe utilise en fait l’outil pour effectuer des tests de charge du produit AEM lui-même. Les scripts exécutés dans Tough Day sont configurés via des fichiers de propriétés et des fichiers XML JMX. Pour plus d’informations, voir la [documentation Tough Day](/help/sites-developing/tough-day.md).
 
 * AEM fournit des outils prêts à l’emploi pour identifier rapidement les requêtes, demandes et messages d’erreur problématiques. Pour plus d’informations, voir la section [Outils de diagnostic](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentation Tableau de bord des opérations.
-* Apache propose un produit appelé **JMeter** pouvant être utilisé pour les tests de performance et de charge ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais dont le jeu de fonctionnalités est plus restreint que les produits destinées aux entreprises et dont la courbe d’apprentissage est plus rapide. JMeter peut être consulté sur le site Web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* Apache propose un produit appelé **JMeter** pouvant être utilisé pour les tests de performance et de charge ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais dont le jeu de fonctionnalités est plus restreint que les produits destinées aux entreprises et dont la courbe d’apprentissage est plus rapide. JMeter se trouve sur le site web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load** Runnerest un produit de test de charge de niveau entreprise. Une version d&#39;évaluation gratuite est disponible. Pour plus d’informations, voir [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview).
+* **Load** Runner est un produit de test de charge de niveau entreprise. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
 * Des outils de test de charge dans le cloud comme [Neustar](https://www.neustar.biz/services/web-performance/load-testing) peuvent également être utilisés.
 * Pour tester des sites web mobiles ou réactifs, un jeu d’outils distinct doit être utilisé. Ils fonctionnent en limitant la bande passante réseau et en simulant des connexions mobiles plus lentes telles que 3G ou EDGE. Les outils les plus utilisés sont les suivants : 
@@ -105,13 +104,13 @@ Pour les types d’environnements dont les exigences de chargement de ressources
 
 Sur les systèmes dotés de serveurs principaux MongoDB, AEM fournit plusieurs MBeans [JMX](/help/sites-administering/jmx-console.md) qu’il faut surveiller lors des tests de charge ou de performance :
 
-* MBean **Consolidated Cache Statistics**. Vous pouvez y accéder directement en vous rendant à :
+* MBean **Consolidated Cache Statistics**. Il est accessible directement depuis :
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
 Pour le cache nommé **Document-Diff**, le taux d’accès doit être supérieur à `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
 
-* Mbean **Oak Repository Statistics**. Vous pouvez y accéder directement en vous rendant à :
+* Mbean **Oak Repository Statistics**. Il est accessible directement depuis :
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
