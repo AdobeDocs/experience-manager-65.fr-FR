@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 95%
 
 ---
-
 
 # Gestion des activités {#managing-activities}
 
@@ -84,7 +83,7 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 * **Moteur de ciblage :**[AEM](/help/sites-authoring/personalization.md#aem) ou [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) comme moteur du contenu ciblé.
 
 * **Sélectionnez une configuration Target :** (Adobe Target uniquement) Configuration du cloud que cette activité doit utiliser pour se connecter à Adobe Target. Cette option s’affiche uniquement lorsque Adobe Target est sélectionné pour le moteur de ciblage.
-* **Type d&#39;Activité : **Type d’activité - Test A/B ou ciblage d’expérience
+* **Type d’activité : **Type d’activité - Test A/B ou Ciblage d’expérience
 * **Objectif :** (facultatif) description de l’activité.
 * **Expériences :** correspond aux noms d’audience et aux segments marketing que vous ciblez.
 * **Pourcentages de trafic :** si Test A/B est sélectionné, vous pouvez modifier le volume de trafic (en pourcentage) affecté à chaque expérience.
@@ -100,7 +99,7 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 
 Pour ajouter une activité :
 
-1. Cliquez ou appuyez sur la marque pour laquelle vous créez l’activité, puis cliquez ou appuyez sur **Créer **puis** Créer une Activité. **Si vous modifiez une activité, sélectionnez-la dans l’écran Zone maître et cliquez ou appuyez sur **Modifier l’activité**.
+1. Cliquez ou appuyez sur la marque pour laquelle vous créez l’activité, puis cliquez ou appuyez sur **Créer **puis** Créer l’activité. **Si vous modifiez une activité, sélectionnez-la dans l’écran Zone maître et cliquez ou appuyez sur **Modifier l’activité**.
 1. Fournissez les informations suivantes, puis appuyez ou cliquez sur **Suivant** :
 
    * Nom de l’activité.
@@ -112,7 +111,7 @@ Pour ajouter une activité :
 1. Ajoutez une ou plusieurs expériences à l’activité. Cliquez ou appuyez sur **Ajouter une expérience**.
 1. Si vous utilisez le ciblage AEM ou le ciblage d’expérience Adobe Target :
 
-   1. Cliquez ou appuyez sur **Sélectionner une Audience **et sélectionnez le segment qui cible votre expérience.
+   1. Cliquez ou appuyez sur **Sélectionner l’audience **et sélectionnez le segment ciblé par votre expérience.
    1. Appuyez ou cliquez sur **Ajouter une expérience**, saisissez un nom, puis appuyez ou cliquez sur **OK**.
 
    1. Appuyez ou cliquez sur **Suivant**.
@@ -150,14 +149,14 @@ Vous devez publier les activités afin de les rendre disponibles. À l’inverse
 
 >[!NOTE]
 >
->Lors de l’annulation de la publication d’une activité, l’état de l’activité ne change pas, sauf si vous actualisez la page.
+>Lors de l’annulation de la publication d’une activité, son état ne change pas, sauf si vous actualisez la page.
 
 Pour publier des activités ou annuler leur publication :
 
 1. Cliquez ou appuyez sur la marque puis sur la zone contenant l’activité que vous souhaitez publier ou dont vous souhaitez annuler la publication.
 1. Appuyez ou cliquez sur l’icône située en regard des activités que vous souhaitez publier ou dont vous souhaitez annuler la publication.
 
-   ![capture d&#39;écran_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
+   ![screen-shot_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
 1. Pour publier, appuyez ou cliquez sur **Publier**. Pour annuler la publication, appuyez ou cliquez sur **Annuler la publication**. Les activités sont publiées ou leur publication est annulée, et leur état change dans la console Activités (une actualisation peut être nécessaire).
 
@@ -232,9 +231,8 @@ Pour éviter des problèmes de synchronisation, donnez toujours des noms uniques
 
 >[!NOTE]
 >
->Lorsque vous créez une campagne en Adobe Target, elle affecte une propriété appelée `thirdPartyId t`à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
+>Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId t`à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, `thirdPartyId` n’est pas supprimé. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Ainsi, les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
 >
 >Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
 >
 >Lors de la synchronisation, si le message d’erreur « Échec de la demande. `thirdPartyId` existe déjà » s’affiche, modifiez le nom de la campagne et resynchronisez-la.
-
