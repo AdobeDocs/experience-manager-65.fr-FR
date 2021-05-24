@@ -7,14 +7,13 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: df28180f-7af4-437d-8e91-bfd305f73113
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 91%
 
 ---
-
 
 # Exemples de types de module d’IU ContextHub {#sample-contexthub-ui-module-types}
 
@@ -91,7 +90,7 @@ Le module d’IU contextthub.browserinfo affiche des informations sur le navigat
 
 ![chlimage_1-77](assets/chlimage_1-77a.png)
 
-Le code source du module d’interface utilisateur se trouve dans /libs/granite/contexthub/components/modules/browserinfo. Bien que contexthub.browserinfo étende le module d’IU contextthub.base, il ne remplace ni ne fournit de fonctions supplémentaires. L’implémentation offre une configuration par défaut pour le rendu des informations du navigateur.
+Le code source du module d’IU se trouve dans /libs/granite/contexthub/components/modules/browserinfo. Bien que contexthub.browserinfo étende le module d’IU contextthub.base, il ne remplace ni ne fournit de fonctions supplémentaires. L’implémentation offre une configuration par défaut pour le rendu des informations du navigateur.
 
 ### Configuration {#configuration-1}
 
@@ -114,7 +113,7 @@ Le module d’IU contextthub.datetime affiche la date et l’heure stockées dan
 
 Le module fournit un formulaire contextuel qui vous permet de modifier la date et l’heure dans le magasin.
 
-La source du module d’interface contexthub.datetime se trouve dans /libs/granite/contexthub/components/modules/datetime.
+La source du module d’IU contexthub.datetime se trouve à l’adresse /libs/granite/contexthub/components/modules/datetime.
 
 ### Configuration {#configuration-2}
 
@@ -137,7 +136,7 @@ Le module d’IU contextthub.location affiche la longitude et la latitude du cli
 
 ![chlimage_1-80](assets/chlimage_1-80a.png)
 
-La source du module IU se trouve dans /etc/cloudsettings/default/contexthub/geolocation.
+La source du module d’IU se trouve à l’adresse /etc/cloudsettings/default/contexthub/geolocation.
 
 ### Configuration {#configuration-4}
 
@@ -180,7 +179,7 @@ Le module d’IU contextthub.screen-orientation affiche l’orientation actuelle
 
 ![chlimage_1-81](assets/chlimage_1-81a.png)
 
-La source du module d&#39;interface se trouve dans /libs/granite/contexthub/components/modules/screen-orientation.
+La source du module d’IU se trouve à l’adresse /libs/granite/contexthub/components/modules/screen-orientation.
 
 ### Configuration {#configuration-5}
 
@@ -204,7 +203,7 @@ Le module d’IU contexthub.tagcloud affiche des informations sur les balises. D
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
 
-La source du module d’interface se trouve dans /libs/granite/contexthub/components/modules/tagcloud.
+La source du module d’IU se trouve à l’adresse /libs/granite/contexthub/components/modules/tagcloud.
 
 ### Configuration {#configuration-6}
 
@@ -228,7 +227,7 @@ Le module d’IU ContextHub granite.profile affiche le nom d’affichage de l’
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-La source du module d&#39;interface se trouve dans /libs/granite/contexthub/components/modules/profil.
+La source du module d’IU se trouve à l’adresse /libs/granite/contexthub/components/modules/profile.
 
 ### Configuration {#configuration-7}
 
