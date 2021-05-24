@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 92%
 
 ---
-
 
 # Test de la structure de site globalisée dans We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
@@ -25,7 +24,7 @@ We.Retail a été conçu avec une structure de site globalisée qui offre des ga
 ## Test {#trying-it-out}
 
 1. Ouvrez la console Sites à partir de **Navigation globale -> Sites**.
-1. Basculez en mode Colonnes (le cas échéant) et sélectionnez We.Retail. Notez l&#39;exemple de structure de pays avec la Suisse, les Etats-Unis, la France, etc., au côté des Principal linguistiques.
+1. Basculez en mode Colonnes (le cas échéant) et sélectionnez We.Retail. Notez l&#39;exemple de structure par pays avec la Suisse, les Etats-Unis, la France, etc., à côté du Principal Langue.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
@@ -73,4 +72,4 @@ We.Retail a été conçu avec une structure de site globalisée qui offre des ga
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d&#39;informations, consultez le document de création [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) pour obtenir des détails techniques complets.
+Pour plus d’informations, reportez-vous au document de création [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) pour obtenir des détails techniques complets.
