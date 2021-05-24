@@ -1,22 +1,21 @@
 ---
 title: Architecture de contenu
 seo-title: Architecture de contenu
-description: Conseils pour l’architecture de votre contenu (conseil - tout est du contenu)
-seo-description: Conseils pour l’architecture de votre contenu en Adobe Experience Manager (AEM). (conseil - tout est contenu)
+description: 'Conseils pour la conception de votre contenu (conseil : tout est contenu)'
+seo-description: Conseils pour la conception de votre contenu dans Adobe Experience Manager (AEM). (indice - tout est contenu)
 uuid: fef2bf0f-70ec-4621-8479-a62b7e1fbc07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 83%
 
 ---
-
 
 # Content Architecture{#content-architecture}
 
@@ -24,15 +23,15 @@ ht-degree: 83%
 
 Le modèle de David a été élaboré par David Nuescheler il y a quelques années. Cependant, les principes sont toujours valables aujourd’hui. Les principaux principes du modèle de David sont les suivants :
 
-* Les données arrivent en premier, la structure plus tard. Normalement…
+* Les données viennent en premier, la structure plus tard. Normalement…
 * Prenez le contrôle de la hiérarchie de contenu, ne la laissez pas vous diriger.
 * Les espaces de travail sont pour `clone()`, `merge()` et `update()`.
 * Méfiez-vous des SNS (Same Name Siblings).
 * Les références sont considérées comme dangereuses.
 * Les fichiers sont des fichiers, et rien d’autre.
-* Les papiers d&#39;identité sont mauvais.
+* Les identifiants sont mauvais.
 
-David’s Model se trouve sur le wiki de Jackrabbit à l’adresse [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Le modèle de David est disponible sur le wiki Jackrabbit à l’adresse [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Tout est contenu {#everything-is-content}
 
@@ -52,7 +51,7 @@ Les types de nœud fonctionnent à un niveau inférieur du calque d’infrastruc
 
 ### Respectez les conventions d’affectation de noms dans le JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Le respect des conventions d’affectation de noms ajoute de l’homogénéité à votre codebase en réduisant le taux d’incidence des défauts et en augmentant la vitesse des développeurs qui travaillent sur le système. Les conventions ci-après sont utilisées par l&#39;Adobe pour développer l&#39;AEM :
+Le respect des conventions d’affectation de noms ajoute de l’homogénéité à votre codebase en réduisant le taux d’incidence des défauts et en augmentant la vitesse des développeurs qui travaillent sur le système. Les conventions suivantes sont utilisées par Adobe dans le développement d’AEM :
 
 * Noms des nœuds
 
@@ -67,4 +66,3 @@ Le respect des conventions d’affectation de noms ajoute de l’homogénéité 
 
    * Tout en minuscules
    * Séparation des mots à l’aide de tirets
-
