@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: 1e0a68c5-1583-4103-9dbb-7a53faa03c06
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Copie de la langue
+exl-id: 6ccfe612-8cfd-4ca2-ad01-8e4af36d44fa
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
-
 
 # Traduction de contenu pour les sites multilingues {#translating-content-for-multilingual-sites}
 
@@ -32,9 +31,9 @@ La traduction du contenu implique les étapes suivantes :
 
 1. [Connectez AEM à votre fournisseur de service de traduction](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) et [créez des configurations de structure d’intégration de traduction](/help/sites-administering/tc-tic.md).
 1. [Associer les pages de votre gabarit de langue](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) au service de traduction et aux configurations de structure.
-1. [Identifiez le type de ](/help/sites-administering/tc-rules.md) contenu à traduire.
+1. [Identifier le type de contenu](/help/sites-administering/tc-rules.md) à traduire.
 1. [Préparez le contenu à traduire](/help/sites-administering/tc-prep.md) en créant le gabarit de langue et les pages racine des copies de langue.
-1. [Créez des ](/help/sites-administering/tc-manage.md) projets de traduction pour rassembler le contenu à traduire et préparer le processus de traduction.
+1. [Créer des projets de traduction](/help/sites-administering/tc-manage.md) pour collecter le contenu à traduire et préparer le processus de traduction.
 1. Utiliser les projets de translation pour [gérer le processus de traduction du contenu](/help/sites-administering/tc-manage.md).
 
 Si votre fournisseur de services de traduction ne fournit pas de connecteur pour l’intégration à AEM, AEM prend en charge l’extraction et la réinsertion manuelles du contenu de translation au format XML.
@@ -45,4 +44,4 @@ Si votre fournisseur de services de traduction ne fournit pas de connecteur pour
 
 ## Bonnes pratiques {#best-practices}
 
-La page [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md) contient des informations importantes concernant votre implémentation.
+La page [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md) fournit des informations importantes concernant votre mise en œuvre.
