@@ -1,6 +1,6 @@
 ---
-title: Résolution des incidents
-seo-title: Résolution des incidents
+title: Résolution des problèmes
+seo-title: Résolution des problèmes
 description: Cet article aborde certains des problèmes d’installation pouvant survenir avec AEM.
 seo-description: Cet article aborde certains des problèmes d’installation pouvant survenir avec AEM.
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
-translation-type: tm+mt
-source-git-commit: 6ca333c64fcd7d3b91b1ae8ef98c53ed770479d4
+exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 87%
 
 ---
 
-
-# Résolution des incidents{#troubleshooting}
+# Résolution des problèmes{#troubleshooting}
 
 Cette section comprend des informations détaillées sur les journaux qui vous permettent de résoudre les problèmes éventuels. Elle contient également des informations sur les problèmes que vous pouvez rencontrer avec AEM.
 
@@ -40,7 +39,7 @@ AEM enregistre des journaux détaillés que vous souhaiterez peut-être configur
 
 ## Utilisation de l’option d’informations détaillées {#using-the-verbose-option}
 
-Lorsque vous début AEM WCM, vous pouvez ajouter l’option -v (verbose) à la ligne de commande comme dans : java -jar cq-wcm-quickstart-&lt;version>.jar -v.
+Lorsque vous démarrez AEM WCM, vous pouvez ajouter l’option -v (verbose) à la ligne de commande, comme dans : java -jar cq-wcm-quickstart-&lt;version>.jar -v.
 
 L’option d’informations détaillées affiche une partie de la sortie du journal Quickstart sur la console. Elle peut donc être utilisée pour le dépannage.
 
@@ -50,7 +49,7 @@ La section ci-après décrit quelques problèmes d’installation et les solutio
 
 ### Lorsque vous double-cliquez sur le fichier Quickstart jar, rien ne se produit ou le fichier s’ouvre dans un autre programme (par exemple, le gestionnaire d’archives).  {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
-Cela indique généralement un problème de configuration de l’environnement de bureau de votre système d’exploitation pour l’ouverture de fichiers avec l’extension .jar. Elle peut également indiquer que Java n’est pas installé sur votre ordinateur ou que vous utilisez une version de Java qui n’est pas prise en charge.
+Cela indique généralement un problème lié à la manière dont l’environnement de bureau de votre système d’exploitation est configuré pour ouvrir les fichiers avec l’extension .jar. Elle peut également indiquer que Java n’est pas installé sur votre ordinateur ou que vous utilisez une version de Java qui n’est pas prise en charge.
 
 Comme les fichiers jar utilisent le format ZIP très répandu, certains programmes d’archivage peuvent automatiquement configurer le poste de travail pour qu’il ouvre les fichiers .jar en tant que fichiers d’archive.
 
@@ -74,7 +73,7 @@ Pour résoudre ce problème, procédez comme suit :
 
 CRX nécessite peu de mémoire. Si les exigences en matière de mémoire de l’application qui s’exécute dans CRX sont plus élevées ou si l’application demande des opérations qui consomment beaucoup de mémoire, (des transactions volumineuses, par exemple), l’instance JVM dans laquelle s’exécute CRX doit être démarrée avec les paramètres de mémoire adéquats.
 
-Utilisez les options de la commande Java pour définir les paramètres de mémoire de la JVM (par exemple, java -Xmx512m -jar crx&amp;ast;.jar pour définir la taille du tas sur 512 Mo).
+Utilisez les options de commande Java pour définir les paramètres de mémoire de la JVM (par exemple, java -Xmx512m -jar crx&amp;ast;.jar pour définir la taille du tas sur 512 Mo).
 
 Spécifiez l’option de paramétrage de la mémoire lors du démarrage de la gestion de contenu web AEM à partir d’une ligne de commande. Les scripts start/stop de la gestion de contenu web AEM ou les scripts personnalisés pour la gestion du démarrage de la gestion de contenu web AEM peuvent être également modifiés afin de définir les paramètres de mémoire requis.
 
@@ -98,13 +97,13 @@ Parfois, la fenêtre Quickstart de la gestion de contenu web AEM affiche le mess
 
 Si toutes les autres solutions échouent, consultez les journaux pour déterminer ce qui s’est passé.
 
-### Le site Web ne se charge pas ou échoue par intermittence avec Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
+### Le site web ne se charge pas ou échoue par intermittence avec Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
 
-Il existe un problème connu avec AEM 6.5 s’exécutant sur Java 11, en raison duquel le site Web ne se charge pas ou échoue par intermittence.
+Il existe un problème connu avec AEM 6.5 s’exécutant sur Java 11, en raison duquel le site web risque de ne pas se charger ou échouer par intermittence.
 
-Si tel est le cas, suivez la solution ci-dessous :
+Si cela se produit, veuillez suivre la solution suivante :
 
-1. Ouvrez le fichier `sling.properties` sous le dossier `crx-quickstart/conf/`.
+1. Ouvrez le fichier `sling.properties` sous le dossier `crx-quickstart/conf/` .
 1. Recherchez la ligne suivante :
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.`
@@ -145,5 +144,5 @@ Si votre installation AEM utilise un système de stockage externe, comme un serv
 
 ### Les fichiers JSP ne sont pas compilés sur JBoss.  {#jsp-files-are-not-compiled-on-jboss}
 
-Si vous installez ou mettez à jour les fichiers JSP dans Experience Manager sur JBoss et si les servlets correspondants ne sont pas compilés, vérifiez que le compilateur JSP JBoss est correctement configuré. Pour plus d’informations, voir la section
+Si vous installez ou mettez à jour les fichiers JSP dans Experience Manager sur JBoss et si les servlets correspondants ne sont pas compilés, vérifiez que le compilateur JSP JBoss est correctement configuré. Pour plus d’informations, voir
 [Problèmes de compilation JSP dans l’article JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).
