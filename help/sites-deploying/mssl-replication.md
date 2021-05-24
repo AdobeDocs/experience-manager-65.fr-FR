@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1457'
 ht-degree: 93%
 
 ---
-
 
 # Réplication à l’aide du SSL mutuel{#replicating-using-mutual-ssl}
 
@@ -216,10 +215,10 @@ Configurez les propriétés du service HTTP basé sur Apache Felix Jetty sur l�
 
 Le tableau suivant répertorie les propriétés OSGi que vous devez configurer si vous utilisez la console web. 
 
-| Nom de propriété sur la console Web | Nom de propriété OSGi | Valeur |
+| Nom de la propriété sur la console web | Nom de propriété OSGi | Valeur |
 |---|---|---|
 | Activer HTTPS | org.apache.felix.https.enable | true |
-| Activer HTTPS pour utiliser Granite KeyStore | org.apache.felix.https.use.granite.keystore | true |
+| Activer HTTPS pour utiliser le KeyStore Granite | org.apache.felix.https.use.granite.keystore | true |
 | Port HTTPS | org.osgi.service.http.port.secure | 8443 (ou tout autre port souhaité) |
 | Certificat client | org.apache.felix.https.clientcertificate | &quot;Certificat client recherché&quot; |
 
@@ -295,4 +294,3 @@ Une fois que vous avez configuré l’agent de réplication, testez la connexion
 29.08.2014 14:02:46 - Replication (TEST) of /content successful.
 Replication test succeeded
 ```
-
