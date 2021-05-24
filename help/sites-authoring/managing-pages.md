@@ -1,14 +1,13 @@
 ---
 title: Création et organisation des pages
 description: Comment créer et gérer des pages avec AEM
-translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2523'
 ht-degree: 94%
 
 ---
-
 
 # Création et organisation des pages {#creating-and-organizing-pages}
 
@@ -35,15 +34,15 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web peut être comparée à celle d’un arbre qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
 
-Vous trouverez ci-dessous un exemple du site Web We.Retail, où vous pouvez accéder à une page de raccourcis de randonnée ( `desert-sky-shorts`) :
+Vous trouverez ci-dessous un exemple tiré du site We.Retail, sur lequel vous pouvez accéder à une page de shorts de randonnée ( `desert-sky-shorts`) :
 
-* Environnement d’auteur
+* Environnement de création
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Environnement de publication
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Selon la configuration de votre instance, l’utilisation de `/content` peut être facultative sur l’environnement de publication.
+Selon la configuration de votre instance, l’utilisation de `/content` peut être facultative dans l’environnement de publication.
 
 ```xml
  /content
@@ -165,7 +164,7 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec une gamme de [composants prêts à l&#39;emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Il s&#39;agit notamment :
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec un éventail de [composants prêts à l’emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Il s’agit notamment :
 
 * Texte
 * Image
@@ -261,7 +260,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 >
 >L’accès à d’autres pages à partir de l’Éditeur de page n’est possible qu’en mode Aperçu, car les liens ne sont pas actifs dans le mode d’édition.
 
-### Copier et coller une page  {#copying-and-pasting-a-page}
+### Copier et coller une page {#copying-and-pasting-a-page}
 
 Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
 
@@ -393,11 +392,11 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
 
 >[!NOTE]
 >
->Pour plus d’informations sur le traitement asynchrone des tâches et sur la configuration de la limite des actions de déplacement/changement de nom de page, consultez le document [Tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) dans le guide de l’utilisateur Administration.
+>Pour plus d’informations sur le traitement asynchrone des tâches et sur la configuration de la limite pour les actions de déplacement/changement de nom de page, consultez le document [Tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) dans le guide d’utilisation de l’administration.
 
 >[!NOTE]
 >
->Le traitement du déplacement de page asynchrone requiert AEM 6.5.3.0 ou version ultérieure.
+>Le traitement asynchrone des déplacements de page requiert AEM version 6.5.3.0 ou ultérieure.
 
 ### Suppression d’une page {#deleting-a-page}
 
