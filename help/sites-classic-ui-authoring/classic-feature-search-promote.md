@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 968b9131-ccdf-4856-b504-bc1a44974980
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: cf5849c7-1c6a-46d8-9cc4-f1f20a507a0c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 93%
 
 ---
-
 
 # Ajout de fonctionnalités Search&amp;Promote à une page{#adding-search-promote-features-to-your-page}
 
@@ -79,7 +78,7 @@ Utilisez la console Sites web WCM pour créer une page qui servira à afficher l
 
 Les composants qui permettent aux utilisateurs de consulter les résultats de la recherche sont Résultats et Pagination. Le composant **Résultats** ne dispose d’aucune propriété configurable en mode d’édition ou en mode de conception. Le composant Résultats répertorie uniquement les résultats de la recherche, qui proposent des liens vers d’autres pages, ainsi que le nombre de résultats pour le mot-clé de la recherche. 
 
-![srchresults tscomp](assets/srchresultscomp.png)
+![srchresult comp](assets/srchresultscomp.png)
 
 Le composant **Pagination** permet aux utilisateurs de naviguer au sein de plusieurs pages de résultats de recherche. L’utilisateur peut voir le nombre de pages, accéder à la page précédente ou suivante, sélectionner une page à ouvrir ou regrouper tous les résultats dans une seule page. 
 
@@ -87,16 +86,16 @@ Le composant **Pagination** permet aux utilisateurs de naviguer au sein de plusi
 
 Vous pouvez configurer les propriétés de composant suivantes en mode d’édition pour contrôler le comportement d’exécution :
 
-* Masquer la page de résultats unique : Sélectionnez cette option pour masquer les commandes de navigation de la page lorsque la recherche renvoie une seule page de résultats.
+* Masquer la page de résultat unique : Sélectionnez cette option pour masquer les commandes de navigation de la page lorsque la recherche renvoie une seule page de résultats.
 * Masquer le premier/dernier : sélectionnez cette option pour empêcher les utilisateurs d’accéder à la première ou à la dernière page de résultats. 
 * Masquer le précédent/suivant : détermine si les utilisateurs peuvent parcourir les pages de résultats par rapport à la page active. 
 * Masquer/Afficher tout : détermine si l’utilisateur peut regrouper tous les résultats de la recherche dans une seule page. En général, le fait de fournir des données paginées optimise l’utilisation des ressources serveur. Sélectionnez cette option pour empêcher le transfert d’importants jeux de données dans un seul message de réponse.
 
 ### Activation du filtrage des résultats par le biais de facettes  {#enabling-the-filtering-of-results-by-facets}
 
-Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. Les composants **Facette de Liste de case à cocher**, **Facette de liste déroulante** et **Facette de Liste de lien** permettent aux utilisateurs de sélectionner une ou plusieurs facettes pour le filtrage. Lorsque vous utilisez ces composants, vous devez également inclure le composant **Chemin de navigation**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
+Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. Les composants **Liste de cases à cocher Facette**, **Liste déroulante Facette** et **Liste de liens Facette** permettent aux utilisateurs de sélectionner une ou plusieurs facettes pour le filtrage. Lorsque vous utilisez ces composants, vous devez également inclure le composant **Chemin de navigation**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
 
-Les composants **Facette de Liste de case à cocher**, **Facette de liste déroulante** et **Facette de Liste de lien** possèdent chacun les propriétés suivantes que vous configurez en mode **Modifier** :
+Les composants **Liste de cases à cocher Facette**, **Liste déroulante Facette** et **Liste de liens Facette** possèdent chacun les propriétés suivantes que vous configurez en mode **Modifier** :
 
 * **Nom de la facette** : nom de la facette utilisée pour les filtres.
 
@@ -110,7 +109,7 @@ Le composant **Liste déroulante Facette** permet aux utilisateurs de choisir un
 
 La liste déroulante présente les facettes associées à tous les résultats de la recherche. Une fois qu’un élément est sélectionné dans la liste déroulante, la page est actualisée avec un jeu de résultats mis à jour. Les éléments de la liste déroulante ne changent pas, ainsi les utilisateurs peuvent basculer d’une facette à l’autre, à tout moment. 
 
-![sandpdropdowndepartment](assets/sandpdropdowndepartment.png)
+![sandpdropdowndépartement](assets/sandpdropdowndepartment.png)
 
 Le composant **Liste des liens Facette** permet aux utilisateurs d’affiner progressivement leur recherche sur les éléments qui sont catégorisés sous plusieurs membres de facette ou facettes.
 
@@ -142,7 +141,7 @@ Configurez les propriétés suivantes en mode d’édition pour contrôler le co
 
 ### Ajout de bannières {#adding-banners}
 
-Le composant Bannières affiche les bannières publicitaires en fonction des recherches de Search &amp; Promote du client. La logique du serveur Search&amp;Replace détermine la bannière publicitaire qu’il faut diffuser. Par exemple, une recherche sur un pantalon denim peut déclencher l’affichage d’une bannière associée à des articles de mode. Le filtrage par rayon Homme peut affiner davantage le choix de la bannière.
+Le composant Bannières affiche des bannières publicitaires en fonction des recherches de Search &amp; Promote du client. La logique du serveur Search&amp;Replace détermine la bannière publicitaire qu’il faut diffuser. Par exemple, une recherche sur un pantalon denim peut déclencher l’affichage d’une bannière associée à des articles de mode. Le filtrage par rayon Homme peut affiner davantage le choix de la bannière.
 
 Le composant Bannières contient une propriété configurable appelée Zone de bannière. En mode d’édition, choisissez l’une des valeurs de propriété pour indiquer la façon dont la bannière doit s’afficher. Le service Search&amp;Promote détermine la liste des valeurs parmi lesquelles choisir.
 
@@ -150,4 +149,4 @@ Le composant Bannières contient une propriété configurable appelée Zone de b
 
 Ce schéma présente les composants ajoutés à une page pour créer des résultats Search&amp;Promote entièrement fonctionnels dans la page ci-dessous.
 
-![1328213789109](assets/1328213789109.png) ![sandppageexample](assets/sandppageexample.png)
+![Exemple de ](assets/1328213789109.png) ![ sandppageexample 1328213789109](assets/sandppageexample.png)
