@@ -11,7 +11,6 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-translation-type: tm+mt
 source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
 source-wordcount: '854'
@@ -105,9 +104,9 @@ La fonction Lancements vous permet de :
 
 >[!CAUTION]
 >
->La réorganisation des composants sur une page de lancement n’est pas prise en charge.
+>La réorganisation des composants sur une page Launch n’est pas prise en charge.
 >
->Lorsque la page est promue, toute modification du contenu est prise en compte, mais les positions des composants ne changent pas.
+>Lorsque la page est promue, les modifications de contenu sont répercutées, mais les positions du composant ne changent pas.
 
 
 ### Console Lancements {#the-launches-console}
@@ -128,4 +127,4 @@ La console Lancements fournit un aperçu de vos lancements et permet d’appliqu
 
 1. Appuyez/cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
 
-   ![capture d&#39;écran_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
