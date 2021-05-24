@@ -10,7 +10,6 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '779'
@@ -28,7 +27,7 @@ We.Retail utilise les technologies AEM les plus récentes, telles que HTL, les m
 
 Bien que le site représente le secteur du commerce de détail, la façon dont il est configuré le rend applicable à tous les secteurs. Seuls le catalogue de produits et les fonctionnalités du panier d’achat sont propres au secteur du commerce de détail.
 
-## Fonctionnalités {#features}
+## Fonctions {#features}
 
 En tant qu’implémentation de référence standard d’AEM, We.Retail présente certaines des fonctions les plus puissantes d’AEM.
 
@@ -58,7 +57,7 @@ We.Retail est fourni sous la forme d’un échantillon de contenu d’AEM. Pour 
 
 ### Dernière version {#latest-version}
 
-Bien que We.Retail soit distribué avec la version AEM, il se peut que des mises à jour soient apportées au contenu et à ses fonctionnalités après la publication du produit. Il est donc possible de [télécharger la dernière version de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases), puis de [télécharger](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) et [installer](/help/sites-administering/package-manager.md#installing-packages) sous forme de package sur votre instance AEM.
+Bien que We.Retail soit distribué avec la version AEM, il se peut que des mises à jour soient apportées au contenu et à ses fonctionnalités après la publication du produit. Il est donc possible de [télécharger la dernière version à partir de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) puis de [télécharger](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) et [l’installer](/help/sites-administering/package-manager.md#installing-packages) sous la forme d’un package sur votre instance AEM.
 
 ### Premiers pas {#first-steps}
 
@@ -82,20 +81,20 @@ Le tableau suivant vous donne un aperçu des principales fonctionnalités qui so
 
 | **Fonctionnalité** | **We.Retail** | **Geometrixx** |
 |---|---|---|
-| Structure de site globalisée | Les maîtres de langues sont copiés en direct sur des sites spécifiques à chaque pays. | Non disponible |
+| Structure de site globalisée | Maîtres de langue copiés en direct dans des sites spécifiques à un pays | Non disponible |
 | Fragments de contenu | Disponible | Non disponible |
 | Fragments d’expérience | Disponible | Non disponible |
-| Mise en page réactive   | Pour toutes les pages | Uniquement Geometrixx Media |
+| Mise en page réactive   | Pour toutes les pages | Uniquement les Geometrixx Media |
 | Modèles modifiables | Pour toutes les pages | Non disponible |
-| HTL | Tous les composants | Limited |
-| Ciblage | Pour toutes les pages | Uniquement Geometrixx Outdoors |
+| HTL | Tous les composants | Limitée |
+| Ciblage | Pour toutes les pages | Uniquement les Geometrixx Outdoors |
 | Screens | Disponible | Non disponible |
 | Mobile | Non disponible | Disponible |
 | Manuscrits | Non disponible | Disponible |
 | Carrousel, téléchargement, composants de graphique | Non disponible | Disponible |
-| Contrôle de colonne | Remplacé par le conteneur de mise en page | Disponible |
+| Contrôle de colonne | Remplacé par le conteneur de mises en page | Disponible |
 | Formulaires | Non disponible | Disponible |
-| Campagne | Aucun exemple de courrier électronique | Disponible |
+| Campagne | Aucun exemple d’email | Disponible |
 
 >[!NOTE]
 >
@@ -109,12 +108,12 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-sample-we-commerce sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* [Ouvrez le projet aem-sample-we-retail sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip).
 
 La dernière version peut également être [téléchargée directement](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) en tant que module à +installer.
 
-Si vous rencontrez des problèmes, envoyez [Problèmes GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Si vous rencontrez des problèmes, enregistrez les [problèmes GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
 N’hésitez pas à répliquer ou à contribuer avec des [requêtes d’extraction](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 
@@ -122,4 +121,4 @@ N’hésitez pas à répliquer ou à contribuer avec des [requêtes d’extracti
 
 Aperçu de page d’accueil de We.Retail :
 
-![screencapture-localhost-4502-editor-html-content-we-commerce-us-fr-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
+![screencapture-localhost-4502-editor-html-content-we-retail-us-fr-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
