@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 91%
 
 ---
-
 
 # Gestion de l’accès aux workflows{#managing-access-to-workflows}
 
@@ -26,7 +25,7 @@ Configurez les listes de contrôle d’accès en fonction des comptes utilisateu
 
 Il est possible d’agir sur les workflows dans les cas suivants :
 
-* vous travaillez avec le compte `admin`
+* vous utilisez le compte `admin`
 * le compte a été affecté au groupe par défaut `workflow-users` :
 
    * Ce groupe contient toutes les autorisations nécessaires pour que les utilisateurs agissent sur les workflows.
@@ -54,7 +53,7 @@ Les modèles de workflows héritent d’une liste de contrôle d’accès par d�
 
 ### Appliquez une liste de contrôle d’accès pour le modèle spécifique de workflow sous /var/workflow/models.  {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Si le modèle de flux de travail est stocké dans `/var/workflow/models`, vous pouvez affecter une liste de contrôle d&#39;accès spécifique, pertinente uniquement pour ce flux de travail, au dossier :
+Si le modèle de workflow est stocké dans `/var/workflow/models`, vous pouvez affecter une liste de contrôle d’accès spécifique, correspondant uniquement à ce workflow, au dossier :
 
 1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Dans l’arborescence des nœuds, sélectionnez le nœud correspondant au dossier des modèles de workflow :
@@ -119,4 +118,3 @@ Vous pouvez alors ajouter une liste de contrôle d’accès dans le dossier prop
 1. Cliquez sur **Enregistrer tout**.
 
    Les modèles du dossier `prototypes` ne sont plus disponibles pour les membres du groupe `content-authors`.
-
