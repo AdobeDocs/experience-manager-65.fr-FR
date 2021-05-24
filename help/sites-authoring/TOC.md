@@ -8,7 +8,6 @@ breadcrumb-title: Guide de création
 user-guide-description: Découvrez les principaux concepts de création de contenu dans AEM.
 feature: 'Création  '
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '299'
@@ -19,17 +18,17 @@ ht-degree: 88%
 
 # Guide de l’utilisateur pour la création dans AEM 6.5 {#authoring}
 
-+ [Présentation du guide de l’utilisateur de création](home.md)
++ [Guide de l’utilisateur de création - Aperçu](home.md)
 + Tâches, outils et concepts essentiels pour la création AEM {#essentials}
    + [Premières étapes pour les auteurs](first-steps.md)
    + [Création de pages](page-authoring.md)
    + [Guide rapide pour la création de pages](qg-page-authoring.md)
    + [Concept de création](author.md)
    + [Manipulation de base](basic-handling.md)
-   + [Recherche](search.md)
+   + [Rechercher](search.md)
    + [Configuration de l’environnement du compte](user-properties.md)
-   + [Votre boîte de réception](inbox.md)
-   + [Raccourcis clavier pour les consoles](keyboard-shortcuts.md)
+   + [Votre boîte de réception  ](inbox.md)
+   + [Raccourcis clavier pour les consoles  ](keyboard-shortcuts.md)
    + [Choix de l’interface utilisateur](select-ui.md)
 + Création {#authoring}
    + [Environnement et outils de création](author-environment-tools.md)
@@ -41,7 +40,7 @@ ht-degree: 88%
    + [Publication de pages](publishing-pages.md)
    + [Création de page à partir de fragments de contenu](content-fragments.md)
    + [Fragments d’expérience](experience-fragments.md)
-   + [Exportation au format CSV](csv-export.md)
+   + [Exporter au format CSV  ](csv-export.md)
    + [Composants](default-components.md)
    + [Création d’une page pour les appareils mobiles](mobile.md)
    + [Résolution des problèmes d’AEM lors de la création](troubleshooting.md)
@@ -54,7 +53,7 @@ ht-degree: 88%
    + [Utilisation des versions de page](working-with-page-versions.md)
    + [Outil de comparaison des pages](page-diff.md)
    + [Console des composants](default-components-console.md)
-   + [Mise en page réactive](responsive-layout.md)
+   + [Mise en page réactive  ](responsive-layout.md)
    + [Content Insight ](content-insights.md)
    + [Création de contenu accessible (conformité WCAG 2.1)](creating-accessible-content.md)
    + [Configuration de composants en mode de conception](default-components-designmode.md)
@@ -64,7 +63,7 @@ ht-degree: 88%
 + Projets {#projects}
    + [Projets](projects.md)
    + [Gestion de projets](touch-ui-managing-projects.md)
-   + [Utilisation des tâches](task-content.md)
+   + [Utilisation de tâches](task-content.md)
    + [Projet de création et intégration à PIM](managing-product-information.md)
    + [Utilisation des workflows de projet](projects-with-workflows.md)
 + Lancements {#launches}
@@ -74,7 +73,7 @@ ht-degree: 88%
    + [Conversion de lancements](launches-promoting.md)
 + Workflows {#workflows}
    + [Utilisation des workflows](workflows.md)
-   + [Application de workflows aux pages ](workflows-applying.md)
+   + [Application de workflows aux pages](workflows-applying.md)
    + [Participation aux workflows](workflows-participating.md)
    + [Utilisation des workflows de projet](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Performances de la page {#page-performance}
@@ -90,11 +89,11 @@ ht-degree: 88%
    + [Structuration de la gestion multisite du contenu ciblé](technical-multisite-targeted.md)
    + [Gestion des activités](activitylib.md)
    + [Gestion des audiences](managing-audiences.md)
-   + [Création et gestion d’offres](offerlib.md)
+   + [Création et gestion d’offres  ](offerlib.md)
    + [Compréhension de la segmentation](segmentation-overview.md)
 + AEM et Adobe Campaign {#aem-adobe-campaign}
    + [Utilisation d’Adobe Campaign](adobe-campaign.md)
    + [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](campaign.md)
-   + [Ciblage de votre Adobe Campaign](target-adobe-campaign.md)
-   + [Création de formulaires Adobe Campaign dans AEM](adobe-campaign-forms.md)
+   + [Ciblage d’un élément de campagne Adobe Campaign](target-adobe-campaign.md)
+   + [Création de formulaires Adobe Campaign dans AEM](adobe-campaign-forms.md)
    + [Composants d’Adobe Campaign](adobe-campaign-components.md)
