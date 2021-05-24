@@ -8,7 +8,6 @@ breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Développement
 role: Developer
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '910'
@@ -19,7 +18,7 @@ ht-degree: 81%
 
 # Guide de l’utilisateur pour le développement d’AEM 6.5 {#developing}
 
-+ [Présentation du guide de développement d’utilisateur](home.md)
++ [Présentation du guide de l’utilisateur du développement](home.md)
 + Introduction pour les développeurs{#introduction}
    + [Prise en main du développement d’AEM Sites – Tutoriel WKND](getting-started.md)
    + [Concepts de base d’AEM](the-basics.md)
@@ -34,16 +33,16 @@ ht-degree: 81%
    + [Contribution à AEM](contributing-to-cq.md)
    + [Sécurité](security.md)
    + [Documents de référence](reference-materials.md)
-   + [Création d’un site Web entièrement présenté (interface utilisateur classique)](website.md)
-   + [Conceptions et Designer (interface utilisateur classique)](designer.md)
+   + [Création d’un site web complet (IU classique)](website.md)
+   + [Conceptions et Designer (IU classique)](designer.md)
    + [Migration vers l’interface utilisateur tactile](/help/sites-developing/touch-ui-migration.md)
 + Plate-forme{#platform}
-   + [Aide-mémoire pour Sling](sling-cheatsheet.md)
+   + [Aide-mémoire pour Sling ](sling-cheatsheet.md)
    + [Utilisation des adaptateurs Sling](sling-adapters.md)
    + [Bibliothèques de balises](taglib.md)
    + Modèles{#templates}
       + [Modèles](templates.md)
-      + [Modèles de pages - Modifiables ](page-templates-editable.md)
+      + [Modèles de pages – Modifiables ](page-templates-editable.md)
       + [Modèles de page - Statiques](page-templates-static.md)
       + [Modèles de fragment de contenu](content-fragment-templates.md)
       + [Rendu de modèle adaptatif](templates-adaptive-rendering.md)
@@ -52,7 +51,7 @@ ht-degree: 81%
    + [Conventions de dénomination](naming-conventions.md)
    + [Création d’un composant de champ d’IU Granite](granite-ui-component.md)
    + Query Builder{#query-builder}
-      + [Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder](implementing-custom-predicate-evaluator.md)
+      + [Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder.](implementing-custom-predicate-evaluator.md)
       + [Référence des prédicats de Query Builder](querybuilder-predicate-reference.md)
       + [API Query Builder](querybuilder-api.md)
    + Balisage{#tagging}
@@ -74,47 +73,47 @@ ht-degree: 81%
    + [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
    + [Système de style](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [Aperçu des composants](components.md)
-   + [Composants AEM – Principes de base](components-basics.md)
+   + [Composants AEM - Notions de base](components-basics.md)
    + [Développement de composants AEM](developing-components.md)
-   + [Développement de composants AEM – Échantillons de code](developing-components-samples.md)
-   + [Exportateur JSON pour les services de contenu](json-exporter.md)
+   + [Développement de composants AEM – Échantillons de code](developing-components-samples.md)
+   + [Exportateur JSON pour Content Services](json-exporter.md)
    + [Activation de l’exportateur JSON pour un composant](json-exporter-components.md)
    + [Éditeur d’image](image-editor.md)
    + [Balise décorative](decoration-tag.md)
    + [Utilisation de conditions de masquage](hide-conditions.md)
    + [Configuration de plusieurs éditeurs statiques](multiple-inplace-editors.md)
    + [Mode Développeur](developer-mode.md)
-   + [Test de votre interface utilisateur](hobbes.md)
+   + [Tester votre IU](hobbes.md)
    + [Composants pour les fragments de contenu](components-content-fragments.md)
-   + [Obtention des informations sur la page au format JSON](pageinfo.md) 
+   + [Obtention d’informations sur la page au format JSON](pageinfo.md)
    + Internationalisation  {#internationalization}
-      + [Internationalisation des composants](i18n.md)
+      + [Internationalisation de composants](i18n.md)
       + [Internationalisation des chaînes d’interface utilisateur](i18n-dev.md)
       + [Utilisation du traducteur pour gérer les dictionnaires](i18n-translator.md)
       + [Extraction de chaînes pour la traduction](i18n-extract.md)
-   + Composants classiques de l’interface utilisateur{#classic-ui-components}
+   + Composants d’IU classique{#classic-ui-components}
       + [Développement de composants AEM (IU classique)](developing-components-classic.md)
-      + [Utilisation et extension de widgets (IU classique)](widgets.md)
-      + [Utilisation de xtypes (IU classique)](xtypes.md)
-      + [Développement de formulaires (IU classique)](developing-forms.md)
+      + [Utilisation et extension de widgets (IU classique)](widgets.md)
+      + [Utilisation des xtypes (IU classique)](xtypes.md)
+      + [Développement de formulaires (IU classique)](developing-forms.md)
 + Gestion de l’expérience découplée{#headless}
    + [Sans affichage et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) 
    + Applications sur une seule page{#spas}
-      + [Introduction et présentation des SPA](spa-walkthrough.md)
+      + [Introduction et présentation des applications sur une seule page (SPA)](spa-walkthrough.md)
       + [Tutoriel sur SPA WKND](spa-wknd.md)
-      + [Prise en main des SPA dans AEM - Réagir](spa-getting-started-react.md)
-      + [Prise en main des SPA dans AEM - Angular](spa-getting-started-angular.md)
+      + [Prise en main de SPA dans AEM - React](spa-getting-started-react.md)
+      + [Prise en main de SPA dans AEM - Angular](spa-getting-started-angular.md)
       + [Mise en œuvre d’un composant de réaction pour SPA](spa-implementing-react-component.md)
       + [Immersion dans les SPA](spa-deep-dives.md)
-      + [Aperçu de l’éditeur de SPA](spa-overview.md)
+      + [Présentation de l’éditeur de SPA](spa-overview.md)
       + [Développement de SPA pour AEM](spa-architecture.md)
       + [Plan directeur d’applications sur une seule page (SPA)](spa-blueprint.md)
       + [Composant de page SPA](spa-page-component.md)
       + [Mappage du modèle dynamique avec les composants pour les SPA](spa-dynamic-model-to-component-mapping.md)
-      + [Routage du modèle de SPA ](spa-routing.md)
+      + [Routage du modèle de SPA](spa-routing.md)
       + [Intégration de SPA et d’Adobe Experience Platform Launch](spa-launch.md)
-      + [SPA et rendu côté serveur ](spa-ssr.md)
+      + [SPA et rendu côté serveur](spa-ssr.md)
       + [Composant RemotePage](spa-remote-page.md)
       + [Modification d’une SPA externe dans AEM](spa-edit-external.md)
       + [Composants composites dans SPA](spa-composite-component.md)
@@ -122,7 +121,7 @@ ht-degree: 81%
    + API HTTP [ ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
    + [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
    + [Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
-   + [Présentation des fragments de contenu et de Content Services dans AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+   + [Présentation des fragments de contenu et des services de contenu dans AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Outils de développement{#devtools}
    + [Outils de développement](dev-tools.md)
    + [Outils de modernisation d’AEM](modernization-tools.md)
@@ -131,16 +130,16 @@ ht-degree: 81%
    + [Développement dans CRXDE Lite](developing-with-crxde-lite.md)
    + [Gestion des packages à l’aide de Maven](vlt-mavenplugin.md)
    + [Développement de projets AEM à l’aide d’Eclipse](howto-projects-eclipse.md)
-   + [Création de projets AEM à l’aide d’Apache Maven](ht-projects-maven.md)
+   + [Création de projets AEM à l’aide d’Apache Maven](ht-projects-maven.md)
    + [Développement de projets AEM à l’aide de IntelliJ IDEA](ht-intellij.md)
    + [Utilisation de l’outil VLT](ht-vlttool.md)
    + [Utilisation de l’outil de serveur proxy](ht-proxy-server.md)
-   + [Extension AEM Brackets](aem-brackets.md)
+   + [Extension AEM Brackets](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
-   + [Outil AEM Repo](aem-repo-tool.md)
+   + [Outil AEM Repo](aem-repo-tool.md)
 + Personnalisation{#personlization}
    + [ContextHub](contexthub.md)
-   + [Configuration de Context Hub](ch-configuring.md)
+   + [Configuration de ContextHub](ch-configuring.md)
    + [Ajout de ContextHub à des pages et accès à des magasins](ch-adding.md)
    + [Extension de ContextHub](ch-extend.md)
    + [Exemples de magasins candidats ContextHub ](ch-samplestores.md)
@@ -159,40 +158,40 @@ ht-degree: 81%
    + [Personnalisation et extensions de fragments de contenu](customizing-content-fragments.md)
    + [Fragments de contenu – Configuration des composants pour le rendu](content-fragments-config-components-rendering.md)
    + [Fragments d’expérience](experience-fragments.md)
-   + Workflows étendus{#extending-workflows}
+   + Extension des workflows{#extending-workflows}
       + [Développement et extension des workflows](workflows.md)
       + [Création de modèles de workflow](workflows-models.md)
       + [Extension des fonctionnalités de processus](workflows-customizing-extending.md)
       + [Interaction avec les workflows par programmation](workflows-program-interaction.md)
       + [Référence sur les étapes de workflow](workflows-step-ref.md)
-      + [Meilleures pratiques relatives aux workflows](workflows-best-practices.md)
+      + [Meilleures pratiques en matière de workflow](workflows-best-practices.md)
       + [Référence sur les processus de workflow](workflows-process-ref.md)
       + [Variables dans les workflows AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Extension du Multi Site Manager](extending-msm.md)
-   + Suivi et analyses{#extending-analytics}
+   + Suivi et Analytics{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
-      + [Ajouter le suivi des Adobe Analytics aux composants](extending-analytics-components.md)
-      + [Personnalisation du cadre Adobe Analytics](extending-analytics-framework.md)
+      + [Ajout d’un suivi Adobe Analytics aux composants](extending-analytics-components.md)
+      + [Personnalisation de la structure Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
       + [Configurations du service cloud](extending-cloud-config.md)
       + [Création d’un service cloud personnalisé](extending-cloud-config-custom-cloud.md)
    + [Création d’extensions personnalisées](extending-campaign-extensions.md)
    + Forms{#extending-forms}
-      + [Création de mises en correspondance de formulaires personnalisés](extending-campaign-form-mapping.md)
+      + [Création de mappages de formulaires personnalisés](extending-campaign-form-mapping.md)
       + [Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign](extending-campaign-custom-template.md)
       + [Script d’analyse des requêtes](analyze-request.md)
    + [Intégration de services à la console JMX](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/jmx-integration.html)
    + [Développement de l’éditeur en masse](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-bulk-editor.html)
-   + Extension de l’interface utilisateur classique{#extending-classic-ui}
-      + [Personnalisation de la console Sites web (IU classique)](customizing-siteadmin.md)
+   + Extension de l’IU classique{#extending-classic-ui}
+      + [Personnalisation de la console Sites web (IU classique)](customizing-siteadmin.md)
       + [Personnalisation de la console de bienvenue (IU classique)](customizing-the-welcome-console.md)
       + [Élaboration de rapports](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + Tests{#testing}
    + [Planification](planning.md)
-   + [Quels environnements de test seront nécessaires ?](test-environments.md)
-   + [Définition de vos cas de test](test-cases.md)
-   + [Tests : quand et avec qui ?](when-who.md)
+   + [Quels environnements de test sont nécessaires ?](test-environments.md)
+   + [Définition de cas de test](test-cases.md)
+   + [Test - quand et avec qui ?](when-who.md)
    + [Élaboration d’un plan de tests](test-plan.md)
    + [Suivi des résultats et formulation de commentaires](results-and-feedback.md)
    + [Outils de test et de suivi](tools.md)
@@ -202,10 +201,10 @@ ht-degree: 81%
    + [Tough Day](tough-day.md)
    + [Test de votre interface utilisateur](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
 + Bonnes pratiques{#bestpractices}
-   + [Présentation des meilleures pratiques](best-practices.md)
-   + [Lignes directrices AEM développement et bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html?lang=fr)
+   + [Présentation des bonnes pratiques](best-practices.md)
+   + [AEM Conseils de développement et bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html?lang=fr)
    + [Meilleures pratiques de développement](development-practices.md)
-   + [Content Architecture](content-architecture.md)
+   + [Architecture de contenu](content-architecture.md)
    + [Architecture logicielle](software-architecture.md)
    + Implémentation de référence We.Retail{#we-retail}
       + [Implémentation de référence We.Retail](we-retail.md)
@@ -214,7 +213,7 @@ ht-degree: 81%
       + [Test des modèles modifiables dans We.Retail](we-retail-editable-templates.md)
       + [Test d’une mise en page en responsive design dans We.Retail](we-retail-responsive-layout.md)
       + [Test de la structure de site globalisée dans We.Retail](we-retail-globalized-site-structure.md)
-      + [Test de fragments d&#39;expérience dans We.Retail](we-retail-experience-fragments.md)
+      + [Test des fragments d’expérience dans We.Retail](we-retail-experience-fragments.md)
    + [Conseils pour bien coder](coding-tips.md)
    + [Les pièges du codage](code-pitfalls.md)
    + [Lots OSGi](osgi-bundles.md)
@@ -224,6 +223,6 @@ ht-degree: 81%
 + Web mobile{#mobileweb}
    + [Web mobile](mobile-web.md)
    + [Création de filtres de groupe d’appareils](groupfilters.md)
-   + [Responsive Design pour les pages web](responsive.md)
-   + [Création de sites pour les périphériques mobiles](mobile.md)
+   + [Responsive Design pour les pages web](responsive.md)
+   + [Création de sites adaptés aux appareils mobiles](mobile.md)
    + [Émulateurs](emulators.md)
