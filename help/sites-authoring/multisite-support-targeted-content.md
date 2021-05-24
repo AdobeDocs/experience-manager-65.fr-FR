@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2906'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation de contenu ciblé sur plusieurs sites{#working-with-targeted-content-in-multisites}
 
@@ -41,7 +40,7 @@ Pour définir la façon dont vos sites partagent du contenu personnalisé, vous 
 
 Vous pouvez à tout moment suspendre ou restaurer l’héritage. En outre, si vous ne souhaitez pas suspendre l’héritage, vous pouvez également créer des expériences locales. Sauf indication contraire, toutes les pages utilisent par défaut la zone maître.
 
-## Présentation de la prise en charge de sites multiples pour le contenu ciblé    {#introduction-to-multisite-support-for-targeted-content}
+## Présentation de la prise en charge de sites multiples pour le contenu ciblé {#introduction-to-multisite-support-for-targeted-content}
 
 La prise en charge de sites multiples pour le contenu ciblé est prête à l’emploi. Elle vous permet de pousser le contenu ciblé du gabarit que vous gérez via MSM vers une Live Copy locale ou de gérer des modifications globales et locales du contenu en question.
 
@@ -57,11 +56,12 @@ Un site ou une Live Copy présente un lien vers une zone contenant les activité
 >
 >* Lorsque vous utilisez des déploiements ou des Live Copies, une licence MSM est requise.
 >* Lorsque vous utilisez la synchronisation avec Adobe Target, une licence Adobe Target est requise.
+
 >
 
 
 
-## Scénarios d’utilisation     {#use-cases}
+## Scénarios d’utilisation  {#use-cases}
 
 Vous pouvez configurer la prise en charge de sites multiples pour le contenu ciblé de plusieurs manières, en fonction de vos besoins. Cette section décrit le fonctionnement théorique dans le cas d’une marque. En outre, dans [Exemple : ciblage de contenu basé sur la géographie](#example-targeting-content-based-on-geography), vous pouvez découvrir une application réelle du ciblage de contenu sur plusieurs sites.
 
@@ -154,7 +154,7 @@ Pour mettre en place cette configuration dans AEM, procédez comme suit :
 * Le site C est lié à la zone héritée, qui est une Live Copy de la zone maître. Créez une zone comme Live Copy (avec une Live Copy reposant sur la zone maître). La zone héritée hérite des activités de la zone maître lors du déploiement.
 * Le site D est lié à sa propre zone isolée. Créez une zone complètement nouvelle sans aucune activité définie. La zone isolée ne partagera les activités avec aucun autre site.
 
-## Création de zones     {#creating-new-areas}
+## Création de zones  {#creating-new-areas}
 
 Les zones peuvent couvrir les activités et les offres. Après avoir créé une zone dans l’une d’entre elles (par exemple, les activités), la zone devient également disponible dans l’autre (par exemple, les offres).
 
@@ -249,16 +249,17 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 >
 >* Vous pouvez uniquement suspendre ou désolidariser des Live Copies dans une activité.
 >* Vous n’avez pas besoin de suspendre ou de désolidariser des Live Copies pour étendre une activité héritée. Vous pouvez toujours créer de **nouvelles** expériences et offres locales pour cette activité. Si vous souhaitez modifier une activité existante, il vous faut suspendre l’héritage.
+
 >
 
 
 
-### Suspension de l’héritage     {#suspending-inheritance}
+### Suspension de l’héritage  {#suspending-inheritance}
 
 Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activité :
 
 1. Accédez à la page sur laquelle vous souhaitez désolidariser ou suspendre l’héritage et appuyez ou cliquez sur **Ciblage** dans le menu déroulant de mode.
-1.  Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir l’état d’héritage. Appuyez ou cliquez sur **Commencer le ciblage**.
+1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir l’état d’héritage. Appuyez ou cliquez sur **Commencer le ciblage**.
 1. Pour suspendre une activité, effectuez l’une des opérations suivantes :
 
    1. Sélectionnez un élément de l’activité, tel que le public. AEM affiche automatiquement une fenêtre de confirmation Suspendre la Live Copy. (Vous pouvez suspendre la Live Copy en appuyant ou en cliquant sur n’importe quel élément du processus de ciblage.)
@@ -275,7 +276,7 @@ Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activi
 Pour rompre l’héritage du contenu ciblé dans une activité :
 
 1. Accédez à la page sur laquelle vous souhaitez désolidariser la Live Copy du gabarit et appuyez ou cliquez sur **Ciblage** dans le menu déroulant de mode.
-1.  Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir l’état d’héritage. Appuyez ou cliquez sur **Commencer le ciblage**.
+1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir l’état d’héritage. Appuyez ou cliquez sur **Commencer le ciblage**.
 1. Sélectionnez **Désolidariser une Live Copy** dans le menu déroulant de la barre d’outils. AEM confirme que vous souhaitez détacher la Live Copy.
 1. Appuyez ou cliquez sur **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la désolidarisation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est maintenant une activité locale.
 
@@ -295,7 +296,7 @@ Pour restaurer l’héritage du contenu ciblé dans une activité :
 
 1. Appuyez ou cliquez sur **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de Live Copy. Toutes les modifications apportées à l’activité en cours sont perdues si vous reprenez l’héritage.
 
-## Suppression de zones     {#deleting-areas}
+## Suppression de zones  {#deleting-areas}
 
 Lorsque vous supprimez une zone, vous supprimez toutes les activités au sein de cette zone. AEM vous avertit avant toute suppression de zone. Si vous supprimez une zone à laquelle un site est lié, le mappage de cette marque sera automatiquement redéfini sur la zone maître.
 
@@ -304,4 +305,3 @@ Pour supprimer une zone :
 1. Accédez à **Personnalisation** > **Activités** ou **Offres** et sélectionnez ensuite votre marque.
 1. Appuyez ou cliquez sur l’icône située en regard de la zone que vous souhaitez supprimer.
 1. Appuyez ou cliquez sur **Supprimer** et confirmez que vous souhaitez supprimer la zone.
-
