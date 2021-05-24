@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 93%
 
 ---
-
 
 # Affichage des données d’analyse de page{#seeing-page-analytics-data}
 
@@ -63,7 +62,7 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 >
 >Lorsqu’une arborescence de pages contient des enfants associés à différentes configurations de cloud d’Adobe Analytics, vous ne pouvez pas configurer les colonnes de données disponibles pour les pages.
 
-1. Dans Liste Vue, utilisez les sélecteurs de vue (à droite de la barre d’outils), sélectionnez **Paramètres de Vue**, puis **Ajouter les données Analytics personnalisées**.
+1. En mode Liste, utilisez les sélecteurs de vue (à droite de la barre d’outils), sélectionnez **Paramètres d’affichage**, puis **Ajouter des données Analytics personnalisées**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -75,7 +74,7 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 
 ### Ouverture de Content Insights à partir de la console Sites {#opening-content-insights-from-sites}
 
-Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l&#39;efficacité des pages.
+Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l’efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez voir Content Insight.
 1. Sur la barre d’outils, cliquez sur l’icône Analyses et recommandations.
@@ -158,4 +157,3 @@ La boîte de dialogue **Paramètres de l’Activity Map** propose plusieurs opti
    * Afficher en haut (Gagnants ou perdants)
    * Exclure le bas %
    * Mise à jour automatique (données et point)
-
