@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
-translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 74%
 
 ---
-
 
 # Configuration du suivi des liens Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
@@ -33,7 +32,7 @@ Lorsque des utilisateurs cliquent sur des liens figurant sur les pages de votre 
 
 ## Suivi des téléchargements de fichiers {#tracking-file-downloads}
 
-Configurez la structure Adobe Analytics de sorte que les fichiers téléchargés à partir des pages associées fassent automatiquement l’objet d’un suivi en tant que téléchargements dans Adobe Analytics. Lorsque vous activez le suivi des téléchargements, seuls les types de fichiers que vous spécifiez sont suivis.
+Configurez la structure Adobe Analytics de sorte que les fichiers téléchargés à partir des pages associées soient automatiquement suivis en tant que téléchargements dans Adobe Analytics. Lorsque vous activez le suivi des téléchargements, seuls les types de fichiers que vous spécifiez sont suivis.
 
 Les téléchargements des types de fichiers suivants sont suivis par défaut :
 
@@ -79,7 +78,7 @@ Propriétés de suivi lorsque l’utilisateur clique sur des liens externes :
 
 * **Filtres externes**  (Facultatif) Définit des filtres pour apparier les URL externes des cibles de lien. Lorsque les liens cibles correspondent au filtre, le lien est suivi. Les filtres externes sont utiles pour suivre uniquement certains des liens externes sur vos pages.
 
-    Pour spécifier les liens externes à suivre, tapez entièrement ou partiellement l’URL du lien cible. S’il y a plusieurs filtres, séparez-les par une virgule. Entourez les chaînes littérales par des guillemets simples. Aucune valeur (la valeur par défaut `''`, deux guillemets simples) entraîne le suivi de tous les liens externes.
+    Pour spécifier les liens externes à suivre, tapez entièrement ou partiellement l’URL du lien cible. S’il y a plusieurs filtres, séparez-les par une virgule. Entourez les chaînes littérales par des guillemets simples. Aucune valeur (la valeur par défaut `''`, deux guillemets simples) ne provoque le suivi de tous les liens externes.
 
 * **Filtres internes**  Définit des filtres pour apparier les URL des liens internes. Lorsque le lien cible des URL qui correspondent à ce filtre, le lien n’est pas suivi. La valeur par défaut est une commande JavaScript qui renvoie le nom d’hôte de l’URL de l’adresse de fenêtre en cours.
 
@@ -106,9 +105,9 @@ s.linkLeaveQueryString= false;
 
 ## Envoi de données de variable avec les clics sur les liens {#sending-variable-data-with-link-clicks}
 
-Vous pouvez configurer AEM pour envoyer des données de événement et de variable à Adobe Analytics lorsqu’un utilisateur clique sur un lien. Les propriétés **Configuration du suivi des liens** vous permettent de spécifier les événements Adobe Analytics et les variables à suivre lors des clics sur les liens.
+Vous pouvez configurer AEM pour envoyer des données d’événement et de variable à Adobe Analytics lorsqu’un utilisateur clique sur un lien. Les propriétés **Configuration du suivi des liens** vous permettent de spécifier les événements et variables Adobe Analytics à suivre lorsque des clics sur des liens se produisent.
 
-Les mappages de structure déterminent les valeurs d’événement et de variable. Vous pouvez mapper des variables Adobe Analytics aux variables de vos composants de contenu qui stockent les données dont vous souhaitez effectuer le suivi lorsque vous cliquez sur des liens.
+Les mappages de structure déterminent les valeurs d’événement et de variable. Vous pouvez mapper des variables Adobe Analytics aux variables de vos composants de contenu qui stockent les données que vous souhaitez tracker lorsque vous cliquez sur des liens.
 
 Pour envoyer des données de variable avec des clics sur des liens :
 
@@ -118,16 +117,16 @@ Pour envoyer des données de variable avec des clics sur des liens :
 Pour envoyer des propriétés données variables avec des clics sur des liens :
 
 * **Lier les**
-événements de suiviEntrez les variables de événement Adobe Analytics que vous souhaitez utiliser pour comptabiliser les clics sur les liens.
+événements de suiviSaisissez les variables d’événements Adobe Analytics que vous souhaitez utiliser pour comptabiliser les clics sur les liens.
 
    S’il y a plusieurs noms de variables, séparez-les par une virgule.
 
-   La valeur par défaut de `None` n’entraîne aucun suivi de événement.
+   La valeur par défaut `None` ne provoque aucun suivi d’événement.
 
 * **Lier les**
-variables de suiviEntrez les variables Adobe Analytics que vous souhaitez envoyer à Adobe Analytics lorsque vous cliquez sur des liens. S’il y a plusieurs noms de variables, séparez-les par une virgule.
+variables de suiviSaisissez les variables Adobe Analytics que vous souhaitez envoyer à Adobe Analytics lorsque vous cliquez sur un lien. S’il y a plusieurs noms de variables, séparez-les par une virgule.
 
-   La valeur par défaut de `None` n&#39;envoie aucune donnée de variable.
+   La valeur par défaut `None` n’entraîne l’envoi d’aucune donnée de variable.
 
 Lorsque vous spécifiez les événements et les variables à envoyer, la configuration est mise en œuvre sous forme de code dans le fichier `analytics.sitecatalyst.js` généré pour une page. L’exemple de code suivant est généré pour une page lorsque la structure suit l’événement `event10` et la propriété `prop4` :
 
@@ -138,7 +137,7 @@ s.linkTrackVars= 'prop4';
 
 ## Exemple de configuration du suivi des liens {#example-link-tracking-configuration}
 
-Suivez les procédures suivantes pour explorer le comportement de suivi des liens de l’intégration Adobe Analytics. Les procédures affichent les résultats de [Adobe Marketing Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+Suivez les procédures suivantes pour explorer le comportement de suivi des liens de l’intégration d’Adobe Analytics. Les procédures affichent les résultats de [Adobe Marketing Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 
 ### Configuration générale  {#general-configuration}
 
@@ -209,23 +208,23 @@ Cet exemple illustre le fonctionnement du mappage dans le cas du suivi et du dé
 
 1. Sélectionnez **Suivi externe**.
 1. Désélectionnez **Laisser la chaîne de requête**.
-1. Utilisez la valeur suivante pour la liste **Filtres externes** pour l&#39;identifier comme URL externe :
+1. Utilisez la valeur suivante pour la liste **Filtres externes** afin de l’identifier comme URL externe :
 
    `‘yahoo.com’`
 
-1. Ajoutez la valeur suivante dans le champ **Lier les Événements de suivi** :
+1. Ajoutez la valeur suivante au champ **Lier les événements de suivi** :
 
    ```
        event1,event2
    ```
 
-1. Ajoutez la valeur suivante au champ **Lier les variables de suivi** :
+1. Ajoutez la valeur suivante au champ **Vars de suivi des liens** :
 
    ```
        eVar1,eVar2
    ```
 
-1. Sur la page qui est associée à la structure, ajoutez un composant **Texte**. Dans le composant **Texte**, ajoutez un hyperlien pointant vers l’adresse suivante :
+1. Sur la page qui est associée à la structure, ajoutez un composant **Texte**. Dans le composant **Texte**, ajoutez un lien hypertexte pointant vers l’adresse suivante :
 
    `https://search.yahoo.com/?p=this`
 
@@ -237,7 +236,7 @@ L’appel ressemblera à ceci une fois affiché avec Adobe Marketing Cloud Debug
 
 >[!NOTE]
 >
->L&#39;URL ne contient pas la chaîne de Requête : `?p=this`
+>L’URL ne contient pas la chaîne de requête : `?p=this`
 
 ### Inclure le paramètre d’URL {#include-the-url-parameter}
 
@@ -245,13 +244,13 @@ L’appel ressemblera à ceci une fois affiché avec Adobe Marketing Cloud Debug
 1. Activez **Laisser la chaîne de requête**.
 1. Rechargez l’aperçu de la page, puis cliquez sur le lien.
 
-Les détails de l’appel qui s’affichent dans le débogueur Adobe Marketing Cloud sont similaires à l’exemple suivant :
+Les détails des appels qui apparaissent dans Adobe Marketing Cloud Debugger sont similaires à l’exemple suivant :
 
 ![aa-leavequerysearch-principal](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
->Cette fois, l’URL contient la chaîne de Requête : `?p=this`
+>Cette fois, l’URL contient la chaîne de requête : `?p=this`
 
 ## Suivi de liens ad hoc {#ad-hoc-link-tracking}
 
@@ -279,7 +278,7 @@ Configurez votre structure Adobe Analytics pour activer le suivi des liens ad ho
 
 >[!NOTE]
 >
->La configuration de XSS Antisamy se trouve maintenant dans SLING sous le chemin **/libs/sling/xss.config.xml** et les règles suivantes doivent être ajoutées pour que les liens ad hoc fonctionnent :
+>La configuration XSS Antisamy se trouve désormais dans SLING sous le chemin **/libs/sling/xss.config.xml** et les règles suivantes doivent être ajoutées pour que les liens ad hoc fonctionnent :
 
 #### Extension de la règle de balise d’ancrage {#anchor-tag-rule-extension}
 
@@ -332,13 +331,13 @@ Appliquez la procédure suivante afin de configurer le suivi des liens pour un c
 
    ![aa-17](assets/aa-17.png)
 
-1. Activez **Suivi des liens personnalisés** pour remplacer la configuration de suivi des liens de la structure Adobe Analytics et activer le suivi des liens pour le lien actuel.
+1. Activez **Suivi de liens personnalisés** pour remplacer la configuration de suivi des liens de la structure Adobe Analytics et activer le suivi des liens pour le lien actuel.
 
-1. (Facultatif) Pour effectuer le suivi des événements avec le clic sur le lien, ajoutez les noms de événement Adobe Analytics dans le champ **Inclure les variables Adobe Analytics**. Séparez plusieurs noms de événement par des virgules, par exemple
+1. (Facultatif) Pour effectuer le suivi des événements avec le clic sur les liens, ajoutez les noms des événements Adobe Analytics dans le champ **Inclure les variables Adobe Analytics** . Séparez plusieurs noms d’événement par des virgules, par exemple
 
    `event1, event22`.
 
-1. (Facultatif) Pour effectuer le suivi des données de variable à l’aide du clic sur le lien, ajoutez des variables Adobe Analytics dans le champ **Inclure les variables Adobe Analytics**. Utilisez l’un des formats suivants :
+1. (Facultatif) Pour suivre les données de variable avec le clic sur les liens, ajoutez les variables Adobe Analytics dans le champ **Inclure les variables Adobe Analytics**. Utilisez l’un des formats suivants :
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
    * *`<Variable-name>`*:  *`‘CONSTANT'`*
@@ -351,4 +350,3 @@ Appliquez la procédure suivante afin de configurer le suivi des liens pour un c
    S’il y a plusieurs valeurs, séparez-les par une virgule.
 
 1. **Cliquez sur OK**.
-
