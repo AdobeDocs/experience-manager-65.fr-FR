@@ -10,14 +10,13 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 82b8a5f4-583b-47ba-9579-b47364b56aa2
 docset: aem65
-translation-type: tm+mt
-source-git-commit: da08613be784f43ad3e3c3652b7e015640a48a9d
+exl-id: ee5df2c8-ab31-4be9-8ede-3c96f26fc626
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
 
 ---
-
 
 # Élaboration d’un plan de tests{#compiling-your-test-plan}
 
@@ -48,4 +47,3 @@ Pour établir un rapport des tests, il convient de synthétiser les résultats 
 * Pourcentage de tests déjà couverts.
 * Pourcentage de succès/échec.
 * Chiffres spécifiques liés aux tests de priorité.
-
