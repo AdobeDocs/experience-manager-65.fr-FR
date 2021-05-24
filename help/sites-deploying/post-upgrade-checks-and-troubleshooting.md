@@ -10,15 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Mise à niveau
+exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 95%
 
 ---
-
 
 # Vérifications et dépannage après une mise à niveau {#post-upgrade-checks-and-troubleshooting}
 
@@ -45,9 +44,9 @@ Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), 
 
 * [Activation des tâches planifiées personnalisées](#main-pars-header-244535083)
 
-* [Exécution du plan de test](#main-pars-header-1167972233)
+* [Exécutez le plan de test](#main-pars-header-1167972233)
 
-### Vérification des journaux pour la réussite de la mise à niveau {#verify-logs-for-upgrade-success}
+### Vérification des journaux pour la réussite de la mise à niveau  {#verify-logs-for-upgrade-success}
 
 **upgrade.log**
 
@@ -74,7 +73,7 @@ Voici un exemple de rapport affichant un lot n’ayant pas été installé lors 
 
 Le fichier error.log doit être soigneusement passé en revue pendant et après le démarrage d’AEM à l’aide du jar de la version cible. Les avertissements ou les erreurs doivent être vérifiés. En général, il est conseillé de rechercher les problèmes au début du journal. Les erreurs qui surviennent par la suite dans le journal peuvent en réalité être des effets secondaires d’une cause principale signalée tôt au début du fichier. Si des erreurs et des avertissements s’affichent à plusieurs reprises, voir la section ci-dessous [Analyse des problèmes avec la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
-### Vérification des lots OSGi {#verify-osgi-bundles}
+### Vérification des lots OSGi  {#verify-osgi-bundles}
 
 Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots ne sont pas démarrés. Si des lots sont installés, consultez le fichier `error.log` pour identifier le problème racine.
 
@@ -84,7 +83,7 @@ Après la mise à niveau, vous devez constater qu’Oak a été mis à jour vers
 
 ### Inspectez le fichier PreUpgradeBackup {#inspect-preupgradebackup-folder}
 
-Au cours de la mise à niveau, AEM tentera de sauvegarder les personnalisations et de les stocker sous `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Pour afficher ce dossier dans CRXDE Lite, vous avez peut-être besoin d’[activer temporairement CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+Pendant la mise à niveau, AEM tentera de sauvegarder les personnalisations et de les stocker sous `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Pour afficher ce dossier dans CRXDE Lite, vous avez peut-être besoin d’[activer temporairement CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStatus` avec la valeur `COMPLETED` (TERMINÉ). Le dossier **to-process** doit être vide et le nœud **overwritten** (remplacé) indique les nœuds qui ont été remplacés lors de la mise à niveau. Le contenu sous le nœud **leftovers** indique le contenu qui ne peut pas être fusionné en toute sécurité lors de la mise à niveau. Si votre implémentation dépend de nœuds enfants (pas déjà installés par votre module de code mis à niveau), ils doivent être fusionnés manuellement.
 
@@ -92,7 +91,7 @@ Désactivez CRXDE Lite après cet exercice si vous êtes dans un environnement i
 
 ### Validation initiale des pages  {#initial-validation-of-pages}
 
-Effectuez une première validation de plusieurs pages dans AEM. Si vous mettez à niveau un environnement d’auteur, ouvrez la page de Début et la page d’accueil ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Dans les environnements de création et de publication, ouvrez quelques pages d’application et testez-les pour vous assurer qu’elles fonctionnent correctement. En cas de problème, veuillez consulter le fichier `error.log` pour un dépannage.
+Effectuez une première validation de plusieurs pages dans AEM. Si vous mettez à niveau un environnement de création, ouvrez la page de démarrage et la page d’accueil ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Dans les environnements de création et de publication, ouvrez quelques pages d’application et testez-les pour vous assurer qu’elles fonctionnent correctement. En cas de problème, veuillez consulter le fichier `error.log` pour un dépannage.
 
 ### Appliquez les modules de service AEM {#apply-aem-service-packs}
 
@@ -180,7 +179,7 @@ La manière de gérer le code personnalisé erroné consiste à réaliser en pre
 
 ### Personnalisations manquantes sous /etc {#missing-customizations-under-etc}
 
-`/apps` et  `/libs` sont bien gérées par la mise à niveau, mais les modifications apportées à la version  `/etc` peuvent nécessiter une restauration manuelle à partir de  `/var/upgrade/PreUpgradeBackup` la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
+`/apps` et  `/libs` sont bien gérés par la mise à niveau, mais les modifications sous  `/etc` peuvent devoir être restaurées manuellement  `/var/upgrade/PreUpgradeBackup` après la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
 
 ### Analyse des journaux error.log et upgrade.log  {#analyzing-the-error.log-and-upgrade.log}
 
@@ -194,7 +193,7 @@ grep -v UnrelatedErrorString
 
 Certains messages d’erreur peuvent ne pas être immédiatement explicatifs. Dans ce cas, l’étude du contexte dans lequel ils se sont produits peut également aider à comprendre où l’erreur a été créée. Vous pouvez séparer l’erreur à l’aide de :
 
-* `grep -B` pour ajouter des lignes avant l&#39;erreur ;
+* `grep -B` pour ajouter des lignes avant l’erreur ;
 
 ou
 
