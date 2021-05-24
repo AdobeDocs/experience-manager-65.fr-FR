@@ -10,22 +10,21 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2197'
 ht-degree: 91%
 
 ---
 
-
 # Concepts de l’interface utilisateur (IU) tactile d’AEM{#concepts-of-the-aem-touch-enabled-ui}
 
-AEM dispose d&#39;une interface utilisateur tactile [adaptée](/help/sites-authoring/responsive-layout.md) pour l&#39;environnement auteur, conçue pour fonctionner à la fois sur les périphériques tactiles et de bureau.
+AEM dispose d’une interface utilisateur tactile [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création, conçue pour fonctionner sur les appareils tactiles et de bureau.
 
 >[!NOTE]
 >
->L’interface utilisateur tactile est l’interface utilisateur standard pour AEM. L’interface utilisateur classique a été abandonnée avec AEM 6.4.
+>L’IU tactile est l’IU standard pour AEM. L’IU classique a été abandonnée avec AEM 6.4.
 
 L’interface utilisateur tactile se compose des éléments suivants :
 
@@ -70,7 +69,7 @@ Les principes de base dans l’IU tactile sont les suivants :
 * Inclure des tests intégrés
 * Approche ascendante pour garantir l’application de ces principes à tous les éléments et composants
 
-Pour un aperçu plus complet de la structure de l’interface utilisateur tactile, voir l’article [Structure de l’interface utilisateur tactile AEM](/help/sites-developing/touch-ui-structure.md).
+Pour un aperçu plus complet de la structure de l’IU tactile, consultez l’article [Structure de l’IU tactile AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pile technologique AEM {#aem-technology-stack}
 
@@ -113,8 +112,8 @@ Ces objectifs sont conformes aux exigences suivantes :
 ![chlimage_1-81](assets/chlimage_1-81.png)
 GraniteUI.pdf
 
-[Get ](assets/graniteui.pdf)
-FileThe Granite UI :
+[Obtenir ](assets/graniteui.pdf)
+le fichierL’IU Granite :
 
 * utilise l’architecture RESTful de Sling,
 * implémente des bibliothèques de composants destinées à la création d’applications web axées sur le contenu,
@@ -177,24 +176,24 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
    <td><strong>IU Granite</strong></td>
   </tr>
   <tr>
-   <td>Appel de procédure distante<br /> </td>
-   <td>Transmissions d'État</td>
+   <td>Appel de procédure à distance<br /> </td>
+   <td>Transmissions d’état</td>
   </tr>
   <tr>
    <td>Objets de transfert de données</td>
    <td>Hypermédia</td>
   </tr>
   <tr>
-   <td>Le client connaît les serveurs internes</td>
+   <td>Le client connaît les paramètres internes du serveur</td>
    <td>Le client ne connaît pas les informations internes</td>
   </tr>
   <tr>
-   <td>"Grand client"</td>
+   <td>"Client gros"</td>
    <td>"Client léger"</td>
   </tr>
   <tr>
    <td>Bibliothèques clientes spécialisées</td>
-   <td>Bibliothèques clientes universelles</td>
+   <td>Bibliothèques client universelles</td>
   </tr>
  </tbody>
 </table>
@@ -231,7 +230,7 @@ Cette bibliothèque de composants de base (Foundation) peut être utilisée ou �
 
 Lors de la mise à niveau du code ExtJS afin d’utiliser l’IU Granite, la liste ci-dessous fournit un aperçu des types de nœud et xtypes ExtJS, accompagnés des types de ressources IU Granite équivalents.
 
-| **ExtJS xtype** | **Type de ressource de l’interface utilisateur Granit** |
+| **ExtJS xtype** | **Type de ressource de l’IU Granite** |
 |---|---|
 | `button` | `granite/ui/components/foundation/form/button` |
 | `checkbox` | `granite/ui/components/foundation/form/checkbox` |
@@ -250,7 +249,7 @@ Lors de la mise à niveau du code ExtJS afin d’utiliser l’IU Granite, la li
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
-| **Type de noeud** | **Type de ressource de l’interface utilisateur Granit** |
+| **Type de noeud** | **Type de ressource de l’IU Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
 | `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
@@ -274,12 +273,12 @@ Mise en œuvre:
 * Composants prédéfinis à l’aide des composants de base.
 * Les composants peuvent être personnalisés.
 
-## IU Coral  {#coral-ui}
+## IU Coral {#coral-ui}
 
 CoralUI.pdf
 
-[L’interface utilisateur Get ](assets/coralui.pdf)
-FileCoral (CUI) est une implémentation du style visuel de l’Adobe pour l’interface utilisateur tactile, conçue pour assurer la cohérence de l’expérience utilisateur sur plusieurs produits. Elle comprend tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
+[L’interface utilisateur ](assets/coralui.pdf)
+de GetFileCoral (CUI) est une implémentation du style visuel de l’Adobe pour l’interface utilisateur tactile, conçue pour assurer la cohérence de l’expérience utilisateur sur plusieurs produits. Elle comprend tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
 
 >[!CAUTION]
 >
@@ -370,7 +369,7 @@ Plusieurs des éléments HTML devront se comporter de façon dynamique ; en ouv
 
 Un module externe est soit :
 
-* Conçu pour fonctionner sur un élément DOM spécifique. Par exemple, un module externe dialog s’attend à trouver `DIV class=dialog`
+* Conçu pour fonctionner sur un élément DOM spécifique. Par exemple, un module externe de boîte de dialogue s’attend à trouver `DIV class=dialog`
 * Générique par nature. Par exemple, un gestionnaire de mises en page fournit la disposition pour toute liste d’éléments `DIV` ou `LI`.
 
 Le comportement du module externe peut être personnalisé en utilisant l’une des méthodes suivantes :
@@ -380,10 +379,10 @@ Le comportement du module externe peut être personnalisé en utilisant l’une 
 
 Bien que le développeur puisse choisir la méthode la mieux adaptée à chaque module externe, le principe de base consiste à utiliser :
 
-* `data-*` pour les options liées à la mise en page HTML. pour indiquer le nombre de colonnes, par exemple.
+* `data-*` attributs pour les options liées à la mise en page HTML. pour indiquer le nombre de colonnes, par exemple.
 * Des options/classes API pour les fonctionnalités liées aux données ; pour créer la liste des éléments à afficher, par exemple.
 
-Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément que vous souhaitez valider, vous devez spécifier le formulaire d’entrée requis sous la forme d’un attribut personnalisé `data-*`. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
+Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément que vous souhaitez valider, vous devez spécifier le formulaire de saisie requis sous la forme d’un attribut `data-*` personnalisé. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
 
 >[!NOTE]
 >
@@ -399,7 +398,7 @@ Objectif:
 Mise en œuvre:
 
 * Module externe jQuery, lié à un ou plusieurs éléments DOM spécifiques.
-* Utilisation des attributs `data-*` pour personnaliser le comportement
+* Utilisation d’attributs `data-*` pour personnaliser le comportement
 
 Extrait de l’exemple de balisage (notez les options spécifiées sous la forme d’attributs data-*) :
 
