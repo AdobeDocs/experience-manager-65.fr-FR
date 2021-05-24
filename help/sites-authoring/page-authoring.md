@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 
 ---
-
 
 # Création de pages{#authoring-pages}
 
@@ -58,4 +57,3 @@ Cette fonction fournit un système de paragraphes qui permet de positionner des 
 
 * **Recherche en cours de frappe**
 Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques en cours de saisie de la requête.
-
