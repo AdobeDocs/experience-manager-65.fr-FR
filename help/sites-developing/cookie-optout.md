@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
-translation-type: tm+mt
-source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 81%
 
 ---
 
-
 # Configuration de l’utilisation de cookies{#configuring-cookie-usage}
 
-AEM fournit un service qui vous permet de configurer et de contrôler l’utilisation des cookies dans vos pages Web :
+AEM fournit un service qui vous permet de configurer et de contrôler la manière dont les cookies sont utilisés avec vos pages web :
 
 * Un service configurable côté serveur conserve la liste des cookies qui peuvent être utilisés.
 * Une API JavaScript permet à votre code JavaScript de vérifier qu’un cookie peut être utilisé.
@@ -35,9 +34,9 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
 
 | Nom de propriété (console Web) | Nom de propriété OSGi | Description |
 |---|---|---|
-| Cookies d’exclusion | optout.cookies | Nom des cookies qui indiquent, lorsqu’ils sont présents sur le périphérique de l’utilisateur, que celui-ci n’a pas consenti à utiliser les cookies. |
-| En-têtes HTTP d’exclusion | optout.headers | Noms des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à utiliser des cookies. |
-| Cookies de Liste blanche | optout.whitelist.cookies | Liste de cookies essentiels au fonctionnement du site Web et pouvant être utilisés sans le consentement de l’utilisateur. |
+| Cookies d’exclusion | optout.cookies | Les noms des cookies qui indiquent, lorsqu’ils sont présents sur l’appareil de l’utilisateur, que celui-ci n’a pas consenti à utiliser les cookies. |
+| En-têtes HTTP d’exclusion | optout.headers | Les noms des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à l’utilisation de cookies. |
+| Cookies de liste blanche | optout.whitelist.cookies | Liste des cookies qui sont essentiels au fonctionnement du site web et qui peuvent être utilisés sans le consentement de l’utilisateur. |
 
 ## Validation de l’utilisation de cookies {#validating-cookie-usage}
 
@@ -115,4 +114,4 @@ Détermine si un cookie spécifique peut être utilisé dans le navigateur de l�
 
 **Renvoie**
 
-Valeur booléenne `true` si `cookieName` peut être utilisée, ou valeur `false` si `cookieName` ne peut pas être utilisée.
+Une valeur booléenne `true` si `cookieName` peut être utilisée ou une valeur `false` si `cookieName` ne peut pas être utilisée.
