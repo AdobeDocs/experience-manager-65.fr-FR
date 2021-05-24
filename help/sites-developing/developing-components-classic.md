@@ -10,14 +10,13 @@ topic-tags: components
 content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
-translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 73%
 
 ---
-
 
 # Développement de composants AEM (IU classique){#developing-aem-components-classic-ui}
 
@@ -25,7 +24,7 @@ L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparenc
 
 >[!NOTE]
 >
->De nombreux aspects du développement de composants sont communs à l’interface utilisateur classique et à l’interface utilisateur tactile. **Vous devez donc lire [AEM Composants - Les concepts de base](/help/sites-developing/components-basics.md) avant** à l’aide de cette page, qui traite des particularités de l’interface utilisateur classique.
+>De nombreux aspects du développement de composants sont communs à l’IU classique et à l’IU tactile. Par conséquent, **vous devez lire [Composants AEM - Principes de base](/help/sites-developing/components-basics.md) avant** à l’aide de cette page, qui traite des détails de l’IU classique.
 
 >[!NOTE]
 >
@@ -35,7 +34,7 @@ L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparenc
 
 ## Structure {#structure}
 
-La structure de base d&#39;un composant est traitée sur la page [Composants AEM - Les concepts de base](/help/sites-developing/components-basics.md#structure), qui s&#39;applique à la fois aux interfaces utilisateur tactiles et classiques. Même si vous ne devez pas utiliser les paramètres de l’IU tactile dans votre nouveau composant, il est intéressant de les connaître lorsque vous héritez des composants existants.
+La structure de base d’un composant est décrite sur la page [Composants d’AEM - Principes de base](/help/sites-developing/components-basics.md#structure), qui s’applique à la fois aux interfaces utilisateur tactile et classique. Même si vous ne devez pas utiliser les paramètres de l’IU tactile dans votre nouveau composant, il est intéressant de les connaître lorsque vous héritez des composants existants.
 
 ## Scripts JSP {#jsp-scripts}
 
@@ -55,7 +54,7 @@ L’emplacement du fichier `global.jsp` par défaut est le suivant :
 
 >[!NOTE]
 >
->Le chemin `/libs/wcm/global.jsp`, utilisé par les versions CQ 5.3 et antérieures, est désormais obsolète.
+>Le chemin `/libs/wcm/global.jsp`, qui était utilisé par les versions CQ 5.3 et antérieures, est désormais obsolète.
 
 ### Fonction de global.jsp, des API utilisées et des bibliothèques de balises {#function-of-global-jsp-used-apis-and-taglibs}
 
@@ -70,11 +69,11 @@ Résumé :
    * `resource` - Objet Ressource Sling (  `slingRequest.getResource();`).
    * `resourceResolver` - Objet Sling Resource Resolver (  `slingRequest.getResoucreResolver();`).
    * `currentNode` – Nœud JCR résolu pour la requête.
-   * `log` - Journalisation par défaut ().
-   * `sling` - Aide de script Sling.
-   * `properties` - Les propriétés de la ressource visée (  `resource.adaptTo(ValueMap.class);`).
+   * `log` - Enregistreur par défaut ().
+   * `sling` - L’assistant de script Sling.
+   * `properties` - Propriétés de la ressource gérée (  `resource.adaptTo(ValueMap.class);`).
    * `pageProperties` – Propriétés de la page de la ressource gérée.
-   * `pageManager` - Gestionnaire de pages pour l&#39;accès aux pages de contenu AEM (  `resourceResolver.adaptTo(PageManager.class);`).
+   * `pageManager` - Gestionnaire de pages pour l’accès aux AEM pages de contenu (  `resourceResolver.adaptTo(PageManager.class);`).
    * `component` – Objet du composant AEM en cours.
    * `designer` - Objet designer pour la récupération des informations de conception (  `resourceResolver.adaptTo(Designer.class);`).
    * `currentDesign` – Conception de la ressource gérée.
@@ -84,7 +83,7 @@ Résumé :
 
 Il existe trois méthodes pour accéder au contenu dans AEM WCM :
 
-* Par le biais de l’objet properties introduit dans `global.jsp` :
+* Via l’objet de propriétés introduit dans `global.jsp` :
 
    L’objet properties est une instance de ValueMap (voir [API Sling](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) et contient toutes les propriétés de la ressource actuelle.
 
@@ -92,15 +91,15 @@ Il existe trois méthodes pour accéder au contenu dans AEM WCM :
 
    Exemple : `String paragraphTitle = properties.get("jcr:title", "no title");` utilisé dans le script de rendu d’un composant de paragraphe standard.
 
-* Par le biais de l&#39;objet `currentPage` introduit dans `global.jsp` :
+* Via l’objet `currentPage` introduit dans `global.jsp` :
 
-   L&#39;objet `currentPage` est une instance d&#39;une page (voir [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). La classe de page fournit plusieurs méthodes d’accès au contenu.
+   L’objet `currentPage` est une instance d’une page (voir [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). La classe de page fournit plusieurs méthodes d’accès au contenu.
 
    Exemple: `String pageTitle = currentPage.getTitle();`
 
-* Par l&#39;intermédiaire de l&#39;objet `currentNode` introduit dans `global.jsp` :
+* Via l’objet `currentNode` introduit dans `global.jsp` :
 
-   L&#39;objet `currentNode` est une instance d&#39;un noeud (voir [API JCR](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Les propriétés d&#39;un noeud sont accessibles par la méthode `getProperty()`.
+   L’objet `currentNode` est une instance d’un noeud (voir [API JCR](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Les propriétés d&#39;un noeud sont accessibles par la méthode `getProperty()`.
 
    Exemple: `String pageTitle = currentNode.getProperty("jcr:title");`
 
@@ -114,15 +113,15 @@ Pour plus d’informations, voir le document [Bibliothèques de balises](/help/s
 
 Les sites web modernes sont très dépendants du traitement côté client effectué par du code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
-Pour résoudre ce problème, AEM fournit **Dossiers de bibliothèque côté client**, qui vous permettent de stocker votre code côté client dans le référentiel, de l&#39;organiser en catégories et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct.
+Pour résoudre ce problème, AEM fournit **des dossiers de bibliothèque côté client**, qui vous permettent de stocker votre code côté client dans le référentiel, de l’organiser en catégories et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct.
 
-Voir le document [Utilisation de bibliothèques HTML côté client](/help/sites-developing/clientlibs.md) pour plus d’informations.
+Pour plus d’informations, voir le document [Utilisation de bibliothèques HTML côté client](/help/sites-developing/clientlibs.md) .
 
 ## Boîte de dialogue {#dialog}
 
 Votre composant a besoin d’une boîte de dialogue pour que les auteurs puissent ajouter et configurer le contenu.
 
-Voir [Composants AEM - Les concepts de base](/help/sites-developing/components-basics.md#dialogs) pour plus de détails.
+Voir [AEM Composants - Principes de base](/help/sites-developing/components-basics.md#dialogs) pour plus de détails.
 
 ## Configuration du comportement de modification {#configuring-the-edit-behavior}
 
@@ -159,19 +158,19 @@ Pour développer un nouveau composant pour AEM sur la base d’un composant exis
    * de `/libs/foundation/components/text`
    * vers `/apps/myProject/components/text`
 
-1. Modifiez `jcr:title` pour refléter son nouveau nom.
+1. Modifiez la balise `jcr:title` afin de refléter son nouveau nom.
 1. Ouvrez le nouveau dossier de composants et effectuez les modifications voulues. Supprimez également toute information superflue du dossier.
 
    Vous pouvez effectuer les modifications suivantes :
 
    * Ajouter un nouveau champ dans la boîte de dialogue
 
-      * `cq:dialog` - boîte de dialogue pour l&#39;interface utilisateur tactile
+      * `cq:dialog` - boîte de dialogue pour l’IU tactile
       * `dialog` : boîte de dialogue pour l’interface utilisateur classique
-   * remplacement du fichier `.jsp` (nommez-le après votre nouveau composant)
+   * Remplacement du fichier `.jsp` (nommez-le après votre nouveau composant)
    * Retravailler complètement le composant, si vous le souhaitez
 
-   Par exemple, si vous prenez une copie du composant Texte standard, vous pouvez ajouter un champ supplémentaire à la boîte de dialogue, puis mettre à jour `.jsp` pour traiter l&#39;entrée qui y est effectuée.
+   Par exemple, si vous prenez une copie du composant Texte standard, vous pouvez ajouter un champ supplémentaire à la boîte de dialogue, puis mettre à jour `.jsp` pour traiter l’entrée qui y est effectuée.
 
    >[!NOTE]
    >
@@ -191,30 +190,30 @@ Pour développer un nouveau composant pour AEM sur la base d’un composant exis
 
 1. L’un des nœuds suivants doit être présent et correctement initialisé pour que le nouveau composant puisse s’afficher :
 
-   * `cq:dialog` - boîte de dialogue pour l&#39;interface utilisateur tactile
+   * `cq:dialog` - boîte de dialogue pour l’IU tactile
    * `dialog` : boîte de dialogue pour l’interface utilisateur classique
    * `cq:editConfig` : comportement des composants dans l’environnement de modification (glisser-déposer, par exemple)
-   * `design_dialog` - boîte de dialogue pour le mode de conception (interface utilisateur classique uniquement)
+   * `design_dialog` - boîte de dialogue pour le mode de conception (IU classique uniquement)
 
 1. Activez le nouveau composant dans votre système de paragraphes en effectuant l’une des opérations suivantes :
 
-   * en utilisant CRXDE Lite pour ajouter la valeur `<path-to-component>` (par exemple, `/apps/geometrixx/components/myComponent`) aux composants de propriété du noeud `/etc/designs/geometrixx/jcr:content/contentpage/par`
+   * Utilisation de CRXDE Lite pour ajouter la valeur `<path-to-component>` (par exemple, `/apps/geometrixx/components/myComponent`) aux composants de propriété du noeud `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * Suivez les instructions de la section [Ajout de nouveaux composants aux systèmes de paragraphes](#adding-a-new-component-to-the-paragraph-system-design-mode).
 
 1. Dans AEM WCM, ouvrez une page de votre site web et insérez un nouveau paragraphe du type que vous venez de créer pour vous assurer que le composant fonctionne correctement.
 
 >[!NOTE]
 >
->Pour afficher les statistiques de minutage du chargement de page, vous pouvez utiliser Ctrl-Maj-U - avec `?debugClientLibs=true` défini dans l’URL.
+>Pour afficher les statistiques de minutage pour le chargement de la page, vous pouvez utiliser Ctrl+Maj+U, avec `?debugClientLibs=true` défini dans l’URL.
 
 ### Ajout d’un nouveau composant au système de paragraphes (mode Création) {#adding-a-new-component-to-the-paragraph-system-design-mode}
 
 Une fois que le composant a été développé, vous l’ajoutez au système de paragraphes, ce qui permet aux auteurs de le sélectionner et de l’utiliser lors de la modification d’une page.
 
-1. Accédez à une page de votre environnement de création qui utilise le système de paragraphe, par exemple `<contentPath>/Test.html`.
+1. Accédez à une page de votre environnement de création qui utilise le système de paragraphes, par exemple `<contentPath>/Test.html`.
 1. Pour basculer vers le mode Création, effectuez l’une des opérations suivantes :
 
-   * ajouter `?wcmmode=design` à la fin de l’URL et y accéder de nouveau, par exemple :
+   * Ajoutez `?wcmmode=design` à la fin de l’URL et accédez à nouveau, par exemple :
 
       `<contextPath>/ Test.html?wcmmode=design`
 
@@ -253,13 +252,13 @@ Les techniques suivantes sont décrites dans cet exercice :
 
 >[!NOTE]
 >
->Cet exemple est basé sur l’échantillon de contenu Geometrixx. Celui-ci n’est plus fourni avec AEM et a été remplacé par We.Retail. Voir le document [Implémentation de référence We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) pour savoir comment télécharger et installer le Geometrixx.
+>Cet exemple est basé sur l’échantillon de contenu Geometrixx. Celui-ci n’est plus fourni avec AEM et a été remplacé par We.Retail. Consultez le document [Implémentation de référence We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) pour savoir comment télécharger et installer Geometrixx.
 
 #### Extension du composant textimage existant {#extending-the-existing-textimage-component}
 
-Pour créer le nouveau composant, nous utilisons le composant textimage standard comme base et nous le modifions. Nous allons stocker le nouveau composant dans l’exemple d’application Geometrixx AEM WCM.
+Pour créer le composant, nous utilisons le composant textimage standard comme base et nous le modifions. Nous allons stocker le nouveau composant dans l’exemple d’application Geometrixx AEM WCM.
 
-1. Copiez le composant textimage standard de `/libs/foundation/components/textimage` dans le dossier du composant de Geometrixx, `/apps/geometrixx/components`, en utilisant textimage comme nom de noeud de cible. (Pour copier le composant, accédez à son emplacement, cliquez avec le bouton droit de la souris, sélectionnez Copier, puis accédez au répertoire cible.)
+1. Copiez le composant textimage standard de `/libs/foundation/components/textimage` dans le dossier du composant Geometrixx, `/apps/geometrixx/components`, en utilisant textimage comme nom du noeud cible. (Pour copier le composant, accédez à son emplacement, cliquez avec le bouton droit de la souris, sélectionnez Copier, puis accédez au répertoire cible.)
 
    ![chlimage_1-59](assets/chlimage_1-59a.png)
 
@@ -267,13 +266,13 @@ Pour créer le nouveau composant, nous utilisons le composant textimage standard
 
    * définition de boîte de dialogue : `textimage/dialog`
    * script de composant : `textimage/textimage.jsp`
-   * modifier le noeud de configuration (permettant le glisser-déposer des ressources) : `textimage/cq:editConfig`
+   * noeud de configuration de modification (permettant le glisser-déposer des ressources) : `textimage/cq:editConfig`
 
    >[!NOTE]
    >
    >La définition de la boîte de dialogue dépend de l’interface utilisateur :
    >
-   >* Interface utilisateur tactile : `textimage/cq:dialog`
+   >* IU tactile : `textimage/cq:dialog`
    >* IU classique :`textimage/dialog`
 
 
@@ -294,7 +293,7 @@ Pour créer le nouveau composant, nous utilisons le composant textimage standard
 
    ![chlimage_1-60](assets/chlimage_1-60a.png)
 
-1. Modifiez la propriété `sling:resourceType` du noeud modifier la configuration de l&#39;image (propriété : `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) à `geometrixx/components/textimage.`
+1. Modifiez la propriété `sling:resourceType` du noeud de configuration d’édition de l’image (propriété : `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) en `geometrixx/components/textimage.`
 
    De cette manière, lorsqu’une image est déposée sur le composant de la page, la propriété `sling:resourceType` du composant textimage étendu est définie sur `geometrixx/components/textimage.`.
 
@@ -312,14 +311,14 @@ Pour créer le nouveau composant, nous utilisons le composant textimage standard
    * Pour tab3 :
 
       * Ne modifiez pas les autres propriétés et sous-nœuds.
-      * Ajouter une nouvelle définition de champ à `tab3/items`, position de noeud de type `cq:Widget`
-      * Définissez les propriétés suivantes (de type String) pour le nouveau `tab3/items/position`noeud :
+      * Ajoutez une nouvelle définition de champ à `tab3/items`, position de noeud de type `cq:Widget`
+      * Définissez les propriétés suivantes (de type Chaîne) pour le nouveau noeud `tab3/items/position`:
 
          * `name`: `./imagePosition`
          * `xtype`:  `selection`
          * `fieldLabel`:  `Image Position`
          * `type`:  `select`
-      * Ajoutez le sous-noeud `position/options` de type `cq:WidgetCollection` pour représenter les deux choix de placement d’image et créez sous celui-ci deux noeuds, o1 et o2 de type `nt:unstructured`.
+      * Ajoutez le sous-noeud `position/options` de type `cq:WidgetCollection` pour représenter les deux choix de placement d’image, et sous celui-ci, créez deux noeuds, o1 et o2 de type `nt:unstructured`.
       * Pour le noeud `position/options/o1`, définissez les propriétés : `text` à `Left` et `value` à `left.`
       * Pour le noeud `position/options/o2`, définissez les propriétés : `text` à `Right` et `value` à `right`.
    * Supprimez tab4.
@@ -368,9 +367,9 @@ Le composant stocke son contenu dans un paragraphe sur la page Company.
 
 ### Désactivation de la fonctionnalité Téléchargement du composant image  {#disable-upload-capability-of-the-image-component}
 
-Pour désactiver cette fonctionnalité, nous utilisons le composant d&#39;image standard comme base et nous le modifions. Nous allons stocker le nouveau composant dans l’exemple d’application Geometrixx.
+Pour désactiver cette fonctionnalité, nous utilisons le composant d’image standard comme base et nous le modifions. Nous allons stocker le nouveau composant dans l’exemple d’application Geometrixx.
 
-1. Copiez le composant d’image standard de `/libs/foundation/components/image` dans le dossier du composant de Geometrixx, `/apps/geometrixx/components`, en utilisant l’image comme nom de noeud de cible.
+1. Copiez le composant d’image standard de `/libs/foundation/components/image` dans le dossier de composants de Geometrixx, `/apps/geometrixx/components`, en utilisant image comme nom de noeud cible.
 
    ![chlimage_1-62](assets/chlimage_1-62a.png)
 
@@ -401,4 +400,3 @@ Pour désactiver cette fonctionnalité, nous utilisons le composant d&#39;image 
    ![chlimage_1-65](assets/chlimage_1-65a.png)
 
 1. Le composant est maintenant prêt à l’emploi.
-
