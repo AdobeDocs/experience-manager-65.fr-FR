@@ -10,14 +10,13 @@ topic-tags: content
 content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 69%
 
 ---
-
 
 # Console Balisage de l’interface utilisateur (IU) classique{#classic-ui-tagging-console}
 
@@ -29,7 +28,7 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 * en mode de création
 * Connectez-vous avec des droits d’administrateur.
-* accéder à la console
+* Accédez à la console
 par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![](assets/managing_tags_usingthetagasministrationconsole.png)
@@ -50,16 +49,16 @@ par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
    * **Titre**
 (
-*Obligatoire*) Titre d’affichage de la balise. Même s’il est possible d’utiliser n’importe quel caractère, il est recommandé de ne pas utiliser ces caractères spéciaux :
+*Obligatoire*) Titre affiché pour la balise. Même s’il est possible d’utiliser n’importe quel caractère, il est recommandé de ne pas utiliser ces caractères spéciaux :
 
-      * `colon (:)` - Délimiteur d&#39;espace de nommage
+      * `colon (:)` - délimiteur d’espace de noms
       * `forward slash (/)` - délimiteur de sous-balises
 
       Si vous saisissez ces caractères, ils ne s’affichent pas.
 
    * **Nom**
 (
-*Obligatoire*) Nom du noeud pour la balise .
+*Obligatoire*) Nom du noeud de la balise.
 
    * **Description**
 (
@@ -142,14 +141,14 @@ Pour afficher le nombre d’utilisations d’un tag :
 
 ## Gestion de tags dans diverses langues  {#managing-tags-in-different-languages}
 
-La propriété facultative `title`   d’une balise peut être traduite en plusieurs langues. La balise `titles` peut ensuite être affichée en fonction de la langue de l’utilisateur ou de la langue de la page.
+La propriété facultative `title`   d’une balise peut être traduite en plusieurs langues. La balise `titles` peut alors s’afficher en fonction de la langue de l’utilisateur ou de la langue de la page.
 
 ### Définition de titres de balises dans plusieurs langues {#defining-tag-titles-in-multiple-languages}
 
-La procédure suivante montre comment traduire la balise `title`Animals **en anglais, allemand et français :**
+La procédure suivante montre comment traduire la balise `title`Animals **en anglais, en allemand et en français :**
 
 1. Accédez à la console **Balisage**.
-1. Modifiez la balise **Animaux** ci-dessous **Balises** > **Images photographiques**.
+1. Modifiez la balise **Animals** sous **Balises** > **Images de photothèque**.
 1. Ajoutez les traductions dans les langues suivantes :
 
    * **Anglais** : Animals
@@ -168,21 +167,21 @@ Pour ajouter une nouvelle langue à la boîte de dialogue, reportez-vous à la s
 
 ### Affichage des titres des balises dans les propriétés de page dans une langue spécifiée {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-Par défaut, la balise `titles`dans les propriétés de la page s’affiche dans la langue de la page. La boîte de dialogue des balises dans les propriétés de la page comporte un champ de langue qui permet l’affichage de la balise `titles`dans une autre langue. La procédure suivante décrit comment afficher la balise `titles`en français :
+Par défaut, la balise `titles`dans les propriétés de page s’affiche dans la langue de la page. La boîte de dialogue de balise dans les propriétés de page comporte un champ de langue qui permet d’afficher la balise `titles`dans une autre langue. La procédure suivante décrit l’affichage de la balise `titles`en français :
 
-1. Reportez-vous à la section précédente pour ajouter la traduction française aux **Animaux** ci-dessous **Balises** > **Images photographiques**.
+1. Reportez-vous à la section précédente pour ajouter la traduction française à la section **Animals** sous **Balises** > **Images de photothèque**.
 1. Ouvrez les propriétés de la page **Produits** dans la branche English (Anglais) du site **Geometrixx**.
-1. Ouvrez la boîte de dialogue **Balises/Mots-clés** (en sélectionnant le menu déroulant à droite de la zone d&#39;affichage Balises/Mots-clés) et sélectionnez la langue **française** dans le menu déroulant dans le coin inférieur droit.
-1. Faites défiler la page à l’aide des flèches gauche et droite jusqu’à ce que vous puissiez sélectionner l’onglet **Images photographiques**.
+1. Ouvrez la boîte de dialogue **Balises/Mots-clés** (en sélectionnant le menu déroulant à droite de la zone d’affichage Balises/Mots-clés) et sélectionnez la langue **Français** dans le menu déroulant dans le coin inférieur droit.
+1. Faites défiler l’écran à l’aide des flèches gauche-droite jusqu’à ce que vous puissiez sélectionner l’onglet **Images de photothèque** .
 
-   Sélectionnez la balise **Animaux** (**Animaux**) et sélectionnez-la en dehors de la boîte de dialogue pour la fermer et ajouter la balise aux propriétés de la page.
+   Sélectionnez la balise **Animals** (**Animaux**) et cliquez en dehors de la boîte de dialogue pour la fermer et ajouter la balise aux propriétés de la page.
 
    ![](assets/french_tag.png)
 
-Par défaut, la boîte de dialogue Propriétés de la page affiche la balise `titles`selon la langue de la page.
+Par défaut, la boîte de dialogue Propriétés de la page affiche la balise `titles`en fonction de la langue de la page.
 
 En général, la langue de la balise est celle de la page si elle est disponible. Si le widget [`tag` est utilisé dans d’autres cas (dans des formulaires ou des boîtes de dialogue, par exemple), la langue du tag dépend du contexte.](/help/sites-developing/building.md#tagging-on-the-client-side)
 
 >[!NOTE]
 >
->Le nuage de balises et les mots-clés de métadonnées dans le composant de page standard utilisent la balise localisée `titles`en fonction de la langue de page, le cas échéant.
+>Le nuage de balises et les méta-mots-clés dans le composant de page standard utilisent la balise localisée `titles`en fonction de la langue de la page, le cas échéant.
