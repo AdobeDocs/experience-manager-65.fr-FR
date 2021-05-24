@@ -10,16 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+exl-id: dd65b308-c449-4f64-9f46-0797b922910f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 96%
 
 ---
 
-
-# Recherche{#searching}
+# Rechercher{#searching}
 
 L’environnement de création d’AEM comporte divers mécanismes de recherche de contenu, selon le type de ressource que vous utilisez.
 
@@ -60,7 +59,7 @@ Pour rechercher et filtrer vos ressources :
 
    Vous pouvez sélectionner une ressource spécifique (pour appliquer d’autres actions) ou accéder à d’autres actions en sélectionnant le type de ressource concerné, par exemple **Afficher tous les sites** :
 
-   ![capture d&#39;écran_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
+   ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 
 1. Si vous souhaitez accéder à plus d’options, sélectionnez le symbole représentant un rail (en haut à gauche) pour ouvrir le panneau latéral **Filtres et options**.
 
@@ -109,11 +108,11 @@ Outre la recherche selon diverses facettes, vous pouvez également enregistrer u
 
 1. Attribuez-lui un nom, puis cliquez sur **Enregistrer** pour confirmer :
 
-   ![capture d&#39;écran_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
+   ![screen-shot_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
 
 1. La recherche enregistrée sera disponible dans le sélecteur lors de votre prochain accès au panneau de recherche :
 
-   ![capture d&#39;écran_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
+   ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
 1. Une fois enregistrée, vous pouvez :
 
