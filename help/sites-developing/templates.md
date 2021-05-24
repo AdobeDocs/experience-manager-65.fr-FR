@@ -10,14 +10,13 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
-translation-type: tm+mt
-source-git-commit: 27276945a0bdb20410f4c0e98868ea5ce1c09a47
+exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 90%
 
 ---
-
 
 # Modèles{#templates}
 
@@ -29,7 +28,7 @@ Les modèles sont utilisés à divers endroits dans AEM :
 
 Les modèles suivants sont décrits en détail :
 
-* [Modèles de pages - Modifiables](/help/sites-developing/page-templates-editable.md)
+* [Modèles de pages – Modifiables](/help/sites-developing/page-templates-editable.md)
 * [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md)
 * [Modèles de fragment de contenu](/help/sites-developing/content-fragment-templates.md)
 * [Rendu de modèle adaptatif](/help/sites-developing/templates-adaptive-rendering.md)
@@ -44,7 +43,7 @@ AEM propose désormais deux types de modèles de base pour la création de page
 
 ### Modèles modifiables {#editable-templates}
 
-Les modèles modifiables sont maintenant considérés comme les meilleures pratiques pour le développement avec AEM.
+Les modèles modifiables sont désormais considérés comme des bonnes pratiques pour le développement avec AEM.
 
 Avantages des modèles modifiables :
 
@@ -63,14 +62,14 @@ Avantages des modèles modifiables :
 
 >[!NOTE]
 >
->Un article de la communauté AEM est disponible pour expliquer comment développer un site Experience Manager avec des modèles modifiables, voir [Création d’un site Web Adobe Experience Manager 6.5 à l’aide de modèles modifiables](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
+>Un article de la communauté AEM explique comment développer un site de Experience Manager avec des modèles modifiables. Voir [Création d’un site web Adobe Experience Manager 6.5 à l’aide de modèles modifiables](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
 
 ### Modèles statiques {#static-templates}
 
-Les modèles statiques :
+Modèles statiques:
 
 * Doivent être définis et configurés par vos développeurs.
-* Il s&#39;agissait du système de modèle d&#39;AEM d&#39;origine et il a été disponible pour de nombreuses versions.
+* Il s’agissait du système de création de modèles d’AEM d’origine, disponible pour de nombreuses versions.
 * Un modèle statique est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
 * Sont copiés pour créer la nouvelle page, aucune connexion dynamique n’existe après cela.
 * Utilisez le [mode Conception](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
@@ -79,9 +78,9 @@ Les modèles statiques :
 
 >[!NOTE]
 >
->À l&#39;AEM 6.5, l&#39;utilisation de modèles statiques n&#39;est pas considérée comme une bonne pratique. Privilégiez les modèles modifiables à la place.
+>Depuis AEM version 6.5, l’utilisation des modèles statiques n’est plus considérée comme une bonne pratique. Privilégiez les modèles modifiables à la place.
 >
->[AEM ](modernization-tools.md) ModernisationTools peut vous aider à migrer des modèles statiques vers des modèles modifiables.
+>[AEM ](modernization-tools.md) les outils de modernisation peuvent vous aider à migrer de modèles statiques à des modèles modifiables.
 
 ### Disponibilité des modèles {#template-availability}
 
@@ -97,7 +96,7 @@ Les modèles statiques :
 * uniquement sur la racine du site.
 >
 >
-Pour un exemple, voir We.Retail : `/content/we-retail/jcr:content`
+Pour obtenir un exemple, voir We.Retail : `/content/we-retail/jcr:content`
 >
 >Les propriétés `allowedPaths`, `allowedParents` et `allowedChildren` peuvent également être placées sur les modèles pour définir des règles plus élaborées. Cependant, dans la mesure du possible, il est *beaucoup* plus simple de définir d’autres propriétés `cq:allowedTemplates` dans des sous-sections du site si des restrictions supplémentaires des modèles autorisés s’imposent.
 >
