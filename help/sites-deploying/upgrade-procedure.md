@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Mise à niveau
+exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 97%
 
 ---
-
 
 # Procédure de mise à niveau {#upgrade-procedure}
 
@@ -45,7 +44,7 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 
 ### Préparation de la mise à niveau {#upgrade-preparation}
 
-![upgrade-prepare-author](assets/upgrade-preparation-author.png)
+![upgrade-préparation-author](assets/upgrade-preparation-author.png)
 
 1. Arrêtez la création de contenu
 
@@ -78,7 +77,7 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 
 ### En cas d’échec (restauration) {#if-unsuccessful-rollback}
 
-![annulation](assets/rollback.jpg)
+![restauration](assets/rollback.jpg)
 
 1. Démarrez l’instance Cold Standby en tant que nouvelle instance principale
 
@@ -90,7 +89,7 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 
 La topologie utilisée pour cette section se compose d’un groupe d’auteurs MongoMK avec au moins deux instances d’auteur AEM, prises en charge par au moins deux bases de données MongoMK. Toutes les instances d’auteur partagent une banque de données. Ces étapes doivent s’appliquer aux entrepôts de données de fichier et S3. La réplication se produit des serveurs d’auteur à la ferme de publication TarMK.
 
-![mongo-topologie](assets/mongo-topology.jpg)
+![mongo-topology](assets/mongo-topology.jpg)
 
 ### Préparation de la mise à niveau {#upgrade-preparation-1}
 
@@ -108,7 +107,7 @@ La topologie utilisée pour cette section se compose d’un groupe d’auteurs M
 
 ### Exécution de la mise à niveau {#Upgrade-execution-1}
 
-![mongo-exécution](assets/mongo-execution.jpg)
+![mongo-execution](assets/mongo-execution.jpg)
 
 1. Exécutez une [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md) sur l’auteur principal
 1. Mettez à jour le dispatcher ou le module web *si nécessaire*
@@ -152,7 +151,7 @@ La topologie utilisée pour cette section se compose d’un groupe d’auteurs M
 
 La topologie utilisée pour cette section se compose de deux instances de publication TarMK, devancés par des dispatchers, eux-mêmes devancés par un équilibreur de charge. La réplication se produit du serveur de l’auteur à la ferme de publication TarMK.
 
-![tarmk-pub-agricole v5](assets/tarmk-pub-farmv5.png)
+![tarmk-pub-farm v5](assets/tarmk-pub-farmv5.png)
 
 ### Exécution de la mise à niveau {#upgrade-execution-2}
 
@@ -201,4 +200,3 @@ La topologie utilisée pour cette section se compose de deux instances de public
 1. Effectuez les [vérifications d’après mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
 
 ![final](assets/final.jpg)
-
