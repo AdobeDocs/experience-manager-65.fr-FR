@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
-translation-type: tm+mt
-source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 87%
 
 ---
-
 
 # Activation de CRXDE Lite dans AEM{#enabling-crxde-lite-in-aem}
 
@@ -24,7 +23,7 @@ Pour vous assurer que les installations AEM sont aussi sécurisées que possible
 
 Toutefois, comme CRXDE Lite dépend du lot `org.apache.sling.jcr.davex` pour fonctionner correctement, désactiver WebDAV aura pour effet de désactiver CRXDE Lite également.
 
-Dans ce cas, l’accès à `https://serveraddress:4502/crx/de/index.jsp` affichera un noeud racine vide et toutes les requêtes HTTP aux ressources du CRXDE Lite échoueront :
+Dans ce cas, la navigation vers `https://serveraddress:4502/crx/de/index.jsp` affichera un noeud racine vide, et toutes les requêtes HTTP aux ressources du CRXDE Lite échoueront :
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
@@ -34,7 +33,7 @@ Bien que cette recommandation vise à réduire les surfaces d’attaque autant q
 
 Si cette option est désactivée, vous pouvez activer CRXDE Lite en suivant la procédure ci-dessous :
 
-1. Accédez à la console Composants OSGi à l&#39;adresse `http://localhost:4502/system/console/components`
+1. Accédez à la console Composants OSGi à l’adresse `http://localhost:4502/system/console/components`
 1. Recherchez le composant suivant :
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`
@@ -62,4 +61,3 @@ Pour plus d’informations sur les fonctions de sécurité d’AEM 6, voir les 
 
 * [Liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md)
 * [Exécution d’AEM en mode Prêt pour la production](/help/sites-administering/production-ready.md)
-
