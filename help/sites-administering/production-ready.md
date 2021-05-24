@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
-translation-type: tm+mt
-source-git-commit: 730a690bcbf5935ca00ed69c27ce108cb2664c22
+exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 74%
 
 ---
 
-
 # Exécution d’AEM en mode Prêt pour la production{#running-aem-in-production-ready-mode}
 
-Avec AEM 6.1, Adobe introduit le nouveau mode d&#39;exécution `"nosamplecontent"` destiné à automatiser les étapes requises pour préparer une instance AEM pour le déploiement dans un environnement de production.
+Avec AEM 6.1, Adobe introduit le nouveau mode d’exécution `"nosamplecontent"` destiné à automatiser les étapes nécessaires à la préparation d’une instance AEM pour le déploiement dans un environnement de production.
 
 Le nouveau mode d’exécution configure non seulement automatiquement l’instance pour qu’elle soit conforme aux meilleures pratiques de sécurité décrites dans la liste de contrôle de sécurité, mais en plus supprime tous les exemples d’applications et de configurations geometrixx dans le processus.
 
@@ -32,7 +31,7 @@ Le nouveau mode d’exécution configure non seulement automatiquement l’insta
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-Pour exécuter l&#39;AEM en mode prêt à la production, il vous suffit d&#39;ajouter le `nosamplecontent` via le commutateur `-r` runmode à vos arguments de démarrage existants :
+Pour exécuter l’AEM en mode prêt pour la production, il vous suffit d’ajouter la balise `nosamplecontent` via le mode d’exécution `-r` à vos arguments de démarrage existants :
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -53,15 +52,15 @@ Plus spécifiquement, les modifications de configuration suivantes seront effect
 1. Le lot **Accès WebDAV simple Apache Sling aux référentiels** (`org.apache.sling.jcr.webdav`) ne sera disponible que sur les instances de **création**.
 
 1. Les utilisateurs nouvellement créés devront changer de mot de passe à la première connexion. Ceci ne s’applique pas à l’administrateur.
-1. **Générez le débogage** infois désactivé pour le gestionnaire **de script JavaScript** Apache Sling.
+1. **Générez** infois le débogage désactivé pour le gestionnaire de script Java  **Apache Sling**.
 
 1. Les options **Contenu mappé** et **Générer les informations de débogage** sont désactivées pour le **gestionnaire de script JSP Apache Sling**.
 
-1. Le filtre WCM **Day CQ** est défini sur `edit` sur **author** et `disabled` sur les instances **publish**.
+1. Le **filtre de gestion de contenu web Day CQ** est défini sur `edit` sur les instances **author** et `disabled` sur les instances **publish**.
 
-1. Le **Gestionnaire de bibliothèques HTML Granite** Adobe est configuré avec les paramètres suivants :
+1. Le **Gestionnaire de bibliothèques HTML Granite d’Adobe** est configuré avec les paramètres suivants :
 
-   1. **Minifier :** `enabled`
+   1. **Minimiser :** `enabled`
    1. **Déboguer:** `disabled`
    1. **Gzip :** `enabled`
    1. **Minutage :** `disabled`
@@ -70,10 +69,9 @@ Plus spécifiquement, les modifications de configuration suivantes seront effect
 
 | **Configuration** | **Auteur** | **Publication** |
 |---|---|---|
-| Rendu TXT | disabled | désactivé |
-| Rendu HTML | désactivé | désactivé |
+| Rendu TXT | disabled | disabled |
+| Rendu HTML | disabled | disabled |
 | Rendu JSON | enabled | enabled |
-| Rendu XML | désactivé | désactivé |
+| Rendu XML | disabled | disabled |
 | json.maximumresults | 1000 | 100 |
-| Index automatique | désactivé | désactivé |
-
+| Index automatique | disabled | disabled |
