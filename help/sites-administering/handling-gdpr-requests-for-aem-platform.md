@@ -6,30 +6,29 @@ seo-description: 'null'
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 58%
 
 ---
 
-
 # Traitement des demandes RGPD pour AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations relatives à la protection des données et à la protection de la vie privée ; comme le RGPD, l&#39;ACCP, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité ; comme le RGPD, le CCPA, etc.
 
-## Prise en charge du RGMD par AEM Foundation {#aem-foundation-gdpr-support}
+## Prise en charge du RGPD par AEM Foundation {#aem-foundation-gdpr-support}
 
-Au niveau AEM Foundation, les données personnelles stockées sont le Profil utilisateur. Par conséquent, les informations fournies dans cet article expliquent principalement comment accéder à ces profils utilisateur et les supprimer pour répondre respectivement aux demandes d’accès et de suppression dans le cadre du RGPD.
+Au niveau de AEM Foundation, les données personnelles stockées sont le profil utilisateur. Par conséquent, les informations fournies dans cet article expliquent principalement comment accéder à ces profils utilisateur et les supprimer pour répondre respectivement aux demandes d’accès et de suppression dans le cadre du RGPD.
 
 ## Accès à un profil utilisateur {#accessing-a-user-profile}
 
 ### Étapes manuelles {#manual-steps}
 
-1. Ouvrez la console d’administration utilisateur en accédant à **[!UICONTROL Paramètres - Sécurité - Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`.
+1. Ouvrez la console Administration utilisateur en accédant à **[!UICONTROL Paramètres - Sécurité - Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`.
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -62,7 +61,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 *Récupération des données utilisateur*
 
-Utilisation du chemin d’accès au noeud à partir de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
+Utilisation du chemin de noeud de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -87,13 +86,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   L’interface utilisateur indique ensuite que l’utilisateur a été désactivé en graissant et en ajoutant un verrou à la carte de profil :
+   L’interface utilisateur indique alors que l’utilisateur a été désactivé en grisant et en ajoutant un verrou à la carte de profil :
 
-   ![désableduser](assets/disableduser.png)
+   ![disableduser](assets/disableduser.png)
 
 ### Suppression des informations d’un profil utilisateur {#delete-user-profile-information}
 
-1. Connectez-vous au CRXDE Lite, puis recherchez `[!UICONTROL userId]` :
+1. Connectez-vous à CRXDE Lite, puis recherchez `[!UICONTROL userId]` :
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -104,7 +103,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Supprimez les nœuds de profil et tous leurs enfants. Il existe deux formats de nœuds de profil, selon la version d’AEM :
 
    1. Le profil privé par défaut sous `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`, pour les nouveaux profils créés à l’aide de AEM 6.5.
+   1. `[!UICONTROL /profiles]`, pour les nouveaux profils créés à l’aide d’AEM 6.5.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
@@ -121,7 +120,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 * *Désactivation de l’utilisateur*
 
-Utilisation du chemin d’accès au noeud à partir de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
+Utilisation du chemin de noeud de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -129,7 +128,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Suppression du ou des profils utilisateur*
 
-Utilisation du chemin d’accès au noeud à partir de la propriété home de la charge utile JSON renvoyée par la commande de détection de compte et des emplacements de noeud de profil prêts à l’emploi connus :
+Utilisation du chemin d’accès au noeud de la propriété home de la charge utile JSON renvoyée par la commande de découverte de compte et des emplacements de noeud de profil prêts à l’emploi connus :
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
@@ -138,4 +137,3 @@ curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':ope
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
 ```
-
