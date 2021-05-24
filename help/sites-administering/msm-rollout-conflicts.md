@@ -10,18 +10,17 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 59%
+ht-degree: 62%
 
 ---
 
-
 # Conflits de déploiement dans MSM{#msm-rollout-conflicts}
 
-Des conflits peuvent survenir si de nouvelles pages portant le même nom de page sont créées à la fois dans la branche du plan directeur et dans une branche de la copie dynamique dépendante.
+Des conflits peuvent se produire si de nouvelles pages portant le même nom de page sont créées à la fois dans la branche de plan directeur et dans une branche de Live Copy dépendante.
 
 Ces conflits doivent être gérés et résolus lors du déploiement.
 
@@ -43,34 +42,34 @@ Outre les fonctionnalités standard, des gestionnaires de conflit personnalisés
 
 Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b`, créée dans les branches Plan directeur et Live Copy (créée manuellement) pour illustrer les différentes méthodes de résolution des conflits :
 
-* plan directeur : `/b`
+* blueprint: `/b`
 
-   Un gabarit ; avec 1 page enfant, bp-level-1.
+   un gabarit ; avec 1 page enfant, bp-level-1.
 
-* copie en direct : `/b`
+* Live Copy : `/b`
 
-   Une page créée manuellement dans la branche de la copie dynamique ; avec une page enfant, `lc-level-1`.
+   une page créée manuellement dans la branche Live Copy ; avec une page enfant, `lc-level-1`.
 
-   * Activé lors de la publication en tant que `/b`, avec la page enfant.
+   * Activé lors de la publication sous la forme `/b`, avec la page enfant.
 
 **Avant le déploiement**
 
 <table>
  <tbody>
   <tr>
-   <td><strong>avant le déploiement</strong></td>
-   <td><strong>copie dynamique avant le déploiement</strong></td>
-   <td><strong>publier avant le déploiement</strong></td>
+   <td><strong>plan directeur avant le déploiement</strong></td>
+   <td><strong>Live Copy avant le déploiement</strong></td>
+   <td><strong>publication avant déploiement</strong></td>
   </tr>
   <tr>
-   <td><code>b</code> <br /> (créé dans la branche du plan directeur, prêt pour le déploiement)<br /> </td>
-   <td><code>b</code> <br /> (créé manuellement dans une branche de copie dynamique)<br /> </td>
-   <td><code>b</code> <br /> (contient le contenu de la page b créée manuellement dans la branche de la copie dynamique)</td>
+   <td><code>b</code> <br /> (créé dans la branche de plan directeur, prêt pour le déploiement)<br /> </td>
+   <td><code>b</code> <br /> (créé manuellement dans la branche Live Copy)<br /> </td>
+   <td><code>b</code> <br /> (contient le contenu de la page b qui a été créée manuellement dans la branche Live Copy)</td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (créé manuellement dans une branche de copie dynamique)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (contient le contenu de la page<br /> enfant-level-1 créée manuellement dans la branche de la copie dynamique)</td>
+   <td><code> /lc-level-1</code> <br /> (créé manuellement dans la branche Live Copy)<br /> </td>
+   <td><code> /lc-level-1</code> <br /> (contient le contenu de la page<br /> child-level-1 qui a été créé manuellement dans la branche Live Copy)</td>
   </tr>
  </tbody>
 </table>
@@ -79,13 +78,13 @@ Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b
 
 Le gestionnaire de déploiement permet d’activer ou de désactiver la gestion des conflits.
 
-À cet effet, à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **gestionnaire de déploiement WCM Day CQ** :
+Ceci est effectué à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **gestionnaire de déploiement WCM Day CQ**:
 
-* **Gérer les conflits avec les pages** créées manuellement :
+* **Gérez le conflit avec les pages** créées manuellement :
 
    ( `rolloutmgr.conflicthandling.enabled`)
 
-   Définissez cette variable sur true si le gestionnaire de déploiement doit gérer les conflits provenant d&#39;une page créée dans la copie dynamique avec un nom présent dans le plan directeur.
+   Définissez cette variable sur true si le gestionnaire de déploiement doit gérer les conflits provenant d’une page créée dans la Live Copy avec un nom existant dans le plan directeur.
 
 AEM possède un [comportement prédéfini lorsque la gestion des conflits a été désactivée](#behavior-when-conflict-handling-deactivated).
 
@@ -106,22 +105,22 @@ AEM comporte les éléments suivants :
 
 Le gestionnaire de conflits par défaut :
 
-* Est appelé `ResourceNameRolloutConflictHandler`
+* S’appelle `ResourceNameRolloutConflictHandler`
 
 * Avec ce gestionnaire, la page du plan directeur prévaut.
-* Le classement des services pour ce gestionnaire est défini sur faible ( &quot;i.e. sous la valeur par défaut de la propriété `service.ranking`), car l’hypothèse est que les gestionnaires personnalisés auront besoin d’un classement plus élevé. Cependant, le classement n’est pas le minimum absolu pour s’assurer de la flexibilité lorsque cela est nécessaire.
+* Le classement des services pour ce gestionnaire est défini sur le bas ( &quot;c.-à-d. sous la valeur par défaut de la propriété `service.ranking`, car on suppose que les gestionnaires personnalisés auront besoin d’un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour s’assurer de la flexibilité lorsque cela est nécessaire.
 
-Ce gestionnaire de conflits donne la priorité au plan directeur. La page de la copie dynamique `/b` est déplacée (dans la branche de la copie dynamique) vers `/b_msm_moved`.
+Ce gestionnaire de conflits donne la priorité au plan directeur. La page Live Copy `/b` est déplacée (dans la branche Live Copy) vers `/b_msm_moved`.
 
-* copie en direct : `/b`
+* Live Copy : `/b`
 
-   Est déplacé (dans la copie dynamique) vers `/b_msm_moved`. Cela fait office de sauvegarde et permet de s’assurer qu’aucun contenu n’est perdu.
+   Est déplacé (dans la Live Copy) vers `/b_msm_moved`. Cela fait office de sauvegarde et permet de s’assurer qu’aucun contenu n’est perdu.
 
    * `lc-level-1` n’est pas déplacé.
 
 * plan directeur : `/b`
 
-   Est déployé sur la page de copie dynamique `/b`.
+   est déployé sur la page Live Copy `/b`.
 
    * `bp-level-1` est déployé dans la Live Copy.
 
@@ -131,17 +130,17 @@ Ce gestionnaire de conflits donne la priorité au plan directeur. La page de la 
  <tbody>
   <tr>
    <td><strong>plan directeur après le déploiement</strong></td>
-   <td><strong>copie dynamique après le déploiement</strong><br /> </td>
+   <td><strong>Live Copy après le déploiement</strong><br /> </td>
    <td></td>
-   <td><strong>copie dynamique après le déploiement</strong><br /> <br /> <br /> </td>
+   <td><strong>Live Copy après le déploiement</strong><br /> <br /> <br /> </td>
    <td><strong>publier après le déploiement</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (a le contenu de la page du plan directeur b qui a été publiée)<br /> </td>
+   <td><code>b</code> <br /> (contient le contenu de la page de plan directeur b qui a été déployée)<br /> </td>
    <td></td>
-   <td><code>b_msm_moved</code> <br /> (contient le contenu de la page b qui a été créée manuellement dans la branche de la copie dynamique)</td>
-   <td><code>b</code> <br /> (aucun changement ; contient le contenu de la page d'origine b qui a été créée manuellement dans la branche de la copie dynamique et est maintenant appelée b_msm_move)<br /> </td>
+   <td><code>b_msm_moved</code> <br /> (contient le contenu de la page b qui a été créée manuellement dans la branche Live Copy)</td>
+   <td><code>b</code> <br /> (aucune modification; contient le contenu de la page d’origine b qui a été créée manuellement dans la branche Live Copy et s’appelle désormais b_msm_moved)<br /> </td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
@@ -177,15 +176,15 @@ Si vous [désactivez manuellement la gestion des conflits](#rollout-manager-and-
 >
 >AEM ne fournit pas d’indication lorsque des conflits sont ignorés, car ce comportement doit être configuré explicitement. Il est donc considéré comme le comportement exigé.
 
-Dans ce cas, la Live Copy prévaut effectivement. La page du plan directeur `/b` n&#39;est pas copiée et la page de la copie dynamique `/b` n&#39;est pas touchée.
+Dans ce cas, la Live Copy prévaut effectivement. La page de plan directeur `/b` n’est pas copiée et la page Live Copy `/b` n’est pas touchée.
 
 * plan directeur : `/b`
 
-   N’est pas copié du tout, mais est ignoré.
+   N’est pas copié du tout et est ignoré.
 
-* copie en direct : `/b`
+* Live Copy : `/b`
 
-   Reste le même.
+   Reste la même.
 
 <table>
  <caption>
@@ -194,13 +193,13 @@ Dans ce cas, la Live Copy prévaut effectivement. La page du plan directeur `/b`
  <tbody>
   <tr>
    <td><strong>plan directeur après le déploiement</strong></td>
-   <td><strong>copie dynamique après le déploiement</strong><br /> <br /> <br /> </td>
+   <td><strong>Live Copy après le déploiement</strong><br /> <br /> <br /> </td>
    <td><strong>publier après le déploiement</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (aucun changement ; a le contenu de la page b créée manuellement dans la branche de la copie dynamique)</td>
-   <td><code>b</code> <br /> (aucun changement ; contient le contenu de la page b créée manuellement dans la branche de la copie dynamique)<br /> </td>
+   <td><code>b</code> <br /> (aucune modification; comporte le contenu de la page b qui a été créée manuellement dans la branche Live Copy).</td>
+   <td><code>b</code> <br /> (aucune modification; contient le contenu de la page b qui a été créée manuellement dans la branche Live Copy).<br /> </td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code> </td>
