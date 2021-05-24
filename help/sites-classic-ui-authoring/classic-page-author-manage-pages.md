@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 91%
 
 ---
-
 
 # Création et organisation des pages{#creating-and-organizing-pages}
 
@@ -41,7 +40,7 @@ La structure d’un site web peut être comparée à celle d’un *arbre* qui s
 
 Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est accessible la page `Triangle` :
 
-* Environnement d’auteur
+* Environnement de création
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -49,7 +48,7 @@ Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est 
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Selon la configuration de votre instance, l’utilisation de `/content` peut être facultative sur l’environnement de publication.
+   Selon la configuration de votre instance, l’utilisation de `/content` peut être facultative dans l’environnement de publication.
 
 ```xml
   /content
@@ -71,7 +70,7 @@ Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est 
     /...
 ```
 
-Cette structure peut être consultée à partir de la console Sites Web, que vous pouvez utiliser pour [parcourir l&#39;arborescence](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Cette structure peut être visualisée à partir de la console Sites Web, que vous pouvez utiliser pour [parcourir l’arborescence](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -89,7 +88,7 @@ Lors de la création d’une page, il y a deux champs clés :
    * Il est utilisé pour générer l’URI.
    * L’entrée utilisateur pour ce champ est facultative. Si le nom n’est pas spécifié, il est dérivé du titre.
 
-Lors de la création d’une nouvelle page, AEM [validera le nom de la page conformément aux conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+Lors de la création d’une page, AEM validera [le nom de la page en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
 L’implémentation et la liste des caractères autorisés diffèrent légèrement selon l’interface utilisateur (elle est plus étendue pour l’interface utilisateur tactile), mais le minimum autorisé est :
 
@@ -114,7 +113,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 
 Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
-Dans l’interface utilisateur classique, vous **ne pouvez pas saisir de caractères non valides** dans le champ **Nom**.
+Dans l’interface utilisateur classique, vous **ne pouvez pas saisir de caractères non valides** dans le champ **Nom** .
 
 >[!NOTE]
 >Dans l’interface utilisateur tactile, vous **ne pouvez pas envoyer de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
@@ -144,7 +143,7 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est livré avec une gamme de composants prêts à l&#39;emploi qui offrent des fonctionnalités complètes ; il s&#39;agit notamment :
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec toute une gamme de composants prêts à l’emploi qui fournissent des fonctionnalités complètes ; il s’agit notamment :
 
 * Texte
 * Image
@@ -152,7 +151,7 @@ Les composants sont les éléments fournis par AEM afin que vous puissiez ajoute
 * Vidéo
 * etc.
 
-Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l&#39;aide des composants](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponible dans le [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponibles à partir du [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Gestion des pages {#managing-pages}
 
@@ -198,7 +197,7 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 
    >[!NOTE]
    >
-   >Vous pouvez également créer une page lorsque vous modifiez une page existante. L&#39;utilisation de **Créer une page enfant **à partir de l&#39;onglet **Page** du sidekick créera une nouvelle page directement sous la page en cours de modification.
+   >Vous pouvez également créer une page lorsque vous modifiez une page existante. L’utilisation de **Créer une page enfant **à partir de l’onglet **Page** du sidekick crée une page directement sous la page en cours de modification.
 
 ### Ouverture d’une page pour la modifier {#opening-a-page-for-editing}
 
@@ -210,7 +209,7 @@ Vous pouvez ouvrir la page à [modifier](/help/sites-classic-ui-authoring/classi
 
 * Après avoir ouvert une page, vous pouvez accéder à d’autres pages du site (en vue de les modifier) en cliquant sur des liens hypertexte.
 
-### Copier et coller une page  {#copying-and-pasting-a-page}
+### Copier et coller une page {#copying-and-pasting-a-page}
 
 Vous pouvez copier, au choix :
 
@@ -338,4 +337,3 @@ Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-classic-ui-auth
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
 1. Pour créer le dossier, sélectionnez **Créer**.
-
