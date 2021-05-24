@@ -1,7 +1,7 @@
 ---
 title: AEM Developer Tools for Eclipse
-seo-title: Outils de développement AEM pour Eclipse
-description: Outils de développement AEM pour Eclipse
+seo-title: AEM Outils de développement pour Eclipse
+description: AEM Outils de développement pour Eclipse
 seo-description: 'null'
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 00473769-c447-4966-a71e-117c669e0151
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 93%
 
 ---
-
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
@@ -34,11 +33,11 @@ Il offre plusieurs fonctionnalités qui facilitent le développement d’AEM :
 * Amorçage simple de projets AEM avec un assistant de création de projet spécifique.
 * Modification facile des propriétés JCR.
 
-## Conditions préalables {#requirements}
+## Conditions requises {#requirements}
 
 Avant d’utiliser AEM Developer Tools, vous devez :
 
-* Télécharger et installer [Eclipse IDE pour les développeurs Java EE](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). Les outils de développement AEM prennent actuellement en charge Eclipse Kepler ou version ultérieure
+* Télécharger et installer [Eclipse IDE pour les développeurs Java EE](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM outils de développement prennent actuellement en charge Eclipse Kepler ou version plus récente.
 
 * Peut être utilisé avec AEM version 5.6.1 ou ultérieure
 * configurer votre installation Eclipse pour vous assurer de disposer d’au moins 1 Go de mémoire de segment en modifiant votre fichier de configuration `eclipse.ini` de la manière décrite dans la [FAQ Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
@@ -91,7 +90,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
-1. Cliquez sur **Next** (Suivant).
+1. Cliquez sur **Suivant**.
 
    >[!NOTE]
    >
@@ -123,7 +122,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
    >
    >Sur une nouvelle installation (plus précisément : si les dépendances Maven n’ont jamais été téléchargées), vous risquez de créer le projet avec des erreurs. Dans ce cas, veuillez suivre la procédure décrite dans [Résolution d’une définition de projet non valide](#resolving-invalid-project-definition).
 
-## Résolution des incidents {#troubleshooting}
+## Résolution des problèmes {#troubleshooting}
 
 ### Résolution d’une définition de projet non valide {#resolving-invalid-project-definition}
 
@@ -163,4 +162,3 @@ La documentation officielle [Eclipse](https://eclipse.org/) suivante peut vous a
 * [Prise en main d’Eclipse](https://eclipse.org/users/)
 * [Système d’aide d’Eclipse Luna](https://help.eclipse.org/luna/index.jsp)
 * [Intégration Maven (m2eclipse)](https://www.eclipse.org/m2e/)
-
