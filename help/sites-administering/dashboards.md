@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
-translation-type: tm+mt
-source-git-commit: 69dfd6b41b32cb9131fd90fd7039a0c224889db5
+exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 71%
 
 ---
-
 
 # Tableaux de bord{#dashboards}
 
@@ -89,13 +88,13 @@ Les composants de génération de rapports sont initialisés avec une configurat
 
 L’onglet **De base** vous donne accès aux entrées de configuration suivantes :
 
-**** TitreTitre affiché sur le tableau de bord.
+**** TitreTitre affiché dans le tableau de bord.
 
-**Type** de demandeMode de demande des données.
+**** Type de requêteMéthode de demande des données.
 
-**Configuration du SiteCatalyst (facultative)** Configuration que vous souhaitez utiliser pour vous connecter au SiteCatalyst. En l’absence de configuration, on suppose qu’elle est configurée sur la page Tableau de bord (via les propriétés de page).
+**Configuration de SiteCatalyst (facultatif)** Configuration que vous souhaitez utiliser pour vous connecter à SiteCatalyst. En l’absence de configuration, on suppose qu’elle est configurée sur la page Tableau de bord (via les propriétés de page).
 
-**Identifiant de Report Suite (facultatif)** Suite de rapports de SiteCatalyst que vous souhaitez utiliser pour générer le graphique.
+**Identifiant de suite de rapports (facultatif)** Suite de rapports de SiteCatalyst que vous souhaitez utiliser pour générer le graphique.
 
 #### Configuration du rapport {#report-configuration}
 
@@ -105,9 +104,9 @@ Pour pouvoir afficher des statistiques web, vous devez définir la plage de date
 >
 >La définition d’une plage de dates étendue a pour effet de diminuer la réactivité du tableau de bord.
 
-**Date** FromAbsolute ou date relative à partir de laquelle les données sont extraites.
+**Date** FromAbsolute ou date relative à laquelle les données sont récupérées.
 
-**Date** àDate absolue ou relative à laquelle les données sont extraites.
+**Date** àDate absolue ou date relative à laquelle les données sont récupérées.
 
 Chaque composant définit également des paramètres spécifiques.
 
@@ -115,29 +114,29 @@ Chaque composant définit également des paramètres spécifiques.
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Date** GranularitéUnité d&#39;heure de l&#39;axe X (par exemple, jour, heure).
+**Date** GranularitéUnité de temps de l’axe X (par exemple, jour, heure).
 
-**** Mesuresliste des événements à afficher.
+**** Mesures : liste des événements à afficher.
 
-**** Elémentsliste des éléments qui ventilent les données des mesures dans le graphique.
+**** Éléments : liste des éléments qui ventilent les données de mesures dans le graphique.
 
 #### Rapport de liste avec classement {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-**** ElémentsÉlément qui ventile les données de mesures dans le graphique.
+**** Éléments : élément qui ventile les données de mesures dans le graphique.
 
-**** Mesuresévénement à afficher.
+**** Mesures : événement que vous souhaitez afficher.
 
-**Non. des principaux éléments** Nombre d’éléments affichés par le rapport.
+**Non. of top items** Nombre d’éléments affichés par le rapport.
 
 #### Rapport avec classement {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28a.png)
 
-**** Mesuresévénement à afficher.
+**** Mesures : événement que vous souhaitez afficher.
 
-**** ElémentsÉlément qui ventile les données de mesures dans le graphique.
+**** Éléments : élément qui ventile les données de mesures dans le graphique.
 
 #### Rapport de section du site supérieur {#top-site-section-report}
 
@@ -151,11 +150,11 @@ Ce composant affiche un graphique qui présente la section la plus visitée d’
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Date** GranularitéUnité d&#39;heure de l&#39;axe X (par exemple, jour, heure).
+**Date** GranularitéUnité de temps de l’axe X (par exemple, jour, heure).
 
-**** Mesuresévénement à afficher.
+**** Mesures : événement que vous souhaitez afficher.
 
-**** ElémentsÉlément qui ventile les données de mesures dans le graphique.
+**** Éléments : élément qui ventile les données de mesures dans le graphique.
 
 ## Extension du tableau de bord {#extending-dashboard}
 
@@ -163,13 +162,13 @@ Ce composant affiche un graphique qui présente la section la plus visitée d’
 
 Les tableaux de bord sont des pages normales (`cq:Page`). N’importe quel composant peut donc être utilisé pour les assembler.
 
-Il existe un groupe de composants par défaut `Dashboard` contenant les composants du rapports d&#39;analyse qui sont activés par défaut sur le modèle.
+Il existe un groupe de composants par défaut `Dashboard` contenant les composants de création de rapports d’analyse activés par défaut sur le modèle.
 
 ### Création d’un modèle de tableau de bord {#creating-a-dashboard-template}
 
 Un modèle définit le contenu par défaut d’un nouveau tableau de bord. Vous pouvez utiliser plusieurs modèles pour créer différents types de tableaux de bord.
 
-Les modèles de tableau de bord sont créés comme les autres modèles de page, sauf qu&#39;ils sont stockés sous `/libs/cq/dashboards/templates/`. Voir la section [Création d’un modèle Contentpage](/help/sites-developing/website.md#creating-the-contentpage-template).
+Les modèles de tableau de bord sont créés comme les autres modèles de page, sauf qu’ils sont stockés sous `/libs/cq/dashboards/templates/`. Voir la section [Création d’un modèle Contentpage](/help/sites-developing/website.md#creating-the-contentpage-template).
 
 >[!NOTE]
 >
@@ -181,7 +180,7 @@ Le développement d’un composant Tableau de bord consiste à créer un composa
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-Les principaux composants d’auteur sont stockés dans le référentiel à `/apps/geometrixx-outdoors/components/reporting` et se composent de :
+Les principaux composants de création sont stockés dans le référentiel à l’emplacement `/apps/geometrixx-outdoors/components/reporting` et se composent de :
 
 1. Un fichier `jsp` qui lit les données jcr et définit le pseudo-élément `html`.
 
@@ -238,7 +237,7 @@ $.ajax({
 });
 ```
 
-Le `JSP` comprend à la fois `global.jsp` et `clientlib`.
+`JSP` comprend à la fois `global.jsp` et `clientlib`.
 
 #### top_authors.jsp {#top-authors-jsp}
 
@@ -256,4 +255,3 @@ String reportletTitle = properties.get("title", "Top Authors");
      <div id="authors-list"></div>
 </html>
 ```
-
