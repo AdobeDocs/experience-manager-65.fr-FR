@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 86%
 
 ---
-
 
 # Test des modèles modifiables dans We.Retail{#trying-out-editable-templates-in-we-retail}
 
@@ -74,7 +73,6 @@ Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet 
 
 ## Informations supplémentaires  {#more-information}
 
-Pour plus d&#39;informations, consultez le document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page du document du développeur [Modèles - modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir des détails techniques complets sur les modèles modifiables.
+Pour plus d’informations, reportez-vous au document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou au document destiné aux développeurs Page [Modèles - Modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir des détails techniques complets sur les modèles modifiables.
 
-Vous pouvez également vous renseigner sur les [composants principaux](/help/sites-developing/we-retail-core-components.md). Voir le document de création [Composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) pour un aperçu des capacités des composants de base et le document de développement [Développement de composants de base](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) pour un aperçu technique.
-
+Vous pouvez également vous renseigner sur les [composants principaux](/help/sites-developing/we-retail-core-components.md). Consultez le document de création [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) pour une présentation des fonctionnalités des composants principaux et le document de développement [Développement de composants principaux](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) pour une présentation technique.
