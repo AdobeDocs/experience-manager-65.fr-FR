@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 82%
 
 ---
-
 
 # Publication de pages{#publishing-pages}
 
@@ -40,7 +39,7 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
    >
    >
 * **Répliquer/Réplication**
-   >  Il s’agit des termes techniques décrivant le déplacement des données (par exemple, contenu de page, fichiers, code, commentaires d’utilisateur) d’un environnement à l’autre, comme lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
+   >  Il s’agit de termes techniques décrivant le déplacement des données (contenu de page, fichiers, code, commentaires d’utilisateur, par exemple) d’un environnement à un autre, comme lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
 >
 
 
@@ -60,8 +59,8 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 
 Pour activer une page, vous pouvez procéder de deux manières :
 
-* [depuis la console Sites web](#activating-a-page-from-the-websites-console)
-* [depuis le sidekick sur la page proprement dite](#activating-a-page-from-sidekick)
+* [depuis la console Sites Web ;](#activating-a-page-from-the-websites-console)
+* [depuis le sidekick sur la page elle-même.](#activating-a-page-from-sidekick)
 
 >[!NOTE]
 >
@@ -122,7 +121,7 @@ Pour désactiver une page :
 Pour planifier l’activation à une heure ultérieure :
 
 1. Dans la console Sites Web, accédez au menu **Activer** et sélectionnez ensuite **Activer plus tard**.
-1. Dans la boîte de dialogue qui s’ouvre, indiquez la date et l’heure de l’activation et cliquez sur **OK**. Cette opération crée une version de la page qui est activée à l’heure spécifiée.
+1. Dans la boîte de dialogue qui s’ouvre, indiquez la date et l’heure d’activation, puis cliquez sur **OK**. Cette opération crée une version de la page qui est activée à l’heure indiquée.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -134,7 +133,7 @@ Pour annuler cette activation/désactivation, rendez-vous dans la [console Worfk
 
 Pour planifier la désactivation à une heure ultérieure :
 
-1. Dans la console Site Web, accédez au menu **Désactiver**, puis sélectionnez **Désactiver plus tard**.
+1. Dans la console Sites Web, accédez au menu **Désactiver**, puis sélectionnez **Désactiver plus tard**.
 
 1. Dans la boîte de dialogue qui s’ouvre, indiquez la date et l’heure de désactivation, puis cliquez sur **OK**.
 
@@ -156,17 +155,17 @@ Vous pouvez vérifier l’état dans la [console Sites web](/help/sites-classic
 
 Vous pouvez activer les différentes pages à partir de l’onglet **Sites web**. Après avoir saisi ou mis à jour un nombre élevé de pages de contenu (toutes résidant sous la même page racine), il peut s’avérer plus simple d’activer toute l’arborescence en une seule opération. Vous pouvez également effectuer une exécution d’essai afin d’émuler une activation et de mettre en surbrillance les pages à activer.
 
-1. Ouvrez la console **Outils** en la sélectionnant dans la page **Bienvenue**, puis cliquez sur **Réplication** en doublon pour ouvrir la console ( `https://localhost:4502/etc/replication.html`).
+1. Ouvrez la console **Outils** en la sélectionnant dans la page **Bienvenue**, puis en double-cliquant sur **Réplication** pour ouvrir la console ( `https://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. Sur la console **Réplication**, cliquez sur **Activer l’arborescence**.
 
-   La fenêtre suivante ( `https://localhost:4502/etc/replication/treeactivation.html`) s&#39;affiche.
+   La fenêtre suivante ( `https://localhost:4502/etc/replication/treeactivation.html`) s’affiche.
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Saisissez le **chemin d’accès au Début**. Ceci spécifie le chemin d&#39;accès à la racine de la section que vous souhaitez activer (publier). Cette page et toutes les pages situées en dessous sont prises en compte pour l’activation (ou utilisées dans l’émulation si une exécution à sec est sélectionnée).
+1. Saisissez le **Chemin de début**. Cela spécifie le chemin d’accès à la racine de la section que vous souhaitez activer (publier). Cette page et toutes les pages sous-jacentes sont prises en compte pour l’activation (ou utilisées dans l’émulation si une Exécution d’essai est sélectionnée).
 1. Activez les critères de sélection suivant vos besoins :
 
    * **Uniquement Modifié** : active uniquement les pages qui ont été modifiées.
@@ -175,6 +174,6 @@ Vous pouvez activer les différentes pages à partir de l’onglet **Sites web**
 
 1. Sélectionnez l’opération à effectuer :
 
-   1. Sélectionnez **Exécution sèche** si vous souhaitez vérifier quelles pages *seront* activées. Il ne s&#39;agit que d&#39;une émulation, aucune page ne sera activée.
+   1. Sélectionnez **Exécution d’essai** si vous souhaitez vérifier quelles pages *seront* activées. Il s’agit uniquement d’une émulation. Aucune page ne sera activée.
 
    1. Sélectionnez **Activer** si vous souhaitez activer les pages.
