@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
-translation-type: tm+mt
-source-git-commit: e594c53b2a26c1c9e484ac07220dc89c283cf7da
+exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 91%
 
 ---
-
 
 # Bonnes pratiques{#best-practices}
 
@@ -24,13 +23,13 @@ La section Meilleures pratiques décrit comment développer, administrer ou util
 
 Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
 
-* [Ressources](#assets)
+* [Assets](#assets)
 * [Sites](#sites)
 
 Pour connaître les meilleures pratiques concernant la création, le déploiement et la maintenance ou le développement, voir l’une des rubriques suivantes :
 
 * [Meilleures pratiques de création](/help/sites-authoring/best-practices.md)
-* [Développement de meilleures pratiques](/help/sites-developing/best-practices.md)
+* [Meilleures pratiques de développement](/help/sites-developing/best-practices.md)
 * [Déploiement de meilleures pratiques](/help/sites-deploying/best-practices.md)
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
@@ -42,9 +41,9 @@ Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dyna
 <table>
  <tbody>
   <tr>
-   <td>Meilleures pratiques dans différents domaines liés aux ressources pour améliorer la stabilité et les performances du système en situation de charge</td>
+   <td>Bonnes pratiques dans différents domaines d’Assets pour améliorer la stabilité du système et les performances en cas de charge</td>
    <td><a href="/help/assets/best-practices-for-assets.md">Bonnes pratiques pour les ressources</a></td>
-   <td>Inclut des liens vers des guides des meilleures pratiques dans différentes zones autour des ressources. Après avoir consulté ce contenu, vous disposerez des connaissances et des outils vous permettant de créer et gérer un système de gestion de ressources d’entreprise.</td>
+   <td>Inclut des liens vers des guides des bonnes pratiques dans différentes zones d’Assets. Après avoir consulté ce contenu, vous disposerez des connaissances et des outils vous permettant de créer et gérer un système de gestion de ressources d’entreprise.</td>
   </tr>
   <tr>
    <td>Comment organiser votre contenu (hiérarchie des dossiers)</td>
@@ -87,12 +86,12 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
   </tr>
   <tr>
    <td>Gestion multisite</td>
-   <td><a href="/help/sites-administering/msm-best-practices.md">Meilleures pratiques MSM</a></td>
+   <td><a href="/help/sites-administering/msm-best-practices.md">Bonnes pratiques MSM</a></td>
    <td>Meilleures pratiques concernant l’utilisation du MSM pour automatiser le déploiement du contenu. </td>
   </tr>
   <tr>
    <td>Traduction du contenu</td>
-   <td><a href="/help/sites-administering/tc-bp.md">Meilleures pratiques de traduction</a></td>
+   <td><a href="/help/sites-administering/tc-bp.md">Bonnes pratiques de traduction</a></td>
    <td>Meilleures pratiques concernant la planification et la mise en œuvre de votre site multilingue.</td>
   </tr>
   <tr>
@@ -107,4 +106,3 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
   </tr>
  </tbody>
 </table>
-
