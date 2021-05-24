@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 96%
 
 ---
-
 
 # Marketing par messagerie électronique{#e-mail-marketing}
 
@@ -40,7 +39,7 @@ Ce document décrit les notions fondamentales de la création de newsletters dan
 
 * [Création d’une page d’entrée efficace pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [Gestion des abonnements](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
-* [Publication d’un courrier électronique sur des services de messagerie](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+* [Publication d’un message électronique sur des services de messagerie](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
 * [Suivi des messages rejetés](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
@@ -133,7 +132,7 @@ Personnalisation d’une newsletter et simulation de son aperçu :
 
 >[!NOTE]
 >
->Avant d’envoyer des bulletins d’information, vérifiez la configuration OSGi pour Day CQ Link Externalizer (Externalisateur de liens Day CQ) à l’adresse `https://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des newsletters, vérifiez la configuration OSGi pour Day CQ Link Externalizer à l’adresse `https://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -221,7 +220,7 @@ Vous pouvez envoyer une newsletter à partir de la newsletter ou à partir de la
 
 >[!NOTE]
 >
->Avant d’envoyer des bulletins d’information, vérifiez la configuration OSGi pour Day CQ Link Externalizer (Externalisateur de liens Day CQ) à l’adresse `https://localhost:4502/system/console/configMgr`.
+>Avant d’envoyer des newsletters, vérifiez la configuration OSGi pour Day CQ Link Externalizer à l’adresse `https://localhost:4502/system/console/configMgr`.
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
@@ -250,7 +249,7 @@ Envoi d’une newsletter à partir d’une campagne :
 
 1. La fin de la configuration est confirmée. Cliquez sur **Envoyer** pour envoyer réellement la newsletter.
 
-   ![mcm_newslettersendverify](assets/mcm_newslettersendconfirm.png)
+   ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
