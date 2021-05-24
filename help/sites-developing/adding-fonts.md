@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 725c81d0-0258-4118-8b01-29fd7bcaf9b3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 69%
 
 ---
-
 
 # Ajout de polices pour le rendu graphique{#adding-fonts-for-graphic-rendering}
 
@@ -26,11 +25,11 @@ Pour ce faire, vous pouvez également charger et utiliser vos propres polices.
 
 Actuellement, toutes les implémentations de la plate-forme Java prennent en charge les polices [TrueType](https://en.wikipedia.org/wiki/Truetype).
 
-1. Ouvrez le CRXDE Lite et accédez au dossier de votre application de projet :
+1. Ouvrez CRXDE Lite et accédez au dossier de l’application de projet :
 
    `/apps/<your-project>/`
 
-1. Sous `/apps/<your-project>/`, créez un nouveau noeud :
+1. Sous `/apps/<your-project>/` , créez un noeud :
 
    * **Nom** : `fonts`
    * **Type** : `sling:Folder`
@@ -41,13 +40,12 @@ Actuellement, toutes les implémentations de la plate-forme Java prennent en cha
 
    >[!NOTE]
    >
-   >Les fichiers de polices du référentiel doivent avoir le suffixe `*.ttf` ou `*.TTF`.
+   >Les fichiers de polices du référentiel doivent porter le suffixe `*.ttf` ou `*.TTF`.
 
-1. Mettez à jour la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Ajoutez le chemin d&#39;accès à votre dossier de polices ; i.e. `/apps/<your-project>/fonts`.
+1. Mettez à jour la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Ajoutez le chemin d’accès à votre dossier de polices. c’est-à-dire `/apps/<your-project>/fonts`.
 
 1. Revenez à CRXDE Lite. Vous devriez maintenant voir un noeud `.fontlist` dans votre dossier contenant le nom des polices importées.
 
    Ces polices sont désormais prêtes à être déployées dans l’API Java.
 
 Pour plus d’informations sur l’utilisation des polices avec l’API Java, consultez la [documentation de la classe Font de l’API Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
-
