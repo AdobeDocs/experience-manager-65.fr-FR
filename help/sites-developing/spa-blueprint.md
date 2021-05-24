@@ -9,22 +9,21 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c1b5df634eba0628c8d2e0b38b9c220cbee8ec62
+exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2112'
 ht-degree: 92%
 
 ---
 
-
 # Plan directeur d’applications sur une seule page (SPA) {#spa-blueprint}
 
-Pour permettre à l’auteur d’utiliser l’AEM SPA Editor pour modifier le contenu d’un SPA, le  doit respecter certaines exigences, qui sont décrites dans ce document.
+Pour permettre à l’auteur d’utiliser l’éditeur SPA d’AEM afin de modifier le contenu d’un , des exigences doivent être respectées, qui sont décrites dans ce document.
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -109,7 +108,7 @@ Module npm : [@adobe/aem-response-editable-components](https://www.npmjs.com/pa
 
 #### Angular {#angular}
 
-module npm : à venir
+module npm : bientôt disponible
 
 ## Services et composants principaux {#main-services-and-components}
 
@@ -155,7 +154,7 @@ Le conteneur obtient dynamiquement les composants enfants à partir du magasin d
 
 ### Page {#page}
 
-Le composant `Page` étend le composant `Container`. Un conteneur est un composant conçu pour contenir des composants enfants et effectuer le rendu des composants enfants, y compris les pages enfants. Pour ce faire, le conteneur effectue une itération sur les propriétés `:itemsOrder`, `:items` et `:children` de son modèle. Le composant `Page` obtient dynamiquement les composants enfants à partir du magasin de la bibliothèque [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` assure l’instanciation des composants enfants.
+Le composant `Page` étend le composant `Container`. Un conteneur est un composant conçu pour contenir des composants enfants et effectuer le rendu des composants enfants, y compris les pages enfants. Pour ce faire, le conteneur effectue une itération sur les propriétés `:itemsOrder`, `:items` et `:children` de son modèle. Le composant `Page` récupère dynamiquement les composants enfants à partir du magasin de la bibliothèque [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` assure l’instanciation des composants enfants.
 
 ### Grille réactive {#responsive-grid}
 
@@ -168,9 +167,9 @@ Le composant Grille réactive doit être fourni prémappé à son homologue AEM,
 * `gridClassNames:` noms de classes fournis pour la grille réactive
 * `columnClassNames:` noms de classes fournis pour la colonne réactive
 
-Voir aussi la ressource npm [@adobe/aem-response-editable-components#srccomponentsResponvegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
+Voir aussi la ressource npm [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
-#### Espace réservé de la grille de réponse {#placeholder-of-the-reponsive-grid}
+#### Espace réservé de la grille réactive {#placeholder-of-the-reponsive-grid}
 
 Le composant SPA est mappé sur un conteneur graphique, tel que Grille réactive, et doit ajouter un espace réservé enfant virtuel lorsque la création du contenu est en cours. Lorsque le contenu de l’application sur une seule page est créé par l’éditeur de page, il est incorporé dans ce dernier à l’aide d’un iFrame et l’attribut `data-cq-editor` est ajouté au nœud de document de ce contenu. Lorsque l’attribut `data-cq-editor` est présent, le conteneur doit inclure un HTMLElement pour représenter la zone avec laquelle l’auteur interagit lors de l’insertion d’un nouveau composant dans la page.
 
@@ -279,7 +278,7 @@ L’application assure le routage. Le développeur front-end doit commencer par 
 
 La bibliothèque [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sous-jacente et son module ` [ModelRouter](/help/sites-developing/spa-routing.md)` (activé par défaut) assurent la prérécupération et l’accès au modèle associé à un chemin de ressource donné.
 
-Les deux entités se rapportent à la notion de routage, mais ` [ModelRouter](/help/sites-developing/spa-routing.md)` n&#39;est responsable que du chargement de ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` avec un modèle de données structuré en synchronisation avec l&#39;état actuel de l&#39;application.
+Les deux entités se rapportent à la notion de routage, mais ` [ModelRouter](/help/sites-developing/spa-routing.md)` n’est responsable que du chargement de ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` avec un modèle de données structuré en synchronisation avec l’état actuel de l’application.
 
 Consultez l’article [Routage de modèle de SPA](/help/sites-developing/spa-routing.md) pour plus d’informations.
 
