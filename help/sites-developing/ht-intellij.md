@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
-translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 64%
 
 ---
-
 
 # Développement de projets AEM à l’aide de IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
@@ -43,9 +42,9 @@ Puis, suivez les instructions d’installation de cette page.
 
 ### Configuration du projet AEM basé sur Maven  {#set-up-your-aem-project-based-on-maven}
 
-Ensuite, configurez votre projet à l’aide de Maven, comme décrit dans la section [Comment créer des projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Ensuite, configurez votre projet à l’aide de Maven comme décrit dans la section [Comment créer des projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Pour début de travailler avec des projets AEM dans IntelliJ IDEA, la configuration de base de [Prise en main dans 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) est suffisante.
+Pour commencer à travailler avec des projets AEM dans IntelliJ IDEA, la configuration de base de [Prise en main en 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) est suffisante.
 
 ### Préparation de la prise en charge des JSP pour IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
@@ -54,14 +53,14 @@ IntelliJ IDEA peut également fournir une aide pour l’utilisation des JSP, par
 * le renseignement automatique des bibliothèques de balises
 * connaissance des objets définis par `<cq:defineObjects />` et `<sling:defineObjects />`
 
-Pour que cela fonctionne, suivez les instructions [Comment travailler avec les JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) dans [Comment créer des projets AEM à l&#39;aide d&#39;Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Pour que cela fonctionne, suivez les instructions [Comment travailler avec des JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) dans [Comment créer des projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ### Importation du projet Maven {#import-the-maven-project}
 
-1. Ouvrez la boîte de dialogue **Importer** dans IntelliJ IDEA par
+1. Ouvrez la boîte de dialogue **Importer** dans IntelliJ IDEA en
 
-   * sélection de **Importer un projet** dans l&#39;écran de bienvenue si vous n&#39;avez pas encore ouvert de projet
-   * sélection de **Fichier -> Importer un projet** dans le menu principal
+   * en sélectionnant **Importer un projet** dans l’écran de bienvenue si aucun projet n’est encore ouvert.
+   * en sélectionnant **Fichier -> Importer un projet** dans le menu principal.
 
 1. Dans la boîte d’importation, sélectionnez le fichier POM du projet.
 
@@ -71,7 +70,7 @@ Pour que cela fonctionne, suivez les instructions [Comment travailler avec les J
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
-1. Passez à la boîte de dialogue suivante en cliquant sur **Suivant** et **Terminer**.
+1. Poursuivez les boîtes de dialogue suivantes en cliquant sur **Suivant** et **Terminer**.
 1. Vous êtes désormais prêt pour le développement d’AEM à l’aide de IntelliJ IDEA
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
@@ -89,17 +88,17 @@ Les étapes suivantes sont requises pour le débogage des JSPs avec IntelliJ IDE
 
 IntelliJ IDEA doit comprendre où trouver les JSP pour débogage. Comme IDEA ne peut pas interpréter les paramètres `content-package-maven-plugin`, ils doivent être configurés manuellement.
 
-1. Accédez à **Fichier -> Structure du projet**
-1. Sélectionnez le module **Contenu**.
-1. Cliquez sur **+** au-dessus de la liste des modules et sélectionnez **Web**.
-1. En tant que répertoire de ressources Web, sélectionnez `content/src/main/content/jcr_root subdirectory` de votre projet comme le montre la capture d&#39;écran ci-dessous.
+1. Accédez à **Fichier -> Structure de projet**
+1. Sélectionnez le module **Content**
+1. Cliquez sur **+** au-dessus de la liste des modules et sélectionnez **Web**
+1. Sélectionnez `content/src/main/content/jcr_root subdirectory` de votre projet comme indiqué dans la capture d’écran ci-dessous.
 
 ![chlimage_1-48](assets/chlimage_1-48a.png)
 
 #### Installation du plugin de prise en charge de JSR45 {#install-the-jsr-support-plugin}
 
-1. Accédez au volet **Plugins** des paramètres IntelliJ IDEA
-1. Accédez au **module externe d’intégration JSR45** et cochez la case en regard de celui-ci.
+1. Accédez au volet **Plugins** dans les paramètres IntelliJ IDEA
+1. Accédez au module **Intégration JSR45** et cochez la case en regard de celui-ci.
 1. Cliquez sur **Appliquer**
 1. Redémarrez IntelliJ IDEA lorsque vous y êtes invité
 
@@ -108,7 +107,7 @@ IntelliJ IDEA doit comprendre où trouver les JSP pour débogage. Comme IDEA ne 
 #### Configuration d’un profil de débogage {#configure-a-debug-profile}
 
 1. Accédez à **Exécuter -> Modifier les configurations**
-1. Appuyez sur **+** et sélectionnez **JSR45 Remote**.
+1. Appuyez sur **+** et sélectionnez **JSR45 Remote**
 1. Dans la boîte de dialogue de configuration, sélectionnez **Configurer** en regard de **Application Server** et configurez un serveur générique.
 1. Définissez la page de démarrage sur une URL appropriée si vous souhaitez ouvrir un navigateur lorsque vous commencez le débogage.
 1. Supprimez toutes les **tâches** avant de lancer si vous utilisez la synchronisation automatique vlt ou configurez les tâches Maven appropriées si vous ne le faites pas.
@@ -144,7 +143,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 Vous êtes désormais prêt à déboguer les JSP dans AEM.
 
-1. Sélectionnez **Exécuter -> Débogage -> Votre Profil de débogage**
+1. Sélectionnez **Exécuter -> Déboguer -> Votre profil de débogage**
 1. Définissez des points d’arrêt dans le code du composant
 1. Accédez à une page du navigateur
 
