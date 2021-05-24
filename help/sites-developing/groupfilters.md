@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 86%
 
 ---
-
 
 # Création de filtres de groupe d’appareils{#creating-device-group-filters}
 
