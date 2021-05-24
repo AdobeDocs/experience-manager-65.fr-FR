@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 07bf0224-6744-42d4-861f-d656ccfad171
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d77e9e39-6117-4d09-b34b-a97ab347397e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 72%
 
 ---
 
-
 # Exemples de code{#code-samples}
 
-L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM. Ces exemples sont des fragments de code bien commentés destinés à aider les développeurs AEM à comprendre les principaux éléments constitutifs d’AEM. Les échantillons sont disponibles ici : [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
+L’équipe Adobe Consulting Services a établi une série d’exemples de code AEM. Ces exemples sont des fragments de code bien commentés destinés à aider les développeurs AEM à comprendre les principaux éléments constitutifs d’AEM. Les exemples sont disponibles ici : [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Un didacticiel en plusieurs parties conçu pour les développeurs novices en AEM et qui couvre des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques client et le développement de composants : [Prise en main de l’AEM Sites - Didacticiel WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+Tutoriel en plusieurs parties conçu pour les développeurs qui découvrent AEM des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants : [Prise en main d’AEM Sites - Tutoriel WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
 L’équipe Adobe AEM Community crée des articles de procédure à l’intention des développeurs. Ces articles peuvent être consultés [ici](https://helpx.adobe.com/fr/experience-manager/topics/how-to.html).
 
@@ -42,4 +41,3 @@ D’autres exemples de code sont disponibles aux adresses suivantes :
 >[!NOTE]
 >
 >Ces exemples de code sont fournis uniquement à des fins éducatives et ne doivent être déployés que sur une instance de production d’AEM.
-
