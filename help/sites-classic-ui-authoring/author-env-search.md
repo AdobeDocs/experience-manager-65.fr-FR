@@ -10,16 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 87%
 
 ---
 
-
-# Recherche{#searching}
+# Rechercher{#searching}
 
 L’environnement de création d’AEM comporte divers mécanismes de recherche de contenu, selon le type de ressource que vous utilisez.
 
@@ -33,7 +32,7 @@ Pour accéder au panneau de recherche, cliquez sur l’onglet **Rechercher** dan
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-Le panneau de recherche vous permet de rechercher sur toutes les pages de votre site Web. Il contient des champs et des widgets pour les éléments suivants :
+Le panneau de recherche vous permet de rechercher sur toutes les pages de votre site web. Il contient des champs et des widgets pour les éléments suivants :
 
 * **Texte intégral** : recherche du texte indiqué
 * **Modifié après/avant** : la recherche porte uniquement sur les pages qui ont été modifiées entre les dates spécifiées.
@@ -82,7 +81,7 @@ Dans la console **Sites web**, l’option de menu **Rechercher et remplacer** pe
    * indiquer si la recherche doit être sensible à la casse ;
    * indiquer si la recherche doit uniquement porter sur des mots entiers (dans le cas contraire, elle porte également sur des sous-chaînes).
 
-   Cliquez sur **Prévisualisation** listes où le terme a été trouvé. Vous pouvez sélectionner/effacer des instances spécifiques à remplacer :
+   Cliquer sur **Aperçu** répertorie l’endroit où le terme a été trouvé. Vous pouvez sélectionner/effacer les instances spécifiques à remplacer :
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -95,7 +94,7 @@ L’étendue par défaut du servlet de recherche et de remplacement couvre les p
 * `jcr:text`
 * `text`
 
-La portée peut être modifiée à l&#39;aide de la console de gestion Web Apache Felix (par exemple, à `https://localhost:4502/system/console/configMgr`). Sélectionnez `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` et configurez l’étendue selon les besoins.
+La portée peut être modifiée à l’aide de la console de gestion web Apache Felix (par exemple, à l’adresse `https://localhost:4502/system/console/configMgr`). Sélectionnez `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` et configurez la portée selon les besoins.
 
 >[!NOTE]
 >
