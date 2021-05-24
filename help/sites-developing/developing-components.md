@@ -12,7 +12,6 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3533'
@@ -36,11 +35,11 @@ Pour plus d’informations, voir [Développement de communautés](/help/communit
 
 >[!NOTE]
 >
->Cette page est la suite du document [Composants AEM - Les concepts de base](/help/sites-developing/components-basics.md).
+>Cette page est la suite du document [Composants AEM - Principes de base](/help/sites-developing/components-basics.md).
 
 >[!CAUTION]
 >
->Les composants ci-dessous `/libs/cq/gui/components/authoring/dialog` sont destinés à être utilisés uniquement dans l’éditeur (boîtes de dialogue de composants dans Création). S’ils sont utilisés ailleurs (comme dans une boîte de dialogue d’assistant par exemple), ils risquent de ne pas se comporter comme prévu.
+>Les composants ci-dessous `/libs/cq/gui/components/authoring/dialog` sont destinés à être utilisés uniquement dans l’éditeur (boîtes de dialogue de composant dans la création). S’ils sont utilisés ailleurs (comme dans une boîte de dialogue d’assistant par exemple), ils risquent de ne pas se comporter comme prévu.
 
 ## Exemples de code {#code-samples}
 
@@ -48,7 +47,7 @@ Cette page contient la documentation de référence (ou des liens vers la docume
 
 ## Structure {#structure}
 
-La structure de base d’un composant est décrite à la page [Composants AEM - Notions de base](/help/sites-developing/components-basics.md#structure). Ce document couvre à la fois les interfaces utilisateur tactiles et classiques. Même si vous n’avez pas besoin d’utiliser les paramètres classiques de votre nouveau composant, il peut être utile d’en prendre connaissance lors de l’héritage de composants existants.
+La structure de base d’un composant est décrite à la page [Composants AEM - Notions de base](/help/sites-developing/components-basics.md#structure). Ce document couvre les interfaces utilisateur tactile et classique. Même si vous n’avez pas besoin d’utiliser les paramètres classiques de votre nouveau composant, il peut être utile d’en prendre connaissance lors de l’héritage de composants existants.
 
 ## Extension de composants et de boîtes de dialogue existants {#extending-existing-components-and-dialogs}
 
@@ -72,7 +71,7 @@ L’extension d’un composant existant peut être réalisée grâce à la [hié
 
 Il est également possible de remplacer une *boîte de dialogue de composant* en utilisant le [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) et en définissant la propriété `sling:resourceSuperType`.
 
-Cela signifie que vous n&#39;avez qu&#39;à redéfinir les différences requises, au lieu de redéfinir la boîte de dialogue entière (à l&#39;aide de `sling:resourceSuperType`). Il s’agit désormais de la méthode recommandée pour étendre une boîte de dialogue de composant
+Cela signifie que vous n’avez qu’à redéfinir les différences requises, plutôt que de redéfinir l’ensemble de la boîte de dialogue (à l’aide de `sling:resourceSuperType`). Il s’agit désormais de la méthode recommandée pour étendre une boîte de dialogue de composant
 
 Se reporter au [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) pour plus de détails.
 
@@ -106,7 +105,7 @@ Le mécanisme permettant de séparer la logique de l’aspect aide à définir c
 
 Les sites web modernes sont très dépendants du traitement côté client effectué par du code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
-Pour résoudre ce problème, AEM fournit **Dossiers de bibliothèque côté client**, qui vous permettent de stocker votre code côté client dans le référentiel, de l&#39;organiser en catégories et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct.
+Pour résoudre ce problème, AEM fournit **des dossiers de bibliothèque côté client**, qui vous permettent de stocker votre code côté client dans le référentiel, de l’organiser en catégories et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page web finale pour charger le code correct.
 
 Voir [Utilisation de bibliothèques HTML côté client](/help/sites-developing/clientlibs.md) pour plus d’informations.
 
@@ -149,7 +148,7 @@ Pour plus d’informations, voir :
 * IU Granite
 
    * Fournit le balisage de l’IU Coral encapsulé dans les composants Sling pour la création de consoles d’interface utilisateur et de boîtes de dialogue
-   * [Concepts de l’interface utilisateur tactile AEM - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+   * [Concepts de l’IU tactile AEM - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
    * [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
@@ -160,7 +159,7 @@ Pour plus d’informations, voir :
 
 Les boîtes de dialogue pour l’IU tactile :
 
-* sont nommés `cq:dialog`.
+* sont nommées `cq:dialog`.
 * sont définis comme un noeud `nt:unstructured` avec le jeu de propriétés `sling:resourceType`.
 
 * sont situées sous leur nœud `cq:Component` et à côté de leur définition de composant.
@@ -234,7 +233,7 @@ Une fois que vous avez créé votre type de ressource, vous pouvez instancier le
 
 Si vous souhaitez définir le style et le comportement de votre composant, vous pouvez créer une bibliothèque cliente [dédiée](/help/sites-developing/clientlibs.md) qui définit vos CSS/LESS et JS personnalisés.
 
-Pour que votre bibliothèque cliente soit chargée uniquement pour votre boîte de dialogue de composant (c.-à-d. qu&#39;elle ne sera pas chargée pour un autre composant), vous devez définir la propriété `extraClientlibs`** **de votre boîte de dialogue sur le nom de catégorie de la bibliothèque cliente que vous venez de créer. Ceci est conseillé si votre bibliothèque cliente est assez volumineuse et/ou si votre champ est spécifique à cette boîte de dialogue et n’est pas nécessaire dans les autres boîtes de dialogue.
+Pour que votre bibliothèque cliente soit chargée uniquement pour votre boîte de dialogue de composant (c’est-à-dire qu’elle ne sera pas chargée pour un autre composant), vous devez définir la propriété `extraClientlibs`** **de votre boîte de dialogue sur le nom de catégorie de la bibliothèque cliente que vous venez de créer. Ceci est conseillé si votre bibliothèque cliente est assez volumineuse et/ou si votre champ est spécifique à cette boîte de dialogue et n’est pas nécessaire dans les autres boîtes de dialogue.
 
 Afin que la bibliothèque cliente soit chargée pour toutes les boîtes de dialogue, définissez la propriété category de votre bibliothèque cliente sur `cq.authoring.dialog`. Il s’agit du nom de la catégorie de la bibliothèque cliente qui est incluse par défaut lors du rendu de toutes les boîtes de dialogue. Il convient de procéder de cette façon si votre bibliothèque cliente est peu volumineuse et/ou si le champ est générique et a des chances d’être réutilisé dans d’autres boîtes de dialogue.
 
@@ -400,7 +399,7 @@ Ce comportement et la relation actif à composant requise peuvent être configur
    * `assetGroup` :
 
       * Type : `String`
-      * Valeur : le groupe auquel appartient l&#39;actif lié ; par exemple, `media`
+      * Valeur : le groupe auquel appartient la ressource associée ; par exemple, `media`
    * `assetMimetype` :
 
       * Type : `String`
@@ -412,7 +411,7 @@ Ce comportement et la relation actif à composant requise peuvent être configur
    * `resourceType` :
 
       * Type : `String`
-      * Valeur : la ressource relative aux composantes connexes ; par exemple, `foundation/components/image`
+      * Valeur : la ressource de composant associée ; par exemple, `foundation/components/image`
    * `type` :
 
       * Type : `String`
@@ -433,12 +432,12 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-project-archetype sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
+* [Ouvrez le projet aem-project-archetype sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/archive/master.zip).
 
 >[!NOTE]
 >
->La création automatique d’instances de composant peut désormais être facilement configurée dans l’interface utilisateur lors de l’utilisation de [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et de modèles modifiables. Voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) pour plus d&#39;informations sur la définition des composants automatiquement associés à des types de supports donnés.
+>La création automatique d’instances de composant peut désormais être facilement configurée dans l’interface utilisateur lors de l’utilisation de [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et de modèles modifiables. Voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) pour plus d’informations sur la définition des composants qui sont automatiquement associés à des types de médias donnés.
 
 ## Utilisation de l’extension AEM Brackets {#using-the-aem-brackets-extension}
 
@@ -447,7 +446,7 @@ L’[extension AEM Brackets](/help/sites-developing/aem-brackets.md) fournit un
 L’extension :
 
 * Facilite la synchronisation (aucun Maven ou File Vault requis) pour améliorer le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets.
-* Prise en charge de [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), langage de modèle conçu pour simplifier le développement des composants et accroître la sécurité.
+* Fournit une prise en charge [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), le langage de modèle conçu pour simplifier le développement des composants et accroître la sécurité.
 
 >[!NOTE]
 >
@@ -470,7 +469,7 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
 * Boîtes de dialogue
 
    * Vous devrez créer une boîte de dialogue à utiliser dans l’IU tactile. Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
-   * Les [AEM outils de modernisation](/help/sites-developing/modernization-tools.md) sont fournis pour vous aider à étendre les composants existants.
+   * Les [outils de modernisation AEM](/help/sites-developing/modernization-tools.md) sont fournis pour vous aider à étendre les composants existants.
    * Le [mappage d’ExtJS aux composants de l’IU Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fournit une présentation pratique des xtypes ExtJS et des types de nœud avec les types de ressources équivalents dans l’IU Granite.
    * Pour plus d’informations sur la personnalisation des champs, reportez-vous à la session AEM Gems sur la [personnalisation des champs de boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
    * Migration de vtypes vers la [validation dans l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
