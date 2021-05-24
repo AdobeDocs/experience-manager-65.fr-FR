@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
-translation-type: tm+mt
-source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 91%
 
 ---
-
 
 # Mappage du modèle dynamique avec les composants pour les SPA{#dynamic-model-to-component-mapping-for-spas}
 
@@ -24,7 +23,7 @@ Ce document décrit le fonctionnement du mappage du modèle dynamique avec les c
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Module ComponentMapping {#componentmapping-module}
 
@@ -57,4 +56,3 @@ Chaque composant est étendu grâce aux capacités de la fonction [ `ModelProvid
 1. Les fragments du modèle sont finalement propagés à chaque composant enfant.
 
 ![app_model_initialization](assets/app_model_initialization.png)
-
