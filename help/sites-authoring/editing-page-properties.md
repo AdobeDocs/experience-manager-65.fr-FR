@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7fed51b68c626b54565b9120f69229872946016f
+exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1883'
-ht-degree: 85%
+ht-degree: 90%
 
 ---
-
 
 # Modification des propriétés de page{#editing-page-properties}
 
@@ -55,12 +54,12 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Valorisation de marque**
 
-   Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant une limace de marque à chaque titre de page. Cette fonctionnalité nécessite l&#39;utilisation du composant de page de la version 2.14.0 ou ultérieure des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+   Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant de page de la version 2.14.0, ou ultérieure, des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 
-   * **Remplacer**  : cochez la case pour définir la ligne-bloc de marque sur cette page.
-      * La valeur sera héritée par toutes les pages enfants à moins que leurs valeurs **Override** ne soient également définies.
-   * **Remplacer la valeur**  : texte de la ligne-bloc de marque à ajouter au titre de la page.
-      * La valeur est ajoutée au titre de la page après un caractère barre verticale tel que &quot;Cycling Toscany&quot;. | Toujours prêt pour le WKND&quot;
+   * **Remplacer** : cochez la case pour définir le titre de rappel sur cette page.
+      * La valeur sera héritée par toutes les pages enfants à moins que leurs valeurs de **remplacement** ne soient également définies.
+   * **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
+      * La valeur est ajoutée au titre de la page après un caractère de barre verticale, par exemple « La Toscane en vélo | Toujours prêt pour le WKND »
 * **Titre de la page**
 
    Titre à utiliser sur la page. Habituellement utilisé par les composants du titre. Si ce champ reste vide, le **titre** est utilisé.
@@ -93,7 +92,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et/ou plus explicite.
 
-   Par exemple, si l’URL de vanité est définie sur `welcome`pour la page identifiée par le chemin `/v1.0/startpage`pour le site Web `http://example.com,`, `http://example.com/welcome`serait l’URL de vanité de `http://example.com/content/v1.0/startpage`
+   Par exemple, si l’URL Vanity est définie sur `welcome`sur la page identifiée par le chemin `/v1.0/startpage`pour le site web `http://example.com,` alors `http://example.com/welcome`serait l’URL Vanity de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -104,7 +103,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    >* ne doit pas être définie sur une page existante.
 
 
-   Vous devez également configurer le répartiteur pour activer l’accès aux URL d’origine. Voir [Activation de l&#39;accès aux URL Vanity](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) pour plus d&#39;informations.
+   Vous devez également configurer Dispatcher pour activer l’accès aux URL de redirection vers un microsite. Voir [Activation de l’accès aux URL Vanity](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) pour plus d’informations.
 
 * **Rediriger l’URL Vanity**
 
@@ -138,7 +137,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    >
    >Par exemple, si vous définissez l’alias `latin-lang` pour le nœud `/content/we-retail/spanish`, cette page est accessible via `/content/we-retail/latin-language`.
    >
-   >Pour plus d’informations, voir [Noms de page localisés sous Optimisation du référencement et meilleures pratiques de gestion des URL](/help/managing/seo-and-url-management.md#localized-page-names).
+   >Pour plus d’informations, voir [Noms de page localisés sous Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Hérité de &lt;*chemin*>**
 
@@ -162,7 +161,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    >[!CAUTION]
    >
-   >L&#39;onglet **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permet de modifier les configurations CUG en fonction de la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l&#39;aide de configurations CUG obsolètes, en fonction de la présence de la propriété `cq:cugEnabled`, un message d&#39;avertissement s&#39;affiche sous **Authentification requise** et l&#39;option ne sera pas modifiable, et les [Autorisations](/help/sites-authoring/editing-page-properties.md#permissions) ne seront pas modifiables.
+   >L’onglet **[Autorisations](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permet de modifier les configurations de CUG en fonction de la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations de groupes d’utilisateurs fermés obsolètes, basées sur la présence de la propriété `cq:cugEnabled` , un message d’avertissement s’affiche sous **Exigence d’authentification** et l’option ne sera pas modifiable, pas plus que les [Autorisations](/help/sites-authoring/editing-page-properties.md#permissions) ne le seront.
    >
    >
    >Le cas échéant, les autorisations des groupes d’utilisateurs fermés doivent être modifiées dans l’[IU classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -212,7 +211,7 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation  {#personalization}
+### Personnalisation {#personalization}
 
 * **Configurations ContextHub**
 
@@ -237,22 +236,22 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
    * Afficher les [autorisations effectives](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >L&#39;onglet **Permissions** permet de modifier les configurations CUG en fonction de la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations des groupes d’utilisateurs fermés obsolètes, basées sur la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche et les autorisations des groupes d’utilisateurs fermés ne sont pas modifiables, non plus que l’option Exigence d’authentification de l’onglet [Avancé](/help/sites-authoring/editing-page-properties.md#advanced).
+   >L’onglet **Autorisations** permet de modifier les configurations de CUG en fonction de la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations des groupes d’utilisateurs fermés obsolètes, basées sur la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche et les autorisations des groupes d’utilisateurs fermés ne sont pas modifiables, non plus que l’option Exigence d’authentification de l’onglet [Avancé](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >Le cas échéant, les autorisations des groupes d’utilisateurs fermés doivent être modifiées dans l’[IU classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >L’onglet Autorisation ne permet pas la création de groupes d’utilisateurs fermés vides, ce qui peut être utile pour refuser l’accès à tous les utilisateurs de façon simple. Pour ce faire, vous devez utiliser l’explorateur CRX. Pour plus d&#39;informations, consultez le document [Administration des droits d&#39;utilisateur, de groupe et d&#39;accès](/help/sites-administering/user-group-ac-admin.md).
+   >L’onglet Autorisation ne permet pas la création de groupes d’utilisateurs fermés vides, ce qui peut être utile pour refuser l’accès à tous les utilisateurs de façon simple. Pour ce faire, vous devez utiliser l’explorateur CRX. Pour plus d’informations, consultez le document [Administration des droits d’accès, des groupes et des utilisateurs](/help/sites-administering/user-group-ac-admin.md) .
 
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+* **Plan directeur**
 
    Définissez les propriétés d’une page Blueprint dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
@@ -306,7 +305,7 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Sélectionnez **Ouvrir les propriétés** et une boîte de dialogue s&#39;ouvre pour vous permettre de modifier les propriétés, triées par l&#39;onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
+1. Sélectionnez **Ouvrir les propriétés** et une boîte de dialogue s’ouvre pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
 
    * **Annuler**
    * **Enregistrer et fermer**
