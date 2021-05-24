@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: e47270e8-bace-4d0f-a088-7269b6356315
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 98%
 
 ---
-
 
 # Participation aux workflows  {#participating-in-workflows}
 
@@ -62,7 +61,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
 
 * Lorsque la **chronologie** est ouverte pour la ressource, l’étape du workflow s’affiche. Lorsque vous cliquez/appuyez sur la bannière d’avertissement, les actions disponibles sont également affichées :
 
-   ![capture d&#39;écran_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
+   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
 ### Réalisation d’une étape de participant {#completing-a-participant-step}
 
@@ -105,15 +104,15 @@ Vous pouvez également utiliser la chronologie pour terminer et avancer d’une 
 
 1. Sélectionnez la page requise et ouvrez la **chronologie** (ou ouvrez la **chronologie** et sélectionnez la page) :
 
-   ![capture d&#39;écran_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
+   ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
 1. Cliquez/appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez l’option **Avancer** :
 
-   ![capture d&#39;écran_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
+   ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
 1. Selon le workflow, vous pouvez choisir l’étape suivante :
 
-   ![capture d&#39;écran_2019-03-05at120905](assets/screen-shot_2019-03-05at120905.png)
+   ![screen-shot_2019-03-05at120905](assets/screen-shot_2019-03-05at120905.png)
 
 1. Sélectionnez l’option **Avancer** pour confirmer l’action.
 
@@ -165,11 +164,11 @@ Vous pouvez également utiliser la chronologie pour déléguer et/ou attribuer u
 1. Sélectionnez la page requise et ouvrez la **chronologie** (ou ouvrez la **chronologie** et sélectionnez la page).
 1. Cliquez/appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Changer le cessionnaire** :
 
-   ![capture d&#39;écran_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
+   ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
 1. Spécifiez un nouveau cessionnaire :
 
-   ![capture d&#39;écran_2019-03-05at121025](assets/screen-shot_2019-03-05at121025.png)
+   ![screen-shot_2019-03-05at121025](assets/screen-shot_2019-03-05at121025.png)
 
 1. Sélectionnez **Attribuer** pour confirmer l’action.
 
