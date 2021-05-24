@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
-translation-type: tm+mt
-source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
+exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 77%
 
 ---
-
 
 # Bonnes pratiques{#best-practices}
 
@@ -26,18 +25,18 @@ Les équipes d’ingénierie et de conseil Adobe ont développé un ensemble com
 
 Avant de commencer votre projet de développement AEM, passez en revue ces bonnes pratiques :
 
-* [Pratiques de développement](/help/sites-developing/development-practices.md)
-* [Content Architecture](/help/sites-developing/content-architecture.md)
+* [Meilleures pratiques en matière de développement](/help/sites-developing/development-practices.md)
+* [Architecture de contenu](/help/sites-developing/content-architecture.md)
 * [Architecture logicielle](/help/sites-developing/software-architecture.md)
 * [Conseils pour bien coder](/help/sites-developing/coding-tips.md)
 * [Les pièges du codage](/help/sites-developing/code-pitfalls.md)
 * [Interaction JCR](/help/sites-developing/jcr-integration.md)
 * [Bundles OSGi](/help/sites-developing/osgi-bundles.md)
-* [Bonnes pratiques de l’API Java](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Bonnes pratiques relatives aux API Java](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Informations supplémentaires sur les bonnes pratiques {#additional-best-practices-information}
 
-La documentation disponible dans les domaines suivants porte sur l&#39;élaboration des meilleures pratiques :
+La documentation disponible pour les domaines suivants est spécifique au développement de bonnes pratiques :
 
 * [Sites](#sites)
 * [Communities](/help/sites-developing/best-practices.md#communities)
@@ -63,7 +62,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
    <td>Ces documents présentent les concepts et la structure de l’IU tactile.</td>
   </tr>
   <tr>
-   <td>Interface utilisateur tactile : Personnalisation des consoles </td>
+   <td>IU tactile : Personnalisation des consoles </td>
    <td><a href="/help/sites-developing/customizing-consoles-touch.md">Personnalisation des consoles d’IU tactile</a></td>
    <td>Ce document explique comment étendre de manière optimale les consoles pour l’IU tactile.</td>
   </tr>
@@ -80,15 +79,15 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
  </tbody>
 </table>
 
-## Communities {#communities}
+## Communautés {#communities}
 
-[AEM ](/help/communities/overview.md) Collectivités simplifie la création et la gestion de communautés sur site.
+[AEM ](/help/communities/overview.md) Communities simplifie la création et la gestion des communautés on-premise.
 
 Les bonnes pratiques pour AEM Communities sont présentées ici :
 
 |  |  |  |
 |---|---|---|
-| Recommandations relatives à l’utilisation du contenu généré par l’utilisateur (UGC) | [Consignes de codage](/help/communities/code-guide.md) | Lignes directrices pour le développement de code flexible et portable pour la structure de composants sociaux [a1/> (SCF).](/help/communities/scf.md) |
+| Bonnes pratiques relatives à l’utilisation du contenu généré par l’utilisateur | [Consignes de codage](/help/communities/code-guide.md) | Conseils pour le développement de code flexible et portable pour la [structure de composants sociaux](/help/communities/scf.md) (SCF). |
 | Exemple d’utilisation des composants Communities | [Guide de composants de communauté](/help/communities/components-guide.md) | Un outil de développement interactif. |
 
 ## Outillage/HTL {#tooling-htl}
@@ -102,6 +101,5 @@ HTML Template Language (HTL) est un nouveau système de modèle HTML, introduit 
 
 >[!NOTE]
 >
->Le didacticiel en plusieurs parties suivant peut présenter un intérêt pour la meilleure pratique de configuration d’un nouveau projet AEM, en détaillant les composants principaux, les modèles modifiables, les bibliothèques client et le développement de composants :
+>Le tutoriel en plusieurs parties suivant peut s’avérer intéressant pour la bonne pratique consistant à configurer un nouveau projet AEM, en détaillant les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants :
 >[Prise en main du développement AEM Sites – Tutoriel WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
-
