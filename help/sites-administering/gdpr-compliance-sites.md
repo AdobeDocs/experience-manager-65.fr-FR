@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
-translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 91%
 
 ---
 
-
 # AEM Sites – Préparation pour le RGPD{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations relatives à la protection des données et à la protection de la vie privée ; comme le RGPD, l&#39;ACCP, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité ; comme le RGPD, le CCPA, etc.
 
 Le règlement général sur la protection des données (RGPD) de l’Union européenne sur les droits de confidentialité des données entre en vigueur en mai 2018.
 
@@ -46,7 +45,7 @@ Par défaut, les composants AEM Sites ne stockent pas les données de formulair
 
 ## Souscription/exclusion {#opt-in-opt-out}
 
-AEM dispose d’un [service d’exclusion des cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer l’inclusion/exclusion des utilisateurs.
+AEM a un [service d’exclusion des cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer l’inclusion/exclusion des utilisateurs.
 
 ## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
 
@@ -226,4 +225,3 @@ Pour effacer la persistance de ContextHub :
    * ContextHub.Utils.Persistence.Modes.SESSION
    * ContextHub.Utils.Persistence.Modes.COOKIE
    * ContextHub.Utils.Persistence.Modes.WINDOW
-
