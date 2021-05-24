@@ -10,16 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 99%
 
 ---
 
-
-# Modification du contenu de la page{#editing-page-content}
+# Modification du contenu de la page {#editing-page-content}
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
 
@@ -29,7 +28,7 @@ Le contenu est ajouté à l’aide de [composants](/help/sites-classic-ui-author
 >
 >Vous devez disposer des [droits d’accès](/help/sites-administering/security.md) et des [autorisations appropriés](/help/sites-administering/security.md#permissions) sur votre compte pour modifier les pages ; par exemple, pour ajouter, modifier ou supprimer des composants, ou pour les annotations et le déverrouillage.
 >
->En cas de problèmes, contactez votre administrateur système.
+>En cas de problème, contactez votre administrateur système.
 
 ## Sidekick {#sidekick}
 
@@ -54,14 +53,14 @@ Donne accès à diverses fonctionnalités, par exemple :
 * [la sélection de composants](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)
 * [l’affichage de références](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
 * [l’accès au journal d’audit](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
-* [le basculement des modes](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
+* [le changement de mode](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 * la [création](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), la [restauration](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) et la [comparaison](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) des versions
 
 * la [publication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page) et l’[annulation de la publication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) d’une page
 
-* la [modification des propriétés de page](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
+* [la modification des propriétés de page](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* la [génération de modèles automatique](/help/sites-authoring/scaffolding.md)
+* [scaffolding](/help/sites-authoring/scaffolding.md)
 
 * [le contexte client](/help/sites-administering/client-context.md)
 
@@ -88,7 +87,7 @@ Pour insérer un nouveau composant :
 
 1. Insérez le composant de votre choix sur la page. Double-cliquez ensuite sur le paragraphe. Une fenêtre s’ouvre alors pour vous permettre de configurer votre paragraphe et d’ajouter du contenu.
 
-### Insertion d’un composant à l’aide de l’Outil de recherche de contenu  {#inserting-a-component-using-the-content-finder}
+### Insertion d’un composant à l’aide de l’Outil de recherche de contenu {#inserting-a-component-using-the-content-finder}
 
 Vous pouvez également ajouter un nouveau composant sur la page en faisant glisser un élément à partir de l’[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
@@ -97,7 +96,7 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
 | Type de ressource | Type de composant résultant |
 |---|---|
 | Image | Image |
-| Document | Téléchargement |
+| Document | Télécharger |
 | Produit | Produit |
 | Vidéo | Modèle  |
 
@@ -177,7 +176,7 @@ Comme pour la [Suppression d’un composant](#deleting-a-component), vous pouvez
 
 Les composants hérités peuvent être le produit de divers scénarios, notamment :
 
-* [Gestion de plusieurs sites](/help/sites-administering/msm.md) ; également associé au mode [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [Gestion de plusieurs sites](/help/sites-administering/msm.md); également en combinaison avec [scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * Des [lancements](/help/sites-classic-ui-authoring/classic-launches.md) (quand basés sur une live copy)
 * Des composants spécifiques ; par exemple le système de paragraphes hérité dans Geometrixx.
