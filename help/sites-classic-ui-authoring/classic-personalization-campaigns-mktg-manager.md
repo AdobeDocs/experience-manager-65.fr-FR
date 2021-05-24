@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
-translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 97%
 
 ---
-
 
 # Utilisation de Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
@@ -60,7 +59,7 @@ Lorsque vous sélectionnez un rapport, sa page s’ouvre.
 
 Le tableau de bord se compose de quatre volets qui vous donnent un aperçu des listes (de pistes), segments, rapports et campagnes. L’accès aux fonctionnalités de base est également possible à partir de ce tableau de bord.
 
-![mcm_tableau de bord](assets/mcm_dashboard.png)
+![mcm_dashboard](assets/mcm_dashboard.png)
 
 ### Pistes {#leads}
 
@@ -167,7 +166,7 @@ Deux modes d’affichage sont disponibles pour chaque campagne :
 
    Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
-   * Créer un **nouveau...expérience**; par exemple, offres Adobe Target, teasers et bulletins d’information.
+   * Créer un **nouveau...** expérience; par exemple, les offres Adobe Target, les teasers et les newsletters.
    * **Modifier** les détails d’une newsletter ou d’une page de teaser spécifique (vous pouvez également effectuer un double-clic).
    * Définir les **Propriétés...** d’une newsletter ou d’une page de teaser spécifique
    * **Simuler** l’aspect et la fonctionnalité d’une expérience (newsletter ou page de teaser).
@@ -191,4 +190,4 @@ Vous avez également la possibilité d’ouvrir le sidekick (en cliquant sur la 
 
 Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, puis sélectionnez l’expérience de campagne requise et cliquez sur **Analyser...** Un graphique des impressions de page au fil du temps s’affiche alors.
 
-![mcm_campaign analyser](assets/mcm_campaignanalyze.png)
+![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)
