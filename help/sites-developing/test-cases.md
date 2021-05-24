@@ -10,14 +10,13 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
-translation-type: tm+mt
-source-git-commit: da08613be784f43ad3e3c3652b7e015640a48a9d
+exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 77%
 
 ---
-
 
 # Définition de cas de test{#defining-your-test-cases}
 
@@ -50,18 +49,18 @@ Cependant, l’automatisation des cas de test est un lourd investissement. Il fa
 * Réellement réalisable pour les projets de grande taille seulement.
 * Intéressant si plusieurs versions sont générées pour les tests ou dans le plan de diffusion de versions à long terme.
 
-## Test d&#39;aspects spécifiques {#testing-specific-aspects}
+## Test d’aspects spécifiques {#testing-specific-aspects}
 
-Lors des tests AEM quelques détails spécifiques présentent un intérêt particulier :
+Lors du test AEM certains détails spécifiques présentent un intérêt particulier :
 
 **Environnements de création et de publication**
 
-Bien qu&#39;il soit indiqué dans les [Environnements](/help/sites-developing/the-basics.md#environments), il convient de souligner un facteur décisif d&#39;AEM en ce qui concerne les tests.
+Bien qu’il soit décrit dans la section [Environnements](/help/sites-developing/the-basics.md#environments), il convient de souligner un facteur décisif d’AEM en ce qui concerne les tests.
 
 Vous devez considérer AEM comme deux applications :
 
 * l&#39;environnement *Auteur*
-Cette instance permet aux auteurs d’entrer et de publier du contenu.
+Cette instance permet aux auteurs de saisir et de publier du contenu.
 Elle comporte un plus petit nombre prévisible d’utilisateurs, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
 
 * l’environnement de *publication*
@@ -90,24 +89,24 @@ La plupart des projets installent le dispatcher pour la mise en cache et l’éq
 
 Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
 
-* **Assurez-vous**
-que le visiteur du site Web voit les mises à jour de contenu.
+* ****
+Assurez-vous que les mises à jour de contenu sont visibles par le visiteur du site web.
 
 * ****
-Continuité pour s’assurer que le site Web est toujours disponible lorsqu’un serveur est arrêté.
+Continuez à vous assurer que le site web est toujours disponible lorsqu’un serveur est arrêté.
 
 * ****
-ClustersLes grappes sont utilisées pour fournir :
+ClustersClusters est utilisé pour fournir :
 
    * ****
-BasculementSi un serveur échoue, d&#39;autres serveurs de la grappe prennent le relais du traitement.
+Basculement : si un serveur échoue, les autres serveurs de la grappe prennent le relais.
 
-   * **L’équilibrage**
-PerformanceLoad avec basculement complet augmente les performances d’une grappe.
+   * ****
+L’équilibrage PerformanceLoad avec basculement complet améliore les performances d’une grappe.
 Lorsqu’il est utilisé pour un projet client, le cluster doit être testé pour confirmer le bon fonctionnement de la configuration.
 
 ## Test de logiciels tiers {#testing-third-party-software}
 
-Tout logiciel tiers relié à AEM sera référencé dans les Spécifications détaillées des besoins.
+Les logiciels tiers interfaces avec AEM seront référencés dans les spécifications détaillées des exigences.
 
 Il faut analyser tous les tests nécessaires (en fonction de la portée définie) et obtenir des résultats satisfaisants.
