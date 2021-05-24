@@ -9,14 +9,13 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
-translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 95%
 
 ---
-
 
 # Exportateur JSON pour Content Services{#json-exporter-for-content-services}
 
@@ -32,7 +31,7 @@ Comme les fragments de contenu utilisent du contenu structuré, vous pouvez four
 
 >[!NOTE]
 >
->La fonctionnalité décrite ici est disponible pour tous les composants principaux depuis la version [1.1.0 des composants principaux](https://docs.adobe.com/content/docs/fr/core-components/v1.html).
+>La fonctionnalité décrite ici est disponible pour tous les composants principaux depuis la [version 1.1.0 des composants principaux](https://docs.adobe.com/content/docs/fr/core-components/v1.html).
 
 ## Exportateur JSON avec les composants principaux des fragments de contenu {#json-exporter-with-content-fragment-core-components}
 
@@ -105,4 +104,3 @@ Pour plus d’informations, voir :
 * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
 
 * [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
-
