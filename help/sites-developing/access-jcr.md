@@ -9,26 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
-translation-type: tm+mt
-source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 61%
 
 ---
 
-
 # Comment accéder au JCR AEM par programmation{#how-to-programmatically-access-the-aem-jcr}
 
-Vous pouvez modifier, par programmation, les nœuds et propriétés situés dans le référentiel Adobe CQ qui fait partie d’Adobe Marketing Cloud. Pour accéder au référentiel CQ, vous utilisez l’API Java Content Repository (JCR). Vous pouvez utiliser l’API JCR Java pour exécuter des opérations CRUD (création, remplacement, mise à jour et suppression) sur du contenu situé dans le référentiel Adobe CQ. Pour plus d’informations sur l’API JCR Java, voir [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Vous pouvez modifier, par programmation, les nœuds et propriétés situés dans le référentiel Adobe CQ qui fait partie d’Adobe Marketing Cloud. Pour accéder au référentiel CQ, vous utilisez l’API Java Content Repository (JCR). Vous pouvez utiliser l’API JCR Java pour exécuter des opérations CRUD (création, remplacement, mise à jour et suppression) sur du contenu situé dans le référentiel Adobe CQ. Pour plus d’informations sur l’API Java JCR, voir [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Cet article de développement modifie le JCR Adobe CQ à partir d’une application Java externe. En revanche, vous pouvez modifier le JCR depuis un lot OSGi en utilisant l’API JCR. Pour plus d’informations, voir [Données CQ persistantes dans le référentiel de contenu Java](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
+>Cet article de développement modifie le JCR Adobe CQ à partir d’une application Java externe. En revanche, vous pouvez modifier le JCR depuis un lot OSGi en utilisant l’API JCR. Pour plus d’informations, voir [Persistance des données CQ dans le référentiel de contenu Java](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
 
 >[!NOTE]
 >
->Pour utiliser l’API JCR, ajoutez le fichier `jackrabbit-standalone-2.4.0.jar` au chemin de classe de votre application Java. Vous pouvez obtenir ce fichier JAR à partir de la page Web de l’API JCR Java à l’adresse [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Pour utiliser l’API JCR, ajoutez le fichier `jackrabbit-standalone-2.4.0.jar` au chemin de classe de votre application Java. Vous pouvez obtenir ce fichier JAR à partir de la page web de l’API Java JCR à l’adresse [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
@@ -47,9 +46,9 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Création d’une instance de session {#create-a-session-instance}
 
-L&#39;instance `Repository`représente le référentiel CRX. Utilisez l&#39;instance `Repository`pour établir une session avec le référentiel. Pour créer une session, appelez la méthode `login`de l&#39;instance `Repository`et transmettez un objet `javax.jcr.SimpleCredentials`. La méthode `login`renvoie une instance `javax.jcr.Session`.
+L’instance `Repository`représente le référentiel CRX. Vous utilisez l’instance `Repository`pour établir une session avec le référentiel. Pour créer une session, appelez la méthode `Repository`de l’instance `login`et transmettez un objet `javax.jcr.SimpleCredentials`. La méthode `login`renvoie une instance `javax.jcr.Session`.
 
-Vous créez un objet `SimpleCredentials`en utilisant son constructeur et en transmettant les valeurs de chaîne suivantes :
+Vous créez un objet `SimpleCredentials`en utilisant son constructeur et en transmettant les valeurs string suivantes :
 
 * Nom de l’utilisateur
 * Mot de passe correspondant
@@ -70,7 +69,7 @@ Utilisez une instance `Session`pour créer une instance `javax.jcr.Node`. Une in
 Node root = session.getRootNode();
 ```
 
-Une fois que vous avez créé une instance `Node`, vous pouvez exécuter des tâches telles que la création d’un autre noeud et l’ajout d’une valeur à celui-ci. Le code suivant, par exemple, crée deux nœuds et ajoute une valeur au deuxième.
+Une fois que vous avez créé une instance `Node`, vous pouvez exécuter des tâches telles que la création d’un autre noeud et l’ajout d’une valeur. Le code suivant, par exemple, crée deux nœuds et ajoute une valeur au deuxième.
 
 ```java
 // Store content
@@ -80,7 +79,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Récupération de valeurs de nœud  {#retrieve-node-values}
 
-Pour récupérer un noeud et sa valeur, appelez la méthode `Node`de l’instance `getNode`et transmettez une valeur de chaîne qui représente le chemin d’accès complet au noeud. Examinez la structure de nœud créée dans l’exemple de code précédent. Pour récupérer le nœud day, indiquez adobe/day, comme indiqué dans le code suivant :
+Pour récupérer un noeud et sa valeur, appelez la méthode `Node`de l’instance `getNode`et transmettez une valeur string qui représente le chemin d’accès complet au noeud. Examinez la structure de nœud créée dans l’exemple de code précédent. Pour récupérer le nœud day, indiquez adobe/day, comme indiqué dans le code suivant :
 
 ```java
 // Retrieve content
@@ -143,7 +142,6 @@ try {
 }
 ```
 
-Après avoir exécuté l’exemple de code complet et créé les noeuds, vous pouvez vue les nouveaux noeuds dans le **[!UICONTROL CRXDE Lite]**, comme illustré ci-dessous.
+Après avoir exécuté l’exemple de code complet et créé les noeuds, vous pouvez afficher les nouveaux noeuds dans le **[!UICONTROL CRXDE Lite]**, comme illustré ci-dessous.
 
 ![chlimage_1-68](assets/chlimage_1-68a.png)
-
