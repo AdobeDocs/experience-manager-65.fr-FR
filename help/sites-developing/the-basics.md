@@ -10,7 +10,6 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-translation-type: tm+mt
 source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
 workflow-type: tm+mt
 source-wordcount: '3367'
@@ -46,7 +45,7 @@ La norme Java Content Repository (JCR), [JSR 283](https://docs.adobe.com/content
 
 Les spécifications sont gérées par Adobe Research (Suisse) AG.
 
-Le module [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; est utilisée pour l’accès direct et la manipulation du contenu du référentiel.
+Le module [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
 
 ## Experience Server (CRX) et Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -109,17 +108,17 @@ Nous pouvons la décomposer comme suit :
 
 **** protocolHTTP
 
-**Nom** d’hôte du site Web.
+**** hostName du site web.
 
 **content** pathPath spécifiant le contenu à rendre. Est utilisé en combinaison avec l’extension. Dans cet exemple, on obtient tools/spy.html.
 
-**sélecteur(s)** utilisé(s) pour d’autres méthodes de rendu du contenu ; dans cet exemple, une version compatible avec les imprimantes au format A4.
+**sélecteur(s)** Utilisé pour d’autres méthodes de rendu du contenu ; dans cet exemple, une version imprimable au format A4.
 
-**format** extensionContent ; spécifie également le script à utiliser pour le rendu.
+**Format** extensionContent ; spécifie également le script à utiliser pour le rendu.
 
 **** suffixPeut être utilisé pour spécifier des informations supplémentaires.
 
-**param(s)** Tout paramètre requis pour le contenu dynamique.
+**param(s)** Tous les paramètres requis pour le contenu dynamique.
 
 #### De l’URL au contenu et aux scripts {#from-url-to-content-and-scripts}
 
@@ -138,8 +137,8 @@ Avec Sling, vous spécifiez le script à appliquer pour le rendu d’une entité
 
 La requête est décomposée et les informations nécessaires sont extraites. Une recherche de la ressource demandée (nœud de contenu) est effectuée dans le référentiel :
 
-* first Sling vérifie si un noeud existe à l’emplacement spécifié dans la requête ; par ex. `../content/corporate/jobs/developer.html`
-* si aucun noeud n&#39;est trouvé, l&#39;extension est supprimée et la recherche répétée ; par ex. `../content/corporate/jobs/developer`
+* first Sling vérifie si un noeud existe à l’emplacement spécifié dans la requête ; Par exemple : `../content/corporate/jobs/developer.html`
+* si aucun noeud n’est trouvé, l’extension est supprimée et la recherche est répétée ; Par exemple : `../content/corporate/jobs/developer`
 * si aucun nœud n’est trouvé, Sling retourne le code http 404 (Not Found).
 
 Sling permet également à des éléments autres que des nœuds JCR d’être des ressources, mais il s’agit là d’une fonctionnalité avancée.
@@ -151,7 +150,7 @@ Lorsque la ressource appropriée (nœud de contenu) est localisée, le **type de
 Le chemin spécifié par le `sling:resourceType` peut être :
 
 * absolu
-* relative, à un paramètre de configuration
+* relatif, à un paramètre de configuration
 
    Les chemins relatifs sont recommandés par Adobe car ils contribuent à la portabilité.
 
@@ -162,19 +161,19 @@ Un certain nombre d’autres points sont à noter :
 * si la méthode (GET, POST) est requise, elle est indiquée en majuscules selon la spécification HTTP, par ex. jobs.POST.esp (voir ci-dessous)
 * divers moteurs de script sont pris en charge :
 
-   * HTL (HTML Template Language - Adobe Experience Manager’s favorite and Recommandé server-side template system for HTML) : `.html`
-   * Pages ECMAScript (JavaScript) (exécution côté serveur) : `.esp, .ecma`
-   * Pages Java Server (exécution côté serveur) : `.jsp`
-   * Compilateur Java Servlet (exécution côté serveur) : `.java`
+   * HTL (HTML Template Language - système de modèle côté serveur préféré et recommandé d’Adobe Experience Manager pour HTML) : `.html`
+   * ECMAScript (JavaScript) Pages (exécution côté serveur) : `.esp, .ecma`
+   * Java Server Pages (exécution côté serveur) : `.jsp`
+   * Compilateur de servlet Java (exécution côté serveur) : `.java`
    * Modèles JavaScript (exécution côté client) : `.jst`
 
 La liste des moteurs de script pris en charge par l’instance donnée d’AEM figure dans la Felix Management Console (`http://<host>:<port>/system/console/slingscripting`).
 
 En outre, Apache Sling prend en charge l’intégration avec d’autres moteurs de script répandus (par exemple, Groovy, JRuby, Freemarker) et offre un moyen d’intégrer de nouveaux moteurs de script.
 
-En utilisant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs`, alors pour :
+En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors pour :
 
-* Requêtes GET/HEAD et URL se terminant par .html (types de requête par défaut, format par défaut)
+* Requêtes GET/HEAD et URL se terminant par .html (types de requêtes par défaut, format par défaut)
 
    Le script sera /apps/hr/jobs/jobs.esp; la dernière section de sling:resourceType forme le nom de fichier.
 
@@ -194,7 +193,7 @@ En utilisant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs`, alors
 
    Les sélecteurs peuvent être utilisés pour afficher le même contenu dans un autre format. Par exemple une version imprimable, un flux rss ou un résumé.
 
-   Si nous étudions une version adaptée à l’imprimante dans laquelle le sélecteur peut être *imprimé*; comme dans `../content/corporate/jobs/developer.print.html`
+   Si nous observons une version imprimable où le sélecteur peut être *print* ; comme dans `../content/corporate/jobs/developer.print.html`
 
    Le script sera `/apps/hr/jobs/jobs.print.esp` ; le sélecteur est ajouté au nom du script.
 
@@ -287,7 +286,7 @@ Si vous appelez la représentation (le script) directement, vous masquez la ress
 
 ### API Sling {#sling-api}
 
-Elle utilise le module API Sling org.apache.sling.Bibliothèques &amp;amp ; ast ; et de balises.
+Elle utilise le module API Sling org.apache.sling.Bibliothèques de balises &amp;ast; et .
 
 ### Référencement d’éléments existants avec sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -301,7 +300,7 @@ Pour ce faire, vous pouvez utiliser la commande sling:include(&quot;/&lt;chemin>
 %><sling:include resourceType="geometrixx/components/image/img"/><%
 ```
 
-## OSGI  {#osgi}
+## OSGI {#osgi}
 
 OSGi désigne une architecture permettant de développer et de déployer des applications et des bibliothèques modulaires (également connu sous le nom de Dynamic Module System for Java). Les conteneurs OSGi vous permettent de décomposer votre application en modules distincts (des fichiers jar contenant des méta-informations supplémentaires appelés « bundles » dans le jargon OSGi) et de gérer les interdépendances qui existent entre eux avec :
 
@@ -336,11 +335,11 @@ Pour plus d’informations, reportez-vous à [Console web](/help/sites-deploying
 
 Les éléments suivants présentent un intérêt pour le développement :
 
-**** ItemUn élément est soit un noeud, soit une propriété.
+**** ItemUn élément est un noeud ou une propriété.
 
 Pour plus d’informations sur la manipulation des objets Item, reportez-vous aux [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item.
 
-**Noeud (et leurs propriétés)** Les noeuds et leurs propriétés sont définis dans la spécification JCR API 2.0 (JSR 283). Ils stockent le contenu, les définitions d’objets, les scripts de rendu et d’autres données.
+**Noeud (et leurs propriétés)**  Les noeuds et leurs propriétés sont définis dans la spécification JCR API 2.0 (JSR 283). Ils stockent le contenu, les définitions d’objets, les scripts de rendu et d’autres données.
 
 Les nœuds définissent la structure du contenu et leurs propriétés stockent le contenu réel et les métadonnées.
 
@@ -352,7 +351,7 @@ Par exemple, pour obtenir les propriétés du nœud actif, vous pouvez utiliser 
 
 `PropertyIterator properties = currentNode.getProperties();`
 
-Avec currentNode comme objet de noeud actif.
+currentNode étant l’objet de noeud actif.
 
 Pour plus d’informations sur la manipulation des objets Node, reportez-vous aux [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
@@ -362,13 +361,13 @@ Les boîtes de dialogue sont construites en combinant des Widgets.
 
 AEM a été développé à partir de la bibliothèque de widgets ExtJS.
 
-**** Boîte de dialogueUne boîte de dialogue est un type spécial de widget.
+**** DialogUne boîte de dialogue est un type spécial de widget.
 
 Pour modifier le contenu, AEM utilise des boîtes de dialogue définies par le développeur de l’application. Celles-ci combinent une série de widgets pour présenter à l’utilisateur tous les champs et toutes les actions nécessaires pour modifier le contenu associé.
 
 Les boîtes de dialogue servent également à modifier les métadonnées et sont utilisées par divers outils d’administration.
 
-**** ComposantUn composant logiciel est un élément système offrant un service ou un événement prédéfini et capable de communiquer avec d&#39;autres composants.
+**** ComposantUn composant logiciel est un élément système qui offre un service ou un événement prédéfini et qui peut communiquer avec d’autres composants.
 
 Dans AEM, un composant est souvent utilisé pour effectuer le rendu du contenu d’une ressource. Lorsque la ressource est une page, le composant chargé de son rendu est appelé « composant de niveau supérieur » ou « composant de page ». Cependant, un composant n’effectue pas nécessairement le rendu de contenu, ni n’est lié à une ressource spécifique. Par exemple, un composant de navigation affiche des informations sur plusieurs ressources.
 
@@ -377,15 +376,15 @@ La définition d’un composant comprend :
 * le code utilisé pour le rendu du contenu
 * une boîte de dialogue pour la saisie utilisateur et la configuration du contenu résultant.
 
-**Le modèle** TemplateA est la base d&#39;un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est ensuite créée en copiant ce modèle.
+**** ModèleUn modèle est la base d’un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est ensuite créée en copiant ce modèle.
 
 Un modèle est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
 
 Il définit le composant de page utilisé pour afficher la page et le contenu par défaut (contenu principal de premier niveau). Le contenu définit la façon dont il est rendu car AEM est centré sur le contenu.
 
-**Composant de page (composant de niveau supérieur)** Composant à utiliser pour générer la page.
+**Composant de page (composant de niveau supérieur)** Composant à utiliser pour le rendu de la page.
 
-**La page** PageA est une &#39;instance&#39; d&#39;un modèle.
+**** PageA est une &quot;instance&quot; d’un modèle.
 
 Une page comporte un nœud de hiérarchie de type cq:Page et un nœud de contenu de type cq:PageContent. La propriété sling:resourceType du nœud de contenu pointe vers le composant de page utilisé pour le rendu de la page.
 
@@ -393,15 +392,15 @@ Par exemple, pour obtenir le nom de la page active, vous pouvez utiliser le code
 
 S`tring pageName = currentPage.getName();`
 
-Avec currentPage comme objet de page actif. Pour plus d’informations sur la manipulation des objets Page, reportez-vous aux [Javadocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+currentPage étant l’objet de page actif. Pour plus d’informations sur la manipulation des objets Page, reportez-vous aux [Javadocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
 
-**** Gestionnaire de pagesLe gestionnaire de pages est une interface qui fournit des méthodes pour les opérations au niveau de la page.
+**** Gestionnaire de pagesLe gestionnaire de page est une interface qui fournit des méthodes pour les opérations au niveau de la page.
 
 Par exemple, pour obtenir la page de contenu d’une ressource, vous pouvez utiliser le code suivant dans votre script :
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-Avec pageManager en tant qu’objet gestionnaire de pages et myResource en tant qu’objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de page, reportez-vous aux [Javadocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+PageManager étant l’objet de gestionnaire de page et myResource un objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de page, reportez-vous aux [Javadocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structure dans le référentiel {#structure-within-the-repository}
 
@@ -423,7 +422,7 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 * `/content`
 
-   Contenu créé pour votre site Web.
+   Contenu créé pour votre site web.
 
 * `/etc`
 
@@ -433,7 +432,7 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 * `/libs`
 
-    Bibliothèques et définitions appartenant au noyau d’AEM. Les sous-dossiers de `/libs` représentent les fonctions AEM prêtes à l&#39;emploi, comme par exemple la recherche ou la réplication. Le contenu de `/libs` ne doit pas être modifié car il affecte le fonctionnement de l&#39;AEM. Les fonctionnalités spécifiques à votre site Web doivent être développées sous `/apps` (voir [Personnalisation des composants et autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+    Bibliothèques et définitions appartenant au noyau d’AEM. Les sous-dossiers de `/libs` représentent les fonctionnalités d’AEM prêtes à l’emploi comme la recherche ou la réplication. Le contenu de `/libs` ne doit pas être modifié, car il affecte le fonctionnement d’AEM. Les fonctionnalités spécifiques à votre site web doivent être développées sous `/apps` (voir [Personnalisation des composants et autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
