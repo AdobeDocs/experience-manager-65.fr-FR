@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
-translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 82%
 
 ---
-
 
 # Connexion à des bases de données SQL{#connecting-to-sql-databases}
 
@@ -93,7 +92,7 @@ Les liens suivants ouvrent les pages de téléchargement pour certaines solution
 
 ### Configuration du service Pool de connexions JDBC  {#configuring-the-jdbc-connection-pool-service}
 
-Ajoutez une configuration pour le service JDBC Connections Pool qui utilise le pilote JDBC pour créer des objets de source de données. Votre code d’application utilise ce service pour obtenir l’objet et se connecter à la base de données.
+Ajoutez une configuration pour le service Pool de connexions JDBC qui utilise le pilote JDBC pour créer des objets de source de données. Votre code d’application utilise ce service pour obtenir l’objet et se connecter à la base de données.
 
 Pool de connexions JDBC (`com.day.commons.datasource.jdbcpool.JdbcPoolService`) est un service de fabrique. Si vous avez besoin de connexions qui utilisent d’autres propriétés (un accès en lecture seule ou en lecture/écriture, par exemple), créez plusieurs configurations.
 
@@ -109,7 +108,7 @@ Les propriétés suivantes sont disponibles pour configurer un service de connex
 
 * Mot de passe (`jdbc.password`) : mot de passe à utiliser pour l’authentification de l’utilisateur. Le type de données est `String`.
 
-* Requête de validation ( `jdbc.validation.query`) : Instruction SQL à utiliser pour vérifier la réussite de la connexion, par exemple `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Le type de données est `String`.
+* Requête de validation ( `jdbc.validation.query`) : L’instruction SQL à utiliser pour vérifier la connexion, par exemple `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Le type de données est `String`.
 
 * Lecture seule par défaut (default.readonly) : sélectionnez cette option si vous voulez que la connexion fournisse un accès en lecture seule. Le type de données est `Boolean`.
 * Validation automatique par défaut (`default.autocommit`) : sélectionnez cette option pour créer des transactions distinctes pour chaque commande SQL envoyée à la base de données ; chaque transaction est alors automatiquement validée. Ne sélectionnez pas cette option lorsque vous validez explicitement des transactions dans votre code. Le type de données est `Boolean`.
@@ -122,7 +121,7 @@ Les propriétés suivantes sont disponibles pour configurer un service de connex
 
 * Propriétés de service supplémentaires (`datasource.svc.properties`) : ensemble de paires nom/valeur que vous souhaitez ajouter à l’URL de connexion. Le type de données est `String[]`.
 
-Pool de connexions JDBC est un service de fabrique. Par conséquent, si vous utilisez un noeud `sling:OsgiConfig` pour configurer le service de connexion, le nom du noeud doit inclure le PID du service en usine suivi de *`-alias`*. Le pseudonyme que vous utilisez doit être unique pour tous les nœuds de configuration de ce PID. Un exemple de nom de noeud est `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+Pool de connexions JDBC est un service de fabrique. Par conséquent, si vous utilisez un noeud `sling:OsgiConfig` pour configurer le service de connexion, le nom du noeud doit inclure le PID du service d’usine suivi de *`-alias`*. Le pseudonyme que vous utilisez doit être unique pour tous les nœuds de configuration de ce PID. `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool` est un exemple de nom de noeud.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
@@ -176,4 +175,3 @@ L’exemple de code JSP suivant obtient une instance de la source de données hs
 >[!NOTE]
 >
 >Pour savoir comment injecter un service DataSourcePool dans un lot OSGi, voir [Injection d’un service DataSourcePool dans un lot OSGi Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
-
