@@ -10,18 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 5b2f624d-e5b8-4484-a773-7784ebce58bd
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 79%
 
 ---
 
-
 # Intégration à ExactTarget{#integrating-with-exacttarget}
 
-L&#39;intégration de l&#39;AEM à la Cible exacte vous permet de gérer et d&#39;envoyer des e-mails créés dans AEM via la Cible exacte. Il vous permet également d’utiliser les fonctions de gestion des pistes de la Cible exacte via AEM formulaires sur les pages AEM.
+L’intégration d’AEM à ExactTarget vous permet de gérer et d’envoyer des emails créés dans AEM via ExactTarget. Il vous permet également d’utiliser les fonctionnalités de gestion des prospects d’ExactTarget via AEM forms sur les pages AEM.
 
 L’intégration offre les fonctionnalités suivantes :
 
@@ -38,7 +37,7 @@ Il est possible d’ajouter des configurations ExactTarget par le biais d’outi
 
 Pour créer une configuration ExactTarget dans les services cloud :
 
-1. Sur la page d’accueil, cliquez sur **Services cloud**. (Ou un accès direct à `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Sur la page d’accueil, cliquez sur **Services cloud**. (Ou accédez directement à `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Cliquez sur **ExactTarget**, puis sur **Configurer**. La fenêtre de configuration d’ExactTarget s’affiche.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
@@ -54,7 +53,7 @@ Pour créer une configuration ExactTarget dans les services cloud :
 
 1. Sélectionnez un compte, le cas échéant. Le compte est destiné aux clients Enterprise 2.0. Cliquez sur **OK**.
 
-   ExactTarget a été configuré. Si vous souhaitez modifier la configuration, cliquez sur **Modifier**. Vous pouvez accéder à ExactTarget en cliquant sur **Atteindre ExactTarget**.
+   ExactTarget a été configuré. Si vous souhaitez modifier la configuration, cliquez sur **Modifier**. Vous pouvez accéder à ExactTarget en cliquant sur **Aller à ExactTarget**.
 
 1. AEM propose désormais la fonctionnalité Extension de données. Celle-ci permet d’importer des colonnes d’extensions de données ExactTarget. Pour la configurer, cliquez sur le signe « + » en regard de la configuration ExactTarget créée. Vous pouvez sélectionner l’une des extensions de données existantes dans la liste déroulante. Pour plus d’informations sur la configuration des extensions de données, voir la [documentation ExactTarget](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
 
@@ -66,9 +65,9 @@ Pour créer une configuration ExactTarget dans les services cloud :
 
 Pour créer une configuration ExactTarget avec les outils, procédez comme suit :
 
-1. Sur la page d’accueil, cliquez sur **Outils**. Vous pouvez également vous y rendre directement en accédant à `https://<hostname>:<port>/misadmin#/etc`.
+1. Sur la page d’accueil, cliquez sur **Outils**. Ou accédez-y directement en vous rendant à `https://<hostname>:<port>/misadmin#/etc`.
 1. Sélectionnez **, Outils**, **Configuration des services en cloud**, puis **ExactTarget**.
-1. Cliquez sur **Nouveau** pour ouvrir la **fenêtre Créer une page **.
+1. Cliquez sur **New** pour ouvrir la fenêtre **Créer une page **.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 
