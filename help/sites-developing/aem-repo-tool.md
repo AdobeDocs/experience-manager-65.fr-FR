@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 80%
 
 ---
 
-
 # Outil AEM Repo{#aem-repo-tool}
 
-L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L&#39;outil AEM Repo est semblable à l&#39;outil [Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), mais il est plus rapide, avec des dépendances minimales et est un script bash simple.
+L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L’outil Repo d’AEM est similaire à l’outil [Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), mais il est plus rapide, avec des dépendances minimales et un script bash simple.
 
 Cet outil simplifie les transferts de fichiers qu’effectuent le développeur et peut également être intégré à IntelliJ et Eclipse pour optimiser l’activité de développement.
 
 ## Présentation {#overview}
 
-Pour un chemin d&#39;accès donné dans une structure de fichier `jcr_root` sur le système de fichiers, AEM Repo Tool crée un package avec un filtre unique pour l&#39;ensemble de la sous-arborescence et le transmet au serveur (semblable à FTP `put`), le récupère du serveur ( `get`) ou compare les différences ( `status` et `diff`).
+Pour un chemin donné à l’intérieur d’une structure de fichier `jcr_root` sur le système de fichiers, AEM Repo Tool crée un package avec un seul filtre pour la sous-arborescence entière et le transmet au serveur (similaire au FTP `put`), le récupère sur le serveur ( `get`) ou compare les différences ( `status` et `diff`).
 
 Cet outil ne prend pas en charge les chemins de filtre multiples ou `filter.xml` de FileVault.
 
@@ -46,4 +45,3 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 * [Ouvrir le projet outils sur GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip).
-
