@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
-translation-type: tm+mt
-source-git-commit: 0985ba24f7430381fccc40faf3a316d3abd85a30
+exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 98%
 
 ---
-
 
 # Système de style{#style-system}
 
@@ -62,7 +61,7 @@ Le diagramme suivant illustre l’architecture du système de style.
 
 ![aem-style-system](assets/aem-style-system.png)
 
-## Utilisation {#use}
+## Utilisez {#use}
 
 Pour démontrer la fonctionnalité, nous utiliserons comme exemple l’implémentation de [WKND](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), [composant de titre](https://www.adobe.com/go/aem_cmp_title_v2_fr) des composants principaux.
 
@@ -131,7 +130,7 @@ Une fois le composant configuré, les styles définis par les auteurs de pages s
 
 ### Activer l’onglet Styles dans la boîte de dialogue Modifier {#enable-styles-tab-edit}
 
-Depuis AEM version 6.5.3.0, un onglet Styles en option de la boîte de dialogue Modifier est désormais disponible. Contrairement à l’onglet de la boîte de dialogue Conception, celui de la boîte de dialogue Modifier n’est pas essentiel pour le fonctionnement du système de style. Il s’agit d’une autre interface facultative, utilisable par un auteur de contenu pour définir des styles.
+Depuis AEM version 6.5.3.0, un onglet Styles facultatif dans la boîte de dialogue Modifier est désormais disponible. Contrairement à l’onglet de la boîte de dialogue Conception, celui de la boîte de dialogue Modifier n’est pas essentiel pour le fonctionnement du système de style. Il s’agit d’une autre interface facultative, utilisable par un auteur de contenu pour définir des styles.
 
 L’onglet de la boîte de dialogue Modifier peut être inclus de la même manière que celui de la boîte de dialogue Conception :
 
