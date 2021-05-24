@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: e35c9352-f0d5-4db5-b88f-0720af8f6883
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Mise à niveau
+exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 77%
 
 ---
-
 
 # Mises à niveau possibles{#sustainable-upgrades}
 
@@ -38,7 +37,7 @@ Dans les versions précédentes d’AEM, de nombreuses API étaient exposées pa
 
 * Les API publiques seront rétrocompatibles avec l’installation d’un module de compatibilité.
 * Le module de compatibilité contiendra un jar Uber de compatibilité pour garantir la compatibilité descendante.
-* Les API Java marquées `Private` ne doivent être utilisées que par AEM lots internes et ne doivent pas l&#39;être par des lots personnalisés.
+* Les API Java marquées comme `Private` sont destinées uniquement à être utilisées par AEM lots internes et ne doivent pas être utilisées par des lots personnalisés.
 
 >[!NOTE]
 >
@@ -54,21 +53,21 @@ Pour permettre aux utilisateurs de mieux comprendre les zones de **/libs** qui p
 
 * **Public (granite:PublicArea)** : définit un nœud comme étant public afin qu’il puisse être superposé, hérité (`sling:resourceSuperType`) ou utilisé directement ( `sling:resourceType`). Les nœuds situés sous /libs marqués comme étant publics peuvent être mis à niveau en toute sécurité avec l’ajout d’un module de compatibilité. En règle générale, les utilisateurs doivent uniquement exploiter les nœuds publics.
 
-* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les noeuds peuvent être superposés ou hérités ( `sling:resourceSupertype`) mais ne doivent pas être utilisés directement ( `sling:resourceType`).
+* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les noeuds peuvent être superposés ou hérités ( `sling:resourceSupertype`), mais ne doivent pas être utilisés directement ( `sling:resourceType`).
 
-* **Final (granite:FinalArea)** : définit un nœud comme étant final. Dans l&#39;idéal, les noeuds classés comme finaux ne doivent pas être superposés ou hérités. Les noeuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
+* **Final (granite:FinalArea)** : définit un nœud comme étant final. Les noeuds classés comme finaux idéalement ne doivent pas être superposés ni hérités. Les noeuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
 
-* ***Internal (granite:InternalArea)*** *- *Définit un noeud comme interne. Les nœuds classés dans la catégorie Interne ne peuvent pas être superposés, hérités, ni utilisés directement. Ces nœuds sont destinés uniquement aux fonctionnalités internes d’AEM.
+* ***Interne (granite:InternalArea)*** *- *Définit un noeud comme interne. Les nœuds classés dans la catégorie Interne ne peuvent pas être superposés, hérités, ni utilisés directement. Ces nœuds sont destinés uniquement aux fonctionnalités internes d’AEM.
 
 * **Aucune annotation** : les nœuds héritent de la classification en fonction de la hiérarchie d’arborescence. Par défaut, /root est Public. **Les nœuds dont un parent est classé dans la catégorie Interne ou Final doivent également être traités comme étant internes.**
 
 >[!NOTE]
 >
->Ces stratégies ne sont appliquées que par rapport à des mécanismes basés sur un chemin de recherche Sling. D&#39;autres zones de **/libs** comme une bibliothèque côté client peuvent être marquées comme `Internal`, mais peuvent toujours être utilisées avec l&#39;inclusion clientlib standard. Dans ce cas, il est essentiel que le client continue de respecter la classification Interne.
+>Ces stratégies ne sont appliquées que par rapport à des mécanismes basés sur un chemin de recherche Sling. D’autres zones de **/libs** comme une bibliothèque côté client peuvent être marquées comme `Internal`, mais peuvent toujours être utilisées avec l’inclusion clientlib standard. Dans ce cas, il est essentiel que le client continue de respecter la classification Interne.
 
-#### Indicateurs de type de contenu CRXDE Lite  {#crxde-lite-content-type-indicators}
+#### Indicateurs de type de contenu CRXDE Lite {#crxde-lite-content-type-indicators}
 
-Les mixins appliqués dans le CRXDE Lite affichent les noeuds de contenu et les arbres marqués comme `INTERNAL` grisés. Pour la classification `FINAL`, seule l’icône est grisée. Les enfants de ces nœuds apparaissent également en grisé. Dans les deux cas, la fonctionnalité Nœud de recouvrement est désactivée.
+Les mixins appliqués dans CRXDE Lite affichent les noeuds de contenu et les arborescences marqués comme `INTERNAL` grisés. Pour la classification `FINAL`, seule l’icône est grisée. Les enfants de ces nœuds apparaissent également en grisé. Dans les deux cas, la fonctionnalité Nœud de recouvrement est désactivée.
 
 **Public**
 
@@ -86,13 +85,13 @@ Les mixins appliqués dans le CRXDE Lite affichent les noeuds de contenu et les 
 
 >[!NOTE]
 >
->À partir de AEM 6.5, l’Adobe recommande d’utiliser le Détecteur de schémas pour détecter les violations d’accès au contenu. Les rapports des détecteurs de schémas sont plus détaillés, détectent plus de problèmes et réduisent la probabilité de faux positifs.
+>Depuis la version 6.5 d’AEM, Adobe recommande d’utiliser le détecteur de motifs pour détecter les violations d’accès au contenu. Les rapports du détecteur de motifs sont plus détaillés, détectent plus de problèmes et réduisent la probabilité de faux positifs.
 >
->Pour plus d’informations, voir [Évaluation de la complexité de la mise à niveau avec le détecteur de schémas](/help/sites-deploying/pattern-detector.md).
+>Pour plus d’informations, voir [Évaluation de la complexité de la mise à niveau à l’aide du détecteur de motifs](/help/sites-deploying/pattern-detector.md).
 
 AEM 6.5 sera distribué avec un contrôle d’intégrité pour informer les clients si du contenu référencé ou superposé est utilisé d’une manière non conforme à la classification du contenu.
 
-Le contrôle d&#39;accès au contenu** Sling/Granite est un nouveau contrôle d&#39;intégrité qui surveille le référentiel pour voir si le code du client accède incorrectement aux noeuds protégés dans AEM.
+Le** contrôle d’accès au contenu Sling/Granite** est un nouveau contrôle d’intégrité qui surveille le référentiel pour voir si le code client accède incorrectement aux noeuds protégés dans AEM.
 
 Ce contrôle analyse **/apps** et son exécution demande généralement quelques secondes.
 
@@ -105,10 +104,10 @@ Pour pouvoir accéder à ce nouveau contrôle d’intégrité, vous devez procé
 
 Une fois l’analyse terminée, une liste d’avertissements s’affiche pour informer l’utilisateur final du nœud protégé qui est référencé de manière incorrecte :
 
-![capture d&#39;écran-2018-2-5health reports](assets/screenshot-2018-2-5healthreports.png)
+![capture d’écran-2018-2-5healthreports](assets/screenshot-2018-2-5healthreports.png)
 
 Une fois que les problèmes ont été corrigés, l’état vert est rétabli :
 
-![capture d&#39;écran-2018-2-5health reports-violations](assets/screenshot-2018-2-5healthreports-violations.png)
+![capture d’écran-2018-2-5healthreports-violations](assets/screenshot-2018-2-5healthreports-violations.png)
 
 Le contrôle d’intégrité affiche des informations collectées par un service en arrière-plan qui vérifie, de manière asynchrone, si un type de ressource ou d’incrustation est utilisé dans tous les chemins de recherche Sling. Si des mixins de contenu sont utilisés de manière incorrecte, une infraction est signalée.
