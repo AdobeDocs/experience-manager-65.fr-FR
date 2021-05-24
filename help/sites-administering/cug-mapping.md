@@ -11,8 +11,7 @@ content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
-feature: Security
-translation-type: tm+mt
+feature: Sécurité
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '505'
@@ -34,7 +33,7 @@ ht-degree: 74%
   <tr>
    <td><p>Propriété : cq:cugEnabled</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
    <td><p>Autorisation :</p> <p>Nœud : rep:cugPolicy, type de nœud : rep:CugPolicy</p> <p>Type de nœud indiqué : rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentification:</p> <p>Type de mixin : granite:AuthenticationRequired</p> </td>
-   <td><p>Pour restreindre l’accès en lecture, une stratégie de CUG dédiée est appliquée au nœud cible.</p> <p>REMARQUE : les stratégies s’appliquent uniquement aux chemins d’accès pris en charge.</p> <p>Les nœuds rep:cugPolicy de type rep:CugPolicy sont protégés et ne peuvent pas être écrits à l’aide des appels standard de l’API JCR. Vous devrez utiliser la fonctionnalité de gestion du contrôle d’accès JCR.</p> <p>Pour plus d’informations, consultez <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">cette page</a>.</p> <p>Afin d’appliquer les exigences d’authentification sur un noeud, il suffit d’ajouter le type de mixin granite:AuthenticationRequired.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
+   <td><p>Pour restreindre l’accès en lecture, une stratégie de CUG dédiée est appliquée au nœud cible.</p> <p>REMARQUE : les stratégies s’appliquent uniquement aux chemins d’accès pris en charge.</p> <p>Les nœuds rep:cugPolicy de type rep:CugPolicy sont protégés et ne peuvent pas être écrits à l’aide des appels standard de l’API JCR. Vous devrez utiliser la fonctionnalité de gestion du contrôle d’accès JCR.</p> <p>Pour plus d’informations, consultez <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">cette page</a>.</p> <p>Pour imposer l’exigence d’authentification sur un noeud, il suffit d’ajouter le type de mixin granite:AuthenticationRequired.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
   </tr>
   <tr>
    <td><p>Propriété : cq:cugPrincipals</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
@@ -48,7 +47,7 @@ ht-degree: 74%
   </tr>
   <tr>
    <td><p>Propriété : cq:cugRealm</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
-   <td>NA</td>
+   <td>s.o.</td>
    <td>Plus pris en charge depuis la nouvelle implémentation.</td>
   </tr>
  </tbody>
@@ -86,16 +85,16 @@ Nom : com.day.cq.auth.impl.CugSupportImpl
 **Commentaires**
 
 * Configuration de l’autorisation de CUG et activation/désactivation de l’évaluation.
-Service permettant de configurer la liste d’exclusion des entités qui ne doivent pas être affectées par l’autorisation CUG.
+Service permettant de configurer la liste d’exclusion des entités qui ne doivent pas être affectées par l’autorisation de CUG.
 
    >[!NOTE]
    > 
-   >Si `CugExcludeImpl` n&#39;est pas configuré, `CugConfiguration` revient à la valeur par défaut.
+   >Si `CugExcludeImpl` n’est pas configuré, `CugConfiguration` revient à la valeur par défaut.
 
    Il est possible de connecter une implémentation CugExclude personnalisée en cas de besoins spéciaux.
 
 * Composant OSGI implémentant LoginPathProvider, qui expose un chemin de connexion correspondant à LoginSelectorHandler. Il comporte une référence obligatoire à RequirementHandler, utilisé pour enregistrer l’observateur qui surveille les exigences d’authentification modifiées stockées dans le contenu via le type de mixin granite:AuthenticationRequired.
-* Composant OSGi implémentant RequirementHandler qui avertit SlingAuthenticator des modifications apportées aux exigences d’authentification.
+* Composant OSGi implémentant RequirementHandler qui informe SlingAuthenticator des modifications apportées aux exigences d’authentification.
 
    Comme la stratégie de configuration de ce composant est REQUISE, elle ne sera activée que si un ensemble de chemins pris en charge est spécifié.
 
