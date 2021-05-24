@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 90%
 
 ---
-
 
 # Création – Environnement et outils {#authoring-the-environment-and-tools}
 
@@ -62,7 +61,7 @@ Utilisez l’outil de recherche de contenu pour localiser une plage de ressource
 * [Images](#finding-images)
 * [Documents](#finding-documents)
 * [Films](#finding-movies)
-* [Navigateur Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Explorateur Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [](#products) [Pages](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 
 * [Paragraphes](#referencing-paragraphs-from-other-pages)
@@ -103,7 +102,7 @@ Cet onglet répertorie tous les produits. Après avoir créé un paragraphe appr
 
 ### Trouver des pages {#finding-pages}
 
-Cet onglet affiche toutes les pages. Cliquez avec le doublon sur une page pour l’ouvrir en vue de la modifier.
+Cet onglet affiche toutes les pages. Double-cliquez sur une page pour l’ouvrir en vue de la modifier.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -164,14 +163,14 @@ Pour afficher les références de page directes :
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Sélectionnez **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins.
+1. Sélectionnez **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins d’accès.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
 Dans certains cas, le sidekick permet d’exécuter d’autres actions, notamment :
 
 * [Lancements](/help/sites-classic-ui-authoring/classic-launches.md)
-* [Live Copies](/help/sites-administering/msm.md)
+* [Live Copies](/help/sites-administering/msm.md)
 
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 
@@ -185,7 +184,7 @@ Le **journal d’audit** est accessible depuis l’onglet **Informations** du si
 
 ## Informations sur la page {#page-information}
 
-La console de site Web [fournit également des informations sur l&#39;état actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), telles que la publication, la modification, le verrouillage, la livecopy, etc.
+La console Sites Web [fournit également des informations sur l’état actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), telles que la publication, la modification, le verrouillage, la Live Copy, etc.
 
 ## Modes de page  {#page-modes}
 
@@ -209,9 +208,9 @@ Dans ce mode, vous avez la possibilité de modifier la conception de la page en 
 >D’autres options sont également disponibles :
 >
 >* [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [Contexte client](/help/sites-administering/client-context.md)
->* Sites web - Ouvre la console Sites web.
->* Recharger - Actualise la page.
+* [Contexte client](/help/sites-administering/client-context.md)
+* Sites web : ouvre la console Sites web .
+* Recharger - Actualise la page.
 
 
 ## Raccourcis clavier {#keyboard-shortcuts}
