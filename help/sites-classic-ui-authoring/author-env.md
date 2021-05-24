@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 87%
 
 ---
 
-
 # Utilisation de l’environnement de création{#working-with-the-author-environment}
 
 >[!NOTE]
 >
->La documentation suivante porte sur l’IU classique. Pour plus d’informations sur la création dans l’interface utilisateur tactile moderne, voir la [documentation de création standard](/help/assets/assets.md).
+>La documentation suivante porte sur l’IU classique. Pour plus d’informations sur la création dans l’IU tactile moderne, consultez la [documentation de création standard](/help/assets/assets.md).
 
 L’environnement de création vous permet d’effectuer les opérations suivantes :
 
-* [Création](/help/sites-authoring/author.md)  (y compris  [la création et la ](/help/sites-authoring/qg-page-authoring.md) gestion de ressources [ de ](/help/assets/assets.md)page)
+* [Création](/help/sites-authoring/author.md)  (y compris la  [création de ](/help/sites-authoring/qg-page-authoring.md) pages et la  [gestion de ressources](/help/assets/assets.md))
 
 * [Administration](/help/sites-administering/administer-best-practices.md) des tâches nécessaires pour générer et gérer le contenu sur votre site web
 
@@ -39,7 +38,6 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
    * Elle a été conçue pour les appareils de bureau.
    * Elle n’est plus gérée.
    * La documentation suivante porte sur cette IU classique. Pour plus d’informations sur la création dans l’interface moderne destinée aux écrans tactiles, consultez la [documentation de création standard](/help/sites-authoring/author.md).
-
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Interface utilisateur optimisée pour les écrans tactiles
@@ -50,10 +48,7 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
    * Voir la [documentation de création standard](/help/sites-authoring/author.md) pour plus d’informations sur la création à l’aide de l’interface utilisateur tactile. La documentation suivante porte sur l’IU classique.
 
    * Bureau :
-
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Tablettes (ou bureau de moins de 1024 pixels de large) :
-
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
-
