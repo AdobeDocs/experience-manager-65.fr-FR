@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3381'
 ht-degree: 83%
 
 ---
-
 
 # Pages d’entrée{#landing-pages}
 
@@ -38,9 +37,9 @@ La préparation du module de conception pour l’importation est traitée dans [
 
 >[!CAUTION]
 >
->Comme l’importateur de conception requiert l’accès à `/apps`, il ne fonctionnera pas dans les environnements de cloud conteneurisés où `/apps` est immuable.
+>Étant donné que l’importateur de conception requiert l’accès à `/apps`, il ne fonctionne pas dans les environnements cloud en conteneur où `/apps` est immuable.
 
-## Que sont les Landings page ? {#what-are-landing-pages}
+## Que sont les landing pages ? {#what-are-landing-pages}
 
 Les pages d’entrée sont des sites comportant une ou plusieurs pages. Elles constituent le « point de terminaison » d’un programme marketing. Par exemple, avec une adresse électronique, AdWords/bannières, des réseaux sociaux, etc. Les objectifs d’une page d’entrée peuvent être multiples, mais tous partagent un point commun, à savoir : le visiteur doit accomplir une tâche, ce dont dépend le succès de la page.
 
@@ -63,7 +62,7 @@ Un exemple de page d’entrée dans AEM se présente comme suit :
 
 ### Pages d’entrée pour mobiles {#mobile-landing-pages}
 
-Une page d’entrée peut également se présenter sous sa version mobile. Pour disposer d’une version mobile distincte du landing page, la conception d’importation doit comporter deux fichiers html : *index.htm(l)* et *mobile.index.htm(l)*.
+Une page d’entrée peut également se présenter sous sa version mobile. Pour disposer d’une version mobile distincte de la page d’entrée, la conception d’importation doit comporter deux fichiers html : *index.htm(l)* et *mobile.index.htm(l)*.
 
 La procédure d’importation de ces pages d’entrée est identique à celle d’une page d’entrée normale ; la conception de page d’entrée est associée à un fichier HTML supplémentaire correspondant à la page d’entrée pour mobiles. Ce fichier HTML doit, lui aussi, disposer d’une balise `div` de canevas avec `id=cqcanvas`, comme c’est le cas pour la page d’entrée pour ordinateurs de bureau. De plus, il prend en charge tous les composants modifiables décrits pour la page d’entrée pour ordinateurs de bureau.
 
@@ -139,20 +138,20 @@ Vous pouvez utiliser ce composant CTA pour ajouter le lien texte sur la page d�
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
-**** ÉtiquetteLe texte que les utilisateurs voient. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
+**** LibelléLe texte que les utilisateurs voient. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
 
-**Cible** URLEentrez l’URI que les utilisateurs doivent visiter s’ils cliquent sur le texte.
+**Target** URLE Saisissez l’URI que les utilisateurs doivent consulter s’ils cliquent sur le texte.
 
-**Options** de renduDécrit les options de rendu. Vous avez le choix entre les options suivantes :
+**Options de rendu** Décrit les options de rendu. Vous avez le choix entre les options suivantes :
 
 * Charger la page dans une nouvelle fenêtre de navigateur
 * Charger la page dans la fenêtre active
 * Charger la page dans le cadre parent
 * Annuler tous les cadres et charger la page dans un navigateur
 
-**** CSSOdans l’onglet Style, saisissez le chemin d’accès à votre feuille de style CSS.
+**** CSSdans l’onglet Style, saisissez un chemin d’accès à votre feuille de style CSS.
 
-**** IDOdans l’onglet Style, saisissez un identifiant pour le composant afin de l’identifier de manière unique.
+**** Identifiant dans l’onglet Style, saisissez un identifiant pour le composant afin de l’identifier de manière unique.
 
 Voici un exemple de lien de clics publicitaires :
 
@@ -164,20 +163,20 @@ Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un l
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-**** ÉtiquetteLe texte que les utilisateurs voient dans le graphique. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
+**** LibelléTexte visible par les utilisateurs dans le graphique. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
 
-**Cible** URLEentrez l’URI que les utilisateurs doivent visiter s’ils cliquent sur l’image.
+**Target** URLE Saisissez l’URI que les utilisateurs doivent consulter s’ils cliquent sur l’image.
 
-**Options** de renduDécrit les options de rendu. Vous avez le choix entre les options suivantes :
+**Options de rendu** Décrit les options de rendu. Vous avez le choix entre les options suivantes :
 
 * Charger la page dans une nouvelle fenêtre de navigateur
 * Charger la page dans la fenêtre active
 * Charger la page dans le cadre parent
 * Annuler tous les cadres et charger la page dans un navigateur
 
-**** CSSOdans l’onglet Style, saisissez le chemin d’accès à votre feuille de style CSS.
+**** CSSdans l’onglet Style, saisissez un chemin d’accès à votre feuille de style CSS.
 
-**** IDOdans l’onglet Style, saisissez un identifiant pour le composant afin de l’identifier de manière unique.
+**** Identifiant dans l’onglet Style, saisissez un identifiant pour le composant afin de l’identifier de manière unique.
 
 Voici un exemple de lien graphique :
 
@@ -202,7 +201,7 @@ Les champs de formulaires et les éléments peuvent inclure des zones textuelles
 * **Composants Profil**
 Les composants Profil sont associés aux profils des visiteurs utilisés pour la collaboration sociale et pour tout autre domaine où la personnalisation des visiteurs est requise.
 
-Le précédent illustre un exemple de formulaire ; il comprend le composant **Formulaire de piste** (début et fin), avec les champs **Prénom** et **Id de courriel** utilisés pour l&#39;entrée et un champ **Envoyer**
+Le formulaire ci-dessus illustre un exemple de formulaire ; il est composé du composant **Formulaire de piste** (début et fin), avec les champs **Prénom** et **ID de message électronique** utilisés pour l’entrée et un champ **Envoyer**
 
 Les composants suivants sont disponibles à partir du Sidekick pour le formulaire de piste CTA :
 
@@ -236,39 +235,39 @@ Indique la taille et le style des champs.
 
 La section suivante décrit les composants disponibles pour les formulaires de piste Appel à l’action (CTA).
 
-**** À propos dePermet aux utilisateurs d’ajouter des informations à propos de.
+**** À proposPermet aux utilisateurs d’ajouter des informations.
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
-**Champ d&#39;adresse** Permet aux utilisateurs de saisir des informations d&#39;adresse. Lorsque vous configurez ce composant, vous devez saisir le Nom de l’élément dans la boîte de dialogue. Le Nom de l’élément est le nom de l’élément de formulaire. Cela indique l’emplacement de stockage des données dans le référentiel.
+**Champ d’adresse** : permet aux utilisateurs de saisir les informations d’adresse. Lorsque vous configurez ce composant, vous devez saisir le Nom de l’élément dans la boîte de dialogue. Le Nom de l’élément est le nom de l’élément de formulaire. Cela indique l’emplacement de stockage des données dans le référentiel.
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
 
-**Date de** naissanceLes utilisateurs peuvent saisir des informations sur la date de naissance.
+**Date de** naissance Les utilisateurs peuvent saisir la date de naissance.
 
 ![chlimage_1-37](assets/chlimage_1-37.png)
 
-**ID de** courrielPermet aux utilisateurs de saisir une adresse de courriel (identification).
+**Email** IdPermet aux utilisateurs de saisir une adresse email (identification).
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
-**PrénomFournit un champ permettant aux utilisateurs de saisir leur prénom.** 
+**Prénom** Fournit un champ permettant aux utilisateurs de saisir leur prénom.
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
-**** SexeLes utilisateurs peuvent sélectionner leur sexe dans une liste déroulante.
+**** GenderUsers peut sélectionner son genre dans une liste déroulante.
 
 ![chlimage_1-40](assets/chlimage_1-40.png)
 
-**Nom** Les utilisateurs peuvent saisir des informations de nom.
+**Nom** Les utilisateurs peuvent saisir les informations Nom.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-**Formulaire de pisteAjoutez ce composant pour ajouter un formulaire de piste à votre landing page.** Un formulaire de piste comprend automatiquement un champ Début du formulaire de piste et un champ Fin de formulaire de piste. Entre les deux, vous ajoutez les composants « Formulaire de piste » décrits dans cette section.
+**Formulaire** de piste Ajoutez ce composant pour ajouter un formulaire de piste à votre page d’entrée. Un formulaire de piste comprend automatiquement un champ Début du formulaire de piste et un champ Fin de formulaire de piste. Entre les deux, vous ajoutez les composants « Formulaire de piste » décrits dans cette section.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-Le composant Formulaire de piste définit à la fois le début et la fin d’un formulaire à l’aide des éléments **Début de formulaire** et **Fin de formulaire**. Ces deux paragraphes sont toujours utilisés conjointement pour s’assurer que le formulaire est correctement défini.
+Le composant Formulaire de piste définit le début et la fin d’un formulaire à l’aide des éléments **Début du formulaire** et **Fin de formulaire**. Ces deux paragraphes sont toujours utilisés conjointement pour s’assurer que le formulaire est correctement défini.
 
 Après avoir ajouté le formulaire de piste, vous pouvez configurer le début ou la fin du formulaire en cliquant sur **Modifier** dans la barre correspondante.
 
@@ -281,27 +280,27 @@ Deux onglets sont disponibles pour la configuration, **Formulaire** et **Avancé
 **Page de remerciement**
 Page à référencer pour remercier les visiteurs qui ont saisi des données. Si ce champ est laissé vide, le formulaire est réaffiché après la soumission.
 
-**Début** WorkflowDétermine quel processus est déclenché une fois qu&#39;un formulaire de piste est envoyé.
+**Démarrer** WorkflowDétermine quel workflow est déclenché une fois qu’un formulaire de piste est envoyé.
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-**Options** de publicationLes options de publication suivantes sont disponibles :
+**Options** de publication Les options de publication suivantes sont disponibles :
 
 * Créer une piste
 * Service de messagerie électronique : créer un abonné et l’ajouter à la liste. Sélectionnez cette option si vous utilisez un fournisseur de services de messagerie tel que ExactTarget.
-* Service de messagerie : Envoyer un courriel de répondeur automatique : à utiliser si vous utilisez un prestataire de messagerie comme ExactTarget.
-* Service de messagerie : Désabonner l&#39;utilisateur de la liste : à utiliser si vous utilisez un prestataire de messagerie tel qu&#39;ExactTarget.
+* Service de messagerie électronique : Envoyer un message de répondeur automatique : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
+* Service de messagerie électronique : Désabonner l’utilisateur de la liste : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
 * Désabonner l’utilisateur
 
-**Identifiant de formulaireIdentifiant** de formulaire qui identifie de manière unique le formulaire de piste. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
+**Identifiant de formulaire** : l’identifiant de formulaire identifie de manière unique le formulaire de piste. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
 
-**Load** PathChemin d&#39;accès aux propriétés de noeud utilisé pour charger des valeurs prédéfinies dans les champs de formulaire de piste.
+**Load** PathChemin d’accès aux propriétés de noeud utilisées pour charger les valeurs prédéfinies dans les champs du formulaire de piste.
 
 Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
 
-**** Validation du clientIndique si la validation du client est requise pour ce formulaire (la validation du serveur se produit toujours). Ceci peut être réalisé en association avec le composant Forms Captcha.
+**Validation du client** Indique si la validation du client est requise pour ce formulaire (la validation du serveur a toujours lieu). Cela peut être réalisé conjointement avec le composant Captcha Forms.
 
-**Type de ressource de validation** Définit le type de ressource de validation de formulaire si vous souhaitez valider l&#39;intégralité du formulaire de piste (au lieu de champs individuels).
+**Type de ressource de validation** Définit le type de ressource de validation de formulaire si vous souhaitez valider l’intégralité du formulaire de piste (au lieu de champs individuels).
 
 Si vous validez le formulaire dans son intégralité, vous devez également inclure l’un des éléments suivants :
 
@@ -311,7 +310,7 @@ Si vous validez le formulaire dans son intégralité, vous devez également incl
 * Un script pour la validation du côté serveur :
    ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**Configuration de l’actionSelon la sélection dans Options de publication, la configuration de l’action change.** Lorsque vous sélectionnez, par exemple, Créer une piste, vous pouvez configurer la liste à laquelle la piste est ajoutée.
+**Configuration de l’action** Selon la sélection dans Options de publication, la configuration de l’action change. Lorsque vous sélectionnez, par exemple, Créer une piste, vous pouvez configurer la liste à laquelle la piste est ajoutée.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -343,11 +342,11 @@ Trois étapes sont nécessaires lorsque vous créez une page d’entrée :
 
 ### Utilisation de l’importateur de conception  {#use-of-the-design-importer}
 
-Dans la mesure où l’importation de pages implique la préparation du code HTML, la vérification et le test des pages, l’importation de pages d’entrée est conçue comme une tâche d’administrateur. En tant qu’administrateur, les utilisateurs qui effectuent l’importation doivent disposer d’autorisations de lecture, d’écriture, de création et de suppression sur `/apps`. Si l’utilisateur ne dispose pas de ces autorisations, l’importation échouera.
+Dans la mesure où l’importation de pages implique la préparation du code HTML, la vérification et le test des pages, l’importation de pages d’entrée est conçue comme une tâche d’administrateur. En tant qu’administrateur, les utilisateurs effectuant l’importation doivent disposer d’autorisations de lecture, d’écriture, de création et de suppression sur `/apps`. Si l’utilisateur ne dispose pas de ces autorisations, l’importation échouera.
 
 >[!NOTE]
 >
->L’importateur de conceptions étant conçu comme un outil d’administration nécessitant des autorisations de lecture, d’écriture, de création et de suppression sur `/apps`, l’Adobe ne recommande pas d’utiliser l’importateur de conceptions en production.
+>L’importateur de conception étant conçu comme un outil d’administration nécessitant des autorisations de lecture, d’écriture, de création et de suppression sur `/apps`, Adobe ne recommande pas d’utiliser l’importateur de conception en production.
 
 Adobe recommande d’utiliser l’importateur de conception sur une instance intermédiaire. Sur une instance intermédiaire, l’importation peut être testée et validée par un développeur qui est ensuite responsable du déploiement du code sur l’instance de production.
 
@@ -385,7 +384,7 @@ En supposant que le bloc de conception soit prêt, les étapes suivantes décriv
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
 1. Faites glisser le bloc de conception vers la zone de déplacement. Comme vous pouvez le constater, la flèche change de sens lorsque vous faites glisser un bloc. 
-1. Après avoir effectué cette opération, la page d’entrée apparaît en lieu et place de la page d’importateur. Votre landing page HTML a été importé avec succès.
+1. Après avoir effectué cette opération, la page d’entrée apparaît en lieu et place de la page d’importateur. Votre landing page HTML a bien été importée.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
@@ -437,7 +436,7 @@ Si le module de conception importé contient des erreurs (s’il fait référenc
 
 Si vous souhaitez réimporter votre module de conception de la page d’entrée après y avoir apporté des modifications, vous pouvez « effacer » la page d’entrée en cliquant sur **Effacer** dans la partie supérieure de la page d’entrée dans l’interface utilisateur classique ou en cliquant sur Effacer dans le menu Paramètres de l’interface utilisateur optimisée pour les écrans tactiles. La page d’entrée importée est alors supprimée et une page d’importateur vierge est créée.
 
-Lors de l’effacement de la page d’entrée, vous pouvez supprimer les modifications du contenu. Si vous cliquez sur **Non**, les modifications de contenu sont conservées, c&#39;est-à-dire que la structure sous `jcr:content/importer`est conservée et que seul le composant de page d&#39;importation et les ressources de `etc/design` sont supprimés. En revanche, si vous cliquez sur **Oui**, `jcr:content/importer` est également supprimé.
+Lors de l’effacement de la page d’entrée, vous pouvez supprimer les modifications du contenu. Si vous cliquez sur **Non**, les modifications de contenu sont conservées, c’est-à-dire que la structure sous `jcr:content/importer`est conservée et que seuls le composant de page d’importateur et les ressources de `etc/design` sont supprimés. En revanche, si vous cliquez sur **Oui**, la balise `jcr:content/importer` est également supprimée.
 
 >[!NOTE]
 >
@@ -461,7 +460,7 @@ Il convient toutefois de signaler une exception : lorsque vous supprimez une pa
 
 ### Publication d’une page d’entrée  {#publishing-a-landing-page}
 
-Vous pouvez publier le landing page et toutes ses dépendances comme si vous publiiez une page normale.
+Vous pouvez publier la landing page et toutes ses dépendances comme si vous publiiez une page normale.
 
 >[!NOTE]
 >
