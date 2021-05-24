@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 95346ce1-84b7-4bd1-a1e2-6a803139dc69
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 88%
 
 ---
-
 
 # Prise en main du développement d’AEM Sites – Tutoriel WKND {#getting-started-developing-aem-sites-wknd-tutorial}
 
@@ -37,7 +36,7 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 La mise en œuvre du tutoriel tire parti de nombreuses fonctionnalités puissantes d’AEM. Le site est implémenté à l’aide des éléments suivants :
 
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+* [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [IU tactile](/help/sites-developing/touch-ui-concepts.md)
 * [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
@@ -47,4 +46,4 @@ Veuillez parcourir le tutoriel avant de vous plonger dans les concepts ci-dessus
 
 ## Étapes suivantes {#next-steps}
 
-Une fois que vous avez terminé le [tutoriel](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), pensez à revoir le document [AEM Concepts de base](/help/sites-developing/the-basics.md) pour mieux comprendre certaines des technologies sous-jacentes et les paradigmes de développement de l&#39;AEM.
+Une fois que vous avez terminé le [tutoriel](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), envisagez de parcourir le document [AEM Concepts de base](/help/sites-developing/the-basics.md) afin de mieux comprendre certaines des technologies sous-jacentes et des paradigmes de développement d’AEM.
