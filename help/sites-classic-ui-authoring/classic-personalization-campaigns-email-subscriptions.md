@@ -9,32 +9,31 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: add05d22-3a11-49e9-a554-2315962552d5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 77%
 
 ---
 
-
 # Gestion des abonnements{#managing-subscriptions}
 
 >[!NOTE]
 >
->L&#39;Adobe ne prévoit pas d&#39;améliorer davantage cette capacité (Gestion des pistes et des Listes).
->Il est recommandé de tirer parti de [Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
+>Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité (Gestion des pistes et des listes).
+>Il est recommandé d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
 
-Les utilisateurs peuvent être invités à s&#39;abonner à **Prestataire de messagerie** listes de publipostage à l&#39;aide du composant **Formulaire** utilisé sur une page Web AEM. Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné potentiel.
+Les utilisateurs peuvent être invités à s’abonner à des listes de diffusion **du fournisseur de services de messagerie à l’aide du composant** Formulaire **utilisé sur une page web AEM.** Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné potentiel.
 
 ## Application de la configuration du service de messagerie à une page {#applying-email-service-configuration-to-a-page}
 
 Pour configurer une page AEM :
 
 1. Accédez à l’onglet **Sites web**.
-1. Sélectionnez la page à configurer pour le service. Cliquez avec le bouton droit sur la page et sélectionnez **Propriétés**.
+1. Sélectionnez la page à configurer pour le service. Cliquez avec le bouton droit de la souris sur la page et sélectionnez **Propriétés**.
 
-1. Sélectionnez **Cloud Services**, puis **Ajouter le service**. Sélectionnez une configuration dans la liste des configurations disponibles.
+1. Sélectionnez **Cloud Services** puis **Ajouter un service**. Sélectionnez une configuration dans la liste des configurations disponibles.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -48,9 +47,9 @@ Pour créer un formulaire d’inscription et le configurer en vue de s’abonner
 1. Appliquez la configuration du fournisseur de services de messagerie à la page.
 
 1. Ajoutez un composant **Formulaire** à la page en le faisant glisser à partir du sidekick. Si le composant n’est pas disponible, basculez en mode de conception et activez le groupe **Formulaire**.
-1. Cliquez sur **Modifier** dans la barre **Début du formulaire** et accédez à l&#39;onglet **Avancé**.
-1. Dans le menu déroulant **Formulaire**, sélectionnez **Service de messagerie : Créez un abonné** et ajoutez-le à la liste.
-1. Au bas de la boîte de dialogue, ouvrez la liste déroulante **Configuration de l&#39;action**, qui vous permet de sélectionner une ou plusieurs listes d&#39;abonnement.
+1. Cliquez sur **Modifier** dans la barre **Début du formulaire** et accédez à l’onglet **Avancé**.
+1. Dans le menu déroulant **Form**, sélectionnez **Service de messagerie électronique : Créez Subscriber** et ajoutez-le à la liste.
+1. Au bas de la boîte de dialogue, ouvrez la liste déroulante **Configuration de l’action**, qui vous permet de sélectionner une ou plusieurs listes d’abonnements.
 1. Dans la liste **Sélectionner, choisissez la liste** à laquelle vous souhaitez que les utilisateurs s’abonnent. Vous pouvez ajouter plusieurs listes à l’aide du bouton plus (**Ajouter un élément**).
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
@@ -85,7 +84,7 @@ Pour désabonner des utilisateurs de listes :
 1. Ouvrez la page des propriétés de la page AEM qui contient le formulaire d’inscription pour désabonner une piste.
 1. Appliquez la configuration du service à la page.
 1. Créez un formulaire d’inscription dans la page.
-1. Lors de la configuration du composant, sélectionnez l&#39;action **Service de messagerie** : **Désabonner l&#39;utilisateur de la liste.**
+1. Lors de la configuration du composant, sélectionnez l’action **Service de messagerie électronique** : **Désabonner l’utilisateur de la liste.**
 1. Dans le menu déroulant, sélectionnez la liste de laquelle l’utilisateur sera supprimé lors du désabonnement.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
@@ -96,16 +95,16 @@ Pour désabonner des utilisateurs de listes :
 
 Pour configurer un message de répondeur automatique pour un abonné, procédez comme suit :
 
-1. Ouvrez les propriétés de page de la page AEM qui possède le formulaire d&#39;inscription pour configurer le répondeur automatique pour une piste.
+1. Ouvrez les propriétés de page de la page AEM qui comporte le formulaire d’inscription pour configurer le répondeur automatique pour une piste.
 1. Appliquez la configuration ExactTarget à la page.
 
 1. Ajoutez un composant **Formulaire** à la page en le faisant glisser à partir du sidekick. Si le composant n’est pas disponible, basculez vers le mode de conception et activez le groupe **Formulaire**.
-1. Cliquez sur **Modifier** dans la barre **Début du formulaire** et accédez à l&#39;onglet **Avancé**.
-1. Dans le menu déroulant **Formulaire**, sélectionnez **Service de messagerie : Envoyer un courriel de répondeur automatique.**
-1. **Sélectionnez un courriel**  (il s’agit du courriel envoyé en tant que courriel de répondeur automatique).
+1. Cliquez sur **Modifier** dans la barre **Début du formulaire** et accédez à l’onglet **Avancé**.
+1. Dans le menu déroulant **Form**, sélectionnez **Service de messagerie électronique : Envoyer un message de répondeur automatique.**
+1. **Sélectionnez un message électronique**  (il s’agit du message envoyé en tant que message de répondeur automatique).
 
-1. **Sélectionnez Classification**  (cette classification est utilisée pour envoyer le courriel).
-1. Sélectionnez la page **Merci** (page à laquelle les utilisateurs sont redirigés lorsqu’ils envoient le formulaire).
+1. **Sélectionnez Classification**  (cette classification est utilisée pour envoyer le courrier électronique).
+1. Sélectionnez la page **Remerciements** (page à laquelle les utilisateurs sont redirigés lorsqu’ils envoient le formulaire).
 
    Dans l’onglet **Formulaire**, sélectionnez la page de remerciement à laquelle doivent accéder les utilisateurs après avoir envoyé le formulaire. (Si aucune donnée n’est saisie, le formulaire s’affiche à nouveau lors de l’envoi.) Cliquez sur **OK**.
 
@@ -119,4 +118,3 @@ Pour configurer un message de répondeur automatique pour un abonné, procédez 
    >Pour faire en sorte que l’abonnement au formulaire d’inscription fonctionne correctement, [les clés de chiffrement en provenance de l’auteur doivent être exportées et importées sur l’instance de publication](#exporting-keys-from-author-and-importing-on-publish).
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
-
