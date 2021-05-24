@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Copie de la langue
+exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 67%
+ht-degree: 70%
 
 ---
-
 
 # Amélioration des traductions{#translation-enhancements}
 
@@ -24,7 +23,7 @@ Cette page présente les améliorations et les perfectionnements incrémentiels 
 
 ## Automatisation des projets de traduction {#translation-project-automation}
 
-Des options ont été ajoutées pour améliorer la productivité du travail avec les projets de traduction, telles que la promotion et la suppression automatiques des lancements de traduction et la planification de l’exécution récurrente d’un projet de traduction.
+Des options pour améliorer la productivité des projets de traduction ont été ajoutées, comme la promotion et la suppression automatiques des lancements de traduction, et la planification de l’exécution récurrente d’un projet de traduction.
 
 1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension en bas de la mosaïque **Résumé de traduction**.
 
@@ -34,23 +33,23 @@ Des options ont été ajoutées pour améliorer la productivité du travail avec
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
-1. Vous pouvez éventuellement sélectionner si, après avoir reçu du contenu traduit, les lancements de traduction doivent être automatiquement promus et supprimés.
+1. Vous pouvez éventuellement sélectionner si, après réception du contenu traduit, les lancements de traduction doivent être automatiquement promus et supprimés.
 
    ![screen_shot_2018-04-19at224033](assets/screen_shot_2018-04-19at224033.jpg)
 
-1. Pour sélectionner l’exécution périodique d’un projet de traduction, sélectionnez la fréquence avec la liste déroulante sous **Répéter la traduction**. L&#39;exécution périodique du projet créera et exécutera automatiquement des tâches de traduction aux intervalles spécifiés.
+1. Pour sélectionner l’exécution périodique d’un projet de traduction, sélectionnez la fréquence avec la liste déroulante sous **Répéter la traduction**. L’exécution récurrente de projets crée et exécute automatiquement des tâches de traduction aux intervalles spécifiés.
 
    ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
 ## Projets de traduction multilingues {#multilingual-translation-projects}
 
-Il est possible de configurer plusieurs langues de cible dans un projet de traduction, afin de réduire le nombre total de projets de traduction créés.
+Il est possible de configurer plusieurs langues cibles dans un projet de traduction, afin de réduire le nombre total de projets de traduction créés.
 
 1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension au bas de la mosaïque **Résumé de traduction**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Passez dans l’onglet **Avancé**. Vous pouvez ajouter plusieurs langues sous **Langue de la Cible**.
+1. Passez dans l’onglet **Avancé**. Vous pouvez ajouter plusieurs langues sous **Langue cible**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -64,13 +63,13 @@ Il est possible de configurer plusieurs langues de cible dans un projet de tradu
 
 ## Mise à jour des mémoires de traduction {#translation-memory-updates}
 
-Les modifications manuelles du contenu traduit peuvent être synchronisées à nouveau dans le système de gestion de la traduction (TMS) pour former sa mémoire de traduction.
+Les modifications manuelles du contenu traduit peuvent être synchronisées avec le système de gestion de traduction (TMS) pour entraîner sa mémoire de traduction.
 
-1. Dans la console Sites, après avoir mis à jour le contenu textuel dans une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
+1. Dans la console Sites , après avoir mis à jour le contenu textuel dans une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction à synchroniser avec la mémoire de traduction, puis sélectionnez **Mettre à jour la mémoire**.
+1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction qui doivent être synchronisées avec la mémoire de traduction, puis sélectionnez **Mettre à jour la mémoire**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -118,4 +117,3 @@ Une propriété peut désormais être sélectionnée dans le mode Liste de Sites
 Vous voyez désormais une colonne **Traduit** qui indique l’état de traduction des pages.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)
-
