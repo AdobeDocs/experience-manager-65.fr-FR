@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 94%
 
 ---
-
 
 # Modification des propriétés de page{#editing-page-properties}
 
@@ -41,7 +40,7 @@ Les propriétés sont réparties sur plusieurs onglets:
    * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
    * Vous pouvez saisir une nouvelle balise en entrant son nom dans une zone de sélection vide.
 
-      La nouvelle balise sera en fait créée lorsque vous appuyez sur Entrée. Elle s’affiche alors dans un cadre et est marquée à droite d’une petite étoile indiquant qu’il s’agit d’une nouvelle balise.
+      La nouvelle balise est en fait créée lorsque vous appuyez sur Entrée. Elle s’affiche alors dans un cadre et est marquée à droite d’une petite étoile indiquant qu’il s’agit d’une nouvelle balise.
 
    * Vous pouvez faire votre choix parmi les balises existantes dans la liste déroulante.
    * Un « x » apparaît lorsque vous passez le pointeur de la souris sur une entrée de balise dans la zone de sélection ; vous pouvez vous en servir pour supprimer cette balise de la page.
@@ -82,7 +81,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et plus explicite.
 
-   Par exemple, si l’URL de vanité est définie sur w `elcome`pour la page identifiée par le chemin / `v1.0/startpage`pour le site Web h `ttp://example.com,`, h `ttp://example.com/welcome`serait l’URL de vanité de h `ttp://example.com/content/v1.0/startpage`
+   Par exemple, si l’URL Vanity est définie sur w `elcome`sur la page identifiée par le chemin / `v1.0/startpage`pour le site web h `ttp://example.com,` alors h `ttp://example.com/welcome`serait l’URL Vanity de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -154,7 +153,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation  {#personalization}
+### Personnalisation {#personalization}
 
 * **Personnalisation**
 
@@ -168,11 +167,11 @@ Les propriétés sont réparties sur plusieurs onglets:
 
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+* **Plan directeur**
 
    Définissez les propriétés d’une page Blueprint dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
@@ -195,4 +194,3 @@ Les Propriétés de page définissent les différentes propriétés de la page, 
    Une boîte de dialogue comprenant plusieurs onglets s’ouvre.
 
 1. Apportez les modifications requises, puis cliquez sur **OK** pour les enregistrer.
-
