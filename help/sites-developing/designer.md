@@ -10,7 +10,6 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
-translation-type: tm+mt
 source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
 workflow-type: tm+mt
 source-wordcount: '386'
@@ -22,9 +21,9 @@ ht-degree: 58%
 
 >[!CAUTION]
 >
->Cet article explique comment créer un site Web basé sur l’interface utilisateur classique. Adobe vous recommande de tirer parti des technologies AEM les plus récentes pour vos sites web. Vous en trouverez une description détaillée dans l’article [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md).
+>Cet article explique comment créer un site web à partir de l’IU classique. Adobe vous recommande de tirer parti des technologies AEM les plus récentes pour vos sites web. Vous en trouverez une description détaillée dans l’article [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md).
 
-Designer permet de créer une conception pour votre site Web à l’aide de l’[interface utilisateur classique](/help/release-notes/touch-ui-features-status.md) en AEM.
+Designer permet de créer une conception pour votre site web à l’aide de l’[interface utilisateur classique](/help/release-notes/touch-ui-features-status.md) dans AEM.
 
 >[!NOTE]
 >
@@ -32,7 +31,7 @@ Designer permet de créer une conception pour votre site Web à l’aide de l’
 
 ## Utilisation de Designer {#using-the-designer}
 
-Votre conception peut être définie dans la section **designs** de l&#39;onglet **Outils** :
+Votre conception peut être définie dans la section **designs** de l’onglet **Outils** :
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
@@ -50,20 +49,20 @@ Les conceptions sont stockées sous `/apps/<your-project>`. Le chemin d’accès
 
 Pour créer votre conception, vous aurez besoin des éléments suivants :
 
-**CSS**  - Les feuilles de style en cascade définissent le format des zones spécifiques de vos pages.
-**Images**  - Toutes les images utilisées pour des fonctions telles que les arrière-plans et les boutons.
+**CSS**  : les feuilles de style en cascade définissent les formats de zones spécifiques sur vos pages.
+**Images**  : images utilisées pour des fonctionnalités telles que des arrière-plans et des boutons.
 
 ### Points à prendre en compte lors de la conception de votre site web {#considerations-when-designing-your-website}
 
-Lors du développement d’un site Web, il est vivement recommandé de stocker des images et des fichiers CSS sous `/apps/<your-project>` afin que vous puissiez référencer vos ressources en fonction de la conception actuelle, comme décrit dans le fragment de code suivant.
+Lors du développement d’un site web, il est vivement recommandé de stocker les images et les fichiers CSS sous `/apps/<your-project>` afin de pouvoir référencer vos ressources en fonction de la conception actuelle, comme décrit par l’extrait de code suivant.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
 ```
 
-L&#39;exemple précédent offre plusieurs avantages :
+L’exemple précédent offre plusieurs avantages :
 
 * Les composants peuvent avoir une apparence différente selon que chaque site utilise un chemin de conception différent.
-* Pour reconcevoir le site Web, il suffit de pointer le chemin de conception vers un autre noeud à la racine du site, de `design/v1` à `design/v2.`.
+* La reconception du site web peut simplement être effectuée en pointant le chemin de conception vers un noeud différent à la racine du site, de `design/v1` à `design/v2.`.
 
-* `/etc/designs` et  `/content` sont les seules URL externes que le navigateur voit vous protéger d&#39;un utilisateur externe qui se demande ce qui se trouve sous votre  `/apps` arborescence. Les avantages des URL ci-dessus aident également l’administrateur système à mieux configurer la sécurité, dans la mesure où vous limitez l’exposition des ressources à une poignée d’emplacements distincts.
+* `/etc/designs` et  `/content` sont les seules URL externes que le navigateur voit vous protéger d’un utilisateur externe qui se demande ce qui se trouve sous votre  `/apps` arborescence. Les avantages des URL ci-dessus aident également l’administrateur système à mieux configurer la sécurité, dans la mesure où vous limitez l’exposition des ressources à une poignée d’emplacements distincts.
