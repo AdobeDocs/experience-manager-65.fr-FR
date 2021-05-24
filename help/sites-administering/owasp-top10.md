@@ -10,8 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
-feature: Security
-translation-type: tm+mt
+feature: Sécurité
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '510'
@@ -31,7 +30,7 @@ Ces risques sont répertoriés ci-dessous, avec une explication sur la manière 
 * LDAP : L’injection LDAP est impossible, car le module d’authentification filtre l’entrée et exécute l’importation des utilisateurs à l’aide de la méthode de liaison.
 * OS : Aucune exécution shell n’est effectuée dans l’application.
 
-## 2. Cross-Site Scripting (XSS)  {#cross-site-scripting-xss}
+## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
 
 La solution générale consiste à coder toutes les sorties du contenu créé par l’utilisateur avec une bibliothèque de protection XSS côté serveur basée sur [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) et [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
@@ -47,9 +46,9 @@ Tous les accès aux objets de données sont arbitrés par le référentiel et do
 
 ## 5. Cross-Site Request Forgery (CSRF)  {#cross-site-request-forgery-csrf}
 
-La fonctionnalité CSRF (Cross-Site Request Forgery) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et demandes d’AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
+La falsification de requête intersite (CSRF) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et requêtes d’AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
 
-En outre, AEM fournit un filtre basé sur les en-têtes de parrain, qui peut être configuré sur *uniquement* pour autoriser les requêtes POST provenant d&#39;hôtes spécifiques (définies dans une liste).
+En outre, AEM est fourni avec un filtre basé sur l’en-tête référent, qui peut être configuré sur *uniquement* pour autoriser les requêtes de POST provenant d’hôtes spécifiques (définis dans une liste).
 
 ## 6. Configuration incorrecte de la sécurité {#security-misconfiguration}
 
