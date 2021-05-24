@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2881'
 ht-degree: 89%
 
 ---
-
 
 # Requêtes et indexation Oak{#oak-queries-and-indexing}
 
@@ -53,7 +52,7 @@ Un l’indexeur est **l’index des propriétés**, pour lequel la définition d
 
 Les implémentations d’**Apache Lucene** et **Solr** sont également disponibles par défaut, et prennent en charge l’indexation du texte intégral.
 
-**L&#39;index de tendance** est utilisé si aucun autre indexeur n&#39;est disponible. Cela signifie que le contenu n’est pas indexé et que les nœuds de contenu sont parcourus pour trouver des correspondances à la requête.
+**L’index de traversée** est utilisé si aucun autre indexeur n’est disponible. Cela signifie que le contenu n’est pas indexé et que les nœuds de contenu sont parcourus pour trouver des correspondances à la requête.
 
 Si plusieurs indexeurs sont disponibles pour une requête, chaque indexeur disponible calcule le coût d’exécution de la requête. Oak sélectionne ensuite l’indexeur avec le coût estimé le plus bas.
 
@@ -69,7 +68,7 @@ Ensuite, chaque index est consulté pour estimer le coût de la requête. Une fo
 
 >[!NOTE]
 >
->Pour un référentiel volumineux, la création d’un index prend du temps. Cela vaut aussi bien pour la création initiale d’un index que pour la réindexation (reconstruction d’un index après avoir modifié la définition). Voir aussi [Résolution des problèmes liés aux index en chêne](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention de la réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Pour un référentiel volumineux, la création d’un index prend du temps. Cela vaut aussi bien pour la création initiale d’un index que pour la réindexation (reconstruction d’un index après avoir modifié la définition). Voir aussi [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention de la réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 Si une réindexation s’avère nécessaire dans des référentiels très volumineux, en particulier lorsque vous utilisez MongoDB et des index en texte intégral, pensez à recourir à la pré-extraction de texte, ainsi qu’à utiliser la commande oak-run pour générer l’index initial et procéder à la réindexation.
 
@@ -86,8 +85,8 @@ L’index de propriété est généralement utile pour les requêtes limitées p
 1. Nommez le nœud **PropertyIndex**, puis définissez le type de nœud sur **oak:QueryIndexDefinition**
 1. Définissez les propriétés suivantes pour le nouveau nœud :
 
-   * **type:**  `property` (de type String)
-   * **propertyNames:**  `jcr:uuid` (de type Name)
+   * **type :**  `property`  (de type Chaîne)
+   * **propertyNames :**  `jcr:uuid`  (de type Nom)
 
    Cet exemple particulier indexera la propriété `jcr:uuid`, dont la tâche est de présenter l’UUID (universally unique identifier) du nœud associé.
 
@@ -106,7 +105,7 @@ L’index de propriété dispose des options de configuration suivantes :
 
 ### Index organisé  {#the-ordered-index}
 
-L’index organisé est une extension de l’index de propriété. Toutefois, il est obsolète. Les index de ce type doivent être remplacés par l&#39;index [Lucene Property Index](#the-lucene-property-index).
+L’index organisé est une extension de l’index de propriété. Toutefois, il est obsolète. Les index de ce type doivent être remplacés par l’[index de propriété Lucene](#the-lucene-property-index).
 
 ### Index de texte intégral Lucene {#the-lucene-full-text-index}
 
@@ -124,8 +123,8 @@ Vous pouvez configurer un index de texte intégral Lucene en suivant la procédu
 1. Nommez le nœud **LuceneIndex** et définissez le type de nœud sur **oak:QueryIndexDefinition**
 1. Ajoutez les propriétés suivantes au nœud  :
 
-   * **type:**  `lucene` (de type String)
-   * **async:**  `async` (de type String)
+   * **type :**  `lucene`  (de type Chaîne)
+   * **async:**  `async`  (de type Chaîne)
 
 1. Enregistrez les modifications.
 
@@ -134,7 +133,7 @@ L’index Lucene présente les options de configuration suivantes :
 * La propriété **type**, qui spécifie le type d’index, doit être définie sur **lucene**
 * La propriété **async** doit être définie sur **async**. Cela permettra d’envoyer le processus de mise à jour de l’index à un thread en arrière-plan.
 * La propriété **includePropertyTypes**, qui définira le sous-ensemble de types de propriétés qui sera inclus dans l’index.
-* La propriété **excludePropertyNames** qui définira une liste de noms de propriétés - propriétés qui doivent être exclues de l&#39;index.
+* La propriété **excludePropertyNames** qui définira une liste de noms de propriétés - propriétés qui doivent être exclues de l’index.
 * L’indicateur **reindex**, qui, défini sur **true**, déclenche une réindexation de l’ensemble du contenu.
 
 ### Index de propriété Lucene  {#the-lucene-property-index}
@@ -151,7 +150,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 Pour définir un index de propriété Lucene pour la requête ci-dessus, vous pouvez ajouter la définition suivante en créant un nœud sous **oak:index:**
 
-* **Nom :**`LucenePropertyIndex`
+* **Nom:** `LucenePropertyIndex`
 * **Type:** `oak:QueryIndexDefinition`
 
 Une fois que le nœud a été créé, ajoutez les propriétés suivantes :
@@ -190,9 +189,9 @@ Depuis la version 1.2.0, Oak prend en charge les analyseurs Lucene.
 
 Les analyseurs sont utilisés lorsqu’un document est indexé, au moment de la requête. Un analyseur examine le texte des champs et génère un flux de jeton. Les analyseurs Lucene se composent de séries de jetons et de classes de filtres.
 
-Les analyseurs peuvent être configurés via le noeud `analyzers` (de type `nt:unstructured`) dans la définition `oak:index`.
+Les analyseurs peuvent être configurés à partir du noeud `analyzers` (de type `nt:unstructured`) de la définition `oak:index`.
 
-L&#39;analyseur par défaut pour un index est configuré dans l&#39;enfant `default` du noeud analyzers.
+L’analyseur par défaut pour un index est configuré dans l’enfant `default` du noeud analyzers.
 
 ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -210,7 +209,7 @@ Si vous souhaitez utiliser l’analyseur prêt à l’emploi, vous pouvez le con
 
 1. Ajouter une propriété au nœud par défaut avec les propriétés suivantes :
 
-   * **Nom :**`class`
+   * **Nom:** `class`
    * **Type :** `String`
    * **Valeur:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
 
@@ -218,15 +217,15 @@ Si vous souhaitez utiliser l’analyseur prêt à l’emploi, vous pouvez le con
 
    Vous pouvez également définir l’analyseur à utiliser avec une version spécifique de Lucene à l’aide de la propriété de chaîne facultative `luceneMatchVersion`. Un syntaxe valide pour l’utiliser avec Lucene 4.7 serait :
 
-   * **Nom :**`luceneMatchVersion`
+   * **Nom:** `luceneMatchVersion`
    * **Type :** `String`
    * **Valeur:** `LUCENE_47`
 
    Si `luceneMatchVersion` n’est pas spécifié, Oak utilise la version Lucene avec laquelle il est envoyée. 
 
-1. Si vous souhaitez ajouter un fichier de mots de passe aux configurations de l&#39;analyseur, vous pouvez créer un nouveau noeud sous `default` avec les propriétés suivantes :
+1. Si vous souhaitez ajouter un fichier stopwords aux configurations de l’analyseur, vous pouvez créer un nouveau noeud sous le noeud `default` avec les propriétés suivantes :
 
-   * **Nom :**`stopwords`
+   * **Nom:** `stopwords`
    * **Type :** `nt:file`
 
 #### Création d’analyseurs via la composition {#creating-analyzers-via-composition}
@@ -235,35 +234,35 @@ Les analyseurs peuvent également être composés en fonction de `Tokenizers`, `
 
 Prenez cette structure de nœud comme exemple :
 
-* **Nom :**`analyzers`
+* **Nom:** `analyzers`
 
-   * **Nom :**`default`
+   * **Nom:** `default`
 
-      * **Nom :**`charFilters`
+      * **Nom:** `charFilters`
       * **Type :** `nt:unstructured`
 
-         * **Nom :**`HTMLStrip`
-         * **Nom :**`Mapping`
-      * **Nom :**`tokenizer`
+         * **Nom:** `HTMLStrip`
+         * **Nom:** `Mapping`
+      * **Nom:** `tokenizer`
 
          * **Nom de la propriété:** `name`
 
             * **Type :** `String`
             * **Valeur:** `Standard`
-      * **Nom :**`filters`
+      * **Nom:** `filters`
       * **Type :** `nt:unstructured`
 
-         * **Nom :**`LowerCase`
-         * **Nom :**`Stop`
+         * **Nom:** `LowerCase`
+         * **Nom:** `Stop`
 
             * **Nom de la propriété:** `words`
 
                * **Type :** `String`
                * **Valeur:** `stop1.txt, stop2.txt`
-            * **Nom :**`stop1.txt`
+            * **Nom:** `stop1.txt`
 
                * **Type :** `nt:file`
-            * **Nom :**`stop2.txt`
+            * **Nom:** `stop2.txt`
 
                * **Type :** `nt:file`
 
@@ -301,7 +300,7 @@ AEM peut être utilisée avec un serveur Solr intégré qui peut être configur�
 
 Vous pouvez configurer le serveur Solr intégré en procédant comme suit :
 
-1. Accéder à la console Web à `https://serveraddress:4502/system/console/configMgr`
+1. Accédez à la console web à l’adresse `https://serveraddress:4502/system/console/configMgr`
 1. Recherchez « **Oak Solr server provider** » (fournisseur du serveur Oak Solr). 
 1. Appuyez sur le bouton Modifier, puis, dans la fenêtre suivante, définissez le type de serveur sur **Embedded Solr (Solr intégré)** dans la liste déroulante.
 
@@ -314,9 +313,9 @@ Vous pouvez configurer le serveur Solr intégré en procédant comme suit :
 1. Ouvrez CRXDE et connectez-vous en tant qu’administrateur.
 1. Ajoutez un nœud nommé **solrlndex** de type **oak:QueryIndexDefinition** sous **oak:index** avec les propriétés suivantes :
 
-   * **type:** `solr`(de type String)
-   * **async:** `async`(de type String)
-   * **réindex:** `true`(de type Boolean)
+   * **type :** `solr` (de type Chaîne)
+   * **async:** `async` (de type Chaîne)
+   * **reindex :** `true` (de type booléen)
 
 1. Enregistrez les modifications.
 
@@ -336,7 +335,7 @@ AEM peut également être configuré pour travailler avec une instance de serveu
    `<solrunpackdirectory>\aemsolr2\node2`
 
 1. Recherchez un exemple d’instance dans le package Solr. Cet environnement se situe généralement dans un dossier nommé « `example` » dans la racine du module.
-1. Copiez les dossiers suivants de l’exemple d’instance dans les deux dossiers partagés ( `aemsolr1\node1` et `aemsolr2\node2`) :
+1. Copiez les dossiers suivants de l’instance d’exemple vers les deux dossiers partagés ( `aemsolr1\node1` et `aemsolr2\node2`) :
 
    * `contexts`
    * `etc`
@@ -367,10 +366,10 @@ AEM peut également être configuré pour travailler avec une instance de serveu
    ```
 
 1. Une fois les deux partitions démarrées, vérifiez que tout est en état de marche en vous connectant à l’interface à l’adresse `http://localhost:8983/solr/#/`/solr/#/
-1. Début AEM et accédez à la console Web à `http://localhost:4502/system/console/configMgr`
+1. Démarrez AEM et accédez à la console web à l’adresse `http://localhost:4502/system/console/configMgr`
 1. Définissez la configuration suivante dans la **configuration du serveur distant Solr Oak** :
 
-   * URL HTTP solr : `http://localhost:8983/solr/`
+   * URL HTTP Solr : `http://localhost:8983/solr/`
 
 1. Sélectionnez **Remote Solr (Solr distant)** dans la liste déroulante sous le fournisseur de serveurs **Oak Solr**.
 
@@ -420,7 +419,7 @@ Cette section présente un ensemble de recommandations sur la marche à suivre p
 
 #### Préparation des informations de débogage pour l’analyse {#preparing-debugging-info-for-analysis}
 
-La façon la plus simple d’obtenir les informations requises pour la requête en cours d’exécution est via l’[outil Explain Query ](/help/sites-administering/operations-dashboard.md#explain-query). Il vous permet de collecter les informations nécessaires pour corriger une requête lente sans avoir besoin de consulter les informations au niveau du journal. Ceci est souhaitable si vous connaissez la requête en cours de débogage.
+La façon la plus simple d’obtenir les informations requises pour la requête en cours d’exécution est via l’[outil Explain Query ](/help/sites-administering/operations-dashboard.md#explain-query). Il vous permet de collecter les informations nécessaires pour corriger une requête lente sans avoir besoin de consulter les informations au niveau du journal. Cela est souhaitable si vous connaissez la requête en cours de débogage.
 
 Si cela n’est pas possible pour une raison quelconque, vous pouvez rassembler les journaux d’indexation dans un seul fichier, puis les utiliser pour résoudre votre problème particulier.
 
@@ -452,7 +451,7 @@ Vous pouvez activer la journalisation en suivant cette procédure :
 
 La façon dont la requête est évaluée est largement affectée par la configuration de l’index. Il est donc important d’obtenir la configuration d’index pour l’analyser ou l’envoyer à l’assistance. Vous pouvez obtenir la configuration en tant que module de contenu ou en tant que rendu JSON.
 
-Dans la plupart des cas, la configuration d’indexation est stockée sous le noeud `/oak:index` dans CRXDE. Vous pouvez donc obtenir la version JSON à l’adresse suivante :
+Comme dans la plupart des cas, la configuration d’indexation est stockée sous le noeud `/oak:index` dans CRXDE, vous pouvez obtenir la version JSON à l’adresse :
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 
@@ -488,5 +487,4 @@ Vous pouvez également fournir une sortie JMX consolidée via `https://serveradd
 Vous pouvez rassembler des informations supplémentaires afin de résoudre le problème, par exemple :
 
 1. La version Oak sur laquelle votre instance est exécutée. Vous pouvez l’afficher en ouvrant CRXDE et en affichant la version dans le coin inférieur droit de la page d’accueil ou en vérifiant la version du lot `org.apache.jackrabbit.oak-core`.
-1. La sortie du débogueur QueryBuilder de la requête posant problème. Le débogueur est accessible à l&#39;adresse suivante : `https://serveraddress:port/libs/cq/search/content/querydebug.html`
-
+1. La sortie du débogueur QueryBuilder de la requête posant problème. Le débogueur est accessible à l’adresse : `https://serveraddress:port/libs/cq/search/content/querydebug.html`
