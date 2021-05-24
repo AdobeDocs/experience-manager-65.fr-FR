@@ -9,22 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
-translation-type: tm+mt
-source-git-commit: 0885fb6eb6b6a6b8fefd522b2656c8f64e0a537e
+exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 94%
 
 ---
 
-
 # Administration de sites web{#website-administration}
 
 Les outils d’administration suivants sont disponibles pour gérer les sites et les pages web :
 
-* Multi Site Manager (MSM) vous permet d’utiliser le même contenu de site en plusieurs emplacements, tout en permettant des variations :
+* Multi Site Manager (MSM) vous permet d’utiliser le même contenu de site à plusieurs emplacements, tout en autorisant des variations :
 
-   * [Réutilisation de contenu : Multi Site Manager et Live Copy](/help/sites-administering/msm.md)
+   * [Réutilisation de contenu : Multi Site Manager et Live Copy](/help/sites-administering/msm.md)
 
 * La traduction vous permet d’automatiser la traduction du contenu des pages, des ressources et du contenu créé par l’utilisateur pour créer et tenir à jour des sites web multilingues :
 
@@ -34,11 +33,11 @@ Les outils d’administration suivants sont disponibles pour gérer les sites et
 
 ## Sites internationaux et multilingues {#multinational-and-multilingual-sites}
 
-Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues par l’utilisation conjointe de Multi Site Manager et du workflow de traduction. Créez un gabarit de site dans une langue, pour un pays spécifique, puis utilisez ce contenu comme base des autres sites, à l’aide de la traduction si nécessaire :
+Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues par l’utilisation conjointe de Multi Site Manager et du workflow de traduction. Créez un gabarit de site dans une langue, pour un pays spécifique, puis utilisez ce contenu comme base des autres sites, à l’aide de la traduction si nécessaire :
 
 * [Traduisez](/help/sites-administering/translation.md) le site de gabarit dans différentes langues.
 
-* Utilisez [Multi Site Manager](/help/sites-administering/msm.md) pour effectuer les tâches suivantes :
+* Utilisez [Multi Site Manager](/help/sites-administering/msm.md) pour effectuer les tâches suivantes :
 
    * Réutilisez le contenu du site de gabarit et les traductions afin de créer des sites pour d’autres pays et cultures.
    * Limitez l’utilisation de Multi Site Manager à du contenu dans une seule langue ; par exemple, Anglais maître -> branches de langue anglaise dans les sites pays, Français maître -> branches de langue française dans les sites pays.
@@ -54,17 +53,19 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >* [MSM](/help/sites-administering/msm.md) gère le déploiement du contenu traduit d’un plan directeur (par exemple, un gabarit mondial) des Live Copies (par exemple, les sites locaux), dans les limites d’une langue.
 >* Les fonctionnalités d’intégration de [traduction](/help/sites-administering/translation.md) d’AEM, combinées aux services de gestion de traduction tiers, gèrent les langues et le contenu de traduction dans ces différentes langues.
+
 >
->Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
+>
+Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
 
 >[!NOTE]
 >
->Dans tous les cas, il est recommandé de lire les meilleures pratiques suivantes :
+>Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
->* [Meilleures pratiques MSM](/help/sites-administering/msm-best-practices.md), en particulier :
->
->   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
->
->* [Meilleures pratiques de traduction](/help/sites-administering/tc-bp.md)
+>* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md); en particulier :
+   >
+   >   
+   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
+   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+* [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md)
 
