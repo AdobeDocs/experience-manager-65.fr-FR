@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 91%
 
 ---
-
 
 # Raccourcis clavier lors de la modification de pages{#keyboard-shortcuts-when-editing-pages}
 
@@ -24,7 +23,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->Dans les tableaux suivants, pour les combinaisons de touches de la colonne **Raccourci**, les touches Ctrl et Commande fonctionnent sur macOS.
+>Dans les tableaux suivants, pour les combinaisons de touches de la colonne **Raccourci** , les touches Ctrl et Commande fonctionnent toutes deux sous macOS.
 
 >[!NOTE]
 >
@@ -170,9 +169,8 @@ Des raccourcis clavier supplémentaires sont disponibles pour les développeurs 
   </tr>
   <tr>
    <td>Mode d’édition</td>
-   <td>Définissez le suffixe suivant dans l’URL : <br /> <code>?debugClientLibs=true</code><br /> Puis utilisez :<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Définissez le suffixe suivant dans l’URL :<br /> <code>?debugClientLibs=true</code><br /> Puis utilisez :<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Afficher les statistiques de synchronisation pour le chargement de page.</td>
   </tr>
  </tbody>
 </table>
-
