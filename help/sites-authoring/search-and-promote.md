@@ -1,6 +1,6 @@
 ---
-title: Ajouter des fonctions de Search & Promote à votre page
-seo-title: Ajouter des fonctions de Search & Promote à votre page
+title: Ajout de fonctionnalités de Search & Promote à votre page
+seo-title: Ajout de fonctionnalités de Search & Promote à votre page
 description: 'Pour intégrer des fonctionnalités Search&Promote à votre site web, utilisez les composants Search&Promote afin d’ajouter les fonctions suivantes à vos pages : recherche par mot-clé, page des résultats de la recherche, amélioration de la recherche et bannières.'
 seo-description: 'Pour intégrer des fonctionnalités Search&Promote à votre site web, utilisez les composants Search&Promote afin d’ajouter les fonctions suivantes à vos pages : recherche par mot-clé, page des résultats de la recherche, amélioration de la recherche et bannières.'
 uuid: 382cf784-4214-4bf3-ace6-6f66451195e2
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: a687f725-e006-4db1-81cf-011375303947
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 79%
 
 ---
 
-
-# Ajouter des fonctionnalités de Search &amp; Promote à votre page{#adding-search-promote-features-to-your-page}
+# Ajout de fonctionnalités de Search &amp; Promote à votre page{#adding-search-promote-features-to-your-page}
 
 Pour intégrer des fonctionnalités Search&amp;Promote à votre site web, utilisez les composants Search&amp;Promote afin d’ajouter les fonctions suivantes dans vos pages :
 
@@ -31,5 +30,4 @@ Notez que vous pouvez utiliser les fonctionnalités Search&amp;Promote uniquemen
 
 >[!NOTE]
 >
->Des informations détaillées sur l’ajout des fonctionnalités Search&amp;Promote à votre page sont disponibles dans la documentation sur la création dans l’IU classique. Voir [Ajouter les fonctionnalités de Search &amp; Promote à votre page](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) pour plus d’informations.
-
+>Des informations détaillées sur l’ajout des fonctionnalités Search&amp;Promote à votre page sont disponibles dans la documentation sur la création dans l’IU classique. Voir [Ajout de fonctionnalités Search&amp;Promote à votre page](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) pour plus d’informations.
