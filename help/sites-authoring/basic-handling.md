@@ -11,7 +11,6 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2979'
@@ -84,7 +83,7 @@ Les options disponibles dans ces panneaux sont décrites ci-dessous.
 
 ### Panneau de navigation  {#navigation-panel}
 
-Le panneau de navigation donne accès aux AEM consoles :
+Le panneau Navigation permet d’accéder aux consoles AEM :
 
 ![bh-01](assets/bh-01.png)
 
@@ -205,7 +204,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Cet élément est disponible en mode Liste uniquement. Voir [liste vue](#list-view) pour plus d&#39;informations.
+   Cet élément est disponible en mode Liste uniquement. Voir [vue de liste](#list-view) pour plus d’informations.
 
 * Bouton **Créer**
 
@@ -225,9 +224,9 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * Navigation au clavier
 
-   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Cela utilise la fonctionnalité de navigateur standard de la clé **TAB** (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page qui sont *activables*.
+   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Elle utilise la fonctionnalité de navigateur standard de la clé **TAB** (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page qui sont *activables*.
 
-   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cela devient visible lorsque vous *tab* utilisez les options d&#39;en-tête et accélère votre navigation en vous permettant d&#39;ignorer les éléments standard de la barre d&#39;outils (produit) et de vous diriger directement vers le contenu principal.
+   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cela devient visible lorsque vous *onglet* par le biais des options d’en-tête, et cela accélère votre navigation en vous permettant d’ignorer les éléments standard dans la barre d’outils (produit) et de vous emmener directement au contenu principal.
 
    ![bh-30](assets/bh-30.png)
 
@@ -271,7 +270,7 @@ Ressources et téléchargements pour les développeurs.
    >Pour une présentation de tous les raccourcis clavier, reportez-vous à la documentation suivante :
    >
    >    * [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >    * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
+   * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Barre d’outils d’actions {#actions-toolbar}
@@ -291,8 +290,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 ![bh-12](assets/bh-12.png)
 
 >[!NOTE]
->
->Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
+Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
 ## Actions rapides  {#quick-actions}
 
@@ -314,8 +312,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 * [Mode Liste](#list-view)
 
 >[!NOTE]
->
->Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
+Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
 ### Sélection de ressources  {#selecting-resources}
 
@@ -345,13 +342,13 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
    <td>Mode Carte<br /> </td>
    <td>
     <ul>
-     <li>Bureau :<br /> Pointez sur, puis utilisez la coche action rapide</li>
+     <li>Bureau :<br /> pointez, puis utilisez l’action rapide en forme de coche.</li>
      <li>Appareil mobile :<br /> maintenez la carte enfoncée</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Bureau : <br /> Cliquez sur la carte</li>
-     <li>Périphérique mobile : <br /> Appuyez sur la carte</li>
+     <li>Bureau :<br /> cliquez sur la carte</li>
+     <li>Appareil mobile :<br /> Appuyez sur la carte</li>
     </ul> </td>
   </tr>
   <tr>
@@ -378,7 +375,7 @@ Vous pouvez sélectionner tous les éléments d’une vue en cliquant sur l’op
 * Dans le **mode d&#39;affichage Liste**, tous les éléments de la liste sont sélectionnés.
 * En **mode Colonnes**, tous les éléments de la colonne la plus à gauche sont sélectionnés.
 
-![capture d&#39;écran_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
+![screen-shot_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
 
 #### Tout désélectionner {#deselecting-all}
 
@@ -499,8 +496,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 * Modifiez l’ordre des éléments à l’aide de la barre verticale en pointillés tout à droite de chaque élément de la liste.
 
    >[!NOTE]
-   >
-   >La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
+   La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -525,8 +521,7 @@ Par exemple, dans la console Sites, vous pouvez sélectionner le contenu uniquem
 Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affiche. Si n’importe quelle autre option est sélectionnée, le nom des options apparaît en regard de l’icône de rail.
 
 >[!NOTE]
->
->Des [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
+Des [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
 
 ### Arborescence de contenu {#content-tree}
 
@@ -537,10 +532,8 @@ En utilisant le panneau latéral d’arborescence de contenu en même temps qu�
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
->
->Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
->
->Voir les [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) pour plus d’informations.
+Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
+Voir les [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) pour plus d’informations.
 
 ### Chronologie {#timeline}
 
