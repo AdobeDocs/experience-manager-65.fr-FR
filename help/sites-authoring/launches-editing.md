@@ -11,14 +11,13 @@ topic-tags: site-features
 discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
+exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '551'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
-
 
 # Modification de lancements{#editing-launches}
 
@@ -31,9 +30,9 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 
 >[!NOTE]
 >
->Vous n’êtes pas autorisé à déplacer une page au cours d’un lancement. La tentative de cette action déclenchera un message d’avertissement :
+>Vous n’êtes pas autorisé à déplacer une page au cours d’un lancement. Tenter cette action déclenchera un message d’avertissement :
 >
->* Avertissement : Cette page est la source du lancement. Le déplacement de la page n’est pas autorisé.
+>* Avertissement : Cette page est la source du lancement. Le déplacement de cette page n’est pas autorisé.
 
 
 ### Modification de l’objet des pages de lancement en Live Copy {#editing-launch-pages-subject-to-a-live-copy}
@@ -60,7 +59,7 @@ Pour suivre les modifications que vous avez apportées, vous pouvez afficher le 
 1. Ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)** et sélectionnez **Lancements**.
 1. Sélectionnez votre lancement spécifique, puis **Comparer à la source** :
 
-   ![capture d&#39;écran_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
+   ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
 
 1. Les deux pages (de lancement et source) s’ouvrent côte à côte.
 
@@ -106,8 +105,8 @@ Vous pouvez à tout moment modifier les propriétés d’un lancement :
 
    Consultez [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction des champs **Date de lancement** et **Prêt pour la production**.
 
-## Identification de l’état de lancement d’une page  {#discovering-the-launch-status-of-a-page}
+## Identification du statut de lancement d’une page  {#discovering-the-launch-status-of-a-page}
 
-L’état s’affiche lorsque vous sélectionnez un lancement spécifique dans l’onglet Références (voir [Lancements dans les références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
+Le statut s’affiche lorsque vous sélectionnez un lancement spécifique dans l’onglet Références (voir [Lancements dans les références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)
