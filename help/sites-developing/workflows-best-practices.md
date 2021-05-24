@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 91%
 
 ---
-
 
 # Meilleures pratiques en matière de workflow{#workflow-best-practices}
 
@@ -59,17 +58,17 @@ Si les workflows en cours d’exécution consomment de nombreuses ressources sys
 
 Pour remédier à ce problème, Adobe recommande de configurer le **nombre maximal de tâches en parallèle** sur une valeur comprise entre 50 % et 75 % du nombre de cœurs de processeur du système. Cela devrait laisser suffisamment de capacité de réaction au système lors du traitement de ces workflows.
 
-Pour configurer **Nombre maximal de tâches parallèles**, vous pouvez effectuer l&#39;une des opérations suivantes :
+Pour configurer **le nombre maximal de tâches parallèles**, vous pouvez effectuer l’une des opérations suivantes :
 
-* Configurez la **[configuration OSGi](/help/sites-deploying/configuring-osgi.md)** à partir de la console Web AEM ; pour **File d&#39;attente : Granite Workflow Queue** (une **configuration de la file d’attente de travaux Apache Sling**).
+* Configurez la **[configuration OSGi](/help/sites-deploying/configuring-osgi.md)** à partir de la console Web AEM ; pour la **file d’attente : File d’attente des workflows Granite** (une **configuration de la file d’attente des tâches Apache Sling**).
 
-* Configurez la file d&#39;attente à partir de l&#39;option **Sling Jobs** de la console Web AEM ; pour **Configuration de la file d&#39;attente de travaux : Granite Workflow Queue**, `http://localhost:4502/system/console/slingevent`.
+* Configurez la file d’attente à partir de l’option **Tâches Sling** de la console Web AEM. pour **Configuration de la file d’attente des tâches : File d’attente des workflows Granite**, à l’adresse `http://localhost:4502/system/console/slingevent`.
 
-En outre, il existe une configuration distincte pour la **file d&#39;attente de travaux de processus externe Granite Workflow**. Elle est utilisée pour les processus de workflow qui lancent des fichiers binaires externes, tels que **InDesign Server** ou **Image Magick**.
+En outre, il existe une configuration distincte pour la **file d’attente des tâches de processus externe de processus Granite**. Elle est utilisée pour les processus de workflow qui lancent des fichiers binaires externes, tels que **InDesign Server** ou **Image Magick**.
 
 ### Configuration de différentes files d’attente de tâches  {#configure-individual-job-queues}
 
-Dans certains cas, il peut être utile de configurer différentes files d’attente pour contrôler des threads simultanés, ou d’autres options de file d’attente, sur la base d’une tâche individuelle. Vous pouvez ajouter et configurer une file d’attente distincte à partir de la console web via la fabrique **Configuration de la file d’attente de tâches Apache Sling**. Pour rechercher la rubrique appropriée à liste, exécutez le modèle de votre flux de travail et recherchez-le dans la console **Sling Jobs** ; par exemple, à `http://localhost:4502/system/console/slingevent`.
+Dans certains cas, il peut être utile de configurer différentes files d’attente pour contrôler des threads simultanés, ou d’autres options de file d’attente, sur la base d’une tâche individuelle. Vous pouvez ajouter et configurer une file d’attente distincte à partir de la console web via la fabrique **Configuration de la file d’attente de tâches Apache Sling**. Pour trouver la rubrique appropriée à répertorier, exécutez le modèle de votre workflow et recherchez-la dans la console **Tâches Sling** ; par exemple, à `http://localhost:4502/system/console/slingevent`.
 
 Des files d’attente individuelles peuvent également être ajoutées pour les workflows transitoires.
 
@@ -83,7 +82,7 @@ Par défaut, la **Période de maintenance hebdomadaire** comporte une tâche **P
 
 Pour plus d’informations sur les tâches de maintenance dans AEM, consultez le [Tableau de bord des opérations](/help/sites-administering/operations-dashboard.md).
 
-## Personnalisation  {#customization}
+## Personnalisation {#customization}
 
 Lorsque vous créez des processus de workflow personnalisés, vous devez tenir compte de plusieurs éléments.
 
@@ -250,8 +249,8 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Enregistrement d’une session :
 
-* Dans un processus de processus, si `WorkflowSession` est utilisé pour modifier le référentiel, n&#39;enregistrez pas explicitement la session. Le processus enregistre la session une fois terminée.
-* `Session.Save` ne doit pas être appelée à partir d’une étape de processus :
+* Dans un processus de workflow, si `WorkflowSession` est utilisé pour modifier le référentiel, n’enregistrez pas explicitement la session ; le workflow enregistre la session une fois qu’il s’est terminé.
+* `Session.Save` ne doit pas être appelé depuis une étape de workflow :
 
    * Il est recommandé d’adapter la session JCR du workflow ; une opération `save` n’est donc pas nécessaire, car le moteur de workflow enregistre automatiquement la session une fois l’exécution du workflow terminée.
    * Il est déconseillé qu’une étape du processus crée sa propre session JCR.
@@ -277,7 +276,7 @@ Compte tenu de l’incidence de ces lanceurs sur le comportement des workflows, 
 
 ### Améliorations de la configuration pour les lanceurs {#configuration-enhancements-for-launchers}
 
-La configuration personnalisée de [lanceur](/help/sites-administering/workflows-starting.md#workflows-launchers) a été améliorée pour prendre en charge les éléments suivants :
+La configuration [lanceur ](/help/sites-administering/workflows-starting.md#workflows-launchers) personnalisée a été améliorée pour prendre en charge les éléments suivants :
 
 * Plusieurs conditions liées par l’opérateur « AND ».
 * Conditions « OR » au sein d’une seule condition.
@@ -325,7 +324,7 @@ Lors de la mise à niveau de votre instance :
 
 ## Outils système {#system-tools}
 
-De nombreux outils système disponibles pour faciliter la surveillance, la gestion et le dépannage des workflows. Tous les exemples d’URL ci-dessous utilisent `localhost:4502`, mais doivent être disponibles sur toute instance d’auteur ( `<hostname>:<port>`).
+De nombreux outils système disponibles pour faciliter la surveillance, la gestion et le dépannage des workflows. Tous les exemples d’URL ci-dessous utilisent `localhost:4502`, mais doivent être disponibles sur n’importe quelle instance d’auteur ( `<hostname>:<port>`).
 
 ### Console de gestion des tâches Sling {#sling-job-handling-console}
 
