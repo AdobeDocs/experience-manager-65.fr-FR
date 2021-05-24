@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a156e09e77951041dce017f2f78069bc050b6bdb
+exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 88%
 
 ---
-
 
 # Affichage principal de la gestion des autorisations{#principal-view-for-permissions-management}
 
@@ -67,7 +66,7 @@ Sur cet exemple, nous sélectionnons un chemin pour lequel configurer une autori
 
 ![](assets/sase-1.png)
 
-Une fois le chemin sélectionné, le flux de travail revient à cet écran, où l&#39;utilisateur peut sélectionner un ou plusieurs des privilèges des espaces de nommage disponibles (par exemple `jcr`, `rep` ou `crx`), comme illustré ci-dessous.
+Une fois le chemin sélectionné, le workflow revient sur cet écran où l’utilisateur peut sélectionner un ou plusieurs des privilèges des espaces de noms disponibles (par exemple `jcr`, `rep` ou `crx`) comme illustré ci-dessous.
 
 Vous pouvez ajouter des privilèges en les recherchant à l’aide du champ de texte, puis en les sélectionnant dans la liste.
 
@@ -93,7 +92,7 @@ Outre la liste des privilèges et le type d’autorisation pour un chemin d’ac
 
 Vous pouvez ajouter des restrictions en sélectionnant le type de restriction, en entrant la valeur et en appuyant sur l’icône **+**, comme on peut voir ci-dessous. ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est un privilège d&#39;agrégat qui inclut `jcr:removeNode` qui a été ajouté ci-dessus, mais qui n&#39;est pas affiché ci-dessous comme son nom couvert sous `jcr:write`.
+La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est un privilège agrégé qui inclut `jcr:removeNode` qui a été ajouté ci-dessus, mais qui n’est pas affiché ci-dessous comme il est couvert sous `jcr:write`.
 
 ### Modification des entrées de contrôle d’accès {#editing-aces}
 
@@ -111,7 +110,7 @@ Ici, nous ajoutons l’autorisation `addChildNodes` pour les **utilisateurs DAM*
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite, et les modifications seront répercutées dans les nouvelles autorisations pour **dam-users **comme illustré ci-dessous :
+Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite. Les modifications seront répercutées dans les nouvelles autorisations pour **dam-users**, comme illustré ci-dessous :
 
 ![](assets/zece-1.png)
 
@@ -163,4 +162,3 @@ Ceci entraînait une certaine confusion quant à la configuration exacte. Le tab
   </tr>
  </tbody>
 </table>
-
