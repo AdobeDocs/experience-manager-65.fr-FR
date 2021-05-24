@@ -1,8 +1,8 @@
 ---
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
-translation-type: tm+mt
-source-git-commit: 431bed450ed5b0239d9191dcf061f01e64b8981a
+exl-id: 25236af4-405a-4152-8308-34d983977e9a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 99%
@@ -17,7 +17,7 @@ Lorsque vous décidez du niveau d’intégration que vous souhaitez entre votre 
 
 Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Les conditions préalables sont simples.
 
@@ -298,7 +298,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 1. Identifiez le niveau racine pour AEM.
 
-   * Pour notre échantillon, nous considérons `wknd-spa-react/us/en` comme la racine du SPA. Cela signifie que tout ce qui précède ce chemin ne concerne que des pages ou du contenu AEM.
+   * Pour notre exemple, nous considérons `wknd-spa-react/us/en` comme la racine du SPA. Cela signifie que tout ce qui précède ce chemin ne concerne que des pages ou du contenu AEM.
 
 1. Créez une page au niveau requis.
 
@@ -332,5 +332,5 @@ Les documents de référence suivants peuvent être utiles pour comprendre le fo
 * [Prise en main des SPA dans AEM avec React](spa-getting-started-react.md)
 * [Documents de référence relatifs aux SPA (référence de l’API)](spa-reference-materials.md)
 * [Plan directeur d’applications sur une seule page (SPA) et PageModelManager](spa-blueprint.md#pagemodelmanager)
-* [Routage du modèle de SPA ](spa-routing.md)
-* [SPA et rendu côté serveur ](spa-ssr.md)
+* [Routage du modèle de SPA](spa-routing.md)
+* [SPA et rendu côté serveur](spa-ssr.md)
