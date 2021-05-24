@@ -3,11 +3,10 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guide de l’utilisateur de création de l’interface utilisateur classique d’AEM 6.5
-user-guide-description: Ce guide traite des concepts de création dans AEM interface utilisateur classique.
+user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.5 Classic UI
+user-guide-description: Ce guide couvre les concepts de création dans AEM dans l’interface utilisateur classique.
 feature: 'Création  '
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '272'
@@ -16,10 +15,10 @@ ht-degree: 84%
 ---
 
 
-# AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
+# Guide de l’utilisateur pour la création dans l’interface utilisateur classique d’AEM 6.5 {#classic-ui}
 
-+ [Présentation du guide de création d’interface utilisateur classique](home.md)
-+ Présentation de la création d’interface utilisateur classique {#introduction}
++ [Guide de création de l’interface utilisateur classique - Aperçu](home.md)
++ Présentation de la création dans l’interface utilisateur classique {#introduction}
    + [Premières étapes pour les auteurs](classic-page-author-first-steps.md)
    + [Création dans l’IU classique](classicui.md)
    + [Utilisation de l’environnement de création](author-env.md)
@@ -27,8 +26,8 @@ ht-degree: 84%
    + [Configuration de l’environnement du compte](author-env-user-props.md)
    + [Choix de l’interface utilisateur](author-env-select-ui.md)
    + [Rechercher](author-env-search.md)
-   + [Votre boîte de réception](author-env-inbox.md)
-   + [Raccourcis clavier pour les consoles](author-env-keyboard-shortcuts.md)
+   + [Votre boîte de réception  ](author-env-inbox.md)
+   + [Raccourcis clavier pour les consoles  ](author-env-keyboard-shortcuts.md)
 + Création {#authoring}
    + [Création de pages](classic-page-author.md)
    + [Création – Environnement et outils](classic-page-author-env-tools.md)
@@ -39,13 +38,13 @@ ht-degree: 84%
    + [Modification des propriétés de page](classic-page-author-edit-page-properties.md)
    + [Annotations lors de la modification d’une page](classic-page-author-annotations.md)
    + [Résolution des problèmes d’AEM lors de la création](classic-page-author-troubleshooting.md)
-   + [Création de contenu accessible (conformité WCAG 2.0)](classic-page-author-accessible-content.md)
+   + [Création d’un contenu accessible (conformité WCAG 2.0)](classic-page-author-accessible-content.md)
    + [Création d’une page pour les appareils mobiles](classic-feature-mobile.md)
    + [Composants pour la création de page](classic-page-author-edit-mode.md)
    + [Raccourcis clavier lors de la modification de pages](classic-page-author-keyboard-shortcuts.md)
 + Fonctions de site et de page {#siteandpage}
    + [Création de page à partir de fragments de contenu](classic-page-author-content-fragments.md)
-   + [Mise en page réactive](classic-page-author-responsive-layout.md)
+   + [Mise en page réactive  ](classic-page-author-responsive-layout.md)
    + [Utilisation des versions de page](classic-page-author-work-with-versions.md)
    + [Utilisation des balises](classic-feature-tags.md)
    + [Génération de modèles automatique](classic-feature-scaffolding.md)
@@ -55,7 +54,7 @@ ht-degree: 84%
 + Workflows {#workflows}
    + [Participation aux workflows](classic-workflows-participating.md)
    + [Utilisation des workflows](classic-workflows.md)
-   + [Application de workflows aux pages ](classic-workflows-applying.md)
+   + [Application de workflows aux pages](classic-workflows-applying.md)
 + Lancements {#launches}
    + [Lancements](classic-launches.md)
    + [Création de lancements](classic-launches-creating.md)
@@ -70,16 +69,16 @@ ht-degree: 84%
    + [Suivi des messages rejetés](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)
    + [Configuration d’une campagne](classic-personalization-campaigns-setting-up-your.md)
-   + [Publication d’un courrier électronique sur des services de messagerie](classic-personalization-campaigns-email-newsletters.md)
-   + [Utilisation du Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
+   + [Publication d’un message électronique sur des services de messagerie](classic-personalization-campaigns-email-newsletters.md)
+   + [Utilisation de Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [Création d’une page d’entrée efficace pour une newsletter](classic-personalization-campaigns-email-landingpage.md)
    + [Gestion des abonnements](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
    + [Utilisation d’Adobe Campaign 6.1 et d’Adobe Campaign Standard](classic-personalization-ac-campaign.md)
    + [Utilisation d’Adobe Campaign](classic-personalization-ac.md)
    + [Composants d’Adobe Campaign](classic-personalization-ac-components.md)
-   + [Ciblage de votre Adobe Campaign](classic-personalization-ac-target.md)
-   + [Création de formulaires Adobe Campaign dans AEM](classic-personalization-ac-forms.md)
+   + [Ciblage d’un élément de campagne Adobe Campaign](classic-personalization-ac-target.md)
+   + [Création de formulaires Adobe Campaign dans AEM](classic-personalization-ac-forms.md)
 + Création de ressources dans l’interface utilisateur classique {#assets}
    + [Utilisation des ressources](classicui-assets.md)
    + [Diffusion de ressources Dynamic Media](dynamic-media-assets-delivering.md)
