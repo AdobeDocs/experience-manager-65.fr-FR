@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 55e66c66-0120-4ed4-94c5-d65a434bb59b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bb6a5913-0871-47c7-8641-936e98920ec0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 99%
 
 ---
-
 
 # Conventions de dénomination des ressources testing{#naming-conventions-for-assets-testing}
 
@@ -38,4 +37,3 @@ L’IU classique applique des restrictions plus strictes :
    * « 0 » à « 9 »
    * _ (trait de soulignement)
    * `-` (tiret/moins)
-
