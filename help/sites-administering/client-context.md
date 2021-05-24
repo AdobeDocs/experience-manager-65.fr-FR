@@ -10,22 +10,21 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1889'
 ht-degree: 77%
 
 ---
 
-
 # ClientContext{#client-context}
 
 >[!NOTE]
 >
->ClientContext a été remplacé par ContextHub. Pour plus d&#39;informations, consultez la documentation [configuration]ch-configuring.md) et [developer](/help/sites-developing/contexthub.md) associée.
+>ClientContext a été remplacé par ContextHub. Pour plus d’informations, voir la documentation [configuration]ch-configuring.md) et [documentation du développeur](/help/sites-developing/contexthub.md) associée.
 
-Le contexte client est un mécanisme qui fournit certaines informations sur la page et le visiteur en cours. Il peut être ouvert à l’aide de **Ctrl-Alt-c** (windows) ou **control-option-c** (Mac) :
+ClientContext est un mécanisme qui vous fournit certaines informations sur la page active et le visiteur. Il peut être ouvert à l’aide de **Ctrl-Alt-c** (Windows) ou **option-contrôle-c** (Mac) :
 
 ![](assets/clientcontext_alisonparker.png)
 
@@ -51,35 +50,35 @@ Les icônes (disponibles uniquement dans l’environnement de création) vous pe
 
 ClientContext peut afficher les propriétés suivantes ([selon les éléments ayant été sélectionnés à l’aide de Modifier](#adding-a-property-component)) :
 
-**Informations** sur le référentAffiche les informations suivantes côté client :
+**Informations sur le surfeur** : affiche les informations suivantes côté client :
 
 * **Adresse IP**
-* **mot-** clé utilisé pour le référent de moteur de recherche
-* le **navigateur** utilisé
-* le **système d’exploitation** (système d’exploitation) utilisé
-* l&#39;écran **résolution**
+* **** mots-clés utilisés pour la référence au moteur de recherche
+* **navigateur** utilisé
+* le **système d’exploitation** (système d’exploitation utilisé
+* l’écran **résolution**
 * position **souris X**
 * position **Y de la souris**
 
-**Activité** StreamCette section fournit des informations sur l&#39;activité sociale de l&#39;utilisateur sur différentes plateformes ; par exemple, les forums AEM, les blogs, les évaluations, etc.
+**Flux d’activités** : fournit des informations sur l’activité sociale de l’utilisateur sur différentes plateformes ; par exemple, les forums AEM, les blogs, les évaluations, etc.
 
 **** CampaignPermet aux auteurs de simuler une expérience spécifique pour une campagne. Ce composant remplace la sélection normale de résolution et d’expérience de campagne pour permettre de tester différentes variantes.
 
-La résolution Campaign est généralement basée sur la propriété priority de la campagne. L’expérience est normalement sélectionnée en fonction de la segmentation.
+La résolution de la campagne est normalement basée sur la propriété priority de la campagne. L’expérience est normalement sélectionnée en fonction de la segmentation.
 
-**** Panier Affiche les informations du panier, y compris les entrées de produits (titre, quantité, prixFormaté, etc.), les promotions résolues (titre, message, etc.) et les bons (code, description, etc.).
+**** CartAffiche des informations sur le panier, y compris les entrées de produit (titre, quantité, prixFormatted, etc.), les promotions résolues (titre, message, etc.) et les bons (code, description, etc.).
 
 La boutique de session de panier informe également le serveur des changements de promotion résolus (en fonction des modifications de segmentation) avec la propriété ClientContextCartServlet.
 
-**** Magasin génériqueComposant générique qui affiche le contenu d’une boutique. Il s’agit d’une version de niveau inférieur du composant Propriétés de la boutique générique.
+**** Magasin génériqueComposant générique qui affiche le contenu d’un magasin. Il s’agit d’une version de niveau inférieur du composant Propriétés de la boutique générique.
 
 La boutique générique doit être configurée avec un rendu JS qui affiche les données d’une manière personnalisée.
 
-**** Propriétés génériques du magasinComposant générique qui affiche le contenu d&#39;un magasin. Il s’agit d’une version de niveau supérieur du composant Boutique générique.
+**** Propriétés de magasin génériques : composant générique qui affiche le contenu d’un magasin. Il s’agit d’une version de niveau supérieur du composant Boutique générique.
 
 Le composant Propriétés de la boutique générique inclut un rendu par défaut qui répertorie les propriétés configurées (ainsi qu’une miniature).
 
-**** Géolocalisation Affiche la latitude et la longitude du client. Elle utilise l’API de géolocalisation HTML5 pour demander la position actuelle au navigateur. Cela se traduit par l’affichage d’une fenêtre contextuelle au visiteur, où le navigateur lui demande s’il accepte de partager son emplacement.
+**** GéolocalisationAffiche la latitude et la longitude du client. Elle utilise l’API de géolocalisation HTML5 pour demander la position actuelle au navigateur. Une fenêtre contextuelle s’affiche alors pour le visiteur, où le navigateur lui demande s’il accepte de partager son emplacement.
 
 Lorsqu’il est affiché dans le cloud contextuel, le composant utilise une API Google pour afficher une carte sous forme de vignette. Le composant est soumis aux [limites d’utilisation](https://developers.google.com/maps/documentation/staticmaps/intro#Limits) de l’API Google.
 
@@ -87,9 +86,9 @@ Lorsqu’il est affiché dans le cloud contextuel, le composant utilise une API 
 >
 >Dans AEM 6.1, la boutique Géolocalisation ne fournit plus la fonction de géocodage inversé. Par conséquent, elle ne récupère plus de détails concernant l’emplacement actuel, tels que le nom de ville ou le code pays. Les segments qui utilisent ces données de boutique ne fonctionneront pas correctement. La boutique Géolocalisation contient uniquement la latitude et la longitude de l’emplacement.
 
-**Composant JSONP** StoreUn qui affiche le contenu qui dépend de votre installation.
+**Composant JSONP** StoreComposant qui affiche le contenu qui dépend de votre installation.
 
-La norme JSONP est un complément de JSON qui permet de contourner stratégie de même origine (ce qui empêche les applications web de communiquer avec les serveurs se trouvant sur un autre domaine). Il consiste à encapsuler l’objet JSON dans un appel de fonction afin de pouvoir le charger en tant que `<script>` à partir de l’autre domaine (exception autorisée pour la même stratégie d’origine).
+La norme JSONP est un complément de JSON qui permet de contourner stratégie de même origine (ce qui empêche les applications web de communiquer avec les serveurs se trouvant sur un autre domaine). Il consiste à encapsuler l’objet JSON dans un appel de fonction afin de pouvoir le charger en tant que `<script>` à partir de l’autre domaine (qui est une exception autorisée à la même stratégie d’origine).
 
   La boutique JSONP est semblable à n’importe quelle autre boutique, mais elle charge des informations issues d’un autre domaine sans avoir besoin d’un proxy pour ces informations sur le domaine actuel. Voir l’exemple figurant dans [Stockage de données dans le contexte client via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
@@ -97,28 +96,28 @@ La norme JSONP est un complément de JSON qui permet de contourner stratégie de
 >
 >La boutique JSONP ne met pas en cache les informations figurant dans le cookie, mais récupère ces données à chaque chargement de la page.
 
-**Profil** DataAffiche les informations collectées dans le profil utilisateur. Par exemple, le sexe, l’âge ou l’adresse électronique.
+**Profile** Data Affiche les informations collectées dans le profil utilisateur. Par exemple, le sexe, l’âge ou l’adresse électronique.
 
-**** segments résolusIndique les segments actuellement résolus (souvent en fonction d&#39;autres informations affichées dans le contexte du client). Ceci s’avère utile lors de la configuration d’une campagne.
+**Segments résolus :** indique les segments actuellement résolus (souvent en fonction d’autres informations affichées dans le contexte client). Ceci s’avère utile lors de la configuration d’une campagne.
 
-Par exemple, si la souris se trouve sur la partie gauche ou droite de la fenêtre. Ce segment est principalement utilisé pour les tests, car les modifications sont visibles immédiatement.
+Par exemple, si la souris se trouve sur la partie gauche ou droite de la fenêtre. Ce segment est principalement utilisé à des fins de test, car les modifications sont visibles immédiatement.
 
-**** Graphique des réseaux sociaux Affiche le graphique des réseaux sociaux des amis et abonnés de l’utilisateur.
+**Social** GraphAffiche le graphique des réseaux sociaux des amis et des abonnés de l’utilisateur.
 
 >[!NOTE]
 >
 >Il s’agit actuellement d’une fonction de démonstration qui repose sur des données pré-configurées définies sur les nœuds de profil de nos utilisateurs de démonstration. Pour obtenir un exemple, voir la section :
 >
->`/home/users/geometrixx/aparker@geometrixx.info/profile` => propriété des amis
+>`/home/users/geometrixx/aparker@geometrixx.info/profile` => propriété amis
 
-**Tag** CloudAffiche les balises définies sur la page active et celles rassemblées lors de la navigation sur le site. Déplacer le curseur sur une balise affiche le nombre de fois que l’utilisateur actuel a accédé aux pages contenant cette balise.
+**Tag** CloudAffiche les balises définies sur la page actuelle et celles rassemblées lors de la navigation sur le site. Déplacer le curseur sur une balise affiche le nombre de fois que l’utilisateur actuel a accédé aux pages contenant cette balise.
 
 >[!NOTE]
 Les balises définies sur des ressources DAM qui s’affichent sur les pages visitées ne sont pas prises en compte.
 
 **Technographics** StoreCe composant dépend de votre installation.
 
-**Produits** consultésEffectue le suivi des produits que l&#39;acheteur a consultés. Peut être interrogé pour connaître le produit le plus récemment affiché, ou le produit le plus récemment affiché ne figurant pas déjà dans le panier.
+**** ViewedProductsSuivi des produits que l’acheteur a consultés. Peut être interrogé pour connaître le produit le plus récemment affiché, ou le produit le plus récemment affiché ne figurant pas déjà dans le panier.
 
 Cette boutique de session ne comporte pas de composant de contexte client par défaut.
 
@@ -201,13 +200,13 @@ La modification de ClientContext peut être utilisée pour définir (ou réiniti
 
 ### Modification des détails des propriétés  {#editing-property-details}
 
-La modification de ClientContext peut être utilisée pour définir (ou réinitialiser) les valeurs de certaines propriétés. Cela vous permet de tester des scénarios spécifiques (particulièrement utiles pour [segmentation](/help/sites-administering/campaign-segmentation.md) et [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
+La modification de ClientContext peut être utilisée pour définir (ou réinitialiser) les valeurs de certaines propriétés. Cela vous permet de tester des scénarios spécifiques (particulièrement utiles pour la [segmentation](/help/sites-administering/campaign-segmentation.md) et les [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
 ![](assets/clientcontext_alisonparker_edit.png)
 
 ### Ajout d’un composant de propriété {#adding-a-property-component}
 
-Après avoir ouvert la **page de conception de ClientContext**, vous pouvez également **Ajouter** une propriété entièrement nouvelle à l&#39;aide des composants disponibles (les composants sont répertoriés dans le sidekick ou dans la boîte de dialogue **Insérer un nouveau composant** qui s&#39;ouvre après un doublon-clic sur **Faire glisser les composants** ) :
+Après avoir ouvert la **page de conception de ClientContext**, vous pouvez également **Ajouter** une propriété entièrement nouvelle à l’aide des composants disponibles (les composants sont répertoriés dans le sidekick ou dans la boîte de dialogue **Insérer un nouveau composant** qui s’ouvre après un double-clic sur la **Faire glisser des composants ici**) :
 
 ![](assets/clientcontext_alisonparker_new.png)
 
@@ -226,7 +225,7 @@ Cet exemple utilise l’exemple de site web Geometrixx Outdoors pour accéder à
 Ajoutez le composant Boutique JSONP à ClientContext et utilisez-le pour récupérer et stocker des informations de géolocalisation sur le client web.
 
 1. Ouvrez la page d’accueil en anglais du site Geometrixx Outdoors sur l’instance de création AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
-1. Pour ouvrir Client Context, appuyez sur Ctrl-Alt-c (windows) ou Ctrl-option-c (Mac).
+1. Pour ouvrir ClientContext, appuyez sur Ctrl-Alt-c (Windows) ou Ctrl-option-c (Mac).
 1. Cliquez sur l’icône de modification de ClientContext pour ouvrir le concepteur ClientContext.
 
    ![](do-not-localize/chlimage_1.png)
@@ -253,7 +252,7 @@ Ajoutez le composant Boutique JSONP à ClientContext et utilisez-le pour récup�
 
 Utilisez les données de la boutique de session que vous avez créée à l’aide du composant Boutique JSONP. Le segment utilise la latitude de la boutique de session et la date actuelle pour déterminer si c’est l’hiver là où se trouve le client.
 
-1. Ouvrez la console Outils dans votre navigateur Web (`https://localhost:4502/miscadmin#/etc`).
+1. Ouvrez la console Outils dans votre navigateur web (`https://localhost:4502/miscadmin#/etc`).
 1. Dans l’arborescence, cliquez sur le dossier Outils/Segmentation, puis sur Nouveau > Nouveau dossier. Spécifiez les valeurs de propriété suivantes, puis cliquez sur Créer :
 
    * Nom : mysegments
@@ -280,4 +279,3 @@ Utilisez les données de la boutique de session que vous avez créée à l’aid
 1. Faites glisser le composant Script vers le même conteneur ET, puis ouvrez sa boîte de dialogue de modification. Ajoutez le script suivant, puis cliquez sur OK :
 
    `3 < new Date().getMonth() < 12`
-
