@@ -10,21 +10,20 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: d72b8844-d782-4b5b-8999-338217dbefb9
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+feature: Mise à niveau
+exl-id: 946c7c2a-806b-4461-a38b-9c2e5ef1e958
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 87%
 
 ---
 
-
 # Migration différée du contenu {#lazy-content-migration}
 
 Dans un souci de compatibilité descendante, le contenu et les données de configuration sous **/etc** et **/content**, à partir d’AEM 6.3, ne sont ni affectés ni transformés juste après la mise à niveau. L’objectif est de garder intactes les dépendances des applications clientes sur ces structures. La fonctionnalité relative à ces structures de contenu reste la même, même si le contenu d’une version prête à l’emploi d’AEM 6.5 est hébergé à un autre endroit.
 
-Bien que tous ces emplacements ne puissent pas être transformés automatiquement, il existe quelques emplacements `CodeUpgradeTasks` retardés également appelés migration de contenu différé. Cela permet aux clients de déclencher ces transformations automatiques en redémarrant l’instance avec cette propriété système :
+Bien que tous ces emplacements ne puissent pas être transformés automatiquement, il existe quelques `CodeUpgradeTasks` différés également appelés migration différée de contenu. Cela permet aux clients de déclencher ces transformations automatiques en redémarrant l’instance avec cette propriété système :
 
 ```shell
 -Dcom.adobe.upgrade.forcemigration=true
@@ -61,6 +60,6 @@ Vous trouverez, ci-dessous, la liste complète des `CodeUpgradeTasks` introduite
 | `CQ64CommunitiesConfigsCleanupTask` | &lt; 6=&quot;&quot;> | Différé | Déplace les configurations cloud SRP et les configurations de mots-clés communautaires, nettoie **/etc/social** et **/etc/enablement** (toutes les références et données, le cas échéant, doivent être modifiées lors de l’exécution de la migration différée ; plus aucune partie de l’application ne doit désormais dépendre de cette structure). |
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | Différé | Nettoie **/etc/cloudsettings** (contenant la configuration ContextHub). La migration de la configuration est effectuée automatiquement lors du premier accès. Si la migration différée du contenu est lancée avec la mise à niveau, le contenu de **/etc/cloudsettings** doit être conservé via le package avant la mise à niveau et réinstallé pour que la transformation implicite soit lancée, avec une désinstallation ultérieure du package une fois la procédure terminée. |
 | `CQ64UsersTitleFixTask` | &lt; 6=&quot;&quot;> | Différé | Définit la structure de titre héritée sur le titre du nœud de profil utilisateur. |
-| `CQ64CommerceMigrationTask` | &lt; 6=&quot;&quot;> | Différé | Migrez le contenu commercial de **/etc/commerce** à **/var/commerce**. Lors de la migration, le contenu est déplacé et les références au contenu déplacé sont mises à jour pour refléter le nouvel emplacement. |
-| `CQ65DMMigrationTask` | &lt; 6.5 | Différé | Migration des paramètres de catalogue hérités et des paramètres Dynamic Media Cloud Services de **/etc** vers **/conf** |
-| `CQ65LegacyClientlibsCleanupTask` | &lt; 6=&quot;&quot;> | Différé | Nettoyer les clientlibs hérités existants sous **/etc/clientlibs** |
+| `CQ64CommerceMigrationTask` | &lt; 6=&quot;&quot;> | Différé | Migrez le contenu commercial de **/etc/commerce** vers **/var/commerce**. Lors de la migration, le contenu est déplacé et les références au contenu déplacé sont mises à jour pour refléter le nouvel emplacement. |
+| `CQ65DMMigrationTask` | &lt; 6.5 | Différé | Migration des paramètres de catalogue hérités et des paramètres de Cloud Services Dynamic Media de **/etc** vers **/conf** |
+| `CQ65LegacyClientlibsCleanupTask` | &lt; 6=&quot;&quot;> | Différé | Nettoyer les clientlibs héritées existantes sous **/etc/clientlibs** |
