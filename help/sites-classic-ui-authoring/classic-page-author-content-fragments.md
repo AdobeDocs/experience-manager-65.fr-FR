@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
-translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+exl-id: b55d9edc-a210-407a-aa4b-a91bb358be7b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 100%
 
 ---
-
 
 # Création de page à partir de fragments de contenu{#page-authoring-with-content-fragments}
 
@@ -30,4 +29,3 @@ Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi 
 >Les fonctionnalités de gestion des fragments de contenu ne sont pas toutes disponibles dans l’IU classique. Voir [Création de page à partir de fragments de contenu](/help/sites-authoring/content-fragments.md) dans la documentation de création standard.
 >
 >Le composant Fragment de contenu apparaît dans le sidekick de l’IU classique, mais les fonctions associées ne sont pas disponibles.
-
