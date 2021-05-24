@@ -10,20 +10,19 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 8ab21067-c19a-4faa-8bf0-cd9f21f6df70
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 96%
 
 ---
 
-
 # Création de lancements{#creating-launches}
 
 Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source :
 
-* Le titre s’affiche dans le **Sidekick**, d’où les auteurs peuvent y accéder pour y travailler.
+* Le titre apparaît dans le **Sidekick**, à partir duquel les auteurs peuvent y accéder pour y travailler.
 * Les pages enfants de la page source sont incluses, par défaut, dans le lancement. Si vous le souhaitez, vous pouvez n’utiliser que la page source.
 * Par défaut, [Live Copy](/help/sites-administering/msm.md) met automatiquement à jour les pages de lancement à mesure que les pages source changent. Vous pouvez spécifier qu’une copie statique soit créée afin d’empêcher les modifications automatiques.
 
@@ -59,4 +58,3 @@ Vous pouvez également supprimer un lancement.
    >[!CAUTION]
    >
    >Lorsque vous supprimez des lancements imbriqués, vous devriez supprimer d’abord les niveaux inférieurs.
-
