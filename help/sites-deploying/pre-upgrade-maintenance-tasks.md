@@ -10,48 +10,47 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Mise à niveau
+exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2159'
 ht-degree: 76%
 
 ---
 
-
 # Tâches de maintenance avant la mise à niveau{#pre-upgrade-maintenance-tasks}
 
 Avant de démarrer la mise à niveau, il est important de suivre les tâches de maintenance suivantes pour vous assurer que le système est prêt et peut être restauré si des problèmes surviennent :
 
-* [Vérifiez que vous avez suffisamment d’espace disque](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
-* [Effectuez une sauvegarde complète d’AEM ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
-* [Sauvegardez les modifications sur /etc](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#backup-changes-etc)
-* [Générez le fichier quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
-* [Configurez la purge du workflow et du journal d’audit](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
-* [Installez, configurez et exécutez les tâches précédant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
-* [Désactivez les modules personnalisés de connexion](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
+* [Vérification de l’espace disque](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
+* [Sauvegarde complète d’AEM](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [Sauvegarde des modifications sur /etc](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#backup-changes-etc)
+* [Génération du fichier quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
+* [Configuration de la purge du workflow et du journal d’audit](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
+* [Installation, configuration et exécution des tâches précédant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
+* [Désactivation des modules de connexion personnalisés](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [Supprimez les mises à jour du répertoire /install](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
-* [Arrêtez toutes les instances Cold Standby](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
-* [Désactivez les tâches planifiées personnalisées](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
-* [Effectuez un nettoyage des révisions hors ligne](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
-* [Exécutez le nettoyage de la mémoire de l’entrepôt de données](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
-* [Mettre à niveau le Schéma de base de données si nécessaire](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
-* [Suppression des utilisateurs susceptibles de gêner la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
+* [Arrêt de toutes les instances Cold Standby](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
+* [Désactivation des tâches planifiées personnalisées](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
+* [Exécution d’un nettoyage des révisions hors ligne](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
+* [Exécution du nettoyage de la mémoire de l’entrepôt de données](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
+* [Mettre à niveau le schéma de base de données si nécessaire](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
+* [Suppression des utilisateurs susceptibles d’entraver la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
 
-* [Effectuez la rotation des fichiers journaux](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
+* [Rotation des fichiers journaux](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## Vérification de l’espace disque {#ensure-sufficient-disk-space}
 
 Lors de l’exécution de la mise à niveau, en plus des activités de mise à niveau de contenu et du code, une migration du référentiel doit être effectuée. La migration crée une copie du référentiel dans le nouveau format tar de segment. Par conséquent, vous devez disposer de suffisamment d’espace disque pour conserver une seconde version du référentiel, potentiellement plus grande.
 
-## Sauvegarde complète d’AEM  {#fully-back-up-aem}
+## Sauvegarde complète d’AEM {#fully-back-up-aem}
 
 AEM doit être entièrement sauvegardé avant de commencer la mise à niveau. Veillez à sauvegarder votre référentiel, l’installation de l’application, la banque de données et les instances Mongo, le cas échéant. Pour plus d’informations sur la sauvegarde et la restauration d’une instance AEM, voir [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md). 
 
 ## Sauvegarde des modifications sur /etc  {#backup-changes-etc}
 
-Le processus de mise à niveau permet de gérer et de fusionner le contenu et les configurations existants sous les chemins `/apps` et `/libs` dans le référentiel. Pour les modifications apportées au chemin `/etc`, y compris les configurations Context Hub, il est souvent nécessaire de les réappliquer après la mise à niveau. Bien que la mise à niveau effectue une copie de sauvegarde des modifications qu&#39;elle ne peut pas fusionner sous `/var`, nous vous recommandons de les sauvegarder manuellement avant de commencer la mise à niveau.
+Le processus de mise à niveau assure la maintenance et la fusion du contenu et des configurations existants sous les chemins `/apps` et `/libs` dans le référentiel. Pour les modifications apportées au chemin `/etc`, y compris les configurations ContextHub, il est souvent nécessaire de réappliquer ces modifications après la mise à niveau. Bien que la mise à niveau effectue une copie de sauvegarde de toutes les modifications qu’elle ne peut pas fusionner sous `/var`, nous vous recommandons de sauvegarder ces modifications manuellement avant de commencer la mise à niveau.
 
 ## Génération du fichier quickstart.properties {#generate-quickstart-properties}
 
@@ -91,7 +90,7 @@ Vous pouvez trouver les modules à ces emplacements :
 
 Le composant OSGi `PreUpgradeTasksMBean` est préconfiguré avec une liste de tâches de maintenance bénéficiant déjà de la mise à niveau, pouvant toutes être exécutées simultanément. Vous pouvez configurer les tâches en suivant la procédure ci-dessous :
 
-1. Accédez à la console Web en accédant à *https://serveraddress:serverport/system/console/configMgr*.
+1. Accédez à la console web en accédant à *https://serveraddress:serverport/system/console/configMgr*
 
 1. Recherchez « **preupgradetasks** », puis cliquez sur le premier composant correspondant. Le nom complet du composant est `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`.
 
@@ -166,7 +165,7 @@ La fonctionnalité bean gérée peut être accessible à l’aide de la [console
 
 Vous pouvez accéder aux MBeans en procédant comme suit : 
 
-1. Accédez à la console JMX à l’adresse *https://serveraddress:serverport/system/console/jmx*.
+1. Accédez à la console JMX à l’adresse *https://serveraddress:serverport/system/console/jmx*
 1. Recherchez **PreUpgradeTasks** et cliquez sur le résultat
 
 1. Sélectionnez une méthode à partir de la section **Opérations** et sélectionnez **Invoquer** dans la fenêtre suivante.
@@ -203,7 +202,7 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>Vérifie si la tâche <code>runAllPreUpgradeTasksmaintenance</code> est en cours d'exécution.</td>
+   <td>Vérifie si la tâche <code>runAllPreUpgradeTasksmaintenance</code> est en cours d’exécution.</td>
   </tr>
   <tr>
    <td><code>getAnyPreUpgradeTaskRunning()</code></td>
@@ -223,7 +222,7 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
    <td>ACTION </td>
-   <td><p>exécute toutes les vérifications d'intégrité préalables à la mise à niveau et enregistre leur état dans un fichier nommé <code>preUpgradeHCStatus.properties</code> qui se trouve dans le chemin d'accès d'accueil sling. Si le paramètre <code>shutDownOnSuccess</code> est défini sur <code>true</code>, l'instance AEM sera fermée, mais uniquement si toutes les vérifications d'intégrité préalables à la mise à niveau ont l'état OK.</p> <p>Le fichier des propriétés est utilisé comme prérequis pour une future mise à niveau<br /> et le processus de mise à niveau est interrompu si l’exécution de la vérification de l’intégrité avant la mise à niveau<br /> échoue. Si vous souhaitez ignorer le résultat des vérifications d’intégrité<br /> avant la mise à niveau et lancer la mise à niveau, vous pouvez supprimer le fichier.</p> </td>
+   <td><p>Exécute toutes les vérifications d’intégrité préalables à la mise à niveau et enregistre leur état dans un fichier nommé <code>preUpgradeHCStatus.properties</code> situé dans le chemin d’accès sling de l’accueil. Si le paramètre <code>shutDownOnSuccess</code> est défini sur <code>true</code>, l’instance d’AEM sera arrêtée, mais seulement si toutes les vérifications d’intégrité préalables à la mise à niveau ont l’état OK.</p> <p>Le fichier des propriétés est utilisé comme prérequis pour une future mise à niveau<br /> et le processus de mise à niveau est interrompu si l’exécution de la vérification de l’intégrité avant la mise à niveau<br /> échoue. Si vous souhaitez ignorer le résultat des vérifications d’intégrité<br /> avant la mise à niveau et lancer la mise à niveau, vous pouvez supprimer le fichier.</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
@@ -251,9 +250,9 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
 >
 >Cette étape est nécessaire uniquement si vous effectuez une mise à niveau à partir d’une version d’AEM 5. Elle peut être entièrement ignorée pour les mises à niveau des versions ultérieures à AEM 6.
 
-La façon dont les `LoginModules` personnalisés sont configurés pour l&#39;authentification au niveau du référentiel a fondamentalement changé dans Apache Oak.
+La façon dont les `LoginModules` personnalisées sont configurées pour l’authentification au niveau du référentiel a fondamentalement changé dans Apache Oak.
 
-Dans AEM versions qui utilisaient la configuration CRX2, il a été placé dans le fichier `repository.xml`, tandis qu&#39;à partir de AEM 6, il est effectué dans le service Apache Felix JAAS Configuration Factory via la console Web.
+Dans AEM versions qui utilisaient CRX2, la configuration était placée dans le fichier `repository.xml`, tandis qu’à partir d’AEM 6, elle est effectuée dans le service Apache Felix JAAS Configuration Factory via la console web.
 
 En conséquence, toute configuration existante doit être désactivée et recréée pour Apache Oak après la mise à niveau.
 
@@ -314,35 +313,35 @@ Si vous utilisez TarMK, vous devez effectuer le nettoyage des révisions hors li
 
 Après l’exécution du nettoyage des révisions sur les instances CRX3, vous devez procéder au nettoyage de la mémoire de l’entrepôt de données pour supprimer les tâches non référencées dans l’entrepôt de données. Pour obtenir des instructions, consultez la documentation sur le [nettoyage de la mémoire de l’entrepôt de données](/help/sites-administering/data-store-garbage-collection.md). 
 
-## Mettre à niveau le Schéma de base de données si nécessaire {#upgrade-the-database-schema-if-needed}
+## Mettre à niveau le schéma de base de données si nécessaire {#upgrade-the-database-schema-if-needed}
 
-Habituellement, la pile Apache Oak sous-jacente utilisée AEM pour la persistance prend en charge la mise à niveau du schéma de base de données si nécessaire.
+En règle générale, l’AEM de la pile Apache Oak sous-jacente utilisée pour la persistance s’occupe de la mise à niveau du schéma de base de données si nécessaire.
 
-Cependant, il peut arriver que le schéma ne puisse pas être mis à niveau automatiquement. Il s&#39;agit principalement d&#39;environnements de sécurité élevée où la base de données s&#39;exécute sous un utilisateur avec des privilèges très limités. Si cela se produit, AEM continuera à utiliser l&#39;ancien schéma.
+Cependant, il peut arriver que le schéma ne puisse pas être mis à niveau automatiquement. Il s’agit principalement d’environnements de sécurité élevée dans lesquels la base de données s’exécute sous un utilisateur avec des privilèges très limités. Si cela se produit, AEM continuera à utiliser l’ancien schéma.
 
 Pour éviter cela, vous devez mettre à niveau le schéma en suivant la procédure ci-dessous :
 
 1. Arrêtez l’instance AEM qui doit être mise à niveau.
-1. Mettez à niveau le schéma de base de données. Veuillez consulter la documentation relative au type de base de données afin de connaître les outils dont vous avez besoin pour ce faire.
+1. Mettez à niveau le schéma de la base de données. Consultez la documentation relative à votre type de base de données afin de connaître les outils à utiliser pour y parvenir.
 
-   Pour plus d’informations sur la façon dont Oak gère les mises à niveau de schéma, voir [cette page sur le site Web d’Apache](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
+   Pour plus d’informations sur la façon dont Oak gère les mises à niveau des schémas, voir [cette page sur le site web Apache](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
 1. Passez à l’AEM de mise à niveau.
 
-## Supprimer les utilisateurs susceptibles de gêner la mise à niveau {#delete-users-that-might-hinder-the-upgrade}
+## Suppression des utilisateurs susceptibles de bloquer la mise à niveau {#delete-users-that-might-hinder-the-upgrade}
 
 >[!NOTE]
 >
->Cette tâche de maintenance antérieure à la mise à niveau n&#39;est nécessaire que si :
+>Cette tâche de maintenance avant la mise à niveau n&#39;est nécessaire que si :
 >
->* Vous effectuez une mise à niveau depuis AEM versions antérieures à AEM 6.3
+>* Vous effectuez une mise à niveau à partir AEM versions antérieures à AEM 6.3.
 >* Vous rencontrez les erreurs mentionnées ci-dessous lors de la mise à niveau.
 
 >
 
 
 
-Dans certains cas exceptionnels, les utilisateurs du service risquent de se retrouver dans des versions AEM plus anciennes mal balisées en tant qu’utilisateurs réguliers.
+Il existe des cas exceptionnels où les utilisateurs du service peuvent se retrouver dans des versions AEM plus anciennes mal balisées en tant qu’utilisateurs standard.
 
 Si cela se produit, la mise à niveau échoue avec un message comme celui-ci :
 
@@ -351,11 +350,11 @@ ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl
 java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.
 ```
 
-Pour résoudre ce problème, veillez à effectuer les opérations suivantes :
+Pour contourner ce problème, procédez comme suit :
 
-1. Détacher l’instance du trafic de production
-1. Créez une sauvegarde du ou des utilisateurs à l’origine du problème. Vous pouvez le faire via Package Manager. Pour plus d’informations, voir [Comment utiliser des packages.](/help/sites-administering/package-manager.md)
-1. Supprimez le ou les utilisateurs à l’origine du problème. Vous trouverez ci-dessous une liste d’utilisateurs susceptibles de tomber sous cette catégorie :
+1. Désolidariser l’instance du trafic de production
+1. Créez une sauvegarde du ou des utilisateurs à l’origine du problème. Vous pouvez le faire via le gestionnaire de modules. Pour plus d’informations, voir [Utilisation de modules.](/help/sites-administering/package-manager.md)
+1. Supprimez le ou les utilisateurs à l’origine du problème. Vous trouverez ci-dessous une liste d’utilisateurs qui peuvent appartenir à cette catégorie :
 
    1. `dynamic-media-replication`
    1. `communities-ugc-writer`
