@@ -10,14 +10,13 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cb141914428f42a9755b5479ab1652c8ca51f640
+exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2155'
 ht-degree: 93%
 
 ---
-
 
 # Développement dans CRXDE Lite{#developing-with-crxde-lite}
 
@@ -25,12 +24,12 @@ Cette section explique comment développer votre application AEM à l’aide de 
 
 Reportez-vous à la documentation de présentation pour plus d’informations sur les différents environnements de développement disponibles.
 
-CRXDE Lite est intégré à CRX/CQ et permet d’effectuer des tâches de développement standard dans le navigateur. Avec CRXDE Lite, vous pouvez créer un projet, créer et modifier des fichiers (tels que .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des noeuds, des propriétés et des lots lors de la journalisation.
+CRXDE Lite est intégré à CRX/CQ et permet d’effectuer des tâches de développement standard dans le navigateur. CRXDE Lite vous permet de créer un projet, de créer et de modifier des fichiers (tels que .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des noeuds, des propriétés et des lots lors de la journalisation.
 CRXDE Lite est recommandé si vous ne disposez pas d’un accès direct au serveur AEM, lorsque vous développez une application en étendant ou modifiant les composants prêts à l’emploi et les bundles Java ou lorsque vous n’avez pas besoin d’un débogueur dédié, de la complétion de code et de la mise en surbrillance de la syntaxe.
 
 >[!NOTE]
 >
->A partir de AEM 6.5.5.0, l&#39;accès anonyme du CRXDE Lite n&#39;est plus possible.
+>À partir de la version 6.5.5.0 d’AEM, l’accès anonyme de CRXDE Lite n’est plus possible.
 >Les utilisateurs sont redirigés vers l’écran de connexion.
 
 
@@ -43,7 +42,7 @@ CRXDE Lite est recommandé si vous ne disposez pas d’un accès direct au serve
 Pour commencer avec CRXDE Lite, procédez comme suit :
 
 1. Installez AEM.
-1. Dans votre navigateur, saisissez `https://<host>:<port>/crx/de`. Par défaut, il est `https://localhost:4502/crx/de`.
+1. Dans votre navigateur, saisissez `https://<host>:<port>/crx/de`. Par défaut, le paramètre est `https://localhost:4502/crx/de`.
 1. Entrez votre **nom d’utilisateur** et votre **mot de passe**. Par défaut, il est `admin` et `admin`.
 
 1. Cliquez sur **OK**.
@@ -106,7 +105,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Créer ...<br /> </td>
-   <td><p>Menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :<br /> </p> <p>- <strong>Nœud</strong> : nœud avec un type de nœud arbitraire<br /> </p> <p>- <strong>Fichier</strong> : nt:file node et son sous-noeud nt:resource</p> <p>- <strong>Dossier</strong> : nœud nt:folder</p> <p>- <strong>Modèle</strong> : modèle AEM</p> <p>- <strong>Composant</strong> : composant AEM</p> <p>- <strong>Boîte de dialogue</strong> : boîte de dialogue AEM</p> </td>
+   <td><p>Menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :<br /> </p> <p>- <strong>Nœud</strong> : nœud avec un type de nœud arbitraire<br /> </p> <p>- <strong>Fichier</strong> : noeud nt:file et son sous-noeud nt:resource</p> <p>- <strong>Dossier</strong> : nœud nt:folder</p> <p>- <strong>Modèle</strong> : modèle AEM</p> <p>- <strong>Composant</strong> : composant AEM</p> <p>- <strong>Boîte de dialogue</strong> : boîte de dialogue AEM</p> </td>
   </tr>
   <tr>
    <td>Supprimer<br /> </td>
@@ -161,11 +160,11 @@ Pour créer un modèle avec CRXDE Lite :
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier dans lequel vous souhaitez créer le modèle, sélectionnez **Créer ...**, puis **Créer un modèle ...**.
 
-1. Définissez les champs **Libellé**, **Titre**, **Description**, **Type de ressource** et **Classement** du modèle. Cliquez sur **Next** (Suivant).
+1. Définissez les champs **Libellé**, **Titre**, **Description**, **Type de ressource** et **Classement** du modèle. Cliquez sur **Suivant**.
 
 1. Cette étape est facultative : définissez **Chemins autorisés**. Cliquez sur **Suivant**
 
-1. Cette étape est facultative : définissez **Parents autorisés**. Cliquez sur **Next** (Suivant).
+1. Cette étape est facultative : Définissez la **Parents autorisés**. Cliquez sur **Suivant**.
 
 1. Cette étape est facultative : définissez **Enfants autorisés**. Cliquez sur **OK**.
 
@@ -188,11 +187,11 @@ Pour créer un composant avec CRXDE Lite :
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier dans lequel vous souhaitez créer le composant, sélectionnez **Créer ...**, puis **Créer un composant ...**.
 
-1. Définissez les champs **Libellé**, **Titre**, **Description**, **Super type ressource** et **Groupe** du modèle. Cliquez sur **Next** (Suivant).
+1. Définissez les champs **Libellé**, **Titre**, **Description**, **Super type ressource** et **Groupe** du modèle. Cliquez sur **Suivant**.
 
-1. Cette étape est facultative : définissez les propriétés du composant **Est conteneur**, **Pas de décoration**, **Nom de cellule** et **Chemin de la boîte de dialogue**. Cliquez sur **Next** (Suivant).
+1. Cette étape est facultative : définissez les propriétés du composant **Est conteneur**, **Pas de décoration**, **Nom de cellule** et **Chemin de la boîte de dialogue**. Cliquez sur **Suivant**.
 
-1. Cette étape est facultative : définissez la propriété de composant **Parents autorisés**. Cliquez sur **Next** (Suivant).
+1. Cette étape est facultative : définissez la propriété de composant **Parents autorisés**. Cliquez sur **Suivant**.
 
 1. Cette étape est facultative : définissez la propriété de composant **Enfant autorisé**. Cliquez sur **OK**.
 
@@ -265,7 +264,7 @@ Pour créer un script :
 
 ## Exportation et importation de types de nœuds {#exporting-and-importing-node-types}
 
-Avec CRXDE Lite, vous pouvez importer et/ou exporter des définitions de type de noeud dans la notation [CND (Compact Espace de nommage and Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Avec CRXDE Lite, vous pouvez importer et/ou exporter des définitions de type de noeud dans la notation [CND (espace de noms compacte et définition de type de noeud)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Pour exporter une définition de type de nœud :
 
