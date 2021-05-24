@@ -10,14 +10,13 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
-translation-type: tm+mt
-source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 82%
 
 ---
-
 
 # Éléments de stockage dans AEM 6.5{#storage-elements-in-aem}
 
@@ -38,7 +37,7 @@ Actuellement, il existe deux implémentations de stockage de nœud disponibles d
 
 >[!CAUTION]
 >
->Le PID de la banque de noeuds de segments a été modifié par org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes de AEM 6 à org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Assurez-vous d’effectuer les ajustements de configuration nécessaires pour refléter cette modification.
+>Le PID de la boutique de noeuds de segment a été remplacé par org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes d’AEM 6 à org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Veillez à effectuer les ajustements de configuration nécessaires pour refléter cette modification.
 
 Par défaut, AEM 6 utilise le stockage tar pour stocker les nœuds et les fichiers binaires à l’aide des options de configuration par défaut. Pour configuer manuellement les paramètres de stockage, suivez la procédure ci-dessous :
 
@@ -73,7 +72,7 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
 1. Créez un dossier nommé `crx-quickstart\install` dans le répertoire d’installation.
 1. Configurez le stock de nœud en créant un fichier de configuration avec le nom de la configuration que vous souhaitez utiliser dans le répertoire `crx-quickstart\install`.
 
-   Le magasin de noeuds de Document (qui est la base de l’implémentation de l’enregistrement MongoDB AEM) utilise un fichier appelé `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   Le magasin de noeuds de document (qui est la base de l’implémentation du stockage d’AEM MongoDB) utilise un fichier appelé `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Modifiez le fichier, puis définissez les options de configuration. Les options suivantes sont disponibles :
 
@@ -91,7 +90,7 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Où **`-r`** est le mode d&#39;exécution principal. Dans cet exemple, il commence par la prise en charge MongoDB. 
+   Où **`-r`** est le mode d’exécution principal. Dans cet exemple, il commence par la prise en charge MongoDB. 
 
 #### Désactiver les pages THP  {#disabling-transparent-huge-pages}
 
@@ -120,8 +119,8 @@ Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transpar
 >
 >De plus, vous pouvez également consulter les ressources suivantes :
 >
->* Pour plus d&#39;informations sur les pages massives transparentes sur Red Hat Linux, consultez cet [article](https://access.redhat.com/solutions/46111).
->* Pour obtenir des conseils sur le réglage Linux, reportez-vous à cet [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
+>* Pour plus d’informations sur Transparent Huge Pages sous Red Hat Linux, consultez cet [article](https://access.redhat.com/solutions/46111).
+>* Pour obtenir des conseils sur le réglage de Linux, consultez cet [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 
 >
 
