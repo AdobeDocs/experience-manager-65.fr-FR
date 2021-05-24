@@ -10,14 +10,13 @@ topic-tags: platform
 content-type: reference
 discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 94%
 
 ---
-
 
 # Introduction à la plateforme AEM{#introduction-to-the-aem-platform}
 
@@ -69,7 +68,7 @@ En outre, les implémentations non Java sont désormais possibles et font partie
 
 Le niveau de stockage Oak fournit un niveau d’abstraction pour le stockage de contenu.
 
-Actuellement, il existe deux implémentations d’enregistrement disponibles dans AEM6 : **Enregistrement Tar** et **Enregistrement MongoDB**.
+Actuellement, il existe deux implémentations de stockage disponibles dans AEM6 : **Stockage tar** et **Stockage MongoDB**.
 
 ### Stockage tar {#tar-storage}
 
@@ -135,6 +134,5 @@ Pour plus d’informations sur la plateforme AEM, vérifiez également les artic
 
 * [Configuration des stocks de nœuds et des entrepôts de données dans AEM 6](/help/sites-deploying/data-store-config.md)
 * [Requêtes et indexation Oak](/help/sites-deploying/queries-and-indexing.md)
-* [Éléments de stockage dans AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md) 
+* [Éléments de stockage dans AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM avec MongoDB](/help/sites-deploying/aem-with-mongodb.md)
-
