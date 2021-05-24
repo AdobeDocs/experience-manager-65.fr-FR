@@ -10,16 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 94%
 
 ---
 
-
-# Modification du contenu de la page{#editing-page-content}
+# Modification du contenu de la page {#editing-page-content}
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
 
@@ -107,9 +106,9 @@ Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/
 
 La notification indique le workflow exécuté sur la page. Si l’utilisateur prend part à l’étape actuelle du workflow, des options [affectant l’état du workflow](/help/sites-authoring/workflows-participating.md) et permettant d’obtenir plus d’informations sur le workflow sont également disponibles, à savoir :
 
-* **Terminé**  - Ouvre la boîte de dialogue  **Terminer** la tâche
+* **Terminé**  : ouvre la boîte de dialogue  **Terminer** le processus
 
-* **Délégué**  : ouvre la boîte de dialogue  **Terminer la** tâche
+* **Déléguer**  : ouvre la boîte de dialogue  **Terminer** le processus
 
 * **Afficher les détails** : ouvre la fenêtre **Détails** du workflow
 
@@ -184,7 +183,7 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
   </tr>
   <tr>
    <td>Document</td>
-   <td>Téléchargement</td>
+   <td>Télécharger</td>
   </tr>
   <tr>
    <td>Produit</td>
@@ -312,7 +311,7 @@ Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les comp
 * Ouvrez la [boîte de dialogue de composant pour l’édition](#component-edit-dialog).
 * [Faites glisser et déposez un élément](#draganddropintocomponent) depuis l’explorateur de ressources pour ajouter directement du contenu.
 
-### Boîte de dialogue d’édition de composant  {#component-edit-dialog}
+### Boîte de dialogue de modification du composant  {#component-edit-dialog}
 
 Vous pouvez ouvrir un composant pour modifier le contenu à l’aide de l’[icône Modifier (crayon) de la barre d’outils Composant](#edit-configure-copy-cut-delete-paste).
 
@@ -350,7 +349,7 @@ Pour certains types de composants, vous pouvez faire glisser et déposer des él
 | **Type de ressource** | **Type de composant** |
 |---|---|
 | Image | Image |
-| Document | Téléchargement |
+| Document | Télécharger |
 | Produit | Produit |
 | Vidéo | Flash |
 | Fragment de contenu | Fragment de contenu |
@@ -412,7 +411,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
 >[!NOTE]
 >
->L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils de modification standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné et les poignées de redimensionnement ainsi que la barre d’outils d’émulateur disparaissent.
+>L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné, les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
 >
 >Si vous devez modifier la mise en page globale de la page et affecter ainsi plusieurs composants, basculez vers le [mode de mise en page](/help/sites-authoring/responsive-layout.md).
 
@@ -454,7 +453,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 Si la page est basée sur un [modèle modifiable](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez facilement basculer vers l’[éditeur de modèles](/help/sites-authoring/templates.md#editing-templates-template-authors) en sélectionnant **Éditer le modèle** dans le menu [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information).
 
-Si la page est basée sur un [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez passer en [mode de conception](/help/sites-authoring/default-components-designmode.md) à l&#39;aide du sélecteur de mode de page [](/help/sites-authoring/author-environment-tools.md#page-modes) de la barre d&#39;outils pour activer/désactiver les composants à utiliser sur la page.
+Si la page est basée sur un [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez passer en [mode de conception](/help/sites-authoring/default-components-designmode.md) à l’aide du [sélecteur de mode de page](/help/sites-authoring/author-environment-tools.md#page-modes) de la barre d’outils pour activer/désactiver les composants à utiliser sur la page.
 
 Vous pouvez déterminer facilement le modèle sur lequel la page est basée en sélectionnant cette dernière en mode [Colonnes](/help/sites-authoring/basic-handling.md#column-view) ou [Liste](/help/sites-authoring/basic-handling.md#list-view).
 
@@ -561,9 +560,9 @@ Les icônes suivantes permettent d’annuler ou de rétablir une opération. Cel
 
 >[!NOTE]
 >
->Le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` permet également d’annuler les actions de modification de page.
+>Le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` est également disponible pour annuler les actions d’édition de la page.
 >
->Le raccourci clavier `Ctrl-Y` permet également de rétablir les actions de modification de page.
+>Le raccourci clavier `Ctrl-Y` est également disponible pour rétablir les actions d’édition de la page.
 
 >[!NOTE]
 >
@@ -608,4 +607,3 @@ Aucune valeur n’est censée être spécifiée pour les champs de formulaire do
 >[!NOTE]
 >
 >L’historique des modifications apportées aux fichiers et aux images a une durée de vie minimale de dix heures. Au-delà de cette limite, l’annulation des modifications n’est plus garantie. Votre administrateur peut modifier la durée par défaut de dix heures.
-
