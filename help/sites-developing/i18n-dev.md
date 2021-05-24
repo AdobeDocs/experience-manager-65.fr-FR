@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
-translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 87%
 
 ---
-
 
 # Internationalisation des chaînes d’interface utilisateur {#internationalizing-ui-strings}
 
@@ -31,7 +30,7 @@ Pour obtenir un aperçu du processus d’internationalisation et de localisation
 
 ## Internationalisation de chaînes dans le code Java et JSP  {#internationalizing-strings-in-java-and-jsp-code}
 
-Le package Java `com.day.cq.i18n` vous permet d&#39;afficher des chaînes localisées dans votre interface utilisateur. La classe `I18n` fournit la méthode `get` qui récupère les chaînes localisées du dictionnaire d&#39;AEM. Le seul paramètre requis de la méthode `get` est le littéral de chaîne en langue anglaise. L’anglais est la langue par défaut de l’interface utilisateur. L’exemple suivant localise le mot `Search` :
+Le package Java `com.day.cq.i18n` vous permet d’afficher des chaînes localisées dans votre interface utilisateur. La classe `I18n` fournit la méthode `get` qui récupère les chaînes localisées du dictionnaire AEM. Le seul paramètre requis de la méthode `get` est le littéral de chaîne en langue anglaise. L’anglais est la langue par défaut de l’interface utilisateur. L’exemple suivant localise le mot `Search` :
 
 `i18n.get("Search");`
 
@@ -71,7 +70,7 @@ I18n i18n = new I18n(resourceBundle);
 
 #### Internationalisation d’une chaîne  {#internationalizing-a-string}
 
-Utilisez la méthode `get` de l&#39;objet `I18n` pour internationaliser une chaîne. Le seul paramètre requis de la méthode `get` est la chaîne à internationaliser. La chaîne correspond à une chaîne d’un dictionnaire de traduction. La méthode get recherche la chaîne dans le dictionnaire et renvoie la traduction pour la langue en cours.
+Utilisez la méthode `get` de l’objet `I18n` pour internationaliser une chaîne. Le seul paramètre requis de la méthode `get` est la chaîne à internationaliser. La chaîne correspond à une chaîne d’un dictionnaire de traduction. La méthode get recherche la chaîne dans le dictionnaire et renvoie la traduction pour la langue en cours.
 
 Le premier argument de la méthode `get` doit respecter les règles suivantes :
 
@@ -85,7 +84,7 @@ i18n.get("Enter a search keyword");
 
 #### Utilisation d’indices de traduction  {#using-translation-hints}
 
-Spécifiez l’[indice de traduction](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) de la chaîne internationalisée afin de faire la distinction entre les chaînes en double dans le dictionnaire. Utilisez le second paramètre facultatif de la méthode `get` pour fournir l&#39;indicateur de traduction. L’indice de traduction doit correspondre exactement à la propriété Comment de l’élément dans le dictionnaire.
+Spécifiez l’[indice de traduction](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) de la chaîne internationalisée afin de faire la distinction entre les chaînes en double dans le dictionnaire. Utilisez le deuxième paramètre facultatif de la méthode `get` pour fournir l’indice de traduction. L’indice de traduction doit correspondre exactement à la propriété Comment de l’élément dans le dictionnaire.
 
 Par exemple, le dictionnaire contient deux occurrences de la chaîne `Request` : l’une sous la forme d’un verbe et l’autre sous la forme d’un substantif. Le code suivant inclut l’indice de traduction en tant qu’argument dans la méthode `get` :
 
@@ -97,7 +96,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 Insérez des variables dans la chaîne localisée pour renforcer la signification contextuelle dans une phrase. Par exemple, après vous être connecté à une application web, la page d’accueil affiche le message « Bienvenue à l’administrateur. Vous avez 2 messages dans votre boîte de réception. » Le contexte de page détermine le nom d’utilisateur et le nombre de messages.
 
-[Dans le dictionnaire](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), les variables sont représentées dans des chaînes sous la forme d’index entre crochets. Spécifiez les valeurs des variables en tant qu&#39;arguments de la méthode `get`. Les arguments sont placés après l’indice de traduction et les index correspondent à l’ordre des arguments :
+[Dans le dictionnaire](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), les variables sont représentées dans des chaînes sous la forme d’index entre crochets. Spécifiez les valeurs des variables comme arguments de la méthode `get`. Les arguments sont placés après l’indice de traduction et les index correspondent à l’ordre des arguments :
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
@@ -118,9 +117,9 @@ La classe `I18N`définit une méthode `get` statique qui s’avère utile lorsqu
 
 ### Internationalisation des chaînes dans le code JavaScript {#internationalizing-strings-in-javascript-code}
 
-L’API JavaScript vous permet de localiser des chaînes sur le client. Comme pour le code [Java et JSP](#internationalizing-strings-in-java-and-jsp-code), l’API JavaScript vous permet d’identifier les chaînes à localiser, de fournir des conseils de localisation et d’inclure des variables dans les chaînes localisées.
+L’API JavaScript vous permet de localiser des chaînes sur le client. Comme pour le code [Java et JSP](#internationalizing-strings-in-java-and-jsp-code), l’API JavaScript vous permet d’identifier les chaînes à localiser, de fournir des indices de localisation et d’inclure des variables dans les chaînes localisées.
 
-Le dossier de bibliothèques clientes`granite.utils` [](/help/sites-developing/clientlibs.md) fournit l’API JavaScript. Pour utiliser l’API, vous devez inclure ce dossier sur votre page. Les fonctions de localisation utilisent l&#39;espace de nommage `Granite.I18n`.
+Le dossier de bibliothèques clientes`granite.utils` [](/help/sites-developing/clientlibs.md) fournit l’API JavaScript. Pour utiliser l’API, vous devez inclure ce dossier sur votre page. Les fonctions de localisation utilisent l’espace de noms `Granite.I18n`.
 
 Avant de présenter des chaînes localisées, vous devez définir le paramètre régional à l’aide de la fonction `Granite.I18n.setLocale`. Pour cette fonction, le code de langue du paramètre régional doit être défini comme argument :
 
@@ -190,4 +189,3 @@ Le chemin d’accès du nœud preferences d’un utilisateur se présente comme 
 `/home/users/<letter>/<hash>/preferences`
 
 ![chlimage_1-1](assets/chlimage_1-1a.jpeg)
-
