@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 93%
 
 ---
-
 
 # Recommandations d’interfaces utilisateur aux clients{#user-interface-recommendations-for-customers}
 
@@ -72,7 +71,7 @@ Voici une liste de recommandations de la gestion du produit pour Adobe Experien
      <li>Configurez l’action « Modifier la page » pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Choix de l’interface utilisateur</a>.</li>
     </ol> <p>Ensuite, lors d’une seconde phase :</p>
     <ol>
-     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. L'Adobe recommande d'utiliser les <a href="/help/sites-developing/modernization-tools.md">outils de modernisation de l'AEM</a> pour mettre à jour les composants.</li>
+     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser les <a href="/help/sites-developing/modernization-tools.md">outils de modernisation d’AEM</a> pour mettre à jour les composants.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -84,7 +83,7 @@ Voici une liste de recommandations de la gestion du produit pour Adobe Experien
      <li>Configurez l’action « Modifier la page » pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Choix de l’interface utilisateur</a>.</li>
     </ol> <p>Ensuite, lors d’une seconde phase :</p>
     <ol>
-     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. L'Adobe recommande d'utiliser les <a href="/help/sites-developing/modernization-tools.md">outils de modernisation de l'AEM</a> pour mettre à jour les composants.</li>
+     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser les <a href="/help/sites-developing/modernization-tools.md">outils de modernisation d’AEM</a> pour mettre à jour les composants.</li>
      <li>Configurez ContextHub (le remplacement de ClientContext) et mettez à jour les modèles de pages pour utiliser ContextHub. Notez que le ContextHub a un mode de compatibilité qui permet de transférer les entrepôts ClientContext personnalisés.</li>
     </ol> </td>
   </tr>
@@ -118,7 +117,7 @@ Pour plus d’informations sur la gestion de base :
 Pour des informations détaillées de développement :
 
 * [Architecture de l’interface utilisateur optimisée pour les écrans tactiles](/help/sites-developing/touch-ui-concepts.md).
-* Utilisez les [outils de modernisation de l&#39;AEM](/help/sites-developing/modernization-tools.md) pour convertir les boîtes de dialogue Modifier du composant de l&#39;interface utilisateur classique en interface utilisateur tactile.
+* Utilisez les [outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) pour convertir les boîtes de dialogue de modification des composants de l’interface utilisateur classique vers l’interface utilisateur tactile.
 
 * [Structure de l’interface utilisateur optimisée pour les écrans tactiles](/help/sites-developing/touch-ui-structure.md).
 
@@ -128,4 +127,3 @@ Pour des informations détaillées de développement :
 
 * [Session AEM Gem sur la personnalisation de l’interface utilisateur optimisée pour les écrans tactiles](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Documentation sur l’interface utilisateur Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
-
