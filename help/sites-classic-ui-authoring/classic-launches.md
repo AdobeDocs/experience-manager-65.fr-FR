@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 74%
 
 ---
-
 
 # Lancements{#launches}
 
@@ -26,12 +25,12 @@ Le lancement vous permet de préparer des modifications en vue d’une publicati
 
 >[!NOTE]
 >
->La théorie des lancements est décrite en détail sous [Launches](/help/sites-authoring/launches.md) dans la documentation de création standard.
+>La théorie des lancements est décrite en détail sous [Lancements](/help/sites-authoring/launches.md) dans la documentation de création standard.
 >
->Vous trouverez des informations spécifiques à l’utilisation des lancements dans l’interface utilisateur classique dans la documentation suivante, ainsi que [Création de lancements](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Modification des lancements](/help/sites-classic-ui-authoring/classic-launches-editing.md) et [Promotion de lancements](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>Vous trouverez des informations spécifiques à l’utilisation des lancements dans l’interface utilisateur classique dans la documentation suivante, ainsi que [Création de lancements](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Modification de lancements](/help/sites-classic-ui-authoring/classic-launches-editing.md) et [Conversion de lancements](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Dans l’interface utilisateur classique, il n’est pas possible d’utiliser plusieurs branches sources pour un lancement.
 
-Vous pouvez accéder directement à la console Lancements à l’aide de [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html).
+La console Lancements est accessible directement avec [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
