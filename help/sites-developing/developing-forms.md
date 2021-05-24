@@ -10,14 +10,13 @@ topic-tags: components
 content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+exl-id: f43e9491-aa8f-40af-9800-123695142559
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 80%
 
 ---
-
 
 # Développement de formulaires (IU classique){#developing-forms-classic-ui}
 
@@ -69,10 +68,10 @@ Une liste déroulante peut être configurée avec votre plage de valeurs en vue 
 
 Le **Chemin de chargement des éléments** peut être utilisé pour accéder à une liste à partir d’un dossier du référentiel et précharger les valeurs dans le champ :
 
-1. Créer un dossier sling ( `sling:Folder`)
+1. Créez un dossier sling ( `sling:Folder`)
 par exemple, `/etc/designs/<myDesign>/formlistvalues`
 
-1. Ajoutez une nouvelle propriété (par exemple, `myList`) de type chaîne à plusieurs valeurs ( `String[]`) pour contenir la liste des éléments déroulants. Le contenu peut être également importé à l’aide d’un script (script JSP ou curl dans un script shell).
+1. Ajoutez une nouvelle propriété (par exemple, `myList`) de type chaîne à plusieurs valeurs ( `String[]`) pour contenir la liste des éléments du menu déroulant. Le contenu peut être également importé à l’aide d’un script (script JSP ou curl dans un script shell).
 
 1. Utilisez le chemin complet dans le champ **Chemin de chargement des éléments** :
 par exemple, `/etc/designs/geometrixx/formlistvalues/myList`
@@ -116,13 +115,13 @@ Vous pouvez ajouter votre propre action sous `/apps` comme suit :
 
    * `sling:resourceType` - défini comme  `foundation/components/form/action`
 
-   * `componentGroup` - définir comme  `.hidden`
+   * `componentGroup` - Définissez comme  `.hidden`
 
    * Si vous le souhaitez :
 
       * `jcr:title` : indiquez un titre de votre choix ; il sera affiché dans la liste de sélection déroulante. S’il n’est pas défini, c’est le nom du nœud qui est affiché.
 
-      * `jcr:description` - entrez une description de votre choix
+      * `jcr:description` - saisissez une description de votre choix.
 
 1. Dans le dossier, créez un nœud de boîte de dialogue :
 
@@ -131,16 +130,16 @@ Vous pouvez ajouter votre propre action sous `/apps` comme suit :
 1. Dans le dossier, vous pouvez effectuer l’une des opérations suivantes :
 
    1. Créer un script de publication.
-Le nom du script est `post.POST.<extension>`, par ex. `post.POST.jsp`
-Le script post est appelé lorsqu’un formulaire est envoyé pour traiter le formulaire. Il contient le code qui traite les données provenant du formulaire. 
+Le nom du script est `post.POST.<extension>`, par exemple : `post.POST.jsp`
+Le script post est appelé lorsqu’un formulaire est envoyé pour traiter le formulaire. Il contient le code qui gère les données provenant du formulaire. 
 `POST`.
 
    1. Ajouter un script de transfert qui est appelé lors de l’envoi du formulaire.
-Le nom du script est &lt;a0/&quot;, par ex. `forward.jsp`
-Ce script peut définir un chemin. `forward.<extension` La requête actuelle est ensuite transmise au chemin d’accès spécifié.
-   L&#39;appel nécessaire est `FormsHelper#setForwardPath` (2 variantes). Un cas de figure classique consiste à effectuer une validation, ou logique, pour trouver le chemin cible, puis à effectuer un transfert vers ce chemin, laissant au servlet POST Sling par défaut le soin de procéder au stockage proprement dit dans JCR.
+Le nom du script est `forward.<extension`, par exemple : `forward.jsp`
+Ce script peut définir un chemin d’accès. La requête actuelle est ensuite transmise au chemin d’accès spécifié.
+   L’appel nécessaire est `FormsHelper#setForwardPath` (2 variantes). Un cas de figure classique consiste à effectuer une validation, ou logique, pour trouver le chemin cible, puis à effectuer un transfert vers ce chemin, laissant au servlet POST Sling par défaut le soin de procéder au stockage proprement dit dans JCR.
 
-   Un autre servlet peut également procéder au traitement. Dans ce cas, l’action de formulaire et le fichier `forward.jsp` font simplement office de code de collage. Par exemple, l&#39;action de courrier à `/libs/foundation/components/form/actions/mail`, qui transfère les détails à `<currentpath>.mail.html`où se trouve une servlet de courrier.
+   Un autre servlet peut également procéder au traitement. Dans ce cas, l’action de formulaire et le fichier `forward.jsp` font simplement office de code de collage. Par exemple, l’action de courrier à l’adresse `/libs/foundation/components/form/actions/mail`, qui transfère les détails à `<currentpath>.mail.html`où se trouve une servlet de courrier.
 
    De ce fait :
 
@@ -172,16 +171,16 @@ Ce script peut définir un chemin. `forward.<extension` La requête actuelle est
 1. De nouveau dans le dossier, vous pouvez éventuellement ajouter l’un des éléments suivants :
 
    1. Un script pour ajouter des champs.
-Le nom du script est `addfields.<extension>`, par ex. `addfields.jsp`
-Un script addfields est appelé immédiatement après l’écriture du code HTML pour le début de formulaire. Cela permet à l’action d’ajouter les champs de saisie personnalisés ou tout autre code HTML à l’intérieur du formulaire.
+Le nom du script est `addfields.<extension>`, par exemple : `addfields.jsp`
+Un script addfields est appelé immédiatement après l’écriture du code HTML du début du formulaire. Cela permet à l’action d’ajouter les champs de saisie personnalisés ou tout autre code HTML à l’intérieur du formulaire.
 
    1. Un script d’initialisation.
-Le nom du script est `init.<extension>`, par ex. `init.jsp`
+Le nom du script est `init.<extension>`, par exemple : `init.jsp`
 Ce script est appelé lorsque le formulaire est rendu. Il peut être utilisé pour initialiser des caractéristiques d’action. ``
 
    1. Un script de nettoyage.
-Le nom du script est `cleanup.<extension>`, par ex. `cleanup.jsp`
-Ce script peut être utilisé pour effectuer un nettoyage.
+Le nom du script est `cleanup.<extension>`, par exemple : `cleanup.jsp`
+Ce script peut être utilisé pour effectuer le nettoyage.
 
 1. Utilisez le composant **Forms** dans un système de paragraphes (parsys). Le liste déroulante **Type d’action** contient désormais votre nouvelle action.
 
@@ -223,12 +222,12 @@ Vous pouvez ajouter vos propres contraintes pour un champ individuel (sous `/app
 1. Les scripts suivants peuvent s’avérer nécessaires à l’intérieur de ce dossier :
 
    * Un script de validation client :
-Le nom du script est `clientvalidation.<extension>`, par ex. `clientvalidation.jsp`
-Cette fonction est appelée lorsque le champ de formulaire est généré. Il peut être utilisé pour créer le JavaScript client afin de valider le champ sur le client.
+Le nom du script est `clientvalidation.<extension>`, par exemple : `clientvalidation.jsp`
+Il est appelé lorsque le champ de formulaire est rendu. Il peut être utilisé pour créer le JavaScript client afin de valider le champ sur le client.
 
    * Un script de validation du serveur :
-Le nom du script est `servervalidation.<extension>`, par ex. `servervalidation.jsp`
-Cette fonction est appelée lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur une fois qu’il a été envoyé.
+Le nom du script est `servervalidation.<extension>`, par exemple : `servervalidation.jsp`
+Il est appelé lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur une fois qu’il a été envoyé.
 
 >[!NOTE]
 >
@@ -244,8 +243,8 @@ La validation globale du formulaire est spécifiée en configurant un type de re
 
 Vous pouvez ensuite définir :
 
-* a `clientvalidation.jsp` : injecté après les scripts de validation client du champ
-* et a `servervalidation.jsp` - également appelé après les validations individuelles du serveur de champ sur un `POST`.
+* a `clientvalidation.jsp` - injecté après les scripts de validation du client du champ
+* et un `servervalidation.jsp` - également appelé après les validations individuelles du serveur de champs sur un `POST`.
 
 ### Affichage et masquage de composants de formulaire {#showing-and-hiding-form-components}
 
@@ -268,7 +267,7 @@ Une ou plusieurs conditions s’affichent sous ces champs. Une condition compare
 * Un opérateur.
 * Une valeur à laquelle la valeur du champ est comparée.
 
-Par exemple, un composant Groupe de cases d’option avec le titre `Receive email notifications?`* * contient les boutons d’option `Yes` et `No`. Un composant de champ de texte avec le titre `Email Address` utilise la condition suivante afin qu’il soit visible si `Yes` est sélectionné :
+Par exemple, un composant Groupe de cases d’option avec le titre `Receive email notifications?`* * contient les boutons radio `Yes` et `No`. Un composant de champ de texte avec le titre `Email Address` utilise la condition suivante afin qu’il soit visible si `Yes` est sélectionné :
 
 ![showhidecondition](assets/showhidecondition.png)
 
@@ -317,9 +316,9 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
 
 #### Gestion de références de composant interrompues  {#handling-broken-component-references}
 
-Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher/Masquer n&#39;est pas valide lorsque l&#39;une des conditions fait référence à un composant supprimé ou si la propriété Nom de l&#39;élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
+Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher/Masquer n’est pas valide lorsque l’une des conditions fait référence à un composant qui est supprimé ou dont la propriété Nom de l’élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
 
-Lorsque la configuration Afficher/Masquer n&#39;est pas valide, la configuration est fournie uniquement en tant que code JavaScript. Modifiez le code pour résoudre les problèmes. Le code utilise la propriété Nom de l’élément utilisée initialement pour faire référence aux composants.
+Lorsque la configuration Afficher/Masquer n’est pas valide, elle n’est fournie que sous forme de code JavaScript. Modifiez le code pour résoudre les problèmes. Le code utilise la propriété Nom de l’élément utilisée initialement pour faire référence aux composants.
 
 ### Développement de scripts à utiliser avec des formulaires {#developing-scripts-for-use-with-forms}
 
