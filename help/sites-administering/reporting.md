@@ -11,7 +11,6 @@ content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-translation-type: tm+mt
 source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
 workflow-type: tm+mt
 source-wordcount: '2815'
@@ -34,7 +33,7 @@ Pour vous aider à analyser et surveiller l’état de votre instance, AEM propo
 
 >[!NOTE]
 >
->Ces rapports ne sont disponibles que dans l’interface utilisateur classique. Pour la surveillance et le rapports du système dans l&#39;interface utilisateur moderne, consultez le [Tableau de bord d&#39;exploitation.](/help/sites-administering/operations-dashboard.md)
+>Ces rapports ne sont disponibles que dans l’interface utilisateur classique. Pour la surveillance du système et la création de rapports dans l’interface utilisateur moderne, voir le [Tableau de bord des opérations.](/help/sites-administering/operations-dashboard.md)
 
 Tous ces rapports sont accessibles à partir de la console **Tools**. Sélectionnez **Rapports** dans le panneau de gauche, puis double-cliquez sur le rapport dans le panneau de droite pour l’ouvrir afin de l’afficher et/ou de le configurer.
 
@@ -44,7 +43,7 @@ De nouvelles instances d’un rapport peuvent également être créées à parti
 >
 >Outre les rapports AEM standard disponibles clé en main, vous pouvez [développer vos propres rapports (entièrement nouveaux)](/help/sites-developing/dev-reports.md).
 
-## Principes de base de la personnalisation des rapports  {#the-basics-of-report-customization}
+## Principes de base de la personnalisation des rapports {#the-basics-of-report-customization}
 
 Divers formats de rapport sont disponibles. Les rapports suivants utilisent tous des colonnes qui peuvent être personnalisées comme indiqué dans les sections suivantes :
 
@@ -52,7 +51,7 @@ Divers formats de rapport sont disponibles. Les rapports suivants utilisent tous
 * [Rapport d’activité de la page](#page-activity-report)
 * [Rapport de contenu généré par l’utilisateur](#user-generated-content-report)
 * [Rapport de l’utilisateur](#user-report)
-* [Rapport d’instance de processus](#workflow-instance-report)
+* [Rapport d’instance de workflow](#workflow-instance-report)
 
 >[!NOTE]
 >
@@ -114,7 +113,7 @@ Placez le pointeur de la souris au-dessus du diagramme circulaire pour afficher 
 
 Sur les colonnes appropriées, vous pouvez également configurer des **Paramètres du filtre** et/ou des **Agrégats** dans le [menu déroulant de la colonne](#column-drop-down-menu).
 
-#### Filtres  {#filters}
+#### Filtres {#filters}
 
 Les paramètres de filtre vous permettent de spécifier les critères des entrées à afficher. Les opérateurs disponibles sont :
 
@@ -134,11 +133,11 @@ Pour désactiver le filtre :
 1. Supprimez le texte du filtre.
 1. Cliquez sur **Appliquer**.
 
-#### Agrégats  {#aggregates}
+#### Agrégats {#aggregates}
 
 Vous pouvez également sélectionner une méthode d’agrégation (elle peut varier en fonction de la colonne sélectionnée) :
 
-![petit rapport](assets/reportaggregate.png)
+![reportaggregate](assets/reportaggregate.png)
 
 ### Propriétés de colonne {#column-properties}
 
@@ -163,22 +162,22 @@ Le rapport peut être généré :
 
 Le graphique qui en résulte est affiché en bas à droite :
 
-![tendances des rapports](assets/reporttrends.png)
+![reporttendances](assets/reporttrends.png)
 
 Une fois la collecte de données commencée, vous pouvez sélectionner les options suivantes :
 
 * **Période**
 
-   Vous pouvez sélectionner des dates et des dates pour les données du rapport à afficher.
+   Vous pouvez sélectionner les dates de début et de fin pour les données du rapport à afficher.
 
 * **Intervalle**
 
-   Mois, Semaine, Jour, Heure peuvent être sélectionnés pour l&#39;échelle et l&#39;agrégation du rapport.
+   Mois, Semaine, Jour, Heure peuvent être sélectionnés pour l’échelle et l’agrégation du rapport.
 
     Par exemple, si des instantanés quotidiens sont disponibles pour le mois de février 2011 :
 
-   * Si l&#39;intervalle est défini sur `Day`, chaque instantané est présenté comme une valeur unique dans le graphique.
-   * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont agrégés en une seule valeur (affichés sous la forme d’un &quot;point&quot; unique dans le graphique).
+   * Si l’intervalle est défini sur `Day`, chaque instantané est présenté comme une valeur unique dans le graphique.
+   * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont agrégés en une seule valeur (affichée sous la forme d’un &quot;point&quot; unique dans le graphique).
 
 Faites vos choix selon vos besoins, puis cliquez sur **Aller** pour les appliquer au rapport. Pour mettre à jour l’affichage après la création d’autres instantanés, cliquez de nouveau sur **OK**.
 
@@ -196,14 +195,14 @@ Lorsque des instantanés sont en cours de collecte, vous pouvez :
 
 >[!NOTE]
 >
->Les instantanés sont stockés sous `/var/reports/...` où le reste du chemin reflète le chemin d&#39;accès du rapport et de l&#39;identifiant respectifs créés lorsque le rapport est terminé.
+>Les instantanés sont stockés sous `/var/reports/...` où le reste du chemin reflète le chemin du rapport et de l’identifiant respectifs créés lorsque le rapport a été terminé.
 >
 >
 >Les anciens instantanés peuvent être manuellement purgés, si vous êtes absolument certain de ne plus en avoir besoin.
 
 >[!NOTE]
 >
->Les rapports préconfigurés n&#39;exigent pas beaucoup de performances, mais il est toujours recommandé d&#39;utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à une heure où l&#39;activité sur votre site Web est faible ; cela peut être défini avec le paramètre `Daily snapshots (repconf.hourofday)` pour **Configuration du Rapports Day CQ**; voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d&#39;informations sur la façon de configurer ceci.
+>Les rapports préconfigurés n’exigent pas de performances élevées, mais il est toujours recommandé d’utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à un moment de la journée où votre site web ne présente pas beaucoup d’activité ; cela peut être défini avec le paramètre `Daily snapshots (repconf.hourofday)` pour la **configuration des rapports Day CQ** ; voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur la configuration.
 
 #### Limites d’affichage {#display-limits}
 
@@ -238,7 +237,7 @@ Le bouton **Modifier** ouvre la boîte de dialogue **Modifier le rapport**.
 
 Il s’agit d’un emplacement où la période de collecte des instantanés pour les [Données historiques](#historic-data) est définie, mais d’autres paramètres peuvent également être définis :
 
-![report](assets/reportedit.png)
+![rereport](assets/reportedit.png)
 
 * **Titre**
 
@@ -248,7 +247,7 @@ Il s’agit d’un emplacement où la période de collecte des instantanés pour
 
    Vous pouvez définir votre propre description.
 
-* **Chemin**  racine (*principal uniquement pour certains rapports*)
+* **Chemin d’accès racine**  (*uniquement principal pour certains rapports*)
 
    Utilisez cette option pour limiter le rapport à une sous-section du référentiel.
 
@@ -260,7 +259,7 @@ Il s’agit d’un emplacement où la période de collecte des instantanés pour
 
    * **données actualisées manuellement**
 
-      Cette option permet d’éviter les retards dus aux opérations d’actualisation automatique en cas de volume important de données.
+      Cette option peut être utilisée pour éviter les retards causés par les opérations d’actualisation automatique en cas de volume de données important.
 
        Cette option indique que les données du rapport doivent être actualisées manuellement lorsqu’un aspect de la configuration du rapport a changé. Cela signifie également que dès que vous changez un aspect de la configuration du rapport, le tableau est effacé.
 
@@ -294,7 +293,7 @@ Lorsque vous avez **terminé** le rapport :
 
 Avec cette boîte de dialogue, vous pouvez définir ou mettre à jour votre propre titre et votre propre description du rapport.
 
-![reportend](assets/reportfinish.png)
+![reportterminer](assets/reportfinish.png)
 
 ## Types de rapports {#report-types}
 
@@ -325,7 +324,7 @@ Signifient que vous pouvez voir, par exemple :
 
 Tous les composants sont inclus, ceux standard produit comme ceux spécifiques aux projets. Avec la boîte de dialogue **Modifier**, l’utilisateur peut également définir un **Chemin racine** qui définit le point de départ du rapport. Tous les composants sous cette racine sont pris en compte pour le rapport.
 
-![](assets/reportcomponent.png) ![reportcomponent entreportcompentall](assets/reportcompentall.png)
+![](assets/reportcomponent.png) ![reportcomponentreportcompentall](assets/reportcompentall.png)
 
 ### Utilisation du disque {#disk-usage}
 
@@ -337,16 +336,16 @@ Le rapport commence à la racine (/) du référentiel. En cliquant sur une branc
 
 ### Contrôle de l’intégrité {#health-check}
 
-Ce rapport analyse le journal de requêtes actuel :
+Ce rapport analyse le journal des requêtes en cours :
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`
-pour vous aider à identifier les demandes les plus coûteuses au cours d’une période donnée.
+pour vous aider à identifier la ou les demandes les plus coûteuses au cours d’une période donnée.
 
 Pour générer le rapport, vous pouvez spécifier :
 
 * **Période (heures)**
 
-   Nombre d&#39;heures (passées) à analyser.
+   Nombre d’heures (passées) à analyser.
 
    Valeur par défaut: `24`
 
@@ -358,9 +357,9 @@ Pour générer le rapport, vous pouvez spécifier :
 
 * **max. Demandes**
 
-   Nombre maximal de demandes à analyser.
+   Nombre maximum de demandes à analyser.
 
-   Par défaut : `-1` (tous)
+   Valeur par défaut : `-1` (tous)
 
 * **Adresse électronique**
 
@@ -368,9 +367,9 @@ Pour générer le rapport, vous pouvez spécifier :
 
    Facultatif ; valeur par défaut : non renseigné
 
-* **Exécution quotidienne à (hh:mm)**
+* **Exécuter quotidiennement à (hh:mm)**
 
-   Spécifiez l&#39;heure à laquelle le rapport doit s&#39;exécuter automatiquement quotidiennement.
+   Spécifiez l’heure à laquelle le rapport doit être exécuté automatiquement tous les jours.
 
    Facultatif ; valeur par défaut : non renseigné
 
@@ -395,9 +394,9 @@ Signifie que vous pouvez surveiller :
 * Les pages les plus/moins fréquemment modifiées
 * Les utilisateurs les plus/moins actifs
 
-Le rapport d’activité de la page récupère toutes ses informations dans le journal d’audit. Par défaut, le chemin d&#39;accès racine est configuré sur le journal d&#39;audit à `/var/audit/com.day.cq.wcm.core.page`.
+Le rapport d’activité de la page récupère toutes ses informations dans le journal d’audit. Par défaut, le chemin d’accès racine est configuré sur le journal d’audit à l’adresse `/var/audit/com.day.cq.wcm.core.page`.
 
-![reportpageactivité](assets/reportpageactivity.png)
+![reportpageactivity](assets/reportpageactivity.png)
 
 ### Rapport de contenu généré par l’utilisateur {#user-generated-content-report}
 
@@ -445,7 +444,7 @@ Vous permettent :
 * Connaître la répartition démographique de vos utilisateurs.
 * Créer des rapports sur les champs personnalisés que vous avez ajoutés aux profils.
 
-![reportuserced](assets/reportusercanned.png)
+![reportusercanned](assets/reportusercanned.png)
 
 #### Colonne Générique {#generic-column}
 
@@ -466,11 +465,11 @@ Dans l’onglet **Définitions**, vous pouvez définir :
 
 * **Propriété**
 
-   Nom de propriété tel qu’il est stocké dans le référentiel, généralement dans le profil de l’utilisateur.
+   Nom de la propriété tel qu’il est stocké dans le référentiel, généralement dans le profil de l’utilisateur.
 
 * **Chemin**
 
-   En règle générale, la propriété est prise à partir de `profile`.
+   En règle générale, la propriété est extraite de `profile`.
 
 * **Type**
 
@@ -478,13 +477,13 @@ Dans l’onglet **Définitions**, vous pouvez définir :
 
 * **Agrégat par défaut**
 
-   Ceci définit l&#39;agrégat utilisé par défaut si la colonne est dissociée dans un rapport avec au moins une colonne regroupée. Sélectionnez l&#39;agrégat requis à partir de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Cette opération définit l&#39;agrégat utilisé par défaut si la colonne est dissociée dans un rapport avec au moins une colonne regroupée. Sélectionnez l’agrégat requis à partir de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Par exemple, *Count* pour un champ `String` signifie que le nombre de valeurs `String` distinctes est affiché pour la colonne à l’état agrégé.
+   Par exemple, *Comptage* pour un champ `String` signifie que le nombre de valeurs `String` distinctes est affiché pour la colonne dans l’état agrégé.
 
 Dans l’onglet **Étendu**, vous pouvez également définir les agrégats et les filtres disponibles :
 
-![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png)
+![reportusrgenericcolmextalized](assets/reportusrgenericcolmextented.png)
 
 ### Rapport d’instance de processus {#workflow-instance-report}
 
@@ -504,13 +503,13 @@ Signifie que vous pouvez :
 
 * Surveiller la durée moyenne des workflows. Si cela se produit régulièrement, il se peut que le workflow connaisse des problèmes.
 
-![reportworkflow](assets/reportworkflowintance.png)
+![reportworkflowintance](assets/reportworkflowintance.png)
 
 ### Rapports de processus {#workflow-report}
 
 Ce rapport fournit des statistiques clés sur les workflows s’exécutant sur votre instance.
 
-![workflow de rapport](assets/reportworkflow.png)
+![reportworkflow](assets/reportworkflow.png)
 
 ## Utilisation de rapports dans un environnement de publication {#using-reports-in-a-publish-environment}
 
@@ -536,7 +535,7 @@ Puisqu’aucune configuration de rapport n’est autorisée dans l’environneme
 
 >[!CAUTION]
 >
->L&#39;accès à ces rapports peut poser un problème de sécurité; par conséquent, nous vous recommandons de configurer le répartiteur de sorte que `/etc/reports` ne soit pas disponible pour les visiteurs externes. Voir la [Liste de contrôle de sécurité](security-checklist.md) pour plus de détails.
+>L’accès à ces rapports peut poser un problème de sécurité ; nous vous recommandons donc de configurer Dispatcher de sorte que `/etc/reports` ne soit pas disponible pour les visiteurs externes. Voir la [Liste de contrôle de sécurité](security-checklist.md) pour plus de détails.
 
 ## Autorisations requises pour exécuter des rapports {#permissions-needed-for-running-reports}
 
@@ -567,4 +566,4 @@ Dans une installation AEM standard, les autorisations suivantes sont prédéfini
 
    `workflow-users` - lecture et écriture
 
-Tous les membres du groupe `administrators` ont les droits nécessaires pour créer de nouveaux rapports.
+Tous les membres du groupe `administrators` disposent des droits nécessaires pour créer de nouveaux rapports.
