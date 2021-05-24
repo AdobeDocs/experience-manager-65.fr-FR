@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 97%
 
 ---
-
 
 # Console des composants{#components-console}
 
@@ -25,13 +24,13 @@ La console des composants vous permet de parcourir tous les composants définis 
 
 Elle est accessible via **Outils** -> **Général** -> **Composants**. Dans la console, les modes Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
 
-![capture d&#39;écran_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
+![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
 >[!NOTE]
 >
 >La console des composants affiche tous les composants du système. L’[Explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser) affiche les composants qui sont disponibles pour les auteurs et masque tous les groupes de composants qui commencent par un point ( `.`).
 
-## Recherche {#searching}
+## Rechercher {#searching}
 
 Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir le panneau de **recherche** pour rechercher et/ou filtrer les composants :
 
@@ -75,4 +74,3 @@ Pour afficher les détails correspondant à un composant spécifique, appuyez/cl
    Si le développeur a fourni la [documentation du composant](/help/sites-developing/developing-components.md#documenting-your-component), elle apparaîtra dans l’onglet **Documentation**. Si aucune documentation n’est disponible, l’onglet **Documentation** n’est pas affiché.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
-
