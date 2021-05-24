@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
-translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 77%
 
 ---
-
 
 # Configuration des notifications électroniques{#configuring-email-notification}
 
@@ -46,7 +45,7 @@ Les contraintes suivantes s’appliquent :
 
 * Le **port de serveur SMTP** doit être le port 25 ou supérieur.
 
-* Le **nom d&#39;hôte du serveur SMTP** ne doit pas être vide.
+* Le **nom d’hôte du serveur SMTP** ne doit pas être vide.
 * L’**adresse « De »** ne doit pas être vide.
 
 Pour résoudre plus facilement un problème avec le **service de messagerie Day CQ**, vous pouvez examiner les journaux du service :
@@ -74,7 +73,7 @@ Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig
 
 Utilisez la procédure suivante pour définir le nœud dans vos dossiers sources de module de contenu :
 
-1. Dans votre `jcr_root/apps/*app_name*/config folder`, créez un fichier nommé `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`.
+1. Dans votre `jcr_root/apps/*app_name*/config folder`, créez un fichier nommé `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
 1. Ajoutez le fichier XML suivant pour représenter le nœud :
 
@@ -143,13 +142,13 @@ Le modèle doit avoir le format suivant :
 * `${userFullName}`, le nom complet de l’utilisateur ayant déclenché l’événement.
 
 * `${userId}`, l’ID de l’utilisateur ayant déclenché l’événement.
-* `${modifications}`, décrit le type de événement de page et le chemin de page au format :
+* `${modifications}`, décrit le type de l’événement de page et le chemin de page au format suivant :
 
    &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
 
    Par exemple :
 
-   PageModified => /content/geometrixx/fr/products
+   PageModified => /content/geometrixx/en/products
 
 ### Modèles de courrier électronique pour les notifications de forum {#email-templates-for-forum-notification}
 
@@ -251,20 +250,20 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamique. Chaque ligne d&#39;un élément `<text_x>` doit se terminer par une barre oblique inverse ( `\`), sauf pour la dernière instance, lorsque l&#39;absence de la barre oblique inverse indique la fin de la variable de chaîne `<text_x>`.
+>Où `<text_x>` peut être un mélange de texte statique et de variables de chaîne dynamique. Chaque ligne d’un élément `<text_x>` doit se terminer par une barre oblique inverse ( `\`), à l’exception de la dernière instance, lorsque l’absence de la barre oblique inverse indique la fin de la variable de chaîne `<text_x>`.
 >
 >Vous trouverez plus d’informations sur le format des modèles dans la méthode [javadocs of the Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-La méthode `${payload.path.open}` révèle le chemin d&#39;accès à la charge utile de l&#39;élément de travail. Par exemple, pour une page des sites, `payload.path.open` est alors similaire à `/bin/wcmcommand?cmd=open&path=…`.; sans le nom du serveur, c&#39;est pourquoi le modèle le préfixe avec `${host.prefix}`.
+La méthode `${payload.path.open}` affiche le chemin d’accès à la charge utile de l’élément de travail. Par exemple, pour une page dans Sites, `payload.path.open` serait similaire à `/bin/wcmcommand?cmd=open&path=…`.; sans le nom du serveur, c’est pourquoi le modèle ajoute `${host.prefix}` en préfixe.
 
 Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique :
 
-* `${event.EventType}`, type du événement
+* `${event.EventType}`, type de l’événement
 * `${event.TimeStamp}`, date et heure de l’événement
 * `${event.User}`, utilisateur ayant déclenché l’événement
-* `${initiator.home}`, le chemin du noeud initiateur
+* `${initiator.home}`, chemin d’accès au noeud de l’initiateur
 
-* `${initiator.name}`, le nom de l’initiateur
+* `${initiator.name}`, nom de l’initiateur
 
 * `${initiator.email}`, adresse électronique de l’initiateur
 * `${item.id}`, ID de l’élément de travail
@@ -273,18 +272,18 @@ Les variables suivantes peuvent être utilisées dans le modèle de courrier él
 * `${participant.email}`, adresse électronique du participant
 * `${participant.name}`, nom du participant
 * `${participant.familyName}`, nom de famille du participant
-* `${participant.id}`, identifiant du participant
+* `${participant.id}`, id du participant
 * `${participant.language}`, la langue du participant
-* `${instance.id}`, l’ID de processus
-* `${instance.state}`, l’état du processus
+* `${instance.id}`, ID de workflow
+* `${instance.state}`, état du workflow
 * `${model.title}`, titre du modèle de workflow
 * `${model.id}`, ID du modèle de workflow
 
 * `${model.version}`, version du modèle de workflow
 * `${payload.data}`, la charge utile
 
-* `${payload.type}`, le type de charge utile
-* `${payload.path}`, chemin d’accès de la charge utile
+* `${payload.type}`, type de payload
+* `${payload.path}`, chemin d’accès de la payload
 * `${host.prefix}`, préfixe hôte, par exemple, http://localhost:4502
 
 ### Ajout d’un modèle de courrier électronique pour une nouvelle langue {#adding-an-email-template-for-a-new-language}
@@ -295,7 +294,7 @@ Pour ajouter un modèle pour une nouvelle langue :
 
    * `/etc/notification/email/default/com.day.cq.wcm.core.page` : pour les notifications de page
    * `/etc/notification/email/default/com.day.cq.collab.forum` : pour les notifications de forum
-   * `/etc/workflow/notification/email/default` : pour les notifications de processus
+   * `/etc/workflow/notification/email/default` : pour les notifications de workflow
 
 1. Adaptez le fichier à la langue.
 1. Enregistrez les modifications.
@@ -311,4 +310,3 @@ Quand les collections dans AEM Assets sont partagées ou non, les utilisateurs 
 1. Configurez le service de messagerie, comme décrit ci-dessus dans [Configuration du service de messagerie](/help/sites-administering/notification.md#configuring-the-mail-service).
 1. Connectez-vous à AEM en tant qu’administrateur. Cliquez sur **Outils** > **Opérations** > **Console web** pour ouvrir la configuration de la console web.
 1. Modifiez la **servlet de collection de ressources de la gestion des actifs numériques Day CQ**. Sélectionnez **Envoyer un courrier électronique**. Cliquez sur **Enregistrer**.
-
