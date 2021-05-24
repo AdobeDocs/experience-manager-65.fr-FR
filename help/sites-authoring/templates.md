@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
+exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '4901'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
-
-# Création de modèles de page {#creating-page-templates}
+# Création de modèles de page{#creating-page-templates}
 
 Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants pouvant être utilisés.
 
@@ -46,7 +45,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!CAUTION]
 >
->Les pages et les modèles créés avec la **console Modèles** ne sont pas destinés à être utilisés avec l&#39;interface utilisateur classique et cette utilisation n&#39;est pas prise en charge.
+>Les pages et les modèles créés avec la **console Modèles** ne sont pas destinés à être utilisés avec l’interface utilisateur classique et cette utilisation n’est pas prise en charge.
 
 ## Avant de commencer {#before-you-start}
 
@@ -111,7 +110,7 @@ AEM comporte maintenant deux types de modèles standard :
    * Ils sont [fournis par les développeurs](/help/sites-developing/page-templates-static.md), et ne peuvent pas être créés ou modifiés par les créateurs.
    * Ils sont copiés pour créer la page. Il n’y a ensuite aucune connexion dynamique (même si le nom du modèle est enregistré pour information).
    * Utilisez le [mode Création](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
-   * La modification de modèles statiques étant la tâche exclusive d&#39;un développeur, consultez le document de développement [Modèles de page - Static](/help/sites-developing/page-templates-static.md) pour plus d&#39;informations.
+   * La modification des modèles statiques étant la tâche exclusive d’un développeur, reportez-vous au document destiné aux développeurs [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour plus d’informations.
 
 Par définition, la console de modèles et l’éditeur de modèles permettent uniquement la création et la modification des modèles modifiables. Par conséquent, ce document décrit exclusivement les modèles modifiables.
 
@@ -148,7 +147,7 @@ Lors de la création d’un modèle modifiable :
 
 >[!CAUTION]
 >
->Ne saisissez jamais d’informations qui doivent[ être internationalisées](/help/sites-developing/i18n.md) dans un modèle. À des fins d&#39;internalisation, il est recommandé d&#39;utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Ne saisissez jamais d’informations qui doivent[ être internationalisées](/help/sites-developing/i18n.md) dans un modèle. Pour l’internalisation, il est recommandé d’utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
@@ -211,9 +210,9 @@ Pour afficher et/ou modifier les propriétés :
 
 >[!NOTE]
 >
->Les modèles sont des outils puissants pour rationaliser votre processus de création de page. Cependant, trop de modèles peuvent submerger les auteurs et rendre la création de page déroutante. Une bonne règle générale consiste à garder le nombre de modèles en dessous de 100.
+>Les modèles sont des outils puissants pour rationaliser votre processus de création de page. Cependant, un nombre excessif de modèles peut submerger les auteurs et semer la confusion dans la création de pages. Une bonne règle d’or consiste à maintenir le nombre de modèles au-dessous de 100.
 >
->L&#39;Adobe ne recommande pas d&#39;avoir plus de 1000 modèles en raison des impacts potentiels sur le rendement.
+>Adobe ne recommande pas d’avoir plus de 1 000 modèles en raison des impacts potentiels sur le rendement.
 
 >[!NOTE]
 >
@@ -235,7 +234,7 @@ Pour définir la miniature du modèle :
 
 1. Lorsque vous êtes satisfait de la miniature, cliquez ou appuyez sur **Enregistrer et Fermer**.
 
-### Activation et autorisation d’un modèle - Créateur de modèles   {#enabling-and-allowing-a-template-template-author}
+### Activation et autorisation d’un modèle - Créateur de modèles  {#enabling-and-allowing-a-template-template-author}
 
 Pour utiliser un modèle lors de la création d’une page, vous devez effectuer les deux tâches suivantes :
 
@@ -297,7 +296,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles  - Créateurs de modèles   {#editing-templates-template-authors}
+## Modification des modèles - Créateurs de modèles  {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -339,7 +338,7 @@ Le sélecteur **Mode** de la barre d’outils permet de sélectionner et de modi
 
 * [Structure](#editingatemplatestructure)
 * [Contenu initial](#editingatemplateinitialcontent)
-* [Disposition](#editingatemplatelayout)
+* [Mise en page](#editingatemplatelayout)
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
@@ -478,7 +477,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-   *Fonctions*
+   *Fonctionnalités*
 
    L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant.
 
@@ -623,7 +622,7 @@ La conception de la page, y compris les bibliothèques côté client requises et
 
 Pour accéder à la boîte de dialogue **Conception de page** :
 
-1. Dans l&#39;**Éditeur de modèle**, sélectionnez **Informations sur la page** dans la barre d&#39;outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
+1. Dans l’**éditeur de modèles**, sélectionnez **Informations sur la page** dans la barre d’outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
 1. La boîte de dialogue **Conception de page** s’ouvre. Elle est divisée en deux sections :
 
    * La moitié gauche définit les [stratégies de page](/help/sites-authoring/templates.md#page-policies).
