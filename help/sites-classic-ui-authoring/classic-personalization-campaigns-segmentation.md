@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 73%
 
 ---
-
 
 # Compréhension de la segmentation{#understanding-segmentation}
 
@@ -40,22 +39,22 @@ Les segments sont définis dans la section [Configuration de la segmentation](/h
 
 Lors de la discussion de la segmentation, la terminologie suivante est utilisée :
 
-**** VisiteurUn visiteur est une personne qui visite un site Web. La visite de cette personne commence généralement à partir d’une page de référence, puis aboutit à l’affichage d’une ou de plusieurs pages de votre propre site web. Un profil de comportement peut être créé à partir des détails de la visite de cette personne.
+**** VisiteurUn visiteur est une personne qui visite un site web. La visite de cette personne commence généralement à partir d’une page de référence, puis aboutit à l’affichage d’une ou de plusieurs pages de votre propre site web. Un profil de comportement peut être créé à partir des détails de la visite de cette personne.
 
-**** UtilisateurUn utilisateur est un visiteur qui s&#39;enregistre sur le site Web pour recevoir un profil de compte. Pour générer son profil, il fournit des informations d’identification supplémentaires telles qu’une adresse électronique, son sexe, entre autres. Des informations supplémentaires peuvent également être collectées, y compris l’activité communautaire et les comportements d’achats, entre autres choses encore. En fonction des informations fournies dans le profil, un profil démographique peut être créé.
+**** UtilisateurUn utilisateur est un visiteur qui s’inscrit auprès du site web pour recevoir un profil de compte. Pour générer son profil, il fournit des informations d’identification supplémentaires telles qu’une adresse électronique, son sexe, entre autres. Des informations supplémentaires peuvent également être collectées, y compris l’activité communautaire et les comportements d’achats, entre autres choses encore. En fonction des informations fournies dans le profil, un profil démographique peut être créé.
 
-**** CaractéristiqueUne caractéristique ou propriété d&#39;un visiteur peut être utilisée pour déterminer l&#39;appartenance à un segment spécifique.
+**** CaractéristiqueUne caractéristique est une caractéristique ou une propriété d’un visiteur qui peut être utilisée pour déterminer son appartenance à un segment spécifique.
 
 **** SegmentUn segment est un ensemble de visiteurs qui partagent certaines caractéristiques. Les segments doivent être distincts, avec un minimum de chevauchement avec les autres segments.
 
-**Caractéristiques comportementalesLes caractéristiques comportementales sont celles qui se rapportent au comportement d&#39;un visiteur sur le site Web.** Celles-ci comprennent :
+**Caractéristiques comportementales Les** caractéristiques comportementales sont liées au comportement d’un visiteur sur le site web. Celles-ci comprennent :
 
 * L’intérêt au sein de votre site web ; notamment les pages visitées et les produits achetés.
 * L’intérêt sur le site web de référence ; notamment les termes de recherche utilisés ou les publicités cliquées.
 * L’intérêt sur d’autres sites, déterminé à l’aide d’outils tels que Spyjax.
 * La fidélité du visiteur ; la durée de la visite, la fréquence des visites.
 
-**Caractéristiques démographiquesIl s&#39;agit de caractéristiques de population sélectionnées, notamment :** 
+**Caractéristiques démographiques** Il s’agit de caractéristiques de population sélectionnées, notamment :
 
 * Âge
 * Revenu
@@ -70,17 +69,16 @@ Certaines caractéristiques démographiques sont difficiles à déterminer sans 
 
 Par exemple, la combinaison de l’URL de référence (en tant que caractéristique comportementale) avec des données démographiques (acquises à partir d’outils tels que [Google Ad Planner](https://www.google.com/adplanner/)) permet aux propriétaires du site d’extraire les caractéristiques comportementales de leurs visiteurs.
 
-**** Sous-segmentUn segment peut être subdivisé en plusieurs sous-segments. Ceci s’effectue en définissant des caractéristiques supplémentaires.
+**** Sous-segmentUn segment peut être divisé en plusieurs sous-segments. Ceci s’effectue en définissant des caractéristiques supplémentaires.
 
-**Page du** teaser TeaserUne page de teaser est dirigée vers une audience spécifique. Elle contient du contenu réutilisable qui peut être utilisé dans le paragraphe de teaser.
+**Page de teaser** Une page de teaser est destinée à une audience spécifique. Elle contient du contenu réutilisable qui peut être utilisé dans le paragraphe de teaser.
 
-**** CampagneUne campagne est un ensemble de pages de teaser et de pages de marketing par courriel, telles que des bulletins d&#39;information ou des invitations. Typiquement, une campagne dure pendant une période limitée, puis elle est remplacée par une autre campagne.
+**** CampagneUne campagne est un ensemble de pages de teaser et de pages de marketing par e-mail, telles que des newsletters ou des invitations. Typiquement, une campagne dure pendant une période limitée, puis elle est remplacée par une autre campagne.
 
-**** Paragraphe du teaserIl s&#39;agit d&#39;un paragraphe qui extrait le contenu d&#39;une autre page en fonction d&#39;une stratégie de sélection. Cette stratégie de sélection peut tenir compte de segments et de campagnes.
+**** Paragraphe de teaser : il s’agit d’un paragraphe qui extrait du contenu d’une autre page selon une stratégie de sélection. Cette stratégie de sélection peut tenir compte de segments et de campagnes.
 
 **** ListeUne liste est extraite d’un segment d’utilisateurs enregistrés. Par exemple, l’emplacement utilisé pour diriger le contenu du paragraphe de teaser.
 
 >[!NOTE]
 >
->Pour plus d&#39;informations sur les segments dans AEM, consultez [Segmentation](/help/sites-administering/campaign-segmentation.md).
-
+>Voir [Segmentation](/help/sites-administering/campaign-segmentation.md) pour plus d’informations sur les segments dans AEM.
