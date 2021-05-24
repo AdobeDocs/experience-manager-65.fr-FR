@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 99%
 
 ---
-
 
 # Création et gestion d’offres  {#creating-and-managing-offers}
 
@@ -50,7 +49,7 @@ Ajoutez un dossier à la bibliothèque d’offres d’une marque pour y organise
 1. Dans la console Offres, ouvrez l’emplacement où vous souhaitez créer le dossier. Par exemple, ouvrez la marque pour créer un dossier de niveau supérieur ou ouvrez un autre dossier de la bibliothèque.
 1. Cliquez ou appuyez sur **Créer** > **Créer le dossier ou l’offre**.
 
-   ![capture d&#39;écran_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
+   ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
 1. Sélectionnez **Dossier**, puis cliquez sur **Suivant**.
 1. Entrez un titre pour le dossier tel qu’il doit apparaître dans la bibliothèque d’offres et saisissez ou sélectionnez des balises.
@@ -68,7 +67,7 @@ Après avoir créé l’offre, vous pouvez l’ouvrir pour en modifier le conten
 1. Dans la console Offres, ouvrez l’emplacement où vous souhaitez créer l’offre. Par exemple, ouvrez la marque pour créer une offre de niveau supérieur ou ouvrez un dossier de la bibliothèque.
 1. Cliquez ou appuyez sur **Créer** > **Créer le dossier ou l’offre**.
 
-   ![capture d&#39;écran_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
+   ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
 1. Sélectionnez le modèle **Page d’offre**, puis cliquez ou appuyez sur **Suivant**.
 1. Saisissez le titre de l’offre et, le cas échéant, sélectionnez ou entrez une ou plusieurs balises à associer à l’offre, puis cliquez ou appuyez sur **Créer**.
@@ -103,7 +102,7 @@ Vous pouvez supprimer une offre tout en affichant le contenu des dossiers de la 
 
 Recherchez les offres d’une marque quelconque à l’aide de mots-clés correspondant à leur titre.
 
-![capture d&#39;écran_2019-03-05at124731](assets/screen-shot_2019-03-05at124731.png)
+![screen-shot_2019-03-05at124731](assets/screen-shot_2019-03-05at124731.png)
 
 Les critères de recherche actuels sont visibles en regard des résultats de la recherche. Vous pouvez également trier les résultats par colonne, dans l’ordre croissant ou décroissant. Vous pouvez effectuer une recherche à partir de n’importe quel dossier, dans n’importe quelle bibliothèque d’offres. Les résultats de la recherche restent les mêmes, quel que soit le dossier actif.
 
