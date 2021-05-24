@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
-translation-type: tm+mt
-source-git-commit: 8e663a3c11523796a2bad15e9c088e484f2b573b
+exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2780'
 ht-degree: 76%
 
 ---
-
 
 # Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
@@ -56,7 +55,7 @@ Ce document contient des instructions détaillées.
 
 #### Création de contenu de courrier électronique {#creating-new-email-content-1}
 
-1. Dans AEM sélectionnez **Sites**, puis **Campagnes**, puis accédez à l&#39;emplacement où vos campagnes par courrier électronique sont gérées. Dans l’exemple suivant, le chemin d’accès est **Sites** > **Campagnes** > **Geometrixx Outdoors** > **Campagnes par courriel**.
+1. Dans AEM sélectionnez **Sites** puis **Campagnes**, puis accédez à l’emplacement où vos campagnes par e-mail sont gérées. Dans l’exemple suivant, le chemin est **Sites** > **Campagnes** > **Geometrixx Outdoors** > **Campagnes par courriel**.
 
    >[!NOTE]
    >
@@ -67,8 +66,8 @@ Ce document contient des instructions détaillées.
 1. Sélectionnez **Créer**, puis **Créer une page**.
 1. Sélectionnez l’un des modèles disponibles spécifiques à Adobe Campaign auxquels vous vous connectez, puis cliquez sur **Suivant**. Par défaut, trois modèles sont disponibles :
 
-   * **Adobe Campaign Classic Email** : vous permet d’ajouter du contenu à un modèle prédéfini (deux colonnes) avant de l’envoyer à Adobe Campaign Classic pour diffusion.
-   * **Courriel** Adobe Campaign Standard : vous permet d’ajouter du contenu à un modèle prédéfini (deux colonnes) avant de l’envoyer à Adobe Campaign Standard pour diffusion.
+   * **Adobe Campaign Classic Email** : permet d&#39;ajouter du contenu à un modèle prédéfini (deux colonnes) avant de l&#39;envoyer à Adobe Campaign Classic pour diffusion.
+   * **Adobe Campaign Standard Email** : permet d&#39;ajouter du contenu à un modèle prédéfini (deux colonnes) avant de l&#39;envoyer vers Adobe Campaign Standard pour diffusion.
 
 1. Renseignez le **Titre** et éventuellement la **Description** et cliquez sur **Créer**. Le titre est utilisé comme objet de la newsletter/du courrier électronique sauf si vous le remplacez lors de la modification du courrier électronique.
 
@@ -88,14 +87,14 @@ La sélection du service de cloud sur l’onglet **Sites** est l’approche reco
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
-1. Sélectionnez **Modifier**, puis l&#39;onglet **Services Cloud** et faites défiler l&#39;écran vers le bas et cliquez sur le signe + pour ajouter une configuration, puis sélectionnez **Adobe Campaign**.
+1. Sélectionnez **Modifier** puis l’onglet **Services cloud** et faites défiler l’écran vers le bas, cliquez sur le signe + pour ajouter une configuration, puis sélectionnez **Adobe Campaign**.
 
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. Sélectionnez la configuration qui correspond à votre instance Adobe Campaign dans la liste déroulante, puis confirmez en cliquant sur **Enregistrer**.
 1. Vous pouvez afficher le modèle appliqué au courrier électronique en cliquant sur l’onglet **Adobe Campaign**. Si vous souhaitez sélectionner un autre modèle, vous pouvez y accéder à partir du courrier électronique en cours de modification.
 
-   Si vous souhaitez appliquer un modèle de diffusion de messagerie spécifique (à partir de Adobe Campaign) autre que le modèle de messagerie par défaut, dans **Propriétés**, sélectionnez l&#39;onglet **Adobe Campaign**. Entrez le nom interne du modèle de diffusion par courrier électronique dans l’instance Adobe Campaign associée.
+   Si vous souhaitez appliquer un modèle de diffusion email spécifique (à partir d’Adobe Campaign) autre que le modèle de courrier par défaut, dans **Propriétés**, sélectionnez l’onglet **Adobe Campaign**. Entrez le nom interne du modèle de diffusion par courrier électronique dans l’instance Adobe Campaign associée.
 
    Le modèle sélectionné détermine les champs de personnalisation disponibles dans Adobe Campaign.
 
@@ -107,13 +106,13 @@ En mode Création, à partir de la newsletter/du courrier électronique, vous ne
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Sélectionnez **Services Cloud** et cliquez sur **+** pour ajouter une configuration. Sélectionnez une des configurations affichées (peu importe laquelle). Cliquez ou appuyez sur le signe « **+** » pour ajouter une autre configuration, puis sélectionnez **Adobe Campaign**.
+1. Sélectionnez **Services cloud** et cliquez sur **+** pour ajouter une configuration. Sélectionnez une des configurations affichées (peu importe laquelle). Cliquez ou appuyez sur le signe « **+** » pour ajouter une autre configuration, puis sélectionnez **Adobe Campaign**.
 
    >[!NOTE]
    >
    >Vous pouvez également sélectionner les services de cloud en sélectionnant **Afficher les propriétés** sous l’onglet **Sites**.
 
-1. Sélectionnez la configuration qui correspond à votre instance Adobe Campaign dans la liste déroulante, supprimez la première configuration que vous avez créée et qui n’était pas pour Adobe Campaign, puis cliquez sur la coche.
+1. Sélectionnez la configuration qui correspond à votre instance Adobe Campaign dans la liste déroulante, supprimez la première configuration que vous avez créée qui ne l’était pas pour Adobe Campaign, puis validez en cliquant sur la coche.
 1. Pour sélectionner les modèles et ajouter du texte brut, passez à l’étape 4 de la procédure précédente.
 
 ### Modification du contenu d’un courrier électronique {#editing-email-content}
@@ -124,7 +123,7 @@ Pour modifier le contenu d’un courrier électronique :
 
    ![chlimage_1-20](assets/chlimage_1-20a.png)
 
-1. Si vous souhaitez modifier l’objet du courrier électronique ou ajouter du texte brut pour les utilisateurs qui ne vue pas le courrier électronique au format HTML, sélectionnez **Courriel** et ajoutez un objet et un texte. Cliquez sur l’icône de page pour générer automatiquement une version en texte brut à partir de la version HTML. Cliquez sur la coche lorsque vous avez terminé.
+1. Si vous souhaitez modifier l’objet de l’email ou ajouter du texte brut pour les utilisateurs qui ne visualiseront pas l’email en HTML, sélectionnez **Email** et ajoutez un objet et du texte. Cliquez sur l’icône de page pour générer automatiquement une version en texte brut à partir de la version HTML. Lorsque vous avez terminé, cliquez sur la coche.
 
    Vous pouvez personnaliser la newsletter à l’aide des champs de personnalisation d’Adobe Campaign. Pour ajouter un champ de personnalisation, ouvrez le sélecteur de champ de personnalisation en cliquant sur le bouton permettant d’afficher le logo Adobe Campaign. Vous pouvez alors sélectionner l’un des champs disponibles pour cette newsletter.
 
@@ -134,7 +133,7 @@ Pour modifier le contenu d’un courrier électronique :
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Ouvrez le panneau des composants sur le côté gauche de l’écran et sélectionnez **Adobe Campaign Newsletter** dans le menu déroulant pour rechercher ces composants.
+1. Ouvrez le panneau Composants sur le côté gauche de l’écran et sélectionnez **Newsletter Adobe Campaign** dans le menu déroulant pour trouver ces composants.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
@@ -150,15 +149,15 @@ Pour modifier le contenu d’un courrier électronique :
 
 Lorsque vous modifiez votre contenu, vous pouvez insérer les éléments suivants :
 
-* Champs de contexte Adobe Campaign. Il s’agit de champs que vous pouvez insérer dans votre texte et qui s’adapteront en fonction des données du destinataire (par exemple, prénom, nom ou toute donnée de la dimension cible).
-* Blocs de personnalisation Adobe Campaign. Il s’agit de blocs de contenu prédéfini qui ne sont pas liés aux données du destinataire, tels qu’un logo de marque ou un lien vers une page miroir.
+* Champs de contexte Adobe Campaign. Il s’agit de champs que vous pouvez insérer dans votre texte qui s’adaptera en fonction des données du destinataire (prénom, nom ou toute donnée de la dimension cible, par exemple).
+* Blocs de personnalisation Adobe Campaign. Il s’agit de blocs de contenu prédéfinis qui ne sont pas liés aux données du destinataire, comme le logo d’une marque ou un lien vers une page miroir.
 
 Pour une description complète des composants Adobe Campaign, reportez-vous à la section [Composants Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md).
 
 >[!NOTE]
 >
 >* Seuls les champs de la dimension cible **Profils** d’Adobe Campaign sont pris en compte.
->* Lors de l’affichage des propriétés à partir de **Sites**, vous n’avez pas accès aux champs contextuels Adobe Campaign. Vous pouvez y accéder directement à partir du courrier électronique en cours de modification.
+>* Lors de l’affichage des propriétés à partir de **Sites**, vous n’avez pas accès aux champs de contexte Adobe Campaign. Vous pouvez y accéder directement à partir du courrier électronique en cours de modification.
 
 
 Pour insérer une personnalisation :
@@ -176,15 +175,15 @@ Pour insérer une personnalisation :
    >**Pour Adobe Campaign standard :**
    >
    >* Les champs de contexte disponibles correspondent à la dimension cible de **Profils** dans Adobe Campaign.
-   >* Voir [Liaison d’une page d’AEM à un courriel Adobe Campaign](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
+   >* Voir [Liaison d’une page d’AEM à un email Adobe Campaign](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
 
    >
    >**Pour Adobe Campaign Classic :**
    >
-   >* Les champs contextuels disponibles sont récupérés dynamiquement à partir du schéma Adobe Campaign **nms:seedMember**. Les données d’extension cible sont extraites dynamiquement du worfklow qui contient la diffusion synchronisée avec le contenu. (Voir la section [Synchronisation du contenu créé dans AEM avec une diffusion de Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)).
+   >* Les champs de contexte disponibles sont récupérés dynamiquement à partir du schéma Adobe Campaign **nms:seedMember** . Les données d’extension cible sont extraites dynamiquement du worfklow qui contient la diffusion synchronisée avec le contenu. (Voir la section [Synchronisation du contenu créé dans AEM avec une diffusion depuis Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic) ).
       >
       >
-   * Pour ajouter ou masquer des éléments de personnalisation, voir [Gestion des champs de personnalisation et des blocs](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
+   * Pour ajouter ou masquer des éléments de personnalisation, voir [Gestion des champs et des blocs de personnalisation](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Important** : Tous les champs du tableau source doivent également se trouver dans le tableau du destinataire (ou le tableau du contact correspondant).
 
 
@@ -192,7 +191,7 @@ Pour insérer une personnalisation :
 
    ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-   Après avoir inséré des champs de contexte ou des blocs de personnalisation, vous pouvez afficher un aperçu de votre newsletter et tester les champs. Voir [Prévisualisation d’un bulletin d’information](#previewing-a-newsletter).
+   Après avoir inséré des champs de contexte ou des blocs de personnalisation, vous pouvez afficher un aperçu de votre newsletter et tester les champs. Voir [Aperçu d’une newsletter](#previewing-a-newsletter).
 
 ### Aperçu d’une newsletter {#previewing-a-newsletter}
 
@@ -216,13 +215,13 @@ Vous pouvez prévisualiser la newsletter telle qu’elle se présentera, ainsi q
 
 ### Approbation du contenu dans AEM {#approving-content-in-aem}
 
-Une fois le contenu terminé, vous pouvez commencer la procédure d’approbation. Accédez à l&#39;onglet **Workflow** de la boîte à outils et sélectionnez le processus **Approuver pour Adobe Campaign**.
+Une fois le contenu terminé, vous pouvez commencer la procédure d’approbation. Accédez à l’onglet **Workflow** de la boîte à outils et sélectionnez le workflow **Approuver pour Adobe Campaign**.
 
 Ce worfklow prêt à l’emploi comporte deux étapes : révision, puis approbation ou révision puis rejet. Néanmoins, ce worfklow peut être étendu et adapté à une procédure plus complexe.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-Pour approuver le contenu pour Adobe Campaign, appliquez le processus en sélectionnant **Workflow** et en sélectionnant **Approuver pour Adobe Campaign**, puis en cliquant sur **Workflow du Début**. Parcourez les étapes et approuvez le contenu. Vous pouvez également rejeter le contenu en sélectionnant **Rejeter** au lieu de **Approuver** dans la dernière étape du worfklow.
+Pour approuver le contenu pour Adobe Campaign, appliquez le workflow en sélectionnant **Workflow** et en sélectionnant **Approuver pour Adobe Campaign**, puis cliquez sur **Démarrer le workflow**. Parcourez les étapes et approuvez le contenu. Vous pouvez également rejeter le contenu en sélectionnant **Rejeter** au lieu de **Approuver** dans la dernière étape du worfklow.
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
@@ -260,11 +259,11 @@ Cela vous permet de diffuser le contenu. Grâce au code affiché sur la page, vo
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
-Si un bulletin d’information est lié à plusieurs diffusions, le nombre de diffusions liées (mais tous les ID ne sont pas affichés).
+Si une newsletter est liée à plusieurs diffusions, le nombre de diffusions liées (mais pas tous les identifiants) s&#39;affiche.
 
 Pour lier une page créée dans AEM à un courrier électronique Adobe Campaign
 
-1. Créez un courrier électronique en utilisant un modèle de courrier électronique spécifique à AEM. Pour plus d’informations, voir [Création de courriels en Adobe Campaign Standard](https://helpx.adobe.com/fr/campaign/standard/channels/using/creating-an-email.html).
+1. Créez un courrier électronique en utilisant un modèle de courrier électronique spécifique à AEM. Pour plus d’informations, voir [Création d’emails dans Adobe Campaign Standard](https://helpx.adobe.com/fr/campaign/standard/channels/using/creating-an-email.html) .
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -272,10 +271,10 @@ Pour lier une page créée dans AEM à un courrier électronique Adobe Campaign
 
    ![chlimage_1-37](assets/chlimage_1-37a.png)
 
-1. Sélectionnez **Lier à un contenu Adobe Experience Manager** dans la barre d’outils pour accéder à la liste de contenu disponible dans AEM.
+1. Sélectionnez **Lier avec un contenu Adobe Experience Manager** dans la barre d’outils pour accéder à la liste des contenus disponibles dans AEM.
 
    >[!NOTE]
-   Si l&#39;option **Lier à un Adobe Experience Manager** n&#39;apparaît pas dans la barre d&#39;actions, vérifiez que le **mode d&#39;édition du contenu** est correctement configuré sur **Adobe Experience Manager** dans les propriétés du courrier électronique.
+   Si l’option **Lier avec une Adobe Experience Manager** n’apparaît pas dans la barre d’actions, vérifiez que le **Mode d’édition du contenu** est correctement configuré sur **Adobe Experience Manager** dans les propriétés de l’email.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
 
@@ -317,20 +316,20 @@ Dans AEM, si une newsletter est associée à une diffusion unique, le code de di
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
-Si le bulletin d’information est lié à plusieurs diffusions, le nombre de diffusions liées (mais pas tous les identifiants).
+Si la newsletter est liée à plusieurs diffusions, le nombre de diffusions liées (mais pas tous les identifiants) s&#39;affiche.
 [!NOTE]
 L’étape du worfklow **Publication dans Adobe Campaign** est obsolète dans AEM 6.1. Cette étape faisait partie de l’intégration d’AEM 6.0 à Adobe Campaign et n’est plus nécessaire.
 
 Pour synchroniser le contenu créé dans AEM avec une diffusion à partir d’Adobe Campaign :
 
-1. Créez une diffusion ou ajoutez une activité de diffusion à un processus de campagne en sélectionnant le modèle de diffusion **diffusion de courriel avec contenu AEM (mailAEMContent)**.
+1. Créez une diffusion ou ajoutez une activité de diffusion à un workflow de campagne en sélectionnant le modèle de diffusion **Diffusion email avec contenu AEM (mailAEMContent)** .
 
    ![chlimage_1-40](assets/chlimage_1-40a.png)
 
-1. Sélectionnez **Synchroniser** dans la barre d’outils pour accéder à la liste de contenu disponible dans AEM.
+1. Sélectionnez **Synchroniser** dans la barre d’outils pour accéder à la liste des contenus disponible dans AEM.
 
    >[!NOTE]
-   Si l&#39;option **Synchroniser** n&#39;apparaît pas dans la barre d&#39;outils de la diffusion, vérifiez que le champ **Mode de modification du contenu** est correctement configuré dans **AEM** en sélectionnant **Propriétés** > **Avancé**.
+   Si l&#39;option **Synchroniser** n&#39;apparaît pas dans la barre d&#39;outils de la diffusion, vérifiez que le champ **Mode d&#39;édition du contenu** est correctement configuré dans **AEM** en sélectionnant **Propriétés** > **Avancé**.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
@@ -354,7 +353,7 @@ Pour synchroniser le contenu créé dans AEM avec une diffusion à partir d’Ad
 
    >[!NOTE]
    * Une fois la diffusion et le contenu synchronisés, le contenu de la diffusion dans Adobe Campaign est en lecture seule. L’objet du courrier électronique et le contenu ne peuvent plus être modifiés.
-   * Si le contenu est mis à jour dans AEM lorsqu’il est lié à une diffusion dans Adobe Campaign, il est mis à jour automatiquement dans la diffusion lors de l’analyse de la diffusion. La synchronisation peut également être exécutée manuellement à l’aide du bouton **Actualiser le contenu maintenant**.
+   * Si le contenu est mis à jour dans AEM lorsqu’il est lié à une diffusion dans Adobe Campaign, il est mis à jour automatiquement dans la diffusion lors de l’analyse de la diffusion. La synchronisation peut également être exécutée manuellement à l’aide du bouton **Actualiser le contenu maintenant** .
    * Vous pouvez annuler la synchronisation entre une diffusion et AEM contenu à l’aide du bouton **Désynchroniser**. Cette opération n’est disponible que si un contenu est déjà synchronisé avec la diffusion. Pour synchroniser un autre contenu avec une diffusion, vous devez annuler la synchronisation de contenu actuelle avant de pouvoir établir une nouvelle liaison.
    * Si le contenu local est désynchronisé, il est conservé et est modifiable dans Adobe Campaign. Si vous resynchronisez le contenu après l’avoir modifié, vous perdrez toutes les modifications.
    * Pour les diffusions récurrentes et continues, la synchronisation avec le contenu AEM est désactivée chaque fois que la diffusion est exécutée.
