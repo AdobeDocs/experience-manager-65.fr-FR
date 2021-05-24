@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
-translation-type: tm+mt
-source-git-commit: 3cbbad3ce9d93a353f48fc3206df989a8bf1991a
+exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 66%
 
 ---
-
 
 # Réduction des problèmes de sérialisation dans AEM{#mitigating-serialization-issues-in-aem}
 
@@ -26,11 +25,11 @@ ht-degree: 66%
 
 Le fichier JAR d’agent inclus dans ce module est la distribution de NotSoSerial modifiée par Adobe.
 
-  NotSoSerial est une solution de niveau Java à un problème de niveau Java, et il n’est pas spécifique à AEM. Il ajoute un contrôle en amont à une tentative de désérialisation d’un objet. Cette vérification testera un nom de classe par rapport à une liste autorisée et/ou une liste bloquée de type pare-feu. En raison du nombre limité de classes dans la liste bloquée par défaut, il est peu probable que cela ait un impact sur vos systèmes ou votre code.
+  NotSoSerial est une solution de niveau Java à un problème de niveau Java, et il n’est pas spécifique à AEM. Il ajoute un contrôle en amont à une tentative de désérialisation d’un objet. Cette vérification teste un nom de classe par rapport à une liste autorisée et/ou une liste bloquée de type pare-feu. En raison du nombre limité de classes dans la liste bloquée par défaut, il est peu probable que cela ait un impact sur vos systèmes ou votre code.
 
-Par défaut, l&#39;agent effectue une vérification de liste bloquée des classes vulnérables connues actuelles. Cette liste bloquée est destinée à vous protéger de la liste actuelle d&#39;exploits qui utilisent ce type de vulnérabilité.
+Par défaut, l’agent effectue un contrôle de liste bloquée sur les classes vulnérables connues actuelles. Cette liste bloquée a pour but de vous protéger de la liste actuelle des exploits qui utilisent ce type de vulnérabilité.
 
-La liste bloquée et la liste autorisée peuvent être configurées en suivant les instructions de la section [Configuration de l&#39;agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) de cet article.
+La liste bloquée et la liste autorisée peuvent être configurées en suivant les instructions de la section [Configuration de l’agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) de cet article.
 
 L’agent est conçu pour vous aider à limiter les dernières classes vulnérables connues. Si votre projet désérialise des données non approuvées, il peut être vulnérable aux attaques par déni de service, aux attaques de mémoire insuffisante et aux futures attaques inconnues de désérialisation.
 
@@ -44,12 +43,12 @@ Adobe prend officiellement en charge Java 6, 7 et 8, toutefois, il semble que N
 
 1. Installez le lot **com.adobe.cq.cq-serialization-tester**.
 
-1. Accédez à la console Web du lot à l&#39;adresse `https://server:port/system/console/bundles`
+1. Accédez à la console Web du bundle à l’adresse `https://server:port/system/console/bundles`
 1. Recherchez le lot de sérialisation et démarrez-le. Cela devrait charger automatiquement et dynamiquement l’agent NotSoSerial.
 
 ## Installation de l’agent sur les serveurs d’applications {#installing-the-agent-on-application-servers}
 
-L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM pour les serveurs d’applications. Cependant, vous pouvez l’extraire du fichier de distribution JAR d’AEM et l’utiliser avec la configuration de votre serveur d’applications :
+L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM pour les serveurs applicatifs. Cependant, vous pouvez l’extraire du fichier de distribution JAR d’AEM et l’utiliser avec la configuration de votre serveur d’applications :
 
 1. Tout d’abord, téléchargez le fichier QuickStart AEM et extrayez-le :
 
@@ -57,7 +56,7 @@ L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM p
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Accédez à l’emplacement de l’AEM décompressé de démarrage rapide et copiez le dossier `crx-quickstart/opt/notsoserial/` dans le dossier `crx-quickstart` de l’installation AEM du serveur d’applications.
+1. Accédez à l’emplacement du démarrage rapide de l’AEM décompressé et copiez le dossier `crx-quickstart/opt/notsoserial/` dans le dossier `crx-quickstart` de l’installation AEM serveur d’applications.
 
 1. Remplacez la propriété de `/opt` par l’utilisateur exécutant le serveur :
 
@@ -69,11 +68,11 @@ L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM p
 
 ## Configuration de l’agent  {#configuring-the-agent}
 
-La configuration par défaut est appropriée pour la plupart des installations. Cela inclut une liste bloquée de classes vulnérables connues d&#39;exécution à distance et une liste autorisée de paquets où la désérialisation de données fiables devrait être relativement sûre.
+La configuration par défaut est appropriée pour la plupart des installations. Cela inclut une liste bloquée de classes vulnérables connues d’exécution distante et une liste autorisée de packages où la désérialisation de données approuvées doit être relativement sûre.
 
    La configuration de pare-feu est dynamique et peut être changée à tout moment en :
 
-1. Accéder à la console Web à `https://server:port/system/console/configMgr`
+1. Accédez à la console web à l’adresse `https://server:port/system/console/configMgr`
 1. recherchant **Configuration du pare-feu de désérialisation** et en cliquant dessus.
 
    >[!NOTE]
@@ -85,17 +84,17 @@ La configuration par défaut est appropriée pour la plupart des installations. 
 
 Cette configuration contient la journalisation de la liste autorisée, de la liste bloquée et de la désérialisation.
 
-**Autoriser la liste**
+**Listes autorisées**
 
-Dans la section permettant la mise en vente, il s’agit de classes ou de préfixes de package qui seront autorisés pour la désérialisation. Il est important de savoir que si vous désérialisez les classes vous-même, vous devrez ajouter les classes ou les paquets à cette liste autorisée.
+Dans la section Liste autorisée, il s’agit de classes ou de préfixes de package qui seront autorisés pour la désérialisation. Il est important de savoir que si vous désérialisez des classes, vous devrez ajouter les classes ou les modules à cette liste autorisée.
 
-**Liste des blocs**
+**Liste bloquée**
 
-Dans la section de liste des blocs, il y a des classes qui ne sont jamais autorisées pour la désérialisation. L’ensemble initial de ces classes est limité à celles qui sont considérées comme vulnérables aux attaques d’exécution à distance. La liste bloquée est appliquée avant toute entrée répertoriée autorisée.
+Dans la section de liste bloquée se trouvent des classes qui ne sont jamais autorisées pour la désérialisation. L’ensemble initial de ces classes est limité à celles qui sont considérées comme vulnérables aux attaques d’exécution à distance. La liste bloquée est appliquée avant toute entrée de liste autorisée.
 
-**Journalisation du diagnostic**
+**Journalisation des diagnostics**
 
-Dans la section relative à la journalisation des diagnostics, vous pouvez choisir plusieurs options de connexion lors de la désérialisation. Les désérialisations sont uniquement consignées lors de la première utilisation, elles ne le sont pas pour les utilisations suivantes.
+Dans la section relative à la journalisation des diagnostics, vous pouvez choisir plusieurs options de journalisation lorsque la désérialisation a lieu. Les désérialisations sont uniquement consignées lors de la première utilisation, elles ne le sont pas pour les utilisations suivantes.
 
 La valeur par défaut **class-name-only** vous notifie les classes qui sont désérialisées.
 
@@ -113,7 +112,7 @@ Pour plus d’informations sur la résolution des incidents avec l’agent, voir
 
 >[!NOTE]
 >
->Si vous ajoutez `org.apache.commons.collections.functors` à la liste autorisée, la vérification d&#39;intégrité échoue toujours.
+>Si vous ajoutez `org.apache.commons.collections.functors` à la liste autorisée, le contrôle de l’intégrité échoue toujours.
 
 ## Gestion des erreurs lors du chargement dynamique de l’agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -133,7 +132,7 @@ Pour charger l’agent manuellement, suivez les instructions ci-dessous :
 
    >[!NOTE]
    >
-   >La distribution par Adobe du fichier jar de l&#39;agent NotSoSerial se trouve dans le dossier `crx-quickstart/opt/notsoserial/` de votre installation AEM.
+   >La distribution Adobe du fichier jar de l’agent NotSoSerial se trouve dans le dossier `crx-quickstart/opt/notsoserial/` de votre installation AEM.
 
 1. Arrêtez et redémarrez la JVM.
 
