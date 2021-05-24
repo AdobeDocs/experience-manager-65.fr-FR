@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '764'
 ht-degree: 85%
 
 ---
-
 
 # Modes d’exécution{#run-modes}
 
@@ -98,7 +97,7 @@ Le mode d’exécution est indiqué par un suffixe ajouté au nom du dossier. Ce
 
 * `config.publish`
 
-   Utilisé pour le mode d’exécution Publication
+   Utilisé pour le mode d’exécution de publication
 
 * `config.<run-mode>`
 
@@ -123,9 +122,9 @@ Ces dossiers sont de type `nt:folder` et doivent contenir le lot approprié.
 
 Si vous avez défini des configurations pour plusieurs modes d’exécution, vous devez définir celle à utiliser au démarrage. Différentes méthodes permettent de spécifier le mode d’exécution à utiliser. La séquence de résolution est la suivante :
 
-1. [ `sling.properties` approuvé](#using-the-sling-properties-file)
-1. [ `-r` option](#using-the-r-option)
-1. [propriétés système (`-D`)](#using-a-system-property-in-the-start-script)
+1. [ ](#using-the-sling-properties-file)
+1. [ ](#using-the-r-option)
+1. [propriétés système (](#using-a-system-property-in-the-start-script)
 
 1. [Détection du nom de fichier](#filename-detection-renaming-the-jar-file)
 
@@ -139,13 +138,13 @@ Vous pouvez utiliser le fichier `sling.properties` pour définir le mode d’ex�
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Ajoutez les propriétés suivantes ; l’exemple suivant est destiné à author :
+1. Ajoutez les propriétés suivantes : l’exemple suivant est destiné à l’auteur :
 
    `sling.run.modes=author`
 
 ### Utilisation de l’option -r {#using-the-r-option}
 
-Un mode d&#39;exécution personnalisé peut être activé à l&#39;aide de l&#39;option `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
+Un mode d’exécution personnalisé peut être activé à l’aide de l’option `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -155,13 +154,13 @@ java -jar cq-56-p4545.jar -r dev
 
 Une propriété système dans le script de démarrage peut être utilisée pour spécifier le mode d’exécution.
 
-* Par exemple, utilisez les méthodes suivantes pour lancer une instance en tant qu’instance de publication de production située aux Etats-Unis :
+* Par exemple, utilisez ce qui suit pour lancer une instance en tant qu’instance de publication de production située aux États-Unis :
 
    `-Dsling.run.modes=publish,prod,us`
 
 ### Détection de nom de fichier : attribution d’un nouveau nom au fichier JAR {#filename-detection-renaming-the-jar-file}
 
-Les deux modes d&#39;exécution d&#39;installation suivants peuvent être activés en renommant le fichier JAR d&#39;installation avant l&#39;installation :
+Les deux modes d&#39;exécution d&#39;installation suivants peuvent être activés en renommant le fichier jar d&#39;installation avant l&#39;installation :
 
 * publish
 * Auteur 
