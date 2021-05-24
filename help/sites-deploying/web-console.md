@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 75%
 
 ---
-
 
 # Console web{#web-console}
 
@@ -55,7 +54,7 @@ L’onglet **Configuration** est accessible soit via :
 
    **OSGi >**
 
-* L&#39;URL ; par exemple :
+* L’URL ; par exemple :
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -88,29 +87,29 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 * **Réinitialiser**
 
-   Réinitialisez les paramètres affichés à l&#39;écran à ceux enregistrés en dernier.
+   Réinitialisez les paramètres affichés à l’écran pour les derniers enregistrés.
 
 * **Supprimer**
 
    Supprimez la configuration actuelle. S’il s’agit d’une configuration standard, les paramètres sont renvoyés aux paramètres par défaut. Si elle a été créée à partir d’une configuration d’usine, l’instance spécifiée est supprimée.
 
-* **Annuler**
+* **Délier**
 
    Déliez la configuration actuelle du lot.
 
 * **Annuler**
 
-   Annule les modifications en cours.
+   Annuler les modifications en cours.
 
 ## Lots {#bundles}
 
-L&#39;onglet **Bundles** est le mécanisme d&#39;installation des lots OSGi requis pour l&#39;AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
+L’onglet **Lots** est le mécanisme d’installation des lots OSGi requis pour AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
 
 * Le menu déroulant :
 
    **OSGi >**
 
-* L&#39;URL ; par exemple :
+* L’URL ; par exemple :
 
    `http://localhost:4502/system/console/bundles`
 
@@ -122,21 +121,21 @@ En utilisant cet onglet vous pouvez :
 
 * **Installation ou mise à jour**
 
-   Vous pouvez **Parcourir** pour trouver le fichier contenant votre lot et indiquer s&#39;il doit **Début** immédiatement et à quel **niveau de Début**.
+   Vous pouvez **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **Démarrer** immédiatement et à quel **niveau de départ**.
 
 * **Recharger**
 
    Actualise la liste affichée.
 
-* **Actualiser les packages**
+* **Actualisation des modules**
 
-   Ceci vérifiera les références de tous les paquets et actualisera si nécessaire.
+   Cela vérifiera les références de tous les packages et les actualisera si nécessaire.
 
    Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option permettra de vérifier et de déplacer toutes les références vers la nouvelle version, ce qui permettra d’arrêter l’ancienne version.
 
 * **Début**
 
-   Début un lot en fonction du niveau de début spécifié.
+   Commence un lot en fonction du niveau de départ spécifié.
 
 * **Arrêter**
 
@@ -146,9 +145,9 @@ En utilisant cet onglet vous pouvez :
 
    Désinstalle le lot du système.
 
-* **voir le statut**
+* **voir l’état**
 
-   La liste spécifie l&#39;état actuel de l&#39;offre groupée ; cliquez sur le nom d&#39;un lot spécifique et affichez d&#39;autres informations.
+   La liste spécifie l’état actuel du lot ; Cliquez sur le nom d’un lot spécifique avec des informations supplémentaires.
 
 >[!NOTE]
 >
@@ -156,13 +155,13 @@ En utilisant cet onglet vous pouvez :
 
 ## Composants {#components}
 
-L&#39;onglet **Composants** vous permet d&#39;activer et/ou de désactiver les différents composants. Il est accessible soit par :
+L’onglet **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible soit par :
 
 * Le menu déroulant :
 
    **Principal >**
 
-* L&#39;URL ; par exemple :
+* L’URL ; par exemple :
 
    `http://localhost:4502/system/console/components`
 
@@ -179,4 +178,3 @@ En cliquant sur le nom d’un composant spécifique, vous obtenez plus d’infor
 >L’activation ou la désactivation d’un composant n’est effective qu’une fois qu’AEM/CRX est redémarré.
 >
 >L’état de démarrage est défini dans le descripteur du composant, qui est généré lors du développement et stocké dans le lot lors de la création du lot. 
-
