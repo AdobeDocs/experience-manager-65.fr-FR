@@ -10,14 +10,13 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 64%
 
 ---
-
 
 # Personnalisation de la console Sites web (IU classique){#customizing-the-websites-console-classic-ui}
 
@@ -120,13 +119,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 ### Test du nouveau service {#testing-the-new-service}
 
-Lorsque vous ouvrez la console Administration de sites web et parcourez votre site, le navigateur génère un appel ajax pour obtenir l’objet JSON qui est utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx`, la requête suivante est envoyée au serveur AEM pour créer la console :
+Lorsque vous ouvrez la console Administration de sites web et parcourez votre site, le navigateur génère un appel ajax pour obtenir l’objet JSON qui est utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx` , la requête suivante est envoyée au serveur AEM pour créer la console :
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Pour vous assurer que le nouveau service s’exécute après le déploiement du lot où il réside, procédez comme suit :
 
-1. Pointez votre navigateur sur l’URL suivante :
+1. Pointez votre navigateur vers l’URL suivante :
    [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. La réponse doit afficher les nouvelles propriétés comme suit :
@@ -135,9 +134,9 @@ Pour vous assurer que le nouveau service s’exécute après le déploiement du 
 
 ### Affichage de la nouvelle colonne {#displaying-the-new-column}
 
-La dernière étape consiste à adapter la structure des noeuds de la console d&#39;administration des sites Web pour afficher la nouvelle propriété pour toutes les pages de Geometrixx en superposant `/libs/wcm/core/content/siteadmin`. Procédez comme suit :
+La dernière étape consiste à adapter la structure des noeuds de la console Administration des sites web afin d’afficher la nouvelle propriété pour toutes les pages de Geometrixx en superposant `/libs/wcm/core/content/siteadmin`. Procédez comme suit :
 
-1. En CRXDE Lite, créez la structure des noeuds `/apps/wcm/core/content` avec des noeuds de type `sling:Folder` pour refléter la structure `/libs/wcm/core/content`.
+1. Dans CRXDE Lite, créez la structure des noeuds `/apps/wcm/core/content` avec des noeuds de type `sling:Folder` pour refléter la structure `/libs/wcm/core/content`.
 
 1. Copiez le noeud `/libs/wcm/core/content/siteadmin` et collez-le sous `/apps/wcm/core/content`.
 
@@ -146,7 +145,7 @@ La dernière étape consiste à adapter la structure des noeuds de la console d&
    * Supprimez **pageText**
 
    * Définissez **pathRegex** sur `/content/geometrixx(/.*)?`
-La configuration de la grille sera ainsi principale pour tous les sites Web Geometrixx.
+La configuration de la grille sera ainsi principale pour tous les sites web geometrixx.
 
    * Définissez **storeProxySuffix** sur `.pages.json`
 
@@ -160,18 +159,18 @@ La configuration de la grille sera ainsi principale pour tous les sites Web Geom
 
 1. Ajoutez un noeud `starred` (de type **nt:unstructured**) sous `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` avec les propriétés suivantes :
 
-   * **dataIndex** :  `starred` de type chaîne
+   * **dataIndex** :  `starred` de type Chaîne
 
-   * **en-tête** :  `Starred` de type chaîne
+   * **header** :  `Starred` de type Chaîne
 
-   * **xtype** :  `gridcolumn` de type chaîne
+   * **xtype**:  `gridcolumn` de type Chaîne
 
 1. (Facultatif) Déposez les colonnes que vous ne souhaitez pas afficher à `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
-1. `/siteadmin` est un chemin de vanité qui, par défaut, pointe vers  `/libs/wcm/core/content/siteadmin`.
-Pour rediriger ceci vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour qu&#39;elle ait une valeur supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
+1. `/siteadmin` est un chemin de redirection vers un microsite qui, par défaut, pointe vers  `/libs/wcm/core/content/siteadmin`.
+Pour la rediriger vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour qu’elle ait une valeur supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
 
-1. Accédez à la console d’administration des sites Web et accédez au site Geometrixx :
+1. Accédez à la console Administration de sites web et accédez au site Geometrixx :
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
 
 1. La nouvelle colonne nommée **Starred** affiche des informations personnalisées comme suit :
@@ -184,4 +183,4 @@ Pour rediriger ceci vers votre version de siteadmin sur `/apps/wcm/core/content/
 
 ### Exemple de module {#sample-package}
 
-Le résultat de ce didacticiel est disponible dans le package [Personnalisation du module Administration Console](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) des sites Web sur le partage de package.
+Le résultat de ce tutoriel est disponible dans le package [Personnalisation de la console d’administration des sites web](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) du partage de modules.
