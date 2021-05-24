@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 257f3e4a-4b59-4cbb-bf61-f72f173676e6
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 85%
 
 ---
-
 
 # Articles sur la procédure de configuration{#configuration-how-to-articles}
 
@@ -29,4 +28,3 @@ Les rubriques suivantes décrivent comment effectuer certaines tâches de déplo
 * [Conseils de réglage de la performance](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 * [Comment supprimer des fonctions de l’écran de bienvenue](/help/sites-developing/customizing-the-welcome-console.md)
 * [Comment désactiver la fonction de suivi de l’emplacement](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
-
