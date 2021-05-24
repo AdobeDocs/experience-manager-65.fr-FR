@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 93%
 
 ---
-
 
 # Premières étapes pour les auteurs{#first-steps-for-authors}
 
@@ -58,9 +57,9 @@ Si votre instance comprend déjà des pages ou si vous venez d’en créer une, 
 
 * [Annulation et rétablissement des modifications de page](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Utilisation du mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode) (pour avoir un aperçu du contenu avant publication)
-* [Verrouillage d’une page](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Verrouillage d’une page   ](/help/sites-authoring/editing-content.md#locking-a-page)
 
-### Publication d’une page  {#publishing-a-page}
+### Publication d’une page {#publishing-a-page}
 
 Dès que vous avez fini de modifier la page, vous pouvez [la publier (ou l’activer)](/help/sites-authoring/publishing-pages.md#main-pars-title-10) afin que les visiteurs de votre site web puissent y accéder :
 
