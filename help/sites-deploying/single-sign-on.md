@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 81%
 
 ---
 
-
 # Connexion unique {#single-sign-on}
 
 La connexion unique permet à l’utilisateur d’accéder à plusieurs systèmes après avoir fourni une seule fois ses informations d’identification (telles qu’un nom d’utilisateur et un mot de passe). Un système distinct (appelé l’authentificateur de confiance) effectue une authentification et fournit à Experience Manager les informations d’identification de l’utilisateur. Experience Manager vérifie les autorisations d’accès de l’utilisateur et les applique (c’est-à-dire qu’il détermine les ressources auxquelles l’utilisateur a accès).
 
-Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) traite les résulats de l’authentification que l’authentificateur de confiance fournit. Le gestionnaire d’authentification unique recherche un identifiant d’authentification unique (identifiant d’authentification unique) comme valeur d’un attribut spécial aux emplacements suivants dans cet ordre :
+Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) traite les résulats de l’authentification que l’authentificateur de confiance fournit. Le gestionnaire d’authentification SSO recherche un ssid (identifiant SSO) comme valeur d’un attribut spécial aux emplacements suivants dans cet ordre :
 
 1. En-têtes de la demande
 1. Cookies
@@ -36,7 +35,7 @@ Configurez les deux services suivants pour identifier le nom de l’attribut qui
 * Le module de connexion.
 * Le service d’authentification SSO.
 
-Vous devez spécifier le même nom d’attribut pour les deux services. L&#39;attribut est inclus dans le `SimpleCredentials` fourni à `Repository.login`. La valeur de l’attribut est inutile et ignorée. Sa simple présence est importante et vérifiée.
+Vous devez spécifier le même nom d’attribut pour les deux services. L’attribut est inclus dans la balise `SimpleCredentials` fournie à `Repository.login`. La valeur de l’attribut est inutile et ignorée. Sa simple présence est importante et vérifiée.
 
 ## CONFIGURATION SSO {#configuring-sso}
 
@@ -47,7 +46,7 @@ Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionn
    Par exemple, pour l’ensemble NTLM :
 
    * **Chemin d’accès :** en fonction des besoins, par exemple, `/`
-   * **Noms des** en-têtes :  `LOGON_USER`
+   * **Noms des en-têtes** :  `LOGON_USER`
    * **Format** d’ID :  `^<DOMAIN>\\(.+)$`
 
       Où `<*DOMAIN*>` est remplacé par votre propre nom de domaine.
@@ -55,7 +54,7 @@ Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionn
 
    * **Chemin d’accès :** en fonction des besoins, par exemple, `/`
    * **Noms des en-têtes** : remote_user
-   * **Format d’ID:** En l’état
+   * **Format d’ID :** AsIs
 
    Pour SiteMinder :
 
@@ -91,8 +90,8 @@ Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionn
 
 >
 >
-Dans `disp_iis.ini`, définissez :
->(voir [installation du répartiteur avec Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) pour plus de détails).
+Dans `disp_iis.ini` défini :
+>(voir [installation de Dispatcher avec Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) pour plus de détails)
 >
 >* `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
 >* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « Basic » par son « Basic » équivalent)
@@ -114,7 +113,7 @@ Vous pouvez voir quel gestionnaire d’authentification est appliqué à n’imp
 
 `http://localhost:4502/system/console/slingauth`
 
-Le gestionnaire qui correspond le mieux au chemin est le premier à être appelé. Par exemple, si vous configurez handler-A pour le chemin `/` et handler-B pour le chemin `/content`, une requête à `/content/mypage.html` requête handler-B en premier.
+Le gestionnaire qui correspond le mieux au chemin est le premier à être appelé. Par exemple, si vous configurez handler-A pour le chemin `/` et handler-B pour le chemin `/content`, une requête vers `/content/mypage.html` interrogera d’abord le gestionnaire-B.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
@@ -132,11 +131,11 @@ Utilisation de la configuration suivante :
 
 * **Chemin**: `/`
 
-* **Noms des** en-têtes :  `TestHeader`
+* **Noms des en-têtes** :  `TestHeader`
 
-* **Noms** des cookies :  `TestCookie`
+* **Noms des cookies** :  `TestCookie`
 
-* **Noms des** paramètres :  `TestParameter`
+* **Noms des paramètres** :  `TestParameter`
 
 * **Format** d’ID :  `AsIs`
 
@@ -161,7 +160,7 @@ Transfer-Encoding: chunked
 Cela fonctionne également si vous demandez :
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Vous pouvez également utiliser la commande curl suivante pour envoyer l&#39;en-tête `TestHeader` à `admin:`
+Vous pouvez également utiliser la commande curl suivante pour envoyer l’en-tête `TestHeader` à `admin:`.
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
@@ -174,14 +173,14 @@ Lorsque vous utilisez le SSO, la connexion et la déconnexion sont traités en e
 
 Le lien de déconnexion sur l’écran de bienvenue peut être supprimé en suivant les étapes suivantes.
 
-1. Recouvrement `/libs/cq/core/components/welcome/welcome.jsp` à `/apps/cq/core/components/welcome/welcome.jsp`
+1. Superposez `/libs/cq/core/components/welcome/welcome.jsp` à `/apps/cq/core/components/welcome/welcome.jsp`
 1. Supprimez la partie suivante de JSP.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Pour supprimer le lien de déconnexion disponible dans le menu personnel de l’utilisateur dans le coin supérieur droit, procédez comme suit :
 
-1. Recouvrement `/libs/cq/ui/widgets/source/widgets/UserInfo.js` à `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Superposez `/libs/cq/ui/widgets/source/widgets/UserInfo.js` à `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. Supprimez la partie suivante du fichier :
 
@@ -193,4 +192,3 @@ Pour supprimer le lien de déconnexion disponible dans le menu personnel de l’
    });
    menu.addSeparator();
    ```
-
