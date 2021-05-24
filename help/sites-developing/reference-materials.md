@@ -11,14 +11,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 5b33f615f1c82ec7cf80ae00c440cb5e3f0741fa
+exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 87%
 
 ---
-
 
 # Guides des API {#api-guides}
 
@@ -29,7 +28,7 @@ Adobe Experience Manager (AEM) fournit plusieurs API pour développer des appl
 * [Guide pour l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 * [Documentation de l’API Widgets (interface utilisateur classique)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
 * [Référence de l’API JavaScript de structure des tests de l’interface utilisateur](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
-* [Référence de l’API JavaScript de base de l’éditeur](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
+* [Référence de l’API JavaScript principale de l’éditeur](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
 Références de l’API JavaScript de structure du SDK de l’éditeur d’application monopage AEM :
 
@@ -42,7 +41,7 @@ API de diffusion et de gestion de contenu AEM :
 
 * Composants principaux (JSON)
 
-   * [Exportateur JSON](/help/sites-developing/json-exporter.md) 
+   * [Exportateur JSON](/help/sites-developing/json-exporter.md)
    * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
    * Pour plus d’informations, consultez la [section Composants du Guide de l’utilisateur pour le développement](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js).
 
