@@ -10,14 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ca25e66b280db479f69c487753a557b0240233da
+exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
 
 ---
-
 
 # Intégration à Adobe Analytics{#integrating-with-adobe-analytics}
 
@@ -35,11 +34,11 @@ Les données incluent la page et les données sur l’utilisateur, par exemple 
 
 Les pages suivantes vous aident à configurer l’intégration :
 
-* [Connexion à Adobe Analytics et création de structures](/help/sites-administering/adobeanalytics-connect.md)
-* [Configuration du suivi des liens pour Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
-* [Mise en correspondance des données de composant avec les propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
-* [Configuration du suivi vidéo pour Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-* [Classifications Adobe](/help/sites-administering/adobeanalytics-classifications.md)
+* [Connexion à Adobe Analytics et création de structures](/help/sites-administering/adobeanalytics-connect.md)
+* [Configuration du suivi des liens Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Mappage des données de composant aux propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
+* [Configuration du suivi vidéo pour Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
+* [Adobe Classifications](/help/sites-administering/adobeanalytics-classifications.md)
 
 Vous pouvez également utiliser l’[assistant de souscription](/help/sites-administering/opt-in.md) pour exécuter facilement l’intégration.
 
@@ -59,11 +58,12 @@ Voir :
 >Si vous utilisez Adobe Analytics avec une configuration de proxy personnalisée, vous devez [configurer deux lots OSGi](/help/sites-deploying/configuring-osgi.md) (par exemple, avec la console web) requis pour les configurations de proxy **Apache HTTP Client**. Les deux lots sont requis, car certaines fonctionnalités d’AEM utilisent les API 3.x, tandis que d’autres utilisent les API 4.x. Configurer :
 >
 >* **Day Commons HTTP Client 3.1** pour configurer l’API 3.x ;
->  par exemple, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->
->* **Apache HTTP Components Proxy Configuration** pour configurer l’API 4.x ;
->  par exemple, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
->
+   >  par exemple, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+   >
+   >
+* **Apache HTTP Components Proxy Configuration** pour configurer l’API 4.x ;
+   >  par exemple, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
+>
 
 
