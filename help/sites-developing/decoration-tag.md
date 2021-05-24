@@ -1,14 +1,13 @@
 ---
 title: Balise décorative
 description: Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés.
-translation-type: tm+mt
-source-git-commit: be1c0e21216b1014a36f88d13557f6e1d7a87c0a
+exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 93%
 
 ---
-
 
 # Balise décorative{#decoration-tag}
 
@@ -47,7 +46,7 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
 
 ## Contrôles de script {#script-controls}
 
-Le comportement de l’enveloppe diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément.
+Le comportement de l’élément wrapper diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément.
 
 ### HTL {#htl}
 
@@ -147,7 +146,6 @@ Lors de l’inclusion d’un composant à l’aide de `cq:includ`e ou `sling:inc
 
 ### Arborescence de décision {#decision-tree-1}
 
-L&#39;arborescence de décision suivante illustre comment `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` et `decorationTagName` affectent le comportement de l&#39;enveloppe.
+L’arborescence de décision suivante illustre la manière dont `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` et `decorationTagName` affectent le comportement de l’élément wrapper.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)
-
