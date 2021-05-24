@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1795'
 ht-degree: 93%
 
 ---
-
 
 # Mise en page réactive  {#responsive-layout}
 
@@ -229,11 +228,11 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    * **Flotter sur une nouvelle ligne**
 
-      Le composant sera déplacé sur une nouvelle ligne, en fonction de l’espace disponible dans la grille.
+      Le composant est déplacé vers une nouvelle ligne, selon l’espace disponible dans la grille.
 
    * **Masquer le composant**
 
-      Le composant sera rendu invisible (il peut être restauré à partir de la barre d’outils du conteneur de mise en page).
+      Le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils pour ce mode s’affiche.
@@ -244,7 +243,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Afficher les composants**  masqués - Afficher tous les composants ou les composants individuels. Le nombre indique le nombre de composants masqués actuellement.Le compteur indique le nombre de composants masqués.
+   * **Afficher les composants masqués**  : affiche tous les composants ou des composants individuels. Le nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
@@ -265,8 +264,8 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
    >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
 
    * **Afficher les**
-composantsSélectionnez les composants parents pour afficher la barre d&#39;outils d&#39;action avec la fonction 
-**Afficher les** composants masqués, option. Dans cet exemple, deux composants sont masqués.
+composants : sélectionnez les composants parents pour afficher la barre d’outils d’action avec le 
+**Afficher les** composants masqués . Dans cet exemple, deux composants sont masqués.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
@@ -274,4 +273,3 @@ composantsSélectionnez les composants parents pour afficher la barre d&#39;outi
    ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
 
    Sélectionnez **Restaurer tout** pour afficher tous les composants masqués.
-
