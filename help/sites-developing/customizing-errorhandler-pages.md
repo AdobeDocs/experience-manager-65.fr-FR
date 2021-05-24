@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
-translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 83%
 
 ---
-
 
 # Personnalisation des pages affichées par le gestionnaire d’erreurs{#customizing-pages-shown-by-the-error-handler}
 
@@ -24,14 +23,14 @@ AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-Il existe des scripts fournis par le système (sous `/libs/sling/servlet/errorhandler`) pour répondre aux codes d’erreur. Par défaut, les éléments suivants sont disponibles avec une instance CQ standard :
+Il existe des scripts fournis par le système (sous `/libs/sling/servlet/errorhandler`) pour répondre aux codes d’erreur. Par défaut, les scripts suivants sont disponibles avec une instance CQ standard :
 
 * 403.jsp
 * 404.jsp
 
 >[!NOTE]
 >
->AEM est basé sur Apache Sling. Pour plus d’informations sur la gestion des erreurs Sling, voir [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html).
+>AEM est basé sur Apache Sling. Voir [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) pour plus d’informations sur la gestion des erreurs Sling.
 
 >[!NOTE]
 >
@@ -41,7 +40,7 @@ Il existe des scripts fournis par le système (sous `/libs/sling/servlet/errorha
 
 ## Méthode de personnalisation des pages affichées par le gestionnaire d’erreurs {#how-to-customize-pages-shown-by-the-error-handler}
 
-Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vos pages personnalisées seront créées sous `/apps` et superposeront les pages par défaut (sous `/libs`).
+Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vos pages personnalisées seront créées sous `/apps` et recouvriront les pages par défaut (qui se trouvent sous `/libs`).
 
 >[!NOTE]
 >
@@ -78,7 +77,7 @@ Lorsque le traitement des requêtes génère une exception, la structure Apache 
 * consigne l’exception ;
 * renvoie :
 
-   * le code de réponse HTTP 500
+   * le code de réponse HTTP 500 ;
    * la trace de la pile d’exception
 
    dans le corps de la réponse.
@@ -96,4 +95,3 @@ Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire
 >Des réponses avec le code 500 sont nécessaires pour un gestionnaire d’erreurs personnalisé. Par conséquent, le [filtre de débogage de la gestion du contenu web CQ doit être désactivé](/help/sites-deploying/osgi-configuration-settings.md). Cela garantit le renvoi du code de réponse 500 qui, à son tour, déclenche le gestionnaire d’erreurs Sling approprié.
 >
 >Sur une instance de publication, le filtre de débogage de la gestion du contenu web CQ est *toujours* désactivé (même s’il est configuré comme étant activé).
-
