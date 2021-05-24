@@ -10,15 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Copie de la langue
+exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 80%
 
 ---
-
 
 # Création d’une racine de langue à l’aide de l’interface utilisateur classique{#creating-a-language-root-using-the-classic-ui}
 
@@ -39,7 +38,7 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
 1. Dans la console Sites web, dans l’arborescence des sites web, sélectionnez la page racine du site.
 1. Dans le menu Outils, sélectionnez Copie de la langue.
 
-   ![toolslangagecopy](assets/toolslanguagecopy.png)
+   ![toolslanguagecopy](assets/toolslanguagecopy.png)
 
    La boîte de dialogue Copie de la langue affiche un tableau des versions linguistiques et des pages web disponibles. Une croix, « x », dans une colonne de langue signifie que la page est disponible dans cette langue.
 
@@ -49,15 +48,14 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
 
    Dans l’exemple ci-dessous, la page équipement/lunettes/irian est copiée dans la version de langue française.
 
-   ![langagecopydilogdropdown](assets/languagecopydilogdropdown.png)
+   ![languagecopydilogdropdown](assets/languagecopydilogdropdown.png)
 
    | Type de copie de langue | Description |
    |---|---|
-   | auto | Utilise le comportement des pages parents |
+   | auto | Utilise le comportement des pages parentes |
    | ignore | Ne crée pas de copie de cette page et de ses enfants |
-   | `<language>+` (p. ex. Français+) | Copie la page et tous ses enfants de cette langue |
-   | `<language>` (français, par exemple) | Copie uniquement la page de cette langue |
+   | `<language>+` (Français+, par exemple) | Copie la page et tous ses enfants de cette langue |
+   | `<language>` (Français, par exemple) | Copie uniquement la page à partir de cette langue |
 
 1. Cliquez sur OK pour fermer la boîte de dialogue.
 1. Dans la boîte de dialogue suivante, cliquez sur Oui pour confirmer la copie.
-
