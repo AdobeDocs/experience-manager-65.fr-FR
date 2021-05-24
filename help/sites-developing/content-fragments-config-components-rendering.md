@@ -9,14 +9,13 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 86%
 
 ---
-
 
 # Fragments de contenu – Configuration des composants pour le rendu{#content-fragments-configuring-components-for-rendering}
 
@@ -36,7 +35,7 @@ Pour ce faire, définissez la [Configuration du composant de fragment de contenu
 >
 >Vous pouvez créer de A à Z un composant n’utilisant que l’API de fragments de contenu, sans services avancés. Cependant, dans ce cas, vous devrez développer votre composant de sorte qu’il traite le traitement approprié.
 >
->Par conséquent, il est recommandé d’utiliser les composants de base.
+>Par conséquent, il est recommandé d’utiliser les composants principaux.
 
 ## Définition des services avancés nécessitant une configuration {#definition-of-advanced-services-that-need-configuration}
 
@@ -49,7 +48,7 @@ Les services qui nécessitent l’enregistrement d’un composant sont les suiva
 * Purge par le Dispatcher des fragments référencés (si une page contenant un fragment est republiée).
 * Utilisation du rendu basé sur les paragraphes.
 
-Si vous avez besoin d’une ou de plusieurs de ces fonctionnalités, il est alors (généralement) plus facile d’utiliser la fonctionnalité prête à l’emploi, plutôt que de la développer à partir de rien.
+Si vous avez besoin d’une ou plusieurs de ces fonctionnalités, il est alors (généralement) plus facile d’utiliser la fonctionnalité prête à l’emploi, au lieu de la développer entièrement.
 
 ## Service OSGi – Configuration du composant de fragment de contenu {#osgi-service-content-fragment-component-configuration}
 
@@ -97,7 +96,7 @@ La configuration OSGi est la suivante :
  </tbody>
 </table>
 
-Pour certaines fonctionnalités (par exemple pour n’afficher qu’une plage de paragraphes), vous devez respecter certaines conventions :
+Pour certaines fonctionnalités (par exemple, pour effectuer le rendu d’une seule plage de paragraphes), vous devez respecter certaines conventions :
 
 <table>
  <tbody>
@@ -130,7 +129,7 @@ Pour certaines fonctionnalités (par exemple pour n’afficher qu’une plage de
 
 >[!CAUTION]
 >
->Cela peut changer dans les étapes ultérieures de la version 6.5.
+>Cela peut changer dans les jalons 6.5 suivants.
 
 ## Exemple {#example}
 
@@ -148,4 +147,3 @@ dam.cfm.component.fileReferenceProp="fragmentPath"
 dam.cfm.component.elementsProp="elementName"
 dam.cfm.component.variationProp="variationName"
 ```
-
