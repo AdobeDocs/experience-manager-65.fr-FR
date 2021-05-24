@@ -9,31 +9,30 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 48%
 
 ---
 
-
 # Intégration des pages d’entrée à Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM a intégré la solution landings page avec [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants d&#39;appel à l&#39;action suivants :
+AEM a intégré la solution des landing pages avec [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants CTA (call-to-action) suivants :
 
 1. Composant Lien des clics publicitaires
 1. Composant Lien graphique
 
-Ces composants exposent certains attributs qui peuvent être mappés via des variables Adobe Analytics (Trafic, variables de conversion) et des événements de réussite pour envoyer des informations à Adobe Analytics.
+Ces composants présentent certains attributs qui peuvent être mappés via des variables Adobe Analytics (Trafic, variables de conversion) et des événements de succès pour envoyer des informations à Adobe Analytics.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
-L’Adobe vous recommande de passer par l’[intégration existante AEM-Adobe Analytics](/help/sites-administering/adobeanalytics.md) pour comprendre comment cette intégration fonctionne.
+Adobe vous recommande de passer par l’[intégration existante AEM-Adobe Analytics](/help/sites-administering/adobeanalytics.md) pour comprendre le fonctionnement de cette intégration.
 
 ## Composants disponibles pour le mappage {#components-available-for-mapping}
 
-En AEM, les composants **Appel à l&#39;action** - **ClickThroughLink** et **GraphicalLink** - affichés ici dans le sidekick, peuvent être associés à des variables Adobe Analytics.
+Dans AEM, les composants **Appel à l’action** - **ClickThroughLink** et **GraphicalLink** - affichés ici dans le sidekick, peuvent être mappés à des variables Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -59,40 +58,39 @@ Pour mapper des composants de page d’entrée sur Adobe Analytics :
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
-   <td>La destination à laquelle vous accédez lorsque vous cliquez sur le lien </td>
+   <td>Destination à laquelle vous accédez lorsque vous cliquez sur le lien. </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.événements.clickthroughLinkClick</i> <br /> </td>
+   <td><i>eventdata.events.clickthroughLinkClick</i> <br /> </td>
    <td>Evénement de clic. </td>
   </tr>
   <tr>
    <td><strong>Lien graphique CTA</strong></td>
-   <td><i>eventdata.clicktroughImageLabel</i> <br /> </td>
-   <td>Titre de l'image CTA </td>
+   <td><i>eventdata.clickthroughImageLabel</i> <br /> </td>
+   <td>Titre de l’image CTA </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clicktroughImageTarget</i> <br /> </td>
+   <td><i>eventdata.clickthroughImageTarget</i> <br /> </td>
    <td>Destination à laquelle vous accédez lorsque vous cliquez sur l’image contenant un lien.</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clicktroughImageAsset</i> <br /> </td>
-   <td>Chemin d’accès au fichier d’image dans le référentiel </td>
+   <td><i>eventdata.clickthroughImageAsset</i> <br /> </td>
+   <td>Chemin d’accès à la ressource image dans le référentiel </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.événements.clicktroughImageClick</i> <br /> </td>
+   <td><i>eventdata.events.clickthroughImageClick</i> <br /> </td>
    <td>Evénement de clic.</td>
   </tr>
  </tbody>
 </table>
 
 1. Mappez ces attributs exposés avec toute variable Adobe Analytics issue du Content Finder. La structure est maintenant prête à être utilisée.
-1. Vous pouvez maintenant créer un landing page ou ouvrir un landing page existant avec des composants CTA existants et cliquer sur **Cloud Services** dans **Propriétés de la page** dans le panneau latéral (dans l&#39;IU optimisée pour les écrans tactiles, sélectionnez **Ouvrir les propriétés**, puis cliquez sur **Cloud Services**) et configurer la structure à utiliser avec le landing page. Sélectionnez la structure dans la liste déroulante.
+1. Vous pouvez désormais créer une page d’entrée ou ouvrir une page d’entrée existante avec des composants CTA existants, puis cliquer sur l’onglet **Cloud Services** dans **Propriétés de page** dans le sidekick (dans l’IU optimisée pour les écrans tactiles, sélectionnez **Ouvrir les propriétés** et cliquez sur **Cloud Services**) et configurez la structure à utiliser avec la page d’entrée. Sélectionnez la structure dans la liste déroulante.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
 1. Après avoir configuré la structure avec la page d’accueil, vous pouvez utiliser les composants instrumentés. Tout clic effectué sur l’appel à l’action est alors enregistré dans Adobe Analytics.
-
