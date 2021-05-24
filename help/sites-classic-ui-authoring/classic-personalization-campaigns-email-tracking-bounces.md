@@ -9,26 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 85%
 
 ---
 
-
 # Suivi des messages rejetés{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->Adobe ne prévoit pas d&#39;améliorer davantage le suivi des courriers électroniques ouverts/rebondis envoyés par AEM service SMTP.
+>Adobe ne prévoit pas d&#39;améliorer davantage le suivi des emails ouverts/rebonds envoyés par AEM service SMTP.
 >
->La recommandation est de [tirer parti de l&#39;Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
+>La recommandation consiste à [tirer parti d’Adobe Campaign et de son intégration AEM](/help/sites-administering/campaign.md).
 
 Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de diffusion comporte généralement plusieurs adresses électroniques non valides. Les newsletters envoyées à ces adresses sont rejetées. AEM est en mesure de gérer ces rebonds et d’arrêter l’envoi de newsletters vers ces adresses après le dépassement du compteur de rebonds. Par défaut, le taux de rebonds est défini sur 3, mais cette valeur est configurable.
 
-Pour configurer AEM en vue du suivi des messages rejetés, vous devez faire en sorte que le logiciel sonde une boîte aux lettres existante dans laquelle les messages rejetés sont reçus (il s’agit généralement de l’adresse indiquée pour l’envoi de la newsletter). AEM sonde cette boîte aux lettres et importe tous les messages sous le chemin indiqué dans la configuration de sondage. Un flux de travail est ensuite déclenché pour rechercher les adresses électroniques reportées au sein des utilisateurs et met à jour la valeur de la propriété bounceCounter de l’utilisateur en conséquence. Une fois le nombre maximum de rebonds atteint, l’utilisateur est supprimé de la liste des newsletters.
+Pour configurer AEM en vue du suivi des messages rejetés, vous devez faire en sorte que le logiciel sonde une boîte aux lettres existante dans laquelle les messages rejetés sont reçus (il s’agit généralement de l’adresse indiquée pour l’envoi de la newsletter). AEM sonde cette boîte aux lettres et importe tous les messages sous le chemin indiqué dans la configuration de sondage. Un workflow est ensuite déclenché pour rechercher les adresses électroniques rebonds dans les utilisateurs et met à jour la valeur de la propriété bounceCounter de l’utilisateur en conséquence. Une fois le nombre maximum de rebonds atteint, l’utilisateur est supprimé de la liste des newsletters.
 
 ## Configuration de Feed Importer {#configuring-the-feed-importer}
 
@@ -66,9 +65,9 @@ Pour configurer Feed Importer en vue du suivi des messages rejetés, procédez c
 
    Permet de définir des indicateurs pour la recherche.
 
-   `imap.flag.SEEN`: Définit false pour le message nouveau/invisible, true pour les messages déjà lus
+   `imap.flag.SEEN`: définissez false pour le message nouveau/invisible, true pour les messages déjà lus.
 
-   Voir [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) pour la liste complète des indicateurs.
+   Voir [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) pour obtenir la liste complète des indicateurs.
 
    **Exemples IMAP** :
 
@@ -85,7 +84,7 @@ Après avoir configuré Feed Importer, vous devez configurer l’adresse de l’
 
 Pour configurer le service de newsletter, procédez comme suit :
 
-1. Dans la console OSGi à `<host>:<port>/system/console/configMgr` et accédez à **MCM Newsletter**.
+1. Dans la console OSGi à l’adresse `<host>:<port>/system/console/configMgr` et accédez à **Newsletter MCM**.
 
 1. Configurez le service et enregistrez les modifications une fois cette opération terminée.
 
