@@ -10,15 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Mise à niveau
+exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 89%
 
 ---
-
 
 # Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
 
@@ -52,13 +51,13 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 
 * **Via la console Felix Inventory :**
 
-1. Accédez à AEM Web Console en accédant à *https://serveraddress:serverport/system/console/configMgr*.
+1. Accédez à la console web AEM en accédant à *https://serveraddress:serverport/system/console/configMgr*
 1. Sélectionnez **État – Outil de détection des motifs**, comme illustré ci-dessous :
 
-   ![capture d&#39;écran-2018-2-5détecteur à motifs](assets/screenshot-2018-2-5pattern-detector.png)
+   ![capture d’écran-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via une interface JSON standard ou une interface en mode texte réactive**
-* **Via une interface de lignes JSON réactives, **qui génère un document JSON distinct dans chaque ligne.
+* **Via une interface de lignes JSON réactive, **qui génère un document JSON distinct dans chaque ligne.
 
 Vous trouverez, ci-dessous, une description détaillée de ces deux méthodes :
 
@@ -221,7 +220,7 @@ Actuellement, l’outil de détection des motifs permet de vérifier :
 
 * l’incompatibilité des exportations et importations de lots OSGi ;
 * la surutilisation des ressources de type Sling et des super types (avec superpositions de contenu de chemin de recherche) ;
-* définitions des index de chêne (compatibilité)
+* définitions des index Oak (compatibilité)
 * les modules VLT (surutilisation) ;
 * la compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth).
 
