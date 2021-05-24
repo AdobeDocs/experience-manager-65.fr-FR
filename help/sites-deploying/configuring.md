@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2133'
 ht-degree: 88%
 
 ---
-
 
 # Concepts de configuration de base{#basic-configuration-concepts}
 
@@ -31,7 +30,7 @@ De nombreux aspects d’AEM peuvent être configurés :
 
 Selon la configuration spécifique, ces modifications peuvent être effectuées en utilisant au choix :
 
-* **Console Web Adobe CQ**
+* **Console web Adobe CQ**
 
    Il s’agit d’un emplacement standard pour la configuration des lots et services OSGi.
 
@@ -45,7 +44,7 @@ Selon la configuration spécifique, ces modifications peuvent être effectuées 
 
 * **Système de fichiers**
 
-   Quelques fichiers de configuration se trouvent dans le système de fichiers.
+   Quelques fichiers de configuration résident dans le système de fichiers.
 
 * **Gestion de contenu Web AEM**
 
@@ -98,7 +97,7 @@ Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le ch
 
    par exemple `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* une adresse IPv4
+* une adresse IPv4 ;
 
    par exemple `https://123.1.1.4:4502`
 
@@ -106,7 +105,7 @@ Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le ch
 
    par exemple, `https://www.yourserver.com:4502`
 
-* la casse par défaut de `localhost` sera interprétée pour les installations réseau IPv4 et IPv6.
+* le cas par défaut de `localhost` sera interprété pour les installations réseau IPv4 et IPv6.
 
    par exemple, `http://localhost:4502`
 
@@ -124,7 +123,7 @@ AEM vous offre la possibilité de configurer :
 
 * les paramètres généraux du service de journalisation central ;
 * la journalisation des données de requête (une configuration de journalisation spécialisée pour les informations de requête) :
-* les paramètres spécifiques des services individuels; par exemple, un fichier journal individuel et un format pour les messages du journal
+* les paramètres spécifiques des services individuels; par exemple, un fichier journal individuel et le format des messages du journal
 
 Voir [Journalisation](/help/sites-deploying/configure-logging.md) pour des détails complets.
 
@@ -150,8 +149,8 @@ Le mappage de ressource permet de définir des redirections, des URL Vanity et d
 
 Par exemple, vous pouvez utiliser ces mappages pour :
 
-* Ajoutez un préfixe `/content` à toutes les requêtes afin que la structure interne soit masquée des visiteurs vers votre site Web.
-* Définissez une redirection de sorte que toutes les requêtes envoyées à la page `/content/en/gateway` de votre site Web soient redirigées vers `https://gbiv.com/`.
+* Ajoutez un préfixe `/content` à toutes les requêtes afin que la structure interne soit masquée aux visiteurs de votre site web.
+* Définissez une redirection de sorte que toutes les requêtes sur la page `/content/en/gateway` de votre site web soient redirigées vers `https://gbiv.com/`.
 
 Voir [Mappage de ressource](/help/sites-deploying/resource-mapping.md) pour plus de détails.
 
@@ -167,7 +166,7 @@ Pour plus de détails, voir [Réplication](/help/sites-deploying/replication.md)
 
 ### Paramètres de configuration OSGi {#osgi-configuration-settings}
 
-[](https://www.osgi.org/) OSGiest un élément fondamental de la pile technologique de l&#39;AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+[](https://www.osgi.org/) OSGi est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
 
 Voir [Paramètres de configuration d’OSGi](/help/sites-deploying/osgi-configuration-settings.md) afin d’obtenir la liste des différents lots pertinents pour la mise en œuvre d’un projet (répertoriés par lot). Les paramètres répertoriés ne doivent pas tous être ajustés, certains sont mentionnés pour vous aider à comprendre comment fonctionne AEM.
 
@@ -183,13 +182,13 @@ Pour la gestion des utilisateurs au sein d’AEM (y compris l’affectation des 
 
 ### Configuration de Dispatcher  {#configuring-the-dispatcher}
 
-Le répartiteur est un outil de mise en cache et/ou d’équilibrage de charge Adobe Experience Manager qui peut être utilisé conjointement avec un serveur Web d’entreprise.
+Dispatcher est un outil de mise en cache et/ou d’équilibrage de charge Adobe Experience Manager qui peut être utilisé conjointement avec un serveur web de niveau élevé.
 
 Voir [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) pour plus de détails, notamment [Configuration de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) pour plus informations sur la configuration.
 
 ### Configuration d’AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Grâce à AEM Doc Services et AEM Doc Security, nous pouvons désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une stratégie. Pour plus d&#39;informations, consultez [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html).
+Grâce à AEM Doc Services et AEM Doc Security, nous pouvons désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une stratégie. Pour plus d’informations, consultez [AEM Connecteur LiveCycle](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html).
 
 ### Déchargement des tâches et administration de la topologie {#job-offloading-and-topology-administration}
 
@@ -217,7 +216,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 ### Entrepôt de données partagé {#shared-data-store}
 
-Le magasin de données du référentiel est utilisé pour décharger l&#39;enregistrement de binaires volumineux du référentiel proprement dit dans une zone distincte, de sorte que plusieurs instances du même binaire (une image, par exemple) dans l&#39;arborescence du référentiel ne soient stockées qu&#39;une seule fois.
+L’entrepôt de données du référentiel est utilisé pour décharger le stockage des fichiers binaires volumineux du référentiel vers une zone distincte, de sorte que plusieurs instances du même fichier binaire (une image, par exemple) dans l’arborescence du référentiel ne soient stockées qu’une seule fois.
 
 Cette fonction de stockage unique et référencement multiple peut être étendue pour servir non seulement une arborescence de référentiel, mais des référentiels entiers, en configurant l’entrepôt de données de chacun d’entre eux de façon à ce qu’il fasse référence au même emplacement de système de fichiers partagé.
 
@@ -249,7 +248,7 @@ Voir [Expiration des objets statiques](/help/sites-deploying/expiration-static-o
 
 Chaque processus Java peut accéder à des fichiers, ce qui nécessite des ressources système. Pour cette raison, une limite supérieure est définie en ce qui concerne le nombre de fichiers auxquels chaque processus est autorisé à accéder simultanément. Si elle est dépassée, une erreur d’exception peut se produire.
 
-Si le processus AEM dépasse ce maximum, le message &quot; `too many open files`&quot; apparaît dans `error.log`.
+Si le processus d’AEM dépasse cette limite, le message &quot;`too many open files`&quot; apparaît dans `error.log`.
 
 Pour éviter ce type d’exception, vous devez procéder comme suit :
 
@@ -266,7 +265,7 @@ Pour éviter ce type d’exception, vous devez procéder comme suit :
 
    La nouvelle valeur doit recouvrir les exigences en cours et tous les pics futurs, c’est pourquoi il est recommandé de doubler vos besoins actuels.
 
-   Par défaut, `serverctl` configure `CQ_MAX_OPEN_FILES` en `8192`; cela devrait suffire à la plupart des scénarios.
+   Par défaut, `serverctl` configure `CQ_MAX_OPEN_FILES` en `8192`; cela doit être suffisant pour la plupart des scénarios.
 
 ### Configuration de l’éditeur de texte enrichi {#configuring-the-rich-text-editor}
 
@@ -306,13 +305,12 @@ Les impressions de page sont affichées dans la colonne **Impressions** de la co
 
 * Sur l’instance de publication :
 
-   * [Day CQ WCM Page Statistics](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Statistiques de page WCM Day CQ](/help/sites-deploying/osgi-configuration-settings.md)
 
 * Sur l’instance de création :
 
-   * [Adobe Page Impressions Tracke](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Suivi des impressions de page d’Adobe](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
 >La configuration d’Adobe Page Impressions Tracker sur l’environnement de création permettra l’envoi de requêtes anonymes vers le service de suivi.
-
