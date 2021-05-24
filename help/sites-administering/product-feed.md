@@ -9,25 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 1f920892-c52e-42ca-900c-2c7ab3c503b3
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: 11a3d636-040a-40bb-ad35-6b8430a81a49
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 71%
 
 ---
 
-
 # Flux de produit {#product-feed}
 
-AEM s’intègre à [Search &amp; Promote](https://www.adobe.com/solutions/testing-targeting/searchandpromote.html) et vous permet de :
+AEM s’intègre à [Search &amp; Promote](https://www.adobe.com/solutions/testing-targeting/searchandpromote.html) et vous permet d’effectuer les opérations suivantes :
 
 * d’utiliser l’API eCommerce, indépendamment de la structure de référentiel et de la plateforme de commerce sous-jacentes ;
 * de tirer parti de la fonction de connecteur d’index de Search&amp;Promote pour constituer un flux de produit au format XML ;
 * de tirer parti de la fonction de contrôle à distance de Search&amp;Promote pour effectuer des requêtes à la demande ou planifiées du flux de produit ;
 * de générer des flux pour différents comptes Search&amp;Promote, configurés comme configurations de services cloud.
 
-Vous devez disposer d&#39;un compte valide et [configurer la connexion à Search &amp; Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote). Vous devez également vérifier que vous utilisez le centre de données [correct](/help/sites-administering/search-and-promote.md#configuring-the-data-center) et vous assurer que l&#39;URI de serveur **distant **est configuré.
+Vous devez disposer d’un compte valide et [configurer la connexion à Search &amp; Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote). Vous devez également vérifier que vous utilisez le [centre de données](/help/sites-administering/search-and-promote.md#configuring-the-data-center) correct et vous assurer que l’**URI de serveur distant **est configuré.
 
 ## Configuration du flux de produit {#set-up-the-product-feed}
 
@@ -36,13 +35,13 @@ Vous devez d’abord saisir une racine de site web et un attribut d’identifian
 1. Accédez à la configuration de Search&amp;Promote.
 1. Cliquez sur **[!UICONTROL Modifier]**.
 1. Cliquez sur l’onglet **[!UICONTROL Configuration des flux du connecteur d’index]**.
-1. Saisissez l&#39;attribut **[!UICONTROL racine du site Web]** et **[!UICONTROL Identificateur]**.
+1. Saisissez la **[!UICONTROL racine du site Web]** et **[!UICONTROL Attribut d’identifiant]**.
 
    >[!NOTE]
    >
-   >La **[!UICONTROL racine du site Web]** est la racine de votre site Web de commerce électronique, par exemple `/content/geometrixx-outdoors/en`.
+   >La **[!UICONTROL racine du site Web]** est la racine de votre site Web eCommerce, par exemple `/content/geometrixx-outdoors/en`.
    >
-   >L&#39;attribut **[!UICONTROL Identifier]** est une propriété JCR qui identifie de manière unique le produit : `identifier`.
+   >**[!UICONTROL L’attribut Identifier]** est une propriété JCR qui identifie de manière unique le produit : `identifier`.
 
 1. Cliquez sur **[!UICONTROL OK]**.
 
@@ -69,20 +68,20 @@ Un planificateur est configuré comme configuration enfant de votre configuratio
 
 1. Accédez à la configuration de Search&amp;Promote.
 1. Cliquez sur **[!UICONTROL +]** en regard de **[!UICONTROL Configuration du planificateur]**.
-1. Saisissez un **[!UICONTROL Titre]** reconnaissable aux auteurs de pages et un **[!UICONTROL Nom]** unique.
+1. Saisissez un **[!UICONTROL titre]** reconnaissable par les auteurs de pages, et un **[!UICONTROL nom]** unique.
 1. Cliquez sur **[!UICONTROL Créer]**. Une boîte de dialogue s’ouvre.
 
    ![chlimage_1-108](assets/chlimage_1-108a.png)
 
-1. Saisissez le **[!UICONTROL mot de passe de contrôle à distance]**. Il s’agit du mot de passe que vous avez configuré dans votre compte Search&amp;Promote.
+1. Saisissez le **[!UICONTROL Mot de passe du contrôle à distance]**. Il s’agit du mot de passe que vous avez configuré dans votre compte Search&amp;Promote.
 
    >[!NOTE]
    >
-   >Il ne s’agit pas du mot de passe de votre compte Search&amp;Promote. Vous pouvez trouver et modifier ce mot de passe en vous connectant à votre compte de Search &amp; Promote et en accédant à **[!UICONTROL Index]** puis à **[!UICONTROL Remote control]**.
+   >Il ne s’agit pas du mot de passe de votre compte Search&amp;Promote. Vous pouvez rechercher et modifier ce mot de passe en vous connectant à votre compte de Search &amp; Promote et en accédant à **[!UICONTROL Index]** puis à **[!UICONTROL Contrôle à distance]**.
 
 1. Cochez la case **[!UICONTROL Activer la planification]**.
 1. Sélectionnez une **[!UICONTROL planification]**. Il s’agit de la planification de génération de flux.
-1. Cochez ou non **[!UICONTROL Indexation à la demande]**. Cette fonction sert à appeler manuellement l’index Search&amp;Promote. Si **[!UICONTROL Demander le flux de produits complet]** est coché, le Search &amp; Promote demandera un flux de produits complet. Dans le cas contraire, un flux de produits incrémentiel est demandé.
+1. Cochez ou non **[!UICONTROL Indexation à la demande]**. Cette fonction sert à appeler manuellement l’index Search&amp;Promote. Si **[!UICONTROL Demander le flux de produits complet]** est coché, Search &amp; Promote demande un flux de produits complet. Dans le cas contraire, un flux de produits incrémentiel est demandé.
 
    >[!NOTE]
    >
@@ -90,4 +89,4 @@ Un planificateur est configuré comme configuration enfant de votre configuratio
 
 1. Cliquez sur **[!UICONTROL OK]**.
 
-Maintenant que vous avez tout configuré, vous pouvez voir une page XML contenant tous les produits sous la racine du site Web configurée : [http://localhost:4502/etc/commerce/searchpromote/feed/full](http://localhost:4502/etc/commerce/searchpromote/feed/full).
+Maintenant que vous avez tout configuré, vous pouvez voir une page XML contenant tous les produits sous la racine de site web configurée : [http://localhost:4502/etc/commerce/searchpromote/feed/full](http://localhost:4502/etc/commerce/searchpromote/feed/full).
