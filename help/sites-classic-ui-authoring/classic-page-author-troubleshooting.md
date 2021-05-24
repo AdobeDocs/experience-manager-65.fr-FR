@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 91%
 
 ---
-
 
 # Résolution des problèmes d’AEM lors de la création{#troubleshooting-aem-when-authoring}
 
@@ -71,11 +70,11 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 * **Problème:**
 
-   * Lorsque vous utilisez l&#39;option **Rechercher et remplacer**, il se peut que toutes les instances du terme `find` ne soient pas remplacées sur une page.
+   * Lors de l’utilisation de l’option **Rechercher et remplacer**, il se peut que toutes les instances du terme `find` ne soient pas remplacées sur une page.
 
 * **Raison**:
 
-   * La fonctionnalité **Rechercher et remplacer** dépend de la manière dont le contenu est enregistré et de la possibilité de le rechercher. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
+   * La fonctionnalité **Chercher et Remplacer** dépend de la manière dont le contenu est enregistré et de la possibilité de le rechercher. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
 
       * `jcr:title`
       * `jcr:description`
@@ -87,4 +86,3 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
    * Ces définitions peuvent être modifiées dans la configuration du **servlet Day CQ WCM Find Replace** à l’aide de la **console Web**, par exemple à l’adresse
 
       `http://localhost:4502/system/console/configMgr`
-
