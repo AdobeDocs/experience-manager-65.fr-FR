@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
-translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 86%
 
 ---
-
 
 # Création et utilisation de tâches pour le déchargement{#creating-and-consuming-jobs-for-offloading}
 
@@ -28,8 +27,8 @@ Pour plus d’informations sur la création de topologies de déchargement et la
 
 La structure de déchargement définit deux propriétés de tâche que vous utilisez pour identifier la charge utile de la tâche. Les agents de réplication de déchargement utilisent ces propriétés pour identifier les ressources à répliquer sur les instances de la topologie :
 
-* `offloading.job.input.payload`: Liste de chemins de contenu séparés par des virgules. Le contenu est répliqué sur l’instance qui exécute la tâche.
-* `offloading.job.output.payload`: Liste de chemins de contenu séparés par des virgules. Une fois l’exécution de la tâche terminée, la charge utile est répliquée sur ces chemins d’accès sur l’instance qui a créé la tâche.
+* `offloading.job.input.payload`: Liste de chemins d’accès au contenu séparés par des virgules. Le contenu est répliqué sur l’instance qui exécute la tâche.
+* `offloading.job.output.payload`: Liste de chemins d’accès au contenu séparés par des virgules. Une fois l’exécution de la tâche terminée, la charge utile est répliquée sur ces chemins d’accès sur l’instance qui a créé la tâche.
 
 Utilisez l’énumération `OffloadingJobProperties` pour faire référence aux noms de propriété :
 
@@ -104,7 +103,7 @@ Le journal contient le message suivant lorsque JobGeneratorImpl.createJob est ap
 
 Pour exécuter des tâches, développez un service OSGi qui met en œuvre l’interface `org.apache.sling.event.jobs.consumer.JobConsumer`. Effectuez l’identification avec la rubrique à consommer à l’aide de la propriété `JobConsumer.PROPERTY_TOPICS`.
 
-L’exemple suivant d’implémentation de JobConsumer s’enregistre dans la rubrique `com/adobe/example/offloading`. Le consommateur définit simplement la propriété Consumed du nœud de contenu de charge utile sur True.
+L’exemple suivant d’implémentation de JobConsumer est enregistré avec la rubrique `com/adobe/example/offloading`. Le consommateur définit simplement la propriété Consumed du nœud de contenu de charge utile sur True.
 
 ```java
 package com.adobe.example.offloading;
@@ -217,4 +216,3 @@ Les exemples précédents nécessitaient également les définitions de dépenda
    <scope>provided</scope>
 </dependency>
 ```
-
