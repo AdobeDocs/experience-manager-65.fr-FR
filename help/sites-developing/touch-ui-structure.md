@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 96%
 
 ---
-
 
 # Structure de l’interface utilisateur tactile d’AEM{#structure-of-the-aem-touch-enabled-ui}
 
@@ -167,7 +166,6 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d&#39;informations sur les concepts relatifs à l&#39;interface utilisateur tactile, consultez l&#39;article [Concepts de l&#39;interface utilisateur tactile AEM](/help/sites-developing/touch-ui-concepts.md).
+Pour plus d’informations sur les concepts relatifs à l’IU tactile, reportez-vous à l’article [Concepts de l’IU tactile AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Pour plus d’informations techniques, voir la [documentation JS set](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page tactile.
-
+Pour plus d’informations techniques, reportez-vous à la [documentation JS](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) de l’éditeur de page tactile.
