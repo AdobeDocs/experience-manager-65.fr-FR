@@ -11,7 +11,6 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2239'
@@ -195,7 +194,7 @@ Cliquez sur le chevron en regard d’un composant pour réduire ou développer c
 >
 >L’arborescence de contenu n’est pas disponible si vous modifiez une page sur un appareil mobile (si la largeur de l’explorateur est inférieure à 1 024 px).
 
-Cliquez sur le composant pour mettre en surbrillance le composant dans l’éditeur de page. Les actions disponibles dépendent de l’état de la page :
+Cliquez sur le composant pour mettre en surbrillance le composant dans l’éditeur de page. Les actions disponibles dépendent du statut de la page :
 
 * Par exemple, une page de base :
 
@@ -245,8 +244,8 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 
 * [Références aux pages de produit](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (depuis la console Commerce – Produits)
 * [Lancements](/help/sites-authoring/launches.md) donne accès aux lancements associés.
-* [](/help/sites-administering/msm.md)Live Copies affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
-* [Plan directeur](/help/sites-administering/msm-best-practices.md), fournit des détails et diverses actions
+* [Live Copies](/help/sites-administering/msm.md) affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
+* Le [plan directeur](/help/sites-administering/msm-best-practices.md) fournit des détails et la possibilité de diverses actions.
 * [Copies de langue](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), fournit des détails et diverses actions
 
 Par exemple, vous pouvez corriger une référence rompue dans un composant Référence :
@@ -274,19 +273,19 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 * [Ouvrir les propriétés](/help/sites-authoring/editing-page-properties.md)
 * [Déployer la page](/help/sites-administering/msm.md#msm-from-the-ui)
 * [Démarrer le processus](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
-* [Verrouiller la page](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Verrouillage de la page](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Publier la page](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
 * [Annuler la publication de la page](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
 * [Modifier le modèle](/help/sites-authoring/templates.md) ; si la page est basée sur un [modèle modifiable](/help/sites-authoring/templates.md#editable-and-static-templates).
 
-* [Afficher comme publié(e) ](/help/sites-authoring/editing-content.md#view-as-published)
+* [Afficher comme publié(e)](/help/sites-authoring/editing-content.md#view-as-published)
 * [Afficher en administrateur](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Aide](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Le cas échéant, le menu **Informations sur la page** propose également les options suivantes :
 
 * [Convertir le lancement](/help/sites-authoring/launches-promoting.md) si la page correspond à un lancement.
-* [Ouvrir dans l’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface utilisateur classique si cette option a été  [activée par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
+* [Ouvrir dans l’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface utilisateur classique si cette option a été  [activée par un administrateur.](/help/sites-administering/enable-classic-ui-editor.md)
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
@@ -305,8 +304,8 @@ Lors de la modification d’une page, plusieurs modes permettent d’effectuer d
 * [Ciblage](/help/sites-authoring/content-targeting-touch.md) : optimise la pertinence du contenu grâce au ciblage et aux mesures à l’échelle de tous les canaux.
 * [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) : affiche les données d’analyse de la page.
 
-* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) : permet d’afficher l’état d’une page à un moment donné.
-* [État de Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : donne un aperçu rapide de l’état de la live copy et des composants qui sont ou non hérités.
+* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
+* [Statut de la Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
 * [Aperçu](/help/sites-authoring/editing-content.md#previewing-pages) : permet d’afficher la page comme elle sera présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.
 
 * [Annoter](/help/sites-authoring/annotations.md) : permet d’ajouter ou d’afficher des annotations sur la page.
