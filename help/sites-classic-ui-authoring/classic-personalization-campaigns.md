@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d1741525-a475-4a76-bd16-55318023495e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 94%
 
 ---
-
 
 # Gestion de campagnes{#campaign-management}
 
@@ -30,22 +29,22 @@ Ce document décrit les différents éléments qui composent les campagnes. Vous
 * [Marketing par messagerie électronique](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
 * [Pages d’entrée](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Offres Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
-* [Utilisation du Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+* [Utilisation de Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [Compréhension de la segmentation](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
 * [Configuration d’une campagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 La gestion de campagnes comprend plusieurs éléments :
 
 * **Marques**
-En AEM, les marques sont l’unité de niveau supérieur et forment une collection de 
+Dans AEM, les marques constituent l’unité de niveau supérieur et forment un ensemble de 
 **Campagnes**.
 
 * ****
-CampagnesUne campagne est un ensemble de 
+CampagnesUne campagne est un ensemble de différentes 
 **Expériences**.
 
 * ****
-ExpériencesLe contenu ciblé forme les différentes expériences, présentées au visiteur à la section 
+Expériences : le contenu ciblé constitue les différentes expériences, présentées au visiteur au 
 **Points de contact**. Plusieurs types d’expérience sont disponibles :
 
    * **Teasers**
@@ -96,4 +95,3 @@ ExpériencesLe contenu ciblé forme les différentes expériences, présentées 
    Cette console est accessible à partir de divers emplacements (étiquetés **Campagnes**) ou via l’URL suivante :
 
    `http://localhost:4502/libs/mcm/content/admin.html`
-
