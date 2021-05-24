@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
-translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2295'
 ht-degree: 86%
 
 ---
-
 
 # Sauvegarde et restauration{#backup-and-restore}
 
@@ -69,7 +68,7 @@ Dans tous les cas, la sauvegarde crée une image (ou un instantané) du référe
 
 >[!NOTE]
 >
->Si AEM fonction de sauvegarde en ligne est utilisée sur une instance AEM qui possède une configuration de banque de données personnalisée, il est recommandé de configurer le chemin d&#39;accès de la banque de données pour qu&#39;il se trouve en dehors du répertoire &quot; `crx-quickstart`&quot; et de sauvegarder la banque de données séparément.
+>Si la fonction de sauvegarde en ligne d’AEM est utilisée sur une instance AEM qui a une configuration de banque de données personnalisée, il est recommandé de configurer le chemin d’accès de la banque de données pour qu’il se trouve en dehors du répertoire &quot;`crx-quickstart`&quot; et de sauvegarder la banque de données séparément.
 
 >[!CAUTION]
 >
@@ -81,11 +80,11 @@ Une sauvegarde en ligne de votre référentiel permet de créer, de télécharge
 
 >[!CAUTION]
 >
->N&#39;exécutez pas AEM Sauvegarde en ligne simultanément avec [Collecte de déchets de la banque de données](/help/sites-administering/data-store-garbage-collection.md) ou [Nettoyage de révision](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Cela affecte les performances du système.
+>N’exécutez pas AEM Sauvegarde en ligne simultanément avec [Nettoyage de la mémoire d’entrepôt de données](/help/sites-administering/data-store-garbage-collection.md) ou [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Cela affecte les performances du système.
 
 Lors du démarrage d’une sauvegarde, vous pouvez spécifier un **chemin d’accès cible** et/ou un **délai**.
 
-**Cible** PathLes fichiers de sauvegarde sont généralement enregistrés dans le dossier parent du dossier contenant le fichier jar de démarrage rapide (.jar). Par exemple, si le fichier JAR d’AEM se trouve sous /InstallationKits/AEM, la sauvegarde est générée sous /InstallationKits. Vous pouvez également spécifier une cible correspondant à un emplacement de votre choix.
+**** Chemin d’accès cible : les fichiers de sauvegarde sont généralement enregistrés dans le dossier parent du dossier contenant le fichier jar de démarrage rapide (.jar). Par exemple, si le fichier JAR d’AEM se trouve sous /InstallationKits/AEM, la sauvegarde est générée sous /InstallationKits. Vous pouvez également spécifier une cible correspondant à un emplacement de votre choix.
 
 Si le chemin d’**accès cible** est un répertoire, l’image du référentiel est créée dans ce répertoire. Si le même répertoire est utilisé plusieurs fois (ou toujours) pour stocker une sauvegarde :
 
@@ -106,9 +105,9 @@ Si le chemin d’**accès cible** est un répertoire, l’image du référentiel
 
 >
 >
-Si vous devez créer un fichier ZIP en tant que format de sauvegarde, vous devez effectuer une sauvegarde dans un répertoire, puis utiliser un programme de compression pour créer le fichier zip.
+Si vous devez créer un fichier ZIP au format de sauvegarde, vous devez le sauvegarder dans un répertoire, puis utiliser un programme de compression pour créer le fichier zip.
 
-**** DelayIndique une temporisation (en millisecondes), de sorte que les performances du référentiel ne soient pas affectées. Par défaut, la sauvegarde du référentiel s’exécute à la vitesse maximale. Vous pouvez ralentir la création d’une sauvegarde en ligne afin de ne pas ralentir d’autres tâches.
+**** DelayIndique un délai (en millisecondes), de sorte que les performances du référentiel ne soient pas affectées. Par défaut, la sauvegarde du référentiel s’exécute à la vitesse maximale. Vous pouvez ralentir la création d’une sauvegarde en ligne afin de ne pas ralentir d’autres tâches.
 
 Lorsque vous utilisez un délai très important, assurez-vous que la sauvegarde en ligne ne met pas plus de 24 heures. En pareil cas, annulez cette sauvegarde, car elle ne contient peut-être pas tous les fichiers binaires.
  Un délai de 1 ms se traduit généralement par l’utilisation de 10 % du processeur. Un délai de 10 ms se traduit généralement par l’utilisation de moins de 3 % du processeur. Le délai total en secondes peut être évalué comme suit : taille du référentiel en Mo, multiplié par le délai en millisecondes, divisé par 2 (si l’option ZIP est utilisée) ou divisé par 4 (en cas de sauvegarde dans un répertoire). Cela signifie qu’une sauvegarde dans un répertoire de 200 Mo avec un délai de 1 ms augmente le temps de sauvegarde de 50 secondes environ.
@@ -159,7 +158,7 @@ Pour créer une sauvegarde :
 
 Si cela est possible, la sauvegarde en ligne doit être exécutée lorsque la charge sur le système est réduite, le matin, par exemple.
 
-Les sauvegardes peuvent être automatisées à l&#39;aide des clients HTTP `wget` ou `curl`. Voici des exemples d’automatisation de la sauvegarde à l’aide du client curl.
+Les sauvegardes peuvent être automatisées à l’aide des clients HTTP `wget` ou `curl`. Voici des exemples d’automatisation de la sauvegarde à l’aide du client curl.
 
 #### Sauvegarde dans le répertoire cible par défaut  {#backing-up-to-the-default-target-directory}
 
@@ -182,7 +181,7 @@ La commande curl renvoie immédiatement une valeur. Vous devez donc surveiller c
 
 En général, le fichier/répertoire de sauvegarde est créé sur le serveur, dans le dossier parent du dossier qui contient le dossier `crx-quickstart`.
 
-Si vous souhaitez enregistrer votre sauvegarde (de l&#39;un ou l&#39;autre) à un autre emplacement, vous pouvez définir un chemin absolu &quot;vers le paramètre `target` dans la commande `curl`.
+Si vous souhaitez enregistrer votre sauvegarde (de l’un ou l’autre) à un autre emplacement, vous pouvez définir un chemin absolu &quot;vers le paramètre `target` dans la commande `curl`.
 
 Par exemple, pour générer `backupJune.zip` dans le répertoire `/Backups/2012` :
 
@@ -219,12 +218,12 @@ La sauvegarde en ligne utilise l’algorithme suivant :
 
 1. Lors de la création d’un fichier ZIP, la première étape consiste à créer ou à chercher le répertoire cible.
 
-   * Si vous effectuez une sauvegarde dans un fichier ZIP, un répertoire temporaire est créé. Le nom du répertoire est début avec `backup.` et se termine par `.temp`; par exemple `backup.f4d3.temp`.
+   * Si vous effectuez une sauvegarde dans un fichier ZIP, un répertoire temporaire est créé. Le nom du répertoire commence par `backup.` et se termine par `.temp`; par exemple, `backup.f4d3.temp`.
    * Si vous effectuez une sauvegarde dans un répertoire, le nom spécifié dans le chemin d’accès cible est utilisé. Vous pouvez utiliser un répertoire existant. Autrement, un autre répertoire est créé.
 
        Un fichier vide nommé « `backupInProgress.txt` » est créé dans le répertoire cible au début de la sauvegarde. Ce fichier est supprimé une fois la sauvegarde terminée.
 
-1. Les fichiers sont copiés du répertoire source vers le répertoire cible (ou vers un répertoire temporaire lors de la création d’un fichier ZIP). Le magasin de segments est copié avant le magasin de données afin d’éviter toute corruption du référentiel. Les données d’index et du cache sont omises lors de la création de la sauvegarde. Par conséquent, les données de `crx-quickstart/repository/cache` et `crx-quickstart/repository/index` ne sont pas incluses dans la sauvegarde. L’indicateur de barre de progression du processus se situe entre 0 % et 70 % lors de la création d’un fichier zip ou entre 0 % et 100 % si aucun fichier zip n’est créé.
+1. Les fichiers sont copiés du répertoire source vers le répertoire cible (ou vers un répertoire temporaire lors de la création d’un fichier ZIP). L’entrepôt de segments est copié avant l’entrepôt de données afin d’éviter toute corruption du référentiel. Les données d’index et du cache sont omises lors de la création de la sauvegarde. Par conséquent, les données de `crx-quickstart/repository/cache` et `crx-quickstart/repository/index` ne sont pas incluses dans la sauvegarde. L’indicateur de barre de progression du processus est compris entre 0 % et 70 % lors de la création d’un fichier zip ou entre 0 % et 100 % si aucun fichier zip n’est créé.
 
 1. Si la sauvegarde est effectuée dans un répertoire préexistant, les « anciens » fichiers du répertoire cible sont supprimés. Les anciens fichiers sont les fichiers qui n’existent pas dans le répertoire source.
 
@@ -236,7 +235,7 @@ Les fichiers sont copiés vers le répertoire cible en quatre étapes :
    * Phase B : seul l’entrepôt de données est copié (avec un délai).
 
 1. Lors de la deuxième étape de copie (indicateur de progression compris entre 63 % et 65,8 % lors de la création d’un fichier ZIP ou entre 90 % et 94 % si aucun fichier ZIP n’est créé), seuls les fichiers créés ou modifiés dans le répertoire source depuis le début de la première étape de copie sont copiés. En fonction de l’activité du référentiel, cela peut varier d’aucun fichier à tous les fichiers, jusqu’à un nombre de fichiers significatif (car la première étape de la copie des fichiers prend généralement beaucoup de temps). Le processus de copie est similaire à la première étape (phase A et phase B avec un délai).
-1. Lors de la troisième étape de copie (indicateur de progression compris entre 65,8 % et 68,6 % lors de la création d’un fichier ZIP ou entre 94 % et 98 % si aucun fichier ZIP n’est créé), seuls les fichiers créés ou modifiés dans le répertoire source depuis le début de la deuxième étape de la copie sont copiés. En fonction de l’activité du référentiel, il peut n’y avoir aucun fichier à copier ou un très petit nombre de fichiers (car la deuxième étape de copie des fichiers est généralement rapide). Le processus de copie est semblable à la deuxième étape - Phase A et Phase B, mais sans délai.
+1. Lors de la troisième étape de copie (indicateur de progression compris entre 65,8 % et 68,6 % lors de la création d’un fichier ZIP ou entre 94 % et 98 % si aucun fichier ZIP n’est créé), seuls les fichiers créés ou modifiés dans le répertoire source depuis le début de la deuxième étape de la copie sont copiés. En fonction de l’activité du référentiel, il peut n’y avoir aucun fichier à copier ou un très petit nombre de fichiers (car la deuxième étape de copie des fichiers est généralement rapide). Le processus de copie est similaire à la deuxième étape - phase A et phase B, mais sans délai.
 1. Les étapes de copie des fichiers, de la première à la troisième, sont toutes effectuées simultanément alors que le référentiel est en cours d’exécution. Seuls les fichiers créés ou modifiés dans le répertoire source depuis le début de la troisième étape de copie sont copiés. En fonction de l’activité du référentiel, il peut n’y avoir aucun fichier à copier ou un vraiment très petit nombre de fichiers (car la deuxième étape de copie des fichiers est généralement très rapide). L’indicateur de progression est compris entre 68,6 % et 70 % lors de la création d’un fichier ZIP ou entre 98 % et 100 % si aucun fichier ZIP n’est créé. Le processus de copie est similaire à la troisième étape.
 1. En fonction de la cible :
 
@@ -258,7 +257,7 @@ Pour plus d’informations sur les fonctionnalités et les inconvénients de cha
 
 ### Portée de la sauvegarde  {#scope-of-backup}
 
-Lorsque vous sauvegardez des noeuds à l’aide de Package Manager ou de Content Zipper, CRX enregistre les informations suivantes :
+Lorsque vous sauvegardez des noeuds à l’aide du gestionnaire de modules ou de Content Zipper, CRX enregistre les informations suivantes :
 
 * Contenu du référentiel sous l’arborescence sélectionnée
 * Définitions des types de nœuds utilisés pour le contenu sauvegardé
@@ -267,4 +266,3 @@ Lorsque vous sauvegardez des noeuds à l’aide de Package Manager ou de Content
 Lors de la sauvegarde, AEM perd les informations suivantes :
 
 * Historique des versions.
-
