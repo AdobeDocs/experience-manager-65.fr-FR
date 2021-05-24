@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
-translation-type: tm+mt
-source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 67%
 
 ---
-
 
 # Configuration de LDAP avec AEM 6 {#configuring-ldap-with-aem}
 
@@ -32,7 +31,7 @@ L’utilisation de tels comptes est transparente pour vos utilisateurs, lesquels
 
 Dans AEM 6, la prise en charge de LDAP est fournie avec une nouvelle implémentation qui requiert un type de configuration différent de celui des versions précédentes.
 
-Toutes les configurations LDAP sont désormais disponibles en tant que configurations OSGi. Ils peuvent être configurés via la console de gestion Web à l&#39;adresse suivante :
+Toutes les configurations LDAP sont désormais disponibles en tant que configurations OSGi. Ils peuvent être configurés via la console de gestion Web à l’adresse :
 `https://serveraddress:4502/system/console/configMgr`
 
 Pour que LDAP fonctionne avec AEM, vous devez créer trois configurations OSGi :
@@ -78,12 +77,12 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
    <td>Indique si TLS doit être démarré sur les connexions.</td>
   </tr>
   <tr>
-   <td><strong>Désactiver la vérification de certificat</strong></td>
+   <td><strong>Désactivation de la vérification de certificat</strong></td>
    <td>Indique si la validation du certificat du serveur doit être désactivée.</td>
   </tr>
   <tr>
    <td><strong>DN de liaison</strong></td>
-   <td>ND de l’utilisateur pour l’authentification. Si ce champ n’est pas renseigné, la liaison est anonyme.</td>
+   <td>DN de l’utilisateur pour l’authentification. Si ce champ n’est pas renseigné, la liaison est anonyme.</td>
   </tr>
   <tr>
    <td><strong>Lier le mot de passe</strong></td>
@@ -94,40 +93,40 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
    <td>Durée jusqu’à ce que la recherche expire</td>
   </tr>
   <tr>
-   <td><strong>Principal max du pool d’administrateurs</strong></td>
-   <td>Taille principale maximale du pool de connexions d’administration.</td>
+   <td><strong>Principal max du pool d'administrateurs</strong></td>
+   <td>Taille principale maximale du pool de connexions d’administrateur.</td>
   </tr>
   <tr>
-   <td><strong>Principal maximal du pool d’utilisateurs</strong></td>
+   <td><strong>Principale maximale du pool d’utilisateurs</strong></td>
    <td>Taille principale maximale du pool de connexions utilisateur.</td>
   </tr>
   <tr>
-   <td><strong>ND de base utilisateur</strong></td>
-   <td>Le nom unique pour les recherches d’utilisateurs</td>
+   <td><strong>ND de base de l’utilisateur</strong></td>
+   <td>DN des recherches d’utilisateurs</td>
   </tr>
   <tr>
-   <td><strong>Classes d’objets utilisateur</strong></td>
-   <td>Liste des classes d'objets qu'une entrée utilisateur doit contenir.</td>
+   <td><strong>Classes d’objet utilisateur</strong></td>
+   <td>La liste des classes d’objets qu’une entrée utilisateur doit contenir.</td>
   </tr>
   <tr>
-   <td><strong>Attribut d’ID utilisateur</strong></td>
-   <td>Nom de l’attribut contenant l’ID utilisateur.</td>
+   <td><strong>Attribut d’identifiant utilisateur</strong></td>
+   <td>Nom de l’attribut qui contient l’identifiant de l’utilisateur.</td>
   </tr>
   <tr>
    <td><strong>Filtre supplémentaire utilisateur</strong></td>
-   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche d’utilisateurs. Le filtre final est formaté comme suit : '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)'</td>
+   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche d’utilisateurs. Le filtre final est formaté comme suit : '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
-   <td><strong>Chemins DN utilisateur</strong></td>
+   <td><strong>Chemins de noms utilisateur</strong></td>
    <td>Contrôle si le DN doit être utilisé pour calculer une partie du chemin intermédiaire.</td>
   </tr>
   <tr>
-   <td><strong>ND de base du groupe</strong></td>
-   <td>ND de base pour les recherches de groupe.</td>
+   <td><strong>DN de base du groupe</strong></td>
+   <td>DN de base pour les recherches de groupe.</td>
   </tr>
   <tr>
-   <td><strong>Classes d’objets de groupe</strong></td>
-   <td>Liste des classes d'objets qu'une entrée de groupe doit contenir.</td>
+   <td><strong>Classes d’objet de groupe</strong></td>
+   <td>La liste des classes d’objets qu’une entrée de groupe doit contenir.</td>
   </tr>
   <tr>
    <td><strong>Attribut de nom de groupe</strong></td>
@@ -138,12 +137,12 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
    <td>Filtre LDAP supplémentaire à utiliser lors de la recherche de groupes. Le filtre final est formaté comme suit : '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
   </tr>
   <tr>
-   <td><strong>Chemins DN du groupe</strong></td>
+   <td><strong>Chemins d’accès DN du groupe</strong></td>
    <td>Contrôle si le DN doit être utilisé pour calculer une partie du chemin intermédiaire.</td>
   </tr>
   <tr>
-   <td><strong>Attribut de membre du groupe</strong></td>
-   <td>Attribut de groupe contenant le ou les membres d'un groupe.</td>
+   <td><strong>Attribut du membre du groupe</strong></td>
+   <td>Attribut Groupe contenant le ou les membres d’un groupe.</td>
   </tr>
  </tbody>
 </table>
@@ -163,44 +162,44 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
    <td>Nom de la configuration de synchronisation.</td>
   </tr>
   <tr>
-   <td><strong>Heure d’expiration de l’utilisateur</strong></td>
+   <td><strong>Délai d’expiration de l’utilisateur</strong></td>
    <td>Durée jusqu’à ce qu’un utilisateur synchronisé expire.</td>
   </tr>
   <tr>
    <td><strong>Abonnement automatique des utilisateurs</strong></td>
-   <td>Liste des groupes auxquels un utilisateur synchronisé est ajouté automatiquement.</td>
+   <td>Liste des groupes auxquels un utilisateur synchronisé est automatiquement ajouté.</td>
   </tr>
   <tr>
-   <td><strong>Mappage des propriétés utilisateur</strong></td>
-   <td>Définition de mappage des listes des propriétés locales par rapport aux propriétés externes.</td>
+   <td><strong>Mappage des propriétés de l’utilisateur</strong></td>
+   <td>Définition du mappage de liste des propriétés locales à partir de propriétés externes.</td>
   </tr>
   <tr>
    <td><strong>Préfixe de chemin d’accès utilisateur</strong></td>
-   <td>Préfixe de chemin utilisé lors de la création de nouveaux utilisateurs.</td>
+   <td>Préfixe de chemin d’accès utilisé lors de la création de nouveaux utilisateurs.</td>
   </tr>
   <tr>
-   <td><strong>Expiration de l’abonnement utilisateur</strong></td>
-   <td>Heure après laquelle l'adhésion expire.<br /> </td>
+   <td><strong>Expiration de l’appartenance des utilisateurs</strong></td>
+   <td>Durée à partir de laquelle l’appartenance expire.<br /> </td>
   </tr>
   <tr>
-   <td><strong>Profondeur d'imbrication de l'appartenance des utilisateurs</strong></td>
-   <td>Renvoie la profondeur maximale de l’imbrication de groupes lors de la synchronisation des relations d’appartenance. Une valeur égale à 0 désactive la recherche de l’appartenance à un groupe. Une valeur égale à 1 ajoute uniquement les groupes directs d’un utilisateur. Cette valeur est sans effet lorsque des groupes individuels uniquement sont synchronisés dans le cadre de la synchronisation d’un ancêtre d’appartenance d’utilisateur.</td>
+   <td><strong>Profondeur d'imbrication de l'appartenance utilisateur</strong></td>
+   <td>Renvoie la profondeur maximale de l’imbrication de groupes lorsque les relations d’appartenance sont synchronisées. Une valeur égale à 0 désactive la recherche de l’appartenance à un groupe. Une valeur égale à 1 ajoute uniquement les groupes directs d’un utilisateur. Cette valeur est sans effet lorsque des groupes individuels uniquement sont synchronisés dans le cadre de la synchronisation d’un ancêtre d’appartenance d’utilisateur.</td>
   </tr>
   <tr>
-   <td><strong>Heure d'expiration du groupe</strong></td>
+   <td><strong>Délai d’expiration du groupe</strong></td>
    <td>Durée jusqu’à l’expiration d’un groupe synchronisé.</td>
   </tr>
   <tr>
    <td><strong>Appartenance automatique au groupe</strong></td>
-   <td>Liste des groupes auxquels un groupe synchronisé est ajouté automatiquement.</td>
+   <td>Liste des groupes auxquels un groupe synchronisé est automatiquement ajouté.</td>
   </tr>
   <tr>
    <td><strong>Mappage des propriétés du groupe</strong></td>
-   <td>Définition de mappage des listes des propriétés locales par rapport aux propriétés externes.</td>
+   <td>Définition du mappage de liste des propriétés locales à partir de propriétés externes.</td>
   </tr>
   <tr>
    <td><strong>Préfixe de chemin de groupe</strong></td>
-   <td>Préfixe de chemin utilisé lors de la création de groupes.</td>
+   <td>Préfixe de chemin d’accès utilisé lors de la création de groupes.</td>
   </tr>
  </tbody>
 </table>
@@ -217,11 +216,11 @@ Son objectif est de définir quel fournisseur d’identités et quel gestionnair
 
 Les options de configuration suivantes sont disponibles :
 
-| **Classement JAAS** | Spécification du classement (ordre de tri) de cette entrée de module de connexion. Les entrées sont triées dans l’ordre décroissant (les configurations ayant une valeur de rang supérieure apparaissent en premier). |
+| **Classement JAAS** | Spécification du classement (c’est-à-dire de l’ordre de tri) de cette entrée de module de connexion. Les entrées sont triées dans l’ordre décroissant (les configurations ayant une valeur de rang supérieure apparaissent en premier). |
 |---|---|
-| **Indicateur de contrôle JAAS** | Propriété spécifiant si un LoginModule est OBLIGATOIRE, REQUIS, SUFFISANT ou FACULTATIF.Reportez-vous à la documentation de configuration JAAS pour plus de détails sur la signification de ces indicateurs. |
-| **JAAS Realm** | Nom de domaine (ou nom de l&#39;application) pour lequel le LoginModule est enregistré. Si aucun nom de domaine n’est indiqué, le module de connexion est enregistré avec un domaine par défaut tel que configuré dans la configuration Felix JAAS. |
-| **Nom du fournisseur d’identité** | Nom du fournisseur d&#39;identité. |
+| **Indicateur de contrôle JAAS** | Propriété spécifiant si un module de connexion est OBLIGATOIRE, OBLIGATOIRE, SUFFISANT ou FACULTATIF. Pour plus d’informations sur la signification de ces indicateurs, consultez la documentation sur la configuration JAAS . |
+| **Domaine JAAS** | Nom du domaine (ou nom de l’application) sur lequel le module de connexion est enregistré. Si aucun nom de domaine n’est indiqué, le module de connexion est enregistré avec un domaine par défaut tel que configuré dans la configuration Felix JAAS. |
+| **Nom du fournisseur d’identité** | Nom du fournisseur d’identité. |
 | **Nom du gestionnaire de synchronisation** | Nom du gestionnaire de synchronisation. |
 
 >[!NOTE]
@@ -246,7 +245,7 @@ Les certificats auto-signés peuvent être utilisés lors de la configuration d�
 
 1. Assurez-vous qu’une bibliothèque SSL est installée et fonctionne. Cette procédure utilise OpenSSL comme exemple.
 
-1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Pour ce faire, copiez le fichier de configuration **openssl.cnf **et personnalisez-le. Sur les systèmes UNIX, il se trouve généralement à `/usr/lib/ssl/openssl.cnf`
+1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Pour ce faire, copiez le fichier de configuration par défaut **openssl.cnf ** et personnalisez-le. Sur les systèmes UNIX, il se trouve généralement à l’adresse `/usr/lib/ssl/openssl.cnf`
 
 1. Créez la clé racine CA en exécutant la commande ci-dessous sur un terminal :
 
@@ -305,4 +304,3 @@ Pour plus d’informations, voir la documentation d’Apache Oak relative à la 
 ## Problèmes connus {#known-issues}
 
 Si vous envisagez d’utiliser LDAP via SSL, assurez-vous que les certificats que vous utilisez sont créés sans l’option de commentaire Netscape. Si cette option est activée, l’authentification échoue avec une erreur de négociation SSL.
-
