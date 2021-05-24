@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: a62ddf8b-97ea-40b9-9c3b-0922fe134567
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation d’Adobe Campaign{#working-with-adobe-campaign}
 
@@ -31,7 +30,7 @@ Reportez-vous aux informations suivantes :
 
 * [Utilisation d’Adobe Campaign 6.1 et d’Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
 * [Composants d’Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
-* [Ciblage de votre Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
+* [Ciblage d’un élément de campagne Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
 Vous devez avoir précédemment [intégré AEM à Adobe Campaign](/help/sites-administering/campaign.md).
 
@@ -39,4 +38,3 @@ En outre, si vous souhaitez personnaliser vos intégrations, reportez-vous aux r
 
 * [Création d’extensions personnalisées](/help/sites-developing/extending-campaign-extensions.md)
 * [Création de mappages de formulaires personnalisés](/help/sites-developing/extending-campaign-form-mapping.md)
-
