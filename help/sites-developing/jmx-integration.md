@@ -10,14 +10,13 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: fe727406-09cb-4516-8278-806fd78cfc12
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 89%
 
 ---
-
 
 # Intégration de services à la console JMX{#integrating-services-with-the-jmx-console}
 
@@ -27,7 +26,7 @@ Pour plus d’informations sur l’utilisation de la console JMX, voir [Surveill
 
 ## Le framework JMX dans Felix et CQ5 {#the-jmx-framework-in-felix-and-cq}
 
-Sur la plate-forme Apache Felix, vous déployez MBeans en tant que services OSGi. Lorsqu&#39;un service MBean est enregistré dans le registre de services OSGi, le module Carte blanche Aries JMX enregistre automatiquement le MBean avec le serveur MBean. Le MBean est alors disponible pour la console JMX qui expose les attributs et opérations publics.
+Sur la plate-forme Apache Felix, vous déployez MBeans en tant que services OSGi. Lorsqu’un service MBean est enregistré dans le registre de services OSGi, le module Aries JMX Whiteboard enregistre automatiquement le MBean avec le serveur MBean. Le MBean est alors disponible pour la console JMX qui expose les attributs et opérations publics.
 
 ![jmxwhiteboard](assets/jmxwhiteboard.png)
 
@@ -61,7 +60,7 @@ Ajoutez des annotations à l’interface de gestion pour spécifier les métadon
 Les classes sont fournies pour la création de MBeans dynamiques qui consomment les annotations que vous ajoutez à leurs interfaces :
 
 * **AnnotatedStandardMBean :** sous-classe de la classe javax.management.StandardMBean qui fournit automatiquement à la console JMX les métadonnées d’annotation.
-* **OpenAnnotatedStandardMBean:** Sous-classe de la classe AnnotatedStandardMBean pour la création de Mbeans ouverts qui consomment l&#39;annotation OpenTypeInfo.
+* **OpenAnnotatedStandardMBean :**  sous-classe de la classe AnnotatedStandardMBean pour la création de MBean ouverts qui consomment l’annotation OpenTypeInfo.
 
 ### Développement de MBeans {#developing-mbeans}
 
@@ -140,15 +139,15 @@ Lorsque vous enregistrez des MBeans en tant que service OSGi, ils sont automatiq
 
 En plus des métadonnées liées à OSGi, vous devez également fournir les métadonnées dont le module Aries JMX Whiteboard a besoin pour enregistrer le MBean avec le serveur MBean :
 
-* **Nom de l’interface DynamicMBean :** Déclarez que le service MBean implémente l’interface  `javax.management.DynamicMBea`n. Cette déclaration indique au module Aries JMX Whiteboard que le service est un service MBean.
+* **Nom de l’interface DynamicMBean :** Déclarez que le service MBean met en oeuvre l’ `javax.management.DynamicMBea`interface n. Cette déclaration indique au module Aries JMX Whiteboard que le service est un service MBean.
 
-* **Le domaine MBean et les propriétés clés :** Sous Felix, vous fournissez ces informations en tant que propriété du service OSGi de MBean. Il s’agit des mêmes informations que celles que vous fournissez habituellement au serveur MBean dans un objet `javax.management.ObjectName`.
+* **Propriétés du domaine et de la clé MBean :** sur Felix, vous fournissez ces informations en tant que propriété du service OSGi du MBean. Il s’agit des mêmes informations que celles que vous fournissez habituellement au serveur MBean dans un objet `javax.management.ObjectName`.
 
 Lorsque votre MBean reflète un service unique, une seule instance du service MBean est requise. Dans ce cas, si vous utilisez le module externe Felix SCR Maven, vous pouvez utiliser les annotations SCR (Apache Felix Service Component Runtime) sur la classe d’implémentation MBean pour spécifier les métadonnées associées à JMX. Pour instancier plusieurs instances MBean, vous pouvez créer une autre classe qui effectue cet enregistrement du service OSGi du MBean. Dans ce cas, les métadonnées associées à JMX sont générées lors de l’exécution.
 
 **MBean simple**
 
-Les MBeans pour lesquels vous pouvez définir tous les attributs et toutes les opérations au moment de la conception peuvent être déployés à l’aide d’annotations SCR dans la classe d’implémentation MBean. Dans l’exemple suivant, l’attribut `value` de l’annotation `Service` déclare que le service implémente l’interface `DynamicMBean`. L&#39;attribut `name` de l&#39;annotation `Property` spécifie le domaine JMX et les propriétés clés.
+Les MBeans pour lesquels vous pouvez définir tous les attributs et toutes les opérations au moment de la conception peuvent être déployés à l’aide d’annotations SCR dans la classe d’implémentation MBean. Dans l’exemple suivant, l’attribut `value` de l’annotation `Service` déclare que le service implémente l’interface `DynamicMBean`. L’attribut `name` de l’annotation `Property` spécifie les propriétés de domaine et de clé JMX.
 
 #### Classe d’implémentation MBean avec annotations SCR {#mbean-implementation-class-with-scr-annotations}
 
@@ -219,18 +218,18 @@ Le MBean de cet exemple fournit des informations sur les modèles de processus C
 * WorkflowMBeanManager : interface de la classe de gestionnaire MBean.
 * WorkflowMBeanManagerImpl : classe d’implémentation du gestionnaire MBean.
 
-**Remarque :** Pour simplifier, le code de cet exemple n’effectue pas de journalisation ou ne réagit pas aux exceptions générées.
+**Remarque :** Pour plus de simplicité, le code de cet exemple n’effectue pas de journalisation ni ne réagit aux exceptions générées.
 
 WorkflowMBeanManagerImpl inclut une méthode d’activation de composant. Lorsque le composant est activé, la méthode exécute les tâches suivantes :
 
 * Obtient un BundleContext pour le bundle.
 * Interroge le référentiel pour obtenir les chemins des modèles de processus existants.
-* Crée des MBeans pour chaque modèle de processus.
+* Crée des MBeans pour chaque modèle de workflow.
 * Enregistre les MBeans avec le registre de service OSGi.
 
 Les métadonnées MBean sont visibles dans la console JMX avec le domaine com.adobe.example, le type workflow_model et Properties est le chemin du nœud de configuration du workflow.
 
-![jmxworkflembean](assets/jmxworkflowmbean.png)
+![jmxworkflowmbean](assets/jmxworkflowmbean.png)
 
 ### Exemple de MBean {#the-example-mbean}
 
@@ -278,7 +277,7 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 }
 ```
 
-### Exemple de gestionnaire de MBean {#the-example-mbean-manager}
+### Exemple de gestionnaire de MBean  {#the-example-mbean-manager}
 
 Le service WorkflowMBeanManager inclut la méthode d’activation du composant qui crée les services WorkflowMBean. L’implémentation du service prévoit les méthodes suivantes :
 
@@ -426,7 +425,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 }
 ```
 
-### Fichier POM pour l’exemple de MBean {#the-pom-file-for-the-example-mbean}
+### Fichier POM pour l’exemple de MBean  {#the-pom-file-for-the-example-mbean}
 
 Par souci de commodité, nous proposons de copier et de coller le code XML suivant dans le fichier pom.xml de votre projet pour créer le bundle de composants. Le POM fait référence à plusieurs dépendances et modules externes requis.
 
