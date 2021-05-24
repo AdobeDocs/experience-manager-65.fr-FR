@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 88%
 
 ---
-
 
 # Configuration de l’environnement du compte{#configuring-your-account-environment}
 
@@ -25,8 +24,8 @@ AEM vous dote des outils nécessaires pour configurer votre compte ainsi que cer
 
 Les [paramètres du compte](#account-settings) et les [préférences utilisateur](#user-preferences) permettent de définir les options et préférences suivantes :
 
-* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous permet de 
-**Boutons Copier**,  **Couper**,  **Coller**,  **** Supprimer pour utilisation avec les composants de paragraphe de cette page :
+* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous donne la possibilité de 
+**Copiez**,  **Couper**,  **Coller**,  **** Supprimez les boutons utilisables avec les composants de paragraphe sur cette page :
 
    * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
    * Toujours afficher
