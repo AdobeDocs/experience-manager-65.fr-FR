@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 87%
 
 ---
-
 
 # Développement sur AEM – Conseils et meilleures pratiques{#aem-development-guidelines-and-best-practices}
 
@@ -53,7 +52,7 @@ Les règles générales suivantes sont pertinentes pour les développeurs dans l
 
 Lors de la création de vos propres composants ou de la personnalisation d’un composant existant, il est souvent plus simple (et plus sûr) de recycler les définitions existantes. Les mêmes principes s’appliquent également à d’autres éléments dans AEM, par exemple le gestionnaire d’erreurs.
 
-Cela peut être effectué en copiant et en remplaçant la définition existante. En d’autres termes, copier la définition de `/libs` à `/apps/<your-project>`. Cette nouvelle définition, dans `/apps`, peut être mise à jour selon vos besoins.
+Cela peut être effectué en copiant et en remplaçant la définition existante. En d’autres termes, en copiant la définition de `/libs` vers `/apps/<your-project>`. Cette nouvelle définition, dans `/apps`, peut être mise à jour en fonction de vos besoins.
 
 >[!NOTE]
 >
@@ -61,7 +60,7 @@ Cela peut être effectué en copiant et en remplaçant la définition existante.
 
 Par exemple :
 
-* [Personnalisation d&#39;un composant](/help/sites-developing/components.md)
+* [Personnalisation d’un composant](/help/sites-developing/components.md)
 
    Cela impliquait de superposer une définition de composant :
 
@@ -89,7 +88,7 @@ Par exemple :
 >
 >Pour la configuration et les autres modifications :
 >
->1. copier l’élément dans `/libs` vers `/apps`
+>1. Copiez l’élément dans `/libs` vers `/apps`
 >1. apporter des modifications dans `/apps`
 
 
@@ -100,7 +99,7 @@ Lorsqu’elles sont utilisées correctement, les requêtes JCR sont un puissant 
 * requêtes des utilisateurs finaux, telles que les recherches en texte intégral sur le contenu ;
 * les occasions où le contenu structuré doit pouvoir être recherché sur le référentiel entier.
 
-   Dans ce cas, veillez à ce que les requêtes ne s’exécutent que lorsqu’elles sont absolument requises, par exemple sur l’activation des composants ou l’invalidation du cache (par opposition aux étapes Workflows, aux gestionnaires de Événements qui se déclenchent lors des modifications de contenu, Filtres, etc.).
+   Dans ce cas, assurez-vous que les requêtes ne s’exécutent que lorsque cela est absolument nécessaire, par exemple sur l’activation des composants ou l’invalidation du cache (par opposition à, par exemple, les étapes des workflows, les gestionnaires d’événements qui se déclenchent lors des modifications de contenu, les filtres, etc.).
 
 Les requêtes JCR ne devraient jamais être employées pour des requêtes de rendu pures. Par exemple, les requêtes JCR ne sont pas utiles pour :
 
@@ -115,11 +114,11 @@ Pour effectuer le rendu du contenu, utilisez l’accès de navigation à l’arb
 >Si vous utilisez [Query Builder](/help/sites-developing/querybuilder-api.md), vous utilisez des requêtes JCR, car Query Builder génère des requêtes JCR en interne.
 
 
-## Considérations relatives à la sécurité {#security-considerations}
+## Considérations relatives à la sécurité  {#security-considerations}
 
 >[!NOTE]
 >
->Il est également utile de consulter la liste de contrôle de sécurité [](/help/sites-administering/security-checklist.md).
+>Il est également utile de référencer la [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
 
 ### Sessions (de référentiel) JCR {#jcr-repository-sessions}
 
@@ -135,7 +134,7 @@ Les scripts de site à site (XSS) permettent aux pirates d’injecter du code da
 
 AEM applique le principe de filtrage de l’ensemble du contenu fourni par l’utilisateur lors de la sortie. La prévention du script intersite (XSS) se voit accorder la priorité la plus élevée lors des phases de développement et de test.
 
-De plus, un pare-feu d&#39;application Web, tel que [mod_security pour Apache](https://modsecurity.org), peut fournir un contrôle central fiable sur la sécurité de l&#39;environnement de déploiement et protéger contre les attaques de script intersite non détectées précédemment.
+En outre, un pare-feu d’application web, tel que [mod_security pour Apache](https://modsecurity.org), peut fournir un contrôle central fiable sur la sécurité de l’environnement de déploiement et se protéger contre les attaques de script intersite qui n’avaient pas été détectées auparavant.
 
 >[!CAUTION]
 >
