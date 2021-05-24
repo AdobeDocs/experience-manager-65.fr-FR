@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 97%
 
 ---
-
 
 # Guide rapide pour la création de pages{#quick-guide-to-authoring-pages}
 
@@ -54,7 +53,7 @@ Avant de donner un aperçu des détails, voici quelques conseils et astuces qu�
    * ***Les liens ne sont pas disponibles pour la navigation*** lorsque vous êtes en mode d’**édition**. Pour naviguer à l’aide de liens, vous devez [afficher un aperçu de la page](/help/sites-authoring/editing-content.md#previewing-pages) à l’aide de l’une des fonctionnalités suivantes :
 
       * [Mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode)
-      * [Afficher comme publié(e) ](/help/sites-authoring/editing-content.md#view-as-published)
+      * [Afficher comme publié(e)](/help/sites-authoring/editing-content.md#view-as-published)
 
 * Les versions ne sont pas lancées/créées à partir de l’éditeur de pages. Cette opération s’effectue dans la console Sites (via l’option **Créer** ou [Chronologie](/help/sites-authoring/basic-handling.md#timeline) pour une ressource sélectionnée).
 
@@ -63,9 +62,7 @@ Avant de donner un aperçu des détails, voici quelques conseils et astuces qu�
 >Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
->* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
-
->
+* [Raccourcis clavier pour les consoles  ](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 
@@ -123,8 +120,7 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
 
    * Une coche apparaît sur la carte afin d’indiquer que la page a été sélectionnée.
    >[!NOTE]
-   >
-   >En mode de sélection, l’icône **Sélectionner** (coche) est transformée en icône **Désélectionner** (croix).
+   En mode de sélection, l’icône **Sélectionner** (coche) est transformée en icône **Désélectionner** (croix).
 
 ### Actions rapides (mode Carte/Bureau seulement) {#quick-actions-card-view-desktop-only}
 
@@ -179,8 +175,7 @@ Pour modifier votre page :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
    >[!NOTE]
-   >
-   >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
+   Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
 
    * [Supprimer](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant :
 
@@ -197,8 +192,7 @@ Pour modifier votre page :
    * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
 
    >[!NOTE]
-   >
-   >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
+   Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
 
 ### Modification des propriétés de page    {#editing-the-page-properties}
 
@@ -275,8 +269,7 @@ Ces actions peuvent être déclenchées en procédant comme suit :
 
       * Vous serez alors invité à confirmer l’opération.
    >[!NOTE]
-   >
-   >La suppression n’est pas proposée comme action rapide.
+   La suppression n’est pas proposée comme action rapide.
 
 ### Verrouillage d’une page (puis déverrouillage) {#locking-your-page-then-unlocking}
 
@@ -300,7 +293,7 @@ Un [accès rapide aux références](/help/sites-authoring/author-environment-too
 
    Une liste des types de références s’affiche :
 
-   ![capture d&#39;écran_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
+   ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
 1. Appuyez ou cliquez sur le type de référence requis pour afficher d’autres détails et (le cas échéant) accomplir d’autres actions.
 
@@ -314,7 +307,7 @@ Pour créer une [version](/help/sites-authoring/working-with-page-versions.md) d
 
 1. Appuyez ou cliquez sur la flèche Haut en bas à droite de la colonne Frise chronologique pour afficher d’autres boutons, y compris **Enregistrer comme version**.
 
-   ![capture d&#39;écran_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
+   ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
 1. Sélectionnez **Enregistrer comme version**, puis **Créer**.
 
