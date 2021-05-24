@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 63%
 
 ---
-
 
 # Création de formulaires Adobe Campaign dans AEM{#creating-adobe-campaign-forms-in-aem}
 
@@ -64,7 +63,7 @@ Tout d’abord, vérifiez la connexion entre les instances de création et de pu
 
    >[!NOTE]
    >
-   >Si le modèle n’est pas disponible, consultez la section [Mise à disposition d’un modèle](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
+   >Si le modèle n’est pas disponible, reportez-vous à la section [Mettre un modèle à disposition](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) .
 
 1. Cliquez sur **Créer** pour créer le formulaire.
 
@@ -78,39 +77,39 @@ Les formulaires dédiés à Adobe Campaign présentent des composants spécifiqu
 
 >[!NOTE]
 >
->Si le modèle souhaité n’est pas disponible, voir [Mise à disposition d’un modèle](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
+>Si le modèle souhaité n’est pas disponible, voir [Mettre un modèle à disposition](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
 
-Cette section présente uniquement les liens spécifiques à Adobe Campaign. Pour plus d’informations sur une présentation plus générale de l’utilisation des formulaires dans Adobe Experience Manager, voir [Composants du mode éditeur](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
+Cette section présente uniquement les liens spécifiques à Adobe Campaign. Pour plus d’informations sur une présentation plus générale de l’utilisation des formulaires dans Adobe Experience Manager, voir [Composants du mode d’édition](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Accédez au formulaire que vous souhaitez modifier.
-1. Dans la boîte à outils, sélectionnez **Page** > **Propriétés de la page...** puis accédez à l&#39;onglet **Cloud Services** de la fenêtre contextuelle.
-1. Ajoutez le service Adobe Campaign en cliquant sur **Ajouter le service**, puis en sélectionnant la configuration qui correspond à votre instance Adobe Campaign dans la liste déroulante du service. Cette configuration est effectuée lors de la configuration de la connexion entre les différentes instances. Pour plus d’informations, voir [Connexion de l’AEM à Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
+1. Dans la boîte à outils, sélectionnez **Page** > **Propriétés de la page...** puis accédez à l’onglet **Cloud Services** de la fenêtre contextuelle.
+1. Ajoutez le service Adobe Campaign en cliquant sur **Ajouter un service**, puis en sélectionnant la configuration correspondant à votre instance Adobe Campaign dans la liste déroulante du service. Cette configuration est effectuée lors de la configuration de la connexion entre les différentes instances. Pour plus d’informations, voir [Connexion AEM à Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >
    >Le cas échéant, déverrouillez la configuration en cliquant sur l’icône en forme de cadenas pour pouvoir ajouter le service Adobe Campaign.
 
-1. Accédez aux paramètres généraux du formulaire à l’aide du bouton **Modifier** situé en début du formulaire. L&#39;onglet **Formulaire** vous permet de sélectionner une page de remerciement à laquelle l&#39;utilisateur sera redirigé après avoir validé le formulaire.
+1. Accédez aux paramètres généraux du formulaire à l’aide du bouton **Modifier** situé au début du formulaire. L’onglet **Formulaire** vous permet de sélectionner une page de remerciement à laquelle l’utilisateur sera redirigé après avoir validé le formulaire.
 
-   Le formulaire **Advanced** vous permet de sélectionner le type de formulaire. Le champ **Options de publication** vous donne le choix entre trois types de formulaires Adobe Campaign :
+   Le formulaire **Avancé** permet de sélectionner le type de formulaire. Le champ **Options de publication** vous donne le choix entre trois types de formulaires Adobe Campaign :
 
    * **Adobe Campaign : enregistrer le profil** : vous permet de créer ou de mettre à jour un destinataire dans Adobe Campaign (valeur par défaut).
    * **Adobe Campaign : s’abonner aux services** : vous permet de gérer les abonnements d’un destinataire dans Adobe Campaign.
    * **Adobe Campaign : se désabonner des services** : vous permet d’annuler les abonnements d’un destinataire dans Adobe Campaign.
 
-   Le champ **Configuration de l&#39;action** vous permet de spécifier si vous souhaitez ou non créer le profil de destinataire dans la base de données Adobe Campaign s&#39;il n&#39;existe pas encore. Pour ce faire, cochez l’option **Créer un utilisateur s’il n’existe pas**.
+   Le champ **Configuration de l&#39;action** permet de spécifier si vous souhaitez créer ou non le profil du destinataire dans la base de données Adobe Campaign s&#39;il n&#39;existe pas encore. Pour ce faire, cochez l’option **Créer un utilisateur s’il n’existe pas** .
 
 1. Ajoutez vos composants sélectionnés en les faisant glisser depuis la boîte à outils et en les plaçant dans le formulaire. Pour plus d’informations sur les éléments spécifiques d’Adobe Campaign disponibles, voir [Composants de formulaire Adobe](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. Configurez les champs ajoutés en cliquant deux fois dessus. L’onglet **Adobe Campaign** permet de lier le champ à un champ de la table destinataire Adobe Campaign. Vous pouvez également indiquer si le champ fait partie de la clé de réconciliation qui permet aux destinataires qui sont déjà présents dans la base de données Adobe Campaign d’être reconnus.
+1. Configurez les champs ajoutés en cliquant deux fois dessus. L&#39;onglet **Adobe Campaign** permet de lier le champ à un champ de la table des destinataires Adobe Campaign. Vous pouvez également indiquer si le champ fait partie de la clé de réconciliation qui permet aux destinataires qui sont déjà présents dans la base de données Adobe Campaign d’être reconnus.
 
    >[!CAUTION]
    >
-   >Le **nom de l’élément** doit être différent pour chaque champ de formulaire. Modifiez-le si nécessaire.
+   >**Nom de l’élément** doit être différent pour chaque champ de formulaire. Modifiez-le si nécessaire.
    >
-   >Chaque formulaire doit contenir un composant **Clé de Principal chiffrée** afin de gérer correctement les destinataires dans la base de données Adobe Campaign.
+   >Chaque formulaire doit contenir un composant **Clé Principal cryptée** afin de gérer correctement les destinataires dans la base de données Adobe Campaign.
 
 1. Activez la page en sélectionnant **Page** > **Activer la page** dans la boîte à outils. La page est activée sur votre site. Vous pouvez l’afficher en accédant à votre instance de publication AEM. Les données de la base de données Adobe Campaign sont mises à jour une fois qu’un formulaire est validé.
 
@@ -120,20 +119,20 @@ Une fois que vous avez créé un formulaire et modifié son contenu, il est cons
 
 >[!NOTE]
 >
->Vous devez disposer d’un composant **Clé de Principal chiffrée** sur chaque formulaire. Dans Composants, sélectionnez Adobe Campaign afin que seuls ces composants soient visibles.
+>Vous devez disposer d’un composant **Clé Principal chiffrée** sur chaque formulaire. Dans Composants, sélectionnez Adobe Campaign afin que seuls ces composants soient visibles.
 >
 >Même si dans cette procédure vous saisissez le numéro d’EPK manuellement, dans la pratique, les utilisateurs recevront un lien vers cette page (pour se désabonner, s’abonner ou mettre à jour leur profil) dans une newsletter. En fonction de l’utilisateur, l’EPK est mis à jour automatiquement.
 >
->Pour créer ce lien, vous utilisez la variable **Identificateur de ressource principale**(Adobe Campaign Standard) ou **Identificateur chiffré** (Adobe Campaign 6.1) (par exemple, dans un composant **Texte et personnalisation (Campaign)**), qui pointe vers le epk dans Adobe Campaign.
+>Pour créer ce lien, vous utilisez la variable **Identifiant de ressource principale**(Adobe Campaign Standard) ou **Identifiant chiffré** (Adobe Campaign 6.1) (par exemple, dans un composant **Texte et personnalisation (Campaign)**), qui pointe vers l’EPK dans Adobe Campaign.
 
 Pour ce faire, vous devez obtenir manuellement l’EPK d’un profil Adobe Campaign et ensuite l’ajouter à l’URL :
 
 1. Pour obtenir la clé primaire chiffrée (EPK) d’un profil Adobe Campaign :
 
-   * Dans Adobe Campaign Standard - Accédez à **Profils et Audiences** > **Profils**, qui liste les profils existants. Assurez-vous que le tableau affiche le champ **Identifiant de ressource principale** dans une colonne (Vous pouvez le configurer en cliquant/appuyant sur **Configurer la liste**). Copiez l’identifiant de ressource principale du profil souhaité.
-   * Dans Adobe Campaign 6.11, accédez à **Profils et Cibles** > **Destinataires**, qui liste les profils existants. Assurez-vous que le tableau affiche le champ **Identificateur chiffré** dans une colonne (Vous pouvez le configurer en cliquant avec le bouton droit sur une entrée et en sélectionnant **Configurer la liste...**). Copiez l’identifiant chiffré du profil souhaité.
+   * Dans Adobe Campaign Standard - Accédez à **Profils et audiences** > **Profils**, qui répertorie les profils existants. Assurez-vous que le tableau affiche le champ **Identifiant de ressource principale** dans une colonne (Vous pouvez le configurer en cliquant/appuyant sur **Configurer la liste**). Copiez l’identifiant de ressource principale du profil souhaité.
+   * Dans Adobe Campaign 6.11, accédez à **Profils et cibles** > **Destinataires**, qui répertorie les profils existants. Assurez-vous que le tableau affiche le champ **Identifiant chiffré** dans une colonne (Vous pouvez le configurer en cliquant avec le bouton droit sur une entrée et en sélectionnant **Configurer la liste...**). Copiez l’identifiant chiffré du profil souhaité.
 
-1. Dans AEM, ouvrez la page de formulaire sur l’instance de publication et ajoutez l’EPK de l’étape 1 en tant que paramètre d’URL : utilisez le même nom que celui que vous avez précédemment défini dans le composant EPK lors de la création du formulaire (par exemple : `?epk=...`)
+1. Dans AEM, ouvrez la page de formulaire sur l’instance de publication et ajoutez l’EPK de l’étape 1 comme paramètre d’URL : utilisez le même nom que celui précédemment défini dans le composant EPK lors de la création du formulaire (par exemple : `?epk=...`)
 1. Le formulaire peut maintenant être utilisé pour modifier les données et les abonnements associés au profil Adobe Campaign lié. Après avoir modifié certains champs et envoyé le formulaire, vous pouvez vérifier dans Adobe Campaign que les données ont été mises à jour.
 
 Les données de la base de données Adobe Campaign sont mises à jour une fois qu’un formulaire est validé.
