@@ -1,14 +1,13 @@
 ---
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
-translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 98%
 
 ---
-
 
 # Opérations asynchrones {#asynchronous-operations}
 
@@ -144,9 +143,9 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 >[!MORELIKETHIS]
 >
 >* [Création et organisation des pages](/help/sites-authoring/managing-pages.md)
->* [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
->* [Configurez le courrier électronique dans le Experience Manager](/help/sites-administering/notification.md).
->* [Importer des métadonnées](/help/assets/metadata.md#import-metadata) de fichier.
->* [Exportez les métadonnées](/help/assets/metadata.md#export-metadata) de fichier.
->* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
+* [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
+* [Configurez le courrier électronique dans Experience Manager](/help/sites-administering/notification.md).
+* [Importation des métadonnées de ressource](/help/assets/metadata.md#import-metadata).
+* [Exportation des métadonnées des ressources](/help/assets/metadata.md#export-metadata).
+* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
 
