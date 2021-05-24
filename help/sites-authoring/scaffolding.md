@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 85%
 
 ---
-
 
 # Génération de modèles automatique{#scaffolding}
 
@@ -26,5 +25,4 @@ En mode Génération de modèles automatique, vous pouvez créer un formulaire (
 
 >[!NOTE]
 >
->Bien qu&#39;il existe un Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) disponible, la maintenance et la création des échafaudages ainsi que la création de nouvelles pages à partir des échafaudages sont effectuées dans l&#39;interface utilisateur classique. Pour plus d’informations, voir [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) dans la documentation de création de l’IU classique.
-
+>Bien qu’un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) de génération de modèles automatique soit disponible, la maintenance et la création de modèles automatique ainsi que la création de pages à partir de modèles automatiques sont effectuées dans l’IU classique. Pour plus d’informations, voir [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) dans la documentation de création de l’IU classique.
