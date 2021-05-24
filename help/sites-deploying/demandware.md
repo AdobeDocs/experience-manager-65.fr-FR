@@ -12,7 +12,6 @@ discoiquuid: 52cc3162-b638-410d-854a-383399e2effb
 docset: aem65
 pagetitle: Deploying eCommerce with Demandware
 redirecttarget: https //github.com/adobe/commerce-salesforce
-translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 workflow-type: tm+mt
 source-wordcount: '481'
@@ -23,7 +22,7 @@ ht-degree: 71%
 
 # Salesforce Commerce Cloud{#salesforce-commerce-cloud}
 
-Le déploiement des packs eCommerce nécessaires fournira la fonctionnalité complète de la structure eCommerce, ainsi qu&#39;une implémentation de référence de la fonctionnalité eCommerce telle qu&#39;elle est fournie avec une implémentation Salesforce Commerce Cloud / Demandware (y compris un catalogue de démonstration).
+Le déploiement des modules eCommerce nécessaires fournit la fonctionnalité complète de la structure eCommerce, ainsi qu’une implémentation de référence de la fonctionnalité eCommerce fournie avec une implémentation Salesforce Commerce Cloud / Demandware (y compris un catalogue de démonstration).
 
 ## Modules nécessaires à eCommerce avec Salesforce Commerce Cloud {#packages-needed-for-ecommerce-with-salesforce-commerce-cloud}
 
@@ -46,12 +45,12 @@ Pour installer la fonctionnalité eCommerce, vous devez disposer des éléments 
 Pour installer AEM avec une intégration Demandware Commerce (à l’aide du catalogue de démonstration, Geometrixx Outdoors), les étapes de base sont les suivantes :
 
 1. [Installation d’AEM](/help/sites-deploying/deploy.md).
-1. Installez le package de contenu à l’aide du [gestionnaire de packages](/help/sites-administering/package-manager.md) :
+1. Installez le module de contenu à l’aide du [gestionnaire de modules](/help/sites-administering/package-manager.md) :
 1. [Créez](/help/sites-authoring/page-authoring.md) les pages supplémentaires dont vous avez besoin dans AEM.
 
 >[!NOTE]
 >
->Pour télécharger les packages, accédez à [Package Share](/help/sites-administering/package-manager.md#package-share).
+>Pour télécharger les modules, accédez à [Package Share](/help/sites-administering/package-manager.md#package-share).
 
 La connexion serveur entre AEM et le sandbox Demandware doit être configurée. La majeure partie de la configuration est déjà configurée pour fonctionner avec le module de contenu de démonstration SiteGenisis fourni à l’aide des chemins d’accès, des bibliothèques, etc. par défaut. Si le connecteur est utilisé avec d’autres sites et bibliothèques, vous devez mettre cette configuration à jour.
 
@@ -71,7 +70,7 @@ La connexion serveur entre AEM et le sandbox Demandware doit être configurée. 
 
 #### Réplication {#replication}
 
-La réplication doit être activée après l’installation du package. Vous pouvez vérifier que : [https://localhost:4502/etc/replication/agents.author/demandware.html](https://localhost:4502/etc/replication/agents.author/demandware.html)
+La réplication doit être activée après l’installation du package. Vous pouvez vérifier ici : [https://localhost:4502/etc/replication/agents.author/demandware.html](https://localhost:4502/etc/replication/agents.author/demandware.html)
 
 >[!NOTE]
 >
@@ -84,13 +83,13 @@ Le client OAuth est configuré de manière à fonctionner avec une instance de s
 Pour les systèmes de transit et de production, les clients OAuth doivent être configurés avec l’ID client et le mot de passe appropriés.
 
 1. Accédez à [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Cliquez sur **Demandware Jeton d&#39;accès provider**.
+1. Cliquez sur **Demandware Access Token provider**.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
 1. Modifiez les valeurs, au besoin, et cliquez sur **Enregistrer** (Save).
 
-### Sandbox Salesforce Commerce Cloud  {#salesforce-commerce-cloud-sandbox}
+### Sandbox Salesforce Commerce Cloud {#salesforce-commerce-cloud-sandbox}
 
 Le sandbox Demandware doit être configuré de manière à exécuter le nouveau moteur de modèles Velocity.
 
@@ -106,7 +105,7 @@ Le sandbox Demandware doit être configuré de manière à exécuter le nouveau 
 
    >[!NOTE]
    >
-   >L&#39;extension sera `.vs`.
+   >L’extension sera `.vs`.
 
 1. Recherchez également les fichiers JS et CSS exportés, par exemple sous `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Libraries/SiteGenesisSharedLibrary`.
 
