@@ -10,15 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Mise à niveau
+exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 82%
 
 ---
-
 
 # Compatibilité descendante dans AEM 6.5{#backward-compatibility-in-aem}
 
@@ -32,7 +31,7 @@ Dans AEM 6.5, toutes les fonctionnalités ont été développées dans une opti
 
 Dans la majorité des cas, les utilisateurs qui exécutent AEM 6.3 ne doivent pas changer le code ni les personnalisations lorsqu’ils effectuent la mise à niveau. S’agissant d’AEM 6.1 et 6.2, aucune autre modification importante n’est à signaler lors d’une mise à niveau vers la version 6.3.
 
-Pour les exceptions où les fonctionnalités n&#39;ont pas pu être maintenues avec une compatibilité ascendante, les problèmes d&#39;incompatibilité ascendante pour les lots et le contenu peuvent être atténués en installant un package de compatibilité pour la version 6.4 (voir comment configurer ci-dessous pour plus d&#39;informations sur l&#39;emplacement de téléchargement). Dans la plupart des cas, ce module rétablit la compatibilité des applications compatibles avec AEM 6.4.
+Pour les exceptions où les fonctionnalités n’ont pas pu être conservées avec une compatibilité descendante, les problèmes d’incompatibilité ascendante pour les lots et le contenu peuvent être atténués en installant un package de compatibilité pour la version 6.4 (voir comment configurer ci-dessous pour plus d’informations sur l’emplacement de téléchargement). Dans la plupart des cas, ce module rétablit la compatibilité des applications compatibles avec AEM 6.4.
 
 Le module de compatibilité vous permet d’exécuter AEM en mode de compatibilité et de différer le développement personnalisé par rapport à de nouvelles fonctionnalités d’AEM :
 
@@ -40,7 +39,7 @@ Le module de compatibilité vous permet d’exécuter AEM en mode de compatibili
 >
 >Notez que le module de compatibilité n’est qu’une solution temporaire visant à différer le développement requis pour garantir une compatibilité avec AEM 6.5. Il est recommandé de ne l’utiliser qu’en dernier ressort si vous ne parvenez pas à remédier aux problèmes de compatibilité par le biais du développement immédiatement après la mise à niveau. Il est vivement conseillé de basculer vers le mode natif et de désinstaller le module de compatibilité dès que vous décidez de procéder au développement personnalisé basé sur 6.5 et de tirer pleinement parti des fonctionnalités de la version 6.5.
 
-![saut](assets/sase.png)
+![sase](assets/sase.png)
 
 Le module de compatibilité propose deux modes : **Routage activé** et **Routage désactivé**.
 
@@ -64,7 +63,7 @@ Le mode hérité s’adresse aux utilisateurs qui possèdent des interfaces pers
 
 ## Méthode de configuration {#how-to-set-up}
 
-Le package de compatibilité AEM 6.3 peut être installé en tant que package à l’aide de Package Manager. Vous pouvez télécharger le package de compatibilité [AEM 6.3 à partir du site Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+Le package de compatibilité AEM 6.3 peut être installé en tant que package à l’aide du gestionnaire de modules. Vous pouvez télécharger le [module de compatibilité AEM 6.3 à partir du site Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
 
 Une fois le module de compatibilité installé, le routage peut être activé ou désactivé à l’aide d’un commutateur dans la configuration OSGI, comme indiqué ci-dessous :
 
