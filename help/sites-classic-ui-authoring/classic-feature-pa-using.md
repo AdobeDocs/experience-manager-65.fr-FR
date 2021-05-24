@@ -10,7 +10,6 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 28529cae-6fbd-4879-a5b8-3ec8e1bcd586
 docset: aem65
-translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 workflow-type: tm+mt
 source-wordcount: '106'
@@ -33,4 +32,4 @@ Les donnée d’analyse de page s’affichent dans la console Sites. Lorsque les
 
 >[!NOTE]
 >
->L’affichage des données d’analyse du site directement dans la console est disponible uniquement dans l’interface utilisateur optimisée pour les écrans tactiles. Voir [Affichage des données d’analyse de page](/help/sites-authoring/page-analytics-using.md) dans la documentation de création standard pour plus d’informations.
+>L’affichage des données d’analyse du site directement dans la console est disponible uniquement dans l’interface utilisateur optimisée pour les écrans tactiles. Pour plus d’informations, voir [Affichage des données d’analyse de page](/help/sites-authoring/page-analytics-using.md) dans la documentation de création standard.
