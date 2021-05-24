@@ -10,14 +10,13 @@ topic-tags: components
 content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 88%
 
 ---
-
 
 # Mode Développeur{#developer-mode}
 
@@ -43,7 +42,7 @@ Ils aident les développeurs à :
    >
    >   
    * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
->* N&#39;est disponible que pour les utilisateurs membres du groupe `administrators`.
+>* N’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
 
 
 >[!CAUTION]
@@ -78,7 +77,7 @@ Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dan
 
 Le panneau est divisé en deux onglets :
 
-* **[Composants](/help/sites-developing/developer-mode.md#components)**  : affiche une arborescence de composants, similaire à l&#39;arborescence de  [contenu ](/help/sites-authoring/author-environment-tools.md#content-tree) pour les auteurs.
+* **[Composants](/help/sites-developing/developer-mode.md#components)**  : affiche une arborescence de composants, similaire à l’arborescence de  [contenu ](/help/sites-authoring/author-environment-tools.md#content-tree) pour les auteurs.
 
 * **[Erreurs](/help/sites-developing/developer-mode.md#errors)** : lorsque des problèmes se produisent, les détails sont affichés pour chaque composant.
 
@@ -127,7 +126,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
 >[!CAUTION]
 >
->Certains liens pointent sur des scripts sous `/libs`. Cependant, il s&#39;agit uniquement de référence, vous **ne devez pas** modifier quoi que ce soit sous `/libs`, car toutes les modifications que vous apportez peuvent être perdues. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif/Feature Pack. Toute modification requise doit être effectuée sous `/apps`, voir [Overlays and Overrides](/help/sites-developing/overlays.md).
+>Certains liens pointent sur des scripts sous `/libs`. Toutefois, ces modifications sont proposées à des fins de référence uniquement. Vous **ne devez pas** modifier quoi que ce soit sous `/libs`, car toute modification que vous apportez peut être perdue. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif/Feature Pack. Toutes les modifications dont vous avez besoin doivent être apportées sous `/apps`, voir [Recouvrements et remplacements](/help/sites-developing/overlays.md).
 
 ### Erreurs {#errors}
 
@@ -144,11 +143,10 @@ Par exemple, dans l’éventualité où une méthode non définie est appelée, 
 
 L’entrée du composant dans l’arborescence de l’onglet Composants sera également marquée à l’aide d’un indicateur lorsqu’une erreur se produit.
 
-### Tests  {#tests}
+### Tests {#tests}
 
 >[!CAUTION]
 >
 >Dans AEM 6.2, les fonctions de test du mode Développeur ont fait l’objet d’une remise en œuvre en tant qu’application Outils autonome.
 >
->Pour plus d&#39;informations, voir [Test de votre interface utilisateur](/help/sites-developing/hobbes.md).
-
+>Pour plus d’informations, voir [Test de votre interface utilisateur](/help/sites-developing/hobbes.md).
