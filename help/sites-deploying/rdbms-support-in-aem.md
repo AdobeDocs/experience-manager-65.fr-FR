@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuration
+exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 84%
 
 ---
-
 
 # Prise en charge RDBMS dans AEM 6.4{#rdbms-support-in-aem}
 
@@ -64,11 +63,11 @@ Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de con
 
 1. Ensuite, préparez les lots OSGi JDBC à utiliser avec AEM :
 
-   1. Dans le dossier `crx-quickstart/install`, créez un dossier nommé `9`.
+   1. Dans le dossier `crx-quickstart/install` , créez un dossier nommé `9`.
 
    1. Placez le jar JDBC dans le nouveau dossier. 
 
-1. Enfin, début AEM avec les modes d’exécution `crx3` et `crx3rdb` :
+1. Enfin, commencez AEM par les modes d’exécution `crx3` et `crx3rdb` :
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -82,17 +81,17 @@ Les options de configuration suivantes sont disponibles :
 
 * `datasource.name:` Nom de la source de données. La valeur par défaut est de `oak`.
 
-* `url:` Chaîne URL de la base de données qui doit être utilisée avec JDBC. Chaque type de base de données est doté de son propre format de chaîne d’URL. Pour plus d’informations, reportez-vous à la section [Formats de chaîne d’URL](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) ci-dessous.
+* `url:` Chaîne d’URL de la base de données qui doit être utilisée avec JDBC. Chaque type de base de données est doté de son propre format de chaîne d’URL. Pour plus d’informations, reportez-vous à la section [Formats de chaîne d’URL](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) ci-dessous.
 
-* `driverClassName:` Nom de classe du pilote JDBC. Cela varie en fonction de la base de données que vous souhaitez utiliser et du pilote nécessaire pour s’y connecter. Vous trouverez ci-dessous les noms de classe pour toutes les bases de données prises en charge par AEM :
+* `driverClassName:` Nom de la classe du pilote JDBC. Cela varie en fonction de la base de données que vous souhaitez utiliser et du pilote nécessaire pour s’y connecter. Vous trouverez ci-dessous les noms de classe pour toutes les bases de données prises en charge par AEM :
 
    * `org.postgresql.Driver` pour PostgreSQL ;
    * `com.ibm.db2.jcc.DB2Driver` pour DB2 ;
-   * `oracle.jdbc.OracleDriver` pour l&#39;Oracle ;
+   * `oracle.jdbc.OracleDriver` pour l&#39;Oracle;
    *  `com.mysql.jdbc.Driver` pour MySQL et MariaDB (expérimentaux) ;
    * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` pour Microsoft SQL Server (expérimental).
 
-* `username:` Nom d&#39;utilisateur sous lequel s&#39;exécute la base de données.
+* `username:` Nom d’utilisateur sous lequel s’exécute la base de données.
 
 * `password:` Mot de passe de la base de données.
 
@@ -102,7 +101,7 @@ Un format de chaîne d’URL différent est utilisé dans la configuration de la
 
 * `jdbc:postgresql:databasename` pour PostgreSQL ;
 * `jdbc:db2://localhost:port/databasename` pour DB2 ;
-* `jdbc:oracle:thin:localhost:port:SID` pour l&#39;Oracle ;
+* `jdbc:oracle:thin:localhost:port:SID` pour l&#39;Oracle;
 *  `jdbc:mysql://localhost:3306/databasename` pour MySQL et MariaDB (expérimentaux) ;
 * `jdbc:sqlserver://localhost:1453;databaseName=name` pour Microsoft SQL Server (expérimental).
 
@@ -111,4 +110,3 @@ Un format de chaîne d’URL différent est utilisé dans la configuration de la
 Bien que l’utilisation simultanée de plusieurs instances AEM avec une seule base de données est prise en charge par la persistance SGDBDR, les installations concomitantes ne sont pas.
 
 Pour contourner ce problème, assurez-vous d’exécuter d’abord l’installation avec un seul membre et d’ajouter les autres à la fin de l’installation.
-
