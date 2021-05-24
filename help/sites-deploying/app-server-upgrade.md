@@ -21,9 +21,9 @@ ht-degree: 68%
 
 Cette section décrit la procédure qui doit être suivie afin de mettre à jour AEM pour les installations de serveur d’applications.
 
-Tous les exemples de cette procédure utilisent Tomcat comme serveur d’applications et impliquent que vous disposez d’une version de travail de AEM déjà déployée. La procédure est destinée à documenter les mises à niveau d’**AEM version 6.4 vers la version 6.5**.
+Tous les exemples de cette procédure utilisent Tomcat comme serveur d’applications et impliquent que vous disposez d’une version fonctionnelle d’AEM déjà déployée. La procédure est destinée à documenter les mises à niveau d’**AEM version 6.4 vers la version 6.5**.
 
-1. D&#39;abord, début TomCat. Dans la plupart des cas, vous pouvez effectuer cette opération en exécutant le script de démarrage du début `./catalina.sh` en exécutant la commande suivante à partir du terminal :
+1. D&#39;abord, démarrez TomCat. Dans la plupart des cas, vous pouvez effectuer cette opération en exécutant le script de démarrage `./catalina.sh` en exécutant cette commande à partir du terminal :
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
@@ -35,9 +35,9 @@ Tous les exemples de cette procédure utilisent Tomcat comme serveur d’applica
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Ensuite, annulez le déploiement AEM 6.4. Cela peut être fait à partir de TomCat App Manager (`http://serveraddress:serverport/manager/html`)
+1. Ensuite, annulez le déploiement d’AEM 6.4. Pour ce faire, utilisez le gestionnaire d’applications TomCat (`http://serveraddress:serverport/manager/html`).
 
-1. Désormais, migrez le référentiel à l’aide de l’outil de migration crx2oak. Pour ce faire, téléchargez la dernière version de crx2oak à partir de [cet emplacement](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak).
+1. Maintenant, migrez le référentiel à l’aide de l’outil de migration crx2oak. Pour ce faire, téléchargez la dernière version de crx2oak à partir de [cet emplacement](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
@@ -45,7 +45,7 @@ Tous les exemples de cette procédure utilisent Tomcat comme serveur d’applica
 
 1. Supprimez les propriétés requises du fichier sling.properties en procédant comme suit :
 
-   1. Ouvrez le fichier situé dans `crx-quickstart/launchpad/sling.properties`.
+   1. Ouvrez le fichier situé à l’emplacement `crx-quickstart/launchpad/sling.properties`.
    1. Supprimez les propriétés suivantes et enregistrez le fichier :
 
       1. `sling.installer.dir`
@@ -68,9 +68,9 @@ Tous les exemples de cette procédure utilisent Tomcat comme serveur d’applica
 
    * Le **dossier launchpad/startup**. Vous pouvez le supprimer en exécutant la commande suivante dans le terminal :`rm -rf crx-quickstart/launchpad/startup`
 
-   * Le fichier **base.jar** : `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * Le **fichier base.jar** : `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
-   * Le **fichier BootstrapCommandFile_timestamp.txt** : `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * Fichier **BootstrapCommandFile_timestamp.txt** : `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
    * Supprimez **sling.options.file** en exécutant : `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
@@ -106,7 +106,7 @@ Tous les exemples de cette procédure utilisent Tomcat comme serveur d’applica
    <param-value >author</param-value>
    ```
 
-1. Modifiez la valeur d’auteur ci-dessus et définissez les modes d’exécution sur : `author,crx3,crx3tar`. Le dernier bloc de code doit se présenter comme suit :
+1. Modifiez la valeur d’auteur ci-dessus et définissez les modes d’exécution sur : `author,crx3,crx3tar`. Le bloc de code final doit se présenter comme suit :
 
    ```
    <init-param>
@@ -123,4 +123,4 @@ Tous les exemples de cette procédure utilisent Tomcat comme serveur d’applica
    jar cvf aem65.war
    ```
 
-1. Enfin, déployez le nouveau fichier de guerre dans TomCat.
+1. Enfin, déployez le nouveau fichier war dans TomCat.
