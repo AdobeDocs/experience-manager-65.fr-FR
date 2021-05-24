@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '9241'
 ht-degree: 89%
 
 ---
-
 
 # Création de contenu accessible (conformité WCAG 2.0){#creating-accessible-content-wcag-conformance}
 
@@ -25,23 +24,19 @@ ht-degree: 89%
 >
 >Comme l’interface utilisateur classique a été abandonnée dans AEM 6.4, le contenu de cette page n’a pas été mis à jour pour WCAG 2.1.
 >
->Consultez les pages suivantes pour plus d&#39;informations sur AEM et WCAG 2.1 :
+>Consultez les pages suivantes pour plus d’informations sur AEM et WCAG 2.1 :
 >
 >* [AEM et les consignes pour l’accessibilité web](/help/managing/web-accessibility.md)
->* [Guide rapide relatif à WCAG 2.1](/help/managing/qg-wcag.md)
->* [Création de contenu accessible (conformité WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
+* [Guide rapide relatif à WCAG 2.1](/help/managing/qg-wcag.md)
+* [Création de contenu accessible (conformité WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
 
 
 WCAG 2.0 regroupe un ensemble de consignes et de critères de réussite, qui ne sont pas associés à une technologie particulière, visant à rendre les contenus web plus accessibles aux personnes en situation de handicap.
 
 >[!NOTE]
->
->Voir également :
->
->* Notre [guide rapide à propos de WCAG 2.0](/help/managing/qg-wcag.md) pour en savoir plus
->* [Configuration de l’éditeur de texte enrichi pour produire du contenu accessible](/help/sites-administering/rte-accessible-content.md)
-
->
+Voir également :
+* Notre [guide rapide à propos de WCAG 2.0](/help/managing/qg-wcag.md) pour en savoir plus
+* [Configuration de l’éditeur de texte enrichi pour produire du contenu accessible](/help/sites-administering/rte-accessible-content.md)
 
 
 
@@ -56,17 +51,12 @@ Lors de la création de votre site, vous devez déterminer à quel niveau géné
 La section suivante présente les [règles WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) ainsi que les critères de réussite associés aux [niveaux de conformité](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html) A et AA.
 
 >[!NOTE]
->
->Il n’est pas possible, pour certains types de contenu, de satisfaire à tous les critères de réussite du niveau de conformité AAA ; celui-ci n’est donc pas recommandé à titre de politique générale.
+Il n’est pas possible, pour certains types de contenu, de satisfaire à tous les critères de réussite du niveau de conformité AAA ; celui-ci n’est donc pas recommandé à titre de politique générale.
 
 >[!NOTE]
->
->Dans ce document, nous utilisons :
->
->* les noms courts des [règles WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) ;
->* la numérotation utilisée dans les [règles WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) afin de simplifier les références croisées avec le site web WCAG.
-
->
+Dans ce document, nous utilisons :
+* les noms courts des [règles WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) ;
+* la numérotation utilisée dans les [règles WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) afin de simplifier les références croisées avec le site web WCAG.
 
 
 
@@ -95,30 +85,27 @@ Autre avantage utile : les équivalents textuels permettent aux moteurs de rech
 Pour les images statiques, la règle de base consiste à fournir un équivalent textuel, appelé texte secondaire. Vous pouvez pour ce faire utiliser le champ **Texte secondaire** :
 
 >[!NOTE]
->
->Certains composants prêts à l’emploi, tels que **Carrousel** et **Diaporama**, ne permettent pas d’ajouter des descriptions d’images sous forme de texte de remplacement. Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt` afin que les auteurs puissent l’ajouter au contenu (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Certains composants prêts à l’emploi, tels que **Carrousel** et **Diaporama**, ne permettent pas d’ajouter des descriptions d’images sous forme de texte de remplacement. Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt` afin que les auteurs puissent l’ajouter au contenu (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 Le champ **Texte de remplacement** est disponible dans l’onglet des propriétés d’image **Avancées** de la boîte de dialogue du composant **Image** :
 
 ![Boîte de dialogue de modification du composant Image dans l’interface utilisateur classique ; présente le champ Texte de remplacement.](assets/chlimage_1-17a.png)
 
-Par défaut, AEM ajoute un **texte de remplacement** à vos images. Pour l’interface utilisateur classique, il existe deux scénarios différents pour la création de l’attribut par défaut (bien que la valeur par défaut ne soit pas suffisante en tant qu’alternative et qu’elle doive probablement être modifiée dans l’onglet **Advanced** Propriétés de l’image) :
+Par défaut, AEM ajoute un **texte de remplacement** à vos images. Pour l’IU classique, il existe deux scénarios différents pour la création de l’attribut par défaut (bien que la valeur par défaut puisse ne pas être suffisante en tant qu’alternative et devra probablement être modifiée dans l’onglet **Propriétés d’image avancées**) :
 
 * File:
 
-   Une image est téléchargée à partir du disque dur de l’utilisateur. Si vous ajoutez un composant d’image à une page, puis choisissez une image sur votre disque dur ou une autre source, la valeur par défaut de **Alt Text** est `file`. Cette modification doit être effectuée dans l&#39;onglet **Propriétés avancées** des images. Là encore, cette valeur n’est pas affichée dans le champ **Alt Text**, mais lorsque la valeur est modifiée, la nouvelle valeur s’affiche dans le champ.
+   Une image est téléchargée à partir du disque dur de l’utilisateur. Si vous ajoutez un composant d’image à une page, puis choisissez une image sur votre disque dur ou une autre source, la valeur par défaut de **Texte de remplacement** est `file`. Cela doit être modifié dans l’onglet **Propriétés d’image avancées** . Encore une fois, cette valeur n’est pas affichée dans le champ **Texte de remplacement**, mais lorsque la valeur est modifiée, la nouvelle valeur est affichée dans le champ.
 
 * Asset:
 
-   Une image est ajoutée à partir du référentiel de ressources numériques. Si vous faites glisser une image du référentiel de ressources numériques vers une page Web, les valeurs **Title** et **Alt Text** de cette image sont extraites des métadonnées de cette image.
+   Une image est ajoutée à partir du référentiel de ressources numériques. Si vous faites glisser une image du référentiel de ressources numériques vers une page web, les valeurs **Titre** et **Texte de remplacement** de cette image seront extraites des métadonnées de cette image.
 
 >[!NOTE]
->
->Dans les deux scénarios ci-dessus, la valeur par défaut **Alt Text** n&#39;est pas visible dans l&#39;onglet **Advanced Image Properties**. Pour modifier la valeur par défaut, il vous suffit de saisir une nouvelle valeur dans le champ **Alt Text**.
+Dans les deux scénarios ci-dessus, la valeur par défaut **Texte de remplacement** n’est pas visible dans l’onglet **Propriétés d’image avancées**. Pour modifier la valeur par défaut, il vous suffit de saisir une nouvelle valeur dans le champ **Texte de remplacement**.
 
 >[!NOTE]
->
->Si votre image est purement décorative (voir [Création de bonnes variantes de texte](#creating-good-text-alternatives)), vous pouvez saisir un espace dans le champ **Texte de remplacement** à l’aide de la barre d’espace. Un attribut `alt` vide est alors créé, ce qui invite un lecteur d’écran à ignorer l’image.
+Si votre image est purement décorative (voir [Création d’équivalents textuels appropriés](#creating-good-text-alternatives)), vous pouvez saisir un espace dans le champ **Texte de remplacement** à l’aide de la barre d’espace. Un attribut `alt` vide est ainsi créé, ce qui invite un lecteur d’écran à ignorer l’image.
 
 #### Création d’un texte secondaire adapté {#creating-good-text-alternatives}
 
@@ -139,17 +126,17 @@ L’ébauche du document [W3C: HTML5 Techniques for providing useful text altern
 
 Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte secondaire doit être associé :
 
-* Illustration :
+* Illustrations :
 
    Ce sont des images de personnes, d&#39;objets ou de lieux. Pensez au rôle de la photo sur la page ; un équivalent textuel approprié est probablement *Photo de [objet]*, mais peut dépendre du texte environnant.
 
 * Icônes :
 
-   Il s&#39;agit de petits pictogrammes (graphiques) qui transmettent des informations spécifiques. Elles doivent être utilisées de manière cohérente sur une page et un site. Toutes les instances de l&#39;icône sur une page ou sur un site doivent avoir la même option de texte court et succinct, à moins que cela n&#39;entraîne une duplication inutile du texte adjacent.
+   Il s’agit de petits pictogrammes (graphiques) véhiculant des informations spécifiques. Ils doivent être utilisés de manière cohérente sur une page et un site. Toutes les instances de l’icône sur une page ou un site doivent avoir le même équivalent textuel court et succinct, sauf si cela entraîne une duplication inutile du texte adjacent.
 
 * Graphiques et graphiques :
 
-   Il s’agit généralement de données numériques. Ainsi, une option permettant de fournir une alternative textuelle pourrait consister à inclure un bref résumé des principales tendances affichées dans le graphique ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** de l’onglet **Propriétés avancées** des images. De plus, vous pouvez fournir les données source sous forme de tableau ailleurs dans la page ou le site.
+   Elles représentent généralement des données numériques. Ainsi, une option permettant de fournir un texte secondaire peut être d’inclure un bref résumé des principales tendances affichées dans le graphique ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet **Propriétés d’image avancées** . En outre, vous pouvez fournir les données source sous forme tabulaire ailleurs dans la page ou le site.
 
    ![Exemple d’un graphique. La meilleure approche pour fournir un équivalent est présentée ci-dessous.](assets/chlimage_1-2a.jpeg)
 
@@ -162,20 +149,19 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
    ```
 
    >[!NOTE]
-   >
-   >Le fragment de code ci-dessus n&#39;est utilisé que pour illustrer la commande. Il est recommandé d’utiliser le composant **Image** (plutôt que la référence `img src` utilisée ci-dessus.
+   Le fragment de code ci-dessus n’est utilisé que pour illustrer la commande. Il est recommandé d’utiliser le composant **Image** (plutôt que la référence `img src` utilisée ci-dessus.
 
    Dans AEM, ce résultat peut être obtenu à l’aide d’une combinaison des champs **Texte de remplacement** et **Description** de la boîte de dialogue de configuration de l’image, comme dans [Compatibilité - Contenu non textuel (1.1.1)](#how-to-meet-non-text-content).
 
 * Cartes, diagrammes, organigrammes :
 
-   Pour les graphiques fournissant des données spatiales (par exemple. pour prendre en charge la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas pratique. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, le texte de remplacement de l’image de carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement dans le texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
+   Pour les graphiques fournissant des données spatiales (par exemple, pour prendre en charge la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas pratique. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, le texte de remplacement de l’image de carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement dans le texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
 
 * CAPTCHA :
 
-   Un CAPTCHA est un *test de Turing public entièrement automatisé pour dire Computers and Humans Apart*. Il s&#39;agit d&#39;un contrôle de sécurité utilisé sur les pages Web pour distinguer les humains des logiciels malveillants, mais qui peut causer des obstacles à l&#39;accessibilité. Il s’agit d’images qui demandent aux utilisateurs de décrire ce qu’ils voient afin de réussir un test de sécurité. Il n&#39;est évidemment pas possible de fournir un texte alternatif à l&#39;image, il vous faudra donc envisager d&#39;autres solutions non graphiques.
+   Un CAPTCHA est un *test de Turing public entièrement automatisé pour informer Computers and Humans Separ/*. Il s’agit d’un contrôle de sécurité utilisé sur les pages web pour distinguer les humains des logiciels malveillants, mais qui peut entraîner des barrières à l’accessibilité. Il s’agit d’images qui demandent aux utilisateurs de décrire ce qu’ils voient pour réussir un test de sécurité. Il n’est évidemment pas possible de fournir un texte de remplacement à l’image. Vous devrez donc envisager d’autres solutions non graphiques.
 
-   Le W3C propose un certain nombre de suggestions, telles que : chacune de ces approches présente ses propres mérites et inconvénients.
+   Le W3C propose un certain nombre de suggestions, telles que : chacune de ces approches présente ses avantages et ses inconvénients.
 
    * Énigmes logiques
    * Utilisation d’une sortie audio plutôt que d’images
@@ -183,13 +169,12 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 * Images d’arrière-plan :
 
-   Elles sont réalisées à l’aide de feuilles de style en cascade (CSS) plutôt qu’en HTML. Cela signifie qu’il n’est pas possible de spécifier une autre valeur de texte. Par conséquent, les images d’arrière-plan ne doivent pas fournir d’informations textuelles importantes. Si tel est le cas, ces informations doivent également être fournies dans le texte de la page.
+   Pour ce faire, utilisez des feuilles de style en cascade (CSS) plutôt que du code HTML. Cela signifie qu’il n’est pas possible de spécifier une autre valeur de texte. Par conséquent, les images d’arrière-plan ne doivent pas fournir d’informations textuelles importantes. Si elles le font, ces informations doivent également être fournies dans le texte de la page.
 
-   Cependant, il est important qu’un autre arrière-plan s’affiche lorsque l’image ne peut pas être affichée.
+   Cependant, il est important qu’un arrière-plan alternatif s’affiche lorsque l’image ne peut pas être affichée.
 
    >[!NOTE]
-   >
-   >Le niveau de contraste entre l’arrière-plan et le texte au premier plan doit être suffisant. Cela est décrit de manière plus détaillée à la section [Contraste (minimum) (1.4.3)](#contrast-minimum).
+   Le niveau de contraste entre l’arrière-plan et le texte au premier plan doit être suffisant. Cela est décrit de manière plus détaillée à la section [Contraste (minimum) (1.4.3)](#contrast-minimum).
 
 #### En savoir plus – Contenu non textuel (1.1.1)  {#more-information-non-text-content}
 
@@ -229,9 +214,9 @@ En proposant ces informations dans un autre format (texte par exemple, ou audio 
 
 * Si le contenu est un contenu audio pré-enregistré sans vidéo (podcast par exemple) :
 
-   * Fournissez un lien juste avant ou après le contenu vers une transcription texte du contenu audio.
+   * Fournissez un lien juste avant ou après le contenu vers une transcription textuelle du contenu audio.
 
-      La transcription doit être une page HTML avec un texte équivalant à tout contenu non parlé important et oral, plus une indication de qui parle, une description du paramètre, des expressions vocales et une description de tout autre contenu audio significatif.
+      La transcription doit être une page HTML avec un équivalent textuel de tout le contenu non parlé important et parlé, plus une indication de qui parle, une description du décor, des expressions vocales et une description de tout autre contenu audio significatif.
 
 * Si le contenu est une animation ou une vidéo pré-enregistrée sans audio :
 
@@ -239,14 +224,12 @@ En proposant ces informations dans un autre format (texte par exemple, ou audio 
    * Ou fournissez une audio-description équivalente dans un format audio fréquemment utilisé (MP3 par exemple).
 
 >[!NOTE]
->
->Si le contenu audio ou vidéo est fourni comme alternative au contenu qui existe déjà dans un autre format sur une page web, il n’est pas nécessaire d’adhérer aux exigences ci-dessus. Si, par exemple, une vidéo illustre une liste d’instructions textuelles, il n’est pas nécessaire d’ajouter un équivalent puisque les instructions textuelles agissent comme équivalent de la vidéo.
+Si le contenu audio ou vidéo est fourni comme alternative au contenu qui existe déjà dans un autre format sur une page web, il n’est pas nécessaire d’adhérer aux exigences ci-dessus. Si, par exemple, une vidéo illustre une liste d’instructions textuelles, il n’est pas nécessaire d’ajouter un équivalent puisque les instructions textuelles agissent comme équivalent de la vidéo.
 
 L’ajout de contenu multimédia (Flash notamment) dans vos pages web AEM revient à ajouter une image. Toutefois, puisque le contenu multimédia représente bien davantage qu’une image fixe, il existe différents paramètres et options pour contrôler la lecture du multimédia.
 
 >[!NOTE]
->
->Si vous utilisez un contenu multimédia informatif, vous devez également créer des liens vers les équivalents. Par exemple, pour inclure une transcription textuelle, créez une page HTML où afficher la transcription, puis ajoutez un lien en regard ou en dessous du contenu audio.
+Si vous utilisez un contenu multimédia informatif, vous devez également créer des liens vers les équivalents. Par exemple, pour inclure une transcription textuelle, créez une page HTML où afficher la transcription, puis ajoutez un lien en regard ou en dessous du contenu audio.
 
 #### En savoir plus – Contenu seulement audio ou vidéo (pré-enregistré) (1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
 
@@ -264,8 +247,7 @@ L’ajout de contenu multimédia (Flash notamment) dans vos pages web AEM revien
 Les personnes sourdes ou malentendantes n’auront pas accès au contenu audio, ou y auront accès avec de grandes difficultés. Les sous-titres sont des équivalents textuels au contenu audio parlé et non parlé ; ils s’affichent à l’écran au moment approprié durant la vidéo. Ils permettent aux personnes qui ne peuvent pas écouter le contenu audio de comprendre ce qui se passe.
 
 >[!NOTE]
->
->Les sous-titres ne sont pas obligatoires s’il existe déjà des équivalents textuels ou non textuels adaptés (qui fournissent directement des informations équivalentes) sur la même page que la vidéo ou l’animation.
+Les sous-titres ne sont pas obligatoires s’il existe déjà des équivalents textuels ou non textuels adaptés (qui fournissent directement des informations équivalentes) sur la même page que la vidéo ou l’animation.
 
 #### Comment procéder – Sous-titres (pré-enregistrés) (1.2.2)   {#how-to-meet-captions-pre-recorded}
 
@@ -364,7 +346,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 * [Compréhension du critère de réussite 1.2.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
 * [Comment remplir le critère de réussite 1.2.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only)
 
-### Adaptable (1.3)  {#adaptable}
+### Adaptable (1.3) {#adaptable}
 
 [Règle 1.3 – Adaptable : créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
@@ -398,7 +380,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
 * **Utilisation de titres :**
 
-   Tant que les fonctions d&#39;accessibilité du RTE sont activées (voir [AEM et Accessibilité](/help/sites-administering/rte-accessible-content.md)), AEM offres 3 niveaux d&#39;en-tête de page. Vous pouvez les utiliser pour identifier les sections et sous-sections de contenu. L&#39;en-tête 1 est le plus haut niveau de l&#39;en-tête, l&#39;en-tête 3 le plus bas. L’administrateur système peut configurer le système pour autoriser l’utilisation de niveaux d’en-tête plus élevés.
+   Tant que les fonctions d’accessibilité de l’éditeur de texte enrichi sont activées (voir [AEM et Accessibilité](/help/sites-administering/rte-accessible-content.md)), AEM offre 3 niveaux d’en-tête de page. Vous pouvez les utiliser pour identifier les sections et sous-sections de contenu. En-tête 1 est le niveau d’en-tête le plus élevé, En-tête 3 le plus bas. L’administrateur système peut configurer le système pour autoriser l’utilisation d’un plus grand nombre de niveaux d’en-tête.
 
    L’image suivante illustre un exemple des différents types de titres.
 
@@ -409,13 +391,11 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
    Mettez le texte en évidence à l’aide des éléments &lt;strong> ou &lt;em>. N’utilisez pas de titres au sein des paragraphes.
 
    * Surlignez le texte à mettre en évidence.
-   * Cliquez sur l&#39;icône **B** (pour &lt;strong>) ou l&#39;icône **I** (pour &lt;em>) affichée dans le panneau **Propriétés** (assurez-vous que HTML est sélectionné).
+   * Cliquez sur l’icône **B** (pour &lt;strong>) ou **I** (pour &lt;em>) affichée dans le panneau **Propriétés** (assurez-vous que HTML est sélectionné).
 
    >[!NOTE]
-   >
-   >Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
-   >
-   >* &lt;b> au lieu de &lt;strong>
+   Dans une installation AEM standard, l’éditeur de texte enrichi est configuré pour utiliser :
+   * &lt;b> au lieu de &lt;strong>
    * &lt;i> au lieu de &lt;em>
 
    Même s’ils sont en réalité identiques, &lt;strong> et &lt;em> sont préférables car ils constituent un code html sémantiquement correct. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour utiliser &lt;strong> et &lt;em> (au lieu de &lt;b> et &lt;i>) lors de l’élaboration de votre instance de projet.
@@ -424,7 +404,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
    * L’élément `<ul>` est utilisé pour les listes *non triées* (à puces). Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`. 
 
-      dans l’ETC, utilisez l’icône **Liste à puces**.
+      dans l’éditeur de texte enrichi, utilisez l’icône **Liste à puces** .
 
    * L’élément `<ol>` est utilisé pour les listes *numérotées*. Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`. 
 
@@ -462,13 +442,13 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
    ![Boîte de dialogue Propriétés du tableau.](assets/chlimage_1-20a.png)
 
-   Vous pouvez ensuite utiliser les propriétés **Cellule** pour choisir si la cellule est une cellule de données ou d&#39;en-tête et, si une cellule d&#39;en-tête est liée à une ligne ou une colonne ou les deux :
+   Vous pouvez ensuite utiliser les **propriétés de la cellule** pour choisir si la cellule est une cellule de données ou d’en-tête et, si une cellule d’en-tête est liée à une ligne ou à une colonne, ou les deux :
 
    ![Boîte de dialogue Propriétés de la cellule ; définition d’une ligne (généralement la première) comme ligne d’en-tête.](assets/chlimage_1-21a.png)
 
 * **Tableaux de données complexes :** 
 
-   Dans certains cas, lorsqu&#39;il existe des tableaux complexes comportant deux niveaux ou plus d&#39;en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, des relations directes doivent être créées entre les en-têtes et leurs cellules associées à l’aide des attributs **header** et **id**. Par exemple, dans le tableau ci-dessous, les en-têtes et les identifiants correspondent pour créer une association programmatique pour les utilisateurs de technologies d’assistance.
+   Dans certains cas, lorsqu’il existe des tableaux complexes comportant deux niveaux ou plus d’en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, des relations directes doivent être créées entre les en-têtes et leurs cellules associées à l’aide des attributs **header** et **id**. Par exemple, dans le tableau ci-dessous, les en-têtes et les identifiants correspondent afin de créer une association de programmation pour les utilisateurs de technologies d’assistance.
 
    >[!NOTE]
    L’attribut id n’est pas disponible dans une installation prête à l’emploi. Il peut être activé en configurant les règles HTML et le sérialiseur dans l’éditeur de texte enrichi.
@@ -543,7 +523,7 @@ L’utilisation de termes descriptifs est acceptable s’ils ont une significati
 * [Compréhension du critère de réussite 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
 * [Comment remplir le critère de réussite 1.3.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding)
 
-### Perceptible (1.4)  {#distinguishable}
+### Perceptible (1.4) {#distinguishable}
 
 [Règle 1.4 – Perceptible : faciliter la perception visuelle et auditive du contenu par l’utilisateur, notamment en séparant le premier plan de l’arrière-plan.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
 
@@ -702,7 +682,7 @@ Selon la nature du contenu, appliquez une ou plusieurs des suggestions ci-après
 * [Compréhension du critère de réussite 2.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
 * [Comment remplir le critère de réussite 2.2.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause)
 
-### Crises (2.3)       {#seizures}
+### Crises (2.3)      {#seizures}
 
 [Règle 2.3 – Crises : ne pas concevoir de contenu susceptible de provoquer des crises.](https://www.w3.org/TR/WCAG20/#seizure)
 
@@ -745,7 +725,7 @@ Ce critère de réussite aide quiconque, en situation de handicap ou non, à ide
 
 Si une page HTML est créée dans AEM, vous pouvez en spécifier le titre. Veillez à ce qu’il décrive adéquatement le contenu de la page, de sorte que les visiteurs puissent rapidement identifier si le contenu est réellement adapté à leurs besoins.
 
-Vous pouvez également modifier le titre d&#39;une page lors de sa modification, accessible par **Sidekick** - **onglet Page** - **Propriétés de la page...**
+Vous pouvez également modifier le titre d’une page lors de sa modification, accessible par **Sidekick** - **onglet Page** - **Propriétés de la page...**
 
 #### En savoir plus – Titre de page (2.4.2) {#more-information-page-titled}
 
@@ -949,11 +929,11 @@ Le positionnement des libellés est également important, car ils permettent de 
 
 * Cases à cocher ou boutons radio :
 
-   Les étiquettes sont placées immédiatement à droite du champ.
+   Les libellés sont positionnés immédiatement à droite du champ.
 
-* Tous les autres composants de formulaire (par exemple, les zones de texte, les zones de liste modifiable) :
+* Tous les autres composants de formulaire (zones de texte, zones de liste modifiable, par exemple) :
 
-   Les étiquettes sont placées immédiatement au-dessus ou immédiatement à gauche du champ.
+   Les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
 Dans les formulaires simples avec des fonctionnalités très limitées, un bouton `Submit` approprié peut servir de libellé pour le champ adjacent (par exemple `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 
@@ -961,4 +941,3 @@ Dans les formulaires simples avec des fonctionnalités très limitées, un bouto
 
 * [Compréhension du critère de réussite 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
 * [Comment remplir le critère de réussite 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
-
