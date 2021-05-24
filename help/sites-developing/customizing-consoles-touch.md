@@ -10,14 +10,13 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 77%
 
 ---
-
 
 # Personnalisation des consoles {#customizing-the-consoles}
 
@@ -29,8 +28,8 @@ AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les cons
 
 * Clientlibs Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, elle peut contenir le code requis pour votre composant personnalisé.
 
-* Incrustations
-Les incrustations sont basées sur les définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec votre propre fonctionnalité personnalisée (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
+* Recouvrements
+Les superpositions sont basées sur des définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
 
 Ils peuvent être utilisés de différentes manières pour étendre les consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -54,7 +53,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+>1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
    >
    >
 1. Apportez les modifications désirées dans `/apps`
@@ -83,7 +82,7 @@ Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour un
 
    La première entrée est la valeur par défaut.
 
-   Les noeuds disponibles correspondent aux options de vue disponibles :
+   Les noeuds disponibles correspondent aux options d’affichage disponibles :
 
    * `column`
    * `card`
@@ -133,13 +132,13 @@ Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour un
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   En utilisant les propriétés de ce noeud, vous pouvez définir l&#39;`groups` autorisé à exécuter l&#39;action spécifique ; par exemple, `administrators`
+   En utilisant les propriétés sur ce noeud, vous pouvez définir la balise `groups` autorisée à exécuter l’action spécifique. par exemple, `administrators`
 
 ### Personnalisation des colonnes en mode Liste {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Cette fonction est optimisée pour les colonnes de champs de texte ; pour les autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
+>Cette fonctionnalité est optimisée pour les colonnes de champs de texte ; pour les autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
 
 Pour personnaliser les colonnes en mode Liste :
 
@@ -156,7 +155,7 @@ Pour personnaliser les colonnes en mode Liste :
 
 1. Si vous le souhaitez :
 
-   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec un
+   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire une balise [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec une balise
       `pageInfoProviderType` property.
 
    Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.
