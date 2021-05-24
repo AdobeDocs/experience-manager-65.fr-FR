@@ -7,14 +7,13 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 95%
 
 ---
-
 
 # Exemples de magasins candidats ContextHub {#sample-contexthub-store-candidates}
 
@@ -64,7 +63,7 @@ Le magasin candidat de modèles contexthub.geolocation utilise Google Maps pour 
 
 ### Implémentation de base {#base-implementation-geolocation}
 
-Le candidat du magasin contexthub.geolocation s&#39;étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Le magasin candidat contexthub.geolocation étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuration {#configuration-geolocation}
 
@@ -122,7 +121,7 @@ Stocke des informations sur l’environnement client actuel, telles que l’appa
 
 ### Implémentation de base {#base-implementation-surferinfo}
 
-Le candidat du magasin contexthub.datetime étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Le magasin candidat contexthub.datetime étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuration {#configuration-surferinfo}
 
@@ -189,7 +188,7 @@ L’exemple de magasin candidat granite.emulators stocke des informations sur le
 
 ### Implémentation de base {#base-implementation-emulators}
 
-Le candidat du magasin contexthub.geolocation s&#39;étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+Le magasin candidat contexthub.geolocation étend [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuration {#configuration-emulators}
 
@@ -322,7 +321,7 @@ Stocke des informations sur l’utilisateur actuel.
 
 ### Implémentation de base {#base-implementation-profile}
 
-Le candidat du magasin contexthub.datetime étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+Le magasin candidat contexthub.datetime étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuration {#configuration-profile}
 
