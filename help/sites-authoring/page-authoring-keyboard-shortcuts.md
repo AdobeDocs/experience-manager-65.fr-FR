@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
-translation-type: tm+mt
-source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 91%
 
 ---
-
 
 # Raccourcis clavier lors de la modification de pages{#keyboard-shortcuts-when-editing-pages}
 
@@ -44,7 +43,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->&amp;ast; Une fois que l’utilisateur a début d’interagir avec la page en mode Prévisualisation, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
+>&amp;ast; Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
 
 Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui utilisent les [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 
