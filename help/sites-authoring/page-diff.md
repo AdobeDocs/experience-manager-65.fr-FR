@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
+exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 100%
 
 ---
-
 
 # Outil de comparaison des pages{#page-diff}
 
@@ -31,14 +30,14 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 >
 >Consultez la section consacrée à l’[outil de comparaison des pages](/help/sites-developing/pagediff.md#operation-details) pour plus d’informations sur cette fonction.
 
-## Utilisation {#use}
+## Utilisez {#use}
 
 L’outil de comparaison côte à côte permet de comparer les éléments suivants :
 
 * [Versions](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) : la version actuelle d’une page et sa version antérieure.
-* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies : une Live Copy et son plan directeur
+* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) : une Live Copy et son plan directeur
 * [Lancements](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) : un lancement et sa source
-* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Copies de langue : une page avant et après (re)traduction
+* [Copies de langue](/help/sites-administering/tc-manage.md#comparing-language-copies) : une page avant et après (re)traduction
 
 Reportez-vous aux rubriques correspondantes afin de connaître la procédure de comparaison pour ces différents éléments.
 
