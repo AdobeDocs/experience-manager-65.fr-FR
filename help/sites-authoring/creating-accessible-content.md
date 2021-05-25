@@ -1,14 +1,13 @@
 ---
 title: Création de contenu accessible pour Adobe Experience Manager (conformité WCAG 2.1)
-description: Utiliser AEM pour aider à rendre le contenu Web accessible aux personnes handicapées et utilisable par elles
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+description: Utilisez AEM pour rendre le contenu web accessible aux personnes en situation de handicap et utilisable par celles-ci.
+exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '13956'
 ht-degree: 99%
 
 ---
-
 
 # Création de contenu accessible (conformité WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
@@ -25,7 +24,7 @@ En introduction, le consortium propose une série de sections et de documents an
 En outre, voir :
 * Notre [Guide rapide relatif à WCAG 2.1](/help/managing/qg-wcag.md).
 * Les [rapports de conformité à l’accessibilité pour les solutions Adobe](https://www.adobe.com/accessibility/compliance.html).
-* [Configuration de l’éditeur de texte enrichi pour la production de contenu accessible](/help/sites-administering/rte-accessible-content.md)
+* [Configuration de l’éditeur de texte enrichi pour produire du contenu accessible](/help/sites-administering/rte-accessible-content.md)
 
 Les règles sont classées selon trois niveaux de conformité : niveau A (le plus bas), niveau AA et niveau AAA (le plus élevé). Pour résumer, les niveaux sont définis comme suit :
 
@@ -283,7 +282,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 * [Compréhension du critère de réussite 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Comment remplir le critère de réussite 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### Adaptable (1.3)  {#adaptable}
+### Adaptable (1.3) {#adaptable}
 
 [Règle 1.3 – Adaptable : créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -456,7 +455,7 @@ Veillez à ce que les informations qui reposent sur des caractéristiques visuel
 * [Compréhension du critère de réussite 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Comment remplir le critère de réussite 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Perceptible (1.4)  {#distinguishable}
+### Perceptible (1.4) {#distinguishable}
 
 [Règle 1.4 – Perceptible : faciliter la perception visuelle et auditive du contenu par l’utilisateur, notamment en séparant le premier plan de l’arrière-plan.](https://www.w3.org/TR/WCAG/#distinguishable)
 
