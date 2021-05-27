@@ -11,10 +11,10 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 97182f9a7b5fa5f96106fed59eeecf866c6d34ff
+source-git-commit: 4a4ecd1304a1eed0916c3f1a51558397fa4dbc47
 workflow-type: tm+mt
-source-wordcount: '3205'
-ht-degree: 85%
+source-wordcount: '3251'
+ht-degree: 83%
 
 ---
 
@@ -103,8 +103,12 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
    <td>Niveau de prise en charge</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 12 JDK [1]</td>
-   <td>Z : Non pris en charge </td>
+   <td><strong>Azul Zulu OpenJDK 11 - 64 bits [3]</strong></td>
+   <td>A : Pris en charge</td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 8 - 64 bits [3]</td>
+   <td>A : Pris en charge</td>
   </tr>
   <tr>
    <td><strong>Oracle Java SE 11 JDK – 64 bits</strong></td>
@@ -136,7 +140,8 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9, Java 10 et Java 12 sont des versions non LTS par Oracle (voir [Feuille de route de la prise en charge de Java SE par Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java.
 
 1. IBM JRE est pris en charge uniquement avec WebSphere Application Server.
-1. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Pour plus d’informations, voir [Prise en charge Java d’Oracle pour Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) .
+1. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS au-delà de la fin des mises à jour publiques, seront directement prises en charge par Adobe pour tous les clients AEM qui utiliseront la technologie Oracle Java SE **jusqu’à décembre 2022**. Pour plus d’informations, voir [Prise en charge Java d’Oracle pour Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) .
+1. La prise en charge et la distribution des créations Azul Zulu d’OpenJDK, y compris toutes les mises à jour de maintenance des versions LTS, seront prises en charge directement par Adobe pour tous les clients AEM qui utilisent les créations Azul Zulu d’OpenJDK, à partir d’AEM 6.5 SP9.
 
 ### Stockage et persistance {#storage-persistence}
 
