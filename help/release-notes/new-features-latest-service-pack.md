@@ -1,17 +1,17 @@
 ---
-title: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 8
-description: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 8
+title: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 9
+description: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 48a5f9ffb33ae09f5d4e6e57cf66b871a9ff6981
 workflow-type: tm+mt
-source-wordcount: '3041'
-ht-degree: 7%
+source-wordcount: '3294'
+ht-degree: 6%
 
 ---
 
-# Nouveautés de [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
+# Nouveautés de [!DNL Adobe Experience Manager] 6.5 Service Pack 9 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)
 
@@ -21,15 +21,57 @@ Cet article met en évidence les fonctionnalités incluses dans le dernier Servi
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Tri des pages Live Copy disponibles pour le déploiement {#sort-livecopy-pages}
+### Possibilité de restaurer les pages supprimées et l’arborescence {#ability-to-restore-pages-tree}
 
-Vous pouvez désormais trier les pages Live Copy disponibles pour le déploiement à l’aide des propriétés [!UICONTROL Name], [!UICONTROL Date de dernière modification] et [!UICONTROL Date du dernier déploiement]. La [!UICONTROL date du dernier déploiement] d’une page est une nouvelle propriété introduite dans cette version.
+Vous pouvez désormais restaurer les pages supprimées et l’arborescence entière sur une page [!DNL Experience Manager Sites].
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* Lors de l’utilisation de la fonction [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md), vous pouvez désormais afficher la liste de toutes les pages [!DNL Sites] qui utilisent la ressource. Ces références à une ressource sont disponibles dans la page [!UICONTROL Propriétés] d’une ressource. Cela permet aux administrateurs, aux spécialistes du marketing et aux bibliothécaires d’avoir une vue complète de l’utilisation des ressources, ce qui permet un meilleur suivi, une meilleure gestion et une meilleure cohérence de la marque.
+* Mise à jour des noms des régions et paramètres régionaux chinois relatifs à Hong Kong, Macao et Taïwan, afin de les rendre cohérents avec les opinions sociales et politiques chinoises.
 
-* Lors de la suppression d’une ressource référencée dans une page web, [!DNL Experience Manager] affiche un avertissement. Vous pouvez forcer la suppression d’une ressource référencée ou vérifier et modifier les références affichées dans la page [!DNL Properties] de la ressource. Cliquer sur les références ouvre les pages [!DNL Sites] locales et distantes.
+* Une configuration facultative est introduite pour réduire la casse des ID d’email dans la réponse de l’api ACP à partir de [!DNL Adobe Experience Manager].
+
+   ![configuration pour mettre en minuscules les ID d’email dans la réponse ACP des AEM](assets/email-lowcase-config.png)
+
+* Le contraste (avec l’arrière-plan) du texte et des icônes à différents endroits est amélioré selon WCAG, afin de le rendre accessible aux utilisateurs ayant une vision et une perception limitées des couleurs. Pour plus d’informations, voir [Améliorations de l’accessibilité dans Assets](sp-release-notes.md#assets-accessibility-6590).
+
+### Dynamic Media {#assets-dynamic-media}
+
+* [Dynamic Media est plus ](sp-release-notes.md#assets-accessibility-6590) accessible en termes :
+
+   * facilité d’utilisation avec les touches du clavier.
+   * contraste (avec l’arrière-plan) du texte, du texte d’espace réservé et des contrôles dans divers éditeurs.
+   * accessibilité et narration par les lecteurs d’écran.
+
+* l’imagerie dynamique RGPD (rapport de pixels d’appareil) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace ; sur les périphériques dotés d’une haute résolution et d’une bande passante réseau limitée. Pour plus d’informations, voir [FAQ sur l’imagerie dynamique](/help/assets/imaging-faq.md).
+
+   >[!NOTE]
+   >
+   >Le calendrier de publication des améliorations de l’imagerie dynamique ci-dessus est le suivant :
+   >
+   >* Amérique du Nord, le 24 mai 2021, dans l&#39;Alliance du Nord,
+      >
+      >
+   * l&#39;Europe, le Moyen-Orient et l&#39;Afrique, le 25 juin 2021,
+      >
+      >
+   * Asie-Pacifique 19 juillet 2021.
+
+
+* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion Dynamic Media (modificateur d’URL fmt). Pour plus d’informations, voir [service d’images et rendu api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+
+   >[!NOTE]
+   >
+   >La date de publication de la prise en charge d’AVIF est la suivante :
+   >
+   >* Amérique du Nord, 10 mai 2021,
+      >
+      >
+   * Europe, Moyen-Orient et Afrique 24 mai 2021,
+      >
+      >
+   * Asie-Pacifique 24 juin 2021.
+
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -37,25 +79,13 @@ Vous pouvez désormais trier les pages Live Copy disponibles pour le déploiemen
 >
 >Le module complémentaire de [!DNL Experience Manager Forms] est rendu disponible une semaine après la publication du Service Pack [!DNL Experience Manager] programmée.
 
-### Afficher ou masquer le composant CAPTCHA dans un formulaire adaptatif basé sur des règles {#show-hide-captcha}
-
-Vous pouvez désormais valider CAPTCHA lors de l’envoi du formulaire adaptatif ou lors de l’action de l’utilisateur. Vous pouvez également ajouter des conditions pour valider CAPTCHA sur une action utilisateur et afficher ou masquer le composant CAPTCHA dans un formulaire adaptatif basé sur des règles.
-
-### Ajout de services CAPTCHA personnalisés {#add-custom-captcha-services}
-
-[!DNL Experience Manager Forms] fournit une prise en charge prête à l’emploi pour utiliser Google reCAPTCHA (une licence distincte des API reCAPTCHA de Google est requise) en tant que service de validation CAPTCHA. Vous pouvez également utiliser un service CAPTCHA personnalisé pour valider les CAPTCHA.
-
-### Autres améliorations {#other-enhancements-forms-6580}
-
-* Amélioration de l’accessibilité du composant [!DNL Experience Manager Forms] Sélecteur de date.
-
-* Ajout de la prise en charge de la génération d’une communication interactive au format PCL à l’aide de l’API PrintChannel.
-
-* Lors d’une conversion PDFG, vous pouvez désormais activer ou désactiver les modifications de registre [!DNL Experience Manager Forms] pour la génération de signets personnalisés.
-
 ## Fonctionnalités clés des Service Packs version [!DNL Experience Manager] 6.5 précédente {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### Tri des pages Live Copy disponibles pour le déploiement (6.5.8.0) {#sort-livecopy-pages}
+
+Vous pouvez désormais trier les pages Live Copy disponibles pour le déploiement à l’aide des propriétés [!UICONTROL Name], [!UICONTROL Date de dernière modification] et [!UICONTROL Date du dernier déploiement]. La [!UICONTROL date du dernier déploiement] d’une page est une nouvelle propriété introduite dans cette version.
 
 #### Disponibilité des déplacements de page et des déploiements MSM en tant qu’opérations asynchrones (6.5.7.0) {#page-moves-msm-asynchronous}
 
@@ -108,6 +138,10 @@ Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du co
 * Amélioration de la gestion des URL incomplètes ou non valides. Ces URL peuvent ralentir l’éditeur de modèles.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* Lors de l’utilisation de la fonction [Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md), vous pouvez désormais afficher la liste de toutes les pages [!DNL Sites] qui utilisent la ressource. Ces références à une ressource sont disponibles dans la page [!UICONTROL Propriétés] d’une ressource. Cela permet aux administrateurs, aux spécialistes du marketing et aux bibliothécaires d’avoir une vue complète de l’utilisation des ressources, ce qui permet un meilleur suivi, une meilleure gestion et une meilleure cohérence de la marque (6.5.8.0).
+
+* Lors de la suppression d’une ressource référencée dans une page web, [!DNL Experience Manager] affiche un avertissement. Vous pouvez forcer la suppression d’une ressource référencée ou vérifier et modifier les références affichées dans la page [!DNL Properties] de la ressource. Cliquer sur les références ouvre les pages [!DNL Sites] locales et distantes (6.5.8.0).
 
 * [!DNL Assets] et  [!DNL Dynamic Media] fournissent plusieurs améliorations de l’accessibilité. Les améliorations ont été apportées à la navigation au clavier, à l’utilisation des lecteurs d’écran et à des améliorations similaires pour permettre l’utilisation des technologies d’assistance (AT). Voir [[!DNL Assets] améliorations](/help/release-notes/sp-release-notes.md#assets-6570) et [[!DNL Dynamic Media] améliorations](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)
 
@@ -175,7 +209,7 @@ Le canal d’autorisation entre [!DNL Experience Manager Assets] et [!DNL Brand 
 
 Les étapes de configuration de [!DNL Experience Manager Assets] avec [!DNL Brand Portal] sont différentes selon votre version [!DNL Experience Manager] et selon que vous effectuez une configuration pour la première fois ou une mise à niveau des configurations existantes. Pour plus d’informations, voir [Configuration de ressources Experience Manager avec Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) .
 
-#### Améliorations de l’accessibilité (6.5.4.0) {#accessibility-enhancements}
+#### Améliorations de l’accessibilité (6.5.4.0) {#accessibility-enhancements-6540}
 
 [!DNL Experience Manager Assets] comprend les améliorations d’accessibilité suivantes :
 
@@ -223,6 +257,22 @@ L’imagerie dynamique utilise les caractéristiques de visualisation uniques de
 Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les profils vidéo) est un outil qui utilise la puissance de l’intelligence artificielle d’Adobe Sensei pour détecter et rogner automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille. Voir [À propos de l’utilisation du recadrage intelligent dans les profils vidéo](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### Afficher ou masquer le composant CAPTCHA dans un formulaire adaptatif basé sur des règles (6.5.8.0) {#show-hide-captcha}
+
+Vous pouvez désormais valider CAPTCHA lors de l’envoi du formulaire adaptatif ou lors de l’action de l’utilisateur. Vous pouvez également ajouter des conditions pour valider CAPTCHA sur une action utilisateur et afficher ou masquer le composant CAPTCHA dans un formulaire adaptatif basé sur des règles.
+
+#### Ajout de services CAPTCHA personnalisés (6.5.8.0) {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] fournit une prise en charge prête à l’emploi pour utiliser Google reCAPTCHA (une licence distincte des API reCAPTCHA de Google est requise) en tant que service de validation CAPTCHA. Vous pouvez également utiliser un service CAPTCHA personnalisé pour valider les CAPTCHA.
+
+#### Autres améliorations (6.5.8.0) {#other-enhancements-forms-6580}
+
+* Amélioration de l’accessibilité du composant [!DNL Experience Manager Forms] Sélecteur de date.
+
+* Ajout de la prise en charge de la génération d’une communication interactive au format PCL à l’aide de l’API PrintChannel.
+
+* Lors d’une conversion PDFG, vous pouvez désormais activer ou désactiver les modifications de registre [!DNL Experience Manager Forms] pour la génération de signets personnalisés.
 
 #### Améliorations des performances (6.5.7.0) {#performance-improvements-forms}
 
