@@ -7,7 +7,7 @@ breadcrumb-title: Notes de mise à jour
 user-guide-description: Découvrez les dernières nouvelles fonctionnalités d’AEM 6.5 dans les notes de mise à jour.
 feature: Informations sur la version
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: dafc10e6e73967566ec8bff8ac0e4c39bc7cd885
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 46%
@@ -21,7 +21,7 @@ ht-degree: 46%
 + [Notes de mise à jour générales](release-notes.md)
 + Notes de mise à jour du Service Pack {#service-pack}
    + [Nouveautés](new-features-latest-service-pack.md)
-   + [Notes de mise à jour du Service Pack 8](sp-release-notes.md)
+   + [Notes de mise à jour du Service Pack 9](sp-release-notes.md)
    + [Notes de mise à jour précédentes du Service Pack](previous-hotfixes-featurepacks.md)
 + [Notes de mise à jour d’AEM Sites](sites.md)
 + [Notes de mise à jour d’AEM Assets](assets.md)
