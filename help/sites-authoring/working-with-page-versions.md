@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 97%
+source-wordcount: '1487'
+ht-degree: 98%
 
 ---
 
@@ -64,38 +64,107 @@ Vous pouvez créer une version de votre ressource depuis :
 
    La frise chronologique s’ouvrira avec les informations mises à jour afin d’indiquer la nouvelle version.
 
-## Restauration de la version d’une page {#reverting-to-a-page-version}
+## Rétablissement de versions {#reinstating-versions}
 
-Une fois une version créée, vous pouvez y revenir si nécessaire.
+Une fois que vous avez créé une version de votre page, différentes méthodes permettent de rétablir une version antérieure :
+
+* l’option **Revenir à cette version** depuis le rail [Chronologie](/help/sites-authoring/basic-handling.md#timeline)
+
+   Rétablissez une version antérieure d’une page sélectionnée.
+
+* les options **Restaurer** de la [barre d’outils d’actions](/help/sites-authoring/basic-handling.md#actions-toolbar) en haut de la page
+
+   * **Restaurer la version**
+
+      Rétablissez des versions de pages spécifiées dans le dossier actuellement sélectionné ; cela peut également inclure la restauration de pages qui ont été supprimées précédemment.
+
+   * **Restaurer l’arborescence**
+
+      Rétablissez une version d’une arborescence complète à une date et une heure spécifiées ; cela peut inclure des pages qui ont été supprimées précédemment.
 
 >[!NOTE]
 >
->Lors de la restauration d’une page, la version créée fait partie d’une nouvelle branche.
+>Lors du rétablissement d’une page, la version créée fait partie d’une nouvelle branche.
 >
 >Illustration :
 >
 >1. Créez des versions d’une page.
 >1. Les libellés et les noms de nœud de version initiaux sont 1.0, 1.1, 1.2, etc.
->1. Restaurez la première version, soit 1.0.
+>1. Rétablissez la première version, soit 1.0.
 >1. Recréez des versions.
 >1. Les libellés et les noms de nœud générés sont à présent 1.0.0, 1.0.1, 1.0.2, etc.
 
->
 
+### Rétablissement d’une version {#revert-to-a-version}
 
-
-Pour restaurer une ancienne version, procédez comme suit :
+Pour **rétablir** la version précédente d’une page sélectionnée :
 
 1. Naviguez pour afficher la page pour laquelle restaurer une ancienne version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**. Les versions de la page sélectionnée sont répertoriées.
 1. Sélectionnez la version à restaurer. Les options possibles s’affichent :
 
-   ![screen-shot_2019-03-05at112505](assets/screen-shot_2019-03-05at112505.png)
+   ![Revenir à cette version](assets/screen-shot_2019-03-05at112505.png)
 
 1. Sélectionnez **Revenir à cette version**. La version sélectionnée est restaurée et les informations dans la frise chronologique sont mises à jour.
 
-## Aperçu d’une version    {#previewing-a-version}
+### Restaurer la version {#restore-version}
+
+Cette méthode permet de rétablir des versions de pages spécifiées dans le dossier actuel ; cela peut également inclure la restauration de pages qui ont été supprimées précédemment :
+
+1. Recherchez et [sélectionnez](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) le dossier souhaité.
+
+1. Sélectionnez **Restaurer**, puis **Restaurer la version** dans la [barre d’outils d’actions](/help/sites-authoring/basic-handling.md#actions-toolbar) en haut de la page.
+
+   >[!NOTE]
+   >
+   >Si :
+   >
+   >* vous avez sélectionné une seule page, qui n’a jamais eu de page enfant,
+   >* ou aucune des pages du dossier ne comporte de version,
+
+   >
+   >l’affichage sera vide, car aucune version n’est applicable.
+
+1. Les versions disponibles seront répertoriées :
+
+   ![Restaurer la version : liste de toutes les pages dans le dossier](/help/sites-authoring/assets/versions-restore-version-01.png)
+
+1. Pour une page spécifique, utilisez le sélecteur déroulant sous **RESTAURER VERS LA VERSION** pour sélectionner la version requise pour cette page.
+
+   ![Restaurer la version – Sélectionner la version](/help/sites-authoring/assets/versions-restore-version-02.png)
+
+1. Dans l’affichage principal, sélectionnez la page à restaurer :
+
+   ![Restaurer la version – Sélectionner la page](/help/sites-authoring/assets/versions-restore-version-03.png)
+
+1. Sélectionnez **Restaurer** pour la version sélectionnée de la page sélectionnée à restaurer en tant que version actuelle.
+
+>[!NOTE]
+>
+>L’ordre dans lequel vous sélectionnez une page requise et la version associée est interchangeable.
+
+### Restaurer l’arborescence {#restore-tree}
+
+Cette méthode permet de restaurer une version d’une arborescence à une date et une heure spécifiées ; cela peut inclure des pages qui ont été supprimées précédemment :
+
+1. Recherchez et [sélectionnez](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) le dossier souhaité.
+
+1. Sélectionnez **Restaurer**, puis **Restaurer l’arborescence** dans la [barre d’outils d’actions](/help/sites-authoring/basic-handling.md#actions-toolbar) en haut de la page. La dernière version de l’arborescence apparaît :
+
+   ![Restaurer l’arborescence](/help/sites-authoring/assets/versions-restore-tree-02.png)
+
+1. Utilisez le sélecteur de date et d’heure dans **Dernières versions en date** pour sélectionner une autre version de l’arborescence : celle qui doit être restaurée.
+
+1. Définissez l’indicateur **Pages non versionnées préservées** selon les besoins :
+
+   * Si cette option est active (sélectionnée), toute page non versionnée est conservée et ne sera pas affectée par la restauration.
+
+   * Si elle est inactive (non sélectionnée), toute page non versionnée est supprimée, car elle n’existait pas dans l’arborescence versionnée.
+
+1. Sélectionnez **Restaurer** pour la version sélectionnée de l’arborescence à restaurer comme version *actuelle*.
+
+## Aperçu d’une version  {#previewing-a-version}
 
 Vous pouvez prévisualiser une version spécifique :
 
