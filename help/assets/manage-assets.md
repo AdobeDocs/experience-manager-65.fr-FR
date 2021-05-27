@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gestion des ressources, Recherche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: a7f8e98729dd27f6976d3289a51f22435fced585
 workflow-type: tm+mt
-source-wordcount: '9796'
+source-wordcount: '9775'
 ht-degree: 60%
 
 ---
@@ -811,10 +811,6 @@ Pour imprimer les annotations et l’état de révision, cliquez sur **[!UICONTR
    ![Sélectionner la position de l’annotation/l’état de révision à afficher sur PDF à partir de la boîte de dialogue Imprimer](assets/Print-annotation-dialog.png)
 
    Vous pouvez choisir d’autres paramètres selon la position à laquelle vous souhaitez que les annotations ou l’état de révision apparaissent dans le document PDF imprimé. Si vous souhaitez que les annotations ou l’état de révision apparaissent sur une page différente de la ressource imprimée, sélectionnez **[!UICONTROL Page suivante]**.
-
-   >[!NOTE]
-   >
-   >Il se peut que les annotations trop longues ne s’affichent pas correctement dans le fichier PDF. Pour un rendu optimal, Adobe recommande de limiter la taille des annotations à 50 mots.
 
 1. Cliquez sur **[!UICONTROL Imprimer]**. En fonction de l’option sélectionnée à l’étape 2, le fichier PDF généré affiche les annotations/l’état de révision à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **Haut et gauche**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
