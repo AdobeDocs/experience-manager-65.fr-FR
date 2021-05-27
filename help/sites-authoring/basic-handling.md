@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2980'
 ht-degree: 95%
 
 ---
@@ -192,7 +192,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * Chemin de navigation
 
-   ![bh-05](assets/bh-05.png)
+   ![bh-03](assets/bh-05.png)
 
    Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site web.
 
@@ -287,7 +287,7 @@ La manière dont vous [sélectionnez une ressource](/help/sites-authoring/basic-
 
 En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. En cliquant ou en appuyant sur les points de suspension (**…**), vous ouvrez un menu déroulant contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
 
-![bh-12](assets/bh-12.png)
+![Barre d’outils d’actions](assets/bh-12.png)
 
 >[!NOTE]
 Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
@@ -395,7 +395,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 1. Par exemple, en mode Carte :
 
-   ![bh-15](assets/bh-15.png)
+   ![bh-17](assets/bh-15.png)
 
 1. Une fois que vous avez sélectionné une ressource, l’en-tête de premier niveau est couvert par la [barre d’outils Actions](#actionstoolbar), qui permet d’accéder aux actions actuellement applicables à la ressource sélectionnée.
 
