@@ -1,10 +1,10 @@
 ---
 title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 14%
+source-wordcount: '648'
+ht-degree: 15%
 
 ---
 
@@ -14,13 +14,37 @@ ht-degree: 14%
 
 Passez en revue la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
 
-**Module complémentaire CIF désormais disponible via  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être utilisé. Effectuez une migration vers le nouveau module complémentaire CIF.**
+**Avec la version d’avril, nous avons remplacé le connecteur CIF de GitHub par le module complémentaire CIF disponible sur la [distribution logicielle d’Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Le passage au module complémentaire présente de nombreux avantages pour les projets :
+
+* La plupart des nouvelles fonctionnalités seront immédiatement disponibles dans AEM 6.5 (plus d’attente pour le port latéral de la fonctionnalité).
+* Mise à niveau aisée vers de nouvelles versions de module complémentaire
+* Prêt pour Cloud Service
+
+L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être utilisé. Remplacez le connecteur CIF par le nouveau module complémentaire CIF. Un simple remplacement de package doit être possible pour la plupart des projets. **
 
 | Composant | Configuration requise |
 |:-------|:-----:|
 | Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Date de publication : Mai 2021
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2021.05.26 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| Composants principaux CIF | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
+| Site de référence CIF Venia | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
+
+### Nouveautés {#what-is-new-may}
+
+* Prise en charge de la pagination pour le contenu associé dans les propriétés de la console de produit
+
+### Correctifs de bogues {#bug-fixes-may}
+
+* Miniatures des ressources non affichées dans l’onglet Ressource des propriétés du produit
+
+* Le chemin de navigation réinitialise les données d’aperçu dans la console de produit.
 
 ## Date de publication : Avril 2021
 
@@ -40,7 +64,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Indicateur visuel pour les données de catalogue intermédiaires dans AEM storefront
 
-### Correctifs {#bug-fixes-april}
+### Correctifs de bogues {#bug-fixes-april}
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
@@ -74,7 +98,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-february}
 
-* Gestion de l’expérience du produit : Enrichissez les pages du catalogue de produits individuellement avec les fragments d’expérience.
+* Gestion de l’expérience des produits : enrichissez les pages du catalogue de produits individuellement grâce aux fragments d’expérience.
 
 * Étendez les propriétés de la console de produit pour afficher les ressources liées et les fragments d’expérience, y compris l’action permettant d’accéder rapidement au contenu associé.
 
