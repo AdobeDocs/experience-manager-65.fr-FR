@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gestion des ressources, Recherche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: a7f8e98729dd27f6976d3289a51f22435fced585
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '9775'
 ht-degree: 60%
@@ -113,7 +113,7 @@ Vous pouvez choisir de remplacer une ressource existante, de créer une autre ve
 >
 >Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente.
 >
->Si la fonction Statistiques sur les ressources est activée pour effectuer le suivi des impressions/clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource dans [!DNL Analytics].
+>Si Assets Insights est activé pour effectuer le suivi des impressions ou des clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource sur [!DNL Analytics].
 
 Si la ressource que vous téléchargez existe dans [!DNL Assets], la boîte de dialogue **[!UICONTROL Doublons détectés]** vous avertit que vous tentez de télécharger une ressource en double. La boîte de dialogue s’affiche uniquement si la valeur de somme de contrôle `SHA 1` du binaire de la ressource existante correspond à la valeur de somme de contrôle de la ressource que vous chargez. Dans ce cas, les noms des ressources n’ont pas d’importance.
 
@@ -420,7 +420,7 @@ Pour prévisualiser une ressource à l’aide du clavier, procédez comme suit :
    * Les canaux/périphériques via lesquels la ressource a été utilisée.
    * Des solutions de création où la ressource a été récemment utilisée.
 
-   Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](/help/assets/asset-insights.md).
+   Pour plus d’informations, voir [Statistiques sur les ressources](/help/assets/asset-insights.md).
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 1. Accédez à l’interface utilisateur [!DNL Assets] . Les propriétés des métadonnées modifiées, notamment le titre, la description et les évaluations, sont affichées sur la carte des ressources en mode Carte et dans les colonnes pertinentes en mode Liste.
