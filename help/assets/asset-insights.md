@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Statistiques sur les ressources, rapports sur les ressources
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '760'
 ht-degree: 52%
 
 ---
@@ -20,7 +20,7 @@ La fonction Statistiques sur les ressources vous permet de suivre les évaluatio
 
 Pour [!DNL Assets] Statistiques sur l’utilisation des images d’un site web, vous devez inclure le code incorporé de l’image dans le code du site web.
 
-Pour permettre à Assets Insights d’afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction pour récupérer les données de rapport d’Adobe Analytics. Pour plus d’informations, voir [Configuration des statistiques sur les ressources](/help/assets/configure-asset-insights.md). Pour utiliser cette fonctionnalité, achetez la licence [!DNL Adobe Analytics] séparément. Les clients sur [!DNL Managed Services] reçoivent la licence [!DNL Analytics] inclue avec [!DNL Experience Manager]. Voir [Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Pour permettre à Assets Insights d’afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction pour récupérer les données de rapport d’Adobe Analytics. Pour plus d’informations, voir [Configuration des statistiques sur les ressources](/help/assets/configure-asset-insights.md). Pour utiliser cette fonctionnalité dans une installation on-premise, achetez la licence [!DNL Adobe Analytics] séparément. Les clients sur [!DNL Managed Services] reçoivent la licence [!DNL Analytics] inclue avec [!DNL Experience Manager]. Voir [Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
