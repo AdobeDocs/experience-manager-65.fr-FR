@@ -6,7 +6,7 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 59%
@@ -151,7 +151,7 @@ ht-degree: 59%
    + [Lightbox](light-box.md)
    + [Informations sur les ressources](asset-insights.md)
    + [Activation des informations sur les ressources via DTM](use-dtm-for-asset-insights.md)
-   + [Configuration des informations sur les ressources](configure-asset-insights.md)
+   + [Configuration des insights sur les ressources](configure-asset-insights.md)
    + [Archivage et extraction de ressources](check-out-and-submit-assets.md)
    + [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
    + [Utilisation du dispositif de suivi de page et du code incorporé dans les pages web](use-page-tracker.md)
