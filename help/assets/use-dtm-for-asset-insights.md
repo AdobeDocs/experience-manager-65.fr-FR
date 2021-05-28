@@ -1,31 +1,31 @@
 ---
-title: 'Activation des statistiques sur les ressources via DTM  '
-description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
+title: Activation des statistiques sur les ressources via DTM
+description: Découvrez comment utiliser Adobe Dynamic Tag Management (DTM) pour activer Assets Insights.
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Statistiques sur les ressources, rapports sur les ressources
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '675'
-ht-degree: 33%
+ht-degree: 29%
 
 ---
 
-# Activation des statistiques sur les ressources via DTM   {#enable-asset-insights-through-dtm}
+# Activation des statistiques sur les ressources via la gestion dynamique des balises {#enable-asset-insights-through-dtm}
 
-La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Asset Insights ou utiliser la gestion dynamique des balises pour insérer des balises Asset Insights. Les statistiques sont uniquement prises en charge et fournies pour les images.
+La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Assets Insights ou utiliser la gestion dynamique des balises pour insérer des balises Assets Insights. Les statistiques sont uniquement prises en charge et fournies pour les images.
 
 >[!CAUTION]
 >
 >Adobe de la gestion dynamique des balises est abandonnée au profit de [!DNL Adobe Experience Platform Launch] et atteindra bientôt la [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande [d’utiliser [!DNL Launch] pour les informations sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
-Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressources grâce à DTM.
+Effectuez les étapes suivantes pour activer Assets Insights via DTM.
 
 1. Cliquez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des statistiques]**.
 1. [Configuration du déploiement Experience Manager avec le Cloud Service DTM](/help/sites-administering/dtm.md)
 
-   Le jeton API doit être disponible une fois que vous vous êtes connecté à [https://dtm.adobe.com](https://dtm.adobe.com/) et que vous avez accédé à **[!UICONTROL Paramètres du compte]** dans le profil de l’utilisateur. Cette étape n’est pas requise du point de vue des statistiques sur les ressources, car l’intégration de Sites Experience Manager avec les statistiques sur les ressources est toujours en cours d’exécution.
+   Le jeton API doit être disponible une fois que vous vous êtes connecté à [https://dtm.adobe.com](https://dtm.adobe.com/) et que vous avez accédé à **[!UICONTROL Paramètres du compte]** dans le profil de l’utilisateur. Cette étape n’est pas requise du point de vue d’Assets Insights, car l’intégration de Sites Experience Manager avec Assets Insights est toujours en cours d’exécution.
 
 1. Connectez-vous à [https://dtm.adobe.com](https://dtm.adobe.com/) et sélectionnez une société, le cas échéant.
 1. Création ou ouverture d’une propriété web existante
@@ -51,7 +51,7 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
    >
    >* `AppMeasurement.js` est supprimé. Il devrait être disponible via l’outil de gestion dynamique des balises Adobe Analytics.
    >* L’appel à `assetAnalytics.dispatcher.init()` est supprimé. Le système s’attend à ce que la fonction soit appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
-   >* Selon l’emplacement d’hébergement de l’outil de suivi de page de statistiques sur les ressources (par exemple, Experience Manager, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
+   >* Selon l’emplacement d’hébergement du dispositif de suivi de la page de statistiques sur les ressources (par exemple, Experience Manager, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
    >* Pour le dispositif de suivi de page hébergé par le Experience Manager, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de Dispatcher.
 
 
