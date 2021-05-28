@@ -8,10 +8,10 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 71%
+source-wordcount: '1114'
+ht-degree: 65%
 
 ---
 
@@ -93,17 +93,9 @@ Reportez-vous à la section [Comprendre les raisons de la mise à niveau AEM](ht
 
 Lorsqu’un utilisateur charge les fichiers vidéo, s’il ne dispose pas des autorisations de suppression sous le nœud des actifs, la suppression des nœuds de bloc échoue et le chargement recommence.
 
-#### Quel est le nombre maximal de ressources numériques pouvant être gérées simultanément par AEM 6.4 ?  {#what-is-the-maximum-number-of-digital-assets-that-can-be-operated-with-aem-at-a-time}
-
-Adobe Experience Manager (AEM) 6.5 permet actuellement de charger jusqu’à 2 Go de ressources à la fois.
-
-Pour des informations supplémentaires sur le nombre maximal de ressources pouvant être gérées par AEM 6.5, voir le [guide des tailles Assets](/help/assets/assets-sizing-guide.md).
-
 #### Quels sont les paramètres par défaut des configurations prêtes à l’emploi lors de la création d’une copie de la langue ? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Lors de la création de copies de langue par le biais de l’IU classique, les ressources ne sont pas déplacées sous la nouvelle hiérarchie de langue. Elles sont plutôt utilisées par le gabarit de langue.
-
-En revanche, lorsque vous créez une copie de langue par le biais de l’IU optimisée pour les écrans tactiles (**Références** ->**Mettre à jour la copie de langue**), un nouveau dossier DAM est créé sous la nouvelle langue et les ressources sont référencées à partir de cet emplacement.
+Lorsque vous créez une copie de langue via l’interface utilisateur tactile (**Références** -> **Mettre à jour la copie de langue**), un nouveau dossier DAM est créé sous la nouvelle langue et les ressources sont référencées à partir de là.
 
 Il s’agit du paramètre par défaut pour les configurations prêtes à l’emploi. Vous pouvez définir **Traduire les ressources de page** sur **Ne pas traduire** dans les configurations de traduction.
 Pour AEM 6.4, **Outils** > **Services cloud** > **Services cloud de traduction**.
@@ -115,10 +107,6 @@ Vous pouvez désactiver OSGi Component Disabler. Pour utiliser ce service, voir 
 Comme solution, vous pouvez également désactiver manuellement le composant via l’IU ou une commande `curl` (exemple ci-dessous) après chaque redémarrage d’AEM.
 
 `curl -u admin:$(pass CQ_Admin) 'https://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
-
-#### Comment configurer Asset Insights avec l’instance AEM 6.5 ? {#how-to-configure-asset-insights-with-aem-instance}
-
-Pour configurer et configurer les statistiques sur les ressources pour le Experience Manager déployé via Adobe Activation (DTM), voir comment [configurer les statistiques sur les ressources avec AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 #### Comment personnaliser les consoles d’administration ? {#how-to-customize-admin-consoles}
 
@@ -136,20 +124,8 @@ Pour en savoir plus sur l’accélération et le classement de la recherche ains
 
 La mise en œuvre de recherche simple est le matériel du Summit Lab AEM Search Demystified 2017.
 
-#### Quelle est la différence entre AEM Assets et AEM MediaLibrary ? {#what-is-the-difference-between-aem-assets-and-aem-medialibrary}
-
-AEM Assets est une application de la plateforme AEM qui permet à nos clients de gérer leurs ressources numériques (images, vidéos, documents et clips audio) dans un référentiel web, tandis que la bibliothèque multimédia AEM (AEM MediaLibrary) est une partie spécifique du référentiel de contenu appartenant à la gestion de contenu web d’AEM, où les images et d’autres ressources partagées sont stockées.
-
-Pour plus d’informations, veuillez consulter la rubrique [AEM Assets vs. AEM MediaLibrary](/help/assets/medialibrary.md).
-
-#### Est-il possible d’utiliser un plug-in pour WordPress afin de permettre à un client d’accéder à Adobe Asset Picker pour sélectionner des images ?  {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
+#### Est-il possible de créer un module externe pour WordPress qui permet à un client d’accéder au sélecteur de ressources Adobe pour sélectionner des images ? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
 Oui, un client utilisant WordPress peut utiliser Adobe Asset Picker pour sélectionner des images de son serveur AEM Assets et les ajouter aux publications sur son site WordPress.
 
 Pour plus d’informations, veuillez consulter la section [Sélecteur de ressources](../assets/search-assets.md#assetpicker).
-
-#### Est-il possible d’étendre les facettes de recherche dans AEM Assets pour ajouter des prédicats supplémentaires ?  {#is-it-possible-to-extend-the-search-facets-in-aem-assets-to-add-additional-predicates}
-
-Un déploiement à l’échelle de l’entreprise d’Adobe Experience Manager (AEM) Assets permet de stocker des quantités importantes de ressources. Vous pouvez ajouter des prédicats au formulaire par défaut ou utiliser un formulaire personnalisé qui comprend les facettes de votre choix.
-
-Pour en savoir plus, consultez la section [Facettes de recherche](/help/assets/search-facets.md).
