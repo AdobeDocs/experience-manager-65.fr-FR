@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 précédentes notes de mise à jour 
 description: Notes de mise à jour pour  [!DNL Adobe Experience Manager] Service Packs 6.5.
 contentOwner: AK
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 8c69687ef4fbc2e4ee729d98232fe56db9b1df5a
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '20321'
 ht-degree: 15%
@@ -1107,7 +1107,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 
 * Lors de l’utilisation d’une fenêtre contextuelle en cascade dans des schémas de métadonnées, lors de la sélection et de l’enregistrement d’une option déroulante contenant une apostrophe (dans la liste déroulante enfant), l’option d’apostrophe sélectionnée disparaît après la réouverture de la ressource [!UICONTROL Propriétés] (NPR-32649).
 
-* [!UICONTROL Les ] obstacles de synchronisation des statistiques sur les ressources et échouent s’il rencontre des entrées non valides (côté Analytics) au lieu de passer à l’entrée suivante (NPR-32674).
+* [!UICONTROL Assets Insights Sync ] Jblocage et échoue s’il rencontre des entrées non valides (côté Analytics) au lieu de passer à l’entrée suivante (NPR-32674).
 
 * Le gyroscope n’est pas fonctionnel, car les capteurs de mouvement sont désactivés par défaut sur les navigateurs mobiles dans la visionneuse panoramique (CQ-4272937).
 
