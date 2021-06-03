@@ -11,7 +11,7 @@ docset: aem65
 feature: Vidéos interactives
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '6058'
 ht-degree: 98%
@@ -52,7 +52,8 @@ Visionnez une présentation vidéo de 7 minutes 30 sur la [création des vidéo
 Le webinaire « Utilisation de la vidéo interactive, du partage de liens et du partage sur YouTube dans AEM Assets » explique comment utiliser la vidéo interactive et d’autres fonctionnalités pour lier des événements dépendant de la conversion dans votre contenu marketing vidéo.
 
 >[!NOTE]
-[Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans Ressources AEM](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>
+>[Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans Ressources AEM](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Démarrage rapide : vidéos interactives {#quick-start-interactive-videos}
 
@@ -94,10 +95,14 @@ Utilisez le code intégré ou l’URL pour intégrer votre vidéo interactive au
 ## (Facultatif) Identification de variables d’aperçu rapide {#optional-identifying-quickview-variables}
 
 >[!NOTE]
-Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
-* Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
-* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
+>
+>Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
+>
+>* Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
+>* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
+>
+>
 Si votre mise en œuvre d’AEM utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
 Commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante d’aperçu rapide pour faire correspondre les miniatures de produits à l’aperçu rapide des produits correspondants lors du processus de création de vidéo interactive.
@@ -113,7 +118,7 @@ La majorité des implémentations d’aperçu rapide utilisent le paradigme suiv
 * L’utilisateur active un élément d’interface utilisateur sur le site web. Par exemple, en cliquant sur un bouton « Aperçu rapide ».
 * Le site web envoie une demande Ajax au serveur principal afin de charger les données ou le contenu de l’aperçu rapide, le cas échéant.
 * Les données de l’aperçu rapide sont traduites en contenu en préparation du rendu sur la page web.
-* Enfin, le code frontal effectue le rendu visuel de ce contenu à l’écran.
+* Enfin, le code en front-end effectue le rendu visuel de ce contenu à l’écran.
 
 L’approche, par conséquent, consiste à visiter différentes zones de votre site Web existant où l’aperçu rapide est mis en œuvre, de déclencher l’aperçu rapide et de capturer l’URL Ajax envoyée par la page web pour le chargement des données ou du contenu de l’aperçu rapide.
 
@@ -257,10 +262,12 @@ Une fois que vous avez ajouté des segments de montage, vous ajoutez des images 
 Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
-N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans la vidéo interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+>
+>N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans la vidéo interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 >[!NOTE]
-La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
+>
+>La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
 
 Les options Annuler et Rétablir, proches du coin supérieur droit de la page, sont prises en charge au cours de la session de création/modification actuelle.
 
@@ -271,11 +278,11 @@ Pour ajouter de l’interactivité à votre vidéo :
 1. En mode Ressources, accédez à la vidéo que vous avez téléchargée et que vous souhaitez rendre interactive.
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pointez sur l’image, puis appuyez sur la touche **[!UICONTROL Sélectionner]** (icône de coche). Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier.]**
+   * Pointez sur l’image, puis appuyez sur la touche **[!UICONTROL Sélectionner]** (icône de coche). Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
 
-   * Pointez sur l’image, puis appuyez sur **[!UICONTROL Autres actions]** (icône représentant des points de suspension) > **[!UICONTROL Modifier.]**
+   * Pointez sur l’image, puis appuyez sur **[!UICONTROL Autres actions]** (icône représentant des points de suspension) > **[!UICONTROL Modifier]**.
 
-   * Appuyez sur l’image pour l’ouvrir dans la page d’affichage des détails. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier.]**
+   * Appuyez sur l’image pour l’ouvrir dans la page d’affichage des détails. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
 
 1. Dans la page Créer une vidéo interactive, procédez comme suit :
 
@@ -283,7 +290,7 @@ Pour ajouter de l’interactivité à votre vidéo :
 
       Pour chaque segment à ajouter, vous pouvez affecter une ou plusieurs images miniatures, puis lier ces miniatures à des pages de produit d’aperçu rapide pour que les clients achètent ou à des pages web pour plus d’informations.
 
-   * Appuyez sur le bouton **[!UICONTROL Lire]** pour commencer à lire la vidéo. Lorsqu’un produit, service ou détail particulier que vous souhaitez mettre en surbrillance apparaît, appuyez sur **[!UICONTROL Pause.]** Appuyez sur **[!UICONTROL Ajouter un segment.]**
+   * Appuyez sur le bouton **[!UICONTROL Lecture]** pour commencer à lire la vidéo. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence apparaît, appuyez sur **[!UICONTROL Pause]**. Appuyez sur **[!UICONTROL Ajouter un segment]**.
 
       Continuez la lecture et la mise en pause de la vidéo à des points de la chronologie où vous souhaitez ajouter un segment jusqu’à la fin de la vidéo.
 
@@ -362,9 +369,9 @@ Pour ajouter de l’interactivité à votre vidéo :
 
    * Pour supprimer un segment
 
-      Sélectionnez le dernier segment qui se trouve sur la chronologie puis, sur la barre d’outils, appuyez sur **[!UICONTROL Supprimer le segment.]** Si plusieurs segments sont sélectionnés, la fonction Supprimer le segment est désactivée.
+      Sélectionnez le dernier segment qui se trouve sur la chronologie puis, sur la barre d’outils, appuyez sur **[!UICONTROL Supprimer le segment]**. Si plusieurs segments sont sélectionnés, la fonction Supprimer le segment est désactivée.
 
-      Vous ne pouvez supprimer que le dernier segment. Par exemple, pour supprimer tous les segments de la chronologie, vous devez toujours sélectionner le dernier segment et appuyer ensuite sur **[!UICONTROL Supprimer le segment.]**
+      Vous ne pouvez supprimer que le dernier segment. Par exemple, pour supprimer tous les segments de la chronologie, vous devez toujours sélectionner le dernier segment et appuyer ensuite sur **[!UICONTROL Supprimer le segment]**.
 
 
 1. Sélectionnez un segment de temps auquel vous souhaitez associer une ou plusieurs images miniatures.
@@ -478,10 +485,11 @@ Pour ajouter de l’interactivité à votre vidéo :
 
    Si vous avez créé votre propre paramètre prédéfini de visionneuse de vidéos interactives, il s’affiche également dans la liste de paramètres prédéfinis que vous pouvez sélectionner.
 
-   Lorsque vous avez terminé, appuyez sur **[!UICONTROL Enregistrer.]**
+   Lorsque vous avez terminé, appuyez sur **[!UICONTROL Enregistrer]**.
 
    >[!NOTE]
-   Lorsque vous enregistrez votre vidéo interactive, un fichier `.vtt` associé est automatiquement enregistré avec celle-ci. Le fichier `.vtt` est enregistré dans le dossier `_VTT` situé à la racine des **[!UICONTROL ressources.]** Le fichier et le dossier sont nécessaires pour que la lecture de votre vidéo interactive s’effectue correctement sur votre site web. Ainsi, ne déplacez pas, ne modifiez pas et ne supprimez pas le dossier `_VTT` ni son contenu.
+   >
+   >Lorsque vous enregistrez votre vidéo interactive, un fichier `.vtt` associé est automatiquement enregistré avec celle-ci. Le fichier `.vtt` est enregistré dans le dossier `_VTT` situé à la racine des **[!UICONTROL ressources]**. Le fichier et le dossier sont nécessaires pour que la lecture de votre vidéo interactive s’effectue correctement sur votre site web. Ainsi, ne déplacez pas, ne modifiez pas et ne supprimez pas le dossier `_VTT` ni son contenu.
 
 1. Publiez la vidéo interactive. La publication crée le code intégré ou l’URL que vous copiez et collez éventuellement pour enrichir les expériences de votre site web.
 
@@ -490,9 +498,10 @@ Pour ajouter de l’interactivité à votre vidéo :
    Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   Pour publier une vidéo commerciale avec des aperçus rapides, veillez également à publier séparément chaque ressource image liée à la vidéo dans votre espace commercial.
+   >
+   >Pour publier une vidéo commerciale avec des aperçus rapides, veillez également à publier séparément chaque ressource image liée à la vidéo dans votre espace commercial.
 
-   Une fois les segments de chronologie ajoutés et la vidéo interactive publiée, vous êtes prêt à l’ajouter à la page d’entrée de votre site Web existant. Reportez-vous à la section [Intégration d’une vidéo interactive à votre site web.](#integrating-an-interactive-video-with-your-website)
+   Une fois les segments de chronologie ajoutés et la vidéo interactive publiée, vous êtes prêt à l’ajouter à la page d’entrée de votre site Web existant. Reportez-vous à la section [Intégration d’une vidéo interactive à votre site web](#integrating-an-interactive-video-with-your-website).
 
 ## Publication de ressources vidéo interactives {#publishing-interactive-video-assets}
 
@@ -500,7 +509,7 @@ Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md)
 
 ## Intégration d’une vidéo interactive à votre site web {#integrating-an-interactive-video-with-your-website}
 
-Une fois que vous avez téléchargé une vidéo, que vous lui avez ajouté des segments de chronologie et que vous avez publié la vidéo interactive, vous êtes prêt à l’ajouter à votre site Web existant.
+Une fois que vous avez téléchargé une vidéo, que vous lui avez ajouté des segments de chronologie et que vous avez publié la vidéo interactive, vous êtes prêt à l’ajouter à votre site web existant.
 
 Si vous êtes un client AEM Sites, vous pouvez ajouter la vidéo interactive en faisant glisser le composant Interactive Media dans votre page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
@@ -515,8 +524,10 @@ Si vous avez ajouté l’interactivité avec des aperçus rapides, utilisez uniq
 Le code intégré copié est conçu pour un environnement réactif et devrait donc s’adapter automatiquement à la zone occupée précédemment par la vidéo statique.
 
 >[!NOTE]
-À ce stade, si vous avez ajouté l’interactivité avec seulement des pages web connectées par liens hypertexte, votre travail est terminé.
-Toutefois, si vous avez ajouté l’interactivité pour déclencher un aperçu rapide, les miniatures adjacentes à la vidéo interactive sont à des fins d’affichage uniquement ; elles ne sont pas encore intégrées à vos aperçus rapides existants. Dans ce cas, vous devez désormais intégrer la vidéo interactive à des aperçus rapides existants sur votre site Web.
+>
+>À ce stade, si vous avez ajouté l’interactivité avec seulement des pages web connectées par liens hypertexte, votre travail est terminé.
+>
+>Toutefois, si vous avez ajouté l’interactivité pour déclencher un aperçu rapide, les miniatures adjacentes à la vidéo interactive sont à des fins d’affichage uniquement ; elles ne sont pas encore intégrées à vos aperçus rapides existants. Dans ce cas, vous devez désormais intégrer la vidéo interactive à des aperçus rapides existants sur votre site Web.
 
 **Exemple**
 
@@ -558,7 +569,8 @@ L’intégration est aussi simple que la suppression du code intégré de la vid
 ## Intégration d’une vidéo interactive avec un aperçu rapide existant  {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Cette tâche ne s’applique que si vous êtes un client AEM Assets autonome.
+>
+>Cette tâche ne s’applique que si vous êtes un client AEM Assets autonome.
 
 La dernière étape de cette procédure consiste à intégrer votre vidéo interactive avec une mise en œuvre existante de l’aperçu rapide utilisée sur votre site web. Pour ce qui est de l’intégration, il n’existe pas de solution qui fonctionne dans tous les cas. Chaque implémentation d’aperçu rapide est unique. De ce fait, une approche spécifique, impliquant probablement l’aide d’un informaticien compétent en systèmes frontaux, est nécessaire.
 
@@ -566,7 +578,7 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 
 1. Un utilisateur déclenche un élément dans l’interface utilisateur de votre site web.
 1. Le code frontal obtient une URL d’aperçu rapide basée sur l’élément d’interface utilisateur qui a été déclenché à l’étape 1.
-1. Le code frontal envoie une demande Ajax en utilisant l’URL obtenue à l’étape 2.
+1. Le code en front-end envoie une demande Ajax en utilisant l’URL obtenue à l’étape 2.
 1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code frontal.
 1. Le code frontal charge les données ou le contenu de l’aperçu rapide.
 1. Le code frontal convertit éventuellement les données téléchargées de l’aperçu rapide en une représentation HTML.
