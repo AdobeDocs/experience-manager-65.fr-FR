@@ -8,10 +8,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 42%
+source-wordcount: '1699'
+ht-degree: 41%
 
 ---
 
@@ -71,7 +71,7 @@ Si vous n’avez pas besoin d’un workflow ou d’un contrôle de version pour 
 
 **Pour configurer des paramètres prédéfinis** universels :
 
-1. Dans **[!UICONTROL Cloud Services]**, accédez à votre configuration **[!UICONTROL Dynamic Media Classic]** et cliquez sur **[!UICONTROL Modifier.]**
+1. Dans **[!UICONTROL Cloud Services]**, accédez à votre configuration **[!UICONTROL Dynamic Media Classic]** et cliquez sur **[!UICONTROL Modifier]**.
 1. Sélectionnez l’onglet **[!UICONTROL Vidéo]**.
 
    >[!NOTE]
@@ -148,8 +148,8 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 >
 >Les nouveaux profils vidéo et leurs modifications doivent être activés pour la publication.
 
-1. Dans AEM, accédez à **[!UICONTROL Outils]**, puis sélectionnez **[!UICONTROL Console de configuration.]** Dans la console de configuration, accédez à  **[!UICONTROL Outils]**  >  **[!UICONTROL Ressources]**  >  **[!UICONTROL Profils]** vidéo dans l’arborescence de navigation.
-1. Créez un profil vidéo Dynamic Media Classic. Dans la section **[!UICONTROL Nouveau...]**, sélectionnez **[!UICONTROL Créer une page]**, puis sélectionnez le modèle Profil vidéo Dynamic Media Classic . Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer.]**
+1. Dans Experience Manager, accédez à **[!UICONTROL Outils]**, puis sélectionnez **[!UICONTROL Console de configuration]**. Dans la console de configuration, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]** dans l’arborescence de navigation.
+1. Créez un profil vidéo Dynamic Media Classic. Dans **[!UICONTROL New]**. sélectionnez **[!UICONTROL Créer une page]**, puis sélectionnez le modèle Profil vidéo Dynamic Media Classic . Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer]**.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
