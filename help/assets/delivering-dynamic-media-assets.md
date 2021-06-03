@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Gestion des ressources,Rendus
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 89%
+source-wordcount: '313'
+ht-degree: 78%
 
 ---
 
@@ -24,8 +24,8 @@ La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise
 
 Avec Dynamic Media, vous disposez de plusieurs options :
 
-* Si votre site web est hébergé sur AEM, vous souhaitez ajouter les ressources Dynamic Media directement à votre page.
-* Si votre site web n’est pas hébergé par AEM, les possibilités suivantes s’offrent à vous :
+* Si votre site web est hébergé sur Adobe Experience Manager, vous souhaitez ajouter les ressources Dynamic Media directement à votre page.
+* Si votre site web n’est pas en Experience Manager, vous avez le choix entre :
 
    * Intégration de votre vidéo ou image à votre site web.
    * Liez des URL à votre application web. Utilisez la liaison lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre contextuelle ou modale.
@@ -39,7 +39,7 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 * [Ajout de ressources Dynamic Media aux pages web](/help/assets/adding-dynamic-media-assets-to-pages.md)
 * [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md)
-* [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
+* [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/hotlink-protection.md)
 * [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Diffusion d’images optimisées pour un site réactif](/help/assets/responsive-site.md)
 * [Diffusion de contenu HTTP/2  ](/help/assets/http2.md)
@@ -49,6 +49,6 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 ## Diffusion de ressources Dynamic Media via HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
-AEM prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
+Experience Manager prend désormais en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
-Pour en savoir plus, reportez-vous aux [Questions fréquentes sur la diffusion de contenu HTTP/2](/help/sites-administering/scene7-http2faq.md).
+Pour en savoir plus, consultez [Foire aux questions sur la diffusion HTTP/2 du contenu](/help/sites-administering/scene7-http2faq.md).
