@@ -11,7 +11,7 @@ docset: aem65
 feature: Images panoramiques, Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 81%
@@ -46,11 +46,11 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte.
 
-1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images.]**
-1. Sur la page Publication sur hébergeur d’images, dans le menu déroulant **[!UICONTROL Contexte de publication]** près de la partie supérieure, sélectionnez **[!UICONTROL Image Serving.]**
+1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**.
+1. Sur la page Publication sur hébergeur d’images, dans le menu déroulant **[!UICONTROL Contexte de publication]** près de la partie supérieure, sélectionnez **[!UICONTROL Image Serving]**.
 
-1. Sur la même page Publication sur hébergeur d’images, localisez l’en-tête **[!UICONTROL Attributs de requête.]**
-1. Sous l’en-tête Attributs de requête, localisez **[!UICONTROL Limite de taille de l’image de réponse.]** Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
+1. Sur la même page Publication sur hébergeur d’images, localisez l’en-tête **[!UICONTROL Attributs de requête]**.
+1. Sous l’en-tête Attributs de requête, localisez **[!UICONTROL Limite de taille de l’image de réponse]**. Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
 
    Dynamic Media Classic est limitée à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport d’aspect de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
 
@@ -60,14 +60,14 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM
 
 1. Sous l’en-tête Attributs de requête, procédez comme suit :
 
-   * Définissez Mode d’obscurcissement de requête sur **[!UICONTROL Désactivé.]**
-   * Définissez Mode de verrouillage de requête sur **[!UICONTROL Désactivé.]**
+   * Définissez Mode d’obscurcissement de requête sur **[!UICONTROL Désactivé]**.
+   * Définissez Mode de verrouillage de requête sur **[!UICONTROL Désactivé]**.
 
    Ces paramètres sont nécessaires pour utiliser le composant WCM `Panoramic Media` dans AEM.
 
-1. Au bas de la page Publication sur hébergeur d’images, sur la gauche, cliquez sur **[!UICONTROL Enregistrer.]**
+1. Au bas de la page Publication sur hébergeur d’images, sur la gauche, cliquez sur **[!UICONTROL Enregistrer]**.
 
-1. Dans le coin inférieur droit, cliquez sur **[!UICONTROL Fermer.]**
+1. Dans le coin inférieur droit, cliquez sur **[!UICONTROL Fermer]**.
 
 ### Dépannage du composant WCM Média panoramique {#troubleshooting-the-panoramic-media-wcm-component}
 
@@ -83,6 +83,6 @@ Si vous avez fait glisser une image dans le composant Média panoramique au sein
 
 Voir [Aperçu des ressources](/help/assets/previewing-assets.md).
 
-## Publication des images panoramiques {#publishing-panoramic-images}
+## Publication des images panoramiques  {#publishing-panoramic-images}
 
 Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
