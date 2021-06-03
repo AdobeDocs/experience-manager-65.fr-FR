@@ -10,10 +10,10 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: Business Practitioner, Administrator
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publication,Configuration
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 52%
+source-wordcount: '732'
+ht-degree: 60%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe est heureux d’annoncer la disponibilité de HTTP/2 pour la diffusion de 
 
 >[!NOTE]
 >
->Cette fonctionnalité nécessite l’utilisation du réseau de diffusion de contenu prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau de diffusion de contenu personnalisé n’est pris en charge avec cette fonctionnalité.
+>Cette fonctionnalité nécessite l’utilisation du réseau CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
 ## Qu’est-ce que le HTTP/2 ? {#what-is-http}
 
@@ -31,7 +31,7 @@ Le HTTP/2 améliore la communication entre les navigateurs et les serveurs, en a
 
 Le site web ci-dessous décrit simplement HTTP/2 et les avantages qu’il procure :
 
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+[Ce que vous devez savoir sur HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
 ## Quels sont les principaux avantages à la transition vers HTTP/2 pour la diffusion de contenu ? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -62,7 +62,7 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
 Vous lancez la requête pour passer à HTTP/2. ce n&#39;est pas fait automatiquement pour vous.
 
-1. Pour passer à HTTP/2, envoyez une demande d’Adobe à l’assistance clientèle. Voir [Accès au portail d’assistance AEM](https://helpx.adobe.com/fr/experience-manager/kb/accessing-aem-support-portal.html).
+1. Pour passer à HTTP/2, envoyez une demande d’Adobe à l’assistance clientèle. Voir [Accès au portail d’assistance Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Indiquez les informations suivantes dans votre demande de support :
 
@@ -72,7 +72,7 @@ Vous lancez la requête pour passer à HTTP/2. ce n&#39;est pas fait automatique
       1. Vérifiez que vous utilisez le CDN par Adobe et que vous n’êtes pas géré avec une relation directe.
       1. Vérifiez que vous utilisez un domaine dédié. Si vous utilisez Dynamic Media, vous utilisez un domaine dédié.
    1. L’assistance clientèle vous ajoute à la liste d’attente des clients HTTP/2 dans l’ordre dans lequel les demandes ont été envoyées.
-   1. Lorsque l’Adobe est prêt à traiter votre demande, l’assistance clientèle vous contacte pour coordonner la transition et définir une date cible.
+   1. Lorsqu’Adobe est prêt à traiter votre demande, l’Assistance clientèle vous contacte pour coordonner la transition et définir une date cible.
    1. Une fois la transition terminée, vous en êtes informé et pouvez vérifier que la transition vers HTTP2 a réussi.
 
       Le navigateur ne détecte pas cette transition, il est donc nécessaire de télécharger une extension.
@@ -92,7 +92,7 @@ Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par l�
 
 La transition vers HTTP/2 efface le cache au niveau du CDN, car elle implique la définition d’une nouvelle configuration de CDN.
 
-Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. Par conséquent, Adobe prévoit de gérer quelques transitions à la fois afin de maintenir des performances acceptables lors de l’extraction des requêtes à partir de l’origine.
+Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes du site d’origine.
 
 ## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ?  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
