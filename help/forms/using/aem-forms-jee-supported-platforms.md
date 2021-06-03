@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Administrator
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
 workflow-type: tm+mt
-source-wordcount: '3309'
+source-wordcount: '3323'
 ht-degree: 76%
 
 ---
@@ -94,6 +94,16 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   <tr>
    <td><p>Oracle Java™ SE 11 (64 bits)</p> </td>
    <td><p>Z : Non pris en charge</p> </td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 11 - 64 bits</td>
+   <td>Z : Non pris en charge</td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 8 - 64 bits</td>
+   <td>Z : Non pris en charge</td>
    <td><p> </p> </td>
   </tr>
   <tr>
