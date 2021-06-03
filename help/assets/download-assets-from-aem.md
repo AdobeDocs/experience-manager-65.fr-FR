@@ -5,10 +5,10 @@ contentOwner: AG
 role: Business Practitioner
 feature: Gestion des ressources, distribution des ressources
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: 92983232216a5c7c563ebddc3baf6fcd81aaa4e2
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -22,13 +22,13 @@ Vous pouvez télécharger des ressources, dont des rendus statiques et dynamique
 
 Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionneuses de supports variés et Visionneuses de carrousel ne peuvent pas être téléchargés.
 
-Pour télécharger des ressources, procédez comme suit :
+**Pour télécharger des ressources, procédez comme suit :**
 
 1. Dans le coin supérieur gauche, cliquez sur le logo. Dans le rail de gauche, cliquez sur **[!UICONTROL Navigation]**.
-1. Sur la page [!UICONTROL Navigation], cliquez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers.]**
+1. Sur la page [!UICONTROL Navigation], cliquez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 1. Accédez à un dossier contenant les ressources à télécharger.
 1. Sélectionnez le dossier ou une ou plusieurs ressources qu’il contient.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Télécharger.]**
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Télécharger]**.
 
    ![Options disponibles lors du téléchargement de ressources à partir d’Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
@@ -45,7 +45,7 @@ Pour télécharger des ressources, procédez comme suit :
    | **[!UICONTROL Recadrages intelligents]** | Sélectionnez cette option pour télécharger tous les rendus de recadrage intelligent de la ressource sélectionnée depuis AEM. Un fichier zip contenant les rendus de recadrage intelligent est créé et téléchargé sur votre ordinateur local. |
    | **[!UICONTROL Rendu(s) dynamique(s)]** | Sélectionnez cette option pour générer une série de rendus alternatifs en temps réel. Lorsque vous sélectionnez cette option, vous sélectionnez également les rendus à créer dynamiquement dans la liste [Paramètre d’image prédéfini](image-presets.md). <br>De plus, vous pouvez sélectionner la taille, l’unité de mesure, le format, l’espace colorimétrique, la résolution, ainsi que les éventuels modificateurs d’image (pour inverser l’image, par exemple). Cette option n’est disponible que si vous avez activé [!DNL Dynamic Media]. |
 
-1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Télécharger.]**.
+1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Télécharger]**..
 
 Lorsque vous sélectionnez un dossier à télécharger, l’ensemble de la hiérarchie des ressources sous ce dossier est téléchargé. Pour inclure chaque ressource que vous téléchargez (dont les ressources dans les dossiers enfants imbriqués sous le dossier parent) dans un dossier individuel, sélectionnez **[!UICONTROL Créer un dossier distinct pour chaque ressource]**.
 
@@ -76,7 +76,7 @@ Le `Asset Download Servlet` peut être désactivé sur les instances de publicat
 
 >[!MORELIKETHIS]
 >
->* [Téléchargement de ressources à l’aide de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [Téléchargement de ressources à l’aide de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=fr)
 >* [Téléchargement de ressources protégées par DRM](drm.md).
 >* [Téléchargement de ressources à l’aide de l’appli de bureau Experience Manager sur un poste de travail Windows ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#download-assets).
 >* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html).
