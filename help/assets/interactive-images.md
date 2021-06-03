@@ -11,7 +11,7 @@ docset: aem65
 feature: Images interactives
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '4332'
 ht-degree: 99%
@@ -95,7 +95,7 @@ La majorité des implémentations d’aperçu rapide utilisent le paradigme suiv
 * L’utilisateur active un élément d’interface utilisateur sur le site web. Par exemple, en cliquant sur un bouton « Aperçu rapide ».
 * Le site web envoie une demande Ajax au serveur principal afin de charger les données ou le contenu de l’aperçu rapide, le cas échéant.
 * Les données de l’aperçu rapide sont traduites en contenu en préparation du rendu sur la page web.
-* Enfin, le code frontal effectue le rendu visuel de ce contenu à l’écran.
+* Enfin, le code en front-end effectue le rendu visuel de ce contenu à l’écran.
 
 L’approche consiste alors à visiter différentes zones du site web existant où la fonctionnalité d’aperçu rapide est implémentée, à déclencher l’aperçu rapide et à capturer l’URL Ajax envoyée par la page web pour charger les données ou le contenu de l’aperçu rapide.
 
@@ -147,7 +147,7 @@ Consultez les exemples suivants d’URL d’aperçu rapide et les variables de z
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie<code></code> dans le paramètre <code>category=</code>.</p> <p>C’est pourquoi les définitions des zones réactives sont des paires. C’est-à-dire, une valeur de SKU et une autre variable nommée <code>categoryId</code>. Les paires résultantes sont les suivantes :</p>
+    </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie<code></code> dans le paramètre <code>category=</code>.</p> <p>Les zones réactives sont définies sous forme de paires. Autrement dit, une valeur de SKU et une variable supplémentaire appelée « <code>categoryId</code> ». Les paires obtenues sont les suivantes :</p>
     <ul>
       <li><p>Le SKU est <strong><code>305466</code></strong> et <code>categoryId</code> est <code>1100004</code>.</p> </li>
       <li><p>Le SKU est <strong><code>310181</code></strong> et <code>categoryId</code> est <strong><code>1100004</code></strong>.</p> </li>
@@ -191,23 +191,23 @@ Lorsque vous créez un paramètre prédéfini de visionneuse d’images interact
 
 Une fois que vous avez enregistré le paramètre prédéfini de visionneuse, il est activé automatiquement dans la page de liste Paramètre prédéfini de visionneuse dans AEM Assets. Cette fonctionnalité signifie qu’elle est visible dans le composant Interactive Media et chaque fois que vous affichez une ressource. Cependant, pour fournir une bannière interactive avec ce paramètre prédéfini de visionneuse, vous devez également publier votre paramètre prédéfini de visionneuse (cela vaut pour les paramètres prédéfinis de visionneuse personnalisés ou prêts à l’emploi).
 
-**Pour créer un paramètre prédéfini de la visionneuse pour les images interactives**
+**Pour créer un paramètre prédéfini de la visionneuse pour les images interactives:**
 
-1. Dans le rail de gauche, appuyez sur **[!UICONTROL Outils > Ressources > Paramètres visionneuse.]**
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Créer.]**
+1. Dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres visionneuse]**.
+1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Créer]**.
 1. Dans la boîte de dialogue Nouveau paramètre prédéfini de la visionneuse, saisissez un nom pour décrire le paramètre prédéfini de visionneuse de bannières interactives.
 
    Titre qui apparaîtra dans la page de liste Paramètres prédéfinis de la visionneuse après l’enregistrement.
 
-1. Dans le menu déroulant Type de média enrichi, sélectionnez **[!UICONTROL Image interactive.]**
-1. Appuyez sur **[!UICONTROL Créer.]**
+1. Dans le menu déroulant Type de média enrichi, sélectionnez **[!UICONTROL Image interactive]**.
+1. Appuyez sur **[!UICONTROL Créer]**.
 1. Sur la page Modifier le paramètre prédéfini de la visionneuse, appuyez sur l’onglet **[!UICONTROL Aspect]**.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour télécharger votre propre image de zone réactive, appuyez sur l’icône Sélecteur de ressources. Dans la page Sélectionner le contenu, accédez à l’image de zone réactive que vous souhaitez utiliser, sélectionnez-la, puis appuyez sur l’icône en forme de coche dans le coin supérieur droit.
    * Pour sélectionner une image de zone réactive prédéfinie, appuyez sur l’icône Galerie de zones réactives. Dans la palette de la galerie de zones réactives, appuyez sur l’image de zone réactive que vous souhaitez utiliser.
 
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer.]**
+1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
 
    Assurez-vous de publier le nouveau paramètre prédéfini de la visionneuse.
 
@@ -219,7 +219,7 @@ Une fois que vous avez enregistré le paramètre prédéfini de visionneuse, il 
 
 Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l’étape suivante [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
 
-**Pour charger une bannière d’image**
+**Pour charger une bannière d’image:**
 
 1. Chargez les bannières d’images que vous souhaitez rendre interactives.
 
@@ -262,32 +262,32 @@ Reportez-vous à la section [(Facultatif) Aperçu des images interactives](#opti
 1. En mode Ressources, accédez à la bannière d’image à laquelle vous souhaitez ajouter de l’interactivité.
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pointez sur l’image, puis appuyez sur la touche **[!UICONTROL Sélectionner]** (icône de coche). Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier.]**
+   * Pointez sur l’image, puis appuyez sur la touche **[!UICONTROL Sélectionner]** (icône de coche). Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
 
-   * Pointez sur l’image, puis appuyez sur **[!UICONTROL Autres actions]** (icône représentant des points de suspension) > **[!UICONTROL Modifier.]**
+   * Pointez sur l’image, puis appuyez sur **[!UICONTROL Autres actions]** (icône représentant trois points) **[!UICONTROL Modifier]**.
 
-   * Appuyez sur l’image pour l’ouvrir dans la page d’affichage des détails. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier.]**
+   * Appuyez sur l’image pour l’ouvrir dans la page d’affichage des détails. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
 
 1. Près du coin supérieur gauche de la page, appuyez sur **[!UICONTROL Ajouter une zone réactive]** (icône d’appui à l’aide du doigt) pour ouvrir la page de gestion des zones réactives.
-1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Zone réactive.]**
+1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Zone réactive]**.
 
-1. Dans le coin supérieur gauche de la page de gestion des zones réactives, appuyez sur **[!UICONTROL Zone réactive.]**
-1. Sur l’image, appuyez sur un emplacement où vous souhaitez que la zone réactive s’affiche. Si nécessaire, faites glisser la zone réactive pour en ajuster l’emplacement.
-1. Ajoutez des zones réactives supplémentaires si nécessaire en répétant les étapes a et b.
-1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis appuyez sur **[!UICONTROL Supprimer]** (icône poubelle) sous l’en-tête **[!UICONTROL Zone réactive]**.
+   1. Dans le coin supérieur gauche de la page de gestion des zones réactives, appuyez sur **[!UICONTROL Zone réactive]**.
+   1. Sur l’image, appuyez sur un emplacement où vous souhaitez que la zone réactive s’affiche. Si nécessaire, faites glisser la zone réactive pour en ajuster l’emplacement.
+   1. Ajoutez des zones réactives supplémentaires si nécessaire en répétant les étapes a et b.
+   1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis appuyez sur **[!UICONTROL Supprimer]** (icône poubelle) sous l’en-tête **[!UICONTROL Zone réactive]**.
 
 1. Dans le champ de texte Nom, entrez le nom de la zone réactive. Ce nom s’affiche également dans la liste déroulante Zone réactive sélectionnée.
 1. Utilisez l’une des méthodes suivantes :
 
-   * Appuyez sur **[!UICONTROL Aperçu rapide.]**
+   * Appuyez sur **[!UICONTROL Aperçu rapide]**.
 
       * Si vous êtes client AEM Sites ou AEM eCommerce, appuyez ou cliquez sur l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Appuyez ou cliquez sur le produit à utiliser, puis appuyez sur **Sélectionner** dans le coin supérieur droit de la page pour revenir à la page Gestion des zones réactives.
       * Si vous *n’êtes pas* client AEM Sites ou eCommerce :
 
          * Voir [Identification des variables de zone réactive](#optional-identifying-hotspot-variables). Vous devez définir ces variables.
          * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur de SKU, entrez la SKU, qui est un identifiant unique pour chaque produit ou service que vous proposez. La valeur de la SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
-         * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide dont vous avez besoin pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique.]** Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
-   * Appuyez sur **[!UICONTROL Lien hypertexte.]**
+         * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide dont vous avez besoin pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
+   * Appuyez sur **[!UICONTROL Lien hypertexte]**.
 
       * Si vous êtes un client AEM Sites, appuyez ou cliquez sur l’icône de sélecteur de site (dossier) pour accéder à une URL. Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
       * Si vous êtes un client autonome, dans le champ de texte HREF, spécifiez l’URL complète vers une page web liée.
@@ -296,7 +296,7 @@ Reportez-vous à la section [(Facultatif) Aperçu des images interactives](#opti
 
    Pour plus d’informations, voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
-   * Appuyez sur **[!UICONTROL Fragment d’expérience.]**
+   * Appuyez sur **[!UICONTROL Fragment d’expérience]**.
 
       * Si vous êtes client AEM Sites, appuyez ou cliquez sur l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Appuyez ou cliquez sur le fragment d’expérience à utiliser, puis appuyez sur Sélectionner dans le coin supérieur droit de la page pour revenir à la page Gestion des zones réactives.
 Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
@@ -331,10 +331,10 @@ Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web
 Voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
 Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-**Pour prévisualiser des images interactives**
+**Pour prévisualiser des images interactives:**
 
 1. En mode Ressources, accédez à une image interactive existante que vous avez créée et appuyez pour la prévisualiser.
-1. Près du coin supérieur gauche de la page de prévisualisation, dans la liste déroulante Contenu, appuyez sur **[!UICONTROL Visionneuses.]**
+1. Près du coin supérieur gauche de la page de prévisualisation, dans la liste déroulante Contenu, appuyez sur **[!UICONTROL Visionneuses]**.
 1. Dans la liste Visionneuse, appuyez sur **[!UICONTROL Shoppable_Banner]** ou sur le nom du paramètre prédéfini de visionneuse d’images interactives que vous avez créé.
 1. Appuyez sur les zones réactives de l’image pour tester les actions associées.
 
@@ -396,7 +396,7 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 
 1. Un utilisateur déclenche un élément dans l’interface utilisateur de votre site web.
 1. Le code frontal obtient une URL d’aperçu rapide basée sur l’élément d’interface utilisateur qui a été déclenché à l’étape 1.
-1. Le code frontal envoie une demande Ajax en utilisant l’URL obtenue à l’étape 2.
+1. Le code en front-end envoie une demande Ajax en utilisant l’URL obtenue à l’étape 2.
 1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code frontal.
 1. Le code frontal charge les données ou le contenu de l’aperçu rapide.
 1. Le code frontal convertit éventuellement les données téléchargées de l’aperçu rapide en une représentation HTML.
@@ -406,7 +406,7 @@ Ces appels peuvent ne pas représenter des appels d’API publiques indépendant
 
 En même temps que l’image interactive Shoppable remplace l’étape 1 et partiellement l’étape 2, lorsqu’un utilisateur clique sur une zone réactive dans l’image Shoppable, cette interaction est gérée par la visionneuse. La visionneuse renvoie un événement à la page web qui contient toutes les données des zones réactives ajoutées antérieurement à AEM Assets.
 
-Dans ce type de gestionnaire d’événements, le code frontal effectue les opérations suivantes :
+Dans ce type de gestionnaire d’événements, le code en front-end effectue les opérations suivantes :
 
 * Il écoute un événement émis par l’image interactive Shoppable.
 * Il crée une URL d’aperçu rapide basée sur les données des zones réactives.
@@ -436,7 +436,7 @@ Le code intégré renvoyé par AEM Assets comporte déjà un descripteur d’é
         s7interactiveimageviewer.init();
 ```
 
-Il suffit donc de supprimer les commentaires du code et remplacer le corps factice du gestionnaire par le code spécifique à la page web.
+Il suffit donc de supprimer les commentaires du code et de remplacer le corps factice du gestionnaire par le code spécifique à la page web.
 
 Le processus de création de l’URL d’aperçu rapide est presque l’opposé du processus utilisé pour identifier les variables des zones réactives décrit précédemment.
 
