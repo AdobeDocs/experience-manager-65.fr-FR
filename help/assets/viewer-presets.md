@@ -10,7 +10,7 @@ discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: Paramètres prédéfinis de la visionneuse
 role: Business Practitioner, Administrator
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
@@ -30,12 +30,12 @@ Pour tout problème lié aux paramètres prédéfinis de visionneuse, consultez 
 
 ## Application d’un paramètre prédéfini de visionneuse Dynamic Media à une ressource {#applying-a-viewer-preset-to-an-asset}
 
-1. Ouvrez la ressource et, sur le rail gauche, appuyez sur **[!UICONTROL Visionneuses.]**
+1. Ouvrez la ressource et, sur le rail gauche, appuyez sur **[!UICONTROL Visionneuses]**.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    * Les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** s’affichent lorsque vous avez sélectionné un paramètre de visionneuse prédéfini.
-   * Le système affiche plusieurs paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des **[!UICONTROL détails d’une ressource.]** Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent](managing-viewer-presets.md).
+   * Le système affiche plusieurs paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des **[!UICONTROL détails d’une ressource]**. Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent](managing-viewer-presets.md).
 
 1. Sélectionnez une visionneuse dans le volet gauche pour l’appliquer à la ressource telle qu’elle figure dans le volet de droite. Vous pouvez également [copier l’URL à partager](linking-urls-to-yourwebapplication.md) avec d’autres utilisateurs.
 
