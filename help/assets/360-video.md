@@ -11,7 +11,7 @@ docset: aem65
 feature: Vidéo 360 VR
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 80%
@@ -53,7 +53,7 @@ Les ressources vidéo 360 qui sont chargées dans Adobe Experience Manager sont 
 **Pour charger des ressources pour une utilisation avec la visionneuse de vidéos 360 :**
 
 1. Créez un dossier dédié à votre ressource vidéo 360.
-1. [Appliquez un profil de vidéo adaptative au dossier.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
+1. [Appliquez un profil de vidéo adaptative au dossier](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    Les exigences du rendu de contenu vidéo 360 sont plus élevées pour la résolution vidéo source et pour la résolution des rendus codée que pour le contenu vidéo standard.
 
@@ -99,7 +99,7 @@ Voir également [Modification de paramètres de visionneuse prédéfinis](/help/
 
 Lorsque vous êtes satisfait de la vidéo 360, vous pouvez la publier.
 
-Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web.](/help/assets/embed-code.md)
+Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
 Voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
 Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
@@ -111,7 +111,7 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/
 
    Appuyez sur la ressource vidéo 360 pour pouvoir prévisualiser la vidéo.
 
-1. Dans la page d’aperçu, dans le coin supérieur gauche de la page, appuyez sur le menu déroulant puis sélectionnez **[!UICONTROL Visionneuses.]**
+1. Dans la page d’aperçu, dans le coin supérieur gauche de la page, appuyez sur le menu déroulant puis sélectionnez **[!UICONTROL Visionneuses]**.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
@@ -122,13 +122,13 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/
 
    ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Capture d’écran d’une vidéo 360.*
 
-   * Dans la liste des visionneuses, appuyez sur **[!UICONTROL Video360VR.]**
+   * Dans la liste des visionneuses, appuyez sur **[!UICONTROL Video360VR]**.
 
       Une vidéo de réalité virtuelle (VR) est un contenu vidéo immersif accessible grâce à un casque de réalité virtuelle. À l’instar des vidéos ordinaires, vous créez une vidéo de réalité virtuelle au début, lorsqu’elle est en cours d’enregistrement ou capturée à l’aide de caméras à 360 degrés.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Capture d’écran d’une vidéo 360 VR*
 
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Fermer.]**
+1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Fermer]**.
 
 ## Publication d’une vidéo 360 {#publishing-video}
 
