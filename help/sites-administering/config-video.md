@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 22%
@@ -81,7 +81,7 @@ Pour **configurer AEM**, procédez comme suit :
    >
    >Remplacez et modifiez le profile-node entier et pas seulement la propriété ayant besoin d’être modifiée. Ces ressources ne sont pas résolues via SlingResourceMerger.
 
-4. Si vous avez modifié des propriétés, cliquez sur **[!UICONTROL Tout enregistrer.]**
+4. Si vous avez modifié des propriétés, cliquez sur **[!UICONTROL Tout enregistrer]**.
 
 >[!NOTE]
 >
