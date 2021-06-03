@@ -10,10 +10,10 @@ discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: Business Practitioner, Administrator
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Vidéo
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 63%
+source-wordcount: '1589'
+ht-degree: 56%
 
 ---
 
@@ -74,7 +74,7 @@ Si vous n’avez pas besoin d’un worfklow ou d’une création de versions pou
 
 Pour configurer les paramètres prédéfinis universaux :
 
-1. Dans **[!UICONTROL Services Cloud]**, accédez à la configuration **[!UICONTROL Scene7]** et cliquez sur **[!UICONTROL Modifier.]**
+1. Dans **[!UICONTROL Services Cloud]**, accédez à la configuration **[!UICONTROL Scene7]** et cliquez sur **[!UICONTROL Modifier]**.
 1. Sélectionnez l’onglet **[!UICONTROL Vidéo]**.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -95,7 +95,7 @@ Pour configurer les paramètres prédéfinis universaux :
 
 ## Mise à jour de la visionneuse et des paramètres prédéfinis de codage  {#updating-viewer-and-encoding-presets}
 
-Si vous devez mettre à jour la visionneuse et les paramètres prédéfinis de codage pour une vidéo dans AEM car les paramètres ont été mis à jour dans Scene7, accédez à la configuration Scene7 dans la configuration de cloud et cliquez sur **[!UICONTROL Mettre à jour la visionneuse et les paramètres prédéfinis de codage.]**
+Si vous devez mettre à jour la visionneuse et les paramètres prédéfinis de codage pour la vidéo en Experience Manager, car les paramètres prédéfinis ont été mis à jour dans Scene7, accédez à la configuration Scene7 dans la configuration cloud et cliquez sur **[!UICONTROL Mettre à jour la visionneuse et les paramètres prédéfinis de codage]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -112,9 +112,9 @@ Si vous devez mettre à jour la visionneuse et les paramètres prédéfinis de c
 
 ## Comparaison du composant vidéo de base et du composant vidéo Scene7 {#foundation-video-component-versus-scene-video-component}
 
-Lorsque vous utilisez AEM, vous avez accès à la fois au composant vidéo disponible dans Sites et au composant vidéo Scene7. Ces composants ne sont pas interchangeables.
+Lorsque vous utilisez Experience Manager, vous avez accès au composant vidéo disponible dans Sites et au composant vidéo Scene7. Ces composants ne sont pas interchangeables.
 
-Le composant vidéo Scene7 ne fonctionne que pour les vidéos Scene7. Le composant de base fonctionne avec les vidéos stockées depuis AEM (à l’aide de FFMPEG) et les vidéos Scene7.
+Le composant vidéo Scene7 ne fonctionne que pour les vidéos Scene7. Le composant de base fonctionne avec des vidéos stockées à partir de Experience Manager (à l’aide de ffmpeg) et des vidéos Scene7.
 
 Le tableau suivant explique les cas d’utilisation de chaque composant :
 
@@ -122,13 +122,13 @@ Le tableau suivant explique les cas d’utilisation de chaque composant :
 
 >[!NOTE]
 >
->Prêt à l’emploi, le composant vidéo S7 utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo HTML5 à utiliser par AEM en effectuant l’une des opérations suivantes dans Scene7 : copiez le code incorporé du lecteur vidéo HTML5 prêt à l’emploi et collez-le dans votre page AEM.
+>Prêt à l’emploi, le composant vidéo S7 utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo HTML5 à utiliser par Experience Manager en effectuant l’une des opérations suivantes dans Scene7 : copiez le code incorporé du lecteur vidéo HTML5 prêt à l’emploi et collez-le dans votre page de Experience Manager.
 
 ## Composant vidéo AEM {#aem-video-component}
 
-Même si l’utilisation du composant vidéo Scene7 est recommandée pour la visualisation des vidéos Scene7, cette section décrit l’utilisation de vidéos Scene7 avec le composant vidéo de base dans AEM et ce, afin d’être le plus complet possible.
+Même si l’utilisation du composant vidéo Scene7 est recommandée pour visionner des vidéos Scene7, cette section décrit l’utilisation de vidéos Scene7 avec le composant vidéo Foundation en Experience Manager, par souci d’exhaustivité.
 
-### Comparaison de la vidéo AEM et de la vidéo Scene7  {#aem-video-and-scene-video-comparison}
+### Comparaison de la vidéo AEM et de la vidéo Scene7 {#aem-video-and-scene-video-comparison}
 
 Le tableau suivant fournit une comparaison de niveau élevé des fonctions prises en charge par le composant vidéo de base AEM et le composant vidéo Scene7 :
 
@@ -150,9 +150,9 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 >
 >Les nouveaux profils vidéo et leurs modifications doivent être activés pour la publication.
 
-1. Dans AEM, appuyez sur **[!UICONTROL Outils] > [!UICONTROL Console de configuration]**.
-1. Dans la **[!UICONTROL console de configuration]**, accédez à **[!UICONTROL Outils > Gestion des actifs numériques > Profils vidéo]** dans l’arborescence de navigation.
-1. Créez un nouveau profil vidéo S7. Dans la section **[!UICONTROL Nouveau...]**, sélectionnez **[!UICONTROL Créer une page]**, puis sélectionnez le modèle Profil vidéo Scene7 . Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer.]**
+1. Dans AEM, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Console de configuration]**.
+1. Dans la **[!UICONTROL console de configuration]** accédez à **[!UICONTROL Outils]** > **[!UICONTROL DAM]** > **[!UICONTROL Profils vidéo]** dans l’arborescence de navigation.
+1. Créez un nouveau profil vidéo S7. Dans le menu **[!UICONTROL New]**., sélectionnez **[!UICONTROL Créer une page]**, puis sélectionnez le modèle Profil vidéo Scene7 . Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
