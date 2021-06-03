@@ -11,7 +11,7 @@ docset: aem65
 feature: Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 83%
@@ -38,7 +38,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
 **Pour prévisualiser des ressources à l’aide de l’interface logicielle**
 
 1. Dans **[!UICONTROL Adobe Experience Manager]**, sur la page de **[!UICONTROL navigation]**, appuyez sur **[!UICONTROL Ressources]**, puis sur **[!UICONTROL Fichiers]** pour accéder aux ressources.
-1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, appuyez sur **[!UICONTROL Mode Liste.]**
+1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, appuyez sur **[!UICONTROL Mode Liste]**.
 1. (Facultatif) Utilisez la colonne **[!UICONTROL Type]** pour trier les ressources en fonction du type que vous souhaitez prévisualiser.
 1. Sous la colonne **[!UICONTROL Titre]**, cliquez sur le nom du titre (et non sur l’image miniature) de la ressource à prévisualiser.
 1. Selon le type de ressource sur lequel vous avez cliqué, procédez de l’une des manières suivantes :
