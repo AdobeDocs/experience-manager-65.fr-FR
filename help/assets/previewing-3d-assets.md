@@ -6,7 +6,7 @@ docset: aem65
 feature: Ressources 3D
 role: Business Practitioner
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 666bc5d943af371726708cb2ef157a9b3f07eb8e
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 65%
@@ -55,7 +55,7 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans Experience Manager.
 Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Téléchargement de ressources](/help/assets/manage-assets.md#uploading-assets).
-1. Dans Experience Manager, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Ressources > Fichiers.]**
+1. Dans Experience Manager, sur la page **[!UICONTROL Navigation]**, appuyez sur **[!UICONTROL Ressources > Fichiers]**.
 
    ![Page de navigation](/help/assets/assets-dm/navigation-assets.png)
 
@@ -79,4 +79,4 @@ Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-pr
    | **Réinitialiser** | Dans le coin inférieur droit de la page, appuyez sur l’icône Réinitialiser pour rétablir le point d’affichage cible au centre de la ressource 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |  |  |
    | **Mode Plein écran** | Pour passer en mode Plein écran, dans le coin inférieur droit de la page, appuyez sur l’icône Plein écran. |  |  |
 
-1. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Fermer.]**
+1. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Fermer]**.
