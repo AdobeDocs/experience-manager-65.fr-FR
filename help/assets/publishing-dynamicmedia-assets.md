@@ -10,7 +10,7 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publication
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 87%
@@ -21,8 +21,8 @@ ht-degree: 87%
 
 Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide]**. Une fois vos ressources Dynamic Media publiées, vous pouvez les inclure dans une page web au moyen d’une URL ou en incorporant le code sur la page.
 
-Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Voir [Configuration de Dynamic Media - mode Scene7.](config-dms7.md)
-Vous pouvez également publier des ressources de manière sélective sur Dynamic Media exclusivement ou sur AEM exclusivement, à l’aide d’une **[!UICONTROL Publication sélective]** au niveau des dossiers. Voir [Utilisation de la publication sélective dans Dynamic Media.](/help/assets/selective-publishing.md)
+Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. Voir [Configuration de Dynamic Media - mode Scene7](config-dms7.md).
+Vous pouvez également publier des ressources de manière sélective sur Dynamic Media exclusivement ou sur AEM exclusivement, à l’aide d’une **[!UICONTROL Publication sélective]** au niveau des dossiers. Voir [Utilisation de la publication sélective dans Dynamic Media](/help/assets/selective-publishing.md).
 
 En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource et à gauche de la date et de l’heure pour indiquer qu’elle est publiée. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
@@ -45,7 +45,7 @@ Voir aussi [Incorporation de la visionneuse de vidéos ou d’images Dynamic Med
 
 
 
-Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, reportez-vous à la section [Publication de ressources.](manage-assets.md)
+Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, reportez-vous à la section [Publication de ressources](manage-assets.md).
 
 ## Diffusion de ressources Dynamic Media via HTTP/2  {#http-delivery-of-dynamic-media-assets}
 
