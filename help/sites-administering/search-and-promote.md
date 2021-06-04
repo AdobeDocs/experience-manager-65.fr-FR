@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 76%
@@ -44,7 +44,7 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 
 L’URL par défaut configurée pour le service Search &amp; Promote est `https://searchandpromote.omniture.com/px/`. Pour utiliser un autre service, utilisez la console OSGi afin de spécifier une autre URL.
 
-1. Ouvrez la console OSGi et cliquez sur l’onglet Configuration. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))
+1. Ouvrez la console OSGi et cliquez sur l’onglet Configuration. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Cliquez sur l’élément Configuration de Day CQ Search&amp;Promote.
 1. Saisissez l’URL dans le champ URI de serveur distant, puis cliquez sur Enregistrer.
 
