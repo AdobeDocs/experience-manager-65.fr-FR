@@ -8,7 +8,7 @@ content-type: reference
 feature: Cache CDN,Dynamic Media Classic
 role: Business Practitioner, Administrator
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 79%
@@ -25,7 +25,7 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de
 
 >[!IMPORTANT]
 >
->Les étapes suivantes s’appliquent uniquement à Dynamic Media dans AEM 6.5, Service Pack 5 (AEM 6.5.5) ou version antérieure.<br>Si vous utilisez Dynamic Media dans AEM 6.5, Service Pack 6 (AEM 6.5.6) ou une version ultérieure, suivez les étapes décrites dans la section  [Invalidation du cache CDN au moyen de Dynamic Media.](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>Les étapes suivantes s’appliquent uniquement à Dynamic Media dans AEM 6.5, Service Pack 5 (AEM 6.5.5) ou version antérieure.<br>Si vous utilisez Dynamic Media dans AEM 6.5, Service Pack 6 (AEM 6.5.6) ou une version ultérieure, suivez les étapes décrites dans la section  [Invalidation du cache CDN au moyen de Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md).
 
 Voir aussi [Présentation du cache dans Dynamic Media Classic (Scene7)](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
