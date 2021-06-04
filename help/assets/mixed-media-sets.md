@@ -11,7 +11,7 @@ docset: aem65
 feature: Combiner des visionneuses de médias, Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 98%
@@ -38,7 +38,7 @@ Pour démarrer rapidement, procédez comme suit :
 
    Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/image-sets.md) et [Visionneuses à 360°](/help/assets/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
 
-1. [Créez une visionneuse de médias mixtes.](#creating-mixed-media-sets)
+1. [Créez une visionneuse de médias mixtes](#creating-mixed-media-sets).
 
    Pour créer une visionneuse de médias mixtes, dans la page Ressources, sélectionnez **[!UICONTROL Créer > Visionneuse de médias mixtes]**. Attribuez ensuite un nom à la visionneuse, sélectionnez des ressources et choisissez l’ordre dans lequel doivent apparaître les images.
 
@@ -52,11 +52,11 @@ Pour démarrer rapidement, procédez comme suit :
 
    Voir [Ajout et modification de paramètres prédéfinis de la visionneuse](/help/assets/managing-viewer-presets.md).
 
-1. [Prévisualisez une visionneuse de médias mixtes.](#previewing-mixed-media-sets)
+1. [Prévisualisez une visionneuse de médias mixtes](#previewing-mixed-media-sets).
 
    Sélectionnez la visionneuse de médias mixtes pour pouvoir la prévisualiser. Cliquez sur les icônes des miniatures afin d’examiner votre visionneuse de médias mixtes dans la visionneuse sélectionnée. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
 
-1. [Publiez une visionneuse de médias mixtes.](#publishing-mixed-media-sets)
+1. [Publiez une visionneuse de médias mixtes](#publishing-mixed-media-sets).
 
    La publication d’une visionneuse de médias mixtes active la chaîne URL et d’incorporation. Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -86,7 +86,7 @@ Vous pouvez ajouter des images, des visionneuses d’images, des visionneuses à
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources après les avoir ajoutées.
 
-**Création d’une visionneuse de médias mixtes**
+**Création d’une visionneuse de médias mixtes:**
 
 1. Dans Assets, accédez à l’emplacement où vous souhaitez créer une visionneuse de médias mixtes, cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Visionneuse de médias mixtes]**. Vous pouvez également la créer depuis un dossier qui contient les ressources. L’éditeur de visionneuse de médias mixtes s’affiche.
 
@@ -132,7 +132,7 @@ Vous pouvez effectuer diverses tâches de modification sur les ressources dans l
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Modifier la vignette par défaut.
 
-**Modification d’une visionneuse de médias mixtes**
+**Modification d’une visionneuse de médias mixtes:**
 
 1. Effectuez l’une des opérations suivantes :
 
