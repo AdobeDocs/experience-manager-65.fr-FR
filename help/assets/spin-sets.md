@@ -11,10 +11,10 @@ docset: aem65
 feature: Visionneuses à 360°, Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -36,11 +36,11 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 
 Pour démarrer rapidement, procédez comme suit :
 
-1. [Chargez les images pour plusieurs vues.](#uploading-assets-for-spin-sets)
+1. [Chargez les images pour plusieurs vues](#uploading-assets-for-spin-sets).
 
    Vous avez besoin au minimum de 8 à 12 prises de vue d’un élément pour pouvoir utiliser une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour pouvoir utiliser une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être réalisées à intervalles réguliers pour donner l’impression que l’objet est en rotation et retourné. Par exemple, si une visionneuse unidimensionnelle comprend 12 prises de vue, faites pivoter l’objet de 30 degrés (360/12) pour chaque prise de vue.
 
-1. [Créez une visionneuse à 360°.](#creating-spin-sets)
+1. [Création d’une visionneuse à 360°](#creating-spin-sets).
 
    Pour créer une visionneuse à 360°, sélectionnez **[!UICONTROL Créer > Visionneuse à 360°]**. Attribuez ensuite un nom à la visionneuse, sélectionnez des ressources et choisissez l’ordre dans lequel doivent apparaître les images.
 
@@ -62,11 +62,11 @@ Pour démarrer rapidement, procédez comme suit :
 
    Vous pouvez afficher les visionneuses créées par le biais des paramètres prédéfinis d’ensemble par lot et y accéder de trois manières différentes. Les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot ne s’affichent *pas* dans l’interface utilisateur.
 
-1. [Prévisualisez une visionneuse à 360°.](/help/assets/previewing-assets.md)
+1. [Aperçu des visionneuses à 360°](/help/assets/previewing-assets.md).
 
    Sélectionnez la visionneuse à 360° pour pouvoir la prévisualiser. Faites pivoter la visionneuse à 360°. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
 
-1. [Publiez une visionneuse à 360°.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Publiez une visionneuse à 360°](/help/assets/publishing-dynamicmedia-assets.md).
 
    La publication d’une visionneuse à 360° active la chaîne d’URL et d’incorporation. Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](/help/assets/managing-viewer-presets.md).
 
@@ -142,7 +142,7 @@ Cette section décrit comment créer des visionneuses à 360° dans AEM.
 
    Si nécessaire, faites glisser l’icône Réorganiser d’une ressource vers la droite du nom de fichier de la ressource pour réorganiser les images vers le haut ou le bas de la liste définie.
 
-   ![Réorganisation de l’image 11 dans la visionneuse à 360° en la faisant glisser vers un nouvel emplacement.](assets/6_5_spinset-reorderassets.png)
+   ![Réorganisation de l’image 11 dans la visionneuse à 360° en la faisant glisser vers un nouvel emplacement](assets/6_5_spinset-reorderassets.png).
 
    Réorganisation de l’image 11 dans la visionneuse à 360° en la faisant glisser vers un nouvel emplacement.
 
@@ -162,7 +162,7 @@ Vous pouvez créer des visionneuses à 360° dans l’interface utilisateur ou 
 >
 >Vous pouvez également afficher les visionneuses par le biais de l’interface utilisateur, comme indiqué dans [Modification d’une visionneuse à 360°](#editing-spin-sets).
 
-**Pour afficher des visionneuses à 360°**.
+**Pour afficher des visionneuses à 360° :**.
 
 1. Lors de l’ouverture des propriétés d’une ressource individuelle. Les propriétés indiquent les jeux dont la ressource sélectionnée fait partie (sous **[!UICONTROL Membre des visionneuses]**). Cliquez sur le nom de la visionneuse pour l’afficher intégralement.
 
@@ -188,7 +188,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses à 3
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Supprimer la visionneuse à 360°.
 
-**Pour modifier une visionneuse à 360°**
+**Pour modifier une visionneuse à 360°, procédez comme suit :**
 
 1. Effectuez l’une des opérations suivantes :
 
