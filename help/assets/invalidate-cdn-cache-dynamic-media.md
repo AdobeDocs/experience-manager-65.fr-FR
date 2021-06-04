@@ -8,7 +8,7 @@ content-type: reference
 role: Business Practitioner, Administrator
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 feature: Cache CDN
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 71%
@@ -25,7 +25,7 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de 
 
 >[!IMPORTANT]
 >
->Les étapes suivantes s’appliquent uniquement au mode Dynamic Media - Scene7 dans Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) ou version ultérieure. Cette fonction d’invalidation du réseau de diffusion de contenu nécessite également l’utilisation du réseau de diffusion de contenu prêt à l’emploi fourni avec Dynamic Media Experience Manager ; tout autre réseau de diffusion de contenu personnalisé n’est pas pris en charge.<br>Si vous utilisez Dynamic Media dans Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) ou une version antérieure, suivez les étapes décrites dans  [Invalidation du cache CDN au moyen de Dynamic Media Classic.](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>Les étapes suivantes s’appliquent uniquement au mode Dynamic Media - Scene7 dans Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) ou version ultérieure. Cette fonction d’invalidation du réseau de diffusion de contenu nécessite également l’utilisation du réseau de diffusion de contenu prêt à l’emploi fourni avec Dynamic Media Experience Manager ; tout autre réseau de diffusion de contenu personnalisé n’est pas pris en charge.<br>Si vous utilisez Dynamic Media dans Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) ou version antérieure, suivez les étapes décrites dans  [Invalidation du cache CDN au moyen de Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md).
 
 Voir aussi [Présentation de la mise en cache dans Dynamic Media](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
