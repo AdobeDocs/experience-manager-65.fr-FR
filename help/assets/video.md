@@ -11,7 +11,7 @@ docset: aem65
 feature: Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '11748'
 ht-degree: 95%
@@ -30,7 +30,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
 >
 >Avant d’utiliser la vidéo dans Dynamic Media, assurez-vous que votre administrateur d’AEM a déjà activé et configuré les Cloud Services Dynamic Media en mode Dynamic Media - Scene7 ou Dynamic Media - Hybride .
 >
->* Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media – mode Scene7 et [Dépannage de Dynamic Media – mode Scene7.](/help/assets/troubleshoot-dms7.md)
+>* Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media – mode Scene7 et [Dépannage de Dynamic Media – mode Scene7](/help/assets/troubleshoot-dms7.md).
    >
    >
 * Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media – mode hybride.
@@ -356,7 +356,7 @@ Ce tableau décrit le débit de données associé à des vitesses de connexion c
 
 ### Résolution {#resolution}
 
-La **résolution** décrit la hauteur et la largeur du fichier vidéo, exprimée en pixels. La plupart des vidéos sources sont stockées à une résolution élevée (par exemple, 1 920 x 1 080). Pour la diffusion en flux continu, la vidéo source est compressée à une résolution inférieure (640 x 480, voire moins).
+La **résolution** décrit la hauteur et la largeur d’un fichier vidéo, exprimée en pixels. La plupart des vidéos sources sont stockées à une résolution élevée (par exemple, 1 920 x 1 080). À des fins de diffusion en flux continu, la vidéo source est compressée à une résolution inférieure (640 x 480, voire moins).
 
 La résolution et le débit de données sont deux facteurs étroitement liés qui déterminent la qualité de la vidéo. Pour maintenir la même qualité vidéo, plus le nombre de pixels (c’est-à-dire la résolution) est élevé dans un fichier vidéo, plus le débit de données doit l’être également. Par exemple, considérez le nombre de pixels par image dans un fichier vidéo d’une résolution de 320 x 240 pixels et dans un fichier vidéo d’une résolution de 640 x 480 pixels :
 
@@ -548,7 +548,7 @@ Pour publier des vidéos sur YouTube, vous devez disposer d’une ou de plusieur
 >
 >Vous devez avoir configuré une ou plusieurs chaînes dans YouTube *avant* d’ajouter des chaînes sous Paramètres YouTube dans AEM (voir la section [Configuration de YouTube dans AEM](#setting-up-youtube-in-aem) ci-dessous). Si vous n’avez pas configuré de chaîne, aucun avertissement ne s’affichera. L’authentification Google a lieu lorsque vous ajoutez une chaîne, mais il n’existe pas d’option permettant de choisir la chaîne vers laquelle la vidéo est envoyée.
 
-Pour créer une chaîne YouTube :
+**Pour créer une chaîne YouTube :**
 
 1. Accédez à [https://www.youtube.com](https://www.youtube.com/), puis connectez-vous à l’aide des informations d’identification de votre compte Google.
 1. Dans l’angle supérieur droit de la page YouTube, cliquez sur l’image de votre profil (peut également s’afficher sous la forme d’une lettre dans un cercle coloré uni), puis cliquez sur **[!UICONTROL Paramètres YouTube]** (icône sous forme d’engrenage rond).
@@ -761,7 +761,7 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 >
 >Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que ce type de surveillance nécessite un accès administrateur.
 
-Pour publier des vidéos sur votre chaîne YouTube :
+**Pour publier des vidéos sur votre chaîne YouTube, procédez comme suit :**
 
 1. Dans AEM, accédez à la ressource vidéo que vous souhaitez publier sur votre chaîne YouTube.
 1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
@@ -797,7 +797,7 @@ Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée
 >
 >L’URL YouTube ne peut pas être copiée tant que vous n’avez pas publié la ressource vidéo sur YouTube.
 
-Pour lier les URL YouTube à votre application web, procédez comme suit :
+**Pour lier les URL YouTube à votre application web, procédez comme suit :**
 
 1. Accédez à la ressource vidéo *publiée sur YouTube* dont vous souhaitez copier l’URL, puis sélectionnez-la.
 
@@ -821,7 +821,7 @@ Lorsque vous annulez la publication d’une ressource vidéo dans AEM, la vidéo
 >
 >Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Pour annuler la publication de vidéos afin de les supprimer de YouTube, procédez comme suit :
+**Pour annuler la publication de vidéos afin de les supprimer de YouTube, procédez comme suit :**
 
 1. Accédez à la ressource vidéo que vous souhaitez publier sur votre chaîne YouTube.
 1. Dans un mode de sélection de ressource, sélectionnez une ou plusieurs ressources vidéo publiées.
@@ -836,7 +836,7 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
 
 ### Suivi de la progression {#monitoring-progress}
 
-Pour surveiller la progression (notamment l’échec du codage ou de la publication YouTube) :
+**Pour surveiller la progression (notamment l’échec du codage ou de la publication YouTube) :**
 
 1. Consultez la progression du codage vidéo dans votre dossier de ressources :
 
@@ -987,7 +987,7 @@ Par défaut, la première fois que vous utilisez l’option Rapports vidéo, le 
 
 Pour que les rapports vidéo fonctionnent correctement, un identifiant de suite de rapports est automatiquement créé lors de la configuration des Cloud Services Dynamic Media. Dans le même temps, l’identifiant de suite de rapports est transmis au serveur de publication pour qu’il soit disponible pour la fonctionnalité de copie d’URL lors de la prévisualisation de ressources. Cela nécessite toutefois que le serveur de publication soit déjà configuré. Si le serveur de publication n’est pas configuré, vous pouvez effectuer une publication pour afficher le rapport vidéo. Vous devez toutefois retourner dans la configuration du cloud Dynamic Media et appuyer sur **[!UICONTROL OK]**.
 
-Pour afficher un rapport vidéo, procédez comme suit :
+**Pour afficher un rapport vidéo, procédez comme suit :**
 
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports vidéo]**.
 1. Dans la page Rapport vidéo, effectuez l’une des opérations suivantes :
@@ -1008,7 +1008,7 @@ Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dyn
 
 Utilisez le [Guide de référence des visionneuses Dynamic Media Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr) et l’[API du kit de développement de visionneuses HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) pour créer vos propres visionneuses de vidéos.
 
-Pour afficher des rapports vidéo basés sur une visionneuse de vidéos que vous avez créée à l’aide de l’API du kit de développement de visionneuses HTML5, procédez comme suit :
+**Pour afficher des rapports vidéo basés sur une visionneuse de vidéos que vous avez créée à l’aide de l’API du kit de développement de visionneuses HTML5, procédez comme suit :**
 
 1. Accédez à une ressource vidéo publiée.
 1. Près du coin supérieur gauche de la page du fichier, sélectionnez **[!UICONTROL Visionneuses]** dans la liste déroulante.
@@ -1312,7 +1312,7 @@ Voir [Ajout d’une miniature de vidéo](#adding-a-video-thumbnail).
 1. Appuyez sur **[!UICONTROL OK]** pour retourner à l’onglet Propriétés.
 1. Près du coin supérieur gauche de la page CRXDE Lite, appuyez sur **[!UICONTROL Enregistrer tout]**, puis appuyez sur icône Retour à l’accueil dans le coin supérieur gauche pour revenir à AEM.
 
-   Voir [Ajout d’une miniature de vidéo.](#adding-a-video-thumbnail)
+   Voir [Ajout d’une miniature de vidéo](#adding-a-video-thumbnail).
 
 ### Ajout d’une miniature vidéo personnalisée {#adding-a-custom-video-thumbnail-1}
 
