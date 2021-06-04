@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '5517'
 ht-degree: 10%
@@ -53,7 +53,7 @@ Lorsque vous utilisez des ressources dans cette solution, vous effectuez l’une
 * Chargez des ressources directement dans Dynamic Media Classic, puis accédez à par le biais de l’explorateur de contenu **Dynamic Media Classic** pour la création de pages ou
 * Téléchargez vers Experience Manager Assets, puis activez la publication automatique vers Dynamic Media Classic. Vous accédez à via l’explorateur de contenu **Ressources** pour la création de pages.
 
-Les composants que vous utilisez pour cette intégration se trouvent dans la zone de composant **Dynamic Media Classic** en [mode Conception.](/help/sites-authoring/author-environment-tools.md#page-modes)
+Les composants que vous utilisez pour cette intégration se trouvent dans la zone de composant **Dynamic Media Classic** dans le [mode de conception](/help/sites-authoring/author-environment-tools.md#page-modes).
 
 ### Dynamic Media Experience Manager {#aem-dynamic-media}
 
@@ -423,8 +423,8 @@ Cependant, si vous ne souhaitez pas que les ressources transférées vers Dynami
 
 Avant de pouvoir envoyer des ressources vers Dynamic Media Classic sans les publier, vous devez configurer les éléments suivants :
 
-1. [Utilisez Admin Console pour créer un dossier d’assistance.](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Dans votre cas de prise en charge, demandez l’activation d’un aperçu sécurisé pour votre compte Dynamic Media Classic.
-1. Suivez les instructions de la section [configuration de l’aperçu sécurisé pour votre compte Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. [Utilisez Admin Console pour créer un dossier d’assistance](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Dans votre cas de prise en charge, demandez l’activation d’un aperçu sécurisé pour votre compte Dynamic Media Classic.
+1. Suivez les instructions de la section [configuration de l’aperçu sécurisé pour votre compte Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html).
 
 Ces étapes sont les mêmes que celles que vous suivez pour créer une configuration de test sécurisée dans Dynamic Media Classic.
 
