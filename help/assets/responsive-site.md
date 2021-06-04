@@ -10,7 +10,7 @@ discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 93%
@@ -23,11 +23,11 @@ Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le 
 
 Cette fonction a un sens si votre site web se trouve sur un composant WCM tiers. Cependant, si votre site web se trouve sur AEM à la place, un serveur d’images hors site effectue le rendu de l’image et le communique à la page web.
 
-Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed-code.md)
+Voir aussi [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
 
-Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebapplication.md)
+Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-**Pour diffuser des images optimisées pour un site réactif, procédez comme suit** :
+**Pour diffuser des images optimisées pour un site réactif, procédez comme suit :**
 
 1. Accédez à l’image pour laquelle vous voulez fournir du code réactif et, dans le menu déroulant, appuyez sur **[!UICONTROL Rendus]**.
 
