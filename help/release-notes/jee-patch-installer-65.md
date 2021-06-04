@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 50%
+source-wordcount: '483'
+ht-degree: 51%
 
 ---
 
@@ -52,10 +52,12 @@ LinuxAccédez au répertoire approprié, puis, à l’invite de commande, saisis
 1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**.
 1. Lorsque l’installation est terminée, cliquez sur **[!UICONTROL Suivant]** pour appliquer les mises à jour du Quick Fix à vos fichiers installés.
 
-1. Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *&lt;AEMForms_Install_Dir>\configurationManager\bin* et mettez à jour **axis.jar** vers **axis-1.1.4.1.4.1.1.1.1.1.1.1.1 1.jar** dans les fichiers suivants :
+1. Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *&lt;AEMForms_Install_Dir>\configurationManager\bin* et mettez à jour les fichiers `ConfigurationManager.lax` et `ConfigurationManager_IPv6.lax` avec les opérations de changement de nom suivantes :
 
-   * ConfigurationManager.lax
-   * ConfigurationManager_IPv6.lax
+   * `axis.jar` vers `axis-1.4.1.1.jar`
+   * `serializer-2.7.1.jar` vers `serializer-2.7.2.jar`
+   * `xalan-2.7.1.jar` vers `xalan-2.7.2.jar`
+   * `xercesImpl-2.9.1.jar` vers `xercesImpl-2.12.0.jar`
 
 1. La case à cocher Démarrer Configuration Manager est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager.
 
