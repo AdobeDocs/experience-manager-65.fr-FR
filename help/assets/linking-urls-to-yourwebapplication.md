@@ -10,7 +10,7 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 94%
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 Vos applications et sites web accèdent aux services Dynamic Media par l’intermédiaire d’appels d’URL. Une fois que vous avez publié une ressource, Dynamic Media active une chaîne d’URL qui fait référence à la ressource. Vous pouvez coller ces URL dans un navigateur web à des fins de test.
 
-Vous ne pouvez lier à des URL que si vous *n’utilisez pas* AEM pour la gestion de contenu web. La liaison, à la différence de l’intégration, est utilisée lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre contextuelle ou modale. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page.](adding-dynamic-media-assets-to-pages.md)
+Vous ne pouvez lier à des URL que si vous *n’utilisez pas* AEM pour la gestion de contenu web. La liaison, à la différence de l’intégration, est utilisée lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre contextuelle ou modale. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page](adding-dynamic-media-assets-to-pages.md).
 
 Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depuis Dynamic Media.
 
@@ -31,13 +31,13 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 
 Voir aussi [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
-Voir aussi [Liaison d’URL YouTube à une application web.](video.md)
+Voir aussi [Liaison d’URL YouTube à une application web](video.md).
 
-Voir aussi [Diffusion d’images optimisées pour un site réactif.](responsive-site.md)
+Voir aussi [Diffusion d’images optimisées pour un site réactif](responsive-site.md).
 
-Voir aussi [Chargement de ressources.](manage-assets.md#uploading-assets)
+Voir aussi [Chargement de ressources](manage-assets.md#uploading-assets).
 
-## Obtention d’une URL pour une ressource  {#obtaining-a-url-for-an-asset}
+## Obtention d’une URL pour une ressource {#obtaining-a-url-for-an-asset}
 
 Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’image prédéfini ou un paramètre prédéfini de la visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
