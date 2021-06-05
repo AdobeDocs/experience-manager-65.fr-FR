@@ -11,10 +11,10 @@ docset: aem65
 feature: Images panoramiques, Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 81%
+source-wordcount: '578'
+ht-degree: 63%
 
 ---
 
@@ -42,11 +42,11 @@ Pour télécharger des ressources à utiliser avec la visionneuse d’images pan
 
 ## Configuration de Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
-Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées spécifiques à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans JCR. Pour ce faire, configurez Dynamic Media Classic de la manière suivante :
+Pour que la visionneuse d’images panoramiques fonctionne correctement dans Adobe Experience Manager, synchronisez les paramètres prédéfinis de la visionneuse d’images panoramiques avec les métadonnées spécifiques à Dynamic Media Classic et Dynamic Media Classic afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour accomplir cette synchronisation, configurez Dynamic Media Classic comme suit :
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte.
 
-1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**.
+1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
 1. Sur la page Publication sur hébergeur d’images, dans le menu déroulant **[!UICONTROL Contexte de publication]** près de la partie supérieure, sélectionnez **[!UICONTROL Image Serving]**.
 
 1. Sur la même page Publication sur hébergeur d’images, localisez l’en-tête **[!UICONTROL Attributs de requête]**.
@@ -56,14 +56,14 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM
 
    >[!NOTE]
    >
-   >Seules les images qui respectent la taille d’image maximale autorisée sont prises en charge. Les demandes d’images qui dépassent la taille maximale entraînent une réponse 403.
+   >Seules les images qui respectent la taille d’image maximale autorisée sont prises en charge. Les demandes d’images dont la taille est supérieure à la limite de taille génèrent une réponse 403.
 
 1. Sous l’en-tête Attributs de requête, procédez comme suit :
 
    * Définissez Mode d’obscurcissement de requête sur **[!UICONTROL Désactivé]**.
    * Définissez Mode de verrouillage de requête sur **[!UICONTROL Désactivé]**.
 
-   Ces paramètres sont nécessaires pour utiliser le composant WCM `Panoramic Media` dans AEM.
+   Ces paramètres sont nécessaires pour utiliser le composant WCM `Panoramic Media` dans Experience Manager.
 
 1. Au bas de la page Publication sur hébergeur d’images, sur la gauche, cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -71,13 +71,13 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement dans AEM
 
 ### Dépannage du composant WCM Média panoramique {#troubleshooting-the-panoramic-media-wcm-component}
 
-Si vous avez fait glisser une image dans le composant Média panoramique au sein de votre WCM et que l’espace réservé au composant s’est réduit, vous pouvez procéder de la manière suivante :
+Si vous avez déposé une image dans le composant Média panoramique de votre WCM et que l’espace réservé du composant est réduit, résolvez les problèmes suivants :
 
-* Si vous rencontrez une erreur 403 Interdit, elle peut être due à la taille excessive de l’image demandée. Vérifiez les paramètres **[!UICONTROL Limite de taille de l’image de réponse]** dans [Configuration de Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Si vous rencontrez une erreur 403 Interdit, cela peut être dû à la taille d’image demandée trop grande. Vérifiez les paramètres **[!UICONTROL Limite de taille de l’image de réponse]** dans [Configuration de Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * En cas d’erreur « Verrou incorrect » ou « Erreur d’analyse » sur la page, vérifiez que Mode d’obscurcissement de requête de vérification et Mode de verrouillage de requête sont désactivés.
-* Pour une erreur de canevas corrompu, configurez un chemin de fichier de définitions de règles et l’option Invalider sur le réseau de diffusion de contenu pour les demandes précédentes de la ressource d’image.
-* Si la qualité d’image devient très faible après une demande d’image dont la taille dépasse la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs d’encodage JPEG > Qualité]** n’est pas vide. Un paramètre type pour le champ **[!UICONTROL Qualité]** est `95`. Vous trouverez le paramètre sur la page Publication sur hébergeur d’images. Pour accéder à la page, voir [Configuration de Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Pour une erreur de canevas taché, configurez un chemin d’accès au fichier de définition de l’ensemble de règles et invalidez le CTN pour les demandes précédentes de la ressource image.
+* Si la qualité de l’image devient faible après une demande d’image dont le dimensionnement est supérieur à la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs de codage JPEG > Qualité]** n’est pas vide. Un paramètre type pour le champ **[!UICONTROL Qualité]** est `95`. Vous trouverez le paramètre sur la page Publication sur hébergeur d’images. Pour accéder à la page, voir [Configuration de Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Aperçu des images panoramiques {#previewing-panoramic-images}
 
