@@ -11,10 +11,10 @@ docset: aem65
 feature: Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
 workflow-type: tm+mt
-source-wordcount: '11655'
-ht-degree: 69%
+source-wordcount: '11657'
+ht-degree: 68%
 
 ---
 
@@ -120,7 +120,7 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
 
 ## Utilisation de vidéo dans Dynamic Media  {#working-with-video-in-dynamic-media}
 
-La vidéo dans Dynamic Media est une solution de bout en bout qui facilite la publication de vidéos adaptatives de haute qualité pour la diffusion en continu sur plusieurs écrans, y compris les ordinateurs de bureau, iOS, Android™, Blackberry et les appareils mobiles Windows. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, tels que 400 Kbit/s, 800 Kbit/s et 1 000 Kbit/s. L’ordinateur de bureau ou l’appareil mobile détecte la bande passante disponible.
+La vidéo dans Dynamic Media est une solution de bout en bout qui facilite la publication de vidéos adaptatives de haute qualité pour la diffusion en continu sur plusieurs écrans, y compris les ordinateurs de bureau, iOS, Android™, BlackBerry® et les appareils mobiles Windows. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, tels que 400 Kbit/s, 800 Kbit/s et 1 000 Kbit/s. L’ordinateur de bureau ou l’appareil mobile détecte la bande passante disponible.
 
 Par exemple, sur un appareil mobile iOS, il détecte une bande passante telle que 3G, 4G ou une connexion Wi-Fi, puis sélectionne automatiquement la vidéo codée selon le débit correspondant parmi ceux disponibles dans la visionneuse de vidéos adaptative. La vidéo est diffusée en continu sur les postes de travail, les appareils mobiles ou les tablettes.
 
@@ -145,11 +145,11 @@ Pour la gestion des visionneuses de vidéos adaptative et unique, les fonctions 
 
 * Sous-titrage des vidéos dans toutes les visionneuses de vidéo HTML5.
 * Organiser, parcourir et effectuer des recherches dans la vidéo avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
-* Diffusez des visionneuses de vidéos adaptatives sur le web et sur les ordinateurs de bureau et les appareils mobiles, y compris l’iPhone, l’iPad, Android, Blackberry et le téléphone Windows.
+* Diffusez des visionneuses de vidéos adaptatives sur le web et sur les ordinateurs de bureau et les appareils mobiles, y compris l’iPhone, l’iPad, Android™, BlackBerry® et le téléphone Windows.
 
 La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=fr#vidéo).
 
-Dynamic Media prend en charge la lecture vidéo pour mobiles au format vidéo MP4 H.264. Les appareils Blackberry qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Formats vidéo pris en charge sur Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media prend en charge la lecture vidéo mobile pour la vidéo MP4 H.264. Vous trouverez les appareils BlackBerry® qui prennent en charge ce format vidéo à l’adresse suivante : [Formats vidéo pris en charge sur BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Vous trouverez les périphériques Windows qui prennent en charge ce format vidéo à l’adresse suivante : [Codecs multimédias pris en charge pour Windows Phone 8](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))
 
@@ -239,17 +239,17 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android 6 ou version antérieure)</td>
+   <td>Chrome (Android™ 6 ou version antérieure)</td>
    <td>Téléchargement progressif.</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android 7 ou version ultérieure)</td>
+   <td>Chrome (Android™ 7 ou version ultérieure)</td>
    <td>HLS</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Android (navigateur par défaut)</td>
+   <td>Android™ (navigateur par défaut)</td>
    <td>Téléchargement progressif.</td>
   </tr>
   <tr>
@@ -264,7 +264,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Blackberry</td>
+   <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
  </tbody>
@@ -602,7 +602,7 @@ Après avoir activé l’agent de réplication de publication YouTube, si vous s
 1. Sur la page Créer une configuration YouTube, sous Paramètres de plateforme Google Cloud, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
 
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment configuré les paramètres de Google Cloud.
-Laissez la boîte de dialogue Créer une configuration YouTube ouverte, car vous y reviendrez dans quelques instants.
+Laissez la page Créer une configuration YouTube ouverte ; dans un instant, vous allez y revenir.
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -1039,7 +1039,7 @@ Utilisez le [Guide de référence des visionneuses Dynamic Media Adobe](https://
 
 1. Créez le composant TrackingManager en effectuant les opérations suivantes :
 
-   * Après avoir appelé `s7sdk.Util.init();`, créez une instance TrackingManager pour suivre les événements en ajoutant le code suivant :
+   * Après avoir appelé `s7sdk.Util.init();`, créez une instance TrackingManager pour effectuer le suivi des événements en ajoutant ce qui suit :
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1212,7 +1212,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
 
 Une miniature vidéo est une version en taille réduite d’une image vidéo ou d’une ressource d’image présentant la vidéo au client. La miniature permet d’encourager un client à cliquer sur la vidéo.
 
-Toutes les vidéos en Experience Manager doivent être associées à une miniature ; vous ne pouvez pas supprimer une miniature sans la remplacer. Par défaut, lorsque vous téléchargez une vidéo vers Experience Manager, la première image est utilisée comme miniature. Cependant, vous pouvez personnaliser la miniature à des fins de valorisation de marque ou de recherche visuelle, par exemple. Lorsque vous personnalisez une miniature vidéo, vous pouvez soit lire la vidéo et effectuer une pause sur l’image que vous souhaitez utiliser, soit sélectionner une ressource d’image déjà téléchargée et *publiée* dans votre gestionnaire de ressources numériques.
+Toutes les vidéos en Experience Manager doivent être associées à une miniature ; vous ne pouvez pas supprimer une miniature sans la remplacer. Par défaut, lorsque vous téléchargez une vidéo vers Experience Manager, la première image est utilisée comme miniature. Cependant, vous pouvez personnaliser la miniature à des fins de valorisation de marque ou de recherche visuelle, par exemple. Lorsque vous personnalisez une miniature vidéo, vous pouvez lire la vidéo et la suspendre sur l’image que vous souhaitez utiliser. Vous pouvez également sélectionner une ressource image que vous avez déjà chargée et *publiée* dans votre gestionnaire de ressources numériques.
 
 Une miniature vidéo personnalisée que vous sélectionnez dans une vidéo n’est pas extraite et enregistrée dans la gestion des ressources numériques en tant que ressource distincte et distincte. Toutefois, une miniature vidéo personnalisée que vous sélectionnez dans une ressource d’image existante est enregistrée dans le JCR. Le chemin d’accès de la ressource sélectionnée est stocké sous le nœud de la ressource vidéo, comme dans l’exemple suivant :
 
