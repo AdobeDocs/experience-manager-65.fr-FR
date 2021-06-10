@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 7d3c8d9266bdec3f75211cfa0636217fd8b054ca
+source-git-commit: 2e01bb0b16728a8073e5de47deb88de69486d408
 workflow-type: tm+mt
-source-wordcount: '3874'
+source-wordcount: '3877'
 ht-degree: 5%
 
 ---
@@ -38,7 +38,7 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
 * Prise en charge d’un nouvel utilisateur pour actualiser le jeton d’accès à l’aide d’un jeton d’actualisation pour le service de configuration des emails.
 
-* Prise en charge du mécanisme [!DNL SMTP XOAUTH2] pour le service de configuration des emails.
+* [Prise en charge du mécanisme SMTP XOAUTH2](/help/sites-administering/notification.md#setting-up-oauth)  pour le service de configuration des emails.
 
 * Prise en charge des versions 4.2 et 4.4 de [!DNL MongoDB].
 
