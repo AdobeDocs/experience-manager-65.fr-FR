@@ -4,10 +4,10 @@ description: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
+source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
 workflow-type: tm+mt
-source-wordcount: '3727'
-ht-degree: 6%
+source-wordcount: '3726'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Cet article met en évidence les fonctionnalités incluses dans le dernier Servi
 >
 >À partir du Service Pack 9 d’AEM, les clients [!DNL Experience Manager] peuvent développer et exploiter leurs applications [!DNL Experience Manager] avec des distributions des [!DNL Azul Zulu] versions d’OpenJDK, conformes aux normes de Java SE.
 >La prise en charge des JDK [!DNL Azul Zulu] est également fournie par Adobe aux clients [!DNL Experience Manager].
->Vous pouvez télécharger les versions appropriées de [!DNL Azul Zulu JDKs] à partir de [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>Vous pouvez télécharger les versions appropriées des JDK [!DNL Azul Zulu] à partir de [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 >Les droits d’utilisation de la technologie Java d’Oracle, tels qu’ils sont distribués par Adobe, expireront d’ici la fin décembre 2022. [!DNL Experience Manager] Nous vous recommandons de planifier et de mettre en oeuvre l’utilisation des  [!DNL Azul Zulu] JDK au plus tard à cette date. Pour plus d’informations sur l’utilisation de la technologie [!DNL Oracle Java] et de la technologie [!DNL Azul Zulu], consultez la [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) associée.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
@@ -244,7 +244,7 @@ La prise en charge des images 3D dans [!DNL Dynamic Media] permet aux clients de
 
 Le canal d’autorisation entre [!DNL Experience Manager Assets] et [!DNL Brand Portal] a été modifié. Auparavant, [!DNL Brand Portal] était configuré dans l’interface utilisateur classique via la passerelle OAuth héritée, qui utilise l’échange de jetons JWT pour obtenir un jeton d’accès IMS en vue de l’autorisation. [!DNL Experience Manager Assets] est maintenant configuré avec  [!DNL Brand Portal] par  [!DNL Adobe I/O], qui fournit un jeton IMS pour autoriser votre  [!DNL Brand Portal] client.
 
-Les étapes de configuration de [!DNL Experience Manager Assets] avec [!DNL Brand Portal] sont différentes selon votre version [!DNL Experience Manager] et selon que vous effectuez une configuration pour la première fois ou une mise à niveau des configurations existantes. Pour plus d’informations, voir [Configuration de ressources Experience Manager avec Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) .
+Les étapes de configuration de [!DNL Experience Manager Assets] avec [!DNL Brand Portal] sont différentes selon votre version [!DNL Experience Manager] et selon que vous effectuez une configuration pour la première fois ou une mise à niveau des configurations existantes. Pour plus d’informations, voir [Configuration de ressources Experience Manager avec Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) .
 
 #### Améliorations de l’accessibilité (6.5.4.0) {#accessibility-enhancements-6540}
 
