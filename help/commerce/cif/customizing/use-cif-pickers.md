@@ -7,9 +7,9 @@ version: cloud-service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: d84993e704096eabe85c4d4d61e24096d15ae9bd
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,9 @@ Le champ de sélecteur de produits prend en charge les propriétés facultatives
 
 En outre, les propriétés de champ de boîte de dialogue standard telles que `name`, `fieldLabel` ou `fieldDescription` sont également prises en charge.
 
-Le composant `cifproductfield` nécessite la bibliothèque cliente cif.shell.picker. Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété extraClientlibs .
+>[!CAUTION]
+>
+>Le composant `cifproductfield` nécessite la bibliothèque cliente `cif.shell.picker`. Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété extraClientlibs .
 
 Vous trouverez un exemple complet de `cifproductfield` dans le projet [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Voir aussi [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) de la documentation sur les composants principaux d’AEM.
 
@@ -68,6 +70,8 @@ Le champ de sélecteur de catégorie prend en charge les propriétés facultativ
 
 En outre, les propriétés de champ de boîte de dialogue standard telles que `name`, `fieldLabel` ou `fieldDescription` sont également prises en charge.
 
-Comme le composant `cifproductfield` , le composant `cifcategoryfield` nécessite également la bibliothèque clif cif.shell.picker . Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs` . Voir [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) de la documentation sur les composants principaux d’AEM.
+>[!CAUTION]
+>
+>Comme le composant `cifproductfield` , le composant `cifcategoryfield` nécessite également la bibliothèque cliente `cif.shell.picker`. Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs` . Voir [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) de la documentation sur les composants principaux d’AEM.
 
 Vous trouverez un exemple complet de `cifcategoryfield` dans le projet [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml).
