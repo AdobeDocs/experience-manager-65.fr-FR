@@ -11,10 +11,10 @@ docset: aem65
 feature: Images interactives
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 3110c1d4424179dbc9eda9e07cf3353c4b4bb4b0
 workflow-type: tm+mt
-source-wordcount: '4327'
-ht-degree: 71%
+source-wordcount: '4291'
+ht-degree: 68%
 
 ---
 
@@ -28,7 +28,7 @@ Voici une bannière publicitaire avec une fenêtre contextuelle d’aperçu rapi
 
 Voir les images interactives en action sur la page web ci-dessus en visitant la page :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
 ## Découvrir comment les bannières d’images interactives sont créées {#watch-how-interactive-image-banners-are-created}
 
@@ -40,7 +40,7 @@ La description suivante du workflow étape par étape est conçue pour vous aide
 
 Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur l’exemple de page web suivant qui ne contient pas encore d’images interactives :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 Le tutoriel permet d’illustrer les étapes d’intégration d’images interactives à votre site web.
 
@@ -162,7 +162,7 @@ Consultez les exemples suivants d’URL d’aperçu rapide et les variables de z
 
 Vous pouvez appliquer la même approche utilisée dans les trois exemples ci-dessus à la page web de démonstration:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 La page web de démonstration présente plusieurs vignettes de produit, chacune d’entre elles disposant d’un bouton d’aperçu rapide libellé « Plus ». À l’aide de l’outil de débogage de votre navigateur web toujours activé, cliquez sur chaque bouton et notez les URL d’aperçu rapide enregistrées. Une fois que vous avez activé l’aperçu rapide des quatre produits disponibles sur la page, vous obtenez la liste suivante de demandes d’aperçu rapide exécutées en arrière-plan :
 
@@ -356,7 +356,7 @@ Le code intégré copié est défini pour un environnement réactif afin qu’il
 
 En vous servant du site web de démonstration comme exemple, procédez comme suit :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 Notez que l’image des trois hommes est une balise `IMG` statique :
 
@@ -366,7 +366,7 @@ Notez que l’image des trois hommes est une balise `IMG` statique :
 
 L’intégration est aussi simple que de supprimer la balise `IMG` et de la remplacer par le code intégré copié à partir des ressources du Experience Manager. Vous pouvez voir le résultat dans l’URL suivante qui affiche l’image interactive Shoppable sur la page avec trois zones réactives en cercle :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 À ce stade, les zones réactives de l’image interactive Shoppable du site web de démonstration sont en mode affichage uniquement ; elles ne sont pas encore intégrées aux aperçus rapides existants.
@@ -513,7 +513,7 @@ Voici le code source complet :
 
 Le dernier site web de démonstration avec l’image interactive totalement intégrée se présente comme suit :
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
 ## Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
 
