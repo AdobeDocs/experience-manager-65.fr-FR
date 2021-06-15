@@ -11,7 +11,7 @@ docset: aem65
 feature: Vidéo 360 VR
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 80%
@@ -82,8 +82,8 @@ Par défaut, Experience Manager détecte la vidéo comme &quot;360&quot; si son 
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Type de propriété** : Double
-   * **Valeur** : rapport d’aspect, 2.0 par défaut.
+   * **Type de propriété**  - Double
+   * **Valeur**  : rapport d’aspect à virgule flottante, 2.0 par défaut.
 
 Une fois cette propriété définie, elle prend effet immédiatement sur les vidéos existantes et les vidéos récemment téléchargées.
 
