@@ -10,10 +10,10 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Gestion des ressources
 role: Business Practitioner, Administrator
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1448'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -81,10 +81,10 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
 Il est recommandé de commencer par le paramètre rayon du masquage flou. Vous trouverez ci-dessous les paramètres rayon avec lesquels vous pouvez commencer :
 
-* **[!UICONTROL Site web]** : 0,2 à 0,3 pixel
-* **[!UICONTROL Impression photographique (250 à 300 ppp)]** : 0,3 à 0,5 pixel
-* **[!UICONTROL Impression offset (266 à 300 ppp)]** : 0,7 à 1,0 pixel
-* **[!UICONTROL Impression sur toile (150 ppp)]** : 1,5 à 2,0 pixels
+* **[!UICONTROL Site web]**  : 0,2 à 0,3 pixel
+* **[!UICONTROL Impression photographique (250 à 300 ppp)]**  - 0,3 à 0,5 pixel
+* **[!UICONTROL Impression offset (266 à 300 ppp)]**  - 0,7 à 1,0 pixel
+* **[!UICONTROL Impression sur toile (150 ppp)]**  - 1,5 à 2,0 pixels
 
 Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne correspond toujours pas à vos attentes, augmentez le rayon d’un point décimal et raugmentez la valeur de 1,75 à 4. Répétez l’opération si nécessaire.
 
