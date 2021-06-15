@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 feature: Workflow,Gestion des ressources,Rendus
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 89%
+source-wordcount: '1379'
+ht-degree: 70%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 89%
 
 Un profil est une recette indiquant les options à appliquer aux ressources qui sont chargées dans un dossier. Par exemple, vous pouvez spécifier le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez, ou le profil d’image à appliquer aux ressources image afin de les recadrer correctement.
 
-Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent des images ou la mise en place de profils de codage vidéo. AEM vous permet de créer trois types de profils, qui sont abordés en détail sous les liens suivants :
+Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent des images ou la mise en place de profils de codage vidéo. Dans Adobe Experience Manager, vous pouvez créer trois types de profils, qui sont abordés en détail à l’aide des liens suivants :
 
 * [Profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles)
 * [Profils d’image](/help/assets/image-profiles.md)
@@ -32,8 +32,8 @@ Vous devez disposer de droits d’administrateur pour créer, modifier et suppri
 
 Une fois votre profil vidéo, de métadonnées ou d’image créé, vous pouvez l’affecter à un ou plusieurs dossiers utilisés comme destination des ressources qui viennent d’être chargées.
 
-Un élément à connaître lorsque l’on utilise les profils dans AEM Assets est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils.
-Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous pouvez tirer pleinement parti de votre collection de ressources numériques et vous assurer que les bons fichiers sont traités par le profil adéquat.
+Un concept important concernant l’utilisation des profils dans les ressources Experience Manager est qu’ils sont affectés à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Par conséquent, la manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers dans ces dossiers a un impact significatif sur la manière dont ces ressources sont traitées par un profil.
+En appliquant des stratégies d’attribution de noms de fichiers et de dossiers cohérentes et appropriées, ainsi que de bonnes pratiques de métadonnées, vous tirez pleinement parti de votre collecte de ressources numériques et assurez-vous que les fichiers appropriés sont traités par le profil approprié.
 
 >[!NOTE]
 >
@@ -45,28 +45,29 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 
 >[!NOTE]
 >
->S’applique à *Dynamic Media - mode Scene7* uniquement dans AEM version 6.4.6.0 ou ultérieure.
+>S’applique à *Dynamic Media - mode Scene7* uniquement dans Experience Manager 6.4.6.0 ou version ultérieure.
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de traitement existant que vous avez modifié ultérieurement.
 
 Supposons que vous ayez créé un profil Image et que vous l’ayez affecté à un dossier. Le profil Image a été automatiquement appliqué aux ressources d’image que vous avez chargées dans le dossier. Cependant, vous décidez par la suite d’ajouter un nouveau rapport de recadrage intelligent au profil. Désormais, au lieu de devoir sélectionner et charger à nouveau les ressources dans le dossier, il vous suffit d’exécuter le workflow *Scene7 : Retraiter les ressources*.
 
-Vous pouvez exécuter le workflow de retraitement sur une ressource pour laquelle le traitement a échoué la première fois. Ainsi, même si vous n’avez ni modifié ni appliqué un profil de traitement, vous pouvez toujours exécuter, à tout moment, le workflow de retraitement sur un dossier de ressources.
+Vous pouvez exécuter le workflow de retraitement sur une ressource pour laquelle le traitement a échoué la première fois. Ainsi, même si vous n’avez ni modifié ni appliqué un profil de traitement, vous pouvez toujours exécuter le workflow de retraitement sur un dossier de ressources à tout moment.
 
-Vous pouvez, au besoin, régler la taille de lot du workflow de retraitement sur une valeur comprise entre 50 (valeur par défaut) et 1 000 ressources. Lorsque vous exécutez le workflow _Scene7 : Retraiter les ressources_ sur un dossier, les ressources sont regroupées par lots, puis envoyées au serveur Dynamic Media en vue du traitement. Après le traitement, les métadonnées de chaque ressource de l’ensemble du jeu de lots sont mises à jour dans AEM. Si la taille du lot est très importante, le traitement peut être retardé. Si le lot est trop petit, cela peut entraîner un trop grand nombre d’allers-retours avec le serveur Dynamic Media.
+Vous pouvez, au besoin, régler la taille de lot du workflow de retraitement sur une valeur comprise entre 50 (valeur par défaut) et 1 000 ressources. Lorsque vous exécutez le workflow _Scene7 : Retraiter les ressources_ sur un dossier, les ressources sont regroupées par lots, puis envoyées au serveur Dynamic Media en vue du traitement. Après le traitement, les métadonnées de chaque ressource de l’ensemble du jeu de lots sont mises à jour sur Experience Manager. Si la taille du lot est importante, le traitement peut être retardé. Si le lot est trop petit, cela peut entraîner un trop grand nombre d’allers-retours avec le serveur Dynamic Media.
 
 Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load).
 
 >[!NOTE]
 >
->Si vous effectuez une migration groupée des ressources de Dynamic Media Classic vers AEM, vous devez activer l’agent de réplication Migration sur le serveur Dynamic Media. Une fois la migration terminée, veillez à désactiver l’agent.
+>Si vous effectuez une migration groupée des ressources de Dynamic Media Classic vers Experience Manager, vous devez activer l’agent de réplication Migration sur le serveur Dynamic Media. Une fois la migration terminée, veillez à désactiver l’agent.
 >
 >L’agent de publication Migration doit être désactivé sur le serveur Dynamic Media afin que le workflow de retraitement fonctionne comme prévu.
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
-**Pour retraiter des ressources dans un dossier, procédez comme suit** :
-1. Dans AEM, à partir de la page Assets, accédez à un dossier de ressources auquel un profil de traitement est affecté et pour lequel vous souhaitez appliquer le workflow **Scene7 : Retraiter les ressources**.
+**Pour retraiter des ressources dans un dossier :**
+
+1. Dans Experience Manager, à partir de la page Ressources, accédez à un dossier de ressources auquel un profil de traitement est affecté et pour lequel vous souhaitez appliquer le **[!UICONTROL Scene7 : Workflow Retraiter la ressource]**,
 
    Dans le cas des dossiers auxquels un profil de traitement est déjà affecté, le nom du profil est affiché directement sous celui du dossier en mode Carte.
 
@@ -89,11 +90,11 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 1. Cliquez sur **[!UICONTROL Début]**, puis sur **[!UICONTROL Confirmer]**.
 
-   Pour surveiller le workflow ou vérifier sa progression, dans la page de console principale d’AEM, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]**. Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, cliquez sur **[!UICONTROL Ouvrir l’historique]**. Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
+   Pour surveiller le workflow ou vérifier sa progression, dans la page de console principale du Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]**. Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, cliquez sur **[!UICONTROL Ouvrir l’historique]**. Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
 
 ### Réglage de la taille du lot du workflow de retraitement {#adjusting-load}
 
-(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. Par conséquent, la bannière de traitement reste plus longtemps sur AEM Assets. Cependant, si la taille de fichier moyenne est inférieure ou égale à 1 Mo, Adobe recommande de définir cette valeur sur plusieurs centaines de Mo, mais de ne jamais dépasser 1 000 Mo. Si la taille de fichier moyenne est élevée (de l’ordre de quelques centaines de Mo), Adobe recommande de réduire la taille du lot jusqu’à 10.
+(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. La bannière de traitement reste donc plus longtemps sur Experience Manager Assets. Cependant, si la taille de fichier moyenne est faible (1 Mo ou moins), Adobe vous recommande d’augmenter la valeur à plusieurs 100, mais jamais plus de 1 000. Si la taille de fichier moyenne est importante (par exemple, des centaines de mégaoctets), Adobe vous recommande de réduire la taille du lot jusqu’à 10.
 
 **Pour régler éventuellement la taille du lot du workflow de retraitement, procédez comme suit :**
 
@@ -108,7 +109,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
    ![Composant Transfert par lots Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 – Propriétés des étapes]**, définissez les éléments suivants :
+1. Dans la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 - Propriétés des étapes]**, définissez les éléments suivants :
    * Dans les zones de texte **[!UICONTROL Titre]** et **[!UICONTROL Description]**, saisissez un titre et une description pour la tâche, le cas échéant.
    * Sélectionnez **[!UICONTROL Avance du gestionnaire]** si votre gestionnaire doit passer à l’étape suivante.
    * Dans le champ **[!UICONTROL Délai d’expiration]**, saisissez le délai d’expiration du processus externe (en secondes).
@@ -143,5 +144,5 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
