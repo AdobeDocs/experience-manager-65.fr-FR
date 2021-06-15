@@ -11,10 +11,10 @@ docset: aem65
 feature: Bannières de carrousel
 role: Business Practitioner, Administrator
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '4734'
-ht-degree: 72%
+source-wordcount: '4740'
+ht-degree: 71%
 
 ---
 
@@ -24,7 +24,7 @@ Les bannières de carrousel permettent aux spécialistes du marketing de suscite
 
 La création et la modification du contenu présenté sur les bannières publicitaires peuvent prendre beaucoup de temps et réduire votre capacité à publier rapidement du contenu nouveau ou plus ciblé. Les bannières de carrousel vous permettent de créer ou de modifier rapidement des bannières rotatives. Vous pouvez ajouter de l’interactivité, par exemple des zones réactives, liées au détail d’un produit ou à des ressources connexes, et les diffuser sur n’importe quel écran, ce qui vous permet d’apporter plus rapidement du nouveau contenu promotionnel au marché.
 
-Les bannières de carrousel sont signalées par une bannière contenant le mot **[!UICONTROL CAROUSELSET]** :
+Les bannières de carrousel sont désignées par une bannière comportant le mot **[!UICONTROL CAROUSELSET]**
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -48,7 +48,7 @@ Suivez la [procédure détaillée pour créer des bannières de carrousel ](http
 
 ## Démarrage rapide : bannières de carrousel {#quick-start-carousel-banners}
 
-Pour démarrer rapidement :
+Pour vous familiariser rapidement avec les bannières de carrousel :
 
 1. [Identifiez les variables de zone réactive et de zone cliquable](#identifying-hotspot-and-image-map-variables) (seulement pour les clients qui utilisent  Experience Manager Assets et Dynamic Media).
 
@@ -56,7 +56,7 @@ Pour démarrer rapidement :
 
    >[!NOTE]
    >
-   >Si vous êtes un client de sites ou d’e-commerce Experience Manager, vous pouvez utiliser la fonction intégrée pour accéder aux pages de produits et rechercher les SKU existants dans le catalogue de produits. Vous n’avez pas besoin d’entrer manuellement les variables de zone réactive ou de zone cliquable. Reportez-vous aux informations sur la [configuration d’eCommerce](/help/commerce/cif-classic/administering/generic.md).
+   >Si vous êtes un client de sites ou d’e-commerce Experience Manager, vous pouvez utiliser la fonction intégrée pour accéder aux pages de produits et rechercher les SKU existants (unité de gestion des stocks) dans le catalogue de produits. Vous n’avez pas besoin d’entrer manuellement les variables de zone réactive ou de zone cliquable. Reportez-vous aux informations sur la [configuration d’eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Si vous êtes client Experience Manager Assets et Dynamic Media, vous devez saisir manuellement les données des zones réactives et des zones cliquables, puis intégrer l’URL ou le code intégré publié à votre système de gestion de contenu tiers.
