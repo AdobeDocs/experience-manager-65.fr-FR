@@ -9,10 +9,10 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Gestion des ressources,Rendus
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1917'
-ht-degree: 65%
+ht-degree: 64%
 
 ---
 
@@ -220,7 +220,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
 1. L’assistance clientèle d’Adobe vous ajoute à la liste d’attente des clients de l’imagerie dynamique en fonction de l’ordre dans lequel les demandes ont été envoyées.
 1. Lorsque Adobe est prêt à traiter votre demande, contactez vos contacts pour coordonner et définir une date cible.
-1. **Facultatif** : Vous avez la possibilité de tester l’imagerie dynamique dans le cadre de l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
+1. **Facultatif**  : vous pouvez éventuellement tester l’imagerie dynamique dans l’évaluation avant qu’Adobe ne mette la nouvelle fonctionnalité en production.
 1. Une fois la procédure achevée, vous en serez informé par l’équipe d’Assistance clientèle.
 1. Pour tirer pleinement parti des améliorations de performances de l’imagerie dynamique, Adobe recommande de définir le délai d’expiration (TTL) sur 24 heures ou plus. Ce paramètre définit la période pendant laquelle les ressources sont mises en cache par le réseau de diffusion de contenu. Pour modifier ce paramètre :
 
