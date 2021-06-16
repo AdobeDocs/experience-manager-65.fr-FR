@@ -4,7 +4,7 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f62c675af34a4b11cc152eafb7bc561f8b6890a9
+source-git-commit: 0ed031e8be43633caf6d9916542b6650e3dfd327
 workflow-type: tm+mt
 source-wordcount: '3857'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 | Version | 6.5.9.0 |
 | Type | Version du Service Pack |
 | Date | 27 mai 2021 |
-| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip) |
+| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip) |
 
 ## Éléments inclus dans [!DNL Adobe Experience Manager] 6.5.9.0 {#what-s-included-in-aem}
 
@@ -384,7 +384,7 @@ Pour installer le Service Pack sur une instance [!DNL Adobe Experience Manager] 
 
 1. Avant l’installation, prenez un instantané ou une nouvelle sauvegarde de votre instance [!DNL Experience Manager].
 
-1. Téléchargez le Service Pack à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip).
+1. Téléchargez le Service Pack à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip).
 
 1. Ouvrez Package Manager et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package. Pour en savoir plus, voir [Gestionnaire de modules](/help/sites-administering/package-manager.md).
 
