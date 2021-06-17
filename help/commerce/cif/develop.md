@@ -6,7 +6,7 @@ feature: Commerce Integration Framework
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 37%
@@ -47,7 +47,7 @@ Les logiciels suivants doivent être installés localement :
 
 ### Accès au module complémentaire CIF
 
-Le module complémentaire CIF peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), recherchez le module complémentaire AEM Commerce.
+Le module complémentaire CIF peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), recherchez &quot;AEM module complémentaire Commerce&quot;.
 
 >[!TIP]
 >
