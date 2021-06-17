@@ -12,7 +12,7 @@ discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Administrator
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 2%
@@ -184,28 +184,28 @@ La version bêta comprend deux règles de notation avancées pour la [fonction d
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule
+   ```
 
 1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   ```
 
 **Remarques:**
 
 * Les noeuds `rules` et `sub-rules` sont tous deux de type `cq:Page`.
-
-* `subRules` est un attribut de type [] Chaîne sur le  `jcr:content` noeud de la règle.
-
+* `subRules` est un attribut de type `[]` Chaîne sur le  `jcr:content` noeud de la règle.
 * `sub-rules` peut être partagée entre différentes règles de notation.
-
 * `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
-
 * Les noms des règles doivent être uniques, quel que soit leur emplacement.
 
 ### Règles de badge incluses {#included-badging-rules}
