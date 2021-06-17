@@ -12,9 +12,9 @@ discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '647'
 ht-degree: 73%
 
 ---
@@ -52,7 +52,7 @@ Vous pouvez utiliser les méthodes suivantes pour activer la journalisation côt
 
 ### Activation de la journalisation à l’aide du paramètre de requête {#enabling-logging-using-request-parameter}
 
-Grâce à cette méthode, vous pouvez générer les journaux d’une requête particulière. Le nom du paramètre de requête est `log. L&#39;URL du journal est la suivante :
+Grâce à cette méthode, vous pouvez générer les journaux d’une requête particulière. Le nom du paramètre de requête est `log`. L&#39;URL du journal est la suivante :
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -94,7 +94,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
    <td>DÉSACTIVÉ<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>3</td>
+   <td>1</td>
    <td>FATAL<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -102,7 +102,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
    <td>ERROR<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>3</td>
+   <td>1</td>
    <td>WARN<br type="_moz" /> </td>
   </tr>
   <tr>
