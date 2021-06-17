@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 77%
 
 ---
@@ -103,7 +103,7 @@ Après avoir arrêté WebLogic Server, vous pouvez fermer l’invite de commande
 >cette tâche ne peut être effectuée qu’après avoir créé un domaine WebLogic et un serveur géré.
 
 1. Assurez-vous que WebLogic Server et Node Manager sont en cours d’exécution.
-1. Démarrez WebLogic Server Administration Console en saisissant `https://host name]:[port]`/console dans la ligne d’adresse d’un navigateur Web.
+1. Démarrez WebLogic Server Administration Console en saisissant `https://host name]:[port]/console` dans la ligne d’adresse d’un navigateur Web.
 1. Sous Domain Structure, cliquez sur Environment > Servers.
 1. Dans le volet de droite, cliquez sur l’onglet Configuration.
 1. Sélectionnez le serveur géré que vous souhaitez démarrer.
