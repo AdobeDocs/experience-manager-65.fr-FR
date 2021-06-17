@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration, mode hybride
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 38%
@@ -563,8 +563,7 @@ Vérifiez que le module de paramètres prédéfinis d’analyses vidéo du premi
 
    * **Vérifiez les paramètres prédéfinis d’analyses vidéo au moyen du JCR** Pour vérifier les paramètres prédéfinis d’analyses vidéo au moyen du JCR, vous devez disposer d’un accès à CRXDE Lite.
 
-      Experience Manager : dans CRXDE Lite, accédez à `/conf/global/settings/
-dam/dm/presets/analytics/jcr:content/userdata`
+      Experience Manager : dans CRXDE Lite, accédez à `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
       Comme dans `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
