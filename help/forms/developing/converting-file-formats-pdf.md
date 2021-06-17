@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '7912'
+source-wordcount: '7911'
 ht-degree: 4%
 
 ---
@@ -850,7 +850,7 @@ Si vous créez un script pour une application native qui n’était pas prise en
 
 >[!NOTE]
 >
->Dans ce contexte, le terme &quot;supplémentaire&quot; désigne le contenu du fichier `appmon.[applicationname].addition.[locale]`.xml. Ce fichier spécifie les valeurs de remplacement et les ajouts au fichier XML de la boîte de dialogue.
+>Dans ce contexte, le terme &quot;supplémentaire&quot; désigne le contenu du fichier `appmon.[applicationname].addition.[locale].xml`. Ce fichier spécifie les valeurs de remplacement et les ajouts au fichier XML de la boîte de dialogue.
 
 Vous pouvez également modifier le fichier XML de boîte de dialogue supplémentaire pour une application native à ces fins :
 
