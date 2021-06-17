@@ -13,10 +13,10 @@ docset: aem65
 feature: Fragments de contenu
 role: Business Practitioner, Administrator
 exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '543'
+ht-degree: 97%
 
 ---
 
@@ -174,7 +174,7 @@ Vous pouvez mettre du texte en gras comme suit :
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Pour désigner une plage de code, entourez-la de guillemets obliques (`). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
+Pour indiquer une plage de code, entourez-la de guillemets antiretour (&amp;grave;). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
 
 Par exemple :
 
