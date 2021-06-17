@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
-source-git-commit: cd895fcab5adce600ce230fb6867392e45963c16
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '254'
 ht-degree: 30%
 
 ---
@@ -29,7 +29,7 @@ Vous pouvez afficher le [filtre de disposition du contenu Apache Sling dans GitH
 
 Les options Filtre de disposition du contenu offrent les fonctionnalités suivantes :
 
-* **Chemins de disposition du contenu :** liste des chemins où le filtre sera appliqué, suivie d’une liste de types MIME à exclure sur ce chemin. Ce chemin doit être un chemin absolu et peut contenir un caractère générique (`*`) à la fin, afin de faire correspondre chaque chemin de ressource avec le préfixe de chemin donné. Par exemple : `/content/*:image/jpeg,image/svg+xml` appliquera le filtre à chaque noeud dans `/content ? à l’exception des images jpg et svg
+* **Chemins de disposition du contenu :** liste des chemins où le filtre sera appliqué, suivie d’une liste de types MIME à exclure sur ce chemin. Ce chemin doit être un chemin absolu et peut contenir un caractère générique (`*`) à la fin, afin de faire correspondre chaque chemin de ressource avec le préfixe de chemin donné. Par exemple : `/content/*:image/jpeg,image/svg+xml` appliquera le filtre à chaque noeud dans `/content?` à l’exception des images jpg et svg
 
 * **Chemins de ressources exclus :** une liste de ressources exclues, chaque chemin de ressource doit être indiqué en tant que chemin absolu et complet. La correspondance des préfixes et les caractères génériques ne sont pas pris en charge.
 
