@@ -3,9 +3,9 @@ title: Configuration des modules externes d’éditeur de texte enrichi
 description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi Adobe Experience Manager pour activer des fonctionnalités individuelles.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4395'
 ht-degree: 95%
 
 ---
@@ -338,7 +338,7 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 1. Créez un nœud sous le nœud styles. Consultez [spécification d’un nouveau style](#stylesindropdown).
    * Nom (name) : `jpn-word-wrap`
-   * Type : `nt:unstructure
+   * Type : `nt:unstructure`
 
 1. Ajoutez la propriété `cssName` au nœud pour référencer la classe CSS. Ce nom de classe est un nom réservé pour la fonction de retour automatique à la ligne du japonais.
    * Nom : `cssName`
