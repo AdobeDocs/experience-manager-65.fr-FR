@@ -4,7 +4,7 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 0ed031e8be43633caf6d9916542b6650e3dfd327
+source-git-commit: 101cbd0d06d370da315e1579a8c2f274a6138b9a
 workflow-type: tm+mt
 source-wordcount: '3857'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | Version | 6.5.9.0 |
 | Type | Version du Service Pack |
-| Date | 27 mai 2021 |
+| Date  | 27 mai 2021 |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip) |
 
 ## Éléments inclus dans [!DNL Adobe Experience Manager] 6.5.9.0 {#what-s-included-in-aem}
@@ -446,7 +446,7 @@ Pour plus d’informations sur l’installation du programme d’installation cu
 
 ### UberJar {#uber-jar}
 
-UberJar pour Experience Manager 6.5.9.0 est disponible dans le [référentiel central Maven](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.9/).
+UberJar pour Experience Manager 6.5.9.0 est disponible dans le [référentiel central Maven](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.9-1.0/).
 
 Pour utiliser UberJar dans un projet Maven, voir [Comment utiliser UberJar](/help/sites-developing/ht-projects-maven.md) et inclure la dépendance suivante dans le POM de votre projet :
 
@@ -454,7 +454,7 @@ Pour utiliser UberJar dans un projet Maven, voir [Comment utiliser UberJar](/hel
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.9</version>
+     <version>6.5.9-1.0</version>
      <scope>provided</scope>
 </dependency>
 ```
