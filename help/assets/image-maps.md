@@ -5,10 +5,10 @@ contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Gestion des ressources
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cfa58bb7dcbe70906071a22fbae4a9f479a31d9
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 13%
+source-wordcount: '268'
+ht-degree: 14%
 
 ---
 
@@ -26,8 +26,6 @@ Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fon
 
    * Dans la vue **[!UICONTROL Carte]** ou **[!UICONTROL Liste]**, sélectionnez la ressource et cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
    * Cliquez sur **[!UICONTROL Modifier]** dans la page de la ressource.
-
-      ![option de modification](assets/do-not-localize/edit_icon.png)
 
 1. Pour insérer une zone cliquable, cliquez sur **[!UICONTROL Zone de lancement]** ![zone cliquable](assets/do-not-localize/image-map-icon.png) dans la barre d’outils.
 1. Sélectionnez la forme de la zone cliquable. La zone réactive de la forme sélectionnée est placée sur la zone.
