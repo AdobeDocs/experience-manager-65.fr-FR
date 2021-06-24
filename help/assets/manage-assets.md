@@ -6,20 +6,20 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gestion des ressources, Recherche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d06e60baac692c92358244944226b77d5dad4022
+source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
 workflow-type: tm+mt
-source-wordcount: '9775'
-ht-degree: 60%
+source-wordcount: '9743'
+ht-degree: 64%
 
 ---
 
-# Gestion de vos ressources numériques {#manage-digital-assets}
+# Gestion des ressources numériques {#manage-digital-assets}
 
 Dans [!DNL Adobe Experience Manager Assets], vous pouvez faire plus que simplement stocker et gérer vos ressources. [!DNL Experience Manager] offre des fonctionnalités de gestion des ressources de niveau entreprise. Vous pouvez modifier et partager des ressources, lancer des recherches avancées, créer plusieurs rendus de dizaines de formats de fichiers pris en charge, gérer des versions et des droits numériques, automatiser le traitement des ressources, gérer et gérer les métadonnées, collaborer à l’aide d’annotations, etc.
 
 Cet article décrit les tâches de base de gestion des ressources, telles que la création ou le chargement ; mises à jour des métadonnées ; copier, déplacer et supprimer ; publier, annuler la publication et rechercher des ressources. Pour comprendre l’interface utilisateur, voir [Prise en main de l’interface utilisateur des ressources](/help/sites-authoring/basic-handling.md). Pour gérer les fragments de contenu, voir [gestion des ressources Fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) .
 
-## Création de dossiers {#creating-folders}
+## Création de dossiers   {#creating-folders}
 
 Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Experience Manager Assets] ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
 
@@ -77,11 +77,9 @@ Vous pouvez configurer la taille au-dessus de laquelle une ressource est consid�
 
 L’option [!UICONTROL Mettre en pause] n’indique pas si un fichier de plus de 1 000 Mo est chargé avec un fichier de moins de 1 000 Mo. Cependant, si vous annulez le chargement d’un fichier de moins de 1 000 Mo, l’option **[!UICONTROL Pause]** s’affiche.
 
-Pour modifier la limite de taille, configurez la propriété `chunkUploadMinFileSize` du noeud `fileupload`dans le référentiel CRX.
+Pour modifier la limite de taille, configurez la propriété `chunkUploadMinFileSize` du noeud `fileupload` dans le référentiel CRX.
 
 Lorsque vous cliquez sur **[!UICONTROL Mettre en pause]**, l’option **[!UICONTROL Lire]** s’affiche. Pour reprendre le chargement, cliquez sur **[!UICONTROL Lire]**.
-
-![Reprendre le chargement de la ressource suspendue](assets/resume-paused-upload.png)
 
 Pour annuler une opération de chargement en cours, cliquez sur le bouton de fermeture (`X`) en regard de la barre de progression. Lorsque vous annulez le chargement, [!DNL Assets] supprime la partie partiellement chargée de la ressource.
 
@@ -238,7 +236,7 @@ Lors du téléchargement de fichiers image, y compris des fichiers AI, EPS et PS
 | | Tolerance | Optional.<br> Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.<br> Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation. |
 -->
 
-#### Définition des options de chargement PostScript et Illustrator {#setting-postscript-and-illustrator-upload-options}
+#### Définition des options de téléchargement PostScript et Illustrator {#setting-postscript-and-illustrator-upload-options}
 
 Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator (AI), vous pouvez les formater de différentes manières. Vous pouvez pixelliser les fichiers, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace colorimétrique. Les options de formatage des fichiers PostScript et Illustrator sont disponibles dans la boîte de dialogue [!UICONTROL Télécharger les options de la tâche] sous [!UICONTROL Options PostScript] et [!UICONTROL Options Illustrator].
 
@@ -253,7 +251,7 @@ Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator 
 |  | Forcer comme CMJN | Applique l’espace colorimétrique CMJN. |
 |  | Forcer comme Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
 
-#### Définition des options de chargement de Photoshop {#setting-photoshop-upload-options}
+#### Définition des options de transfert Photoshop {#setting-photoshop-upload-options}
 
 Les fichiers Photoshop Document (PSD) sont le plus souvent utilisés pour créer des modèles d’image. Lorsque vous chargez un fichier PSD, vous pouvez créer automatiquement un modèle d’image à partir du fichier (sélectionnez l’option [!UICONTROL Créer un modèle] dans l’écran de téléchargement).
 
@@ -300,7 +298,7 @@ Faites votre choix parmi les options suivantes :
 |  | Forcer comme CMJN | Applique l’espace colorimétrique CMJN. |
 |  | Forcer comme Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
 
-#### Définition des options de téléchargement eVideo {#setting-evideo-upload-options}
+#### Définition des options de transfert eVideo {#setting-evideo-upload-options}
 
 Pour transcoder un fichier vidéo en choisissant parmi divers paramètres vidéo prédéfinis.
 
@@ -312,7 +310,7 @@ Pour transcoder un fichier vidéo en choisissant parmi divers paramètres vidéo
 |  | Mobile | Créez un fichier MP4 à diffuser sur des appareils mobiles iPhone ou Android. Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données cible de votre choix. |
 |  | Tablette | Créez un fichier MP4 à diffuser sur des tablettes iPad ou Android. Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données cible de votre choix. |
 
-#### Définir des paramètres prédéfinis d’ensemble par lot lors du chargement {#setting-batch-set-presets-at-upload}
+#### Définition de paramètres prédéfinis d’ensemble par lot au chargement {#setting-batch-set-presets-at-upload}
 
 Si vous souhaitez créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir des images téléchargées, cliquez sur la colonne Principale du paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. 
 
@@ -378,7 +376,7 @@ Pour prévisualiser une ressource à l’aide du clavier, procédez comme suit :
 >* [Affichage des sous-ressources](managing-linked-subassets.md#viewing-subassets).
 
 
-## Modifier les propriétés et les métadonnées {#editing-properties}
+## Modification des propriétés et des métadonnées {#editing-properties}
 
 1. Accédez à l’emplacement de la ressource pour modifier ses métadonnées.
 
@@ -499,7 +497,7 @@ Pour déplacer des ressources ou des dossiers :
 
    Si vous ne mettez pas à jour les références, elles continuent à pointer vers le chemin précédent de la ressource. Si vous adaptez les références, elles sont mises à jour avec le nouveau chemin de la ressource.
 
-### Déplacer des ressources à l’aide de l’opération de glisser-déposer {#move-using-drag}
+### Déplacer des ressources à l’aide de l’opération de glisser {#move-using-drag}
 
 Vous pouvez déplacer des ressources (ou des dossiers) vers un dossier frère en les faisant glisser vers l’emplacement cible, au lieu d’utiliser l’option [!UICONTROL Déplacer] dans l’interface utilisateur. Toutefois, cette opération n’est possible que dans le mode Liste.
 
@@ -541,7 +539,7 @@ Le déplacement de ressources en les faisant glisser n’ouvre pas l’assistant
 
    De même, vous pouvez personnaliser l’image de la page Annotation en recouvrant `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Noeud de sélecteur de rendu de superposition dans CRXDE pour personnaliser l’image de page d’annotation](assets/renditionpicker-node-crxde.png)
+   ![Noeud de sélecteur de rendu de superposition dans CRXDE pour personnaliser l’image de page d’annotation](assets/renditionpicker-node.png)
 
    Pour configurer les dimensions du rendu d’une ressource vidéo, accédez au nœud `videopicker` dans le référentiel CRX à l’emplacement `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, recouvrez le nœud, puis modifiez la propriété adéquate.
 
@@ -567,7 +565,7 @@ Pour supprimer une ressource ou un dossier contenant une ressource :
 
    * Si la ressource ne comporte aucune référence, elle est supprimée.
 
-   * Si la ressource comporte des références, un message d’erreur vous informe qu’**une ou plusieurs ressources sont référencées**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+   * Si la ressource comporte des références, un message d’erreur vous informe qu’**une ou plusieurs ressources sont référencées.** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
    >[!NOTE]
    >
    >* Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. Désactivez également l’option Forcer la suppression à l’aide d’une superposition pour empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
@@ -590,25 +588,25 @@ Après avoir chargé, traité ou modifié vos ressources sur [!DNL Experience Ma
 
 Pour plus d’informations spécifiques à [!DNL Dynamic Media], voir [publication [!DNL Dynamic Media] ressources](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou que vous souhaitez supprimer de l’environnement de publication (annuler la publication).
+1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou que vous souhaitez supprimer dans l’environnement de publication (annuler la publication).
 
 1. Sélectionnez la ressource ou le dossier dont vous souhaitez annuler la publication, puis cliquez sur **[!UICONTROL Gérer la publication]** ![option gérer la publication](assets/do-not-localize/globe-publication.png) dans la barre d’outils. Pour publier rapidement, vous pouvez également sélectionner l’option **[!UICONTROL Publication rapide]** dans la barre d’outils. Si le dossier que vous souhaitez publier comprend un sous-dossier vide, ce dernier n’est pas publié.
 
-1. Sélectionnez l’option **[!UICONTROL Publier]** ou **[!UICONTROL Annuler la publication]** selon les besoins.
+1. Sélectionnez l’option **[!UICONTROL Modifier]** ou **[!UICONTROL Annuler la publication]** selon vos besoins.
 
    ![Action Annuler la publication](assets/unpublish_action.png)
-   *Figure : les options Publier et Annuler la publication et l’option de planification.*
+   *Figure : options Publier et Annuler la publication et option de planification.*
 
-1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou sélectionnez **[!UICONTROL Plus tard]** pour planifier l’action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]** . Cliquez sur **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou sélectionnez **[!UICONTROL Plus tard]** pour planifier l’action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Suivant]**.
 
-1. Lors de la publication, si une ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’assistant. Seules les références qui ne sont pas publiées ou modifiées depuis la dernière publication s’affichent. Sélectionnez les références que vous souhaitez publier.
+1. Lors d’une publication, si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ne sont pas publiées ou modifiées depuis la dernière publication s’affichent. Choisissez les références que vous souhaitez publier.
 
 1. Lors de l’annulation de la publication, si une ressource fait référence à d’autres ressources, sélectionnez les références dont vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Annuler la publication]** pour confirmer que les ressources doivent être dépubliées à la date spécifiée.
 
-Découvrez les limites et conseils suivants liés à la publication ou à l’annulation de la publication de ressources ou de dossiers :
+Gardez à l’esprit les limites et conseils suivants liés à la publication ou à l’annulation de la publication de ressources ou de dossiers :
 
-* L’option [!UICONTROL Gérer la publication] est disponible uniquement pour les comptes d’utilisateurs disposant d’autorisations de réplication.
-* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références, car celles-ci peuvent être référencées par d’autres ressources publiées.
+* L’option [!UICONTROL Gérer la publication] n’est disponible que pour les comptes d’utilisateurs disposant d’autorisations de réplication.
+* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références car elles peuvent être référencées par d’autres ressources publiées.
 * Les dossiers vides ne sont pas publiés.
 * Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
 
@@ -634,7 +632,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
-## Recherche de ressources {#assetsearch}
+## Recherche de ressources   {#assetsearch}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
@@ -654,8 +652,6 @@ Vous pouvez afficher, parcourir et sélectionner les ressources avec l’un des 
 En mode Liste et en mode Colonne, l’option **[!UICONTROL Sélectionner]** s’affiche lorsque vous placez le pointeur sur la miniature de la ressource.
 
 En mode Carte, l’option **[!UICONTROL Sélectionner]** s’affiche sous la forme d’une action rapide.
-
-![Sélection d’une action rapide en mode Carte](assets/select_quick_action.png)
 
 Lorsque vous parcourez un dossier ou une collection dans l’interface utilisateur [!DNL Assets] d’un navigateur, vous pouvez sélectionner toutes les ressources affichées ou chargées à l’aide de l’option [!UICONTROL Sélectionner tout] dans le coin supérieur droit. Au départ, seules 100 ressources sont chargées en mode Carte et 200 en mode Liste. D’autres ressources sont chargées dans la vue lorsque vous faites défiler la page de résultats de recherche. L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les ressources chargées.
 
@@ -678,8 +674,6 @@ Les outils de modification de l’interface d’[!DNL Assets] permettent d’eff
 1. Pour recadrer l’image, cliquez sur **[!UICONTROL Recadrer]** ![Option pour recadrer une image](assets/do-not-localize/crop.png).
 
 1. Sélectionnez une option dans la liste. La zone de recadrage s’affiche sur l’image en fonction de l’option choisie. L’option **Main libre** vous permet de recadrer l’image sans restriction de format.
-
-   ![Options de recadrage](assets/crop-options.png)
 
 1. Sélectionnez la zone à recadrer et redimensionnez ou repositionnez-la sur l’image.
 
@@ -732,15 +726,13 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Cliquez sur l’option **[!UICONTROL Annoter]** dans l’une des options suivantes :
 
    * [Actions rapides](/help/assets/manage-assets.md#quick-actions)
-   * Dans la barre d’outils après avoir sélectionné la ressource ou accédé à la page de la ressource.
+   * Dans la barre d’outils, après avoir sélectionné la ressource   ou avoir accédé à la page de la ressource.
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
-   ![Zone Commentaire dans la boîte de dialogue Ajouter une annotation](assets/annotation-comment-box.png)
-
 1. Pour signaler une annotation à un utilisateur, indiquez l’adresse électronique de l’utilisateur et ajoutez le commentaire. Par exemple, pour signaler une annotation à Aaron MacDonald, saisissez @aa. Des conseils à l’usage des utilisateurs correspondant s’affichent dans une liste. Sélectionnez l’adresse électronique d’Aaron dans la liste pour la marquer avec le commentaire. De même, vous pouvez marquer d’autres utilisateurs à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
 
-   ![Préciser l’adresse électronique de l’utilisateur et ajouter un commentaire pour en informer l’utilisateur](assets/annotation-add-user-email.png)
+   ![Préciser l’adresse électronique de l’utilisateur et ajouter un commentaire pour en informer l’utilisateur](assets/annotate-gif.gif)
 
    >[!NOTE]
    >
@@ -807,8 +799,6 @@ Pour imprimer les annotations et l’état de révision, cliquez sur **[!UICONTR
 1. Cliquez sur **[!UICONTROL Imprimer]** dans la barre d’outils.
 
 1. Dans la boîte de dialogue Imprimer, sélectionnez la position dans laquelle vous souhaitez afficher les annotations/l’état de révision dans le fichier PDF. Par exemple, si vous souhaitez que les annotations ou l’état de révision soient imprimés dans le coin supérieur droit de la page qui contient l’image imprimée, sélectionnez le paramètre **Haut et gauche**. Ce paramètre est sélectionné par défaut.
-
-   ![Sélectionner la position de l’annotation/l’état de révision à afficher sur PDF à partir de la boîte de dialogue Imprimer](assets/Print-annotation-dialog.png)
 
    Vous pouvez choisir d’autres paramètres selon la position à laquelle vous souhaitez que les annotations ou l’état de révision apparaissent dans le document PDF imprimé. Si vous souhaitez que les annotations ou l’état de révision apparaissent sur une page différente de la ressource imprimée, sélectionnez **[!UICONTROL Page suivante]**.
 
@@ -909,7 +899,7 @@ Vous pouvez également activer le contrôle de version automatique à l’aide d
 
    *Figure : Utilisez le curseur pour comparer facilement les versions sélectionnées d’une ressource à la version actuelle.*
 
-### Démarrer un workflow sur une ressource {#starting-a-workflow-on-an-asset}
+### Démarrage d’un workflow sur une ressource {#starting-a-workflow-on-an-asset}
 
 Pour appliquer un workflow afin de traiter une ressource, voir [Démarrage d’un workflow sur une ressource](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
@@ -922,13 +912,13 @@ Une collection est un ensemble de ressources classées. Utilisez des collections
 
 Pour plus d’informations sur la gestion des collections, voir [Gestion des collections](/help/assets/manage-collections.md).
 
-## Masquer les ressources expirées lors de l’affichage de ressources dans l’appli de bureau ou Adobe Asset Link {#hide-expired-assets-via-acp-api}
+## Masquer les ressources parvenues à expiration lors de l’affichage de ressources dans l’appli de bureau ou Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] L’appli de bureau permet d’accéder au référentiel DAM à partir de l’appli de bureau Windows ou Mac. Adobe Asset Link permet d’accéder aux ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge.
+L’appli de bureau [!DNL Experience Manager] permet d’accéder au référentiel DAM à partir de l’appli de bureau Windows ou Mac. Adobe Asset Link permet d’accéder aux ressources à partir des applications de bureau [!DNL Creative Cloud] prises en charge.
 
 Lors de la navigation dans des ressources de l’interface utilisateur [!DNL Experience Manager], les ressources parvenues à expiration ne s’affichent pas. Pour empêcher l’affichage, la recherche et la récupération de fichiers parvenus à expiration lors de la navigation dans des fichiers à partir d’une application de bureau et d’un lien d’actif, les administrateurs peuvent appliquer la configuration suivante. La configuration fonctionne pour tous les utilisateurs, quel que soit le privilège d’administrateur.
 
-Exécutez la commande CURL suivante. Assurez-vous que les utilisateurs qui accèdent aux ressources ont accès en lecture à `/conf/global/settings/dam/acpapi/`. Les utilisateurs appartenant au groupe `dam-user` disposent par défaut d’une autorisation.
+Exécutez la commande de base de données suivante. Assurez-vous que les utilisateurs qui accèdent aux ressources bénéficient d’un accès en lecture à `/conf/global/settings/dam/acpapi/`. Les utilisateurs appartenant au groupe `dam-user` disposent par défaut d’une autorisation.
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -940,4 +930,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Pour en savoir plus, voir [parcourir les ressources DAM à l’aide de l’appli de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.htm).
