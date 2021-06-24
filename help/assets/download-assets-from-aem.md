@@ -3,12 +3,12 @@ title: Téléchargement de ressources
 description: Découvrez comment télécharger des ressources à partir de [!DNL Adobe Experience Manager] et activer ou désactiver la fonctionnalité de téléchargement.
 contentOwner: AG
 role: Business Practitioner
-feature: Gestion des ressources, distribution des ressources
+feature: Gestion des ressources,Distribution des ressources
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 76%
+source-wordcount: '875'
+ht-degree: 77%
 
 ---
 
@@ -29,11 +29,6 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 1. Accédez à un dossier contenant les ressources à télécharger.
 1. Sélectionnez le dossier ou une ou plusieurs ressources qu’il contient.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Télécharger]**.
-
-   ![Options disponibles lors du téléchargement de ressources à partir d’Experience Manager Assets](/help/assets/assets/asset-download1.png)
-
-   *Figure : Options disponibles dans la boîte de dialogue de téléchargement.*
-
 1. Dans la boîte de dialogue Télécharger, sélectionnez les options de téléchargement de votre choix.
 
    | Option d’exportation ou de téléchargement | Description |
