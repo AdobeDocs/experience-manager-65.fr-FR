@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Gestion des ressources
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1379'
 ht-degree: 18%
 
 ---
@@ -45,7 +45,7 @@ Vous pouvez référencer des ressources numériques existantes dans un fichier [
 
    *Figure : Références de ressource dans les détails de la ressource.*
 
-## [!DNL Adobe InDesign]: Ajout de ressources numériques en tant que références  {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Ajout de ressources numériques en tant que références {#add-aem-assets-as-references-in-adobe-indesign}
 
 Pour référencer des ressources numériques à partir d’un fichier [!DNL InDesign], faites-les glisser vers le fichier [!DNL InDesign] ou exportez le fichier [!DNL InDesign] sous la forme d’une archive ZIP.
 
@@ -73,8 +73,6 @@ Cette procédure est similaire à l’[ajout de ressources numériques en tant q
 
 1. Utilisez l’ [!DNL Experience Manager] appli de bureau pour accéder à [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la fonctionnalité [!UICONTROL Placer Linked] dans [!DNL Adobe Photoshop]. Voir [Placement de ressources dans l’appli de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
-   ![chlimage_1-87](assets/chlimage_1-261.png)
-
 1. Enregistrez le fichier [!DNL Photoshop] sur le lecteur monté ou [chargez](/help/assets/manage-assets.md#uploading-assets) dans le référentiel [!DNL Experience Manager].
 1. Une fois le workflow terminé, les références aux ressources [!DNL Experience Manager] existantes sont répertoriées dans la page des détails de la ressource.
 
@@ -86,7 +84,7 @@ Cette procédure est similaire à l’[ajout de ressources numériques en tant q
 >
 >Les ressources contenues dans des ressources composites peuvent également être référencées par ID de document et ID d’instance. Cette fonctionnalité est disponible avec les versions [!DNL Adobe Illustrator] et [!DNL Adobe Photoshop] uniquement. Pour d’autres, le référencement est effectué sur la base du chemin relatif des ressources liées dans la ressource composite principale, comme dans les versions antérieures de [!DNL Experience Manager].
 
-## Créer des sous-ressources {#generate-subassets}
+## Création de sous-ressources {#generate-subassets}
 
 Pour les ressources prises en charge avec des formats multi-pages (fichiers PDF, AI, fichiers [!DNL Microsoft PowerPoint] et [!DNL Apple Keynote] et fichiers [!DNL Adobe InDesign]), [!DNL Experience Manager] peut générer des sous-ressources qui correspondent à chaque page de la ressource d’origine. Ces sous-ressources sont liées à la ressource *parent* et facilitent l’affichage de plusieurs pages. Pour tous les autres usages, les sous-ressources sont traitées comme des ressources normales dans [!DNL Experience Manager].
 
