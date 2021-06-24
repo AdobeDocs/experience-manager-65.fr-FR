@@ -5,14 +5,14 @@ contentOwner: AG
 role: Business Practitioner
 feature: Workflow,Rendus
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 51%
 
 ---
 
-# Traitement des ressources à l’aide des gestionnaires de médias et des workflows {#processing-assets-using-media-handlers-and-workflows}
+# Traitement des ressources à l’aide des workflows et des gestionnaires de médias {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] est fourni avec un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Un workflow définit les tâches à exécuter sur les ressources, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
 
@@ -71,7 +71,7 @@ Les workflows existants peuvent être étendus et de nouveaux workflows peuvent 
 
 L’exemple suivant indique comment développer le workflow de **[!UICONTROL synchronisation AEM Assets]**, de sorte que des sous-ressources soient générées pour toutes les ressources, à l’exception des documents PDF.
 
-### Désactivez ou activez un gestionnaire de médias {#disabling-enabling-a-media-handler}
+### Désactivation ou activation d’un gestionnaire de médias {#disabling-enabling-a-media-handler}
 
 Les gestionnaires de médias peuvent être désactivés ou activés par le biais de la console de gestion web Apache Felix. Lorsque le gestionnaire de médias est désactivé, ses tâches ne sont pas réalisées sur les ressources.
 
@@ -82,7 +82,7 @@ Pour activer/désactiver un gestionnaire de médias :
 1. Actualisez la page : une icône s’affiche en regard du gestionnaire de médias pour indiquer qu’il est désactivé.
 1. Pour activer le gestionnaire de médias, cliquez sur le bouton **[!UICONTROL Activer]** en regard de son nom.
 
-### Créer un gestionnaire de médias {#creating-a-new-media-handler}
+### Création d’un gestionnaire de médias {#creating-a-new-media-handler}
 
 Pour prendre en charge un nouveau type de médias ou exécuter des tâches spécifiques sur une ressource, il est nécessaire de créer un gestionnaire de médias. Cette section décrit la procédure à suivre.
 
@@ -129,7 +129,7 @@ L’interface et les classes sont les suivantes :
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
 
-#### Exemple : créer un gestionnaire de texte spécifique {#example-create-a-specific-text-handler}
+#### Exemple : création d’un gestionnaire de texte spécifique {#example-create-a-specific-text-handler}
 
 Dans cette section, vous allez créer un gestionnaire de texte spécifique qui génère des miniatures avec un filigrane.
 
@@ -368,7 +368,7 @@ Après avoir exécuté la procédure suivante, lorsque vous chargez un fichier T
      Layer watermarkLayer;
      try {
       final Session session = node.getSession();
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/samplesite/icons/certificate.png");
       watermarkLayer.setX(MARGIN);
       watermarkLayer.setY(MARGIN);
       layer.merge(watermarkLayer);
@@ -441,7 +441,7 @@ Après avoir exécuté la procédure suivante, lorsque vous chargez un fichier T
 1. Copiez le lot `myBundle-0.0.1-SNAPSHOT.jar` et stockez-le sous `/apps/myApp/install` (par exemple avec WebDAV). Le nouveau gestionnaire de texte est à présent actif dans [!DNL Experience Manager].
 1. Dans votre navigateur, ouvrez la [!UICONTROL console de gestion web Apache Felix]. Sélectionnez l’onglet [!UICONTROL Composants] et désactivez le gestionnaire de texte par défaut `com.day.cq.dam.core.impl.handler.TextHandler`.
 
-## Gestionnaire multimédia basé sur une ligne de commande {#command-line-based-media-handler}
+## Gestionnaire de médias basé sur une ligne de commande {#command-line-based-media-handler}
 
 [!DNL Experience Manager] vous permet d’exécuter n’importe quel outil de ligne de commande dans un workflow pour convertir des ressources (comme ) et ajouter le nouveau rendu à la ressource. [!DNL ImageMagick] Il suffit d&#39;installer l&#39;outil de ligne de commande sur le disque hébergeant le serveur [!DNL Experience Manager] et d&#39;ajouter et de configurer une étape de processus au workflow. Le processus appelé, `CommandLineProcess`, permet également d’effectuer un filtrage en fonction de types MIME spécifiques et de créer plusieurs miniatures sur la base du nouveau rendu.
 
