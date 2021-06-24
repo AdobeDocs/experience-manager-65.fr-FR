@@ -11,14 +11,14 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Composants,Publication
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3221454e2d2dfd90b645a4c0303404d44f8d373d
 workflow-type: tm+mt
-source-wordcount: '3210'
-ht-degree: 68%
+source-wordcount: '3252'
+ht-degree: 67%
 
 ---
 
-# Ajout de ressources Dynamic Media aux pages {#adding-dynamic-media-assets-to-pages}
+# Ajout de ressources Dynamic Media aux pages{#adding-dynamic-media-assets-to-pages}
 
 Pour ajouter la fonction Dynamic Media aux ressources que vous utilisez sur des sites web, vous pouvez ajouter le composant **Dynamic Media**, **Média interactif**, **Média panoramique** ou **Média vidéo 360** directement à la page. Vous ajoutez des composants en activant le mode Mise en page et en activant les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo, et les options de configuration disponibles changent en conséquence.
 
@@ -136,7 +136,7 @@ Si vous ajoutez le composant Média dynamique et si l’option **[!UICONTROL Par
 * Vous avez [activé Dynamic Media](/help/assets/config-dynamic.md). Par défaut, ce module complémentaire est désactivé.
 * L’image possède un fichier pyramid tiff. Les images que vous importez avant d’activer Dynamic Media ne comportent pas de fichier pyramid tiff.
 
-#### En cas d’utilisation d’images  {#when-working-with-images}
+#### En cas d’utilisation d’images {#when-working-with-images}
 
 Le composant Média dynamique permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
@@ -178,7 +178,7 @@ Modifiez les paramètres Dynamic Media suivants en appuyant sur l’icône **[!U
 
    ![paramètre de rapport pixels d’appareil pour le paramètre d’image prédéfini](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/imaging-faq.md#dpr). Notez que toutes les valeurs RGPD d’imagerie dynamique Dynamic Media Adobe Experience Manager sont ignorées.
 
 * **[!UICONTROL Titre]**  : modifiez le titre de l’image.
 
@@ -254,7 +254,7 @@ Modifiez le paramètre Dynamic Media suivant en cliquant sur **[!UICONTROL Modif
 
    ![paramètre de rapport pixels d’appareil pour le recadrage intelligent](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/imaging-faq.md#dpr). Notez que toutes les valeurs RGPD d’imagerie dynamique Dynamic Media Adobe Experience Manager sont ignorées.
 
 * **[!UICONTROL Titre]**  : modifiez le titre de l’image avec recadrage intelligent.
 
@@ -357,7 +357,7 @@ Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas v
 
 ### Utilisation de HTTP/2 pour la diffusion de ressources Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole web mis à jour qui améliore le mode de communication entre les navigateurs et les serveurs. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
 Voir [Diffusion du contenu sur HTTP2](/help/assets/http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
 
