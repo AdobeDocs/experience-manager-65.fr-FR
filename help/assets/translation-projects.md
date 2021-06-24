@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Administrator
 feature: Traduction
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1875'
 ht-degree: 66%
 
 ---
@@ -34,7 +34,7 @@ Vous utilisez le workflow Créer et traduire afin de générer des copies de lan
 * Créer un projet de traduction.
 * Ajouter à un projet de traduction existant.
 
-### Créer uniquement la structure {#create-structure-only}
+### Créer uniquement la structure  {#create-structure-only}
 
 Utilisez l’option **[!UICONTROL Créer uniquement la structure]** pour créer une hiérarchie de dossiers cible au niveau de la racine de la langue cible semblable à celle du dossier source au sein de la racine de la langue source. Dans ce cas, les fichiers source sont copiés dans le dossier de destination. Cependant, aucun projet de traduction n’est généré.
 
@@ -69,15 +69,9 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la ou les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
-
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Créer un projet de traduction]**.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
-
 1. Dans le champ **[!UICONTROL Titre du projet]**, saisissez un titre pour le projet.
-
-   ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Cliquez sur **[!UICONTROL Créer]**. [!DNL Assets] du dossier source sont copiés dans les dossiers cibles pour les paramètres régionaux que vous avez sélectionnés à l’étape 4.
 
@@ -233,8 +227,6 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
 1. Cliquez sur **[!UICONTROL Mettre à jour les copies de langue]** en bas.
 
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Ajouter à un projet de traduction existant]**.
-
-   ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. Dans la liste **[!UICONTROL Projet de traduction existant]**, choisissez un projet auquel ajouter la ressource à traduire.
 
