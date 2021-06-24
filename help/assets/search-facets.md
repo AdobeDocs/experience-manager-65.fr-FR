@@ -5,9 +5,9 @@ contentOwner: AG
 role: Administrator, Developer
 feature: Rechercher
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2397'
 ht-degree: 77%
 
 ---
@@ -30,8 +30,6 @@ Pour des recherches de texte intégral, ajoutez le prédicat [!UICONTROL Texte i
 
 1. Cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Rechercher dans Forms]**.
 1. Sur la page Forms de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis cliquez sur **[!UICONTROL Modifier]** ![Icône de modification](assets/do-not-localize/aemassets_edit.png).
-
-   ![Recherchez et sélectionnez le rail de recherche de ressources ou d’administration.](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
@@ -180,7 +178,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
 
 Par défaut, une icône de verrouillage ![icône de verrouillage fermée](assets/do-not-localize/lock_closed_icon.svg) s’affiche avant **[!UICONTROL Rail de recherche d’administrateurs de ressources]** dans la page **[!UICONTROL Forms de recherche]**. L’icône de cadenas en regard d’une option de la page Formulaires de recherche indique que les paramètres par défaut sont intacts et non personnalisés. L’icône ![verrouiller l’icône fermée](assets/do-not-localize/lock_closed_icon.svg) disparaît si vous ajoutez des facettes de recherche au formulaire indiquant que le formulaire par défaut a été modifié.
 
-![L’icône de cadenas en regard d’une option de la page Formulaires de recherche indique que les paramètres par défaut sont intacts et non personnalisés.](assets/locked_admin_rail.png)
+![Icône Verrouiller](assets/locked_admin_rail.png)
 
 Pour restaurer la facette de recherche par défaut, procédez comme suit :
 
@@ -203,5 +201,5 @@ Si le rôle d’administrateur ne vous a pas été attribué, voici la liste des
 >[!MORELIKETHIS]
 >
 >* [Étendre la fonctionnalité de recherche de ressources](searchx.md)
-* [Recherche de ressources](search-assets.md)
+* [Recherche de ressources  ](search-assets.md)
 
