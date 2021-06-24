@@ -1,10 +1,11 @@
 ---
 title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
-source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
+exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
+source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 15%
+source-wordcount: '758'
+ht-degree: 23%
 
 ---
 
@@ -28,6 +29,23 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## Date de publication : Juin 2021
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2021.06.18 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| Composants principaux CIF | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
+| Site de référence CIF Venia | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
+
+### Nouveautés {#what-is-new-june}
+
+* Nouveaux types de données de référence de catégorie et de produit CIF pour les fragments de contenu (Incl. prise en charge de l’interface utilisateur du sélecteur de produits/catégories)
+* Nouveau composant principal de fragment de contenu commercial
+* Recherche commerciale en texte intégral prise en charge dans AEM serveur principal
+* Les composants principaux de Commerce prennent en charge la collecte de données Adobe Commerce Sensei Recs
+* Amélioration des URL compatibles avec l’optimisation pour les moteurs de recherche pour les pages de catégorie
+* Prise en charge des en-têtes HTTP personnalisés par site/configuration
+
 ## Date de publication : Mai 2021
 
 | Composant | Version | Détails |
@@ -40,7 +58,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Prise en charge de la pagination pour le contenu associé dans les propriétés de la console de produit
 
-### Correctifs de bogues {#bug-fixes-may}
+### Correctifs {#bug-fixes-may}
 
 * Miniatures des ressources non affichées dans l’onglet Ressource des propriétés du produit
 
@@ -58,13 +76,13 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Prise en charge de l’UID de catégorie : libère les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
 
-* Extension AEM pour PWA Studio, y compris exemple d’intégration
+* Extension AEM pour PWA Studio, avec un exemple d’intégration
 
 * Nouveau composant principal de navigation CIF qui étend le composant principal de navigation WCM
 
-* Indicateur visuel pour les données de catalogue intermédiaires dans AEM storefront
+* Indicateur visuel pour les données de catalogue intermédiaires dans AEM Storefront
 
-### Correctifs de bogues {#bug-fixes-april}
+### Correctifs {#bug-fixes-april}
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
@@ -102,7 +120,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Étendez les propriétés de la console de produit pour afficher les ressources liées et les fragments d’expérience, y compris l’action permettant d’accéder rapidement au contenu associé.
 
-### Nouveautés {#what-is-improved-february}
+### Nouveautés  {#what-is-improved-february}
 
 * Amélioration de la couche de données côté client avec l’URL de l’image du produit et les informations sur les catégories.
 
@@ -120,7 +138,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Gestion de l’expérience du produit : Nouvel onglet de propriété &quot;Commerce&quot; pour les ressources et les fragments d’expérience. Cet onglet vous permet de lier les ressources et les fragments d’expérience aux produits et catégories. L’onglet affiche également des données en temps réel pour les objets de commerce liés et un lien pour afficher les détails dans la console du produit.
 
-### Nouveautés {#what-is-improved-january}
+### Nouveautés  {#what-is-improved-january}
 
 * Envoyez les données utilisateur après l’authentification pour Adobe de la couche de données client.
 
