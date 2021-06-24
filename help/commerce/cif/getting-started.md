@@ -4,10 +4,11 @@ description: Découvrez comment déployer un projet Content and Commerce AEM.
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 6%
+source-wordcount: '721'
+ht-degree: 38%
 
 ---
 
@@ -27,7 +28,7 @@ L’intégration à AEM Content and Commerce est un processus en deux étapes :
 
 2. Connexion d’AEM à votre solution commerciale
 
-### Installez le module complémentaire Content and Commerce AEM pour AEM 6.5 {#install-add-on}
+### Installation du module complémentaire Content and Commerce AEM pour AEM 6.5 {#install-add-on}
 
 Téléchargez et installez le module complémentaire Commerce AEM pour AEM 6.5 à partir du portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
@@ -55,7 +56,7 @@ Le module complémentaire CIF fournit une servlet proxy GraphQL à l’adresse `
 
 Le module complémentaire et les [composants principaux CIF](https://github.com/adobe/aem-core-cif-components) peuvent être utilisés sur plusieurs structures de site AEM connectées à différents magasins de commerce (ou vues de magasin, etc.). Par défaut, le module complémentaire CIF est déployé avec une configuration par défaut se connectant au magasin et au catalogue par défaut d’Adobe Commerce (Magento).
 
-Cette configuration peut être ajustée pour le projet via la configuration du Cloud Service CIF en procédant comme suit :
+Cette configuration peut être ajustée pour le projet par le biais de la configuration de Cloud Service CIF en procédant comme suit :
 
 1. Dans AEM, accédez à Outils -> Cloud Services -> Configuration CIF.
 
@@ -65,23 +66,26 @@ Cette configuration peut être ajustée pour le projet via la configuration du C
 
 ![Configuration des Cloud Services CIF](/help/commerce/cif/assets/cif-cloud-service-config.png)
 
-Les propriétés suivantes peuvent être configurées :
+Les propriétés suivantes peuvent être configurées :
 
-- Client GraphQL : sélectionnez le client GraphQL configuré pour la communication du serveur principal Commerce. Cela doit généralement rester par défaut.
-- Affichage de magasin : identifiant de vue de magasin (Magento). Si cette valeur est vide, la vue de magasin par défaut est utilisée.
-- Chemin du proxy GraphQL : chemin d’URL du proxy GraphQL dans AEM utilisé pour les requêtes proxy vers le point d’entrée GraphQL principal du commerce.
+- Client GraphQL : sélectionnez le client GraphQL configuré pour la communication du serveur principal Commerce. Cette sélection doit généralement être maintenue par défaut.
+- Affichage de magasin : identifiant de vue de magasin (Magento). Si cette valeur est vide, la vue de magasin par défaut est utilisée.
+- Chemin du proxy GraphQL : chemin d’URL du proxy GraphQL dans AEM utilisé pour les requêtes proxy vers le point d’entrée GraphQL principal de commerce.
    >[!NOTE]
    >
-   > Dans la plupart des configurations, la valeur par défaut `/api/graphql` ne doit pas être modifiée. Seule la configuration avancée n’utilisant pas le proxy GraphQL fourni doit modifier ce paramètre.
-- Activer la prise en charge de l’UID du catalogue : activez la prise en charge de l’UID au lieu de l’ID dans les appels GraphQL du serveur principal de commerce.
+   > Dans la plupart des configurations, la valeur par défaut `/api/graphql` ne doit pas être modifiée. Seule une configuration avancée n’utilisant pas le proxy GraphQL fourni doit modifier ce paramètre.
+- Activer la prise en charge de l’UID du catalogue : activez la prise en charge de l’UID au lieu de l’ID dans les appels GraphQL du serveur principal de commerce.
    >[!NOTE]
    >
-   > La prise en charge des UID a été introduite dans Adobe Commerce (Magento) 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
-- Identifiant de catégorie racine du catalogue : l’identifiant (UID ou ID) de la racine du catalogue du magasin.
+   > La prise en charge des UID a été introduite dans Adobe Commerce (Magento) 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+- Identifiant de catégorie racine du catalogue : l’identifiant (UID ou ID) de la racine du catalogue du magasin.
+   >[!CAUTION]
+   >
+   > À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Si votre projet utilise la version 2.0.0 des composants principaux CIF, vous devez activer la prise en charge de l’UID de catalogue et utiliser un UID de catégorie valide comme &quot;identifiant de catégorie racine de catalogue&quot;.
 
 La configuration illustrée ci-dessus est à titre de référence. Les projets doivent fournir leurs propres configurations.
 
-Pour des configurations plus complexes à l’aide de plusieurs structures de site AEM combinées à différents catalogues commerciaux, consultez le tutoriel [Configuration multi-magasin de commerce](configuring/multi-store-setup.md) .
+Pour des configurations plus complexes à l’aide de plusieurs structures de site AEM combinées à différents catalogues commerciaux, consultez le tutoriel [Configuration multi-magasin Commerce](configuring/multi-store-setup.md).
 
 ## Ressources supplémentaires {#additional-resources}
 
