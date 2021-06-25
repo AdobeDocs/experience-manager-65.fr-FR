@@ -4,9 +4,9 @@ description: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3680'
 ht-degree: 5%
 
 ---
@@ -21,14 +21,14 @@ Cet article met en évidence les fonctionnalités incluses dans le dernier Servi
 
 >[!NOTE]
 >
->À partir du Service Pack 9 d’AEM, les clients [!DNL Experience Manager] peuvent développer et exploiter leurs applications [!DNL Experience Manager] avec des distributions des [!DNL Azul Zulu] versions d’OpenJDK, conformes aux normes de Java SE.
+>À partir de [!DNL Experience Manager] Service Pack 9, les clients [!DNL Experience Manager] peuvent développer et exploiter leurs applications [!DNL Experience Manager] avec des distributions des [!DNL Azul Zulu] versions d’OpenJDK, conformes aux normes de Java SE.
 >La prise en charge des JDK [!DNL Azul Zulu] est également fournie par Adobe aux clients [!DNL Experience Manager].
 >Vous pouvez télécharger les versions appropriées des JDK [!DNL Azul Zulu] à partir de [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 >Les droits d’utilisation de la technologie Java d’Oracle, tels qu’ils sont distribués par Adobe, expireront d’ici la fin décembre 2022. [!DNL Experience Manager] Nous vous recommandons de planifier et de mettre en oeuvre l’utilisation des  [!DNL Azul Zulu] JDK au plus tard à cette date. Pour plus d’informations sur l’utilisation de la technologie [!DNL Oracle Java] et de la technologie [!DNL Azul Zulu], consultez la [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) associée.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Possibilité de restaurer les pages supprimées et l’arborescence {#ability-to-restore-pages-tree}
+### Possibilité de restaurer les pages et l’arborescence supprimées {#ability-to-restore-pages-tree}
 
 Vous pouvez désormais restaurer les pages supprimées et l’arborescence entière sur une page [!DNL Experience Manager Sites].
 
@@ -36,49 +36,23 @@ Vous pouvez désormais restaurer les pages supprimées et l’arborescence enti�
 
 * Mise à jour des noms des régions et paramètres régionaux chinois relatifs à Hong Kong, Macao et Taïwan, afin de les rendre cohérents avec les opinions sociales et politiques chinoises.
 
-* Une configuration facultative est introduite pour réduire la casse des ID d’email dans la réponse de l’api ACP à partir de [!DNL Adobe Experience Manager].
+* Une configuration facultative est introduite pour modifier la casse des ID d’email dans la réponse de l’API ACP à partir de [!DNL Adobe Experience Manager].
 
-   ![configuration pour mettre en minuscules les ID d’email dans la réponse ACP des AEM](assets/email-lowcase-config.png)
+   ![configuration pour modifier les ID d’email en minuscules dans la réponse ACP de  [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
-* Le contraste (avec l’arrière-plan) du texte et des icônes à différents endroits est amélioré selon WCAG, afin de le rendre accessible aux utilisateurs ayant une vision et une perception limitées des couleurs. Pour plus d’informations, voir [Améliorations de l’accessibilité dans Assets](sp-release-notes.md#assets-accessibility-6590).
+* Le contraste entre le texte et les icônes en arrière-plan est amélioré pour différentes fonctionnalités. Cette mise en oeuvre des consignes WCAG rend [!DNL Assets] plus accessible aux utilisateurs ayant une vision et une perception limitées des couleurs. Voir [Améliorations de l’accessibilité dans  [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590).
 
-### Dynamic Media {#assets-dynamic-media}
+### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [Dynamic Media est plus ](sp-release-notes.md#assets-accessibility-6590) accessible en termes :
+* [[!DNL Dynamic Media] est plus ](sp-release-notes.md#assets-accessibility-6590) accessible en termes de :
 
-   * facilité d’utilisation avec les touches du clavier.
-   * contraste (avec l’arrière-plan) du texte, du texte d’espace réservé et des contrôles dans divers éditeurs.
-   * accessibilité et narration par les lecteurs d’écran.
+   * Facilité d’utilisation avec les touches du clavier.
+   * Contraste (avec arrière-plan) de texte, de texte d’espace réservé et de contrôles dans divers éditeurs.
+   * Accessibilité et narration par les lecteurs d’écran.
 
-* l’imagerie dynamique RGPD (rapport de pixels d’appareil) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace ; sur les périphériques dotés d’une haute résolution et d’une bande passante réseau limitée. Pour plus d’informations, voir [FAQ sur l’imagerie dynamique](/help/assets/imaging-faq.md).
+* l’imagerie dynamique RGPD (rapport de pixels d’appareil) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace ; sur les périphériques dotés d’une haute résolution et d’une bande passante réseau limitée. Pour plus d’informations et de détails sur la chronologie, voir [FAQ sur l’imagerie dynamique](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >Le calendrier de publication des améliorations de l’imagerie dynamique ci-dessus est le suivant :
-   >
-   >* Amérique du Nord, le 24 mai 2021, dans l&#39;Alliance du Nord,
-      >
-      >
-   * l&#39;Europe, le Moyen-Orient et l&#39;Afrique, le 25 juin 2021,
-      >
-      >
-   * Asie-Pacifique 19 juillet 2021.
-
-
-* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion Dynamic Media (modificateur d’URL fmt). Pour plus d’informations, voir [service d’images et rendu api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-   >[!NOTE]
-   >
-   >La date de publication de la prise en charge d’AVIF est la suivante :
-   >
-   >* Amérique du Nord, 10 mai 2021,
-      >
-      >
-   * Europe, Moyen-Orient et Afrique 24 mai 2021,
-      >
-      >
-   * Asie-Pacifique 24 juin 2021.
-
+* [!DNL Dynamic Media] La diffusion (modificateur `fmt` URL) prend désormais en charge le format d’image AVIF de nouvelle génération (format d’image AV1). Pour plus d’informations et de détails sur la chronologie, voir [API de traitement et de rendu d’images fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -90,7 +64,7 @@ Vous pouvez désormais restaurer les pages supprimées et l’arborescence enti�
 
 Vous pouvez désormais développer et exploiter des applications avec des [!DNL Azul Zulu] versions de [!DNL OpenJDK] pour [!DNL Experience Manager Forms] sur des déploiements OSGi. Pour plus d’informations, voir [Notes de mise à jour du Service Pack 9 de Experience Manager 6.5](sp-release-notes.md) et [Exigences techniques](../sites-deploying/technical-requirements.md).
 
-### Possibilité d’envoyer un email de notification à un groupe à l’aide de [!UICONTROL Affecter une tâche] {#group-notification-email}
+### Possibilité d’envoyer un email de notification à un groupe à l’aide de [!UICONTROL Assign Task] {#group-notification-email}
 
 Vous pouvez maintenant envoyer un email de notification à une adresse email de groupe à l’aide de l’étape de workflow Affecter une tâche .
 
@@ -98,7 +72,7 @@ Vous pouvez maintenant envoyer un email de notification à une adresse email de 
 
 Vous pouvez désormais récupérer une communication interactive enregistrée en tant que brouillon après avoir apporté des modifications à la communication interactive source.
 
-### Définissez le nom de domaine personnalisé pour le chargement, le rendu et la validation du service reCAPTCHA {#set-custom-domain-name-recaptcha}
+### Définition d’un nom de domaine personnalisé pour le chargement, le rendu et la validation du service reCAPTCHA {#set-custom-domain-name-recaptcha}
 
 Le service reCAPTCHA utilise `https://www.recaptcha.net/` comme domaine par défaut. Vous pouvez maintenant modifier les paramètres pour définir `https://www.google.com/` ou tout nom de domaine personnalisé pour le chargement, le rendu et la validation du service reCAPTCHA.
 
@@ -112,11 +86,11 @@ Si vous sélectionnez l’option [!UICONTROL Relative to Payload] pour joindre u
 
 Vous pouvez désormais utiliser plusieurs gabarits dans un modèle de document d’enregistrement. Par conséquent, vous pouvez désormais disposer de différents en-tête, pied de page, polices, informations de logo sur la page de titre et sur d’autres pages du modèle.
 
-### Sauts de page de prise en charge dans le document d’enregistrement {#support-page-breaks-dor}
+### Saut de page de prise en charge dans le document d’enregistrement {#support-page-breaks-dor}
 
 Vous pouvez désormais ajouter des sauts de page à un document d’enregistrement. Par conséquent, si un panneau est coupé dans les pages, vous pouvez ajouter un saut de page pour déplacer le panneau vers une nouvelle page d’un document d’enregistrement.
 
-## Fonctionnalités clés des Service Packs version [!DNL Experience Manager] 6.5 précédente {#key-features-previous-service-packs}
+## Fonctionnalités clés des Service Packs [!DNL Experience Manager] 6.5 précédents {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
@@ -164,7 +138,7 @@ L’opération Déplacement de page est désormais disponible en mode asynchrone
 
 Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du composant à l’aide du système de style amélioré.
 
-#### Améliorations des performances dans divers domaines (6.5.4.0) {#performance-improvements}
+#### Amélioration des performances dans divers domaines (6.5.4.0) {#performance-improvements}
 
 * Réduction du temps de chargement et d’initialisation de ContextHub dans un site (`contexthub.kernel.js`). Cela entraîne un chargement de page plus rapide lors d’une visite du site.
 
@@ -210,7 +184,7 @@ Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du co
 
    * Les lecteurs d’écran annoncent les options du panneau des filtres de recherche sous forme d’accordéons extensibles.
 
-#### Autres améliorations dans [!DNL Assets] (6.5.6.0) {#other-enhancements-assets-6560}
+#### Autres améliorations de [!DNL Assets] (6.5.6.0) {#other-enhancements-assets-6560}
 
 * Les groupes d’utilisateurs associés aux dossiers (privés et non privés) sont désormais supprimés du référentiel lors de la [suppression de ces dossiers](/help/assets/private-folder.md#delete-private-folder). Toutefois, les groupes d’utilisateurs redondants, orphelins, inutilisés et générés automatiquement existants peuvent être supprimés du référentiel à l’aide de JMX.
 
@@ -271,7 +245,7 @@ Une nouvelle colonne pouvant être triée pour la date de création des ressourc
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
-#### Invalider le contenu CDN mis en cache (6.5.6.0) {#invalidate-cdn-cached-content}
+#### Invalider le contenu mis en cache du réseau de diffusion de contenu (6.5.6.0) {#invalidate-cdn-cached-content}
 
 Vous pouvez désormais utiliser l’interface utilisateur [!DNL Dynamic Media] pour invalider le contenu mis en cache du réseau de diffusion de contenu (CDN). Par conséquent, les ressources mises à jour sont disponibles instantanément au lieu d’attendre que le cache arrive à expiration. Vous pouvez invalider le réseau de diffusion de contenu en procédant comme suit :
 
@@ -319,7 +293,7 @@ Vous pouvez désormais valider CAPTCHA lors de l’envoi du formulaire adaptatif
 
 * Conversion d’un formulaire PDF en formulaire adaptatif à l’aide de [!DNL Automated Forms Conversion service].
 
-#### Prise en charge des groupes de disponibilité Always On pour Microsoft SQL Server 2016 pour la haute disponibilité (6.5.7.0) {#always-on-availability-groups}
+#### Prise en charge des groupes de disponibilité Toujours active pour Microsoft SQL Server 2016 pour une haute disponibilité (6.5.7.0) {#always-on-availability-groups}
 
 [!DNL Experience Manager Forms] prend désormais en charge les groupes de disponibilité &quot;Toujours en disponibilité&quot;  [!DNL Microsoft] SQL Server 2016 pour les déploiements OSGi.
 
@@ -336,7 +310,7 @@ Vous pouvez désormais utiliser l’option de réinitialisation pour chaque comp
 Lorsque vous préremplissez un formulaire adaptatif, le serveur [!DNL Experience Manager Forms] fusionne les données avec un formulaire adaptatif et vous envoie le formulaire rempli. Par défaut, l’action de fusion des données a lieu sur le serveur.
 Vous pouvez maintenant configurer le serveur [!DNL Experience Manager Forms] pour [effectuer l’action de fusion de données sur le client](../../help/forms/using/prepopulate-adaptive-form-fields.md) au lieu du serveur. Cela réduit considérablement le temps nécessaire au préremplissage et au rendu des formulaires adaptatifs.
 
-#### Intégration d’un modèle de données de formulaire avec des API RESTful sur un serveur avec une implémentation SSL bidirectionnelle (6.5.6.0) {#fdm-integration-rest-apis-two-way-ssl}
+#### Intégration du modèle de données de formulaire avec les API RESTful sur un serveur avec une implémentation SSL bidirectionnelle (6.5.6.0) {#fdm-integration-rest-apis-two-way-ssl}
 
 [!DNL Experience Manager Forms] Le modèle de données de formulaire peut désormais  [s’intégrer aux API RESTful sur un serveur sur lequel un protocole SSL bidirectionnel est implémenté](../../help/forms/using/configure-data-sources.md).
 
@@ -352,11 +326,11 @@ Vous pouvez utiliser [!DNL Automated Forms Conversion service] pour convertir de
 
 [!DNL Experience Manager Forms] prend désormais en charge les protocoles SMB 2 et SMB 3.
 
-#### Mise en cache améliorée pour les pages de formulaires adaptatifs convertis (6.5.6.0) {#enhanced-caching-translated-adaptive-forms}
+#### Mise en cache améliorée pour les pages de formulaires adaptatifs traduites (6.5.6.0) {#enhanced-caching-translated-adaptive-forms}
 
 Vous pouvez désormais spécifier le [paramètre régional en tant que sélecteur dans l’URL du formulaire adaptatif au lieu d’un argument dans l’URL du formulaire adaptatif](../../help/forms/using/supporting-new-language-localization.md). Il permet de mettre en cache les formulaires adaptatifs traduits sur [!DNL Experience Manager Dispatcher]. La mise en cache du formulaire adaptatif traduit n’était pas possible dans les versions précédentes. Pour plus d’informations sur la configuration de la mise en cache pour l’utilisation des paramètres régionaux en tant que sélecteur dans l’URL du formulaire adaptatif, voir [Configuration du cache de formulaire adaptatif à l’adresse dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md).
 
-#### Enregistrez la sortie du service de modèle de données de formulaire à une variable (6.5.6.0) {#save-fdm-service-to-variable}
+#### Enregistrer la sortie du service de modèle de données de formulaire dans une variable (6.5.6.0) {#save-fdm-service-to-variable}
 
 Le modèle de données de formulaire vous permet d’enregistrer la sortie d’un service de modèle de données de formulaire dans une variable. [!DNL Experience Manager Forms] mappe désormais automatiquement le type du service de modèle de données de formulaire au type de variable .
 
@@ -364,19 +338,19 @@ Le modèle de données de formulaire vous permet d’enregistrer la sortie d’u
 
 Vous pouvez désormais [joindre plusieurs fichiers](../../help/forms/using/introduction-forms-authoring.md) au composant [!UICONTROL Pièce jointe] des formulaires adaptatifs.
 
-#### Personnaliser les colonnes de la boîte de réception Adobe Experience Manager (6.5.5.0) {#customize-aem-inbox-columns}
+#### Personnalisation des colonnes de la boîte de réception Adobe Experience Manager (6.5.5.0) {#customize-aem-inbox-columns}
 
 Vous pouvez personnaliser une [!DNL Experience Manager] boîte de réception pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un workflow. Les membres du groupe `administrators` ou `workflow-administrators` peuvent personnaliser les colonnes. Pour plus d’informations, voir [Contrôle d’administration](../sites-authoring/inbox.md#inbox-admin-control).
 
 ![Personnalisation des colonnes de la boîte de réception du Experience Manager](assets/customize-columns.gif)
 
-#### Enregistrer les communications interactives en tant que brouillon (6.5.5.0) {#save-as-draft}
+#### Enregistrement des communications interactives en tant que brouillon (6.5.5.0) {#save-as-draft}
 
 Vous pouvez utiliser l’interface utilisateur de l’agent pour enregistrer un ou plusieurs brouillons pour chaque communication interactive et récupérer le brouillon ultérieurement pour continuer à travailler dessus. Vous pouvez spécifier un nom différent pour chaque brouillon afin de l’identifier. Pour plus d’informations, voir [Enregistrer les communications interactives en tant que brouillon](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Enregistrer en tant que brouillon](assets/save-as-draft.gif)
 
-#### [!DNL Oracle WebLogic] Prise en charge des serveurs d’applications (6.5.5.0)  {#weblogic-support}
+#### [!DNL Oracle WebLogic] Prise en charge des serveurs d’applications (6.5.5.0) {#weblogic-support}
 
 Adobe Experience Manager Forms a ajouté la prise en charge de [!DNL Oracle WebLogic 12] pour Adobe Experience Manager Forms on JEE. Vous pouvez effectuer une mise à niveau à partir d’une version précédente ou configurer un nouveau serveur Forms on JEE Experience Manager 6.5 sur [!DNL Oracle WebLogic] 12.2.1.4 et versions ultérieures. Plus tard correspond aux changements de version mineurs, où x dans la version 12.2.1.x est remplacé par un numéro de version.
 
@@ -450,7 +424,7 @@ Vous pouvez utiliser l’API Batch pour produire plusieurs communications intera
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Versions clés depuis [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
+## Principales versions depuis [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
 
 Entre le 25 février 2021 et le 27 mai 2021, Adobe a publié les éléments suivants, en plus des Service Packs :
 
