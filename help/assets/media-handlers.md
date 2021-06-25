@@ -1,11 +1,12 @@
 ---
 title: Traitement des ressources à l’aide des workflows et des gestionnaires de médias
 description: Découvrez les gestionnaires de médias et comment utiliser des workflows pour exécuter des tâches sur vos ressources numériques.
+mini-toc-levels: 1
 contentOwner: AG
 role: Business Practitioner
 feature: Workflow,Rendus
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
+source-git-commit: 9ac5582b2e4859bf4f101c5caa5258fc755ebc46
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 51%
