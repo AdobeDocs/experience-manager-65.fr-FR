@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /deploy/platform/data-store-config
 feature: Configuration
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7038e9c2949cb6326470d0248b640e576c7f919
 workflow-type: tm+mt
-source-wordcount: '3424'
-ht-degree: 66%
+source-wordcount: '3487'
+ht-degree: 65%
 
 ---
 
@@ -47,7 +47,7 @@ Pour configurer le magasin de nœuds et l’entrepôt de données, procédez com
 
 1. Démarrez AEM.
 
-## Configurations des magasins de nœuds  {#node-store-configurations}
+## Configurations des magasins de nœuds {#node-store-configurations}
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ Pour configurer le magasin de nœuds et l’entrepôt de données, procédez com
 >
 >Si vous lisez cet article en vue de vous préparer pour effectuer une mise à niveau à partir d’une installation d’**AEM 5.x**, n’oubliez pas de consulter la documentation de [mise à niveau](https://docs.adobe.com/content/docs/fr/aem/6-0/deploy/upgrade.html ) en premier.
 
-### Magasins de nœuds de segment  {#segment-node-store}
+### Magasins de nœuds de segment {#segment-node-store}
 
 Le magasin de nœuds de segment constitue la base de l’implémentation de TarMK d’Adobe dans AEM 6. Il utilise le PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` pour la configuration.
 
@@ -142,7 +142,7 @@ Voici les options de configuration disponibles :
 >
 >Lorsque vous utilisez un NAS pour stocker les entrepôts de données basés sur les fichiers partagés, assurez-vous d’utiliser uniquement les appareils les plus performants afin d’éviter des problèmes de performances.
 
-## Entrepôt de données S3 Amazon  {#amazon-s-data-store}
+## Entrepôt de données S3 Amazon {#amazon-s-data-store}
 
 AEM peut être configuré pour stocker des données dans Amazon Simple Storage Service (S3). Il utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` pour la configuration.
 
@@ -190,7 +190,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. Modifiez le fichier, puis ajoutez les options de configuration requises par votre configuration.
 1. Démarrez AEM.
 
-### Mise à nouveau vers une nouvelle version du connecteur 1.10.x S3 {#upgrading-to-a-new-version-of-the-s-connector}
+### Mise à nouveau vers une nouvelle version du connecteur 1.10.x S3  {#upgrading-to-a-new-version-of-the-s-connector}
 
 Si vous devez effectuer une mise à niveau vers une nouvelle version du connecteur 1.10.x S3 (par exemple, de la version 1.10.0 vers la version 1.10.4), procédez comme suit :
 
@@ -310,7 +310,7 @@ Pour configurer une réplication sans binaire avec S3, les étapes suivantes son
 
 1. Redémarrez toutes les instances de création et de publication pour que les modifications soient appliquées.
 
-#### Création d’un cluster à l’aide de S3 et MongoDB  {#creating-a-cluster-using-s-and-mongodb}
+#### Création d’un cluster à l’aide de S3 et MongoDB {#creating-a-cluster-using-s-and-mongodb}
 
 1. Décompressez le quickstart CQ en utilisant la commande suivante :
 
@@ -335,7 +335,7 @@ Pour configurer une réplication sans binaire avec S3, les étapes suivantes son
 1. Répétez les étapes 1 à 4 pour la seconde instance d’AEM.
 1. Démarrez la seconde instance d’AEM.
 
-#### Configuration d’un entrepôt de données partagé   {#configuring-a-shared-data-store}
+#### Configuration d’un entrepôt de données partagé  {#configuring-a-shared-data-store}
 
 1. Créez d’abord le fichier de configuration d’entrepôt de données sur chaque instance devant partager l’entrepôt de données :
 
@@ -379,7 +379,7 @@ Pour configurer une réplication sans binaire avec S3, les étapes suivantes son
    * Pour `FileDataStore`, les fichiers sont créés sous le chemin racine du dossier de l’entrepôt de données.
    * Pour la balise `S3DataStore` , les fichiers sont créés dans le compartiment S3 configuré sous le dossier `META` .
 
-## Entrepôt de données Azure {#azure-data-store}
+## Entrepôt de données Azure  {#azure-data-store}
 
 AEM peut être configuré pour stocker des donnés dans le service de stockage Azure de Microsoft. Il utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` pour la configuration.
 
@@ -446,7 +446,7 @@ accessKey="ASDASDERFAERAER"
 secretKey="28932hfjlkwdo8fufsdfas\=\="
 ```
 
-## Nettoyage de la mémoire d’entrepôt de données {#data-store-garbage-collection}
+## Nettoyage de la mémoire d’entrepôt de données  {#data-store-garbage-collection}
 
 Le processus de nettoyage de la mémoire d’entrepôt de données est utilisé pour supprimer tous les fichiers inutilisés dans l’entrepôt de données en vue de libérer de l’espace disque.
 
@@ -463,11 +463,19 @@ Vous pouvez exécuter le nettoyage de la mémoire d’entrepôt de données en p
    >
    >Le paramètre `markOnly` indique si la phase de balayage du nettoyage sera exécutée ou non.
 
-## Nettoyage de la mémoire d’entrepôt de données pour les entrepôts de données partagés {#data-store-garbage-collection-for-a-shared-data-store}
+## Nettoyage de la mémoire d’entrepôt de données pour les entrepôts de données partagés  {#data-store-garbage-collection-for-a-shared-data-store}
 
 >[!NOTE]
 >
 >Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Cela se produit car les ID d’objets blob supprimés dans un nettoyage précédent sont à nouveau référencés de manière incorrecte par d’autres noeuds de cluster ou partagés qui ne disposent pas d’informations sur les suppressions d’ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
+
+>[!NOTE]
+> Si vous utilisez une configuration de banque de données partagée et que le nettoyage de la mémoire de la banque de données est désactivé, l’exécution de la tâche de nettoyage du binaire Lucene peut soudainement augmenter l’espace disque utilisé. Pour éviter cela, vous devez désactiver BlobTracker sur toutes les instances d’auteur et de publication comme suit :
+>
+> 1. Arrêtez l’instance AEM.
+> 2. Ajoutez le paramètre `blobTrackSnapshotIntervalInSecs=L"0"` dans le fichier `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Ce paramètre nécessite Oak 1.12.0, 1.10.2 ou une version ultérieure.
+> 3. Redémarrez l’instance AEM.
+
 
 Avec des versions plus récentes d’AEM, le nettoyage de la mémoire d’entrepôt de données peut également être effectué sur des entrepôts de données partagés par plusieurs référentiels. Pour pouvoir exécuter le nettoyage de la mémoire d’entrepôt de données sur un entrepôt de données partagé, procédez comme suit : 
 
