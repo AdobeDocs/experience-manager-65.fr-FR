@@ -4,14 +4,14 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 101cbd0d06d370da315e1579a8c2f274a6138b9a
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3857'
-ht-degree: 4%
+source-wordcount: '3805'
+ht-degree: 5%
 
 ---
 
-# [!DNL Adobe Experience Manager] Notes de mise à jour du Service Pack 6.5  {#aem-service-pack-release-notes}
+# [!DNL Adobe Experience Manager] Notes de mise à jour du Service Pack 6.5 {#aem-service-pack-release-notes}
 
 ## Informations sur la version {#release-information}
 
@@ -30,7 +30,7 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
 * [!DNL Experience Manager Sites] Le composant Dynamic Media Foundation permet désormais d’activer ou de désactiver l’optimisation pour les appareils à résolution plus élevée lors de l’utilisation d’un paramètre d’image prédéfini réactif ou d’un recadrage intelligent.
 
-* Pour améliorer les performances, la condition hidden=false est déplacée de la requête JCR vers l’évaluateur QueryBuilder. Pour vérifier qu’un prédicat masqué fonctionne après la modification, Experience Manager vérifie que tout dossier masqué n’est pas affiché dans l’interface.
+* Pour améliorer les performances, la condition `hidden=false` est déplacée de la requête JCR vers l’évaluateur [!UICONTROL QueryBuilder]. Pour vérifier qu’un prédicat masqué fonctionne après la modification, [!DNL Experience Manager] vérifie qu’aucun dossier masqué n’est affiché.
 
 * Possibilité de restaurer les pages et l’arborescence supprimées sur une page [!DNL Experience Manager Sites].
 
@@ -40,39 +40,13 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
 * Prise en charge des versions 4.2 et 4.4 de [!DNL MongoDB].
 
-* Les occurrences de noms liés à Hong Kong, Macao et Taïwan sont mises à jour en fonction des nouvelles conventions de dénomination pour les régions et les paramètres régionaux chinois.
+* Les occurrences de noms liés à Hong Kong, Macao et Taïwan sont mises à jour conformément aux nouvelles conventions de dénomination pour les langues et les régions chinoises.
 
-* Améliorations de l’accessibilité dans [!DNL Experience Manager] [Assets](#assets-accessibility-6590) et [Dynamic Media](#accessibility-dm-6590).
+* Améliorations de l’accessibilité dans [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) et [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* l’imagerie dynamique RGPD (rapport de pixels d’appareil) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace ; sur les périphériques à haute résolution qui s’affichent et qui disposent d’une bande passante réseau limitée. Pour plus d’informations, voir [FAQ sur l’imagerie dynamique](/help/assets/imaging-faq.md).
+* l’imagerie dynamique RGPD (rapport de pixels d’appareil) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace ; sur les périphériques dotés d’une haute résolution et d’une bande passante réseau limitée. Pour plus d’informations et de détails sur la chronologie, voir [FAQ sur l’imagerie dynamique](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >La date de publication des améliorations de l’imagerie dynamique ci-dessus est la suivante :
-   >
-   >* Amérique du Nord, le 24 mai 2021, dans l&#39;Alliance du Nord,
-      >
-      >
-   * Europe, Moyen-Orient et Afrique, 25 juin 2021,
-      >
-      >
-   * Asie-Pacifique 19 juillet 2021.
-
-
-* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion Dynamic Media (modificateur d’URL fmt). Pour plus d’informations, voir [service d’images et rendu api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-   >[!NOTE]
-   >
-   >La date de publication de la prise en charge d’AVIF est la suivante :
-   >
-   >* Amérique du Nord, 10 mai 2021,
-      >
-      >
-   * Europe, Moyen-Orient et Afrique 24 mai 2021,
-      >
-      >
-   * Asie-Pacifique 24 juin 2021.
-
+* [!DNL Dynamic Media] delivery (modificateur `fmt` URL) prend en charge le format d’image de nouvelle génération AVIF (format d’image AV1). Pour plus d’informations et de détails sur la chronologie, voir [API de traitement et de rendu d’images fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 * Possibilité d’envoyer un email de notification à un groupe à l’aide de l’étape de workflow [!UICONTROL Assign Task].
 
@@ -376,7 +350,7 @@ Pour plus d’informations sur les mises à jour de sécurité, voir [[!DNL Expe
 >
 >Adobe ne recommande pas de supprimer ou de désinstaller le package [!DNL Adobe Experience Manager] 6.5.9.0.
 
-### Installer le Service Pack {#install-service-pack}
+### Installation du Service Pack {#install-service-pack}
 
 Pour installer le Service Pack sur une instance [!DNL Adobe Experience Manager] 6.5, procédez comme suit :
 
@@ -418,7 +392,7 @@ B. Utilisez l’API [HTTP du gestionnaire de modules](/help/sites-administering/
 
 Pour connaître les plates-formes certifiées pour fonctionner avec cette version, voir les [exigences techniques](/help/sites-deploying/technical-requirements.md).
 
-### Installer le module complémentaire Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
+### Installation du module complémentaire Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -494,7 +468,7 @@ Pour récupérer votre copie d’exécution, Adobe recommande de synchroniser la
    * La zone réactive d’une image interactive Dynamic Media n’est pas visible lors de la prévisualisation de la ressource via la visionneuse de bannières Shoppable.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Délai d’attente avant que la modification du reg ne soit terminée sans enregistrement.
 
-## Lots OSGi et packages de contenu {#osgi-bundles-and-content-packages-included}
+## Lots OSGi et packages de contenu inclus {#osgi-bundles-and-content-packages-included}
 
 Les documents texte suivants répertorient les lots OSGi et les packages de contenu inclus dans [!DNL Experience Manager] 6.5.9.0 :
 
@@ -502,7 +476,7 @@ Les documents texte suivants répertorient les lots OSGi et les packages de cont
 
 * [Liste des packages de contenu inclus dans Experience Manager 6.5.9.0](assets/6590_packages.txt)
 
-## Sites Web restreints {#restricted-sites}
+## Sites web à accès limité {#restricted-sites}
 
 Ces sites web ne sont disponibles que pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
