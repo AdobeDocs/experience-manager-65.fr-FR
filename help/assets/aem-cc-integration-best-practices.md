@@ -2,17 +2,18 @@
 title: Intégration aux bonnes pratiques de Adobe Creative Cloud
 description: Bonnes pratiques pour intégrer  [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] afin de rationaliser les workflows de transfert de ressources et d’obtenir une vitesse de contenu élevée.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: Collaboration,Adobe Asset Link,application de bureau
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: c4cfb709162ca8f8f6e8508516c39542347c6bc4
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
 source-wordcount: '3254'
 ht-degree: 55%
 
 ---
 
-# [!DNL Adobe Experience Manager] et bonnes pratiques  [!DNL Creative Cloud] d’intégration  {#aem-and-creative-cloud-integration-best-practices}
+# [!DNL Adobe Experience Manager] et bonnes pratiques  [!DNL Creative Cloud] d’intégration {#aem-and-creative-cloud-integration-best-practices}
 
 [!DNL Adobe Experience Manager Assets] est une solution de gestion des ressources numériques (DAM) qui peut s’intégrer  [!DNL Adobe Creative Cloud] à pour aider les utilisateurs de DAM à travailler avec des équipes créatives, en rationalisant la collaboration dans le processus de création de contenu.
 
@@ -78,13 +79,13 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 
 * **Travail en cours ou travail créatif en cours (WIP) :** phase dans le cycle de vie des ressources où une ressource est soumise à de multiples modifications et n’est généralement pas encore prête à être partagée avec les équipes élargies.
 * **Ressources prêtes pour les créations :** [!DNL Assets] prêtes à être partagées avec une équipe plus large, ou sélectionnées ou approuvées par l’équipe créative pour le partage avec les équipes marketing ou métier.
-* **Approbation des ressources :** processus d’approbation traitant des ressources déjà transférées dans la gestion des ressources numériques, qui inclut généralement les approbations de marque, les validations juridiques, etc.
-* **Ressource finale :** ressource qui a passé l’ensemble des approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
+* **Approbation des ressources :** processus d’approbation traitant des ressources déjà transférées dans la gestion des ressources numériques (DAM), qui inclut généralement les approbations de marque, les validations juridiques, etc.
+* **Ressource finale :** ressource qui a passé l’ensemble des approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
 * **Mise à jour/modification mineure des ressources :** modification rapide et petite d’une ressource numérique. Cette opération est souvent effectuée en réponse à une demande de retouche ou de modification mineure, de révision ou d’approbation de fichier (par exemple, repositionnement, modification de la taille du texte, ajustement de la saturation/luminosité, couleur, etc.).
 * **Mise à jour/modification majeure des ressources :** modification d’une ressource numérique qui nécessite un travail considérable et qui doit parfois être effectuée sur une plus longue période de temps. Celle-ci implique généralement plusieurs modifications. La ressource doit être enregistrée plusieurs fois lors de la mise à jour. En règle générale, les mises à jour majeures de la ressource entraînent le passage à une étape en cours.
 * **DAM :** gestion des ressources numériques (en anglais, Digital Asset Management). Dans ce document, il est synonyme de [!DNL Experience Manager Assets], sauf mention contraire spécifique.
 * **Utilisateur créatif :** professionnel de la création, qui crée des ressources numériques à l’aide des applications et services Creative Cloud. Dans certains cas, un utilisateur créatif peut faire partie d’une équipe créative qui peut utiliser Creative Cloud, mais ne crée pas de ressources numériques (comme un directeur créatif ou un chef d’équipe créative).
-* **Utilisateur de la gestion des ressources numériques :** utilisateur ordinaire d’un système de gestion des ressources numériques (DAM, Digital Asset Management). Selon l’organisation, l’utilisateur de gestion des ressources numériques peut être un utilisateur marketing ou non, par exemple, un utilisateur métier, un bibliothécaire, un commercial, etc.
+* **Utilisateur de la gestion des ressources numériques :** utilisateur ordinaire d’un système de gestion des ressources numériques (DAM, Digital Asset Management). Selon l’organisation, l’utilisateur de gestion des ressources numériques (DAM) peut être un utilisateur marketing ou non, par exemple, un utilisateur métier, un bibliothécaire, un commercial, etc.
 
 ### Remarques concernant l’utilisation de l’intégration [!DNL Experience Manager] et [!DNL Creative Cloud] {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -118,21 +119,21 @@ Les utilisateurs créatifs qui travaillent dans des applications [!DNL Creative 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
 -->
 
-## À propos du stockage de ressources dans un système de gestion des ressources numériques {#about-storing-assets-in-a-dam}
+## À propos du stockage de ressources dans un système de gestion des ressources numériques (DAM)  {#about-storing-assets-in-a-dam}
 
 Pour établir un workflow efficace entre les équipes créatives et marketing/métier, et sélectionner les meilleures fonctionnalités de prise en charge, il est important de comprendre quand et pourquoi les ressources sont stockées dans la gestion des ressources numériques (DAM).
 
-### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques ?  {#why-assets-are-stored-in-dam}
+### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#why-assets-are-stored-in-dam}
 
-Le stockage des ressources dans la gestion des ressources numériques permet d’en faciliter l’accès et de les retrouver plus aisément. Cela garantit que les ressources peuvent être exploitées par de nombreux utilisateurs au sein de votre organisation ou écosystème, qui comprend les partenaires, les clients, etc.
+Le stockage des ressources dans la gestion des ressources numériques (DAM) permet d’en faciliter l’accès et de les retrouver plus aisément. Cela garantit que les ressources peuvent être exploitées par de nombreux utilisateurs au sein de votre organisation ou écosystème, qui comprend les partenaires, les clients, etc.
 
-La plupart des organisations choisissent de stocker uniquement les ressources pertinentes pour les processus marketing/LOB en aval (publication sur des canaux tels que le canal web via [!DNL Experience Manager Sites] ou d’autres canaux traités par Adobe Experience Cloud - Marketing Cloud, Advertising Cloud et mesurés par Analytics Cloud, satisfaction des besoins des utilisateurs/partenaires, etc.). En outre, les entreprises stockent les ressources qui peuvent être soumises à un processus de révision/approbation dans la gestion des ressources numériques. De cette manière, la gestion des ressources numériques stocke principalement les ressources ayant de grandes chances d’être exploitées, en évitant de stocker les ressources inactives.
+La plupart des organisations choisissent de stocker uniquement les ressources pertinentes pour les processus marketing/LOB en aval (publication sur des canaux tels que le canal web via [!DNL Experience Manager Sites] ou d’autres canaux traités par Adobe Experience Cloud - Marketing Cloud, Advertising Cloud et mesurés par Analytics Cloud, satisfaction des besoins des utilisateurs/partenaires, etc.). En outre, les entreprises stockent les ressources qui peuvent être soumises à un processus de révision/approbation dans la gestion des ressources numériques (DAM). De cette manière, la gestion des ressources numériques (DAM) stocke principalement les ressources ayant de grandes chances d’être exploitées, en évitant de stocker les ressources inactives.
 
-Le stockage des ressources est soumis à des considérations techniques et d’utilisation des ressources. La gestion des ressources numériques fournit des services supplémentaires pour les ressources stockées, notamment l’extraction de métadonnées, le contrôle de version, la génération d’aperçus/de transcodage, la gestion des références et l’ajout d’informations de contrôle d’accès. Ces services utilisent davantage de temps et de ressources de votre infrastructure.
+Le stockage des ressources est soumis à des considérations techniques et d’utilisation des ressources. La gestion des ressources numériques (DAM) fournit des services supplémentaires pour les ressources stockées, notamment l’extraction de métadonnées, le contrôle de version, la génération d’aperçus/de transcodage, la gestion des références et l’ajout d’informations de contrôle d’accès. Ces services utilisent davantage de temps et de ressources de votre infrastructure.
 
-Souvent, le stockage de toutes les ressources et mises à jour n’est pas souhaitable. Par exemple, si les mises à jour de ressources spécifiques sont de mauvaise qualité et utilisent les ressources en excès, les ressources peuvent être stockées dans la gestion des ressources numériques.
+Souvent, le stockage de toutes les ressources et mises à jour n’est pas souhaitable. Par exemple, si les mises à jour de ressources spécifiques sont de mauvaise qualité et utilisent les ressources en excès, les ressources peuvent être stockées dans la gestion des ressources numériques (DAM).
 
-#### Quand les ressources sont-elles stockées dans la gestion des ressources numériques ?  {#when-assets-are-stored-in-dam}
+#### Quand les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#when-assets-are-stored-in-dam}
 
 Les équipes créatives (et les organisations) ne sont généralement pas intéressées par le stockage des ressources à chaque étape de leur cycle de vie. Par exemple, elles évitent de stocker des ressources dans les cas suivants :
 
@@ -140,36 +141,36 @@ Les équipes créatives (et les organisations) ne sont généralement pas intér
 * Si les ressources ne passent pas le cycle de révision de l’équipe interne/créative.
 * L’équipe dispose de ressources plus pertinentes que celle en question pour présenter son travail à des équipes externes.
 
-En règle générale, les classes de ressources suivantes sont stockées dans la gestion des ressources numériques :
+En règle générale, les classes de ressources suivantes sont stockées dans la gestion des ressources numériques (DAM) :
 
 * Les ressources ayant atteint une certaine maturité et que l’on estime prêtes à être partagées.
 * Les ressources qui ont été présélectionnées par l’équipe créative.
 * Les formats de ressources spécifiques qui sont utilisables ou demandés par le marketing, selon un contrat ou un accord spécifique (par exemple, des fichiers JPG convertis à partir de fichiers RAW, des TIFF/images à partir d’originaux PSD).
 
-#### Quand les mises à jour de ressources sont-elles stockées dans la gestion des ressources numériques ?  {#when-updates-to-assets-are-stored-in-dam}
+#### Quand les mises à jour de ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#when-updates-to-assets-are-stored-in-dam}
 
-En règle générale, seules les mises à jour des ressources pertinentes pour un large ensemble d’utilisateurs de la gestion des ressources numériques doivent être stockées dans la gestion des ressources numériques. Cela garantit que les utilisateurs (marketing et fonctions similaires) voient uniquement les versions appropriées dans la chronologie des ressources de la gestion des ressources numériques.
+En règle générale, seules les mises à jour des ressources pertinentes pour un large ensemble d’utilisateurs de la gestion des ressources numériques doivent être stockées dans la gestion des ressources numériques (DAM). Cela garantit que les utilisateurs (marketing et fonctions similaires) voient uniquement les versions appropriées dans la chronologie des ressources de la gestion des ressources numériques (DAM).
 
-Généralement, il s’agit des modifications en rapport avec les principaux jalons dans le cycle de vie des ressources. Par exemple, la ressource initiale prête pour les spécialistes marketing ou une mise à jour officielle basée sur une demande/révision fournie par l’équipe créative doit être enregistrée et versionnée dans la gestion des ressources numériques.
+Généralement, il s’agit des modifications en rapport avec les principaux jalons dans le cycle de vie des ressources. Par exemple, la ressource initiale prête pour les spécialistes marketing ou une mise à jour officielle basée sur une demande/révision fournie par l’équipe créative doit être enregistrée et versionnée dans la gestion des ressources numériques (DAM).
 
-Il peut s’agir, par exemple, d’une mise à jour de l’équipe créative pour révision par l’équipe marketing après une demande de modification de la ressource existante dans la gestion des ressources numériques. Elle doit être stockée et versionnée dans la gestion des ressources numériques à des fins de référence ou pour revenir à la version précédente.
+Il peut s’agir, par exemple, d’une mise à jour de l’équipe créative pour révision par l’équipe marketing après une demande de modification de la ressource existante dans la gestion des ressources numériques (DAM). Elle doit être stockée et versionnée dans la gestion des ressources numériques (DAM) à des fins de référence ou pour revenir à la version précédente.
 
 Voici quelques exemples de mises à jour qui ne sont généralement pas pertinentes :
 
 * Les premières versions des ressources transférées avant qu’elles ne soient prêtes pour révision par le marketing
 * Les modifications fréquentes de la ressource par l’équipe créative pendant la phase de travail en cours et avant que l’équipe créative ne décide que la ressource est prête
 
-### Accès des utilisateurs à la gestion des ressources numériques {#user-access-to-dam}
+### Accès des utilisateurs à la gestion des ressources numériques (DAM)  {#user-access-to-dam}
 
-[!DNL Assets] prend en charge deux types d’utilisateurs en fonction de leur accès au  [!DNL Assets] déploiement. En règle générale, les utilisateurs à l’intérieur du réseau d’entreprise (pare-feu) ont un accès direct à la gestion des ressources numériques. Les autres utilisateurs à l’extérieur du réseau d’entreprise n’auront pas d’accès direct. Le type d’utilisateur détermine les intégrations qui peuvent être utilisées du point de vue technique.
+[!DNL Assets] prend en charge deux types d’utilisateurs en fonction de leur accès au  [!DNL Assets] déploiement. En règle générale, les utilisateurs à l’intérieur du réseau d’entreprise (pare-feu) ont un accès direct à la gestion des ressources numériques (DAM). Les autres utilisateurs à l’extérieur du réseau d’entreprise n’auront pas d’accès direct. Le type d’utilisateur détermine les intégrations qui peuvent être utilisées du point de vue technique.
 
-#### Utilisateurs créatifs avec un accès direct à la gestion des ressources numériques  {#creative-users-with-direct-access-to-dam}
+#### Utilisateurs créatifs avec un accès direct à la gestion des actifs numériques {#creative-users-with-direct-access-to-dam}
 
-En règle générale, les équipes créatives internes ou les agences/professionnels de la création intégrés au réseau interne ont accès au déploiement de la gestion des ressources numériques, y compris la connexion [!DNL Experience Manager]. [!DNL Experience Manager] et une infrastructure réseau peut être mise en place pour permettre un accès direct à des tiers externes (généralement des organisations de confiance comme des agences travaillant pour un client), pour avoir accès à  [!DNL Experience Manager] via un réseau, par exemple par le biais d&#39;un VPN ou d&#39;une liste autorisée IP.
+En règle générale, les équipes créatives internes ou les agences/créatifs professionnels  Les ressources intégrées au réseau interne ont accès au déploiement DAM, y compris à la connexion [!DNL Experience Manager]. [!DNL Experience Manager] et une infrastructure réseau peut être mise en place pour permettre un accès direct à des tiers externes (généralement des organisations de confiance comme des agences travaillant pour un client), pour avoir accès à  [!DNL Experience Manager] via un réseau, par exemple par le biais d&#39;un VPN ou d&#39;une liste autorisée IP.
 
 Dans ce cas, l’application de bureau Adobe Asset Link ou [!DNL Experience Manager] permet d’accéder facilement aux ressources finales/approuvées et d’enregistrer les ressources prêtes pour les créatifs dans la gestion des ressources numériques.
 
-#### Utilisateurs créatifs sans accès à la gestion des ressources numériques {#creative-users-without-access-to-dam}
+#### Utilisateurs créatifs sans accès à la gestion des ressources numériques (DAM)  {#creative-users-without-access-to-dam}
 
 Les agences externes et les indépendants sans accès direct au déploiement de la gestion des ressources numériques peuvent avoir besoin d’un accès aux ressources approuvées ou souhaitent ajouter leurs nouvelles conceptions à la gestion des ressources numériques.
 
@@ -198,11 +199,11 @@ L’approche recommandée ici consiste à utiliser une option dans l’appli de 
 
 #### Chargement en masse dans DAM {#bulk-upload-to-dam}
 
-Dans certains cas, il est possible que vous deviez charger simultanément un plus grand nombre de fichiers dans la gestion des ressources numériques, par exemple :
+Dans certains cas, il est possible que vous deviez charger simultanément un plus grand nombre de fichiers dans la gestion des ressources numériques (DAM), par exemple :
 
 * Chargement des résultats de séances photo ou projets de plus grande envergure
 * Chargement de ressources fournies par les agences de création
-* Transfert de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des ressources numériques
+* Transfert de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des ressources numériques (DAM)
 
 La description fait référence aux chargements de fichiers sur le plan opérationnel (par exemple, chaque semaine ou chaque séance photo), comme partie normale du processus de l’utilisateur de bureau. Les migrations de ressources de grande taille ne sont pas abordées ici.
 
@@ -212,7 +213,7 @@ Vous pouvez utiliser les fonctionnalités de transfert suivantes :
 * Pour charger quelques fichiers à partir d’un seul dossier, faites-les glisser directement vers l’interface web ou utilisez l’option Créer de l’interface web [!DNL Assets].
 * En fonction des besoins de votre entreprise, vous pouvez également utiliser un outil de chargement personnalisé.
 
-#### Gestion directe des ressources numériques à partir du bureau {#managing-digital-assets-directly-from-desktop}
+#### Gestion directe des ressources numériques depuis l’ordinateur de bureau {#managing-digital-assets-directly-from-desktop}
 
 Si vous utilisez des partages de fichiers réseau pour gérer des ressources numériques, le simple fait d’utiliser le partage réseau mappé par l’appli de bureau [!DNL Experience Manager] peut être considéré comme un substitut pratique. Lors de la transition à partir des partages de fichiers réseau, l’interface web [!DNL Experience Manager] fournit un vaste ensemble de fonctionnalités de gestion des ressources numériques qui vont bien au-delà de ce qui est possible sur un partage réseau (recherche, collections, métadonnées, collaboration, aperçus, etc.). L’appli de bureau [!DNL Experience Manager] fournit un lien pratique pour connecter le référentiel DAM côté serveur au travail sur le bureau.
 
