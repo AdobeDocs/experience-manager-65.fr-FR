@@ -41,7 +41,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Commerce, Scre
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Choisir l’option de [sélecteur de rail](/help/sites-authoring/basic-handling.md#rail-selector) à afficher |
-|  | ` | Masquer le rail |
+|  | &grave; | Masquer le rail |
 |  | `e` | Modifier |
 |  | `p` | Propriétés |
 |  | `m` | Déplacer |
