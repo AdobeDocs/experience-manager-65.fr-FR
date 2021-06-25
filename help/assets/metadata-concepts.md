@@ -3,11 +3,11 @@ title: Présentation des concepts de métadonnées
 description: Découvrez le besoin et les types de métadonnées qui permettent une catégorisation et une organisation plus simples des ressources.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: 'Métadonnées  '
+feature: 'Métadonnées '
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2730'
 ht-degree: 86%
 
 ---
@@ -28,7 +28,7 @@ Les propriétés de métadonnées de base décrites ci-dessus sont utilisées pa
 
 Vous pouvez ajouter d’autres données de niveau supérieur à des ressources numériques, par exemple :
 
-* Type de ressource (s’agit-il d’une image, d’une vidéo, d’un clip audio ou d’un document ?).
+* Type de ressource (une image, une vidéo, un clip audio ou un document).
 * Propriétaire.
 * Intitulé.
 * Description.
@@ -210,7 +210,7 @@ En plus d’un codage de métadonnées universel qui peut être incorporé dans 
 
 La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible auprès d’Adobe.
 
-### Qu&#39;est-ce XMP ? {#what-is-xmp}
+### Présentation de la norme XMP {#what-is-xmp}
 
 Adobe a introduit pour la première fois la norme XMP dans le cadre du logiciel Adobe Acrobat. Depuis, la norme XMP a été largement adoptée. [!DNL Assets] prend en charge de manière native le XMP : la plateforme de métadonnées extensible pilotée par Adobe. XMP est une norme destinée au traitement et au stockage de métadonnées normalisées et propriétaires dans les ressources numériques. La norme XMP est conçue pour être la norme commune permettant à plusieurs applications de fonctionner efficacement avec les métadonnées.
 
@@ -289,7 +289,7 @@ La page des propriétés des ressources comprend maintenant des onglets distinct
 1. Modifiez les propriétés de métadonnées d’extension IPTC, selon les besoins.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer les modifications.
 
-### Prise en charge de la notation de création {#creative-rating-support}
+### Prise en charge de l’évaluation de la création {#creative-rating-support}
 
 Outre les évaluations individuelles et cumulées, la page Propriétés affiche désormais les évaluations affectées à des ressources par le biais d’Adobe Bridge et d’autres applications Creative.
 
