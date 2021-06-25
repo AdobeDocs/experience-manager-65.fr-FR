@@ -4,9 +4,9 @@ description: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3680'
+source-wordcount: '3674'
 ht-degree: 5%
 
 ---
@@ -50,9 +50,9 @@ Vous pouvez désormais restaurer les pages supprimées et l’arborescence enti�
    * Contraste (avec arrière-plan) de texte, de texte d’espace réservé et de contrôles dans divers éditeurs.
    * Accessibilité et narration par les lecteurs d’écran.
 
-* l’imagerie dynamique RGPD (rapport de pixels d’appareil) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace ; sur les périphériques dotés d’une haute résolution et d’une bande passante réseau limitée. Pour plus d’informations et de détails sur la chronologie, voir [FAQ sur l’imagerie dynamique](/help/assets/imaging-faq.md).
+* Diffusez efficacement des images de meilleure qualité sur les appareils dotés d’un affichage haute résolution et d’une bande passante réseau limitée, grâce au RGPD (rapport de pixels de périphérique) d’imagerie dynamique et à l’optimisation de la bande passante du réseau. Voir [FAQ sur l’imagerie dynamique](/help/assets/imaging-faq.md).
 
-* [!DNL Dynamic Media] La diffusion (modificateur `fmt` URL) prend désormais en charge le format d’image AVIF de nouvelle génération (format d’image AV1). Pour plus d’informations et de détails sur la chronologie, voir [API de traitement et de rendu d’images fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+* [!DNL Dynamic Media] La diffusion (modificateur `fmt` URL) prend désormais en charge le format d’image AVIF (format d’image AV1) de nouvelle génération. Pour plus d’informations et de détails sur la chronologie, voir [API de traitement et de rendu d’images fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
