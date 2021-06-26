@@ -11,10 +11,10 @@ docset: aem65
 feature: Vidéo 360 VR
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 80%
+source-wordcount: '1054'
+ht-degree: 78%
 
 ---
 
@@ -30,7 +30,7 @@ L’audio spatial n’est actuellement pas pris en charge ; si l’audio est mi
 
 Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
 
-## Vidéo 360 en action {#video-in-action}
+## Vidéo 360 en action  {#video-in-action}
 
 Appuyez sur [Station spatiale 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) pour ouvrir une fenêtre de navigateur et visionner une vidéo à 360 degrés. Pendant la lecture vidéo, faites glisser le pointeur de la souris vers un nouvel emplacement pour modifier l’angle de vue.
 
@@ -50,7 +50,7 @@ Les ressources vidéo 360 qui sont chargées dans Adobe Experience Manager sont 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *Une ressource vidéo 360 chargée et affichée en mode Carte. La ressource est considérée comme multimédia.*
 
-**Pour charger des ressources pour une utilisation avec la visionneuse de vidéos 360 :**
+**Téléchargez des ressources à utiliser avec la visionneuse de vidéos 360 :**
 
 1. Créez un dossier dédié à votre ressource vidéo 360.
 1. [Appliquez un profil de vidéo adaptative au dossier](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -62,7 +62,7 @@ Les ressources vidéo 360 qui sont chargées dans Adobe Experience Manager sont 
    * Idéalement, votre contenu vidéo 360 d’origine est préférable à l’une des résolutions suivantes :
 
       * 1080p – 1920 x 1080, connu sous le nom de résolution Full HD ou FHD ou,
-      * 2160p – 3840 x 2160, connu sous le nom de résolution 4K, UHD ou Ultra HD. Cette résolution d’affichage importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée « 4K », car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
+      * 2160p - 3840 x 2160, connu sous le nom de 4k, UHD ou Ultrae résolution HD. Cette résolution d’affichage importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée &quot;4k&quot;, car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
    * [Créez un profil de vidéo adaptative personnalisé](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) avec des rendus de qualité supérieure. Par exemple, créez un profil de vidéo adaptative qui contient les trois paramètres suivants :
 
       * Largeur=auto ; hauteur=720 ; bitrate=2500 Kbit/s
@@ -72,7 +72,7 @@ Les ressources vidéo 360 qui sont chargées dans Adobe Experience Manager sont 
 
    Cette approche impose des exigences plus élevées au réseau et au processeur de l’utilisateur final.
 
-1. [Téléchargez votre vidéo dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+1. [Chargez votre vidéo dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 ## Remplacement du rapport d’aspect par défaut des vidéos 360  {#overriding-the-default-aspect-ratio-of-videos}
 
