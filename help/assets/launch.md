@@ -1,6 +1,7 @@
 ---
 title: Intégration des visionneuses Dynamic Media à Adobe Analytics et à Experience Platform Launch
 description: L’extension Visionneuses Dynamic Media pour Experience Platform Launch, ainsi que la version 5.13 des visionneuses Dynamic Media, permettent aux clients d’Adobe Analytics et de Platform launch d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration de Platform launch.
+mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,16 +10,16 @@ docset: aem65
 feature: Visionneuses
 role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 22a181e77a563ee3590cd661507f4dfeaf9d14da
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
 source-wordcount: '6616'
 ht-degree: 83%
 
 ---
 
-# Intégration des visionneuses Dynamic Media à Adobe Analytics et Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Intégration des visionneuses Dynamic Media à Adobe Analytics et à Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
-## En quoi consiste l’intégration des visionneuses Dynamic Media à Adobe Analytics et Experience Platform Launch ? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
+## En quoi consiste l’intégration des visionneuses Dynamic Media à Adobe Analytics et Experience Platform Launch ?  {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
 <!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
 
@@ -54,7 +55,7 @@ Consultez [Suivi des visionneuses Dynamic Media à l’aide du code intégré](
 
 L’intégration tire parti de deux types distincts et indépendants de suivi des visionneuses Dynamic Media : *Adobe Analytics* et *Adobe Analytics for Audio and Video*.
 
-### À propos du suivi à l’aide d’Adobe Analytics {#about-tracking-using-adobe-analytics}
+### À propos du suivi à l’aide d’Adobe Analytics   {#about-tracking-using-adobe-analytics}
 
 Adobe Analytics vous permet d’effectuer le suivi des actions exécutées par l’utilisateur final lorsqu’il interagit avec les visionneuses Dynamic Media de votre site web. Adobe Analytics vous permet également d’effectuer le suivi des données propres à la visionneuse. Vous pouvez, par exemple, effectuer le suivi et enregistrer les événements de chargement des vues avec le nom de la ressource, les actions de zoom survenues et les actions de lecture vidéo.
 
