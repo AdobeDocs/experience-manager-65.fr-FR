@@ -1,6 +1,7 @@
 ---
 title: Configuration de Dynamic Media – mode hybride
 description: Découvrez comment configurer Dynamic Media en mode hybride.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration, mode hybride
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 48463a72108621e94f1c50cf43f911794ec759dd
 workflow-type: tm+mt
-source-wordcount: '7843'
+source-wordcount: '7838'
 ht-degree: 38%
 
 ---
@@ -187,23 +188,23 @@ Pour activer Dynamic Media, vous devez activer le mode d’exécution Dynamic Me
 
    Ces journaux sont utilisés uniquement lorsque Dynamic Media est activé. Ils ne sont pas inclus dans le package **Télécharger complet** généré à partir de la page `system/console/status-Bundlelist` ; lorsque vous appelez le service clientèle si vous rencontrez un problème Dynamic Media, ajoutez ces deux journaux au problème.
 
-### Si vous avez installé Experience Manager sur un autre port ou chemin d’accès au contexte.. {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Si vous avez installé Experience Manager sur un autre port ou chemin d’accès au contexte... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-Si vous déployez [Experience Manager sur un serveur d’applications](/help/sites-deploying/application-server-install.md) et que Dynamic Media est activé, vous devez configurer le domaine **self** dans l’externaliseur. Sinon, la génération de miniatures pour les ressources ne fonctionne pas correctement pour les ressources Dynamic Media.
+Si vous déployez [Experience Manager sur un serveur d’applications](/help/sites-deploying/application-server-install.md) et que Dynamic Media est activé, vous devez configurer le **domaine self** dans l’externaliseur. Sinon, la génération de miniatures pour les ressources ne fonctionne pas correctement pour les ressources Dynamic Media.
 
-En outre, si vous exécutez le démarrage rapide sur un port ou un chemin d’accès au contexte différent, vous devez également changer le domaine **self**.
+En outre, si vous exécutez le démarrage rapide sur un autre port ou chemin de contexte, vous devez également modifier le **domaine self**.
 
 Lorsque Dynamic Media est activé, les rendus de miniature statiques pour les ressources images sont générés à l’aide de Dynamic Media. Pour que la génération de miniatures fonctionne correctement pour Dynamic Media, Experience Manager doit effectuer une requête d’URL vers lui-même et doit connaître le numéro de port et le chemin d’accès au contexte.
 
 En Experience Manager :
 
-* Le domaine **self** du service [Externalizer](/help/sites-developing/externalizer.md) est utilisé pour récupérer à la fois le numéro de port et le chemin d’accès au contexte.
-* Si aucun domaine **self** n’est configuré, le numéro de port et le chemin d’accès au contexte sont récupérés à partir du service HTTP Jetty.
+* **self-domain** dans [externalizer](/help/sites-developing/externalizer.md) est utilisé pour récupérer le numéro de port et le chemin d’accès au contexte.
+* Si aucun **self-domain** n’est configuré, le numéro de port et le chemin d’accès au contexte sont récupérés à partir du service HTTP Jetty.
 
-Dans un déploiement WAR QuickStart Experience Manager, le numéro de port et le chemin d’accès au contexte ne peuvent pas être dérivés. Vous devez donc configurer un domaine **self**. Reportez-vous à la section de la [documentation sur le service Externalizer](/help/sites-developing/externalizer.md) relative à la configuration du domaine **self**.
+Dans un déploiement WAR QuickStart Experience Manager, le numéro de port et le chemin d’accès au contexte ne peuvent pas être dérivés. Vous devez donc configurer un **auto-domaine**. Voir la [documentation de l’externaliseur](/help/sites-developing/externalizer.md) sur la configuration de **auto-domaine**.
 
 >[!NOTE]
-Dans un [déploiement autonome de démarrage rapide Experience Manager](/help/sites-deploying/deploy.md), un domaine **self** n’a généralement pas besoin d’être configuré, car le numéro de port et le chemin d’accès au contexte peuvent être automatiquement configurés. Cependant, si toutes les interfaces réseau sont désactivées, vous devez configurer le domaine **self**.
+Dans un [déploiement autonome de démarrage rapide Experience Manager](/help/sites-deploying/deploy.md), un **auto-domaine** n’a généralement pas besoin d’être configuré, car le numéro de port et le chemin d’accès au contexte peuvent être configurés automatiquement. Cependant, si toutes les interfaces réseau sont désactivées, vous devez configurer le **domaine self**.
 
 ## Désactivation de Dynamic Media  {#disabling-dynamic-media}
 
@@ -498,7 +499,7 @@ Assurez-vous d’avoir déjà effectué les opérations suivantes avant de comme
 
 Une autre façon de vérifier que vos ressources ont bien été diffusées est d’ajouter req=exists à votre URL.
 
-## Configuration de Dynamic Media Cloud Services  {#configuring-dynamic-media-cloud-services}
+## Configuration de Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
 Le Cloud Service Dynamic Media prend en charge la publication et la diffusion hybrides d’images et de vidéos, d’analyses vidéo et de codage vidéo, entre autres.
 
@@ -547,7 +548,7 @@ Une fois cette tâche terminée, vous disposez d’un fichier de module contenan
 1. Créez le module.
 1. Téléchargez ou partagez le module de paramètres prédéfinis d’analyses vidéo afin que celui-ci puisse être partagé avec les nouveaux nœuds auteur ultérieurs.
 
-### Installation du package de paramètres prédéfinis d’analyses vidéo avant de configurer d’autres noeuds d’auteur {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### Installation du package de paramètres prédéfinis Video Analytics avant de configurer d’autres noeuds de création {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Assurez-vous d’avoir effectué cette tâche ***avant*** de configurer Configuration Dynamic Media (version antérieure à 6.3). Sinon, une autre suite de rapports inutilisée est créée. En outre, même si les rapports vidéo continuent à fonctionner correctement, la collecte de données n’est pas optimisée.
 
@@ -557,7 +558,7 @@ Vérifiez que le module de paramètres prédéfinis d’analyses vidéo du premi
 1. Installez le module de paramètres prédéfinis d’analyses vidéo.
 1. Configurez Configuration Dynamic Media (version antérieure à 6.3).
 
-### Vérification et débogage de l’installation du module  {#verifying-and-debugging-the-package-installation}
+### Vérification et débogage de l’installation du module {#verifying-and-debugging-the-package-installation}
 
 1. Effectuez l’une des actions suivantes et, si nécessaire, déboguez l’installation du module :
 
@@ -603,7 +604,7 @@ Manager. Appuyez sur  **[!UICONTROL Outils]**  >  **[!UICONTROL Ressources]**  >
 
    Cette erreur s’affiche également si le rapport vidéo est exécuté avant la configuration des services de Configuration Dynamic Media (version antérieure à 6.3).
 
-### Dépannage de la configuration de rapport vidéo  {#troubleshooting-the-video-reporting-configuration}
+### Dépannage de la configuration de rapport vidéo {#troubleshooting-the-video-reporting-configuration}
 
 * Pendant l’installation, les connexions au serveur API Analytics expirent. L’installation effectue 20 nouvelles tentatives de connexion, mais elles échouent. Dans ce cas, le fichier journal enregistre plusieurs erreurs. Recherchez `SiteCatalystReportService`.
 * Le fait de ne pas installer le module de paramètres prédéfinis d’analyses en premier peut causer la création d’une nouvelle suite de rapports.
@@ -661,7 +662,7 @@ Les filtres permettent d’exclure *les ressources* de la réplication sur le no
 
 ### Utilisation de filtres de ressources par défaut pour la réplication {#using-default-asset-filters-for-replication}
 
-Si vous utilisez Dynamic Media pour (1) l’imagerie en production **ou** (2) l’imagerie et la vidéo, vous pouvez utiliser les filtres par défaut fournis en l’état par Adobe. Les filtres suivants sont activés par défaut :
+Si vous utilisez Dynamic Media pour (1) l’imagerie en production *ou* (2) l’imagerie et la vidéo, vous pouvez utiliser les filtres par défaut fournis en l’état par Adobe. Les filtres suivants sont activés par défaut :
 
 <table>
  <tbody>
@@ -963,7 +964,7 @@ Tableau des paramètres du manifeste et leurs valeurs par défaut :
  </tbody>
 </table>
 
-## Configuration de la gestion des couleurs Dynamic Media  {#configuring-dynamic-media-color-management}
+## Configuration de la gestion des couleurs Dynamic Media {#configuring-dynamic-media-color-management}
 
 La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs des ressources pour la prévisualisation.
 
@@ -1095,7 +1096,7 @@ Les profils de couleurs installés sont les suivants :
    <th><p>Description</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RVB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1137,12 +1138,12 @@ Les profils de couleurs installés sont les suivants :
   <tr>
    <td>EuroscaleCoated</td>
    <td>CMJN</td>
-   <td>Euroscale Coated v2</td>
+   <td>Euro scale Coated v2</td>
   </tr>
   <tr>
    <td>EuroscaleUncoul</td>
    <td>CMJN</td>
-   <td>Euroscale Uncoute v2</td>
+   <td>Echelle euro - v2 non couché</td>
   </tr>
   <tr>
    <td>JapanColorCoated</td>
