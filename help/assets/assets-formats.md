@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: Gestion des ressources,Rendus
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1581'
 ht-degree: 61%
 
 ---
@@ -74,7 +74,7 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 ## Formats 3D pris en charge {#support-3d-formats}
 
-Les formats 3D de la liste suivante sont pris en charge.
+La liste suivante de formats 3D est prise en charge.
 
 Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.md)
 
@@ -89,7 +89,7 @@ Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.
 
 ## Formats d’image pixellisée non pris en charge dans Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-La liste suivante décrit les sous-types de formats de fichier image pixellisée *non* pris en charge dans Dynamic Media.
+La liste suivante décrit les sous-types de formats de fichiers image pixellisés *non* pris en charge dans Dynamic Media.
 
 Voir aussi [Détecter les formats de fichiers non pris en charge pour Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
@@ -130,13 +130,13 @@ Voir [Utilisation de PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Bibliothèque de transcodage d’image prise en charge {#supported-image-transcoding-library}
 
-La bibliothèque ITL est une solution de traitement des images qui exécute des fonctions essentielles de gestion des images, telles que le codage, le transcodage, le rééchantillonnage et le redimensionnement.
+La bibliothèque de transcodage d’imagerie Adobe est une solution de traitement d’images exécutant des fonctions essentielles de manipulation graphique, telles que le codage, le transcodage, le ré-échantillonnage, le redimensionnement, etc.
 
 La bibliothèque de transcodage d’imagerie prend en charge les types MIME JPG/JPEG, PNG (8 et 16 bits), GIF, BMP, TIFF/TIFF compressé (sauf les fichiers TIFF 32 bits et les fichiers PTIFF), ICO et ICN.
 
 Voir [Bibliothèque de transcodage d’imagerie](imaging-transcoding-library.md).
 
-## Prise en charge de la caméra brute {#supported-camera-raw}
+## Prise en charge de Camera Raw {#supported-camera-raw}
 
 La bibliothèque [!DNL Adobe Camera Raw] permet à [!DNL Assets] d’ingérer des images brutes. Voir [Prise en charge Camera Raw](camera-raw.md).
 
@@ -211,10 +211,10 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 | MP4 | MPEG-4 | H264/AVC (tous les profils) | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 et HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (fichiers d’animation vectorielle) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
@@ -251,7 +251,7 @@ L’applicabilité des fonctionnalités de gestion des actifs numériques habitu
 
 >[!NOTE]
 >
->Le téléchargement et la distribution de fichiers JavaScript peuvent être ou non sécurisés. Si nécessaire, des incrustations peuvent être utilisées pour empêcher les utilisateurs de charger des fichiers JS.
+>Le téléchargement et la distribution de fichiers JavaScript peuvent être ou non sécurisés. Si nécessaire, vous pouvez utiliser des superpositions pour empêcher les utilisateurs de charger des fichiers JS.
 
 ## Types MIME pris en charge {#supported-mime-types}
 
