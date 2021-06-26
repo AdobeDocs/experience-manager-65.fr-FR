@@ -11,14 +11,14 @@ docset: aem65
 feature: Images interactives
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 3110c1d4424179dbc9eda9e07cf3353c4b4bb4b0
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '4291'
-ht-degree: 68%
+source-wordcount: '4284'
+ht-degree: 67%
 
 ---
 
-# Images interactives {#interactive-images}
+# Images interactives{#interactive-images}
 
 Vous pouvez facilement créer des images statiques riches et attrayantes pour les clients en faisant glisser des zones réactives &quot;Shoppable&quot; sur une image. Les zones réactives Shoppable combinent des informations supplémentaires sur un produit ou un service avec une fonctionnalité &quot;Ajouter au panier&quot; ou &quot;Acheter&quot; directe, point de vente. Les clients peuvent appuyer ou cliquer sur ces zones réactives et être liés directement au produit ou au service, l’ajouter à un panier ou être associés à une page web. Les expériences directes de ce type augmentent les engagements des clients et les conversions sur votre site web.
 
@@ -46,23 +46,23 @@ Le tutoriel permet d’illustrer les étapes d’intégration d’images interac
 
 Étapes des images interactives :
 
-1. **(Facultatif) Identification des variables de zone réactive**  : si vous utilisez des instances autonomes de Experience Manager Assets et de Dynamic Media, commencez par identifier les variables dynamiques utilisées dans votre mise en oeuvre de l’aperçu rapide existant. Vous pouvez ensuite saisir des données de zone réactive lors de la création de l’image interactive. Voir [(Facultatif) Identification des variables de zone réactive](#optional-identifying-hotspot-variables).
+1. **(Facultatif) Identifiez les variables**  de zone réactive. Si vous utilisez des instances autonomes de Experience Manager Assets et de Dynamic Media, commencez par identifier les variables dynamiques utilisées dans votre mise en oeuvre existante de l’aperçu rapide. Vous pouvez ensuite saisir des données de zone réactive lors de la création de l’image interactive. Voir [(Facultatif) Identification des variables de zone réactive](#optional-identifying-hotspot-variables).
 Toutefois, si vous utilisez Adobe Experience Manager Sites, Adobe Experience Manager eCommerce ou les deux, cette étape n’est pas nécessaire.
 Voir [Concepts de commerce électronique dans Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives** : personnalisez l’image utilisée pour représenter des zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactives prêt à l’emploi `Shoppable_Banner`.
+1. **(Facultatif) Créer un paramètre prédéfini de visionneuse d’images interactives**  : personnalisez l’image utilisée pour représenter des zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactives prêt à l’emploi `Shoppable_Banner`.
 Voir [(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Chargement d’une bannière d’image** : chargez les bannières d’images que vous souhaitez rendre interactives.
+1. **Télécharger une bannière d’image**  : téléchargez les bannières d’image que vous souhaitez rendre interactives.
 Voir [Chargement d’une bannière d’image](#uploading-an-image-banner).
 
-1. **Ajout de zones réactives à une bannière d’image** : ajoutez une ou plusieurs zones réactives à une bannière d’image et associez chacune d’elles à une action, comme un lien hypertexte, un aperçu rapide ou un fragment d’expérience. Après avoir ajouté des zones réactives, vous terminez cette tâche en publiant l’image interactive.
+1. **Ajouter des zones réactives à une bannière d’image**  : ajoutez une ou plusieurs zones réactives à une bannière d’image et associez chacune d’elles à une action telle qu’un lien hypertexte, un aperçu rapide ou un fragment d’expérience. Après avoir ajouté des zones réactives, vous terminez cette tâche en publiant l’image interactive.
 
    * Voir [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
    * Voir [Prévisualisation d’images interactives](#optional-previewing-interactive-images) – Facultatif. Si vous le souhaitez, vous pouvez afficher une représentation de votre bannière Shoppable et tester son interactivité.
    * Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md) pour obtenir des informations sur la publication de ressources d’images interactives.
 
-1. **Ajout d’une image interactive à votre site web ou à votre site web en Experience Manager**  : si vous utilisez des sites Experience Manager ou eCommerce, ou les deux, vous pouvez ajouter l’image interactive à une page web dans Experience Manager. Faites glisser le composant Interactive Media sur la page. Reportez-vous à [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+1. **Ajout d’une image interactive à votre site web**  : si vous utilisez des sites Experience Manager ou eCommerce, ou les deux, vous pouvez ajouter l’image interactive à une page web dans Experience Manager. Faites glisser le composant Interactive Media sur la page. Reportez-vous à [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
    Si vous utilisez des ressources Experience Manager et des instances autonomes de Dynamic Media, vous devez copier le code incorporé sur votre site web, puis l’intégrer à votre aperçu rapide existant. Voir [Intégration d’une image interactive à votre site web](#integrating-an-interactive-image-with-your-website).
 
@@ -166,14 +166,14 @@ Vous pouvez appliquer la même approche utilisée dans les trois exemples ci-des
 
 La page web de démonstration présente plusieurs vignettes de produit, chacune d’entre elles disposant d’un bouton d’aperçu rapide libellé « Plus ». À l’aide de l’outil de débogage de votre navigateur web toujours activé, cliquez sur chaque bouton et notez les URL d’aperçu rapide enregistrées. Une fois que vous avez activé l’aperçu rapide des quatre produits disponibles sur la page, vous obtenez la liste suivante de demandes d’aperçu rapide exécutées en arrière-plan :
 
-* `/datafeed/Men-Windbreaker.json`
-* `/datafeed/Men-SimpleHenley.json`
-* `/datafeed/Men-CamoPullover.json`
-* `/datafeed/Women-QuiltedDownJacket.json`
+* `/datafeed/Male-Windbreaker.json`
+* `/datafeed/Male-SimpleHenley.json`
+* `/datafeed/Male-CamoPullover.json`
+* `/datafeed/Female-QuiltedDownJacket.json`
 
 En examinant les appels au serveur, vous voyez que les informations spécifiques au produit ne sont présentes que dans le chemin de requête. Vous notez également que la chaîne de requête n’est pas du tout utilisée et que deux types de données distincts sont impliqués :
 
-* Le premier type correspond au sexe, Homme ou Femme. Vous pouvez l’appeler « catégorie de produits ».
+* Le premier type est Masculin ou Féminin. Vous pouvez l’appeler « catégorie de produits ».
 * Le second type correspond au nom du produit, comme « CamoPullover ». Vous pouvez supposer que ces informations sont le SKU du produit.
 
 Compte tenu de ces informations, l’intégralité de l’URL de l’aperçu rapide suit le schéma suivant :
@@ -216,7 +216,7 @@ Une fois le paramètre prédéfini de visionneuse enregistré, il est automatiqu
 
    Vous êtes désormais prêt à charger une bannière d’image.
 
-## Chargement d’une bannière d’image  {#uploading-an-image-banner}
+## Chargement d’une bannière d’image {#uploading-an-image-banner}
 
 Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l’étape suivante [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
 
@@ -228,7 +228,7 @@ Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l�
 
    Vous êtes maintenant prêt à ajouter des zones réactives à la bannière d’image. Reportez-vous à la tâche suivante ci-dessous.
 
-## Ajout de zones réactives à une bannière d’image  {#adding-hotspots-to-an-image-banner}
+## Ajout de zones réactives à une bannière d’image {#adding-hotspots-to-an-image-banner}
 
 Vous pouvez ajouter des zones réactives à une bannière d’image à l’aide de l’éditeur dans la page Gestion des zones réactives.
 
@@ -284,7 +284,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
 
          * Consultez [Identification des variables de zone réactive](#optional-identifying-hotspot-variables) ; vous devez définir ces variables.
          * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur de SKU, entrez la SKU, qui est un identifiant unique pour chaque produit ou service que vous proposez. La valeur de la SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
-         * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide que vous devez utiliser pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Mens` est une variable ajoutée.
+         * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide que vous devez utiliser pour identifier un produit, appuyez sur **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Males` est une variable ajoutée.
    * Appuyez sur **[!UICONTROL Lien hypertexte]**.
 
       * Si vous êtes client Sites Experience Manager, appuyez ou cliquez sur l’icône Sélecteur de site (dossier) pour accéder à une URL. La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
@@ -318,7 +318,7 @@ Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
    >[!NOTE]
    Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
 
-### (Facultatif) Aperçu des images interactives  {#optional-previewing-interactive-images}
+### (Facultatif) Aperçu des images interactives {#optional-previewing-interactive-images}
 
 Vous pouvez utiliser l’aperçu pour afficher une représentation de votre image interactive telle qu’elle s’affiche pour les clients et tester les zones réactives de l’image afin de vous assurer qu’elles se comportent comme prévu.
 
@@ -358,7 +358,7 @@ En vous servant du site web de démonstration comme exemple, procédez comme sui
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-Notez que l’image des trois hommes est une balise `IMG` statique :
+Notez que l’image des trois mâles est une balise `IMG` statique :
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
@@ -379,7 +379,7 @@ Voir la commande de service d’images [crop](https://experienceleague.adobe.com
 
 Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rapide existant de votre site web.
 
-## Intégration d’une image interactive dans un aperçu rapide existant  {#integrating-an-interactive-image-with-an-existing-quickview}
+## Intégration d’une image interactive dans un aperçu rapide existant {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 Cette tâche ne s’applique que si vous êtes un client Experience Manager Assets autonome.
