@@ -1,6 +1,6 @@
 ---
-title: Création de fenêtres contextuelles personnalisées à l’aide d’aperçus rapides
-seo-title: Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées
+title: Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide
+seo-title: Utilisation de l’aperçu rapide pour créer des fenêtres contextuelles personnalisées
 description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
 seo-description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
@@ -12,18 +12,18 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Visionneuses
 role: Business Practitioner, Administrator
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 72%
+ht-degree: 68%
 
 ---
 
-# Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
+# Utilisation de l’aperçu rapide pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
 
 L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs d’appuyer sur une zone réactive, une miniature ou sur une zone cliquable pour afficher des informations ou du contenu connexe.
 
-Les aperçus rapides sont pris en charge par les visionneuses suivantes dans Dynamic Media :
+L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynamic Media :
 
 * Images interactives (zones réactives cliquables)
 * Vidéo interactive (miniatures cliquables pendant la lecture vidéo)
@@ -31,7 +31,7 @@ Les aperçus rapides sont pris en charge par les visionneuses suivantes dans Dyn
 
 Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus de création d’un aperçu rapide est identique pour les trois visionneuses prises en charge.
 
-**Pour utiliser des aperçus rapides en vue de la création de fenêtres contextuelles:**
+**Pour utiliser l’aperçu rapide afin de créer des fenêtres contextuelles personnalisées :**
 
 1. Créez un aperçu rapide pour une ressource téléchargée.
 
@@ -114,7 +114,7 @@ ExempleSupposons que vous utilisiez l’exemple de code intégré suivant sur vo
 
 1. Vous devez maintenant configurer le gestionnaire `quickViewActivate` .
 
-   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code incorporé fournit un mappage pour la variable SKU définie dans l’aperçu rapide et un exemple d’appel de fonction `loadQuickView`.
+   Le gestionnaire `quickViewActivate` contrôle l’aperçu rapide dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code incorporé fournit un mappage pour la variable SKU définie dans l’aperçu rapide et un exemple d’appel de fonction `loadQuickView`.
 
    **Correspondance de variables** Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
 
