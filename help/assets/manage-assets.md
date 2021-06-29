@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gestion des ressources, Recherche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
+source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
 workflow-type: tm+mt
-source-wordcount: '9743'
-ht-degree: 64%
+source-wordcount: '9788'
+ht-degree: 63%
 
 ---
 
@@ -40,7 +40,7 @@ Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici 
 
 N’incluez pas de caractères spéciaux dans les extensions des noms de fichier des ressources.
 
-## Chargement des ressources {#uploading-assets}
+## Charger des ressources {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
@@ -121,7 +121,7 @@ Si la ressource que vous téléchargez existe dans [!DNL Assets], la boîte de d
 
 ![Boîte de dialogue Dupliquer la ressource détectée](assets/duplicate-asset-detected.png)
 
-Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, cliquez sur **[!UICONTROL Supprimer]**.
+Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
 [!DNL Experience Manager Assets] vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contient un ou plusieurs caractères interdits, [!DNL Assets] affiche un message d’avertissement à ce sujet et interrompt l’opération jusqu’à ce que vous supprimiez les caractères concernés ou utilisiez un nom autorisé.
 
@@ -569,7 +569,7 @@ Pour supprimer une ressource ou un dossier contenant une ressource :
    >[!NOTE]
    >
    >* Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. Désactivez également l’option Forcer la suppression à l’aide d’une superposition pour empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
-   >* Il est possible de supprimer un *dossier* contenant des fichiers de ressources extraits. Avant de supprimer un dossier, assurez-vous qu’aucune ressource numérique n’est extraite par les utilisateurs.
+   >* Il est possible de supprimer un *dossier* contenant des fichiers de ressources extraits. Avant de supprimer un dossier, assurez-vous qu’aucune ressource numérique n’ait été extraite par les utilisateurs.
 
 
 >[!NOTE]
@@ -712,7 +712,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 >
 >La chronologie comprend plusieurs [options spécifiques aux fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-## Annotation de ressources {#annotating}
+## Appliquer des annotations à des ressources {#annotating}
 
 Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
@@ -765,7 +765,17 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 ### Affichage des annotations enregistrées {#viewing-saved-annotations}
 
-1. Pour afficher les annotations enregistrées pour une ressource, accédez à l’emplacement de la ressource et ouvrez la page de la ressource.
+Une seule annotation peut être affichée à la fois.
+
+>[!NOTE]
+>
+>Si vous sélectionnez plusieurs annotations, la dernière en date est visible dans l’interface utilisateur.
+>
+>La sélection multiple est prise en charge uniquement pour l’impression de la ressource annotée au format PDF.
+
+**Pour afficher les annotations enregistrées d’une ressource :**
+
+1. Accédez à l’emplacement de la ressource et ouvrez la page Ressource.
 
 1. Dans l’interface du Experience Manager, sélectionnez **[!UICONTROL Chronologie]**.
 1. Dans la liste **[!UICONTROL Afficher tout]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
@@ -781,6 +791,10 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 Si une ressource comporte des annotations ou si elle a fait l’objet d’un workflow de révision, vous pouvez l’imprimer avec les annotations et l’état de révision sous la forme d’un fichier PDF en vue d’effectuer une révision hors ligne.
 
 Vous pouvez également choisir de n’imprimer que les annotations ou l’état de révision.
+
+>[!NOTE]
+>
+>Vous pouvez sélectionner plusieurs annotations lors de l’impression de la ressource annotée au format PDF.
 
 Pour imprimer les annotations et l’état de révision, cliquez sur **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’option **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un état de révision.
 
