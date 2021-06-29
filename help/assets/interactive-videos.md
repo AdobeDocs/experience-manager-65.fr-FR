@@ -11,10 +11,10 @@ docset: aem65
 feature: Vidéos interactives
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '6013'
-ht-degree: 82%
+source-wordcount: '6015'
+ht-degree: 75%
 
 ---
 
@@ -71,34 +71,34 @@ Lorsque vous avez terminé le tutoriel dans la dernière section Exemple, la pag
 
 Étapes de la vidéo interactive :
 
-1. **(Facultatif) Identification de variables d’aperçu rapide** : commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante de l’aperçu rapide. Vous utilisez des variables pour mapper des vignettes de produit à l’aperçu rapide du produit correspondant lorsque vous créez votre vidéo interactive. Consulter [(Facultatif) Identification des variables d’aperçu rapide](#optional-identifying-quickview-variables).
-   *Cette étape n’est nécessaire que si toutes les conditions suivantes sont vraies* : ・ Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
+1. **(Facultatif) Identifiez les variables**  d’aperçu rapide : commencez par identifier les variables dynamiques utilisées par votre mise en oeuvre existante de l’aperçu rapide. Vous utilisez des variables pour mapper des vignettes de produit à l’aperçu rapide du produit correspondant lorsque vous créez votre vidéo interactive. Voir [(Facultatif) Identification des variables d’aperçu rapide](#optional-identifying-quickview-variables).
+   *Cette étape n’est nécessaire que si toutes les conditions suivantes sont vraies* : ・ Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant un aperçu rapide.
 ・ Votre mise en oeuvre de Experience Manager n’utilise *pas* une structure d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir de n’importe quelle solution de commerce électronique, comme IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts de commerce électronique dans Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse de vidéos interactives** : personnalisez l’aspect et le comportement des différents composants qui constituent la visionneuse, comme la barre vidéo et les miniatures interactives.
+1. **(Facultatif) Créer un paramètre prédéfini de visionneuse de vidéos interactives** : personnalisez l’aspect et le comportement des différents composants qui constituent la visionneuse, comme la barre vidéo et les miniatures interactives.
 Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse de vidéos interactives si vous envisagez plutôt d’utiliser les paramètres de visionneuse de vidéos interactives prêts à l’emploi `Shoppable_Video_Light` ou `Shoppable_Video_Dark`.
-Voir [Création d’un paramètre prédéfini de visionneuse](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (facultatif) et [Aspects spéciaux de la création d’un paramètre prédéfini de visionneuse de vidéos interactives](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
+Voir [Création d’un paramètre prédéfini de visionneuse](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (facultatif) et [Remarques spéciales sur la création d’un paramètre prédéfini de visionneuse interactive](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
-1. **Chargement d’une vidéo et des ressources d’image associées** : chargez une vidéo et les images associées auxquelles vous souhaitez ajouter de l’interactivité.
-Reportez-vous à la section [Chargement d’une vidéo et des ressources miniatures associées](#uploading-a-video-and-its-associated-thumbnail-assets).
+1. **Charger une vidéo et les ressources d’image associées** : chargez une vidéo et les images associées auxquelles vous souhaitez ajouter de l’interactivité.
+Voir [Chargement d’une vidéo et des ressources miniatures associées](#uploading-a-video-and-its-associated-thumbnail-assets).
 
-1. **Ajout d’interactivité à votre vidéo** : ajoutez un ou plusieurs segments temporels à la vidéo. Ensuite, associez les vignettes dans ces segments temporels. Affectez chaque miniature d’image à une action telle qu’un lien hypertexte, un aperçu rapide ou un fragment d’expérience.
+1. **Ajouter de l’interactivité à votre vidéo** : ajoutez un ou plusieurs segments temporels à la vidéo. Ensuite, associez les vignettes dans ces segments temporels. Affectez chaque miniature d’image à une action telle qu’un lien hypertexte, un aperçu rapide ou un fragment d’expérience.
 (La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.)
 Terminez en publiant les ressources vidéo interactives. La publication crée le code intégré ou l’URL que vous copiez et appliquez à la fin dans la page d’entrée de votre site web. Voir [Ajout d’interactivité à votre vidéo](#adding-interactivity-to-your-video).
-Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
+Voir [Publier les ressources](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. **Ajout d’une vidéo interactive à votre site web ou à votre site web en Experience Manager**  : si vous utilisez Experience Manager Sites ou eCommerce, ou les deux, vous pouvez ajouter la vidéo interactive à une page web. Faites glisser le composant Interactive Media sur la page dans Experience Manager. Reportez-vous à [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
-Utilisez le code intégré ou l’URL pour intégrer votre vidéo interactive aux expériences de votre site web. Reportez-vous à la section [Intégration d’une vidéo interactive à votre site web](#integrating-an-interactive-video-with-your-website).
-Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégrer la nouvelle vidéo interactive à l’aperçu rapide existant utilisé sur votre site web. Voir [Intégration d’une vidéo interactive dans un aperçu rapide existant](#integrating-an-interactive-video-with-an-existing-quickview).
-   [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md)
+1. **Ajout d’une vidéo interactive à votre site web ou à votre site web en Experience Manager**  : si vous utilisez Experience Manager Sites ou eCommerce, ou les deux, vous pouvez ajouter la vidéo interactive à une page web. Faites glisser le composant Interactive Media sur la page dans Experience Manager. Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Utilisez le code intégré ou l’URL pour intégrer votre vidéo interactive aux expériences de votre site web. Voir [Intégration d’une vidéo interactive à votre site web](#integrating-an-interactive-video-with-your-website).
+Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégrer la nouvelle vidéo interactive à l’aperçu rapide existant utilisé sur votre site web. Voir [Intégration d’une vidéo interactive à un aperçu rapide existant](#integrating-an-interactive-video-with-an-existing-quickview).
+   [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-## (Facultatif) Identification de variables d’aperçu rapide {#optional-identifying-quickview-variables}
+## (Facultatif) Identification des variables d’aperçu rapide {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 >
 >Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
 >
->* Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
+>* Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant un aperçu rapide.
 >* Votre mise en oeuvre de Experience Manager n’utilise *pas* une structure d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir de n’importe quelle solution de commerce électronique, comme IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts de commerce électronique dans Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
@@ -186,7 +186,7 @@ Lorsque l’approche ci-dessus est appliquée à l’exemple de site web, la pag
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
-Une fois que vous avez activé l’aperçu rapide de tous les produits disponibles dans la page, vous obtenez la liste de demandes d’aperçu rapide exécutées en arrière-plan ci-dessous :
+Après avoir activé tous les aperçus rapides de produit disponibles sur la page, vous obtenez la liste suivante des demandes d’aperçu rapide effectuées au serveur principal :
 
 * datafeed/candles-233396346.json
 * datafeed/candles-233978050.json
@@ -222,7 +222,7 @@ En fonction de cette analyse, vous concluez que vous pouvez utiliser les deux va
 
 Vous êtes maintenant prêt à charger une vidéo et les ressources de vignette associées.
 
-## (En option) Création d’un paramètre prédéfini de la visionneuse de vidéo interactive  {#optional-creating-an-interactive-video-viewer-preset}
+## (Facultatif) Création d’un paramètre prédéfini de visionneuse de vidéos interactives {#optional-creating-an-interactive-video-viewer-preset}
 
 Vous pouvez ignorer cette tâche et passer à la tâche suivante si vous envisagez d’utiliser les types de paramètres prédéfinis de visionneuse de vidéos interactives par défaut, prêtes à l’emploi, `Shoppable_Video_dark` ou `Shoppable_Video_light`.
 
@@ -234,15 +234,15 @@ Vous avez la possibilité de créer votre propre paramètre prédéfini de visio
 
 Un paramètre prédéfini de visionneuse de vidéo interactive restitue correctement la vidéo et tous les segments de la chronologie que vous avez ajoutés. Il utilise également un aperçu rapide d’exemple par défaut lorsque vous cliquez sur la miniature d’un produit en mode Aperçu afin de pouvoir tester son interactivité avant la publication.
 
-Une fois le paramètre prédéfini de la visionneuse enregistré, son état est automatiquement définit sur **On** (Activé) sur la page Paramètres prédéfinis de la visionneuse. Cet état signifie qu’il est visible dans le composant Dynamic Media et chaque fois que vous prévisualisez une vidéo avec ce paramètre prédéfini. Veillez à également publier manuellement votre nouveau paramètre prédéfini de visionneuse.
+Une fois le paramètre prédéfini de la visionneuse enregistré, son état est automatiquement définit sur **On**(Activé) dans la page Paramètres prédéfinis de la visionneuse. Cet état signifie qu’il est visible dans le composant Dynamic Media et chaque fois que vous prévisualisez une vidéo avec ce paramètre prédéfini. Veillez à également publier manuellement votre nouveau paramètre prédéfini de visionneuse.
 
-Pour créer votre propre paramètre prédéfini de visionneuse de vidéos interactives, reportez-vous à la section [Création d’un paramètre prédéfini de visionneuse](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+Voir [Création d’un paramètre prédéfini de visionneuse](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) pour créer votre propre paramètre prédéfini de visionneuse de vidéos interactives.
 
 ## Chargement d’une vidéo et de ses ressources miniatures associées {#uploading-a-video-and-its-associated-thumbnail-assets}
 
-Si vous avez déjà chargé votre vidéo et les ressources miniatures, passez à la section [Ajout d’interactivité à votre vidéo](#adding-interactivity-to-your-video).
+Si vous avez déjà téléchargé votre vidéo et les ressources miniatures, passez à la section [Ajout d’interactivité à votre vidéo](#adding-interactivity-to-your-video).
 
-Si vous n’avez pas transféré les vidéos ou images appropriées, ou si vous souhaitez supprimer les vidéos ou images transférées dont vous n’avez plus besoin, reportez-vous à la section [Suppression de ressources](/help/assets/manage-assets.md#deleting-assets).
+Si vous avez téléchargé des vidéos ou des images incorrectes, ou si vous souhaitez supprimer des vidéos ou des images téléchargées dont vous n’avez plus besoin, voir [Suppression de ressources](/help/assets/manage-assets.md#deleting-assets).
 
 Pour télécharger une vidéo et ses ressources miniatures associées :
 
@@ -430,7 +430,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
       <td>Pour associer l’image miniature sélectionnée à un fragment d’expérience</td> 
       <td><p>Sous Type d’action, appuyez sur <strong>Fragment d’expérience</strong>, puis effectuez les actions suivantes :<p> 
        <ul> 
-       <li>Si vous êtes client Sites Experience Manager, appuyez ou cliquez sur l’icône Rechercher (loupe) pour ouvrir la page Fragment d’expérience. Appuyez ou cliquez sur le fragment d’expérience à utiliser, puis appuyez sur <strong>Sélectionner </strong>dans le coin supérieur droit de la page afin de revenir au panneau Actions de la page précédente.<br /> Voir <a href="/help/sites-authoring/experience-fragments.md">Fragments d’expérience</a>.</li> 
+       <li>Si vous êtes client Experience Manager Sites, appuyez ou cliquez sur l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Appuyez ou cliquez sur le fragment d’expérience à utiliser, puis appuyez sur <strong>Sélectionner </strong>dans le coin supérieur droit de la page afin de revenir au panneau Actions de la page précédente.<br /> Voir <a href="/help/sites-authoring/experience-fragments.md">Fragments d’expérience</a>.</li> 
       </ul> 
        <ul> 
        <li>Indiquez la largeur et la hauteur du fragment d’expérience tel que vous souhaitez le voir apparaître sur la vidéo.</li>
@@ -493,15 +493,15 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
 
 1. Publiez la vidéo interactive. La publication crée le code intégré ou l’URL que vous copiez et appliquez à la fin dans les expériences de votre site web.
 
-   Si vous avez ajouté l’interactivité avec des aperçus rapides, utilisez uniquement le code intégré ; si vous avez ajouté l’interactivité grâce à des pages web connectées par liens hypertexte, vous pouvez également utiliser l’URL publiée. Notez toutefois que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+   Si vous avez ajouté l’interactivité avec l’aperçu rapide, n’utilisez que le code intégré ; si vous avez ajouté l’interactivité avec des pages web connectées par liens hypertexte, vous pouvez également utiliser l’URL publiée. Notez toutefois que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
 
    Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
    >
-   >Pour publier une vidéo commerciale avec des aperçus rapides, veillez également à publier séparément chaque ressource image liée à la vidéo dans votre espace commercial.
+   >Pour publier une vidéo Shoppable avec l’aperçu rapide, veillez également à publier séparément chaque ressource d’image associée à la vidéo dans votre zone commerciale.
 
-   Une fois les segments de chronologie ajoutés et la vidéo interactive publiée, vous êtes prêt à l’ajouter à la page d’entrée de votre site web existant. Reportez-vous à [Intégration d’une vidéo interactive à votre site web](#integrating-an-interactive-video-with-your-website).
+   Une fois les segments de chronologie ajoutés et la vidéo interactive publiée, vous êtes prêt à l’ajouter à la page d’entrée de votre site web existant. Voir [Intégration d’une vidéo interactive à votre site web](#integrating-an-interactive-video-with-your-website).
 
 ## Publication de ressources vidéo interactives {#publishing-interactive-video-assets}
 
@@ -511,13 +511,13 @@ Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md)
 
 Une fois que vous avez téléchargé une vidéo, que vous lui avez ajouté des segments de chronologie et que vous avez publié la vidéo interactive, vous êtes prêt à l’ajouter à votre site web existant.
 
-Si vous êtes un client Experience Manager Sites, vous pouvez ajouter la vidéo interactive en faisant glisser le composant Interactive Media dans votre page. Reportez-vous à [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Si vous êtes un client Experience Manager Sites, vous pouvez ajouter la vidéo interactive en faisant glisser le composant Interactive Media dans votre page. Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Si vous êtes un client Experience Manager Assets autonome, vous pouvez ajouter manuellement la vidéo interactive à votre site web, comme indiqué dans cette section.
 
-1. Copiez le code intégré de la vidéo interactive publiée ou l’URL.
+1. Copiez le code intégré ou l’URL de la vidéo interactive publiée.
 Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
-Si vous avez ajouté l’interactivité avec des aperçus rapides, utilisez uniquement le code intégré ; si vous avez ajouté l’interactivité grâce à des pages web connectées par liens hypertexte, vous pouvez également utiliser l’URL publiée. Notez toutefois que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Si vous avez ajouté l’interactivité avec l’aperçu rapide, n’utilisez que le code intégré ; si vous avez ajouté l’interactivité avec des pages web connectées par liens hypertexte, vous pouvez également utiliser l’URL publiée. Notez toutefois que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
 
 1. Dans le code de la page web cible, identifiez l’emplacement de la vidéo statique.
 1. Supprimez la vidéo statique et remplacez le code par celui incorporé ou par l’URL que vous avez copié à partir d’Experience Manager Assets, en l’état.
@@ -527,7 +527,7 @@ Le code incorporé copié est défini pour un environnement réactif afin qu’i
 >
 >À ce stade, si vous avez ajouté l’interactivité avec seulement des pages web connectées par liens hypertexte, votre travail est terminé.
 >
->Toutefois, si vous avez ajouté une interactivité pour déclencher un aperçu rapide, les miniatures en regard de la vidéo interactive sont à des fins d’affichage uniquement. ils ne sont pas encore intégrés à vos aperçus rapides existants. Dans ce cas, vous devez maintenant intégrer la vidéo interactive aux aperçus rapides existants de votre site web.
+>Toutefois, si vous avez ajouté une interactivité pour déclencher un aperçu rapide, les miniatures en regard de la vidéo interactive sont à des fins d’affichage uniquement. ils ne sont pas encore intégrés à votre aperçu rapide existant. Dans ce cas, vous devez maintenant intégrer la vidéo interactive à l’aperçu rapide existant sur votre site web.
 
 **Exemple**
 
@@ -562,11 +562,11 @@ Notez que le code incorporé est standard :
 </script>
 ```
 
-L’intégration est aussi simple que la suppression du code intégré de la vidéo et son remplacement par le code intégré de la vidéo interactive à partir d’Experience Manager. Vous pouvez afficher le résultat à l’adresse URL suivante : Même si la page contient une vidéo interactive, celle-ci n’est pas encore intégrée aux aperçus rapides existants :
+L’intégration est aussi simple que la suppression du code intégré de la vidéo et son remplacement par le code intégré de la vidéo interactive à partir d’Experience Manager. Vous pouvez afficher le résultat à l’adresse URL suivante : Bien qu’elle affiche une vidéo interactive présente sur la page, elle n’est pas encore intégrée à l’aperçu rapide existant :
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## Intégration d’une vidéo interactive avec un aperçu rapide existant {#integrating-an-interactive-video-with-an-existing-quickview}
+## Intégration d’une vidéo interactive dans un aperçu rapide existant {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 >
@@ -594,7 +594,7 @@ Dans un tel gestionnaire d’événements, le code frontal effectue les opérati
 * Il crée une URL d’aperçu rapide basée sur les données de la miniature.
 * Il déclenche le processus de chargement de l’aperçu rapide depuis le serveur principal et en effectue le rendu à l’écran.
 
-De plus, la visionneuse de vidéos interactives prend en charge le mode de fonctionnement Plein écran. L’utilisateur final déclenche les aperçus rapides en cliquant sur une miniature sans quitter le mode Plein écran. Pour bénéficier de cette fonctionnalité, vous modifiez le code frontal afin que la boîte de dialogue modale d’aperçu rapide soit associée au conteneur de la visionneuse. N’ajoutez pas l’élément BODY du document ni d’autres éléments de page web qui ne sont pas disponibles lorsque la visionneuse est en mode Plein écran. Le code qui effectue cette tâche doit écouter un ou plusieurs rappels de visionneuse envoyés après la visionneuse qui se charge sur la page.
+De plus, la visionneuse de vidéos interactives prend en charge le mode de fonctionnement Plein écran. L’utilisateur final déclenche l’aperçu rapide en cliquant sur une miniature sans quitter le mode Plein écran. Pour bénéficier de cette fonctionnalité, vous modifiez le code frontal afin que la boîte de dialogue modale d’aperçu rapide soit associée au conteneur de la visionneuse. N’ajoutez pas l’élément BODY du document ni d’autres éléments de page web qui ne sont pas disponibles lorsque la visionneuse est en mode Plein écran. Le code qui effectue cette tâche doit écouter un ou plusieurs rappels de visionneuse envoyés après la visionneuse qui se charge sur la page.
 
 Le code intégré renvoyé par Experience Manager comporte déjà un descripteur d’événement prêt à l’emploi. Il est commenté, comme dans le fragment de code mis en évidence ci-dessous :
 
@@ -700,7 +700,7 @@ Le site web de démonstration déclenche la boîte de dialogue d’aperçu rapid
 loadQuickView(quickViewUrl);
 ```
 
-Enfin, veillez à ce que la boîte de dialogue d’aperçu rapide soit associée à l’élément de conteneur de la visionneuse. Le code intégré par défaut indique les exemples d’étapes à suivre pour bénéficier de cette fonctionnalité. Pour obtenir une référence à l’élément de conteneur de la visionneuse, vous pouvez utiliser les lignes de code ci-dessous :
+Enfin, veillez à ce que la boîte de dialogue d’aperçu rapide soit associée à l’élément de conteneur de la visionneuse. Le code incorporé par défaut fournit des exemples d’étapes pour atteindre cette fonctionnalité. Pour obtenir une référence à l’élément de conteneur de la visionneuse, vous pouvez utiliser les lignes de code ci-dessous :
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -711,7 +711,7 @@ Où `inner_container` est une référence à un élément `DIV` géré par la vi
 
 La procédure de recherche de l’élément de boîte de dialogue modale et d’association au conteneur ci-dessus dépend de chaque cas. Là encore, vous pouvez obtenir de l’aide auprès du développeur frontal, qui connaît votre mise en œuvre de l’aperçu rapide nécessaire.
 
-Si nous utilisons l’exemple de site web, la boîte de dialogue modale de l’aperçu rapide est mise en oeuvre sous la forme `DIV` avec l’ID quickview-modal associé directement au document `BODY`. Par conséquent, le code utilisé pour déplacer cette boîte de dialogue dans le conteneur de la visionneuse est aussi simple que ce qui suit :
+Si vous utilisez l’exemple de site web, la boîte de dialogue modale de l’aperçu rapide est mise en oeuvre sous la forme `DIV` avec l’ID quickview-modal associé directement au document `BODY`. Par conséquent, le code utilisé pour déplacer cette boîte de dialogue dans le conteneur de la visionneuse est aussi simple que ce qui suit :
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -766,6 +766,6 @@ Le dernier site web de démonstration avec la vidéo interactive totalement int�
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Création de fenêtres contextuelles personnalisées à l’aide d’aperçus rapides {#using-quickviews-to-create-custom-pop-ups}
+## Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
-Voir [Création de fenêtres contextuelles personnalisées à l’aide d’aperçus rapides](/help/assets/custom-pop-ups.md).
+Voir [Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide](/help/assets/custom-pop-ups.md).
