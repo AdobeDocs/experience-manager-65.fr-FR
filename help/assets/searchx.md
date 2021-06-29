@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Rechercher
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
 source-wordcount: '839'
-ht-degree: 77%
+ht-degree: 74%
 
 ---
 
@@ -59,7 +59,7 @@ La pratique recommandée consiste à copier un prédicat existant, puis à le mo
 
 Pour créer un prédicat de propriété, procédez comme suit :
 
-1. Créez un dossier de composant dans votre répertoire de projets, par exemple **/apps/geometrixx/components/titlepredicate**.
+1. Créez un dossier de composants dans votre répertoire de projets, par exemple **/apps/weretail/components/titlepredicate**.
 1. Ajoutez **content.xml** :
 
    ```xml
@@ -152,7 +152,7 @@ Pour créer un prédicat de propriété, procédez comme suit :
 
 Pour créer un prédicat de groupe, procédez comme suit :
 
-1. Créez un dossier de composant dans votre répertoire de projets, par exemple **/apps/geometrixx/components/picspredicate**.
+1. Créez un dossier de composants dans votre répertoire de projets, par exemple **/apps/weretail/components/picspredicate**.
 1. Ajoutez **content.xml** :
 
    ```xml
