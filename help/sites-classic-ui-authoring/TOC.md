@@ -1,13 +1,13 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.5 Classic UI
 user-guide-description: Ce guide couvre les concepts de création dans AEM dans l’interface utilisateur classique.
-feature: 'Création  '
+feature: 'Création '
 role: Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 84%
@@ -15,7 +15,7 @@ ht-degree: 84%
 ---
 
 
-# Guide de l’utilisateur pour la création dans l’interface utilisateur classique d’AEM 6.5 {#classic-ui}
+# Guide de l’utilisateur pour la création dans AEM 6.5 Classic UI {#classic-ui}
 
 + [Guide de création de l’interface utilisateur classique - Aperçu](home.md)
 + Présentation de la création dans l’interface utilisateur classique {#introduction}
@@ -26,8 +26,8 @@ ht-degree: 84%
    + [Configuration de l’environnement du compte](author-env-user-props.md)
    + [Choix de l’interface utilisateur](author-env-select-ui.md)
    + [Rechercher](author-env-search.md)
-   + [Votre boîte de réception  ](author-env-inbox.md)
-   + [Raccourcis clavier pour les consoles  ](author-env-keyboard-shortcuts.md)
+   + [Votre boîte de réception ](author-env-inbox.md)
+   + [Raccourcis clavier pour les consoles ](author-env-keyboard-shortcuts.md)
 + Création {#authoring}
    + [Création de pages](classic-page-author.md)
    + [Création – Environnement et outils](classic-page-author-env-tools.md)
@@ -44,7 +44,7 @@ ht-degree: 84%
    + [Raccourcis clavier lors de la modification de pages](classic-page-author-keyboard-shortcuts.md)
 + Fonctions de site et de page {#siteandpage}
    + [Création de page à partir de fragments de contenu](classic-page-author-content-fragments.md)
-   + [Mise en page réactive  ](classic-page-author-responsive-layout.md)
+   + [Mise en page réactive](classic-page-author-responsive-layout.md)
    + [Utilisation des versions de page](classic-page-author-work-with-versions.md)
    + [Utilisation des balises](classic-feature-tags.md)
    + [Génération de modèles automatique](classic-feature-scaffolding.md)
@@ -60,7 +60,7 @@ ht-degree: 84%
    + [Création de lancements](classic-launches-creating.md)
    + [Modification de lancements](classic-launches-editing.md)
    + [Conversion de lancements](classic-launches-promoting.md)
-+ Personnalisation {#personalization}
++ Personnalisation  {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
    + [Pages d’entrée](classic-personalization-campaigns-landingpage.md)
