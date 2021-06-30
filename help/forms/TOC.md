@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-sub-product: formulaires
-solution: Experience Manager, Experience Manager Forms
+sub-product: forms
+solution: Experience Manager, Experience Manager Forms, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '3718'
 ht-degree: 72%
@@ -197,7 +197,7 @@ ht-degree: 72%
 + Workflows {#workflows}
    + [Processus basé sur l’utilisation de Forms sur OSGi](using/aem-forms-workflow.md)
    + [Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi](using/aem-forms-workflow-step-reference.md)
-   + [Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de processus basés sur l’utilisation d’AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE](using/capabilities-osgi-jee-workflows.md)
    + [Lancement des API de Services de document à partir d’un flux de travail AEM](using/initiating-document-services-apis-aem.md)
    + [Connexion aux workflows AEM Forms](/help/forms/using/forms-workflow-logs.md)
