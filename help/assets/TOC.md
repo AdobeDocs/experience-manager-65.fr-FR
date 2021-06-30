@@ -1,12 +1,12 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 59%
@@ -39,7 +39,7 @@ ht-degree: 59%
    + [Newsletter sur Dynamic Media par Experience League](dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](administering-dynamic-media.md)
    + [Utilisation de Dynamic Media](dynamic-media.md)
-   + [Configuration de Dynamic Media – mode Scene7](config-dms7.md)
+   + [Configuration de Dynamic Media - Mode Scene7](config-dms7.md)
    + [Configuration de Dynamic Media – mode hybride](config-dynamic.md)
    + [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
    + [Accessibilité dans Dynamic Media](accessibility-dm.md)
@@ -63,7 +63,7 @@ ht-degree: 59%
    + [Images panoramiques](panoramic-images.md)
    + [Visionneuses de médias mixtes](mixed-media-sets.md)
    + [Visionneuses à 360°](spin-sets.md)
-   + [Vidéo dans Dynamic Media](video.md)
+   + [Vidéo dans Dynamic Media](video.md)
    + [Bannières de carrousel](carousel-banners.md)
    + [Images interactives](interactive-images.md)
    + [Vidéos interactives](interactive-videos.md)
