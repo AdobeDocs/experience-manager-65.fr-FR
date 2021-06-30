@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guide de l’utilisateur pour le développement d’AEM 6.5
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Développement
 role: Developer
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 81%
    + [Migration vers l’interface utilisateur tactile](/help/sites-developing/touch-ui-migration.md)
 + Plate-forme{#platform}
    + [Aide-mémoire pour Sling ](sling-cheatsheet.md)
-   + [Utilisation des adaptateurs Sling](sling-adapters.md)
+   + [Utilisation des adaptateurs Sling ](sling-adapters.md)
    + [Bibliothèques de balises](taglib.md)
    + Modèles{#templates}
       + [Modèles](templates.md)
@@ -46,12 +46,12 @@ ht-degree: 81%
       + [Modèles de page - Statiques](page-templates-static.md)
       + [Modèles de fragment de contenu](content-fragment-templates.md)
       + [Rendu de modèle adaptatif](templates-adaptive-rendering.md)
-   + [Utilisation de Sling Resource Merger dans AEM   ](sling-resource-merger.md)
+   + [Utilisation de Sling Resource Merger dans AEM ](sling-resource-merger.md)
    + [Recouvrements](overlays.md)
    + [Conventions de dénomination](naming-conventions.md)
    + [Création d’un composant de champ d’IU Granite](granite-ui-component.md)
    + Query Builder{#query-builder}
-      + [Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder.](implementing-custom-predicate-evaluator.md)
+      + [Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder](implementing-custom-predicate-evaluator.md)
       + [Référence des prédicats de Query Builder](querybuilder-predicate-reference.md)
       + [API Query Builder](querybuilder-api.md)
    + Balisage{#tagging}
@@ -110,13 +110,13 @@ ht-degree: 81%
       + [Développement de SPA pour AEM](spa-architecture.md)
       + [Plan directeur d’applications sur une seule page (SPA)](spa-blueprint.md)
       + [Composant de page SPA](spa-page-component.md)
-      + [Mappage du modèle dynamique avec les composants pour les SPA](spa-dynamic-model-to-component-mapping.md)
+      + [Mappage dynamique de modèle à composant pour SPA](spa-dynamic-model-to-component-mapping.md)
       + [Routage du modèle de SPA](spa-routing.md)
       + [Intégration de SPA et d’Adobe Experience Platform Launch](spa-launch.md)
       + [SPA et rendu côté serveur](spa-ssr.md)
       + [Composant RemotePage](spa-remote-page.md)
       + [Modification d’une SPA externe dans AEM](spa-edit-external.md)
-      + [Composants composites dans SPA](spa-composite-component.md)
+      + [Composants composites dans les SPA](spa-composite-component.md)
       + [Documents de référence SPA](spa-reference-materials.md)
    + API HTTP [ ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
    + [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
@@ -137,7 +137,7 @@ ht-degree: 81%
    + [Extension AEM Brackets](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation{#personlization}
++ Personnalisation {#personlization}
    + [ContextHub](contexthub.md)
    + [Configuration de ContextHub](ch-configuring.md)
    + [Ajout de ContextHub à des pages et accès à des magasins](ch-adding.md)
@@ -174,7 +174,7 @@ ht-degree: 81%
       + [Personnalisation de la structure Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
-      + [Configurations du service cloud](extending-cloud-config.md)
+      + [Configurations du service cloud ](extending-cloud-config.md)
       + [Création d’un service cloud personnalisé](extending-cloud-config-custom-cloud.md)
    + [Création d’extensions personnalisées](extending-campaign-extensions.md)
    + Forms{#extending-forms}
