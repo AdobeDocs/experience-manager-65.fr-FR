@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: admin-user
 user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.5
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 feature: Administration
 role: Administrator
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 92%
@@ -51,7 +51,7 @@ ht-degree: 92%
    + [Configuration de l’éditeur de texte enrichi](rich-text-editor.md)
    + [Configuration de l’éditeur de texte enrichi pour produire des sites accessibles](rte-accessible-content.md)
    + [Configuration de la commande Annuler pour la modification des pages](config-undo.md)
-   + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
+   + [Configuration des modules externes d’éditeur de texte enrichi ](configure-rich-text-editor-plug-ins.md)
    + [Configuration du composant vidéo](config-video.md)
    + [Éditeur en bloc](bulk-editor.md)
    + [Configuration des notifications électroniques](notification.md)
@@ -99,8 +99,8 @@ ht-degree: 92%
    + [Filtre de disposition du contenu](content-disposition-filter.md)
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Prise en charge des cookies du même site](same-site-cookie-support.md)
-+ Personnalisation {#personalization}
-   + [Personnalisation](personalization.md)
++ Personnalisation  {#personalization}
+   + [Personnalisation ](personalization.md)
    + [Configuration de ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [ClientContext](client-context.md)
    + [Campagnes](campaigns.md)
