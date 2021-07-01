@@ -4,10 +4,10 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
+source-git-commit: 0c5759786a698f7c7503a56da7f472229d18f763
 workflow-type: tm+mt
-source-wordcount: '3837'
-ht-degree: 5%
+source-wordcount: '3843'
+ht-degree: 4%
 
 ---
 
@@ -195,16 +195,6 @@ Le contraste (avec l’arrière-plan) du texte et des icônes ci-dessous est am�
 
 * Les lecteurs d’écran peuvent désormais accéder à diverses options interactives et les décrire dans la page des détails de la ressource (CQ-4290708) des visionneuses.
 
-Problèmes de lecture vidéo connus dans [!DNL Dynamic Media] :
-
-* 
-
-   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
-
-* 
-
-   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
-
 Adobe Experience Manager 6.5.9.0 Assets résout les problèmes suivants dans [!DNL Dynamic Media] :
 
 * Les paramètres de visionneuse prédéfinis et CSS personnalisés ne sont pas répliqués vers [!DNL Dynamic Media] lorsque [!DNL Dynamic Media] est activé de manière sélective et désactivé par [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
@@ -224,6 +214,16 @@ Adobe Experience Manager 6.5.9.0 Assets résout les problèmes suivants dans [!D
 * Les annotations vidéo ne fonctionnent pas pour les chemins d’accès aux dossiers où la configuration [!DNL Dynamic Media] n’est pas activée, même si l’instance [!DNL Experience Manager] est configurée en mode [!DNL Dynamic Media] (CQ-4314950).
 
 * Lorsque le titre des ressources comporte deux octets, plusieurs octets, ASCII élevé, cyrillique, deux paires de substitution, hébreu, arabe et GB18030, puis lors de la publication sur Dynamic Media, le titre de la ressource comporte un point d’interrogation (?) (CQ-4311872).
+
+>Problèmes de lecture vidéo connus dans Dynamic Media *sur Experience Manager 6.5.9.0 uniquement* :
+>
+>* 
+
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+>* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
+
 
 ### Plate-forme {#platform-6590}
 
