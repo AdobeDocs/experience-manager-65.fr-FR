@@ -8,12 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Gestion des ressources
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1448'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 82%
 
 L’optimisation de la qualité des images peut être un processus chronophage, car de nombreux facteurs contribuent à l’obtention de résultats acceptables. Le résultat est en partie subjectif car les individus perçoivent la qualité des images de manière différente. Une expérimentation structurée est la clé.
 
-Adobe Experience Manager comprend plus de 100 commandes de diffusion d’images Dynamic Media pour l’optimisation et le réglage des images et des résultats de rendu. Les instructions suivantes peuvent vous aider à rationaliser le processus et à obtenir de bons résultats rapidement à l’aide de commandes essentielles et de pratiques recommandées.
+Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images Dynamic Media permettant d’affiner et d’optimiser les images et les rendus. Les instructions suivantes peuvent vous aider à rationaliser le processus et à obtenir de bons résultats rapidement à l’aide de commandes essentielles et de pratiques recommandées.
 
 ## Bonnes pratiques relatives au format d’image (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -45,14 +45,14 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 ## Bonnes pratiques relatives à l’accentuation des images {#best-practices-for-image-sharpening}
 
-L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou en Experience Manager en vous référant aux ressources utiles suivantes :
+L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans Experience Manager en vous référant aux ressources suivantes :
 
 Livre blanc des bonnes pratiques [Accentuation des images dans Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) qui s’applique également à Experience Manager.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
 
-Experience Manager vous permet d’accentuer les images lors de l’ingestion, de la diffusion ou des deux. Toutefois, en règle générale, accentuez les images à l’aide d’une seule méthode ou d’une autre, mais pas des deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
+Avec Experience Manager, vous pouvez accentuer les images lors de l’ingestion, lors de la diffusion, ou les deux. Toutefois, en règle générale, accentuez les images à l’aide d’une seule méthode ou d’une autre, mais pas des deux. L’accentuation des images lors de la distribution, sur une URL, produit généralement les meilleurs résultats.
 
 Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
@@ -76,7 +76,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
          Livre blanc des bonnes pratiques [Accentuation des images dans Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-      * Experience Manager vous permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composant de couleur en utilisant la valeur 0 ou à la luminosité/intensité de l’image en utilisant la valeur 1.
+      * Experience Manager permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/l’intensité de l’image en utilisant la valeur 1.
 
 
 Il est recommandé de commencer par le paramètre rayon du masquage flou. Vous trouverez ci-dessous les paramètres rayon avec lesquels vous pouvez commencer :
