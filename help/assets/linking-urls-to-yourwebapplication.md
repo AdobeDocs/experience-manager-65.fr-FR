@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 94%
@@ -37,7 +37,7 @@ Voir aussi [Diffusion d’images optimisées pour un site réactif](responsive-s
 
 Voir aussi [Chargement de ressources](manage-assets.md#uploading-assets).
 
-## Obtention d’une URL pour une ressource {#obtaining-a-url-for-an-asset}
+## Obtention d’une URL pour une ressource  {#obtaining-a-url-for-an-asset}
 
 Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’image prédéfini ou un paramètre prédéfini de la visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
@@ -158,7 +158,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Il s’agit de l’URL complète d’un rendu vidéo publié.
 
-## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Dans AEM, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations]**.
@@ -201,7 +201,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media   {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
