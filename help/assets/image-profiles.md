@@ -8,12 +8,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Profils d’image
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2752'
-ht-degree: 83%
+ht-degree: 86%
 
 ---
 
@@ -86,7 +86,7 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
 | Option | Description |
 | --- | --- |
 | Quantité | Contrôle le degré de contraste appliqué aux pixels de contour. La valeur par défaut est 1.75. Pour les images à haute résolution, vous pouvez l’augmenter jusqu’à 5. Considérez la quantité comme une mesure de l’intensité du filtre. La plage est 0 à 5. |
-| Rayon | Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2. La plage est 0 à 250. |
+| Rayon | Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.  La plage est 0 à 250. |
 | Seuil | Détermine la plage de contraste à ignorer lorsque le filtre de masquage flou est appliqué. En d’autres termes, cette option définit l’écart recherché entre les pixels et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et ne soient accentués. Pour éviter d’introduire du bruit, essayez des valeurs comprises entre 0 et 255. |
 
 L’accentuation est décrite dans [Accentuation des images](/help/assets/assets/sharpening_images.pdf.
@@ -99,9 +99,9 @@ Voir [Profils de traitement des métadonnées, des images et des vidéos](proces
 
 Consultez également la section [Bonnes pratiques pour organiser vos ressources numériques en vue d’utiliser des profils de traitement](/help/assets/organize-assets.md).
 
-**Pour créer des profils d’image Dynamic Media:**
+**Pour créer des profils d’image Dynamic Media :**
 
-1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
+1. Appuyez sur le logo Adobe Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un profil d’image.
 1. Saisissez un nom de profil et les valeurs pour une accentuation, un recadrage et un échantillon.
 
@@ -115,7 +115,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 
 ## Modification ou suppression de profils d’image Dynamic Media {#editing-or-deleting-image-profiles}
 
-1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
 1. Sélectionnez le profil de l’image que vous souhaitez modifier ou supprimer. Pour le modifier, sélectionnez **[!UICONTROL Modifier le profil de traitement d’image]**. Pour le supprimer, sélectionnez **[!UICONTROL Supprimer le ou les profils de traitement des images]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -146,7 +146,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 #### Application de profils d’image Dynamic Media à des dossiers à partir de l’interface utilisateur Profils {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
 1. Sélectionnez le profil d’image à appliquer à un ou plusieurs dossiers.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
@@ -163,7 +163,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 ### Application globale d’un profil d’image Dynamic Media {#applying-an-image-profile-globally}
 
-Outre l’application d’un profil à un dossier, vous pouvez en appliquer un de manière globale de sorte que le profil sélectionné soit appliqué à tout contenu chargé dans des ressources de Experience Manager dans un dossier.
+En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de façon globale, de sorte que tout contenu chargé dans Experience Manager Assets soit traité par ce profil, indifféremment du dossier.
 
 Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
 
@@ -195,7 +195,7 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
 Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Pour modifier le recadrage intelligent ou l’échantillon intelligent d’une seule image:**
+**Pour modifier le recadrage intelligent ou l’échantillon intelligent d’une seule image :**
 
 1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
 
@@ -220,7 +220,7 @@ Une fois que vous avez modifié et enregistré un recadrage intelligent, le chan
 
 Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, si nécessaire.
 
-**Pour modifier le recadrage intelligent ou l’échantillon intelligent de plusieurs images:**
+**Pour modifier le recadrage intelligent ou l’échantillon intelligent de plusieurs images :**
 
 1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Ressources]**, puis à un dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
 1. Sur le dossier, appuyez sur l’icône **[!UICONTROL Autres actions]** (...), puis sur **[!UICONTROL Recadrage intelligent]**.
@@ -271,7 +271,7 @@ Vous pouvez supprimer un profil d’image appliqué à un dossier dans le menu *
 
 ### Suppression d’un profil d’image Dynamic Media d’un dossier au moyen de l’interface utilisateur Profils {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
 1. Sélectionnez le profil d’image à supprimer d’un ou de plusieurs dossiers.
 1. Appuyez sur **[!UICONTROL Supprimer le profil de traitement des dossiers]**, sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, et appuyez sur **[!UICONTROL Terminé]**.
 
