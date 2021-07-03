@@ -3,9 +3,9 @@ title: Traitement des ressources à l’aide de workflows
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 feature: Workflow, Rendus
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 27%
