@@ -2,16 +2,16 @@
 title: '[!DNL Assets] développement de proxy'
 description: Un proxy est un  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] proxy, des opérations prises en charge, des composants de proxy et la manière de développer un programme de travail de proxy personnalisé.
 contentOwner: AG
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
-# [!DNL Assets] développement de proxy  {#assets-proxy-development}
+# [!DNL Assets] développement de proxy {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] utilise un proxy pour distribuer le traitement de certaines tâches.
 
@@ -21,7 +21,7 @@ Lorsque le proxy est une instance [!DNL Experience Manager] distincte, cela perm
 
 ## Proxy (Accès HTTP) {#proxy-http-access}
 
-Un proxy est disponible via le servlet HTTP lorsqu’il est configuré pour accepter des tâches de traitement à l’adresse : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Elle est ensuite ajoutée à la file d’attente des tâches du proxy et connectée au worker de proxy approprié.
+Un proxy est disponible via le servlet HTTP lorsqu’il est configuré de sorte à accepter les tâches de traitement dans le répertoire suivant : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Elle est ensuite ajoutée à la file d’attente des tâches du proxy et connectée au worker de proxy approprié.
 
 ### Opérations prises en charge {#supported-operations}
 
@@ -103,7 +103,7 @@ Voici un exemple d’utilisation d’API :
  proxyJobService.removeJob(jobId);
 ```
 
-### Configurations de Cloud Service {#cloud-service-configurations}
+### Configurations Cloud Service {#cloud-service-configurations}
 
 >[!NOTE]
 >
