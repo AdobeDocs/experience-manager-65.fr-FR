@@ -3,20 +3,20 @@ title: Introduction à [!DNL Adobe Experience Manager Assets]
 description: Découvrez ce qu’est la gestion des ressources numériques, ses cas d’utilisation et l’offre  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
 feature: Gestion des ressources
-role: Leader, Architect, Business Practitioner
+role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 29%
+ht-degree: 30%
 
 ---
 
-# À propos de [!DNL Adobe Experience Manager Assets] en tant que solution de gestion des actifs numériques {#administering-assets}
+# À propos de [!DNL Adobe Experience Manager Assets] en tant que solution DAM {#administering-assets}
 
 [!DNL Assets] est un outil de gestion des ressources numériques (DAM) qui fait partie intégrante de la  [!DNL Experience Manager] plateforme et permet à votre entreprise de gérer et de distribuer des ressources numériques. Les utilisateurs d’une entreprise peuvent gérer, stocker et accéder à de nombreux types de ressources numériques, tels que des images, des vidéos, des documents, des clips audio, des fichiers 3D et des médias riches, en vue de les utiliser sur le web, sur papier et pour la distribution numérique.
 
-## Qu’est-ce que la gestion des ressources numériques ? {#what-is-digital-asset-management}
+## Qu’est-ce que la gestion des actifs numériques (DAM) ? {#what-is-digital-asset-management}
 
 [!DNL Assets] permet le partage et la distribution à l’échelle de l’entreprise des ressources numériques clés d’une entreprise. Les utilisateurs d’une entreprise peuvent stocker, gérer et accéder à des ressources numériques telles que des images, des graphiques, de l’audio, de la vidéo et des documents par le biais d’une interface web (ou d’un dossier CIFS ou WebDAV).
 
@@ -35,14 +35,14 @@ ht-degree: 29%
 
 L’interface utilisateur de base est la même que celle de [!DNL Sites]. Voir [Présentation des sites](/help/sites-authoring/page-authoring.md) pour plus de détails.
 
-### Gestion des ressources numériques et composant d’image {#digital-asset-management-versus-image-component}
+### Gestion des ressources numériques et composant image {#digital-asset-management-versus-image-component}
 
 Lorsque vous déterminez si vous souhaitez placer une image dans le référentiel DAM ou utiliser le composant image, tenez compte du cycle de vie de l’image :
 
 * Si l’image a le même cycle de vie que la page, utilisez le composant Image .
 * Si l’image a un cycle de vie distinct, par exemple, si vous utilisez l’image deux fois ou en dehors de la gestion de contenu web, utilisez [!DNL Assets].
 
-## Que sont les ressources numériques ? {#what-are-digital-assets}
+## Qu’est-ce qu’une ressource numérique ? {#what-are-digital-assets}
 
 Une ressource est un document, une image, une vidéo ou de l’audio numérique (en tout ou en partie) qui peut comporter plusieurs rendus et des sous-ressources (par exemple, les calques d’un fichier photoshop, les diapositives d’un fichier PowerPoint, les pages d’un pdf, les fichiers d’un ZIP).
 
@@ -52,7 +52,7 @@ Une ressource se compose principalement de données binaires + métadonnées + r
 >
 >Le chargement et/ou la modification d’un grand volume de ressources (en particulier des images) peut avoir un impact sur les performances de votre déploiement [!DNL Experience Manager].
 
-### [!DNL Experience Manager Assets] terminologie  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminologie {#aem-assets-terminology}
 
 Lorsque vous utilisez des ressources numériques dans [!DNL Experience Manager], vous devez connaître la terminologie suivante :
 
