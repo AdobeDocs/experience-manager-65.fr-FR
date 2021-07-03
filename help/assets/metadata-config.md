@@ -2,10 +2,10 @@
 title: Configuration et administration de la fonctionnalité de métadonnées.
 description: Configuration et administration de la fonctionnalité  [!DNL Experience Manager Assets] liée à l’ajout et à la gestion des métadonnées.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: 'Métadonnées  '
+role: User, Admin
+feature: Métadonnées
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 56%
@@ -87,7 +87,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 | [!UICONTROL Date] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
 | [!UICONTROL Balises standard] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
 
-1. Cliquez sur **[!UICONTROL Done]** (Terminé). Le profil de métadonnées est ajouté à la liste des profils de la page **[!UICONTROL Profils de métadonnées]**.<br>
+1. Cliquez sur **[!UICONTROL Terminé]**. Le profil de métadonnées est ajouté à la liste des profils de la page **[!UICONTROL Profils de métadonnées]**.<br>
 
    ![Profil de métadonnées ajouté à la page Profils de métadonnées](assets/MetadataProfiles-page.png)
 
@@ -130,11 +130,11 @@ To apply a metadata profile globally, follow these steps:
   ![See applied metadata profile to a folder in the JCR in CRXDE](assets/metadata-profile-folder-setting2.png)
 -->
 
-## Schéma de métadonnées pour un dossier {#folder-metadata-schema}
+## Schéma de métadonnées d’un dossier {#folder-metadata-schema}
 
 [!DNL Adobe Experience Manager Assets] vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers.
 
-### Ajout d’un formulaire de schéma de métadonnées de dossier {#add-a-folder-metadata-schema-form}
+### Ajout d’un formulaire de schéma de métadonnées de dossier  {#add-a-folder-metadata-schema-form}
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
