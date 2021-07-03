@@ -2,10 +2,10 @@
 title: Bonnes pratiques pour surveiller le déploiement de  [!DNL Assets] .
 description: Bonnes pratiques pour surveiller l’environnement et les performances de votre déploiement [!DNL Adobe Experience Manager] après son déploiement.
 contentOwner: AG
-role: Administrator, Architect
+role: Admin, Architect
 feature: Gestion des ressources
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 68%
@@ -74,7 +74,7 @@ La surveillance de l’environnement implique de surveiller les éléments suiva
 
 Des outils externes sont nécessaires, par exemple NewRelic(TM) et AppDynamics(TM) pour la surveillance de chaque élément. Vous pouvez, avec ces outils, définir des alertes spécifiques à votre système, par exemple, en cas d’utilisation intensive du système, pour la sauvegarde des workflow, en cas d’échec des contrôles de l’intégrité ou d’accès non authentifiés à votre site web. Adobe ne recommande pas un outil plutôt qu’un autre. Choisissez l’outil qui correspond le plus à vos besoins et utilisez-le pour la surveillance des éléments indiqués ici.
 
-#### Surveillance des applications internes  {#internal-application-monitoring}
+#### Surveillance des applications internes {#internal-application-monitoring}
 
 La surveillance des applications internes comprend la surveillance des composants d’application qui constituent la pile [!DNL Experience Manager], y compris JVM, le référentiel de contenu et la surveillance par le biais du code d’application personnalisé créé sur la plateforme. En général, elle se fait via les Mbeans JMX qui peuvent être contrôlés directement par de nombreuses et solutions de contrôle populaires telles que SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) et bien d’autres encore. Pour les systèmes ne prenant pas en charge une connexion directe avec JMX, vous pouvez écrire des scripts shell pour extraire les données JMX et les présenter à ces systèmes dans un format intelligible pour eux.
 
@@ -188,7 +188,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
    * Seuil d’alarme : lorsque l’état n’est pas OK.
    * Définition de l’alarme : les fichiers journaux comportent des erreurs. Vérifiez l’attribut de journal pour en savoir plus sur l’origine du problème.
 
-## Problèmes courants et résolutions {#common-issues-and-resolutions}
+## Problèmes courants et résolutions  {#common-issues-and-resolutions}
 
 Dans le processus de surveillance, si vous rencontrez des problèmes, voici quelques tâches de dépannage que vous pouvez effectuer pour résoudre des problèmes courants avec les déploiements de [!DNL Experience Manager] :
 
