@@ -3,10 +3,10 @@ title: Réutilisation des ressources à l’aide de MSM
 description: Utilisez des ressources sur plusieurs pages/dossiers qui sont dérivées des ressources parents et liées à celles-ci. Les ressources restent synchronisées avec une Principale copie et, en quelques clics, reçoivent les mises à jour des ressources parentes.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator, Architect
+role: User, Admin, Architect
 feature: Gestion des ressources, Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3371'
 ht-degree: 71%
@@ -218,7 +218,7 @@ Une action de synchronisation récupère les modifications d’une source unique
 | Barre d’outils de la page [!UICONTROL Propriétés] | Lancez une synchronisation lorsque les propriétés de la Live Copy sont déjà ouvertes. | Voir [Synchronisation d’une Live Copy](#sync-lc) |
 | [!UICONTROL Console Aperçu de la Live Copy] | Synchronisez rapidement plusieurs ressources (pas nécessairement toutes) lorsque le dossier source est sélectionné ou que la console [!UICONTROL Aperçu de la Live Copy] est déjà ouverte. L’action de synchronisation est lancée pour une ressource à la fois. Il s’agit toutefois d’une méthode plus rapide pour synchroniser plusieurs ressources simultanément. | Voir [Actions sur plusieurs ressources dans un dossier de Live Copy](#bulk-actions) |
 
-### Synchronisation d’une Live Copy     {#sync-lc}
+### Synchronisation d’une Live Copy    {#sync-lc}
 
 Pour démarrer une action de synchronisation, ouvrez la page **[!UICONTROL Propriétés]** d’une Live Copy, cliquez sur **[!UICONTROL Live Copy]**, puis sur l’action souhaitée dans la barre d’outils.
 
