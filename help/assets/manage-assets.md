@@ -3,10 +3,10 @@ title: Gestion des ressources numériques
 description: Découvrez les tâches de gestion des ressources telles que le chargement, le téléchargement, la modification, la recherche, la suppression, l’annotation et la version de vos ressources numériques.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
+role: User
 feature: Gestion des ressources, Recherche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 03b171d2af17efee73780b01058fd62bc9d45dbd
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '9788'
 ht-degree: 63%
