@@ -9,16 +9,16 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 feature: Combiner des visionneuses de médias, Gestion des ressources
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 84%
 
 ---
 
-# Visionneuses de médias mixtes {#mixed-media-sets}
+# Visionneuses de médias mixtes{#mixed-media-sets}
 
 Une visionneuse de médias mixtes permet d’offrir un mélange d’images, de visionneuses d’images, de visionneuses à 360° et de vidéos dans une même présentation.
 
@@ -48,7 +48,7 @@ Pour démarrer rapidement, procédez comme suit :
 
    Les administrateurs peuvent créer ou modifier les paramètres prédéfinis de visionneuse de médias mixtes. Pour afficher votre visionneuse de médias mixtes avec un paramètre prédéfini, sélectionnez la visionneuse puis, dans le menu contextuel du rail gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
-   Pour créer ou modifier des paramètres prédéfinis de visionneuse, voir **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
+   Pour créer ou modifier des paramètres prédéfinis de visionneuse, voir **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètre prédéfini de visionneuse]**.
 
    Voir [Ajout et modification de paramètres prédéfinis de la visionneuse](/help/assets/managing-viewer-presets.md).
 
@@ -80,7 +80,7 @@ Commencez par charger les images et les vidéos pour les visionneuses de médias
 
 En outre, si vous souhaitez ajouter des visionneuses à 360° ou d’images à la visionneuse de supports variés, créez également ces visionneuses.
 
-## Création d’une visionneuse de médias mixtes {#creating-mixed-media-sets}
+## Création d’une visionneuse de médias mixtes  {#creating-mixed-media-sets}
 
 Vous pouvez ajouter des images, des visionneuses d’images, des visionneuses à 360° et des vidéos à votre visionneuse de médias mixtes. Assurez-vous que les fichiers, visionneuses d’images et visionneuses à 360° sont prêts pour la publication avant de les ajouter à la visionneuse de médias mixtes.
 
@@ -132,7 +132,7 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Modifier la vignette par défaut.
 
-**Modification d’une visionneuse de médias mixtes:**
+**Modification d’une visionneuse de médias mixtes :**
 
 1. Effectuez l’une des opérations suivantes :
 
