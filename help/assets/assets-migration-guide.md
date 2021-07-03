@@ -2,10 +2,10 @@
 title: Migration des ressources en bloc
 description: Décrit comment importer des ressources dans  [!DNL Adobe Experience Manager], appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: Migration,Rendus,Gestion des ressources
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 66%
@@ -47,7 +47,7 @@ La migration des ressources vers [!DNL Experience Manager] nécessite plusieurs 
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### Désactivez les workflows {#disabling-workflows}
+### Désactivation des workflows {#disabling-workflows}
 
 Avant de commencer la migration, désactivez vos lanceurs pour le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] . Il est préférable d’intégrer toutes les ressources dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en ligne pendant la migration, vous pouvez planifier ces activités en dehors des heures de bureau.
 
@@ -55,7 +55,7 @@ Avant de commencer la migration, désactivez vos lanceurs pour le workflow [!UIC
 
 Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. Bien que des outils tels que l’importateur de ressources CSV et la prise en charge de [!DNL Experience Manager] pour les profils de métadonnées puissent automatiser le processus d’application de balises aux ressources, les balises doivent être chargées dans le système. La fonctionnalité [Tools Tag Maker d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
 
-### Ingestion des ressources {#ingesting-assets}
+### Assimilation des ressources {#ingesting-assets}
 
 Les performances et la stabilité sont des préoccupations importantes lors de l’intégration des ressources dans le système. Comme vous chargez une grande quantité de données dans le système, vous devez vous assurer que le système fonctionne le mieux possible, afin de minimiser le temps nécessaire et d’éviter de surcharger le système, ce qui peut entraîner un blocage de ce dernier, en particulier des systèmes déjà en production.
 
@@ -72,7 +72,7 @@ L’utilisation de l’approche Push à l’aide du protocole HTTPS présente d
 
 L’autre approche de l’intégration des ressources consiste à extraire les ressources du système de fichiers local. Toutefois, si vous ne parvenez pas à obtenir un lecteur externe ou un partage réseau monté sur le serveur pour effectuer une approche par extraction, la publication des ressources en utilisant HTTP est la meilleure option.
 
-#### Récupérer à partir du système de fichiers local {#pulling-from-the-local-filesystem}
+#### Récupération à partir du système de fichiers local {#pulling-from-the-local-filesystem}
 
 L’utilitaire [Tools CSV Asset Importer d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrait les ressources du système de fichiers et des métadonnées des ressources à partir d’un fichier CSV pour l’importation des ressources. L’API Asset Manager du Experience Manager est utilisée pour importer les ressources dans le système et appliquer les propriétés de métadonnées configurées. Idéalement, les ressources sont montées sur le serveur via un montage de fichiers réseau ou via un lecteur externe.
 
@@ -101,7 +101,7 @@ Pour toutes ces approches, notez que les ressources de l’instance de création
 >
 >Adobe ne prend pas en charge Grabbit.
 
-### Cloner la publication {#cloning-publish}
+### Clonage de la publication {#cloning-publish}
 
 Une fois les ressources activées, vous pouvez cloner votre instance de publication afin de créer autant de copies que nécessaire pour le déploiement. Le clonage d’un serveur est relativement simple, mais il existe quelques étapes importantes à retenir. Pour cloner la publication :
 
