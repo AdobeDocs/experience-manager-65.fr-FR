@@ -2,10 +2,10 @@
 title: Application de services cloud de traduction à des dossiers
 description: Application de services cloud de traduction à des dossiers
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Traduction
 exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 79%
