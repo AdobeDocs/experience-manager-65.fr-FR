@@ -3,13 +3,13 @@ title: Gestion des collections de ressources numériques
 description: Découvrez les tâches de gestion des collections de ressources, telles que la création, l’affichage, la suppression, la modification et le téléchargement de collections.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
+role: User
 feature: Collections,Gestion des ressources
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 63%
+ht-degree: 65%
 
 ---
 
@@ -95,7 +95,7 @@ Pour créer une collection dynamique, procédez comme suit :
 
    >[!NOTE]
    >
-   >Si vous sélectionnez **[!UICONTROL Public]**, la collection dynamique est disponible pour toutes les personnes possédant le rôle de propriétaire une fois que vous l’avez créée. Si vous annulez l’option **[!UICONTROL Public]**, le groupe d’utilisateurs DAM n’est plus associé à la collection dynamique.
+   >Si vous sélectionnez **[!UICONTROL Public]**, la collection dynamique est disponible pour toutes les personnes possédant le rôle de propriétaire une fois que vous l’avez créée. Si vous désactivez l’option **[!UICONTROL Public]**, le groupe Utilisateurs DAM n’est plus associé à la collection dynamique.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour créer la collection dynamique, puis fermez la boîte de message pour terminer le processus.
 
@@ -146,14 +146,14 @@ Les métadonnées de collection incluent les données sur la collection, notamme
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, affichez les métadonnées de collection à partir des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**.
 1. Modifiez les métadonnées selon les besoins. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]** dans la barre d’outils.
 
-## Modification des métadonnées de plusieurs collections en bloc {#editing-collection-metadata-in-bulk}
+## Modification en masse des métadonnées de plusieurs collections {#editing-collection-metadata-in-bulk}
 
 Vous pouvez modifier simultanément les métadonnées de plusieurs collections. Cette fonctionnalité vous aide à répliquer rapidement des métadonnées communes dans plusieurs collections.
 
 1. Dans la console Collections, sélectionnez plusieurs collections.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, modifiez les métadonnées sous **[!UICONTROL De base]** et **[!UICONTROL Avancé]**, selon les besoins.
-1. Pour afficher les propriétés de métadonnées d’une collection spécifique, annulez la sélection des collections restantes dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
+1. Pour afficher les propriétés de métadonnées associées à une collection spécifique, désélectionnez les autres collections dans la liste. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
 
    >[!NOTE]
    >
