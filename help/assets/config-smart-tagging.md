@@ -2,13 +2,13 @@
 title: Configuration du balisage des ressources à l’aide du service de contenu dynamique
 description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans [!DNL Adobe Experience Manager], à l’aide du service de contenu dynamique.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Balisage, Balises intelligentes
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2173'
-ht-degree: 56%
+ht-degree: 58%
 
 ---
 
@@ -23,7 +23,7 @@ Avant d’utiliser le service de contenu dynamique, vérifiez les points suivant
 
 * Installez le dernier [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
-## Intégration à Adobe Developer Console {#integrate-adobe-io}
+## Intégration dֺ’ à Adobe Developer Console {#integrate-adobe-io}
 
 Lorsque vous effectuez une intégration avec Adobe Developer Console, le serveur [!DNL Experience Manager] authentifie vos informations d’identification du service auprès de la passerelle Adobe Developer Console avant de transférer votre demande au service de contenu dynamique. Pour l’intégration, vous avez besoin d’un compte Adobe ID disposant de droits d’administrateur pour l’organisation et d’une licence Smart Content Service achetée et activée pour votre organisation.
 
@@ -86,7 +86,7 @@ Une fois qu’un certificat a expiré, il n’est plus approuvé. Vous ne pouvez
    ![Supprimer l’entrée de recherche par analogie existante dans le Keystore pour ajouter un certificat de sécurité](assets/smarttags_delete_similaritysearch_keystore.png)
 
 
-   *Figure : Supprimez l’ `similaritysearch` entrée existante dans le Keystore pour ajouter un certificat de sécurité.*
+   *Schéma : suppression d’une entrée `similaritysearch` existante dans le Keystore pour ajouter un certificat de sécurité.*
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Ancienne version de Cloud Services]**. Cliquez sur **[!UICONTROL Balises dynamiques de ressources]** > **[!UICONTROL Afficher la configuration]** > **[!UICONTROL Configurations disponibles]**. Cliquez sur la configuration requise.
 
@@ -94,7 +94,7 @@ Une fois qu’un certificat a expiré, il n’est plus approuvé. Vous ne pouvez
 
 1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu intelligent existants sur la page **[!UICONTROL Intégrations]**. Téléchargez le nouveau certificat. Pour plus d’informations, voir les instructions de la section [Création de l’intégration d’Adobe Developer Console](#create-adobe-i-o-integration).
 
-### Création de l’intégration de Developer Console Adobe {#create-adobe-i-o-integration}
+### Création de l’intégration Adobe Developer Console {#create-adobe-i-o-integration}
 
 Pour utiliser les API de service de contenu dynamique, créez une intégration dans Adobe Developer Console afin d’obtenir la [!UICONTROL clé API] (générée dans le champ [!UICONTROL ID CLIENT] de l’intégration d’Adobe Developer Console), [!UICONTROL ID DE COMPTE TECHNIQUE], [!UICONTROL ID ORGANIZATION] et [!UICONTROL SECRET CLIENT] pour [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
 
@@ -106,7 +106,7 @@ Pour utiliser les API de service de contenu dynamique, créez une intégration d
 
 1. Sélectionnez **[!UICONTROL Upload your public key]** (Charger votre clé publique). Fournissez le fichier de certificat téléchargé depuis [!DNL Experience Manager]. Le message [!UICONTROL Public key(s) uploaded successfully] (La ou les clés publiques ont été chargées) s’affiche. Cliquez sur **[!UICONTROL Next]** (Suivant).
 
-   [!UICONTROL La page Create a new Service Account (JWT) ] credentialpage affiche la clé publique du compte de service.
+   La page [!UICONTROL Create a new Service Account (JWT) credential] (Créer des informations d’identification de compte de service (JWT)) affiche la clé publique du compte de service.
 
 1. Cliquez sur **[!UICONTROL Next]** (Suivant).
 
@@ -152,19 +152,19 @@ Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour la v
 
 Les résultats de la validation s’affichent dans la même boîte de dialogue.
 
-### Activez le balisage intelligent dans le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] (facultatif) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+### Activez le balisage intelligent dans le workflow [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] (facultatif). {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 
-1. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez le modèle de processus **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**.
+1. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez le modèle de processus **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques (DAM)]**.
 
 1. Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
 1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape **[!UICONTROL Balisage intelligent de la ressource]** disponible dans la section Processus de DAM (gestion des actifs numériques) et placez-la après l’étape **[!UICONTROL Miniatures des processus]**.
 
-   ![Ajout de l’étape Balisage intelligent de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des actifs numériques](assets/smart-tag-in-dam-update-asset-workflow.png)
+   ![Ajout de l’étape Balisage intelligent de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des actifs numériques (DAM)](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *Figure : Ajout de l’étape Balisage intelligent de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des actifs numériques.*
+   *Figure : Ajout de l’étape Balisage intelligent de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des actifs numériques (DAM).*
 
 1. Ouvrez l’étape en mode édition. Dans **[!UICONTROL Paramètres avancés]**, vérifiez que l’option **[!UICONTROL Avance du gestionnaire]** est sélectionnée.
 
@@ -245,7 +245,7 @@ Une fois cette option sélectionnée pour un dossier, [!DNL Experience Manager] 
 
 Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est nécessaire à partir de la console Processus.
 
-1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
+1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Sur la page **[!UICONTROL Modèles de processus]** , sélectionnez le workflow **[!UICONTROL Entraînement des balises intelligentes]** , puis cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
 1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, localisez le dossier de charge utile qui comprend les ressources balisées pour entraîner le service.
 1. Indiquez un titre pour le workflow et ajoutez un commentaire. Cliquez ensuite sur **[!UICONTROL Exécuter]**. Les ressources et les balises sont soumises à l’entraînement.
@@ -256,18 +256,18 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 >
 >Une fois que les ressources d’un dossier sont traitées pour formation, seules les ressources modifiées sont traitées au cours des cycles de formation suivants.
 
-### Afficher les rapports de formation {#viewing-training-reports}
+### Affichage des rapports de formation {#viewing-training-reports}
 
 Pour vérifier que le service de contenu dynamique est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
-1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
+1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, cliquez sur **[!UICONTROL Créer]**.
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, cliquez sur **[!UICONTROL Afficher]** dans la barre d’outils.
 1. Passez en revue les détails du rapport.
 
-   Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise.
+   Le rapport affiche le statut d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise.
 
    Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
 
