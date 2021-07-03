@@ -2,19 +2,19 @@
 title: Écriture différée XMP sur les rendus
 description: Découvrez comment la fonctionnalité d’écriture différée XMP propage les modifications apportées aux métadonnées d’une ressource à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: 'Métadonnées  '
+role: User, Admin
+feature: Métadonnées
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 57%
+ht-degree: 64%
 
 ---
 
 # Écriture différée XMP sur les rendus {#xmp-writeback-to-renditions}
 
-Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] réplique les modifications apportées aux métadonnées aux rendus de la ressource d’origine. Lorsque vous modifiez les métadonnées d’une ressource à partir d’Assets ou lors du chargement de la ressource, les modifications sont initialement stockées dans le noeud de métadonnées de la hiérarchie de la ressource.
+Cette fonction d’écriture différée XMP dans [!DNL Adobe Experience Manager Assets] reproduit les modifications de métadonnées apportées aux rendus de la ressource d’origine. Lorsque vous modifiez les métadonnées d’une ressource à partir d’Assets ou lors du chargement de la ressource, les modifications sont initialement stockées dans le noeud de métadonnées de la hiérarchie de la ressource.
 
 La fonction Écriture différée XMP permet de propager les modifications de métadonnées à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux. La fonction réécrit uniquement les propriétés de métadonnées qui utilisent l’espace de noms `jcr`, c’est-à-dire qu’une propriété nommée `dc:title` est réécrite, mais qu’une propriété nommée `mytitle` ne l’est pas.
 
@@ -26,7 +26,7 @@ Dans ce cas, la propriété [!DNL Experience Manager Assets] enregistre les modi
 
 ![metadata_saved](assets/metadata_stored.png)
 
-Cependant, [!DNL Experience Manager Assets] ne propage pas automatiquement les modifications apportées aux métadonnées aux rendus d’une ressource. Voir [Comment activer l’écriture différée XMP](#enable-xmp-writeback).
+Toutefois, [!DNL Experience Manager Assets] ne propage pas automatiquement les modifications apportées aux métadonnées aux rendus d’une ressource. Voir [Comment activer l’écriture différée XMP](#enable-xmp-writeback).
 
 ## Activer l’écriture différée XMP {#enable-xmp-writeback}
 
