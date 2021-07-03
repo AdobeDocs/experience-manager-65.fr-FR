@@ -8,10 +8,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Workflow,Gestion des ressources,Rendus
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 70%
@@ -96,7 +96,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 (Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. La bannière de traitement reste donc plus longtemps sur Experience Manager Assets. Cependant, si la taille de fichier moyenne est faible (1 Mo ou moins), Adobe vous recommande d’augmenter la valeur à plusieurs 100, mais jamais plus de 1 000. Si la taille de fichier moyenne est importante (par exemple, des centaines de mégaoctets), Adobe vous recommande de réduire la taille du lot jusqu’à 10.
 
-**Pour régler éventuellement la taille du lot du workflow de retraitement, procédez comme suit :**
+**Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
 1. Dans Experience Manager, cliquez sur **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis cliquez sur l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
