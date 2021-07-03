@@ -2,10 +2,10 @@
 title: Bonnes pratiques relatives au traitement des formats de fichiers pris en charge
 description: Bonnes pratiques pour traiter les différents types de fichiers pris en charge à l’aide de  [!DNL Experience Manager Assets].
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Gestion des ressources,Outils de développement
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 46%
@@ -22,7 +22,7 @@ Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AE
 >
 >Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez l’assistance clientèle Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Collaborez avec le représentant de l’assistance clientèle d’Adobe afin de mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires de l’Adobe. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
-## [!DNL Adobe Camera Raw] bibliothèque  {#adobe-camera-raw-library}
+## [!DNL Adobe Camera Raw] bibliothèque {#adobe-camera-raw-library}
 
 Pour des performances optimales, Adobe recommande d’utiliser la bibliothèque [!DNL Adobe Camera Raw] pour les fichiers RAW et DNG.
 
