@@ -2,17 +2,17 @@
 title: Création et configuration de pages Éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Outils de développement, Gestion des ressources
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 69%
 
 ---
 
-# Créer et configurer des pages Éditeur de ressources {#creating-and-configuring-asset-editor-pages}
+# Création et configuration de pages Éditeur de ressources {#creating-and-configuring-asset-editor-pages}
 
 Ce document répond aux questions suivantes :
 
@@ -198,7 +198,7 @@ Personnalisez l’Éditeur de ressources pour déterminer comment les utilisateu
 >
 >Si vous souhaitez ajouter des champs personnalisés à l’éditeur de ressources de gestion des actifs numériques, ajoutez de nouveaux noeuds `cq:Widget` à `/apps/dam/content/asseteditors.`.
 
-### Créer une page Éditeur de ressources {#creating-the-asset-editor-page}
+### Création d’une page Éditeur de ressources {#creating-the-asset-editor-page}
 
 Lors de la création de la page Éditeur de ressources, il est recommandé de créer la page directement sous la page Partage de ressources.
 
@@ -233,7 +233,7 @@ Pour définir la page Éditeur de ressources :
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Ajouter des composants Éditeur de ressources {#adding-asset-editor-components}
+#### Ajout de composants Éditeur de ressources {#adding-asset-editor-components}
 
 Vous déterminez les fonctionnalités d’un Éditeur de ressources en ajoutant des composants à la page.
 
@@ -329,7 +329,7 @@ Voici un composant Balises renseigné :
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniature  {#thumbnail}
+#### Miniature {#thumbnail}
 
 Le composant Miniature est l’emplacement où la ressource affiche la miniature sélectionnée (pour la plupart des formats, la miniature est extraite automatiquement). En outre, le composant affiche le nom de fichier et les [actions que vous pouvez modifier](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -361,7 +361,7 @@ Voici un exemple de composant Titre renseigné :
 
 ![chlimage_1-164](assets/chlimage_1-392.png)
 
-#### Ajout d’actions Éditeur de ressources {#adding-asset-editor-actions}
+#### Ajout d’actions à Asset Editor {#adding-asset-editor-actions}
 
 Vous pouvez déterminer les actions que les utilisateurs peuvent effectuer sur des ressources numériques sélectionnées à partir d’une sélection d’actions prédéfinies.
 
@@ -386,7 +386,7 @@ Les actions suivantes sont disponibles :
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
-## Modification multiple de ressources avec la page Éditeur de ressources {#multi-editing-assets-with-the-asset-editor-page}
+## Modification multiple de ressources à l’aide de la page Éditeur de ressources {#multi-editing-assets-with-the-asset-editor-page}
 
 Avec [!DNL Experience Manager Assets], vous pouvez apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
 
