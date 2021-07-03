@@ -8,12 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: Paramètres prédéfinis de la visionneuse
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 75%
 
 Un paramètre prédéfini de visionneuse est un ensemble de paramètres qui déterminent la manière dont les utilisateurs voient les ressources multimédia enrichies sur leurs écrans d’ordinateur et appareils mobiles. Vous pouvez appliquer à une ressource n’importe quel paramètre prédéfini de visionneuse créé par votre administrateur.
 
-Si vous êtes administrateur et que vous devez gérer, créer, trier et supprimer des paramètres prédéfinis de visionneuse, voir [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md).
+Si, en tant qu’administrateur, vous devez gérer, créer, trier et supprimer des paramètres prédéfinis de visionneuse, consultez [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md).
 
 Voir également [Publication de paramètres de visionneuse prédéfinis](managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -37,7 +37,7 @@ Pour tout problème lié aux paramètres prédéfinis de visionneuse, consultez 
    * Les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** s’affichent lorsque vous avez sélectionné un paramètre de visionneuse prédéfini.
    * Le système affiche plusieurs paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des **[!UICONTROL détails d’une ressource]**. Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent](managing-viewer-presets.md).
 
-1. Sélectionnez une visionneuse dans le volet de gauche pour pouvoir l’appliquer à la ressource comme vous le voyez dans le volet de droite. Vous pouvez également [copier l’URL à partager](linking-urls-to-yourwebapplication.md) avec d’autres utilisateurs.
+1. Sélectionnez une visionneuse dans le volet gauche pour pouvoir l’appliquer à la ressource telle qu’elle figure dans le volet de droite. Vous pouvez également [copier l’URL à partager](linking-urls-to-yourwebapplication.md) avec d’autres utilisateurs.
 
 ## Obtention d’une URL de paramètre prédéfini de visionneuse {#obtaining-viewer-preset-urls}
 
