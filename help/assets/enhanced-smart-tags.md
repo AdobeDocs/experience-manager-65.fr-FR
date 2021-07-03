@@ -3,12 +3,12 @@ title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
 feature: Balises intelligentes, Recherche
-role: Business Practitioner
+role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1600'
-ht-degree: 50%
+ht-degree: 54%
 
 ---
 
@@ -84,7 +84,7 @@ Le processus d’intégration est terminé lorsque l’administrateur configure 
 >
 >Si vous utilisez la version [!DNL Experience Manager] 6.3 ou antérieure et avez besoin du service de balisage pour vos ressources, voir [Balises intelligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Les balises intelligentes n’utilisent pas les dernières fonctionnalités d’IA et sont donc moins précises que le service de balisage intelligent amélioré.
 
-## Vérification des ressources et des balises {#reviewing-assets-and-tags}
+## Vérification de ressources et de balises {#reviewing-assets-and-tags}
 
 Une fois embarqué, la première chose à faire est d’identifier un ensemble de balises qui décrivent le mieux ces images dans le contexte de votre entreprise.
 
@@ -99,9 +99,9 @@ Ajoutez les ressources à un dossier, puis appliquez les balises à chaque resso
 >1. Lorsque vous entraînez le service de contenu dynamique pour la première fois, Adobe recommande de réaliser l’entraînement sur au moins deux balises distinctes.
 
 
-## Présentation des [!DNL Experience Manager] résultats de recherche avec des balises intelligentes {#understandsearch}
+## Comprendre les résultats de recherche [!DNL Experience Manager] avec les balises intelligentes {#understandsearch}
 
-Par défaut, la recherche [!DNL Experience Manager] combine les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. L’utilisation de balises intelligentes ajoute une clause `OR` supplémentaire pour rechercher les termes de recherche liés aux balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
+Par défaut, la recherche [!DNL Experience Manager] associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. L’utilisation de balises intelligentes ajoute une clause `OR` supplémentaire pour rechercher les termes de recherche liés aux balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
 * Ressources avec des mots-clés `woman` et `running` dans les métadonnées.
 
@@ -117,7 +117,7 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 >
 >Si l’indexation Lucene est effectuée à partir de [!DNL Adobe Experience Manager], la recherche basée sur les balises intelligentes ne fonctionne pas comme prévu.
 
-## Balisage automatique des ressources {#tagging-assets-automatically}
+## Balisage automatique de ressources {#tagging-assets-automatically}
 
 Après avoir entraîné le service de contenu dynamique, vous pouvez déclencher le workflow de balisage pour appliquer automatiquement les balises appropriées sur une autre série de ressources similaire.
 
@@ -143,8 +143,8 @@ Vous pouvez déclencher le workflow de balisage à partir de la console de workf
 
 #### Balisage des ressources à l’aide de la console de workflow {#tagging-assets-from-the-workflow-console}
 
-1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
-1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
+1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
+1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques (DAM))]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
@@ -157,20 +157,20 @@ Vous pouvez déclencher le workflow de balisage à partir de la console de workf
 
 #### Balisage des ressources à partir de la chronologie {#tagging-assets-from-the-timeline}
 
-1. Dans l’interface utilisateur [!DNL Assets], sélectionnez le dossier contenant des ressources ou des ressources spécifiques auxquelles vous souhaitez appliquer des balises intelligentes.
+1. Depuis l’interface utilisateur [!DNL Assets], sélectionnez le dossier contenant les ressources ou des ressources spécifiques auxquelles vous souhaitez appliquer des balises intelligentes.
 1. Dans le coin supérieur gauche, ouvrez la **[!UICONTROL Chronologie]**.
 1. Ouvrez les actions dans la partie inférieure de la barre latérale gauche et cliquez sur **[!UICONTROL Démarrer le processus]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]** et spécifiez un titre pour le workflow.
+1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques (DAM))]** et spécifiez un titre pour le workflow.
 1. Cliquez sur **[!UICONTROL Début]**. Le workflow applique des balises aux ressources. pour vérifier si le service de contenu dynamique a correctement balisé vos ressources, accédez au dossier de ressources et passez en revue les balises.
 
 >[!NOTE]
 >
->Lors des cycles de balisage suivants, seules les ressources modifiées sont à nouveau balisées avec des balises nouvellement entraînées. Toutefois, même les ressources non modifiées sont balisées si l’intervalle entre le dernier cycle de balisage et l’actuel pour le workflow de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources inchangées sont balisées lorsque l’intervalle dépasse six mois.
+>Dans les cycles de balisage suivants, seules les ressources modifiées sont balisées à nouveau avec les balises qui viennent d’être entraînées. Toutefois, même les ressources non modifiées sont balisées si l’intervalle entre le dernier cycle de balisage et l’actuel pour le workflow de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources inchangées sont balisées lorsque l’intervalle dépasse six mois.
 
-## Traitez ou modérez les balises intelligentes appliquées {#manage-smart-tags}
+## Traitement ou modération des balises intelligentes appliquées {#manage-smart-tags}
 
 Vous pouvez organiser les balises intelligentes pour supprimer les balises inexactes qui sont affectées à vos images de marque afin que seules les balises les plus pertinentes soient affichées.
 
