@@ -9,16 +9,16 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 feature: Bannières de carrousel
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '4740'
 ht-degree: 71%
 
 ---
 
-# Bannières de carrousel {#carousel-banners}
+# Bannières de carrousel{#carousel-banners}
 
 Les bannières de carrousel permettent aux spécialistes du marketing de susciter la conversion en créant facilement du contenu publicitaire interactif et alterné et en le diffusant sur tous les écrans.
 
@@ -183,13 +183,13 @@ Si vous avez déjà chargé les images à utiliser, passez à l’étape suivant
 
 Pour charger des bannières d’image, voir [Chargement de ressources](/help/assets/manage-assets.md).
 
-## Création d’ensembles de carrousels {#creating-carousel-sets}
+## Création d’ensembles de carrousels  {#creating-carousel-sets}
 
 >[!NOTE]
 >
 >Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **[!UICONTROL dam-users]**.
 
-**Pour créer un ensemble de carrousel:**
+**Pour créer un ensemble de carrousel :**
 
 1. Dans Ressources, cherchez le dossier dans lequel vous souhaitez créer l’ensemble de carrousel, puis appuyez sur **[!UICONTROL Créer > Ensemble de carrousel]**.
 1. Dans la page de l’éditeur de bannière de carrousel, appuyez sur **[!UICONTROL Appuyer pour ouvrir le sélecteur de ressources]** pour sélectionner l’image de votre première diapositive.
@@ -264,7 +264,7 @@ Si vous modifiez des images interactives avec des zones réactives et que vous r
 
 Voir aussi [Ajout de zones cliquables](/help/assets/image-maps.md).
 
-**Ajout de zones réactives ou cliquables à une bannière d’image:**
+**Ajout de zones réactives ou cliquables à une bannière d’image :**
 
 1. À partir de Ressources, accédez à l’ensemble de carrousel auquel vous souhaitez ajouter de l’interactivité.
 1. Sélectionnez l’ensemble de carrousel et appuyez sur **[!UICONTROL Modifier]**. L’éditeur de visionneuses de carrousel s’affiche.
@@ -373,7 +373,7 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/
 
 Vous pouvez afficher un aperçu des bannières de carrousel dans l’éditeur de carrousel (méthode recommandée) ou dans la liste **[!UICONTROL Visionneuses]**.
 
-**Pour obtenir un aperçu des bannières de carrousel:**
+**Pour obtenir un aperçu des bannières de carrousel :**
 
 1. Dans **[!UICONTROL Ressources]**, accédez à une bannière de carrousel que vous avez créée et appuyez pour l’afficher.
 1. Appuyez sur **[!UICONTROL Modifier]**.
@@ -384,7 +384,7 @@ Vous pouvez afficher un aperçu des bannières de carrousel dans l’éditeur de
 1. Appuyez sur **[!UICONTROL Aperçu]**.
 1. Appuyez sur les zones réactives ou cliquables de l’image pour pouvoir tester les actions associées.
 
-**Pour afficher un aperçu des bannières de carrousel à partir de la liste Visionneuses:**
+**Pour afficher un aperçu des bannières de carrousel à partir de la liste Visionneuses :**
 
 1. Dans **[!UICONTROL Ressources]**, accédez à une bannière de carrousel que vous avez créée et appuyez pour l’afficher.
 1. Dans le coin supérieur gauche de la page Aperçu, cliquez sur l’icône Contenu.
