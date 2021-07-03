@@ -2,13 +2,13 @@
 title: Configurez Assets Insights pour obtenir des analyses.
 description: Configurez les statistiques sur les ressources dans  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: Statistiques sur les ressources, rapports sur les ressources
 exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 29%
+ht-degree: 35%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 29%
 
 1. Cliquez sur **[!UICONTROL Authentifier]**.
 1. Une fois que [!DNL Experience Manager] a authentifié vos informations d’identification, dans la liste **[!UICONTROL Suite de rapports]** , sélectionnez une suite de rapports [!DNL Adobe Analytics] à partir de laquelle vous souhaitez que les statistiques sur les ressources récupèrent les données. Cliquez sur **[!UICONTROL Ajouter]**.
-1. Une fois que [!DNL Experience Manager] a configuré votre suite de rapports, cliquez sur **[!UICONTROL Terminé]**.
+1. Une fois qu’[!DNL Experience Manager] a configuré votre suite de rapports, appuyez sur **[!UICONTROL Terminé]**.
 
 ## Suivi de page {#page-tracker}
 
