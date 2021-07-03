@@ -2,10 +2,10 @@
 title: Activation de la détection des ressources en double
 description: Découvrez comment activer la détection des ressources en double dans Experience Manager.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Gestion des ressources, rapports sur les ressources
 exl-id: a403d60e-2193-4835-8f37-4a40f2d01819
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 26%
