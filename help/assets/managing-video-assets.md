@@ -2,10 +2,10 @@
 title: Gestion des ressources vidéo
 description: Charger, prévisualiser, annoter et publier des ressources vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Gestion des ressources
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 58%
@@ -57,7 +57,7 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
-1. Sur la page [!DNL Adobe Experience Manager] [!UICONTROL Lots de la console web], dans la colonne Nom de la table, recherchez et cliquez sur **[!UICONTROL Adobe Gestionnaire de tâches de processus externe de workflow Granite]**.
+1. Sur la page [!DNL Adobe Experience Manager] [!UICONTROL Lots de la console web], dans la colonne Nom de la table, recherchez et cliquez sur **[!UICONTROL Adobe Gestionnaire de tâches de processus externe de processus Granite]**.
 1. Sur la page [!UICONTROL Adobe du gestionnaire des tâches de processus externe de processus Granite] , définissez les secondes pour les champs **[!UICONTROL Délai d’expiration par défaut]** et **[!UICONTROL Délai d’expiration maximal]** sur `18000` (cinq heures). Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Sur la page Modèles de processus, sélectionnez **[!UICONTROL Vidéo de codage Dynamic Media]**, puis cliquez sur **[!UICONTROL Modifier]**.
