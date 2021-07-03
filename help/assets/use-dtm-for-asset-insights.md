@@ -2,17 +2,17 @@
 title: Activation des statistiques sur les ressources via DTM
 description: Découvrez comment utiliser Adobe Dynamic Tag Management (DTM) pour activer Assets Insights.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Statistiques sur les ressources, rapports sur les ressources
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 29%
 
 ---
 
-# Activation des statistiques sur les ressources via la gestion dynamique des balises {#enable-asset-insights-through-dtm}
+# Activation des statistiques sur les ressources via DTM {#enable-asset-insights-through-dtm}
 
 La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Assets Insights ou utiliser la gestion dynamique des balises pour insérer des balises Assets Insights. Les statistiques sont uniquement prises en charge et fournies pour les images.
 
