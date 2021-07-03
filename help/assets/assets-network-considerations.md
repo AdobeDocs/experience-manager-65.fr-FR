@@ -2,17 +2,17 @@
 title: Remarques et exigences relatives au réseau
 description: Discute des considérations relatives au réseau lors de la conception d’un déploiement  [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: Outils de développement
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 72%
 
 ---
 
-# [!DNL Assets] considérations relatives au réseau  {#assets-network-considerations}
+# [!DNL Assets] considérations relatives au réseau {#assets-network-considerations}
 
 Comprendre votre réseau est aussi important que de comprendre [!DNL Adobe Experience Manager Assets]. Le réseau peut affecter les chargements, les téléchargements et l’expérience utilisateur. La création d’un diagramme de la topologie du réseau vous permet d’identifier les goulots d’étranglement et les zones sous-optimisées du réseau que vous devez optimiser pour améliorer les performances du réseau et l’expérience de l’utilisateur.
 
@@ -47,7 +47,7 @@ L’ordinateur présenté à droite, connecté au réseau d’entreprise via un 
 
 Le diagramme présente des vitesses de liaison plus élevées au sein du réseau d’entreprise que ce qui est généralement utilisé. Ces canaux sont des ressources partagées. Si le commutateur partagé doit gérer 50 clients, il peut s’agir d’un goulot d’étranglement. Dans le diagramme initial, seuls deux ordinateurs partagent la connexion.
 
-## Liaison à Internet à partir du réseau d’entreprise et de l’ [!DNL Experience Manager] environnement {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Liaison à Internet à partir du réseau d’entreprise et de l’environnement [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -63,13 +63,13 @@ Il s’agit du plus petit point d’étranglement orienté client. Cependant, vo
 
 Les exemples de diagrammes vous permettent de conclure que six périphériques partagent un canal conceptuel de 10 Mbps. Selon la taille des ressources exploitées, cela peut s’avérer insuffisant pour répondre aux attentes de l’utilisateur.
 
-## Topologie de l&#39;environnement [!DNL Experience Manager] {#topology-of-the-aem-environment}
+## Topologie de l’environnement [!DNL Experience Manager] {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
 La conception de la topologie de l’environnement [!DNL Experience Manager] nécessite une connaissance détaillée de la configuration du système et de la manière dont le réseau est connecté dans l’environnement de l’utilisateur.
 
-L’exemple de scénario comprend une ferme de publication avec cinq serveurs, un magasin de binaires S3 et Dynamic Media configuré.
+L’exemple de scénario comprend une ferme de publication avec cinq serveurs, un magasin de fichiers binaires S3 et Dynamic Media configuré.
 
 Dispatcher partage une connexion de 100 Mbit/s avec deux entités, le monde extérieur et le déploiement de [!DNL Experience Manager]. Pour les opérations simultanées de chargement et de téléchargement, vous devez diviser ce nombre par deux. L’espace de stockage externe joint utilise une connexion distincte.
 
