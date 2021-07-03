@@ -2,10 +2,10 @@
 title: Bibliothèque ITL
 description: Apprenez à configurer et à utiliser la bibliothèque de transcodage de l’imagerie (ou ITL, de l’anglais Imaging Transcoding Library) d’Adobe, une solution de traitement des images qui peut réaliser des fonctions essentielles de manipulation graphique, y compris le codage, le transcodage, le rééchantillonnage et le redimensionnement des images.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Rendus,Outils de développement,Traitement des ressources
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 38%
@@ -32,7 +32,7 @@ Outre la prise en charge d’un large éventail de formats de fichiers et de pro
 * **Débit élevé :** le temps de réponse est inférieur et le débit est systématiquement supérieur à celui d’ImageMagick. Par conséquent, la bibliothèque ITL doit réduire le temps d’attente des utilisateurs et le coût de l’hébergement.
 * **Optimiser l’échelle avec un chargement simultané :**  la bibliothèque ITL fonctionne de manière optimale dans des conditions de chargement simultanées. La bibliothèque offre un débit élevé avec une performance du processeur et une utilisation de la mémoire optimaux, et un temps de réponse faible, ce qui permet de réduire le coût de l’hébergement.
 
-## Plateformes prises en charge {#supported-platforms}
+## Platesformes prises en charge {#supported-platforms}
 
 La bibliothèque ITL est disponible uniquement pour les distributions RHEL 7 et CentOS 7.
 
@@ -71,7 +71,7 @@ Vous pouvez configurer les options suivantes pour le paramètre `-resize` :
 
 Pour configurer le traitement ITL, créez un fichier de configuration et mettez à jour le workflow pour l’exécuter.
 
-### Créer un fichier de configuration pour le lot extrait {#create-conf-file}
+### Création d’un fichier de configuration pour le lot extrait {#create-conf-file}
 
 Pour configurer la bibliothèque, créez un fichier CONF pour indiquer les bibliothèques en procédant comme suit. Vous avez besoin d’autorisations d’administrateur ou de root.
 
@@ -102,7 +102,7 @@ Pour configurer la bibliothèque, créez un fichier CONF pour indiquer les bibli
 
 1. Pour vous assurer que la valeur du chemin est définie sur `.`, utilisez la commande `echo $LD_LIBRARY_PATH`. La sortie doit simplement être `.`. Si la valeur n’est pas définie sur `.`, redémarrez la session.
 
-### Configurer [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] workflow {#configure-dam-asset-update-workflow}
+### Configuration du workflow [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] {#configure-dam-asset-update-workflow}
 
 Mettez à jour le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] pour utiliser la bibliothèque pour le traitement des images.
 
