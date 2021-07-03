@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Résolution des problèmes
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 97%
@@ -41,7 +41,7 @@ Assurez-vous que Dynamic Media a été correctement configuré en procédant com
 
 Vous trouverez ci-après quelques astuces et conseils généraux concernant toutes les ressources.
 
-### Propriétés de l’état de synchronisation des ressources {#asset-synchronization-status-properties}
+### Propriétés de l’état de synchronisation des ressources  {#asset-synchronization-status-properties}
 
 Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE Lite pour vérifier que la synchronisation de la ressource depuis AEM vers Dynamic Media s’est déroulée correctement :
 
@@ -72,7 +72,7 @@ Lors du remplacement d’une ressource Dynamic Media (nom et emplacement identiq
 
 * La création d’une version n’est pas prise en charge dans le cadre de la diffusion en mode Scene7 de Dynamic Media. La nouvelle version remplace la ressource existante lors de la diffusion.
 
-## Images et visionneuses  {#images-and-sets}
+## Images et visionneuses {#images-and-sets}
 
 Si des problèmes surviennent avec les images et les visionneuses, reportez-vous aux conseils de dépannage ci-dessous.
 
