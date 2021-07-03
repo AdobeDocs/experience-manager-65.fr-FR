@@ -2,10 +2,10 @@
 title: Modèles de ressources
 description: Découvrez les modèles de ressources dans  [!DNL Adobe Experience Manager Assets] et comment utiliser les modèles de ressources pour créer des documents marketing.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Gestion des ressources,Outils de développement
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 33%
@@ -36,7 +36,7 @@ Lorsque vous choisissez un modèle pour votre document, [!DNL Experience Manager
 
 Vous pouvez exporter le fichier mis à jour dans le dossier parent aux formats INDD, PDF ou JPG. Vous pouvez également télécharger la sortie dans ces formats sur votre système de fichiers local.
 
-## Créer un document {#creating-a-collateral}
+## Création d’un document {#creating-a-collateral}
 
 Imaginons que vous voulez créer des contenus numériques papier, comme des brochures, des prospectus ou des publicités pour une future campagne, et les envoyer à des magasins dans le monde entier. Créer de tels documents à l’aide d’un modèle vous permet de proposer la même expérience client sur tous les canaux de diffusion. Les concepteurs peuvent créer les modèles de campagne (une ou plusieurs pages) à l’aide d’une solution créative, telle que [!DNL InDesign], puis charger les modèles dans [!DNL Experience Manager Assets] pour vous. Avant de créer un document, vous devez avoir téléchargé un ou plusieurs modèles INDD sur et les mettre à disposition dans [!DNL Experience Manager] à l’avance.
 
@@ -64,7 +64,7 @@ Imaginons que vous voulez créer des contenus numériques papier, comme des broc
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Modifier un document {#editing-a-collateral}
+## Modification d’un document {#editing-a-collateral}
 
 Vous pouvez modifier un document immédiatement après sa création. Vous pouvez également l’ouvrir à partir de la page [!UICONTROL Modèles] ou de la page de la ressource.
 
@@ -139,7 +139,7 @@ Vous pouvez modifier un document immédiatement après sa création. Vous pouvez
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
-## Fusionner le document {#merge-collateral}
+## Fusion de collatéral {#merge-collateral}
 
 1. Dans l’interface [!DNL Experience Manager], cliquez sur [!UICONTROL Ressources] dans la page Navigation.
 
