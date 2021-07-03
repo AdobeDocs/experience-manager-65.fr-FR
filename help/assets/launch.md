@@ -8,12 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
 feature: Visionneuses
-role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
+role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '6616'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -163,7 +163,7 @@ Consultez [Ajout du code intégré  Platform Launch](https://experienceleague.
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
 -->
 
-**Pour effectuer le suivi des visionneuses Dynamic Media à l’aide du code intégré:**
+**Pour effectuer le suivi des visionneuses Dynamic Media à l’aide du code intégré :**
 
 1. Préparez une page web sur laquelle vous voulez incorporer une visionneuse Dynamic Media.
 1. Obtenez le code incorporé pour la bibliothèque Experience Platform Launch en vous connectant d’abord à Experience Platform Launch (consultez [Configuration d’Experience Platform Launch](#configuring-adobe-launch-for-the-integration)).
@@ -215,7 +215,7 @@ Toute visionneuse Dynamic Media possède un identifiant unique sur la page web.
 
 La valeur exacte renvoyée par l’élément de données dépend du contexte. Si l’élément de données est demandé dans une règle déclenchée par un événement de visionneuse Dynamic Media, la valeur de l’élément de données est renvoyée pour la visionneuse qui a lancé la règle. De plus, l’élément de données est demandé dans une règle qui a été déclenchée par un Événement provenant d’une autre extension de Platform launch. À ce stade, la valeur de l’élément de données provient de la dernière visionneuse à mettre à jour cet élément de données.
 
-**Examinez l’exemple de configuration suivant :**
+**Examinons l’exemple de configuration suivant** :
 
 * Une page web contenant deux visionneuses de zoom Dynamic Media : *visionneuse1* et *visionneuse2*.
 
@@ -241,7 +241,7 @@ L’exemple de configuration ci-dessus affecte également la durée de vie de la
 
 Dans tous les cas, les valeurs des éléments de données pilotées par les visionneuses Dynamic Media ne sont pas stockées sur le stockage local ou sur le serveur ; elles sont conservées uniquement dans la bibliothèque Experience Platform Launch côté client. Les valeurs de cet élément de données disparaissent lors du rechargement de la page web.
 
-En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=en#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface utilisateur, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
+En règle générale, l’éditeur d’éléments de données prend en charge la [sélection de la durée de stockage](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=fr#create-a-data-element). Toutefois, les éléments de données qui utilisent l’extension Visionneuses Dynamic Media ne prennent en charge que l’option de durée de stockage **[!UICONTROL Aucune]**. La définition d’une autre valeur est possible dans l’interface utilisateur, mais le comportement de l’élément de données n’est pas défini dans ce cas. L’extension gère elle-même la valeur de l’élément de données qui conserve la valeur de l’argument d’événement de visionneuse pendant tout le cycle de vie de la visionneuse.
 
 ### À propos des règles dans l’extension Visionneuses Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -437,7 +437,7 @@ Une fois Adobe Analytics configuré, les éléments suivants sont configurés p
 
 Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).
 
-**Pour configurer Adobe Analytics pour l’intégration :**
+**Pour configurer Adobe Analytics en vue de l’intégration** :
 
 1. Commencez par accéder à Adobe Analytics à partir de la [page d’accueil](https://experience.adobe.com/#/home) d’Experience Cloud. Dans la barre de menus, cliquez sur l’icône Solutions (un tableau de trois points par trois) près du coin supérieur droit de la page, puis cliquez sur **[!UICONTROL Analytics]**.
 
@@ -503,7 +503,7 @@ Une fois Experience Platform Launch configuré, les éléments suivants seront
 * Configuration des éléments de données et des règles. Cette configuration définit les données à capturer à partir des visionneuses Dynamic Media, le moment où déclencher la logique de suivi, ainsi que l’endroit où envoyer les données de la visionneuse dans Adobe Analytics.
 * Publication de la bibliothèque.
 
-**Pour configurer Experience Platform Launch pour l’intégration :**
+**Pour configurer Experience Platform Launch en vue de l’intégration** :
 
 1. Commencez par accéder à Experience Platform Launch à partir de la [page d’accueil](https://experience.adobe.com/#/home) d’Experience Cloud. Dans la barre de menus, cliquez sur l’icône Solutions (un tableau de trois points par trois) près du coin supérieur droit de la page, puis cliquez sur **[!UICONTROL Launch]**.
 
@@ -596,7 +596,7 @@ Voir [Configuration de l’extension Visionneuses Dynamic Media](#configuring-t
 
 Pour modifier la configuration de l’Experience Platform Launch (y compris la configuration de la propriété, des extensions, des règles et des éléments de données), vous devez *publier* ces modifications. La publication dans Experience Platform Launch est effectuée à partir de l’onglet Publication sous la configuration des propriétés.
 
-Experience Platform Launch peut comporter plusieurs environnements de développement, un environnement d’évaluation et un environnement de production. Par défaut, la configuration du cloud Platform Launch dans Experience Manager pointe le nœud d’auteur Experience Manager vers l’environnement d’évaluation de Platform Launch. Le noeud Publication du Experience Manager pointe vers l’environnement de production de Platform launch. Cette disposition signifie qu’avec les paramètres par défaut d’Experience Manager, il est nécessaire de publier la bibliothèque Platform Launch dans l’environnement d’évaluation. Cela vous permet de l’utiliser dans l’auteur Experience Manager. Vous pouvez ensuite le publier dans l’environnement de production afin de pouvoir l’utiliser dans la publication Experience Manager.
+Experience Platform Launch peut comporter plusieurs environnements de développement, un environnement d’évaluation et un environnement de production. Par défaut, la configuration du cloud Platform Launch dans Experience Manager pointe le nœud d’auteur Experience Manager vers l’environnement d’évaluation de Platform Launch. Le nœud de publication d’Experience Manager pointe vers l’environnement de production de Platform Launch. Cette disposition signifie qu’avec les paramètres par défaut d’Experience Manager, il est nécessaire de publier la bibliothèque Platform Launch dans l’environnement d’évaluation. Cela vous permet de l’utiliser dans l’auteur Experience Manager. Vous pouvez ensuite le publier dans l’environnement de production afin de pouvoir l’utiliser dans la publication Experience Manager.
 
 Consultez [Environnements](https://experienceleague.adobe.com/docs/launch/using/publish/environments/environments.html?lang=fr#environment-types) pour plus d’informations sur les environnements Experience Platform Launch.
 
