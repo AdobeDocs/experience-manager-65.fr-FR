@@ -7,12 +7,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Gestion des ressources,Rendus
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 3221454e2d2dfd90b645a4c0303404d44f8d373d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2626'
-ht-degree: 47%
+ht-degree: 60%
 
 ---
 
@@ -25,9 +25,9 @@ La technologie d’imagerie dynamique applique les fonctionnalités d’Adobe Se
 
 >[!NOTE]
 >
->Cette fonctionnalité nécessite l’utilisation du réseau de diffusion de contenu prêt à l’emploi (CDN) fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
+>Cette fonctionnalité nécessite l’utilisation du réseau CDN (Content Delivery Network – réseau de diffusion de contenu) prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
-L’imagerie dynamique tire également parti de sa parfaite intégration dans un service de réseau de diffusion de contenu haut de gamme proposé par Adobe afin d’offrir un gain de performance accru. Ce service recherche la route Internet optimale entre les serveurs, les réseaux et les points d’appairage. Il trouve un itinéraire ayant la latence la plus faible et le taux de perte de paquets le plus faible au lieu d’utiliser l’itinéraire par défaut sur Internet.
+L’imagerie dynamique tire également parti de sa parfaite intégration dans un service de réseau de diffusion de contenu haut de gamme proposé par Adobe afin d’offrir un gain de performance accru. Ce service recherche la route Internet optimale entre les serveurs, les réseaux et les points d’appairage. Au lieu d’utiliser l’itinéraire par défaut sur Internet, le service établit celui possédant la latence et le taux de perte de paquets les plus faibles.
 
 Les exemples de ressources d’image suivants illustrent l’optimisation supplémentaire qu’apporte l’imagerie dynamique :
 
@@ -94,13 +94,13 @@ Comme les images constituent la majeure partie du temps de chargement d’une pa
 
 Améliorations apportées par la version la plus récente de l’imagerie dynamique :
 
-* Amélioration du classement d’optimisation du référencement Google pour les pages web à l’aide de la dernière technologie d’imagerie dynamique.
+* Amélioration du classement d’optimisation du référencement Google pour les pages web à l’aide de la technologie d’imagerie dynamique la plus récente.
 * Diffusion immédiate de contenus optimisés (au moment de l’exécution).
 * Mise en œuvre de la technologie Adobe Sensei pour effectuer la conversion en fonction de la qualité (qlt) spécifiée dans la demande d’image.
 * Possibilité de désactiver l’imagerie dynamique à l’aide du paramètre d’URL « bfc ».
 * Indépendance vis-à-vis du temps de vie (TTL). Auparavant, un TTL minimal de 12 heures était obligatoire pour le fonctionnement de l’imagerie dynamique.
 * Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
-* Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la dernière version de l’imagerie dynamique, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente de l’imagerie dynamique. Par exemple, &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; comme suggéré dans [Ajout d’une valeur d’en-tête personnalisée aux réponses d’image|Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la version de l’imagerie dynamique la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente. Par exemple, « Timing Allow Origin », « X-Robot » comme suggéré dans [Ajout d’une valeur d’en-tête personnalisée aux réponses d’image Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## L’imagerie dynamique entraîne-t-elle des frais de licence ?  {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -108,11 +108,11 @@ Non. L’imagerie dynamique est incluse dans votre licence existante de Dynamic 
 
 >[!NOTE]
 >
->L’imagerie dynamique n’est pas disponible pour les clients Dynamic Media - Hybrid.
+>L’imagerie dynamique n’est pas disponible pour les utilisateurs Dynamic Media – Hybrid.
 
 ## Comment fonctionne l’imagerie dynamique ?  {#how-does-smart-imaging-work}
 
-Lorsqu’une image est demandée par un consommateur, l’imagerie dynamique vérifie les caractéristiques de l’utilisateur et la convertit au format d’image approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
+Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caractéristiques utilisateur et les convertit au format approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
 
 <!--   * Safari 14.0 +
     * Safari 14 only with iOS 14.0 and above and macOS BigSur and above -->
@@ -121,7 +121,7 @@ Lorsqu’une image est demandée par un consommateur, l’imagerie dynamique vé
    * Chrome
    * Firefox
    * Microsoft® Edge
-   * Safari (sur iOS, macOS, iPadOS), navigateur fourni et version du système d’exploitation prennent en charge WebP.
+   * Safari (sur iOS, macOS, iPadOS), navigateur fourni, version du système d’exploitation compatible avec WebP.
    * Android™
    * Opera
 * Prise en charge des navigateurs existants pour les éléments suivants :
@@ -129,13 +129,13 @@ Lorsqu’une image est demandée par un consommateur, l’imagerie dynamique vé
    | Navigateur | Version du navigateur/du système d’exploitation | Format |
    | --- | --- | --- |
    | Safari | Antérieur à iOS/iPad 14.0 ou macOS BigSur | JPEG2000 |
-   | Edge | Avant 18 ans | JPEGXR |
+   | Edge | Avant 18 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * Pour les navigateurs qui ne prennent pas en charge ces formats, le format d’image demandé initialement est diffusé.
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
 
-## Quels sont les formats d’image pris en charge ? {#what-image-formats-are-supported}
+## Quels sont les formats d’image pris en charge ?  {#what-image-formats-are-supported}
 
 Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique :
 
@@ -161,13 +161,13 @@ L’imagerie dynamique fonctionne en toute transparence avec les URL et les para
 
 Si vous devez configurer un nouveau domaine personnalisé pour utiliser l’imagerie dynamique, les URL devront être mises à jour pour refléter ce domaine personnalisé.
 
-Pour connaître les conditions préalables requises pour l’imagerie dynamique, voir [Suis-je autorisé à utiliser l’imagerie dynamique ?](#am-i-eligible-to-use-smart-imaging)
+Pour comprendre les conditions préalables requises pour l’imagerie dynamique, consultez la section [Puis-je utiliser l’imagerie dynamique ?](#am-i-eligible-to-use-smart-imaging)
 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ? {#does-smart-imaging-working-with-https-how-about-http}
+## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?  {#does-smart-imaging-working-with-https-how-about-http}
 
 L’imagerie dynamique fonctionne avec les images diffusées sur HTTP ou HTTPS. Elle fonctionne également sur HTTP/2.
 
@@ -178,7 +178,7 @@ Pour pouvoir utiliser l’imagerie dynamique, le compte Dynamic Media Classic 
 * Utiliser le réseau de diffusion de contenu (CDN) fourni par Adobe dans le cadre de votre licence.
 * Utiliser un domaine dédié (par exemple, `images.company.com` ou `mycompany.scene7.com`), plutôt qu’un domaine générique (par exemple, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-Pour rechercher vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous au ou aux comptes de votre société.
+Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
 
 Appuyez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]** Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition lorsque vous soumettez un ticket de support technique.
 
@@ -204,7 +204,7 @@ Le calendrier de publication de l’imagerie dynamique RGPD et de l’optimisati
    1. nom, adresse électronique et numéro de téléphone du contact principal.
    1. Tous les domaines à activer pour l’imagerie dynamique (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`).
 
-      Pour rechercher vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous au ou aux comptes de votre société.
+      Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
 
       Cliquez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 
@@ -212,7 +212,7 @@ Le calendrier de publication de l’imagerie dynamique RGPD et de l’optimisati
    1. Vérifiez que vous utilisez le CDN via Adobe et non le CDN géré avec une relation directe.
    1. Vérifiez que vous utilisez un domaine dédié, tel que `images.company.com` ou `mycompany.scene7.com`, et non un domaine générique, tel que `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`.
 
-      Pour rechercher vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous au ou aux comptes de votre société.
+      Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise.
 
       Cliquez sur **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 
@@ -230,11 +230,11 @@ Le calendrier de publication de l’imagerie dynamique RGPD et de l’optimisati
 
 ## Dans quel délai puis-je m’attendre à ce que l’imagerie dynamique soit activée pour mon compte ?  {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par l’assistance clientèle, selon la liste d’attente.
+Les demandes sont traitées dans l’ordre de réception par l’équipe d’Assistance clientèle, suivant la liste d’attente.
 
 >[!NOTE]
 >
->Le délai d’exécution peut être long, car l’activation de l’imagerie dynamique implique l’Adobe de l’effacement du cache. Seul un petit nombre de transitions peut donc être traité simultanément.
+>Le délai d’exécution peut être relativement long, car l’activation de l’imagerie dynamique implique qu’Adobe efface le cache. Seul un petit nombre de transitions peut donc être traité simultanément.
 
 ## Quels sont les risques liés au passage à l’imagerie dynamique ?  {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -244,13 +244,13 @@ Au cours de la transition initiale, les images non mises en cache accèdent dire
 
 ## Comment puis-je vérifier si l’imagerie dynamique fonctionne comme prévu ? {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Une fois que l’imagerie dynamique est activée sur votre compte, chargez une URL d’image Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media sur le navigateur.
+1. Une fois que l’imagerie dynamique est activée sur votre compte, chargez une URL d’image Dynamic Media Classic ou Adobe Experience Manager – Dynamic Media sur le navigateur.
 1. Ouvrez le volet de Chrome pour les développeurs en cliquant sur **[!UICONTROL Afficher]** > **[!UICONTROL Développeur]** > **[!UICONTROL Outils de développement]** dans le navigateur. Vous pouvez également sélectionner l’outil de développement de navigateur de votre choix.
 
 1. Assurez-vous que le cache est désactivé lorsque les outils de développement sont ouverts.
 
    * Sous Windows®, accédez aux paramètres dans le volet de l’outil de développement, puis cochez la case **[!UICONTROL Désactiver le cache (lorsque les outils de développement sont ouverts)]** .
-   * Sous macOS, dans le volet Développeur, sous l’onglet **[!UICONTROL Réseau]**, sélectionnez **[!UICONTROL désactiver le cache]**.
+   * Sous macOS, sélectionnez **[!UICONTROL désactiver le cache]** dans l’onglet **[!UICONTROL Réseau]** du volet de développement.
 
 1. Observez que le type de contenu est converti au format approprié. L’écran ci-dessous illustre la conversion dynamique d’une image PNG au format WebP sur Chrome.
 1. Répétez ce test sur d’autres navigateurs et avec différentes conditions d’utilisation.
