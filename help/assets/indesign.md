@@ -1,18 +1,18 @@
 ---
-title: Intégrer [!DNL Assets] avec [!DNL InDesign Server]
+title: Intégration d’ [!DNL Assets] à [!DNL InDesign Server]
 description: Découvrez comment intégrer [!DNL Adobe Experience Manager Assets] avec [!DNL Adobe InDesign Server].
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Publication
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 38%
 
 ---
 
-# Intégrer [!DNL Adobe Experience Manager Assets] avec [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
+# Intégration d’[!DNL Adobe Experience Manager Assets]à [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] utilise:
 
@@ -60,7 +60,7 @@ Ce script de commande permet d’effectuer les opérations suivantes :
    * Le texte et les fichiers extraits sont stockés dans [!DNL Experience Manager Assets].
    * Tous les rendus sont stockés dans [!DNL Experience Manager Assets], dans la ressource elle-même.
 
-## Intégrer le [!DNL InDesign Server] au Experience Manager {#integrating-the-indesign-server-with-aem}
+## Intégration de [!DNL InDesign Server] à Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Pour intégrer le [!DNL InDesign Server] à utiliser avec [!DNL Experience Manager Assets] et après avoir configuré votre proxy, vous devez :
 
@@ -69,7 +69,7 @@ Pour intégrer le [!DNL InDesign Server] à utiliser avec [!DNL Experience Manag
 Cette opération n’est nécessaire que si les valeurs par défaut ne sont pas adaptées à votre instance.
 1. Configurer un [programme de traitement du proxy pour InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Installer [!DNL InDesign Server] {#installing-the-indesign-server}
+### Installez le [!DNL InDesign Server] {#installing-the-indesign-server}
 
 Pour installer et démarrer [!DNL InDesign Server] à utiliser avec [!DNL Experience Manager] :
 
@@ -147,7 +147,7 @@ Dans une installation [!DNL Experience Manager] standard, les éléments suivant
 
 * **Conception de page** : Conception de page à utiliser lors de la génération de la page résultant du processus.
 
-### Configurez le programme de traitement du proxy pour [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
+### Configuration du worker de proxy pour [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ Points d’extrémité SOAP à utiliser pour communiquer avec [!DNL InDesign Ser
 
 1. Cliquez sur OK pour enregistrer.
 
-###  de Day CQ Link Externalizer{#configuring-day-cq-link-externalizer}
+###  de Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
 Si [!DNL InDesign Server] et [!DNL Experience Manager] se trouvent sur des hôtes différents ou que l’une de ces applications ou les deux ne fonctionnent pas sur les ports par défaut, configurez [!UICONTROL l’externaliseur de liens Day CQ] pour définir le nom d’hôte, le port et le chemin d’accès au contenu pour [!DNL InDesign Server].
 
