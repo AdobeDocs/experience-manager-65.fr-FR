@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 feature: Fragments de contenu
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 86%
@@ -27,7 +27,7 @@ Les types de processus que vous pouvez exécuter sur les fragments de contenu so
 
 Vous pouvez exécuter les types de processus de copie de langue suivants sur les fragments de contenu :
 
-**Créer et traduire** 
+**Créer et traduire**
 
 Dans ce processus, les fragments de contenu à traduire sont copiés vers la racine de langue de la langue vers laquelle vous souhaitez traduire. En outre, en fonction des options que vous sélectionnez, un projet de traduction est créé pour les fragments de contenu dans la console Projets. En fonction des paramètres, vous pouvez démarrer le projet de traduction manuellement ou autoriser son exécution automatique dès sa création.
 
