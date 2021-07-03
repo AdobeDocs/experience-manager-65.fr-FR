@@ -8,13 +8,13 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Composants,Publication
-source-git-commit: 3221454e2d2dfd90b645a4c0303404d44f8d373d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3252'
-ht-degree: 67%
+ht-degree: 76%
 
 ---
 
@@ -28,7 +28,7 @@ Vous ajoutez directement des ressources Dynamic Media à la page si vous utilise
 >
 >Veillez à publier les ressources avant de les ajouter aux pages dans Experience Manager. Voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
 
-## Ajout d’un composant Dynamic Media à une page {#adding-a-dynamic-media-component-to-a-page}
+## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
 
 L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média panoramique, Recadrage intelligent de la vidéo ou Média vidéo 360 à une page est identique à l’ajout d’un composant sur n’importe quelle page. Les composants Dynamic Media sont décrits dans les sections suivantes.
 
@@ -136,7 +136,7 @@ Si vous ajoutez le composant Média dynamique et si l’option **[!UICONTROL Par
 * Vous avez [activé Dynamic Media](/help/assets/config-dynamic.md). Par défaut, ce module complémentaire est désactivé.
 * L’image possède un fichier pyramid tiff. Les images que vous importez avant d’activer Dynamic Media ne comportent pas de fichier pyramid tiff.
 
-#### En cas d’utilisation d’images {#when-working-with-images}
+#### En cas d’utilisation d’images  {#when-working-with-images}
 
 Le composant Média dynamique permet d’ajouter des images dynamiques, notamment des visionneuses d’images, à 360 ° et de supports variés. Vous pouvez effectuer un zoom avant et arrière, faire pivoter une image dans une visionneuse à 360° ou sélectionner une image dans un autre type de visionneuse.
 
@@ -154,7 +154,7 @@ Modifiez les paramètres Dynamic Media suivants en appuyant sur l’icône **[!U
 
    Il s’agit de la seule option disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes. Les paramètres de visionneuse prédéfinis affichés sont intelligents ; seuls les paramètres de visionneuse prédéfinis pertinents s’affichent.
 
-* **[!UICONTROL Modificateurs de visionneuse]**  : les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et permettent de modifier les visionneuses comme indiqué dans le Guide de référence des visionneuses. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`, qui définit une image différente pour la miniature de la vidéo et associe un fichier de légende/sous-titre à la vidéo.
+* **[!UICONTROL Modificateurs de visionneuse]** : les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et permettent de modifier les visionneuses comme indiqué dans le Guide de référence des visionneuses. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`, qui définit une image différente pour la miniature de la vidéo et associe un fichier de légende/sous-titre à la vidéo.
 
 * **[!UICONTROL Paramètre d’image prédéfini]**  : sélectionnez un paramètre d’image prédéfini existant. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
@@ -164,7 +164,7 @@ Modifiez les paramètres Dynamic Media suivants en appuyant sur l’icône **[!U
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
 
-* **[!UICONTROL Points d’arrêt]**  : si vous utilisez cette ressource sur un site réactif, vous devez ajouter les points d’arrêt d’image. Les points d’arrêt d’image sont séparés par des virgules (,). Cette option fonctionne lorsqu’il n’existe aucune valeur de hauteur ou largeur définie dans un paramètre d’image prédéfini.
+* **[!UICONTROL Points d’arrêt]** : si vous utilisez cette ressource sur un site réactif, vous devez ajouter les points d’arrêt d’image. Les points d’arrêt d’image sont séparés par des virgules (,). Cette option fonctionne lorsqu’il n’existe aucune valeur de hauteur ou largeur définie dans un paramètre d’image prédéfini.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
 
@@ -180,19 +180,19 @@ Modifiez les paramètres Dynamic Media suivants en appuyant sur l’icône **[!U
 
    Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/imaging-faq.md#dpr). Notez que toutes les valeurs RGPD d’imagerie dynamique Dynamic Media Adobe Experience Manager sont ignorées.
 
-* **[!UICONTROL Titre]**  : modifiez le titre de l’image.
+* **[!UICONTROL Titre]** : modifiez le titre de l’image.
 
-* **[!UICONTROL Texte de remplacement]**  : ajoutez un titre à l’image pour les utilisateurs pour lesquels les graphiques sont désactivés.
-
-   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
-
-* **[!UICONTROL URL, Ouvrir dans]**  : vous pouvez définir une ressource pour ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
+* **[!UICONTROL Texte secondaire]** : ajoutez un titre à l’image pour les utilisateurs pour lesquels les graphiques sont désactivés.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
 
-* **[!UICONTROL Largeur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL URL, Ouvrir dans]** : vous pouvez définir une ressource pour ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
 
-* **[!UICONTROL Hauteur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
+
+* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+
+* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 
 #### En cas d’utilisation de vidéos {#when-working-with-video}
@@ -218,11 +218,11 @@ Modifiez les paramètres Dynamic Media suivants en cliquant sur **[!UICONTROL Mo
 
       Vous pouvez modifier les paramètres avancés ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Titre]**  : modifiez le titre de la vidéo.
+* **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
-* **[!UICONTROL Largeur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
-* **[!UICONTROL Hauteur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 #### Lorsque vous utilisez le recadrage intelligent {#when-working-with-smart-crop}
 
@@ -244,7 +244,7 @@ Modifiez le paramètre Dynamic Media suivant en cliquant sur **[!UICONTROL Modif
 
    Vous pouvez modifier les paramètres avancés ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Activer la correspondance du rapport d’aspect]**  : pour permettre à Dynamic Media de sélectionner un rendu de recadrage intelligent avec un rapport d’aspect qui correspond le mieux au rapport d’aspect de l’image d’origine, sélectionnez cette option.
+* **[!UICONTROL Activer la correspondance du rapport d’aspect]** : sélectionnez cette option pour laisser Dynamic Media sélectionner un rendu de recadrage intelligent avec le rapport d’aspect correspondant le mieux à celui de l’image d’origine.
 
 * **[!UICONTROL Optimiser pour les appareils]**  à résolution plus élevée : cochez (par défaut) la case pour autoriser l’optimisation du rapport DPR (Device Pixel Ratio).
 
@@ -256,19 +256,19 @@ Modifiez le paramètre Dynamic Media suivant en cliquant sur **[!UICONTROL Modif
 
    Voir aussi [A propos de l’optimisation du rapport pixels d’appareil](/help/assets/imaging-faq.md#dpr). Notez que toutes les valeurs RGPD d’imagerie dynamique Dynamic Media Adobe Experience Manager sont ignorées.
 
-* **[!UICONTROL Titre]**  : modifiez le titre de l’image avec recadrage intelligent.
+* **[!UICONTROL Titre]** : modifiez le titre d’une image avec recadrage intelligent.
 
-* **[!UICONTROL Texte de remplacement]**  : ajoutez un titre à l’image de recadrage intelligent pour les utilisateurs pour lesquels les graphiques sont désactivés.
-
-   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
-
-* **[!UICONTROL URL, Ouvrir dans]**  : vous pouvez définir une ressource pour ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
+* **[!UICONTROL Texte secondaire]** : ajoutez un titre à l’image avec recadrage intelligent pour les utilisateurs pour lesquels les graphiques sont désactivés.
 
    Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
 
-* **[!UICONTROL Largeur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL URL, Ouvrir dans]** : vous pouvez définir une ressource pour ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
 
-* **[!UICONTROL Hauteur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
+
+* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+
+* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 ### Composant Interactive Media {#interactive-media-component}
 
@@ -295,19 +295,19 @@ Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en cli
 
 * **[!UICONTROL Paramètre prédéfini de la visionneuse]**  : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir Gestion des paramètres prédéfinis de visionneuse.
 
-* **[!UICONTROL Titre]**  : modifiez le titre de la vidéo.
+* **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
-* **[!UICONTROL Largeur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
-* **[!UICONTROL Hauteur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
    Vous pouvez modifier les paramètres **[!UICONTROL Ajouter au panier]** ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Afficher la ressource de produit]**  : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Désactivez la case pour ne pas afficher la ressource de produit.
+* **[!UICONTROL Afficher les ressources de produit]** : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Désactivez la case pour ne pas afficher la ressource de produit.
 
-* **[!UICONTROL Afficher le prix des produits]**  : par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’élément tel qu’il est défini dans le module Commerce. Désactivez la case pour ne pas afficher le prix du produit.
+* **[!UICONTROL Afficher le prix des produits]** : par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’élément tel qu’il est défini dans le module Commerce. Désactivez la case pour ne pas afficher le prix du produit.
 
-* **[!UICONTROL Afficher le formulaire de produit]**  : par défaut, cette valeur n’est pas sélectionnée. Le formulaire de produit contient toutes les variantes de produit, telles que la taille et la couleur. Désactivez la case pour ne pas afficher les variantes de produit.
+* **[!UICONTROL Afficher le formulaire de produit]** : par défaut, cette valeur n’est pas sélectionnée. Le formulaire de produit contient toutes les variantes de produit, telles que la taille et la couleur. Désactivez la case pour ne pas afficher les variantes de produit.
 
 ### Composant de média panoramique {#panoramic-media-component}
 
