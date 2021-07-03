@@ -8,12 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Visionneuses
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 
 Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
 
-Vous n’incorporez les URL que si vous *et non* utilisez Adobe Experience Manager comme système de gestion de contenu web. Si vous utilisez Experience Manager comme gestion de contenu web, [vous ajoutez les ressources directement sur votre page](adding-dynamic-media-assets-to-pages.md).
+Vous devez incorporer les URL uniquement si vous *n’utilisez pas* Adobe Experience Manager comme outil de gestion de contenu web. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page](adding-dynamic-media-assets-to-pages.md).
 
 Voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
@@ -55,7 +55,7 @@ Consultez aussi [Diffusion d’images optimisées pour un site réactif](respons
 1. Dans la boîte de dialogue **[!UICONTROL Code intégré]**, copiez l’ensemble du code dans le Presse-papiers, puis appuyez sur **[!UICONTROL Fermer]**.
 1. Collez le code intégré dans vos pages web.
 
-## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media   {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
