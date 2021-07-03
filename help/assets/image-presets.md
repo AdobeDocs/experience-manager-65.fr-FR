@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 feature: Paramètres d’image prédéfinis
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 76%
@@ -35,7 +35,7 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 >
 >En mode Dynamic Media - Scene7, les paramètres d’image prédéfinis sont pris en charge uniquement pour les ressources d’image.
 
-**Pour appliquer les paramètres d’image prédéfinis Dynamic Media:**
+**Pour appliquer les paramètres d’image prédéfinis Dynamic Media :**
 
 1. Ouvrez la ressource et, dans le rail de gauche, sélectionnez dans le menu déroulant l’option **[!UICONTROL Rendus]**.
 
