@@ -9,12 +9,12 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: Visionneuses d’images, Gestion des ressources
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2085'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -36,7 +36,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources](/help/assets/manage-assets.md).
 
-## Démarrage rapide : Visionneuses d’images {#quick-start-image-sets}
+## Démarrage rapide : Visionneuses d’images  {#quick-start-image-sets}
 
 **Pour démarrer rapidement :**
 
@@ -154,7 +154,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 1. Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources une fois qu’elles ont été ajoutées.
 
-   Si nécessaire, faites glisser l’icône Réorganiser d’une ressource à droite du nom de fichier de la ressource pour réorganiser les images vers le haut ou vers le bas de la liste définie.
+   Si nécessaire, faites glisser l’icône Réorganiser d’une ressource vers la droite du nom de fichier de la ressource pour réorganiser les images vers le haut ou le bas de la liste définie.
 
    ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
@@ -209,7 +209,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Supprimer la visionneuse d’images.
 
-**Pour modifier les visionneuses d’images:**
+**Pour modifier les visionneuses d’images :**
 
 1. Effectuez l’une des opérations suivantes :
 
