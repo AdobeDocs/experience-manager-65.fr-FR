@@ -2,17 +2,17 @@
 title: Bonnes pratiques relatives à la traduction des ressources
 description: Meilleures pratiques pour une gestion efficace des ressources afin de synchroniser les diverses versions traduites et de rationaliser les workflows de traduction.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Gestion des ressources
 exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
-# Bonnes pratiques pour traduire des ressources {#best-practices-for-translating-assets-efficiently}
+# Bonnes pratiques relatives à la traduction des ressources {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] prend en charge des workflow multilingues permettant de traduire les fichiers binaires, les métadonnées et les balises des ressources numériques en plusieurs paramètres régionaux et de gérer les ressources traduites. Pour plus d’informations, voir [Ressources multilingues](multilingual-assets.md).
 
