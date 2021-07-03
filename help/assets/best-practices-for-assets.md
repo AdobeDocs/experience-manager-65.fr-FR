@@ -3,9 +3,9 @@ title: Bonnes pratiques pour [!DNL Assets]
 description: Améliore la stabilité et les performances du système en charge en identifiant et en adhérant aux bonnes pratiques qui dépendent de votre déploiement et de votre configuration.
 contentOwner: AG
 feature: Gestion des ressources
-role: Architect, Administrator
+role: Architect, Admin
 exl-id: 6b50f1b3-9c1c-47c8-a43e-6f40c42a41cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 25%
