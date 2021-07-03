@@ -2,10 +2,10 @@
 title: Étendre l’Éditeur de ressources
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Outils de développement
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 87%
@@ -20,7 +20,7 @@ La configuration de l’éditeur à l’aide des composants de modification pré
 
 En plus d’utiliser des composants d’éditeur préexistants, les développeurs [!DNL Adobe Experience Manager] peuvent créer leurs propres composants.
 
-## Créer un modèle Éditeur de ressources {#creating-an-asset-editor-template}
+## Création d’un modèle Éditeur de ressources {#creating-an-asset-editor-template}
 
 Les exemples de pages suivants sont inclus dans Geometrixx :
 
@@ -28,7 +28,7 @@ Les exemples de pages suivants sont inclus dans Geometrixx :
 * Exemple de modèle : `/apps/geometrixx/templates/asseteditor`
 * Exemple de composant de page : `/apps/geometrixx/components/asseteditor`
 
-### Configurer la bibliothèque cliente {#configuring-clientlib}
+### Configuration de la bibliothèque cliente {#configuring-clientlib}
 
 [!DNL Assets] Les composants utilisent une extension de la bibliothèque cliente de modification de la gestion du contenu web. Les clientlibs sont généralement chargés dans `init.jsp`.
 
@@ -62,7 +62,7 @@ Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. Pour qu
 
 Les exemples de composants de page nécessitent que tous les sélecteurs commencent par `.asseteditor` dans `static.css` (`/etc/designs/geometrixx/static.css`). Bonne pratique : copiez tous les sélecteurs `.asseteditor` dans votre feuille de style et ajustez les règles en fonction de vos besoins.
 
-### FormChooser : réglages pour les ressources chargées par la suite.{#formchooser-adjustments-for-eventually-loaded-resources}
+### FormChooser : réglages pour les ressources chargées par la suite. {#formchooser-adjustments-for-eventually-loaded-resources}
 
 L’Éditeur de ressources utilise le sélecteur de formulaire, qui permet de modifier les ressources sur la même page de formulaire. Pour cela, il suffit d’ajouter un sélecteur de formulaire et le chemin du formulaire vers l’URL de la ressource.
 
@@ -121,7 +121,7 @@ Dans la partie HTML, utilisez l’ensemble de titre précédent (titre de la res
 <title><%= title %></title>
 ```
 
-## Créer un composant de champ de formulaire simple {#creating-a-simple-form-field-component}
+## Création d’un composant de champ de formulaire simple {#creating-a-simple-form-field-component}
 
 Cet exemple illustre comment créer un composant qui affiche les métadonnées d’une ressource chargée.
 
