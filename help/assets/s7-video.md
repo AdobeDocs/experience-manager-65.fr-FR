@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Vidéo
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 38%
@@ -54,7 +54,7 @@ Le choix de l’emplacement du téléchargement du contenu vidéo dépend des é
 
 Si la réponse est « oui » à l’une des questions ou aux deux, téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe. Si la réponse est &quot;non&quot; aux deux questions, téléchargez directement votre vidéo vers Dynamic Media Classic. Le processus de chaque scénario est décrit dans la section suivante.
 
-### Si vous téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe  {#if-you-are-uploading-your-video-directly-to-adobe-dam}
+### Si vous téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
 Si vous avez besoin d’un workflow ou d’un contrôle de version pour vos ressources, téléchargez d’abord vers Adobe DAM. Vous trouverez ci-dessous le worfklow recommandé :
 
@@ -93,7 +93,7 @@ Pour configurer les paramètres prédéfinis universaux :
 
 1. Les profils de codage sélectionnés sont automatiquement appliqués à toutes les vidéos téléchargées dans le dossier cible de la gestion des actifs numériques CQ que vous avez défini pour cette configuration de cloud Scene7. Vous pouvez définir plusieurs configurations de cloud Scene7 avec différents dossiers cibles afin d’appliquer différents profils de codage, selon vos besoins.
 
-## Mise à jour de la visionneuse et des paramètres prédéfinis de codage  {#updating-viewer-and-encoding-presets}
+## Mise à jour de la visionneuse et des paramètres prédéfinis de codage {#updating-viewer-and-encoding-presets}
 
 Pour mettre à jour la visionneuse et les paramètres prédéfinis de codage pour la vidéo, car ils ont été mis à jour dans Scene7, accédez à la configuration Scene7 dans la configuration cloud et appuyez sur **[!UICONTROL Mettre à jour la visionneuse et les paramètres prédéfinis de codage]**.
 
@@ -140,7 +140,7 @@ Le tableau suivant fournit une comparaison de haut niveau des fonctionnalités p
 | Evolutivité | Oui | Non |
 | Vidéo mobile | Oui | Oui |
 
-### Configuration  {#setting-up}
+### Configuration {#setting-up}
 
 #### Création de profils vidéo {#creating-video-profiles}
 
