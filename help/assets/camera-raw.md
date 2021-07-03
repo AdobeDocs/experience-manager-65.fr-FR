@@ -2,17 +2,17 @@
 title: '[!DNL Adobe Camera Raw] prise en charge.'
 description: Découvrez comment activer la prise en charge de  [!DNL Adobe Camera Raw] dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Outils de développement
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 35%
 
 ---
 
-# Traiter les images à l’aide de {#camera-raw-support} Camera Raw
+# Traitement des images à l’aide de Camera Raw {#camera-raw-support}
 
 Vous pouvez activer la prise en charge de [!DNL Adobe Camera Raw] pour traiter les formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. La fonctionnalité est prise en charge dans [!DNL Adobe Experience Manager Assets] à l’aide du [package Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible dans Distribution logicielle.
 
