@@ -3,10 +3,10 @@ title: Réglage des performances [!DNL Assets].
 description: Suggestions et conseils sur  [!DNL Experience Manager] la configuration, les modifications apportées au matériel, aux logiciels et aux composants réseau pour supprimer les goulets d’étranglement et optimiser les performances de  [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Administrator
+role: Architect, Admin
 feature: Gestion des ressources
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2743'
 ht-degree: 53%
@@ -15,7 +15,7 @@ ht-degree: 53%
 
 <!-- TBD: Get reviewed by engineering. -->
 
-# [!DNL Adobe Experience Manager Assets] guide d’optimisation des performances  {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] guide d’optimisation des performances {#assets-performance-tuning-guide}
 
 Une configuration [!DNL Experience Manager Assets] contient un certain nombre de composants matériels, logiciels et réseau. Selon votre scénario de déploiement, vous pouvez avoir besoin d’apporter des modifications spécifiques à la configuration des composants matériels, logiciels et réseau pour supprimer les goulots d’étranglement en termes de performances.
 
@@ -75,7 +75,7 @@ Définissez les paramètres JVM suivants :
 
 Il est recommandé à tous les utilisateurs de [!DNL Experience Manager Assets] de séparer l’entrepôt de données de l’entrepôt de segments. En outre, la configuration des paramètres `maxCachedBinarySize` et `cacheSizeInMB` peut vous aider à optimiser les performances. Définissez le paramètre `maxCachedBinarySize` selon la plus petite taille de fichier pouvant être contenue dans le cache. Spécifiez la taille du cache en mémoire à utiliser pour l’entrepôt de données dans `cacheSizeInMB`. Adobe vous recommande de définir cette valeur entre 2 et 10 % de la taille totale du tas. Toutefois, le chargement ou le test des performances peuvent vous aider à déterminer le paramètre idéal.
 
-### Configuration de la taille maximale du cache d’images mis en mémoire tampon     {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configuration de la taille maximale du cache d’images mis en mémoire tampon    {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Lors du chargement de grandes quantités de ressources vers [!DNL Adobe Experience Manager], afin de permettre des pics inattendus de consommation de mémoire et d’empêcher l’échec de la JVM avec des erreurs OutOfMemoryErrors, réduisez la taille maximale configurée du cache d’image mis en mémoire tampon. Prenez l’exemple d’un système présentant un tas maximal (paramètre -`Xmx`) de 5 Go, un BlobCache Oak défini sur 1 Go et un cache de documents défini sur 2 Go. Dans ce cas, le cache mis en mémoire tampon prendrait au maximum 1,25 Go, ce qui laisserait seulement 0,75 Go pour les pics inattendus.
 
@@ -83,7 +83,7 @@ Configurez la taille du cache mis en mémoire tampon dans la console web OSGi. �
 
 À partir de Experience Manager 6.1 SP1, si vous utilisez un noeud `sling:osgiConfig` pour configurer cette propriété, veillez à définir le type de données sur Long. Pour plus de détails, voir [CQBufferedImageCache utilise le tas pendant le téléchargement des ressources](https://helpx.adobe.com/fr/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
-### Entrepôts de données partagés     {#shared-data-stores}
+### Entrepôts de données partagés    {#shared-data-stores}
 
 La mise en œuvre d’un entrepôt de données basé sur les fichiers, partagé ou S3, peut vous aider à économiser de l’espace disque et à augmenter le débit réseau dans des implémentations à grande échelle. Pour plus d’informations sur les avantages et inconvénients de l’utilisation d’une banque de données partagée, voir le [Guide de dimensionnement des ressources](/help/assets/assets-sizing-guide.md).
 
@@ -151,7 +151,7 @@ Si la purge s’exécute trop longtemps, elle s’arrête. Par conséquent, vous
 
 Par exemple, après avoir exécuté de nombreux workflows transitoires (ce qui crée des noeuds d’instance de workflow), vous pouvez exécuter [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) sur une base ad hoc. Il supprime les instances de workflow terminées et redondantes immédiatement sans attendre l’exécution du planificateur de purge de workflow d’Adobe Granite.
 
-### Tâches parallèles maximales     {#maximum-parallel-jobs}
+### Tâches parallèles maximales    {#maximum-parallel-jobs}
 
 Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches parallèles égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par les workflows [!UICONTROL Ressource de mise à jour de gestion des actifs numériques], ce qui ralentit la réactivité de l’interface utilisateur et empêche [!DNL Experience Manager] d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
 
@@ -230,7 +230,7 @@ L’importation d’une grande quantité de métadonnées peut entraîner une ac
 
 Lors de la réplication des ressources vers un grand nombre d’instances de publication (par exemple, dans une implémentation de sites), Adobe vous recommande d’utiliser la réplication par chaîne. Dans ce cas, l’instance d’auteur est répliquée vers une instance de publication unique qui est répliquée à son tour vers d’autres instances de publication, ce qui libère l’instance d’auteur.
 
-### Configuration de la réplication en chaîne     {#configure-chain-replication}
+### Configuration de la réplication en chaîne    {#configure-chain-replication}
 
 1. Sélectionnez l’instance de publication vers laquelle vous souhaitez effectuer les réplications en chaîne
 1. Sur cette instance de publication, ajoutez des agents de réplication qui pointent vers d’autres instances de publication
@@ -240,7 +240,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 >
 >Adobe ne recommande pas d’activer automatiquement les ressources. Cependant, si nécessaire, Adobe recommande d’effectuer cette opération en tant que dernière étape d’un workflow, généralement Ressource de mise à jour de gestion des actifs numériques.
 
-## Recherche des index     {#search-indexes}
+## Recherche des index    {#search-indexes}
 
 Installez [les derniers Service Packs](/help/release-notes/sp-release-notes.md) et les correctifs liés aux performances, car ils incluent souvent des mises à jour des index système. Voir [Conseils sur l’optimisation des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) pour connaître certaines optimisations d’index.
 
@@ -276,7 +276,7 @@ De même, lorsque les fichiers atteignent 2 Go lors de l’utilisation d’un en
 
 Pour chaque déploiement [!DNL Experience Manager] , établissez un régime de test de performance qui peut identifier et résoudre les goulets d’étranglement rapidement. Voici quelques points clés.
 
-### Test réseau     {#network-testing}
+### Test réseau    {#network-testing}
 
 Pour tous les problèmes liés aux performances du réseau du client, effectuez les tâches suivantes :
 
@@ -286,7 +286,7 @@ Pour tous les problèmes liés aux performances du réseau du client, effectuez 
 * En utilisant un outil localisateur de réseau
 * Tester par rapport au Dispatcher
 
-### [!DNL Experience Manager] test de déploiement  {#aem-deployment-testing}
+### [!DNL Experience Manager] test de déploiement {#aem-deployment-testing}
 
 Pour réduire la latence et atteindre un débit élevé grâce à une utilisation efficace du processeur et au partage de charge, surveillez régulièrement les performances de votre déploiement [!DNL Experience Manager]. En particulier :
 
