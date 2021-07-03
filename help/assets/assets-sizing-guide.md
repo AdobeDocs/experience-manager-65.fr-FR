@@ -2,17 +2,17 @@
 title: '[!DNL Assets] guide de dimensionnement'
 description: Bonnes pratiques pour déterminer des mesures efficaces afin d’estimer l’infrastructure et les ressources nécessaires au déploiement  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: Gestion des ressources
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1617'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
-# [!DNL Assets] guide de dimensionnement  {#assets-sizing-guide}
+# [!DNL Assets] guide de dimensionnement {#assets-sizing-guide}
 
 Lors du dimensionnement de l’environnement pour une mise en oeuvre de [!DNL Adobe Experience Manager Assets] , il est important de s’assurer qu’il existe suffisamment de ressources disponibles en termes de disque, de processeur, de mémoire, d’E/S et de débit réseau. Pour dimensionner la plupart de ces ressources, vous devez comprendre leur mode de chargement dans le système. Si aucune meilleure mesure n’est disponible, vous pouvez diviser la taille de la bibliothèque existante par l’âge de la bibliothèque pour trouver la fréquence de création des ressources.
 
@@ -58,7 +58,7 @@ Les exemples de données renseignés dans l’outil montrent à quel point il es
 
 Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banque de données partagée par le biais d’une banque de données de fichiers partagée sur un lecteur connecté au réseau ou via une banque de données Amazon S3. Dans ce cas, les instances individuelles n’ont pas besoin de conserver une copie des fichiers binaires. En outre, une banque de données partagée facilite la réplication sans fichier binaire et contribue à réduire la bande passante utilisée pour répliquer les ressources vers les environnements de publication.
 
-#### Scénarios d’utilisation {#use-cases}
+#### Scénarios d’utilisation  {#use-cases}
 
 La banque de données peut être partagée entre une instance d’auteur principale et de secours afin de réduire le temps nécessaire à la mise à jour de l’instance de secours avec les modifications apportées à l’instance principale. Vous pouvez également partager la banque de données entre les instances d’auteur et de publication afin de réduire le trafic lors de la réplication.
 
@@ -78,7 +78,7 @@ Les banques de données partagées augmentent également la complexité des opé
 
 Pour les opérations AWS, la mise en oeuvre d’un emplacement central unique (via Amazon S3), plutôt que de créer une matrice RAID de volumes EBS, peut considérablement compenser la complexité et les risques opérationnels du système.
 
-#### Performances {#performance-concerns}
+#### Problèmes de performances {#performance-concerns}
 
 Une banque de données partagée nécessite que les fichiers binaires soient stockés sur un lecteur monté sur le réseau partagé entre toutes les instances. Comme ces fichiers binaires sont accessibles sur un réseau, les performances du système sont affectées. Vous pouvez partiellement atténuer cet impact en utilisant une connexion réseau rapide à une matrice rapide de disques. Toutefois, il s’agit d’une proposition coûteuse. Dans le cas des opérations AWS, tous les disques sont distants et nécessitent une connectivité réseau. Les volumes éphémères perdent des données lorsque l’instance démarre ou s’arrête.
 
