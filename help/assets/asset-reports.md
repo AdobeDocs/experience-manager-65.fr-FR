@@ -2,13 +2,13 @@
 title: Rapports sur l’utilisation et le partage des ressources
 description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Rapports de ressources,Gestion des ressources
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -98,7 +98,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
 1. Cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 
-1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner plus de colonnes. Annulez la sélection d&#39;une colonne pour l&#39;exclure du rapport.
+1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner plus de colonnes. Annulez la sélection d’une colonne pour l’exclure dans le rapport.
 
    ![Sélectionner ou annuler la sélection des colonnes du rapport](assets/configure_columns.png)
 
@@ -113,7 +113,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    Cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils pour télécharger le rapport au format CSV.
 
-## Ajout de colonnes personnalisées {#add-custom-columns}
+## Ajout de colonnes personnalisées   {#add-custom-columns}
 
 Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
 
