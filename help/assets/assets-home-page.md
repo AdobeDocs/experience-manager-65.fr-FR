@@ -3,16 +3,16 @@ title: '[!DNL Assets] Expérience sur la page d’accueil'
 description: Personnalisez la  [!DNL Experience Manager Assets] page d’accueil pour une expérience d’écran de bienvenue riche, y compris un instantané des activités récentes concernant les ressources.
 contentOwner: AG
 feature: Outils de développement, gestion des ressources
-role: Administrator, Business Practitioner
+role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 35%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] Expérience de page d’accueil  {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Expérience de page d’accueil {#aem-assets-home-page-experience}
 
 Personnalisez la [!DNL Adobe Experience Manager Assets] page d’accueil pour bénéficier d’une expérience d’écran de bienvenue enrichie, y compris un instantané des activités récentes concernant les ressources.
 
@@ -70,7 +70,7 @@ Cette section s’affiche sous la section Bienvenue et contient des widgets prê
 
 **Récent** : Le widget  **[!UICONTROL Récemment]** affiché sous cette section affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
 
-**Discover** : Le  **** widget situé sous cette section affiche les ressources et les rendus récemment chargés dans le  [!DNL Assets] déploiement.
+**Discover** : Le  **** widget situé sous cette section affiche les ressources et les rendus récemment transférés vers le  [!DNL Assets] déploiement.
 
 Pour activer la purge des données d’activité de l’utilisateur, activez le **[!UICONTROL service de purge des événements de gestion des actifs numériques]** à partir de Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
 
