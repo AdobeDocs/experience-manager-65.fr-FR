@@ -1,21 +1,21 @@
 ---
-sub-product: ' de contenu AEM et Commerce'
-user-guide-title: ' de contenu AEM et Commerce'
+sub-product: ' AEM Content and Commerce'
+user-guide-title: ' AEM Content and Commerce'
 breadcrumb-title: Guide commercial
 user-guide-description: Découvrez comment utiliser et administrer le contenu AEM et Commerce.
-source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
+source-git-commit: 538dc7620317f86c0b3d762eaef597d0a7969ace
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 73%
+source-wordcount: '108'
+ht-degree: 82%
 
 ---
 
 
 # Commerce {#commerce}
 
-+ [ de contenu AEM et Commerce](/help/commerce/home.md)
++ [ AEM Content and Commerce](/help/commerce/home.md)
 + [Modifications notables apportées à AEM contenu et à Commerce](cif/changes.md)
-+ [Présentation et présentation](cif/introduction.md)
++ [Présentation et aperçu](cif/introduction.md)
 + Intégrations {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
    + [Solution commerciale tierce](cif/integrating/third-party.md)
@@ -31,6 +31,7 @@ ht-degree: 73%
       + [Style des composants CIF](cif/customizing/style-cif-component.md)
       + [Personnalisation des composants CIF](cif/customizing/customize-cif-components.md)
       + [Utilisation des sélecteurs de catalogue CIF](cif/customizing/use-cif-pickers.md)
++ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migration](cif/migration.md)
 + Notes de mise à jour {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)
