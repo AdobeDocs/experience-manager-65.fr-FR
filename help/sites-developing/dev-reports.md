@@ -10,14 +10,15 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 08269877be5e98405474e4b1793526763cab174f
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 78%
 
 ---
 
-# Élaboration de rapports{#developing-reports}
+
+# Élaboration de rapports {#developing-reports}
 
 AEM propose une sélection de [rapports standard](/help/sites-administering/reporting.md) dont la plupart sont basés sur un cadre de création de rapports.
 
@@ -125,7 +126,7 @@ Chaque colonne est une instance du [composant `columnbase`](#column-base-compone
 * définit le lien vers le [jeu de résultats sous-jacent](#the-query-and-data-retrieval) ; en d’autres termes, il définit les données spécifiques référencées dans ce jeu de résultats, ainsi que la façon dont elles sont traitées ;
 * contient des définitions supplémentaires ; telles que les agrégats et filtres disponibles, ainsi que toute valeur par défaut.
 
-### Requête et récupération de données  {#the-query-and-data-retrieval}
+### Requête et récupération de données {#the-query-and-data-retrieval}
 
 La requête :
 
@@ -218,7 +219,7 @@ Voici ce dont vous avez besoin pour créer et configurer un rapport :
 * Une [conception de rapports](#report-design)
 * Un [modèle de rapport](#report-template)
 
-### Emplacement des composants de rapport  {#location-of-report-components}
+### Emplacement des composants de rapport {#location-of-report-components}
 
 Les composants de création de rapports par défaut sont conservés sous `/libs/cq/reporting/components`.
 
@@ -251,7 +252,7 @@ Une page de rapport doit utiliser la balise `sling:resourceType` de `/libs/cq/re
 
 Un composant de page personnalisé n’est normalement pas nécessaire (dans la plupart des cas).
 
-## Composant de rapport de base  {#report-base-component}
+## Composant de rapport de base {#report-base-component}
 
 Chaque type de rapport nécessite un composant de conteneur dérivé de `/libs/cq/reporting/components/reportbase`.
 
@@ -269,7 +270,7 @@ N:<reportname> [cq:Component]
     N:queryBuilder
 ```
 
-### Définition de la requête  {#query-definition}
+### Définition de la requête {#query-definition}
 
 ```xml
 N:queryBuilder
@@ -487,7 +488,7 @@ Un chemin d’accès racine peut également être défini pour le rapport :
    * le [modèle de rapport](#report-template) (soit comme valeur fixe, soit comme valeur par défaut pour la boîte de dialogue de configuration),
    * l’utilisateur (à l’aide de ce paramètre).
 
-## Composant de base de colonne  {#column-base-component}
+## Composant de base de colonne {#column-base-component}
 
 Chaque type de colonne nécessite un composant dérivé de `/libs/cq/reporting/components/columnbase`.
 
@@ -527,7 +528,7 @@ N:<columnname> [cq:Component]
 
 Voir aussi [Définition de votre nouveau rapport](#defining-your-new-report).
 
-### Requête spécifique à la colonne  {#column-specific-query}
+### Requête spécifique à la colonne {#column-specific-query}
 
 Cette requête définit l’extraction de données spécifiques (à partir du [jeu de résultats de données du rapport](#the-query-and-data-retrieval)) à utiliser dans la colonne individuelle.
 
@@ -602,7 +603,7 @@ function(v) {
 }
 ```
 
-### Programmes de résolution et prétraitement  {#resolvers-and-preprocessing}
+### Programmes de résolution et prétraitement {#resolvers-and-preprocessing}
 
 La [file d’attente de traitement](#processing-queue) définit les différents programmes de résolution et configure le prétraitement :
 
@@ -789,7 +790,7 @@ N:definitions
                 P:format          // data type formatter
 ```
 
-#### Prétraitement : motifs de recherche et de remplacement  {#preprocessing-find-and-replace-patterns}
+#### Prétraitement : motifs de recherche et de remplacement {#preprocessing-find-and-replace-patterns}
 
 Pour le prétraitement, vous pouvez spécifier une expression `pattern` (définie sous la forme d’une [expression régulière](https://en.wikipedia.org/wiki/Regular_expression) ou expression régulière) qui est localisée, puis remplacée par le modèle `replace` :
 
@@ -1133,7 +1134,7 @@ Il n’est pas nécessaire de spécifier des conceptions pour chaque colonne. Le
 >
 >Des colonnes par défaut peuvent être créées automatiquement à la création d’un rapport. Elles sont spécifiées dans le modèle.
 
-## Modèle de rapport  {#report-template}
+## Modèle de rapport {#report-template}
 
 Chaque type de rapport doit fournir un modèle. Il s’agit de [Modèles CQ](/help/sites-developing/templates.md) standard qui peuvent être configurés comme tels.
 
@@ -1409,7 +1410,7 @@ Cette section décrit les options de configuration avancées pour les services O
 
 Vous pouvez les afficher à l’aide du menu Configuration de la console web (disponible par exemple à l’adresse `http://localhost:4502/system/console/configMgr`). Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
-### Service de base (Configuration des rapports de Day CQ)  {#basic-service-day-cq-reporting-configuration}
+### Service de base (Configuration des rapports de Day CQ) {#basic-service-day-cq-reporting-configuration}
 
 * **Fuseau horaire** définit le fuseau horaire pour lequel les données historiques sont créées. Cela permet d’assurer que le graphique historique affiche les mêmes données pour chaque utilisateur dans le monde entier.
 * **Paramètres régionaux** définit les paramètres régionaux à utiliser avec l’option **Fuseau horaire** pour les données historiques. Les paramètres régionaux sont utilisés pour déterminer certains paramètres du calendrier spécifiques à la région (par exemple, si le premier jour de la semaine est le dimanche ou le lundi).
