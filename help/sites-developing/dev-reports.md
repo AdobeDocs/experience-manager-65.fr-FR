@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 08269877be5e98405474e4b1793526763cab174f
+source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 78%
@@ -50,34 +50,17 @@ Pour les rapports standards livrés avec AEM :
 >La notation suivante est utilisée dans les exemples et définitions ci-dessous :
 >
 >* Chaque ligne définit un nœud ou une propriété où :
-   >
-   >  
-* `N:<name> [<nodeType>]`
-   >
-   >     
-   Décrit un noeud portant le nom `<*name*>` et le type de noeud `<*nodeType*>`*.*
-   >
-   >  
-* `P:<name> [<propertyType]`
-   >
-   >     
-   Décrit une propriété avec le nom `<*name*>` et un type de propriété `<*propertyType*>`.
-   >
-   >  
-* `P:<name> = <value>`
-   >
-   >     
-   Décrit une propriété `<name>` qui doit être définie sur la valeur de `<value>`.
+   >  `N:<name> [<nodeType>]` : Décrit un noeud portant le nom  `<*name*>` et le type de noeud de  `<*nodeType*>`*.*
+   >  `P:<name> [<propertyType]` : Décrit une propriété avec le nom  `<*name*>` et un type de propriété de  `<*propertyType*>`.
+   >  `P:<name> = <value>` : Décrit une propriété  `<name>` qui doit être définie sur la valeur de  `<value>`.
    >
    >
 * La mise en retrait indique les dépendances hiérarchiques entre les nœuds.
->* Éléments séparés par | indique une liste d’éléments possibles ; par exemple, types ou noms :
+>* Éléments séparés par | indique une liste d’éléments possibles ; par exemple, les types ou les noms ; Par exemple : `String|String[]` signifie que la propriété peut être String ou String[].
 
->
->  
-Par exemple : `String|String[]` signifie que la propriété peut être String ou String[].
->
->* `[]` représente un tableau ; comme [] Chaîne ou tableau de noeuds comme dans la  [définition de requête](#query-definition).
+   >
+   >
+* `[]` représente un tableau ; comme [] Chaîne ou tableau de noeuds comme dans la  [définition de requête](#query-definition).
 >
 >
 Sauf indication contraire, les types par défaut sont les suivants :
