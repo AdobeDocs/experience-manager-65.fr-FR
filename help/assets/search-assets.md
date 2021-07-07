@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Recherche, Métadonnées
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '5575'
+source-wordcount: '5573'
 ht-degree: 88%
 
 ---
@@ -358,7 +358,7 @@ La recherche visuelle utilise des balises intelligentes. Après avoir configuré
    Enregistrez les modifications.
 
 1. Accédez à `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` et ajoutez la propriété `similarityTags` de type `Boolean` avec la valeur `true`.
-1. Appliquez des balises intelligentes aux ressources de votre référentiel [!DNL Experience Manager]. Voir [Configuration des balises intelligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
+1. Appliquez des balises intelligentes aux ressources de votre référentiel [!DNL Experience Manager]. Voir [Configuration des balises intelligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
 1. Dans CRXDE, dans le noeud `/oak-index/damAssetLucene`, définissez la propriété `reindex` sur `true`. Enregistrez les modifications.
 1. (Facultatif) Si vous avez un formulaire de recherche personnalisé, copiez le noeud `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` dans `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Enregistrez les modifications.
 
