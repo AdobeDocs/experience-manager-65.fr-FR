@@ -4,10 +4,10 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 0c5759786a698f7c7503a56da7f472229d18f763
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3843'
-ht-degree: 4%
+source-wordcount: '3835'
+ht-degree: 5%
 
 ---
 
@@ -69,7 +69,7 @@ Pour obtenir la liste complète des fonctionnalités et améliorations introduit
 >À partir du Service Pack 9, les clients [!DNL Experience Manager] peuvent développer et exploiter leurs applications [!DNL Experience Manager] avec des distributions des [!DNL Azul Zulu] versions d’OpenJDK, conformes aux normes de Java™ SE.
 >La prise en charge des JDK [!DNL Azul Zulu] est également fournie par Adobe aux clients [!DNL Experience Manager].
 >Vous pouvez télécharger les versions appropriées des JDK [!DNL Azul Zulu] à partir de [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->Les droits d’utilisation de la technologie Java™ Oracle, tels qu’ils sont distribués par Adobe, expireront d’ici la fin décembre 2022. [!DNL Experience Manager] Nous vous recommandons de planifier et de mettre en oeuvre l’utilisation des  [!DNL Azul Zulu] JDK au plus tard à cette date. Pour plus d’informations sur l’utilisation de la technologie [!DNL Oracle Java™] et de la technologie [!DNL Azul Zulu], consultez la [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) associée.
+>Les droits d’utilisation de la technologie Java™ Oracle, tels qu’ils sont distribués par Adobe, expireront d’ici la fin décembre 2022. [!DNL Experience Manager] Nous vous recommandons de planifier et de mettre en oeuvre l’utilisation des  [!DNL Azul Zulu] JDK au plus tard à cette date. Pour plus d’informations sur l’utilisation de la technologie [!DNL Oracle Java™] et de la technologie [!DNL Azul Zulu], consultez la [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf) associée.
 
 Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 6.5.9.0.
 
@@ -197,7 +197,7 @@ Le contraste (avec l’arrière-plan) du texte et des icônes ci-dessous est am�
 
 Adobe Experience Manager 6.5.9.0 Assets résout les problèmes suivants dans [!DNL Dynamic Media] :
 
-* Les paramètres de visionneuse prédéfinis et CSS personnalisés ne sont pas répliqués vers [!DNL Dynamic Media] lorsque [!DNL Dynamic Media] est activé de manière sélective et désactivé par [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
+* Les paramètres de visionneuse prédéfinis et CSS personnalisés ne sont pas répliqués vers [!DNL Dynamic Media] lorsque [!DNL Dynamic Media] est activé de manière sélective et désactivé par [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#troubleshoot-dm-config) (NPR-36232).
 
 * Lors de la tentative de prévisualisation de rendus vidéo sur la page des détails de la ressource, le chargement des vidéos est lent (CQ-4320122).
 
@@ -405,12 +405,12 @@ Pour connaître les plates-formes certifiées pour fonctionner avec cette versio
 >Ignorez si vous n’utilisez pas Experience Manager Forms. Les correctifs dans Experience Manager Forms sont fournis par le biais d’un module complémentaire distinct une semaine après la publication du Service Pack [!DNL Experience Manager] planifiée.
 
 1. Vérifiez que vous avez installé le Service Pack Adobe Experience Manager.
-1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [versions AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) pour votre système d’exploitation.
+1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [versions AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) pour votre système d’exploitation.
 1. Installez le module complémentaire Forms comme décrit dans [Installation des modules complémentaires AEM Forms](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 >[!NOTE]
 >
->Experience Manager 6.5.9.0 comprend une nouvelle version du [module de compatibilité AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Si vous utilisez une ancienne version du package de compatibilité AEM Forms et que vous mettez à jour vers Experience Manager 6.5.9.0, installez la dernière version du package après l’installation du package du module complémentaire Forms.
+>Experience Manager 6.5.9.0 comprend une nouvelle version du [module de compatibilité AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Si vous utilisez une ancienne version du package de compatibilité AEM Forms et que vous mettez à jour vers Experience Manager 6.5.9.0, installez la dernière version du package après l’installation du package du module complémentaire Forms.
 
 ### Installation d’Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
