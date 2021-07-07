@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Collaboration,Adobe Asset Link,Application de bureau
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3254'
+source-wordcount: '3250'
 ht-degree: 55%
 
 ---
@@ -89,7 +89,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 
 ### Remarques concernant l’utilisation de l’intégration [!DNL Experience Manager] et [!DNL Creative Cloud] {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Voir [Bonnes pratiques relatives à l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* Voir [Bonnes pratiques relatives à l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Voir [Intégration Adobe Stock](aem-assets-adobe-stock.md)
 * Voir la section [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -209,7 +209,7 @@ La description fait référence aux chargements de fichiers sur le plan opérati
 
 Vous pouvez utiliser les fonctionnalités de transfert suivantes :
 
-* Pour charger des dossiers hiérarchiques/volumineux en bloc, utilisez l’appli de bureau [!DNL Experience Manager] qui fournit la fonctionnalité [de chargement de dossiers](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#upload-and-add-new-assets-to-aem). Vous pouvez également transférer des structures de dossiers hiérarchiques. [!DNL Assets] sont chargées en arrière-plan et, par conséquent, elles ne sont pas liées à une session de navigateur web ;
+* Pour charger des dossiers hiérarchiques/volumineux en bloc, utilisez l’appli de bureau [!DNL Experience Manager] qui fournit la fonctionnalité [de chargement de dossiers](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem). Vous pouvez également transférer des structures de dossiers hiérarchiques. [!DNL Assets] sont chargées en arrière-plan et, par conséquent, elles ne sont pas liées à une session de navigateur web ;
 * Pour charger quelques fichiers à partir d’un seul dossier, faites-les glisser directement vers l’interface web ou utilisez l’option Créer de l’interface web [!DNL Assets].
 * En fonction des besoins de votre entreprise, vous pouvez également utiliser un outil de chargement personnalisé.
 
