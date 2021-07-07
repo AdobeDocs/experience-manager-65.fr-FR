@@ -3,9 +3,9 @@ title: 'Configuration des modules externes d’éditeur de texte enrichi '
 description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi Adobe Experience Manager pour activer des fonctionnalités individuelles.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
+source-git-commit: 11cda989e6a28428f03a269c407a7672e6eab747
 workflow-type: tm+mt
-source-wordcount: '4405'
+source-wordcount: '4406'
 ht-degree: 93%
 
 ---
@@ -245,19 +245,11 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 >
 >L’éditeur de texte enrichi utilise un élément DOM de conteneur avec un ID de `CQrte`, qui peut être utilisé afin de fournir différents styles pour l’affichage et la modification :
 >
+>`#CQ td {`
+>` // defines the style for viewing }`
 >
-```
->#CQ td {
-> // defines the style for viewing
-> }
->```
->
->
-```
->#CQrte td {
-> // defines the style for editing
-> }
->```
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### Spécification des styles disponibles dans la liste contextuelle {#stylesindropdown}
 
@@ -496,7 +488,7 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
 
    * **Nom** `features`
    * **Type** `String`
-   * **Valeur** `*`
+   * **Valeur** `*` (astérisque)
 
    >[!NOTE]
    Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
@@ -613,7 +605,7 @@ Pour définir la taille de la tabulation :
 
    * **Nom** `tabSize`
    * **Type** `String`
-   * **Valeur** Nombre d’espaces à utiliser pour le tabulateur.
+   * **Valeur** Nombre d’espaces à utiliser pour le tabulateur
 
 1. Enregistrez les modifications.
 
