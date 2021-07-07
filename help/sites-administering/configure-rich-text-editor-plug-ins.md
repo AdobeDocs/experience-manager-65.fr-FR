@@ -1,16 +1,17 @@
 ---
-title: Configuration des modules externes d’éditeur de texte enrichi
+title: 'Configuration des modules externes d’éditeur de texte enrichi '
 description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi Adobe Experience Manager pour activer des fonctionnalités individuelles.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
 workflow-type: tm+mt
-source-wordcount: '4395'
-ht-degree: 95%
+source-wordcount: '4405'
+ht-degree: 93%
 
 ---
 
-# Configuration des modules externes d’éditeur de texte enrichi {#configure-the-rich-text-editor-plug-ins}
+
+# Configuration des modules externes d’éditeur de texte enrichi  {#configure-the-rich-text-editor-plug-ins}
 
 Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
 
@@ -82,7 +83,7 @@ Lors de l’utilisation de l’éditeur de texte enrichi, les auteurs peuvent co
 
 * **Mode MS Word** : collage du texte, y compris des tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle.
 
-### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi {#configure-paste-options-available-on-the-rte-toolbar}
+### Configuration des options de collage disponibles sur la barre d’outils de l’éditeur de texte enrichi   {#configure-paste-options-available-on-the-rte-toolbar}
 
 Les trois icônes ci-dessous peuvent être mises à la disposition des auteurs dans la barre d’outils de l’éditeur de texte enrichi :
 
@@ -155,53 +156,18 @@ Pour configurer les formats autorisés afin de coller du texte dans AEM à parti
    >
    >Si le format n’est pas défini explicitement, la valeur par défaut true est utilisée et le format est admis.
 
-1. D’autres formats peuvent également être définis à l’aide de différentes propriétés ou de différents nœuds, également appliqués au nœud `htmlPasteRules` :
+1. D’autres formats peuvent également être définis à l’aide de différentes propriétés ou de différents noeuds, également appliqués au noeud `htmlPasteRules`. Enregistrez toutes les modifications.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriété</strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>Chaîne[]</td>
-   <td><p>Définit la liste des balises block autorisées.</p> <p>Voici quelques balises block possibles :</p>
-    <ul>
-     <li>Titres (h1, h2, h3)</li>
-     <li>Paragraphes (p)</li>
-     <li>Listes (ol, ul)</li>
-     <li>Tableaux (table)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>Chaîne</td>
-   <td><p>Définit la balise block utilisée pour tout bloc contenant une balise block ne figurant pas dans allowBlockTags.</p> <p> p est suffisant dans la plupart des cas.</p> </td>
-  </tr>
-  <tr>
-   <td>table</td>
-   <td>nt:unstructured</td>
-   <td><p>Définit le comportement lors du collage de tableaux.<br /> </p> <p>Ce nœud doit comporter la propriété <code>allow</code> (de type <code>Boolean</code>) pour définir s’il est autorisé de coller des tableaux.</p> <p>Si <code>allow</code> est défini sur <code>false</code>, vous devez spécifier la propriété <code>ignoreMode</code> (de type <code> String</code>) pour définir comment le contenu du tableau collé est géré. Les valeurs valides pour <code>ignoreMode</code> sont les suivantes :</p>
-    <ul>
-     <li><code>remove</code>: supprime le contenu du tableau.</li>
-     <li><code>paragraph</code>: transforme les cellules de tableau en paragraphes.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>list</td>
-   <td>nt:unstructured</td>
-   <td><p>Définit le comportement lors du collage de listes.<br /> </p> <p>Doit comporter la propriété <code>allow</code> (de type <code>Boolean</code>) pour définir s’il est autorisé de coller des listes.</p> <p>Si <code>allow</code> est défini sur <code>false</code>, vous devez spécifier la propriété <code>ignoreMode</code> (de type <code>String</code>) pour définir comment gérer le contenu d’une liste collée. Les valeurs valides pour <code>ignoreMode</code> sont les suivantes :</p>
-    <ul>
-     <li><code>remove</code>: supprime le contenu de la liste.</li>
-     <li><code>paragraph</code>: transforme les éléments de la liste en paragraphes.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+Vous pouvez utiliser les propriétés suivantes pour `htmlPasteRules`.
 
-Exemple de structure `htmlPasteRules` valide :
+| Propriété | Type | Description |
+|---|---|---|
+| `allowBlockTags` | Chaîne | Définit la liste des balises block autorisées. Voici quelques balises block possibles : <ul> <li>Titres (h1, h2, h3)</li> <li>Paragraphes (p)</li> <li>Listes (ol, ul)</li> <li>Tableaux (table)</li> </ul> |
+| `fallbackBlockTag` | Chaîne | Définit la balise block utilisée pour tout bloc contenant une balise block ne figurant pas dans `allowBlockTags`. `p` suffit dans la plupart des cas. |
+| table | nt:unstructured | Définit le comportement lors du collage de tableaux. Ce nœud doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des tableaux. Si allow est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment le contenu du tableau collé est géré. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul> <li>`remove`: supprime le contenu du tableau.</li> <li>`paragraph`: transforme les cellules de tableau en paragraphes.</li> </ul> |
+| list | nt:unstructured | Définit le comportement lors du collage de listes. Doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des listes. Si `allow` est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment gérer le contenu d’une liste collée. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul><li> `remove`: supprime le contenu de la liste.</li> <li>`paragraph`: transforme les éléments de la liste en paragraphes.</li> </ul> |
+
+Vous trouverez ci-dessous un exemple de structure `htmlPasteRules` valide.
 
 ```xml
 "htmlPasteRules": {
@@ -223,13 +189,9 @@ Exemple de structure `htmlPasteRules` valide :
 }
 ```
 
-1. Enregistrez toutes les modifications.
-
 ## Configuration des styles de texte {#textstyles}
 
-Les auteurs peuvent appliquer des styles pour modifier l’apparence d’une portion de texte. Les styles reposent sur les classes CSS que vous prédéfinissez dans votre feuille de style CSS. Le contenu stylisé est inclus dans les balises `span` à l’aide de l’attribut `class` pour faire référence à la classe CSS. Par exemple :
-
-`<span class=monospaced>Monospaced Text Here</span>`
+Les auteurs peuvent appliquer des styles pour modifier l’apparence d’une portion de texte. Les styles reposent sur les classes CSS que vous prédéfinissez dans votre feuille de style CSS. Le contenu stylisé est inclus dans les balises `span` à l’aide de l’attribut `class` pour faire référence à la classe CSS. Par exemple, `<span class=monospaced>Monospaced Text Here</span>`.
 
 Lorsque le module externe Styles est activé pour la première fois, aucun style n’est disponible par défaut. La liste contextuelle est vide. Pour fournir des styles aux auteurs, procédez comme suit :
 
@@ -237,11 +199,11 @@ Lorsque le module externe Styles est activé pour la première fois, aucun style
 * Spécifiez l’emplacement de la ou des feuilles de style.
 * Spécifiez les différents styles qui peuvent être sélectionnés dans la liste déroulante Style.
 
-Pour les configurations ultérieures (par exemple, afin d’ajouter davantage de styles), suivez les instructions pour faire référence à une nouvelle feuille de style et spécifier les styles supplémentaires.
+Pour les configurations ultérieures, par exemple pour ajouter d’autres styles, suivez uniquement les instructions pour référencer une nouvelle feuille de style et spécifier les styles supplémentaires.
 
 >[!NOTE]
 >
->Des styles peuvent également être définis pour [des tableaux ou des cellules de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Ces configurations nécessitent des procédures distinctes.
+>Vous pouvez définir des styles pour les [tableaux ou les cellules de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Ces configurations nécessitent des procédures distinctes.
 
 ### Activation de la liste du sélecteur de liste déroulante Style {#styleselectorlist}
 
@@ -708,10 +670,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
    * **Type** `String`
    * **Valeur** `richtext`
 
-   L’emplacement du nœud `../items/text` peut varier en fonction de la structure de votre boîte de dialogue. Voici deux exemples :
-   * `/apps/myProject>/components/text/dialog/items/text`
-   * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-
+   L’emplacement du noeud `../items/text` peut varier en fonction de la structure de votre boîte de dialogue. `/apps/myProject>/components/text/dialog/items/text` et `/apps/<myProject>/components/text/dialog/items/panel/items/text` sont deux exemples.
 
 1. Sous `htmlRules`, créez un nœud.
 
