@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User
 feature: Gestion des ressources, Recherche
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '9788'
-ht-degree: 63%
+source-wordcount: '9784'
+ht-degree: 64%
 
 ---
 
@@ -168,7 +168,7 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
 1. Sélectionnez le client FTP de votre choix, puis connectez-vous à l’aide du nom d’utilisateur et du mot de passe FTP qui vous ont été envoyés par courrier électronique. Dans le client FTP, téléchargez les fichiers et/ou dossiers vers le serveur FTP.
 
-1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) puis connectez-vous à votre compte.
+1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) puis connectez-vous à votre compte.
 
    Vos informations d’identification et votre connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
@@ -869,7 +869,7 @@ Vous pouvez créer des versions dans [!DNL Experience Manager] dans les scénari
 * Transférez une ressource dont le nom de fichier existe au même emplacement. Il peut s’agir d’une nouvelle ressource ou d’une version modifiée de la même ressource.
 * Modifiez une image dans [!DNL Experience Manager] et enregistrez les modifications.
 * Modification des métadonnées d’une ressource.
-* Utilisez [!DNL Experience Manager] l’appli de bureau pour extraire une ressource existante, la modifier et [charger vos modifications](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
+* Utilisez [!DNL Experience Manager] l’appli de bureau pour extraire une ressource existante, la modifier et [charger vos modifications](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
@@ -944,4 +944,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.htm).
+Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.htm).
