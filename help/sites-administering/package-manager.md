@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4a2a9f177049e8199662ed94cf7aace9aa937655
 workflow-type: tm+mt
-source-wordcount: '3934'
+source-wordcount: '3964'
 ht-degree: 80%
 
 ---
@@ -30,7 +30,7 @@ Les modules sont accessibles et/ou conservés à partir des pages suivantes :
 
 Vous pouvez transférer des modules entre Package Manager, Distribution logicielle et votre système de fichiers.
 
-## Que sont les modules ? {#what-are-packages}
+## Que sont les modules ? {#what-are-packages}
 
 Un module est un fichier ZIP contenant le contenu d’un référentiel sous forme de sérialisation de système de fichiers (appelé sérialisation « coffre-fort »). Il offre une représentation facile à utiliser et à modifier des fichiers et des dossiers.
 
@@ -233,9 +233,15 @@ Pour accorder aux utilisateurs le droit de créer, de modifier, de charger et d�
 * **/etc/packages (tous les droits à l’exception des droits de suppression)**
 * nœud contenant le contenu du module
 
+>[!CAUTION]
+>
+>L’octroi d’autorisations sur les packages peut entraîner une divulgation des informations sensibles et une perte de données.
+>
+>Pour limiter ces risques, il est vivement recommandé d’accorder uniquement des autorisations de groupe spécifiques sur des sous-arborescences dédiées, par exemple `/etc/packages/site-content`.
+
 Pour plus d’informations sur la modification des autorisations, voir [Définition des autorisations](/help/sites-administering/security.md#setting-page-permissions).
 
-### Création d’un module  {#creating-a-new-package}
+### Création d’un module {#creating-a-new-package}
 
 Pour créer une définition de module :
 
@@ -419,7 +425,7 @@ Pour charger un module :
    >
    >Pour mettre le contenu à disposition dans AEM, veillez à [installer le module](#installing-packages).
 
-### Validation de modules  {#validating-packages}
+### Validation de modules {#validating-packages}
 
 Avant d’installer un module, vous pouvez vérifier son contenu. Comme les packages peuvent modifier des fichiers superposés sous `/apps` et/ou ajouter, modifier et supprimer des listes de contrôle d’accès, il est souvent utile de valider ces modifications avant l’installation.
 
@@ -497,7 +503,7 @@ Ces options sont détaillées ci-dessous.
    >
    >Il est recommandé que les modules n’affectent pas les listes ACL fournies par AEM, car cela pourrait entraîner un comportement inattendu du produit.
 
-#### Validation  {#performing-validation}
+#### Validation {#performing-validation}
 
 La validation des modules peut être effectuée de deux manières différentes :
 
@@ -611,7 +617,7 @@ La désactivation de WorkflowLauncher permet de s’assurer que la structure d�
 
    Le mot **Installé** s’affiche en regard du module une fois qu’il a été installé.
 
-### Chargement et installation basés sur le système de fichiers  {#file-system-based-upload-and-installation}
+### Chargement et installation basés sur le système de fichiers {#file-system-based-upload-and-installation}
 
 Il existe une autre façon de charger et d’installer des modules sur votre instance. Dans votre système de fichiers, un dossier `crx-quicksart` avec votre fichier JAR et le fichier `license.properties`. Vous devez créer un dossier nommé `install` sous `crx-quickstart`. Vous aurez alors quelque chose comme ceci : `<aem_home>/crx-quickstart/install`
 
@@ -623,7 +629,7 @@ Si votre instance est en cours d’exécution, l’ajout d’un module au dossie
 >
 >Vous pouvez également effectuer cette opération avant de démarrer l’instance pour la première fois. À cet effet, vous devez créer manuellement le dossier `crx-quickstart`, créer le dossier `install` en dessous et y placer les modules. Lorsque vous lancez votre instance pour la première fois, les modules sont installés dans l’ordre alphabétique.
 
-### Désinstallation des modules  {#uninstalling-packages}
+### Désinstallation des modules {#uninstalling-packages}
 
 AEM vous permet de désinstaller des packages. Cette action renvoie le contenu concerné du référentiel vers l’instantané enregistré juste avant l’installation des modules.
 
