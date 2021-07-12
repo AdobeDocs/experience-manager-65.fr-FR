@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
-role: Administrator
+role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 41%
@@ -99,7 +99,7 @@ Bien qu’AEM Forms vous permette de configurer et d’exécuter toutes les fonc
 
 ![basic-features](assets/basic-features.png)
 
-### Topologie pour l’utilisation de la gestion de processus AEM Forms {#topology-for-using-aem-forms-process-management}
+### Topologie d’utilisation de la gestion des processus AEM Forms {#topology-for-using-aem-forms-process-management}
 
 Les clients AEM Forms qui envisagent d’utiliser les fonctionnalités de gestion de processus AEM Forms, par exemple, Workspace HTML peut avoir une topologie similaire à celle affichée ci-dessous. Le serveur AEM Forms on JEE peut se trouver dans une configuration de serveur ou de grappe unique.
 
@@ -126,7 +126,7 @@ Vous pouvez apporter les modifications/personnalisations suivantes à la topolog
 
 ## Exemples de topologies physiques pour AEM Forms on OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}
 
-### Topologie pour les fonctionnalités de capture de données, de communication interactive, de processus basé sur l’utilisation de Forms on OSGi {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
+### Topologie pour la capture de données, la communication interactive, les fonctionnalités de processus basé sur l’utilisation de Forms on OSGi {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
 
 Les clients AEM Forms prévoyant d’utiliser les fonctionnalités de capture de données AEM Forms, par exemple, les formulaires adaptatifs, les formulaires HTML5 et les formulaires PDF, peuvent avoir une topologie similaire à celle présentée ci-dessous. Cette topologie est également recommandée pour l’utilisation de la fonctionnalité de communications interactives et de processus basés sur l’utilisation de Forms on OSGi, par exemple pour utiliser la boîte de réception AEM et l’application AEM Forms pour les flux de processus métier.
 
