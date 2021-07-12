@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
+role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 7%
 
 ---
 
-# Configuration de l’adresse électronique {#configuring-email}
+# Configuration du courrier électronique {#configuring-email}
 
 AEM Communities utilise le courrier électronique pour :
 
@@ -113,7 +113,7 @@ Cette configuration ne doit pas être modifiée.
 
 ![configure-email-response](assets/configure-email-reply.png)
 
-### Configuration pour les abonnements {#configuration-for-subscriptions}
+### Configuration des abonnements {#configuration-for-subscriptions}
 
 Pour les abonnements Communities, il est possible d’activer ou de désactiver la possibilité pour un membre de publier du contenu en répondant à un email.
 
@@ -164,7 +164,7 @@ Pour les abonnements Communities, il est possible d’activer ou de désactiver 
 
    Le message électronique est créé en utilisant un modèle stocké à cet emplacement racine. La valeur par défaut est `/etc/community/templates/subscriptions-email`.
 
-## Configurer l’importateur d’interrogations {#configure-polling-importer}
+## Configuration de l’importateur d’interrogations {#configure-polling-importer}
 
 Pour que le courrier électronique soit importé dans le référentiel, il est nécessaire de configurer un importateur d’interrogations et de configurer ses propriétés manuellement dans le référentiel.
 
@@ -195,7 +195,7 @@ en accédant au  `postEmails`dossier et en sélectionnant  **OK**.
 
    *(Facultatif)* Le serveur de messagerie configuré pour le service de messagerie par défaut peut avoir des exigences concernant la valeur de l’intervalle de mise à jour. Par exemple, Gmail peut nécessiter un intervalle `300`.
 
-* **[!UICONTROL Connexion]**
+* **[!UICONTROL La connexion]**
 
    *(Facultatif)*
 
