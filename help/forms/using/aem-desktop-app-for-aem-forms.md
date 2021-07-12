@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
-role: Administrator
+role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 57%
@@ -23,7 +23,7 @@ L’appli de bureau AEM vous permet de mapper le référentiel Adobe Experience 
 
 Vous pouvez télécharger l’application à partir d’une instance AEM. Pour plus d’informations sur le téléchargement de l’application, voir [Notes de mise à jour de l’appli de bureau AEM](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html).
 
-## Ressources AEM Forms prises en charge dans l’appli de bureau AEM {#aem-forms-assets-supported-in-aem-desktop-app}
+## Ressources AEM Forms prises en charge dans AEM application de bureau {#aem-forms-assets-supported-in-aem-desktop-app}
 
 Vous pouvez utiliser l’application pour synchroniser les fichiers binaires des types suivants : modèles de formulaire (.xdp), formulaire PDF (.pdf), document (.pdf), images, schéma XML (.xsd), feuilles de style (.xfs). L’application répertorie tous les autres fichiers (fichiers non pris en charge) en tant que fichiers de 0 octets. L’énumération des fichiers non pris en charge en tant que fichiers de 0 octet garantit que l’utilisateur est conscient de l’existence d’autres ressources disponibles sur le serveur AEM Forms.
 
