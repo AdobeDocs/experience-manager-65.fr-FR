@@ -2,10 +2,10 @@
 title: Création d’un formulaire adaptatif
 description: 'Découvrez comment créer un formulaire adaptatif à l’aide de  [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire, un modèle de formulaire XFA et un schéma XML ou JSON. '
 feature: Formulaires adaptatifs
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 88%
@@ -22,7 +22,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
 1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager.
 
-   Une fois connecté, dans le coin supérieur gauche, appuyez sur **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents.]**.
+   Une fois connecté, dans le coin supérieur gauche, appuyez sur **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents.]**.
 
    >[!NOTE]
    >
@@ -114,11 +114,11 @@ Consultez les documents suivants pour découvrir comment concevoir un schéma XM
 Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formulaire pour un formulaire adaptatif :
 
 1. À l’étape **[!UICONTROL Ajouter des propriétés]** de la page de création de formulaire adaptatif, appuyez sur l’onglet **[!UICONTROL Modèle de formulaire]**.
-1. Dans l’onglet Modèle de formulaire, sélectionnez **[!UICONTROL Schéma]** dans le champ déroulant **[!UICONTROL Sélectionner à partir de]**.
+1. Dans l’onglet Modèle de formulaire, sélectionnez **[!UICONTROL Schéma]** dans le champ déroulant **[!UICONTROL Choisir parmi]**.
 
-1. Appuyez sur **[!UICONTROL Sélectionner un schéma]** et effectuez l’une des opérations suivantes :
+1. Appuyez sur **[!UICONTROL Sélectionner le schéma]** et effectuez l’une des opérations suivantes :
 
-   * **[!UICONTROL Télécharger depuis un disque]** : sélectionnez cette option et appuyez sur Charger une définition de schéma pour parcourir et charger un schéma XML ou un schéma JSON à partir de votre système de fichiers. Le fichier de schéma chargé se trouve avec le formulaire et n’est pas accessible aux autres formulaires adaptatifs.
+   * **[!UICONTROL Télécharger à partir du disque]** : sélectionnez cette option et appuyez sur Charger une définition de schéma pour parcourir et charger un schéma XML ou un schéma JSON à partir de votre système de fichiers. Le fichier de schéma chargé se trouve avec le formulaire et n’est pas accessible aux autres formulaires adaptatifs.
    * **[!UICONTROL Recherche dans le référentiel]** : sélectionnez cette option pour effectuer une sélection dans la liste fichiers de définition de schéma disponibles dans le référentiel. Sélectionnez le fichier de schéma XML ou JSON comme modèle de formulaire. Le schéma sélectionné est associé au formulaire par référence et peut être utilisé dans d’autres formulaires adaptatifs.
 
    >[!CAUTION]
@@ -126,7 +126,7 @@ Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formu
    >Assurez-vous que le nom du schéma JSON se termine par **.schema.json**. Par exemple : mySchema.schema.json
 
    ![Sélection du schéma XML ou JSON](assets/upload-schema.png)
-   **Figure :** *Sélection d&#39;un schéma XML ou JSON*
+   **Figure :** *Sélection d’un schéma XML ou JSON*
 
 1. (Pour le schéma XML uniquement) Après avoir sélectionné ou chargé un schéma XML, spécifiez un élément racine du fichier XSD sélectionné à mapper avec le formulaire adaptatif.
 
@@ -159,7 +159,7 @@ Les formulaires adaptatifs sont créés sans modèle de formulaire (en utilisant
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les propriétés.
 
-## Enregistrement automatique d&#39;un formulaire adaptatif {#auto-save-an-adaptive-form}
+## Enregistrement automatique d’un formulaire adaptatif {#auto-save-an-adaptive-form}
 
 Par défaut, le contenu d’un formulaire adaptatif est enregistré sur une action utilisateur, telle que appuyer sur le bouton Enregistrer. Vous pouvez également configurer un formulaire adaptatif pour commencer automatiquement à enregistrer le contenu basé sur un événement ou un intervalle de temps. L’option d’enregistrement automatique est utile pour :
 
@@ -168,7 +168,7 @@ Par défaut, le contenu d’un formulaire adaptatif est enregistré sur une acti
 * Commencer à enregistrer le contenu d’un formulaire en fonction d’un événement utilisateur
 * Enregistrer le contenu d’un formulaire à plusieurs reprises après un intervalle de temps spécifié
 
-### Activation de l’enregistrement automatique d’un formulaire adaptatif  {#enable-auto-save-for-an-adaptive-form}
+### Activation de l’enregistrement automatique d’un formulaire adaptatif {#enable-auto-save-for-an-adaptive-form}
 
 Par défaut, l’option d’enregistrement automatique n’est pas activée. Vous pouvez activer l’option d’enregistrement automatique depuis l’onglet automatique Enregistrement automatique d’un formulaire adaptatif. L’onglet Enregistrement automatique d’Adobe fournit également plusieurs autres options de configuration. Effectuez les étapes suivantes afin d’activer et de configurer l’option d’enregistrement automatique pour un formulaire adaptatif :
 
