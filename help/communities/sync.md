@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2509'
 ht-degree: 12%
@@ -47,7 +47,7 @@ Pour obtenir des instructions détaillées, détaillées sur la manière d’act
 
 * [Synchronisation des utilisateurs](/help/sites-administering/sync.md)
 
-## Synchronisation des utilisateurs en arrière-plan {#user-sync-in-the-background}
+## Synchronisation des utilisateurs en arrière-plan  {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
@@ -59,31 +59,31 @@ Pour obtenir des instructions détaillées, détaillées sur la manière d’act
 
    Il contient des informations de distribution pour Sling. Il s’agit d’informations sur l’endroit où le contenu doit être distribué et le moment où il a été distribué en dernier.
 
-## Que se passe-t-il lorsque ... {#what-happens-when}
+## Ce qui se produit si… {#what-happens-when}
 
 ### Publier le site à partir de la console Sites des communautés {#publish-site-from-communities-sites-console}
 
 Lorsqu’un site de communauté est publié à partir de la [console Sites des communautés](/help/communities/sites-console.md), l’effet est de [répliquer](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) les pages associées, et Sling distribue les groupes d’utilisateurs de communauté créés dynamiquement, y compris leur appartenance.
 
-### L’utilisateur est créé ou le profil est modifié lors de la publication {#user-is-created-or-edits-profile-on-publish}
+### L’utilisateur est créé ou modifie le profil lors de la publication. {#user-is-created-or-edits-profile-on-publish}
 
 Par conception, les utilisateurs et les profils créés dans l’environnement de publication (par exemple par auto-inscription, connexion sociale, authentification LDAP) n’apparaissent pas dans l’environnement de création.
 
 Lorsque la topologie est une [ferme de publication](/help/communities/topologies.md) et que la synchronisation des utilisateurs a été correctement configurée, *user* et *profil utilisateur* sont synchronisés dans la ferme de publication à l’aide de la distribution Sling.
 
-### Un nouveau groupe de communautés est créé sur la publication {#new-community-group-is-created-on-publish}
+### Un nouveau groupe de communautés est créé lors de la publication. {#new-community-group-is-created-on-publish}
 
 Bien qu’elle soit lancée à partir d’une instance de publication, la création de groupe de communautés, qui entraîne la création de pages de site et d’un nouveau groupe d’utilisateurs, a lieu dans les faits sur l’instance d’auteur.
 
 Dans le cadre du processus, les nouvelles pages du site sont répliquées vers toutes les instances de publication. Le groupe d’utilisateurs de la communauté créé dynamiquement et ses membres sont Sling distribués à toutes les instances de publication.
 
-### Les utilisateurs ou les groupes d’utilisateurs sont créés à l’aide de la console Sécurité.{#users-or-user-groups-are-created-using-security-console}
+### Les utilisateurs ou les groupes d’utilisateurs sont créés à l’aide de la console Sécurité. {#users-or-user-groups-are-created-using-security-console}
 
 Par défaut, les données utilisateur créées dans l’environnement de publication ne sont pas visibles dans l’environnement de création, et vice versa.
 
 Lorsque la console [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) est utilisée pour ajouter de nouveaux utilisateurs dans l’environnement de publication, la synchronisation des utilisateurs synchronise les nouveaux utilisateurs et leur appartenance à un groupe sur d’autres instances de publication, si nécessaire. La synchronisation des utilisateurs synchronise également les groupes d’utilisateurs créés via la console de sécurité.
 
-### L’utilisateur publie du contenu sur la publication {#user-posts-content-on-publish}
+### L’utilisateur publie du contenu lors de la publication {#user-posts-content-on-publish}
 
 Pour le contenu généré par l’utilisateur (UGC), les données saisies sur une instance de publication sont accessibles via la [SRP configurée](/help/communities/srp-config.md).
 
@@ -93,7 +93,7 @@ Par défaut, la synchronisation des utilisateurs est **désactivée**. Activer l
 
 La synchronisation des utilisateurs repose sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées en mode de création.
 
-**Conditions préalables**
+**Prérequis**
 
 1. Si les utilisateurs et les groupes d’utilisateurs ont déjà été créés sur un éditeur, il est recommandé de [synchroniser manuellement](/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) les données utilisateur sur tous les éditeurs avant de configurer et d’activer la synchronisation des utilisateurs.
 
@@ -258,7 +258,7 @@ Sur chaque instance de publication AEM :
 
    Les types de noeuds spécifiés dans cette propriété se synchronisent et les informations de notification (blogs et configurations suivis) sont synchronisées entre les différents éditeurs.
 
-1. Ajoutez tous les dossiers à synchroniser dans **DistributedFolders**. Par exemple,
+1. Ajoutez tous les dossiers à synchroniser dans **DistributedFolders**. Par exemple :
 
    `segments/scoring`
 
@@ -276,7 +276,7 @@ Sur chaque instance de publication AEM :
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
-### Identifiant Sling unique{#unique-sling-id}.
+### Identifiant Sling unique. {#unique-sling-id}
 
 AEM instance d’auteur utilise l’identifiant Sling pour identifier à partir de quel endroit les données arrivent et vers quels éditeurs elle doit (ou ne doit pas) renvoyer le module.
 
