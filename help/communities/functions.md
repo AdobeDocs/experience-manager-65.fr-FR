@@ -10,8 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
-role: Administrator
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 9%
@@ -385,7 +385,7 @@ Puisque la fonction de communauté est implémentée en tant que [Live Copy](/he
 
 Voir aussi [Multi Site Manager](/help/sites-administering/msm.md).
 
-### Miniature  {#thumbnail}
+### Miniature {#thumbnail}
 
 ![fonction-thumbnail](assets/funtion-thumbnail.png)
 
