@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 feature: Formulaires adaptatifs
-role: Administrator
+role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 84%
@@ -29,7 +29,7 @@ La localisation des formulaires adaptatifs repose sur deux types de dictionnaire
 
 **Dictionnaires globaux** : la bibliothèque client AEM comporte deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous pouvez trouver ces dictionnaires dans CRXDe Lite, à l’adresse /libs/fd/xfaforms/clientlibs/I18N. Ces emplacements contiennent des dossiers distincts pour chaque jeu de paramètres régionaux. Étant donné que les dictionnaires globaux ne sont généralement pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque jeu de paramètres régionaux permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur. 
 
-### Comment fonctionne la localisation des formulaires adaptatifs{#how-localization-of-adaptive-form-works} 
+### Comment fonctionne la localisation des formulaires adaptatifs  {#how-localization-of-adaptive-form-works}
 
 Il existe deux méthodes pour identifier les paramètres régionaux du formulaire adaptatif. Lorsqu’un formulaire adaptatif est rendu, il identifie les paramètres régionaux requis par :
 
@@ -69,7 +69,7 @@ Pour ajouter un nouveau paramètre régional lors de l’exécution des formulai
 
 1. [Ajouter la bibliothèque cliente de formulaires adaptatifs pour un paramètre régional](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
 1. [Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
-1. [Redémarrez le serveur](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
+1. [Redémarrer le serveur](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
 ### Ajouter des paramètres régionaux au Guide Localization Service {#add-a-locale-to-the-guide-localization-service-br}
 
