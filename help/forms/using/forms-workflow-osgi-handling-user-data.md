@@ -6,9 +6,9 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-role: Administrator
+role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 100%
@@ -69,7 +69,7 @@ Les emplacements de référentiel par défaut où la charge utile, les brouillon
  </tbody>
 </table>
 
-## Accès et suppression des données utilisateur  {#access-and-delete-user-data}
+## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
 Vous pouvez accéder et supprimer des données utilisateur d’une instance de flux de travail dans le référentiel. Pour ce faire, vous devez connaître l’ID de l’instance de flux de travail associé à l’utilisateur. Vous pouvez rechercher l’ID d’une instance de flux de travail à l’aide du nom de l’utilisateur qui a initié l’instance de flux de travail ou à qui l’instance de flux de travail est actuellement attribuée.
 
