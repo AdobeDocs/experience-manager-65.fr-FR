@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
-role: Administrator
+role: Admin
 exl-id: 2d33e6ba-cd32-40d1-8983-58f636b21470
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 4%
@@ -141,7 +141,7 @@ Veillez à installer le schéma avant d’installer les données.
 * [Configuration SCORM](#configure-scorm)
 
 
-#### Étape 1 : ouvrir le fichier SQL {#step-open-sql-file}
+#### Étape 1 : Ouvrir le fichier SQL {#step-open-sql-file}
 
 Dans MySQL Workbench
 
