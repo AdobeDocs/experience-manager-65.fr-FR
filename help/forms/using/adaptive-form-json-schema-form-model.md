@@ -2,10 +2,10 @@
 title: Comment créer un Forms adaptatif à l’aide d’un schéma JSON ?
 description: Découvrez comment créer des formulaires adaptatifs à l’aide du schéma JSON en tant que modèle de formulaire. Vous pouvez utiliser des schémas JSON existants pour créer des formulaires adaptatifs. Approfondissez l’analyse avec un exemple de schéma JSON, préconfigurez les champs dans la définition de schéma JSON, limitez les valeurs acceptables pour un composant de formulaire adaptatif et découvrez les éléments non pris en charge.
 feature: Formulaires adaptatifs
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 74%
@@ -117,7 +117,7 @@ Le formulaire adaptatif utilise les informations disponibles dans le schéma JSO
 * La propriété `readOnly` définit l’attribut `readonly` d’un composant de formulaire adaptatif.
 * La propriété `required` indique que le champ de formulaire adaptatif est obligatoire, tandis que dans le panneau (où le type est objet), les données JSON finales envoyées ont des champs avec une valeur vide correspondant à cet objet.
 * La propriété `pattern` est définie comme modèle de validation (expression régulière) dans le formulaire adaptatif.
-* L’extension du fichier de schéma JSON doit être conservée dans .schema.json. Par exemple, &lt;nom_fichier>.schéma.json.
+* L’extension du fichier de schéma JSON doit être conservée dans .schema.json. Par exemple, &lt;nom_fichier>.schema.json.
 
 ## Exemple de schéma JSON {#sample-json-schema}
 
@@ -354,7 +354,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le 
 }
 ```
 
-## Configuration de scripts ou d’expressions pour les objets de formulaire {#configure-scripts-or-expressions-for-form-objects}
+## Configuration de scripts ou d’expressions pour les objets de formulaire  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Vous pouvez préconfigurer des objets de formulaire pour [évaluer une expression](adaptive-form-expressions.md) sur un événement de formulaire.
 
@@ -585,7 +585,7 @@ Certains exemples d’utilisation d’événements dans un JSON masquent un cham
 
 Voici l’exemple de code JSON pour les exemples mentionnés précédemment.
 
-### Masquer un champ sur initialize event {#hiding-a-field-on-initialize-event}
+### Masquage d’un champ lors de l’initialisation d’un événement {#hiding-a-field-on-initialize-event}
 
 ```json
 "name": {
@@ -729,7 +729,7 @@ Les formulaires adaptatifs ne prennent pas en charge les éléments de schéma J
 * OneOf, AnyOf, AllOf, et NOT
 * Seuls les tableaux homogènes sont pris en charge. Par conséquent, la contrainte d’éléments doit être un objet et ne doit pas être un tableau.
 
-## Forum aux questions {#frequently-asked-questions}
+## Questions fréquemment posées {#frequently-asked-questions}
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 
@@ -744,4 +744,4 @@ Vous disposez de deux options :
 
 **Quelle doit être l’extension d’un fichier de schéma JSON ?**
 
-L’extension d’un fichier de schéma JSON doit être .schema.json, par exemple &lt;nom_fichier>.schéma.json.
+L’extension d’un fichier de schéma JSON doit être .schema.json, Par exemple, &lt;nom_fichier>.schema.json.
