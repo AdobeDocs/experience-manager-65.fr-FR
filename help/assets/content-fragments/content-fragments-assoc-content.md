@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 feature: Fragments de contenu
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 100%
 
 ---
 
-# Contenu associé {#associated-content}
+# Contenu associé{#associated-content}
 
 Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse,[ car vous disposez d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page.](/help/sites-authoring/content-fragments.md#using-associated-content) Cela permet aussi de réduire le temps nécessaire pour rechercher la ressource appropriée.
 
