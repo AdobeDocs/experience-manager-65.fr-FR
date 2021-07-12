@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
-role: Administrator
+role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Dans l’environnement de création, après la connexion avec des privilèges d�
 >
 >Dans l’environnement de publication, un [site communautaire](sites-console.md) affiche un élément de menu `Administration` lorsque le membre connecté dispose des privilèges appropriés.
 
-## Panneau de navigation globale {#global-navigation-panel}
+## Panneau de navigation global {#global-navigation-panel}
 
 Sélectionnez l’icône `Adobe Experience Manager` dans le coin supérieur gauche pour ouvrir le panneau de navigation globale et accéder à deux icônes :
 
