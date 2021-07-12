@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Administrator
+role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -37,7 +37,7 @@ Voir aussi [Caractéristiques des options SRP](working-with-srp.md#characteristi
 
 ## Configuration de la base de données relationnelle {#relational-database-configuration}
 
-### Configuration de MySQL {#mysql-configuration}
+### Configuration MySQL {#mysql-configuration}
 
 Une installation MySQL peut être partagée entre les fonctionnalités d&#39;activation et le magasin commun (DSRP) au sein d&#39;un même pool de connexions en utilisant des noms de base de données (schéma) différents et également des connexions différentes (server:port).
 
@@ -53,7 +53,7 @@ Pour les environnements de production, le mode SolrCloud offre de meilleures per
 
 Pour plus d’informations sur l’installation et la configuration, voir [Configuration Solr pour SRP](solr.md).
 
-### Sélectionnez DSRP {#select-dsrp}
+### Sélectionner DSRP {#select-dsrp}
 
 La [console Configuration du stockage](srp-config.md) permet de sélectionner la configuration du stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
 
