@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
-role: Administrator
+role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2884'
 ht-degree: 3%
@@ -78,7 +78,7 @@ Cette version comprend trois badges basés sur les rôles :
 
    ![assigned-badges](assets/assigned-badges.png)
 
-### Badges accordés {#awarded-badges}
+### Badges décernés {#awarded-badges}
 
 Les badges récompensés sont attribués par le service de notation aux membres de la communauté selon les règles appliquées à leur activité dans la communauté.
 
@@ -115,7 +115,7 @@ Les badges personnalisés peuvent être installés à l’aide de la [console Ba
 
 Une fois installés à partir de la console Badges, les badges personnalisés sont automatiquement répliqués vers l’environnement de publication.
 
-## Activer la notation {#enable-scoring}
+## Activation de la notation {#enable-scoring}
 
 La notation n’est pas activée par défaut. Les étapes de base pour configurer et activer la notation et l’attribution de badges sont les suivantes :
 
@@ -127,7 +127,7 @@ La notation n’est pas activée par défaut. Les étapes de base pour configure
 
 Consultez la section [Test rapide](#quick-test) pour activer la notation pour un site de communauté à l’aide des règles de notation et de badge par défaut pour les forums et les commentaires.
 
-### Appliquer des règles au contenu {#apply-rules-to-content}
+### Application de règles au contenu {#apply-rules-to-content}
 
 Pour activer la notation et les badges, ajoutez les propriétés `scoringRules` et `badgingRules` à n’importe quel noeud de l’arborescence de contenu du site.
 
@@ -218,7 +218,7 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th> Valeur Description</th>
+   <th> Description de la valeur</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -307,7 +307,7 @@ Cette version comprend deux règles de notation pour la [fonction Forum](/help/c
 
    * Les noms des règles doivent être uniques, quel que soit l’emplacement.
 
-### Activation des règles de notation personnalisées {#activating-custom-scoring-rules}
+### Activation de règles de notation personnalisées {#activating-custom-scoring-rules}
 
 Toutes les modifications ou ajouts apportés aux règles de notation ou aux sous-règles effectuées dans l’environnement de création doivent être installés lors de la publication.
 
@@ -349,7 +349,7 @@ La propriété `scoringRules` d’une règle de badge limite simplement les règ
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th>Valeur Description</th>
+   <th>Description de la valeur</th>
   </tr>
   <tr>
    <td>seuils</td>
@@ -389,7 +389,7 @@ Cette version comprend deux règles de badge qui correspondent aux [forums et au
 
    * Les noms des règles doivent être uniques, quel que soit leur emplacement.
 
-### Activation des règles de badge personnalisées {#activating-custom-badging-rules}
+### Activation de règles de badge personnalisées {#activating-custom-badging-rules}
 
 Toute modification ou tout ajout apporté aux règles de badge ou aux images effectuées dans l’environnement de création doit être installé lors de la publication.
 
@@ -423,13 +423,13 @@ cURL -i -X POST -H *header* -u *signature* -F *opération* -F *badge* *member-pr
 
 ### Exemples : {#examples}
 
-#### Attribuer un badge de modérateur {#assign-a-moderator-badge}
+#### Attribution d’un badge de modérateur {#assign-a-moderator-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
-#### Révoquer un badge argenté affecté {#revoke-an-assigned-silver-badge}
+#### Révoquer un badge d’argent attribué {#revoke-an-assigned-silver-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
@@ -443,7 +443,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 Il est possible de créer des règles de notation et de badge pour les composants personnalisés en associant les rubriques d’événement créées pour le composant aux verbes.
 
-## Sujets et verbes {#topics-and-verbs}
+## Rubriques et verbes {#topics-and-verbs}
 
 Lorsque les membres interagissent avec les fonctionnalités des communautés, des événements sont envoyés, qui peuvent déclencher des écouteurs asynchrones, tels que des notifications et des scores.
 
@@ -554,7 +554,7 @@ Composants activés pour la modérationSocialEvent  `topic`= com/adobe/cq/social
 | CLOSE | le membre ferme le commentaire aux modifications et aux réponses |
 | OUVRIR | commentaire de réouverture du membre |
 
-### Événements de composants personnalisés {#custom-component-events}
+### Événements de composant personnalisés {#custom-component-events}
 
 Pour un composant personnalisé, un événement SocialEvent est appelé pour enregistrer les événements du composant sous la forme `actions` qui se produisent pour un `topic`.
 
@@ -562,7 +562,7 @@ Pour prendre en charge la notation, SocialEvent doit remplacer la méthode `getV
 
 ## Résolution des problèmes {#troubleshooting}
 
-### Les badges n’apparaissent pas {#badges-are-not-appearing}
+### Les badges ne s’affichent pas {#badges-are-not-appearing}
 
 Si des règles de notation et de badge ont été appliquées au contenu du site web, mais que les badges n’ont été attribués pour aucune activité, assurez-vous que les badges ont été activés pour l’instance de ce composant.
 
