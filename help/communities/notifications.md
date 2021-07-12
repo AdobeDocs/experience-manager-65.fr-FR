@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
@@ -69,7 +69,7 @@ Les composants doivent être configurés pour activer les éléments suivants. L
 
 * Les profils de membre sont déjà configurés pour permettre aux autres membres de suivre.
 
-## Notifications à partir de {#notifications-from-following}
+## Notifications de suivi {#notifications-from-following}
 
 ![notifications](assets/notifications.png)
 
