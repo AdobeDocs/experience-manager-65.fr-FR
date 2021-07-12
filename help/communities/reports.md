@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 8%
 
 ---
 
-# Console Rapports{#reports-console} 
+# Console Rapports  {#reports-console}
 
 ## Présentation {#overview}
 
@@ -45,7 +45,7 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 ## Consoles de création de rapports {#reporting-consoles}
 
-### Rapports pour les sites communautaires {#reports-for-community-sites}
+### Rapports pour les sites de la communauté {#reports-for-community-sites}
 
 * À partir de la navigation globale : **[!UICONTROL Navigation]** **[!UICONTROL Communautés]** > **[!UICONTROL Rapports]**
 
@@ -182,7 +182,7 @@ Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
 Si aucun site de communauté n’est répertorié, vérifiez qu’Adobe Analytics a été activé pour un site. Si vous choisissez des rapports sur les affectations, assurez-vous que la fonction des affectations se trouve dans la structure du site de la communauté.
 
-### Les rapports ne s’affichent pas dans l’instance d’auteur AEM {#reports-do-not-show-in-aem-author-instance}
+### Les rapports ne s’affichent pas dans l’instance AEM Author {#reports-do-not-show-in-aem-author-instance}
 
 Si les rapports ne s’affichent pas dans l’instance d’auteur AEM, vérifiez les personnalisations, comme le mappage des URL sur l’instance de publication. Si le mappage des URL n’est effectué que sur l’instance AEM Publish du site Communities, assurez-vous que la même configuration a été configurée dans l’instance AEM Author dans la configuration **Composant Social du rapport de tendance du site** .
 
