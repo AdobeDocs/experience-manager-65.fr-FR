@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
+role: Admin
 exl-id: 15e16572-c692-41fc-86e4-c1d475afa63c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 6%
 
 ---
 
-# Console Ressources d’activation{#enablement-resources-console} 
+# Console Ressources d’activation  {#enablement-resources-console}
 
 Pour AEM Communities, la console Ressources est l’emplacement où les [responsables de l’activation](users.md) créent, gèrent et assignent des ressources aux membres d’un site de la communauté d’activation.
 
@@ -69,9 +69,9 @@ Pour les [communautés d’engagement](overview.md#egagementcommunity), il est r
 
 Pour les [communautés d’activation](overview.md#enablement-community), il est recommandé de rendre le site privé, ce qui nécessite ensuite qu’un administrateur ajoute des utilisateurs au groupe de membres.
 
-## Accès aux ressources d’activation d’un site communautaire {#accessing-a-community-site-s-enablement-resources}
+## Accès aux ressources d’activation d’un site de la communauté {#accessing-a-community-site-s-enablement-resources}
 
-### Accédez aux Ressources de la communauté {#navigate-to-communities-resources}
+### Accédez aux ressources de Communities {#navigate-to-communities-resources}
 
 Dans l’environnement de création, pour accéder à la console Ressources
 
@@ -79,7 +79,7 @@ Dans l’environnement de création, pour accéder à la console Ressources
 
    ![enablement-sites](assets/enablement-sites.png)
 
-### Sélectionnez un site communautaire {#select-a-community-site}
+### Sélection d’un site communautaire {#select-a-community-site}
 
 La console Ressources des communautés affiche tous les sites de la communauté.
 
@@ -89,7 +89,7 @@ Une fois qu’un site de communauté spécifique est sélectionné, toutes les r
 
 ![ressources communautaires](assets/community-resources.png)
 
-#### Recherche {#search-features}
+#### Rechercher {#search-features}
 
 ![searchsite](assets/searchsite.png)
 
@@ -103,7 +103,7 @@ Pour sélectionner plusieurs ressources d’activation, sélectionnez-les en pre
 
 ![selection-mode](assets/selection-mode.png)
 
-## Créer une ressource {#create-a-resource}
+## Création d’une ressource {#create-a-resource}
 
 ![create-resource](assets/create-resource1.png)
 
@@ -294,7 +294,7 @@ Sélectionnez `'+' icon`, dans le coin supérieur droit, pour lancer le processu
 
 La création réussie de la ressource d’activation renvoie à la console Ressources avec la ressource nouvellement créée sélectionnée. Dans cette console, il est possible de [gérer la ressource](#managing-a-resource).
 
-## Créer un parcours d’apprentissage {#create-a-learning-path}
+## Création d’un parcours d’apprentissage {#create-a-learning-path}
 
 ![add-learning-path](assets/add-learning-path.png)
 
