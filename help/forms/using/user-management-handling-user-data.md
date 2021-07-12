@@ -6,9 +6,9 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
-role: Administrator
+role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 81%
@@ -86,15 +86,15 @@ User Management stocke les données utilisateur dans les tables de base de donn�
  </tbody>
 </table>
 
-### Référentiel AEM  {#aem-repository}
+### Référentiel AEM {#aem-repository}
 
 Les données de gestion des utilisateurs pour les utilisateurs qui ont accédé au moins une fois aux applications Forms sous `https://'[server]:[port]'lc` sont également stockées dans le référentiel AEM.
 
-## Accès et suppression des données utilisateur  {#access-and-delete-user-data}
+## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
 Vous pouvez accéder et exporter les données User Management pour les utilisateurs dans les bases de données User Management et, si nécessaire, les supprimer définitivement.
 
-### Base de données  {#database-1}
+### Base de données {#database-1}
 
 Pour exporter ou supprimer des données utilisateur d’une base de données User Management, vous devez vous connecter à la base de données à l’aide d’un client de base de données et rechercher l’ID principal en fonction des informations d’identification personnelle de l’utilisateur. Par exemple, pour récupérer l’ID principal d’un utilisateur à l’aide d’un ID de connexion, exécutez la commande `select` suivante sur la base de données.
 
@@ -106,7 +106,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 Une fois que vous connaissez l’ID principal, vous pouvez exporter ou supprimer les données de l’utilisateur.
 
-#### Exportation des données utilisateur  {#export-user-data}
+#### Exportation des données utilisateur {#export-user-data}
 
 Exécutez les commandes de base de données suivantes pour exporter les données User Management d’un ID principal à partir des tables de base de données. Dans la commande `select`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez exporter les données.
 
@@ -175,11 +175,11 @@ Procédez comme suit pour supprimer les données User Management pour un ID prin
 
 1. Démarrez le serveur AEM Forms.
 
-### Référentiel AEM  {#aem-repository-1}
+### Référentiel AEM {#aem-repository-1}
 
 Les données des utilisateurs Forms JEE se trouvent dans le référentiel AEM s’ils ont accédé à l’instance d’auteur AEM Forms au moins une fois. Vous pouvez accéder et supprimer des données utilisateur d’un référentiel AEM.
 
-#### Accès aux données utilisateur  {#access-user-data}
+#### Accès aux données utilisateur {#access-user-data}
 
 Pour afficher l’utilisateur créé dans AEM référentiel, connectez-vous à `https://'[server]:[port]'/lc/useradmin` avec les informations d’identification d’administrateur AEM. Notez que les valeurs `server` et `port` indiquées dans l’URL sont celles de l’instance d’auteur AEM. Ici, vous pouvez rechercher des utilisateurs avec leur nom d’utilisateur. Cliquez deux fois sur un utilisateur pour afficher des informations telles que les propriétés, les autorisations et les groupes de l’utilisateur. La propriété `Path` d’un utilisateur indique le chemin d’accès au nœud d’utilisateur créé dans le référentiel AEM.
 
