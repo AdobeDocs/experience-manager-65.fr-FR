@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 61%
@@ -223,7 +223,7 @@ Le serveur d’applications JBoss utilise 8080 en tant que port HTTP par défaut
 1. Enregistrez et fermez le fichier.
 1. Redémarrez le serveur d’applications JBoss.
 
-## Considérations sur la sécurité d’AEM Forms on JEE {#aem-forms-on-jee-security-considerations}
+## Considérations sur la sécurité d’AEM Forms sur JEE {#aem-forms-on-jee-security-considerations}
 
 Cette section décrit certains problèmes de sécurité d’AEM Forms sur JEE que vous devez connaître.
 
@@ -231,11 +231,11 @@ Cette section décrit certains problèmes de sécurité d’AEM Forms sur JEE qu
 
 Les informations d’identification stockées par les applications ne sont pas chiffrées avant d’être enregistrées dans la base de données d’AEM Forms sur JEE. Lorsque vous configurez un point de fin de service pour utiliser le courrier électronique, les informations de mot de passe utilisées pour configurer ce point de fin ne sont pas chiffrées lorsqu’elles sont enregistrées dans la base de données.
 
-### Contenu sensible pour Rights Management dans la base de données  {#sensitive-content-for-rights-management-in-the-database}
+### Contenu sensible pour Rights Management dans la base de données {#sensitive-content-for-rights-management-in-the-database}
 
 AEM Forms on JEE utilise la base de données d’AEM Forms on JEE pour stocker des informations clés sur les documents sensibles et d’autres documents cryptographiques utilisés pour les documents de stratégie. Le fait de sécuriser la base de données contre les intrusions contribue à la protection de ces informations sensibles.
 
-### Mot de passe sous forme de texte clair {#password-in-clear-text-format-in-adobe-ds-xml}
+### Mot de passe dans le formulaire de texte en clair {#password-in-clear-text-format-in-adobe-ds-xml}
 
 Le serveur d’applications utilisé pour exécuter AEM Forms sur JEE nécessite sa propre configuration pour accéder à votre base de données via une source de données configurée sur le serveur d’applications. Assurez-vous que votre serveur d’applications n’expose pas le mot de passe de votre base de données en texte clair dans son fichier de configuration de source de données.
 
