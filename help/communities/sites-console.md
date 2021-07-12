@@ -10,8 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
-role: Administrator
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '3292'
 ht-degree: 4%
@@ -136,7 +136,7 @@ Lorsqu’il est sélectionné, le thème est recouvert d’une coche bleue opaqu
 
 Une fois le site de la communauté publié, il est possible de [modifier les propriétés](#modifying-site-properties) et sélectionner un autre thème.
 
-#### MARQUE DU SITE COMMUNAUTAIRE {#community-site-branding}
+#### MARQUE DU SITE DE LA COMMUNAUTÉ {#community-site-branding}
 
 ![branding du site](assets/site-branding.png)
 
@@ -366,7 +366,7 @@ Les paramètres `ENABLEMENT`s’appliquent lorsque le modèle de site de communa
 
 * Sélectionnez **Suivant**.
 
-### Étape 4 : Créer un site Communities {#step-create-communities-site}
+### Étape 4 : Créer un site de communautés {#step-create-communities-site}
 
 Si des ajustements sont nécessaires, utilisez le bouton **Précédent** pour les effectuer.
 
@@ -393,7 +393,7 @@ Lorsque vous pointez sur un site avec la souris ou que vous touchez une carte, d
 
 ## Création de contenu du site {#authoring-site-content}
 
-Le contenu d’un site peut être créé avec les mêmes outils que tout autre site web AEM. Pour ouvrir le site à des fins de création, sélectionnez l’icône `Open Site` qui s’affiche lorsque vous pointez sur le site avec la souris. Le site s’ouvre dans un nouvel onglet afin que la console Sites des communautés reste accessible.
+Le contenu d’un site peut être créé avec les mêmes outils que tout autre site web AEM. Pour ouvrir le site à des fins de création, cliquez sur l’icône `Open Site` qui s’affiche lorsque vous pointez sur le site avec la souris. Le site s’ouvre dans un nouvel onglet afin que la console Sites des communautés reste accessible.
 
 ![site-content](assets/site-content.png)
 
@@ -411,7 +411,7 @@ Les propriétés d’un site existant, spécifiées pendant le processus de cré
 
 ![modify-site-basicinfo](assets/modify-site-basicinfo.png)
 
-### Modifier de base {#modify-basic}
+### Modification de base {#modify-basic}
 
 Le panneau BASIC permet de modifier les éléments suivants :
 
@@ -546,7 +546,7 @@ Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’ut
 >
 est créé, le [service cloud Facebook](/help/communities/social-login.md#createafacebookcloudservice) appliqué doit être configuré pour ajouter des utilisateurs à ce groupe.
 
-## Configurer pour l’erreur d’authentification {#configure-for-authentication-error}
+## Configuration d’une erreur d’authentification {#configure-for-authentication-error}
 
 Par défaut, un site de la communauté redirige vers un exemple de page de connexion lorsque l’utilisateur saisit des informations d’identification erronées et ne parvient pas à se connecter. Cet exemple de connexion ne sera pas présent sur un [serveur de production](/help/sites-administering/production-ready.md).
 
@@ -571,7 +571,7 @@ Pour rediriger correctement, une fois qu’un site a été configuré et envoyé
 
 ![auth-error](assets/auth-error.png)
 
-### Tester la redirection d’authentification {#test-authentication-redirection}
+### Tester la redirection de l’authentification {#test-authentication-redirection}
 
 Sur la même instance de publication AEM configurée avec un mappage de page de connexion pour le site de la communauté :
 
