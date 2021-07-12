@@ -2,10 +2,10 @@
 title: Comment créer un Forms adaptatif à l’aide d’un schéma XML ?
 description: Découvrez comment utiliser le schéma XML comme modèle de formulaire dans un formulaire adaptatif. Vous pouvez appliquer des modèles XSD existants pour créer des formulaires adaptatifs et faire glisser des éléments de schéma depuis XSD sur votre formulaire adaptatif. Explorez un exemple de schéma XML, ajoutez des propriétés spéciales aux champs à l’aide du schéma XML et limitez les valeurs acceptables pour un composant de formulaire adaptatif.
 feature: Formulaires adaptatifs
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 85%
@@ -284,7 +284,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
  </tbody>
 </table>
 
-## Forum aux questions {#frequently-asked-questions}
+## Questions fréquemment posées {#frequently-asked-questions}
 
 **Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
 
