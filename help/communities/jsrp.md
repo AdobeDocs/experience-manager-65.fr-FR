@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
-role: Administrator
+role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Voir aussi [Caractéristiques des options SRP](working-with-srp.md#characteristi
 
 ## Configuration {#configuration}
 
-### Sélectionnez JSRP {#select-jsrp}
+### Sélectionner JSRP {#select-jsrp}
 
 Par défaut, JSRP est l’option de stockage du contenu généré par l’utilisateur.
 
