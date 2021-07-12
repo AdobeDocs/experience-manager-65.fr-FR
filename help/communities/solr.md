@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
-role: Administrator
+role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1483'
 ht-degree: 2%
@@ -67,7 +67,7 @@ JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CM
 
 Lors de l’exécution en mode SolrCloud, avant l’installation de MLS, utilisez et connaissez les commandes de configuration SolrCloud suivantes.
 
-#### 1. Téléchargez une configuration sur ZooKeeper {#upload-a-configuration-to-zookeeper}
+#### 1. Télécharger une configuration sur ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Référence :
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
@@ -94,7 +94,7 @@ Utilisation:
 -s *nombre de éclats* \
 -rf *nombre de réplication*
 
-#### 3. Liez une collection à un jeu de configuration {#link-a-collection-to-a-configuration-set}
+#### 3. Lier une collection à un jeu de configuration {#link-a-collection-to-a-configuration-set}
 
 Liez une collection à une configuration déjà téléchargée sur ZooKeeper.
 
@@ -148,7 +148,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 
 ![compare-solr-mls](assets/compare-solr-mls.png)
 
-### Installation du MLS standard {#installing-standard-mls}
+### Installation de MLS standard {#installing-standard-mls}
 
 Pour la collection SRP (MSRP ou DSRP), pour prendre en charge la recherche multilingue standard (MLS), il est nécessaire de modifier deux des fichiers de configuration de Solr :
 
@@ -324,7 +324,7 @@ où :
 
 * Le script d’installation sauvegarde schema.xml et solrconfig.xml avant d’installer de nouvelles versions en ajoutant &quot;.orig&quot;.
 
-### À propos de solrconfig.xml {#about-solrconfig-xml}
+### A propos de solrconfig.xml {#about-solrconfig-xml}
 
 Le fichier **solrconfig.xml** contrôle l’intervalle de validation automatique et la visibilité de la recherche et nécessite des tests et des réglages.
 
