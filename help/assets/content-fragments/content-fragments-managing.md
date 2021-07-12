@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 feature: Fragments de contenu
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 636daf55-2225-4780-9c57-1a2d7464fe2c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 99%
 
 ---
 
-# Gestion des fragments de contenu {#managing-content-fragments}
+# Gestion des fragments de contenu{#managing-content-fragments}
 
 Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
@@ -153,7 +153,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
    * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Contenu associé](#associating-content-with-your-fragment)
-   * [Métadonnées  ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [Métadonnées](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
    ![cfm-10](assets/cfm-10.png)
 
@@ -163,7 +163,7 @@ Pour ouvrir votre fragment à des fins de modification :
    >
    >Les options **Enregistrer** et **Annuler** vous font quitter l’éditeur. Pour plus d’informations sur le fonctionnement des deux options avec les fragments de contenu, voir [Enregistrer, Annuler et Versions](#save-cancel-and-versions).
 
-## Enregistrer, Annuler et Versions  {#save-cancel-and-versions}
+## Enregistrer, Annuler et Versions {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -286,11 +286,11 @@ Cette opération va ouvrir :
 
 Elles seront affichées côte à côte, où :
 
-* Les différences sont mises en surbrillance.
+* les différences sont mises en surbrillance ;
 
-   * Le texte supprimé est en rouge
-   * Le texte inséré est en vert
-   * Le texte remplacé est en bleu
+   * le texte supprimé est en rouge ;
+   * le texte inséré est en vert ;
+   * le texte remplacé est en bleu.
 
 * L’icône en plein écran permet d’ouvrir l’une ou l’autre version seule, puis de revenir en mode parallèle.
 * Vous pouvez **rétablir** la version spécifique
@@ -302,7 +302,7 @@ Elles seront affichées côte à côte, où :
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Restauration vers une version spécifique {#reverting-to-a-version}
+## Restauration vers une version spécifique   {#reverting-to-a-version}
 
 Vous pouvez restaurer vers une version spécifique de votre fragment :
 
