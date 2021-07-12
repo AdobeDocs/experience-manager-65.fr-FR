@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
 feature: Fragments de contenu
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: b204df18-2aef-4905-82f8-c777928ba828
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 99%
 
 ---
 
-# Utilisation de fragments de contenu {#working-with-content-fragments}
+# Utilisation de fragments de contenu{#working-with-content-fragments}
 
 Les fragments de contenu d’Adobe Experience Manager (AEM) permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md). Ils permettent de préparer le contenu prêt à être utilisé dans des emplacements multiples/sur plusieurs canaux.
 
