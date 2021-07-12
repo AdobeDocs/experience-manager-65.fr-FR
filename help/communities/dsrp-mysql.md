@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
-role: Administrator
+role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 3%
@@ -139,7 +139,7 @@ Suivez les étapes ci-dessous pour installer la base de données. Le nom par dé
 
 Si le nom de la base de données est modifié dans le script, veillez également à le modifier dans la [configuration JDBC](#configurejdbcconnections).
 
-#### Étape 1 : ouvrir le fichier SQL {#step-open-sql-file}
+#### Étape 1 : Ouvrir le fichier SQL {#step-open-sql-file}
 
 Dans MySQL Workbench
 
