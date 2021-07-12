@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 53%
@@ -132,7 +132,7 @@ Votre environnement AEM est configuré pour mettre en cache les formulaires adap
 
 ## Résolution des problèmes {#troubleshooting}
 
-### Certains formulaires adaptatifs contenant des images ou des vidéos ne sont pas automatiquement invalidés à partir du cache de Dispatcher {#videos-or-images-not-auto-invalidated}
+### Certains formulaires adaptatifs contenant des images ou des vidéos ne sont pas automatiquement invalidés à partir du cache du Dispatcher. {#videos-or-images-not-auto-invalidated}
 
 #### Problème {#issue1}
 
