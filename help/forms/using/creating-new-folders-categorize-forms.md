@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Administrator
+role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 94%
@@ -23,7 +23,7 @@ Vous pouvez mieux organiser vos ressources à l’aide de dossiers. Dans la mesu
 
 AEM Forms permet de modifier le titre d’un dossier. Le titre est différent de celui du nœud sous lequel le dossier est stocké dans le référentiel. Il est conservé sous forme de métadonnées pour le dossier. Si vous modifiez le titre d’un dossier, le chemin d’accès à toute ressource contenue dans celui-ci n’est pas affecté.
 
-## Création d’un dossier {#create-a-folder}
+## Créer un dossier {#create-a-folder}
 
 Vous pouvez créer un dossier dans AEM Forms à l’aide de l’une des méthodes suivantes :
 
@@ -37,8 +37,8 @@ Vous pouvez créer un dossier dans AEM Forms à l’aide de l’une des méthode
 
 1. Saisissez les informations suivantes :
 
-   * **Titre :** nom d’affichage du dossier.
-   * **Nom :** *(Obligatoire)* nom du nœud sous lequel vous souhaitez stocker le dossier dans le référentiel.
+   * **Titre** : nom d’affichage du dossier.
+   * **Nom** : *(Obligatoire)* nom du nœud sous lequel vous souhaitez stocker le dossier dans le référentiel.
 
    >[!NOTE]
    >
