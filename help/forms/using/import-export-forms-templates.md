@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2548'
 ht-degree: 87%
@@ -43,8 +43,8 @@ Pour ces types de ressources, vous devez utiliser le gestionnaire de modules d�
 Pour télécharger des ressources de formulaires et de documents :
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Appuyez sur l&#39;icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône Boussole de ![navigation](assets/compass.png) > Formulaires > Formulaires et documents.
-1. Sélectionnez les ressources de formulaires et appuyez sur l&#39;icône **Télécharger**.
+1. Cliquez sur Experience Manager icône ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation icône ![compass](assets/compass.png) > Formulaires > Formulaires et documents.
+1. Sélectionnez les ressources de formulaires et appuyez sur l’icône **Télécharger**.
 1. Dans la/les ressources de téléchargement, choisissez l’une des options suivantes, puis appuyez sur **Télécharger**.
 
    * **Télécharger sous forme de package CRX :** utilisez l’option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance AEM Forms vers une autre. Toutes les ressources et tous les dossiers sont téléchargés sous forme de package CRX. Toutes les ressources de formulaire, y compris les formulaires créés dans AEM (formulaires adaptatifs, communications interactives et fragments de formulaires adaptatifs), les ensembles de formulaires, les modèles de formulaires, les documents PDF et les ressources (fichiers XSD, XFS et images), peuvent être téléchargés en tant que packages depuis l’interface utilisateur d’AEM Forms.
@@ -53,7 +53,7 @@ L’avantage du téléchargement des ressources sous forme de module est le tél
    * **Télécharger la/les ressources sous forme de fichiers binaires :** utilisez cette option pour télécharger uniquement les modèles de formulaire (XDP), les formulaires PDF (PDF), les documents (PDF) et les ressources (images, schémas, feuilles de style). Vous pouvez modifier ces ressources dans des applications externes. Cette option permet de télécharger les ressources de formulaires qui possèdent des fichiers binaires, telles que des fichiers XSD, XDP, des images, des fichiers PDF et XDP comme un fichier .zip.
 Vous ne pouvez pas télécharger de formulaires adaptatifs, de communications interactives, de fragments de formulaire adaptatif, de thèmes et d’ensembles de formulaires avec l’option **Télécharger les ressources sous forme de fichiers binaires**. Pour télécharger ces ressources, vous devez utiliser l’option **Télécharger sous forme de package CRX**.
 
-   Les ressources sélectionnées sont téléchargéees sous forme d’archive (fichier .zip).
+   Les ressources sélectionnées sont téléchargées sous forme d’archive (fichier .zip).
 
    >[!NOTE]
    >
@@ -66,17 +66,17 @@ Pour télécharger des ressources Formulaires et documents :
 >[!VIDEO](https://vimeo.com/)
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Appuyez sur l&#39;icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône Boussole de ![navigation](assets/compass.png) > Formulaires > Formulaires et documents.
-1. Appuyez sur **Créer** > **Chargement de fichier**. Une boîte de dialogue de téléchargement de formulaires ou de module apparaît.
-1. Dans la boîte de dialogue, recherchez et sélectionnez le module ou l’archive à importer. Vous pouvez également sélectionner le document PDF, les fichiers XSD, les images, les feuilles de style et les formulaires XDP. Appuyez sur **Ouvrir**. Le dossier ou le nom de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
+1. Cliquez sur Experience Manager icône ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation icône ![compass](assets/compass.png) > Formulaires > Formulaires et documents.
+1. Appuyez sur **Créer** > **Chargement de fichier**. Une boîte de dialogue de téléchargement de formulaires ou de module apparaît.
+1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner le document PDF, les fichiers XSD, les images, les feuilles de style et les formulaires XDP. Appuyez sur **Ouvrir**. Le dossier ou le nom de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
 
    Dans la boîte de dialogue, vérifiez les détails des ressources en cours de chargement, puis appuyez sur **Charger**.
 
-   Si vous téléchargez un actif de formulaires existants, il est mis à jour.
+   Si vous chargez une ressource de formulaires existants, la ressource est mise à jour.
 
    >[!NOTE]
    >
-   >Le téléchargement du module ne remplace pas la hiérarchie des dossiers existante. Par exemple, si vous avez un formulaire adaptatif nommé « formation » à l’emplacement /content/dam/formsanddocuments sur un serveur. Téléchargez le formulaire adaptatif et téléchargez le formulaire sur un autre serveur. Le deuxième serveur dispose également d’un dossier nommé « Training » au même emplacement /content/dam/formsanddocuments. Le téléchargement échoue.
+   >Le téléchargement du module ne remplace pas la hiérarchie des dossiers existante. Par exemple, si vous avez un formulaire adaptatif nommé « formation » à l’emplacement /content/dam/formsanddocuments sur un serveur. Téléchargez le formulaire adaptatif et téléchargez le formulaire sur un autre serveur. Le deuxième serveur dispose également d’un dossier nommé « Training » au même emplacement /content/dam/formsanddocuments. Le chargement échoue.
 
 ## Téléchargement ou chargement d’un thème {#downloading-or-uploading-a-theme}
 
@@ -89,7 +89,7 @@ Vous pouvez exporter des thèmes dans AEM Forms, que vous pouvez utiliser dans d
 Pour télécharger un thème :
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Appuyez sur l&#39;icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![compass](assets/compass.png) > Formulaires > Thèmes.
+1. Appuyez sur l’icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![compass](assets/compass.png) > Formulaires > Thèmes.
 1. Sélectionnez le composant et appuyez sur **Télécharger**. Le thème est téléchargé sous forme d’archive (fichier .zip).
 
 ### Chargement d’un thème {#uploading-a-theme}
@@ -98,16 +98,16 @@ Vous pouvez utiliser les thèmes créés avec des paramètres prédéfinis de st
 
 Pour charger un thème :
 
-1. Dans Experience Manager, accédez à **Formulaires > Thèmes**.
-1. Sur la page Thèmes, cliquez sur **Créer > Chargement de fichier**.
+1. Dans Experience Manager, accédez à **Formulaires > Thèmes**.
+1. Sur la page Thèmes, cliquez sur **Créer > Chargement de fichier**.
 1. Dans l’invite de téléchargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **Charger**.
 Le thème chargé est disponible dans la page Thèmes.
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Appuyez sur l&#39;icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![compass](assets/compass.png) > Formulaires > Thèmes.
+1. Appuyez sur l’icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![compass](assets/compass.png) > Formulaires > Thèmes.
 1. Cliquez sur **Créer**> **Chargement de fichier**. Dans l’invite de chargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **Charger**. Le thème est chargé.
 
-## Fichier d’importation et d’exportation dans Correspondance Management {#import-and-export-assets-in-correspondence-management}
+## Importation et importation des actifs dans Correspondance Management {#import-and-export-assets-in-correspondence-management}
 
 Pour partager des actifs, tels que des dictionnaires de données, lettres et fragments de document, entre deux implémentations différentes de Correspondance Management, vous pouvez créer et partager des fichiers .cmp. Un fichier .cmp peut inclure des dictionnaires de données, des lettres, des fragments de document et des formulaires.
 
@@ -126,7 +126,7 @@ Pour partager des actifs, tels que des dictionnaires de données, lettres et fra
 
    Le fichier.cmp comprend les actifs exportés. Vous pouvez partager le fichier.cmp avec d’autres personnes. Les autres utilisateurs peuvent importer le fichier.cmp dans un serveur différent pour récupérer tous les actifs dans le nouveau serveur.
 
-### Exportation de tous les actifs de Correspondence Management sous forme de package  {#export-all-the-correspondence-management-assets-as-a-package}
+### Exportation de tous les actifs de Correspondence Management sous forme de package {#export-all-the-correspondence-management-assets-as-a-package}
 
 Utilisez cette option pour télécharger tous les actifs de Correspondence Management et les dépendances connexes sous la forme d’un package depuis une instance AEM Forms.
 
@@ -201,15 +201,15 @@ L’interface utilisateur d’AEM Forms utilise des dossiers pour classer les r
 
 Pour créer un dossier, procédez comme suit :
 
-### Création d’un dossier {#create-a-folder}
+### Créer un dossier {#create-a-folder}
 
 1. Connectez-vous à l’interface utilisateur d’AEM Forms à l’adresse `https://<server>:<port>/aem/forms.html`.
 1. Accédez à l’emplacement où vous souhaitez créer un dossier.
 1. Appuyez sur Créer > Dossier.
 1. Saisissez les informations suivantes :
 
-   * **Titre :** nom d’affichage du dossier.
-   * **Nom :** *(Obligatoire)* nom du nœud sous lequel vous souhaitez stocker le dossier dans le référentiel.
+   * **Titre** : nom d’affichage du dossier.
+   * **Nom** : *(Obligatoire)* nom du nœud sous lequel vous souhaitez stocker le dossier dans le référentiel.
 
    >[!NOTE]
    >
@@ -238,7 +238,7 @@ Effectuez les étapes suivantes pour créer des copies d’actifs et de lettres�
 1. Si nécessaire, modifiez le titre et le nom sous lesquels vous souhaitez enregistrer la copie de la lettre/de l’actif.
 1. Appuyez sur Coller. De nouvelles copies des actifs copiés sont créées.
 
-## Recherche {#search-forms}
+## Rechercher {#search-forms}
 
 L’interface utilisateur d’AEM Forms vous permet de rechercher votre contenu. À l’aide de la barre supérieure, vous pouvez appuyer sur Rechercher **[A]** pour rechercher dans votre contenu des ressources telles que des ressources et des documents.
 
