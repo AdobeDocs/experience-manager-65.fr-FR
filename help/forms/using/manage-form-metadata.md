@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1994'
 ht-degree: 91%
@@ -82,7 +82,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
    <td>Valeur en lecture seule indiquant la date de création de la ressource.</td> 
   </tr> 
   <tr> 
-   <td>Date de dernière modification</td> 
+   <td>Date de la dernière modification</td> 
    <td>Tous</td> 
    <td>Valeur en lecture seule indiquant la date de dernière modification de la ressource.</td> 
   </tr> 
@@ -147,7 +147,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
   <tr> 
    <td>Balises</td> 
    <td>Tout type, à l’exception du type ressource</td> 
-   <td>Etiquettes associées au formulaire pour faciliter la recherche.</td> 
+   <td>Étiquettes associées au formulaire pour faciliter la recherche.</td> 
   </tr> 
   <tr> 
    <td>Références</td> 
