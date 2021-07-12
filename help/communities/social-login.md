@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
-role: Administrator
+role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2803'
 ht-degree: 2%
@@ -24,7 +24,7 @@ La connexion à Social permet de proposer à un visiteur du site l’option de c
 
 ![socialloginweretail](assets/socialloginweretail.png)
 
-## Présentation de la connexion au réseau social {#social-login-overview}
+## Présentation de la connexion aux réseaux sociaux {#social-login-overview}
 
 Pour inclure la connexion sociale, il est *nécessaire* de créer des applications Facebook et Twitter personnalisées.
 
@@ -362,7 +362,7 @@ Une fois qu’un service cloud est configuré, il peut être activé pour le par
 
    ![usermgmt_png](assets/usermgmt_png.png)
 
-## Test de la connexion au réseau social {#test-social-login}
+## Test de la connexion aux réseaux sociaux {#test-social-login}
 
 * Vérifiez que [Adobe du gestionnaire d’authentification OAuth Granite](#adobe-granite-oauth-authentication-handler) a été activé sur toutes les instances de publication.
 * Assurez-vous que les services cloud ont été publiés.
@@ -376,9 +376,9 @@ Par exemple, http://localhost:4503/content/sites/engage/en.html
 * Notez que la barre d’outils située en haut de la page est mise à jour pour refléter la connexion réussie.
 * Sélectionnez **[!UICONTROL Profil]** : la page Profil affiche l’avatar, le prénom et le nom de l’utilisateur. Il affiche également les informations du profil Facebook ou Twitter en fonction des champs/paramètres autorisés.
 
-## AEM Configurations OAuth de la plateforme {#aem-platform-oauth-configurations}
+## AEM des configurations OAuth de Platform {#aem-platform-oauth-configurations}
 
-### Adobe du gestionnaire d’authentification OAuth Granite {#adobe-granite-oauth-authentication-handler}
+### Gestionnaire d’authentification OAuth Adobe {#adobe-granite-oauth-authentication-handler}
 
 `Adobe Granite OAuth Authentication Handler` n’est pas activé par défaut et ***doit être activé sur toutes les instances de publication AEM.***
 
@@ -399,7 +399,7 @@ Par exemple, http://localhost:4503/system/console/configMgr
 
 ![graniteoauth1](assets/graniteoauth1.png)
 
-### Adobe Application OAuth Granite et fournisseur {#adobe-granite-oauth-application-and-provider}
+### Adobe de l’application OAuth Granite et du fournisseur {#adobe-granite-oauth-application-and-provider}
 
 Lorsqu’un service cloud pour Facebook ou Twitter est créé, une instance de `Adobe Granite OAuth Authentication Handler` est créée.
 
