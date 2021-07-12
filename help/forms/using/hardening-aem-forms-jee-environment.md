@@ -8,16 +8,16 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
-role: Administrator
+role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '7698'
+source-wordcount: '7696'
 ht-degree: 71%
 
 ---
 
-# Renforcement de votre environnement AEM Forms on JEE {#hardening-your-aem-forms-on-jee-environment}
+# Sécurisation de votre environnement d’AEM Forms sur JEE {#hardening-your-aem-forms-on-jee-environment}
 
 Découvrez divers paramètres de renforcement de la sécurité pour améliorer la sécurité d’AEM Forms on JEE s’exécutant dans un intranet d’entreprise.
 
@@ -354,7 +354,7 @@ Lorsque vous sécurisez votre base de données, implémentez les mesures indiqu�
 
 Sur Oracle, le compte de base de données que vous utilisez nécessite uniquement les droits CONNECT, RESOURCE et CREATE VIEW. Pour connaître les exigences des autres bases de données, voir [Préparation à l’installation d’AEM Forms sur JEE (serveur unique)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
-#### Configuration de la sécurité intégrée dans SQL Server sur Windows pour JBoss  {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
+#### Configuration de la sécurité intégrée dans SQL Server sur Windows pour JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
 1. Modifiez [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} pour ajouter `integratedSecurity=true` à l’URL de connexion, comme indiqué dans l’exemple suivant :
 
@@ -399,7 +399,7 @@ Sur WebSphere, vous pouvez configurer la sécurité intégrée uniquement lorsqu
 1. Sélectionnez **Ce compte** et indiquez les informations requises pour définir le compte de connexion à utiliser.
 1. Faites passer la sécurité de SQL Server du mode **Mixte** au mode **Authentification Windows**.
 
-### Protection de l’accès aux contenus sensibles dans la base de données  {#protecting-access-to-sensitive-content-in-the-database}
+### Protection de l’accès aux contenus sensibles dans la base de données {#protecting-access-to-sensitive-content-in-the-database}
 
 Le schéma de la base de données AEM Forms contient des informations sensibles relatives à la configuration du système et aux processus de l’entreprise et doit être protégé par un pare-feu. La base de données doit être considérée comme faisant partie de la même zone de confiance que le serveur de formulaires. Pour éviter tout risque de divulgation d’informations et de vol de données d’entreprise, la base de données doit être configurée par l’administrateur de base de données (DBA) pour donner l’accès aux administrateurs autorisés uniquement.
 
@@ -415,20 +415,20 @@ Pour plus d’informations sur les outils spécifiques aux fournisseurs, voir [&
 
 En règle générale, un répertoire LDAP (Lightweight Directory Access Protocol) est utilisé par AEM Forms sur JEE comme une source d’informations relatives aux utilisateurs et aux groupes de l’entreprise et comme un moyen d’authentifier les mots de passe. Assurez-vous que votre répertoire LDAP est configuré pour utiliser le protocole SSL (Secure Socket Layer) et qu’AEM Forms sur JEE est configuré pour accéder à votre répertoire LDAP en utilisant son port SSL.
 
-#### Déni de service LDAP  {#ldap-denial-of-service}
+#### Déni de service LDAP {#ldap-denial-of-service}
 
 Une attaque courante utilisant LDAP consiste, pour un attaquant, à omettre délibérément de s’authentifier à plusieurs reprises. Ceci oblige le serveur d’annuaires LDAP à interdire à un utilisateur l’accès à tous les services dépendant de LDAP.
 
 Vous pouvez définir le nombre de tentatives d’authentification maximum autorisé et la durée du verrouillage appliqué par AEM Forms lorsqu’un utilisateur échoue de manière répétée à s’authentifier auprès dAEM Forms. Dans Administration Console, choisissez des valeurs faibles. Lors de la sélection du nombre d’échecs d’authentification maximum autorisé, il est important de comprendre que si toutes les tentatives échouent, AEM Forms verrouille l’utilisateur avant que le serveur d’annuaire LDAP ne le fasse.
 
-#### Paramètres de verrouillage de compte automatique  {#set-automatic-account-locking}
+#### Paramètres de verrouillage de compte automatique {#set-automatic-account-locking}
 
 1. Connectez-vous à Administration Console.
 1. Cliquez sur **Paramètres** > **User Management** > **Gestion des domaines**.
 1. Sous Paramètres de verrouillage de compte automatique, définissez **Echecs d’authentification consécutifs max.** sur un nombre peu élevé, 3 par exemple.
 1. Cliquez sur **Enregistrer**.
 
-### Contrôle et consignation  {#auditing-and-logging}
+### Contrôle et consignation {#auditing-and-logging}
 
 L’utilisation appropriée et sécurisée des capacités de contrôle et de consignation des applications peut contribuer au suivi et à la détection rapides des événements liés à la sécurité et autres anomalies. L’utilisation efficace des capacités de contrôle et de consignation dans une application inclut des points comme le suivi des connexions réussies et échouées, de même que les événements clés de l’application comme la création ou la suppression d’enregistrements clés.
 
@@ -473,7 +473,7 @@ Vous pouvez permettre à un utilisateur non administrateur d’utiliser PDF Gene
 
 Une fois AEM Forms sur JEE installé avec succès, il est important que vous assuriez une maintenance régulière de la sécurité de votre environnement. Cette section décrit les tâches recommandées pour assurer la maintenance de la sécurité du serveur de production AEM Forms sur JEE.
 
-### Configuration d’un proxy inverse pour l’accès Web  {#setting-up-a-reverse-proxy-for-web-access}
+### Configuration d’un proxy inverse pour l’accès Web {#setting-up-a-reverse-proxy-for-web-access}
 
 Un *proxy inverse* peut être utilisé pour garantir qu’un jeu d’URL d’applications AEM Forms sur JEE est disponible à la fois pour des utilisateurs externes et internes. Cette configuration est plus sûre que si vous autorisiez des utilisateurs à se connecter directement au serveur d’applications sur lequel est exécuté AEM Forms sur JEE. Le proxy inverse exécute toutes les requêtes HTTP pour le serveur d’applications qui exécute AEM Forms sur JEE. Les utilisateurs disposent d’un accès réseau limité au seul proxy inverse et ne peuvent se connecter qu’aux URL prises en charge par le proxy inverse.
 
@@ -658,7 +658,7 @@ Certaines URL sont présentées comme des applications Web accessibles par les u
  </tbody> 
 </table>
 
-## Protection contre les attaques multisites par usurpation de requête  {#protecting-from-cross-site-request-forgery-attacks}
+## Protection contre les attaques multisites par usurpation de requête {#protecting-from-cross-site-request-forgery-attacks}
 
 Une attaque multisite par usurpation de requête exploite la confiance qu’un site Web a pour l’utilisateur, afin de transmettre des commandes non autorisées et involontaires par l’utilisateur. L&#39;attaque est configurée en incluant un lien ou un script dans une page web, ou une URL dans un email, pour accéder à un autre site sur lequel l&#39;utilisateur a déjà été authentifié.
 
@@ -805,7 +805,7 @@ Si des requêtes serveur légitimes sont bloquées par le filtre CSRF, essayez l
 * Si le client peut travailler dans un navigateur, essayez ce modèle de déploiement.
 * En dernier recours, vous pouvez ajouter la ressource à la liste des URI autorisés. Ceci n’est pas un paramètre recommandé.
 
-## Configuration réseau sécurisée  {#secure-network-configuration}
+## Configuration réseau sécurisée {#secure-network-configuration}
 
 Cette section décrit les protocoles et les ports requis par AEM Forms sur JEE et fournit des recommandations pour déployer AEM Forms sur JEE dans une configuration réseau sécurisée.
 
@@ -887,7 +887,7 @@ Lorsque vous configurez une architecture réseau sécurisée comme décrit dans 
  </tbody> 
 </table>
 
-### Ports de serveur d’applications  {#ports-for-application-servers}
+### Ports de serveur d’applications {#ports-for-application-servers}
 
 Cette section décrit les ports par défaut (et les plages de configurations alternatives) pour chaque type de serveur d’applications pris en charge. Ces ports doivent être activés ou désactivés sur le pare-feu interne, selon la fonctionnalité réseau que vous souhaitez autoriser aux clients qui se connectent au serveur d’applications qui exécute AEM Forms sur JEE.
 
@@ -989,11 +989,11 @@ Pour configurer la redirection SSL pour WebSphere et WebLogic, reportez-vous à 
 
 Cette section contient des recommandations de sécurité spécifiques à Windows dans le cadre de l&#39;exécution d&#39;AEM Forms sur JEE.
 
-### Comptes de service JBoss  {#jboss-service-accounts}
+### Comptes de service JBoss {#jboss-service-accounts}
 
 L’installation clé en main d’AEM Forms sur JEE installe un compte de service par défaut en utilisant le compte système local. Le compte utilisateur système local intégré présente un haut niveau d’accessibilité ; il fait partie du groupe Administrateurs. Si une identité de processus de travail est exécutée en tant que compte utilisateur système local, ce processus de travail dispose d’un accès complet à l’ensemble du système.
 
-#### Exécution du serveur d’applications à l’aide d’un compte non administratif spécifique  {#run-the-application-server-using-a-non-administrative-account}
+#### Exécution du serveur d’applications à l’aide d’un compte non administratif spécifique {#run-the-application-server-using-a-non-administrative-account}
 
 1. Dans Microsoft Management Console (MMC), créez un utilisateur local pour que le service de serveur de formulaires se connecte en tant que cet utilisateur local :
 
@@ -1033,7 +1033,7 @@ Sur les systèmes de type UNIX, un utilisateur non connecté comme utilisateur r
 
 1. Démarrez le service de serveur d’applications.
 
-### Sécurité du système de fichiers  {#file-system-security}
+### Sécurité du système de fichiers {#file-system-security}
 
 AEM Forms sur JEE utilise le système de fichiers comme suit :
 
@@ -1043,7 +1043,7 @@ AEM Forms sur JEE utilise le système de fichiers comme suit :
 
 Lorsque vous utilisez des dossiers de contrôle comme moyen d’envoyer et de recevoir des documents avec un service de serveur de formulaires, soyez très prudent quant à la sécurité du système de fichiers. Lorsqu’un utilisateur dépose des contenus dans le dossier de contrôle, ces contenus sont exposés via le dossier de contrôle. Dès lors, le service n’authentifie pas l’utilisateur final réel. Au lieu de cela, il considère que la sécurité par liste de contrôle d’accès et par niveau de dossier a été définie au niveau des dossiers pour déterminer qui peut effectivement appeler le service.
 
-## Recommandations de sécurité spécifiques à JBoss  {#jboss-specific-security-recommendations}
+## Recommandations de sécurité spécifiques à JBoss {#jboss-specific-security-recommendations}
 
 Cette section contient des recommandations relatives à la configuration du serveur d’applications et spécifiques à JBoss 7.0.6 lorsqu’il est utilisé pour exécuter AEM Forms on JEE.
 
@@ -1051,7 +1051,7 @@ Cette section contient des recommandations relatives à la configuration du serv
 
 L’accès à la console de gestion JBoss et à la console JMX est déjà configuré (la surveillance JMX est désactivée) lorsque vous installez AEM Forms sur JEE sur Jboss en appliquant la méthode d’installation clé en main. Si vous utilisez votre propre serveur d’applications JBoss, assurez-vous que l’accès à la console de gestion JBoss et à la console de surveillance JMX est sécurisé. L’accès à la console de surveillance JMX est défini dans le fichier de configuration de JBoss appelé jmx-invoker-service.xml.
 
-### Désactivation de l’exploration des répertoires  {#disable-directory-browsing}
+### Désactivation de l’exploration des répertoires {#disable-directory-browsing}
 
 Une fois connecté à Administration Console, vous pouvez parcourir la liste des répertoires de la console en modifiant l’URL. Par exemple, si vous modifiez l’URL pour l’une de ces adresses, une liste de répertoires s’affiche :
 
@@ -1064,7 +1064,7 @@ https://<servername>:8080/um/
 
 Cette section présente des recommandations relatives à la configuration du serveur d’applications et spécifiques à WebLogic9.1 lorsque celui-ci est utilisé pour exécuter AEM Forms sur JEE.
 
-### Désactivation de l’exploration des répertoires  {#disable_directory_browsing-1}
+### Désactivation de l’exploration des répertoires {#disable_directory_browsing-1}
 
 Définissez les propriétés index-directories du fichier weblogic.xml sur `false`, comme illustré dans l’exemple suivant :
 
@@ -1079,11 +1079,11 @@ Définissez les propriétés index-directories du fichier weblogic.xml sur `fals
 
 Par défaut, WebLogic n’active pas le port d’écoute SSL par défaut, 7002. Activez ce port dans le serveur WebLogic Server Administration Console avant de configurer SSL.
 
-## Recommandations de sécurité spécifiques à WebSphere  {#websphere-specific-security-recommendations}
+## Recommandations de sécurité spécifiques à WebSphere {#websphere-specific-security-recommendations}
 
 Cette section présente des recommandations relatives à la configuration du serveur d’applications pour sécuriser Websphere exécutant AEM Forms sur JEE.
 
-### Désactivation de l’exploration des répertoires  {#disable_directory_browsing-2}
+### Désactivation de l’exploration des répertoires {#disable_directory_browsing-2}
 
 Définissez la propriété `directoryBrowsingEnabled` du fichier ibm-web-ext.xml sur `false`.
 
