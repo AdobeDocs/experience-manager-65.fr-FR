@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
+role: Admin
 exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 4%
@@ -60,7 +60,7 @@ Dans le panneau Informations de base , un nom, une description et si le modèle 
 
    Bascule contrôlant si le modèle est référencable.
 
-### Miniature  {#thumbnail}
+### Miniature {#thumbnail}
 
 ![site-thumbnail](assets/site-thumbnail.png)
 
@@ -74,7 +74,7 @@ Pour ajouter des fonctions de communauté, faites glisser du côté droit vers l
 
 Par exemple, si vous souhaitez une page d’accueil, faites glisser la fonction Page de la bibliothèque et déposez-la sous le créateur de modèles. La boîte de dialogue de configuration de la page s’ouvre alors. Voir la [console des fonctions](functions.md) pour plus d’informations sur les boîtes de dialogue de configuration.
 
-Continuez à faire glisser et déposer toutes les autres fonctions de la communauté souhaitées pour un site de la communauté en fonction de ce modèle.
+Continuez à faire glisser et déposer toutes les autres fonctions de communauté souhaitées pour un site de communauté en fonction de ce modèle.
 
 La fonction page fournit une page vide. La fonction de groupes permet de créer un site de groupe (sous-communauté) au sein du site de la communauté.
 
@@ -100,7 +100,7 @@ En sélectionnant plusieurs modèles de groupe de communauté, l’administrateu
 
 ![site-function](assets/site-functions1.png)
 
-## Modifier le modèle de site{#edit-site-template}
+## Modifier le modèle de site {#edit-site-template}
 
 Lors de l’affichage des modèles de site dans la [console Modèles de site](#site-templates-console) principale, il est possible de sélectionner un modèle de site existant à modifier.
 
