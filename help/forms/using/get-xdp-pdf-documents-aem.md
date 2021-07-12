@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 93%
@@ -62,7 +62,7 @@ Vous pouvez charger les types de ressource pris en charge individuellement ou so
 
 Une fois le transfert terminé, un processus d’arrière-plan génère des vignettes pour chaque ressource, en fonction de l’aperçu de cette dernière. Les nouvelles versions des ressources, si elles ont été transférées, écrasent les ressources existantes.
 
-### Mode Protégé  {#protected-mode}
+### Mode Protégé {#protected-mode}
 
 Le serveur AEM Forms vous permet d’exécuter du code JavaScript. Du code JavaScript malveillant peut endommager un environnement AEM Forms. Le mode Protégé restreint AEM Forms afin d’exécuter les fichiers XDP uniquement à partir de ressources et d’emplacements approuvés. Tous les XDP disponibles dans l’interface utilisateur d’AEM Forms sont considérés comme des ressources approuvées.
 
