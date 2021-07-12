@@ -6,9 +6,9 @@ seo-description: Découvrez des conseils et des pratiques recommandées pour sé
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
-role: Administrator
+role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 95%
@@ -96,7 +96,7 @@ Vous pouvez configurer un pare-feu externe pour activer certaines URL AEM Forms 
  </tbody>
 </table>
 
-#### Configurer le pare-feu interne   {#configure-internal-firewall}
+#### Configurer le pare-feu interne  {#configure-internal-firewall}
 
 Vous pouvez configurer le pare-feu interne pour autoriser certains composants AEM Forms (par exemple, instance d’auteur, instance de traitement, bases de données) à communiquer avec la batterie de publication et d’autres composants internes mentionnés dans le diagramme de topologie :
 
@@ -139,7 +139,7 @@ Lorsque vous configurez des formulaires pour les pièces jointes, les composants
 
 Dans les scénarios ci-dessus, les données sont enregistrées uniquement pour les utilisateurs authentifiés. De plus, les données sont protégées avec des listes de contrôle d’accès (LCA). Par conséquent, la modification de la purge des données est une étape supplémentaire qui vise à sécuriser les informations.
 
-### Données sécurisées enregistrées via une action d’envoi sur le portail de formulaires  {#secure-data-saved-by-forms-portal-submit-action}
+### Données sécurisées enregistrées via une action d’envoi sur le portail de formulaires {#secure-data-saved-by-forms-portal-submit-action}
 
 Par défaut, l’action d’envoi de formulaires adaptatifs via le portail de formulaires enregistre les données dans le référentiel local du nœud de publication. Les données sont enregistrées sous /content/forms/fp. **Il n’est pas recommandé de stocker des données sur une instance de publication.**
 
@@ -147,7 +147,7 @@ Vous pouvez configurer le service de stockage pour envoyer en mode filaire à la
 
 Utilisez les informations d’identification du serveur de traitement pour le service de paramètres AEM DS pour publier les données du nœud de publication sur le serveur de traitement. Il est recommandé d’utiliser les informations d’identification d’un utilisateur non administratif restreint avec un accès en lecture/écriture au référentiel du serveur de traitement. Pour plus d’informations, voir [Configuration des services de stockage pour les brouillons et les envois](/help/forms/using/configuring-draft-submission-storage.md).
 
-### Données sécurisées gérées par le modèle de données du formulaire (FDM)  {#secure-data-handled-by-form-data-model-fdm}
+### Données sécurisées gérées par le modèle de données du formulaire (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
 Utilisez les comptes d’utilisateur avec les privilèges requis minimum pour configurer les sources de données pour le modèle de données de formulaire (FDM). L’utilisation d’un compte administratif peut fournir un accès ouvert aux métadonnées et aux entités de schéma à des utilisateurs non autorisés.\
 L’intégration de données fournit également des méthodes pour autoriser les demandes de service FDM. Vous pouvez insérer des mécanismes d’autorisation avant et après l’exécution pour valider une demande. Les demandes de service sont générées lors du pré-remplissage d’un formulaire, de l’envoi d’un formulaire et de l’appel de services via une règle.
@@ -156,7 +156,7 @@ L’intégration de données fournit également des méthodes pour autoriser les
 
 **Autorisation de post-traitement :** vous pouvez utiliser l’autorisation de post-traitement pour valider et contrôler les résultats avant de renvoyer les résultats à l’auteur de la requête. Vous pouvez également filtrer, supprimer et insérer des données dans les résultats.
 
-### Limiter l’accès utilisateur  {#limit-user-access}
+### Limiter l’accès utilisateur {#limit-user-access}
 
 Un ensemble différent de rôles utilisateur est requis pour les instances d’auteur, de publication et de traitement. N’exécutez aucune instance avec des informations d’identification d’administrateur.
 
@@ -188,7 +188,7 @@ Un ensemble différent de rôles utilisateur est requis pour les instances d’a
 * Pour enregistrer à distance et envoyer des cas d’utilisation, créez un utilisateur disposant d’autorisations de droits de lecture, de création et de modification sur le chemin d’accès content/form/fp du référentiel crx.
 * Ajoutez un utilisateur au groupe processus-utilisateur pour permettre à un utilisateur d’utiliser les applications de boîte de réception AEM.
 
-## Éléments Intranet sécurisés d’un environnement AEM Forms  {#secure-intranet-elements-of-an-aem-forms-environment}
+## Éléments Intranet sécurisés d’un environnement AEM Forms {#secure-intranet-elements-of-an-aem-forms-environment}
 
 En règle générale, les grappes de traitement et le module complémentaire Forms Workflow (AEM Forms on JEE) s’exécutent derrière un pare-feu. Par conséquent, ils sont considérés comme étant sécurisés. Vous pouvez toujours effectuer quelques étapes pour renforcer ces environnements :
 
