@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
-role: Administrator
+role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 80%
@@ -66,7 +66,7 @@ Procédez comme suit à l’aide de la page web Applications et services dans Ad
 
 1. Cliquez sur **Suivant** et répétez les étapes précédentes pour chaque point de fin SOAP qui ne figure pas dans la liste ci-dessus. Assurez-vous que SOAP figure dans la colonne Fournisseur avant de supprimer les points de fin.
 
-## Désactivation des accès anonymes non indispensables à des services  {#disabling-non-essential-anonymous-access-to-services}
+## Désactivation des accès anonymes non indispensables à des services {#disabling-non-essential-anonymous-access-to-services}
 
 Certains services du serveur de formulaires permettent d’appeler sans authentification (de manière anonyme) certaines opérations. Ceci signifie qu’il est possible d’appeler une ou plusieurs opérations exposées par le service en tant qu’utilisateur authentifié ou non.
 
@@ -111,7 +111,7 @@ Certains services du serveur de formulaires permettent d’appeler sans authenti
 
 Les utilisateurs finaux peuvent s’authentifier auprès d’AEM Forms par le biais de Workbench, d’applications web AEM Forms ou d’applications personnalisées qui appellent des services de serveur AEM Forms. Un paramètre de délai d’expiration permet de spécifier la durée pendant laquelle ces utilisateurs peuvent interagir avec AEM Forms (en utilisant une assertion SAML) avant d’être obligés de s’authentifier de nouveau. Par défaut, ce paramètre est défini sur deux heures. Dans un environnement de production, cette durée doit être réduite au nombre minimum de minutes acceptable.
 
-### Réduction au minimum de la durée limite avant réauthentification:  {#minimize-reauthentication-time-limit}
+### Réduction au minimum de la durée limite avant réauthentification: {#minimize-reauthentication-time-limit}
 
 1. Connectez-vous à la console d’administration en saisissant l’URL suivante dans un navigateur Web :
 
