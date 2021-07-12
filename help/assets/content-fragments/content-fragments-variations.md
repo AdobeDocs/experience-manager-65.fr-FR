@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 feature: Fragments de contenu
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1746'
 ht-degree: 92%
 
 ---
 
-# Variations – création de contenu de fragment {#variations-authoring-fragment-content}
+# Variations – création de contenu de fragment{#variations-authoring-fragment-content}
 
 Les [variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu, car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques et/ou dans des cas spécifiques.
 
-À partir de l’onglet **variations**, vous pouvez :
+À partir de l’onglet **Variations**, vous pouvez :
 
 * [saisir le contenu](#authoring-your-content) de votre fragment
 * [créer et gérer les variations](#managing-variations) du contenu **maître**.
@@ -375,7 +375,7 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
 
 1. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert (ajouté à la variation) ;
+   * le contenu ajouté figure en vert  (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
 
    ![cfm-6420-27](assets/cfm-6420-27.png)
