@@ -6,9 +6,9 @@ seo-description: Installez les services de documents d’AEM Forms pour créer,
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
-role: Administrator
+role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 70%
@@ -322,7 +322,7 @@ Le compte utilisateur utilisé pour démarrer le serveur d’applications doit a
 1. Accédez à **[!UICONTROL Stratégie d’ordinateur local]** > **[!UICONTROL Configuration d’ordinateur]** > **[!UICONTROL Paramètres Windows]** > **[!UICONTROL Paramètres de sécurité]** > **[!UICONTROL Stratégies locales]** > **[!UICONTROL Attribution des droits utilisateur]** et modifiez la stratégie **[!UICONTROL Remplacer un jeton de niveau processus]** pour y inclure le groupe Administrateurs.
 1. Ajoutez l’utilisateur à l’entrée Remplacer un jeton de niveau processus.
 
-### (Windows uniquement) Activez le service PDF Generator pour les utilisateurs non administrateurs {#enable-the-pdf-generator-service-for-non-administrators}
+### (Windows uniquement) Activation du service PDF Generator pour les utilisateurs non administrateurs {#enable-the-pdf-generator-service-for-non-administrators}
 
 Vous pouvez permettre à un utilisateur non-administrateur d’utiliser le service PDF Generator. Normalement, seuls les utilisateurs disposant de droits d’administrateur peuvent utiliser le service :
 
@@ -330,7 +330,7 @@ Vous pouvez permettre à un utilisateur non-administrateur d’utiliser le servi
 1. Définissez la valeur de la variable d’environnement sur TRUE.
 1. Redémarrez l’instance AEM Forms.
 
-### (Windows uniquement) Désactiver le contrôle de compte d’utilisateur (UAC) {#disable-user-account-control-uac}
+### (Windows uniquement) Désactivation du contrôle de compte d’utilisateur {#disable-user-account-control-uac}
 
 1. Pour accéder à l’utilitaire de configuration système, sélectionnez **[!UICONTROL Démarrer > Exécuter]** et saisissez **[!UICONTROL MSCONFIG]**.
 1. Cliquez sur l’onglet **[!UICONTROL Outils]**, faites défiler l’écran vers le bas, puis sélectionnez **[!UICONTROL Modifier les paramètres de contrôle de compte d’utilisateur]**. Cliquez sur **[!UICONTROL Démarrer]** pour lancer la commande dans une nouvelle fenêtre.
@@ -344,7 +344,7 @@ Vous pouvez permettre à un utilisateur non-administrateur d’utiliser le servi
 
 1. Redémarrez l’ordinateur.
 
-### (Windows uniquement) Désactivez le service de création de rapports d’erreurs {#disable-error-reporting-service}
+### (Windows uniquement) Désactiver le service de création de rapports d’erreurs {#disable-error-reporting-service}
 
 Lors de la conversion d’un document au format PDF à l’aide du service PDF Generator sous Windows Server, Windows Server signale parfois que le fichier exécutable a rencontré un problème et doit se fermer. La conversion au format PDF n’est toutefois pas affectée et se poursuit en arrière-plan.
 
@@ -358,7 +358,7 @@ Le service PDF Generator fournit des méthodes ou itinéraires WebKit, WebCaptur
 >
 >Chaque fois que vous installez de nouvelles polices dans le dossier des polices, redémarrez l’instance AEM Forms.
 
-### (Plateformes UNIX uniquement) Configurations supplémentaires pour la conversion HTML vers PDF {#extra-configurations-for-html-to-pdf-conversion}
+### (plateformes UNIX uniquement) Configurations supplémentaires pour la conversion HTML vers PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
 Sur les plates-formes UNIX, le service PDF Generator prend en charge les itinéraires WebKit et PhantomJS pour convertir des fichiers HTML en documents PDF. Pour activer la conversion de fichiers HTML en PDF, effectuez les configurations suivantes, applicables à l’itinéraire de conversion de votre choix :
 
@@ -499,7 +499,7 @@ Sous Microsoft Windows, le service PDF Generator utilise Adobe Acrobat pour con
 
 1. Exécutez l’outil de préparation du système pour valider l’installation d’Acrobat. L’outil vérifie que l’ordinateur est correctement configuré pour exécuter les conversions PDF Generator et génère un rapport au chemin indiqué:
 
-   1. Ouvrez l’invite de commande. Accédez au dossier `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt`. Exécutez la commande suivante à partir de l’invite de commande :
+   1. Ouvrez l’invite de commande. Accédez au dossier `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt` . Exécutez la commande suivante à partir de l’invite de commande :
 
       `cscript SystemReadinessTool.vbs [Path_of_reports_folder] en`
 
@@ -519,7 +519,7 @@ L’itinéraire principal par défaut pour les conversions HTML en PDF est WebKi
 
 1. Dans l’onglet **[!UICONTROL Configuration générale]**, sélectionnez l’itinéraire de conversion préféré dans la liste déroulante **[!UICONTROL Itinéraire Principal pour les conversions HTML en PDF]**.
 
-### Initialisation du Trust Store global {#intialize-global-trust-store}
+### Initialisation de la Trust Store globale {#intialize-global-trust-store}
 
 Trust Store Management vous permet d’importer, de modifier et de supprimer des certificats de confiance sur le serveur pour valider des signatures numériques et l’authentification de certificats. Vous pouvez en importer et en exporter autant que vous le souhaitez. Une fois qu’un certificat a été importé, vous pouvez modifier les paramètres d’approbation et le type de Trust Store. Pour initialiser un Trust Store, procédez comme suit :
 
