@@ -10,12 +10,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 feature: Brand Portal
-role: Administrator
+role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2086'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -148,7 +148,7 @@ Dans Adobe Developer Console, les projets et les API sont configurés au niveau 
 
 Procédez comme suit pour générer les informations d’identification du compte de service et la charge utile JWT :
 
-1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui_fr](https://www.adobe.com/go/devs_console_ui_fr).
+1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est  [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -342,7 +342,7 @@ Pour valider la configuration, procédez comme suit :
 Vous pouvez maintenant effectuer les tâches suivantes :
 
 * [Publication de ressources à partir d’AEM Assets sur Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publication de ressources de Brand Portal vers AEM Assets](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Approvisionnement des ressources dans Brand Portal
+* [Publication de ressources de Brand Portal vers AEM Assets](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Découverte de ressources dans Brand Portal
 * [Publication de dossiers à partir d’AEM Assets sur Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publication de collections à partir d’AEM Assets sur Brand Portal](../assets/brand-portal-publish-collection.md)
 * [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
@@ -358,7 +358,7 @@ Effectuez les étapes suivantes dans l’ordre indiqué pour mettre à niveau vo
 1. [Suppression des configurations existantes](#delete-existing-configuration)
 1. [Création d’une configuration](#configure-new-integration-65)
 
-### Vérifier les tâches en cours {#verify-jobs}
+### Vérification des tâches en cours {#verify-jobs}
 
 Assurez-vous qu’aucune tâche de publication n’est en cours d’exécution sur votre instance d’auteur AEM Assets avant d’apporter des modifications. Pour ce faire, vous pouvez vérifier l’état des tâches principales sur les quatre agents de réplication et vous assurer que les files d’attente sont inactives.
 
@@ -376,7 +376,7 @@ Assurez-vous qu’aucune tâche de publication n’est en cours d’exécution s
 
    ![](assets/test-integration3.png)
 
-### Supprimer les configurations existantes {#delete-existing-configuration}
+### Suppression des configurations existantes {#delete-existing-configuration}
 
 Vous devez exécuter la liste de contrôle suivante lors de la suppression des configurations existantes :
 * Suppression des quatre agents de réplication
