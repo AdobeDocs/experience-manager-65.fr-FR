@@ -10,12 +10,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -117,7 +117,7 @@ Il n’est pas prévu que ce fichier soit modifié.
 
 Si le fichier des mots-clés est manquant, le moteur de notation avancé renvoie une erreur.
 
-## Règles de badge avancé {#advanced-badging-rules}
+## Règles de badge avancées {#advanced-badging-rules}
 
 Les propriétés avancées des règles de badge diffèrent des [propriétés de base des règles de badge](/help/communities/implementing-scoring.md#badging-rules).
 
@@ -130,7 +130,7 @@ Au lieu d&#39;associer des points à une image de badge, il suffit d&#39;identif
   <tr>
    <th>Propriété</th>
    <th>Type</th>
-   <th>Valeur Description</th>
+   <th>Description de la valeur</th>
   </tr>
   <tr>
    <td>badgingPath</td>
