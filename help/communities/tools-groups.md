@@ -10,8 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
-role: Administrator
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 3%
@@ -67,7 +67,7 @@ Dans le panneau Informations de base , un nom, une description et si le modèle 
 
    Bascule contrôlant si le modèle est référencable.
 
-#### Miniature  {#thumbnail}
+#### Miniature {#thumbnail}
 
 ![site-thumbnail](assets/site-thumbnail.png)
 
