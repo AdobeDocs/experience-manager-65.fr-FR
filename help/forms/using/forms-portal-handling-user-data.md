@@ -7,9 +7,9 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
-role: Administrator
+role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 64%
@@ -62,15 +62,15 @@ Selon la persistance du stockage de données configuré, les données de formula
  </tbody>
 </table>
 
-## Accès et suppression des données utilisateur  {#access-and-delete-user-data}
+## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
 Vous pouvez accéder aux données de formulaires envoyés et sous forme de brouillons pour des utilisateurs connectés et anonymes dans les stockages de données configurés et, si nécessaire, les supprimer.
 
-### Instances AEM  {#aem-instances}
+### Instances AEM {#aem-instances}
 
 Toutes les données de brouillons et de formulaires envoyés dans des instances AEM (auteur, publication ou distante) pour les utilisateurs connectés et anonymes sont stockées dans le noeud `/content/forms/fp/` du référentiel AEM applicable. Chaque fois qu’un utilisateur connecté ou anonyme enregistre un formulaire en tant que brouillon ou l’envoie, un `draft ID` ou un `submission ID`, un `user data ID`, et un `ID` aléatoire pour chaque pièce jointe (le cas échéant) sont générés et associés au brouillon ou à l’envoi correspondant.
 
-#### Accès aux données utilisateur  {#access-user-data}
+#### Accès aux données utilisateur {#access-user-data}
 
 Lorsqu’un utilisateur connecté enregistre un formulaire en tant que brouillon ou l’envoie, un nœud enfant est créé avec son ID utilisateur. Par exemple, les données de brouillons et d’envois de Sarah Rose dont l’ID utilisateur est `srose` sont stockées dans le noeud `/content/forms/fp/srose/` du référentiel AEM. Dans le nœud de l’ID utilisateur, les données sont organisées dans une structure hiérarchique.
 
@@ -106,7 +106,7 @@ Lorsqu’AEM est configuré pour stocker des données dans une base de données,
 * metadata
 * additionalmetadata
 
-#### Accès aux données utilisateur  {#access-user-data-1}
+#### Accès aux données utilisateur {#access-user-data-1}
 
 Pour accéder aux données de brouillons et d’envois pour un utilisateur connecté et anonyme dans les tables de base de données, exécutez la commande de base de données suivante. Dans la requête, remplacez `logged-in user` par l’ID utilisateur dont vous souhaitez accéder aux données ou par `anonymous` pour les utilisateurs anonymes.
 
