@@ -2,23 +2,23 @@
 title: Plateformes prises en charge pour AEM Forms on JEE
 seo-title: Plateformes prises en charge pour AEM Forms on JEE
 description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms on JEE
-seo-description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms on JEE
+seo-description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms sur JEE
 uuid: 777f943b-4cb4-444e-a036-8032b9fce5be
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '3323'
 ht-degree: 76%
 
 ---
 
-# Plateformes prises en charge pour AEM Forms on JEE{#supported-platforms-for-aem-forms-on-jee}
+# Plateformes prises en charge pour AEM Forms sur JEE{#supported-platforms-for-aem-forms-on-jee}
 
 ## Plateformes prises en charge {#supported-platforms}
 
@@ -425,7 +425,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouve
 * Cordova Android 6.0.0
 * Cordova Windows 4.4.3
 
-### Prise en charge logicielle de PDF Generator {#software-support-for-pdf-generator}
+### Prise en charge logicielle de PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -572,7 +572,7 @@ Pour la configuration requise supplémentaire, voir :
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
 * Droits d’administrateur pour l’installation de Designer.
 
-### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
+### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
 <table>
  <tbody>
@@ -688,9 +688,9 @@ Pour la configuration requise supplémentaire, voir :
 
 
 
-### Application AEM Forms {#aem-forms-workspace-app}
+### Application AEM Forms {#aem-forms-workspace-app}
 
-#### Prise en charge de périphériques mobiles {#mobile-device-support}
+#### Prise en charge des appareils mobiles {#mobile-device-support}
 
 L’application AEM Forms est disponible sur les plateformes suivantes :
 
