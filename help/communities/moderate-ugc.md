@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 3%
 
 ---
 
-# Modération du contenu de la communauté {#moderating-community-content}
+# Modération de contenu de la communauté {#moderating-community-content}
 
 ## Présentation {#overview}
 
@@ -171,7 +171,7 @@ Lorsque vous sélectionnez l’action Couper , le contenu est copié dans le Pre
 
 Un modérateur peut interdire au contenu créé par l’utilisateur de rester visible sur le site publié. Pour les administrateurs et les modérateurs de la communauté, la publication est toujours disponible et annotée comme spam.
 
-### Fermer / rouvrir {#close-reopen}
+### Fermer/rouvrir {#close-reopen}
 
 L&#39;action Fermer fonctionne sur l&#39;ensemble du fil de conversation (un sujet de forum ou le commentaire initial) et inclut toutes les publications ou réponses suivantes.
 
@@ -205,7 +205,7 @@ révisions dans Modération  **[!UICONTROL utilisateur]**  >  **[!UICONTROL Pré
 * [Forum](/help/communities/forum.md),  [idéation](/help/communities/ideation-feature.md),  [Q&amp;R](/help/communities/working-with-qna.md) et  [](/help/communities/calendar.md)
 calendrier dans  **[!UICONTROL Paramètres]**  >  **[!UICONTROL Modéré]**.
 
-### Détection du spam {#spam-detection}
+### Détection des messages indésirables {#spam-detection}
 
 La détection des messages indésirables est une fonctionnalité d’auto-modération qui filtre les éléments indésirables du contenu généré par les utilisateurs envoyés en les marquant comme spam. Une fois activé, il identifie si le contenu généré par l’utilisateur est du spam ou non en fonction d’un ensemble préconfiguré de mots-clés indésirables. Les mots de spam par défaut sont fournis à l’adresse
 
