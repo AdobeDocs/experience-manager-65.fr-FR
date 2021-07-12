@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
+role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Cette configuration est adaptée aux environnements *hors production* tels que l
 
 ## MongoDB {#mongodb}
 
-### Installer MongoDB {#install-mongodb}
+### Installation de MongoDB {#install-mongodb}
 
 * Téléchargez MongoDB à partir de [https://www.mongodb.org/](https://www.mongodb.org/)
 
@@ -139,7 +139,7 @@ Pour exécuter une configuration solrCloud de base (et non de production), comme
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
-## Identifiez MongoDB en tant que magasin commun {#identify-mongodb-as-common-store}
+## Identification de MongoDB en tant que magasin commun {#identify-mongodb-as-common-store}
 
 Lancez les instances d’AEM de création et de publication, si nécessaire.
 
