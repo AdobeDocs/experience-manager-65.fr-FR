@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
-role: Administrator
+role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 3%
@@ -121,7 +121,7 @@ Il est possible de sélectionner un thème qui diffère du thème du site parent
 
 Une fois le site de la communauté publié, il est possible de [modifier les propriétés](#modifyinggroupproperties) et sélectionner un autre thème.
 
-### MARQUE DU GROUPE COMMUNAUTAIRE {#community-group-branding}
+### MARQUE DES GROUPES COMMUNAUTAIRES {#community-group-branding}
 
 ![communauté-groupe-marque](assets/community-group-branding.png)
 
@@ -204,13 +204,13 @@ Une fois le processus terminé, la carte du nouveau site (groupe) de sous-commun
 >
 >Le groupe est créé dans toutes les langues, comme indiqué à l’ [étape 1 : Modèle de groupe de communautés](/help/communities/groups.md#step-community-group-template) dans Langues de groupe de communautés disponibles supplémentaires, dans la console Groupes de communautés des sites de communautés respectifs.
 
-## Contenu du groupe d’auteurs {#author-group-content}
+## Contenu du groupe de création {#author-group-content}
 
 ![open site](assets/open-site.png)
 
 Le contenu de la page d’un groupe peut être créé avec les mêmes outils que toute autre page AEM. Pour ouvrir le groupe à des fins de création, sélectionnez l’icône Ouvrir le site qui s’affiche lorsque vous pointez sur la carte du groupe.
 
-## Modifier les propriétés du groupe {#modify-group-properties}
+## Modification des propriétés du groupe {#modify-group-properties}
 
 Les propriétés d’un site de sous-communauté existant, spécifiées pendant le processus de création d’un groupe de communautés, peuvent être modifiées en sélectionnant l’icône Modifier le site qui s’affiche lorsque vous pointez sur la carte du groupe :
 
@@ -220,7 +220,7 @@ Les détails des propriétés suivantes correspondent aux descriptions fournies 
 
 ![community-group-basic](assets/community-group-basic.png)
 
-### Modifier de base {#modify-basic}
+### Modification de base {#modify-basic}
 
 Le panneau BASIC permet de modifier les
 
@@ -286,7 +286,7 @@ Le panneau [MEMBERSHIP](#membership) est fourni uniquement à titre d’informat
 
 Le panneau [MINIATURE](#thumbnail) permet de charger une image afin de représenter le groupe de la communauté aux visiteurs du site dans l’environnement de publication, ainsi que dans la console Groupes du site Communities dans l’environnement de création.
 
-## Publier le groupe {#publish-the-group}
+## Publication du groupe {#publish-the-group}
 
 ![publish-site](assets/publish-site.png)
 
@@ -302,7 +302,7 @@ Une fois la publication du groupe terminée, un message s’affiche :
 >
 >Le site communautaire et les groupes imbriqués doivent être publiés de manière descendante.
 
-## Supprimer le groupe {#delete-the-group}
+## Suppression du groupe {#delete-the-group}
 
 ![icône de suppression](assets/deleteicon.png)
 
