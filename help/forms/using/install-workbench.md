@@ -4,20 +4,20 @@ seo-title: Installation de Workbench
 description: Installez Workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-role: Administrator
+role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 57%
 
 ---
 
-# Installer Workbench {#install-workbench}
+# Installation de Workbench {#install-workbench}
 
 Ce document fournit des instructions pour l’installation et la configuration d’AEM Forms Workbench. Le programme d’installation installe également Forms Designer.
 
-## Qui devrait lire ce document ? {#who-should-read-this-doc}
+## À qui est destiné ce document ? {#who-should-read-this-doc}
 
 Ce document est destiné aux administrateurs ou développeurs chargés de l’installation, de la configuration, de l’administration ou du déploiement de Workbench. Sont également incluses les informations nécessaires à la configuration de votre système pour prendre en charge vos processus AEM Forms mis à niveau. Les informations fournies partent du principe que quiconque lit ce document connaît le système d’exploitation Microsoft® Windows®.
 
@@ -71,7 +71,7 @@ L’illustration suivante illustre l’installation de Workbench, notamment :
 
 ## Configuration système requise {#system-prerequisites}
 
-Cette section décrit le configuration matérielle et logicielle requise et les plates-formes prises en charge.
+Cette section décrit le configuration matérielle et logicielle requise et les plateformes prises en charge.
 
 ### Configuration matérielle et logicielle minimale {#minimum-hardware-software-requirements}
 
@@ -255,7 +255,7 @@ Les meilleures pratiques suivantes garantissent que le cache ne grandit pas sans
    * Éliminez l’identifiant UUID ou transmettez le même identifiant UUID dans tous les modèles générés dynamiquement.
    * Générez le document à partir des octets de modèle ou du même nom de fichier sur disque.
 
-### Désinstallation de Workbench  {#uninstalling-workbench}
+### Désinstallation de Workbench {#uninstalling-workbench}
 
 Utilisez la fonction Ajouter ou supprimer des programmes du Panneau de Contrôle pour lancer le programme de désinstallation. Les applications Workbench et Designer ont des programmes de désinstallation distincts.
 
