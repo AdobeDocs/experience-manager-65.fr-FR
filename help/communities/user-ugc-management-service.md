@@ -10,12 +10,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -39,7 +39,7 @@ Pour utiliser ces API, vous devez activer le point de terminaison `/services/soc
 
 Ces API permettent de remplir les fonctions suivantes.
 
-## Récupération du contenu généré par un utilisateur  {#retrieve-the-ugc-of-a-user}
+## Récupération du contenu généré par un utilisateur {#retrieve-the-ugc-of-a-user}
 
 **getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)**  permet d’exporter tout le contenu généré par un utilisateur du système.
 
@@ -61,7 +61,7 @@ Par exemple, pour supprimer le contenu généré par un utilisateur disposant d�
 * l’utilisateur = `weston.mccall@dodgit.com`
 * opération = `deleteUgc`
 
-### Supprimer le contenu généré par l’utilisateur d’Adobe Analytics {#delete-ugc-from-adobe-analytics}
+### Suppression du contenu généré par l’utilisateur d’Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
 Pour supprimer les données utilisateur d’Adobe Analytics, suivez le [workflow Analytics RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) ; car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
 
