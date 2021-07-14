@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Communication interactive
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b6774acc4ec32c87a5ad5f5b2ea885e1e1aa867e
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2041'
 ht-degree: 37%
 
 ---
@@ -162,7 +162,7 @@ L’interface utilisateur de l’agent offre une prise en charge intégrée de 2
 * Sélection (icône représentant un œil) : inclut\exclut le fragment de document de la communication interactive.
 * Valeurs vides (information) : indique le nombre de variables vides dans le fragment de document.
 
-### Fragments de document de la liste  {#list-document-fragments}
+### Fragments de document de la liste {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
@@ -171,7 +171,7 @@ L’interface utilisateur de l’agent offre une prise en charge intégrée de 2
 * Ignorer les puces/numérotations : permet d’ignorer les puces/numéros dans le fragment de document de la liste.
 * Valeurs vides (information) : indique le nombre de variables vides dans le fragment de document.
 
-## Enregistrer les communications interactives en tant que brouillon {#save-as-draft}
+## Enregistrement des communications interactives en tant que brouillon {#save-as-draft}
 
 Vous pouvez utiliser l’interface utilisateur de l’agent pour enregistrer un ou plusieurs brouillons pour chaque communication interactive et récupérer le brouillon ultérieurement pour continuer à travailler dessus. Vous pouvez spécifier un nom différent pour chaque brouillon afin de l’identifier.
 
@@ -203,17 +203,13 @@ Effectuez les étapes suivantes pour enregistrer une communication interactive e
 
 Une fois que vous avez enregistré la communication interactive en tant que brouillon, appuyez sur **[!UICONTROL Enregistrer les modifications]** pour enregistrer d’autres modifications dans le brouillon.
 
-### Récupérer le brouillon d’une communication interactive {#retrieve-draft}
+### Récupération du brouillon d’une communication interactive {#retrieve-draft}
 
 Après avoir enregistré une communication interactive en tant que brouillon, vous pouvez la récupérer pour continuer à travailler dessus. Récupérez la communication interactive à l’aide de :
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
 [] draftidfait référence à l’identifiant unique de la version préliminaire qui est générée après l’enregistrement d’une communication interactive en tant que brouillon.
-
->[!NOTE]
->
->Si vous apportez des modifications à la communication interactive après l’avoir enregistrée en tant que brouillon, la version préliminaire ne s’ouvre pas.
 
 ### Exemple d’implémentation SPI ccrDocumentInstance {#sample-ccrDocumentInstance-spi}
 
