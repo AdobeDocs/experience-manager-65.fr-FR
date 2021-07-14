@@ -12,10 +12,10 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: aed6e28d7ff228ecbaeaf0d468d1d9bcb4373f90
 workflow-type: tm+mt
-source-wordcount: '2086'
-ht-degree: 63%
+source-wordcount: '2076'
+ht-degree: 62%
 
 ---
 
@@ -70,13 +70,13 @@ Il est recommandé d’utiliser AEM 6.5 pour configurer une instance d’auteur 
 
 * Si vous êtes un partenaire d’Adobe, utilisez [Programme de formation des partenaires d’Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) pour demander AEM 6.5.
 
-Après avoir téléchargé AEM, consultez la page [Déploiement et maintenance](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html#default-local-install) pour obtenir des instructions sur la configuration d’une instance d’auteur AEM.
+Après avoir téléchargé AEM, consultez la page [Déploiement et maintenance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#default-local-install) pour obtenir des instructions sur la configuration d’une instance d’auteur AEM.
 
 ### Télécharger et installer le dernier Service Pack AEM {#servicepack}
 
 Pour obtenir des instructions détaillées, voir
 
-* [Notes de mise à jour d’AEM 6.5, Pack de services ](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+* [Notes de mise à jour d’AEM 6.5, Pack de services ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=fr)
 
 **Contactez l’** assistance si vous ne parvenez pas à trouver le dernier package AEM ou le Service Pack.
 
@@ -337,18 +337,18 @@ Pour valider la configuration, procédez comme suit :
    >
    >Évitez de désactiver les agents de réplication, car cela peut entraîner l’échec de la réplication des ressources (en cours d’exécution).
    >
-   >Assurez-vous que les quatre agents de réplication sont configurés pour éviter l’erreur de délai d’expiration. Voir [dépannage des problèmes de publication en parallèle sur Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >Assurez-vous que les quatre agents de réplication sont configurés pour éviter l’erreur de délai d’expiration. Voir [dépannage des problèmes de publication en parallèle sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=en#connection-timeout).
 
 Vous pouvez maintenant effectuer les tâches suivantes :
 
 * [Publication de ressources à partir d’AEM Assets sur Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publication de ressources de Brand Portal vers AEM Assets](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Découverte de ressources dans Brand Portal
+* [Publication de ressources de Brand Portal vers AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr) - Découverte de ressources dans Brand Portal
 * [Publication de dossiers à partir d’AEM Assets sur Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publication de collections à partir d’AEM Assets sur Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Publication de balises sur Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Pour plus d’informations, voir [Publication de balises sur Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/home.html).
+Pour plus d’informations, voir [Publication de balises sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html).
 
 
 ## Mise à niveau de la configuration {#upgrade-integration-65}
