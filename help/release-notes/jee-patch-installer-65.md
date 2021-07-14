@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
+source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 51%
 
 ---
@@ -26,7 +26,7 @@ Le programme d’installation du correctif Forms JEE d’AEM 6.5 comprend tous l
 
 * AEM 6.5 Forms
 
-## Installation et configuration du correctif {#installing-and-configuring-the-patch}
+## Installer et configurer le correctif {#installing-and-configuring-the-patch}
 
 1. Effectuez une sauvegarde du dossier de déploiement &lt;*AEM_forms_root*>/. Il est nécessaire si vous décidez de désinstaller le Quick Fix.
 1. Arrêtez le serveur d’applications.
@@ -58,6 +58,7 @@ LinuxAccédez au répertoire approprié, puis, à l’invite de commande, saisis
    * `serializer-2.7.1.jar` vers `serializer-2.7.2.jar`
    * `xalan-2.7.1.jar` vers `xalan-2.7.2.jar`
    * `xercesImpl-2.9.1.jar` vers `xercesImpl-2.12.0.jar`
+   * `xml-apis-2.7.1.jar` vers `xml-apis-2.7.2.jar`
 
 1. La case à cocher Démarrer Configuration Manager est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager.
 
