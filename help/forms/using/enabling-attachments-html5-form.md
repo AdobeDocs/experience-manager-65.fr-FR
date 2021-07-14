@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 68%
+source-wordcount: '353'
+ht-degree: 64%
 
 ---
 
@@ -21,15 +21,20 @@ ht-degree: 68%
 
 Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec des formulaires HTML5. Par défaut, la prise en charge des pièces jointes est désactivée. Pour activer la prise en charge des pièces jointes :
 
-1. Créez un [profil personnalisé](/help/forms/using/custom-profile.md) avec la propriété de chaîne à choix multiple `mfAttachmentOptions`.
-1. Dans le profil personnalisé, spécifiez les propriétés `fileSizeLimit`, `multiSelect` et `buttonTex`t pour configurer les options du widget de pièce jointe au fichier. Au besoin, vous pouvez également spécifier d’autres propriétés personnalisées.
+1. Créez un [profil personnalisé](/help/forms/using/custom-profile.md) avec une propriété de chaîne à sélection multiple `mfAttachmentOptions`. Chaque chaîne de la propriété `mfAttachmentOptions` doit avoir un format `property=value` pour configurer les options du widget de pièce jointe. Les valeurs `property` et `value` peuvent correspondre à l’une des valeurs suivantes :
 
-1. Dans le profil personnalisé, utilisez les configurations suivantes :
+   | Propriété | Valeur |
+   |--- |---|
+   | multiSelect | vrai ou faux (vrai par défaut) |
+   | fileSizeLimit | Nombre en Mo (2 Mo par défaut). Par exemple, 5. |
+   | buttonText | Texte de bouton pour la fenêtre contextuelle (&quot;Joindre&quot; par défaut) |
+   | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; par défaut). |
 
-   * **multiSelect**-> vrai ou faux (vrai par défaut)
-   * **fileSizeLimit**  -> value_in_mb (5, par exemple) (2 Mo par défaut)
-   * **buttonText**  -> texte de bouton pour la fenêtre contextuelle (&quot;Joindre&quot; par défaut)
-   * **acceptez** -> les types de fichiers à accepter (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; par défaut).
+   Par exemple :
+
+   ![configuration des options](assets/mfAttachmentOptions.png)
+
+   Au besoin, vous pouvez également spécifier d’autres options personnalisées pour la propriété `mfAttachmentOptions`.
 
    >[!NOTE]
    >
