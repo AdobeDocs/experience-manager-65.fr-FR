@@ -9,9 +9,9 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: aaafda59c63ea47c67ec974263013ead468df9cc
 workflow-type: tm+mt
-source-wordcount: '7109'
+source-wordcount: '7268'
 ht-degree: 64%
 
 ---
@@ -87,7 +87,9 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Utilisateur ou groupe :** la tâche est affectée à l’utilisateur ou au groupe sélectionné. Cette option est disponible lorsque l’option **À un utilisateur ou un groupe spécifique** est activée dans le champ **Options d’affectation**. Le champ répertorie tous les utilisateurs et groupes du groupe d’utilisateurs du processus.\
    Le menu déroulant **Utilisateur ou groupe** répertorie les utilisateurs et les groupes auxquels l’utilisateur connecté a accès. L’affichage du nom d’utilisateur dépend des autorisations d’accès sur le nœud **users** dans crx-repository pour cet utilisateur particulier.
 
-* **Avertir la personne désignée par courrier électronique :** sélectionnez cette option pour envoyer des notifications électroniques à la personne désignée. Ces notifications sont envoyées lorsqu’une tâche est affectée à un utilisateur. Avant d’utiliser cette option, activez les notifications de la console Web AEM. Pour obtenir des instructions détaillées, consultez [Configuration des notifications électroniques à l’étape Affecter une tâche](../../forms/using/aem-forms-workflow.md)
+* **[!UICONTROL Envoyer une notification par e-mail :]** sélectionnez cette option pour envoyer des notifications par e-mail à la personne désignée. Ces notifications sont envoyées lorsqu’une tâche est affectée à un utilisateur ou à un groupe. Vous pouvez utiliser l’option **[!UICONTROL Adresse électronique du destinataire]** pour spécifier le mécanisme de récupération de l’adresse électronique.
+
+* **[!UICONTROL Adresse électronique du destinataire :]** vous pouvez stocker l’adresse électronique dans une variable, utiliser un littéral pour spécifier une adresse électronique permanente ou utiliser l’adresse électronique par défaut de la personne désignée spécifiée dans son profil. Vous pouvez utiliser le littéral ou une variable pour spécifier l’adresse électronique d’un groupe. L’option de variable permet de récupérer et d’utiliser de manière dynamique une adresse électronique. L’option **[!UICONTROL Utiliser l’adresse électronique par défaut de la personne désignée]** n’est destinée qu’à une seule personne désignée. Dans ce cas, l’adresse électronique stockée dans le profil utilisateur de la personne désignée est utilisée.
 
 * **Modèle de courrier électronique HTML** : sélectionnez un modèle de courrier électronique pour la notification électronique. Pour modifier un modèle, modifiez le fichier situé à l’emplacement /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt dans le référentiel CRX.
 * **Autoriser la délégation à :** la boîte de réception AEM permet à l’utilisateur connecté de déléguer le processus affecté à un autre utilisateur. Vous pouvez déléguer la tâche au sein du même groupe ou à l’utilisateur du processus d’un autre groupe. Si la tâche est affectée à un utilisateur unique et que l’option **Autoriser la délégation aux membres du groupe désigné** est sélectionnée, vous ne pouvez pas déléguer la tâche à un utilisateur ou à un autre groupe.
@@ -100,7 +102,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Itinéraires :** une tâche peut se composer de plusieurs itinéraires. Lorsque cette option est sélectionnée dans la boîte de réception AEM, l’itinéraire renvoie une valeur et les branches du processus en fonction de l’itinéraire sélectionné. Vous pouvez stocker des itinéraires dans une variable de tableau de type de données Chaîne ou sélectionner **Littéral** pour ajouter manuellement des itinéraires.
 
 * **Titre** : Indiquez le titre de l’itinéraire. Il s’affiche dans la boîte de réception AEM.
-* **Icône Corail** : indiquez l’attribut HTML d’une icône corail. La bibliothèque Adobe CorelUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez sélectionner et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM. Si vous stockez les itinéraires dans une variable, ils utilisent une icône de corail Balises par défaut.
+* **Icône Corail** : indiquez l’attribut HTML d’une icône corail. La bibliothèque Adobe CoralUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez sélectionner et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM. Si vous stockez les itinéraires dans une variable, ils utilisent une icône de corail Balises par défaut.
 * **Autoriser la personne désignée à ajouter des commentaires** : sélectionnez cette option pour activer les commentaires pour la tâche. Une personne désignée peut ajouter des commentaires à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
 * **Enregistrer le commentaire dans la variable :** enregistrez le commentaire dans une variable de type de données String. Cette option s’affiche uniquement si vous cochez la case **Autoriser la personne désignée à ajouter un commentaire**.
 
@@ -143,13 +145,13 @@ L’étape Envoyer un courrier électronique utilise le service de messagerie Da
 * **URL de la ressource :** utilisez cette option pour incorporer un lien web d’une communication interactive dans l’email. Après avoir sélectionné l’option, recherchez et sélectionnez la communication interactive à incorporer. Un actif peut résider sur le serveur de création ou de publication.
 * **Image :** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;*&quot;/>) disponibles dans le modèle du courrier électronique.
 
-**Adresse électronique de l’expéditeur/du destinataire :** sélectionnez l’option  **** Littéralité pour spécifier manuellement une adresse électronique ou sélectionnez l’option  **Récupérer à partir des** métadonnées de workflow pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus**. Sélectionnez l&#39;option **Variable** pour récupérer l&#39;adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
+**Adresse électronique de l’expéditeur/du destinataire :** sélectionnez l’option  **** Littéralité pour spécifier manuellement une adresse électronique ou sélectionnez l’option  **Récupérer à partir des** métadonnées de workflow pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus**. Sélectionnez l’option **Variable** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
 
 **Pièce jointe :** la ressource disponible à l’emplacement spécifié est jointe au courrier électronique. Le chemin d’accès de l’actif peut être lié à la charge utile ou au chemin d’accès absolu. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/.
 
 Sélectionnez l’option **Variable** pour récupérer le fichier joint stocké dans une variable de type de données Document, XML ou JSON.
 
-**Nom de fichier :** nom du fichier de la pièce jointe au courrier électronique. L’étape Envoyer un courrier électronique remplace le nom de fichier original de la pièce jointe par le nom de fichier spécifié. Le nom peut être spécifié manuellement ou récupéré à partir d’une propriété de métadonnées de processus ou d’une variable. Utilisez l’option **Littéral** lorsque vous connaissez la valeur exacte à spécifier. Utilisez l&#39;option **Variable** pour récupérer le nom du fichier à partir de la valeur stockée dans une variable de type de données Chaîne. Utilisez l’option **Récupérer à partir des métadonnées de processus** lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus.
+**Nom de fichier :** nom du fichier de la pièce jointe au courrier électronique. L’étape Envoyer un courrier électronique remplace le nom de fichier original de la pièce jointe par le nom de fichier spécifié. Le nom peut être spécifié manuellement ou récupéré à partir d’une propriété de métadonnées de processus ou d’une variable. Utilisez l’option **Littéral** lorsque vous connaissez la valeur exacte à spécifier. Utilisez l’option **Variable** pour récupérer le nom du fichier à partir de la valeur stockée dans une variable de type de données Chaîne. Utilisez l’option **Récupérer à partir des métadonnées de processus** lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus.
 
 ## Etape Générer un document d’enregistrement {#generate-document-of-record-step}
 
@@ -160,7 +162,7 @@ L’étape Document d’enregistrement possède les propriétés suivantes :
 **Utiliser le formulaire** adaptatif : Spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Vous pouvez utiliser le formulaire adaptatif envoyé au workflow, disponible à un chemin d’accès absolu ou disponible à un chemin d’accès dans une variable. Vous pouvez utiliser une variable de type de données Chaîne pour spécifier le chemin d’accès dans le champ **Sélectionner la variable à résoudre**.\
 Vous pouvez associer plusieurs formulaires adaptatifs à un workflow. Par conséquent, vous pouvez spécifier un formulaire adaptatif au moment de l’exécution à l’aide des méthodes d’entrée disponibles.
 
-**Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Le champ est disponible lorsque vous sélectionnez l&#39;option **Disponible à un chemin d’accès absolu** dans le champ **Utiliser le formulaire adaptatif**.
+**Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Le champ est disponible lorsque vous sélectionnez l’option **Disponible à un chemin d’accès absolu** dans le champ **Utiliser le formulaire adaptatif**.
 
 **Sélectionnez Input data using :** chemin des données d’entrée pour le formulaire adaptatif. Vous pouvez conserver les données à un emplacement relatif à la charge utile, spécifier un chemin d’accès absolu aux données ou récupérer les données stockées dans une variable de type Document, JSON ou XML. Les données d’entrée sont fusionnées avec le formulaire adaptatif pour créer un document d’enregistrement.
 
@@ -183,7 +185,7 @@ Pour mieux comprendre les entrées des champs de l’étape, la table de base de
 <table>
  <tbody> 
   <tr> 
-   <td>Propriétés</td> 
+   <td>Propriété</td> 
    <td>Valeur<br /> </td> 
   </tr> 
   <tr> 
@@ -242,6 +244,9 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
    * **Littéral** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, srose@we.info.
    * **Variable :** utilisez l’option pour récupérer la valeur stockée dans une variable.
    * **Récupérer à partir des métadonnées de processus :** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus. Par exemple, emailAddress.
+   * **[!UICONTROL Relatif à la charge utile]** : Utilisez l’option pour récupérer la pièce jointe de fichier enregistrée à un chemin d’accès relatif à la charge utile. Sélectionnez l’option et indiquez le nom du dossier contenant la pièce jointe ou indiquez le nom de la pièce jointe dans la zone de texte.
+
+      Par exemple, si le dossier Relatif à la charge utile dans le référentiel CRX inclut une pièce jointe à l’emplacement `attachment\attachment-folder` , spécifiez `attachment\attachment-folder` dans la zone de texte après avoir sélectionné l’option **[!UICONTROL Relative à la charge utile]** .
    * **JSON Dot Notation :** utilisez cette option lorsque la valeur à utiliser figure dans un fichier JSON. Par exemple, insurance.customerDetails.emailAddress. L’option JSON Dot Notation n’est disponible que si l’option Mapper les champs de saisie de l’entrée JSON est sélectionnée.
    * **Mapper les champs de saisie depuis le fichier JSON d’entrée :** spécifiez le chemin d’accès d’un fichier JSON pour obtenir la valeur d’entrée des arguments de service à partir du fichier JSON. Le chemin d’accès du fichier JSON peut être relatif à la charge utile, un chemin absolu, ou vous pouvez sélectionner un document JSON d’entrée à l’aide d’une variable de type JSON ou Modèle de données de formulaire.
 
@@ -293,7 +298,7 @@ Convertit un document PDF en liste d’images. Les formats d’image pris en cha
 * Un fichier TIFF de plusieurs pages est généré.
 * Certaines annotations ne sont pas incluses dans les images TIFF. Les annotations requises par Acrobat pour générer leur aspect ne sont pas incluses.
 
-### Etape Convertir en PDF/A  {#convert-to-pdf-a-step}
+### Etape Convertir en PDF/A {#convert-to-pdf-a-step}
 
 Convertit un document PDF au format PDF/A à l’aide des options fournies. La version PDF/A du format PDF (Portable Document Format) est réservée à l’archivage et la conservation des documents à long terme.
 
@@ -301,7 +306,7 @@ Convertit un document PDF au format PDF/A à l’aide des options fournies. La v
 
 Convertir des documents PDF en PostScript. Lors d’une conversion au format PostScript, vous pouvez indiquer le document source et choisir entre une conversion vers PostScript niveau 2 ou 3. Le document PDF à convertir en fichier PostScript ne doit pas être interactif.
 
-### Etape Créer le PDF depuis le type spécifié  {#create-pdf-from-specified-type-step}
+### Etape Créer le PDF depuis le type spécifié {#create-pdf-from-specified-type-step}
 
 Génère un document PDF à partir d’un fichier d’entrée. Le document d’entrée peut être relatif à la charge utile, comporter un chemin d’accès absolu, une charge utile elle-même ou être stocké dans une variable de type de données Document .
 
@@ -309,11 +314,11 @@ Génère un document PDF à partir d’un fichier d’entrée. Le document d’e
 
 Génère un document PDF à partir de l’URL fournie ou du fichier HTML et ZIP.
 
-### Etape Exporter des données  {#export-data-step}
+### Etape Exporter des données {#export-data-step}
 
 Exporte des données à partir d’un formulaire PDF ou d’un XDP. Vous devez saisir le chemin d’accès du document d’entrée et le format d’exportation des données. Les options Exporter le format de données sont Auto, XDP et XmlData.
 
-### Etape Exporter un PDF vers le type spécifié  {#export-pdf-to-specified-type-step}
+### Etape Exporter un PDF vers le type spécifié {#export-pdf-to-specified-type-step}
 
 Convertit un document PDF au format sélectionné.
 
