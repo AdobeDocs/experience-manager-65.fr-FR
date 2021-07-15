@@ -8,10 +8,10 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configuration
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 56%
+source-wordcount: '261'
+ht-degree: 50%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 56%
 
 Si vous administrez Dynamic Media, les rubriques suivantes peuvent vous intéresser :
 
-* [Configuration du mode](config-dms7.md)  Dynamic Media-Scene7 : utilisez cette configuration si vous êtes un nouveau client Dynamic Media.
-* [Configuration du mode](config-dynamic.md)  hybride Dynamic Media : utilisez cette configuration si vous êtes un Experience Manager de mise à niveau client Dynamic Media existant.
+* [Configurer Dynamic Media - mode](config-dms7.md)  Scene7 : utilisez cette configuration si vous êtes un nouveau client Dynamic Media.
+* [Configurer Dynamic Media - mode](config-dynamic.md)  hybride : utilisez cette configuration si vous êtes un Experience Manager de mise à niveau client Dynamic Media existant.
 * [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
 * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
-* [Résolution des problèmes liés à Dynamic Media - Mode Scene7](troubleshoot-dms7.md)
+* [Dépannage de Dynamic Media - mode Scene7](troubleshoot-dms7.md)
 
 Voir aussi les rubriques suivantes :
 
