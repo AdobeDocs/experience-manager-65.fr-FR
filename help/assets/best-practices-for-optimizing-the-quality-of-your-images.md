@@ -1,5 +1,5 @@
 ---
-title: Bonnes pratiques relatives à l’optimisation de la qualité des images
+title: Bonnes pratiques relatives à l’optimisation de la qualité des images dans Dynamic Media
 description: Découvrez les bonnes pratiques relatives à l’optimisation de la qualité des images dans Dynamic Media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Gestion des ressources
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 89%
+source-wordcount: '1451'
+ht-degree: 88%
 
 ---
 
-# Bonnes pratiques relatives à l’optimisation de la qualité des images {#best-practices-for-optimizing-the-quality-of-your-images}
+# Bonnes pratiques relatives à l’optimisation de la qualité des images dans Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 L’optimisation de la qualité des images peut être un processus chronophage, car de nombreux facteurs contribuent à l’obtention de résultats acceptables. Le résultat est en partie subjectif car les individus perçoivent la qualité des images de manière différente. Une expérimentation structurée est la clé.
 
@@ -47,7 +47,7 @@ Pour le dimensionnement des images, il est recommandé d’utiliser `&wid=<value
 
 L’accentuation des images est l’aspect le plus complexe du contrôle des images du site web, processus au cours duquel de nombreuses erreurs sont commises. Prenez le temps d’en savoir plus sur le fonctionnement de l’accentuation et du masquage flou dans Experience Manager en vous référant aux ressources suivantes :
 
-Livre blanc des bonnes pratiques [Accentuation des images dans Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) qui s’applique également à Experience Manager.
+Livre blanc des bonnes pratiques [Accentuer les images dans Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) qui s’applique également à Experience Manager.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
@@ -59,14 +59,14 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 * Accentuation simple (`&op_sharpen`) : à l’instar du filtre d’accentuation utilisé dans Photoshop, l’accentuation simple applique une accentuation de base à l’affichage final de l’image à la suite d’un redimensionnement dynamique. Cependant, cette méthode ne peut pas être configurée par l’utilisateur. Il est recommandé de ne pas utiliser &amp;op_sharpen sauf si cette méthode est requise.
 * Masquage flou (`&op_USM`) : le masquage flou est un filtre d’accentuation standard. Il est recommandé d’accentuer les images par le masquage flou en suivant les instructions ci-dessous. Le masquage flou vous permet de contrôler les trois paramètres suivants :
 
-   * `&op_sharpen=`quantité,rayon,seuil
+   * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL quantité]** (0 à 5, intensité de l’effet)
-      * **[!UICONTROL rayon]** (0 à 250, largeur des « lignes d’accentuation » tracées autour de l’objet accentué, mesurées en pixels.)
+      * **[!UICONTROL *quantité&#x200B;*]**(0 à 5, intensité de l’effet)
+      * **[!UICONTROL *rayon *]**(0 à 250, largeur des « lignes d’accentuation » tracées autour de l’objet accentué, mesurées en pixels.)
 
       Gardez à l’esprit que les paramètres rayon et quantité fonctionnent l’un par rapport à l’autre. La réduction du rayon peut être compensée en augmentant la quantité. Le rayon permet un contrôle plus précis, car une valeur inférieure accentue uniquement les pixels de contour, tandis qu’une valeur supérieure traite une plus grande plage de pixels.
 
-      * **[!UICONTROL seuil]** (0 à 255, sensibilité de l’effet)
+      * **[!UICONTROL *seuil *]**(0 à 255, sensibilité de l’effet)
 
              Ce paramètre définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et que le filtre les accentue. Le paramètre **[!UICONTROL seuil]** permet d’éviter l’accentuation excessive de zones aux couleurs similaires, telles que les tons chair. Par exemple, une valeur de seuil de 12 permet d’ignorer les légères variations de la luminosité de la peau pour éviter d’ajouter du « bruit », tout en ajoutant un contraste sur les bords dans les zones à fort contraste, comme l’endroit où les cils rencontrent la peau.
          
@@ -74,7 +74,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
          Rubrique d’aide du Experience Manager sur l’accentuation d’une image.
 
-         Livre blanc des bonnes pratiques [Accentuation des images dans Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+         Livre blanc des bonnes pratiques [Accentuer les images dans Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
       * Experience Manager permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/l’intensité de l’image en utilisant la valeur 1.
 
