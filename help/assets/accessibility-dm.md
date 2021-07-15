@@ -7,10 +7,10 @@ content-type: reference
 feature: Accessibilité
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 73%
+source-wordcount: '568'
+ht-degree: 71%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 73%
 
 Comme [!DNL Dynamic Media] est un plug-in de [!DNL Adobe Experience Manager Assets], la plupart des commandes au clavier sont identiques à celles de [!DNL Experience Manager Assets]. Par exemple, le bouton `Cancel` de [!DNL Dynamic Media] est mis en surbrillance de la même façon que dans [!DNL Experience Manager Assets] et réagit à la clé `Spacebar` comme dans [!DNL Experience Manager Assets]. Voir [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Les touches prises en charge par les éléments d’interface utilisateur individuels dans [!DNL Dynamic Media] sont, dans la plupart des cas, évidentes et faciles à découvrir. Le contrôle clavier dans [!DNL Dynamic Media] est à peu près le suivant :
+Les touches prises en charge par les éléments d’interface utilisateur individuels dans [!DNL Dynamic Media] sont claires et faciles à découvrir. Le contrôle clavier dans [!DNL Dynamic Media] est à peu près le suivant :
 
 * Possibilité d’utiliser les touches `Tab` et `Shift+Tab` pour naviguer entre les éléments interactifs de la page.
 `Tab` permet d’activer le focus d’entrée sur l’élément d’interface utilisateur suivant dans l’ordre de tabulation ; `Shift+Tab` rétablit le focus d’entrée sur l’élément d’interface utilisateur précédent.
