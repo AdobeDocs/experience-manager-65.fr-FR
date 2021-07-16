@@ -12,26 +12,26 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Visionneuses
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 68%
+source-wordcount: '1088'
+ht-degree: 67%
 
 ---
 
-# Utilisation de l’aperçu rapide pour créer des fenêtres contextuelles personnalisées {#using-quickviews-to-create-custom-pop-ups}
+# Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
-L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs d’appuyer sur une zone réactive, une miniature ou sur une zone cliquable pour afficher des informations ou du contenu connexe.
+L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs de sélectionner une zone réactive, une miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
 
 L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynamic Media :
 
-* Images interactives (zones réactives cliquables)
+* Image interactive (zones réactives cliquables)
 * Vidéo interactive (miniatures cliquables pendant la lecture vidéo)
-* Bannières carrousel (zones réactives cliquables ou zones cliquables)
+* Bannière de carrousel (zones réactives cliquables ou zones cliquables)
 
 Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus de création d’un aperçu rapide est identique pour les trois visionneuses prises en charge.
 
-**Pour utiliser l’aperçu rapide afin de créer des fenêtres contextuelles personnalisées :**
+**Pour créer des fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide :**
 
 1. Créez un aperçu rapide pour une ressource téléchargée.
 
