@@ -10,10 +10,10 @@ discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
 source-wordcount: '2849'
-ht-degree: 24%
+ht-degree: 22%
 
 ---
 
@@ -51,7 +51,7 @@ Vous pouvez publier des ressources numériques dans Dynamic Media Classic comme 
 
 >[!NOTE]
 >
->Experience Manager publie sur Dynamic Media Classic de manière asynchrone. Une fois que vous avez cliqué sur **[!UICONTROL Publier]**, la publication de votre ressource sur Dynamic Media Classic prend plusieurs secondes.
+>Experience Manager publie sur Dynamic Media Classic de manière asynchrone. Une fois que vous avez sélectionné **[!UICONTROL Publier]**, la publication de votre ressource vers Dynamic Media Classic prend plusieurs secondes.
 
 
 ## Composants Dynamic Media Classic {#scene-components}
@@ -78,8 +78,6 @@ Une fois qu’elles sont disponibles en mode **[!UICONTROL Conception]** , vous 
 
 À compter du 31 janvier 2017, Adobe Dynamic Media Classic a mis fin à la prise en charge de la plate-forme de la visionneuse de Flashs.
 
-<!-- For more information about this important change, see [Flash Viewer End-of-Life FAQs](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html). -->
-
 ### Ajout d’un composant Dynamic Media Classic (Scene7) à une page {#adding-a-scene-component-to-a-page}
 
 L’ajout d’un composant Dynamic Media Classic (Scene7) à une page est identique à l’ajout d’un composant à n’importe quelle page. Les composants de Dynamic Media Classic sont décrits en détail dans les sections suivantes.
@@ -88,17 +86,17 @@ L’ajout d’un composant Dynamic Media Classic (Scene7) à une page est identi
 
 1. Dans Experience Manager, ouvrez la page dans laquelle vous souhaitez ajouter le composant **[!UICONTROL Dynamic Media Classic (Scene7)]** .
 
-1. Si aucun composant Dynamic Media Classic n’est disponible, cliquez sur le mode **[!UICONTROL Conception]**, appuyez sur n’importe quel composant avec une bordure bleue, appuyez sur l’icône **[!UICONTROL Parent]**, puis sur l’icône **[!UICONTROL Configuration]** . Dans **[!UICONTROL Parsys (Design)]**, sélectionnez tous les composants Dynamic Media Classic pour les rendre disponibles, puis cliquez sur **[!UICONTROL OK]**.
+1. Si aucun composant Dynamic Media Classic n’est disponible, sélectionnez le mode **[!UICONTROL Conception]** , sélectionnez un composant avec une bordure bleue, sélectionnez l’icône **[!UICONTROL Parent]**, puis l’icône **[!UICONTROL Configuration]** . Dans **[!UICONTROL Parsys (Design)]**, sélectionnez tous les composants Dynamic Media Classic pour les rendre disponibles et sélectionnez **[!UICONTROL OK]**.
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
-1. Cliquez sur **[!UICONTROL Modifier]** pour revenir au mode **[!UICONTROL Édition]**.
+1. Sélectionnez **[!UICONTROL Modifier]** pour revenir au mode **[!UICONTROL Modifier]**.
 
 1. Faites glisser un composant du groupe Dynamic Media Classic du sidekick vers la page à l’emplacement souhaité.
 
-1. Cliquez sur l’icône **[!UICONTROL Configuration]** pour ouvrir le composant.
+1. Sélectionnez l’icône **[!UICONTROL Configuration]** pour pouvoir ouvrir le composant.
 
-1. Modifiez le composant comme requis et cliquez sur **[!UICONTROL OK]** pour enregistrer les modifications.
+1. Modifiez le composant selon vos besoins et sélectionnez **[!UICONTROL OK]** pour enregistrer les modifications.
 1. Faites glisser l’image ou la vidéo de l’explorateur de contenu vers le composant Dynamic Media Classic que vous avez ajouté à la page.
 
    >[!NOTE]
@@ -120,7 +118,7 @@ Voir aussi [Conception réactive pour les pages Web](/help/sites-developing/resp
    >Si les composants Dynamic Media Classic ne sont pas disponibles, veillez à les [activer au moyen du mode Conception](/help/sites-authoring/default-components-designmode.md).
 
 1. Sur un site web dont les composants **[!UICONTROL Dynamic Media Classic]** sont activés, faites glisser un composant **[!UICONTROL Image]** vers la page.
-1. Sélectionnez le composant et appuyez sur l’icône de configuration.
+1. Sélectionnez le composant et cliquez sur l’icône de configuration.
 1. Dans l’onglet **[!UICONTROL Paramètres Dynamic Media Classic]** , ajustez les points d’arrêt.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -143,13 +141,13 @@ Vous définissez ces options de configuration en ouvrant (en double-cliquant) un
 
 Le composant Zoom HTML5 affiche une image plus grande lorsque vous appuyez sur le bouton **[!UICONTROL +]**.
 
-L’élément comporte des outils de zoom dans sa partie inférieure. Appuyez sur **[!UICONTROL +]** si vous souhaitez agrandir ; appuyez sur **[!UICONTROL -]** si vous souhaitez réduire. Appuyez sur la **[!UICONTROL x]** ou la flèche de réinitialisation du zoom pour ramener l’image à la taille d’origine dans laquelle elle a été importée. Appuyez sur les flèches diagonales pour afficher le mode Plein écran. Appuyez sur **[!UICONTROL Modifier]** pour configurer le composant. Avec ce composant, vous pouvez configurer les [paramètres communs à tous les [!UICONTROL composants Dynamic Media Classic]](#settings-common-to-all-scene-components).
+L’élément comporte des outils de zoom dans sa partie inférieure. Sélectionnez **[!UICONTROL +]** si vous souhaitez agrandir l’image. sélectionnez **[!UICONTROL -]** si vous souhaitez réduire. Appuyez sur la **[!UICONTROL x]** ou la flèche de réinitialisation du zoom pour ramener l’image à la taille d’origine dans laquelle elle a été importée. Sélectionnez les flèches diagonales pour qu’elles s’affichent en plein écran. Sélectionnez **[!UICONTROL Modifier]** afin de pouvoir configurer le composant. Avec ce composant, vous pouvez configurer les [paramètres communs à tous les [!UICONTROL composants Dynamic Media Classic]](#settings-common-to-all-scene-components).
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
 ### Fenêtre déroulante {#flyout}
 
-Dans le composant HTML5 **[!UICONTROL Fenêtre déroulante]** , la ressource s’affiche sous la forme d’écran partagé ; laissait la ressource à la taille spécifiée ; la partie zoom s’affiche à droite. Appuyez sur **[!UICONTROL Modifier]** pour configurer le composant. Avec ce composant, vous pouvez configurer les [paramètres communs à tous les composants Dynamic Media Classic](#settings-common-to-all-scene-components).
+Dans le composant HTML5 **[!UICONTROL Fenêtre déroulante]** , la ressource s’affiche sous la forme d’écran partagé ; laissait la ressource à la taille spécifiée ; la partie zoom s’affiche à droite. Sélectionnez **[!UICONTROL Modifier]** afin de pouvoir configurer le composant. Avec ce composant, vous pouvez configurer les [paramètres communs à tous les composants Dynamic Media Classic](#settings-common-to-all-scene-components).
 
 >[!NOTE]
 >
@@ -189,7 +187,7 @@ Le composant Dynamic Media Classic **[!UICONTROL Image]** vous permet d’ajoute
 
 [Les ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) modèles d’image Dynamic Media Classic sont du contenu Photoshop superposé qui a été importé dans Dynamic Media Classic, où le contenu et les propriétés ont été paramétrés pour la variabilité. Le composant **[!UICONTROL Modèle d’image]** permet d’importer des images et de modifier dynamiquement le texte en Experience Manager. En outre, vous pouvez configurer le composant **[!UICONTROL Modèle d’image]** afin d’utiliser des valeurs provenant de ClientContext de sorte que chaque utilisateur voit l’image d’une manière personnalisée.
 
-Appuyez sur **[!UICONTROL Modifier]** si vous souhaitez configurer le composant. Vous pouvez configurer les [paramètres communs à tous les composants Dynamic Media Classic](#settings-common-to-all-scene-components) et d’autres paramètres décrits dans cette section.
+Sélectionnez **[!UICONTROL Modifier]** si vous souhaitez configurer le composant. Vous pouvez configurer les [paramètres communs à tous les composants Dynamic Media Classic](#settings-common-to-all-scene-components) et d’autres paramètres décrits dans cette section.
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -209,9 +207,9 @@ Appuyez sur **[!UICONTROL Modifier]** si vous souhaitez configurer le composant.
 
 ![chlimage_1-233](assets/chlimage_1-233.png)
 
-#### Modification dynamique du texte {#changing-text-dynamically}
+#### Modifier le texte de manière dynamique {#changing-text-dynamically}
 
-Pour une modification dynamique du texte, saisissez le nouveau texte dans les champs, puis cliquez sur **[!UICONTROL OK]**. Dans cet exemple, le **[!UICONTROL Prix]** est désormais de 50 $ et l’expédition de 99 cents.
+Pour modifier le texte de manière dynamique, saisissez le nouveau texte dans les champs et sélectionnez **[!UICONTROL OK]**. Dans cet exemple, le **[!UICONTROL Prix]** est désormais de 50 $ et l’expédition de 99 cents.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -219,9 +217,9 @@ Le texte de l’image change. Vous pouvez rétablir la valeur d’origine du tex
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-#### Modification du texte afin de refléter une valeur ClientContext {#changing-text-to-reflect-the-value-of-a-client-context-value}
+#### Modifier le texte pour refléter la valeur d’une valeur ClientContext {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Pour lier un champ à une valeur de contexte client, appuyez sur **[!UICONTROL Sélectionner]** pour ouvrir le menu contextuel client, sélectionnez le contexte client, puis appuyez sur **[!UICONTROL OK]**. Dans cet exemple, le nom change selon la liaison entre le Nom et le nom formaté du profil.
+Pour associer un champ à une valeur de contexte client, sélectionnez **[!UICONTROL Sélectionner]** pour ouvrir le menu client-contexte, sélectionnez le contexte client, puis **[!UICONTROL OK]**. Dans cet exemple, le nom change selon la liaison entre le Nom et le nom formaté du profil.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -229,14 +227,14 @@ Le texte reflète le nom de l’utilisateur actuellement connecté. Vous pouvez 
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Création d’un lien avec le modèle d’image Dynamic Media Classic {#making-the-scene-image-template-a-link}
+#### Faire du modèle d’image Dynamic Media Classic un lien {#making-the-scene-image-template-a-link}
 
-1. Sur la page avec le composant Dynamic Media Classic **[!UICONTROL Modèle d’image]**, appuyez sur **[!UICONTROL Modifier]**.
+1. Sur la page avec le composant Dynamic Media Classic **[!UICONTROL Modèle d’image]**, sélectionnez **[!UICONTROL Modifier]**.
 1. Dans le champ **[!UICONTROL URL]** , saisissez l’URL à laquelle les utilisateurs accèdent lorsqu’ils cliquent sur l’image. Dans le champ **[!UICONTROL Ouvrir dans]**, choisissez où vous souhaitez que la cible s’ouvre (une nouvelle fenêtre ou la même fenêtre).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Appuyez sur **[!UICONTROL OK]**.
+1. **[!UICONTROL Cliquez sur OK]**.
 
 ### Composant vidéo {#video-component}
 
@@ -248,7 +246,7 @@ Voir [Vidéo](s7-video.md) pour plus d’informations sur le fonctionnement des 
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-### Limitations connues du composant vidéo {#known-limitations-for-the-video-component}
+### Limites connues du composant vidéo {#known-limitations-for-the-video-component}
 
 Adobe DAM et WCM indiquent si une vidéo source Principale est téléchargée. Elles n’affichent pas les éléments proxy suivants :
 
@@ -277,7 +275,7 @@ Si vous disposez de plusieurs configurations, Experience Manager affiche par dé
    >   * Vidéo F4V simple
 
 
-### Navigation dans le contenu de l’interface utilisateur optimisée pour les écrans tactiles {#browsing-content-in-the-touch-optimized-ui}
+### Parcourir le contenu dans l’IU optimisée pour les écrans tactiles {#browsing-content-in-the-touch-optimized-ui}
 
 Vous pouvez accéder au navigateur de contenu depuis l’interface utilisateur optimisée pour les écrans tactiles ou l’interface utilisateur classique. A l’heure actuelle, l’interface utilisateur optimisée pour les écrans comporte la limitation suivante :
 
@@ -303,7 +301,7 @@ En outre, vous pouvez parcourir les informations de résolution, de taille, de n
 * Pour les ensembles de vidéos adaptables et les modèles, aucune information sur la taille n’est générée pour les miniatures.
 * Pour les ensembles de vidéos adaptables, aucune résolution n’est générée pour les miniatures.
 
-### Recherche de ressources Dynamic Media Classic à l’aide de l’explorateur de contenu {#searching-for-scene-assets-with-the-content-browser}
+### Recherche de ressources Dynamic Media Classic avec l’explorateur de contenu {#searching-for-scene-assets-with-the-content-browser}
 
 La recherche de ressources dans Dynamic Media Classic est similaire à la recherche de ressources dans Experience Manager Assets. Cependant, lorsque vous effectuez une recherche, une vue distante des ressources s’affiche dans le système Dynamic Media Classic, plutôt que de les importer directement dans Experience Manager.
 
@@ -311,7 +309,7 @@ Vous pouvez utiliser l’interface utilisateur classique ou l’interface utilis
 
 Lors d’une recherche dans l’une ou l’autre des interfaces, vous pouvez filtrer selon les critères suivants (présentés ici dans l’interface utilisateur optimisée pour les écrans tactiles) :
 
-**[!UICONTROL Entrer des mots-clés]**  : vous pouvez rechercher des ressources par nom. Lors de la recherche, les mots-clés que vous saisissez correspondent au nom du fichier. Par exemple, la saisie du mot « swimming » recherche tous les noms de fichier qui commencent par ces lettres, dans cet ordre. Veillez à appuyer sur Entrée une fois que vous avez tapé le terme pour rechercher la ressource.
+**[!UICONTROL Entrer des mots-clés]**  : vous pouvez rechercher des ressources par nom. Lors de la recherche, les mots-clés que vous saisissez correspondent au nom du fichier. Par exemple, la saisie du mot « swimming » recherche tous les noms de fichier qui commencent par ces lettres, dans cet ordre. Veillez à appuyer sur la touche Entrée après avoir tapé le terme pour rechercher la ressource.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
