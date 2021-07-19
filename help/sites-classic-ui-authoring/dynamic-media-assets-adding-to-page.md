@@ -1,19 +1,19 @@
 ---
-title: Ajout de ressources Dynamic Media aux pages
+title: Ajout de ressources Dynamic Media aux pages
 description: Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites web, vous pouvez ajouter le composant Dynamic Media ou Interactive Media directement sur la page.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
-# Ajout de ressources Dynamic Media aux pages{#adding-dynamic-media-assets-to-pages}
+# Ajout de ressources Dynamic Media aux pages{#adding-dynamic-media-assets-to-pages}
 
 Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites web, vous pouvez ajouter le composant **[!UICONTROL Dynamic Media]** ou **[!UICONTROL Interactive Media]** directement sur la page. Passez en mode **[!UICONTROL Conception]** et activez les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et médias interactifs sont intelligents : ils savent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
 
@@ -23,14 +23,16 @@ Vous ajoutez directement des ressources Dynamic Media à la page si vous utilise
 >
 >Les zones cliquables sont disponibles et prêtes à l’emploi pour les bannières de carrousel.
 
-## Ajout d’un composant Dynamic Media à une page {#adding-a-dynamic-media-component-to-a-page}
+## Ajout d’un composant Dynamic Media à une page {#adding-a-dynamic-media-component-to-a-page}
 
 L’ajout du composant [!UICONTROL Dynamic Media] ou [!UICONTROL Interactive Media] à une page est identique à l’ajout d’un composant à n’importe quelle page. Les composants [!UICONTROL Dynamic Media] et [!UICONTROL Interactive Media] sont décrits en détail dans les sections suivantes.
 
 Pour ajouter un composant/une visionneuse Dynamic Media à une page, procédez comme suit :
 
 1. Dans Experience Manager, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
-1. Si aucun composant Dynamic Media n’est disponible, cliquez sur la règle dans le [!UICONTROL Sidekick] pour passer en mode **[!UICONTROL Conception]**, cliquez sur le parsys **[!UICONTROL Modifier]** et sélectionnez **[!UICONTROL Dynamic Media]** pour rendre les composants Dynamic Media disponibles.
+1. Si aucun composant Dynamic Media n’est disponible, sélectionnez la règle dans le [!UICONTROL Sidekick] pour passer en mode **[!UICONTROL Conception]**.
+1. Sélectionnez **[!UICONTROL Modifier]** parsys.
+1. Sélectionnez **[!UICONTROL Dynamic Media]** afin de rendre les composants Dynamic Media disponibles.
 
    >[!NOTE]
    >
@@ -38,8 +40,9 @@ Pour ajouter un composant/une visionneuse Dynamic Media à une page, procédez c
 
 1. Revenez au mode **[!UICONTROL Modifier]** en cliquant sur l’icône en forme de crayon dans le [!UICONTROL Sidekick].
 1. Faites glisser le composant **[!UICONTROL Dynamic Media]** ou **[!UICONTROL Interactive Media]** du groupe **[!UICONTROL Other]** du sidekick vers la page à l’emplacement souhaité.
-1. Cliquez sur **[!UICONTROL Modifier]** pour que le composant s’ouvre.
-1. [](#dynamic-media-component)Modifiez le composant comme requis et cliquez sur **[!UICONTROL OK]** pour enregistrer les modifications.
+1. Sélectionnez **[!UICONTROL Modifier]** pour que le composant s’ouvre.
+1. [Modifiez le ](#dynamic-media-component) composant selon vos besoins.
+1. Sélectionnez **[!UICONTROL OK]** pour enregistrer vos modifications.
 
 ## Composants Dynamic Media {#dynamic-media-components}
 
@@ -100,9 +103,9 @@ Cette option n’est pas disponible si vous affichez des visionneuses d’images
 
 Vous pouvez modifier les [!UICONTROL Paramètres avancés] suivants en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-**[!UICONTROL Titre]**  : modifiez le titre de l’image.
+**[!UICONTROL Titre]** : modifiez le titre de l’image.
 
-**[!UICONTROL Texte de remplacement]**  : ajoutez un titre à l’image pour les utilisateurs pour lesquels les graphiques sont désactivés.
+**[!UICONTROL Texte secondaire]** : ajoutez un titre à l’image pour les utilisateurs pour lesquels les graphiques sont désactivés.
 
 Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
 
@@ -112,7 +115,7 @@ Cette option n’est pas disponible si vous affichez des visionneuses d’images
 
 **[!UICONTROL Largeur et hauteur]**  : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeurs, la ressource devient adaptative.
 
-#### Lorsque vous utilisez la vidéo {#when-working-with-video}
+#### Lorsque vous utilisez une vidéo {#when-working-with-video}
 
 Utilisez le composant **[!UICONTROL Dynamic Media]** pour ajouter une vidéo dynamique à vos pages web. Lorsque vous modifiez le composant, vous pouvez choisir d’utiliser un paramètre prédéfini de la visionneuse de vidéos pour lire la vidéo sur la page.
 
@@ -128,11 +131,11 @@ Vous pouvez modifier les [!UICONTROL paramètres Dynamic Media] suivants en cliq
 
 Vous pouvez modifier les paramètres [!UICONTROL avancés] suivants en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-**[!UICONTROL Titre]**  : modifiez le titre de la vidéo.
+**[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
 **[!UICONTROL Largeur et hauteur]**  : si vous souhaitez que la taille de la vidéo soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeurs, la vidéo devient adaptative.
 
-#### Mode de diffusion d’une vidéo sécurisée {#how-to-delivery-secure-video}
+#### Diffuser une vidéo sécurisée {#how-to-delivery-secure-video}
 
 Dans Experience Manager 6.2, lorsque vous installez [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), vous pouvez contrôler si une vidéo est diffusée via une connexion SSL sécurisée (HTTPS) ou une connexion non sécurisée (HTTP). Par défaut, le protocole de diffusion vidéo est automatiquement hérité du protocole de la page web d’incorporation. Si la page web est chargée via HTTPS, la vidéo est également diffusée via HTTPS. Et inversement, si la page web est sur HTTP, la vidéo est diffusée sur HTTP. En règle générale, ce comportement par défaut est correct et il n’est pas nécessaire d’apporter des modifications à la configuration. Vous pouvez toutefois remplacer ce comportement par défaut. Ajoutez `VideoPlayer.ssl=on` à la fin d’un chemin d’URL ou à la liste d’autres paramètres de configuration de la visionneuse dans un fragment de code intégré. L’une ou l’autre des actions force la sécurisation de la diffusion vidéo.
 
@@ -148,16 +151,16 @@ Le composant [!UICONTROL Interactive Media] est dynamique. Selon que vous ajoute
 
 Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-**[!UICONTROL Paramètre prédéfini de la visionneuse]**  : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
+**[!UICONTROL Paramètre prédéfini de la visionneuse]**  : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir [Gestion des paramètres prédéfinis de la visionneuse](/help/assets/managing-viewer-presets.md).
 
-**[!UICONTROL Titre]**  : modifiez le titre de la vidéo.
+**[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
 **[!UICONTROL Largeur et hauteur]**  : si vous souhaitez que la taille de la vidéo soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeurs, la vidéo devient adaptative.
 
 Vous pouvez modifier les paramètres **[!UICONTROL Ajouter au panier]** ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
-**[!UICONTROL Afficher la ressource de produit]**  : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Désactivez la case pour ne pas afficher la ressource de produit.
+**[!UICONTROL Afficher les ressources de produit]** : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Désactivez la case pour ne pas afficher la ressource de produit.
 
-**[!UICONTROL Afficher le prix des produits]**  : par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’élément tel qu’il est défini dans le module Commerce. Désactivez la case pour ne pas afficher le prix du produit.
+**[!UICONTROL Afficher le prix des produits]** : par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’élément tel qu’il est défini dans le module Commerce. Désactivez la case pour ne pas afficher le prix du produit.
 
-**[!UICONTROL Afficher le formulaire de produit]**  : par défaut, cette valeur n’est pas sélectionnée. Le formulaire de produit contient toutes les variantes de produit, telles que la taille et la couleur. Désactivez la case pour ne pas afficher les variantes de produit.
+**[!UICONTROL Afficher le formulaire de produit]** : par défaut, cette valeur n’est pas sélectionnée. Le formulaire de produit contient toutes les variantes de produit, telles que la taille et la couleur. Désactivez la case pour ne pas afficher les variantes de produit.
