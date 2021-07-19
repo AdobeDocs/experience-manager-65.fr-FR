@@ -12,10 +12,10 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Visionneuses
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 67%
+ht-degree: 66%
 
 ---
 
@@ -262,7 +262,8 @@ ExempleSupposons que vous utilisiez l’exemple de code intégré suivant sur vo
 
    `*viewerInstance.*init()`
 
-   **Exemple** Cet exemple utilise la visionneuse d’images interactives.
+   ****
+ExempleCet exemple utilise la visionneuse d’images interactives.
 
    `s7interactiveimageviewer.init()`
 
