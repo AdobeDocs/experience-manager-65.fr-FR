@@ -1,6 +1,6 @@
 ---
-title: Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web
-description: Découvrez comment intégrer des images ou des vidéos Dynamic Media dans une page web
+title: Incorporation de la visionneuse de vidéos, d’images ou de dimensions Dynamic Media dans une page web
+description: Découvrez comment incorporer des vidéos, des images ou des images 3D Dynamic Media dans une page web
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,14 +10,14 @@ discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Visionneuses
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 100%
+source-wordcount: '381'
+ht-degree: 64%
 
 ---
 
-# Intégration de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse dimensionnelle dans une page web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incorporation de la visionneuse de vidéos, d’images ou de dimensions Dynamic Media dans une page web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
 
@@ -25,7 +25,7 @@ Vous devez incorporer les URL uniquement si vous *n’utilisez pas* Adobe Exper
 
 Voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
-Consultez aussi [Diffusion d’images optimisées pour un site réactif](responsive-site.md).
+Voir [Diffuser des images optimisées pour un site réactif](responsive-site.md).
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ Consultez aussi [Diffusion d’images optimisées pour un site réactif](respons
 >
 >Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
 >
->Voir [Publication de paramètres de visionneuse prédéfinis](managing-viewer-presets.md#publishing-viewer-presets).
+>Voir [Publier les paramètres prédéfinis de la visionneuse](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Voir [Publication de paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
+>Voir [Publication des paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
 
-**Intégration de la visionneuse de vidéos ou d’images Dynamic Media dans une page web:**
+**Pour incorporer la visionneuse de vidéos, d’images ou de dimensions Dynamic Media dans une page web :**
 
 1. Accédez à la ressource vidéo ou d’image *publiée* dont vous souhaitez copier le code incorporé.
 
@@ -45,14 +45,14 @@ Consultez aussi [Diffusion d’images optimisées pour un site réactif](respons
 
    Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
 
-   Voir [Publication de paramètres de visionneuse prédéfinis](managing-viewer-presets.md#publishing-viewer-presets).
+   Voir [Publier les paramètres prédéfinis de la visionneuse](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Voir [Publication de paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
+   Voir [Publication des paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
 
-1. Dans le rail de gauche, sélectionnez le menu déroulant et cliquez ou appuyez ensuite sur **[!UICONTROL Visionneuses]**.
-1. Dans le rail de gauche, appuyez sur un nom de paramètre prédéfini de la visionneuse. Le paramètre de visionneuse prédéfini est appliqué à la ressource.
-1. Appuyez sur **[!UICONTROL Incorporer]**.
-1. Dans la boîte de dialogue **[!UICONTROL Code intégré]**, copiez l’ensemble du code dans le Presse-papiers, puis appuyez sur **[!UICONTROL Fermer]**.
+1. Dans le rail de gauche, sélectionnez le menu déroulant et sélectionnez **[!UICONTROL Visionneuses]**.
+1. Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de visionneuse. Le paramètre de visionneuse prédéfini est appliqué à la ressource.
+1. Sélectionnez **[!UICONTROL Incorporer]**.
+1. Dans la boîte de dialogue **[!UICONTROL Code incorporé]**, copiez le code entier dans le Presse-papiers, puis sélectionnez **[!UICONTROL Fermer]**.
 1. Collez le code intégré dans vos pages web.
 
 ## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media   {#using-http-to-deliver-your-dynamic-media-assets}
