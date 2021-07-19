@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '2854'
+source-wordcount: '2847'
 ht-degree: 82%
 
 ---
@@ -167,9 +167,9 @@ L’exemple ci-dessous présente le composant Lien (Campaign) affiché.
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-### Modèle d’image Scene7 (Campaign) {#scene-image-template-campaign}
+### Modèle d’image Dynamic Media Classic (Scene7) (Campaign) {#scene-image-template-campaign}
 
-[Les ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) modèles d’image Scene7 sont des fichiers d’image superposés, où le contenu et les propriétés peuvent être paramétrés pour la variabilité. Le composant **Modèle d’image** permet d’utiliser des modèles Scene7 dans des newsletters et de modifier les valeurs des paramètres de modèle. En outre, vous pouvez utiliser des variables de métadonnées Adobe Campaign dans les paramètres, de sorte que chaque utilisateur expérimente l’image d’une manière personnalisée.
+Les modèles d’image Dynamic Media Classic (Scene7) sont des fichiers d’image superposés, où le contenu et les propriétés peuvent être paramétrés pour la variabilité. Le composant **[!UICONTROL Modèle d’image]** permet d’utiliser des modèles Scene7 dans des newsletters et de modifier les valeurs des paramètres de modèle. En outre, vous pouvez utiliser des variables de métadonnées Adobe Campaign dans les paramètres, de sorte que chaque utilisateur expérimente l’image d’une manière personnalisée.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -290,7 +290,7 @@ Les composants apparaissent comme suit :
 
 Cette section décrit en détail chaque composant.
 
-### Composants et type de données  {#components-and-data-type}
+### Composants et type de données {#components-and-data-type}
 
 Le tableau ci-dessous décrit les composants disponibles pour afficher et modifier des données de profil Adobe Campaign. Chaque composant peut être associé à un champ de profil Adobe Campaign pour afficher sa valeur et mettre à jour le champ lorsque le formulaire est envoyé. Les différents composants ne peuvent être associés qu’aux champs d’un type de données approprié.
 
@@ -324,18 +324,18 @@ Le tableau ci-dessous décrit les composants disponibles pour afficher et modifi
   <tr>
    <td><p>Champ de texte (Campaign)</p> </td>
    <td><p>chaîne</p> </td>
-   <td><p>Courrier électronique</p> </td>
+   <td><p>E-mail</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Paramètres communs à la plupart des composants  {#settings-common-to-most-components}
+### Paramètres communs à la plupart des composants {#settings-common-to-most-components}
 
 Les composants Adobe Campaign possèdent des paramètres communs à tous les composants (à l’exception des composants Clé primaire chiffrée et Clé de rapprochement masquée).
 
 Dans la plupart des composants, vous pouvez configurer les éléments suivants :
 
-#### Titre et texte  {#title-and-text}
+#### Titre et texte {#title-and-text}
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -348,7 +348,7 @@ Si vous souhaitez utiliser un autre nom que le nom de l’élément, saisissez-l
 
 * **N’afficher que la valeur** Affiche uniquement la valeur, le cas échéant.
 
-#### Adobe Campaign {#adobe-campaign}
+#### Adobe Campaign {#adobe-campaign}
 
 Vous pouvez configurer les éléments suivants :
 
