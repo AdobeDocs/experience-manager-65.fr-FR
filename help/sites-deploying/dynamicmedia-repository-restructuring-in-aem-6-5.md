@@ -1,8 +1,6 @@
 ---
-title: Restructuration du référentiel Dynamic Media dans AEM 6.5
-seo-title: Restructuration du référentiel Dynamic Media dans AEM 6.5
-description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.5 pour Dynamic Media.
-seo-description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.5 pour Dynamic Media.
+title: Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5
+description: Découvrez comment apporter les modifications nécessaires afin de migrer vers la nouvelle structure de référentiel dans Experience Manager 6.5 pour Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,16 +8,16 @@ topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Mise à niveau
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 62%
+source-wordcount: '414'
+ht-degree: 33%
 
 ---
 
-# Restructuration du référentiel Dynamic Media dans AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
+# Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution Dynamic Media. Certaines modifications nécessitent des efforts lors du processus de mise à niveau d’AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme décrit sur la page parent [Restructuration des référentiels dans Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers Experience Manager 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur Dynamic Media. Certaines modifications nécessitent des efforts lors de la mise à niveau vers Experience Manager 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
 
 **Avant la mise à niveau ultérieure**
 
@@ -29,9 +27,9 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
 * [Dynamic Media - Configuration du service cloud YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Divers](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
-## Avant la mise à niveau future {#prior-to-upgrade}
+## Avant la mise à niveau ultérieure {#prior-to-upgrade}
 
-### Configurations personnalisées de codage de vidéo adaptative {#custom-adaptive-video-encoding-configurations}
+### Configurations personnalisées du codage de vidéo adaptative  {#custom-adaptive-video-encoding-configurations}
 
 <table>
  <tbody>
@@ -45,7 +43,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Vous pouvez exécuter le script de migration suivant pour migrer vers le nouvel emplacement :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur d’AEM. Les modifications seront enregistrées au nouvel emplacement.</p> </td>
+   <td><p>Vous pouvez exécuter le script de migration suivant pour migrer vers le nouvel emplacement :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur de Experience Manager, et les modifications sont enregistrées au nouvel emplacement.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -118,7 +116,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle interface utilisateur tactile (à partir de <code>/conf</code>), y compris en copiant tous les canaux de l’ancien emplacement <br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une nouvelle configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées à nouveau si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
+   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle interface utilisateur tactile (à partir de <code>/conf</code>), y compris en copiant tous les canaux de l’ancien emplacement <br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une configuration de YouTube TouchUI, plusieurs URL YouTube sont répertoriées sous Propriétés, car les canaux recréés sont republiés, le cas échéant. Cette fonctionnalité signifie que vous disposez d’URL inutiles répertoriées sous Propriétés.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -141,7 +139,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Le client peut exécuter le script de migration ci-dessous.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur d’AEM. Les modifications seront enregistrées au nouvel emplacement.</p> </td>
+   <td><p>Le client peut exécuter le script de migration ci-dessous.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur de Experience Manager, et les modifications sont enregistrées au nouvel emplacement.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
