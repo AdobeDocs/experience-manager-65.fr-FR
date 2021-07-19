@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration, Gestion des ressources
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 89%
+source-wordcount: '422'
+ht-degree: 80%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
-Dynamic Media permet un affichage interactif, notamment le zoom, la rotation à 360° et la vidéo. Dynamic Media incorpore de manière unique les workflows de la gestion des ressources numériques d’Adobe Experience Manager pour simplifier et rationaliser le processus de gestion des campagnes numériques.
+Dynamic Media offre des expériences de visualisation interactives, notamment des fonctions vidéo, de zoom et de rotation à 360°. Cette fonctionnalité intègre de manière unique les processus de la solution de gestion des ressources numériques Adobe Experience Manager (Assets), afin de simplifier et rationaliser le processus de gestion des campagnes numériques.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
@@ -29,7 +29,7 @@ Dynamic Media permet un affichage interactif, notamment le zoom, la rotation à
 
 ## Tâches que vous pouvez effectuer avec Dynamic Media   {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la rubrique [Utilisation de ressources numériques](manage-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
+Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation des ressources en général est traitée en détail dans la section [Utilisation des ressources numériques](manage-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
 
 Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes :
 
@@ -42,11 +42,11 @@ Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes�
 
 * [Visionneuses à 360°](spin-sets.md)
 * [Vidéo](video.md)
-* [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
+* [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
 * [Gestion des ressources](managing-assets.md)
-* [Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées](custom-pop-ups.md)
+* [Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide](custom-pop-ups.md)
 
-Voir également [Configuration de Dynamic Media](administering-dynamic-media.md).
+Voir aussi [Configuration de Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Les caractéristiques suivantes permettent de déterminer si Dynamic Media est 
 * Des visionneuses d’images, à 360° et de supports variés sont disponibles.
 * Des rendus PTIFF sont créés.
 
-Lorsque vous cliquez sur une ressource image, l’affichage de la ressource est différent avec Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilise les visionneuses HTML5 à la demande.
+Lorsque vous sélectionnez une ressource image, l’affichage de la ressource est différent avec Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilise les visionneuses HTML5 à la demande.
 
 ### Rendus dynamiques {#dynamic-renditions}
 
@@ -76,7 +76,7 @@ Des visionneuses d’images, à 360° et de supports variés sont disponibles lo
 
 ### Rendus PTIFF {#ptiff-renditions}
 
-Les ressources prises en charge par Dynamic Media comprennent `pyramid.tiffs`.
+Les ressources activées pour Dynamic Media comprennent `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
