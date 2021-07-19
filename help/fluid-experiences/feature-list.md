@@ -2,16 +2,16 @@
 title: Liste des fonctionnalités des expériences fluides AEM
 description: Liste des fonctionnalités des expériences fluides
 index: n
-feature: 'Création  '
+feature: 'Création '
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
-# AEM Liste des fonctionnalités des expériences fluides{#aem-fluid-experiences-feature-list}
+# Liste des fonctionnalités des expériences fluides AEM{#aem-fluid-experiences-feature-list}
 
 Les expériences fluides Adobe Experience Manager s’inspirent des puissants ensembles de fonctionnalités d’AEM Sites, d’AEM Dynamic Media et d’AEM Assets pour fournir une solution robuste pour la diffusion de contenu sans interface utilisateur.
 
@@ -39,7 +39,7 @@ Les tableaux suivants définissent les fonctionnalités d’AEM d’expériences
 | [Rechercher](/help/assets/manage-assets.md) |
 | [](/help/assets/manage-assets.md)Collections et Lightbox[](/help/assets/light-box.md) |
 | [Profils](/help/assets/processing-profiles.md) |
-| [Contrôle de version](/help/assets/manage-assets.md) |
+| [Gestion des versions](/help/assets/manage-assets.md) |
 | [Détection des doublons](/help/assets/duplicate-detection.md) |
 | [Balises intelligentes](/help/assets/enhanced-smart-tags.md) |
 
@@ -54,9 +54,9 @@ Les tableaux suivants définissent les fonctionnalités d’AEM d’expériences
 | API HTTP pour le contenu structuré (lecture) |
 | API HTTP pour le contenu structuré (CRUD) |
 | [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) |
-| [Dynamic Media](/help/assets/dynamic-media.md) |
+| [Dynamic Media](/help/assets/dynamic-media.md) |
 
-## Fonctionnalités d’administration et d’intégration {#admin-and-integration-features}
+## Fonctions d’administration et d’intégration {#admin-and-integration-features}
 
 |  |
 |---|
