@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Profils d’image
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 3411c5c4498cc45451a5874fae2bfccfaddae251
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2755'
 ht-degree: 86%
 
 ---
@@ -155,7 +155,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 #### Application de profils d’image Dynamic Media aux dossiers à partir des propriétés {#applying-image-profiles-to-folders-from-properties}
 
-1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Ressources]** , puis au dossier auquel vous souhaitez appliquer un profil d’image.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Ressources]**. Accédez ensuite au dossier parent du dossier auquel vous souhaitez appliquer un profil d’image.
 1. Dans le dossier, appuyez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Appuyez sur l’onglet **[!UICONTROL Profils d’image]**. Dans la liste déroulante **[!UICONTROL Nom du profil]**, sélectionnez le profil, puis appuyez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
