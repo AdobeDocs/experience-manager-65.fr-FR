@@ -1,5 +1,5 @@
 ---
-title: Application de paramètres d’image prédéfinis Dynamic Media
+title: Application de paramètres d’image prédéfinis Dynamic Media
 description: Découvrez comment appliquer des paramètres d’image prédéfinis Dynamic Media
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 feature: Paramètres d’image prédéfinis
-role: User, Admin
+role: User,Admin
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 76%
+source-wordcount: '329'
+ht-degree: 64%
 
 ---
 
-# Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
+# Application de paramètres d’image prédéfinis Dynamic Media {#applying-image-presets}
 
 Les paramètres d’image prédéfinis permettent aux ressources de diffuser dynamiquement des images selon différentes tailles, dans différents formats ou avec d’autres propriétés d’image générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lorsque vous exportez des images. Le paramètre prédéfini reformate les images selon les spécifications définies par votre administrateur.
 
@@ -35,9 +35,9 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 >
 >En mode Dynamic Media - Scene7, les paramètres d’image prédéfinis sont pris en charge uniquement pour les ressources d’image.
 
-**Pour appliquer les paramètres d’image prédéfinis Dynamic Media :**
+**Pour appliquer les paramètres d’image prédéfinis Dynamic Media :**
 
-1. Ouvrez la ressource et, dans le rail de gauche, sélectionnez dans le menu déroulant l’option **[!UICONTROL Rendus]**.
+1. Ouvrez la ressource et, dans le rail de gauche, sélectionnez le menu déroulant, puis **[!UICONTROL Rendus]**.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 1. Procédez de l’une des manières suivantes :
 
    * Sélectionnez un rendu dynamique afin de pouvoir prévisualiser le paramètre d’image prédéfini.
-   * Pour afficher la fenêtre contextuelle, appuyez sur **[!UICONTROL URL]**, **[!UICONTROL Incorporer]** ou **[!UICONTROL RESS]**.
+   * Pour afficher la fenêtre contextuelle, sélectionnez **[!UICONTROL URL]**, **[!UICONTROL Incorporer]** ou **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
