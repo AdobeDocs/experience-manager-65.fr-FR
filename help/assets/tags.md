@@ -1,6 +1,6 @@
 ---
 title: Intégration des visionneuses Dynamic Media avec Adobe Analytics et les balises Experience Platform
-description: L’extension Visionneuses Dynamic Media pour les balises Experience Platform et les visionneuses Dynamic Media 5.13 permet aux clients d’Adobe Analytics et des balises Experience Platform d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration de balises Experience Platform.
+description: Découvrez l’extension Visionneuses Dynamic Media pour les balises Experience Platform et les visionneuses Dynamic Media 5.13. Elle permet aux clients d’Adobe Analytics et de balises Experience Platform d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration de balises Experience Platform.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -10,9 +10,9 @@ docset: aem65
 feature: Visionneuses
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 997eeafa03d3148fb0754eaa27a5a99217e0d1bc
 workflow-type: tm+mt
-source-wordcount: '6630'
+source-wordcount: '6636'
 ht-degree: 51%
 
 ---
@@ -802,7 +802,7 @@ Par exemple, `https://ims-na1.adobelogin.com/`
 
 1. Sur la page **[!UICONTROL Configurations des balises Experience Platform]**, dans le panneau de gauche, sélectionnez un site Experience Manager pour lequel appliquer la configuration des balises Experience Platform.
 
-   À titre d’exemple uniquement, le site `We.Retail` est sélectionné dans la capture d’écran ci-dessous.
+   À titre d’exemple uniquement, le site **`We.Retail`** est sélectionné dans la capture d’écran ci-dessous.
 
    ![26/07/2019_12-20-06](assets/2019-07-26_12-20-06.png)
 
