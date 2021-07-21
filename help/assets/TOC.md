@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: ed213692bc72ab727a5fa105796fb68aef33904e
+source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 59%
+source-wordcount: '584'
+ht-degree: 57%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 59%
    + [Images interactives](interactive-images.md)
    + [Vidéos interactives](interactive-videos.md)
    + [Vidéo 360 VR](/help/assets/360-video.md)
-   + [Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch](/help/assets/launch.md)
+   + [Intégration des visionneuses Dynamic Media aux balises Adobe Analytics et Adobe Experience Platform](/help/assets/tags.md)
    + [Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées](custom-pop-ups.md)
    + [Diffusion d’images optimisées pour un site réactif](responsive-site.md)
    + [Aperçu de ressources Dynamic Media](previewing-assets.md)
