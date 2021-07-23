@@ -6,7 +6,7 @@ contentOwner: AG
 role: User
 feature: Workflow,Rendus
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4851d61d9897ac71c6512829fdccf1895ad58bcd
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 51%
@@ -37,7 +37,7 @@ Les gestionnaires de médias suivants sont disponibles dans [!DNL Assets] et gè
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b>  - Lorsque vous téléchargez un fichier MP3, il est  [traité à l’aide d’une bibliothèque](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html) tierce. La bibliothèque calcule une longueur approximative non précise si le MP3 a un débit variable (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b>  - Lorsque vous téléchargez un fichier MP3, il est  [traité à l’aide d’une bibliothèque](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html) tierce. La bibliothèque calcule une longueur approximative non précise si le MP3 a un débit variable (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -56,7 +56,7 @@ Tous les gestionnaires effectuent les tâches suivantes :
 
 Pour afficher les gestionnaires de médias principaux :
 
-1. Dans votre navigateur, accédez à la page suivante : `http://localhost:4502/system/console/components`.
+1. Dans votre navigateur, accédez à la page suivante : `https://localhost:4502/system/console/components`.
 1. Cliquez sur `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Une liste comportant tous les gestionnaires de médias actifs est affichée. Par exemple :
 
@@ -494,7 +494,7 @@ Installez [!DNL ImageMagick] sur le disque hébergeant le serveur [!DNL Experien
 Pour tester le workflow modifié, ajoutez une ressource à `/content/dam`.
 
 1. Dans le système de fichiers, obtenez une image TIFF de votre choix. Renommez-la `myImage.tiff` et copiez-la dans `/content/dam` en utilisant, par exemple, WebDAV.
-1. Accédez à la console **[!UICONTROL CQ5 DAM]**, par exemple `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Accédez à la console **[!UICONTROL CQ5 DAM]**, par exemple `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Ouvrez la ressource **[!UICONTROL myImage.tiff]** et vérifiez que l’image inversée et les trois miniatures ont bien été créées.
 
 #### Configuration de l’étape de processus CommandLineProcess {#configuring-the-commandlineprocess-process-step}
