@@ -6,7 +6,7 @@ contentOwner: AG
 role: User
 feature: Workflow,Rendus
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 4851d61d9897ac71c6512829fdccf1895ad58bcd
+source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 51%
@@ -451,7 +451,7 @@ Les conversions suivantes peuvent être automatiquement exécutées et stockées
 * Transformation EPS et AI à l’aide d’[ImageMagick](https://www.imagemagick.org/script/index.php) et de [Ghostscript](https://www.ghostscript.com/).
 * Transcodage vidéo FLV à l’aide de [FFmpeg](https://ffmpeg.org/).
 * Encodage MP3 à l’aide de [LAME](https://lame.sourceforge.io/).
-* Traitement audio à l’aide de [SOX](https://sox.sourceforge.net/).
+* Traitement audio à l’aide de [SOX](https://sox.sourceforge.io/).
 
 >[!NOTE]
 >
