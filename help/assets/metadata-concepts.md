@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Métadonnées
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
 workflow-type: tm+mt
-source-wordcount: '2730'
-ht-degree: 86%
+source-wordcount: '2721'
+ht-degree: 85%
 
 ---
 
@@ -121,7 +121,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 * Album – [!DNL Adobe Photoshop Album].
 * CQ – Utilisées par [!DNL Experience Manager Assets].
 * DAM – Utilisées par [!DNL Experience Manager Assets].
-* DEX – [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) est une collection d’outils pour la gestion des métadonnées et des fichiers pour les systèmes d’exploitation Windows.
+* DEX - [!DNL Optima SC Description explorer] est un ensemble d’outils pour la gestion des métadonnées et des fichiers pour les systèmes d’exploitation Windows.
 * CRS – [Adobe Photoshop Camera Raw](https://helpx.adobe.com/fr/camera-raw/using/introduction-camera-raw.html).
 * LR – [!DNL Adobe Lightroom].
 * MediaPro – [iView MediaPro](https://fr.wikipedia.org/wiki/Phase_One_Media_Pro).
