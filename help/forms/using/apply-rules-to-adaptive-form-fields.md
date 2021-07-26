@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel NE PAS PUBLIER : Appliquer des règles aux champs de formulaire adaptatif"'
+title: Application de règles aux champs de formulaires adaptatifs
 seo-title: Application de règles aux champs de formulaires adaptatifs
 description: Créez des règles pour ajouter de l’interactivité, une logique d’entreprise et des validations intelligentes à un formulaire adaptatif.
 seo-description: Créez des règles pour ajouter de l’interactivité, une logique d’entreprise et des validations intelligentes à un formulaire adaptatif.
@@ -8,10 +8,10 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63bc43bba88a42d62fb574bc8ce42470ac61d693
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 69%
+source-wordcount: '1144'
+ht-degree: 70%
 
 ---
 
@@ -100,7 +100,7 @@ Une fois les détails du client extraits de la base de données, vous pouvez met
 1. Appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle. Dans la fenêtre Éditeur de règles, appuyez sur **[!UICONTROL Fermer]**.
 1. Prévisualisez le formulaire adaptatif. Récupérez les détails d’un client, mettez à jour l’adresse de livraison et envoyez le formulaire. Lorsque vous récupérez à nouveau les détails du même client, l’adresse de livraison mise à jour s’affiche.
 
-## Étape 3 : (section bonus) utilisation de l’éditeur de code pour exécuter des validations et afficher les messages d’erreur  {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
+## Étape 3 : (section bonus) utilisation de l’éditeur de code pour exécuter des validations et afficher les messages d’erreur {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 
 Vous devez exécuter la validation sur le formulaire pour vous assurer que les données saisies dans le formulaire sont correctes et qu’un message d’erreur s’affiche en cas de données incorrectes. Par exemple, si un ID client non existant est entré dans le formulaire, un message d’erreur doit s’afficher.
 
