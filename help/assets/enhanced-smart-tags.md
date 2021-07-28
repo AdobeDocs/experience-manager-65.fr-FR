@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Balises intelligentes, Recherche
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
 workflow-type: tm+mt
-source-wordcount: '1600'
-ht-degree: 54%
+source-wordcount: '1632'
+ht-degree: 53%
 
 ---
 
@@ -188,6 +188,7 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 
 ## Conseils et restrictions {#tips-best-practices-limitations}
 
+* Pour entraîner le modèle, utilisez les images les plus appropriées. La formation ne peut pas être annulée ou le modèle de formation ne peut pas être supprimé. La précision de votre balisage dépend de l’entraînement en cours. Faites-le donc avec précaution.
 * L’utilisation des services de contenu dynamique est limitée à 2 millions d’images balisées par an. Toutes les images en double qui sont traitées et balisées sont chacune comptabilisées comme une image balisée.
 * Si vous exécutez le workflow de balisage à partir de la chronologie, vous pouvez appliquer des balises sur un maximum de 15 ressources à la fois.
 * Les balises intelligentes fonctionnent uniquement pour les formats d’image PNG et JPG. Ainsi, les ressources prises en charge pour lesquelles des rendus ont été créés dans ces deux formats sont balisées avec des balises intelligentes.
