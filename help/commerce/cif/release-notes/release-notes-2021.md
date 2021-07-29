@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
+source-git-commit: d1e2a2b11bd4eaece80a2538ddc34ada59e63578
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 23%
+source-wordcount: '867'
+ht-degree: 22%
 
 ---
 
@@ -15,19 +15,36 @@ ht-degree: 23%
 
 Passez en revue la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
 
-**Avec la version d’avril, nous avons remplacé le connecteur CIF de GitHub par le module complémentaire CIF disponible sur la [distribution logicielle d’Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Le passage au module complémentaire présente de nombreux avantages pour les projets :
+**Avec la version d’avril, nous avons remplacé le connecteur CIF de GitHub par le module complémentaire CIF** disponible sur la distribution de logiciels  [Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Le passage au module complémentaire présente de nombreux avantages pour les projets :
 
 * La plupart des nouvelles fonctionnalités seront immédiatement disponibles dans AEM 6.5 (plus d’attente pour le port latéral de la fonctionnalité).
 * Mise à niveau aisée vers de nouvelles versions de module complémentaire
 * Prêt pour Cloud Service
 
-L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être utilisé. Remplacez le connecteur CIF par le nouveau module complémentaire CIF. Un simple remplacement de package doit être possible pour la plupart des projets. **
+L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être utilisé. Remplacez le connecteur CIF par le nouveau module complémentaire CIF. Un simple remplacement de package doit être possible pour la plupart des projets.
 
 | Composant | Configuration requise |
 |:-------|:-----:|
 | Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Date de publication : Juillet 2021
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2021.07.21 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| Composants principaux CIF | 1.13.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0) |
+| Site de référence CIF Venia | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
+
+### Nouveautés {#what-is-new-july}
+
+* Composants principaux CIF v2
+   * Simplification et amélioration des configurations pour l’URL PDP/PLP et l’optimisation du référencement
+   * Indicateur visuel pour les données de produits intermédiaires en mode création pour une meilleure visibilité des modifications à venir
+   * Nouveau composant sitemap pour les pages de contenu et de commerce
+
+* Prise en charge de la [recommandation de produit Adobe Commerce Sensei, optimisée par Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) dans AEM Storefront à l’aide de recommandations prédéfinies ou créées à la volée
 
 ## Date de publication : Juin 2021
 
@@ -79,8 +96,6 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 * Extension AEM pour PWA Studio, avec un exemple d’intégration
 
 * Nouveau composant principal de navigation CIF qui étend le composant principal de navigation WCM
-
-* Indicateur visuel pour les données de catalogue intermédiaires dans AEM Storefront
 
 ### Correctifs {#bug-fixes-april}
 
