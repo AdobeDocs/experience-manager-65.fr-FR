@@ -10,10 +10,11 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-source-git-commit: b132fc30e9ab77da24557c5d644a255173dc23c2
+exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+source-git-commit: 90a19e84e2a8e2ff8c4216a6c0beab0b65b582d4
 workflow-type: tm+mt
 source-wordcount: '2587'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -37,7 +38,7 @@ Un environnement de développement local est nécessaire pour suivre ce tutoriel
 
 Vous avez également besoin d’un IDE GraphQL tel que [GraphiQL](https://github.com/graphql/graphiql) ou d’une extension de navigateur pour exécuter les exemples de code et les tutoriels. Si vous installez une extension de navigateur, assurez-vous que celle-ci permet de définir des en-têtes de requête. Dans Google Chrome, [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) est une extension pouvant réaliser cette tâche.
 
-## Cloner le projet Venia {#clone-venia-project}
+## Clonage du projet Venia {#clone-venia-project}
 
 Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-venia) puis remplacer les styles par défaut.
 
@@ -55,7 +56,7 @@ Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-ven
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance Magento ou ajoutez les configurations au projet nouvellement créé.
@@ -88,7 +89,7 @@ Le composant Teaser de produit va être étendu tout au long de ce tutoriel. Dan
 
    ![Teaser de produit – style par défaut](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Ajout d’un attribut personnalisé dans le Magento {#add-custom-attribute}
+## Ajout d’un attribut personnalisé dans Magento {#add-custom-attribute}
 
 Les produits et les données de produit affichés dans AEM sont stockés dans Magento. Ajoutez ensuite un nouvel attribut pour **Écologique** dans le cadre de l’attribut de produit défini avec l’interface utilisateur de Magento.
 
@@ -274,11 +275,9 @@ Utilisez l’[IDE de votre choix](https://docs.adobe.com/content/help/fr-FR/expe
        productRetriever = productTeaser.getProductRetriever();
    
        if (productRetriever != null) {
-           productRetriever.extendProductQueryWith(p ->
-                productRetriever.extendProductQueryWith(p -> p
-                   .createdAt()
-                   .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
-               );
+           productRetriever.extendProductQueryWith(p -> p
+               .createdAt()
+               .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
            );
        }
    }
@@ -399,7 +398,7 @@ Dans notre cas, nous voulons générer une bannière au-dessus du teaser pour in
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Ouvrez une nouvelle fenêtre de navigateur et accédez à AEM et à la **Console OSGi** > **État** > **Modèles Sling** : [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -433,7 +432,7 @@ Dans notre cas, nous voulons générer une bannière au-dessus du teaser pour in
    >
    > Vous pouvez également voir des arborescences des appels si l’attribut `eco_friendly` ne fait pas partie du jeu d’attributs du produit utilisé dans le teaser.
 
-## Ajouter des styles pour le badge Écologique {#add-styles}
+## Ajout de styles au badge Écologique {#add-styles}
 
 À ce stade, la logique indiquant à quel moment afficher le badge **Écologique** fonctionne, mais le texte brut pourrait profiter de certains styles. Ajoutez ensuite une icône et des styles au module `ui.frontend` pour terminer l’implémentation.
 
@@ -478,7 +477,7 @@ Dans notre cas, nous voulons générer une bannière au-dessus du teaser pour in
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Actualisez la **page d’accueil Venia** à l’adresse [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) où le teaser de produit a été ajouté.
@@ -502,4 +501,4 @@ Examinez les fonctionnalités du badge **New** qui a déjà été mis en oeuvre 
 - [Personnalisation des composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [Personnalisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr)
 - [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-- [Utilisation du sélecteur de catégorie et de produit CIF](use-cif-pickers.md)
+- [Utilisation du sélecteur de produits et de catégories CIF](use-cif-pickers.md)
