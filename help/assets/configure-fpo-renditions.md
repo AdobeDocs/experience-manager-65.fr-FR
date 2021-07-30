@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Rendus
 exl-id: null
-source-git-commit: 865370e38368072c39ad337eb52259c586403efb
+source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 4%
@@ -24,10 +24,10 @@ Experience Manager permet de nombreuses méthodes de traitement des images qui p
 
 Vous pouvez utiliser ImageMagick pour traiter les images, notamment pour générer des rendus FPO. Ces rendus sont sous-échantillonnés, c’est-à-dire que les dimensions en pixels du rendu sont réduites proportionnellement si l’image d’origine a une valeur de ppp supérieure à 72. Voir [installation et configuration d’ImageMagick pour qu’il fonctionne avec Experience Manager Assets](best-practices-for-imagemagick.md).
 
-|  | Utilisation du workflow intégré du Experience Manager | Utilisation du processus ImageMagick | Remarques |
-|— |— |—|— |
-| Pour les nouvelles ressources | Activer le rendu FPO ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Ajoutez la ligne de commande ImageMagick dans le workflow de Experience Manager ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager exécute le workflow Ressources de mise à jour de gestion des actifs numériques pour chaque transfert. |
-| Pour les ressources existantes | Activez le rendu FPO dans un nouveau workflow de Experience Manager dédié ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Ajoutez la ligne de commande ImageMagick dans un nouveau workflow de Experience Manager dédié ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | Les rendus FPO des ressources existantes peuvent être créés à la demande ou en bloc. |
+|  | Utilisation d’un workflow intégré au Experience Manager | Utilisation du workflow ImageMagick | Remarques |
+|--- |--- |---|--- |
+| Pour les nouvelles ressources | Activer le rendu FPO ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Ajout de la ligne de commande ImageMagick dans le workflow Experience Manager ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager exécute le workflow Ressources de mise à jour de gestion des actifs numériques pour chaque transfert. |
+| Pour les ressources existantes | Activez le rendu FPO dans un nouveau workflow de Experience Manager dédié ([help](#generate-renditions-of-existing-assets-using-aem-workflow)). | Ajoutez la ligne de commande ImageMagick dans un nouveau workflow de Experience Manager dédié ([help](#generate-renditions-of-existing-assets-using-imagemagick)). | Les rendus FPO des ressources existantes peuvent être créés à la demande ou en bloc. |
 
 >[!CAUTION]
 >
