@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
 workflow-type: tm+mt
 source-wordcount: '2601'
 ht-degree: 67%
@@ -64,14 +64,18 @@ Les principaux objets de l’API MSM interagissent comme suit (voir aussi [Terme
       * Permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.
       * Définit la configuration de déploiement par défaut pour toutes les Live Copy résultantes.
 
-* **`LiveRelationship`** Le  `LiveRelationship` spécifie la connexion (relation) entre une ressource de la branche Live Copy et sa ressource source/plan directeur équivalente.
+* **`LiveRelationship`**
+
+   `LiveRelationship` spécifie la connexion (relation) entre une ressource dans la branche Live Copy et sa ressource source/plan directeur équivalente.
 
    * Les relations sont utilisées lors de la réalisation de l’héritage et du déploiement.
    * `LiveRelationship` permettent d’accéder (référence) aux configurations de déploiement (  `RolloutConfig`),  `LiveCopy` et aux  `LiveStatus` objets liés à la relation.
 
    * Par exemple, une Live Copy est créée dans `/content/copy/us` à partir de la source/du plan directeur à `/content/we-retail/language-masters`. Les ressources `/content/we.retail/language-masters/en/jcr:content` et `/content/copy/us/en/jcr:content` forment une relation.
 
-* **`LiveCopy`** `LiveCopy` contient les détails de configuration des relations (  `LiveRelationship`) entre les ressources Live Copy et leurs ressources source/de plan directeur.
+* **`LiveCopy`**
+
+   `LiveCopy` contient les détails de configuration des relations (  `LiveRelationship`) entre les ressources Live Copy et leurs ressources source/de plan directeur.
 
    * Utilisez la classe `LiveCopy` pour accéder au chemin de la page, au chemin de la page source/du plan directeur, aux configurations de déploiement et si les pages enfants sont également incluses dans la balise `LiveCopy`.
 
@@ -91,11 +95,13 @@ Les principaux objets de l’API MSM interagissent comme suit (voir aussi [Terme
 
    Crée des objets `LiveAction` selon une configuration `LiveAction`. Les configurations sont stockées en tant que ressources dans le référentiel.
 
-* **`RolloutConfig`** Le  `RolloutConfig` contient une liste de  `LiveActions`, à utiliser lors du déclenchement. `LiveCopy` hérite de la balise `RolloutConfig` et le résultat est présent dans la balise `LiveRelationship`.
+* **`RolloutConfig`**
+
+   `RolloutConfig` contient une liste de `LiveActions`, à utiliser lors du déclenchement. `LiveCopy` hérite de la balise `RolloutConfig` et le résultat est présent dans la balise `LiveRelationship`.
 
    * La première configuration d&#39;une Live Copy utilise également un RolloutConfig (qui déclenche les LiveActions).
 
-## Création d’une action de synchronisation  {#creating-a-new-synchronization-action}
+## Création d’une action de synchronisation {#creating-a-new-synchronization-action}
 
 Créez des actions de synchronisation personnalisées à utiliser avec vos configurations de déploiement. Créez une action de synchronisation lorsque les actions [installées](/help/sites-administering/msm-sync.md#installed-synchronization-actions) ne répondent pas aux exigences spécifiques de votre application. Pour ce faire, créez deux classes :
 
@@ -175,14 +181,14 @@ La nouvelle configuration de déploiement est disponible quand vous définissez 
 >
 >Voir aussi les [bonnes pratiques de personnalisation des déploiements](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-### Créer la configuration du déploiement  {#create-the-rollout-configuration}
+### Créer la configuration du déploiement {#create-the-rollout-configuration}
 
 Pour créer une configuration de déploiement :
 
 1. Ouvrir le CRXDE Lite ; par exemple :
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Accédez à :
+1. Accédez à :
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
@@ -288,7 +294,7 @@ La procédure suivante requiert l’ajout préalable du profil adobe-public à v
 
 1. Lancez Eclipse et [importez le projet Maven](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
-### Ajouter des dépendances au fichier POM  {#add-dependencies-to-the-pom-file}
+### Ajouter des dépendances au fichier POM {#add-dependencies-to-the-pom-file}
 
 Ajoutez des dépendances pour que le compilateur Eclipse puisse référencer les classes utilisées dans le code `LiveActionFactory`.
 
@@ -378,7 +384,7 @@ Ajoutez des dépendances pour que le compilateur Eclipse puisse référencer les
     </dependency>
    ```
 
-### Implémenter LiveActionFactory  {#implement-liveactionfactory}
+### Implémenter LiveActionFactory {#implement-liveactionfactory}
 
 La classe `LiveActionFactory` suivante implémente une `LiveAction` qui enregistre les messages sur les pages source et cible et copie la propriété `cq:lastModifiedBy` du nœud source vers le nœud cible. Le nom de l’action en direct est `exampleLiveAction`.
 
@@ -575,7 +581,7 @@ Configurez la configuration de déploiement que vous avez créée lors de la pro
 
 1. Cliquez sur **Enregistrer tout**.
 
-### Créer la Live Copy  {#create-the-live-copy}
+### Créer la Live Copy {#create-the-live-copy}
 
 [Créez une Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) de la branche English/Products du site de référence We.Retail en utilisant votre configuration de déploiement :
 
