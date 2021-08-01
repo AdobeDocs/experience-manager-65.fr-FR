@@ -8,10 +8,10 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
 workflow-type: tm+mt
-source-wordcount: '3718'
-ht-degree: 72%
+source-wordcount: '3771'
+ht-degree: 71%
 
 ---
 
@@ -168,7 +168,7 @@ ht-degree: 72%
    + [Modèles de formulaires adaptatifs](using/template-editor.md)
    + [Expressions de formulaire adaptatif](using/adaptive-form-expressions.md)
    + [Générer un document d’enregistrement pour les formulaires adaptatifs](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-   + [Amélioration des performances des formulaires volumineux avec le chargement différé](using/lazy-loading-adaptive-forms.md)
+   + [Amélioration des performances des formulaires volumineux avec le chargement différé ](using/lazy-loading-adaptive-forms.md)
    + [Préremplissage des champs de formulaires adaptatifs](using/prepopulate-adaptive-form-fields.md)
    + [Utilisation d’expressions SOM dans des formulaires adaptatifs](using/using-som-expressions-adaptive-forms.md)
    + [Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire](using/form-submission-metadata.md)
@@ -679,3 +679,10 @@ ht-degree: 72%
          + [Gestion par programmation des noeuds de préférences](developing/programmatically-preferences-nodes.md)
          + [Protection des documents avec des stratégies](developing/protecting-documents-policies.md)
          + [Validation d’un document DDX à l’aide de l’API de service Web](developing/validate-ddx-document-using-web.md)
+      + Documentation héritée {#legacy-documentation}
+         + [Utilisation du service de script d’exécution dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
+         + [Compression et décompression de fichiers à l’aide d’un DSC personnalisé d’AEM Forms on JEE](developing/compressing-decompressing-custom-dsc.md)
+         + [Configuration et dépannage d’une grappe de serveurs AEM Forms on JEE](developing/configure-server-cluster.md)
+         + [Génération et utilisation de hachages dans les PDF forms dynamiques](developing/hashing-forms.md)
+         + [Transmission des informations d’identification à l’aide des en-têtes WS-Security](developing/passing-credentials.md)
+
