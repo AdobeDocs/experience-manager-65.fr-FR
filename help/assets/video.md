@@ -12,9 +12,9 @@ docset: aem65
 feature: Gestion des ressources
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: b42a14729a88bda563b0773dac735ad569ad3097
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
-source-wordcount: '11665'
+source-wordcount: '11702'
 ht-degree: 74%
 
 ---
@@ -60,8 +60,10 @@ Problèmes de lecture vidéo actuellement connus dans Dynamic Media *sur Experie
       * [Application d’un profil vidéo à des dossiers](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](/help/assets/organize-assets.md).
       * En savoir plus sur [l’organisation des ressources numériques](/help/assets/organize-assets.md).
-   * Chargez les vidéos issues de sources originales dans les dossiers. Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
+   * Chargez les vidéos issues de sources originales dans les dossiers. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
+      * Dynamic Media prend principalement en charge les vidéos courtes d’une durée maximale de 30 minutes.
+      * Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum.
       * [Chargement des vidéos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/assets-formats.md#supported-multimedia-formats).
    * Contrôle la façon dont l’[encodage vidéo progresse](#monitoring-video-encoding-and-youtube-publishing-progress) du point de vue de la ressource ou du processus.
@@ -303,6 +305,9 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 ### Fichiers vidéo source {#source-video-files}
 
 Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source ayant la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
+
+* Dynamic Media prend principalement en charge les vidéos courtes d’une durée maximale de 30 minutes.
+* Vous pouvez charger des fichiers vidéo source Principaux d’une taille de 15 Go chacun au maximum.
 
 Le tableau ci-dessous décrit la taille recommandée, le format et le débit minimal requis pour vos fichiers vidéo sources au moment de leur codage :
 
