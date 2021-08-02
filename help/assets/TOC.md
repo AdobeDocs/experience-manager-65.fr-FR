@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 57%
+ht-degree: 35%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 57%
    + [Utilisation des métadonnées de ressource](metadata.md)
    + [Ressources multilingues](multilingual-assets.md)
    + [Utilisation de  [!DNL Adobe Stock] ressources dans Assets](aem-assets-adobe-stock.md)
-   + [Prévisualisation de fichiers 3D](previewing-3d-assets.md)
+   + [Prévisualisation de ressources 3D](previewing-3d-assets.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Balises intelligentes améliorées](enhanced-smart-tags.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
@@ -36,28 +36,28 @@ ht-degree: 57%
    + [Réutilisation des ressources à l’aide de MSM](reuse-assets-using-msm.md)
    + [Ressources connectées avec [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
-   + [Newsletter sur Dynamic Media par Experience League](dynamic-media-newsletter.md)
+   + [Archivage de la newsletter Dynamic Media par un Experience League](dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](administering-dynamic-media.md)
    + [Utilisation de Dynamic Media](dynamic-media.md)
-   + [Configuration de Dynamic Media - Mode Scene7](config-dms7.md)
-   + [Configuration de Dynamic Media – mode hybride](config-dynamic.md)
-   + [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
+   + [Configuration de Dynamic Media - mode Scene7](config-dms7.md)
+   + [Configuration de Dynamic Media - mode hybride](config-dynamic.md)
+   + [Dépannage de Dynamic Media - mode Scene7](troubleshoot-dms7.md)
    + [Accessibilité dans Dynamic Media](accessibility-dm.md)
    + [Migration de Dynamic Media - mode hybride vers Dynamic Media - mode S7](migrate-from-hybrid-to-dms7.md)
-   + [Gestion des ressources Dynamic Media](managing-assets.md)
+   + [Gestion des ressources Dynamic Media](managing-assets.md)
    + [Bonnes pratiques relatives à l’optimisation de la qualité des images](best-practices-for-optimizing-the-quality-of-your-images.md)
-   + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](managing-viewer-presets.md)
-   + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](viewer-presets.md)
-   + [Gestion des paramètres prédéfinis d’image Dynamic Media](managing-image-presets.md)
-   + [Application de paramètres d’image prédéfinis Dynamic Media](image-presets.md)
+   + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](managing-viewer-presets.md)
+   + [Application de paramètres prédéfinis de visionneuse Dynamic Media](viewer-presets.md)
+   + [Gestion des paramètres d’image prédéfinis Dynamic Media](managing-image-presets.md)
+   + [Application de paramètres d’image prédéfinis Dynamic Media](image-presets.md)
    + [Profils vidéo Dynamic Media](video-profiles.md)
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo](s7-video.md)
    + [Ajout de fonctionnalités Dynamic Media à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
-   + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
-   + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
+   + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
+   + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
    + [Prise en charge 3D](/help/assets/assets-3d.md)
    + [Visionneuses d’images](image-sets.md)
    + [Images panoramiques](panoramic-images.md)
@@ -69,18 +69,18 @@ ht-degree: 57%
    + [Vidéos interactives](interactive-videos.md)
    + [Vidéo 360 VR](/help/assets/360-video.md)
    + [Intégration des visionneuses Dynamic Media aux balises Adobe Analytics et Adobe Experience Platform](/help/assets/tags.md)
-   + [Utilisation d’aperçus rapides pour créer des fenêtres contextuelles personnalisées](custom-pop-ups.md)
-   + [Diffusion d’images optimisées pour un site réactif](responsive-site.md)
-   + [Aperçu de ressources Dynamic Media](previewing-assets.md)
-   + [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md)
-   + [Incorporation de la visionneuse Dynamic Video ou d’images dans une page web](embed-code.md)
-   + [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md)
+   + [Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide](custom-pop-ups.md)
+   + [Diffuser des images optimisées pour un site réactif](responsive-site.md)
+   + [Aperçu des ressources Dynamic Media](previewing-assets.md)
+   + [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md)
+   + [Incorporation de la visionneuse de vidéos ou d’images dynamique dans une page web](embed-code.md)
+   + [Liaison d’URL à votre application web](linking-urls-to-yourwebapplication.md)
    + [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
-   + [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
+   + [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
    + [Utilisation de la publication sélective dans Dynamic Media](selective-publishing.md)
-   + [Invalidation du cache du réseau CDN par le biais de Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
-   + [Installation du Feature Pack 18912 pour la migration des ressources en masse](bulk-ingest-migrate.md)
+   + [Invalidation du cache CDN via Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidation du cache CDN via Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
+   + [Installer le Feature Pack 18912 pour la migration de ressources en masse](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Étendre les ressources {#extending}
    + [Personnaliser et étendre  [!DNL Assets]](extending-assets.md)
