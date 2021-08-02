@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Gestion des ressources,Rendus
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
+source-git-commit: a166ea9e56ba6b69793e9949a920a7a24b5b9b25
 workflow-type: tm+mt
-source-wordcount: '2633'
+source-wordcount: '2607'
 ht-degree: 56%
 
 ---
@@ -190,13 +190,13 @@ Vous devez envoyer la demande d’utilisation d’imagerie dynamique ; celle-ci
 
 Par défaut, l’imagerie dynamique RGPD et l’optimisation du réseau sont désactivés pour un compte d’entreprise Dynamic Media. Si vous souhaitez activer l’une ou l’autre de ces améliorations prêtes à l’emploi, créez un cas de prise en charge comme décrit ci-dessous.
 
-Le calendrier de publication de l’imagerie dynamique RGPD et de l’optimisation du réseau est le suivant :
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is as follows:
 
-| Région   | Date cible |
+| Region | Target date |
 |---|---|
-| Amérique du Nord | En direct |
-| Europe, Moyen-Orient, Afrique | 13 août 2021 |
-| Asie-Pacifique | 22 juillet 2021 |
+| North America | Live |
+| Europe, Middle East, Africa | 13 Aug 2021 |
+| Asia-Pacific | 22 Jul 2021 | -->
 
 1. [Utilisez Admin Console pour créer un dossier d’assistance](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. Indiquez les informations suivantes dans votre dossier de support :
