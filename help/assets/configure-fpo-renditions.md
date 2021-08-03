@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Rendus
 exl-id: null
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 4%
 
 ---
@@ -61,9 +61,11 @@ Vous trouverez ci-dessous les étapes de configuration du modèle de workflow Re
 
 Dans le Experience Manager, le workflow Ressources de mise à jour de gestion des actifs numériques s’exécute lorsqu’une nouvelle ressource est chargée. Pour utiliser ImageMagick afin de traiter les rendus des ressources récemment chargées, ajoutez une nouvelle commande au modèle de workflow.
 
-1. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**. Sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** et cliquez sur **[!UICONTROL Modifier]**.
+1. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
 
-1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau latéral]** dans le coin supérieur gauche. Recherchez l’étape de ligne de commande.
+1. Sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]** et cliquez sur **[!UICONTROL Modifier]**.
+
+1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau latéral]** dans le coin supérieur gauche et recherchez l’étape de ligne de commande.
 
 1. Faites glisser l’étape **[!UICONTROL Ligne de commande]** et ajoutez-la avant l’étape **[!UICONTROL Miniatures des processus]** .
 
@@ -89,13 +91,21 @@ Pour plus d’informations sur les fonctionnalités de ligne de commande ImageMa
 
 Pour utiliser le workflow du Experience Manager afin de générer le rendu FPO des ressources existantes, créez un modèle de workflow dédié qui utilise l’option de rendu FPO intégré.
 
-1. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**. Pour créer un modèle, cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Créer un modèle]**. Ajoutez un **[!UICONTROL Titre]** significatif et un **[!UICONTROL Nom]**.
+1. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
 
-1. Sélectionnez le modèle et cliquez sur **[!UICONTROL Modifier]**. Cliquez sur **[!UICONTROL Informations sur la page]** > **[!UICONTROL Ouvrir les propriétés]**. Sélectionnez **[!UICONTROL Processus transitoire]**. Cela améliore l’évolutivité et les performances. Cliquez sur ******[!UICONTROL Enregistrer et fermer]**.
+1. Pour créer un modèle, cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Créer un modèle]**.
 
-1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau latéral]** dans le coin supérieur gauche. Recherchez l’étape de miniature de processus. Faites glisser l’étape **[!UICONTROL Miniatures des processus]** .
+1. Ajoutez un **[!UICONTROL Titre]** et **[!UICONTROL Nom]** significatif.
 
-1. Sélectionnez **[!UICONTROL Miniatures des processus]** et cliquez sur **[!UICONTROL Configurer]**. Suivez la configuration [pour générer le rendu de nouvelles ressources à l’aide du processus Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow). Pour activer les modifications, cliquez sur **[!UICONTROL Synchroniser]**.
+1. Sélectionnez le modèle et cliquez sur **[!UICONTROL Modifier]**. Cliquez sur **[!UICONTROL Informations sur la page]** > **[!UICONTROL Ouvrir les propriétés]**, puis sélectionnez **[!UICONTROL Processus transitoire]**. Cela améliore l’évolutivité et les performances.
+
+1. Cliquez sur ******[!UICONTROL Enregistrer et fermer]**.
+
+1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau latéral]** dans le coin supérieur gauche et recherchez l’étape de miniature de processus.
+
+1. Sélectionnez **[!UICONTROL Miniatures des processus]** et cliquez sur **[!UICONTROL Configurer]**. Suivez la configuration [pour générer le rendu de nouvelles ressources à l’aide du processus Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow).
+
+1. Pour activer les modifications, cliquez sur **[!UICONTROL Synchroniser]**.
 
 
 ## Génération de rendus de ressources existantes à l’aide d’ImageMagick {#generate-renditions-of-existing-assets-using-imagemagick}
