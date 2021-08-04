@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '2487'
-ht-degree: 65%
+source-wordcount: '2509'
+ht-degree: 64%
 
 ---
 
@@ -37,7 +37,7 @@ Le fichier global déclare également la [bibliothèque Sling](/help/sites-devel
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling" %>
 ```
 
-### <ui:includeClientLib> {#ui-includeclientlib}
+### &lt;ui:includeclientlib> {#ui-includeclientlib}
 
 La balise `<ui:includeClientLib>` comprend une bibliothèque cliente HTML AEM, qui peut être une bibliothèque js, css ou thème. Pour plusieurs inclusions de différents types, par exemple js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
@@ -99,7 +99,7 @@ Lorsque vous développez le script jsp d’un composant AEM, il est recommandé 
 
 Il déclare les bibliothèques de balises sling, CQ et jstl et expose les objets de script utilisés régulièrement, définis par la balise [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects). Cela raccourcit et simplifie le code jsp de votre composant.
 
-### <cq:text> {#cq-text}
+### &lt;cq:text> {#cq-text}
 
 La balise `<cq:text>` est une balise de commodité qui génère le texte du composant dans un JSP.
 
@@ -157,7 +157,7 @@ Voici quelques exemples d’utilisation de la balise `<cq:text>` dans un JSP :
 <cq:text property="text" tagClass="text"/>
 ```
 
-### <cq:setContentBundle> {#cq-setcontentbundle}
+### &lt;cq:setcontentbundle> {#cq-setcontentbundle}
 
 La balise `<cq:setContentBundle>` crée un contexte de localisation i18n et le stocke dans la variable de configuration `javax.servlet.jsp.jstl.fmt.localizationContext`.
 
@@ -204,7 +204,7 @@ Pour les pages personnalisées par l’utilisateur :
 </div> ...
 ```
 
-### <cq:include> {#cq-include}
+### &lt;cq:include> {#cq-include}
 
 La balise `<cq:include>` inclut une ressource dans la page active.
 
@@ -254,7 +254,7 @@ Devriez-vous utiliser `<cq:include>` ou `<sling:include>` ?
 * Lorsque vous développez des composants AEM, Adobe vous recommande d’utiliser `<cq:include>`.
 * `<cq:include>` vous permet d’inclure directement des fichiers de script en fonction de leur nom lors de l’utilisation de l’attribut script. L’héritage du type de composant et de ressource est alors pris en compte. Généralement, cela s’avère plus simple que d’observer une stricte conformité avec la résolution de script de Sling à l’aide de sélecteurs et d’extensions.
 
-### <cq:includeClientLib> {#cq-includeclientlib}
+### &lt;cq:includeclientlib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
@@ -298,7 +298,7 @@ La balise `<cq:includeClientLib>` peut être utilisée comme suit dans un fichie
 <cq:includeClientLib css="cq.collab.calendar, cq.security" />
 ```
 
-### <cq:defineObjects> {#cq-defineobjects}
+### &lt;cq:defineObjects> {#cq-defineobjects}
 
 La balise `<cq:defineObjects>` expose les objets de script suivants, utilisés régulièrement, qui peuvent être référencés par le développeur. Elle expose également les objets définis par la balise [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) .
 
@@ -440,7 +440,7 @@ La balise `<cq:defineObjects>` expose les objets de script suivants, utilisés r
 >
 >Lorsque le fichier `/libs/foundation/global.jsp` est inclus dans le script, la balise `<cq:defineObjects />` est automatiquement incluse.
 
-### <cq:requestURL> {#cq-requesturl}
+### &lt;cq:requesturl> {#cq-requesturl}
 
 La balise `<cq:requestURL>` écrit l’URL de la requête actuelle au JspWriter. Les deux balises [ `<cq:addParam>`](#amp-lt-cq-addparam) et [ `<cq:removeParam>`](#amp-lt-cq-removeparam) et peuvent être utilisées dans le corps de cette balise pour modifier l’URL de requête actuelle avant qu’elle ne soit écrite.
 
@@ -462,7 +462,7 @@ Exemples :
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:addParam> {#cq-addparam}
+### &lt;cq:addparam> {#cq-addparam}
 
 La balise `<cq:addParam>` ajoute un paramètre de requête avec le nom et la valeur donnés à la balise [ `<cq:requestURL>`](#amp-lt-cq-requesturl) englobante.
 
@@ -482,7 +482,7 @@ Elle présente les attributs suivants :
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:removeParam> {#cq-removeparam}
+### &lt;cq:removeparam> {#cq-removeparam}
 
 La balise `<cq:removeParam>` supprime un paramètre de requête avec le nom et la valeur donnés de la balise [ `<cq:requestURL>`](#amp-lt-cq-requesturl) englobante. Si aucune valeur n’est indiquée, tous les paramètres portant le nom spécifié sont supprimés.
 
@@ -498,7 +498,7 @@ Exemple :
 <a href="<cq:requestURL><cq:removeParam name="language"/></cq:requestURL>">remove filter</a>
 ```
 
-## Bibliothèque de balises Sling  {#sling-tag-library}
+## Bibliothèque de balises Sling {#sling-tag-library}
 
 La bibliothèque de balises Sling comporte des fonctions Sling bien utiles.
 
@@ -512,7 +512,7 @@ Lorsque vous utilisez la bibliothèque de balises Sling dans votre script, ce de
 >
 >Lorsque le fichier `/libs/foundation/global.jsp` est inclus dans le script, la bibliothèque de balises sling est automatiquement déclarée.
 
-### <sling:include> {#sling-include}
+### &lt;sling:include> {#sling-include}
 
 La balise `<sling:include>` inclut une ressource dans la page active.
 
@@ -577,7 +577,7 @@ Exemples :
 <sling:include replaceSelectors="content" />
 ```
 
-### <sling:defineObjects> {#sling-defineobjects}
+### &lt;sling:defineobjects> {#sling-defineobjects}
 
 La balise `<sling:defineObjects>` expose les objets de script suivants, utilisés régulièrement, qui peuvent être référencés par le développeur :
 
@@ -623,7 +623,7 @@ l **ogName resourceResolverName**
 
 **slingName**
 
-**Exemple :**
+**Exemple:**
 
 ```xml
 <%@page session="false" %><%
@@ -632,7 +632,7 @@ l **ogName resourceResolverName**
 %><sling:defineObjects/>
 ```
 
-## Bibliothèque de balises JSTL  {#jstl-tag-library}
+## Bibliothèque de balises JSTL {#jstl-tag-library}
 
 La [bibliothèque de balises standard JavaServer Pages](https://www.oracle.com/technetwork/java/index-jsp-135995.html) contient de nombreuses balises standard utiles. Les bibliothèques de balises de base, de formatage et de fonctions sont définies par la balise `/libs/foundation/global.jsp` comme illustré dans le fragment de code suivant.
 
