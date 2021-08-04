@@ -12,14 +12,14 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: a84f9bd590193cbb8c2549b34df1bbcec618ba67
+source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3310'
 ht-degree: 71%
 
 ---
 
-# À propos de Document Security {#about-document-security}
+# A propos de Document Security {#about-document-security}
 
 Grâce à Document Security, seuls les utilisateurs autorisés peuvent utiliser vos documents. Document Security vous permet de distribuer en toute sécurité toute information enregistrée sous un format pris en charge. Les formats de fichiers pris en charge sont :
 
@@ -147,13 +147,13 @@ Les administrateurs de Document Security peuvent créer des rôles personnalisé
 * Affichage des événements du serveur Document Security
 * Modification du propriétaire d’une stratégie Document Security
 
-## Stratégies et documents protégés par une stratégie  {#policies-and-policy-protected-documents}
+## Stratégies et documents protégés par une stratégie {#policies-and-policy-protected-documents}
 
 Une *stratégie* définit un jeu de paramètres de confidentialité et d’utilisateurs habilités à accéder au document auquel la stratégie est appliquée. De plus, une stratégie permet de modifier dynamiquement les autorisations sur un document. Elle permet à la personne qui sécurise le document de modifier les paramètres de confidentialité, de révoquer l’accès au document ou de changer de stratégie.
 
 La protection d’une stratégie peut être appliquée à un document PDF à l’aide d’Acrobat® Pro et d’Acrobat Standard. La protection des stratégies peut être appliquée à d’autres types de fichiers, tels que des fichiers Microsoft® Word, Excel et PowerPoint, à l’aide de l’application cliente avec les extensions Acrobat Reader DC appropriées installées.
 
-### Fonctionnement des stratégies  {#how-policies-work}
+### Fonctionnement des stratégies {#how-policies-work}
 
 Les stratégies contiennent des informations sur les utilisateurs autorisés et les paramètres de confidentialité à appliquer aux documents. Les utilisateurs peuvent être des membres de votre entreprise, ainsi que des personnes extérieures qui possèdent un compte. Si l’administrateur active la fonction d’invitation d’utilisateur, il est même possible d’ajouter de nouveaux utilisateurs aux stratégies et de déclencher le processus d’envoi par courrier électronique d’une invitation à l’enregistrement.
 
@@ -182,7 +182,7 @@ Lorsque vous appliquez une stratégie à un document, les informations contenues
 
 Si l’utilisation hors connexion est autorisée, les destinataires peuvent également utiliser hors connexion (sans être connectés à Internet ou au réseau) des documents protégés par une stratégie, pendant la période spécifiée dans la stratégie.
 
-### Fonctionnement des documents protégés par une stratégie  {#how-policy-protected-documents-work}
+### Fonctionnement des documents protégés par une stratégie {#how-policy-protected-documents-work}
 
 Pour ouvrir et utiliser des documents protégés par une stratégie, cette dernière doit inclure votre nom en tant que destinataire et vous devez disposer d’un compte Document Security valide. Pour les documents PDF, vous devez disposer d’Acrobat ou d’Adobe Reader®. Pour les autres types de fichiers, vous avez besoin de l’application appropriée pour le fichier avec les extensions Acrobat Reader DC installées.
 
@@ -207,7 +207,7 @@ Lorsque la période d’ouverture hors connexion arrive à son terme, vous devez
 
 Si vous enregistrez une copie d’un document protégé par une stratégie à l’aide de la commande Enregistrer ou Enregistrer sous, la stratégie est automatiquement appliquée au nouveau document. Les événements tels que les tentatives d’ouverture du nouveau document sont également contrôlés et enregistrés pour le document original.
 
-## Jeux de stratégies  {#policy-sets}
+## Jeux de stratégies {#policy-sets}
 
 Les *jeux de stratégies* regroupent plusieurs stratégies ayant une finalité commune. Ces jeux de stratégies sont ensuite rendus accessibles à un sous-groupe d’utilisateurs du système.
 
@@ -276,4 +276,4 @@ Ajoutez des groupes d’utilisateurs aux stratégies plutôt que des utilisateur
 
    >[!NOTE]
    >
-   > Vous pouvez utiliser l’API [getAllPolicysetnames()]((https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html)) pour récupérer un maximum de 1 000 noms de jeux de stratégies. En interne, l’API récupère un maximum de 1 000 stratégies pour lesquelles l’appelant de l’API dispose de l’autorisation de l’éditeur de document, puis crée et renvoie une liste de noms de jeux de stratégies uniques associés aux stratégies récupérées. Par exemple, lorsque l’API récupère 1 000 stratégies et que les stratégies récupérées sont associées à 200 jeux de stratégies au total, l’API renvoie uniquement 200 noms de jeux de stratégies.
+   > Vous pouvez utiliser l’API [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) pour récupérer un maximum de 1 000 noms de jeux de stratégies. En interne, l’API récupère un maximum de 1 000 stratégies pour lesquelles l’appelant de l’API dispose de l’autorisation de l’éditeur de document, puis crée et renvoie une liste de noms de jeux de stratégies uniques associés aux stratégies récupérées. Par exemple, lorsque l’API récupère 1 000 stratégies et que les stratégies récupérées sont associées à 200 jeux de stratégies au total, l’API renvoie uniquement 200 noms de jeux de stratégies.
