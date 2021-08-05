@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Métadonnées
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b36448449830aa8e19f6dc29ab7fb62608bb39dd
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 56%
+source-wordcount: '1982'
+ht-degree: 55%
 
 ---
 
@@ -66,7 +66,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
    ![Mappage du paramètre de propriété dans le profil de métadonnées](assets/metadata-profile-setting-map-property.png)
 
-   La valeur que vous spécifiez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le noeud de métadonnées de la ressource. Par exemple, si vous spécifiez `./jcr:content/metadata/dc:desc` comme nom de **[!UICONTROL Associer à la propriété]**, [!DNL Assets] stocke la valeur `dc:desc` dans le noeud de métadonnées de la ressource.
+   La valeur que vous spécifiez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le noeud de métadonnées de la ressource. Par exemple, si vous spécifiez `./jcr:content/metadata/dc:desc` comme nom de **[!UICONTROL Associer à la propriété]**, [!DNL Assets] stocke la valeur `dc:desc` dans le noeud de métadonnées de la ressource. Il est recommandé de ne mapper qu’un champ à une propriété donnée dans le schéma de métadonnées. Sinon, le dernier champ ajouté mappé à la propriété est sélectionné par le système.
 
    * **[!UICONTROL Valeur par défaut]** : utilisez cette propriété pour ajouter une valeur par défaut pour le composant des métadonnées. Par exemple, si vous indiquez « Ma description », cette valeur est affectée à la propriété `dc:desc` au niveau du nœud de métadonnées de la ressource.
 
