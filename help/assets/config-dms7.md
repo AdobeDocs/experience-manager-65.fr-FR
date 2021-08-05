@@ -7,12 +7,13 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
+mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration, mode Scene7
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
 workflow-type: tm+mt
-source-wordcount: '6160'
-ht-degree: 55%
+source-wordcount: '6856'
+ht-degree: 49%
 
 ---
 
@@ -26,7 +27,8 @@ Le schéma d’architecture suivant décrit le fonctionnement de Dynamic Media�
 
 Avec la nouvelle architecture, Experience Manager est responsable des ressources source Principales et des synchronisations avec Dynamic Media pour le traitement et la publication des ressources :
 
-1. Lorsque la ressource source Principale est téléchargée vers Experience Manager, elle est répliquée vers Dynamic Media. À ce stade, Dynamic Media gère l’intégralité du traitement des ressources et de la génération du rendu, comme le codage vidéo et les variantes dynamiques d’une image. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. Lorsque la ressource source Principale est téléchargée vers Experience Manager, elle est répliquée vers Dynamic Media. À ce stade, Dynamic Media gère l’intégralité du traitement des ressources et de la génération du rendu, comme le codage vidéo et les variantes dynamiques d’une image.
+(En mode Dynamic Media - Scene7, la taille du fichier de chargement par défaut est de 2 Go ou moins. Pour activer les tailles de fichiers de chargement de 2 Go à 15 Go, voir [(Facultatif) Configuration du mode Dynamic Media - Scene7 pour le chargement de ressources de plus de 2 Go](#optional-config-dms7-assets-larger-than-2gb).)
 1. Une fois les rendus générés, Experience Manager peut accéder en toute sécurité aux rendus Dynamic Media distants et les prévisualiser (aucune donnée binaire n’est renvoyée à l’instance de Experience Manager).
 1. Une fois que le contenu est prêt à être publié et approuvé, il déclenche le service Dynamic Media pour diffuser du contenu vers les serveurs de diffusion et mettre en cache le contenu sur le réseau de diffusion de contenu (CDN).
 
@@ -147,11 +149,95 @@ Si vous souhaitez personnaliser davantage votre configuration, vous pouvez éven
 
 Si vous souhaitez personnaliser davantage l’installation et la configuration du mode Scene7 de Dynamic Media, ou en optimiser les performances, vous pouvez effectuer une ou plusieurs des tâches *facultatives* suivantes :
 
+* [(Facultatif) Configurez le mode Dynamic Media - Scene7 pour le chargement de ressources d’une taille supérieure à 2 Go.](#optional-config-dms7-assets-larger-than-2gb)
+
 * [(Facultatif) Installation et configuration des paramètres du mode Scene7 de Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
 * [(Facultatif) Réglage des performances du mode Dynamic Media - Scene7](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(Facultatif) Filtrage des ressources pour la réplication](#optional-filtering-assets-for-replication)
+
+### (Facultatif) Configurez le mode Dynamic Media - Scene7 pour le chargement de ressources d’une taille supérieure à 2 Go. {#optional-config-dms7-assets-larger-than-2gb}
+
+En mode Dynamic Media - Scene7, la taille de fichier de chargement de ressource par défaut est de 2 Go ou moins. Cependant, vous pouvez éventuellement configurer le chargement de ressources de plus de 2 Go et de 15 Go.
+
+Tenez compte des conditions préalables et des points suivants si vous envisagez d’utiliser cette fonctionnalité :
+
+* Vous devez exécuter Experience Manager 6.5 avec le Service Pack 6.5.4.0 ou version ultérieure.
+* [Les ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) téléchargements Direct Binary Access d’Oak sont activés.
+
+   Pour l’activer, définissez la propriété `presignedHttpDownloadURIExpirySeconds > 0` dans la configuration de la banque de données. La valeur doit être suffisamment longue pour télécharger des fichiers binaires plus volumineux et éventuellement effectuer une nouvelle tentative.
+
+* Les ressources de plus de 15 Go ne sont pas chargées. (La limite de taille est définie à l’étape 8 ci-dessous.)
+* Lorsque le workflow Retraiter les ressources Scene7 est déclenché sur un dossier, il retraite les ressources volumineuses déjà chargées qui se trouvent dans le dossier. Cependant, il charge les ressources volumineuses qui n’existent pas dans la société Scene7.
+* Les chargements volumineux fonctionnent uniquement pour les payloads de ressources uniques, et non lorsque le workflow est déclenché sur un dossier.
+
+**Pour configurer le mode Dynamic Media - Scene7 pour le chargement de ressources de plus de 2 Go :**
+
+1. Dans Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
+
+1. Dans la fenêtre du CRXDE Lite, effectuez l’une des opérations suivantes :
+
+   * Dans le rail de gauche, accédez au chemin suivant :
+
+      `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Copiez et collez le chemin d’accès ci-dessus dans le champ Chemin du CRXDE Lite sous la barre d’outils, puis appuyez sur `Enter`.
+
+1. Dans le rail de gauche, cliquez avec le bouton droit de la souris sur `fileupload`, puis, dans le menu contextuel, sélectionnez **[!UICONTROL Noeud de recouvrement]**.
+
+   ![Option Noeud de recouvrement](/help/assets/assets-dm/uploadassets15gb_a.png)
+
+1. Dans la boîte de dialogue Noeud de recouvrement , cochez la case **[!UICONTROL Faire correspondre les types de noeud]** pour activer l’option, puis sélectionnez **[!UICONTROL OK]**.
+
+   ![Noeud de recouvrement, boîte de dialogue](/help/assets/assets-dm/uploadassets15gb_b.png)
+
+1. Dans la fenêtre du CRXDE Lite, effectuez l’une des opérations suivantes :
+
+   * Dans le rail de gauche, accédez au chemin d’accès au noeud de recouvrement suivant :
+
+      `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Copiez et collez le chemin d’accès ci-dessus dans le champ Chemin du CRXDE Lite sous la barre d’outils, puis appuyez sur `Enter`.
+
+1. Dans l’onglet **[!UICONTROL Propriétés]**, sous la colonne **[!UICONTROL Nom]**, localisez `sizeLimit`.
+1. À droite du nom `sizeLimit`, dans la colonne **[!UICONTROL Valeur]**, double-cliquez sur le champ de valeur.
+1. Saisissez la valeur appropriée en octets afin d’augmenter la taille limite à la taille maximale souhaitée pour le transfert. Par exemple, pour augmenter la limite de la taille de la ressource de chargement à 10 Go, saisissez `10737418240` dans le champ Valeur.
+Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). Dans ce cas, les ressources chargées de plus de 15 Go ne sont pas chargées.
+
+
+   ![Valeur limite de taille](/help/assets/assets-dm/uploadassets15gb_c.png)
+
+1. Près du coin supérieur gauche de la fenêtre du CRXDE Lite, sélectionnez **[!UICONTROL Enregistrer tout]**.
+
+   *Définissez maintenant le délai d’attente pour le gestionnaire de tâches de processus externe de processus Granite Adobe en procédant comme suit :*
+
+1. Dans Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale.
+1. Effectuez l’une des opérations suivantes :
+
+   * Accédez au chemin d’accès à l’URL suivant :
+
+      `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
+
+   * Copiez et collez le chemin d’accès ci-dessus dans le champ URL de votre navigateur. Veillez à remplacer `localhost:4502` par votre propre instance de Experience Manager.
+
+1. Dans la boîte de dialogue **[!UICONTROL Adobe du gestionnaire de tâches de processus externe de processus Granite]**, dans le champ **[!UICONTROL Délai d’expiration maximal]**, définissez la valeur sur `18000` minutes (cinq heures). La valeur par défaut est de 10 800 minutes (trois heures).
+
+   ![Valeur de délai d’expiration maximale](/help/assets/assets-dm/uploadassets15gb_d.png)
+
+1. Dans le coin inférieur droit de la boîte de dialogue, sélectionnez **[!UICONTROL Enregistrer]**.
+
+   *Définissez maintenant le délai d’attente de l’étape de processus Transfert de binaire direct de Scene7 en procédant comme suit :*
+
+1. Dans Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
+1. Sur la page Modèles de processus , sélectionnez **[!UICONTROL Vidéo de codage Dynamic Media]**.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**.
+1. Sur la page du workflow, double-cliquez sur l’étape de processus **[!UICONTROL Transfert binaire direct de Scene7]** .
+1. Dans la boîte de dialogue **[!UICONTROL Propriétés des étapes]**, sous l’onglet **[!UICONTROL Commun]**, sous l’en-tête **[!UICONTROL Paramètres avancés]**, dans le champ **[!UICONTROL Délai d’expiration]**, saisissez une valeur de `18000` minutes (cinq heures). La valeur par défaut est `3600` minutes (une heure).
+1. **[!UICONTROL Cliquez sur OK]**.
+1. Sélectionnez **[!UICONTROL Synchronisation]**.
+1. Répétez les étapes 14 à 21 pour le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** et **[!UICONTROL Processus de retraitement de Scene7]** .
 
 ### (Facultatif) Installation et configuration des paramètres du mode Scene7 de Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
@@ -525,7 +611,7 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 **Pour mettre à jour la file d’attente de workflow transitoire Granite :**
 
-1. Accédez à [https://&lt;serveur>/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez **Queue: Granite Transient Workflow Queue** (File d’attente : file d’attente de workflows transitoires Granite).
+1. Accédez à [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez **File d’attente : File d’attente des workflows transitoires Granite**.
 
    >[!NOTE]
    Il est nécessaire d’effectuer une recherche par texte au lieu d’utiliser une URL directe, car le PID OSGi est généré dynamiquement.
