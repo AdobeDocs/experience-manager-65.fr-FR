@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration, mode Scene7
-source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
+source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
 workflow-type: tm+mt
-source-wordcount: '6856'
+source-wordcount: '6941'
 ht-degree: 49%
 
 ---
@@ -161,16 +161,21 @@ Si vous souhaitez personnaliser davantage l’installation et la configuration d
 
 En mode Dynamic Media - Scene7, la taille de fichier de chargement de ressource par défaut est de 2 Go ou moins. Cependant, vous pouvez éventuellement configurer le chargement de ressources de plus de 2 Go et de 15 Go.
 
-Tenez compte des conditions préalables et des points suivants si vous envisagez d’utiliser cette fonctionnalité :
+Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditions préalables et des points suivants :
 
-* Vous devez exécuter Experience Manager 6.5 avec le Service Pack 6.5.4.0 ou version ultérieure.
-* [Les ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) téléchargements Direct Binary Access d’Oak sont activés.
+* Vous devez exécuter Experience Manager 6.5 avec Service Pack 6.5.4.0 ou version ultérieure en mode Dynamic Media - Scene7 .
+* Cette fonctionnalité de chargement volumineuse n’est prise en charge que pour les clients [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
+* Assurez-vous que votre instance de Experience Manager est configurée avec le stockage Blob Amazon S3 ou Microsoft® Azure.
 
-   Pour l’activer, définissez la propriété `presignedHttpDownloadURIExpirySeconds > 0` dans la configuration de la banque de données. La valeur doit être suffisamment longue pour télécharger des fichiers binaires plus volumineux et éventuellement effectuer une nouvelle tentative.
+   >[!NOTE]
+   Configurez le stockage Blob de Microsoft Azure avec les deux clés d’accès (key1 et key2), car cette fonctionnalité de chargement volumineuse n’est pas prise en charge avec AzureSas dans la configuration de stockage Blob.
+
+* Le [téléchargement Direct Binary Access](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) d’Oak est activé (le *téléchargement Direct Binary Access* d’Oak n’est pas requis).
+
+   Pour activer le téléchargement Direct Binary Access, définissez la propriété `presignedHttpDownloadURIExpirySeconds > 0` dans la configuration de la banque de données. La valeur doit être suffisamment longue pour télécharger des fichiers binaires plus volumineux et éventuellement effectuer une nouvelle tentative.
 
 * Les ressources de plus de 15 Go ne sont pas chargées. (La limite de taille est définie à l’étape 8 ci-dessous.)
-* Lorsque le workflow Retraiter les ressources Scene7 est déclenché sur un dossier, il retraite les ressources volumineuses déjà chargées qui se trouvent dans le dossier. Cependant, il charge les ressources volumineuses qui n’existent pas dans la société Scene7.
-* Les chargements volumineux fonctionnent uniquement pour les payloads de ressources uniques, et non lorsque le workflow est déclenché sur un dossier.
+* Lorsque le workflow de retraitement des ressources **[!UICONTROL Dynamic Media]** est déclenché sur un dossier, il retraite toutes les ressources volumineuses qui sont déjà synchronisées avec la société Dynamic Media. Toutefois, si des ressources volumineuses ne sont pas encore synchronisées dans le dossier, elles ne sont pas chargées. Par conséquent, pour synchroniser les ressources volumineuses existantes dans Dynamic Media, vous pouvez exécuter le workflow **[!UICONTROL Retraitement de Dynamic Media]** sur des ressources individuelles.
 
 **Pour configurer le mode Dynamic Media - Scene7 pour le chargement de ressources de plus de 2 Go :**
 
@@ -237,7 +242,7 @@ Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). Dan
 1. Dans la boîte de dialogue **[!UICONTROL Propriétés des étapes]**, sous l’onglet **[!UICONTROL Commun]**, sous l’en-tête **[!UICONTROL Paramètres avancés]**, dans le champ **[!UICONTROL Délai d’expiration]**, saisissez une valeur de `18000` minutes (cinq heures). La valeur par défaut est `3600` minutes (une heure).
 1. **[!UICONTROL Cliquez sur OK]**.
 1. Sélectionnez **[!UICONTROL Synchronisation]**.
-1. Répétez les étapes 14 à 21 pour le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** et **[!UICONTROL Processus de retraitement de Scene7]** .
+1. Répétez les étapes 14 à 21 pour le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** et le modèle de workflow **[!UICONTROL Retraitement Dynamic Media]** .
 
 ### (Facultatif) Installation et configuration des paramètres du mode Scene7 de Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
