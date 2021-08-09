@@ -1,6 +1,6 @@
 ---
 title: Gestion des paramètres d’image prédéfinis Dynamic Media
-description: Comprendre les paramètres d’image prédéfinis Dynamic Media et savoir comment créer, modifier et gérer les paramètres d’image prédéfinis
+description: Découvrez les paramètres d’image prédéfinis Dynamic Media et comment créer, modifier et gérer les paramètres d’image prédéfinis.
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 mini-toc-levels: 3
 contentOwner: Rick Brough
@@ -13,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Paramètres d’image prédéfinis
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3843'
 ht-degree: 83%
 
 ---
@@ -97,12 +97,12 @@ Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus d
 >
 >Dans le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques], l’étape **[!UICONTROL Miniatures EPS]** génère des miniatures pour les fichiers EPS.
 
-#### Propriétés des métadonnées de ressource PDF/AI/EPS  {#pdf-ai-eps-asset-metadata-properties}
+#### Propriétés des métadonnées de ressource PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
 
 | **Propriété de métadonnées** | **Description** |
 |---|---|
-| dam:Physicalwidthininches | Largeur du document en pouces. |
-| dam:Physicalheightininches | Hauteur du document en pouces. |
+| `dam:Physicalwidthininches` | Largeur du document en pouces. |
+| `dam:Physicalheightininches` | Hauteur du document en pouces. |
 
 Vous accédez aux options des composants de processus `Rasterize PDF/AI Image Preview Rendition` par le biais du workflow `DAM Update Asset`.
 
@@ -150,7 +150,7 @@ Largeur max. et Hauteur max. limitent la résolution à laquelle la pixellisatio
 
 Une valeur maximale est définie pour le composant de processus `Rasterize PDF/AI Image Preview Rendition`, afin de s’assurer qu’il ne crée pas d’images exagérément grandes en mémoire. Ces images volumineuses peuvent, en effet, dépasser la capacité de mémoire allouée à la machine virtuelle Java™ (JVM). Il faut veiller à fournir suffisamment de mémoire à la machine virtuelle Java pour gérer le nombre configuré de workflows parallèles, de sorte que chacun d’eux soit en mesure de créer une image à la taille maximale configurée.
 
-### Format de fichier InDesign (INDD)  {#indesign-indd-file-format}
+### Format de fichier InDesign (INDD) {#indesign-indd-file-format}
 
 Si vous avez l’intention de prendre en charge l’assimilation de fichiers INDD de manière à pouvoir générer le rendu dynamique de ce format de fichier, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
 
@@ -181,7 +181,7 @@ Les scripts suivants sont utilisés par l’intégration de Dynamic Media :
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Oui</td>
-   <td>Génère une sous-ressource JPEG de 300 ppp pour chaque page. Une sous-ressource JPEG est une véritable ressource stockée sous la ressource InDesign. Elle est également optimisée et transformée en PTIFF par le workflow <code>DAM Update Asset</code>.<br /> </td>
+   <td>Génère une sous-ressource JPEG 300 ppp pour chaque page. Une sous-ressource JPEG est une véritable ressource stockée sous la ressource InDesign. Elle est également optimisée et transformée en PTIFF par le workflow <code>DAM Update Asset</code>.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -193,11 +193,11 @@ Les scripts suivants sont utilisés par l’intégration de Dynamic Media :
 
 ## Configuration de la taille des miniatures d’images {#configuring-image-thumbnail-size}
 
-Vous pouvez définir la taille des miniatures en configurant ces paramètres dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques (DAM)]**. Le workflow comprend deux étapes au cours desquelles vous pouvez configurer la taille de miniature des ressources d’images. Bien que l’un (**[!UICONTROL Dynamic Media Process Image Assets]**) soit utilisé pour les ressources d’image dynamique, et l’autre (**[!UICONTROL Miniatures de processus]**) pour la génération de miniatures statiques, ou lorsque tous les autres processus ne parviennent pas à générer des miniatures, *les deux* doivent avoir les mêmes paramètres.
+Vous pouvez définir la taille des miniatures en configurant ces paramètres dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques (DAM)]**. Le workflow comprend deux étapes au cours desquelles vous pouvez configurer la taille de miniature des ressources d’images. Bien que (**[!UICONTROL Dynamic Media Process Image Assets]**) soit utilisé pour les ressources d’image dynamique et (**[!UICONTROL Miniatures de processus]**) soit destiné à la génération de miniatures statiques, ou lorsque tous les autres processus ne parviennent pas à générer des miniatures, *les deux* doivent avoir les mêmes paramètres.
 
 Avec l’étape **[!UICONTROL Ressources d’image du processus Dynamic Media]**, les miniatures sont générées par le serveur d’images et cette configuration est indépendante de la configuration appliquée à l’étape des **[!UICONTROL miniatures de processus]**. La génération de miniatures en passant par l’étape **[!UICONTROL Miniatures des processus]** constitue la méthode la plus lente et la plus gourmande en mémoire.
 
-Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL width:height:center]**, par exemple *80:80:false*. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur du centre est false ou true et, si elle est définie sur true, elle indique que la taille de l’image miniature est exactement la même que celle donnée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
+Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL width:height:center]**, par exemple `80:80:false`. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur du centre est false ou true et, si elle est définie sur true, elle indique que la taille de l’image miniature est exactement la même que celle donnée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
 
 >[!NOTE]
 >
@@ -212,7 +212,7 @@ Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL 
 
 **Pour configurer la taille des miniatures d’images:**
 
-1. Appuyez sur **[!UICONTROL Outils ]**> **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]** > **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** > **[!UICONTROL Modifier]**.
+1. Appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]** > **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** > **[!UICONTROL Modifier]**.
 1. Appuyez sur l’étape **[!UICONTROL Ressources d’image du processus de média dynamique]**, puis sur l’onglet **[!UICONTROL Miniatures]**. Modifiez la taille de la miniature, si nécessaire, puis appuyez sur **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -337,7 +337,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Type</strong> : sélectionnez <strong>Adaptatif</strong> (valeur par défaut), <strong>Web</strong> ou <strong>Macintosh</strong>. Si vous sélectionnez l’option <strong>GIF avec couche alpha</strong>, l’option Macintosh n’est pas disponible.</li>
      <li><strong>Juxtaposition</strong> : sélectionnez <strong>Diffus</strong> ou <strong>Désactivé</strong>.</li>
      <li><strong>Nombre de couleurs</strong> : saisissez un nombre compris entre 2 et 256.</li>
-     <li><strong>Liste de couleurs</strong> : entrez une liste séparée par des virgules. Par exemple, pour le blanc, le gris et le noir, entrez 000000,888888,ffffff.</li>
+     <li><strong>Liste de couleurs</strong> : entrez une liste séparée par des virgules. Par exemple, pour le blanc, le gris et le noir, entrez <code>000000,888888,ffffff</code>.</li>
     </ul>
     <div>
       Lorsque vous sélectionnez les options <strong>PDF</strong>, <strong>TIFF</strong> ou <strong>TIFF avec couche alpha</strong>, les autres options suivantes sont proposées :
