@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 35%
+ht-degree: 34%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 35%
    + [Images panoramiques](panoramic-images.md)
    + [Visionneuses de médias mixtes](mixed-media-sets.md)
    + [Visionneuses à 360°](spin-sets.md)
-   + [Vidéo dans Dynamic Media](video.md)
+   + [Vidéo dans Dynamic Media](video.md)
    + [Bannières de carrousel](carousel-banners.md)
    + [Images interactives](interactive-images.md)
    + [Vidéos interactives](interactive-videos.md)
@@ -81,7 +81,7 @@ ht-degree: 35%
    + [Invalidation du cache CDN via Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [Invalidation du cache CDN via Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installer le Feature Pack 18912 pour la migration de ressources en masse](bulk-ingest-migrate.md)
-   + [Utilisation des sélecteurs](working-with-selectors.md)
+   + [Utilisation de sélecteurs](working-with-selectors.md)
 + Étendre les ressources {#extending}
    + [Personnaliser et étendre  [!DNL Assets]](extending-assets.md)
    + [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](media-handlers.md)
