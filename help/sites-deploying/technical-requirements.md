@@ -6,9 +6,9 @@ seo-description: Une liste de plateformes serveur et client prises en charge pou
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5ce72a51d69e97d7e07e9f734bfd7547fccd51f1
+source-git-commit: 0f0dfe8af5feed5227a091b89d65ef58d71eb299
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3266'
 ht-degree: 82%
 
 ---
@@ -81,7 +81,7 @@ Adobe recommande ces configurations et assure un support complet dans le cadre d
 
 ## Plateformes prises en charge {#supported-platforms}
 
-### Machines virtuelles Java (JVM){#java-virtual-machines}
+### Machines virtuelles Java (JVM) {#java-virtual-machines}
 
 L’application nécessite l’exécution d’une machine virtuelle Java, laquelle est fournie par la distribution JDK (Java Development Kit).
 
@@ -132,7 +132,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
  </tbody>
 </table>
 
-1. La prise en charge et la distribution des créations Azul Zulu d’OpenJDK, y compris toutes les mises à jour de maintenance des versions LTS, seront prises en charge directement par Adobe pour tous les clients AEM qui utilisent les créations Azul Zulu d’OpenJDK, à partir d’AEM 6.5 SP9 . AEM 6.5 SP10 pour AEM Forms Java EE. Pour plus d’informations, voir [Prise en charge Java Azure pour Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) .
+1. La prise en charge et la distribution des créations Azul Zulu d’OpenJDK, y compris toutes les mises à jour de maintenance des versions LTS, seront prises en charge directement par Adobe pour tous les clients AEM qui utilisent les créations Azul Zulu d’OpenJDK, à partir d’AEM 6.5 SP9 . Pour plus d’informations, voir [Prise en charge Java Azure pour Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) .
 
 1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9, Java 10 et Java 12 sont des versions non LTS par Oracle (voir [Feuille de route de la prise en charge de Java SE par Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS au-delà de la fin des mises à jour publiques, seront directement prises en charge par Adobe pour tous les clients AEM qui utiliseront la technologie Oracle Java SE **jusqu’à décembre 2022**. Pour plus d’informations, voir [Prise en charge Java d’Oracle pour Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) .
 
@@ -190,7 +190,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 >
 >**La plupart des bases de données relationnelles bénéficient du niveau de prise en charge R sur AEM 6.5. Cette version s’accompagne des critères et d’un programme de prise en charge, comme indiqué dans la description du niveau R ci-dessus.**
 
-### Moteurs de servlet / Serveurs d’applications  {#servlet-engines-application-servers}
+### Moteurs de servlet / Serveurs d’applications {#servlet-engines-application-servers}
 
 Adobe Experience Manager peut s’exécuter comme serveur autonome (fichier JAR de démarrage rapide) ou comme application web avec un serveur d’applications tiers (fichier WAR).
 
@@ -241,7 +241,7 @@ Dans tous les autres cas, lorsqu’AEM est déployé sur Azure ou AWS, ou tout a
 
 Pour des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande vivement de travailler directement avec votre fournisseur cloud ou avec l’un des partenaires Adobe prenant en charge le déploiement d’AEM dans l’environnement de cloud de votre choix. Le partenaire ou fournisseur cloud que vous choisissez est responsable du dimensionnement, de la conception et de l’implémentation de l’architecture, et ce, pour répondre à vos besoins spécifiques en matière de performance, de chargement, d’évolutivité et de sécurité.
 
-### Plateformes Dispatcher (serveurs web)  {#dispatcher-platforms-web-servers}
+### Plateformes Dispatcher (serveurs web) {#dispatcher-platforms-web-servers}
 
 Dispatcher est le composant de mise en cache et d’équilibrage de charge. [Téléchargez la dernière version de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Experience Manager 6.5 nécessite Dispatcher version 4.3.2 ou ultérieure.
 
@@ -332,11 +332,11 @@ L’interface utilisateur d’AEM est optimisée en vue d’une utilisation sur 
 1. Version ESR (Extended Support Release) de Firefox. [Plus d’informations à ce sujet sur mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
 1. Prise en charge pour Apple iPad
 
-### Navigateurs pris en charge pour les sites web  {#supported-browsers-for-websites}
+### Navigateurs pris en charge pour les sites web {#supported-browsers-for-websites}
 
 En règle générale, la prise en charge du navigateur pour les sites web rendus par AEM Sites dépend de la mise en œuvre des modèles de pages AEM, de la conception et de la sortie des composants. Par conséquent, la responsabilité en revient à celui qui met en œuvre ces composants.
 
-### Clients WebDAV  {#webdav-clients}
+### Clients WebDAV {#webdav-clients}
 
 **Microsoft Windows 7+**
 
@@ -350,11 +350,11 @@ Pour se connecter avec Microsoft Windows 7 et versions ultérieures à une inst
 
 Pour améliorer la réactivité du client WebDav sous Windows, consultez l’article [2445570 de la Base de connaissances d’assistance Microsoft](https://support.microsoft.com/kb/2445570).
 
-## Autres remarques relatives aux plates-formes  {#additional-platform-notes}
+## Autres remarques relatives aux plates-formes {#additional-platform-notes}
 
 Vous trouverez dans cette section des remarques et des informations plus détaillées concernant l’exécution d’Adobe Experience Manager et de ses modules complémentaires.
 
-### IPv4 et IPv6  {#ipv-and-ipv}
+### IPv4 et IPv6 {#ipv-and-ipv}
 
 Tous les éléments d’Adobe Experience Manager (Instance, Dispatcher) peuvent être installés sur des réseaux IPv4 et IPv6.
 
@@ -373,7 +373,7 @@ par exemple, `https://www.yourserver.com:4502`
 
 * Le scénario par défaut de `localhost` sera interprété à la fois pour les installations réseau IPv4 et IPv6 Par exemple : `https://localhost:4502`
 
-### Configuration requise pour le module complémentaire AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
+### Configuration requise pour le module complémentaire AEM Dynamic Media  {#requirements-for-aem-dynamic-media-add-on}
 
 Par défaut, AEM Dynamic Media est désactivé. Voir ici pour [activer Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
@@ -449,7 +449,7 @@ Pour Windows x86 :
 * Versions 10.9.x et ultérieures
 * Pris en charge uniquement à des fins d’évaluation et de démonstration
 
-### Exigences pour le générateur de PDF AEM Forms  {#requirements-for-aem-forms-pdf-generator}
+### Exigences pour le générateur de PDF AEM Forms {#requirements-for-aem-forms-pdf-generator}
 
 <table>
  <tbody>
