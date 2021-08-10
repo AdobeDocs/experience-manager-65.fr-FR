@@ -12,9 +12,9 @@ docset: aem65
 feature: Gestion des ressources
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '11702'
+source-wordcount: '11699'
 ht-degree: 74%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 74%
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
-## Démarrage rapide : vidéos  {#quick-start-videos}
+## Démarrage rapide : vidéos {#quick-start-videos}
 
 Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapidement les opérations liées aux visionneuses de vidéos adaptatives dans Dynamic Media. Après chaque étape, il existe des références croisées aux en-têtes de rubrique où vous trouverez plus d’informations.
 
@@ -195,7 +195,7 @@ Vous étendez la portée de votre contenu multimédia aux utilisateurs de bureau
 
 Voir aussi [À propos des visionneuses HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
-### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Pour la diffusion en flux continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos adaptative.
 
@@ -282,7 +282,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
  </tbody>
 </table>
 
-## Architecture de la solution vidéo Dynamic Media  {#architecture-of-dynamic-media-video-solution}
+## Architecture de la solution vidéo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
 Le graphique suivant montre le workflow global de création de vidéos qui sont chargées et codées par le biais de DMGateway (dans le mode Hybride Dynamic Media) et mises à disposition pour une consommation publique.
 
@@ -306,7 +306,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source ayant la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
 
-* Dynamic Media prend principalement en charge les vidéos courtes d’une durée maximale de 30 minutes.
+* Dynamic Media prend en charge les vidéos courtes d’une durée maximale de 30 minutes.
 * Vous pouvez charger des fichiers vidéo source Principaux d’une taille de 15 Go chacun au maximum.
 
 Le tableau ci-dessous décrit la taille recommandée, le format et le débit minimal requis pour vos fichiers vidéo sources au moment de leur codage :
@@ -572,7 +572,7 @@ Pour publier des vidéos sur YouTube, vous devez disposer d’une ou de plusieur
 
 1. Accédez à [https://www.youtube.com](https://www.youtube.com/), puis connectez-vous à l’aide des informations d’identification de votre compte Google.
 1. Dans le coin supérieur droit de la page YouTube, cliquez sur l’image de votre profil (peut également s’afficher sous la forme d’une lettre dans un cercle coloré plein), puis cliquez sur **[!UICONTROL Paramètres YouTube]** (icône d’engrenage rond).
-1. Sur la page Présentation, sous l’en-tête Fonctionnalités supplémentaires, cliquez sur **[!UICONTROL Voir toutes mes chaînes ou créer une nouvelle chaîne]**.
+1. Sur la page Aperçu , sous l’en-tête Fonctionnalités supplémentaires, cliquez sur **[!UICONTROL Afficher tous mes canaux ou créer un canal]**.
 1. Depuis la page Chaînes, cliquez sur **[!UICONTROL Créer une chaîne]**.
 1. Sur la page Compte de marque, dans le champ nom du compte de marque, saisissez un nom d’entité professionnelle ou tout autre nom de chaîne de votre choix sous lequel vous souhaitez publier vos ressources vidéo, puis cliquez sur **[!UICONTROL Créer]**.
 
@@ -1183,7 +1183,7 @@ Dans l’exemple ci-dessus, le `Chapter 1` est l’identifiant de repère et il 
 
 Reportez-vous à la section [WebVTT : The web video text tracks format](https://w3c.github.io/webvtt/)
 
-**Pour ajouter des marqueurs de chapitre à la vidéo :**
+**Pour ajouter une navigation par chapitre vidéo :**
 
 1. Enregistrez le fichier `.vtt` en codage UTF8 afin d’éviter tout problème de rendu des caractères dans le texte du titre du chapitre.
 
@@ -1246,7 +1246,7 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode «
 1. vérifiez que vous avez déjà :
 
    * créé un dossier pour vos ressources vidéo ;
-   * [attribué un profil vidéo au dossier](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) ;
+   * [Appliquez un profil vidéo au dossier](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    * [téléchargé vos vidéos dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
