@@ -1,6 +1,6 @@
 ---
-title: Résolution des problèmes liés à Dynamic Media - Mode Scene7
-description: Dépannage de Dynamic Media lorsqu’il s’exécute en mode Scene7.
+title: Dépannage de Dynamic Media - mode Scene7
+description: Résolution des problèmes liés à Dynamic Media en mode Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,14 +11,14 @@ docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Résolution des problèmes
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 97%
+ht-degree: 85%
 
 ---
 
-# Dépannage de Dynamic Media – mode Scene7{#troubleshooting-dynamic-media-scene-mode}
+# Dépannage de Dynamic Media - mode Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 Le document suivant décrit la résolution des problèmes affectant Dynamic Media en mode d’exécution **dynamicmedia_scene7**.
 
@@ -26,8 +26,8 @@ Le document suivant décrit la résolution des problèmes affectant Dynamic Medi
 
 Assurez-vous que Dynamic Media a été correctement configuré en procédant comme suit :
 
-* La commande Start up contient l’argument `-r dynamicmedia_scene7` runmode.
-* Tous les packs de correctifs cumulatifs (CFP) AEM 6.4 ont été installés *avant* tout Feature Pack Dynamic Media disponible.
+* La commande Start up contient l’argument `-r dynamicmedia_scene7` run mode.
+* Tous les packs de correctifs cumulatifs (CFP) Adobe Experience Manager 6.4 ont été installés en premier *avant* les packs de fonctionnalités Dynamic Media disponibles.
 * Le Feature Pack 18912 facultatif est installé.
 
    Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic.
@@ -41,9 +41,9 @@ Assurez-vous que Dynamic Media a été correctement configuré en procédant com
 
 Vous trouverez ci-après quelques astuces et conseils généraux concernant toutes les ressources.
 
-### Propriétés de l’état de synchronisation des ressources  {#asset-synchronization-status-properties}
+### Propriétés de l’état de synchronisation des ressources {#asset-synchronization-status-properties}
 
-Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE Lite pour vérifier que la synchronisation de la ressource depuis AEM vers Dynamic Media s’est déroulée correctement :
+Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE Lite pour vérifier que la synchronisation de la ressource depuis Experience Manager vers Dynamic Media s’est déroulée correctement :
 
 | **Propriété** | **Exemple** | **Description** |
 |---|---|---|
@@ -54,7 +54,7 @@ Vous pouvez passer en revue les propriétés de ressource suivantes dans CRXDE L
 
 ### Journalisation de la synchronisation {#synchronization-logging}
 
-Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur AEM `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter le niveau de journalisation sur DEBUG sur le module `com.adobe.cq.dam.ips` via la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) pour collecter davantage d’informations.
+Les erreurs et problèmes de synchronisation sont consignés dans le fichier `error.log` (répertoire de serveur Experience Manager `/crx-quickstart/logs/`). La journalisation est suffisante pour déterminer la cause de la plupart des problèmes. Vous pouvez toutefois augmenter le niveau de journalisation sur DEBUG sur le module `com.adobe.cq.dam.ips` via la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) pour collecter davantage d’informations.
 
 ### Déplacement, copie et suppression {#move-copy-delete}
 
@@ -62,11 +62,11 @@ Avant d’effectuer une opération de déplacement, de copie ou de suppression, 
 
 * Pour les images et les vidéos, vérifiez qu’il existe une valeur `<object_node>/jcr:content/metadata/dam:scene7ID` avant d’effectuer des opérations de déplacement, de copie ou de suppression.
 * Pour les paramètres prédéfinis de visionneuse et d’image, vérifiez qu’il existe une valeur `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` avant d’effectuer des opérations de déplacement, de copie ou de suppression.
-* Si la valeur de métadonnées ci-dessus est absente, vous devez transférer à nouveau les ressources avant les opérations de déplacement, de copie ou de suppression.
+* Si la valeur de métadonnées ci-dessus est manquante, vous devez recharger les ressources avant les opérations de déplacement, de copie ou de suppression.
 
 ### Gestion de version {#version-control}
 
-Lors du remplacement d’une ressource Dynamic Media (nom et emplacement identiques), vous avez la possibilité de conserver les deux ressources ou de remplacer/créer une version :
+Lors du remplacement d’une ressource Dynamic Media (nom et emplacement identiques), vous pouvez conserver les deux ressources ou remplacer et créer une version :
 
 * Si vous conservez les deux, une nouvelle ressource est créée avec un nom unique pour l’URL de ressource publiée. Par exemple, `image.jpg` est la ressource d’origine et `image1.jpg` est la ressource qui vient d’être chargée.
 
@@ -89,11 +89,11 @@ Si des problèmes surviennent avec les images et les visionneuses, reportez-vous
     <ol>
      <li><p>Accédez à CRX/DE :</p>
       <ul>
-       <li>Vérifiez si le paramètre prédéfini dans le JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> est défini. Remarque : cet emplacement s’applique si vous avez effectué la mise à niveau d’AEM 6.x vers la version 6.4 et si vous avez choisi de ne pas utiliser la migration. Dans le cas contraire, l’emplacement est <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Vérifiez si le paramètre prédéfini dans le JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> est défini. Cet emplacement s’applique si vous avez effectué la mise à niveau d’Experience Manager 6.x vers la version 6.4 et si vous avez choisi de ne pas utiliser la migration. Dans le cas contraire, l’emplacement est <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Vérifiez que la ressource dans le JCR présente <code>dam:scene7FileStatus</code><strong> </strong>sous Métadonnées défini sur <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>Actualisez la page/accédez à une autre page et revenez sur la page (le code JSP de rail latéral doit être recompilé)</p> <p>Si cela ne fonctionne pas :</p>
+   <td><p>Actualisez la page ou accédez à une autre page et revenez sur la page (le code JSP de rail latéral doit être recompilé)</p> <p>Si cela ne fonctionne pas :</p>
     <ul>
      <li>Publiez la ressource.</li>
      <li>Rechargez la ressource et publiez-la.</li>
@@ -107,7 +107,7 @@ Si des problèmes surviennent avec les images et les visionneuses, reportez-vous
   <tr>
    <td>Le bouton <strong>Sélectionner</strong> n’est pas actif après sélection d’une ressource dans le cadre de la modification de ressource.</td>
    <td><p> </p> <p>Problème connu à corriger dans la version 6.4</p> <p> </p> </td>
-   <td><p>Cliquez sur un autre dossier dans le sélecteur de ressources et revenez pour sélectionner la ressource.</p> </td>
+   <td><p>Sélectionnez d’abord sur un autre dossier du sélecteur de ressources, puis revenez pour sélectionner la ressource.</p> </td>
   </tr>
   <tr>
    <td>La zone réactive de carrousel se déplace après un basculement entre des diapositives.</td>
@@ -161,7 +161,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
      <li>Attribuez un profil vidéo au dossier.</li>
      <li>Modifiez le profil vidéo de sorte qu’il inclue plusieurs paramètres de codage prédéfinis.</li>
      <li>Attendez que le traitement de la vidéo soit terminé.</li>
-     <li>Rechargez la vidéo et assurez-vous que le workflow Vidéo de codage de média dynamique n’est pas en cours d’exécution.<br /> </li>
+     <li>Que vous rechargiez la vidéo, assurez-vous que le workflow Vidéo de codage Dynamic Media n’est pas en cours d’exécution.<br /> </li>
      <li>Rechargez la vidéo.</li>
     </ol> </td>
   </tr>
@@ -175,8 +175,8 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
     </ul> </td>
    <td>
     <ol>
-     <li>Vérifiez votre instance AEM avec <code>-r dynamicmedia_scene7</code></li>
-     <li>Vérifiez que la configuration de Dynamic Media sous Cloud Services est correctement effectuée.</li>
+     <li>Vérifiez votre instance de Experience Manager avec <code>-r dynamicmedia_scene7</code></li>
+     <li>Vérifiez que la configuration Dynamic Media sous Cloud Services est correctement configurée.</li>
      <li>Vérifiez que le dossier contient un profil vidéo. Vérifiez également le profil vidéo.</li>
     </ol> </td>
   </tr>
@@ -218,12 +218,12 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
   </tr>
   <tr>
    <td>Les paramètres prédéfinis de la visionneuse ne sont pas publiés.</td>
-   <td><p>Accédez à la page de diagnostic du gestionnaire d’échantillons : <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observez les valeurs calculées. Dans le cadre d’un fonctionnement correct, vous devriez voir :</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Remarque</strong> : Environ 10 minutes peuvent être nécessaires après la configuration des paramètres cloud de Dynamic Media pour que les ressources de visionneuse se synchronisent.</p> <p>S’il reste des ressources non activées, cliquez sur l’un des boutons <strong>Répertorier toutes les ressources non activées</strong> pour afficher des informations détaillées.</p> </td>
+   <td><p>Accédez à la page de diagnostic du gestionnaire d’échantillons : <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observez les valeurs calculées. Lorsque le fonctionnement est correct, les éléments suivants s’affichent :</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Remarque</strong> : Environ 10 minutes peuvent être nécessaires après la configuration des paramètres cloud de Dynamic Media pour que les ressources de visionneuse se synchronisent.</p> <p>Si les ressources non activées restent, sélectionnez l’un des boutons <strong>Lister toutes les ressources non activées</strong> pour afficher les détails.</p> </td>
    <td>
     <ol>
      <li>Accédez à la liste des paramètres prédéfinis de la visionneuse dans les outils d’administration : <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Sélectionnez tous les paramètres prédéfinis de visionneuse, puis cliquez sur <strong>Publier</strong>.</li>
+     <li>Sélectionnez tous les paramètres prédéfinis de la visionneuse, puis <strong>Publier</strong>.</li>
      <li>Revenez au gestionnaire d’échantillons et notez que le nombre de ressources non activées est maintenant égal à zéro.</li>
     </ol> </td>
   </tr>
@@ -243,20 +243,20 @@ Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conse
        <li>Exemple : <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>Si les exemples de ressources ou l’illustration du paramètre prédéfini de la visionneuse n’ont pas été synchronisés ou publiés, redémarrez le processus de copie/synchronisation entier :</p>
+   <td><p>Si les exemples de ressources ou l’illustration du paramètre prédéfini de la visionneuse n’ont pas été synchronisés ou publiés, redémarrez le processus de copie ou de synchronisation entier :</p>
     <ol>
      <li>Accédez à CRXDE Lite.
       <ul>
        <li>Supprimez <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
       </ul> </li>
-     <li>Accédez au gestionnaire de modules CRX : <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>.
+     <li>Accédez au gestionnaire de modules CRX : <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
       <ol>
        <li>Recherchez le module de visionneuse dans la liste (il commence par <code>cq-dam-scene7-viewers-content</code>).</li>
-       <li>Cliquez sur <strong>Réinstaller</strong>.</li>
+       <li>Sélectionnez <strong>Réinstaller</strong>.</li>
       </ol> </li>
      <li>Sous Cloud Services, accédez à la page Configuration Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media.
       <ul>
-       <li>N’effectuez aucune modification, cliquez sur <strong>Enregistrer</strong>. Cela a pour effet de déclencher à nouveau la logique pour créer et synchroniser les exemples de ressources, la feuille CSS du paramètre prédéfini de la visionneuse et l’illustration.<br />  </li>
+       <li>N’effectuez aucune modification, sélectionnez <strong>Enregistrer</strong>. Cette action déclenche à nouveau la logique pour créer et synchroniser les exemples de ressources, le CSS du paramètre prédéfini de la visionneuse et l’illustration.<br />  </li>
       </ul> </li>
     </ol> </td>
   </tr>
