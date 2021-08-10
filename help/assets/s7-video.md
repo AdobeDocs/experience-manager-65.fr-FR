@@ -8,12 +8,13 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Vidéo
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 38%
+source-wordcount: '1564'
+ht-degree: 36%
 
 ---
 
@@ -45,7 +46,7 @@ Les formats suivants sont pris en charge pour le composant vidéo Scene7 :
 * F4V H.264
 * MP4 H.264
 
-## Choix de l’emplacement du téléchargement de la vidéo {#deciding-where-to-upload-your-video}
+## Choix de l’emplacement de chargement de la vidéo {#deciding-where-to-upload-your-video}
 
 Le choix de l’emplacement du téléchargement du contenu vidéo dépend des éléments suivants :
 
@@ -70,11 +71,9 @@ Si vous n’avez pas besoin d’un workflow ou d’un contrôle de version pour 
 1. Dans Experience Manager, accédez aux ressources vidéo dans la gestion de contenu web dans l’onglet **[!UICONTROL Scene7]** de l’outil de recherche de contenu.
 1. Créez avec le composant **[!UICONTROL Vidéo Scene7]** .
 
-## Configuration de l’intégration avec la vidéo Scene7 {#configuring-integration-with-scene-video}
+## Configuration de l’intégration avec Scene7 Video {#configuring-integration-with-scene-video}
 
-Pour configurer les paramètres prédéfinis universaux :
-
-1. Dans **[!UICONTROL Services Cloud]**, accédez à la configuration **[!UICONTROL Scene7]** et cliquez sur **[!UICONTROL Modifier]**.
+1. Dans **[!UICONTROL Cloud Services]**, accédez à votre configuration **[!UICONTROL Scene7]** et sélectionnez **[!UICONTROL Modifier]**.
 1. Sélectionnez l’onglet **[!UICONTROL Vidéo]**.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -93,16 +92,16 @@ Pour configurer les paramètres prédéfinis universaux :
 
 1. Les profils de codage sélectionnés sont automatiquement appliqués à toutes les vidéos téléchargées dans le dossier cible de la gestion des actifs numériques CQ que vous avez défini pour cette configuration de cloud Scene7. Vous pouvez définir plusieurs configurations de cloud Scene7 avec différents dossiers cibles afin d’appliquer différents profils de codage, selon vos besoins.
 
-## Mise à jour de la visionneuse et des paramètres prédéfinis de codage {#updating-viewer-and-encoding-presets}
+## Mettre à jour la visionneuse et les paramètres prédéfinis de codage {#updating-viewer-and-encoding-presets}
 
-Pour mettre à jour la visionneuse et les paramètres prédéfinis de codage pour la vidéo, car ils ont été mis à jour dans Scene7, accédez à la configuration Scene7 dans la configuration cloud et appuyez sur **[!UICONTROL Mettre à jour la visionneuse et les paramètres prédéfinis de codage]**.
+Pour mettre à jour la visionneuse et les paramètres prédéfinis de codage pour la vidéo, car ils ont été mis à jour dans Scene7, accédez à la configuration Scene7 dans la configuration cloud et sélectionnez **[!UICONTROL Mettre à jour la visionneuse et les paramètres prédéfinis de codage]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
 ## Chargement de la vidéo source Principale vers Scene7 à partir de la gestion des ressources numériques d’Adobe {#uploading-your-master-video}
 
 1. Accédez au dossier cible de la gestion des actifs numériques CQ dans lequel vous avez défini la configuration de cloud avec les profils de codage Scene7.
-1. Cliquez sur **[!UICONTROL Télécharger]** pour charger la vidéo source Principale. Le chargement et le codage des vidéos sont terminés une fois le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] terminé et une coche s’affiche pour l’option **[!UICONTROL Publier sur Scene7]**.
+1. Sélectionnez **[!UICONTROL Télécharger]** pour charger la vidéo source Principale. Le chargement et le codage des vidéos sont terminés une fois le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] terminé et une coche s’affiche pour l’option **[!UICONTROL Publier sur Scene7]**.
 
    >[!NOTE]
    >
@@ -150,9 +149,9 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 >
 >Les nouveaux profils vidéo et leurs modifications doivent être activés pour la publication.
 
-1. Dans Experience Manager, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Console de configuration]**.
+1. Dans Experience Manager, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Console de configuration]**.
 1. Dans la **[!UICONTROL console de configuration]**, accédez à **[!UICONTROL Outils]** > **[!UICONTROL DAM]** > **[!UICONTROL Profils vidéo]** dans l’arborescence de navigation.
-1. Créez un profil vidéo S7. Dans le menu **[!UICONTROL New]**., sélectionnez **[!UICONTROL Créer une page]**, puis sélectionnez le modèle Profil vidéo Scene7 . Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer]**.
+1. Créez un profil vidéo S7. Dans le menu **[!UICONTROL New]**., sélectionnez **[!UICONTROL Créer une page]**, puis sélectionnez le modèle Profil vidéo Scene7 . Attribuez un nom à la nouvelle page de profil vidéo et sélectionnez **[!UICONTROL Créer]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
