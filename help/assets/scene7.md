@@ -9,11 +9,12 @@ topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '2849'
-ht-degree: 22%
+source-wordcount: '2850'
+ht-degree: 21%
 
 ---
 
@@ -103,11 +104,11 @@ L’ajout d’un composant Dynamic Media Classic (Scene7) à une page est identi
    >
    >Dans l’interface utilisateur tactile uniquement, vous devez faire glisser l’image ou la vidéo sur le composant Dynamic Media Classic que vous avez placé sur la page. La sélection et la modification du composant Dynamic Media Classic, puis le choix de la ressource ne sont pas prises en charge.
 
-### Ajout d’expériences d’affichage interactif à un site réactif {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Ajout d’une expérience de visionnage interactif à un site réactif {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 La conception réactive de vos ressources signifie que votre ressource s’adapte en fonction de l’endroit où elle s’affiche. Avec la conception réactive, les mêmes éléments peuvent être affichés sur plusieurs appareils.
 
-Voir aussi [Conception réactive pour les pages Web](/help/sites-developing/responsive.md).
+Voir aussi [Conception réactive pour les pages web](/help/sites-developing/responsive.md).
 
 **Pour ajouter une expérience de visionnage interactif à un site réactif :**
 
@@ -169,7 +170,7 @@ Le composant Dynamic Media Classic **[!UICONTROL Image]** vous permet d’ajoute
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
-**[!UICONTROL Paramètre prédéfini de la visionneuse]**  : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md). Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+**[!UICONTROL Paramètre prédéfini de la visionneuse]**  : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir [Gestion des paramètres prédéfinis de la visionneuse](/help/assets/managing-viewer-presets.md). Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
 **[!UICONTROL Configuration de Dynamic Media Classic]**  : sélectionnez la configuration de Dynamic Media Classic que vous souhaitez utiliser pour récupérer les paramètres d’image prédéfinis principaux à partir de SPS.
 
