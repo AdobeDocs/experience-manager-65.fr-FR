@@ -6,30 +6,30 @@ contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 79%
+source-wordcount: '221'
+ht-degree: 45%
 
 ---
 
 # Rendus vidéo {#video-renditions}
 
-Le composant Adobe Experience Manager (AEM) Assets génère des rendus vidéo pour les ressources vidéo de différents formats dont OGG, FLV, etc.
+Adobe Experience Manager Assets génère des rendus vidéo pour les ressources vidéo de différents formats, notamment OGG, FLV, etc.
 
-Le composant AEM Assets prend en charge les rendus statiques et dynamiques (rendus avec codage DM) pour les ressources multimédias.
+Experience Manager Assets prend en charge les rendus statiques et dynamiques (rendus codés en MD) pour les ressources multimédias.
 
 Les rendus statiques sont générés en mode natif à l’aide de FFMPEG (installé et disponible sur le chemin système) et stockés dans le référentiel de contenu.
 
 Les rendus avec codage DM sont stockés dans le serveur proxy et diffusés au moment de l’exécution.
 
-Les ressources AEM fournissent une prise en charge de lecture pour ces rendus du côté client.
+Les ressources Experience Manager prennent en charge la lecture de ces rendus côté client.
 
-Pour afficher les rendus d’une ressource vidéo spécifique, ouvrez sa page de ressource, puis appuyez sur l’icône de navigation globale. Choisissez ensuite **[!UICONTROL Rendus]** dans la liste.
+Pour afficher les rendus d’une ressource vidéo spécifique, ouvrez la page Ressource correspondante, puis sélectionnez l’icône Navigation globale . Choisissez ensuite **[!UICONTROL Rendus]** dans la liste.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-La liste des rendus vidéo s’affiche dans le panneau **[!UICONTROL Rendus.]**
+La liste des rendus vidéo s’affiche dans le panneau **[!UICONTROL Rendus]** .
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
@@ -41,6 +41,6 @@ Une fois que vous avez configuré le serveur proxy et créé les profils vidéo,
 
 >[!NOTE]
 >
->La lecture audio ne fonctionne pas pour les fichiers OGG et WAV sur Microsoft Internet Explorer 11. Une erreur `Invalid Source` s’affiche sur la page des détails de la ressource pour les ressources avec l’extension OGG ou WAV.
+>La lecture audio ne fonctionne pas pour les fichiers OGG et WAV sur Microsoft® Internet Explorer 11. Une erreur `Invalid Source` s’affiche sur la page des détails de la ressource pour les ressources avec l’extension OGG ou WAV.
 >
->Sous MS Edge et iPad, les fichiers OGG ne sont pas lus et génèrent une erreur de format non pris en charge.
+>Sur MS® Edge et iPad, les fichiers OGG ne sont pas lus et génèrent une erreur de format non prise en charge.
