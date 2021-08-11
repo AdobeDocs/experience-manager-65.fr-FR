@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration, mode Scene7
-source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
+source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
 workflow-type: tm+mt
 source-wordcount: '6941'
 ht-degree: 49%
@@ -168,7 +168,7 @@ Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditi
 * Assurez-vous que votre instance de Experience Manager est configurée avec le stockage Blob Amazon S3 ou Microsoft® Azure.
 
    >[!NOTE]
-   Configurez le stockage Blob de Microsoft Azure avec les deux clés d’accès (key1 et key2), car cette fonctionnalité de chargement volumineuse n’est pas prise en charge avec AzureSas dans la configuration de stockage Blob.
+   Configurez le stockage Blob de Microsoft Azure avec une clé d’accès et une clé secrète, car cette fonctionnalité de chargement volumineuse n’est pas prise en charge avec AzureSas dans la configuration de stockage Blob.
 
 * Le [téléchargement Direct Binary Access](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) d’Oak est activé (le *téléchargement Direct Binary Access* d’Oak n’est pas requis).
 
