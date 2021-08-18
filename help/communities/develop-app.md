@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 6%
+source-wordcount: '578'
+ht-degree: 7%
 
 ---
 
-# Développer l’application Sandbox {#develop-sandbox-application}
+# Développement d’une application Sandbox  {#develop-sandbox-application}
 
 Dans cette section, maintenant que le modèle a été configuré dans la section [application initiale](initial-app.md) et les pages initiales établies dans la section [contenu initial](initial-content.md), l’application peut être développée à l’aide de scripts de base, notamment la possibilité d’activer la création avec des composants Communities. A la fin de cette section, le site web sera fonctionnel.
 
@@ -25,7 +25,7 @@ Dans cette section, maintenant que le modèle a été configuré dans la section
 
 Le script par défaut, créé lorsque le composant qui effectue le rendu du modèle de page de lecture a été ajouté, est modifié afin d’inclure le fichier head.jsp de la page de base et un fichier body.jsp local.
 
-### Super Type de ressource {#super-resource-type}
+### Super Resource Type {#super-resource-type}
 
 La première étape consiste à ajouter une propriété de super type de ressource au noeud `/apps/an-scf-sandbox/components/playpage` afin qu’il hérite des scripts et des propriétés du super type.
 
@@ -121,7 +121,7 @@ Utilisation de CRXDE Lite:
 
 **Affichez la page dans un navigateur en mode d’édition :**
 
-* Interface utilisateur standard : [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
+* Interface utilisateur standard: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 Vous devriez non seulement voir l’en-tête **Lecture de communauté**, mais également l’interface utilisateur pour modifier le contenu de la page.
 
@@ -129,7 +129,7 @@ Le panneau latéral Ressources/Composant s’affiche lorsque le panneau latéral
 
 ![view-page](assets/view-page.png)
 
-* IU classique : [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
+* IU classique: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 Voici comment la page de lecture s’affiche dans l’IU classique, y compris avec l’outil de recherche de contenu (cf) :
 
@@ -169,7 +169,7 @@ Dans un environnement multilingue, la page racine inclut un script qui analyse l
 
 Dans cet exemple simple, la page racine est automatiquement définie pour rediriger vers la page anglaise, qui peut être développée ultérieurement pour être la page d’entrée principale avec un lien vers la page de lecture.
 
-Remplacez l’URL du navigateur par la page racine : [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
+Remplacez l’URL du navigateur par la page racine : `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
 * Sélectionner l’icône Informations sur la page
 * Sélectionnez **[!UICONTROL Ouvrir les propriétés]**
