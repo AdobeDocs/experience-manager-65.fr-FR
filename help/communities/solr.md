@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1481'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Téléchargez et installez Apache Solr :
 
 ## Mode SolrCloud {#solrcloud-mode}
 
-[](https://cwiki.apache.org/confluence/display/solr/SolrCloud) Le mode SolrCloud est recommandé pour les environnements de production. Lors de l’exécution en mode SolrCloud, SolrCloud doit être installé et configuré avant d’installer la recherche multilingue (MLS).
+[](https://solr.apache.org/guide/6_6/solrcloud.html) Le mode SolrCloud est recommandé pour les environnements de production. Lors de l’exécution en mode SolrCloud, SolrCloud doit être installé et configuré avant d’installer la recherche multilingue (MLS).
 
 Il est recommandé de suivre les instructions d’installation de SolrCloud :
 
