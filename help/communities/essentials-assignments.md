@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '222'
 ht-degree: 13%
 
 ---
@@ -64,7 +64,7 @@ Les états de fin et de réussite sont utilisés dans les rapports et les banni�
 * Non attribué
 * Non démarré (nouveau)
 * En cours
-* Terminer
+* Terminé
 
 État de réussite:
 
@@ -78,10 +78,10 @@ Les seules combinaisons possibles d’achèvement et d’état de réussite sont
 |---|---|
 | Non démarré | Inconnu |
 | En cours | Inconnu |
-| Terminer | Réussite |
-| Terminer | Échec |
+| Terminé | Réussite |
+| Terminé | Échec |
 
-## Principes élémentaires côté serveur {#essentials-for-server-side}
+## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
 ### Fonction Affectations {#assignments-function}
 
@@ -93,4 +93,4 @@ Une structure de site de communauté qui comprend la fonction [Affectations](/he
 
 * [API de création de rapports](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [API Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)
