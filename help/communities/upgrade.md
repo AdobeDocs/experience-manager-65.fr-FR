@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ Pour toutes les instances de création et de publication AEM 6.3 :
       ![Utilitaires](assets/utilities.png)
 
 
-### Stockage sur site {#on-premise-storage}
+### Stockage On-premise {#on-premise-storage}
 
 Si le site mis à niveau n’a pas utilisé l’espace de stockage dans le cloud, tout contenu généré par l’utilisateur préexistant doit être converti pour se conformer à la nouvelle structure introduite dans AEM 6.1 Communities pour prendre en charge le magasin commun.
 
@@ -88,7 +88,7 @@ Voir aussi [Utilisation de Maven pour Communities](/help/communities/maven.md).
 
 ### Aucun modèle de composant JSP {#no-jsp-component-templates}
 
-La [structure de composant social](/help/communities/scf.md) (SCF) utilise le [langage de modèle HandlebarsJS](https://www.handlebarsjs.com/) (HBS) à la place du langage de modèle Java Server Pages (JSP) utilisé avant AEM 6.0.
+La [structure de composant social](/help/communities/scf.md) (SCF) utilise le langage de modèle `HandlebarsJS` (HBS) à la place des pages de serveur Java (JSP) utilisées avant AEM 6.0.
 
 Dans AEM 6.0, les composants JSP sont restés aux côtés des nouveaux composants de structure HBS au même emplacement, les composants HBS étant généralement situés dans des sous-dossiers appelés &quot;hbs&quot;.
 
@@ -100,7 +100,7 @@ Dans AEM 6.0, les composants JSP sont restés aux côtés des nouveaux composant
 
 En plus de déplacer le contenu généré par l’utilisateur des versions antérieures, il est également possible d’utiliser l’outil pour déplacer le contenu créé par l’utilisateur d’une [SRP](/help/communities/working-with-srp.md) à une autre, par exemple de MSRP vers DSRP.
 
-## Mise à niveau à partir d’AEM 5.6.1 ou version antérieure {#upgrading-from-aem-or-earlier}
+## Mise à niveau à partir d’AEM 5.6.1 ou d’une version antérieure {#upgrading-from-aem-or-earlier}
 
 Conceptuellement, il existe trois générations de composants de communautés :
 
