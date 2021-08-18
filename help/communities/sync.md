@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: f4f4be3d9885723953b1306ff25a52d27799aa93
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2490'
 ht-degree: 12%
 
 ---
@@ -119,7 +119,7 @@ L’instance d’auteur envoie un ping au point de terminaison de l’exportateu
 Pour configurer la configuration des agents de synchronisation Apache Sling :
 
 1. Connectez-vous avec les privilèges d’administrateur sur votre instance d’auteur AEM.
-1. Accédez à la [console web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html). Par exemple, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md). Par exemple, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Recherchez **Agent de distribution Apache Sling - Fabrique d’agents de synchronisation**.
 
    * Sélectionnez la configuration existante à ouvrir pour modification (icône représentant un crayon).
@@ -165,7 +165,7 @@ Cette configuration est utilisée pour configurer les données que vous souhaite
 Pour configurer les données (chemins d’accès aux noeuds) à synchroniser :
 
 1. Connectez-vous avec les privilèges d’administrateur sur votre instance de publication.
-1. Accédez à la [console web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
+1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md).
 
    Par exemple, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
@@ -188,7 +188,7 @@ Si la modification de l’appartenance d’un groupe dans un éditeur ne met pas
 Pour garantir la synchronisation des membres :
 
 1. Connectez-vous avec les privilèges d’administrateur sur votre instance de publication.
-1. Accédez à la [console web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
+1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md).
 
    Par exemple, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
