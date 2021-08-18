@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Si un composant doit prendre en charge la modification des données, l’implém
 
 L’API SocialComponent peut être étendue afin de fournir les données requises par un client pour une couche d’affichage ou un client HTTP.
 
-### Mode de rendu des pages pour le client {#how-pages-are-rendered-for-client}
+### Rendu des pages pour le client {#how-pages-are-rendered-for-client}
 
 ![scf-page-rendering](assets/scf-overview.png)
 
@@ -77,7 +77,7 @@ Les classes principales sont décrites sur la page [Personnalisation côté serv
 
 Visitez [Présentation du fournisseur de ressources de stockage](srp.md) pour en savoir plus sur l’utilisation du contenu créé par l’utilisateur.
 
-### API HTTP  {#http-api}
+### API HTTP {#http-api}
 
 L’API HTTP prend en charge la facilité de personnalisation et de choix des plateformes clientes pour les applications PhoneGap, les applications natives, ainsi que d’autres intégrations et applications monopages. De plus, l’API HTTP permet à un site communautaire de s’exécuter en tant que service sans client, de sorte que les composants de structure puissent être intégrés à n’importe quelle page web créée sur n’importe quelle technologie.
 
@@ -123,9 +123,9 @@ Pour en savoir plus sur la gestion du contenu généré par l’utilisateur stoc
 
 Visitez la page [Personnalisations côté serveur](server-customize.md) pour plus d’informations sur la personnalisation de la logique commerciale et du comportement d’un composant Communities côté serveur.
 
-## Handlebars Langue de modèle JS {#handlebars-js-templating-language}
+## Langage de modèle JS Handlebars {#handlebars-js-templating-language}
 
-L’un des changements les plus visibles dans la nouvelle structure est l’utilisation du [langage de modèle JS Handlebars (HBS)](https://www.handlebarsjs.com/), une technologie open source populaire pour le rendu client-serveur.
+L’utilisation du langage de modèle `Handlebars JS` (HBS), une technologie Open Source populaire pour le rendu client-serveur, constitue l’un des changements les plus visibles dans la nouvelle structure.
 
 Les scripts HBS sont simples, sans logique, compilés à la fois sur le serveur et le client, faciles à superposer et à personnaliser, et sont naturellement liés à l’UX du client, car HBS prend en charge le rendu côté client.
 
@@ -141,7 +141,7 @@ Pour ce faire, tous les modèles HBS dans le chemin de recherche Sling (tous les
 
 L’accès HTTP aux fichiers .hbs peut ne pas être interdit.
 
-### Ajouter ou inclure un composant Communautés {#add-or-include-a-communities-component}
+### Ajout ou inclusion d’un composant Communautés {#add-or-include-a-communities-component}
 
 La plupart des composants Communities doivent être *ajoutés* en tant que ressource adressable Sling. Un certain nombre de composants Communities peuvent être *inclus* dans un modèle en tant que ressource non existante afin de permettre l’inclusion et la personnalisation dynamiques de l’emplacement où écrire du contenu généré par l’utilisateur.
 
@@ -189,7 +189,7 @@ Voir [Aide-mémoire SCF](handlebars-helpers.md) pour obtenir la liste et la desc
 
 ## Structure côté client {#client-side-framework}
 
-### Model-View Javascript Framework {#model-view-javascript-framework}
+### Structure JavaScript de l’affichage du modèle {#model-view-javascript-framework}
 
 La structure comprend une extension de [Backbone.js](https://www.backbonejs.org/), une structure JavaScript d’affichage de modèle, pour faciliter le développement de composants interactifs riches. La nature orientée objet prend en charge une structure extensible/réutilisable. La communication entre le client et le serveur est simplifiée au moyen de l’API HTTP.
 
@@ -214,7 +214,7 @@ Pour personnaliser l’aspect et le comportement d’un composant Communities c�
 * [Extension de JavaScript](client-customize.md#extending-javascript)
 * [Clientlibs pour SCF](client-customize.md#clientlibs-for-scf)
 
-## Notions fondamentales sur les fonctionnalités et les composants {#feature-and-component-essentials}
+## Fonctionnalités et composants essentiels {#feature-and-component-essentials}
 
 Les informations essentielles pour les développeurs sont décrites dans la section [Notions fondamentales sur les fonctionnalités et les composants](essentials.md) .
 
