@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3288'
 ht-degree: 4%
 
 ---
@@ -130,7 +130,7 @@ Le panneau Conception contient 2 sous-panneaux pour sélectionner le thème et l
 
 ![sitetheme](assets/sitetheme.png)
 
-La structure utilise [Twitter Bootstrap](https://twitterbootstrap.org/) pour apporter une conception réactive et flexible au site. Un des nombreux thèmes de Bootstrap préchargés peut être sélectionné pour mettre en forme le modèle de site de communauté sélectionné ou un thème de Bootstrap peut être chargé.
+La structure utilise `Twitter Bootstrap` pour apporter une conception réactive et flexible au site. Un des nombreux thèmes de Bootstrap préchargés peut être sélectionné pour mettre en forme le modèle de site de communauté sélectionné ou un thème de Bootstrap peut être chargé.
 
 Lorsqu’il est sélectionné, le thème est recouvert d’une coche bleue opaque.
 
