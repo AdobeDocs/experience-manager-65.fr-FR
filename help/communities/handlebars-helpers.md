@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1521'
 ht-degree: 9%
 
 ---
 
-# Aide-mémoire SCF {#scf-handlebars-helpers}
+# Assistant de Handlebars SCF {#scf-handlebars-helpers}
 
 | **[⇐ Notions fondamentales sur les fonctionnalités](essentials.md)** | **[⇒ de personnalisation côté serveur](server-customize.md)** |
 |---|---|
@@ -340,7 +340,7 @@ Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnal
     <link href="/etc/clientlibs/social/hbs/comments.css" rel="stylesheet" type="text/css">
 ```
 
-## {#pretty-time} Pretty-time
+## Plutôt temps {#pretty-time}
 
 Une aide permettant d’afficher le temps écoulé jusqu’à un point de coupure, après lequel un format de date normal est affiché.
 
@@ -448,8 +448,6 @@ REMARQUE : cela peut renvoyer une chaîne vide
 ```
 
 ## Présentation de base de Handlebars.js {#handlebars-js-basic-overview}
-
-Aperçu rapide des fonctions d’assistance à partir de la [documentation Handlebars.js](https://handlebarsjs.com/expressions.html) :
 
 * Un appel d’assistance Handlebars est un identifiant simple (le *nom* de l’assistant), suivi de zéro ou de plusieurs paramètres séparés par de l’espace.
 * Les paramètres peuvent être un simple objet String, Number, boolean ou JSON, ainsi qu’une séquence facultative de paires clé-valeur (arguments de hachage) comme dernier(s) paramètre(s).
