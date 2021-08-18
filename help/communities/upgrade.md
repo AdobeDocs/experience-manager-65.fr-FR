@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
+source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 4%
+source-wordcount: '677'
+ht-degree: 5%
 
 ---
 
@@ -88,7 +88,7 @@ Voir aussi [Utilisation de Maven pour Communities](/help/communities/maven.md).
 
 ### Aucun modèle de composant JSP {#no-jsp-component-templates}
 
-La [structure de composant social](/help/communities/scf.md) (SCF) utilise le langage de modèle `HandlebarsJS` (HBS) à la place des pages de serveur Java (JSP) utilisées avant AEM 6.0.
+La [structure de composant social](/help/communities/scf.md) (SCF) utilise le [langage de modèle HandlebarsJS](https://handlebarsjs.com/) (HBS) à la place du langage de modèle Java Server Pages (JSP) utilisé avant AEM 6.0.
 
 Dans AEM 6.0, les composants JSP sont restés aux côtés des nouveaux composants de structure HBS au même emplacement, les composants HBS étant généralement situés dans des sous-dossiers appelés &quot;hbs&quot;.
 
