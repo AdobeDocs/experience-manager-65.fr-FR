@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f4f4be3d9885723953b1306ff25a52d27799aa93
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2508'
 ht-degree: 12%
 
 ---
@@ -164,7 +164,7 @@ Cette configuration est utilisée pour configurer les données que vous souhaite
 
 Pour configurer les données (chemins d’accès aux noeuds) à synchroniser :
 
-1. Connectez-vous avec les privilèges d’administrateur sur votre instance de création.
+1. Connectez-vous avec les privilèges d’administrateur sur votre instance de publication.
 1. Accédez à la [console web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
 
    Par exemple, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
@@ -187,7 +187,7 @@ Si la modification de l’appartenance d’un groupe dans un éditeur ne met pas
 
 Pour garantir la synchronisation des membres :
 
-1. Connectez-vous avec les privilèges d’administrateur sur votre instance d’auteur AEM.
+1. Connectez-vous avec les privilèges d’administrateur sur votre instance de publication.
 1. Accédez à la [console web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
 
    Par exemple, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
