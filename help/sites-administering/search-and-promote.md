@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 33%
+source-wordcount: '875'
+ht-degree: 34%
 
 ---
 
@@ -85,7 +85,6 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
    >
    >à l’aide de vos identifiants Search&amp;Promote (adresse électronique/mot de passe) valides.
    >Ensuite, vous devez consulter votre URL dans la barre d’adresse de votre navigateur, qui doit ressembler à ceci :
-   >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
