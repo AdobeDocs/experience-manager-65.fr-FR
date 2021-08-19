@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 77%
@@ -56,7 +56,7 @@ Pour créer un workflow avec l’éditeur, procédez comme suit :
 >
 >Ce dossier peut ensuite être utilisé pour [gérer l’accès aux modèles qu’il contient](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
-## Modification d’un workflow  {#editing-a-workflow}
+## Modification d’un workflow {#editing-a-workflow}
 
 Vous pouvez modifier un workflow existant pour effectuer les opérations suivantes :
 
@@ -67,7 +67,7 @@ La modification d’un [**workflow (prêt à l’emploi) par défaut et/ou héri
 
 Une fois les mises à jour apportées à votre workflow, vous devez utiliser l’option **Synchronisation** pour **générer un modèle d’exécution**. Pour plus d’informations, voir [Synchronisation de votre workflow](#sync-your-workflow-generate-a-runtime-model).
 
-### Synchronisation de votre workflow – Générer un modèle d’exécution  {#sync-your-workflow-generate-a-runtime-model}
+### Synchronisation de votre workflow – Générer un modèle d’exécution {#sync-your-workflow-generate-a-runtime-model}
 
 L’option **Synchronisation** (à droite dans la barre d’outils de l’éditeur) génère un [modèle d’exécution](/help/sites-developing/workflows.md#runtime-model). Il s’agit du modèle employé lorsqu’un utilisateur lance un flux. Si vous ne **synchronisez** pas vos modifications, elles ne seront pas disponibles au moment de l’exécution.
 
@@ -143,7 +143,7 @@ Pour ajouter des étapes à votre modèle de workflow, procédez comme suit :
 
    Pour plus d’informations, voir [Synchronisation de votre workflow](#sync-your-workflow-generate-a-runtime-model).
 
-### Configuration d’une étape de workflow  {#configuring-a-workflow-step}
+### Configuration d’une étape de workflow {#configuring-a-workflow-step}
 
 Vous pouvez **configurer** et personnaliser le comportement d’une étape de workflow à l’aide de la boîte de dialogue **Propriétés des étapes**.
 
@@ -165,7 +165,7 @@ Vous pouvez **configurer** et personnaliser le comportement d’une étape de wo
 
    Pour plus d’informations, voir [Synchronisation de votre workflow](#sync-your-workflow-generate-a-runtime-model).
 
-### Création d’un workflow transitoire  {#creating-a-transient-workflow}
+### Création d’un workflow transitoire {#creating-a-transient-workflow}
 
 Vous pouvez créer un modèle de workflow [Transitoire](/help/sites-developing/workflows.md#transient-workflows) lors de la phase de création proprement dite ou en modifiant un modèle existant :
 
@@ -181,7 +181,7 @@ Vous pouvez créer un modèle de workflow [Transitoire](/help/sites-developing/w
 
 >[!NOTE]
 >
->Lorsque vous exécutez un workflow en mode [transitoire](/help/sites-developing/workflows.md#transient-workflows), AEM ne stocke aucun historique de workflow. Par conséquent, [Chronologie](/help/sites-authoring/basic-handling.md#timeline) n’affiche aucune information relative au workflow. [](/help/sites-authoring/basic-handling.md#timeline)
+>Lorsque vous exécutez un workflow en mode [transitoire](/help/sites-developing/workflows.md#transient-workflows), AEM ne stocke aucun historique de workflow. Par conséquent, [Chronologie](/help/sites-authoring/basic-handling.md#timeline) n’affiche aucune information relative au workflow.
 
 ## Mise à disposition des modèles de workflow dans l’interface utilisateur tactile {#classic2touchui}
 
@@ -220,7 +220,7 @@ Vous pouvez configurer un modèle de workflow pour la [Prise en charge multi-res
 
    Pour plus d’informations, voir [Synchronisation de votre workflow](#sync-your-workflow-generate-a-runtime-model).
 
-### Configuration des phases de workflow (qui affichent la progression du workflow)  {#configuring-workflow-stages-that-show-workflow-progress}
+### Configuration des phases de workflow (qui affichent la progression du workflow) {#configuring-workflow-stages-that-show-workflow-progress}
 
 Les [phases de workflow](/help/sites-developing/workflows.md#workflow-stages) vous aident à visualiser la progression d’un workflow lors de la gestion de tâches.
 
@@ -260,7 +260,7 @@ Pour définir des **Phases** pour votre workflow, procédez comme suit :
 
    Pour plus d’informations, voir [Synchronisation de votre workflow](#sync-your-workflow-generate-a-runtime-model).
 
-## Exportation d’un modèle de workflow dans un module  {#exporting-a-workflow-model-in-a-package}
+## Exportation d’un modèle de workflow dans un module {#exporting-a-workflow-model-in-a-package}
 
 Pour exporter un modèle de workflow dans un module, procédez comme suit :
 
@@ -293,7 +293,7 @@ Pour exporter un modèle de workflow dans un module, procédez comme suit :
 1. Sélectionnez **Compilation** dans la barre d’outils de votre définition de module.
 1. Sélectionnez **Télécharger** dans la barre d’outils du module.
 
-## Utilisation de workflow pour traiter des envois du formulaire  {#using-workflows-to-process-form-submissions}
+## Utilisation de workflow pour traiter des envois du formulaire {#using-workflows-to-process-form-submissions}
 
 Vous pouvez configurer un formulaire pour qu’il soit traité par le workflow sélectionné. Lorsque des utilisateurs envoient le formulaire, une instance de workflow est créée avec les données de l’envoi en tant que charge utile.
 
@@ -324,7 +324,7 @@ Vous pouvez également configurer AEM pour qu’il affiche des messages **DEBUG*
 
 ## Exemples {#examples}
 
-### Exemple : création d’un workflow (simple) pour accepter ou rejeter une demande de publication  {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
+### Exemple : création d’un workflow (simple) pour accepter ou rejeter une demande de publication {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
 
 Pour illustrer certaines des possibilités de création d&#39;un workflow, l&#39;exemple suivant crée une variante du workflow `Publish Example`.
 
