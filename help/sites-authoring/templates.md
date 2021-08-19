@@ -11,7 +11,7 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '4901'
 ht-degree: 97%
@@ -114,7 +114,7 @@ AEM comporte maintenant deux types de modèles standard :
 
 Par définition, la console de modèles et l’éditeur de modèles permettent uniquement la création et la modification des modèles modifiables. Par conséquent, ce document décrit exclusivement les modèles modifiables.
 
-### Utilisation d’un modèle pour créer une page  {#using-a-template-to-create-a-page}
+### Utilisation d’un modèle pour créer une page {#using-a-template-to-create-a-page}
 
 Lorsque vous utilisez un modèle pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page), il n’existe aucune différence visible ni indication permettant de distinguer les modèles statiques des modèles modifiables. Pour le créateur de pages, le processus est transparent.
 
@@ -127,7 +127,7 @@ Lors de la création d’un modèle modifiable :
    * Ou directement à l’adresse : [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
-* [Créez un modèle](#creatinganewtemplateauthor), qui est initialement vide.  [](#templatedefinitions)
+* [Créez un modèle](#creatinganewtemplateauthor), qui est initialement vide.
 
 * Si besoin, [définissez des propriétés supplémentaires](#definingtemplatepropertiesauthor) pour le modèle.
 * [Modifiez le modèle](#editingtemplates) pour définir ce qui suit :
@@ -183,7 +183,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    >
    >Lorsque vous créez un modèle, il est marqué comme **Brouillon** dans la console pour indiquer qu’il n’est pas encore actif.
 
-### Définition des propriétés des modèles - Créateur de modèles   {#defining-template-properties-template-author}
+### Définition des propriétés des modèles - Créateur de modèles  {#defining-template-properties-template-author}
 
 Un modèle peut posséder les propriétés suivantes :
 
@@ -234,7 +234,7 @@ Pour définir la miniature du modèle :
 
 1. Lorsque vous êtes satisfait de la miniature, cliquez ou appuyez sur **Enregistrer et Fermer**.
 
-### Activation et autorisation d’un modèle - Créateur de modèles  {#enabling-and-allowing-a-template-template-author}
+### Activation et autorisation d’un modèle – Créateur de modèles {#enabling-and-allowing-a-template-template-author}
 
 Pour utiliser un modèle lors de la création d’une page, vous devez effectuer les deux tâches suivantes :
 
@@ -296,7 +296,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles - Créateurs de modèles  {#editing-templates-template-authors}
+## Modification des modèles – Créateurs de modèles {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -477,7 +477,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-   *Fonctionnalités*
+   *Fonctions*
 
    L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant.
 
