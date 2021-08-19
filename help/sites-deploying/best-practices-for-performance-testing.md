@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1920'
 ht-degree: 92%
 
 ---
@@ -45,7 +45,7 @@ Les tests n’auront aucun sens sans un environnement qui ressemble le plus poss
 
 De nombreux problèmes de performances ne sont pas visibles tant que le système n’est pas soumis à une charge importante. De bons tests de performance devraient simuler la charge à laquelle les systèmes de production seront soumis à leur maximum.
 
-### Établissement des objectifs  {#setting-goals}
+### Établissement des objectifs {#setting-goals}
 
 Avant de commencer les tests de performance, il est nécessaire de définir des exigences non fonctionnelles afin de spécifier la charge et les temps de réponse. Si vous migrez à partir d’un système existant, assurez-vous que le temps de réponse est similaire à vos valeurs de production actuelles. Pour la charge, il est préférable d’utiliser la charge de pointe actuelle et de la doubler. Cela permet au site web de continuer à être performant à mesure qu’il se développe.
 
@@ -65,8 +65,8 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 * Des outils de test de charge dans le cloud comme [Neustar](https://www.neustar.biz/services/web-performance/load-testing) peuvent également être utilisés.
 * Pour tester des sites web mobiles ou réactifs, un jeu d’outils distinct doit être utilisé. Ils fonctionnent en limitant la bande passante réseau et en simulant des connexions mobiles plus lentes telles que 3G ou EDGE. Les outils les plus utilisés sont les suivants : 
 
-   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS.[](https://nshipster.com/network-link-conditioner/)
-   * [**Charles**](https://www.charlesproxy.com/) : application proxy de débogage web qui, outre plusieurs autres utilisations, offre une fonction de limitation du réseau. Prend en charge Windows, OS X et Linux. [](https://www.charlesproxy.com/)
+   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS.
+   * [**Charles**](https://www.charlesproxy.com/) : application proxy de débogage web qui, outre plusieurs autres utilisations, offre une fonction de limitation du réseau. Prend en charge Windows, OS X et Linux.
 
 #### Outils d’optimisation {#optimization-tools}
 
@@ -130,7 +130,7 @@ Sur un système qui ne nécessite pas un niveau élevé de personnalisation, le 
 
 Dans le cas de tests simples, Apache Bench peut servir à mesurer les temps de réponse du serveur web et à créer une charge pour mesurer des événements comme des fuites de mémoire. Pour plus d’informations, voir l’exemple de la [documentation Surveillance](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
-## Résolution des problèmes liés aux performances  {#troubleshooting-performance-issues}
+## Résolution des problèmes liés aux performances {#troubleshooting-performance-issues}
 
 Après avoir exécuté des tests de performance sur l’instance de création, tous les problèmes doivent être analysés, diagnostiqués et résolus. Vous pouvez avoir recours à plusieurs outils et techniques pour effectuer des analyses et résoudre des problèmes :
 
