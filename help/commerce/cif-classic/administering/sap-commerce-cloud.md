@@ -7,7 +7,8 @@ uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
+source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 91%
@@ -40,7 +41,7 @@ Après l’installation, vous pouvez configurer votre instance :
 1. **Ouvrez l’éditeur** sur **Sample Solr Configuration for clothescatalog**.
 
 1. Sous **Catalog versions**, utilisez **Add Catalog version** pour ajouter `outdoors-Staged` et `outdoors-Online` à la liste.
-1. **Enregistrez la configuration.**
+1. **enregistrez la configuration.**
 1. Ouvrez **SOLR Item types** pour ajouter **SOLR Sorts** à `ClothesVariantProduct` :
 
    * relevance (« Pertinence », score)
@@ -115,7 +116,7 @@ La **version du catalogue** est généralement définie sur `Online` (en ligne) 
 
 La sortie du journal fournit un retour sur les pages et les composants créés et signale les erreurs potentielles.
 
-## Configuration de la structure d’importation  {#configure-the-import-structure}
+## Configuration de la structure d’importation {#configure-the-import-structure}
 
 La liste ci-dessous présente un exemple de la structure (des ressources, des pages et des composants) créée par défaut :
 
@@ -165,7 +166,7 @@ La structure à générer lors de l’importation peut être configurée pour :
 
 Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md). Pour obtenir une liste exhaustive des paramètres configurables et de leurs valeurs par défaut, reportez-vous également à la console.
 
-## Configuration des attributs du produit à charger  {#configure-the-product-attributes-to-load}
+## Configuration des attributs du produit à charger {#configure-the-product-attributes-to-load}
 
 L’analyseur de réponse peut être configuré pour définir des propriétés et des attributs à charger pour des produits (variantes) :
 
@@ -204,7 +205,7 @@ Les propriétés ci-dessous indiquent le lien avec Hybris :
 >
 >Le serveur Hybris est référencé chaque fois que des informations sur un produit sont demandées.
 
-### Importation complète  {#full-import}
+### Importation complète {#full-import}
 
 1. Si nécessaire, supprimez toutes les données existantes d’un produit à l’aide de CRXDE Lite.
 
@@ -308,8 +309,6 @@ Le processus d’importation peut être long. Ainsi, en prolongement de la synch
        /etc/commerce/products
    ```
 
-   ` [](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
-
 ## Configuration de l’importateur de catalogues {#configure-the-catalog-importer}
 
 Il est possible d’importer le catalogue Hybris dans AEM à l’aide de l’importateur par lots pour des catalogues, des catégories et des produits Hybris.
@@ -403,7 +402,7 @@ Pour supprimer un ou plusieurs produits du catalogue, procédez comme suit :
       1. Redéployez le catalogue approprié.
       1. Actualisez la page de catégories appropriée.
 
-## Ajout de la caractéristique Historique de commandes à ClientContext  {#add-order-history-trait-to-the-client-context}
+## Ajout de la caractéristique Historique de commandes à ClientContext {#add-order-history-trait-to-the-client-context}
 
 Pour ajouter un historique de commandes à [ClientContext](/help/sites-developing/client-context.md), procédez comme suit :
 
