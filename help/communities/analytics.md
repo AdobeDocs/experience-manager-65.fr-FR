@@ -12,7 +12,7 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: fcdadcf691ed5a569a5a40ca070f8ec266ec3eb9
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 5%
@@ -154,7 +154,7 @@ Pour activer la création de rapports Video Heartbeat après avoir [configuré l
 * Activez [Analytics pour un site communautaire](#enable-analytics-for-a-community-site)
 * Associez le `Marketing Cloud Org Id` au site de la communauté.
 
-La balise `Marketing Cloud Org Id` peut être saisie au moment de la [création du site de la communauté](/help/communities/sites-console.md#enablement) ou ultérieurement par [modification](/help/communities/sites-console.md#modifying-site-properties) des propriétés du site de la communauté. [](#aem-analytics-cloud-service-configuration)
+La balise `Marketing Cloud Org Id` peut être saisie au moment de la [création du site de la communauté](/help/communities/sites-console.md#enablement) ou ultérieurement par [modification](/help/communities/sites-console.md#modifying-site-properties) des propriétés du site de la communauté.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
