@@ -12,9 +12,9 @@ discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 feature: Configuration
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3437'
 ht-degree: 80%
 
 ---
@@ -348,17 +348,17 @@ Ces paramètres sont utilisés pour définir les déclencheurs pour la réplicat
 
    Si coché, l’agent ne force pas la création de versions différentes des pages activées.
 
-## Configuration de vos agents de réplication   {#configuring-your-replication-agents}
+## Configuration de vos agents de réplication  {#configuring-your-replication-agents}
 
 Pour plus d’informations sur la connexion des agents de réplication à l’instance de publication à l’aide de MSSL, voir [Réplication en utilisant SSL réciproque](/help/sites-deploying/mssl-replication.md)
 
-### Configuration de vos agents de réplication depuis l’environnement de création  {#configuring-your-replication-agents-from-the-author-environment}
+### Configuration de vos agents de réplication depuis l’environnement de création {#configuring-your-replication-agents-from-the-author-environment}
 
 Depuis l’onglet Outils dans l’environnement de création, vous pouvez configurer les agents de réplication résidant dans l’environnement de création (**agents sur l’auteur**) ou l’environnement de publication (**agents à la publication**). Les procédures suivantes montrent la configuration d’un agent pour l’environnement de création, mais peuvent être utilisées pour les deux.
 
 >[!NOTE]
 >
->Lorsqu’un dispatcher traite les demandes HTTP pour les instances d’auteur ou de publication, la requête HTTP de agent de réplication doit inclure l’en-tête PATH. Outre la procédure suivante, vous devez ajouter l’en-tête PATH à la liste de dispatcher d’en-têtes de client. (Voir [/clientheaders (en-têtes client)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+>Lorsqu’un dispatcher traite les demandes HTTP pour les instances d’auteur ou de publication, la requête HTTP de agent de réplication doit inclure l’en-tête PATH. Outre la procédure suivante, vous devez ajouter l’en-tête PATH à la liste de dispatcher d’en-têtes de client. (Voir [/clientheaders (en-têtes client)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 
 
 1. Accédez à l’onglet **Outils** dans AEM.
@@ -377,7 +377,7 @@ Depuis l’onglet Outils dans l’environnement de création, vous pouvez config
 >
 >Vous devez utiliser à la place un compte utilisateur de réplication specifique au site disposant des droits de réplication des chemins nécessaires.
 
-### Configuration de la réplication inverse  {#configuring-reverse-replication}
+### Configuration de la réplication inverse {#configuring-reverse-replication}
 
 La réplication inverse est utilisée pour renvoyer le contenu généré par les utilisateurs de l’instance de publication vers une instance d’auteur. Cela est généralement utilisé pour des fonctionnalités telles que les enquêtes et les formulaires d’inscription.
 
@@ -460,7 +460,7 @@ Si vous rencontrez des problèmes, vous pouvez vérifier les journaux sur l’in
 
 
 
-### Configuration d’un agent de vidage du dispatcher  {#configuring-a-dispatcher-flush-agent}
+### Configuration d’un agent de vidage du dispatcher {#configuring-a-dispatcher-flush-agent}
 
 Les agents par défaut sont inclus dans l’installation. Toutefois, une certaine configuration est nécessaire. Il en va de même si vous définissez un nouvel agent :
 
