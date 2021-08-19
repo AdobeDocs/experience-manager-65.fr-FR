@@ -10,7 +10,7 @@ discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Formulaires adaptatifs
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2430'
 ht-degree: 92%
@@ -51,7 +51,7 @@ Par exemple, la première rangée du corps du tableau ci-dessous inclut les comp
 
 Vous pouvez fusionner deux cellules du corps ou plus en sélectionnant les cellules que vous souhaitez fusionner, puis en cliquant avec le bouton droit et en choisissant la commande **Fusionner**. Vous pouvez aussi diviser une cellule fusionnée en cliquant sur celle-ci et en sélectionnant **Fractionner les cellules**.
 
-### Ajout, suppression et déplacement de lignes et de colonnes  {#add-delete-move-rows-and-columns}
+### Ajout, suppression et déplacement de lignes et de colonnes {#add-delete-move-rows-and-columns}
 
 Vous pouvez ajouter et supprimer une ligne ou une colonne, ou encore déplacer une ligne vers le haut et vers le bas dans un tableau.
 
@@ -77,14 +77,14 @@ Vous pouvez ajouter une description au tableau pour expliquer comment il organis
 1. Spécifiez le résumé dans l’onglet Accessibilité.
 1. Cliquez sur **Terminé**.
 
-### Tri des colonnes d&#39;un tableau {#sortcolumnstable}
+### Tri des colonnes d’un tableau {#sortcolumnstable}
 
 Vous pouvez trier les données en fonction de n’importe quelle colonne d’un tableau dans le formulaire adaptatif. Les valeurs de la colonne peuvent être triées par ordre croissant ou décroissant.
 
 Le tri peut être appliqué aux colonnes du tableau contenant :
 
 * Du texte statique
-* Des propriétés d&#39;objet de modèle de données
+* Des propriétés d’objet de modèle de données
 * Une combinaison de texte statique et de propriétés d’objet de modèle de données
 
 Pour appliquer le tri sur les colonnes du tableau, les cellules des colonnes du tableau doivent contenir l’un des composants suivants : Zone numérique, Procédure pas à pas numérique, champ de saisie de date, sélecteur de date, texte ou zone de texte.
@@ -108,7 +108,7 @@ Pour activer le tri :
 
    Vous pouvez également apporter des modifications au tableau en mode **Prévisualisation** et cliquer de nouveau sur l’en-tête de colonne pour trier les valeurs de colonne.
 
-## Définir la largeur de colonne d’un tableau {#set-column-width}
+## Définition de la largeur d’une colonne pour un tableau {#set-column-width}
 
 Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
@@ -120,7 +120,7 @@ Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
 Vous pouvez définir le style d’un tableau à l’aide du mode Style dans la barre d’outils de la page. Exécutez les étapes suivantes pour passer en mode Style et modifier le style du tableau.
 
-1. Dans la barre d’outils de la page, avant l’aperçu, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre d’outils de la page, avant l’aperçu, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
 
 1. Dans la barre latérale, sélectionnez le tableau, puis appuyez sur le bouton Modifier ![edit-button](assets/edit-button.png).
 Vous pouvez afficher les propriétés de style dans la barre latérale.
@@ -129,7 +129,7 @@ Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 >[!NOTE]
 >
->Vous pouvez modifier le thème de couleur de l’en-tête et des lignes de corps en modifiant les valeurs des variables LESS. Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>Vous pouvez modifier le thème de couleur de l’en-tête et des lignes de corps en modifiant les valeurs des variables LESS. Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/themes.md).
 
 ## Ajout ou suppression dynamique d’une ligne {#add-or-delete-a-row-dynamically}
 
@@ -145,9 +145,9 @@ Lors de l’exécution, vous verrez les boutons **+** et *-* pour ajouter ou sup
 
 >[!NOTE]
 >
->L’ajout ou la suppression dynamique d’une ligne n’est pas prise en charge dans les en-têtes à gauche de la disposition des tableaux mobiles.
+>L’ajout ou la suppression dynamique d’une ligne n’est pas pris en charge dans les en-têtes à gauche de la disposition des tableaux mobiles.
 
-## Expressions dans un tableau  {#expressions-in-a-table}
+## Expressions dans un tableau {#expressions-in-a-table}
 
 Les tableaux des formulaires adaptatifs permettent d’écrire des expressions en JavaScript pour induire des comportements, tels qu’afficher ou masquer un tableau ou une ligne, ajouter tous les nombres et afficher le total dans une cellule, activer ou désactiver une cellule, valider une entrée utilisateur, etc. Ces expressions utilisent le modèle de script API des formulaires adaptatifs.
 
@@ -173,9 +173,9 @@ Pour obtenir la liste complète des classes de formulaires adaptatifs, des évé
 
 Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms offre deux types de dispositions de tableaux pour les appareils mobiles - En-têtes à gauche et Colonnes réductibles.
 
-Vous pouvez configurer une disposition de tableau pour périphériques mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
+Vous pouvez configurer une disposition de tableau pour appareils mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
-### Disposition En-têtes à gauche  {#headers-on-left}
+### Disposition En-têtes à gauche {#headers-on-left}
 
 Dans la disposition En-têtes à gauche, les en-têtes du tableau sont transposés à gauche. Une seule cellule apparaît pour un en-tête. Chaque ligne dans cette disposition s’affiche en tant que partie distincte. Les images suivantes comparent un tableau sur un bureau et le même tableau sur un périphérique mobile.
 
@@ -193,7 +193,7 @@ Dans la disposition Colonnes réductibles, les colonnes du tableau sont réduite
 
 >[!NOTE]
 >
->Remarque : alors que la disposition Colonne réductible est optimisée pour les appareils mobiles, elle fonctionne également sur le bureau, si la largeur disponible est insuffisante pour afficher toutes les colonnes d’un tableau.
+>Remarque : Alors que la disposition Colonne réductible est optimisée pour les appareils mobiles, elle fonctionne également sur le bureau, si la largeur disponible est insuffisante pour afficher toutes les colonnes d’un tableau.
 
 Les images suivantes comparent l’aspect d’un tableau affiché sur un périphérique, l’un comportant des colonnes réduites, l’autre les affichant développées.
 
@@ -203,9 +203,9 @@ Colonnes réduites d’un tableau comportant uniquement deux colonnes, apparaiss
 
 ![collapsible_column](assets/collapsible_column.png)
 
-Colonne développée d’un tableau sur un périphérique mobile
+Colonne développée d’un tableau sur un appareil mobile
 
-## Fusion de données dans un tableau  {#merge-data-in-a-table}
+## Fusion de données dans un tableau {#merge-data-in-a-table}
 
 Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors de l’exécution avec des données provenant d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms est exécuté ou dans le référentiel CRX.
 
