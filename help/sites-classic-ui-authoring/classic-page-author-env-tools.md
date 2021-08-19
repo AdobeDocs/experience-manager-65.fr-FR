@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 90%
@@ -22,7 +22,7 @@ ht-degree: 90%
 
 L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils proposés sont accessibles dans les divers éditeurs de pages et consoles.
 
-## Administration de sites {#site-administration}
+## Administration du site {#site-administration}
 
 La console **Sites web** vous permet de parcourir et de gérer votre site web. Les deux volets permettent de développer la structure de votre site web et d’effectuer des actions sur l’élément souhaité :
 
@@ -36,7 +36,7 @@ L’IU classique comporte un éditeur de page distinct, qui utilise l’outil de
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Accès à l’aide {#accessing-help}
+## Accès à l’Aide    {#accessing-help}
 
 Plusieurs ressources d’**Aide** sont accessibles directement depuis AEM :
 
@@ -62,15 +62,15 @@ Utilisez l’outil de recherche de contenu pour localiser une plage de ressource
 * [Documents](#finding-documents)
 * [Films](#finding-movies)
 * [Explorateur Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
-* [](#products) [Pages](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
+* [Pages](#finding-pages)
 
 * [Paragraphes](#referencing-paragraphs-from-other-pages)
-* [Produits](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
+* [Produits](#products)
 * Ou pour [parcourir le site web par structure de référentiel](#the-content-finder)
 
 Vous pouvez [rechercher des éléments spécifiques](#the-content-finder) avec toutes les options.
 
-### Finding Images {#finding-images}
+### Trouver des images {#finding-images}
 
 Cet onglet répertorie toutes les images présentes dans le référentiel.
 
@@ -78,7 +78,7 @@ Après avoir créé un paragraphe Image sur votre page, vous pouvez y faire glis
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-### Finding Documents {#finding-documents}
+### Trouver des documents {#finding-documents}
 
 Cet onglet répertorie tous les documents présents dans le référentiel.
 
@@ -86,7 +86,7 @@ Après avoir créé un paragraphe Téléchargement sur votre page, vous pouvez y
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### Finding Movies {#finding-movies}
+### Trouver des films {#finding-movies}
 
 Cet onglet répertorie toutes les vidéos (éléments Flash, par ex.) présentes dans le référentiel.
 
@@ -106,7 +106,7 @@ Cet onglet affiche toutes les pages. Double-cliquez sur une page pour l’ouvrir
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
-### Referencing Paragraphs from other Pages {#referencing-paragraphs-from-other-pages}
+### Référencer des paragraphes à partir d’autres pages {#referencing-paragraphs-from-other-pages}
 
 Cet onglet vous permet de rechercher une autre page. Tous les paragraphes de cette page sont répertoriés. Vous pouvez ensuite faire glisser un paragraphe vers la page en cours ; cela a pour effet de créer une référence vers le paragraphe d’origine.
 
@@ -176,7 +176,7 @@ Dans certains cas, le sidekick permet d’exécuter d’autres actions, notammen
 
 D’autres [relations entre pages sont visibles dans la console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
-## Journal d’audit  {#audit-log}
+## Journal d’audit {#audit-log}
 
 Le **journal d’audit** est accessible depuis l’onglet **Informations** du sidekick. Il répertorie les actions récentes ayant eu lieu sur la page active ; par exemple :
 
@@ -186,7 +186,7 @@ Le **journal d’audit** est accessible depuis l’onglet **Informations** du si
 
 La console Sites Web [fournit également des informations sur l’état actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), telles que la publication, la modification, le verrouillage, la Live Copy, etc.
 
-## Modes de page  {#page-modes}
+## Modes de page {#page-modes}
 
 Lors de la modification d’une page dans l’IU classique, plusieurs modes sont accessibles à l’aide des icônes au bas du sidekick :
 
