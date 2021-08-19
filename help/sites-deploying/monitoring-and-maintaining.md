@@ -12,10 +12,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuration
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 83383d46a4200eb3d21deee15c71032314694860
 workflow-type: tm+mt
-source-wordcount: '5892'
-ht-degree: 81%
+source-wordcount: '5878'
+ht-degree: 82%
 
 ---
 
@@ -76,7 +76,7 @@ Pour ce faire, vous devez [sauvegarder entièrement votre référentiel](#backin
 
 >[!CAUTION]
 >
->Si vous gérez un serveur d’application tiers, des fichiers supplémentaires peuvent se trouver sur un emplacement différent et doivent galement être pris en charge. Découvrez [comment installer AEM avec un serveur d’application](/help/sites-deploying/application-server-install.md) pour plus d’informations sur la configuration des serveurs d’applications. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager avec un serveur d’applications)
+>Si vous gérez un serveur d’application tiers, des fichiers supplémentaires peuvent se trouver sur un emplacement différent et doivent galement être pris en charge. Découvrez [comment installer AEM avec un serveur d’application](/help/sites-deploying/application-server-install.md) pour plus d’informations sur la configuration des serveurs d’applications.
 
 >[!CAUTION]
 >
@@ -86,7 +86,7 @@ Pour ce faire, vous devez [sauvegarder entièrement votre référentiel](#backin
 >
 >La duplication du disque peut également être utilisée comme mécanisme de sauvegarde.
 
-### Sauvegarde de votre référentiel  {#backing-up-your-repository}
+### Sauvegarde de votre référentiel {#backing-up-your-repository}
 
 La section [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md) de la documentation CRX permet de couvrir tous les problèmes liés aux sauvegardes du référentiel CRX.
 
@@ -168,7 +168,7 @@ Dans l’exemple suivant :
 
 Les enregistrements et les fichiers journaux d’audit associés à Adobe Experience Manager (AEM) sont disponibles dans différents emplacements. Ce qui suit vise à vous donner un aperçu de ce que vous pouvez trouver, à quels emplacements.
 
-### Utilisation des journaux  {#working-with-logs}
+### Utilisation des journaux {#working-with-logs}
 
 La gestion du contenu web d’AEM permet d’enregistrer de manière détaillée les journaux. Après avec décompressé et démarré Quickstart, vous pouvez trouver les journaux à l’adresse suivante :
 
@@ -441,7 +441,7 @@ La console Felix fournit également des informations sur la prise en charge du j
 
 Les enregistrements d’audit sont effectués pour fournir un registre de qui a fait quoi et quand. Les enregistrements d’audit sont générés pour les événements de gestion du contenu web d’AEM et OSGi. 
 
-#### Enregistrements d’audit de la gestion du contenu web d’AEM affiché lors de la création de page  {#aem-wcm-audit-records-shown-when-page-authoring}
+#### Enregistrements d’audit de la gestion du contenu web d’AEM affiché lors de la création de page {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Ouvrez une page.
 1. Depuis le sidekick, vous pouvez sélectionner l’onglet avec l’icône de verrouillage, puis double-cliquer sur **Journal d’audit…**
@@ -451,13 +451,13 @@ Les enregistrements d’audit sont effectués pour fournir un registre de qui a 
 
 1. Cliquez sur **OK** pour fermer la fenêtre. 
 
-#### Enregistrements d’audit de la gestion du contenu web d’AEM dans le référentiel  {#aem-wcm-auditing-records-within-the-repository}
+#### Enregistrements d’audit de la gestion du contenu web d’AEM dans le référentiel {#aem-wcm-auditing-records-within-the-repository}
 
 Dans le dossier `/var/audit` , les enregistrements d’audit sont conservés en fonction de la ressource. Vous pouvez faire défiler la page vers le bas jusqu’à ce que vous puissiez voir les différents enregistrements et les informations qu’ils contiennent. 
 
 Ces entrées contiennent les mêmes informations que lors de la modification d’une page.
 
-#### Enregistrements d’audit OSGi dans la console web  {#osgi-audit-records-from-the-web-console}
+#### Enregistrements d’audit OSGi dans la console web {#osgi-audit-records-from-the-web-console}
 
 Les événements OSGi produisent également des enregistrements d’audit pouvant être affichés dans l’onglet **État de la configuration** tab -> **Fichiers journaux** dans la console web Adobe AEM : 
 
@@ -559,7 +559,7 @@ Toutes ces informations doivent être obtenues, classées et analysées avant qu
    * Collectez autant d’informations que possible à comparer à votre connaissance du système dans des circonstances normales :
 
 
-### Outils pour surveiller et analyser les performances  {#tools-for-monitoring-and-analyzing-performance}
+### Outils pour surveiller et analyser les performances {#tools-for-monitoring-and-analyzing-performance}
 
 Les sections suivantes vous offrent un bref aperçu des outils disponibles pour surveiller et analyser les performances.
 
@@ -650,7 +650,7 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
  </tbody>
 </table>
 
-### Interprétation de request.log  {#interpreting-the-request-log}
+### Interprétation de request.log {#interpreting-the-request-log}
 
 Ce fichier permet d’enregistrer des données de base sur chaque demande envoyée à AEM. Vous pouvez en tirer des conclusions précieuses.
 
@@ -669,7 +669,7 @@ Le journal des demandes permet d’enregistrer chaque demande effectuée, ainsi 
 
 En totalisant toutes les entrées GET d’une période spécifique (par exemple plus de 24 heures), vous pouvez informer sur le temps moyen passé sur votre site web.
 
-#### Surveillance des délais de réponse avec request.log  {#monitoring-response-times-with-the-request-log}
+#### Surveillance des délais de réponse avec request.log {#monitoring-response-times-with-the-request-log}
 
 Le journal des demande est un point de départ intéressant pour l’analyse de performances :
 
@@ -703,7 +703,7 @@ Ce journal dispose d’une ligne par requête ou réponse :
 
 L’utilisation de petits scripts vous permet d’extraire les informations requises du fichier journal et de compiler les statistiques de votre choix. Par ailleurs, vous pouvez voir quelles pages ou quels types de pages sont lents et si la performance générale est satisfaisante.
 
-#### Surveillance des temps de réponse de la recherche avec request.log  {#monitoring-search-response-times-with-the-request-log}
+#### Surveillance des temps de réponse de la recherche avec request.log {#monitoring-search-response-times-with-the-request-log}
 
 Les requêtes de recherche sont également enregistrées dans le fichier journal :
 
@@ -738,7 +738,7 @@ Des tests doivent être effectués pour déterminer le nombre d’utilisations s
 31/Mar/2009:11:45:44 +0200 [337] <- 304 text/html 0ms
 ```
 
-### Utilisation de rlog.jar pour trouver des demandes avec de longues durées  {#using-rlog-jar-to-find-requests-with-long-duration-times}
+### Utilisation de rlog.jar pour trouver des demandes avec de longues durées {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 AEM comprend divers outils d’assistance situés dans :
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
@@ -881,7 +881,7 @@ Il est recommandé d’inclure `html comments` pour les performances du serveur 
          -->
 ```
 
-### Surveillance de la performance à l’aide JConsole  {#monitoring-performance-using-jconsole}
+### Surveillance de la performance à l’aide JConsole {#monitoring-performance-using-jconsole}
 
 La commande d’outil `jconsole` est disponible avec JDK.
 
@@ -938,7 +938,7 @@ Les informations suivantes peuvent s’avérer utiles :
 * [Combien de demandes par heure recevez-vous sur le système de création lorsque le niveau d’activité est élevé ?](#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time)
 * [Combien de demandes par heure recevez-vous sur le système de publication lorsque le niveau d’activité est élevé ?](#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time)
 
-#### Combien d’auteurs travaillent avec le système ?{#how-many-authors-are-working-with-the-system}
+#### Combien d’auteurs travaillent avec le système ? {#how-many-authors-are-working-with-the-system}
 
 Pour afficher le nombre d’auteurs qui ont utilisé le système depuis l’installation, utilisez la ligne de commande :
 
@@ -953,7 +953,7 @@ Pour afficher le nombre d’auteurs à une date spécifique :
 grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 ```
 
-#### Quel est le nombre moyen d’activations de page par jour ?  {#what-is-the-average-number-of-page-activations-per-day}
+#### Quel est le nombre moyen d’activations de page par jour ? {#what-is-the-average-number-of-page-activations-per-day}
 
 Pour voir nombre total d’activation de page depuis l’installation du serveur, utilisez une requête de référentiel ; via CRXDE - Outils - Requête :
 
@@ -965,7 +965,7 @@ Pour voir nombre total d’activation de page depuis l’installation du serveur
 
 Calculez ensuite le nombre de jours écoulés depuis l’installation pour calculer la moyenne.
 
-#### Combien de pages maintenez-vous actuellement sur ce système ?{#how-many-pages-do-you-currently-maintain-on-this-system}
+#### Combien de pages maintenez-vous actuellement sur ce système ?  {#how-many-pages-do-you-currently-maintain-on-this-system}
 
 Pour voir nombre de pages actuellement sur le serveur, utilisez une requête de référentiel ; via CRXDE- outils- requête : 
 
@@ -975,7 +975,7 @@ Pour voir nombre de pages actuellement sur le serveur, utilisez une requête de 
 
 * **Requête** `//element(*, cq:Page)`
 
-#### Si vous utilisez MSM, quel est le nombre moyen de déploiements par mois ?{#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
+#### Si vous utilisez MSM, quel est le nombre moyen de rollouts par mois ?  {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
 Pour déterminer le nombre total de déploiements depuis l’installation, utilisez une requête de référentiel ; via CRXDE - Outils - Requête :
 
@@ -987,7 +987,7 @@ Pour déterminer le nombre total de déploiements depuis l’installation, utili
 
 Calculez le nombre de mois écoulés depuis l’installation pour calculer la moyenne.
 
-#### Quel est le nombre moyen de Live Copies par mois ?{#what-is-the-average-number-of-live-copies-per-month}
+#### Quel est le nombre moyen de Live Copies par mois ?  {#what-is-the-average-number-of-live-copies-per-month}
 
 Pour déterminer le nombre total des Live Copies effectuées depuis l’installation utilisent une requête de référentiel ; via CRXDE- outils- requête : 
 
@@ -999,7 +999,7 @@ Pour déterminer le nombre total des Live Copies effectuées depuis l’installa
 
 Utilisez toujours le nombre de mois écoulés depuis l’installation pour calculer la moyenne.
 
-####  Si vous utilisez AEM Assets, combien de ressources y maintenez-vous actuellement ?{#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
+#### Si vous utilisez AEM Assets, combien de ressources y maintenez-vous actuellement ? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
 Pour voir le nombre de ressource de gestion des actifs numériques que vous conservez actuellement, utilisez une requête de référentiel ; via CRXDE - Outils - Requête :
 
@@ -1007,7 +1007,7 @@ Pour voir le nombre de ressource de gestion des actifs numériques que vous cons
 * **Chemin** `/`
 * **Requête** `/jcr:root/content/dam//element(*, dam:Asset)`
 
-#### Quelle est la taille moyenne des ressources ?{#what-is-the-average-size-of-the-assets}
+#### Quelle est la taille moyenne des ressources ? {#what-is-the-average-size-of-the-assets}
 
 Pour déterminer la taille totale du dossier `/var/dam` :
 
@@ -1022,7 +1022,7 @@ Pour déterminer la taille totale du dossier `/var/dam` :
 
    Pour obtenir la taille moyenne, divisez la taille globale par le nombre total de ressources dans `/var/dam` (obtenu ci-dessus).
 
-####  Combien de modèles sont actuellement utilisés ?{#how-many-templates-are-currently-used}
+#### Combien de modèles sont actuellement utilisés ? {#how-many-templates-are-currently-used}
 
 Pour identifier le nombre de modèles actuellement sur le serveur, utilisez une requête de référentiel ; via CRXDE - Outils - Requête :
 
@@ -1030,7 +1030,7 @@ Pour identifier le nombre de modèles actuellement sur le serveur, utilisez une 
 * **Chemin** `/`
 * **Requête** `//element(*, cq:Template)`
 
-#### Combien de composants sont actuellement utilisés ?{#how-many-components-are-currently-used}
+#### Combien de composants sont actuellement utilisés ? {#how-many-components-are-currently-used}
 
 Pour voir nombre de composants actuellement sur le serveur, utilisez une requête de référentiel ; via CRXDE - Outils - Requête :
 
@@ -1038,7 +1038,7 @@ Pour voir nombre de composants actuellement sur le serveur, utilisez une requêt
 * **Chemin** `/`
 * **Requête** `//element(*, cq:Component)`
 
-#### Combien de demandes par heure recevez-vous sur le système de création lorsque le niveau d’activité est élevé ?{#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
+#### Combien de demandes par heure recevez-vous sur le système de création lorsque le niveau d’activité est élevé ? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
 Pour déterminer le nombre de demandes par heure que vous recevez sur le système de création lorsque le niveau d’activité est élevé :
 
@@ -1058,7 +1058,7 @@ Pour déterminer le nombre de demandes par heure que vous recevez sur le systèm
 
    Utilisez ces valeurs pour calculer le nombre d’heures qui se sont écoulées depuis l’installation, puis le nombre moyen de demandes par heure. 
 
-#### Combien de demandes par heure recevez-vous sur le système de publication lorsque le niveau d’activité est élevé ?  {#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time}
+#### Combien de demandes par heure recevez-vous sur le système de publication lorsque le niveau d’activité est élevé ? {#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time}
 
 Répétez la procédure ci-dessus sur votre instance de publication.
 
@@ -1079,7 +1079,7 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 
 
 
-### Processeur à 100 %  {#cpu-at}
+### Processeur à 100 % {#cpu-at}
 
 Si le processeur de votre système fonctionne en permanence à 100 %, voir :
 
@@ -1102,7 +1102,7 @@ Dans ce cas, vérifiez :
 
    * [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 
-### I/O des disques  {#disk-i-o}
+### I/O des disques {#disk-i-o}
 
 Si votre système ne dispose pas de suffisamment d’espace de disque ou que le disque est en train de se détériorer, commencez par voir :
 
@@ -1113,7 +1113,7 @@ Si votre système ne dispose pas de suffisamment d’espace de disque ou que le 
    * [Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [Gestionnaire de bibliothèques HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [Filtre de débogage de la gestion du contenu web CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Enregistreurs](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level) [](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
+   * [Enregistreurs](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Si et comment vous avez configuré [la purge de version](/help/sites-deploying/version-purging.md)
 * La base de connaissances :
@@ -1121,7 +1121,7 @@ Si votre système ne dispose pas de suffisamment d’espace de disque ou que le 
    * [Trop de fichiers ouverts](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
    *  [Le journal consomme trop d’espace disque](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
-### Détérioriation régulière des performances  {#regular-performance-degradation}
+### Détérioriation régulière des performances {#regular-performance-degradation}
 
 Si vous voyez la performance de votre instance se détériorer après chaque réinitialisation (parfois après une semaine ou plus), ce qui suit peut être vérifié :
 
@@ -1130,7 +1130,7 @@ Si vous voyez la performance de votre instance se détériorer après chaque ré
 
    * [Sessions non fermées](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
 
-### Réglage de JVM  {#jvm-tuning}
+### Réglage de JVM {#jvm-tuning}
 
 La capacité de réglage de Java Virtual Machine (JVM) a été considérablement améliorée (surtout depuis Java 7). Pour cette raison, la spécification d’une taille fixe raisonnable de JVM et l’utilisation des paramètres par défaut sera souvent convenable.
 
