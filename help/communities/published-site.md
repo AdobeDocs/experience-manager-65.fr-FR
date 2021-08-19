@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Expérience du site publié {#experience-the-published-site}
 
-## Accédez au nouveau site sur la publication {#browse-to-new-site-on-publish}
+## Accéder au nouveau site lors de la publication {#browse-to-new-site-on-publish}
 
 Maintenant que le site de communautés nouvellement créé a été publié, accédez à l’URL affichée lors de la création du site, mais sur le serveur de publication, par exemple :
 
@@ -35,7 +35,7 @@ En arrivant sur le site publié pour la première fois, le visiteur du site n’
 
 ![publié](assets/authorpublished.png)
 
-## Visiteur du site anonyme {#anonymous-site-visitor}
+## Visiteur anonyme du site {#anonymous-site-visitor}
 
 Un visiteur anonyme du site voit les éléments suivants dans l’interface utilisateur :
 
@@ -75,7 +75,7 @@ Pour protéger le contenu de votre communauté contre l’accès des utilisateur
 1. Ajoutez le chemin d’accès de la page de connexion. Par exemple, **/content/......./GetStarted**.
 1. Publiez la page.
 
-## Membre de la communauté approuvée {#trusted-community-member}
+## Membre de la communauté approuvé {#trusted-community-member}
 
 Cette expérience suppose que [Aaron McDonald](/help/communities/tutorials.md#demo-users) se voit attribuer les rôles de [responsable de communauté et de modérateur](/help/communities/create-site.md#roles). Si ce n’est pas le cas, revenez à l’environnement de création en [modifiant les paramètres du site](/help/communities/sites-console.md#modifying-site-properties) et sélectionnez Aaron McDonald comme responsable de communauté et modérateur.
 
@@ -193,7 +193,7 @@ Connectez-vous en tant que Weston McCall (weston.mccall@dodgit.com/password) et 
 
 ![grouplink3](assets/grouplink3.png)
 
-### Lien de page Web {#web-page-link}
+### Lien de page web {#web-page-link}
 
 Affichez la page Web de base incluse dans le site en sélectionnant le lien Page Web . Les outils de création d’AEM standard peuvent être utilisés pour ajouter du contenu à cette page dans l’environnement de création.
 
@@ -205,7 +205,7 @@ Par exemple, accédez à l’instance **author**, ouvrez le dossier `engage` dan
 
 Lorsque le membre de la communauté dispose de privilèges de modération, le lien Modération est visible et sa sélection affiche le contenu de la communauté publié et lui permet d’être [modéré](/help/communities/moderate-ugc.md) d’une manière similaire à la [console de modération](/help/communities/moderation.md) dans l’environnement de création.
 
-Utilisez le bouton Précédent du navigateur pour revenir au site publié. La plupart des consoles ne sont pas accessibles à partir de la navigation globale dans l’environnement de publication. [](/help/communities/moderate-ugc.md)
+Utilisez le bouton Précédent du navigateur pour revenir au site publié. La plupart des consoles ne sont pas accessibles à partir de la navigation globale dans l’environnement de publication.
 
 ![modération link](assets/moderationlink.png)
 
