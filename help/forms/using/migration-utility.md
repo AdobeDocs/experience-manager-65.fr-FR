@@ -13,7 +13,7 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 71%
@@ -191,7 +191,7 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
 ### Tâches de maintenance après l’exécution de l’utilitaire de migration {#housekeepingtasks}
 
-Après avoir exécuté l’utilitaire de migration, effectuez les tâches de gestion interne suivantes :[](../../forms/using/import-export-forms-templates.md)
+Après avoir exécuté l’utilitaire de migration, effectuez les tâches de maintenance suivantes :
 
 1. Assurez-vous que la version XFA des mises en page et des mises en page de fragments est version 3.3 ou ultérieure. Si vous utilisez des mises en page et des mises en page de fragments d’une ancienne version, des problèmes de rendu de la lettre peuvent se produire. Pour mettre à jour la version d’un XFA antérieur vers la dernière version, procédez comme suit :
 
