@@ -11,10 +11,10 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Formulaires adaptatifs
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a81367c2a07031d8c6cf549050a1445ff0c1a8dc
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 74%
+source-wordcount: '3508'
+ht-degree: 55%
 
 ---
 
@@ -57,7 +57,7 @@ Le document d’enregistrement généré automatiquement présente les avantages
 * Il permet de tester des styles et des aspects différents à l’aide de différents modèles de base et de sélectionner les meilleurs style et aspect pour le document d’enregistrement. L’utilisation de styles est facultative. Si vous ne spécifiez pas de style, les styles du système sont définis comme valeur par défaut.
 * De cette façon, toute modification appliquée au formulaire se répercute immédiatement dans le document d’enregistrement.
 
-## Composants de génération automatique de document d’enregistrement  {#components-to-automatically-generate-a-document-of-record}
+## Composants de génération automatique de document d’enregistrement {#components-to-automatically-generate-a-document-of-record}
 
 Pour générer un document d’enregistrement pour les formulaires adaptatifs, vous avez besoin des composants suivants :
 
@@ -189,7 +189,7 @@ Les sections suivantes décrivent l’apparence des éléments du formulaire ada
  </tbody>
 </table>
 
-### Composants statiques  {#static-components}
+### Composants statiques {#static-components}
 
 | Composant de formulaire adaptatif | Composant XFA correspondant | Remarques |
 |---|---|---|
@@ -210,7 +210,7 @@ Le modèle de base fournit les informations relatives au style et à l’aspect 
 
 Respectez les [conventions relatives aux modèles de base](#base-template-conventions) lorsque vous créez un modèle de base.
 
-## Conventions relatives aux modèles de base  {#base-template-conventions}
+## Conventions relatives aux modèles de base {#base-template-conventions}
 
 Un modèle de base sert à définir l’en-tête, le pied de page, le style et l’aspect d’un document d’enregistrement. L’en-tête et le pied de page peuvent comporter des informations, comme le logo de l’entreprise et la mention de droit d’auteur. Le premier gabarit du modèle de base est copié et utilisé comme gabarit pour le document d’enregistrement, qui contient l’en-tête, le pied de page, le numéro de page ou toute autre information devant apparaître sur toutes les pages du document d’enregistrement. Si vous utilisez un modèle de base non conforme aux conventions du modèle de base, le premier gabarit du modèle de base est toujours utilisé dans le modèle de document d’enregistrement. Il vous est fortement recommandé de créer votre modèle de base en fonction des conventions correspondantes et de l’utiliser pour la génération automatique du document d’enregistrement.
 
@@ -258,14 +258,14 @@ Configurez le modèle de document d’enregistrement de votre formulaire pour pe
 
 Effectuez les étapes suivantes pour configurer un document d’enregistrement pour les formulaires adaptatifs :
 
-1. Dans l’instance d’auteur AEM, cliquez sur **Formulaires > Formulaires et documents**.
+1. Dans l’instance d’auteur AEM, cliquez sur **Formulaires > Formulaires et documents**.
 1. Sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**.
 1. Dans la fenêtre Propriétés, appuyez sur **Modèle de formulaire**.
 Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
 
    >[!NOTE]
    >
-   >Sous l’onglet Modèle de formulaire, veillez à sélectionner **Schéma** ou **Aucun** dans la liste déroulante **Sélectionner dans**. **[!UICONTROL Le document d’enregistrement n’est pas pris en charge pour les formulaires basés sur XFA ou les formulaires adaptatifs avec le modèle de formulaire comme modèle de formulaire.]**
+   >Sous l’onglet Modèle de formulaire, veillez à sélectionner **Schéma** ou **Aucun** dans la liste déroulante **Choisir parmi**. **[!UICONTROL Le document d’enregistrement n’est pas pris en charge pour les formulaires basés sur XFA ou les formulaires adaptatifs avec le modèle de formulaire comme modèle de formulaire.]**
 
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez l’une des options suivantes :
 
@@ -319,9 +319,15 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
    * **Exclure les champs masqués du document d’enregistrement**
    * **Masquer la description des panneaux**
 
+   Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabarits, les propriétés de ces pages apparaissent dans la section **[!UICONTROL content]** de l’onglet **[!UICONTROL Document d’enregistrement]**.
+
+   ![Propriétés de page de Principal](assets/master-page-properties.png)
+
+   Les propriétés du gabarit comprennent l’image du logo, le texte d’en-tête, le titre du formulaire, le libellé de la clause de non-responsabilité et le texte de la clause de non-responsabilité. Vous pouvez appliquer des propriétés de formulaire adaptatif ou de modèle XDP au document d’enregistrement. AEM Forms applique par défaut les propriétés de modèle au document d’enregistrement. Vous pouvez également définir des valeurs personnalisées pour les propriétés du gabarit. Pour plus d’informations sur l’application de plusieurs gabarits dans un document d’enregistrement, voir [Application de plusieurs gabarits à un document d’enregistrement](#apply-multiple-master-pages-dor).
+
    >[!NOTE]
    >
-   >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous que les éléments suivants sont présents dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
+   >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3 pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous que les éléments suivants sont présents dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
 
    ```xml
    <proto>
@@ -337,7 +343,7 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
 
 1. Pour enregistrer les modifications d’identité graphique, appuyez sur Terminé.
 
-## Mises en page de tableau et de colonne pour les panneaux d’un document d’enregistrement  {#table-and-column-layouts-for-panels-in-document-of-record}
+## Mises en page de tableau et de colonne pour les panneaux d’un document d’enregistrement {#table-and-column-layouts-for-panels-in-document-of-record}
 
 Votre formulaire adaptatif peut être long avec plusieurs champs de formulaire. Vous ne pouvez pas enregistrer un document d’enregistrement en tant que copie exacte du formulaire adaptatif. Vous pouvez maintenant choisir une mise en page de tableau ou de colonne pour enregistrer un ou plusieurs panneaux de formulaires adaptatifs dans le document d’enregistrement PDF.
 
@@ -364,11 +370,68 @@ Les paramètres d’enregistrement d’un composant sont disponibles sous ses pr
 * **Afficher le panneau sous forme de tableau :**  la définition de la propriété affiche le panneau sous forme de tableau dans le document d’enregistrement si le panneau contient moins de 6 champs. Applicable au panneau uniquement.
 * **Exclure le titre du document d’enregistrement :** la définition de la propriété exclut le titre du panneau/tableau du document d’enregistrement. Applicable au panneau et à la table uniquement.
 * **Exclure la description du document d’enregistrement :** la définition de la propriété exclut la description du panneau/tableau du document d’enregistrement. Applicable au panneau et à la table uniquement.
+* **[!UICONTROL Pagination]**  >  **[!UICONTROL Emplacement]** : Détermine l’emplacement où vous choisissez de placer le panneau.
+   * **[!UICONTROL Place]**  >  **[!UICONTROL Suivant précédent]** : Place le panneau après l’objet précédent dans le panneau parent.
+   * **[!UICONTROL Place]**  >  **[!UICONTROL Dans la zone de contenu]**  > Nom de la zone de contenu : Place le panneau dans la zone de contenu indiquée.
+   * **[!UICONTROL Place]**  >  **[!UICONTROL Haut de la zone de contenu suivante]** : Place le panneau en haut de la zone de contenu suivante.
+   * **[!UICONTROL Place]**  >  **[!UICONTROL Haut de la zone de contenu]**  > Nom de la zone de contenu : Place le panneau en haut de la zone de contenu indiquée.
+   * **[!UICONTROL Place]**  >  **[!UICONTROL Sur la page]**  > Nom du gabarit : Place le panneau sur la page indiquée. Si un saut de page n’est pas inséré automatiquement, [!DNL AEM Forms] ajoute un saut de page.
+   * **[!UICONTROL Place]**  >  **[!UICONTROL Haut de la page suivante]** : Place le panneau en haut de la page suivante. Si un saut de page n’est pas inséré automatiquement, [!DNL AEM Forms] ajoute un saut de page.
+   * **[!UICONTROL Place]**  >  **[!UICONTROL Haut de page]**  > Nom du gabarit : Place le panneau en haut de la page, lorsque la page indiquée est générée. Si un saut de page n’est pas inséré automatiquement, [!DNL AEM Forms] ajoute un saut de page.
+* **[!UICONTROL Pagination]**  >  **[!UICONTROL Après]** : Détermine la zone à remplir une fois le panneau placé. Les champs suivants sont disponibles dans la section  **** Après :
+   * **[!UICONTROL Après]**  >  **[!UICONTROL Continuer à remplir le parent]** : Continue de fusionner les données de tous les objets à remplir dans le panneau parent.
+   * **[!UICONTROL Après]**  >  **[!UICONTROL Aller à la zone de contenu suivante]** : Commence à remplir la zone de contenu suivante après avoir placé le panneau.
+   * **[!UICONTROL Après]**  >  **[!UICONTROL Aller à la zone de contenu]**  > Nom de la zone de contenu : Commence à remplir la zone de contenu spécifiée après avoir placé le panneau.
+   * **[!UICONTROL Après]**  >  **[!UICONTROL Aller À La Page Suivante]** : Commence à remplir la page suivante après avoir placé le panneau.
+   * **[!UICONTROL Après]**  >  **[!UICONTROL Aller à la page]**  > Nom de la page : Commence à remplir la page spécifiée après avoir placé le panneau.
+* **[!UICONTROL Pagination]**  >  **[!UICONTROL Débordement]** : Détermine le mode de débordement d’un panneau ou d’un tableau s’étendant sur plusieurs pages. Les champs suivants sont disponibles dans la section **[!UICONTROL Overflow]** :
+   * **[!UICONTROL Overflow]**  >  **[!UICONTROL Aucun]** : Commence à remplir la page suivante. Si un saut de page n’est pas inséré automatiquement, [!DNL AEM Forms] ajoute un saut de page.
+   * **[!UICONTROL Débordement]**  >  **[!UICONTROL Aller à la zone de contenu]**  > Nom de la zone de contenu : Commence à remplir la zone de contenu indiquée.
+   * **[!UICONTROL Overflow]**  >  **[!UICONTROL Aller à la page]**  > Nom de la page : Commence à remplir la page indiquée.
+
+Pour plus d’informations sur la manière d’appliquer des sauts de page et d’appliquer plusieurs gabarits dans un document d’enregistrement, voir [Application de sauts de page dans un document d’enregistrement](#apply-page-breaks-in-dor) et [Application de plusieurs gabarits à un document d’enregistrement](#apply-multiple-master-pages-dor).
 
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
 * **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si les champs sont masqués au moment de l’envoi du formulaire, ils seront exclus du document d’enregistrement si la propriété est définie sur true, à condition que la propriété &quot;Exclure du document d’enregistrement&quot; ne soit pas définie.
+
+## Application d’un saut de page dans un document d’enregistrement {#apply-page-breaks-in-dor}
+
+Vous pouvez appliquer des sauts de page dans un document d’enregistrement à l’aide de plusieurs méthodes.
+
+Pour appliquer un saut de page à un document d’enregistrement :
+
+1. Appuyez sur le panneau et sélectionnez ![Configurer](assets/configure-icon.svg).
+
+1. Développez **[!UICONTROL Document d’enregistrement]** pour afficher les propriétés.
+
+1. Dans la section **[!UICONTROL Pagination]** , appuyez sur ![Dossier](assets/folder-icon.svg) dans le champ **[!UICONTROL Placer]** .
+1. Appuyez sur **[!UICONTROL Haut de la page suivante]** et appuyez sur **[!UICONTROL Sélectionner]**. Vous pouvez également appuyer sur **[!UICONTROL Haut de page]**, sélectionner le gabarit et appuyer sur **[!UICONTROL Sélectionner]** pour appliquer le saut de page.
+1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+
+Le panneau sélectionné passe à la page suivante.
+
+## Application de plusieurs gabarits à un document d’enregistrement {#apply-multiple-master-pages-dor}
+
+Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabarits, les propriétés de ces pages apparaissent dans la section [!UICONTROL content] de l’onglet [!UICONTROL Document d’enregistrement]. Pour plus d’informations, voir [Personnalisation des informations de marque dans le document d’enregistrement](#customize-the-branding-information-in-document-of-record).
+
+Vous pouvez appliquer plusieurs gabarits à un document d’enregistrement en appliquant différents gabarits aux composants d’un formulaire adaptatif. Utilisez la section [Pagination](#document-of-record-settings) des propriétés du document d’enregistrement pour appliquer plusieurs gabarits.
+
+Voici un exemple d’application de plusieurs gabarits à un document d’enregistrement :
+Vous téléchargez un modèle XDP qui comprend quatre gabarits sur le serveur [!DNL AEM Forms]. [!DNL AEM Forms] applique par défaut les propriétés du modèle au document d’enregistrement. [!DNL AEM Forms] applique également les propriétés du premier gabarit du modèle au document d’enregistrement.
+
+Pour appliquer les propriétés du deuxième gabarit à un panneau et les propriétés du troisième gabarit aux panneaux qui suivent, procédez comme suit :
+
+1. Appuyez sur le panneau pour appliquer le deuxième gabarit et sélectionnez ![Configurer](assets/configure-icon.svg).
+1. Dans la section **[!UICONTROL Pagination]** , appuyez sur ![Dossier](assets/folder-icon.svg) dans le champ **[!UICONTROL Placer]** .
+1. Appuyez sur **[!UICONTROL Sur la page]**, sélectionnez le deuxième gabarit et appuyez sur **[!UICONTROL Sélectionner]**.
+AEM Forms applique le deuxième gabarit au panneau et à tous les panneaux suivants du formulaire adaptatif.
+1. Dans la section **[!UICONTROL Pagination]** , appuyez sur ![Dossier](assets/folder-icon.svg) dans le champ **[!UICONTROL Après]** .
+1. Appuyez sur **[!UICONTROL Aller à la page]**, sélectionnez le troisième gabarit et appuyez sur **[!UICONTROL Sélectionner]**.
+1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+AEM Forms applique le troisième gabarit au panneau et à tous les panneaux suivants du formulaire adaptatif.
+
 
 ## Considérations essentielles lors de l’utilisation de documents d’enregistrement {#key-considerations-when-working-with-document-of-record}
 
