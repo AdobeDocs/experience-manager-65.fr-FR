@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
+source-git-commit: 218e97eb31061e833f3b291a6607b2ebf4762471
 workflow-type: tm+mt
 source-wordcount: '2967'
 ht-degree: 91%
@@ -116,7 +116,7 @@ Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] et l
 ![Test de connexion des ressources connectées configurées [!DNL Sites]](assets/connected-assets-multiple-config.png) 
 *Figure : Test de connexion des ressources connectées configurées  [!DNL Sites].*
 
-### Configuration d’une connexion pour les ressources Dynamic Media{#sites-dynamic-media-connected-assets}
+### Configuration d’une connexion pour les ressources Dynamic Media {#sites-dynamic-media-connected-assets}
 
 Vous pouvez configurer une connexion entre le déploiement [!DNL Sites] et le déploiement [!DNL Dynamic Media] qui permet aux auteurs d’utiliser des images [!DNL Dynamic Media] dans leurs pages web. Lors de la création de pages web, l’utilisation des déploiements distants Assets et [!DNL Dynamic Media] reste identique.
 

@@ -4,9 +4,9 @@ description: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: d83f8d6e4b99ac7f287c0f091b84bbbf9d82fc75
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3974'
+source-wordcount: '3983'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 4%
 [!DNL Adobe Experience Manager] 6.5 Les Service Packs proposent, à intervalles trimestriels, de nouvelles fonctionnalités, des améliorations demandées par les clients, ainsi que des améliorations en termes de performances, de stabilité et de sécurité. La disponibilité trimestrielle facilite l’accès et l’adoption de nouvelles fonctionnalités et innovations.
 
 Cet article met en évidence les fonctionnalités incluses dans le dernier Service Pack, [les fonctionnalités clés incluses dans les Service Packs version 6.5 précédente](#key-features-previous-service-packs), ainsi que les versions [clés depuis la dernière version du Service Pack](#key-releases-since-last-sp).
-
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -41,13 +40,13 @@ Cet article met en évidence les fonctionnalités incluses dans le dernier Servi
 
 * [!DNL Experience Manager] étend la fonctionnalité Ressources connectées à l’utilisation des  [!DNL Dynamic Media] images dans les composants principaux applicables. Voir [Utilisation des ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Lors du partage de ressources individuelles et de collections sous forme de lien (à l’aide de la boîte de dialogue [!UICONTROL Partage de liens] ), les utilisateurs peuvent choisir de laisser le destinataire télécharger les ressources d’origine, ou leurs rendus, ou les deux.
+* Lors du partage de ressources individuelles et de collections sous forme de lien (à l’aide de la boîte de dialogue [!UICONTROL Partage de liens] ), les utilisateurs peuvent choisir de laisser le destinataire télécharger les ressources d’origine, ou leurs rendus, ou les deux. Voir [Partager des ressources via le lien](/help/assets/link-sharing.md).
 
-   ![option pour télécharger uniquement les ressources d’origine, uniquement les rendus, ou les deux](/help/assets/assets/share-renditions.png)
+   ![option permettant d’autoriser le téléchargement uniquement des ressources d’origine, des rendus uniquement ou des deux](/help/release-notes/assets/share-assets-as-link.png)
 
 * Lorsque les utilisateurs téléchargent des ressources partagées avec eux sous la forme d’un lien, ils peuvent choisir de télécharger les ressources d’origine, les rendus ou les deux.
 
-* Les administrateurs peuvent limiter le nombre de sous-ressources que [!DNL Experience Manager] génère pour les ressources composites telles que les fichiers PDF, PowerPoint, InDesign et Keynote.
+* **Limiter les sous-ressources générées** : Les administrateurs peuvent limiter le nombre de sous-ressources  [!DNL Experience Manager] générées pour les ressources composites telles que les fichiers PDF, PowerPoint, InDesign et Keynote.
 
    ![limiter la génération des sous-ressources ;](/help/assets/assets/sub-asset-limit.png)
 

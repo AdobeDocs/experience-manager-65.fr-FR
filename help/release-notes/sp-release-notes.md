@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 4fca7799bf33bf90f601ab72a354f76e48ccdb04
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3652'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | Version | 6.5.10.0 |
 | Type | Version du Service Pack |
-| Date | 26 août 2021 |
+| Date  | 26 août 2021 |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.10.zip) |
 
 ## Éléments inclus dans [!DNL Adobe Experience Manager] 6.5.10.0 {#what-is-included-in-aem}
@@ -38,7 +38,7 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
 * **Options de partage de lien pour télécharger des ressources ou des rendus** : Lors du partage de ressources et de collections en tant que lien, les utilisateurs peuvent choisir d’autoriser le téléchargement des ressources d’origine ou de leurs rendus, ou les deux à l’aide du lien partagé. En outre, les utilisateurs qui téléchargent les ressources partagées avec eux via un lien ont la possibilité de télécharger uniquement les ressources d’origine, uniquement les rendus, ou les deux.
 
-* **Limiter les sous-ressources générées** : Les administrateurs peuvent limiter le nombre de sous-ressources  [!DNL Experience Manager] générées pour les ressources composites telles que les fichiers PDF, PowerPoint, InDesign et Keynote.
+* **Limiter les sous-ressources générées** : Les administrateurs peuvent limiter le nombre de sous-ressources  [!DNL Experience Manager] générées pour les ressources composites telles que les fichiers PDF, PowerPoint, InDesign et Keynote. Voir [Gestion des ressources composites](/help/assets/managing-linked-subassets.md#generate-subassets).
 
 * **Prise en charge** Camera Raw : Un nouveau  [!DNL Camera Raw] package prend en charge  [!DNL Adobe Camera Raw] la version 10.4. Voir  [Traiter les images à l’aide de [!DNL Camera Raw]](/help/assets/camera-raw.md).
 

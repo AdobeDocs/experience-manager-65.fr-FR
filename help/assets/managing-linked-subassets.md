@@ -3,12 +3,12 @@ title: Gestion des ressources composites avec des références et plusieurs page
 description: Découvrez comment créer des références aux ressources numériques dans  [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilisez la fonction Visionneuse de page pour afficher les pages de sous-ressources individuelles de fichiers multi-pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 role: User, Admin
-feature: Gestion des ressources
+feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 18%
+source-wordcount: '1423'
+ht-degree: 17%
 
 ---
 
@@ -102,7 +102,11 @@ Pour générer les sous-ressources, effectuez l’une des opérations suivantes 
    * Sélectionnez une ressource et cliquez sur [!UICONTROL Chronologie] pour ouvrir le panneau de gauche. Vous pouvez également utiliser le raccourci clavier `alt + 3`. Cliquez sur [!UICONTROL Démarrer le processus], sélectionnez [!UICONTROL Ressources de mise à jour de gestion des actifs numériques], cliquez sur [!UICONTROL Démarrer], puis cliquez sur [!UICONTROL Continuer].
    * Sélectionnez une ressource et cliquez sur [!UICONTROL Créer] > [!UICONTROL Workflow] dans la barre d’outils. Dans la boîte de dialogue contextuelle, sélectionnez le workflow [!UICONTROL Ressources de mise à jour de gestion des actifs numériques], cliquez sur [!UICONTROL Démarrer], puis sur [!UICONTROL Continuer].
 
-Pour les documents Microsoft Word, exécutez le workflow **[!UICONTROL Documents Word d’analyse de gestion des actifs numériques]**. Il génère un composant `cq:Page` à partir du contenu du document Microsoft Word. Les images extraites du document sont référencées à partir du composant `cq:Page`. Elles sont extraites même si la génération des sous-ressources est désactivée.
+Pour les documents Microsoft Word, exécutez le workflow **[!UICONTROL Documents Word d’analyse de gestion des actifs numériques]**. Il génère un composant `cq:Page` à partir du contenu du document Microsoft Word. Les images extraites du document sont référencées à partir du composant `cq:Page`. Ces images sont extraites même si la génération de sous-ressources est désactivée.
+
+>[!NOTE]
+>
+>Dans [!UICONTROL Créer un processus de sous-ressource - Propriétés des étapes] dans [!UICONTROL Arguments de processus], vous pouvez spécifier le nombre de sous-ressources générées par [!DNL Experience Manager]. La valeur par défaut est 5. Pour générer toutes les sous-ressources, laissez le champ vide. Si le champ est négatif, aucune sous-ressource n’est générée.
 
 ## Affichage des sous-ressources {#viewing-subassets}
 
