@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: 73e53f516d8e10b548f913db079c7e9812deb907
+source-git-commit: 9e1eea90945bb77e83e15d25708e47f2f3009fd8
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 35%
+source-wordcount: '374'
+ht-degree: 29%
 
 ---
 
@@ -22,7 +22,7 @@ Vous pouvez activer la prise en charge de [!DNL Adobe Camera Raw] pour traiter l
 
 Pour activer la prise en charge de [!DNL Camera Raw] dans [!DNL Experience Manager Assets], procédez comme suit :
 
-1. Téléchargez le [package Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) à partir de [!DNL Software Distribution].
+1. Téléchargez le [[!DNL Camera Raw] package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) à partir de [!DNL Software Distribution].
 1. Accédez à l’adresse `https://[aem_server]:[port]/workflow`. Ouvrez le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** .
 1. Modifiez l’étape **[!UICONTROL Miniatures des processus]** .
 1. Indiquez la configuration suivante dans l’onglet **[!UICONTROL Miniatures]** :
