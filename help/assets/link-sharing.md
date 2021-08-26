@@ -3,12 +3,12 @@ title: Partage de ressources à l’aide d’un lien
 description: Partagez des ressources, des dossiers et des collections sous la forme d’une URL.
 contentOwner: AG
 role: User
-feature: Partage de liens et gestion des ressources
+feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 38%
+source-wordcount: '998'
+ht-degree: 37%
 
 ---
 
@@ -24,20 +24,17 @@ ht-degree: 38%
 
 ## Partage de ressources {#share-assets}
 
-Pour générer l’URL des ressources que vous souhaitez partager avec les utilisateurs, utilisez la boîte de dialogue Partage de lien . Les utilisateurs disposant de privilèges d’administrateur ou avec des autorisations de lecture à l’emplacement `/var/dam/share` peuvent afficher les liens partagés avec eux.
+Pour générer l’URL des ressources que vous souhaitez partager avec les utilisateurs, utilisez la boîte de dialogue [!UICONTROL Partage de liens]. Les utilisateurs disposant de privilèges d’administrateur ou avec des autorisations de lecture à l’emplacement `/var/dam/share` peuvent afficher les liens partagés avec eux.
 
 1. Dans l’interface utilisateur [!DNL Assets], sélectionnez la ressource à partager sous forme de lien.
-1. Dans la barre d’outils, cliquez sur l’icône **[!UICONTROL Partager le lien]** ![Partager les ressources](assets/do-not-localize/assets_share.png). Le lien qui sera créé après avoir cliqué sur **[!UICONTROL Partager]** s’affiche à l’avance dans le champ [!UICONTROL Partager le lien] . Le lien n’est pas encore créé tant que vous n’avez pas cliqué sur **[!UICONTROL Envoyer]**.
 
-   ![Boîte de dialogue avec le partage de lien](assets/Link-sharing-dialog-box.png)
+1. Dans la barre d’outils, cliquez sur l’icône **[!UICONTROL Partager le lien]** ![Partager les ressources](assets/do-not-localize/assets_share.png). Le lien qui sera créé après avoir cliqué sur **[!UICONTROL Partager]** s’affiche à l’avance dans le champ [!UICONTROL Partager le lien] . Le lien n’est pas créé tant que vous n’avez pas sélectionné **[!UICONTROL Submit]**.
+
+   ![Boîte de dialogue avec le partage de lien](/help/assets/assets/share-assets-as-link.png)
 
    *Figure : Boîte de dialogue permettant de partager des ressources sous la forme d’un lien.*
 
 1. Dans la zone Adresse électronique de la boîte de dialogue **[!UICONTROL Partage de liens]**, saisissez l’ID de courrier électronique de l’utilisateur avec lequel vous souhaitez partager le lien. Vous pouvez ajouter un ou plusieurs utilisateurs.
-
-   ![Partage de liens vers des ressources directement depuis la boîte de dialogue Partage de lien](assets/Asset-Sharing-LinkShareDialog.png)
-
-   *Figure : Partagez des liens vers des ressources directement à partir de la boîte de dialogue  [!UICONTROL Partage de ] liens .*
 
    >[!NOTE]
    >
@@ -51,7 +48,7 @@ Pour générer l’URL des ressources que vous souhaitez partager avec les utili
 
    ![Définition de la date d’expiration du lien partagé](assets/Set-shared-link-expiration.png)
 
-1. Pour permettre aux utilisateurs de télécharger la ressource d’origine avec les rendus, sélectionnez **[!UICONTROL Autoriser le téléchargement du fichier d’origine]**. Par défaut, les utilisateurs peuvent uniquement télécharger les rendus de la ressource que vous partagez sous forme de lien.
+1. Pour permettre aux utilisateurs de télécharger la ressource d’origine, sélectionnez **[!UICONTROL Autoriser le téléchargement du fichier d’origine]**. Pour permettre aux utilisateurs de télécharger uniquement les rendus des ressources partagées, sélectionnez **[!UICONTROL Autoriser le téléchargement des rendus du fichier]**.
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs par email.
 
