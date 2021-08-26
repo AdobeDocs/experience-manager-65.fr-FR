@@ -3,11 +3,11 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] à distance.
 contentOwner: AG
 role: User, Admin, Leader
-feature: Ressources, utilisateurs et groupes connectés
+feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 37073594b45995ade7f0e73c519feb21adf48482
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2732'
 ht-degree: 94%
 
 ---
@@ -41,7 +41,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
 Les auteurs recherchent des images et les types de documents suivants dans l’outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Les documents sont ajoutés au composant `Download` et les images au composant `Image`. Les auteurs ajoutent également les ressources distantes d’un composant [!DNL Experience Manager] personnalisé qui étend les composants par défaut `Download` ou `Image`. Les formats pris en charge sont les suivants :
 
-* **Formats d’image** : les formats pris en charge par le composant [Image](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html). Les images [!DNL Dynamic Media] ne sont pas prises en charge.
+* **Formats d’image** : les formats pris en charge par le composant [Image.](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html)
 * **Formats de document** : voir les [formats de document pris en charge](assets-formats.md#supported-document-formats).
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
@@ -116,7 +116,7 @@ Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] et l
 ![Test de connexion des ressources connectées configurées [!DNL Sites]](assets/connected-assets-multiple-config.png) 
 *Figure : Test de connexion des ressources connectées configurées  [!DNL Sites].*
 
-## Utilisation des ressources distantes  {#use-remote-assets}
+## Utilisation des ressources distantes {#use-remote-assets}
 
 Les auteurs de site web utilisent l’outil de recherche de contenu pour se connecter au déploiement DAM. Les auteurs peuvent parcourir, rechercher et faire glisser les ressources distantes dans un composant. Pour vous authentifier sur le système DAM distant, conservez les identifiants de l’utilisateur DAM fournis par votre administrateur.
 
@@ -188,7 +188,7 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 * Les ressources locales ne sont pas synchronisées avec les ressources d’origine sur le déploiement distant. Tout retrait, modification ou suppression d’autorisation sur le déploiement DAM n’est pas propagé en aval.
 * Les ressources locales sont des copies en lecture seule. Les composants [!DNL Experience Manager] effectuent des modifications non destructives des ressources. Aucune autre modification n’est autorisée.
 * Les ressources récupérées localement sont disponibles à des fins d’écriture uniquement. Les workflows de mise à jour de ressources ne peuvent pas être appliqués et les métadonnées ne peuvent pas être modifiées.
-* Seules les images et les formats de document répertoriés sont pris en charge. [!DNL Dynamic Media] Les ressources  [!DNL Content Fragments] et ne  [!DNL Experience Fragments] sont pas prises en charge.
+* Seules les images et les formats de document répertoriés sont pris en charge. [!DNL Content Fragments] et ne  [!DNL Experience Fragments] sont pas pris en charge.
 * [!DNL Experience Manager] ne récupère pas les schémas de métadonnées. Il n’est donc pas possible d’afficher toutes les métadonnées extraites. Si le schéma est mis à jour séparément sur le déploiement [!DNL Sites] , toutes les propriétés de métadonnées sont affichées.
 * Tous les auteurs [!DNL Sites] disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
