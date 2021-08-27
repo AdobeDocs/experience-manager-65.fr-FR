@@ -1,28 +1,20 @@
 ---
 title: Fragments de contenu – considérations sur la suppression
-seo-title: Fragments de contenu – considérations sur la suppression
-description: Fragments de contenu – considérations sur la suppression
-seo-description: Fragments de contenu – considérations sur la suppression
-uuid: e7ac1809-159f-4d02-ad30-dc6c246e8a04
-contentOwner: aheimoz
-topic-tags: content-fragments
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
-docset: aem65
-feature: Fragments de contenu
-role: User, Admin
-exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 91%
+source-wordcount: '509'
+ht-degree: 92%
 
 ---
 
-# Fragments de contenu – considérations sur la suppression{#content-fragments-delete-considerations}
+# Fragments de contenu – considérations sur la suppression {#content-fragments-delete-considerations}
 
-## Autorisations - Supprimer ou ne pas supprimer {#permissions-delete-or-not-delete}
+Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
+
+## Autorisations – Supprimer ou ne pas supprimer {#permissions-delete-or-not-delete}
 
 Pouvoir supprimer du contenu est une capacité puissante, mais potentiellement sensible. Pour cette raison, de nombreux secteurs d’activité doivent limiter et contrôler la manière dont ces privilèges sont distribués.
 
@@ -33,12 +25,12 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
    * **Cas d’utilisation** : un utilisateur qui a besoin de modifier/mettre à jour un fragment de contenu **et de supprimer un fragment entier**.
    * **Autorisations** : l’autorisation [Supprimer](/help/sites-administering/security.md#actions) peut être [affectée via la gestion des utilisateurs et/ou des groupes](/help/sites-administering/security.md#managing-permissions).
 
-1. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variantes, les sous-nœuds.**
+2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variantes, les sous-nœuds.**
 
    Le fonctionnement de base de l’éditeur de fragment de contenu nécessite que ces sous-éléments transitoires puissent être supprimés. Par exemple, lors de la manipulation des variantes, mais également lors de la modification de métadonnées ou de la gestion du contenu associé.
 
    * **Cas d’utilisation** : un utilisateur qui a besoin de modifier/mettre à jour un fragment de contenu, **sans être autorisé à supprimer un fragment entier**.
-   * **Autorisations** : voir [Autorisations requises pour la fonctionnalité d’éditeur uniquement](/help/assets/content-fragments/content-fragments-delete.md#permissions-required-for-editor-functionality-only).
+   * **Autorisations** : voir [Autorisations requises pour la fonctionnalité d’éditeur uniquement](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >

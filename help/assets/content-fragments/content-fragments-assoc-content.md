@@ -1,28 +1,18 @@
 ---
 title: Contenu associé
-seo-title: Contenu associé
-description: Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
-seo-description: Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
-uuid: 0b79e45a-14b7-40e3-8b6c-456a83d215d5
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
-docset: aem65
-feature: Fragments de contenu
-role: User, Admin
-exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Découvrez comment la fonctionnalité de contenu associé d’AEM assure la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu, ce qui apporte une flexibilité supplémentaire à la diffusion de contenu en mode découplé.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '244'
 ht-degree: 100%
 
 ---
 
 # Contenu associé{#associated-content}
 
-Le contenu associé fournit la connexion afin que les ressources puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse,[ car vous disposez d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page.](/help/sites-authoring/content-fragments.md#using-associated-content) Cela permet aussi de réduire le temps nécessaire pour rechercher la ressource appropriée.
+La fonctionnalité de contenu associé d’AEM assure la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu. Vous bénéficiez ainsi d’une certaine souplesse pour la diffusion de votre contenu découplé, [car vous disposez d’une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page.](/help/sites-authoring/content-fragments.md#using-associated-content) Cela permet aussi de réduire le temps nécessaire pour rechercher la ressource appropriée.
 
 ## Ajout de contenu associé {#adding-associated-content}
 
@@ -30,22 +20,26 @@ Le contenu associé fournit la connexion afin que les ressources puissent (éven
 >
 >Différentes méthodes permettent d’ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
-Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/manage-collections.md#adding-assets-to-a-collection). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
+Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/manage-collections.md). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
 
 1. Ouvrez votre fragment et sélectionnez ensuite **Contenu associé** dans le panneau latéral.
 
-   ![chlimage_1-207](assets/chlimage_1-207.png)
+   ![Contenu associé](assets/cfm-assoc-content-01.png)
 
-1. Sélectionnez **Associer le contenu** ou **Associer la collection** (selon le cas, si des collections ont déjà été associées ou non).
+1. Selon que des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
+
+   * **Associer le contenu** : il s’agira de la première collection associée
+   * **Associer la collection** : les collections associées sont déjà configurées
+
 1. Sélectionnez la collection requise.
 
    Si vous le souhaitez, vous pouvez ajouter le fragment à la collection sélectionnée, car cela facilite le suivi.
 
-   ![cfm-6420-04](assets/cfm-6420-04.png)
+   ![Sélectionner la collection](assets/cfm-assoc-content-02.png)
 
-1. Confirmez (en cochant). La collection sera répertoriée comme associée.
+1. Confirmez (avec **Sélectionner**). La collection sera répertoriée comme associée.
 
-   ![cfm-6420-05](assets/cfm-6420-05.png)
+   ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
 ## Modification du contenu associé {#editing-associated-content}
 

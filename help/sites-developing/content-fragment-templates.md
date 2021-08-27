@@ -1,8 +1,8 @@
 ---
 title: Modèles de fragment de contenu
-seo-title: Modèles de fragment de contenu
+seo-title: Content Fragment Templates
 description: Les modèles sont sélectionnés lors de la création d’un fragment de contenu et fournissent au nouveau fragment la structure de base, l’élément et la variation
-seo-description: Les modèles sont sélectionnés lors de la création d’un fragment de contenu et fournissent au nouveau fragment la structure de base, l’élément et la variation
+seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: d147bac8-b710-40ed-9664-decb5ffcf8e7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2ec9625d480eb8cae23f44aa247fce2a519dec31
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 43%
+source-wordcount: '656'
+ht-degree: 39%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 43%
 >Les [modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) sont désormais recommandés pour créer tous les fragments.
 >
 >Les modèles de fragment de contenu sont utilisés pour tous les exemples dans We.Retail.
+
+>[!NOTE]
+>
+>Avant la version 6.3 d’AEM, les fragments de contenu étaient créés à l’aide de modèles au lieu de modèles. Les modèles ne sont plus disponibles pour la création de fragments, mais tous les fragments créés avec un tel modèle sont toujours pris en charge.
 
 Les modèles sont sélectionnés lors de la création d’un fragment de contenu. Ils fournissent au nouveau fragment la structure de base, les éléments et la variation. Les modèles utilisés pour les fragments de contenu sont soumis au gestionnaire de configuration Granite.
 
@@ -51,12 +55,10 @@ L’ordre de priorité est (dans l’ordre décroissant) `/conf`, `/apps`, `/lib
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
 >1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
-   >
-   >
-1. Apportez les modifications désirées dans `/apps`
+>
+>1. Apportez les modifications désirées dans `/apps`
 
 >
-
 
 
 La structure de base d’un modèle est stockée sous :

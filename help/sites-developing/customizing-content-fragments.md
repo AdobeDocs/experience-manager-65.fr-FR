@@ -1,8 +1,8 @@
 ---
 title: Personnalisation et extensions de fragments de contenu
-seo-title: Personnalisation et extensions de fragments de contenu
+seo-title: Customizing and Extending Content Fragments
 description: Un fragment de contenu étend une ressource standard.
-seo-description: Un fragment de contenu étend une ressource standard.
+seo-description: A content fragment extends a standard asset.
 uuid: f72c3a23-9b0d-4fab-a960-bb1350f01175
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2ec9625d480eb8cae23f44aa247fce2a519dec31
 workflow-type: tm+mt
-source-wordcount: '2749'
-ht-degree: 84%
+source-wordcount: '2772'
+ht-degree: 83%
 
 ---
 
-# Personnalisation et extensions de fragments de contenu {#customizing-and-extending-content-fragments}
+# Personnalisation et extensions de fragments de contenu{#customizing-and-extending-content-fragments}
 
 Un fragment de contenu étend une ressource standard. Voir :
 
@@ -41,6 +41,10 @@ Selon le type de fragment, des modèles sont également utilisés :
 >Les [modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) sont désormais recommandés pour créer tous les fragments.
 >
 >Les modèles de fragment de contenu sont utilisés pour tous les exemples dans We.Retail.
+
+>[!NOTE]
+>
+>Avant la version 6.3 d’AEM, les fragments de contenu étaient créés à l’aide de modèles au lieu de modèles. Les modèles ne sont plus disponibles pour la création de fragments, mais tous les fragments créés avec un tel modèle sont toujours pris en charge.
 
 * Modèles de fragment de contenu :
 
@@ -107,7 +111,7 @@ Les fragments de contenu simples (basés sur un modèle) sont associés à un co
    * Le contenu principal de ces éléments supplémentaires est mappé au rendu d’origine de la sous-ressource respective.
    * Les autres variations (le cas échéant) de tout élément supplémentaire sont mappées aux autres rendus de la sous-ressource respective.
 
-#### Emplacement des ressources   {#asset-location}
+#### Emplacement des ressources  {#asset-location}
 
 Comme pour les ressources standard, un fragment de contenu est conservé sous :
 
@@ -221,9 +225,8 @@ Les fragments de contenu peuvent être intégrés à :
    >Le workflow de traduction AEM fonctionne avec `/content` :
    >
    >    * Les modèles de fragment de contenu résidant dans `/conf` ; ils ne sont pas inclus dans ces traductions. Vous pouvez [internationaliser les chaînes de l’IU](/help/sites-developing/i18n-dev.md).
-      >
-      >    
-   * Les modèles étant copiés pour créer le fragment, cela est donc implicite.
+   >
+   >    * Les modèles étant copiés pour créer le fragment, cela est donc implicite.
 
 
 * **Des schémas de métadonnées**
@@ -237,7 +240,7 @@ Les fragments de contenu peuvent être intégrés à :
 
    * Le formulaire de schéma respectif est intégré à l’éditeur de fragments.
 
-## API de gestion des fragments de contenu – côté serveur  {#the-content-fragment-management-api-server-side}
+## API de gestion des fragments de contenu – côté serveur {#the-content-fragment-management-api-server-side}
 
 Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de contenu ; voir :
 
@@ -247,7 +250,7 @@ Vous pouvez utiliser l’API côté serveur pour accéder à vos fragments de co
 >
 >Il est fortement conseillé d’utiliser l’API côté serveur plutôt que d’accéder directement à la structure du contenu.
 
-### Interfaces principales  {#key-interfaces}
+### Interfaces principales {#key-interfaces}
 
 Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
@@ -356,7 +359,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 
 
-### Adaptation – utilisation d’adaptTo()  {#adapting-using-adaptto}
+### Adaptation – utilisation d’adaptTo() {#adapting-using-adaptto}
 
 Ce qui suit peut être adapté :
 
@@ -394,7 +397,7 @@ Il convient de noter les éléments suivants :
 
    * La suppression des variations existantes ne met pas à jour la structure de données.
 
-## L’API de gestion des fragments de contenu – côté client   {#the-content-fragment-management-api-client-side}
+## L’API de gestion des fragments de contenu – côté client  {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
@@ -495,7 +498,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### Exemple : création d’un fragment de contenu  {#example-creating-a-new-content-fragment}
+### Exemple : création d’un fragment de contenu {#example-creating-a-new-content-fragment}
 
 Pour créer un fragment de contenu par programmation, vous devez utiliser :
 
@@ -509,7 +512,7 @@ FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### Exemple : spécification de l’intervalle d’enregistrement automatique  {#example-specifying-the-auto-save-interval}
+### Exemple : spécification de l’intervalle d’enregistrement automatique {#example-specifying-the-auto-save-interval}
 
 L’intervalle d’enregistrement automatique (exprimé en secondes) peut être défini à l’aide de Configuration Manager (ConfMgr) :
 

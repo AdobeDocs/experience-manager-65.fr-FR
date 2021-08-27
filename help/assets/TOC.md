@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 34%
+source-wordcount: '629'
+ht-degree: 38%
 
 ---
 
@@ -91,6 +91,9 @@ ht-degree: 34%
    + [Étendre l’Éditeur de ressources](asseteditorx.md)
    + [API HTTP [!DNL Assets]](mac-api-assets.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP [!DNL Assets] HTTP](assets-api-content-fragments.md)
+   + [API GraphQL pour les fragments de contenu](content-fragments/graphql-api-content-fragments.md)
+   + [Authentification pour les requêtes GraphQL distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
+   + [API GraphQL avec fragments de contenu – Exemple de contenu et requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] développement de proxy](proxy.md)
 + Administration des ressources {#administer}
    + [Formats de fichiers pris en charge](assets-formats.md)
@@ -130,15 +133,19 @@ ht-degree: 34%
    + [Publication de ressources sur [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publier des dossiers sur  [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publication de collections sur  [!DNL Brand Portal]](brand-portal-publish-collection.md)
-+ Fragments de contenu {#fragments}
++ Fragments de contenu {#content-fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
-   + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
+   + [Diffusion découplée avec des fragments de contenu et GraphQL](content-fragments/content-fragments-graphql.md)
+   + [Activation de la fonctionnalité de fragments de contenu pour votre instance](content-fragments/content-fragments-configuration-browser.md)
    + [Modèles de fragment de contenu](content-fragments/content-fragments-models.md)
+   + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
    + [Variations – création de contenu de fragment](content-fragments/content-fragments-variations.md)
    + [Contenu associé à un fragment de contenu](content-fragments/content-fragments-assoc-content.md)
    + [Métadonnées – propriétés des fragments](content-fragments/content-fragments-metadata.md)
    + [Fragments de contenu – considérations sur la suppression](content-fragments/content-fragments-delete.md)
-   + [Fragments de contenu - Markdown](content-fragments/content-fragments-markdown.md)
+   + [Texte (Markdown)](content-fragments/content-fragments-markdown.md)
+   + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
    + [Création de projets de traduction pour les fragments de contenu](creating-translation-projects-for-content-fragments.md)
 + Gestion des ressources {#managing}
    + [Gestion des ressources numériques](manage-assets.md)

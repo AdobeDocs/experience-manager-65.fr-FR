@@ -1,30 +1,20 @@
 ---
 title: Texte (Markdown)
-seo-title: Texte (Markdown)
-description: Lors du processus de création, l’éditeur de fragments de contenu utilise la syntaxe markdown pour vous permettre d’écrire aisément du contenu.
-seo-description: Lors du processus de création, l’éditeur de fragments de contenu utilise la syntaxe markdown pour vous permettre d’écrire aisément du contenu.
-uuid: afcbf82f-3a75-4491-9172-706188db65bb
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
-docset: aem65
-feature: Fragments de contenu
-role: User, Admin
-exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu découplé.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '522'
 ht-degree: 97%
 
 ---
 
-# Texte (Markdown){#markdown}
+# Texte (Markdown) {#markdown}
 
-Lors du processus de [création](content-fragments-variations.md#authoring-your-content), l’éditeur de fragments de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire aisément du contenu :
+Lors du processus de [création](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragments de contenu utilise la syntaxe *markdown* pour vous permettre d’écrire aisément du contenu découplé :
 
-![Éditeur de balisage](/help/assets/content-fragments/assets/cfm-6420-08.png)
+![Éditeur de balisage](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 Vous pouvez définir :
 
