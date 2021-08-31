@@ -6,11 +6,11 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur pour le développement d’AEM 6.5
 breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
-feature: Développement
+feature: Developing
 role: Developer
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+source-git-commit: 1eb2ef06ed0541026ff3ba436dfab0d261af7356
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '909'
 ht-degree: 82%
 
 ---
@@ -37,8 +37,8 @@ ht-degree: 82%
    + [Conceptions et Designer (IU classique)](designer.md)
    + [Migration vers l’interface utilisateur tactile](/help/sites-developing/touch-ui-migration.md)
 + Plate-forme{#platform}
-   + [Aide-mémoire pour Sling ](sling-cheatsheet.md)
-   + [Utilisation des adaptateurs Sling ](sling-adapters.md)
+   + [Aide-mémoire pour Sling](sling-cheatsheet.md)
+   + [Utilisation des adaptateurs Sling](sling-adapters.md)
    + [Bibliothèques de balises](taglib.md)
    + Modèles{#templates}
       + [Modèles](templates.md)
@@ -46,7 +46,7 @@ ht-degree: 82%
       + [Modèles de page - Statiques](page-templates-static.md)
       + [Modèles de fragment de contenu](content-fragment-templates.md)
       + [Rendu de modèle adaptatif](templates-adaptive-rendering.md)
-   + [Utilisation de Sling Resource Merger dans AEM ](sling-resource-merger.md)
+   + [Utilisation de Sling Resource Merger dans AEM](sling-resource-merger.md)
    + [Recouvrements](overlays.md)
    + [Conventions de dénomination](naming-conventions.md)
    + [Création d’un composant de champ d’IU Granite](granite-ui-component.md)
@@ -119,7 +119,7 @@ ht-degree: 82%
       + [Composants composites dans les SPA](spa-composite-component.md)
       + [Documents de référence SPA](spa-reference-materials.md)
    + API HTTP [ ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
-   + [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+   + [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
    + [Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
    + [Présentation des fragments de contenu et des services de contenu dans AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Outils de développement{#devtools}
@@ -137,12 +137,12 @@ ht-degree: 82%
    + [Extension AEM Brackets](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation {#personlization}
++ Personnalisation{#personlization}
    + [ContextHub](contexthub.md)
    + [Configuration de ContextHub](ch-configuring.md)
    + [Ajout de ContextHub à des pages et accès à des magasins](ch-adding.md)
    + [Extension de ContextHub](ch-extend.md)
-   + [Exemples de magasins candidats ContextHub ](ch-samplestores.md)
+   + [Exemples de magasins candidats ContextHub](ch-samplestores.md)
    + [Exemples de types de module d’IU ContextHub](ch-samplemodules.md)
    + [Diagnostic ContextHub](ch-diagnostics.md)
    + [Développement de composants pour du contenu ciblé](target.md)
@@ -174,7 +174,7 @@ ht-degree: 82%
       + [Personnalisation de la structure Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
-      + [Configurations du service cloud ](extending-cloud-config.md)
+      + [Configurations du service cloud](extending-cloud-config.md)
       + [Création d’un service cloud personnalisé](extending-cloud-config-custom-cloud.md)
    + [Création d’extensions personnalisées](extending-campaign-extensions.md)
    + Forms{#extending-forms}
