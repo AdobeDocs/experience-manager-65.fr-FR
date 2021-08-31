@@ -1,16 +1,16 @@
 ---
 title: Installation et configuration du site de référence We.Gov et We.Finance
-seo-title: Installation et configuration du site de référence We.Gov
+seo-title: Set up and configure We.Gov reference site
 description: Installez, configurez et personnalisez un package de démonstration AEM Forms.
-seo-description: Installez, configurez et personnalisez un package de démonstration AEM Forms.
+seo-description: Install, configure, and customize an AEM Forms demo package.
 uuid: 0a6ad8f9-0d38-40c3-ad8d-e705edef55f8
 contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
-source-wordcount: '4743'
+source-wordcount: '4703'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Ce package contient la configuration cloud qui prend en charge les versions de p
 * Le package doit être installé sur un serveur propre, sans les autres packages de démonstration ou les anciennes versions de package de démonstration.
 * Le package doit être installé sur un serveur OSGI, s’exécutant en mode création
 
-### Qu’est-ce que ce module inclut {#what-does-this-package-include}
+### Que comprend ce module ? {#what-does-this-package-include}
 
 Le [package de démonstration AEM Forms We.Gov](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/we-gov-forms.pkg.all-2.0.2.zip) (**we-gov-forms.pkg.all-&lt;version>.zip**) est fourni sous la forme d’un package comprenant plusieurs autres sous-packages et services. Le package comprend les modules suivants :
 
@@ -80,7 +80,7 @@ Les ressources incluses dans ce module sont les suivantes :
 
 Cette section contient des informations sur l’installation du package de démonstration.
 
-### À partir de Distribution logicielle {#from-software-distribution}
+### À partir de la distribution logicielle {#from-software-distribution}
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
@@ -113,7 +113,7 @@ Cette section contient des informations sur l’installation du package de démo
 1. Autorisez le processus d’installation à se terminer.
 1. Accédez à *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* pour vous assurer que l’installation a réussi.
 
-### Installer de nouvelles versions de package {#installing-new-package-versions}
+### Installation de nouvelles versions de package {#installing-new-package-versions}
 
 Pour installer une nouvelle version de package, suivez les étapes définies dans les versions 4.1 et 4.2. L&#39;installation d&#39;une version de package plus récente alors qu&#39;un autre package plus ancien est déjà installé est possible, mais il est recommandé de d&#39;abord désinstaller l&#39;ancienne version de package. Pour ce faire, procédez comme suit.
 
@@ -203,7 +203,7 @@ Cette section contient des informations détaillées et des instructions sur la 
 #### Configuration du cloud {#cloud-configuration}
 
 1. Vérifiez les conditions préalables. Voir [Configuration SSL AEM](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig) pour connaître la configuration SSL requise.
-1. Accédez à:
+1. Accédez à :
 
    *https://&lt;aemserver> :&lt;port>/libs/adobesign/cloudservices/adobesign.html/conf/we-gov*
 
@@ -230,7 +230,7 @@ Cette section contient des détails et des instructions sur la configuration du 
 
 #### Service cloud OData MS Dynamics {#ms-dynamics-odata-cloud-service}
 
-1. Accédez à:
+1. Accédez à :
 
    https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
@@ -244,7 +244,7 @@ Cette section contient des détails et des instructions sur la configuration du 
 1. Accédez à l’onglet &quot;Paramètres d’authentification&quot;.
 1. Saisissez les informations suivantes :
 
-   1. **Racine du service :** par exemple, https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
+   1. **Racine du service :** par exemple  `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Type d’authentification :** OAuth 2.0
    1. **Paramètres d’authentification**  (voir  [Paramètres de configuration du cloud ](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) MS Dynamics pour collecter ces informations) :
 
@@ -255,7 +255,7 @@ Cette section contient des détails et des instructions sur la configuration du 
       1. URL du jeton d’accès : par exemple, [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. Portée de l’autorisation - **openid**
       1. En-tête d’authentification - **Porteur d’autorisation**
-      1. Ressource - par exemple [https://msdynamicsserver.api.crm3.dynamics.com](https://msdynamicsserver.api.crm3.dynamics.com)
+      1. Ressource - par exemple `https://msdynamicsserver.api.crm3.dynamics.com`
    1. Cliquez sur &quot;Se connecter à OAuth&quot;.
 
 
@@ -283,7 +283,7 @@ Les étapes détaillées dans cette section sont incluses pour vous aider à loc
 1. Cliquez sur &quot;Personnalisations&quot; et &quot;Ressources pour les développeurs&quot; en bas à droite.
 1. Vous y trouverez l’URL racine du service : e.g
 
-   *[https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
+   *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
 1. Vous trouverez des informations détaillées sur l’URL du jeton d’accès et d’actualisation ici :
 
@@ -293,7 +293,7 @@ Les étapes détaillées dans cette section sont incluses pour vous aider à loc
 
 Une fois la configuration du cloud terminée, vous pouvez tester le modèle de données de formulaire.
 
-1. Accédez à . 
+1. Accédez à .
 
    *https://&lt;aemserver> :&lt;port>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
@@ -338,7 +338,7 @@ Une fois la configuration du cloud terminée, vous pouvez tester le modèle de d
 
    * Pour tester la connexion, sélectionnez **HOMEMORTGAGEACCOUNT** et fournissez-lui un service get. Testez le service et les administrateurs système peuvent voir les données en cours de récupération.
 
-### Configuration Adobe Analytics (facultatif) {#adobe-analytics-configuration}
+### Configuration d’Adobe Analytics (facultatif) {#adobe-analytics-configuration}
 
 Cette section contient des informations détaillées et des instructions sur la configuration de Adobe Analytics Cloud.
 
@@ -415,7 +415,7 @@ Les administrateurs peuvent accorder aux utilisateurs des autorisations AEM Anal
 
 ### Rapports Adobe Analytics {#adobe-analytics-reporting}
 
-#### Affichage des rapports de sites Adobe Analytics {#view-adobe-analytics-sites-reporting}
+#### Affichage des rapports sur les sites Adobe Analytics {#view-adobe-analytics-sites-reporting}
 
 >[!NOTE]
 Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration de cloud Adobe Analytics si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une principale configuration de cloud.
@@ -448,7 +448,7 @@ Les données AEM Forms Analytics sont disponibles hors ligne ou sans configurati
 >[!NOTE]
 Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration de cloud Adobe Analytics si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une principale configuration de cloud.
 
-1. Accédez à . 
+1. Accédez à .
 
    *https://&lt;aemserver> :&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
@@ -479,7 +479,7 @@ Avant de lire d’autres instructions, veuillez consulter les éléments suivant
 Pour configurer le service afin qu’il communique correctement avec l’outil de conversion de formulaires, les utilisateurs doivent configurer le service Identity Management System (IMS) pour pouvoir s’enregistrer auprès d’Adobe I/O.
 
 1. Accédez à https://&lt;aemserver>:&lt;port> > Cliquez sur Adobe Experience
-Gestionnaire en haut à gauche > Outils > Sécurité > Adobe de la configuration IMS.
+Gestionnaire en haut à gauche > Outils > Sécurité > Configuration Adobe IMS.
 
 1. Cliquez sur Créer.
 
@@ -494,7 +494,7 @@ Gestionnaire en haut à gauche > Outils > Sécurité > Adobe de la configuration
 >[!NOTE]
 Le certificat créé dans cette section va être utilisé pour créer le service d&#39;intégration dans Adobe I/O. Une fois que les utilisateurs ont créé dans le service d’intégration, ils peuvent utiliser ces informations depuis Adobe I/O pour terminer la configuration.
 
-#### Création de l’intégration dans Adobe I/O {#create-integration-adobeio}
+#### Création d’une intégration dans Adobe I/O {#create-integration-adobeio}
 
 Assurez-vous que vous avez la possibilité de créer une intégration dans votre domaine d’Adobe si vous ne contactez pas votre administrateur système pour ce faire.
 
@@ -674,7 +674,7 @@ Les modèles inclus dans ce module prennent également en charge le système de 
 
 [Système de style](../../sites-authoring/style-system.md)
 
-#### Logs du modèle {#template-logos}
+#### Logs des modèles {#template-logos}
 
 Les ressources DAM du projet incluent également des logos et des images We.Gov. Ces ressources sont disponibles à l’adresse suivante :
 
@@ -735,7 +735,7 @@ Tout le code Java de l’étape du workflow est contenu dans le lot **we-gov-for
 
 Cette section contient des informations sur les fonctionnalités de démonstration et les décisions de conception qui peuvent nécessiter des considérations spéciales pendant le processus de démonstration.
 
-### Remarques concernant la démonstration {#demo-considerations}
+### Considérations relatives aux démonstrations {#demo-considerations}
 
 * Selon AGRS-159, assurez-vous que le nom (premier, intermédiaire et dernier) du contact utilisé dans le formulaire adaptatif d’inscription est unique.
 * Le formulaire adaptatif d’inscription enverra le courrier électronique Adobe Sign à l’adresse électronique spécifiée dans le champ de courrier électronique du formulaire. Cette adresse électronique ne peut pas être la même que celle utilisée pour configurer la configuration cloud Adobe Sign.
@@ -747,7 +747,7 @@ Cette section contient des informations sur les fonctionnalités de démonstrati
 
 ## Configuration des tests d’accessibilité {#configure-accessibility-testing}
 
-### Activation du test d’accessibilité Ajout de Chrome sur {#enable-chrome-add-on}
+### Activation du module complémentaire Chrome Test d’accessibilité {#enable-chrome-add-on}
 
 Pour effectuer d’abord des tests d’accessibilité, vous devez installer le module externe Chrome. Vous pouvez le trouver [ici](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en).
 
