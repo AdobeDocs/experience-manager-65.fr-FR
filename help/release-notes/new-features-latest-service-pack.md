@@ -4,10 +4,10 @@ description: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
+source-git-commit: 2a4da77cbde3d3a91674a5239436ccf962f72003
 workflow-type: tm+mt
-source-wordcount: '3983'
-ht-degree: 4%
+source-wordcount: '4106'
+ht-degree: 5%
 
 ---
 
@@ -61,6 +61,23 @@ Cet article met en évidence les fonctionnalités incluses dans le dernier Servi
 >[!NOTE]
 >
 >Le module complémentaire de [!DNL Experience Manager Forms] est rendu disponible une semaine après la publication du Service Pack [!DNL Experience Manager] programmée.
+
+* Vous pouvez désormais utiliser le service de conversion automatique de formulaire pour [convertir les PDF Forms en français, en allemand et en espagnol](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) en formulaires adaptatifs.
+
+* **Messages d’erreur dans le navigateur Propriétés** : ajout de messages d’erreur pour chaque propriété dans le navigateur Propriétés des formulaires adaptatifs. Ces messages aident à comprendre les valeurs autorisées pour un champ.
+
+* **Prise en charge de l’utilisation de l’option littérale pour définir la valeur d’une variable** de type JSON : Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un workflow AEM. L’option de littéral permet de spécifier un fichier JSON sous la forme d’une chaîne.
+
+* **Mises à jour de la plateforme** :  [!DNL Adobe Experience Manager Forms] sur JEE a ajouté la prise en charge des plateformes suivantes :
+   * [!DNL Adobe Acrobat 2020]
+   * [!DNL Ubuntu 20.04]
+   * [!DNL Open Office 4.1.10]
+   * [!DNL Microsoft Office 2019]
+   * [!DNL Microsoft Windows Server 2019]
+   * [!DNL RHEL8.3]
+   * [!DNL Apache Geode cache solution]
+
+* Ajout de la prise en charge de l’API `GuideBridge#getGuidePath` dans [!DNL AEM Forms].
 
 ## Fonctionnalités clés des Service Packs [!DNL Experience Manager] 6.5 précédents {#key-features-previous-service-packs}
 
