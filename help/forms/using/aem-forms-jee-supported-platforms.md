@@ -1,8 +1,8 @@
 ---
 title: Plateformes prises en charge pour AEM Forms on JEE
-seo-title: Plateformes prises en charge pour AEM Forms on JEE
-description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms on JEE
-seo-description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms sur JEE
+seo-title: Supported Platforms for AEM Forms on JEE
+description: Liste des composants d’infrastructure requis et pris en charge pour installer AEM Forms sur JEE
+seo-description: List of infrastructure components required and supported for installing AEM Forms on JEE
 uuid: 777f943b-4cb4-444e-a036-8032b9fce5be
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f0caaaf72a75aff3099f4a9184653353639035e4
 workflow-type: tm+mt
-source-wordcount: '3323'
-ht-degree: 76%
+source-wordcount: '3458'
+ht-degree: 75%
 
 ---
 
@@ -33,7 +33,6 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 >* Pour une liste complète des exceptions concernant les plateformes de serveur prises en charge, voir [Exceptions aux plateformes de serveur prises en charge](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >* AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 >
-
 
 
 ### Configurations recommandées {#recommendedconfigurations}
@@ -184,11 +183,11 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Référentiel Microkernel</td>
    <td>R : Prise en charge limitée</td>
   </tr>
-    <tr>
-   <td>MySQL 5.7.19 </td>
+  <tr>
+   <td>MySQL 5.7.35 </td>
    <td>-</td>
    <td>R : Prise en charge limitée </td>
-  </tr>
+  </tr>  
  </tbody>
 </table>
 
@@ -278,13 +277,28 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <th><p><strong>Niveau de prise en charge</strong></p> </th>
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
-  <tr>
-   <td>Microsoft Windows Server 2016 (64 bits)</td>
+   <tr>
+   <td>Microsoft Windows Server 2019 (64 bits)</td>
    <td>A : Pris en charge</td>
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)</br><b>Remarque :</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> atteint la phase de fin de maintenance et passe à la phase de prise en charge du cycle de vie étendu le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour les mises à niveau et les nouvelles installations. Les installations existantes peuvent utiliser Red Hat Enterprise Linux 6 pendant la phase de prise en charge du cycle de vie étendu.</p> </td>
+   <td>Ubuntu 20.04</td>
+   <td>A : Pris en charge</td>
+   <td>Service Packs et mises à jour critiques</td>
+  </tr>
+  <tr>
+   <td>Microsoft Windows Server 2016 (64 bits) (obsolète)</td>
+   <td>A : Pris en charge</td>
+   <td>Service Packs et mises à jour critiques</td>
+  </tr>
+  <tr>
+   <td><p>Red Hat Enterprise Linux 8 (Kernel 4.x) (64 bits)</p> </td>
+   <td><p>A : Pris en charge</p> </td>
+   <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
+  </tr>
+  <tr>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits) (obsolète)</td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
@@ -434,11 +448,19 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouve
    <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic </a> tracklast version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 Classic </a> tracklast version</td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic </a> tracklast version (obsolète)</td>
+   <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2019</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2016 (obsolète)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
@@ -446,21 +468,37 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouve
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016<br /> </td>
+   <td>Microsoft® Office Visio 2019<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2016<br /> </td>
+   <td>Microsoft® Office Visio 2016 (obsolète)<br /> </td>
+   <td>VSD, VSDX</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Project 2016<br /> </td>
+   <td>Microsoft® Publisher 2016 (obsolète)<br /> </td>
+   <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Project 2019<br /> </td>
    <td>MPP</td>
   </tr>
   <tr>
-   <td>OpenOffice 4.1.2</td>
+   <td>Microsoft® Project 2016 (obsolète)<br /> </td>
+   <td>MPP</td>
+  </tr>
+  <tr>
+   <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td>
   </tr>
+  <tr>
+   <td>OpenOffice 4.1.2 (obsolète)</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td>
+  </tr>  
  </tbody>
 </table>
 
@@ -470,17 +508,15 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouve
 >
 >En outre :
 >
->* PDF Generator requiert la version 32 bits de [Acrobat 2017 classic track version 17.011.30078 ou ultérieure](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
+>* PDF Generator requiert la version 32 bits de [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
 >* PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion.
 >* PDF Generator ne prend pas en charge Microsoft Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
 >* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
-   >
-   >
-* Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
 >
-
+>* Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
+>
 
 
 ### Exceptions de la prise en charge de l’accessibilité {#exceptions-to-accessibility-support}
@@ -545,7 +581,7 @@ Pour la configuration requise supplémentaire, voir :
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td>Microsoft® Windows® 2016 Server</td>
+   <td>Microsoft® Windows® 2016 Server (à déterminer)</td>
    <td>Service Packs et mises à jour critiques</td>
   </tr>
  </tbody>
@@ -581,10 +617,15 @@ Pour la configuration requise supplémentaire, voir :
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr>
-   <td>Acrobat 2017 (Suivi classique)</td>
+   <td>Acrobat 2020 (Suivi classique)</td>
+   <td>Version 20.004.30006 ou ultérieure<br /> </td>
+  </tr>
+  <tr>
+   <td>Acrobat 2017 (Suivi classique) (obsolète)</td>
    <td>Version 17.011.30078 ou ultérieure<br /> </td>
   </tr>
- </tbody>
+
+</tbody>
 </table>
 
 >[!NOTE]
@@ -653,7 +694,6 @@ Pour la configuration requise supplémentaire, voir :
 >
 
 
-
 #### Clients mobiles {#mobile-clients}
 
 <table>
@@ -685,7 +725,6 @@ Pour la configuration requise supplémentaire, voir :
 >
 >* Le Portail Formulaires est pris en charge sur Safari sur iPad uniquement.
 >
-
 
 
 ### Application AEM Forms {#aem-forms-workspace-app}
@@ -742,6 +781,26 @@ Dans des circonstances échappant au contrôle d’Adobe, des correctifs de four
 Adobe se réserve le droit de modifier les plateformes de fournisseurs tiers de référence prises en charge par une version d’AEM Forms on JEE et les définitions de correctif prises en charge à tout moment.
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site Support Adobe aux entreprises les articles de la base de connaissances relatifs à votre produit.
+
+## Mises à jour de plateforme {#platform-updates}
+
+Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.10.0 du 2 septembre 2021 :
+
+* Adobe Acrobat 2017 - [La prise en charge principale d’Adobe Acrobat 2017 prend fin le 6 juin 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+
+* Microsoft Windows Server 2016 (64 bits)
+
+* Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)
+
+* Microsoft® Office 2016
+
+* OpenOffice 4.1.2
+
+>[!NOTE]
+>
+>Les plateformes marquées comme [obsolètes restent prises en charge jusqu’à la version 15 (6.5.15.0) du Service Pack AEM Forms 6.5](https://helpx.adobe.com/support/programs/eol-matrix.html).
+
+
 
 ## Historique des révisions {#revision-history}
 
