@@ -4,7 +4,7 @@ description: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
+source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
 workflow-type: tm+mt
 source-wordcount: '4106'
 ht-degree: 5%
@@ -68,7 +68,7 @@ Cet article met en évidence les fonctionnalités incluses dans le dernier Servi
 
 * **Prise en charge de l’utilisation de l’option littérale pour définir la valeur d’une variable** de type JSON : Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un workflow AEM. L’option de littéral permet de spécifier un fichier JSON sous la forme d’une chaîne.
 
-* **Mises à jour de la plateforme** :  [!DNL Adobe Experience Manager Forms] sur JEE a ajouté la prise en charge des plateformes suivantes :
+* [Mises à jour de la plateforme](../forms/using/aem-forms-jee-supported-platforms.md) :  [!DNL Adobe Experience Manager Forms] sur JEE a ajouté la prise en charge des plateformes suivantes :
    * [!DNL Adobe Acrobat 2020]
    * [!DNL Ubuntu 20.04]
    * [!DNL Open Office 4.1.10]

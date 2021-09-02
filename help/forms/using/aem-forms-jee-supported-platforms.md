@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 95f2268c5965ed73336da9681ae52e755cee36f4
+source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
 workflow-type: tm+mt
-source-wordcount: '3460'
+source-wordcount: '3472'
 ht-degree: 75%
 
 ---
@@ -32,6 +32,7 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 >
 >* Pour une liste complète des exceptions concernant les plateformes de serveur prises en charge, voir [Exceptions aux plateformes de serveur prises en charge](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >* AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
+
 >
 
 
@@ -516,6 +517,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouve
 >* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >
 >* Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
+
 >
 
 
@@ -691,6 +693,7 @@ Pour la configuration requise supplémentaire, voir :
 >* Administration Console n’est pas prise en charge sur Safari.
 >* Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour AEM Forms 6.1.
 >* Forms Portal prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
+
 >
 
 
@@ -724,6 +727,7 @@ Pour la configuration requise supplémentaire, voir :
 >[!NOTE]
 >
 >* Le Portail Formulaires est pris en charge sur Safari sur iPad uniquement.
+
 >
 
 
@@ -806,3 +810,13 @@ Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Fo
 
 * 9 septembre 2020
    * Modification de la version prise en charge d’iOS pour l’application AEM Forms en iOS 12. La version précédente était iOS 11.
+
+* 2 septembre 2021
+   * **Mises à jour de la plateforme** :  [!DNL Adobe Experience Manager Forms] sur JEE a ajouté la prise en charge des plateformes suivantes :
+      * [!DNL Adobe Acrobat 2020]
+      * [!DNL Ubuntu 20.04]
+      * [!DNL Open Office 4.1.10]
+      * [!DNL Microsoft Office 2019]
+      * [!DNL Microsoft Windows Server 2019]
+      * [!DNL RHEL8]
+
