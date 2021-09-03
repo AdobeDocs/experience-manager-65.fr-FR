@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: a3d52ecf9284ba22cac3739ba543e5dd5c855331
+source-git-commit: 2095159a76380f7d17abcea9965ed6f82da69c8c
 workflow-type: tm+mt
-source-wordcount: '4205'
+source-wordcount: '4245'
 ht-degree: 5%
 
 ---
@@ -272,8 +272,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 >[!NOTE]
 >
->* [!DNL Experience Manager Forms] publie les packages de modules complémentaires une semaine après la date de publication prévue du Service Pack [!DNL Experience Manager].
-
+>Le Service Pack permet d’exécuter [!DNL AEM Forms] sur les derniers systèmes d’exploitation serveur, serveurs d’applications et bases de données. Il apporte également certaines fonctionnalités disponibles sur Cloud Service dans l’environnement on-premise et fournit des correctifs pour les problèmes signalés par les clients. [!DNL AEM Forms] sur le service pack OSGi, vous pouvez le télécharger et l’installer. [!DNL AEM Forms on JEE]  Le Service Pack sera disponible le 9 septembre 2021.
 
 **Formulaires adaptatifs**
 
