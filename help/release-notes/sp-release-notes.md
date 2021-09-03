@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
+source-git-commit: a3d52ecf9284ba22cac3739ba543e5dd5c855331
 workflow-type: tm+mt
-source-wordcount: '4438'
+source-wordcount: '4205'
 ht-degree: 5%
 
 ---
@@ -64,13 +64,17 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
 * **Prise en charge de l’utilisation de l’option littérale pour définir la valeur d’une variable** de type JSON : Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un workflow AEM. L’option de littéral permet de spécifier un fichier JSON sous la forme d’une chaîne.
 
-* [Mises à jour de la plateforme](../forms/using/aem-forms-jee-supported-platforms.md) :  [!DNL Adobe Experience Manager Forms] sur JEE a ajouté la prise en charge des plateformes suivantes :
-   * [!DNL Adobe Acrobat 2020]
-   * [!DNL Ubuntu 20.04]
-   * [!DNL Open Office 4.1.10]
-   * [!DNL Microsoft Office 2019]
-   * [!DNL Microsoft Windows Server 2019]
-   * [!DNL RHEL8]
+<!--
+
+* [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+  * [!DNL Adobe Acrobat 2020]
+  * [!DNL Ubuntu 20.04]
+  * [!DNL Open Office 4.1.10]
+  * [!DNL Microsoft Office 2019]
+  * [!DNL Microsoft Windows Server 2019]
+  * [!DNL RHEL8]
+
+  -->
 
 Pour obtenir la liste de toutes les fonctionnalités et améliorations introduites dans [!DNL Experience Manager] 6.5.10.0, voir [les nouveautés de [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -273,7 +277,11 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Formulaires adaptatifs**
 
-* Si les validations effectuées sur les valeurs de champ dans un formulaire adaptatif sont réussies, [!DNL AEM Forms] ne parvient pas à appeler le modèle de données de formulaire (CQ-4325491).
+<!--
+
+* When the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
+
+-->
 
 * Lorsque vous ajoutez un dictionnaire de langue à un projet de traduction, puis ouvrez le projet, [!DNL AEM Forms] affiche un message d’erreur (CQ-4324933) :
 
@@ -308,19 +316,26 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Lorsque vous sélectionnez tout le texte d’un éditeur, vous ne pouvez pas remplacer le texte de police par Arial (NPR-36646).
 
-* Lorsque vous créez une URL dans un éditeur et que vous prévisualisez les modifications, un arrière-plan noir s’affiche à la place du texte de l’URL (NPR-36640).
+<!--
+
+* When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
+
+-->
 
 * Lorsque vous copiez et collez du texte dans un éditeur, des problèmes se produisent lors de la modification de la police en Arial pour les puces disponibles dans le document (NPR-36628).
 
 * Problèmes de mise en retrait des puces dans l’éditeur de texte (NPR-36513).
 
+<!--
 **Designer**
 
-* Le Reader d’écran ne parvient pas à lire les données de champ flottant placées dans le libellé de texte sur la page de Principal ou sur les pages de sous-formulaire dans un PDF dynamique (CQ-4321587).
+* Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
+
+-->
 
 **Services de document**
 
-* Lorsque vous convertissez des fichiers XDP en fichiers PDF, puis assemblez le PDF résultant, les générations PDF échouent et affichent le message d’erreur suivant :
+* Lorsque vous convertissez des fichiers XDP en fichiers PDF, puis assemblez le PDF résultant, les générations PDF échouent et affichent le message d’erreur suivant (CQ-4328666) :
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -414,18 +429,21 @@ Pour connaître les plates-formes certifiées pour fonctionner avec cette versio
 >
 >Experience Manager 6.5.10.0 comprend une nouvelle version du [module de compatibilité AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Si vous utilisez une ancienne version du module de compatibilité AEM Forms et que vous effectuez une mise à jour vers Experience Manager 6.5.10.0, installez la dernière version du module après installation du module complémentaire Forms.
 
-### Installation d’Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+<!--
+
+### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Passez cette étape si vous n’utilisez pas AEM Forms sous JEE. Les correctifs d’Adobe Experience Manager Forms on JEE sont fournis via un programme d’installation distinct.
+>Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
 
-Pour plus d’informations sur l’installation du programme d’installation cumulatif pour Experience Manager Forms on JEE et la configuration après le déploiement, consultez les [notes de mise à jour](jee-patch-installer-65.md).
+For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
 
 >[!NOTE]
 >
->Après avoir installé le programme d’installation cumulatif pour Experience Manager Forms on JEE, installez le dernier module complémentaire Forms, supprimez le module complémentaire Forms du dossier `crx-repository\install` et redémarrez le serveur.
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
+-->
 
 ### UberJar {#uber-jar}
 
@@ -459,10 +477,14 @@ Vérifiez si vous utilisez une fonctionnalité ou une fonctionnalité dans un d�
 
 ## Problèmes connus {#known-issues}
 
-* (Pour JBoss sous Microsoft Windows uniquement) Pour continuer à utiliser le service Create PDF sur [!DNL AEM Forms on JEE], téléchargez [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) à partir de Distribution logicielle, extrayez et copiez le dossier disponible dans le fichier Zip à l’emplacement suivant :
-   `[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
+<!--
 
-* [!DNL Microsoft Windows Server 2019] ne prenant pas en charge [!DNL MySQL 5.7] et [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] ne prend pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
+* (For JBoss on Microsoft Windows only) To continue using the Create PDF service on [!DNL AEM Forms on JEE], download [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) from Software Distribution, extract and copy the folder available in the Zip file to the following location:
+`[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
+
+* As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+
+-->
 
 * Si vous mettez à niveau votre instance [!DNL Experience Manager] de la version 6.5 vers la version 6.5.10.0, vous pouvez afficher les exceptions `RRD4JReporter` dans le fichier `error.log`. Pour résoudre le problème, redémarrez l’instance.
 
