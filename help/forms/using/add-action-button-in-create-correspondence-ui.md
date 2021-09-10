@@ -1,19 +1,19 @@
 ---
 title: Ajout d’une action ou d’un bouton personnalisé à l’interface utilisateur de création de correspondance
-seo-title: Ajout d’une action ou d’un bouton personnalisé à l’interface utilisateur de création de correspondance
+seo-title: Add custom action/button in Create Correspondence UI
 description: Découvrez comment ajouter une action/un bouton personnalisé(e) à l’interface utilisateur Création de correspondance.
-seo-description: Découvrez comment ajouter une action/un bouton personnalisé(e) à l’interface utilisateur Création de correspondance.
+seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9f3ca2da0828ce5170622852220a1926df0d5150
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1868'
 ht-degree: 55%
 
 ---
@@ -124,7 +124,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
 1. Cliquez sur **Enregistrer tout**.
 
-#### Création d’un dossier de paramètres régionaux avec le fichier de propriétés dans la branche /apps  {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Création d’un dossier de paramètres régionaux avec le fichier de propriétés dans la branche /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Le fichier ACMExtensionsMessages.properties comprend des libellés et des messages d’info-bulle pour divers champs de l’interface utilisateur de création de correspondance. Effectuez une copie de ce fichier dans la branche /apps afin que les actions/boutons personnalisé(e)s fonctionnent.
 
@@ -162,7 +162,7 @@ Le fichier ACMExtensionsMessages.properties comprend des libellés et des messag
 
 1. Cliquez sur **Enregistrer tout**.
 
-#### Redémarrage du lot du bloc de création Adobe Asset Composer  {#restart-the-adobe-asset-composer-building-block-bundle}
+#### Redémarrage du lot du bloc de création Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
 
 Après avoir effectué chaque modification côté serveur, redémarrez le lot du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés. Par conséquent, le lot du bloc de création Asset Composer Adobe nécessite un redémarrage.
 
@@ -178,7 +178,7 @@ Après avoir effectué chaque modification côté serveur, redémarrez le lot du
 
 Après le redémarrage du lot du bloc de création Adobe Asset Composer, le bouton personnalisé s’affiche dans l’interface utilisateur de création de correspondance. Vous pouvez ouvrir une lettre dans l’interface utilisateur de création de correspondance afin de prévisualiser le bouton personnalisé.
 
-### Ajouter un traitement d’action au bouton  {#add-action-handling-to-the-button}
+### Ajouter un traitement d’action au bouton {#add-action-handling-to-the-button}
 
 Par défaut, la classe ActionHandler est intégrée dans le fichier cm.domain.js de l’interface utilisateur de création de correspondance à l’emplacement suivant :
 
@@ -323,7 +323,7 @@ La gestion de l’action ou du bouton lors d’un clic sur l’action/le bouton 
       '</div>';
       ```
 
-### Ajout d’un processus LiveCycle pour activer le traitement <span class="acrolinxCursorMarker"></code>d’action  {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Ajout d’un processus LiveCycle pour activer le traitement <span class="acrolinxCursorMarker"></code>d’action {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Dans ce scénario, activez les composants suivants, qui font partie du fichier joint components.zip :
 
@@ -331,9 +331,9 @@ Dans ce scénario, activez les composants suivants, qui font partie du fichier j
 * Processus LCA d’envoi de la lettre pour révision (SendLetterForReview.lca)
 
 Téléchargez et décompressez le fichier components.zip pour obtenir les fichiers DSCSample.jar et SendLetterForReview.lca. Utilisez ces fichiers comme indiqué dans les procédures suivantes.
-components.zip
+[Obtenir le fichier](assets/components.zip)
 
-#### Configuration du serveur LiveCycle pour exécuter le processus LCA  {#configure-the-livecycle-server-to-run-the-lca-process}
+#### Configuration du serveur LiveCycle pour exécuter le processus LCA {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
@@ -380,7 +380,7 @@ Processus de LiveCycle requis qui active le processus de service de messagerie.
 
 1. Cliquez sur **Importer**.
 
-#### Ajout de ServiceName à la liste Service de Liste autorisée {#adding-servicename-to-the-allowlist-service-list}
+#### Ajout de ServiceName à la liste du service de Liste autorisée {#adding-servicename-to-the-allowlist-service-list}
 
 Indiquez dans le serveur AEM les services LiveCycle auxquels vous souhaitez qu’il accède.
 
@@ -391,7 +391,7 @@ Indiquez dans le serveur AEM les services LiveCycle auxquels vous souhaitez qu�
 
 1. Cliquez sur **Enregistrer**.
 
-#### Configuration du service de courrier électronique  {#configure-the-email-service}
+#### Configuration du service de courrier électronique {#configure-the-email-service}
 
 Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle afin que Correspondence Management puisse envoyer un courrier électronique.
 
@@ -424,7 +424,7 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
 
    >[!NOTE]
    >
-   >À chaque modification apportée au côté serveur, redémarrez le serveur LiveCycle. Pour plus d’informations sur la création de votre propre composant LiveCycle, voir [Extension du logiciel LiveCycle ES via le développement d’un DSC personnalisé](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
+   >À chaque modification apportée au côté serveur, redémarrez le serveur LiveCycle.
 
    Le fichier DSCSample.jar utilise l’API renderLetter. Pour plus d’informations sur l’API renderLetter, voir [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
