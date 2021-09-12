@@ -12,10 +12,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
-feature: Configuration, mode hybride
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+feature: Configuration,Hybrid Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '7797'
+source-wordcount: '7792'
 ht-degree: 34%
 
 ---
@@ -44,8 +44,7 @@ En savoir plus sur l’utilisation des [vidéos](/help/assets/video.md) dans Dyn
 >* `ImageServing.log`
 
 >
->
-Elles sont documentées dans [Surveillez et conservez votre instance de Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
+>Elles sont documentées dans [Surveillez et conservez votre instance de Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
 
 La diffusion de contenus et la publication hybride est une fonctionnalité clé lorsque vous ajoutez Dynamic Media à Adobe Experience Manager. La publication hybride vous permet de diffuser des ressources Dynamic Media, telles que des images, des visionneuses et des vidéos, à partir du cloud plutôt que depuis les noeuds de publication du Experience Manager.
 
@@ -344,7 +343,6 @@ Replication test succeeded
 Vous pouvez aussi procéder de l’une des manières suivantes :
 * Vérifiez les journaux de réplication pour vous assurer que la ressource est répliquée.
 * Publiez une image. Sélectionnez l’image et sélectionnez **[!UICONTROL Visionneuses]** dans le menu déroulant, puis sélectionnez un paramètre prédéfini de visionneuse. Sélectionnez **[!UICONTROL URL]**. Pour vérifier que vous pouvez voir l’image, copiez et collez le chemin de l’URL dans le navigateur.
-
 
 
 ### Dépannage de l’authentification {#troubleshooting-authentication}
@@ -868,7 +866,7 @@ Tableau des paramètres du manifeste et leurs valeurs par défaut :
 | `defaultthumbpix` | `100,100` | Taille de miniature par défaut. Utilisé à la place d’attribute::DefaultPix pour les requêtes de miniature (`req=tmb`).<br>Le serveur oblige les images de réponse à ne pas dépasser cette largeur et cette hauteur. Cette action est définie sur true si une requête de miniature (`req=tmb`) ne spécifie pas explicitement la taille et ne spécifie pas la taille d’affichage explicitement à l’aide de `wid=`, `hei=` ou `scl=`.<br>Spécifiée sous la forme de deux nombres entiers de valeur supérieure ou égale à zéro, séparés par une virgule. Largeur et hauteur en pixels. Les valeurs ou les deux peuvent être définies sur 0 pour ne pas être contraintes.<br>Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Voir aussi  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) DefaultThumbPixin dans l’API du service d’images. |
 | `expiration` | `36000000` | Délai d’expiration par défaut du cache client. Indique un délai d’expiration par défaut dans l’éventualité où un enregistrement de catalogue spécifique ne contiendrait aucune valeur catalog::Expiration valide.<br>Nombre réel, supérieur ou égal à zéro. Nombre de millisecondes jusqu’à l’expiration, depuis la génération des données de réponse. Définissez la valeur sur zéro pour que l’image de réponse expire immédiatement, ce qui permet de désactiver efficacement la mise en cache de client. Par défaut, la valeur est définie sur 10 heures, ce qui signifie que si une nouvelle image est publiée, il faudra 10 heures aux anciennes images pour quitter le cache de l’utilisateur. Contactez l’assistance clientèle si vous avez besoin que la mémoire cache soit effacée plus rapidement.<br>Voir également [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) dans l’API du service d’images. |
 | `jpegquality` | `80` | Attributs d’encodage JPEG par défaut. Indique l’attribut par défaut des images de réponse au format JPEG.<br>Nombre entier et indicateur, séparés par une virgule. La première valeur est comprise dans la plage 1..100 et définit la qualité. La seconde valeur peut être 0 pour le comportement normal, ou 1 pour désactiver le sous-échantillonnage chromatique RVB utilisé par les encodeurs JPEG.<br>Voir également [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) dans l’API du service d’images. |
-| `maxpix` | `2000,2000` | Limite de taille de l’image de réponse. Largeur et hauteur maximales de l’image de réponse fournie au client.<br>Le serveur renvoie une erreur si une requête provoque une image de réponse dont la largeur ou la hauteur est supérieure à l’attribut::MaxPix.<br>Voir également [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api) dans l’API du service d’images. |
+| `maxpix` | `2000,2000` | Limite de taille de l’image de réponse. Largeur et hauteur maximales de l’image de réponse fournie au client.<br>Le serveur renvoie une erreur si une requête provoque une image de réponse dont la largeur ou la hauteur est supérieure à l’attribut::MaxPix.<br>Voir également [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) dans l’API du service d’images. |
 | `resmode` | `SHARP2` | Mode de rééchantillonnage par défaut. Indique les attributs de rééchantillonnage et d’interpolation à appliquer par défaut lors du redimensionnement de données d’images.<br>Utilisé lorsque n’ `resMode=` est pas spécifié dans une requête.<br>Les valeurs autorisées sont  `BILIN`,  `BICUB` ou  `SHARP2`.<br>Enum. Définissez cette variable sur 2 pour `bilin`, 3 pour `bicub` ou 4 pour le mode d’interpolation `sharp2`. Utilisez `sharp2` pour de meilleurs résultats.<br>Voir également [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) dans l’API du service d’images. |
 | `resolution` | `72` | Résolution d’objet par défaut. Indique une résolution d’objet par défaut dans l’éventualité où un enregistrement de catalogue spécifique ne contiendrait aucune valeur catalog::Resolution valide.<br>Nombre réel, supérieur à 0. Généralement exprimé en pixels par pouce, mais peut également être exprimé en d’autres unités, telles que les pixels par mètre.<br>Voir également [Résolution](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) dans l’API du service d’images. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Ces valeurs représentent un instantané du temps de lecture vidéo et sont transmises à [encoding.com](https://www.encoding.com/). Voir [À propos de la miniature vidéo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) pour plus d’informations. |

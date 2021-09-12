@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 59cc855e937c7be71cfc7a28fccd1db0b91e9f97
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '4394'
+source-wordcount: '4392'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
 * Ajout de la prise en charge de l’API `GuideBridge#getGuidePath` dans [!DNL AEM Forms].
 
-* Vous pouvez désormais utiliser le service Automated forms conversion pour [convertir les PDF forms en français, allemand, espagnol, italien et portugais](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) en formulaires adaptatifs.
+* Vous pouvez désormais utiliser le service Automated forms conversion pour [convertir les PDF forms en français, allemand, espagnol, italien et portugais](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html#language-specific-meta-model) en formulaires adaptatifs.
 
 * **Messages d’erreur dans le navigateur Propriétés** : ajout de messages d’erreur pour chaque propriété dans le navigateur Propriétés des formulaires adaptatifs. Ces messages aident à comprendre les valeurs autorisées pour un champ.
 

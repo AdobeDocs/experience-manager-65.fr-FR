@@ -1,8 +1,8 @@
 ---
 title: Configuration de Dispatcher pour Communities
-seo-title: Configuration de Dispatcher pour Communities
+seo-title: Configuring Dispatcher for Communities
 description: Configuration du Dispatcher pour AEM Communities
-seo-description: Configuration du Dispatcher pour AEM Communities
+seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '668'
 ht-degree: 11%
 
 ---
@@ -29,7 +29,7 @@ Pour découvrir les éléments nécessaires à votre déploiement spécifique et
 
 Voir également la [documentation principale de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-## Mise en cache de Dispatcher {#dispatcher-caching}
+## Mise en cache du Dispatcher {#dispatcher-caching}
 
 ### Présentation {#overview}
 
@@ -93,11 +93,9 @@ Voir également :
 >**Exemples de noms de propriété**
 >Tous les noms de propriété affichés, tels que **/0050** et **/0170**, doivent être ajustés pour s’adapter à un fichier de configuration dispatcher.any existant.
 
-
 >[!CAUTION]
 >
->Voir [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) pour en savoir plus sur la limitation de l’accès en utilisant Dispatcher. Lisez également la [Liste AEM de contrôle de sécurité](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/security-checklist.html) pour plus d’informations de sécurité concernant votre installation AEM.
-
+>Voir [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) pour en savoir plus sur la limitation de l’accès en utilisant Dispatcher. Lisez également la [Liste AEM de contrôle de sécurité](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/security-checklist.html) pour plus d’informations de sécurité concernant votre installation AEM.
 
 Les entrées suivantes doivent être ajoutées à la fin de la section /filter, en particulier après toutes les entrées de refus.
 

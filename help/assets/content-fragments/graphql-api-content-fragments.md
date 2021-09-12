@@ -2,13 +2,13 @@
 title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser des fragments de contenu dans Adobe Experience Manager (AEM) avec l’API GraphQL AEM pour la diffusion de contenu sans interface utilisateur.
 feature: Content Fragments,GraphQL API
-source-git-commit: 955fd54c94ca7144965ce407ea628806d90d8336
+exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '3921'
+source-wordcount: '3919'
 ht-degree: 97%
 
 ---
-
 
 # API AEM GraphQL à utiliser avec des fragments de contenu {#graphql-api-for-use-with-content-fragments}
 
@@ -817,7 +817,7 @@ Pour accéder au point d’entrée GraphQL à partir d’un site web externe, vo
 
 >[!NOTE]
 >
->Pour un aperçu détaillé de la politique de partage des ressources CORS dans AEM, voir [Description du partage des ressources Cross-Origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors)).
+>Pour un aperçu détaillé de la politique de partage des ressources CORS dans AEM, voir [Description du partage des ressources Cross-Origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
 Pour accéder au point d’entrée GraphQL, une stratégie CORS doit être configurée dans le référentiel Git du client. Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités.
 

@@ -9,10 +9,10 @@ docset: aem65
 role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
-feature: Configuration, mode Scene7
-source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
+feature: Configuration,Scene7 Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '6941'
+source-wordcount: '6936'
 ht-degree: 49%
 
 ---
@@ -39,11 +39,11 @@ Avec la nouvelle architecture, Experience Manager est responsable des ressources
 >La liste suivante de fonctionnalités nécessite l’utilisation du réseau de diffusion de contenu prêt à l’emploi fourni avec Adobe Experience Manager - Dynamic Media. Les autres réseaux de diffusion de contenu personnalisés ne sont pas pris en charge avec ces fonctionnalités.
 >
 >* [Imagerie dynamique](/help/assets/imaging-faq.md)
-* [Invalidation du cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-* [Protection des liens dynamiques](/help/assets/hotlink-protection.md)
-* [Diffusion de contenu HTTP/2](/help/assets/http2.md)
-* Redirection d’URL au niveau du réseau de diffusion de contenu
-* Akamai ChinaCDN (pour une diffusion optimale en Chine)
+>* [Invalidation du cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Protection des liens dynamiques](/help/assets/hotlink-protection.md)
+>* [Diffusion de contenu HTTP/2](/help/assets/http2.md)
+>* Redirection d’URL au niveau du réseau de diffusion de contenu
+>* Akamai ChinaCDN (pour une diffusion optimale en Chine)
 
 
 ## Activation de Dynamic Media en mode Scene7 {#enabling-dynamic-media-in-scene-mode}
@@ -51,7 +51,8 @@ Avec la nouvelle architecture, Experience Manager est responsable des ressources
 [Par défaut, ce module complémentaire est désactivé. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Pour tirer parti des fonctionnalités de Dynamic Media, vous devez l’activer.
 
 >[!WARNING]
-Dynamic Media : le mode Scene7 est réservé à l’instance *Auteur Experience Manager*. Par conséquent, vous devez configurer `runmode=dynamicmedia_scene7` sur l’instance d’auteur du Experience Manager, *et non* l’instance de publication du Experience Manager.
+>
+>Dynamic Media : le mode Scene7 est réservé à l’instance *Auteur Experience Manager*. Par conséquent, vous devez configurer `runmode=dynamicmedia_scene7` sur l’instance d’auteur du Experience Manager, *et non* l’instance de publication du Experience Manager.
 
 Pour activer Dynamic Media, vous devez démarrer Experience Manager à l’aide du mode d’exécution `dynamicmedia_scene7` à partir de la ligne de commande en saisissant ce qui suit dans une fenêtre de terminal (l’exemple de port utilisé est 4502) :
 
@@ -64,7 +65,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 La mise à niveau de Experience Manager Dynamic Media de la version 6.3 vers la version 6.4 ou 6.5 inclut désormais la possibilité de réaliser des déploiements sans interruption. Pour migrer tous vos paramètres prédéfinis et configurations de `/etc` vers `/conf` en CRXDE Lite, veillez à exécuter la commande curl suivante.
 
 >[!NOTE]
-Si vous exécutez votre instance de Experience Manager en mode de compatibilité (c’est-à-dire si le package de compatibilité est installé), vous n’avez pas besoin d’exécuter ces commandes.
+>
+>Si vous exécutez votre instance de Experience Manager en mode de compatibilité (c’est-à-dire si le package de compatibilité est installé), vous n’avez pas besoin d’exécuter ces commandes.
 
 Pour toutes les mises à niveau, avec ou sans le module de compatibilité, vous pouvez copier les paramètres prédéfinis de visionneuse par défaut fournis avec Dynamic Media en exécutant la commande curl Linux® suivante :
 
@@ -273,7 +275,7 @@ L’écran Image Server permet de définir les paramètres par défaut pour la d
 * **[!UICONTROL Valeurs par défaut des champs de catalogue]** : ces paramètres concernent la résolution et le type de miniature par défaut des images.
 * **[!UICONTROL Attributs de gestion des couleurs]** : ces paramètres déterminent les profils de couleurs ICC utilisés.
 * **[!UICONTROL Attributs de compatibilité]** : ce paramètre permet aux paragraphes de début et de fin des calques de texte d’être traités tels qu’ils l’étaient dans la version 3.6, ce qui les rend rétrocompatibles.
-* **[!UICONTROL Aide à la localisation]** : ces paramètres vous permettent de gérer divers attributs de paramètres régionaux. Ils vous permettent également de définir une chaîne de mappage de paramètres régionaux afin de définir les langues à prendre en charge pour les différentes info-bulles dans les visionneuses. Pour plus d’informations sur la configuration de la **[prise en charge de la localisation]**, voir [Considérations à prendre en compte lors de la configuration de la localisation des ressources](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
+* **[!UICONTROL Aide à la localisation]** : ces paramètres vous permettent de gérer divers attributs de paramètres régionaux. Ils vous permettent également de définir une chaîne de mappage de paramètres régionaux afin de définir les langues à prendre en charge pour les différentes info-bulles dans les visionneuses. Pour plus d’informations sur la configuration de la **[prise en charge de la localisation]**, voir [Considérations à prendre en compte lors de la configuration de la localisation des ressources](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=fr#considerations-when-setting-up-localization-of-assets).
 
 #### Configuration des paramètres généraux de l’application {#configuring-application-general-settings}
 
@@ -295,7 +297,6 @@ Pour maintenir la cohérence avec Experience Manager, sélectionnez toujours ce 
 
 >[!NOTE]
 Par défaut, le système affiche 15 rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** et 15 paramètres prédéfinis de la visionneuse lorsque vous sélectionnez **[!UICONTROL Visionneuses]** dans la vue détaillée de la ressource. Vous pouvez augmenter cette limite. Voir [Augmentation du nombre de paramètres d’image prédéfinis qui s’affichent](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Augmentation du nombre de paramètres de visionneuse prédéfinis qui s’affichent](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
-
 
 #### Configuration de la gestion des couleurs {#configuring-color-management}
 

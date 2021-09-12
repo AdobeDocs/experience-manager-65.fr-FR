@@ -3,10 +3,11 @@ title: Utilisation de fragments de contenu
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour une diffusion sans interface utilisateur.
 feature: Content Fragments
 role: User
-source-git-commit: 819df6d6123575b378676dda200064725de47b84
+exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 95%
+source-wordcount: '1989'
+ht-degree: 94%
 
 ---
 
@@ -82,7 +83,7 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >
->Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
+>Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!NOTE]
 >

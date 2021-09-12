@@ -1,8 +1,8 @@
 ---
 title: Configuration d’AEM Assets avec Brand Portal
-seo-title: Configuration d’AEM Assets avec Brand Portal
+seo-title: Configure AEM Assets with Brand Portal
 description: Découvrez comment configurer AEM Assets avec Brand Portal pour publier des ressources et des collections dans Brand Portal.
-seo-description: Découvrez comment configurer AEM Assets avec Brand Portal pour publier des ressources et des collections dans Brand Portal.
+seo-description: Learn how to configure AEM Assets with Brand Portal for publishing assets and Collections to Brand Portal.
 uuid: b95c046e-9988-444c-b50e-ff5ec8cafe14
 topic-tags: brand-portal
 content-type: reference
@@ -12,9 +12,9 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: aed6e28d7ff228ecbaeaf0d468d1d9bcb4373f90
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2047'
 ht-degree: 62%
 
 ---
@@ -60,7 +60,7 @@ Pour configurer AEM Assets avec Brand Portal, vous devez disposer des élémen
 
 [Télécharger et installer AEM 6.5](#aemquickstart)
 
-[Téléchargez et installez le dernier Service Pack AEM](#servicepack)
+[Télécharger et installer le dernier Service Pack AEM](#servicepack)
 
 ### Télécharger et installer AEM 6.5 {#aemquickstart}
 
@@ -70,7 +70,7 @@ Il est recommandé d’utiliser AEM 6.5 pour configurer une instance d’auteur 
 
 * Si vous êtes un partenaire d’Adobe, utilisez [Programme de formation des partenaires d’Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) pour demander AEM 6.5.
 
-Après avoir téléchargé AEM, consultez la page [Déploiement et maintenance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#default-local-install) pour obtenir des instructions sur la configuration d’une instance d’auteur AEM.
+Après avoir téléchargé AEM, consultez la page [Déploiement et maintenance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install) pour obtenir des instructions sur la configuration d’une instance d’auteur AEM.
 
 ### Télécharger et installer le dernier Service Pack AEM {#servicepack}
 
@@ -148,7 +148,7 @@ Dans Adobe Developer Console, les projets et les API sont configurés au niveau 
 
 Procédez comme suit pour générer les informations d’identification du compte de service et la charge utile JWT :
 
-1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est  [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -337,12 +337,12 @@ Pour valider la configuration, procédez comme suit :
    >
    >Évitez de désactiver les agents de réplication, car cela peut entraîner l’échec de la réplication des ressources (en cours d’exécution).
    >
-   >Assurez-vous que les quatre agents de réplication sont configurés pour éviter l’erreur de délai d’expiration. Voir [dépannage des problèmes de publication en parallèle sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=en#connection-timeout).
+   >Assurez-vous que les quatre agents de réplication sont configurés pour éviter l’erreur de délai d’expiration. Voir [dépannage des problèmes de publication en parallèle sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Vous pouvez maintenant effectuer les tâches suivantes :
 
 * [Publication de ressources à partir d’AEM Assets sur Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publication de ressources de Brand Portal vers AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr) - Découverte de ressources dans Brand Portal
+* [Publication de ressources de Brand Portal vers AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr) – Découverte de ressources dans Brand Portal
 * [Publication de dossiers à partir d’AEM Assets sur Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publication de collections à partir d’AEM Assets sur Brand Portal](../assets/brand-portal-publish-collection.md)
 * [Publication de paramètres prédéfinis, de schémas et de facettes sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)

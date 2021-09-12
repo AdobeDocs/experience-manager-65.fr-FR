@@ -4,9 +4,9 @@ description: Nouveautés de  [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 355cea8e5d3d3426788cd23e6d55297363adf05b
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4102'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Cet article met en évidence les fonctionnalités incluses dans le dernier Servi
 >
 >Le module complémentaire de [!DNL Experience Manager Forms] est rendu disponible une semaine après la publication du Service Pack [!DNL Experience Manager] programmée.
 
-* Vous pouvez désormais utiliser le service Automated forms conversion pour [convertir les PDF forms en français, allemand, espagnol, italien et portugais](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) en formulaires adaptatifs.
+* Vous pouvez désormais utiliser le service Automated forms conversion pour [convertir les PDF forms en français, allemand, espagnol, italien et portugais](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html#language-specific-meta-model) en formulaires adaptatifs.
 
 * **Messages d’erreur dans le navigateur Propriétés** : ajout de messages d’erreur pour chaque propriété dans le navigateur Propriétés des formulaires adaptatifs. Ces messages aident à comprendre les valeurs autorisées pour un champ.
 
@@ -468,11 +468,11 @@ Vous pouvez utiliser l’API Batch pour produire plusieurs communications intera
 
 Entre le 27 mai 2021 et le 26 août 2021, Adobe a publié les éléments suivants, en plus des Service Packs :
 
-* [!DNL Adobe Experience Manager] en tant que Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) et  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en).
+* [!DNL Adobe Experience Manager] en tant que Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) et  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 * [[!DNL Experience Manager] application de bureau 2.1 (2.1.3.3)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens : Feature Pack 202105](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202105.html?lang=en)
+* [Experience Manager Screens : Feature Pack 202105](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202105.html?lang=fr)
 
 >[!MORELIKETHIS]
 >

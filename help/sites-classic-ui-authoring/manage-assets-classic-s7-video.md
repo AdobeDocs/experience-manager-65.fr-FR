@@ -1,6 +1,6 @@
 ---
 title: Vidéo
-seo-title: Vidéo
+seo-title: Video
 description: Les ressources permettent une gestion centralisée des ressources vidéo dans laquelle vous pouvez charger des vidéos directement dans Assets pour un codage automatique dans Dynamic Media Classic et accéder aux vidéos Dy directement à partir de Assets pour la création de pages.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1678'
 ht-degree: 29%
 
 ---
@@ -63,7 +63,7 @@ Si vous avez besoin d’un worfklow ou d’une création de versions pour les re
 
 Si vous n’avez pas besoin d’un workflow ou d’un contrôle de version pour vos ressources, vous devez charger vos ressources dans Dynamic Media Classic. Vous trouverez ci-dessous le worfklow recommandé :
 
-1. Dans l’appli de bureau Dynamic Media Classic, [configurez un chargement et un codage FTP planifiés vers Dynamic Media Classic (système automatisé)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=en#upload-options).
+1. Dans l’appli de bureau Dynamic Media Classic, [configurez un chargement et un codage FTP planifiés vers Dynamic Media Classic (système automatisé)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 1. Dans Experience Manager, accédez aux ressources vidéo dans la gestion de contenu web dans l’onglet **[!UICONTROL Dynamic Media Classic]** de l’outil de recherche de contenu.
 1. Créez avec le composant vidéo Dynamic Media Classic.
 
@@ -80,7 +80,7 @@ Si vous n’avez pas besoin d’un workflow ou d’un contrôle de version pour 
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur la signification des paramètres vidéo prédéfinis, voir [Paramètres vidéo prédéfinis pour le codage des fichiers vidéo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files).
+   >Pour plus d’informations sur la signification des paramètres vidéo prédéfinis, voir [Paramètres vidéo prédéfinis pour le codage des fichiers vidéo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe recommande de sélectionner les deux ensembles de vidéos adaptables lors de la configuration des paramètres prédéfinis ou de sélectionner l’option **[!UICONTROL Codage vidéo adaptative]**.
 
@@ -118,7 +118,6 @@ Le tableau suivant explique les cas d’utilisation de chaque composant :
 >[!NOTE]
 >
 >Le composant vidéo Dynamic Media Classic prêt à l’emploi utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo HTML5 à utiliser par Experience Manager. Dans Dynamic Media Classic, copiez le code incorporé du lecteur vidéo HTML5 prêt à l’emploi et collez-le dans votre page de Experience Manager.
-
 
 ## Composant vidéo Experience Manager {#aem-video-component}
 
