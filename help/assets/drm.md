@@ -1,14 +1,14 @@
 ---
 title: Digital Rights Management des ressources
-description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans  [!DNL Experience Manager] .
+description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager].
 contentOwner: AG
 role: User, Admin
-feature: DRM,Gestion des ressources
+feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e87facbad559aa7e45656f621de17e6ef3109273
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 79%
+source-wordcount: '1398'
+ht-degree: 80%
 
 ---
 
@@ -69,7 +69,7 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 1. Ouvrez Configuration Manager dans [!DNL Experience Manager].
 1. Sélectionnez l’option de **[!UICONTROL notification d’expiration d’Adobe CQ DAM]**. Par défaut, le **[!UICONTROL planificateur basé temps]** est sélectionné. Il programme une tâche qui vérifie, à un moment précis, si une ressource contient des sous-ressources arrivées à expiration. Une fois la tâche terminée, les ressources qui possèdent des sous-ressources expirées et des ressources référencées sont affichées à l’état expiré dans les résultats de la recherche.
 
-1. Pour exécuter la tâche périodiquement, décochez l’option de **[!UICONTROL planificateur basé sur le temps]** et modifiez la périodicité en secondes dans le champ du **[!UICONTROL planificateur de périodicité]**. Par exemple, l’exemple d’expression `0 0 0 &ast; &ast; ?` déclenche la tâche à 00 heures.
+1. Pour exécuter la tâche périodiquement, décochez l’option de **[!UICONTROL planificateur basé sur le temps]** et modifiez la périodicité en secondes dans le champ du **[!UICONTROL planificateur de périodicité]**. Par exemple, l’exemple d’expression `0 0 0 * * ?` déclenche la tâche à 00 heures.
 1. Sélectionnez **[!UICONTROL Envoyer un courrier électronique]** pour être averti, par e-mail, de l’expiration d’une ressource.
 
    >[!NOTE]
