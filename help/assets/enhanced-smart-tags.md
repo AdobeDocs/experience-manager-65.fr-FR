@@ -2,13 +2,13 @@
 title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
-feature: Balises intelligentes, Recherche
+feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
+source-git-commit: fbb27348df0b9d5f93d186acbce45fcf88197c5e
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 53%
+source-wordcount: '1544'
+ht-degree: 54%
 
 ---
 
@@ -30,7 +30,7 @@ Le service de contenu dynamique est un service cloud hébergé sur [!DNL Adobe D
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
-* Intégration
+* Intégration 
 * Passage en revue des ressources et des balises (définition de la taxonomie)
 * Entraînement du service de contenu dynamique
 * Balisage automatique
@@ -47,42 +47,38 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 Le service applique des balises intelligentes aux ressources des types MIME suivants :
 
-* image/jpeg
-* image/tiff
-* image/png
-* image/bmp
-* image/gif
-* image/pjpeg
-* image/x-portable-anymap
-* image/x-portable-bitmap
-* image/x-portable-graymap
-* image/x-portable-pixmap
-* image/x-rgb
-* image/x-xbitmap
-* image/x-xpixmap
-* image/x-icon
-* image/photoshop
-* image/x-photoshop
-* image/psd
-* image/vnd.adobe.photoshop
+* `image/jpeg`
+* `image/tiff`
+* `image/png`
+* `image/bmp`
+* `image/gif`
+* `image/pjpeg`
+* `image/x-portable-anymap`
+* `image/x-portable-bitmap`
+* `image/x-portable-graymap`
+* `image/x-portable-pixmap`
+* `image/x-rgb`
+* `image/x-xbitmap`
+* `image/x-xpixmap`
+* `image/x-icon`
+* `image/photoshop`
+* `image/x-photoshop`
+* `image/psd`
+* `image/vnd.adobe.photoshop`
 
 Le service applique des balises intelligentes aux rendus de ressources des types MIME suivants :
 
-* image/jpeg
-* image/pjpeg
-* image/png
+* `image/jpeg`
+* `image/pjpeg`
+* `image/png`
 
-## Intégration {#onboarding}
+## Intégration  {#onboarding}
 
 Le service de contenu dynamique est disponible à l’achat sous la forme d’un module complémentaire de [!DNL Experience Manager]. Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre entreprise avec un lien vers [!DNL Adobe I/O].
 
 L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager]. Pour intégrer le service à [!DNL Experience Manager Assets], voir [Configuration des balises intelligentes](config-smart-tagging.md).
 
 Le processus d’intégration est terminé lorsque l’administrateur configure le service et ajoute des utilisateurs dans [!DNL Experience Manager].
-
->[!NOTE]
->
->Si vous utilisez la version [!DNL Experience Manager] 6.3 ou antérieure et avez besoin du service de balisage pour vos ressources, voir [Balises intelligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Les balises intelligentes n’utilisent pas les dernières fonctionnalités d’IA et sont donc moins précises que le service de balisage intelligent amélioré.
 
 ## Vérification de ressources et de balises {#reviewing-assets-and-tags}
 
