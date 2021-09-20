@@ -1,8 +1,8 @@
 ---
 title: Intégration à Adobe Target à l’aide d’Adobe I/O
-seo-title: Intégration à Adobe Target à l’aide d’Adobe I/O
+seo-title: Integration with Adobe Target using Adobe I/O
 description: En savoir plus sur l’intégration d’AEM à Adobe Target à l’aide d’Adobe I/O
-seo-description: En savoir plus sur l’intégration d’AEM à Adobe Target à l’aide d’Adobe I/O
+seo-description: Learn about integrating AEM with Adobe Target using Adobe I/O
 uuid: dd4ed638-e182-4d7e-9c98-282431812467
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1563'
 ht-degree: 18%
 
 ---
@@ -53,8 +53,8 @@ Avant de commencer cette procédure :
 La première étape de la configuration consiste à créer une configuration IMS dans AEM et à générer la clé publique.
 
 1. Dans AEM, ouvrez le menu **Outils** .
-1. Dans la section **Sécurité**, sélectionnez **Adobe des configurations IMS**.
-1. Sélectionnez **Créer** pour ouvrir la **Configuration du compte technique IMS d’Adobe**.
+1. Dans la section **Sécurité**, sélectionnez **Configurations d’Adobe IMS**.
+1. Sélectionnez **Créer** pour ouvrir la **Configuration du compte technique Adobe IMS**.
 1. Dans la liste déroulante sous **Configuration du cloud**, sélectionnez **Adobe Target**.
 1. Activez **Créer un certificat** et saisissez un nouvel alias.
 1. Confirmez avec **Créer un certificat**.
@@ -230,7 +230,7 @@ La configuration peut désormais être référencée pour qu’un Cloud Service 
 1. Saisissez les détails dans l’onglet **Paramètres Adobe Target** :
 
    * **Authentification** : IMS
-   * **ID** du client : Identifiant du tenant IMS de l’Adobe. Voir aussi la section [ID de client et code client](#tenant-client) .
+   * **ID** du client : Identifiant du tenant Adobe IMS. Voir aussi la section [ID de client et code client](#tenant-client) .
 
       >[!NOTE]
       >
@@ -245,6 +245,9 @@ La configuration peut désormais être référencée pour qu’un Cloud Service 
    * **Configuration IMS** : sélectionnez le nom de la configuration IMS.
    * **Type** d’API : REST
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration de cloud Analytics utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu. Si vous ne voyez pas votre configuration de cloud, voir la note dans [Configuration de A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+
+   >[!NOTE]
+   >L’authentification des informations d’identification d’utilisateur (héritée) ne fonctionne pas avec A4T (pour Target et Analytics). Par conséquent, les clients doivent utiliser     Authentification IMS au lieu de l’authentification d’informations d’identification de l’utilisateur.
    * **Utilisez un ciblage** précis : Cette case est cochée par défaut. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Voir la remarque qui suit.
    * **Synchroniser les segments à partir d’Adobe Target** : Sélectionnez cette option pour télécharger les segments définis dans Target afin de les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme « segment » d’AEM équivaut à « audience » dans Target.)
    * **Bibliothèque** cliente : Indiquez si vous souhaitez utiliser la bibliothèque cliente AT.js ou mbox.js (obsolète).
@@ -261,7 +264,7 @@ La configuration peut désormais être référencée pour qu’un Cloud Service 
 1. Sélectionnez **OK** dans le message, puis **OK** dans la boîte de dialogue pour confirmer la configuration.
 1. Vous pouvez maintenant passer à [Ajout d’une structure Target](/help/sites-administering/target-configuring.md#adding-a-target-framework) pour configurer ContextHub ou des paramètres de ClientContext qui seront envoyés à Target. Notez que cela n’est peut-être pas nécessaire pour exporter AEM fragments d’expérience vers Target.
 
-### Identifiant du client et code client {#tenant-client}
+### ID de client et code client {#tenant-client}
 
 Avec [Adobe Experience Manager 6.5.8.0](/help/release-notes/sp-release-notes.md), le champ Code client a été ajouté à la fenêtre de configuration de Target.
 

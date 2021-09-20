@@ -1,8 +1,8 @@
 ---
 title: Configuration manuelle de l’intégration à Adobe Target
-seo-title: Configuration manuelle de l’intégration à Adobe Target
+seo-title: Manually Configuring the Integration with Adobe Target
 description: Découvrez comment configurer manuellement l’intégration à Adobe Target.
-seo-description: Découvrez comment configurer manuellement l’intégration à Adobe Target.
+seo-description: Learn how to manually configure the integration with Adobe Target.
 uuid: 0bb76a65-f981-4cc5-bee8-5feb3297137c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6850fc2e4251ad408936ee71600ab8923f54e9a3
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 74%
+source-wordcount: '2210'
+ht-degree: 73%
 
 ---
 
@@ -65,9 +65,13 @@ La structure de Target mise en service créée par l’assistant de souscription
 
 Vous pouvez configurer la structure pour envoyer des informations contextuelles vers Target comme décrit dans [Ajout d’une structure de Target](/help/sites-administering/target-configuring.md#adding-a-target-framework).
 
-### Définition de la configuration d’A4T Analytics Cloud  {#configuring-a-t-analytics-cloud-configuration}
+### Définition de la configuration d’A4T Analytics Cloud {#configuring-a-t-analytics-cloud-configuration}
 
 Vous pouvez configurer Adobe Target pour utiliser Adobe Analytics en tant que source de création de rapports lors du ciblage du contenu.
+
+>[!NOTE]
+>
+>L’authentification des informations d’identification d’utilisateur (héritée) ne fonctionne pas avec A4T (pour Target et Analytics). Ainsi, les clients doivent utiliser l’[authentification IMS](/help/sites-administering/integration-ims-adobe-io.md) au lieu de l’authentification d’identification d’utilisateur.
 
 Pour ce faire, vous devez spécifier la configuration de cloud d’A4T pour connecter votre configuration de cloud Adobe Target de la façon suivante :
 
@@ -92,7 +96,7 @@ Pour ce faire, vous devez spécifier la configuration de cloud d’A4T pour conn
 
    Cliquez sur **OK**. Lorsque vous ciblez le contenu avec Adobe Target, vous pouvez [choisir la source de rapport](/help/sites-authoring/content-targeting-touch.md).
 
-## Intégration manuelle à Adobe Target  {#manually-integrating-with-adobe-target}
+## Intégration manuelle à Adobe Target {#manually-integrating-with-adobe-target}
 
 Intégrez manuellement à Adobe Target au lieu d’utiliser l’assistant de souscription.
 
@@ -103,10 +107,9 @@ AT.js propose plusieurs améliorations par rapport à la bibliothèque mbox.js 
 * Sécurité renforcée
 * Meilleures options de mise en œuvre pour les applications d’une seule page
 * AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.js.
-
 Vous pouvez sélectionner AT.js ou mbox.js dans le menu déroulant **Bibliothèque cliente**.
 
-### Création d’une configuration de cloud Target  {#creating-a-target-cloud-configuration}
+### Création d’une configuration de cloud Target {#creating-a-target-cloud-configuration}
 
 Pour permettre à AEM d’interagir avec Adobe Target, créez une configuration de cloud Target. Pour créer la configuration, vous fournissez le code client et les informations d’identification d’utilisateur Adobe Target.
 
@@ -164,7 +167,7 @@ Utilisez la procédure suivante pour créer une configuration de cloud Target da
 
    Si vous ne parvenez pas à vous connecter à Target, voir la section [Dépannage](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems).
 
-### Ajout d’une structure Target  {#adding-a-target-framework}
+### Ajout d’une structure Target {#adding-a-target-framework}
 
 Une fois que vous avez configuré la configuration de cloud Target, ajoutez une structure Target. La structure identifie les paramètres par défaut qui sont envoyés à Adobe Target à partir des composants [ClientContext](/help/sites-administering/client-context.md) ou [ContextHub](/help/sites-developing/ch-configuring.md). Target utilise les paramètres pour déterminer les segments qui s’appliquent au contexte actuel.
 
@@ -204,12 +207,10 @@ Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à votre con
 >[!NOTE]
 Les types d’activités disponibles sont déterminés par ce qui suit :
 * Si l’option **xt_only** est activée sur le client Adobe Target (clientcode) utilisé sur AEM pour se connecter à Adobe Target, vous pouvez créer **uniquement** des activités XT dans AEM.
-
 * Si les options **xt_only** **ne sont pas** activées sur le client Adobe Target (clientcode), vous pouvez créer **à la fois** des activités XT et A/B dans AEM.
+**Remarque :** L’option **xt_only** est un paramètre appliqué à un certain client Adobe Target (clientcode) et peut uniquement être modifiée directement dans Adobe Target. Vous ne pouvez pas activer ni désactiver cette option dans AEM.
 
-**Remarque :** L’option **xt_only** est un paramètre appliqué à un certain client Adobe Target (clientcode) et peut uniquement être modifiée directement dans Adobe Target. Vous ne pouvez pas activer ou désactiver cette option dans AEM.
-
-### Association de la structure Target à votre site  {#associating-the-target-framework-with-your-site}
+### Association de la structure Target à votre site {#associating-the-target-framework-with-your-site}
 
 Après avoir créé une structure Target dans AEM, associez vos pages web à la structure. Les composants ciblés sur les pages envoient les données définies par la structure vers Adobe Target pour le suivi. (voir [Ciblage de contenu](/help/sites-authoring/content-targeting-touch.md)). 
 
@@ -234,7 +235,7 @@ Lorsque vous associez une page à la structure, les pages enfants héritent de l
    >[!NOTE]
    Si la structure que vous avez jointe à la page n’était pas encore activée, un assistant s’ouvre pour vous permettre de la publier.
 
-## Dépannage des problèmes de connexion à Target  {#troubleshooting-target-connection-problems}
+## Dépannage des problèmes de connexion à Target {#troubleshooting-target-connection-problems}
 
 Effectuez les tâches suivantes pour résoudre les problèmes qui se produisent lors de la connexion à Target :
 
