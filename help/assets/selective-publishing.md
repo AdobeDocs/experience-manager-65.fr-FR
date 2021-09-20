@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
-feature: Publication
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Publishing
+source-git-commit: a5164c0c2ef175f1bf63ef911bf92df36e413a6f
 workflow-type: tm+mt
-source-wordcount: '2945'
+source-wordcount: '2960'
 ht-degree: 67%
 
 ---
@@ -70,6 +70,8 @@ Après avoir configuré la publication sélective dans un dossier, vous pouvez e
    >[!IMPORTANT]
    >
    >Quelle que soit l’option Mode de publication Dynamic Media sélectionnée, les mises à jour apportées ultérieurement à une ressource *déjà* publiée sont immédiatement publiées sans autre action de l’utilisateur.
+   >
+   >Si une vidéo publiée est mise à jour, elle doit être publiée à nouveau pour refléter les modifications apportées à la diffusion.
 
    | Option Mode de publication de média dynamique | Description |
    | --- | --- |
