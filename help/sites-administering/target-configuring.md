@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 6850fc2e4251ad408936ee71600ab8923f54e9a3
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 73%
+source-wordcount: '2196'
+ht-degree: 74%
 
 ---
 
@@ -71,7 +71,7 @@ Vous pouvez configurer Adobe Target pour utiliser Adobe Analytics en tant que 
 
 >[!NOTE]
 >
->L’authentification des informations d’identification d’utilisateur (héritée) ne fonctionne pas avec A4T (pour Target et Analytics). Ainsi, les clients doivent utiliser l’[authentification IMS](/help/sites-administering/integration-ims-adobe-io.md) au lieu de l’authentification d’identification d’utilisateur.
+>L’authentification des informations d’identification d’utilisateur (héritée) ne fonctionne pas avec A4T (pour Target et Analytics). Par conséquent, les clients doivent utiliser l’authentification IMS plutôt que l’authentification avec informations d’identification de l’utilisateur.
 
 Pour ce faire, vous devez spécifier la configuration de cloud d’A4T pour connecter votre configuration de cloud Adobe Target de la façon suivante :
 
@@ -87,7 +87,7 @@ Pour ce faire, vous devez spécifier la configuration de cloud d’A4T pour conn
    >En configurant A4T avec AEM, vous risquez de voir une entrée de référence de configuration manquante. Pour pouvoir sélectionner la structure d’analyse, procédez comme suit :
    >
    >1. Accédez à **Outils** > **Général** > **CRXDE Lite**.
-   1. Accédez à **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   1. Accédez à `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`.
    1. Définissez la propriété **disable** sur **false**.
    1. Appuyez ou cliquez sur **Tout enregistrer**.
 

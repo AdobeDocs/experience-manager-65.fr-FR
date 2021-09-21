@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1538'
 ht-degree: 18%
 
 ---
@@ -245,9 +245,6 @@ La configuration peut désormais être référencée pour qu’un Cloud Service 
    * **Configuration IMS** : sélectionnez le nom de la configuration IMS.
    * **Type** d’API : REST
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration de cloud Analytics utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu. Si vous ne voyez pas votre configuration de cloud, voir la note dans [Configuration de A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
-
-   >[!NOTE]
-   >L’authentification des informations d’identification d’utilisateur (héritée) ne fonctionne pas avec A4T (pour Target et Analytics). Par conséquent, les clients doivent utiliser     Authentification IMS au lieu de l’authentification d’informations d’identification de l’utilisateur.
    * **Utilisez un ciblage** précis : Cette case est cochée par défaut. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Voir la remarque qui suit.
    * **Synchroniser les segments à partir d’Adobe Target** : Sélectionnez cette option pour télécharger les segments définis dans Target afin de les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme « segment » d’AEM équivaut à « audience » dans Target.)
    * **Bibliothèque** cliente : Indiquez si vous souhaitez utiliser la bibliothèque cliente AT.js ou mbox.js (obsolète).
