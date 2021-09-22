@@ -12,9 +12,9 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: d995173140237f34a03c8e84128ad9d657c9a026
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2053'
 ht-degree: 62%
 
 ---
@@ -338,6 +338,8 @@ Pour valider la configuration, procédez comme suit :
    >Évitez de désactiver les agents de réplication, car cela peut entraîner l’échec de la réplication des ressources (en cours d’exécution).
    >
    >Assurez-vous que les quatre agents de réplication sont configurés pour éviter l’erreur de délai d’expiration. Voir [dépannage des problèmes de publication en parallèle sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >
+   >Ne modifiez aucun paramètre généré automatiquement.
 
 Vous pouvez maintenant effectuer les tâches suivantes :
 
