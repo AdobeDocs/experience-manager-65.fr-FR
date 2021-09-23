@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: b0ccbf9e63cd9db00004ae96b2556df43f4b1478
+source-git-commit: e2b13bf47a2a816add7678587d51347266cc3552
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 74%
+source-wordcount: '2210'
+ht-degree: 73%
 
 ---
 
@@ -87,20 +87,15 @@ Pour ce faire, vous devez spécifier la configuration de cloud d’A4T pour conn
    >En configurant A4T avec AEM, vous risquez de voir une entrée de référence de configuration manquante. Pour pouvoir sélectionner la structure d’analyse, procédez comme suit :
    >
    >1. Accédez à **Outils** > **Général** > **CRXDE Lite**.
-   1. Accédez à [1] (voir ci-dessous)
+   1. Accédez à :
+/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
    1. Définissez la propriété **disable** sur **false**.
    1. Appuyez ou cliquez sur **Tout enregistrer**.
 
 
-[1]
+   ![chlimage_1-159](assets/chlimage_1-159.png)
 
-```
-   >/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
-```
-
-![chlimage_1-159](assets/chlimage_1-159.png)
-
-Cliquez sur **OK**. Lorsque vous ciblez le contenu avec Adobe Target, vous pouvez [choisir la source de rapport](/help/sites-authoring/content-targeting-touch.md).
+   Cliquez sur **OK**. Lorsque vous ciblez le contenu avec Adobe Target, vous pouvez [choisir la source de rapport](/help/sites-authoring/content-targeting-touch.md).
 
 ## Intégration manuelle à Adobe Target {#manually-integrating-with-adobe-target}
 
