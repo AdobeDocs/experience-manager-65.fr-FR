@@ -1,19 +1,19 @@
 ---
 title: Optimisation des performances
-seo-title: Optimisation des performances
+seo-title: Performance Optimization
 description: Découvrez comment configurer certains aspects d’AEM afin d’optimiser les performances.
-seo-description: Découvrez comment configurer certains aspects d’AEM afin d’optimiser les performances.
+seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
-feature: Configuration
+feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fc42469e4b97f2f2c5d7489837012d31c63f86d
 workflow-type: tm+mt
-source-wordcount: '6659'
+source-wordcount: '6645'
 ht-degree: 73%
 
 ---
@@ -78,7 +78,7 @@ Si vous avez mis en ligne un site web et que vous identifiez, après le lancemen
 
 Simuler la réalité est difficile et le niveau d&#39;effort que vous voudrez raisonnablement investir pour devenir &quot;réel&quot; dépend de la nature de votre projet. Cette réalité signifie non seulement un « code réel » et un « trafic réel », mais aussi du « contenu réel », en particulier en ce qui concerne la taille et la structure. Gardez à l’esprit que vos modèles peuvent se comporter différemment selon la taille et la structure du référentiel.
 
-### Établissement d’objectifs solides  {#establish-solid-goals}
+### Établissement d’objectifs solides {#establish-solid-goals}
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
@@ -86,13 +86,13 @@ Il ne faut pas sous-estimer l’importance d’établir correctement des objecti
 
 L’établissement d’objectifs de performances réalisables et viables est vraiment l’un des aspects les plus délicats. Il est souvent préférable de se fier à des journaux et des repères réels d’un site web comparable (par exemple, le prédécesseur du nouveau site web).
 
-### Maintien de la pertinence  {#stay-relevant}
+### Maintien de la pertinence {#stay-relevant}
 
 ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
 Il est important de résoudre un seul goulot d’étranglement à la fois. Si vous essayez de faire plusieurs choses en parallèle sans valider l’impact de chaque optimisation, vous perdrez toute trace de la mesure d’optimisation qui a réellement contribué à une amélioration.
 
-### Cycles d’itération agile  {#agile-iteration-cycles}
+### Cycles d’itération agile {#agile-iteration-cycles}
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
@@ -100,7 +100,7 @@ L’optimisation des performances est un processus itératif qui implique des ac
 
 Cela signifie notamment que le développeur implémentant l’optimisation doit disposer d’un moyen rapide pour savoir si l’optimisation a déjà atteint l’objectif. Ces informations sont précieuses, car une fois l’objectif atteint, l’optimisation est terminée.
 
-## Consignes de performances de base  {#basic-performance-guidelines}
+## Consignes de performances de base {#basic-performance-guidelines}
 
 De manière générale, vos demandes html non mises en cache doivent être inférieures à 100 ms. Plus précisément, les éléments suivants peuvent servir de ligne directrice :
 
@@ -129,7 +129,7 @@ La structure d’un référentiel de contenu peut également se répercuter sur 
 
 Lors d’une activité ordinaire d’optimisation des performances, les ressources suivantes sont d’une très grande utilité :
 
-* Les `request.log`
+* La `request.log`
 * Timing basé sur les composants
 * Dernier mais non le moindre profileur java.
 
@@ -185,7 +185,7 @@ Plusieurs domaines fonctionnels sont souvent responsables d’une dégradation d
 * Code de l’application (votre projet)
 * Fonctionnalité de recherche
 
-### Règles de base relatives aux performances  {#basic-rules-regarding-performance}
+### Règles de base relatives aux performances {#basic-rules-regarding-performance}
 
 Il faut garder à l’esprit certaines règles lors de l’optimisation des performances :
 
@@ -200,7 +200,7 @@ Il faut garder à l’esprit certaines règles lors de l’optimisation des perf
 >
 >Gardez à l’esprit que, souvent, le mécanisme que vous utilisez pour mesurer les performances affecte justement ce que vous essayez de mesurer. Essayez toujours de tenir compte de ces écarts, et d’éliminer leurs effets dans toute la mesure du possible. Notamment, les plug-ins de navigateur doivent être désactivés autant que possible.
 
-## Configuration des performances  {#configuring-for-performance}
+## Configuration des performances {#configuring-for-performance}
 
 Certains aspects d’AEM (et/ou du référentiel sous-jacent) peuvent être configurés pour optimiser la performance. Vous trouverez ci-dessous des possibilités et des suggestions. Vous devez vous assurer d’utiliser la fonctionnalité en question avant d’apporter des modifications.
 
@@ -217,7 +217,7 @@ Vous trouverez des informations d’indexation mises à jour ici :
 * [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
 * [Requêtes et indexation](/help/sites-deploying/queries-and-indexing.md)
 
-### Traitement de processus simultanés  {#concurrent-workflow-processing}
+### Traitement de processus simultanés {#concurrent-workflow-processing}
 
 Limitez le nombre de workflow en cours d’exécution pour améliorer les performances. Par défaut, le moteur de workflow traite autant de workflow en parallèle qu’il y a de processeurs disponibles pour la machine virtuelle Java. Lorsque les étapes de workflow nécessitent de grandes quantités de ressources de traitement (RAM ou CPU), l’exécution simultanée de plusieurs de ces workflows peut imposer des exigences élevées sur les ressources de serveur disponibles.
 
@@ -246,7 +246,7 @@ Pour configurer ces services [à l’aide de la console web](/help/sites-deployi
 
 Vous devez configurer la propriété nommée Maximum Parallel Jobs (Nombre maximal de tâches en parallèle).
 
-### Configuration de la file d’attente pour un workflow donné {#configure-the-queue-for-a-specific-workflow}
+### Configuration de la file d’attente pour un workflow spécifique {#configure-the-queue-for-a-specific-workflow}
 
 Créez une file d’attente de tâches pour un modèle de workflow spécifique afin de pouvoir configurer la gestion des tâches pour ce modèle de workflow. De cette manière, vos configurations se répercutent sur le traitement d’un workflow spécifique, tandis que la configuration de la file d’attente de workflow Granite par défaut contrôle le traitement des autres workflows.
 
@@ -309,7 +309,7 @@ Vous trouverez ci-dessous une approche normalisée des tests de performance pour
 
 Le contrôle est un processus additionnel, global, nécessaire mais non limité aux tests.
 
-### Vérification des connaissances  {#verification-of-knowledge}
+### Vérification des connaissances {#verification-of-knowledge}
 
 Une première étape consiste à documenter les informations de base que vous devez connaître avant de pouvoir commencer à tester :
 
@@ -322,7 +322,7 @@ Vous devez documenter clairement l’architecture de l’environnement de test u
 
 Vous aurez besoin d’une reproduction de votre environnement de publication de production planifié, avec le dispatcher et de l’équilibreur de charge.
 
-#### Carte de l’application  {#application-map}
+#### Carte de l’application {#application-map}
 
 Pour obtenir une vue d’ensemble claire, vous pouvez créer une carte de l’intégralité de l’application (que vous pouvez obtenir à partir de tests dans l’environnement de création).
 
@@ -349,7 +349,7 @@ Une fois les cas d’utilisation clés sélectionnés, les indicateurs de perfor
 * Nombre de connexions gratuites
 * Ressources système telles que l’accès au processeur et aux E/S
 
-### Méthodologies de test  {#test-methodologies}
+### Méthodologies de test {#test-methodologies}
 
 Ce concept prévoit 4 scénarios utilisés pour définir et tester les objectifs de performances :
 
@@ -380,7 +380,7 @@ Il s’agit de tester les performances dans des conditions moyennes et de pointe
 
 Les données d’expérience ou statistiques que vous avez pu collecter sur un site web existant seront également utiles pour déterminer les objectifs futurs, par exemple le trafic le plus dense de votre site web en ligne.
 
-#### Tests sur un seul composant  {#single-component-tests}
+#### Tests sur un seul composant {#single-component-tests}
 
 Il faut tester les composants stratégiques dans des conditions moyennes et de pointe.
 
@@ -388,10 +388,10 @@ Dans les deux cas, vous pouvez définir le nombre attendu de transactions par se
 
 | Composant | Type de test | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Page d’accueil Utilisateur unique | Moyenne | 1 | 3 |  |  |
-|  | Crête | 3 | 3 |  |  |
-| Page d’accueil 100 utilisateurs | Moyenne | 100 | 3 |  |  |
-|  | Crête | 100 | 3 |  |
+| Page d’accueil Utilisateur unique | Moyenne | 1 | 1 |  |  |
+|  | Crête | 1 | 3 |  |  |
+| Page d’accueil 100 utilisateurs | Moyenne | 100 | 1 |  |  |
+|  | Crête | 100 | 1 |  |
 
 #### Tests sur des composants combinés {#combined-component-tests}
 
@@ -399,11 +399,11 @@ En testant une combinaison de composants, vous vous dotez d’une visibilité pl
 
 | Scénario | Composant | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Moyenne mixte | Page d’accueil | 10 | 3 |  |  |
-|  | Rechercher | 10 | 3 |  |  |
+| Moyenne mixte | Page d’accueil | 10 | 1 |  |  |
+|  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 10 | 2 |  |  |
-|  | Événements | 10 | 3 |  |  |
-|  | Activations | 10 | 3 |  | Simulation du comportement de l’auteur. |
+|  | Événements | 10 | 1 |  |  |
+|  | Activations | 10 | 1 |  | Simulation du comportement de l’auteur. |
 | Pic mixte | Page d’accueil | 100 | 5 |  |  |
 |  | Rechercher | 50 | 5 |  |  |
 |  | Actualités | 100 | 10 |  |  |
@@ -433,10 +433,10 @@ Lors de la conception de ces tests, il faut garder à l’esprit que tous les sc
 
 | Scénario d’erreur | Type d’erreur | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 3 |  | Seulement &amp;ast;&amp;ast;&amp;ast;ast;ast; sont recherchées. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seulement &amp;ast;&amp;ast;&amp;ast;ast;ast; sont recherchées. |
 |  | Mot de fin | 20 | 2 |  | À la recherche d&#39;un mot stop. |
-|  | Chaîne vide | 10 | 3 |  | Recherche d’une chaîne vide. |
-|  | Caractères spéciaux | 10 | 3 |  | Recherche de caractères spéciaux. |
+|  | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
+|  | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
 
 #### Tests d’endurance {#endurance-tests}
 
@@ -444,11 +444,11 @@ Certains problèmes ne feront surface qu’après une période continue de fonct
 
 | Scénario | Type de test | Non. des utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Test d&#39;endurance (72 heures) | Page d’accueil | 10 | 3 |  |  |
-|  | Rechercher | 10 | 3 |  |  |
+| Test d&#39;endurance (72 heures) | Page d’accueil | 10 | 1 |  |  |
+|  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 20 | 2 |  |  |
-|  | Événements | 10 | 3 |  |  |
-|  | Activations | 3 | 3 |  | Simulation du comportement de l’auteur. |
+|  | Événements | 10 | 1 |  |  |
+|  | Activations | 1 | 1 |  | Simulation du comportement de l’auteur. |
 
 ### Optimisation {#optimization}
 
@@ -501,11 +501,9 @@ Le dispatcher propose un certain nombre de mécanismes intégrés pour optimiser
 >* Impossible de stocker d’autres éléments, tels que les cookies, les données de session et les données de formulaire.
 
 >
->
-En général, de nombreuses stratégies de mise en cache impliquent de sélectionner les URL appropriées et de ne pas s’en tenir à ces informations supplémentaires.
+>En général, de nombreuses stratégies de mise en cache impliquent de sélectionner les URL appropriées et de ne pas s’en tenir à ces informations supplémentaires.
 >
 >Avec la version 4.1.1 de Dispatcher, vous pouvez également mettre en cache les en-têtes de réponse. Voir [Mise en cache des en-têtes de réponse HTTP](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
-
 
 ### Calcul du ratio cache/dispatcher {#calculating-the-dispatcher-cache-ratio}
 
@@ -527,7 +525,7 @@ Si vous ne disposez pas d’un couplage particulier éditeur/dispatcher un à un
 >
 >Pour de meilleures performances, Adobe recommande un ratio compris entre 90 % et 95 %.
 
-#### Utilisation d’un codage cohérent de page   {#using-consistent-page-encoding}
+#### Utilisation d’un codage cohérent de page  {#using-consistent-page-encoding}
 
 Avec la version 4.1.11 du dispatcher, vous pouvez mettre en cache les en-têtes de réponse. Si vous ne mettez pas en cache les en-têtes de réponse sur le dispatcher, des problèmes peuvent survenir quand vous stockez des informations de codage de page dans l’en-tête. Dans ce cas, lorsque Dispatcher diffuse une page du cache, le codage par défaut du serveur web est utilisé pour la page. Il existe deux méthodes pour contourner ce problème :
 
@@ -556,7 +554,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 >
 >Cette URL invoque la même page et le même modèle que `gallery.html`. Dans la définition du modèle, vous pouvez spécifier le script qui effectue le rendu de la page ou utiliser le même script pour toutes les pages.
 
-#### Personnalisation par URL   {#customize-by-url}
+#### Personnalisation par URL  {#customize-by-url}
 
 Si vous autorisez les utilisateurs à modifier la taille de police des caractères (ou toute autre personnalisation de la mise en page), assurez-vous que les différentes personnalisations sont répercutées dans l’URL.
 
@@ -578,7 +576,7 @@ www.myCompany.com/news/main.large.html
 >
 >En utilisant l’expansion de nom de fichier du script de la définition du modèle, vous pouvez définir un script distinct qui effectue le rendu des pages d’impression.
 
-#### Invalidation de fichiers image utilisés comme titres   {#invalidating-image-files-used-as-titles}
+#### Invalidation de fichiers image utilisés comme titres  {#invalidating-image-files-used-as-titles}
 
 Si vous affichez les titres de page ou tout autre texte sous la forme d’images, il est conseillé de stocker les fichiers de manière à ce qu’ils soient supprimés lors de la mise à jour du contenu de la page :
 
@@ -593,7 +591,7 @@ Par exemple, vous pouvez stocker le titre de la page `myPage.html` dans la balis
 >
 >Le fichier image n’existe pas nécessairement physiquement sur l’instance AEM. Vous pouvez utiliser un script qui crée dynamiquement le fichier image. Dispatcher stocke ensuite le fichier sur le serveur web.
 
-#### Invalidation des fichiers image utilisés pour la navigation   {#invalidating-image-files-used-for-navigation}
+#### Invalidation des fichiers image utilisés pour la navigation  {#invalidating-image-files-used-for-navigation}
 
 Si vous utilisez des images pour les entrées de navigation, la méthode est fondamentalement la même qu’avec les titres. Elle est seulement un peu plus complexe. Stockez toutes les images de navigation avec les pages cibles. Si vous utilisez deux images pour les modes normal et actif, vous pouvez utiliser les scripts suivants :
 
@@ -618,7 +616,7 @@ Il est recommandé de limiter la personnalisation à l’endroit nécessaire. Ex
 Si vous personnalisez chaque page (par exemple en plaçant le nom de l’utilisateur dans la barre de titre), cela peut avoir un impact sur les performances.
 
 >[!TIP]
->Pour la mise en cache de contenu sécurisé, voir [Mise en cache de contenu sécurisé](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) dans le guide de Dispatcher.
+>Pour la mise en cache de contenu sécurisé, voir [Mise en cache de contenu sécurisé](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr) dans le guide de Dispatcher.
 
 En ce qui concerne le mélange de contenu public et restreint sur une page, vous pouvez envisager une stratégie qui tire parti des inclusions côté serveur dans Dispatcher, ou des inclusions côté client via Ajax dans le navigateur.
 
@@ -626,11 +624,11 @@ En ce qui concerne le mélange de contenu public et restreint sur une page, vous
 >
 >Pour gérer le contenu public mixte et le contenu restreint, voir [Configuration de l’inclusion dynamique Sling.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
-#### Connexions persistantes   {#sticky-connections}
+#### Connexions persistantes  {#sticky-connections}
 
 Les [connections persistantes](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) garantissent que les documents d’un utilisateur sont tous composés sur le même serveur. Si un utilisateur quitte ce dossier et y revient ultérieurement, la connexion reste valide. Définissez un dossier pour stocker tous les documents qui nécessitent des connexions persistantes pour le site web. Essayez de ne pas placer d’autres documents dans ce dossier. Si vous utilisez des pages personnalisées et des données de session, cela impacte l’équilibrage de charge.
 
-#### Types MIME   {#mime-types}
+#### Types MIME  {#mime-types}
 
 Pour un navigateur, il existe deux manières de déterminer le type d’un fichier :
 
@@ -672,7 +670,7 @@ Le sous-système de disque sur ce serveur est assez rapide, représentatif d’u
 
 La configuration AEM place le référentiel et la banque de données sur le même volume logique, à côté de l’ensemble du système d’exploitation et du logiciel AEM. Le répertoire cible pour les sauvegardes réside également sur ce système de fichiers logique.
 
-#### Volumes de données  {#data-volumes}
+#### Volumes de données {#data-volumes}
 
 Le tableau suivant illustre la taille des volumes de données utilisés dans les tests de performances de sauvegarde. Le contenu de référence initial est d’abord installé, puis des quantités de données supplémentaires sont ajoutées pour augmenter la taille du contenu sauvegardé. Des sauvegardes sont créées à des incréments spécifiques afin de représenter une augmentation importante du contenu, et du volume qui peut être produit en un jour. La distribution du contenu (pages, images, balises) est en gros basée sur une composition réaliste des ressources de production. Les pages, images et balises sont limitées à un maximum de 800 pages enfants. Chaque page comprend les composants suivants : titre, Flash, texte/image, vidéo, diaporama, formulaire, tableau, cloud et carrousel. Les images sont chargées à partir d’un pool de 400 fichiers uniques dont la taille varie entre 37 Ko et 594 Ko.
 

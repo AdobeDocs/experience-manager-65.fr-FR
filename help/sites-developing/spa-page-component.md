@@ -1,8 +1,8 @@
 ---
 title: Composant de page SPA
-seo-title: Composant de page SPA
+seo-title: SPA Page Component
 description: Dans une SPA, le composant de page ne fournit pas les éléments HTML de ses composants enfants, mais à la place délègue cette tâche au framework SPA. Ce document explique comment cela rend le composant de page SPA unique.
-seo-description: Dans une SPA, le composant de page ne fournit pas les éléments HTML de ses composants enfants, mais à la place délègue cette tâche au framework SPA. Ce document explique comment cela rend le composant de page SPA unique.
+seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '730'
 ht-degree: 89%
 
 ---
@@ -32,7 +32,7 @@ Le composant de page d’une application sur une seule page (SPA) ne fournit pas
 
 ## Gestion du modèle de page {#page-model-management}
 
-La résolution et la gestion du modèle de page sont déléguées à un module [ fourni.`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) La SPA doit interagir avec le module `PageModelManager` lorsqu’il s’initialise pour récupérer le modèle de page initial et s’enregistrer pour les mises à jour du modèle – générées principalement lorsque l’auteur modifie la page via l’éditeur de page. Le module `PageModelManager` est accessible par projet SPA sous la forme d’un package npm. En tant qu’interprète entre AEM et la SPA, `PageModelManager` est destiné à accompagner la SPA.
+La résolution et la gestion du modèle de page sont déléguées à un module [ fourni. `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) La SPA doit interagir avec le module `PageModelManager` lorsqu’il s’initialise pour récupérer le modèle de page initial et s’enregistrer pour les mises à jour du modèle – générées principalement lorsque l’auteur modifie la page via l’éditeur de page. Le module `PageModelManager` est accessible par projet SPA sous la forme d’un package npm. En tant qu’interprète entre AEM et la SPA, `PageModelManager` est destiné à accompagner la SPA.
 
 Pour autoriser la création de la page, une bibliothèque client nommée `cq.authoring.pagemodel.messaging` doit être ajoutée pour fournir un canal de communication entre la SPA et l’éditeur de page. Si le composant de page SPA hérite du composant wcm/core de page, les options suivantes sont fournies pour rendre la catégorie de bibliothèque client `cq.authoring.pagemodel.messaging` disponible :
 
@@ -93,7 +93,7 @@ Propriétés des ressources de métadonnées qui décrivent le contenu SPA :
 >
 >Ce document utilise l’application We.Retail Journal à des fins de démonstration uniquement. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
 >
->Tout projet AEM doit tirer parti de l’[AEM archétype de projet](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l’aide de React ou de l’Angular et tire parti du SDK . Tous les projets  sur doivent être basés sur l’ archétype Maven pour le kit de démarrage de.
+>Tout projet AEM doit tirer parti de l’[AEM archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou de l’Angular et tire parti du SDK . Tous les projets  sur doivent être basés sur l’ archétype Maven pour le kit de démarrage de.
 
 ## Synchronisation des recouvrements de l’éditeur de page {#page-editor-overlay-synchronization}
 
