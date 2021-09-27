@@ -3,13 +3,13 @@ title: Gestion des métadonnées des ressources numériques
 description: Découvrez les types de métadonnées et comment gérer les métadonnées pour les ressources afin d’organiser et de traiter facilement les ressources.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Balisage, métadonnées
+feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 57%
+source-wordcount: '2336'
+ht-degree: 55%
 
 ---
 
@@ -90,7 +90,7 @@ Pour personnaliser la page des propriétés de métadonnées, notamment ajouter,
 >
 >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
 
-## Importation de métadonnées   {#import-metadata}
+## Importation de métadonnées {#import-metadata}
 
 [!DNL Assets] permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
@@ -110,7 +110,7 @@ L’importation des métadonnées est asynchrone et n’entrave pas les performa
    | [!UICONTROL Taille du lot] | Nombre de ressources dans un lot pour lesquelles les métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
    | [!UICONTROL Séparateur de champs] | La valeur par défaut est `,` (une virgule). Vous pouvez spécifier n’importe quel autre caractère. |
    | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. La valeur par défaut est `|`. |
-   | [!UICONTROL Lancer les workflows] | Faux par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut du lanceur sont utilisés pour le workflow Écriture différée des métadonnées de gestion des ressources numériques (DAM) (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows de lancement ralentit le système. |
+   | [!UICONTROL Lancer les workflows] | Faux par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut sont en vigueur pour le workflow [!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques] (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows ralentit le système. |
    | [!UICONTROL Nom de colonne du chemin d’accès à la ressource] | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
 1. Cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification s’affiche dans la boîte de réception [!UICONTROL Notification].
@@ -234,7 +234,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 >
 >* [Concepts et compréhension des métadonnées](metadata-concepts.md).
 >* [Modification des propriétés de métadonnées de plusieurs collections](manage-collections.md#editing-collection-metadata-in-bulk)
-* [Importation et exportation des métadonnées dans Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importation et exportation des métadonnées dans Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.

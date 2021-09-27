@@ -3,11 +3,11 @@ title: Activation des statistiques sur les ressources via DTM
 description: Découvrez comment utiliser Adobe Dynamic Tag Management (DTM) pour activer Assets Insights.
 contentOwner: AG
 role: User, Admin
-feature: Statistiques sur les ressources, rapports sur les ressources
+feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: b3acfdba41e1bd94c65bb7a87f63b9c326a80dd2
+source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '647'
 ht-degree: 30%
 
 ---
@@ -18,7 +18,7 @@ La gestion dynamique des balises Adobe est un outil permettant d’activer vos o
 
 >[!CAUTION]
 >
->Adobe de la gestion dynamique des balises est abandonnée au profit de [!DNL Adobe Experience Platform Launch] et atteindra bientôt la [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande [d’utiliser [!DNL Launch] pour les informations sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe de la gestion dynamique des balises est abandonnée au profit de [!DNL Adobe Experience Platform] et atteindra bientôt la [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande [d’utiliser [!DNL Adobe Experience Platform] pour les informations sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Effectuez les étapes suivantes pour activer Assets Insights via DTM.
 
