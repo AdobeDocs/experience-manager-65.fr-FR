@@ -1,8 +1,8 @@
 ---
 title: Prise en charge des jetons encapsulés
-seo-title: Prise en charge des jetons encapsulés
+seo-title: Encapsulated Token Support
 description: Familiarisez-vous avec la prise en charge des jetons encapsulés dans AEM.
-seo-description: Familiarisez-vous avec la prise en charge des jetons encapsulés dans AEM.
+seo-description: Learn about the Encapsulated Token support in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 88%
+source-wordcount: '833'
+ht-degree: 86%
 
 ---
 
@@ -51,16 +51,14 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 >
 >Par exemple, si un nouvel utilisateur est créé sur l’instance de publication 1, en raison du fonctionnement du jeton encapsulé, il est authentifié correctement sur l’instance de publication 2. Si l’utilisateur n’existe pas sur la deuxième instance de publication, la demande ne réussit toujours pas.
 
-
-## Configuration du jeton encapsulé  {#configuring-the-encapsulated-token}
+## Configuration du jeton encapsulé {#configuring-the-encapsulated-token}
 
 >[!NOTE]
 >Tous les gestionnaires d’authentification qui synchronisent les utilisateurs et reposent sur l’authentification par jeton (comme SAML et OAuth) ne fonctionnent qu’avec des jetons encapsulés si :
 >
 >* Les sessions persistantes sont activées, ou
-   >
-   >
-* Les utilisateurs sont déjà créés dans AEM au démarrage de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les cas où les gestionnaires **create** utilisateurs pendant le processus de synchronisation.
+>
+>* Les utilisateurs sont déjà créés dans AEM au démarrage de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les cas où les gestionnaires **create** utilisateurs pendant le processus de synchronisation.
 
 
 Lors de la configuration du jeton encapsulé, différents éléments doivent être pris en compte :
@@ -68,7 +66,7 @@ Lors de la configuration du jeton encapsulé, différents éléments doivent êt
 1. Compte tenu du chiffrement impliqué, toutes les instances doivent posséder la même clé HMAC. À compter d’AEM 6.3, le matériel de la clé n’est plus stocké dans le référentiel, mais sur le système de fichiers réel. Ainsi, la meilleure façon de répliquer les clés consiste à les copier du système de fichiers de l’instance source vers celle des instances cibles sur lesquelles vous souhaitez répliquer les clés. Consultez les informations supplémentaires dans la section « Réplication de la clé HMAC » ci-dessous.
 1. Le jeton encapsulé doit être activé. Cette opération peut être effectuée à l’aide de la console web.
 
-### Réplication de la clé HMAC  {#replicating-the-hmac-key}
+### Réplication de la clé HMAC {#replicating-the-hmac-key}
 
 La clé HMAC est présente sous la forme d’une propriété binaire de `/etc/key` dans le référentiel. Vous pouvez la télécharger séparément en cliquant sur le lien **afficher** en regard :
 
@@ -102,5 +100,5 @@ Pour répliquer la clé sur plusieurs instances, procédez comme suit :
 Une fois la clé HMAC répliquée, vous pouvez activer le jeton encapsulé à l’aide de la console web :
 
 1. Pointez votre navigateur sur `https://serveraddress:port/system/console/configMgr`
-1. Recherchez une entrée nommée **Day CRX Token Authentication Handler** et cliquez dessus.
+1. Recherchez une entrée appelée **Adobe Gestionnaire d’authentification de jeton Granite** et cliquez dessus.
 1. Dans la fenêtre suivante, cochez la case **Activer la prise en charge des jetons encapsulés** et cliquez sur **Enregistrer**.
