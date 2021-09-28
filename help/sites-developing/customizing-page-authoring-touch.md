@@ -1,8 +1,8 @@
 ---
 title: Personnalisation de la création de pages
-seo-title: Personnalisation de la création de pages
+seo-title: Customizing Page Authoring
 description: AEM s’accompagne de divers mécanismes pour vous permettre de personnaliser la fonctionnalité de création de pages.
-seo-description: AEM s’accompagne de divers mécanismes pour vous permettre de personnaliser la fonctionnalité de création de pages.
+seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
 uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 273836ad0afd6466eac437bf7711e7dbabc1d5e9
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 82%
+source-wordcount: '1383'
+ht-degree: 79%
 
 ---
 
@@ -52,8 +52,7 @@ Ils peuvent être utilisés de différentes manières pour étendre la fonctionn
 >* [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md) pour plus d’informations sur les zones structurelles utilisées pour la création de pages.
 
 >
->
-Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
+>Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
 
 >[!CAUTION]
 >
@@ -124,11 +123,11 @@ Pour plus d’informations sur la création d’un prédicat personnalisé, cons
 >
 >Consultez cet [article de la base de connaissances](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) pour obtenir un exemple d’implémentation d’un prédicat personnalisé dans l’interface utilisateur classique.
 
-## Ajout d’une nouvelle action à une barre d’outils de composants  {#add-new-action-to-a-component-toolbar}
+## Ajout d’une nouvelle action à une barre d’outils de composants {#add-new-action-to-a-component-toolbar}
 
 Chaque composant (en règle générale) s’accompagne d’une barre d’outils qui permet d’accéder à un éventail d’actions auxquelles il peut être soumis.
 
-### Exemple de code  {#code-sample-2}
+### Exemple de code {#code-sample-2}
 
 `aem-authoring-extension-toolbar-screenshot` est un exemple de package qui montre comment créer une action de barre d’outils personnalisée pour effectuer le rendu de composants.
 
@@ -210,7 +209,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
 1. Fournissez la connexion entre l’éditeur et chaque type de ressource (comme dans le composant) qui peut l’utiliser.
 
-#### Exemple de code pour créer un éditeur statique  {#code-sample-for-creating-a-new-in-place-editor}
+#### Exemple de code pour créer un éditeur statique {#code-sample-for-creating-a-new-in-place-editor}
 
 `aem-authoring-extension-inplace-editor` est un exemple de package montrant comment créer un éditeur statique dans AEM.
 
@@ -229,7 +228,7 @@ Il est possible de configurer un composant afin qu’il comporte plusieurs édit
 
 Vous pouvez ajouter une action de page à la barre d’outils de la page ; **Retour aux sites** (console), par exemple.
 
-### Exemple de code  {#code-sample-3}
+### Exemple de code {#code-sample-3}
 
 `aem-authoring-extension-header-backtosites` est un exemple de package qui montre comment créer une action de barre d’en-tête personnalisée pour revenir à la console Sites.
 
@@ -242,7 +241,11 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 ## Personnalisation du workflow Demander l’activation {#customizing-the-request-for-activation-workflow}
 
-Le workflow prêt à l’emploi **Demander l’activation** se déclenche automatiquement lorsqu’un auteur de contenu ne dispose pas des droits de réplication appropriés.
+Le workflow d’usine, **Demande d’activation** :
+
+* S’affiche automatiquement dans le menu approprié lorsqu’un auteur de contenu **ne dispose pas** des droits de réplication appropriés, mais que **est membre de DAM-Users et d’auteurs.**
+
+* Sinon, rien ne s’affichera, car les droits de réplication ont été supprimés.
 
 Pour avoir un comportement personnalisé lors de cette activation, vous pouvez superposer le workflow **Demande d’activation** :
 
