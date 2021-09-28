@@ -1,8 +1,8 @@
 ---
 title: Liste de contrôle de sécurité
-seo-title: Liste de contrôle de sécurité
+seo-title: Security Checklist
 description: Découvrez les différents aspects de la sécurité lors de la configuration et du déploiement d’AEM.
-seo-description: Découvrez les différents aspects de la sécurité lors de la configuration et du déploiement d’AEM.
+seo-description: Learn about the various security considerations when configuring and deploying AEM.
 uuid: 8e293316-4177-4271-87c6-9dc1a2e85a07
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
-feature: Sécurité
-source-git-commit: 1c6ee9b547fd0870feb510e35ffdcb8e3f857f18
+feature: Security
+source-git-commit: f60d3049b10a8ec500dd0cd4b1b5d4efbe415d84
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2859'
 ht-degree: 80%
 
 ---
@@ -84,7 +84,7 @@ Outre le compte `admin` AEM, le fait de ne pas modifier le mot de passe par déf
 
 Pour plus d’informations sur la modification du mot de passe de la console web, voir [Modification du mot de passe administrateur de la console web OSGi](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) ci-dessous.
 
-#### Modification du mot de passe administrateur de la console web OSGi  {#changing-the-osgi-web-console-admin-password}
+#### Modification du mot de passe administrateur de la console web OSGi {#changing-the-osgi-web-console-admin-password}
 
 Vous devez également modifier le mot de passe utilisé pour accéder à la console web. Pour ce faire, configurez les propriétés suivantes de la [console de gestion OSGi Apache Felix](/help/sites-deploying/osgi-configuration-settings.md) :
 
@@ -100,7 +100,7 @@ Pour ce faire :
 
 1. Cliquez sur **Enregistrer**.
 
-### Mise en œuvre d’un gestionnaire d’erreur personnalisé  {#implement-custom-error-handler}
+### Mise en œuvre d’un gestionnaire d’erreur personnalisé {#implement-custom-error-handler}
 
 Adobe recommande de définir des pages de gestionnaire d’erreur personnalisé, en particulier pour les codes de réponse HTTP 404 et 500, afin d’empêcher la divulgation d’informations.
 
@@ -116,7 +116,7 @@ AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recomma
 >
 >À l’aide de Dispatcher, vous devez désactiver le sélecteur « .form ».
 
-## Étapes de vérification  {#verification-steps}
+## Étapes de vérification {#verification-steps}
 
 ### Configuration des utilisateurs de réplication et de transfert {#configure-replication-and-transport-users}
 
@@ -152,15 +152,15 @@ Ces lots OSGi de développement doivent être désinstallés sur les systèmes d
 * Adobe Granite CRX Explorer (com.adobe.granite.crx-explorer)
 * Adobe Granite CRXDE Lite (com.adobe.granite.crxde-lite)
 
-### Contrôle de la présence des lots de développement Sling  {#check-if-the-sling-development-bundle-is-present}
+### Contrôle de la présence des lots de développement Sling {#check-if-the-sling-development-bundle-is-present}
 
 La section [AEM Outils de développement pour Eclipse](/help/sites-developing/aem-eclipse.md) déploie l’installation de prise en charge des outils Apache Sling (org.apache.sling.tooling.support.install).
 
 Ce lot OSGi doit être désinstallé sur les systèmes de création et de publication en production avant de les rendre accessibles.
 
-### Protection contre les attaques CSRF  {#protect-against-cross-site-request-forgery}
+### Protection contre les attaques CSRF {#protect-against-cross-site-request-forgery}
 
-#### Le framework de protection CSRF {#the-csrf-protection-framework}
+#### Infrastructure de protection CSRF {#the-csrf-protection-framework}
 
 AEM version 6.1 est fournie avec un mécanisme qui aide à la protection contre les attaques par falsification de requête intersites, appelé **CSRF Protection Framework**. Pour plus d’informations sur l’utilisation, consulter la [documentation](/help/sites-developing/csrf-protection.md).
 
@@ -245,9 +245,9 @@ Pour plus d’informations, voir [Paramètres de configuration d’OSGi](/help/s
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
-## Autres ressources à lire  {#further-readings}
+## Autres ressources à lire {#further-readings}
 
-### Atténuation des attaques par déni de service (DoS){#mitigate-denial-of-service-dos-attacks}
+### Atténuation des attaques par déni de service (DoS) {#mitigate-denial-of-service-dos-attacks}
 
 Une attaque par déni de service (DoS) est une tentative de rendre une ressource informatique indisponible à ses utilisateurs ciblés. Ce type d’attaque prend souvent la forme d’une ressource surchargée, par exemple :
 
@@ -302,7 +302,7 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 
       **Résultats JSON max** (  `json.maximumresults`)
 
-      dans la configuration du [servlet de GET Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
+      dans la configuration du [servlet de GET Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `1000`.
 
    * À titre de mesure préventive, désactivez les autres outils de rendu par défaut (HTML, texte brut, XML). Là encore, en configurant le [servlet Sling GET d’Apache](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
    >[!CAUTION]
@@ -398,7 +398,7 @@ Avant d’effectuer cette opération, notez que la réplication des clés est ef
 
 Pour plus d’informations, voir ci-dessous.
 
-#### Réplication des clés pour AEM 6.3  {#replicating-keys-for-aem}
+#### Réplication des clés pour AEM 6.3 {#replicating-keys-for-aem}
 
 Alors que dans les anciennes versions, les clés de réplication étaient stockées dans le référentiel, à compter d’AEM 6.3, elles sont stockées dans le système de fichiers.
 
