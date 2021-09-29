@@ -1,8 +1,8 @@
 ---
 title: Requêtes et indexation Oak
-seo-title: Requêtes et indexation Oak
+seo-title: Oak Queries and Indexing
 description: 'Découvrez comment configurer les index AEM. '
-seo-description: 'Découvrez comment configurer les index AEM. '
+seo-description: Learn how to configure indexes in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
-feature: Configuration
+feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
 workflow-type: tm+mt
-source-wordcount: '2881'
-ht-degree: 89%
+source-wordcount: '2868'
+ht-degree: 84%
 
 ---
 
@@ -44,7 +44,7 @@ Le moteur de requête Oak prend en charge les langages suivants :
 * SQL (obsolète)
 * JQOM
 
-## Types d’indexeur et calcul du coût  {#indexer-types-and-cost-calculation}
+## Types d’indexeur et calcul du coût {#indexer-types-and-cost-calculation}
 
 Le backend basé sur Apache Oak permet aux différents indexeurs d’être branchés au référentiel.
 
@@ -64,19 +64,19 @@ D’abord, la requête est analysée dans une arborescence de syntaxe abstraite.
 
 Ensuite, chaque index est consulté pour estimer le coût de la requête. Une fois cette étape terminée, les résultats de l’index le plus économique sont récupérés. Enfin, les résultats sont filtrés, pour garantir que l’utilisateur actuel bénéficie de l’accès en lecture au résultat, et que le résultat correspond à la requête complète.
 
-## Configuration des index  {#configuring-the-indexes}
+## Configuration des index {#configuring-the-indexes}
 
 >[!NOTE]
 >
->Pour un référentiel volumineux, la création d’un index prend du temps. Cela vaut aussi bien pour la création initiale d’un index que pour la réindexation (reconstruction d’un index après avoir modifié la définition). Voir aussi [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention de la réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Pour un référentiel volumineux, la création d’un index prend du temps. Cela est vrai pour la création initiale d’un index et pour la réindexation (reconstruction d’un index après modification de la définition). Voir aussi [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention de la réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
-Si une réindexation s’avère nécessaire dans des référentiels très volumineux, en particulier lorsque vous utilisez MongoDB et des index en texte intégral, pensez à recourir à la pré-extraction de texte, ainsi qu’à utiliser la commande oak-run pour générer l’index initial et procéder à la réindexation.
+Si la réindexation est nécessaire dans des référentiels très volumineux, en particulier lors de l’utilisation de MongoDB et pour les index de texte intégral, envisagez la pré-extraction de texte et l’utilisation de oak-run pour créer l’index initial et réindexer.
 
 Les index sont configurés en tant que nœuds dans le référentiel sous le nœud **oak:index**.
 
 Le type du nœud d’index doit être **oak:QueryIndexDefinition.** Plusieurs options de configuration sont disponibles pour chaque indexeur en tant que propriétés de nœud. Pour plus d’informations, voir les détails de configuration pour chaque type d’indexeur ci-dessous.
 
-### Index de propriété  {#the-property-index}
+### Index de propriété {#the-property-index}
 
 L’index de propriété est généralement utile pour les requêtes limitées par la propriété, mais qui ne sont pas en texte intégral. Il peut être configuré en suivant la procédure ci-dessous :
 
@@ -101,9 +101,9 @@ L’index de propriété dispose des options de configuration suivantes :
 * L’indicateur **unique**, qui, défini sur **true**, ajoute une limite d’unicité à l’index de propriété.
 
 * La propriété **declaringNodeTypes** vous permet de spécifier un certain type de nœud que l’index appliquera uniquement.
-* L’indicateur **reindex**, si défini sur **true**, déclenchera une réindexation de l’ensemble du contenu.
+* L’indicateur **reindex** qui, s’il est défini sur **true**, déclenche une réindexation complète du contenu.
 
-### Index organisé  {#the-ordered-index}
+### Index organisé {#the-ordered-index}
 
 L’index organisé est une extension de l’index de propriété. Toutefois, il est obsolète. Les index de ce type doivent être remplacés par l’[index de propriété Lucene](#the-lucene-property-index).
 
@@ -115,7 +115,7 @@ Si un index de texte intégral est configuré, alors toutes les requêtes prése
 
 Si aucun index de texte intégral n’est configuré, les requêtes avec des situations de texte intégral ne fonctionneront pas comme prévu. 
 
-Étant donné que l’index est mis à jour par le biais d’un thread asynchrone d’arrière-plan, certaines recherches de texte intégral ne seront pas disponibles pendant une courte durée, jusqu’à ce que les processus d’arrière-plan soient terminés.
+Comme l’index est mis à jour via un thread d’arrière-plan asynchrone, certaines recherches de texte intégral ne seront pas disponibles pendant une petite période de temps jusqu’à ce que les processus d’arrière-plan soient terminés.
 
 Vous pouvez configurer un index de texte intégral Lucene en suivant la procédure ci-dessous : 
 
@@ -136,7 +136,7 @@ L’index Lucene présente les options de configuration suivantes :
 * La propriété **excludePropertyNames** qui définira une liste de noms de propriétés - propriétés qui doivent être exclues de l’index.
 * L’indicateur **reindex**, qui, défini sur **true**, déclenche une réindexation de l’ensemble du contenu.
 
-### Index de propriété Lucene  {#the-lucene-property-index}
+### Index de propriété Lucene {#the-lucene-property-index}
 
 Depuis **Oak 1.0.8**, Lucene peut être utilisé pour créer des indexes qui impliquent des limites de propriété qui ne sont pas du texte intégral.
 
@@ -148,7 +148,7 @@ Voir l’exemple de requête suivant :
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Pour définir un index de propriété Lucene pour la requête ci-dessus, vous pouvez ajouter la définition suivante en créant un nœud sous **oak:index:**
+Pour définir un de propriété Lucene pour la requête ci-dessus, vous pouvez ajouter la définition suivante en créant un nœud sous **oak:index:index:**
 
 * **Nom:** `LucenePropertyIndex`
 * **Type:** `oak:QueryIndexDefinition`
@@ -157,19 +157,19 @@ Une fois que le nœud a été créé, ajoutez les propriétés suivantes :
 
 * **type:**
 
-   ```
+   ```xml
    lucene (of type String)
    ```
 
 * **asynchrone:**
 
-   ```
+   ```xml
    async (of type String)
    ```
 
 * **fulltextEnabled :**
 
-   ```
+   ```xml
    false (of type Boolean)
    ```
 
@@ -199,7 +199,7 @@ L’analyseur par défaut pour un index est configuré dans l’enfant `default`
 >
 >Pour obtenir une liste des analyseurs disponibles, veuillez consulter la documentation des API de la version Lucene que vous utilisez. 
 
-#### Spécification directe de la classe de l’analyseur  {#specifying-the-analyzer-class-directly}
+#### Spécification directe de la classe de l’analyseur {#specifying-the-analyzer-class-directly}
 
 Si vous souhaitez utiliser l’analyseur prêt à l’emploi, vous pouvez le configurer en suivant la procédure ci-dessous :
 
@@ -290,11 +290,11 @@ L’intégration dans AEM se produit au niveau du référentiel. Ainsi, Solr est
 
 Il peut être configuré pour fonctionner comme serveur intégré avec les instances AEM ou en tant que serveur distant.
 
-### Configuration d’AEM avec un serveur Solr intégré  {#configuring-aem-with-an-embedded-solr-server}
+### Configuration d’AEM avec un serveur Solr intégré {#configuring-aem-with-an-embedded-solr-server}
 
 >[!CAUTION]
 >
->N’utilisez pas de serveur Solr incorporé dans un environnement de production. Il doit uniquement être utilisé dans un environnement de développement.
+>N’utilisez pas de serveur Solr intégré dans un environnement de production. Il doit uniquement être utilisé dans un environnement de développement.
 
 AEM peut être utilisée avec un serveur Solr intégré qui peut être configuré par le biais de la console web. Dans ce cas, le serveur Solr fonctionnera dans le même JVM que l’instance AEM sur laquelle il est intégré.
 
@@ -319,12 +319,12 @@ Vous pouvez configurer le serveur Solr intégré en procédant comme suit :
 
 1. Enregistrez les modifications.
 
-### Configuration d’AEM avec un seul serveur distant Solr  {#configuring-aem-with-a-single-remote-solr-server}
+### Configuration d’AEM avec un seul serveur distant Solr {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM peut également être configuré pour travailler avec une instance de serveur distant Solr :
+AEM peut également être configuré pour fonctionner avec une instance de serveur Solr distante :
 
 1. Téléchargez et extrayez la version la plus récente de Solr. Pour plus d’informations sur la façon de procéder, consultez [la documentation d’installation Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
-1. Créez deux partitions Solr. Pour ce faire, vous devez créer des dossiers pour chaque partition dans le dossier dans lequel Solr a été décompressé :
+1. Créez deux partitions Solr. Pour ce faire, créez des dossiers pour chaque partition dans le dossier dans lequel Solr a été décompressé :
 
    * Pour la première partition, créez le dossier :
 
@@ -382,9 +382,9 @@ AEM peut également être configuré pour travailler avec une instance de serveu
 
 1. Enregistrez les modifications.
 
-#### Configuration recommandée pour Solr  {#recommended-configuration-for-solr}
+#### Configuration recommandée pour Solr {#recommended-configuration-for-solr}
 
-Voici un exemple de configuration de base qui peut être utilisée avec les trois déploiements Solr décrits dans cet article. Il s’adapte aux index de propriété dédiés qui sont déjà présents dans AEM et ne doivent pas être utilisés avec d’autres applications.
+Voici un exemple de configuration de base qui peut être utilisée avec les trois déploiements Solr décrits dans cet article. Il prend en charge les index de propriété dédiés qui sont déjà présents dans AEM et ne doivent pas être utilisés avec d’autres applications.
 
 Pour l’utiliser correctement, vous devez placer le contenu de l’archive directement dans le répertoire d’accueil Solr. Dans le cas de déploiements avec plusieurs nœuds, il doit être placé directement sous le dossier racine de chaque nœud.
 
@@ -403,7 +403,7 @@ Vous pouvez désormais y accéder en vous rendant dans **Outils - Opérations - 
 
 Pour plus d’informations sur la manière de les utiliser, reportez-vous à la [documentation du tableau de bord des opérations](/help/sites-administering/operations-dashboard.md). 
 
-#### Création d’index de propriétés via OSGi  {#creating-property-indexes-via-osgi}
+#### Création d’index de propriétés via OSGi {#creating-property-indexes-via-osgi}
 
 Les modules ACS Commons présentent également des configurations OSGi qui peuvent être utilisées pour créer des index de propriété.
 
@@ -423,7 +423,7 @@ La façon la plus simple d’obtenir les informations requises pour la requête 
 
 Si cela n’est pas possible pour une raison quelconque, vous pouvez rassembler les journaux d’indexation dans un seul fichier, puis les utiliser pour résoudre votre problème particulier.
 
-#### Activation de la journalisation  {#enable-logging}
+#### Activation de la journalisation {#enable-logging}
 
 Pour activer la journalisation, vous devez activer les journaux de niveau **DEBUG** pour les catégories concernant l’indexation et les requêtes Oak. Ces catégories sont les suivants :
 
@@ -457,7 +457,7 @@ Comme dans la plupart des cas, la configuration d’indexation est stockée sous
 
 Si l’index est configuré à un emplacement différent, modifiez le chemin en conséquence. 
 
-#### Sortie MBean  {#mbean-output}
+#### Sortie MBean {#mbean-output}
 
 Dans certains cas, il s’avère utile de fournir la sortie des Mbeans liés à l’index pour le débogage. Vous pouvez le faire en procédant comme suit :
 
