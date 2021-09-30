@@ -1,8 +1,8 @@
 ---
 title: Gestionnaire d’authentification SAML 2.0
-seo-title: Gestionnaire d’authentification SAML 2.0
+seo-title: SAML 2.0 Authentication Handler
 description: Découvrez le gestionnaire d’authentification SAML 2.0 dans AEM.
-seo-description: Découvrez le gestionnaire d’authentification SAML 2.0 dans AEM.
+seo-description: Learn about the SAML 2.0 Authentication Handler in AEM.
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6bc60122d2512a6f58c0204cd240a1b99a37ed93
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 63%
+source-wordcount: '842'
+ht-degree: 59%
 
 ---
 
@@ -25,7 +25,7 @@ Il prend en charge :
 
 * la signature et le chiffrement des messages ;
 * la création automatique d’utilisateurs ;
-* la synchronisation des groupes avec les groupes existants dans AEM.
+* synchronisation de groupes avec les groupes existants dans AEM
 * Authentification initiée par le fournisseur de services et le fournisseur d’identité
 
 Ce gestionnaire stocke le message de réponse SAML chiffré dans le nœud utilisateur (`usernode/samlResponse`) pour faciliter la communication avec un fournisseur tiers.
@@ -50,10 +50,9 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 >
 
 
-
 >[!NOTE]
 >
->Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public du fournisseur d’identité dans TrustStore. Voir [Ajout de certificat IdP à TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) pour plus d’informations.
+>Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public du fournisseur d’identité dans le TrustStore. Voir [Ajout de certificat IdP à TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) pour plus d’informations.
 
 **** Chemin d’accès PathRepository pour lequel ce gestionnaire d’authentification doit être utilisé par Sling. Si le champ est vide, le gestionnaire d’authentification est désactivé.
 
@@ -107,7 +106,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## Ajoutez la clé de fournisseur et la chaîne de certificats au KeyStore AEM.{#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## Ajoutez la clé de fournisseur et la chaîne de certificats au KeyStore AEM. {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
