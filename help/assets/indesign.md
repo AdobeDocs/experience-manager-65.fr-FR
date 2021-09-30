@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 0a4c27432e4005fa3999f7c6a776ef51b10d9746
+source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1591'
 ht-degree: 38%
 
 ---
@@ -24,7 +24,7 @@ Pour charger intégralement des fichiers dans [!DNL Experience Manager Assets] q
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. [Adobe de l’appli de bureau ](https://www.adobe.com/fr/products/indesign.html) InDesigns utilisée pour concevoir des mises en page pour l’impression et la distribution numérique. [Adobe InDesign ](https://www.adobe.com/fr/products/indesignserver.html) Server vous permet de créer des documents automatisés par programmation en fonction de ce que vous avez créé avec  [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://www.adobe.com/devnet/scripting.html). Les scripts sont écrits dans [!DNL ExtendScript], ce qui est similaire à [!DNL JavaScript]. Pour plus d’informations sur les scripts [!DNL InDesign], voir [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. [Adobe de l’appli de bureau ](https://www.adobe.com/fr/products/indesign.html) InDesigns utilisée pour concevoir des mises en page pour l’impression et la distribution numérique. [Adobe InDesign ](https://www.adobe.com/fr/products/indesignserver.html) Server vous permet de créer des documents automatisés par programmation en fonction de ce que vous avez créé avec  [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting). Les scripts sont écrits dans [!DNL ExtendScript], ce qui est similaire à [!DNL JavaScript]. Pour plus d’informations sur les scripts [!DNL InDesign], voir [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## Fonctionnement de l’extraction {#how-the-extraction-works}
 
