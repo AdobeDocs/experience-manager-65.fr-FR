@@ -8,9 +8,9 @@ breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
-source-git-commit: b82544398ca414afab867f188f33ae60989596f3
+source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '917'
 ht-degree: 80%
 
 ---
@@ -151,6 +151,7 @@ ht-degree: 80%
       + [Présentation détaillée de ClientContext](client-context.md)
       + [API Javascript pour ClientContext](ccjsapi.md)
 + Extension d’AEM{#extending-aem}
+   + [Extension des AEM à l’aide d’Adobe Developer App Builder](app-builder.md)
    + [Personnalisation de la création de pages](customizing-page-authoring-touch.md)
    + [Personnalisation des consoles](customizing-consoles-touch.md)
    + [Personnalisation des vues des propriétés de la page](page-properties-views.md)
