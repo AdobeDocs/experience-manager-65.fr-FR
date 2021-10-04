@@ -1,8 +1,8 @@
 ---
-title: Adobe de l’authentification IMS et [!DNL Admin Console] prise en charge d’AEM Managed Services
-seo-title: Adobe de l’authentification IMS et [!DNL Admin Console] prise en charge d’AEM Managed Services
+title: Authentification Adobe IMS et [!DNL Admin Console] Prise en charge de AEM Managed Services
+seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
 description: Découvrez comment utiliser le  [!DNL Admin Console] dans AEM.
-seo-description: Découvrez comment utiliser le  [!DNL Admin Console] dans AEM.
+seo-description: Learn how to use the [!DNL Admin Console] in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,23 +10,27 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
-feature: Sécurité
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Security
+source-git-commit: 3f55ebfe3b1603a573fcb77155227c449c6c0fbb
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1688'
 ht-degree: 62%
 
 ---
 
-# Adobe de l’authentification IMS et [!DNL Admin Console] prise en charge d’AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+# Authentification Adobe IMS et [!DNL Admin Console] prise en charge d’AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
 >
 >Notez que cette fonctionnalité n’est disponible que pour les clients Adobe Managed Services.
 
+>[!NOTE]
+>
+>La connexion IMS pour AEM ne prend pas en charge les groupes imbriqués dans le Admin Console.
+
 ## Présentation {#introduction}
 
-AEM 6.4.3.0 introduit la prise en charge de [!DNL Admin Console] pour les instances AEM et l’Adobe de l’authentification basée sur IMS (système Identity Management) pour les clients **Managed Services**.
+AEM 6.4.3.0 introduit la prise en charge de [!DNL Admin Console] pour les instances AEM et l’authentification basée sur Adobe IMS (système Identity Management) pour les clients **Managed Services**.
 
 L’intégration AEM à [!DNL Admin Console] permettra AEM clients Managed Services de gérer tous les utilisateurs Experience Cloud dans une seule console. Les utilisateurs et les groupes peuvent être affectés à des profils de produit associés à des instances AEM, ce qui leur permet de se connecter à une instance spécifique.
 
@@ -84,7 +88,7 @@ Il existe trois méthodes d’intégration des utilisateurs en fonction de la ta
 1. Téléchargement d’un fichier CSV avec des utilisateurs
 1. Synchronisation des utilisateurs et des groupes depuis le répertoire Active Directory d’entreprise du client.
 
-#### Ajout manuel via l’ [!DNL Admin Console] interface utilisateur {#manual-addition-through-admin-console-ui}
+#### Ajout manuel via l’interface utilisateur de [!DNL Admin Console] {#manual-addition-through-admin-console-ui}
 
 Les utilisateurs et les groupes peuvent être créés manuellement dans l’interface utilisateur [!DNL Admin Console]. Cette méthode peut être utilisée s’il y a un nombre réduit d’utilisateurs à gérer. Par exemple, moins de 50 utilisateurs d’AEM.
 
@@ -92,7 +96,7 @@ Les utilisateurs peuvent aussi être créés manuellement si le client utilise d
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### Chargement de fichier dans l’interface utilisateur [!DNL Admin Console] {#file-upload-in-the-admin-console-ui}
+#### Chargement de fichier dans l’interface utilisateur de [!DNL Admin Console] {#file-upload-in-the-admin-console-ui}
 
 Pour gérer facilement la création d’utilisateurs, un fichier CSV peut être téléchargé pour permettre l’ajout groupé des utilisateurs :
 
