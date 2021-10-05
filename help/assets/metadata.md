@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
 source-wordcount: '2336'
 ht-degree: 55%
@@ -29,9 +29,9 @@ Les métadonnées sont des informations supplémentaires sur la ressource qui pe
 
 Vous pouvez utiliser les méthodes suivantes pour ajouter des métadonnées à des ressources numériques :
 
-* Pour commencer, les applications natives qui créent des ressources y ajoutent des métadonnées. Par exemple, [Acrobat ajoute des métadonnées](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) aux fichiers PDF ou un appareil photo ajoute des métadonnées de base aux photos. Lors de la génération de ressources, vous pouvez ajouter les métadonnées dans les applications natives elles-mêmes. Par exemple, vous pouvez [ajouter des métadonnées IPTC dans Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
+* Pour commencer, les applications natives qui créent des ressources y ajoutent des métadonnées. Par exemple, [Acrobat ajoute des métadonnées](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) aux fichiers du PDF ou un appareil photo ajoute des métadonnées de base aux photos. Lors de la génération de ressources, vous pouvez ajouter les métadonnées dans les applications natives elles-mêmes. Par exemple, vous pouvez [ajouter des métadonnées IPTC dans Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Avant de charger une ressource vers [!DNL Experience Manager], vous pouvez modifier les métadonnées à l’aide de l’application native utilisée pour créer une ressource ou à l’aide d’une autre application de modification des métadonnées. Lorsque vous chargez une ressource vers Experience Manager, les métadonnées sont traitées. Par exemple, découvrez comment [utiliser les métadonnées dans [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) et consultez le panneau [balises pour [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) dans [!DNL Adobe Exchange].
+* Avant de charger une ressource vers [!DNL Experience Manager], vous pouvez modifier les métadonnées à l’aide de l’application native utilisée pour créer une ressource ou à l’aide d’une autre application de modification des métadonnées. Lorsque vous chargez une ressource vers Experience Manager, les métadonnées sont traitées. Par exemple, découvrez comment [utiliser les métadonnées dans [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) et consultez le panneau [balises pour [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) dans [!DNL Adobe Exchange].
 
 * Dans [!DNL Experience Manager Assets], vous pouvez ajouter ou modifier manuellement des métadonnées de ressources dans la page [!UICONTROL Propriétés].
 

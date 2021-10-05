@@ -3,12 +3,12 @@ title: Recherche d’images et de ressources numériques dans [!DNL Adobe Experi
 description: Découvrez comment rechercher les ressources souhaitées dans [!DNL Adobe Experience Manager] à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Recherche, Métadonnées
+feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
-source-wordcount: '5573'
+source-wordcount: '5570'
 ht-degree: 88%
 
 ---
@@ -161,7 +161,7 @@ Vous pouvez rechercher des ressources en fonction des valeurs exactes de champs 
 | Créateur | creator:John |
 | Emplacement | location:NA |
 | Description | description:&quot;Sample Image&quot; |
-| Outil créateur | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| Outil créateur | creatortool:&quot;Adobe Photoshop&quot; |
 | Détenteur de copyright | copyrightowner:&quot;Adobe Systems&quot; |
 | Contributeur | contributor:John |
 | Conditions d’utilisation | usageterms:&quot;CopyRights Reserved&quot; |
@@ -188,7 +188,7 @@ Le mot-clé d’une propriété générée par un utilisateur correspond au libe
 
 Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
-* Pour afficher toutes les ressources avec plusieurs champs de facettes (par exemple : title=John Doe et creator tool=Adobe Photoshop) :  `title:"John Doe" creatortool:Adobe*`
+* Pour afficher toutes les ressources avec plusieurs champs de facettes (par exemple : title=John Doe et creator tool=Adobe Photoshop) : `title:"John Doe" creatortool:Adobe*`
 * Pour afficher toutes les ressources lorsque la valeur de la facette est une expression et non un seul mot (par exemple : le titre est Scott Reynolds) : `title:"Scott Reynolds"`
 * Pour afficher les ressources avec plusieurs valeurs d’une seule propriété (le titre est Scott Reynolds ou John Doe, par exemple) : `title:"Scott Reynolds" OR "John Doe"`
 * Pour afficher les ressources avec des valeurs de propriété commençant par une chaîne spécifique (par exemple : le titre est Scott Reynolds) : `title:Scott*`
@@ -214,7 +214,7 @@ Les utilisateurs métiers et les spécialistes marketing utilisent Brand Portal
 
 ### Rechercher des images [!DNL Adobe Stock]  {#adobe-stock1}
 
-Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources Adobe Stock et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans le champ Omni-recherche. Vous pouvez également utiliser le panneau **[!UICONTROL Filtres]** pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock. Voir la section [Gestion des images [!DNL Adobe Stock]  dans [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des ressources Adobe Stock et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans le champ Omni-recherche. Vous pouvez également utiliser le panneau **[!UICONTROL Filtres]** pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock. Voir la section [Gestion des images [!DNL Adobe Stock] dans [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Recherche de [!DNL Dynamic Media] ressources {#dynamic-media}
 
@@ -242,7 +242,7 @@ Transmettez les paramètres de requête suivants dans une URL pour démarrer le 
 
 | Nom | Valeurs | Exemple | Objectif |
 |---|---|---|---|
-| suffixe de la ressource (B) | Chemin d’accès au dossier indiqué comme suffixe de la ressource dans l’URL :  [https://localhost:4502/aem/assetpicker.html/&lt;chemin_dossier>](https://localhost:4502/aem/assetpicker.html) | Pour démarrer le sélecteur de ressources avec un dossier particulier, par exemple avec le dossier `/content/dam/we-retail/en/activities` sélectionné, l’URL doit avoir la forme suivante : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
+| suffixe de la ressource (B) | Chemin d’accès au dossier indiqué comme suffixe de la ressource dans l’URL : [https://localhost:4502/aem/assetpicker.html/&lt;chemin_dossier>](https://localhost:4502/aem/assetpicker.html) | Pour démarrer le sélecteur de ressources avec un dossier particulier, par exemple avec le dossier `/content/dam/we-retail/en/activities` sélectionné, l’URL doit avoir la forme suivante : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
 | `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du sélecteur de ressources. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir le sélecteur de ressources en tant que boîte de dialogue Granite. Cette option ne peut être appliquée qu’au démarrage du sélecteur de ressources via le champ Chemin de Granite, en la configurant comme URL pickerSrc. |
 | `root` | &lt;chemin_dossier> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Ici, le sélecteur de ressources ne vous permet de sélectionner qu’une seule ressource enfant (directe/indirecte) sous le dossier racine. |
@@ -378,7 +378,7 @@ Pour accélérer la découverte, [!DNL Experience Manager Assets] propose des fa
 
 ### Extraction de texte lors du téléchargement de ressources {#extracttextupload}
 
-Vous pouvez configurer [!DNL Experience Manager] pour extraire le texte des ressources lorsque les utilisateurs chargent des ressources, telles que des fichiers PSD ou PDF. [!DNL Experience Manager] indexe le texte extrait et aide les utilisateurs à rechercher ces ressources en fonction du texte extrait. Consultez [Chargement de ressources](/help/assets/manage-assets.md#uploading-assets).
+Vous pouvez configurer [!DNL Experience Manager] pour extraire le texte des ressources lorsque les utilisateurs chargent des ressources, telles que des fichiers de PSD ou de PDF. [!DNL Experience Manager] indexe le texte extrait et aide les utilisateurs à rechercher ces ressources en fonction du texte extrait. Consultez [Chargement de ressources](/help/assets/manage-assets.md#uploading-assets).
 
 Si l’extraction de texte devient trop gourmande en ressources pour votre déploiement, envisagez de [désactiver l’extraction de texte](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
 
@@ -390,7 +390,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 
 | Champ de recherche | Valeurs de propriété de recherche |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Types MIME  | Images, Documents, Multimédia, Archives ou Autre. |
+| Types MIME | Images, Documents, Multimédia, Archives ou Autre. |
 | Dernière modification | Heure, Jour, Semaine, Mois ou Année. |
 | Taille de fichier | Petit, Moyen ou Grand. |
 | État de publication | Publiée ou Publication annulée. |

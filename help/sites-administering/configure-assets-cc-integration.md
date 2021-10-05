@@ -2,13 +2,13 @@
 title: Configuration de l’intégration AEM Assets avec Experience Cloud
 description: Découvrez comment configurer l’intégration d’AEM Assets avec Experience Cloud.
 contentOwner: AG
-feature: Gestion des ressources
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 45%
+source-wordcount: '987'
+ht-degree: 43%
 
 ---
 
@@ -55,7 +55,7 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
 1. Dans la liste **[!UICONTROL Portée]**, sélectionnez **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** et **[!UICONTROL cc-share]**.
 1. Cliquez sur **[!UICONTROL Créer]**. Un message indique que l’application a été créée.
 
-   ![Notification de réussite de création de l’application pour intégrer AEM Assets avec Adobe CC](assets/chlimage_1-50.png)
+   ![Notification de création réussie de l’application pour intégrer AEM Assets à Creative Cloud](assets/chlimage_1-50.png)
 
 1. Copiez l’**[!UICONTROL ID d’application]** généré pour la nouvelle application.
 
@@ -75,7 +75,7 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
 
 1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, indiquez un titre et un nom pour la nouvelle configuration et cliquez sur **[!UICONTROL Créer]**.
 
-   ![Définition du nom d’une nouvelle configuration pour intégrer AEM Assets et CC](assets/aem-ec-integration-config1.png)
+   ![Définition du nom d’une nouvelle configuration pour intégrer AEM Assets et Creative Cloud](assets/aem-ec-integration-config1.png)
 
 1. Dans le champ **[!UICONTROL URL du client]**, spécifiez l’URL d’AEM Assets. Auparavant, si l’URL était définie sur `https://<tenant_id>.marketing.adobe.com`, remplacez-la par `https://<tenant_id>.experiencecloud.adobe.com`.
 
