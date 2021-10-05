@@ -1,10 +1,10 @@
 ---
 title: Extension de  [!DNL Adobe Experience Manager] 6.5 à l’aide d’Adobe Developer App Builder.
 description: Extension de  [!DNL Adobe Experience Manager] 6.5 à l’aide d’Adobe Developer App Builder.
-source-git-commit: aab7d4aaf11b6aef3b729f906259a76c152fd6f0
+source-git-commit: e6153e1a816bb9169f96fa75827593485a6ddbd4
 workflow-type: tm+mt
 source-wordcount: '577'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -42,26 +42,26 @@ Le diagramme suivant illustre la manière dont une application standard créée 
 
 ![Architecture](assets/firefly-architecture.jpg)
 
-Pour plus d’informations sur l’architecture du générateur d’applications, consultez la section [Aperçu de l’architecture](https://www.adobe.io/project-firefly/docs/guides/).
+Pour plus d’informations sur l’architecture du générateur d’applications, consultez la section [Aperçu de l’architecture](https://www.adobe.io/app-builder/docs/guides/).
 
 ## Prise en main d’App Builder {#additional-resources}
 
 Pour vous aider à prendre en main App Builder, nous avons créé une série de documents pour vous aider à commencer :
 
-* [Prise en main d’App Builder](https://www.adobe.io/project-firefly/docs/getting_started/)
+* [Prise en main d’App Builder](https://www.adobe.io/app-builder/docs/getting_started/)
 
 ## Poursuivre l’apprentissage avec la documentation {#appbuilder-documentation}
 
 App Builder fournit des vidéos et de la documentation à l’intention des développeurs, notamment des guides et une documentation de référence pour vous aider à commencer à développer vos propres applications personnalisées :
 
-* [Documentation du générateur d’applications](https://www.adobe.io/project-firefly/docs/overview/)
+* [Documentation du générateur d’applications](https://www.adobe.io/app-builder/docs/overview/)
 * [Vidéos sur App Builder](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## Essai d’une des applications d’exemple {#appbuilder-codesamples}
 
 Prêts à se développer ? Nous avons de nombreux exemples d’applications pour vous aider à démarrer rapidement :
 
-* [Labs de code du créateur d’applications sur le site web du développeur d’Adobes](https://www.adobe.io/project-firefly/docs/resources/)
+* [Labs de code du créateur d’applications sur le site web du développeur d’Adobes](https://www.adobe.io/app-builder/docs/resources/)
 
 ## Assistance {#support}
 
