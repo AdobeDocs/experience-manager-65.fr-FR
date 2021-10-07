@@ -7,11 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
-feature: Configuration, jeux de règles
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Configuration,Rulesets
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 72%
+source-wordcount: '760'
+ht-degree: 71%
 
 ---
 
@@ -62,7 +62,7 @@ Voir aussi [Utilisez &quot;asset&quot; au lieu de &quot;is&quot; image dans un j
 
 1. Connectez-vous à votre [application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
-   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
 
 1. Téléchargez votre fichier d’ensemble de règles en procédant comme suit :
 

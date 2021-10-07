@@ -3,12 +3,12 @@ title: Installation et configuration d’ImageMagick
 description: Découvrez le logiciel ImageMagick, comment l’installer, configurer l’étape de processus de ligne de commande et l’utiliser pour modifier, composer et générer des miniatures à partir d’images.
 contentOwner: AG
 role: Admin
-feature: Rendus,Outils de développement
+feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 48%
+source-wordcount: '693'
+ht-degree: 49%
 
 ---
 
@@ -22,7 +22,7 @@ Pour traiter des fichiers volumineux à l’aide d’ImageMagick, veuillez tenir
 
 >[!NOTE]
 >
->Si vous utilisez [!DNL Experience Manager] sur [!DNL Adobe Managed Services] (AMS), contactez l’assistance clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB haute résolution. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
+>Si vous utilisez [!DNL Experience Manager] sur [!DNL Adobe Managed Services] (AMS), contactez le service clientèle Adobe si vous prévoyez de traiter de nombreux fichiers de PSD haute résolution ou PSB. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## Installation d’ImageMagick {#installing-imagemagick}
 
@@ -39,7 +39,7 @@ Plusieurs versions des fichiers d’installation d’ImageMagic sont disponibles
 Vous pouvez configurer l’étape de processus de ligne de commande en fonction de votre cas d’utilisation. Effectuez les étapes suivantes pour générer une image inversée et des miniatures (140x100, 48x48, 319x319 et 1280x1280) chaque fois que vous ajoutez un fichier image JPEG à `/content/dam` sur le serveur [!DNL Experience Manager] :
 
 1. Sur le serveur [!DNL Experience Manager], accédez à la console Processus (`https://[aem_server]:[port]/workflow`) et ouvrez le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** .
-1. Dans le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**, ouvrez l’étape **[!UICONTROL Miniatures EPS (optimisées par ImageMagick)]** .
+1. Dans le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]** , ouvrez l’étape **[!UICONTROL Miniatures EPS (optimisées par ImageMagick)]** .
 1. Dans l’onglet **[!UICONTROL Arguments]**, ajoutez `image/jpeg` à la liste **[!UICONTROL Types MIME]**.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
@@ -75,7 +75,7 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
 1. Enregistrez le workflow.
 
-1. Pour vérifier que le traitement est correct, téléchargez une image JPG vers [!DNL Assets]. Une fois le traitement terminé, vérifiez si une image inversée et les rendus sont générés ou non.
+1. Pour vérifier que le traitement est correct, téléchargez une image de JPG sur [!DNL Assets]. Une fois le traitement terminé, vérifiez si une image inversée et les rendus sont générés ou non.
 
 ## Réduction des vulnérabilités en matière de sécurité {#mitigating-security-vulnerabilities}
 

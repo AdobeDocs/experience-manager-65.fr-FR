@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '6936'
-ht-degree: 49%
+source-wordcount: '6940'
+ht-degree: 48%
 
 ---
 
@@ -80,7 +80,7 @@ Pour migrer les paramètres prédéfinis et configurations de visionneuse person
 
 L’installation du Feature Pack 18912 est *optionnel*.
 
-Le Feature Pack 18912 vous permet soit d’ingérer des ressources par FTP en masse, soit de migrer des ressources de Dynamic Media en mode hybride ou de Dynamic Media Classic vers Dynamic Media en mode Scene7 sur Experience Manager. Il est disponible à partir de [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Le Feature Pack 18912 vous permet soit d’ingérer des ressources par FTP en masse, soit de migrer des ressources du mode Dynamic Media - Hybride ou de Dynamic Media Classic vers le mode Dynamic Media - Scene7 sur Experience Manager. Il est disponible à partir de [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Pour plus d’informations, voir [Installation du Feature Pack 18912 pour la migration des ressources en masse](/help/assets/bulk-ingest-migrate.md) .
 
@@ -94,7 +94,7 @@ Pour plus d’informations, voir [Installation du Feature Pack 18912 pour la mig
 
 1. En mode d’auteur Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale et sélectionnez l’icône Outils, puis accédez à **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, sélectionnez **[!UICONTROL global]** (ne sélectionnez pas l’icône de dossier située à gauche de **[!UICONTROL global]**), puis sélectionnez **[!UICONTROL Créer]**.
-1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Contactez l’assistance clientèle d’Adobe si vous n’avez pas reçu l’e-mail.
+1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Si vous n’avez pas reçu le courrier électronique, contactez le service clientèle d’Adobe.
 
    Sélectionnez **[!UICONTROL Connexion à Dynamic Media]**.
 
@@ -134,7 +134,7 @@ Pour marquer un dossier sélectionné en vue de sa synchronisation avec Dynamic 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 1. Pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, vous devez &quot;placer sur la liste autorisée&quot; l’instance d’auteur du Experience Manager pour vous connecter à Dynamic Media :
 
-   * Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte. Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   * Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte. Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
 
    * Dans la barre de navigation située en haut à droite de la page, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
 
@@ -167,7 +167,7 @@ Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditi
 
 * Vous devez exécuter Experience Manager 6.5 avec Service Pack 6.5.4.0 ou version ultérieure en mode Dynamic Media - Scene7 .
 * Cette fonctionnalité de chargement volumineuse n’est prise en charge que pour les clients [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
-* Assurez-vous que votre instance de Experience Manager est configurée avec le stockage Blob Amazon S3 ou Microsoft® Azure.
+* Assurez-vous que votre instance de Experience Manager est configurée avec le stockage Azure Blob Amazon S3 ou Microsoft®.
 
    >[!NOTE]
    Configurez le stockage Blob de Microsoft Azure avec une clé d’accès et une clé secrète, car cette fonctionnalité de chargement volumineuse n’est pas prise en charge avec AzureSas dans la configuration de stockage Blob.
@@ -237,7 +237,7 @@ Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). Dan
    *Définissez maintenant le délai d’attente de l’étape de processus Transfert de binaire direct de Scene7 en procédant comme suit :*
 
 1. Dans Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale.
-1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflows]** > **[!UICONTROL Modèles]**.
 1. Sur la page Modèles de processus , sélectionnez **[!UICONTROL Vidéo de codage Dynamic Media]**.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**.
 1. Sur la page du workflow, double-cliquez sur l’étape de processus **[!UICONTROL Transfert binaire direct de Scene7]** .
@@ -281,7 +281,7 @@ L’écran Image Server permet de définir les paramètres par défaut pour la d
 
 Pour ouvrir la page Paramètres généraux de l’application, dans la barre de navigation globale de Dynamic Media Classic, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 
-**[!UICONTROL Serveurs]** : au moment de la mise en service du compte, Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour créer des chaînes URL pour votre site web et vos applications. Ces appels d’URL sont spécifiques à votre compte. Ne modifiez aucun nom de serveur, sauf si l’assistance clientèle Adobe vous a demandé de le faire.
+**[!UICONTROL Serveurs]** : au moment de la mise en service du compte, Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour créer des chaînes URL pour votre site web et vos applications. Ces appels d’URL sont spécifiques à votre compte. Ne modifiez aucun nom de serveur, sauf si le service clientèle d’Adobe vous a demandé de le faire.
 
 **[!UICONTROL Écraser les images]** : Dynamic Media ne permet pas que deux fichiers portent le même nom. L’identifiant de l’URL de chaque élément (le nom de fichier sans l’extension) doit être unique. Ces options spécifient la manière dont les ressources de remplacement sont chargées : elles peuvent remplacer l’original ou devenir un doublon. Les ressources en double sont renommées en ajoutant « -1 » (par exemple, chaise.tif devient chaise-1.tif). Ces options affectent les ressources chargées dans un dossier autre que celui d’origine ou les ressources dont l’extension est différente de celle du fichier d’origine (telle que JPG, TIF ou PNG).
 
@@ -436,7 +436,7 @@ Deux éléments sont disponibles pour la définition : correspondance et nom de
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
 
 1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Affectation de nom par défaut]**.
 1. Sélectionnez **[!UICONTROL Afficher le formulaire]** ou **[!UICONTROL Afficher le code]** pour indiquer le mode de visualisation et de saisie des informations sur chaque élément.
@@ -469,7 +469,7 @@ Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramè
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
 
 1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
 
@@ -525,7 +525,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
 
 1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
 
@@ -653,11 +653,11 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-#### Mise à jour de la connexion de chargement vers Dynamic Media Classic {#updating-the-scene-upload-connection}
+#### Mise à jour de la connexion de chargement Dynamic Media Classic {#updating-the-scene-upload-connection}
 
 Le paramètre de connexion de chargement vers Scene7 synchronise les ressources Experience Manager avec les serveurs Dynamic Media Classic.
 
-**Pour mettre à jour la connexion de chargement vers Dynamic Media Classic :**
+**Pour mettre à jour la connexion de chargement Dynamic Media Classic :**
 
 1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`.
 1. Dans le champ **[!UICONTROL Number of connections]** (Nombre de connexions) et/ou **[!UICONTROL Active job timeout]** (Délai d’expiration des tâches actives), modifiez le nombre en fonction de vos besoins.
@@ -711,7 +711,7 @@ Les filtres s’appliquent aux types MIME et ne peuvent pas être spécifiques a
 
    Pour que ce filtre s’applique à toutes les images, quel que soit leur format, définissez la valeur sur `image/*` où `*` est une expression régulière appliquée à toutes les images de n’importe quel format.
 
-   Pour que le filtre s’applique uniquement aux images de type JPEG, saisissez la valeur `image/jpeg`.
+   Pour que le filtre s&#39;applique uniquement aux images de type JPEG, saisissez la valeur `image/jpeg`.
 
 1. Définissez les rendus que vous souhaitez inclure ou exclure de la réplication.
 

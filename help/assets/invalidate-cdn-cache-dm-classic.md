@@ -8,10 +8,10 @@ content-type: reference
 feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 60%
+source-wordcount: '733'
+ht-degree: 58%
 
 ---
 
@@ -29,11 +29,11 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de
 
 Voir aussi [Présentation du cache dans Dynamic Media Classic (Scene7)](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**Pour invalider le cache du réseau de diffusion de contenu au moyen de Dynamic Media Classic :**
+**Pour invalider le cache CDN au moyen de Dynamic Media Classic :**
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
 
 1. Près du coin supérieur droit de la page, accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**.
 1. Recherchez la zone de texte **[!UICONTROL Modèle d’invalidation sur le réseau de diffusion de contenu]** dans la section Serveurs de la page Paramètres généraux de l’application.

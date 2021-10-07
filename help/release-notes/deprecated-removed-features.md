@@ -2,7 +2,7 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 43%
@@ -57,7 +57,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 
 | Zone | Fonctionnalité | Remplacement |
 |--- |--- |--- |
-| Intégration à [!DNL Experience Cloud] | Vous pouvez synchroniser vos ressources avec [!DNL Experience Cloud] à l’aide d’une configuration via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] était auparavant appelé  [!DNL Adobe Marketing Cloud]. | Si vous avez des questions, [contactez l’Assistance clientèle Adobe](https://www.adobe.com/account/sign-in.supportportal.html). |
+| Intégration à [!DNL Experience Cloud] | Vous pouvez synchroniser vos ressources avec [!DNL Experience Cloud] à l’aide d’une configuration via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] était auparavant appelé  [!DNL Adobe Marketing Cloud]. | Si vous avez des questions, [contactez le service clientèle Adobe](https://www.adobe.com/account/sign-in.supportportal.html). |
 | Activity Map dans Analytics | Version d’Activity Map incluse dans AEM. | En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM. Utilisez le [module Activity Map fourni par Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Intégrations | L’intégration d’ExactTarget a été supprimée de la distribution par défaut (Quickstart) et elle n’est plus disponible. | Aucun remplacement. |
 | Intégrations | L’intégration de l’API Salesforce Force a été supprimée de la distribution par défaut (Quickstart) et est désormais un module supplémentaire à installer à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | Cette fonctionnalité est toujours disponible. |

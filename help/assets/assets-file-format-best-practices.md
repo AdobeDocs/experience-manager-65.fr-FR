@@ -3,12 +3,12 @@ title: Bonnes pratiques relatives au traitement des formats de fichiers pris en 
 description: Bonnes pratiques pour traiter les différents types de fichiers pris en charge à l’aide de  [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
-feature: Gestion des ressources,Outils de développement
+feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 46%
+source-wordcount: '465'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +20,7 @@ Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AE
 
 >[!TIP]
 >
->Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez l’assistance clientèle Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Collaborez avec le représentant de l’assistance clientèle d’Adobe afin de mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires de l’Adobe. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
+>Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez le service clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Collaborez avec le représentant du service clientèle d’Adobe afin de mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## [!DNL Adobe Camera Raw] bibliothèque {#adobe-camera-raw-library}
 
@@ -38,7 +38,7 @@ Pour des résultats optimaux, Adobe recommande d’utiliser la bibliothèque Ado
 * Fichiers AI avec des miniatures qui ne sont pas générées à l’avance
 * Pour les fichiers AI avec des couleurs SPOT (PMS)
 
-Les miniatures et les aperçus générés à l’aide de l’interpréteur de PDF sont de qualité supérieure par rapport à la sortie de trame prête à l’emploi. La bibliothèque Adobe PDF Rasterizer ne prend en charge aucune conversion d’espace colorimétrique. Indépendamment de l’espace colorimétrique du fichier PDF source, Adobe PDF Rasterizer génère uniquement une sortie RVB.
+Les miniatures et les aperçus générés à l’aide de l’interpréteur de PDF sont de qualité supérieure par rapport à la sortie de trame prête à l’emploi. La bibliothèque Adobe PDF Rasterizer ne prend en charge aucune conversion d’espace colorimétrique. Quel que soit l’espace colorimétrique du fichier du PDF source, Adobe PDF Rasterizer génère uniquement la sortie du RGB.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 

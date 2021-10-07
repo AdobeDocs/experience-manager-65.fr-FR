@@ -3,11 +3,11 @@ title: Bonnes pratiques pour surveiller le déploiement de  [!DNL Assets] .
 description: Bonnes pratiques pour surveiller l’environnement et les performances de votre déploiement [!DNL Adobe Experience Manager] après son déploiement.
 contentOwner: AG
 role: Admin, Architect
-feature: Gestion des ressources
+feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 68%
 
 ---
@@ -199,5 +199,5 @@ Dans le processus de surveillance, si vous rencontrez des problèmes, voici quel
 * Utilisez la console d’administration des workflow pour vérifier que vos workflow se comportent comme prévu. Si possible, regroupez plusieurs workflow en un seul.
 * Revoyez la surveillance en temps réel et recherchez toute congestion supplémentaire ou recherchez les processus fortement consommateurs de certaines ressources spécifiques.
 * Examinez les points de sortie du réseau client et les points d’entrée vers le réseau de déploiement [!DNL Experience Manager], y compris le dispatcher. Ce sont souvent des zones de congestion. Pour plus d’informations, reportez-vous à la section [Considérations relatives aux ressources réseau](/help/assets/assets-network-considerations.md).
-* Augmentez la taille de votre serveur [!DNL Experience Manager]. Votre déploiement [!DNL Experience Manager] n’est peut-être pas suffisamment dimensionné. L’assistance clientèle d’Adobe peut vous aider à déterminer si votre serveur est de taille inférieure.
+* Augmentez la taille de votre serveur [!DNL Experience Manager]. Votre déploiement [!DNL Experience Manager] n’est peut-être pas suffisamment dimensionné. Le service clientèle d’Adobe peut vous aider à déterminer si votre serveur est sous-dimensionné.
 * Consultez les fichiers `access.log` et `error.log` pour trouver les entrées situées autour du moment où le problème est survenu. Recherchez des indices susceptibles d’indiquer la présence d’anomalies au niveau du code personnalisé. Ajoutez-les à la liste d’événements à surveiller.

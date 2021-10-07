@@ -4,7 +4,7 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '4392'
 ht-degree: 5%
@@ -19,7 +19,7 @@ ht-degree: 5%
 | -------- | ---------------------------- |
 | Version | 6.5.10.0 |
 | Type | Version du Service Pack |
-| Date  | 26 août 2021 |
+| Date | 26 août 2021 |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.10.zip) |
 
 ## Éléments inclus dans [!DNL Adobe Experience Manager] 6.5.10.0 {#what-is-included-in-aem}
@@ -104,7 +104,7 @@ Voici la liste des correctifs fournis dans la version [!DNL Experience Manager] 
 * Lorsqu’un utilisateur saisit une balise à la demande qui comprend de l’espace (la balise qui n’existe pas sur le système) et appuie sur Entrée, la balise s’affiche sous le champ . Cependant, lorsque la balise [!DNL Content Fragment] est enregistrée et rouverte, la balise à la demande n’apparaît pas (NPR-36441).
 * Le modèle ne peut pas être supprimé lorsque l’instance est accessible via Dispatcher (NPR-36385).
 * Lorsqu’une page est déplacée, une actualisation manuelle du navigateur est nécessaire pour effectuer le rendu des modifications (NPR-36381).
-* Lorsque vous sélectionnez un composant, vous pouvez le couper ou le copier en utilisant les combinaisons Ctrl+X ou Ctrl+C (et Commande+X ou Commande+C sous Mac). Lorsque vous cliquez sur un autre composant, vous pouvez coller avec la barre d’outils, mais pas avec le clavier (Ctrl+V ou Commande+V) (NPR-36379).
+* Lorsque vous sélectionnez un composant, vous pouvez le couper ou le copier en utilisant les combinaisons Ctrl+X ou Ctrl+C (et Commande+X ou Commande+C sur Mac). Lorsque vous cliquez sur un autre composant, vous pouvez coller avec la barre d’outils, mais pas avec le clavier (Ctrl+V ou Commande+V) (NPR-36379).
 * Lorsqu’un utilisateur tente de couper des composants à l’aide de l’icône ciseaux pour les déplacer ailleurs, une erreur de console se produit. De plus, lorsque vous collez un seul composant, il est déplacé (NPR-36378).
 * [!DNL Experience Manager] a une requête sans index sur la gestion de contenu web ou les notifications, elle ralentit les performances (NPR-36303).
 * Lorsqu’un auteur restaure l’héritage sur le composant hérité supprimé, l’option disponible consiste à synchroniser tout le contenu de la page. Les auteurs de contenu doivent synchroniser la page entière même si l’héritage n’est restauré que sur un seul composant. Une synchronisation complète peut entraîner la synchronisation du contenu indésirable (NPR-34456, CQ-4310183).
@@ -189,7 +189,7 @@ Les améliorations d’accessibilité suivantes sont disponibles dans [!DNL Dyna
 
 * Les lecteurs d’écran annoncent maintenant le libellé des options sur la page [!UICONTROL Profils d’image] (CQ-4290723).
 
-* Les utilisateurs de Windows peuvent désormais naviguer hors de l’éditeur CSS développé sur [!UICONTROL Éditeur de paramètres prédéfinis de visionneuse] lorsque l’accent est mis sur l’éditeur CSS (CQ-4290720).
+* Les utilisateurs de Windows peuvent désormais naviguer hors de l’éditeur CSS étendu sur [!UICONTROL Éditeur de paramètres prédéfinis de visionneuse] lorsque l’accent est mis sur l’éditeur CSS (CQ-4290720).
 
 * Sous l’onglet [!UICONTROL Simple] de [!UICONTROL Modifier le paramètre d’image prédéfini] lors de la navigation en mode Formulaire, les lecteurs d’écran narrent désormais les libellés des différents champs et options de modification (CQ-4290717).
 
@@ -294,13 +294,13 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Correspondence Management**
 
-* Retardez l&#39;affichage des caractères dans l&#39;onglet [!UICONTROL Données] ainsi que dans l&#39;aperçu de la lettre HTML (NPR-37020).
+* Délai d’affichage des caractères dans l’onglet [!UICONTROL Données] ainsi que dans l’aperçu de la lettre par HTML (NPR-37020).
 
-* Lorsque vous modifiez un fragment de document texte, les nouveaux mots s’affichent sous forme de balises HTML après l’enregistrement du fragment (NPR-36837).
+* Lorsque vous modifiez un fragment de document texte, les nouveaux mots s’affichent sous la forme de balises HTML après l’enregistrement du fragment (NPR-36837).
 
 * Impossible d’afficher les lettres enregistrées en tant que brouillons (NPR-36816).
 
-* Lorsque vous modifiez un fragment de document texte, puis affichez l’aperçu de la lettre, AEM Forms affiche la langue de l’expression dans l’aperçu de lettre HTML (CQ-4322331).
+* Lorsque vous modifiez un fragment de document texte, puis affichez l’aperçu de la lettre, AEM Forms affiche la langue de l’expression dans l’aperçu de la lettre de HTML (CQ-4322331).
 
 * Problèmes lors du rendu des données avec un modèle de lettre en libre-service (NPR-37161).
 
@@ -323,11 +323,11 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Designer**
 
-* Le Reader d’écran ne parvient pas à lire les données de champ flottant placées dans le libellé de texte sur la page de Principal ou sur les pages de sous-formulaire dans un PDF dynamique (CQ-4321587).
+* Le Reader d’écran ne parvient pas à lire les données de champ flottant placées dans le libellé de texte sur la page de Principal ou sur les pages de sous-formulaire d’un PDF dynamique (CQ-4321587).
 
 **Services de document**
 
-* Lorsque vous convertissez des fichiers XDP en fichiers PDF, puis assemblez le PDF résultant, les générations PDF échouent et affichent le message d’erreur suivant :
+* Lorsque vous convertissez des fichiers XDP en fichiers de PDF, puis que vous assemblez le PDF généré, les générations de PDF échouent et affichent le message d’erreur suivant :
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -341,7 +341,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Lorsque vous définissez la valeur de la propriété `mfAllowAttachments` sur `True` dans le référentiel CRX DE, la balise `dataXml` est corrompue lors de l’envoi du formulaire HTML5 (NPR-37035).
 
-* Lorsque vous effectuez le rendu d’un XDP au format HTML à l’aide de `dataXml`, [!DNL AEM Forms] affiche une erreur `Page Unresponsive` (NPR-36631).
+* Lorsque vous effectuez le rendu d’un XDP en tant que HTML à l’aide de `dataXml`, [!DNL AEM Forms] affiche une erreur `Page Unresponsive` (NPR-36631).
 
 ### Commerce {#commerce-65100}
 
@@ -411,7 +411,7 @@ Pour connaître les plates-formes certifiées pour fonctionner avec cette versio
 
 >[!NOTE]
 >
->Ignorez si vous n’utilisez pas Experience Manager Forms. Les correctifs dans Experience Manager Forms sont fournis par le biais d’un module complémentaire distinct une semaine après la publication du Service Pack [!DNL Experience Manager] planifiée.
+>Ignorez si vous n’utilisez pas Experience Manager Forms. Les correctifs dans Experience Manager Forms sont livrés par le biais d’un module complémentaire distinct une semaine après la publication du Service Pack [!DNL Experience Manager] planifiée.
 
 1. Vérifiez que vous avez installé le Service Pack Adobe Experience Manager.
 1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [versions AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) pour votre système d’exploitation.
@@ -431,7 +431,7 @@ Pour plus d’informations sur l’installation du programme d’installation cu
 
 >[!NOTE]
 >
->Après avoir installé le programme d’installation cumulatif pour Experience Manager Forms on JEE, installez le dernier module complémentaire Forms, supprimez le module complémentaire Forms du dossier `crx-repository\install` et redémarrez le serveur.
+>Après avoir installé le programme d’installation cumulatif de Experience Manager Forms on JEE, installez le dernier module complémentaire Forms, supprimez le module complémentaire Forms du dossier `crx-repository\install` et redémarrez le serveur.
 
 
 ### UberJar {#uber-jar}
@@ -461,7 +461,7 @@ Vérifiez si vous utilisez une fonctionnalité ou une fonctionnalité dans un d�
 
 | Zone | Fonctionnalité | Remplacement |
 |---|---|---|
-| Intégrations | L’écran de souscription d’AEM Cloud Services ]**est obsolète car l’intégration [!DNL Experience Manager] et [!DNL Adobe Target] est mise à jour dans Experience Manager 6.5. L’intégration prend en charge l’API Adobe Target Standard.**[!UICONTROL  L’API utilise l’authentification via Adobe IMS et [!DNL Adobe I/O] et prend en charge le rôle croissant d’Adobe Launch pour instrumenter les [!DNL Experience Manager] pages à des fins d’analyse et de personnalisation. L’assistant de souscription n’a aucune utilité sur le plan fonctionnel. | Configurez les connexions système, l’authentification IMS par Adobe et les intégrations [!DNL Adobe I/O] via les services cloud [!DNL Experience Manager] respectifs. |
+| Intégrations | L’écran de souscription d’AEM Cloud Services ]**est obsolète car l’intégration [!DNL Experience Manager] et [!DNL Adobe Target] est mise à jour dans Experience Manager 6.5. L’intégration prend en charge l’API Adobe Target Standard.**[!UICONTROL  L’API utilise l’authentification via Adobe IMS et [!DNL Adobe I/O] et prend en charge le rôle croissant d’Adobe Launch pour instrumenter les pages [!DNL Experience Manager] à des fins d’analyse et de personnalisation. L’assistant de souscription n’a aucune utilité sur le plan fonctionnel. | Configurez les connexions système, l’authentification Adobe IMS et les intégrations [!DNL Adobe I/O] via les services cloud [!DNL Experience Manager] respectifs. |
 | Connecteurs | Adobe JCR Connector for Microsoft® SharePoint 2010 et Microsoft® SharePoint 2013 est obsolète pour Experience Manager 6.5. | N/A |
 
 ## Problèmes connus {#known-issues}
@@ -499,7 +499,7 @@ Les documents texte suivants répertorient les lots OSGi et les packages de cont
 Ces sites web ne sont disponibles que pour les clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* Voir [Comment contacter l’assistance clientèle d’Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* Voir [Comment contacter le service clientèle d’Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >

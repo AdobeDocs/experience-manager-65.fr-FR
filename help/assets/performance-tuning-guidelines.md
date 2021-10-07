@@ -1,14 +1,14 @@
 ---
 title: Réglage des performances [!DNL Assets].
-description: Suggestions et conseils sur  [!DNL Experience Manager] la configuration, les modifications apportées au matériel, aux logiciels et aux composants réseau pour supprimer les goulets d’étranglement et optimiser les performances de  [!DNL Experience Manager Assets].
+description: Suggestions and guidance about [!DNL Experience Manager] configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Admin
-feature: Gestion des ressources
+feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2741'
 ht-degree: 53%
 
 ---
@@ -129,9 +129,9 @@ Votre stratégie d’optimisation du réseau dépend principalement de la quanti
 
 Dans la mesure du possible, définissez le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] sur Transitoire. Le paramètre réduit considérablement les surcharges nécessaires pour traiter les workflows car, dans ce cas, ils n’ont pas besoin de faire l’objet d’un suivi et de processus d’archivage classiques.
 
-1. Accédez à `/miscadmin` dans le déploiement [!DNL Experience Manager] à l’adresse `https://[aem_server]:[port]/miscadmin`.
+1. Navigate to `/miscadmin` in the [!DNL Experience Manager] deployment at `https://[aem_server]:[port]/miscadmin`.
 
-1. Développez **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]** > **[!UICONTROL dam]**.
+1. Expand **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 
 1. Ouvrez **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**. Depuis le panneau d’outils flottant, basculez vers l’onglet **[!UICONTROL Page]**, puis cliquez sur **[!UICONTROL Propriétés de la page]**.
 
@@ -153,9 +153,9 @@ Par exemple, après avoir exécuté de nombreux workflows transitoires (ce qui c
 
 ### Tâches parallèles maximales    {#maximum-parallel-jobs}
 
-Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches parallèles égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par les workflows [!UICONTROL Ressource de mise à jour de gestion des actifs numériques], ce qui ralentit la réactivité de l’interface utilisateur et empêche [!DNL Experience Manager] d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
+Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches parallèles égal au nombre de processeurs sur le serveur. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing [!DNL Experience Manager] from running other processes that safeguard server performance and stability. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
 
-1. Sur [!DNL Experience Manager] Auteur, accédez à `https://[aem_server]:[port]/system/console/slingevent`.
+1. On [!DNL Experience Manager] Author, access `https://[aem_server]:[port]/system/console/slingevent`.
 
 1. Cliquez sur **[!UICONTROL Modifier]** dans chaque file d’attente de workflow pertinente pour votre mise en oeuvre, par exemple **[!UICONTROL File d’attente de workflows transitoires Granite]**.
 
@@ -165,7 +165,7 @@ Configurer une file d’attente à la moitié des processeurs disponibles est un
 
 ### Configuration des ressources de mise à jour de gestion des ressources numériques {#dam-update-asset-configuration}
 
-Le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] contient une suite complète d’étapes configurées pour les tâches, telles que la génération PTIFF Dynamic Media et l’intégration [!DNL Adobe InDesign Server]. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe vous recommande de créer une copie personnalisée du modèle de workflow [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] et de supprimer toutes les étapes inutiles. Dans ce cas, mettez à jour les lanceurs pour [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] afin qu’ils pointent vers le nouveau modèle.
+The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Dynamic Media PTIFF generation and [!DNL Adobe InDesign Server] integration. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. Dans ce cas, mettez à jour les lanceurs pour [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] afin qu’ils pointent vers le nouveau modèle.
 
 L’exécution intensive du workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] peut considérablement augmenter la taille de la banque de données de votre fichier. Les résultats d’un test effectué par Adobe ont montré que la taille de l’entrepôt de données peut augmenter d’environ 400 Go si environ 5 500 workflows sont exécutés pendant une période de 8 heures.
 
@@ -212,7 +212,7 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 >
 >Les fichiers ImageMagick `policy.xml` et `configure.xml` sont disponibles à l’adresse `/usr/lib64/ImageMagick-&#42;/config/` au lieu de `/etc/ImageMagick/`. Voir la [documentation ImageMagick](https://www.imagemagick.org/script/resources.php) pour connaître l’emplacement des fichiers de configuration.
 
-Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez l’assistance clientèle Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Collaborez avec le représentant de l’assistance clientèle d’Adobe afin de mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires de l’Adobe. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
+Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez le service clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Collaborez avec le représentant du service clientèle d’Adobe afin de mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ### Écriture différée XMP {#xmp-writeback}
 
@@ -242,7 +242,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 
 ## Recherche des index    {#search-indexes}
 
-Installez [les derniers Service Packs](/help/release-notes/sp-release-notes.md) et les correctifs liés aux performances, car ils incluent souvent des mises à jour des index système. Voir [Conseils sur l’optimisation des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) pour connaître certaines optimisations d’index.
+Installez [les derniers Service Packs](/help/release-notes/sp-release-notes.md) et les correctifs liés aux performances, car ils incluent souvent des mises à jour des index système. See [performance tuning tips](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) for some index optimizations.
 
 Créez des index personnalisés pour les demandes que vous exécutez régulièrement. Pour plus d’informations, consultez la [méthodologie pour l’analyse des requêtes lentes](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) et la [création d’index personnalisés](/help/sites-deploying/queries-and-indexing.md). Pour des informations complémentaires au sujet des meilleures pratiques de requête et d’index, consultez les [Meilleures pratiques pour les requêtes et l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -255,10 +255,10 @@ Certaines optimisations peuvent être effectuées sur les configurations d’ind
 1. Ajoutez une propriété `String[]` `excludedPaths` avec les valeurs `/var`, `/etc/workflow/instances` et `/etc/replication`.
 1. Accédez à `/oak:index/damAssetLucene`. Ajoutez une propriété `String[]` `includedPaths` avec la valeur `/content/dam`. Enregistrer les modifications.
 
-Si vos utilisateurs n’ont pas besoin d’effectuer une recherche de texte intégral de ressources (par exemple, une recherche dans les documents PDF), désactivez-la. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l&#39;extraction de texte [!DNL Apache Lucene], procédez comme suit :
+Si vos utilisateurs n’ont pas besoin d’effectuer une recherche de texte intégral de ressources, par exemple, en parcourant le texte des documents du PDF, désactivez-le. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l&#39;extraction de texte [!DNL Apache Lucene], procédez comme suit :
 
-1. Dans l’interface [!DNL Experience Manager], accédez à [!UICONTROL Package Manager].
-1. Téléchargez et installez le package disponible à l’adresse [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
+1. In [!DNL Experience Manager] interface, access [!UICONTROL Package Manager].
+1. Upload and install the package available at [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Paramètre guessTotal {#guess-total}
 
@@ -306,6 +306,6 @@ Pour réduire la latence et atteindre un débit élevé grâce à une utilisatio
 * Configurez [!DNL ImageMagick] pour limiter la consommation des ressources.
 * Supprimez les étapes inutiles du workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques].
 * Configurer la purge des workflows et versions.
-* Optimisez les index avec les derniers Service Packs et correctifs. Vérifiez auprès de l’assistance clientèle d’Adobe toutes les optimisations d’index supplémentaires qui peuvent être disponibles.
+* Optimisez les index avec les derniers Service Packs et correctifs. Vérifiez auprès du service clientèle d’Adobe toutes les optimisations d’index supplémentaires qui peuvent être disponibles.
 * Utilisez guessTotal afin d’optimiser les performances des requêtes.
 * Si vous configurez [!DNL Experience Manager] pour détecter les types de fichiers à partir du contenu des fichiers (en activant **[!UICONTROL Day CQ DAM Mime Type Service]** dans la **[!UICONTROL console Web AEM]**), chargez de nombreux fichiers en masse aux heures creuses, car cela consomme beaucoup de ressources.

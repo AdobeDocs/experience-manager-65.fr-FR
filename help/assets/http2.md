@@ -9,11 +9,11 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
-feature: Publication,Configuration
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+feature: Publishing,Configuration
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 61%
+source-wordcount: '731'
+ht-degree: 58%
 
 ---
 
@@ -46,7 +46,7 @@ La démonstration suivante illustre la différence entre le chargement HTTP/1 et
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Puis-je passer à HTTP/2 ?  {#am-i-eligible-to-switch-over-to-http}
+## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
 
 Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
@@ -54,7 +54,7 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 * Utilisez le CDN de lots Adobe (réseau de diffusion de contenu) dans le cadre de votre licence Dynamic Media.
 * Utilisez un domaine dédié (autre que company-h.assetsadobe#.com).
 
-   Si vous disposez déjà d’un domaine dédié, vous pouvez vous inscrire par le biais du support technique.
+   Si vous disposez déjà d’un domaine dédié, vous pouvez vous inscrire par le biais du service clientèle Adobe.
 
    Si vous ne disposez pas d’un domaine dédié, Adobe prévoit de programmer votre transition vers HTTP/2 en 2018.
 
@@ -62,7 +62,7 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
 Vous lancez la requête pour passer à HTTP/2. ce n&#39;est pas fait automatiquement pour vous.
 
-1. Pour passer à HTTP/2, envoyez une demande d’Adobe à l’assistance clientèle. Voir [Accès au portail d’assistance Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/kb/accessing-aem-support-portal.html).
+1. Pour passer à HTTP/2, envoyez une demande d’Adobe auprès du service clientèle. Voir [Accès au portail d’assistance Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Indiquez les informations suivantes dans votre demande de support :
 
@@ -71,8 +71,8 @@ Vous lancez la requête pour passer à HTTP/2. ce n&#39;est pas fait automatique
       1. Vérifiez que vous utilisez le protocole HTTPS sécurisé pour les demandes de médias riches.
       1. Vérifiez que vous utilisez le CDN par Adobe et que vous n’êtes pas géré avec une relation directe.
       1. Vérifiez que vous utilisez un domaine dédié. Si vous utilisez Dynamic Media, vous utilisez un domaine dédié.
-   1. L’assistance clientèle vous ajoute à la liste d’attente des clients HTTP/2 dans l’ordre dans lequel les demandes ont été envoyées.
-   1. Lorsqu’Adobe est prêt à traiter votre demande, l’Assistance clientèle vous contacte pour coordonner la transition et définir une date cible.
+   1. Le service clientèle vous ajoute à la liste d’attente des clients HTTP/2 dans l’ordre dans lequel les demandes ont été envoyées.
+   1. Lorsque Adobe est prêt à traiter votre demande, le service clientèle vous contacte pour coordonner la transition et définir une date cible.
    1. Une fois la transition terminée, vous en êtes informé et pouvez vérifier que la transition vers HTTP2 a réussi.
 
       Le navigateur ne détecte pas cette transition, il est donc nécessaire de télécharger une extension.
@@ -82,19 +82,19 @@ Vous lancez la requête pour passer à HTTP/2. ce n&#39;est pas fait automatique
 
 ## Quand puis-je espérer passer à HTTP/2 ?  {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par l’assistance clientèle.
+Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par le service clientèle.
 
 >[!NOTE]
 >
 >Le délai d’exécution peut être long, car la transition vers HTTP/2 implique l’effacement du cache. Par conséquent, seules quelques transitions client peuvent être traitées simultanément.
 
-## Quels risques présente la transition vers HTTP/2 ?  {#what-are-the-risks-with-moving-to-http}
+## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
 La transition vers HTTP/2 efface le cache au niveau du CDN, car elle implique la définition d’une nouvelle configuration de CDN.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes du site d’origine.
 
-## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ?  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Le navigateur ne détecte pas cette transition, il est donc nécessaire de télécharger une extension.
 

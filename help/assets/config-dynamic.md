@@ -13,10 +13,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '7792'
-ht-degree: 34%
+ht-degree: 33%
 
 ---
 
@@ -152,7 +152,7 @@ En activant Dynamic Media, les fonctionnalités Dynamic Media sont disponibles d
 * La possibilité de gérer une seule image source Principale et de générer des rendus infinis à la volée sans stockage supplémentaire.
 * La possibilité d’utiliser la visualisation interactive (zoom, panoramique et rotation, par exemple).
 
-Si vous souhaitez utiliser Dynamic Media Classic dans Experience Manager, n’activez pas Dynamic Media à moins d’utiliser un [scénario spécifique](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media). Dynamic Media est désactivé, sauf si vous activez Dynamic Media en mode d’exécution.
+Si vous souhaitez utiliser Dynamic Media Classic dans Experience Manager, n’activez pas Dynamic Media, sauf si vous utilisez un [scénario spécifique](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media). Dynamic Media est désactivé, sauf si vous activez Dynamic Media en mode d’exécution.
 
 Pour activer Dynamic Media, vous devez activer le mode d’exécution Dynamic Media à partir de la ligne de commande ou du nom du fichier de démarrage rapide.
 
@@ -263,11 +263,11 @@ Pour modifier la limite de mémoire pour la création d’images PTIFF, accédez
 
 ### Définissez une authentification {#setting-up-authentication}
 
-Configurez l’authentification de réplication sur l’auteur afin de pouvoir répliquer les images vers le service de diffusion d’images Dynamic Media. Vous obtenez d’abord un KeyStore, puis vous l’enregistrez sous l’utilisateur **[!UICONTROL dynamic-media-replication]** et vous pouvez le configurer. L’administrateur de votre société a reçu un e-mail de bienvenue contenant le fichier KeyStore et les informations d’identification nécessaires pendant le processus d’approvisionnement. Si vous n’avez pas reçu ces informations, contactez l’assistance clientèle d’Adobe.
+Configurez l’authentification de réplication sur l’auteur afin de pouvoir répliquer les images vers le service de diffusion d’images Dynamic Media. Vous obtenez d’abord un KeyStore, puis vous l’enregistrez sous l’utilisateur **[!UICONTROL dynamic-media-replication]** et vous pouvez le configurer. L’administrateur de votre société a reçu un e-mail de bienvenue contenant le fichier KeyStore et les informations d’identification nécessaires pendant le processus d’approvisionnement. Si vous n’avez pas reçu ces informations, contactez le service clientèle d’Adobe.
 
 **Pour configurer l’authentification :**
 
-1. Contactez l’assistance clientèle Adobe pour obtenir votre fichier KeyStore et votre mot de passe si vous ne disposez pas déjà du fichier et du mot de passe. Ces informations sont une partie nécessaire de la mise en service. Il associe les clés à votre compte.
+1. Contactez le service clientèle d’Adobe pour obtenir votre fichier KeyStore et votre mot de passe si vous ne disposez pas déjà du fichier et du mot de passe. Ces informations sont une partie nécessaire de la mise en service. Il associe les clés à votre compte.
 
 1. Dans Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
 
@@ -290,9 +290,9 @@ Configurez l’authentification de réplication sur l’auteur afin de pouvoir r
 
    * Dans le champ **[!UICONTROL Nouvel alias]**, saisissez le nom d’un alias que vous souhaitez utiliser ultérieurement dans la configuration de réplication. Par exemple, vous pouvez utiliser `replication` comme alias.
    * Sélectionnez **[!UICONTROL Fichier KeyStore]**. Accédez au fichier KeyStore fourni par Adobe, sélectionnez-le, puis sélectionnez **[!UICONTROL Ouvrir]**.
-   * Dans le champ **[!UICONTROL Mot de passe du fichier KeyStore]**, saisissez le mot de passe du fichier KeyStore. Ce mot de passe est **et non** le mot de passe KeyStore que vous avez créé à l’étape 5. Il s’agit de l’Adobe Mot de passe du fichier KeyStore fourni dans le courriel de bienvenue qui vous a été envoyé lors de la mise en service. Contactez l’assistance clientèle si vous n’avez pas reçu le mot de passe du fichier KeyStore.
-   * Dans le champ **[!UICONTROL Mot de passe de la clé privée]**, saisissez le mot de passe de la clé privée (il peut s’agir du même mot de passe de clé privée que celui fourni à l’étape précédente). Adobe vous fournit ce mot de passe de clé privée dans le courriel de bienvenue qui vous est envoyé pendant le provisionnement. Contactez l’assistance clientèle si vous n’avez pas reçu le mot de passe de clé privée.
-   * Dans le champ **[!UICONTROL Alias de la clé privée]**, saisissez l’alias de la clé privée. Par exemple, `*companyname*-alias`. Adobe vous fournit cet alias de clé privée dans le courriel de bienvenue qui vous est envoyé pendant le provisionnement. Contactez l’assistance clientèle si vous n’avez pas reçu d’alias de clé privée.
+   * Dans le champ **[!UICONTROL Mot de passe du fichier KeyStore]**, saisissez le mot de passe du fichier KeyStore. Ce mot de passe est **et non** le mot de passe KeyStore que vous avez créé à l’étape 5. Il s’agit de l’Adobe Mot de passe du fichier KeyStore fourni dans le courriel de bienvenue qui vous a été envoyé lors de la mise en service. Contactez le service clientèle d’Adobe si vous n’avez pas reçu de mot de passe de fichier KeyStore.
+   * Dans le champ **[!UICONTROL Mot de passe de la clé privée]**, saisissez le mot de passe de la clé privée (il peut s’agir du même mot de passe de clé privée que celui fourni à l’étape précédente). Adobe vous fournit ce mot de passe de clé privée dans le courriel de bienvenue qui vous est envoyé pendant le provisionnement. Contactez le service clientèle d’Adobe si vous n’avez pas reçu de mot de passe de clé privée.
+   * Dans le champ **[!UICONTROL Alias de la clé privée]**, saisissez l’alias de la clé privée. Par exemple, `*companyname*-alias`. Adobe vous fournit cet alias de clé privée dans le courriel de bienvenue qui vous est envoyé pendant le provisionnement. Contactez le service clientèle d’Adobe si vous n’avez pas reçu d’alias de clé privée.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -309,7 +309,7 @@ Configurez l’authentification de réplication sur l’auteur afin de pouvoir r
 
    * **[!UICONTROL Activé ]**: cochez cette option pour activer l’agent de réplication.
    * **[!UICONTROL Région]**  : définissez sur la région appropriée : Amérique du Nord, Europe ou Asie
-   * **[!UICONTROL ID de tenant]**  : cette valeur est le nom de votre société/client qui publie sur le service de réplication. Cette valeur correspond à l’identifiant du tenant fourni par Adobe dans le courriel de bienvenue qui vous a été envoyé lors de la mise en service. Si vous n’avez pas reçu ces informations, contactez l’assistance clientèle d’Adobe.
+   * **[!UICONTROL ID de tenant]**  : cette valeur est le nom de votre société/client qui publie sur le service de réplication. Cette valeur correspond à l’identifiant du tenant fourni par Adobe dans le courriel de bienvenue qui vous a été envoyé lors de la mise en service. Si vous n’avez pas reçu ces informations, contactez le service clientèle d’Adobe.
    * **[!UICONTROL Alias du magasin de clés]**  : cette valeur est identique à la  **nouvelle** valeur d’alias définie lors de la génération de la clé dans  [Configuration de l’authentification](#setting-up-authentication) ; par exemple,  `replication`. (Voir l’étape 7 de [Configuration de l’authentification](#setting-up-authentication).)
    * **[!UICONTROL Mot de passe du magasin de clés]**  : mot de passe du KeyStore créé lorsque vous avez appuyé sur  **[!UICONTROL Créer le KeyStore]**. Adobe ne fournit pas ce mot de passe. Voir l’étape 5 de [Configuration de l’authentification](#setting-up-authentication).
 
@@ -501,7 +501,7 @@ Une autre façon de vérifier que vos ressources ont bien été diffusées est d
 
 Le Cloud Service Dynamic Media prend en charge la publication et la diffusion hybrides d’images et de vidéos, d’analyses vidéo et de codage vidéo, entre autres.
 
-Dans le cadre de la configuration, vous devez saisir un ID d’enregistrement, une URL de service vidéo, une URL de service d’images, une URL de service de réplication et configurer l’authentification. Ces informations vous ont été envoyées par courrier électronique dans le cadre du processus de configuration du compte. Si vous n’avez pas reçu ces informations, contactez votre administrateur Adobe Experience Manager ou l’assistance clientèle Adobe pour obtenir ces informations.
+Dans le cadre de la configuration, vous devez saisir un ID d’enregistrement, une URL de service vidéo, une URL de service d’images, une URL de service de réplication et configurer l’authentification. Ces informations vous ont été envoyées par courrier électronique dans le cadre du processus de configuration du compte. Si vous n’avez pas reçu ces informations, contactez votre administrateur Adobe Experience Manager ou le service clientèle d’Adobe pour obtenir ces informations.
 
 >[!NOTE]
 Avant de configurer des Cloud Services Dynamic Media, assurez-vous que votre instance de publication est configurée. Vous devez également configurer la réplication avant de configurer les Cloud Services Dynamic Media.
@@ -697,7 +697,7 @@ Si vous utilisez Dynamic Media pour (1) l’imagerie en production *ou* (2) l’
    <td><p>Vous configurez l’URI de transport pour qu’il pointe vers votre serveur de publication de Experience Manager au lieu de l’URL du service de réplication cloud Dynamic Media Adobe. La configuration de ce filtre permet à Dynamic Media Classic de diffuser des ressources au lieu de l’instance de publication du Experience Manager.</p> <p>Les "filter-images", "filter-sets" et "filter-video" prêts à l’emploi consistent à :</p>
     <ul>
      <li>Incluez des images PTIFF, des rendus vidéo proxy et des métadonnées pour la réplication. Cependant, puisqu’ils n’existent pas dans le JCR pour ceux qui exécutent l’intégration Experience Manager - Dynamic Media Classic, cela ne fait rien.</li>
-     <li>Suppriment de la réplication l’image d’origine et les rendus d’image statiques, les vidéos d’origine et les rendus de miniature statiques. À la place, Dynamic Media Classic fournit des ressources d’image et vidéo.</li>
+     <li>Suppriment de la réplication l’image d’origine et les rendus d’image statiques, les vidéos d’origine et les rendus de miniature statiques. À la place, Dynamic Media Classic diffuse des ressources image et vidéo.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -769,7 +769,7 @@ Utilisez-vous plusieurs filtres sur un serveur ? Par exemple, un filtre pour la 
 
    Pour que ce filtre s’applique à toutes les images, quel que soit leur format, définissez la valeur sur `image/*` où `*` est une expression régulière appliquée à toutes les images de n’importe quel format.
 
-   Pour que le filtre s’applique uniquement aux images de type JPEG, saisissez la valeur `image/jpeg`.
+   Pour que le filtre s&#39;applique uniquement aux images de type JPEG, saisissez la valeur `image/jpeg`.
 
 1. Définissez les rendus que vous souhaitez inclure ou exclure de la réplication.
 
@@ -787,7 +787,7 @@ Utilisez-vous plusieurs filtres sur un serveur ? Par exemple, un filtre pour la 
 
    ![chlimage_1-513](assets/chlimage_1-4.png)
 
-   En reprenant l’exemple ci-dessus, si vous ne souhaitez répliquer que le fichier PTIFF (Pyramid TIFF), vous devez saisir `+cqdam,*` qui inclut tous les rendus commençant par `cqdam`. Dans l’exemple, ce rendu est `cqdam.pyramid.tiff`.
+   En reprenant l’exemple ci-dessus, si vous souhaitez uniquement répliquer le PTIFF (TIFF Pyramid), vous devez saisir `+cqdam,*` qui inclut tous les rendus commençant par `cqdam`. Dans l’exemple, ce rendu est `cqdam.pyramid.tiff`.
 
    Si vous ne souhaitez répliquer que l’original, saisissez `+original`.
 
@@ -798,7 +798,7 @@ Pour configurer le serveur d’images Dynamic Media, vous devez modifier les lo
 >[!NOTE]
 Dynamic Media est prêt à l’emploi [après avoir été activé](#enabling-dynamic-media). Cependant, vous pouvez éventuellement choisir d’affiner votre installation en configurant Dynamic Media Image Server afin de répondre à certaines spécifications ou exigences.
 
-**Condition préalable**  :  ** avant de configurer Dynamic Media Image Server, assurez-vous que votre machine virtuelle Windows® comprend une installation des bibliothèques Microsoft® Visual C++. Les bibliothèques sont nécessaires pour exécuter le serveur d’images Dynamic Media. Vous pouvez [télécharger le package redistribuable Microsoft® Visual C++ 2010 (x64) ici](https://www.microsoft.com/fr-fr/download/details.aspx?id=26999).
+**Condition préalable**  :  ** avant de configurer Dynamic Media Image Server, assurez-vous que votre machine virtuelle Windows® comprend une installation des bibliothèques Visual C++ Microsoft®. Les bibliothèques sont nécessaires pour exécuter le serveur d’images Dynamic Media. Vous pouvez [télécharger le package redistribuable Microsoft® Visual C++ 2010 (x64) ici](https://www.microsoft.com/fr-fr/download/details.aspx?id=26999).
 
 Pour configurer les paramètres du serveur d’images Dynamic Media :
 
@@ -841,7 +841,7 @@ Pour configurer les paramètres du serveur d’images Dynamic Media :
 
 ### Paramètres du manifeste par défaut {#default-manifest-settings}
 
-Le manifeste par défaut vous permet de configurer les valeurs par défaut qui sont utilisées pour générer les réponses du service de diffusion Dynamic Media. Vous pouvez affiner la qualité (qualité JPEG, résolution, mode de rééchantillonnage), la mise en cache (expiration) et empêcher le rendu des images trop volumineuses (defaultpix, defaultthumbpix, maxpix).
+Le manifeste par défaut vous permet de configurer les valeurs par défaut qui sont utilisées pour générer les réponses du service de diffusion Dynamic Media. Vous pouvez affiner la qualité (qualité du JPEG, résolution, mode de rééchantillonnage), la mise en cache (expiration) et empêcher le rendu des images trop volumineuses (defaultpix, defaultthumbpix, maxpix).
 
 La localisation de la configuration du manifeste par défaut est basée sur la valeur par défaut de **[!UICONTROL Catalog root]** du lot **[!UICONTROL Adobe CQ Scene7 PlatformServer]**. Par défaut, cette valeur se trouve au chemin suivant dans **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**
 
@@ -864,8 +864,8 @@ Tableau des paramètres du manifeste et leurs valeurs par défaut :
 | `bkgcolor` | `FFFFFF` | Couleur d’arrière-plan par défaut. La valeur RVB est utilisée pour remplir toutes les zones d’une image de réponse qui ne contiennent aucune donnée d’image actuelle. Voir également [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) dans l’API du service d’images. |
 | `defaultpix` | `300,300` | Taille d’affichage par défaut. Le serveur oblige les images de réponse à ne pas dépasser ces valeurs, si la requête ne précise pas la taille d’affichage explicitement à l’aide des commandes wid=, hei= ou scl=.<br>Spécifiée sous la forme de deux nombres entiers de valeur supérieure ou égale à zéro, séparés par une virgule. Largeur et hauteur en pixels. Les valeurs ou les deux peuvent être définies sur 0 pour ne pas être contraintes. Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Voir également [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) dans l’API du service d’images.<br>Habituellement, cependant, vous utilisez un paramètre de visionneuse ou d’image prédéfini pour fournir la ressource. Defaultpix ne s’applique qu’à une ressource qui n’utilise pas de paramètre de visionneuse ou d’image prédéfini. |
 | `defaultthumbpix` | `100,100` | Taille de miniature par défaut. Utilisé à la place d’attribute::DefaultPix pour les requêtes de miniature (`req=tmb`).<br>Le serveur oblige les images de réponse à ne pas dépasser cette largeur et cette hauteur. Cette action est définie sur true si une requête de miniature (`req=tmb`) ne spécifie pas explicitement la taille et ne spécifie pas la taille d’affichage explicitement à l’aide de `wid=`, `hei=` ou `scl=`.<br>Spécifiée sous la forme de deux nombres entiers de valeur supérieure ou égale à zéro, séparés par une virgule. Largeur et hauteur en pixels. Les valeurs ou les deux peuvent être définies sur 0 pour ne pas être contraintes.<br>Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Voir aussi  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) DefaultThumbPixin dans l’API du service d’images. |
-| `expiration` | `36000000` | Délai d’expiration par défaut du cache client. Indique un délai d’expiration par défaut dans l’éventualité où un enregistrement de catalogue spécifique ne contiendrait aucune valeur catalog::Expiration valide.<br>Nombre réel, supérieur ou égal à zéro. Nombre de millisecondes jusqu’à l’expiration, depuis la génération des données de réponse. Définissez la valeur sur zéro pour que l’image de réponse expire immédiatement, ce qui permet de désactiver efficacement la mise en cache de client. Par défaut, la valeur est définie sur 10 heures, ce qui signifie que si une nouvelle image est publiée, il faudra 10 heures aux anciennes images pour quitter le cache de l’utilisateur. Contactez l’assistance clientèle si vous avez besoin que la mémoire cache soit effacée plus rapidement.<br>Voir également [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) dans l’API du service d’images. |
-| `jpegquality` | `80` | Attributs d’encodage JPEG par défaut. Indique l’attribut par défaut des images de réponse au format JPEG.<br>Nombre entier et indicateur, séparés par une virgule. La première valeur est comprise dans la plage 1..100 et définit la qualité. La seconde valeur peut être 0 pour le comportement normal, ou 1 pour désactiver le sous-échantillonnage chromatique RVB utilisé par les encodeurs JPEG.<br>Voir également [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) dans l’API du service d’images. |
+| `expiration` | `36000000` | Délai d’expiration par défaut du cache client. Indique un délai d’expiration par défaut dans l’éventualité où un enregistrement de catalogue spécifique ne contiendrait aucune valeur catalog::Expiration valide.<br>Nombre réel, supérieur ou égal à zéro. Nombre de millisecondes jusqu’à l’expiration, depuis la génération des données de réponse. Définissez la valeur sur zéro pour que l’image de réponse expire immédiatement, ce qui permet de désactiver efficacement la mise en cache de client. Par défaut, la valeur est définie sur 10 heures, ce qui signifie que si une nouvelle image est publiée, il faudra 10 heures aux anciennes images pour quitter le cache de l’utilisateur. Contactez le service à la clientèle si vous avez besoin que le cache soit effacé plus tôt.<br>Voir également [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) dans l’API du service d’images. |
+| `jpegquality` | `80` | Attributs d’encodage JPEG par défaut. Indique l’attribut par défaut des images de réponse au format JPEG.<br>Nombre entier et indicateur, séparés par une virgule. La première valeur est comprise dans la plage 1..100 et définit la qualité. La seconde valeur peut être 0 pour le comportement normal, ou 1 pour désactiver le sous-échantillonnage chromatique RGB utilisé par les encodeurs JPEG.<br>Voir également [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) dans l’API du service d’images. |
 | `maxpix` | `2000,2000` | Limite de taille de l’image de réponse. Largeur et hauteur maximales de l’image de réponse fournie au client.<br>Le serveur renvoie une erreur si une requête provoque une image de réponse dont la largeur ou la hauteur est supérieure à l’attribut::MaxPix.<br>Voir également [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) dans l’API du service d’images. |
 | `resmode` | `SHARP2` | Mode de rééchantillonnage par défaut. Indique les attributs de rééchantillonnage et d’interpolation à appliquer par défaut lors du redimensionnement de données d’images.<br>Utilisé lorsque n’ `resMode=` est pas spécifié dans une requête.<br>Les valeurs autorisées sont  `BILIN`,  `BICUB` ou  `SHARP2`.<br>Enum. Définissez cette variable sur 2 pour `bilin`, 3 pour `bicub` ou 4 pour le mode d’interpolation `sharp2`. Utilisez `sharp2` pour de meilleurs résultats.<br>Voir également [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) dans l’API du service d’images. |
 | `resolution` | `72` | Résolution d’objet par défaut. Indique une résolution d’objet par défaut dans l’éventualité où un enregistrement de catalogue spécifique ne contiendrait aucune valeur catalog::Resolution valide.<br>Nombre réel, supérieur à 0. Généralement exprimé en pixels par pouce, mais peut également être exprimé en d’autres unités, telles que les pixels par mètre.<br>Voir également [Résolution](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) dans l’API du service d’images. |
@@ -879,7 +879,7 @@ Avec la correction des couleurs, les ressources intégrées conservent leur espa
 
 La gestion des couleurs d’Adobe utilise des profils ICC (International Color Consortium), un format défini par l’ICC.
 
-Vous pouvez configurer la gestion des couleurs Dynamic Media et les paramètres d’image prédéfinis à l’aide de la sortie CMJN, RVB ou grise. Reportez-vous à la section [Configuration des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md).
+Vous pouvez configurer la gestion des couleurs Dynamic Media et les paramètres d’image prédéfinis à l’aide de la sortie CMJN, RGB ou gris. Reportez-vous à la section [Configuration des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md).
 
 Les cas d’utilisation avancés peuvent utiliser un modificateur de configuration `icc=` manuel pour sélectionner explicitement un profil de couleur de sortie :
 
@@ -905,7 +905,7 @@ Pour utiliser les fonctionnalités de gestion des couleurs de Dynamic Media, ins
 
 ### Configuration des profils de couleurs par défaut {#configuring-the-default-color-profiles}
 
-Après avoir installé le Feature Pack, configurez les profils de couleurs par défaut appropriés pour activer la correction des couleurs lors de la demande de données d’image RVB ou CMJN.
+Après avoir installé le Feature Pack, configurez les profils de couleurs par défaut appropriés pour activer la correction des couleurs lors de la demande de données d’image RGB ou CMJN.
 
 **Pour configurer les profils de couleurs par défaut :**
 
@@ -953,7 +953,7 @@ Après avoir installé le Feature Pack, configurez les profils de couleurs par d
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
    <td>Chaîne</td>
    <td>&lt;empty&gt;</td>
-   <td>Nom du profil colorimétrique RVB par défaut utilisé pour les images RVB qui n’ont pas de profil colorimétrique intégré</td>
+   <td>Nom du profil colorimétrique de RGB par défaut utilisé pour les images de RGB qui n’ont pas de profil colorimétrique intégré</td>
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
@@ -1010,12 +1010,12 @@ Les profils de couleurs installés sont les suivants :
   <tr>
    <td>AppleRGB</td>
    <td>RVB</td>
-   <td>Apple RVB</td>
+   <td>Apple RGB</td>
   </tr>
   <tr>
    <td>CIERGB</td>
    <td>RVB</td>
-   <td>CIE RVB</td>
+   <td>RGB CIE</td>
   </tr>
   <tr>
    <td>CoatedFogra27</td>
@@ -1035,7 +1035,7 @@ Les profils de couleurs installés sont les suivants :
   <tr>
    <td>ColorMatchRGB</td>
    <td>RVB</td>
-   <td>ColorMatch RVB</td>
+   <td>RGB ColorMatch</td>
   </tr>
   <tr>
    <td>EuropeISOCoated</td>
@@ -1095,7 +1095,7 @@ Les profils de couleurs installés sont les suivants :
   <tr>
    <td>ProPhoto</td>
    <td>RVB</td>
-   <td>ProPhoto RVB</td>
+   <td>ProPhoto RGB</td>
   </tr>
   <tr>
    <td>PS4Default</td>
@@ -1160,7 +1160,7 @@ Les profils de couleurs installés sont les suivants :
   <tr>
    <td>WideGamutRGB</td>
    <td>RVB</td>
-   <td>Gamme large RVB</td>
+   <td>RGB Gamme large</td>
   </tr>
  </tbody>
 </table>
@@ -1174,7 +1174,7 @@ Cela aura les effets suivants :
 * Active la correction des couleurs pour les images RVB et CMJN.
 * Les images RVB qui n’ont pas de profil colorimétrique sont considérées comme se trouvant dans l’espace colorimétrique *sRVB*.
 * Les images CMJN qui n’ont pas de profil colorimétrique sont considérées comme se trouvant dans l’espace colorimétrique *WebCoated*.
-* Les rendus dynamiques qui renvoient une sortie RVB la renvoient dans l’espace colorimétrique *sRVB*.
+* Les rendus dynamiques qui renvoient une sortie de RGB la renvoient dans l’espace colorimétrique *sRVB*.
 * Les rendus dynamiques qui renvoient une sortie CMJN, la renvoient dans l’espace colorimétrique *WebCoated*.
 
 ## Diffusion des ressources {#delivering-assets}

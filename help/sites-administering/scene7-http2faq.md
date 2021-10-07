@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 84%
+source-wordcount: '774'
+ht-degree: 80%
 
 ---
 
@@ -27,7 +27,7 @@ Le site web ci-dessous décrit simplement HTTP/2 et les avantages qu’il procur
 
 ## Quels sont les principaux avantages à la transition vers HTTP/2 pour la diffusion de contenu ?  {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-L’amélioration des performances varie considérablement en fonction de facteurs tels que le code de votre site web, la manière dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du client.
+Performance improvement varies widely based on factors such as your website&#39;s code, how you use Dynamic Media, the customer&#39;s device, screen, and location.
 
 Les tests d’Adobe ont donné les résultats suivants :
 
@@ -38,7 +38,7 @@ La démonstration suivante illustre la différence entre le chargement HTTP/1 et
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## Puis-je passer à HTTP/2 ?  {#am-i-eligible-to-switch-over-to-http}
+## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
 
 Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
@@ -64,24 +64,24 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
       Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), puis connectez-vous à un ou plusieurs comptes de votre entreprise. Accédez ensuite à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Dynamic Media générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
 
-1. L’assistance technique vous ajoute à la liste d’attente des clients HTTP/2 par ordre chronologique d’envoi des demandes.
+1. Le service clientèle d’Adobe vous ajoute à la liste d’attente des clients HTTP/2 en fonction de l’ordre dans lequel les demandes ont été envoyées.
 1. Lorsque l’Adobe est prêt à traiter votre demande, l’ Assistance vous contacte pour coordonner la transition et définir une date cible.
 1. Vous recevez une notification à l’issue du processus et pouvez vérifier que la transition vers HTTP/2 a abouti.
 
 ## Quand puis-je espérer passer à HTTP/2 ?  {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par le support technique.
+Requests are processed in the order that they are received by Adobe Customer Support.
 
 >[!NOTE]
 >
 >Le délai d’exécution est long car la transition vers le HTTP/2 implique l’effacement du cache. Par conséquent, seules quelques transitions client peuvent être traitées simultanément.
 
-## Quels risques présente la transition vers HTTP/2 ?  {#what-are-the-risks-with-moving-to-http}
+## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
 La transition vers HTTP/2 efface le cache au niveau du CDN, car elle implique la définition d’une nouvelle configuration de CDN.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. En raison de cette action, Adobe prévoit de gérer quelques transitions à la fois afin de maintenir des performances acceptables lors de l’extraction des requêtes à partir de l’origine de l’Adobe.
 
-## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ?  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## Comment puis-je vérifier si une URL ou un site web est activé avec HTTP/2 ? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Téléchargez une extension que vous pouvez utiliser avec votre navigateur Web. Pour Firefox et Chrome, il existe une extension appelée **[!UICONTROL HTTP/2 and SPDY Indicator]**. Les navigateurs ne prennent en charge HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si le HTTP/2 est pris en charge, l’extension comprend un symbole Flash de couleur bleue et un en-tête « X-Firefox-Spdy » : « h2 ».

@@ -4,11 +4,11 @@ description: Découvrez les tâches de gestion des ressources telles que le char
 contentOwner: AG
 mini-toc-levels: 1
 role: User
-feature: Gestion des ressources, Recherche
+feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 9dc61a66a79004013d8cff89c4607f7aafad08df
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '9848'
+source-wordcount: '9846'
 ht-degree: 60%
 
 ---
@@ -96,9 +96,8 @@ Pour configurer la tâche de nettoyage pour les tâches de chargement de blocs n
 >Compte tenu du délai d’expiration des informations d’identification, de la latence, de la bande passante et des chargements simultanés prévus, la valeur la plus élevée qui vous permet de vous assurer que les éléments suivants sont sélectionnés :
 >
 >* Pour s’assurer que le transfert des blocs est activé pour les fichiers dont la taille risque de provoquer l’expiration des informations d’identification lorsque le transfert est en cours.
-   >
-   >
-* Pour vous assurer que chaque bloc se termine avant l’expiration des informations d’identification.
+>
+>* Pour vous assurer que chaque bloc se termine avant l’expiration des informations d’identification.
 
 
 Si vous téléchargez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous téléchargez la ressource, une boîte de dialogue d’avertissement s’affiche.
@@ -160,7 +159,7 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
 >[!NOTE]
 >
->Pour télécharger des ressources via FTP en mode Dynamic Media - Scene7, installez le Feature Pack 18912 sur les instances d’auteur [!DNL Experience Manager]. Contactez [l’Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=General#support) pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Pour plus d’informations, voir [Installation du Feature Pack 18912 pour la migration de ressources en masse](/help/assets/bulk-ingest-migrate.md).
+>Pour télécharger des ressources via FTP en mode Dynamic Media - Scene7, installez le Feature Pack 18912 sur les instances d’auteur [!DNL Experience Manager]. Contactez le [service clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=General#support) pour accéder au FP-18912 et terminer la configuration de votre compte FTP. Pour plus d’informations, voir [Installation du Feature Pack 18912 pour la migration de ressources en masse](/help/assets/bulk-ingest-migrate.md).
 >
 >Si vous utilisez le protocole FTP pour charger des ressources, les paramètres de transfert spécifiés dans [!DNL Experience Manager] sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
@@ -170,7 +169,7 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et votre connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
+   Vos informations d’identification et votre connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
 
 1. Cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
 1. Cliquez sur l’onglet **[!UICONTROL Via FTP]** dans le coin supérieur gauche de la page Télécharger.
@@ -253,7 +252,7 @@ Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator 
 
 #### Définition des options de transfert Photoshop {#setting-photoshop-upload-options}
 
-Les fichiers Photoshop Document (PSD) sont le plus souvent utilisés pour créer des modèles d’image. Lorsque vous chargez un fichier PSD, vous pouvez créer automatiquement un modèle d’image à partir du fichier (sélectionnez l’option [!UICONTROL Créer un modèle] dans l’écran de téléchargement).
+Les fichiers Photoshop Document (PSD) sont le plus souvent utilisés pour créer des modèles d’image. Lorsque vous téléchargez un fichier de PSD, vous pouvez créer automatiquement un modèle d’image à partir du fichier (sélectionnez l’option [!UICONTROL Créer un modèle] dans l’écran de téléchargement).
 
 Dynamic Media crée plusieurs images à partir d’un fichier PSD avec des calques si vous utilisez ce fichier pour créer un modèle ; il crée une image par calque.
 
@@ -270,12 +269,12 @@ Utilisez les [!UICONTROL options de recadrage] et les [!UICONTROL options de pro
 | Extraire du texte |  | Extrait le texte pour permettre aux utilisateurs de rechercher une chaîne de caractères dans une visionneuse. |
 | Étendre les calques à la taille du fond |  | Étend la taille des calques d’image pixellisés à celle du calque en arrière-plan. |
 | Affectation de nom de calque |  | Les calques du fichier PSD sont téléchargés comme des images distinctes. |
-|  | Nom de couche | Les images adoptent le nom de leur calque dans le fichier PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les noms de calque dans le fichier PSD sont des noms de calque Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leurs numéros de calque dans le fichier PSD. Ils ne portent pas de nom en fonction de leurs noms de calque par défaut. |
+|  | Nom de couche | Les images adoptent le nom de leur calque dans le fichier PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les noms de calque dans le fichier de PSD sont des noms de calque Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier de PSD. Ils ne portent pas de nom en fonction de leurs noms de calque par défaut. |
 |  | Photoshop et numéro de couche | Nomme les images d’après leur numéro de calque dans le fichier PSD, leur nom de calque d’origine étant ignoré. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque. Par exemple, le deuxième calque d’un fichier appelé Pub printemps.psd est nommé Pub printemps_2, même s’il portait un nom personnalisé dans Photoshop. |
 |  | Photoshop et nom de couche | Nomme les images en reprenant le nom du fichier PSD suivi du nom ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque nommé Étiquette de prix dans un fichier PSD appelé Pub Printemps est nommé Pub Printemps_Étiquette de prix. Un calque portant le nom par défaut Calque 2 est nommé Pub Printemps_2. |
 | Ancre |  | Indiquez le mode d’ancrage des images dans les modèles qui sont générés à partir de la composition superposée produite à partir du fichier PSD. Par défaut, l’ancrage est au centre. Un ancrage au centre permet aux images de remplacement de remplir de manière optimale le même espace, quelles que soient les proportions de l’image de remplacement. Les images qui remplacent cette image et qui présentent un aspect différent occupent le même espace lorsque le modèle est référencé et le paramètre de substitution utilisé. Changez de paramètre si votre application exige que les images de remplacement occupent l’espace alloué dans le modèle. |
 
-#### Définition des options de téléchargement PDF {#setting-pdf-upload-options}
+#### Définition des options de transfert de PDF {#setting-pdf-upload-options}
 
 Lorsque vous transférez un fichier PDF, vous pouvez le formater de différentes manières. Vous pouvez recadrer les pages, extraire des mots de recherche, spécifier une résolution en pixels par pouce et choisir un espace colorimétrique. Les fichiers PDF contiennent souvent une marge de rognage, des traits de coupe, des repères de montage et d’autres repères d’impression. Vous pouvez éliminer ces marques sur les côtés des pages lorsque vous transférez un fichier PDF.
 
@@ -307,8 +306,8 @@ Pour transcoder un fichier vidéo en choisissant parmi divers paramètres vidéo
 | Vidéo adaptative |  | Paramètre prédéfini de codage unique qui fonctionne avec n’importe quel rapport d’aspect pour créer des vidéos à diffuser sur mobile, tablette et ordinateur de bureau. Les vidéos source transférées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver les proportions de la vidéo. <br>La bonne pratique consiste à utiliser le codage de vidéo adaptative. |
 | Paramètres prédéfinis de codage uniques | Tri des paramètres prédéfinis de codage | Sélectionnez **[!UICONTROL Nom]** ou **[!UICONTROL Taille]** si vous souhaitez trier les paramètres prédéfinis de codage répertoriés sous Bureau, Mobile et Tablette par nom ou par taille de résolution. |
 |  | Poste de travail | Créez un fichier MP4 pour diffuser une expérience vidéo progressive ou en flux continu sur les ordinateurs de bureau. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
-|  | Mobile | Créez un fichier MP4 à diffuser sur des appareils mobiles iPhone ou Android™. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
-|  | Tablette | Créez un fichier MP4 à diffuser sur des tablettes iPad ou Android™. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
+|  | Mobile | Créez un fichier MP4 à diffuser sur les appareils mobiles iPhone ou Android™. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
+|  | Tablette | Créez un fichier MP4 à diffuser sur les tablettes iPad ou Android™. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
 
 #### Définition de paramètres prédéfinis d’ensemble par lot au chargement {#setting-batch-set-presets-at-upload}
 
@@ -632,7 +631,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
-## Recherche de ressources   {#assetsearch}
+## Recherche de ressources {#assetsearch}
 
 La recherche de ressources est essentielle à l’utilisation d’un système de gestion des ressources numériques. Cette fonctionnalité est importante pour les créatifs, pour une gestion robuste des ressources par les utilisateurs professionnels et les spécialistes du marketing, ou pour l’administration par les administrateurs DAM.
 
@@ -726,7 +725,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Cliquez sur l’option **[!UICONTROL Annoter]** dans l’une des options suivantes :
 
    * [Actions rapides](/help/assets/manage-assets.md#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource   ou avoir accédé à la page de la ressource.
+   * Dans la barre d’outils, après avoir sélectionné la ressource ou avoir accédé à la page de la ressource.
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
@@ -771,7 +770,7 @@ Vous ne pouvez afficher qu’une seule annotation à la fois.
 >
 >Si vous sélectionnez plusieurs annotations, la dernière en date est visible dans l’interface utilisateur.
 >
->La sélection multiple est prise en charge uniquement pour l’impression de la ressource annotée au format PDF.
+>La sélection multiple n’est prise en charge que pour l’impression de la ressource annotée en tant que PDF.
 
 **Pour afficher les annotations enregistrées d’une ressource :**
 
@@ -794,7 +793,7 @@ Vous pouvez également choisir de n’imprimer que les annotations ou l’état 
 
 >[!NOTE]
 >
->Vous pouvez sélectionner plusieurs annotations lors de l’impression de la ressource annotée au format PDF.
+>Vous pouvez sélectionner plusieurs annotations lors de l’impression de la ressource annotée en tant que PDF.
 
 Pour imprimer les annotations et l’état de révision, cliquez sur **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’option **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un état de révision.
 
@@ -820,13 +819,13 @@ Pour imprimer les annotations et l’état de révision, cliquez sur **[!UICONTR
 
    ![Annotation et état de révision sur le PDF généré](assets/annotation-status-pdf.png)
 
-1. Télécharger ![Option de téléchargement pour PDF](assets/do-not-localize/download.png) ou imprimer les ![options d’impression sur PDF](assets/do-not-localize/print.png) à l’aide des options en haut à droite.
+1. Téléchargez ![Option de téléchargement pour PDF](assets/do-not-localize/download.png) ou imprimez ![les options d’impression sur PDF](assets/do-not-localize/print.png) le PDF à l’aide des options en haut à droite.
 
    >[!NOTE]
    >
    >Si la ressource contient des sous-ressources, vous pouvez les imprimer avec leurs annotations spécifiques.
 
-   Pour modifier l’aspect du fichier PDF rendu, par exemple la couleur, la taille et le style de la police, ouvrez la **[!UICONTROL configuration PDF d’annotation]** dans Configuration Manager, puis modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/manage-assets.md#annotating).
+   Pour modifier l’aspect du fichier de PDF rendu, par exemple la couleur, la taille et le style de la police, ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager, puis modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/manage-assets.md#annotating).
 
    ![Configuration pour imprimer une annotation de ressource sur un document PDF](assets/annotation-print-pdf-config.png)
 
@@ -944,4 +943,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.htm).
+Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).

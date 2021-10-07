@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 43%
@@ -26,7 +26,7 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
 
 >[!NOTE]
 >
->Cette fonctionnalité est obsolète dans [!DNL Assets]. Recherchez des remplacements dans [Bonnes pratiques d’intégration AEM et Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Si vous avez des questions, [contactez l’Assistance clientèle Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
+>Cette fonctionnalité est obsolète dans [!DNL Assets]. Recherchez des remplacements dans [Bonnes pratiques d’intégration AEM et Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Si vous avez des questions, [contactez le service clientèle Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
@@ -45,7 +45,7 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
    >Vous devez disposer de droits d’administrateur pour créer un ID d’application.
 
 1. Dans le volet de gauche, accédez à **[!UICONTROL Outils de développement]** > **[!UICONTROL Applications]** pour afficher la liste des applications.
-1. Cliquez sur **[!UICONTROL Ajouter]** ![aem_assets_addcircle_icon](assets/aem_assets_addcircle_icon.png) pour créer une application.
+1. Click **[!UICONTROL Add]** ![aem_assets_addcircle_icon](assets/aem_assets_addcircle_icon.png) to create an application.
 1. Dans la liste **[!UICONTROL Informations d’identification du client]**, sélectionnez **[!UICONTROL Compte de service (déclaration JWT)]**, qui est un service de communication serveur à serveur pour l’authentification de serveur.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
@@ -67,7 +67,7 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
 
 1. Cliquez sur le logo AEM sur l’interface utilisateur de votre instance AEM Assets locale et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud hérités]**.
 
-1. Recherchez le service **[!UICONTROL Adobe Experience Cloud]** . S’il n’existe aucune configuration, cliquez sur **[!UICONTROL Configurer maintenant]**. S’il existe des configurations, cliquez sur **[!UICONTROL Afficher les configurations]** et cliquez sur `+` pour ajouter une nouvelle configuration.
+1. Recherchez le service **[!UICONTROL Adobe Experience Cloud]** . S’il n’existe aucune configuration, cliquez sur **[!UICONTROL Configurer maintenant]**. If configurations exist, click **[!UICONTROL Show Configurations]** and click `+` to add a new configuration.
 
    >[!NOTE]
    >
@@ -79,9 +79,9 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
 
 1. Dans le champ **[!UICONTROL URL du client]**, spécifiez l’URL d’AEM Assets. Auparavant, si l’URL était définie sur `https://<tenant_id>.marketing.adobe.com`, remplacez-la par `https://<tenant_id>.experiencecloud.adobe.com`.
 
-   1. Accédez à **Outils > Cloud Services > Ancienne version de Cloud Services**. Sous Adobe Experience Cloud, cliquez sur **Afficher les configurations**.
+   1. Accédez à **Outils > Cloud Services > Ancienne version de Cloud Services**. Under Adobe Experience Cloud, click **Show Configurations**.
    1. Sélectionnez la configuration existante à modifier. Modifiez la configuration et remplacez `marketing.adobe.com` par `experiencecloud.adobe.com`.
-   1. enregistrez la configuration. Testez les agents de réplication de synchronisation MAC.
+   1. enregistrez la configuration. Test the MAC-sync replication agents.
 
 1. Dans le champ **[!UICONTROL ID client]** , collez l’ID d’application que vous avez copié à la fin de la procédure [création d’une application](#create-an-application).
 
@@ -93,7 +93,7 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
 
 ## Activation de la synchronisation {#enable-synchronization}
 
-1. Affichez la clé publique à l’aide de l’une des méthodes suivantes mentionnées à la dernière étape de la procédure [ajoutez une nouvelle configuration à Experience Cloud](#add-a-new-configuration). Cliquez sur **[!UICONTROL Afficher la clé publique]**.
+1. Display the public key using one of the following methods mentioned in the last step of the procedure [add a new configuration to Experience Cloud](#add-a-new-configuration). Cliquez sur **[!UICONTROL Afficher la clé publique]**.
 
 1. Copiez la clé publique et collez-la dans le champ **[!UICONTROL Clé publique]** de l’interface de configuration de l’application que vous avez créée dans [créer une application](#create-an-application).
 
@@ -132,14 +132,14 @@ En arrière-plan, le serveur authentifie votre profil avec la passerelle, puis s
 1. Connectez-vous à AEM Assets.
 1. Dans la console Assets, créez un dossier et téléchargez des ressources vers ce dossier. Par exemple, créez un dossier **mc-demo** et téléchargez une ressource vers ce dossier.
 1. Sélectionnez le dossier et cliquez sur **Partager** ![assets_share](assets/do-not-localize/assets_share.png).
-1. Dans le menu, sélectionnez **[!UICONTROL Adobe Experience Cloud]** et cliquez sur **[!UICONTROL Partager]**. Un message indique que le dossier est partagé avec l’Experience Cloud.
+1. From the menu, select **[!UICONTROL Adobe Experience Cloud]** and the click **[!UICONTROL Share]**. Un message indique que le dossier est partagé avec l’Experience Cloud.
 
    >[!NOTE]
    >
    >Le partage d’un dossier de ressources de type `sling:OrderedFolder` n’est pas pris en charge dans le cadre du partage dans Adobe Experience Cloud. Si vous souhaitez partager un dossier, lors de sa création dans AEM Assets, ne sélectionnez pas l’option **[!UICONTROL Ordre]**.
 
 1. Actualisez l’interface utilisateur d’AEM Assets. Le dossier que vous avez créé dans la console Ressources de votre instance AEM Assets locale est copié dans l’interface utilisateur de l’Experience Cloud. La ressource que vous chargez dans le dossier AEM Assets apparaît dans la copie du dossier dans Experience Cloud après son traitement par le serveur AEM.
-1. Vous pouvez également charger une ressource dans la copie répliquée du dossier dans Experience Cloud. Une fois qu’elle a été traitée, la ressource s’affiche dans le dossier partagé dans AEM Assets.
+1. You can also upload an asset in the replicated copy of the folder in Experience Cloud. Une fois qu’elle a été traitée, la ressource s’affiche dans le dossier partagé dans AEM Assets.
 
 <!-- Removing as per PM guidance via https://jira.corp.adobe.com/browse/CQDOC-16834?focusedCommentId=22881523&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-22881523.
 
@@ -170,5 +170,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 
 >[!MORELIKETHIS]
 >
->* [Bonnes pratiques d’intégration des ressources et des Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
+>* [Assets and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md)
 
