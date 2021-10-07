@@ -1,8 +1,8 @@
 ---
 title: Administration des utilisateurs, des groupes et des droits d’accès
-seo-title: Administration des utilisateurs, des groupes et des droits d’accès
+seo-title: User, Group and Access Rights Administration
 description: Découvrez l’administration des utilisateurs, des groupes et des droits d’accès dans AEM.
-seo-description: Découvrez l’administration des utilisateurs, des groupes et des droits d’accès dans AEM.
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
-feature: Sécurité
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Security
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 79%
 
 ---
@@ -62,7 +62,7 @@ CRX permet de configurer les droits d’accès pour des comptes utilisateur et d
 
 >[!NOTE]
 >
->CRX met en œuvre le [contrôle d’accès défini par la spécification JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX met en œuvre le [contrôle d’accès défini par la spécification JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >L’installation standard du référentiel CRX est configurée de manière à utiliser des listes de contrôle d’accès dépendant des ressources. Il s’agit d’une mise en œuvre possible du contrôle d’accès JSR-283 et l’une des mises en œuvre présentes avec Jackrabbit.
 
@@ -90,7 +90,7 @@ CRX utilise deux concepts clés lors de l’évaluation des droits d’accès :
       Tous les droits affectés à l’un des groupes auxquels l’utilisateur appartient.
    Le résultat est ensuite utilisé pour autoriser ou refuser l’accès à la ressource demandée.
 
-#### Compilation de la liste de droit d’accès pour un sujet  {#compiling-the-list-of-access-rights-for-a-subject}
+#### Compilation de la liste de droit d’accès pour un sujet {#compiling-the-list-of-access-rights-for-a-subject}
 
 Dans CRX, le sujet dépend des éléments suivants :
 
@@ -113,8 +113,7 @@ La liste des droits d’accès applicables au sujet est créée à partir :
 >
 
 
-
-### Résolution d’une demande et droits d’accès  {#resolving-request-and-access-rights}
+### Résolution d’une demande et droits d’accès {#resolving-request-and-access-rights}
 
 Lorsque CRX traite la demande, il compare la demande d’accès du sujet à la liste de contrôle d’accès sur le nœud du référentiel :
 
@@ -285,8 +284,7 @@ Si un compte emprunte l’identité d’un autre compte, il est très difficile 
 >
 
 
-
-### Mise à jour d’un compte utilisateur  {#updating-a-user-account}
+### Mise à jour d’un compte utilisateur {#updating-a-user-account}
 
 1. Avec la boîte de dialogue **Administration des utilisateurs**, ouvrez la liste de tous les comptes.
 1. Parcourez l’arborescence.
@@ -294,7 +292,7 @@ Si un compte emprunte l’identité d’un autre compte, il est très difficile 
 1. Apportez une modification, puis cliquez sur Enregistrer (symbole de coche verte) pour cette entrée.
 1. Cliquez sur **Fermer** pour terminer ou sur **Liste** pour revenir à la liste de tous les comptes utilisateur.
 
-### Suppression d’un compte utilisateur  {#removing-a-user-account}
+### Suppression d’un compte utilisateur {#removing-a-user-account}
 
 1. Avec la boîte de dialogue **Administration des utilisateurs**, ouvrez la liste de tous les comptes.
 1. Parcourez l’arborescence.
@@ -320,13 +318,13 @@ Les propriétés existantes peuvent être supprimées en cliquant sur le symbole
 
 À l’exception du mot de passe, les propriétés ne peuvent pas être modifiées. Elles doivent être supprimées et recréées.
 
-#### Modification du mot de passe  {#changing-the-password}
+#### Modification du mot de passe {#changing-the-password}
 
 Le **mot de passe** est une propriété spéciale, qui peut être modifiée en cliquant sur le lien **Modifier le mot de passe**.
 
 Vous pouvez également modifier le mot de passe de votre propre compte utilisateur dans le menu **Sécurité** dans CRX Explorer.
 
-### Définition d’un emprunteur d’identité  {#defining-an-impersonator}
+### Définition d’un emprunteur d’identité {#defining-an-impersonator}
 
 Vous pouvez définir des emprunteurs d’identité pour de nouveaux comptes ou des comptes existants :
 
@@ -396,7 +394,7 @@ La colonne **Hérité** indique l’appartenance héritée en raison de l’appa
    1. afficher l’**appartenance à un groupe** ;
    1. gérer **des membres**.
 
-### Mise à jour d’un compte de groupe  {#updating-a-group-account}
+### Mise à jour d’un compte de groupe {#updating-a-group-account}
 
 1. Avec la boîte de dialogue **Administration des groupes**, ouvrez la liste de tous les comptes.
 1. Parcourez l’arborescence.
@@ -404,7 +402,7 @@ La colonne **Hérité** indique l’appartenance héritée en raison de l’appa
 1. Apportez une modification, puis cliquez sur Enregistrer (symbole de coche verte) pour cette entrée.
 1. Cliquez sur **Fermer** pour terminer ou sur **Liste** pour revenir à la liste de tous les comptes de groupe.
 
-### Suppression d’un compte de groupe  {#removing-a-group-account}
+### Suppression d’un compte de groupe {#removing-a-group-account}
 
 1. Avec la boîte de dialogue **Administration des groupes**, ouvrez la liste de tous les comptes.
 1. Parcourez l’arborescence.
@@ -442,7 +440,7 @@ Vous pouvez ajouter des membres au groupe actuel :
 
 Ou supprimez un membre existant en cliquant sur le symbole de corbeille.
 
-## Gestion des droits d’accès  {#access-right-management}
+## Gestion des droits d’accès {#access-right-management}
 
 Avec l’onglet **Contrôle d’accès** du CRXDE Lite, vous pouvez définir les stratégies de contrôle d’accès et attribuer les privilèges associés.
 
@@ -636,7 +634,7 @@ Vous pouvez également enregistrer de nouvelles autorisations :
 
 CRX valide votre sélection pour une entité de sécurité donnée, il existe (au plus) 1 entrée de refus et 1 entrée d’autorisation sur un nœud donné. La mise en œuvre efface toujours les entrées redondantes et s’assure que les mêmes autorisations ne figurent pas à la fois dans les entrées d’autorisation et de refus.
 
-### Organisation des stratégies de contrôle d’accès locales  {#ordering-local-access-control-policies}
+### Organisation des stratégies de contrôle d’accès locales {#ordering-local-access-control-policies}
 
 L’ordre dans la liste indique l’ordre dans lequel les stratégies sont appliquées.
 

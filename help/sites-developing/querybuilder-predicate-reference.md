@@ -1,8 +1,8 @@
 ---
 title: Référence des prédicats de Query Builder
-seo-title: Référence des prédicats de Query Builder
+seo-title: Query Builder Predicate Reference
 description: Référence complète des prédicats pour l’API Query Builder.
-seo-description: Référence complète des prédicats pour l’API Query Builder.
+seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 62%
+source-wordcount: '2310'
+ht-degree: 61%
 
 ---
 
@@ -61,11 +61,11 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque vale
 #### Propriétés {#properties}
 
 * ****
-boolproperty Chemin relatif à la propriété, par exemple 
+boolproperty Chemin d’accès relatif à la propriété, par exemple 
 `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
 
 * ****
-valeur pour laquelle vérifier la propriété, &quot; 
+valeur à vérifier pour la propriété, &quot; 
 `true`&quot; ou &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
@@ -220,7 +220,7 @@ Il s’agit conceptuellement de `fulltext AND ( (path AND type) OR (path AND typ
 
 ### hasPermission {#haspermission}
 
-Limite les résultats aux éléments dont la session en cours possède les [privilèges JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) spécifiés.
+Limite les résultats aux éléments dont la session en cours possède les [privilèges JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) spécifiés.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche. Il ne prend pas en charge l’extraction de facettes.
 

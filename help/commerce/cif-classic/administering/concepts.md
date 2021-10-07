@@ -1,19 +1,19 @@
 ---
-title: 'Concepts '
+title: Concepts
 description: Concepts généraux d’eCommerce avec AEM.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '4525'
+source-wordcount: '4524'
 ht-degree: 83%
 
 ---
 
-# Concepts {#concepts}
+# Concepts{#concepts}
 
 La structure d’intégration fournit les mécanismes et les composants des opérations suivantes :
 
@@ -35,21 +35,28 @@ Cela signifie que :
 >
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 >* [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
-* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+>* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 
+>
 
 
 >[!CAUTION]
-La [structure d’intégration du commerce électronique](https://www.adobe.com/solutions/web-experience-management/commerce.html) est un module complémentaire d’AEM.
-Le représentant commercial peut vous donner plus de détails, en fonction du moteur approprié.
+>
+>La [structure d’intégration du commerce électronique](https://www.adobe.com/solutions/web-experience-management/commerce.html) est un module complémentaire d’AEM.
+>
+>Le représentant commercial peut vous donner plus de détails, en fonction du moteur approprié.
 
 >[!CAUTION]
-La structure fournit les exigences de base de votre propre projet.
-Un certain travail de développement reste nécessaire pour adapter la structure à vos spécifications.
+>
+>La structure fournit les exigences de base de votre propre projet.
+>
+>Un certain travail de développement reste nécessaire pour adapter la structure à vos spécifications.
 
 >[!CAUTION]
-L’installation standard d’AEM inclut une mise en œuvre générique d’eCommerce (JCR) AEM.
-Pour le moment, elle est utilisée à des fins de démonstration ou comme base d’une mise en œuvre personnalisée selon vos besoins.
+>
+>L’installation standard d’AEM inclut une mise en œuvre générique d’eCommerce (JCR) AEM.
+>
+>Pour le moment, elle est utilisée à des fins de démonstration ou comme base d’une mise en œuvre personnalisée selon vos besoins.
 
 Pour optimiser le fonctionnement, AEM et le moteur eCommerce se concentrent chacun sur leur propre champ d’expertise. Les informations sont transférées entre les deux en temps réel. Par exemple :
 
@@ -84,7 +91,8 @@ Pour optimiser le fonctionnement, AEM et le moteur eCommerce se concentrent chac
 
 
 >[!NOTE]
-Les détails exacts dépendent du moteur eCommerce et de la mise en œuvre du projet.
+>
+>Les détails exacts dépendent du moteur eCommerce et de la mise en œuvre du projet.
 
 Un certain nombre de composants d’AEM prêts à l’emploi sont fournis pour utiliser la couche d’intégration. Pour le moment, par exemple :
 
@@ -113,12 +121,16 @@ AEM eCommerce est mis en œuvre avec un moteur eCommerce :
 
 
 >[!NOTE]
-L’installation standard d’AEM inclut une mise en œuvre générique d’eCommerce (JCR) AEM.
-Pour le moment, elle est utilisée à des fins de démonstration ou comme base d’une mise en œuvre personnalisée selon vos besoins.
-AEM eCommerce mis en œuvre dans AEM à l’aide du développement générique reposant sur JCR est :
-* Un exemple d’instance AEM eCommerce native autonome illustrant l’utilisation de l’API, qui peut être utilisée pour contrôler des données des produits, les paniers et le passage en caisse conjointement à l’affichage des données existantes et aux campagnes marketing. Dans ce cas, la base de données de produits est stockée dans le référentiel natif à AEM (mise en œuvre [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) d’Adobe).
-
-L’installation standard d’AEM contient les éléments de base de la [mise en œuvre générique eCommerce](/help/commerce/cif-classic/administering/generic.md).
+>
+>L’installation standard d’AEM inclut une mise en œuvre générique d’eCommerce (JCR) AEM.
+>
+>Pour le moment, elle est utilisée à des fins de démonstration ou comme base d’une mise en œuvre personnalisée selon vos besoins.
+>
+>AEM eCommerce mis en œuvre dans AEM à l’aide du développement générique reposant sur JCR est :
+>
+>* Un exemple d’instance AEM eCommerce native autonome illustrant l’utilisation de l’API, qui peut être utilisée pour contrôler des données des produits, les paniers et le passage en caisse conjointement à l’affichage des données existantes et aux campagnes marketing. Dans ce cas, la base de données de produits est stockée dans le référentiel natif à AEM (mise en œuvre [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) d’Adobe).
+>
+>  L’installation standard d’AEM contient les éléments de base de la [mise en œuvre générique eCommerce](/help/commerce/cif-classic/administering/generic.md).
 
 ### Fournisseurs de commerce {#commerce-providers}
 
@@ -137,7 +149,8 @@ Deux exemples de fournisseurs de commerce sont disponibles actuellement pour AEM
 Généralement, un projet doit développer son propre fournisseur de commerce personnalisé spécifique à sa gestion d’informations sur les produits et à son schéma de données sur les produits.
 
 >[!NOTE]
-Les importateurs geometrixx utilisent des fichiers CSV. Les commentaires précédant la mise en œuvre décrivent le schéma accepté (avec les propriétés personnalisées autorisées).
+>
+>Les importateurs geometrixx utilisent des fichiers CSV. Les commentaires précédant la mise en œuvre décrivent le schéma accepté (avec les propriétés personnalisées autorisées).
 
 [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) et [CatalogBlueprintImporter. ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
 
@@ -268,7 +281,7 @@ Les différents attributs de produit peuvent dépendre du moteur eCommerce utili
 
    Résumé des fonctionnalités du produit.
 
-* **Fonctionnalités**
+* **Fonctions**
 
    Détails plus complets des fonctionnalités du produit.
 
@@ -280,7 +293,7 @@ Plusieurs ressources peuvent être disponibles pour différents produits. En gé
 
 Un catalogue regroupe des données sur les produits afin de faciliter la gestion et la présentation à l’acheteur. Généralement, un catalogue est structuré selon des attributs comme la langue, la région géographique, la marque, la saison, le centre d’intérêt, le sport, etc.
 
-### Structure de catalogue  {#catalog-structure}
+### Structure de catalogue {#catalog-structure}
 
 #### Catalogues multilingues {#catalogs-in-multiple-languages}
 
@@ -288,7 +301,7 @@ AEM prend en charge le contenu du produit en plusieurs langues. Lors de la deman
 
 Pour une boutique multilingue, vous pouvez importer un catalogue individuellement pour chaque arborescence de langue (ou le copier avec [MSM](/help/sites-administering/msm.md)).
 
-#### Catalogues multimarque  {#catalogs-for-multiple-brands}
+#### Catalogues multimarque {#catalogs-for-multiple-brands}
 
 Comme pour les langues, les grandes entreprises multinationales peuvent avoir à couvrir plusieurs marques.
 
@@ -303,7 +316,7 @@ En fonction de votre mise en œuvre, vous pouvez importer les données sur les p
 * Fichier CSV (pour la mise en œuvre générique)
 * Moteur eCommerce
 
-### Maintenance du catalogue (synchronisation des données)  {#catalog-maintenance-data-synchronization}
+### Maintenance du catalogue (synchronisation des données) {#catalog-maintenance-data-synchronization}
 
 D’autres modifications apportées aux données du produit sont inévitables :
 
@@ -324,7 +337,7 @@ Cela dépend du type de données :
 
 * Des données très variables, comme des informations sur les prix, sont extraites du moteur de commerce pour chaque demande de page afin de veiller à ce qu’elles soient toujours à jour.
 
-### Catalogues – Performance et évolutivité  {#catalogs-performance-and-scaling}
+### Catalogues – Performance et évolutivité {#catalogs-performance-and-scaling}
 
 L’importation d’un catalogue volumineux contenant de nombreux produits (plus de 100 000 en général) à partir d’un moteur eCommerce (gestion d’informations sur les produits) peut avoir un impact sur le système en raison du grand nombre de nœuds. Elle peut également ralentir l’instance de création si des ressources (images des produits, par exemple) sont associées aux produits. Cela s’explique par l’utilisation intensive du processeur et de la mémoire lors du post-traitement de ces ressources.
 
@@ -343,7 +356,7 @@ Si un nœud JCR comporte de nombreux nœuds enfants directs (1 000 et plus, pa
 
 Ces compartiments prennent la forme de dossiers fantômes introduits dans la structure du catalogue, mais peuvent être configurés afin d’être invisibles dans les adresses URL publiques.
 
-#### Déchargement du post-traitement des ressources sur une instance dédiée  {#offload-asset-post-processing-to-a-dedicated-instance}
+#### Déchargement du post-traitement des ressources sur une instance dédiée {#offload-asset-post-processing-to-a-dedicated-instance}
 
 Ce scénario consiste à configurer deux instances de création :
 
@@ -383,7 +396,7 @@ Ces tests des performances impliquent de connaître et d’analyser la cible :
 
 * Volumes de contenu
 
-   * Assets
+   * Ressources
    * Produits internationalisés localisés et codes SKU
 
 * Activité de l’utilisateur
@@ -399,7 +412,7 @@ Ces tests des performances impliquent de connaître et d’analyser la cible :
 
 * Exigences de maintenance (sauvegarde, optimisation TAR PM, nettoyage de l’entrepôt de données, etc.)
 
-#### Performances – Divers  {#performance-miscellaneous}
+#### Performances – Divers {#performance-miscellaneous}
 
 Pour toutes les mises en œuvre, tenez compte des points suivants :
 
@@ -431,7 +444,7 @@ Pour toutes les mises en œuvre, tenez compte des points suivants :
    Par exemple, il est habituellement recommandé de mettre en cache la gestion des attributs, car cela concerne les données mises à jour lors de l’importation des produits.
 * Envisagez d’utiliser des [pages de proxy](#proxy-pages).
 
-### Pages de sections du catalogue  {#catalog-section-pages}
+### Pages de sections du catalogue {#catalog-section-pages}
 
 Les sections du catalogue fournissent, par exemple, les éléments suivants :
 
@@ -460,7 +473,7 @@ Ces informations permettent à l’acheteur de sélectionner les éléments ci-d
 * Variantes de couleur et de taille
 * Quantité
 
-#### Pages d’entrée du produit  {#product-landing-pages}
+#### Pages d’entrée du produit {#product-landing-pages}
 
 Ces pages AEM fournissent principalement des informations statiques, par exemple une présentation et un aperçu contenant des liens vers les pages de produit sous-jacentes.
 
@@ -470,7 +483,7 @@ Le composant **Produit** peut être ajouté à une page avec une page parente, q
 
 Le composant **Produit** peut également être personnalisé selon vos exigences.
 
-### Pages de proxy  {#proxy-pages}
+### Pages de proxy {#proxy-pages}
 
 Des pages de proxy sont utilisées pour simplifier la structure du référentiel et optimiser le stockage des catalogues volumineux.
 
@@ -481,8 +494,10 @@ Les pages de proxy utilisent une structure à deux noeuds ( `cq:Page` et `jcr:co
 Ceci présente cependant un inconvénient : vous ne pourrez pas personnaliser les informations sur les produits dans AEM, car un modèle standard (défini pour votre site) est utilisé.
 
 >[!NOTE]
-Vous ne rencontrerez aucun problème si vous importez un catalogue volumineux sans pages de proxy.
-Vous pouvez passer d’une méthode à l’autre à tout moment. Vous pouvez également convertir une sous-section de votre catalogue.
+>
+>Vous ne rencontrerez aucun problème si vous importez un catalogue volumineux sans pages de proxy.
+>
+>Vous pouvez passer d’une méthode à l’autre à tout moment. Vous pouvez également convertir une sous-section de votre catalogue.
 
 ## Promotions et bons {#promotions-and-vouchers}
 
@@ -510,7 +525,8 @@ Dans AEM :
 * Les bons ne comportent pas leurs propres dates/périodes de validité ; ils utilisent celles de leurs campagnes parentes.
 
 >[!NOTE]
-AEM utilise le terme **bon**, synonyme de **coupon**.
+>
+>AEM utilise le terme **bon**, synonyme de **coupon**.
 
 ### Promotions {#promotions}
 
@@ -562,11 +578,12 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
    se trouve en dehors d’une expérience et ne se déclenche donc jamais automatiquement (par exemple : selon la segmentation). Il est toutefois référencé par les bons qui se trouvent dans plusieurs expériences de la campagne d’article. La saisie de ces codes de bon dans le panier déclenche la promotion.
 
 >[!NOTE]
-Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Le contenu marketing spécifique à une promotion (bannières, etc.) ne fait pas partie de la promotion Hybris.
+>
+>Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Le contenu marketing spécifique à une promotion (bannières, etc.) ne fait pas partie de la promotion Hybris.
 
 ## Personnalisation {#personalization}
 
-### Enregistrement et comptes des clients  {#customer-registration-and-accounts}
+### Enregistrement et comptes des clients {#customer-registration-and-accounts}
 
 Lorsqu’un acheteur s’enregistre, les détails du compte doivent être synchronisés entre AEM et le moteur eCommerce. Les données sensibles sont conservées indépendamment, mais les profils sont partagés :
 
@@ -590,8 +607,10 @@ Le mécanisme exact peut dépendre du scénario :
 Lorsque vous utilisez un moteur eCommerce, AEM stocke uniquement l’ID de compte et le mot de passe (éventuellement, un groupe d’utilisateurs). Toutes les autres informations sont stockées dans le moteur eCommerce.
 
 >[!NOTE]
-Lorsque vous utilisez un moteur eCommerce, vous devez vous assurer que les comptes créés pour les utilisateurs qui se connectent à une instance AEM sont répliqués (par le biais de workflows, par exemple) sur les autres instances AEM qui communiquent avec ce moteur.
-Autrement, ces autres instances AEM essaient également de créer des comptes pour les mêmes utilisateurs dans le moteur. Ces actions échouent avec une exception `DuplicateUidException` générée par le moteur.
+>
+>Lorsque vous utilisez un moteur eCommerce, vous devez vous assurer que les comptes créés pour les utilisateurs qui se connectent à une instance AEM sont répliqués (par le biais de workflows, par exemple) sur les autres instances AEM qui communiquent avec ce moteur.
+>
+>Autrement, ces autres instances AEM essaient également de créer des comptes pour les mêmes utilisateurs dans le moteur. Ces actions échouent avec une exception `DuplicateUidException` générée par le moteur.
 
 ### Inscription des clients {#customer-sign-up}
 
@@ -600,7 +619,8 @@ Pour que l’acheteur ait accès au panier, il doit généralement s’inscrire.
 ![chlimage_1-11](/help/sites-administering/assets/chlimage_1-11.png)
 
 >[!NOTE]
-Un panier et un passage en caisse anonymes sont également pris en charge.
+>
+>Un panier et un passage en caisse anonymes sont également pris en charge.
 
 ### Connexion des clients {#customer-sign-in}
 
@@ -639,7 +659,8 @@ Le composant Carnet d’adresses est accessible à partir de la page **Mon compt
 Cliquez sur **Ajouter une nouvelle adresse…** pour ajouter une nouvelle adresse à votre carnet d’adresses. Un formulaire à remplir s’affiche. Cliquez ensuite sur **Ajouter une adresse**.
 
 >[!NOTE]
-Vous pouvez saisir plusieurs adresses dans votre carnet d’adresses.
+>
+>Vous pouvez saisir plusieurs adresses dans votre carnet d’adresses.
 
 Le carnet d’adresses est utilisé lors du passage en caisse de votre panier :
 
@@ -654,7 +675,7 @@ Vous pouvez définir l’adresse à sélectionner par défaut. Ces informations 
 
 Le moteur eCommerce utilise le contexte (essentiellement les informations de l’acheteur) afin de déterminer le prix qu’il contient, puis renvoie les informations correctes dans AEM.
 
-## Panier et commandes  {#shopping-cart-and-orders}
+## Panier et commandes {#shopping-cart-and-orders}
 
 Lorsque l’acheteur effectue des achats, il parcourt les pages de produits et sélectionne des articles qu’il place dans son panier. Lorsqu’il passe en caisse, il peut passer une commande.
 
@@ -667,9 +688,10 @@ Un client anonyme peut :
 * passer en caisse pour passer sa commande.
 
 >[!NOTE]
-Selon la configuration de vos informations d’adresse d’instance, l’enregistrement des clients peut être nécessaire avant le passage en caisse.
+>
+>Selon la configuration de vos informations d’adresse d’instance, l’enregistrement des clients peut être nécessaire avant le passage en caisse.
 
-### Clients enregistrés  {#registered-shoppers}
+### Clients enregistrés {#registered-shoppers}
 
 Un client enregistré peut :
 
@@ -679,7 +701,7 @@ Un client enregistré peut :
 * passer en caisse pour passer sa commande ;
 * afficher et suivre les commandes précédentes.
 
-### Présentation du contenu du panier  {#shopping-cart-content-overview}
+### Présentation du contenu du panier {#shopping-cart-content-overview}
 
 Le panier fournit :
 
@@ -707,17 +729,20 @@ Dans un cas comme dans l’autre, les articles restent dans le panier (et peuven
 * reconnectez-vous en tant que `Allison Parker` - ses produits sont restaurés
 
 >[!NOTE]
-Un panier anonyme peut être restauré uniquement sur le même ordinateur/dans le même navigateur.
+>
+>Un panier anonyme peut être restauré uniquement sur le même ordinateur/dans le même navigateur.
 
 >[!NOTE]
-Il n’est pas recommandé de tester la restauration du contenu du panier avec le compte `admin`, car cela peut entrer en conflit avec le compte `admin` du moteur eCommerce (Hybris, par exemple).
+>
+>Il n’est pas recommandé de tester la restauration du contenu du panier avec le compte `admin`, car cela peut entrer en conflit avec le compte `admin` du moteur eCommerce (Hybris, par exemple).
 
 >[!NOTE]
-Hybris peut être configuré de manière à supprimer les paniers en attente après une certaine période.
+>
+>Hybris peut être configuré de manière à supprimer les paniers en attente après une certaine période.
 
 Avant le passage en caisse, les modifications des prix sont répercutées (sur les deux systèmes) dès qu’elles ont lieu.
 
-### Informations sur les commandes  {#order-information}
+### Informations sur les commandes {#order-information}
 
 En fonction de vos informations de mise en œuvre sur une commande contenue dans le moteur eCommerce ou dans AEM, ces informations sont rendues par AEM.
 
@@ -788,8 +813,9 @@ Différentes informations sont stockées, notamment :
    Lien utilisé pour le suivi de la commande en cours d’expédition.
 
 >[!NOTE]
-Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour le lieu. Dans l’exemple générique, vous trouverez ce qui suit :
-`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
+>
+>Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour le lieu. Dans l’exemple générique, vous trouverez ce qui suit :
+>`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Lorsque la commande est conservée dans AEM, la console Commande affiche les informations ci-dessous pour chaque commande :
 
@@ -820,7 +846,7 @@ Le passage en caisse est mis en œuvre avec des formulaires AEM standard. Cela 
 
 Le moteur eCommerce gère ensuite le processus de passage en caisse avec les informations saisies dans les formulaires AEM.
 
-### Sécurité du paiement  {#payment-security}
+### Sécurité du paiement {#payment-security}
 
 Les informations de paiement, dont les informations de carte de crédit, sont généralement gérées par le moteur eCommerce. AEM transfère ces informations sur les transactions au moteur (d’où elles sont ensuite transférées à un service de traitement des paiements).
 
@@ -830,7 +856,7 @@ La conformité du secteur des cartes de paiement (PCI) peut être réalisée.
 
 La commande est confirmée à l’écran et peut être suivie grâce au [suivi des commandes](#order-tracking).
 
-## Recherche {#search-features}
+## Rechercher {#search-features}
 
 ![chlimage_1-18](/help/sites-administering/assets/chlimage_1-18.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Contribution à AEM
-seo-title: Contribution à AEM
+seo-title: Contributing to AEM
 description: AEM est développé selon des méthodologies éprouvées couramment pratiquées dans d’importants projets open source
-seo-description: AEM est développé selon des méthodologies éprouvées couramment pratiquées dans d’importants projets open source
+seo-description: AEM is developed following proven methodologies commonly practiced in large open source projects
 uuid: ffef60ae-8a9a-4c4b-8cbd-3cd72792a42e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2726'
-ht-degree: 68%
+source-wordcount: '2709'
+ht-degree: 67%
 
 ---
 
@@ -45,7 +45,7 @@ Au plus haut niveau, vous devez maîtriser les concepts suivants :
 * les cookies de navigateur
 * et d’autres concepts modernes de développement web
 
-La pile technologique d’Adobe Experience Manager est basée sur le conteneur OSGI [Apache Felix](https://felix.apache.org/) avec la structure web [Apache Sling](https://sling.apache.org/site/index.html) et incorpore un référentiel de contenu Java ([JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)) basé sur [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html). Vous devez vous familiariser avec ces projets individuels, ainsi qu’avec tous les autres composants open source (par exemple, Apache Lucene) utilisés dans le domaine où vous avez l’intention d’apporter une contribution.
+La pile technologique d’Adobe Experience Manager est basée sur le conteneur OSGI [Apache Felix](https://felix.apache.org/) avec la structure web [Apache Sling](https://sling.apache.org/site/index.html) et incorpore un référentiel de contenu Java ([JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basé sur [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html). Vous devez vous familiariser avec ces projets individuels, ainsi qu’avec tous les autres composants open source (par exemple, Apache Lucene) utilisés dans le domaine où vous avez l’intention d’apporter une contribution.
 
 ## Connaissances exclusives {#tribal-knowledge}
 
@@ -53,7 +53,7 @@ Certains concepts et principes directeurs sont profondément enracinés dans l�
 
 ### Tout est contenu {#everything-is-content}
 
-Le contenu n’inclut pas seulement les données que l’application web conserve. Le code du programme, les bibliothèques, les scripts, les modèles, HTML, CSS, les images et les artefacts de toutes sortes, tout et n’importe quoi est conservé dans le référentiel de contenu et importé/exporté sous la forme de modules via le gestionnaire de modules et le partage de modules.
+Le contenu n’inclut pas seulement les données que l’application web conserve. Le code du programme, les bibliothèques, les scripts, les modèles, le HTML, CSS, les images et les artefacts de tous types, tout et n’importe quoi est conservé dans le référentiel de contenu et importé/exporté sous la forme de modules via le gestionnaire de modules et le partage de modules.
 
 ### David’s Model {#david-s-model}
 
@@ -81,7 +81,7 @@ Petite taille du fichier Quickstart : conservez la taille minimale du fichier J
 
 Temps de démarrage plus rapide : lorsque vous effectuez une modification susceptible de se répercuter sur le temps de démarrage, assurez-vous de l’écourter et non pas le contraire.
 
-### Lean et Mean  {#lean-and-mean}
+### Lean et Mean {#lean-and-mean}
 
 Nous privilégions le code et les projets qui sont légers, petits, rapides et élégants. « Assez bien » n’est pas suffisant.
 
@@ -89,15 +89,15 @@ Réutilisation du code : notre architecture de produits basée sur OSGi et not
 
 Couplage lâche : nous privilégions les interactions à couplage faible à des dépendances étroites et des échanges trop serrés non souhaités. Le couplage lâche permet également une réutilisation du code.
 
-### Ne pas casser les démos  {#don-t-break-the-demo}
+### Ne pas casser les démos {#don-t-break-the-demo}
 
 Familiarisez-vous avec les scripts de démonstration et les fonctionnalités de produit qui s’affichent le plus souvent dans les démonstrations. Sachez que rien de ce que vous codez ne doit endommager une fonctionnalité de « script de démonstration ». Le produit de base doit toujours être prêt pour démo, même en phase de développement.
 
-### Une conception qui privilégie la fiabilité  {#design-for-reliability}
+### Une conception qui privilégie la fiabilité {#design-for-reliability}
 
 Nous nous efforçons de concevoir et de coder les fonctionnalités sans qu’un bogue n’ai de lourdes répercussions. Par exemple, il faut éviter qu’un problème lié à un seul élément DOM empêche le rendu de toute une page. En d’autres termes : laisser ce qui doit être fatal l’être. Tout le reste doit être viable. Le produit doit être « indulgent ».
 
-### Ce qui est anormal est normal  {#abnormal-is-the-new-normal}
+### Ce qui est anormal est normal {#abnormal-is-the-new-normal}
 
 Ne dépendez pas des shutdown hooks, nettoyez au démarrage. Un arrêt anormal est un arrêt normal.
 

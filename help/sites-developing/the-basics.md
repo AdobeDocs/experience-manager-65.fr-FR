@@ -1,8 +1,8 @@
 ---
 title: Concepts de base d’AEM
-seo-title: Principes élémentaires
+seo-title: The Basics
 description: Présentation des concepts de base de la structure d’AEM et des méthodes de développement sur AEM, notamment fonctionnement de JCR, de Sling, d’OSGi, du dispatcher, des workflows et de MSM
-seo-description: Présentation des concepts de base de la structure d’AEM et des méthodes de développement sur AEM, notamment fonctionnement de JCR, de Sling, d’OSGi, du dispatcher, des workflows et de MSM
+seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3367'
-ht-degree: 85%
+source-wordcount: '3334'
+ht-degree: 84%
 
 ---
 
@@ -41,7 +41,7 @@ Il est également recommandé de lire et de suivre les [Recommandations et bonne
 
 ## Référentiel de contenu Java {#java-content-repository}
 
-La norme Java Content Repository (JCR), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle.
+La norme Java Content Repository (JCR), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle.
 
 Les spécifications sont gérées par Adobe Research (Suisse) AG.
 
@@ -114,7 +114,7 @@ Nous pouvons la décomposer comme suit :
 
 **sélecteur(s)** Utilisé pour d’autres méthodes de rendu du contenu ; dans cet exemple, une version imprimable au format A4.
 
-**Format** extensionContent ; spécifie également le script à utiliser pour le rendu.
+**** format extensionContent; spécifie également le script à utiliser pour le rendu.
 
 **** suffixPeut être utilisé pour spécifier des informations supplémentaires.
 
@@ -143,7 +143,7 @@ La requête est décomposée et les informations nécessaires sont extraites. Un
 
 Sling permet également à des éléments autres que des nœuds JCR d’être des ressources, mais il s’agit là d’une fonctionnalité avancée.
 
-### Localisation du script  {#locating-the-script}
+### Localisation du script {#locating-the-script}
 
 Lorsque la ressource appropriée (nœud de contenu) est localisée, le **type de ressource sling** est extrait. C’est un chemin qui localise le script à utiliser pour le rendu du contenu.
 
@@ -161,7 +161,7 @@ Un certain nombre d’autres points sont à noter :
 * si la méthode (GET, POST) est requise, elle est indiquée en majuscules selon la spécification HTTP, par ex. jobs.POST.esp (voir ci-dessous)
 * divers moteurs de script sont pris en charge :
 
-   * HTL (HTML Template Language - système de modèle côté serveur préféré et recommandé d’Adobe Experience Manager pour HTML) : `.html`
+   * HTL (langage de modèle de HTML - système de modèle côté serveur préféré et recommandé d’Adobe Experience Manager pour le HTML) : `.html`
    * ECMAScript (JavaScript) Pages (exécution côté serveur) : `.esp, .ecma`
    * Java Server Pages (exécution côté serveur) : `.jsp`
    * Compilateur de servlet Java (exécution côté serveur) : `.java`
@@ -376,7 +376,7 @@ La définition d’un composant comprend :
 * le code utilisé pour le rendu du contenu
 * une boîte de dialogue pour la saisie utilisateur et la configuration du contenu résultant.
 
-**** ModèleUn modèle est la base d’un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est ensuite créée en copiant ce modèle.
+**** TemplateUn modèle est la base d’un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est ensuite créée en copiant ce modèle.
 
 Un modèle est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
 
@@ -384,7 +384,7 @@ Il définit le composant de page utilisé pour afficher la page et le contenu pa
 
 **Composant de page (composant de niveau supérieur)** Composant à utiliser pour le rendu de la page.
 
-**** PageA est une &quot;instance&quot; d’un modèle.
+**** PageUne page est une &quot;instance&quot; d’un modèle.
 
 Une page comporte un nœud de hiérarchie de type cq:Page et un nœud de contenu de type cq:PageContent. La propriété sling:resourceType du nœud de contenu pointe vers le composant de page utilisé pour le rendu de la page.
 
@@ -450,7 +450,7 @@ Avec AEM, un environnement de production se compose souvent de deux types d’i
 
 Le dispatcher est un outil Adobe qui sert à la mise en cache et/ou l’équilibrage de charge. Plus d’informations sont disponibles sous [le dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
-## FileVault (système de révision de code source)  {#filevault-source-revision-system}
+## FileVault (système de révision de code source) {#filevault-source-revision-system}
 
 FileVault fournit à votre référentiel JCR des fonctions de mappage du système de fichiers et de gestion des versions. Il permet de gérer des projets de développement AEM avec une prise en charge complète du stockage et de la gestion du code de projet, du contenu, des configurations, etc. dans des systèmes de gestion de versions standard (par exemple, Subversion).
 
@@ -462,7 +462,7 @@ Votre contenu est souvent soumis à des processus organisationnels, y compris de
 
 Le moteur de workflow sert à gérer l’implémentation de vos workflows et leur application ultérieure sur votre contenu.
 
-## Gestion multisite  {#multi-site-management}
+## Gestion multisite {#multi-site-management}
 
 Multi Site Manager (MSM) permet de gérer facilement plusieurs sites web partageant du contenu commun. MSM vous permet de définir des relations entre les sites afin que les modifications de contenu d’un site soient automatiquement répliquées sur d’autres sites.
 

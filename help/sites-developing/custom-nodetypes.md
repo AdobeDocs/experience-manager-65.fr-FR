@@ -1,8 +1,8 @@
 ---
 title: Types de nœuds personnalisés
-seo-title: Types de nœuds personnalisés
+seo-title: Custom Node Types
 description: AEM est architecturé autour de Sling et utilise un référentiel JCR avec des types de nœuds proposés par les deux plates-formes. Cependant, AEM fournit également un éventail de types de nœuds personnalisés.
-seo-description: AEM est architecturé autour de Sling et utilise un référentiel JCR avec des types de nœuds proposés par les deux plates-formes. Cependant, AEM fournit également un éventail de types de nœuds personnalisés.
+seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 62%
+source-wordcount: '1877'
+ht-degree: 61%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 62%
 
 Comme AEM est basé sur Sling et utilise un référentiel JCR, les types de noeuds proposés par les deux sont disponibles :
 
-* [Types de nœuds JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Types de nœuds JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Types de nœuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 De plus, AEM propose un éventail de types de nœuds personnalisés.
@@ -56,7 +56,7 @@ Définit le type d’un nœud d’événement d’audit.
 
 ## Commentaire {#comment}
 
-### cq:Comment  {#cq-comment}
+### cq:Comment {#cq-comment}
 
 **Description**
 
@@ -131,7 +131,7 @@ Définit le type d’un nœud de rétrolien.
 
 ## Base {#core}
 
-### cq:Page  {#cq-page}
+### cq:Page {#cq-page}
 
 **Description**
 
@@ -391,9 +391,9 @@ Définit les écouteurs (côté client) à exécuter sur un événement de modif
    * `- afterremove (string)`
    * `- aftermove (string)`
 
-## Gestion des actifs numériques (DAM) {#dam}
+## Gestion des ressources numériques (DAM) {#dam}
 
-### dam:AssetContent  {#dam-assetcontent}
+### dam:AssetContent {#dam-assetcontent}
 
 **Description**
 
@@ -483,7 +483,7 @@ Les éléments d’un `cq:Cq4ContentPage` sont les suivants :
 
 ## Importateur {#importer}
 
-### cq:PollConfig  {#cq-pollconfig}
+### cq:PollConfig {#cq-pollconfig}
 
 **Description**
 
@@ -514,7 +514,7 @@ Type de nœud principal permettant de créer facilement des nœuds de configurat
 
 ## Emplacement {#location}
 
-### cq:GeoLocation  {#cq-geolocation-1}
+### cq:GeoLocation {#cq-geolocation-1}
 
 **Description**
 
@@ -532,7 +532,7 @@ Mixin qui définit un emplacement géographique en degrés décimaux (DD).
 
 ## Mailer {#mailer}
 
-### cq:mailerMessage  {#cq-mailermessage}
+### cq:mailerMessage {#cq-mailermessage}
 
 **Description**
 
@@ -548,7 +548,7 @@ Types de nœuds MailerService (Service mailer). Le mailer utilise des nœuds con
 
 ## MSM {#msm}
 
-### cq:LiveRelationship  {#cq-liverelationship}
+### cq:LiveRelationship {#cq-liverelationship}
 
 **Description**
 
@@ -633,7 +633,7 @@ Action de plan directeur
 
 ## Plate-forme {#platform}
 
-### cq:Console  {#cq-console}
+### cq:Console {#cq-console}
 
 **Description**
 
@@ -646,7 +646,7 @@ Définit le type d’un nœud de console.
 
 ## Réplication {#replication}
 
-### cq:ReplicationStatus  {#cq-replicationstatus}
+### cq:ReplicationStatus {#cq-replicationstatus}
 
 **Description**
 
@@ -672,7 +672,7 @@ Définit le mixin des informations relatives à l’état de réplication.
 
 ## Sécurité {#security}
 
-### cq:ApplicationPrivilege  {#cq-applicationprivilege}
+### cq:ApplicationPrivilege {#cq-applicationprivilege}
 
 **Description**
 
@@ -766,7 +766,7 @@ Définit un type de mixin qui marque les fichiers pouvant être ouverts avec l�
 
 ## Balisage {#tagging}
 
-### cq:Tag  {#cq-tag}
+### cq:Tag {#cq-tag}
 
 **Description**
 
@@ -858,7 +858,7 @@ Données utilisateur
 
 ## Widgets {#widgets}
 
-### cq:ClientLibraryFolder  {#cq-clientlibraryfolder}
+### cq:ClientLibraryFolder {#cq-clientlibraryfolder}
 
 **Description**
 
@@ -942,7 +942,7 @@ Champ
 
 ## Wiki {#wiki}
 
-### wiki:Topic  {#wiki-topic}
+### wiki:Topic {#wiki-topic}
 
 **Description**
 
@@ -986,9 +986,9 @@ Propriétés Wiki
    * `- wiki:isGlobal (boolean)`
    * `- * (undefined)`
 
-## Processus {#workflow}
+## Workflow {#workflow}
 
-### cq:Workflow  {#cq-workflow}
+### cq:Workflow {#cq-workflow}
 
 **Description**
 
