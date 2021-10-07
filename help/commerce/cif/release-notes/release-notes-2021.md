@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
+source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '1135'
 ht-degree: 22%
 
 ---
@@ -28,6 +28,34 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 | Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Date de publication : Septembre 2021
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2021.09.27 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| Composants principaux CIF | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
+| Site de référence CIF Venia | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
+
+### Nouveautés {#what-is-new-september}
+
+* Le nouvel onglet &quot;Contenu commercial associé&quot; dans l’éditeur de sites améliore l’efficacité de l’auteur en accédant rapidement au contenu produit AEM approprié pour le contexte actuel.
+
+   ![Contenu commercial associé](/help/assets/CIF/associated-commerce-content.png)
+
+* Amélioration de l’interface utilisateur du sélecteur de produits pour une meilleure expérience utilisateur, une efficacité accrue et une prise en charge du catalogue de produits complexe
+
+   ![Nouveau sélecteur de produits](/help/assets/CIF/product-picker.png)
+
+* Respect de la propriété &quot;include_in_menu&quot; dans le composant de navigation
+
+### Correctifs {#bug-fixes-september}
+
+* Le vidage du cache du menu ne fonctionne pas comme prévu.
+
+* Erreurs JS lors de l’étape de déploiement AEM CS et lorsque vous n’utilisez pas les composants côté client
+
+* Impossible de créer une configuration cloud CIF dans les dossiers comportant un noeud sling:configs
 
 ## Date de publication : Août 2021
 
@@ -85,7 +113,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 * Nouveaux types de données de référence de catégorie et de produit CIF pour les fragments de contenu (Incl. prise en charge de l’interface utilisateur du sélecteur de produits/catégories)
 * Nouveau composant principal de fragment de contenu commercial
 * Recherche commerciale en texte intégral prise en charge dans AEM serveur principal
-* Les composants principaux de Commerce prennent en charge la collecte de données Adobe Commerce Sensei Recs
+* Les composants principaux de Commerce prennent en charge la collecte de données d’enregistrement Sensei Adobe Commerce
 * Amélioration des URL compatibles avec l’optimisation pour les moteurs de recherche pour les pages de catégorie
 * Prise en charge des en-têtes HTTP personnalisés par site/configuration
 
