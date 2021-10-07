@@ -5,21 +5,13 @@ contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: 5462eb18c55a509712dab8fdbb653eb2d1889763
+source-git-commit: 64ac790579db921aa16f32c51592f0b701237df9
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 85%
+source-wordcount: '533'
+ht-degree: 82%
 
 ---
 
-<!--
-
-Define Media Lib
-Define req for it
-Define use cases
-Define what is not included
-
--->
 
 # Utilisation de Media Library pour la gestion de base des ressources {#manage-assets-using-media-library}
 
@@ -43,9 +35,9 @@ Si vous souhaitez empêcher l’utilisation involontaire des fonctionnalités [!
 
 ## Utilisation de Media Library {#use-media-library}
 
-Media Library couvre globalement les cas d’utilisation suivants :
+Media Library fournit des fonctions de gestion des actifs numériques de base pour les cas d’utilisation suivants :
 
-* Mise à disposition de fonctions de gestion des actifs numériques de base pour les pages web créées à l’aide d’[!DNL Adobe Experience Manager Sites].
+* Pages Web créées à l’aide de [!DNL Adobe Experience Manager Sites].
 * Formulaires adaptatifs et communications créés à l’aide d’[!DNL Adobe Experience Manager Forms].
 * Expériences d’écran numérique créées à l’aide d’[!DNL Adobe Experience Manager Screens].
 * API HTTP REST [!DNL Assets] pour les opérations en mode découplé.
