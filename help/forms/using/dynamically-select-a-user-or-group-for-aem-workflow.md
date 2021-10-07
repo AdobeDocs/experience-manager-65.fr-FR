@@ -1,21 +1,21 @@
 ---
-title: Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de processus basés sur l’utilisation d’AEM Forms
-seo-title: Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de processus basés sur l’utilisation d’AEM Forms
+title: Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms
+seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
 description: 'Découvrez comment sélectionner un utilisateur ou un groupe pour un processus AEM Forms au moment de l’exécution. '
-seo-description: 'Découvrez comment sélectionner un utilisateur ou un groupe pour un processus AEM Forms au moment de l’exécution. '
+seo-description: Learn how to select a user or group for an AEM Forms workflow at the runtime.
 uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8f0e8b15d2ed8b436594fd2be464b4ace29a8902
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 98%
+source-wordcount: '923'
+ht-degree: 92%
 
 ---
 
-# Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de processus basés sur l’utilisation d’AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Découvrez comment sélectionner un utilisateur ou un groupe pour un processus AEM Forms au moment de l’exécution.
 
@@ -27,7 +27,7 @@ Les étapes Affecter une tâche et Adobe Sign des [processus Forms sur OSGi](/he
 
 ECMAScript est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Effectuez les étapes suivantes pour sélectionner de manière dynamique un utilisateur ou un groupe à l’aide de ECMAScript :
 
-1. Ouvrez CRXDE Lite. L&#39;URL est `https://'[server]:[port]'/crx/de/index.jsp`
+1. Ouvrez CRXDE Lite. L’URL est `https://'[server]:[port]'/crx/de/index.jsp`
 1. Créez un fichier avec l’extension .ecma au chemin d’accès suivant. Si le chemin d’accès (structure du nœud) n’existe pas, créez-le :
 
    * (Chemin de l’étape Affecter une tâche) `/apps/fd/dashboard/scripts/participantChooser`
@@ -116,11 +116,11 @@ function getAdobeSignRecipients() {
 
 ## Utilisation de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Vous pouvez utiliser l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/fr/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour choisir de manière dynamique un utilisateur ou un groupe pour les étapes Adobe Sign et Affecter une tâche. Vous pouvez créer un bundle OSGi qui utilise l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) et la déploie sur le serveur AEM Forms. Cela rend disponible à la sélection l’option dans les composants Affecter une tâche et Adobe Sign du processus AEM.
+Vous pouvez utiliser l’interface Java [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour choisir de manière dynamique un utilisateur ou un groupe pour les étapes Adobe Sign et Affecter une tâche. Vous pouvez créer un bundle OSGi qui utilise l’interface Java [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) et la déploie sur le serveur AEM Forms. Cela rend disponible à la sélection l’option dans les composants Affecter une tâche et Adobe Sign du processus AEM.
 
-Vous avez besoin des fichiers jar [SDK client AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
+Vous avez besoin des fichiers jar [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) et [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
-1. Ouvrez l’IDE Eclipse. Accédez à **[!UICONTROL Fichier]** **[!UICONTROL Nouveau projet]**.
+1. Ouvrez l’IDE Eclipse. Accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Nouveau projet]**.
 1. Sur l’écran de sélection de l’assistant, sélectionnez **[!UICONTROL Projet Maven]** puis cliquez sur **[!UICONTROL Suivant]**.
 1. Sur le nouveau projet Maven, conservez les valeurs par défaut, puis cliquez sur **[!UICONTROL Suivant]**. Sélectionnez un archétype et cliquez sur **[!UICONTROL Suivant]**. Par exemple, maven-archetype-quickstart. Spécifiez l’**[!UICONTROL ID du groupe]**, l’**[!UICONTROL ID de l’artefact]**,**[!UICONTROL la version]** et le **[!UICONTROL package]** pour le projet et cliquez sur **[!UICONTROL Terminer]**. Le projet est créé.
 1. Ouvrez le fichier pom.xml pour modifier et remplacer tout le contenu du fichier par ce qui suit :
@@ -141,7 +141,7 @@ Vous avez besoin des fichiers jar [SDK client AEM Forms](https://helpx.adobe.co
            <repository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </repository>
        </repositories>
@@ -149,7 +149,7 @@ Vous avez besoin des fichiers jar [SDK client AEM Forms](https://helpx.adobe.co
            <pluginRepository>
                <id>adobe</id>
                <name>Adobe Public Repository</name>
-               <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+               <url>https://repo1.maven.org/maven2/com/adobe/</url>
                <layout>default</layout>
            </pluginRepository>
        </pluginRepositories>
@@ -225,7 +225,7 @@ Vous avez besoin des fichiers jar [SDK client AEM Forms](https://helpx.adobe.co
    </project>
    ```
 
-1. Ajoutez le code source utilisant l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour sélectionner de manière dynamique un utilisateur ou un groupe pour l’étape Affecter une tâche. Pour un exemple de code, voir [Exemple pour la sélection dynamique d’un utilisateur ou d’un groupe à l’aide de l’interface Java](#-sample-scripts-for).
+1. Ajoutez le code source utilisant l’interface Java [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour sélectionner de manière dynamique un utilisateur ou un groupe pour l’étape Affecter une tâche. Pour un exemple de code, voir [Exemple pour la sélection dynamique d’un utilisateur ou d’un groupe à l’aide de l’interface Java](#-sample-scripts-for).
 1. Ouvrez une invite de commande et accédez au répertoire contenant le projet de bundle OSGi. Utilisez la commande suivante pour créer le bundle OSGi :
 
    `mvn clean install`

@@ -1,19 +1,14 @@
 ---
 title: Intégration de services à la console JMX
-seo-title: Intégration de services à la console JMX
+seo-title: Integrating Services with the JMX Console
 description: Exposez les attributs et les opérations de service pour permettre l’exécution de tâches d’administration en créant et en déployant des MBeans servant à gérer les services à l’aide de la console JMX
-seo-description: Exposez les attributs et les opérations de service pour permettre l’exécution de tâches d’administration en créant et en déployant des MBeans servant à gérer les services à l’aide de la console JMX
-uuid: 4a489a24-af10-4505-8333-aafc0c81dd3e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
-docset: aem65
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1659'
 ht-degree: 89%
 
 ---
@@ -40,7 +35,7 @@ Les MBeans que vous créez pour gérer les ressources CQ5 ou CRX sont basés sur
 
 En plus de configurer l’interface de gestion, l’interface paramètre également l’interface de service OSGi. La classe d’implémentation implémente le service OSGi.
 
-### Utilisation d’annotations pour fournir des informations MBean  {#using-annotations-to-provide-mbean-information}
+### Utilisation d’annotations pour fournir des informations MBean {#using-annotations-to-provide-mbean-information}
 
 Le package module [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) offre plusieurs annotations et classes pour fournir facilement des métadonnées MBean à la console JMX. Utilisez ces annotations et classes au lieu d’ajouter directement des informations à l’objet MBeanInfo du MBean.
 
@@ -195,7 +190,7 @@ Utilisez BundleContext pour enregistrer le MBean en tant que service OSGi. Ajout
 
 Dans l’exemple de code suivant, le service ExampleMBean est enregistré par programmation. L’objet componentContext est ComponentContext, qui fournit l’accès à BundleContext.
 
-#### Extrait de code : enregistrement du service MBean programmatique  {#code-snippet-programmatic-mbean-service-registration}
+#### Extrait de code : enregistrement du service MBean programmatique {#code-snippet-programmatic-mbean-service-registration}
 
 ```java
 Dictionary mbeanProps = new Hashtable();
@@ -209,7 +204,7 @@ L’exemple MBean de la section suivante fournit plus de détails.
 
 Un gestionnaire de service MBean est utile si les configurations de service sont stockées dans le référentiel. Le gestionnaire peut récupérer les informations de service et les utiliser pour configurer et créer le MBean correspondant. La classe de gestionnaire peut également écouter les événements de modification du référentiel et mettre à jour les services MBean en conséquence.
 
-## Exemple : surveillance des modèles de processus à l’aide de JMX  {#example-monitoring-workflow-models-using-jmx}
+## Exemple : surveillance des modèles de processus à l’aide de JMX {#example-monitoring-workflow-models-using-jmx}
 
 Le MBean de cet exemple fournit des informations sur les modèles de processus CQ5 stockés dans le référentiel. Une classe de gestionnaire MBean crée des MBeans basés sur des modèles de processus stockés dans le référentiel et qui enregistrent leur service OSGi au moment de l’exécution. Cet exemple consiste en un seul bundle contenant les membres suivants :
 
@@ -235,7 +230,7 @@ Les métadonnées MBean sont visibles dans la console JMX avec le domaine com.ad
 
 Cet exemple nécessite une interface MBean et une implémentation qui se reflète sur l’interface `com.day.cq.workflow.model.WorkflowModel`. Le MBean est très simple. Ainsi, l’exemple peut se concentrer sur les aspects de configuration et de déploiement de la conception. Le MBean expose un seul attribut, le nom du modèle.
 
-#### Interface WorkflowMBean  {#workflowmbean-interface}
+#### Interface WorkflowMBean {#workflowmbean-interface}
 
 ```java
 package com.adobe.example.myapp.api;
@@ -277,7 +272,7 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 }
 ```
 
-### Exemple de gestionnaire de MBean  {#the-example-mbean-manager}
+### Exemple de gestionnaire de MBean {#the-example-mbean-manager}
 
 Le service WorkflowMBeanManager inclut la méthode d’activation du composant qui crée les services WorkflowMBean. L’implémentation du service prévoit les méthodes suivantes :
 
@@ -289,8 +284,7 @@ Le service WorkflowMBeanManager inclut la méthode d’activation du composant q
 >
 >L’implémentation WorkflowMBeanManager crée uniquement des services MBean pour les configurations de modèle qui existent une fois le composant activé. Une implémentation plus robuste écoute les événements du référentiel concernant les nouvelles configurations de modèle et les modifications ou suppressions de la configuration de modèle existante. Si un changement a lieu, le gestionnaire peut créer, modifier ou supprimer le service WorkflowMBean correspondant.
 
-
-#### Interface WorkflowMBeanManager  {#workflowmbeanmanager-interface}
+#### Interface WorkflowMBeanManager {#workflowmbeanmanager-interface}
 
 ```java
 package com.adobe.example.myapp.api;
@@ -425,7 +419,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 }
 ```
 
-### Fichier POM pour l’exemple de MBean  {#the-pom-file-for-the-example-mbean}
+### Fichier POM pour l’exemple de MBean {#the-pom-file-for-the-example-mbean}
 
 Par souci de commodité, nous proposons de copier et de coller le code XML suivant dans le fichier pom.xml de votre projet pour créer le bundle de composants. Le POM fait référence à plusieurs dépendances et modules externes requis.
 
@@ -437,7 +431,7 @@ Par souci de commodité, nous proposons de copier et de coller le code XML suiva
 
 **Remarque :** au moment de la rédaction de ce document, le module externe maven scr n’est pas compatible avec le module externe m2e pour Eclipse. (Voir [Bogue Felix 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Pour utiliser l’IDE Eclipse, installez Maven et utilisez l’interface de ligne de commande pour créer les builds.
 
-#### Exemple de fichier POM  {#example-pom-file}
+#### Exemple de fichier POM {#example-pom-file}
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -561,13 +555,13 @@ Ajoutez le profil suivant à votre fichier de paramètres maven pour utiliser le
     <properties>
          <releaseRepository-Id>adobe-public-releases</releaseRepository-Id>
          <releaseRepository-Name>Adobe Public Releases</releaseRepository-Name>
-         <releaseRepository-URL>https://repo.adobe.com/nexus/content/groups/public</releaseRepository-URL>
+         <releaseRepository-URL>https://repo1.maven.org/maven2/com/adobe/</releaseRepository-URL>
     </properties>
     <repositories>
          <repository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe  Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>
@@ -580,8 +574,8 @@ Ajoutez le profil suivant à votre fichier de paramètres maven pour utiliser le
      <pluginRepositories>
          <pluginRepository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>

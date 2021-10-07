@@ -1,8 +1,8 @@
 ---
 title: Création d’apparences personnalisées pour les champs de formulaire adaptatif
-seo-title: Création d’apparences personnalisées pour les champs de formulaire adaptatif
+seo-title: Create custom appearances for adaptive form fields
 description: Personnalisation de l’apparence des composants prêts à l’emploi dans les formulaires adaptatifs.
-seo-description: Personnalisation de l’apparence des composants prêts à l’emploi dans les formulaires adaptatifs.
+seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
 uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: customization
 discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1713'
 ht-degree: 73%
 
 ---
@@ -27,13 +27,13 @@ Ce document explique comment utiliser un module externe jQuery pour créer ces e
 
 Tout d’abord, examinons les termes et concepts clés utilisés dans cet article.
 
-**** AspectFait référence au style, à l’aspect et à l’organisation des différents éléments d’un champ de formulaire adaptatif. Il comprend généralement un intitulé, une zone interactive pour saisir des données, une icône d’aide et des descriptions longues et courtes du champ. La personnalisation de l’apparence abordée dans cet article s’applique à l’apparence de la zone de saisie du champ.
+**** Apparence : fait référence au style, à l’aspect et à l’organisation des différents éléments d’un champ de formulaire adaptatif. Il comprend généralement un intitulé, une zone interactive pour saisir des données, une icône d’aide et des descriptions longues et courtes du champ. La personnalisation de l’apparence abordée dans cet article s’applique à l’apparence de la zone de saisie du champ.
 
 **jQuery** pluginFournit un mécanisme standard, basé sur la structure du widget jQuery, pour mettre en oeuvre une autre apparence.
 
 **** ClientLibSystème de bibliothèques côté client dans AEM traitement côté client piloté par du code JavaScript et CSS complexe. Pour plus d’informations, voir Utilisation des bibliothèques côté client.
 
-**** Kit d’outils de modèle de projet Maven archetypeA défini comme modèle ou modèle d’origine pour les projets Maven. Pour en savoir plus, voir Présentation des archétypes.
+**** Palette d’outils de modèle de projet Maven archetypeA définie comme modèle ou modèle d’origine pour les projets Maven. Pour en savoir plus, voir Présentation des archétypes.
 
 **User** Control Fait référence à l’élément principal d’un widget qui contient la valeur du champ. Il est utilisé par la structure d’aspect pour lier l’interface utilisateur du widget personnalisé au modèle de formulaire adaptatif.
 
@@ -52,14 +52,14 @@ Les étapes, à un niveau élevé, pour créer une apparence personnalisée sont
 
 Un archétype d’expert est un point de départ pour créer une apparence personnalisée. Les détails de l’archétype à utiliser sont les suivants :
 
-* **Référentiel** : https://repo.adobe.com/nexus/content/groups/public/
+* **Référentiel** : https://repo1.maven.org/maven2/com/adobe/
 * **Id De L’Artifact** : custom-apparence-archetype
 * **ID de groupe** : com.adobe.aemforms
 * **Version** : 1.0.4
 
 Exécutez la commande suivante pour créer un projet local en fonction de l’archétype :
 
-`mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+`mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
 La commande télécharge les modules externes experts et des informations sur l’archétype du référentiel et génère un projet basé sur les informations suivantes :
 
@@ -133,7 +133,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
    <td><code>getEventMap</code></td>
    <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Cet exemple montre qu’ <code>blur</code> il s’agit d’un événement HTML et  <code>XFA_EXIT_EVENT</code> qu’il s’agit de l’événement XFA correspondant. </td>
+      }</code><br /> Cet exemple montre qu’il  <code>blur</code> s’agit d’un événement de HTML et  <code>XFA_EXIT_EVENT</code> qu’il s’agit de l’événement XFA correspondant. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -190,13 +190,13 @@ Pour appliquer l’apparence personnalisée à un champ de formulaire adaptatif 
 1. Ouvrez la boîte de dialogue **Propriétés** pour trouver le champ auquel vous voulez appliquer l’apparence personnalisée.
 1. Dans l’onglet **Style** , mettez à jour la propriété `CSS class` pour ajouter le nom de l’apparence au format `widget_<widgetName>` . Par exemple : **widget_numericstepper**
 
-## Exemple : Créer une apparence personnalisée    {#sample-create-a-custom-appearance-nbsp}
+## Exemple : Créer une apparence personnalisée   {#sample-create-a-custom-appearance-nbsp}
 
 Examinons à présent un exemple de création d’une apparence personnalisée pour qu’un champ numérique s’affiche sous forme d’exécution numérique pas à pas ou de curseur. Exécutez les étapes suivantes :
 
 1. Exécutez la commande suivante pour créer un projet local en fonction de l’archétype expert :
 
-   `mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+   `mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
    Il vous invite à spécifier des valeurs pour les paramètres suivants.
    *Les valeurs utilisées dans cet exemple sont mises en surbrillance en gras*.

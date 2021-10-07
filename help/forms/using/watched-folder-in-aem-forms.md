@@ -1,8 +1,8 @@
 ---
 title: Dossier de contrôle dans AEM Forms
-seo-title: Dossier de contrôle dans AEM Forms
+seo-title: Watched folder in AEM Forms
 description: Un administrateur peut contrôler un dossier et démarrer un flux de travail, un service, ou une opération d’exécution de script de type lorsqu’un fichier est placé dans le dossier contrôlé.
-seo-description: Un administrateur peut contrôler un dossier et démarrer un flux de travail, un service, ou une opération d’exécution de script de type lorsqu’un fichier est placé dans le dossier contrôlé.
+seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
 uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 79dcba8e14eac39467510416bf31737ac721b07f
 workflow-type: tm+mt
-source-wordcount: '7153'
+source-wordcount: '7118'
 ht-degree: 96%
 
 ---
@@ -33,7 +33,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer un dossier de c
 >
 >Dans un environnement de grappes de serveur, le dossier à utiliser comme dossier de contrôle doit être accessible, modifiable et partagé sur le système de fichiers ou le réseau. Dans ce cas, chaque instance du serveur d’applications de la grappe doit avoir accès au même dossier partagé. Sous Windows, créez un lecteur réseau mappé sur tous les serveurs et spécifiez le chemin d’accès du lecteur réseau mappé dans la propriété folderPath (chemin fichier).
 
-## Créez un nœud de configuration du dossier de contrôle  {#create-watched-folder-configuration-node}
+## Créez un nœud de configuration du dossier de contrôle {#create-watched-folder-configuration-node}
 
 Pour configurer un dossier de contrôle, créez un nœud de configuration du dossier de contrôle. Pour créer le noeud de configuration, procédez comme suit :
 
@@ -192,7 +192,7 @@ Ces propriétés sont transmises sous forme de carte inaltérable de type Map&lt
 
 Un nœud de configuration du dossier de contrôle possédant des propriétés obligatoires, certaines propriétés facultatives, certains paramètres de configuration.
 
-#### Variables mutables pour les flux de travaux  {#mutable-variables-for-workflows}
+#### Variables mutables pour les flux de travaux {#mutable-variables-for-workflows}
 
 Vous pouvez créer des variables mutables pour des méthodes basées sur un flux de traitement des fichiers. Ces variables servent de conteneur aux données de flux entre les étapes d’un flux de travaux. Pour créer ces variables :
 
@@ -216,11 +216,11 @@ Vous pouvez créer des variables mutables pour des méthodes basées sur un flux
 
 Vous pouvez lancer un flux de travail, un service, ou un script pour traiter les emplacements de documents dans un dossier de contrôle.
 
-### Utilisation d’un service pour traiter les fichiers d’un dossier de contrôle    {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Utilisation d’un service pour traiter les fichiers d’un dossier de contrôle   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Un service est une implémentation personnaliséede l’interface `com.adobe.aemfd.watchfolder.service.api.ContentProcessor`. Il est enregistré avec OSGi tout comme certaines propriétés personnalisées. Les propriétés personnalisées de l’implémentation le rendent unique et contribuent à l’identification de l’implémentation.
 
-#### Implémentation personnalisée de l’interface ContentProcessor  {#custom-implementation-of-the-contentprocessor-interface}
+#### Implémentation personnalisée de l’interface ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
 L’implémentation personnalisée accepte un contexte de traitement (un objet de type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lit les documents d’entrée et les paramètres de configuration du contexte, traite les entrées et ajoute de nouveau la sortie de contexte. Le ProcessorContext dispose des API suivants :
 
@@ -259,7 +259,7 @@ public class TestContentProcessor1 implements ContentProcessor {
 }
 ```
 
-### Utilisation des scripts pour traiter les fichiers d’un dossier de contrôle  {#using-scripts-to-process-files-of-a-watched-folder}
+### Utilisation des scripts pour traiter les fichiers d’un dossier de contrôle {#using-scripts-to-process-files-of-a-watched-folder}
 
 Les scripts constituent le code personnalisé conforme ECMAScript écrit dans les documents de processus placés dans le dossier de contrôle. Un script est représenté sous forme d’un nœud JCR. Outre les variables ECMAScript standard (journal, chaîne et plus), le script dispose d’une variable processorContext. La variable est de type ProcessorContext. Le ProcessorContext dispose des API suivants :
 
@@ -296,7 +296,7 @@ Si vous prévoyez de placer vos scripts à un emplacement personnalisé, il est 
 
 Vous pouvez désormais utiliser l’emplacement personnalisé et configuré pour enregistrer les scripts.
 
-### Utilisation d’un flux de travail pour traiter les fichiers d’un dossier de contrôle  {#using-a-workflow-to-process-files-of-a-watched-folder}
+### Utilisation d’un flux de travail pour traiter les fichiers d’un dossier de contrôle {#using-a-workflow-to-process-files-of-a-watched-folder}
 
 Les flux de travaux permettent d’automatiser les activités d’Experience Manager. Les flux de travaux se composent d’une série d’étapes effectuées dans un ordre spécifique. Chaque étape effectue une action distincte telle que l’activation d’une page ou l’envoi d’un message électronique. Les flux de travaux peuvent interagir avec des actifs dans le référentiel, les comptes d’utilisateur, et dans les services d’Experience Manager. Par conséquent, les flux de travaux peuvent coordonner de façon complexe.
 
@@ -389,15 +389,15 @@ wfSvc.execute(impl, graniteWorkItem, graniteWorkflowSession, metaData);
 log.info("Exiting workflow script!")
 ```
 
-### Créer un filtre de mappeur de charge pour mapper la structure d’un dossier de contrôle sur la charge utile d’un processus  {#create-payload-mapper-filter-to-map-structure-of-a-watched-folder-to-the-payload-of-a-workflow}
+### Créer un filtre de mappeur de charge pour mapper la structure d’un dossier de contrôle sur la charge utile d’un processus {#create-payload-mapper-filter-to-map-structure-of-a-watched-folder-to-the-payload-of-a-workflow}
 
 Lorsque vous créez un dossier de contrôle, celui-ci crée une structure de dossiers dans le dossier contrôlé. La structure de dossiers est constituée de dossiers d’étapes, de résultats, de conservations, d’entrées et d’échecs. La structure de dossiers peut servir de charge d’entrée au processus et accepte la sortie d’un processus. Elle peut également répertorier les points d’échec, le cas échéant.
 
 Si la structure d’une charge utile est différente de celle du dossier de contrôle, vous pouvez entrer des scripts personnalisés pour mapper la structure du dossier de contrôle vers la charge utile. Un tel script est appelé le filtre mappeur de charge. AEM Forms fournit un filtre de mappeur de charge prêt à l’emploi permettant d’associer la structure du dossier de contrôle à une charge.
 
-#### Création d’un filtre personnalisé de mappeur de charge  {#creating-a-custom-payload-mapper-filter}
+#### Création d’un filtre personnalisé de mappeur de charge {#creating-a-custom-payload-mapper-filter}
 
-1. Téléchargez le [SDK client d’Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
+1. Téléchargez le [SDK client d’Adobe](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
 1. Configurez le SDK client dans le chemin de génération du projet basé sur Maven. Pour commencer, vous pouvez télécharger et ouvrir le projet basé sur Maven suivant dans l’IDE de votre choix.
 1. Modifiez le code du filtre du mappeur de charge disponible dans l’exemple de bundle en fonction de vos besoins.
 1. Utilisez Maven pour créer un bundle de filtre personnalisé de mappeur de charge.
@@ -493,7 +493,7 @@ Si le travail contient plusieurs fichiers d’entrée, l’utilisateur doit cré
 >
 >Vérifiez que le serveur d’applications a révoqué l’accès aux fichiers dans le dossier de contrôle. Si AEM Forms ne peut pas supprimer les fichiers du dossier de contrôle après leur analyse, le processus associé s’exécute indéfiniment.
 
-## Informations complémentaires sur les dossiers de contrôle  {#additional-information-about-the-watched-folders}
+## Informations complémentaires sur les dossiers de contrôle {#additional-information-about-the-watched-folders}
 
 ### A propos du ralentissement {#about-throttling}
 
@@ -503,7 +503,7 @@ Lorsque le ralentissement est activé au niveau du point de fin d’un dossier d
 >
 >aucune mise à l’échelle du ralentissement n’est effectuée dans une grappe. Lorsque l’option de ralentissement est activée, la grappe dans son ensemble ne traite pas plus de tâches que le nombre indiqué dans l’attribut Taille du lot. Cette limite est fixée par la grappe et n’est pas spécifique à chacun de ses nœuds. Par exemple, si l’attribut Taille du lot a pour valeur 2, la limite du ralentissement peut être atteinte avec le traitement de deux tâches sur un seul nœud et aucun autre nœud n’interrogera alors le répertoire des entrées tant que l’une des tâches n’est pas terminée.
 
-#### Fonctionnement du ralentissement  {#how-throttling-works}
+#### Fonctionnement du ralentissement {#how-throttling-works}
 
 Watched Folder analyse le dossier d’entrée à chaque intervalle de répétition, sélectionne le nombre de fichiers indiqués dans la Taille du lot, puis appelle le service cible pour chacun de ces fichiers. Par exemple, si l’attribut Taille du lot à pour valeur 4, Watched Folder sélectionnera quatre fichiers, créera quatre demandes d’appel et appellera le service cible. Avant que ces demandes ne soient terminées, si le service Watched Folder est appelé, il démarrera à nouveau quatre tâches, indépendamment du fait que les quatre tâches précédentes soient terminées ou non.
 
@@ -513,7 +513,7 @@ L’option de ralentissement empêche Watched Folder d’appeler de nouvelles t
 * Si le serveur AEM Forms tombe en panne avant que le dossier de contrôle ne puisse appeler les tâches, l’administrateur peut sortir les fichiers du dossier stage. Pour plus d’informations, voir [Points d’échec et récupération](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 * Si le serveur AEM Forms fonctionne mais que le dossier de contrôle ne fonctionne pas lorsque le service Job Manager renouvelle son appel, ce qui arrive lorsque les services ne sont pas exécutés dans la séquence définie, l’administrateur peut sortir les fichiers du dossier stage. Pour plus d’informations, voir [Points d’échec et récupération](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
-### Points d’échec et récupération  {#failure-points-and-recoveryfailure-points-and-recovery}
+### Points d’échec et récupération {#failure-points-and-recoveryfailure-points-and-recovery}
 
 A chaque événement d’interrogation, Watched Folder verrouille le dossier input, déplace dans le dossier stage les fichiers correspondant au modèle de fichiers inclus, puis déverrouille le dossier input. Le verrouillage est nécessaire de sorte que deux threads ne sélectionnent pas le même jeu de fichiers et ne les traitent pas deux fois. La probabilité d’un traitement en double augmente lorsque l’intervalle de répétition est faible et que la taille du lot est importante. Une fois les fichiers déplacés dans le dossier stage, le dossier input est déverrouillé de sorte que d’autres threads puissent analyser le dossier. Cette étape offre un débit élevé du fait que d’autres threads peuvent effectuer une analyse pendant que l’un d’entre eux traite les fichiers.
 
@@ -526,7 +526,7 @@ Une fois les fichiers déplacés dans le dossier stage, les demandes d’appel s
    * **Synchrone** : si Watched Folder est configuré pour appeler le service de manière synchrone, tous les fichiers du dossier stage restent dans ce dossier et ne subissent aucun traitement.
    * **Asynchrone** : dans ce cas, Watched Folder s’appuie sur le service Job Manager. Si le service Job Manager rappelle Watched Folder, les fichiers du dossier stage sont déplacés vers le dossier preserve ou le dossier failure, en fonction des résultats de l’appel. Si le service Job Manager ne rappelle pas Watched Folder, les fichiers restent dans le dossier stage et ne subissent aucun traitement. Cette situation survient lorsque Watched Folder n’est pas exécuté alors que Job Manager rappelle.
 
-#### Récupération des fichiers source non traités dans le dossier Traités  {#recover-unprocessed-source-files-in-the-stage-folder}
+#### Récupération des fichiers source non traités dans le dossier Traités {#recover-unprocessed-source-files-in-the-stage-folder}
 
 Lorsque Watched Folder ne peut pas traiter les fichiers source dans le dossier stage, vous avez la possibilité de récupérer les fichiers n’ayant fait l’objet d’aucun traitement.
 
@@ -587,7 +587,7 @@ Les mappages des paramètres de sortie peuvent également spécifier des modèle
 
 Si le modèle de mappage des paramètres de sortie se termine par « File.separator » (qui correspond au séparateur de chemin), un dossier est créé dans lequel le contenu est copié. Si le modèle ne se termine pas par « File.separator », le contenu (fichier ou dossier des résultats) est créé et utilise ce nom.
 
-## Utilisation de PDF Generator avec un dossier de contrôle {#using-pdf-generator-with-a-watched-folder}
+## Utilisation de PDF Generator avec un dossier de contrôle {#using-pdf-generator-with-a-watched-folder}
 
 Vous pouvez configurer un dossier de contrôle pour lancer un flux de travaux, un service ou un script destiné à traiter les fichiers d’entrée. Dans la section suivante, nous configurerons un dossier de contrôle pour lancer ECMAScript. ECMAScript utilise normalement PDF Generator pour convertir des documents Microsoft Word (.docx) au format PDF.
 

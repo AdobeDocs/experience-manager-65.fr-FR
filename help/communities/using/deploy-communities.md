@@ -1,18 +1,13 @@
 ---
 title: Déploiement de Communities
-seo-title: Déploiement de Communities
+seo-title: Deploying Communities
 description: Comment déployer AEM Communities
-seo-description: Comment déployer AEM Communities
-uuid: 18d9b424-004d-43b2-968a-318e27a93759
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+seo-description: How to deploy AEM Communities
 content-type: reference
 topic-tags: deploying
-discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
-docset: aem65
-source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
+source-git-commit: 14a33b14043869614efcdbf8cb413333d0fa644b
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1881'
 ht-degree: 4%
 
 ---
@@ -92,7 +87,7 @@ ht-degree: 4%
 
 AEM 6.5 Communities GA inclut le package Communities. Pour en savoir plus sur les mises à jour apportées à AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), consultez les [Notes de mise à jour d’AEM 6.5](/help/release-notes/release-notes.md#communities-release-notes.html).
 
-### Mises à jour d’AEM version 6.5 {#aem-updates}
+### Mises à jour AEM 6.5 {#aem-updates}
 
 À compter de la version 6.4 d’AEM, les mises à jour apportées aux communautés sont fournies dans le cadre d’AEM Cumulative Fix Packs et Service Packs.
 
@@ -161,13 +156,13 @@ Si vous le souhaitez, le niveau de journal peut être défini sur WARN pour le p
 
 Pour utiliser les journaux, voir [Utilisation des enregistrements d’audit et des fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
-### AEM MLS avancé {#aem-advanced-mls}
+### AEM MLS avancés {#aem-advanced-mls}
 
 Pour que la collection SRP (MSRP ou DSRP) prenne en charge la recherche multilingue avancée (MLS), de nouveaux modules externes Solr sont requis en plus d’un schéma personnalisé et d’une configuration Solr. Tous les éléments requis sont compressés dans un fichier ZIP téléchargeable.
 
 Le téléchargement MLS avancé (également appelé &quot;phasetwo&quot;) est disponible à partir du référentiel Adobe :
 
-* [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* [AEM-SOLR-MLS-phasetwo](https://repo1.maven.org/maven2/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
    * Version 1.2.40, 6 avril 2016
    * Téléchargez AEM-SOLR-MLS-phasetwo-1.2.40.zip
@@ -294,7 +289,7 @@ ensuite [configurez l’agent de réplication](#replication-agents-on-author).
 
 ![](../assets/tunnel-service.png)
 
-### Répliquer la clé de chiffrement {#replicate-the-crypto-key}
+### Réplication de la clé de chiffrement {#replicate-the-crypto-key}
 
 Il existe deux fonctionnalités d’AEM Communities qui nécessitent que toutes les instances AEM serveur utilisent les mêmes clés de chiffrement. Il s’agit de [Analytics](/help/communities/analytics.md) et [ASRP](/help/communities/asrp.md).
 
@@ -306,7 +301,7 @@ Pour copier les documents clés de l’auteur vers toutes les autres instances, 
 
    * Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local.
 
-      Par exemple,
+      Par exemple :
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * Le fichier `bundle.info` identifie le lot.
@@ -355,7 +350,7 @@ Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md
 
 ![](../assets/replicare-repository.png)
 
-#### Actualisez le lot de chiffrement Granite {#refresh-the-granite-crypto-bundle}
+#### Actualisation du lot de chiffrement Granite {#refresh-the-granite-crypto-bundle}
 
 * Sur chaque instance de publication, accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
@@ -369,7 +364,7 @@ Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md
 * Après un moment, une boîte de dialogue **Succès** doit s’afficher :
    `Operation completed successfully.`
 
-### Serveur HTTP Apache {#apache-http-server}
+### Apache HTTP Server {#apache-http-server}
 
 Si vous utilisez le serveur Apache HTTP, veillez à utiliser le nom de serveur correct pour toutes les entrées pertinentes.
 

@@ -2,10 +2,10 @@
 title: Notes de mise à jour générales de [!DNL Adobe Experience Manager] 6.5
 description: '[!DNL Adobe Experience Manager]Notes relatives à  6.5 décrivant les informations de version, les nouveautés, la procédure d’installation et les listes de modifications détaillées.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f8fcfa9e09167cd4dbaafe938bcbe3ee6ece270f
 workflow-type: tm+mt
 source-wordcount: '2150'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -102,7 +102,7 @@ Nouvelles fonctionnalités de l’API HTTP :
 * Exposition des listes de fragments de contenu via Content Services avec le [composant principal de la liste de fragments de contenu](https://opensource.adobe.com/aem-core-wcm-components/library/content-fragment-list.html).
 * [Bibliothèque de composants de principaux](https://opensource.adobe.com/aem-core-wcm-components/library.html) indiquant la sortie JSON par défaut de Content Services pour chaque composant
 
-#### Module complémentaire Screens  {#screens-add-on}
+#### Module complémentaire Screens {#screens-add-on}
 
 Concevez, diffusez et optimisez efficacement les expériences sur tous les écrans digitaux, depuis les kiosques interactifs jusqu’à la signalisation digitales.
 
@@ -129,7 +129,7 @@ Liste complète des modifications apportées aux [Notes de mise à jour d’AEM 
 
 AEM 6.5 propose les fonctionnalités et améliorations suivantes pour accroître la productivité des utilisateurs AEM, des rôles DAM et des rôles de création et de marketing associés.
 
-#### Intégration avec Adobe Creative Cloud  {#integration-with-adobe-creative-cloud}
+#### Intégration avec Adobe Creative Cloud {#integration-with-adobe-creative-cloud}
 
 L’ajout d’[Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html), expérience intégrée pour les créatifs utilisant les applications Adobe Creative Cloud, notamment Photoshop, Illustrator et InDesign, simplifie la collaboration entre créatifs et marketeurs dans le processus de création de contenu. L’appli de bureau AEM continue de prendre en charge les besoins des utilisateurs qui utilisent les ressources d’AEM sur le bureau, quel que soit le type de fichier et l’application de bureau.
 
@@ -190,11 +190,11 @@ Pour obtenir la liste détaillée des modifications, voir [Notes de mise à jour
 
 Vous pouvez intégrer Livefyre à votre instance AEM 6.5. Voir [Comment intégrer Livefyre à AEM](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html).
 
-### Exploitation du développement axé sur le client {#leverage-customer-focused-development}
+### Exploitation du développement axé sur les clients {#leverage-customer-focused-development}
 
 Adobe applique un modèle de développement axé sur les utilisateurs afin que ces derniers puissent contribuer à toutes les étapes du processus de développement, au cours des phases de spécification, de développement et de tests. Merci à tous les utilisateurs et partenaires qui contribuent à ce processus.
 
-Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et du développement des demandes d’amélioration. Le [portail d’assistance Adobe Marketing Cloud](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) est intégré au système de suivi des défauts et des améliorations de l’Adobe. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. La priorité est donnée au développement à la prise en charge payante, aux problèmes de garantie et aux améliorations payantes du client.
+Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et du développement des demandes d’amélioration. Le [portail d’assistance aux Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#support) est intégré au système de suivi des défauts et des améliorations de l’Adobe. Si possible, les questions des clients sont identifiées et résolues par l’équipe du service clientèle. Lorsqu’elles sont transmises au service R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. La priorité est donnée au développement à la prise en charge payante, aux problèmes de garantie et aux améliorations payantes du client.
 
 Ce processus de hiérarchisation a généré plus de 750 modifications axées sur le client, corrigées dans AEM 6.5.
 
@@ -208,7 +208,7 @@ Ce processus de hiérarchisation a généré plus de 750 modifications axées su
 * Module externe pour Eclipse IDE ([plus d’infos et téléchargement](/help/sites-developing/aem-eclipse.md))
 
 * Extension pour l’éditeur de code Brackets ([plus d’infos et téléchargement](/help/sites-developing/aem-brackets.md))
-* Dépendances Maven/Gradle ([lien de téléchargement](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.5.0))
+* Dépendances Maven/Gradle ([lien de téléchargement](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.0/))
 
 **Sites**
 
@@ -235,10 +235,10 @@ Ce processus de hiérarchisation a généré plus de 750 modifications axées su
 * Package permettant d’ajouter un rasteriseur PDF amélioré ([en savoir plus](/help/assets/aem-pdf-rasterizer.md))
 * Module pour ajouter la prise en charge étendue des images RAW ([plus d’infos](/help/assets/camera-raw.md))
 
-**Forms**
+**Formulaires**
 
-* [Packages pour les fonctionnalités AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html)
-* [SDK client AEM Forms OSGi](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
+* [Packages pour les fonctionnalités AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [SDK client AEM Forms OSGi](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Langues {#languages}
 
@@ -257,7 +257,7 @@ L’interface utilisateur est disponible dans les langues suivantes :
 
 [!DNL Experience Manager] 6.5 a été certifié dans le cadre de la norme GB18030-2005 CITS pour utiliser le codage des caractères chinois.
 
-## Installer et mettre à jour {#install-update}
+## Installation et mise à jour {#install-update}
 
 Pour connaître les exigences de configuration, voir [instructions d’installation](/help/sites-deploying/custom-standalone-install.md).
 
