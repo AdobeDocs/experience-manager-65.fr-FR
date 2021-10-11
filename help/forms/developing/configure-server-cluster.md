@@ -1,7 +1,8 @@
 ---
 title: Comment configurer et résoudre les problèmes liés à une grappe de serveurs AEM Forms on JEE ?
 description: Découvrez comment configurer et résoudre les problèmes liés à une grappe de serveurs AEM Forms on JEE
-source-git-commit: 8502e0227819372db4120d3995fba51c7401d944
+exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
 source-wordcount: '4033'
 ht-degree: 1%
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 ## Connaissances préalables {#prerequisites}
 
-Familiarisez-vous avec les serveurs d’applications AEM Forms on JEE, JBoss, WebSphere et Webogic, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX ou Sun Solaris, les Oracles, les serveurs de base de données IBM DB2, SQL Server et les environnements Web.
+Familiarisez-vous avec les serveurs d’applications AEM Forms on JEE, JBoss, WebSphere et Webogic, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX ou Sun Solaris, les serveurs de base de données Oracle, IBM DB2 ou SQL Server, ainsi qu’avec les environnements Web.
 
 ## Niveau d’utilisateur {#user-level}
 
@@ -266,7 +267,7 @@ Pour déterminer comment Quartz s’est configuré, vous devez consulter les mes
 INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
 Il est important de localiser cette première ligne dans les journaux, car certains serveurs d’applications utilisent également Quartz et leurs instances Quartz ne doivent pas être confondues avec l’instance utilisée par le service de programmation d’AEM Forms on JEE. C’est l’indication que le service Planificateur est en cours de démarrage et que les lignes qui le suivent vous indiquent s’il démarre correctement en mode organisé en grappes. Plusieurs messages s’affichent dans cette séquence. Il s’agit du dernier message &quot;démarré&quot; qui indique la configuration de Quartz :
 
-Voici le nom de l’instance Quartz : `IDPSchedulerService_$_ap-hp8.ottperflab.corp.adobe.com1312883903975`. Le nom de l’instance Quartz du planificateur commence toujours par la chaîne `IDPSchedulerService_$_`. La chaîne ajoutée à la fin de cette chaîne indique si Quartz est exécuté ou non en mode organisé en grappes. L’identifiant unique long généré à partir du nom d’hôte du noeud et une longue chaîne de chiffres, ici `ap-hp8.ottperflab.corp.adobe.com1312883903975`, indique qu’il fonctionne dans une grappe. S’il fonctionne comme un seul noeud, l’identifiant sera un nombre à deux chiffres, &quot;20&quot; :
+Voici le nom de l’instance Quartz : `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Le nom de l’instance Quartz du planificateur commence toujours par la chaîne `IDPSchedulerService_$_`. La chaîne ajoutée à la fin de cette chaîne indique si Quartz est exécuté ou non en mode organisé en grappes. L’identifiant unique long généré à partir du nom d’hôte du noeud et une longue chaîne de chiffres, ici `ap-hp8.ottperflab.adobe.com1312883903975`, indique qu’il fonctionne dans une grappe. S’il fonctionne comme un seul noeud, l’identifiant sera un nombre à deux chiffres, &quot;20&quot; :
 
 INFO `[org.quartz.core.QuartzScheduler]` Démarrage du planificateur `IDPSchedulerService_$_20`.
 Cette vérification doit être effectuée séparément sur tous les noeuds de la grappe, car le planificateur de chaque noeud détermine indépendamment s’il convient d’opérer en mode de grappe.
@@ -332,19 +333,3 @@ Bien que ces fichiers et chemins d’accès puissent être partagés entre les n
 Le chemin d’accès au répertoire temporaire, en particulier, ne doit pas être partagé entre les noeuds. Une procédure similaire à celle décrite pour la vérification du répertoire de stockage global de documents doit être utilisée pour vérifier que le répertoire temporaire n’est pas partagé : accédez à chaque noeud, créez un fichier temporaire dans le chemin d’accès indiqué par le paramètre de chemin d’accès, puis vérifiez que les autres noeuds ne partagent pas le fichier. Le chemin d’accès au répertoire temporaire doit faire référence à l’enregistrement de disque local sur chaque noeud, le cas échéant, et doit être vérifié.
 
 Pour chacun des paramètres de chemin d’accès, assurez-vous que le chemin d’accès existe réellement et est accessible à partir de chaque noeud de la grappe, en utilisant l’identité d’utilisation effective sous laquelle AEM Forms on JEE s’exécute. Le contenu du répertoire des polices doit être lisible. Le répertoire temporaire doit permettre la lecture, l’écriture et le contrôle.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

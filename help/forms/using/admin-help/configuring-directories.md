@@ -1,8 +1,8 @@
 ---
 title: Configuration des annuaires
-seo-title: Configuration des annuaires
+seo-title: Configuring directories
 description: Découvrez comment ajouter, modifier et supprimer des répertoires et comment configurer la gestion des utilisateurs afin d’utiliser VLV (Virtual List View).
-seo-description: Découvrez comment ajouter, modifier et supprimer des répertoires et comment configurer la gestion des utilisateurs afin d’utiliser VLV (Virtual List View).
+seo-description: Learn how to add, edit and delete directories and configure user management to use virtual list view.
 uuid: 0bf1a8a7-c917-4248-9937-d24e31c5ba17
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '3246'
+source-wordcount: '3227'
 ht-degree: 78%
 
 ---
@@ -25,7 +25,7 @@ Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires q
 
 Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires que le fournisseur d’authentification interroge pour obtenir les informations utilisateur. Vous pouvez ajouter un annuaire à un domaine d’entreprise existant ou à un nouveau domaine d’entreprise que vous ajoutez. Il est possible de configurer plusieurs annuaires par domaine. Vous pouvez également configurer un domaine afin qu’il utilise une interface SPI personnalisée pour la synchronisation.
 
-### Ajout d’un annuaire  {#add-a-directory}
+### Ajout d’un annuaire {#add-a-directory}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise ou sélectionnez un domaine d’entreprise existant.
@@ -41,7 +41,7 @@ Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires q
 1. Sélectionnez Paramètres du groupe et procédez à la configuration requise. Voir [Paramètres d’annuaire](configuring-directories.md#directory-settings).
 1. Cliquez sur Tester pour vérifier que le DN de base et les autres attributs configurés collectent le lot de groupes correct. Si des groupes sont renvoyés, les résultats affichent les valeurs affectées à chaque champ conformément à l’ensemble d’attributs. Cliquez sur Fermer.
 
-### Ajout d’une interface SPI personnalisée  {#add-a-custom-spi}
+### Ajout d’une interface SPI personnalisée {#add-a-custom-spi}
 
 Pour plus d’informations sur la création d’une interface SPI personnalisée, consultez la section « Développement d’interfaces SPI pour AEM Forms » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63). Afin de rendre disponible une interface SPI personnalisée déployée récemment pour une association au domaine, redémarrez le serveur.
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur la création d’une interface SPI personnalisée
 1. Sélectionnez un fournisseur d’utilisateurs personnalisé dans la liste et cliquez sur Suivant.
 1. Sélectionnez un fournisseur de groupes personnalisé dans la liste et cliquez sur Terminer.
 
-## Modification d’un annuaire  {#edit-a-directory}
+## Modification d’un annuaire {#edit-a-directory}
 
 Vous pouvez modifier les détails d’un annuaire déjà configuré.
 
@@ -61,7 +61,7 @@ Vous pouvez modifier les détails d’un annuaire déjà configuré.
 1. Configurez les paramètres relatifs à l’annuaire, à l’utilisateur et au groupe. Voir [Paramètres d’annuaire](configuring-directories.md#directory-settings).
 1. Cliquez sur OK.
 
-## Suppression d’un annuaire  {#delete-a-directory}
+## Suppression d’un annuaire {#delete-a-directory}
 
 Lorsque vous synchronisez vos domaines après la suppression d’un annuaire, tous les utilisateurs et groupes de cet annuaire sont marqués comme obsolètes dans la base de données. Ils ne sont renvoyés dans aucune recherche effectuée à partir de Administration Console.
 
@@ -74,11 +74,11 @@ Lorsque vous synchronisez vos domaines après la suppression d’un annuaire, to
 1. Cochez la case correspondant à l’annuaire approprié, puis cliquez sur Supprimer.
 1. Cliquez sur OK dans la page de confirmation qui s’affiche, puis de nouveau sur OK.
 
-## Paramètres d’annuaire  {#directory-settings}
+## Paramètres d’annuaire {#directory-settings}
 
 Lorsque vous ajoutez un nouvel annuaire à un domaine, définissez les paramètres d’annuaire suivants.
 
-**Serveur :** (obligatoire) nom de domaine complet (FQDN) du serveur d’annuaire. Par exemple, le nom de domaine complet d’un ordinateur appelé x sur le réseau corp.adobe.com est x.corp.adobe.com. Il est possible d’utiliser une adresse IP à la place du nom de domaine complet du serveur.
+**Serveur :** (obligatoire) nom de domaine complet (FQDN) du serveur d’annuaire. Par exemple, pour un ordinateur appelé x sur le réseau adobe.com, le nom de domaine complet est x.adobe.com. Il est possible d’utiliser une adresse IP à la place du nom de domaine complet du serveur.
 
 **Port :**  (obligatoire) port utilisé par le serveur d’annuaire. Il s’agit du port 389 ou 636 si les informations d’authentification sont envoyées via le protocole SSL sur le réseau.
 
@@ -218,7 +218,7 @@ Si des utilisateurs et des groupes sont renvoyés, les résultats affichent les 
 >
 >User Management ne prend pas en charge les ID utilisateur en double dans un même domaine, et seul un utilisateur portant cet ID utilisateur est synchronisé.
 
-## Configuration de User Management pour utiliser Virtual List View (VLV)  {#configure-user-management-to-use-virtual-list-view-vlv}
+## Configuration de User Management pour utiliser Virtual List View (VLV) {#configure-user-management-to-use-virtual-list-view-vlv}
 
 Il est très important de synchroniser les annuaires de User Management. Les utilisateurs et les groupes sont synchronisés depuis un annuaire d’entreprise vers la base de données AEM forms afin d’attribuer les rôles et les autorisations. Le nombre d’utilisateurs varie de 100 à plus de 100 000 en fonction des exigences et cela pose un véritable défi technique lorsqu’il s’agit de synchroniser les données efficacement.
 
@@ -232,7 +232,7 @@ Le protocole LDAP fournit un mécanisme destiné à interroger les ensembles de 
 1. Utilisez Sun ONE Administration Console ou un script de ligne de commande pour créer les entrées VLV LDAP des utilisateurs et des groupes. Si vous utilisez un script de ligne de commande, aidez-vous des fichiers LDIF utilisateurs et groupes fournis à titre d’exemple. Voir [Configuration du serveur d’annuaire Sun ONE pour VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).
 1. Arrêtez le serveur et redémarrez l’index requis. Voir [Création de l’index du serveur d’annuaire pour VLV](configuring-directories.md#create-the-directory-server-index-for-vlv).
 
-### Configuration du serveur d’annuaire Sun ONE pour VLV  {#configuring-the-sun-one-directory-server-for-vlv}
+### Configuration du serveur d’annuaire Sun ONE pour VLV {#configuring-the-sun-one-directory-server-for-vlv}
 
 La création d’un contrôle VLV exige une paire d’entrées intégrant les classes d’objet `vlvSearch` et `vlvIndex`. L’entrée vlvSearch inclut une base de recherche et l’attribut `vlvFilter` qui définit la classe d’objet contenant les attributs à trier. La classe d’objet `vlvIndex` inclut l’attribut `vlvSort` qui spécifie un ou plusieurs attributs à trier et l’ordre dans lequel les trier. (Un signe moins (-) indique l’ordre alphabétique inverse). L’utilisation du contrôle VLV avec AEM forms exige des entrées séparées pour les utilisateurs et les groupes.
 

@@ -1,8 +1,8 @@
 ---
 title: Configuration des fournisseurs d’authentification
-seo-title: Configuration des fournisseurs d’authentification
+seo-title: Configuring authentication providers
 description: Ajoutez, modifiez ou supprimez des fournisseurs d’authentification, modifiez les paramètres d’authentification et découvrez l’approvisionnement juste à temps des utilisateurs.
-seo-description: Ajoutez, modifiez ou supprimez des fournisseurs d’authentification, modifiez les paramètres d’authentification et découvrez l’approvisionnement juste à temps des utilisateurs.
+seo-description: Add, edit, or delete authentication providers, change authentication settings, and read about just-in-time provisioning of users.
 uuid: 90e7690b-1ce0-4604-b58f-6dca4f2372cf
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 83%
+source-wordcount: '1576'
+ht-degree: 80%
 
 ---
 
@@ -32,14 +32,14 @@ Si vous activez la fonction SSO avec le protocole SPNEGO, ajoutez un fournisseur
 1. (Facultatif) Cliquez sur Tester pour tester la configuration.
 1. Cliquez sur OK, puis de nouveau sur OK.
 
-## Modification d’un fournisseur d’authentification  {#edit-an-existing-authentication-provider}
+## Modification d’un fournisseur d’authentification {#edit-an-existing-authentication-provider}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Sélectionnez le domaine approprié dans la liste.
 1. Dans la page qui apparaît, sélectionnez le fournisseur d’authentification approprié dans la liste et appliquez les modifications souhaitées. Voir [Paramètres d’authentification](configuring-authentication-providers.md#authentication-settings).
 1. Cliquez sur OK.
 
-## Suppression d’un fournisseur d’authentification  {#delete-an-authentication-provider}
+## Suppression d’un fournisseur d’authentification {#delete-an-authentication-provider}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Sélectionnez le domaine approprié dans la liste.
@@ -58,7 +58,7 @@ Pour utiliser un serveur LDAP spécifié dans la configuration de l’annuaire,
 
 Pour utiliser un serveur LDAP différent pour l’authentification, sélectionnez LDAP comme fournisseur d’authentification puis cochez la case Authentification LDAP personnalisée. Les paramètres de configuration suivants s’affichent.
 
-**Serveur :** (obligatoire) nom de domaine complet (FQDN) du serveur d’annuaire. Par exemple, le nom de domaine complet d’un ordinateur appelé x sur le réseau corp.exemple.com est x.corp.exemple.com. Il est possible d’utiliser une adresse IP à la place du nom de domaine complet du serveur.
+**Serveur :** (obligatoire) nom de domaine complet (FQDN) du serveur d’annuaire. Par exemple, pour un ordinateur appelé x sur le réseau example.com, le nom de domaine complet est x.example.com. Il est possible d’utiliser une adresse IP à la place du nom de domaine complet du serveur.
 
 **Port :**  (obligatoire) port utilisé par le serveur d’annuaire. Il s’agit du port 389 ou 636 si les informations d’authentification sont envoyées via le protocole SSL sur le réseau.
 
@@ -86,7 +86,7 @@ Si vous configurez une authentification pour un domaine d’entreprise ou hybrid
 
 **Hôte KDC :** nom d’hôte complet ou adresse IP du serveur Principal Directory utilisé pour l’authentification.
 
-**Utilisateur du service :** si vous utilisez Principal Directory 2003, cette valeur est le mappage créé pour l’entité de service dans le formulaire  `HTTP/<server name>`. Si vous utilisez Active Directory 2008, cette valeur correspond à l’ID de connexion du nom principal de service. Par exemple, supposons que le nom principal de service soit um spnego, l’ID utilisateur est spnegodemo et le mappage est HTTP/exemple.corp.votreentreprise.com. Avec Active Directory 2003, affectez à Utilisateur du service la valeur HTTP/exemple.corp.votreentreprise.com. Avec Active Directory 2008, affectez à Utilisateur du service la valeur spnegodemo. Voir Activation de la fonction SSO à l’aide de SPNEGO .
+**Utilisateur du service :** si vous utilisez Principal Directory 2003, cette valeur est le mappage créé pour l’entité de service dans le formulaire  `HTTP/<server name>`. Si vous utilisez Active Directory 2008, cette valeur correspond à l’ID de connexion du nom principal de service. Supposons, par exemple, que l’entité de service soit nommée um spnego, que l’ID utilisateur soit spnegodemo et que le mappage soit HTTP/example.yourcompany.com. Avec Principal Directory 2003, vous définissez Service User sur HTTP/example.yourcompany.com. Avec Active Directory 2008, affectez à Utilisateur du service la valeur spnegodemo. Voir Activation de la fonction SSO à l’aide de SPNEGO .
 
 **Domaine d’administration du service :** nom de domaine pour Active Directory
 
@@ -121,7 +121,7 @@ Les propriétés personnalisées suivantes sont requises en cas d’utilisation 
 
 Si vous configurez une authentification pour un domaine d’entreprise ou hybride et optez pour une authentification personnalisée, sélectionnez le nom du fournisseur d’authentification personnalisé.
 
-## Approvisionnement juste à temps des utilisateurs  {#just-in-time-provisioning-of-users}
+## Approvisionnement juste à temps des utilisateurs {#just-in-time-provisioning-of-users}
 
 Après qu’un utilisateur est authentifié par le fournisseur d’authentification, l’approvisionnement juste à temps crée automatiquement cet utilisateur dans la base de données. Les rôles et groupes pertinents sont également affectés automatiquement à ce nouvel utilisateur. Vous pouvez activer l’approvisionnement juste à temps pour les domaines d’entreprise et hybrides.
 
@@ -131,7 +131,7 @@ Cette procédure décrit le fonctionnement général de l’authentification dan
 1. Le fournisseur d’authentification valide les informations d’identification.
 1. Il vérifie ensuite si l’utilisateur existe dans la base de données User Management. L’un des états suivants s’affiche :
 
-   **** Existe : si l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
+   **** ExistsSi l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
 
    **Does not** existsUser Management renvoie un échec d’authentification.
 
@@ -144,7 +144,7 @@ Lorsque l’approvisionnement juste à temps est activé, les nouveaux utilisate
 
 Si l’approvisionnement juste à temps n’est pas activé, lorsque l’authentification d’un utilisateur est confirmée, mais que celui-ci ne se trouve pas dans la base de données User Management, un échec d’authentification est indiqué. L’approvisionnement juste à temps ajoute une étape dans le processus d’authentification pour créer l’utilisateur et lui affecter des rôles et groupes.
 
-### Activation de l’approvisionnement juste à temps pour un domaine  {#enable-just-in-time-provisioning-for-a-domain}
+### Activation de l’approvisionnement juste à temps pour un domaine {#enable-just-in-time-provisioning-for-a-domain}
 
 1. Ecrivez un conteneur de services qui implémente les interfaces Créateur d’identité (IdentityCreator) et Fournisseur d’affectation (AssigmentProvider). (Voir [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).)
 1. Déployez le conteneur de services sur le serveur Forms.

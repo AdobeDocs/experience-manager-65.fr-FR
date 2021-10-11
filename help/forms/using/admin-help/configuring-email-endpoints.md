@@ -1,8 +1,8 @@
 ---
 title: Configuration des points de fin de courrier électronique
-seo-title: Configuration des points de fin de courrier électronique
+seo-title: Configuring email endpoints
 description: Découvrez comment configurer les points de fin de courrier électronique.
-seo-description: Découvrez comment configurer les points de fin de courrier électronique.
+seo-description: Learn how to configure email endpoints.
 uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '3766'
-ht-degree: 60%
+source-wordcount: '3757'
+ht-degree: 59%
 
 ---
 
@@ -58,19 +58,19 @@ Vous pouvez configurer les paramètres POP3, IMAP ou SMTP pour utiliser SSL (Sec
 >
 >Conseil : si vous rencontrez des problèmes pour utiliser SSL, vérifiez qu’un client de courrier électronique tel que Microsoft Outlook a accès au serveur de courrier électronique à l’aide de SSL. Si le client de courrier électronique ne parvient pas à accéder au serveur de courrier électronique, le problème tient à la configuration du certificat ou du serveur de courrier électronique.
 
-## Configuration des paramètres par défaut des points de fin du courrier électronique  {#configure-default-email-endpoint-settings}
+## Configuration des paramètres par défaut des points de fin du courrier électronique {#configure-default-email-endpoint-settings}
 
 Vous pouvez utiliser la page Gestion des services pour configurer des attributs communs à tous les points de fin de courrier électronique et fournir des valeurs par défaut pour tous ces points de fin.
 
 Pour que le processus des formulaires reçoive et traite les courriers électroniques entrants envoyés par des utilisateurs, vous devez créer un point de fin de courrier électronique pour le service Complete Task. Ce point de fin de courrier électronique exige des paramètres supplémentaires, décrits dans [Création d’un point de fin de courrier électronique pour le service Complete Task](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service).
 
-### Modification des valeurs par défaut pour tous les points de fin de courrier électronique  {#change-the-default-values-for-email-endpoints}
+### Modification des valeurs par défaut pour tous les points de fin de courrier électronique {#change-the-default-values-for-email-endpoints}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
 1. Dans la page Gestion des services, cliquez sur Email: 1.0 (l’ID de composant est com.adobe.idp.dsc.provider.service.email.Email).
 1. Dans l’onglet Configuration, spécifiez les paramètres par défaut des points de fin de courrier électronique et cliquez sur Enregistrer.
 
-### Paramètres par défaut des points de fin de courrier électronique  {#default-email-endpoint-settings}
+### Paramètres par défaut des points de fin de courrier électronique {#default-email-endpoint-settings}
 
 **Expression cron :** expression cron utilisée par quartz pour planifier l’interrogation du répertoire d’entrée.
 
@@ -106,7 +106,7 @@ Pour que le processus des formulaires reçoive et traite les courriers électron
 
 **SSL POP3/IMAP activé :** lorsque cette option est sélectionnée, SSL est activé.
 
-**Hôte SMTP :** nom d’hôte du serveur de messagerie utilisé par le fournisseur de messagerie pour envoyer les résultats et les messages d’erreur. Par exemple, mail.corp.exemple.com.
+**Hôte SMTP :** nom d’hôte du serveur de messagerie utilisé par le fournisseur de messagerie pour envoyer les résultats et les messages d’erreur. Par exemple, mail.example.com.
 
 **Port SMTP :** port utilisé pour se connecter au serveur de messagerie. La valeur par défaut est 25.
 
