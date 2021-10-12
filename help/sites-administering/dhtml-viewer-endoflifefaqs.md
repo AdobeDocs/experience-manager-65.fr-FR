@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 exl-id: 06b74770-1f96-4f6b-98c0-afef7000e42b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62544559020b0c0afd7bb31fb832b82ba3d47919
 workflow-type: tm+mt
 source-wordcount: '42'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Depuis le 31 janvier 2014, la plateforme de la visionneuse DHTML n’est officiellement plus prise en charge.
 
-Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=fr) pour connaître les dernières visionneuses prises en charge.
+Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) pour connaître les dernières visionneuses prises en charge.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 
