@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 3f55ebfe3b1603a573fcb77155227c449c6c0fbb
+source-git-commit: 1651fadeda0f2b37c90af2e1b2f84d74c118ccd9
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1690'
 ht-degree: 62%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->La connexion IMS pour AEM ne prend pas en charge les groupes imbriqués dans le Admin Console.
+>AEM ne prend actuellement pas en charge l’affectation de groupes à des profils.  Les utilisateurs doivent être ajoutés individuellement à la place.
 
 ## Présentation {#introduction}
 
