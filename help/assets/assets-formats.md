@@ -4,11 +4,11 @@ description: Formats de fichiers et types MIME pris en charge par [!DNL Assets] 
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
-feature: Gestion des ressources,Rendus
+feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
+source-git-commit: c8e83622070572d104f2cdc20c592ac2e9d0d31b
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1535'
 ht-degree: 60%
 
 ---
@@ -120,9 +120,9 @@ The following table describes the sub-types of raster image formats that are *no
 
 ## Bibliothèque PDF Rasterizer prise en charge {#supported-pdf-rasterizer-library}
 
-La bibliothèque Adobe PDF Rasterizer génère des miniatures et des aperçus de haute qualité pour les fichiers [!DNL Adobe Illustrator] et PDF volumineux et encombrants en contenu. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
+La bibliothèque Adobe PDF Rasterizer génère des miniatures et des aperçus de haute qualité pour les fichiers [!DNL Adobe Illustrator] et de PDF volumineux et gourmands en contenu. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
 
-* Fichiers AI/PDF riches en contenu qui nécessitent un traitement intensif en ressources.
+* Fichiers AI/PDF gourmands en contenu dont le traitement nécessite beaucoup de ressources.
 * Fichiers AI/PDF pour lesquels les miniatures ne sont pas générées par défaut.
 * Fichiers AI contenant des couleurs PMS (Pantone Matching System).
 
@@ -218,8 +218,6 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM, RM | RealVideo | Non pris en charge | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | - |
 
 ## Formats d’archives pris en charge {#supported-archive-formats}
 
@@ -315,6 +313,6 @@ Une liste des types MIME pris en charge est disponible en CRXDE Lite à l’adre
 
 >[!MORELIKETHIS]
 >
->* [Activez la prise en charge](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) des paramètres de tâche de téléchargement Assets et Dynamic Media Classic basés sur le type MIME .
+>* [Activez la prise en charge](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) des paramètres de tâche de téléchargement Assets et Dynamic Media Classic basés sur le type MIME.
 >* [Configurez le type MIME en fonction de la prise en charge](config-dynamic.md) des paramètres de tâche de téléchargement.
 
