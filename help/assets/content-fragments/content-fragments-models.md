@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 924b30680b189ec5061eb0bd664165793a9dbd9c
+source-git-commit: 966398715af1d9083512c4f6d4f0f81c72c898ae
 workflow-type: tm+mt
-source-wordcount: '2334'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +75,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
       * Si vous entrez un **libellé de champ**, le **nom de propriété** est automatiquement renseigné. S’il est vide, il peut être mis à jour manuellement par la suite.
 
          >[!CAUTION]
-         Lors de la mise à jour manuelle d’un type de données **Nom de propriété**, notez que les noms ne doivent contenir que des caractères latins, des chiffres et un trait de soulignement &quot;_&quot; comme caractère spécial.
+         Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères latins, des chiffres et un trait de soulignement &quot;_&quot; comme caractère spécial.
          Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
       Par exemple :
 
@@ -137,9 +137,13 @@ Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un
 
 De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propriétés, les détails supplémentaires sont les suivants :
 
->[!CAUTION]
-Lors de la mise à jour manuelle du **nom de la propriété**, notez que les noms ne doivent contenir que des caractères latins, des chiffres et un trait de soulignement &quot;_&quot; comme caractère spécial.
-Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
+
+* **Nom de la propriété**
+
+   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **must** contiennent *uniquement* des caractères latins, des chiffres et un trait de soulignement &quot;_&quot; comme caractère spécial.
+
+   >[!CAUTION]
+   Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
 
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
