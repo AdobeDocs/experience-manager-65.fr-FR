@@ -1,8 +1,8 @@
 ---
-title: 'Utilisation de Sling Resource Merger dans AEM   '
-seo-title: 'Utilisation de Sling Resource Merger dans AEM   '
+title: Utilisation de Sling Resource Merger dans AEM
+seo-title: Using the Sling Resource Merger in AEM
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
-seo-description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
+seo-description: The Sling Resource Merger provides services to access and merge resources
 uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c07fa148054b69b0da7bb402ef96a50d0895abfa
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 99%
+source-wordcount: '1254'
+ht-degree: 96%
 
 ---
 
-# Utilisation de Sling Resource Merger dans AEM   {#using-the-sling-resource-merger-in-aem}
+# Utilisation de Sling Resource Merger dans AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Objectif {#purpose}
 
@@ -35,7 +35,7 @@ Avec Sling Resource Merger, les ressources et/ou propriétés de recouvrement/re
 
 >[!CAUTION]
 >
->Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’ils ne sont adaptés qu’à l’interface utilisateur tactile standard ; les remplacements définis de cette manière, notamment, ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
+>Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’il s’applique uniquement à l’IU tactile standard ; en particulier, les remplacements définis de cette manière ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
 >
 >S’agissant des incrustations/remplacements relatifs à d’autres sections (y compris d’autres aspects d’un composant tactile ou de l’interface utilisateur classique), le nœud et la structure appropriés doivent être copiés à l’endroit où la personnalisation sera définie à partir de l’original.
 
@@ -62,13 +62,11 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
-   >
-   >
-1. Apportez les modifications désirées dans `/apps`
+>1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+>
+>1. Apportez les modifications désirées dans `/apps`
 
 >
-
 
 
 ### Propriétés {#properties}
