@@ -1,8 +1,8 @@
 ---
 title: Affichage principal de la gestion des autorisations
-seo-title: Affichage principal de la gestion des autorisations
+seo-title: Principal View for Permissions Management
 description: Découvrez la nouvelle interface utilisateur tactile qui facilite la gestion des autorisations.
-seo-description: Découvrez la nouvelle interface utilisateur tactile qui facilite la gestion des autorisations.
+seo-description: Learn about the new Touch UI interface that facilitates permissions management.
 uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
 content-type: reference
@@ -11,10 +11,10 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4ea49fe6745b23f01f46edfe07ff3dd8c8299729
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 88%
+source-wordcount: '699'
+ht-degree: 85%
 
 ---
 
@@ -52,7 +52,7 @@ Cliquez sur le nom pour afficher les autorisations attribuées sur la droite. Le
 
 ![](assets/trei-1.png)
 
-### Ajout d’une nouvelle entrée de contrôle d’accès pour un principal  {#adding-new-access-control-entry-for-a-principal}
+### Ajout d’une nouvelle entrée de contrôle d’accès pour un principal {#adding-new-access-control-entry-for-a-principal}
 
 Vous pouvez créer des autorisations supplémentaires en ajoutant un nouvel accès contrôlant l’entrée, en cliquant sur le bouton Ajouter une nouvelle entrée de contrôle d’accès.
 
@@ -66,7 +66,7 @@ Sur cet exemple, nous sélectionnons un chemin pour lequel configurer une autori
 
 ![](assets/sase-1.png)
 
-Une fois le chemin sélectionné, le workflow revient sur cet écran où l’utilisateur peut sélectionner un ou plusieurs des privilèges des espaces de noms disponibles (par exemple `jcr`, `rep` ou `crx`) comme illustré ci-dessous.
+Une fois le chemin sélectionné, le workflow revient sur cet écran, où l’utilisateur peut sélectionner un ou plusieurs des privilèges des espaces de noms disponibles (comme `jcr`, `rep` ou `crx`), comme illustré ci-dessous.
 
 Vous pouvez ajouter des privilèges en les recherchant à l’aide du champ de texte, puis en les sélectionnant dans la liste.
 
@@ -80,7 +80,7 @@ Une fois la liste des privilèges constituée, l’utilisateur peut choisir le t
 
 ![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
 
-### Utilisation des restrictions  {#using-restrictions}
+### Utilisation des restrictions {#using-restrictions}
 
 Outre la liste des privilèges et le type d’autorisation pour un chemin d’accès donné, cet écran permet également d’ajouter des restrictions pour un contrôle d’accès plus précis, comme illustré ci-dessous :
 
@@ -88,11 +88,13 @@ Outre la liste des privilèges et le type d’autorisation pour un chemin d’ac
 
 >[!NOTE]
 >
->Pour plus d’informations sur les différents types de restriction, consultez [cette page](/help/sites-administering/user-group-ac-admin.md#restrictions).
+>Pour plus d’informations sur la signification de chaque restriction, consultez [Documentation Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-Vous pouvez ajouter des restrictions en sélectionnant le type de restriction, en entrant la valeur et en appuyant sur l’icône **+**, comme on peut voir ci-dessous. ![](assets/sapte-1.png) ![](assets/opt-1.png)
+Vous pouvez ajouter des restrictions en sélectionnant le type de restriction, en entrant la valeur et en appuyant sur l’icône **+**, comme on peut voir ci-dessous.
 
-La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est un privilège agrégé qui inclut `jcr:removeNode` qui a été ajouté ci-dessus, mais qui n’est pas affiché ci-dessous comme il est couvert sous `jcr:write`.
+![](assets/sapte-1.png) ![](assets/opt-1.png)
+
+La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est un privilège agrégé qui inclut `jcr:removeNode` qui a été ajouté ci-dessus, mais qui n’est pas affiché ci-dessous comme couvert sous `jcr:write`.
 
 ### Modification des entrées de contrôle d’accès {#editing-aces}
 
@@ -100,17 +102,17 @@ Pour modifier les entrées de contrôle d’accès, sélectionnez un principal e
 
 Par exemple, ici, nous pouvons modifier l’entrée ci-dessous pour les **utilisateurs DAM** en cliquant sur l’icône en forme de crayon sur la droite :
 
-![](assets/image2019-3-21_0-35-39.png)
+![Ajouter une restriction](assets/image2019-3-21_0-35-39.png)
 
 Les entrées de contrôle d’accès configurées présélectionnées apparaissent sur l’écran de modification. Il est possible de les supprimer en cliquant sur la croix située en regard de celles-ci ou d’ajouter de nouvelles autorisations pour le chemin donné, comme illustré ci-dessous.
 
-![](assets/noua-1.png)
+![Modifier l’entrée](assets/noua-1.png)
 
 Ici, nous ajoutons l’autorisation `addChildNodes` pour les **utilisateurs DAM** sur le chemin donné.
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite. Les modifications seront répercutées dans les nouvelles autorisations pour **dam-users**, comme illustré ci-dessous :
+Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite. Les modifications seront répercutées dans les nouvelles autorisations de **dam-users**, comme illustré ci-dessous :
 
 ![](assets/zece-1.png)
 
@@ -120,7 +122,7 @@ Vous pouvez supprimer des entrées de contrôle d’accès pour supprimer l’en
 
 ![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
 
-### Combinaisons d’autorisations de l’interface utilisateur classique  {#classic-ui-privilege-combinations}
+### Combinaisons d’autorisations de l’interface utilisateur classique {#classic-ui-privilege-combinations}
 
 Notez que la nouvelle interface utilisateur d’autorisations utilise explicitement l’ensemble d’autorisations de base plutôt que des combinaisons prédéfinies qui ne reflètent pas réellement les autorisations sous-jacentes qui ont été accordées.
 
