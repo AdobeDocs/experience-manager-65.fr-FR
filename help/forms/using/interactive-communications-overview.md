@@ -9,10 +9,10 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: dc8e3ed70ebaf064993ef5af910430b7fc2e521d
+source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 79%
+source-wordcount: '486'
+ht-degree: 80%
 
 ---
 
@@ -42,7 +42,7 @@ Voici les fonctionnalités principales des communications interactives :
 
 ### Workflow {#workflow}
 
-Pour créer une communication interactive, préparez les [blocs de création](#buildingblocks) pour la communication interactive, puis effectuez les étapes suivantes :
+Pour créer une communication interactive, vous devez disposer de la variable [blocs de création](#buildingblocks) pour la communication interactive prête, puis effectuez les étapes suivantes :
 
 1. Choisissez de [créer une communication interactive](/help/forms/using/create-interactive-communication.md).
 
@@ -52,7 +52,7 @@ Pour créer une communication interactive, préparez les [blocs de création](#b
 1. Configurez les propriétés suivantes des composants insérés :
 
    1. [Images](/help/forms/using/create-interactive-communication.md#step2)
-   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables)  (y compris les fragments de mise en page)
+   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables) (y compris les fragments de mise en page)
    1. [Graphiques](/help/forms/using/chart-component-interactive-communications.md)
    1. [Fragments de document](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
@@ -67,7 +67,7 @@ Les blocs de construction requis pour la création d’une communication interac
 - [Modèles de canaux web et d’impression](/help/forms/using/web-channel-print-channel.md)
 - [Fragments de document](/help/forms/using/document-fragments.md)
 - Images
-- [](/help/forms/using/themes.md) Thèmes pour le canal web
+- [Thèmes](/help/forms/using/themes.md) pour le canal web
 
 ## Comparaison entre les communications interactives et Correspondence Management {#interactive-communications-vs-correspondence-management}
 
@@ -124,6 +124,12 @@ La communication interactive est l’approche par défaut et recommandée pour c
    <td>Pris en charge</td>
    <td>Pris en charge</td>
   </tr>
+   <tr>
+   <td>Envois</td>
+   <td>Pris en charge</td>
+   <td>Pris en charge</td>
+  </tr>
+  <tr>
   <tr>
    <td>Audit</td>
    <td>Pas de prise en charge</td>
@@ -134,12 +140,6 @@ La communication interactive est l’approche par défaut et recommandée pour c
    <td>Pas de prise en charge</td>
    <td>Pris en charge</td>
   </tr>
-   <tr>
-   <td>Brouillons Gérer les instances</td>
-   <td>Pas de prise en charge</td>
-   <td>Pris en charge</td>
-  </tr>
-  <tr>
    <td>le traitement par lot ;</td>
    <td>Pris en charge </td>
    <td>Pris en charge</td>
