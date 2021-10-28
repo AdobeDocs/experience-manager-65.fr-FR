@@ -2,7 +2,7 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: bfe5bb744223be1ff9a00c382734abd9bf4db59a
+source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 43%
@@ -63,7 +63,7 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 | Intégrations | L’intégration de l’API Salesforce Force a été supprimée de la distribution par défaut (Quickstart) et est désormais un module supplémentaire à installer à partir de . [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | Cette fonctionnalité est toujours disponible. |
 | Formulaires | La prise en charge du service de passerelle d’Adobe Central Migration n’est plus assurée, car le produit Adobe Central n’est plus pris en charge. | Aucun remplacement. |  |
 | Formulaires | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Aucun remplacement. |  |
-| Formulaires | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Aucun remplacement. |
+| Formulaires | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Aucun remplacement. |  |
 | Formulaires | La mise à niveau en un seul bond de LiveCycle ES4 SP1 vers AEM 6.5 Forms on JEE n’est pas disponible | Voir [chemins de mise à niveau disponibles](../forms/using/upgrade.md) dans la documentation de mise à niveau d’AEM Forms. |  |
 | Formulaires | Suppression de la prise en charge de la mise en grappe basée sur UPD d’AEM Forms on JEE | Vous ne pouvez utiliser que la mise en grappe basée sur TCP dans AEM Forms on JEE. Si vous mettez à niveau un serveur de multidiffusion UDP d’une version précédente vers AEM 5.5 Forms on JEE, effectuez des configurations manuelles pour passer à la mise en grappe de gemfire basée sur TCP. Pour obtenir des instructions détaillées, voir [Mise à niveau vers AEM 6.5 forms on JEE](../forms/using/upgrade-forms-jee.md) |  |
 | Développeurs | Firebug Lite a été supprimé de la distribution par défaut (Quickstart). | Utilisez les consoles de développement intégrées au navigateur. |
