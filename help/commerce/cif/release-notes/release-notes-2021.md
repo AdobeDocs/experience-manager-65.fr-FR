@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
+source-git-commit: 7261a71769dfb968c768e0cb4835d7d4cca97b1a
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 22%
+source-wordcount: '1327'
+ht-degree: 31%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 22%
 
 Passez en revue la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
 
-**Avec la version d’avril, nous avons remplacé le connecteur CIF de GitHub par le module complémentaire CIF** disponible sur la distribution de logiciels  [Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Le passage au module complémentaire présente de nombreux avantages pour les projets :
+**Avec la version d’avril, nous avons remplacé le connecteur CIF de GitHub par le module complémentaire CIF.** qui est disponible sur la [Distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Le passage au module complémentaire présente de nombreux avantages pour les projets :
 
 * La plupart des nouvelles fonctionnalités seront immédiatement disponibles dans AEM 6.5 (plus d’attente pour le port latéral de la fonctionnalité).
 * Mise à niveau aisée vers de nouvelles versions de module complémentaire
@@ -28,6 +28,26 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 | Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Date de publication : Octobre 2021
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2021.10.20.02 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
+| Composants principaux CIF | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
+| Site de référence CIF Venia | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
+
+### Nouveautés {#what-is-new-october}
+
+* Le module complémentaire CIF prend en charge la dernière version de Commerce v2.4.3 avec de nouvelles API et schémas GraphQL.
+
+* Les auteurs peuvent ajouter des liens vers des pages de produits et de catalogues dans des champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
+
+* Le panier et le passage en caisse des fenêtres contextuelles existantes ont été remplacés par un panier AEM dédié et des pages de passage en caisse. Les composants de ces pages sont créés à l’aide des composants de périodicité extensibles du Magento.
+
+* Les vendeurs peuvent masquer certaines catégories de catalogues de produits dans la navigation à l’aide du serveur principal Commerce. Le composant principal de navigation CIF respecte la configuration du serveur principal de commerce &quot;inclure dans le menu&quot; pour afficher/masquer les catégories dans la navigation.
+
+* AEM Storefront Venia renvoie une erreur HTTP 404 si la page de catégorie ou de produit est introuvable
 
 ## Date de publication : Septembre 2021
 
@@ -49,7 +69,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Respect de la propriété &quot;include_in_menu&quot; dans le composant de navigation
 
-### Correctifs {#bug-fixes-september}
+### Correctifs  {#bug-fixes-september}
 
 * Le vidage du cache du menu ne fonctionne pas comme prévu.
 
@@ -73,7 +93,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Meilleure prise en charge d’A11Y pour les composants principaux CIF
 
-### Correctifs {#bug-fixes-august}
+### Correctifs  {#bug-fixes-august}
 
 * Impossible de fermer l’accordéon Filtre de catégorie une fois ouvert
 
@@ -94,11 +114,11 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 ### Nouveautés {#what-is-new-july}
 
 * Composants principaux CIF v2
-   * Simplification et amélioration des configurations pour l’URL PDP/PLP et l’optimisation du référencement
-   * Indicateur visuel pour les données de produits intermédiaires en mode création pour une meilleure visibilité des modifications à venir
-   * Nouveau composant sitemap pour les pages de contenu et de commerce
+   * Simplification et amélioration des configurations pour URL PDP/PLP et SEO
+   * Indicateur visuel pour les données de produits évaluées en mode création pour une meilleure visibilité des modifications à venir
+   * Nouveau composant sitemap pour pages de contenu et de commerce
 
-* Prise en charge de la [recommandation de produit Adobe Commerce Sensei, optimisée par Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) dans AEM Storefront à l’aide de recommandations prédéfinies ou créées à la volée
+* Prise en charge de la [recommandation de produit Adobe Commerce Sensei, optimisée par Adobe Sensei](https://business.adobe.com/fr/products/magento/product-recommendations.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
 
 ## Date de publication : Juin 2021
 
@@ -110,11 +130,11 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 ### Nouveautés {#what-is-new-june}
 
-* Nouveaux types de données de référence de catégorie et de produit CIF pour les fragments de contenu (Incl. prise en charge de l’interface utilisateur du sélecteur de produits/catégories)
-* Nouveau composant principal de fragment de contenu commercial
+* Nouveaux types de données de référence de catégorie et de produit CIF pour les fragments de contenu (y compris prise en charge de l’interface utilisateur du sélecteur de produits/catégories)
+* Nouveau composant principal de fragment de contenu Commerce
 * Recherche commerciale en texte intégral prise en charge dans AEM serveur principal
-* Les composants principaux de Commerce prennent en charge la collecte de données d’enregistrement Sensei Adobe Commerce
-* Amélioration des URL compatibles avec l’optimisation pour les moteurs de recherche pour les pages de catégorie
+* Les composants principaux de Commerce prennent en charge la collecte de données de recommandations Adobe Commerce
+* Amélioration des URL compatibles avec les moteurs de recherche pour les pages de catégorie
 * Prise en charge des en-têtes HTTP personnalisés par site/configuration
 
 ## Date de publication : Mai 2021
@@ -129,11 +149,11 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Prise en charge de la pagination pour le contenu associé dans les propriétés de la console de produit
 
-### Correctifs {#bug-fixes-may}
+### Correctifs  {#bug-fixes-may}
 
 * Miniatures des ressources non affichées dans l’onglet Ressource des propriétés du produit
 
-* Le chemin de navigation réinitialise les données d’aperçu dans la console de produit.
+* Le chemin de navigation réinitialise les données d’aperçu dans la console de produit
 
 ## Date de publication : Avril 2021
 
@@ -151,7 +171,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Nouveau composant principal de navigation CIF qui étend le composant principal de navigation WCM
 
-### Correctifs {#bug-fixes-april}
+### Correctifs  {#bug-fixes-april}
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
