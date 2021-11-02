@@ -1,19 +1,19 @@
 ---
-sub-product: ' AEM Content and Commerce'
-user-guide-title: ' AEM Content and Commerce'
+sub-product: AEM Content and Commerce
+user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guide commercial
 user-guide-description: Découvrez comment utiliser et administrer le contenu AEM et Commerce.
-source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
+source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 80%
+source-wordcount: '109'
+ht-degree: 85%
 
 ---
 
 
 # Commerce {#commerce}
 
-+ [ AEM Content and Commerce](/help/commerce/home.md)
++ [Contenu et commerce AEM](/help/commerce/home.md)
 + [Modifications notables apportées à AEM contenu et à Commerce](cif/changes.md)
 + [Présentation et aperçu](cif/introduction.md)
 + Intégrations {#integrations}
@@ -32,20 +32,21 @@ ht-degree: 80%
       + [Style des composants CIF](cif/customizing/style-cif-component.md)
       + [Personnalisation des composants CIF](cif/customizing/customize-cif-components.md)
       + [Utilisation des sélecteurs de catalogue CIF](cif/customizing/use-cif-pickers.md)
-+ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
++ [PWA Studio dans Adobe Commerce](cif/pwa-studio/getting-started.md)
 + [Migration](cif/migration.md)
 + Notes de mise à jour {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [FAQ](cif/faq.md)
-+ CIF classique {#classic}
++ AEM CIF Classic {#classic}
+   + [Présentation](/help/commerce/cif-classic/home.md)
    + Déploiement {#deploying}
       + [Aperçu du commerce électronique](/help/commerce/cif-classic/deploying/ecommerce.md)
       + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
    + Administration {#administering}
       + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
-      + [Concepts ](/help/commerce/cif-classic/administering/concepts.md)
+      + [Concepts](/help/commerce/cif-classic/administering/concepts.md)
       + [Administration d’eCommerce générique](/help/commerce/cif-classic/administering/generic.md)
       + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + Développement {#developing}
