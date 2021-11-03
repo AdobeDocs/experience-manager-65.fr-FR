@@ -6,11 +6,11 @@ audience: admin-user
 user-guide-title: Guide de l’utilisateur pour l’administration dans AEM 6.5
 breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
-feature: Administration
+feature: Administering
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '623'
 ht-degree: 92%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 92%
    + [Configuration de l’éditeur de texte enrichi](rich-text-editor.md)
    + [Configuration de l’éditeur de texte enrichi pour produire des sites accessibles](rte-accessible-content.md)
    + [Configuration de la commande Annuler pour la modification des pages](config-undo.md)
-   + [Configuration des modules externes d’éditeur de texte enrichi ](configure-rich-text-editor-plug-ins.md)
+   + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
    + [Configuration du composant vidéo](config-video.md)
    + [Éditeur en bloc](bulk-editor.md)
    + [Configuration des notifications électroniques](notification.md)
@@ -65,7 +65,7 @@ ht-degree: 92%
    + [Outil de serveur proxy (proxy.jar)](proxy-jar.md)
    + [Configuration d’Applications AEM](config-apps.md)
    + [Configuration des formulaires de recherche](search-forms.md)
-   + [Consoles Outils](tools-consoles.md)
+   + [Consoles Outils ](tools-consoles.md)
    + [Création de rapports](reporting.md)
    + [Configuration du conteneur et du mode de mises en page](configuring-responsive-layout.md)
    + [Éditeur](enable-classic-ui-editor.md)
@@ -157,7 +157,7 @@ ht-degree: 92%
    + [Traitement des demandes RGPD pour AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce – Préparation pour le RGPD](gdpr-compliance-commerce.md)
 + Gestion de contenu {#contentmanagement}
-   + [Utilisation des modules](package-manager.md)
+   + [Gestionnaire de modules](package-manager.md)
    + [Administration des balises](tags.md)
    + [Exportateur de page](page-exporter.md)
    + [Console Balisage de l’interface utilisateur (IU) classique](classic-console.md)
