@@ -1,8 +1,8 @@
 ---
 title: Compatibilité descendante dans AEM 6.5
-seo-title: Compatibilité descendante dans AEM 6.5
+seo-title: Backward Compatibility in AEM 6.5
 description: Découvrez comment faire en sorte que vos applications et configurations restent compatibles avec AEM 6.5
-seo-description: Découvrez comment faire en sorte que vos applications et configurations restent compatibles avec AEM 6.5
+seo-description: Learn how to keep your apps and configurations compatible with AEM 6.5
 uuid: 81dc2771-f59b-4b24-8932-9e938cba05e0
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
-feature: Mise à niveau
+feature: Upgrading
 exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50a11e30ccd720065962e8dd03cbcc71ec9f715a
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 82%
+source-wordcount: '500'
+ht-degree: 79%
 
 ---
 
-# Compatibilité descendante dans AEM 6.5{#backward-compatibility-in-aem}
+# Compatibilité descendante dans AEM 6.5{#backward-compatibility-in-aem}
 
 ## Présentation {#overview}
 
@@ -63,10 +63,10 @@ Le mode hérité s’adresse aux utilisateurs qui possèdent des interfaces pers
 
 ## Méthode de configuration {#how-to-set-up}
 
-Le package de compatibilité AEM 6.3 peut être installé en tant que package à l’aide du gestionnaire de modules. Vous pouvez télécharger le [module de compatibilité AEM 6.3 à partir du site Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+Le **AEM 6.4 Comatability Pack pour la version 6.5** peut être installé en tant que package à l’aide du gestionnaire de modules. Vous pouvez télécharger le [AEM Pack de compatibilité 6.4 pour la version 6.5 de la distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) site.
 
 Une fois le module de compatibilité installé, le routage peut être activé ou désactivé à l’aide d’un commutateur dans la configuration OSGI, comme indiqué ci-dessous :
 
-![screen_shot_2017-11-27at122421pm](assets/screen_shot_2017-11-27at122421pm.png)
+![Sélecteurs de composites](assets/compat-switches.png)
 
 Une fois le module de compatibilité installé et configuré, les fonctionnalités sont utilisées sur la base du mode de compatibilité choisi.
