@@ -1,8 +1,8 @@
 ---
 title: Modération de contenu de la communauté
-seo-title: Modération de contenu de la communauté
+seo-title: Moderating Community Content
 description: Notions et actions de modération
-seo-description: Notions et actions de modération
+seo-description: Moderation concepts and actions
 uuid: 5c991d3a-0037-4d78-8f91-bb62e44441fa
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 812b9f3af3ad04343e648a8d07d53f8442978b82
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1516'
 ht-degree: 3%
 
 ---
@@ -25,22 +25,22 @@ ht-degree: 3%
 
 Le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC), est créé lorsqu’un membre (connecté visiteur du site) publie du contenu d’un site de la communauté publié par le biais d’une interaction avec l’un des composants de la communauté suivants :
 
-* [Blog](/help/communities/blog-feature.md) : les membres publient un article de blog ou un commentaire.
-* [Calendrier](/help/communities/calendar.md) : les membres publient un événement ou un commentaire de calendrier.
-* [Commentaires](/help/communities/comments.md) : les membres publient un commentaire ou une réponse à un commentaire.
+* [Blog](/help/communities/blog-feature.md): les membres publient un article de blog ou un commentaire.
+* [Calendrier](/help/communities/calendar.md): les membres publient un événement ou un commentaire de calendrier.
+* [Commentaires](/help/communities/comments.md): les membres publient un commentaire ou une réponse à un commentaire.
 
-* [Forum](/help/communities/forum.md) : les membres publient un nouveau sujet ou répondent à un sujet.
-* [Idéation](/help/communities/ideation-feature.md) : les membres publient une idée ou un commentaire.
-* [Q&amp;R](/help/communities/working-with-qna.md) : les membres créent une question ou répondent à une question.
-* [Révisions](/help/communities/reviews.md) : les membres publient un commentaire lors de l’évaluation d’un élément.
+* [Forum](/help/communities/forum.md): les membres publient un nouveau sujet ou répondent à un sujet.
+* [Idéation](/help/communities/ideation-feature.md): les membres publient une idée ou un commentaire.
+* [Q&amp;R](/help/communities/working-with-qna.md): les membres créent une question ou répondent à une question.
+* [Révisions](/help/communities/reviews.md): les membres publient un commentaire lors de l’évaluation d’un élément.
 
 La modération du contenu généré par l’utilisateur est utile pour reconnaître les contributions positives et limiter celles qui sont négatives (comme les spams et le langage abusif). Le contenu généré par l’utilisateur peut être modéré à partir de plusieurs environnements :
 
-* [Stockage du contenu de la communauté](working-with-srp.md)
+* [Stockage de contenu communautaire](working-with-srp.md)
 
 * [Console de modération en bloc](moderation.md)
 
-   La console Modération est accessible aux administrateurs et aux [modérateurs de communauté](/help/communities/users.md) dans l’environnement public ainsi qu’aux administrateurs dans l’environnement de création. Cela est possible lorsque le contenu de la communauté est stocké dans un [magasin commun](/help/communities/working-with-srp.md).
+   La console Modération est accessible aux administrateurs et aux [modérateurs de communauté](/help/communities/users.md) dans l’environnement public ainsi que par les administrateurs dans l’environnement de création. Cela est possible lorsque le contenu de la communauté est stocké dans une [magasin commun](/help/communities/working-with-srp.md).
 
 * [Modération dans le contexte](in-context.md)
 
@@ -52,11 +52,11 @@ Les actions pouvant être effectuées sur du contenu publié (UGC) varient en fo
 
 * `Admin`
 
-   Un utilisateur membre du groupe [community-administrators](users.md).
+   Un utilisateur qui est membre de [community-administrators](users.md) groupe.
 
 * `Moderator`
 
-   Un membre d’un groupe [modérateurs de communauté](users.md#publishenvironmentusersandgroups) (dispose des [autorisations de modérateur](in-context.md#moderatorpermissions)).
+   Un membre d’une [modérateurs de communauté](users.md#publishenvironmentusersandgroups) groupe (has [autorisations du modérateur](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
@@ -113,7 +113,7 @@ Les actions pouvant être effectuées sur du contenu publié (UGC) varient en fo
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Fermer/<br /> rouvrir</strong></td>
+   <td><strong>Fermer/<br /> Réouvrir</strong></td>
    <td>X</td>
    <td>X</td>
    <td> </td>
@@ -197,13 +197,13 @@ L’action Autoriser est une option pour le contenu généré par l’utilisateu
 
 ### Prémodération {#premoderation}
 
-Lorsque le contenu généré par l’utilisateur est prémodéré, la publication n’apparaît pas sur le site publié tant qu’elle n’a pas été approuvée par une action de modération. Lors de la création d’un [site communautaire](/help/communities/sites-console.md), cochez la case [Contenu prémodéré](sites-console.md#moderation) pour activer la prémodération pour l’ensemble du site. Une fois les composants placés sur une page, les composants qui prennent en charge la modération peuvent être configurés pour la prémodération à l’aide d’un paramètre de leur boîte de dialogue de modification :
+Lorsque le contenu généré par l’utilisateur est prémodéré, la publication n’apparaît pas sur le site publié tant qu’elle n’a pas été approuvée par une action de modération. Lors de la création d’un [site communautaire](/help/communities/sites-console.md), en cochant la case [Contenu prémodéré](sites-console.md#moderation) active la prémodération pour l’ensemble du site. Une fois les composants placés sur une page, les composants qui prennent en charge la modération peuvent être configurés pour la prémodération à l’aide d’un paramètre de leur boîte de dialogue de modification :
 
-* [](comments.md) Commentaires et  [](reviews.md)
-révisions dans Modération  **[!UICONTROL utilisateur]**  >  **[!UICONTROL Prémodération]**.
+* [Commentaires](comments.md) et [critiques](reviews.md)
+in **[!UICONTROL Modération d’utilisateur]** > **[!UICONTROL Prémodération]**.
 
-* [Forum](/help/communities/forum.md),  [idéation](/help/communities/ideation-feature.md),  [Q&amp;R](/help/communities/working-with-qna.md) et  [](/help/communities/calendar.md)
-calendrier dans  **[!UICONTROL Paramètres]**  >  **[!UICONTROL Modéré]**.
+* [Forum](/help/communities/forum.md), [idéation](/help/communities/ideation-feature.md), [Q&amp;R](/help/communities/working-with-qna.md), et [calendar](/help/communities/calendar.md)
+in **[!UICONTROL Paramètres]** > **[!UICONTROL Modéré]**.
 
 ### Détection des messages indésirables {#spam-detection}
 
@@ -211,7 +211,7 @@ La détection des messages indésirables est une fonctionnalité d’auto-modér
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Cependant, pour personnaliser ou étendre les mots indésirables par défaut, créez un ensemble de mots dans le répertoire /apps en suivant la structure des mots indésirables par défaut au moyen de [superposition](/help/communities/overlay-comments.md).
+Cependant, pour personnaliser ou étendre les mots indésirables par défaut, créez un ensemble de mots dans le répertoire /apps en suivant la structure des mots indésirables par défaut au moyen de la fonction [superposition](/help/communities/overlay-comments.md).
 
 Une publication générée par l’utilisateur (dans tous les types de contenu, par exemple les blogs, les forums et les commentaires) contenant un ou plusieurs mots indésirables est marquée avec le texte &quot;Cette publication a été classée comme spam&quot; au-dessus de la publication.
 
@@ -221,10 +221,10 @@ Le modérateur peut voir une telle publication et la marquer de la même manièr
 
 Pour activer le moteur de détection de spam, procédez comme suit :
 
-1. Ouvrez la [console web](https://localhost:4502/system/console/configMgr) en accédant à `/system/console/configMgr`.
+1. Ouvrir [Console web](https://localhost:4502/system/console/configMgr), en accédant à `/system/console/configMgr`.
 
-1. Recherchez la configuration **Modération automatique AEM Communities** et modifiez-la.
-1. Ajoutez l’entrée **[!UICONTROL SpamProcess]** .
+1. Localiser **Modération automatique d’AEM Communities** et modifiez-la.
+1. Ajoutez la variable **[!UICONTROL SpamProcess]** entrée .
 
 ![spamprocess](assets/spamprocess.png)
 
@@ -234,7 +234,7 @@ Pour activer le moteur de détection de spam, procédez comme suit :
 
 ### Opinion {#sentiment}
 
-L’opinion est calculée en fonction du nombre de mots-clés positifs et négatifs ([watchwords](#configuringwatchwords)) présents dans une publication (UGC).
+L’opinion est calculée en fonction du nombre de mots-clés positifs et négatifs ([watchwords](#configuringwatchwords)) présente dans une publication (contenu généré par l’utilisateur).
 
 L’analyse de l’opinion utilise un ensemble de règles préconfigurées et calcule l’opinion du contenu généré par l’utilisateur. Les règles par défaut se trouvent à l’adresse : `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
@@ -255,21 +255,21 @@ Dans la [console de modération en bloc](/help/communities/moderation.md), il es
 
 #### Watchwords {#watchwords}
 
-AEM communautés fournit un *analyseur de mots-clés* comme étape du processus d’évaluation de [l’opinion](#sentiment). La contribution à la valeur d’opinion fournie par les mots-clés est due à la comparaison des mots-clés négatifs et positifs utilisés dans le contenu publié, ainsi que des mots interdits.
+Les communautés AEM fournissent une *analyseur de mots-clés* en tant qu’étape du processus d’évaluation. [sentiment](#sentiment). La contribution à la valeur d’opinion fournie par les mots-clés est due à la comparaison des mots-clés négatifs et positifs utilisés dans le contenu publié, ainsi que des mots interdits.
 
 #### Configuration de l’opinion et des mots de contrôle {#configure-sentiment-and-watchwords}
 
 La liste des mots-clés positifs et négatifs peut être personnalisée, de même que les règles d’opinion.
 
-La liste par défaut des mots-clés peut être saisie en tant que propriétés d’un noeud dans le référentiel, similaire à la valeur par défaut ou en remplaçant la valeur par défaut par la configuration du service OSGi `sentimentprocess.name` avec la liste des mots.
+La liste par défaut des mots-clés peut être saisie en tant que propriétés d’un noeud dans le référentiel, similaire à la valeur par défaut ou en remplaçant la valeur par défaut par la configuration du service OSGi. `sentimentprocess.name` avec la liste des mots.
 
-**sentimentprocess.name** peut également être modifié pour référencer l’emplacement d’un ensemble personnalisé de règles d’opinion.
+Le **sentimentprocess.name** peut également être modifié pour référencer l’emplacement d’un ensemble personnalisé de règles d’opinion.
 
 Pour configurer l’opinion et les mots-clés :
 
 * Connectez-vous à votre instance de création  en tant qu’administrateur.
-* Ouvrez la [console web](https://localhost:4502/system/console/configMgr).
-* Recherchez `sentimentprocess.name`.
+* Ouvrir [Console web](https://localhost:4502/system/console/configMgr).
+* Localiser `sentimentprocess.name`.
 * Sélectionnez la configuration à ouvrir en mode d’édition.
 
 ![sentimentprocess](assets/sentimentprocess.png)
@@ -284,11 +284,11 @@ Pour configurer l’opinion et les mots-clés :
 
 * **Chemin explicite vers le noeud Watchwords**
 
-   Emplacement du référentiel d’un noeud contenant les propriétés par défaut `positive` et `negative` spécifiant les mots-clés par défaut. La valeur par défaut est `/libs/settings/community/watchwords/default`.
+   Emplacement du référentiel d’un noeud contenant la valeur par défaut `positive` et `negative` propriétés spécifiant les mots-clés par défaut. La valeur par défaut est `/libs/settings/community/watchwords/default`.
 
 * **Règles d’opinion**
 
-   Emplacement du référentiel des règles pour calculer l’opinion selon des mots-clés positifs et négatifs. La valeur par défaut est `/libs/cq/workflow/components/workflow/social/sentiments/rules` (toutefois, aucun workflow n’est impliqué).
+   Emplacement du référentiel des règles pour calculer l’opinion selon des mots-clés positifs et négatifs. La valeur par défaut est `/libs/cq/workflow/components/workflow/social/sentiments/rules` (cependant, il n’y a plus de workflow impliqué).
 
 Voici un exemple d’entrée personnalisée pour les mots-clés par défaut, lorsque `Explicit Path to Watchwords Node` est défini sur `/libs/settings/community/watchwords/default`.
 
@@ -296,7 +296,7 @@ Voici un exemple d’entrée personnalisée pour les mots-clés par défaut, lor
 
 ### Autorisations du modérateur {#moderator-permissions}
 
-Les autorisations suivantes, lorsqu’elles sont affectées à la même ressource, sont collectivement appelées `moderator permissions` :
+Les autorisations suivantes, lorsqu’elles sont affectées à la même ressource, sont collectivement appelées `moderator permissions`:
 
 * `Read`
 * `Modify`
