@@ -1,8 +1,8 @@
 ---
 title: Tableau de bord des opérations
-seo-title: Tableau de bord des opérations
+seo-title: Operations Dashboard
 description: Découvrez comment utiliser le tableau de bord des opérations.
-seo-description: Découvrez comment utiliser le tableau de bord des opérations.
+seo-description: Learn how to use the Operations Dashboard.
 uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
-feature: Opérations
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Operations
+source-git-commit: 891cb5bb8cc9b7114d23617c9164fd428718b302
 workflow-type: tm+mt
-source-wordcount: '6199'
-ht-degree: 77%
+source-wordcount: '6200'
+ht-degree: 76%
 
 ---
 
@@ -32,7 +32,7 @@ Dans AEM 6, le tableau de bord des opérations permet aux opérateurs système d
 * réduit le délai pour trouver, analyser et corriger des problèmes ;
 * permet une automatisation de la maintenance autonome, qui contribue à réduire considérablement les coûts de fonctionnement de votre projet.
 
-Pour y accéder, sélectionnez **Outils** - **Opérations** dans l’écran de bienvenue d’AEM.
+Pour y accéder, accédez à **Outils** - **Opérations** dans l’écran de bienvenue d’AEM.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Il comporte différentes fonctionnalités, décrites ci-dessous.
 
 Les **rapports d’intégrité** sont un système de cartes indiquant une intégrité satisfaisante ou non en ce qui concerne une zone spécifique du produit. Ces cartes sont des visualisations des contrôles d’intégrité Sling, qui agrègent les données de JMX et d’autres sources, et présentent de nouveau les informations traitées sous forme de MBeans. Ces MBeans peuvent également être vérifiés dans la [console web JMX](/help/sites-administering/jmx-console.md), sous le domaine **org.apache.sling.healthcheck**.
 
-Vous pouvez accéder à l’interface Rapports d’intégrité à l’aide du menu **Outils** - **Opérations** - **Rapports d’intégrité** dans l’écran d’accueil d’AEM, ou directement à l’aide de l’URL suivante :
+Vous pouvez accéder à l’interface des rapports d’intégrité à l’aide du **Outils** - **Opérations** - **Rapports d’intégrité** sur l’écran d’accueil d’AEM ou directement via l’URL suivante :
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
@@ -118,7 +118,7 @@ La création d’un contrôle de l’intégrité individuel comprend deux étape
 
    >[!NOTE]
    >
-   >Le chemin d’accès à la ressource ci-dessus est créé comme suit : si le nom mbean de votre contrôle de l’intégrité est &quot;test&quot;, ajoutez &quot;test&quot; à la fin du chemin `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
+   >Le chemin d’accès à la ressource ci-dessus est créé comme suit : si le nom mbean de votre contrôle de l’intégrité est &quot;test&quot;, ajoutez &quot;test&quot; à la fin du chemin. `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
    >
    >Le chemin d’accès final est donc :
    >
@@ -126,7 +126,7 @@ La création d’un contrôle de l’intégrité individuel comprend deux étape
 
    >[!NOTE]
    >
-   >Assurez-vous que les propriétés suivantes du chemin `/apps/settings/granite/operations/hc` sont définies sur true :
+   >Assurez-vous que la variable `/apps/settings/granite/operations/hc` Les propriétés suivantes du chemin d’accès sont définies sur true :
    >
    >
    >`sling:configCollectionInherit`
@@ -194,28 +194,28 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
   </tr>
   <tr>
    <td>Performances des requêtes</td>
-   <td><p>Ce contrôle de l’intégrité a été simplifié <strong>dans AEM 6.4</strong> et vérifie désormais le <code>Oak QueryStats</code> MBean récemment restructuré, plus précisément l’attribut <code>SlowQueries </code>. Si les statistiques contiennent des requêtes lentes, le contrôle de l’intégrité renvoie un avertissement. Autrement, il renvoie l’état « OK ».<br /> </p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryStatus,type=HealthCheck</a>.</p> </td>
+   <td><p>Ce contrôle de l’intégrité a été simplifié. <strong>dans AEM 6.4</strong>, et vérifie désormais le <code>Oak QueryStats</code> MBean, plus spécifiquement le <code>SlowQueries </code>attribut. Si les statistiques contiennent des requêtes lentes, le contrôle de l’intégrité renvoie un avertissement. Autrement, il renvoie l’état « OK ».<br /> </p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Longueur de la file d’attente d’observation</td>
-   <td><p>La longueur de la file d’attente d’observation effectue une itération sur tous les auditeurs d’événements et les observateurs en arrière-plan, compare leur <code>queueSize </code> à leur <code>maxQueueSize</code> et :</p>
+   <td><p>La longueur de la file d’attente d’observation effectue une itération sur tous les écouteurs d’événements et les observateurs en arrière-plan, compare leurs <code>queueSize </code>à <code>maxQueueSize</code> et :</p>
     <ul>
-     <li>renvoie l’état Critique si la valeur <code>queueSize</code> dépasse la valeur <code>maxQueueSize</code> (c’est-à-dire lorsque des événements sont ignorés).</li>
-     <li>renvoie "Avertissement" si la valeur <code>queueSize</code> est supérieure à la valeur <code>maxQueueSize * WARN_THRESHOLD</code> (la valeur par défaut est 0,75). </li>
+     <li>renvoie l’état Critique si la variable <code>queueSize</code> dépasse la valeur <code>maxQueueSize</code> valeur (c’est à ce moment-là que les événements seront ignorés)</li>
+     <li>renvoie "Avertir" si la variable <code>queueSize</code> est supérieure à la valeur <code>maxQueueSize * WARN_THRESHOLD</code> (la valeur par défaut est 0,75) </li>
     </ul> <p>La longueur maximale de chaque file d’attente provient de configurations distinctes (Oak et AEM) et n’est pas configurable à partir de ce contrôle de l’intégrité. Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Limites de requête transversales</td>
-   <td><p>La requête Limites de traversée vérifie le <code>QueryEngineSettings</code> MBean, plus spécifiquement les attributs <code>LimitInMemory</code> et <code>LimitReads</code>, et renvoie l’état suivant :</p>
+   <td><p>Les limites de la traversée de requête vérifient la variable <code>QueryEngineSettings</code> MBean, plus spécifiquement le <code>LimitInMemory</code> et <code>LimitReads</code> et renvoie l’état suivant :</p>
     <ul>
      <li>renvoie l’état Avertissement si l’une des limites est égale ou supérieure à la valeur <code>Integer.MAX_VALUE</code></li>
      <li>« Avertissement » si l’une des limites est inférieure à 10 000 (paramètre recommandé d’Oak) ;</li>
-     <li>renvoie l’état Critique si la valeur <code>QueryEngineSettings</code> ou l’une des limites ne peut pas être récupérée.</li>
+     <li>renvoie l’état Critique si la variable <code>QueryEngineSettings</code> ou l’une des limites ne peut pas être récupérée.</li>
     </ul> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queryTraversalLimitsBundle,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Horloges synchronisées</td>
-   <td><p>Cette vérification ne s’applique qu’aux <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">grappes de noeuds de document</a>. Il renvoie l’état suivant :</p>
+   <td><p>Cette vérification ne s’applique qu’à <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">grappes de noeuds de document</a>. Il renvoie l’état suivant :</p>
     <ul>
      <li>« Avertissement » lorsque les horloges des instances sont désynchronisées et dépassent un seuil inférieur prédéfini ;</li>
      <li>« Critique » lorsque les horloges des instances sont désynchronisées et dépassent un seuil supérieur prédéfini ;</li>
@@ -226,18 +226,18 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
    <td><p>Le contrôle « Index asynchrones » :</p>
     <ul>
      <li>renvoie « Critique » si au moins une piste d’indexation échoue ;</li>
-     <li>vérifie <code>lastIndexedTime</code> pour toutes les pistes d’indexation et :
+     <li>vérifie la variable <code>lastIndexedTime</code> pour toutes les voies d'indexation et :
       <ul>
        <li>renvoie l’état Critique s’il y a plus de 2 heures. </li>
        <li>renvoie l’état d’avertissement s’il y a entre 2 heures et 45 minutes. </li>
        <li>renvoie l’état OK s’il y a moins de 45 minutes. </li>
       </ul> </li>
      <li>renvoie « OK » si aucune de ces conditions n’est remplie.</li>
-    </ul> <p>Les seuils des états Critique et Avertissement sont configurables. Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Remarque :  </strong>Ce contrôle de l’intégrité est disponible avec AEM 6.4 et a été rétroporté à AEM 6.3.0.1.</p> </td>
+    </ul> <p>Les seuils des états Critique et Avertissement sont configurables. Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Remarque : </strong>Ce contrôle de l’intégrité est disponible avec AEM 6.4 et a été rétroporté à AEM 6.3.0.1.</p> </td>
   </tr>
   <tr>
    <td>Index Lucene volumineux</td>
-   <td><p>Ce contrôle utilise les données exposées par le <code>Lucene Index Statistics</code> MBean pour identifier les index et les retours volumineux :</p>
+   <td><p>Ce contrôle utilise les données exposées par la variable <code>Lucene Index Statistics</code> MBean permettant d’identifier les index et les retours volumineux :</p>
     <ul>
      <li>« Avertissement » s’il y a un index comportant plus de 1 milliard de documents ;</li>
      <li>« Critique » s’il y a un index comportant plus de 1,5 milliard de documents.</li>
@@ -256,7 +256,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
   </tr>
   <tr>
    <td>File d’attente de réplication</td>
-   <td><p>Ce contrôle effectue une itération sur les agents de réplication et examine leurs files d’attente. Pour l’élément en haut de la file d’attente, le contrôle examine le nombre de fois où l’agent a tenté une réplication. Si l’agent a tenté une réplication plus de fois que défini par la valeur du paramètre <code>numberOfRetriesAllowed</code>, il renvoie un avertissement. Le paramètre <code>numberOfRetriesAllowed</code> peut être configuré. </p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck</a>.</p> </td>
+   <td><p>Ce contrôle effectue une itération sur les agents de réplication et examine leurs files d’attente. Pour l’élément en haut de la file d’attente, le contrôle examine le nombre de fois où l’agent a tenté une réplication. Si l’agent a tenté une réplication plus de fois que défini par la valeur du paramètre <code>numberOfRetriesAllowed</code>, il renvoie un avertissement. Le <code>numberOfRetriesAllowed</code> est configurable. </p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Tâches Sling</td>
@@ -266,14 +266,14 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
      <code>maxNumQueueJobs</code> seuil et :
     </div>
     <ul>
-     <li>renvoie "Critique" si plus de <code>maxNumQueueJobs</code> se trouvent dans la file d’attente.</li>
+     <li>renvoie "Critique" si plus de la variable <code>maxNumQueueJobs</code> se trouvent dans la file d’attente</li>
      <li>renvoie « Critique » si des tâches actives sont en cours d’exécution depuis plus de 1 h ;</li>
      <li>renvoie « Critique » s’il y a des tâches en file d’attente et que la dernière tâche terminée remonte à plus de 1 h.</li>
     </ul> <p>Seul le nombre maximal du paramètre de tâches en file d’attente est configurable (1 000 par défaut).</p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Performances des demandes</td>
-   <td><p>Cette vérification examine la <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">mesure Sling </a>et :</p>
+   <td><p>Ce contrôle examine la variable <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Mesure Sling </a>et :</p>
     <ul>
      <li>renvoie « Critique » si la valeur du 75e percentile dépasse le seuil critique (la valeur par défaut est de 500 millisecondes) ;</li>
      <li>renvoie « Avertissement » si la valeur du 75e percentile dépasse le seuil d’avertissement (la valeur par défaut est de 200 millisecondes).</li>
@@ -285,7 +285,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
   </tr>
   <tr>
    <td>Espace disque</td>
-   <td><p>La vérification Espace disque examine le <code>FileStoreStats</code> MBean, récupère la taille de l’entrepôt de noeuds et la quantité d’espace disque utilisable sur la partition de l’entrepôt de noeuds, et :</p>
+   <td><p>La vérification de l’espace disque examine la variable <code>FileStoreStats</code> MBean, récupère la taille de l’entrepôt de noeuds et la quantité d’espace disque utilisable sur la partition de l’entrepôt de noeuds, et :</p>
     <ul>
      <li>renvoie « Avertissement » si le rapport espace disque utilisable/taille du référentiel est inférieur au seuil d’avertissement (10 par défaut) ;</li>
      <li>renvoie « Critique » si le rapport espace disque utilisable/taille du référentiel est inférieur au seuil critique (2 par défaut).</li>
@@ -297,7 +297,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
   </tr>
   <tr>
    <td>Contrôles de sécurité</td>
-   <td><p>Le contrôle de sécurité est un contrôle composite, qui agrège les résultats de différents contrôles liés à la sécurité. Ces contrôles de l’intégrité individuels répondent à différentes préoccupations de la liste de contrôle de sécurité disponible sur la <a href="/help/sites-administering/security-checklist.md">page de documentation de la liste de contrôle de sécurité.</a> La vérification est utile comme test de détection de fumée de sécurité lorsque l’instance est démarrée. </p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a></p> </td>
+   <td><p>Le contrôle de sécurité est un contrôle composite, qui agrège les résultats de différents contrôles liés à la sécurité. Ces contrôles de l’intégrité individuels répondent à différentes préoccupations de la liste de contrôle de sécurité disponible à l’adresse <a href="/help/sites-administering/security-checklist.md">Page de documentation de la liste de contrôle de sécurité.</a> La vérification est utile comme test de détection de fumée de sécurité lorsque l’instance est démarrée. </p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Lots actifs</td>
@@ -313,11 +313,11 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
     <ul>
      <li>il renvoie l’état « Avertissement » si l’instance est exécutée sur Java 7, avec la purge du cache du code activée ;</li>
      <li>il renvoie l’état « Avertissement » si l’instance est exécutée sur Java 7 et que la taille du cache du code est inférieure à un seuil minimal (la valeur par défaut est 90 Mo).</li>
-    </ul> <p>Le seuil <code>minimum.code.cache.size</code> peut être configuré. Pour plus d’informations sur le bogue, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">vérifiez</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> cette page</a>.</p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+    </ul> <p>Le <code>minimum.code.cache.size</code> seuil peut être configuré. Pour plus d’informations sur le bogue, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">check</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> cette page</a>.</p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Erreurs de chemin de recherche des ressources</td>
-   <td><p>Vérifie s’il existe des ressources dans le chemin <code>/apps/foundation/components/primary</code> et :</p>
+   <td><p>Vérifie s’il existe des ressources dans le chemin d’accès. <code>/apps/foundation/components/primary</code> et :</p>
     <ul>
      <li>renvoie "Avertir" s’il existe des noeuds enfants sous <code>/apps/foundation/components/primary</code></li>
     </ul> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
@@ -341,7 +341,7 @@ Le tableau de bord des contrôles de l’intégrité peut être intégré à Nag
    1. Ouvrez un navigateur et pointez vers le serveur Nagios.
    1. Appuyez sur le bouton **Configure** dans le menu supérieur.
    1. Dans le volet de gauche, appuyez sur **Core Config Manager** sous **Advanced Configuration**.
-   1. Appuyez sur le lien **Hôtes** sous la section **Surveillance** .
+   1. Appuyez sur la touche **Hôtes** sous le lien **Surveillance** .
    1. Ajoutez la définition de l’hôte :
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
@@ -448,13 +448,13 @@ Log level: INFO
 DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, Error=<MT_ERROR>, Details=<MT_DETAILS>
 ```
 
-### Performances des demandes  {#request-performance}
+### Performances des demandes {#request-performance}
 
 La page Performances des demandes permet d’analyser les demandes de page les plus lentes traitées. Seules les demandes de contenu sont enregistrées dans cette page. Plus spécifiquement, les demandes enregistrées sont les suivantes :
 
 1. Demandes d’accès aux ressources sous `/content`
 1. Demandes d’accès aux ressources sous `/etc/design`
-1. Demandes ayant l’extension `".html"`
+1. Requêtes dont la variable `".html"` extension
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
@@ -480,13 +480,13 @@ La page affiche les informations suivantes :
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
-### Expliquer la requête {#explain-query}
+### Explication de la requête {#explain-query}
 
 Oak tente de déterminer la meilleure façon d’exécuter une requête donnée d’après les index Oak définis dans le référentiel sous le nœud **oak:index**. En fonction de la requête, Oak peut sélectionner différents index. La première étape d’optimisation de la requête consiste à comprendre la façon dont Oak exécute une requête.
 
 L’outil Expliquer la requête explique la façon dont Oak exécute une requête. Pour y accéder, sélectionnez **Outils > Opérations > Diagnostic** dans l’écran d’accueil d’AEM, puis cliquez sur **Performances des requêtes** et accédez à l’onglet **Expliquer la requête**.
 
-**Fonctionnalités**
+**Fonctions**
 
 * Prend en charge les langages de requête Xpath, JCR-SQL et JCR-SQL2.
 * Indique le temps d’exécution réel de la requête spécifiée.
@@ -503,7 +503,7 @@ La première entrée de la section Explication de la requête est l’explicatio
 
 La seconde entrée est le plan d’exécution.
 
-Si vous activez la case à cocher **Inclure le délai d’exécution** avant d’exécuter la requête, le délai d’exécution de la requête s’affiche également, ce qui permet d’utiliser davantage d’informations afin d’optimiser les index pour l’application ou le déploiement.
+Choisir le **Inclure le temps d’exécution** avant d’exécuter la requête, indique également le temps pendant lequel la requête a été exécutée. Le **Inclure le nombre de noeuds** indique le nombre de noeuds. Elles permettent d’obtenir plus d’informations, qui peuvent être utilisées pour optimiser les index pour votre application ou déploiement.
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
@@ -511,7 +511,7 @@ Si vous activez la case à cocher **Inclure le délai d’exécution** avant d�
 
 Le gestionnaire d’index vise à faciliter la gestion des index, notamment leur tenue à jour ou l’affichage de leur statut.
 
-Pour y accéder, accédez à **Outils - Opérations - Diagnostic **depuis l’écran de bienvenue, puis cliquez sur le bouton **Gestionnaire d’index**.
+Pour y accéder, accédez à **Outils - Opérations - Diagnostic **dans l’écran de bienvenue, puis cliquez sur le bouton **Gestionnaire d’index** bouton .
 
 Il est également accessible directement à cette URL : `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
@@ -521,7 +521,7 @@ L’interface utilisateur peut être utilisée pour filtrer les index dans le ta
 
 ### Télécharger le ZIP d’état {#download-status-zip}
 
-Cette option permet de télécharger un fichier ZIP contenant des informations utiles sur l’état et la configuration du système. L’archive contient des configurations d’instance, une liste de lots, OSGI, des mesures Sling et des statistiques, ce qui peut entraîner un fichier volumineux. Vous pouvez réduire l’impact des fichiers d’état volumineux en utilisant la fenêtre **Télécharger le ZIP d’état**. La fenêtre est accessible à partir de :**AEM > Outils > Opérations > Diagnostic > Télécharger le ZIP d’état.**
+Cette option permet de télécharger un fichier ZIP contenant des informations utiles sur l’état et la configuration du système. L’archive contient des configurations d’instance, une liste de lots, OSGI, des mesures Sling et des statistiques, ce qui peut entraîner un fichier volumineux. Vous pouvez réduire l’impact des fichiers d’état volumineux en utilisant la variable **ZIP du statut de téléchargement** fenêtre. La fenêtre est accessible à partir de :**AEM > Outils > Opérations > Diagnostic > Télécharger le ZIP d’état.**
 
 Dans cette fenêtre, vous pouvez sélectionner les éléments à exporter (fichiers journaux et/ou image mémoire des threads) ainsi que le nombre de jours à prendre en compte dans le téléchargement par rapport à la date actuelle.
 
@@ -531,11 +531,11 @@ Dans cette fenêtre, vous pouvez sélectionner les éléments à exporter (fichi
 
 Cette option déclenche le téléchargement d’un fichier ZIP contenant des informations sur les threads présents sur le système. Des informations sur chaque thread sont fournies (état, chargeur de classes et trace de pile, notamment).
 
-### Télécharger l’image mémoire des segments de mémoire  {#download-heap-dump}
+### Télécharger l’image mémoire des segments de mémoire {#download-heap-dump}
 
 Vous avez également la possibilité de télécharger un instantané du segment de mémoire afin de l’analyser ultérieurement. Remarque : le fichier téléchargé est volumineux, de l’ordre de centaines de mégaoctets.
 
-## Tâches de maintenance automatisées  {#automated-maintenance-tasks}
+## Tâches de maintenance automatisées {#automated-maintenance-tasks}
 
 Depuis la page Tâches de maintenance automatisées, affichez et suivez les tâches de maintenance recommandées planifiées pour une exécution périodique. Les tâches sont intégrées au système de contrôle de l’intégrité. Elles peuvent également être exécutées manuellement à partir de l’interface.
 
@@ -546,11 +546,11 @@ Pour accéder à la page Maintenance du tableau de bord des opérations, sélect
 Les tâches ci-dessous sont disponibles dans le tableau de bord des opérations :
 
 1. Tâche **Nettoyage de la révision** dans le menu **Période de maintenance quotidienne**
-1. La tâche **Nettoyage des binaires Lucene**, située sous le menu **Période de maintenance quotidienne**.
+1. Le **Nettoyage des binaires Lucene** , située sous **Période de maintenance quotidienne** .
 1. Tâche **Purge du workflow** dans le menu **Période de maintenance hebdomadaire**
-1. Tâche **Nettoyage de la mémoire d’entrepôt de données**, située sous le menu **Période de maintenance hebdomadaire**.
-1. La tâche **Maintenance du journal d’audit**, située sous le menu **Période de maintenance hebdomadaire**.
-1. Tâche **Maintenance de purge de version** , située sous le menu **Période de maintenance hebdomadaire**.
+1. Le **Nettoyage de la mémoire d’entrepôt de données** , située sous **Période de maintenance hebdomadaire** .
+1. Le **Maintenance du journal d’audit** , située sous **Période de maintenance hebdomadaire** .
+1. Le **Maintenance de purge de version** , située sous **Période de maintenance hebdomadaire** .
 
 La synchronisation par défaut pour la période de maintenance quotidienne a lieu de 2 h à 5 h du matin. Les tâches configurées pour s’exécuter pendant la période de maintenance hebdomadaire sont exécutées entre 1 h et 2 h du matin le samedi.
 
@@ -562,13 +562,13 @@ Vous pouvez également configurer des synchronisations en appuyant sur l’icôn
 >
 >Depuis AEM 6.1, il est également possible de configurer les périodes de maintenance existantes pour qu’elles s’exécutent tous les mois.
 
-### Nettoyage de la révision  {#revision-clean-up}
+### Nettoyage de la révision {#revision-clean-up}
 
 Pour plus d’informations sur l’exécution du nettoyage de la révision, [consultez cet article](/help/sites-deploying/revision-cleanup.md).
 
 ### Nettoyage des binaires Lucene {#lucene-binaries-cleanup}
 
-Utilisez la tâche Nettoyage des binaires Lucene pour purger les fichiers binaires Lucene et réduire la taille nécessaire pour l’exécution de l’entrepôt de données. Cela est dû au fait que la perte binaire de Lucene sera redemandée tous les jours au lieu de la dépendance antérieure à une exécution [de nettoyage de la mémoire d’entrepôt de données réussie](/help/sites-administering/data-store-garbage-collection.md).
+Utilisez la tâche Nettoyage des binaires Lucene pour purger les fichiers binaires Lucene et réduire la taille nécessaire pour l’exécution de l’entrepôt de données. Cela est dû au fait que la perte binaire de Lucene sera redemandée tous les jours au lieu de la dépendance antérieure à une réussite [nettoyage de la mémoire d’entrepôt de données](/help/sites-administering/data-store-garbage-collection.md) run.
 
 La tâche de maintenance a été conçue en vue de réduire les objets inutilisés dans les révisions liés à Lucene, mais elle présente en outre des avantages d’ordre général en termes d’efficacité :
 
@@ -598,21 +598,21 @@ Pour en savoir plus sur la maintenance des journaux d’audit, consultez cette [
 
 ### Purge de version {#version-purge}
 
-Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les [outils de purge de version](/help/sites-deploying/version-purging.md). Vous pouvez planifier et configurer la tâche Purge de version en accédant à **Outils > Opérations > Maintenance > Période de maintenance hebdomadaire** et en procédant comme suit :
+Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Cela réduit donc la nécessité d’utiliser manuellement la variable [Outils de purge de version](/help/sites-deploying/version-purging.md). Vous pouvez planifier et configurer la tâche Purge de version en accédant à **Outils > Opérations > Maintenance > Période de maintenance hebdomadaire** et procédez comme suit :
 
-1. Cliquez sur le bouton **Ajouter** .
-1. Sélectionnez **Purge de version** dans le menu déroulant.
+1. Cliquez sur le bouton **Ajouter** bouton .
+1. Choisir **Purge de version** dans le menu déroulant.
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
 
-1. Pour configurer la tâche Purge de version, cliquez sur l’icône **engrenages** de la carte de maintenance Purge de version nouvellement créée.
+1. Pour configurer la tâche Purge de version, cliquez sur le **gears** sur la carte de maintenance Purge de version nouvellement créée.
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
 **Dans AEM 6.4**, vous pouvez arrêter la tâche de maintenance Purge de version comme suit :
 
 * Automatiquement : si la période de maintenance planifiée se termine avant que la tâche ne puisse se terminer, celle-ci s’arrête automatiquement. Elle reprend lorsque commence la période de maintenance suivante.
-* Manuellement : pour arrêter manuellement la tâche, sur la carte de maintenance Purge de version, cliquez sur l’icône **Arrêter**. La tâche reprend en toute sécurité lors de la prochaine exécution.
+* Manuellement : pour arrêter manuellement la tâche, sur la carte de maintenance Purge de version, cliquez sur le bouton **Arrêter** icône . La tâche reprend en toute sécurité lors de la prochaine exécution.
 
 >[!NOTE]
 >
@@ -660,14 +660,14 @@ Les tâches de maintenance personnalisées peuvent être mises en œuvre sous fo
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>Il s’agit d’un sujet unique de la tâche de maintenance.<br /> Le traitement des tâches Apache Sling démarre une tâche avec cette rubrique exactement afin d’exécuter la tâche de maintenance ; lorsque la tâche est enregistrée pour cette rubrique, elle est exécutée.<br /> La rubrique doit commencer par  <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>Il s’agit d’un sujet unique de la tâche de maintenance.<br /> Le traitement des tâches Apache Sling démarre une tâche avec cette rubrique exactement afin d’exécuter la tâche de maintenance ; lorsque la tâche est enregistrée pour cette rubrique, elle est exécutée.<br /> La rubrique doit commencer par <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Requis</td>
   </tr>
  </tbody>
 </table>
 
-Outre les propriétés de service ci-dessus, la méthode `process()` de l’interface `JobConsumer` doit être implémentée en ajoutant le code qui doit être exécuté pour la tâche de maintenance. L’élément `JobExecutionContext` fourni peut être utilisé pour générer les informations d’état. Vérifiez si la tâche est interrompue par l’utilisateur et produit un résultat (réussite ou échec).
+Outre les propriétés de service ci-dessus, la variable `process()` de la méthode `JobConsumer` doit être implémentée en ajoutant le code qui doit être exécuté pour la tâche de maintenance. L’élément `JobExecutionContext` fourni peut être utilisé pour générer les informations d’état. Vérifiez si la tâche est interrompue par l’utilisateur et produit un résultat (réussite ou échec).
 
 Dans les cas où une tâche de maintenance ne doit pas être exécutée sur toutes les installations (par exemple, exécutée uniquement sur l’instance de publication), vous pouvez faire en sorte que le service nécessite une configuration afin d’être principal en ajoutant `@Component(policy=ConfigurationPolicy.REQUIRE)`. Vous pouvez alors marquer la configuration correspondante comme étant dépendante du mode d’exécution dans le référentiel. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
@@ -683,21 +683,21 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
  </tbody>
 </table>
 
-[experiencemanager-java-maintenancetask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample) -  [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
+[experiencemanager-java-maintenancetask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
 Une fois le service déployé, il est exposé à l’interface utilisateur du tableau de bord des opérations. Vous pouvez l’ajouter à l’un des plannings de maintenance disponibles :
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Cela permet d’ajouter une ressource correspondante à l’emplacement /apps/granite/operations/config/maintenance/`schedule`/`taskname`. Si la tâche dépend du mode d’exécution, la propriété granite.operations.conditions.runmode doit être définie sur ce nœud avec les valeurs des modes d’exécution qui doivent être actives pour cette tâche de maintenance.
+Cette opération ajoute une ressource correspondante à l’adresse /apps/granite/operations/config/maintenance/`schedule`/`taskname`. Si la tâche dépend du mode d’exécution, la propriété granite.operations.conditions.runmode doit être définie sur ce nœud avec les valeurs des modes d’exécution qui doivent être actives pour cette tâche de maintenance.
 
 ## Présentation du système {#system-overview}
 
-Le **tableau de bord de présentation du système** affiche un aperçu général de la configuration, du matériel et de l’intégrité de l’instance AEM. En d’autres termes, l’état d’intégrité du système est transparent et toutes les informations sont agrégées dans un tableau de bord unique.
+Le **Tableau de bord de présentation du système** affiche un aperçu général de la configuration, du matériel et de l’intégrité de l’instance AEM. En d’autres termes, l’état d’intégrité du système est transparent et toutes les informations sont agrégées dans un tableau de bord unique.
 
 >[!NOTE]
 >
->Vous pouvez également [regarder cette vidéo](https://video.tv.adobe.com/v/21340) pour une introduction au tableau de bord de présentation du système.
+>Vous pouvez également [regarder cette vidéo](https://video.tv.adobe.com/v/21340) pour une présentation du tableau de bord de présentation du système.
 
 ### Accès {#how-to-access}
 
@@ -709,7 +709,7 @@ Pour accéder au tableau de bord de présentation du système, accédez à **Out
 
 Le tableau ci-dessous décrit toutes les informations affichées dans le tableau de bord de présentation du système. Gardez à l’esprit que lorsqu’il n’y a pas de données à afficher (par exemple, aucune sauvegarde n’est en cours ou aucun contrôle de l’intégrité n’a l’état « Critique »), la section correspondante affiche le message « Aucune entrée ».
 
-Vous pouvez également télécharger un fichier `JSON` résumant les informations du tableau de bord en cliquant sur le bouton **Télécharger** dans le coin supérieur droit du tableau de bord. Le point de terminaison `JSON` est `/libs/granite/operations/content/systemoverview/export.json` et il peut être utilisé dans un script `curl` pour la surveillance externe.
+Vous pouvez également télécharger un `JSON` pour résumer les informations du tableau de bord en cliquant sur le **Télécharger** dans le coin supérieur droit du tableau de bord. Le `JSON` endpoint est `/libs/granite/operations/content/systemoverview/export.json` et peut être utilisé dans une `curl` script pour la surveillance externe.
 
 <table>
  <tbody>
@@ -762,12 +762,12 @@ Vous pouvez également télécharger un fichier `JSON` résumant les information
    <td>
     <ul>
      <li>Système d’exploitation et version du système d’exploitation (Mac OS X, par exemple)</li>
-     <li>Charge moyenne du système, telle qu’elle est récupérée à partir de <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
+     <li>charge moyenne du système, telle qu’elle est récupérée à partir de <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
      <li>Espace disque (sur la partition sur laquelle se trouve le répertoire)</li>
      <li>tas maximal, comme renvoyé par <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
     </ul> </td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Instance</td>
@@ -777,8 +777,8 @@ Vous pouvez également télécharger un fichier `JSON` résumant les information
      <li>Liste des modes d’exécution</li>
      <li>Date à laquelle l’instance a été démarrée</li>
     </ul> </td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Référentiel</td>
@@ -798,8 +798,8 @@ Vous pouvez également télécharger un fichier `JSON` résumant les information
       </ul> </li>
      <li>S’il n’y a pas d’entrepôt de données externe personnalisé, un message le mentionnant s’affiche.</li>
     </ul> </td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Agents de distribution</td>
@@ -872,7 +872,7 @@ Vous pouvez également télécharger un fichier `JSON` résumant les information
     <ul>
      <li>L’utilisateur doit vérifier s’il existe des tâches avec des états inattendus ou un nombre élevé.</li>
     </ul> </td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Nombre de nœuds estimés</td>
@@ -884,14 +884,14 @@ Vous pouvez également télécharger un fichier `JSON` résumant les information
      <li>éléments autorisables</li>
      <li>nombre total de nœuds<br /> </li>
     </ul> <p>Le nombre total de noeuds est obtenu à partir de nodeCounterMBean, tandis que le reste des statistiques est obtenu à partir d’IndexInfoService.</p> </td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Sauvegarde</td>
    <td>Affiche « Sauvegarde en ligne en cours », le cas échéant.</td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Indexation</td>
@@ -900,8 +900,8 @@ Vous pouvez également télécharger un fichier `JSON` résumant les information
      <li>Indexation en cours</li>
      <li>Requête en cours</li>
     </ul> <p>Si un thread d’indexation ou de requête est présent dans l’image mémoire des threads.</p> </td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
