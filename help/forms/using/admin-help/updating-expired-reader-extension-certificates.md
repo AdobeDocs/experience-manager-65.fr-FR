@@ -1,9 +1,9 @@
 ---
 title: Mise à jour des certificats du service d’extension de Reader expirés
 description: 'Reader des documents étendus qui ne fonctionnent pas, mise à jour des certificats '
-source-git-commit: 5f2fc6a32f67cfed3bc4b09b63bcf9689659a99d
+source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1581'
 ht-degree: 26%
 
 ---
@@ -15,10 +15,10 @@ Les clients Adobe Experience Manager Forms (AEM Forms) disposant de licences Ado
 
 Adobe tire parti d’une infrastructure à clé publique (PKI) pour émettre des certificats numériques à utiliser dans le cadre de l’activation de licences et de fonctionnalités. Adobe a émis des certificats sous l’autorité de certification &quot;Adobe Root CA&quot;, qui expirera le 7 janvier 2023. Cela entraîne l’expiration de tous les certificats émis sous cette autorité de certification. Une fois le certificat expiré, toutes les fonctionnalités qui dépendent des certificats ne fonctionnent plus. Par exemple, un document de PDF étendu au lecteur qui permet d’ajouter des commentaires à l’aide de Adobe Acrobat Reader cesse de fonctionner pour les clients après le 7 janvier 2023. Pour résoudre ce problème, l’administrateur du service Reader Extension, à l’aide d’anciens certificats, doit obtenir et réappliquer de nouveaux certificats émis par la nouvelle autorité de certification racine G2 Adobe à leurs documents de PDF (le lecteur étend les documents de PDF avec de nouveaux certificats).
 
-L’expiration des certificats a un impact sur les piles AEM Forms on JEE et AEM Forms on OSGi. Les deux piles ont un ensemble d’instructions différent. Selon votre pile, sélectionnez l’un des chemins suivants :
+L’expiration des certificats a un impact sur les piles AEM Forms on JEE et AEM Forms on OSGi. Les deux piles ont un ensemble d’instructions différent. Après la réunion du [conditions préalables](#Pre-requisites) et [obtention de nouveaux certificats](#obtain-the-certificates), en fonction de votre pile, sélectionnez l’un des chemins suivants :
 
-* Mise à jour des certificats pour un environnement AEM Forms on JEE
-* Mise à jour des certificats pour un environnement AEM Forms sur OSGi
+* [Mise à jour des certificats pour un environnement AEM Forms on JEE](#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment)
+* [Mise à jour des certificats pour un environnement AEM Forms sur OSGi](#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment)
 
 >[!NOTE]
 >
@@ -97,14 +97,14 @@ La mise à jour et l’application de nouveaux certificats sur la pile AEM Forms
 Dans un environnement AEM Forms on OSGi, des informations d’identification d’extension de Reader sont associées à l’utilisateur de fd-service. Avant d’ajouter des informations d’identification pour le magasin de clés fd-user, procédez comme suit pour créer un magasin de clés :
 
 1. Connectez-vous à votre instance d’auteur AEM en tant qu’administrateur.
-1. Accédez à Outils > Sécurité > Utilisateurs.
+1. Accédez à **[!UICONTROL Outils ]**> **[!UICONTROL Sécurité ]**> **[!UICONTROL Utilisateurs]**.
 1. Faites défiler la liste des utilisateurs jusqu’à ce que vous trouviez un compte utilisateur fd-service.
-1. Cliquez sur l’utilisateur fd-service.
+1. Cliquez sur **[!UICONTROL fd-service]** utilisateur.
 1. Cliquez sur l’onglet KeyStore .
-1. Cliquez sur Créer le KeyStore.
+1. Cliquez sur **[!UICONTROL Créer un KeyStore]**.
 1. Définissez le mot de passe d’accès KeyStore et enregistrez vos paramètres pour créer le mot de passe KeyStore.
 
-Après avoir créé le KeyStore, ajoutez les informations d’identification à l’utilisateur de fd-service.
+Après avoir créé le KeyStore, ajoutez les informations d’identification à l’utilisateur de fd-service. La vidéo suivante explique les étapes :
 
 >[!VIDEO](https://images-tv.adobe.com/mpcv3/5577/8db8e554-f04b-4fae-8108-b9b5e0eb03ad_1627925794.854x480at800_h264.mp4)
 
