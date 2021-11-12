@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
+source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '641'
 ht-degree: 58%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 58%
    + [Configuration de Dynamic Media - mode hybride](config-dynamic.md)
    + [Configuration des paramètres généraux de Dynamic Media](dm-general-settings.md)
    + [Configuration de la publication Dynamic Media](dm-publish-settings.md)
+   + [Option A](option-a-config-dms7.md)
+   + [Option B](option-b-config-dms7.md)
    + [Dépannage de Dynamic Media - mode Scene7](troubleshoot-dms7.md)
    + [Accessibilité dans Dynamic Media](accessibility-dm.md)
    + [Migration de Dynamic Media - mode hybride vers Dynamic Media - mode S7](migrate-from-hybrid-to-dms7.md)
