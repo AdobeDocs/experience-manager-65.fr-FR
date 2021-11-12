@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: bbced918e67c64c0bf2f5a3de8cbcb9063fff669
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2216'
 ht-degree: 38%
 
 ---
@@ -46,6 +46,9 @@ Voir aussi [Test du service Secure Testing](/help/assets/dm-publish-settings.md#
    * [Photoshop](#photoshop-tab) tab
    * [PDF](#pdf-tab) tab
    * [Illustrator](#illustrator-tab) tab
+
+   ![Page Paramètres généraux de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
+   *de la page Paramètres généraux de Dynamic Media, avec la fonction **[!UICONTROL Modification d’images]**onglet sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
 

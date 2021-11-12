@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: e3067a17153864babaf0243c4c3f6cf9cd8d30bc
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3114'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,6 @@ ht-degree: 3%
 >* Vous êtes un administrateur système Experience Manager disposant de droits d’administrateur.
 
 
-
 Les paramètres de la page Configuration de la publication de Dynamic Media déterminent la manière dont les ressources sont diffusées par défaut des serveurs Dynamic Media d’Adobe vers les sites web ou les applications. Si aucun paramètre n’est spécifié, le serveur Dynamic Media Adobe diffuse une ressource selon un paramètre par défaut sur une page Configuration de la publication . Par exemple, une demande de diffusion d’une image qui n’inclut pas d’attribut de résolution génère une image avec le paramètre de résolution d’objet par défaut sur la page Serveur d’images.
 
 Les administrateurs peuvent modifier les paramètres par défaut sur les pages Image Server, Image Renderer et Vignette afin de définir les paramètres par défaut de diffusion des ressources à partir des serveurs.
@@ -42,7 +41,7 @@ Les administrateurs peuvent modifier les paramètres par défaut sur les pages I
 
 1. En mode Création Experience Manager , sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale.
 1. Dans le rail de gauche, sélectionnez l’icône Outils, puis accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Configuration de la publication Dynamic Media]**.
-1. Sur la page Serveur d’images, définissez le contexte de publication Serveur d’images, puis utilisez les cinq onglets pour configurer les paramètres de publication par défaut.
+1. Sur la page Serveur d’images, définissez le contexte de publication Image Server, puis utilisez les cinq onglets pour configurer les paramètres de publication par défaut.
 
    * [Serveur d’images](#image-server)
    * [Sécurité](#security-tab) tab
@@ -50,6 +49,9 @@ Les administrateurs peuvent modifier les paramètres par défaut sur les pages I
    * [Attributs de requête](#request-attributes-tab) tab
    * [Attributs de miniature courants](#common-thumbnail-attributes-tab) tab
    * [Attributs de gestion des couleurs](#color-management-attributes-tab) tab
+
+   ![Page Configuration de la publication Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
+   *Configuration de la publication Dynamic Media, avec la page **[!UICONTROL Attributs de requête]**onglet sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
 
