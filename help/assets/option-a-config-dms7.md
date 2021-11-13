@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: b6000516b88342d6abf8072623cfece43e2ba19d
 workflow-type: tm+mt
-source-wordcount: '11558'
+source-wordcount: '11571'
 ht-degree: 32%
 
 ---
@@ -170,11 +170,11 @@ Si vous souhaitez personnaliser davantage votre configuration, vous pouvez éven
 Si vous souhaitez personnaliser davantage l’installation et la configuration du mode Scene7 de Dynamic Media, ou en optimiser les performances, vous pouvez effectuer une ou plusieurs des tâches *facultatives* suivantes :
 
 * [(Facultatif) Configurez le mode Dynamic Media - Scene7 pour le chargement de ressources d’une taille supérieure à 2 Go.](#optional-config-dms7-assets-larger-than-2gb)
-
-* [(Facultatif) Installation et configuration des paramètres du mode Scene7 de Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
-
+* [(Facultatif) Configuration de la publication Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
+   * [(Facultatif) Testez les ressources avant de les rendre publiques.](#test-assets-before-making-public)
+* [(Facultatif) Configuration des paramètres généraux de Dynamic Media](#configuring-application-general-settings)
+* [(Facultatif) Autres tâches de configuration](#additional-configuration-tasks)
 * [(Facultatif) Réglage des performances du mode Dynamic Media - Scene7](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
-
 * [(Facultatif) Filtrage des ressources pour la réplication](#optional-filtering-assets-for-replication)
 
 ### (Facultatif) Configurez le mode Dynamic Media - Scene7 pour le chargement de ressources d’une taille supérieure à 2 Go. {#optional-config-dms7-assets-larger-than-2gb}
@@ -643,7 +643,7 @@ Lorsque vous chargez des fichiers image Illustrator (AI), vous pouvez les mettre
 >[!NOTE]
 Par défaut, le système affiche 15 rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** et 15 paramètres prédéfinis de la visionneuse lorsque vous sélectionnez **[!UICONTROL Visionneuses]** dans la vue détaillée de la ressource. Vous pouvez augmenter cette limite. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-### (Facultatif) Autres tâches de configuration
+### (Facultatif) Autres tâches de configuration {#additional-configuration-tasks}
 
 Les tâches de configuration et de configuration facultatives sont les suivantes :
 
