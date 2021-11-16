@@ -4,10 +4,10 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 14339f6a34952c00351c6dee8537b5df6f6fbcd3
+source-git-commit: 0a35b26c5f790d67db55421b8f3e98e5ddb30528
 workflow-type: tm+mt
-source-wordcount: '4436'
-ht-degree: 5%
+source-wordcount: '4430'
+ht-degree: 6%
 
 ---
 
@@ -92,7 +92,7 @@ Voici la liste des correctifs fournis dans [!DNL Experience Manager] Version 6.5
 * Lors de la promotion d’un lancement, les modifications du lancement promu sont déployées deux fois sur les autres lancements. Si un utilisateur fait la promotion du double lancement déployé, le contenu doublé est reflété sur la page source (NPR-36893).
 * [!DNL Experience Manager] ajoute une bordure grise à certaines images PNG avec transparence si vous ajoutez les images à une page à l’aide du composant principal Image ou si vous redimensionnez à l’aide du composant Image de base (NPR-36879).
 * [!DNL Experience Manager Sites] L’interface utilisateur d’administration avec un grand nombre de modèles ralentit la navigation (NPR-36870).
-* La mise à niveau vers le Service Pack 9 empêche la création de quelques composants. Ce problème n’autorise pas [!DNL Sites] utilisateurs pour créer des pages (NPR-36857).
+* Le rendu des pages web échoue lorsque leurs liens sont modifiés par des lots de filtres de servlet personnalisés (NPR-36857).
 * Le `ContextHubImpl` crée une méthode `ResourceResolver` qui n&#39;est pas fermé. Elle génère des messages d’avertissement sur le fonctionnement à long terme. `ResourceResolver` et le service renvoie parfois des résultats inattendus (NPR-36853).
 * Lors de la synchronisation d’une seule Live Copy à partir des propriétés de page de plan directeur, toutes les autres Live Copies sont également synchronisées (NPR-36829, NPR-36522).
 * Lorsque seul le type MIME XLS est utilisé, la fonction de téléchargement de fichier ne fonctionne pas comme prévu (NPR-36785).
