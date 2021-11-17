@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: 468a8d96153c67232524eea6f180c9ceb364d60a
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '649'
 ht-degree: 58%
 
 ---
@@ -171,3 +171,7 @@ ht-degree: 58%
    + [Ressources liées](related-assets.md)
    + [Partage de dossiers privés](private-folder.md)
    + [Rendus vidéo](video-renditions.md)
++ Intégration à d’autres solutions {#integrations}
+   + [Intégrations avec [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installation de la version [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-install.md)
+   + [Configuration d’ [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-configure.md)
