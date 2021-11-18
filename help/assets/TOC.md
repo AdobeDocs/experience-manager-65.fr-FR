@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: 37d298378b7d33ec7c9803cbf9f4f7eb4d2193f9
+source-git-commit: 41ffd39d6815988b2b172d7dc1748570eb5ef584
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 58%
+source-wordcount: '657'
+ht-degree: 57%
 
 ---
 
@@ -39,11 +39,11 @@ ht-degree: 58%
    + [Archivage de la newsletter par un Experience League](dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](administering-dynamic-media.md)
    + [Utilisation de Dynamic Media](dynamic-media.md)
-   + [Configurez Dynamic Media - Mode Scene7](config-dms7.md)
+   + [Configuration de Dynamic Media - mode Scene7]{#config-scene7-mode}
+      + [Configuration de Dynamic Media - mode Scene7](config-dms7.md)
+      + [Facultatif - Configuration des paramètres généraux de Dynamic Media](dm-general-settings.md)
+      + [Facultatif - Dynamic Media Publish Setup Image Server](dm-publish-settings.md)
    + [Configuration de Dynamic Media - mode hybride](config-dynamic.md)
-   + [Configuration des paramètres généraux de Dynamic Media](dm-general-settings.md)
-   + [Configuration de la publication Dynamic Media](dm-publish-settings.md)
-   + [Option A](option-a-config-dms7.md)
    + [Option B](option-b-config-dms7.md)
    + [Dépannage de Dynamic Media - mode Scene7](troubleshoot-dms7.md)
    + [Accessibilité dans Dynamic Media](accessibility-dm.md)

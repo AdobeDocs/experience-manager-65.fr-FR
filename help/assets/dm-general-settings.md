@@ -7,37 +7,43 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
+source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 38%
+source-wordcount: '2454'
+ht-degree: 34%
 
 ---
 
 
 # Configuration des paramètres généraux de Dynamic Media
 
->[!IMPORTANT]
->
->Le paramètre général de Dynamic Media n’est disponible que si :
->
->* Vous exécutez Dynamic Media en mode Scene7.
->* Vous avez une *existant* **[!UICONTROL Configuration Dynamic Media]** (dans **[!UICONTROL Cloud Services]**) dans Adobe Experience Manager 6.5 ou dans Experience Manager as a Cloud Service.
->* Vous êtes un administrateur système Experience Manager disposant de droits d’administrateur.
+Configuration **[!UICONTROL Paramètres généraux de Dynamic Media]** est disponible uniquement si :
 
+* Vous exécutez Dynamic Media en mode Scene7. Voir [Activation de Dynamic Media en mode Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* Vous avez une *existant* **[!UICONTROL Configuration Dynamic Media]** (dans **[!UICONTROL Cloud Services]**) dans Adobe Experience Manager 6.5 ou dans Experience Manager as a Cloud Service.
+* Vous êtes un administrateur système Experience Manager disposant de droits d’administrateur.
+
+Les paramètres généraux de Dynamic Media sont destinés aux développeurs et programmeurs chevronnés de sites web. Adobe Dynamic Media recommande que les utilisateurs qui modifient ces paramètres de publication connaissent bien Dynamic Media sur Adobe Experience Manager et la technologie d’imagerie de base.
 
 Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour créer des chaînes URL pour votre site web et vos applications. Ces appels d’URL sont spécifiques à votre compte.
 
-Voir aussi [Test du service Secure Testing](/help/assets/dm-publish-settings.md#test-assets-before-making-public).
+La page Configuration de la publication Dynamic Media établit les paramètres par défaut qui déterminent la manière dont les ressources sont diffusées des serveurs Dynamic Media d’Adobe vers les sites web ou les applications. Si aucun paramètre n’est spécifié, le serveur Dynamic Media Adobe diffuse une ressource selon un paramètre par défaut qui a été configuré sur la page Configuration de la publication Dynamic Media .
+
+Voir aussi [Configuration et configuration des paramètres du mode Dynamic Media - Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+
+>[!NOTE]
+>
+>Mise à niveau de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? Les pages Paramètres généraux et Configuration de la publication dans Dynamic Media sont prérenseignées avec les valeurs issues de votre compte Dynamic Media Classic. Les exceptions sont toutes les valeurs répertoriées sous la variable **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs sont déjà en Experience Manager. Ainsi, les modifications que vous apportez sous **[!UICONTROL Options de chargement par défaut]**, sur les cinq onglets, l’interface utilisateur du Experience Manager est reflétée dans Dynamic Media et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page Paramètres généraux et Configuration de la publication sont conservés entre Dynamic Media Classic et Dynamic Media sur Experience Manager.
 
 **Pour configurer les paramètres généraux de Dynamic Media :**
 
 1. En mode Création Experience Manager , sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale.
-1. Dans le rail de gauche, sélectionnez l’icône Outils, puis accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Paramètre général Dynamic Media]**.
-1. Dans la page Serveur , définissez **[!UICONTROL Nom du serveur publié]** et **[!UICONTROL Nom du serveur d’origine]**, puis utilisez les cinq onglets pour configurer les paramètres de publication par défaut.
+1. Dans le rail de gauche, sélectionnez l’icône Outils, puis accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres généraux de Dynamic Media]**.
+1. Dans la page Serveur , définissez **[!UICONTROL Nom du serveur publié]** et **[!UICONTROL Nom du serveur d’origine]**, puis utilisez les cinq onglets pour configurer les options de chargement par défaut pour l’édition d’images et pour les fichiers Postscript, Photoshop, PDF et Illustrator.
 
    * [Serveur](#server-general-setting)
    * [Charger dans l’application](#upload-to-application)
@@ -58,7 +64,7 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les 
 
 | Option | Description |
 | --- | --- |
-| **[!UICONTROL Nom du serveur publié]** | Requis.<br>Ce serveur est le serveur CDN actif (Content Delivery Network) utilisé dans tous les appels d’URL générés par le système et spécifiques à votre compte. Ne modifiez pas le nom de ce serveur à moins que le support technique d’Adobe vous le demande. Le nom doit utiliser `https://` dans le chemin. |
+| **[!UICONTROL Nom du serveur publié]** | Requis.<br>Le nom doit utiliser `https://` dans le chemin.<br>Ce serveur est le serveur CDN actif (Content Delivery Network) utilisé dans tous les appels d’URL générés par le système et spécifiques à votre compte. Ne modifiez pas le nom de ce serveur à moins que le support technique d’Adobe vous le demande. |
 | **[!UICONTROL Nom du serveur d’origine]** | Requis.<br>Ce serveur n’est utilisé que pour les tests d’assurance qualité. Ne modifiez pas le nom de ce serveur à moins que le support technique par Adobe ne vous le demande. |
 
 ## Charger dans l’application {#upload-to-application}
@@ -69,7 +75,7 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les 
 
    | Option Remplacer les images | Description |
    | --- | --- |
-   | **[!UICONTROL Remplacer dans le dossier actuel ; même nom/extension de base]** | Valeur par défaut.<br>Cette option est la règle la plus stricte pour le remplacement. Elle implique que vous chargiez l’image de remplacement dans le même dossier que l’original, et qu’elle ait la même extension que le fichier d’origine. Si ces conditions ne sont pas remplies, un doublon est créé. |
+   | **[!UICONTROL Remplacer dans le dossier actuel, même nom/extension de base]** | Par défaut pour les nouveaux comptes Dynamic Media uniquement.<br>Cette option est la règle la plus stricte pour le remplacement. Elle implique que vous chargiez l’image de remplacement dans le même dossier que l’original, et qu’elle ait la même extension que le fichier d’origine. Si ces conditions ne sont pas remplies, un doublon est créé. |
    | **[!UICONTROL Remplacer dans le dossier actuel, même nom de base, indépendamment de l’extension]** | Nécessite de charger l’image de remplacement dans le même dossier que l’image d’origine, mais l’extension du nom de fichier peut être différente de celle de l’image d’origine. Par exemple, chaise.tif remplace chaise.jpg. |
    | **[!UICONTROL Remplacer dans un dossier, même nom/extension de ressource de base]** | Nécessite que l’image de remplacement ait la même extension que l’image d’origine (par exemple, chaise.jpg doit remplacer chaise.jpg, et non chaise.tif). Vous pouvez néanmoins télécharger l’image de remplacement dans un dossier différent de celui de l’image d’origine. L’image mise à jour se trouve dans le nouveau dossier ; le fichier d’origine n’est plus disponible à l’emplacement d’origine.. |
    | **[!UICONTROL Écraser dans n’importe quel dossier, même nom de ressource de base, quelle que soit l’extension]** | Cette option est la règle de remplacement la plus inclusive. Elle vous permet de charger une image de remplacement dans un dossier autre que celui de l’image d’origine, de charger un fichier dont l’extension est différente de celle du fichier d’origine et de remplacer le fichier d’origine. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été chargée. |
