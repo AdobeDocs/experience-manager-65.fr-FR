@@ -8,9 +8,9 @@ breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
-source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
+source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 80%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 80%
 # Guide de l’utilisateur pour le développement d’AEM 6.5 {#developing}
 
 + [Présentation du guide de l’utilisateur du développement](home.md)
-+ Introduction pour les développeurs{#introduction}
-   + [Prise en main du développement d’AEM Sites – Tutoriel WKND](getting-started.md)
++ Présentation pour les développeurs{#introduction}
+   + [Prise en main du développement d’AEM Sites – Tutoriel WKND ](getting-started.md)
    + [Concepts de base d’AEM](the-basics.md)
    + [Structure de l’interface utilisateur tactile d’AEM](touch-ui-structure.md)
    + [Concepts de l’interface utilisateur (IU) tactile d’AEM](touch-ui-concepts.md)
@@ -36,7 +36,7 @@ ht-degree: 80%
    + [Création d’un site web complet (IU classique)](website.md)
    + [Conceptions et Designer (IU classique)](designer.md)
    + [Migration vers l’interface utilisateur tactile](/help/sites-developing/touch-ui-migration.md)
-+ Plate-forme{#platform}
++ Plateforme{#platform}
    + [Aide-mémoire pour Sling](sling-cheatsheet.md)
    + [Utilisation des adaptateurs Sling](sling-adapters.md)
    + [Bibliothèques de balises](taglib.md)
@@ -91,12 +91,13 @@ ht-degree: 80%
       + [Internationalisation des chaînes d’interface utilisateur](i18n-dev.md)
       + [Utilisation du traducteur pour gérer les dictionnaires](i18n-translator.md)
       + [Extraction de chaînes pour la traduction](i18n-extract.md)
-   + Composants d’IU classique{#classic-ui-components}
+   + Composants de l’interface utilisateur classique{#classic-ui-components}
       + [Développement de composants AEM (IU classique)](developing-components-classic.md)
       + [Utilisation et extension de widgets (IU classique)](widgets.md)
       + [Utilisation des xtypes (IU classique)](xtypes.md)
       + [Développement de formulaires (IU classique)](developing-forms.md)
 + Gestion de l’expérience découplée{#headless}
+   + [Le découplage et AEM](headless/introduction.md)
    + [Sans affichage et hybride avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) 
    + Applications sur une seule page{#spas}
@@ -137,7 +138,7 @@ ht-degree: 80%
    + [Extension AEM Brackets](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation{#personlization}
++ Personnalisation {#personlization}
    + [ContextHub](contexthub.md)
    + [Configuration de ContextHub](ch-configuring.md)
    + [Ajout de ContextHub à des pages et accès à des magasins](ch-adding.md)
@@ -169,7 +170,7 @@ ht-degree: 80%
       + [Référence sur les processus de workflow](workflows-process-ref.md)
       + [Variables dans les workflows AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Extension du Multi Site Manager](extending-msm.md)
-   + Suivi et Analytics{#extending-analytics}
+   + Suivi et analyses{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
       + [Ajout d’un suivi Adobe Analytics aux composants](extending-analytics-components.md)
       + [Personnalisation de la structure Adobe Analytics](extending-analytics-framework.md)
@@ -184,7 +185,7 @@ ht-degree: 80%
       + [Script d’analyse des requêtes](analyze-request.md)
    + [Intégration de services à la console JMX](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/jmx-integration.html)
    + [Développement de l’éditeur en masse](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-bulk-editor.html)
-   + Extension de l’IU classique{#extending-classic-ui}
+   + Extension de l’interface utilisateur classique{#extending-classic-ui}
       + [Personnalisation de la console Sites web (IU classique)](customizing-siteadmin.md)
       + [Personnalisation de la console de bienvenue (IU classique)](customizing-the-welcome-console.md)
       + [Élaboration de rapports](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
