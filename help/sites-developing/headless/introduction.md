@@ -1,10 +1,10 @@
 ---
 title: 'Développement sans affichage pour AEM 6.5 Sites '
 description: Découvrez comment les puissantes fonctionnalités sans interface d’AEM 6.5 telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur plusieurs canaux.
-source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
+source-git-commit: 8c7acd06f3909897e5756170c606e00aead098b8
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 76%
+source-wordcount: '405'
+ht-degree: 72%
 
 ---
 
@@ -33,7 +33,7 @@ Ce document se concentre sur le modèle de mise en œuvre entièrement découpl�
 
 ## AEM 6.5 et sans affichage {#aem-headless}
 
-AEM as a Cloud Service est un outil couple pour le modèle d’implémentation découplée avec trois services puissants :
+AEM 6.5 est un outil flexible pour le modèle d’implémentation sans interface utilisateur graphique en offrant trois services puissants :
 
 1. Modèles de contenu
    * Les modèles de contenu sont une représentation structurée du contenu.
