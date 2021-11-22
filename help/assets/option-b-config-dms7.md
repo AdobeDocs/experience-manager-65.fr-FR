@@ -12,10 +12,10 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: 3b5e65efc9aaedbc3385cc348ead80afecae2f06
+source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
 workflow-type: tm+mt
-source-wordcount: '6063'
-ht-degree: 44%
+source-wordcount: '6082'
+ht-degree: 43%
 
 ---
 
@@ -265,7 +265,7 @@ Voir [Configuration de la configuration de publication Dynamic Media pour Image 
 
 #### Configuration des paramètres généraux de Dynamic Media {#configuring-application-general-settings}
 
-Configurez les propriétés de couleur par défaut de sorte que la correction des couleurs soit activée lorsque des images sont demandées.
+Configuration de Dynamic Media **[!UICONTROL Nom du serveur de publication]** l’URL et la variable **[!UICONTROL Nom du serveur d’origine]** URL. Vous pouvez également indiquer **[!UICONTROL Téléchargement vers l’application]** et **[!UICONTROL Options de téléchargement par défaut]** tout cela en fonction de votre cas d’utilisation spécifique.
 
 Voir [Configuration des paramètres généraux de Dynamic Media](/help/assets/dm-general-settings.md).
 
