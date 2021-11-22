@@ -1,14 +1,14 @@
 ---
-title: Configuration et administration de la fonctionnalité de métadonnées.
-description: Configuration et administration de la fonctionnalité  [!DNL Experience Manager Assets] liée à l’ajout et à la gestion des métadonnées.
+title: Configuration et administration des fonctionnalités de métadonnées.
+description: Configuration et administration de [!DNL Experience Manager Assets] fonctionnalité liée à l’ajout et à la gestion des métadonnées.
 contentOwner: AG
 role: User, Admin
-feature: Métadonnées
+feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: b36448449830aa8e19f6dc29ab7fb62608bb39dd
+source-git-commit: f854960dbb35cfb0f88d209a711f623099960edc
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 55%
+source-wordcount: '1977'
+ht-degree: 52%
 
 ---
 
@@ -24,33 +24,33 @@ ht-degree: 55%
 
 ## Modifier le schéma de métadonnées {#metadata-schema}
 
-Pour plus d’informations, voir [Modification des formulaires de schéma de métadonnées](metadata-schemas.md#edit-metadata-schema-forms).
+Pour plus d’informations, voir [modification des formulaires de schéma de métadonnées](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Enregistrez un espace de noms personnalisé dans [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
+## Enregistrement d’un espace de noms personnalisé dans [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
 
-Vous pouvez ajouter vos propres espaces de noms à [!DNL Experience Manager]. Tout comme il existe des espaces de noms prédéfinis tels que `cq`, `jcr` et `sling`, vous pouvez avoir un espace de noms pour les métadonnées de votre référentiel et le traitement XML.
+Vous pouvez ajouter vos propres espaces de noms à [!DNL Experience Manager]. Tout comme il existe des espaces de noms prédéfinis tels que `cq`, `jcr`, et `sling`, vous pouvez avoir un espace de noms pour les métadonnées de votre référentiel et le traitement XML.
 
-1. Accédez à la page d’administration du type de noeud `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
+1. Accéder à la page d’administration du type de noeud `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
 1. Pour accéder à la page d’administration des espaces de noms, cliquez sur **[!UICONTROL Espaces de noms]** en haut de la page.
-1. Pour ajouter un espace de noms, cliquez sur **[!UICONTROL New]** au bas de la page.
+1. Pour ajouter un espace de noms, cliquez sur **[!UICONTROL Nouveau]** au bas de la page.
 1. Spécifiez un espace de noms personnalisé dans la convention de l’espace de noms XML. Indiquez l’ID sous la forme d’un URI et d’un préfixe associé. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Configuration des limites pour la mise à jour des métadonnées en masse {#bulk-metadata-update-limit}
 
-Pour éviter une situation de type déni de service (DOS), [!DNL Enterprise Manager] limite le nombre de paramètres pris en charge dans une requête Sling. Lors de la mise à jour simultanée de plusieurs fichiers, vous pouvez atteindre le nombre maximal de paramètres et les métadonnées ne sont pas mises à jour pour d’autres fichiers. Enterprise Manager génère l’avertissement suivant dans les journaux :
+Pour éviter une situation semblable à un déni de service (DOS), [!DNL Enterprise Manager] limite le nombre de paramètres pris en charge dans une requête Sling. Lors de la mise à jour simultanée de plusieurs fichiers, vous pouvez atteindre le nombre maximal de paramètres et les métadonnées ne sont pas mises à jour pour d’autres fichiers. Enterprise Manager génère l’avertissement suivant dans les journaux :
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Pour modifier la limite, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]** et modifiez la valeur de **[!UICONTROL Paramètres POST max]** dans **[!UICONTROL Gestion des paramètres de requête Sling Apache]** configuration OSGi.
+Pour modifier la limite, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]** et modifiez la valeur de **[!UICONTROL Nombre maximal de paramètres de POST]** in **[!UICONTROL Gestion des paramètres de requête Apache Sling]** Configuration OSGi.
 
 ## Profils de métadonnées {#metadata-profiles}
 
-Un profil de métadonnées vous permet d’appliquer des métadonnées par défaut aux ressources d’un dossier. Créez un profil de métadonnées et appliquez-le à un dossier. Toute ressource que vous chargez par la suite dans le dossier hérite des métadonnées par défaut que vous avez configurées dans le profil de métadonnées.
+Un profil de métadonnées vous permet d’appliquer des métadonnées par défaut aux ressources d’un dossier. Créez un profil de métadonnées et appliquez-le à un dossier. Toute ressource que vous chargez ultérieurement dans le dossier hérite des métadonnées par défaut que vous avez configurées dans le profil de métadonnées.
 
 ### Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]** et cliquez sur **[!UICONTROL Créer]**.
-1. Saisissez un titre pour le profil, par exemple `Sample Metadata`, puis cliquez sur **[!UICONTROL Créer]**. Le [!UICONTROL formulaire de modification] du profil de métadonnées s’affiche.
+1. Saisissez un titre pour le profil, par exemple `Sample Metadata`, puis cliquez sur **[!UICONTROL Créer]**. Le [!UICONTROL Modifier le formulaire] pour que le profil de métadonnées s’affiche.
 
    ![Modification d’un formulaire de métadonnées](assets/metadata-edit-form.png)
 
@@ -60,13 +60,13 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
    Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]** :
 
-   * **[!UICONTROL Libellé]** du champ : Nom d’affichage de la propriété de métadonnées. Il est uniquement disponible à titre de référence.
+   * **[!UICONTROL Libellé du champ]**: Nom d’affichage de la propriété de métadonnées. Il est uniquement disponible à titre de référence.
 
-   * **[!UICONTROL Associer à la propriété]** : La valeur de cette propriété fournit le chemin ou le nom relatif du noeud de ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par `./`, car elle indique que le chemin d’accès se trouve sous le noeud de la ressource.
+   * **[!UICONTROL Associer à la propriété]**: La valeur de cette propriété fournit le chemin ou le nom relatif du noeud de ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par `./` car cela indique que le chemin d’accès se trouve sous le noeud de la ressource.
 
    ![Mappage du paramètre de propriété dans le profil de métadonnées](assets/metadata-profile-setting-map-property.png)
 
-   La valeur que vous spécifiez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le noeud de métadonnées de la ressource. Par exemple, si vous spécifiez `./jcr:content/metadata/dc:desc` comme nom de **[!UICONTROL Associer à la propriété]**, [!DNL Assets] stocke la valeur `dc:desc` dans le noeud de métadonnées de la ressource. Il est recommandé de ne mapper qu’un champ à une propriété donnée dans le schéma de métadonnées. Sinon, le dernier champ ajouté mappé à la propriété est sélectionné par le système.
+   La valeur que vous spécifiez pour **[!UICONTROL Associer à la propriété]** est stocké en tant que propriété sous le noeud de métadonnées de la ressource. Par exemple, si vous spécifiez `./jcr:content/metadata/dc:desc` comme nom de **[!UICONTROL Associer à la propriété]**, [!DNL Assets] stocke la valeur `dc:desc` sur le noeud de métadonnées de la ressource. Adobe recommande de ne mapper qu’un champ à une propriété donnée dans le schéma de métadonnées. Sinon, le dernier champ ajouté mappé à la propriété est sélectionné par le système.
 
    * **[!UICONTROL Valeur par défaut]** : utilisez cette propriété pour ajouter une valeur par défaut pour le composant des métadonnées. Par exemple, si vous indiquez « Ma description », cette valeur est affectée à la propriété `dc:desc` au niveau du nœud de métadonnées de la ressource.
 
@@ -74,18 +74,18 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
    >[!NOTE]
    >
-   >Si vous ajoutez une valeur par défaut à une nouvelle propriété de métadonnées (qui n’existe pas encore au niveau du nœud `/jcr:content/metadata`), la propriété et sa valeur ne s’affichent pas, par défaut, sur la page Propriétés de la ressource. Pour afficher la nouvelle propriété sur la page [!UICONTROL Propriétés] des ressources, modifiez le formulaire de schéma correspondant.
+   >Ajout d’une valeur par défaut à une nouvelle propriété de métadonnées (qui n’existe pas à l’adresse `/jcr:content/metadata` (noeud) n’affiche pas la propriété et sa valeur dans la variable [!UICONTROL Propriétés] par défaut. Pour afficher la nouvelle propriété sur le [!UICONTROL Propriétés] , modifiez le formulaire de schéma correspondant.
 
-1. (Facultatif) Ajoutez d’autres composants à la page Modifier le formulaire depuis l’onglet **[!UICONTROL Créer le formulaire]**, puis configurez leurs propriétés dans l’onglet **[!UICONTROL Paramètres]**. Les propriétés suivantes sont disponibles à partir de l’onglet **[!UICONTROL Créer le formulaire]** :
+1. (Facultatif) Dans le **[!UICONTROL Créer un formulaire]** onglet, ajouter d’autres composants à [!UICONTROL Modifier le formulaire]et configurez leurs propriétés dans le **[!UICONTROL Paramètres]** . Les propriétés suivantes sont disponibles dans la variable **[!UICONTROL Créer un formulaire]** tab :
 
 | Composant | Propriétés |
 | ----------------------------- | ----------------------------------------------------------------------- |
 | [!UICONTROL En-tête de section] | Libellé du champ, <br> Description |
-| [!UICONTROL Une seule ligne de texte] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Texte à plusieurs valeurs] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Nombre] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Date] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Balises standard] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
+| [!UICONTROL Texte mono-ligne] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Texte à plusieurs valeurs] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Nombre] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Date] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut |
+| [!UICONTROL Balises standard] | Libellé du champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
 
 1. Cliquez sur **[!UICONTROL Terminé]**. Le profil de métadonnées est ajouté à la liste des profils de la page **[!UICONTROL Profils de métadonnées]**.<br>
 
@@ -93,7 +93,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
 ### Copie d’un profil de métadonnées {#copying-a-metadata-profile}
 
-1. Sur la page **[!UICONTROL Profils de métadonnées]** , sélectionnez un profil de métadonnées pour en faire une copie.
+1. Dans la **[!UICONTROL Profils de métadonnées]** , sélectionnez un profil de métadonnées pour en faire une copie.
 
    ![Copie d’un profil de métadonnées](assets/metadata-profile-edit-copy-option.png)
 
@@ -134,15 +134,15 @@ To apply a metadata profile globally, follow these steps:
 
 [!DNL Adobe Experience Manager Assets] vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers.
 
-### Ajout d’un formulaire de schéma de métadonnées de dossier  {#add-a-folder-metadata-schema-form}
+### Ajout d’un formulaire de schéma de métadonnées de dossier {#add-a-folder-metadata-schema-form}
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
-1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
-1. Sur la page [!UICONTROL Schéma de métadonnées de dossier Forms] , cliquez sur **[!UICONTROL Créer]**.
-1. Indiquez un nom pour le formulaire, puis cliquez sur **[!UICONTROL Créer]**. Le nouveau formulaire de schéma est répertorié dans la page [!UICONTROL Forms de schéma].
+1. Dans [!DNL Experience Manager] , accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
+1. Sur le [!UICONTROL Forms de schéma de métadonnées de dossier] page, cliquez sur **[!UICONTROL Créer]**.
+1. Attribuez un nom au formulaire, puis cliquez sur **[!UICONTROL Créer]**. Le nouveau formulaire de schéma est répertorié dans le [!UICONTROL Forms du schéma] page.
 
-### Modification des formulaires de schéma de métadonnées de dossier  {#edit-folder-metadata-schema-forms}
+### Modification des formulaires de schéma de métadonnées de dossier {#edit-folder-metadata-schema-forms}
 
 Vous pouvez modifier un formulaire de schéma de métadonnées nouveau ou existant comprenant les éléments suivants :
 
@@ -151,12 +151,12 @@ Vous pouvez modifier un formulaire de schéma de métadonnées nouveau ou exista
 
 Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter de nouveaux onglets ou éléments de formulaire au formulaire de schéma de métadonnées.
 
-1. Dans la page Forms du schéma, sélectionnez le formulaire que vous avez créé, puis sélectionnez l’option **[!UICONTROL Modifier]** dans la barre d’outils.
+1. Sur la page Forms du schéma, sélectionnez le formulaire que vous avez créé, puis sélectionnez le **[!UICONTROL Modifier]** dans la barre d’outils.
 1. Sur la page Éditeur de schéma de métadonnées de dossier, cliquez sur `+` pour ajouter un onglet au formulaire. Pour renommer l’onglet, cliquez sur le nom par défaut et indiquez le nouveau nom sous **[!UICONTROL Paramètres]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   Pour ajouter d’autres onglets, cliquez sur `+`. Cliquez sur `X` dans un onglet pour le supprimer.
+   Pour ajouter d’autres onglets, cliquez sur `+`. Pour supprimer, cliquez sur `X` sur un onglet.
 
 1. Dans l’onglet actif, ajoutez un ou plusieurs composants de l’onglet **[!UICONTROL Créer le formulaire]**.
 
@@ -166,13 +166,13 @@ Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au
 
 1. Pour configurer un composant, sélectionnez-le et modifiez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**.
 
-   Si nécessaire, supprimez un composant de l’onglet **[!UICONTROL Paramètres]**.
+   Si nécessaire, supprimez un composant du **[!UICONTROL Paramètres]** .
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Cliquez sur **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer les modifications.
+1. Pour enregistrer les modifications, sélectionnez **[!UICONTROL Enregistrer]** dans la barre d’outils.
 
-#### Composants de création de formulaires  {#components-to-build-forms}
+#### Composants de création de formulaires {#components-to-build-forms}
 
 L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de formulaire que vous utilisez dans votre formulaire de schéma de métadonnées de dossier. L’onglet **[!UICONTROL Paramètres]** contient les attributs de chaque élément sélectionné dans l’onglet **[!UICONTROL Créer le formulaire]**. Voici la liste des éléments de formulaire disponibles dans l’onglet **[!UICONTROL Créer le formulaire]** :
 
@@ -189,7 +189,7 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 
 #### Modification d’éléments de formulaire {#editing-form-items}
 
-Pour modifier les propriétés des éléments de formulaire, cliquez sur le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans l’onglet **[!UICONTROL Paramètres]** .
+Pour modifier les propriétés d’éléments de formulaire, cliquez sur le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans le **[!UICONTROL Paramètres]** .
 
 **[!UICONTROL Libellé du champ]** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés du dossier.
 
@@ -213,7 +213,7 @@ Pour vous assurer que le composant est affiché correctement dans le formulaire 
 
 **[!UICONTROL Classe]** : classe d’objets à laquelle la propriété est associée.
 
-### Suppression de formulaires de schéma de métadonnées de dossier  {#delete-folder-metadata-schema-forms}
+### Suppression de formulaires de schéma de métadonnées de dossier {#delete-folder-metadata-schema-forms}
 
 Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur la page Formulaires de schéma de métadonnées de dossier. Pour supprimer un formulaire, sélectionnez-le et cliquez sur l’option de suppression de la barre d’outils.
 
@@ -225,9 +225,9 @@ Vous pouvez affecter un schéma de métadonnées de dossier à un dossier à par
 
 Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’accès au formulaire est stocké dans la propriété `folderMetadataSchema` du nœud de dossier sous `./jcr:content`.
 
-#### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier  {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+#### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
+1. Dans [!DNL Experience Manager] , accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, sélectionnez le formulaire à appliquer à un dossier.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Appliquer au(x) dossier(s)]**.
 
@@ -236,7 +236,7 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
    ![folder_properties](assets/folder_properties.png)
 
-   Pour afficher les champs de métadonnées du dossier, cliquez sur l’onglet **[!UICONTROL Métadonnées du dossier]** .
+   Pour afficher les champs de métadonnées du dossier, cliquez sur le bouton **[!UICONTROL Métadonnées de dossier]** .
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
@@ -244,20 +244,20 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 Vous pouvez affecter un schéma de métadonnées de dossier lors de la création d’un dossier. S’il existe au moins un schéma de métadonnées de dossier dans le système, une liste supplémentaire s’affiche dans la boîte de dialogue **[!UICONTROL Créer un dossier]**. Vous pouvez sélectionner le schéma de votre choix. Par défaut, aucun schéma n’est sélectionné.
 
-1. Dans l’interface utilisateur [!DNL Experience Manager Assets], cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
+1. Dans la [!DNL Experience Manager Assets] interface utilisateur, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Attribuez un titre et un nom au dossier.
 1. Dans la liste Schéma de métadonnées de dossier, sélectionnez le schéma de votre choix. Cliquez ensuite sur **[!UICONTROL Créer]**.
 
    ![select_schema](assets/select_schema.png)
 
 1. Ouvrez les propriétés des métadonnées pour le dossier auquel vous avez appliqué le schéma de métadonnées.
-1. Pour afficher les champs de métadonnées du dossier, cliquez sur l’onglet **[!UICONTROL Métadonnées du dossier]** .
+1. Pour afficher les champs de métadonnées du dossier, cliquez sur le bouton **[!UICONTROL Métadonnées de dossier]** .
 
 ### Utilisation du schéma de métadonnées de dossier {#use-the-folder-metadata-schema}
 
-Ouvrez les propriétés d’un dossier configuré avec un schéma de métadonnées de dossier. Un onglet **[!UICONTROL Métadonnées de dossier]** s’affiche dans la page [!UICONTROL Propriétés] du dossier. Pour afficher le formulaire de schéma de métadonnées de dossier, sélectionnez cet onglet.
+Ouvrez les propriétés d’un dossier configuré avec un schéma de métadonnées de dossier. A **[!UICONTROL Métadonnées de dossier]** s’affiche dans le dossier [!UICONTROL Propriétés] page. Pour afficher le formulaire de schéma de métadonnées de dossier, sélectionnez cet onglet.
 
-Saisissez les valeurs des métadonnées dans les différents champs et cliquez sur **[!UICONTROL Enregistrer]** pour les stocker. Les valeurs renseignées sont stockées dans le nœud de dossier du référentiel CRX.
+Saisissez les valeurs de métadonnées dans les différents champs, puis cliquez sur **[!UICONTROL Enregistrer]** pour stocker les valeurs. Les valeurs renseignées sont stockées dans le nœud de dossier du référentiel CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 
@@ -265,14 +265,14 @@ Saisissez les valeurs des métadonnées dans les différents champs et cliquez s
 
 * Pour importer des métadonnées sur des espaces de noms personnalisés, commencez par enregistrer les espaces de noms.
 * Le sélecteur de propriétés affiche les propriétés utilisées dans les éditeurs de schéma et les formulaires de recherche. Le sélecteur de propriétés ne sélectionne pas les propriétés de métadonnées d’une ressource.
-* Il se peut que des profils de métadonnées préexistants existent depuis avant la mise à niveau vers [!DNL Experience Manager] 6.5. Après la mise à niveau, si vous appliquez un tel profil dans le dossier [!UICONTROL Propriétés] de l’onglet [!UICONTROL Profils de métadonnées], les champs de formulaire de métadonnées ne s’affichent pas. Cependant, si vous appliquez un nouveau profil de métadonnées, les champs de formulaire s’affichent mais ne sont pas disponibles comme prévu. Les fonctionnalités ne sont pas perdues, mais si vous souhaitez voir les champs de formulaire (indisponibles), modifiez et enregistrez les profils de métadonnées existants.
+* Des profils de métadonnées préexistants peuvent exister depuis avant la mise à niveau vers [!DNL Experience Manager] 6.5. Après la mise à niveau, si vous appliquez un tel profil dans un dossier [!UICONTROL Propriétés] in [!UICONTROL Profils de métadonnées] , les champs de formulaire de métadonnées ne s’affichent pas. Cependant, si vous appliquez un nouveau profil de métadonnées, les champs de formulaire s’affichent mais ne sont pas disponibles comme prévu. Les fonctionnalités ne sont pas perdues, mais si vous souhaitez voir les champs de formulaire (indisponibles), modifiez et enregistrez les profils de métadonnées existants.
 
 >[!MORELIKETHIS]
 >
 >* [Concepts et compréhension des métadonnées](metadata-concepts.md).
 >* [Modification des propriétés de métadonnées de plusieurs collections](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importation et exportation des métadonnées dans Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
+>* [Importation et exportation des métadonnées dans Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md).
->* [Bonnes pratiques pour organiser vos ressources numériques afin d’utiliser les profils](/help/assets/organize-assets.md) de traitement.
+>* [Bonnes pratiques pour organiser vos ressources numériques afin d’utiliser les profils de traitement](/help/assets/organize-assets.md).
 >* [Écriture différée XMP](/help/assets/xmp-writeback.md).
 
