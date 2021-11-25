@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: c0393e614cf96066dfd765cc00dc8ad370755a27
+source-git-commit: 35260325b583bd047f22ffa88afb9469b2023e60
 workflow-type: tm+mt
-source-wordcount: '3368'
+source-wordcount: '3367'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
 * Une amélioration de l’expérience utilisateur affiche le nombre de ressources présentes dans un dossier. Pour plus de 1 000 ressources dans un dossier, [!DNL Assets] affiche 1000+.
 
-* Vous pouvez désormais afficher l’option de tri en mode Carte et Colonnes (NPR-37199).
+* Vous pouvez désormais afficher l’option de tri en mode Carte et Colonne.
 
 * Vous pouvez désormais utiliser [!DNL Dynamic Media] pour configurer les paramètres généraux au lieu d’avoir à passer par l’ [!DNL Dynamic Media Classic] application de bureau. Voir [Configuration des paramètres généraux de Dynamic Media](/help/assets/dm-general-settings.md).
 
