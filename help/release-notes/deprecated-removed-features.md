@@ -2,9 +2,9 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
+source-git-commit: c9db5a1764d98bb049c08a0e6962b7ed5e1bfe5c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1753'
 ht-degree: 43%
 
 ---
@@ -28,7 +28,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 | Zone | Fonctionnalité | Remplacement | Version (SP) |
 |---|---|---|---|
-| [!DNL Sites] | Modèles de fragment de contenu, pour la création de fragments de contenu simples. | [Fragments de contenu structuré basés sur des modèles](/help/assets/content-fragments/content-fragments-models.md) maintenant. |  |
+| [!DNL Sites] | Modèles de fragment de contenu, pour la création de fragments de contenu simples. | [Fragments de contenu structuré basés sur des modèles](/help/assets/content-fragments/content-fragments-models.md) maintenant. | 6.5.11.0 |
 | Intégration de Creative Cloud | AEM au partage de dossiers Creative Cloud a été introduit dans AEM 6.2 afin de permettre aux utilisateurs créatifs d’accéder aux ressources d’, de sorte qu’ils puissent les ouvrir dans [!DNL Creative Cloud] et chargez de nouveaux fichiers ou enregistrez les modifications dans AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’envisage pas d’apporter d’autres améliorations à l’intégration du partage de dossiers d’AEM à Creative Cloud. Bien que cette fonctionnalité soit incluse dans AEM, il est vivement conseillé aux clients d’utiliser des solutions de remplacement. | Il est conseillé aux clients de passer à de nouvelles fonctionnalités d’intégration de Creative Cloud, notamment Adobe Asset Link ou l’appli de bureau AEM. |  |
 | Ressources | `AssetDownloadServlet` est désactivé par défaut pour les instances de publication. Pour plus de détails, voir la [Liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md). | Configuration décrite dans la [Liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md). |  |
 | Ressources | Si un utilisateur ne dispose pas des autorisations suffisantes (lecture et écriture) sur `/content/dam/collections`, l’utilisateur ne peut pas créer de collection. | Respectez la configuration du contrôle d’accès de l’utilisateur et assurez-vous que les autorisations sont appropriées. |  |
