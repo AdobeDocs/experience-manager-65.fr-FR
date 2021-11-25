@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
+source-git-commit: e68f6203d7629cab16e59778ce64908f943d5b3f
 workflow-type: tm+mt
 source-wordcount: '2789'
 ht-degree: 81%
 
 ---
+
 
 # Personnalisation et extensions de fragments de contenu{#customizing-and-extending-content-fragments}
 
@@ -226,9 +227,9 @@ Les fragments de contenu peuvent être intégrés à :
    >
    >Le workflow de traduction AEM fonctionne avec `/content` :
    >
-   >    * Les modèles de fragment de contenu résidant dans `/conf` ; ils ne sont pas inclus dans ces traductions. Vous pouvez [internationaliser les chaînes de l’IU](/help/sites-developing/i18n-dev.md).
+   >* Les modèles de fragment de contenu résidant dans `/conf` ; ils ne sont pas inclus dans ces traductions. Vous pouvez [internationaliser les chaînes de l’IU](/help/sites-developing/i18n-dev.md).
    >
-   >    * Les modèles étant copiés pour créer le fragment, cela est donc implicite.
+   >* Les modèles étant copiés pour créer le fragment, cela est donc implicite.
 
 
 * **Des schémas de métadonnées**
