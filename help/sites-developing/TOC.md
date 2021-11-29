@@ -8,10 +8,10 @@ breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
-source-git-commit: fccfcc71d61b483273cc3501fbcc411fce5c1424
+source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 76%
+source-wordcount: '1080'
+ht-degree: 77%
 
 ---
 
@@ -98,6 +98,13 @@ ht-degree: 76%
       + [Développement de formulaires (IU classique)](developing-forms.md)
 + Gestion de l’expérience découplée{#headless}
    + [Le découplage et AEM](headless/introduction.md)
+   + Guides de prise en main {#getting-started}
+      + [Présentation](headless/getting-started/introduction.md)
+      + [Création d’une configuration](headless/getting-started/create-configuration.md)
+      + [Création d’un modèle de fragment de contenu](headless/getting-started/create-content-model.md)
+      + [Création d’un dossier Ressources](headless/getting-started/create-assets-folder.md)
+      + [Création d’un fragment de contenu](headless/getting-started/create-content-fragment.md)
+      + [Accès aux fragments de contenu et leur diffusion](headless/getting-started/create-api-request.md)
    + Fragments de contenu{#content-fragments}
       + [Diffusion découplée avec des fragments de contenu et GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
       + [Utilisation de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
