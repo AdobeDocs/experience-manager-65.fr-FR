@@ -8,9 +8,9 @@ breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
-source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
+source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1085'
 ht-degree: 77%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 77%
       + [Utilisation et extension de widgets (IU classique)](widgets.md)
       + [Utilisation des xtypes (IU classique)](xtypes.md)
       + [Développement de formulaires (IU classique)](developing-forms.md)
++ [Couplage et découplage dans AEM](headful-headless.md)
 + Gestion de l’expérience découplée{#headless}
    + [Le découplage et AEM](headless/introduction.md)
    + Guides de prise en main {#getting-started}
