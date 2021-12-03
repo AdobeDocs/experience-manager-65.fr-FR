@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 7261a71769dfb968c768e0cb4835d7d4cca97b1a
+source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 31%
+source-wordcount: '1311'
+ht-degree: 33%
 
 ---
 
@@ -15,19 +15,29 @@ ht-degree: 31%
 
 Passez en revue la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
 
-**Avec la version d’avril, nous avons remplacé le connecteur CIF de GitHub par le module complémentaire CIF.** qui est disponible sur la [Distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Le passage au module complémentaire présente de nombreux avantages pour les projets :
-
-* La plupart des nouvelles fonctionnalités seront immédiatement disponibles dans AEM 6.5 (plus d’attente pour le port latéral de la fonctionnalité).
-* Mise à niveau aisée vers de nouvelles versions de module complémentaire
-* Prêt pour Cloud Service
-
-L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être utilisé. Remplacez le connecteur CIF par le nouveau module complémentaire CIF. Un simple remplacement de package doit être possible pour la plupart des projets.
-
 | Composant | Configuration requise |
 |:-------|:-----:|
 | Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Date de publication : Novembre 2021
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2021.11.18.00 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
+| Composants principaux CIF | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
+| Site de référence CIF Venia | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
+
+### Nouveautés {#what-is-new-november}
+
+* Extension des composants myAccount basés sur les composants Peregrine extensibles de Commerce
+
+![Extension des composants myAccount](/help/assets/CIF/extended-myAccount-components.png)
+
+* Les auteurs peuvent créer des Recommendations de produit Commerce ad hoc à l’aide de types de recommandations supplémentaires.
+
+* Prise en charge des cartes-cadeaux dans AEM Storefront
 
 ## Date de publication : Octobre 2021
 
@@ -69,7 +79,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Respect de la propriété &quot;include_in_menu&quot; dans le composant de navigation
 
-### Correctifs  {#bug-fixes-september}
+### Correctifs {#bug-fixes-september}
 
 * Le vidage du cache du menu ne fonctionne pas comme prévu.
 
@@ -93,7 +103,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Meilleure prise en charge d’A11Y pour les composants principaux CIF
 
-### Correctifs  {#bug-fixes-august}
+### Correctifs {#bug-fixes-august}
 
 * Impossible de fermer l’accordéon Filtre de catégorie une fois ouvert
 
@@ -149,7 +159,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Prise en charge de la pagination pour le contenu associé dans les propriétés de la console de produit
 
-### Correctifs  {#bug-fixes-may}
+### Correctifs {#bug-fixes-may}
 
 * Miniatures des ressources non affichées dans l’onglet Ressource des propriétés du produit
 
@@ -171,7 +181,7 @@ L’ancien connecteur CIF AEM passe en mode de maintenance et ne doit plus être
 
 * Nouveau composant principal de navigation CIF qui étend le composant principal de navigation WCM
 
-### Correctifs  {#bug-fixes-april}
+### Correctifs {#bug-fixes-april}
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
