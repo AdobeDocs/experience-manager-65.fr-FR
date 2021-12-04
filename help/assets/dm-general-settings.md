@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: null
-source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
+source-git-commit: 1b853936760daf7ee8d16ba926e612dadec40788
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 34%
@@ -31,7 +31,7 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les 
 
 La page Configuration de la publication Dynamic Media établit les paramètres par défaut qui déterminent la manière dont les ressources sont diffusées des serveurs Dynamic Media d’Adobe vers les sites web ou les applications. Si aucun paramètre n’est spécifié, le serveur Dynamic Media Adobe diffuse une ressource selon un paramètre par défaut qui a été configuré sur la page Configuration de la publication Dynamic Media .
 
-Voir aussi [Facultatif - Configuration et configuration des paramètres du mode Dynamic Media - Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr tâches de configuration facultatives.
+Voir aussi [Facultatif - Configuration et configuration des paramètres du mode Dynamic Media - Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) pour d’autres tâches de configuration facultatives.
 
 >[!NOTE]
 >
