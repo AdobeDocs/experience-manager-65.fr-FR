@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: 71c91d0284508463ea7746b6fe0ba82372005c81
+source-git-commit: a98ee0c090c299bc86bf027f69b2e191b716707a
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '657'
 ht-degree: 57%
 
 ---
@@ -121,6 +121,7 @@ ht-degree: 57%
    + [Intégration avec [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management dans les ressources](drm.md)
    + [Utilisation du module de démonstration pour les informations sur les ressources](use-demo-package-for-asset-insights.md)
+   + [Configurer Adobe Asset Link](configure-asset-link.md)
    + [Génération de rendus FPO pour Adobe InDesign](configure-fpo-renditions.md)
    + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
    + [Bonnes pratiques relatives à la surveillance des ressources](assets-monitoring-best-practices.md)
