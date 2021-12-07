@@ -4,9 +4,9 @@ description: Notes de mise à jour pour [!DNL Adobe Experience Manager] 6.5 Serv
 contentOwner: AK
 mini-toc-levels: 2
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 45673270ec839377f941860c098f965f7b35c59e
+source-git-commit: 80f4e8c857fe9e0dfe344042fc1db81dde721e18
 workflow-type: tm+mt
-source-wordcount: '26608'
+source-wordcount: '26665'
 ht-degree: 12%
 
 ---
@@ -23,15 +23,18 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
 * **API GraphQL pour[!DNL Content Fragments]**: La nouvelle API GraphQL est la méthode standard pour diffuser du contenu structuré au format JSON. Les requêtes GraphQL permettent aux clients de demander uniquement les éléments de contenu appropriés pour effectuer le rendu d’une expérience. Une telle sélection élimine la sur-diffusion du contenu (possibilité avec les API HTTP REST) qui nécessite une analyse du contenu côté client. Les schémas GraphQL sont dérivés de [!DNL Content Fragment] Les modèles et les réponses de l’API sont effectués au format JSON. Dans [!DNL Experience Manager] as a [!DNL Cloud Service], [Requêtes GraphQL persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) et traiter les demandes de GET compatibles avec le cache. Cela n’est pas encore possible dans [!DNL Experience Manager] 6.5.10.0.
 
+* **API GraphQL pour[!DNL Content Fragments]**: Pour prendre en charge l’API GraphQL, les tirets ne sont plus autorisés dans le champ de propriété du modèle de fragment de contenu. Les requêtes GraphQL peuvent renvoyer des résultats indésirables si un trait d’union est présent dans l’un des noms de propriétés du modèle de fragment de contenu.
+Seuls les caractères suivants sont autorisés pour le nom de la propriété : A-Za-z0-9_. Un chiffre ne peut pas se trouver dans la première position.
+
 * **Gestion des hiérarchies et aperçu futur**: Les utilisateurs disposent désormais d’une interface pour accéder aux structures de contenu de leurs [!DNL Experience Manager] lancements, notamment la possibilité d’ajouter et de supprimer des pages dans un lancement. Cette fonctionnalité améliore la flexibilité de [!DNL Experience Manager] se lance pour créer des versions de contenu destinées à une publication ultérieure. [Fonctionnalité de déformation temporelle](/help/sites-authoring/working-with-page-versions.md#timewarp) permet aux utilisateurs de prévisualiser les lancements en tant qu’états de contenu futurs.
 
 * **Ressources connectées**: [!DNL Experience Manager] étend la propriété [!DNL Connected Assets] à l’utilisation de [!DNL Dynamic Media] images dans les composants principaux applicables. Voir [Utilisation des ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* **Link share options to download assets or renditions**: When sharing assets and Collections as link, users can choose whether to allow the download of original assets, or their renditions, or both using the shared link. Also, the users who download the assets shared with them through link get the option to download only the original assets, only the renditions, or both.
+* **Options de partage de lien pour télécharger des ressources ou des rendus**: Lors du partage de ressources et de collections en tant que lien, les utilisateurs peuvent choisir d’autoriser le téléchargement des ressources d’origine ou de leurs rendus, ou les deux à l’aide du lien partagé. En outre, les utilisateurs qui téléchargent les ressources partagées avec eux via un lien ont la possibilité de télécharger uniquement les ressources d’origine, uniquement les rendus, ou les deux.
 
-* **Limiter les sous-ressources générées**: Les administrateurs peuvent limiter le nombre de sous-ressources qui [!DNL Experience Manager] génère pour les ressources composites telles que les fichiers PDF, PowerPoint, InDesign et Keynote. See [Manage compound assets](/help/assets/managing-linked-subassets.md#generate-subassets).
+* **Limiter les sous-ressources générées**: Les administrateurs peuvent limiter le nombre de sous-ressources qui [!DNL Experience Manager] génère pour les ressources composites telles que les fichiers PDF, PowerPoint, InDesign et Keynote. Voir [Gestion des ressources composites](/help/assets/managing-linked-subassets.md#generate-subassets).
 
-* **Camera Raw support**: A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
+* **Prise en charge Camera Raw**: Une nouvelle [!DNL Camera Raw] module disponible qui prend en charge [!DNL Adobe Camera Raw] v10.4. Voir [traitement des images à l’aide de [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la  1.22.8.
 
@@ -996,7 +999,7 @@ Voici la liste des correctifs fournis dans [!DNL Experience Manager] Version 6.5
 
 * Une fois qu’un style d’article est appliqué à un contenu, il ne peut pas être supprimé (NPR-34486).
 
-* All live copies and copies of an Experience Fragment point to the same [!DNL Adobe Target] offer ID (NPR-34469).
+* Toutes les Live Copies et copies d’un fragment d’expérience pointent vers le même [!DNL Adobe Target] ID d’offre (NPR-34469).
 
 * Les éléments de liste à puces s’affichent en plus de la liste numérotée (NPR-34455).
 
@@ -1010,9 +1013,9 @@ Voici la liste des correctifs fournis dans [!DNL Experience Manager] Version 6.5
 
 * Lorsqu’un utilisateur sélectionne la variable `Enter` sur la [!UICONTROL Tout sélectionner] , la sélection au clavier ne se déplace pas vers l’option [!UICONTROL Créer un contrôle] (CQ-4293599).
 
-* When you select the `Esc` key, the focus is not restored to the parent control (CQ-4293593, CQ-4293590).
+* Lorsque vous sélectionnez la variable `Esc` clé, le focus n’est pas restauré au contrôle parent (CQ-4293593, CQ-4293590).
 
-* Improved WCAG compliance for [!DNL Sites] UI and Core components (CQ-4293448).
+* Amélioration de la conformité WCAG pour [!DNL Sites] Interface utilisateur et composants principaux (CQ-4293448).
 
 * [!UICONTROL Zoom] et [!UICONTROL Échelle] Les fonctions sont désactivées pour la fonction [!DNL Sites Editor] (CQ-4282353).
 
@@ -1026,7 +1029,7 @@ Voici la liste des correctifs fournis dans [!DNL Experience Manager] Version 6.5
 
 * Lorsque vous effectuez la mise à niveau vers [!DNL Experience Manager] 6.5.6.0, le comportement du système de paragraphes hérité change et ne fonctionne pas correctement (NPR-35117).
 
-* Keyboard users are not able to shift the tab focus in an appropriate order after selecting the [!UICONTROL Action] section on an [!DNL AEM Sites] page (CQ-4307786).
+* Les utilisateurs du clavier ne peuvent pas changer la mise au point de l’onglet dans l’ordre approprié après avoir sélectionné la variable [!UICONTROL Action] sur une [!DNL AEM Sites] (CQ-4307786).
 
 * Après avoir sélectionné une option dans la liste de menu cible des liens de la barre d’outils de l’éditeur de texte enrichi lors de la modification d’un fragment de contenu, la boîte de dialogue de création de fragment de contenu commence à scintiller (CQ-4305532).
 
@@ -1742,7 +1745,7 @@ Voici la liste des correctifs fournis dans [!DNL Experience Manager] Version 6.5
 
 * L’objectif de divers éléments de zone combinée (tels que le champ Chemin et l’option d’ouverture de la boîte de dialogue Sélection dans l’onglet De base des propriétés de la ressource) est désormais correctement annoncé par les lecteurs d’écran (NPR-33235).
 
-* Information that the rows in list view table are selectable is now communicated to screen reader users when keyboard focus is on them. Lorsqu’un pointeur survole les lignes, les lecteurs d’écran annoncent les informations (NPR-33234).
+* Les informations selon lesquelles les lignes du tableau en mode Liste peuvent être sélectionnées sont désormais communiquées aux utilisateurs du lecteur d’écran lorsque le focus au clavier les concerne. Lorsqu’un pointeur survole les lignes, les lecteurs d’écran annoncent les informations (NPR-33234).
 
 * Options (dont [!UICONTROL x]) pour supprimer chacune des balises sélectionnées sous la balise [!UICONTROL Balises] champ dans [!UICONTROL De base] de [!UICONTROL Propriétés] sont désormais accessibles aux lecteurs d’écran (NPR-33206).
 
@@ -1752,10 +1755,10 @@ Voici la liste des correctifs fournis dans [!DNL Experience Manager] Version 6.5
 
 * Le menu du rail de gauche est désormais accessible. La fonctionnalité et l’objectif du développement du menu sont annoncés de manière appropriée par les lecteurs d’écran (NPR-33068).
 
-* List box and many other user interface elements are now accessible to non-sighted screen reader users, and following information about them is announced by screen readers (NPR-33040):
+* La zone de liste et de nombreux autres éléments de l’interface utilisateur sont désormais accessibles aux utilisateurs de lecteurs d’écran non voyants. Les informations suivantes à leur sujet sont annoncées par les lecteurs d’écran (NPR-33040) :
 
-   * whether user input is required on an element before form submission.
-   * whether an element is not editable.
+   * si la saisie de l’utilisateur est requise sur un élément avant l’envoi du formulaire.
+   * si un élément n’est pas modifiable.
    * si un widget est sélectionné ou non.
 
 * L’option d’ouverture de la barre latérale de filtrage est désormais accessible à l’aide du clavier (NPR-32842, CQ-4273018).
@@ -1938,9 +1941,9 @@ Voici la liste des correctifs fournis dans [!DNL Experience Manager] Version 6.5
 * Accessibilité de Forms adaptatif : Les champs marqués comme obligatoires dans un formulaire adaptatif n’ont pas l’attribut obligatoire défini sur True dans le schéma d’accessibilité ARIA (NPR-33070).
 * Service PDFG : Lorsqu’un utilisateur convertit un fichier texte en PDF, les caractères japonais ne s’affichent pas correctement (NPR-33238).
 * Service PDFG : `CreatePDF` ne parvient pas à convertir un fichier de PDF au format OCR du PDF (NPR-32994).
-* PDFG Service: PDF conversion fails for the 200th instance of an [!DNL OpenOffice] document (NPR-32766).
+* Service PDFG : La conversion du PDF échoue pour la 200e instance d’une [!DNL OpenOffice] document (NPR-32766).
 * BackendIntegration : Les demandes de modèle de données de formulaire échouent lorsque le jeton d’actualisation expire en raison d’un état inactif incorrect (NPR-33169).
-* Designer: Screen readers execute the tabbing order based on the default geographic order instead of the custom tabbing order defined in the XDP file (NPR-32160).
+* Designer : Les lecteurs d’écran exécutent l’ordre de tabulation en fonction de l’ordre géographique par défaut au lieu de l’ordre de tabulation personnalisé défini dans le fichier XDP (NPR-32160).
 * Designer : Si l’option de balisage est activée, la bordure du sous-formulaire disparaît dans la sortie de PDF générée (NPR-32778).
 * XSS stocké avec le GuideSOMProviderServlet (NPR-32700).
 
@@ -1950,7 +1953,7 @@ Adobe Experience Manager 6.5.4.0 est une mise à jour importante qui inclut de n
 
 Voici quelques fonctions et améliorations clés introduites dans Adobe Experience Manager 6.5.4.0 :
 
-* Adobe Experience Manager Assets is now configured with Brand Portal through [!DNL Adobe I/O] Console.
+* Adobe Experience Manager Assets est désormais configuré avec Brand Portal via [!DNL Adobe I/O] Console.
 
 * Une nouvelle [Générer une sortie imprimable](../forms/using/aem-forms-workflow-step-reference.md) est désormais disponible pour les workflows Adobe Experience Manager Forms.
 
@@ -2168,7 +2171,7 @@ Pour obtenir la liste complète des fonctionnalités et des points forts introdu
 
 * Document Security : Un fichier de PDF protégé ne s’ouvre pas hors ligne avec l’option DisableGlobalOfflineSynchronizationData définie sur True (NPR-32078).
 
-* Designer: If the tagging option is enabled, the subform border disappears in the generated PDF output (NPR-32547, NPR-31983, NPR-31950).
+* Designer : Si l’option de balisage est activée, la bordure du sous-formulaire disparaît dans la sortie de PDF générée (NPR-32547, NPR-31983, NPR-31950).
 
 * Designer : S’il existe des cellules fusionnées dans un tableau, le test d’accessibilité échoue pour le fichier de PDF de sortie converti à partir d’un formulaire XDP à l’aide du service de sortie (CQ-4285372).
 
@@ -2178,7 +2181,7 @@ Pour obtenir la liste complète des fonctionnalités et des points forts introdu
 
 [!DNL Adobe Experience Manager] La version 6.5.3.0 est une version importante qui comporte des améliorations et correctifs pour les performances, la stabilité, la sécurité et les bogues signalés par des clients depuis la mise à disposition de la version 6.5 dans **Avril 2019**. Il peut être installé sur [!DNL Adobe Experience Manager] 6.5.
 
-Some key highlights of this Service Pack release are:
+Voici quelques points forts de cette version du Service Pack :
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.10.6.
 
@@ -2767,9 +2770,9 @@ Voici quelques points forts de cette version du Service Pack :
 
 ### Formulaires
 
-The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
+Principaux points forts de [!DNL Experience Manager Forms] 6.5.1.0 :
 
-* OSGi only: Added a new attribute `PAGECOUNT` in Output and Forms Service.
+* OSGi uniquement : Ajout d’un nouvel attribut `PAGECOUNT` dans Output et Forms Service.
 
 * OSGI uniquement : Activation de la prise en charge de la création de fichiers de PDF statiques à l’aide du service Forms.
 * Autorisations activées sur XMLForm.exe pour les administrateurs et les utilisateurs racines.
@@ -2780,7 +2783,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 **Intégration du serveur principal**
 
 * Échec de récupération du WSDL (Web Service Definition Language) protégé. NPR-29944 : correctif pour CQ-4270777
-* When [!DNL Experience Manager Forms] is installed on IBM WebSphere, creating a form data model based on SOAP fails. Correctif pour CQ-4251134
+* When [!DNL Experience Manager Forms] est installé sur IBM WebSphere, la création d’un modèle de données de formulaire basé sur SOAP échoue. Correctif pour CQ-4251134
 * Activation de la prise en charge d’Active Directory Federation Services (ADFS) v3.0 pour l’intégration sur site de Microsoft Dynamics. Correctif pour CQ-4270586
 * Lorsque le titre d’une source de données est modifié, le modèle de données de formulaire n’affiche pas le titre mis à jour. Correctif pour CQ-4265599
 * Si le nom d’une entité ou d’un attribut contient un trait d’union ou un espace, les expressions ne parviennent pas à évaluer ces entités et attributs. Correctif pour CQ-4225129
