@@ -1,8 +1,8 @@
 ---
 title: Installation et configuration de Designer
-seo-title: Installation et configuration de Designer
+seo-title: Installing and configuring Designer
 description: 'Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Découvrez comment installer la version autonome de Designer.  '
-seo-description: 'Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Découvrez comment installer la version autonome de Designer.  '
+seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
 uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,10 +12,10 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 85596d4c2204aa1dd34c409b45d25eeffdb9c046
+source-git-commit: a3cf926bde4a4b3a0810058e84ac01012a4a3a57
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 81%
+source-wordcount: '280'
+ht-degree: 47%
 
 ---
 
@@ -23,13 +23,15 @@ ht-degree: 81%
 
 ## Prérequis {#pre-requisites}
 
-Le programme d’installation d’AEM Forms Designer nécessite la version 32 bits du [package d’exécution redistribuable Visual C++ 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) et du [package d’exécution redistribuable Visual C++ 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation.
+Le programme d’installation d’AEM Forms Designer nécessite la version 32 bits de [Package d’exécution redistribuable Visual C++ 2012](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) et [Package d’exécution redistribuable Visual C++ 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables mentionnés précédemment sont installés avant de démarrer l’installation.
+
+Vous avez besoin de droits d’administrateur pour installer ou désinstaller Designer.
 
 ## Installation de Designer {#install-designer}
 
 Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Si vous utilisez un programme d’installation autonome pour Designer, procédez comme suit :
 
-1. Téléchargez Designer à partir du [site Web de licences ](https://licensing.adobe.com/) de l’Adobe.
+1. Téléchargement de Designer depuis Adobe [Licences](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
@@ -41,3 +43,19 @@ Designer est disponible sous la forme d’un programme autonome et est égalemen
 1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur Suivant.
 1. Cliquez sur Précédent pour modifier les préférences. Pour installer Designer, cliquez sur Installer.
 1. Cliquez sur Terminer à la fin de l’installation.
+
+Vous pouvez également installer Designer via la ligne de commande en mode passif ou silencieux.
+
+* Installation en ligne de commande passive : Le programme d’installation affiche une barre de progression qui indique que l’installation est en cours mais qu’aucun message d’erreur ou d’avertissement ne s’affiche. Une fois l’installation lancée, vous ne pouvez pas l’annuler.
+
+```shell
+msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-****-****-****
+```
+
+* Installation silencieuse de ligne de commande : Le programme d’installation exécute l’installation sans afficher d’interface utilisateur. Aucun message, message ou boîte de dialogue ne s’affiche. Une fois l’installation lancée, vous ne pouvez pas l’annuler.
+
+```shell
+msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
+```
+
+
