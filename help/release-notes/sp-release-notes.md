@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: c7fdfeae785ad044437d065a8da6bdcbaf00d4c4
+source-git-commit: f2ccc77393e7fc1f53f9976076ec3c66c3f74189
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3728'
 ht-degree: 4%
 
 ---
@@ -151,7 +151,7 @@ Les améliorations d’accessibilité suivantes sont disponibles dans [!DNL Asse
 
 * En mode Carte dans le [!DNL Assets] référentiel, lors de l’utilisation de `Tab` pour déplacer la sélection vers le premier élément qui ouvre les actions rapides sur le focus, le lecteur d’écran annonce le nom de l’élément sélectionné.
 * Dans [!DNL Dynamic Media] [!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse], lorsque les couleurs de l’ombre et de la bordure ne sont pas présentes, les entrées sont désactivées à l’aide de la propriété disabled. Les utilisateurs du clavier ne sont pas en mesure de cibler l’entrée et les lecteurs d’écran n’annoncent pas l’état du contrôle comme désactivé.
-* Dans [!DNL Dynamic Media], dans l’interface de création d’un profil de codage vidéo, la variable [!UICONTROL Rapport de recadrage intelligent] est étiquetée pour l’accessibilité, de sorte que les lecteurs d’écran l’annoncent correctement.
+* Dans [!DNL Dynamic Media], dans l’interface de création d’un profil de codage vidéo, la variable [!UICONTROL Rapport de recadrage intelligent] est étiquetée pour l’accessibilité afin que les lecteurs d’écran l’annoncent correctement.
 
 * Vous pouvez désormais accéder aux commandes de liste de référence dans [!DNL Experience Manager Assets] à l&#39;aide du clavier.
 
@@ -512,6 +512,16 @@ Pour récupérer votre copie d’exécution, Adobe recommande de synchroniser la
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.
    * La zone réactive d’une image interactive Dynamic Media n’est pas visible lors de la prévisualisation de la ressource via la visionneuse de bannières Shoppable.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Délai d’attente avant que la modification du reg ne soit terminée sans enregistrement.
+
+* Lorsque vous tentez de déplacer/supprimer/publier des fragments de contenu ou des sites/pages, un problème se produit lorsque les références aux fragments de contenu sont récupérées, car la requête en arrière-plan échoue ; en d’autres termes, la fonctionnalité ne fonctionnera pas.
+Pour garantir le bon fonctionnement, vous devez ajouter les propriétés suivantes au noeud de définition d’index. `/oak:index/damAssetLucene` (aucune réindexation n’est requise) :
+
+   ```xml
+   "tags": [
+       "visualSimilaritySearch"
+     ]
+   "refresh": true
+   ```
 
 ## Lots OSGi et packages de contenu inclus {#osgi-bundles-and-content-packages-included}
 
