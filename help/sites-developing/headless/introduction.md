@@ -1,10 +1,10 @@
 ---
 title: 'Développement sans affichage pour AEM 6.5 Sites '
 description: Découvrez comment les puissantes fonctionnalités sans interface d’AEM 6.5 telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur plusieurs canaux.
-source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
+source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 72%
+source-wordcount: '493'
+ht-degree: 64%
 
 ---
 
@@ -25,11 +25,9 @@ L’implémentation découplée renonce à la gestion des pages et des composant
 
 Ce document se concentre sur le modèle de mise en œuvre entièrement découplée d’AEM. Pour autant, le choix entre couplage et découplage n’est pas nécessairement binaire dans AEM. Vous pouvez utiliser des fonctions découplées afin de gérer et diffuser votre contenu pour différents points d’entrée tout en permettant aux auteurs de contenu de modifier des applications sur une seule page. Le tout dans AEM.
 
-<!-- HM-Links
 >[!TIP]
 >
->See the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) for more information.
--->
+>Voir le document [Couplage et découplage dans AEM](/help/sites-developing/headful-headless.md) pour plus d’informations.
 
 ## AEM 6.5 et sans affichage {#aem-headless}
 
@@ -54,12 +52,6 @@ Un certain nombre de ressources sont disponibles pour que vous puissiez commence
 
 | Ressource | Description | Type | Public | Temps estimé |
 |---|---|---|---|---|
+| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | **Pour les utilisateurs qui découvrent AEM et qui n’ont pas d’interface utilisateur** pour une présentation complète de l&#39;AEM et de ses fonctionnalités sans tête, depuis la théorie de l&#39;absence de tête jusqu&#39;à la mise en ligne de votre premier projet sans tête. | Guide | Développeurs **nouveau à AEM et sans tête** | 1 heure |
+| [Guide de prise en main du mode découplé](/help/sites-developing/headless/getting-started/introduction.md) | **Pour les utilisateurs AEM expérimentés** Si vous avez besoin d’un bref résumé des principales fonctionnalités AEM sans interface utilisateur, consultez cet aperçu de démarrage rapide. | Démarrage rapide | Développeurs, Administrateurs **avec AEM expérience** | 20 minutes |
 | [Prise en main avec le tutoriel pratique d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr) | **Si vous préférez une approche pratique et que vous connaissez les AEM**, ce tutoriel aborde directement la création d’un projet simple sans tête. | Tutoriel | Développeurs | 2 heures |
-
-<!-- HM-Links
-|Resource|Description|Type|Audience|Est. Time|
-|---|---|---|---|---|
-|[Headless Developer Journey](/help/journey-headless/developer/overview.md)|**For users new to AEM and headless** technologies, start here for a comprehensive introduction to AEM and its headless features from the theory of headless through going live with your first headless project.|Guide|Developers **new to AEM and headless**|1 hour|
-|[Headless Getting Started Guide](/help/implementing/developing/headless/getting-started/introduction.md)|**For experienced AEM users** who need a short summary of the key AEM headless features, check out this quick start overview.|Quick Start|Developers, Administrators **with AEM experience**|20 minutes|
-|[Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)|**If you prefer a hands-on approach and are familiar with AEM**, this tutorial dives directly into creating a simple headless project.|Tutorial|Developers|2 hours|
--->

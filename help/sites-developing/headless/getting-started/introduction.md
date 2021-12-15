@@ -2,10 +2,10 @@
 title: Guide de prise en main du mode découplé
 description: Grâce à ce guide de démarrage rapide, découvrez les fonctionnalités essentielles des puissantes fonctionnalités sans interface d’AEM 6.5 telles que les modèles de contenu, les fragments de contenu et l’API GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
+source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 75%
+source-wordcount: '301'
+ht-degree: 68%
 
 ---
 
@@ -22,11 +22,8 @@ Les Guides de prise en main sans tête présentent un chemin simple pour créer,
 >[!TIP]
 >
 >Ce guide de prise en main suppose des connaissances en AEM et en technologies sans tête.
-
-<!-- HM-Links
 >
->If you are new to either AEM or headless, please refer to our [Headless Documentation Journeys](/help/journey-headless/home.md) for an end-to-end introduction to both headless and how AEM supports it.
--->
+>Si vous découvrez AEM ou que vous n’avez pas de tête, reportez-vous à la section [Parcours de documentation sans affichage](/help/journey-headless/home.md) pour une introduction de bout en bout sur les headless et la façon dont AEM les prend en charge.
 
 ## Public {#audience}
 
