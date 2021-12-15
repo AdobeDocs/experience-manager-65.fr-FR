@@ -8,10 +8,10 @@ breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
-source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
+source-git-commit: b924dc186497b6dfa4c2d2bb675f5029f8fc3617
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 77%
+source-wordcount: '1299'
+ht-degree: 70%
 
 ---
 
@@ -99,6 +99,23 @@ ht-degree: 77%
 + [Couplage et découplage dans AEM](headful-headless.md)
 + Gestion de l’expérience découplée{#headless}
    + [Le découplage et AEM](headless/introduction.md)
+   + Parcours sans affichage {#journeys}
+      + Parcours de développement découplé {#developer}
+         + [Comprendre le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
+         + [En savoir plus sur le développement CMS découplé](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
+         + [Prise en main d’AEM as a Cloud Service découplé](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/getting-started.html)
+         + [Chemin d’accès à votre première expérience à l’aide d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
+         + [Comment modéliser votre contenu en tant que modèles de contenu AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/model-your-content.html)
+         + [Accès à votre contenu grâce aux API de diffusion AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
+         + [Comment mettre à jour votre contenu via les API AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
+         + [Comment assembler l’ensemble](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
+         + [Comment mettre en ligne votre application découplée](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
+         + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
+      + Parcours d’architecture de contenu sans affichage {#architect}
+         + [Présentation du Parcours de l’architecture de contenu sans affichage AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
+         + [Modélisation de contenu pour sans affichage avec AEM - Introduction](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
+         + [Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
+         + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
    + Guides de prise en main {#getting-started}
       + [Présentation](headless/getting-started/introduction.md)
       + [Création d’une configuration](headless/getting-started/create-configuration.md)
