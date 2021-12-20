@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f2ccc77393e7fc1f53f9976076ec3c66c3f74189
+source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
 workflow-type: tm+mt
-source-wordcount: '3728'
+source-wordcount: '3822'
 ht-degree: 4%
 
 ---
@@ -151,7 +151,7 @@ Les améliorations d’accessibilité suivantes sont disponibles dans [!DNL Asse
 
 * En mode Carte dans le [!DNL Assets] référentiel, lors de l’utilisation de `Tab` pour déplacer la sélection vers le premier élément qui ouvre les actions rapides sur le focus, le lecteur d’écran annonce le nom de l’élément sélectionné.
 * Dans [!DNL Dynamic Media] [!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse], lorsque les couleurs de l’ombre et de la bordure ne sont pas présentes, les entrées sont désactivées à l’aide de la propriété disabled. Les utilisateurs du clavier ne sont pas en mesure de cibler l’entrée et les lecteurs d’écran n’annoncent pas l’état du contrôle comme désactivé.
-* Dans [!DNL Dynamic Media], dans l’interface de création d’un profil de codage vidéo, la variable [!UICONTROL Rapport de recadrage intelligent] est étiquetée pour l’accessibilité afin que les lecteurs d’écran l’annoncent correctement.
+* Dans [!DNL Dynamic Media], dans l’interface de création d’un profil de codage vidéo, la variable [!UICONTROL Rapport de recadrage intelligent] est étiquetée pour l’accessibilité, de sorte que les lecteurs d’écran l’annoncent correctement.
 
 * Vous pouvez désormais accéder aux commandes de liste de référence dans [!DNL Experience Manager Assets] à l&#39;aide du clavier.
 
@@ -371,6 +371,17 @@ Need to verify with Engineering, the status is currently showing as Resolved
 **Foundation JEE**
 
 * Après avoir installé AEM 6.5 Forms Service Pack 9, les URL du référentiel CRX ne sont plus disponibles (NPR-37592).
+
+**Problèmes résolus dans AEM Forms 6.5.11.1**
+
+>[!NOTE]
+>
+>Si vous n’avez pas effectué la mise à niveau vers AEM 6.5.11.0 Forms, installez directement le module complémentaire AEM Forms 6.5.11.1. Si vous avez installé AEM 6.5.11.0 Forms, Adobe recommande d’effectuer la mise à niveau vers AEM 6.5.11.1 Forms.
+
+* Les actions Envoyer, Envoyer un courrier électronique et Appeler un workflow AEM ne fonctionnent plus après l’installation du module complémentaire Forms 6.5.11.0.
+* L’opération CreatePDF cesse de convertir des documents Microsoft Word en documents PDF après l’installation du module complémentaire Forms 6.5.11.0.
+* (JEE uniquement) Vulnérabilités de sécurité critiques (CVE-2021-44228 et CVE-2021-45046) signalées pour Apache Log4j2.
+* (JEE uniquement) Le correctif Assembler DSC dans la version 6.5.11.0 contient des métadonnées incorrectes telles que la version des spécifications et la version impl.
 
 
 Pour plus d’informations sur les mises à jour de sécurité, voir [[!DNL Experience Manager] page bulletins de sécurité](https://helpx.adobe.com/security/products/experience-manager.html).
