@@ -1,15 +1,15 @@
 ---
-title: Prévisualisation de fichiers 3D
-description: Découvrez comment prévisualiser des ressources 3D
+title: Prévisualisation de ressources 3D
+description: Découvrez comment prévisualiser des ressources 3D dans Experience Manager.
 contentOwner: Rick Brough
 docset: aem65
-feature: Ressources 3D
+feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 32e637463a2f68a48b39c5dea9cc3cc4d1596d9b
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 77%
+source-wordcount: '556'
+ht-degree: 94%
 
 ---
 
@@ -54,15 +54,15 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 **Pour prévisualiser des ressources 3D dans Experience Manager :**
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans Experience Manager.
-Voir [Formats pris en charge pour l’aperçu 3D](#supported-3d-previewing-assets) et [Télécharger des ressources](/help/assets/manage-assets.md#uploading-assets).
-1. Dans Experience Manager, sur la page **[!UICONTROL Navigation]**, sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
+Voir [Formats pris en charge pour l’aperçu 3D](#supported-3d-previewing-assets) et [Chargement de ressources](/help/assets/manage-assets.md#uploading-assets).
+1. À partir du Experience Manager, sur **[!UICONTROL Navigation]** page, sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 
    ![Page de navigation](/help/assets/assets-dm/navigation-assets.png)
 
-1. Près du coin supérieur droit de la page, dans la liste déroulante Affichage , sélectionnez **[!UICONTROL Mode Carte]**, puis accédez à un fichier 3D à prévisualiser.
+1. Près du coin supérieur droit de la page, dans la liste déroulante Mode, sélectionnez **[!UICONTROL Mode Carte]**, puis accédez au fichier 3D à prévisualiser.
 
    ![Sélection de carte 3D](/help/assets/assets-dm/3d-card-select.png)
-   _En mode Carte, sélectionnez la carte de la ressource 3D à prévisualiser._
+   _En mode Carte, sélectionnez la carte du fichier 3D à prévisualiser._
 
 1. Sélectionnez la carte de la ressource 3D.
 
@@ -76,7 +76,7 @@ Voir [Formats pris en charge pour l’aperçu 3D](#supported-3d-previewing-asset
    | **Effectuer un panoramique avec la caméra** | Vous pouvez effectuer un panoramique vers la gauche, la droite, le haut ou le bas. | Clic droit + glisser. | Appuyez avec deux doigts + glisser. |
    | **Faire un zoom avec la caméra** | Se déplacer dans et hors des zones de la scène 3D. | Roue de défilement. | Appuyer avec deux doigts en les rapprochant. |
    | **Recentrer la caméra** | Recentrez la caméra sur un point d’un objet dans la scène 3D. | Double-cliquer. | Double appui. |
-   | **Réinitialiser** | Dans le coin inférieur droit de la page, sélectionnez l’icône Réinitialiser pour rétablir le point d’affichage cible au centre de la ressource 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |  |  |
+   | **Réinitialiser** | Près du coin inférieur droit de la page, sélectionnez l’icône Réinitialiser pour rétablir le point d’affichage cible au centre du fichier 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |  |  |
    | **Mode Plein écran** | Pour passer en mode Plein écran, dans le coin inférieur droit de la page, sélectionnez l’icône Plein écran. |  |  |
 
-1. Lorsque vous avez terminé, près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Fermer]**.
+1. Lorsque vous avez terminé, en haut à droite de la page, sélectionnez **[!UICONTROL Fermer]**.
