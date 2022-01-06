@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à [!DNL Adobe Experience Manage
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
+source-git-commit: 282f634e84b7c6c5e281d2b425953853790f225c
 workflow-type: tm+mt
-source-wordcount: '3822'
+source-wordcount: '3829'
 ht-degree: 4%
 
 ---
@@ -37,6 +37,8 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 * Une amélioration de l’expérience utilisateur affiche le nombre de ressources présentes dans un dossier. Pour plus de 1 000 ressources dans un dossier, [!DNL Assets] affiche 1000+.
 
 * Vous pouvez désormais afficher l’option de tri en mode Carte et Colonne.
+
+* Les profils professionnels prennent en charge Adobe Asset Link.
 
 * Vous pouvez désormais utiliser [!DNL Dynamic Media] pour configurer les paramètres généraux au lieu d’avoir à passer par l’ [!DNL Dynamic Media Classic] application de bureau. Voir [Configuration des paramètres généraux de Dynamic Media](/help/assets/dm-general-settings.md).
 
@@ -119,7 +121,7 @@ Les problèmes suivants ont été corrigés dans [!DNL Sites]:
 
 * Un nouveau noeud est incorrectement créé au niveau de la Live Copy lors de l’enregistrement des propriétés de page après l’ajout de configurations de déploiement (NPR-37084).
 
-* L’utilisateur ne peut pas créer de Live Copies ni procéder au déploiement à l’aide des propriétés de page pour les nouveaux gabarits (SITES-3442).
+* User cannot create live copies or roll out using page properties for new master pages (SITES-3442).
 
 * Les balises affichent les noms de balise au lieu du titre et l’option de fermeture ne supprime pas complètement les balises, car la propriété de balise ne fonctionne pas correctement lorsque l’héritage est annulé au niveau de la propriété (NPR-36831).
 
@@ -214,7 +216,7 @@ Les correctifs suivants sont disponibles dans [!DNL Dynamic Media]:
 
 * Lorsqu’un utilisateur clique sur la touche de raccourci du mode de formulaire (’F’), le lecteur d’écran ne mappe pas le libellé de la variable [!UICONTROL Taille d’incorporation] du menu [!UICONTROL Obtenir une incorporation] Boîte de dialogue de code (CQ-4290929).
 
-* Lors de l’utilisation de la navigation au clavier pour ouvrir la fenêtre contextuelle de lien d’email, les suggestions d’erreur affichées dans l’interface utilisateur pour les champs &quot;A&quot; et &quot;De&quot; ne sont pas descriptives (CQ-4290930).
+* When using keyboard navigation to open the email link popup window, the error suggestions displayed on the user interface for the &#39;To&#39; and &#39;From&#39; fields are not descriptive (CQ-4290930).
 
 * Lorsque vous accédez à la boîte de dialogue de lien d’e-mail, le lecteur d’écran ne décrit pas les informations d’étiquette des champs d’édition nouvellement ajoutés à l’aide de la flèche vers le bas et de la touche de raccourci du mode de formulaire (’F’) (CQ-4290934).
 
@@ -233,7 +235,7 @@ Les correctifs suivants sont disponibles dans [!DNL Dynamic Media]:
 
 ### Plateforme {#platform-65110}
 
-* Lorsqu’un utilisateur clique sur l’icône de réorganisation d’une option à plusieurs champs, la barre de défilement disparaît de l’interface utilisateur (CQ-4331100).
+* When a user clicks on the reorder icon for a multifield option, the scroll bar disappears from the user interface (CQ-4331100).
 
 * Après la mise à niveau, lorsqu’un utilisateur ouvre le composant de conteneur de connexion au travail, l’en-tête de la boîte de dialogue n’est pas visible dans l’interface utilisateur (CQ-4316173).
 
@@ -249,7 +251,7 @@ Les correctifs suivants sont disponibles dans [!DNL Dynamic Media]:
 
 * L’icône de dossier représentant le modèle est incorrecte (NPR-37176).
 
-* Lorsqu’un utilisateur effectue une recherche ou navigue à l’aide du navigateur de champ de chemin d’accès, des noeuds incorrects sont affichés (NPR-37175).
+* When a user performs a search or browses using the path field browser, incorrect nodes are displayed (NPR-37175).
 
 * Sur l’instance de publication, les requêtes entrantes sont bloquées pendant plusieurs minutes (NPR-37169).
 
@@ -380,7 +382,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Les actions Envoyer, Envoyer un courrier électronique et Appeler un workflow AEM ne fonctionnent plus après l’installation du module complémentaire Forms 6.5.11.0.
 * L’opération CreatePDF cesse de convertir des documents Microsoft Word en documents PDF après l’installation du module complémentaire Forms 6.5.11.0.
-* (JEE uniquement) Vulnérabilités de sécurité critiques (CVE-2021-44228 et CVE-2021-45046) signalées pour Apache Log4j2.
+* (JEE Only) Critical security vulnerabilities (CVE-2021-44228 and CVE-2021-45046) reported for Apache Log4j2.
 * (JEE uniquement) Le correctif Assembler DSC dans la version 6.5.11.0 contient des métadonnées incorrectes telles que la version des spécifications et la version impl.
 
 
@@ -504,9 +506,9 @@ Vérifiez si vous utilisez une fonctionnalité ou une fonctionnalité dans un d�
 
 * Lorsque vous installez AEM 6.5 Service Pack 11 et essayez de télécharger le fichier ZIP d’état, Experience Manager télécharge un fichier corrompu. Télécharger et installer [Package d’index SEO AEM Sites](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) sur votre instance AEM avant de télécharger le fichier ZIP pour résoudre le problème.
 
-* As [!DNL Microsoft Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] ne prend pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
+* As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
-* Si vous effectuez une mise à niveau de votre [!DNL Experience Manager] de la version 6.5 à la version 6.5.10.0, vous pouvez afficher `RRD4JReporter` exceptions dans la variable `error.log` fichier . Pour résoudre le problème, redémarrez l’instance.
+* If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.10.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. To resolve the issue, restart the instance.
 
 * Si vous installez [!DNL Experience Manager] 6.5 Service Pack 10 ou un Service Pack précédent sur [!DNL Experience Manager] 6.5, la copie d’exécution du modèle de workflow personnalisé de vos ressources (créé dans `/var/workflow/models/dam`) est supprimé.
 Pour récupérer votre copie d’exécution, Adobe recommande de synchroniser la copie d’heure de conception du modèle de workflow personnalisé avec sa copie d’exécution à l’aide de l’API HTTP :
