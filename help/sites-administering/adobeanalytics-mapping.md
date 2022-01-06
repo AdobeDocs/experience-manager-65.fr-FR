@@ -1,8 +1,8 @@
 ---
 title: Mappage des données de composant aux propriétés Adobe Analytics
-seo-title: Mappage des données de composant aux propriétés Adobe Analytics
+seo-title: Mapping Component Data with Adobe Analytics Properties
 description: Découvrez comment mapper des données de composant à des propriétés SiteCatalyst.
-seo-description: Découvrez comment mapper des données de composant à des propriétés SiteCatalyst.
+seo-description: Learn how to map component data with SiteCatalyst properties.
 uuid: b08ab37f-ad58-4c04-978f-8e21a3823ae8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,24 +11,24 @@ content-type: reference
 discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 085e77b7b831d6be626a46d3de215aedb50f6178
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 54%
+source-wordcount: '1457'
+ht-degree: 53%
 
 ---
 
 # Mappage des données de composant aux propriétés Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
-Ajoutez à la structure des composants qui rassemblent les données à envoyer à Adobe Analytics. Les composants conçus pour collecter des données d’analyse stockent les données dans la **variable CQ** appropriée. Lorsque vous ajoutez un tel composant à une structure, la structure affiche la liste des variables CQ afin que vous puissiez les ajouter à la **variable Analytics** appropriée.
+Ajoutez à la structure des composants qui rassemblent les données à envoyer à Adobe Analytics. Les composants conçus pour collecter des données d’analyse stockent les données dans la **variable CQ** appropriée. Lorsque vous ajoutez un tel composant à une structure, la structure affiche la liste des variables CQ afin que vous puissiez les ajouter à la structure appropriée. **Variable Analytics**.
 
 ![aa-11](assets/aa-11.png)
 
-Lorsque la **vue AEM** est ouverte, les variables Analytics apparaissent dans l’outil de recherche de contenu.
+Lorsque la variable **AEM vue** est ouvert ; les variables Analytics apparaissent dans l’outil de recherche de contenu.
 
 ![aa-12](assets/aa-12.png)
 
-Vous pouvez mapper plusieurs variables Analytics avec la même **variable CQ**.
+Vous pouvez mapper plusieurs variables Analytics avec la même **Variable CQ**.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -39,13 +39,13 @@ Les données mappées sont envoyées à Adobe Analytics lorsque la page se charg
 
 Suivez la procédure ci-dessous pour mapper des variables de composant CQ avec des propriétés de rapport Adobe Analytics.
 
-1. Dans la **vue AEM**, faites glisser un composant de suivi du sidekick vers la structure. Par exemple, faites glisser le composant **Page** de la catégorie **Général**.
+1. Dans le **AEM vue**, faites glisser un composant de suivi du sidekick vers la structure. Par exemple, faites glisser le **Page** composant à partir de **Général** catégorie.
 
    ![aa-13](assets/aa-13.png)
 
    Il existe différents groupes de composants par défaut : **Général**, **Commerce**, **Communities**, **Search&amp;Promote** et **Autre**. Votre instance AEM peut être configurée de manière à afficher différents groupes et composants.
 
-1. Pour mapper des variables Adobe Analytics avec des variables définies dans le composant, faites glisser une **variable Analytics** de l’outil de recherche de contenu vers un champ du composant de suivi. Par exemple, faites glisser `Page Name (pageName)` vers `pagedata.title`.
+1. Pour mapper des variables Adobe Analytics avec des variables définies dans le composant, faites glisser un **Variable Analytics** de l’outil de recherche de contenu sur un champ du composant de suivi. Par exemple, faites glisser `Page Name (pageName)` to `pagedata.title`.
 
    ![aa-14](assets/aa-14.png)
 
@@ -57,26 +57,24 @@ Suivez la procédure ci-dessous pour mapper des variables de composant CQ avec d
 
    >[!NOTE]
    >
-   >Vous pouvez mapper plusieurs variables Analytics (par exemple, `props`, `eVars`, `events`) à la même variable CQ (par exemple : `pagedata.title`)
+   >Vous pouvez mapper plusieurs variables Analytics (par exemple, `props`, `eVars`, `events`) à la même variable CQ (par exemple, `pagedata.title`)
 
    >[!CAUTION]
    >
    >Il est vivement recommandé de suivre les indications suivantes :
-   >    
-   >    * `eVars` et  `props` sont mappés à des variables CQ commençant par  `pagedata.X` ou  `eventdata.X`
-      >    
-      >    
-   * tandis que les événements doivent être mappés à des variables commençant par `eventdata.events.X`.
+   >
+   >* `eVars` et `props` sont mappés à des variables CQ en commençant par `pagedata.X` ou `eventdata.X`
+   >* tandis que les événements doivent être mappés à des variables commençant par `eventdata.events.X`.
 
 
-1. Pour rendre la structure disponible sur l’instance de publication de votre site, ouvrez l’onglet **Page** du sidekick, puis cliquez sur **Activer la structure.**
+1. Pour rendre la structure disponible sur l’instance de publication de votre site, ouvrez le **Page** de sidekick, puis cliquez sur **Activez la structure.**
 
 ## Mappage de variables liées à des produits {#mapping-product-related-variables}
 
 AEM utilise une convention pour nommer les variables et les événements liés aux produits qui doivent être mappés aux propriétés liées aux produits Adobe Analytics :
 
 | Variable CQ | Variable Analytics | Description |
-|---|---|---|
+|--- |--- |--- |
 | `product.category` | `product.category` (variable de conversion) | Catégorie de produits. |
 | `product.sku` | `product.sku` (variable de conversion) | SKU du produit. |
 | `product.quantity` | `product.quantity` (variable de conversion) | Nombre de produits achetés. |
@@ -107,7 +105,7 @@ Au départ, lorsque vous ouvrez une structure Adobe Analytics, l’outil de rech
 * Événements
 
 Lorsqu’un RSID est sélectionné, toutes les variables appartenant à ce RSID sont ajoutées à la liste.\
-`cf#` est nécessaire pour mapper les variables Analytics aux variables CQ présentes sur les différents composants de suivi. Voir Configuration d’une structure pour le suivi de base.
+Le `cf#` est nécessaire pour mapper les variables Analytics aux variables CQ présentes sur les différents composants de suivi. Voir Configuration d’une structure pour le suivi de base.
 
 Selon la vue sélectionnée pour la structure, l’outil de recherche de contenu sera renseigné par des variables Analytics (dans la vue AEM) ou des variables CQ (dans la vue Analytics).
 
@@ -116,8 +114,8 @@ La liste peut être manipulée comme suit :
 1. Lorsque vous accédez à la **vue AEM**, la liste peut être filtrée en fonction du type de variable sélectionné à l’aide des trois boutons de filtre :
 
    * Si *aucun bouton* n’est sélectionné, la liste complète s’affiche.
-   * Si le bouton **Trafic** est sélectionné, la liste affiche uniquement les variables appartenant à la section Trafic.
-   * Si le bouton **Conversion** est sélectionné, la liste affiche uniquement les variables appartenant à la section Conversion .
+   * Si la variable **Trafic** est sélectionné, la liste affiche uniquement les variables appartenant à la section Trafic .
+   * Si la variable **Conversion** est sélectionné, la liste affiche uniquement les variables appartenant à la section Conversion .
    * Si vous sélectionnez le bouton **Événements**, seules les variables appartenant à la section Événements sont répertoriées dans la liste.
 
    >[!NOTE]
@@ -136,16 +134,16 @@ La liste peut être manipulée comme suit :
 
 1. Dans la vue Adobe Analytics, l’outil de recherche de contenu affiche toutes les variables CQ appartenant aux composants de suivi déplacés dans la vue CQ.
 
-   * Par exemple, si le **composant Télécharger** est le *seul composant déplacé* dans la vue CQ (qui comporte deux variables mappables *eventdata.downloadLink* et *eventdata.events.startDownload*), l’outil de recherche de contenu ressemblera à cela lors du passage à la vue Adobe Analytics :
+   * Par exemple, si la variable **Composant de téléchargement** est la valeur *une seule traînée* dans la vue CQ (qui comporte deux variables mappables). *eventdata.downloadLink* et *eventdata.events.startDownload*), l’outil de recherche de contenu se présente comme suit lors du passage à la vue Adobe Analytics :
 
    ![aa-22](assets/aa-22.png)
 
-   * Les variables peuvent être glissées-déposées sur une variable Adobe Analytics appartenant à l’une des trois sections de variables (**Trafic**, **Conversion** et **Événements**).
+   * Les variables peuvent être glissées-déposées sur une variable Adobe Analytics appartenant à l’une des trois sections de variable (**Trafic**, **Conversion** et **Événements**).
 
    * Lorsque vous faites glisser un nouveau composant de suivi sur la structure dans la vue CQ, les variables CQ appartenant au composant sont automatiquement ajoutées à l’outil de recherche de contenu (cf#) dans la vue Adobe Analytics.
    >[!NOTE]
    >
-   >Une seule variable CQ peut être mappée à une variable Adobe Analytics à la fois.
+   >Une seule variable CQ peut être mappée à une variable Adobe Analytics à un moment donné.
 
 ## Utilisation de la vue AEM et de la vue Analytics {#using-aem-view-and-analytics-view}
 
@@ -188,17 +186,17 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 
    * **Trafic** :
 
-      * Variable de trafic ( `prop1`) mappée à une variable CQ ( `eventdata.downloadLink`)
+      * Variable de trafic ( `prop1`) mappé à une variable CQ ( `eventdata.downloadLink`)
 
       * Lorsque le composant comporte un cadenas en regard de son nom, cela signifie qu’il est hérité d’une structure parente et ne peut donc pas être modifié.
    * **Conversion**:
 
-      * Variable de conversion ( `eVar1`) mappée à une variable CQ ( `pagedata.title`)
+      * Variable de conversion ( `eVar1`) mappé à une variable CQ ( `pagedata.title`)
 
       * Variable de conversion (`eVar3`) mappée à une expression JavaScript ajoutée en ligne en double-cliquant dans le champ Variable CQ et en saisissant manuellement le code.
    * **Événement**:
 
-      * Variable d’événement ( `event1`) mappée à un événement CQ ( `eventdata.events.pageView`)
+      * Variable d’événement ( `event1`) mappé à un événement CQ ( `eventdata.events.pageView`)
 
 
 
@@ -206,14 +204,9 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 >
 >La colonne Variable CQ de chaque tableau peut également être renseignée en ligne en double-cliquant dans le champ et en ajoutant du texte. Ces champs acceptent la saisie de code JavaScript.
 >
->* Par exemple, en regard de `prop3` vous pouvez ajouter
->* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-   >  pour envoyer le *titre* d’une page concaténée à sa *section* à l’aide de *:* (deux-points) et précédé du préfixe *Adobe* comme `prop3`
-
->
-
-
+>Par exemple, en regard de `prop3` vous pouvez ajouter :
+>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+pour envoyer la variable *title* d’une page concaténée avec son *sitesection* using *:* (deux-points) et précédé du préfixe *Adobe* as `prop3`
 
 >[!CAUTION]
->
->Une seule variable CQ peut être mappée à une variable Adobe Analytics à un moment donné.
+Une seule variable CQ peut être mappée à une variable Adobe Analytics à un moment donné.
