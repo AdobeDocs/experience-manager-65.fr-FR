@@ -1,10 +1,7 @@
 ---
 title: Prise en main de AEM traduction sans interface
 description: Découvrez comment organiser votre contenu sans interface et comment AEM outils de traduction fonctionnent.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 7cf68868e0963930bde9fcda647822a03914b61d
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 1%
@@ -66,7 +63,7 @@ AEM contenu, qu’il s’agisse de pages web sans interface ou traditionnelles, 
 
 ## Comment AEM stocke du contenu sans affichage {#headless-content-in-aem}
 
-Pour le spécialiste de la traduction, il n’est pas important de comprendre en profondeur comment AEM gère le contenu sans interface. Toutefois, il sera utile de connaître les concepts et la terminologie de base, car vous utiliserez ensuite AEM outils de traduction. Plus important encore, vous devez comprendre votre propre contenu et sa structure afin de le traduire efficacement.
+Pour le spécialiste de la traduction, il n’est pas important de comprendre en profondeur comment AEM gère le contenu sans interface. Toutefois, il sera utile de connaître les concepts et la terminologie de base, car vous utiliserez plus tard AEM outils de traduction. Plus important encore, vous devez comprendre votre propre contenu et sa structure afin de le traduire efficacement.
 
 ### Modèles de contenu {#content-models}
 

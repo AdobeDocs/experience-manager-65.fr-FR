@@ -1,10 +1,7 @@
 ---
 title: AEM Parcours d’architecture de contenu sans affichage
 description: Cette section présente les fonctionnalités puissantes, flexibles et sans interface d’Adobe Experience Manager et explique comment modéliser le contenu de votre projet.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 99e7bb800da659fb8494eef2d9b9b87a6f263c21
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 38%

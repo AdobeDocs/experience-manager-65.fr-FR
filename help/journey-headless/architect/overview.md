@@ -1,10 +1,7 @@
 ---
 title: AEM Parcours d’architecture de contenu sans affichage
 description: Commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM sans interface, leurs fonctionnalités et comment modéliser votre contenu sur votre premier projet sans interface.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 99e7bb800da659fb8494eef2d9b9b87a6f263c21
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 26%

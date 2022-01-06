@@ -1,10 +1,7 @@
 ---
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de création de contenu pour votre CMS sans affichage à l’aide de fragments de contenu.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 9661061a98c31fbb74bd0716dbedc7abef298f44
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 6%

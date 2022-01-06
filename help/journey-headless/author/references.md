@@ -1,10 +1,7 @@
 ---
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Introduisez la nécessité et la mécanique des fragments imbriqués pour la création CMS sans affichage.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 9661061a98c31fbb74bd0716dbedc7abef298f44
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 10%

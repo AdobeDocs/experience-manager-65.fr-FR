@@ -1,10 +1,7 @@
 ---
 title: AEM Parcours de création de contenu sans affichage
 description: Commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM, leurs fonctionnalités et comment créer du contenu pour votre projet.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 867b0a5a4c660a069e54094ed003cd93289048c7
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 18%
@@ -13,23 +10,23 @@ ht-degree: 18%
 
 # AEM Parcours de création de contenu sans affichage {#aem-headless-author-journey}
 
-Start here for a guided journey through the powerful and flexible headless features of AEM, and how to author content for your headless project.
+Commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM et comment créer du contenu pour votre projet sans tête.
 
 ## Présentation {#introduction}
 
-Headless implementation is becoming increasingly important for delivering experiences to your audience, wherever they are and regardless of channel.
+L’implémentation sans affichage devient de plus en plus importante pour diffuser des expériences à votre audience, où qu’elle soit et quel que soit le canal.
 
-Headless content is not based on the traditional structure of pages, and components. Il est plutôt basé sur la création de fragments de contenu réutilisables et neutres pour les canaux et leur diffusion cross-canal.
+Le contenu sans affichage n’est pas basé sur la structure traditionnelle des pages et des composants. Il est plutôt basé sur la création de fragments de contenu réutilisables et neutres pour les canaux et leur diffusion cross-canal.
 
-Dans AEM, cela est réalisé avec les fragments de contenu. You author the content in individual Content Fragments that are then made available for an application to select and use as required.
+Dans AEM, cela est réalisé avec les fragments de contenu. Vous créez le contenu dans des fragments de contenu individuels qui sont ensuite rendus disponibles pour qu’une application puisse les sélectionner et les utiliser selon les besoins.
 
-This flexibility means that headless is a modern and dynamic development pattern for implementing digital experiences.
+Cette flexibilité signifie que headless est un modèle de développement moderne et dynamique pour la mise en oeuvre d’expériences numériques.
 
 Ce guide détaille les sujets les plus importants afin que vous puissiez :
 
 * avoir une compréhension de base de ce qu’est la diffusion de contenu sans interface et de ses avantages ;
 * comprendre les fonctionnalités découplées AEM et comment elles s’associent pour vous offrir une expérience découplée ;
-* Have the ability to author content for your AEM headless project.
+* Avoir la possibilité de créer du contenu pour votre projet AEM sans interface utilisateur.
 
 ## AEM Parcours de documentation {#documentation-journeys}
 
@@ -43,11 +40,11 @@ Si vous souhaitez savoir comment Adobe recommande de résoudre des affaires sans
 
 Ce parcours est conçu pour le personnage Auteur de contenu. En tant qu’auteur de contenu, vous allez créer le contenu réel dans les fragments de contenu.
 
-Le parcours décrit les exigences, les étapes et l’approche de création de contenu pour un projet AEM sans affichage. The journey will define additional personas with which the author must interact for a successful project, but the point-of-view for the journey is that of the content author.
+Le parcours décrit les exigences, les étapes et l’approche de création de contenu pour un projet AEM sans affichage. Le parcours définit des personnes supplémentaires avec lesquelles l’auteur doit interagir pour un projet réussi, mais le point de vue du parcours est celui de l’auteur du contenu.
 
 Les informations présentées dans ce parcours peuvent bien sûr être utiles à d’autres personnes, mais certaines informations seront superflues pour certains rôles. Tenez-vous informés des prochains parcours couvrant les spécificités des rôles supplémentaires.
 
-## The Headless Content Author Journey {#the-journey}
+## Le Parcours de création de contenu sans affichage {#the-journey}
 
 Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur les projets découplés dans AEM et vous proposent des liens vers une documentation technique détaillée.
 
@@ -55,15 +52,15 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 
 | Numéro | Article | Description |
 |---|---|---|
-| 0 | AEM Headless Content Author Journey | Ce document |
-| 1 | [Authoring for AEM Headless - An Introduction](introduction.md) | Cette section présente les fonctionnalités sans interface utilisateur d’Adobe Experience Manager et explique comment créer du contenu pour votre projet. |
+| 0 | AEM Parcours de création de contenu sans affichage | Ce document |
+| 1 | [Création pour AEM sans affichage - Introduction](introduction.md) | Cette section présente les fonctionnalités sans interface utilisateur d’Adobe Experience Manager et explique comment créer du contenu pour votre projet. |
 | 2 | [Principes de base de la création sans affichage avec AEM](basics.md) | Découvrez les concepts et les mécanismes de création de contenu pour votre CMS sans affichage à l’aide de fragments de contenu. |
-| 3 | [Learn about using references in Content Fragments](references.md) | Découvrez comment utiliser les références dans les fragments de contenu. Ils vous permettent également de créer et de gérer plusieurs niveaux de structure pour votre CMS sans affichage à l’aide de fragments imbriqués. |
+| 3 | [En savoir plus sur l’utilisation de références dans les fragments de contenu](references.md) | Découvrez comment utiliser les références dans les fragments de contenu. Ils vous permettent également de créer et de gérer plusieurs niveaux de structure pour votre CMS sans affichage à l’aide de fragments imbriqués. |
 | 4 | [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](metadata-tagging.md) | Découvrez comment définir des métadonnées et des balises pour les fragments de contenu. |
 
 ## Et après ? {#what-is-next}
 
-Vous êtes maintenant prêt à prendre en main votre parcours découplé Adobe. We encourage you to continue on to the next part of the journey and read the article [Authoring for AEM Headless - An Introduction.](introduction.md)
+Vous êtes maintenant prêt à prendre en main votre parcours découplé Adobe. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [Création pour AEM sans tête - Introduction.](introduction.md)
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
@@ -83,5 +80,5 @@ Ces parcours sont conçus pour être autonomes. Cependant, un certain nombre d�
 * [AEM Parcours de traduction sans affichage](/help/journey-headless/translation/overview.md) - Ce parcours de documentation vous donne une large compréhension de la technologie sans interface, de la manière dont AEM diffuse du contenu sans interface et de la manière dont vous pouvez le traduire.
 * [AEM Parcours développeur sans tête](/help/journey-headless/developer/overview.md) - Commencez ici pour un parcours guidé à travers les puissantes et flexibles fonctionnalités headless d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 * [Parcours Architecte sans tête](/help/journey-headless/architect/overview.md) - Commencez ici pour découvrir les fonctionnalités puissantes, flexibles et sans interface d’Adobe Experience Manager et comment modéliser le contenu de votre projet.
-* [AEM technical documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
-* [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) - If you prefer to learn by doing and are technically inclined, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.
+* [Documentation technique AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) - Si vous connaissez déjà bien les technologies AEM et sans interface, consultez directement nos documents techniques détaillés.
+* [Tutoriels AEM sans affichage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) - Si vous préférez apprendre par la pratique et êtes techniquement disposé, suivez nos tutoriels pratiques organisés par API et structure, qui explorent la création et l’utilisation d’applications reposant sur AEM Headless.
