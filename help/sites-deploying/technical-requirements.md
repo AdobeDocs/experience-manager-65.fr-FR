@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 1aad655a141fd2137875ae829d1b698298dfe285
+source-git-commit: 7630a6c4d908144e384b705bfce72779803aea93
 workflow-type: tm+mt
-source-wordcount: '3253'
-ht-degree: 82%
+source-wordcount: '3340'
+ht-degree: 80%
 
 ---
 
@@ -93,20 +93,24 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 <table>
  <tbody>
   <tr>
-   <td><strong>Plate-forme</strong></td>
+   <td><strong>Plateforme</strong></td>
    <td><strong>Niveau de prise en charge</strong></td>
+   <td><strong>Lien</strong></td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64 bits</td>
    <td>A : Pris en charge [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24</td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 8 - 64 bits</td>
    <td>A : Pris en charge [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18</td>
   </tr>
   <tr>
    <td>Oracle Java SE 11 JDK – 64 bits</td>
    <td>A : Pris en charge [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24<td>
   </tr>
   <tr>
    <td>Oracle Java SE 10 JDK</td>
@@ -119,6 +123,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
   <tr>
    <td>Oracle Java SE 8 JDK – 64 bits</td>
    <td>A : Pris en charge [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10<td>
   </tr>
   <tr>
    <td>Machine virtuelle IBM J9 – Version 2.9, JRE 1.8.0</td>
@@ -195,7 +200,7 @@ Adobe Experience Manager peut s’exécuter comme serveur autonome (fichier JA
 
 La version d’API de servlet minimum requise est 3.1.
 
-| Plate-forme | Niveau de prise en charge |
+| Plateforme | Niveau de prise en charge |
 |---|---|
 | **Moteur de servlet intégré au fichier de démarrage rapide (Jetty 9.4)** | A : Pris en charge |
 | Oracle WebLogic Server 12.2 (12cR2) | Z : Non pris en charge |
@@ -246,7 +251,7 @@ Dispatcher est le composant de mise en cache et d’équilibrage de charge. [Té
 
 L’utilisation des serveurs web ci-dessous est prise en charge avec Dispatcher version 4.3.2 :
 
-| Plate-forme | Niveau de prise en charge |
+| Plateforme | Niveau de prise en charge |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A : Pris en charge |
 | Microsoft IIS 10 (Internet Information Server) | A : Pris en charge |
