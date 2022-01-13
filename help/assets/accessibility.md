@@ -1,14 +1,14 @@
 ---
-title: Fonctionnalités et interfaces accessibles de  [!DNL Experience Manager Assets]
-description: Découvrez comment les fonctionnalités d’accessibilité d’ [!DNL Adobe Experience Manager] 6.5 [!DNL Assets]  aident les utilisateurs en situation de handicap.
+title: Fonctionnalités et interfaces accessibles de [!DNL Experience Manager Assets]
+description: Découvrez les fonctionnalités d’accessibilité dans [!DNL Adobe Experience Manager] 6,5 [!DNL Assets] aide les utilisateurs présentant un handicap.
 contentOwner: AG
-feature: Gestion des ressources
+feature: Asset Management
 role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 399ae241593b5cc14ef1c2efd090f0d1fae7c2df
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 90%
+source-wordcount: '1924'
+ht-degree: 89%
 
 ---
 
@@ -66,7 +66,7 @@ Les principales fonctionnalités d’[!DNL Assets] sont plus accessibles qu’au
 
 ## Prise en charge de l’utilisation du clavier {#keyboard-use}
 
-De nombreux éléments de l’interface utilisateur exploitables ou sur lesquels l’utilisateur peut cliquer peuvent également fonctionner avec un clavier. À l’aide du clavier, les utilisateurs peuvent se concentrer sur les éléments de l’interface et prendre les mesures appropriées. Les utilisateurs peuvent directement utiliser des raccourcis clavier pour déclencher une commande ou une action sans avoir à se concentrer sur les éléments de l’interface utilisateur et la déclencher via le clavier. Par exemple, les utilisateurs peuvent ouvrir la chronologie d’une ressource dans la partie gauche de l’interface utilisateur en accédant à la commande de l’interface utilisateur à l’aide du clavier et en sélectionnant `Return`, puis le raccourci clavier `Alt + 2`.
+De nombreux éléments de l’interface utilisateur exploitables ou sur lesquels l’utilisateur peut cliquer peuvent également fonctionner avec un clavier. À l’aide du clavier, les utilisateurs peuvent se concentrer sur les éléments de l’interface et prendre les mesures appropriées. Les utilisateurs peuvent directement utiliser des raccourcis clavier pour déclencher une commande ou une action sans avoir à se concentrer sur les éléments de l’interface utilisateur et la déclencher via le clavier. Par exemple, les utilisateurs peuvent ouvrir la chronologie d’une ressource dans la partie gauche de l’interface utilisateur en accédant à la commande de l’interface utilisateur à l’aide du clavier et en sélectionnant `Return`et en sélectionnant `Alt + 2` raccourci clavier.
 
 <!-- TBD items:
 
@@ -225,7 +225,7 @@ Pour rédiger des commentaires, poser des questions et demander des amélioratio
 >[!MORELIKETHIS]
 >
 >* [Fonctionnalités d’accessibilité dans [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
->* [Notes de mise à jour des améliorations apportées à chaque version](/help/release-notes/new-features-latest-service-pack.md) du Service Pack.
+>* [Notes de mise à jour des améliorations apportées à chaque version du Service Pack](/help/release-notes/release-notes.md).
 >* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).
 

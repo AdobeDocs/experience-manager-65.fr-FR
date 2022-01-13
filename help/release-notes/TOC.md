@@ -7,27 +7,30 @@ breadcrumb-title: Notes de mise à jour
 user-guide-description: Découvrez les dernières nouvelles fonctionnalités d’AEM 6.5 dans les notes de mise à jour.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 63b19027e5b13dfb97fd59145de75fbc6d246b93
+source-git-commit: f04822a4bd55d6bffb1766d42502b1d999eb6947
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 45%
+source-wordcount: '57'
+ht-degree: 47%
 
 ---
 
 
 # Notes de mise à jour d’Adobe Experience Manager 6.5 {#release-notes}
 
-+ [Présentation d’AEM 6.5](home.md)
-+ [Notes de mise à jour générales](release-notes.md)
-+ Notes de mise à jour du Service Pack {#service-pack}
-   + [Nouveautés](new-features-latest-service-pack.md)
-   + [Notes de mise à jour du Service Pack 11](sp-release-notes.md)
-   + [Notes de mise à jour précédentes du Service Pack](previous-hotfixes-featurepacks.md)
-+ [Notes de mise à jour d’AEM Sites](sites.md)
-+ [Notes de mise à jour d’AEM Assets](assets.md)
++ [Notes de mise à jour d’AEM 6.5](home.md)
++ [Notes de mise à jour de la version actuelle](release-notes.md)
++ Notes de mise à jour précédentes {#service-pack}
+   + [6.5.10](previous/6.5.10.md)
+   + [6.5.9](previous/6.5.9.md)
+   + [6.5.8](previous/6.5.8.md)
+   + [6.5.7](previous/6.5.7.md)
+   + [6.5.6](previous/6.5.6.md)
+   + [6.5.5](previous/6.5.5.md)
+   + [6.5.4](previous/6.5.4.md)
+   + [6.5.3](previous/6.5.3.md)
+   + [6.5.2](previous/6.5.2.md)
+   + [6.5.1](previous/6.5.1.md)
+   + [6.5.0](previous/ga.md)
 + [Programme d’installation des correctifs d’AEM Forms JEE](jee-patch-installer-65.md)
-+ [Notes de mise à jour d’AEM Communities](communities-release-notes.md)
 + [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
-+ [Problèmes connus](known-issues.md)
-+ [AEM Foundation et référentiel](wcm-platform.md)
 + [État des fonctionnalités de l’IU tactile](touch-ui-features-status.md)

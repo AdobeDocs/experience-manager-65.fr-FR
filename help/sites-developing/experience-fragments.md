@@ -1,8 +1,8 @@
 ---
 title: Fragments d’expérience
-seo-title: Fragments d’expérience
+seo-title: Experience Fragments
 description: Découvrez comment personnaliser les fragments d’expérience.
-seo-description: Découvrez comment personnaliser les fragments d’expérience.
+seo-description: Learn about customizing Experience Fragments.
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 92%
+source-wordcount: '1660'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Par exemple :
 >
 >Les liens font toujours référence à l’instance de publication. Ils sont destinés à être utilisés par des tiers, de sorte qu’ils soient toujours appelés à partir de l’instance de publication, et non de l’auteur.
 
-![xf-12](assets/xf-14.png)
+![xf-14](assets/xf-14.png)
 
 Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires ; le module [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Cette configuration se trouve dans l’emplacement suivant :
 
@@ -87,7 +87,7 @@ Les composants qui ne respectent pas cette convention ne sont pas pris en compte
 >
 >***Seuls***[ les modèles modifiables sont pris en charge pour les fragments d’expérience.](/help/sites-developing/page-templates-editable.md)
 
-Lors du développement d’un modèle pour les fragments d’expérience, vous pouvez suivre les pratiques standard d’un [modèle modifiable](/help/sites-developing/page-templates-editable.md).
+Lors du développement d’un nouveau modèle pour les fragments d’expérience, vous pouvez suivre les pratiques standard d’une [modèle modifiable](/help/sites-developing/page-templates-editable.md).
 
 Pour créer un modèle de fragment d’expérience détecté par l’assistant **Créer un fragment d’expérience**, vous devez suivre l’un des ensembles de règles suivants :
 
@@ -99,7 +99,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
 Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments en tant que 
-`cq:allowedTemplates` de ce dossier comprend tous les modèles dont le nom commence par  `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+propriété `cq:allowedTemplates` de ce dossier qui comprend tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 
@@ -116,9 +116,9 @@ Cela permet aux utilisateurs de créer des fragments d’expérience dans /conte
 
 [Le développement de composants à utiliser avec/dans les fragments d’expérience est conforme aux pratiques standard.](/help/sites-developing/components.md)
 
-La seule configuration supplémentaire consiste à s’assurer que les composants sont [autorisés sur le modèle, ce qui est réalisé avec la stratégie de contenu](/help/sites-developing/page-templates-editable.md#content-policies).
+La seule configuration supplémentaire consiste à s’assurer que les composants sont [sur le modèle, cela est réalisé avec la stratégie de contenu](/help/sites-developing/page-templates-editable.md#content-policies).
 
-## Fournisseur de réécriture de liens de fragments d’expérience - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## Fournisseur de réécriture de liens de fragments d’expérience – HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 Dans AEM, vous avez la possibilité de créer des fragments d’expérience. Un fragment d’expérience :
 
@@ -129,13 +129,13 @@ De tels groupes sont notamment utilisés pour incorporer du contenu dans des poi
 
 ### Réécriture de liens par défaut {#default-link-rewriting}
 
-Grâce à la fonction [Exporter vers Target](/help/sites-administering/experience-fragments-target.md), vous pouvez :
+En utilisant la variable [Exporter vers Target](/help/sites-administering/experience-fragments-target.md) vous pouvez :
 
 * de créer un fragment d’expérience ,
 * d’y ajouter des composants ;
 * de l’exporter ensuite en tant qu’offre Adobe Target, au format HTML ou JSON.
 
-Cette fonctionnalité peut être [activée sur une instance d’auteur d’AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
+Cette fonctionnalité peut être [activée sur une instance de création d’AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
 
 L’externaliseur de liens sert à déterminer les URL appropriées qui sont nécessaires lors de la création de la version HTML de l’offre Target, qui est ensuite envoyée à Adobe Target. Cela s’avère nécessaire dans la mesure où Adobe Target exige que tous les liens de l’offre HTML Target soient accessibles au public ; cela signifie que les ressources auxquelles les liens font référence et le fragment d’expérience proprement dit doivent être publiés avant d’être utilisés.
 
@@ -173,7 +173,7 @@ Pour ces cas d’utilisation, AEM propose l’interface du fournisseur de rééc
 
 >[!NOTE]
 >
->Cette interface a été introduite dans [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/sp-release-notes.md).
+>Cette interface a été introduite dans [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
 
 Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos bundles sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
 
@@ -283,8 +283,8 @@ S’agissant de la variation du fragment d’expérience concernée par le proce
 En entrée, la méthode reçoit les paramètres suivants :
 
 * `link`
-Les 
-`String` Représentation du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
+La 
+représentation `String` du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
 
 * `tag`
 Nom de l’élément HTML en cours de traitement.
@@ -310,7 +310,7 @@ Dans notre exemple, nous souhaitons supprimer la partie `/etc.clientlibs` de l�
 
 >[!NOTE]
 >
->Pour plus d’informations sur la manière d’obtenir un résolveur de ressources par le biais d’un utilisateur de service, voir [Utilisateurs de service dans AEM](/help/sites-administering/security-service-users.md).
+>Pour plus d’informations sur la manière d’obtenir un résolveur de ressources par le biais d’un utilisateur de service, voir [Utilisateurs du service dans AEM](/help/sites-administering/security-service-users.md).
 
 ```java
 private ResourceResolver resolver;

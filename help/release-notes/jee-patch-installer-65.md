@@ -5,7 +5,7 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 51%
@@ -16,11 +16,11 @@ ht-degree: 51%
 
 >[!NOTE]
 >
->[Pour plus d’informations ou pour obtenir le correctif, contactez le ](https://www.adobe.com/account/sign-in.supportportal.html) support technique.
+>[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html) pour plus d’informations ou pour obtenir le correctif.
 
 ## A propos du programme d&#39;installation de correctif {#about-the-patch-installer}
 
-Le programme d’installation du correctif Forms JEE d’AEM 6.5 comprend tous les problèmes résolus pour tous les composants d’AEM 6.5 Forms JEE disponibles jusqu’à la publication de ce correctif. Consultez les dernières [Notes de mise à jour du Service Pack](sp-release-notes.md) pour obtenir la liste complète des problèmes résolus.
+Le programme d’installation du correctif Forms JEE d’AEM 6.5 comprend tous les problèmes résolus pour tous les composants d’AEM 6.5 Forms JEE disponibles jusqu’à la publication de ce correctif. Consultez la dernière version  [Notes de mise à jour du Service Pack](release-notes.md) pour obtenir une liste complète des problèmes résolus.
 
 ## Prérequis pour installer le correctif {#prerequisites-to-installing-the-patch}
 
@@ -38,8 +38,8 @@ Accédez au répertoire approprié sur le support d’installation ou dans le do
 
       * (Windows 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
-   * ****
-LinuxAccédez au répertoire approprié, puis, à l’invite de commande, saisissez 
+   * **Linux**
+Accédez au répertoire approprié, puis, à l’invite de commande, saisissez 
 `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -52,7 +52,7 @@ LinuxAccédez au répertoire approprié, puis, à l’invite de commande, saisis
 1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**.
 1. Lorsque l’installation est terminée, cliquez sur **[!UICONTROL Suivant]** pour appliquer les mises à jour du Quick Fix à vos fichiers installés.
 
-1. Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez au répertoire *&lt;AEMForms_Install_Dir>\configurationManager\bin* et mettez à jour les fichiers `ConfigurationManager.lax` et `ConfigurationManager_IPv6.lax` avec les opérations de changement de nom suivantes :
+1. Désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez à *&lt;aemforms_install_dir>\configurationManager\bin* répertoire et mise à jour `ConfigurationManager.lax` et `ConfigurationManager_IPv6.lax` fichiers avec les opérations de changement de nom suivantes :
 
    * `axis.jar` vers `axis-1.4.1.1.jar`
    * `serializer-2.7.1.jar` vers `serializer-2.7.2.jar`
@@ -62,7 +62,7 @@ LinuxAccédez au répertoire approprié, puis, à l’invite de commande, saisis
 
 1. La case à cocher Démarrer Configuration Manager est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager.
 
-1. Pour exécuter Configuration Manager ultérieurement, désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Vous pouvez lancer Configuration Manager ultérieurement à l’aide du script approprié dans le répertoire `[AEM_forms_root]/configurationManager/bin`.
+1. Pour exécuter Configuration Manager ultérieurement, désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur Terminé. Vous pouvez démarrer Configuration Manager ultérieurement à l’aide du script approprié dans la variable `[AEM_forms_root]/configurationManager/bin` répertoire .
 
 1. En fonction de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions de la section *Configuration et déploiement d’AEM Forms*.
 

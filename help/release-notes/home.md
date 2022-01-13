@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager 6.5
 description: Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: a2b3cb81fb15a1f03004e42cafbf92c84c9d7b89
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 46%
+source-wordcount: '391'
+ht-degree: 49%
 
 ---
 
@@ -13,10 +13,12 @@ ht-degree: 46%
 
 Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
 
+* [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes.md)
+
 ## Principaux articles AEM
 
-* [Initiez-vous à AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=fr)
-* [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Initiez-vous à AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr)
+* [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=fr)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
 ## Guides de l’utilisateur d’AEM 6.5

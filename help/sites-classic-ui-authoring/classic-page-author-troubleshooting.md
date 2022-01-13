@@ -1,8 +1,8 @@
 ---
 title: Résolution des problèmes d’AEM lors de la création
-seo-title: Résolution des problèmes d’AEM lors de la création
+seo-title: Troubleshooting AEM when Authoring
 description: La section suivante traite de certains problèmes susceptibles d’être rencontrés lorsque vous utilisez AEM, ainsi que des suggestions pour résoudre ces problèmes.
-seo-description: La section suivante traite de certains problèmes susceptibles d’être rencontrés lorsque vous utilisez AEM, ainsi que des suggestions pour résoudre ces problèmes.
+seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 91%
+source-wordcount: '430'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes, il est également intéressant de consulter les [problèmes connus](/help/release-notes/known-issues.md) relatifs à votre instance (packs de version et service packs).
+>Si vous rencontrez des problèmes, il est également intéressant de consulter les [problèmes connus](/help/release-notes/release-notes.md) relatifs à votre instance (packs de version et service packs).
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Vous avez modifié une page et l’avez répliquée sur le site de publication, mais l’*ancienne* version de la page est toujours visible sur le site de publication.
 
-* **Raison**:
+* **Raison** :
 
    * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
 
-* **Solutions**:
+* **Solutions** :
 
    * Plusieurs solutions sont possibles :
    * Vérifiez que la page a bien été répliquée. Vérifiez l’état de la page et, si nécessaire, l’état de la file d’attente de réplication.
@@ -58,11 +58,11 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Le sidekick n’est pas visible lors de la modification d’une page de contenu dans l’environnement de création.
 
-* **Raison**:
+* **Raison** :
 
    * Dans de rares cas, il se peut que vous ayez positionné l’en-tête de votre sidekick en dehors de votre fenêtre active. Ceci signifie que vous ne pouvez pas le repositionner.
 
-* **Solution**:
+* **Solution** :
 
    * Fermez votre session en cours et rouvrez-la. Le sidekick revient à sa position par défaut.
 
@@ -70,18 +70,18 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 * **Problème:**
 
-   * Lors de l’utilisation de l’option **Rechercher et remplacer**, il se peut que toutes les instances du terme `find` ne soient pas remplacées sur une page.
+   * Lors de l’utilisation de la variable **Chercher et Remplacer** l’option il peut arriver que toutes les instances de la variable `find` sont remplacés sur une page.
 
-* **Raison**:
+* **Raison** :
 
-   * La fonctionnalité **Chercher et Remplacer** dépend de la manière dont le contenu est enregistré et de la possibilité de le rechercher. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
+   * La capacité de **Chercher et Remplacer** dépend de la manière dont le contenu est enregistré et s’il peut faire l’objet de recherches. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
 
       * `jcr:title`
       * `jcr:description`
       * `jcr:text`
       * `text`
 
-* **Solution** :
+* **Solution** :
 
    * Ces définitions peuvent être modifiées dans la configuration du **servlet Day CQ WCM Find Replace** à l’aide de la **console Web**, par exemple à l’adresse
 

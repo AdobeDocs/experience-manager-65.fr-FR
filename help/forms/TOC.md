@@ -8,10 +8,10 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: d010b2a20e40fabe40f67d60ef0b6fab245be60f
+source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
 workflow-type: tm+mt
-source-wordcount: '3777'
-ht-degree: 70%
+source-wordcount: '3772'
+ht-degree: 71%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 70%
 
 + [Guide d’AEM 6.5 Forms](home.md)
 + Notes de mise à jour {#release-notes-new-features}
-   + [Notes de mise à jour](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
+   + [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=fr)
    + [Résumé des nouvelles fonctionnalités](using/whats-new.md)
-   + [Fonctionnalités obsolètes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
+   + [Fonctionnalités obsolètes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Prise en main {#getting-started}
    + [Présentation d’AEM Forms](using/introduction-aem-forms.md)
    + [Présentation de la création de formulaires adaptatifs](using/introduction-forms-authoring.md)

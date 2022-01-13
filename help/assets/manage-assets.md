@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: eb7051582a51d983851c876025770668b258bff5
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '9878'
 ht-degree: 60%
@@ -338,7 +338,7 @@ La fonctionnalité présente certaines limites :
 * Si un dossier portant le même nom existe au niveau de la destination, les ressources du fichier ZIP sont extraites dans le dossier existant.
 * Si vous annulez l’extraction, les ressources déjà extraites ne sont pas supprimées.
 * Vous ne pouvez pas sélectionner deux fichiers ZIP simultanément et les extraire. Vous pouvez seulement extraire une archive ZIP à la fois.
-* Lors du chargement d’une archive ZIP, si la boîte de dialogue de chargement affiche une erreur de serveur 500, réessayez après l’installation. [le dernier Service Pack ;](/help/release-notes/sp-release-notes.md).
+* Lors du chargement d’une archive ZIP, si la boîte de dialogue de chargement affiche une erreur de serveur 500, réessayez après l’installation. [le dernier Service Pack ;](/help/release-notes/release-notes.md).
 
 ## Aperçu des ressources {#previewing-assets}
 
