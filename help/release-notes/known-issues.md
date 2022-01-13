@@ -2,10 +2,10 @@
 title: Problèmes connus
 description: Notes de mise à jour spécifiques aux problèmes connus dans Adobe Experience Manager 6.5
 exl-id: 736037cf-af8c-4ce2-969e-c100a939a038
-source-git-commit: e0f024c2e1dc9fc7908382d406844575b4b38363
+source-git-commit: d87e48070329518117f84252ea0cab0471d74a29
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 50%
+source-wordcount: '661'
+ht-degree: 49%
 
 ---
 
@@ -15,7 +15,7 @@ Cette page contient la liste des problèmes connus dans la version Adobe Experi
 
 [Contactez l’assistance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) si vous avez besoin d’informations supplémentaires sur les problèmes connus.
 
-## Plate-forme {#platform}
+## Plateforme {#platform}
 
 * Un problème est signalé lorsque le démarrage rapide CRX et son contenu sont supprimés.
 
@@ -45,6 +45,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 ```
 
 1. Enregistrez le fichier et redémarrez l’instance AEM.
+
+## Sites {#sites}
+
+* **Utilisation des versions de page**: Si une page a été déplacée, vous ne pouvez plus effectuer d’aperçu sur les versions antérieures au déplacement.
 
 ## Ressources {#assets}
 
@@ -80,4 +84,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * Au démarrage d’AEM Forms, la variable `SAX Security Manager could not be setup` s’affiche.
 * Lorsque vous ouvrez un PDF protégé par AEM Forms Document Security sur un iOS Apple ou un iPadOS exécutant Adobe Acrobat Reader version 20.10.00.
-* Lorsque vous envoyez un formulaire contenant un champ de chargement HTML standard d’un appareil iOS d’Apple, le contenu du fichier n’est parfois pas envoyé et un fichier de 0 octet est reçu à l’autre bout. Apple iOS 15.1 fournit un correctif pour le problème.
+* Lorsque vous envoyez un formulaire contenant un champ de chargement HTML standard d’un appareil iOS d’Apple, le contenu du fichier n’est parfois pas envoyé et un fichier de 0 octet est reçu à l’autre bout. Apple iOS 15.1 apporte un correctif pour le problème.
