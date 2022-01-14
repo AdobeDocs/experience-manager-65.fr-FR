@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c1eb9fb56cf9024ff58adec644a40e3def52e62a
+source-git-commit: e8270ad3f658236184467eda9f25c2ec0e6787ba
 workflow-type: tm+mt
-source-wordcount: '11747'
+source-wordcount: '11766'
 ht-degree: 77%
 
 ---
@@ -56,7 +56,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
       * En savoir plus sur l’[organisation des ressources numériques](/help/assets/organize-assets.md).
    * Chargez les vidéos issues de sources originales dans les dossiers. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
-      * Dynamic Media prend principalement en charge les vidéos courtes d’une durée maximale de 30 minutes.
+      * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 50 x 50.
       * Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum.
       * [Chargement des vidéos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -300,7 +300,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source ayant la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
 
-* Dynamic Media prend en charge les vidéos courtes d’une durée maximale de 30 minutes.
+* Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 50 x 50.
 * Vous pouvez charger des fichiers vidéo de source principale d’une taille de 15 Go chacun au maximum.
 
 Le tableau ci-dessous décrit la taille recommandée, le format et le débit minimal requis pour vos fichiers vidéo sources au moment de leur codage :
