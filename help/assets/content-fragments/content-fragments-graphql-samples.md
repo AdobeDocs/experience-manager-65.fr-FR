@@ -2,10 +2,11 @@
 title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
+source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +38,7 @@ Consultez ces exemples de requêtes pour accéder à des illustrations de créat
 
 >[!NOTE]
 >
->Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API AEM GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
+>Selon votre instance, vous pouvez accéder directement à la variable [Interface GraphiQL incluse avec AEM API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
 >
 >Par exemple : `http://localhost:4502/content/graphiql.html`
 
@@ -1608,4 +1609,4 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 | San Francisco |  États-Unis |  883306 |  city:beach<br>city:na |
 | San Jose |  États-Unis |  102635 |  city:na |
 | Stuttgart |  Allemagne |  634830 |  city:emea |
-|  Zurich |  Suisse |  415367 |  city:Capital<br>city:emea |
+|  Zurich |  Suisse |  415367 |  ville:capital<br>city:emea |
