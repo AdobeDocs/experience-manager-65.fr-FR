@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]Notes relatives à  6.5 décrivant les informations de version, les nouveautés, la procédure d’installation et les listes de modifications détaillées.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 13c76122a38e32783bca248597a16f0512dae44c
+source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3894'
 ht-degree: 5%
 
 ---
@@ -35,8 +35,6 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 * Une amélioration de l’expérience utilisateur affiche le nombre de ressources présentes dans un dossier. Pour plus de 1 000 ressources dans un dossier, [!DNL Assets] affiche 1000+.
 
    ![Nombre de ressources dans un dossier](/help/assets/assets/browse-folder-number-of-assets.png)
-
-* Vous pouvez désormais afficher l’option de tri en mode Carte et Colonne.
 
 * Les profils professionnels prennent en charge Adobe Asset Link.
 
@@ -157,7 +155,7 @@ Les améliorations d’accessibilité suivantes sont disponibles dans [!DNL Asse
 
 * En mode Carte dans le [!DNL Assets] référentiel, lors de l’utilisation de `Tab` pour déplacer la sélection vers le premier élément qui ouvre les actions rapides sur le focus, le lecteur d’écran annonce le nom de l’élément sélectionné.
 * Dans [!DNL Dynamic Media] [!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse], lorsque les couleurs de l’ombre et de la bordure ne sont pas présentes, les entrées sont désactivées à l’aide de la propriété disabled. Les utilisateurs du clavier ne sont pas en mesure de cibler l’entrée et les lecteurs d’écran n’annoncent pas l’état du contrôle comme désactivé.
-* Dans [!DNL Dynamic Media], dans l’interface de création d’un profil de codage vidéo, la variable [!UICONTROL Rapport de recadrage intelligent] est étiquetée pour l’accessibilité afin que les lecteurs d’écran l’annoncent correctement.
+* Dans [!DNL Dynamic Media], dans l’interface de création d’un profil de codage vidéo, la variable [!UICONTROL Rapport de recadrage intelligent] est étiquetée pour l’accessibilité, de sorte que les lecteurs d’écran l’annoncent correctement.
 
 * Vous pouvez désormais accéder aux commandes de liste de référence dans [!DNL Experience Manager Assets] à l&#39;aide du clavier.
 
@@ -561,7 +559,7 @@ Entre le 26 août 2021 et le 25 novembre 2021, Adobe a publié les éléments su
 
 * [!DNL Adobe Experience Manager] as a Cloud Service [2021.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-9-0.html) et [2021.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
-* [[!DNL Experience Manager] application de bureau 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] application de bureau 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=fr).
 
 * [Experience Manager Screens : Feature Pack 202109](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202109.html?lang=fr)
 
