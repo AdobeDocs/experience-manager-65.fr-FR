@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 610e37571df168bba91f2c2fe5b41e2f70ba748e
+source-git-commit: ab89683610a896e73c219c1fde4dde16dd8fbec6
 workflow-type: tm+mt
-source-wordcount: '3345'
+source-wordcount: '3358'
 ht-degree: 80%
 
 ---
@@ -165,16 +165,18 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 | Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : Pris en charge |
 | Stockage Microsoft Azure Blob | Binaires | A : Pris en charge |
-| MongoDB Enterprise 4.0  | Référentiel | A : Pris en charge `[2, 3]` |
+| MongoDB Enterprise 4.2 | Référentiel | A : Pris en charge `[2, 3, 4]` |
+| MongoDB Enterprise 4.0  | Référentiel | Z : Non pris en charge |
 | MongoDB Enterprise 3.6 | Référentiel | Z : Non pris en charge |
 | MongoDB Enterprise 3.4 | Référentiel | Z : Non pris en charge |
-| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée  `[4]` |
+| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée  `[5]` |
 | Oracle de données 12c (12.1.x) | Base de données de formulaires et de référentiels | R : Prise en charge limitée  |
 | Microsoft SQL Server 2016 | Base de données de formulaires | A : Pris en charge |
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : Pris en charge |
 | Apache Solr | Service de recherche | A : Pris en charge |
 
 1. Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Notez que les performances du système de fichiers sont variables et ont une incidence sur les performances globales. Il est conseillé d’effectuer un test de charge d’AEM avec le système de fichiers distant/réseau.
+1. MongoDB Enterprise 4.2 nécessite AEM 6.5 SP9 au minimum.
 1. La fragmentation MongoDB n’est pas pris en charge dans AEM. 
 1. Seule le moteur de stockage MongoDB WiredTiger est prise en charge. 
 1. Pris en charge pour les clients de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
