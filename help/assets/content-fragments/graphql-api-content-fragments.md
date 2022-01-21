@@ -3,9 +3,9 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser des fragments de contenu dans Adobe Experience Manager (AEM) avec l’API GraphQL AEM pour la diffusion de contenu sans interface utilisateur.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
+source-git-commit: e7a2a4ad89a58e5fad0acb521adb100cf0bcd1d8
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '3942'
 ht-degree: 97%
 
 ---
@@ -587,6 +587,10 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Utilisez `... on`
       * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu](#sample-wknd-fragment-specific-model-content-reference)
 
+* Secours lors de l’interrogation de fragments imbriqués :
+
+   * Si la variation demandée n’existe pas dans un fragment imbriqué, la variable **Principal** variation est renvoyée.
+
 ## Requêtes conservées (cache) {#persisted-queries-caching}
 
 Après avoir préparé une requête avec une requête POST, elle peut être exécutée avec une requête GET qui peut être mise en cache par des caches HTTP ou un réseau CDN.
@@ -815,7 +819,7 @@ Pour accéder au point d’entrée GraphQL à partir d’un site web externe, vo
 
 >[!NOTE]
 >
->Pour un aperçu détaillé de la politique de partage des ressources CORS dans AEM, voir [Description du partage des ressources Cross-Origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
+>Pour un aperçu détaillé de la politique de partage des ressources CORS dans AEM, voir [Description du partage des ressources Cross-Origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors)).
 
 Pour accéder au point d’entrée GraphQL, une stratégie CORS doit être configurée dans le référentiel Git du client. Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités.
 
