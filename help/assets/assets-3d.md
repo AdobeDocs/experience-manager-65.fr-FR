@@ -1,8 +1,6 @@
 ---
 title: Utilisation de ressources 3D dans Dynamic Media
-seo-title: Working with 3D assets in Dynamic Media
 description: Découvrez comment utiliser des ressources 3D dans Dynamic Media
-seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -10,10 +8,10 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 9f08d529af0ec37d2bd2a4f479a172c6c950c47d
+source-git-commit: a13d6d10dd10605d2cb83a8622fae3a7e2590c93
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 79%
+source-wordcount: '2317'
+ht-degree: 77%
 
 ---
 
@@ -27,7 +25,7 @@ Dynamic Media permet de charger, gérer, afficher et diffuser des ressources 3D 
 
 Aucune configuration supplémentaire n’est nécessaire pour utiliser des ressources 3D dans Dynamic Media.
 
-![Chaussure en 3D](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![Chaussure en 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png) *Page de détails d&#39;une chaussure en trois dimensions.*
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -43,6 +41,10 @@ Voir aussi [Formats 3D pris en charge](/help/assets/assets-formats.md).
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
 | USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion uniquement ; aucun affichage ni interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être visualisé en mode natif par les périphériques Safari et iOS. |
+
+<!-- >[!NOTE]
+>
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). -->
 
 ## Démarrage rapide : ressources 3D dans Dynamic Media {#quick-start-three-d}
 
@@ -86,7 +88,7 @@ Voir [Configuration des Cloud Services Dynamic Media](/help/assets/config-dms7.m
 
 ## À propos de l’affichage et des interactions avec des ressources 3D {#viewing-three-d-assets}
 
-Cette section décrit deux manières différentes d’afficher des ressources 3D et d’interagir avec elles : dans la page des détails de la ressource et dans le composant Média 3D de Sites.
+Cette section décrit deux manières différentes d’afficher et d’interagir avec des ressources 3D : à partir de la page des détails de la ressource et du composant Média 3D dans Experience Manager Sites.
 
 La visionneuse 3D interactive comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
