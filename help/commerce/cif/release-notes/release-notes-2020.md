@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1328'
 ht-degree: 10%
 
 ---
-
 
 # Présentation de la version GitHub de Commerce Integration Framework
 
@@ -45,9 +45,9 @@ ht-degree: 10%
 
 * Ajout d’un nouveau composant de carrousel de catégorie pour permettre aux utilisateurs professionnels de faire glisser et de déposer ce composant sur AEM pages de contenu afin d’enrichir les pages de contenu avec des données commerciales.
 
-* Composants principaux CIF étendus pour hydrater la couche de données client Adobe en envoyant des données commerciales. La couche de données client Adobe est une méthode normalisée pour collecter des données et communiquer les données aux serveurs d’analyse numérique et de création de rapports. Pour plus d’informations, voir [Adobe de la couche de données client](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Composants principaux CIF étendus pour hydrater la couche de données client Adobe en envoyant des données commerciales. La couche de données client Adobe est une méthode normalisée pour collecter des données et communiquer les données aux serveurs d’analyse numérique et de création de rapports. Pour plus d’informations, reportez-vous à la section [Adobe de la couche de données client](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* Pages Détails du produit et Liste des produits étendues pour renseigner automatiquement les métadonnées d’optimisation pour les moteurs de recherche (telles que le titre, la méta-description, les méta-mots-clés) configurées dans l’interface utilisateur d’administration du Magento.
+* Pages Détails du produit et Liste de produits étendues pour renseigner automatiquement les métadonnées d’optimisation pour les moteurs de recherche (telles que le titre, la méta-description, les méta-mots-clés) configurées dans l’interface utilisateur d’administration d’Adobe Commerce
 
 * Correction du bogue du composant de teaser de commerce.
 
@@ -61,7 +61,7 @@ ht-degree: 10%
 
 ### Nouveautés {#what-is-new-september}
 
-* Prend en charge les requêtes pour le schéma Magento 2.4.0.
+* Prend en charge les requêtes du schéma Adobe Commerce 2.4.0.
 
 * Ajout de fonctionnalités d’informations de compte pour permettre aux acheteurs de mettre à jour leurs informations personnelles.
 
@@ -71,7 +71,7 @@ ht-degree: 10%
 
 * Prise en charge des types de produits groupés disponibles.
 
-* Les développeurs peuvent configurer les balises HTML pour les composants Carrousel de produits, Produits associés et Liste des catégories vedettes afin de suivre les bonnes pratiques d’optimisation pour les moteurs de recherche.
+* Les développeurs peuvent configurer les balises de HTML pour les composants Carrousel de produits, Produits associés et Liste des catégories vedettes afin de suivre les bonnes pratiques d’optimisation pour les moteurs de recherche.
 
 * Correction des bogues de mon compte .
 
@@ -113,7 +113,7 @@ ht-degree: 10%
 
 * Le site de référence CIF Venia a été extrait du référentiel CIF Archetype et est désormais un référentiel GitHub autonome.
 
-* Archétype CIF fusionné avec AEM Project Archetype. Pour les nouveaux projets, utilisez [AEM archétype de projet](https://github.com/adobe/aem-project-archetype) comme point de départ.
+* Archétype CIF fusionné avec AEM Project Archetype. Pour les nouveaux projets, utilisez [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) comme point de départ.
 
 * Ajout de la gestion des carnets d’adresses pour permettre aux utilisateurs connectés de gérer leurs adresses.
 
@@ -165,11 +165,11 @@ Il s’agit de la première version des composants principaux CIF prise en charg
 
 ### Nouveautés {#what-is-new-may}
 
-* Prend en charge les requêtes du schéma Magento 2.3.5.
+* Prend en charge les requêtes du schéma Adobe Commerce 2.3.5.
 
 * Ajout de la prise en charge de la recherche facettée à la page de recherche et à la page de liste de produits pour permettre aux acheteurs de filtrer les résultats de recherche en fonction des facettes de produit.
 
-* Ajout d’un nouveau service OSGi pour personnaliser les URL PDP/PLP à des fins d’optimisation pour les moteurs de recherche. Pour plus de détails, consultez cette [documentation](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* Ajout d’un nouveau service OSGi pour personnaliser les URL PDP/PLP à des fins d’optimisation pour les moteurs de recherche. Pour plus d&#39;informations, reportez-vous à cette section [documentation](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
 
 * Liaison de produit automatiquement créée lors de la création d’une configuration cloud.
 
@@ -189,7 +189,7 @@ Il s’agit de la première version des composants principaux CIF prise en charg
 
 ### Nouveautés {#what-is-new-april}
 
-* Paramètres de configuration unifiés et simplifiés de CIF Connector. Pour plus d’informations, consultez [Prise en main](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) ou [Nouvelle configuration AEM projet CIF](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
+* Paramètres de configuration unifiés et simplifiés de CIF Connector. Pour plus d’informations, passage en caisse [Prise en main](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) ou [Nouvelle configuration du projet CIF AEM](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
 ### Nouveautés {#what-is-improved-april}
 
@@ -213,7 +213,7 @@ Il s’agit de la première version des composants principaux CIF prise en charg
 
 ### Nouveautés {#what-is-new-february}
 
-* Prend en charge les requêtes du schéma Magento 2.3.4.
+* Prend en charge les requêtes du schéma Adobe Commerce 2.3.4.
 
 * Ajout de la prise en charge de la recherche dans le sélecteur de catégorie.
 

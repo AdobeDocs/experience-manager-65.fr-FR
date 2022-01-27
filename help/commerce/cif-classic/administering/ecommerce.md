@@ -4,16 +4,17 @@ description: AEM eCommerce aide les spécialistes du marketing à offrir des exp
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
 # eCommerce{#ecommerce}
 
-* [Concepts ](/help/commerce/cif-classic/administering/concepts.md)
+* [Concepts](/help/commerce/cif-classic/administering/concepts.md)
 * [Administration (générique)](/help/commerce/cif-classic/administering/generic.md)
 
 Adobe propose deux versions de la structure d’intégration de Commerce :
@@ -40,7 +41,7 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
     </ul> </td>
    <td>
     <ul>
-     <li>Magento</li>
+     <li>Adobe Commerce</li>
      <li>Java et Javascript</li>
      <li>Aucune donnée de commerce stockée dans le référentiel JCR</li>
     </ul> </td>
@@ -80,12 +81,12 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
   <tr>
    <td>Modèle de données normalisé</td>
    <td>Non</td>
-   <td>Oui, schéma GraphQL Magento</td>
+   <td>Oui, schéma Adobe Commerce GraphQL</td>
   </tr>
   <tr>
    <td>Disponibilité</td>
    <td><p>Oui. SAP Commerce Cloud (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4</p> <p>Salesforce Commerce Cloud (connecteur en open source pour prendre en charge AEM 6.4)</p> </td>
-   <td>Oui via open source via GitHub. Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1).</td>
+   <td>Oui via open source via GitHub. Adobe Commerce (prend en charge la version 2.3.2 (par défaut) et est compatible avec la version 2.3.1).</td>
   </tr>
   <tr>
    <td>Quand utiliser la personnalisation</td>
@@ -121,13 +122,13 @@ La mise en œuvre d’eCommerce permet d’accéder en temps réel à des inform
 >
 >Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement d’eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Pour plus d’informations sur l’extension des fonctionnalités d’eCommerce, voir [Développement d’eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
+>Pour plus d’informations sur l’extension des fonctionnalités d’eCommerce, voir [Développement du commerce électronique](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Principales fonctionnalités {#main-features}
 
 AEM eCommerce fournit ce qui suit :
 
-* Un certain nombre de **composants d’AEM prêts à l’emploi** pour illustrer ce qui peut être réalisé pour votre projet :
+* Un certain nombre de **Composants AEM d’usine** pour illustrer ce qui peut être réalisé pour votre projet :
 
    * Affichage des produits
    * Panier
@@ -151,7 +152,7 @@ AEM eCommerce fournit ce qui suit :
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Utilise la possibilité de **présenter votre contenu sur plusieurs canaux**, que ce soit sur la fenêtre de navigateur complète ou sur un appareil mobile. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
+* Utilise l’AEM de la fonction **présenter votre contenu sur plusieurs canaux ;**, que ce soit la fenêtre complète du navigateur ou l’appareil mobile. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 

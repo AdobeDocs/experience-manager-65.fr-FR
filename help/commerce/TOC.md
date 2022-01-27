@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guide commercial
 user-guide-description: Découvrez comment utiliser et administrer le contenu AEM et Commerce.
-source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
+source-git-commit: f3e286c7b5404812655f3b257de17be7bfde7487
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 85%
+source-wordcount: '120'
+ht-degree: 78%
 
 ---
 
@@ -21,6 +21,10 @@ ht-degree: 85%
    + [Solution commerciale tierce](cif/integrating/third-party.md)
 + AEM Storefront {#storefront}
    + [Prise en main](cif/getting-started.md)
+   + Création {#authoring}
+      + [Expériences commerciales](cif/authoring/authoring-commerce-experiences.md)
+      + [Product Cockpit](cif/authoring/product-cockpit.md)
+      + [Enrichissement des données de produit avec du contenu associé](cif/authoring/enrich-product-associated-content.md)
    + Administration {#administering}
       + [Configuration multi-magasin](cif/configuring/multi-store-setup.md)
       + [Utilisation de modèles multiples](cif/configuring/multi-template-usage.md)
@@ -47,7 +51,7 @@ ht-degree: 85%
    + Administration {#administering}
       + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
       + [Concepts](/help/commerce/cif-classic/administering/concepts.md)
-      + [Administration d’eCommerce générique](/help/commerce/cif-classic/administering/generic.md)
+      + [Administering Generic eCommerce](/help/commerce/cif-classic/administering/generic.md)
       + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + Développement {#developing}
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)

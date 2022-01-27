@@ -1,22 +1,22 @@
 ---
-title: Intégration d’AEM et de Adobe Commerce (Magento) à l’aide de Commerce Integration Framework
-description: AEM et Adobe Commerce (Magento) sont intégrés de manière transparente à l’aide de Commerce Integration Framework (CIF). Le CIF permet à AEM d’accéder à une instance de Magento et de communiquer avec Magento via GraphQL. Il permet également aux auteurs AEM d’utiliser les sélecteurs de produit et de catégorie, ainsi que la console de produits pour parcourir les données de produit et de catégorie récupérées à la demande à partir de Magento. En outre, le CIF offre une vitrine prête à l’emploi qui peut accélérer les projets commerciaux.
+title: Intégration d’AEM et d’Adobe Commerce à l’aide de Commerce Integration Framework
+description: AEM et Adobe Commerce sont intégrés de manière transparente à l’aide de Commerce Integration Framework (CIF). CIF permet à AEM d’accéder à une instance Adobe Commerce et de communiquer avec Adobe Commerce via GraphQL. Il permet également aux auteurs AEM d’utiliser les sélecteurs de produits et de catégories et la console de produits pour parcourir les données de produit et de catégorie récupérées à la demande à partir d’ Adobe Commerce . En outre, le CIF offre une vitrine prête à l’emploi qui peut accélérer les projets commerciaux.
 thumbnail: aem-magento-architecture.jpg
 exl-id: f843784c-5ff7-41d1-97c5-13facb8459b2
-source-git-commit: 4d11b0f87abab5c15e41bd65a4bdc4d98fad6ab1
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 76%
+ht-degree: 59%
 
 ---
 
-# Intégration d’AEM et d’Adobe Commerce (Magento) à l’aide de Commerce Integration Framework {#aem-magento-framework}
+# Intégration d’AEM et d’Adobe Commerce (Magento) à l’aide de Commerce Integration Framework {#aem-commerce-framework}
 
-Les composants Experience Manager et Adobe Commerce (Magento) sont intégrés de manière transparente à l’aide de Commerce Integration Framework (CIF). CIF permet à AEM d’accéder directement à l’instance de commerce et de la communiquer à l’aide des [API GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) d’Adobe Commerce.
+The Experience Manager and Adobe Commerce are seamlessly integrated using the Commerce Integration Framework (CIF). CIF permet à AEM d’accéder directement à l’instance de commerce et de communiquer avec elle à l’aide d’Adobe Commerce. [API GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 >[!NOTE]
 >
-> La version minimale de l’API GraphQL prise en charge est 2.3.5. Certaines fonctionnalités ne sont prises en charge que dans les versions plus récentes ou uniquement dans l’édition Adobe Commerce.
+> La version minimale de l’API GraphQL prise en charge est la version 2.3.5. Certaines fonctionnalités ne sont prises en charge que dans les versions plus récentes ou uniquement dans l’édition Adobe Commerce.
 
 ## Aperçu de l’architecture {#overview}
 
@@ -25,7 +25,7 @@ L’architecture globale est la suivante :
 ![Aperçu de l’architecture du CIF](../assets/AEM_Magento_Architecture.png)
 
 CIF prend en charge les schémas de communication côté serveur et côté client.
-Les appels d’API côté serveur sont implémentés à l’aide du [client GraphQL générique intégré](https://github.com/adobe/commerce-cif-graphql-client), en combinaison avec un [ensemble de modèles de données générés](https://github.com/adobe/commerce-cif-magento-graphql) pour le schéma GraphQL de commerce. De plus, toute requête GraphQL ou mutation au format GQL peut être utilisée.
+Les appels d’API côté serveur sont mis en oeuvre à l’aide de la version générique intégrée [Client GraphQL](https://github.com/adobe/commerce-cif-graphql-client) en combinaison avec un [ensemble de modèles de données générés](https://github.com/adobe/commerce-cif-magento-graphql) pour le schéma GraphQL de commerce. De plus, toute requête GraphQL ou mutation au format GQL peut être utilisée.
 
 Pour les composants côté client, qui sont créés à l’aide de [React](https://reactjs.org/), le [client Apollo](https://www.apollographql.com/docs/react/) est utilisé.
 

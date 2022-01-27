@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 33%
+source-wordcount: '1314'
+ht-degree: 41%
 
 ---
 
@@ -17,7 +17,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 | Composant | Configuration requise |
 |:-------|:-----:|
-| Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
+| Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Adobe Commerce 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -53,7 +53,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Les auteurs peuvent ajouter des liens vers des pages de produits et de catalogues dans des champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
 
-* Le panier et le passage en caisse des fenêtres contextuelles existantes ont été remplacés par un panier AEM dédié et des pages de passage en caisse. Les composants de ces pages sont créés à l’aide des composants de périodicité extensibles du Magento.
+* Le panier et le passage en caisse des fenêtres contextuelles existantes ont été remplacés par un panier AEM dédié et des pages de passage en caisse. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
 
 * Les vendeurs peuvent masquer certaines catégories de catalogues de produits dans la navigation à l’aide du serveur principal Commerce. Le composant principal de navigation CIF respecte la configuration du serveur principal de commerce &quot;inclure dans le menu&quot; pour afficher/masquer les catégories dans la navigation.
 
@@ -69,23 +69,23 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-september}
 
-* Le nouvel onglet &quot;Contenu commercial associé&quot; dans l’éditeur de sites améliore l’efficacité de l’auteur en accédant rapidement au contenu produit AEM approprié pour le contexte actuel.
+* Le nouvel onglet « Contenu commercial associé » dans l’éditeur de sites améliore l’efficacité de la création en permettant d’accéder rapidement au contenu produit AEM approprié pour le contexte actuel.
 
    ![Contenu commercial associé](/help/assets/CIF/associated-commerce-content.png)
 
-* Amélioration de l’interface utilisateur du sélecteur de produits pour une meilleure expérience utilisateur, une efficacité accrue et une prise en charge du catalogue de produits complexe
+* Amélioration de l’interface utilisateur du sélecteur de produits pour une meilleure expérience utilisateur, et l’optimisation de l’efficacité et de la prise en charge du catalogue de produits complexe
 
    ![Nouveau sélecteur de produits](/help/assets/CIF/product-picker.png)
 
-* Respect de la propriété &quot;include_in_menu&quot; dans le composant de navigation
+* Respect de la propriété « include_in_menu » dans le composant de navigation
 
 ### Correctifs {#bug-fixes-september}
 
-* Le vidage du cache du menu ne fonctionne pas comme prévu.
+* La purge du cache du menu ne fonctionne pas comme prévu.
 
-* Erreurs JS lors de l’étape de déploiement AEM CS et lorsque vous n’utilisez pas les composants côté client
+* Erreurs JS lors de l’étape de déploiement d’AEM CS et lorsque vous n’utilisez pas les composants côté client
 
-* Impossible de créer une configuration cloud CIF dans les dossiers comportant un noeud sling:configs
+* Impossible de créer une configuration cloud CIF dans les dossiers comportant un nœud sling:configs
 
 ## Date de publication : Août 2021
 
@@ -97,7 +97,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-august}
 
-* Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience utilisateur, une efficacité accrue et une meilleure prise en charge d’un catalogue de produits complexe
+* Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience utilisateur, efficacité améliorée et meilleure prise en charge pour les catalogues complexes de produits
 
    ![Nouveau sélecteur de catégorie](/help/assets/CIF/category-picker.png)
 
@@ -195,7 +195,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés
 
-* Prise en charge de Magento 2.4.2
+* Prise en charge d’Adobe Commerce 2.4.2
 
 ### Nouveautés
 

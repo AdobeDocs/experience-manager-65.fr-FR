@@ -1,9 +1,10 @@
 ---
 title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '978'
 ht-degree: 8%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 8%
 
 ### Nouveautés {#what-is-improved-november}
 
-* Les sélecteurs de catégorie/produit ont été améliorés pour respecter la vue de magasin de Magento spécifiée dans une configuration multi-magasin.
+* Les sélecteurs de catégorie/produit ont été améliorés pour respecter la vue de magasin Adobe Commerce spécifiée dans une configuration multi-magasin.
 
 * Composants basés sur React disponibles sous la forme d’un package npm. Cela permet aux développeurs d’utiliser le package Composants React comme dépendance pour un nouveau projet React afin de permettre la personnalisation des composants existants ou le développement de nouveaux composants React.
 
@@ -48,7 +49,7 @@ ht-degree: 8%
 
 * Modèles entièrement modifiables pour la page des détails du produit et la page de liste des produits. Les auteurs peuvent maintenant créer des modèles et faire glisser et déposer des composants de liste de produits et de détails de produits sur ces modèles. En plus d’ajouter d’autres composants, les auteurs peuvent désormais modifier la mise en page de ces modèles, leur donnant ainsi une liberté illimitée pour créer des expériences incroyables combinant du contenu marketing et commercial.
 
-* Tous les composants principaux CIF compatibles avec l’auteur ont été améliorés pour prendre en charge [AEM système de style](https://helpx.adobe.com/fr/experience-manager/6-5/sites/authoring/using/style-system.html). Des exemples de styles ont été fournis pour le composant de liste de produits.
+* Tous les composants principaux CIF compatibles avec l’auteur ont été améliorés pour prendre en charge [Système de style AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/authoring/using/style-system.html). Des exemples de styles ont été fournis pour le composant de liste de produits.
 
 * Composants côté client basés sur React pour la gestion de compte. Cette version prend en charge les fonctionnalités suivantes : Connectez-vous, Mot de passe oublié et Créer un compte.
 
@@ -94,7 +95,7 @@ ht-degree: 8%
 
 * Composants CIF découplés de la mise en forme CSS spécifique à Venia pour permettre aux développeurs d’appliquer le style CSS de leur choix.
 
-* Fonctionnalité multi-magasin/site pour permettre l’utilisation des composants principaux CIF sur plusieurs structures de site AEM et permettre à l’implémentation du client GraphQL sous-jacent de se connecter à différentes vues de magasin/magasin du Magento.
+* Fonctionnalité multi-magasin/site pour permettre l’utilisation des composants principaux CIF sur plusieurs structures de site AEM et permettre à l’implémentation du client GraphQL sous-jacent de se connecter à différentes vues de magasin/magasin Adobe Commerce.
 
 * Mise en cache GraphQL activée pour certaines requêtes GraphQL via le GET HTTP afin de réduire le temps de réponse.
 
@@ -106,7 +107,7 @@ ht-degree: 8%
 
 ### Nouveautés {#what-is-improved-august}
 
-* La configuration de la boutique de Magento a été déplacée d’OSGi vers AEM console de produit afin de rendre la configuration de l’intégration plus conviviale en termes de création.
+* La configuration du magasin Adobe Commerce a été déplacée d’OSGi vers AEM console Produit afin de rendre la configuration de l’intégration plus conviviale en termes de création.
 
 ## Date de publication : Juillet 2019
 
@@ -132,7 +133,7 @@ ht-degree: 8%
 
 ### Nouveautés {#what-is-improved-july}
 
-* La prise en charge de Magento 2.3.2 et les correctifs liés aux propriétés du produit s’affichent dans la console du produit.
+* La prise en charge d’Adobe Commerce 2.3.2 et les correctifs liés aux propriétés du produit s’affichent dans la console du produit.
 
 ## Date de publication : Juin 2019
 
@@ -147,11 +148,10 @@ ht-degree: 8%
 
 * Connecteur CIF et outils de création (console de produits, sélecteur de produits et sélecteur de catégorie) pour permettre aux auteurs de créer des expériences dans AEM avec du contenu commercial.
 
-* Première version des composants principaux CIF compatible avec Magento 2.3.1 :
+* Première version des composants principaux CIF compatible avec Adobe Commerce 2.3.1 :
    * Détails du produit
    * Liste des produits
    * Teaser de produit
    * Navigation
    * Recherche de produit
    * Panier (REST)
-
