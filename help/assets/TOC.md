@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: 3cf3a05afd92f2992312ecfb931ef38278c5436c
+source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '658'
 ht-degree: 57%
 
 ---
@@ -56,7 +56,6 @@ ht-degree: 57%
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo ](s7-video.md)
-   + [Ajout de fonctionnalités Dynamic Media à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Gestion des ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
@@ -75,6 +74,7 @@ ht-degree: 57%
    + [Diffusion d’images optimisées pour un site réactif](responsive-site.md)
    + [Aperçu de ressources Dynamic Media](previewing-assets.md)
    + [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md)
+   + [Ajout de fonctionnalités Dynamic Media Classic aux pages](scene7.md)
    + [Intégration de la visionneuse de vidéos ou d’images Dynamic dans une page web](embed-code.md)
    + [Liaison d’URL à votre application web](linking-urls-to-yourwebapplication.md)
    + [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
@@ -117,7 +117,7 @@ ht-degree: 57%
    + [[!DNL Assets] et MediaLibrary](medialibrary.md)
    + [Utilisation de PDF Rasterizer](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de chargement](configuring-asset-upload-restrictions.md)
-   + [Intégration d’[!DNL Experience Manager] and [!DNL Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [[!DNL Experience Manager] et [!DNL Creative Cloud] integration](aem-cc-integration-best-practices.md)
    + [Intégration avec [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management dans les ressources](drm.md)
    + [Utilisation du module de démonstration pour les informations sur les ressources](use-demo-package-for-asset-insights.md)
