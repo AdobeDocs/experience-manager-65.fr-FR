@@ -12,7 +12,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: e8270ad3f658236184467eda9f25c2ec0e6787ba
+source-git-commit: 128358e17aa6166c81e0979825ee81d029418f22
 workflow-type: tm+mt
 source-wordcount: '11766'
 ht-degree: 77%
@@ -34,12 +34,10 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
 >* Voir [Configuration des Cloud Services Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media - mode Scene7 et [Dépannage de Dynamic Media - mode Scene7](/help/assets/troubleshoot-dms7.md).
 >
 >* Voir [Configuration des Cloud Services Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media - mode hybride.
-
 >
 >Problème de lecture vidéo actuellement connu dans Dynamic Media *sur Experience Manager 6.5.9.0 uniquement*:
 >
 >* Si une vidéo publiée est mise à jour, elle doit être publiée à nouveau pour refléter les modifications apportées à la diffusion.
-
 >
 
 
@@ -56,7 +54,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
       * En savoir plus sur l’[organisation des ressources numériques](/help/assets/organize-assets.md).
    * Chargez les vidéos issues de sources originales dans les dossiers. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
-      * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 50 x 50.
+      * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
       * Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum.
       * [Chargement des vidéos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -82,24 +80,24 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
 
       * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
       * [Publier des ressources](publishing-dynamicmedia-assets.md)
-   * Utiliser des métadonnées vidéo
+   * Utilisation des métadonnées vidéo
 
       * Affichez les propriétés d’un rendu vidéo codé, telles que la fréquence d’image, le débit audio et vidéo et le codec :
          [Affichage des propriétés de rendu vidéo](video-renditions.md)
 
-      * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
+      * Modifiez les propriétés vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisées :
          [Modification des propriétés vidéo](manage-assets.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
       * [Schémas de métadonnées](metadata-schemas.md)
-   * Examiner, approuver et annoter des vidéos et conserver le contrôle total des versions
+   * Examen, approbation et annotation des vidéos, et conservation le contrôle total des versions
 
       * [Annotation de vidéos](managing-video-assets.md#annotate-video-assets) ou [Annotation de ressources](manage-assets.md#annotating)
 
       * [Créer une version](manage-assets.md#asset-versioning)
       * [Application de workflows à des ressources](assets-workflow.md) ou voir [Démarrage d’un workflow sur une ressource](manage-assets.md#starting-a-workflow-on-an-asset)
 
-      * [Examiner les ressources des dossiers](bulk-approval.md)
+      * [Examen des ressources des dossiers](bulk-approval.md)
       * [Projets](../sites-authoring/projects.md)
 
 
@@ -300,7 +298,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source ayant la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
 
-* Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 50 x 50.
+* Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
 * Vous pouvez charger des fichiers vidéo de source principale d’une taille de 15 Go chacun au maximum.
 
 Le tableau ci-dessous décrit la taille recommandée, le format et le débit minimal requis pour vos fichiers vidéo sources au moment de leur codage :
