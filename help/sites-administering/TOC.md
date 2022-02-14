@@ -8,9 +8,9 @@ breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 feature: Administering
 role: Admin
-source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
+source-git-commit: 7af09e73f40c2d947c9ccce000174155ef67137f
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '631'
 ht-degree: 92%
 
 ---
@@ -99,8 +99,8 @@ ht-degree: 92%
    + [Filtre de disposition du contenu](content-disposition-filter.md)
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Prise en charge des cookies du même site](same-site-cookie-support.md)
-+ Personnalisation  {#personalization}
-   + [Personnalisation ](personalization.md)
++ Personnalisation {#personalization}
+   + [Personnalisation](personalization.md)
    + [Configuration de ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [ClientContext](client-context.md)
    + [Campagnes](campaigns.md)
@@ -143,6 +143,7 @@ ht-degree: 92%
    + [Configuration manuelle de l’intégration à Adobe Target](target-configuring.md)
    + [Conditions préalables à l’intégration à Adobe Target](target-requirements.md)
    + [Intégration à Adobe Target à l’aide d’Adobe I/O](integration-ims-adobe-io.md)
+   + [Intégration à Adobe Target à l’aide d’Adobe I/O](integration-target-ims-adobe-io.md)
    + [Adobe Classifications](adobeanalytics-classifications.md)
    + [Intégration à Adobe Search&amp;Promote](search-and-promote.md)
    + [Intégration de solutions](integration.md)
