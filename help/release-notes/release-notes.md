@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]Notes relatives à  6.5 décrivant les informations de version, les nouveautés, la procédure d’installation et les listes de modifications détaillées.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
+source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
 workflow-type: tm+mt
-source-wordcount: '3894'
+source-wordcount: '3884'
 ht-degree: 5%
 
 ---
@@ -52,14 +52,17 @@ Voici la liste des correctifs fournis dans [!DNL Experience Manager] Version 6.5
 
 ### [!DNL Sites] {#sites-65110}
 
-Pour accéder à la diffusion de contenu sans interface utilisateur graphique à l’aide de fragments de contenu avec GraphQL et utiliser les fonctionnalités améliorées de modèles de fragments de contenu et d’éditeur, installez le [package de définition d&#39;index](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.0.0.zip)et réindexez les définitions d’index d’AEM asynchrones suivantes :
+>[!WARNING]
+>
+>Une nouvelle version de ce paquet est en cours de développement. Le lien sera publié dès qu&#39;il sera disponible.
 
-* /oak:index/assetPrefixNodename
+Pour accéder à la diffusion de contenu sans affichage à l’aide de fragments de contenu avec GraphQL et utiliser les fonctionnalités améliorées de modèles de fragments de contenu et d’éditeur, installez le package de définition d’index et réindexez les définitions d’index d’AEM asynchrones suivantes :
 
-* /oak:index/fragments
+* `/oak:index/assetPrefixNodename`
 
-* /oak:index/graphqlConfig
+* `/oak:index/fragments`
 
+* `/oak:index/graphqlConfig`
 
 Les problèmes suivants ont été corrigés dans [!DNL Sites]:
 
@@ -155,7 +158,7 @@ Les améliorations d’accessibilité suivantes sont disponibles dans [!DNL Asse
 
 * En mode Carte dans le [!DNL Assets] référentiel, lors de l’utilisation de `Tab` pour déplacer la sélection vers le premier élément qui ouvre les actions rapides sur le focus, le lecteur d’écran annonce le nom de l’élément sélectionné.
 * Dans [!DNL Dynamic Media] [!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse], lorsque les couleurs de l’ombre et de la bordure ne sont pas présentes, les entrées sont désactivées à l’aide de la propriété disabled. Les utilisateurs du clavier ne sont pas en mesure de cibler l’entrée et les lecteurs d’écran n’annoncent pas l’état du contrôle comme désactivé.
-* Dans [!DNL Dynamic Media], dans l’interface de création d’un profil de codage vidéo, la variable [!UICONTROL Rapport de recadrage intelligent] est étiquetée pour l’accessibilité, de sorte que les lecteurs d’écran l’annoncent correctement.
+* Dans [!DNL Dynamic Media], dans l’interface de création d’un profil de codage vidéo, la variable [!UICONTROL Rapport de recadrage intelligent] est étiquetée pour l’accessibilité afin que les lecteurs d’écran l’annoncent correctement.
 
 * Vous pouvez désormais accéder aux commandes de liste de référence dans [!DNL Experience Manager Assets] à l&#39;aide du clavier.
 
