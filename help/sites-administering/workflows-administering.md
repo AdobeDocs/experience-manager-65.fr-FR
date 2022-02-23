@@ -1,8 +1,8 @@
 ---
 title: Administration d’instances de workflow
-seo-title: Administration d’instances de workflow
+seo-title: Administering Workflow Instances
 description: Découvrez comment administrer des instances de workflows.
-seo-description: Découvrez comment administrer des instances de workflows.
+seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4459c69b73159ce5afd819dfb772df5c51cd16
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 94%
+source-wordcount: '1136'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ La console de workflows fournit plusieurs outils permettant d’administrer les 
 
 >[!NOTE]
 >
->La [console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fournit des opérations de maintenance de workflow supplémentaires.
+>Le [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fournit des opérations de maintenance de workflow supplémentaires.
 
 Différentes consoles sont à votre disposition pour administrer les workflows. Utilisez la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) pour ouvrir le panneau **Outils**, puis sélectionnez **Workflows** :
 
@@ -32,6 +32,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 * **Lanceurs** : gérez le lancement des workflows.
 * **Archiver** : affichez l’historique des workflows correctement terminés.
 * **Échecs** : affichez l’historique des workflows terminés avec des erreurs.
+* **Attribution automatique** : configurez l’attribution automatique des workflows aux modèles
 
 ## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
 
@@ -40,9 +41,26 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
    ![wf-96](assets/wf-96.png)
 
-1. Sélectionnez un élément spécifique, puis **Ouvrir l’historique** pour afficher plus de détails :
 
-   ![wf-97](assets/wf-97.png)
+## Rechercher des instances de workflow {#search-workflow-instances}
+
+1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
+1. Sélectionnez **Instances** pour afficher la liste des instances de workflow en cours. Sur le rail supérieur, dans le coin gauche, sélectionnez **Filtres**. Vous pouvez également utiliser les touches alt+1. La boîte de dialogue suivante s’affiche :
+
+   ![wf-99-1](assets/wf-99-1.png)
+
+1. Dans la boîte de dialogue Filtre, sélectionnez les critères de recherche de workflow. Vous pouvez effectuer des recherches en fonction des entrées suivantes :
+
+   * Chemin d’accès à la charge utile : sélectionnez un chemin spécifique
+   * Modèle de workflow : sélectionnez un modèle de workflow
+   * Cessionnaire : sélectionnez un cessionnaire de workflow
+   * Type : tâche, élément de workflow ou échec de workflow
+   * État de la tâche : Active, Complète ou Terminée
+   * Où j’en suis : Propriétaire ET cessionnaire, Propriétaire uniquement, Cessionnaire uniquement
+   * Date de début : date de début avant ou après une date spécifiée
+   * Date de fin : date de fin avant ou après une date spécifiée
+   * Échéance : date d’échéance avant ou après une date spécifiée
+   * Date de mise à jour : date de mise à jour avant ou après une date spécifiée
 
 ## Suspension, reprise ou arrêt d’une instance de workflows {#suspending-resuming-and-terminating-a-workflow-instance}
 
@@ -151,9 +169,9 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
  </tbody>
 </table>
 
-## Définition de la taille maximale de la boîte de réception  {#setting-the-maximum-size-of-the-inbox}
+## Définition de la taille maximale de la boîte de réception {#setting-the-maximum-size-of-the-inbox}
 
-Vous pouvez définir la taille maximale de la boîte de réception en configurant le **service de workflow Granite Adobe**, à l’aide de la [console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [ajoutez une configuration OSGi au référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Le tableau suivant décrit la propriété que vous configurez pour l’une ou l’autre des méthodes.
+Vous pouvez définir la taille maximale de la boîte de réception en configurant la variable **Service de processus Adobe Granite**, à l’aide de la fonction [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [ajouter une configuration OSGi au référentiel ;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Le tableau suivant décrit la propriété que vous configurez pour l’une ou l’autre des méthodes.
 
 >[!NOTE]
 >
@@ -164,3 +182,77 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 | Nom de propriété (console Web) | Nom de propriété OSGi |
 |---|---|
 | Taille de requête de boîte de réception maximale | granite.workflow.inboxQuerySize |
+
+## Utilisation de variables de workflow pour les banques de données détenues par le client {#using-workflow-variables-customer-datastore}
+
+Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées et les données définies par l’utilisateur dans votre propre enregistrement géré au lieu de celui fourni par Adobe. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
+
+### Définition du modèle pour utiliser l’enregistrement externe des métadonnées {#set-model-for-external-storage}
+
+Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le modèle (et ses instances d’exécution) dispose d’un enregistrement externe des métadonnées. Les variables de workflow ne seront pas conservées dans le JCR pour les instances de workflow des modèles marqués pour l’enregistrement externe.
+
+La propriété *userMetadataPersistenceEnabled* sera stocké dans le nœud *jcr:content node* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous le nom *cq:userMetaDataCustomPersistenceEnabled*.
+
+L’illustration ci-dessous montre comment définir l’indicateur dans un workflow.
+
+![workflow-externalize-config](assets/workflow-externalize-config.png)
+
+### API pour les métadonnées dans un enregistrement externe {#apis-for-metadata-external-storage}
+
+Pour stocker les variables en externe, vous devez implémenter les API exposées par le workflow.
+
+UserMetaDataPersistenceContext
+
+Les exemples suivants vous montrent comment utiliser l’API.
+
+```
+@ProviderType
+public interface UserMetaDataPersistenceContext {
+ 
+    /**
+     * Gets the workflow for persistence
+     * @return workflow
+     */
+    Workflow getWorkflow();
+ 
+    /**
+     * Gets the workflow id for persistence
+     * @return workflowId
+     */
+    String getWorkflowId();
+ 
+    /**
+     * Gets the user metadata persistence id
+     * @return userDataId
+     */
+    String getUserDataId();
+}
+```
+
+UserMetaDataPersistenceProvider
+
+```
+/**
+ * This provider can be implemented to store the user defined workflow-data metadata in a custom storage location
+ */
+@ConsumerType
+public interface UserMetaDataPersistenceProvider {
+ 
+   /**
+    * Retrieves the metadata using a unique identifier
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap of user defined workflow data metaData
+    * @throws WorkflowException
+    */
+   void get(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+   /**
+    * Stores the given metadata to the custom storage location
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap metadata map
+    * @return the unique identifier that can be used to retrieve metadata. If null is returned, then workflowId is used.
+    * @throws WorkflowException
+    */
+   String put(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+} 
+```
