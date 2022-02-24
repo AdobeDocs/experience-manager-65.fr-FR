@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
+source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 94%
+source-wordcount: '3215'
+ht-degree: 87%
 
 ---
 
@@ -197,6 +197,22 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 1. Les utilisateurs peuvent déplacer ou supprimer la ressource. Lors du déplacement ou de la suppression d’une ressource, le nombre total de références de toutes les ressources ou de tous les dossiers sélectionnés s’affiche dans une boîte de dialogue d’avertissement. Lors de la suppression d’un fichier pour lequel les références ne sont pas encore affichées, une boîte de dialogue d’avertissement s’affiche.
 
    ![Avertissement de suppression forcée](assets/delete-referenced-asset.png)
+
+### Gestion des mises à jour des ressources dans DAM distant {#manage-updates-in-remote-dam}
+
+Après [configuration d&#39;une connexion](#configure-a-connection-between-sites-and-assets-deployments) entre DAM distant et [!DNL Sites] les déploiements, les ressources sur DAM distant sont disponibles sur la [!DNL Sites] déploiement. Vous pouvez ensuite effectuer les opérations de mise à jour, de suppression, de changement de nom et de déplacement sur les ressources ou dossiers DAM distants. Les mises à jour, avec un certain délai, sont automatiquement disponibles sur la page [!DNL Sites] déploiement. En outre, si une ressource sur DAM distant est utilisée sur une instance locale [!DNL Experience Manager Sites] , les mises à jour de la ressource sur la gestion des ressources numériques distantes s’affichent sur la page [!DNL Sites] page.
+
+Lors du déplacement d’une ressource d’un emplacement à un autre, assurez-vous que vous [ajuster les références](/help/assets/manage-assets.md) afin que la ressource s’affiche sur la page [!DNL Sites] page. Si vous déplacez une ressource vers un emplacement qui n’est pas accessible à partir de l’emplacement local [!DNL Sites] déploiement, la ressource ne s’affiche pas sur le déploiement Sites.
+
+Vous pouvez également mettre à jour les propriétés de métadonnées d’une ressource sur DAM distant et les modifications sont disponibles sur le fichier local. [!DNL Sites] déploiement.
+
+[!DNL Sites] Les auteurs peuvent prévisualiser les mises à jour disponibles sur la page [!DNL Sites] déploiement, puis republier les modifications pour les rendre disponibles sur la page [!DNL Experience Manager] instance de publication.
+
+[!DNL Experience Manager] affiche un indicateur visuel d’état expiré sur les ressources dans `Remote Assets Content Finder` pour empêcher les auteurs de site d’utiliser la ressource sur un [!DNL Sites] page. Si vous utilisez une ressource dont l’état est expiré sur un [!DNL Sites] , la ressource ne s’affiche pas sur la page [!DNL Experience Manager] instance de publication.
+
+>[!NOTE]
+>
+>Les mises à jour apportées aux ressources dans la gestion des actifs numériques distants sont mises à la disposition de la fonction [!DNL Sites] déploiement uniquement si DAM distant et [!DNL Sites] les déploiements sont activés [!DNL Experience Manager].
 
 ## Restrictions et bonnes pratiques {#tip-and-limitations}
 

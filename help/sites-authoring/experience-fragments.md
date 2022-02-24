@@ -1,8 +1,8 @@
 ---
 title: Fragments d’expérience
-seo-title: Fragments d’expérience
+seo-title: Experience Fragments
 description: Fragments d’expérience
-seo-description: 'null'
+seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 96%
+source-wordcount: '1440'
+ht-degree: 92%
 
 ---
 
@@ -27,10 +27,12 @@ Un fragment d’expérience :
 * fait partie d’une expérience (page) ;
 * peut être utilisé sur plusieurs pages ;
 * est basé sur un modèle (uniquement modifiable) qui définit la structure et les composants ;
+* Ce modèle est utilisé pour créer la variable *page racine* du fragment d’expérience.
 * comprend un ou plusieurs composants, avec mise en page, dans un système de paragraphes ;
 * peut contenir d’autres fragments d’expérience ;
 * peut être combiné à d’autres composants (y compris d’autres fragments d’expérience) pour former une page entière (expérience) ;
-* peut avoir différentes variations et partager du contenu et/ou des composants ;
+* Il est possible de créer une ou plusieurs variations en fonction de la page racine.
+* Ces variations peuvent partager du contenu et/ou des composants.
 * peut être scindé en blocs de création utilisables dans plusieurs variations du fragment.
 
 Vous pouvez utiliser des fragments d’expérience :
@@ -45,7 +47,7 @@ Vous pouvez utiliser des fragments d’expérience :
 >    `experience-fragments-editors`
 Si vous rencontrez des problèmes, contactez votre administrateur système.
 
-## Quand utiliser les fragments d’expérience ?   {#when-should-you-use-experience-fragments}
+## Quand utiliser les fragments d’expérience ? {#when-should-you-use-experience-fragments}
 
 Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
@@ -123,7 +125,7 @@ Il s’agit de la méthode recommandée pour spécifier les **Modèles autorisé
    Voir :
    `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
 
-   ![Propriétés des fragments d’expérience - Modèles autorisés](/help/sites-authoring/assets/xf-folders-templates.png)
+   ![Propriétés des fragments d’expérience – Modèles autorisés](/help/sites-authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
    Pour plus d’informations, voir [Modèles de fragments d’expérience](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
@@ -174,6 +176,10 @@ Pour créer un fragment d’expérience :
    Un **Titre** est obligatoire. Si le **Nom** n’est pas spécifié, il est dérivé du **Titre**.
 
    ![xf-04](assets/xf-04.png)
+
+   >[!NOTE]
+   Les balises du modèle de fragment d’expérience ne seront pas fusionnées avec les balises sur cette page racine de fragment d’expérience.
+   Elles sont complètement séparées.
 
 1. Cliquez sur **Créer**.
 
@@ -279,7 +285,7 @@ Pour créer un bloc de ce type, procédez comme suit :
 
 Le bloc de création est visible dans l’onglet **Blocs de création**. Pour chaque bloc, les actions suivantes peuvent être effectuées :
 
-* Atteindre l’élément principal : ouvre la variation principale dans un nouvel onglet
+* Accédez au gabarit : ouvrir la variation de page racine dans un nouvel onglet ;
 * Renommer
 * Supprimer
 
@@ -311,16 +317,16 @@ Les détails de votre fragment sont visibles :
 
    * **De base**
 
-      * **Titre** - obligatoire
+      * **Titre** – obligatoire
 
       * **Description**
       * **Balises**
-      * **Nombre total de variations** - informations uniquement
+      * **Nombre total de variations** – informations uniquement
 
-      * **Nombre de variations web** - informations uniquement
+      * **Nombre de variations web** – informations uniquement
       * **Nombre de variantes non-Web** - inf **ormations uniquement**
 
-      * **Nombre de pages utilisant ce fragment** - informations uniquement
+      * **Nombre de pages utilisant ce fragment** – informations uniquement
    * **Cloud Services**
 
       * **Configuration du cloud**
@@ -344,7 +350,7 @@ Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML b
 >[!NOTE]
 Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
-## Exportation de fragments d’expérience    {#exporting-experience-fragments}
+## Exportation de fragments d’expérience {#exporting-experience-fragments}
 
 Par défaut, les fragments d’expérience sont fournis au format HTML. Ils peuvent être utilisés à la fois par AEM et les canaux tiers.
 
