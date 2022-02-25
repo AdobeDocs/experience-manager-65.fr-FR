@@ -1,10 +1,10 @@
 ---
 title: Notes de mise à jour générales de [!DNL Adobe Experience Manager] 6,5
-description: '[!DNL Adobe Experience Manager]Notes relatives à  6.5 décrivant les informations de version, les nouveautés, la procédure d’installation et les listes de modifications détaillées.'
-source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
+description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '4696'
-ht-degree: 58%
+ht-degree: 57%
 
 ---
 
@@ -491,7 +491,7 @@ L’interface utilisateur est disponible dans les langues suivantes :
 * Français
 * Espagnol
 * Italien
-* Portugais  brésilien
+* Portugais brésilien
 * Japonais
 * Chinois simplifié
 * Chinois traditionnel (prise en charge limitée)
