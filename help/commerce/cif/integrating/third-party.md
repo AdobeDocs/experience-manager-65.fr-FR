@@ -3,10 +3,10 @@ title: Intégration d’AEM et de solutions commerciales tierces à l’aide de 
 description: Les entreprises peuvent avoir besoin de solutions commerciales tierces supplémentaires pour alimenter leur vitrine. Commerce Integration Framework (CIF) peut être utilisé dans de tels scénarios d’intégration pour connecter une solution commerciale tierce à Adobe Experience Manager à l’aide d’I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 885d0763fca9ad4eab499081adca9b83875b27e1
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 50%
+source-wordcount: '521'
+ht-degree: 40%
 
 ---
 
@@ -51,3 +51,14 @@ Nous vous recommandons d’utiliser [Adobe I/O Runtime](https://www.adobe.io/api
 La [mise en œuvre de référence](https://github.com/adobe/commerce-cif-graphql-integration-reference) est un excellent point de départ pour créer l’intégration à votre solution commerciale. Bien qu’il prenne en charge GraphQL, il peut également être intégré à tout autre type d’API comme REST.
 
 Cette couche d’intégration n’est pas requise si une couche tierce est disponible (comme Mulesoft) ou si l’intégration est créée sur la solution tierce.
+
+## Connecteurs préconfigurés {#connectors}
+
+Les connecteurs constituent un bon point de départ pour les projets. Ils sont fournis avec une connexion spécifique à une solution de commerce et un mappage d’API par défaut. Ces connecteurs sont créés par des tiers et ne sont pas gérés par Adobe. Contactez le partenaire concerné pour obtenir des informations.
+
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construit par Diconium
+* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), construit par Diconium
+
+>[!TIP]
+>
+>Bien que les connecteurs aident les projets à accélérer l’intégration du commerce, ils ne sont pas plug-in en lecture. Les solutions de commerce d’entreprise sont généralement fortement personnalisées et nécessitent une intégration personnalisée. Une bonne connaissance de la plateforme commerciale, des schémas Adobe Commerce GraphQL et de Adobe I/O Runtime est requise.
