@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
+source-git-commit: 6b9f0836ae61fdaa1aaf89434d76be5925970088
 workflow-type: tm+mt
-source-wordcount: '3215'
-ht-degree: 87%
+source-wordcount: '3811'
+ht-degree: 73%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 87%
 Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Cette situation peut être motivée par la répartition géographique des déploiements existants, nécessaire pour travailler conjointement. Elle peut être aussi due à l’acquisition conduisant à des infrastructures hétérogènes, y compris différentes versions d’[!DNL Experience Manager], que la société mère souhaite utiliser conjointement.
 
 La fonctionnalité Ressources connectées prend en charge le cas d’utilisation ci-dessus en intégrant [!DNL Experience Manager Sites] et [!DNL Experience Manager Assets]. Les utilisateurs peuvent créer dans [!DNL Sites] des pages web qui utilisent les ressources numériques à partir de déploiements [!DNL Assets] distincts.
+
+>[!NOTE]
+>
+>Configurez les ressources connectées uniquement lorsque vous devez utiliser les ressources disponibles sur un déploiement DAM distant sur un déploiement Sites distinct pour créer des pages web.
 
 ## Présentation de la fonction Ressources connectées {#overview-of-connected-assets}
 
@@ -56,6 +60,18 @@ Les différents rôles impliqués pour configurer et utiliser la fonctionnalité
 | Administrateur [!DNL Assets] | Distant | [!DNL Experience Manager] `administrators` | `admin` sur [!DNL Experience Manager] distant | Configurez le partage des ressources cross-origin (CORS). |
 | Utilisateur DAM | Distant | `Authors` | `ksaner` sur [!DNL Experience Manager] distant | Rôle d’auteur sur le déploiement [!DNL Experience Manager] distant. Recherchez et parcourez les ressources dans la fonction Ressources connectées à l’aide de l’[!UICONTROL outil de recherche de contenu]. |
 | Distributeur DAM (utilisateur technique) | Distant | [!DNL Sites] `Authors` | `ksaner` sur [!DNL Experience Manager] distant | Cet utilisateur présent sur le déploiement distant est utilisé par le serveur local [!DNL Experience Manager] (et non le rôle d’auteur [!DNL Sites]) pour récupérer les ressources distantes, au nom de l’auteur [!DNL Sites]. Ce rôle n’est pas identique aux deux rôles `ksaner` ci-dessus et appartient à un groupe d’utilisateurs différent. |
+
+### Architecture des ressources connectées {#connected-assets-architecture}
+
+Experience Manager vous permet de connecter un déploiement DAM distant en tant que source à plusieurs Experience Manager [!DNL Sites] déploiements. Vous pouvez connecter un maximum de quatre [!DNL Sites] se déploie sur un DAM distant source. Cependant, vous pouvez connecter un [!DNL Sites] déploiement avec un seul déploiement DAM distant.
+
+Les diagrammes suivants illustrent les scénarios pris en charge :
+
+![Architecture des ressources connectées](assets/connected-assets-architecture.png)
+
+Le diagramme suivant illustre un scénario non pris en charge :
+
+![Architecture des ressources connectées](assets/connected-assets-architecture-unsupported.png)
 
 ## Configurez une connexion entre les déploiements [!DNL Sites] et [!DNL Assets]  {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -116,11 +132,24 @@ Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] et l
 ![Test de connexion des ressources connectées configurées [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *Figure : Test de connexion des ressources connectées configurées [!DNL Sites].*
 
-### Configuration d’une connexion pour les ressources Dynamic Media {#sites-dynamic-media-connected-assets}
+## Utilisation de ressources Dynamic Media {#dynamic-media-assets}
 
-Vous pouvez configurer une connexion entre le déploiement [!DNL Sites] et le déploiement [!DNL Dynamic Media] qui permet aux auteurs d’utiliser des images [!DNL Dynamic Media] dans leurs pages web. Lors de la création de pages web, l’utilisation des déploiements distants Assets et [!DNL Dynamic Media] reste identique.
 
-Pour configurer la fonctionnalité Ressources connectées pour les déploiements Dynamic Media, procédez comme suit :
+Avec les ressources connectées, vous pouvez utiliser les ressources d’image traitées par [!DNL Dynamic Media] à partir du déploiement DAM distant sur les pages Sites et utilisez les fonctionnalités de Dynamic Media, telles que les paramètres de recadrage intelligent et d’image prédéfinis.
+
+Pour utiliser [!DNL Dynamic Media] avec les ressources connectées :
+
+1. Configurer [!DNL Dynamic Media] sur le déploiement DAM distant avec le mode de synchronisation activé.
+1. Configurer [Ressources connectées](#configure-a-connection-between-sites-and-assets-deployments).
+1. Configurer [!DNL Dynamic Media] sur l’instance Sites avec le même nom d’entreprise que celui configuré sur la gestion des ressources numériques distante. Le déploiement Sites doit disposer d’un accès en lecture seule au compte Dynamic Media pour fonctionner avec les ressources connectées. Par conséquent, assurez-vous de désactiver le mode de synchronisation dans la configuration Dynamic Media sur l’instance Sites.
+
+>[!CAUTION]
+>
+>Avec les ressources connectées et [!DNL Dynamic Media] configuration, vous ne pouvez pas utiliser [!DNL Dynamic Media] pour traiter les ressources locales disponibles dans la fonction [!DNL Sites] déploiement.
+
+## Configuration d’[!DNL Dynamic Media] {#configure-dynamic-media}
+
+Pour configurer [!DNL Dynamic Media] on [!DNL Assets] et [!DNL Sites] déploiements :
 
 1. Activation et configuration [!DNL Dynamic Media] comme configuration globale sur distant [!DNL Assets] déploiement de l’auteur. Pour configurer Dynamic Media, voir [Configuration de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
 Sur le déploiement [!DNL Assets] distant, dans le [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Activé par défaut]**.
@@ -213,6 +242,48 @@ Vous pouvez également mettre à jour les propriétés de métadonnées d’une 
 >[!NOTE]
 >
 >Les mises à jour apportées aux ressources dans la gestion des actifs numériques distants sont mises à la disposition de la fonction [!DNL Sites] déploiement uniquement si DAM distant et [!DNL Sites] les déploiements sont activés [!DNL Experience Manager].
+
+## Questions fréquentes {#frequently-asked-questions}
+
+### Si vous devez utiliser les ressources disponibles sur votre [!DNL Sites] déploiement ?
+
+Dans ce cas, il n’est pas nécessaire de configurer les ressources connectées. Vous pouvez utiliser les ressources disponibles dans la variable [!DNL Sites] déploiement.
+
+### Quand devez-vous configurer la fonction Ressources connectées ?
+
+Configurez la fonction Ressources connectées uniquement lorsque vous devez utiliser les ressources disponibles sur un déploiement DAM distant sur un [!DNL Sites] déploiement.
+
+### Combien [!DNL Sites] pouvez-vous vous connecter à un déploiement DAM distant après avoir configuré les ressources connectées ?
+
+Vous pouvez connecter un maximum de quatre [!DNL Sites] se déploie sur un déploiement DAM distant après la configuration des ressources connectées. Pour plus d’informations, voir [Architecture des ressources connectées](#connected-assets-architecture).
+
+### Combien de déploiements DAM distants pouvez-vous vous connecter à un [!DNL Sites] déploiement après la configuration des ressources connectées ?
+
+Vous pouvez connecter un déploiement DAM distant à un [!DNL Sites] déploiement après la configuration des ressources connectées. Pour plus d’informations, voir [Architecture des ressources connectées](#connected-assets-architecture).
+
+### Vous pouvez utiliser des ressources Dynamic Media à partir de vos [!DNL Sites] déploiement après la configuration des ressources connectées ?
+
+Après avoir configuré les ressources connectées, [!DNL Dynamic Media] ressources disponibles sur [!DNL Sites] déploiement en mode lecture seule. Par conséquent, vous ne pouvez pas utiliser [!DNL Dynamic Media] pour traiter des ressources sur la [!DNL Sites] déploiement. Pour plus d’informations, voir [Configurer une connexion entre les déploiements Sites et Dynamic Media](#dynamic-media-assets).
+
+### Pouvez-vous utiliser des ressources de type Image et Format de document à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?
+
+Oui, vous pouvez utiliser des ressources de type Image et Format de document à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées.
+
+### Peux-tu utiliser des fragments de contenu et des ressources vidéo provenant du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?
+
+Non, vous ne pouvez pas utiliser de fragments de contenu et de ressources vidéo provenant du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées.
+
+### Pouvez-vous utiliser des ressources Dynamic Media provenant du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?
+
+Oui, vous pouvez configurer et utiliser des ressources Dynamic Media à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées. Pour plus d’informations, voir [Configurer une connexion entre les déploiements Sites et Dynamic Media](#dynamic-media-assets).
+
+### Après avoir configuré les ressources connectées, pouvez-vous effectuer les opérations de mise à jour, de suppression, de changement de nom et de déplacement sur les ressources ou dossiers DAM distants ?
+
+Oui, après avoir configuré les ressources connectées, vous pouvez effectuer les opérations de mise à jour, de suppression, de changement de nom et de déplacement sur les ressources ou dossiers DAM distants. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites . Pour plus d’informations, voir [Gestion des mises à jour des ressources dans DAM distant](#handling-updates-to-remote-assets).
+
+### Après avoir configuré les ressources connectées, pouvez-vous ajouter ou modifier des ressources sur votre [!DNL Sites] déploiement et les rendre disponibles sur le déploiement DAM distant ?
+
+Vous pouvez ajouter des ressources au [!DNL Sites] Toutefois, ces ressources ne peuvent pas être mises à la disposition du déploiement DAM distant.
 
 ## Restrictions et bonnes pratiques {#tip-and-limitations}
 
