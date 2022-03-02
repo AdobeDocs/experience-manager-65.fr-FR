@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 498e00ab7838de675771224204726a51e68d4a57
 workflow-type: tm+mt
-source-wordcount: '2630'
+source-wordcount: '2642'
 ht-degree: 4%
 
 ---
@@ -323,7 +323,19 @@ Vérifiez si vous utilisez une fonctionnalité ou une fonctionnalité dans un d�
 
 ## Problèmes connus {#known-issues}
 
-* Lorsque vous installez AEM 6.5 Service Pack 11 et essayez de télécharger le fichier ZIP d’état, Experience Manager télécharge un fichier corrompu. Télécharger et installer [Package d’index SEO AEM Sites](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) sur votre instance AEM avant de télécharger le fichier ZIP pour résoudre le problème.
+* Lorsque vous installez AEM 6.5 Service Pack 12 et essayez de télécharger le fichier ZIP d’état, Experience Manager télécharge un fichier corrompu.
+
+   >[!CAUTION]
+   >
+   >Une nouvelle version du package &quot;définition d&#39;index&quot; est en cours de développement. Le lien ci-dessous sera publié dès qu&#39;il sera disponible.
+   >
+   >D’ici là, contactez l’assistance clientèle pour obtenir le correctif.
+
+   <!--
+  Download and install [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) on your AEM instance before downloading the ZIP file to resolve the issue.
+  -->
+
+   Téléchargez et installez le module d’index d’optimisation pour les moteurs de recherche AEM Sites sur votre instance AEM avant de télécharger le fichier ZIP pour résoudre le problème.
 
 * As [!DNL Microsoft Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] ne prend pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
 
