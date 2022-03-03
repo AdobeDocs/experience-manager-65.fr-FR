@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6a89cb79ccfbcec7385832d5682bf61895253718
+source-git-commit: b1e38323fbbb268de76067eb85596119b44221c2
 workflow-type: tm+mt
-source-wordcount: '2641'
+source-wordcount: '2662'
 ht-degree: 4%
 
 ---
@@ -325,17 +325,11 @@ Vérifiez si vous utilisez une fonctionnalité ou une fonctionnalité dans un d�
 
 * Lorsque vous installez AEM 6.5 Service Pack 12 et essayez de télécharger le fichier ZIP d’état, Experience Manager télécharge un fichier corrompu.
 
-   >[!CAUTION]
-   >
-   >Une nouvelle version du package &quot;définition d&#39;index&quot; est en cours de développement. Le lien ci-dessous sera publié dès qu&#39;il sera disponible.
-   >
-   >D’ici là, veuillez contacter l’assistance clientèle pour obtenir le correctif.
+   Pour éviter cela, téléchargez et installez les deux éléments suivants sur votre instance AEM. **before** téléchargement du fichier ZIP d’état :
 
-   <!--
-  Download and install [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) on your AEM instance before downloading the ZIP file to resolve the issue.
-  -->
+   * les éléments suivants [correctif](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip)
 
-   Téléchargez et installez le module d’index d’optimisation pour les moteurs de recherche AEM Sites sur votre instance AEM avant de télécharger le fichier ZIP pour résoudre le problème.
+   * la valeur [Package d’index SEO AEM Sites](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.4.zip)
 
 * As [!DNL Microsoft Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] ne prend pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
 
