@@ -1,8 +1,8 @@
 ---
 title: Mise à niveau vers AEM 6.5 Forms
-seo-title: Mise à niveau vers AEM 6.5 Forms
+seo-title: Upgrade to AEM 6.5 Forms
 description: Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.3 Forms et AEM 6.4 Forms vers AEM 6.5 Forms.
-seo-description: Vous pouvez effectuer une mise à niveau directe à partir de AEM 6.3 Forms et AEM 6.4 Forms vers AEM 6.5 Forms.
+seo-description: You can perform a direct upgrade from AEM 6.3 Forms and AEM 6.4 Forms to AEM 6.5 Forms.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
 content-type: reference
 topic-tags: installing
@@ -11,10 +11,10 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 2e6d688818e9cc337444bcda2a49485e9167a113
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +47,7 @@ Vous pouvez effectuer une mise à niveau directe depuis :
 
 * AEM 6.3 Forms on JEE
 * AEM 6.4 Forms on JEE
+* AEM 6.5.x.x sur JEE
 
 Vous pouvez également effectuer une mise à niveau en plusieurs étapes depuis
 
@@ -56,6 +57,16 @@ Vous pouvez également effectuer une mise à niveau en plusieurs étapes depuis
 * AEM 6.0 Forms on JEE
 * AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
+
+AEM 6.5.12.0 Forms on JEE fournit deux types d’installation : Programme d’installation complet et programme d’installation de correctif.
+
+**Programme d’installation complet**: Vous pouvez utiliser le programme d’installation complet pour configurer de nouvelles instances AEM Forms ou effectuer des mises à niveau depuis AEM 6.3 Forms on JEE, AEM 6.4 on JEE et une mise à niveau dynamique d’Adobe 6.5.x.x on JEE vers 6.5.12.0 Forms on JEE.
+
+**Programme d’installation des correctifs**: Le programme d’installation du correctif s’adresse aux clients qui utilisent déjà AEM versions 6.5.x.x. Vous pouvez utiliser le programme d’installation de correctif pour effectuer la mise à niveau vers la dernière version d’AEM Forms.
+
+L’image suivante illustre les scénarios d’utilisation du programme d’installation complet et des correctifs.
+
+![](assets/full-and-patch-installer.png)
 
 <!--
 [Work in Progress]

@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 41fb9099ef81b84bcf9fa7b6f153ab1a27953795
+source-git-commit: 45a26c34ba879e1948ace785e861d38cce71e3a6
 workflow-type: tm+mt
-source-wordcount: '3488'
-ht-degree: 74%
+source-wordcount: '3502'
+ht-degree: 72%
 
 ---
 
@@ -86,7 +86,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Plate-forme</strong></p> </th>
+   <th><p><strong>Plateforme</strong></p> </th>
    <th><p><strong>Niveau de prise en charge</strong></p> </th>
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
@@ -111,12 +111,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Versions et mises à jour mineures</td>
   </tr>
   <tr>
-   <td>IBM® J9 Virtual Machine (build 2.8 &amp; , JRE 1.8.0)</td>
-   <td>A : Pris en charge</td>
-   <td>Versions et mises à jour mineures</td>
-  </tr>
-  <tr>
-   <td>IBM® J9 Virtual Machine (build 2.9 &amp; , JRE 1.8.0)<br /> </td>
+   <td>IBM® J9 Machine virtuelle (build 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
    <td>A : Pris en charge</td>
    <td>Versions et mises à jour mineures</td>
   </tr>
@@ -134,7 +129,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Plate-forme</strong></p> </td>
+   <td><p><strong>Plateforme</strong></p> </td>
    <td><p><strong> Description</strong></p> </td>
    <td><p><strong>Niveau de prise en charge</strong></p> </td>
   </tr>
@@ -144,25 +139,20 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0  </p> </td>
+   <td><p> MongoDB Enterprise 4.0 (obsolète) </p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td><p>Oracle Database 12c version 1</p> </td>
-   <td><p>Référentiel Microkernel</p> </td>
-   <td><p>Pris en charge</p> </td>
-  </tr>
-   <tr>
-   <td><p>Oracle de données version 12c 2 (12.2.0.1.0)</p> </td>
+   <td><p>MongoDB Enterprise 4.2 </p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td>Oracle Database 18c </td>
-   <td>Référentiel Microkernel</td>
-   <td>Pris en charge</td>
-  </tr> 
+   <td><p>Oracle Database 12c version 2 (12.2.0.1.0) (obsolète)</p> </td>
+   <td><p>Référentiel Microkernel</p> </td>
+   <td><p>Pris en charge</p> </td>
+  </tr>
    <tr>
    <td>Oracle Database 19c (éditions Standard, Real Application Clusters (RAC) et Enterprise) </td>
    <td>Repository Microkernal </td>
@@ -179,15 +169,20 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td>IBM DB2 11.1</td>
+   <td>IBM DB2 11.1 (Obsolète)</td>
    <td>Référentiel Microkernel</td>
    <td>R : Prise en charge limitée</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 </td>
+   <td>MySQL 5.7.35 (obsolète) </td>
    <td>-</td>
    <td>R : Prise en charge limitée </td>
-  </tr>  
+  </tr>
+  <tr>
+   <td>MySQL 8.0.27</td>
+   <td>-</td>
+   <td>R : Prise en charge limitée </td>
+  </tr>
  </tbody>
 </table>
 
@@ -208,7 +203,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
  <tbody>
   <tr>
    <th>Base de données </th>
-   <th><p><strong>Plate-forme</strong></p> </th>
+   <th><p><strong>Plateforme</strong></p> </th>
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr>
@@ -218,7 +213,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   </tr>
   <tr>
    <td>Microsoft SQL Server<br /> </td>
-   <td><p>Pilote Microsoft® SQL Server JDBC 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
+   <td><p>Pilote JDBC Microsoft® SQL Server 6.2.1.0 (obsolète) <br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
   </tr>
   <tr>
@@ -239,7 +234,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 <table>
  <tbody>
   <tr>
-   <td><p><strong> Plate-forme</strong></p> </td>
+   <td><p><strong> Plateforme</strong></p> </td>
    <td><p><strong>Niveau de prise en charge</strong></p> </td>
    <td><p><strong>Définitions de correctif prises en charge</strong></p> </td>
   </tr>
@@ -254,7 +249,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup></p> </td>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup> (Obsolète) </p> </td>
+   <td><p>A : Pris en charge</p> </td>
+   <td><p>Correctifs et correctifs cumulés pour la version prise en charge de EAP</p> </td>
+  </tr>
+  <tr>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Correctifs et correctifs cumulés pour la version prise en charge de EAP</p> </td>
   </tr>
@@ -272,7 +272,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 <table>
  <tbody>
   <tr>
-   <th><p><strong> Plate-forme</strong></p> </th>
+   <th><p><strong> Plateforme</strong></p> </th>
    <th><p><strong>Niveau de prise en charge</strong></p> </th>
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
@@ -287,7 +287,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td>Microsoft Windows Server 2016 (64 bits) (obsolète)</td>
+   <td> Microsoft Windows Server 2016 (64 bits) (obsolète)</td>
    <td>A : Pris en charge</td>
    <td>Service Packs et mises à jour critiques</td>
   </tr>
@@ -345,12 +345,12 @@ Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environn
 Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de configuration d’AEM Forms on JEE.
 
 1. AEM Forms on JEE ne prend pas en charge IBM® WebSphere® avec MySQL.
-1. AEM Forms on JEE ne prend pas en charge et JBoss sur SUSE Linux Enterprise Server 12. Seul IBM WebSphere est pris en charge sur SUSE Linux Enterprise Server 12.
+1. AEM Forms on JEE ne prend pas en charge et JBoss sous SUSE Linux Enterprise Server 12. Seul IBM WebSphere est pris en charge sur SUSE Linux Enterprise Server 12.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
 1. Le référentiel CRX prend en charge la persistance de type TarMK, MongoDB et des bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de base de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec le référentiel CRX et une base de données relationnelle prise en charge avec le serveur d’applications.
 1. AEM Forms on JEE ne prend pas en charge le serveur d’application WebSphere sur CentOS.
-1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss.
+1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles JBoss.
 
 Tenez également compte des points suivants lors de votre choix de logiciels pour le déploiement d’Adobe AEM Forms on JEE :
 
@@ -372,10 +372,6 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr>
-   <td>Oracle Unified Directory (OUD) 11g Version 2</td>
-   <td>Service Packs</td>
-  </tr>
-  <tr>
    <td>Microsoft Active Directory 2016</td>
    <td>Versions de maintenance et Fix Packs</td>
   </tr>
@@ -390,7 +386,6 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 
 | Produit |
 | ----------------------- |
-| IBM Lotus Domino 9.0 |
 | Microsoft Exchange 2013 |
 | Microsoft Office 365 |
 
@@ -408,18 +403,14 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
   </tr>
   <tr>
    <td>IBM Filenet </td>
-   <td>5.2</td>
-  </tr>
-  <tr>
-   <td>IBM Filenet </td>
    <td>5.5.2</td>
   </tr>
   <tr>
-   <td>IBM Content Manager Server</td>
+   <td>Serveur IBM Content Manager (obsolète) </td>
    <td>8.5 Fix pack 2</td>
   </tr>
   <tr>
-   <td>IBM Content Manager Client</td>
+   <td> Client IBM Content Manager (obsolète)</td>
    <td>8,5 </td>
   </tr>
   <tr>
@@ -463,7 +454,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Vous trouve
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect X7</td>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
@@ -533,7 +524,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [5
 <table>
  <tbody>
   <tr>
-   <td>Plate-forme</td>
+   <td>Plateforme</td>
    <td>Configuration matérielle requise</td>
   </tr>
   <tr>
@@ -571,7 +562,7 @@ Pour connaître les autres exigences, voir :
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Plate-forme</strong></p> </th>
+   <th><p><strong>Plateforme</strong></p> </th>
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr>
@@ -683,7 +674,6 @@ Pour connaître les autres exigences, voir :
 >
 > Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
 >
-> - La plupart des navigateurs récents ne prennent plus en charge les modules externes basés sur NPAPI. Pour plus d’informations sur son impact sur les applications et les workflows AEM Forms, voir [Arrêt des modules externes de navigateur NPAPI et son impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 > - Safari est pris en charge uniquement sous Macintosh OS X.
 > - Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures. Pour plus d’informations sur la compatibilité de Safari 5.1 avec Adobe Reader, Acrobat, voir [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 > - Administration Console n’est pas prise en charge sur Safari.
@@ -735,25 +725,6 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 | Google Android | Android 5.1 et versions ultérieures. L’application AEM Forms est certifiée sur les tablettes Samsung Galaxy 7 et 10 pouces et les smartphones les plus courants. |
 | Microsoft Windows | Appareils Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d’exploitation Microsoft Windows 10. |
 
-### Adobe Flash Player {#adobe-flash-player}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Flash Player (de base)</strong></p> </th>
-   <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
-  </tr>
-  <tr>
-   <td><p>Dernière version de Flash Player</p> </td>
-   <td><p>Versions et mises à jour mineures</p> </td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
-> Adobe [cessera de mettre à jour et de distribuer Flash Player fin 2020](https://theblog.adobe.com/adobe-flash-update/).
-
 ### Extension d’Adobe Document Security for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
 Cliquez [ici](https://www.adobe.com/fr/products/livecycle/rightsmanagement/extension/downloads.html) afin de voir la configuration requise par Adobe Document Security Extension for Microsoft® Office.
@@ -780,29 +751,45 @@ Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en
 
 ## Mises à jour de plateforme {#platform-updates}
 
+Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.12.0 du 3 février 2022 :
+
+- MongoDB Enterprise 4.0 
+- IBM DB2 11.1
+- Oracle Database 12c version 2
+- MySQL 5.7.35
+- Pilote Microsoft® SQL Server JDBC 6.2.1.0
+- JBoss® Enterprise Application Platform (EAP) 7.1.4
+- IBM Content Manager Server 8.5 Fix Pack 2
+- IBM Content Manager Client 8.5
+
 Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.10.0 du 7 septembre 2021 :
 
 - Adobe Acrobat 2017 - [La prise en charge principale d’Adobe Acrobat 2017 prend fin le 6 juin 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
-
 - Microsoft Windows Server 2016 (64 bits)
-
 - Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)
-
 - Microsoft® Office 2016
-
 - OpenOffice 4.1.2
 
 >[!NOTE]
 >
-> Les plateformes marquées comme [obsolète reste dans la prise en charge jusqu’à la version AEM Forms 6.5 Service Pack 15 (6.5.15.0)](https://helpx.adobe.com/support/programs/eol-matrix.html).
+> Les plateformes marquées comme [obsolète sur avec AEM Forms 6.5.12.0 et 6.5.10.0 restent pris en charge jusqu’à la version 6.5 Service Pack 18 (6.5.18.0) d’AEM Forms](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Historique des révisions {#revision-history}
 
+- 03 février 2022
+
+   - Suppression de la prise en charge des éléments suivants :
+      - IBM® J9 Virtual Machine (build 2.8 &amp; , JRE 1.8.0)
+      - Oracle Database 12c version 2
+      - Oracle Database 18c
+      - Oracle Unified Directory (OUD) 11g Version 2
+      - IBM Lotus Domino 9.0
+      - IBM Filenet 5.2
+      - Adobe Flash Player
 
 - 10 octobre 2021
 
    - Modification de la version prise en charge d’iOS pour l’application AEM Forms en iOS 15.1. La version précédente était iOS 12.
-
 
 - 7 septembre 2021
    - **Mises à jour de la plateforme**: [!DNL Adobe Experience Manager Forms] sur JEE a ajouté la prise en charge des plateformes suivantes :
@@ -815,5 +802,3 @@ Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Fo
    - 9 septembre 2020
 
       - Modification de la version prise en charge d’iOS pour l’application AEM Forms en iOS 12. La version précédente était iOS 11.
-
-
