@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 23b5f83e598210f14ee20e8fa5fb01434b93faae
+source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
 workflow-type: tm+mt
-source-wordcount: '3154'
+source-wordcount: '3180'
 ht-degree: 5%
 
 ---
@@ -84,6 +84,7 @@ Les problèmes suivants ont été corrigés dans [!DNL Sites]:
 * [Communautés] Il n’est pas possible de cliquer sur le contenu du tableau pour les membres du groupe (CQ-4334404).
 * [Oak] Le processus de synchronisation Secondaire à froid ne fonctionne pas et génère une erreur de journalisation (CQ-4333868).
 * [Interface utilisateur de Platform Foundation] [!DNL Experience Manager] La page de démarrage s’affiche à nouveau lorsque l’utilisateur sélectionne la variable [!DNL Adobe Experience Manager] icône déjà en cours sur la page de démarrage (CQ-4317409).
+* Pour qu’un utilisateur (sans autorisation de réplication) supprime ou déplace des pages (même si les pages ne sont pas activées), la variable `Page Subtree Activation Check` Sous Configuration `Page Manager Factory` doit être activé (NPR-37936).
 
 ### [!DNL Assets] {#assets-65120}
 
