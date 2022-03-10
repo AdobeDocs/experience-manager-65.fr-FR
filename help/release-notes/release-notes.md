@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '3180'
+source-wordcount: '3318'
 ht-degree: 5%
 
 ---
@@ -150,6 +150,12 @@ Les problèmes suivants ont été corrigés dans [!DNL Dynamic Media]:
 * Lorsque vous activez la propriété Autoriser le texte enrichi pour une zone de texte, la longueur maximale autorisée des caractères pose problème (NPR-37825).
 
 * Problèmes CSS lorsque vous copiez un composant dans un formulaire adaptatif (NPR-37812).
+
+* Lors de la génération de la traduction de formulaires adaptatifs, le fichier XLIFF généré ne contient pas la même séquence de textes que dans le formulaire adaptatif. Dans certains cas, il est nécessaire de voir le contexte des textes. Cela n’est pas possible si la séquence dans XLIFF est alphabétique. (NPR-37435).
+
+* Lorsqu’un formulaire adaptatif est traduit, les balises de HTML font partie de la traduction. Si un utilisateur commet une erreur et que les balises ne sont pas valides, le texte entier n’est pas affiché dans le document d’enregistrement. (NPR-37499)
+
+* Lorsqu’un formulaire adaptatif est créé et finalisé dans la langue de base, la traduction est effectuée par une équipe externe et importée. S’il existe même une légère modification du texte, comme un ajout ou un point manquant (.) est effectué dans la langue de base, la traduction complète est manquante pour toutes les autres langues. (NPR-37189)
 
 **Modèle de données de formulaire**
 
