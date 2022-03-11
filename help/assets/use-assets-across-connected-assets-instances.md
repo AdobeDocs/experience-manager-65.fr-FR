@@ -6,10 +6,10 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 19eaabb55f11ea8080a545d994795e30817a51fb
+source-git-commit: f4e6a1855fad76df8102751b14e9ac6982315937
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3786'
+ht-degree: 67%
 
 ---
 
@@ -246,45 +246,65 @@ Vous pouvez également mettre à jour les propriétés de métadonnées d’une 
 
 ## Questions fréquentes {#frequently-asked-questions}
 
-### Si vous devez utiliser les ressources disponibles sur votre [!DNL Sites] déploiement ?
++++**Si vous devez utiliser les ressources disponibles sur votre [!DNL Sites] déploiement ?**
 
 Dans ce cas, il n’est pas nécessaire de configurer les ressources connectées. Vous pouvez utiliser les ressources disponibles dans la variable [!DNL Sites] déploiement.
 
-### Quand devez-vous configurer la fonction Ressources connectées ?
++++
+
++++**Quand devez-vous configurer la fonction Ressources connectées ?**
 
 Configurez la fonction Ressources connectées uniquement lorsque vous devez utiliser les ressources disponibles sur un déploiement DAM distant sur un [!DNL Sites] déploiement.
 
-### Combien [!DNL Sites] pouvez-vous vous connecter à un déploiement DAM distant après avoir configuré les ressources connectées ?
++++
+
++++**Combien [!DNL Sites] pouvez-vous vous connecter à un déploiement DAM distant après avoir configuré les ressources connectées ?**
 
 Vous pouvez connecter un maximum de quatre [!DNL Sites] se déploie sur un déploiement DAM distant après la configuration des ressources connectées. Pour plus d’informations, voir [Architecture des ressources connectées](#connected-assets-architecture).
 
-### Combien de déploiements DAM distants pouvez-vous vous connecter à un [!DNL Sites] déploiement après la configuration des ressources connectées ?
++++
+
++++**Combien de déploiements DAM distants pouvez-vous vous connecter à un [!DNL Sites] déploiement après la configuration des ressources connectées ?**
 
 Vous pouvez connecter un déploiement DAM distant à un [!DNL Sites] déploiement après la configuration des ressources connectées. Pour plus d’informations, voir [Architecture des ressources connectées](#connected-assets-architecture).
 
-### Vous pouvez utiliser des ressources Dynamic Media à partir de vos [!DNL Sites] déploiement après la configuration des ressources connectées ?
++++
+
++++**Vous pouvez utiliser des ressources Dynamic Media à partir de vos [!DNL Sites] déploiement après la configuration des ressources connectées ?**
 
 Après avoir configuré les ressources connectées, [!DNL Dynamic Media] ressources disponibles sur [!DNL Sites] déploiement en mode lecture seule. Par conséquent, vous ne pouvez pas utiliser [!DNL Dynamic Media] pour traiter des ressources sur la [!DNL Sites] déploiement. Pour plus d’informations, voir [Configurer une connexion entre les déploiements Sites et Dynamic Media](#dynamic-media-assets).
 
-### Pouvez-vous utiliser des ressources de type Image et Format de document à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?
++++
+
++++**Pouvez-vous utiliser des ressources de type Image et Format de document à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?**
 
 Oui, vous pouvez utiliser des ressources de type Image et Format de document à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées.
 
-### Peux-tu utiliser des fragments de contenu et des ressources vidéo provenant du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?
++++
+
++++**Peux-tu utiliser des fragments de contenu et des ressources vidéo provenant du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?**
 
 Non, vous ne pouvez pas utiliser de fragments de contenu et de ressources vidéo provenant du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées.
 
-### Pouvez-vous utiliser des ressources Dynamic Media provenant du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?
++++
+
++++**Pouvez-vous utiliser des ressources Dynamic Media provenant du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?**
 
 Oui, vous pouvez configurer et utiliser des ressources d’image Dynamic Media à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées. Pour plus d’informations, voir [Configurer une connexion entre les déploiements Sites et Dynamic Media](#dynamic-media-assets).
 
-### Après avoir configuré les ressources connectées, pouvez-vous effectuer les opérations de mise à jour, de suppression, de changement de nom et de déplacement sur les ressources ou dossiers DAM distants ?
++++
+
++++**Après avoir configuré les ressources connectées, pouvez-vous effectuer les opérations de mise à jour, de suppression, de changement de nom et de déplacement sur les ressources ou dossiers DAM distants ?**
 
 Oui, après avoir configuré les ressources connectées, vous pouvez effectuer les opérations de mise à jour, de suppression, de changement de nom et de déplacement sur les ressources ou dossiers DAM distants. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites . Pour plus d’informations, voir [Gestion des mises à jour des ressources dans DAM distant](#handling-updates-to-remote-assets).
 
-### Après avoir configuré les ressources connectées, pouvez-vous ajouter ou modifier des ressources sur votre [!DNL Sites] déploiement et les rendre disponibles sur le déploiement DAM distant ?
++++
+
++++**Après avoir configuré les ressources connectées, pouvez-vous ajouter ou modifier des ressources sur votre [!DNL Sites] déploiement et les rendre disponibles sur le déploiement DAM distant ?**
 
 Vous pouvez ajouter des ressources au [!DNL Sites] Toutefois, ces ressources ne peuvent pas être mises à la disposition du déploiement DAM distant.
+
++++
 
 ## Restrictions et bonnes pratiques {#tip-and-limitations}
 
