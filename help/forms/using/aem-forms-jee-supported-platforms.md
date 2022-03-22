@@ -11,7 +11,7 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
+source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
 workflow-type: tm+mt
 source-wordcount: '3515'
 ht-degree: 72%
@@ -116,12 +116,11 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Versions et mises à jour mineures</td>
   </tr>
   <tr>
-   <td> IBM JAVA1.8.0_291(version 8.0.6.30)<br /> </td>
+   <td>IBM JAVA1.8.0_291(version 8.0.6.30)<br /> </td>
    <td>A : Pris en charge</td>
    <td>Versions et mises à jour mineures</td>
   </tr>
-
-</tbody>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -649,7 +648,7 @@ Pour connaître les autres exigences, voir :
    <td>Toutes les mises à jour</td>
   </tr>
   <tr>
-   <td>Microsoft Firefox ESR</td>
+   <td>Mozilla Firefox ESR</td>
    <td>E : Fonctionnement supposé</td>
    <td> Toutes les mises à jour</td>
   </tr>
