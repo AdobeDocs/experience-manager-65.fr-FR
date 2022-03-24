@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: ec1c8d80fabefdae01fea92fec9cb33bc5779f3c
+source-git-commit: 9e9a01cddf56d23bfe4e84812534c295be1595f4
 workflow-type: tm+mt
-source-wordcount: '3262'
-ht-degree: 83%
+source-wordcount: '3294'
+ht-degree: 82%
 
 ---
 
@@ -91,18 +91,20 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 
 | **Plate-forme** | **Niveau de prise en charge** | **Lien** |
 |---|---|---|
-| Azul Zulu OpenJDK 11 - 64 bits | Z : Non pris en charge |  |
-| Azul Zulu OpenJDK 8 - 64 bits | A : Non pris en charge |  |
 | Oracle Java SE 11 JDK – 64 bits | A : Pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z : Non pris en charge `[1]` |
 | Oracle Java SE 9 JDK | Z : Non pris en charge `[1]` |
 | Oracle Java SE 8 JDK – 64 bits | A : Pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | Machine virtuelle IBM J9 – Version 2.9, JRE 1.8.0 | A : Pris en charge `[2]` |
 | Machine virtuelle IBM J9 – Version 2.8, JRE 1.8.0 | A : Pris en charge `[2]` |
+| Azul Zulu OpenJDK 11 - 64 bits | A : Pris en charge `[3]` |  |
+| Azul Zulu OpenJDK 8 - 64 bits | A : Pris en charge `[3]` |  |
 
 1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9, Java 10 et Java 12 sont des versions non-LTS par Oracle (voir [Feuille de route du support Oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Voir [Prise en charge Java Oracle pour Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) pour plus d’informations.
 
 1. IBM JRE est pris en charge uniquement avec WebSphere Application Server.
+
+1. Les versions de LTS OpenJDK Azul Zulu sont prises en charge pour les déploiements d’AEM sur site commençant par la version 6.5 SP9. La prise en charge et la distribution des versions du JDK LTS Azul Zulu doivent être autorisées directement depuis Azul par nos clients.
 
 
 ### Stockage et persistance {#storage-persistence}
@@ -317,7 +319,7 @@ Pour se connecter avec Microsoft Windows 7 et versions ultérieures à une inst
 
 1. Ajoutez l’entrée de Registre BasicAuthLevel à cette sous-clé en lui attribuant une valeur de 2 (ou plus élevée).
 
-Pour améliorer la réactivité du client WebDav sous Windows, consultez l’article [2445570 de la Base de connaissances d’assistance Microsoft](https://support.microsoft.com/kb/2445570).
+Pour améliorer la réactivité du client WebDav sous Windows, voir [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570)
 
 ## Autres remarques relatives aux plates-formes {#additional-platform-notes}
 
