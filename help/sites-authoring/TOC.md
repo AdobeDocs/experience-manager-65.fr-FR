@@ -1,16 +1,16 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.5
 breadcrumb-title: Guide de création
 user-guide-description: Découvrez les principaux concepts de création de contenu dans AEM.
-feature: 'Création '
+feature: Authoring
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '298'
 ht-degree: 87%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 87%
    + [Manipulation de base](basic-handling.md)
    + [Rechercher](search.md)
    + [Configuration de l’environnement du compte](user-properties.md)
-   + [Votre boîte de réception ](inbox.md)
+   + [Votre boîte de réception](inbox.md)
    + [Raccourcis clavier pour les consoles](keyboard-shortcuts.md)
    + [Choix de l’interface utilisateur](select-ui.md)
 + Création {#authoring}
@@ -48,12 +48,12 @@ ht-degree: 87%
    + [Bonnes pratiques](best-practices.md)
 + Fonctions de site et de page {#siteandpage}
    + [Utilisation des balises](tags.md)
-   + [Création de modèles de page ](templates.md)
+   + [Création de modèles de page](templates.md)
    + [Système de style](style-system.md)
    + [Utilisation des versions de page](working-with-page-versions.md)
    + [Outil de comparaison des pages](page-diff.md)
    + [Console des composants](default-components-console.md)
-   + [Mise en page réactive ](responsive-layout.md)
+   + [Mise en page réactive](responsive-layout.md)
    + [Content Insight ](content-insights.md)
    + [Création de contenu accessible (conformité WCAG 2.1)](creating-accessible-content.md)
    + [Configuration de composants en mode de conception](default-components-designmode.md)
@@ -81,15 +81,15 @@ ht-degree: 87%
    + [Analyse des performances de page](ci-analyze.md)
    + [Affichage des données d’analyse de page](pa-using.md)
    + [Ajout de fonctionnalités Search&amp;Promote à une page](search-and-promote.md)
-+ Personnalisation  {#personalization}
-   + [Personnalisation ](personalization.md)
++ Personnalisation {#personalization}
+   + [Personnalisation](personalization.md)
    + [Aperçu des pages à l’aide des données ContextHub](ch-previewing.md)
    + [Création de contenu ciblé en mode Ciblage](content-targeting-touch.md)
    + [Utilisation de contenu ciblé sur plusieurs sites](multisite-support-targeted-content.md)
    + [Structuration de la gestion multisite du contenu ciblé](technical-multisite-targeted.md)
    + [Gestion des activités](activitylib.md)
    + [Gestion des audiences](managing-audiences.md)
-   + [Création et gestion d’offres ](offerlib.md)
+   + [Création et gestion d’offres](offerlib.md)
    + [Compréhension de la segmentation](segmentation-overview.md)
 + AEM et Adobe Campaign {#aem-adobe-campaign}
    + [Utilisation d’Adobe Campaign](adobe-campaign.md)

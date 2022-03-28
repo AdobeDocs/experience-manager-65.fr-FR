@@ -1,15 +1,15 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.5 Classic UI
 user-guide-description: Ce guide couvre les concepts de création dans AEM dans l’interface utilisateur classique.
-feature: 'Création '
+feature: Authoring
 role: User
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 84%
 
 ---
@@ -26,8 +26,8 @@ ht-degree: 84%
    + [Configuration de l’environnement du compte](author-env-user-props.md)
    + [Choix de l’interface utilisateur](author-env-select-ui.md)
    + [Rechercher](author-env-search.md)
-   + [Votre boîte de réception ](author-env-inbox.md)
-   + [Raccourcis clavier pour les consoles ](author-env-keyboard-shortcuts.md)
+   + [Votre boîte de réception](author-env-inbox.md)
+   + [Raccourcis clavier pour les consoles](author-env-keyboard-shortcuts.md)
 + Création {#authoring}
    + [Création de pages](classic-page-author.md)
    + [Création – Environnement et outils](classic-page-author-env-tools.md)
@@ -60,7 +60,7 @@ ht-degree: 84%
    + [Création de lancements](classic-launches-creating.md)
    + [Modification de lancements](classic-launches-editing.md)
    + [Conversion de lancements](classic-launches-promoting.md)
-+ Personnalisation  {#personalization}
++ Personnalisation {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
    + [Pages d’entrée](classic-personalization-campaigns-landingpage.md)
@@ -84,6 +84,6 @@ ht-degree: 84%
    + [Diffusion de ressources Dynamic Media](dynamic-media-assets-delivering.md)
    + [Ajout de ressources Dynamic Media aux pages](dynamic-media-assets-adding-to-page.md)
    + [Ajout de fonctionnalités Scene7 à votre page](manage-assets-classic-s7.md)
-   + [Vidéo](manage-assets-classic-s7-video.md)
+   + [Vidéo ](manage-assets-classic-s7-video.md)
    + [Utilisation de Dynamic Media](dynamic-media-assets.md)
    + [Conventions de dénomination pour le test des ressources](asset-naming-conventions.md)
