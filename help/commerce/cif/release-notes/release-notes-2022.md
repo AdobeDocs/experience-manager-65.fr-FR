@@ -1,10 +1,11 @@
 ---
 title: Notes de mise à jour d’AEM Content and Commerce 2022
 description: Notes de mise à jour d’AEM Content and Commerce 2022
-source-git-commit: 84ac40a5cd18b1a5c8bb7a93af4106be6bda7631
+exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
+source-git-commit: 1a82930d9f0aa84cea590782aba2e70ec23b41c3
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 22%
+source-wordcount: '361'
+ht-degree: 20%
 
 ---
 
@@ -19,6 +20,22 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 | Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Date de publication : Mars 2022
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2022.02.24.00 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.02.24.00.zip) |
+| Composants principaux CIF | 2.6.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) |
+| Site de référence CIF Venia | 2022.02.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.02.24) |
+
+### Nouveautés {#what-is-new-march}
+
+* Version bêta : AEM le composant principal Recherche CIF prend en charge Commerce LiveSearch
+* Optimisation du référencement pour les scénarios multi-magasin : Les formats d’URL pour PDP/PLP peuvent désormais être configurés au niveau du magasin via les propriétés de configuration du cloud CIF.
+* Le sélecteur de produits prend en charge les produits intermédiaires par le biais d’une nouvelle option de filtre dans l’interface utilisateur.  Cela permet aux spécialistes du contenu de préparer la gestion de contenu de produit pour les lancements de produits à venir.
+* Simplification de la gestion de la configuration et de la gestion des erreurs CIF à l’aide du nom de configuration du cloud CIF au lieu de l’URL du proxy de configuration
+* Sélection manuelle de catégories pour la liste de produits et les composants de carrousel. Cela permet aux spécialistes du contenu d’utiliser ces composants sur les pages de contenu, en dehors de l’expérience de catalogue.
 
 ## Date de publication : Janvier 2022
 
@@ -39,4 +56,3 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
    * Disponible en tant que composant principal et dans l’AEM Venia Storefront
 
 ![Liste de souhaits](/help/assets/CIF/wishlist.png)
-
