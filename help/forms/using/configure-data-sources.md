@@ -1,19 +1,19 @@
 ---
 title: Configuration des sources de données
-seo-title: Configuration des sources de données
+seo-title: Configure data sources
 description: Découvrez comment configurer différents types de sources de données et tirer parti de la création de modèles de données de formulaire.
-seo-description: Découvrez comment configurer différents types de sources de données et tirer parti de la création de modèles de données de formulaire.
+seo-description: Learn how to configure different types of data sources and leverage to create form data models.
 uuid: 12360c8c-b596-4f9b-837a-10a8ff5c7448
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
-feature: Modèle de données de formulaire
+feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0b0478f837b63d0a04c83283024c155329e368db
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 58%
+source-wordcount: '2012'
+ht-degree: 57%
 
 ---
 
@@ -52,7 +52,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    >    
    >    
    >    1. Accédez à https://&#39;[server]:[port]&#39;/system/console/crypto.
-   >    1. Dans le champ **[!UICONTROL Texte brut]** , spécifiez le mot de passe ou toute chaîne à chiffrer et appuyez sur **[!UICONTROL Protect]**.
+   >    1. Dans le **[!UICONTROL Texte brut]** , indiquez le mot de passe ou toute chaîne à chiffrer et appuyez sur **[!UICONTROL Protect]**.
 
    >    
    >    
@@ -65,14 +65,14 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    * SELECT 1 (MySQL et MS SQL)
    * SELECT 1 from dual (Oracle)
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer) pour enregistrer la configuration.
+1. Appuyer **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
 ## Configurer le profil utilisateur AEM {#configure-aem-user-profile}
 
 Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration User Profile Connector dans AEM Web Console. Procédez comme suit :
 
 1. Accédez à AEM console web à l’adresse https://&#39;[server]:[port]&#39;system/console/configMgr.
-1. Recherchez **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** et appuyez pour ouvrir la configuration en mode d’édition.
+1. Rechercher **[!UICONTROL Intégrations de données AEM Forms - Configuration du connecteur de profil utilisateur]** et appuyez sur pour ouvrir la configuration en mode d’édition.
 1. Dans la boîte de dialogue Configuration du connecteur de profil utilisateur, vous pouvez ajouter, supprimer ou mettre à jour les propriétés du profil utilisateur. Les propriétés spécifiées pourront être utilisées dans le modèle de données de formulaire. Utilisez le format suivant pour spécifier les propriétés du profil utilisateur :
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -84,16 +84,17 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
    >[!NOTE]
    >
-   >La balise ***** de l’exemple ci-dessus indique tous les noeuds sous le noeud `profile/empLocation/` du profil utilisateur AEM dans la structure CRXDE. Cela signifie que le modèle de données de formulaire peut accéder à la propriété `city` de type `string` présente dans n’importe quel noeud sous le noeud `profile/empLocation/`. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
+   >Le **&#42;** dans l’exemple ci-dessus, indique tous les noeuds sous la balise `profile/empLocation/` noeud dans AEM profil utilisateur dans la structure CRXDE. Cela signifie que le modèle de données de formulaire peut accéder à la variable `city` propriété de type `string` présent dans n’importe quel noeud sous `profile/empLocation/` noeud . Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
 
-1. Appuyez sur **[!UICONTROL Save]** (Enregistrer) pour enregistrer la configuration.
+1. Appuyer **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
 ## Configurer le dossier pour les configurations de service cloud {#cloud-folder}
 
 >[!NOTE]
-La configuration du dossier de services cloud est requise pour la configuration des services cloud pour les services RESTful, SOAP et OData.
+>
+>La configuration du dossier de services cloud est requise pour la configuration des services cloud pour les services RESTful, SOAP et OData.
 
-Toutes les configurations de service cloud dans AEM sont consolidées dans le dossier `/conf` du référentiel AEM. Par défaut, le dossier `conf` contient le dossier `global` dans lequel vous pouvez créer des configurations de service cloud. Toutefois, vous devez l’activer manuellement pour les configurations cloud. Vous pouvez également créer des dossiers supplémentaires dans `conf` pour créer et organiser des configurations de service cloud.
+Toutes les configurations de service cloud dans AEM sont consolidées dans la variable `/conf` dans le référentiel AEM. Par défaut, le dossier `conf` contient le dossier `global` dans lequel vous pouvez créer des configurations de service cloud. Toutefois, vous devez l’activer manuellement pour les configurations cloud. Vous pouvez également créer des dossiers supplémentaires dans `conf` pour créer et organiser des configurations de service cloud.
 
 Pour configurer le dossier pour les configurations de service cloud :
 
@@ -113,7 +114,7 @@ Pour configurer le dossier pour les configurations de service cloud :
 
 ## Configuration des services web RESTful {#configure-restful-web-services}
 
-Le service Web RESTful peut être décrit à l’aide des [spécifications Swagger](https://swagger.io/specification/) au format JSON ou YAML dans un fichier de définition Swagger. Pour configurer le service Web RESTful dans les services cloud AEM, vérifiez que le fichier Swagger se trouve sur votre système de fichiers ou que l’URL où le fichier est hébergé.
+Le service Web RESTful peut être décrit à l’aide de [Spécifications Swagger](https://swagger.io/specification/) au format JSON ou YAML dans un fichier de définition Swagger. Pour configurer le service Web RESTful dans les services cloud AEM, vérifiez que le fichier Swagger se trouve sur votre système de fichiers ou que l’URL où le fichier est hébergé.
 
 Procédez comme suit pour configurer les services RESTful :
 
@@ -135,7 +136,7 @@ Procédez comme suit pour configurer les services RESTful :
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
 
-   Si vous sélectionnez **[!UICONTROL Authentification mutuelle]** comme type d’authentification, voir [Authentification mutuelle basée sur un certificat pour les services Web RESTful et SOAP](#mutual-authentication).
+   Si vous sélectionnez **[!UICONTROL Authentification mutuelle]** comme type d’authentification, voir [Authentification mutuelle basée sur des certificats pour les services Web RESTful et SOAP](#mutual-authentication).
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
@@ -144,21 +145,21 @@ Procédez comme suit pour configurer les services RESTful :
 [!DNL Experience Manager Forms] le modèle de données de formulaire lors de l’intégration aux services web RESTful en tant que source de données inclut des configurations de client HTTP pour l’optimisation des performances.
 Effectuez les étapes suivantes pour configurer le client HTTP du modèle de données de formulaire :
 
-1. Connectez-vous à [!DNL Experience Manager Forms] Instance d’auteur en tant qu’administrateur et accédez aux lots de la console web [!DNL Experience Manager]. L’URL par défaut est [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Connectez-vous à [!DNL Experience Manager Forms] Instance de création en tant qu’administrateur et accédez à [!DNL Experience Manager] lots de la console web. L’URL par défaut est [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
-1. Appuyez sur **[!UICONTROL Form Data Model Http Client Configuration pour la source de données REST]**.
+1. Appuyer **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]**.
 
-1. Dans la boîte de dialogue [!UICONTROL Form Data Model Http Client Configuration for REST data source] :
+1. Dans le [!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST] dialog :
 
-   * Indiquez le nombre maximal de connexions autorisées entre le modèle de données de formulaire et les services web RESTful dans le champ **[!UICONTROL Limite de connexions au total]** . La valeur par défaut est de 20 connexions.
+   * Spécifiez le nombre maximal de connexions autorisées entre le modèle de données de formulaire et les services Web RESTful dans la variable **[!UICONTROL Limite de connexion au total]** champ . La valeur par défaut est de 20 connexions.
 
-   * Indiquez le nombre maximal de connexions autorisées pour chaque itinéraire dans le champ **[!UICONTROL Limite de connexions par itinéraire]** . La valeur par défaut est de 2 connexions.
+   * Spécifiez le nombre maximal de connexions autorisées pour chaque itinéraire dans la variable **[!UICONTROL Limite de connexion par itinéraire]** champ . La valeur par défaut est de 2 connexions.
 
-   * Indiquez la durée pour laquelle une connexion HTTP persistante est conservée en vie, dans le champ **[!UICONTROL Conserver en vie]** . La valeur par défaut est de 15 secondes.
+   * Indiquez la durée, pour laquelle une connexion HTTP persistante est maintenue en vie, dans la variable **[!UICONTROL Reste en vie]** champ . La valeur par défaut est de 15 secondes.
 
-   * Indiquez la durée pendant laquelle le serveur [!DNL Experience Manager Forms] attend l’établissement d’une connexion, dans le champ **[!UICONTROL Délai de connexion]** . La valeur par défaut est de 10 secondes.
+   * Indiquez la durée pour laquelle la variable [!DNL Experience Manager Forms] attend qu’une connexion soit établie, dans la variable **[!UICONTROL Délai de connexion]** champ . La valeur par défaut est de 10 secondes.
 
-   * Indiquez la période d’inactivité maximale entre deux paquets de données dans le champ **[!UICONTROL Délai d’inactivité du socket]** . La valeur par défaut est de 30 secondes.
+   * Spécifiez la période maximale d’inactivité entre deux paquets de données dans la variable **[!UICONTROL Délai d’expiration du socket]** champ . La valeur par défaut est de 30 secondes.
 
 
 ## Configuration des services web SOAP {#configure-soap-web-services}
@@ -176,10 +177,10 @@ Les services web SOAP sont décrits à l’aide des [spécifications WSDL (Web S
    * Point d’entrée du service. Spécifiez une valeur dans ce champ pour remplacer le point d’entrée du service mentionné dans WSDL.
    * Sélectionnez le type d’authentification (Aucun, OAuth2.0, Authentification de base, Authentification personnalisée, Jeton X509 ou Authentification mutuelle) pour accéder au service SOAP et fournir en conséquence les détails de l’authentification.
 
-      Si vous sélectionnez **[!UICONTROL Jeton X509]** comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configuration des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
-Spécifiez l’alias KeyStore pour le certificat X509 dans le champ **[!UICONTROL Alias de clé]**. Spécifiez la durée, en secondes, jusqu’à ce que la demande d’authentification reste valide, dans le champ **[!UICONTROL Durée de vie]**. Vous pouvez également choisir de signer le corps du message ou l’en-tête d’horodatage ou les deux.
+      Si vous sélectionnez **[!UICONTROL Jeton X509]** comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configurer des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+Spécifiez l’alias KeyStore pour le certificat X509 dans la variable **[!UICONTROL Alias clé]** champ . Spécifiez la durée, en secondes, jusqu’à ce que la demande d’authentification reste valide, dans la variable **[!UICONTROL Durée de vie]** champ . Vous pouvez également choisir de signer le corps du message ou l’en-tête d’horodatage ou les deux.
 
-      Si vous sélectionnez **[!UICONTROL Authentification mutuelle]** comme type d’authentification, voir [Authentification mutuelle basée sur un certificat pour les services Web RESTful et SOAP](#mutual-authentication).
+      Si vous sélectionnez **[!UICONTROL Authentification mutuelle]** comme type d’authentification, voir [Authentification mutuelle basée sur des certificats pour les services Web RESTful et SOAP](#mutual-authentication).
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service web SOAP.
 
@@ -188,20 +189,23 @@ Spécifiez l’alias KeyStore pour le certificat X509 dans le champ **[!UICONTRO
 Un service OData est identifié par son URL racine de service. Pour configurer un service OData dans les services cloud AEM, vérifiez que vous disposez de l’URL racine du service et procédez comme suit :
 
 >[!NOTE]
-Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+>
+> Le modèle de données de formulaire prend en charge [OData version 4.0](https://www.odata.org/documentation/) et plus tard.
+>Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Appuyez pour sélectionner le dossier dans lequel vous souhaitez créer une configuration cloud.
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](../../forms/using/configure-data-sources.md#cloud-folder).
 
-1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, cherchez et sélectionnez éventuellement une miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, cherchez et sélectionnez éventuellement une vignette pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
 1. Spécifiez les informations suivantes pour le service OData :
 
    * URL racine du service pour le service OData à configurer.
    * Sélectionnez le type d’authentification - Aucun, OAuth2.0, Authentification de base ou Authentification personnalisée - pour accéder au service OData et fournir en conséquence les détails de l’authentification.
 
    >[!NOTE]
-   Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services Microsoft Dynamics à l’aide du point d’entrée OData en tant que racine du service.
+   >
+   >Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services Microsoft Dynamics à l’aide du point d’entrée OData en tant que racine du service.
 
 1. Appuyez sur **Créer** pour créer la configuration de cloud pour le service OData.
 
@@ -209,14 +213,14 @@ Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365
 
 Lorsque vous activez l’authentification mutuelle pour le modèle de données de formulaire, la source de données et AEM serveur exécutant le modèle de données de formulaire authentifient l’identité de l’autre avant de partager des données. Vous pouvez utiliser l’authentification mutuelle pour les connexions REST et SOAP (sources de données). Pour configurer l’authentification mutuelle pour un modèle de données de formulaire dans votre environnement AEM Forms :
 
-1. Téléchargez la clé privée (certificat) sur le serveur [!DNL AEM Forms]. Pour charger la clé privée :
-   1. Connectez-vous à votre serveur [!DNL AEM Forms] en tant qu’administrateur.
-   1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**. Sélectionnez l’utilisateur `fd-cloudservice` et appuyez sur **[!UICONTROL Propriétés]**.
-   1. Ouvrez l’onglet **[!UICONTROL Keystore]**, développez l’option **[!UICONTROL Ajouter une clé privée à partir du fichier KeyStore]**, téléchargez le fichier KeyStore, spécifiez les alias et mots de passe, puis appuyez sur **[!UICONTROL Envoyer]**. Le certificat est téléchargé.  L’alias de la clé privée est mentionné dans le certificat et défini lors de la création du certificat.
+1. Téléchargez la clé privée (certificat) vers [!DNL AEM Forms] serveur. Pour charger la clé privée :
+   1. Connectez-vous à votre [!DNL AEM Forms] en tant qu’administrateur.
+   1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**. Sélectionnez la `fd-cloudservice` utilisateur et appuyez sur **[!UICONTROL Propriétés]**.
+   1. Ouvrez le **[!UICONTROL Keystore]** , développez l’onglet **[!UICONTROL Ajout d’une clé privée à partir du fichier KeyStore]** , téléchargez le fichier KeyStore , spécifiez les alias et mots de passe, puis appuyez sur **[!UICONTROL Envoyer]**. Le certificat est téléchargé.  L’alias de la clé privée est mentionné dans le certificat et défini lors de la création du certificat.
 1. Téléchargez le certificat de confiance dans le Trust Store global. Pour télécharger le certificat :
    1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Trust Store]**.
-   1. Développez l’option **[!UICONTROL Ajouter un certificat à partir du fichier CER]**, appuyez sur **[!UICONTROL Sélectionner le fichier de certificat]**, téléchargez le certificat, puis appuyez sur **[!UICONTROL Envoyer]**.
-1. Configurez les services Web [SOAP](#configure-soap-web-services) ou [RESTful](#configure-restful-web-services) comme source de données et sélectionnez **[!UICONTROL Authentification mutuelle]** comme type d’authentification. Si vous configurez plusieurs certificats auto-signés pour l’utilisateur `fd-cloudservice`, indiquez le nom de l’alias de clé pour le certificat.
+   1. Développez l’objet **[!UICONTROL Ajout d’un certificat à partir du fichier CER]** option, appuyez sur **[!UICONTROL Sélectionner le fichier de certificat]**, téléchargez le certificat, puis appuyez sur **[!UICONTROL Envoyer]**.
+1. Configurer [SOAP](#configure-soap-web-services) ou [RESTful](#configure-restful-web-services) services web comme source de données et sélectionnez **[!UICONTROL Authentification mutuelle]** comme type d’authentification. Si vous configurez plusieurs certificats auto-signés pour `fd-cloudservice` utilisateur, spécifiez le nom de l’alias de la clé pour le certificat.
 
 ## Étapes suivantes {#next-steps}
 
