@@ -1,8 +1,8 @@
 ---
-title: 'Raccourcis clavier pour les consoles  '
-seo-title: 'Raccourcis clavier pour les consoles  '
+title: Raccourcis clavier pour les consoles
+seo-title: Keyboard Shortcuts for Consoles
 description: Utilisez ces raccourcis clavier pour gagner du temps lors de la création
-seo-description: Utilisez ces raccourcis clavier pour gagner du temps lors de la création
+seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ad8f98d22c2f2095ee92741331170be996103d95
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '378'
 ht-degree: 98%
 
 ---
 
-# Raccourcis clavier pour les consoles  {#keyboard-shortcuts-for-consoles}
+# Raccourcis clavier pour les consoles{#keyboard-shortcuts-for-consoles}
 
 Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles et d’autres à la [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
@@ -41,7 +41,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Commerce, Scre
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Choisir l’option de [sélecteur de rail](/help/sites-authoring/basic-handling.md#rail-selector) à afficher |
-|  | &grave; | Masquer le rail |
+|  | ``` ` ``` | Masquer le rail |
 |  | `e` | Modifier |
 |  | `p` | Propriétés |
 |  | `m` | Déplacer |
@@ -50,7 +50,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Commerce, Scre
 |  | `Backspace` | Supprimer |
 | Pages des propriétés | `Ctrl+s` | Enregistrer |
 
-Les combinaisons de touches sont répertoriées avec les touches de modification [Windows](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys).
+Les combinaisons de touches sont répertoriées avec les [touches de modification](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) Windows.
 
 Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui se servent de l’[éditeur de page](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) pour créer des pages.
 
