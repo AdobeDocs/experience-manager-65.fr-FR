@@ -8,9 +8,9 @@ breadcrumb-title: Guide d’administration
 user-guide-description: Découvrez comment administrer AEM.
 feature: Administering
 role: Admin
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '632'
 ht-degree: 90%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 90%
    + [Configuration de la synchronisation des Live Copies](msm-sync.md)
    + [Création et synchronisation de Live Copies](msm-livecopy.md)
    + [Conflits de déploiement de MSM](msm-rollout-conflicts.md)
+   + [Résolution des problèmes et FAQ concernant MSM](troubleshoot-msm.md)
    + [Bonnes pratiques MSM](msm-best-practices.md)
    + [Traduction de contenu pour les sites multilingues](translation.md)
    + [Gestion de projets de traduction](tc-manage.md)
@@ -158,7 +159,7 @@ ht-degree: 90%
    + [Traitement des demandes RGPD pour AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce – Préparation pour le RGPD](gdpr-compliance-commerce.md)
 + Gestion de contenu {#contentmanagement}
-   + [Gestionnaire de modules](package-manager.md)
+   + [Gestionnaire de packs](package-manager.md)
    + [Administration des balises](tags.md)
    + [Exportateur de page](page-exporter.md)
    + [Console Balisage de l’interface utilisateur (IU) classique](classic-console.md)
