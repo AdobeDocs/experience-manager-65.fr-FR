@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 53%
@@ -202,7 +202,7 @@ Si vous personnalisez la variable [!UICONTROL Ressources de mise à jour de gest
 </policymap>
 ```
 
-En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fichier `configure.xml` (ou en définissant la variable d’environnement `MAGIC_TEMPORARY_PATH`) sur une partition de disque disposant d’un espace et d’IOPS appropriés.
+En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fichier `configure.xml` (ou en définissant la variable d’environnement `MAGICK_TEMPORARY_PATH`) sur une partition de disque disposant d’un espace et d’IOPS appropriés.
 
 >[!CAUTION]
 >
