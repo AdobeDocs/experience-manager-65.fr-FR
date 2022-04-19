@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 8fcbdb4d00a5ddffadf5b4a099454dc795999769
+source-git-commit: 81008366b7d5edaf1d2f83ccd2ba6237c2e96fad
 workflow-type: tm+mt
-source-wordcount: '5100'
+source-wordcount: '5107'
 ht-degree: 51%
 
 ---
@@ -677,13 +677,23 @@ Si vous rencontrez des problèmes même après avoir corrigé tous les problème
 
 +++
 
-+++HTMLtoPDF
+Problèmes de conversion +++ HTML vers PDF
 
 * Assurez-vous que les répertoires de polices sont ajoutés dans l’interface utilisateur de configuration de PDF Generator.
 
-+++
+**Linux et Solaris (itinéraire de conversion PhantomJS)**
 
-+++Linux® et Solaris™ (conversion WebKit)
+* Assurez-vous que la bibliothèque 32 bits est disponible (libicudata.so.42) pour la conversion HTMLToPDF basée sur Webkit et que les bibliothèques 64 bits (libicudata.so.42) sont disponibles pour la conversion HTMLToPDF basée sur PhantomJS.
+
+* Exécutez la commande suivante pour répertorier les bibliothèques manquantes pour phantomjs :
+
+   ```
+   ldd phantomjs | grep not
+   ```
+
+* Assurez-vous que la variable d’environnement JAVA_HOME_32 pointe vers l’emplacement approprié.
+
+**Linux® et Solaris™ (itinéraire de conversion WebKit)**
 
 * Assurez-vous que les répertoires `/usr/lib/X11/fonts` et `/usr/share/fonts` existent. Si les répertoires n’existent pas, créez un lien symbolique à partir de `/usr/share/X11/fonts` to `/usr/lib/X11/fonts` et un autre lien symbolique de `/usr/share/fonts` to `/usr/share/X11/fonts`.
 
@@ -724,20 +734,6 @@ Si vous rencontrez des problèmes même après avoir corrigé tous les problème
 
 +++
 
-+++Linux® et Solaris(PhantomJS)HTMLtoPDF
-
-* Assurez-vous que la bibliothèque 32 bits est disponible (libicudata.so.42) pour la conversion HTMLToPDF basée sur Webkit et que les bibliothèques 64 bits (libicudata.so.42) sont disponibles pour la conversion HTMLToPDF basée sur PhantomJS.
-
-* Exécutez la commande suivante pour répertorier les bibliothèques manquantes pour phantomjs :
-
-```
-ldd phantomjs | grep not
-```
-
-* Assurez-vous que la variable d’environnement JAVA_HOME_32 pointe vers l’emplacement approprié.
-
-+++
-
 +++ Impossible d’ajouter un utilisateur PDF Generator (PDFG)
 
 * Assurez-vous que le redistribuable Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86 et Microsoft® Visual C++ 2013 x86 (32 bits) est installé sous Windows.
@@ -752,7 +748,7 @@ ldd phantomjs | grep not
 
 +++
 
-+++Échec des conversions multi-utilisateurs
++++Échecs de conversion de plusieurs utilisateurs
 
 * Vérifiez les journaux du serveur pour vérifier si la conversion échoue pour un utilisateur particulier.(l’Explorateur de processus peut vous aider à vérifier l’exécution du processus pour différents utilisateurs)
 
