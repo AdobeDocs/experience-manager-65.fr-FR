@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 9d8387934e2eab61191bd66c625a9fa52b686e37
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3471'
 ht-degree: 64%
 
 ---
@@ -126,7 +126,7 @@ Reportez-vous aux sections ci-dessous pour plus d’informations sur les différ
 >
 >Pour activer les entrepôts de données personnalisés, vous devez vérifier que `customBlobStore` est défini sur `true` dans le fichier de configuration de magasin de nœuds respectif ([magasin de nœuds de segment](/help/sites-deploying/data-store-config.md#segment-node-store) ou [magasin de nœuds de document](/help/sites-deploying/data-store-config.md#document-node-store)).
 
-### Entrepôt de données basé sur les fichiers {#file-data-store}
+### Banque de données Fichier {#file-data-store}
 
 Il s’agit de l’implémentation de [FileDataStore ](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html) présent dans Jackrabbit 2, qui offre une méthode pour stocker les données binaires comme tout autre fichier sur le système de fichiers. Elle utilise la variable `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
 
@@ -206,7 +206,7 @@ Si vous devez effectuer une mise à niveau vers une nouvelle version du connecte
    >
    >Les noms de fichier présentés ci-dessus sont utilisés à titre d’illustration uniquement.
 
-1. Téléchargez la dernière version du Feature Pack 1.8.x depuis le [référentiel Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Téléchargez la dernière version du Feature Pack 1.8.x à partir du [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
 1. Décompressez le contenu dans un dossier distinct, puis accédez à `jcr_root/libs/system/install/15`.
 1. Copiez les fichiers jar dans le dossier d’installation AEM **&lt;aem-install>**/crx-quickstart/install/15.
 1. Démarrez AEM et vérifiez les fonctionnalités du connecteur.
@@ -286,7 +286,7 @@ Le cache local sera vérifié pour l’enregistrement du fichier/blob demandé a
 
 **Téléchargement asynchrone**
 
-Le cache prend en charge les téléchargements asynchrones vers le DataStore. Les fichiers sont placés localement, dans le cache (sur le système de fichiers) et une tâche asynchrone commence à les télécharger. Le nombre de téléchargements asynchrones est limité par la taille du cache intermédiaire. La taille du cache intermédiaire est configurée à l’aide du paramètre `stagingSplitPercentage`. Ce paramètre définit le pourcentage de taille de cache à utiliser pour le cache intermédiaire. En outre, le pourcentage de cache disponible pour les téléchargements est calculé comme suit : **(100 - `stagingSplitPercentage`) *`cacheSize`**.
+Le cache prend en charge les téléchargements asynchrones vers le DataStore. Les fichiers sont placés localement, dans le cache (sur le système de fichiers) et une tâche asynchrone commence à les télécharger. Le nombre de téléchargements asynchrones est limité par la taille du cache intermédiaire. La taille du cache intermédiaire est configurée à l’aide du paramètre `stagingSplitPercentage`. Ce paramètre définit le pourcentage de taille de cache à utiliser pour le cache intermédiaire. En outre, le pourcentage de cache disponible pour les téléchargements est calculé comme suit : **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 Les téléchargements asynchrones sont multithreads et le nombre de threads est configuré à l’aide de la variable `uploadThreads` .
 
@@ -421,7 +421,7 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 * secretKey=&quot;&quot; : clé d’accès au stockage. Assurez-vous que le caractère &#39;=&#39; est placé dans une séquence d’échappement telle que &#39;\=&#39;.
 * container=&quot;&quot; : nom du conteneur de stockage blob Microsoft Azure. Le conteneur est le regroupement d’un ensemble de blobs. Pour plus de détails, consultez[ la documentation officielle](https://msdn.microsoft.com/fr-fr/library/dd135715.aspx ). 
 * maxConnections=&quot;&quot; : nombre de demandes simultanées par opération. La valeur par défaut est 1.
-* maxErrorRetry=&quot;&quot;: Nombre de tentatives par requête. La valeur par défaut est 3. 
+* maxErrorRetry=&quot;&quot;: Nombre de tentatives par requête. La valeur par défaut est 3.
 * socketTimeout=&quot;&quot;: Délai d’expiration, en millisecondes, utilisé pour la requête. la valeur par défaut est de 5 minutes.
 
 En plus des paramètres ci-dessus, les paramètres suivants peuvent également être configurés :
@@ -431,8 +431,8 @@ En plus des paramètres ci-dessus, les paramètres suivants peuvent également �
 * maxCachedBinarySize : Les fichiers binaires dont la taille est inférieure ou égale à cette taille seront stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est 1 7408 (17 Ko).
 * cacheSize : Taille du cache. La valeur est spécifiée en octets. La valeur par défaut est de 64 Go.
 * secret : À utiliser uniquement si vous utilisez la réplication sans fichier binaire pour la configuration de la banque de données partagée.
-* stagingSplitPercentage: Pourcentage de la taille du cache configuré pour être utilisé pour l’évaluation des téléchargements asynchrones. La valeur par défaut est 10. 
-* uploadThreads : Nombre de threads de chargement utilisés pour les chargements asynchrones. La valeur par défaut est 10. 
+* stagingSplitPercentage: Pourcentage de la taille du cache configuré pour être utilisé pour l’évaluation des téléchargements asynchrones. La valeur par défaut est 10.
+* uploadThreads : Nombre de threads de chargement utilisés pour les chargements asynchrones. La valeur par défaut est 10.
 * stagingPurgeInterval : Intervalle en secondes pour la purge des chargements terminés du cache intermédiaire. La valeur par défaut est de 300 secondes (5 minutes).
 * stagingRetryInterval : Intervalle de reprise en secondes pour les chargements ayant échoué. La valeur par défaut est de 600 secondes (10 minutes).
 
