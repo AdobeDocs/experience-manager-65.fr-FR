@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
+source-git-commit: 4b3327ed46024662813bb538f8338c59e508e10e
 workflow-type: tm+mt
-source-wordcount: '5420'
-ht-degree: 48%
+source-wordcount: '5330'
+ht-degree: 49%
 
 ---
 
@@ -223,11 +223,6 @@ Définissez des variables d’environnement pour Java Development Kit 32 bits e
    <td><p><strong>JDK (64 bits)</strong></p> </td>
    <td><p>JAVA_HOME</p> </td>
    <td><p>C:\Program Files\Java\jdk1.8.0_74</p> </td>
-  </tr>
-  <tr>
-   <td><p><strong>JDK (32 bits)</strong></p> </td>
-   <td><p>JAVA_HOME_32</p> </td>
-   <td><p>C:\Program Files (x86)\Java\jdk1.8.0_74</p> </td>
   </tr>
   <tr>
    <td><p><strong>Adobe Acrobat</strong></p> </td>
@@ -596,7 +591,20 @@ Le service Assembler dépend des services Reader Extensions, Signatures, Forms e
 
 L’outil System Readiness vérifie si l’ordinateur est correctement configuré pour exécuter les conversions de PDF Generator. L’outil génère un rapport à l’emplacement spécifié. Pour exécuter l’outil :
 
-1. Créez un fichier de configuration pour l’outil System Readiness. Par exemple, srt_config.yaml. Le format du fichier est le suivant :
+1. Ouvrez l’invite de commande. Accédez au `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` dossier.
+
+1. Exécutez la commande suivante à partir de l’invite de commande :
+
+   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
+
+   La commande génère un rapport et crée également le fichier srt_config.yaml .
+
+   >[!NOTE]
+   >
+   > * Si l’outil System Readiness signale que le fichier pdfgen.api n’est pas disponible dans le dossier des modules externes d’Acrobat, copiez le fichier pdfgen.api à partir du `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` vers le répertoire `[Acrobat_root]\Acrobat\plug_ins` répertoire .
+   >
+   > * Vous pouvez utiliser le fichier srt_config.yaml pour configurer différents paramètres de . Le format du fichier est le suivant :
+
 
    ```
       # =================================================================
@@ -623,19 +631,13 @@ L’outil System Readiness vérifie si l’ordinateur est correctement configur�
       outputDir:
    ```
 
-1. Ouvrez l’invite de commande. Accédez au `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` dossier. Exécutez la commande suivante à partir de l’invite de commande :
-
-   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
-
-   >[!NOTE]
-   >
-   >Si l’outil System Readiness signale que le fichier pdfgen.api n’est pas disponible dans le dossier des modules externes d’Acrobat, copiez le fichier pdfgen.api à partir du `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` vers le répertoire `[Acrobat_root]\Acrobat\plug_ins` répertoire .
-
 1. Accédez à `[Path_of_reports_folder]`. Ouvrez le fichier SystemReadinessTool.html . Vérifiez le rapport et résolvez les problèmes mentionnés.
 
 ## Résolution des problèmes
 
 Si vous rencontrez des problèmes même après avoir corrigé tous les problèmes signalés par l’outil SRT, effectuez les vérifications suivantes :
+
+Avant d’effectuer les vérifications suivantes, assurez-vous que [Outil System Readiness](#SRT) ne signale aucune erreur.
 
 +++ Adobe Acrobat
 
@@ -644,9 +646,7 @@ Si vous rencontrez des problèmes même après avoir corrigé tous les problème
 * Assurez-vous que la variable [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) Le fichier batch a été exécuté avec les privilèges d’administrateur.
 * Assurez-vous qu’un utilisateur de PDF Generator est ajouté à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que la variable [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) La permission est ajoutée pour l’utilisateur de PDF Generator.
-* (Pour les installations basées sur le serveur d’applications) Assurez-vous que le serveur d’applications s’exécute en tant que service.
-* Assurez-vous que les utilisateurs disposent des autorisations de lecture et d’écriture sur le répertoire temporaire du système d’exploitation et du répertoire temporaire du PDF Generator. Par exemple, `<crx-quickstart-home>\temp` et `C:\Windows\Temp`
-* Assurez-vous que l’ajout COM d’Acrobat PDFMaker Office est activé pour les applications Microsoft Office. Si le module complémentaire n’est pas activé, exécutez la réparation Adobe Acrobat, puis exécutez la fonction [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) puis redémarrez le serveur AEM Forms.
+* Assurez-vous que l’ajout COM d’Acrobat PDFMaker Office est activé pour les applications Microsoft Office.
 
 +++
 
@@ -654,12 +654,9 @@ Si vous rencontrez des problèmes même après avoir corrigé tous les problème
 
 **Microsoft® Windows**
 
-* Assurez-vous que [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Open Office est installé et les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installé et les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur de PDF Generator est ajouté à l’interface utilisateur de configuration du PDF.
-* Assurez-vous que [Outil System Readiness](#SRT) ne signale aucune erreur.
 * Assurez-vous que l’utilisateur de PDF Generator est membre du groupe administrateurs et que la variable [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur.
-* Assurez-vous que la variable `\Windows\SysWOW64\config\systemprofile\Deskop` existe. Si le dossier n’existe pas, créez-le.
-* Accorder le contrôle total sur `\Windows\SysWOW64\config\systemprofile`, `<crx-quickstart-home>\temp`, et `\Windows\Temp` à l’utilisateur PDF Generator.
 * Assurez-vous que l’utilisateur est configuré dans l’interface utilisateur de PDF Generator et effectuez les actions suivantes :
    1. Connectez-vous à Microsoft® Windows avec l’utilisateur PDF Generator.
    1. Ouvrez les applications Microsoft® Office ou Open Office et annulez toutes les boîtes de dialogue.
@@ -673,7 +670,6 @@ Si vous rencontrez des problèmes même après avoir corrigé tous les problème
 
 * Assurez-vous que [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Une fois Open Office installé, les boîtes de dialogue d’ouverture sont annulées pour toutes les applications et les applications Office sont lancées avec succès.
 * Création d’une variable d’environnement `OpenOffice_PATH` et la définir pour qu’elle pointe vers l’installation OpenOffice est définie dans la variable [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) ou le profil dt (arborescence de l’appareil).
-* Utilisez Java™ 32 bits pour démarrer AEM Forms Server.
 * En cas de problèmes lors de l’installation d’OpenOffice, assurez-vous que [Bibliothèques 32 bits](#extrarequirements) La configuration requise pour l’installation d’OpenOffice est disponible.
 
 +++
@@ -709,7 +705,7 @@ Problèmes de conversion +++ HTML vers PDF
 * Assurez-vous que les dernières versions des bibliothèques libcrypto, libcrypto et libssl 32 bits sont installées sur le système. Créer également des liens symboliques `/usr/lib/libcurl.so` (ou libcurl.a pour AIX®), `/usr/lib/libcrypto.so` (ou libcrypto.a pour AIX®) et `/usr/lib/libssl.so` (ou libssl.a pour AIX®) pointant vers les dernières versions (32 bits) des bibliothèques respectives.
 
 * Effectuez les étapes suivantes pour le fournisseur de socket SSL IBM® :
-   1. Copiez le fichier java.security de `<WAS_Installed_JAVA>\jre\lib\security` à n’importe quel emplacement de votre serveur AEM Forms. L’emplacement par défaut est Default Location = `<WAS_Installed>\Appserver\java_1.7_64\jre\lib\security`.
+   1. Copiez le fichier java.security de `<WAS_Installed_JAVA>\jre\lib\security` à n’importe quel emplacement de votre serveur AEM Forms. L’emplacement par défaut est Default Location = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
    1. Modifiez le fichier java.security à l’emplacement copié et modifiez les usines de socket SSL par défaut avec les usines JSSE2 (utilisez les usines JSSE2 au lieu de WebSphere®).
 
@@ -737,7 +733,7 @@ Problèmes de conversion +++ HTML vers PDF
 
 +++ Impossible d’ajouter un utilisateur PDF Generator (PDFG)
 
-* Assurez-vous que le redistribuable Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86 et Microsoft® Visual C++ 2013 x86 (32 bits) est installé sous Windows.
+* Assurez-vous que Microsoft® Visual C++ 2012 x86 et Microsoft® Visual C++ 2013 x86 (32 bits) redistribuables sont installés sous Windows.
 
 +++
 
