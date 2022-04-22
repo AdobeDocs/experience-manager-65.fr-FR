@@ -1,18 +1,18 @@
 ---
 title: Configuration de l’action d’envoi
-seo-title: Configuration de l’action d’envoi
+seo-title: Configuring the Submit action
 description: Forms vous permet de configurer une action d’envoi afin de définir le mode de traitement d’un formulaire adaptatif après envoi. Vous pouvez utiliser les actions d’envoi intégrées ou créer les vôtres de toutes pièces.
 uuid: 4368d648-88ea-4f84-a051-46296a1a084e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 73%
+source-wordcount: '1870'
+ht-degree: 72%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 73%
 
 ## Présentation des actions d’envoi {#introduction-to-submit-actions}
 
-Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez configurer l’action d’envoi sur le formulaire adaptatif. Les formulaires adaptatifs fournissent quelques actions d’envoi prêtes à l’emploi. Vous pouvez copier et étendre les actions d’envoi par défaut pour créer votre propre action d’envoi. Cependant, en fonction des exigences, vous pouvez rédiger et enregistrer votre propre action d’envoi afin de traiter les données du formulaire envoyé. L’action d’envoi peut utiliser [l’envoi synchrone ou asynchrone](../../forms/using/asynchronous-submissions-adaptive-forms.md).
+Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Vous pouvez configurer l’action d’envoi sur le formulaire adaptatif. Les formulaires adaptatifs fournissent quelques actions d’envoi prêtes à l’emploi. Vous pouvez copier et étendre les actions d’envoi par défaut pour créer votre propre action d’envoi. Cependant, en fonction des exigences, vous pouvez rédiger et enregistrer votre propre action d’envoi afin de traiter les données du formulaire envoyé. L’action d’envoi peut utiliser [envoi synchrone ou asynchrone](../../forms/using/asynchronous-submissions-adaptive-forms.md).
 
 Vous pouvez configurer une action d’envoi dans la section **Envoi** des propriétés du conteneur de formulaire adaptatif, dans la zone latérale.
 
@@ -44,12 +44,12 @@ Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs so
 
 >[!NOTE]
 >
->Assurez-vous que [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
+>Assurez-vous que la variable [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
 >pas. Le répertoire est nécessaire pour stocker temporairement des pièces jointes. Si le fichier n’existe pas, créez-le.
 
 >[!CAUTION]
 >
->Si vous [préremplissez](../../forms/using/prepopulate-adaptive-form-fields.md) un modèle de formulaire, un modèle de données de formulaire ou un formulaire adaptatif basé sur un schéma avec une plainte de données XML ou JSON à un schéma (schéma XML, schéma JSON, modèle de formulaire ou modèle de données de formulaire) qui est que les données ne contiennent pas de balises &lt;afData>, &lt;afBoundData> et &lt;/afUnboundData>, alors les données de données de champs non liés sont des champs de formulaire adaptatif sans [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) propriété du formulaire adaptatif est perdu.
+>Si vous [prefill](../../forms/using/prepopulate-adaptive-form-fields.md) un modèle de formulaire, un modèle de données de formulaire ou un formulaire adaptatif basé sur un schéma avec une plainte de données XML ou JSON à un schéma (schéma XML, schéma JSON, modèle de formulaire ou modèle de données de formulaire) qui est que les données ne contiennent pas &lt;afdata>, &lt;afbounddata>, et &lt;/afunbounddata> balises, puis les données des champs non liés (les champs non liés sont des champs de formulaire adaptatif sans [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) ) du formulaire adaptatif est perdu.
 
 Vous pouvez créer une action d’envoi personnalisée pour les formulaires adaptatifs afin de répondre à votre cas d’utilisation. Pour plus d’informations, voir [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](../../forms/using/custom-submit-action-form.md).
 
@@ -59,7 +59,7 @@ L’option d’envoi **Envoyer vers le point de fin REST** transmet les données
 
 `{fieldName}={request parameter name}`
 
-Comme illustré ci-dessous, `param1` et `param2` sont transmis en tant que paramètres avec des valeurs copiées à partir des champs **textbox** et **zone numérique** pour l’action suivante.
+Comme illustré ci-dessous, `param1` et `param2` sont transmis en tant que paramètres avec des valeurs copiées à partir de la fonction **textbox** et **zone numérique** des champs pour l’action suivante.
 
 Vous pouvez également **Activer la requête POST** et fournir une URL pour la publication de la requête. Pour envoyer des données au serveur de Experience Manager hébergeant le formulaire, utilisez un chemin relatif correspondant au chemin racine du serveur de Experience Manager. Par exemple, /content/forms/af/SampleForm.html. Pour envoyer des données vers un autre serveur, utilisez un chemin d’accès absolu.
 
@@ -95,7 +95,7 @@ Dans cet exemple, `data` contient les données XML et `att` les données des pi�
 
 ## Envoyer un e-mail {#send-email}
 
-L’action d’envoi **Envoyer un courrier électronique** envoie un courrier électronique à un ou plusieurs destinataires lors de l’envoi réussi du formulaire. Le message généré peut contenir des données de formulaire dans un format prédéfini.
+Le **Envoyer un courrier électronique** l’action d’envoi envoie un courrier électronique à un ou plusieurs destinataires lors de l’envoi réussi du formulaire. Le message généré peut contenir des données de formulaire dans un format prédéfini.
 
 >[!NOTE]
 Tous les champs de formulaire doivent avoir des noms d’élément différents, même s’ils sont définis sur des panneaux différents, afin d’inclure les données de formulaire dans un message électronique.
@@ -109,13 +109,13 @@ Cette action d’envoi est disponible pour les formulaires adaptatifs XFA et les
 
 ## Appeler un processus de formulaires {#invoke-a-forms-workflow}
 
-L’option d’envoi **Envoyer à Forms Workflow** envoie un fichier XML de données et des pièces jointes (le cas échéant) à un LiveCycle d’Adobe ou à un processus AEM Forms on JEE existant.
+Le **Envoyer au Forms Workflow** l’option d’envoi envoie un fichier XML de données et des pièces jointes (le cas échéant) à un LiveCycle d’Adobe ou à un processus AEM Forms on JEE existant.
 
-Pour plus d’informations sur la configuration de l’action d’envoi Envoyer vers le Forms Workflow, voir [Envoi et traitement de vos données de formulaire à l’aide de processus de formulaires](../../forms/using/submit-form-data-livecycle-process.md).
+Pour plus d’informations sur la configuration de l’action d’envoi Envoyer vers le Forms Workflow, voir [Envoi et traitement de vos données de formulaire à l’aide des processus de formulaires](../../forms/using/submit-form-data-livecycle-process.md).
 
 ## Envoyer à l’aide du modèle de données de formulaire {#submit-using-form-data-model}
 
-L’action d’envoi **Envoyer à l’aide du modèle de données de formulaire** écrit les données de formulaire adaptatif envoyées pour l’objet de modèle de données spécifié dans un modèle de données de formulaire dans sa source de données. Lors de la configuration de l’action d’envoi, vous pouvez sélectionner un objet de modèle de données dont vous souhaitez écrire les données envoyées dans sa source de données.
+Le **Envoyer à l’aide du modèle de données de formulaire** action d’envoi écrit les données de formulaire adaptatif envoyées pour l’objet de modèle de données spécifié dans un modèle de données de formulaire dans sa source de données. Lors de la configuration de l’action d’envoi, vous pouvez sélectionner un objet de modèle de données dont vous souhaitez écrire les données envoyées dans sa source de données.
 
 En outre, vous pouvez envoyer une pièce jointe de formulaire à l’aide d’un modèle de données de formulaire et d’un document d’enregistrement vers la source de données.
 
@@ -123,15 +123,26 @@ Pour plus d’informations sur le modèle de données du formulaire, voir [Inté
 
 ## Action d’envoi du Forms Portal {#forms-portal-submit-action}
 
-L’option **Action d’envoi du portail Forms** rend les données de formulaire disponibles via un portail AEM Forms.
+Le **Action d’envoi du portail Forms** rend les données de formulaire disponibles via un portail AEM Forms.
 
 Pour plus d’informations sur le portail de formulaires et l’action d’envoi, voir [Composant Drafts &amp; Submissions](../../forms/using/draft-submission-component.md).
 
 ## Appeler un processus AEM {#invoke-an-aem-workflow}
 
-L’action d’envoi **Appeler un processus AEM** associe un formulaire adaptatif à un processus AEM. Lorsqu’un formulaire est envoyé, le processus associé commence automatiquement sur le nœud de traitement. De plus, il place le fichier de données, les pièces jointes et le document d’enregistrement, le cas échéant, à l’emplacement de charge utile du processus.
+L’action d’envoi **[!UICONTROL Appeler un processus AEM]** associe un formulaire adaptatif à un [processus AEM](/help/sites-developing/workflows-models.md). Lorsqu’un formulaire est envoyé, le processus associé commence automatiquement sur l’instance de création. Vous pouvez enregistrer le fichier de données, les pièces jointes et le document d’enregistrement dans le dossier relatif ou sous la charge utile du workflow ou dans une variable. Si le workflow est marqué pour le stockage des données externes, l’option de variable est disponible et non l’option de payload. Vous pouvez choisir dans la liste des variables disponibles pour le modèle de workflow. Si le processus est marqué pour le stockage des données externes à une étape ultérieure et non au moment de la création du processus, assurez-vous que les configurations de variable requises sont en place.
 
-Avant d’utiliser l’action d’envoi **Appeler un processus AEM** , [configurez les paramètres de stockage global de documents du Experience Manager](../../forms/using/configuring-the-processing-server-url-.md). Pour plus d’informations sur la création d’un processus AEM, voir [Processus basés sur l’utilisation de Forms sur OSGi](../../forms/using/aem-forms-workflow.md).
+Avant d’utiliser la variable **Appeler un workflow d’AEM** action d’envoi, [configuration des paramètres du répertoire de stockage global de documents du Experience Manager](../../forms/using/configuring-the-processing-server-url-.md). Pour plus d’informations sur la création d’un processus AEM, voir [Processus basés sur l’utilisation de Forms sur OSGi](../../forms/using/aem-forms-workflow.md).
+
+L’action Envoyer place les éléments suivants à l’emplacement de la charge utile du workflow. Notez toutefois que seule l’option Variable s’affiche si le modèle de workflow est marqué pour le stockage des données externes et non pour l’option de payload.
+
+* **Fichier de données** : Il contient les données envoyées au formulaire adaptatif. Vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès au fichier de données]** pour spécifier le nom du fichier et le chemin d’accès du fichier par rapport à la charge utile. Par exemple, le chemin d’accès `/addresschange/data.xml` crée un dossier nommé `addresschange` et le place par rapport à la charge utile. Vous pouvez également spécifier uniquement `data.xml` pour envoyer uniquement les données envoyées sans créer de hiérarchie de dossiers. Utilisez l’option de variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
+
+>[!NOTE]
+Des variables peuvent être utilisées que le modèle de workflow soit marqué pour le stockage des données externes ou non.
+
+* **Pièces jointes** : vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès aux pièces jointes]** pour spécifier le nom de dossier dans lequel stocker les pièces jointes chargées dans le formulaire adaptatif. Le dossier est créé par rapport à la payload. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
+
+* **Document d’enregistrement** : il contient le document d’enregistrement généré pour le formulaire adaptatif. Vous pouvez utiliser l’option **[!UICONTROL Chemin du document d’enregistrement]** pour spécifier le nom du fichier de document d’enregistrement et le chemin d’accès du fichier par rapport à la charge utile. Par exemple, le chemin d’accès `/addresschange/DoR.pdf` crée un dossier nommé `addresschange` relatif à la charge utile et place `DoR.pdf` relatif à la charge utile. Vous pouvez également spécifier uniquement `DoR.pdf` pour n’enregistrer que le document d’enregistrement sans créer de hiérarchie de dossiers. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
 
 ## Revalidation côté serveur dans un formulaire adaptatif {#server-side-revalidation-in-adaptive-form}
 
@@ -139,7 +150,7 @@ En règle générale, dans n’importe quel système de capture de données en l
 
 La fonction de revalidation côté serveur permet également d’exécuter les validations fournies par un auteur de formulaires adaptatifs lors de la conception d’un formulaire adaptatif sur le serveur. Elle empêche toute erreur lors des envois de données et toute violation des règles de fonctionnement représentées en termes de validations de formulaire.
 
-### Quels éléments valider sur le serveur ? {#what-to-validate-on-server-br}
+### Quels éléments valider sur le serveur ?  {#what-to-validate-on-server-br}
 
 Toutes les validations de champ prêtes à l’emploi d’un formulaire adaptatif qui sont réexécutées sur le serveur sont les suivantes :
 
@@ -147,26 +158,26 @@ Toutes les validations de champ prêtes à l’emploi d’un formulaire adaptati
 * Clause de validation d’image
 * Expression de validation
 
-### Activation de la validation côté serveur {#enabling-server-side-validation-br}
+### Activer la validation côté serveur {#enabling-server-side-validation-br}
 
 Utilisez **Revalider sur le serveur** sous le conteneur de formulaires adaptatifs dans la zone latérale pour activer ou désactiver la validation côté serveur pour le formulaire actif.
 
 ![Activation de la validation côté serveur](assets/revalidate-on-server.png)
 
-Activation de la validation côté serveur
+Activer la validation côté serveur
 
 Si l’utilisateur final contourne ces validations et envoie les formulaires, le serveur effectue de nouveau la validation. Si la validation échoue du côté du serveur, la transaction d’envoi est alors désactivée. L’utilisateur final voit de nouveau s’afficher le formulaire d’origine. Pour l’utilisateur, les données capturées et les données envoyées s’affichent en tant qu’erreurs.
 
 >[!NOTE]
 La validation côté serveur permet de valider le modèle de formulaire. Il est recommandé de créer une bibliothèque client séparée pour les validations et de ne pas la mélanger à d’autres éléments. Par exemple, ne placez pas le style HTML et la manipulation DOM HTML dans la même bibliothèque client.
 
-### Prise en charge des fonctions personnalisées dans les expressions de validation {#supporting-custom-functions-in-validation-expressions-br}
+### Prendre en charge des fonctions personnalisées dans les expressions de validation {#supporting-custom-functions-in-validation-expressions-br}
 
 Parfois, en cas de règles de validation complexes, le script de validation exact réside dans des fonctions personnalisées que l’auteur doit appeler à partir de l’expression du champ de validation. Pour rendre cette bibliothèque de fonctions personnalisées visible et disponible lors des validations côté serveur, l’auteur de formulaires peut configurer le nom de la bibliothèque cliente AEM sous l’onglet **Réglages de base** des propriétés de conteneur de formulaires adaptatifs comme illustré ci-dessous.
 
 ![Prise en charge des fonctions personnalisées dans les expressions de validation](assets/clientlib-cat.png)
 
-Prise en charge des fonctions personnalisées dans les expressions de validation
+Prendre en charge des fonctions personnalisées dans les expressions de validation
 
 L’auteur peut configurer la bibliothèque JavaScript personnalisée par formulaire adaptatif. Dans la bibliothèque, conservez uniquement les fonctions réutilisables ayant une dépendance sur les bibliothèques tierces jquery et underscore.js.
 

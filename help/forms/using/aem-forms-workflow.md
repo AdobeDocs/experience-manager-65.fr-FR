@@ -1,22 +1,22 @@
 ---
-title: Processus basé sur l’utilisation de Forms sur OSGi
-seo-title: Créez rapidement des processus basés sur des formulaires adaptatifs, automatisez les opérations de services de document, et utilisez Adobe Sign avec les processus AEM
+title: Workflow basé sur l’utilisation de Forms sur OSGi
+seo-title: Rapidly build adaptive forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Utiliser un processus AEM Forms pour automatiser et créer rapidement des révisions et des approbations pour les services de document de début
-seo-description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement la révision et les approbations, pour démarrer Documents Services (par exemple, pour convertir un document PDF dans un autre format), pour intégrer le processus de signature Adobe Sign et bien plus encore.
+seo-description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
 workflow-type: tm+mt
-source-wordcount: '3065'
-ht-degree: 96%
+source-wordcount: '3681'
+ht-degree: 81%
 
 ---
 
-# Processus basé sur l’utilisation de Forms sur OSGi{#forms-centric-workflow-on-osgi}
+# Workflow basé sur l’utilisation de Forms sur OSGi{#forms-centric-workflow-on-osgi}
 
 ![](do-not-localize/header.png)
 
@@ -24,17 +24,17 @@ Les entreprises collectent les données à partir de centaines, voire de millier
 
 Avec les processus de révision et d’approbation pour les publics internes et externes, les grandes entreprises sont soumises à des tâches répétitives : par exemple, la conversion d’un document PDF dans un autre format. Ces tâches prennent beaucoup de temps et mobilisent un grand nombre de ressources lorsqu’elles sont effectuées manuellement. Les entreprises ont également des obligations légales consistant à signer numériquement un document et à archiver des données de formulaire pour une utilisation ultérieure dans des formats prédéfinis..
 
-## Présentation du processus basé sur l’utilisation de Forms sur OSGi {#introduction-to-forms-centric-workflow-on-osgi}
+## Présentation du workflow basé sur l’utilisation de Forms sur OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
 Vous pouvez utiliser des processus AEM pour créer rapidement des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, le démarrage de Documents Services, l’intégration du processus de signature Adobe Sign et des opérations similaires : par exemple, le traitement de l’application de cartes de crédit, les processus d’approbation de congés des employés et l’enregistrement d’un formulaire en tant que document PDF. De plus, ces processus peuvent être utilisés dans une entreprise ou sur le pare-feu réseau.
 
 Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Le développement et la gestion des processus utilisent les fonctionnalités de boîte de messagerie AEM et AEM Workflow habituelles. Les processus forment la base de l’automatisation des processus réels d’entreprise, qui s’étendent sur plusieurs systèmes logiciels, réseaux, services et même organisations.
 
-Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. Voir une [comparaison](capabilities-osgi-jee-workflows.md) des processus d’AEM centrés sur Forms sur OSGi et de la gestion des processus sur JEE. De plus, pour la topologie de déploiement, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. Voir [comparaison](capabilities-osgi-jee-workflows.md) des processus Forms AEM sur OSGi et Process Management sur JEE. De plus, pour la topologie de déploiement, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de messagerie AEM](/help/sites-authoring/inbox.md) et fournit des composants supplémentaires (étapes) pour que l’éditeur du processus AEM ajoute la prise en charge des processus AEM basés sur l’utilisation de Forms. La boîte de messagerie AEM étendue dispose de fonctionnalités similaires à celles de l’[espace de travail AEM Forms](introduction-html-workspace.md). Avec la gestion des processus basés sur les utilisateurs (approbation, révision, etc.), vous pouvez utiliser des processus AEM pour automatiser les opérations liées à [Document Services](/help/sites-developing/workflows-step-ref.md) (par exemple, la génération de PDF) et à la signature de documents (Adobe Sign) par voie électronique.
+Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de messagerie AEM](/help/sites-authoring/inbox.md) et fournit des composants supplémentaires (étapes) pour que l’éditeur du processus AEM ajoute la prise en charge des processus AEM basés sur l’utilisation d’AEM Forms. La boîte de messagerie AEM étendue dispose de fonctionnalités similaires à celles de l’[espace de travail AEM Forms](introduction-html-workspace.md). Avec la gestion des processus basés sur les utilisateurs (approbation, révision, etc.), vous pouvez utiliser des processus AEM pour automatiser les opérations liées à [Document Services](/help/sites-developing/workflows-step-ref.md) (par exemple, la génération de PDF) et à la signature de documents (Adobe Sign) par voie électronique.
 
-Toutes les étapes des processus AEM Forms prennent en charge l’utilisation de variables. Les variables permettent aux étapes de processus de contenir et de transmettre des métadonnées entre les étapes au moment de l’exécution. Vous pouvez créer différents types de variables pour stocker différents types de données. Vous pouvez également créer des collections de variables pour stocker plusieurs instances de données associées et du même type. En règle générale, vous utilisez une variable ou une collection de variables lorsque vous devez prendre une décision en fonction de la valeur qu’elle contient ou pour stocker des informations dont vous aurez besoin ultérieurement dans un processus. Pour plus d’informations sur l’utilisation de variables dans ces composants (étapes) de processus basés sur Forms, voir [Processus basé sur l&#39;utilisation de Forms sur OSGi - Guide de référence des étapes](../../forms/using/aem-forms-workflow-step-reference.md). Pour plus d&#39;informations sur la création et la gestion des variables, voir [Variables dans les processus AEM](../../forms/using/variable-in-aem-workflows.md).
+Toutes les étapes des processus AEM Forms prennent en charge l’utilisation de variables. Les variables permettent aux étapes de processus de contenir et de transmettre des métadonnées entre les étapes au moment de l’exécution. Vous pouvez créer différents types de variables pour stocker différents types de données. Vous pouvez également créer des collections de variables pour stocker plusieurs instances de données associées et du même type. En règle générale, vous utilisez une variable ou une collection de variables lorsque vous devez prendre une décision en fonction de la valeur qu’elle contient ou pour stocker des informations dont vous aurez besoin ultérieurement dans un processus. Pour plus d’informations sur l’utilisation de variables dans ces composants (étapes) de processus basés sur Forms, voir [Processus basé sur l’utilisation de Forms sur OSGi - Guide de référence des étapes](../../forms/using/aem-forms-workflow-step-reference.md). Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans les processus AEM](../../forms/using/variable-in-aem-workflows.md).
 
 Le diagramme suivant illustre le processus complet de création, d’exécution et contrôle d’un processus basé sur l’utilisation de Forms sur OSGi.
 
@@ -47,9 +47,9 @@ Le diagramme suivant illustre le processus complet de création, d’exécution 
 * Vous pouvez configurer l’étape de tâche affectée des processus AEM pour envoyer des notifications électroniques aux utilisateurs ou aux personnes désignées. Ainsi, [autorisez les notifications électroniques](#configure-email-service).
 * Un processus peut également utiliser Adobe Sign pour les signatures numériques. Si vous envisagez d’utiliser Adobe Sign dans un processus, [ configure Adobe Sign pour AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) avant de l’utiliser dans un processus.
 
-## Créer un modèle de processus {#create-a-workflow-model}
+## Créer un modèle de workflow {#create-a-workflow-model}
 
-Un modèle de processus se compose de la logique et du flux d’un processus d’entreprise. Il se compose d’une série d’étapes. Ces étapes sont des composants d’AEM. Vous pouvez étendre les étapes de processus avec des paramètres et des scripts pour proposer davantage de fonctionnalités et de contrôle, selon les besoins. AEM Forms fournit quelques étapes supplémentaires par rapport aux étapes AEM prêtes à l’emploi. Pour obtenir la liste détaillée des étapes AEM et AEM Forms, consultez [Référence sur les étapes de processus AEM](/help/sites-developing/workflows-step-ref.md) et [Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi](../../forms/using/aem-forms-workflow.md).
+Un modèle de processus se compose de la logique et du flux d’un processus d’entreprise. Il se compose d’une série d’étapes. Ces étapes sont des composants d’AEM. Vous pouvez étendre les étapes de workflow avec des paramètres et des scripts pour proposer davantage de fonctionnalités et de contrôle, selon les besoins. AEM Forms fournit quelques étapes supplémentaires par rapport aux étapes AEM prêtes à l’emploi. Pour obtenir la liste détaillée des étapes AEM et AEM Forms, consultez [Référence sur les étapes de processus AEM](/help/sites-developing/workflows-step-ref.md) et [Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi](../../forms/using/aem-forms-workflow.md).
 
 AEM fournit une interface utilisateur intuitive pour créer un modèle de processus en suivant les étapes de processus fournies. Pour des instructions détaillées pour créer un modèle de processus, voir [Création de modèles de processus](/help/sites-developing/workflows-models.md). L’exemple suivant fournit des instructions détaillées pour créer un modèle de processus pour un processus d’approbation et de révision :
 
@@ -93,15 +93,15 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    ![workflow-editor](assets/workflow-editor.png)
 
-   Pour l’exemple de demande de prêt immobilier, configurez l’étape Affecter une tâche pour utiliser un formulaire adaptatif en lecture seule et afficher le document PDF une fois la tâche terminée. Par ailleurs, sélectionnez le groupe d’utilisateurs autorisé à approuver la demande de prêt. Dans l’onglet **Actions**, désactivez l’option **Envoyer**. Créez une variable **actionTaken** de type de données de chaîne et spécifiez la variable en tant que **Variable d&#39;itinéraire**. par exemple, actionTaken. Ajoutez également les itinéraires Approuver et Refuser. Les itinéraires sont affichés sous forme d’actions distinctes (boutons) dans la boîte de réception AEM. Le processus sélectionne une branche en fonction de l’action (bouton) sélectionnée par l’utilisateur.
+   Pour l’exemple de demande de prêt immobilier, configurez l’étape Affecter une tâche pour utiliser un formulaire adaptatif en lecture seule et afficher le document PDF une fois la tâche terminée. Par ailleurs, sélectionnez le groupe d’utilisateurs autorisé à approuver la demande de prêt. Dans l’onglet **Actions**, désactivez l’option **Envoyer**. Créez une variable **actionTaken** de type de données de chaîne et spécifiez la variable en tant que **Variable d’itinéraire**. par exemple, actionTaken. Ajoutez également les itinéraires Approuver et Refuser. Les itinéraires sont affichés sous forme d’actions distinctes (boutons) dans la boîte de réception AEM. Le processus sélectionne une branche en fonction de l’action (bouton) sélectionnée par l’utilisateur.
 
    Vous pouvez importer l’exemple de module, disponible pour téléchargement au début de la section, pour l’ensemble complet des valeurs de tous les champs de l’étape Affecter une tâche configurée, par exemple la demande de prêt immobilier.
 
-1. Faites glisser et déposez le composant Division OU de l’explorateur d’étapes vers le modèle de processus. La Division OU divise le processus et une seule branche est active par la suite. Cette étape permet d’ajouter des chemins de traitement conditionnels dans le processus. Vous ajoutez des étapes de processus à chaque branche selon vos besoins.
+1. Faites glisser et déposez le composant Division OU de l’explorateur d’étapes vers le modèle de processus. L’étape de division OU divise le processus et une seule branche est active par la suite. Cette étape permet d’ajouter des chemins de traitement conditionnels dans le processus. Vous ajoutez des étapes de processus à chaque branche selon vos besoins.
 
-   Vous pouvez définir l&#39;expression de routage d&#39;une branche à l&#39;aide d&#39;une définition de règle, d&#39;un script ECMA ou d&#39;un script externe.
+   Vous pouvez définir l’expression de routage d’une branche à l’aide d’une définition de règle, d’un script ECMA ou d’un script externe.
 
-   Utilisez l&#39;éditeur d&#39;expressions pour créer des expressions de routage pour les branches 1 et 2. Ces expressions de routage permettent de sélectionner une branche en fonction de l’action de l’utilisateur dans la boîte de réception AEM.
+   Utilisez l’éditeur d’expressions pour créer des expressions de routage pour les branches 1 et 2. Ces expressions de routage permettent de sélectionner une branche en fonction de l’action de l’utilisateur dans la boîte de réception AEM.
 
    **Expression de routage pour la branche 1**
 
@@ -127,7 +127,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
-## Créer une demande de processus basée sur l’utilisation de Forms {#create-a-forms-centric-workflow-application}
+## Création dʼune demande de workflow basée sur l’utilisation de Forms {#create-a-forms-centric-workflow-application}
 
 La demande est le formulaire adaptatif associé au processus. Lorsqu’une demande est envoyée via la boîte de réception, elle lance le processus associé. Pour rendre un processus Forms disponible en tant que demande dans la boîte de réception AEM et l’application AEM Forms, procédez comme suit pour créer une demande de processus :
 
@@ -135,7 +135,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 >
 >Vous devez être membre du groupe administrateur-fd pour être en mesure de créer et de gérer les demandes de processus.
 
-1. Sur votre instance de création AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Formulaires]** > **[!UICONTROL Gérer la demande de processus]** et appuyez sur **[!UICONTROL Créer]**.
+1. Sur votre instance de création AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Formulaires]** > **[!UICONTROL Gérer la demande de processus]** et appuyez sur **[!UICONTROL Créer]**.
 1. Dans la fenêtre Créer la demande de processus, saisissez des données dans les champs suivants et appuyez sur **Créer**. Une nouvelle demande est créée et est répertoriée dans l’écran Demandes de processus.
 
 <table>
@@ -158,7 +158,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
   </tr>
   <tr>
    <td>Formulaire adaptatif</td>
-   <td><p>Spécifiez le chemin d’un formulaire adaptatif. Lorsqu’un utilisateur commence une demande, le formulaire adaptatif spécifié est affiché.</p> <p><strong>Remarque :</strong> les demandes de processus ne prennent pas en charge les formulaires et documents PDF de plus d’une page ou qui nécessitent un défilement sur l’iPad d’Apple. Lorsqu’une demande est ouverte sur un iPad d’Apple et que la longueur du formulaire adaptatif ou du document PDF dépasse une page, les champs de formulaire et le contenu de la deuxième page sont perdus.</p> </td>
+   <td><p>Spécifiez le chemin d’un formulaire adaptatif. Lorsqu’un utilisateur commence une demande, le formulaire adaptatif spécifié est affiché.</p> <p><strong>Remarque :</strong> Les demandes de processus ne prennent pas en charge les formulaires et documents PDF de plus d’une page ou qui nécessitent un défilement sur l’iPad d’Apple. Lorsqu’une demande est ouverte sur un iPad d’Apple et que la longueur du formulaire adaptatif ou du document PDF dépasse une page, les champs de formulaire et le contenu de la deuxième page sont perdus.</p> </td>
   </tr>
   <tr>
    <td>Groupes d’accès</td>
@@ -191,21 +191,21 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 
 Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de Forms en :
 
-* [Envoi d’une demande depuis la boîte de réception AEM](#inbox)
+* [Envoyer une demande depuis la boîte de réception AEM](#inbox)
 * [Envoyant une demande depuis l’application AEM Forms](#afa)
 
 * [Envoi d’un formulaire adaptatif](#af)
 * [Utilisant le dossier de contrôle](#watched)
 
-* [Envoi d’une communication interactive ou d’une lettre](#letter)
+* [Envoyer une communication interactive ou une lettre](#letter)
 
-### Envoi d’une demande depuis la boîte de réception AEM {#inbox}
+### Envoyer une demande depuis la boîte de réception AEM {#inbox}
 
 La demande de processus que vous avez créée est disponible en tant qu’application dans la boîte de réception. Les utilisateurs qui sont membres du groupe d’utilisateurs de processus peuvent renseigner et envoyer la demande qui déclenche le processus associé. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour envoyer des demandes et gérer des tâches, voir [Gestion des applications et des tâches Forms dans la boîte de réception AEM](../../forms/using/manage-applications-inbox.md).
 
 ### Envoyant une demande depuis l’application AEM Forms {#afa}
 
-L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les demandes de processus et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, voir [Application AEM Forms](/help/forms/using/aem-forms-app.md) et articles connexes.
+L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les demandes de processus et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, voir [application AEM Forms](/help/forms/using/aem-forms-app.md) et les articles connexes.
 
 ### Envoi d’un formulaire adaptatif {#af}
 
@@ -217,7 +217,7 @@ Vous pouvez configurer la synchronisation, l’envoi et le déclenchement d’un
 
 Un administrateur (un membre du groupe administrateur-fd) peut configurer un dossier réseau pour exécuter un processus préconfiguré lorsqu’un utilisateur y place un fichier (tel qu’un fichier PDF). Une fois que le processus est terminé, vous pouvez enregistrer le fichier de sortie dans un dossier de sortie spécifié. Un tel fichier est appelé [Dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md). Effectuez la procédure suivante pour configurer un dossier de contrôle afin de lancer un processus :
 
-1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configurer le dossier de contrôle]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
+1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configuration du dossier de contrôle]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
 1. Appuyez sur **[!UICONTROL Nouveau]**. Une liste des champs s’affiche. Spécifiez une valeur pour les champs suivants afin de configurer un dossier de contrôle pour un processus :
 
 <table>
@@ -231,12 +231,12 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
    <td>Indiquez le nom du dossier de contrôle. Ce champ prend uniquement en charge les caractères alphanumériques.</td>
   </tr>
   <tr>
-   <td><span class="uicontrol">Chemin</code></td>
+   <td><span class="uicontrol">Chemin </code></td>
    <td>Spécifiez l’emplacement physique du dossier de contrôle. Dans un environnement organisé en grappes, utilisez un dossier réseau partagé accessible à partir du noeud de la grappe AEM.</td>
   </tr>
   <tr>
    <td><span class="uicontrol">Traiter les fichiers avec</code></td>
-   <td>Sélectionnez l'option <span class="uicontrol">Workflow </code>. </code></td>
+   <td>Sélectionnez la <span class="uicontrol">Workflow </code>. </code></td>
   </tr>
   <tr>
    <td><span class="uicontrol">Modèle de processus</code></td>
@@ -249,7 +249,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
  </tbody>
 </table>
 
-1. Appuyez sur **Avancé**. Spécifiez une valeur pour le champ suivant et appuyez sur **Créer**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
+1. Appuyez sur **Avancé**. Spécifiez une valeur pour le champ et les appuis suivants : **Créer**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
 
    | Champ | Description |
    |---|---|
@@ -257,11 +257,11 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
 
    L’onglet Avancé contient davantage de champs. La plupart de ces champs contiennent une valeur par défaut. Pour en savoir plus sur tous les champs, voir l’article [Création ou configuration d’un dossier de contrôle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
 
-### Envoi d’une communication interactive ou d’une lettre {#letter}
+### Envoyer une communication interactive ou une lettre {#letter}
 
 Vous pouvez associer et exécuter un processus Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans Correspondence Management, les workflows sont utilisés pour le post-traitement des communications interactives et des lettres. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](../../forms/using/submit-letter-topostprocess.md).
 
-## Autres configurations  {#additional-configurations}
+## Autres configurations {#additional-configurations}
 
 ### Configuration du service de messagerie {#configure-email-service}
 
@@ -273,4 +273,76 @@ Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un courrier éle
 
 ### Purge des instances de processus {#purge-workflow-instances}
 
-Réduire le nombre d’instances de processus améliore les performances du moteur de processus. Vous pouvez donc purger régulièrement les instances de processus terminées ou en cours d’exécution du référentiel. Pour plus d&#39;informations, consultez [Purge régulière des instances de processus](/help/sites-administering/workflows-administering.md#regular) purge des instances de processus.
+Réduire le nombre d’instances de processus améliore les performances du moteur de processus. Vous pouvez donc purger régulièrement les instances de processus terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de processus](/help/sites-administering/workflows-administering.md#regular) purge des instances de processus..
+
+## Paramétrer les données sensibles aux variables de workflow et les stocker dans des entrepôts de données externes {#externalize-wf-variables}
+
+Toutes les données envoyées des formulaires adaptatifs à [!DNL Experience Manager] les workflows peuvent avoir des PII (informations d’identification personnelles) ou SPD (données personnelles sensibles) des utilisateurs finaux de votre entreprise. Toutefois, il n’est pas obligatoire de stocker vos données dans [!DNL Adobe Experience Manager] [Référentiel JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). Vous pouvez externaliser le stockage des données de l’utilisateur final dans votre stockage de données géré (par exemple, le stockage Azure Blob) en paramétrant les informations dans [variables de workflow](/help/forms/using/variable-in-aem-workflows.md).
+
+Dans un [!DNL Adobe Experience Manager] Workflow Forms, les données sont traitées et transmises par une série d’étapes de workflow au moyen de variables de workflow. Ces variables sont des propriétés nommées ou des paires clé-valeur stockées dans le noeud de métadonnées des instances de workflow ; par exemple `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Ces variables de workflow peuvent être externalisées dans un référentiel distinct autre que JCR, puis traitées par [!DNL Adobe Experience Manager] workflows. [!DNL Adobe Experience Manager] fournit une API `[!UICONTROL UserMetaDataPersistenceProvider]` pour stocker les variables de workflow dans votre stockage externe géré. Pour en savoir plus sur l’utilisation de variables de workflow pour les banques de données détenues par le client dans [!DNL Adobe Experience Manager], voir [Administration des variables de workflow pour les banques de données externes](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe] fournit ce qui suit : [sample](https://github.com/adobe/workflow-variable-externalizer) pour stocker des variables d’un mappage de métadonnées de workflow au stockage Azure Blob, à l’aide de l’API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Sur les lignes similaires, vous pouvez utiliser l’exemple comme guide d’utilisation [UserMetaDataPersistenceProvider] API permettant d’externaliser les variables de workflow dans tout autre stockage de données externe à [!DNL Adobe Experience Manager] et gérez les mêmes.
+
+>[!NOTE]
+>
+>Lorsque vous stockez vos variables de workflow dans un stockage de données externe, reportez-vous aux pointeurs de la section [consignes relatives au stockage de données externe des workflows](#guidelines-workflows-external-data-storage).
+
+### Installation de l’exemple d’implémentation de l’API de workflow
+
+Pour stocker des variables de workflow dans votre stockage Azure Blob géré :
+1. Installez le [sample](https://github.com/adobe/workflow-variable-externalizer) API de workflow [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md) comme suit :
+
+   1. Exécutez dans le répertoire racine du projet le `mvn clean install` avec Maven 3.
+
+   1. Pour déployer le lot et le module de contenu à créer, exécutez `mvn clean install -PautoInstallPackage`.
+
+   1. Pour déployer uniquement le lot vers l’auteur, exécutez `mvn clean install -PautoInstallBundle`.
+
+1. Initialisez les propriétés suivantes dans le fichier de configuration OSGi de l’externaliseur dans le `ui.config` module de contenu :
+
+   ```JQL
+      accountKey=""
+      accountName=""
+      endpointSuffix=""
+      containerName=""
+      protocol=""
+   ```
+
+Voici les objectifs (et exemples) de ces propriétés :
+
+* **accountKey** est la clé secrète pour autoriser l’accès.
+
+* **accountName** est le compte Azure où les données doivent être stockées.
+
+* **endpointSuffix**, par exemple `core.windows.net`.
+
+* **containerName** est le conteneur dans le compte où les données doivent être stockées. L’exemple suppose que le conteneur existe.
+
+* **protocol**, par exemple `https` ou `http`.
+
+1. Configurez le modèle de workflow dans [!DNL Adobe Experience Manager]. Pour savoir comment configurer le modèle de workflow pour un stockage externe, voir [Configuration du modèle de workflow](#configure-aem-wf-model).
+
+### Configuration du modèle de processus dans [!DNL Adobe Experience Manager] pour le stockage de données externe {#configure-aem-wf-model}
+
+Pour configurer un modèle de workflow AEM pour un stockage de données externe :
+
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflows]** > **[!UICONTROL Modèles]**.
+
+1. Sélectionnez un nom de modèle, puis **[!UICONTROL Modifier]**.
+
+1. Cliquez sur l’icône Informations sur la page et sélectionnez **[!UICONTROL Ouvrir les propriétés]**.
+
+1. Sélectionnez **[!UICONTROL Externaliser le stockage des données de workflow]**.
+
+1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour enregistrer les propriétés.
+
+### Recommandations pour les workflows d’AEM pour le stockage de données externes {#guidelines-workflows-external-data-storage}
+
+Voici les instructions à suivre lorsque vous utilisez [!DNL Adobe Experience Manager] workflows et stockage des données dans des entrepôts de données externes (par exemple, serveur de stockage Microsoft Azure) :
+
+* Utilisez des variables pour stocker des données lors de la définition de fichiers de données d’entrée et de sortie et de pièces jointes dans les étapes du modèle de workflow. Ne sélectionnez pas les options **[!UICONTROL Relatif à la charge]** et **[!UICONTROL Disponible sur un chemin absolu]**. Le **[!UICONTROL Relatif à la charge utile]** et **[!UICONTROL Disponible à un chemin absolu]** ne s’affiche pas automatiquement une fois que vous [configurer une [!DNL Adobe Experience Manager] modèle de workflow pour le stockage de données externe](#configure-aem-wf-model).
+
+* Utilisez des variables pour stocker le fichier de données et les pièces jointes lors de l’envoi d’un formulaire adaptatif à un workflow AEM. Ne pas sélectionner **[!UICONTROL Relatif à la charge utile]** lors de l’envoi d’un formulaire adaptatif à un [!DNL Adobe Experience Manager] workflow. Le **[!UICONTROL Relatif à la charge utile]** ne s’affiche pas automatiquement lorsque vous [configurer une [!DNL Adobe Experience Manager] modèle de workflow pour le stockage de données externe](#configure-aem-wf-model).
+
+* N’utilisez pas de [!DNL Adobe Experience Manager] étape de workflow dans un modèle de workflow pour stocker des données dans [!UICONTROL CRX DE] référentiel.
+
+* Lorsque vous [configurer une [!DNL Adobe Experience Manager] modèle de workflow pour le stockage de données externe](#configure-aem-wf-model), ne créez pas de colonnes personnalisées pour [!DNL Adobe Experience Manager] [!UICONTROL Boîte de réception] puisque les valeurs des colonnes personnalisées ne sont pas récupérées si l’élément de travail dans la variable [!DNL Adobe Experience Manager] [!UICONTROL Boîte de réception] appartient à un workflow marqué pour le stockage externe.
