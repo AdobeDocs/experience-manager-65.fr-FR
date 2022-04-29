@@ -1,20 +1,20 @@
 ---
 title: Utilisation de l’outil de migration CRX2OAK
-seo-title: Utilisation de l’outil de migration CRX2OAK
+seo-title: Using the CRX2Oak Migration Tool
 description: Découvrez comment utiliser l’outil de migration CRX2Oak.
-seo-description: Découvrez comment utiliser l’outil de migration CRX2Oak.
+seo-description: Learn how to use the CRX2Oak migration tool.
 uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
-feature: Mise à niveau
+feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 08e7cbe50fbfb301b38c3c36dfa22bfc1024e181
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 64%
+source-wordcount: '1248'
+ht-degree: 61%
 
 ---
 
@@ -26,7 +26,8 @@ CRX2Oak est un outil qui a été conçu pour effectuer la migration des données
 
 Il peut être utilisé pour migrer des données à partir d’anciennes versions CQ basées sur Apache Jackrabbit 2 vers Oak, et peut aussi être utilisé pour copier des données entre référentiels Oak.
 
-Vous pouvez télécharger la version la plus récente de crx2oak à partir du référentiel public Adobe via :[ https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
+Vous pouvez télécharger la dernière version de crx2oak à partir du référentiel public Adobe à cet emplacement :
+[https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 La liste de modifications et correctifs pour la dernière version est disponible via les [notes de mise à jour pour CRX2Oak](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/crx2oak.html).
 
@@ -42,7 +43,7 @@ L’outil peut être utilisé pour :
 * Copier les données entre plusieurs référentiels Oak
 * Convertir des données entre différentes implémentations du micronoyau Oak.
 
-La prise en charge pour la migration des référentiels à l’aide d’entrepôts Blob externes (communément appelés entrepôts de données) est fournie selon différentes combinations. Un chemin de migration possible est passé d’un référentiel CRX2 qui utilise une `FileDataStore` externe vers un référentiel Oak à l’aide d’une `S3DataStore`.
+La prise en charge pour la migration des référentiels à l’aide d’entrepôts Blob externes (communément appelés entrepôts de données) est fournie selon différentes combinations. Un chemin de migration possible est issu d’un référentiel CRX2 qui utilise une `FileDataStore` vers un référentiel Oak à l’aide d’une `S3DataStore`.
 
 Le diagramme ci-dessous montre toutes les combinaisons de migration possibles prises en charge par CRX2Oak :
 
@@ -56,7 +57,7 @@ Il peut également être exécuté séparément s’il requiert plus de personna
 
 Veuillez aussi noter que si les paramètres par défaut sont en mode autonome, seuls les entrepôts de nœuds seront migrés, et le nouveau référentiel réutilisera l’ancien entrepôt binaire.
 
-### Mode de démarrage rapide automatisé  {#automated-quickstart-mode}
+### Mode de démarrage rapide automatisé {#automated-quickstart-mode}
 
 Depuis AEM 6.3, CRX2Oak est capable de gérer les profils de migration définis par l’utilisateur pouvant être configurés avec toutes les options de migration disponibles. Cela offre plus de flexibilité et donne la capacité d’automatiser la configuration d’AEM; des caractéristiques qui ne sont pas disponibles si vous utilisez l’outil en mode autonome. 
 
@@ -74,11 +75,11 @@ export SLING_HOME="/path/to/crx-quickstart"
 SET "SLING_HOME=/path/to/crx-quickstart"
 ```
 
-#### Prise en charge de la reprise  {#resume-support}
+#### Prise en charge de la reprise {#resume-support}
 
 La migration peut être interrompue à tout moment avec la possibilité de la redémarrer par la suite. 
 
-#### Logique de mise à niveau personnalisable  {#customizable-upgrade-logic}
+#### Logique de mise à niveau personnalisable {#customizable-upgrade-logic}
 
 La logique Java personnalisé peut également être mise en œuvre en utilisant `CommitHooks`. Les classes `RepositoryInitializer` personnalisées peuvent être mises en œuvre pour initialiser le référentiel avec des valeures personnalisées.
 
@@ -88,17 +89,17 @@ CRX2Oak prend également en charge les opérations de mappage de la mémoire par
 
 >[!CAUTION]
 >
->Veuillez noter toutefois que les opérations de mappage de la mémoire ne sont pas prises en charge pour les plateformes Windows. Par conséquent, il est recommandé d’ajouter le paramètre **—disable-mmap** lors de la migration sous Windows.
+>Veuillez noter toutefois que les opérations de mappage de la mémoire ne sont pas prises en charge pour les plateformes Windows. Il est donc recommandé d’ajouter la variable **—disable-mmap** lors de la migration sous Windows.
 
 #### Migration sélective de contenu {#selective-migration-of-content}
 
-Par défaut, l’outil migre l’ensemble du référentiel sous le chemin `"/"` . Néanmoins, vous avez un contrôle total du contenu devant être migré.
+Par défaut, l’outil migre l’ensemble du référentiel sous la `"/"` chemin d’accès. Néanmoins, vous avez un contrôle total du contenu devant être migré.
 
-Si une partie du contenu n’est pas requise sur la nouvelle instance, vous pouvez utiliser le paramètre `--exclude-path` pour exclure le contenu et optimiser la procédure de mise à niveau.
+Si une partie du contenu n’est pas requise sur la nouvelle instance, vous pouvez utiliser la variable `--exclude-path` pour exclure le contenu et optimiser la procédure de mise à niveau.
 
 #### Fusion du chemin {#path-merging}
 
-Si les données doivent être copiées entre deux référentiels et que vous disposez d’un chemin de contenu différent sur les deux instances, vous pouvez le définir dans le paramètre `--merge-path` . Une fois que cela est fait, CRX2Oak copie uniquement les nouveaux nœuds dans le référentiel de destination tout en gardant les anciens en place. 
+Si des données doivent être copiées entre deux référentiels et que vous disposez d’un chemin de contenu différent sur les deux instances, vous pouvez le définir dans la variable `--merge-path` . Une fois que cela est fait, CRX2Oak copie uniquement les nouveaux nœuds dans le référentiel de destination tout en gardant les anciens en place. 
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -108,11 +109,11 @@ AEM crée par défaut une version de chaque nœud ou page modifié, pour ensuite
 
 Néanmoins, ces versions ne sont jamais purgées, même si la page originale est supprimée. Les migrations effectuées avec des référentiels utilisés depuis très longtemps peuvent avoir besoin de traiter beaucoup de données redondantes, à cause des versions orphelines.
 
-L’ajout du paramètre `--copy-versions` est une fonctionnalité utile pour ce type de situation. Il peut être utilisé pour ignorer les noeuds de version pendant la migration ou la copie d’un référentiel.
+L’ajout de la variable `--copy-versions` . Il peut être utilisé pour ignorer les noeuds de version pendant la migration ou la copie d’un référentiel.
 
 Vous pouvez aussi choisir de copier des versions orphelines en ajoutant le paramètre `--copy-orphaned-versions=true`.
 
-Les deux paramètres prennent également en charge un format de date `YYYY-MM-DD` si vous souhaitez copier des versions au plus tard à une date spécifique.
+Les deux paramètres prennent également en charge une `YYYY-MM-DD` format de date, au cas où vous souhaitez copier des versions au plus tard à une date spécifique.
 
 ![chlimage_1-153](assets/chlimage_1-153.png)
 
@@ -124,13 +125,13 @@ Une version Open Source de CRX2Oak est disponible sous forme de mise à niveau 
 * Prise en charge du profil de migration
 * Prise en charge de la reconfiguration automatisée d’AEM
 
-Pour plus d’informations, consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migration.html) .
+Voir [Documentation Apache](https://jackrabbit.apache.org/oak/docs/migration.html) pour plus d’informations.
 
 ## Paramètres {#parameters}
 
-### Options d’entrepôts de nœuds  {#node-store-options}
+### Options d’entrepôts de nœuds {#node-store-options}
 
-* `--cache`: Taille du cache en Mo (la valeur par défaut est  `256`)
+* `--cache`: Taille du cache en Mo (la valeur par défaut est `256`)
 
 * `--mmap`: Activation de l’accès aux fichiers mappés en mémoire pour le magasin de segments
 * `--src-password:` Mot de passe de la base de données RDB source
@@ -147,7 +148,7 @@ Pour plus d’informations, consultez la [documentation Apache](https://jackrabb
 * `--fail-on-error`: Force l’échec de la migration si les noeuds ne peuvent pas être lus à partir du référentiel source.
 * `--ldap`: Migration des utilisateurs LDAP d’une instance CQ 5.x vers une instance Oak. Pour que cela fonctionne, le fournisseur d’identité dans la configuration Oak doit être nommé ldap. Pour plus d’informations, consultez la [documentation LDAP](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Utilisez-le conjointement avec le  `--ldap` paramètre pour les référentiels CQ 5.x qui utilisaient plusieurs serveurs LDAP pour l’authentification. Vous pouvez l’utiliser pour pointer vers les fichiers de configuration CQ 5.x `ldap_login.conf` ou `jaas.conf`. Le format est `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Utilisez-le conjointement avec la fonction `--ldap` pour les référentiels CQ 5.x qui utilisaient plusieurs serveurs LDAP pour l’authentification. Vous pouvez l’utiliser pour pointer vers CQ 5.x. `ldap_login.conf` ou `jaas.conf` fichiers de configuration. Le format est `--ldapconfig=path/to/ldap_login.conf`.
 
 ### Options d’entrepôt de versions {#version-store-options}
 
@@ -163,23 +164,23 @@ Pour plus d’informations, consultez la [documentation Apache](https://jackrabb
 
 ### Options de stockage du Blob source {#source-blob-store-options}
 
-* `--src-datastore:` Répertoire de la banque de données à utiliser comme source  `FileDataStore`
+* `--src-datastore:` Répertoire de la banque de données à utiliser comme source `FileDataStore`
 
-* `--src-fileblobstore`: Répertoire de la banque de données à utiliser comme source  `FileBlobStore`
+* `--src-fileblobstore`: Répertoire de la banque de données à utiliser comme source `FileBlobStore`
 
-* `--src-s3datastore`: Répertoire de la banque de données à utiliser pour la source  `S3DataStore`
+* `--src-s3datastore`: Répertoire de la banque de données à utiliser pour la source `S3DataStore`
 
-* `--src-s3config`: Le fichier de configuration de la source  `S3DataStore`.
+* `--src-s3config`: Le fichier de configuration de la source `S3DataStore`.
 
-### Options d’entrepôt de blob de destination {#destination-blobstore-options}
+### Options d’entrepôt de blob de destination  {#destination-blobstore-options}
 
-* `--datastore:` Répertoire de la banque de données à utiliser comme cible  `FileDataStore`
+* `--datastore:` Répertoire de la banque de données à utiliser comme cible `FileDataStore`
 
-* `--fileblobstore:` Répertoire de la banque de données à utiliser comme cible  `FileBlobStore`
+* `--fileblobstore:` Répertoire de la banque de données à utiliser comme cible `FileBlobStore`
 
-* `--s3datastore`: Répertoire de la banque de données à utiliser pour la cible  `S3DataStore`
+* `--s3datastore`: Répertoire de la banque de données à utiliser pour la cible `S3DataStore`
 
-* `--s3config`: Le fichier de configuration de la cible  `S3DataStore`.
+* `--s3config`: Le fichier de configuration de la cible `S3DataStore`.
 
 ### Options d’aide {#help-options}
 
@@ -197,11 +198,11 @@ Vous pouvez aussi activer les informations de débogage pour le processus de mig
   </tr>
   <tr>
    <td>Mode démarrage rapide</td>
-   <td>Vous pouvez ajouter les options <strong>—log-level TRACE</strong> ou <strong>—log-level DEBUG </strong>à la ligne de commande lors de l’exécution de CRX2Oak. Dans ce mode, les journaux sont automatiquement redirigés vers le <strong>fichier upgrade.log</strong>.</td>
+   <td>Vous pouvez ajouter la variable <strong>—TRACE de niveau journal</strong> ou <strong>—log-level DEBUG </strong>options de la ligne de commande lors de l’exécution de CRX2Oak. Dans ce mode, les journaux sont automatiquement redirigés vers <strong>fichier upgrade.log</strong>.</td>
   </tr>
   <tr>
    <td>Mode autonome</td>
-   <td><p>Ajoutez les options <strong>—trace</strong> à la ligne de commande CRX2Oak pour afficher les événements de TRACE sur la sortie standard (vous devez rediriger les journaux vous-même à l’aide du caractère de redirection : Commande "&gt;" ou "tee" pour une inspection ultérieure).</p> </td>
+   <td><p>Ajoutez la variable <strong>—trace</strong> options de la ligne de commande CRX2Oak pour afficher les événements de TRACE sur la sortie standard (vous devez rediriger les journaux vous-même à l’aide du caractère de redirection : Commande "&gt;" ou "tee" pour une inspection ultérieure).</p> </td>
   </tr>
  </tbody>
 </table>

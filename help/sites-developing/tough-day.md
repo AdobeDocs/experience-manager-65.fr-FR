@@ -1,14 +1,12 @@
 ---
 title: Tough Day
-seo-title: Tough Day
 description: Le test Tough Day simule la charge quotidienne d’environ 1 000 auteurs dans le pire des scénarios, toutes les opérations se déroulant simultanément.
-seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
+source-git-commit: ca6d41740dbb24dbba7cf7691c51435cc40d3ead
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1849'
 ht-degree: 51%
 
 ---
@@ -129,8 +127,8 @@ Voici la liste des paramètres pertinents :
 | `--protocol=<Val>` | Protocole utilisé pour l’hôte. | http | http ou https |
 | `--host=<Val>` | Nom d’hôte ou adresse IP qui sera ciblé. |  |  |
 | `--port=<Val>` | Port de l’hôte. | 4502 |  |
-| `--user=<Val>` | Nom d’utilisateur de l’instance. | admin |  |
-| `--password=<Val>` | Mot de passe de l’utilisateur donné. | admin |  |
+| `--user=<Val>` | Nom d’utilisateur de l’instance. | administrateur |  |
+| `--password=<Val>` | Mot de passe de l’utilisateur donné. | administrateur |  |
 | `--duration=<Val>` | Durée des tests. Peut être exprimé par (**s**)econds, (**m**)inutes, (**h**)ours et (**d**)ays. | 1d |  |
 | `--timeout=<Val>` | Durée pendant laquelle un test s’exécute avant d’être interrompu et marqué comme ayant échoué. Exprimé en secondes. | 180 |  |
 | `--suite=<Val>` | La valeur peut être une ou une liste (séparée par des virgules) de suites de tests prédéfinies. | toughday |  |
@@ -143,7 +141,7 @@ Voici la liste des paramètres pertinents :
 
 La personnalisation peut être réalisée de deux manières : avec les paramètres de ligne de commande ou les fichiers de configuration yaml. **Les fichiers de configuration sont généralement utilisés pour les grandes suites personnalisées. Ils remplacent les paramètres par défaut de Tough Day 2. Les paramètres de ligne de commande remplacent les fichiers de configuration et les paramètres par défaut.**
 
-La seule façon d’enregistrer une configuration de test consiste à la copier au format yaml. Pour plus d’informations, voir [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) configuration et exemples de configuration yaml dans les sections ci-dessous.
+La seule façon d’enregistrer une configuration de test consiste à la copier au format yaml.
 
 ### Ajout d’un test {#adding-a-new-test}
 
@@ -347,22 +345,22 @@ Tough Day 2 génère à la fois des métriques de test et des journaux. Pour pl
 
 ### Métriques de test {#test-metrics}
 
-Tough Day 2 fait actuellement état de 9 métriques de test que vous pouvez évaluer. Mesures avec la variable ***** Les symboles ne sont signalés qu’après des exécutions réussies :
+Tough Day 2 fait actuellement état de 9 métriques de test que vous pouvez évaluer. Mesures avec la variable **&#42;** Les symboles ne sont signalés qu’après des exécutions réussies :
 
-| **Nom** | **Description** |
+| **Nom**. | **Description** |
 |---|---|
 | Timestamp | Horodatage de la dernière exécution de test terminée. |
 | Transmis | Nombre d’exécutions réussies. |
 | Échec | Nombre d’exécutions ayant échoué. |
-| Min* | Durée d’exécution de test la plus courte. |
-| Max* | Durée d’exécution de test la plus longue. |
-| Médiane* | Durée médiane calculée de toutes les exécutions de test. |
-| Moyenne* | Durée moyenne calculée de toutes les exécutions de test. |
-| StdDev* | Écart type. |
-| 90p* | 90 centile. |
-| 99p* | 99 centile. |
-| 99.9p* | 99,9 centile. |
-| Débit réel* | Nombre d’exécutions divisé par le temps d’exécution écoulé. |
+| Min&#42; | Durée d’exécution de test la plus courte. |
+| Max&#42; | Durée d’exécution de test la plus longue. |
+| Médiane&#42; | Durée médiane calculée de toutes les exécutions de test. |
+| Moyenne&#42; | Durée moyenne calculée de toutes les exécutions de test. |
+| StdDev&#42; | Écart type. |
+| 90p&#42; | 90 centile. |
+| 99p&#42; | 99 centile. |
+| 99,9p&#42; | 99,9 centile. |
+| Débit réel&#42; | Nombre d’exécutions divisé par le temps d’exécution écoulé. |
 
 Ces mesures sont écrites à l’aide d’éditeurs qui peuvent être ajoutés avec la variable `add` (comme pour l’ajout de tests). Actuellement, il existe deux options :
 

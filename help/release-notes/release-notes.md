@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 70280ec60e8bc4cc139a44c379adca7541856997
+source-git-commit: fe31483555cbecffe067f920b5ed6bbf82f1ae58
 workflow-type: tm+mt
-source-wordcount: '3329'
-ht-degree: 5%
+source-wordcount: '3330'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experience Manager] 6.5.12.0 sont :
 
-* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources sur DAM distant sont disponibles sur le déploiement Sites. Vous pouvez désormais effectuer des opérations de mise à jour, de suppression, de changement de nom et de déplacement sur des ressources ou des dossiers DAM distants. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites (NPR-37816).
+* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources du DAM distant sont disponibles sur le déploiement de Sites. Vous pouvez désormais effectuer les opérations suivantes : mettre à jour, supprimer, renommer et déplacer des opérations sur les ressources ou dossiers du DAM distant. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites (NPR-37816).
 
 * Les déploiements push d’une source de Live Copy vers plusieurs Live Copies sont désormais possibles par défaut, sans nécessiter de configuration de plan directeur (CQ-4259951).
 * L’état des opérations asynchrones en cours s’affiche désormais dans l’interface utilisateur afin d’empêcher les utilisateurs de déclencher accidentellement plusieurs opérations asynchrones sur le même chemin (NPR-37611).
@@ -284,7 +284,7 @@ Pour plus d’informations sur l’installation du programme d’installation cu
 
 ### UberJar {#uber-jar}
 
-UberJar pour Experience Manager 6.5.12.0 est disponible dans la section [Référentiel Maven Central](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
+UberJar pour Experience Manager 6.5.12.0 est disponible dans la section [Référentiel Maven Central](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
 
 Pour utiliser UberJar dans un projet Maven, voir [utilisation d’UberJar](/help/sites-developing/ht-projects-maven.md) et incluez la dépendance suivante dans le POM de votre projet :
 
@@ -310,7 +310,7 @@ Vérifiez si vous utilisez une fonctionnalité ou une fonctionnalité dans un d�
 | Zone | Fonctionnalité | Remplacement |
 |---|---|---|
 | Intégrations | Le **[!UICONTROL Accord préalable des services cloud AEM]** est obsolète, car la variable [!DNL Experience Manager] et [!DNL Adobe Target] L’intégration est mise à jour dans Experience Manager 6.5. L’intégration prend en charge l’API Adobe Target Standard. L’API utilise l’authentification via Adobe IMS et [!DNL Adobe I/O] et prend en charge le rôle croissant d’Adobe Launch pour l’instrumenter [!DNL Experience Manager] pour les analyses et la personnalisation, l’assistant de souscription n’a aucune utilité sur le plan fonctionnel. | Configuration des connexions système, de l’authentification Adobe IMS et [!DNL Adobe I/O] intégrations via les [!DNL Experience Manager] services cloud. |
-| Connecteurs | Adobe JCR Connector for Microsoft® SharePoint 2010 et Microsoft® SharePoint 2013 est obsolète pour Experience Manager 6.5. | N/A |
+| Connecteurs | Adobe JCR Connector for Microsoft® SharePoint 2010 et Microsoft® SharePoint 2013 est obsolète pour Experience Manager 6.5. | S/O |
 
 ## Problèmes connus {#known-issues}
 
