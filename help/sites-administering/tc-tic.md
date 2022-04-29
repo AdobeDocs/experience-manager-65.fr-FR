@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: cadf2e240327ef52ef57f8fb2e911f36fd003852
+source-git-commit: e5bdf1218d3b747e2317481a67ae74e7855cda0b
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1552'
 ht-degree: 77%
 
 ---
@@ -40,8 +40,8 @@ Créez une configuration de cloud qui connecte AEM à votre fournisseur de servi
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 * [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft (Microsoft Translator est préinstallé dans AEM)
@@ -53,7 +53,6 @@ Créez une configuration de cloud qui connecte AEM à votre fournisseur de servi
 >
 >* [Traduction humaine dans AEM](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [Traduction automatique dans AEM](https://www.adobe.com/go/aem-machine-translation-connectors)
-
 >
 
 
@@ -77,7 +76,7 @@ Si différentes parties de votre site web impliquent différentes exigences en m
 
 Une fois que vous avez configuré une structure d’intégration de traduction, vous pouvez l’[associer aux pages](/help/sites-administering/tc-prep.md) qui l’utilisent.
 
-**Remarque :** Pour une présentation des fonctionnalités de traduction de contenu dans AEM, voir  [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md).
+**Remarque :** Pour un aperçu des fonctionnalités de traduction de contenu dans AEM, voir [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md).
 
 Une configuration unique de la structure contrôle la façon de traduire le contenu d’une page, le contenu d’une communauté et les ressources.
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -137,7 +136,7 @@ Les propriétés des communautés contrôlent la façon dont le contenu créé p
 |---|---|
 | Fournisseur de traduction | Sélectionnez le fournisseur de traduction pour effectuer la traduction. Le fournisseur pour lequel des configurations de cloud sont créées est répertorié dans la liste. |
 | Catégorie de contenu | Une catégorie qui décrit le contenu que vous traduisez. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
-| Choisissez Un Paramètre Régional À Utiliser Comme Magasin De Partage Global | (Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue de base [langue](/help/communities/sites-console.md#translation) du site web. Si vous sélectionnez No Common Store (Pas de magasin commun), la traduction globale sera désactivée. Par défaut, la traduction globale est désactivée. |
+| Choisissez Un Paramètre Régional À Utiliser Comme Magasin De Partage Global | (Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue de votre choix. [langue de base](/help/communities/sites-console.md#translation) pour le site web. Si vous sélectionnez No Common Store (Pas de magasin commun), la traduction globale sera désactivée. Par défaut, la traduction globale est désactivée. |
 
 ### Propriétés de configuration des ressources {#assets-configuration-properties}
 
@@ -207,7 +206,7 @@ Lorsque vous associez une page à une configuration de cloud, les descendants de
 
 Lorsque cela est nécessaire, vous pouvez remplacer l’association dans une page descendante. Par exemple, le contenu d’un site web concerne principalement l’habillement. Cependant, une branche des pages décrit l’entreprise. La page principale du site est associée à une structure d’intégration de traduction qui spécifie la traduction automatique à l’aide de la catégorie Habillement. La branche qui décrit l’entreprise utilise une structure qui effectue une traduction automatique à l’aide la catégorie Général.
 
-De plus, pour toutes les communautés [composants SCF](/help/communities/scf.md) sur les pages, le contenu généré par l’utilisateur (UGC) inclura la possibilité pour les utilisateurs de traduire le contenu. Pour plus d’informations, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
+En outre, pour toutes les communautés [Composants SCF](/help/communities/scf.md) sur les pages, le contenu généré par l’utilisateur inclut la possibilité pour les utilisateurs de traduire le contenu. Pour plus d’informations, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
 
 ### Association d’une page à un fournisseur de traduction {#associating-a-page-with-a-translation-provider}
 
