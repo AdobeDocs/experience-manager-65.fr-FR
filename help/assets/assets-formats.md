@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: e3743b7ecbd8266abfaee36dcee94bcd2b260cac
+source-git-commit: fcbfd8b378282d908b68c61ab235e9b80fd6644c
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 59%
+source-wordcount: '1751'
+ht-degree: 63%
 
 ---
 
@@ -22,7 +22,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 | Niveau de prise en charge | Description |
 | :-----------: | ------------------------------ |
 | ✓ | Pris en charge |
-| * | Prise en charge avec des fonctionnalités de composant additionnel |
+| &#42; | Prise en charge avec des fonctionnalités de composant additionnel |
 | − | Non applicable |
 
 ## Formats d’image pixellisée pris en charge dans [!DNL Experience Manager] {#supported-raster-image-formats}
@@ -38,7 +38,7 @@ Formats d’image pixellisée pris en charge dans [!DNL Assets] sont :
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | PNM | ✓ | ✓ | - | - | - | - | ✓ |
 | PGM | ✓ | ✓ | - | - | - | - | ✓ |
-| PBM | ✓ | ✓ | - | - | - | - | ✓ |
+| PBM | ✓ | ✓ | − | - | - | - | ✓ |
 | PPM | ✓ | ✓ | - | - | - | - | ✓ |
 | PSD ‡ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
@@ -65,7 +65,7 @@ Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | - | - |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ | - | ✓ | - |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ | - | ✓ | − |
 | OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
@@ -78,9 +78,9 @@ La bibliothèque Adobe PDF Rasterizer génère des miniatures et des aperçus de
 * Fichiers AI/PDF pour lesquels les miniatures ne sont pas générées par défaut.
 * Fichiers AI contenant des couleurs PMS (Pantone Matching System).
 
-Voir [Utilisation de PDF Rasterizer](aem-pdf-rasterizer.md).
+See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
-## Bibliothèque de transcodage d’image prise en charge {#supported-image-transcoding-library}
+## Supported Image Transcoding library {#supported-image-transcoding-library}
 
 La bibliothèque de transcodage d’imagerie Adobe est une solution de traitement d’images exécutant des fonctions essentielles de manipulation graphique, telles que le codage, le transcodage, le ré-échantillonnage, le redimensionnement, etc.
 
@@ -99,21 +99,21 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | Format | Stockage | [Gestion des métadonnées](metadata.md) | Texte intégral<br> extraction | [Extraction de métadonnées](metadata.md) | Miniature<br> génération | [Extraction de sous-ressource](managing-linked-subassets.md) | [Écriture différée des métadonnées](xmp-writeback.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
-| DOC | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| DOC | ✓ | ✓ | ✓ | ✓ | − | − | - | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | − | - | − | ✓ |
 | ODT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
 | RTF | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
 | TXT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
 | XLS | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | − | - | - | ✓ |
 | ODS | ✓ | ✓ | ✓ | - | - | - | - | - |
 | PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | ODP | ✓ | ✓ | ✓ | - | - | - | - | - |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
-| PS | ✓ | ✓ | - | - | - | - | - | - |
+| PS | ✓ | ✓ | − | - | - | − | - | - |
 | QXP | ✓ | ✓ | - | - | - | - | - | - |
 | EPUB | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
 
@@ -121,23 +121,23 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 |  | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniatures | Transcodage FFmpeg |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ | - | - | * |
-| MIDI | ✓ | ✓ | - | - | * |
-| 3GP | ✓ | ✓ | - | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ | - | - | * |
-| OGA | ✓ | ✓ | - | - | * |
-| OGG | ✓ | ✓ | - | - | * |
-| RA | ✓ | ✓ | - | - | * |
-| WAV | ✓ | ✓ | - | - | * |
-| WMA | ✓ | ✓ | - | - | * |
-| DVI | ✓ | ✓ | - | * | * |
-| FLV | ✓ | ✓ | - | * | * |
-| M4V | ✓ | ✓ | - | * | * |
-| MPEG | ✓ | ✓ | - | * | * |
-| OGV | ✓ | ✓ | - | * | * |
-| MOV | ✓ | ✓ | - | * | * |
-| WMV | ✓ | ✓ | - | * | * |
+| AAC | ✓ | ✓ | - | - | &#42; |
+| MIDI | ✓ | ✓ | - | - | &#42; |
+| 3GP | ✓ | ✓ | - | - | &#42; |
+| MP3 | ✓ | ✓ | ✓ | − | &#42; |
+| MPG | ✓ | ✓ | - | - | &#42; |
+| OGA | ✓ | ✓ | − | - | &#42; |
+| OGG | ✓ | ✓ | - | - | &#42; |
+| RA | ✓ | ✓ | - | - | &#42; |
+| WAV | ✓ | ✓ | - | - | &#42; |
+| WMA | ✓ | ✓ | - | - | &#42; |
+| DVI | ✓ | ✓ | - | &#42; | &#42; |
+| FLV | ✓ | ✓ | - | &#42; | &#42; |
+| M4V | ✓ | ✓ | - | &#42; | &#42; |
+| MPEG | ✓ | ✓ | - | &#42; | &#42; |
+| OGV | ✓ | ✓ | - | &#42; | &#42; |
+| MOV | ✓ | ✓ | - | &#42; | &#42; |
+| WMV | ✓ | ✓ | - | &#42; | &#42; |
 | SWF | ✓ | ✓ | - | - | - |
 
 ## Formats d’archives pris en charge {#supported-archive-formats}
@@ -232,13 +232,13 @@ Une liste des types MIME pris en charge est disponible en CRXDE Lite à l’adre
 | XLS | application/vnd.ms-excel |  |  |
 | ZIP | application/zip |  |  |
 
-## Dynamic Media : formats vidéo d’entrée pris en charge pour le transcodage {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Dynamic Media : formats vidéo d’entrée pris en charge pour le transcodage {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Extension de fichier vidéo | Conteneur | Codecs vidéo recommandés | Codecs vidéo non pris en charge |
 |---|---|---|---|
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (fichiers d’animation vectorielle) |
-| M4V | Apple iTunes | H264/AVC | - |
+| M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 et HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | MP4 | MPEG-4 | H264/AVC (tous les profils) | - |
@@ -248,15 +248,19 @@ Une liste des types MIME pris en charge est disponible en CRXDE Lite à l’adre
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
-‡ Ce format vidéo n’est pas encore pris en charge pour une utilisation avec des vidéos interactives dans Dynamic Media ou pour une utilisation avec l’annotation dans Experience Manager Assets.
+‡ Ce format vidéo n’est pas encore pris en charge pour une utilisation avec les vidéos interactives dans Dynamic Media ou avec lʼannotation dans Experience Manager Assets.
 
-## Dynamic Media - Formats de document pris en charge {#supported-document-formats-dynamic-media}
+## Dynamic Media - Formats de document pris en charge {#supported-document-formats-dynamic-media}
 
 | Format | Télécharger<br> (Format d’entrée) | Créer<br> image<br> paramètre prédéfini<br> (Format de sortie) | Aperçu<br> dynamic<br> rendu | Diffuser<br> dynamic<br> rendu | Télécharger<br> dynamic<br> rendu |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | - | - | - |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | - | - | − |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Voir la remarque ci-dessous) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>Pour les PDF sécurisés, seul le téléchargement est pris en charge.
 
 Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
@@ -266,15 +270,15 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 * Pour utiliser Dynamic Media afin de générer des rendus dynamiques pour des fichiers INDD, voir [Format de fichier InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
 
-## Dynamic Media - Formats d’image pixellisée pris en charge {#supported-raster-image-formats-dynamic-media}
+## Dynamic Media - Formats d’images pixellisées prises en charge {#supported-raster-image-formats-dynamic-media}
 
-| Format | Télécharger<br> (Format d’entrée) | Créer<br> image<br> paramètre prédéfini<br> (Format de sortie) | Aperçu<br> dynamic<br> rendu | Diffuser<br> dynamic<br> rendu | Télécharger<br> dynamic<br> rendu | Types de jeux qui prennent en charge ce format |
+| Format | Télécharger<br> (Format d’entrée) | Créer<br> image<br> paramètre prédéfini<br> (Format de sortie) | Aperçu<br> dynamic<br> rendu | Diffuser<br> dynamic<br> rendu | Télécharger<br> dynamic<br> rendu | Types de visionneuses qui prennent en charge ce format |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md), et [Rotation](/help/assets/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [360°](/help/assets/spin-sets.md) |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md), et [Rotation](/help/assets/spin-sets.md) |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md), et [Rotation](/help/assets/spin-sets.md) |
-| BMP | ✓ | - | - | - | - | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md), et [Rotation](/help/assets/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [360°](/help/assets/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [360°](/help/assets/spin-sets.md) |
+| BMP | ✓ | - | - | − | - | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [360°](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | - | - | - | - | - |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | PICT | ✓ | - | - | - | - | - |
@@ -283,11 +287,11 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 * La prise en charge des fichiers EPS s’applique uniquement aux images pixellisées. Par exemple, la génération de vignettes pour les images vectorielles EPS n’est pas prise en charge par défaut. Pour ajouter une prise en charge, [configurez ImageMagick](best-practices-for-imagemagick.md). Pour intégrer des outils tiers afin d’activer des fonctionnalités supplémentaires, voir [Gestionnaire de médias en ligne de commande](media-handlers.md#command-line-based-media-handler).
 
-* Pour utiliser [!DNL Dynamic Media] pour prévisualiser et générer des rendus dynamiques pour les fichiers EPS, voir [Formats de fichiers Adobe Illustrator (AI), Postscript (EPS) et PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* To use [!DNL Dynamic Media] to preview and generate dynamic renditions for EPS files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Concernant les fichiers EPS, l’écriture différée des métadonnées est prise en charge dans PostScript Document Structuring Convention (PS-Adobe) version 3.0 ou supérieure.
 
-## Dynamic Media - Formats d’image pixellisée non pris en charge {#unsupported-image-formats-dynamic-media}
+## Dynamic Media - Formats d’images pixellisées non prises en charge {#unsupported-image-formats-dynamic-media}
 
 La liste suivante décrit les sous-types de formats de fichiers image pixellisés qui sont *not* pris en charge dans Dynamic Media.
 
