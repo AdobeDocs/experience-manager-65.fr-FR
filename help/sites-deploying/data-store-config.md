@@ -6,10 +6,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 0c9d436d863d55f94e16f5c0f570251e2fb3d805
+source-git-commit: 6257b56c61ae14889d9ecefed5030e123a415fd7
 workflow-type: tm+mt
-source-wordcount: '3467'
-ht-degree: 63%
+source-wordcount: '3455'
+ht-degree: 64%
 
 ---
 
@@ -199,7 +199,7 @@ Si vous devez effectuer une mise à niveau vers une nouvelle version du connecte
    >
    >Les noms de fichier présentés ci-dessus sont utilisés à titre d’illustration uniquement.
 
-1. Téléchargez la dernière version du Feature Pack 1.8.x à partir du [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
+1. Téléchargez la dernière version du Feature Pack 1.10.x depuis le [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Décompressez le contenu dans un dossier distinct, puis accédez à `jcr_root/libs/system/install/15`.
 1. Copiez les fichiers jar dans le dossier d’installation AEM **&lt;aem-install>**/crx-quickstart/install/15.
 1. Démarrez AEM et vérifiez les fonctionnalités du connecteur.
