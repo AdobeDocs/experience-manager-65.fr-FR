@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: f2cfe62c561e772a10ede4f76314a5904d6d64ff
+source-git-commit: 5c29ac6b87b818e168a746827624b65c6ba3b2f7
 workflow-type: tm+mt
-source-wordcount: '6048'
-ht-degree: 44%
+source-wordcount: '6049'
+ht-degree: 45%
 
 ---
 
@@ -134,7 +134,7 @@ Pour marquer un dossier sélectionné en vue de sa synchronisation avec Dynamic 
    Une fois qu’une ressource est activée, toutes les mises à jour sont immédiatement publiées en direct sur la livraison S7.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
-1. Par défaut, l’auteur du Experience Manager ne peut pas prévisualiser le contenu Dynamic Media. Par conséquent, pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, vous devez *liste autorisée* l’instance d’auteur du Experience Manager à connecter à Dynamic Media. En outre, si vous souhaitez permettre aux utilisateurs d’accéder à l’aperçu sécurisé du contenu, vous pouvez *liste autorisée* des adresses IP supplémentaires.
+1. Par défaut, l’auteur du Experience Manager ne peut pas prévisualiser le contenu Dynamic Media. Par conséquent, pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, vous devez placer sur la liste autorisée l’instance d’auteur du Experience Manager pour vous connecter à Dynamic Media. En outre, si vous souhaitez permettre aux utilisateurs d’accéder à un aperçu sécurisé du contenu, vous pouvez placer sur la liste autorisée des adresses IP supplémentaires. <!-- CQDOC-19254 UNHIDE ON MAY 26, 2022 To securely preview Dynamic Media content before it gets published, Experience Manager Author uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can allowlist more IPs to provide users access to securely preview content. -->
 Pour configurer cette action dans Experience Manager, voir [Configuration de la configuration de la publication Dynamic Media pour Image Server - onglet Sécurité](/help/assets/dm-publish-settings.md#security-tab).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
@@ -251,28 +251,28 @@ Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). Dan
 
 <!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
-* [Configuration de la configuration de publication Dynamic Media pour Image Server](/help/assets/dm-publish-settings.md)
-* [Configuration des paramètres généraux de Dynamic Media](/help/assets/dm-general-settings.md)
+* [Configurer la configuration de publication Dynamic Media pour Image Server](/help/assets/dm-publish-settings.md)
+* [Configurer les paramètres généraux de Dynamic Media](/help/assets/dm-general-settings.md)
 * [Configuration de la gestion des couleurs](#configuring-color-management)
 * [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats)
 * [Ajout de types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
 * [Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (effectuée dans l’interface utilisateur de Dynamic Media Classic)
 
-#### Configuration de la configuration de publication Dynamic Media pour Image Server {#publishing-setup-for-image-server}
+#### Configurer la configuration de publication Dynamic Media pour Image Server {#publishing-setup-for-image-server}
 
 La page Configuration de la publication Dynamic Media établit les paramètres par défaut qui déterminent la manière dont les ressources sont diffusées des serveurs Dynamic Media d’Adobe vers les sites web ou les applications.
 
-Voir [Configuration de la configuration de publication Dynamic Media pour Image Server](/help/assets/dm-publish-settings.md).
+Voir [Configurer la configuration de publication Dynamic Media pour Image Server](/help/assets/dm-publish-settings.md).
 
-#### Configuration des paramètres généraux de Dynamic Media {#configuring-application-general-settings}
+#### Configurer les paramètres généraux de Dynamic Media {#configuring-application-general-settings}
 
-Configuration de Dynamic Media **[!UICONTROL Nom du serveur de publication]** l’URL et la variable **[!UICONTROL Nom du serveur d’origine]** URL. Vous pouvez également indiquer **[!UICONTROL Téléchargement vers l’application]** et **[!UICONTROL Options de téléchargement par défaut]** tout cela en fonction de votre cas d’utilisation spécifique.
+Configurez l’URL **[!UICONTROL Nom du serveur de publication]** et l’URL **[!UICONTROL Nom du serveur d’origine]** Dynamic Media. Vous pouvez également indiquer les paramètres **[!UICONTROL Téléchargement vers l’application]** et **[!UICONTROL Options de téléchargement par défaut]** en fonction de votre cas d’utilisation spécifique.
 
-Voir [Configuration des paramètres généraux de Dynamic Media](/help/assets/dm-general-settings.md).
+Voir [Configurer les paramètres généraux de Dynamic Media](/help/assets/dm-general-settings.md).
 
 #### Configuration de la gestion des couleurs {#configuring-color-management}
 
-La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs des ressources. Avec la correction des couleurs, les ressources intégrées conservent leur espace colorimétrique (RVB, CMJN, gris) et leur profil de couleur intégré. Lorsque vous demandez un rendu dynamique, la couleur de l’image est corrigée dans l’espace colorimétrique cible en utilisant une sortie CMJN, RVB ou grise.
+La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs des ressources. Avec la correction des couleurs, les ressources ingérées conservent leur espace colorimétrique (RVB, CMJN, Gris) et leur profil de couleur intégré. Lorsque vous demandez un rendu dynamique, la couleur de l’image est corrigée dans l’espace colorimétrique cible en utilisant une sortie CMJN, RVB ou grise.
 
 Voir [Configuration des paramètres d’image prédéfinis](/help/assets/managing-image-presets.md).
 
@@ -304,7 +304,7 @@ Voir la section [Chargement des ressources](/help/assets/manage-assets.md#upload
 
    * Double-cliquez sur le champ **[!UICONTROL activé]**. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources sont synchronisées avec Dynamic Media pour traitement. Si vous souhaitez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
 
-   * Appuyez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types MIME pris en charge](/help/assets/assets-formats.md#supported-mime-types) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
+   * Appuyez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types Mime pris en charge](/help/assets/assets-formats.md#supported-mime-types) pour une liste de valeurs de paramètre de traitement autorisées que vous pouvez utiliser pour un type MIME donné.
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -315,7 +315,7 @@ Voir la section [Chargement des ressources](/help/assets/manage-assets.md#upload
 
 #### Ajout de types MIME pour les formats non pris en charge {#adding-mime-types-for-unsupported-formats}
 
-Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris en charge dans Experience Manager Assets. Assurez-vous que tout nouveau noeud ajouté en CRXDE Lite n’est pas supprimé par Experience Manager en déplaçant le type MIME avant `image_`. Assurez-vous également que sa valeur activée est définie sur **[!UICONTROL false]**.
+Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris en charge dans Experience Manager Assets. Assurez-vous que tout nouveau noeud que vous ajoutez dans CRXDE Lite n’est pas supprimé par Experience Manager en déplaçant le type MIME avant `image_`. Assurez-vous également que sa valeur activée est définie sur **[!UICONTROL false]**.
 
 **Pour ajouter des types MIME pour des formats non pris en charge:**
 
@@ -395,7 +395,7 @@ Deux éléments sont disponibles pour la définition : correspondance et nom de
    Vous pouvez cocher la case **[!UICONTROL Afficher le code]** pour afficher la valeur d’expression régulière qui se crée à côté de vos sélections dans le formulaire. Vous pouvez saisir ou modifier ces valeurs pour définir les éléments de la convention de nommage si l’affichage sous forme de formulaire vous limite pour quelque raison que ce soit. Si vos valeurs ne peuvent pas être analysées dans l’affichage de formulaire, les champs de formulaire seront inactifs.
 
    >[!NOTE]
-   Les champs de formulaire désactivés ne permettent pas de confirmer que vos expressions régulières sont correctes. Vous verrez les résultats de l’expression régulière que vous créez pour chaque élément après la ligne de résultat. L’expression régulière est visible en entier en bas de la page.
+   Les champs de formulaire désactivés ne permettent pas de confirmer que vos expressions régulières sont correctes. Vous voyez les résultats de l’expression régulière que vous créez pour chaque élément après la ligne Résultat. L’expression régulière est visible en entier en bas de la page.
 
 1. Développez chaque élément selon vos besoins et indiquez les conventions de nommage que vous souhaitez utiliser.
 1. Si nécessaire, effectuez l’une des opérations suivantes :
@@ -409,8 +409,6 @@ Deux éléments sont disponibles pour la définition : correspondance et nom de
    * Sélectionner **[!UICONTROL Enregistrer]** si vous modifiez un paramètre prédéfini existant.
 
 ##### Création d’un paramètre prédéfini d’ensemble par lot
-
-
 
 Dynamic Media utilise les paramètres prédéfinis d’ensemble par lot pour organiser les ressources en visionneuses d’images (images de remplacement, options de couleur, rotation à 360°) pour l’affichage dans des visionneuses. Les paramètres prédéfinis d’ensemble par lot s’exécutent automatiquement avec les processus de transfert des ressources dans Dynamic Media.
 
