@@ -1,8 +1,8 @@
 ---
 title: Référence sur les processus de workflow
-seo-title: Référence sur les processus de workflow
+seo-title: Workflow Process Reference
 description: Référence sur les processus de workflow
-seo-description: 'null'
+seo-description: null
 uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cf3b739fd774bc860d9906b9884d22fd532fd5dd
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 84%
+source-wordcount: '1075'
+ht-degree: 83%
 
 ---
 
@@ -25,7 +25,7 @@ AEM propose plusieurs étapes de processus qui peuvent être utilisées pour cr�
 
 Les caractéristiques suivantes sont décrites pour chaque étape du processus.
 
-### Classe Java ou chemin d’accès ECMA  {#java-class-or-ecma-path}
+### Classe Java ou chemin d’accès ECMA {#java-class-or-ecma-path}
 
 Les étapes du processus sont définies soit par une classe Java soit par un ECMAScript.
 
@@ -59,7 +59,7 @@ Une fois ce délai d’expiration dépassé, l’étape de workflow n’est plus
 
 ### Autorisations {#permissions}
 
-La session transmise à `WorkflowProcess` est gérée par l’utilisateur du service pour le service de processus de workflow, qui dispose des autorisations suivantes à la racine du référentiel :
+La session transmise à la `WorkflowProcess` est pris en charge par l’utilisateur du service pour le service de processus de workflow, qui dispose des autorisations suivantes à la racine du référentiel :
 
 * `jcr:read`
 * `rep:write`
@@ -67,7 +67,7 @@ La session transmise à `WorkflowProcess` est gérée par l’utilisateur du ser
 * `jcr:lockManagement`
 * `crx:replicate`
 
-Si cet ensemble d’autorisations n’est pas suffisant pour votre implémentation `WorkflowProcess`, il doit utiliser une session avec les autorisations requises.
+Si cet ensemble d’autorisations n’est pas suffisant pour votre `WorkflowProcess` mise en oeuvre, puis il doit utiliser une session avec les autorisations requises.
 
 La méthode recommandée consiste à employer un utilisateur de service créé avec le sous-ensemble minimum d’autorisations requises.
 
@@ -81,13 +81,11 @@ La méthode recommandée consiste à employer un utilisateur de service créé a
 >
 >Une solution à court terme est également disponible à des fins de rétrocompatibilité lorsque des modifications de code ne sont pas possibles :
 >
->* À l’aide de la console web ( `/system/console/configMgr` localisez le **service de configuration des workflows Granite d’Adobe**
-   >
-   >
-* Activez le **mode hérité du processus de workflow**.
+>* Utilisation de la console web ( `/system/console/configMgr` localisez la **Service de configuration des workflows Adobe Granite**
 >
+>* Activez le **mode hérité du processus de workflow**.
 >
-Vous revenez alors au comportement précédent qui fournissait une session administrateur à l’implémentation `WorkflowProcess` et disposez à nouveau d’un accès illimité à l’intégralité du référentiel.
+>Vous revenez alors au comportement précédent qui fournissait une session administrateur à l’implémentation `WorkflowProcess` et disposez à nouveau d’un accès illimité à l’intégralité du référentiel.
 
 ## Processus de contrôle du workflow {#workflow-control-processes}
 
@@ -97,7 +95,7 @@ Les processus suivants n’exécutent aucune action sur le contenu. Ils servent 
 
 Le processus `AbsoluteTimeAutoAdvancer` (Avance automatique temps absolu écoulé) se comporte de la même manière que **AutoAdvancer** (Avance automatique), si ce n’est qu’il arrive à expiration à une date et une heure données, plutôt qu’après une durée définie.
 
-* **Classe Java** :  `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Classe Java**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Charge utile** : aucune.
 * **Arguments** : aucun.
 * **Délai d’expiration** : le processus arrive à expiration lorsque la date et l’heure définies sont atteintes.
@@ -106,7 +104,7 @@ Le processus `AbsoluteTimeAutoAdvancer` (Avance automatique temps absolu écoul�
 
 Le processus `AutoAdvancer` fait passer automatiquement le flux de travail à l’étape suivante. Si plusieurs étapes sont possibles (il existe, par exemple, une division OU), la progression du flux de travail continue le long de l’*itinéraire par défaut*, si cela a été défini. Dans le cas contraire, aucune avance n’est effectuée.
 
-* **Classe Java** :  `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Classe Java**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
 * **Charge utile** : aucune.
 * **Arguments** : aucun.
@@ -116,7 +114,7 @@ Le processus `AutoAdvancer` fait passer automatiquement le flux de travail à l�
 
 Le processus `ProcessAssembler` exécute plusieurs sous-processus de manière séquentielle au cours d’une seule étape. Pour utiliser le processus `ProcessAssembler`, créez une seule étape de ce type dans votre workflow, et configurez ses arguments de manière à indiquer les noms et arguments des sous-processus que vous souhaitez exécuter.
 
-* **Classe Java** :  `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Classe Java**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
 * **Charge utile** : ressource DAM, page AEM ou aucune charge utile (cela dépend des exigences des sous-processus).
 * **Arguments** :
@@ -162,7 +160,7 @@ Les processus suivants exécutent des tâches simples ou servent simplement d’
 
 L’élément situé à l’emplacement indiqué est supprimé.
 
-* **Chemin ECMAScript** :  `/libs/workflow/scripts/delete.ecma`
+* **Chemin ECMAScript**: `/libs/workflow/scripts/delete.ecma`
 
 * **Charge utile** : chemin JCR
 * **Arguments** : aucun
@@ -172,7 +170,7 @@ L’élément situé à l’emplacement indiqué est supprimé.
 
 Il s’agit d’un processus nul. Il n’effectue aucune opération, mais consigne un message de débogage.
 
-* **Chemin ECMAScript** :  `/libs/workflow/scripts/noop.ecma`
+* **Chemin ECMAScript**: `/libs/workflow/scripts/noop.ecma`
 
 * **Charge utile** : aucune
 * **Arguments** : aucun
@@ -180,9 +178,9 @@ Il s’agit d’un processus nul. Il n’effectue aucune opération, mais consig
 
 ### rule-false {#rule-false}
 
-Il s’agit d’un processus nul qui renvoie `false` sur la méthode `check()`.
+Il s’agit d’un processus nul qui renvoie la valeur `false` sur le `check()` .
 
-* **Chemin ECMAScript** :  `/libs/workflow/scripts/rule-false.ecma`
+* **Chemin ECMAScript**: `/libs/workflow/scripts/rule-false.ecma`
 
 * **Charge utile** : aucune
 * **Arguments** : aucun
@@ -192,30 +190,10 @@ Il s’agit d’un processus nul qui renvoie `false` sur la méthode `check()`.
 
 Il s’agit d’un exemple de processus ECMAScript.
 
-* **Chemin ECMAScript** :  `/libs/workflow/scripts/sample.ecma`
+* **Chemin ECMAScript**: `/libs/workflow/scripts/sample.ecma`
 
 * **Charge utile** : aucune
 * **Arguments** : aucun
-* **Délai d’expiration** : ignoré
-
-### urlcaller {#urlcaller}
-
-Il s’agit d’un processus de workflow simple qui appelle l’URL indiquée. En règle générale, l’URL est une référence à un JSP (ou à un autre servlet équivalent) qui effectue une tâche simple. Ce processus doit uniquement être utilisé pendant les phases de développement et de démonstration, mais pas dans un environnement de production. Les arguments définissent l’URL, le nom de connexion et le mot de passe.
-
-* **Chemin ECMAScript** :  `/libs/workflow/scripts/urlcaller.ecma`
-
-* **Charge utile** : aucune
-* **Arguments** :
-
-```
-        args := url [',' login ',' password]
-        url := /* The URL to be called */
-        login := /* The login to access the URL */
-        password := /* The password to access the URL */
-```
-
-Par exemple : `http://localhost:4502/my.jsp, mylogin, mypassword`
-
 * **Délai d’expiration** : ignoré
 
 ### LockProcess {#lockprocess}
