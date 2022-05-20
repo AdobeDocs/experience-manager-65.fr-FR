@@ -1,20 +1,20 @@
 ---
 title: Gérer les images de signature d’agent
-seo-title: Gérer les images de signature d’agent
+seo-title: Manage agent signature images
 description: Après la création d’un modèle de lettre, vous pouvez l’utiliser pour créer une correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
-seo-description: Après la création d’un modèle de lettre, vous pouvez l’utiliser pour créer une correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
+seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
 uuid: 48b2697e-6065-4e23-9aa8-333e7b11ede1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 71%
+workflow-type: ht
+source-wordcount: '690'
+ht-degree: 100%
 
 ---
 
@@ -22,18 +22,18 @@ ht-degree: 71%
 
 ## Présentation {#overview}
 
-Dans Correspondence Management, vous pouvez utiliser une image pour rendre la signature de l’agent dans les lettres. Après avoir configuré l’image de signature de l’agent, lors de la création d’une lettre, vous pouvez afficher l’image de signature de l’agent dans la lettre comme signature de l’agent expéditeur.
+Dans Correspondence Management, vous pouvez utiliser une image pour rendre la signature de l’agent dans les lettres. Après avoir configuré l’image de signature de l’agent, lorsque vous créez une lettre, vous pouvez rendre l’image de signature d’agent dans la lettre comme signature de l’agent expéditeur.
 
-Le DDE agentSignatureImage est un DDE calculé qui représente l’image de la signature de l’agent. L’expression de ce DDE calculé utilise une nouvelle fonction personnalisée qui est exposée par le bloc de création Expression Manager. Cette fonction personnalisée prend agentID et agentFolder comme paramètres d’entrée et récupère le contenu d’image en se basant sur ces paramètres. Le dictionnaire de données du système SystemContext donne aux lettres de Correspondence Management l’accès aux informations dans le contexte du système actuel. Le contexte du système contient des informations sur l’utilisateur actuellement connecté, ainsi que sur les paramètres de configuration actifs.
+Le DDE agentSignatureImage est un DDE calculé qui représente l’image de la signature de l’agent. L’expression de ce DDE calculé utilise une nouvelle fonction personnalisée qui est exposée par le bloc de création Expression Manager. Cette fonction personnalisée prend agentID et agentFolder comme paramètres d’entrée et récupère le contenu d’image en se basant sur ces paramètres. Le dictionnaire de données du système SystemContext donne aux lettres de Correspondence Management accès aux informations dans le contexte du système actuel. Le contexte du système contient des informations sur l’utilisateur actuellement connecté, ainsi que sur les paramètres de configuration actifs.
 
 Vous pouvez ajouter des images sous le dossier cmuserroot. Dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md), à l’aide de la propriété Racine de l’utilisateur de CM, vous pouvez changer le dossier d’où l’image de la signature de l’agent est récupérée.
 
-La valeur du DDE agentFolder est extraite du paramètre de configuration CMUserRoot pour les propriétés de configuration de Correspondence Management. Par défaut, ce paramètre de configuration pointe sur /content/cmUserRoot dans le référentiel CRX. Vous pouvez modifier la valeur de la configuration CMUserRoot dans les Propriétés de configuration.
+La valeur du DDE agentFolder est extraite du paramètre de configuration CMUserRoot pour les propriétés de configuration de Correspondence Management. Par défaut, ce paramètre de configuration pointe sur /content/cmUserRoot dans le référentiel CRX. Vous pouvez modifier la valeur de la configuration de CMUserRoot dans Propriétés de configuration.
 Vous pouvez également remplacer la fonction personnalisée par défaut de manière à définir votre propre logique pour récupérer l’image de la signature de l’utilisateur.
 
 ## Ajouter l’image de la signature de l’agent {#adding-agent-signature-image}
 
-1. Assurez-vous que l’image de la signature de l’agent porte le même nom que le nom d’utilisateur AEM de l’utilisateur. (L’extension n’est pas nécessaire pour le nom du fichier image.)
+1. Assurez-vous que l’image de la signature de l’agent porte le même nom que le nom d’utilisateur AEM de l’utilisateur. (L’extension n’est pas requise pour le nom de fichier de l’image.)
 1. Dans CRX, créez un dossier intitulé `cmUserRoot` dans le dossier de contenu.
 
    1. Accédez à `https://'[server]:[port]'/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
@@ -42,11 +42,11 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       ![Créer un dossier](assets/1_createnode_cmuserroot.png)
 
-   1. Dans la boîte de dialogue Créer un dossier, saisissez le nom de dossier`cmUserRoot` . Cliquez sur **Enregistrer tout**.
+   1. Dans la boîte de dialogue Créer un dossier, saisissez le nom de dossier `cmUserRoot`. Cliquez sur **Enregistrer tout**.
 
       >[!NOTE]
       >
-      >cmUserRoot correspond à l’emplacement par défaut où AEM recherche l’image de la signature de l’agent. Vous pouvez toutefois le modifier en modifiant la propriété Racine de l’utilisateur de CM dans les [propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
+      >cmUserRoot correspond à l’emplacement par défaut où AEM recherche l’image de la signature de l’agent. Vous pouvez cependant le modifier en éditant la propriété Racine de l’utilisateur de CM dans les [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
 1. Dans l’explorateur de contenu, accédez au dossier cmUserRoot et ajoutez-y l’image de la signature de l’agent.
 
@@ -58,21 +58,21 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       Effectuez les entrées suivantes de la rangée pour le nouveau nœud, puis cliquez sur la coche verte.
 
-      **Nom :** JohnDoe (ou le nom de votre fichier de signature de l’agent)
+      **Nom :** JohnDoe (ou le nom de votre fichier de signature de l’agent).
 
       **Type :** nt:file
 
-      Sous le dossier `cmUserRoot` , un nouveau dossier appelé `JohnDoe` (ou le nom que vous avez donné à l’étape précédente) est créé.
+      Sous le dossier `cmUserRoot`, un nouveau dossier intitulé `JohnDoe` (ou le nom que vous avez attribué à l’étape précédente) est créé.
 
-   1. Cliquez sur le nouveau dossier que vous avez créé (ici`JohnDoe` ). L’Explorateur de contenu affiche le contenu du dossier en grisé.
+   1. Cliquez sur le nouveau dossier que vous avez créé (ici`JohnDoe` ). L’explorateur de contenu affiche le contenu du dossier en grisé.
 
-   1. Double-cliquez sur la propriété **jcr:content**, définissez son type sur **nt:resource**, puis cliquez sur la coche verte pour enregistrer l’entrée.
+   1. Cliquez deux fois sur la propriété **jcr:content**, définissez le type **nt:resource**, puis cliquez sur la coche verte pour enregistrer cette entrée.
 
       Si la propriété n’est pas disponible, vous devez d’abord créer une propriété avec le nom jcr:content.
 
       ![propriété jcr:content](assets/3_jcrcontentntresource.png)
 
-      Parmi les sous-propriétés de jcr:content se trouve jcr:data en grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Cliquez sur **Choisir le fichier** et sélectionnez le fichier image à utiliser comme logo. Le fichier image n’a pas besoin d’extension.
+      Parmi les sous-propriétés de jcr:content se trouve jcr:data en grisé. Double-cliquez sur jcr:data. La propriété devient modifiable et le bouton Choisir un fichier apparaît dans l’entrée. Cliquez sur **Choisir un fichier** et sélectionnez le fichier image que vous souhaitez utiliser comme logo. Le fichier image n’a pas besoin d’extension.
 
       ![Données JCR](assets/5_jcrdata.png)
    Cliquez sur **Enregistrer tout**.
