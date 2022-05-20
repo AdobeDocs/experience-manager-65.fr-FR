@@ -1,18 +1,18 @@
 ---
 title: Fragments de document
-seo-title: Fragments de document
+seo-title: Document Fragments
 description: Les fragments de document, tels que du texte, des listes, des conditions et des fragments de disposition, dans Gestion de la correspondance, permettent de former les composants statiques, dynamiques et répétables de la correspondance de client.
-seo-description: Fragments de document, comme des fragments de texte, de listes, de conditions et de mise en page, dans Correspondence Management, vous permettent de former les composants statiques, dynamiques et répétables de la correspondance client.
+seo-description: Document Fragments, such as Text, lists, conditions, and layout fragments, in Correspondence Management let you form the static, dynamic, and repeatable components of customer correspondence.
 uuid: 053a17e5-69a5-463d-af4f-46a86534158f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1f48548c-4222-454d-ad16-53da37170de2
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: ff3a4cba-a1a6-4fc9-8466-da7f28a74fb5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 91%
+workflow-type: ht
+source-wordcount: '239'
+ht-degree: 100%
 
 ---
 
