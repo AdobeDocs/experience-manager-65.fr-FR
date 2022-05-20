@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Cet article comprend une présentation, des exemples de cas d’utilisation, un 
 
 ![](do-not-localize/correspondence-management.png)
 
-Les communications interactives centralisent et gèrent la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives telles que la correspondance commerciale, les documents, les déclarations, les avis de prestations, les courriers marketing, les factures et les kits de bienvenue.
+Les communications interactives centralisent et gèrent la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives telles que la correspondance commerciale, les documents, les déclarations, les prospectus de gestion de patrimoine, les e-mails marketing, les factures et les kits de bienvenue.
 
 ## Fonctionnalités essentielles {#key-capabilities}
 
@@ -33,7 +33,7 @@ Voici les fonctionnalités principales des communications interactives :
 - Interface de création intégrée pour les canaux d’impression et web avec fonction de génération automatique du canal web à partir du canal d’impression
 - Graphiques de présentation de l’information dans des formats visuels facilement compréhensibles sur papier et sur le Web
 - Éditeur de règles de support de fragments de document et modèle de données de formulaire
-- L’interface utilisateur de l’agent affiche un aperçu avant impression et web de la communication interactive.
+- L’interface utilisateur de l’agent affiche un aperçu web et un aperçu avant impression de la communication interactive.
 - Glisser-déposer les composants pour construire rapidement les canaux web et d’impression
 
 ## Création de la communication interactive {#interactive-communication-creation}
@@ -42,7 +42,7 @@ Voici les fonctionnalités principales des communications interactives :
 
 ### Workflow {#workflow}
 
-Pour créer une communication interactive, vous devez disposer de la variable [blocs de création](#buildingblocks) pour la communication interactive prête, puis effectuez les étapes suivantes :
+Pour créer une communication interactive, préparez les [blocs de construction](#buildingblocks) de la communication interactive et effectuez les étapes suivantes :
 
 1. Choisissez de [créer une communication interactive](/help/forms/using/create-interactive-communication.md).
 
@@ -52,7 +52,7 @@ Pour créer une communication interactive, vous devez disposer de la variable [b
 1. Configurez les propriétés suivantes des composants insérés :
 
    1. [Images](/help/forms/using/create-interactive-communication.md#step2)
-   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables) (y compris les fragments de mise en page)
+   1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables) (y compris les fragments de mise en page).
    1. [Graphiques](/help/forms/using/chart-component-interactive-communications.md)
    1. [Fragments de document](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
@@ -67,11 +67,11 @@ Les blocs de construction requis pour la création d’une communication interac
 - [Modèles de canaux web et d’impression](/help/forms/using/web-channel-print-channel.md)
 - [Fragments de document](/help/forms/using/document-fragments.md)
 - Images
-- [Thèmes](/help/forms/using/themes.md) pour le canal web
+- [Thèmes](/help/forms/using/themes.md) pour le canal web.
 
 ## Comparaison entre les communications interactives et Correspondence Management {#interactive-communications-vs-correspondence-management}
 
-La communication interactive est l’approche par défaut et recommandée pour créer des communications client. Pour continuer à utiliser la création de lettres dans AEM 6.3 Forms et AEM 6.2 Forms, vous devez [installer un package de compatibilité](/help/forms/using/compatibility-package.md). Voici une comparaison entre les fonctionnalités de la communication interactive et la lettre.
+La communication interactive est l’approche par défaut et recommandée pour créer des communications client. Pour continuer à utiliser la création de lettres dans AEM 6.3 Forms et AEM 6.2 Forms, vous devez [installer un package de compatibilité](/help/forms/using/compatibility-package.md). Voici une comparaison entre les fonctionnalités de la communication interactive et de la lettre.
 
 <table>
  <tbody>
@@ -131,7 +131,7 @@ La communication interactive est l’approche par défaut et recommandée pour c
   </tr>
   <tr>
   <tr>
-   <td>Audit</td>
+   <td>Contrôle</td>
    <td>Pas de prise en charge</td>
    <td>Pris en charge</td>
   </tr>
