@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des tableaux de suivi
-seo-title: Personnalisation des tableaux de suivi
+seo-title: Customize tracking tables
 description: Comment personnaliser l’affichage des détails des processus utilisateur dans le tableau de la tâche affiché dans l’onglet de suivi de l’espace de travail AEM Forms.
-seo-description: Comment personnaliser l’affichage des détails des processus utilisateur dans le tableau de la tâche affiché dans l’onglet de suivi de l’espace de travail AEM Forms.
+seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,22 +10,22 @@ topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 79%
+workflow-type: ht
+source-wordcount: '330'
+ht-degree: 100%
 
 ---
 
 # Personnalisation des tableaux de suivi{#customize-tracking-tables}
 
-L’onglet de suivi de l’espace de travail AEM Forms est utilisé pour afficher les détails des instances de processus dans lesquelles l’utilisateur connecté est impliqué. Afin de visualiser les tableaux de suivi, vous devez d’abord sélectionner le nom d’un processus dans le volet gauche pour afficher la liste de ses instances dans le volet central. Sélectionnez une instance de processus pour afficher un tableau des tâches générées par cette instance dans le volet droit. Par défaut, les colonnes du tableau affichent les attributs de tâche suivants (l’attribut correspondant dans le modèle de tâche est indiqué entre parenthèses) :
+L’onglet de suivi dans l’espace de travail AEM Forms est utilisé pour afficher les détails des instances de processus dans lesquelles l’utilisateur connecté est impliqué. Afin de visualiser les tableaux de suivi, vous devez d’abord sélectionner le nom d’un processus dans le volet gauche pour afficher la liste de ses instances dans le volet central. Sélectionnez une instance de processus pour afficher un tableau des tâches générées par cette instance dans le volet droit. Par défaut, les colonnes du tableau affichent les attributs de tâche suivants (l’attribut correspondant dans le modèle de tâche est indiqué entre parenthèses) :
 
 * ID ( `taskId`)
 * Nom ( `stepName`)
 * Instructions ( `instructions`)
 * Action sélectionnée ( `selectedRoute`)
-* Heure de création ( `createTime`)
-* Heure d’achèvement ( `completeTime`)
+* Heure de création (`createTime`)
+* Heure de fin (`completeTime`)
 * Propriétaire ( `currentAssignment.queueOwner`)
 
 Les attributs restants dans le modèle de tâche disponibles à l’affichage dans le tableau de la tâche sont les suivants :
@@ -115,7 +115,7 @@ Les attributs restants dans le modèle de tâche disponibles à l’affichage da
  </tbody>
 </table>
 
-Pour les personnalisations suivantes dans le tableau de la tâche, vous devez effectuer des modifications sémantiques dans le code source. Voir [Présentation de la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour savoir comment effectuer des modifications sémantiques à l’aide du SDK de l’espace de travail et créer un module minifié à partir de la source modifiée.
+Pour les personnalisations suivantes dans le tableau de la tâche, vous devez effectuer des modifications sémantiques dans le code source. Reportez-vous à la section [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour savoir comment effectuer des modifications sémantiques à l’aide du SDK de l’espace de travail et créer un package minimisé à partir de la source modifiée.
 
 ## Modification des colonnes du tableau et de leur tri {#changing-table-columns-and-their-order}
 
@@ -157,7 +157,7 @@ Pour les personnalisations suivantes dans le tableau de la tâche, vous devez ef
 
 Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tête de la colonne :
 
-1. Enregistrez un gestionnaire de clics pour `.fixedTaskTableHeader th` dans le fichier `js/runtime/views/processinstancehistory.js`.
+1. Enregistrez un gestionnaire de clic pour `.fixedTaskTableHeader th` dans le fichier `js/runtime/views/processinstancehistory.js`.
 
    ```javascript
    events: {
