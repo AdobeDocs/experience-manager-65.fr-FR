@@ -1,8 +1,8 @@
 ---
 title: Proxy de service de formulaires HTML5
-seo-title: Proxy de service de formulaires HTML5
+seo-title: HTML5 forms service proxy
 description: 'Le proxy de service de formulaires HTML5 est une configuration permettant d’enregistrer un proxy pour le service d’envoi. Pour configurer le proxy, précisez l’URL du service d’envoi via le paramètre de demande du proxy de service d’envoi : submissionServiceProxy.'
-seo-description: 'Le proxy de service de formulaires HTML5 est une configuration permettant d’enregistrer un proxy pour le service d’envoi. Pour configurer le proxy, précisez l’URL du service d’envoi via le paramètre de demande du proxy de service d’envoi : submissionServiceProxy.'
+seo-description: HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter submissionServiceProxy.
 uuid: 42d6c1da-3945-469d-b429-c33e563ed70c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,9 +12,9 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '697'
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Le proxy de service de formulaires HTML5 est une configuration permettant d’en
 
 ## Avantages du proxy de service {#benefits-of-service-proxy-br}
 
-Le proxy de service élimine les éléments suivants :
+Le proxy de service élimine les opérations suivantes :
 
 * Le flux de travail de formulaires HTML5 nécessite une connexion au service d’envoi « /content/xfaforms/submission/default » pour les utilisateurs de formulaires HTML5. Il expose les serveurs AEM à un public plus large et sans précédent.
 * L’URL de service est incluse dans le modèle d’exécution du formulaire. Il est impossible de changer le chemin de l’URL de service.
-* L’envoi est un processus en deux étapes. Pour l&#39;envoi de données au formulaire, au moins deux voyages vers le serveur sont nécessaires. Par conséquent, la charge sur le serveur augmente.
+* L’envoi est un processus en deux étapes. Pour l’envoi de données au formulaire, au moins deux voyages vers le serveur sont nécessaires. Par conséquent, la charge sur le serveur augmente.
 * Les formulaires HTML5 envoient des données dans la demande de post-traitement au lieu de la demande PDF. Pour le flux de travail impliquant des formulaires PDF et HTML5, deux méthodes différentes sont nécessaires pour traiter les envois.
 
 ### Topologies {#topologies-br}
@@ -89,7 +89,7 @@ Les scripts destinés à s’exécuter sur le serveur sont appelés scripts côt
  </tbody>
 </table>
 
-#### Envoi de données  {#submit-data}
+#### Envoi de données {#submit-data}
 
 En cliquant sur le bouton Envoyer, les formulaires HTML5 envoient des données au serveur. Le tableau suivant répertorie tous les paramètres que les formulaires HTML5 envoient au serveur.
 
@@ -126,7 +126,7 @@ En cliquant sur le bouton Envoyer, les formulaires HTML5 envoient des données a
  </tbody>
 </table>
 
-#### Fonctionnement du proxy d’envoi.  {#how-nbsp-the-nbsp-submit-proxy-works}
+#### Fonctionnement du proxy d’envoi. {#how-nbsp-the-nbsp-submit-proxy-works}
 
 Si submiturl ne figure pas dans le paramètre de requête, le proxy de service d’envoi agit en tant que passerelle. Il agit en tant que passerelle. Il envoie la requête à l’extrémité //bin/xfaforms/submitaction et la réponse à l’exécution XFA.
 
@@ -135,4 +135,4 @@ Si submiturl figure dans le paramètre de requête, le proxy de service d’envo
 * Si les serveurs AEM publient les données, le service de proxy agit comme une passerelle. Il envoie la requête à l’extrémité //bin/xfaforms/submitaction et la réponse à l’exécution XFA.
 * Si le proxy publie les données, le service de proxy transmet tous les paramètres, à l’exception de submitUrl, à l’extrémité */bin/xfaforms/submitaction* et reçoit des octets XML dans le flux de réponse. Ensuite, le service de proxy publie les octets XML de données au paramètre submitUrl pour traitement.
 
-* Avant d’envoyer des données (demande de post-traitement) sur un serveur, les formulaires HTML5 vérifient la connectivité et la disponibilité du serveur. Pour vérifier la connectivité et la disponibilité, les formulaires HTML envoient une première demande vide au serveur. Si le serveur est disponible, les formulaires HTML5 envoie les données (demande de post-traitement) au serveur. Si le serveur n’est pas disponible, un message d’erreur *Impossible de se connecter au serveur,* s’affiche. La détection anticipée prévient les problèmes lors du remplissage du formulaire par les utilisateurs. Le servlet proxy gère la requête head et ne lance pas d’exception.
+* Avant d’envoyer des données (demande de post-traitement) sur un serveur, les formulaires HTML5 vérifient la connectivité et la disponibilité du serveur. Pour vérifier la connectivité et la disponibilité, les formulaires HTML envoient une première demande vide au serveur. Si le serveur est disponible, les formulaires HTML5 envoie les données (demande de post-traitement) au serveur. Sinon, le message d’erreur *Could’t connect to the server* (connexion au serveur impossible) s’affiche. La détection anticipée prévient les problèmes lors du remplissage du formulaire par les utilisateurs. La servlet de proxy gère la requête HEAD et ne lance aucune exception.
