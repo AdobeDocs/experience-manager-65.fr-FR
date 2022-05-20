@@ -1,8 +1,8 @@
 ---
 title: Création et gestion des jeux de stratégies
-seo-title: Création et gestion des jeux de stratégies
+seo-title: Creating and managing policy sets
 description: Les jeux de stratégies regroupent plusieurs stratégies ayant une finalité commune. Vous pouvez également créer, modifier et supprimer des stratégies dans un jeu de stratégies.
-seo-description: Les jeux de stratégies regroupent plusieurs stratégies ayant une finalité commune. Vous pouvez également créer, modifier et supprimer des stratégies dans un jeu de stratégies.
+seo-description: Policy sets are used to group policies that have a common business purpose. You can create, edit and delete policies in a policy set.
 uuid: 11faf67c-b9b7-4394-8672-d43cace131ad
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1326'
+workflow-type: ht
+source-wordcount: '1295'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ Le Jeu de stratégies global est le seul jeu de stratégies par défaut créé l
 Lors de la création d’un jeu de stratégies, cliquez sur le bouton Précédent pour revenir à l’écran précédent, et sur le bouton Enregistrer pour enregistrer votre jeu de stratégies à tout moment.
 
 1. Dans la page Document Security, cliquez sur Stratégies, sur l’onglet Jeux de stratégies, puis sur Nouveau.
-1. Dans la zone Nom, saisissez le nom du jeu de stratégies, indiquez éventuellement une description dans la zone Description, puis cliquez sur Suivant. Le nom ne peut pas contenir de caractère deux-points **:**.
+1. Dans la zone Nom, saisissez le nom du jeu de stratégies, indiquez éventuellement une description dans la zone Description, puis cliquez sur Suivant. Le nom ne peut pas contenir de caractère deux-points **:**.
 
    >[!NOTE]
    >
@@ -89,7 +89,7 @@ Lors de la création d’un jeu de stratégies, cliquez sur le bouton Précéden
 
 Vous pouvez maintenant ajouter des stratégies à votre jeu de stratégies (voir [Création et modification de stratégies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)).
 
-## Modification d’un jeu de stratégies  {#edit-a-policy-set}
+## Modification d’un jeu de stratégies {#edit-a-policy-set}
 
 1. Dans la page Document Security, cliquez sur Stratégies, sur l’onglet Jeux de stratégies, puis sur le jeu de stratégies à modifier.
 1. Cliquez sur l’onglet approprié, puis effectuez les modifications souhaitées :
@@ -107,7 +107,7 @@ Vous pouvez maintenant ajouter des stratégies à votre jeu de stratégies (voir
    * Pour rechercher une stratégie, sélectionnez ID de la stratégie ou Nom de la stratégie, saisissez la valeur correspondante, sélectionnez le nombre d’éléments à afficher et cliquez sur Rechercher.
    * Pour plus d’informations sur la création d’une nouvelle stratégie, voir [Création et modification de stratégies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
-## Suppression d’un jeu de stratégies  {#delete-a-policy-set}
+## Suppression d’un jeu de stratégies {#delete-a-policy-set}
 
 Lorsque vous supprimez un jeu de stratégies, les stratégies qui faisaient partie de ce jeu ne peuvent pas être appliquées aux nouveaux documents. Cependant, vous pouvez afficher les informations de stratégie dans Administration Console et dans les pages Web destinées aux utilisateurs finaux, correspondant aux stratégies toujours utilisées. Vous pouvez afficher les informations de stratégie dans la page Détails du document pour tout document protégé par la stratégie. Les stratégies encore utilisées peuvent être modifiées.
 
