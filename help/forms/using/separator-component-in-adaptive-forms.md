@@ -1,18 +1,18 @@
 ---
 title: Composant Separator dans les formulaires adaptatifs
-seo-title: Composant Separator dans les formulaires adaptatifs
+seo-title: Separator component in adaptive forms
 description: Vous pouvez utiliser le composant séparateur pour isoler visuellement les sections d’un formulaire.
-seo-description: Vous pouvez utiliser le composant séparateur pour isoler visuellement les sections d’un formulaire.
+seo-description: You can use the separator component to visually segregate sections of a form.
 uuid: f8d2aed3-52aa-437f-bfe3-0c8779e7986c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: a8aa77fe-5880-4c4e-9e1b-3c5a8772c29d
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '317'
+workflow-type: ht
+source-wordcount: '297'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Vous pouvez utiliser le composant séparateur pour isoler visuellement les panne
 
 * **Classe CSS :** spécifie la classe CSS personnalisée pour le composant séparateur
 
-* **Styles en ligne :** avec AEM Forms, vous pouvez désormais appliquer des styles CSS en ligne à chaque composant de formulaire adaptatif et prévisualiser les modifications en temps réel.
+* **Styles en ligne :** avec AEM Forms, vous pouvez désormais appliquer des styles CSS en ligne à chaque composant de formulaire adaptatif et prévisualiser les modifications en temps réel.
 
 Vous pouvez utiliser le mode Mise en page pour définir le nombre de colonnes sur lequel s’étend le composant séparateur. Pour plus d’informations, voir [Utilisation du mode Mise en page pour redimensionner les composants](../../forms/using/resize-using-layout-mode.md).
 
