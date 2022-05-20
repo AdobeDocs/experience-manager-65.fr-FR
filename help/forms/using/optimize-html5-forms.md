@@ -1,8 +1,8 @@
 ---
 title: Optimisation des formulaires HTML5
-seo-title: Optimisation des formulaires HTML5
+seo-title: Optimizing HTML5 forms
 description: Vous pouvez optimiser la taille de sortie des formulaires HTML5.
-seo-description: Vous pouvez optimiser la taille de sortie des formulaires HTML5.
+seo-description: You can optimize the output size of the HTML5 forms.
 uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '283'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Cet article décrit les étapes à suivre pour activer la compression sur le ser
 
 >[!NOTE]
 >
->Les instructions suivantes ne s’appliquent qu’au serveur web Apache 2.0 32 bits.
+>Les instructions suivantes ne concernent que le serveur web Apache 2.0 32 bits.
 
 Procurez-vous le logiciel du serveur Web Apache applicable sur votre système d’exploitation :
 
@@ -60,7 +60,7 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    >
    >Lorsque vous utilisez un proxy, les modifications de configuration suivantes sont requises :
    >
-   >* Accès : *https://&lt;serveur>:&lt;port>/system/console/configMgr*
+   >* Accès : *https://&lt;server>:&lt;port>/system/console/configMgr*
    * Modification de la configuration pour Apache Sling Referrer Filter
    * Dans le champ Allow Hosts (Autoriser les hôtes), ajoutez une entrée pour le serveur proxy
 
@@ -85,4 +85,4 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    </Location>
    ```
 
-1. Pour accéder au serveur AEM, utilisez https://[Apache_server]:80.
+1. Pour accéder au serveur AEM, utilisez https://[Apache_server]:80.
