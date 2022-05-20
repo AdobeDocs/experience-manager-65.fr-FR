@@ -1,8 +1,8 @@
 ---
 title: Mesure et amélioration de l’efficacité et de la conversion des formulaires
-seo-title: Mesure et amélioration de l’efficacité et de la conversion des formulaires
+seo-title: Measure and improve effectiveness and conversion of forms
 description: AEM Forms s’intègre aux solutions Adobe Target et Adobe Analytics, ce qui vous permet de mesurer et d’améliorer les performances et le taux de conversion de vos formulaires.
-seo-description: AEM Forms s’intègre aux solutions Adobe Target et Adobe Analytics, ce qui vous permet de mesurer et d’améliorer les performances et le taux de conversion de vos formulaires.
+seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
 uuid: fd2f087c-39f5-457d-8b44-c3ec4400b3fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '1278'
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ Pour optimiser le retour sur investissement, les entreprises doivent contrôler 
 
 ## La solution {#the-solution}
 
-AEM Forms s’intègre aux solutions [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) et [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - qui peuvent vous aider à surveiller et analyser les performances de vos formulaires et vous permettent d’expérimenter et d’identifier l’expérience qui conduit à un meilleur taux de conversion.
+AEM Forms s’intègre aux solutions [Adobe Marketing Cloud](https://www.adobe.com/fr/marketing-cloud.html), [Adobe Analytics](https://www.adobe.com/fr/marketing-cloud/web-analytics.html) et [Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html), qui peuvent vous aider à surveiller et à analyser les performances de vos formulaires et vous permettre de tester et d’identifier l’expérience qui conduit à un meilleur taux de conversion.
 
-## Le flux de travail {#the-workflow}
+## Le processus {#the-workflow}
 
 Voyons en détail la façon dont vous pouvez mesurer les performances et améliorer les taux de conversion des formulaires.
 
@@ -69,11 +69,11 @@ Pour obtenir des informations détaillées sur les interactions client avec vos 
 1. Configuration du service de configuration d’AEM Forms Analytics dans AEM
 1. Activation de l’analyse du formulaire dans AEM
 
-Pour obtenir des instructions détaillées, voir [Configuration des analyses et des rapports pour les formulaires adaptatifs](../../forms/using/configure-analytics-forms-documents.md).
+Pour les étapes détaillées, voir [Configurer des analyses et des rapports pour les formulaires adaptatifs](../../forms/using/configure-analytics-forms-documents.md).
 
 **Configuration de Target**
 
-Pour créer et exécuter des tests A/B pour vos formulaires adaptatifs, configurez Target dans AEM Forms comme décrit dans [Configuration et intégration de Target dans AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Pour créer et exécuter des tests A/B pour vos formulaires adaptatifs, configurez Target dans AEM Forms comme décrit dans [Configurer et intégrer Target dans AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
 #### Etape 2 : Afficher le rapport d’analyse {#step-view-analytics-report-br}
 
@@ -127,7 +127,7 @@ Dans cette étape, vous analyserez les points de données des rapports d’analy
 
 Après avoir analysé ces points de données et formulé une hypothèse, apportez les modifications requises au formulaire.
 
-#### Étape 4 : Valider votre analyse et vos correctifs  {#step-validate-your-analysis-and-fixes}
+#### Étape 4 : Valider votre analyse et vos correctifs {#step-validate-your-analysis-and-fixes}
 
 Dans cette étape, vous allez valider les modifications apportées au formulaire et vérifier si elles influencent le taux de conversion.
 
