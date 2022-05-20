@@ -1,19 +1,19 @@
 ---
 title: Configuration d’une page de redirection
-seo-title: Configuration d’une page de redirection
+seo-title: Configuring redirect page
 description: Après avoir complété un formulaire adaptatif, les utilisateurs peuvent être redirigés vers une page Web que les auteurs de formulaires peuvent configurer lors de la phase de création.
-seo-description: Après avoir complété un formulaire adaptatif, les utilisateurs peuvent être redirigés vers une page Web que les auteurs de formulaires peuvent configurer lors de la phase de création.
+seo-description: After filling an adaptive form, users can be redirected to a webpage that form authors can configure while creating the form.
 uuid: f9d304b4-920d-4e50-a674-40eca48c530c
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 0ffbb4d3-9371-4705-8496-f98e22d9c4a6
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: be1a774f-5681-443f-b195-28e89a020547
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 81%
+workflow-type: ht
+source-wordcount: '237'
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle le
 
 Configuration de la page de redirection
 
-Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Pour toutes les actions d’envoi disponibles, les paramètres `status` et `owner` sont transmis. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
+Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. Les paramètres `status` et `owner` sont transmis pour toutes les actions d’envoi disponibles. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
 
-* **Action**  Stocker le contenu (obsolète) :  `contentPath`: le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
+* **Action Stocker le contenu** (obsolète) : `contentPath`--le chemin d’accès du nœud dans le référentiel où sont stockées les données envoyées est transmis.
 
-* **Action Stocker le PDF**  (obsolète) :  `contentPath`—des données envoyées et du chemin d’accès au noeud stockant le fichier PDF dans le référentiel—est transmis.
+* **Action Stocker le PDF** (obsolète) : `contentPath`--des données envoyées et le chemin d’accès au nœud de stockage du fichier PDF dans le référentiel sont transmis.
 
 * **Flux de travail Envoyer aux formulaires** : les paramètres de sortie renvoyés à partir du flux de travail des formulaires sont transmis.
 
