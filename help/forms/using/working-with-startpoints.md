@@ -1,8 +1,8 @@
 ---
 title: Utilisation des points de départ
-seo-title: Utilisation des points de départ
+seo-title: Working with Startpoints
 description: Travailler avec un processus AEM Forms défini dans Workbench depuis votre périphérique mobile.
-seo-description: Travailler avec un processus AEM Forms défini dans Workbench depuis votre périphérique mobile.
+seo-description: Steps to work with a AEM Forms process from your Mobile device defined in Workbench.
 uuid: 1c4b4c86-cbdb-4e72-b0eb-7f8a2f5dcdde
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 1ea60fb2-cf9f-4a87-bd8e-98150e668456
 docset: aem65
 exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 81%
+workflow-type: ht
+source-wordcount: '235'
+ht-degree: 100%
 
 ---
 
@@ -25,16 +25,16 @@ Un point de départ appelle un processus créé dans Workbench. Il est associé 
 >
 >Les termes « points de départ », « processus de démarrage » et « formulaire » sont indifféremment utilisés pour désigner ce concept.
 
-Pour lancer un processus à partir de l’application AEM Forms, vous devez disposer d’un point de départ de type **Workspace** dans votre processus. En outre, vous devez sélectionner l’option **[!UICONTROL Visible dans Mobile Workspace]** pour le point de départ.
+Pour lancer un processus à partir de l’application AEM Forms, vous devez disposer d’un point de départ de type **Espace de travail** dans votre processus. En outre, vous devez sélectionner l’option **[!UICONTROL Visible dans Mobile Workspace]** pour le point de départ.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
 **Démarrage d’un processus défini dans Workbench**
 
 1. Pour afficher les points de départ disponibles dans l’application AEM Forms, accédez à l’écran [Accueil](../../forms/using/home-screen.md).
-1. Dans l’écran **[!UICONTROL Accueil]**, la liste **[!UICONTROL Toutes les Forms]** s’affiche par défaut.
+1. Sur l’écran d’**[!UICONTROL Accueil]**, la liste **[!UICONTROL Tous les formulaires]** s’affiche par défaut.
 
-   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans la liste pour l’ouvrir.
+   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans la liste pour l’ouvrir.
 
    Le formulaire associé au point de départ s’ouvre.
 
