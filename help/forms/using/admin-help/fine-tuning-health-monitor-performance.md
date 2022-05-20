@@ -1,8 +1,8 @@
 ---
-title: Réglage précis des performances d’Health Monitor
-seo-title: Réglage précis des performances de Health Monitor
+title: Réglage précis des performances de Health Monitor
+seo-title: Fine-tuning Health Monitor performance
 description: Découvrez comment optimiser les performances de Health Monitor
-seo-description: Découvrez comment optimiser les performances de Health Monitor
+seo-description: Learn how to fine-tune Health Monitor performance
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: '407'
+ht-degree: 100%
 
 ---
 
-# Réglage précis des performances de Health Monitor{#fine-tuning-health-monitor-performance}
+# Réglage précis des performances d’Health Monitor{#fine-tuning-health-monitor-performance}
 
 La collecte des statistiques système qui remplissent Health Monitor a une incidence sur les performances de votre environnement AEM forms. Vous pouvez contrôler cette incidence en définissant les options Java répertoriées ci-dessous dans votre serveur d’applications.
 
@@ -66,20 +66,20 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
 ## Ajout d’options Java à JBoss {#add-java-options-to-jboss}
 
 1. Arrêtez le serveur d’applications JBoss.
-1. Ouvrez la *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez l’une des options Java nécessaires.
+1. Ouvrez la *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez toutes les options Java requises.
 1. Redémarrez le serveur.
 
-## Ajout d’options Java à WebLogic  {#add-java-options-to-weblogic}
+## Ajout d’options Java à WebLogic {#add-java-options-to-weblogic}
 
-1. Démarrez WebLogic Administration Console en saisissant https://[nom d’hôte]:&#39;port&#39;/console dans la ligne d’adresse d’un navigateur Web.
+1. Ouvrez la console d’administration WebLogic en saisissant https://[nom hôte]:&#39;port&#39;/console dans la ligne d’URL d’un navigateur web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
-1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. Par exemple, l’ajout de - `Dadobe.healthmonitor.enabled=false` désactive Health Monitor.
+1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. Par exemple, ajouter ‑ `Dadobe.healthmonitor.enabled=false` permet de désactiver Health Monitor.
 1. Cliquez sur Enregistrer, puis sur Activer les changements.
 1. Redémarrez le serveur géré WebLogic.
 
-## Ajout d’options Java à WebSphere  {#add-java-options-to-websphere}
+## Ajout d’options Java à WebSphere {#add-java-options-to-websphere}
 
 1. Dans l’arborescence de navigation de la console d’administration WebSphere, effectuez la procédure suivante pour le serveur d’applications :
 
