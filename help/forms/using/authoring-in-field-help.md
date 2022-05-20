@@ -1,18 +1,18 @@
 ---
 title: Création d’une aide contextuelle pour les champs de formulaire
-seo-title: Création d’une aide contextuelle pour les champs de formulaire
+seo-title: Authoring in-context help for form fields
 description: AEM Forms permet d’ajouter une aide contextuelle aux champs et aux panneaux des formulaires adaptatifs sous forme de texte ou de contenu multimédia enrichi tel que des vidéos.
-seo-description: AEM Forms permet d’ajouter une aide contextuelle aux champs et aux panneaux des formulaires adaptatifs sous forme de texte ou de contenu multimédia enrichi tel que des vidéos.
+seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
 uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '395'
+workflow-type: ht
+source-wordcount: '366'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Vous pouvez spécifier une aide contextuelle à l’aide des options suivantes d
 >
 >La description longue remplace la description courte. Si vous avez spécifié les deux, seule la description longue s’affiche.
 
-### Description courte  {#short-description}
+### Description courte {#short-description}
 
 Le champ Description courte permet de fournir des conseils courts et rapides pour le remplissage d’un champ de formulaire. Le texte saisi dans le champ Description courte s’affiche sous forme d’info-bulle lorsque le pointeur de la souris est placé sur le champ.
 
