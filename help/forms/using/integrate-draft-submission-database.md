@@ -1,8 +1,8 @@
 ---
 title: Exemple d’intégration d’un composant brouillons & envois à la base de données
-seo-title: Exemple d’intégration d’un composant brouillons & envois à la base de données
+seo-title: Sample for integrating drafts & submissions component with database
 description: Référencez l’implémentation des services de données et de métadonnées personnalisés pour intégrer les composants brouillons et envois à une base de données.
-seo-description: Référencez l’implémentation des services de données et de métadonnées personnalisés pour intégrer les composants brouillons et envois à une base de données.
+seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
 uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,15 +10,15 @@ topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 92%
+workflow-type: ht
+source-wordcount: '1467'
+ht-degree: 100%
 
 ---
 
 # Exemple d’intégration d’un composant brouillons &amp; envois à la base de données {#sample-for-integrating-drafts-submissions-component-with-database}
 
-## Aperçu de l&#39;exemple {#sample-overview}
+## Aperçu de l’exemple {#sample-overview}
 
 Le composant brouillons et envois du portail AEM Forms permet aux utilisateurs d’enregistrer leurs formulaires en tant que brouillons et de les envoyer ultérieurement via n’importe quel périphérique. En outre, les utilisateurs peuvent visualiser leurs formulaires envoyés sur le portail. Pour activer cette fonctionnalité, AEM Forms fournit des services de données et de métadonnées pour stocker les données spécifiées par un utilisateur dans le formulaire et les métadonnées de formulaire associées aux brouillons et aux formulaires envoyés. Ces données sont stockées dans le référentiel CRX, par défaut. Toutefois, à mesure que les utilisateurs interagissent avec les formulaires via l’instance de publication AEM, qui se trouve généralement à l’extérieur du pare-feu d’entreprise, les organisations peuvent vouloir personnaliser le stockage de données pour qu’il soit plus sécurisé et fiable. 
 
@@ -27,8 +27,8 @@ L’exemple présenté dans ce document est une implémentation de référence d
 >[!NOTE]
 >
 >* Les exemples et les configurations décrits dans ce document correspondent à MySQL 5.6.24 et vous devez les remplacer de manière appropriée selon votre système de base de données. 
->* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
->* L’exemple de package fonctionne uniquement avec les actions d’envoi Forms adaptatif.
+>* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+>* L’exemple de package fonctionne uniquement avec les actions d’envoi de formulaires adaptatifs.
 
 
 ## Installer et configurer l’exemple {#set-up-and-configure-the-sample}
@@ -41,12 +41,12 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Accédez à AEM gestionnaire de packages à l’adresse https://[*host*]:[*port*]/crx/packmgr/.
+1. Accédez au gestionnaire de modules AEM à l’adresse https://[*host*]:[*port*]/crx/packmgr/.
 1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
 
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Installer]** en regard du package pour installer le package. 
-1. Accédez à **[!UICONTROL Configuration de la console Web AEM]**
+1. Accédez à la page de **[!UICONTROL configuration de la console web AEM]**
 à l’adresse https://[*host*]:[*port*]/system/console/configMgr.
 1. Cliquez pour ouvrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** (Configuration des brouillons et des envois du portail Forms) en mode d’édition.
 
@@ -83,11 +83,11 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de données du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau de données.
    >[!NOTE]
    >
-   >Si vous modifiez les noms de tableau, indiquez-les dans la configuration du portail de formulaires.
+   >Si vous modifiez les noms du tableau, renseignez-les dans la configuration du portail Formulaires.
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
-1. La connexion à la base de données peut être effectuée via la source de données en pool de la connexion Apache Sling.
+1. La connexion à la base de données peut être effectuée via la source de données mise en pool de la connexion Apache Sling.
 1. Pour la connexion Apache Sling, recherchez le **[!UICONTROL pool de connexions Apache Sling Days Commons]** en mode d’édition dans la configuration de la console Web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
 
 <table>
@@ -106,7 +106,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
   </tr>
   <tr>
    <td>URI de connexion JDBC<br /> </td>
-   <td>jdbc:mysql://[<em>hôte</em>]:[<em>port</em>]/[<em>nom_schéma</em>]</td>
+   <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
   </tr>
   <tr>
    <td>Nom d’utilisateur</td>
@@ -167,7 +167,6 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 >
 
 
-
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
 1. Si vous disposez déjà d’un tableau dans le schéma de la base de données, passez à l’étape suivante.
@@ -178,7 +177,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    >
    >Vous n’avez pas besoin de bases de données différentes pour les instances d’auteur et de publication. Utilisez la même base de données sur toutes les instances d’auteur et de publication.
 
-   **Instruction SQL pour le tableau de données**    
+   **Instruction SQL pour le tableau de données**
 
    ```sql
    CREATE TABLE `data` (
@@ -190,7 +189,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **Instruction SQL pour le tableau de métadonnées**    
+   **Instruction SQL pour le tableau de métadonnées**
 
    ```sql
    CREATE TABLE `metadata` (
@@ -342,7 +341,7 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
     util.js
    ```
 
-   Dans le code ci-dessus, `util` est le nom du dossier et`util.js` est le nom du fichier dans le dossier `util`. Le dossier `util` et le fichier `util.js` sont créés aux étapes suivantes.
+   Dans le code ci-dessus, `util` est le nom du dossier et`util.js` est le nom du fichier dans le dossier `util`. Le dossier `util` et le fichier `util.js` sont créés dans les étapes suivantes.
 
 1. Cliquez avec le bouton droit sur le nœud `cq:ClientLibraryFolder` créé à l’étape 2 et sélectionnez Créer > Créer un dossier. Créez un dossier nommé `util`. Cliquez sur **[!UICONTROL Enregistrer tout]**. Cliquez avec le bouton droit sur le dossier `util` et sélectionnez Créer > Créer un fichier. Créez un fichier nommé `util.js`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
@@ -407,18 +406,18 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
 
    * **[!UICONTROL Nom :]** catégories
 
-   * **[!UICONTROL Type :]** chaîne
+   * **[!UICONTROL Type :]** Chaîne
 
    * **[!UICONTROL Valeur :]** fp.validation
 
    * **[!UICONTROL Option multiple :]** Activé 
 
-1. Accédez à `/libs/fd/af/runtime/clientlibs/guideRuntime`et ajoutez la valeur `fp.validation` à la propriété embed.
+1. Accédez à `/libs/fd/af/runtime/clientlibs/guideRuntime` et ajoutez la valeur `fp.validation` à la propriété embed.
 
-1. Accédez à /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA et ajoutez la valeur `fp.validation` à la propriété embed.
+1. Accédez à /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA et ajoutez la valeur `fp.validation` à la propriété embed.
 
    >[!NOTE]
    >
    >Si vous utilisez des bibliothèques client personnalisées au lieu des bibliothèques client guideRuntime et guideRuntimeWithXfa, utilisez le nom de catégorie pour intégrer la bibliothèque client créée dans cette procédure à vos bibliothèques personnalisées chargées lors de l’exécution.
 
-1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, lorsque le nom de fichier dépasse 150 caractères (extension comprise), un message s’affiche.
+1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, lorsque le nom de fichier contient plus de 150 caractères (extension comprise), un message s’affiche.
