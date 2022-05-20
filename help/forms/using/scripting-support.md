@@ -1,8 +1,8 @@
 ---
 title: Prise en charge des scripts pour les formulaires HTML5
-seo-title: Prise en charge des scripts pour les formulaires HTML5
+seo-title: Scripting support for HTML5 forms
 description: JavaScript, propriétés de FormCalc, et autres méthodes prises en charge dans les formulaires HTML5.
-seo-description: JavaScript, propriétés de FormCalc, et autres méthodes prises en charge dans les formulaires HTML5.
+seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '3911'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '3892'
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td><code>newtext</code></td>
    <td>Indique le contenu du champ une fois qu’il a été modifié suite aux actions de l’utilisateur.</td>
-   <td><p>La propriété <code>newText</code> ne fonctionne pas correctement pour les cas suivants :</p>
+   <td><p>La propriété <code>newText</code> ne fonctionne pas correctement dans les cas suivants :</p>
     <ul>
      <li>Lorsque vous sélectionnez des textes de remplacement</li>
      <li>Lorsque vous supprimez, copiez et collez des textes</li>
@@ -63,7 +63,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>change</td>
    <td>Indique la valeur saisie ou collée par un utilisateur dans un champ immédiatement après avoir effectué une opération. </td>
-   <td><p>La propriété de modification ne fonctionne pas correctement dans les cas suivants :</p>
+   <td><p>La propriété de modification ne fonctionne pas correctement pour les cas suivants :</p>
     <ul>
      <li>Lorsque vous sélectionnez des textes de remplacement</li>
      <li>Lorsque vous supprimez, copiez et collez des textes</li>
@@ -455,7 +455,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>valider</td>
+   <td>validate</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
    <td>Aucune</td>
   </tr>
@@ -507,7 +507,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Renvoie une liste de tous les objets enfants de l’objet actuel.</td>
    <td>
     <ul>
-     <li>Non pris en charge pour xfa.nodes, desc</li>
+     <li>Non pris en charge pour xfa.nodes, desc.</li>
      <li>Les nombres de nœuds rapportés pour PDF et HTML sont différents. </li>
     </ul> </td>
   </tr>
@@ -953,7 +953,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>valider</td>
+   <td>validate</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
    <td>Aucune</td>
   </tr>
@@ -1158,12 +1158,12 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
   <tr>
    <td>pour</td>
    <td><br type="_moz" /> </td>
-   <td>pour i = 100 vers 1 <br /> do s = s + i endfor</td>
+   <td>for i = 100 downto 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>for each</td>
    <td><br type="_moz" /> </td>
-   <td>pour chaque i dans (1, 2, 3) <br /> do s = s + i endfor</td>
+   <td>for each i in (1, 2, 3) <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>déclaration de la fonction</td>
@@ -1173,7 +1173,7 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
  </tbody>
 </table>
 
-### Prise en charge des API Acrobat  {#acrobat-api-support}
+### Prise en charge des API Acrobat {#acrobat-api-support}
 
 1. **Fonctions arithmétiques**
 
@@ -1257,12 +1257,12 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
   </tr>
   <tr>
    <td>console.println()</td>
-   <td>Cette API Acrobat vide la sortie dans la console JavaScript.</td>
+   <td>Cette API Acrobat transfère la sortie vers la console JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.alert()</td>
-   <td>Cette API Acrobat envoie un message d’alerte via la fenêtre contextuelle JavaScript.</td>
+   <td>Cette API Acrobat envoie un message d’alerte via une boîte de dialogue contextuelle JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1338,7 +1338,7 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
  </tbody>
 </table>
 
-## Evénements XFA pris en charge  {#supported-xfa-events}
+## Evénements XFA pris en charge {#supported-xfa-events}
 
 Les événements XFA côté client suivants sont pris en charge :
 
