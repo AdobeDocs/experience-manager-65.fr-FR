@@ -1,40 +1,41 @@
 ---
-title: Comment transmettre des informations d’identification à l’aide des en-têtes de sécurité du service Web ?
-description: Découvrez comment transmettre des informations d’identification à l’aide des en-têtes WS-security
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
-workflow-type: tm+mt
+title: Comment transmettre des informations d’identification à l’aide des en-têtes WS-security ?
+description: Découvrez comment transmettre des informations d’identification à l’aide des en-têtes WS-security.
+exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+workflow-type: ht
 source-wordcount: '473'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Compression et décompression de fichiers à l’aide d’un DSC personnalisé d’AEM Forms on JEE {#compressing-decompressing-files}
+# Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE {#compressing-decompressing-files}
 
 ## Connaissances préalables {#prerequisites}
 
-Expérience avec la gestion des processus d’AEM Forms on JEE, la programmation Java de base et la création de composants personnalisés.
+Expérience avec AEM Forms sur JEE Process Management, programmation Java de base et création de composants personnalisés.
 
-**Autres produits requis**
+**Autres produits nécessaires**
 
-Éditeur Java tel que [Eclipse](https://www.eclipse.org/) ou [Netbeans IDE](https://netbeans.apache.org/)
+Éditeur Java, par exemple [Eclipse](https://www.eclipse.org/) ou [Netbeans IDE](https://netbeans.apache.org/)
 
 ## Niveau d’utilisateur {#user-level}
 
 Intermédiaire
 
-AEM Forms on JEE permet aux développeurs de créer un DSC (Document Service Container) personnalisé pour créer des fonctionnalités prêtes à l’emploi enrichies. La création de ces composants est enfichable dans l’environnement d’exécution d’AEM Forms on JEE et a la finalité prévue. Cet article explique comment créer un service ZIP personnalisé qui peut être utilisé pour compresser une liste de fichiers dans un fichier .zip et décompresser un fichier .zip en une liste de documents.
+AEM Forms sur JEE permet aux développeurs de créer des DSC (Document Service Container) personnalisés pour créer des fonctionnalités enrichies prêtes à l’emploi. Ces composants que vous créez sont enfichables dans l’environnement d’exécution AEM Forms sur JEE afin de remplir la fonction qui leur a été donnée. Cet article explique comment créer un service ZIP personnalisé, qui peut être utilisé pour compresser une liste de fichiers dans un fichier .zip et décompresser un fichier .zip vers une liste de documents.
 
-## Création d’un composant DSC personnalisé {#create-custom-dsc-component}
+## Créer un composant DSC personnalisé {#create-custom-dsc-component}
 
-Créez un composant DSC personnalisé avec deux opérations de service pour compresser et décompresser la liste des documents. Ce composant utilise le package java.util.zip pour la compression et la décompression. Pour créer un composant personnalisé, procédez comme suit :
+Créez un composant DSC personnalisé doté de deux opérations de service, afin de compresser et décompresser une liste de documents. Ce composant utilise le package java.util.zip pour la compression et la décompression. Pour créer un composant personnalisé, procédez comme suit :
 
-1. Ajoutez le fichier adobe-livecycle-client.jar à la bibliothèque .
-1. Ajout des icônes requises
-1. Création d’une classe publique
-1. Créez deux méthodes publiques appelées UnzipDocument et ZipDocuments
+1. Ajouter le fichier adobe-livecycle-client.jar à la bibliothèque
+1. Ajouter les icônes requises
+1. Créer une classe publique
+1. Créer deux méthodes publiques appelées UnzipDocument et ZipDocuments
 1. Écrire la logique de compression et de décompression
 
-Le code se trouve ici :
+Le code se trouve ci-dessous :
 
 ```java
 /*
@@ -119,11 +120,11 @@ public class ZIPService {
 }
 ```
 
-## Création d’un fichier Component.XML {#create-component-xml-file}
+## Créer un fichier Component.XML {#create-component-xml-file}
 
 Un fichier component.xml doit être créé dans le dossier racine du package qui a défini les opérations de service et leurs paramètres.
 
-Le fichier component.xml s’affiche ici :
+Le fichier component.xml est affiché ci-dessous :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -184,41 +185,38 @@ Le fichier component.xml s’affiche ici :
 </component>
 ```
 
-## Regroupement et déploiement du composant {#packaging-deploying-component}
+## Regrouper et déployer le composant {#packaging-deploying-component}
 
-1. Compilez le projet java et créez un fichier .JAR.
-1. Déployez le composant (fichier .JAR) sur le runtime AEM Forms on JEE via Workbench.
-1. Démarrez le service à partir de Workbench (voir l’illustration ci-dessous).
+1. Compiler le projet java et créer un fichier .JAR
+1. Déployer le composant (fichier .JAR) sur le runtime AEM Forms sur JEE via Workbench
+1. Démarrer le service à partir de Workbench (voir lʼillustration ci-dessous)
 
 ![Conception de processus](assets/process-design.jpg)
 
-## Utilisation du service ZIP dans les workflows {#using-zip-service-in-workflows}
+## Utiliser le service ZIP dans les workflows {#using-zip-service-in-workflows}
 
-L’opération UnzipDocument du service personnalisé peut désormais accepter une variable de document comme entrée et renvoyer une liste de variables de document comme sortie.
+L’opération UnzipDocument du service personnalisé peut désormais accepter une variable de document comme entrée et retourner une liste de variables de document comme sortie.
 
 ![Décompresser le document](assets/unzip-doc.jpg)
 
-De même, l’opération ZipDocuments du composant personnalisé peut accepter une liste de documents comme entrée, les compresser en tant que fichier zip et renvoyer le document compressé.
+De même, l’opération ZipDocuments du composant personnalisé peut accepter une liste de documents comme entrée, les compresser sous forme de fichier zip et retourner le document compressé.
 
-![Zip Document](assets/zip-doc.jpg)
+![Document Zip](assets/zip-doc.jpg)
 
-L’orchestration de workflow suivante montre comment décompresser le fichier ZIP donné, le compresser à nouveau dans un autre fichier ZIP et renvoyer la sortie (voir l’illustration ci-dessous).
+L’orchestration du workflow suivante montre comment décompresser le fichier ZIP donné, le compresser à nouveau en un autre fichier ZIP et renvoyer la sortie (voir l’illustration ci-dessous).
 
-![Décompresser le workflow](assets/unzip-zip-process.jpg)
+![Workflow Décompresser le fichier Zip](assets/unzip-zip-process.jpg)
 
-## Certains cas d’utilisation commerciale {#business-use-cases}
+## Exemples de cas d’utilisation commerciale {#business-use-cases}
 
-Vous pouvez utiliser ce service ZIP pour les cas d’utilisation suivants :
+Vous pouvez utiliser ce service ZIP dans les cas d’utilisation suivants :
 
-* Recherchez tous les fichiers d’un dossier donné et renvoyez-les sous la forme d’un document compressé.
+* Rechercher tous les fichiers dans un dossier donné et les renvoyer sous forme de document compressé
 
-* Fournissez un fichier ZIP contenant un certain nombre de documents PDF que vous pourrez étendre au lecteur après les avoir décompressés. Cela nécessite le module Reader Extensions d’AEM Forms on JEE.
+* Fournir un fichier ZIP contenant plusieurs documents PDF auxquels des extensions Reader peuvent être ajoutées après leur décompression. Ceci nécessite le module Reader Extensions pour AEM Forms sur JEE
 
-* Fournissez un fichier ZIP contenant un type de document hétérogène qui peut être décompressé et converti en document PDF à l’aide du service Generate PDF.
+* Fournir un fichier ZIP contenant un type hétérogène de document qui peut être décompressé et converti en document PDF à l’aide du service Generate PDF
 
-* La stratégie protège une liste de documents et renvoie un fichier ZIP.
+* La stratégie protège une liste de documents et renvoie un fichier ZIP
 
-* Permet aux utilisateurs de télécharger toutes les pièces jointes d’une instance de processus sous la forme d’un fichier ZIP unique.
-
-
-
+* Permettre aux utilisateurs de télécharger toutes les pièces jointes d’une instance de processus sous la forme d’un fichier ZIP unique
