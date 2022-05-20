@@ -1,20 +1,20 @@
 ---
 title: Ajout d’une action personnalisée à la vue Liste des ressources
-seo-title: Ajout d’une action personnalisée à la vue Liste des ressources
+seo-title: Add custom action to the Asset Listing view
 description: Cet article explique comment ajouter une action personnalisée à la vue Liste des ressources
-seo-description: Cet article explique comment ajouter une action personnalisée à la vue Liste des ressources
+seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 59%
+workflow-type: ht
+source-wordcount: '1360'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Vous pouvez ajouter une action personnalisée à la vue Liste des ressources pou
 * Un ou plusieurs types de ressources ou de lettres
 * Exécution (l’action/la commande devient active) dans la sélection des ressources/des lettres simples et multiples ou en l’absence de sélection
 
-Cette personnalisation est illustrée par un scénario qui ajoute une commande « Télécharger un PDF aplati » dans la vue Liste des ressources de lettres. Ce scénario de personnalisation permet à vos utilisateurs de télécharger un PDF aplati d’une seule lettre sélectionnée.
+Cette personnalisation est illustrée par un scénario qui ajoute une commande « Télécharger un PDF aplati » dans la vue Liste des ressources de lettres. Ce scénario de personnalisation permet à vos utilisateurs de télécharger le PDF aplati d’une lettre simple.
 
 ### Prérequis {#prerequisites}
 
@@ -47,9 +47,9 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 
-1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier de sélection en procédant comme suit :
+1. Dans le dossier d’applications, créez un dossier appelé éléments avec un chemin/une structure semblables au dossier d’éléments situé dans le dossier de sélection. Pour ce faire, procédez comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier **items** à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** :
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -64,11 +64,11 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/content/massets/jcr:content/body/content/header/items/selection/items
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **Emplacement :** /apps/
+      **Emplacement :** /apps/
 
-      **Faire correspondre les types de noeud :** Sélectionné
+      **Faire correspondre les types de nœud :** sélectionné
 
       ![Nœud de recouvrement](assets/2_createnodedownloadflatpdf.png)
 
@@ -76,13 +76,13 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       Cliquez sur **Enregistrer tout**.
 
-1. Dans le dossier d’éléments nouvellement créé, ajoutez un noeud pour le bouton/l’action personnalisé(e) d’une ressource particulière (par exemple : downloadFlatPDF) à l’aide des étapes suivantes :
+1. Dans le dossier dʼéléments que vous avez créé, ajoutez un nœud pour le bouton/l’action personnalisé(e) d’une ressources particulière (exemple : downloadFlatPDF) en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier **items** et sélectionnez **Créer** > **Créer un noeud**.
+   1. Cliquez avec le bouton droit sur le dossier **éléments** et sélectionnez **Créer** > **Créer un nœud**.
 
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **Nom :** downloadFlatPDF (ou le nom que vous souhaitez donner à cette propriété)
+      **Nom :** downloadFlatPDF (ou le nom que vous souhaitez donner à cette propriété).
 
       **Type :** nt:unstructured
 
@@ -105,12 +105,12 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
         <tr>
         <td>foundation-collection-action</td>
         <td>Chaîne</td>
-        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> peut être unique ou multiple pour permettre la sélection de ressources uniques ou multiples sur lesquelles l’action personnalisée est effectuée.</p> <p><strong></strong> peut être une ou plusieurs entrées (plusieurs entrées séparées par des virgules) des éléments suivants : LETTRE,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td>
+        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> peut être unique ou multiple pour autoriser les sélections de ressources uniques ou multiples sur lesquelles effectuer une action personnalisée.</p> <p><strong>type</strong> peut être unique ou multiple (entrées multiples séparées par des virgules) : LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td>
         </tr>
         <tr>
         <td>icône</td>
         <td>Chaîne</td>
-        <td>icône-téléchargement<br /><br /> Icône affichée par Correspondence Management sur le côté gauche de la commande/du menu. Pour connaître les icônes et paramètres disponibles, voir la <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">documentation relative aux icônes CoralUI</a>.<br /> </td>
+        <td>icône-téléchargement<br /> <br /> Icône affichée par Correspondence Management sur le côté gauche de la commande/du menu. Pour connaître les icônes et paramètres disponibles, voir la <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr" target="_blank">documentation relative aux icônes CoralUI</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -135,30 +135,30 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
         <tr>
         <td>titre</td>
         <td>Chaîne</td>
-        <td>Téléchargez un document PDF aplati de la lettre sélectionnée (ou de tout autre libellé/texte de remplacement)<br /><br />Le titre correspond au texte affiché par Correspondence Management lorsque l’utilisateur passe sa souris sur la commande personnalisée.</td>
+        <td>Téléchargez un document PDF aplati de la lettre sélectionnée (ou de tout autre libellé/texte de remplacement)<br /> <br /> Le titre correspond au texte affiché par Correspondence Management lorsque l’utilisateur passe sa souris sur la commande personnalisée.</td>
         </tr>
         </tbody>
        </table>
 
-1. Dans le dossier d’applications, créez un dossier nommé js avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier admin en procédant comme suit :
+1. Dans le dossier d’applications, créez un dossier appelé js avec un chemin/une structure semblables au dossier d’éléments situé dans le dossier admin. Pour ce faire, procédez comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier **js** à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Faites un clic droit sur le dossier **js** à l’emplacement suivant et sélectionnez **Nœud de recouvrement** :
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **Chemin :** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **Emplacement :** /apps/
+      **Emplacement :** /apps/
 
-      **Faire correspondre les types de noeud :** Sélectionné
+      **Faire correspondre les types de nœud :** sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications. Cliquez sur **Enregistrer tout**.
 
 1. Dans le dossier js, procédez comme suit pour créer un fichier nommé formaction.js avec le code de traitement d’action du bouton :
 
-   1. Cliquez avec le bouton droit sur le dossier **js** à l’emplacement suivant et sélectionnez **Créer > Créer un fichier** :
+   1. Faites un clic droit sur le dossier **js** et sélectionnez **Créer > Créer un fichier** :
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -169,7 +169,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
 
-      Ajoutez ensuite le code suivant à la fin du fichier formaction.js (sous la branche /apps) et cliquez sur **Enregistrer tout** :
+      Apposez alors le code suivant à l’extrémité dans le fichier formaction.js (sous la branche /apps) et cliquez sur **Enregistrer tout** :
 
       ```javascript
       /* Action url for xml file to be added.*/
@@ -230,31 +230,31 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       Le code ci-dessus correspond au traitement des actions spécifiques aux lettres de la commande créée dans cette procédure. Pour le traitement des actions d’autres ressources, modifiez le code javascript.
 
-1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier actionhandlers. Pour cela, procédez comme suit :
+1. Dans le dossier d’applications, créez un dossier appelé éléments avec un chemin/une structure semblables au dossier d’éléments situé dans le dossier actionhandlers. Pour ce faire, procédez comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier **items** à l’emplacement suivant et sélectionnez **Noeud de recouvrement** :
+   1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** : 
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin d’accès :** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **Chemin :** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **Emplacement :** /apps/
+      **Emplacement :** /apps/
 
-      **Faire correspondre les types de noeud :** Sélectionné
+      **Faire correspondre les types de nœud :** sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
    1. Cliquez sur **Enregistrer tout**.
 
-1. Sous le noeud d’éléments que vous venez de créer, ajoutez un noeud pour le bouton/l’action personnalisé(e) d’une ressource particulière (par exemple : letterpdfdownloader) à l’aide des étapes suivantes :
+1. Dans le nœud d’éléments que vous avez créé, ajoutez un nœud pour le bouton/l’action personnalisé(e) d’une ressource particulière (exemple : letterpdfdownloader) en suivant les étapes ci-après :
 
    1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer > Créer un nœud**.
 
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **Nom :** letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété) doit être unique. Si vous utilisez un autre nom ici, indiquez-le également dans la variable ACTION_URL du fichier formaction.js.)
+      **Nom :** letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété - doit être unique. Si vous utilisez ici un autre nom, spécifiez le même dans la variable ACTION_URL du fichier formaction.js).
 
       **Type :** nt:unstructured
 
@@ -266,11 +266,11 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
       |---|---|---|
       | sling:resourceType | Chaîne | fd/cm/ma/gui/components/admin/clientlibs/admin |
 
-1. Créez un fichier nommé POST.jsp avec le code de gestion de l’action de la commande à l’emplacement suivant :
+1. Créez un fichier appelé POST.jsp avec le code de traitement d’action de la commande à l’emplacement suivant :
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Cliquez avec le bouton droit sur le dossier **admin** à l’emplacement suivant et sélectionnez **Créer > Créer un fichier** :
+   1. Faites un clic droit sur le dossier **admin** et sélectionnez **Créer > Créer un fichier** :
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
@@ -281,7 +281,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       Ce code est spécifique au service de rendu de la lettre. Pour toute autre ressource, ajoutez les bibliothèques Java de la ressource à ce code. Pour plus d’informations sur les API AEM Forms, voir [API AEM Forms](https://adobe.com/go/learn_aemforms_javadocs_63_en).
 
-      Pour plus d’informations sur les bibliothèques AEM, voir AEM [Composants](/help/sites-developing/components.md).
+      Pour plus d’informations sur les bibliothèques d’AEM, consultez la section relatives aux [Composants](/help/sites-developing/components.md) AEM.
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */
@@ -350,23 +350,23 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
 ## Télécharger le PDF aplati à partir d’une lettre à l’aide de la fonction personnalisée {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Après avoir ajouté une fonctionnalité personnalisée pour télécharger le PDF aplati de vos lettres, vous pouvez suivre les étapes suivantes pour télécharger la version PDF aplatie de la lettre que vous sélectionnez :
+Après avoir ajouté la fonctionnalité personnalisée pour télécharger un fichier PDF aplati de vos lettres, vous pouvez suivre les étapes ci-après pour télécharger la version PDF aplatie de la lettre :
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/projects.html` et connectez-vous.
 
 1. Sélectionnez **Formulaires > Lettres**. Correspondence Management répertorie les lettres disponibles dans le système.
-1. Cliquez sur **Sélectionner**, puis cliquez sur une lettre pour la sélectionner.
-1. Sélectionnez **Plus** **&lt;Télécharger un PDF aplati>** (la fonctionnalité personnalisée créée à l’aide des instructions de cet article). La boîte de dialogue Télécharger la lettre en tant que PDF s’affiche.
+1. Cliquez sur **Sélectionner**, puis sur une lettre pour la sélectionner.
+1. Sélectionnez **plus** > **&lt;Télécharger un PDF aplati>** (soit la fonctionnalité personnalisées créée à l’aide des instructions fournies dans cet article). La boîte de dialogue Télécharger la lettre en tant que PDF s’affiche.
 
-   Le nom, la fonctionnalité et le texte secondaire de l’élément de menu dépendent de la personnalisation créée dans [Scénario : Ajoutez une commande à l’interface utilisateur de la liste Lettres pour télécharger la version PDF aplatie d’une lettre.](#addcommandtoletters)
+   Le nom de l’élément de menu, la fonctionnalité et l’autre texte dépendent de la personnalisation créée dans le [Scénario : ajoutez une commande à l’interface utilisateur des listes Lettres pour télécharger la version PDF aplatie d’une lettre.](#addcommandtoletters)
 
    ![Fonctionnalité personnalisée : Télécharger le PDF aplati](assets/5_downloadflatpdf.png)
 
-1. Dans la boîte de dialogue Télécharger la lettre en tant que PDF, sélectionnez le fichier XML approprié à partir duquel vous souhaitez renseigner les données dans le PDF.
+1. Dans la boîte de dialogue Télécharger la lettre en tant que PDF, sélectionnez le XML approprié à partir duquel vous souhaitez renseigner les données du PDF.
 
    >[!NOTE]
    >
-   >Avant de télécharger la lettre au format PDF aplati, vous pouvez créer le fichier XML avec les données de la lettre à l’aide de l’option **Créer un rapport**.
+   >Avant de télécharger la lettre en tant que PDF aplati, vous pouvez créer le fichier XML avec les données dans la lettre à l’aide de l’option **Créer un rapport**.
 
    ![Télécharger la lettre en tant que PDF](assets/6_downloadflatpdf.png)
 
