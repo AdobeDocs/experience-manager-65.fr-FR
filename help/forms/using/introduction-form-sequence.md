@@ -1,26 +1,26 @@
 ---
 title: Présentation de la séquence de formulaires à plusieurs étapes
-seo-title: Présentation de la séquence de formulaires à plusieurs étapes
+seo-title: Introduction to multi-step form sequence
 description: AEM Forms vous permet de définir un ordre de panneaux de formulaires dans lequel vous souhaitez que les utilisateurs naviguent et remplissent un formulaire adaptatif.
-seo-description: AEM Forms vous permet de définir un ordre de panneaux de formulaires dans lequel vous souhaitez que les utilisateurs naviguent et remplissent un formulaire adaptatif.
+seo-description: With AEM Forms, you can define a sequence of form panel in which you want users to navigate and fill an adaptive form.
 uuid: db1aac25-fe69-4e43-88d1-4a15389b507f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 0f335ea0-504f-4cc0-b97b-c3fc715bcc2e
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '545'
+workflow-type: ht
+source-wordcount: '515'
 ht-degree: 100%
 
 ---
 
 # Présentation de la séquence de formulaires à plusieurs étapes{#introduction-to-multi-step-form-sequence}
 
-Les formulaires adaptatifs permettent aux auteurs de formulaires de créer un environnement de capture de données simple d’emploi en plusieurs étapes. Ce module s’accompagne d’une prise en charge intégrée pour la création de plusieurs panneaux et l’association de chacun d’eux à des schémas de navigation différents. Les auteurs de formulaires peuvent regrouper des champs de formulaire dans des sections logiques et représenter un groupe sous la forme d’un panneau. La navigation globale entre les panneaux est contrôlée à l’aide de la disposition des panneaux. Les auteurs peuvent réorganiser les panneaux selon différentes dispositions en les plaçant, par exemple, de manière séquentielle à l’aide de la disposition Assistant ou de manière ad hoc avec la disposition Onglets. Pour plus d’informations sur les dispositions de panneaux, voir [ Fonctionnalités de disposition des formulaires adaptatifs](../../forms/using/layout-capabilities-adaptive-forms.md).
+Les formulaires adaptatifs permettent aux auteurs de formulaires de créer un environnement de capture de données simple d’emploi en plusieurs étapes. Ce module s’accompagne d’une prise en charge intégrée pour la création de plusieurs panneaux et l’association de chacun d’eux à des schémas de navigation différents. Les auteurs de formulaires peuvent regrouper des champs de formulaire dans des sections logiques et représenter un groupe sous la forme d’un panneau. La navigation globale entre les panneaux est contrôlée à l’aide de la disposition des panneaux. Les auteurs peuvent réorganiser les panneaux selon différentes dispositions en les plaçant, par exemple, de manière séquentielle à l’aide de la disposition Assistant ou de manière ad hoc avec la disposition Onglets. Pour plus d’informations sur les dispositions de panneaux, voir [Fonctionnalités de disposition des formulaires adaptatifs](../../forms/using/layout-capabilities-adaptive-forms.md).
 
 Dans le cadre d’un remplissage normal de formulaires, la procédure ne se limite pas à la simple acquisition de données. Une procédure d’envoi de formulaires complète peut inclure d’autres étapes, comme par exemple signer le formulaire sous forme numérique, vérifier les informations renseignées dans le formulaire, traiter des paiements, etc. Elle peut être différente suivant les cas.
 
