@@ -1,8 +1,8 @@
 ---
 title: Interaction de Backbone
-seo-title: Interaction de Backbone
+seo-title: Backbone interaction
 description: Informations conceptuelles sur l’utilisation des modèles Backbone JavaScript dans l’espace de travail AEM Forms.
-seo-description: Informations conceptuelles sur l’utilisation des modèles Backbone JavaScript dans l’espace de travail AEM Forms.
+seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
 uuid: 040f42cb-3b76-4657-ba05-9e52647efb12
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,25 +11,25 @@ discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 81%
+workflow-type: ht
+source-wordcount: '434'
+ht-degree: 100%
 
 ---
 
 # Interaction de Backbone{#backbone-interaction}
 
-Backbone est une bibliothèque qui permet de créer et de suivre une architecture MVC dans des applications Web. L’idée de base de Backbone est d’organiser votre interface en vues logiques, sauvegardées par des modèles, chacune d’entre elles pouvant être mise à jour de manière indépendante lorsque le modèle change, sans devoir redessiner la page. Pour plus d’informations sur Backbone, voir [https://backbonejs.org](https://backbonejs.org/).
+Backbone est une bibliothèque qui permet de créer et de suivre une architecture MVC dans des applications Web. L’idée de base de Backbone est d’organiser votre interface en vues logiques, sauvegardées par des modèles, chacune d’entre elles pouvant être mise à jour de manière indépendante lorsque le modèle change, sans devoir redessiner la page. Pour plus d’informations sur Backbone, consultez la section [https://backbonejs.org](https://backbonejs.org/).
 
 Voici quelques concepts clés :
 
-**Backbone** modelContient des données et la plupart de la logique liée à ces données.
+**Modèle Backbone** : contient des données et une majeure partie de la logique liée à ces données.
 
-**Backbone** viewUtilisé pour représenter l’état du modèle correspondant. Une vue Backbone se comporte en fait comme un contrôleur, écoutant les événements de l’interface utilisateur comme les clics de l’utilisateur, ou les événements de modèle (comme les modifications de données), et modifie l’interface utilisateur en fonction des besoins.
+**Vue Backbone** : utilisée pour représenter l’état du modèle correspondant. Une vue Backbone se comporte en fait comme un contrôleur, écoutant les événements de l’interface utilisateur comme les clics de l’utilisateur, ou les événements de modèle (comme les modifications de données), et modifie l’interface utilisateur en fonction des besoins.
 
-**Modèle HTML** : modèle d’élément wrapper contenant des espaces réservés renseignés par le modèle.
+**Modèle HTML** : modèle d’enveloppe qui contient des balises d’emplacement renseignées par le modèle.
 
-**AEM Forms** workspaceContient plusieurs composants individuels. Chaque composant :
+**Espace de travail AEM Forms** : contient plusieurs composants individuels. Chaque composant :
 
 * représente un seul élément d’interface utilisateur logique ;
 * il peut s’agir d’un ensemble de composants similaires ;
@@ -53,8 +53,8 @@ Exemple :
 
 1. L’utilisateur clique sur un modèle de tâche dans la liste des tâches.
 1. La vue Tâches écoute le clic et appelle la fonction de rendu sur le modèle de tâche.
-1. Le modèle de tâche appelle ensuite le service qui est un point commun pour toute communication avec le serveur AEM Forms.
-1. La classe de service appelle le point de terminaison REST AEM Forms pour la méthode de rendu via ajax.
+1. Le modèle de tâche appelle ensuite le service qui constitue un point commun pour toutes les communications avec le serveur AEM Forms.
+1. La classe service appelle le point de terminaison REST d’AEM Forms pour obtenir la méthode de rendu via ajax.
 1. Le rappel réussi de cette invocation Ajax est défini dans le modèle de la tâche.
 1. Le modèle de tâche déclenche un événement Backbone comme une notification indiquant que l’appel de rendu est terminé.
 1. Une autre vue, la vue des détails de la tâche écoute cet événement du modèle de la tâche.
