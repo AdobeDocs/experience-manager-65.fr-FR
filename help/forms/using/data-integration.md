@@ -1,30 +1,30 @@
 ---
 title: Intégration des données AEM Forms
-seo-title: Intégration des données AEM Forms
+seo-title: AEM Forms Data Integration
 description: L’intégration de données vous permet d’intégrer AEM Forms à des sources de données disparates et de créer un modèle de données de formulaire pour créer et utiliser des formulaires adaptatifs et des communications interactives.
-seo-description: L’intégration de données vous permet d’intégrer AEM Forms à des sources de données disparates et de créer un modèle de données de formulaire pour créer et utiliser des formulaires adaptatifs et des communications interactives.
+seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 uuid: 01df045e-1b26-437c-9674-fd223ecd5097
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
 discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
-feature: Modèle de données de formulaire
+feature: Form Data Model
 exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '521'
+ht-degree: 100%
 
 ---
 
-# [!DNL AEM Forms] Intégration de données {#aem-forms-data-integration}
+# Intégration de données [!DNL AEM Forms] {#aem-forms-data-integration}
 
 ![](do-not-localize/data-integeration.png)
 
 Les infrastructures d’entreprise comprennent des systèmes principaux ou des sources de données telles que des bases de données, des services Web, des services REST, des services OData et des solutions CRM. Associés, ils constituent un système d’informations qui fournit des données aux applications d’entreprise pour effectuer les activités quotidiennes. En revanche, les applications capturent des données et les renvoient pour mettre à jour les sources de données.
 
-[!DNL AEM Forms]Les applications telles que les formulaires adaptatifs et les communications interactives nécessitent l’intégration à des sources de données à des fins de récupération des données client lors du rendu des formulaires et la création de communications interactives. Il existe des cas d’utilisation dans lesquels les données sont extraites de sources de données en fonction des entrées utilisateur dans les formulaires adaptatifs. De plus, les données de formulaire adaptatif envoyées peuvent être réécrites pour mettre à jour les sources de données respectives.
+Les applications telles [!DNL AEM Forms] que les formulaires adaptatifs et les communications interactives nécessitent l’intégration à des sources de données à des fins de récupération des données client lors du rendu des formulaires et la création de communications interactives. Il existe des cas d’utilisation dans lesquels les données sont extraites de sources de données en fonction des entrées utilisateur dans les formulaires adaptatifs. De plus, les données de formulaire adaptatif envoyées peuvent être réécrites pour mettre à jour les sources de données respectives.
 
 Alors qu’un système modulaire distribué a des avantages propres, le défi consiste à intégrer et créer des associations de données dans plusieurs sources de données. L’intégration des données est essentielle au fonctionnement et à l’efficacité d’une infrastructure d’entreprise avec des sources de données distinctes connectées à des applications à des fins d’échange des données d’entreprise.
 
@@ -42,7 +42,7 @@ L’intégration de données [!DNL AEM Forms] permet de configurer et de connect
 Une fois que vous avez créé un modèle de données de formulaire, vous pouvez l’utiliser dans divers processus de formulaires adaptatifs et de communications interactives :
 
 * Créer des formulaires adaptatifs et des communications interactives basés sur le modèle de données de formulaire
-* Préremplir des formulaires adaptatifs et des communications interactives à partir de sources de données configurées
+* Remplir des formulaires adaptatifs et des communications interactives à partir de sources de données configurées
 * Appeler des services/opérations de source de données à l’aide de règles de formulaire adaptatif
 * Écrire les données de formulaire adaptatif envoyées dans les sources de données
 
