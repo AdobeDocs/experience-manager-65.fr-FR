@@ -1,8 +1,8 @@
 ---
 title: Création d’une mise en page de barre d’outils personnalisée
-seo-title: Création d’une mise en page de barre d’outils personnalisée
+seo-title: Creating custom toolbar layout
 description: Vous pouvez spécifier une mise en page de barre d’outils pour le formulaire. La mise en page de barre d’outils définit les commandes et la disposition de la barre d’outils dans le formulaire.
-seo-description: Vous pouvez spécifier une mise en page de barre d’outils pour le formulaire. La mise en page de barre d’outils définit les commandes et la disposition de la barre d’outils dans le formulaire.
+seo-description: You can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
 uuid: 389a715a-4c91-4a63-895d-bb2d0f1054eb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '524'
+ht-degree: 100%
 
 ---
 
@@ -39,12 +39,12 @@ Vous pouvez en outre créer une mise en page de barre d’outils personnalisée.
 
 La procédure suivante décrit les étapes pour créer une barre d’outils personnalisée qui affiche trois actions dans la barre d’outils et d’autres actions dans une liste déroulante de la barre d’outils.
 
-Le module de contenu joint contient le code complet décrit ci-dessous. Après avoir installé le module de contenu, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration de mise en page de barre d’outils personnalisée.
+Le module de contenu joint contient le code complet décrit ci-dessous. Une fois le module de contenu installé, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration de la mise en page de la barre d’outils personnalisée.
 
 CustomToolbarLayoutDemo.zip
 
-[Obtenir la disposition de la barre d’outils personnalisée ](assets/customtoolbarlayoutdemo.zip)
-FileDemo
+[Obtenir le fichier](assets/customtoolbarlayoutdemo.zip)
+Démonstration de la mise en page de la barre d’outils personnalisée
 
 ## Création d’une mise en page de barre d’outils personnalisée {#layout-1}
 
@@ -56,15 +56,15 @@ FileDemo
 
    `/libs/fd/af/layouts/toolbar`
 
-   Par exemple, copiez le noeud `mobileFixedToolbarLayout` du dossier `/libs/fd/af/layouts/toolbar` dans le dossier `/apps/customlayout/toolbar`.
+   Par exemple, copiez le nœud `mobileFixedToolbarLayout` du dossier `/libs/fd/af/layouts/toolbar` vers le dossier `/apps/customlayout/toolbar`.
 
-   Copiez également le fichier toolbarCommon.jsp dans le dossier `/apps/customlayout/toolbar` .
+   Copiez également le fichier toolbarCommon.jsp dans le dossier `/apps/customlayout/toolbar`.
 
    >[!NOTE]
    >
    >Le dossier que vous créez pour stocker les mises en page personnalisées peut être créé avec le dossier `apps`.
 
-1. Renommez le noeud copié, `mobileFixedToolbarLayout`, en `customToolbarLayout.`
+1. Renommez le nœud copié, de `mobileFixedToolbarLayout` à `customToolbarLayout.`.
 
    Fournissez également une description appropriée pour le nœud. Par exemple, remplacez le jcr:description du nœud par **Mise en page personnalisée pour la barre d’outils.**
 
@@ -74,7 +74,7 @@ FileDemo
 
    Nœud avec description appropriée
 
-   Votre nouvelle mise en page de barre d’outils personnalisée s’affiche dans la configuration de la boîte de dialogue **Barre d’outils du formulaire adaptatif**.  
+   Votre nouvelle mise en page de barre d’outils personnalisée s’affiche dans la configuration de la boîte de dialogue **Barre d’outils du formulaire adaptatif**. 
 
    ![Liste des mises en page de barre d’outils](assets/toolbar4.png)
 
@@ -86,13 +86,13 @@ FileDemo
 
 1. Sélectionnez cette mise en page de barre d’outils personnalisée, puis cliquez sur OK.
 
-   Ajoutez clientlib (javascript et css) dans le noeud `/etc/customlayout` et incluez la référence de clientlib dans la balise `customToolbarLayout.jsp`.
+   Ajoutez clientlib (JavaScript et css) dans le nœud `/etc/customlayout` et incluez la référence de clientlib dans le `customToolbarLayout.jsp`.
 
    ![Chemin d’accès au fichier customToolbarLayout.css](assets/toolbar_3.png)
 
    Chemin d’accès au fichier customToolbarLayout.css
 
-   Échantillon `customToolbarLayout.jsp`:
+   Échantillon `customToolbarLayout.jsp` :
 
    ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -110,7 +110,7 @@ FileDemo
    >
    >Ajoutez la classe guidetoolbar pour la mise en page. Le style prêt à l’emploi de la barre d’outils est défini conformément à la classe guidetoolbar.
 
-   Échantillon `toolBarCommon.jsp`:
+   Échantillon `toolBarCommon.jsp` :
 
    ```jsp
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
