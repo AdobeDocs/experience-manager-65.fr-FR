@@ -1,8 +1,8 @@
 ---
 title: Lancement d’un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms
-seo-title: Lancement d’un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms
+seo-title: Initiating a new process with existing process data in AEM Forms workspace
 description: Découvrez comment vous pouvez démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms.
-seo-description: Découvrez comment vous pouvez démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms.
+seo-description: See how you can initiate a new process with existing process data in AEM Forms workspace.
 uuid: 4cb96d7f-483b-4db4-bea1-57948931423d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: cbc5af90-5d51-4fdb-ac72-eea91137975d
 docset: aem65
 exl-id: 6fa97c06-9238-4444-b67f-983ef3b6fdc8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '236'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Vous trouverez ci-dessous les étapes à suivre pour lancer un nouveau processus
    * Dans Suivi, sélectionnez un modèle de recherche pour afficher une liste des instances de processus. Sélectionnez l’instance dont vous souhaitez utiliser les données.
    * Dans l’onglet **[!UICONTROL Tâches]**, sélectionnez une tâche. Cliquez sur l’onglet **[!UICONTROL Historique]** et sélectionnez une tâche qui a lancé une instance de processus.
 
-   ![Sélectionner la ](assets/start3_new.png) ![tâcheSélectionner la tâche](assets/start1_new.png)
+   ![Sélection de la tâche](assets/start3_new.png) ![Sélection de la tâche](assets/start1_new.png)
 
 1. Dans la barre d’outils de l’action Tâche, cliquez sur **[!UICONTROL Démarrer]**. Un formulaire adaptatif pour la nouvelle instance de processus est affiché avec des données préremplies.
 
