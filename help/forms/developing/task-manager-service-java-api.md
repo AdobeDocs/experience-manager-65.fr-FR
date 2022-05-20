@@ -1,8 +1,8 @@
 ---
-title: API Java de Task Manager Service QuickStart (SOAP)
-seo-title: API Java de Task Manager Service QuickStart (SOAP)
-description: Utilisez le service Task Manager pour affecter des tâches, verrouiller des tâches, récupérer les tâches assignées aux utilisateurs, récupérer les données de formulaire des tâches, modifier les données de formulaire, récupérer les pièces jointes et récupérer les informations de tâche.
-seo-description: Utilisez le service Task Manager pour affecter des tâches, verrouiller des tâches, récupérer les tâches assignées aux utilisateurs, récupérer les données de formulaire des tâches, modifier les données de formulaire, récupérer les pièces jointes et récupérer les informations de tâche.
+title: Démarrage rapide (SOAP) de l’API Java de Task Manager Service
+seo-title: Task Manager Service Java API QuickStart(SOAP)
+description: Utilisez Task Manager Service pour affecter des tâches, verrouiller des tâches, récupérer les tâches assignées aux utilisateurs, récupérer les données de formulaire des tâches, modifier les données de formulaire, récupérer les pièces jointes et récupérer les informations de tâche.
+seo-description: Use the Task Manager service to assign tasks, lock tasks, retrieve tasks assigned to users, retrieve form data from tasks, modify form data, retrieve file attachments, and retrieve task information.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -12,41 +12,41 @@ discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 role: Developer
 exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '524'
+ht-degree: 100%
 
 ---
 
-# Démarrage rapide de l’API Java de Task Manager Service (SOAP) {#task-manager-service-java-api-quickstart-soap}
+# Démarrage rapide (SOAP) de l’API Java de Task Manager Service {#task-manager-service-java-api-quickstart-soap}
 
-Les didacticiels de mise en route suivants sont disponibles pour le service Task Manager.
+Les tutoriels de démarrage rapide suivants sont disponibles pour Task Manager Service.
 
-[Démarrage rapide (mode SOAP) : Affectation de tâches à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
+[Démarrage rapide (mode SOAP) : affectation de tâches à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Verrouillage de tâches à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
+[Démarrage rapide (mode SOAP) : verrouillage de tâches à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Récupération des tâches affectées aux utilisateurs à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
+[Démarrage rapide (mode SOAP) : récupération des tâches affectées aux utilisateurs à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Récupération des données de formulaire des tâches à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
+[Démarrage rapide (mode SOAP) : récupération de données de formulaire des tâches à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Modification des données de formulaire à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
+[Démarrage rapide (mode SOAP) : modification des données de formulaire à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Récupération des pièces jointes des tâches à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
+[Démarrage rapide (mode SOAP) : récupération des pièces jointes des tâches à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Récupération des informations de tâche à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
+[Démarrage rapide (mode SOAP) : récupération des informations de tâche à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Vous ne pouvez pas rechercher les tâches affectées aux utilisateurs à l’aide de l’API de service Web. La raison est que vous ne pouvez pas appeler la méthode `taskList`, qui est un appel de méthode nécessaire pour effectuer cette tâche.
+>Vous ne pouvez pas rechercher les tâches affectées aux utilisateurs à l’aide de l’API du service web. La raison est que vous ne pouvez pas appeler la méthode `taskList`, qui est un appel de méthode nécessaire pour effectuer cette tâche.
 
 >[!NOTE]
 >
->Le démarrage rapide (Quick Start) situé dans Programmation avec AEM Forms est basé sur le système d’exploitation du serveur Forms. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les démarrages rapides situés dans Programmer avec AEM Forms sont basés sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Démarrage rapide (mode SOAP) : Affectation de tâches à l’aide de l’API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
+## Démarrage rapide (mode SOAP) : affectation de tâches à l’aide de l’API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
 L’exemple de code Java suivant affecte une tâche à un utilisateur nommé Tony Blue.
 
@@ -179,7 +179,7 @@ L’exemple de code Java suivant affecte une tâche à un utilisateur nommé Ton
  
 ```
 
-## Démarrage rapide (mode SOAP) : Verrouillage de tâches à l’aide de l’API Java {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Démarrage rapide (mode SOAP) : verrouillage de tâches à l’aide de l’API Java {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
 L’exemple de code Java suivant verrouille une tâche qui correspond à la valeur de l’identifiant de tâche de 2.
 
@@ -268,7 +268,7 @@ L’exemple de code Java suivant verrouille une tâche qui correspond à la vale
  
 ```
 
-## Démarrage rapide (mode SOAP) : Récupération des tâches affectées aux utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
+## Démarrage rapide (mode SOAP) : récupération des tâches affectées aux utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
 L’exemple de code Java suivant récupère toutes les tâches affectées à un utilisateur nommé *tony blue*. Notez que cet utilisateur est spécifié dans les propriétés de connexion. Des informations sur les tâches renvoyées, telles que la valeur et la description de l’identifiant, s’affichent.
 
@@ -394,9 +394,9 @@ L’exemple de code Java suivant récupère toutes les tâches affectées à un 
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Récupération des données de formulaire des tâches à l’aide de l’API Java {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
+## Démarrage rapide (mode SOAP) : récupération de données de formulaire des tâches à l’aide de l’API Java {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-L’exemple de code Java suivant récupère les données de formulaire d’une tâche avec la valeur d’identifiant 304. Les données de formulaire sont écrites dans un fichier XML nommé *FormData.xml* situé à l’adresse C:\Adobe.
+L’exemple de code Java suivant récupère les données de formulaire d’une tâche avec la valeur d’identifiant 304. Les données de formulaire sont écrites dans un fichier XML nommé *FormData.xml* à l’adresse C:\Adobe.
 
 ```java
  /*
@@ -500,7 +500,7 @@ L’exemple de code Java suivant récupère les données de formulaire d’une t
  
 ```
 
-## Démarrage rapide (mode SOAP) : Modification des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
+## Démarrage rapide (mode SOAP) : modification des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
 L’exemple de code Java suivant met à jour un formulaire avec des données situées dans le fichier *FormData.xml*.
 
@@ -610,7 +610,7 @@ L’exemple de code Java suivant met à jour un formulaire avec des données sit
  
 ```
 
-## Démarrage rapide (mode SOAP) : Récupération des pièces jointes des tâches à l’aide de l’API Java {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
+## Démarrage rapide (mode SOAP) : récupération des pièces jointes des tâches à l’aide de l’API Java {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
 
 L’exemple de code Java suivant récupère les pièces jointes. Chaque pièce jointe est enregistrée en tant que fichier TXT.
 
@@ -714,9 +714,9 @@ L’exemple de code Java suivant récupère les pièces jointes. Chaque pièce j
  
 ```
 
-## Démarrage rapide (mode SOAP) : Récupération des informations de tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
+## Démarrage rapide (mode SOAP) : récupération des informations de tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-L’exemple de code Java suivant récupère toutes les tâches basées sur un processus nommé *MortgageLoan - Prebuilt*. L’état de chaque tâche renvoyée est vérifié pour s’assurer qu’elle est terminée. Des informations telles que le nom de l’utilisateur qui a terminé la tâche et la date à laquelle la tâche a été terminée sont récupérées et affichées.
+L’exemple de code Java suivant récupère toutes les tâches basées sur un processus nommé *Prêt hypothécaire - Préconstruit*. Le statut de chaque tâche renvoyée est vérifié pour s’assurer qu’elle est terminée. Des informations telles que le nom de l’utilisateur qui a terminé la tâche et la date à laquelle la tâche a été terminée sont récupérées et affichées.
 
 ```java
  /*
