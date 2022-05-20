@@ -1,8 +1,8 @@
 ---
 title: Principes de base de la gestion des certificats et des informations d’identification
-seo-title: Principes de base de la gestion des certificats et des informations d’identification
+seo-title: Basics of managing certificates and credentials
 description: Découvrez les bases de la gestion des certificats et des informations d’identification.
-seo-description: Découvrez les bases de la gestion des certificats et des informations d’identification.
+seo-description: Learn about the basics of managing certificates and credentials.
 uuid: f421e206-e7b5-416c-b9fb-974094f10a66
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 74bf0e77-f47b-475a-b2a7-52cfb3baaa22
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 86%
+source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+workflow-type: ht
+source-wordcount: '339'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Les *informations d’identification* contiennent les informations de clé priv�
 
 * Les extensions d’Acrobat Reader DC utilisent des informations d’identification pour activer les droits Adobe Reader des documents PDF (voir [Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)).
 * Vous pouvez configurer Rights Management pour afficher les informations d’identification à utiliser dans Acrobat émanant uniquement des émetteurs autorisés (voir [Configuration des paramètres d’affichage de Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)). Le nom commun ou CN (pour Common Name) doit figurer dans le certificat.
-* Le service Signature a accès aux certificats et aux informations d’identification. Pour plus d’informations sur le service Signature, voir le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+* Le service Signature a accès aux certificats et aux informations d’identification. Pour plus d’informations sur le service Signature, voir le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_65_fr).
 
 **Génération d’une paire de clés**
 
@@ -35,9 +35,9 @@ AEM forms ne propose pas d’option permettant de générer une paire de clés. 
 
 [https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
 
-[https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html](https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html)
+[https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/fr-fr/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
-Les types de signature suivants sont pris en charge et peuvent être importés dans AEM Forms :
+Les types de signature suivants sont pris en charge et peuvent être importés dans AEM Forms :
 
 * Signature XML
 * XMLTimeStampToken
