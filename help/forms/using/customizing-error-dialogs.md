@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des boîtes de dialogue d’erreur
-seo-title: Personnalisation des boîtes de dialogue d’erreur
+seo-title: Customizing error dialogs
 description: Comment personnaliser les boîtes de dialogue d’erreur de l’espace de travail LiveCycle AEM Forms pour ajouter des descriptions d’erreur différentes.
-seo-description: Comment personnaliser les boîtes de dialogue d’erreur de l’espace de travail LiveCycle AEM Forms pour ajouter des descriptions d’erreur différentes.
+seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,15 +10,15 @@ topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 53%
+workflow-type: ht
+source-wordcount: '152'
+ht-degree: 100%
 
 ---
 
 # Personnalisation des boîtes de dialogue d’erreur {#customizing-error-dialogs}
 
-L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dialogue d’erreur. Exécutez les [Étapes génériques de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) suivies des étapes ci-dessous pour personnaliser les boîtes de dialogue d’erreur.
+L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dialogue d’erreur. Pour personnaliser les boîtes de dialogue d’erreur, réalisez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) suivie de la procédure ci-dessous.
 
 ## Personnalisation du texte {#customizing-text}
 
@@ -52,7 +52,7 @@ L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dial
 
 ## Personnalisation de CSS {#customizing-css}
 
-1. Vous pouvez mettre à jour la boîte de dialogue, l’en-tête, la zone de contenu, la barre de pied de page, les boutons de la barre de pied de page et d’autres éléments collatéraux en ajoutant le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css` :
+1. Vous pouvez mettre à jour des boîtes de dialogue, des en-têtes, des zones de contenu, des barres de pied de page, des boutons de barres de pied de page, et d’autres éléments en ajoutant le fragment de code ci-dessous dans le fichier `/apps/ws/css/newStyle.css` :
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -187,7 +187,7 @@ L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dial
    }
    ```
 
-1. Pour l’étendue du bouton de la barre de pied de page, séparez les zones `.error-dialog` et `.foot-bar` de la liste composite. Pour effectuer cette modification, ajoutez les éléments suivants dans le fichier newStyle.css :
+1. Pour le span du bouton de la barre de pied de page, séparez les spans des boutons `.error-dialog` et `.foot-bar` de la liste composite. Pour effectuer cette modification, ajoutez les éléments suivants dans le fichier newStyle.css :
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -200,7 +200,7 @@ L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dial
    }
    ```
 
-   À
+   To
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -245,7 +245,7 @@ L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dial
 }
 ```
 
-À
+To
 
 ```css
 .error-dialog{
@@ -278,7 +278,7 @@ L’espace de travail AEM Forms vous permet de personnaliser les boîtes de dial
 }
 ```
 
-À
+To
 
 ```css
 .error-dialog .head-bar{
