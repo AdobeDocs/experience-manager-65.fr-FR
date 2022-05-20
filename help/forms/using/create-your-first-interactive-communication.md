@@ -1,19 +1,19 @@
 ---
-title: Tutoriel - Créer votre première communication interactive
-seo-title: Créer votre première communication interactive
+title: 'Tutoriel : créer votre première communication interactive'
+seo-title: Create your first Interactive Communication
 description: Découvrez comment créer votre première communication interactive.
-seo-description: Découvrez comment créer votre première communication interactive.
+seo-description: Learn to create your first Interactive Communication.
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
-feature: Communication interactive
+feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 92%
+workflow-type: ht
+source-wordcount: '1043'
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Un opérateur de télécommunications envoie des factures mensuelles aux clients
 * Configurez une instance d’auteur AEM.
 * Installez le [module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création
 * Configurez la base de données MYSQL.
-* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et utilisent le [pilote de base de données JDBC MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html) de l’Oracle.
+* Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et utilisent le [pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) d’Oracle.
 
 ## Étape 1 : Planifier la communication interactive {#step-plan-the-interactive-communication}
 
@@ -62,7 +62,7 @@ La première étape de la planification d’une communication interactive consis
 
 **Objectifs:**
 
-Pour créer une anatomie pour la communication interactive avec les modes de saisie des données suivants :
+Pour créer une structure pour la communication interactive avec les modes de saisie de données suivants, procédez comme suit :
 
 * Du texte statique
 * Modèle de données de formulaire
@@ -76,7 +76,7 @@ Pour créer une anatomie pour la communication interactive avec les modes de sai
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modèle de données de formulaire vous permet de connecter une communication interactive à des sources de données disparates, par exemple, le profil utilisateur AEM, les services Web RESTful, les services Web basés sur SOAP, les services OData et les bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec une communication interactive pour extraire des données de sources de données connectées. Pour plus d’informations sur le modèle de données de formulaire, voir [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
+Un modèle de données de formulaire vous permet de connecter une communication interactive à des sources de données disparates, par exemple, le profil utilisateur AEM, les services Web RESTful, les services Web basés sur SOAP, les services OData et les bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec une communication interactive pour extraire des données de sources de données connectées. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
 **Objectifs:**
 
@@ -138,13 +138,13 @@ Les communications interactives peuvent être fournies par deux canaux : impres
 * Créer des communications interactives d’impression et web interactives avec l’impression comme option principale
 * Créer un tableau dynamique dans la version web de la communication interactive
 * Créer un tableau dans la version web de la communication interactive
-* Création d’hyperliens dans la version web de la communication interactive
+* Créer des hyperliens dans la version web de la communication interactive
 
 [ ](/help/forms/using/create-interactive-communication0.md)
 
 ## Étape 6 : Tester votre communication interactive {#step-test-your-interactive-communication}
 
-![11-test-votre-formulaire adaptatif](assets/11-test-your-adaptive-form.png)
+![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
 Une fois que vous avez créé une communication interactive, il est important de tester chaque modification que vous y apportez. Testez tous les champs d’une communication interactive est fastidieux. AEM Forms fournit un SDK (Calvin SDK) pour automatiser les tests de communications interactives dans un navigateur web.
 
