@@ -1,8 +1,8 @@
 ---
 title: Utilisation d’opérations et de branches bloquées
-seo-title: Utilisation d’opérations et de branches bloquées
+seo-title: Working with stalled operations and branches
 description: La page Opérations bloquées et la page Branches bloquées répertorient les processus bloqués.
-seo-description: La page Opérations bloquées et la page Branches bloquées répertorient les processus bloqués.
+seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
 uuid: 5f6202b0-79c2-4c3c-847a-236c0366e60b
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '707'
+ht-degree: 100%
 
 ---
 
@@ -28,17 +28,17 @@ Quand un processus bloque, l’exécution de toutes les opérations suivantes es
 
 Pour chaque élément bloqué, la liste présente les informations suivantes :
 
-**Nom de l’opération ou nom de la branche :** nom de l’opération ou de la branche.
+**Nom de l’opération ou nom de la branche :** le nom de l’opération ou de la branche.
 
-**État :** toujours bloqué pour les éléments bloqués.
+**Statut :** toujours BLOQUÉ pour les éléments bloqués.
 
-**Erreur :** brève description du problème.
+**Erreur :** brève description du problème.
 
-**ID de processus :** entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
+**Identifiant du processus :** nombre entier positif affecté par Forms Workflow lorsque le processus est instancié (s’il est démarré par un utilisateur ou une étape automatisée). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**Nom du processus - Version :** nom du processus affecté dans Workbench.
+**Nom du processus - Version :** nom du processus affecté dans Workbench.
 
-**Date bloquée :** date et heure auxquelles l’opération ou la branche est bloquée.
+**Date du blocage :** date et heure auxquelles l’opération ou la branche ont été bloquées.
 
 Vous pouvez exécuter les tâches suivantes dans la page Opérations bloquées ou Branches bloquées :
 
@@ -55,17 +55,17 @@ Dans la page Opérations bloquées ou Branches bloquées, vous pouvez essayer de
 
 Lorsque vous essayez de relancer une opération, une requête est envoyée au processus des formulaires pour redémarrer l’opération. Si l’erreur qui a généré le blocage du processus a été corrigée et que la requête de nouvelle tentative réussit, l’exécution du processus recommence à partir du point où le processus a bloqué. Son état devient alors EN COURS. Si l’opération ne peut pas être redémarrée, son état reste BLOQUE ; il est possible que vous deviez alors l’arrêter.
 
-### Arrêt d’une opération bloquée  {#terminate-a-stalled-operation}
+### Arrêt d’une opération bloquée {#terminate-a-stalled-operation}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Erreurs des opérations bloquées.
 1. Dans la page Opérations bloquées, sélectionnez l’élément à arrêter, puis cliquez sur Arrêter.
 
-### Tentative de redémarrage d’une opération ou d’une branche bloquée  {#retry-a-stalled-operation-or-branch}
+### Tentative de redémarrage d’une opération ou d’une branche bloquée {#retry-a-stalled-operation-or-branch}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires, puis sélectionnez Erreurs des opérations bloquées ou Erreurs de branche bloquée.
 1. Dans la page Opérations bloquées ou Branches bloquées, sélectionnez l’élément que vous souhaitez relancer, puis cliquez sur Nouvel essai.
 
-## Affichage des détails d’erreur des opérations ou des branches bloquées  {#viewing-error-details-about-stalled-operations-or-branches}
+## Affichage des détails d’erreur des opérations ou des branches bloquées {#viewing-error-details-about-stalled-operations-or-branches}
 
 Si vous sélectionnez une erreur dans la liste des éléments bloqués de la page Opérations bloquées ou Branches bloquées, la page Détails d’erreur s’affiche, présentant des informations détaillées sur l’erreur, susceptibles de vous aider à corriger le problème.
 
@@ -73,7 +73,7 @@ La zone située en bas de la page contient des informations sur l’erreur.
 
 Depuis la page Détails d’erreur, vous pouvez également arrêter ou essayer de relancer des opérations bloquées et essayer de relancer des branches bloquées.
 
-## Le processus n’est pas gelé si aucun utilisateur de transmission n’existe  {#process-does-not-stall-when-escalation-user-does-not-exist}
+## Le processus n’est pas gelé si aucun utilisateur de transmission n’existe {#process-does-not-stall-when-escalation-user-does-not-exist}
 
 Les erreurs se produisent lorsque l’opération Attribuer une tâche du service User d’AEM forms est configurée pour transmettre la tâche à un autre utilisateur après une période déterminée, et lorsque l’utilisateur destinataire de la transmission est supprimé après l’exécution de l’opération Attribuer une tâche, mais avant que la transmission n’ait lieu.
 
