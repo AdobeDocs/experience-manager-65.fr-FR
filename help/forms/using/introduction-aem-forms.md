@@ -1,19 +1,19 @@
 ---
 title: Présentation d’AEM Forms
-seo-title: Présentation d’AEM Forms
+seo-title: Introduction to AEM Forms
 description: Grâce à Adobe Experience Manager Forms, les utilisateurs professionnels peuvent intégrer des formulaires adaptatifs, réactifs et conviviaux à des sites Web et mobiles, ce qui simplifie le processus d’inscription numérique et augmente les taux de conversion des clients.
-seo-description: Grâce à Adobe Experience Manager Forms, les utilisateurs professionnels peuvent intégrer des formulaires adaptatifs, réactifs et conviviaux à des sites Web et mobiles, ce qui simplifie le processus d’inscription numérique et augmente les taux de conversion des clients.
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: a6564997-4227-4d5d-b27d-47a55a386238
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '926'
+workflow-type: ht
+source-wordcount: '891'
 ht-degree: 100%
 
 ---
@@ -46,7 +46,7 @@ En résumé, AEM Forms offre des fonctionnalités puissantes de gestion des form
 * Intégration aux services Adobe Document Cloud eSign ou saisie tactile pour signer électroniquement des documents contenant des informations confidentielles
 * Publication automatisée des formulaires et possibilité de diffuser des messages personnalisés, en temps voulu, et cohérents sur plusieurs canaux
 
-## Types de formulaires AEM  {#aem-form-types}
+## Types de formulaires AEM {#aem-form-types}
 
 AEM Forms permet d’étendre les formulaires nouveaux et existants pour créer :
 
@@ -113,7 +113,7 @@ Des documents personnalisés tels que des reçus, des kits de bienvenue et des i
 * Prise en charge de la remise de documents par lots ou à la demande via plusieurs canaux, notamment le Web, la messagerie et le papier
 * Pistes d’audit avec historique des modifications
 * Prise en charge des signatures numériques pour garantir l’intégrité du contenu et l’identité du signataire
-* Module complémentaire de sécurité des documents pour AEM Forms comprenant le chiffrement, les stratégies d’utilisation, le suivi et l&#39;audit
+* Module complémentaire de sécurité des documents pour AEM Forms comprenant le chiffrement, les stratégies d’utilisation, le suivi et l’audit
 
 ![](do-not-localize/layout-02.png)
 
