@@ -1,19 +1,19 @@
 ---
 title: Préremplissage des champs de formulaires adaptatifs
-seo-title: Préremplissage des champs de formulaires adaptatifs
+seo-title: Prefill adaptive form fields
 description: Employez les données existantes pour préremplir les champs d’un formulaire adaptatif.
-seo-description: Avec les formulaires adaptatifs, les utilisateurs peuvent préremplir les informations de base dans un formulaire en se connectant avec leur profil de réseau social. Cet article décrit comment.
+seo-description: With adaptive forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
 uuid: 574de83a-7b5b-4a1f-ad37-b9717e5c14f1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '2169'
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Pour les champs liés avec le même bindref ou les champs non liés portant le m
 
 ### Formulaire adaptatif utilisant le modèle de formulaire XFA {#xfa-based-af}
 
-La structure du code XML de préremplissage et du code XML envoyé pour les formulaires adaptatifs basés sur XFA est la suivante :
+La structure du code XML de préremplissage et du code XML envoyé pour les formulaires adaptatifs basés sur XFA se présente comme suit :
 
 * **Structure XML de préremplissage** : le code XML de préremplissage du formulaire adaptatif basé sur XFA doit être conforme au schéma de données du modèle de formulaire XFA. Pour préremplir des champs non liés, placez la structure XML de préremplissage dans la balise `/afData/afBoundData`.
 
@@ -199,9 +199,9 @@ Voici un exemple sans le wrapper `afData/afBoundData` :
 >
 >L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants du Sidekick ou de l’onglet Sources de données) n’est **pas** recommandée car elle peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champs uniques dans le formulaire, notamment pour les champs non liés.
 
-### Formulaire adaptatif sans modèle de formulaire  {#adaptive-form-with-no-form-model}
+### Formulaire adaptatif sans modèle de formulaire {#adaptive-form-with-no-form-model}
 
-Pour les formulaires adaptatifs sans modèle de formulaire, les données de tous les champs se trouvent sous la balise `<data>` `<afUnboundData> tag`.
+Pour les formulaires adaptatifs sans modèle de formulaire, les données de tous les champs se trouveront sous l’onglet `<data>` de la balise `<afUnboundData> tag`.
 
 Prenez également en compte les points suivants :
 
@@ -226,7 +226,7 @@ Les balises XML des données utilisateur envoyées pour différents champs sont 
 </afData>
 ```
 
-## Configuration du service de préremplissage à l’aide de Configuration Manager  {#configuring-prefill-service-using-configuration-manager}
+## Configuration du service de préremplissage à l’aide de Configuration Manager {#configuring-prefill-service-using-configuration-manager}
 
 Pour activer le service de préremplissage, spécifiez la configuration de service de préremplissage par défaut dans la configuration de la console web d’AEM. Pour configurer le service de préremplissage, procédez comme suit :
 
@@ -254,7 +254,7 @@ Pour activer le service de préremplissage, spécifiez la configuration de servi
    >
    >Le protocole crx s’occupe de la sécurité des données préremplies et par conséquent, est activé par défaut. Le préremplissage par le biais d’autres protocoles à l’aide de l’expression regex peut entraîner une vulnérabilité. Dans la configuration, spécifiez une configuration d’URL sécurisée pour protéger vos données.
 
-## Cas étrange des panneaux répétables  {#the-curious-case-of-repeatable-panels}
+## Cas étrange des panneaux répétables {#the-curious-case-of-repeatable-panels}
 
 En règle générale, les champs liés (schéma de formulaire) et non liés sont créés dans un même formulaire adaptatif. Les éléments suivants constituent cependant quelques exceptions lorsque les liaisons sont répétables :
 
@@ -265,11 +265,11 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 >
 >En règle générale, vous ne devez pas mélanger de champs liés et non liés s’ils sont recoupés dans les données remplies dans les champs non liés par l’utilisateur final. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés pour qu’ils deviennent également liés et que ses données soient disponibles comme tout autre champ dans les données envoyées.
 
-## Protocoles pris en charge pour le préremplissage des données utilisateur  {#supported-protocols-for-prefilling-user-data}
+## Protocoles pris en charge pour le préremplissage des données utilisateur {#supported-protocols-for-prefilling-user-data}
 
 Les formulaires adaptatifs peuvent être préremplis avec des données d’utilisateurs au format de données de préremplissage via les protocoles suivants lorsqu’ils sont configurés avec une expression regex valide :
 
-### Protocole crx:// {#the-crx-protocol}
+### Protocole crx://  {#the-crx-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
@@ -277,7 +277,7 @@ https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx://
 
 Le nœud spécifié doit posséder une propriété nommée `jcr:data` et contenir les données.
 
-### Protocole file:// {#the-file-protocol-nbsp}
+### Protocole file://  {#the-file-protocol-nbsp}
 
 ```http
 https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
@@ -285,13 +285,13 @@ https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=fil
 
 Le fichier référencé doit se trouver sur le même serveur.
 
-### Protocole https:// {#the-http-protocol}
+### Protocole https://  {#the-http-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
 ```
 
-### Protocole service:// {#the-service-protocol}
+### Protocole service://  {#the-service-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
@@ -304,7 +304,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 >
 >La transmission des paramètres d’authentification n’est pas prise en charge.
 
-### Définition de l’attribut data dans slingRequest  {#setting-data-attribute-in-slingrequest}
+### Définition de l’attribut data dans slingRequest {#setting-data-attribute-in-slingrequest}
 
 Vous pouvez également définir l’attribut `data` dans `slingRequest`, où l’attribut `data` correspond à une chaîne contenant des balises XML ou JSON, comme illustré dans l’exemple de code ci-après (exemple pour XML) :
 
@@ -341,9 +341,9 @@ Vous pouvez utiliser le service de préremplissage personnalisé pour les scéna
 
 ### Création et exécution d’un service de préremplissage {#create-and-run-a-prefill-service}
 
-Le service de préremplissage est un service OSGi et fait partie du package OSGi. Vous créez le groupe OSGi, vous le chargez et l’installez sur les groupes AEM Forms. Avant de débuter la création du groupe :
+Le service de préremplissage est un service OSGi et fait partie du bundle OSGi. Vous créez le groupe OSGi, vous le chargez et l’installez sur les groupes AEM Forms. Avant de débuter la création du bundle :
 
-* [Téléchargez le SDK Client d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html)
+* [Téléchargez l’AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 * Téléchargement du package standard
 
 * Placez le fichier de données (données de préremplissage) dans le référentiel crx. Vous pouvez placer le fichier à tout emplacement dans le dossier \contents du référentiel crx.
@@ -362,21 +362,21 @@ Le package standard (exemple de package de services de préremplissage) contient
 
 1. Enregistrez et fermez le fichier `Prefill.java`.
 1. Ajoutez le package `AEM Forms Client SDK` sur le chemin de génération du projet standard.
-1. Compilez le projet et créez le fichier .jar pour le groupe.
+1. Compilez le projet et créez le fichier .jar pour le bundle.
 
-#### Démarrage et utilisation du service de préremplissage  {#start-and-use-the-prefill-service}
+#### Démarrage et utilisation du service de préremplissage {#start-and-use-the-prefill-service}
 
 Pour démarrer le service de préremplissage, chargez le fichier JAR dans la console web d’AEM Forms et activez le service. Désormais, le démarrage du service s’affiche dans l’éditeur de formulaires adaptatifs. Pour associer un service de préremplissage à un formulaire adaptatif :
 
 1. Ouvrez le formulaire adaptatif dans l’éditeur de formulaires et ouvrez le panneau des propriétés du conteneur de formulaires.
-1. Dans la console des propriétés, accédez au conteneur de formulaires AEM > de base > service de préremplissage.
+1. Dans la console des propriétés, accédez au conteneur d’AEM Forms > de base > service de préremplissage.
 1. Sélectionnez le service de préremplissage par défaut et cliquez sur **[!UICONTROL Enregistrer]**. Le service est associé au formulaire.
 
 ## Prépopulation des données chez le client {#prefill-at-client}
 
-Lorsque vous préremplissez un formulaire adaptatif, le serveur AEM Forms fusionne les données avec un formulaire adaptatif et vous envoie le formulaire rempli. Par défaut, l’action de fusion des données a lieu sur le serveur.
+Lorsque vous préremplissez un formulaire adaptatif, le serveur AEM Forms fusionne les données avec un formulaire adaptatif et vous délivre le formulaire rempli. Par défaut, l’action de fusion des données a lieu sur le serveur.
 
-Vous pouvez configurer le serveur AEM Forms pour qu’il effectue l’action de fusion des données sur le client et non sur le serveur. Cela réduit considérablement le temps nécessaire au préremplissage et au rendu des formulaires adaptatifs. Par défaut, cette fonctionnalité est désactivée. Vous pouvez l’activer à partir de Configuration Manager ou d’une ligne de commande.
+Vous pouvez configurer le serveur AEM Forms pour qu’il effectue l’action de fusion des données sur le client et non sur le serveur. Cela réduit considérablement le temps nécessaire pour préremplir et générer les formulaires adaptatifs. Par défaut, cette fonctionnalité est désactivée. Vous pouvez l’activer à partir de Configuration Manager ou d’une ligne de commande.
 
 * Pour activer ou désactiver Configuration Manager :
    1. Ouvrez AEM Configuration Manager.
@@ -388,4 +388,4 @@ Vous pouvez configurer le serveur AEM Forms pour qu’il effectue l’action de 
 
    * Pour procéder à la désactivation, exécutez la commande cURL suivante :
       `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   Pour tirer pleinement parti de l’option de préremplissage des données au niveau du client, mettez à jour votre service de préremplissage pour renvoyer [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) et [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html).
+   Pour tirer pleinement parti de l’option de préremplissage des données au niveau du client, mettez à jour votre service de préremplissage pour renvoyer [FileAttachmentMap](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) et [CustomContext](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html).
