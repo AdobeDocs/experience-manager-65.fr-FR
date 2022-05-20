@@ -1,8 +1,8 @@
 ---
 title: Configuration du mot de passe de liaison LDAP
-seo-title: Configuration du mot de passe de liaison LDAP
+seo-title: Configure the LDAP bind password
 description: Découvrez comment configurer le champ du mot de passe de liaison avant d’importer le fichier de configuration dans un autre système.
-seo-description: Découvrez comment configurer le champ du mot de passe de liaison avant d’importer le fichier de configuration dans un autre système.
+seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
 uuid: 1ab1907c-8b55-4b6f-bd5b-49f22d78b8a8
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 91%
+workflow-type: ht
+source-wordcount: '183'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration.
 1. Pour exporter la configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration à un autre emplacement.
-1. Dans le fichier, recherchez le noeud `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig`. Par exemple :
+1. Dans le fichier, recherchez le nœud `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig`. Par exemple :
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -38,7 +38,7 @@ Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’
 
    Saisissez une valeur pour `bindpassword` et enregistrez vos modifications.
 
-1. Dans le fichier, recherchez le noeud `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Par exemple :
+1. Dans le fichier, recherchez le nœud `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Par exemple :
 
    ```xml
     <node name="LDAPUserConfig">
