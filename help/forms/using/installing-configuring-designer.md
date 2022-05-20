@@ -13,9 +13,9 @@ docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 source-git-commit: a3cf926bde4a4b3a0810058e84ac01012a4a3a57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 47%
 
 ## Prérequis {#pre-requisites}
 
-Le programme d’installation d’AEM Forms Designer nécessite la version 32 bits de [Package d’exécution redistribuable Visual C++ 2012](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) et [Package d’exécution redistribuable Visual C++ 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables mentionnés précédemment sont installés avant de démarrer l’installation.
+Le programme d’installation d’AEM Forms Designer nécessite la version 32 bits des [packages d’exécution redistribuables Visual C++ 2012](https://support.microsoft.com/fr-fr/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) et des [packages d’exécution redistribuables Visual C++ 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation.
 
 Vous avez besoin de droits d’administrateur pour installer ou désinstaller Designer.
 
 ## Installation de Designer {#install-designer}
 
-Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Si vous utilisez un programme d’installation autonome pour Designer, procédez comme suit :
+Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Si vous utilisez un programme d’installation autonome pour Designer, procédez comme suit :
 
-1. Téléchargement de Designer depuis Adobe [Licences](https://licensing.adobe.com/).
+1. Téléchargez Designer depuis Adobe [Licensing Website](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
@@ -46,13 +46,13 @@ Designer est disponible sous la forme d’un programme autonome et est égalemen
 
 Vous pouvez également installer Designer via la ligne de commande en mode passif ou silencieux.
 
-* Installation en ligne de commande passive : Le programme d’installation affiche une barre de progression qui indique que l’installation est en cours mais qu’aucun message d’erreur ou d’avertissement ne s’affiche. Une fois l’installation lancée, vous ne pouvez pas l’annuler.
+* Installation en ligne de commande passive : le programme d’installation affiche une barre de progression qui indique que l’installation est en cours mais aucun message d’erreur ou d’invite ne s’affiche. Une fois l’installation lancée, vous ne pouvez pas l’annuler.
 
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-****-****-****
 ```
 
-* Installation silencieuse de ligne de commande : Le programme d’installation exécute l’installation sans afficher d’interface utilisateur. Aucun message, message ou boîte de dialogue ne s’affiche. Une fois l’installation lancée, vous ne pouvez pas l’annuler.
+* Installation en ligne de commande silencieuse : le programme d’installation exécute l’installation sans afficher d’interface utilisateur. Aucun message, invite ou boîte de dialogue ne s’affiche. Une fois l’installation lancée, vous ne pouvez pas l’annuler.
 
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
