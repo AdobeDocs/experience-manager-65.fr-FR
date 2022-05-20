@@ -1,8 +1,8 @@
 ---
 title: Importation et exportation du fichier de configuration
-seo-title: Importation et exportation du fichier de configuration
+seo-title: Importing and exporting the configuration file
 description: Découvrez comment importer et exporter le fichier de configuration afin de modifier les préférences du serveur ou de configurer une autre instance de produit de formulaire AEM.
-seo-description: Découvrez comment importer et exporter le fichier de configuration afin de modifier les préférences du serveur ou de configurer une autre instance de produit de formulaire AEM.
+seo-description: Learn how to import and export the configuration file in order to edit server preferences or configure another AEM forms product instance.
 uuid: 32e8a709-2d7c-4740-9533-d53aa751bc58
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
 exl-id: 225dbeb5-a21c-4338-98c7-e10c32973721
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '282'
+workflow-type: ht
+source-wordcount: '254'
 ht-degree: 100%
 
 ---
