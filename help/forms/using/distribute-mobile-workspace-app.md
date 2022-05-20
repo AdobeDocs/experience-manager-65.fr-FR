@@ -1,8 +1,8 @@
 ---
 title: Distribuer l’application AEM Forms
-seo-title: Distribuer l’application AEM Forms
+seo-title: Distribute AEM Forms app
 description: Les solutions MDM (Mobile Device Management) permettent le déploiement à grande échelle des applications sur des périphériques mobiles.
-seo-description: Les solutions MDM (Mobile Device Management) permettent le déploiement à grande échelle des applications sur des périphériques mobiles.
+seo-description: Use Mobile Device Management (MDM) for the large-scale deployment of apps on mobile devices.
 uuid: 8a2ce42b-5e9b-42c1-a945-c069f6152f6e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 92%
+workflow-type: ht
+source-wordcount: '243'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Les solutions MDM (Mobile Device Management) permettent le déploiement à grand
 >
 >Cette distribution s’applique aux périphériques iOS et Android uniquement.
 
-## Fonctions clés que proposent généralement les solutions MDM :  {#main-features-generally-provided-by-mdm-solutions}
+## Fonctions clés que proposent généralement les solutions MDM : {#main-features-generally-provided-by-mdm-solutions}
 
 * Enregistrement des périphériques dans votre environnement d’entreprise
 * Configuration et mise à jour des paramètres des périphériques
@@ -37,7 +37,7 @@ L’administrateur MDM peut transférer des fichiers .ipa et .apk sur le serve
 
 ## Paramètres de profil affectant l’application AEM Forms {#profile-settings-affecting-the-aem-forms-app-br}
 
-Les paramètres de profil suivants sur votre appareil auront une incidence sur le fonctionnement de l’application AEM Forms sur votre appareil :
+Les paramètres de profil suivants sur votre appareil affecteront le fonctionnement de lʼapplication AEM Forms sur celui-ci :
 
 * **Autiliser l’utilisation de l’appareil photo** dans la section **Fonctionnalité du périphérique**
 
