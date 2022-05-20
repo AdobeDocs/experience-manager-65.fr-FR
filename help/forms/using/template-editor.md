@@ -1,20 +1,20 @@
 ---
 title: Modèles de formulaires adaptatifs
-seo-title: Modèles de formulaires adaptatifs
+seo-title: Adaptive Form Templates
 description: Créez des modèles de formulaires adaptatifs en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèle.
-seo-description: Créez des modèles de formulaires adaptatifs en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèle.
+seo-description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
 uuid: 317ca3ab-f809-49a7-a063-9d0c17a35fe4
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '1964'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de cert
 
 Vous pouvez accéder à l’éditeur de modèles à partir du menu Outils en accédant à **Adobe Experience Manager> Outils> Modèles**. Ici, les modèles sont organisés dans des dossiers activés pour les modèles modifiables. AEM fournit un dossier global pour organiser les modèles. Cependant, il n’est pas activé par défaut. Vous pouvez demander à votre administrateur d’activer le dossier global ou de créer un nouveau dossier pour les modèles. Pour plus d’informations sur la création de dossiers, voir [Dossiers de modèles](/help/sites-developing/page-templates-editable.md).
 
-Une fois que vous avez appuyé pour ouvrir un dossier, vous trouverez un bouton Créer qui permet de créer un modèle pour les formulaires adaptatifs.
+Une fois que vous appuyez pour ouvrir un dossier, vous trouverez un bouton Créer qui permet de créer un nouveau modèle pour les formulaires adaptatifs.
 
 ### Création d’un modèle {#create-template}
 
@@ -56,7 +56,7 @@ Contient les options suivantes :
    * **Activer/désactiver le panneau latéral** : permet d’afficher ou de masquer la barre latérale.
    * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication, les vignettes, les bibliothèques côté client, la stratégie de page et la bibliothèque côté client de conceptions de pages.
    * **Émulateur** : permet de simuler et de personnaliser l’aspect des différents dispositifs.
-   * **Sélecteur de calques :** permet de modifier le calque.
+   * **Sélecteur de calque :** permet de modifier le calque.
 Vous pouvez choisir le calque **Structure** ou le calque **Contenu initial**. Le calque Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le calque Contenu initial vous permet de personnaliser le contenu du formulaire.
 
    * **Aperçu** : permet de prévisualiser le modèle avant de le publier. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
@@ -108,12 +108,12 @@ Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lors
 
 Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulaires adaptatifs du modèle s’affiche comme un formulaire adaptatif à des fins de modification. Comme lors de la création d’un formulaire adaptatif, vous pouvez spécifier des paramètres initiaux, par exemple en sélectionnant un thème et des actions d’envoi.
 
-Les auteurs de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) **> Contenu initial**.
+Les auteurs de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) > **Contenu initial**.
 ![Calque Contenu initial dans l’éditeur de modèles](assets/initial-content-layer.png)
 
 Calque Contenu initial dans l’éditeur de modèles affichant le conteneur de formulaires adaptatifs sélectionné pour la spécification des propriétés.
 
-![contenu initial](assets/initial-content-layer-1.png)
+![Contenu initial](assets/initial-content-layer-1.png)
 
 Dans le calque Contenu initial, vous créez le modèle de formulaire adaptatif que les auteurs utilisent en tant que base. La création d’un modèle est semblable à la création d’un formulaire : vous utilisez les options disponibles dans la barre latérale. Celle-ci fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
 
@@ -123,7 +123,7 @@ Voir [Barre latérale](../../forms/using/introduction-forms-authoring.md#sidebar
 >
 >Lorsque vous sélectionnez le stockage de contenu ou StorePDF en tant qu’action Envoyer, vous obtenez une option permettant de spécifier le chemin de stockage. Si vous spécifiez le chemin dans le modèle, tous les formulaires créés à partir de ce modèle ont le même chemin d’accès. Vous pouvez spécifier le chemin de stockage correct. Vous pouvez également veiller à ce que les auteurs de formulaires le mettent à jour pour empêcher que les données de chaque formulaire soient stockées au même emplacement.
 
-#### Création d’un modèle de formulaire adaptatif avec des onglets et des panneaux   {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Création d’un modèle de formulaire adaptatif avec des onglets et des panneaux  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
 Par exemple, si vous souhaitez créer un modèle avec les onglets suivants :
 
@@ -153,11 +153,11 @@ Dans l’exemple de modèle, les champs Nom, Numéro de téléphone et Date de n
 
 Après avoir ajouté des champs, vous pouvez ajouter des boutons tels qu’Envoyer et Réinitialiser.
 
-### Activation du modèle  {#enabling-the-template}
+### Activation du modèle {#enabling-the-template}
 
 Lorsque vous créez un modèle, il est ajouté en tant que brouillon. Activez le modèle afin de l’utiliser pour créer des formulaires adaptatifs. Pour activer un formulaire :
 
-1. Accédez à **Adobe Experience Manager > Outils > Modèles**, et ouvrez le dossier dans lequel vous avez créé le modèle.
+1. Accédez à **Adobe Experience Manager > Outils > Modèles**, et ouvrez le dossier dans lequel vous avez créé le modèle.
 
 1. Le modèle que vous avez créé est marqué comme Brouillon.
 1. Sélectionnez le modèle, puis appuyez sur **Activer** dans la barre d’outils.
@@ -181,7 +181,7 @@ Effectuez les étapes suivantes pour afficher et masquer les modèles :
 
    >[!NOTE]
    >
-   >L’URL de la console web d’AEM est https://&#39;[server]:[port]&#39;/system/console/configMgr
+   >L’URL par défaut de la console web AEM est https://&#39;[server]:[port]&#39;/system/console/configMgr.
 
 1. Recherchez et ouvrez les paramètres **FormsManagerConfiguration** :
 
