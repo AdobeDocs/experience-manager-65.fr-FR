@@ -1,8 +1,8 @@
 ---
 title: Affichage de données supplémentaires dans la liste Tâches
-seo-title: Affichage de données supplémentaires dans la liste Tâches
+seo-title: Displaying additional data in ToDo list
 description: Comment personnaliser l’affichage de la liste des Tâches de l’espace de travail LiveCycle AEM Forms pour afficher plus d’informations que les informations par défaut.
-seo-description: Comment personnaliser l’affichage de la liste des Tâches de l’espace de travail LiveCycle AEM Forms pour afficher plus d’informations que les informations par défaut.
+seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 90%
+workflow-type: ht
+source-wordcount: '282'
+ht-degree: 100%
 
 ---
 
@@ -31,12 +31,12 @@ Vous pouvez ajouter les informations disponibles dans `task.json` envoyées par 
 
 Pour plus d’informations sur la description de l’objet JSON, voir [cet](/help/forms/using/html-workspace-json-object-description.md) article.
 
-## Affichage des informations relatives à une tâche  {#displaying-information-on-a-task}
+## Affichage des informations relatives à une tâche {#displaying-information-on-a-task}
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Pour afficher des informations supplémentaires pour une tâche, les paires clé-valeur correspondantes doivent être ajoutées dans le bloc de tâche de `translation.json`.
 
-   Par exemple, modifiez `/apps/ws/locales/en-US/translation.json` pour l’anglais :
+   Par exemple, modifiez le fichier `/apps/ws/locales/en-US/translation.json` pour l’anglais :
 
    ```json
    "task" : {
@@ -121,7 +121,7 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
    }
    ```
 
-## Définition de CSS pour la nouvelle propriété  {#defining-css-for-the-new-property}
+## Définition de CSS pour la nouvelle propriété {#defining-css-for-the-new-property}
 
 1. Vous pouvez appliquer un style aux informations (propriété) ajoutées à une tâche. Pour ce faire, vous devez ajouter des informations de style pour la nouvelle propriété ajoutée à `/apps/ws/css/newStyle.css`.
 
@@ -135,18 +135,18 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
    }
    ```
 
-## Ajout d’une entrée dans le modèle HTML  {#adding-entry-in-the-html-template}
+## Ajout d’une entrée dans le modèle HTML {#adding-entry-in-the-html-template}
 
 Enfin, vous devez inclure une entrée dans le package de développement pour chaque propriété que vous souhaitez ajouter à la tâche. Pour créer une référence vers Génération du code de l’espace de travail AEM Forms.
 
-1. Copier `task.html`:
+1. Copier :`task.html`
 
    * de: `/libs/ws/js/runtime/templates/`
    * vers: `/apps/ws/js/runtime/templates/`
 
-1. Ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/task.html`.
+1. Ajoutez les nouvelles informations au fichier `/apps/ws/js/runtime/templates/task.html`.
 
-   Par exemple, ajoutez sous `div class="taskProperties"` :
+   Par exemple, ajoutez sous `div class="taskProperties"` :
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
