@@ -1,8 +1,8 @@
 ---
 title: Création et configuration de groupes
-seo-title: Création et configuration de groupes
+seo-title: Creating and configuring groups
 description: Découvrez comment créer des groupes de manière manuelle ou dynamique, modifier un groupe, afficher des détails sur un groupe ou supprimer un groupe.
-seo-description: Découvrez comment créer des groupes de manière manuelle ou dynamique, modifier un groupe, afficher des détails sur un groupe ou supprimer un groupe.
+seo-description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
 uuid: 8532d72b-270a-4fcf-b7a5-56fca979a5fe
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '1569'
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Si vous utilisez Content Services (obsolète), vous pouvez sélectionner l’opt
 
    Le Nom canonique est l’identificateur unique du groupe. Tous les utilisateurs et groupes d’un domaine doivent disposer d’un nom canonique unique. Cochez la case Généré par le système pour laisser User Management affecter une valeur unique au paramètre Nom canonique ou désélectionnez la case et saisissez une valeur personnalisée.
 
-   Évitez d’utiliser des caractères de soulignement (_) dans les noms canoniques, par exemple `sample_group`. Lorsque vous recherchez des groupes à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
+   Évitez d’utiliser les caractères de soulignement (_) dans les noms canoniques, par exemple `sample_group`. Lorsque vous recherchez des groupes à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
 
 1. Pour ajouter des utilisateurs et des groupes à ce nouveau groupe, cliquez sur Rechercher des utilisateurs/groupes et procédez comme suit :
 
@@ -55,33 +55,33 @@ Si vous utilisez Content Services (obsolète), vous pouvez sélectionner l’opt
 
 1. Cliquez sur Suivant.
 1. Pour affecter des rôles au groupe, cliquez sur Rechercher des rôles, activez les cases à cocher correspondant aux rôles à affecter, puis cliquez sur OK. Les utilisateurs d’un groupe héritent des rôles affectés au niveau du groupe.
-1. Cliquez sur Terminer.
+1. Cliquez sur Finish (Terminer). 
 
-## Création d’un groupe dynamique  {#create-a-dynamic-group}
+## Création d’un groupe dynamique {#create-a-dynamic-group}
 
 Dans un groupe dynamique, vous ne devez pas sélectionner les utilisateurs un à un. Il s’agit en fait de définir un ensemble de règles et tous les utilisateurs correspondant à ces règles sont automatiquement ajoutés au groupe dynamique.
 
 Pour créer des groupes dynamiques, utilisez l’une de ces deux méthodes :
 
-* Activation de la création automatique de groupes dynamiques à partir du domaine de messagerie, tels que @adobe.com. Lorsque vous activez cette fonction, le gestionnaire des utilisateurs crée un groupe dynamique pour chaque domaine d’adresse électronique unique dans la base de données AEM forms. Utilisez une expression cron pour définir la fréquence à laquelle Gestion des utilisateurs recherche de nouveaux domaines d’adresses électroniques dans la base de données AEM forms. Ces groupes dynamiques sont ajoutés au domaine local DefaultDom et sont nommés &quot;Tous les utilisateurs avec un *`[email domain]`* ID de courrier&quot;.
+* Activation de la création automatique de groupes dynamiques à partir du domaine de messagerie, tels que @adobe.com. Lorsque vous activez cette fonction, le gestionnaire des utilisateurs crée un groupe dynamique pour chaque domaine d’adresse électronique unique dans la base de données AEM forms. Utilisez une expression cron pour définir la fréquence à laquelle Gestion des utilisateurs recherche de nouveaux domaines d’adresses électroniques dans la base de données AEM forms. Ces groupes dynamiques sont ajoutés au domaine local DefaultDom et sont appelés « Tous les utilisateurs avec un ID d’e-mail *`[email domain]`* ».
 * Créer un groupe dynamique à partir de critères spécifiques, notamment le domaine de l’adresse électronique de l’utilisateur, la description, le nom canonique et le nom de domaine. Pour faire partie du groupe dynamique, un utilisateur doit répondre à l’ensemble des critères spécifiés. Pour définir une condition « ou », créez deux groupes dynamiques distincts et ajoutez-les tous les deux à un groupe local. Par exemple, adoptez cette démarche pour créer un groupe d’utilisateurs appartenant au domaine d’adresse électronique @adobe.com ou dont le nom canonique contient ou=adobe.com. Notez que les utilisateurs ne sont pas tenus de respecter ces deux conditions.
 
 Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas contenir d’autres groupes. Cependant, un groupe dynamique peut appartenir à un groupe parent.
 
-### Création automatique des groupes dynamiques à partir des domaines d’adresses électroniques  {#automatically-create-dynamic-groups-based-on-email-domains}
+### Création automatique des groupes dynamiques à partir des domaines d’adresses électroniques {#automatically-create-dynamic-groups-based-on-email-domains}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
 1. Activez la case à cocher située sous Création automatique de groupe dynamique.
 1. Indiquez à quel moment User Manager recherchera de nouveaux domaines d’adresses électroniques. Cette recherche doit être postérieure à la synchronisation des domaines, car la création de groupes dynamiques n’est pertinente que lorsque la synchronisation des domaines est terminée.
 
    * Pour activer une synchronisation automatique quotidienne, saisissez l’heure au format 24 heures dans la zone Se produit Quotidiennement à. Lorsque vous enregistrez vos paramètres, cette valeur est convertie en expression cron, qui s’affiche dans la zone située au-dessous.
-   * Pour programmer la synchronisation un jour donné de la semaine ou du mois, ou un mois donné, sélectionnez Expression cron et saisissez l’expression appropriée dans la zone. La valeur par défaut est `0 00 4 ? * *` (c’est-à-dire qu’elle est vérifiée à 4 heures du matin tous les jours).
+   * Pour programmer la synchronisation un jour donné de la semaine ou du mois, ou un mois donné, sélectionnez Expression cron et saisissez l’expression appropriée dans la zone. La valeur par défaut est `0 00 4 ? * *` (ce qui se traduit par un contrôle à 4 heures du matin tous les jours).
 
       L’utilisation de l’expression cron est basée sur le système de planification des tâches Open Source de Quartz, version 1.4.0 
 
 1. Cliquez sur Enregistrer.
 
-### Création d’un groupe dynamique à partir de critères spécifiques  {#create-a-dynamic-group-based-on-specified-criteria}
+### Création d’un groupe dynamique à partir de critères spécifiques {#create-a-dynamic-group-based-on-specified-criteria}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Cliquez sur Nouveau groupe dynamique.
@@ -96,7 +96,7 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
 
    **Description :** description de l’utilisateur, tel que « Informaticien ».
 
-   **Nom canonique : nom canonique de l’utilisateur** , tel que  `ou=adobe.com`
+   **Nom canonique :** nom canonique de l’utilisateur, tel que `ou=adobe.com`.
 
    **Nom de domaine :** nom du domaine auquel l’utilisateur appartient, par exemple `DefaultDom`. L’attribut Nom de domaine est sensible à la casse lorsque vous utilisez l’opérateur Contient. Cet attribut n’est pas sensible à la casse lorsque vous utilisez les opérateurs Commence par, Se termine par ou Egal.
 
@@ -110,16 +110,16 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
 
 1. Cliquez sur Suivant.
 1. Pour affecter des rôles au groupe dynamique, cliquez sur Rechercher des rôles, activez les cases à cocher correspondant aux rôles à affecter, puis cliquez sur OK. Les utilisateurs d’un groupe héritent des rôles affectés au niveau du groupe.
-1. Cliquez sur Terminer.
+1. Cliquez sur Finish (Terminer). 
 
-## Affichage des détails d’un groupe  {#view-details-about-a-group}
+## Affichage des détails d’un groupe {#view-details-about-a-group}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Dans la liste Dans, sélectionnez Groupe, puis cliquez sur Rechercher. Les résultats de recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur les en-têtes de colonne.
 1. Cliquez sur le nom du groupe dont vous souhaitez afficher les détails. La page Détails du groupe apparaît.
 1. Pour afficher les membres directs du groupe, cliquez sur Entités de sécurité enfants.
 
-## Modification d’un groupe  {#edit-a-group}
+## Modification d’un groupe {#edit-a-group}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Pour rechercher le groupe à modifier, procédez comme suit :
@@ -149,7 +149,7 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
    * Pour ajouter un nouveau rôle, activez la case à cocher qui lui correspond, cliquez sur OK, puis sur Enregistrer.
    * Pour retirer l’affectation d’un rôle, activez la case à cocher qui lui correspond, cliquez sur Retirer, puis sur Enregistrer.
 
-## Suppression d’un groupe  {#delete-a-group}
+## Suppression d’un groupe {#delete-a-group}
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Dans la liste Rechercher, sélectionnez Groupes, puis cliquez sur Rechercher.
