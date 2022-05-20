@@ -1,8 +1,8 @@
 ---
 title: Approvisionnement juste à temps
-seo-title: Approvisionnement juste à temps
+seo-title: Just-in-time user provisioning
 description: Utilisez l’approvisionnement juste à temps pour ajouter des utilisateurs à User Management après l’authentification réussie et pour affecter de manière dynamique les rôles et les groupes appropriés au nouvel utilisateur.
-seo-description: Utilisez l’approvisionnement juste à temps pour ajouter des utilisateurs à User Management après l’authentification réussie et pour affecter de manière dynamique les rôles et les groupes appropriés au nouvel utilisateur.
+seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
 uuid: a5ad4698-70bb-487b-a069-7133e2f420c2
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '573'
+ht-degree: 100%
 
 ---
 
@@ -29,18 +29,18 @@ Voici comment l’authentification traditionnelle fonctionne :
 1. Le fournisseur d’authentification valide les informations d’identification.
 1. Il vérifie ensuite si l’utilisateur existe dans la base de données User Management. L’un des résultats suivants s’affiche :
 
-   **Existe :** si l’utilisateur est en cours et déverrouillé, User Management renvoie la réussite de l’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
+   **Existe :** si l’utilisateur est en cours et déverrouillé, User Management renvoie un succès d’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
 
-   **N’existe pas :** User Management renvoie l’échec de l’authentification.
+   **N’existe pas :** User Management renvoie un échec d’authentification.
 
-   **Non valide :** User Management renvoie l’échec d’authentification.
+   **Non valide :** User Management renvoie un échec d’authentification.
 
 1. L’état indiqué par le fournisseur d’authentification est évalué. Si ce dernier a confirmé l’authentification, l’utilisateur peut alors ouvrir une session. Dans le cas contraire, User Management vérifie auprès du fournisseur d’authentification suivant. (les étapes 2 et 3)
 1. Un échec d’authentification est indiqué lorsqu’aucun fournisseur d’authentification disponible n’a pu valider les informations d’identification de l’utilisateur.
 
 Lorsque l’approvisonnement juste à temps est mis en œuvre, un nouvel utilisateur est créé de manière dynamique dans User Management si l’un des fournisseurs d’authentification valide les informations d’identification de l’utilisateur (après l’étape 3 de la procédure d’authentification traditionnelle décrite ci-dessus).
 
-## Mise en œuvre de l’approvisionnement juste à temps  {#implement-just-in-time-user-provisioning}
+## Mise en œuvre de l’approvisionnement juste à temps {#implement-just-in-time-user-provisioning}
 
 ### API pour l’approvisionnement juste à temps {#apis-for-just-in-time-provisioning}
 
@@ -81,7 +81,7 @@ public Boolean assign(User user);
 }
 ```
 
-### Remarques concernant la création d’un domaine de provisionnement juste à temps  {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Remarques concernant la création d’un domaine de provisionnement juste à temps {#considerations-while-creating-a-just-in-time-enabled-domain}
 
 * Lors de la création d’un `IdentityCreator` personnalisé pour un domaine hybride, assurez-vous qu’un mot de passe factice est spécifié pour l’utilisateur local. Ne laissez pas ce champ de mot de passe vide.
 * Recommandation : utilisez `DomainSpecificAuthentication` pour valider les informations d’identification de l’utilisateur pour un domaine spécifique.
@@ -98,7 +98,7 @@ public Boolean assign(User user);
 
 1. Enregistrez le nouveau domaine.
 
-## Arrière-plan  {#behind-the-scenes}
+## Arrière-plan {#behind-the-scenes}
 
 Supposons qu’un utilisateur essaie de se connecter à AEM Forms et qu’un fournisseur d’authentification accepte ses informations d’identification. Si l’utilisateur n’existe pas encore dans la base de données Gestion des utilisateurs, la vérification de son identité échoue. AEM Forms effectue alors les actions suivantes :
 
