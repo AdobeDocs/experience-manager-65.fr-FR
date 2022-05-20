@@ -1,8 +1,8 @@
 ---
 title: Mise à jour du type de licence pour le déploiement
-seo-title: Mise à jour du type de licence pour le déploiement
+seo-title: Update the license type for the deployment
 description: Mise à jour du type de licence pour le déploiement à l’aide de la page de modification de licence dans Administration Console.
-seo-description: Mise à jour du type de licence pour le déploiement à l’aide de la page de modification de licence dans Administration Console.
+seo-description: Update the license type for the deployment by using the Change License page in administration console.
 uuid: 0152635e-2c00-4944-b9b6-64b368589a91
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
 exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '293'
+workflow-type: ht
+source-wordcount: '270'
 ht-degree: 100%
 
 ---
 
 # Mise à jour du type de licence pour le déploiement {#update-the-license-type-for-the-deployment}
 
-Lors du processus d’installation d&#39;AEM forms, vous avez utilisé Configuration Manager pour configurer et déployer les modules AEM forms dont vous avez besoin. Par défaut, ces modules sont configurés avec une licence d’évaluation de 60 jours. Utilisez la page Changer de licence dans Administration Console pour modifier le type de licence pour le déploiement. Les modules déployés actuellement s’affichent dans la page Changer de licence.
+Lors du processus d’installation d’AEM forms, vous avez utilisé Configuration Manager pour configurer et déployer les modules AEM forms dont vous avez besoin. Par défaut, ces modules sont configurés avec une licence d’évaluation de 60 jours. Utilisez la page Changer de licence dans Administration Console pour modifier le type de licence pour le déploiement. Les modules déployés actuellement s’affichent dans la page Changer de licence.
 
 La page Changer de licence contient des informations relatives à la licence :
 
@@ -37,7 +37,7 @@ La page Changer de licence contient des informations relatives à la licence :
 ## Mise à jour du type de licence {#update-the-license-type}
 
 1. Dans Administration Console, cliquez sur Obtention de la licence.
-1. Lisez le contrat de licence de l’utilisateur final d&#39;AEM forms, sélectionnez J’accepte si vous en acceptez les termes, puis cliquez sur Suivant.
+1. Lisez le contrat de licence de l’utilisateur final d’AEM forms, sélectionnez J’accepte si vous en acceptez les termes, puis cliquez sur Suivant.
 1. Sur la page Changer de licence, sélectionnez un type de licence :
 
    * **EVAL :** licence d’évaluation de 60 jours
