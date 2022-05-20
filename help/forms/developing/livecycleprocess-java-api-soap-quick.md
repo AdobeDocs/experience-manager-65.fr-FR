@@ -1,8 +1,8 @@
 ---
-title: Démarrage rapide de l’API Java LiveCycleProcess (SOAP)
-seo-title: Démarrage rapide de l’API Java LiveCycleProcess (SOAP)
-description: 'Utilisez le démarrage rapide de l’API Java LiveCycle Process (SOAP) pour rechercher des instances de processus, suspendre des instances de processus, démarrer des instances de processus suspendues, arrêter des instances de processus, purger des données de processus et récupérer l’état d’une tâche. '
-seo-description: Utilisez le démarrage rapide de l’API Java LiveCycle Process (SOAP) pour rechercher des instances de processus, suspendre des instances de processus, démarrer des instances de processus suspendues, arrêter des instances de processus, purger des données de processus et récupérer l’état d’une tâche.
+title: Démarrage rapide de l’API Java (SOAP) LiveCycleProcess
+seo-title: LiveCycleProcess Java API(SOAP)Quick Start
+description: 'Utilisez le démarrage rapide de l’API Java (SOAP) LiveCycleProcess pour rechercher des instances de processus, suspendre des instances de processus, démarrer des instances de processus suspendues, terminer des instances de processus, purger des données de processus et récupérer le statut d’une tâche. '
+seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -12,37 +12,37 @@ discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
 exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '428'
+ht-degree: 100%
 
 ---
 
-# Démarrage rapide de l’API Java LiveCycleProcess (SOAP) {#livecycleprocess-java-api-soap-quick-start}
+# Démarrage rapide de l’API Java (SOAP) LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
 
-Le démarrage rapide de l’API Java (SOAP) est disponible pour les processus. Une *instance de processus* est une occurrence d’un processus spécifique qui a été démarré par une méthode d’appel telle que l’API d’appel ou depuis Workspace.
+Le démarrage rapide de l’API Java (SOAP) est disponible pour les processus. Une *instance de processus* est une occurrence d’un processus spécifique qui a été lancé par une méthode d’invocation telle que l’API d’invocation ou depuis Workspace.
 
-[Démarrage rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
+[Démarrage rapide (mode SOAP) : rechercher des instances de processus à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[Démarrage rapide (mode SOAP) : suspendre des instances de processus à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
+[Démarrage rapide (mode SOAP) : démarrer des instances de processus suspendues à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Arrêt des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[Démarrage rapide (mode SOAP) : terminer des instances de processus à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+[Démarrage rapide (mode SOAP) : purger des données de processus à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
+[Démarrage rapide (mode SOAP) : récupérer le statut d’une tâche à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les démarrages rapides situés dans Programmation avec AEM Forms sont basés sur Forms si vous utilisez un autre système d’exploitation, comme Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Les démarrages rapides situés dans Programmation avec AEM Forms sont basés sur les formulaires. Si vous utilisez un autre système d’exploitation, tel qu’Unix, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-## Démarrage rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
+## Démarrage rapide (mode SOAP) : rechercher des instances de processus à l’aide de l’API Java. {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-L’exemple de code Java suivant recherche des instances de processus basées sur le processus *MortgageLoan - Prebuilt* .
+L’exemple de code Java suivant recherche les instances de processus qui sont basées sur le processus *MortgageLoan - Prebuilt*.
 
 ```java
  /*
@@ -158,9 +158,9 @@ L’exemple de code Java suivant recherche des instances de processus basées su
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
+## Démarrage rapide (mode SOAP) : suspendre des instances de processus à l’aide de l’API Java. {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
-L’exemple de code Java suivant suspend une instance de processus. Pour suspendre une instance de processus, vous avez besoin de l’identifiant d’appel de processus qui peut être obtenu lors de l’appel d’un processus de longue durée à l’aide de l’API d’appel.
+L’exemple de code Java suivant suspend une instance de processus. Pour réussir à suspendre une instance de processus, vous avez besoin de l’identifiant d’appel de processus qui peut être obtenu lors de l’appel d’un processus de longue durée en utilisant l’API d’appel.
 
 ```java
  /*
@@ -250,7 +250,7 @@ L’exemple de code Java suivant suspend une instance de processus. Pour suspend
  
 ```
 
-## Démarrage rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
+## Démarrage rapide (mode SOAP) : démarrer des instances de processus suspendues à l’aide de l’API Java. {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
 L’exemple de code Java suivant démarre une instance de processus suspendue.
 
@@ -338,7 +338,7 @@ L’exemple de code Java suivant démarre une instance de processus suspendue.
  
 ```
 
-## Démarrage rapide (mode SOAP) : Arrêt des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Démarrage rapide (mode SOAP) : terminer des instances de processus à l’aide de l’API Java. {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 L’exemple de code Java suivant met fin à une instance de processus avec la valeur d’identificateur 756c22860a242fb101ec7a5bc0977fd6.
 
@@ -429,9 +429,9 @@ L’exemple de code Java suivant met fin à une instance de processus avec la va
  
 ```
 
-## Démarrage rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## Démarrage rapide (mode SOAP) : purger des données de processus à l’aide de l’API Java. {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-Le code Java suivant purge les données d’un processus nommé *SecureDocument*. Un filtre est utilisé pour spécifier de purger les données pour les instances de processus où la variable de processus nommée *inValue* est supérieure à 200.
+Le code Java suivant purge les données d’un processus appelé *SecureDocument*. Un filtre qui spécifie la purge des données pour les instances de processus où la variable de processus appelée *inValue* est supérieur à 200 et est utilisé.
 
 ```java
  /*
@@ -536,9 +536,9 @@ Le code Java suivant purge les données d’un processus nommé *SecureDocument*
  
 ```
 
-## Démarrage rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
+## Démarrage rapide (mode SOAP) : récupérer le statut d’une tâche à l’aide de l’API Java. {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-L’exemple de code suivant récupère l’état de 10 tâches AEM Forms.
+L’exemple de code suivant récupère le statut de 10 tâches AEM Forms.
 
 ```java
  /*
