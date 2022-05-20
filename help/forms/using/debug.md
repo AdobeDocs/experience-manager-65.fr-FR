@@ -1,8 +1,8 @@
 ---
 title: Débogage des formulaires HTML5
-seo-title: Débogage des formulaires HTML5
+seo-title: Debugging HTML5 forms
 description: Ce document présente la marche à suivre pour résoudre divers problèmes bien connus.
-seo-description: Ce document présente la marche à suivre pour résoudre divers problèmes bien connus.
+seo-description: The document list steps to troubleshoot various known issues.
 uuid: df1835aa-6033-4ecb-97c8-4c3b7b96b943
 contentOwner: robhagat
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 72%
+workflow-type: ht
+source-wordcount: '818'
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 72%
 
 Ce document comprend plusieurs scénarios de résolution des problèmes. Pour chaque scénario, certaines étapes sont fournies pour résoudre le problème. Procédez comme suit et, si le problème persiste, configurez le journal pour obtenir et parcourir les journaux et rechercher les erreurs/avertissements. Pour plus d’informations sur la journalisation des formulaires HTML5, voir [Génération de journaux pour les formulaires HTML5](/help/forms/using/enable-logs.md).
 
-## Problème : lorsque vous effectuez le rendu d’un formulaire, la page d’exception org.apache.sling.api.SlingException s&#39;affiche {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
+## Problème : lorsque vous effectuez le rendu d’un formulaire, la page d’exception org.apache.sling.api.SlingException s’affiche {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
-Dans les détails de l’exception, recherchez le mot **provoqué par**.
+Dans les informations des exceptions, recherchez les mots **causé par**.
 
 Cela est probablement dû au fait qu’un ou plusieurs paramètres de l’URL sont incorrects.
 
@@ -55,15 +55,15 @@ Vérifiez les paramètres suivants :
  </tbody>
 </table>
 
-## Problème : impossible d&#39;effectuer le rendu d&#39;un formulaire (un message d’erreur s’affiche) {#problem-unable-to-render-form}
+## Problème : impossible d’effectuer le rendu d’un formulaire (un message d’erreur s’affiche) {#problem-unable-to-render-form}
 
 1. Assurez-vous que les paramètres indiqués sont corrects. Pour plus d’informations sur les paramètres, voir [Paramètres de rendu](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
-1. Connectez-vous au gestionnaire de modules CRX (à l’adresse https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) et vérifiez que les modules suivants sont correctement installés :
+1. Connectez vous au gestionnaire de modules CRX (à l’adresse https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) et vérifiez que les packages suivants sont correctement installés :
 
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. Connectez-vous à la console web CQ (console Felix) à l’adresse https://&lt;serveur>:&lt;port>/system/console/bundles.
+1. Connectez-vous à CQ Web Console (Console Felix) à l’adresse https://&lt;server>:&lt;port>/system/console/bundles.
 
     Assurez-vous que l’état des bundles suivants est « actif » :
 
@@ -71,7 +71,7 @@ Vérifiez les paramètres suivants :
 
    (com.adobe.livecyclescala-lang.bundle)
 
-   * Adobe du moteur de rendu XFA Forms
+   * Adobe XFA Forms Renderer
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
@@ -81,7 +81,7 @@ Vérifiez les paramètres suivants :
 
 ## Problème : le rendu des formulaires ne prend pas les styles en compte {#problem-form-renders-without-styles}
 
-1. Dans votre navigateur, ouvrez **Outils de développement**. Vérifiez que profile.css est disponible.
+1. Dans votre navigateur, ouvrez les **Outils de développement**. Assurez-vous que profile.css est disponible.
 1. Si le fichier profile.css n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;server>:&lt;port>/crx/de.
 1. Dans la hiérarchie de dossiers sur la gauche, accédez à /etc/clientlibs/fd/xfaforms/. Ouvrez les fichiers css.txt répertoriés dans les fichiers.
 
@@ -106,23 +106,23 @@ Vérifiez les paramètres suivants :
 
 ### Problème : erreur inattendue rencontrée {#problem-unexpected-error-encountered}
 
-1. Dans l’URL du formulaire, ajoutez un paramètre de requête debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;serveur>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. Dans l’URL du formulaire, ajoutez un paramètre de demande debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true).
 1. Dans le navigateur de bureau, comme Chrome, accédez à Outils de développement -> Console.
 1. Ouvrez les journaux pour identifier le type d’erreur. Pour plus d’informations sur les journaux, voir [journaux des formulaires HTML5](/help/forms/using/enable-logs.md).
 1. Accédez à Outils de développement -> Console. Utilisez la trace de pile pour localiser le code qui déclenche l’erreur. Corrigez l’erreur pour résoudre le problème.
 
    >[!NOTE]
    >
-   >en cas d’échec du script, vérifiez si le même problème se produit également au cours du rendu PDF du formulaire. Si oui, la logique de script du formulaire présente un problème.
+   >en cas d’échec du script, vérifiez si le même problème se produit également au cours du rendu PDF du formulaire. Si oui, alors il y a un problème dans la logique de script du formulaire.
 
 ## Problème : impossible d’envoyer le formulaire {#problem-unable-to-submit-the-form}
 
 1. Assurez-vous de disposer des droits d’accès au serveur AEM et d’être connecté au serveur.
 1. Vérifiez que le paramètre submitUrl est correct.
-1. Activez les journaux côté client comme mentionné à la section [Journaux pour les formulaires HTML5](/help/forms/using/enable-logs.md) à l’aide de l’option de débogage comme **1-a5-b5-c5**. Puis lancez le rendu du formulaire et cliquez sur envoyer. Ouvrez la console de dépannage du navigateur et vérifiez s’il se produit une erreur.
+1. Activez les journaux côté client comme mentionné dans [Journaux des formulaires HTML5](/help/forms/using/enable-logs.md) à l’aide de l’option de débogage comme **1-a5-b5-c5**. Puis lancez le rendu du formulaire et cliquez sur envoyer. Ouvrez la console de dépannage du navigateur et vérifiez s’il se produit une erreur.
 1. Recherchez les journaux du serveur comme expliqué dans la section [Journaux des formulaires HTML5](/help/forms/using/enable-logs.md). Vérifiez si une erreur s’est produite dans les journaux du serveur pendant l’envoi.
 
-## Problème : les messages d’erreur localisés ne s’affichent pas  {#problem-localized-error-messages-do-not-display}
+## Problème : les messages d’erreur localisés ne s’affichent pas {#problem-localized-error-messages-do-not-display}
 
 1. Effectuez le rendu du formulaire avec un paramètre de requête supplémentaire **debugClientLibs=true** dans le navigateur de bureau, puis accédez à Outils de développement -> Ressources et vérifiez le fichier I18N.css.
 1. Si le fichier n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;server>:&lt;port>/crx/de.
@@ -146,11 +146,11 @@ Vérifiez les paramètres suivants :
    ../LogMessages.js
    ```
 
-## Problème : l’image ne s’affiche pas  {#problem-image-not-showing-up}
+## Problème : l’image ne s’affiche pas {#problem-image-not-showing-up}
 
 1. Assurez-vous que l’URL de l’image est correcte.
 1. Vérifiez si votre navigateur prend en charge ce type d’image.
-1. Dans les détails de l’exception, recherchez le mot **provoqué par**.
+1. Dans les informations des exceptions, recherchez les mots **causé par**.
 
    Cela est probablement dû au fait qu’un ou plusieurs paramètres de l’URL sont incorrects.
 
@@ -164,7 +164,7 @@ Texte de l’étape
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>modèle</td>
+   <td>template</td>
    <td>Nom de fichier du modèle</td>
   </tr>
   <tr>
