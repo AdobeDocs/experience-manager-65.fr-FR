@@ -1,19 +1,19 @@
 ---
 title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles
-seo-title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles
+seo-title: Apply electronic signatures to a form using scribble signatures
 description: Signature de formulaires à l’aide de la saisie tactile
-seo-description: Signature de formulaires à l’aide de la saisie tactile
+seo-description: Signing forms using scribble
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '497'
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour s
 ## Configuration d’un formulaire adaptatif pour utiliser la signature tactile {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Créez une option Document d’enregistrement activée ou un formulaire adaptatif basé sur modèle de formulaire. Pour obtenir des informations détaillées, voir [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md).
-1. Faites glisser et déposez le composant **Signature tactile** de l’explorateur de composants vers le formulaire adaptatif.
+1. Faites glisser et déposez le composant **Signature tactile** du navigateur de composant vers le formulaire adaptatif.
 1. Appuyez sur l’icône de ![configuration](assets/configure.png) **Configurer**. Vous ouvrez ainsi le navigateur de propriétés qui affiche les propriétés du composant Signature tactile. Configurez les propriétés du composant Signature tactile.
-1. Faites glisser et déposez le composant Étape de signature de l’explorateur de composants vers le formulaire adaptatif.
+1. Faites glisser et déposez le composant Étape de signature du navigateur de composant vers le formulaire adaptatif.
 
    >[!NOTE]
    >
