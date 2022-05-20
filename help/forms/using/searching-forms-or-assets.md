@@ -1,8 +1,8 @@
 ---
 title: Recherche de formulaires et de ressources
-seo-title: Recherche de formulaires et de ressources
+seo-title: Searching for forms and assets
 description: Vous pouvez rechercher des formulaires et des ressources dans votre instance AEM à l’aide de la recherche AEM. Les modes de recherche de base et avancé vous permettent de localiser rapidement vos ressources.
-seo-description: Vous pouvez rechercher des formulaires et des ressources dans votre instance AEM à l’aide de la recherche AEM. Les modes de recherche de base et avancé vous permettent de localiser rapidement vos ressources.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: 0928a453-3dc4-448b-9320-dcbf20606dd9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,9 +12,9 @@ docset: aem65
 role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '692'
+ht-degree: 100%
 
 ---
 
@@ -38,10 +38,10 @@ Tenez compte des points suivants au sujet de la recherche de base :
 
 * La recherche est effectuée à l’aide des propriétés de métadonnées de formulaire et de ressource.
 * Si vous entrez plusieurs mots, l’opération de recherche correspond à la totalité du texte.
-* La recherche ne respecte pas la casse. Par exemple, lorsque vous tapez `geometrixx`, les ressources dont les titres sont `Geometrixx`, `GEOMETRIXX` et `GeoMetRixx` s’affichent dans les résultats de la recherche.
+* La recherche ne respecte pas la casse. Par exemple, lorsque vous saisissez `geometrixx`, des ressources intitulées `Geometrixx`, `GEOMETRIXX` et `GeoMetRixx` sont reprises dans les résultats de la recherche.
 
 * Les correspondances partielles d’un mot ne sont pas prises en charge. Pour effectuer une recherche en utilisant des chaînes partielles, utilisez le caractère générique *. Toutefois, si la requête correspond à un mot complet, le formulaire ou la ressource correspondant s’affiche.
-* Les espaces supplémentaires sont respectés et ne sont pas coupés lors de la recherche. Par exemple, `My form` n’est pas la même requête de recherche que `My form`.
+* Les espaces supplémentaires sont respectés et ne sont pas coupés lors de la recherche. Par exemple : `My form` n’est pas la même requête que `My form`.
 
 * Si les données et les valeurs d’affichage des champs dans les propriétés de métadonnées sont différentes, vous ne pouvez pas utiliser ces valeurs comme paramètres de recherche. Par exemple, vous ne pouvez effectuer une recherche sur la base de l’état, tel que Modifié ou Publié, car ces propriétés sont stockées dans un format différent.
 
