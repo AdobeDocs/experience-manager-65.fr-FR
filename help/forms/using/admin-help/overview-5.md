@@ -1,8 +1,8 @@
 ---
 title: Introduction à l’utilisation de PDF Generator
-seo-title: Introduction à l’utilisation de PDF Generator
+seo-title: Introduction to working with PDF Generator
 description: Découvrez comment convertir divers fichiers au format PDF.
-seo-description: Découvrez comment convertir divers fichiers au format PDF.
+seo-description: Learn how to convert various file formats to PDF.
 uuid: 1942bf9f-99cc-48b6-89f4-e78c1957a300
 contentOwner: admin
 content-type: reference
@@ -13,9 +13,9 @@ docset: aem65
 feature: PDF Generator
 exl-id: 08e2381e-c7e8-4690-9cbf-6934064a04f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 79%
+workflow-type: ht
+source-wordcount: '134'
+ht-degree: 100%
 
 ---
 
@@ -28,5 +28,5 @@ PDF Generator convertit de nombreux formats de fichier en PDF. Il convertit éga
 Vous pouvez envoyer des fichiers à traiter à PDF Generator de trois façons différentes :
 
 * Les administrateurs peuvent accéder aux pages PDFG dans Administration Console (voir [Conversion de fichiers à l’aide de PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)).
-* Les utilisateurs peuvent accéder aux pages des utilisateurs finaux de PDFG en se connectant à `http(s)://'[server]:[port]'/pdfgui.` . De là, ils peuvent accéder aux pages de l’imprimante réseau PDFG Network Printer, Create PDF, HTML to PDF, Export PDF et Optimize PDF.
-* Vous pouvez configurer les points de fin de ce service Voir <!--Fix broken link to Managing Endpoints --> [Recommandations relatives au service Generate PDF](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).
+* Les utilisateurs peuvent accéder aux pages des utilisateurs finaux de PDFG en se connectant à `http(s)://'[server]:[port]'/pdfgui.`. De là, ils peuvent accéder aux pages Imprimante réseau PDFG, Créer un PDF, HTML en PDF, Exporter PDF et Optimiser PDF.
+* Vous pouvez configurer les points de fin de ce service Voir la section <!--Fix broken link to Managing Endpoints --> [Recommandations relatives au service Generate PDF](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).
