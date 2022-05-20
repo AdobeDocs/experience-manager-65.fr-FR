@@ -1,19 +1,19 @@
 ---
 title: Utilisation du processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement
-seo-title: Utilisation du processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement
+seo-title: Using AEM translation workflow to localize adaptive forms and document of record
 description: Découvrez comment utiliser les processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement.
-seo-description: Découvrez comment utiliser les processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement.
+seo-description: Learn to use AEM translation workflows to localize adaptive forms and document of record.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 92%
+workflow-type: ht
+source-wordcount: '753'
+ht-degree: 100%
 
 ---
 
@@ -66,18 +66,16 @@ Effectuez les étapes suivantes pour localiser un formulaire et son document d�
 
 1. [Associer les pages de votre gabarit de langue](/help/sites-administering/tc-tic.md) au service de traduction et aux configurations de structure.
 
-1. [Identifiez le type de ](/help/sites-administering/tc-rules.md) contenu à traduire.
+1. [Identifier le type de contenu](/help/sites-administering/tc-rules.md) à traduire.
 
 1. [Préparez le contenu à traduire](/help/sites-administering/tc-prep.md) en créant le gabarit de langue et les pages racine des copies de langue.
 
-1. [Créez des ](/help/sites-administering/tc-manage.md) projets de traduction pour rassembler le contenu à traduire et préparer le processus de traduction.
+1. [Créer des projets de traduction](/help/sites-administering/tc-manage.md) pour collecter le contenu à traduire et préparer le processus de traduction.
 
 1. Utiliser les projets de translation pour [gérer le processus de traduction du contenu](/help/sites-administering/tc-manage.md).
 
 >[!NOTE]
 >
 >* Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). comme l’hébreu.
-
 >
-
 
