@@ -1,8 +1,8 @@
 ---
 title: Envoi sécurisé de gros volumes d’information
-seo-title: Envoi sécurisé de gros volumes d’information
+seo-title: High-volume secure information delivery
 description: Dans des environnements de production de masse, Document Security prend en charge l’association des licences aux utilisateurs plutôt qu’aux documents.
-seo-description: Dans des environnements de production de masse, Document Security prend en charge l’association des licences aux utilisateurs plutôt qu’aux documents.
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '324'
+ht-degree: 100%
 
 ---
 
@@ -30,4 +30,4 @@ Dans le cas de la génération mensuelle de factures pour une société de tél�
 
 La création de stratégies abstraites est prise en charge uniquement par le biais du SDK Java de Document Security. Vous pouvez cependant administrer les stratégies que vous créez à partir des stratégies abstraites des pages Web de Document Security. Le comportement des stratégies créées à l’aide de cette méthode est identique à celui des stratégies créées à partir des pages Web de Document Security.
 
-Pour plus d’informations, consultez [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+Pour plus d’informations, consultez [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
