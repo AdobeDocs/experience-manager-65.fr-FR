@@ -1,8 +1,8 @@
 ---
 title: Propriétés de configuration des communications interactives
-seo-title: Propriétés de configuration de la communication interactive
+seo-title: Interactive Communication configuration properties
 description: Modifier les propriétés de configuration par défaut des communications interactives
-seo-description: Modifier les propriétés de configuration par défaut des communications interactives
+seo-description: Edit default configuration properties for Interactive Communications
 uuid: 4030078f-64a3-40bb-9892-49e22a8da561
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: interactive-communications
 discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
-feature: Communication interactive
+feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 60%
+workflow-type: ht
+source-wordcount: '614'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 60%
 
 Les communications interactives incluent les propriétés qui sont configurées automatiquement après l’installation du package du [module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Les auteurs de la communication interactive peuvent modifier ces propriétés de configuration par défaut en utilisant la page de **configuration de la console web d’Adobe Experience Manager**.
 
-Ouvrez la page **Configuration de la console web Adobe Experience Manager** à l’aide de l’URL suivante :
+Ouvrez la page de **configuration de la console web d’Adobe Experience Manager** à l’aide de l’adresse suivante :
 
 `https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
@@ -36,7 +36,7 @@ Les propriétés de configuration incluent :
 
 ## Configuration de fragments de document {#document-fragments-configuration}
 
-Appuyez sur **Configuration des fragments de document** sur la page **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration des fragments de document.
+Cliquez sur **configuration de fragments de document** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration des fragments de document.
 
 <table>
  <tbody> 
@@ -48,16 +48,16 @@ Appuyez sur **Configuration des fragments de document** sur la page **Configurat
   </tr> 
   <tr> 
    <td>Data Display Formats</td> 
-   <td>Format d’affichage spécifique aux paramètres régionaux pour les champs, les variables et les éléments de modèle de données de formulaire disponibles lors de la création d’une communication interactive pour les canaux d’impression et web.</td> 
+   <td>Format d’affichage spécifique aux paramètres régionaux pour les champs, variables et éléments de modèle de données de formulaire disponibles lors de la création d’une communication interactive pour les canaux d’impression et web.</td> 
    <td> 
     <ul> 
-     <li>locale = en_US, de_DE, fr_FR et ja_JP</li> 
-     <li>dateFormat = dd-MM-yyy</li> 
+     <li>Paramètre régional = en_US, de_DE, fr_FR et ja_JP</li> 
+     <li>dateFormat = dd-MM-yyyy</li> 
      <li>numberDecimalSeparator = .</li> 
      <li>numberGroupSeparator = ,</li> 
-     <li>numberUseGroupSeparator = true</li> 
+     <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td>Indentation</td> 
@@ -82,7 +82,7 @@ Appuyez sur **Configuration des fragments de document** sur la page **Configurat
 
 ## Configuration de la création de correspondance {#create-correspondence-configuration}
 
-Appuyez sur **Configuration de la création de correspondance** sur la page **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration de l’interface utilisateur de l’agent.
+Cliquez sur **Configuration de la création de correspondance** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration de l’interface utilisateur de l’agent.
 
 <table>
  <tbody> 
@@ -105,27 +105,27 @@ Appuyez sur **Configuration de la création de correspondance** sur la page **Co
    <td>Non applicable</td> 
   </tr> 
   <tr> 
-   <td>Activation de l’incorporation des polices dans PDF</td> 
-   <td><p>Cochez la case pour activer l’incorporation de polices dans les documents PDF. Après avoir sélectionné cette option, vous pouvez incorporer de nouvelles polices après avoir généré ou prévisualisé les documents PDF à l’aide de l’interface utilisateur de l’agent. Utilisez le canal d’impression de la communication interactive pour générer et prévisualiser des documents PDF.</p> <p>L’incorporation de polices dans un document PDF s’avère utile si une police est disponible sur un ordinateur qui est utilisé pour générer le PDF et qui n’est pas disponible sur l’ordinateur client qui accède au PDF.</p> <p>Pour plus d’informations sur l’incorporation de polices, voir <a href="../../forms/using/customize-text-editor.md" target="_blank">Personnalisation de l’éditeur de texte</a>.</p> </td> 
+   <td>Activer l’incorporation de polices dans un document PDF</td> 
+   <td><p>Cochez la case pour activer l’incorporation de polices dans les documents PDF. Après avoir sélectionné cette option, vous pouvez incorporer de nouvelles polices après avoir généré ou prévisualisé des documents PDF à l’aide de l’interface utilisateur de l’agent. Utilisez le canal d’impression de la communication interactive pour générer et prévisualiser des documents PDF.</p> <p>L’incorporation de polices dans un document PDF est utile lorsqu’une police est disponible sur l’ordinateur utilisé pour générer le document PDF et ne l’est pas sur l’ordinateur client qui accède au document PDF.</p> <p>Pour plus d’informations sur l’incorporation de polices, voir <a href="../../forms/using/customize-text-editor.md" target="_blank">Personnaliser l’éditeur de texte</a>.</p> </td> 
    <td>Non sélectionné</td> 
-   <td>Ne s’applique pas</td> 
+   <td>Non applicable</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Configuration de canal web du formulaire adaptatif et de la communication interactive  {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Configuration de canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Appuyez sur **Configuration du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration du canal web du Forms adaptatif et des communications interactives. Le tableau suivant décrit les propriétés liées aux communications interactives :
+Appuyez sur **Configuration du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration du canal web du formulaire adaptatif et des communications interactives. Le tableau suivant décrit les propriétés liées aux communications interactives :
 
 | Propriété | Description | Valeur par défaut | Valeurs acceptables |
 |---|---|---|---|
 | Afficher l’espace réservé | Cochez la case pour activer l’affichage des espaces réservés pour les champs inclus dans les formulaires adaptatifs et les communications interactives. | Sélectionné | Non applicable |
 | Nombre maximal d’entrées de cache | Définissez le nombre maximal de formulaires adaptatifs et de communications interactives pouvant être récupérés à l’aide de la mémoire cache. | 100 | Nombre |
-| Rendre le nom de fichier unique | Cochez la case pour attribuer des noms uniques aux fichiers en tant que pièces jointes dans les formulaires adaptatifs et les communications interactives. | Non sélectionné | Ne s’applique pas |
+| Rendre le nom de fichier unique | Cochez la case pour attribuer des noms uniques aux fichiers en tant que pièces jointes dans les formulaires adaptatifs et les communications interactives. | Non sélectionné | Non applicable |
 
-## Configuration des thèmes de canal web du formulaire adaptatif et de la communication interactive  {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configuration des thèmes de canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Appuyez sur **Configuration du thème du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web Adobe Experience Manager** pour afficher les propriétés de configuration des thèmes du canal web du Forms adaptatif et des communications interactives.
+Appuyez sur **Configuration des thèmes du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration des thèmes du canal web du formulaire adaptatif et des communications interactives.
 
 <table>
  <tbody> 
