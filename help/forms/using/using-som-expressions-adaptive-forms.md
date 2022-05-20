@@ -1,19 +1,19 @@
 ---
 title: Utilisation d’expressions SOM dans des formulaires adaptatifs
-seo-title: Utilisation d’expressions SOM dans des formulaires adaptatifs
+seo-title: Using SOM expressions in adaptive forms
 description: Découvrez comment extraire les expressions SOM d’un panneau de formulaire adaptatif.
-seo-description: Découvrez comment extraire les expressions SOM d’un panneau de formulaire adaptatif.
+seo-description: Learn how to extract SOM expressions of a panel of an adaptive form.
 uuid: c5d55aff-fb69-4a1c-96ea-fb3f9322cbb0
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 6a158e18-b7d0-45fb-b4fc-4770e66982b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 91%
+workflow-type: ht
+source-wordcount: '348'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Les formulaires adaptatif sont modélisés comme des pages AEM, représentées 
 
 Vous pouvez utiliser un modèle d’objet de script (SOM) pour référencer des valeurs, des propriétés et des méthodes dans un modèle d’objet de document (DOM) particulier. Un DOM organise les objets et les propriétés de mémoire dans une arborescence. Une expression SOM référence des champs ou des éléments de dessin et des panneaux.
 
-L’image suivante illustre une structure de noeud convertie par un formulaire adaptatif lorsque vous ajoutez des composants à un formulaire. Par exemple, vous pouvez ajouter un panneau au panneau racine et un bouton radio au panneau transformé en DOM à l’exécution. L’expression SOM du champ bouton radio dans le formulaire adaptatif est spécifiée sous la forme `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
+L’image suivante illustre une structure de nœud d’un formulaire adaptatif traduite lorsque vous ajoutez des composants à un formulaire. Par exemple, vous pouvez ajouter un panneau au panneau racine et un bouton radio au panneau transformé en DOM à l’exécution. L’expression SOM du champ de bouton radio du formulaire adaptatif est spécifiée comme `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 
 ![Arborescence DOM](assets/hierarchy.png)
 
@@ -35,7 +35,7 @@ Une expression SOM pour tout élément dans un formulaire adaptatif est précéd
 
 Arborescence DOM à deux boutons radio
 
-L’expression SOM change lorsque vous modifiez la position des boutons radio dans le formulaire adaptatif. Dans le mode création, vous pouvez afficher l’expression SOM d’un champ ou d’un élément dans AEM Forms à l’aide de l’option Visualiser l’expression SOM. L’option apparaît dans le panneau et lorsque vous faites un clic droit sur le champ ou sur l’élément.
+L’expression SOM change lorsque vous modifiez la position des boutons radio dans le formulaire adaptatif. Dans le mode création, vous pouvez afficher l’expression SOM d’un champ ou d’un élément dans AEM Forms à l’aide de l’option Visualiser l’expression SOM. L’option apparaît dans le panneau et lorsque vous cliquez avec le bouton droit sur le champ ou sur l’élément.
 
 ![Extraction des expressions SOM dans un formulaire adaptatif](assets/som-expressions.png)
 
