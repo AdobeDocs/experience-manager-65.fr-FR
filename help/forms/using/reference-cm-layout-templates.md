@@ -10,9 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 Dans Correspondence Management, un modèle de lettre contient des champs de formulaire classiques, des fonctions de mise en page (en-têtes et pieds de page, par exemple) et des « zones cibles » vides où placer du contenu.
 
-Correspondence Management fournit des modèles de lettre dans le [module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Vous pouvez personnaliser les modèles dans Designer en fonction de vos besoins de marque et d’entreprise. Le package inclut les modèles suivants :
+Correspondence Management fournit des modèles de lettres dans le [package de modules complémentaires AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). Vous pouvez personnaliser les modèles dans Designer en fonction de vos besoins de marque et d’entreprise. Le package inclut les modèles suivants :
 
 * Classique
 * Classique simple
