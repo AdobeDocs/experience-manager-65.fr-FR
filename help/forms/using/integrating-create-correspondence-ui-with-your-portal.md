@@ -1,20 +1,20 @@
 ---
 title: Intégration de l’interface utilisateur de création de correspondance dans votre portail personnalisé
-seo-title: Intégration de l’interface utilisateur de création de correspondance dans votre portail personnalisé
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Découvrez comment intégrer l’interface utilisateur de création de correspondance dans votre portail personnalisé
-seo-description: Découvrez comment intégrer l’interface utilisateur de création de correspondance dans votre portail personnalisé
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 68ef5bf2-b271-4c44-8840-6c495069164d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 76%
+workflow-type: ht
+source-wordcount: '413'
+ht-degree: 100%
 
 ---
 
@@ -32,8 +32,8 @@ Il est possible d’appeler l’application de création de correspondance à pa
 
 * l’URL des données XML extraites à partir de la source de données sélectionnée (à l’aide du paramètre cmDataUrl).
 
-Par exemple, le portail personnalisé prépare l’URL en tant que\
-`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, qui peut être la balise href d’un lien sur le portail.
+Par exemple, le portail personnalisé prépare l’URL sous la forme\
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, qui pourrait être le href dʼun lien sur le portail.
 
 >[!NOTE]
 >
@@ -43,11 +43,11 @@ Par exemple, le portail personnalisé prépare l’URL en tant que\
 >
 >Avant d’appeler l’application de création de correspondance, enregistrez et chargez les données d’appel de l’interface utilisateur de création de correspondance au niveau de l’URL de données requise. Cette opération peut être réalisée à partir du portail personnalisé ou à l’aide d’un autre processus différent d’arrière-plan.
 
-## Appel inséré basé sur les données  {#inline-data-based-invocation}
+## Appel inséré basé sur les données {#inline-data-based-invocation}
 
-Un autre moyen (plus sécurisé) d’appeler l’application de création de correspondance consiste à accéder simplement à l’URL https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, tout en envoyant les paramètres et les données pour appeler l’application de création de correspondance en tant que demande de POST (en les cachant de l’utilisateur final). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
+Un autre moyen (plus sûr) d’appeler l’application de création de correspondance consiste à accéder à l’URL https://&#39;[serveur]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, en transmettant les paramètres et données permettant d’appeler l’application de création de correspondance dans le cadre d’une requête POST (sans que l’utilisateur final ne les voie). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
 
-### Paramètres de définition de lettre  {#parameters-for-specifying-letter}
+### Paramètres de définition de lettre {#parameters-for-specifying-letter}
 
 | **Nom** | **Type** | **Description** |
 |---|---|---|
@@ -56,7 +56,7 @@ Un autre moyen (plus sécurisé) d’appeler l’application de création de cor
 
 L’ordre des paramètres du tableau indique la préférence de paramètres utilisés pour le chargement de la lettre.
 
-### Paramètres de définition de la source de données XML  {#parameters-for-specifying-the-xml-data-source}
+### Paramètres de définition de la source de données XML {#parameters-for-specifying-the-xml-data-source}
 
 <table>
  <tbody>
@@ -107,4 +107,4 @@ L’ordre des paramètres du tableau indique la préférence de paramètres util
  </tbody>
 </table>
 
-Si vous utilisez le protocole http ou cq pour cmDataURL, l’URL de http/cq doit être accessible de manière anonyme.
+Si vous utilisez le protocole http ou cq pour le paramètre cmDataURL, l’URL correspondante doit pouvoir être accessible de manière anonyme.
