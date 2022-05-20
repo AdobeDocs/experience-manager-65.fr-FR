@@ -1,18 +1,18 @@
 ---
 title: Réutilisation de formulaires adaptatifs
-seo-title: Réutilisation de formulaires adaptatifs
+seo-title: Reusing adaptive forms
 description: Vous pouvez réutiliser un formulaire adaptatif existant afin d’en créer de nouveaux.
-seo-description: Vous pouvez réutiliser un formulaire adaptatif existant afin d’en créer de nouveaux.
+seo-description: You can reuse an existing adaptive form to create new adaptive forms.
 uuid: f1d0fb70-e255-4dd9-8e6d-fd65eaf2e81a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 81%
+workflow-type: ht
+source-wordcount: '538'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
 1. Sélectionnez le formulaire adaptatif. Le processus de sélection est différent pour chaque vue.
 
-   Si vous êtes en mode Carte, accédez au mode de sélection en cliquant sur l’icône ![aem6forms_check-circle](assets/aem6forms_check-circle.png) de sélection, puis cliquez sur tous les formulaires adaptatifs que vous souhaitez copier.
+   Si le mode d’affichage Vignette est activé, accédez au mode de sélection en cliquant sur l’icône de sélection ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis cliquez sur tous les formulaires adaptatifs à copier.
 
    Si le mode Liste est actif, cochez les cases à cocher de tous les formulaires adaptatifs pour les sélectionner.
 
@@ -46,15 +46,15 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
    >
    >Tous les éléments sélectionnés doivent être des formulaires adaptatifs, car la fonctionnalité de copier-coller n’est prise en charge que pour ces formulaires, et tous doivent figurer dans le même dossier.
 
-   Après avoir sélectionné les ressources, cliquez sur l’icône Copier ![aem6forms_copy](assets/aem6forms_copy.png) présente dans la barre d’outils pour copier le formulaire adaptatif sélectionné.
+   Après avoir sélectionné les éléments, cliquez sur l’icône de copie ![aem6forms_copy](assets/aem6forms_copy.png) de la barre d’outils pour copier le formulaire adaptatif sélectionné.
 
 ### Coller un formulaire adaptatif {#paste-an-adaptive-form}
 
-Le fait de cliquer sur l’action de copie quitte automatiquement le mode de sélection et rend visible l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png). Accédez maintenant au chemin du dossier souhaité et cliquez sur l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png) pour coller le formulaire adaptatif copié.
+Un clic sur l’action de copie fait automatiquement quitter le mode de sélection et rend visible l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png). Accédez maintenant au dossier de votre choix et cliquez sur l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png) pour coller le formulaire adaptatif copié.
 
 Si vous collez le formulaire dans le même dossier ou s’il existe déjà un autre fichier portant le même nom de nœud (avec lequel il est stocké dans le référentiel CRX) dans ce dossier cible, une unité est ajoutée au suffixe (par exemple, myaf devient myaf1 et si myaf1 existe déjà au même emplacement, myaf devient myaf2). Toutes les autres propriétés restent identiques au formulaire adaptatif d’origine.
 
-Après avoir cliqué sur l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png), il se masquera à nouveau. Vous ne pouvez effectuer qu’une seule opération de copie à la fois. Pour créer une autre copie d’un même élément, copiez le à nouveau.
+Cliquer sur l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png) la masque à nouveau. Vous ne pouvez effectuer qu’une seule opération de copie à la fois. Pour créer une autre copie d’un même élément, copiez le à nouveau.
 
 ### Modification du contenu du nouveau formulaire adaptatif {#change-contents-of-new-adaptive-form}
 
