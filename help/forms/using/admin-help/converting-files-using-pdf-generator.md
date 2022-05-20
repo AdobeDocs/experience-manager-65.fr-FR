@@ -1,8 +1,8 @@
 ---
 title: Conversion de fichiers à l’aide de PDF Generator
-seo-title: Conversion de fichiers à l’aide de PDF Generator
+seo-title: Converting files using PDF Generator
 description: Découvrez comment convertir des fichiers à l’aide de PDF Generator.
-seo-description: Découvrez comment convertir des fichiers à l’aide de PDF Generator.
+seo-description: Learn how to convert files using PDF Generator.
 uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 91%
+workflow-type: ht
+source-wordcount: '1167'
+ht-degree: 100%
 
 ---
 
@@ -43,17 +43,17 @@ Vous pouvez utiliser les pages Web de PDF Generator pour convertir des fichiers.
 1. Cliquez sur Créer. Lorsque le fichier est créé, un lien vers celui-ci s’affiche. Si une erreur survient lors de la conversion, un avertissement s’affiche. Si vous créez un fichier Postscript, cet avertissement contient également un lien vers le fichier journal.
 1. Cliquez sur le lien correspondant au fichier PDF. Le fichier s’ouvre dans Acrobat.
 
-### A propos des fichiers XMP  {#about-xmp-files}
+### A propos des fichiers XMP {#about-xmp-files}
 
 Les documents créés par PDF Generator dans Acrobat 5.0 ou versions ultérieures contiennent les métadonnées de ceux-ci au format XML. Les *métadonnées* comprennent des informations relatives au document et à son contenu, comme le nom de l’auteur, les mots-clés et les droits d’auteurs, que les utilitaires de recherche peuvent utiliser.
 
 Les métadonnées contiennent (sans s’y limiter) des informations qui s’affichent également dans l’onglet Description de la boîte de dialogue Propriétés du document dans Acrobat. Les modifications apportées dans l’onglet Description sont répercutées sur les métadonnées du document. Il est possible d’étendre et de modifier ces dernières à l’aide de produits tiers.
 
-La plateforme XMP (Extensible Metadata Platform, plateforme de métadonnées extensible) offre aux applications Adobe une structure XML commune qui normalise la création, le traitement et l’échange des métadonnées d’un document dans les flux de travail de publication. Vous pouvez enregistrer et importer le code source XML des métadonnées du document au format XMP, ce qui facilite le partage des métadonnées entre différents documents. Pour plus de détails sur les fichiers XMP, consultez le document sur la plate-forme XMP [(Extensible Metadata Platform)](https://www.adobe.com/products/xmp/) et le [centre des développeurs Adobe XMP](https://www.adobe.com/devnet/xmp.html).
+La plateforme XMP (Extensible Metadata Platform, plateforme de métadonnées extensible) offre aux applications Adobe une structure XML commune qui normalise la création, le traitement et l’échange des métadonnées d’un document dans les flux de travail de publication. Vous pouvez enregistrer et importer le code source XML des métadonnées du document au format XMP, ce qui facilite le partage des métadonnées entre différents documents. Pour plus de détails sur les fichiers XMP, consultez le document sur la plate-forme XMP [(Extensible Metadata Platform)](https://www.adobe.com/fr/products/xmp/) et le [centre des développeurs Adobe XMP](https://www.adobe.com/devnet/xmp.html).
 
 Vous pouvez créer des fichiers XMP dans Acrobat.
 
-## Conversion d’un fichier HTML ou ZIP au format PDF  {#convert-an-html-file-or-zip-file-to-pdf}
+## Conversion d’un fichier HTML ou ZIP au format PDF {#convert-an-html-file-or-zip-file-to-pdf}
 
 PDF Generator permet de convertir les types de fichiers suivants au format Adobe PDF :
 
@@ -65,23 +65,19 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 >[!NOTE]
 >
 >* la conversion de fichiers HTML au format PDF requiert certaines polices dans le répertoire des polices système. Sur les systèmes Linux, Solaris et AIX, le répertoire des polices système doit contenir la police Courier. Sur les systèmes Windows, le répertoire des polices système doit contenir Times New Roman.
-   >
-   >
-* (Système UNIX uniquement) L’une des polices japonaises suivantes doit être disponible sur le serveur AEM Forms pour convertir une page web avec une police japonaise en document PDF.
-   >
-   >  
-* &quot;Sazanami Gothic&quot;
->  * &quot;Kozuka Gothic Pro-VI&quot;
->  * &quot;Kozuka Mincho Pro-VI&quot;
->  * &quot;Sazanami Gothic&quot;
->  * &quot;Kozuka Mincho Pr6N&quot;
->  * &quot;Sazanami Mincho&quot;
->  * &quot;Adobe Heiti Std&quot;
->  * &quot;Adobe Song Std&quot;
-
-   >
-   >
-* Pour télécharger un fichier à partir du système de fichiers local, utilisez l’option Télécharger le fichier de la page HTML en PDF.
+>
+>* (Système UNIX uniquement) L’une des polices japonaises suivantes doit être disponible sur le serveur AEM Forms pour convertir une page web avec une police japonaise en document PDF.
+>
+>  * « Sazanami Gothic »
+>  * « Kozuka Gothic Pro-VI »
+>  * « Kozuka Mincho Pro-VI »
+>  * « Sazanami Gothic »
+>  * « Kozuka Mincho Pr6N »
+>  * « Sazanami Mincho »
+>  * « Adobe Heiti Std »
+>  * « Adobe Song Std »
+>
+>* Pour télécharger un fichier à partir du système de fichiers local, utilisez l’option Télécharger le fichier de la page HTML en PDF.
 
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > HTML en PDF.
@@ -108,9 +104,9 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 1. Cliquez sur Créer. Lorsque le fichier est créé, un lien vers le fichier PDF s’affiche.
 1. Cliquez sur le lien pour afficher le document PDF dans Acrobat.
 
-## Exportation d’un fichier PDF dans un autre format de fichier (Windows uniquement)  {#export-a-pdf-file-to-another-file-format-windows-only}
+## Exportation d’un fichier PDF dans un autre format de fichier (Windows uniquement) {#export-a-pdf-file-to-another-file-format-windows-only}
 
-Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comme décrit dans le chapitre consacré au service Generate PDF du [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comme décrit dans le chapitre consacré au service Generate PDF du [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Exporter un PDF.
 1. Cliquez sur Parcourir pour déterminer l’emplacement du fichier PDF à exporter.
@@ -119,7 +115,7 @@ Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comm
 
    La durée de conversion affichée une fois le fichier converti peut être supérieure à la valeur spécifiée ici. En effet, elle inclut le temps passé à attendre le thread ou le processus, la durée de conversion du fichier et le temps pris par le convertisseur de secours (le cas échéant). time. La valeur du paramètre Spécifier un délai d’expiration ne reflète que le temps de conversion du fichier.
 
-1. (Facultatif) Dans l’option **Spécifiez le profil de contrôle en amont personnalisé**, cliquez sur Parcourir, puis sélectionnez un [profil de contrôle en amont personnalisé](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont ne sont utilisés que lors de la conversion de documents au format d’archive PDF (PDF/A).
+1. (Facultatif) Dans l’option **Spécifier un profil de contrôle en amont personnalisé**, cliquez sur Parcourir et sélectionnez un [profil de contrôle en amont personnalisé](https://helpx.adobe.com/fr/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont sont uniquement utilisés lors de la conversion de documents au format d’archivage PDF (PDF/A).
 1. Cliquez sur Exporter. Lorsque la conversion est terminée, un lien renvoyant au fichier exporté s’affiche.
 1. Cliquez sur ce lien pour afficher le fichier converti.
 
