@@ -1,8 +1,8 @@
 ---
 title: Gestion des informations d’identification locales
-seo-title: Gestion des informations d’identification locales
+seo-title: Managing local credentials
 description: Découvrez comment gérer vos informations d’identification locales.
-seo-description: Découvrez comment gérer vos informations d’identification locales.
+seo-description: Learn how to manage local credentials.
 uuid: 3c4358e0-aaff-4e94-a6b2-04b463fca260
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '501'
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Pour obtenir des informations et des instructions concernant les extensions d’
    * **Informations d’identification des extensions d’Acrobat Reader DC :** certificat numérique spécifique des extensions d’Acrobat Reader DC qui permet l’activation de droits Adobe Reader dans les documents PDF générés.
    * **Par défaut :** indique qu’il s’agit des informations d’identification par défaut à utiliser avec les extensions d’Acrobat Reader DC.
 
-   Pour plus d’informations sur l’obtention d’informations d’identification, voir [Préparation à l’installation d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+   Pour plus d’informations sur l’obtention d’informations d’identification, voir [Préparation à l’installation d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_fr).
 
 1. Dans la zone Alias, saisissez un identificateur pour les informations d’identification. Cet identifiant sert de nom d’affichage aux informations d’identification dans les extensions d’Acrobat Reader DC et dans le service Signature. Il permet également d’accéder automatiquement aux informations d’identification via le SDK d’AEM Forms.
 
@@ -48,7 +48,7 @@ Pour obtenir des informations et des instructions concernant les extensions d’
 
    Si le message d’erreur « Echec de l’importation des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect » s’affiche, assurez-vous que le mot de passe est valide.
 
-## Exportation des informations d’identification  {#export-a-credential}
+## Exportation des informations d’identification {#export-a-credential}
 
 Elles sont exportées sous forme de fichiers P12 au format PKCS#12.
 
@@ -57,7 +57,7 @@ Elles sont exportées sous forme de fichiers P12 au format PKCS#12.
 1. Dans le champ Password, saisissez le mot de passe. Ce mot de passe est nouveau et permet de chiffrer les informations d’identification exportées.
 1. Cliquez sur Exporter, suivez les instructions pour exporter les informations d’identification, puis cliquez sur OK.
 
-## Modification de l’alias ou du type de Trust Store des informations d’identification  {#edit-a-credential-s-alias-or-trust-store-type}
+## Modification de l’alias ou du type de Trust Store des informations d’identification {#edit-a-credential-s-alias-or-trust-store-type}
 
 Une fois que des informations d’identification ont été importées, vous pouvez modifier le nom d’alias et le type de Trust Store qui leur sont associés.
 
@@ -66,7 +66,7 @@ Une fois que des informations d’identification ont été importées, vous pouv
 1. Cliquez sur Mettre à jour les informations d’identification.
 1. Modifiez le nom d’alias et le type de Trust Store selon vos besoins, puis cliquez sur OK.
 
-## Suppression d’informations d’identification  {#delete-a-credential}
+## Suppression d’informations d’identification {#delete-a-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
 1. Cochez les cases correspondant aux informations d’identification à supprimer.
