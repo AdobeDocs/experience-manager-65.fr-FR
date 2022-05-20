@@ -1,8 +1,8 @@
 ---
 title: Présentation de l’espace de travail
-seo-title: Présentation de l’espace de travail
+seo-title: Overview of Workspace
 description: L’espace de travail permet aux utilisateurs de démarrer des processus d’entreprise, d’en assurer le suivi et d’y participer. Vous allez en découvrir davantage sur l’espace de travail.
-seo-description: L’espace de travail permet aux utilisateurs de démarrer des processus d’entreprise, d’en assurer le suivi et d’y participer. Vous allez en découvrir davantage sur l’espace de travail.
+seo-description: The workspace lets users start, participate in, and track business processes. Let us learn more about the workspace.
 uuid: 25374641-a70b-485a-8d34-5d7b156c08e8
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
 exl-id: da1224e4-566a-402f-9d8b-27fda5f3101b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '147'
+workflow-type: ht
+source-wordcount: '126'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Workspace permet aux utilisateurs de démarrer des processus d’entreprise, d’en assurer le suivi et d’y participer.
 
-Dans les pages Workspace de Administration Console, vous pouvez exécuter les tâches suivantes :
+Dans les pages Workspace d’Administration Console, vous pouvez exécuter les tâches suivantes :
 
 * définir le message à afficher dans la page d’accueil de l’interface utilisateur de Workspace ;
 * configurer des modèles de recherche à utiliser dans Workspace pour rechercher des processus et des tâches ;
