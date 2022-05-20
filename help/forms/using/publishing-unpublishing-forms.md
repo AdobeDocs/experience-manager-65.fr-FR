@@ -1,8 +1,8 @@
 ---
 title: Publication et annulation de publication de formulaires et documents
-seo-title: Publication et annulation de publication de formulaires et documents
+seo-title: Publishing and unpublishing forms and documents
 description: Vous pouvez planifier la publication de formulaires et l’annulation de leur publication. Les formulaires publiés sont répliqués sur l’instance de publication.
-seo-description: Vous pouvez planifier la publication de formulaires et l’annulation de leur publication. Les formulaires publiés sont répliqués sur l’instance de publication.
+seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
 uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,8 +12,8 @@ discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1435'
+workflow-type: ht
+source-wordcount: '1413'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ AEM Forms vous permet de créer, publier et annuler la publication de formulaire
 
 Le serveur AEM Forms propose deux instances : Auteur et Publication. L’instance Auteur est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance Publication est destinée à conserver les éléments et les ressources connexes mis à la disposition des utilisateurs finaux. Vous pouvez importer des formulaires XDP et PDF en mode Auteur. Pour plus d’informations, voir [Obtention de documents XDP et PDF dans AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
-## Ressources prises en charge   {#supported-assets-nbsp}
+## Ressources prises en charge  {#supported-assets-nbsp}
 
 AEM Forms prend en charge les types d’éléments suivants :
 
@@ -72,7 +72,7 @@ Un élément peut présenter les états suivants :
    1. Positionnez le pointeur sur un élément et appuyez sur **[!UICONTROL Publier]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
    1. Effectuez l’une des actions suivantes, puis appuyez sur Publier :
 
-      * Si le mode d’affichage Carte est actif, appuyez sur **[!UICONTROL Passer en mode de sélection]** ![aem6forms_check-circle ](assets/aem6forms_check-circle.png), puis sur l’élément. L’élément est sélectionné.
+      * Si le mode d’affichage Carte est actif, appuyez sur **[!UICONTROL Passer en mode de sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis sur l’élément. L’élément est sélectionné.
       * Si le mode Liste est actif, cochez la case correspondant à un élément. L’élément est sélectionné.
       * Appuyez sur un élément pour en afficher les détails.
       * Affichez les propriétés d’un élément en appuyant sur Afficher les propriétés ![viewproperties](assets/viewproperties.png).
@@ -109,11 +109,11 @@ Procédez comme suit pour publier tous les éléments de Correspondence Manageme
 1. Connectez-vous au serveur AEM Forms.
 1. Appuyez sur **Adobe Experience Manager** dans la barre de navigation générale.
 1. Appuyez sur ![Outils](assets/tools.png) puis sur **Formulaires**.
-1. Appuyez sur **Publier les éléments de Correspondence Management**.
+1. Appuyez sur **Publier les actifs de gestion correspondance**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
-   La page Publier tous les éléments de Correspondence Management apparaît et affiche les informations sur la dernière fois où le processus de publication des éléments de Correspondence Management a été tenté.
+   La page Publier tous les actifs de gestion de correspondance apparaît et affiche les informations sur la dernière fois où le processus de publication des actifs de gestion de correspondance a été tenté.
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
@@ -144,7 +144,7 @@ Procédez comme suit pour planifier la date et l’heure de publication et d’a
    1. Positionnez le pointeur sur un élément et appuyez sur **[!UICONTROL Annuler la publication]** ![unpublish](assets/unpublish.png).
    1. Effectuez l’une des actions suivantes, puis appuyez sur Annuler la publication :
 
-      * Si le mode d’affichage Carte est actif, appuyez sur **[!UICONTROL Passer en mode de sélection]** ![aem6forms_check-circle ](assets/aem6forms_check-circle.png), puis sur l’élément. L’élément est sélectionné.
+      * Si le mode d’affichage Carte est actif, appuyez sur **[!UICONTROL Passer en mode de sélection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis sur l’élément. L’élément est sélectionné.
 
       * Si le mode d’affichage Liste est actif, placez le pointeur de la souris sur un élément et appuyez sur ![selectassetcheckmark](assets/selectassetcheckmark.png). L’élément est sélectionné.
 
@@ -195,7 +195,7 @@ Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifi
 
 Vous pouvez activer une authentification pour les formulaires auxquels vous souhaitez que des utilisateurs sélectionnés aient accès. Lorsque vous activez une authentification pour vos formulaires, les utilisateurs voient un écran de connexion avant d’y accéder. Seuls les utilisateurs dotés d’informations d’identification autorisées peuvent accéder aux formulaires.
 
-Pour activer une authentification pour vos formulaires :
+Pour activer une authentification pour vos formulaires :
 
 1. Dans votre navigateur, ouvrez configMgr dans l’instance de publication.\
    URL : `https://<hostname>:<PublishPort>/system/console/configMgr`
