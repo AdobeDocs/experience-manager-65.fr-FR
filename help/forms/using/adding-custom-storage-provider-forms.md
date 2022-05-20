@@ -1,36 +1,36 @@
 ---
-title: Stockage personnalisé pour le composant Drafts & Submissions
-seo-title: Stockage personnalisé pour le composant Brouillons et envois
+title: Stockage personnalisé pour le composant Brouillons et envois
+seo-title: Custom storage for drafts and submissions component
 description: Découvrez comment personnaliser le stockage des données utilisateur pour les brouillons et les envois.
-seo-description: Découvrez comment personnaliser le stockage des données utilisateur pour les brouillons et les envois.
+seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
-feature: Portail Formulaires
+feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 70%
+workflow-type: ht
+source-wordcount: '335'
+ht-degree: 100%
 
 ---
 
-# Stockage personnalisé pour les composants Drafts et Submissions {#custom-storage-for-drafts-and-submissions-component}
+# Stockage personnalisé pour le composant Brouillons et envois {#custom-storage-for-drafts-and-submissions-component}
 
 ## Présentation {#overview}
 
 AEM Forms vous permet d’enregistrer un formulaire sous forme de brouillon. La fonctionnalité de brouillon vous permet de mettre à jour un formulaire de travail en cours, que vous pouvez remplir et envoyer ultérieurement sur n’importe quel périphérique.
 
-Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi d’un formulaire dans le noeud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
+Par défaut, AEM Forms stocke les données d’utilisateur associées au brouillon et à l’envoi d’un formulaire dans le nœud `/content/forms/fp` de l’instance de publication. En outre, les composants du portail AEM Forms fournissent des services de données, que vous pouvez utiliser pour personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Par exemple, vous pouvez stocker des données utilisateur dans un magasin de données.
 
 ## Prérequis  {#prerequisites}
 
-* Activation des [composants Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* Créer une [page Forms Portal](/help/forms/using/creating-form-portal-page.md)
-* Activation de [formulaires adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
-* Découvrez les [détails de mise en oeuvre du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Activer [Composants du portail Formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* Créer une [page du portail Formulaires](/help/forms/using/creating-form-portal-page.md)
+* Activer les [formulaires adaptatifs pour le portail Formulaires](/help/forms/using/draft-submission-component.md)
+* En savoir plus sur les [détails d’implémentation du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 
@@ -99,9 +99,9 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->La valeur minimale pour la longueur du champ d’ID de brouillon est de 26 caractères. Adobe recommande de définir la longueur du brouillon de l’ID sur 26 caractères ou plus.
+>La valeur minimale pour la longueur du champ d’ID du brouillon est de 26 caractères. Adobe recommande de définir la longueur de l’ID du brouillon sur 26 caractères ou plus.
 
-## Service Submission Data {#submission-data-service}
+## Service Submission Data  {#submission-data-service}
 
 Pour personnaliser le stockage des données utilisateur pour les envois, vous devez implémenter toutes les méthodes de l’interface `SubmitDataService`. L’exemple de code suivant décrit les méthodes et les arguments.
 
@@ -188,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-Le portail Forms utilise le concept d’identificateur unique universel (UUID) pour générer un identificateur unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un identifiant unique de votre choix. Vous pouvez mettre en oeuvre l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée afin de générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
+Le portail Forms utilise le concept d’identificateur unique universel (UUID) pour générer un identificateur unique pour chaque brouillon et formulaire envoyé. Vous pouvez également générer un identifiant unique de votre choix. Vous pouvez implémenter l’interface FPKeyGeneratorService, remplacer ses méthodes et développer une logique personnalisée pour générer un identifiant unique personnalisé pour chaque brouillon et formulaire envoyé. En outre, définissez le rang de service de l’implémentation de génération d’ID personnalisé sur une valeur supérieure à 0. Cela garantit que l’implémentation personnalisée est utilisée à la place de l’implémentation par défaut.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -207,7 +207,7 @@ Vous pouvez utiliser l’annotation ci-dessous pour augmenter le classement du s
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Pour utiliser l’annotation ci-dessus, importez les éléments suivants dans votre projet :
+Pour utiliser l’annotation ci-dessus, importez les éléments suivants dans votre projet :
 
 ```java
 import org.apache.felix.scr.annotations.Properties;
