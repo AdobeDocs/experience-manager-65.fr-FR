@@ -1,8 +1,8 @@
 ---
 title: Démarrage et arrêt de WebSphere Application Server
-seo-title: Démarrage et arrêt de WebSphere Application Server
+seo-title: Starting and stopping WebSphere Application Server
 description: Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de WebSphere sur laquelle vous souhaitez déployer les produits AEM forms. Ce document explique le démarrage et l’arrêt de WebSphere Application Server.
-seo-description: Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de WebSphere sur laquelle vous souhaitez déployer les produits AEM forms. Ce document explique le démarrage et l’arrêt de WebSphere Application Server.
+seo-description: Several procedures require you to stop or start the instance of WebSphere where you want to deploy AEM forms products. This document describes how to start and stop the WebSphere Application Server.
 uuid: e0373197-aa57-4087-933d-92a86840a11a
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
 exl-id: 1a4e8f20-0644-4c96-9f52-f7a59521eac9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 82%
+workflow-type: ht
+source-wordcount: '189'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de 
 
 ## Affichage de l’état de WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
-1. A partir d&#39;une invite de commande, accédez au répertoire `[appserver root]/bin`.
+1. À partir d’une invite de commande, accédez au répertoire `[appserver root]/bin`.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
 
    * (Windows) `serverStatus.bat`*nom_serveur*
@@ -31,7 +31,7 @@ Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de 
 
 ## Démarrez WebSphere Application Server {#start-websphere-application-server}
 
-1. A partir d&#39;une invite de commande, accédez au répertoire `[appserver root]/bin`.
+1. À partir d’une invite de commande, accédez au répertoire `[appserver root]/bin`.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
 
    * (Windows) `startServer.bat`*nom_serveur*
@@ -39,7 +39,7 @@ Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de 
 
 ## Arrêt de WebSphere Application Server {#stop-websphere-application-server}
 
-1. A partir d&#39;une invite de commande, accédez au répertoire `[appserver root]/bin`.
+1. À partir d’une invite de commande, accédez au répertoire `[appserver root]/bin`.
 1. Saisissez la commande suivante en remplaçant *nom_serveur* par le nom de WebSphere Application Server :
 
    * (Windows) `stopServer.bat`*nom_serveur*
