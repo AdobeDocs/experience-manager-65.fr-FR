@@ -1,8 +1,8 @@
 ---
 title: Configuration de la sortie de formulaire
-seo-title: Configuration de la sortie de formulaire
+seo-title: Configuring form output
 description: Découvrez comment configurer la sortie de formulaire.
-seo-description: Découvrez comment configurer la sortie de formulaire.
+seo-description: Learn how to configure form output.
 uuid: 70aad14e-c845-4ef3-a751-ad8860d5d505
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '228'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 94%
 
    **HTML complet :** pour effectuer le rendu du formulaire avec des balises HTML complètes (page HTML complète). Il s’agit de la valeur par défaut.
 
-   **Corps du formulaire :** pour effectuer le rendu du formulaire dans  `<BODY>` des balises (page HTML non complète).
+   **Corps de formulaire :** pour effectuer le rendu du formulaire avec des balises `<BODY>` (page HTML incomplète).
 
 1. Cliquez sur Enregistrer.
 
@@ -42,7 +42,7 @@ ht-degree: 94%
 
 1. Cliquez sur Enregistrer.
 
-## Configuration de l’appel de scripts personnalisés avant l’envoi de formulaire  {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Configuration de l’appel de scripts personnalisés avant l’envoi de formulaire {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Pour activer cette fonction, effectuez les étapes suivantes :
 
