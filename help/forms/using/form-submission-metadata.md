@@ -1,19 +1,19 @@
 ---
 title: Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire
-seo-title: Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire
+seo-title: Adding information from user data to form submission metadata
 description: 'Découvrez comment ajouter des informations aux métadonnées d’un formulaire envoyé avec des données fournies par l’utilisateur. '
-seo-description: 'Découvrez comment ajouter des informations aux métadonnées d’un formulaire envoyé avec des données fournies par l’utilisateur. '
+seo-description: Learn how to add information to metadata of a submitted form with user provided data.
 uuid: c3eea3c0-31f8-4bf8-b5cf-34f907bdbdba
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '685'
+ht-degree: 100%
 
 ---
 
@@ -33,12 +33,12 @@ Effectuez les étapes suivantes pour ajouter un élément aux métadonnées :
 
 1. Ouvrez votre formulaire adaptatif en mode d’édition.\
    Pour ouvrir le formulaire en mode d’édition, dans Forms Manager, sélectionnez le formulaire, puis appuyez sur **Ouvrir**.
-1. En mode d’édition, sélectionnez un composant, appuyez sur ![field-level](assets/field-level.png) > **Adaptive Form Container**, puis appuyez sur ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis appuyez sur ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, cliquez sur **Métadonnées**.
 1. Dans la section Métadonnées, cliquez sur **Ajouter**.
 1. Utilisez le champ Valeur de l’onglet Métadonnées pour ajouter des scripts. Les scripts que vous ajoutez collectent des données à partir d’éléments sur le formulaire et calculent les valeurs qui sont ajoutées aux métadonnées.
 
-   Par exemple, **true** est consigné dans les métadonnées si l’âge entré est supérieur à 21, et **false** est consigné s’il est inférieur à 21. Vous entrez le script suivant dans l’onglet Métadonnées :
+   Par exemple, la valeur **true** est enregistrée dans les métadonnées si l’âge entré est supérieur à 21, et la valeur **false** est enregistrée s’il est inférieur à 21. Vous entrez le script suivant dans l’onglet Métadonnées :
 
    `(agebox.value >= 21) ? true : false`
 
