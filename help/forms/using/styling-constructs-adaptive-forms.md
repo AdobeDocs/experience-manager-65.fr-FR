@@ -1,19 +1,19 @@
 ---
 title: Mise en forme des éléments pour les formulaires adaptatifs
-seo-title: Mise en forme des éléments pour les formulaires adaptatifs
+seo-title: Styling constructs for adaptive forms
 description: La structure LESS permet de personnaliser l’aspect des formulaires adaptatifs.
-seo-description: La structure LESS permet de personnaliser l’aspect des formulaires adaptatifs.
+seo-description: Use LESS framework to customize appearance of adaptive forms.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '2308'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Connaissances en matière de CSS et structure LESS.
 
 ## Éléments personnalisables {#what-can-be-customized}
 
-Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez utiliser ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
+Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez tirer parti de ces classes pour appliquer un style aux divers composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
 
 ## Personnalisation des styles dans les formulaires adaptatifs {#customizing-styles-in-adaptive-forms}
 
@@ -36,11 +36,11 @@ Vous pouvez personnaliser les styles des formulaires adaptatifs des manières su
 * Modification du thème
 * Modification du style d’un composant
 
-## Modification du thème  {#changing-theme}
+## Modification du thème {#changing-theme}
 
-Vous pouvez modifier le thème d’un formulaire adaptatif pour vous assurer que son aspect est cohérent avec les pages Web sur lesquelles le formulaire adaptatif est incorporé.
+Vous pouvez modifier le thème d’un formulaire adaptatif pour vous assurer que son apparence est cohérente avec les pages web auxquelles le formulaire adaptatif est intégré.
 
-Les modifications de l’aspect général du formulaire adaptatif via les propriétés CSS font généralement partie des modifications du thème. Les modifications majeures apportées à la convivialité du formulaire adaptatif, telles que les modifications apportées à la disposition et au positionnement des composants, ne sont pas considérées comme des modifications de thème.
+Les modifications de l’aspect général du formulaire adaptatif via les propriétés CSS font généralement partie des modifications du thème. Les principales modifications de la convivialité du formulaire adaptatif, telles que les modifications de disposition et le positionnement des composants, ne sont pas considérées comme des modifications du thème.
 
 Selon l’amorçage, l’ensemble suivant de propriétés CSS définit le thème d’une page Web :
 
@@ -284,7 +284,7 @@ Selon leur type, les widgets contiennent également des classes. En règle gén�
  </tbody>
 </table>
 
-### Restrictions de la définition de style de widget  {#limitations-in-widget-styling}
+### Restrictions de la définition de style de widget {#limitations-in-widget-styling}
 
 La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être relâchée si l’aspect d’un champ change considérablement car il est dans l’un des états décrits précédemment.
 
@@ -329,7 +329,7 @@ Un auteur peut spécifier le contenu d’aide dans les champs à l’aide de com
  </tbody>
 </table>
 
-## Termes et conditions  {#terms-and-conditions}
+## Termes et conditions {#terms-and-conditions}
 
 Le widget des termes et conditions (TnC`` ``) vous permet de spécifier les termes et conditions. Vous pouvez personnaliser le widget à l’aide des variables décrites dans le tableau suivant.
 
@@ -570,7 +570,7 @@ Le widget de pièce jointe des formulaires adaptatifs vous permet de télécharg
  </tbody>
 </table>
 
-## Styles de navigateur  {#navigator-styles}
+## Styles de navigateur {#navigator-styles}
 
 Il existe quatre types d’onglet de navigateur. Il s’agit des onglets sur la gauche, en haut, de l’assistant et en accordéon. Chaque navigateur possède une classe différente.
 
@@ -982,7 +982,7 @@ Ces variables influent sur la barre d’en-tête visible sur un périphérique m
  </tbody>
 </table>
 
-## Indicateur de défilement  {#scroll-indicator}
+## Indicateur de défilement {#scroll-indicator}
 
 Ces variables influent sur l’indicateur de défilement, qui est une flèche orange qui s’affiche sur un périphérique mobile ou équipé d’un petit écran. Un indicateur de défilement indique la présence de contenu au-delà de la partie visible à l’écran. Vous pouvez faire défiler l’écran pour l’afficher. Lorsque vous atteignez la fin du contenu, la flèche disparaît.
 
@@ -1020,7 +1020,7 @@ Ces variables influent sur l’indicateur de défilement, qui est une flèche or
  </tbody>
 </table>
 
-## Variables spécifiques à la disposition de la barre d’outils fixe pour mobile  {#mobile-fixed-toolbar-layout-specific-variables}
+## Variables spécifiques à la disposition de la barre d’outils fixe pour mobile {#mobile-fixed-toolbar-layout-specific-variables}
 
 Ces variables dans le tableau suivant influent sur la disposition de la barre d’outils fixe pour mobile.
 
@@ -1074,7 +1074,7 @@ Ces variables dans le tableau suivant influent sur la disposition de la barre d�
  </tbody>
 </table>
 
-## Variable spécifique au thème  {#theme-specific-variable}
+## Variable spécifique au thème {#theme-specific-variable}
 
 Le thème **Simple enrollment** (inscription simple) dans /etc/clientlibs/fd/af/guidetheme/simpleEnrollment et la catégorie `guide.theme.simpleEnrollment` introduisent également quelques variables. Si vous souhaitez créer un thème qui améliore l’inscription simple, vous pouvez utiliser les variables supplémentaires suivantes :
 
