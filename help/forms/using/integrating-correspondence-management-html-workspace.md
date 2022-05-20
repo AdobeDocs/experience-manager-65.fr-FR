@@ -1,8 +1,8 @@
 ---
 title: Intégration d’applications tierces à l’espace de travail AEM Forms
-seo-title: Intégration d’applications tierces à l’espace de travail AEM Forms
-description: Intégrez des applications tierces telles que Correspondence Management dans l’espace de travail AEM Forms.
-seo-description: Comment intégrer des applications tierces comme Correspondance Management dans l’espace de travail AEM Forms.
+seo-title: Integrating third-party applications in AEM Forms workspace
+description: Intégrez des applications tierces telles que la Gestion des correspondances dans l’espace de travail AEM Forms.
+seo-description: How-to integrate third-party apps like Correspondence Management in AEM Forms workspace.
 uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -10,9 +10,9 @@ discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 84%
+workflow-type: ht
+source-wordcount: '632'
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Par exemple, considérons Correspondence Management comme exemple de candidat po
 
 ## Création d’actifs de Correspondence Management {#create-correspondence-management-assets}
 
-Commencez par créer un exemple de modèle Correspondence Management rendu dans l’espace de travail AEM Forms. Pour plus d’informations, voir [Création d’un modèle de lettre](../../forms/using/create-letter.md).
+Commencez par créer un exemple de modèle de Gestion des correspondances qui est généré dans l’espace de travail AEM Forms. Pour plus de détails, voir [Créer un modèle de lettre](../../forms/using/create-letter.md).
 
-Accédez au modèle Correspondence Management à son URL pour vérifier si le rendu du modèle Correspondence Management peut être effectué avec succès. L’URL a un modèle similaire à `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Utilisez l’URL pour accéder au modèle de Gestion des correspondances et vérifiez s’il peut être généré correctement. L’URL a un modèle similaire à `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`.
 
 où `encodedLetterId` correspond à l’ID de lettre codé URL. Spécifiez le même identifiant de lettre lors de la définition du processus de rendu pour une tâche d’espace de travail dans Workbench.
 
@@ -45,7 +45,7 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
 
 1. Lancez Workbench. Connectez-vous à localhost en tant qu’administrateur.
 1. Cliquez sur Fichier > Nouveau > Application. Dans le champ Nom de l’application, saisissez `CMDemoSample`, puis cliquez sur Terminer.
-1. Sélectionnez `CMDemoSample/1.0` et cliquez avec le bouton droit de la souris `NewProcess`. Dans le champ Nom, saisissez `CMRenderer`, puis cliquez sur Terminer.
+1. Sélectionnez `CMDemoSample/1.0` et cliquez avec le bouton droit sur `NewProcess`. Dans le champ Nom, saisissez `CMRenderer`, puis cliquez sur Terminer.
 1. Faites glisser le sélecteur d’activité du point de départ et configurez-le :
 
    1. Dans Données de présentation, sélectionnez Utiliser un actif CRX.
@@ -101,13 +101,14 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
    }
    ```
 
-   [Get ](assets/dscsample.zip)
-FileDownload DSC : Un exemple de DSC est disponible dans le fichier DSCSample.zip joint ci-dessus. Téléchargez et décompressez l’archive ce fichier. Avant d’utiliser le service DSC, vous devez le configurer. Pour plus d’informations, [Configuration du service DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   [Obtenir le fichier](assets/dscsample.zip)
 
-   Dans la boîte de dialogue Définir l’activité, sélectionnez l’activité appropriée tel que GetLetterInstanceInfo et cliquez sur **OK**.
+Télécharger DSC : un exemple de DSC est disponible dans le fichier DSCSample.zip joint ci-dessus. Téléchargez et décompressez l’archive ce fichier. Avant d’utiliser le service DSC, vous devez le configurer. Pour plus d’informations, [Configuration du service DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+
+   Dans la boîte de dialogue Définir l’activité, sélectionnez l’activité appropriée tel que getLetterInstanceInfo et cliquez sur **OK**.
 
 1. Déployer l’application. Si vous y êtes invité, connectez-vous et enregistrez les actifs.
-1. Connectez-vous à l’espace de travail AEM forms à l’adresse https://&#39;[server]:[port]&#39;/lc/content/ws.
+1. Connectez-vous à l’espace de travail d’AEM Forms à l’adresse https://&#39;[server]:[port]&#39;/lc/content/ws.
 1. Ouvrez la tâche que vous avez ajoutée, CMRenderer. La lettre Correspondence Management s’affiche.
 
    ![cminworkspace](assets/cminworkspace.png)
