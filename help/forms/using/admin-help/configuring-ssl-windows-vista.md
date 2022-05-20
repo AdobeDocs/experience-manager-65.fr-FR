@@ -1,8 +1,8 @@
 ---
 title: Configuration de SSL sous Windows Vista
-seo-title: Configuration de SSL sous Windows Vista
+seo-title: Configuring SSL on Windows Vista
 description: Découvrez comment configurer SSL sous Windows Vista.
-seo-description: Découvrez comment configurer SSL sous Windows Vista.
+seo-description: Learn how to configure SSL on Windows Vista.
 uuid: 20bfcefb-ec84-4c55-bceb-6af106d883d7
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
 exl-id: 36c4300d-7a44-41f4-b294-06f32bb01686
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 64%
+workflow-type: ht
+source-wordcount: '155'
+ht-degree: 100%
 
 ---
 
@@ -29,12 +29,12 @@ Vous pouvez exécuter l’outil keytool en saisissant une seule commande qui com
 
 **Création de certificat SSL**
 
-1. Dans une invite de commande, accédez à *`[JAVA HOME]`*/bin et saisissez la commande suivante pour créer le certificat et le fichier de stockage de clés :
+1. Dans une invite de commande, naviguez jusqu’à *`[JAVA HOME]`*/bin et tapez la commande ci-dessous pour créer le certificat et le fichier de stockage des clés :
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Host* `, OU=`*NameGroup* `, O=`*NameCompany* `,L=`*NameCity* `, S=`** `, C=`*NameStateCountry Code* `" -alias`*&quot;LC Cert&quot;* `-keypass` `key`*_* ** `-keystore`*passwordkeystorename* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Nom d’hôte* `, OU=`*Nom du groupe* `, O=`*Nom de la société* `,L=`*Nom de la ville* `, S=`*État* `, C=`*Code pays* `" -alias`*« LC Cert »* `-keypass` `key`*_* *mot de passe* `-keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
-   >Remplacez *`[JAVA_HOME]`par le répertoire dans lequel le JDK est installé, puis remplacez le texte en italique par les valeurs correspondant à votre environnement.*
+   >Remplacez *`[JAVA_HOME]`par le répertoire dans lequel le JDK est installé, puis remplacez le texte en italiques par les valeurs correspondant à l’environnement.*
 
-1. Saisissez `changeit` comme mot de passe. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
+1. Tapez `changeit` comme mot de passe. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
