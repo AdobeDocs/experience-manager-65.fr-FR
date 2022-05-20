@@ -1,8 +1,8 @@
 ---
 title: Ajout, activation, modification ou suppression de points de fin
-seo-title: Ajout, activation, modification ou suppression de points de fin
+seo-title: Adding, enabling, modifying, or removing endpoints
 description: Découvrez comment ajouter, activer, modifier et supprimer des points de fin.
-seo-description: Découvrez comment ajouter, activer, modifier et supprimer des points de fin.
+seo-description: Learn how to add, enable, modify and remove endpoints.
 uuid: c53f225b-3d55-42f6-8982-0cd7dde0c4f5
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '386'
+workflow-type: ht
+source-wordcount: '371'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ Si vous rencontrez des problèmes avec des services, vous devez désactiver les 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des points de fin.
 1. Dans la page Gestion des points de fin, cochez la case associée au point de fin à activer ou désactiver et cliquez sur Activer ou Désactiver.
 
-## Modification d’un point de fin  {#modify-an-endpoint}
+## Modification d’un point de fin {#modify-an-endpoint}
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Si vous rencontrez des problèmes avec des services, vous devez désactiver les 
 
 Pour exécuter cette tâche, vous pouvez également sélectionner un service dans la page Gestion des services, puis cliquer sur l’onglet Points de fin.
 
-## Suppression d’un point de fin  {#remove-an-endpoint}
+## Suppression d’un point de fin {#remove-an-endpoint}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des points de fin.
 1. Dans la page Gestion des points de fin, cochez la case correspondant au point de fin à supprimer, puis cliquez sur Supprimer. Ce point de fin n’est plus affiché.
