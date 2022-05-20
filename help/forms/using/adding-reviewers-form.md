@@ -1,19 +1,19 @@
 ---
 title: Association de réviseurs d’envoi à un formulaire
-seo-title: Association de réviseurs d’envoi à un formulaire
+seo-title: Associating submission reviewers with a form
 description: Apprenez à associer des réviseurs d’envoi à un formulaire dans AEM Forms. Les réviseurs associés examinent un formulaire envoyé via un portail de formulaires.
-seo-description: Apprenez à associer des réviseurs d’envoi à un formulaire dans AEM Forms. Les réviseurs associés examinent un formulaire envoyé via un portail de formulaires.
+seo-description: Learn how to associate submission reviewers with a form in AEM Forms. Associated reviewers review a form submitted via forms portal.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '493'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Forms vous permet d’associer un groupe de réviseurs à un formulaire. Les
 
 Les groupes de réviseurs assignés à un formulaire peuvent uniquement analyser les envois du formulaire spécifié.
 
-## Condition préalable {#prerequisite}
+## Prérequis {#prerequisite}
 
 ### Activation de la propriété des groupes de réviseurs d’envoi pour des formulaires adaptatifs à l’aide de l’éditeur de schéma de métadonnées {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
 
@@ -66,7 +66,7 @@ Veillez à ajouter le groupe que vous avez créé en tant que membre du groupe d
 Pour associer des groupes d’utilisateurs à un formulaire adaptatif :
 
 1. En mode création, accédez à **Formulaires** > **Formulaires et documents**.
-1. Utilisez l’option **Sélectionner**pour sélectionner un formulaire adaptatif, puis cliquez sur **Afficher les propriétés**.
+1. Utilisez l’option **Sélectionner** pour choisir un formulaire adaptatif, puis cliquez sur **Afficher les propriétés**.
 1. Dans la fenêtre Propriétés du formulaire, cliquez sur **Modifier** puis sur **AVANCÉ**.
 1. Saisissez le groupe dans le champ de groupe de réviseurs d’envoi, puis cliquez sur **Terminé**.
 
@@ -76,4 +76,4 @@ Pour associer des groupes d’utilisateurs à un formulaire adaptatif :
 >
 >Dupliquez les utilisateurs et les formulaires pour assurer leur disponibilité dans l’implémentation à distance d’AEM Forms.
 >
->Veillez à ce que tous les utilisateurs soient dupliqués comme membres de révision des groupes d’utilisateurs dans l’implémentation à distance.
+>Veillez à ce que tous les utilisateurs soient répliqués comme membres de révision des groupes d’utilisateurs dans l’implémentation distante.
