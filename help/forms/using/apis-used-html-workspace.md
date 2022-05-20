@@ -1,8 +1,8 @@
 ---
 title: API utilisées dans l’espace de travail AEM Forms
-seo-title: API utilisées dans l’espace de travail AEM Forms
+seo-title: APIs used in AEM Forms workspace
 description: API Public Java et JavaScript et méthodes de l’espace de travail LiveCycle AEM Forms exposées pour la personnalisation et l’automatisation.
-seo-description: API Public Java et JavaScript et méthodes de l’espace de travail LiveCycle AEM Forms exposées pour la personnalisation et l’automatisation.
+seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,8 +10,8 @@ topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1020'
+workflow-type: ht
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
@@ -97,7 +97,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>submitWithPriorData</td>
    <td>ProcessManagementTaskService</td>
-   <td>submitWithPreviousData</td>
+   <td>submitWithPriorData</td>
    <td>Elle renvoie le résultat de l’API d’envoi de TaskManager à l’aide de la clé de résultat.</td>
   </tr>
   <tr>
@@ -151,13 +151,13 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>claim</td>
    <td>ProcessManagementTaskService</td>
-   <td>request</td>
+   <td>claim</td>
    <td>Elle demande une tâche disponible dans la file d’attente partagée.</td>
   </tr>
   <tr>
    <td>unlock</td>
    <td>ProcessManagementTaskService</td>
-   <td>déverrouiller</td>
+   <td>unlock</td>
    <td>Elle déverrouille une tâche.</td>
   </tr>
   <tr>
@@ -223,7 +223,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>revokeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
-   <td>révocationQueueAccess</td>
+   <td>revokeQueueAccess</td>
    <td>Elle supprime un utilisateur de la liste des utilisateurs qui ont accès à la file d’attente de l’utilisateur connecté.</td>
   </tr>
   <tr>
