@@ -1,8 +1,8 @@
 ---
 title: Gestion des applications et des tâches Forms dans la boîte de réception AEM
-seo-title: Gestion des applications et des tâches Forms dans la boîte de réception AEM
+seo-title: Manage Forms applications and tasks in AEM Inbox
 description: La boîte de réception AEM vous permet de lancer des processus orientés formulaire via l’envoi d’applications et de tâches de gestion.
-seo-description: La boîte de réception AEM vous permet de lancer des processus orientés formulaire via l’envoi d’applications et de tâches de gestion.
+seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -11,13 +11,13 @@ discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '1111'
+ht-degree: 100%
 
 ---
 
-# Gestion des applications et des tâches Forms dans la boîte de réception AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
+# Gestion des applications et des tâches Forms dans la boîte de réception AEM {#manage-forms-applications-and-tasks-in-aem-inbox}
 
 L’une des nombreuses façons de lancer ou de déclencher un processus orienté formulaire consiste à utiliser des applications dans la boîte de réception AEM. Vous devez créer une application de processus pour rendre un processus Forms disponible en tant qu’application dans la boîte de réception. Pour plus d’informations sur l’application de processus et d’autres façons de lancer les processus de Forms, voir [Lancement d’un processus orienté formulaire sur OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
@@ -33,15 +33,15 @@ En résumé, la boîte de réception vous permet de créer une nouvelle applicat
 
 ## Création d’une application {#create-application}
 
-1. Accédez à la boîte de réception AEM à l’adresse https://&#39;[serveur]:[port/]&#39;/aem/inbox.
+1. Accédez à la boîte de réception AEM à l’adresse https://’[serveur]:[port/]’/aem/inbox.
 1. Dans l’interface utilisateur de la boîte de réception, appuyez sur **[!UICONTROL Créer > Application]**. La page Sélectionner l’application s’affiche.
-1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à la demande s’ouvre. Renseignez les informations du formulaire adaptatif et appuyez sur **[!UICONTROL Submit]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
+1. Sélectionnez une application, puis appuyez sur **[!UICONTROL Créer]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations dans le formulaire adaptatif et appuyez sur **[!UICONTROL Envoyer]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
 
 ## Gestion des tâches {#manage-tasks}
 
 Lorsqu’un processus Forms est déclenché et que vous êtes une personne désignée ou un membre du groupe de personnes désignées, une tâche s’affiche dans votre boîte de réception. Vous pouvez afficher les détails de la tâche et effectuer les actions disponibles pour la tâche depuis la boîte de réception.
 
-### Demande ou délégation de tâches  {#claim-or-delegate-tasks}
+### Demande ou délégation de tâches {#claim-or-delegate-tasks}
 
 Les tâches affectées à un groupe s’affichent dans la boîte de réception de tous les membres du groupe. Tout membre du groupe peut demander cette tâche ou la déléguer à un autre membre du groupe. Pour ce faire :
 
@@ -101,7 +101,7 @@ La barre d’outils Actions affiche toutes les options disponibles pour la tâch
 
 Lorsque vous agissez sur la tâche, elle se poursuit dans le processus.
 
-### Affichage des tâches terminées  {#view-completed-tasks}
+### Affichage des tâches terminées {#view-completed-tasks}
 
 La boîte de réception AEM affiche uniquement les tâches actives. Les tâches terminées n’apparaissent pas dans la liste. Cependant, vous pouvez utiliser les filtres de la boîte de réception pour filtrer les tâches en fonction de plusieurs paramètres, tels que le type de tâche, l’état, les dates de début et de fin, etc. Pour afficher les tâches terminées :
 
@@ -112,7 +112,7 @@ La boîte de réception AEM affiche uniquement les tâches actives. Les tâches 
 
 1. Appuyez pour sélectionner une tâche et appuyez sur **[!UICONTROL Ouvrir]**.
 
-La tâche s’ouvre pour afficher le document ou le formulaire adaptatif associé à la tâche. Pour le formulaire adaptatif, la tâche affiche le formulaire adaptatif en lecture seule ou son document d’enregistrement PDF tel que configuré dans l’onglet Formulaire/document de l’[étape de processus Affecter une tâche](/help/sites-developing/workflows-step-ref.md).
+La tâche s’ouvre pour afficher le document ou le formulaire adaptatif associé à la tâche. Pour les formulaires adaptatifs, la tâche affiche le formulaire adaptatif en lecture seule ou son document d’enregistrement PDF tel que configuré dans l’onglet Formulaire/Document de l’[étape de workflow Affecter une tâche](/help/sites-developing/workflows-step-ref.md).
 
 La section de détails de la tâche affiche des informations telles qu’une mesure prise, l’état de la tâche, la date de début et la date de fin.
 
@@ -134,14 +134,14 @@ Un propriétaire de modèle de processus ne peut pas afficher des éléments li�
 
       | Nœud | Propriété | Type |
       |---|---|---|
-      | sharedWith | sharedWith | CHAINE |
+      | sharedWith | sharedWith | CHAÎNE |
       | verrouillé | verrouillé | BOOLÉEN |
       | renvoyé | renvoyé | BOOLÉEN |
       | allowInboxSharing | allowInboxSharing | BOOLÉEN |
       | allowExplicitSharing | allowExplicitSharing | BOOLÉEN |
 
 
-   * Déployez les index au moyen d’un package AEM. Vous pouvez utiliser un projet [AEM Archetype](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype) pour créer un package AEM déployable. Utilisez l&#39;exemple de code suivant pour ajouter des index à un projet AEM Archetype :
+   * Déployez les index au moyen d’un package AEM. Vous pouvez utiliser un projet [AEM Archetype](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype) pour créer un package AEM déployable. Utilisez l’exemple de code suivant pour ajouter des index à un projet AEM Archetype :
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
