@@ -1,25 +1,25 @@
 ---
 title: Propriétés de configuration de Correspondence Management
-seo-title: Propriétés de configuration de Correspondence Management
+seo-title: Correspondence Management Configuration Properties
 description: Cette rubrique explique comment modifier Asset Composer avec des configurations propres à cette solution. Cette rubrique détaille les propriétés que vous pouvez modifier, avec leur description, leurs valeurs par défaut et leurs valeurs acceptables.
-seo-description: Cette rubrique explique comment modifier Asset Composer avec des configurations propres à cette solution. Cette rubrique détaille les propriétés que vous pouvez modifier, avec leur description, leurs valeurs par défaut et leurs valeurs acceptables.
+seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '845'
+ht-degree: 100%
 
 ---
 
 # Propriétés de configuration de Correspondence Management {#correspondence-management-configuration-properties}
 
-Pour configurer ces propriétés, ouvrez l’URL suivante dans un navigateur : `https://<server>:<port>/<contextPath>/system/console/configMgr` et sélectionnez **Configurations de Correspondence Management**.
+Pour configurer ces propriétés, ouvrez l’URL suivante dans un navigateur : `https://<server>:<port>/<contextPath>/system/console/configMgr` et sélectionnez **Configurations de Correspondence Management**.
 
 Correspondence Management possède les propriétés de configuration suivantes :
 
@@ -154,14 +154,14 @@ Correspondence Management possède les propriétés de configuration suivantes 
   <tr>
    <td><p>Data Display Formats</p> </td>
    <td><p>Spécifie le format d’affichage des données spécifique des paramètres régionaux.</p> </td>
-   <td><p>locale=en_US ; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=de_DE ; dateFormat=dd-MM-yyyy; numberDecimalSeparator= ; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>—</p> </td>
+   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator= ; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>--</p> </td>
   </tr>
   <tr>
    <td><p>Data Edit Format</p> </td>
    <td><p>Format de modification des données. Cette propriété est utilisée lors de l’écriture de données en tant que chaîne ou de l’analyse des données à partir d’une chaîne.</p> </td>
-   <td><p>locale=en_US ; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>—<p> </p> </td>
+   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td>--<p> </p> </td>
   </tr>
   <tr>
    <td><p>Manage Letter Instances on Publish</p> </td>
@@ -243,8 +243,8 @@ Correspondence Management possède les propriétés de configuration suivantes 
   </tr>
   <tr>
    <td><p>CM User Root</p> </td>
-   <td><p>URL du dossier contenant toutes les ressources utilisateur de Correspondence Management</p> </td>
-   <td><p>—</p> </td>
+   <td><p>URL du dossier contenant toutes les ressources de l’utilisateur de Correspondence Management.</p> </td>
+   <td><p>--</p> </td>
    <td><p>Emplacement de dossier valide</p> </td>
   </tr>
   <tr>
@@ -255,7 +255,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
   </tr>
   <tr>
    <td><p>Enable Letter Cache</p> </td>
-   <td><p>Active/désactive le cache de lettres.</p> <p>La modification de cette valeur entraînera le nettoyage du cache en   <code>in-memory </code> cache.</p> </td>
+   <td><p>Active/désactive le cache de lettres.</p> <p>La modification de cette valeur entraînera le nettoyage du cache en  <code>in-memory </code> cache.</p> </td>
    <td><p>true</p> </td>
    <td><p>true/false</p> </td>
   </tr>
@@ -272,7 +272,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
    <td><p>true/false</p> <p> </p> </td>
   </tr>
   <tr>
-   <td>Dossier temp   </td>
+   <td>Dossier temp </td>
    <td>Emplacement du dossier temporaire.</td>
    <td>acm.tpmFolder</td>
    <td> </td>
