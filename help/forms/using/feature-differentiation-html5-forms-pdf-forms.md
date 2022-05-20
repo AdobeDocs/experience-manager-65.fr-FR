@@ -1,8 +1,8 @@
 ---
 title: Différences de caractéristiques entre formulaires HTML5 et formulaires PDF
-seo-title: Différences de caractéristiques entre formulaires HTML5 et formulaires PDF
+seo-title: Feature differentiation between HTML5 forms and PDF forms
 description: Caractéristiques prises en charge dans les formulaires HTML5 et les formulaires PDF
-seo-description: Caractéristiques prises en charge dans les formulaires HTML5 et les formulaires PDF
+seo-description: Feature supported in HTML5 forms and PDF forms
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference
@@ -13,15 +13,15 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 87%
+workflow-type: ht
+source-wordcount: '444'
+ht-degree: 100%
 
 ---
 
 # Différences de caractéristiques entre formulaires HTML5 et formulaires PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-Le tableau suivant indique les fonctionnalités prises en charge par les formulaires HTML5 et les formulaires PDF :
+Le tableau suivant indique les fonctionnalités prises en charge par les formulaires HTML5 et les formulaires PDF :
 
 <table>
  <tbody>
@@ -53,7 +53,7 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   <tr>
    <td>Pagination<br /> </td>
    <td><p>Un formulaire HTML5 est divisé en panneaux et en zones pour lui donner un aspect similaire aux formulaires PDF. La taille d’une page est calculée de façon dynamique. Si tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée et un espace vide (espace blanc) ne s’affiche pas entre les pages, au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion des données ou des scripts ajoutent du contenu à une page, la longueur de la page s’ajuste au contenu qui vient d’être ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’ajuster au contenu qui vient d’être ajouté. </p> <p><strong>Remarque :</strong> lorsque tout le contenu d’une page de formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace blanc) reste visible entre la 1ère et 2e page mais pas entre les autres pages.</p> </td>
-   <td>La pagination dans le PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur et le nombre de pages est augmenté/réduit en fonction de ce contenu.</td>
+   <td>La pagination des documents PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur : le nombre de pages est augmenté/réduit en conséquence.</td>
   </tr>
   <tr>
    <td>En-têtes/pieds de page </td>
@@ -67,12 +67,12 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   </tr>
   <tr>
    <td>API de script XFA</td>
-   <td>Prend en charge les éléments de script XFA les plus couramment utilisés. Pour obtenir la liste détaillée des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
+   <td>Prend en charge les éléments de scripts XFA les plus fréquemment utilisés. Pour obtenir une liste détaillée des éléments prises en charge, consultez la section <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
    <td>Prend en charge tous les éléments de script XFA.</td>
   </tr>
   <tr>
    <td>API des scripts Acrobat </td>
-   <td>Les formulaires HTML5 prennent en charge la plupart des API couramment utilisées. Pour plus d’informations, voir <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
+   <td>Les formulaires HTML5 prennent en charge la plupart des API couramment utilisées. Pour plus d’informations, consultez la section <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
    <td>Si le fichier PDF est ouvert dans Acrobat ou Reader, il prend également en charge toutes les API de script fournies par Acrobat.</td>
   </tr>
   <tr>
