@@ -1,17 +1,17 @@
 ---
 title: Renforcement et sécurisation d’AEM Forms dans un environnement OSGi
-seo-title: Renforcement et sécurisation d’AEM Forms dans un environnement OSGi
+seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Découvrez des conseils et des pratiques recommandées pour sécuriser AEM Forms sur un serveur OSGi.
-seo-description: Découvrez des conseils et des pratiques recommandées pour sécuriser AEM Forms sur un serveur OSGi.
+seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '1443'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Cet article est destiné aux consultants, aux spécialistes de la sécurité, au
 
 L’image suivante affiche les composants et les protocoles utilisés dans un déploiement AEM Forms standard, y compris la topologie de pare-feu appropriée :
 
-![standard-architecture](assets/typical-architecture.png)
+![typical-architecture](assets/typical-architecture.png)
 
 AEM Forms est hautement personnalisable et compatible avec de nombreux environnements. Certaines recommandations peuvent ne pas s’appliquer à votre entreprise.
 
@@ -40,11 +40,11 @@ Les vulnérabilités de sécurité de couche de transport comptent parmi les pre
 
 ### Limiter les points de fin ouverts  {#limit-open-endpoints}
 
-Une entreprise peut configurer un pare-feu externe pour limiter l’accès entre un utilisateur final et une batterie de publication AEM Forms. L’entreprise peut également avoir un pare-feu interne pour limiter l’accès entre une batterie de publication et d’autres dans des éléments d’entreprise (par exemple, instance d’auteur, instance de traitement, bases de données). Autoriser les pare-feu à autoriser l’accès à un nombre limité d’URL AEM Forms pour les utilisateurs finaux et au sein des éléments d’entreprise :
+Une entreprise peut configurer un pare-feu externe pour limiter l’accès entre un utilisateur final et une batterie de publication AEM Forms. L’entreprise peut également avoir un pare-feu interne pour limiter l’accès entre une batterie de publication et d’autres dans des éléments d’entreprise (par exemple, instance d’auteur, instance de traitement, bases de données). Autorisez les pare-feu pour autoriser l’accès à un nombre limité d’URL AEM Forms pour les utilisateurs finaux et au sein des éléments d’entreprise :
 
 #### Configurer le pare-feu externe  {#configure-external-firewall}
 
-Vous pouvez configurer un pare-feu externe pour activer certaines URL AEM Forms pour accéder à Internet. L’accès à ces URL est nécessaire pour remplir ou envoyer un formulaire adaptatif, HTML5, une lettre Correspondence Management ou pour se connecter à un serveur AEM Forms :
+Vous pouvez configurer un pare-feu externe pour activer certaines URL AEM Forms pour accéder à Internet. L’accès à ces URL est nécessaire pour remplir ou envoyer un formulaire adaptatif, HTML5, une lettre Correspondence Management ou pour se connecter à un serveur AEM Forms :
 
 <table> 
  <tbody>
@@ -115,7 +115,7 @@ Vous pouvez configurer le pare-feu interne pour autoriser certains composants AE
    <td>/content/forms/fp/*</td> 
   </tr>
   <tr>
-   <td>Serveur du module complémentaire Forms Workflow (serveur AEM forms on JEE)</td> 
+   <td>Serveur du module complémentaire Forms Workflow (serveur AEM Forms on JEE)</td> 
    <td>/soap/sdk</td> 
   </tr>
  </tbody>
@@ -190,7 +190,7 @@ Un ensemble différent de rôles utilisateur est requis pour les instances d’a
 
 ## Éléments Intranet sécurisés d’un environnement AEM Forms {#secure-intranet-elements-of-an-aem-forms-environment}
 
-En règle générale, les grappes de traitement et le module complémentaire Forms Workflow (AEM Forms on JEE) s’exécutent derrière un pare-feu. Par conséquent, ils sont considérés comme étant sécurisés. Vous pouvez toujours effectuer quelques étapes pour renforcer ces environnements :
+En règle générale, les grappes de traitement et le module complémentaire Forms Workflow (AEM Forms on JEE) s’exécutent derrière un pare-feu. Par conséquent, ils sont considérés comme étant sécurisés. Vous pouvez toujours effectuer quelques étapes pour renforcer ces environnements :
 
 ### Grappe de traitement sécurisée {#secure-processing-cluster}
 
