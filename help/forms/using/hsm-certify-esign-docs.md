@@ -1,8 +1,8 @@
 ---
 title: Utiliser HSM pour signer ou certifier des documents numériquement
-seo-title: Utiliser HSM pour certifier des documents signés électroniquement
+seo-title: Use HSM to certify eSigned documents
 description: Utiliser des modules HSM ou etoken pour certifier des documents signés électroniquement
-seo-description: Utiliser des modules HSM ou etoken pour certifier des documents signés électroniquement
+seo-description: Use HSM or etoken devices to certify eSigned documents
 uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
 contentOwner: vishgupt
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 exl-id: 4d423881-18e0-430a-849d-e1762366a849
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 86%
+workflow-type: ht
+source-wordcount: '995'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 86%
 
 Les modules de sécurité matérielle (HSM) et etokens sont des modules informatiques dédiés, sécurisés de manière renforcée et résistants aux modifications conçus pour gérer, traiter et stocker les clés numériques en toute sécurité. Ces modules sont directement associés à un ordinateur ou à un serveur réseau.
 
-Adobe Experience Manager Forms peut utiliser les informations d’identification stockées sur un HSM ou etoken en vue d’être signé électroniquement ou appliquer les signatures numériques côté serveur à un document. Pour utiliser un module HSM ou etoken avec AEM Forms :
+Adobe Experience Manager Forms peut utiliser les informations d’identification stockées sur un HSM ou etoken en vue d’être signé électroniquement ou appliquer les signatures numériques côté serveur à un document. Pour utiliser un module HSM ou etoken avec AEM Forms :
 
 1. Activez le service DocAssurance.
 1. Configurez les certificats avec l’extension Lecture.
@@ -30,7 +30,7 @@ Adobe Experience Manager Forms peut utiliser les informations d’identification
 
 ## Avant de configurer les modules HSM ou etoken avec AEM Forms  {#configurehsmetoken}
 
-* Installez le [module complémentaire AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
+* Installez le [module complémentaire AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 * Installez et configurez le logiciel client du HSM ou etoken sur le même ordinateur que le serveur AEM Le logiciel client est requis pour communiquer avec les modules HSM et etoken.
 * (Microsoft windows uniquement) Configurez la variable d’environnement JAVA_HOME_32 de façon à ce qu’elle pointe vers le répertoire d’installation de la version 32 bits du kit de développement Java 8 (JDK 8). Le chemin d’accès par défaut du répertoire est le suivant : C:\Program Files(x86)\Java\jdk&lt;version>
 * (AEM Forms sur OSGi uniquement) installez le certificat racine dans le trust store. Cela est nécessaire pour vérifier le PDF signé 
@@ -41,7 +41,7 @@ Adobe Experience Manager Forms peut utiliser les informations d’identification
 
 ## Activer le service DocAssurance {#configuredocassurance}
 
-Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes suivantes pour activer le service :
+Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes suivantes pour activer le service :
 
 1. Arrêtez l’instance auteur de votre environnement AEM Forms. 
 
@@ -49,7 +49,7 @@ Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes 
 
    >[!NOTE]
    >
-   >Si vous avez utilisé le fichier [AEM_root]\crx-quickstart\bin\start.bat pour démarrer l’instance AEM, ouvrez le fichier [racine_de_l’AEM]\crx-quickstart\sling.properties pour le modifier.
+   >Si vous avez utilisé le fichier [AEM_root]\crx-quickstart\bin\start.bat pour démarrer l’instance AEM, ouvrez le fichier [AEM_root]\crx-quickstart\sling.properties pour le modifier.
 
 1. Ajoutez ou remplacez les propriétés suivantes au fichier sling.properties :
 
@@ -62,25 +62,25 @@ Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes 
 1. Enregistrez et fermez le fichier sling.properties.
 1. Redémarrez l’instance AEM.
 
-## Configuration des certificats pour Reader Extensions {#set-up-certificates-for-reader-extensions}
+## Configuration des certificats pour les extensions Lecture {#set-up-certificates-for-reader-extensions}
 
 Effectuez les étapes suivantes pour configurer des certificats :
 
 1. Connectez-vous à l’instance Auteur AEM en tant qu’administrateur.
 
-1. Cliquez sur **Adobe Experience Manager** dans la barre de navigation générale. Accédez à **Outils **> **Sécurité **> **Utilisateurs**.
+1. Cliquez sur **Adobe Experience Manager** dans la barre de navigation générale. Accédez à **Outils** > **Sécurité** > **Utilisateurs**.
 1. Cliquez sur le champ **nom** du compte d’utilisateur. La page **Modifier les paramètres utilisateur** s’affiche.
 1. Sur l’instance d’auteur AEM, les certificats résident dans un KeyStore. Si vous n’avez pas créé de KeyStore précédemment, cliquez sur **Créer KeyStore** et définissez un nouveau mot de passe pour le KeyStore. Si le serveur contient déjà un KeyStore, ignorez cette étape.
 
 1. Sur la page **Modifier les paramètres utilisateur**, cliquez sur **Gérer le KeyStore**.
 
-1. Dans la boîte de dialogue Gestion du KeyStore, développez l’option **Ajouter la clé privée à partir du fichier de magasin de clés** et fournissez un alias. L’alias est utilisé pour effectuer l’opération Reader Extensions.
-1. Pour charger le fichier de certificat, cliquez sur **Sélectionner le fichier de magasin de clés** et chargez un fichier `.pfx`.
+1. Dans la boîte de dialogue Gestion du KeyStore, développez l’option **Ajouter la clé privée à partir du fichier du magasin de clés**, puis fournissez un alias. L’alias est utilisé pour effectuer l’opération Reader Extensions.
+1. Pour télécharger le fichier de certificat, cliquez sur **Sélectionner le fichier du magasin de clés**, puis téléchargez un fichier `.pfx`.
 1. Ajoutez les **mot de passe du magasin de clés**, **mot de passe de la clé privée** et **alias de la clé privée** associés au certificat dans les champs respectifs. Cliquez sur **Envoyer**.
 
    >[!NOTE]
    >
-   >Pour déterminer le P **alias de clé privée** d’un certificat, vous pouvez utiliser la commande Java keytool : `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+   >Pour déterminer l’**alias de la clé privée** d’un certificat, vous pouvez utiliser l’outil Java keytool : `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
    >[!NOTE]
    >
@@ -92,7 +92,7 @@ Effectuez les étapes suivantes pour configurer des certificats :
 
 >[!NOTE]
 >
->Pour passer à l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification Reader Extensions avant de mettre à jour des informations d’identification expirées ou d’évaluation.
+>Pour passer à l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification Reader Extensions avant de mettre à jour des informations d’identification expirées ou d’évaluation.
 
 ## Création d’un alias pour le périphérique  {#configuredeviceinaemconsole}
 
@@ -103,12 +103,12 @@ L’alias contient l’ensemble des paramètres dont a besoin un périphérique 
 
    * **Alias d’authentification** : spécifiez une chaîne utilisée pour identifier l’alias. Cette valeur est utilisée en tant que propriété pour certaines opérations de signatures numériques, comme l’opération de saisie du champ de signature.
    * **Chemin du DLL** : spécifiez le chemin d’accès complet à la bibliothèque cliente de votre module HSM ou etoken sur le serveur. Par exemple, C:\Program Files\LunaSA\cryptoki.dll. Dans un environnement organisé en grappe, ce chemin d’accès doit être identique pour l’ensemble des serveurs de la grappe.
-   * **Code secret HSM** : indiquez le mot de passe requis pour accéder à la clé du module.
+   * **Code secret HSM** : indiquez le mot de passe requis pour accéder à la clé du module.
    * **Id d’emplacement HSM** : indiquez un identifiant d’emplacement de type entier. L’ID d’emplacement est défini pour les clients de façon individuelle. Si vous enregistrez un second ordinateur sur une partition différente (par exemple, HSMPART2 sur le même module HSM), l’emplacement 1 est associé à la partition HSMPART2 pour ce client.
 
    >[!NOTE]
    >
-   >Lors de la configuration d’Etoken, spécifiez une valeur numérique pour le champ Identifiant d’emplacement HSM. Une valeur numérique est nécessaire pour que les opérations de signature fonctionnent.
+   >Lors de la configuration d’Etoken, entrez une valeur numérique pour le champ d’identifiant d’emplacement HSM. Une valeur numérique est nécessaire pour que les opérations de signature fonctionnent.
 
    * **Certificat SHA1** : indiquez la valeur SHA1 (empreinte numérique) du fichier de clé publique (.cer) pour les informations d’identification utilisées. Veillez à ce que la valeur SHA1 ne contienne aucun espace. Si vous utilisez un certificat physique, cette valeur n’est pas requise.
    * **Type de module HSM** : sélectionnez l’éditeur du module HSM (Luna ou autre) ou eToken.
