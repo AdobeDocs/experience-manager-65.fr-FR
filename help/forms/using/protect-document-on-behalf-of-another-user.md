@@ -1,6 +1,6 @@
 ---
 title: Protection d’un document au nom d’un autre utilisateur
-seo-title: Protection d’un document au nom d’un autre utilisateur
+seo-title: Protect a document on behalf of another user
 description: Protection d’un document au nom d’un autre utilisateur
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
@@ -8,9 +8,9 @@ discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '368'
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 95%
 
 AEM Forms Document Security Java SDK fournit des API permettant à un compte d’utilisateur de protéger un document au nom d’un autre utilisateur sans avoir les autorisations nécessaires pour modifier le document. Vous pouvez utiliser l’API dans un processus de flux ou par programmation en tant que service de document. Les nouvelles API sont les suivantes :
 
-* **** protectDocumentUtilisez l’API ProtectDocument pour appliquer une stratégie à un document au nom de
+* **ProtectDocument :** utilisez l’API ProtectDocument pour appliquer une stratégie à un document au nom
 
-   un autre compte utilisateur. Les autorisations du compte utilisateur utilisé pour appliquer la stratégie restent limitées à la protection du document. Elles ne permettent pas d’ouvrir et d’afficher le document. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
+   d’un autre compte utilisateur. Les autorisations du compte utilisateur utilisé pour appliquer la stratégie restent limitées à la protection du document. Elles ne permettent pas d’ouvrir et d’afficher le document. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
 * **createLicense** Utilisez l’API CreateLicense pour créer une licence pour une stratégie au nom d’un autre compte utilisateur. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
 * **protectDocumentWithCoverPage** Utilisez l’API ProtectDocumentWithCoverPage pour appliquer une stratégie et ajouter une page de garde à un document au nom d’un autre utilisateur. Les autorisations du compte utilisateur utilisé pour appliquer la stratégie restent limitées à la protection du document. Elles ne permettent pas d’ouvrir et d’afficher le document. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
