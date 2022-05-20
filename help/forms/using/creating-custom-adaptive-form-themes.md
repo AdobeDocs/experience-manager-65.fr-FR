@@ -1,8 +1,8 @@
 ---
 title: Création de thèmes de formulaires adaptatifs personnalisés
-seo-title: Création de thèmes de formulaires adaptatifs personnalisés
+seo-title: Creating custom adaptive form themes
 description: Un thème de formulaire adaptatif est une bibliothèque client AEM utilisée pour définir les styles, c’est-à-dire l’apparence d’un formulaire adaptatif. Découvrez comment vous pouvez créer des thèmes de formulaire adaptatif personnalisés.
-seo-description: Un thème de formulaire adaptatif est une bibliothèque client AEM utilisée pour définir les styles, c’est-à-dire l’apparence d’un formulaire adaptatif. Découvrez comment vous pouvez créer des thèmes de formulaire adaptatif personnalisés.
+seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
 uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
 content-type: reference
 topic-tags: customization
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 82%
+workflow-type: ht
+source-wordcount: '788'
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 82%
 
 >[!CAUTION]
 >
->AEM Forms fournit la fonctionnalité [Éditeur de thème](/help/forms/using/themes.md) pour créer et modifier des formulaires adaptatifs [themes](/help/forms/using/themes.md). Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne dispose pas de l’[éditeur de thème](/help/forms/using/themes.md) et si vous avez déjà investi dans des thèmes créés à l’aide de fichiers less/CSS (méthode d’éditeur de pré-thème).
+>AEM Forms fournit la fonctionnalité [Éditeur de thèmes](/help/forms/using/themes.md), qui permet de créer et de modifier des [thèmes](/help/forms/using/themes.md) de formulaires adaptatifs. Exécutez les étapes mentionnées dans cet article uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne dispose pas de l’[Éditeur de thèmes](/help/forms/using/themes.md) et que vous possédez déjà des thèmes créés à l’aide de fichiers Less/CSS (méthode antérieure à l’Éditeur de thèmes).
 
 ## Prérequis {#prerequisites}
 
-* Connaissance de la structure LESS (moins CSS)
+* Bien connaître la structure LESS (Leaner CSS)
 * Comment créer une bibliothèque cliente dans Adobe Experience Manager
 * [Création d’un modèle de formulaire adaptatif](/help/forms/using/custom-adaptive-forms-templates.md) pour utiliser le thème que vous créez
 
@@ -44,10 +44,10 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 >
 >Si vous procédez comme suit en utilisant les noms, le modèle résultant ressemble normalement à l’instantané suivant : 
 
-![Diagramme de ](assets/thumbnail.png)
-**cliché du formulaire adaptatif avec thème ForêtFigure :** *Exemple de thème Forêt*
+![Aperçu d’un formulaire adaptatif avec thème Forêt](assets/thumbnail.png)
+**Figure :** *Exemple de thème Forêt*
 
-1. Créez un noeud de type `cq:ClientLibraryFolder` sous le noeud `/apps`.
+1. Créez un nœud de type `cq:ClientLibraryFolder` sous le nœud `/apps`.
 
    Par exemple, créez le nœud suivant :
 
@@ -55,17 +55,17 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 
 1. Ajoutez une propriété à chaîne multi-valeur `categories` au nœud et définissez correctement sa valeur.
 
-   Par exemple, définissez la propriété sur :`af.theme.forest` .
+   Par exemple, définissez la propriété sur : `af.theme.forest`.
 
    ![Instantané du référentiel CRX](assets/3-2.png)
 
-1. Ajoutez deux dossiers, `less` et `css`, et un fichier `css.txt` au noeud créé à l’étape 1 :
+1. Ajoutez deux dossiers, `less` et `css`, et un fichier `css.txt` au nœud créé à l’étape 1 :
 
-   * `less` folder: Contient les fichiers de  `less` variables dans lesquels vous définissez les  `less` variables et  `less mixins` qui sont utilisées pour gérer les styles .css.
+   * Le dossier `less` contient les fichiers de variables `less` dans lesquels vous définissez les variables `less` et les éléments `less mixins` utilisés pour gérer les styles .css.
 
       Ce dossier se compose de fichiers de variables `less`, de fichiers mixin `less` et de fichiers `less` de définition utilisant les mixins et les variables. Et tous ces fichiers less sont ensuite importés dans styles.less.
 
-   * dossier`css` :   : contient les fichiers .css dans lesquels vous définissez les styles statiques à utiliser dans le thème.
+   * dossier`css` : contient les fichiers .css dans lesquels vous définissez les styles statiques à utiliser dans le thème.
 
    **Fichiers de variables less** : ce sont les fichiers où vous définissez ou remplacez les variables utilisées lors de la définition des styles CSS.
 
@@ -94,9 +94,9 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
    @button-font-color: #ffffff;
    ```
 
-   Pour remplacer les variables `less`:
+   Pour remplacer les variables `less` :
 
-   1. Importez les variables de formulaire adaptatif par défaut :
+   1. Importez les variables de formulaire adaptatif par défaut :
 
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
@@ -137,7 +137,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 
    **Fichier Styles.less :** Utilisez ce fichier pour inclure tous les fichiers less (variables, mixins, styles) que vous devez utiliser dans la bibliothèque cliente.
 
-   Dans l’exemple de fichier`styles.less`   suivant, les instructions d’importation peuvent être placées dans n’importe quel ordre.
+   Dans l’exemple de fichier`styles.less` suivant, les instructions d’importation peuvent être placées dans n’importe quel ordre.
 
    Les instructions pour importer les fichiers .less suivants sont obligatoires :
 
@@ -220,7 +220,7 @@ Après avoir créé un thème de formulaire adaptatif, effectuez les étapes sui
 
       Importez ensuite le thème créé dans la section Création d’un thème de formulaire adaptatif de cet article.
 
-      L’exemple de fragment de code suivant importe le thème `af.theme.forest` .
+      L’exemple de fragment de code suivant importe le thème `af.theme.forest`.
 
       ```jsp
       <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -229,7 +229,7 @@ Après avoir créé un thème de formulaire adaptatif, effectuez les étapes sui
 
    1. **Facultatif** : dans la page personnalisée, remplacez les fichiers header.jsp, footer.jsp, et body.jsp le cas échéant.
 
-1. Créez un modèle personnalisé (par exemple : `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) dont le jcr:content pointe vers la page personnalisée créée à l’étape précédente (par exemple : `myAfCustomizations/myAfPages/forestPage)`.
+1. Créez un modèle personnalisé (par exemple, `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) dont le fichier jcr:content désigne la page personnalisée créée à l’étape précédente (par exemple, `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Instantané du référentiel CRX](assets/2-1.png)
 
