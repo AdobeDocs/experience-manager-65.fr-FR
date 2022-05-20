@@ -1,8 +1,8 @@
 ---
 title: Accès et remplissage des formulaires publiés
-seo-title: Accès et remplissage des formulaires publiés
+seo-title: Accessing and filling published forms
 description: Forms Portal fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM).
-seo-description: Forms Portal fournit aux développeurs Web des composants pour la création et la personnalisation d’un portail de formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM).
+seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: 44731604-5d97-46fa-baa9-0c020c634fa7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '935'
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ Forms Portal réduit la charge de gestion et les retards de production. Il fourn
 
 Pour plus d’informations sur le portail des formulaires et ses fonctions, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md).
 
-## Prise en main de Forms Portal {#getting-started-with-forms-portal}
+## Prise en main de Forms Portal {#getting-started-with-forms-portal}
 
-Accédez à la page du portail des formulaires publiés. Pour plus d’informations sur la création d’une page Forms Portal, voir [Création d’une page Forms Portal](../../forms/using/creating-form-portal-page.md).
+Accédez à la page du portail des formulaires publiés. Pour plus d’informations sur la création d’une page de portail de formulaires, reportez-vous à la section [Création d’une page de portail de formulaires](../../forms/using/creating-form-portal-page.md).
 
 Le composant Search and Lister de Forms Portal affiche les formulaires disponibles sur l’instance de publication du serveur AEM. Cette liste comprend tous les formulaires ou les formulaires définis dans le filtre au moment de la création de la page Forms Portal. Une page de Forms Portal est similaire à celle illustrée à la figure suivante :
 
@@ -39,7 +39,7 @@ Exemple de page de Forms Portal
 
 ### Search and Lister {#search-and-lister}
 
-Le composant Search and Lister vous permet d’ajouter les fonctionnalités suivantes à votre portail de formulaires :
+Le composant Search and Lister vous permet d’ajouter les fonctionnalités suivantes à votre portail de formulaires :
 
 * Affichage des formulaires sous forme de panneau, de carte ou de grille disponibles en dehors de la zone. Les formulaires templatesList personnalisés issus de dossiers spécifiques dans Forms Manager sont également pris en charge.
 * Spécification du mode de rendu des formulaires (HTML5, PDF ou les deux).
@@ -74,7 +74,7 @@ L’accès aux formulaires peut s’effectuer par le biais du lien fourni avec c
 
 Chaque formulaire contient des informations d’aide qui permettent à l’utilisateur de le remplir.
 
-#### Drafts &amp; Submission  {#drafts-and-submission}
+#### Drafts &amp; Submission {#drafts-and-submission}
 
 L’utilisateur a la possibilité d’enregistrer un brouillon de formulaire en cliquant sur le bouton Enregistrer. Il peut ainsi travailler sur un formulaire pendant un certain temps avant de l’envoyer.
 
@@ -84,11 +84,11 @@ Une fois le formulaire complété, l’utilisateur l’envoie en cliquant sur le
 
 >[!NOTE]
 >
->Les formulaires envoyés apparaissent dans l’onglet Forms envoyés uniquement si l’action d’envoi pour le formulaire adaptatif est configurée comme Action d’envoi du portail Forms. Pour plus d’informations sur les actions d’envoi, reportez-vous à la section [Configuration de l’action Envoyer](../../forms/using/configuring-submit-actions.md).
+>Les formulaires envoyés n’apparaissent dans l’onglet Formulaires envoyés que si l’action Envoyer du formulaire adaptatif est configurée comme Action d’envoi du Portail Formulaires. Pour plus d’informations sur les actions d’envoi, reportez-vous à la section [Configuration de l’action Envoyer](../../forms/using/configuring-submit-actions.md).
 
 ![Composant Brouillons et envois](assets/draft-submission.png)
 
-Composant Drafts &amp; Submission
+Composant Brouillons et envois
 
 ## Démarrage d’un nouveau formulaire avec des données de formulaire envoyé {#start-a-new-form-using-submitted-form-data}
 
@@ -96,6 +96,6 @@ Il existe des formulaires que vous devez remplir et envoyer très souvent. Par e
 
 AEM Forms peut vous aider à optimiser l’opération de remplissage du formulaire et à réduire considérablement le temps de remplissage et d’envoi d’un formulaire déjà envoyé au préalable. Les utilisateurs finaux peuvent démarrer un nouveau formulaire avec des données d’un formulaire qui a déjà été envoyé. Cette fonctionnalité est intégrée dans le composant [Drafts and Submissions](../../forms/using/draft-submission-component.md). Lorsque vous ajoutez un composant Drafts and Submission à votre page Forms Portal et que vous le publiez, les utilisateurs finaux ont une option dans les onglets Formulaires envoyés et Brouillons de formulaires pour démarrer un nouveau formulaire en utilisant des données d’un formulaire déjà envoyé. L’image suivante illustre cette option.
 
-![start-a-new-form](assets/start-a-new-form.png)
+![démarrer-un-nouveau-formulaire](assets/start-a-new-form.png)
 
 Lorsque vous cliquez sur le bouton pour commencer un nouveau formulaire, il ouvre un formulaire avec les données du formulaire envoyé correspondant. Vous pouvez maintenant revoir et mettre à jour les informations, selon les besoins, puis envoyer le formulaire.
