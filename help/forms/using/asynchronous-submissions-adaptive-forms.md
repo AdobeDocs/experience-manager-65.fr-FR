@@ -1,20 +1,20 @@
 ---
 title: Envoi asynchrone de formulaires adaptatifs
-seo-title: Envoi asynchrone de formulaires adaptatifs
+seo-title: Asynchronous submission of adaptive forms
 description: Apprenez à configurer l’envoi asynchrone pour les formulaires adaptatifs.
-seo-description: Apprenez à configurer l’envoi asynchrone pour les formulaires adaptatifs.
+seo-description: Learn to configure asynchronous submission for adaptive forms.
 uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 83%
+workflow-type: ht
+source-wordcount: '712'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 83%
 
 Traditionnellement, les formulaires web sont configurés à des fins d’envoi synchrone. Lors d’un envoi synchrone, lorsque les utilisateurs envoient un formulaire, ils sont redirigés vers une page d’accusé de réception, une page de remerciement ou, en cas d’échec de l’envoi, une page d’erreur. Toutefois, les expériences Web modernes telles que les applications d’une seule page gagnent en popularité. Dans une application de ce type, la page Web reste statique tandis que l’interaction entre le client et le serveur se déroule en arrière-plan. Vous pouvez désormais fournir cette expérience avec des formulaires adaptatifs en configurant l’envoi asynchrone.
 
-Lors d’un envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le développeur de formulaires se connecte à une expérience distincte, notamment la redirection vers un autre formulaire ou une section distincte du site Web. L’auteur peut également plug-in des services distincts, tels que l’envoi de données à un autre entrepôt de données ou l’ajout d’un moteur d’analyse personnalisé. En cas d’envoi asynchrone, un formulaire adaptatif se comporte comme une application d’une seule page, car le formulaire ne se recharge pas ou son URL ne change pas lorsque les données du formulaire envoyé sont validées sur le serveur.
+Lors d’un envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le développeur de formulaires se connecte à une expérience distincte, notamment la redirection vers un autre formulaire ou une section distincte du site Web. L’auteur peut également enclencher des services distincts, tels que l’envoi de données à un autre entrepôt de données ou l’ajout d’un moteur d’analyse personnalisé. En cas d’envoi asynchrone, un formulaire adaptatif se comporte comme une application d’une seule page, car le formulaire ne se recharge pas ou son URL ne change pas lorsque les données du formulaire envoyé sont validées sur le serveur.
 
 Lisez la suite pour plus de détails sur l’envoi asynchrone dans les formulaires adaptatifs.
 
@@ -41,15 +41,15 @@ Pour configurer la soumission asynchrone pour un formulaire adaptatif :
 
 ## Fonctionnement de l’envoi asynchrone {#how-asynchronous-submission-works}
 
-AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de réussite ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
+AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de succès ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
 
 En outre, les auteurs de formulaire et les développeurs peuvent écrire des règles au niveau du formulaire pour remplacer les gestionnaires par défaut. Pour plus d’informations, voir [Remplacer les gestionnaires par défaut à l’aide de règles](#custom).
 
-Examinons d’abord la réponse du serveur pour les événements de réussite et d’erreur.
+Examinons d’abord la réponse du serveur pour les événements de succès et d’erreur.
 
-### Réponse du serveur pour l’événement de réussite de l’envoi {#server-response-for-submission-success-event}
+### Réponse du serveur pour l’événement de succès de l’envoi {#server-response-for-submission-success-event}
 
-La structure de la réponse du serveur pour l’événement de réussite de l’envoi est la suivante :
+La structure de la réponse du serveur pour l’événement de succès de l’envoi est la suivante :
 
 ```json
 {
@@ -95,11 +95,11 @@ Le gestionnaire d’erreurs lit la réponse du serveur et affiche le message d�
 
 ## Remplacer les gestionnaires par défaut en utilisant des règles {#custom}
 
-Les développeurs et les auteurs de formulaires peuvent écrire des règles, au niveau du formulaire, dans l’éditeur de code pour remplacer les gestionnaires par défaut. La réponse du serveur pour les événements de réussite et d’erreur est exposée au niveau du formulaire. Les développeurs peuvent y accéder à l’aide de `$event.data` dans les règles.
+Les développeurs et les auteurs de formulaires peuvent écrire des règles, au niveau du formulaire, dans l’éditeur de code pour remplacer les gestionnaires par défaut. La réponse du serveur pour les événements de succès et d’erreur est exposée au niveau du formulaire. Les développeurs peuvent y accéder à l’aide de `$event.data` dans les règles.
 
 Effectuez les étapes suivantes pour écrire des règles dans l’éditeur de code afin de gérer les événements de réussite et d’erreur.
 
-1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire, puis appuyez sur ![edit-rules1](assets/edit-rules1.png) pour ouvrir l’éditeur de règles.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez n’importe quel objet de formulaire et cliquez sur ![edit-rules1](assets/edit-rules1.png) pour ouvrir l’éditeur de règles.
 1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire et appuyez sur **[!UICONTROL Créer]**.
 1. Sélectionnez l’**[!UICONTROL éditeur de code]** dans la liste déroulante de sélection de mode.
 1. Dans l’éditeur de code, appuyez sur **[!UICONTROL Modifier le code]**. Appuyez sur **[!UICONTROL Modifier]** dans la boîte de dialogue de confirmation.
