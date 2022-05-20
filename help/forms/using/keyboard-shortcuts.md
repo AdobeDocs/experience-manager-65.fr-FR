@@ -1,19 +1,19 @@
 ---
 title: Raccourcis clavier AEM Forms
-seo-title: Raccourcis clavier AEM Forms
+seo-title: AEM Forms Keyboard Shortcuts
 description: Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec l’éditeur de formulaire adaptatif, l’éditeur de thème, l’explorateur de contenu et Correspondence Management pour les systèmes d’exploitation Windows et Macintosh.
-seo-description: Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec l’éditeur de formulaire adaptatif, l’éditeur de thème, l’explorateur de contenu et Correspondence Management.
+seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 80%
+workflow-type: ht
+source-wordcount: '1147'
+ht-degree: 100%
 
 ---
 
@@ -25,18 +25,18 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 | **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
 |---|---|---|
-| Ouvrez le navigateur Propriétés pour le composant de formulaire adaptatif sélectionné. | Alt + Entrée | Alt + Retour |
+| Ouvrir l’explorateur de propriétés pour le composant de formulaire adaptatif sélectionné | Alt + Entrée | Alt + Retour |
 | Fermer le navigateur Propriétés pour le composant de formulaire adaptatif sélectionné | Ctrl + Alt + W | Commande + Alt + W |
 | Enregistrer les modifications dans la fenêtre Propriétés pour le composant de formulaire adaptatif sélectionné | Ctrl + S | Commande + S |
-| Modifier la règle pour le composant de formulaire adaptatif sélectionné | Ctrl + Alt + Entrée | Commande + Alt + Retour |
+| Modifier la règle pour le composant de formulaire adaptatif sélectionné | Ctrl + Alt + Entrée | Commande + Alt + Retour |
 | Permet de basculer entre le mode Aperçu et le mode actuellement sélectionné (par exemple : Édition, Génération de modèles automatique, etc.). | Ctrl+Maj+M | Ctrl+Maj+M&amp;ast; |
 | Annuler la dernière modification | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Rétablir la dernière modification | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Sélectionner plusieurs composants | Maj + Clic | Maj + Clic |
 | Copier le composant sélectionné | Ctrl+C | Ctrl+C&amp;ast; |
-| Couper un ou plusieurs composants sélectionnés. Le composant coupé ne disparaît pas tant qu’il n’est pas collé à un nouvel emplacement. | Ctrl+X | Ctrl+X&amp;ast; |
-| Coller le(s) composant(s) | Ctrl+V | Ctrl+V |
-| Supprimer un ou plusieurs composants sélectionnés | Ctr + Suppr | Ctrl+Del&amp;ast; |
+| Couper un ou plusieurs composants sélectionnés. Le composant coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement. | Ctrl+X | Ctrl+X&amp;ast; |
+| Coller un ou plusieurs composants | Ctrl+V | Ctrl+V |
+| Supprimer un ou plusieurs composants sélectionnés | Ctr + Suppr | Ctrl+Suppr&amp;ast; |
 | Supprimer un ou plusieurs composants sélectionnés | Ctrl+Retour arrière | Ctrl+Retour arrière&amp;ast; |
 | Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+B | Ctrl+B&amp;ast; |
 | Mettre le texte en italique lors de l’utilisation du composant Éditeur de texte enrichi en mode Aperçu | Ctrl+I | Ctrl+I&amp;ast; |
@@ -44,7 +44,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande sous Mac OS.
+>Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande sous Mac OS.
 
 >[!NOTE]
 >
@@ -56,7 +56,6 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 >
 
 
-
 ## Éditeur de thème  {#themeeditor}
 
 | **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
@@ -65,32 +64,32 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 | Fermer l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + Alt + W | Commande + Alt + W |
 | Annuler la dernière modification | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Rétablir la dernière modification | Ctrl+Y | Ctrl+Y&amp;ast; |
-| Enregistrer les modifications dans l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + S | Ctrl+S&amp;ast; |
+| Enregistrer les modifications dans l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &quot;&amp;ast;&quot; fonctionnent avec les touches Ctrl et Commande sous Mac OS.
+>Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande sous Mac OS.
 
 ## Explorateur de contenu  {#contentbrowser}
 
 | **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
 |---|---|---|
-| Développer tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl + A pour sélectionner tous les accordéons, puis flèche droite pour développer | Commande + A pour sélectionner tous les accordéons, puis flèche droite pour développer |
-| Réduire tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl+A pour sélectionner tous les accordéons, puis flèche gauche pour réduire | Commande + A pour sélectionner tous les accordéons, puis flèche gauche pour réduire |
+| Développer tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl + A pour sélectionner tous les accordéons, puis flèche droite pour développer | Commande+A pour sélectionner tous les accordéons, puis flèche droite pour développer |
+| Réduire tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl+A pour sélectionner tous les accordéons, puis flèche gauche pour réduire | Commande+A pour sélectionner tous les accordéons, puis flèche gauche pour réduire |
 | Développer l’accordéon sélectionné dans l’arborescence des objets de formulaire | Flèche vers la droite | Flèche vers la droite |
 | Réduire l’accordéon sélectionné dans l’arborescence des objets de formulaire | Flèche vers la gauche | Flèche vers la gauche |
 | Sélectionner l’élément suivant dans l’arbre des objets de formulaire | Flèche vers le bas | Flèche vers le bas |
 | Sélectionner l’élément précédent dans l’arborescence d’objets de formulaire | Flèche vers le haut | Flèche vers le haut |
 
-[1] Remplace Ctrl + Flèche droite pour Windows et Commande + Flèche droite pour Mac OS.\
-[2] Remplace Ctrl + Flèche gauche pour Windows et Commande + Flèche gauche pour Mac OS.
+[1] Remplace Ctrl + Flèche droite pour Windows et Commande + Flèche droite pour Mac OS.\
+[2] Remplace Ctrl + Flèche gauche pour Windows et Commande + Flèche gauche pour Mac OS.
 
 ## Correspondence Management {#correspondence-management}
 
 Cette section répertorie les différents raccourcis clavier et raccourcis d’accessibilité que vous pouvez utiliser dans l’éditeur de texte de Correspondence Management. Vous pouvez utiliser ces raccourcis lorsque vous effectuez les actions suivantes :
 
-* Création ou modification d’une ressource [Texte](texts-interactive-communications.md)
-* Modification d’un module de texte après avoir appuyé sur l’icône Modifier appropriée ( ![edittextmodule](assets/edittextmodule.png)) lors de la [création d’une correspondance](/help/forms/using/create-correspondence.md).
+* Créer ou modifier un actif de [texte](texts-interactive-communications.md)
+* Modifiez un module de texte après la sélection de l’icône d’édition appropriée (![edittextmodule](assets/edittextmodule.png)) lors de la [création d’une correspondance](/help/forms/using/create-correspondence.md).
 
 ### Sélection de texte et déplacement du curseur {#text-selection-and-moving-the-cursor-around}
 
@@ -264,7 +263,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Modification de la taille de police  {#changing-font-size}
+### Modification de la taille de police {#changing-font-size}
 
 <table> 
  <tbody>
@@ -286,7 +285,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Suppression d’un mot  {#deleting-a-word}
+### Suppression d’un mot {#deleting-a-word}
 
 <table> 
  <tbody>
@@ -308,7 +307,7 @@ Cette section répertorie les différents raccourcis clavier et raccourcis d’a
  </tbody>
 </table>
 
-### Copier et coller  {#copy-and-paste}
+### Copier et coller {#copy-and-paste}
 
 <table> 
  <tbody>
