@@ -1,7 +1,7 @@
 ---
-title: Barcoded Forms Service Java APIQuick Start (SOAP)
-seo-title: Barcoded Forms Service Java APIQuick Start (SOAP)
-description: Barcoded Forms Service Java APIQuick Start (SOAP)
+title: Démarrage rapide API Java (SOAP) du service Barcoded Forms
+seo-title: Barcoded Forms Service Java APIQuick Start(SOAP)
+description: Démarrage rapide API Java (SOAP) du service Barcoded Forms
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
@@ -11,25 +11,25 @@ discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 1%
+workflow-type: ht
+source-wordcount: '216'
+ht-degree: 100%
 
 ---
 
-# Barcoded Forms Service API Java Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+# Démarrage rapide API Java (SOAP) du service Barcoded Forms {#barcoded-forms-service-java-apiquick-start-soap}
 
-L’API Java Quick Start (SOAP) est disponible pour le service Barcoded Forms :
+Démarrage rapide API Java (SOAP) est disponible pour le service Barcoded Forms :
 
-[Démarrage rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Démarrage rapide (mode SOAP) : décodage des données de formulaire à code-barres à l’aide de l’API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les didacticiels de mise en route situés dans Programmation avec AEM Forms sont basés sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les tutoriels de démarrage rapide situés dans Programmation avec AEM Forms sont basés sur le serveur Forms déployé sur le Serveur d’applications JBoss et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Démarrage rapide (mode SOAP) : Décodage des données de formulaire à code-barres à l’aide de l’API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Démarrage rapide (mode SOAP) : décodage des données de formulaire à code-barres à l’aide de l’API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
 Le code Java suivant décode les données de formulaire qui se trouvent dans un formulaire PDF enregistré sous Loan.pdf. Les données décodées sont enregistrées sous la forme d’un fichier XML nommé extractedData.xml. Cet exemple de code convertit un objet `org.w3c.dom.Document` en objet `com.adobe.idp.Document`. (Voir [Décodage des données de formulaire à code-barres](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
@@ -220,4 +220,4 @@ Le code Java suivant décode les données de formulaire qui se trouvent dans un 
 
 >[!NOTE]
 >
->Lorsque vous utilisez un objet `org.w3c.dom.Document` et un objet `com.adobe.idp.Document` dans la même logique d’application, il est recommandé de qualifier complètement les deux objets.
+>Lors de l’utilisation de l’objet `org.w3c.dom.Document` et de l’objet `com.adobe.idp.Document` dans la même logique d’application, il est recommandé de qualifier complètement les deux objets.
