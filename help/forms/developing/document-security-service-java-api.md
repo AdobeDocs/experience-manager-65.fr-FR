@@ -1,7 +1,7 @@
 ---
-title: Démarrage rapide de l’API Java du service Document Security (SOAP)
-seo-title: Démarrage rapide de l’API Java du service Document Security (SOAP)
-description: Démarrage rapide de l’API Java du service Document Security (SOAP)
+title: Démarrage rapide de l’API Java du service Document Security (SOAP)
+seo-title: Document Security Service JavaAPI Quick Start(SOAP)
+description: Démarrage rapide de l’API Java du service Document Security (SOAP)
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
 contentOwner: admin
 content-type: reference
@@ -11,49 +11,49 @@ discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 role: Developer
 exl-id: 76d855cf-ebfa-487a-b1c8-755e7e45dd73
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1069'
+ht-degree: 100%
 
 ---
 
-# Démarrage rapide de l’API Java Document Security Service (SOAP) {#document-security-service-javaapi-quick-start-soap}
+# Démarrage rapide de l’API Java du service Document Security (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
-L’API Java Quick Start (SOAP) est disponible pour le service de Rights Management :
+Le démarrage rapide de l’API Java (SOAP) est disponible pour le service Rights Management :
 
-[Démarrage rapide (mode SOAP) : Création d’une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
+[Démarrage rapide (mode SOAP) : créer une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Modification d’une stratégie à l’aide de l’API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
+[Démarrage rapide (mode SOAP) : modifier une stratégie à l’aide de l’API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suppression d’une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Application d’une stratégie à un document PDF à l’aide de l’API Java](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : appliquer une stratégie à un document PDF à l’aide de l’API Java](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suppression d’une stratégie d’un document PDF à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document PDF à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Révocation d’un document à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-revoking-a-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : révoquer un document à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-revoking-a-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Rétablissement de l’accès à un document révoqué à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : rétablir l’accès à un document révoqué à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Inspection des documents PDF protégés par une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
+[Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création d’un filigrane à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
+[Démarrage rapide (mode SOAP) : créer un filigrane à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Modification d’un filigrane à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-modifying-a-watermark-using-the-java-api)
+[Démarrage rapide (mode SOAP) : modifier un filigrane à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-modifying-a-watermark-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Recherche d’événements à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
+[Démarrage rapide (mode SOAP) : rechercher des événements à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suppression d’une stratégie d’un document Word à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document Word à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Le démarrage rapide (Quick Start) situé dans Programmation avec AEM Forms est basé sur le système d’exploitation du serveur Forms. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les démarrages rapides situés dans Programmer avec AEM Forms sont basés sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Démarrage rapide (mode SOAP) : Création d’une stratégie à l’aide de l’API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : créer une stratégie à l’aide de l’API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-L’exemple de code Java suivant crée une nouvelle stratégie nommée *Allow Copy*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé *Jeu de stratégies global*. Ce jeu de stratégies existe par défaut. (Voir [Création de stratégies](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
+L’exemple de code Java suivant permet de créer une stratégie nommée *Autoriser la copie*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé *Jeu de stratégies global*. Ce jeu de stratégies existe par défaut. (Consultez la section [Créer des stratégies](/help/forms/developing/protecting-documents-policies.md#creating-policies)).
 
 ```java
  /*
@@ -180,9 +180,9 @@ L’exemple de code Java suivant crée une nouvelle stratégie nommée *Allow Co
  
 ```
 
-## Démarrage rapide (mode SOAP) : Modification d’une stratégie à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : modifier une stratégie à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
-L’exemple de code Java suivant modifie une stratégie nommée *Allow Copy* en définissant la période d’ouverture hors ligne à 40 jours. (Voir [Modification de stratégies](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
+L’exemple de code Java suivant permet de modifier une stratégie nommée *Autoriser la copie* en définissant la période d’ouverture hors connexion à 40 jours. (Consultez la section [Modifier des stratégies](/help/forms/developing/protecting-documents-policies.md#modifying-policies)).
 
 ```java
  /*
@@ -281,9 +281,9 @@ L’exemple de code Java suivant modifie une stratégie nommée *Allow Copy* en 
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une stratégie à l’aide de l’API Java {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer une stratégie à l’aide de l’API Java {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
 
-L’exemple de code Java suivant supprime une stratégie nommée *Allow Copy*. (Voir [Suppression de stratégies](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
+L’exemple de code Java suivant permet de supprimer une stratégie nommée *Autoriser la copie*. (Consultez la section [Supprimer des stratégies](/help/forms/developing/protecting-documents-policies.md#deleting-policies)).
 
 ```java
  /*
@@ -373,9 +373,9 @@ L’exemple de code Java suivant supprime une stratégie nommée *Allow Copy*. (
  
 ```
 
-## Démarrage rapide (mode SOAP) : Application d’une stratégie à un document PDF à l’aide de l’API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : appliquer une stratégie à un document PDF à l’aide de l’API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant applique une stratégie nommée *Allow Copy* à un document PDF nommé *Loan.pdf*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé *Jeu de stratégies global*. Le document protégé par une stratégie est enregistré sous la forme d’un fichier PDF nommé *PolicyProtectedLoanDoc.pdf. *(Voir [Application de stratégies à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
+L’exemple de code Java suivant permet d’appliquer une stratégie nommée *Autoriser la copie* à un document PDF nommé *Loan.pdf*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé *Jeu de stratégies global*. Le document protégé par une stratégie est enregistré en tant que fichier PDF nommé *PolicyProtectedLoanDoc.pdf. * (Consultez la section [Appliquer des stratégies à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
 
 ```java
  /*
@@ -479,9 +479,9 @@ L’exemple de code Java suivant applique une stratégie nommée *Allow Copy* à
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une stratégie d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-L’exemple de code suivant supprime une stratégie d’un document PDF nommé *PolicyProtectedLoanDoc.pdf*. Le document PDF non sécurisé est enregistré sous la forme *unProtectedLoan.pdf*. (Voir [Suppression de stratégies des documents PDF](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
+L’exemple de code suivant permet de supprimer une stratégie d’un document PDF nommé *PolicyProtectedLoanDoc.pdf*. Le document PDF non protégé est enregistré en tant que fichier nommé *unProtectedLoan.pdf*. (Consultez la section [Supprimer des stratégies des documents PDF](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)).
 
 ```java
  /*
@@ -586,9 +586,9 @@ L’exemple de code suivant supprime une stratégie d’un document PDF nommé *
  
 ```
 
-## Démarrage rapide (mode SOAP) : Révocation d’un document à l’aide de l’API Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : révoquer un document à l’aide de l’API Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-L’exemple de code Java suivant révoque un document protégé par une stratégie nommé *PolicyProtectedLoanDoc.pdf*. Un document PDF révisé se trouve à l’emplacement URL suivant `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Voir [Révocation de l’accès aux documents](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
+L’exemple de code Java suivant permet de révoquer un document protégé par une stratégie nommé *PolicyProtectedLoanDoc.pdf*. Le document PDF révisé se trouve à l’adresse URL suivante : `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Consultez la section [Révoquer l’accès aux documents](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents)).
 
 ```java
  /*
@@ -700,9 +700,9 @@ L’exemple de code Java suivant révoque un document protégé par une stratég
  
 ```
 
-## Démarrage rapide (mode SOAP) : Inspection des documents PDF protégés par une stratégie à l’aide de l’API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
+## Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une stratégie à l’aide de l’API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-L’exemple de code Java suivant inspecte un document PDF protégé par une stratégie nommé *PolicyProtectedLoanDoc.pd* f. (Voir [Inspection des documents PDF protégés par une stratégie](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
+L’exemple de code Java suivant permet d’inspecter un document PDF protégé par une stratégie nommé *PolicyProtectedLoanDoc.pdf*. (Consultez la section [Inspecter des documents PDF protégés par une stratégie](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)).
 
 ```java
  /*
@@ -818,9 +818,9 @@ L’exemple de code Java suivant inspecte un document PDF protégé par une stra
  
 ```
 
-## Démarrage rapide (mode SOAP) : Rétablissement de l’accès à un document révoqué à l’aide de l’API Java {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : rétablir l’accès à un document révoqué à l’aide de l’API Java {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
 
-L’exemple de code Java suivant rétablit l’accès à un document PDF révoqué nommé *PolicyProtectedLoanDoc.pdf*. (Voir [Rétablissement de l’accès aux documents révoqués](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents).)
+L’exemple de code Java suivant permet de rétablir l’accès à un document PDF révoqué nommé *PolicyProtectedLoanDoc.pdf*. (Consultez la section [Rétablir l’accès aux documents révoqués](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)).
 
 ```java
  /*
@@ -924,9 +924,9 @@ L’exemple de code Java suivant rétablit l’accès à un document PDF révoqu
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’un filigrane PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
+## Démarrage rapide (mode SOAP) : créer un filigrane sur un document PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
-L’exemple de code Java suivant crée un filigrane PDF appelé &quot;Exemple de filigrane PDF&quot;. Ce filigrane contient un seul élément (voir [Création de filigranes](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
+L’exemple de code Java suivant permet de créer un filigrane sur un document PDF nommé « Exemple de filigrane sur un document PDF ». Ce filigrane contient un seul élément (Consultez la section [Créer des filigranes](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
 ```java
 /*
@@ -1057,9 +1057,9 @@ public class PDFWatermarksSOAPMode {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’un filigrane de texte à l’aide de l’API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
+## Démarrage rapide (mode SOAP) : créer un filigrane de texte à l’aide de l’API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
-L’exemple de code Java suivant crée un filigrane Texte nommé *Exemple de filigrane Texte*. Ce filigrane contient un seul élément.
+L’exemple de code Java suivant permet de créer un filigrane de texte nommé *Exemple de filigrane de texte*. Ce filigrane contient un seul élément.
 
 ```java
 /*
@@ -1206,9 +1206,9 @@ public class TextWatermarks {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Modification d’un filigrane de texte à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
+## Démarrage rapide (mode SOAP) : modifier un filigrane de texte à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
 
-L’exemple de code Java suivant modifie un filigrane nommé &quot;Exemple de filigrane de texte&quot; et définit l’opacité du premier élément sur 100.
+L’exemple de code Java suivant permet de modifier un filigrane nommé « Exemple de filigrane de texte » et définit l’opacité du premier élément sur 100.
 
 ```java
 /*
@@ -1318,9 +1318,9 @@ public class ModifyWatermarks {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Modification d’un filigrane à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
+## Démarrage rapide (mode SOAP) : modifier un filigrane à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
 
-L’exemple de code Java suivant modifie un filigrane nommé *Confidential* en définissant la valeur de l’attribut `opacity` sur 80.
+L’exemple de code Java suivant permet de modifier un filigrane nommé *Confidentiel* en modifiant la valeur de l’attribut `opacity` sur 80.
 
 ```java
  /*
@@ -1416,9 +1416,9 @@ L’exemple de code Java suivant modifie un filigrane nommé *Confidential* en d
  
 ```
 
-## Démarrage rapide (mode SOAP) : Recherche d’événements à l’aide de l’API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
+## Démarrage rapide (mode SOAP) : rechercher des événements à l’aide de l’API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
 
-L’exemple de code Java suivant recherche l’événement de création de stratégie.
+L’exemple de code Java suivant permet de rechercher l’événement de création de stratégie.
 
 ```java
  /*
@@ -1529,9 +1529,9 @@ L’exemple de code Java suivant recherche l’événement de création de strat
  
 ```
 
-## Démarrage rapide (SOAP) : Application d’une stratégie à un document Word à l’aide de l’API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
+## Démarrage rapide (SOAP) : appliquer une stratégie à un document Word à l’aide de l’API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-L’exemple de code Java suivant applique une stratégie nommée *Allow Copy* à un document Word nommé *Loan.doc*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé *Jeu de stratégies global*. Le document protégé par une stratégie est enregistré sous la forme d’un fichier DOC nommé *PolicyProtectedLoanDoc.doc. *(Voir [Application de stratégies à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
+L’exemple de code Java suivant permet d’appliquer une stratégie nommée *Autoriser la copie* à un document Word nommé *Loan.doc*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé *Jeu de stratégies global*. Le document protégé par une stratégie est enregistré en tant que fichier DOC nommé *PolicyProtectedLoanDoc.doc. * (Consultez la section [Appliquer des stratégies à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
 
 ```java
  /*
@@ -1644,9 +1644,9 @@ L’exemple de code Java suivant applique une stratégie nommée *Allow Copy* à
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une stratégie d’un document Word à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document Word à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
 
-L’exemple de code suivant supprime une stratégie d’un document Word nommé *PolicyProtectedLoanDoc.doc*. Le document Word non sécurisé est enregistré sous la forme *unProtectedLoan.doc*. (Voir [Suppression de stratégies des documents Word](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
+L’exemple de code suivant permet de supprimer une stratégie d’un document Word nommé *PolicyProtectedLoanDoc.doc*. Le document Word non protégé est enregistré en tant que fichier nommé *unProtectedLoan.doc*. (Consultez la section [Supprimer des stratégies de documents Word](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)).
 
 ```java
  /*
@@ -1752,9 +1752,9 @@ L’exemple de code suivant supprime une stratégie d’un document Word nommé 
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : créer une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant crée une stratégie abstraite nommée AllowCopy. Le jeu de stratégies auquel la stratégie est ajoutée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Voir Création de stratégies.)
+L’exemple de code Java suivant permet de créer une stratégie abstraite nommée AllowCopy. Le jeu de stratégies auquel la stratégie est ajoutée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Consultez la section Créer des stratégies).
 
 ```java
 /*
@@ -1869,9 +1869,9 @@ public class CreateAbstractPolicySoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Modification d’une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : modifier une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant modifie une stratégie abstraite nommée AllowCopy. Le jeu de stratégies dans lequel la stratégie est modifiée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Voir Création de stratégies.)
+L’exemple de code Java suivant permet de modifier une stratégie abstraite nommée AllowCopy. Le jeu de stratégies dans lequel la stratégie est modifiée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Consultez la section Créer des stratégies).
 
 ```java
 /*
@@ -1968,9 +1968,9 @@ public class ModifyingAbstractPolicySoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant supprime une stratégie abstraite nommée AllowCopy. Le jeu de stratégies à partir duquel la stratégie est supprimée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Voir Création de stratégies.)
+L’exemple de code Java suivant permet de supprimer une stratégie abstraite nommée AllowCopy. Le jeu de stratégies à partir duquel la stratégie est supprimée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Consultez la section Créer des stratégies).
 
 ```java
 /*
@@ -2055,9 +2055,9 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Protect d’un PDF dans le processus d’instructions pour un utilisateur existant, à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## Démarrage rapide (mode SOAP) : protéger un PDF dans le workflow d’instructions pour un utilisateur existant à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
-L’exemple de code Java suivant illustre la méthode de protection d’un document dans le processus d’instructions pour un utilisateur existant.
+L’exemple de code Java suivant illustre la méthode permettant de protéger un document dans le workflow d’instructions pour un utilisateur existant.
 
 ```java
 /*
@@ -2163,12 +2163,12 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Protect d’un fichier PDF dans le processus d’instructions pour un nouvel utilisateur à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Démarrage rapide (mode SOAP) : protéger un PDF dans le workflow d’instructions pour un nouvel utilisateur à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
-L’exemple de code Java suivant montre comment protéger un document dans le processus d’instructions. Il s’agit d’un processus en deux étapes :
+L’exemple de code Java suivant montre comment protéger un document dans le workflow d’instructions. Il s’agit d’un processus en deux étapes :
 
 * Un nouvel utilisateur, une nouvelle licence et une nouvelle stratégie sont créés.
-* L’utilisateur est associé à la Licence et à la Stratégie, et le document est protégé.
+* L’utilisateur est associé à la licence et à la stratégie, et le document est protégé.
 
 ```java
 /*
