@@ -1,8 +1,8 @@
 ---
 title: Enregistrement d’une tâche ou d’un formulaire en tant que brouillon 
-seo-title: Enregistrement d’une tâche ou d’un formulaire en tant que brouillon 
+seo-title: Saving a task or form as a draft
 description: Étapes d’enregistrement de brouillon d’une tâche ou d’un formulaire dans l’application AEM Forms
-seo-description: Étapes d’enregistrement de brouillon d’une tâche ou d’un formulaire dans l’application AEM Forms
+seo-description: Steps to save a draft copy of a task or a form in the AEM Forms app
 uuid: 1192d2c2-05a4-4a96-9015-e56111aa2646
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '492'
+ht-degree: 100%
 
 ---
 
@@ -20,18 +20,18 @@ ht-degree: 89%
 
 L’option Enregistrer en tant que brouillon enregistre un instantané d’une tâche ou d’un formulaire avec les données renseignées dans le formulaire associé. Vous pouvez également créer un brouillon à partir d’un modèle. Les brouillons sont enregistrés sur le périphérique mobile et synchronisées avec le serveur Adobe Experience Manager Forms pour une récupération ultérieure.
 
-Vous pouvez [mettre à jour le formulaire](/help/forms/using/working-with-form.md), [l’annoter](/help/forms/using/add-attachments.md) avec des photos et des annotations. Au fur et à mesure que vous continuez à mettre à jour un formulaire, il est conseillé de l’enregistrer en tant que brouillon. Si vous décidez d’envoyer ultérieurement un formulaire complété, son enregistrement en tant que brouillon s’avère utile.
+Vous pouvez [mettre à jour le formulaire](/help/forms/using/working-with-form.md), [l’annoter](/help/forms/using/add-attachments.md) avec des photos et des notes par saisie tactile. Au fur et à mesure que vous continuez à mettre à jour un formulaire, il est conseillé de l’enregistrer en tant que brouillon. Si vous décidez d’envoyer ultérieurement un formulaire complété, son enregistrement en tant que brouillon s’avère utile.
 
-Pour activer la fonction Enregistrer en tant que brouillon pour les formulaires enregistrés sur le portail de formulaires, voir [Enregistrement d’un formulaire HTML5 en tant que brouillon](/help/forms/using/saving-html5-form-draft.md).
+Pour activer la fonctionnalité Enregistrer en tant que brouillon pour les formulaires enregistrés sur le portail de formulaires, voir [Enregistrer un formulaire HTML5 en tant que brouillon](/help/forms/using/saving-html5-form-draft.md).
 Pour configurer l’envoi des formulaires adaptatifs, voir [Composant Drafts &amp; Submission](/help/forms/using/draft-submission-component.md). (Non valide pour les formulaires synchronisés avec le serveur AEM Forms JEE.)
 
-Pour créer un brouillon, ouvrez le formulaire et appuyez sur **Enregistrer en tant que brouillon** ![enregistrer en tant que brouillon](assets/save-as-draft.png). Indiquez le nom de l’enregistrement de brouillons et **appuyez sur**. Le brouillon est enregistré dans le dossier Brouillons et synchronisé avec le serveur. Il est enregistré dans le dossier de boîte d’envoi si l’application est hors ligne.
+Pour créer un brouillon, ouvrez le formulaire et appuyez sur **Enregistrer en tant que brouillon** ![save-as-draft](assets/save-as-draft.png). Indiquez le nom de l’enregistrement de brouillons et **appuyez sur**. Le brouillon est enregistré dans le dossier Brouillons et synchronisé avec le serveur. Il est enregistré dans le dossier de boîte d’envoi si l’application est hors ligne.
 
 Si par la suite vous mettez à jour le formulaire correspondant, les modifications sont répercutées immédiatement. Lors de la synchronisation de l’application AEM Forms avec le serveur AEM Forms, le brouillon est téléchargé sur le serveur AEM Forms. De plus, il est déplacé de la boîte d’envoi vers le dossier Tâches ou Brouillons. Une icône de modification s’affiche en regard de celui-ci.
 
 Au fur et à mesure que vous continuez à travailler sur plusieurs tâches et points de départ et que vous les enregistrez, les brouillons sont enregistrés. Lorsque vous synchronisez votre application avec le serveur AEM Forms, le brouillon est enregistré sur le serveur. À tout moment, vous pouvez récupérer les brouillons en fonction des dernières date et heure d’enregistrement. Par exemple, si vous devez réinstaller l’application, voire changer de périphérique mobile, vous pouvez télécharger le brouillon depuis le serveur.
 
-## Suppression d’un brouillon  {#delete-a-draft}
+## Suppression d’un brouillon {#delete-a-draft}
 
 Le dossier des brouillons répertorie tous les brouillons. Vous pouvez utiliser l’option Supprimer le brouillon pour supprimer définitivement les brouillons du périphérique mobile et du serveur.
 
@@ -39,7 +39,7 @@ L’option de suppression des brouillons créés à partir d’une tâche n’es
 
 Vous pouvez ignorer les brouillons en mode hors ligne et en ligne. Au rejet des brouillons en mode hors ligne, les brouillons sont supprimés du serveur uniquement lorsque la connexion au serveur est rétablie.
 
-Pour supprimer un brouillon, procédez comme suit :
+Pour supprimer un brouillon, procédez comme suit :
 
 1. Dans l’application AEM Forms, accédez aux **Formulaires.**
 1. Cliquez sur **Brouillons** dans la liste déroulante en regard de Rechercher.
