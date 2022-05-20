@@ -1,17 +1,17 @@
 ---
 title: Utilisation des modèles de courrier électronique personnalisés dans une étape Affecter une tâche
-seo-title: Utilisation des modèles de courrier électronique personnalisés dans une étape Affecter une tâche
+seo-title: Use custom email templates in an Assign Task step
 description: 'Modèles de courrier électronique personnalisés pour les notifications électroniques de processus de formulaires '
-seo-description: 'Modèles de courrier électronique personnalisés pour les notifications électroniques de processus de formulaires '
+seo-description: Custom email templates for forms workflow email notifications
 uuid: ba453d54-813f-4a4f-a82e-1a6a28b6939c
 topic-tags: publish
 discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '523'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez personnaliser l’apparence et utiliser des métadonnées personnali
 
 Les modèles de notification électronique sont basés sur les [courriers électroniques HTML](https://en.wikipedia.org/wiki/HTML_email). Ces courriers électroniques s’adaptent à différents clients de messagerie et tailles d’écran. De plus, le style de courrier électronique est défini dans le modèle.
 
-L’image suivante affiche une notification électronique personnalisée :
+L’image suivante affiche une notification électronique personnalisée :
 
 ![Notification électronique à l’aide du modèle personnalisé](do-not-localize/customized-email.png)
 
