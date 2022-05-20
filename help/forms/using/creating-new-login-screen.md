@@ -1,8 +1,8 @@
 ---
 title: Création d’un écran de connexion
-seo-title: Création d’un écran de connexion
+seo-title: Creating a new login screen
 description: Comment modifier la page de connexion des modules de LiveCycle, par exemple de l’espace de travail AEM Forms ou de Forms Manager.
-seo-description: Comment modifier la page de connexion des modules de LiveCycle, par exemple de l’espace de travail AEM Forms ou de Forms Manager.
+seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 62%
+workflow-type: ht
+source-wordcount: '463'
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 62%
 
 Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui utilisent l’écran de connexion AEM Forms. Par exemple, les modifications affectent à la fois l’écran de connexion de Forms Manager et de l’espace de travail AEM Forms.
 
-## Condition préalable {#prerequisite}
+## Prérequis {#prerequisite}
 
-1. Connectez-vous à `/lc/crx/de` avec les autorisations d’administrateur.
+1. Connectez-vous à `/lc/crx/de` avec des droits d’administrateur.
 1. Procédez comme suit :
 
-   1. Répliquez la structure hiérarchique : de `/libs/livecycle/core/content` à `/apps/livecycle/core/content`.
+   1. Répliquez la structure hiérarchique : de `/libs/livecycle/core/content` vers `/apps/livecycle/core/content`.
 
       Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
 
-   1. Copiez le dossier de contenu :
+   1. Copiez le dossier de contenu :
 
       de: `/libs/livecycle/core`
 
@@ -40,36 +40,36 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
 1. Procédez comme suit :
 
-   1. Répliquez la structure hiérarchique : de `/libs/livecycle/core/components/login` à `/apps/livecycle/core/components/login`. Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
+   1. Répliquez la structure hiérarchique : de `/libs/livecycle/core/components/login` vers `/apps/livecycle/core/components/login`. Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
 
-   1. Copiez le dossier de composants : de `/libs/livecycle/core` à `/apps/livecycle/core`.
+   1. Copiez le dossier de composants de `/libs/livecycle/core` vers `/apps/livecycle/core`.
 
-   1. Supprimez le contenu du dossier : `/apps/livecycle/core/components/login`.
+   1. Supprimez le contenu du dossier `/apps/livecycle/core/components/login`.
 
 ### Ajout d’un nouveau paramètre régional {#adding-a-new-locale}
 
-1. Copiez le dossier `i18n` :
+1. Copiez le dossier `i18n`
 
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
 
-1. Supprimez tous les dossiers à l’intérieur de `i18n` sauf un, par exemple `en`.
+1. Supprimez tous les dossiers contenus dans `i18n` sauf un, comme `en`, par exemple.
 
 1. Sur le dossier `en`, procédez comme suit :
 
    1. Donnez au dossier le nom du paramètre régional que vous souhaitez prendre en charge. Par exemple, `ar`.
 
-   1. Remplacez la valeur de la propriété `jcr:language` par `ar` (pour le dossier `ar`).
+   1. Modifiez la valeur de la propriété `jcr:language` en `ar` (pour le dossier `ar`).
    >[!NOTE]
    >
    >Si le paramètre régional est une combinaison de code langue-pays, tel que `ar-DZ`, modifiez le nom du dossier et la valeur de la propriété en `ar-DZ`.
 
-1. Copier `login.jsp`:
+1. Copier `login.jsp` :
 
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
 
-1. Modifiez le fragment de code suivant pour `/apps/livecycle/core/components/login/login.jsp` :
+1. Modifiez le fragment de code suivant pour `/apps/livecycle/core/components/login/login.jsp` :
 
 ***Le paramètre régional est un code de langue***
 
@@ -153,7 +153,7 @@ String browserLocale = "en";
     }
 ```
 
-À
+To
 
 ```jsp
 String browserLocale = "en";
@@ -197,7 +197,7 @@ String browserLocale = "en";
 
 ### Ajout de nouveau texte ou modification du texte existant {#adding-new-text-or-modifying-existing-text}
 
-1. Copiez le dossier `i18n` :
+1. Copiez le dossier `i18n`
 
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
@@ -207,7 +207,7 @@ String browserLocale = "en";
 1. Pour ajouter une nouvelle paire clé-valeur, effectuez les opérations suivantes : Vérifiez un exemple dans la capture d’écran qui suit.
 
    1. Créez un nœud de type `sling:MessageEntry` ou copiez un nœud existant et renommez-le, sous tous les dossiers de paramètres régionaux.
-   1. Copier `login.jsp` :
+   1. Copier `login.jsp` :
 
       * de `/libs/livecycle/core/components/login`
 
@@ -225,7 +225,7 @@ String browserLocale = "en";
                        <% if (loginFailed) {%>
    ```
 
-   À
+   To
 
    ```jsp
    div class="loginContent">
@@ -239,7 +239,7 @@ String browserLocale = "en";
 
 ### Ajout d’un nouveau style ou modification d’un style existant {#adding-new-style-or-modifying-existing-style}
 
-1. Copiez le noeud `login` :
+1. Copiez le nœud `login` :
 
    * de `/libs/livecycle/core/content`
    * vers `/apps/livecycle/core/content`
@@ -248,7 +248,7 @@ String browserLocale = "en";
 1. Modifiez les styles définis dans le fichier CSS.
 1. Pour ajouter de nouveaux styles :
 
-   1. Ajouter de nouveaux styles à `/apps/livecycle/core/content/login/login.css`
+   1. Ajoutez de nouveaux styles à `/apps/livecycle/core/content/login/login.css`
    1. Copier `login.jsp`
 
       * de `/libs/livecycle/core/components/login`
@@ -260,7 +260,7 @@ String browserLocale = "en";
 
 Par exemple :
 
-* Ajoutez ce qui suit à `/apps/livecycle/core/content/login/login.css`.
+* Ajoutez le code suivant à `/apps/livecycle/core/content/login/login.css`.
 
 ```
 css.newLoginContentArea {
@@ -276,7 +276,7 @@ css.newLoginContentArea {
    <div class="loginContentArea">
    ```
 
-   À
+   To
 
    ```jsp
    <div class="newLoginContentArea">
@@ -284,20 +284,20 @@ css.newLoginContentArea {
 
 >[!NOTE]
 >
->Si les images existantes dans `/apps/livecycle/core/content/login` (copiées à partir de `/libs/livecycle/core/content/login`) sont supprimées, supprimez les références correspondantes dans CSS.
+>Si les images contenues dans `/apps/livecycle/core/content/login` (copiées à partir de `/libs/livecycle/core/content/login`) sont supprimées, supprimez les références correspondantes dans CSS.
 
 ### Ajoutez de nouvelles images {#add-new-images}
 
-1. Suivez les étapes de la section Ajout d’un nouveau style ou modification d’un style existant (décrites ci-dessus).
+1. Suivez les étapes des sections Ajout d’un nouveau style ou Modification d’un style existant (présentées ci-dessus).
 1. Ajoutez de nouvelles images dans `/apps/livecycle/core/content/login`. Pour ajouter une image :
 
    1. Installez le client WebDAV.
-   1. Accédez au dossier `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, voir : [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Naviguez jusqu’au dossier `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, consultez le site [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/fr/crx/current/how_to/webdav_access.html).
 
    1. Ajoutez de nouvelles images.
 
 1. Ajoutez de nouveaux styles dans `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
-1. Utilisez les nouveaux styles dans `login.jsp` à l’adresse `/apps/livecycle/core/components`.
+1. Utilisez les nouveaux styles dans `login.jsp` dans `/apps/livecycle/core/components`.
 
 Par exemple :
 
@@ -319,7 +319,7 @@ Par exemple :
 <div class="loginContainerBkg">
 ```
 
-À
+To
 
 ```jsp
 <div class="newLginContainerBkg">
