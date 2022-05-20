@@ -1,19 +1,19 @@
 ---
 title: Fragments de formulaire adaptatif
-seo-title: Fragments de formulaire adaptatif
+seo-title: Adaptive form fragments
 description: Les formulaires adaptatifs fournissent un mécanisme permettant de créer un segment de formulaire, tel qu’un panneau ou un groupe de champs, utilisable dans tout formulaire adaptatif. Vous pouvez également enregistrer un panneau existant en tant que fragment.
-seo-description: Les formulaires adaptatifs fournissent un mécanisme permettant de créer un segment de formulaire, tel qu’un panneau ou un groupe de champs, utilisable dans tout formulaire adaptatif. Vous pouvez également enregistrer un panneau existant en tant que fragment.
+seo-description: Adaptive forms provides a mechanism to create a form segment, such as a panel or a group of fields, as use it in any adaptive form. You can also save an existing panel as fragment.
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '2095'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '2055'
+ht-degree: 100%
 
 ---
 
@@ -30,14 +30,14 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 ### Création d’un fragment à partir de zéro {#create-fragment-from-scratch}
 
 1. Connectez-vous à l’instance d’auteur d’AEM Forms à l’adresse https://[*nom_hôte*]:[*port*]/aem/forms.html.
-1. Cliquez sur **Créer > Fragment de formulaire adaptatif**.
+1. Cliquez sur **Créer > Fragment de formulaire adaptatif**.
 1. Indiquez le titre, le nom, la description, et les balises du fragment.
 
    >[!NOTE]
    >
    >Assurez-vous de spécifier un nom unique pour le fragment. S’il existe déjà un fragment portant le même nom, la création du fragment échoue.
 
-1. Cliquez pour ouvrir l’onglet **Modèle de formulaire**, puis dans le menu déroulant **Sélectionner dans**, sélectionnez l’un des modèles de fragment suivants :
+1. Cliquez pour ouvrir l’onglet **Modèle de formulaire**, puis dans le menu déroulant **Choisir parmi**, sélectionnez l’un des modèles de fragment suivants :
 
    * **Aucun** : indique de créer un fragment à partir de zéro, sans utiliser aucun modèle de formulaire.
    * **Modèle de formulaire** : indique de créer le fragment à l’aide d’un modèle XDP téléchargé dans AEM Forms. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
@@ -50,7 +50,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
    En outre, vous pouvez créer un fragment de formulaire adaptatif en utilisant les sous-formulaires qui ne sont pas marqués comme des fragments dans le modèle de formulaire en spécifiant l’expression SOM du sous-formulaire dans la liste déroulante.
 
-   * **Schéma XML** : indique de créer un fragment à partir d’un schéma XML téléchargé dans les formulaires AEM. Vous pouvez télécharger ou sélectionner l’un des schémas XML comme modèle de formulaire pour le fragment.
+   * **Schéma XML** : indique de créer un fragment à partir d’un schéma XML téléchargé dans l’AEM Forms. Vous pouvez charger ou sélectionner l’un des schémas XML comme modèle de formulaire pour le fragment.
 
    ![Création d’un fragment de formulaire adaptatif basé sur un schéma XML comme modèle](assets/xml-schema-model.png)
 
@@ -75,7 +75,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 
 1. Dans la boîte de dialogue de création de fragment, spécifiez les informations suivantes :
 
-   * **Nom** : nom du fragment. La valeur par défaut est le nom de l’élément du panneau. Ce champ est obligatoire.
+   * **Nom** : nom du fragment. La valeur par défaut est le nom de l’élément du panneau. Ce champ est obligatoire.
       >[!NOTE]
       >
       >Assurez-vous de spécifier un nom unique pour le fragment. S’il existe déjà un fragment portant le même nom, la création du fragment échoue.
@@ -88,7 +88,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 
    * **Tracé de destination** : chemin d’accès au référentiel où le fragment est enregistré. Si vous ne spécifiez pas de chemin, un nœud portant le même nom que celui du fragment est créé en regard du nœud contenant le formulaire adaptatif. Le fragment est enregistré dans ce nœud.
 
-   * **Modèle de formulaire** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **schéma XML**,**modèle de formulaire** ou **aucun**. Ce champ n’est pas modifiable.
+   * **Modèle de formulaire** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **schéma XML**,**modèle de formulaire** ou **aucun**. Ce champ n’est pas modifiable.
 
    * **Racine du modèle de fragment** : s’affiche uniquement dans les formulaires adaptatifs XSD. Il indique la racine pour le modèle du fragment. Vous pouvez choisir **/** ou le type complexe de schéma XSD dans la liste déroulante. Notez que vous pouvez réutiliser le fragment dans un autre formulaire adaptatif que si vous avez sélectionné le type complexe sous forme de fragment racine du modèle.
 Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence complète de schéma XSD depuis la racine est visible dans l’onglet de modèle de données de formulaire adaptatif. Pour une racine de modèle de fragment de type complexe, seuls les descendants du type complexe sélectionné sont visibles dans l’onglet du modèle de données de formulaire adaptatif. 
@@ -115,14 +115,14 @@ Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence c
 
 Tout fragment que vous insérez dans les formulaires adaptatifs s’affiche en image d’espace réservé. L’espace réservé affiche les titres jusqu’à un maximum de dix panneaux enfants dans le fragment. Vous pouvez configurer AEM Forms de sorte à afficher le fragment complet à la place de l’image d’espace réservé.
 
-Effectuez les étapes suivantes pour afficher les fragments complets dans les formulaires :
+Effectuez les étapes suivantes pour afficher les fragments complets dans les formulaires :
 
 1. Accédez à la page de configuration de la console web AEM à l’adresse https:[*hôte*]:[*port*]/system/console/configMgr.
 
 1. Recherchez et cliquez sur **[!UICONTROL Configuration du canal web du formulaire adaptatif et de la communication interactive]** pour l’ouvrir en mode d’édition.
 1. Décochez la case d’**[!UICONTROL activation de l’espace réservé à la place du fragment]** pour afficher les fragments complets à la place de l’image d’espace réservé.
 
-### Insertion d’un fragment dans un formulaire adaptatif  {#insert-a-fragment-in-an-adaptive-form}
+### Insertion d’un fragment dans un formulaire adaptatif {#insert-a-fragment-in-an-adaptive-form}
 
 Les fragments de formulaire adaptatif créés apparaissent dans l’onglet Fragments de formulaire adaptatif de l’outil de recherche de contenu AEM. Pour insérer un fragment dans un formulaire adaptatif :
 
@@ -139,7 +139,7 @@ Les fragments de formulaire adaptatif créés apparaissent dans l’onglet Fragm
 
 Le fragment de formulaire adaptatif est inséré par référence dans le formulaire adaptatif et synchronisé avec le fragment autonome du formulaire adaptatif. Cela signifie que, lorsque vous mettez à jour le fragment de formulaire adaptatif, les modifications sont répercutées dans tous les formulaires adaptatifs où le fragment est utilisé.
 
-### Inclusion d’un fragment dans un formulaire adaptatif  {#embed-a-fragment-in-adaptive-form}
+### Inclusion d’un fragment dans un formulaire adaptatif {#embed-a-fragment-in-adaptive-form}
 
 Vous pouvez choisir d’inclure un fragment de formulaire adaptatif en cliquant sur le bouton **Inclure le fragment : &lt;*fragmentName*>** dans la barre d’outils du panneau du fragment ajouté, comme illustré dans l’exemple ci-dessous.
 
@@ -220,7 +220,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
  </tbody>
 </table>
 
-## Localisation du formulaire adaptatif contenant des fragments  {#localizing-adaptive-form-containing-fragments}
+## Localisation du formulaire adaptatif contenant des fragments {#localizing-adaptive-form-containing-fragments}
 
 Pour localiser un formulaire adaptatif contenant des fragments de formulaire adaptatif, vous devez localiser le fragment et le formulaire séparément. Il s’agit de localiser un fragment une seule fois et de le réutiliser dans plusieurs formulaires adaptatifs.
 
