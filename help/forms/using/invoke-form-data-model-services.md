@@ -1,18 +1,18 @@
 ---
 title: API pour appeler le service de modèle de données de formulaire à partir de formulaires adaptatifs
-seo-title: API pour appeler le service de modèle de données de formulaire à partir de formulaires adaptatifs
+seo-title: API to invoke form data model service from adaptive forms
 description: Décrit l’API invokeWebServices que vous pouvez utiliser pour appeler les services Web écrits dans WSDL depuis un champ de formulaire adaptatif.
-seo-description: Décrit l’API invokeWebServices que vous pouvez utiliser pour appeler les services Web écrits dans WSDL depuis un champ de formulaire adaptatif.
+seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '482'
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ La structure de l’API spécifie les détails suivants concernant l’opératio
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>Spécifie le chemin du référentiel vers le modèle de données de formulaire, y compris son nom.</td>
+   <td>Indique le chemin d’accès au référentiel du modèle de données de formulaire, y compris son nom.</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
