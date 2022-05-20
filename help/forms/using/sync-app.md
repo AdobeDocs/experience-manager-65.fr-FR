@@ -1,8 +1,8 @@
 ---
 title: Synchronisation de l’application
-seo-title: Synchronisation de l’application
+seo-title: Synchronizing the app
 description: Synchronisation de l’application AEM Forms sur votre périphérique mobile avec le serveur AEM Forms.
-seo-description: Synchronisation de l’application AEM Forms sur votre périphérique mobile avec le serveur AEM Forms.
+seo-description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
 uuid: 3a6fb2d5-2ec4-4f78-a42a-fc921b66238e
 contentOwner: robhagat
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '369'
+ht-degree: 100%
 
 ---
 
