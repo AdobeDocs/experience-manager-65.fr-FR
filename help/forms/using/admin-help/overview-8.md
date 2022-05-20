@@ -1,8 +1,8 @@
 ---
 title: Présentation du service de sortie
-seo-title: Présentation du service de sortie
+seo-title: Overview of output service
 description: Output vous permet de fusionner des données de formulaire XML dans une conception de formulaire créée dans Designer pour produire un flux de sortie de documents dans différents formats.
-seo-description: Output vous permet de fusionner des données de formulaire XML dans une conception de formulaire créée dans Designer pour produire un flux de sortie de documents dans différents formats.
+seo-description: Output lets you merge XML form data with a form design created in Designer to create a document output stream in various formats.
 uuid: 7890b0a6-bae5-4ad5-ae41-503b988ba3da
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 exl-id: e99b72d0-fbd5-4150-a225-1a91ad4c5867
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '265'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Output vous permet de fusionner des données de formulaire XML dans une concepti
 
 Vous pouvez utiliser la page Output d’Administration Console pour administrer le service Output. Les paramètres que vous configurez sont utilisés lors de l’exécution, lorsque les paramètres équivalents n’ont pas été indiqués via l’API d’AEM Forms. Si la configuration a été effectuée via le SDK d’AEM Forms, les paramètres configurés avec Administration Console sont remplacés.
 
-Pour plus d’informations sur le service Output, voir le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_61).
+Pour plus d’informations sur le service Output, voir le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 Vous pouvez exécuter plusieurs tâches à partir des pages Output d’Administration Console :
 
