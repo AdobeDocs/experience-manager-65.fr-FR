@@ -1,8 +1,8 @@
 ---
 title: Intégration du composant Link dans une page
-seo-title: Intégration du composant Link dans une page
+seo-title: Embedding link component in a page
 description: Vous pouvez utiliser le composant Link pour lier un document adaptatif ou un formulaire adaptatif depuis la page que vous souhaitez.
-seo-description: Vous pouvez utiliser le composant Link pour lier un document adaptatif ou un formulaire adaptatif depuis la page que vous souhaitez.
+seo-description: You can use the link component to link an adaptive document or an adaptive form from any page.
 uuid: 22f488fc-bb1a-40aa-a5f4-6d04d7250f29
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '408'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Le composant Link permet aux créateurs de portails de formulaires de créer un 
 
 Suivez les étapes ci-après pour ajouter un composant Link à la page :
 
-1. Faites glisser le composant **Link** sur la page. Sélectionnez le composant et appuyez sur ![cmppr](assets/cmppr.png). La boîte de dialogue Modifier le composant de lien s’ouvre.
+1. Faites glisser le composant **Link** sur la page. Sélectionnez un composant et appuyez sur ![cmppr](assets/cmppr.png). La boîte de dialogue Modifier le composant de lien s’ouvre.
 
    ![edit-link-component](assets/edit-link-component.png)
 
@@ -44,7 +44,7 @@ Suivez les étapes ci-après pour ajouter un composant Link à la page :
    * **Chemin d’accès à l’actif** : chemin d’accès au référentiel de stockage de l’actif.
 
    * **Type de rendu** : le format de rendu : PDF, HTML ou Auto. Le type de rendu Auto détecte l’environnement de l’utilisateur et effectue le rendu du formulaire en conséquence, au format HTML ou PDF. Par exemple, si le formulaire est utilisé sur un périphérique mobile, le type de rendu Auto est effectué au format HTML.
-   * **URL d’envoi :**  URL du servlet vers lequel les données de formulaire sont envoyées.
+   * **URL d’envoi :** URL du serveur vers lequel sont envoyées les données du formulaire.
    * **Profil HTML** : profil de rendu du formulaire au format HTML.
    * **Profil PDF** : profil de rendu du formulaire au format PDF.
 
