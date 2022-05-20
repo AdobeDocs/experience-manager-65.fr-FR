@@ -1,8 +1,8 @@
 ---
 title: Création de composants de disposition personnalisés pour les formulaires adaptatifs
-seo-title: Création de composants de disposition personnalisés pour les formulaires adaptatifs
+seo-title: Creating custom layout components for adaptive forms
 description: Procédure pour créer des composants de disposition personnalisés pour les formulaires adaptatifs.
-seo-description: Procédure pour créer des composants de disposition personnalisés pour les formulaires adaptatifs.
+seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: f0bb5fcd-3938-4804-ad0c-d96d3083fd01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,15 +11,15 @@ discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
 exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 63%
+workflow-type: ht
+source-wordcount: '270'
+ht-degree: 100%
 
 ---
 
 # Création de composants de disposition personnalisés pour les formulaires adaptatifs{#creating-custom-layout-components-for-adaptive-forms}
 
-## Condition préalable {#prerequisite}
+## Prérequis {#prerequisite}
 
 Connaissance des dispositions qui vous permet de créer et utiliser une disposition personnalisée. Voir [Modification de la disposition du panneau](../../forms/using/layout-capabilities-adaptive-forms.md).
 
@@ -27,11 +27,11 @@ Connaissance des dispositions qui vous permet de créer et utiliser une disposit
 
 Le composant Disposition de panneau de formulaire adaptatif contrôle la disposition des composants d’un formulaire adaptatif dans un panneau par rapport à l’interface utilisateur.
 
-## Création d’une disposition de panneau personnalisée  {#creating-a-custom-panel-layout}
+## Création d’une disposition de panneau personnalisée {#creating-a-custom-panel-layout}
 
 1. Accédez à l’emplacement `/crx/de`.
-1. Copiez une mise en page de panneau de l’emplacement `/libs/fd/af/layouts/panel` (par exemple, `tabbedPanelLayout`) vers `/apps` (par exemple, `/apps/af-custom-layout`).
-1. Renommez la mise en page que vous avez copiée en `customPanelLayout`. Modifiez les propriétés des noeuds `qtip` et `jcr:description`. Par exemple, remplacez-les par `Custom layout - Toggle tabs`.
+1. Copiez une disposition de panneau de l’emplacement `/libs/fd/af/layouts/panel` (par exemple, `tabbedPanelLayout`) dans `/apps` (par exemple,`/apps/af-custom-layout`).
+1. Renommez la disposition que vous avez copiée en `customPanelLayout`. Modifiez les propriétés des nœuds `qtip` et `jcr:description`. Par exemple, remplacez-les par `Custom layout - Toggle tabs`.
 
 qtip
 
@@ -39,9 +39,9 @@ qtip
 
 >[!NOTE]
 >
->La définition de la propriété `guideComponentType`sur la valeur `fd/af/layouts/panel` détermine que la disposition est une disposition de panneau.
+>La définition de la propriété `guideComponentType` sur la valeur `fd/af/layouts/panel` indique que la disposition est une disposition de panneau.
 
-1. Renommez le fichier `tabbedPanelLayout.jsp` sous la nouvelle mise en page en customPanelLayout.jsp.
+1. Renommez le fichier `tabbedPanelLayout.jsp` sous la nouvelle disposition en customPanelLayout.jsp.
 1. Pour ajouter de nouveaux styles et un nouveau comportement, créez une bibliothèque cliente sous le nœud `etc`. Par exemple, créez à l’emplacement /etc/af-custom-layout-clientlib le nœud client-library. Attribuez au nœud la propriété de catégories af.panel.custom. Elle comporte les fichiers .css et .js suivants :
 
    ```css
@@ -114,9 +114,9 @@ qtip
    });
    ```
 
-1. Pour améliorer l’aspect et le comportement, vous pouvez inclure une balise `client library`.
+1. Pour améliorer l’apparence et le comportement, vous pouvez inclure un élément `client library`.
 
-   Par ailleurs, mettez à jour les chemins d’accès aux scripts inclus dans les fichiers .jsp. Par exemple, mettez à jour le fichier `customPanelLayout.jsp` comme suit :
+   Par ailleurs, mettez à jour les chemins d’accès aux scripts inclus dans les fichiers .jsp. Par exemple, mettez à jour le fichier `customPanelLayout.jsp` comme suit :
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -145,7 +145,7 @@ qtip
    </div>
    ```
 
-   Le fichier `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` :
+   Fichier `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` :
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -174,7 +174,7 @@ qtip
    </ul>
    ```
 
-   Mise à jour de `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp` :
+   Mise à jour `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp` :
 
    ```html
    <%-- jsp governing the panel content --%>
@@ -203,7 +203,7 @@ qtip
 
 1. Ouvrez un formulaire adaptative en mode création. La disposition de panneau que vous avez définie est ajoutée à la liste pour la configuration des dispositions de panneau.
 
-   ![La disposition Panneau personnalisé s’affiche dans la ](assets/auth-layt.png) ![capture d’écran de la disposition de panneau du formulaire adaptatif, à l’aide de la disposition de panneau personnalisée ](assets/s1.png) ![Capture d’écran présentant la fonctionnalité de basculement de la disposition personnalisée](assets/s2.png)
+   ![La disposition de panneau personnalisée s’affiche dans la liste de dispositions de panneau](assets/auth-layt.png) ![Capture d’écran d’un formulaire adaptatif avec disposition de panneau personnalisée](assets/s1.png) ![Capture d’écran montrant la fonctionnalité de basculement de la disposition personnalisée](assets/s2.png)
 
 Exemple de ZIP pour une disposition de panneau personnalisée et un formulaire adaptatif l’utilisant.
 
