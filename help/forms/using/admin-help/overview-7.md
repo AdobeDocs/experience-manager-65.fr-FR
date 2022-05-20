@@ -1,8 +1,8 @@
 ---
 title: Principes de base des formulaires de configuration
-seo-title: Principes de base des formulaires de configuration
+seo-title: Basics of configuring forms
 description: Découvrez les différents services de formulaires qui vous aideront à créer des applications interactives de capture de données.
-seo-description: Découvrez les différents services de formulaires qui vous aideront à créer des applications interactives de capture de données.
+seo-description: Learn about the various forms services that help you create interactive data capture applications.
 uuid: f495c170-2d17-45b0-b09d-22cce101131e
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e87c7379-28ed-4fda-aef1-970d2b54f30d
 exl-id: 169f3d94-ac00-41c7-853e-ecf0dbee559f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '201'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Le service Forms vous permet de créer des applications clientes interactives de
 * au format HTML dans une multitude d’environnements de navigation, notamment le rendu compatible XHTML 1.0 ;
 * sous forme de guides de formulaire dans une multitude d’environnements de navigation prenant en charge Adobe Flash Player.
 
-Pour plus d’informations sur le service Forms, voir le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+Pour plus d’informations sur le service Forms, voir le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 A la page Forms d’Administration Console, vous pouvez configurer le comportement du service Forms. Ces paramètres s’appliquent à tous les appels du service. Tous les paramètres envoyés à l’aide du SDK d’AEM forms remplacent les paramètres définis dans Administration Console ; toutefois, ils s’appliquent uniquement à cet appel.
 
