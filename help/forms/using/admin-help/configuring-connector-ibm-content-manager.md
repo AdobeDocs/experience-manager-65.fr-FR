@@ -1,8 +1,8 @@
 ---
 title: Configuration de Connector for IBM Content Manager
-seo-title: Configuration de Connector for IBM Content Manager
+seo-title: Configuring Connector for IBM Content Manager
 description: Configurez le connecteur pour IBM Content Manager pour permettre la communication entre AEM Forms et IBM Content Manager.
-seo-description: Configurez le connecteur pour IBM Content Manager pour permettre la communication entre AEM Forms et IBM Content Manager.
+seo-description: Configure the Connector for IBM Content Manager to enable communication between AEM forms and IBM Content Manager.
 uuid: 3d55169d-93e3-4d4e-b18b-2a3394e1de3b
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 exl-id: 50f0c963-8007-4e2a-aa73-d99b97d9a1aa
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '277'
+ht-degree: 100%
 
 ---
 
 # Configuration de Connector for IBM Content Manager{#configuring-connector-for-ibm-content-manager}
 
-Le connecteur pour IBM Content Manager permet la communication entre AEM forms et IBM Content Manager. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
+Le connecteur pour IBM Content Manager permet la communication entre AEM forms et IBM Content Manager. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Configuration de la connexion IBM Content Manager {#configure-the-ibm-content-manager-connection}
 
@@ -30,7 +30,7 @@ Le connecteur pour IBM Content Manager permet la communication entre AEM forms e
 1. (Facultatif) Dans le champ Chaîne de connexion de l’alias, saisissez des arguments de connexion supplémentaires. Ce champ n’est généralement pas complété. Pour plus d’informations, consultez votre documentation IBM.
 1. Cliquez sur Enregistrer.
 
-## Validation des paramètres d’un service  {#validation-of-service-settings}
+## Validation des paramètres d’un service {#validation-of-service-settings}
 
 Si vous saisissez un nom d’utilisateur ou un alias de banque de données incorrect, vous obtiendrez les résultats suivants selon que le service Content Repository Connector for IBM Content Manager est en cours d’exécution ou non :
 
