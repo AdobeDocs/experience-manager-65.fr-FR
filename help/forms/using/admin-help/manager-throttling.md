@@ -1,8 +1,8 @@
 ---
 title: Work Manager et le ralentissement
-seo-title: Work Manager et le ralentissement
+seo-title: Work Manager and throttling
 description: Ce document fournit des informations sur Work Manager, ainsi que des instructions sur la configuration des options de ralentissement de Work Manager.
-seo-description: Ce document fournit des informations sur Work Manager, ainsi que des instructions sur la configuration des options de ralentissement de Work Manager.
+seo-description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
 uuid: b90998bc-e3d4-493a-9371-55ccb44da20d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '1023'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Dans AEM Forms, les opérations effectuées par les services peuvent être de lo
 
 Les opérations de longue durée peuvent mobiliser plusieurs systèmes ou s’étendre au-delà de l’entreprise, notamment lorsqu’un client doit compléter et soumettre un formulaire de demande de prêt dans le cadre d’une solution regroupant de multiples tâches humaines et automatisées. Ces opérations doivent continuer tout en attendant une réponse. Les opérations de longue durée s’exécutent de manière asynchrone, tout en permettant d’allouer des ressources à une autre tâche entre-temps. Contrairement à une opération de courte durée, Work Manager ne considère pas une opération de longue durée comme terminée lorsqu’elle est appelée. Un déclencheur externe, comme un système demandant une autre opération au même service ou un utilisateur envoyant un formulaire, doit être activé pour achever l’opération.
 
-## A propos de Work Manager  {#about-work-manager}
+## A propos de Work Manager {#about-work-manager}
 
 AEM Forms (et les versions antérieures) utilisaient les files d’attente JMS pour exécuter des opérations de façon asynchrone. AEM Forms utilise Work Manager pour planifier et exécuter des opérations asynchrones via des threads gérés.
 
@@ -39,7 +39,7 @@ Les opérations asynchrones sont gérées comme suit :
 
 Les administrateurs AEM forms peuvent utiliser Health Monitor pour vérifier les statistiques Work Manager, telles que le nombre de travaux dans la file d’attente et leur statut. Vous pouvez également utiliser Health Monitor pour mettre en pause, reprendre, réessayer ou supprimer des tâches (voir [Affichage des statistiques relatives à Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)).
 
-## Configuration des options de ralentissement de Work Manager  {#configuring-work-manager-throttling-options}
+## Configuration des options de ralentissement de Work Manager {#configuring-work-manager-throttling-options}
 
 Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâches ne soient planifiées qu’une fois les ressources mémoire suffisantes. Pour configurer le ralentissement, définissez les options suivantes pour la JVM dans votre serveur d’applications.
 
@@ -53,7 +53,7 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
  <tbody>
   <tr>
    <td><code> adobe.work-manager.queue-refill-interval</code></td>
-   <td><p>Spécifie l’intervalle, en millisecondes, utilisé par Work Manager pour vérifier la présence de nouvelles tâches dans sa file d’attente.</p><p>La valeur de cette option est un entier. La valeur par défaut est <code>1000</code> millisecondes (1 seconde). </p><p>Si le volume d’appels asynchrones est faible, vous pouvez l’augmenter. Vous pouvez par exemple passer à une valeur comprise entre 2 000 et 5 000 (2 à 5 secondes). </p><p>Si le volume d’appels asynchrones est élevé, la valeur par défaut doit suffire, mais vous pouvez, si nécessaire, utiliser une valeur plus faible. Réduire cette valeur de façon trop importante (par exemple en dessous de 50, cette valeur entraînant 20 interrogations par seconde) provoque une surcharge substantielle au niveau du système.</p></td>
+   <td><p>Spécifie l’intervalle, en millisecondes, utilisé par Work Manager pour vérifier la présence de nouvelles tâches dans sa file d’attente.</p><p>La valeur de cette option est un entier. La valeur par défaut est de <code>1000</code> millisecondes (1 seconde). </p><p>Si le volume d’appels asynchrones est faible, vous pouvez l’augmenter. Vous pouvez par exemple passer à une valeur comprise entre 2 000 et 5 000 (2 à 5 secondes). </p><p>Si le volume d’appels asynchrones est élevé, la valeur par défaut doit suffire, mais vous pouvez, si nécessaire, utiliser une valeur plus faible. Réduire cette valeur de façon trop importante (par exemple en dessous de 50, cette valeur entraînant 20 interrogations par seconde) provoque une surcharge substantielle au niveau du système.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>
@@ -81,18 +81,18 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 **Ajout d’options Java à JBoss**
 
 1. Arrêtez le serveur d’applications JBoss.
-1. Ouvrez la *[racine du serveur d’applications]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez l’une des options Java requises, au format `-Dproperty=value`.
+1. Ouvrez *[appserver root]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) dans un éditeur et ajoutez toutes les options Java requises, au format `-Dproperty=value`.
 1. Redémarrez le serveur.
 
 **Ajout d’options Java à WebLogic**
 
-1. Ouvrez WebLogic Administration Console en saisissant `https://[host name]:[port]/console` dans un navigateur Web.
+1. Démarrez la console d’administration WebLogic en saisissant `https://[host name]:[port]/console` dans un navigateur web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
 1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. Par exemple, pour désactiver Health Monitor, ajoutez :
 
-   `-Dadobe.healthmonitor.enabled=false` désactive Health Monitor.
+   `-Dadobe.healthmonitor.enabled=false` permet de désactiver Health Monitor.
 
 1. Cliquez sur Enregistrer, puis sur Activer les changements.
 1. Redémarrez le serveur géré WebLogic.
