@@ -1,7 +1,7 @@
 ---
-title: API Java du service Assembler QuickStart (SOAP)
-seo-title: API Java du service Assembler QuickStart (SOAP)
-description: API Java du service Assembler QuickStart (SOAP)
+title: Démarrage rapide (SOAP) pour l’API Java Assembler Service
+seo-title: Assembler Service Java API QuickStart(SOAP)
+description: Démarrage rapide (SOAP) pour l’API Java Assembler Service
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -11,47 +11,47 @@ discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1001'
+ht-degree: 100%
 
 ---
 
-# API Java du service Assembler QuickStart (SOAP) {#assembler-service-java-api-quickstart-soap}
+# Démarrage rapide (SOAP) pour l’API Java Assembler Service {#assembler-service-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) est disponible pour le service Assembler
+Le démarrage rapide (SOAP) de l’API Java est disponible pour le service Assembler.
 
-[Démarrage rapide (mode SOAP) : Assemblage d’un document PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : assembler un document PDF à l’aide de l’API Java.](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Démontage d’un document PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : désassembler un document PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage d’un document PDF chiffré à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : assembler un document PDF chiffré à l’aide de l’API Java.](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage d’un document PDF avec numérotation bates à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[Démarrage rapide (mode SOAP) : assembler un document PDF avec numérotation Bates à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage d’un document PDF non interactif à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : assembler un document PDF non interactif à l’aide de l’API Java.](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Déterminer si un document est compatible avec le format PDF/A à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
+[Démarrage rapide (mode SOAP) : déterminer si un document est conforme au format PDF/A à l’aide de l’API Java.](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Validation des documents DDX à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
+[Démarrage rapide (mode SOAP) : valider des documents DDX à l’aide de l’API Java.](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage de documents PDF avec des signets à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
+[Démarrage rapide (mode SOAP) : assembler des documents PDF avec des signets à l’aide de l’API Java.](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création dynamique d’un document DX à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : création dynamique d’un document DDX à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage de Portfolios PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Didacticiel de mise en route (mode SOAP) : assemblage de portfolios PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage de plusieurs fragments XDP à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Démarrage rapide (mode SOAP) : assembler plusieurs fragments XDP à l’aide de l’API Java.](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les didacticiels de mise en route situés dans Programmation avec AEM Forms sont basés sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Les tutoriels de démarrage rapide situés dans Programmation avec AEM Forms sont basés sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Démarrage rapide (mode SOAP) : Assemblage d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : assembler un document PDF à l’aide de l’API Java. {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant fusionne deux documents source PDF nommés *map.pdf* et *directions.pdf* en un seul document PDF. Le nom du document PDF unique est *AssemblerResultPDF.pdf*. Le nom du document DDX est *shell.xml*. (Voir [Assemblage par programmation de documents PDF](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
+L’exemple de code Java suivant fusionne deux documents sources PDF nommés *map.pdf* et *directions.pdf* dans un document de PDF unique. Le nom du document PDF unique est *AssemblerResultPDF.pdf*. Le nom du document DDX est *shell.xml*. (Voir [Assembler par programmation des documents PDF](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 ```java
  /*
@@ -193,9 +193,9 @@ L’exemple de code Java suivant fusionne deux documents source PDF nommés *map
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Démontage d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : désassembler un document PDF à l’aide de l’API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant démonte un document PDF nommé *AssemblerResultPDF.pdf*. Notez que le nom du document DDX est *shell_disassemble.xml*. Chaque document PDF déassemblé est nommé `ResultPDF[Number].pdf`. En d’autres termes, le premier document PDF déassemblé est nommé *ResultPDF1.pdf.* Pour plus d’informations sur le document  *shell_désassemblage.* xmlDDX utilisé dans cet exemple de code, voir  [Désassemblage de documents PDF par programmation](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
+L’exemple de code Java suivant désassemble un document PDF nommé *AssemblerResultPDF.pdf*. Notez que le nom du document DDX est *shell_disassemble.xml*. Chaque document PDF désassemblé est nommé `ResultPDF[Number].pdf`. En d’autres termes, le premier document PDF désassemblé est nommé *ResultPDF1.pdf.* Pour plus d’informations à propos du document DDX *shell_disassemblage.xml* utilisé dans cet exemple de code, voir [Désassembler par programmation des documents PDF](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 ```java
  /*
@@ -332,9 +332,9 @@ L’exemple de code Java suivant démonte un document PDF nommé *AssemblerResul
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage d’un document PDF chiffré à l’aide de l’API Java {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : assembler un document PDF chiffré à l’aide de l’API Java. {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant assemble un document PDF chiffré par mot de passe. Le document PDF non sécurisé est nommé *Loan.pdf*. Notez que le nom du document DX est *shell_Encrypt.xml*. Le document PDF chiffré est nommé *AssemblerEncryptedPDF.pdf*. (Voir [Assemblage de documents PDF chiffrés](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents).)
+L’exemple de code Java suivant assemble un document de PDF chiffré par mot de passe. Le document PDF non sécurisé est nommé *Loan.pdf*. Notez que le nom du document DDX est *shell_Encrypt.xml*. Le document PDF chiffré est nommé *AssemblerEncryptedPDF.pdf*. (Voir [Assembler des documents PDF chiffrés](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents).)
 
 ```java
  /*
@@ -455,9 +455,9 @@ L’exemple de code Java suivant assemble un document PDF chiffré par mot de pa
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage d’un document PDF avec numérotation bates à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
+## Démarrage rapide (mode SOAP) : assembler un document PDF avec numérotation Bates à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
 
-L’exemple de code Java suivant assemble un document PDF avec des identifiants de page uniques (numérotation bates). Notez que le nom du document DX est *shell_Bates.xml*. Le document PDF renvoyé par le service Assembler est enregistré sous la forme d’un fichier PDF nommé *AssemblerResultBatesPDF.pdf*. (Voir [Assemblage de documents à l’aide de la numérotation Bates](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
+L’exemple de code Java suivant assemble un document PDF avec des identifiants de page uniques (numérotation Bates). Notez que le nom du document DDX est *shell_Bates.xml*. Le document PDF renvoyé par le service Assembler est enregistré sous la forme d’un fichier PDF nommé *AssemblerResultBatesPDF.pdf*. (Voir [Assembler des documents à l’aide de la numérotation Bates](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
 
 ```java
  /*
@@ -613,9 +613,9 @@ L’exemple de code Java suivant assemble un document PDF avec des identifiants 
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage d’un document PDF non interactif à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : assembler un document PDF non interactif à l’aide de l’API Java. {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant assemble un document PDF non interactif. Le document PDF interactif transmis au service Assembler est nommé *Loan.pdf*. Notez que le nom du document DX est *shell_XFA.xml*. Le document PDF non interactif est enregistré sous la forme d’un fichier PDF nommé *AssembleNonInteractivePDF.pdf*. (Voir [Assemblage de documents PDF non interactifs](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
+L’exemple de code Java suivant assemble un document PDF non interactif. Le document PDF interactif transmis au service Assembler est nommé *Loan.pdf*. Notez que le nom du document DDX est *shell_XFA.xml*. Le document PDF non interactif est enregistré en tant que fichier PDF nommé *AssembleNonInteractivePDF.pdf*. (Voir [Assembler des documents PDF non interactifs](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
 
 ```java
  /*
@@ -737,9 +737,9 @@ L’exemple de code Java suivant assemble un document PDF non interactif. Le doc
  
 ```
 
-## Démarrage rapide (mode SOAP) : Déterminer si un document est compatible avec le format PDF/A à l’aide de l’API Java {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
+## Démarrage rapide (mode SOAP) : déterminer si un document est conforme au format PDF/A à l’aide de l’API Java. {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-L’exemple de code Java suivant détermine si le document PDF d’entrée est compatible avec le format PDF/A. Le document PDF d’entrée transmis au service Assembler est nommé *Loan.pdf*. Le nom du document DDX est shell_PDFA.xml. Le document XML renvoyé par le service Assembler et spécifie si le document PDF d’entrée est conforme à la norme PDF/A est enregistré sous la forme d’un fichier XML nommé result.xml. Pour plus d’informations sur le document *shell_PDFA.xml* DDX utilisé dans cet exemple de code, voir [Détermination de la compatibilité des documents avec le format PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+L’exemple de code Java suivant détermine si le document PDF d’entrée est conforme au format PDF/A. Le document PDF d’entrée transmis au service Assembler est nommé *Loan.pdf*. Le nom du document DDX est shell_PDFA.xml. Le document XML renvoyé par le service Assembler et spécifiant si le document PDF d’entrée conforme au format PDF/A est enregistré sous la forme d’un fichier XML nommé result.xml. Pour plus d’informations à propos du document DDX *shell_PDFA.xml* utilisé dans cet exemple de code, voir [Déterminer si les documents sont conformes au format PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```java
  /*
@@ -883,9 +883,9 @@ L’exemple de code Java suivant détermine si le document PDF d’entrée est c
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Validation des documents DDX à l’aide de l’API Java {#quick-start-soap-mode-validating-ddx-documents-using-the-java-api}
+## Démarrage rapide (mode SOAP) : valider des documents DDX à l’aide de l’API Java. {#quick-start-soap-mode-validating-ddx-documents-using-the-java-api}
 
-L’exemple de code Java suivant valide un document DDX à partir d’un fichier nommé *bookmarkDDX.xml*. (Voir [Validation des documents DDX](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents).)
+L’exemple de code Java suivant valide un document DDX à partir d’un fichier nommé *bookmarkDDX.xml*. (Voir [Valider des documents DDX](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents).)
 
 ```java
  /*
@@ -1014,9 +1014,9 @@ L’exemple de code Java suivant valide un document DDX à partir d’un fichier
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage de documents PDF avec des signets à l’aide de l’API Java {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
+## Démarrage rapide (mode SOAP) : assembler des documents PDF avec des signets à l’aide de l’API Java. {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
 
-L’exemple de code Java suivant assemble un document PDF contenant des signets. Le nom du document DDX est *bookmarkDDX.xml*. Le nom du document XML du signet qui décrit les signets à ajouter au document PDF est bookmarks.xml. Le document PDF obtenu est enregistré sous la forme d’un fichier PDF nommé AssemblerResultBookmarks.pdf. (Voir [Assemblage de documents PDF avec des signets](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks).)
+L’exemple de code Java suivant assemble un document PDF contenant des signets. Le nom du document DDX est *bookmarkDDX.xml*. Le nom du document XML du signet qui décrit les signets à ajouter au document PDF est bookmarks.xml. Le document PDF de résultats est enregistré sous la forme d’un fichier PDF nommé AssemblerResultBookmarks.pdf. (Voir [Assembler des documents PDF avec des signets](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks).)
 
 ```java
  /*
@@ -1184,15 +1184,14 @@ L’exemple de code Java suivant assemble un document PDF contenant des signets.
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création dynamique d’un document DX à l’aide de l’API Java {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : création dynamique d’un document DDX à l’aide de l’API Java {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
 
-L’exemple de code Java suivant crée dynamiquement un document DDX qui déassemble un document PDF. Un nouveau document PDF est créé pour chaque signet de niveau 1 dans le document PDF d’entrée. Cet exemple de code contient deux méthodes définies par l’utilisateur :
+L’exemple de code Java suivant crée dynamiquement un document DDX qui désassemble un document PDF. Un nouveau document PDF est créé pour chaque signet de niveau 1 dans le document PDF d’entrée. Cet exemple de code contient deux méthodes définies par l’utilisateur :
 
-* `createDDX`: Crée un  `org.w3c.dom.Document` objet qui représente le document DDX envoyé au service Assembler. Cette méthode définie par l’utilisateur renvoie l’objet `org.w3c.dom.Document` .
-* `convertDDX`: Convertit un  `org.w3c.dom.Document` objet en  `com.adobe.idp.Document` objet. Cette méthode accepte un objet `org.w3c.dom.Document` comme paramètre d’entrée et renvoie un objet `com.adobe.idp.Document`.
+* `createDDX` : crée un objet `org.w3c.dom.Document` qui représente le document DDX envoyé au service Assembler. Cette méthode définie par l’utilisateur renvoie l’objet `org.w3c.dom.Document`.
+* `convertDDX` : convertit un objet `org.w3c.dom.Document` en objet `com.adobe.idp.Document`. Cette méthode accepte un objet `org.w3c.dom.Document` en tant que paramètre d’entrée et renvoie un objet `com.adobe.idp.Document`.
 
-   Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir [Création dynamique de documents DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
-&quot;
+   Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir [Créer dynamiquement des documents DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
 
 ```java
 /*
@@ -1381,9 +1380,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage de Portfolios PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## Didacticiel de mise en route (mode SOAP) : assemblage de portfolios PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-L’exemple de code Java suivant crée un portfolio PDF. Le portfolio PDF est enregistré sous la forme d’un fichier PDF nommé *AssemblerResultPortfolio.pdf*. (Voir [Assemblage de Portfolios PDF](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
+L’exemple de code Java suivant crée un portfolio PDF. Le portfolio PDF est enregistré sous la forme d’un fichier PDF nommé *AssemblerResultPortfolio.pdf*. (Voir [Assembler des portfolios PDF](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
 
 ```java
  /*
@@ -1532,9 +1531,9 @@ L’exemple de code Java suivant crée un portfolio PDF. Le portfolio PDF est en
  
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage de plusieurs fragments XDP à l’aide de l’API Java {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
+## Démarrage rapide (mode SOAP) : assembler plusieurs fragments XDP à l’aide de l’API Java. {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
 
-L’exemple de code Java suivant assemble des fragments XDP basés sur les fichiers XDP suivants : *tuc018_template_flowed.xdp*, *tuc018_contact.xdp* et* tuc018_patient.xdp*. Le document XDP assemblé qui contient tous les fragments est enregistré sous la forme d’un fichier XDP nommé *AssemblerResultXDP.xdp*. (Voir [Assemblage de plusieurs fragments XDP](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
+L’exemple de code Java suivant assemble des fragments XDP basés sur les fichiers XDP suivants : *tuc018_template_flowed.xdp*, *tuc018_contact.xdp* et *tuc018_patient.xdp*. Le document XDP assemblé qui contient tous les fragments est enregistré en tant que fichier XDP nommé *AssemblerResultXDP.xdp*. (Voir [Assembler plusieurs fragments XDP](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
 ```java
  /*
@@ -1685,13 +1684,13 @@ L’exemple de code Java suivant assemble des fragments XDP basés sur les fichi
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer un document PDF à l’aide de l’API Java. {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
-L’exemple de code suivant supprime un document PDF à l’aide de `PDFUtility`.
+L’exemple de code suivant rédige un document PDF à l’aide de `PDFUtility`.
 
 >[!NOTE]
 >
->`PDFUtility` peut uniquement modifier les fichiers PDF marqués pour modification à l’aide d’Acrobat.
+>`PDFUtility` ne peut supprimer que les PDF marqués pour rédaction à l’aide d’Acrobat.
 
 ```java
 /*
