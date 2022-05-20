@@ -1,8 +1,8 @@
 ---
-title: Importation et gestion des archives de
-seo-title: Importation et gestion des archives
+title: Importation et gestion des archives
+seo-title: Import and manage archives
 description: Découvrez comment importer et gérer des archives.
-seo-description: Découvrez comment importer et gérer des archives.
+seo-description: Learn how to import and manage archives.
 uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1465'
+workflow-type: ht
+source-wordcount: '1454'
 ht-degree: 100%
 
 ---
 
-# Importation et gestion des archives {#import-and-manage-archives}
+# Importation et gestion des archives de {#import-and-manage-archives}
 
 Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Archives.
 
@@ -55,7 +55,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
    * **Demander aux appelants de s’authentifier :** ce paramètre indique si le service peut être appelé sans informations d’identification.
 
-      Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et l’entité de sécurité utilisateur de cet appelant doit être autorisée à appeler le service; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer l’obligation d’authentification, cliquez sur Autoriser des appelants non authentifiés.
+      Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et l’entité de sécurité utilisateur de cet appelant doit être autorisée à appeler le service ; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer l’obligation d’authentification, cliquez sur Autoriser des appelants non authentifiés.
 
       Si le message *Les appelants ne sont pas tenus de s’authentifier* s’affiche, l’appelant du service peut être ou ne pas être authentifié. L’appel du service réussit toujours puisqu’aucune vérification des autorisations n’est effectuée. Pour exiger une authentification, cliquez sur Demander aux appelants de s’authentifier.
 
@@ -93,14 +93,14 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
 1. Cliquez sur Terminé pour achever la configuration.
 
-## Configuration des services AEM forms faisant partie d’un fichier d’archive  {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Configuration des services AEM forms faisant partie d’un fichier d’archive {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
 1. Dans la page Gestion des archives, sélectionnez le fichier d’archives à configurer.
 1. Dans la page Afficher l’archive, sélectionnez la ressource de l’archive mise en surbrillance.
 1. Configurez le fichier d’archives de processus importé.
 
-## Configuration des services AEM forms faisant partie d’un fichier d’archive à l’aide de l’assistant de configuration  {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Configuration des services AEM forms faisant partie d’un fichier d’archive à l’aide de l’assistant de configuration {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des applications, puis sur l’onglet Archives.
 1. Cliquez sur Configurer en regard du fichier d’archives à configurer.
@@ -122,7 +122,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
    * **Demander aux appelants de s’authentifier :** ce paramètre indique si le service peut être appelé sans informations d’identification.
 
-      Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et l’entité de sécurité utilisateur de cet appelant doit être autorisée à appeler le service; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer l’obligation d’authentification, cliquez sur Autoriser des appelants non authentifiés.
+      Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et l’entité de sécurité utilisateur de cet appelant doit être autorisée à appeler le service ; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer l’obligation d’authentification, cliquez sur Autoriser des appelants non authentifiés.
 
       Si le message *Les appelants ne sont pas tenus de s’authentifier* s’affiche, l’appelant du service peut être ou non authentifié. L’appel du service réussit toujours puisqu’aucune vérification des autorisations n’est effectuée. Pour exiger une authentification, cliquez sur Demander aux appelants de s’authentifier.
 
@@ -158,7 +158,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
       Cliquez sur Terminé pour ajouter l’entité de sécurité au profil de sécurité.
 
-## Suppression d’une archive  {#remove-an-archive}
+## Suppression d’une archive {#remove-an-archive}
 
 >[!NOTE]
 >
