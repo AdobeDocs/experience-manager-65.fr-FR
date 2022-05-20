@@ -1,18 +1,18 @@
 ---
 title: Styles intégrés des composants de formulaire adaptatif
-seo-title: Propriétés CSS intégrées pour les composants de formulaire adaptatif
+seo-title: Inline CSS properties for adaptive form components
 description: Si vous pouvez appliquer des styles personnalisés à un formulaire adaptatif, vous pouvez également appliquer des propriétés de style CSS intégré sur les différents composants d’un formulaire adaptatif.
-seo-description: Si vous pouvez appliquer des styles personnalisés à un formulaire adaptatif, vous pouvez également appliquer des propriétés de style CSS intégré sur les différents composants d’un formulaire adaptatif.
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: e863780e-2250-4bea-9569-22be5638d54e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '558'
+workflow-type: ht
+source-wordcount: '525'
 ht-degree: 100%
 
 ---
