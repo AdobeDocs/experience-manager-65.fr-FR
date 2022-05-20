@@ -1,23 +1,23 @@
 ---
-title: Amélioration des performances des formulaires volumineux avec le chargement différé
-seo-title: Amélioration des performances des formulaires volumineux avec le chargement différé
+title: 'Amélioration des performances des formulaires volumineux avec le chargement différé '
+seo-title: Improve performance of large forms with lazy loading
 description: Le chargement différé améliore considérablement les performances des formulaires adaptatifs volumineux et complexes en différant l’initialisation et le chargement des fragments des formulaires jusqu’à ce qu’ils soient visibles.
-seo-description: Le chargement différé améliore considérablement les performances des formulaires adaptatifs volumineux et complexes en différant l’initialisation et le chargement des fragments des formulaires jusqu’à ce qu’ils soient visibles.
+seo-description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.
 uuid: 6be3d2f0-1b2a-4090-af66-2b08487c31bc
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 90%
+workflow-type: ht
+source-wordcount: '1011'
+ht-degree: 100%
 
 ---
 
-# Amélioration des performances des formulaires volumineux avec le chargement différé{#improve-performance-of-large-forms-with-lazy-loading}
+# Amélioration des performances des formulaires volumineux avec le chargement différé {#improve-performance-of-large-forms-with-lazy-loading}
 
 ## Introduction au chargement différé {#introduction-to-lazy-loading}
 
@@ -29,8 +29,8 @@ Découvrons d’abord les exigences et les étapes préparatoires avant de confi
 
 Avant de configurer le chargement différé des fragments d’un formulaire adaptatif, il est essentiel de définir des stratégies afin de créer des fragments, d’identifier les valeurs utilisées dans les scripts ou référencées dans d’autres fragments, ou encore de définir des règles de contrôle de la visibilité des champs des fragments chargés.
 
-* **Identifier et créer des**
-fragments : vous pouvez configurer uniquement les fragments de formulaire adaptatif pour le chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et qui peut être réutilisé dans plusieurs formulaires. Ainsi, la première étape de création d’un chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant comme fragment.
+* **Identifier et créer des fragments**
+Vous pouvez configurer les fragments de formulaires adaptatifs uniquement pour le chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et peut être réutilisé dans des formulaires. Ainsi, la première étape de création d’un chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant comme fragment.
 
     Pour plus d’informations sur la création de fragments, voir [Fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md).
 
@@ -44,13 +44,13 @@ Les formulaires incluent certains champs et sections qui ne s’appliquent pas �
 
    Vous pouvez exploiter les règles de visibilité dans les fragments chargés de manière différée de sorte que les champs conditionnels soient affichés uniquement lorsqu’ils sont obligatoires. En outre, marquez le champ conditionnel comme étant global pour vous y référer dans l’expression de visibilité du fragment chargé en différé.
 
-## Configuration du chargement différé  {#configuring-lazy-loading}
+## Configuration du chargement différé {#configuring-lazy-loading}
 
 Suivez les étapes ci-après pour activer le chargement différé sur un fragment de formulaire adaptatif :
 
 1. Ouvrez le formulaire adaptatif en mode création contenant le fragment que vous souhaitez activer pour le chargement différé.
-1. Sélectionnez le fragment de formulaire adaptatif et appuyez sur ![cmppr](assets/cmppr.png).
-1. Dans la barre latérale, activez **[!UICONTROL Chargement différé d’un fragment]** et appuyez sur **Terminé**.
+1. Sélectionnez le fragment de formulaire adaptatif et cliquez sur ![cmppr](assets/cmppr.png).
+1. Dans la barre latérale, activez **[!UICONTROL Chargement tardif d’un fragment]** et appuyez sur **Terminé**.
 
    ![Activer le chargement différé du fragment de formulaire adaptatif](assets/lazy-loading-fragment.png)
 
@@ -66,12 +66,12 @@ Vous pouvez marquer les valeurs des objets du fragment chargé en différé comm
 
    Cette valeur est désormais marquée comme globale et sera disponible dans les scripts même lorsque le fragment contenant est déchargé.
 
-## Éléments à prendre en compte et bonnes pratiques pour la configuration du chargement différé  {#considerations-and-best-practices-for-configuring-lazy-loading}
+## Éléments à prendre en compte et bonnes pratiques pour la configuration du chargement différé {#considerations-and-best-practices-for-configuring-lazy-loading}
 
 Voici certaines restrictions, recommandations et aspects importants à garder à l’esprit lorsque vous travaillez avec le chargement différé :
 
 * Il est recommandé d’utiliser les formulaires adaptatifs basés sur un schéma XSD plutôt que les formulaires adaptatifs basés sur XFA pour configurer le chargement différé des formulaires volumineux. Le gain de performances en raison de l’implémentation du chargement différé dans les formulaires adaptatifs basés sur XFA est moins important que dans les formulaires adaptatifs XSD.
-* Ne configurez pas le chargement différé sur les fragments d’un formulaire adaptatif qui utilisent **[!UICONTROL Réactif -tout sur une page sans disposition]** de navigation pour le panneau racine. En raison de la configuration de mise en page réactive, tous les fragments se chargent simultanément dans un formulaire adaptatif. Vous risqueriez également de causer une baisse des performances.
+* Ne configurez pas le chargement différé sur les fragments d’un formulaire adaptatif qui utilise une disposition **[!UICONTROL réactive - tous sur une page sans navigation]** pour le panneau racine. En raison de la configuration de la disposition réactive, tous les fragments se chargent simultanément dans un formulaire adaptatif. Vous risqueriez également de causer une baisse des performances.
 * Il est recommandé de ne pas configurer le chargement différé sur le premier fragment d’un formulaire adaptatif.
 * Il est recommandé de ne pas configurer le chargement différé sur des fragments du premier panneau s’affichant au chargement du formulaire adaptatif.
 * Le chargement différé est pris en charge jusqu’à deux niveaux dans la hiérarchie de fragment.
@@ -79,7 +79,7 @@ Voici certaines restrictions, recommandations et aspects importants à garder à
 * Pensez à créer des règles de visibilité pour les fragments qui doivent s’afficher ou être masqués en fonction d’une condition. Par exemple, vous pouvez afficher ou masquer le fragment Conjoint(e) selon la valeur État civil spécifiée par l’utilisateur.
 * Les composants des pièces jointes et des conditions générales ne sont pas pris en charge dans les fragments chargés en différé.
 
-### Script des bonnes pratiques pour la configuration du chargement différé  {#scripting-best-practices-for-configuring-lazy-loading}
+### Script des bonnes pratiques pour la configuration du chargement différé {#scripting-best-practices-for-configuring-lazy-loading}
 
 Voici des aspects importants à garder à l’esprit lors du développement des scripts pour les panneaux de chargement différé :
 
