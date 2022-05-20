@@ -1,14 +1,14 @@
 ---
-title: Création d’un formulaire adaptatif
-description: 'Découvrez comment créer un formulaire adaptatif à l’aide de  [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire, un modèle de formulaire XFA et un schéma XML ou JSON. '
-feature: Formulaires adaptatifs
+title: Comment créer un formulaire adaptatif ?
+description: 'Découvrez comment créer un formulaire adaptatif à l’aide de  [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire et un schéma XML ou JSON. '
+feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: '1856'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 88%
 
 Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
-1. Accédez à [!DNL Experience Manager Forms] instance d’auteur à `https://'[server]:[port]'/<custom-context-if-any>.`
+1. Accédez à l’instance d’auteur [!DNL Experience Manager Forms] à `https://'[server]:[port]'/<custom-context-if-any>.`.
 
 1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager.
 
@@ -29,13 +29,13 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
    >Dans le cadre d’une installation par défaut, l’identifiant est `admin` et le mot de passe est `admin`.
 
 1. Appuyez sur **[!UICONTROL Créer]** et sélectionner **[!UICONTROL Formulaire adaptatif]**.
-1. Une option permettant de sélectionner un modèle s’affiche. Pour plus d’informations sur les modèles, voir [Modèles de formulaires adaptatifs](creating-adaptive-form.md#p-adaptive-form-templates-p). Appuyez sur un modèle pour le sélectionner, puis appuyez sur Suivant.
+1. Une option permettant de sélectionner un modèle s’affiche. Pour plus d’informations sur les modèles, voir [Modèles de formulaires adaptatifs](creating-adaptive-form.md#p-adaptive-form-templates-p). Appuyez sur un modèle pour le sélectionner, puis appuyez sur Suivant.
 1. Une option Ajouter des propriétés s’affiche. Spécifiez les valeurs des champs de propriété suivants. Les champs Titre et Nom sont obligatoires :
 
    * **[!UICONTROL Titre :]** spécifie le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur [!DNL Experience Manager Forms] d’AEM Forms.
    * **[!UICONTROL Nom :]** indique le nom du formulaire. Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
    * **[!UICONTROL Description :]** indique des informations détaillées relatives au formulaire.
-   * **[!UICONTROL Balises :]** indique les balises pour individualiser le formulaire adaptatif. Les balises aident à rechercher le formulaire. Pour créer des balises, saisissez les nouveaux noms de balise dans la boîte de dialogue **[!UICONTROL Balises.]**
+   * **[!UICONTROL Balises :]** indique les balises pour individualiser le formulaire adaptatif. Les balises aident à rechercher le formulaire. Pour créer des balises, saisissez les nouveaux noms de balise dans la boîte de dialogue **[!UICONTROL Balises.]**
 
 1. Vous pouvez créer un formulaire adaptatif basé sur l’un des modèles de formulaire suivants :
 
@@ -48,9 +48,9 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
 1. Appuyez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
 
-   Une fois que vous avez terminé de spécifier toutes les propriétés, cliquez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
+   Une fois que vous avez fini de spécifier toutes les propriétés, cliquez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
 
-   Une fois que vous avez terminé de spécifier toutes les propriétés, cliquez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
+   Une fois que vous avez fini de spécifier toutes les propriétés, cliquez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
 
 1. Appuyez sur **[!UICONTROL Ouvrir]** pour ouvrir le formulaire nouvellement créé dans un nouvel onglet. Le formulaire s’ouvre pour être modifié et affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé selon vos besoins.
 
@@ -64,7 +64,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
 ## Créer un formulaire adaptatif basé sur un modèle de données de formulaire {#fdm}
 
-[[!DNL Experience Manager Forms] L’intégration de données ](data-integration.md) vous permet d’intégrer plusieurs sources de données et de rassembler leurs entités et services pour créer un modèle de données de formulaire. Il s’agit d’une extension du schéma JSON. Vous pouvez utiliser un modèle de données du formulaire pour créer un formulaire adaptatif. Les entités ou les objets de modèle de données configurés dans un modèle de données de formulaire sont disponibles en tant qu’objets de modèle de données pour la création de formulaire. Ils sont associés à des sources de données respectives et utilisés pour pré-remplir un formulaire et écrire les données envoyées dans les sources de données respectives. Vous pouvez également appeler des services configurés dans un modèle de données de formulaire à l’aide de règles de formulaire adaptatif.
+[[!DNL Experience Manager Forms] L’intégration de données](data-integration.md) vous permet d’intégrer plusieurs sources de données et de rassembler leurs entités et services pour créer un modèle de données de formulaire. Il s’agit d’une extension du schéma JSON. Vous pouvez utiliser un modèle de données du formulaire pour créer un formulaire adaptatif. Les entités ou les objets de modèle de données configurés dans un modèle de données de formulaire sont disponibles en tant qu’objets de modèle de données pour la création de formulaire. Ils sont associés à des sources de données respectives et utilisés pour pré-remplir un formulaire et écrire les données envoyées dans les sources de données respectives. Vous pouvez également appeler des services configurés dans un modèle de données de formulaire à l’aide des règles de formulaire adaptatif.
 
 Pour utiliser un modèle de données de formulaire pour créer un formulaire adaptatif :
 
@@ -80,7 +80,7 @@ Pour utiliser un modèle de données de formulaire pour créer un formulaire ada
 
 >[!NOTE]
 >
->Vous pouvez également remplacer le modèle de données de formulaire par un formulaire adaptatif. Pour obtenir des instructions détaillées, voir [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](#edit-form-model).
+>Vous pouvez également remplacer le modèle de données de formulaire par un formulaire adaptatif. Pour obtenir des instructions détaillées, consultez la page [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](#edit-form-model).
 
 ## Création d’un formulaire adaptatif basé sur un modèle de formulaire XFA {#create-an-adaptive-form-based-on-an-xfa-form-template}
 
@@ -113,13 +113,13 @@ Consultez les documents suivants pour découvrir comment concevoir un schéma XM
 
 Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formulaire pour un formulaire adaptatif :
 
-1. À l’étape **[!UICONTROL Ajouter des propriétés]** de la page de création de formulaire adaptatif, appuyez sur l’onglet **[!UICONTROL Modèle de formulaire]**.
+1. À l’étape **[!UICONTROL Ajouter des propriétés]** de la page de création de formulaires adaptatifs, appuyez sur l’onglet **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet Modèle de formulaire, sélectionnez **[!UICONTROL Schéma]** dans le champ déroulant **[!UICONTROL Choisir parmi]**.
 
 1. Appuyez sur **[!UICONTROL Sélectionner le schéma]** et effectuez l’une des opérations suivantes :
 
    * **[!UICONTROL Télécharger à partir du disque]** : sélectionnez cette option et appuyez sur Charger une définition de schéma pour parcourir et charger un schéma XML ou un schéma JSON à partir de votre système de fichiers. Le fichier de schéma chargé se trouve avec le formulaire et n’est pas accessible aux autres formulaires adaptatifs.
-   * **[!UICONTROL Recherche dans le référentiel]** : sélectionnez cette option pour effectuer une sélection dans la liste fichiers de définition de schéma disponibles dans le référentiel. Sélectionnez le fichier de schéma XML ou JSON comme modèle de formulaire. Le schéma sélectionné est associé au formulaire par référence et peut être utilisé dans d’autres formulaires adaptatifs.
+   * **[!UICONTROL Recherche dans le référentiel]** : sélectionnez cette option pour effectuer une sélection dans la liste fichiers de définition de schéma disponibles dans le référentiel. Sélectionnez le fichier de schéma XML ou JSON comme modèle de formulaire. Le schéma sélectionné est associé au formulaire par référence et est accessible pour une utilisation dans d’autres formulaires adaptatifs.
 
    >[!CAUTION]
    >
@@ -135,7 +135,7 @@ Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formu
 
 >[!NOTE]
 >
->Vous pouvez également remplacer le schéma par un formulaire adaptatif. Pour obtenir des instructions détaillées, voir [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](#edit-form-model).
+>Vous pouvez également remplacer le schéma par un formulaire adaptatif. Pour obtenir des instructions détaillées, consultez la page [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](#edit-form-model).
 
 ## Modèles de formulaires adaptatifs {#adaptive-form-templates}
 
@@ -151,7 +151,7 @@ En outre, vous pouvez utiliser l’éditeur de modèle pour créer vos propres m
 
 Les formulaires adaptatifs sont créés sans modèle de formulaire (en utilisant l’option Aucun pour le modèle de formulaire) ou en utilisant un modèle de formulaire tel qu’un schéma XML ou JSON ou un modèle de données de formulaire. Vous pouvez remplacer le modèle de formulaire par un formulaire adaptatif en remplaçant Aucun par un autre modèle de formulaire. Pour un formulaire adaptatif basé sur un modèle de formulaire, vous pouvez choisir un autre modèle de formulaire, un schéma XML, un schéma JSON ou un modèle de données de formulaire pour le même modèle de formulaire. Cependant, vous ne pouvez pas passer d’un modèle de formulaire à un autre.
 
-1. Sélectionnez le formulaire adaptatif et appuyez sur l’icône **Propriétés**.
+1. Sélectionnez le document adaptatif et appuyez sur l’icône **Propriétés**.
 1. Ouvrez l’onglet **[!UICONTROL Modèle de formulaire]** et effectuez l’une des actions suivantes.
 
    * Si le formulaire adaptatif ne dispose pas de modèle de formulaire, vous pouvez choisir un autre modèle de formulaire et, en conséquence, sélectionner un modèle de formulaire, un schéma XML ou JSON ou un modèle de données de formulaire.
@@ -172,7 +172,7 @@ Par défaut, le contenu d’un formulaire adaptatif est enregistré sur une acti
 
 Par défaut, l’option d’enregistrement automatique n’est pas activée. Vous pouvez activer l’option d’enregistrement automatique depuis l’onglet automatique Enregistrement automatique d’un formulaire adaptatif. L’onglet Enregistrement automatique d’Adobe fournit également plusieurs autres options de configuration. Effectuez les étapes suivantes afin d’activer et de configurer l’option d’enregistrement automatique pour un formulaire adaptatif :
 
-1. Pour accéder à la section d’enregistrement automatique dans les propriétés, sélectionnez un composant, puis appuyez sur ![field-level](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, puis sur ![cmppr](assets/cmppr.png).
+1. Pour accéder à la section d’enregistrement automatique dans les propriétés, sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) > **[!UICONTROL Conteneur de formulaires adaptatifs]**, puis cliquez sur ![cmppr](assets/cmppr.png).
 1. Dans la section **[!UICONTROL Sauvegarde automatique]**, **[!UICONTROL activez]** l’option d’enregistrement automatique.
 1. Dans la boîte de dialogue **[!UICONTROL Evénement de formulaire adaptatif]**, spécifiez 1 ou TRUE pour lancer automatiquement l’enregistrement du formulaire lorsque celui-ci est chargé dans le navigateur. Vous pouvez également spécifier une expression conditionnelle pour un événement qui, lorsqu’il est déclenché et renvoie true, commence l’enregistrement du contenu du formulaire.
 1. Spécifiez le déclencheur. L’enregistrement automatique est déclenché en fonction de votre configuration. Vous avez le choix entre :
@@ -201,4 +201,4 @@ Par défaut, l’option d’enregistrement automatique n’est pas activée. Vou
    >
    >Pour que l’option d’enregistrement automatique fonctionne pour les utilisateurs anonymes, assurez-vous de configurer le service de configuration commun aux formulaires pour autoriser tous les utilisateurs à prévisualiser, vérifier et signer des formulaires.
    >
-   >Pour configurer le service, accédez à la configuration de la console web Adobe Experience Manager à l’adresse `https://'[server]:[port]'system/console/configMgr` et modifiez le **[!UICONTROL service de configuration commun à Forms]** pour sélectionner l’option **[!UICONTROL Tous les utilisateurs]** dans le champ **[!UICONTROL Autoriser]**, puis enregistrez la configuration.
+   >Pour configurer le service, accédez à la configuration de la console web d’Adobe Experience Manager à l’adresse `https://'[server]:[port]'system/console/configMgr`, modifiez le **[!UICONTROL service de configuration commun aux formulaires]**, sélectionnez l’option **[!UICONTROL Tous les utilisateurs]** dans le champ **[!UICONTROL Autoriser]** et enregistrez la configuration.
