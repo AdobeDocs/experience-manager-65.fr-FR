@@ -1,8 +1,8 @@
 ---
 title: Connexion d’AEM Forms à Adobe LiveCycle
-seo-title: Connexion d’AEM Forms à Adobe LiveCycle
+seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: AEM LiveCycle Connector vous permet de démarrer LiveCycle ES4 Document Services à partir des applications et des processus AEM.
-seo-description: AEM LiveCycle Connector vous permet de démarrer LiveCycle ES4 Document Services à partir des applications et des processus AEM.
+seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '1006'
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM LiveCycle Connector fait partie du [package de module complémentaire AEM Fo
 
 Bien que les propriétés soient explicites, les plus importantes sont les suivantes :
 
-* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que le LiveCycle et l’AEM communiquent via https, commencez AEM avec la JVM suivante.
+* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que LiveCycle et AEM communiquent via https, démarrez AEM avec la JVM suivante.
 
    ```java
    argument
@@ -52,10 +52,10 @@ Les applications clientes peuvent démarrer des services LiveCycle par programma
 1. Chaque service fournit une classe de client. Pour démarrer un service, créez-en une instance de client.
 1. Démarrez le service et traitez le résultat.
 
-AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client comme des services OSGi accessibles par des méthodes OSGi standard. Le connecteur de LiveCycle fournit les fonctionnalités suivantes :
+AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client comme des services OSGi accessibles par des méthodes OSGi standard. Le connecteur LiveCycle offre les fonctionnalités suivantes :
 
-* Instances de client en tant que service OSGi : Les clients conditionnés en tant que bundles OSGI sont répertoriés dans la section [Liste de Document Services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) . Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
-* Propagation des informations d’identification : les détails de connexion requis pour la connexion au serveur LiveCycle sont gérés de manière centralisée.
+* Instances de client en tant que service OSGi : les clients conditionnés en tant que lots OSGI sont répertoriés dans la section [Liste des Services de document](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
+* Propagation des informations d’identification : les détails de connexion requis pour la connexion au serveur LiveCycle sont gérés de manière centralisée.
 * Service ServiceClientFactory : pour démarrer les processus, l’application cliente peut accéder à l’instance ServiceClientFactory.
 
 ### Démarrage via les références des services depuis le registre des services OSGi {#starting-via-service-references-from-osgi-service-registry}
@@ -82,7 +82,7 @@ Pour démarrer un service exposé à partir d’AEM, procédez comme suit :
    </dependency>
    ```
 
-   Pour démarrer un service, ajoutez la dépendance Maven correspondante. Pour consulter la liste des dépendances, reportez-vous à la section [Liste de Document Services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Par exemple, pour le service Generate PDF, ajoutez la dépendance suivante :
+   Pour démarrer un service, ajoutez la dépendance Maven correspondante. Pour consulter la liste des dépendances, reportez-vous à la section [Liste de Document Services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Pour le service Generate PDF, par exemple, ajoutez la dépendance suivante :
 
    ```xml
    <dependency>
@@ -116,7 +116,7 @@ Pour démarrer un service exposé à partir d’AEM, procédez comme suit :
                );
    ```
 
-   Le fragment de code ci-dessus démarre l’API createPDF de GeneratePdfServiceClient pour convertir un document au format PDF. Vous pouvez effectuer le même appel dans un JSP en utilisant le code suivant. La principale différence est que le code suivant utilise Sling ScriptHelper pour accéder à GeneratePdfServiceClient.
+   Le fragment de code ci-dessus démarre l’API createPDF de GeneratePdfServiceClient pour convertir un document au format PDF. Vous pouvez effectuer le même appel dans un JSP en utilisant le code suivant. La principale différence tient au fait que le code suivant utilise Sling ScriptHelper pour accéder à GeneratePdfServiceClient.
 
    ```jsp
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
@@ -156,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 La plupart des Services de document de LiveCycle nécessitent une authentification. Vous pouvez utiliser l’une des options suivantes pour démarrer ces services sans fournir d’informations d’identification explicites dans le code :
 
-### Configuration de la Liste autorisée {#allowlist-configuration}
+### Configuration de la liste autorisée {#allowlist-configuration}
 
 La configuration du SDK client LiveCycle contient un paramètre sur les noms de service. Il s’agit d’une liste de services pour lesquels la logique d’appel utilise des informations d’identification prêtes à l’emploi. Si vous ajoutez, par exemple, des services DirectoryManager (qui font partie de l’API de gestion d’utilisateur) à cette liste, tout code client peut utiliser directement le service et la couche d’appel transmet automatiquement les informations d’identification configurées dans le cadre de la demande envoyée au serveur LiveCycle.
 
