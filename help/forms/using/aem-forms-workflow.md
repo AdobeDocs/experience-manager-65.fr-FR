@@ -1,5 +1,5 @@
 ---
-title: Workflow basé sur l’utilisation de Forms sur OSGi
+title: Processus basé sur l’utilisation de Forms sur OSGi
 seo-title: Rapidly build adaptive forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Utiliser un processus AEM Forms pour automatiser et créer rapidement des révisions et des approbations pour les services de document de début
 seo-description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
@@ -12,11 +12,11 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
 workflow-type: tm+mt
 source-wordcount: '3681'
-ht-degree: 81%
+ht-degree: 83%
 
 ---
 
-# Workflow basé sur l’utilisation de Forms sur OSGi{#forms-centric-workflow-on-osgi}
+# Processus basé sur l’utilisation de Forms sur OSGi{#forms-centric-workflow-on-osgi}
 
 ![](do-not-localize/header.png)
 
@@ -24,13 +24,13 @@ Les entreprises collectent les données à partir de centaines, voire de millier
 
 Avec les processus de révision et d’approbation pour les publics internes et externes, les grandes entreprises sont soumises à des tâches répétitives : par exemple, la conversion d’un document PDF dans un autre format. Ces tâches prennent beaucoup de temps et mobilisent un grand nombre de ressources lorsqu’elles sont effectuées manuellement. Les entreprises ont également des obligations légales consistant à signer numériquement un document et à archiver des données de formulaire pour une utilisation ultérieure dans des formats prédéfinis..
 
-## Présentation du workflow basé sur l’utilisation de Forms sur OSGi {#introduction-to-forms-centric-workflow-on-osgi}
+## Présentation du processus basé sur l’utilisation de Forms sur OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
 Vous pouvez utiliser des processus AEM pour créer rapidement des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, le démarrage de Documents Services, l’intégration du processus de signature Adobe Sign et des opérations similaires : par exemple, le traitement de l’application de cartes de crédit, les processus d’approbation de congés des employés et l’enregistrement d’un formulaire en tant que document PDF. De plus, ces processus peuvent être utilisés dans une entreprise ou sur le pare-feu réseau.
 
 Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Le développement et la gestion des processus utilisent les fonctionnalités de boîte de messagerie AEM et AEM Workflow habituelles. Les processus forment la base de l’automatisation des processus réels d’entreprise, qui s’étendent sur plusieurs systèmes logiciels, réseaux, services et même organisations.
 
-Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. Voir [comparaison](capabilities-osgi-jee-workflows.md) des processus Forms AEM sur OSGi et Process Management sur JEE. De plus, pour la topologie de déploiement, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. Référez-vous à la [comparaison](capabilities-osgi-jee-workflows.md) des workflows centrés sur les formulaires AEM sur OSGi et de la gestion des processus sur JEE. De plus, pour la topologie de déploiement, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de messagerie AEM](/help/sites-authoring/inbox.md) et fournit des composants supplémentaires (étapes) pour que l’éditeur du processus AEM ajoute la prise en charge des processus AEM basés sur l’utilisation d’AEM Forms. La boîte de messagerie AEM étendue dispose de fonctionnalités similaires à celles de l’[espace de travail AEM Forms](introduction-html-workspace.md). Avec la gestion des processus basés sur les utilisateurs (approbation, révision, etc.), vous pouvez utiliser des processus AEM pour automatiser les opérations liées à [Document Services](/help/sites-developing/workflows-step-ref.md) (par exemple, la génération de PDF) et à la signature de documents (Adobe Sign) par voie électronique.
 
@@ -45,9 +45,9 @@ Le diagramme suivant illustre le processus complet de création, d’exécution 
 * Un processus est une représentation d’un processus réel d’entreprise. Conservez votre processus réel d’entreprise et répertoriez les participants du processus d’entreprise qui sont prêts. Par ailleurs, préparez les éléments associés (formulaires adaptatifs, documents PDF, etc.) avant de créer un processus.
 * Un processus peut se composer de plusieurs étapes. Ces étapes sont répertoriées dans la boîte de réception AEM et facilitent la progression de rapport du processus. Divisez votre processus d’entreprise en étapes logiques.
 * Vous pouvez configurer l’étape de tâche affectée des processus AEM pour envoyer des notifications électroniques aux utilisateurs ou aux personnes désignées. Ainsi, [autorisez les notifications électroniques](#configure-email-service).
-* Un processus peut également utiliser Adobe Sign pour les signatures numériques. Si vous envisagez d’utiliser Adobe Sign dans un processus, [ configure Adobe Sign pour AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) avant de l’utiliser dans un processus.
+* Un processus peut également utiliser Adobe Sign pour les signatures numériques. Si vous envisagez d’utiliser Adobe Sign dans un processus, [configure Adobe Sign pour AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) avant de l’utiliser dans un processus.
 
-## Créer un modèle de workflow {#create-a-workflow-model}
+## Créer un modèle de processus {#create-a-workflow-model}
 
 Un modèle de processus se compose de la logique et du flux d’un processus d’entreprise. Il se compose d’une série d’étapes. Ces étapes sont des composants d’AEM. Vous pouvez étendre les étapes de workflow avec des paramètres et des scripts pour proposer davantage de fonctionnalités et de contrôle, selon les besoins. AEM Forms fournit quelques étapes supplémentaires par rapport aux étapes AEM prêtes à l’emploi. Pour obtenir la liste détaillée des étapes AEM et AEM Forms, consultez [Référence sur les étapes de processus AEM](/help/sites-developing/workflows-step-ref.md) et [Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi](../../forms/using/aem-forms-workflow.md).
 
@@ -115,7 +115,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    ![OU Exemple de fractionnement](assets/orsplit_branch2_active_new.png)
 
-   Pour plus d&#39;informations sur la création d&#39;expressions de routage à l&#39;aide de variables, consultez [Variables dans les processus AEM Forms](../../forms/using/variable-in-aem-workflows.md).
+   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, consultez [Variables dans les processus AEM Forms](../../forms/using/variable-in-aem-workflows.md).
 
 1. Ajoutez d’autres étapes de processus pour créer une logique d’entreprise.
 
@@ -127,7 +127,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
-## Création dʼune demande de workflow basée sur l’utilisation de Forms {#create-a-forms-centric-workflow-application}
+## Créer une demande de processus basée sur l’utilisation de Forms {#create-a-forms-centric-workflow-application}
 
 La demande est le formulaire adaptatif associé au processus. Lorsqu’une demande est envoyée via la boîte de réception, elle lance le processus associé. Pour rendre un processus Forms disponible en tant que demande dans la boîte de réception AEM et l’application AEM Forms, procédez comme suit pour créer une demande de processus :
 
@@ -182,7 +182,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
   </tr>
   <tr>
    <td>Chemin d’accès du document d’enregistrement</td>
-   <td>Spécifiez le chemin d’accès du fichier Document d’enregistrement dans le référentiel crx. Le chemin est relatif à l’emplacement de la charge utile du formulaire adaptatif. Intégrez toujours le nom complet du fichier, y compris son extension, le cas échéant. Par exemple, [charge utile] /DOR/creditcard.pdf.</td>
+   <td>Spécifiez le chemin d’accès du fichier Document d’enregistrement dans le référentiel crx. Le chemin est relatif à l’emplacement de la charge utile du formulaire adaptatif. Intégrez toujours le nom complet du fichier, y compris son extension, le cas échéant. Par exemple, [charge utile]/DOR/creditcard.pdf.</td>
   </tr>
  </tbody>
 </table>
@@ -205,7 +205,7 @@ La demande de processus que vous avez créée est disponible en tant qu’applic
 
 ### Envoyant une demande depuis l’application AEM Forms {#afa}
 
-L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les demandes de processus et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, voir [application AEM Forms](/help/forms/using/aem-forms-app.md) et les articles connexes.
+L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les demandes de processus et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, consultez [Application AEM Forms](/help/forms/using/aem-forms-app.md) et les articles connexes.
 
 ### Envoi d’un formulaire adaptatif {#af}
 
@@ -217,7 +217,7 @@ Vous pouvez configurer la synchronisation, l’envoi et le déclenchement d’un
 
 Un administrateur (un membre du groupe administrateur-fd) peut configurer un dossier réseau pour exécuter un processus préconfiguré lorsqu’un utilisateur y place un fichier (tel qu’un fichier PDF). Une fois que le processus est terminé, vous pouvez enregistrer le fichier de sortie dans un dossier de sortie spécifié. Un tel fichier est appelé [Dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md). Effectuez la procédure suivante pour configurer un dossier de contrôle afin de lancer un processus :
 
-1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configuration du dossier de contrôle]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
+1. Sur votre instance d’auteur AEM, accédez à ![Outils-1](assets/tools-1.png) > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
 1. Appuyez sur **[!UICONTROL Nouveau]**. Une liste des champs s’affiche. Spécifiez une valeur pour les champs suivants afin de configurer un dossier de contrôle pour un processus :
 
 <table>
@@ -236,7 +236,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
   </tr>
   <tr>
    <td><span class="uicontrol">Traiter les fichiers avec</code></td>
-   <td>Sélectionnez la <span class="uicontrol">Workflow </code>. </code></td>
+   <td>Sélectionnez l’option <span class="uicontrol">Workflow</code>.  </code></td>
   </tr>
   <tr>
    <td><span class="uicontrol">Modèle de processus</code></td>
@@ -249,7 +249,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
  </tbody>
 </table>
 
-1. Appuyez sur **Avancé**. Spécifiez une valeur pour le champ et les appuis suivants : **Créer**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
+1. Appuyez sur **Avancé**. Spécifiez une valeur pour le champ suivant puis cliquez sur **Créer**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
 
    | Champ | Description |
    |---|---|
@@ -257,9 +257,9 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
 
    L’onglet Avancé contient davantage de champs. La plupart de ces champs contiennent une valeur par défaut. Pour en savoir plus sur tous les champs, voir l’article [Création ou configuration d’un dossier de contrôle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
 
-### Envoyer une communication interactive ou une lettre {#letter}
+### Envoi d’une communication interactive ou d’une lettre {#letter}
 
-Vous pouvez associer et exécuter un processus Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans Correspondence Management, les workflows sont utilisés pour le post-traitement des communications interactives et des lettres. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](../../forms/using/submit-letter-topostprocess.md).
+Vous pouvez associer et exécuter un workflow basé sur l’utilisation de Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans le système de gestion de contenu, les workflows sont utilisés pour le post-traitement de communications interactives et de lettres. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](../../forms/using/submit-letter-topostprocess.md).
 
 ## Autres configurations {#additional-configurations}
 
