@@ -1,8 +1,8 @@
 ---
-title: API Java Output Service Quick Start (SOAP)
-seo-title: API Java Output Service Quick Start (SOAP)
-description: Utilisez le service Output API Java Quick Start (SOAP) pour créer un document PDF, créer un document PDF basé sur un fichier XDP d’application, créer un document PDF/A, transmettre des documents au service Output, transmettre un document situé dans le référentiel AEM Forms au service Output, créer un document PDF basé sur des fragments, imprimer un fichier, envoyer un flux d’impression à une imprimante réseau, créer plusieurs fichiers PDF, créer des règles de recherche, transformer un document PDF.
-seo-description: Utilisez le service Output API Java Quick Start (SOAP) pour créer un document PDF, créer un document PDF basé sur un fichier XDP d’application, créer un document PDF/A, transmettre des documents au service Output, transmettre un document situé dans le référentiel AEM Forms au service Output, créer un document PDF basé sur des fragments, imprimer un fichier, envoyer un flux d’impression à une imprimante réseau, créer plusieurs fichiers PDF, créer des règles de recherche, transformer un document PDF.
+title: Didacticiel de mise en route de lʼAPI Java du service Output (SOAP)
+seo-title: Output Service Java API Quick Start(SOAP)
+description: 'Le didacticiel de mise en route de lʼAPI Java du service Output (SOAP) vous permet dʼeffectuer les actions suivantes : création dʼun document PDF, dʼun document PDF basé sur un fichier XDP d’application ou dʼun document PDF/A, transmission de documents au service Output ou de documents situés dans le référentiel AEM Forms au service Output, création dʼun document PDF reposant sur des fragments, impression vers un fichier, envoi dʼun flux d’impression vers une imprimante réseau, création de plusieurs fichiers PDF, création de règles de recherche et transformation dʼun document PDF.'
+seo-description: Use the Output service Java API Quick Start (SOAP) to create a PDF document, create a PDF document based on application XDP file, create a PDF/A document, pass documents to the Output service, pass a document located in the AEM Forms repository to the Output service, create a PDF document based on fragments, printing to a file, sending a print stream to a network printer, create multiple PDF files, create search rules, transform a PDF document.
 uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
@@ -12,47 +12,47 @@ discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 role: Developer
 exl-id: dc99dd4d-fce9-4ec5-9b51-661d37a21559
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1321'
+ht-degree: 100%
 
 ---
 
-# Démarrage rapide de l’API Java Output Service (SOAP) {#output-service-java-api-quick-start-soap}
+# Didacticiel de mise en route de lʼAPI Java du service Output (SOAP) {#output-service-java-api-quick-start-soap}
 
-Java API Quick Start (SOAP) est disponible pour le service Output.
+Le didacticiel de mise en route de lʼAPI Java (SOAP) est disponible pour le service Output.
 
-[Démarrage rapide (mode SOAP) : Création d’un document PDF à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[Didacticiel de mise en route (mode SOAP) : créer un document PDF à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création d’un document PDF basé sur un fichier XDP d’application à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
+[Didacticiel de mise en route (mode SOAP) : créer un document PDF basé sur un fichier XDP d’application à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création d’un document PDF/A à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : créer un document PDF/A à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Transmission de documents à Output Service à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[Démarrage rapide (mode SOAP) : transmission de documents vers le service Output à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Transmission d’un document situé dans le référentiel AEM Forms au service Output à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Didacticiel de mise en route (mode SOAP) : transmettre un document situé dans le référentiel AEM Forms au service Output à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création d’un document PDF à partir de fragments à l’aide de l’API Java](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[Démarrage rapide (mode SOAP) : créer un document PDF basé sur des fragments à l’aide de l’API Java](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Impression dans un fichier à l’aide de l’API Java](#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[Démarrage rapide (mode SOAP) : imprimer dans un fichier à l’aide de l’API Java](#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Envoi d’un flux d’impression à une imprimante réseau à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api)
+[Démarrage rapide (mode SOAP) : envoi d’un flux d’impression à une imprimante réseau à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création de plusieurs fichiers PDF à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
+[Démarrage rapide (mode SOAP) : création de plusieurs fichiers PDF à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création de règles de recherche à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[Démarrage rapide (mode SOAP) : création de règles de recherche à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Transformation d’un document PDF à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : transformation d’un document de PDF à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les didacticiels de mise en route situés dans Programmation avec AEM forms sont basés sur le système d’exploitation Forms Server. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les didacticiels de mise en route situés dans Programmation avec AEM Forms sont basés sur le système d’exploitation Forms Server. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Démarrage rapide (mode SOAP) : Création d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
+## Didacticiel de mise en route (mode SOAP) : créer un document PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier *Loan.pdf* est écrit sur le site C:\Adobe folder located on the J2EE application server hosting AEM Forms, et non sur l’ordinateur client. (Voir [Création de documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+L’exemple de code Java suivant permet de créer un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms, et non sur lʼordinateur client. (Consultez la section [Créer des documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)).
 
 ```java
  /*
@@ -168,13 +168,13 @@ L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce doc
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’un document PDF basé sur un fichier XDP d’application à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
+## Didacticiel de mise en route (mode SOAP) : créer un document PDF basé sur un fichier XDP d’application à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
 
-L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier XDP est déployé dans le cadre d’une application AEM Forms nommée `Applications/FormsApplication`. Notez que le chemin de l’URI est `repository:///Applications/FormsApplication/1.0/FormsFolder/`. Le fichier *Loan.pdf* est écrit sur le site C:\Adobe folder located on the J2EE application server hosting AEM Forms, et non sur l’ordinateur client. (Voir [Création de documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier XDP est déployé au sein d’une application AEM Forms nommée `Applications/FormsApplication`. Notez que le chemin dʼaccès à lʼURI est `repository:///Applications/FormsApplication/1.0/FormsFolder/`. Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms, et non sur l’ordinateur client. (Consultez la section [Créer des documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)).
 
 >[!NOTE]
 >
->Avant d’exécuter ce démarrage rapide, veillez à créer une application AEM Forms nommée Applications/FormsApplication. Créez un dossier dans l’application nommé FormsFolder et placez-y le fichier XDP. Pour plus d’informations, voir [Générer un document PDF ](/help/forms/developing/creating-document-output-streams.md)*.*
+>Avant dʼentamer ce didacticiel de mise en route, veillez à créer une application AEM Forms nommée Applications/FormsApplication. Créez un dossier dans l’application nommé FormsFolder et placez-y le fichier XDP. Pour plus d’informations, consultez la section [Générer un document PDF ](/help/forms/developing/creating-document-output-streams.md)*.*
 
 ```java
  /*
@@ -291,25 +291,25 @@ L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce doc
  
 ```
 
-## Démarrage rapide (mode SOAP) : Transmission d’un document situé dans le référentiel au service Output à l’aide de l’API Java {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
+## Didacticiel de mise en route (mode SOAP) : transmettre un document situé dans le référentiel au service Output à l’aide de l’API Java {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
 
-Le code Java suivant récupère un fichier XDP du référentiel et le transmet au service Output dans l’instance `com.adobe.idp.Document`. Le fichier XDP est déployé dans le cadre d’une application AEM Forms nommée `Applications/FormsApplication`. Notez que le chemin de l’URI est `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
-
->[!NOTE]
->
->L’API Repository est utilisée pour récupérer le fichier XDP à partir de cet emplacement. (Voir [Ressources de lecture](/help/forms/developing/aem-forms-repository.md#reading-resources).)
-
-Notez également que la valeur racine du contenu `repository:///Applications/FormsApplication/1.0/FormsFolder/` est transmise à la méthode `generatePDFOutput2` de l’objet `OutputClient` (le deuxième paramètre). Cette valeur est transmise au service Output pour informer le service Output que les documents de formulaire, tels que les images, sont stockés à cet emplacement.
+Le code Java suivant récupère un fichier XDP du référentiel et le transmet au service Output dans lʼinstance `com.adobe.idp.Document`. Le fichier XDP est déployé au sein dʼune application AEM Forms nommée `Applications/FormsApplication`. Notez que le chemin dʼaccès à lʼURI est `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
 
 >[!NOTE]
 >
->Vous pouvez définir la valeur racine du contenu de la même manière lors de l’appel de la méthode `generatePrintedOutput2`.
+>L’API Repository est utilisée pour récupérer le fichier XDP à partir de cet emplacement. (Consultez la section [Lire des ressources](/help/forms/developing/aem-forms-repository.md#reading-resources)).
 
-*Loan.pdf* est écrit sur le site C:\Adobe folder located on the J2EE application server hosting AEM Forms. (Voir [Transfert de documents situés dans le référentiel vers le service Output](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-the-repository-to-the-output-service).)
+Remarquez également que la valeur de la racine du contenu `repository:///Applications/FormsApplication/1.0/FormsFolder/` est transmise à la méthode `generatePDFOutput2` de lʼobjet `OutputClient` (le deuxième paramètre). Cette valeur est transmise au service Output pour lʼinformer que les éléments associés au formulaire, tels que les images, sont stockés à cet emplacement.
 
 >[!NOTE]
 >
->Avant d’exécuter ce démarrage rapide, veillez à créer une application AEM Forms nommée Applications/FormsApplication. Créez un dossier dans l’application nommé FormsFolder et placez-y le fichier XDP.
+>Vous pouvez définir la valeur de la racine du contenu de la même manière en appelant la méthode `generatePrintedOutput2`.
+
+Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms. (Consultez la section [Transmettre des documents situés dans le référentiel au service Output](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-the-repository-to-the-output-service)).
+
+>[!NOTE]
+>
+>Avant d’entamer ce didacticiel de mise en route, veillez à créer une application AEM Forms nommée Applications/FormsApplication. Créez un dossier dans l’application FormsFolder et placez-y le fichier XDP.
 
 ```java
  /*
@@ -443,9 +443,9 @@ Notez également que la valeur racine du contenu `repository:///Applications/For
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’un document PDF à l’aide de l’API Java {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
+## Didacticiel de mise en route (mode SOAP) : créer un document PDF à l’aide de l’API Java {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
 
-L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier *Loan.pdf* est écrit sur le site C:\Adobe folder located on the J2EE application server hosting AEM Forms, et non sur l’ordinateur client. (Voir [Création de documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+L’exemple de code Java suivant permet de créer un document PDF nommé *Loan.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier *Loan.pdf* est enregistré dans le dossier C:\Adobe, situé sur le serveur dʼapplications J2EE hébergeant AEM Forms, et non sur lʼordinateur client. (Consultez la section [Créer des documents PDF](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)).
 
 ```java
  /*
@@ -553,9 +553,9 @@ L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce doc
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’un document PDF/A à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : créer un document PDF/A à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
 
-L’exemple de code Java suivant crée un document PDF/A nommé *LoanArchive.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et un fichier de données XML nommé *Loan.xml*. Le fichier *LoanArchive.pdf* est écrit sur C:\Adobe folder located on the J2EE application server hosting AEM Forms, et non sur l’ordinateur client. (Voir [Création de documents PDF/A](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents).)
+L’exemple de code Java suivant crée un document PDF/A nommé *LoanArchive.pdf*. Ce document PDF est basé sur une conception de formulaire nommée *Loan.xdp* et sur un fichier de données XML nommé *Loan.xml*. Le *LoanArchive.pdf* est écrit sur le dossier C:\Adobe qui se trouve sur le serveur de l’application J2EE qui héberge AEM Forms, et non sur l’ordinateur client. (Voir [Création de documents PDF/A](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents).)
 
 ```java
  /*
@@ -671,9 +671,9 @@ L’exemple de code Java suivant crée un document PDF/A nommé *LoanArchive.pdf
  
 ```
 
-## Démarrage rapide (mode SOAP) : Transmission de documents au service Output à l’aide de l’API Java {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
+## Démarrage rapide (mode SOAP) : transmission de documents vers le service Output à l’aide de l’API Java {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
-Le démarrage rapide Java suivant récupère le fichier *Loan.xdp* de Content Services. Ce fichier XDP se trouve dans la balise `space /Company Home/Form Designs`. Le fichier XDP est renvoyé dans une instance `com.adobe.idp.Document`. L’instance `com.adobe.idp.Document` est transmise au service Output. Le formulaire non interactif est enregistré sous la forme d’un fichier PDF nommé *Loan.pdf* sur l’ordinateur client. Comme l’option File URI est définie, le fichier PDF *Loan.pdf* est également enregistré sur le serveur d’applications J2EE hébergeant AEM Forms. (Voir [Transfert de documents situés dans Content Services ES2 vers le service Output](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+Le démarrage rapide Java suivant récupère le fichier *Loan.xdp* de Content Services. Ce fichier XDP se trouve dans le `space /Company Home/Form Designs`. Le fichier XDP est renvoyé dans une instance `com.adobe.idp.Document`. L’instance `com.adobe.idp.Document` est transmise au service Output. Le formulaire non interactif est enregistré sous la forme d’un fichier PDF nommé *Loan.pdf* sur l’ordinateur client. Étant donné que l’option URI du fichier est définie, le fichier PDF *Loan.pdf* est également enregistré sur le serveur d’applications J2EE hébergeant AEM Forms. (Voir [Transmission de documents se trouvant dans Content Services ES2 au service Output](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 ```java
  /*
@@ -810,9 +810,9 @@ Le démarrage rapide Java suivant récupère le fichier *Loan.xdp* de Content Se
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’un document PDF basé sur des fragments à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
+## Démarrage rapide (mode SOAP) : créer un document PDF basé sur des fragments à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
 
-L’exemple de code Java suivant crée un document PDF basé sur une conception de formulaire assemblée par le service Assembler. Le service Assembler assemble les fragments situés dans plusieurs fichiers XDP en une seule conception de formulaire. La logique d’application qui appelle le service Assembler se trouve dans une méthode définie par l’utilisateur appelée `GetFormDesign`. Le formulaire non interactif est enregistré sous la forme d’un fichier PDF nommé *Loan.pdf* sur l’ordinateur client. (Voir [Création de documents PDF à l’aide de fragments](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
+L’exemple de code Java suivant crée un document PDF basé sur une conception de formulaire assemblée par le service Assembler. Le service Assembler rassemble les fragments situés dans plusieurs fichiers XDP en une seule conception de formulaire. La logique d’application qui appelle le service Assembler se trouve dans une méthode définie par l’utilisateur, nommée `GetFormDesign`. Le formulaire non interactif est enregistré sous la forme d’un fichier PDF nommé *Loan.pdf* sur l’ordinateur client. (Voir [Création de documents PDF à l’aide de fragments](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
 
 ```java
  /*
@@ -1018,9 +1018,9 @@ L’exemple de code Java suivant crée un document PDF basé sur une conception 
  
 ```
 
-## Démarrage rapide (mode SOAP) : Impression dans un fichier à l’aide de l’API Java {#quick-start-soap-mode-printing-to-a-file-using-the-java-api}
+## Démarrage rapide (mode SOAP) : imprimer dans un fichier à l’aide de l’API Java {#quick-start-soap-mode-printing-to-a-file-using-the-java-api}
 
-L’exemple de code Java suivant imprime un flux de sortie dans un fichier PostScript nommé *MortgageForm.ps*. (Voir [Impression dans des fichiers](/help/forms/developing/creating-document-output-streams.md#printing-to-files).)
+L’exemple de code Java suivant imprime un flux Output dans un fichier PostScript nommé *MortgageForm.ps*. (Voir [Impression dans des fichiers](/help/forms/developing/creating-document-output-streams.md#printing-to-files).)
 
 ```java
  /*
@@ -1130,7 +1130,7 @@ L’exemple de code Java suivant imprime un flux de sortie dans un fichier PostS
  
 ```
 
-## Démarrage rapide (mode SOAP) : Envoi d’un flux d’impression à une imprimante réseau à l’aide de l’API Java {#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api}
+## Démarrage rapide (mode SOAP) : envoi d’un flux d’impression à une imprimante réseau à l’aide de l’API Java {#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api}
 
 L’exemple de code Java suivant envoie un flux d’impression PostScript à une imprimante réseau nommée *\\Printer1\Printer*. Deux copies sont envoyées à l’imprimante. (Voir [Envoi de flux d’impression à des imprimantes](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers).)
 
@@ -1255,9 +1255,9 @@ L’exemple de code Java suivant envoie un flux d’impression PostScript à une
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création de plusieurs fichiers PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
+## Démarrage rapide (mode SOAP) : création de plusieurs fichiers PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
 
-Le code Java suivant crée plusieurs fichiers PDF pour chaque enregistrement de données situé dans un fichier de données XML nommé *Loan_data_batch.xml*. Les fichiers sont écrits dans le dossier C:\Adobe directory. Les fichiers PDF sont écrits sur C:\Adobe folder located on the J2EE application server hosting AEM Forms, et non sur l’ordinateur client. (Voir [Création de plusieurs fichiers de sortie](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files).)
+Le code Java suivant crée plusieurs fichiers PDF pour chaque enregistrement de données se trouvant dans un fichier de données XML nommé *Loan_data_batch.xml*. Les fichiers sont écrits dans le répertoire C:\Adobe. Les fichiers PDF sont écrits sur le dossier C:\Adobe qui se trouve dans le serveur d’applications J2EE hébergeant AEM Forms, et non sur l’ordinateur client. (Voir [Création de plusieurs fichiers Output](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files).)
 
 ```java
  /*
@@ -1376,9 +1376,9 @@ Le code Java suivant crée plusieurs fichiers PDF pour chaque enregistrement de 
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création de règles de recherche à l’aide de l’API Java {#quick-start-soap-mode-creating-search-rules-using-the-java-api}
+## Démarrage rapide (mode SOAP) : création de règles de recherche à l’aide de l’API Java {#quick-start-soap-mode-creating-search-rules-using-the-java-api}
 
-L’exemple de code Java suivant crée deux modèles de texte que le service Output recherche. Le premier modèle de texte est le prêt immobilier. S’il est trouvé, le service Output utilise la conception de formulaire nommée *Mortgage.xdp*. Le deuxième modèle de texte est Automobile. S’il est trouvé, le service Output utilise la conception de formulaire *AutomobileLoan.xdp*. Si aucun modèle de texte n’est localisé, le service Output utilise la conception de formulaire par défaut nommée* Loan.xdp. *(Voir [Création de règles de recherche](/help/forms/developing/creating-document-output-streams.md#creating-search-rules).)
+L’exemple de code Java suivant crée deux modèles de texte que le service Output recherche. Le premier modèle de texte est le prêt immobilier. S’il est trouvé, le service Output utilise la conception de formulaire nommée *Mortgage.xdp*. Le deuxième modèle de texte est Automobile. S’il est trouvé, le service Output utilise la conception de formulaire nommée *AutomobileLoan.xdp*. Si aucun modèle de texte n’est localisé, le service Output utilise la conception de formulaire par défaut nommée *Loan.xdp. *(Voir [Création de règles de recherche](/help/forms/developing/creating-document-output-streams.md#creating-search-rules).)
 
 ```java
  /*
@@ -1508,9 +1508,9 @@ L’exemple de code Java suivant crée deux modèles de texte que le service Out
  
 ```
 
-## Démarrage rapide (mode SOAP) : Transformation d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : transformation d’un document de PDF à l’aide de l’API Java {#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant transforme un document PDF interactif nommé *Loan.pdf* en document PDF non interactif nommé *NonInteractiveLoan.pdf*. (Voir [Aplatissement de documents PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+L’exemple de code Java suivant transforme un document PDF interactif nommé *Loan.pdf* en un document PDF non interactif nommé *NonInteractiveLoan.pdf*. (Voir [Aplatissement de documents PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 ```java
  /*
